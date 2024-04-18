@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Cmake on Mac · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/blog/assets/gitbook/style.css">
 <link rel="stylesheet" href="/blog/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/blog/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -25,9 +25,11 @@
 
 
 
-            <link rel="prev" href="/blog/" />
+            <link rel="prev" href="/blog/pages/c/basic/printformat/" />
         
 
+        
+            <link rel="next" href="/blog/pages/c/editor/supportc11/" />
         
 
 
@@ -96,8 +98,11 @@
 	
 	
 
-	<li class=""><a href="/blog/pages/c/editor/cmake" onclick="pageScrollToTop(this)"> Cmake on Mac </a>
+	<li class="active"><a href="/blog/pages/c/editor/cmake" onclick="pageScrollToTop(this)"> Cmake on Mac </a>
         
+            
+                
+
             
         </li>
 	
@@ -142,7 +147,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >Cici&#39;s notebook</a>
+                            <a href="." >Cmake on Mac</a>
                         
                     </h1>
                 </div>
@@ -155,293 +160,91 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="">Cici&#39;s notebook</h1>
+                        <h1 id="/pages/c/editor/cmake">Cmake on Mac</h1>
                     
 
-                    .book-body {
-    overflow-y: scroll;
-}
+                    <p>前往<a href="https://cmake.org/download/">下載Cmake</a><br />
+<img src="/blog/assets/img/cmake/1.png" alt="img" /><br />
+解壓好放在應用程式中<br />
+<img src="/blog/assets/img/cmake/2.png" alt="img" /> 
+打開CMAKE<br />
+按照下圖，選擇Tool-&gt;How to Install For Command Line Use <br />
+<img src="/blog/assets/img/cmake/3.png" alt="img" /><br />
+將以下紅框的部分複製，打開終端機，貼上<br />
+<img src="/blog/assets/img/cmake/3-1.png" alt="img" /><br />
+<img src="/blog/assets/img/cmake/3-2.png" alt="img" /><br />
+貼上後再輸入以下指令</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$which cmake
+</code></pre></div></div>
+<p>再輸入以下指令</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$cmake --version
+</code></pre></div></div>
+<p>切記，把版本資訊記起來，如我的版本資訊是cmake version 3.27.5
+在你所在.cpp的目錄下建立build目錄</p>
 
-.book-body .book-header {
-    position: fixed;
-    width: 100%;
-}
+<p><img src="/blog/assets/img/cmake/4.png" alt="img" /> 
+跟build目錄同階層建立CMakeLists.txt的文件<br />
+<img src="/blog/assets/img/cmake/5.png" alt="img" /><br />
+在CMakeLists.txt的文件中輸入以下內容</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//VERSION編號是之前查詢的
+cmake_minimum_required(VERSION 3.27.5)
 
-.book.with-summary .book-body .book-header {
-    position: fixed;
-    width: calc(100% - 300px);
-}
+//第一參數為Project名稱
+//Project的版本是1.0.0
+project(CPPLessons VERSION 1.0.0)
 
-.book-body .body-inner {
-    /* position: absolute; */
-    margin-top: 50px;
-    min-height: calc(100% - 50px);
-}
+//第一個參數是Project名稱 第二個參數為所使用的cpp
+add_executable(CPPLessons test.cpp Student.cpp)
+</code></pre></div></div>
+<p>建立檔案，依xcode為例，在工作列按滑鼠右鍵，選”New File”<br />
+<img src="/blog/assets/img/cmake/6.png" alt="img" /><br />
+依照下圖建立頭文件<br />
+<img src="/blog/assets/img/cmake/7.png" alt="img" /><br />
+<img src="/blog/assets/img/cmake/8.png" alt="img" /><br />
+再來建立cpp文件<br />
+<img src="/blog/assets/img/cmake/9.png" alt="img" /><br />
+記得不要勾選要建立頭文件
+<img src="/blog/assets/img/cmake/10.png" alt="img" /><br />
+在test.cpp輸入以下內容</p>
 
-@media (max-width: 1240px) {
-    .book-body .body-inner {
-        position: absolute;
-        margin-top: 50px;
-        min-height: calc(100% - 50px)
-    }
-}
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">"test.h"</span><span class="cp">
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">a</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">};</span>
+   <span class="n">printf</span><span class="p">(</span><span class="s">"cmake test"</span><span class="p">);</span>
+   <span class="kt">int</span> <span class="n">b</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">100</span><span class="p">};</span>
+   <span class="n">printf</span><span class="p">(</span><span class="s">"cmake test2"</span><span class="p">);</span>
+   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
-.book-body .body-inner .page-wrapper {
-    min-height: calc(100% - 46px);
-}
+<p>打開終端機，進入build的目錄<br />
+<img src="/blog/assets/img/cmake/11.png" alt="img" /><br />
+輸入以下內容(要在build的目錄下做喔)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmake ..
+</code></pre></div></div>
+<p><img src="/blog/assets/img/cmake/12.png" alt="img" /><br />
+產生以下資訊<br />
+<img src="/blog/assets/img/cmake/13.png" alt="img" /><br />
+輸入make</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make
+</code></pre></div></div>
+<p><img src="/blog/assets/img/cmake/14.png" alt="img" /><br />
+輸入./CPPLessons<br />
+<img src="/blog/assets/img/cmake/15.png" alt="img" /><br />
+測試成功<br />
+<img src="/blog/assets/img/cmake/16.png" alt="img" /></p>
 
-.book-body .body-inner .page-wrapper .page-inner {
-    padding-bottom: 20px;
-}
-
-@media (max-width: 1240px) {
-    .book-body .body-inner .navigation {
-        max-width: calc(50% - 3px);
-        width: calc(50% - 3px);
-    }
-
-    .book.with-summary .book-body .book-header {
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-}
-
-.book .book-body .book-header {
-    background: #ffffff;
-}
-
-.book.color-theme-1 .book-body .book-header {
-    background: #f3eacb;
-}
-
-.book.color-theme-2 .book-body .book-header {
-    background: #1c1f2b;
-}
-
-.page-inner {
-    max-width: 800px;
-}
-
-.back-to-top {
-    right: calc((100% - 300px - min(100% - 300px, 800px)) / 2 + 25px);
-}
-
-/* scrollbar */
-::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-}
-
-::-webkit-scrollbar-track-piece {
-    /* background-color: rgba(125, 125, 125, 0.2); */
-    -webkit-border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:vertical {
-    height: 5px;
-    background-color: rgba(7, 17, 27, .2);
-    -webkit-border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:horizontal {
-    width: 5px;
-    background-color: rgba(125, 125, 125, 0.2);
-    -webkit-border-radius: 6px;
-}
-
-/* Style for search page on mobile screens */
-
-#book-search-input-link {
-    padding: 6px;
-    background: 0 0;
-    background: inherit;
-    transition: top .5s ease;
-    border-bottom: 1px solid rgba(0,0,0,.07);
-    border-top: 1px solid rgba(0,0,0,.07);
-    margin-bottom: 10px;
-    margin-top: -1px;
-}
-
-#book-search-input-link a {
-    width: 100%;
-    background: 0 0;
-    border: 1px solid transparent;
-    box-shadow: none;
-    outline: 0;
-    line-height: 38px;
-    padding: 7px 7px;
-    color: #757575;
-}
-
-#book-search-input {
-    display: block;
-}
-#book-search-input-link {
-    display: none;
-}
-
-@media (max-width: 1240px) {
-    #book-search-input {
-        display: none;
-    }
-    #book-search-input-link {
-        display: block;
-    }
-}
-
-#book-search-input-inside {
-    padding: 6px;
-    background: 0 0;
-    transition: top .5s ease;
-    background: #fff;
-    border-bottom: 1px solid rgba(0,0,0,.07);
-    border-top: 1px solid rgba(0,0,0,.07);
-    margin-bottom: 10px;
-    margin-top: -1px;
-}
-
-#book-search-input-inside input {
-    width: 100%;
-    background: 0 0;
-    border: 1px solid transparent;
-    box-shadow: none;
-    outline: 0;
-    line-height: 22px;
-    padding: 7px 7px;
-    color: inherit;
-}
-
-
-/* Custom font settings */
-
-.book.font-family-0 {
-    font-family: Georgia, serif;
-}
-.book.font-family-1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* Render wide tables */
-
-.table-wrapper {
-    overflow-x: scroll;
-}
-
-/* Tips, warnings, and dangers */
-
-.markdown-section blockquote.block-tip {
-    border-color: var(--c-tip);
-    background-color: var(--c-tip-bg);
-    color: var(--c-tip-text);
-    font-family: var(--font-family);
-}
-
-.markdown-section blockquote.block-tip h1 {
-    color: var(--c-tip-title);
-}
-
-.markdown-section blockquote.block-tip h2 {
-    color: var(--c-tip-title);
-}
-
-.markdown-section blockquote.block-tip h3 {
-    color: var(--c-tip-title);
-}
-
-.markdown-section blockquote.block-tip h4 {
-    color: var(--c-tip-title);
-}
-
-.markdown-section blockquote.block-tip h5 {
-    color: var(--c-tip-title);
-}
-
-.markdown-section blockquote.block-tip h6 {
-    color: var(--c-tip-title);
-}
-
-.markdown-section blockquote.block-warning {
-    border-color: var(--c-warning);
-    background-color: var(--c-warning-bg);
-    color: var(--c-warning-text);
-    font-family: var(--font-family);
-}
-
-.markdown-section blockquote.block-warning h1 {
-    color: var(--c-warning-title);
-}
-
-.markdown-section blockquote.block-warning h2 {
-    color: var(--c-warning-title);
-}
-
-.markdown-section blockquote.block-warning h3 {
-    color: var(--c-warning-title);
-}
-
-.markdown-section blockquote.block-warning h4 {
-    color: var(--c-warning-title);
-}
-
-.markdown-section blockquote.block-warning h5 {
-    color: var(--c-warning-title);
-}
-
-.markdown-section blockquote.block-warning h6 {
-    color: var(--c-warning-title);
-}
-
-.markdown-section blockquote.block-danger {
-    border-color: var(--c-danger);
-    background-color: var(--c-danger-bg);
-    color: var(--c-danger-text);
-    font-family: var(--font-family);
-}
-
-.markdown-section blockquote.block-danger h1 {
-    color: var(--c-danger-title);
-}
-
-.markdown-section blockquote.block-danger h2 {
-    color: var(--c-danger-title);
-}
-
-.markdown-section blockquote.block-danger h3 {
-    color: var(--c-danger-title);
-}
-
-.markdown-section blockquote.block-danger h4 {
-    color: var(--c-danger-title);
-}
-
-.markdown-section blockquote.block-danger h5 {
-    color: var(--c-danger-title);
-}
-
-.markdown-section blockquote.block-danger h6 {
-    color: var(--c-danger-title);
-}
-
-pre:has(code.language-mermaid[data-processed="true"]) {
-    background-color: #ffffff;
-    text-align: center;
-}
-
-:root {
-    --c-tip: #42b983;
-    --c-tip-bg: #e2f5ec;
-    --c-tip-text: #215d42;
-    --c-tip-title: #359469;
-    --c-warning: #e7c000;
-    --c-warning-bg: rgba(255, 229, 100, .25);
-    --c-warning-text: #6b5900;
-    --c-warning-title: #b29400;
-    --c-danger: #c00;
-    --c-danger-bg: #ffe0e0;
-    --c-danger-text: #600;
-    --c-danger-title: #c00;
-    --font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-}</section>
+</section>
             </div><div class="search-results">
     <div class="has-results">
         <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
@@ -497,11 +300,15 @@ window.MathJax = {
 </script>
 
 
-                        <a href="/blog/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Cici's notebook">
+                        <a href="/blog/pages/c/basic/printformat/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: printf格式化輸出">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
+                    
+                        <a href="/blog/pages/c/editor/supportc11/" class="navigation navigation-next navigation-unique" aria-label="Next page: Xcode支援C++11以上">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                 </div>
             </div>
@@ -514,6 +321,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "Xcode支援C++11以上",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/c/editor/supportc11.md",
+            "ref": "_pages/c/editor/supportc11.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -603,8 +419,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "assets/gitbook/custom.css",
-        "mtime": "",
+        "path": "_pages/c/editor/cmake.md",
+        "mtime": "2024-04-18 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

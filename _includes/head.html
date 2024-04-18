@@ -7,7 +7,6 @@
 {%- else -%}
     <title>{{ site.title | escape }}</title>
 {%- endif -%}
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="{{site.description}}">
 
@@ -20,7 +19,9 @@
 {%- if site.author -%}
     <meta name="author" content="{{ site.author | escape }}">
 {%- endif -%}
-
+{%- if seo -%}
+    {%- seo -%}
+{%- endif -%}
 <link rel="stylesheet" href="{{site.baseurl}}/assets/gitbook/style.css">
 <link rel="stylesheet" href="{{site.baseurl}}/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="{{site.baseurl}}/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">

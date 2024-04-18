@@ -1,7 +1,2 @@
-# blog
-aaaa
 
-## others
-bbb
-### others
-ccc
+因容易遺忘，所以想把學過的記錄下來。

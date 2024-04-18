@@ -1,21 +1,31 @@
-{"/blog/c/test1/": {
-    "title": "test1abc",
-    "keywords": "Jekyll",
-    "url": "/blog/c/test1/",
-    "body": "This is an about page. You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. Jekyll requires blog post files to be named according to the following format: YEAR-MONTH-DAY-title.MARKUP Where YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and MARKUP is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works. Jekyll also offers powerful support for code snippets: def print_hi(name) puts \"Hi, #{name}\" end print_hi('Tom') #=&gt; prints 'Hi, Tom' to STDOUT. Check out the Jekyll docs for more info on how to get the most out of Jekyll. File all bugs/feature requests at Jekyll’s GitHub repo. If you have questions, you can ask them on Jekyll Talk."
-  },"/blog/c/editor/xcode/": {
+{"/blog/pages/c/editor/xcode/": {
     "title": "Xcode",
-    "keywords": "c++",
-    "url": "/blog/c/editor/xcode/",
+    "keywords": "",
+    "url": "/blog/pages/c/editor/xcode/",
     "body": "輸入Project的名字 選擇要放置的位置，並點選New Folder 輸入新目錄的名稱 要勾不勾git自行決定，按create 點擊main，再按下執行的按鈕"
-  },"/blog/jekyll/install/how_to_install_ruby/": {
+  },"/blog/pages/jekyll/install/how_to_install_ruby/": {
     "title": "安裝 Ruby on Mac",
-    "keywords": "jekyll",
-    "url": "/blog/jekyll/install/how_to_install_ruby/",
+    "keywords": "",
+    "url": "/blog/pages/jekyll/install/how_to_install_ruby/",
     "body": "打開終端機，輸入下面指令 $brew install ruby 檢查安裝路徑 $brew list ruby homebrew安裝ruby的路徑列表，注意版號是否為3.0以上，目前是3.3.0。 /usr/local/Cellar/ruby/3.3.0/bin/bundle /usr/local/Cellar/ruby/3.3.0/bin/bundler /usr/local/Cellar/ruby/3.3.0/bin/erb /usr/local/Cellar/ruby/3.3.0/bin/gem /usr/local/Cellar/ruby/3.3.0/bin/irb /usr/local/Cellar/ruby/3.3.0/bin/racc /usr/local/Cellar/ruby/3.3.0/bin/rake /usr/local/Cellar/ruby/3.3.0/bin/rbs /usr/local/Cellar/ruby/3.3.0/bin/rdbg /usr/local/Cellar/ruby/3.3.0/bin/rdoc /usr/local/Cellar/ruby/3.3.0/bin/ri /usr/local/Cellar/ruby/3.3.0/bin/ruby /usr/local/Cellar/ruby/3.3.0/bin/syntax_suggest /usr/local/Cellar/ruby/3.3.0/bin/typeprof /usr/local/Cellar/ruby/3.3.0/include/ruby-3.3.0/ (191 files) /usr/local/Cellar/ruby/3.3.0/lib/libruby.3.3.dylib /usr/local/Cellar/ruby/3.3.0/lib/pkgconfig/ruby-3.3.pc /usr/local/Cellar/ruby/3.3.0/lib/ruby/ (4276 files) /usr/local/Cellar/ruby/3.3.0/lib/libruby.dylib /usr/local/Cellar/ruby/3.3.0/libexec/gembin/ (2 files) /usr/local/Cellar/ruby/3.3.0/share/emacs/site-lisp/ruby/ruby-style.el /usr/local/Cellar/ruby/3.3.0/share/man/ (4 files) /usr/local/Cellar/ruby/3.3.0/share/ri/ (15158 files) 檢查本機ruby的安裝的位置是否與homebrew一致。 $which ruby 我的mac顯示的位置是∶ /usr/bin/ruby 顯然是不一樣，修改環境變數。 $vi ~/.zshrc 添加homebrew 安裝ruby的路徑，注意!以下的位置是你的brew list ruby的路徑，不能直接拷貝我的。 export PATH=\"/usr/local/Cellar/ruby/3.3.0/bin:$PATH\" 修改完.zshrc檔案，在終端機執行以下指令。 $source ~/.zshrc 檢查ruby的路徑是否為homebrew安裝的路徑。 $which ruby"
-  },"/blog/pages/about/": {
-    "title": "About",
-    "keywords": "Jekyll",
-    "url": "/blog/pages/about/",
-    "body": "This is an about page."
+  },"/blog/pages/c/basic/printformat/": {
+    "title": "printf格式化輸出",
+    "keywords": "",
+    "url": "/blog/pages/c/basic/printformat/",
+    "body": "資料型態 整數 有正負整數資料型態 整數型態 byte 格式符 int 4 %d short 2 %hd long 4 %ld Unsigned正整數資料型態 Unsinged代表只有正數。 整數型態 byte 格式符 unsinged int 4 %u unsinged short 2 %hu unsinged long 4 %ud char資料型態 整數型態 byte 格式符 輸出格式 char 1 %c 字元 char 1 %d 整數 印出char可用%c或%d 1 2 3 char c = 'a'; printf(\"%d\\n\", c); printf(\"%c\\n\", c); 執行結果 97 a 以上表格列出的整數資料型態都可以使用%d印出，只是印出的精準度不同。 浮點數 浮點數資料型態 浮點數型態 byte 格式符 float 4 %f double 8 %lf long double 8 %Lf float格式化輸出 1 2 3 float f1 = 3.8; printf(\"f1 = %f \\n\", f1); printf(\"f1 = %.2f \\n\", f1); 執行結果 f1 = 3.800000 f1 = 3.80 double格式化輸出 1 2 3 4 float f1 = 3.8; double d1 = 3.8; printf(\"f1 = %f , d1 = %f , d1 = %lf\\n\", f1, d1, d1); printf(\"f1 = %.2f , d1 = %.2f , d1 = %.2lf\\n\", f1, d1, d1); 執行結果 f1 = 3.800000 , d1 = 3.800000 , d1 = 3.800000 f1 = 3.80 , d1 = 3.80 , d1 = 3.80"
+  },"/blog/pages/c/editor/cmake/": {
+    "title": "Cmake on Mac",
+    "keywords": "",
+    "url": "/blog/pages/c/editor/cmake/",
+    "body": "前往下載Cmake 解壓好放在應用程式中 打開CMAKE 按照下圖，選擇Tool-&gt;How to Install For Command Line Use 將以下紅框的部分複製，打開終端機，貼上 貼上後再輸入以下指令 $which cmake 再輸入以下指令 $cmake --version 切記，把版本資訊記起來，如我的版本資訊是cmake version 3.27.5 在你所在.cpp的目錄下建立build目錄 跟build目錄同階層建立CMakeLists.txt的文件 在CMakeLists.txt的文件中輸入以下內容 //VERSION編號是之前查詢的 cmake_minimum_required(VERSION 3.27.5) //第一參數為Project名稱 //Project的版本是1.0.0 project(CPPLessons VERSION 1.0.0) //第一個參數是Project名稱 第二個參數為所使用的cpp add_executable(CPPLessons test.cpp Student.cpp) 建立檔案，依xcode為例，在工作列按滑鼠右鍵，選”New File” 依照下圖建立頭文件 再來建立cpp文件 記得不要勾選要建立頭文件 在test.cpp輸入以下內容 1 2 3 4 5 6 7 8 9 #include &lt;stdio.h&gt; #include \"test.h\" int main() { int a[] = {1,2,3,4}; printf(\"cmake test\"); int b[] = {7,8,9,100}; printf(\"cmake test2\"); return 0; } 打開終端機，進入build的目錄 輸入以下內容(要在build的目錄下做喔) cmake .. 產生以下資訊 輸入make make 輸入./CPPLessons 測試成功"
+  },"/blog/pages/c/editor/supportc11/": {
+    "title": "Xcode支援C++11以上",
+    "keywords": "",
+    "url": "/blog/pages/c/editor/supportc11/",
+    "body": "選擇專案名 選擇Build Settings 選擇Apple Clang 選擇C++ Language Dialect"
+  },"/blog/pages/c/editor/vscode/": {
+    "title": "VS Code on Mac",
+    "keywords": "",
+    "url": "/blog/pages/c/editor/vscode/",
+    "body": "可以參考其它人的影音檔。 https://www.youtube.com/watch?v=iIPST6HQgSc 參考文章 Visual Studio Code on macOS Using Clang in Visual Studio Code 若code .沒反應 “code .” is not working in on the command line for Visual Studio Code on OS X/Mac"
   }}
