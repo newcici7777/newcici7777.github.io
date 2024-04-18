@@ -20,12 +20,12 @@
 			<li class="{{current}}">
 		{%- endif -%}
 	{%- endif -%}
-	
+
 	{%- if item.url -%}
     	<a href="{{pageObj.id | relative_url l}}" onclick="pageScrollToTop(this)">
 	   		{{ item.title }} </a>
 	{%- else -%}
-    	<a href="{{site.url}}" onclick="pageScrollToTop(this)">
+    	<a href="{{site.baseurl}}" onclick="pageScrollToTop(this)">
 	   		{{ item.title }} </a>
 	{%- endif -%}
 
