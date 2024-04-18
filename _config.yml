@@ -1,7 +1,6 @@
 #title: Blog
 #theme: jekyll-theme-minimal
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
+title:            Cici's notebook
 
 remote_theme:     sighingnow/jekyll-gitbook
 
@@ -9,3 +8,38 @@ collections:
   pages:
     output: true
     permalink: /:collection/:path/
+  c:
+    output: true
+    permalink: /:collection/:path/
+  jekyll: 
+    output: true
+    permalink: /:collection/:path/
+
+plugins:
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-gist
+    - jekyll-feed
+    - jekyll-include-cache
+toc:
+    enabled: true
+
+# markdown render engine.
+markdown:         kramdown
+kramdown:
+  auto_ids:               true
+  input:                  GFM
+  math_engine:            mathjax
+  smart_quotes:           lsquo,rsquo,ldquo,rdquo
+  toc_levels:             1..6
+  syntax_highlighter:     rouge
+  syntax_highlighter_opts:
+    guess_lang:           true
+
+syntax_highlighter_style: colorful
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true

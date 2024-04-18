@@ -1,0 +1,42 @@
+{%- for item in include.nav -%}
+	{% if item.collection %}
+		{%assign collection = item.collection %}
+	 {% endif %}
+
+	{% assign page_url = item.url %}
+	{% assign pageObj =  site[collection] | where_exp:"item","item.path == page_url" | first %}
+	{% assign current = "" %}
+
+	{% if page.path == pageObj.path %}
+		{%assign current = "active" %}
+	{% endif %}
+
+	{%- if item.collection -%}
+		<li class="chapter" data-level="1.1" data-path="{{site.url}}">
+	{%- else -%}
+		{%- if item.subnav -%}
+			<li class="chapter" data-level="1.2" data-path="{{site.url}}">
+		{%- else -%}
+			<li class="{{current}}">
+		{%- endif -%}
+	{%- endif -%}
+	
+	{%- if item.url -%}
+    	<a href="{{pageObj.id | relative_url l}}" onclick="pageScrollToTop(this)">
+	   		{{ item.title }} </a>
+	{%- else -%}
+    	<a href="{{site.url}}" onclick="pageScrollToTop(this)">
+	   		{{ item.title }} </a>
+	{%- endif -%}
+
+	{%- if item.subnav -%}
+		<ul>
+			{%- include nav.html nav=item.subnav -%}
+		</ul>
+	{%- endif -%}
+	</li>
+
+{%- endfor -%}
+
+
+
