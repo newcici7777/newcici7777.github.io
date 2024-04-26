@@ -9,7 +9,6 @@ collections:
 
 plugins:
     - jekyll-paginate
-    - jekyll-sitemap
     - jekyll-gist
     - jekyll-feed
     - jekyll-include-cache
@@ -31,8 +30,28 @@ toc:
 #  syntax_highlighter_opts:
 #    guess_lang:           true
 
+#############################
+#markdown: redcarpet
+#highlighter: pygments 
+ 
+#################################################
+#pygments:        true
+#markdown:        redcarpet
+#redcarpet:
+#  extensions: [:smart, :fenced_code, :gh_blockcode] 
+##################################################
+#kramdown:
+#  enable_coderay: true
+#  syntax_highlighter: coderay
+#  syntax_highlighter_opts: 
+#    line_numbers: span
+#    bold_every: 5
+
 #程式碼的預設樣式(可參考下方修改樣式)
 #https://spsarolkar.github.io/rouge-theme-preview/
+kramdown:
+  parse_block_html: true
+  parse_span_html: true
 syntax_highlighter_style: base16 
 
 #設定預設值
@@ -53,5 +72,6 @@ imgurl: /blog/assets/img
 locale: "zh-TW" # 自己的地區
 description: "Cici's notebook." # 網站的描述
 url: "https://newcici7777.github.io/blog" # 自己部落格的網址
+route: ""
 extra_css: 
           - assets/custom_css/code.css # 自己修改程式碼區塊css，不同的theme顯示的程式碼css與文字

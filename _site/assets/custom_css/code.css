@@ -1,11 +1,13 @@
 /* 設定程式碼行號的欄位固定寬度10% */
 table.rouge-table td:first-of-type {
 	width: 5%;
+	color: #BEBEBE;/*程式碼行號顏色*/
 }
 
 /* 表格不要有border */
 table.rouge-table td {
-	border: 0px solid transparent
+	border: 0px solid transparent;
+	color: #003D79;/*程式碼顏色*/
 }
 
 /* tr不要有背景顏色 */
@@ -32,10 +34,24 @@ table.rouge-table code {
 /*括號() [] {}; */
 .highlight .o, .highlight .ow ,
 .highlight .p, .highlight .pi ,
-.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf, .highlight .cs
 {
-	color: #586e75;/*藍灰色**/
+	color: #FF5151;
 }
+/*註解*/
+.highlight .c1, .highlight .cm {
+	color: #9D9D9D;
+}
+
+/*private public*/
+/*public private*/
+.highlight .nl,
+.highlight .nc, /*T*/
+.highlight .k /*class*/
+{
+	color: #01B468;
+}
+
 /*背景是黑色的theme*/
 /* <studio.h> "test.h"  */
 /*括號=  ; */
@@ -43,21 +59,29 @@ table.rouge-table code {
 .color-theme-2 .highlight .c,
 .color-theme-2 .highlight .ch,
 .color-theme-2 .highlight .cd,
-.color-theme-2 .highlight .cm,
 .color-theme-2 .highlight .cpf,
-.color-theme-2 .highlight .c1,
 .color-theme-2 .highlight .cs,
 .color-theme-2 .highlight .o,
 .color-theme-2 .highlight .ow,
 .color-theme-2 .highlight .p,
 .color-theme-2 .highlight .pi
 {
-	color: #00E3E3;/*淺藍色*/
+	color: #FFDC35;/*淺藍色*/
 }
-/*public private*/
-.color-theme-2 .highlight .nl
+
+/*註解*/
+.color-theme-2 .highlight .c1,
+.color-theme-2 .highlight .cm 
 {
-	color: #FF60AF;/*粉紅色*/
+	color: #BEBEBE;
+}
+
+/*public private*/
+.color-theme-2 .highlight .nl,
+.color-theme-2 .highlight .nc, /*T*/
+.color-theme-2 .highlight .k /*class*/
+{
+	color: #00FFFF;
 }
 
 /*背景是黑色的theme的文字*/
@@ -65,4 +89,13 @@ table.rouge-table code {
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code {
     color: #fff;
+}
+/*背景是黑色的程式碼行號顏色*/
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre.lineno {
+	color: #BEBEBE;
+}
+/*mark 程式碼，標註的程式碼有瑩光筆的效果*/
+span.markline {
+	background-color: yellow;
+	color: #000000
 }

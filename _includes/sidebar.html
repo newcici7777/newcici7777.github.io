@@ -36,7 +36,9 @@
                 </a>
             </li>
             <li class="divider"></li>
-            {%- include nav.html nav=site.data.nav.menu -%}
+            {% assign route = include.path %}
+            {% capture path %}{{route}}{% endcapture %}
+            {%- include nav.html nav=site.data.nav.menu path=path -%}
         </ul>
     </nav>
 </div>
