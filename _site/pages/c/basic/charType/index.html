@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Stack實作(int Array) · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>char字元 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -112,9 +112,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/basic/charType" onclick="pageScrollToTop(this)"> char字元</a>
         
+            
+                <ul><li><a href="#整數" onclick="mobilePageScrollToAnchor(this)" >整數</a><ul><li><a href="#char" onclick="mobilePageScrollToAnchor(this)" >char</a><ul><li><a href="#字元變數賦值數字" onclick="mobilePageScrollToAnchor(this)" >字元變數賦值數字。</a></li><li><a href="#印出char可用c或d" onclick="mobilePageScrollToAnchor(this)" >印出char可用%c或%d</a></li><li><a href="#int變數賦值字元" onclick="mobilePageScrollToAnchor(this)" >int變數賦值字元。</a></li><li><a href="#int轉型字元" onclick="mobilePageScrollToAnchor(this)" >int轉型字元</a></li><li><a href="#字元運算" onclick="mobilePageScrollToAnchor(this)" >字元運算</a></li><li><a href="#跳脫字元" onclick="mobilePageScrollToAnchor(this)" >跳脫字元</a><ul><li><a href="#設定空" onclick="mobilePageScrollToAnchor(this)" >設定空</a></li><li><a href="#關於斜線" onclick="mobilePageScrollToAnchor(this)" >關於斜線</a></li><li><a href="#雙引號" onclick="mobilePageScrollToAnchor(this)" >雙引號</a></li><li><a href="#單引號" onclick="mobilePageScrollToAnchor(this)" >單引號</a></li></ul></li></ul></li></ul></li></ul>
+
             
         </li>
 	
@@ -150,12 +153,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/template/stackTemplate" onclick="pageScrollToTop(this)"> Stack實作(int Array)</a>
         
-            
-                <ul><li><a href="#stack-int陣列實作" onclick="mobilePageScrollToAnchor(this)" >Stack int陣列實作。</a><ul><li><a href="#使用stack" onclick="mobilePageScrollToAnchor(this)" >使用Stack</a></li></ul></li><li><a href="#stack-typedef實作" onclick="mobilePageScrollToAnchor(this)" >Stack typedef實作</a></li><li><a href="#stack-模板實作" onclick="mobilePageScrollToAnchor(this)" >Stack 模板實作</a></li></ul>
-
             
         </li></ul></li></ul></li>
 	
@@ -179,7 +179,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >Stack實作(int Array)</a>
+                            <a href="." >char字元</a>
                         
                     </h1>
                 </div>
@@ -194,130 +194,92 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/template/stackTemplate">Stack實作(int Array)</h1>
+                        <h1 id="/pages/c/basic/charType">char字元</h1>
                     
 
-                    <h2 id="stack-int陣列實作">Stack int陣列實作。</h2>
+                    <h2 id="整數">整數</h2>
+
+<p>整數包含<code class="language-plaintext highlighter-rouge">char</code>, bool, short, unsinged short, int, unsinged int, long, unsinged long</p>
+
+<h3 id="char">char</h3>
+
+<p>char是正整數，雖然顯示是字元，但實際存放在記憶體位置的資料型態是整數。</p>
+
+<p>char所對映的整數是顯示在瑩幕上的ASCII碼。<a href="https://zh.wikipedia.org/zh-tw/ASCII">https://zh.wikipedia.org/zh-tw/ASCII</a></p>
+
+<p>若輸入單引號''包住的字元，編譯器會自動把單引號包住的字元轉成整數。</p>
+
+<p>比如'a'，記憶體位址存放的十進位值是97，二進制是01100001</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">整數型態</th>
+      <th style="text-align: center">占用Byte數量</th>
+      <th style="text-align: center">數值範圍</th>
+      <th style="text-align: center">格式符</th>
+      <th style="text-align: center">輸出格式</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">char</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0~127</td>
+      <td style="text-align: center">%c</td>
+      <td style="text-align: center">字元</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">char</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0~127</td>
+      <td style="text-align: center">%d</td>
+      <td style="text-align: center">整數</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="字元變數賦值數字">字元變數賦值數字。</h4>
+
+<p>程式碼</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Stack</span><span class="p">{</span>
-<span class="nl">private:</span>
-    <span class="kt">int</span> <span class="o">*</span><span class="n">items</span><span class="p">;</span> <span class="c1">//陣列指針</span>
-    <span class="kt">int</span> <span class="n">stacksize</span><span class="p">;</span><span class="c1">//stack大小</span>
-    <span class="kt">int</span> <span class="n">top</span><span class="p">;</span><span class="c1">//目前stack的數量(stack 頂端)</span>
-<span class="nl">public:</span>
-    <span class="c1">//建構子，初始化成員stacksize與top</span>
-    <span class="n">Stack</span><span class="p">(</span><span class="kt">int</span> <span class="n">size</span><span class="p">)</span><span class="o">:</span><span class="n">stacksize</span><span class="p">(</span><span class="n">size</span><span class="p">),</span><span class="n">top</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//建立int陣列指針</span>
-        <span class="n">items</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">stacksize</span><span class="p">];</span>
-    <span class="p">}</span>
-    <span class="o">~</span><span class="n">Stack</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">delete</span> <span class="p">[]</span> <span class="n">items</span><span class="p">;</span><span class="c1">//刪除陣列指針</span>
-        <span class="n">items</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span><span class="c1">//指向null</span>
-    <span class="p">}</span>
-    <span class="cm">/**
-     判斷是否為空
-     */</span>
-    <span class="kt">bool</span> <span class="n">isEmpty</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">top</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="cm">/**
-     判斷是否已滿
-     */</span>
-    <span class="kt">bool</span> <span class="n">isfull</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">top</span> <span class="o">==</span> <span class="n">stacksize</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="cm">/**
-     push stack
-     */</span>
-    <span class="kt">bool</span> <span class="n">push</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//如果stack數量 小於 stacksize</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">top</span> <span class="o">&lt;</span> <span class="n">stacksize</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">items</span><span class="p">[</span><span class="n">top</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="n">item</span><span class="p">;</span><span class="c1">//把item加入</span>
-            <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="cm">/**
-     pop stack
-     */</span>
-    <span class="kt">bool</span> <span class="n">pop</span><span class="p">(</span><span class="kt">int</span><span class="o">&amp;</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">top</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">item</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="o">--</span><span class="n">top</span><span class="p">];</span>
-            <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">};</span>
+</pre></td><td class="code"><pre><span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">97</span><span class="p">;</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"%c</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第3行，私有成員屬性items，類型為int指針，指向int陣列的第0筆地址。<br />
-第4行，私有成員屬性stacksize，類型為int，存放stack最大的容量。<br />
-第5行，私有成員屬性top，類型為int，記錄目前stack最頂端的index位置。<br />
-第8行，建構子，初始化成員stacksize與top。<br />
-第10行，動態建立int陣列。<br />
-第12行，解構子。<br />
-第13行，從記憶體釋放items的空間。<br />
-第14行，將釋放的空間指向null。<br />
-第20行，若top位置在0，表示為空。<br />
-第25行，若top位置在stacksize代表空間已滿。<br />
-第31行，函式是將item推入stack，參數為參考類型。<br />
-第33行，目前stack最頂端的index位置小於stack最大容量就做if的區塊。<br />
-第34行，先做items[top] = item的動作，再做top++的動作。<br />
-第42行，參數為參考類型，stack彈出頂端的值暫時放置的變量。<br />
-第44行，先將top–的動作，再做items[top]的動作。</p>
+<p>第一行，直接給整數到c變數。</p>
 
-<h3 id="使用stack">使用Stack</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+97
+a
+</code></pre></div></div>
+
+<h4 id="印出char可用c或d">印出char可用%c或%d</h4>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"%c</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+97
+a
+</code></pre></div></div>
+
+<h4 id="int變數賦值字元">int變數賦值字元。</h4>
+
+<p>在c++中，可以直接給int變數賦值單引號''包住的字元</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -325,182 +287,152 @@
 3
 4
 5
-6
-7
-8
-9
-10
-11
-12
-13
-14
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Stack</span> <span class="n">myStack</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
-    <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-    <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-    <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
-    <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
-    <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">item</span><span class="p">;</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">myStack</span><span class="p">.</span><span class="n">isEmpty</span><span class="p">()</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">myStack</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"item = "</span> <span class="o">&lt;&lt;</span> <span class="n">item</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">c1</span> <span class="o">=</span> <span class="sc">'A'</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c1="</span> <span class="o">&lt;&lt;</span> <span class="n">c1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第2行，建立stack物件，最大存放數量為5。<br />
-第3~7行，依序塞入1~5。<br />
-第8行，宣告臨時變數item。<br />
-第9行，若stack不為空就進入循環。<br />
-第10行，將stack的頂端拿出來，放在變數item。<br />
-第11行，印出item。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果 
-item = 5
-item = 4
-item = 3
-item = 2
-item = 1 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+65
 </code></pre></div></div>
-<h2 id="stack-typedef實作">Stack typedef實作</h2>
-<p>將上面的程式修改成自定義類型DataType。以下有黃色的部分是有變更的程式碼。</p>
-<pre>
-<span class="markline">typedef int DataType;</span>
-class Stack{
-private:
-    <span class="markline">DataType</span> *items; //陣列指針
-    int stacksize;//stack大小
-    int top;//目前stack的數量(stack 頂端)
-public:
-    //建構子，初始化成員stacksize與top
-    Stack(int size):stacksize(size),top(0) {
-        //建立int陣列指針
-        items = new <span class="markline">DataType</span>[stacksize];
-    }
-    ~Stack() {
-        delete [] items;//刪除陣列指針
-        items = nullptr;//指向null
-    }
-    /**
-     判斷是否為空
-     */
-    bool isEmpty() const {
-        return top == 0;
-    }
-    /**
-     判斷是否已滿
-     */
-    bool isfull() {
-        return top == stacksize;
-    }
-    /**
-     push stack
-     */
-    bool push(const <span class="markline">DataType&amp;</span> item) {
-        //如果stack數量 小於 stacksize
-        if(top &lt; stacksize) {
-            items[top++] = item;//把item加入
-            return true;
-        }
-        return false;
-    }
-    /**
-     pop stack
-     */
-    bool pop(<span class="markline">DataType&amp;</span> item) {
-        if(top &gt; 0) {
-            item = items[--top];
-            return true;
-        }
-        return false;
-    }
-};
-int main() {
-    Stack myStack(5);
-    myStack.push(1);
-    myStack.push(2);
-    myStack.push(3);
-    myStack.push(4);
-    myStack.push(5);
-    <span class="markline">DataType</span> item;
-    while(myStack.isEmpty() == false) {
-        myStack.pop(item);
-        cout &lt;&lt; "item = " &lt;&lt; item &lt;&lt; endl;
-    }
-    return 0;
-}    
-</pre>
 
-<h2 id="stack-模板實作">Stack 模板實作</h2>
-<p>將上面的程式再修改成模板，以下有黃色的部分是有變更的程式碼。</p>
-<pre>
-<span class="markline">template &lt;class DataType&gt;</span>
-class Stack{
-private:
-    DataType *items; //陣列指針
-    int stacksize;//stack大小
-    int top;//目前stack的數量(stack 頂端)
-public:
-    //建構子，初始化成員stacksize與top
-    Stack(int size):stacksize(size),top(0) {
-        //建立int陣列指針
-        items = new DataType[stacksize];
-    }
-    ~Stack() {
-        delete [] items;//刪除陣列指針
-        items = nullptr;//指向null
-    }
-    /**
-     判斷是否為空
-     */
-    bool isEmpty() const {
-        return top == 0;
-    }
-    /**
-     判斷是否已滿
-     */
-    bool isfull() {
-        return top == stacksize;
-    }
-    /**
-     push stack
-     */
-    bool push(const DataType&amp; item) {
-        //如果stack數量 小於 stacksize
-        if(top &lt; stacksize) {
-            items[top++] = item;//把item加入
-            return true;
-        }
-        return false;
-    }
-    /**
-     pop stack
-     */
-    bool pop(DataType&amp; item) {
-        if(top &gt; 0) {
-            item = items[--top];
-            return true;
-        }
-        return false;
-    }
-};
-int main() {
-    Stack<span class="markline">&lt;int&gt;</span> myStack(5);
-    myStack.push(1);
-    myStack.push(2);
-    myStack.push(3);
-    myStack.push(4);
-    myStack.push(5);
-    <span class="markline">int</span> item;
-    while(myStack.isEmpty() == false) {
-        myStack.pop(item);
-        cout &lt;&lt; "item = " &lt;&lt; item &lt;&lt; endl;
-    }
-    return 0;
-}    
-</pre>
+<h4 id="int轉型字元">int轉型字元</h4>
+
+<p>想印出字元，就把int轉型成char</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">c1</span> <span class="o">=</span> <span class="sc">'A'</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c1="</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">char</span><span class="p">)</span><span class="n">c1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+執行結果
+A
+</code></pre></div></div>
+
+<h4 id="字元運算">字元運算</h4>
+
+<p>也可字元加整數做運算。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">c1</span> <span class="o">=</span> <span class="sc">'A'</span> <span class="o">+</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c1="</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">char</span><span class="p">)</span><span class="n">c1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>第一行，字元+2。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+c1=C
+</code></pre></div></div>
+
+<h4 id="跳脫字元">跳脫字元</h4>
+
+<p>重要有以下幾種</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Ascii碼</th>
+      <th style="text-align: center">跳脫字元</th>
+      <th style="text-align: left">描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">\0</td>
+      <td style="text-align: left">空，字元變數可設定0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">9</td>
+      <td style="text-align: center">\t</td>
+      <td style="text-align: left">TAB鍵對齊</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">\n</td>
+      <td style="text-align: left">換行</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">13</td>
+      <td style="text-align: center">\r</td>
+      <td style="text-align: left">移動到最前面</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="設定空">設定空</h5>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c4</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c4="</span> <span class="o">&lt;&lt;</span> <span class="n">c4</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h5 id="關於斜線">關於斜線</h5>
+
+<p>因為"與'與\，被編譯器作為以下用途。</p>
+
+<ul>
+  <li>""，把字串包起來。</li>
+  <li>''，把字元包起來。</li>
+  <li>\，換行\n</li>
+</ul>
+
+<p>所以不能直接使用"與'與\，必須加上\“與\‘與<code class="language-plaintext highlighter-rouge">\\</code>。</p>
+
+<h5 id="雙引號">雙引號</h5>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c2</span> <span class="o">=</span> <span class="sc">'"'</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c2="</span> <span class="o">&lt;&lt;</span> <span class="n">c2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"我說，</span><span class="se">\"</span><span class="s">跑!</span><span class="se">\"</span><span class="s">"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>第1行，當作字元的雙引號，前面不用加斜線<code class="language-plaintext highlighter-rouge">'\"'</code>，直接寫雙引號就可以<code class="language-plaintext highlighter-rouge">'"'</code>。</p>
+
+<p>第3行，當作字串中的的雙引號，前面要加斜線。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+c2="
+我說，"跑!"
+</code></pre></div></div>
+
+<h5 id="單引號">單引號</h5>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c3</span> <span class="o">=</span> <span class="sc">'\''</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c3="</span> <span class="o">&lt;&lt;</span> <span class="n">c3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"我說，'跑!'"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>第1行，當作字元的單引號，前面要加斜線<code class="language-plaintext highlighter-rouge">'\''</code>。</p>
+
+<p>第3行，當作字串中的的單引號，前面不用加斜線。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+c3='
+我說，'跑!'
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -564,14 +496,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/template/classTemplate" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 模板類">
+                        <a href="/pages/c/basic/typicalRange" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 資料類型範圍">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/jekyll/install/how_to_install_ruby" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝 Ruby on Mac">
+                        <a href="/pages/c/basic/boolType" class="navigation navigation-next navigation-unique" aria-label="Next page: bool">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -589,11 +521,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "資料類型範圍",
+            "title": "整數與浮點數",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/basic/typicalRange.md",
-            "ref": "_pages/c/basic/typicalRange.md",
+            "path": "_pages/c/basic/printformat.md",
+            "ref": "_pages/c/basic/printformat.md",
             "articles": []
         },
         
@@ -685,8 +617,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/template/stackTemplate.md",
-        "mtime": "2024-04-23 00:00:00 +0800",
+        "path": "_pages/c/basic/charType.md",
+        "mtime": "2024-04-18 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

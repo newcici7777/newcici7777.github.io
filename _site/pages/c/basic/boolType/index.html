@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>VS Code on Mac · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>bool · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -81,12 +81,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/editor/vscode" onclick="pageScrollToTop(this)"> VS Code on Mac</a>
         
-            
-                
-
             
         </li>
 	
@@ -122,9 +119,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/basic/boolType" onclick="pageScrollToTop(this)"> bool</a>
         
+            
+                <ul><li><a href="#整數" onclick="mobilePageScrollToAnchor(this)" >整數</a><ul><li><a href="#0是false非0為true" onclick="mobilePageScrollToAnchor(this)" >0是false，非0為true。</a></li><li><a href="#可使用true跟false設定bool變數" onclick="mobilePageScrollToAnchor(this)" >可使用true跟false設定bool變數</a></li><li><a href="#bool整數運算" onclick="mobilePageScrollToAnchor(this)" >bool整數運算</a></li><li><a href="#cin只能輸0或1不能輸入true或false" onclick="mobilePageScrollToAnchor(this)" >cin只能輸0或1，不能輸入true或false</a><ul><li><a href="#證明bool為整數" onclick="mobilePageScrollToAnchor(this)" >證明bool為整數</a></li></ul></li></ul></li></ul>
+
             
         </li>
 	
@@ -179,7 +179,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >VS Code on Mac</a>
+                            <a href="." >bool</a>
                         
                     </h1>
                 </div>
@@ -194,19 +194,121 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/editor/vscode">VS Code on Mac</h1>
+                        <h1 id="/pages/c/basic/boolType">bool</h1>
                     
 
-                    <p>可以參考其它人的影音檔。<br />
-<a href="https://www.youtube.com/watch?v=iIPST6HQgSc">https://www.youtube.com/watch?v=iIPST6HQgSc</a></p>
+                    <h2 id="整數">整數</h2>
 
-<p>參考文章<br />
-<a href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line">Visual Studio Code on macOS</a><br />
-<a href="https://code.visualstudio.com/docs/cpp/config-clang-mac">Using Clang in Visual Studio Code</a></p>
+<p>整數包含char, <code class="language-plaintext highlighter-rouge">bool</code>, short, unsinged short, int, unsinged int, long, unsinged long</p>
 
-<p>若code .沒反應<br />
-<a href="https://stackoverflow.com/questions/29955500/code-is-not-working-in-on-the-command-line-for-visual-studio-code-on-os-x-ma">“code .” is not working in on the command line for Visual Studio Code on OS X/Mac</a></p>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">整數型態</th>
+      <th style="text-align: center">占用Byte數量</th>
+      <th style="text-align: center">數值範圍</th>
+      <th style="text-align: center">格式符</th>
+      <th style="text-align: center">輸出格式</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">bool</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0 1</td>
+      <td style="text-align: center">%d</td>
+      <td style="text-align: center">整數</td>
+    </tr>
+  </tbody>
+</table>
 
+<h3 id="0是false非0為true">0是false，非0為true。</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>    <span class="kt">bool</span> <span class="n">b3</span> <span class="o">=</span> <span class="sc">'0'</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="n">b4</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b3="</span> <span class="o">&lt;&lt;</span> <span class="n">b3</span> <span class="o">&lt;&lt;</span> <span class="s">",b4="</span> <span class="o">&lt;&lt;</span> <span class="n">b4</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+b3=1,b4=0
+</code></pre></div></div>
+
+<h3 id="可使用true跟false設定bool變數">可使用true跟false設定bool變數</h3>
+
+<p>編譯器會自動把true翻譯成整數1，false翻譯成整數0。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>    <span class="kt">bool</span> <span class="n">b1</span> <span class="o">=</span> <span class="nb">true</span><span class="p">,</span> <span class="n">b2</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b1="</span> <span class="o">&lt;&lt;</span> <span class="n">b1</span> <span class="o">&lt;&lt;</span> <span class="s">",b2="</span> <span class="o">&lt;&lt;</span> <span class="n">b2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+b1=1,b2=0
+</code></pre></div></div>
+
+<h3 id="bool整數運算">bool整數運算</h3>
+
+<p>因為bool是整數，所以bool能做整數運算。但bool顯示出來只會是0或1，即便設的值是2，顯示出來的值仍是1。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>    <span class="kt">bool</span> <span class="n">b5</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="n">b6</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b5 = "</span> <span class="o">&lt;&lt;</span> <span class="n">b5</span> <span class="o">&lt;&lt;</span> <span class="s">", b6 = "</span> <span class="o">&lt;&lt;</span> <span class="n">b6</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b5 + b6 = "</span> <span class="o">&lt;&lt;</span> <span class="n">b5</span> <span class="o">+</span> <span class="n">b6</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+b5 = 1, b6 = 1
+b5 + b6 = 2
+</code></pre></div></div>
+
+<h3 id="cin只能輸0或1不能輸入true或false">cin只能輸0或1，不能輸入true或false</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>    <span class="kt">bool</span> <span class="n">b7</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">b7</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b7 = "</span> <span class="o">&lt;&lt;</span> <span class="n">b7</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+1
+b7 = 1
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+true
+b7 = 0
+</code></pre></div></div>
+
+<h4 id="證明bool為整數">證明bool為整數</h4>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>    <span class="kt">bool</span> <span class="n">b8</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">c5</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">b8</span><span class="p">;</span>    
+    <span class="o">*</span><span class="n">c5</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b8 = "</span> <span class="o">&lt;&lt;</span> <span class="n">b8</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -270,14 +372,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/editor/xcode" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Xcode">
+                        <a href="/pages/c/basic/charType" class="navigation navigation-prev navigation-unique" aria-label="Previous page: char字元">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/editor/cmake" class="navigation navigation-next navigation-unique" aria-label="Next page: Cmake on Mac">
+                        <a href="/pages/c/basic/printformat" class="navigation navigation-next navigation-unique" aria-label="Next page: 整數與浮點數">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -293,15 +395,6 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
-        
-        "next": {
-            "title": "模板類",
-            "level": "1.2",
-            "depth": 1,
-            "path": "_pages/c/template/classTemplate.md",
-            "ref": "_pages/c/template/classTemplate.md",
-            "articles": []
-        },
         
         "dir": "ltr"
     },    "config": {
@@ -391,8 +484,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/editor/vscode.md",
-        "mtime": "2024-04-18 00:00:00 +0800",
+        "path": "_pages/c/basic/boolType.md",
+        "mtime": "2024-05-01 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
