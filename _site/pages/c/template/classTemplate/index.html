@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>模板類 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>類別模板 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -102,11 +102,11 @@
         </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料類型 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型別 </a><ul>
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料類型範圍</a>
+    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型別範圍</a>
         
             
         </li>
@@ -133,21 +133,41 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 變數有效範圍(Scope) </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/block" onclick="pageScrollToTop(this)"> 程式碼區塊</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 記憶體配置 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/memory/memoryLayout" onclick="pageScrollToTop(this)"> 記憶體配置</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 模板 </a><ul>
 	
 	
 	<li class="">
-    	<a href="/pages/c/template/funTemplate" onclick="pageScrollToTop(this)"> 模板函式</a>
+    	<a href="/pages/c/template/funTemplate" onclick="pageScrollToTop(this)"> 函式模板</a>
         
             
         </li>
 	
 	
 	<li class="active">
-    	<a href="/pages/c/template/classTemplate" onclick="pageScrollToTop(this)"> 模板類</a>
+    	<a href="/pages/c/template/classTemplate" onclick="pageScrollToTop(this)"> 類別模板</a>
         
             
-                <ul><li><a href="#語法" onclick="mobilePageScrollToAnchor(this)" >語法</a></li><li><a href="#定義模板類" onclick="mobilePageScrollToAnchor(this)" >定義模板類</a></li><li><a href="#使用模板類" onclick="mobilePageScrollToAnchor(this)" >使用模板類</a></li></ul>
+                <ul><li><a href="#語法" onclick="mobilePageScrollToAnchor(this)" >語法</a></li><li><a href="#宣告類別模板" onclick="mobilePageScrollToAnchor(this)" >宣告類別模板</a></li><li><a href="#使用類別模板" onclick="mobilePageScrollToAnchor(this)" >使用類別模板</a></li></ul>
 
             
         </li>
@@ -179,7 +199,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >模板類</a>
+                            <a href="." >類別模板</a>
                         
                     </h1>
                 </div>
@@ -194,16 +214,16 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/template/classTemplate">模板類</h1>
+                        <h1 id="/pages/c/template/classTemplate">類別模板</h1>
                     
 
                     <h2 id="語法">語法</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>模板定義    模板形參定義 形參通用名字 逗號 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>宣告模板    宣告型別參數  型別參數名    逗號 
 template &lt; class         T1       ,   class T2&gt;
 </code></pre></div></div>
-<p>模板定義以關鍵字template開始，後接模板形參表（template parameter list），模板形參是以class開頭，後接形參的通用名字(T1)。模板形參表是用尖括號括住的一個或者多個模板形參的列表，形參之間以逗號分隔。class也可以用typename互相替換。</p>
+<p>宣告模板從關鍵字template開始，後接型別參數列表（template parameter list），型別參數是以class開頭，後接型別參數名(T1)。型別參數列表是用尖括號括住的一個型別參數或者多個型別參數，型別參數之間以逗號分隔。class也可以用typename互相替換。</p>
 
-<h2 id="定義模板類">定義模板類</h2>
+<h2 id="宣告類別模板">宣告類別模板</h2>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -239,14 +259,21 @@ template &lt; class         T1       ,   class T2&gt;
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第1行，template為模板定義，&lt;class K, class V&gt;模板形參定義(type parameter)。<br />
-第2行，模板函式的名稱為MyMap。<br />
-第5行，建構子，初始私有成員key與value。<br />
-第6行，取得私有成員key。<br />
-第9行，取得私有成員value。<br />
-第13行，私有成員key。<br />
-第14行，私有成員value。</p>
-<h2 id="使用模板類">使用模板類</h2>
+<p>第1行，template為類別模板宣告，&lt;class K, class V&gt;型別參數宣告(type parameter)。</p>
+
+<p>第2行，類別模板的名稱為MyMap。</p>
+
+<p>第5行，建構式，初始私有成員key與value。</p>
+
+<p>第6行，取得私有成員key。</p>
+
+<p>第9行，取得私有成員value。</p>
+
+<p>第13行，私有成員key。</p>
+
+<p>第14行，私有成員value。</p>
+
+<h2 id="使用類別模板">使用類別模板</h2>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -272,13 +299,18 @@ template &lt; class         T1       ,   class T2&gt;
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第2行，建立模板類物件，用尖括號&lt;K,V&gt;  指定模板形參類型，K的類型為int，V的類型為string，呼叫傳進二個參數的建構子。<br />
-第3行，印出值。<br />
-第4行，印出值。<br />
-第6行，使用指針建立模板類物件，用尖括號&lt;K,V&gt;  指定模板形參類型，K的類型為string，V的類型為string，使用new的方式建立指針，(
-“abc”,”def”)呼叫二個參數的建構子。<br />
-第7行，使用-&gt;印出值。<br />
-第8行，使用-&gt;印印出值。</p>
+<p>第2行，建立物件，用尖括號&lt;K,V&gt;  指定參數型別，K的型別為int，V的型別為string，呼叫二個參數的建構式。</p>
+
+<p>第3行，印出值。</p>
+
+<p>第4行，印出值。</p>
+
+<p>第6行，動態配置建立物件，用尖括號&lt;K,V&gt;  指定參數型別，K的型別為string，V的型別為string，使用new動態配置建立物件，(
+“abc”,”def”)呼叫二個參數的建構式。</p>
+
+<p>第7行，使用-&gt;印出值。</p>
+
+<p>第8行，使用-&gt;印印出值。</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -342,7 +374,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/template/funTemplate" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 模板函式">
+                        <a href="/pages/c/template/funTemplate" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 函式模板">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -367,7 +399,7 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "模板函式",
+            "title": "函式模板",
             "level": "1.2",
             "depth": 1,
             "path": "_pages/c/template/funTemplate.md",
@@ -469,7 +501,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-05-03 11:06:34 +0800"
+        "time": "2024-05-08 23:42:12 +0800"
     },
     "basePath": "",
     "book": {
