@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Cmake on Mac · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>強制轉型 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -88,12 +88,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/editor/cmake" onclick="pageScrollToTop(this)"> Cmake on Mac</a>
         
-            
-                
-
             
         </li>
 	
@@ -176,9 +173,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/conversion/explicit" onclick="pageScrollToTop(this)"> 強制轉型</a>
         
+            
+                
+
             
         </li></ul></li>
 	
@@ -226,7 +226,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >Cmake on Mac</a>
+                            <a href="." >強制轉型</a>
                         
                     </h1>
                 </div>
@@ -241,92 +241,24 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/editor/cmake">Cmake on Mac</h1>
+                        <h1 id="/pages/c/conversion/explicit">強制轉型</h1>
                     
 
-                    <p>前往<a href="https://cmake.org/download/">下載Cmake</a><br />
-<img src="/assets/img/cmake/1.png" alt="img" /><br />
-解壓好放在應用程式中<br />
-<img src="/assets/img/cmake/2.png" alt="img" /> 
-打開CMAKE<br />
-按照下圖，選擇Tool-&gt;How to Install For Command Line Use <br />
-<img src="/assets/img/cmake/3.png" alt="img" /><br />
-將以下紅框的部分複製，打開終端機，貼上<br />
-<img src="/assets/img/cmake/3-1.png" alt="img" /><br />
-<img src="/assets/img/cmake/3-2.png" alt="img" /><br />
-貼上後再輸入以下指令</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$which cmake
-</code></pre></div></div>
-<p>再輸入以下指令</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$cmake --version
-</code></pre></div></div>
-<p>切記，把版本資訊記起來，如我的版本資訊是cmake version 3.27.5
-在你所在.cpp的目錄下建立build目錄</p>
-
-<p><img src="/assets/img/cmake/4.png" alt="img" /> 
-跟build目錄同階層建立CMakeLists.txt的文件<br />
-<img src="/assets/img/cmake/5.png" alt="img" /><br />
-在CMakeLists.txt的文件中輸入以下內容</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//VERSION編號是之前查詢的
-cmake_minimum_required(VERSION 3.27.5)
-
-//第一參數為Project名稱
-//Project的版本是1.0.0
-project(CPPLessons VERSION 1.0.0)
-
-//第一個參數是Project名稱 第二個參數為所使用的cpp
-add_executable(CPPLessons test.cpp Student.cpp)
-</code></pre></div></div>
-<p>建立檔案，依xcode為例，在工作列按滑鼠右鍵，選”New File”<br />
-<img src="/assets/img/cmake/6.png" alt="img" /><br />
-依照下圖建立頭文件<br />
-<img src="/assets/img/cmake/7.png" alt="img" /><br />
-<img src="/assets/img/cmake/8.png" alt="img" /><br />
-再來建立cpp文件<br />
-<img src="/assets/img/cmake/9.png" alt="img" /><br />
-記得不要勾選要建立頭文件
-<img src="/assets/img/cmake/10.png" alt="img" /><br />
-在test.cpp輸入以下內容</p>
+                    <p>將等號(=)右邊的值強制轉型，明確告訴編譯器等號(=)右邊的值的類型。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
-#include</span> <span class="cpf">"test.h"</span><span class="cp">
-</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">a</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">};</span>
-   <span class="n">printf</span><span class="p">(</span><span class="s">"cmake test"</span><span class="p">);</span>
-   <span class="kt">int</span> <span class="n">b</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">100</span><span class="p">};</span>
-   <span class="n">printf</span><span class="p">(</span><span class="s">"cmake test2"</span><span class="p">);</span>
-   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="mf">8.3</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>打開終端機，進入build的目錄<br />
-<img src="/assets/img/cmake/11.png" alt="img" /><br />
-輸入以下內容(要在build的目錄下做喔)</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmake ..
-</code></pre></div></div>
-<p><img src="/assets/img/cmake/12.png" alt="img" /><br />
-產生以下資訊<br />
-<img src="/assets/img/cmake/13.png" alt="img" /><br />
-輸入make</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make
-</code></pre></div></div>
-<p><img src="/assets/img/cmake/14.png" alt="img" /><br />
-輸入./CPPLessons<br />
-<img src="/assets/img/cmake/15.png" alt="img" /><br />
-測試成功<br />
-<img src="/assets/img/cmake/16.png" alt="img" /></p>
+<p>另一種強制轉型的方式，將值放在括號中()。</p>
 
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="kt">int</span><span class="p">(</span><span class="mf">8.3</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -390,14 +322,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/editor/vscode" class="navigation navigation-prev navigation-unique" aria-label="Previous page: VS Code on Mac">
+                        <a href="/pages/c/conversion/implicit" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 隱式轉型">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/editor/supportc11" class="navigation navigation-next navigation-unique" aria-label="Next page: Xcode支援C++11以上">
+                        <a href="/pages/c/template/funTemplate" class="navigation navigation-next navigation-unique" aria-label="Next page: 函式模板">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -415,11 +347,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "Xcode支援C++11以上",
+            "title": "隱式轉型",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/editor/supportc11.md",
-            "ref": "_pages/c/editor/supportc11.md",
+            "path": "_pages/c/conversion/implicit.md",
+            "ref": "_pages/c/conversion/implicit.md",
             "articles": []
         },
         
@@ -511,8 +443,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/editor/cmake.md",
-        "mtime": "2024-04-18 00:00:00 +0800",
+        "path": "_pages/c/conversion/explicit.md",
+        "mtime": "2024-05-24 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
