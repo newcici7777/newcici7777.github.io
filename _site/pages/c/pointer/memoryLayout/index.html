@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>類別模板 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>記憶體配置 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -153,9 +153,12 @@
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標 </a><ul>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/pointer/memoryLayout" onclick="pageScrollToTop(this)"> 記憶體配置</a>
         
+            
+                <ul><li><a href="#記憶體起始與結束地址" onclick="mobilePageScrollToAnchor(this)" >記憶體起始與結束地址。</a></li><li><a href="#記憶體區段" onclick="mobilePageScrollToAnchor(this)" >記憶體區段</a><ul><li><a href="#內核" onclick="mobilePageScrollToAnchor(this)" >內核</a></li><li><a href="#stack" onclick="mobilePageScrollToAnchor(this)" >stack</a></li><li><a href="#heap" onclick="mobilePageScrollToAnchor(this)" >Heap</a></li><li><a href="#bss" onclick="mobilePageScrollToAnchor(this)" >bss</a></li><li><a href="#data-segmen" onclick="mobilePageScrollToAnchor(this)" >data segmen</a></li><li><a href="#code-segment" onclick="mobilePageScrollToAnchor(this)" >code segment</a></li></ul></li><li><a href="#變數記憶體位址" onclick="mobilePageScrollToAnchor(this)" >變數記憶體位址</a></li><li><a href="#stack-1" onclick="mobilePageScrollToAnchor(this)" >Stack</a></li><li><a href="#heap-1" onclick="mobilePageScrollToAnchor(this)" >Heap</a></li><li><a href="#尚未使用區域" onclick="mobilePageScrollToAnchor(this)" >尚未使用區域</a></li></ul>
+
             
         </li>
 	
@@ -222,12 +225,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/template/classTemplate" onclick="pageScrollToTop(this)"> 類別模板</a>
         
-            
-                <ul><li><a href="#語法" onclick="mobilePageScrollToAnchor(this)" >語法</a></li><li><a href="#宣告類別模板" onclick="mobilePageScrollToAnchor(this)" >宣告類別模板</a></li><li><a href="#使用類別模板" onclick="mobilePageScrollToAnchor(this)" >使用類別模板</a></li></ul>
-
             
         </li>
 	
@@ -258,7 +258,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >類別模板</a>
+                            <a href="." >記憶體配置</a>
                         
                     </h1>
                 </div>
@@ -273,16 +273,134 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/template/classTemplate">類別模板</h1>
+                        <h1 id="/pages/c/pointer/memoryLayout">記憶體配置</h1>
                     
 
-                    <h2 id="語法">語法</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>宣告模板    宣告型別參數  型別參數名    逗號 
-template &lt; class         T1       ,   class T2&gt;
-</code></pre></div></div>
-<p>宣告模板從關鍵字template開始，後接型別參數列表（template parameter list），型別參數是以class開頭，後接型別參數名(T1)。型別參數列表是用尖括號括住的一個型別參數或者多個型別參數，型別參數之間以逗號分隔。class也可以用typename互相替換。</p>
+                    <h3 id="記憶體起始與結束地址">記憶體起始與結束地址。</h3>
+<p>記憶體開始地址由下表最下方開始，記憶體結束地址在最上方。</p>
 
-<h2 id="宣告類別模板">宣告類別模板</h2>
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th align="center" width="10%">開始與結束</th>
+      <th align="left" width="10%">地址高低</th>
+      <th align="left">地址</th>
+    </tr>  
+  </thead>
+  <tbody>
+    <tr>
+        <td>結束</td>
+        <td align="center" rowspan="4" width="5%" style="vertical-align: middle;">
+          高
+        </td>
+        <td>0xFFFFFFFF</td>
+    </tr>
+    <tr><td></td><td>0xFFFFFFFE</td></tr>
+    <tr><td></td><td>0xFFFFFFFD</td></tr>
+    <tr><td></td><td>0xFFFFFFFC</td></tr>
+    <tr>
+      <td></td>
+      <td align="center" rowspan="4" width="5%" style="vertical-align: middle;">
+          <span style="font-size: 20pt">&#8593;</span>
+      </td>
+      <td>......</td></tr>
+    <tr><td></td><td>......</td></tr>
+    <tr><td></td><td>......</td></tr>
+    <tr><td></td><td>......</td></tr>
+    <tr>
+      <td></td>
+      <td align="center" rowspan="4" width="5%" style="vertical-align: middle;">
+          低
+      </td>
+      <td>0x00000004</td></tr>
+    <tr><td></td><td>0x00000002</td></tr>
+    <tr><td></td><td>0x00000001</td></tr>
+    <tr><td>開始</td><td>0x00000000</td></tr>
+  </tbody>
+</table>
+
+<h3 id="記憶體區段">記憶體區段</h3>
+
+<p>記憶體區段根據地址由高到低分別為Kernel, Stack, 尚位使用區域, Heap, bass, data, code。</p>
+
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th align="center" width="5%">地址高低</th>
+      <th align="left" width="30%">區段</th>
+      <th align="left" width="5%">地址增長方向</th>
+      <th align="left">儲存項目</th>
+    </tr>    
+  </thead>
+  <tbody>
+    <tr>
+      <td>高</td>
+      <td>Kernel</td>
+      <td></td>
+      <td>內核</td>
+    </tr>
+    <tr>
+      <td rowspan="5" style="vertical-align: middle;">
+          <span style="font-size: 10pt">&#8593;</span>
+      </td>
+      <td>Stack</td>
+      <td>&#8595;</td>
+      <td>區域變數</td>
+    </tr>
+    <tr>
+      <td>尚未使用區域</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Heap</td>
+      <td>&#8593;</td>
+      <td>動態分配指標</td>
+    </tr>
+    <tr>
+      <td>bss segmen</td>
+      <td></td>
+      <td>未初始化全域變數, 靜態變數</td>
+    </tr>
+    <tr>
+      <td>data segmen</td>
+      <td></td>
+      <td>已初始化全域變數, 靜態變數</td>
+    </tr>
+    <tr>
+      <td>低</td>    
+      <td>code segment</td>
+      <td></td>
+      <td>常數與程式執行檔</td>
+    </tr>
+  </tbody>                
+</table>
+
+<h4 id="內核">內核</h4>
+
+<p>處理cpu記憶體Devices與應用程式運作。</p>
+
+<h4 id="stack">stack</h4>
+
+<p>函式或程式區塊<code class="language-plaintext highlighter-rouge">{}</code>中區域變數與函式參數與函式返回值的記憶體地址。</p>
+
+<h4 id="heap">Heap</h4>
+
+<p>動態分配指標記憶體地址</p>
+
+<h4 id="bss">bss</h4>
+
+<p>未初始化全域變數與靜態變數記憶體地址</p>
+
+<h4 id="data-segmen">data segmen</h4>
+
+<p>已初始化全域變數與靜態變數記憶體地址</p>
+
+<h4 id="code-segment">code segment</h4>
+
+<p>常數與程式執行檔地址</p>
+
+<h3 id="變數記憶體位址">變數記憶體位址</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -300,39 +418,85 @@ template &lt; class         T1       ,   class T2&gt;
 13
 14
 15
-</pre></td><td class="code"><pre><span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="nc">K</span><span class="p">,</span> <span class="k">class</span> <span class="nc">V</span><span class="p">&gt;</span>
-<span class="k">class</span> <span class="nc">MyMap</span><span class="p">{</span>
-<span class="nl">public:</span>
-    <span class="n">MyMap</span><span class="p">(){}</span>
-    <span class="n">MyMap</span><span class="p">(</span><span class="n">K</span> <span class="n">key1</span><span class="p">,</span> <span class="n">V</span> <span class="n">value1</span><span class="p">)</span><span class="o">:</span><span class="n">key</span><span class="p">(</span><span class="n">key1</span><span class="p">),</span><span class="n">value</span><span class="p">(</span><span class="n">value1</span><span class="p">){}</span>
-    <span class="n">K</span> <span class="n">getKey</span><span class="p">(){</span>
-        <span class="k">return</span> <span class="n">key</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">V</span> <span class="n">getValue</span><span class="p">(){</span>
-        <span class="k">return</span> <span class="n">value</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="nl">private:</span>
-    <span class="n">K</span> <span class="n">key</span><span class="p">;</span>
-    <span class="n">V</span> <span class="n">value</span><span class="p">;</span>
-<span class="p">};</span>
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="k">const</span> <span class="kt">int</span> <span class="n">global_x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>  <span class="c1">// 儲存於 code segment(常數)</span>
+<span class="kt">int</span> <span class="n">global_y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>        <span class="c1">// 儲存於 data segmen(已初始化全域變數）</span>
+<span class="kt">int</span> <span class="n">global_z</span><span class="p">;</span>            <span class="c1">// 儲存於 bss(未初始全域變數)</span>
+<span class="kt">int</span> <span class="nf">fun1</span><span class="p">(</span><span class="kt">int</span> <span class="n">param1</span><span class="p">)</span> <span class="p">{</span>	 <span class="c1">// 儲存於 stack (函式參數)</span>
+	<span class="k">return</span> <span class="n">param1</span><span class="p">;</span> <span class="c1">// 儲存於 stack (函式返回值)</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">const</span> <span class="k">static</span> <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// 儲存於 code segment(常數)</span>
+  <span class="k">static</span> <span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>       <span class="c1">// 儲存於 data segmen(已初始化靜態變數）</span>
+  <span class="k">static</span> <span class="kt">int</span> <span class="n">z</span><span class="p">;</span>           <span class="c1">// 儲存於 bss(未初始靜態變數)</span>
+  <span class="kt">int</span> <span class="n">w</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>              <span class="c1">// 儲存於 stack (區域變數)</span>
+  <span class="n">fun1</span><span class="p">(</span><span class="n">w</span><span class="p">);</span>
+
+  <span class="c1">// 儲存於 heap (動態分配指標)</span>
+  <span class="kt">char</span> <span class="o">*</span><span class="n">buf</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span> <span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">);</span>
+  <span class="c1">// ...</span>
+  <span class="n">free</span><span class="p">(</span><span class="n">buf</span><span class="p">);</span>
+
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span> <span class="c1">// 儲存於 heap (動態分配指標)</span>
+  <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第1行，template為類別模板宣告，&lt;class K, class V&gt;型別參數宣告(type parameter)。</p>
+<h3 id="stack-1">Stack</h3>
+<ul>
+  <li>儲存在Stack的變數，變數離開有效範圍(Scope)後，會由系統自動釋放記憶體地址。</li>
+  <li>Stack記憶體容量8M。</li>
+  <li>記憶體地址向下遞減。</li>
+  <li>不會memory leak。</li>
+</ul>
 
-<p>第2行，類別模板的名稱為MyMap。</p>
+<p>以下程式碼在函式中建立三個變數，並觀察三個變數的記憶體地址是由大至小遞減。證明記憶體地址向下遞減。</p>
 
-<p>第5行，建構式，初始私有成員key與value。</p>
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">funcMemoryLocation</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">var1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">var2</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">var3</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"va1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">var1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"va2 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">var2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"va3 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">var3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
-<p>第6行，取得私有成員key。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+va1 = 140702053822444
+va2 = 140702053822440
+va3 = 140702053822436
+</code></pre></div></div>
 
-<p>第9行，取得私有成員value。</p>
+<h3 id="heap-1">Heap</h3>
+<ul>
+  <li>儲存在Heap的指標，由程式設計師手動釋放記憶體地址，或待主程式生命周期結束後被系統釋放記憶體地址。</li>
+  <li>Heap記憶體容量取決於電腦的記憶體大小。</li>
+  <li>記憶體地址向上遞增。</li>
+  <li>會memory leak。</li>
+</ul>
 
-<p>第13行，私有成員key。</p>
-
-<p>第14行，私有成員value。</p>
-
-<h2 id="使用類別模板">使用類別模板</h2>
+<p>以下程式碼動態分配指標建立三個變數，並觀察三個變數的記憶體地址是由小至大增長。證明動態分配記憶體地址向上遞增。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -345,31 +509,38 @@ template &lt; class         T1       ,   class T2&gt;
 8
 9
 10
+11
+12
+13
+14
+15
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">MyMap</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">myMap</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s">"test"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap key="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap</span><span class="p">.</span><span class="n">getKey</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap value="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap</span><span class="p">.</span><span class="n">getValue</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="n">MyMap</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span> <span class="n">string</span><span class="o">&gt;</span> <span class="o">*</span><span class="n">myMap_P1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyMap</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"abc"</span><span class="p">,</span><span class="s">"def"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap_P1 key="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap_P1</span><span class="o">-&gt;</span><span class="n">getKey</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap_P1 value="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap_P1</span><span class="o">-&gt;</span><span class="n">getValue</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">p2</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">p3</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p1 address = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="n">p1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p2 address = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="n">p2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p3 address = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="n">p3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">delete</span> <span class="n">p1</span><span class="p">;</span>
+    <span class="k">delete</span> <span class="n">p2</span><span class="p">;</span>
+    <span class="k">delete</span> <span class="n">p3</span><span class="p">;</span>
+    <span class="n">p1</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="n">p2</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="n">p3</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第2行，建立物件，用尖括號&lt;K,V&gt;  指定參數型別，K的型別為int，V的型別為string，呼叫二個參數的建構式。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+p1 address = 105553116315664
+p2 address = 105553116315680
+p3 address = 105553116315696
+</code></pre></div></div>
 
-<p>第3行，印出值。</p>
+<h3 id="尚未使用區域">尚未使用區域</h3>
 
-<p>第4行，印出值。</p>
-
-<p>第6行，動態配置建立物件，用尖括號&lt;K,V&gt;  指定參數型別，K的型別為string，V的型別為string，使用new動態配置建立物件，(
-“abc”,”def”)呼叫二個參數的建構式。</p>
-
-<p>第7行，使用-&gt;印出值。</p>
-
-<p>第8行，使用-&gt;印印出值。</p>
+<p>變數在Stack區段中，地址增長的方向是向下遞減，變數在Heap區段中，地址增長的方向是向上遞增，未避免Stack與Heap的記憶體地址互相交疊，中間有一個區域是分隔Stack與Heap。</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -433,14 +604,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/template/funTemplate" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 函式模板">
+                        <a href="/pages/c/basic/block" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 程式碼區塊">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/template/stackTemplate" class="navigation navigation-next navigation-unique" aria-label="Next page: Stack實作(int Array)">
+                        <a href="/pages/c/pointer/pointer" class="navigation navigation-next navigation-unique" aria-label="Next page: 指標基本觀念">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -458,11 +629,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "函式模板",
+            "title": "強制轉型",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/template/funTemplate.md",
-            "ref": "_pages/c/template/funTemplate.md",
+            "path": "_pages/c/conversion/explicit.md",
+            "ref": "_pages/c/conversion/explicit.md",
             "articles": []
         },
         
@@ -554,8 +725,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/template/classTemplate.md",
-        "mtime": "2024-04-22 00:00:00 +0800",
+        "path": "_pages/c/pointer/memoryLayout.md",
+        "mtime": "2024-05-06 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

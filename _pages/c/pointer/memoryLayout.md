@@ -9,93 +9,101 @@ keywords: c++, 記憶體佈局
 記憶體開始地址由下表最下方開始，記憶體結束地址在最上方。
 
 
-<table>
-  <tr>
-    <th align="center" width="10%">開始與結束</th>
-    <th align="left" width="10%">地址高低</th>
-    <th align="left">地址</th>
-  </tr>  
-  <tr>
-      <td>結束</td>
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th align="center" width="10%">開始與結束</th>
+      <th align="left" width="10%">地址高低</th>
+      <th align="left">地址</th>
+    </tr>  
+  </thead>
+  <tbody>
+    <tr>
+        <td>結束</td>
+        <td align="center" rowspan="4" width="5%" style="vertical-align: middle;">
+          高
+        </td>
+        <td>0xFFFFFFFF</td>
+    </tr>
+    <tr><td></td><td>0xFFFFFFFE</td></tr>
+    <tr><td></td><td>0xFFFFFFFD</td></tr>
+    <tr><td></td><td>0xFFFFFFFC</td></tr>
+    <tr>
+      <td></td>
       <td align="center" rowspan="4" width="5%" style="vertical-align: middle;">
-        <span style="font-size: 20pt">高</span>
+          <span style="font-size: 20pt">&#8593;</span>
       </td>
-      <td>0xFFFFFFFF</td>
-  </tr>
-  <tr><td></td><td>0xFFFFFFFE</td></tr>
-  <tr><td></td><td>0xFFFFFFFD</td></tr>
-  <tr><td></td><td>0xFFFFFFFC</td></tr>
-  <tr>
-    <td></td>
-    <td align="center" rowspan="4" width="5%" style="vertical-align: middle;">
-        <span style="font-size: 30pt">↓</span>
-    </td>
-    <td>......</td></tr>
-  <tr><td></td><td>......</td></tr>
-  <tr><td></td><td>......</td></tr>
-  <tr><td></td><td>......</td></tr>
-  <tr>
-    <td></td>
-    <td align="center" rowspan="4" width="5%" style="vertical-align: middle;">
-        <span style="font-size: 20pt">低</span>
-    </td>
-    <td>0x00000004</td></tr>
-  <tr><td></td><td>0x00000002</td></tr>
-  <tr><td></td><td>0x00000001</td></tr>
-  <tr><td>開始</td><td>0x00000000</td></tr>
+      <td>......</td></tr>
+    <tr><td></td><td>......</td></tr>
+    <tr><td></td><td>......</td></tr>
+    <tr><td></td><td>......</td></tr>
+    <tr>
+      <td></td>
+      <td align="center" rowspan="4" width="5%" style="vertical-align: middle;">
+          低
+      </td>
+      <td>0x00000004</td></tr>
+    <tr><td></td><td>0x00000002</td></tr>
+    <tr><td></td><td>0x00000001</td></tr>
+    <tr><td>開始</td><td>0x00000000</td></tr>
+  </tbody>
 </table>
 
 ### 記憶體區段
 
 記憶體區段根據地址由高到低分別為Kernel, Stack, 尚位使用區域, Heap, bass, data, code。
 
-<table>
-  <tr>
-    <th align="center" width="5%">地址高低</th>
-    <th align="left" width="30%">區段</th>
-    <th align="left" width="5%">地址增長方向</th>
-    <th align="left">儲存項目</th>
-  </tr>
-  <tr>
-    <td>高</td>
-    <td>Kernel</td>
-    <td></td>
-    <td>內核</td>
-  </tr>
-  <tr>
-    <td rowspan="5" style="vertical-align: middle;">
-        <span style="font-size: 10pt">↓</span>
-    </td>
-    <td>Stack</td>
-    <td>&#8595;</td>
-    <td>區域變數</td>
-  </tr>
-  <tr>
-    <td>尚未使用區域</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Heap</td>
-    <td>&#8593;</td>
-    <td>動態分配指標</td>
-  </tr>
-  <tr>
-    <td>bss segmen</td>
-    <td></td>
-    <td>未初始化全域變數, 靜態變數</td>
-  </tr>
-  <tr>
-    <td>data segmen</td>
-    <td></td>
-    <td>已初始化全域變數, 靜態變數</td>
-  </tr>
-  <tr>
-    <td>低</td>    
-    <td>code segment</td>
-    <td></td>
-    <td>常數與程式執行檔</td>
-  </tr>                
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th align="center" width="5%">地址高低</th>
+      <th align="left" width="30%">區段</th>
+      <th align="left" width="5%">地址增長方向</th>
+      <th align="left">儲存項目</th>
+    </tr>    
+  </thead>
+  <tbody>
+    <tr>
+      <td>高</td>
+      <td>Kernel</td>
+      <td></td>
+      <td>內核</td>
+    </tr>
+    <tr>
+      <td rowspan="5" style="vertical-align: middle;">
+          <span style="font-size: 10pt">&#8593;</span>
+      </td>
+      <td>Stack</td>
+      <td>&#8595;</td>
+      <td>區域變數</td>
+    </tr>
+    <tr>
+      <td>尚未使用區域</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Heap</td>
+      <td>&#8593;</td>
+      <td>動態分配指標</td>
+    </tr>
+    <tr>
+      <td>bss segmen</td>
+      <td></td>
+      <td>未初始化全域變數, 靜態變數</td>
+    </tr>
+    <tr>
+      <td>data segmen</td>
+      <td></td>
+      <td>已初始化全域變數, 靜態變數</td>
+    </tr>
+    <tr>
+      <td>低</td>    
+      <td>code segment</td>
+      <td></td>
+      <td>常數與程式執行檔</td>
+    </tr>
+  </tbody>                
 </table>
 
 #### 內核
