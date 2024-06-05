@@ -35,6 +35,7 @@ int main() {
 delete 指標變數;
 指標變數 = nullptr;
 ```
+
 {% highlight c++ linenos %}
 int main() {
     int* p = new int(30);

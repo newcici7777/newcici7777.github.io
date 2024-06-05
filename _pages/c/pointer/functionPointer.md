@@ -1,0 +1,269 @@
+---
+title: 函式指標
+date: 2024-06-03
+keywords: c++, pointer, function pointer
+---
+
+函式指標指向函式的記憶體地址，通過函式指標使用函式。
+
+### 函式類型
+
+函式類型是由函式的`返回值類型/參數類型/參數的數量`所組成。
+
+如果多個函式的`返回值類型/參數類型/參數的數量`都一樣，代表這些函式是同一個類型。
+
+以下三個函式都是相同類型，返回值類型/參數類型/參數的數量都一樣。
+
+* int func1(int code, string msg);
+* int func2(int age, string name);
+* int func3(int userId, string userName);
+
+
+以下三個函式都是相同類型，返回值類型/參數類型/參數的數量都一樣。
+
+* bool func4(string param1);
+* bool func5(string msg);
+* bool func6(string name);
+
+以下二個函式不是相同類型。
+
+* int func1(int code, string msg);
+* bool func4(string param1);
+
+
+以下三個函式的函式類型為 int (\*pf1)(int,string)，其中pf1為函式指標的變數名，可以為任意名稱，名稱前面要有星號\*，要用括號()包起來，int為返回值類型，(int,string)為函式參數類型與參數數量。
+
+* int func1(int code, string msg);
+* int func2(int age, string name);
+* int func3(int userId, string userName);
+
+以下三個函式的函式類型為 bool (\*pf2)(string)，其中pf2為函式指標的變數名，可以為任意名稱。
+
+* bool func4(string param1);
+* bool func5(string msg);
+* bool func6(string name);
+
+### 宣告函式指標
+
+{% highlight c++ linenos %}
+int func1(int code, string msg) {
+    cout << "Err code = " << code << ", msg = " << msg << endl;
+    return code;
+}
+int main() {
+    int (*pf1)(int,string); //宣告函式指標變數pf1
+    pf1 = func1; //將func1函式設給pf1函式指標變數
+    pf1(404, "Page not found."); //使用函式指標pf1呼叫函式
+    return 0;
+}
+{% endhighlight %}
+
+第1行,宣告函式。
+
+第6行,宣告函式指標變數pf1。
+
+第7行,將func1函式設給pf1函式指標變數。
+
+第8行,使用函式指標pf1呼叫函式。
+
+```
+執行結果
+Err code = 404, msg = Page not found.
+```
+
+### typedef 自定義函式指標類型
+
+語法
+
+```
+typedef 回傳值(*自定義類型名)(參數1,參數2,參數3 ...);
+```
+
+將前一個宣告函式指標的程式碼
+{% highlight c++ linenos %}
+int (*pf1)(int,string); 
+{% endhighlight %}
+
+改成下方的程式碼，前面添加typedef，並把pf1改成Func1，Func1可以為任意名字，並放在程式的開頭。
+{% highlight c++ linenos %}
+typedef int (*Func1)(int,string);
+{% endhighlight %}
+
+修改完的程式碼如下
+
+{% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+typedef int (*Func1)(int,string);
+int func1(int code, string msg) {
+    cout << "Err code = " << code << ", msg = " << msg << endl;
+    return code;
+}
+int main() {
+    Func1 pf1; //宣告函式指標變數pf1
+    pf1 = func1; //函式指標變數pf1設定函式
+    pf1(404, "Page not found.");//使用函式指標pf1呼叫函式
+    return 0;
+}
+{% endhighlight %}
+
+第3行,宣告自定義函式指標類型Func1。
+
+第9行,宣告指標變數pf1為Func1類型(自定義類型)。
+
+```
+執行結果
+Err code = 404, msg = Page not found.
+```
+
+### 函式參數是函式指標
+
+宣告函式print404Msg()，第一個參數為函式指標，函式的類型是返回值為int，函式指標名為pf1，2個參數類型分別為int跟string。
+
+{% highlight c++ linenos %}
+void print404Msg(int (*pf1)(int,string), string msg) {
+    pf1(404, msg);
+}
+{% endhighlight %}
+
+第1行,宣告函式print404Msg()，第一個參數為函式指標，第二個參數為string類型。
+
+第2行,使用函式指標pf1呼叫函式，並把404整數與msg的參數傳進函式。
+
+完整程式
+{% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+void print404Msg(int (*pf1)(int,string), string msg) {
+    pf1(404, msg);
+}
+int func1(int code, string msg) {
+    cout << "Err code = " << code << ", msg = " << msg << endl;
+    return code;
+}
+int main() {
+    print404Msg(func1, "Page not Found");
+    return 0;
+}
+{% endhighlight %}
+
+```
+執行結果
+Err code = 404, msg = Page not Found
+```
+
+### 函式參數是typedef，自定義函式指標類型
+
+也可以使用typedef，自定義函式指標類型。
+
+{% highlight c++ linenos %}
+typedef int (*Func1)(int,string);
+void print404Msg(Func1 pf1, string msg) {
+    pf1(404, msg);
+}
+{% endhighlight %}
+
+第1行,宣告自定義函式指標類型Func1。
+
+第2行,宣告函式print404Msg()，第一個參數類型為Func1(自定義類型)，第二個參數類型為string
+
+第3行,使用函式指標呼叫函式，並把第二個參數msg傳入。
+
+完整程式
+{% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+typedef int (*Func1)(int,string);
+void print404Msg(Func1 pf1, string msg) {
+    pf1(404, msg);
+}
+int func1(int code, string msg) {
+    cout << "Err code = " << code << ", msg = " << msg << endl;
+    return code;
+}
+int main() {
+    print404Msg(func1, "Page not Found");
+    return 0;
+}
+{% endhighlight %}
+
+### 函式指標應用
+
+自定義二個函式指標類型
+{% highlight c++ linenos %}
+typedef void (*Success)(char*);
+typedef void (*Failure)(int, char*);
+{% endhighlight %}
+第1行,宣告自定義函式類型，函式的類型是返回值為void，函式指標名為Success，參數類型char*指標。
+
+第2行,宣告自定義函式類型，函式的類型是返回值為void，函式指標名為Failure，第1個參數類型int，第2個參數類型char*指標。
+
+{% highlight c++ linenos %}
+void httpOk(char* msg) {
+    printf("成功，結果:%s\n", msg);
+}
+void httpFailure(int code, char* msg) {
+    printf("失敗%d，原因:%s\n", code, msg);
+}
+{% endhighlight %}
+第1行,宣告函式，返回值與參數類型都符合自定義函式類型Success
+
+第4行,宣告函式，返回值與參數類型都符合自定義函式類型Failure
+
+{% highlight c++ linenos %}
+void http(int res, Success success, Failure failure) {
+    if(res == 1) {
+        success("取得資料成功");
+    } else {
+        failure(505,"網路連線有問題");
+    }
+}
+int main() {
+    http(1,httpOk,httpFailure);
+    http(0,httpOk,httpFailure);
+    return 0;
+}
+{% endhighlight %}
+第1行,宣告函式，第1個參數類型int，第2個參數自定義函式指標類型Success，第3個參數自定義函式指標類型Failure。
+
+第3行,使用函式指標Success呼叫函式。
+
+第5行,使用函式指標Failure呼叫函式，並傳入參數。
+
+第9行,呼叫http函式，並把函式返回值參數與自定義Success函式類型一樣的httpOk函式傳入。
+
+第10行,呼叫http函式，並把函式返回值參數與自定義Failure函式類型一樣的httpFailure函式傳入。
+
+完整程式
+
+{% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+typedef void (*Success)(char*);
+typedef void (*Failure)(int, char*);
+void httpOk(char* msg) {
+    printf("成功，結果:%s\n", msg);
+}
+void httpFailure(int code, char* msg) {
+    printf("失敗%d，原因:%s\n", code, msg);
+}
+void http(int res, Success success, Failure failure) {
+    if(res == 1) {
+        success("取得資料成功");
+    } else {
+        failure(505,"網路連線有問題");
+    }
+}
+int main() {
+    http(1,httpOk,httpFailure);
+    http(0,httpOk,httpFailure);
+    return 0;
+}
+{% endhighlight %}
+
+```
+執行結果
+成功，結果:取得資料成功
+失敗505，原因:網路連線有問題
+```
+

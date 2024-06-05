@@ -288,3 +288,23 @@ int* p1 = &i;
 double d = 15.5;
 double* p2 = &d;
 {% endhighlight %}
+
+## 容易搞混的寫法
+
+{% highlight c++ linenos %}
+    int* p4, num3;
+    //p4是指針
+    p4 = &ii;
+    //num3為int類型的變數
+    num3 = 20;
+    cout << "p4 地址=" << p4 << endl;
+    cout << "p4 值=" << *p4 << endl;
+    cout << "num3 值=" << num3 << endl;
+{% endhighlight %}
+
+```
+執行結果
+p4 地址=0x7ff7bfdff274
+p4 值=10
+num3 值=20
+```

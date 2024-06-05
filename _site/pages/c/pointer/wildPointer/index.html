@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>void*任何類型的指標 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>指標地址是無效內容 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -181,12 +181,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何類型的指標</a>
         
-            
-                <ul><li><a href="#函式的參數為void指標地址" onclick="mobilePageScrollToAnchor(this)" >函式的參數為void*指標(地址)</a></li><li><a href="#函式返回值為void指標" onclick="mobilePageScrollToAnchor(this)" >函式返回值為void*指標</a></li><li><a href="#不能對void指標使用取值運算子" onclick="mobilePageScrollToAnchor(this)" >不能對<code class="language-plaintext highlighter-rouge">void*指標使用取值運算子*</code></a></li><li><a href="#函式的參數為void" onclick="mobilePageScrollToAnchor(this)" >函式的參數為void</a></li></ul>
-
             
         </li>
 	
@@ -205,9 +202,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標地址是無效內容</a>
         
+            
+                <ul><li><a href="#釋放記憶體後的指標" onclick="mobilePageScrollToAnchor(this)" >釋放記憶體後的指標</a></li><li><a href="#未初始化的指標" onclick="mobilePageScrollToAnchor(this)" >未初始化的指標</a></li><li><a href="#函式返回區域變數地址" onclick="mobilePageScrollToAnchor(this)" >函式返回區域變數地址</a></li></ul>
+
             
         </li>
 	
@@ -279,7 +279,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >void*任何類型的指標</a>
+                            <a href="." >指標地址是無效內容</a>
                         
                     </h1>
                 </div>
@@ -294,12 +294,148 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/pointer/pointerVoid">void*任何類型的指標</h1>
+                        <h1 id="/pages/c/pointer/wildPointer">指標地址是無效內容</h1>
                     
 
-                    <h3 id="函式的參數為void指標地址">函式的參數為void*指標(地址)</h3>
+                    <h2 id="釋放記憶體後的指標">釋放記憶體後的指標</h2>
 
-<p>函式的參數為void*指標，表示任何類型的指標(地址)都可以傳進函式，而且不需要轉型。</p>
+<p>釋放指標記憶體地址中的內容，但指標仍指在原本的地址上。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放前的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放後的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+記憶體釋放前的地址 = 0x600000004060
+記憶體釋放後的地址 = 0x600000004060
+</code></pre></div></div>
+
+<p>如果對已經被釋放(清空)的地址進行讀取，讀取的內容不知道是什麼。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放前的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放前的地址讀取地址內容 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放後的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"讀取地址內容 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>第7行，讀取已釋放記憶體的地址中的內容。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+記憶體釋放前的地址 = 0x60000000c010
+記憶體釋放前的地址讀取地址內容 = 10
+記憶體釋放後的地址 = 0x60000000c010
+讀取地址內容 = -559038448
+</code></pre></div></div>
+
+<p>為避免上面的情況，釋放完記憶體，要把記憶體地址設為nullptr</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放前的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放前的地址讀取地址內容 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放後的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+記憶體釋放前的地址 = 0x60000000c010
+記憶體釋放前的地址讀取地址內容 = 10
+記憶體釋放後的地址 = 0x0
+</code></pre></div></div>
+
+<h2 id="未初始化的指標">未初始化的指標</h2>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>第2行,宣告未初始化的指標。</p>
+
+<p>第3行,印出地址，印出不知道何處的地址。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+0x1e
+</code></pre></div></div>
+
+<p>建議把宣告指標要設初始值。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>第2行,宣告指標，初始化nullptr。</p>
+
+<p>第3行,印出地址，印出0。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+0x0
+</code></pre></div></div>
+
+<h2 id="函式返回區域變數地址">函式返回區域變數地址</h2>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -312,132 +448,35 @@
 8
 9
 10
-11
-12
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">printAddr</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+</pre></td><td class="code"><pre><span class="kt">int</span><span class="o">*</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">i</span><span class="p">);</span>
-    <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
-    <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="p">);</span>
-    <span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mf">150.222</span><span class="p">;</span>
-    <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">d</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>第1行，宣告printAddr的函式，參數類型為void*指標。</p>
-
-<p>第2行，印出地址。</p>
-
-<p>第6行，將整數i變數的地址傳入。</p>
-
-<p>第8行，將字元c變數的地址傳入。</p>
-
-<p>第10行，將浮點數d變數的地址傳入。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-0x7ff7bfeff468
-0x7ff7bfeff467
-0x7ff7bfeff458
-</code></pre></div></div>
-
-<h3 id="函式返回值為void指標">函式返回值為void*指標</h3>
-
-<p>表示可以回傳任何類型的指標(地址)，可以轉型成任何類型指標。</p>
-
-<p>以下為malloc的回傳類型void<em>指標(地址)，void</em>指標可以轉成任何類型指標，參數size_t  __size代表設定空間大小。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">void</span><span class="o">*</span> <span class="n">malloc</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">__size</span><span class="p">)</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>使用方式</p>
-
-<p>在heap區段，建立10 byte的記憶體空間，將回傳的地址轉成char類型的指標。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">char</span> <span class="o">*</span><span class="n">name</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="c1">//10byte</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>在heap區段，建立1mb的記憶體空間，將回傳的地址轉成int類型的指標。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="o">*</span><span class="n">num</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span> <span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="mi">1</span> <span class="o">*</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">);</span><span class="c1">//1byte*1024 = 1kb -&gt;1kb*1024=1mb</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="不能對void指標使用取值運算子">不能對<code class="language-plaintext highlighter-rouge">void*指標使用取值運算子*</code></h3>
-
-<p>不能對void*指標使用<code class="language-plaintext highlighter-rouge">取值運算子*</code>，需要轉換成其它類型的指標才可以使用<code class="language-plaintext highlighter-rouge">取值運算子*</code></p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">printAddr</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>第2行，編譯失敗，不能對p指標使用取值運算子<em>，因為它是void</em>指標類型，必須轉型後才能對指標取出內容。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">printAddr</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", &amp;i = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
-    <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="p">);</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">func</span><span class="p">();</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"*p = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">", p = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第2行，先將p指標轉型成char*指標，接著使用<code class="language-plaintext highlighter-rouge">取值運算子*</code>取出指標地址中的內容。</p>
+<p>第1行,宣告函式，返回指標。</p>
+
+<p>第3行,印出區域變數i的值與地址。</p>
+
+<p>第4行,返回變數i的地址。</p>
+
+<p>第7行,宣告指標p，取得函式返回的地址。</p>
+
+<p>第8行,印出函式返回的地址中的值，與地址。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-a
+i = 10, &amp;i = 0x7ff7bfeff44c
+*p = 32760, p = 0x7ff7bfeff44c
 </code></pre></div></div>
 
-<h3 id="函式的參數為void">函式的參數為void</h3>
-
-<p>函式的參數為void，代表不接受任何參數。</p>
-
-<p>rand()產生亂數，以下為rand函式的定義，不接受任何參數，回傳int</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">rand</span> <span class="p">(</span><span class="kt">void</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>產生0-100的亂數</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="n">rand</span><span class="p">()</span><span class="o">%</span><span class="mi">100</span><span class="p">;</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"rand = %d </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">num</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p>由以上執行結果可以發現區域變數i的地址與返回的地址不同，而且值也不一樣。</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -501,14 +540,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/pointer/pointerConst" class="navigation navigation-prev navigation-unique" aria-label="Previous page: const與指標">
+                        <a href="/pages/c/pointer/nullptr" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 0 == nullptr == NULL">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/pointer/newDelete" class="navigation navigation-next navigation-unique" aria-label="Next page: new/delete">
+                        <a href="/pages/c/pointer/functionPointer" class="navigation navigation-next navigation-unique" aria-label="Next page: 函式指標">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -526,11 +565,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "指標地址是無效內容",
+            "title": "函式指標",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/pointer/wildPointer.md",
-            "ref": "_pages/c/pointer/wildPointer.md",
+            "path": "_pages/c/pointer/functionPointer.md",
+            "ref": "_pages/c/pointer/functionPointer.md",
             "articles": []
         },
         
@@ -622,7 +661,7 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/pointer/pointerVoid.md",
+        "path": "_pages/c/pointer/wildPointer.md",
         "mtime": "2024-05-30 00:00:00 +0800",
         "type": "markdown"
     },

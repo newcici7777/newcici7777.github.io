@@ -20,6 +20,9 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Function|函式|函數|
 |Variable|變數|變量|
 |Constant|常數|常量|
+|macro|巨集??|宏定義|
+|Wild pointers||野指針|
+|Dangling pointers||懸空指針|
 |Pointer to Const||常量指針|
 |Const Pointer||指針常量|
 |Local Variable|區域變數|局部變量|

@@ -1,5 +1,5 @@
 ---
-title: 隱式轉型
+title: 自動轉型
 date: 2024-05-24
 keywords: c++, implicit
 ---
