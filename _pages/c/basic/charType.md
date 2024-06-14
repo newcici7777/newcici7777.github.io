@@ -26,7 +26,7 @@ char所對映的整數是顯示在瑩幕上的ASCII碼。<https://zh.wikipedia.o
 |char |1    |0~127|%d   |整數  |
 
 
-#### 字元變數賦值數字。
+#### 字元變數設為數字。
 
 
 程式碼
@@ -45,7 +45,7 @@ printf("%c\n", c);
 a
 ```
 
-#### 印出char可用%c或%d
+#### 印出char可用%c格式字串或%d格式字串
 
 {% highlight c++ linenos %}
 char c = 'a';
@@ -59,7 +59,7 @@ printf("%c\n", c);
 a
 ```
 
-#### int變數賦值字元。
+#### int變數設為字元。
 
 在c++中，可以直接給int變數賦值單引號\'\'包住的字元
 
@@ -118,13 +118,17 @@ c1=C
 |13|\\r|移動到最前面|
 
 
-##### 設定空
+##### 設定空字元
 
 {% highlight c++ linenos %}
     char c4 = 0;
     cout << "c4=" << c4 << endl;
 {% endhighlight %}
 
+```
+執行結果
+c4=
+```
 
 ##### 關於斜線
 

@@ -57,11 +57,11 @@ public:
     }
 };
 {% endhighlight %}
-第3行，私有成員屬性items，類型為int指標，指向int陣列的第0筆地址。  
+第3行，私有成員屬性items，資料型態為int指標，指向int陣列的第0筆位址。  
 
-第4行，私有成員屬性stacksize，型別為int，存放stack最大的容量。  
+第4行，私有成員屬性stacksize，資料型態為int，存放stack最大的容量。  
 
-第5行，私有成員屬性top，型別為int，記錄目前stack最頂端的index位置。 
+第5行，私有成員屬性top，資料型態為int，記錄目前stack最頂端的index位置。 
 
 第8行，建構式，初始化成員stacksize與top。  
 
@@ -69,21 +69,21 @@ public:
 
 第12行，解構式。  
 
-第13行，從記憶體釋放items的空間。  
+第13行，從記憶體回收items的空間。  
 
-第14行，將釋放的空間指向null。  
+第14行，將回收的空間指向null。  
 
 第20行，若top位置在0，表示為空。  
 
 第25行，若top位置在stacksize代表空間已滿。  
 
-第31行，函式是將item推入stack，參數為參考型別。  
+第31行，函式是將item推入stack，參數為參考資料型態。  
 
 第33行，目前stack最頂端的index位置小於stack最大容量就做if的區塊。  
 
 第34行，先做items[top] = item的動作，再做top++的動作。  
 
-第42行，參數為參考型別，stack彈出頂端的值暫時放置的變數。  
+第42行，參數為參考資料型態，stack彈出頂端的值暫時放置的變數。  
 
 第44行，先將top--的動作，再做items[top]的動作。 
 
@@ -126,7 +126,7 @@ item = 1
 ```
 ## Stack typedef實作
 
-將上面的程式修改成自定義型別DataType。以下有黃色的部分是有變更的程式碼。  
+將上面的程式修改成自定義資料型態DataType。以下有黃色的部分是有變更的程式碼。  
 
 <pre>
 <span class="markline">typedef int DataType;</span>

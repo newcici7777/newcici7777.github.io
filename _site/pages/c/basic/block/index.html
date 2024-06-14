@@ -109,11 +109,11 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型別 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型別範圍</a>
+    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型態範圍</a>
         
             
         </li>
@@ -185,7 +185,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何類型的指標</a>
+    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
         
             
         </li>
@@ -206,7 +206,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標地址是無效內容</a>
+    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標位址是無效內容</a>
         
             
         </li>
@@ -216,7 +216,45 @@
     	<a href="/pages/c/pointer/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToPointer" onclick="pageScrollToTop(this)"> 指標的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerArithmetic" onclick="pageScrollToTop(this)"> 指標運算</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/array" onclick="pageScrollToTop(this)"> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
@@ -464,7 +502,7 @@ i = 10
     <span class="c1">//宣告指標</span>
     <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//0就是nullptr 代表沒有指向任何記憶空間</span>
     <span class="p">{</span>
-        <span class="kt">int</span><span class="o">**</span> <span class="n">pp</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">p</span><span class="p">;</span><span class="c1">//存放指標的地址，要用雙指標</span>
+        <span class="kt">int</span><span class="o">**</span> <span class="n">pp</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">p</span><span class="p">;</span><span class="c1">//存放指標的位址，要用雙指標</span>
         <span class="o">*</span><span class="n">pp</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span><span class="c1">//雙指標取值，並動態配置記憶體空間</span>
         
     <span class="p">}</span>
@@ -499,7 +537,7 @@ p=0x60000000c000,*p=3
 9
 10
 11
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">initMemory</span><span class="p">(</span><span class="kt">int</span><span class="o">**</span> <span class="n">pp</span><span class="p">)</span> <span class="c1">//存放指標的地址，要用雙指標</span>
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">initMemory</span><span class="p">(</span><span class="kt">int</span><span class="o">**</span> <span class="n">pp</span><span class="p">)</span> <span class="c1">//存放指標的位址，要用雙指標</span>
 <span class="p">{</span>
     <span class="o">*</span><span class="n">pp</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span><span class="c1">//雙指標取值，並動態配置記憶體空間</span>
 <span class="p">}</span>
@@ -706,7 +744,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-05 09:52:27 +0800"
+        "time": "2024-06-14 16:29:37 +0800"
     },
     "basePath": "",
     "book": {

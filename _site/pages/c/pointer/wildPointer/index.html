@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>指標地址是無效內容 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>指標位址是無效內容 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -109,11 +109,11 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型別 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型別範圍</a>
+    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型態範圍</a>
         
             
         </li>
@@ -182,7 +182,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何類型的指標</a>
+    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
         
             
         </li>
@@ -203,10 +203,10 @@
 	
 	
 	<li class="active">
-    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標地址是無效內容</a>
+    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標位址是無效內容</a>
         
             
-                <ul><li><a href="#釋放記憶體後的指標" onclick="mobilePageScrollToAnchor(this)" >釋放記憶體後的指標</a></li><li><a href="#未初始化的指標" onclick="mobilePageScrollToAnchor(this)" >未初始化的指標</a></li><li><a href="#函式返回區域變數地址" onclick="mobilePageScrollToAnchor(this)" >函式返回區域變數地址</a></li></ul>
+                <ul><li><a href="#回收記憶體後的指標" onclick="mobilePageScrollToAnchor(this)" >回收記憶體後的指標</a></li><li><a href="#未初始化的指標" onclick="mobilePageScrollToAnchor(this)" >未初始化的指標</a></li><li><a href="#函式返回區域變數位址" onclick="mobilePageScrollToAnchor(this)" >函式返回區域變數位址</a></li></ul>
 
             
         </li>
@@ -216,7 +216,45 @@
     	<a href="/pages/c/pointer/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToPointer" onclick="pageScrollToTop(this)"> 指標的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerArithmetic" onclick="pageScrollToTop(this)"> 指標運算</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/array" onclick="pageScrollToTop(this)"> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
@@ -279,7 +317,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >指標地址是無效內容</a>
+                            <a href="." >指標位址是無效內容</a>
                         
                     </h1>
                 </div>
@@ -294,12 +332,12 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/pointer/wildPointer">指標地址是無效內容</h1>
+                        <h1 id="/pages/c/pointer/wildPointer">指標位址是無效內容</h1>
                     
 
-                    <h2 id="釋放記憶體後的指標">釋放記憶體後的指標</h2>
+                    <h2 id="回收記憶體後的指標">回收記憶體後的指標</h2>
 
-<p>釋放指標記憶體地址中的內容，但指標仍指在原本的地址上。</p>
+<p>回收指標記憶體位址中的內容，但指標仍指在原本的位址上。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -311,20 +349,20 @@
 7
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放前的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體回收前的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放後的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體回收後的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-記憶體釋放前的地址 = 0x600000004060
-記憶體釋放後的地址 = 0x600000004060
+記憶體回收前的位址 = 0x600000004060
+記憶體回收後的位址 = 0x600000004060
 </code></pre></div></div>
 
-<p>如果對已經被釋放(清空)的地址進行讀取，讀取的內容不知道是什麼。</p>
+<p>如果對已經被回收(清空)的位址進行讀取，讀取的內容不知道是什麼。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -338,26 +376,26 @@
 9
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放前的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放前的地址讀取地址內容 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體回收前的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體回收前的位址讀取位址內容 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放後的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"讀取地址內容 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體回收後的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"讀取位址內容 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第7行，讀取已釋放記憶體的地址中的內容。</p>
+<p>第7行，讀取已回收記憶體的位址中的內容。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-記憶體釋放前的地址 = 0x60000000c010
-記憶體釋放前的地址讀取地址內容 = 10
-記憶體釋放後的地址 = 0x60000000c010
-讀取地址內容 = -559038448
+記憶體回收前的位址 = 0x60000000c010
+記憶體回收前的位址讀取位址內容 = 10
+記憶體回收後的位址 = 0x60000000c010
+讀取位址內容 = -559038448
 </code></pre></div></div>
 
-<p>為避免上面的情況，釋放完記憶體，要把記憶體地址設為nullptr</p>
+<p>為避免上面的情況，回收完記憶體，要把記憶體位址設為nullptr</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -371,20 +409,20 @@
 9
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放前的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放前的地址讀取地址內容 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體回收前的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體回收前的位址讀取位址內容 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
     <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體釋放後的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體回收後的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-記憶體釋放前的地址 = 0x60000000c010
-記憶體釋放前的地址讀取地址內容 = 10
-記憶體釋放後的地址 = 0x0
+記憶體回收前的位址 = 0x60000000c010
+記憶體回收前的位址讀取位址內容 = 10
+記憶體回收後的位址 = 0x0
 </code></pre></div></div>
 
 <h2 id="未初始化的指標">未初始化的指標</h2>
@@ -405,7 +443,7 @@
 
 <p>第2行,宣告未初始化的指標。</p>
 
-<p>第3行,印出地址，印出不知道何處的地址。</p>
+<p>第3行,印出位址，印出不知道何處的位址。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 0x1e
@@ -429,13 +467,13 @@
 
 <p>第2行,宣告指標，初始化nullptr。</p>
 
-<p>第3行,印出地址，印出0。</p>
+<p>第3行,印出位址，印出0。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 0x0
 </code></pre></div></div>
 
-<h2 id="函式返回區域變數地址">函式返回區域變數地址</h2>
+<h2 id="函式返回區域變數位址">函式返回區域變數位址</h2>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -463,20 +501,20 @@
 
 <p>第1行,宣告函式，返回指標。</p>
 
-<p>第3行,印出區域變數i的值與地址。</p>
+<p>第3行,印出區域變數i的值與位址。</p>
 
-<p>第4行,返回變數i的地址。</p>
+<p>第4行,返回變數i的位址。</p>
 
-<p>第7行,宣告指標p，取得函式返回的地址。</p>
+<p>第7行,宣告指標p，取得函式返回的位址。</p>
 
-<p>第8行,印出函式返回的地址中的值，與地址。</p>
+<p>第8行,印出函式返回的位址中的值，與位址。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 i = 10, &amp;i = 0x7ff7bfeff44c
 *p = 32760, p = 0x7ff7bfeff44c
 </code></pre></div></div>
 
-<p>由以上執行結果可以發現區域變數i的地址與返回的地址不同，而且值也不一樣。</p>
+<p>由以上執行結果可以發現區域變數i的位址與返回的位址不同，而且值也不一樣。</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -667,7 +705,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-05 09:52:27 +0800"
+        "time": "2024-06-14 16:29:37 +0800"
     },
     "basePath": "",
     "book": {

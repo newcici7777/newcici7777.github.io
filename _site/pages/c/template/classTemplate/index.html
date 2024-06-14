@@ -109,11 +109,11 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型別 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型別範圍</a>
+    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型態範圍</a>
         
             
         </li>
@@ -182,7 +182,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何類型的指標</a>
+    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
         
             
         </li>
@@ -203,7 +203,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標地址是無效內容</a>
+    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標位址是無效內容</a>
         
             
         </li>
@@ -213,7 +213,45 @@
     	<a href="/pages/c/pointer/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToPointer" onclick="pageScrollToTop(this)"> 指標的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerArithmetic" onclick="pageScrollToTop(this)"> 指標運算</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/array" onclick="pageScrollToTop(this)"> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
@@ -298,10 +336,10 @@
                     
 
                     <h2 id="語法">語法</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>宣告模板    宣告型別參數  型別參數名    逗號 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>宣告模板    宣告資料型態參數  資料型態參數名    逗號 
 template &lt; class         T1       ,   class T2&gt;
 </code></pre></div></div>
-<p>宣告模板從關鍵字template開始，後接型別參數列表（template parameter list），型別參數是以class開頭，後接型別參數名(T1)。型別參數列表是用尖括號括住的一個型別參數或者多個型別參數，型別參數之間以逗號分隔。class也可以用typename互相替換。</p>
+<p>宣告模板從關鍵字template開始，後接資料型態參數列表（template parameter list），資料型態參數是以class開頭，後接資料型態參數名(T1)。資料型態參數列表是用尖括號括住的一個資料型態參數或者多個資料型態參數，資料型態參數之間以逗號分隔。class也可以用typename互相替換。</p>
 
 <h2 id="宣告類別模板">宣告類別模板</h2>
 
@@ -339,7 +377,7 @@ template &lt; class         T1       ,   class T2&gt;
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第1行，template為類別模板宣告，&lt;class K, class V&gt;型別參數宣告(type parameter)。</p>
+<p>第1行，template為類別模板宣告，&lt;class K, class V&gt;資料型態參數宣告(type parameter)。</p>
 
 <p>第2行，類別模板的名稱為MyMap。</p>
 
@@ -379,18 +417,18 @@ template &lt; class         T1       ,   class T2&gt;
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第2行，建立物件，用尖括號&lt;K,V&gt;  指定參數型別，K的型別為int，V的型別為string，呼叫二個參數的建構式。</p>
+<p>第2行，建立物件，用尖括號&lt;K,V&gt;  指定參數資料型態，K的資料型態為int，V的資料型態為string，呼叫二個參數的建構式。</p>
 
 <p>第3行，印出值。</p>
 
 <p>第4行，印出值。</p>
 
-<p>第6行，動態配置建立物件，用尖括號&lt;K,V&gt;  指定參數型別，K的型別為string，V的型別為string，使用new動態配置建立物件，(
+<p>第6行，動態配置建立物件，用尖括號&lt;K,V&gt;  指定參數資料型態，K的資料型態為string，V的資料型態為string，使用new動態配置建立物件，(
 “abc”,”def”)呼叫二個參數的建構式。</p>
 
 <p>第7行，使用-&gt;印出值。</p>
 
-<p>第8行，使用-&gt;印印出值。</p>
+<p>第8行，使用-&gt;印出值。</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -581,7 +619,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-05 09:52:27 +0800"
+        "time": "2024-06-14 16:29:37 +0800"
     },
     "basePath": "",
     "book": {

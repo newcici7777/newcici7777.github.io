@@ -109,11 +109,11 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型別 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型別範圍</a>
+    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型態範圍</a>
         
             
         </li>
@@ -178,14 +178,14 @@
     	<a href="/pages/c/pointer/pointerConst" onclick="pageScrollToTop(this)"> const與指標</a>
         
             
-                <ul><li><a href="#pointer-to-const-const" onclick="mobilePageScrollToAnchor(this)" >Pointer to Const (const*)</a><ul><li><a href="#const右邊是星號" onclick="mobilePageScrollToAnchor(this)" >const右邊是星號*</a></li><li><a href="#可以修改指標地址" onclick="mobilePageScrollToAnchor(this)" >可以修改指標地址</a></li></ul></li><li><a href="#const-pointer-const-指標名" onclick="mobilePageScrollToAnchor(this)" >Const Pointer (const 指標名)</a><ul><li><a href="#const右邊是指標名" onclick="mobilePageScrollToAnchor(this)" >const右邊是指標名</a></li><li><a href="#可以修改內容" onclick="mobilePageScrollToAnchor(this)" >可以修改內容</a></li></ul></li></ul>
+                <ul><li><a href="#pointer-to-const-const" onclick="mobilePageScrollToAnchor(this)" >Pointer to Const (const*)</a><ul><li><a href="#const右邊是星號" onclick="mobilePageScrollToAnchor(this)" >const右邊是星號*</a></li><li><a href="#可以修改指標位址" onclick="mobilePageScrollToAnchor(this)" >可以修改指標位址</a></li></ul></li><li><a href="#const-pointer-const-指標名" onclick="mobilePageScrollToAnchor(this)" >Const Pointer (const 指標名)</a><ul><li><a href="#const右邊是指標名" onclick="mobilePageScrollToAnchor(this)" >const右邊是指標名</a></li><li><a href="#可以修改內容" onclick="mobilePageScrollToAnchor(this)" >可以修改內容</a></li></ul></li></ul>
 
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何類型的指標</a>
+    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
         
             
         </li>
@@ -206,7 +206,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標地址是無效內容</a>
+    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標位址是無效內容</a>
         
             
         </li>
@@ -216,7 +216,45 @@
     	<a href="/pages/c/pointer/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToPointer" onclick="pageScrollToTop(this)"> 指標的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerArithmetic" onclick="pageScrollToTop(this)"> 指標運算</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/array" onclick="pageScrollToTop(this)"> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
@@ -303,7 +341,7 @@
 
 <h3 id="const右邊是星號">const右邊是星號*</h3>
 
-<p>代表指標地址中的<code class="language-plaintext highlighter-rouge">內容</code>是常數，常數不能修改，以下語法不能使用。</p>
+<p>代表指標位址中的<code class="language-plaintext highlighter-rouge">內容</code>是常數，常數不能修改，以下語法不能使用。</p>
 
 <p><code class="language-plaintext highlighter-rouge">*指標 = 修改的內容</code></p>
 
@@ -327,17 +365,17 @@
 
 <p>第2行，變數名var1。</p>
 
-<p>第3行，將var1的地址給指標變數p。</p>
+<p>第3行，將var1的位址給指標變數p。</p>
 
-<p>第4行，p指標地址中的<code class="language-plaintext highlighter-rouge">內容</code>是常數，常數不能修改，所以不能使用<code class="language-plaintext highlighter-rouge">*指標 = 修改的內容</code>，此行必須註解，因為會產生編譯錯誤。</p>
+<p>第4行，p指標位址中的<code class="language-plaintext highlighter-rouge">內容</code>是常數，常數不能修改，所以不能使用<code class="language-plaintext highlighter-rouge">*指標 = 修改的內容</code>，此行必須註解，因為會產生編譯錯誤。</p>
 
-<p>第6行，印出var1的值與p指標地址中的值。</p>
+<p>第6行，印出var1的值與p指標位址中的值。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 var1=10,p=10
 </code></pre></div></div>
 
-<p><code class="language-plaintext highlighter-rouge">int const * p</code>可以更改成<code class="language-plaintext highlighter-rouge">const int* p</code>，二者為一樣的意思，只要記得const右邊若先出現星號*而不是變數名，代表指標地址中的內容是常數，常數沒有辦法修改。</p>
+<p><code class="language-plaintext highlighter-rouge">int const * p</code>可以更改成<code class="language-plaintext highlighter-rouge">const int* p</code>，二者為一樣的意思，只要記得const右邊若先出現星號*而不是變數名，代表指標位址中的內容是常數，常數沒有辦法修改。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -357,7 +395,7 @@ var1=10,p=10
 
 <p>第3行，<code class="language-plaintext highlighter-rouge">int const * p</code>可以更改成<code class="language-plaintext highlighter-rouge">const int* p</code>。</p>
 
-<h3 id="可以修改指標地址">可以修改指標地址</h3>
+<h3 id="可以修改指標位址">可以修改指標位址</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -383,9 +421,9 @@ var1=10,p=10
 
 <p>第2行，第3行，建立二個變數名var1與var2。</p>
 
-<p>第4行，將var1的地址給指標p。</p>
+<p>第4行，將var1的位址給指標p。</p>
 
-<p>第6行，將var2的地址給指標p。</p>
+<p>第6行，將var2的位址給指標p。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 var1=10,p=10
@@ -396,7 +434,7 @@ var2=20,p=20
 
 <h3 id="const右邊是指標名">const右邊是指標名</h3>
 
-<p>代表指標名是常數，需要初始化常數名(初始化設地址)，不能再更改指標地址。</p>
+<p>代表指標名是常數，需要初始化常數名(初始化設位址)，不能再更改指標位址。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -420,13 +458,13 @@ var2=20,p=20
 
 <p>第2行，第3行，建立二個變數名var1與var2。</p>
 
-<p>第4行，const右邊是指標名p，代表指標名p是常數，常數需要初始化，不能是nullptr，將var1的地址給指標p。</p>
+<p>第4行，const右邊是指標名p，代表指標名p是常數，常數需要初始化，不能是nullptr，將var1的位址給指標p。</p>
 
-<p>第5行，將var2的地址給指標p，會編譯失敗，因為指標p是常數，不能被修改地址。</p>
+<p>第5行，將var2的位址給指標p，會編譯失敗，因為指標p是常數，不能被修改位址。</p>
 
 <h3 id="可以修改內容">可以修改內容</h3>
 
-<p>可使用<code class="language-plaintext highlighter-rouge">*指標 = 修改的內容</code>修改指標地址的值，因為只有指標名是常數，不能變更初始地址，但指標地址中的內容並非常數，所以可以改變指標地址中的內容。</p>
+<p>可使用<code class="language-plaintext highlighter-rouge">*指標 = 修改的內容</code>修改指標位址的值，因為只有指標名是常數，不能變更初始位址，但指標位址中的內容並非常數，所以可以改變指標位址中的內容。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -519,7 +557,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/c/pointer/pointerVoid" class="navigation navigation-next navigation-unique" aria-label="Next page: void*任何類型的指標">
+                        <a href="/pages/c/pointer/pointerVoid" class="navigation navigation-next navigation-unique" aria-label="Next page: void*任何資料型態的指標">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -639,7 +677,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-05 09:52:27 +0800"
+        "time": "2024-06-14 16:29:37 +0800"
     },
     "basePath": "",
     "book": {

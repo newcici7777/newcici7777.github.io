@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>資料型態範圍 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>指標運算 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -112,12 +112,9 @@
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型態範圍</a>
         
-            
-                <ul><li><a href="#位元bit與位元組byte" onclick="mobilePageScrollToAnchor(this)" >位元bit與位元組byte</a><ul><li><a href="#bit正整數範圍" onclick="mobilePageScrollToAnchor(this)" >bit正整數範圍</a></li><li><a href="#byte正整數範圍" onclick="mobilePageScrollToAnchor(this)" >byte正整數範圍</a></li></ul></li><li><a href="#正負數" onclick="mobilePageScrollToAnchor(this)" >正負數</a><ul><li><a href="#正負數-1" onclick="mobilePageScrollToAnchor(this)" >正負數</a></li><li><a href="#正負數範圍" onclick="mobilePageScrollToAnchor(this)" >正負數範圍</a></li></ul></li><li><a href="#unsinged正整數" onclick="mobilePageScrollToAnchor(this)" >unsinged正整數</a></li></ul>
-
             
         </li>
 	
@@ -226,9 +223,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/pointer/pointerArithmetic" onclick="pageScrollToTop(this)"> 指標運算</a>
         
+            
+                
+
             
         </li>
 	
@@ -317,7 +317,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >資料型態範圍</a>
+                            <a href="." >指標運算</a>
                         
                     </h1>
                 </div>
@@ -332,264 +332,85 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/basic/typicalRange">資料型態範圍</h1>
+                        <h1 id="/pages/c/pointer/pointerArithmetic">指標運算</h1>
                     
 
-                    <p>記憶體的最小單位為bit，每一個bit可以存0或1，32位元電腦的cpu有32個bit(4byte)的存放區塊可以存放記憶體位址。</p>
+                    <p>指標 + 1，位址增減取決於記憶體位址中存放內容的資料型態。</p>
 
-<h2 id="位元bit與位元組byte">位元bit與位元組byte</h2>
+<p>為了方便看出來差異，以下的位址全轉型成long long長整數。</p>
 
-<h3 id="bit正整數範圍">bit正整數範圍</h3>
-<p>以下列出1到8個bit可以存放的最大正整數值與正整數範圍。</p>
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"sizeof(char) = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c的地址 + 1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)(</span><span class="o">&amp;</span><span class="n">c</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    
+    <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"sizeof(int) = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的地址 + 1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)(</span><span class="o">&amp;</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    
+    <span class="kt">double</span> <span class="n">d</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"sizeof(double) = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"d的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">d</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"d的地址 + 1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)(</span><span class="o">&amp;</span><span class="n">d</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">bit</th>
-      <th style="text-align: left">組合</th>
-      <th style="text-align: left">最大正整數(2進制)</th>
-      <th style="text-align: center">最大正整數(10進制)</th>
-      <th style="text-align: center">可以存放的正整數範圍</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">1</td>
-      <td style="text-align: left">0/1</td>
-      <td style="text-align: left">1</td>
-      <td style="text-align: center">\(2^1-1 = 1\)</td>
-      <td style="text-align: center">0-1</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">2</td>
-      <td style="text-align: left">00/01/10/11</td>
-      <td style="text-align: left">11</td>
-      <td style="text-align: center">\(2^2-1 = 3\)</td>
-      <td style="text-align: center">0-3</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">3</td>
-      <td style="text-align: left">000/001/010/100/110/101/111</td>
-      <td style="text-align: left">111</td>
-      <td style="text-align: center">\(2^3-1 = 7\)</td>
-      <td style="text-align: center">0-7</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">4</td>
-      <td style="text-align: left">0000/0001/0010…1111</td>
-      <td style="text-align: left">1111</td>
-      <td style="text-align: center">\(2^4-1 = 15\)</td>
-      <td style="text-align: center">0-15</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">5</td>
-      <td style="text-align: left">00000/00001/…11111</td>
-      <td style="text-align: left">11111</td>
-      <td style="text-align: center">\(2^5-1 = 31\)</td>
-      <td style="text-align: center">0-31</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">6</td>
-      <td style="text-align: left">000000/000001/…111111</td>
-      <td style="text-align: left">111111</td>
-      <td style="text-align: center">\(2^6-1 = 63\)</td>
-      <td style="text-align: center">0-63</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">7</td>
-      <td style="text-align: left">0000000/0000001/…1111111</td>
-      <td style="text-align: left">1111111</td>
-      <td style="text-align: center">\(2^7-1 = 127\)</td>
-      <td style="text-align: center">0-127</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">8</td>
-      <td style="text-align: left">00000000/00000001/…11111111</td>
-      <td style="text-align: left">11111111</td>
-      <td style="text-align: center">\(2^8-1 = 255\)</td>
-      <td style="text-align: center">0-255</td>
-    </tr>
-  </tbody>
-</table>
+<p>第5行，印出char的大小。</p>
 
-<h3 id="byte正整數範圍">byte正整數範圍</h3>
-<p>由上表可以推斷，1個byte由8個bit組成，可存放最大正整數為255，可以存放的正整數範圍從0-255，共256個數字。</p>
+<p>第6行，印出變數c的位址。</p>
 
-<p>以下列出1byte到4byte最大可存放的數字。</p>
+<p>第7行，印出變數c的地址往後移動一格的位址，與變數c的位址相差為1byte。</p>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">byte</th>
-      <th style="text-align: right">bit</th>
-      <th style="text-align: left">最大正整數(10進制)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">1byte</td>
-      <td style="text-align: right">11111111</td>
-      <td style="text-align: left">255</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">2byte</td>
-      <td style="text-align: right">11111111 11111111</td>
-      <td style="text-align: left">65535</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">3byte</td>
-      <td style="text-align: right">11111111 11111111 11111111</td>
-      <td style="text-align: left">16777216</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">4byte</td>
-      <td style="text-align: right">11111111 11111111 11111111 11111111</td>
-      <td style="text-align: left">4294967295</td>
-    </tr>
-  </tbody>
-</table>
+<p>第10行，印出int的大小。</p>
 
-<p>科學記號法顯示</p>
+<p>第11行，印出變數i的位址。</p>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">byte</th>
-      <th style="text-align: right">bit</th>
-      <th style="text-align: left">科學記號法</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">1byte</td>
-      <td style="text-align: right">11111111</td>
-      <td style="text-align: left">$2^8-1$</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">2byte</td>
-      <td style="text-align: right">11111111 11111111</td>
-      <td style="text-align: left">$2^8 * 2^8 -1= 2^{8+8}-1 = 2 ^{16}-1 $</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">3byte</td>
-      <td style="text-align: right">11111111 11111111 11111111</td>
-      <td style="text-align: left">$2^8 * 2^8 * 2^8-1 = 2^{8+8+8}-1$</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">4byte</td>
-      <td style="text-align: right">11111111 11111111 11111111 11111111</td>
-      <td style="text-align: left">$2^8 * 2^8 * 2^8 * 2^8-1 = 2^{8+8+8+8}-1 = 2 ^{32}-1 $</td>
-    </tr>
-  </tbody>
-</table>
+<p>第12行，印出變數i的地址往後移動一格的位址與變數i的位址相差為4byte。</p>
 
-<h2 id="正負數">正負數</h2>
-<p>若資料型態是包含正負數，會將最大整數減半，一半分給正數，一半分給負數。最左邊的第1個bit就會變成正負號，0為正數，1為負數。負數的二進制顯示方式為把正數的二進制0和1互換，最後再加1。</p>
+<p>第15行，印出double的大小。</p>
 
-<h3 id="正負數-1">正負數</h3>
+<p>第16行，印出變數d位址。</p>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: right">二進位</th>
-      <th style="text-align: left">正負數</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: right">01111111</td>
-      <td style="text-align: left">127</td>
-    </tr>
-    <tr>
-      <td style="text-align: right">10000001</td>
-      <td style="text-align: left">-127</td>
-    </tr>
-    <tr>
-      <td style="text-align: right">01111111 11111111</td>
-      <td style="text-align: left">32767</td>
-    </tr>
-    <tr>
-      <td style="text-align: right">10000000 00000001</td>
-      <td style="text-align: left">-32768</td>
-    </tr>
-    <tr>
-      <td style="text-align: right">01111111 11111111 11111111</td>
-      <td style="text-align: left">8388607</td>
-    </tr>
-    <tr>
-      <td style="text-align: right">10000000 00000000 00000001</td>
-      <td style="text-align: left">-8388608</td>
-    </tr>
-    <tr>
-      <td style="text-align: right">01111111 11111111 11111111 11111111</td>
-      <td style="text-align: left">2147483647</td>
-    </tr>
-    <tr>
-      <td style="text-align: right">10000000 00000000 00000000 00000001</td>
-      <td style="text-align: left">-2147483648</td>
-    </tr>
-  </tbody>
-</table>
+<p>第17行，印出變數d的地址往後移動一格的位址，與變數d的位址相差為8byte。</p>
 
-<h3 id="正負數範圍">正負數範圍</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+sizeof(char) = 1
+c的地址 = 140702053823595
+c的地址 + 1 = 140702053823596
+sizeof(int) = 4
+i的地址 = 140702053823588
+i的地址 + 1 = 140702053823592
+sizeof(double) = 8
+d的地址 = 140702053823576
+d的地址 + 1 = 140702053823584
+</code></pre></div></div>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">占用Byte數量</th>
-      <th style="text-align: center">正負數範圍</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">1byte</td>
-      <td style="text-align: center">-128~127</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">2byte</td>
-      <td style="text-align: center">-32768~32767</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">3byte</td>
-      <td style="text-align: center">-8388608~8388607</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">4byte</td>
-      <td style="text-align: center">-2147483648~2147483647</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="unsinged正整數">unsinged正整數</h2>
-
-<p>unsigned代表沒有符號，所以只有正整數，不會有負號。</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">占用Byte數量</th>
-      <th style="text-align: center">正數範圍</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">1byte</td>
-      <td style="text-align: center">0~255</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">2byte</td>
-      <td style="text-align: center">0~65535</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">3byte</td>
-      <td style="text-align: center">0~16777216</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">4byte</td>
-      <td style="text-align: center">0~4294967295</td>
-    </tr>
-  </tbody>
-</table>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -653,14 +474,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/basic/simpleTraditionC" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 台陸指標相關名詞差異">
+                        <a href="/pages/c/pointer/pointerToPointer" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 指標的指標">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/basic/charType" class="navigation navigation-next navigation-unique" aria-label="Next page: char字元">
+                        <a href="/pages/c/pointer/array" class="navigation navigation-next navigation-unique" aria-label="Next page: 陣列">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -678,11 +499,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "bool",
+            "title": "一維指標陣列",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/basic/boolType.md",
-            "ref": "_pages/c/basic/boolType.md",
+            "path": "_pages/c/pointer/pointerToArray.md",
+            "ref": "_pages/c/pointer/pointerToArray.md",
             "articles": []
         },
         
@@ -774,8 +595,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/basic/typicalRange.md",
-        "mtime": "2024-04-30 00:00:00 +0800",
+        "path": "_pages/c/pointer/pointerArithmetic.md",
+        "mtime": "2024-06-05 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

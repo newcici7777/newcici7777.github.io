@@ -1,5 +1,5 @@
 ---
-title: 資料型別範圍
+title: 資料型態範圍
 date: 2024-04-30
 keywords: c++, Typical Range
 ---

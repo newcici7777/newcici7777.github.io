@@ -8,7 +8,7 @@ keywords: c++, bool
 
 整數包含char, `bool`, short, unsinged short, int, unsinged int, long, unsinged long
 
-|整數型態|占用Byte數量|數值範圍|格式符|輸出格式|
+|整數型態|占用Byte數量|數值範圍|格式字串|輸出格式|
 |:---:|:---:|:---:|:---:|:---:|
 |bool |1    |0 1|%d   |整數  |
 

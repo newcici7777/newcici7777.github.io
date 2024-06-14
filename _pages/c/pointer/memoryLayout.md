@@ -5,16 +5,16 @@ keywords: c++, 記憶體佈局
 ---
 
 
-### 記憶體起始與結束地址。
-記憶體開始地址由下表最下方開始，記憶體結束地址在最上方。
+### 記憶體起始與結束位址。
+記憶體開始位址由下表最下方開始，記憶體結束位址在最上方。
 
 
 <table class="custom-table">
   <thead>
     <tr>
       <th align="center" width="10%">開始與結束</th>
-      <th align="left" width="10%">地址高低</th>
-      <th align="left">地址</th>
+      <th align="left" width="10%">位址高低</th>
+      <th align="left">位址</th>
     </tr>  
   </thead>
   <tbody>
@@ -51,14 +51,14 @@ keywords: c++, 記憶體佈局
 
 ### 記憶體區段
 
-記憶體區段根據地址由高到低分別為Kernel, Stack, 尚位使用區域, Heap, bass, data, code。
+記憶體區段根據位址由高到低分別為Kernel, Stack, 尚位使用區域, Heap, bass, data, code。
 
 <table class="custom-table">
   <thead>
     <tr>
-      <th align="center" width="5%">地址高低</th>
-      <th align="left" width="30%">區段</th>
-      <th align="left" width="5%">地址增長方向</th>
+      <th align="center" width="5%">位址高低</th>
+      <th align="left" width="30%">記憶體區塊</th>
+      <th align="left" width="5%">位址成長方向</th>
       <th align="left">儲存項目</th>
     </tr>    
   </thead>
@@ -67,7 +67,7 @@ keywords: c++, 記憶體佈局
       <td>高</td>
       <td>Kernel</td>
       <td></td>
-      <td>內核</td>
+      <td>作業系統核心</td>
     </tr>
     <tr>
       <td rowspan="5" style="vertical-align: middle;">
@@ -85,7 +85,7 @@ keywords: c++, 記憶體佈局
     <tr>
       <td>Heap</td>
       <td>&#8593;</td>
-      <td>動態分配指標</td>
+      <td>動態配置記憶體</td>
     </tr>
     <tr>
       <td>bss segmen</td>
@@ -106,29 +106,29 @@ keywords: c++, 記憶體佈局
   </tbody>                
 </table>
 
-#### 內核
+#### 作業系統核心
 
 處理cpu記憶體Devices與應用程式運作。
 
-#### stack
+#### stack(堆疊) 儲存區域變數的記憶體區塊
 
-函式或程式區塊`{}`中區域變數與函式參數與函式返回值的記憶體地址。
+儲存區域變數與函式參數與函式傳回值，記憶體大小只有8M，記憶體位址成長的方向是向下成長。
 
-#### Heap
+#### Heap(堆積) 儲存動態配置變數的記憶體區塊
 
-動態分配指標記憶體地址
+儲存由動態配置(new與malloc)產生的變數，記憶體大小取決電腦實體記憶體大小(可能8GB或更大)，記憶體位址成長的方向是向上成長。
 
-#### bss
+#### bss segmen 記憶體區塊
 
-未初始化全域變數與靜態變數記憶體地址
+儲存未初始化全域變數與靜態變數。
 
-#### data segmen
+#### data segmen 記憶體區塊
 
-已初始化全域變數與靜態變數記憶體地址
+儲存已初始化全域變數與靜態變數。
 
-#### code segment
+#### code segment 記憶體區塊
 
-常數與程式執行檔地址
+儲存常數與程式執行檔。
 
 ### 變數記憶體位址
 
@@ -138,7 +138,7 @@ const int global_x = 1;  // 儲存於 code segment(常數)
 int global_y = 1;        // 儲存於 data segmen(已初始化全域變數）
 int global_z;            // 儲存於 bss(未初始全域變數)
 int fun1(int param1) {	 // 儲存於 stack (函式參數)
-	return param1; // 儲存於 stack (函式返回值)
+	return param1; // 儲存於 stack (函式傳回值)
 }
 int main() {
   const static int x = 1; // 儲存於 code segment(常數)
@@ -159,12 +159,12 @@ int main() {
 {% endhighlight %}
 
 ### Stack
-* 儲存在Stack的變數，變數離開有效範圍(Scope)後，會由系統自動釋放記憶體地址。
+* 儲存在Stack的變數，變數離開有效範圍(Scope)後，會由系統自動回收記憶體位址。
 * Stack記憶體容量8M。
-* 記憶體地址向下遞減。
+* 記憶體位址向下成長。
 * 不會memory leak。
 
-以下程式碼在函式中建立三個變數，並觀察三個變數的記憶體地址是由大至小遞減。證明記憶體地址向下遞減。
+以下程式碼在函式中建立三個變數，並觀察三個變數的記憶體位址是由大至小遞減。證明記憶體位址向下成長。
 
 {% highlight c++ linenos %}
 void funcMemoryLocation() {
@@ -184,12 +184,12 @@ va3 = 140702053822436
 ```
 
 ### Heap
-* 儲存在Heap的指標，由程式設計師手動釋放記憶體地址，或待主程式生命周期結束後被系統釋放記憶體地址。
+* 儲存動態配置(new與malloc)產生的變數，由程式設計師手動回收記憶體位址，或待主程式生命周期結束後被系統回收記憶體位址。
 * Heap記憶體容量取決於電腦的記憶體大小。
-* 記憶體地址向上遞增。
+* 記憶體位址向上遞增。
 * 會memory leak。
 
-以下程式碼動態分配指標建立三個變數，並觀察三個變數的記憶體地址是由小至大增長。證明動態分配記憶體地址向上遞增。
+以下程式碼動態分配建立三個變數，並觀察三個變數的記憶體位址是由小至大增長。證明動態分配記憶體位址向上成長。
 {% highlight c++ linenos %}
 int main() {
     int* p1 = new int(10);
@@ -216,4 +216,4 @@ p3 address = 105553116315696
 
 ### 尚未使用區域
 
-變數在Stack區段中，地址增長的方向是向下遞減，變數在Heap區段中，地址增長的方向是向上遞增，未避免Stack與Heap的記憶體地址互相交疊，中間有一個區域是分隔Stack與Heap。
+變數在Stack記憶體區塊，位址增長的方向是向下，變數在Heap記憶體區塊，位址增長的方向是向上，未避免Stack與Heap的記憶體位址成長時互相交疊，中間有一個區域是分隔Stack與Heap。

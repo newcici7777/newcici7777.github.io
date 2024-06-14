@@ -112,11 +112,11 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型別 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型別範圍</a>
+    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型態範圍</a>
         
             
         </li>
@@ -185,7 +185,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何類型的指標</a>
+    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
         
             
         </li>
@@ -206,7 +206,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標地址是無效內容</a>
+    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標位址是無效內容</a>
         
             
         </li>
@@ -216,7 +216,45 @@
     	<a href="/pages/c/pointer/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToPointer" onclick="pageScrollToTop(this)"> 指標的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerArithmetic" onclick="pageScrollToTop(this)"> 指標運算</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/array" onclick="pageScrollToTop(this)"> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
@@ -307,19 +345,19 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">Data</td>
+      <td style="text-align: center">Data type</td>
       <td style="text-align: center">資料</td>
       <td style="text-align: center">數據</td>
     </tr>
     <tr>
       <td style="text-align: center">Data Type</td>
-      <td style="text-align: center">資料型別</td>
-      <td style="text-align: center">數據類</td>
+      <td style="text-align: center">資料型態</td>
+      <td style="text-align: center">數據類型</td>
     </tr>
     <tr>
       <td style="text-align: center">int</td>
-      <td style="text-align: center">整型</td>
       <td style="text-align: center">整數</td>
+      <td style="text-align: center">整型</td>
     </tr>
     <tr>
       <td style="text-align: center">char</td>
@@ -343,8 +381,18 @@
     </tr>
     <tr>
       <td style="text-align: center">%d %s</td>
-      <td style="text-align: center">格式符</td>
+      <td style="text-align: center">格式字串</td>
       <td style="text-align: center">占位符</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">escape sequence</td>
+      <td style="text-align: center">跳脫字元或逸出字元</td>
+      <td style="text-align: center">轉義字符</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Operator</td>
+      <td style="text-align: center">運算子</td>
+      <td style="text-align: center">運算符</td>
     </tr>
     <tr>
       <td style="text-align: center">For Loop</td>
@@ -357,14 +405,24 @@
       <td style="text-align: center">指針</td>
     </tr>
     <tr>
-      <td style="text-align: center">**</td>
-      <td style="text-align: center">指標的指標</td>
+      <td style="text-align: center">pointer to pointer**</td>
+      <td style="text-align: center">指標的指標，雙重指標</td>
       <td style="text-align: center">二級指針</td>
     </tr>
     <tr>
       <td style="text-align: center">Function</td>
       <td style="text-align: center">函式</td>
       <td style="text-align: center">函數</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">return</td>
+      <td style="text-align: center">函式傳回值</td>
+      <td style="text-align: center">函數返回值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Functor</td>
+      <td style="text-align: center">物件函式</td>
+      <td style="text-align: center">仿函數</td>
     </tr>
     <tr>
       <td style="text-align: center">Variable</td>
@@ -375,6 +433,16 @@
       <td style="text-align: center">Constant</td>
       <td style="text-align: center">常數</td>
       <td style="text-align: center">常量</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">scope</td>
+      <td style="text-align: center">生命周期，可見性，有效範圍</td>
+      <td style="text-align: center">作用域</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Lvalue</td>
+      <td style="text-align: center">等號左邊</td>
+      <td style="text-align: center">左值</td>
     </tr>
     <tr>
       <td style="text-align: center">macro</td>
@@ -408,7 +476,7 @@
     </tr>
     <tr>
       <td style="text-align: center">Global Variable</td>
-      <td style="text-align: center">全域變數</td>
+      <td style="text-align: center">全域變數，外部變數</td>
       <td style="text-align: center">全局變量</td>
     </tr>
     <tr>
@@ -442,6 +510,11 @@
       <td style="text-align: center">動態內存分配</td>
     </tr>
     <tr>
+      <td style="text-align: center">free</td>
+      <td style="text-align: center">記憶體回收</td>
+      <td style="text-align: center">記憶體釋放</td>
+    </tr>
+    <tr>
       <td style="text-align: center">Stack</td>
       <td style="text-align: center">堆疊</td>
       <td style="text-align: center">棧</td>
@@ -452,33 +525,13 @@
       <td style="text-align: center">堆</td>
     </tr>
     <tr>
-      <td style="text-align: center">*</td>
-      <td style="text-align: center">取值運算子</td>
-      <td style="text-align: center">解引用運算符</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">&amp;</td>
-      <td style="text-align: center">取地址運算子</td>
-      <td style="text-align: center">取址運算符</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">&amp;Reference</td>
-      <td style="text-align: center">參考</td>
-      <td style="text-align: center">引用</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">default</td>
-      <td style="text-align: center">預設值</td>
-      <td style="text-align: center">缺省</td>
-    </tr>
-    <tr>
       <td style="text-align: center">head file</td>
-      <td style="text-align: center">表頭檔</td>
+      <td style="text-align: center">標頭檔案</td>
       <td style="text-align: center">頭文件</td>
     </tr>
     <tr>
       <td style="text-align: center">cpp file</td>
-      <td style="text-align: center">原始檔</td>
+      <td style="text-align: center">原始檔案</td>
       <td style="text-align: center">源代碼</td>
     </tr>
     <tr>
@@ -487,13 +540,23 @@
       <td style="text-align: center">數組</td>
     </tr>
     <tr>
+      <td style="text-align: center">index</td>
+      <td style="text-align: center">索引</td>
+      <td style="text-align: center">下標</td>
+    </tr>
+    <tr>
       <td style="text-align: center">define</td>
       <td style="text-align: center">宣告</td>
-      <td style="text-align: center">聲明</td>
+      <td style="text-align: center">聲明，定義</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">default</td>
+      <td style="text-align: center">預設值</td>
+      <td style="text-align: center">缺省</td>
     </tr>
     <tr>
       <td style="text-align: center">assign =</td>
-      <td style="text-align: center">設值</td>
+      <td style="text-align: center">指定或指派或設為</td>
       <td style="text-align: center">賦值</td>
     </tr>
     <tr>
@@ -514,15 +577,51 @@
     <tr>
       <td style="text-align: center">explicit conversion</td>
       <td style="text-align: center">強制轉型</td>
-      <td style="text-align: center">顯示轉換</td>
+      <td style="text-align: center">顯示轉換或手動轉換</td>
     </tr>
     <tr>
       <td style="text-align: center">implicit conversion</td>
       <td style="text-align: center">自動轉型</td>
       <td style="text-align: center">隱式轉換</td>
     </tr>
+    <tr>
+      <td style="text-align: center">*</td>
+      <td style="text-align: center">取值運算子或間接運算子indirection</td>
+      <td style="text-align: center">解引用運算符</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">&amp;</td>
+      <td style="text-align: center">取位址運算子</td>
+      <td style="text-align: center">取址運算符</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">&amp;Reference</td>
+      <td style="text-align: center">參考</td>
+      <td style="text-align: center">引用</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">call by value</td>
+      <td style="text-align: center">傳值</td>
+      <td style="text-align: center">傳值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">call by pointer</td>
+      <td style="text-align: center">傳址</td>
+      <td style="text-align: center">傳地址</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">call by reference</td>
+      <td style="text-align: center">傳參考</td>
+      <td style="text-align: center">傳引用</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">STL</td>
+      <td style="text-align: center">函式庫</td>
+      <td style="text-align: center">標準庫</td>
+    </tr>
   </tbody>
 </table>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -593,7 +692,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/c/basic/typicalRange" class="navigation navigation-next navigation-unique" aria-label="Next page: 資料型別範圍">
+                        <a href="/pages/c/basic/typicalRange" class="navigation navigation-next navigation-unique" aria-label="Next page: 資料型態範圍">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -713,7 +812,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-05 09:52:27 +0800"
+        "time": "2024-06-14 16:29:37 +0800"
     },
     "basePath": "",
     "book": {

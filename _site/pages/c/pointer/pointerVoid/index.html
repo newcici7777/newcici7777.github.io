@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>void*任何類型的指標 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>void*任何資料型態的指標 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -109,11 +109,11 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型別 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型別範圍</a>
+    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型態範圍</a>
         
             
         </li>
@@ -182,10 +182,10 @@
 	
 	
 	<li class="active">
-    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何類型的指標</a>
+    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
         
             
-                <ul><li><a href="#函式的參數為void指標地址" onclick="mobilePageScrollToAnchor(this)" >函式的參數為void*指標(地址)</a></li><li><a href="#函式返回值為void指標" onclick="mobilePageScrollToAnchor(this)" >函式返回值為void*指標</a></li><li><a href="#不能對void指標使用取值運算子" onclick="mobilePageScrollToAnchor(this)" >不能對<code class="language-plaintext highlighter-rouge">void*指標使用取值運算子*</code></a></li><li><a href="#函式的參數為void" onclick="mobilePageScrollToAnchor(this)" >函式的參數為void</a></li></ul>
+                <ul><li><a href="#函式的參數為void指標位址" onclick="mobilePageScrollToAnchor(this)" >函式的參數為void*指標(位址)</a></li><li><a href="#函式傳回值為void指標" onclick="mobilePageScrollToAnchor(this)" >函式傳回值為void*指標</a></li><li><a href="#不能對void指標使用取值運算子" onclick="mobilePageScrollToAnchor(this)" >不能對<code class="language-plaintext highlighter-rouge">void*指標使用取值運算子*</code></a></li><li><a href="#函式的參數為void" onclick="mobilePageScrollToAnchor(this)" >函式的參數為void</a></li></ul>
 
             
         </li>
@@ -206,7 +206,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標地址是無效內容</a>
+    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標位址是無效內容</a>
         
             
         </li>
@@ -216,7 +216,45 @@
     	<a href="/pages/c/pointer/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToPointer" onclick="pageScrollToTop(this)"> 指標的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerArithmetic" onclick="pageScrollToTop(this)"> 指標運算</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/array" onclick="pageScrollToTop(this)"> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
@@ -279,7 +317,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >void*任何類型的指標</a>
+                            <a href="." >void*任何資料型態的指標</a>
                         
                     </h1>
                 </div>
@@ -294,12 +332,12 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/pointer/pointerVoid">void*任何類型的指標</h1>
+                        <h1 id="/pages/c/pointer/pointerVoid">void*任何資料型態的指標</h1>
                     
 
-                    <h3 id="函式的參數為void指標地址">函式的參數為void*指標(地址)</h3>
+                    <h3 id="函式的參數為void指標位址">函式的參數為void*指標(位址)</h3>
 
-<p>函式的參數為void*指標，表示任何類型的指標(地址)都可以傳進函式，而且不需要轉型。</p>
+<p>函式的參數為void*指標，表示任何資料型態的指標(位址)都可以傳進函式，而且不需要轉型。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -329,15 +367,15 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第1行，宣告printAddr的函式，參數類型為void*指標。</p>
+<p>第1行，宣告printAddr的函式，參數資料型態為void*指標。</p>
 
-<p>第2行，印出地址。</p>
+<p>第2行，印出位址。</p>
 
-<p>第6行，將整數i變數的地址傳入。</p>
+<p>第6行，將整數i變數的位址傳入。</p>
 
-<p>第8行，將字元c變數的地址傳入。</p>
+<p>第8行，將字元c變數的位址傳入。</p>
 
-<p>第10行，將浮點數d變數的地址傳入。</p>
+<p>第10行，將浮點數d變數的位址傳入。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 0x7ff7bfeff468
@@ -345,11 +383,11 @@
 0x7ff7bfeff458
 </code></pre></div></div>
 
-<h3 id="函式返回值為void指標">函式返回值為void*指標</h3>
+<h3 id="函式傳回值為void指標">函式傳回值為void*指標</h3>
 
-<p>表示可以回傳任何類型的指標(地址)，可以轉型成任何類型指標。</p>
+<p>表示可以回傳任何資料型態的指標(位址)，可以轉型成任何資料型態指標。</p>
 
-<p>以下為malloc的回傳類型void<em>指標(地址)，void</em>指標可以轉成任何類型指標，參數size_t  __size代表設定空間大小。</p>
+<p>以下為malloc的回傳資料型態void<em>指標(位址)，void</em>指標可以轉成任何資料型態指標，參數size_t  __size代表設定空間大小。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -359,7 +397,7 @@
 
 <p>使用方式</p>
 
-<p>在heap區段，建立10 byte的記憶體空間，將回傳的地址轉成char類型的指標。</p>
+<p>在heap區段，建立10 byte的記憶體空間，將回傳的位址轉成char資料型態的指標。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -367,7 +405,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>在heap區段，建立1mb的記憶體空間，將回傳的地址轉成int類型的指標。</p>
+<p>在heap區段，建立1mb的記憶體空間，將回傳的位址轉成int資料型態的指標。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -377,7 +415,7 @@
 
 <h3 id="不能對void指標使用取值運算子">不能對<code class="language-plaintext highlighter-rouge">void*指標使用取值運算子*</code></h3>
 
-<p>不能對void*指標使用<code class="language-plaintext highlighter-rouge">取值運算子*</code>，需要轉換成其它類型的指標才可以使用<code class="language-plaintext highlighter-rouge">取值運算子*</code></p>
+<p>不能對void*指標使用<code class="language-plaintext highlighter-rouge">取值運算子*</code>，需要轉換成其它資料型態的指標才可以使用<code class="language-plaintext highlighter-rouge">取值運算子*</code></p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -389,7 +427,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第2行，編譯失敗，不能對p指標使用取值運算子<em>，因為它是void</em>指標類型，必須轉型後才能對指標取出內容。</p>
+<p>第2行，編譯失敗，不能對p指標使用取值運算子<em>，因為它是void</em>指標資料型態，必須轉型後才能對指標取出內容。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -411,7 +449,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第2行，先將p指標轉型成char*指標，接著使用<code class="language-plaintext highlighter-rouge">取值運算子*</code>取出指標地址中的內容。</p>
+<p>第2行，先將p指標轉型成char*指標，接著使用<code class="language-plaintext highlighter-rouge">取值運算子*</code>取出指標位址中的內容。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 a
@@ -526,7 +564,7 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "指標地址是無效內容",
+            "title": "指標位址是無效內容",
             "level": "1.2",
             "depth": 1,
             "path": "_pages/c/pointer/wildPointer.md",
@@ -628,7 +666,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-05 09:52:27 +0800"
+        "time": "2024-06-14 16:29:37 +0800"
     },
     "basePath": "",
     "book": {

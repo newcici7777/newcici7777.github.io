@@ -109,11 +109,11 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型別 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型別範圍</a>
+    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型態範圍</a>
         
             
         </li>
@@ -182,7 +182,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何類型的指標</a>
+    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
         
             
         </li>
@@ -203,7 +203,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標地址是無效內容</a>
+    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標位址是無效內容</a>
         
             
         </li>
@@ -213,10 +213,48 @@
     	<a href="/pages/c/pointer/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
         
             
-                <ul><li><a href="#函式類型" onclick="mobilePageScrollToAnchor(this)" >函式類型</a></li><li><a href="#宣告函式指標" onclick="mobilePageScrollToAnchor(this)" >宣告函式指標</a></li><li><a href="#typedef-自定義函式指標類型" onclick="mobilePageScrollToAnchor(this)" >typedef 自定義函式指標類型</a></li><li><a href="#函式參數是函式指標" onclick="mobilePageScrollToAnchor(this)" >函式參數是函式指標</a></li><li><a href="#函式參數是typedef自定義函式指標類型" onclick="mobilePageScrollToAnchor(this)" >函式參數是typedef，自定義函式指標類型</a></li><li><a href="#函式指標應用" onclick="mobilePageScrollToAnchor(this)" >函式指標應用</a></li></ul>
+                <ul><li><a href="#函式資料型態" onclick="mobilePageScrollToAnchor(this)" >函式資料型態</a></li><li><a href="#宣告函式指標" onclick="mobilePageScrollToAnchor(this)" >宣告函式指標</a></li><li><a href="#typedef-自定義函式指標資料型態" onclick="mobilePageScrollToAnchor(this)" >typedef 自定義函式指標資料型態</a></li><li><a href="#函式參數是函式指標" onclick="mobilePageScrollToAnchor(this)" >函式參數是函式指標</a></li><li><a href="#函式參數是typedef自定義函式指標資料型態" onclick="mobilePageScrollToAnchor(this)" >函式參數是typedef，自定義函式指標資料型態</a></li><li><a href="#函式指標應用" onclick="mobilePageScrollToAnchor(this)" >函式指標應用</a></li></ul>
 
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToPointer" onclick="pageScrollToTop(this)"> 指標的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerArithmetic" onclick="pageScrollToTop(this)"> 指標運算</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/array" onclick="pageScrollToTop(this)"> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
@@ -297,15 +335,15 @@
                         <h1 id="/pages/c/pointer/functionPointer">函式指標</h1>
                     
 
-                    <p>函式指標指向函式的記憶體地址，通過函式指標使用函式。</p>
+                    <p>函式指標指向函式的記憶體位址，通過函式指標使用函式。</p>
 
-<h3 id="函式類型">函式類型</h3>
+<h3 id="函式資料型態">函式資料型態</h3>
 
-<p>函式類型是由函式的<code class="language-plaintext highlighter-rouge">返回值類型/參數類型/參數的數量</code>所組成。</p>
+<p>函式資料型態是由函式的<code class="language-plaintext highlighter-rouge">傳回值資料型態/參數資料型態/參數的數量</code>所組成。</p>
 
-<p>如果多個函式的<code class="language-plaintext highlighter-rouge">返回值類型/參數類型/參數的數量</code>都一樣，代表這些函式是同一個類型。</p>
+<p>如果多個函式的<code class="language-plaintext highlighter-rouge">傳回值資料型態/參數資料型態/參數的數量</code>都一樣，代表這些函式是同一個資料型態。</p>
 
-<p>以下三個函式都是相同類型，返回值類型/參數類型/參數的數量都一樣。</p>
+<p>以下三個函式都是相同資料型態，傳回值資料型態/參數資料型態/參數的數量都一樣。</p>
 
 <ul>
   <li>int func1(int code, string msg);</li>
@@ -313,7 +351,7 @@
   <li>int func3(int userId, string userName);</li>
 </ul>
 
-<p>以下三個函式都是相同類型，返回值類型/參數類型/參數的數量都一樣。</p>
+<p>以下三個函式都是相同資料型態，傳回值資料型態/參數資料型態/參數的數量都一樣。</p>
 
 <ul>
   <li>bool func4(string param1);</li>
@@ -321,14 +359,14 @@
   <li>bool func6(string name);</li>
 </ul>
 
-<p>以下二個函式不是相同類型。</p>
+<p>以下二個函式不是相同資料型態。</p>
 
 <ul>
   <li>int func1(int code, string msg);</li>
   <li>bool func4(string param1);</li>
 </ul>
 
-<p>以下三個函式的函式類型為 int (*pf1)(int,string)，其中pf1為函式指標的變數名，可以為任意名稱，名稱前面要有星號*，要用括號()包起來，int為返回值類型，(int,string)為函式參數類型與參數數量。</p>
+<p>以下三個函式的函式資料型態為 int (*pf1)(int,string)，其中pf1為函式指標的變數名，可以為任意名稱，名稱前面要有星號*，要用括號()包起來，int為傳回值資料型態，(int,string)為函式參數資料型態與參數數量。</p>
 
 <ul>
   <li>int func1(int code, string msg);</li>
@@ -336,7 +374,7 @@
   <li>int func3(int userId, string userName);</li>
 </ul>
 
-<p>以下三個函式的函式類型為 bool (*pf2)(string)，其中pf2為函式指標的變數名，可以為任意名稱。</p>
+<p>以下三個函式的函式資料型態為 bool (*pf2)(string)，其中pf2為函式指標的變數名，可以為任意名稱。</p>
 
 <ul>
   <li>bool func4(string param1);</li>
@@ -382,11 +420,11 @@
 Err code = 404, msg = Page not found.
 </code></pre></div></div>
 
-<h3 id="typedef-自定義函式指標類型">typedef 自定義函式指標類型</h3>
+<h3 id="typedef-自定義函式指標資料型態">typedef 自定義函式指標資料型態</h3>
 
 <p>語法</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>typedef 回傳值(*自定義類型名)(參數1,參數2,參數3 ...);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>typedef 回傳值(*自定義資料型態名)(參數1,參數2,參數3 ...);
 </code></pre></div></div>
 
 <p>將前一個宣告函式指標的程式碼</p>
@@ -437,9 +475,9 @@ Err code = 404, msg = Page not found.
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第3行,宣告自定義函式指標類型Func1。</p>
+<p>第3行,宣告自定義函式指標資料型態Func1。</p>
 
-<p>第9行,宣告指標變數pf1為Func1類型(自定義類型)。</p>
+<p>第9行,宣告指標變數pf1為Func1資料型態(自定義資料型態)。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 Err code = 404, msg = Page not found.
@@ -447,7 +485,7 @@ Err code = 404, msg = Page not found.
 
 <h3 id="函式參數是函式指標">函式參數是函式指標</h3>
 
-<p>宣告函式print404Msg()，第一個參數為函式指標，函式的類型是返回值為int，函式指標名為pf1，2個參數類型分別為int跟string。</p>
+<p>宣告函式print404Msg()，第一個參數為函式指標，函式的資料型態是傳回值為int，函式指標名為pf1，2個參數資料型態分別為int跟string。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -459,7 +497,7 @@ Err code = 404, msg = Page not found.
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第1行,宣告函式print404Msg()，第一個參數為函式指標，第二個參數為string類型。</p>
+<p>第1行,宣告函式print404Msg()，第一個參數為函式指標，第二個參數為string資料型態。</p>
 
 <p>第2行,使用函式指標pf1呼叫函式，並把404整數與msg的參數傳進函式。</p>
 
@@ -499,9 +537,9 @@ Err code = 404, msg = Page not found.
 Err code = 404, msg = Page not Found
 </code></pre></div></div>
 
-<h3 id="函式參數是typedef自定義函式指標類型">函式參數是typedef，自定義函式指標類型</h3>
+<h3 id="函式參數是typedef自定義函式指標資料型態">函式參數是typedef，自定義函式指標資料型態</h3>
 
-<p>也可以使用typedef，自定義函式指標類型。</p>
+<p>也可以使用typedef，自定義函式指標資料型態。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -515,9 +553,9 @@ Err code = 404, msg = Page not Found
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第1行,宣告自定義函式指標類型Func1。</p>
+<p>第1行,宣告自定義函式指標資料型態Func1。</p>
 
-<p>第2行,宣告函式print404Msg()，第一個參數類型為Func1(自定義類型)，第二個參數類型為string</p>
+<p>第2行,宣告函式print404Msg()，第一個參數資料型態為Func1(自定義資料型態)，第二個參數資料型態為string</p>
 
 <p>第3行,使用函式指標呼叫函式，並把第二個參數msg傳入。</p>
 
@@ -557,7 +595,7 @@ Err code = 404, msg = Page not Found
 
 <h3 id="函式指標應用">函式指標應用</h3>
 
-<p>自定義二個函式指標類型</p>
+<p>自定義二個函式指標資料型態</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -567,9 +605,9 @@ Err code = 404, msg = Page not Found
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第1行,宣告自定義函式類型，函式的類型是返回值為void，函式指標名為Success，參數類型char*指標。</p>
+<p>第1行,宣告自定義函式資料型態，函式的資料型態是傳回值為void，函式指標名為Success，參數資料型態char*指標。</p>
 
-<p>第2行,宣告自定義函式類型，函式的類型是返回值為void，函式指標名為Failure，第1個參數類型int，第2個參數類型char*指標。</p>
+<p>第2行,宣告自定義函式資料型態，函式的資料型態是傳回值為void，函式指標名為Failure，第1個參數資料型態int，第2個參數資料型態char*指標。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -587,9 +625,9 @@ Err code = 404, msg = Page not Found
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第1行,宣告函式，返回值與參數類型都符合自定義函式類型Success</p>
+<p>第1行,宣告函式，傳回值與參數資料型態都符合自定義函式資料型態Success</p>
 
-<p>第4行,宣告函式，返回值與參數類型都符合自定義函式類型Failure</p>
+<p>第4行,宣告函式，傳回值與參數資料型態都符合自定義函式資料型態Failure</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -619,15 +657,15 @@ Err code = 404, msg = Page not Found
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第1行,宣告函式，第1個參數類型int，第2個參數自定義函式指標類型Success，第3個參數自定義函式指標類型Failure。</p>
+<p>第1行,宣告函式，第1個參數資料型態int，第2個參數自定義函式指標資料型態Success，第3個參數自定義函式指標資料型態Failure。</p>
 
 <p>第3行,使用函式指標Success呼叫函式。</p>
 
 <p>第5行,使用函式指標Failure呼叫函式，並傳入參數。</p>
 
-<p>第9行,呼叫http函式，並把函式返回值參數與自定義Success函式類型一樣的httpOk函式傳入。</p>
+<p>第9行,呼叫http函式，並把函式傳回值參數與自定義Success函式資料型態一樣的httpOk函式傳入。</p>
 
-<p>第10行,呼叫http函式，並把函式返回值參數與自定義Failure函式類型一樣的httpFailure函式傳入。</p>
+<p>第10行,呼叫http函式，並把函式傳回值參數與自定義Failure函式資料型態一樣的httpFailure函式傳入。</p>
 
 <p>完整程式</p>
 
@@ -747,14 +785,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/pointer/wildPointer" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 指標地址是無效內容">
+                        <a href="/pages/c/pointer/wildPointer" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 指標位址是無效內容">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/conversion/implicit" class="navigation navigation-next navigation-unique" aria-label="Next page: 自動轉型">
+                        <a href="/pages/c/pointer/pointerToPointer" class="navigation navigation-next navigation-unique" aria-label="Next page: 指標的指標">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -770,6 +808,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "陣列",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/c/pointer/array.md",
+            "ref": "_pages/c/pointer/array.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -865,7 +912,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-05 09:52:27 +0800"
+        "time": "2024-06-14 16:29:37 +0800"
     },
     "basePath": "",
     "book": {

@@ -109,11 +109,11 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型別 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型別範圍</a>
+    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型態範圍</a>
         
             
         </li>
@@ -182,7 +182,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何類型的指標</a>
+    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
         
             
         </li>
@@ -203,7 +203,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標地址是無效內容</a>
+    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標位址是無效內容</a>
         
             
         </li>
@@ -213,7 +213,45 @@
     	<a href="/pages/c/pointer/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToPointer" onclick="pageScrollToTop(this)"> 指標的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerArithmetic" onclick="pageScrollToTop(this)"> 指標運算</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/array" onclick="pageScrollToTop(this)"> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
@@ -401,11 +439,11 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第3行，私有成員屬性items，類型為int指標，指向int陣列的第0筆地址。</p>
+<p>第3行，私有成員屬性items，資料型態為int指標，指向int陣列的第0筆位址。</p>
 
-<p>第4行，私有成員屬性stacksize，型別為int，存放stack最大的容量。</p>
+<p>第4行，私有成員屬性stacksize，資料型態為int，存放stack最大的容量。</p>
 
-<p>第5行，私有成員屬性top，型別為int，記錄目前stack最頂端的index位置。</p>
+<p>第5行，私有成員屬性top，資料型態為int，記錄目前stack最頂端的index位置。</p>
 
 <p>第8行，建構式，初始化成員stacksize與top。</p>
 
@@ -413,21 +451,21 @@
 
 <p>第12行，解構式。</p>
 
-<p>第13行，從記憶體釋放items的空間。</p>
+<p>第13行，從記憶體回收items的空間。</p>
 
-<p>第14行，將釋放的空間指向null。</p>
+<p>第14行，將回收的空間指向null。</p>
 
 <p>第20行，若top位置在0，表示為空。</p>
 
 <p>第25行，若top位置在stacksize代表空間已滿。</p>
 
-<p>第31行，函式是將item推入stack，參數為參考型別。</p>
+<p>第31行，函式是將item推入stack，參數為參考資料型態。</p>
 
 <p>第33行，目前stack最頂端的index位置小於stack最大容量就做if的區塊。</p>
 
 <p>第34行，先做items[top] = item的動作，再做top++的動作。</p>
 
-<p>第42行，參數為參考型別，stack彈出頂端的值暫時放置的變數。</p>
+<p>第42行，參數為參考資料型態，stack彈出頂端的值暫時放置的變數。</p>
 
 <p>第44行，先將top–的動作，再做items[top]的動作。</p>
 
@@ -485,7 +523,7 @@ item = 1
 </code></pre></div></div>
 <h2 id="stack-typedef實作">Stack typedef實作</h2>
 
-<p>將上面的程式修改成自定義型別DataType。以下有黃色的部分是有變更的程式碼。</p>
+<p>將上面的程式修改成自定義資料型態DataType。以下有黃色的部分是有變更的程式碼。</p>
 
 <pre>
 <span class="markline">typedef int DataType;</span>
@@ -712,7 +750,7 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "資料型別範圍",
+            "title": "資料型態範圍",
             "level": "1.2",
             "depth": 1,
             "path": "_pages/c/basic/typicalRange.md",
@@ -814,7 +852,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-05 09:52:27 +0800"
+        "time": "2024-06-14 16:29:37 +0800"
     },
     "basePath": "",
     "book": {

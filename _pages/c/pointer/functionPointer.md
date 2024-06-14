@@ -4,40 +4,40 @@ date: 2024-06-03
 keywords: c++, pointer, function pointer
 ---
 
-函式指標指向函式的記憶體地址，通過函式指標使用函式。
+函式指標指向函式的記憶體位址，通過函式指標使用函式。
 
-### 函式類型
+### 函式資料型態
 
-函式類型是由函式的`返回值類型/參數類型/參數的數量`所組成。
+函式資料型態是由函式的`傳回值資料型態/參數資料型態/參數的數量`所組成。
 
-如果多個函式的`返回值類型/參數類型/參數的數量`都一樣，代表這些函式是同一個類型。
+如果多個函式的`傳回值資料型態/參數資料型態/參數的數量`都一樣，代表這些函式是同一個資料型態。
 
-以下三個函式都是相同類型，返回值類型/參數類型/參數的數量都一樣。
+以下三個函式都是相同資料型態，傳回值資料型態/參數資料型態/參數的數量都一樣。
 
 * int func1(int code, string msg);
 * int func2(int age, string name);
 * int func3(int userId, string userName);
 
 
-以下三個函式都是相同類型，返回值類型/參數類型/參數的數量都一樣。
+以下三個函式都是相同資料型態，傳回值資料型態/參數資料型態/參數的數量都一樣。
 
 * bool func4(string param1);
 * bool func5(string msg);
 * bool func6(string name);
 
-以下二個函式不是相同類型。
+以下二個函式不是相同資料型態。
 
 * int func1(int code, string msg);
 * bool func4(string param1);
 
 
-以下三個函式的函式類型為 int (\*pf1)(int,string)，其中pf1為函式指標的變數名，可以為任意名稱，名稱前面要有星號\*，要用括號()包起來，int為返回值類型，(int,string)為函式參數類型與參數數量。
+以下三個函式的函式資料型態為 int (\*pf1)(int,string)，其中pf1為函式指標的變數名，可以為任意名稱，名稱前面要有星號\*，要用括號()包起來，int為傳回值資料型態，(int,string)為函式參數資料型態與參數數量。
 
 * int func1(int code, string msg);
 * int func2(int age, string name);
 * int func3(int userId, string userName);
 
-以下三個函式的函式類型為 bool (\*pf2)(string)，其中pf2為函式指標的變數名，可以為任意名稱。
+以下三個函式的函式資料型態為 bool (\*pf2)(string)，其中pf2為函式指標的變數名，可以為任意名稱。
 
 * bool func4(string param1);
 * bool func5(string msg);
@@ -71,12 +71,12 @@ int main() {
 Err code = 404, msg = Page not found.
 ```
 
-### typedef 自定義函式指標類型
+### typedef 自定義函式指標資料型態
 
 語法
 
 ```
-typedef 回傳值(*自定義類型名)(參數1,參數2,參數3 ...);
+typedef 回傳值(*自定義資料型態名)(參數1,參數2,參數3 ...);
 ```
 
 將前一個宣告函式指標的程式碼
@@ -107,9 +107,9 @@ int main() {
 }
 {% endhighlight %}
 
-第3行,宣告自定義函式指標類型Func1。
+第3行,宣告自定義函式指標資料型態Func1。
 
-第9行,宣告指標變數pf1為Func1類型(自定義類型)。
+第9行,宣告指標變數pf1為Func1資料型態(自定義資料型態)。
 
 ```
 執行結果
@@ -118,7 +118,7 @@ Err code = 404, msg = Page not found.
 
 ### 函式參數是函式指標
 
-宣告函式print404Msg()，第一個參數為函式指標，函式的類型是返回值為int，函式指標名為pf1，2個參數類型分別為int跟string。
+宣告函式print404Msg()，第一個參數為函式指標，函式的資料型態是傳回值為int，函式指標名為pf1，2個參數資料型態分別為int跟string。
 
 {% highlight c++ linenos %}
 void print404Msg(int (*pf1)(int,string), string msg) {
@@ -126,7 +126,7 @@ void print404Msg(int (*pf1)(int,string), string msg) {
 }
 {% endhighlight %}
 
-第1行,宣告函式print404Msg()，第一個參數為函式指標，第二個參數為string類型。
+第1行,宣告函式print404Msg()，第一個參數為函式指標，第二個參數為string資料型態。
 
 第2行,使用函式指標pf1呼叫函式，並把404整數與msg的參數傳進函式。
 
@@ -152,9 +152,9 @@ int main() {
 Err code = 404, msg = Page not Found
 ```
 
-### 函式參數是typedef，自定義函式指標類型
+### 函式參數是typedef，自定義函式指標資料型態
 
-也可以使用typedef，自定義函式指標類型。
+也可以使用typedef，自定義函式指標資料型態。
 
 {% highlight c++ linenos %}
 typedef int (*Func1)(int,string);
@@ -163,9 +163,9 @@ void print404Msg(Func1 pf1, string msg) {
 }
 {% endhighlight %}
 
-第1行,宣告自定義函式指標類型Func1。
+第1行,宣告自定義函式指標資料型態Func1。
 
-第2行,宣告函式print404Msg()，第一個參數類型為Func1(自定義類型)，第二個參數類型為string
+第2行,宣告函式print404Msg()，第一個參數資料型態為Func1(自定義資料型態)，第二個參數資料型態為string
 
 第3行,使用函式指標呼叫函式，並把第二個參數msg傳入。
 
@@ -189,14 +189,14 @@ int main() {
 
 ### 函式指標應用
 
-自定義二個函式指標類型
+自定義二個函式指標資料型態
 {% highlight c++ linenos %}
 typedef void (*Success)(char*);
 typedef void (*Failure)(int, char*);
 {% endhighlight %}
-第1行,宣告自定義函式類型，函式的類型是返回值為void，函式指標名為Success，參數類型char*指標。
+第1行,宣告自定義函式資料型態，函式的資料型態是傳回值為void，函式指標名為Success，參數資料型態char*指標。
 
-第2行,宣告自定義函式類型，函式的類型是返回值為void，函式指標名為Failure，第1個參數類型int，第2個參數類型char*指標。
+第2行,宣告自定義函式資料型態，函式的資料型態是傳回值為void，函式指標名為Failure，第1個參數資料型態int，第2個參數資料型態char*指標。
 
 {% highlight c++ linenos %}
 void httpOk(char* msg) {
@@ -206,9 +206,9 @@ void httpFailure(int code, char* msg) {
     printf("失敗%d，原因:%s\n", code, msg);
 }
 {% endhighlight %}
-第1行,宣告函式，返回值與參數類型都符合自定義函式類型Success
+第1行,宣告函式，傳回值與參數資料型態都符合自定義函式資料型態Success
 
-第4行,宣告函式，返回值與參數類型都符合自定義函式類型Failure
+第4行,宣告函式，傳回值與參數資料型態都符合自定義函式資料型態Failure
 
 {% highlight c++ linenos %}
 void http(int res, Success success, Failure failure) {
@@ -224,15 +224,15 @@ int main() {
     return 0;
 }
 {% endhighlight %}
-第1行,宣告函式，第1個參數類型int，第2個參數自定義函式指標類型Success，第3個參數自定義函式指標類型Failure。
+第1行,宣告函式，第1個參數資料型態int，第2個參數自定義函式指標資料型態Success，第3個參數自定義函式指標資料型態Failure。
 
 第3行,使用函式指標Success呼叫函式。
 
 第5行,使用函式指標Failure呼叫函式，並傳入參數。
 
-第9行,呼叫http函式，並把函式返回值參數與自定義Success函式類型一樣的httpOk函式傳入。
+第9行,呼叫http函式，並把函式傳回值參數與自定義Success函式資料型態一樣的httpOk函式傳入。
 
-第10行,呼叫http函式，並把函式返回值參數與自定義Failure函式類型一樣的httpFailure函式傳入。
+第10行,呼叫http函式，並把函式傳回值參數與自定義Failure函式資料型態一樣的httpFailure函式傳入。
 
 完整程式
 

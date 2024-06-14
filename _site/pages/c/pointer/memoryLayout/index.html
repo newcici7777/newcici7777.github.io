@@ -109,11 +109,11 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型別 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型別範圍</a>
+    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型態範圍</a>
         
             
         </li>
@@ -157,7 +157,7 @@
     	<a href="/pages/c/pointer/memoryLayout" onclick="pageScrollToTop(this)"> 記憶體配置</a>
         
             
-                <ul><li><a href="#記憶體起始與結束地址" onclick="mobilePageScrollToAnchor(this)" >記憶體起始與結束地址。</a></li><li><a href="#記憶體區段" onclick="mobilePageScrollToAnchor(this)" >記憶體區段</a><ul><li><a href="#內核" onclick="mobilePageScrollToAnchor(this)" >內核</a></li><li><a href="#stack" onclick="mobilePageScrollToAnchor(this)" >stack</a></li><li><a href="#heap" onclick="mobilePageScrollToAnchor(this)" >Heap</a></li><li><a href="#bss" onclick="mobilePageScrollToAnchor(this)" >bss</a></li><li><a href="#data-segmen" onclick="mobilePageScrollToAnchor(this)" >data segmen</a></li><li><a href="#code-segment" onclick="mobilePageScrollToAnchor(this)" >code segment</a></li></ul></li><li><a href="#變數記憶體位址" onclick="mobilePageScrollToAnchor(this)" >變數記憶體位址</a></li><li><a href="#stack-1" onclick="mobilePageScrollToAnchor(this)" >Stack</a></li><li><a href="#heap-1" onclick="mobilePageScrollToAnchor(this)" >Heap</a></li><li><a href="#尚未使用區域" onclick="mobilePageScrollToAnchor(this)" >尚未使用區域</a></li></ul>
+                <ul><li><a href="#記憶體起始與結束位址" onclick="mobilePageScrollToAnchor(this)" >記憶體起始與結束位址。</a></li><li><a href="#記憶體區段" onclick="mobilePageScrollToAnchor(this)" >記憶體區段</a><ul><li><a href="#作業系統核心" onclick="mobilePageScrollToAnchor(this)" >作業系統核心</a></li><li><a href="#stack堆疊-儲存區域變數的記憶體區塊" onclick="mobilePageScrollToAnchor(this)" >stack(堆疊) 儲存區域變數的記憶體區塊</a></li><li><a href="#heap堆積-儲存動態配置變數的記憶體區塊" onclick="mobilePageScrollToAnchor(this)" >Heap(堆積) 儲存動態配置變數的記憶體區塊</a></li><li><a href="#bss-segmen-記憶體區塊" onclick="mobilePageScrollToAnchor(this)" >bss segmen 記憶體區塊</a></li><li><a href="#data-segmen-記憶體區塊" onclick="mobilePageScrollToAnchor(this)" >data segmen 記憶體區塊</a></li><li><a href="#code-segment-記憶體區塊" onclick="mobilePageScrollToAnchor(this)" >code segment 記憶體區塊</a></li></ul></li><li><a href="#變數記憶體位址" onclick="mobilePageScrollToAnchor(this)" >變數記憶體位址</a></li><li><a href="#stack" onclick="mobilePageScrollToAnchor(this)" >Stack</a></li><li><a href="#heap" onclick="mobilePageScrollToAnchor(this)" >Heap</a></li><li><a href="#尚未使用區域" onclick="mobilePageScrollToAnchor(this)" >尚未使用區域</a></li></ul>
 
             
         </li>
@@ -185,7 +185,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何類型的指標</a>
+    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
         
             
         </li>
@@ -206,7 +206,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標地址是無效內容</a>
+    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標位址是無效內容</a>
         
             
         </li>
@@ -216,7 +216,45 @@
     	<a href="/pages/c/pointer/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToPointer" onclick="pageScrollToTop(this)"> 指標的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerArithmetic" onclick="pageScrollToTop(this)"> 指標運算</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/array" onclick="pageScrollToTop(this)"> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
@@ -297,15 +335,15 @@
                         <h1 id="/pages/c/pointer/memoryLayout">記憶體配置</h1>
                     
 
-                    <h3 id="記憶體起始與結束地址">記憶體起始與結束地址。</h3>
-<p>記憶體開始地址由下表最下方開始，記憶體結束地址在最上方。</p>
+                    <h3 id="記憶體起始與結束位址">記憶體起始與結束位址。</h3>
+<p>記憶體開始位址由下表最下方開始，記憶體結束位址在最上方。</p>
 
 <table class="custom-table">
   <thead>
     <tr>
       <th align="center" width="10%">開始與結束</th>
-      <th align="left" width="10%">地址高低</th>
-      <th align="left">地址</th>
+      <th align="left" width="10%">位址高低</th>
+      <th align="left">位址</th>
     </tr>  
   </thead>
   <tbody>
@@ -342,14 +380,14 @@
 
 <h3 id="記憶體區段">記憶體區段</h3>
 
-<p>記憶體區段根據地址由高到低分別為Kernel, Stack, 尚位使用區域, Heap, bass, data, code。</p>
+<p>記憶體區段根據位址由高到低分別為Kernel, Stack, 尚位使用區域, Heap, bass, data, code。</p>
 
 <table class="custom-table">
   <thead>
     <tr>
-      <th align="center" width="5%">地址高低</th>
-      <th align="left" width="30%">區段</th>
-      <th align="left" width="5%">地址增長方向</th>
+      <th align="center" width="5%">位址高低</th>
+      <th align="left" width="30%">記憶體區塊</th>
+      <th align="left" width="5%">位址成長方向</th>
       <th align="left">儲存項目</th>
     </tr>    
   </thead>
@@ -358,7 +396,7 @@
       <td>高</td>
       <td>Kernel</td>
       <td></td>
-      <td>內核</td>
+      <td>作業系統核心</td>
     </tr>
     <tr>
       <td rowspan="5" style="vertical-align: middle;">
@@ -376,7 +414,7 @@
     <tr>
       <td>Heap</td>
       <td>&#8593;</td>
-      <td>動態分配指標</td>
+      <td>動態配置記憶體</td>
     </tr>
     <tr>
       <td>bss segmen</td>
@@ -397,29 +435,29 @@
   </tbody>                
 </table>
 
-<h4 id="內核">內核</h4>
+<h4 id="作業系統核心">作業系統核心</h4>
 
 <p>處理cpu記憶體Devices與應用程式運作。</p>
 
-<h4 id="stack">stack</h4>
+<h4 id="stack堆疊-儲存區域變數的記憶體區塊">stack(堆疊) 儲存區域變數的記憶體區塊</h4>
 
-<p>函式或程式區塊<code class="language-plaintext highlighter-rouge">{}</code>中區域變數與函式參數與函式返回值的記憶體地址。</p>
+<p>儲存區域變數與函式參數與函式傳回值，記憶體大小只有8M，記憶體位址成長的方向是向下成長。</p>
 
-<h4 id="heap">Heap</h4>
+<h4 id="heap堆積-儲存動態配置變數的記憶體區塊">Heap(堆積) 儲存動態配置變數的記憶體區塊</h4>
 
-<p>動態分配指標記憶體地址</p>
+<p>儲存由動態配置(new與malloc)產生的變數，記憶體大小取決電腦實體記憶體大小(可能8GB或更大)，記憶體位址成長的方向是向上成長。</p>
 
-<h4 id="bss">bss</h4>
+<h4 id="bss-segmen-記憶體區塊">bss segmen 記憶體區塊</h4>
 
-<p>未初始化全域變數與靜態變數記憶體地址</p>
+<p>儲存未初始化全域變數與靜態變數。</p>
 
-<h4 id="data-segmen">data segmen</h4>
+<h4 id="data-segmen-記憶體區塊">data segmen 記憶體區塊</h4>
 
-<p>已初始化全域變數與靜態變數記憶體地址</p>
+<p>儲存已初始化全域變數與靜態變數。</p>
 
-<h4 id="code-segment">code segment</h4>
+<h4 id="code-segment-記憶體區塊">code segment 記憶體區塊</h4>
 
-<p>常數與程式執行檔地址</p>
+<p>儲存常數與程式執行檔。</p>
 
 <h3 id="變數記憶體位址">變數記憶體位址</h3>
 
@@ -452,7 +490,7 @@
 <span class="kt">int</span> <span class="n">global_y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>        <span class="c1">// 儲存於 data segmen(已初始化全域變數）</span>
 <span class="kt">int</span> <span class="n">global_z</span><span class="p">;</span>            <span class="c1">// 儲存於 bss(未初始全域變數)</span>
 <span class="kt">int</span> <span class="nf">fun1</span><span class="p">(</span><span class="kt">int</span> <span class="n">param1</span><span class="p">)</span> <span class="p">{</span>	 <span class="c1">// 儲存於 stack (函式參數)</span>
-	<span class="k">return</span> <span class="n">param1</span><span class="p">;</span> <span class="c1">// 儲存於 stack (函式返回值)</span>
+	<span class="k">return</span> <span class="n">param1</span><span class="p">;</span> <span class="c1">// 儲存於 stack (函式傳回值)</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">const</span> <span class="k">static</span> <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// 儲存於 code segment(常數)</span>
@@ -473,15 +511,15 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="stack-1">Stack</h3>
+<h3 id="stack">Stack</h3>
 <ul>
-  <li>儲存在Stack的變數，變數離開有效範圍(Scope)後，會由系統自動釋放記憶體地址。</li>
+  <li>儲存在Stack的變數，變數離開有效範圍(Scope)後，會由系統自動回收記憶體位址。</li>
   <li>Stack記憶體容量8M。</li>
-  <li>記憶體地址向下遞減。</li>
+  <li>記憶體位址向下成長。</li>
   <li>不會memory leak。</li>
 </ul>
 
-<p>以下程式碼在函式中建立三個變數，並觀察三個變數的記憶體地址是由大至小遞減。證明記憶體地址向下遞減。</p>
+<p>以下程式碼在函式中建立三個變數，並觀察三個變數的記憶體位址是由大至小遞減。證明記憶體位址向下成長。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -509,15 +547,15 @@ va2 = 140702053822440
 va3 = 140702053822436
 </code></pre></div></div>
 
-<h3 id="heap-1">Heap</h3>
+<h3 id="heap">Heap</h3>
 <ul>
-  <li>儲存在Heap的指標，由程式設計師手動釋放記憶體地址，或待主程式生命周期結束後被系統釋放記憶體地址。</li>
+  <li>儲存動態配置(new與malloc)產生的變數，由程式設計師手動回收記憶體位址，或待主程式生命周期結束後被系統回收記憶體位址。</li>
   <li>Heap記憶體容量取決於電腦的記憶體大小。</li>
-  <li>記憶體地址向上遞增。</li>
+  <li>記憶體位址向上遞增。</li>
   <li>會memory leak。</li>
 </ul>
 
-<p>以下程式碼動態分配指標建立三個變數，並觀察三個變數的記憶體地址是由小至大增長。證明動態分配記憶體地址向上遞增。</p>
+<p>以下程式碼動態分配建立三個變數，並觀察三個變數的記憶體位址是由小至大增長。證明動態分配記憶體位址向上成長。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -561,7 +599,7 @@ p3 address = 105553116315696
 
 <h3 id="尚未使用區域">尚未使用區域</h3>
 
-<p>變數在Stack區段中，地址增長的方向是向下遞減，變數在Heap區段中，地址增長的方向是向上遞增，未避免Stack與Heap的記憶體地址互相交疊，中間有一個區域是分隔Stack與Heap。</p>
+<p>變數在Stack記憶體區塊，位址增長的方向是向下，變數在Heap記憶體區塊，位址增長的方向是向上，未避免Stack與Heap的記憶體位址成長時互相交疊，中間有一個區域是分隔Stack與Heap。</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -752,7 +790,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-05 09:52:27 +0800"
+        "time": "2024-06-14 16:29:37 +0800"
     },
     "basePath": "",
     "book": {

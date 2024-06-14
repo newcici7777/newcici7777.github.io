@@ -109,11 +109,11 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型別 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型別範圍</a>
+    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型態範圍</a>
         
             
         </li>
@@ -182,7 +182,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何類型的指標</a>
+    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
         
             
         </li>
@@ -199,14 +199,14 @@
     	<a href="/pages/c/pointer/nullptr" onclick="pageScrollToTop(this)"> 0 == nullptr == NULL</a>
         
             
-                <ul><li><a href="#nullptr代表沒有指向任何地址" onclick="mobilePageScrollToAnchor(this)" >nullptr代表沒有指向任何地址</a><ul><li><a href="#檢查nullptr" onclick="mobilePageScrollToAnchor(this)" >檢查nullptr</a></li><li><a href="#delete-nullptr" onclick="mobilePageScrollToAnchor(this)" >delete nullptr</a></li></ul></li><li><a href="#null" onclick="mobilePageScrollToAnchor(this)" >NULL</a></li><li><a href="#0" onclick="mobilePageScrollToAnchor(this)" >0</a></li><li><a href="#轉型" onclick="mobilePageScrollToAnchor(this)" >轉型</a></li><li><a href="#nullptr地址為0" onclick="mobilePageScrollToAnchor(this)" >nullptr地址為0</a></li><li><a href="#nullptr記憶體地址" onclick="mobilePageScrollToAnchor(this)" >nullptr記憶體地址</a></li><li><a href="#容易混淆寫法" onclick="mobilePageScrollToAnchor(this)" >容易混淆寫法</a></li></ul>
+                <ul><li><a href="#nullptr代表沒有指向任何位址" onclick="mobilePageScrollToAnchor(this)" >nullptr代表沒有指向任何位址</a><ul><li><a href="#檢查nullptr" onclick="mobilePageScrollToAnchor(this)" >檢查nullptr</a></li><li><a href="#delete-nullptr" onclick="mobilePageScrollToAnchor(this)" >delete nullptr</a></li></ul></li><li><a href="#null" onclick="mobilePageScrollToAnchor(this)" >NULL</a></li><li><a href="#0" onclick="mobilePageScrollToAnchor(this)" >0</a></li><li><a href="#轉型" onclick="mobilePageScrollToAnchor(this)" >轉型</a></li><li><a href="#nullptr位址為0" onclick="mobilePageScrollToAnchor(this)" >nullptr位址為0</a></li><li><a href="#nullptr記憶體位址" onclick="mobilePageScrollToAnchor(this)" >nullptr記憶體位址</a></li><li><a href="#容易混淆寫法" onclick="mobilePageScrollToAnchor(this)" >容易混淆寫法</a></li></ul>
 
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標地址是無效內容</a>
+    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標位址是無效內容</a>
         
             
         </li>
@@ -216,7 +216,45 @@
     	<a href="/pages/c/pointer/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToPointer" onclick="pageScrollToTop(this)"> 指標的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerArithmetic" onclick="pageScrollToTop(this)"> 指標運算</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/array" onclick="pageScrollToTop(this)"> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
@@ -297,9 +335,9 @@
                         <h1 id="/pages/c/pointer/nullptr">0 == nullptr == NULL</h1>
                     
 
-                    <h2 id="nullptr代表沒有指向任何地址">nullptr代表沒有指向任何地址</h2>
+                    <h2 id="nullptr代表沒有指向任何位址">nullptr代表沒有指向任何位址</h2>
 
-<p>如果對沒有指向任何地址的指標，也就是指標 = nullptr，對這個指標使用<code class="language-plaintext highlighter-rouge">*取值運算子</code>，試圖取出地址中的內容，編譯可以通過，但執行時將會出現錯誤。</p>
+<p>如果對沒有指向任何位址的指標，也就是指標 = nullptr，對這個指標使用<code class="language-plaintext highlighter-rouge">*取值運算子</code>，試圖取出位址中的內容，編譯可以通過，但執行時將會出現錯誤。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -325,11 +363,11 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第7行，宣告指標p，沒有指向任何地址。</p>
+<p>第7行，宣告指標p，沒有指向任何位址。</p>
 
 <p>第8行，將指標p傳入函式。</p>
 
-<p>第4行，將指標p使用<code class="language-plaintext highlighter-rouge">*取值運算子</code>試圖取出地址中的內容，但由於指標沒有指向任何地址，執行時會產生錯誤。</p>
+<p>第4行，將指標p使用<code class="language-plaintext highlighter-rouge">*取值運算子</code>試圖取出位址中的內容，但由於指標沒有指向任何位址，執行時會產生錯誤。</p>
 
 <h3 id="檢查nullptr">檢查nullptr</h3>
 
@@ -359,7 +397,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第4行，判斷指標是不是沒有指向任何地址，若沒有指向任何地址，函式直接返回，不再往下執行。</p>
+<p>第4行，判斷指標是不是沒有指向任何位址，若沒有指向任何位址，函式直接返回，不再往下執行。</p>
 
 <h3 id="delete-nullptr">delete nullptr</h3>
 
@@ -401,7 +439,7 @@
 
 <p>0，代表沒有指向任何記憶空間</p>
 
-<p>以下為同名函式，但參數不同，一個為int類型，一個為int指標，呼叫函式(0)，呼叫的是參數為整數類型的函式。</p>
+<p>以下為同名函式，但參數不同，一個為int資料型態，一個為int指標，呼叫函式(0)，呼叫的是參數為整數資料型態的函式。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -418,7 +456,7 @@
     <span class="n">printf</span><span class="p">(</span><span class="s">"n = %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">n</span><span class="p">);</span><span class="c1">//印出值</span>
 <span class="p">}</span>
 <span class="kt">void</span> <span class="n">func3</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"地址 = %#x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">p</span><span class="p">);</span><span class="c1">//印出地址</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"位址 = %#x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">p</span><span class="p">);</span><span class="c1">//印出位址</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="n">func3</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
@@ -437,11 +475,11 @@ n = 0
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">func3</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span><span class="c1">//指針參數設為NULL</span>
+</pre></td><td class="code"><pre><span class="n">func3</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span><span class="c1">//指標參數設為NULL</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>因為編譯不知道你的NULL是整數指針類型的NULL，轉型就可以編譯成功，以下三行都可以。</p>
+<p>因為編譯不知道你的NULL是整數指標資料型態的NULL，轉型就可以編譯成功，以下三行都可以。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -453,7 +491,7 @@ n = 0
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第1行，nullptr代表所有類型的NULL。</p>
+<p>第1行，nullptr代表所有資料型態的NULL。</p>
 
 <p>第2行，轉型int指標。</p>
 
@@ -479,7 +517,7 @@ n = 0
     <span class="n">printf</span><span class="p">(</span><span class="s">"n = %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">n</span><span class="p">);</span><span class="c1">//印出值</span>
 <span class="p">}</span>
 <span class="kt">void</span> <span class="n">func3</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"地址 = %#x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">p</span><span class="p">);</span><span class="c1">//印出地址</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"位址 = %#x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">p</span><span class="p">);</span><span class="c1">//印出位址</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="n">func3</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
@@ -493,14 +531,14 @@ n = 0
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 n = 0
-地址 = 0
-地址 = 0
-地址 = 0
+位址 = 0
+位址 = 0
+位址 = 0
 </code></pre></div></div>
 
-<h2 id="nullptr地址為0">nullptr地址為0</h2>
+<h2 id="nullptr位址為0">nullptr位址為0</h2>
 
-<p>以下程式碼印出nullptr指標的地址，會印出0。</p>
+<p>以下程式碼印出nullptr指標的位址，會印出0。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -522,9 +560,9 @@ n = 0
 0x0
 </code></pre></div></div>
 
-<h2 id="nullptr記憶體地址">nullptr記憶體地址</h2>
+<h2 id="nullptr記憶體位址">nullptr記憶體位址</h2>
 
-<p>0x00000000-0x0000FFFF記憶體地址區間是放置nullptr指標，無法讀取這段記憶體地址區間。</p>
+<p>0x00000000-0x0000FFFF記憶體位址區間是放置nullptr指標，無法讀取這段記憶體位址區間。</p>
 
 <p>原文</p>
 <blockquote>
@@ -545,13 +583,13 @@ n = 0
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第1行定義整數類型的a變數，值為0</p>
+<p>第1行定義整數資料型態的a變數，值為0</p>
 
-<p>第2行定義p1指針沒有指向任何記憶體空間</p>
+<p>第2行定義p1指標沒有指向任何記憶體空間</p>
 
-<p>第3行定義p2指針沒有指向任何記憶體空間</p>
+<p>第3行定義p2指標沒有指向任何記憶體空間</p>
 
-<p>第4行錯誤，指針是存放地址，而不是值，不能把整數值0放進指針</p>
+<p>第4行錯誤，指標是存放位址，而不是值，不能把整數值0放進指標</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -622,7 +660,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/c/pointer/wildPointer" class="navigation navigation-next navigation-unique" aria-label="Next page: 指標地址是無效內容">
+                        <a href="/pages/c/pointer/wildPointer" class="navigation navigation-next navigation-unique" aria-label="Next page: 指標位址是無效內容">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -640,7 +678,7 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "void*任何類型的指標",
+            "title": "void*任何資料型態的指標",
             "level": "1.2",
             "depth": 1,
             "path": "_pages/c/pointer/pointerVoid.md",
@@ -742,7 +780,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-05 09:52:27 +0800"
+        "time": "2024-06-14 16:29:37 +0800"
     },
     "basePath": "",
     "book": {

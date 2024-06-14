@@ -109,11 +109,11 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型別 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型別範圍</a>
+    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型態範圍</a>
         
             
         </li>
@@ -171,7 +171,7 @@
     	<a href="/pages/c/pointer/pointerParam" onclick="pageScrollToTop(this)"> 函式參數為指標</a>
         
             
-                <ul><li><a href="#引數與參數" onclick="mobilePageScrollToAnchor(this)" >引數與參數</a><ul><li><a href="#引數-argument" onclick="mobilePageScrollToAnchor(this)" >引數 Argument</a></li><li><a href="#參數-parameter" onclick="mobilePageScrollToAnchor(this)" >參數 Parameter</a></li></ul></li><li><a href="#修改傳進來的參數" onclick="mobilePageScrollToAnchor(this)" >修改傳進來的參數</a><ul><li><a href="#指標參數" onclick="mobilePageScrollToAnchor(this)" >指標參數</a></li><li><a href="#取值運算子取出指標參數的內容" onclick="mobilePageScrollToAnchor(this)" >取值運算子，取出指標參數的內容。</a></li><li><a href="#修改指標地址的內容" onclick="mobilePageScrollToAnchor(this)" >修改指標(地址)的內容</a></li><li><a href="#引數為指標變數" onclick="mobilePageScrollToAnchor(this)" >引數為指標變數</a></li></ul></li><li><a href="#作為函式返回值" onclick="mobilePageScrollToAnchor(this)" >作為函式返回值</a></li><li><a href="#減少記憶體空間的使用" onclick="mobilePageScrollToAnchor(this)" >減少記憶體空間的使用</a></li></ul>
+                <ul><li><a href="#引數與參數" onclick="mobilePageScrollToAnchor(this)" >引數與參數</a><ul><li><a href="#引數-argument" onclick="mobilePageScrollToAnchor(this)" >引數 Argument</a></li><li><a href="#參數-parameter" onclick="mobilePageScrollToAnchor(this)" >參數 Parameter</a></li></ul></li><li><a href="#修改傳進來的參數" onclick="mobilePageScrollToAnchor(this)" >修改傳進來的參數</a><ul><li><a href="#指標參數" onclick="mobilePageScrollToAnchor(this)" >指標參數</a></li><li><a href="#取值運算子取出指標參數的內容" onclick="mobilePageScrollToAnchor(this)" >取值運算子，取出指標參數的內容。</a></li><li><a href="#修改指標位址的內容" onclick="mobilePageScrollToAnchor(this)" >修改指標(位址)的內容</a></li><li><a href="#引數為指標變數" onclick="mobilePageScrollToAnchor(this)" >引數為指標變數</a></li></ul></li><li><a href="#作為函式傳回值" onclick="mobilePageScrollToAnchor(this)" >作為函式傳回值</a></li><li><a href="#減少記憶體空間的使用" onclick="mobilePageScrollToAnchor(this)" >減少記憶體空間的使用</a></li></ul>
 
             
         </li>
@@ -185,7 +185,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何類型的指標</a>
+    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
         
             
         </li>
@@ -206,7 +206,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標地址是無效內容</a>
+    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標位址是無效內容</a>
         
             
         </li>
@@ -216,7 +216,45 @@
     	<a href="/pages/c/pointer/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToPointer" onclick="pageScrollToTop(this)"> 指標的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerArithmetic" onclick="pageScrollToTop(this)"> 指標運算</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/array" onclick="pageScrollToTop(this)"> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
@@ -347,7 +385,7 @@
 
 <h3 id="指標參數">指標參數</h3>
 
-<p>函式的參數是指標，代表參數是地址。指標參數語法為<code class="language-plaintext highlighter-rouge">類型* 參數名</code></p>
+<p>函式的參數是指標，代表參數是位址。指標參數語法為<code class="language-plaintext highlighter-rouge">資料型態* 參數名</code></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void func1(int* param1) {
 }
@@ -355,7 +393,7 @@
 
 <h3 id="取值運算子取出指標參數的內容">取值運算子，取出指標參數的內容。</h3>
 
-<p>當函式的參數為指標，指標就是地址，代表可以透過取值運算子*,取出地址存放的內容。</p>
+<p>當函式的參數為指標，指標就是位址，代表可以透過取值運算子*,取出位址存放的內容。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*param1
 </code></pre></div></div>
@@ -375,7 +413,7 @@ param1=10
 
 </code></pre></div></div>
 
-<h3 id="修改指標地址的內容">修改指標(地址)的內容</h3>
+<h3 id="修改指標位址的內容">修改指標(位址)的內容</h3>
 
 <p>使用<code class="language-plaintext highlighter-rouge">*指標 = 修改內容</code>，修改指標的內容。</p>
 
@@ -410,13 +448,13 @@ param1=10
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第1行，函式的參數是指標，代表參數是地址。</p>
+<p>第1行，函式的參數是指標，代表參數是位址。</p>
 
-<p>第2行，透過取值運算子*,取出地址存放的內容。</p>
+<p>第2行，透過取值運算子*,取出位址存放的內容。</p>
 
 <p>第3行，使用<code class="language-plaintext highlighter-rouge">*指標 = 修改內容</code>，修改指標的內容。</p>
 
-<p>第8行，使用取地址運算子&amp;，取出var1變數的記憶體開始地址，將地址作為引數Argument傳進函式fun1()。</p>
+<p>第8行，使用取位址運算子&amp;，取出var1變數的記憶體開始位址，將位址作為引數Argument傳進函式fun1()。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 修改前 var1 =10
@@ -426,7 +464,7 @@ param1=10
 
 <h3 id="引數為指標變數">引數為指標變數</h3>
 
-<p>上一個程式是把地址&amp;var1傳進函式，下面的程式碼是先將地址&amp;var放入int*指標變數，再把指標變數傳入函式。</p>
+<p>上一個程式是把位址&amp;var1傳進函式，下面的程式碼是先將位址&amp;var放入int*指標變數，再把指標變數傳入函式。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -454,9 +492,9 @@ param1=10
 param1=10
 </code></pre></div></div>
 
-<h2 id="作為函式返回值">作為函式返回值</h2>
+<h2 id="作為函式傳回值">作為函式傳回值</h2>
 
-<p>如果有一個功能要求函式返回多個值，只有一個函式返回值根本不夠用，可以把參數作為返回值。</p>
+<p>如果有一個功能要求函式返回多個值，只有一個函式傳回值根本不夠用，可以把參數作為傳回值。</p>
 
 <p>以下程式是在一群學生數學/英文/歷史成績中，分別找出各科數學/英文/歷史最大的分數。</p>
 
@@ -783,7 +821,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-05 09:52:27 +0800"
+        "time": "2024-06-14 16:29:37 +0800"
     },
     "basePath": "",
     "book": {
