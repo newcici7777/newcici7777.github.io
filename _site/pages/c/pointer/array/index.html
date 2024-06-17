@@ -137,6 +137,13 @@
     	<a href="/pages/c/basic/printformat" onclick="pageScrollToTop(this)"> 整數與浮點數</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/typedef" onclick="pageScrollToTop(this)"> typedef 型別定義</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -151,13 +158,6 @@
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標 </a><ul>
-	
-	
-	<li class="">
-    	<a href="/pages/c/pointer/memoryLayout" onclick="pageScrollToTop(this)"> 記憶體配置</a>
-        
-            
-        </li>
 	
 	
 	<li class="">
@@ -183,13 +183,6 @@
 	
 	<li class="">
     	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
-    	<a href="/pages/c/pointer/newDelete" onclick="pageScrollToTop(this)"> new/delete</a>
         
             
         </li>
@@ -237,7 +230,7 @@
     	<a href="/pages/c/pointer/array" onclick="pageScrollToTop(this)"> 陣列</a>
         
             
-                <ul><li><a href="#初始化值" onclick="mobilePageScrollToAnchor(this)" >初始化值</a></li><li><a href="#陣列中有多少元素" onclick="mobilePageScrollToAnchor(this)" >陣列中有多少元素？</a></li><li><a href="#陣列中每一個值都初始化為0" onclick="mobilePageScrollToAnchor(this)" >陣列中每一個值都初始化為0</a></li><li><a href="#memset-陣列值清空" onclick="mobilePageScrollToAnchor(this)" >memset() 陣列值清空</a></li><li><a href="#memcpy-複製陣列記憶體內容複製" onclick="mobilePageScrollToAnchor(this)" >memcpy() 複製陣列，記憶體內容複製</a></li></ul>
+                <ul><li><a href="#初始化值" onclick="mobilePageScrollToAnchor(this)" >初始化值</a></li><li><a href="#陣列中有多少元素" onclick="mobilePageScrollToAnchor(this)" >陣列中有多少元素？</a></li><li><a href="#陣列中每一個值都初始化為整數0" onclick="mobilePageScrollToAnchor(this)" >陣列中每一個值都初始化為整數0</a></li><li><a href="#memset-陣列中每個元素設為整數0" onclick="mobilePageScrollToAnchor(this)" >memset() 陣列中每個元素設為整數0</a></li><li><a href="#memcpy-複製陣列記憶體內容複製" onclick="mobilePageScrollToAnchor(this)" >memcpy() 複製陣列，記憶體內容複製</a></li></ul>
 
             
         </li>
@@ -251,10 +244,41 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+    	<a href="/pages/c/dynamicMemory/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/qsort" onclick="pageScrollToTop(this)"> qsort排序</a>
         
             
         </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 記憶體 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/memoryLayout" onclick="pageScrollToTop(this)"> 記憶體配置</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/newDelete" onclick="pageScrollToTop(this)"> new/delete</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/nothrow" onclick="pageScrollToTop(this)"> 記憶體不足</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
@@ -380,9 +404,9 @@ arr[9] = 0
 <p>sizeof(陣列名) 是取得這個陣列占記憶體的大小。
 sizeof(資料型態) 是取得資料資料型態占的記憶體大小，如int占4byte，double占8byte，char占1byte。</p>
 
-<h3 id="陣列中每一個值都初始化為0">陣列中每一個值都初始化為0</h3>
+<h3 id="陣列中每一個值都初始化為整數0">陣列中每一個值都初始化為整數0</h3>
 
-<p>以下二種寫法都是一樣</p>
+<p>以下二種寫法都是一樣，初始化為整數0。</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>資料型態 陣列名[長度] = {0};
 資料型態 陣列名[長度] = {};
 </code></pre></div></div>
@@ -442,13 +466,13 @@ arr1[8] = 0
 arr1[9] = 0
 </code></pre></div></div>
 
-<h3 id="memset-陣列值清空">memset() 陣列值清空</h3>
+<h3 id="memset-陣列中每個元素設為整數0">memset() 陣列中每個元素設為整數0</h3>
 
 <p>void* memset(void *s, int c, size_t n);</p>
 
 <ul>
   <li>參數1 : 陣列名</li>
-  <li>參數2 : 0</li>
+  <li>參數2 : 整數0</li>
   <li>參數3 : 陣列記憶體大小</li>
 </ul>
 
@@ -746,7 +770,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-14 16:29:37 +0800"
+        "time": "2024-06-17 15:57:31 +0800"
     },
     "basePath": "",
     "book": {

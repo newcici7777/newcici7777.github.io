@@ -140,6 +140,13 @@
     	<a href="/pages/c/basic/printformat" onclick="pageScrollToTop(this)"> 整數與浮點數</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/typedef" onclick="pageScrollToTop(this)"> typedef 型別定義</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -154,13 +161,6 @@
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標 </a><ul>
-	
-	
-	<li class="">
-    	<a href="/pages/c/pointer/memoryLayout" onclick="pageScrollToTop(this)"> 記憶體配置</a>
-        
-            
-        </li>
 	
 	
 	<li class="">
@@ -186,13 +186,6 @@
 	
 	<li class="">
     	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
-    	<a href="/pages/c/pointer/newDelete" onclick="pageScrollToTop(this)"> new/delete</a>
         
             
         </li>
@@ -251,10 +244,41 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+    	<a href="/pages/c/dynamicMemory/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/qsort" onclick="pageScrollToTop(this)"> qsort排序</a>
         
             
         </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 記憶體 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/memoryLayout" onclick="pageScrollToTop(this)"> 記憶體配置</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/newDelete" onclick="pageScrollToTop(this)"> new/delete</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/nothrow" onclick="pageScrollToTop(this)"> 記憶體不足</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
@@ -355,6 +379,11 @@
       <td style="text-align: center">數據類型</td>
     </tr>
     <tr>
+      <td style="text-align: center">typedef</td>
+      <td style="text-align: center">型別定義</td>
+      <td style="text-align: center">別名</td>
+    </tr>
+    <tr>
       <td style="text-align: center">int</td>
       <td style="text-align: center">整數</td>
       <td style="text-align: center">整型</td>
@@ -415,6 +444,11 @@
       <td style="text-align: center">函數</td>
     </tr>
     <tr>
+      <td style="text-align: center">callback</td>
+      <td style="text-align: center">回呼函式</td>
+      <td style="text-align: center">回調函數</td>
+    </tr>
+    <tr>
       <td style="text-align: center">return</td>
       <td style="text-align: center">函式傳回值</td>
       <td style="text-align: center">函數返回值</td>
@@ -443,11 +477,6 @@
       <td style="text-align: center">Lvalue</td>
       <td style="text-align: center">等號左邊</td>
       <td style="text-align: center">左值</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">macro</td>
-      <td style="text-align: center">巨集??</td>
-      <td style="text-align: center">宏定義</td>
     </tr>
     <tr>
       <td style="text-align: center">Wild pointers</td>
@@ -548,6 +577,16 @@
       <td style="text-align: center">define</td>
       <td style="text-align: center">宣告</td>
       <td style="text-align: center">聲明，定義</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">#define</td>
+      <td style="text-align: center">前置指令</td>
+      <td style="text-align: center">宏</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Preprocessor</td>
+      <td style="text-align: center">前置處理器</td>
+      <td style="text-align: center">預處理器</td>
     </tr>
     <tr>
       <td style="text-align: center">default</td>
@@ -713,8 +752,8 @@ window.MathJax = {
             "title": "new/delete",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/pointer/newDelete.md",
-            "ref": "_pages/c/pointer/newDelete.md",
+            "path": "_pages/c/dynamicMemory/newDelete.md",
+            "ref": "_pages/c/dynamicMemory/newDelete.md",
             "articles": []
         },
         
@@ -812,7 +851,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-14 16:29:37 +0800"
+        "time": "2024-06-17 15:57:31 +0800"
     },
     "basePath": "",
     "book": {

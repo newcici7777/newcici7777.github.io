@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>指標的指標 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>typedef 型別定義 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -140,9 +140,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/basic/typedef" onclick="pageScrollToTop(this)"> typedef 型別定義</a>
         
+            
+                <ul><li><a href="#int16_t-int32_t-int64_t" onclick="mobilePageScrollToAnchor(this)" >int16_t int32_t int64_t</a></li><li><a href="#size_t-無符號整數型態" onclick="mobilePageScrollToAnchor(this)" >size_t 無符號整數型態</a></li></ul>
+
             
         </li></ul></li>
 	
@@ -209,12 +212,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/pointer/pointerToPointer" onclick="pageScrollToTop(this)"> 指標的指標</a>
         
-            
-                <ul><li><a href="#指標的位址" onclick="mobilePageScrollToAnchor(this)" >指標的位址</a></li><li><a href="#函式參數為指標的指標" onclick="mobilePageScrollToAnchor(this)" >函式參數為指標的指標</a></li></ul>
-
             
         </li>
 	
@@ -341,7 +341,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >指標的指標</a>
+                            <a href="." >typedef 型別定義</a>
                         
                     </h1>
                 </div>
@@ -356,134 +356,122 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/pointer/pointerToPointer">指標的指標</h1>
+                        <h1 id="/pages/c/basic/typedef">typedef 型別定義</h1>
                     
 
-                    <p>指標的指標，意思是指標的位址，指標也是位址，所以可以稱為，位址的位址。</p>
-<h3 id="指標的位址">指標的位址</h3>
+                    <h2 id="int16_t-int32_t-int64_t">int16_t int32_t int64_t</h2>
+
+<p>C++建立不同作業系統(跨平台)可以支援的資料型態。</p>
+
+<p>語法如下</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>typedef 資料型態	型別定義
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">作業系統</th>
+      <th style="text-align: center">short</th>
+      <th style="text-align: center">int</th>
+      <th style="text-align: center">long</th>
+      <th style="text-align: center">long long</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Linux</td>
+      <td style="text-align: center">2byte</td>
+      <td style="text-align: center">4byte</td>
+      <td style="text-align: center">8byte</td>
+      <td style="text-align: center">8byte</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Windows</td>
+      <td style="text-align: center">2byte</td>
+      <td style="text-align: center">4byte</td>
+      <td style="text-align: center">4byte</td>
+      <td style="text-align: center">8byte</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>由上表可以發現，Linux與Windows在long資料型態占用記憶體大小不同。</p>
+
+<p>Windows</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">40</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的值 = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"，i的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"指標p的值 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">"，指標p的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">"，對指標p儲存的位址取出存放的內容="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="o">**</span><span class="n">pp</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">p</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"指標pp的值 = "</span> <span class="o">&lt;&lt;</span> <span class="n">pp</span> <span class="o">&lt;&lt;</span> <span class="s">"，指標pp的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">pp</span> <span class="o">&lt;&lt;</span> <span class="s">"，對指標pp儲存的位址取出存放的內容="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">pp</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"再次把上一個步驟取出的內容為位址，再對這個位址取出存放內容="</span> <span class="o">&lt;&lt;</span> <span class="o">**</span><span class="n">pp</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+</pre></td><td class="code"><pre>    <span class="c1">//windows</span>
+    <span class="k">typedef</span> <span class="kt">short</span> <span class="kt">int16_t</span><span class="p">;</span><span class="c1">//16位元整數</span>
+    <span class="k">typedef</span> <span class="kt">int</span> <span class="kt">int32_t</span><span class="p">;</span><span class="c1">//32位元整數</span>
+    <span class="k">typedef</span> <span class="kt">long</span> <span class="kt">long</span> <span class="kt">int64_t</span><span class="p">;</span><span class="c1">//64位元整數</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-i的值 = 40，i的位址 = 0x7ff7bfeff468
-指標p的值 = 0x7ff7bfeff468，指標p的位址 = 0x7ff7bfeff460，對指標p儲存的位址取出存放的內容=40
-指標pp的值 = 0x7ff7bfeff460，指標pp的位址 = 0x7ff7bfeff458，對指標pp儲存的位址取出存放的內容=0x7ff7bfeff468
-再次把上一個步驟取出的位址，再對這個位址取出存放內容=40
-</code></pre></div></div>
-
-<p>其它程式碼解釋</p>
+<p>Linux</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">i4</span> <span class="o">=</span> <span class="mi">40</span><span class="p">;</span>
-    <span class="c1">//宣告一個指標存i4的位址</span>
-    <span class="kt">int</span> <span class="o">*</span><span class="n">p2</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i4</span><span class="p">;</span>
-    <span class="c1">//將p2指標的位址傳給pp2</span>
-    <span class="kt">int</span> <span class="o">**</span><span class="n">pp2</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">p2</span><span class="p">;</span>
-
-    <span class="c1">//1.把pp2存放的位址，使用取值運算子*，也就是指標p2的位址</span>
-    <span class="c1">//*pp2;</span>
-    <span class="c1">//2.再把p2位址，使用取值運算子*，也就是40</span>
-    <span class="c1">//**pp2</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"解出pp2的值:%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="o">**</span><span class="n">pp2</span><span class="p">);</span>    
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+</pre></td><td class="code"><pre>    <span class="c1">//Linux</span>
+    <span class="k">typedef</span> <span class="kt">short</span> <span class="kt">int16_t</span><span class="p">;</span><span class="c1">//16位元整數</span>
+    <span class="k">typedef</span> <span class="kt">int</span> <span class="kt">int32_t</span><span class="p">;</span><span class="c1">//32位元整數</span>
+    <span class="k">typedef</span> <span class="kt">long</span> <span class="kt">int64_t</span><span class="p">;</span><span class="c1">//64位元整數</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-解出pp2的值:40
-</code></pre></div></div>
+<p>在寫程式時，資料型態使用int16_t與int32_t與int64_t，不再使用基本資料型態int，short，long，long long。</p>
 
-<h3 id="函式參數為指標的指標">函式參數為指標的指標</h3>
-<p>設計一個函式，修改指標存放的位址。
-若要對指標存放的位址進行變動，函式參數就要使用二個星號** 的指標，接收指標的位址。</p>
+<h2 id="size_t-無符號整數型態">size_t 無符號整數型態</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">電腦</th>
+      <th style="text-align: center">整數</th>
+      <th style="text-align: center">byte數</th>
+      <th>範圍大小</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">32位元</td>
+      <td style="text-align: center">unsigned int</td>
+      <td style="text-align: center">4byte</td>
+      <td>0~4294967295</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">64位元</td>
+      <td style="text-align: center">unsigned long long</td>
+      <td style="text-align: center">8byte</td>
+      <td>0 到 18,446,744,073,709,551,615</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>由上表可以發現不同位元的電腦，C++顯示的整數型態不一樣。</p>
+
+<p>32位元定義的size_t</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">void</span> <span class="nf">initAddress</span><span class="p">(</span><span class="kt">int</span><span class="o">**</span> <span class="n">p</span><span class="p">){</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
-    <span class="n">cout</span>  <span class="o">&lt;&lt;</span> <span class="s">"p = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">",*p = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="n">initAddress</span><span class="p">(</span><span class="o">&amp;</span><span class="n">p</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"指標的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">",指標存放的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">"，對存放的位址取出內容 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+</pre></td><td class="code"><pre><span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="kt">size_t</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第9行，宣告指標p，初始化為nullptr，也就是沒有指向任何位址。</p>
+<p>64位元定義的size_t</p>
 
-<p>第10行，呼叫函式initAddress，引數為指標p的位址。</p>
-
-<p>第3行，宣告一個函式initAddress()，參數為指標的位址，所以使用二個星號**宣告。</p>
-
-<p>第4行，印出指標的位址。</p>
-
-<p>第5行，動態配置記憶體位址，位址存放的內容為10，使用new會返回動態配置記憶體的位址。使用<code class="language-plaintext highlighter-rouge">取值運算子*指標名 = 新位址</code>修改指標存放的位址。</p>
-
-<p>第6行，印出指標p的位址，印出指標p存放的位址。</p>
-
-<p>第11行，印出指標p的位址，印出指標p存放的位址，對存放的位址取出內容。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-p = 0x7ff7bfeff460
-p = 0x7ff7bfeff460,*p = 0x600000008050
-指標的位址 = 0x7ff7bfeff460,指標存放的位址 = 0x600000008050，對存放的位址取出內容 = 10
-</code></pre></div></div>
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="kt">size_t</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -547,14 +535,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/pointer/functionPointer" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 函式指標">
+                        <a href="/pages/c/basic/printformat" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 整數與浮點數">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/pointer/pointerArithmetic" class="navigation navigation-next navigation-unique" aria-label="Next page: 指標運算">
+                        <a href="/pages/c/basic/block" class="navigation navigation-next navigation-unique" aria-label="Next page: 程式碼區塊">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -572,11 +560,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "陣列與動態配置記憶體",
+            "title": "記憶體不足",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/dynamicMemory/dynamicArrays.md",
-            "ref": "_pages/c/dynamicMemory/dynamicArrays.md",
+            "path": "_pages/c/dynamicMemory/nothrow.md",
+            "ref": "_pages/c/dynamicMemory/nothrow.md",
             "articles": []
         },
         
@@ -668,8 +656,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/pointer/pointerToPointer.md",
-        "mtime": "2024-06-05 00:00:00 +0800",
+        "path": "_pages/c/basic/typedef.md",
+        "mtime": "2024-06-15 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

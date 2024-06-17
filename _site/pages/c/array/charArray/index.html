@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>陣列與動態配置記憶體 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>char 字串 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -137,6 +137,13 @@
     	<a href="/pages/c/basic/printformat" onclick="pageScrollToTop(this)"> 整數與浮點數</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/typedef" onclick="pageScrollToTop(this)"> typedef 型別定義</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -151,13 +158,6 @@
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標 </a><ul>
-	
-	
-	<li class="">
-    	<a href="/pages/c/pointer/memoryLayout" onclick="pageScrollToTop(this)"> 記憶體配置</a>
-        
-            
-        </li>
 	
 	
 	<li class="">
@@ -183,13 +183,6 @@
 	
 	<li class="">
     	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
-    	<a href="/pages/c/pointer/newDelete" onclick="pageScrollToTop(this)"> new/delete</a>
         
             
         </li>
@@ -247,14 +240,42 @@
         </li>
 	
 	
-	<li class="active">
-    	<a href="/pages/c/pointer/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
         
             
-                <ul><li><a href="#建立陣列記憶體位址" onclick="mobilePageScrollToAnchor(this)" >建立陣列記憶體位址</a></li><li><a href="#記憶體回收" onclick="mobilePageScrollToAnchor(this)" >記憶體回收</a></li><li><a href="#不能使用sizeof" onclick="mobilePageScrollToAnchor(this)" >不能使用sizeof()</a></li></ul>
-
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/qsort" onclick="pageScrollToTop(this)"> qsort排序</a>
+        
             
         </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 記憶體 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/memoryLayout" onclick="pageScrollToTop(this)"> 記憶體配置</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/newDelete" onclick="pageScrollToTop(this)"> new/delete</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/nothrow" onclick="pageScrollToTop(this)"> 記憶體不足</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
@@ -317,7 +338,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >陣列與動態配置記憶體</a>
+                            <a href="." >char 字串</a>
                         
                     </h1>
                 </div>
@@ -332,25 +353,131 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/pointer/dynamicArrays">陣列與動態配置記憶體</h1>
+                        <h1 id="/pages/c/array/charArray">char 字串</h1>
                     
 
-                    <h2 id="建立陣列記憶體位址">建立陣列記憶體位址</h2>
+                    <h2 id="空字元nullcharacter">空字元(nullcharacter)</h2>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>資料型態 *陣列名 = new 資料型態[長度];
+<p>char字串必須以’\0’做結尾，若不是’\0’做結尾則稱為char陣列。</p>
+
+<p>宣告字串，必須留1個字元，放結尾\0，以下宣告最多可以放5個字元，而第6個字元則是放\0。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char str[6];
 </code></pre></div></div>
 
-<p>new回傳值是陣列第0筆元素記憶體位址，由指標(*陣列名)接收回傳的記憶體位址。</p>
+<p>以下二種宣告是完全不同，一個是字串，一個是陣列。</p>
 
-<h2 id="記憶體回收">記憶體回收</h2>
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre>    <span class="c1">//char字串</span>
+    <span class="c1">// \0 代表結尾</span>
+    <span class="kt">char</span> <span class="n">str1</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">,</span><span class="sc">'\0'</span><span class="p">};</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str1 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">str1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">str1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//char 陣列</span>
+    <span class="kt">char</span> <span class="n">arr</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">};</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr sizeof = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>delete[] 指標變數;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+str1 長度 = 5,內容 = hello
+arr 長度 = 11,內容 = helloohello
+arr sizeof = 6
 </code></pre></div></div>
+<h2 id="字串常數">字串常數</h2>
 
-<h2 id="不能使用sizeof">不能使用sizeof()</h2>
+<p>注意!以下”“雙引號包住的字串是常數，常數代表不可以修改，編譯器會自動加上’\0’作結尾，不用手動加’\0’。</p>
 
-<p>因為陣列名是指標，使用sizeof(陣列名)只會回傳8btye</p>
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>	<span class="c1">//字串常數</span>
+    <span class="kt">char</span> <span class="n">str1</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"hello"</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
+<h2 id="字串常數宣告">字串常數宣告</h2>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">cstr1</span><span class="p">[</span><span class="mi">21</span><span class="p">];</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr1 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//以下結尾編譯器會自動加上\0</span>
+    <span class="kt">char</span> <span class="n">cstr2</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"hello"</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr2 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">cstr3</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="s">"hello"</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr3 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr3</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">cstr4</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"hello"</span><span class="p">};</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr4 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr4</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr4</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">cstr5</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"hello"</span><span class="p">};</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr5 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr5</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr5</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">cstr6</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="p">{</span><span class="s">"hello"</span><span class="p">};</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr6 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr6</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr6</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//設為nullptr</span>
+    <span class="kt">char</span> <span class="n">cstr7</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr7 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr7</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr7</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+cstr1 長度 = 6,內容 = p\364\357\277\367
+cstr2 長度 = 5,內容 = hello
+cstr3 長度 = 5,內容 = hello
+cstr4 長度 = 5,內容 = hello
+cstr5 長度 = 5,內容 = hello
+cstr6 長度 = 5,內容 = hello
+cstr7 長度 = 0,內容 = 
+</code></pre></div></div>
+<p>cstr1沒有初始化字串，執行程式時會從cstr1的記憶體位址開始印值，直到遇到記憶體位址的值為\0(空字元)才會停止印出，不會因為超過宣告字串的長度而停止印出。</p>
+
+<h2 id="字串設為nullptr">字串設為nullptr</h2>
+
+<p>#include <iostream>
+using namespace std;
+int main() {
+    char cstr2[] = "hello";
+    cout &lt;&lt; "cstr2 長度 = " &lt;&lt; strlen(cstr2) &lt;&lt; ",內容 = " &lt;&lt; cstr2 &lt;&lt; endl;
+    memset(cstr2,0,sizeof(cstr2));
+    cout &lt;&lt; "cstr2 長度 = " &lt;&lt; strlen(cstr2) &lt;&lt; ",內容 = " &lt;&lt; cstr2 &lt;&lt; endl;
+    return 0;
+}</iostream></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+cstr2 長度 = 5,內容 = hello
+cstr2 長度 = 0,內容 = 
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -413,17 +540,7 @@ window.MathJax = {
                     
     
                     
-                        
-                        <a href="/pages/c/pointer/pointerToArray" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 一維指標陣列">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                    
 
-                    
-                        
-                        <a href="/pages/c/conversion/implicit" class="navigation navigation-next navigation-unique" aria-label="Next page: 自動轉型">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -437,6 +554,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "typedef 型別定義",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/c/basic/typedef.md",
+            "ref": "_pages/c/basic/typedef.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -526,13 +652,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/pointer/dynamicArrays.md",
-        "mtime": "2024-06-13 00:00:00 +0800",
+        "path": "_pages/c/array/charArray.md",
+        "mtime": "2024-06-15 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-14 16:29:37 +0800"
+        "time": "2024-06-17 15:57:31 +0800"
     },
     "basePath": "",
     "book": {

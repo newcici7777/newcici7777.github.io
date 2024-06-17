@@ -8,6 +8,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |:--:|:--:|:--:|
 |Data type|資料|數據|
 |Data Type|資料型態|數據類型|
+|typedef|型別定義|別名|
 |int|整數|整型|
 |char|字元|字符|
 |string|字串|字符串|
@@ -20,13 +21,13 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Pointer|指標|指針|
 |pointer to pointer\*\*|指標的指標，雙重指標|二級指針|
 |Function|函式|函數|
+|callback|回呼函式|回調函數|
 |return|函式傳回值|函數返回值|
 |Functor|物件函式|仿函數|
 |Variable|變數|變量|
 |Constant|常數|常量|
 |scope|生命周期，可見性，有效範圍|作用域|
 |Lvalue|等號左邊|左值|
-|macro|巨集??|宏定義|
 |Wild pointers||野指針|
 |Dangling pointers||懸空指針|
 |Pointer to Const||常量指針|
@@ -47,6 +48,8 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Array|陣列|數組|
 |index|索引|下標|
 |define|宣告|聲明，定義|
+|#define|前置指令|宏|
+|Preprocessor|前置處理器|預處理器|
 |default|預設值|缺省|
 |assign = |指定或指派或設為|賦值|
 |constructor|建構式或建構子|構造方法|
