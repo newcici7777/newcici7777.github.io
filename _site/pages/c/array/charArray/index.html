@@ -151,7 +151,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/block" onclick="pageScrollToTop(this)"> 程式碼區塊</a>
+    	<a href="/pages/c/basic/block" onclick="pageScrollToTop(this)"> 程式碼區塊或函式主體(Body)</a>
         
             
         </li></ul></li>
@@ -227,14 +227,14 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/array" onclick="pageScrollToTop(this)"> 陣列</a>
+    	<a href="/pages/c/array/array" onclick="pageScrollToTop(this)"> 陣列</a>
         
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+    	<a href="/pages/c/array/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
         
             
         </li>
@@ -248,10 +248,30 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/qsort" onclick="pageScrollToTop(this)"> qsort排序</a>
+    	<a href="/pages/c/array/qsort" onclick="pageScrollToTop(this)"> qsort排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/array2dimen" onclick="pageScrollToTop(this)"> 二維陣列</a>
         
             
         </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 字串 </a><ul>
+	
+	
+	<li class="active">
+    	<a href="/pages/c/array/charArray" onclick="pageScrollToTop(this)"> char 字串</a>
+        
+            
+                <ul><li><a href="#空字元null-character" onclick="mobilePageScrollToAnchor(this)" >空字元(null character)</a></li><li><a href="#字串常數" onclick="mobilePageScrollToAnchor(this)" >字串常數</a></li><li><a href="#字串常數宣告" onclick="mobilePageScrollToAnchor(this)" >字串常數宣告</a></li><li><a href="#二維陣列字串" onclick="mobilePageScrollToAnchor(this)" >二維陣列字串</a></li><li><a href="#字串全設為0" onclick="mobilePageScrollToAnchor(this)" >字串全設為\0</a></li><li><a href="#字串拷貝-strcpy" onclick="mobilePageScrollToAnchor(this)" >字串拷貝 strcpy</a></li><li><a href="#字元個數拷貝-strncpy" onclick="mobilePageScrollToAnchor(this)" >字元個數拷貝 strncpy</a></li><li><a href="#字串長度-strlen" onclick="mobilePageScrollToAnchor(this)" >字串長度 strlen</a></li><li><a href="#字串連接-strcat" onclick="mobilePageScrollToAnchor(this)" >字串連接 strcat</a></li></ul>
+
+            
+        </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 記憶體 </a><ul>
@@ -356,7 +376,7 @@
                         <h1 id="/pages/c/array/charArray">char 字串</h1>
                     
 
-                    <h2 id="空字元nullcharacter">空字元(nullcharacter)</h2>
+                    <h2 id="空字元null-character">空字元(null character)</h2>
 
 <p>char字串必須以’\0’做結尾，若不是’\0’做結尾則稱為char陣列。</p>
 
@@ -462,21 +482,232 @@ cstr7 長度 = 0,內容 =
 </code></pre></div></div>
 <p>cstr1沒有初始化字串，執行程式時會從cstr1的記憶體位址開始印值，直到遇到記憶體位址的值為\0(空字元)才會停止印出，不會因為超過宣告字串的長度而停止印出。</p>
 
-<h2 id="字串設為nullptr">字串設為nullptr</h2>
+<h2 id="二維陣列字串">二維陣列字串</h2>
 
-<p>#include <iostream>
-using namespace std;
-int main() {
-    char cstr2[] = "hello";
-    cout &lt;&lt; "cstr2 長度 = " &lt;&lt; strlen(cstr2) &lt;&lt; ",內容 = " &lt;&lt; cstr2 &lt;&lt; endl;
-    memset(cstr2,0,sizeof(cstr2));
-    cout &lt;&lt; "cstr2 長度 = " &lt;&lt; strlen(cstr2) &lt;&lt; ",內容 = " &lt;&lt; cstr2 &lt;&lt; endl;
-    return 0;
-}</iostream></p>
+<p>參考</p>
+
+<p><a href="/pages/c/array/array2dimen/">二維陣列</a></p>
+
+<p>以下的例子是建立二維的字串，總共有7個字串，每個字串最大長度為10，Wednesday是最長字串，長度為9，加上\0就等於10。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">DAYS</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span> <span class="c1">//字串數，7個字串</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">MAX</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">// 每個字串最大長度，包含\0</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="n">DAYS</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Sunday"</span><span class="p">,</span><span class="s">"Monday"</span><span class="p">,</span><span class="s">"Tuesday"</span><span class="p">,</span><span class="s">"Wednesday"</span><span class="p">,</span><span class="s">"Thursday"</span><span class="p">,</span><span class="s">"Friday"</span><span class="p">,</span><span class="s">"Saturday"</span><span class="p">};</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">DAYS</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//印出字串</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+
+</code></pre></div></div>
+
+<h2 id="字串全設為0">字串全設為\0</h2>
+
+<p>使用memset，第二個參數設為0，代表把字串的記憶體位址的值全設為\0。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">cstr2</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"hello"</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr2 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">cstr2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">cstr2</span><span class="p">));</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr2 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 cstr2 長度 = 5,內容 = hello
 cstr2 長度 = 0,內容 = 
+</code></pre></div></div>
+
+<h2 id="字串拷貝-strcpy">字串拷貝 strcpy</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>strcpy(目標desc，來源src)
+</code></pre></div></div>
+<p>要從來源的字串，拷貝到目標的字串。</p>
+
+<ul>
+  <li>參數1:目標(拷貝到那裡？)</li>
+  <li>參數2:要拷貝的字串(src)</li>
+</ul>
+
+<p>拷貝完成後，會自動在目標字串最後面加上\0。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c_str1</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'\0'</span><span class="p">};</span>
+    <span class="kt">char</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">20</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'t'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">};</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">c_str4</span><span class="p">,</span> <span class="n">c_str1</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4:"</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+c_str4:hel
+</code></pre></div></div>
+
+<h2 id="字元個數拷貝-strncpy">字元個數拷貝 strncpy</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char *strncpy(char *string1, const char *string2, size_t count);
+</code></pre></div></div>
+<ul>
+  <li>參數1:目標字串(拷貝到那裡？)</li>
+  <li>參數2:要拷貝的字串(src)</li>
+  <li>參數3:要拷貝多少個字元</li>
+</ul>
+
+<p>若參數3(拷貝多少個字元)比參數2(來源字串長度)小，拷貝完成後，不會在參數1(目標字串)的結尾加上\0。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+    <span class="c1">//拷貝2個字元至c_str4</span>
+    <span class="n">strncpy</span><span class="p">(</span><span class="n">c_str4</span><span class="p">,</span><span class="s">"hello"</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[0] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[1] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[2] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[3] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[4] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[5] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[6] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[7] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[8] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[9] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下XCode可以正常執行，會在第2個字元以後補上\0(也就是ascii code = 0，也稱 null character)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>c_str4[0] = h
+c_str4[1] = e
+c_str4[2] = 
+c_str4[3] = 
+</code></pre></div></div>
+
+<p>VS Code執行時，不會在第2個字元以後自動補\0(也就是ascii code = 0，也稱 null character)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>c_str4[0] = h
+c_str4[1] = e
+c_str4[2] = &amp;
+c_str4[3] = x00
+c_str4[4] = x00
+c_str4[5] = x00
+c_str4[6] = x00
+c_str4[7] = x00
+c_str4[8] = x00
+c_str4[9] = x00
+</code></pre></div></div>
+
+<p>若一開始把字串的記憶體位址的值全設為ascii code 0，就不會出現上述問題。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+    <span class="n">strncpy</span><span class="p">(</span><span class="n">c_str4</span><span class="p">,</span><span class="s">"hello"</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="字串長度-strlen">字串長度 strlen</h2>
+
+<p>strlen()是計算字串中有幾個字元，不包含字串結尾\0。</p>
+
+<p>sizeof()是計算字串變數全部記憶體大小。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="s">"hello!"</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4 size:"</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">c_str4</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4長度:"</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">c_str4</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>c_str4 size:10
+c_str4長度:6
+</code></pre></div></div>
+
+<h2 id="字串連接-strcat">字串連接 strcat</h2>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c_str1</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'\0'</span><span class="p">};</span>
+    <span class="c1">//[]可為空</span>
+    <span class="kt">char</span> <span class="n">c_str2</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">,</span><span class="sc">'\0'</span><span class="p">};</span>
+    <span class="kt">char</span> <span class="n">c_str3</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+    <span class="kt">char</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">20</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'t'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">};</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">c_str3</span><span class="p">,</span> <span class="n">c_str1</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str3 + c_str4 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strcat</span><span class="p">(</span><span class="n">c_str3</span><span class="p">,</span><span class="n">c_str4</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+c_str3 + c_str4 = helte
 </code></pre></div></div>
 </section>
             </div><div class="search-results">
@@ -540,7 +771,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/c/array/array2dimen" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 二維陣列">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/c/dynamicMemory/memoryLayout" class="navigation navigation-next navigation-unique" aria-label="Next page: 記憶體配置">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -556,11 +797,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "typedef 型別定義",
+            "title": "qsort排序",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/basic/typedef.md",
-            "ref": "_pages/c/basic/typedef.md",
+            "path": "_pages/c/array/qsort.md",
+            "ref": "_pages/c/array/qsort.md",
             "articles": []
         },
         
@@ -658,7 +899,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-17 15:57:31 +0800"
+        "time": "2024-06-18 16:10:07 +0800"
     },
     "basePath": "",
     "book": {

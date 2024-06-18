@@ -106,7 +106,7 @@
     	<a href="/pages/c/basic/simpleTraditionC" onclick="pageScrollToTop(this)"> 台陸指標相關名詞差異</a>
         
             
-                
+                <ul><li><a href="#文件相關" onclick="mobilePageScrollToAnchor(this)" >文件相關</a></li><li><a href="#資料型態相關" onclick="mobilePageScrollToAnchor(this)" >資料型態相關</a></li><li><a href="#變數相關" onclick="mobilePageScrollToAnchor(this)" >變數相關</a></li><li><a href="#陣列相關" onclick="mobilePageScrollToAnchor(this)" >陣列相關</a></li><li><a href="#函式相關" onclick="mobilePageScrollToAnchor(this)" >函式相關</a></li><li><a href="#指標相關" onclick="mobilePageScrollToAnchor(this)" >指標相關</a></li><li><a href="#記憶體相關" onclick="mobilePageScrollToAnchor(this)" >記憶體相關</a></li><li><a href="#物件相關" onclick="mobilePageScrollToAnchor(this)" >物件相關</a></li></ul>
 
             
         </li>
@@ -154,7 +154,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/block" onclick="pageScrollToTop(this)"> 程式碼區塊</a>
+    	<a href="/pages/c/basic/block" onclick="pageScrollToTop(this)"> 程式碼區塊或函式主體(Body)</a>
         
             
         </li></ul></li>
@@ -230,14 +230,14 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/array" onclick="pageScrollToTop(this)"> 陣列</a>
+    	<a href="/pages/c/array/array" onclick="pageScrollToTop(this)"> 陣列</a>
         
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+    	<a href="/pages/c/array/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
         
             
         </li>
@@ -251,10 +251,27 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/qsort" onclick="pageScrollToTop(this)"> qsort排序</a>
+    	<a href="/pages/c/array/qsort" onclick="pageScrollToTop(this)"> qsort排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/array2dimen" onclick="pageScrollToTop(this)"> 二維陣列</a>
         
             
         </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 字串 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/charArray" onclick="pageScrollToTop(this)"> char 字串</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 記憶體 </a><ul>
@@ -359,7 +376,9 @@
                         <h1 id="/pages/c/basic/simpleTraditionC">台陸指標相關名詞差異</h1>
                     
 
-                    <table>
+                    <h2 id="文件相關">文件相關</h2>
+
+<table>
   <thead>
     <tr>
       <th style="text-align: center">英文</th>
@@ -369,7 +388,36 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">Data type</td>
+      <td style="text-align: center">head file</td>
+      <td style="text-align: center">標頭檔案</td>
+      <td style="text-align: center">頭文件</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">cpp file</td>
+      <td style="text-align: center">原始檔案</td>
+      <td style="text-align: center">源代碼</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">STL</td>
+      <td style="text-align: center">函式庫</td>
+      <td style="text-align: center">標準庫</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="資料型態相關">資料型態相關</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">英文</th>
+      <th style="text-align: center">台灣</th>
+      <th style="text-align: center">大陸</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Data</td>
       <td style="text-align: center">資料</td>
       <td style="text-align: center">數據</td>
     </tr>
@@ -410,7 +458,7 @@
     </tr>
     <tr>
       <td style="text-align: center">%d %s</td>
-      <td style="text-align: center">格式字串</td>
+      <td style="text-align: center">格式化字串或格式化數值輸出</td>
       <td style="text-align: center">占位符</td>
     </tr>
     <tr>
@@ -428,36 +476,20 @@
       <td style="text-align: center">巢狀</td>
       <td style="text-align: center">嵌套</td>
     </tr>
+  </tbody>
+</table>
+
+<h2 id="變數相關">變數相關</h2>
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align: center">Pointer</td>
-      <td style="text-align: center">指標</td>
-      <td style="text-align: center">指針</td>
+      <th style="text-align: center">英文</th>
+      <th style="text-align: center">台灣</th>
+      <th style="text-align: center">大陸</th>
     </tr>
-    <tr>
-      <td style="text-align: center">pointer to pointer**</td>
-      <td style="text-align: center">指標的指標，雙重指標</td>
-      <td style="text-align: center">二級指針</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Function</td>
-      <td style="text-align: center">函式</td>
-      <td style="text-align: center">函數</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">callback</td>
-      <td style="text-align: center">回呼函式</td>
-      <td style="text-align: center">回調函數</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">return</td>
-      <td style="text-align: center">函式傳回值</td>
-      <td style="text-align: center">函數返回值</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Functor</td>
-      <td style="text-align: center">物件函式</td>
-      <td style="text-align: center">仿函數</td>
-    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td style="text-align: center">Variable</td>
       <td style="text-align: center">變數</td>
@@ -479,26 +511,6 @@
       <td style="text-align: center">左值</td>
     </tr>
     <tr>
-      <td style="text-align: center">Wild pointers</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">野指針</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Dangling pointers</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">懸空指針</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Pointer to Const</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">常量指針</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Const Pointer</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">指針常量</td>
-    </tr>
-    <tr>
       <td style="text-align: center">Local Variable</td>
       <td style="text-align: center">區域變數</td>
       <td style="text-align: center">局部變量</td>
@@ -514,9 +526,9 @@
       <td style="text-align: center">表達式</td>
     </tr>
     <tr>
-      <td style="text-align: center">Template</td>
-      <td style="text-align: center">樣板</td>
-      <td style="text-align: center">模板</td>
+      <td style="text-align: center">Parameter</td>
+      <td style="text-align: center">參數</td>
+      <td style="text-align: center">形參</td>
     </tr>
     <tr>
       <td style="text-align: center">Argument</td>
@@ -524,59 +536,9 @@
       <td style="text-align: center">實參</td>
     </tr>
     <tr>
-      <td style="text-align: center">Parameter</td>
-      <td style="text-align: center">參數</td>
-      <td style="text-align: center">形參</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Memory</td>
-      <td style="text-align: center">記憶體</td>
-      <td style="text-align: center">內存</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Dynamic memory allocation</td>
-      <td style="text-align: center">動態配置記憶體</td>
-      <td style="text-align: center">動態內存分配</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">free</td>
-      <td style="text-align: center">記憶體回收</td>
-      <td style="text-align: center">記憶體釋放</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Stack</td>
-      <td style="text-align: center">堆疊</td>
-      <td style="text-align: center">棧</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Heap</td>
-      <td style="text-align: center">堆積</td>
-      <td style="text-align: center">堆</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">head file</td>
-      <td style="text-align: center">標頭檔案</td>
-      <td style="text-align: center">頭文件</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">cpp file</td>
-      <td style="text-align: center">原始檔案</td>
-      <td style="text-align: center">源代碼</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Array</td>
-      <td style="text-align: center">陣列</td>
-      <td style="text-align: center">數組</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">index</td>
-      <td style="text-align: center">索引</td>
-      <td style="text-align: center">下標</td>
-    </tr>
-    <tr>
       <td style="text-align: center">define</td>
       <td style="text-align: center">宣告</td>
-      <td style="text-align: center">聲明，定義</td>
+      <td style="text-align: center">聲明</td>
     </tr>
     <tr>
       <td style="text-align: center">#define</td>
@@ -599,16 +561,6 @@
       <td style="text-align: center">賦值</td>
     </tr>
     <tr>
-      <td style="text-align: center">constructor</td>
-      <td style="text-align: center">建構式或建構子</td>
-      <td style="text-align: center">構造方法</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">deconstructor</td>
-      <td style="text-align: center">解構式或解構子</td>
-      <td style="text-align: center">析構方法或析構函數</td>
-    </tr>
-    <tr>
       <td style="text-align: center">conversion</td>
       <td style="text-align: center">轉型</td>
       <td style="text-align: center">轉換</td>
@@ -623,9 +575,121 @@
       <td style="text-align: center">自動轉型</td>
       <td style="text-align: center">隱式轉換</td>
     </tr>
+  </tbody>
+</table>
+
+<h2 id="陣列相關">陣列相關</h2>
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align: center">*</td>
-      <td style="text-align: center">取值運算子或間接運算子indirection</td>
+      <th style="text-align: center">英文</th>
+      <th style="text-align: center">台灣</th>
+      <th style="text-align: center">大陸</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Array</td>
+      <td style="text-align: center">陣列</td>
+      <td style="text-align: center">數組</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">index</td>
+      <td style="text-align: center">索引</td>
+      <td style="text-align: center">下標</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">row</td>
+      <td style="text-align: center">列</td>
+      <td style="text-align: center">行</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">column</td>
+      <td style="text-align: center">行</td>
+      <td style="text-align: center">列</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="函式相關">函式相關</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">英文</th>
+      <th style="text-align: center">台灣</th>
+      <th style="text-align: center">大陸</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Function</td>
+      <td style="text-align: center">函式</td>
+      <td style="text-align: center">函數</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">callback</td>
+      <td style="text-align: center">回呼函式</td>
+      <td style="text-align: center">回調函數</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">return</td>
+      <td style="text-align: center">函式傳回值</td>
+      <td style="text-align: center">函數返回值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Functor</td>
+      <td style="text-align: center">物件函式</td>
+      <td style="text-align: center">仿函數</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="指標相關">指標相關</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">英文</th>
+      <th style="text-align: center">台灣</th>
+      <th style="text-align: center">大陸</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Pointer</td>
+      <td style="text-align: center">指標</td>
+      <td style="text-align: center">指針</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">pointer to pointer**</td>
+      <td style="text-align: center">指標的指標，雙重指標，指指標</td>
+      <td style="text-align: center">二級指針</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Wild pointers</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">野指針</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Dangling pointers</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">懸空指針</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Pointer to Const</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">常量指針</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Const Pointer</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">指針常量</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">indirection*</td>
+      <td style="text-align: center">取值運算子或間接運算子</td>
       <td style="text-align: center">解引用運算符</td>
     </tr>
     <tr>
@@ -653,10 +717,73 @@
       <td style="text-align: center">傳參考</td>
       <td style="text-align: center">傳引用</td>
     </tr>
+  </tbody>
+</table>
+
+<h2 id="記憶體相關">記憶體相關</h2>
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align: center">STL</td>
-      <td style="text-align: center">函式庫</td>
-      <td style="text-align: center">標準庫</td>
+      <th style="text-align: center">英文</th>
+      <th style="text-align: center">台灣</th>
+      <th style="text-align: center">大陸</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Memory</td>
+      <td style="text-align: center">記憶體</td>
+      <td style="text-align: center">內存</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Dynamic memory allocation</td>
+      <td style="text-align: center">動態配置記憶體</td>
+      <td style="text-align: center">動態內存分配</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">free</td>
+      <td style="text-align: center">記憶體回收</td>
+      <td style="text-align: center">記憶體釋放</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Stack</td>
+      <td style="text-align: center">堆疊</td>
+      <td style="text-align: center">棧</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Heap</td>
+      <td style="text-align: center">堆積</td>
+      <td style="text-align: center">堆</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="物件相關">物件相關</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">英文</th>
+      <th style="text-align: center">台灣</th>
+      <th style="text-align: center">大陸</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Template</td>
+      <td style="text-align: center">樣板</td>
+      <td style="text-align: center">模板</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">constructor</td>
+      <td style="text-align: center">建構式或建構子</td>
+      <td style="text-align: center">構造方法</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">deconstructor</td>
+      <td style="text-align: center">解構式或解構子</td>
+      <td style="text-align: center">析構方法或析構函數</td>
     </tr>
   </tbody>
 </table>
@@ -851,7 +978,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-17 15:57:31 +0800"
+        "time": "2024-06-18 16:10:07 +0800"
     },
     "basePath": "",
     "book": {

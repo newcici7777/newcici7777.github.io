@@ -151,7 +151,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/block" onclick="pageScrollToTop(this)"> 程式碼區塊</a>
+    	<a href="/pages/c/basic/block" onclick="pageScrollToTop(this)"> 程式碼區塊或函式主體(Body)</a>
         
             
         </li></ul></li>
@@ -227,17 +227,17 @@
 	
 	
 	<li class="active">
-    	<a href="/pages/c/pointer/array" onclick="pageScrollToTop(this)"> 陣列</a>
+    	<a href="/pages/c/array/array" onclick="pageScrollToTop(this)"> 陣列</a>
         
             
-                <ul><li><a href="#初始化值" onclick="mobilePageScrollToAnchor(this)" >初始化值</a></li><li><a href="#陣列中有多少元素" onclick="mobilePageScrollToAnchor(this)" >陣列中有多少元素？</a></li><li><a href="#陣列中每一個值都初始化為整數0" onclick="mobilePageScrollToAnchor(this)" >陣列中每一個值都初始化為整數0</a></li><li><a href="#memset-陣列中每個元素設為整數0" onclick="mobilePageScrollToAnchor(this)" >memset() 陣列中每個元素設為整數0</a></li><li><a href="#memcpy-複製陣列記憶體內容複製" onclick="mobilePageScrollToAnchor(this)" >memcpy() 複製陣列，記憶體內容複製</a></li></ul>
+                <ul><li><a href="#初始化值" onclick="mobilePageScrollToAnchor(this)" >初始化值</a></li><li><a href="#陣列長度" onclick="mobilePageScrollToAnchor(this)" >陣列長度</a><ul><li><a href="#常數" onclick="mobilePageScrollToAnchor(this)" >常數</a></li><li><a href="#運算式" onclick="mobilePageScrollToAnchor(this)" >運算式</a></li></ul></li><li><a href="#陣列中有多少元素" onclick="mobilePageScrollToAnchor(this)" >陣列中有多少元素？</a></li><li><a href="#陣列中每一個值都初始化為整數0" onclick="mobilePageScrollToAnchor(this)" >陣列中每一個值都初始化為整數0</a></li><li><a href="#memset-陣列中每個元素設為整數0" onclick="mobilePageScrollToAnchor(this)" >memset() 陣列中每個元素設為整數0</a></li><li><a href="#memcpy-複製陣列記憶體內容複製" onclick="mobilePageScrollToAnchor(this)" >memcpy() 複製陣列，記憶體內容複製</a><ul><li><a href="#複製全部元素" onclick="mobilePageScrollToAnchor(this)" >複製全部元素</a></li><li><a href="#複製部分元素" onclick="mobilePageScrollToAnchor(this)" >複製部分元素</a></li></ul></li></ul>
 
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+    	<a href="/pages/c/array/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
         
             
         </li>
@@ -251,10 +251,27 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/qsort" onclick="pageScrollToTop(this)"> qsort排序</a>
+    	<a href="/pages/c/array/qsort" onclick="pageScrollToTop(this)"> qsort排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/array2dimen" onclick="pageScrollToTop(this)"> 二維陣列</a>
         
             
         </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 字串 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/charArray" onclick="pageScrollToTop(this)"> char 字串</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 記憶體 </a><ul>
@@ -356,7 +373,7 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/pointer/array">陣列</h1>
+                        <h1 id="/pages/c/array/array">陣列</h1>
                     
 
                     <h3 id="初始化值">初始化值</h3>
@@ -396,6 +413,89 @@ arr[9] = 0
 </code></pre></div></div>
 
 <p>資料型態 陣列名[] = {值1, 值2, 值3 …};</p>
+
+<h3 id="陣列長度">陣列長度</h3>
+
+<p>陣列的長度可以用常數、運算式。</p>
+
+<h4 id="常數">常數</h4>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="c1">//使用常數</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">ARR_MAX</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="n">ARR_MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arr[0] = 0
+arr[1] = 1
+arr[2] = 2
+arr[3] = 3
+arr[4] = 0
+arr[5] = 0
+arr[6] = 0
+arr[7] = 0
+arr[8] = 0
+arr[9] = 0
+</code></pre></div></div>
+
+<h4 id="運算式">運算式</h4>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="c1">//使用運算式設定陣列長度</span>
+    <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="k">sizeof</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
+    <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr size = "</span> <span class="o">&lt;&lt;</span> <span class="n">size</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arr size = 4
+arr[0] = 0
+arr[1] = 1
+arr[2] = 2
+arr[3] = 3
+</code></pre></div></div>
 
 <h3 id="陣列中有多少元素">陣列中有多少元素？</h3>
 
@@ -531,6 +631,7 @@ arr[9] = 0
 
 <h3 id="memcpy-複製陣列記憶體內容複製">memcpy() 複製陣列，記憶體內容複製</h3>
 
+<h4 id="複製全部元素">複製全部元素</h4>
 <p>陣列中全部的元素(來源陣列)複製到另一個大小相同的陣列(目標陣列)。</p>
 
 <p>需要引入函式庫#include <string.h>
@@ -539,7 +640,7 @@ void* memcpy(void* dest, const void* src, size_t n)</string.h></p>
 <ul>
   <li>參數1 : 目標陣列</li>
   <li>參數2 : 來源陣列</li>
-  <li>參數3 : 陣列記憶體大小</li>
+  <li>參數3 : 陣列記憶體大小，或使用者自行定義要複製的byte。</li>
 </ul>
 
 <figure class="highlight">
@@ -579,6 +680,96 @@ void* memcpy(void* dest, const void* src, size_t n)</string.h></p>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arr[0] = 1
+arr[1] = 2
+arr[2] = 3
+arr[3] = 4
+arr[4] = 5
+arr[5] = 6
+arr[6] = 7
+arr[7] = 8
+arr[8] = 9
+arr[9] = 10
+arr1[0] = 1
+arr1[1] = 2
+arr1[2] = 3
+arr1[3] = 4
+arr1[4] = 5
+arr1[5] = 6
+arr1[6] = 7
+arr1[7] = 8
+arr1[8] = 9
+arr1[9] = 10
+</code></pre></div></div>
+
+<h4 id="複製部分元素">複製部分元素</h4>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//來源陣列</span>
+    <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">};</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">//目標陣列</span>
+    <span class="c1">//元素全初始化為整數0</span>
+    <span class="kt">int</span> <span class="n">arr1</span><span class="p">[</span><span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">)]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+    <span class="c1">//只複製arr陣列8byte的元素</span>
+    <span class="c1">//(8byte/每個元素是4byte)=2，只複製2個元素</span>
+    <span class="n">memcpy</span><span class="p">(</span><span class="n">arr1</span><span class="p">,</span> <span class="n">arr</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr1</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr1["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arr[0] = 1
+arr[1] = 2
+arr[2] = 3
+arr[3] = 4
+arr[4] = 5
+arr[5] = 6
+arr[6] = 7
+arr[7] = 8
+arr[8] = 9
+arr[9] = 10
+arr1[0] = 1
+arr1[1] = 2
+arr1[2] = 0
+arr1[3] = 0
+arr1[4] = 0
+arr1[5] = 0
+arr1[6] = 0
+arr1[7] = 0
+arr1[8] = 0
+arr1[9] = 0
+</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -650,7 +841,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/c/pointer/pointerToArray" class="navigation navigation-next navigation-unique" aria-label="Next page: 一維指標陣列">
+                        <a href="/pages/c/array/pointerToArray" class="navigation navigation-next navigation-unique" aria-label="Next page: 一維指標陣列">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -668,11 +859,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "指標運算",
+            "title": "一維指標陣列",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/pointer/pointerArithmetic.md",
-            "ref": "_pages/c/pointer/pointerArithmetic.md",
+            "path": "_pages/c/array/pointerToArray.md",
+            "ref": "_pages/c/array/pointerToArray.md",
             "articles": []
         },
         
@@ -764,13 +955,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/pointer/array.md",
+        "path": "_pages/c/array/array.md",
         "mtime": "2024-06-05 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-17 15:57:31 +0800"
+        "time": "2024-06-18 16:10:07 +0800"
     },
     "basePath": "",
     "book": {
