@@ -226,7 +226,7 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指向陣列的指標 </a><ul>
 	
 	
 	<li class="">
@@ -237,14 +237,14 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/array/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+    	<a href="/pages/c/array/pointerToArray" onclick="pageScrollToTop(this)"> 一維陣列與指標</a>
         
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/dynamicMemory/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+    	<a href="/pages/c/array/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
         
             
         </li>
@@ -261,7 +261,14 @@
     	<a href="/pages/c/array/array2dimen" onclick="pageScrollToTop(this)"> 二維陣列</a>
         
             
-        </li></ul></li></ul></li>
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/arrayOfPointers" onclick="pageScrollToTop(this)"> 指標陣列存放多個記憶體位址</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 字串 </a><ul>
@@ -269,6 +276,30 @@
 	
 	<li class="">
     	<a href="/pages/c/array/charArray" onclick="pageScrollToTop(this)"> char 字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/pointerCharArr" onclick="pageScrollToTop(this)"> char字串指標</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 參考 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/reference" onclick="pageScrollToTop(this)"> 參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/callByRef" onclick="pageScrollToTop(this)"> 傳參考</a>
         
             
         </li></ul></li>
@@ -388,19 +419,15 @@
 3
 4
 5
+6
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">var1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="c1">//將var1傳到func1()函式中，而var1就是引數Argument</span>
     <span class="n">func1</span><span class="p">(</span><span class="n">var1</span><span class="p">);</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
-
-<p>第3行，將var1傳到func1()函式中，而var1就是引數Argument。</p>
-
-<p>台灣稱Argument為引數。</p>
-
-<p>大陸稱Argument為實參。</p>
 
 <h3 id="參數-parameter">參數 Parameter</h3>
 
@@ -410,17 +437,13 @@
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span> <span class="n">param1</span><span class="p">)</span> <span class="p">{</span>
+4
+</pre></td><td class="code"><pre><span class="c1">//函式接收到來自外面傳進來的變數，變數名param1，而param1就是參數</span>
+<span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span> <span class="n">param1</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"param1="</span> <span class="o">&lt;&lt;</span> <span class="n">param1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
-
-<p>第1行，函式接收到來自外面傳進來的變數，變數名param1，而param1就是參數。</p>
-
-<p>台灣稱Parameter為參數。</p>
-
-<p>大陸稱Parameter為形參。</p>
 
 <h2 id="修改傳進來的參數">修改傳進來的參數</h2>
 
@@ -475,27 +498,27 @@ param1=10
 9
 10
 11
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">param1</span><span class="p">)</span> <span class="p">{</span>
+12
+13
+14
+15
+</pre></td><td class="code"><pre><span class="c1">//函式的參數是指標，代表參數是位址</span>
+<span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">param1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//透過取值運算子*,取出位址存放的內容</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"param1="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">param1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//使用`*指標 = 修改內容`，修改指標的內容</span>
     <span class="o">*</span><span class="n">param1</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">var1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"修改前 var1 ="</span> <span class="o">&lt;&lt;</span> <span class="n">var1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//使用取位址運算子&amp;，取出var1變數的記憶體開始位址，將位址作為引數Argument傳進函式fun1()</span>
     <span class="n">func1</span><span class="p">(</span><span class="o">&amp;</span><span class="n">var1</span><span class="p">);</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"修改後 var1 ="</span> <span class="o">&lt;&lt;</span> <span class="n">var1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
-
-<p>第1行，函式的參數是指標，代表參數是位址。</p>
-
-<p>第2行，透過取值運算子*,取出位址存放的內容。</p>
-
-<p>第3行，使用<code class="language-plaintext highlighter-rouge">*指標 = 修改內容</code>，修改指標的內容。</p>
-
-<p>第8行，使用取位址運算子&amp;，取出var1變數的記憶體開始位址，將位址作為引數Argument傳進函式fun1()。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 修改前 var1 =10
@@ -590,12 +613,30 @@ param1=10
 48
 49
 50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="c1">//宣告Student類別</span>
 <span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
+    <span class="c1">//Student建構式，將參數設給私有成員name, mathScore, engScore, historyScore</span>
     <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">double</span> <span class="n">mathScore</span><span class="p">,</span> <span class="kt">double</span> <span class="n">engScore</span><span class="p">,</span> <span class="kt">double</span> <span class="n">historyScore</span><span class="p">)</span>
     <span class="o">:</span><span class="n">name</span><span class="p">(</span><span class="n">name</span><span class="p">),</span><span class="n">mathScore</span><span class="p">(</span><span class="n">mathScore</span><span class="p">),</span><span class="n">engScore</span><span class="p">(</span><span class="n">engScore</span><span class="p">),</span><span class="n">historyScore</span><span class="p">(</span><span class="n">historyScore</span><span class="p">){}</span>
+
+    <span class="c1">//取出name, mathScore, engScore, historyScore公有方法</span>
     <span class="n">string</span> <span class="n">getName</span><span class="p">(){</span>
         <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
     <span class="p">}</span>
@@ -609,14 +650,17 @@ param1=10
         <span class="k">return</span> <span class="n">historyScore</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="nl">private:</span>
+    <span class="c1">//私有成員屬性</span>
     <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
     <span class="kt">double</span> <span class="n">mathScore</span><span class="p">;</span>
     <span class="kt">double</span> <span class="n">engScore</span><span class="p">;</span>
     <span class="kt">double</span> <span class="n">historyScore</span><span class="p">;</span>
 <span class="p">};</span>
 
+<span class="c1">//宣告函式，參數為Student陣列，陣列大小，maxMax指標,engMax指標,historyMax指標</span>
 <span class="kt">void</span> <span class="n">getMax</span><span class="p">(</span><span class="n">Student</span> <span class="n">studentArr</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">arrSize</span><span class="p">,</span> <span class="kt">double</span><span class="o">*</span> <span class="n">mathMax</span><span class="p">,</span> <span class="kt">double</span><span class="o">*</span> <span class="n">engMax</span><span class="p">,</span> <span class="kt">double</span><span class="o">*</span> <span class="n">historyMax</span><span class="p">){</span>
     <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arrSize</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//找出數學 英文 歷史最大的分數</span>
         <span class="k">if</span><span class="p">(</span><span class="n">studentArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getMathScore</span><span class="p">()</span> <span class="o">&gt;</span> <span class="o">*</span><span class="n">mathMax</span><span class="p">)</span>
             <span class="o">*</span><span class="n">mathMax</span> <span class="o">=</span> <span class="n">studentArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getMathScore</span><span class="p">();</span>
         <span class="k">if</span><span class="p">(</span><span class="n">studentArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getEngScore</span><span class="p">()</span> <span class="o">&gt;</span> <span class="o">*</span><span class="n">engMax</span><span class="p">)</span>
@@ -627,14 +671,21 @@ param1=10
 <span class="p">}</span>
 
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//建立3個學生物件，利用名字,數學英文歷史成績建立物件</span>
     <span class="n">Student</span> <span class="n">studentArr</span><span class="p">[]</span> <span class="o">=</span>
     <span class="p">{</span><span class="n">Student</span><span class="p">(</span><span class="s">"Mary"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span>
      <span class="n">Student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">),</span>
      <span class="n">Student</span><span class="p">(</span><span class="s">"Lisa"</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">10</span><span class="p">)};</span>
+
+    <span class="c1">//宣告三個存最大數學 英文 歷史成績的指標</span>
     <span class="kt">double</span><span class="o">*</span> <span class="n">mathMax</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">double</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
     <span class="kt">double</span><span class="o">*</span> <span class="n">engMax</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">double</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
     <span class="kt">double</span><span class="o">*</span> <span class="n">historyMax</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">double</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+    <span class="c1">//將Student陣列，陣列大小，最大數學 英文 歷史成績的指標傳入getMax函式</span>
     <span class="n">compare</span><span class="p">(</span><span class="n">studentArr</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">mathMax</span><span class="p">,</span> <span class="n">engMax</span><span class="p">,</span> <span class="n">historyMax</span><span class="p">);</span>
+
+    <span class="c1">//印出各科最大分數</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"mathMax = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">mathMax</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"mathEng = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">engMax</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"mathHistory = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">historyMax</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
@@ -642,26 +693,6 @@ param1=10
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
-
-<p>第2行，宣告Student類別。</p>
-
-<p>第4行，Student建構式，將參數設給私有成員name, mathScore, engScore, historyScore。</p>
-
-<p>第7,10,13,16行，取出name, mathScore, engScore, historyScore公有方法。</p>
-
-<p>第20,21,22,23行，私有成員屬性name, mathScore, engScore, historyScore。</p>
-
-<p>第26行，宣告函式，參數為Student陣列，陣列大小，maxMax指標,engMax指標,historyMax指標</p>
-
-<p>第29,31,33行，找出數學/英文/歷史最大的分數。</p>
-
-<p>第39行，建立3個學生物件，利用名字,數學英文歷史成績建立物件。</p>
-
-<p>第44,45,46行，宣告三個存最大數學/英文/歷史成績的指標。</p>
-
-<p>第47,將Student陣列，陣列大小，最大數學/英文/歷史成績的指標傳入getMax函式。</p>
-
-<p>第48,49,50行，印出各科最大分數。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 mathMax = 70
@@ -862,7 +893,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-18 16:10:07 +0800"
+        "time": "2024-06-21 13:26:06 +0800"
     },
     "basePath": "",
     "book": {

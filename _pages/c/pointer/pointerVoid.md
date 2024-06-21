@@ -9,30 +9,24 @@ keywords: c++, pointer, void*, void
 函式的參數為void*指標，表示任何資料型態的指標(位址)都可以傳進函式，而且不需要轉型。
 
 {% highlight c++ linenos %}
+//宣告printAddr的函式，參數資料型態為void*指標
 void printAddr(void* p) {
+    //印出位址
     cout << p << endl;
 }
 int main() {
     int i = 10;
+    //將整數i變數的位址傳入
     printAddr(&i);
     char c = 'a';
+    //將字元c變數的位址傳入
     printAddr(&c);
     double d = 150.222;
+    //將浮點數d變數的位址傳入
     printAddr(&d);
     return 0;
 }
 {% endhighlight %}
-
-第1行，宣告printAddr的函式，參數資料型態為void*指標。
-
-第2行，印出位址。
-
-第6行，將整數i變數的位址傳入。
-
-第8行，將字元c變數的位址傳入。
-
-第10行，將浮點數d變數的位址傳入。
-
 
 ```
 執行結果
@@ -73,14 +67,15 @@ int *num = (int *)malloc(1 * 1024 * 1024);//1byte*1024 = 1kb ->1kb*1024=1mb
 
 {% highlight c++ linenos %}
 void printAddr(void* p) {
+    //編譯失敗，不能對p指標使用取值運算子*，因為它是void*指標資料型態，必須轉型後才能對指標取出內容
     cout << *p << endl;
 }
 {% endhighlight %}
 
-第2行，編譯失敗，不能對p指標使用取值運算子*，因為它是void*指標資料型態，必須轉型後才能對指標取出內容。
 
 {% highlight c++ linenos %}
 void printAddr(void* p) {
+    //先將p指標轉型成char*指標，接著使用`取值運算子*`取出指標位址中的內容
     cout << *(char*)p << endl;
 }
 int main() {
@@ -89,8 +84,6 @@ int main() {
     return 0;
 }
 {% endhighlight %}
-
-第2行，先將p指標轉型成char*指標，接著使用`取值運算子*`取出指標位址中的內容。
 
 ```
 執行結果

@@ -178,7 +178,7 @@
     	<a href="/pages/c/pointer/pointerConst" onclick="pageScrollToTop(this)"> const與指標</a>
         
             
-                <ul><li><a href="#pointer-to-const-const" onclick="mobilePageScrollToAnchor(this)" >Pointer to Const (const*)</a><ul><li><a href="#const右邊是星號" onclick="mobilePageScrollToAnchor(this)" >const右邊是星號*</a></li><li><a href="#可以修改指標位址" onclick="mobilePageScrollToAnchor(this)" >可以修改指標位址</a></li></ul></li><li><a href="#const-pointer-const-指標名" onclick="mobilePageScrollToAnchor(this)" >Const Pointer (const 指標名)</a><ul><li><a href="#const右邊是指標名" onclick="mobilePageScrollToAnchor(this)" >const右邊是指標名</a></li><li><a href="#可以修改內容" onclick="mobilePageScrollToAnchor(this)" >可以修改內容</a></li></ul></li></ul>
+                <ul><li><a href="#pointer-to-const-const" onclick="mobilePageScrollToAnchor(this)" >Pointer to Const (const*)</a><ul><li><a href="#const右邊是星號" onclick="mobilePageScrollToAnchor(this)" >const右邊是星號*</a></li><li><a href="#可以修改指標指向的記憶體位址" onclick="mobilePageScrollToAnchor(this)" >可以修改指標指向的記憶體位址</a></li></ul></li><li><a href="#const-pointer-const-指標名" onclick="mobilePageScrollToAnchor(this)" >Const Pointer (const 指標名)</a><ul><li><a href="#const右邊是指標名" onclick="mobilePageScrollToAnchor(this)" >const右邊是指標名</a></li><li><a href="#可以修改內容" onclick="mobilePageScrollToAnchor(this)" >可以修改內容</a></li></ul></li></ul>
 
             
         </li>
@@ -226,7 +226,7 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指向陣列的指標 </a><ul>
 	
 	
 	<li class="">
@@ -237,14 +237,14 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/array/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+    	<a href="/pages/c/array/pointerToArray" onclick="pageScrollToTop(this)"> 一維陣列與指標</a>
         
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/dynamicMemory/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+    	<a href="/pages/c/array/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
         
             
         </li>
@@ -261,7 +261,14 @@
     	<a href="/pages/c/array/array2dimen" onclick="pageScrollToTop(this)"> 二維陣列</a>
         
             
-        </li></ul></li></ul></li>
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/arrayOfPointers" onclick="pageScrollToTop(this)"> 指標陣列存放多個記憶體位址</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 字串 </a><ul>
@@ -269,6 +276,30 @@
 	
 	<li class="">
     	<a href="/pages/c/array/charArray" onclick="pageScrollToTop(this)"> char 字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/pointerCharArr" onclick="pageScrollToTop(this)"> char字串指標</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 參考 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/reference" onclick="pageScrollToTop(this)"> 參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/callByRef" onclick="pageScrollToTop(this)"> 傳參考</a>
         
             
         </li></ul></li>
@@ -436,7 +467,7 @@ var1=10,p=10
 
 <p>第3行，<code class="language-plaintext highlighter-rouge">int const * p</code>可以更改成<code class="language-plaintext highlighter-rouge">const int* p</code>。</p>
 
-<h3 id="可以修改指標位址">可以修改指標位址</h3>
+<h3 id="可以修改指標指向的記憶體位址">可以修改指標指向的記憶體位址</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -475,7 +506,7 @@ var2=20,p=20
 
 <h3 id="const右邊是指標名">const右邊是指標名</h3>
 
-<p>代表指標名是常數，需要初始化常數名(初始化設位址)，不能再更改指標位址。</p>
+<p>代表指標名是常數，需要初始化常數名(初始化設位址)，不能再更改指標指向的記憶體位址。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -718,7 +749,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-18 16:10:07 +0800"
+        "time": "2024-06-21 13:26:06 +0800"
     },
     "basePath": "",
     "book": {

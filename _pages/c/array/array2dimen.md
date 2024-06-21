@@ -75,7 +75,7 @@ arr size = 24
 ```
 
 
-## 2維陣列與指標運用
+## 二維陣列轉成一維陣列
 
 - 2維陣列記憶體位址是連續
 - 把陣列名指派給指標，是把陣列[0][0]的記憶體位址指派給指標
@@ -152,7 +152,7 @@ arr[1][2]位址 = 140702053823588
 
 可以使用指標把二維陣列轉成一維指標陣列，印出值。
 
-## 二維陣列指標
+## 指標指向二維陣列
 
 二維陣列可以解釋為，一維陣列，裡面每一個元素又指向一維陣列。
 
@@ -174,14 +174,22 @@ int main() {
 }
 {% endhighlight %}
 
-上一個程式碼例子，二維陣列的指標型態是int[2][3]，無法轉成int*
+[上一個程式碼例子](#二維陣列轉成一維陣列) ，指標是指向二維陣列int[2][3]，無法轉成指向一維陣列的指標int*，所以要強制轉型成指向一維陣列的指標`(int*)二維陣列變數名`
+
+
+以下程式碼原本指向一維陣列的指標，指向二維陣列會編譯錯誤。
+
 ```
+//二維陣列
 int arr[2][3] = {0};
+//原本指向一維陣列的指標，直接指向二維陣列會編譯錯誤
 int* p = arr;
 ```
->> Cannot initialize a variable of type 'int *' with an lvalue of type 'int[2][3]'
 
-必須轉型，才能轉成int*指標。
+> Cannot initialize a variable of type 'int *' with an lvalue of type 'int[2][3]'
+
+
+二維陣列先轉成一維陣列，使用`(int*)`，再讓指標指向轉型成一維的陣列。
 
 ```
 int arr[2][3] = {0};
@@ -218,16 +226,29 @@ int main() {
 p[0][0] = 1	p[0][0] = 2	p[0][0] = 3	
 p[1][1] = 4	p[1][1] = 5	p[1][1] = 6
 ```
-## 三維陣列指標
-
-三維陣列可以解釋為，一維陣列，裡面每一個元素又指向一維陣列，裡面每一個元素又指向一維陣列。
+## 指標指向三維陣列
 
 宣告方式
 
 ```
-資料類型 (*指標變數)[有幾個一維陣列在裡面][一維陣列大小] = 三維陣列變數名;
+資料類型 (*指標變數)[陣列個數][元素個數] = 三維陣列變數名;
 ```
 
+三維陣列傳函式的方法有二種
+
+- 指標方式 
+
+```
+void func(int (*p)[2][3], int len);
+```
+
+- 陣列方式 
+
+```
+void func(int p[][2][3], int len);
+```
+
+### 印出陣列元素
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -260,4 +281,53 @@ p[0][1][0] = 4	p[0][1][1] = 5	p[0][1][2] = 6
 p[1][0][0] = 7	p[1][0][1] = 8	p[1][0][2] = 9	
 p[1][1][0] = 10	p[1][1][1] = 11	p[1][1][2] = 12	
 
+```
+
+### 修改陣列元素
+{% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+const int firstMax = 2;
+const int secondMax = 2;
+const int thirdMax = 3;
+void modifyArr(int p[][secondMax][thirdMax], int len) {
+    for(int i = 0; i < len; i++) {
+        for(int j = 0; j < secondMax; j++) {
+            for(int k = 0; k < thirdMax; k++) {
+                //修改指標記憶體位址的值
+                p[i][j][k] += 10;
+            }
+        }// end of j
+    }// end of i
+}
+void printArr(int (*p)[secondMax][thirdMax], int len) {
+    for(int i = 0; i < len; i++) {
+        for(int j = 0; j < secondMax; j++) {
+            for(int k = 0; k < thirdMax; k++) {
+                cout << "p[" << i << "][" << j << "][" << k << "] = " << p[i][j][k] << "\t";
+            }
+            cout << endl;
+        }// end of j
+        cout << endl;
+    }//end of  i
+}
+int main() {
+    int arr[firstMax][secondMax][thirdMax] =
+    {
+        { {1,2,3}, {4,5,6} },
+        { {7,8,9}, {10,11,12} }
+    };
+    modifyArr(arr, firstMax);
+    printArr(arr, firstMax);
+    return 0;
+}
+
+{% endhighlight %}
+
+```
+p[0][0][0] = 11	p[0][0][1] = 12	p[0][0][2] = 13	
+p[0][1][0] = 14	p[0][1][1] = 15	p[0][1][2] = 16	
+
+p[1][0][0] = 17	p[1][0][1] = 18	p[1][0][2] = 19	
+p[1][1][0] = 20	p[1][1][1] = 21	p[1][1][2] = 22	
 ```

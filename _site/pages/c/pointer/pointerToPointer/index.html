@@ -226,7 +226,7 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指向陣列的指標 </a><ul>
 	
 	
 	<li class="">
@@ -237,14 +237,14 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/array/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+    	<a href="/pages/c/array/pointerToArray" onclick="pageScrollToTop(this)"> 一維陣列與指標</a>
         
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/dynamicMemory/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+    	<a href="/pages/c/array/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
         
             
         </li>
@@ -261,7 +261,14 @@
     	<a href="/pages/c/array/array2dimen" onclick="pageScrollToTop(this)"> 二維陣列</a>
         
             
-        </li></ul></li></ul></li>
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/arrayOfPointers" onclick="pageScrollToTop(this)"> 指標陣列存放多個記憶體位址</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 字串 </a><ul>
@@ -269,6 +276,30 @@
 	
 	<li class="">
     	<a href="/pages/c/array/charArray" onclick="pageScrollToTop(this)"> char 字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/pointerCharArr" onclick="pageScrollToTop(this)"> char字串指標</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 參考 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/reference" onclick="pageScrollToTop(this)"> 參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/callByRef" onclick="pageScrollToTop(this)"> 傳參考</a>
         
             
         </li></ul></li>
@@ -466,35 +497,37 @@ i的值 = 40，i的位址 = 0x7ff7bfeff468
 11
 12
 13
+14
+15
+16
+17
+18
+19
+20
+21
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="c1">//宣告一個函式initAddress()，參數為指標的位址，所以使用二個星號**宣告</span>
 <span class="kt">void</span> <span class="nf">initAddress</span><span class="p">(</span><span class="kt">int</span><span class="o">**</span> <span class="n">p</span><span class="p">){</span>
+    <span class="c1">//印出指標的位址</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//動態配置記憶體位址，位址存放的內容為10，使用new會返回動態配置記憶體的位址。使用`取值運算子*指標名 = 新位址`修改指標存放的位址</span>
     <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+    <span class="c1">//印出指標p的位址，印出指標p存放的位址</span>
     <span class="n">cout</span>  <span class="o">&lt;&lt;</span> <span class="s">"p = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">",*p = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//宣告指標p，初始化為nullptr，也就是沒有指向任何位址</span>
     <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="c1">//呼叫函式initAddress，引數為指標p的位址</span>
     <span class="n">initAddress</span><span class="p">(</span><span class="o">&amp;</span><span class="n">p</span><span class="p">);</span>
+
+    <span class="c1">//印出指標p的位址，印出指標p存放的位址，對存放的位址取出內容。</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"指標的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">",指標存放的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">"，對存放的位址取出內容 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
-
-<p>第9行，宣告指標p，初始化為nullptr，也就是沒有指向任何位址。</p>
-
-<p>第10行，呼叫函式initAddress，引數為指標p的位址。</p>
-
-<p>第3行，宣告一個函式initAddress()，參數為指標的位址，所以使用二個星號**宣告。</p>
-
-<p>第4行，印出指標的位址。</p>
-
-<p>第5行，動態配置記憶體位址，位址存放的內容為10，使用new會返回動態配置記憶體的位址。使用<code class="language-plaintext highlighter-rouge">取值運算子*指標名 = 新位址</code>修改指標存放的位址。</p>
-
-<p>第6行，印出指標p的位址，印出指標p存放的位址。</p>
-
-<p>第11行，印出指標p的位址，印出指標p存放的位址，對存放的位址取出內容。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 p = 0x7ff7bfeff460
@@ -592,8 +625,8 @@ window.MathJax = {
             "title": "陣列與動態配置記憶體",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/dynamicMemory/dynamicArrays.md",
-            "ref": "_pages/c/dynamicMemory/dynamicArrays.md",
+            "path": "_pages/c/array/dynamicArrays.md",
+            "ref": "_pages/c/array/dynamicArrays.md",
             "articles": []
         },
         
@@ -691,7 +724,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-18 16:10:07 +0800"
+        "time": "2024-06-21 13:26:06 +0800"
     },
     "basePath": "",
     "book": {

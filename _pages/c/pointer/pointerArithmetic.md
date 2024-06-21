@@ -13,40 +13,31 @@ keywords: c++, Pointer arithmetic
 using namespace std;
 int main() {
     char c;
+    //印出char的大小
     cout << "sizeof(char) = " << sizeof(c) << endl;
+    //印出變數c的位址
     cout << "c的地址 = " << (long long)&c << endl;
+    //印出變數c的地址往後移動一格的位址，與變數c的位址相差為1byte
     cout << "c的地址 + 1 = " << (long long)(&c + 1) << endl;
     
     int i;
+    //印出int的大小
     cout << "sizeof(int) = " << sizeof(i) << endl;
+    //印出變數i的位址
     cout << "i的地址 = " << (long long)&i << endl;
+    //印出變數i的地址往後移動一格的位址與變數i的位址相差為4byte
     cout << "i的地址 + 1 = " << (long long)(&i + 1) << endl;
     
     double d;
+    //印出double的大小
     cout << "sizeof(double) = " << sizeof(d) << endl;
+    //印出變數d位址
     cout << "d的地址 = " << (long long)&d << endl;
+    //印出變數d的地址往後移動一格的位址，與變數d的位址相差為8byte
     cout << "d的地址 + 1 = " << (long long)(&d + 1) << endl;
     return 0;
 }
 {% endhighlight %}
-第5行，印出char的大小。
-
-第6行，印出變數c的位址。
-
-第7行，印出變數c的地址往後移動一格的位址，與變數c的位址相差為1byte。
-
-第10行，印出int的大小。
-
-第11行，印出變數i的位址。
-
-第12行，印出變數i的地址往後移動一格的位址與變數i的位址相差為4byte。
-
-第15行，印出double的大小。
-
-第16行，印出變數d位址。
-
-第17行，印出變數d的地址往後移動一格的位址，與變數d的位址相差為8byte。
-
 
 ```
 執行結果

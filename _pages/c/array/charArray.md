@@ -43,11 +43,14 @@ arr sizeof = 6
 
 ## 字串常數宣告
 
+以下程式碼，cstr1沒有初始化字串常數，執行程式時會從cstr1的記憶體位址開始輸出值，直到遇到記憶體位址的值為\0(空字元)才會停止輸出，不會因為超過宣告字串的長度而停止印出。
+
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
 int main() {
-    char cstr1[21];
+    char cstr1[21];//cstr1沒有初始化字串常數
+    //遇到記憶體位址的值為\0(空字元)才會停止輸出
     cout << "cstr1 長度 = " << strlen(cstr1) << ",內容 = " << cstr1 << endl;
     //以下結尾編譯器會自動加上\0
     char cstr2[] = "hello";
@@ -77,7 +80,7 @@ cstr5 長度 = 5,內容 = hello
 cstr6 長度 = 5,內容 = hello
 cstr7 長度 = 0,內容 = 
 ```
-cstr1沒有初始化字串，執行程式時會從cstr1的記憶體位址開始印值，直到遇到記憶體位址的值為\0(空字元)才會停止印出，不會因為超過宣告字串的長度而停止印出。
+
 
 ## 二維陣列字串
 
@@ -137,7 +140,7 @@ cstr2 長度 = 0,內容 =
 
 ## 字串拷貝 strcpy
 ```
-strcpy(目標desc，來源src)
+char * strcpy ( char * destination, const char * source );
 ```
 要從來源的字串，拷貝到目標的字串。
 

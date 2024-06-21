@@ -80,7 +80,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Dangling pointers||懸空指針|
 |Pointer to Const||常量指針|
 |Const Pointer||指針常量|
-|indirection*|取值運算子或間接運算子|解引用運算符|
+|*dereferences a pointer|取值運算子或間接運算子(indirection)|解引用運算符|
 |&|取位址運算子|取址運算符|
 |&Reference|參考|引用|
 |call by value|傳值|傳值|

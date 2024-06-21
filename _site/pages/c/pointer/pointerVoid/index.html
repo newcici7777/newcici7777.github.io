@@ -226,7 +226,7 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指向陣列的指標 </a><ul>
 	
 	
 	<li class="">
@@ -237,14 +237,14 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/array/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+    	<a href="/pages/c/array/pointerToArray" onclick="pageScrollToTop(this)"> 一維陣列與指標</a>
         
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/dynamicMemory/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+    	<a href="/pages/c/array/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
         
             
         </li>
@@ -261,7 +261,14 @@
     	<a href="/pages/c/array/array2dimen" onclick="pageScrollToTop(this)"> 二維陣列</a>
         
             
-        </li></ul></li></ul></li>
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/arrayOfPointers" onclick="pageScrollToTop(this)"> 指標陣列存放多個記憶體位址</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 字串 </a><ul>
@@ -269,6 +276,30 @@
 	
 	<li class="">
     	<a href="/pages/c/array/charArray" onclick="pageScrollToTop(this)"> char 字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/pointerCharArr" onclick="pageScrollToTop(this)"> char字串指標</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 參考 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/reference" onclick="pageScrollToTop(this)"> 參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/callByRef" onclick="pageScrollToTop(this)"> 傳參考</a>
         
             
         </li></ul></li>
@@ -393,30 +424,30 @@
 10
 11
 12
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">printAddr</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="c1">//宣告printAddr的函式，參數資料型態為void*指標</span>
+<span class="kt">void</span> <span class="nf">printAddr</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//印出位址</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="c1">//將整數i變數的位址傳入</span>
     <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">i</span><span class="p">);</span>
     <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
+    <span class="c1">//將字元c變數的位址傳入</span>
     <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="p">);</span>
     <span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mf">150.222</span><span class="p">;</span>
+    <span class="c1">//將浮點數d變數的位址傳入</span>
     <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">d</span><span class="p">);</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
-
-<p>第1行，宣告printAddr的函式，參數資料型態為void*指標。</p>
-
-<p>第2行，印出位址。</p>
-
-<p>第6行，將整數i變數的位址傳入。</p>
-
-<p>第8行，將字元c變數的位址傳入。</p>
-
-<p>第10行，將浮點數d變數的位址傳入。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 0x7ff7bfeff468
@@ -462,13 +493,13 @@
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
+4
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">printAddr</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//編譯失敗，不能對p指標使用取值運算子*，因為它是void*指標資料型態，必須轉型後才能對指標取出內容</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
-
-<p>第2行，編譯失敗，不能對p指標使用取值運算子<em>，因為它是void</em>指標資料型態，必須轉型後才能對指標取出內容。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -479,7 +510,9 @@
 6
 7
 8
+9
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">printAddr</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//先將p指標轉型成char*指標，接著使用`取值運算子*`取出指標位址中的內容</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
@@ -489,8 +522,6 @@
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
-
-<p>第2行，先將p指標轉型成char*指標，接著使用<code class="language-plaintext highlighter-rouge">取值運算子*</code>取出指標位址中的內容。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 a
@@ -707,7 +738,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-18 16:10:07 +0800"
+        "time": "2024-06-21 13:26:06 +0800"
     },
     "basePath": "",
     "book": {

@@ -226,7 +226,7 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標陣列 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指向陣列的指標 </a><ul>
 	
 	
 	<li class="">
@@ -237,14 +237,14 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/array/pointerToArray" onclick="pageScrollToTop(this)"> 一維指標陣列</a>
+    	<a href="/pages/c/array/pointerToArray" onclick="pageScrollToTop(this)"> 一維陣列與指標</a>
         
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/dynamicMemory/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+    	<a href="/pages/c/array/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
         
             
         </li>
@@ -261,7 +261,14 @@
     	<a href="/pages/c/array/array2dimen" onclick="pageScrollToTop(this)"> 二維陣列</a>
         
             
-        </li></ul></li></ul></li>
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/arrayOfPointers" onclick="pageScrollToTop(this)"> 指標陣列存放多個記憶體位址</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 字串 </a><ul>
@@ -269,6 +276,30 @@
 	
 	<li class="">
     	<a href="/pages/c/array/charArray" onclick="pageScrollToTop(this)"> char 字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/pointerCharArr" onclick="pageScrollToTop(this)"> char字串指標</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 參考 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/reference" onclick="pageScrollToTop(this)"> 參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/callByRef" onclick="pageScrollToTop(this)"> 傳參考</a>
         
             
         </li></ul></li>
@@ -422,12 +453,14 @@ outer var11 = 100
 9
 10
 11
+12
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">var12</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
     <span class="p">{</span>
         <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
         <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="c1">//在`{}`區塊中，可以讀取外部變數</span>
         <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var12 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var12</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="p">}</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"outer var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
@@ -441,9 +474,9 @@ inner var11 = 10
 inner var12 = 200
 outer var11 = 100
 </code></pre></div></div>
-<p>注意第7行，在<code class="language-plaintext highlighter-rouge">{}</code>區塊中，可以讀取外部變數。</p>
 
 <h3 id="在程式區塊中無法讀取同名的外部變數">在程式區塊中<code class="language-plaintext highlighter-rouge">{}</code>無法讀取同名的外部變數</h3>
+
 <p>因為在<code class="language-plaintext highlighter-rouge">{}</code>區塊中，同名的外部變數會先被暫時隱藏，直到程式執行時離開<code class="language-plaintext highlighter-rouge">{}</code>區塊，區塊內的區域變數被系統回收掉，同名的變數就會將記憶體位置指向外部變數。</p>
 
 <h3 id="程式區塊中讀取跟區域變數同名的全域變數">程式區塊中<code class="language-plaintext highlighter-rouge">{}</code>讀取跟區域變數同名的全域變數</h3>
@@ -462,27 +495,29 @@ outer var11 = 100
 9
 10
 11
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="c1">//定義全域變數var11</span>
+<span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//定義區域變數var11</span>
     <span class="kt">int</span> <span class="n">var12</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
     <span class="p">{</span>
+        <span class="c1">//印出區域變數var11</span>
         <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
         <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
         <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var12 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var12</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+
+        <span class="c1">//印出全域變數var11</span>
         <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"outer var11 = "</span> <span class="o">&lt;&lt;</span> <span class="o">::</span><span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="p">}</span>
-        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
-
-<p>第1行，定義全域變數var11。</p>
-
-<p>第5行，定義區域變數var11。</p>
-
-<p>第6行，印出區域變數var11。</p>
-
-<p>第8行，印出全域變數var11。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 inner var11 = 10
@@ -539,27 +574,23 @@ i = 10
 9
 10
 11
+12
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="c1">//宣告指標</span>
     <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//0就是nullptr 代表沒有指向任何記憶空間</span>
     <span class="p">{</span>
         <span class="kt">int</span><span class="o">**</span> <span class="n">pp</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">p</span><span class="p">;</span><span class="c1">//存放指標的位址，要用雙指標</span>
         <span class="o">*</span><span class="n">pp</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span><span class="c1">//雙指標取值，並動態配置記憶體空間</span>
-        
     <span class="p">}</span>
+
+    <span class="c1">//印出p指標的位址，去p指標的記憶體位址取值，並印出來</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p="</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">",*p="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第3行，宣告指標。</p>
-
-<p>第5行，宣告雙指標，存放指標的位址。</p>
-
 <p>第6行，去雙指標pp的記憶體位址取值，取出來是p的指標記憶體位址，使用new來分配動態配置記憶體空間，並且設值”3”，動態配置完成會回傳記憶體位址，由指標去存位址。</p>
-
-<p>第8行，印出p指標的位址，去p指標的記憶體位址取值，並印出來。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 p=0x60000000c000,*p=3
@@ -785,7 +816,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-18 16:10:07 +0800"
+        "time": "2024-06-21 13:26:06 +0800"
     },
     "basePath": "",
     "book": {
