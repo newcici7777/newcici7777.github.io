@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>bool · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>變數可見範圍與生命週期 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -126,12 +126,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/basic/boolType" onclick="pageScrollToTop(this)"> bool</a>
         
-            
-                <ul><li><a href="#整數" onclick="mobilePageScrollToAnchor(this)" >整數</a><ul><li><a href="#0是false非0為true" onclick="mobilePageScrollToAnchor(this)" >0是false，非0為true。</a></li><li><a href="#可使用true跟false設定bool變數" onclick="mobilePageScrollToAnchor(this)" >可使用true跟false設定bool變數</a></li><li><a href="#bool整數運算" onclick="mobilePageScrollToAnchor(this)" >bool整數運算</a></li><li><a href="#cin只能輸0或1不能輸入true或false" onclick="mobilePageScrollToAnchor(this)" >cin只能輸0或1，不能輸入true或false</a><ul><li><a href="#證明bool為整數" onclick="mobilePageScrollToAnchor(this)" >證明bool為整數</a></li></ul></li></ul></li></ul>
-
             
         </li>
 	
@@ -153,9 +150,12 @@
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 基本知識 </a><ul>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/basic/scope" onclick="pageScrollToTop(this)"> 變數可見範圍與生命週期</a>
         
+            
+                <ul><li><a href="#區域變數" onclick="mobilePageScrollToAnchor(this)" >區域變數</a></li><li><a href="#外部變數" onclick="mobilePageScrollToAnchor(this)" >外部變數</a></li><li><a href="#在程式區塊中無法讀取同名的外部變數" onclick="mobilePageScrollToAnchor(this)" >在程式區塊中<code class="language-plaintext highlighter-rouge">{}</code>無法讀取同名的外部變數</a></li><li><a href="#程式區塊中讀取跟區域變數同名的全域變數" onclick="mobilePageScrollToAnchor(this)" >程式區塊中<code class="language-plaintext highlighter-rouge">{}</code>讀取跟區域變數同名的全域變數</a></li><li><a href="#for程式區塊中的區域變數" onclick="mobilePageScrollToAnchor(this)" >for程式區塊中的區域變數</a></li><li><a href="#虛擬碼" onclick="mobilePageScrollToAnchor(this)" >虛擬碼</a></li></ul>
+
             
         </li>
 	
@@ -403,7 +403,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >bool</a>
+                            <a href="." >變數可見範圍與生命週期</a>
                         
                     </h1>
                 </div>
@@ -416,121 +416,237 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/basic/boolType">bool</h1>
+                        <h1 id="/pages/c/basic/scope">變數可見範圍與生命週期</h1>
                     
 
-                    <h2 id="整數">整數</h2>
+                    <p>可見範圍(Scope)與生命週期(Lifetime)</p>
 
-<p>整數包含char, <code class="language-plaintext highlighter-rouge">bool</code>, short, unsinged short, int, unsinged int, long, unsinged long</p>
+<h3 id="區域變數">區域變數</h3>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">整數型態</th>
-      <th style="text-align: center">占用Byte數量</th>
-      <th style="text-align: center">數值範圍</th>
-      <th style="text-align: center">格式字串</th>
-      <th style="text-align: center">輸出格式</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">bool</td>
-      <td style="text-align: center">1</td>
-      <td style="text-align: center">0 1</td>
-      <td style="text-align: center">%d</td>
-      <td style="text-align: center">整數</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="0是false非0為true">0是false，非0為true。</h3>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre>    <span class="kt">bool</span> <span class="n">b3</span> <span class="o">=</span> <span class="sc">'0'</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="n">b4</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b3="</span> <span class="o">&lt;&lt;</span> <span class="n">b3</span> <span class="o">&lt;&lt;</span> <span class="s">",b4="</span> <span class="o">&lt;&lt;</span> <span class="n">b4</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-b3=1,b4=0
-</code></pre></div></div>
-
-<h3 id="可使用true跟false設定bool變數">可使用true跟false設定bool變數</h3>
-
-<p>編譯器會自動把true翻譯成整數1，false翻譯成整數0。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre>    <span class="kt">bool</span> <span class="n">b1</span> <span class="o">=</span> <span class="nb">true</span><span class="p">,</span> <span class="n">b2</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b1="</span> <span class="o">&lt;&lt;</span> <span class="n">b1</span> <span class="o">&lt;&lt;</span> <span class="s">",b2="</span> <span class="o">&lt;&lt;</span> <span class="n">b2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-b1=1,b2=0
-</code></pre></div></div>
-
-<h3 id="bool整數運算">bool整數運算</h3>
-
-<p>因為bool是整數，所以bool能做整數運算。但bool顯示出來只會是0或1，即便設的值是2，顯示出來的值仍是1。</p>
+<p>一對花括號<code class="language-plaintext highlighter-rouge">{}</code>包起來的就是程式碼區塊(block)或函式主體(Body)。程式碼區塊可以是if(){}或while(){}的程式碼區塊，但這篇要探討的是只有花括號<code class="language-plaintext highlighter-rouge">{}</code>包起來的程式碼區塊。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
-</pre></td><td class="code"><pre>    <span class="kt">bool</span> <span class="n">b5</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="n">b6</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b5 = "</span> <span class="o">&lt;&lt;</span> <span class="n">b5</span> <span class="o">&lt;&lt;</span> <span class="s">", b6 = "</span> <span class="o">&lt;&lt;</span> <span class="n">b6</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b5 + b6 = "</span> <span class="o">&lt;&lt;</span> <span class="n">b5</span> <span class="o">+</span> <span class="n">b6</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"outer var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-b5 = 1, b6 = 1
-b5 + b6 = 2
+inner var11 = 10
+outer var11 = 100
 </code></pre></div></div>
 
-<h3 id="cin只能輸0或1不能輸入true或false">cin只能輸0或1，不能輸入true或false</h3>
+<ul>
+  <li>第3行至第6行</li>
+</ul>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre>    <span class="kt">bool</span> <span class="n">b7</span><span class="p">;</span>
-    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">b7</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b7 = "</span> <span class="o">&lt;&lt;</span> <span class="n">b7</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p>在程式碼區塊中<code class="language-plaintext highlighter-rouge">{}</code>，所定義的變數都是區域變數，離開<code class="language-plaintext highlighter-rouge">{}</code>區塊就不能再讀取了，因為<code class="language-plaintext highlighter-rouge">{}</code>區塊中的區域變數已經被系統回收掉。可以想像<code class="language-plaintext highlighter-rouge">{}</code>就像是函式一樣。在函式中，函式中定義的變數都是區域變數，離開函式就不能被外部讀取區域變數，因為區域變數已經被系統回收了。</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-1
-b7 = 1
-</code></pre></div></div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-true
-b7 = 0
-</code></pre></div></div>
+<h3 id="外部變數">外部變數</h3>
 
-<h4 id="證明bool為整數">證明bool為整數</h4>
+<p>在<code class="language-plaintext highlighter-rouge">{}</code>區塊中，可以讀取外部變數</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
-</pre></td><td class="code"><pre>    <span class="kt">bool</span> <span class="n">b8</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">c5</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">b8</span><span class="p">;</span>    
-    <span class="o">*</span><span class="n">c5</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b8 = "</span> <span class="o">&lt;&lt;</span> <span class="n">b8</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">var12</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="c1">//在`{}`區塊中，可以讀取外部變數</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var12 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var12</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"outer var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+inner var11 = 10
+inner var12 = 200
+outer var11 = 100
+</code></pre></div></div>
+
+<h3 id="在程式區塊中無法讀取同名的外部變數">在程式區塊中<code class="language-plaintext highlighter-rouge">{}</code>無法讀取同名的外部變數</h3>
+
+<p>因為在<code class="language-plaintext highlighter-rouge">{}</code>區塊中，同名的外部變數會先被暫時隱藏，直到程式執行時離開<code class="language-plaintext highlighter-rouge">{}</code>區塊，區塊內的區域變數被系統回收掉，同名的變數就會將記憶體位置指向外部變數。</p>
+
+<h3 id="程式區塊中讀取跟區域變數同名的全域變數">程式區塊中<code class="language-plaintext highlighter-rouge">{}</code>讀取跟區域變數同名的全域變數</h3>
+
+<p>使用::可以讀取全域變數。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="c1">//定義全域變數var11</span>
+<span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//定義區域變數var11</span>
+    <span class="kt">int</span> <span class="n">var12</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
+    <span class="p">{</span>
+        <span class="c1">//印出區域變數var11</span>
+        <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var12 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var12</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+
+        <span class="c1">//印出全域變數var11</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"outer var11 = "</span> <span class="o">&lt;&lt;</span> <span class="o">::</span><span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+inner var11 = 10
+inner var12 = 200
+outer var11 = 100
+</code></pre></div></div>
+
+<h3 id="for程式區塊中的區域變數">for程式區塊中的區域變數</h3>
+
+<p>變數i的有效範圍，只有在<code class="language-plaintext highlighter-rouge">{}</code>程式區塊中，離開<code class="language-plaintext highlighter-rouge">{}</code>程式區塊，區域變數i就無法在外部讀取。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>若要變數i也可以在外部使用，可把變數i放在外部。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span><span class="p">(;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>    
+<span class="p">}</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+i = 10
+</code></pre></div></div>
+
+<h3 id="虛擬碼">虛擬碼</h3>
+
+<p>可以在程式區塊寫虛擬碼，進行驗證，作為之後正式的函式使用。
+以下程式碼是在寫參數為指標，將指標宣告記憶體空間。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//宣告指標</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//0就是nullptr 代表沒有指向任何記憶空間</span>
+    <span class="p">{</span>
+        <span class="kt">int</span><span class="o">**</span> <span class="n">pp</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">p</span><span class="p">;</span><span class="c1">//存放指標的位址，要用雙指標</span>
+        <span class="o">*</span><span class="n">pp</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span><span class="c1">//雙指標取值，並動態配置記憶體空間</span>
+    <span class="p">}</span>
+
+    <span class="c1">//印出p指標的位址，去p指標的記憶體位址取值，並印出來</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p="</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">",*p="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>第6行，去雙指標pp的記憶體位址取值，取出來是p的指標記憶體位址，使用new來分配動態配置記憶體空間，並且設值”3”，動態配置完成會回傳記憶體位址，由指標去存位址。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+p=0x60000000c000,*p=3
+</code></pre></div></div>
+<p>虛擬碼執行成功後，將<code class="language-plaintext highlighter-rouge">{}</code>程式碼區塊移到main()函式之外，並宣告成函式。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">initMemory</span><span class="p">(</span><span class="kt">int</span><span class="o">**</span> <span class="n">pp</span><span class="p">)</span> <span class="c1">//存放指標的位址，要用雙指標</span>
+<span class="p">{</span>
+    <span class="o">*</span><span class="n">pp</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span><span class="c1">//雙指標取值，並動態配置記憶體空間</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//宣告指標</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//0就是nullptr 代表沒有指向任何記憶空間</span>
+    <span class="n">initMemory</span><span class="p">(</span><span class="o">&amp;</span><span class="n">p</span><span class="p">);</span><span class="c1">//指標的位址傳入函式。</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p="</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">",*p="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+p=0x600000008030,*p=3
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -594,14 +710,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/basic/charType" class="navigation navigation-prev navigation-unique" aria-label="Previous page: char字元">
+                        <a href="/pages/c/basic/typedef" class="navigation navigation-prev navigation-unique" aria-label="Previous page: typedef 型別定義">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/basic/printformat" class="navigation navigation-next navigation-unique" aria-label="Next page: 整數與浮點數">
+                        <a href="/pages/c/basic/l_r_value" class="navigation navigation-next navigation-unique" aria-label="Next page: lvalue與rvalue">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -619,11 +735,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "記憶體配置",
+            "title": "Cmake on Mac",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/dynamicMemory/memoryLayout.md",
-            "ref": "_pages/c/dynamicMemory/memoryLayout.md",
+            "path": "_pages/c/editor/cmake.md",
+            "ref": "_pages/c/editor/cmake.md",
             "articles": []
         },
         
@@ -715,8 +831,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/basic/boolType.md",
-        "mtime": "2024-05-01 00:00:00 +0800",
+        "path": "_pages/c/basic/scope.md",
+        "mtime": "2024-04-18 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

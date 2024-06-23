@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>bool · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>參考指向指標 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -126,12 +126,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/basic/boolType" onclick="pageScrollToTop(this)"> bool</a>
         
-            
-                <ul><li><a href="#整數" onclick="mobilePageScrollToAnchor(this)" >整數</a><ul><li><a href="#0是false非0為true" onclick="mobilePageScrollToAnchor(this)" >0是false，非0為true。</a></li><li><a href="#可使用true跟false設定bool變數" onclick="mobilePageScrollToAnchor(this)" >可使用true跟false設定bool變數</a></li><li><a href="#bool整數運算" onclick="mobilePageScrollToAnchor(this)" >bool整數運算</a></li><li><a href="#cin只能輸0或1不能輸入true或false" onclick="mobilePageScrollToAnchor(this)" >cin只能輸0或1，不能輸入true或false</a><ul><li><a href="#證明bool為整數" onclick="mobilePageScrollToAnchor(this)" >證明bool為整數</a></li></ul></li></ul></li></ul>
-
             
         </li>
 	
@@ -312,9 +309,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/reference/refToPointer" onclick="pageScrollToTop(this)"> 參考指向指標</a>
         
+            
+                <ul><li><a href="#宣告參考" onclick="mobilePageScrollToAnchor(this)" >宣告參考</a></li><li><a href="#函式參數為指向指標的參考" onclick="mobilePageScrollToAnchor(this)" >函式參數為指向指標的參考</a><ul><li><a href="#語法" onclick="mobilePageScrollToAnchor(this)" >語法</a></li><li><a href="#程式碼" onclick="mobilePageScrollToAnchor(this)" >程式碼</a></li><li><a href="#函式參數指標的指標與指標的別名程式差異" onclick="mobilePageScrollToAnchor(this)" >函式參數<code class="language-plaintext highlighter-rouge">指標的指標</code>與<code class="language-plaintext highlighter-rouge">指標的別名</code>程式差異</a><ul><li><a href="#指標的別名" onclick="mobilePageScrollToAnchor(this)" >指標的別名</a></li><li><a href="#指標的指標" onclick="mobilePageScrollToAnchor(this)" >指標的指標</a></li></ul></li></ul></li><li><a href="#參考指向指標與new" onclick="mobilePageScrollToAnchor(this)" >參考指向指標與new</a></li></ul>
+
             
         </li></ul></li>
 	
@@ -403,7 +403,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >bool</a>
+                            <a href="." >參考指向指標</a>
                         
                     </h1>
                 </div>
@@ -416,121 +416,270 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/basic/boolType">bool</h1>
+                        <h1 id="/pages/c/reference/refToPointer">參考指向指標</h1>
                     
 
-                    <h2 id="整數">整數</h2>
+                    <p>Prerequisites:</p>
 
-<p>整數包含char, <code class="language-plaintext highlighter-rouge">bool</code>, short, unsinged short, int, unsinged int, long, unsinged long</p>
+<ul>
+  <li><a href="/pages/c/pointer/pointerToPointer/#函式參數為指標的指標">指標的指標</a></li>
+  <li><a href="/pages/c/pointer/pointerParam/#引數-argument">引數</a></li>
+</ul>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">整數型態</th>
-      <th style="text-align: center">占用Byte數量</th>
-      <th style="text-align: center">數值範圍</th>
-      <th style="text-align: center">格式字串</th>
-      <th style="text-align: center">輸出格式</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">bool</td>
-      <td style="text-align: center">1</td>
-      <td style="text-align: center">0 1</td>
-      <td style="text-align: center">%d</td>
-      <td style="text-align: center">整數</td>
-    </tr>
-  </tbody>
-</table>
+<p>參考指向指標，代表參考可以像指標一樣，使用*取值運算子，取出原指標指向的記憶體位址中的值，也可以修改原指標指向的記憶體位址中的值，或更改原指標指向的記憶體位址。</p>
 
-<h3 id="0是false非0為true">0是false，非0為true。</h3>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre>    <span class="kt">bool</span> <span class="n">b3</span> <span class="o">=</span> <span class="sc">'0'</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="n">b4</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b3="</span> <span class="o">&lt;&lt;</span> <span class="n">b3</span> <span class="o">&lt;&lt;</span> <span class="s">",b4="</span> <span class="o">&lt;&lt;</span> <span class="n">b4</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-b3=1,b4=0
+<h2 id="宣告參考">宣告參考</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>資料型態*&amp; 別名 = 原指標;
 </code></pre></div></div>
-
-<h3 id="可使用true跟false設定bool變數">可使用true跟false設定bool變數</h3>
-
-<p>編譯器會自動把true翻譯成整數1，false翻譯成整數0。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre>    <span class="kt">bool</span> <span class="n">b1</span> <span class="o">=</span> <span class="nb">true</span><span class="p">,</span> <span class="n">b2</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b1="</span> <span class="o">&lt;&lt;</span> <span class="n">b1</span> <span class="o">&lt;&lt;</span> <span class="s">",b2="</span> <span class="o">&lt;&lt;</span> <span class="n">b2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-b1=1,b2=0
-</code></pre></div></div>
-
-<h3 id="bool整數運算">bool整數運算</h3>
-
-<p>因為bool是整數，所以bool能做整數運算。但bool顯示出來只會是0或1，即便設的值是2，顯示出來的值仍是1。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
-</pre></td><td class="code"><pre>    <span class="kt">bool</span> <span class="n">b5</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="n">b6</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b5 = "</span> <span class="o">&lt;&lt;</span> <span class="n">b5</span> <span class="o">&lt;&lt;</span> <span class="s">", b6 = "</span> <span class="o">&lt;&lt;</span> <span class="n">b6</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b5 + b6 = "</span> <span class="o">&lt;&lt;</span> <span class="n">b5</span> <span class="o">+</span> <span class="n">b6</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i address:"</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"j address:"</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+
+    <span class="c1">//宣告指標</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">ptr_i</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
+
+    <span class="c1">//宣告參考</span>
+    <span class="c1">// 原指標指派給參考</span>
+    <span class="kt">int</span><span class="o">*&amp;</span> <span class="n">ptr_ref</span> <span class="o">=</span> <span class="n">ptr_i</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"== Change value =="</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before i value:"</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before value:"</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">ptr_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//修改原指標指向的記憶體位址中的值</span>
+    <span class="o">*</span><span class="n">ptr_ref</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After i value:"</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//取出原指標指向的記憶體位址中的值</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After value:"</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">ptr_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"== Change address =="</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before address:"</span> <span class="o">&lt;&lt;</span> <span class="n">ptr_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//更改原指標指向的記憶體位址</span>
+    <span class="n">ptr_ref</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">j</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"after address:"</span> <span class="o">&lt;&lt;</span> <span class="n">ptr_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-b5 = 1, b6 = 1
-b5 + b6 = 2
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i address:0x7ff7bfeff468
+j address:0x7ff7bfeff464
+== Change value ==
+Before i value:10
+Before value:10
+After i value:20
+After value:20
+== Change address ==
+Before address:0x7ff7bfeff468
+after address:0x7ff7bfeff464
 </code></pre></div></div>
 
-<h3 id="cin只能輸0或1不能輸入true或false">cin只能輸0或1，不能輸入true或false</h3>
+<p>參考以下文章</p>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre>    <span class="kt">bool</span> <span class="n">b7</span><span class="p">;</span>
-    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">b7</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b7 = "</span> <span class="o">&lt;&lt;</span> <span class="n">b7</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p><a href="https://www.geeksforgeeks.org/different-ways-to-use-const-with-reference-to-a-pointer-in-c/?ref=ml_lbp">https://www.geeksforgeeks.org/different-ways-to-use-const-with-reference-to-a-pointer-in-c/?ref=ml_lbp</a></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-1
-b7 = 1
+<blockquote>
+  <p>References to pointers is a modifiable value that’s used same as a normal pointer.
+(google翻譯)對指標的參考是一個可修改的值，其使用方式與普通指標相同。</p>
+</blockquote>
+
+<h2 id="函式參數為指向指標的參考">函式參數為指向指標的參考</h2>
+
+<p>如果要在函式中修改指標指向的記憶體位址，就需要使用<a href="/pages/c/pointer/pointerToPointer/#函式參數為指標的指標">指標的指標</a>，也可以使用參考。</p>
+
+<p><a href="/pages/c/pointer/pointerParam/#引數-argument">引數</a>為指標，函式參數宣告為<strong>指標資料型態*&amp; 別名</strong>，這樣才可以修改指標指向的記憶體位址。</p>
+
+<p>參考以下文章</p>
+
+<p><a href="https://www.geeksforgeeks.org/passing-reference-to-a-pointer-in-c/">https://www.geeksforgeeks.org/passing-reference-to-a-pointer-in-c/</a></p>
+
+<blockquote>
+  <p>If a pointer is passed to a function as a parameter and tried to be modified then the changes made to the pointer does not reflects back outside that function. This is because only a copy of the pointer is passed to the function. It can be said that “pass by pointer” is passing a pointer by value. In most cases, this does not present a problem. But the problem comes when you modify the pointer inside the function. Instead of modifying the variable, you are only modifying a copy of the pointer and the original pointer remains unmodified.</p>
+</blockquote>
+
+<blockquote>
+  <p>(google翻譯)如果將指標作為參數傳遞給函數並嘗試對其進行修改，則對指標所做的更改不會反映回該函數外部。這是因為僅將指標的副本傳遞給函數。可以說「透過指標傳遞」就是按值傳遞指標。在大多數情況下，這不會出現問題。但當你修改函數內部的指標時，問題就來了。您只是修改指標的副本，而不是修改變量，而原始指標保持不變。</p>
+</blockquote>
+
+<h3 id="語法">語法</h3>
+
+<p>函式語法</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>回傳型態 函式名(資料型態*&amp; 別名) {
+    別名 = 其它記憶體位址
+}
 </code></pre></div></div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-true
-b7 = 0
+
+<p>呼叫函式語法</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>函式(指標)
 </code></pre></div></div>
 
-<h4 id="證明bool為整數">證明bool為整數</h4>
+<h3 id="程式碼">程式碼</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
-</pre></td><td class="code"><pre>    <span class="kt">bool</span> <span class="n">b8</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">c5</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">b8</span><span class="p">;</span>    
-    <span class="o">*</span><span class="n">c5</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b8 = "</span> <span class="o">&lt;&lt;</span> <span class="n">b8</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">global_var</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="c1">// a function with “Reference to pointer” parameter</span>
+<span class="kt">void</span> <span class="nf">changeReferenceValue</span><span class="p">(</span><span class="kt">int</span><span class="o">*&amp;</span> <span class="n">ptr_ptr</span><span class="p">){</span>
+    <span class="n">ptr_ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">global_var</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">var</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">pointer_to_var</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">var</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before:"</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">pointer_to_var</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//把指標變數名傳進函式中</span>
+    <span class="n">changeReferenceValue</span><span class="p">(</span><span class="n">pointer_to_var</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After:"</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">pointer_to_var</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Before:1
+After:100
+</code></pre></div></div>
+
+<h3 id="函式參數指標的指標與指標的別名程式差異">函式參數<code class="language-plaintext highlighter-rouge">指標的指標</code>與<code class="language-plaintext highlighter-rouge">指標的別名</code>程式差異</h3>
+
+<h4 id="指標的別名">指標的別名</h4>
+
+<pre>
+int global_var = 100;
+// a function with “Reference to pointer” parameter
+void changeReferenceValue(<span class="markline">int*&amp;</span> ptr_ptr){
+    <span class="markline">ptr_ptr</span> = &global_var;
+}
+int main() {
+    int var = 1;
+    int* pointer_to_var = &var;
+    cout &lt;&lt; "Before:" &lt;&lt; *pointer_to_var &lt;&lt; endl;
+    //把指標變數名傳進函式中
+    changeReferenceValue(<span class="markline">pointer_to_var</span>);
+    cout &lt;&lt; "After:" &lt;&lt; *pointer_to_var &lt;&lt; endl;
+    return 0;
+}
+
+</pre>
+
+<h4 id="指標的指標">指標的指標</h4>
+
+<pre>
+int global_var = 100;
+void changePointerValue(<span class="markline">int**</span> ptr_ptr){
+    <span class="markline">*ptr_ptr</span> = &global_var; //改為指向global_var
+}
+int main() {
+    int var = 1;
+    int* pointer_to_var = &var; //指向var
+    cout &lt;&lt; "Before:" &lt;&lt; *pointer_to_var &lt;&lt; endl;
+    //passing the address of the pointer
+    //把指標的位址傳進函式中
+    changePointerValue(<span class="markline">&amp;pointer_to_var</span>);
+    cout &lt;&lt; "After:" &lt;&lt; *pointer_to_var &lt;&lt; endl;
+    return 0;
+}
+</pre>
+
+<h2 id="參考指向指標與new">參考指向指標與new</h2>
+
+<p>參考文章</p>
+
+<p><a href="/pages/c/pointer/pointerToPointer/#指標的指標與new">指標的指標與new</a></p>
+
+<p>new會返回動態配置記憶體的開始位址，將別名指向new返回的新位址。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="c1">//宣告一個函式initAddress() 別名是ref_to_p，指向外部傳入的指標</span>
+<span class="kt">void</span> <span class="nf">initAddress</span><span class="p">(</span><span class="kt">int</span><span class="o">*&amp;</span> <span class="n">ref_to_p</span><span class="p">){</span>
+    <span class="c1">//印出別名指向的記憶體位址</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before address = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref_to_p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//動態配置記憶體位址，位址存放的內容為10，使用new會返回動態配置記憶體的開始位址。</span>
+    <span class="n">ref_to_p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+    <span class="c1">//印出別名指向的記憶體位址</span>
+    <span class="n">cout</span>  <span class="o">&lt;&lt;</span> <span class="s">"After address= "</span> <span class="o">&lt;&lt;</span> <span class="n">ref_to_p</span> <span class="o">&lt;&lt;</span> <span class="s">",After value = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">ref_to_p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//宣告指標p，初始化為nullptr，也就是沒有指向任何位址</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="c1">//呼叫函式initAddress，引數為指標p</span>
+    <span class="n">initAddress</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+    <span class="c1">//印出指標p的位址，印出指標p指向的位址，對指向的位址取出內容。</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"== outside == "</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"outside pointer address = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">"，outside pointer value = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Before address = 0x0
+After address= 0x600000004010,After value = 10
+== outside == 
+outside pointer address = 0x600000004010，outside pointer value = 10
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -594,14 +743,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/basic/charType" class="navigation navigation-prev navigation-unique" aria-label="Previous page: char字元">
+                        <a href="/pages/c/reference/callByRef" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 傳參考">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/basic/printformat" class="navigation navigation-next navigation-unique" aria-label="Next page: 整數與浮點數">
+                        <a href="/pages/c/dynamicMemory/memoryLayout" class="navigation navigation-next navigation-unique" aria-label="Next page: 記憶體配置">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -619,11 +768,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "記憶體配置",
+            "title": "參考",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/dynamicMemory/memoryLayout.md",
-            "ref": "_pages/c/dynamicMemory/memoryLayout.md",
+            "path": "_pages/c/reference/reference.md",
+            "ref": "_pages/c/reference/reference.md",
             "articles": []
         },
         
@@ -715,8 +864,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/basic/boolType.md",
-        "mtime": "2024-05-01 00:00:00 +0800",
+        "path": "_pages/c/reference/refToPointer.md",
+        "mtime": "2024-06-20 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

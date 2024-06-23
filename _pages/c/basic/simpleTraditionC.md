@@ -37,6 +37,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Constant|常數|常量|
 |scope|生命周期，可見性，有效範圍|作用域|
 |Lvalue|等號左邊|左值|
+|Rvalue|等號右邊|右值|
 |Local Variable|區域變數|局部變量|
 |Global Variable|全域變數，外部變數|全局變量|
 |Expression|運算式|表達式|
@@ -82,7 +83,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Const Pointer||指針常量|
 |*dereferences a pointer|取值運算子或間接運算子(indirection)|解引用運算符|
 |&|取位址運算子|取址運算符|
-|&Reference|參考|引用|
+|&reference variable|參考|引用|
 |call by value|傳值|傳值|
 |call by pointer|傳址|傳地址|
 |call by reference|傳參考|傳引用|

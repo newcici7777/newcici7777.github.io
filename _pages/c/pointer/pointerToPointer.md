@@ -4,27 +4,32 @@ date: 2024-06-05
 keywords: c++, pointer to pointer
 ---
 
-指標的指標，意思是指標的位址，指標也是位址，所以可以稱為，位址的位址。
-### 指標的位址
+Prerequisites:
+
+- [引數][1]
+
+指標的指標，意思是指標的記憶體位址。
+
+## 指標的位址
+
 {% highlight c++ linenos %}
 int main() {
     int i = 40;
     cout << "i的值 = " << i << "，i的位址 = " << &i << endl;
     int *p = &i;
-    cout << "指標p的值 = " << p << "，指標p的位址 = " << &p << "，對指標p儲存的位址取出存放的內容=" << *p << endl;
+    cout << "指標p指向的位址 = " << p << "，指標p的位址 = " << &p << "，指標p指向位址的值=" << *p << endl;
     int **pp = &p;
-    cout << "指標pp的值 = " << pp << "，指標pp的位址 = " << &pp << "，對指標pp儲存的位址取出存放的內容=" << *pp << endl;
-    cout << "再次把上一個步驟取出的內容為位址，再對這個位址取出存放內容=" << **pp << endl;
+    cout << "指標pp指向的位址 = " << pp << "，指標pp的位址 = " << &pp << "，指標pp指向的位址(p)指向的位址(i)=" << *pp << endl;
+    cout << "指標pp指向的位址(p)指向的位址(i)的值=" << **pp << endl;
     return 0;
 }
 {% endhighlight %}
 
 ```
-執行結果
 i的值 = 40，i的位址 = 0x7ff7bfeff468
-指標p的值 = 0x7ff7bfeff468，指標p的位址 = 0x7ff7bfeff460，對指標p儲存的位址取出存放的內容=40
-指標pp的值 = 0x7ff7bfeff460，指標pp的位址 = 0x7ff7bfeff458，對指標pp儲存的位址取出存放的內容=0x7ff7bfeff468
-再次把上一個步驟取出的位址，再對這個位址取出存放內容=40
+指標p指向的位址 = 0x7ff7bfeff468，指標p的位址 = 0x7ff7bfeff460，指標p指向位址的值=40
+指標pp指向的位址 = 0x7ff7bfeff460，指標pp的位址 = 0x7ff7bfeff458，指標pp指向的位址(p)指向的位址(i)=0x7ff7bfeff468
+指標pp指向的位址(p)指向的位址(i)的值=40
 ```
 
 其它程式碼解釋
@@ -51,37 +56,100 @@ int main() {
 解出pp2的值:40
 ```
 
-### 函式參數為指標的指標
-設計一個函式，修改指標存放的位址。
-若要對指標存放的位址進行變動，函式參數就要使用二個星號\*\* 的指標，接收指標的位址。
+## 函式參數為指標的指標
+
+在函式中若要修改指標所指向的記憶體位址，就要用到指標的指標。
+
+[引數]({% link _pages/c/pointer/pointerParam.md %}#引數-argument)為指標的位址，函式參數宣告為**指標資料型態\*\* 指標變數**，這樣才可以接收指標的記憶體位址。
+
+參考以下文章
+
+<https://www.geeksforgeeks.org/passing-reference-to-a-pointer-in-c/>
+
+> If a pointer is passed to a function as a parameter and tried to be modified then the changes made to the pointer does not reflects back outside that function. This is because only a copy of the pointer is passed to the function. It can be said that “pass by pointer” is passing a pointer by value. In most cases, this does not present a problem. But the problem comes when you modify the pointer inside the function. Instead of modifying the variable, you are only modifying a copy of the pointer and the original pointer remains unmodified.
+
+> (google翻譯)如果將指標作為參數傳遞給函數並嘗試對其進行修改，則對指標所做的更改不會反映回該函數外部。這是因為僅將指標的副本傳遞給函數。可以說「透過指標傳遞」就是按值傳遞指標。在大多數情況下，這不會出現問題。但當你修改函數內部的指標時，問題就來了。您只是修改指標的副本，而不是修改變量，而原始指標保持不變。
+
+
+- 函式語法
+
+```
+回傳型態 函式名(指標資料型態** 指標) {
+    *指標 = 其它記憶體位址
+}
+```
+
+- 呼叫函式語法
+
+```
+函式(&指標位址)
+```
+
+### 程式碼
 
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
-//宣告一個函式initAddress()，參數為指標的位址，所以使用二個星號**宣告
-void initAddress(int** p){
-    //印出指標的位址
-    cout << "p = " << p << endl;
-    //動態配置記憶體位址，位址存放的內容為10，使用new會返回動態配置記憶體的位址。使用`取值運算子*指標名 = 新位址`修改指標存放的位址
-    *p = new int(10);
-    //印出指標p的位址，印出指標p存放的位址
-    cout  << "p = " << p << ",*p = " << *p << endl;
+int global_var = 100;
+void changePointerValue(int** ptr_ptr){
+    *ptr_ptr = &global_var; //改為指向global_var
+}
+int main() {
+    int var = 1;
+    int* pointer_to_var = &var; //指向var
+    cout << "Before:" << *pointer_to_var << endl;
+    //passing the address of the pointer
+    //把指標的位址傳進函式中
+    changePointerValue(&pointer_to_var);
+    cout << "After:" << *pointer_to_var << endl;
+    return 0;
+}
+{% endhighlight %}
+
+```
+Before:1
+After:100
+```
+
+
+## 指標的指標與new
+
+參考文章
+
+[參考指向指標與new]({% link _pages/c/reference/refToPointer.md %}#參考指向指標與new)
+
+new會返回動態配置記憶體的開始位址，將p_to_p使用\*取值運算子修改p指向的位址。
+
+{% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+//宣告一個函式initAddress() 指標是p_to_p，指向外部指標的位址
+void initAddress(int** p_to_p){
+    //印出指向外部指標p的記憶體位址
+    cout << "Before p address = " << *p_to_p << endl;
+    //動態配置記憶體位址，位址存放的內容為10，使用new會返回動態配置記憶體的開始位址。
+    //使用*取值運算子修改指標p指向的位址
+    *p_to_p = new int(10);
+    //印出指向外部指標的記憶體位址與值
+    cout  << "After p address= " << *p_to_p << ",After p value = " << **p_to_p << endl;
 }
 int main() {
     //宣告指標p，初始化為nullptr，也就是沒有指向任何位址
     int* p = nullptr;
     //呼叫函式initAddress，引數為指標p的位址
     initAddress(&p);
-
-    //印出指標p的位址，印出指標p存放的位址，對存放的位址取出內容。
-    cout << "指標的位址 = " << &p << ",指標存放的位址 = " << p << "，對存放的位址取出內容 = " << *p << endl;
+    //印出指標p的位址，印出指標p指向的位址，對指向的位址取出內容。
+    cout << "== outside == " << endl;
+    cout << "outside pointer address = " << p << "，outside pointer value = " << *p << endl;
     return 0;
 }
 {% endhighlight %}
 
 ```
-執行結果
-p = 0x7ff7bfeff460
-p = 0x7ff7bfeff460,*p = 0x600000008050
-指標的位址 = 0x7ff7bfeff460,指標存放的位址 = 0x600000008050，對存放的位址取出內容 = 10
+Before p address = 0x0
+After p address= 0x60000000c010,After p value = 10
+== outside == 
+outside pointer address = 0x60000000c010，outside pointer value = 10
 ```
+
+[1]: {% link _pages/c/pointer/pointerParam.md %}#引數-argument
