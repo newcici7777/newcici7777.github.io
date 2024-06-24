@@ -36,8 +36,8 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Variable|變數|變量|
 |Constant|常數|常量|
 |scope|生命周期，可見性，有效範圍|作用域|
-|Lvalue|等號左邊|左值|
-|Rvalue|等號右邊|右值|
+|L-value|等號左邊|左值|
+|R-value|等號右邊|右值|
 |Local Variable|區域變數|局部變量|
 |Global Variable|全域變數，外部變數|全局變量|
 |Expression|運算式|表達式|
