@@ -154,13 +154,6 @@
     	<a href="/pages/c/basic/scope" onclick="pageScrollToTop(this)"> 變數可見範圍與生命週期</a>
         
             
-        </li>
-	
-	
-	<li class="">
-    	<a href="/pages/c/basic/l_r_value" onclick="pageScrollToTop(this)"> l-value與r-value</a>
-        
-            
         </li></ul></li>
 	
 	
@@ -314,6 +307,34 @@
 	
 	<li class="">
     	<a href="/pages/c/reference/refToPointer" onclick="pageScrollToTop(this)"> 參考指向指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/l_r_value" onclick="pageScrollToTop(this)"> l-value與r-value</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/l_r_ref" onclick="pageScrollToTop(this)"> l-value參考與r-value參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/constRef" onclick="pageScrollToTop(this)"> const與參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/l_ref_func" onclick="pageScrollToTop(this)"> 等號左邊的函式</a>
         
             
         </li></ul></li>
@@ -473,6 +494,11 @@ i = 10, j = 20
 
 <h2 id="傳參考">傳參考</h2>
 
+<p>呼叫函式時，<a href="/pages/c/pointer/pointerParam/#引數-argument">引數</a>不用加&amp;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>callByRef(i,j);
+</code></pre></div></div>
+
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -519,6 +545,7 @@ void callByValue(int param1, int param2)</p>
 void callByRef(int<strong>&amp;</strong> param1, int<strong>&amp;</strong> param2)</p>
   </li>
 </ul>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -709,7 +736,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-23 22:31:24 +0800"
+        "time": "2024-07-02 12:51:30 +0800"
     },
     "basePath": "",
     "book": {

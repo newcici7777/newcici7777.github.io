@@ -26,8 +26,16 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |bit|位元|位|
 |%d %s|格式化字串或格式化數值輸出|占位符|
 |escape sequence|跳脫字元或逸出字元|轉義字符|
+
+
+## 運算式相關
+
+|英文|台灣|大陸|
+|:--:|:--:|:--:|
 |Operator|運算子|運算符|
 |For Loop|巢狀|嵌套|
+|Expression|運算式|表達式|
+|assign = |指定或指派或設為|賦值|
 
 ## 變數相關
 
@@ -40,17 +48,17 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |R-value|等號右邊|右值|
 |Local Variable|區域變數|局部變量|
 |Global Variable|全域變數，外部變數|全局變量|
-|Expression|運算式|表達式|
 |Parameter|參數|形參|
 |Argument|引數|實參|
 |define|宣告|聲明|
 |#define|前置指令|宏|
 |Preprocessor|前置處理器|預處理器|
 |default|預設值|缺省|
-|assign = |指定或指派或設為|賦值|
 |conversion|轉型|轉換|
 |explicit conversion|強制轉型|顯示轉換或手動轉換|
 |implicit conversion|自動轉型|隱式轉換|
+|Temp Variable|臨時變數|臨時變量|
+
 
 ## 陣列相關
 

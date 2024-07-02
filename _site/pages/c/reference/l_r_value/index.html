@@ -309,9 +309,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/reference/l_r_value" onclick="pageScrollToTop(this)"> l-value與r-value</a>
         
+            
+                <ul><li><a href="#l-value" onclick="mobilePageScrollToAnchor(this)" >l-value</a><ul><li><a href="#有定義資料型態int-double-float-char-long-long-的變數可以指派值" onclick="mobilePageScrollToAnchor(this)" >有定義資料型態(int, double, float, char, long long …)的變數，可以<code class="language-plaintext highlighter-rouge">指派值</code>。</a></li><li><a href="#有定義資料型態int-double-float-char-long-long-的指標可以指向記憶體位址" onclick="mobilePageScrollToAnchor(this)" >有定義資料型態(int, double, float, char, long long …)的指標，可以指向記憶體位址。</a></li><li><a href="#可以用取值運算子修改指標指向的記憶體位址的內容" onclick="mobilePageScrollToAnchor(this)" >可以用*取值運算子修改指標指向的記憶體位址的<code class="language-plaintext highlighter-rouge">內容</code></a></li><li><a href="#可以將變數或指標指派給參考" onclick="mobilePageScrollToAnchor(this)" >可以將變數或指標，指派給&amp;參考</a><ul><li><a href="#參考變數" onclick="mobilePageScrollToAnchor(this)" >參考變數</a></li><li><a href="#參考指標" onclick="mobilePageScrollToAnchor(this)" >參考指標</a></li></ul></li><li><a href="#陣列" onclick="mobilePageScrollToAnchor(this)" >陣列</a><ul><li><a href="#陣列元素" onclick="mobilePageScrollToAnchor(this)" >陣列元素</a></li><li><a href="#陣列名--索引" onclick="mobilePageScrollToAnchor(this)" >*(陣列名 + 索引)</a></li><li><a href="#指標指向陣列" onclick="mobilePageScrollToAnchor(this)" >指標指向陣列</a></li><li><a href="#const與指標" onclick="mobilePageScrollToAnchor(this)" >const與指標</a></li></ul></li></ul></li><li><a href="#r-value" onclick="mobilePageScrollToAnchor(this)" >r-value</a><ul><li><a href="#字串常數" onclick="mobilePageScrollToAnchor(this)" >字串常數</a></li><li><a href="#陣列-與-陣列索引" onclick="mobilePageScrollToAnchor(this)" >&amp;陣列 與 &amp;陣列[索引]</a></li><li><a href="#指標--整數0123-" onclick="mobilePageScrollToAnchor(this)" >指標 + 整數(0,1,2,3 …)</a></li></ul></li></ul>
+
             
         </li>
 	
@@ -434,7 +437,7 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/basic/l_r_value">l-value與r-value</h1>
+                        <h1 id="/pages/c/reference/l_r_value">l-value與r-value</h1>
                     
 
                     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>l-value = r-value;
@@ -914,7 +917,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/c/reference/refToPointer" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 參考指向指標">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/c/reference/l_r_ref" class="navigation navigation-next navigation-unique" aria-label="Next page: l-value參考與r-value參考">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -930,11 +943,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "等號左邊lvalue",
+            "title": "const與參考",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/basic/lvalue.md",
-            "ref": "_pages/c/basic/lvalue.md",
+            "path": "_pages/c/reference/constRef.md",
+            "ref": "_pages/c/reference/constRef.md",
             "articles": []
         },
         
@@ -1026,7 +1039,7 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/basic/l_r_value.md",
+        "path": "_pages/c/reference/l_r_value.md",
         "mtime": "2024-06-22 00:00:00 +0800",
         "type": "markdown"
     },

@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>char字元 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>const與參考 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -119,12 +119,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/basic/charType" onclick="pageScrollToTop(this)"> char字元</a>
         
-            
-                <ul><li><a href="#整數" onclick="mobilePageScrollToAnchor(this)" >整數</a><ul><li><a href="#char" onclick="mobilePageScrollToAnchor(this)" >char</a><ul><li><a href="#字元變數設為數字" onclick="mobilePageScrollToAnchor(this)" >字元變數設為數字。</a></li><li><a href="#印出char可用c格式字串或d格式字串" onclick="mobilePageScrollToAnchor(this)" >印出char可用%c格式字串或%d格式字串</a></li><li><a href="#int變數設為字元" onclick="mobilePageScrollToAnchor(this)" >int變數設為字元。</a></li><li><a href="#int轉型字元" onclick="mobilePageScrollToAnchor(this)" >int轉型字元</a></li><li><a href="#字元運算" onclick="mobilePageScrollToAnchor(this)" >字元運算</a></li><li><a href="#跳脫字元" onclick="mobilePageScrollToAnchor(this)" >跳脫字元</a><ul><li><a href="#設定空字元" onclick="mobilePageScrollToAnchor(this)" >設定空字元</a></li><li><a href="#關於斜線" onclick="mobilePageScrollToAnchor(this)" >關於斜線</a></li><li><a href="#雙引號" onclick="mobilePageScrollToAnchor(this)" >雙引號</a></li><li><a href="#單引號" onclick="mobilePageScrollToAnchor(this)" >單引號</a></li></ul></li></ul></li></ul></li></ul>
-
             
         </li>
 	
@@ -326,9 +323,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/reference/constRef" onclick="pageScrollToTop(this)"> const與參考</a>
         
+            
+                <ul><li><a href="#const參考與r-value" onclick="mobilePageScrollToAnchor(this)" >const參考與r-value</a></li><li><a href="#const參考與自動轉型" onclick="mobilePageScrollToAnchor(this)" >const參考與自動轉型</a></li><li><a href="#函式參數為const參考" onclick="mobilePageScrollToAnchor(this)" >函式參數為const參考</a></li></ul>
+
             
         </li>
 	
@@ -424,7 +424,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >char字元</a>
+                            <a href="." >const與參考</a>
                         
                     </h1>
                 </div>
@@ -437,92 +437,45 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/basic/charType">char字元</h1>
+                        <h1 id="/pages/c/reference/constRef">const與參考</h1>
                     
 
-                    <h2 id="整數">整數</h2>
+                    <p>Prerequisites:</p>
 
-<p>整數包含<code class="language-plaintext highlighter-rouge">char</code>, bool, short, unsinged short, int, unsinged int, long, unsinged long</p>
+<ul>
+  <li>
+    <p><a href="/pages/c/reference/l_r_value/">l-value與r-value</a></p>
+  </li>
+  <li>
+    <p><a href="/pages/c/reference/l_r_ref/">l-value參考與r-value參考</a></p>
+  </li>
+</ul>
 
-<h3 id="char">char</h3>
+<h2 id="const參考與r-value">const參考與r-value</h2>
 
-<p>char是正整數，雖然顯示是字元，但實際存放在記憶體位置的資料型態是整數。</p>
+<p>下方程式可以指派常數100到常數參考ref1。</p>
 
-<p>char所對映的整數是顯示在瑩幕上的ASCII碼。<a href="https://zh.wikipedia.org/zh-tw/ASCII">https://zh.wikipedia.org/zh-tw/ASCII</a></p>
-
-<p>若輸入單引號''包住的字元，編譯器會自動把單引號包住的字元轉成整數。</p>
-
-<p>比如'a'，記憶體位址存放的十進位值是97，二進制是01100001</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">整數型態</th>
-      <th style="text-align: center">占用Byte數量</th>
-      <th style="text-align: center">數值範圍</th>
-      <th style="text-align: center">格式符</th>
-      <th style="text-align: center">輸出格式</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">char</td>
-      <td style="text-align: center">1</td>
-      <td style="text-align: center">0~127</td>
-      <td style="text-align: center">%c</td>
-      <td style="text-align: center">字元</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">char</td>
-      <td style="text-align: center">1</td>
-      <td style="text-align: center">0~127</td>
-      <td style="text-align: center">%d</td>
-      <td style="text-align: center">整數</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="字元變數設為數字">字元變數設為數字。</h4>
-
-<p>程式碼</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre><span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">97</span><span class="p">;</span>
-<span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
-<span class="n">printf</span><span class="p">(</span><span class="s">"%c</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>第一行，直接給整數到c變數。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-97
-a
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> const int&amp; ref1 = 100;
 </code></pre></div></div>
 
-<h4 id="印出char可用c格式字串或d格式字串">印出char可用%c格式字串或%d格式字串</h4>
+<p>如果常數指派到參考，卻沒加上const修飾子，就會編譯錯誤，因為參考不支援常數。</p>
+<blockquote>
+  <p>Non-const lvalue reference to type ‘int’ cannot bind to a temporary of type ‘int’</p>
+</blockquote>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre><span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
-<span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
-<span class="n">printf</span><span class="p">(</span><span class="s">"%c</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-97
-a
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int&amp; ref1 = 100;
 </code></pre></div></div>
 
-<h4 id="int變數設為字元">int變數設為字元。</h4>
+<p>若使用const參考，編譯器會產生一個臨時變數temp，把常數100指派到臨時變數中，再把臨時變數指派給參考。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    int temp = 100;
+    const int&amp; ref = temp;
+</code></pre></div></div>
 
-<p>在c++中，可以直接給int變數賦值單引號''包住的字元</p>
+<h2 id="const參考與自動轉型">const參考與自動轉型</h2>
+
+<p>當<a href="/pages/c/pointer/pointerParam/#引數-argument">引數</a>為常數給函式，除了<a href="/pages/c/reference/l_r_ref/#引數與參數r-value參考資料型態不同">r-value參考</a>可以接收常數，const參考也可以接收常數，二者功能相同。</p>
+
+<p>const參考會自動轉型，下面例子將’C’自動轉型為int</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -530,155 +483,46 @@ a
 3
 4
 5
+6
+7
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">c1</span> <span class="o">=</span> <span class="sc">'A'</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c1="</span> <span class="o">&lt;&lt;</span> <span class="n">c1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref1</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref2</span> <span class="o">=</span> <span class="sc">'C'</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-65
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ref1 = 100
+ref2 = 67
 </code></pre></div></div>
 
-<h4 id="int轉型字元">int轉型字元</h4>
-
-<p>想印出字元，就把int轉型成char</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">c1</span> <span class="o">=</span> <span class="sc">'A'</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c1="</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">char</span><span class="p">)</span><span class="n">c1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-執行結果
-A
-</code></pre></div></div>
-
-<h4 id="字元運算">字元運算</h4>
-
-<p>也可字元加整數做運算。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">c1</span> <span class="o">=</span> <span class="sc">'A'</span> <span class="o">+</span> <span class="mi">2</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c1="</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">char</span><span class="p">)</span><span class="n">c1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>第一行，字元+2。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-c1=C
-</code></pre></div></div>
-
-<h4 id="跳脫字元">跳脫字元</h4>
-
-<p>重要有以下幾種</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">Ascii碼</th>
-      <th style="text-align: center">跳脫字元</th>
-      <th style="text-align: left">描述</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">0</td>
-      <td style="text-align: center">\0</td>
-      <td style="text-align: left">空，字元變數可設定0</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">9</td>
-      <td style="text-align: center">\t</td>
-      <td style="text-align: left">TAB鍵對齊</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">10</td>
-      <td style="text-align: center">\n</td>
-      <td style="text-align: left">換行</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">13</td>
-      <td style="text-align: center">\r</td>
-      <td style="text-align: left">移動到最前面</td>
-    </tr>
-  </tbody>
-</table>
-
-<h5 id="設定空字元">設定空字元</h5>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c4</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c4="</span> <span class="o">&lt;&lt;</span> <span class="n">c4</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-c4=
-</code></pre></div></div>
-
-<h5 id="關於斜線">關於斜線</h5>
-
-<p>因為"與'與\，被編譯器作為以下用途。</p>
-
-<ul>
-  <li>""，把字串包起來。</li>
-  <li>''，把字元包起來。</li>
-  <li>\，換行\n</li>
-</ul>
-
-<p>所以不能直接使用"與'與\，必須加上\“與\‘與<code class="language-plaintext highlighter-rouge">\\</code>。</p>
-
-<h5 id="雙引號">雙引號</h5>
+<h2 id="函式參數為const參考">函式參數為const參考</h2>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c2</span> <span class="o">=</span> <span class="sc">'"'</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c2="</span> <span class="o">&lt;&lt;</span> <span class="n">c2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"我說，</span><span class="se">\"</span><span class="s">跑!</span><span class="se">\"</span><span class="s">"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">func</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span> <span class="c1">// 常數 100 , 100 is r-value</span>
+    <span class="n">func</span><span class="p">(</span><span class="sc">'A'</span><span class="p">);</span> <span class="c1">// 常數 'A' , A is r-value </span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第1行，當作字元的雙引號，前面不用加斜線<code class="language-plaintext highlighter-rouge">'\"'</code>，直接寫雙引號就可以<code class="language-plaintext highlighter-rouge">'"'</code>。</p>
-
-<p>第3行，當作字串中的的雙引號，前面要加斜線。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-c2="
-我說，"跑!"
-</code></pre></div></div>
-
-<h5 id="單引號">單引號</h5>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c3</span> <span class="o">=</span> <span class="sc">'\''</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c3="</span> <span class="o">&lt;&lt;</span> <span class="n">c3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"我說，'跑!'"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>第1行，當作字元的單引號，前面要加斜線<code class="language-plaintext highlighter-rouge">'\''</code>。</p>
-
-<p>第3行，當作字串中的的單引號，前面不用加斜線。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-c3='
-我說，'跑!'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ref = 100
+ref = 65
 </code></pre></div></div>
 
 </section>
@@ -744,14 +588,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/basic/typicalRange" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 資料型態範圍">
+                        <a href="/pages/c/reference/l_r_ref" class="navigation navigation-prev navigation-unique" aria-label="Previous page: l-value參考與r-value參考">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/basic/boolType" class="navigation navigation-next navigation-unique" aria-label="Next page: bool">
+                        <a href="/pages/c/reference/l_ref_func" class="navigation navigation-next navigation-unique" aria-label="Next page: 等號左邊的函式">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -769,11 +613,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "整數與浮點數",
+            "title": "l-value參考與r-value參考",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/basic/printformat.md",
-            "ref": "_pages/c/basic/printformat.md",
+            "path": "_pages/c/reference/l_r_ref.md",
+            "ref": "_pages/c/reference/l_r_ref.md",
             "articles": []
         },
         
@@ -865,8 +709,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/basic/charType.md",
-        "mtime": "2024-04-18 00:00:00 +0800",
+        "path": "_pages/c/reference/constRef.md",
+        "mtime": "2024-06-24 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

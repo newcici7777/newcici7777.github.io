@@ -60,7 +60,7 @@ int main() {
 
 在函式中若要修改指標所指向的記憶體位址，就要用到指標的指標。
 
-[引數]({% link _pages/c/pointer/pointerParam.md %}#引數-argument)為指標的位址，函式參數宣告為**指標資料型態\*\* 指標變數**，這樣才可以接收指標的記憶體位址。
+[引數][1]為指標的位址，函式參數宣告為**指標資料型態\*\* 指標變數**，這樣才可以接收指標的記憶體位址。
 
 參考以下文章
 
@@ -116,7 +116,7 @@ After:100
 
 參考文章
 
-[參考指向指標與new]({% link _pages/c/reference/refToPointer.md %}#參考指向指標與new)
+[參考指向指標與new][2]
 
 new會返回動態配置記憶體的開始位址，將p_to_p使用\*取值運算子修改p指向的位址。
 
@@ -153,3 +153,4 @@ outside pointer address = 0x60000000c010，outside pointer value = 10
 ```
 
 [1]: {% link _pages/c/pointer/pointerParam.md %}#引數-argument
+[2]: {% link _pages/c/reference/refToPointer.md %}#參考指向指標與new

@@ -106,7 +106,7 @@
     	<a href="/pages/c/basic/simpleTraditionC" onclick="pageScrollToTop(this)"> 台陸指標相關名詞差異</a>
         
             
-                <ul><li><a href="#文件相關" onclick="mobilePageScrollToAnchor(this)" >文件相關</a></li><li><a href="#資料型態相關" onclick="mobilePageScrollToAnchor(this)" >資料型態相關</a></li><li><a href="#變數相關" onclick="mobilePageScrollToAnchor(this)" >變數相關</a></li><li><a href="#陣列相關" onclick="mobilePageScrollToAnchor(this)" >陣列相關</a></li><li><a href="#函式相關" onclick="mobilePageScrollToAnchor(this)" >函式相關</a></li><li><a href="#指標相關" onclick="mobilePageScrollToAnchor(this)" >指標相關</a></li><li><a href="#記憶體相關" onclick="mobilePageScrollToAnchor(this)" >記憶體相關</a></li><li><a href="#物件相關" onclick="mobilePageScrollToAnchor(this)" >物件相關</a></li></ul>
+                <ul><li><a href="#文件相關" onclick="mobilePageScrollToAnchor(this)" >文件相關</a></li><li><a href="#資料型態相關" onclick="mobilePageScrollToAnchor(this)" >資料型態相關</a></li><li><a href="#運算式相關" onclick="mobilePageScrollToAnchor(this)" >運算式相關</a></li><li><a href="#變數相關" onclick="mobilePageScrollToAnchor(this)" >變數相關</a></li><li><a href="#陣列相關" onclick="mobilePageScrollToAnchor(this)" >陣列相關</a></li><li><a href="#函式相關" onclick="mobilePageScrollToAnchor(this)" >函式相關</a></li><li><a href="#指標相關" onclick="mobilePageScrollToAnchor(this)" >指標相關</a></li><li><a href="#記憶體相關" onclick="mobilePageScrollToAnchor(this)" >記憶體相關</a></li><li><a href="#物件相關" onclick="mobilePageScrollToAnchor(this)" >物件相關</a></li></ul>
 
             
         </li>
@@ -155,13 +155,6 @@
 	
 	<li class="">
     	<a href="/pages/c/basic/scope" onclick="pageScrollToTop(this)"> 變數可見範圍與生命週期</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
-    	<a href="/pages/c/basic/l_r_value" onclick="pageScrollToTop(this)"> l-value與r-value</a>
         
             
         </li></ul></li>
@@ -314,6 +307,34 @@
 	
 	<li class="">
     	<a href="/pages/c/reference/refToPointer" onclick="pageScrollToTop(this)"> 參考指向指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/l_r_value" onclick="pageScrollToTop(this)"> l-value與r-value</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/l_r_ref" onclick="pageScrollToTop(this)"> l-value參考與r-value參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/constRef" onclick="pageScrollToTop(this)"> const與參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/l_ref_func" onclick="pageScrollToTop(this)"> 等號左邊的函式</a>
         
             
         </li></ul></li>
@@ -509,6 +530,20 @@
       <td style="text-align: center">跳脫字元或逸出字元</td>
       <td style="text-align: center">轉義字符</td>
     </tr>
+  </tbody>
+</table>
+
+<h2 id="運算式相關">運算式相關</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">英文</th>
+      <th style="text-align: center">台灣</th>
+      <th style="text-align: center">大陸</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td style="text-align: center">Operator</td>
       <td style="text-align: center">運算子</td>
@@ -518,6 +553,16 @@
       <td style="text-align: center">For Loop</td>
       <td style="text-align: center">巢狀</td>
       <td style="text-align: center">嵌套</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Expression</td>
+      <td style="text-align: center">運算式</td>
+      <td style="text-align: center">表達式</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">assign =</td>
+      <td style="text-align: center">指定或指派或設為</td>
+      <td style="text-align: center">賦值</td>
     </tr>
   </tbody>
 </table>
@@ -569,11 +614,6 @@
       <td style="text-align: center">全局變量</td>
     </tr>
     <tr>
-      <td style="text-align: center">Expression</td>
-      <td style="text-align: center">運算式</td>
-      <td style="text-align: center">表達式</td>
-    </tr>
-    <tr>
       <td style="text-align: center">Parameter</td>
       <td style="text-align: center">參數</td>
       <td style="text-align: center">形參</td>
@@ -604,11 +644,6 @@
       <td style="text-align: center">缺省</td>
     </tr>
     <tr>
-      <td style="text-align: center">assign =</td>
-      <td style="text-align: center">指定或指派或設為</td>
-      <td style="text-align: center">賦值</td>
-    </tr>
-    <tr>
       <td style="text-align: center">conversion</td>
       <td style="text-align: center">轉型</td>
       <td style="text-align: center">轉換</td>
@@ -622,6 +657,11 @@
       <td style="text-align: center">implicit conversion</td>
       <td style="text-align: center">自動轉型</td>
       <td style="text-align: center">隱式轉換</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Temp Variable</td>
+      <td style="text-align: center">臨時變數</td>
+      <td style="text-align: center">臨時變量</td>
     </tr>
   </tbody>
 </table>
@@ -1026,7 +1066,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-06-23 22:31:24 +0800"
+        "time": "2024-07-02 12:51:30 +0800"
     },
     "basePath": "",
     "book": {
