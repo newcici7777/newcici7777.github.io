@@ -36,7 +36,7 @@ After x = 10
 
 ## 函式傳回值是值
 
-函式會將傳回值拷貝到暫存器或stack中，然後再將拷貝的值傳回給呼叫函式的呼叫者。
+函式會將傳回值拷貝到暫存器或stack中，然後再傳回拷貝到暫存器或stack中的值，接下來再把函式中區域變數記憶體釋放。
 
 {% highlight c++ linenos %}
 int getValue(){
@@ -48,6 +48,10 @@ int main() {
     cout << "r = " << r << endl;
     return 0;
 }
-{% highlight c++ linenos %}
+{% endhighlight %}
+
+```
+r = 1000
+```
 
 [1]: {% link _pages/c/pointer/pointerParam.md %}#引數-argument

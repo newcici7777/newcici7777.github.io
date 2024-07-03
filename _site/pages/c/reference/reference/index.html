@@ -292,8 +292,15 @@
     	<a href="/pages/c/reference/reference" onclick="pageScrollToTop(this)"> 參考</a>
         
             
-                <ul><li><a href="#宣告方法" onclick="mobilePageScrollToAnchor(this)" >宣告方法</a></li><li><a href="#注意事項" onclick="mobilePageScrollToAnchor(this)" >注意事項</a></li><li><a href="#宣告" onclick="mobilePageScrollToAnchor(this)" >宣告</a></li><li><a href="#一定要初始化" onclick="mobilePageScrollToAnchor(this)" >一定要初始化</a></li><li><a href="#別名可以存取原始變數" onclick="mobilePageScrollToAnchor(this)" >別名可以存取原始變數</a></li><li><a href="#一個變數可以多個別名" onclick="mobilePageScrollToAnchor(this)" >一個變數可以多個別名</a></li><li><a href="#各種寫法" onclick="mobilePageScrollToAnchor(this)" >各種寫法</a></li><li><a href="#資料型態要一致參考無強制轉型" onclick="mobilePageScrollToAnchor(this)" >資料型態要一致，參考無強制轉型</a></li><li><a href="#初始化後不可改變原始變數" onclick="mobilePageScrollToAnchor(this)" >初始化後不可改變原始變數</a></li></ul>
+                <ul><li><a href="#宣告方法" onclick="mobilePageScrollToAnchor(this)" >宣告方法</a></li><li><a href="#注意事項" onclick="mobilePageScrollToAnchor(this)" >注意事項</a></li><li><a href="#宣告" onclick="mobilePageScrollToAnchor(this)" >宣告</a></li><li><a href="#一定要初始化" onclick="mobilePageScrollToAnchor(this)" >一定要初始化</a></li><li><a href="#參考別名跟原始變數功能一樣可以修改跟讀取記憶體內容" onclick="mobilePageScrollToAnchor(this)" >參考別名跟原始變數功能一樣，可以修改跟讀取記憶體內容。</a></li><li><a href="#一個變數可以多個參考別名" onclick="mobilePageScrollToAnchor(this)" >一個變數可以多個參考別名</a></li><li><a href="#各種寫法" onclick="mobilePageScrollToAnchor(this)" >各種寫法</a></li><li><a href="#資料型態要一致參考別名無強制轉型" onclick="mobilePageScrollToAnchor(this)" >資料型態要一致，參考別名無強制轉型</a></li><li><a href="#初始化後不可改變原始變數" onclick="mobilePageScrollToAnchor(this)" >初始化後不可改變原始變數</a></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+        
             
         </li>
 	
@@ -334,6 +341,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/reference/func_return_ref" onclick="pageScrollToTop(this)"> 函式傳回值是參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/reference/l_ref_func" onclick="pageScrollToTop(this)"> 等號左邊的函式</a>
         
             
@@ -359,6 +373,16 @@
 	
 	<li class="">
     	<a href="/pages/c/dynamicMemory/nothrow" onclick="pageScrollToTop(this)"> 記憶體不足</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 結構 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_def" onclick="pageScrollToTop(this)"> 定義結構</a>
         
             
         </li></ul></li>
@@ -442,20 +466,20 @@
 
                     <h2 id="宣告方法">宣告方法</h2>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>資料型態&amp; 別名 = 原始變數;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>資料型態&amp; 參考別名 = 原始變數;
 </code></pre></div></div>
 
 <h2 id="注意事項">注意事項</h2>
 
 <ul>
   <li>
-    <p>宣告參考時，要初始化原始變數。</p>
+    <p>宣告參考別名時，要初始化原始變數。</p>
   </li>
   <li>
     <p>初始化後不可改變原始變數。</p>
   </li>
   <li>
-    <p>別名可以存取原始變數，別名與原始變數都是指向相同記憶體位址。</p>
+    <p>別名可以存取原始變數，參考別名與原始變數都是指向相同記憶體位址。</p>
   </li>
 </ul>
 
@@ -482,7 +506,7 @@ ref的記憶體位址 = 0x7ff7bfeff468, ref = 10
 
 <h2 id="一定要初始化">一定要初始化</h2>
 
-<p>以下的程式寫法會編譯錯誤，因為ref別名沒有初始化。</p>
+<p>以下的程式寫法會編譯錯誤，因為ref參考別名沒有初始化。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -494,7 +518,9 @@ ref的記憶體位址 = 0x7ff7bfeff468, ref = 10
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="別名可以存取原始變數">別名可以存取原始變數</h2>
+<h2 id="參考別名跟原始變數功能一樣可以修改跟讀取記憶體內容">參考別名跟原始變數功能一樣，可以修改跟讀取記憶體內容。</h2>
+
+<p>參考別名跟原始變數都指向相同記憶體位址，所以可以做一樣的操作。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -524,9 +550,9 @@ i的記憶體位址 = 0x7ff7bfeff468, i = 30
 ref的記憶體位址 = 0x7ff7bfeff468, ref = 30
 </code></pre></div></div>
 
-<p>由執行結果可以發現修改ref別名，就等於修改變數i，i跟ref的值都變成30。</p>
+<p>由執行結果可以發現修改ref參考別名，就等於修改變數i，i跟ref的值都變成30。</p>
 
-<h2 id="一個變數可以多個別名">一個變數可以多個別名</h2>
+<h2 id="一個變數可以多個參考別名">一個變數可以多個參考別名</h2>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -560,7 +586,7 @@ ref3的記憶體位址 = 0x7ff7bfeff468, ref3 = 10
 
 <h2 id="各種寫法">各種寫法</h2>
 
-<p>&amp;只要介於<code class="language-plaintext highlighter-rouge">資料型態</code>與<code class="language-plaintext highlighter-rouge">別名</code>之間就可以，以下的宣告別名的方式都可以。</p>
+<p>&amp;只要介於<code class="language-plaintext highlighter-rouge">資料型態</code>與<code class="language-plaintext highlighter-rouge">參考別名</code>之間就可以，以下的宣告別名的方式都可以。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -570,7 +596,7 @@ ref3的記憶體位址 = 0x7ff7bfeff468, ref3 = 10
 5
 6
 </pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
-    <span class="c1">//宣告參考</span>
+    <span class="c1">//宣告參考別名</span>
     <span class="kt">int</span><span class="o">&amp;</span><span class="n">ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
     <span class="kt">int</span> <span class="o">&amp;</span><span class="n">ref2</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
     <span class="kt">int</span> <span class="o">&amp;</span> <span class="n">ref3</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
@@ -578,16 +604,16 @@ ref3的記憶體位址 = 0x7ff7bfeff468, ref3 = 10
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="資料型態要一致參考無強制轉型">資料型態要一致，參考無強制轉型</h2>
+<h2 id="資料型態要一致參考別名無強制轉型">資料型態要一致，參考別名無強制轉型</h2>
 
-<p>以下是錯誤的參考宣告</p>
+<p>以下是錯誤的參考別名宣告</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
-    <span class="c1">//宣告參考</span>
+    <span class="c1">//宣告參考別名</span>
     <span class="kt">double</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -625,10 +651,10 @@ ref3的記憶體位址 = 0x7ff7bfeff468, ref3 = 10
 <p>上方的程式碼</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    int j = 20;
-    ref = j; //將j變數 指派給 ref別名
+    ref = j; //將j變數的值 指派給 ref參考別名
 </code></pre></div></div>
 
-<p>以上意思並非把原始變數設為j，實際上是變數i修改成20，ref是變數i的別名，就等同於變數i，所以上述程式碼可以看成<code class="language-plaintext highlighter-rouge">i = 20;</code></p>
+<p>以上意思並非把原始變數設為j，實際上是變數i修改成20，ref是變數i的參考別名，就等同於變數i，所以上述程式碼可以看成<code class="language-plaintext highlighter-rouge">i = 20;</code></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 i的記憶體位址 = 0x7ff7bfeff468, i = 10
@@ -637,7 +663,7 @@ j的記憶體位址 = 0x7ff7bfeff45c, j = 20
 ref的記憶體位址 = 0x7ff7bfeff468, i = 20
 i的記憶體位址 = 0x7ff7bfeff468, i = 20
 </code></pre></div></div>
-<p>由執行結果可以發現，執行<code class="language-plaintext highlighter-rouge">ref = j;</code>別名j的記憶體位址跟i相同，但j的值變成20，i的值也變成20，修改ref就等同於修改i，所謂的別名就是給變數i另一個假名ref，但指向的都是相同記憶體位址。</p>
+<p>由執行結果可以發現，執行<code class="language-plaintext highlighter-rouge">ref = j;</code>參考別名j的記憶體位址跟i相同，但j的值變成20，i的值也變成20，修改ref就等同於修改i，所謂的參考別名就是給變數i另一個假名ref，但指向的都是相同記憶體位址。</p>
 
 </section>
             </div><div class="search-results">
@@ -709,7 +735,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/c/reference/callByRef" class="navigation navigation-next navigation-unique" aria-label="Next page: 傳參考">
+                        <a href="/pages/c/reference/callByValue" class="navigation navigation-next navigation-unique" aria-label="Next page: 函式傳值與回傳值">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -829,7 +855,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-07-02 12:51:30 +0800"
+        "time": "2024-07-03 14:18:27 +0800"
     },
     "basePath": "",
     "book": {

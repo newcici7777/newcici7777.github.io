@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>void*任何資料型態的指標 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>定義結構 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -181,12 +181,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
         
-            
-                <ul><li><a href="#函式的參數為void指標位址" onclick="mobilePageScrollToAnchor(this)" >函式的參數為void*指標(位址)</a></li><li><a href="#函式傳回值為void指標" onclick="mobilePageScrollToAnchor(this)" >函式傳回值為void*指標</a></li><li><a href="#不能對void指標使用取值運算子" onclick="mobilePageScrollToAnchor(this)" >不能對<code class="language-plaintext highlighter-rouge">void*指標使用取值運算子*</code></a></li><li><a href="#函式的參數為void" onclick="mobilePageScrollToAnchor(this)" >函式的參數為void</a></li></ul>
-
             
         </li>
 	
@@ -381,9 +378,12 @@
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 結構 </a><ul>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/struct/struct_def" onclick="pageScrollToTop(this)"> 定義結構</a>
         
+            
+                <ul><li><a href="#方式1" onclick="mobilePageScrollToAnchor(this)" >方式1</a><ul><li><a href="#宣告結構" onclick="mobilePageScrollToAnchor(this)" >宣告結構</a></li><li><a href="#結構放置位置" onclick="mobilePageScrollToAnchor(this)" >結構放置位置</a></li><li><a href="#定義結構變數" onclick="mobilePageScrollToAnchor(this)" >定義結構變數</a></li><li><a href="#存取結構成員" onclick="mobilePageScrollToAnchor(this)" >存取結構成員</a></li><li><a href="#完整程式碼" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul></li><li><a href="#方式2" onclick="mobilePageScrollToAnchor(this)" >方式2</a><ul><li><a href="#同時宣告結構與定義結構變數" onclick="mobilePageScrollToAnchor(this)" >同時宣告結構與定義結構變數</a></li><li><a href="#存取結構成員-1" onclick="mobilePageScrollToAnchor(this)" >存取結構成員</a></li><li><a href="#完整程式碼-1" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul></li><li><a href="#方式3" onclick="mobilePageScrollToAnchor(this)" >方式3</a><ul><li><a href="#宣告結構-1" onclick="mobilePageScrollToAnchor(this)" >宣告結構</a></li><li><a href="#定義結構變數-1" onclick="mobilePageScrollToAnchor(this)" >定義結構變數</a></li><li><a href="#存取結構成員-2" onclick="mobilePageScrollToAnchor(this)" >存取結構成員</a></li><li><a href="#完整程式碼-2" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul></li></ul>
+
             
         </li></ul></li>
 	
@@ -448,7 +448,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >void*任何資料型態的指標</a>
+                            <a href="." >定義結構</a>
                         
                     </h1>
                 </div>
@@ -461,12 +461,88 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/pointer/pointerVoid">void*任何資料型態的指標</h1>
+                        <h1 id="/pages/c/struct/struct_def">定義結構</h1>
                     
 
-                    <h3 id="函式的參數為void指標位址">函式的參數為void*指標(位址)</h3>
+                    <p>結構是變數的集合，變數可以不是不同型態，例如有的是int，有的是float，結構中每一個變數都是該結構的成員。</p>
 
-<p>函式的參數為void*指標，表示任何資料型態的指標(位址)都可以傳進函式，而且不需要轉型。</p>
+<p>定義結構有以下三種方式</p>
+
+<h2 id="方式1">方式1</h2>
+
+<h3 id="宣告結構">宣告結構</h3>
+
+<p>關鍵字struct宣告，緊號於struct後的是結構名稱，變數的宣告都在大括號{}內，大括號{}結尾一定要加上分號;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>struct 結構名{
+	變數宣告
+};
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
+    <span class="c1">//學生姓名</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
+    <span class="c1">//學號</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="結構放置位置">結構放置位置</h3>
+
+<p>放在main()上面，或者放在標頭檔。</p>
+
+<h3 id="定義結構變數">定義結構變數</h3>
+
+<p>結構可想像成一種新的資料型態，int也是一種資料型態，定義結構變數會在記憶體配置空間。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>結構名 變數名;
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="存取結構成員">存取結構成員</h3>
+
+<p>使用點運算子(dot operator)存取結構成員。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>cout讀取結構成員。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="完整程式碼">完整程式碼</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -485,78 +561,79 @@
 14
 15
 16
-17
-</pre></td><td class="code"><pre><span class="c1">//宣告printAddr的函式，參數資料型態為void*指標</span>
-<span class="kt">void</span> <span class="nf">printAddr</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//印出位址</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
+    <span class="c1">//學生姓名</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
+    <span class="c1">//學號</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+<span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="c1">//將整數i變數的位址傳入</span>
-    <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">i</span><span class="p">);</span>
-    <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
-    <span class="c1">//將字元c變數的位址傳入</span>
-    <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="p">);</span>
-    <span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mf">150.222</span><span class="p">;</span>
-    <span class="c1">//將浮點數d變數的位址傳入</span>
-    <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">d</span><span class="p">);</span>
+    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-0x7ff7bfeff468
-0x7ff7bfeff467
-0x7ff7bfeff458
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mary
+1
 </code></pre></div></div>
 
-<h3 id="函式傳回值為void指標">函式傳回值為void*指標</h3>
+<h2 id="方式2">方式2</h2>
 
-<p>表示可以回傳任何資料型態的指標(位址)，可以轉型成任何資料型態指標。</p>
+<h3 id="同時宣告結構與定義結構變數">同時宣告結構與定義結構變數</h3>
 
-<p>以下為malloc的回傳資料型態void<em>指標(位址)，void</em>指標可以轉成任何資料型態指標，參數size_t  __size代表設定空間大小。</p>
+<p>在大括號的結尾輸入結構變數，在main()函數不用定義結構變數，直接使用結構變數。</p>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">void</span><span class="o">*</span> <span class="n">malloc</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">__size</span><span class="p">)</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>使用方式</p>
-
-<p>在heap區段，建立10 byte的記憶體空間，將回傳的位址轉成char資料型態的指標。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">char</span> <span class="o">*</span><span class="n">name</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="c1">//10byte</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>在heap區段，建立1mb的記憶體空間，將回傳的位址轉成int資料型態的指標。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="o">*</span><span class="n">num</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span> <span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="mi">1</span> <span class="o">*</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">);</span><span class="c1">//1byte*1024 = 1kb -&gt;1kb*1024=1mb</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="不能對void指標使用取值運算子">不能對<code class="language-plaintext highlighter-rouge">void*指標使用取值運算子*</code></h3>
-
-<p>不能對void*指標使用<code class="language-plaintext highlighter-rouge">取值運算子*</code>，需要轉換成其它資料型態的指標才可以使用<code class="language-plaintext highlighter-rouge">取值運算子*</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>struct 結構名{
+	變數宣告
+}結構變數;
+</code></pre></div></div>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">printAddr</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//編譯失敗，不能對p指標使用取值運算子*，因為它是void*指標資料型態，必須轉型後才能對指標取出內容</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+5
+6
+</pre></td><td class="code"><pre><span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
+    <span class="c1">//學生姓名</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
+    <span class="c1">//學號</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+<span class="p">}</span><span class="n">student</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="存取結構成員-1">存取結構成員</h3>
+
+<p>在main()函數不用定義結構變數，直接使用結構變數。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<h3 id="完整程式碼-1">完整程式碼</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -568,43 +645,110 @@
 7
 8
 9
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">printAddr</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//先將p指標轉型成char*指標，接著使用`取值運算子*`取出指標位址中的內容</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
+10
+11
+12
+13
+14
+15
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
+    <span class="c1">//學生姓名</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
+    <span class="c1">//學號</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+<span class="p">}</span><span class="n">student</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
-    <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="p">);</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-a
+<h2 id="方式3">方式3</h2>
+
+<h3 id="宣告結構-1">宣告結構</h3>
+
+<p>使用typedef(型別定義)關鍵字，後面緊跟著struct關鍵字，再來是大括號{}，變數的宣告在大括號{}中，結構名放在大括號結尾，最後加上分號;結束。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>typedef struct{
+	變數宣告
+}結構名;
 </code></pre></div></div>
-
-<h3 id="函式的參數為void">函式的參數為void</h3>
-
-<p>函式的參數為void，代表不接受任何參數。</p>
-
-<p>rand()產生亂數，以下為rand函式的定義，不接受任何參數，回傳int</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">rand</span> <span class="p">(</span><span class="kt">void</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>產生0-100的亂數</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="n">rand</span><span class="p">()</span><span class="o">%</span><span class="mi">100</span><span class="p">;</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"rand = %d </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">num</span><span class="p">);</span>
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
+    <span class="c1">//學生姓名</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
+    <span class="c1">//學號</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<h3 id="定義結構變數-1">定義結構變數</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>結構名 變數名;
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="存取結構成員-2">存取結構成員</h3>
+
+<p>與方式一相同。</p>
+
+<h3 id="完整程式碼-2">完整程式碼</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
+    <span class="c1">//學生姓名</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
+    <span class="c1">//學號</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -668,14 +812,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/pointer/pointerConst" class="navigation navigation-prev navigation-unique" aria-label="Previous page: const與指標">
+                        <a href="/pages/c/dynamicMemory/nothrow" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 記憶體不足">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/pointer/nullptr" class="navigation navigation-next navigation-unique" aria-label="Next page: 0 == nullptr == NULL">
+                        <a href="/pages/c/conversion/implicit" class="navigation navigation-next navigation-unique" aria-label="Next page: 自動轉型">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -691,15 +835,6 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
-        
-        "next": {
-            "title": "指標位址是無效內容",
-            "level": "1.2",
-            "depth": 1,
-            "path": "_pages/c/pointer/wildPointer.md",
-            "ref": "_pages/c/pointer/wildPointer.md",
-            "articles": []
-        },
         
         "dir": "ltr"
     },    "config": {
@@ -789,8 +924,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/pointer/pointerVoid.md",
-        "mtime": "2024-05-30 00:00:00 +0800",
+        "path": "_pages/c/struct/struct_def.md",
+        "mtime": "2024-07-03 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

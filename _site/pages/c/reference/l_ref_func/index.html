@@ -296,6 +296,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/reference/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/reference/callByRef" onclick="pageScrollToTop(this)"> 傳參考</a>
         
             
@@ -330,11 +337,18 @@
         </li>
 	
 	
+	<li class="">
+    	<a href="/pages/c/reference/func_return_ref" onclick="pageScrollToTop(this)"> 函式傳回值是參考</a>
+        
+            
+        </li>
+	
+	
 	<li class="active">
     	<a href="/pages/c/reference/l_ref_func" onclick="pageScrollToTop(this)"> 等號左邊的函式</a>
         
             
-                <ul><li><a href="#函式回傳值是參考" onclick="mobilePageScrollToAnchor(this)" >函式回傳值是參考</a></li><li><a href="#不能傳回區域變數的參考" onclick="mobilePageScrollToAnchor(this)" >不能傳回區域變數的參考</a></li><li><a href="#引數作為參考" onclick="mobilePageScrollToAnchor(this)" >引數作為參考</a></li></ul>
+                <ul><li><a href="#函式傳回值是參考別名" onclick="mobilePageScrollToAnchor(this)" >函式傳回值是參考別名</a></li><li><a href="#不能傳回區域變數的參考" onclick="mobilePageScrollToAnchor(this)" >不能傳回區域變數的參考</a></li><li><a href="#引數作為參考" onclick="mobilePageScrollToAnchor(this)" >引數作為參考</a></li><li><a href="#函式不想放在等號左邊" onclick="mobilePageScrollToAnchor(this)" >函式不想放在等號左邊</a></li></ul>
 
             
         </li></ul></li>
@@ -359,6 +373,16 @@
 	
 	<li class="">
     	<a href="/pages/c/dynamicMemory/nothrow" onclick="pageScrollToTop(this)"> 記憶體不足</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 結構 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_def" onclick="pageScrollToTop(this)"> 定義結構</a>
         
             
         </li></ul></li>
@@ -446,11 +470,12 @@
   <li><a href="/pages/c/reference/l_r_value/">l-value與r-value</a></li>
   <li><a href="/pages/c/reference/l_r_ref/">l-value參考與r-value參考</a></li>
   <li><a href="/pages/c/pointer/pointerParam/#引數-argument">引數</a></li>
+  <li><a href="/pages/c/reference/func_return_ref/">函式傳回值是參考</a></li>
 </ul>
 
-<h2 id="函式回傳值是參考">函式回傳值是參考</h2>
+<h2 id="函式傳回值是參考別名">函式傳回值是參考別名</h2>
 
-<p>以下程式碼是將全域變數x的參考作為回傳值。</p>
+<p>以下程式碼是將全域變數x的參考別名作為傳回值。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -461,7 +486,7 @@
 6
 </pre></td><td class="code"><pre><span class="c1">//全域變數</span>
 <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-<span class="c1">//返回全域變數x的參考</span>
+<span class="c1">//返回全域變數x的參考別名</span>
 <span class="kt">int</span><span class="o">&amp;</span> <span class="n">setX</span><span class="p">(){</span>
     <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
 <span class="p">}</span>
@@ -532,7 +557,7 @@ After x = 99
 
 <h2 id="引數作為參考">引數作為參考</h2>
 
-<p>以下程式碼將main()函式中的x變數傳進setX()的函式，並回傳x變數的參考。</p>
+<p>以下程式碼將main()函式中的x變數傳進setX()的函式，並回傳x變數的匿名參考別名。</p>
 
 <p>將x的參考設值99。</p>
 
@@ -550,8 +575,8 @@ After x = 99
 11
 12
 13
-</pre></td><td class="code"><pre><span class="c1">//回傳值為參考</span>
-<span class="c1">//參數r為x的參考</span>
+</pre></td><td class="code"><pre><span class="c1">//回傳值為參考別名</span>
+<span class="c1">//參數r為x的參考別名</span>
 <span class="kt">int</span><span class="o">&amp;</span> <span class="n">setX</span><span class="p">(</span><span class="kt">int</span><span class="o">&amp;</span> <span class="n">r</span><span class="p">){</span>
     <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
 <span class="p">}</span>
@@ -568,6 +593,56 @@ After x = 99
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Before x = 10
 After x = 99
+</code></pre></div></div>
+
+<h2 id="函式不想放在等號左邊">函式不想放在等號左邊</h2>
+
+<p>若不想被人修改傳回值，可將傳回值設為const，但函式呼叫者也需要加上const。</p>
+
+<p>函式語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const 資料型態&amp; 函式名(資料型態&amp; 原始變數);
+const int&amp; getValue(int&amp; z);
+</code></pre></div></div>
+
+<p>函式呼叫者</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const 資料型態&amp; 別名 = 函式名(原始變數);
+const int&amp; y = getValue(x);
+</code></pre></div></div>
+
+<p>以下程式碼將編譯錯誤，函式無法放在等號左邊。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>getValue(x) = 100;
+</code></pre></div></div>
+
+<p>以下為完整程式碼</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">getValue</span><span class="p">(</span><span class="kt">int</span><span class="o">&amp;</span> <span class="n">z</span><span class="p">){</span>
+    <span class="n">z</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">z</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">y</span> <span class="o">=</span> <span class="n">getValue</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"x = "</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"y = "</span> <span class="o">&lt;&lt;</span> <span class="n">y</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x = 11
+y = 11
 </code></pre></div></div>
 
 </section>
@@ -633,7 +708,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/reference/constRef" class="navigation navigation-prev navigation-unique" aria-label="Previous page: const與參考">
+                        <a href="/pages/c/reference/func_return_ref" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 函式傳回值是參考">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -656,6 +731,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "定義結構",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/c/struct/struct_def.md",
+            "ref": "_pages/c/struct/struct_def.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -751,7 +835,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-07-02 12:51:30 +0800"
+        "time": "2024-07-03 14:18:27 +0800"
     },
     "basePath": "",
     "book": {
