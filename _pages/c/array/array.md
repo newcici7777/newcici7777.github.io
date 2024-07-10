@@ -151,7 +151,9 @@ arr1[8] = 0
 arr1[9] = 0
 ```
 
-### memset() 陣列中每個元素設為整數0
+### memset陣列清空
+
+陣列中每個元素記憶體位址的值設為00000000。
 
 void* memset(void *s, int c, size_t n);
 

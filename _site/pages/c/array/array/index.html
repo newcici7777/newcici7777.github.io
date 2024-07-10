@@ -230,7 +230,7 @@
     	<a href="/pages/c/array/array" onclick="pageScrollToTop(this)"> 陣列</a>
         
             
-                <ul><li><a href="#初始化值" onclick="mobilePageScrollToAnchor(this)" >初始化值</a></li><li><a href="#陣列長度" onclick="mobilePageScrollToAnchor(this)" >陣列長度</a><ul><li><a href="#常數" onclick="mobilePageScrollToAnchor(this)" >常數</a></li><li><a href="#運算式" onclick="mobilePageScrollToAnchor(this)" >運算式</a></li></ul></li><li><a href="#陣列中有多少元素" onclick="mobilePageScrollToAnchor(this)" >陣列中有多少元素？</a></li><li><a href="#陣列中每一個值都初始化為整數0" onclick="mobilePageScrollToAnchor(this)" >陣列中每一個值都初始化為整數0</a></li><li><a href="#memset-陣列中每個元素設為整數0" onclick="mobilePageScrollToAnchor(this)" >memset() 陣列中每個元素設為整數0</a></li><li><a href="#memcpy-複製陣列記憶體內容複製" onclick="mobilePageScrollToAnchor(this)" >memcpy() 複製陣列，記憶體內容複製</a><ul><li><a href="#複製全部元素" onclick="mobilePageScrollToAnchor(this)" >複製全部元素</a></li><li><a href="#複製部分元素" onclick="mobilePageScrollToAnchor(this)" >複製部分元素</a></li></ul></li></ul>
+                <ul><li><a href="#初始化值" onclick="mobilePageScrollToAnchor(this)" >初始化值</a></li><li><a href="#陣列長度" onclick="mobilePageScrollToAnchor(this)" >陣列長度</a><ul><li><a href="#常數" onclick="mobilePageScrollToAnchor(this)" >常數</a></li><li><a href="#運算式" onclick="mobilePageScrollToAnchor(this)" >運算式</a></li></ul></li><li><a href="#陣列中有多少元素" onclick="mobilePageScrollToAnchor(this)" >陣列中有多少元素？</a></li><li><a href="#陣列中每一個值都初始化為整數0" onclick="mobilePageScrollToAnchor(this)" >陣列中每一個值都初始化為整數0</a></li><li><a href="#memset陣列清空" onclick="mobilePageScrollToAnchor(this)" >memset陣列清空</a></li><li><a href="#memcpy-複製陣列記憶體內容複製" onclick="mobilePageScrollToAnchor(this)" >memcpy() 複製陣列，記憶體內容複製</a><ul><li><a href="#複製全部元素" onclick="mobilePageScrollToAnchor(this)" >複製全部元素</a></li><li><a href="#複製部分元素" onclick="mobilePageScrollToAnchor(this)" >複製部分元素</a></li></ul></li></ul>
 
             
         </li>
@@ -383,6 +383,48 @@
 	
 	<li class="">
     	<a href="/pages/c/struct/struct_def" onclick="pageScrollToTop(this)"> 定義結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_char" onclick="pageScrollToTop(this)"> 結構與字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_init" onclick="pageScrollToTop(this)"> 初始化結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_array" onclick="pageScrollToTop(this)"> 結構陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_pointer" onclick="pageScrollToTop(this)"> 指標指向結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/nested_struct" onclick="pageScrollToTop(this)"> 巢狀結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_within_array" onclick="pageScrollToTop(this)"> 結構中的陣列</a>
         
             
         </li></ul></li>
@@ -654,7 +696,9 @@ arr1[8] = 0
 arr1[9] = 0
 </code></pre></div></div>
 
-<h3 id="memset-陣列中每個元素設為整數0">memset() 陣列中每個元素設為整數0</h3>
+<h3 id="memset陣列清空">memset陣列清空</h3>
+
+<p>陣列中每個元素記憶體位址的值設為00000000。</p>
 
 <p>void* memset(void *s, int c, size_t n);</p>
 
@@ -1049,7 +1093,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-07-03 14:18:27 +0800"
+        "time": "2024-07-11 01:45:47 +0800"
     },
     "basePath": "",
     "book": {
@@ -1076,6 +1120,9 @@ window.MathJax = {
 <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
 <script src="../gitbook/gitbook-plugin-search/search.js"></script>
 -->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
 
 </body>
 </html>

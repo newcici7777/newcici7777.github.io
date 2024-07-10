@@ -32,13 +32,14 @@ str1 長度 = 5,內容 = hello
 arr 長度 = 11,內容 = helloohello
 arr sizeof = 6
 ```
+
 ## 字串常數
 
-注意!以下""雙引號包住的字串是常數，常數代表不可以修改，編譯器會自動加上'\0'作結尾，不用手動加'\0'。
+注意!以下""雙引號包住的字串是常數，編譯器會自動加上'\0'作結尾，不用手動加'\0'。
 
 {% highlight c++ linenos %}
-	//字串常數
-    char str1[] = "hello"
+//字串常數
+char str1[] = "hello"
 {% endhighlight %}
 
 ## 字串常數宣告
@@ -81,42 +82,7 @@ cstr6 長度 = 5,內容 = hello
 cstr7 長度 = 0,內容 = 
 ```
 
-
-## 二維陣列字串
-
-參考
-
-[二維陣列]({% link _pages/c/array/array2dimen.md %})
-
-以下的例子是建立二維的字串，總共有7個字串，每個字串最大長度為10，Wednesday是最長字串，長度為9，加上\0就等於10。
-
-{% highlight c++ linenos %}
-#include <iostream>
-using namespace std;
-const int DAYS = 7; //字串數，7個字串
-const int MAX = 10; // 每個字串最大長度，包含\0
-int main() {
-    char str[DAYS][MAX] = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
-    for(int i = 0; i < DAYS; i++) {
-        //印出字串
-        cout << str[i] << endl;
-    }
-    return 0;
-}
-{% endhighlight %}
-
-```
-Sunday
-Monday
-Tuesday
-Wednesday
-Thursday
-Friday
-Saturday
-
-```
-
-## 字串全設為\0
+## 字串清空
 
 使用memset，第二個參數設為0，代表把字串的記憶體位址的值全設為\0。
 {% highlight c++ linenos %}
@@ -159,6 +125,29 @@ char * strcpy ( char * destination, const char * source );
 ```
 執行結果
 c_str4:hel
+```
+
+## 字串修改
+
+不能使用`等於=`修改字串，以下語法會編譯錯誤。
+
+{% highlight c++ linenos %}
+    char c_str1[6] = "Hello";
+    c_str1 = "abc";
+{% endhighlight %}
+
+使用strcpy修改字串。
+
+{% highlight c++ linenos %}
+    char c_str1[6] = "Hello";
+    cout << "Before = " << c_str1 << endl;
+    strcpy(c_str1,"Dog");
+    cout << "After = " << c_str1 << endl;
+{% endhighlight %}
+
+```
+Before = Hello
+After = Dog
 ```
 
 ## 字元個數拷貝 strncpy
@@ -254,3 +243,41 @@ c_str4長度:6
 執行結果
 c_str3 + c_str4 = helte
 ```
+
+
+## 二維陣列字串
+
+參考
+
+[二維陣列]({% link _pages/c/array/array2dimen.md %})
+
+以下的例子是建立二維的字串，總共有7個字串，每個字串最大長度為10，Wednesday是最長字串，長度為9，加上\0就等於10。
+
+{% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+const int DAYS = 7; //字串數，7個字串
+const int MAX = 10; // 每個字串最大長度，包含\0
+int main() {
+    char str[DAYS][MAX] = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
+    for(int i = 0; i < DAYS; i++) {
+        //印出字串
+        cout << str[i] << endl;
+    }
+    return 0;
+}
+{% endhighlight %}
+
+```
+Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+
+```
+
+
+

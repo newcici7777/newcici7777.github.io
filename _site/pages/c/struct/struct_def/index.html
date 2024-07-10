@@ -382,8 +382,50 @@
     	<a href="/pages/c/struct/struct_def" onclick="pageScrollToTop(this)"> 定義結構</a>
         
             
-                <ul><li><a href="#方式1" onclick="mobilePageScrollToAnchor(this)" >方式1</a><ul><li><a href="#宣告結構" onclick="mobilePageScrollToAnchor(this)" >宣告結構</a></li><li><a href="#結構放置位置" onclick="mobilePageScrollToAnchor(this)" >結構放置位置</a></li><li><a href="#定義結構變數" onclick="mobilePageScrollToAnchor(this)" >定義結構變數</a></li><li><a href="#存取結構成員" onclick="mobilePageScrollToAnchor(this)" >存取結構成員</a></li><li><a href="#完整程式碼" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul></li><li><a href="#方式2" onclick="mobilePageScrollToAnchor(this)" >方式2</a><ul><li><a href="#同時宣告結構與定義結構變數" onclick="mobilePageScrollToAnchor(this)" >同時宣告結構與定義結構變數</a></li><li><a href="#存取結構成員-1" onclick="mobilePageScrollToAnchor(this)" >存取結構成員</a></li><li><a href="#完整程式碼-1" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul></li><li><a href="#方式3" onclick="mobilePageScrollToAnchor(this)" >方式3</a><ul><li><a href="#宣告結構-1" onclick="mobilePageScrollToAnchor(this)" >宣告結構</a></li><li><a href="#定義結構變數-1" onclick="mobilePageScrollToAnchor(this)" >定義結構變數</a></li><li><a href="#存取結構成員-2" onclick="mobilePageScrollToAnchor(this)" >存取結構成員</a></li><li><a href="#完整程式碼-2" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul></li></ul>
+                <ul><li><a href="#方式1" onclick="mobilePageScrollToAnchor(this)" >方式1</a><ul><li><a href="#宣告結構" onclick="mobilePageScrollToAnchor(this)" >宣告結構</a></li><li><a href="#結構放置位置" onclick="mobilePageScrollToAnchor(this)" >結構放置位置</a></li><li><a href="#定義結構變數" onclick="mobilePageScrollToAnchor(this)" >定義結構變數</a></li><li><a href="#存取結構成員" onclick="mobilePageScrollToAnchor(this)" >存取結構成員</a><ul><li><a href="#點運算子" onclick="mobilePageScrollToAnchor(this)" >點運算子</a></li><li><a href="#大括號" onclick="mobilePageScrollToAnchor(this)" >大括號</a></li></ul></li></ul></li><li><a href="#方式2" onclick="mobilePageScrollToAnchor(this)" >方式2</a><ul><li><a href="#同時宣告結構與定義結構變數" onclick="mobilePageScrollToAnchor(this)" >同時宣告結構與定義結構變數</a></li><li><a href="#存取結構成員-1" onclick="mobilePageScrollToAnchor(this)" >存取結構成員</a></li><li><a href="#完整程式碼" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul></li><li><a href="#方式3" onclick="mobilePageScrollToAnchor(this)" >方式3</a><ul><li><a href="#宣告結構-1" onclick="mobilePageScrollToAnchor(this)" >宣告結構</a></li><li><a href="#定義結構變數-1" onclick="mobilePageScrollToAnchor(this)" >定義結構變數</a></li><li><a href="#存取結構成員-2" onclick="mobilePageScrollToAnchor(this)" >存取結構成員</a></li><li><a href="#完整程式碼-1" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_char" onclick="pageScrollToTop(this)"> 結構與字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_init" onclick="pageScrollToTop(this)"> 初始化結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_array" onclick="pageScrollToTop(this)"> 結構陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_pointer" onclick="pageScrollToTop(this)"> 指標指向結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/nested_struct" onclick="pageScrollToTop(this)"> 巢狀結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_within_array" onclick="pageScrollToTop(this)"> 結構中的陣列</a>
+        
             
         </li></ul></li>
 	
@@ -520,7 +562,11 @@
 
 <h3 id="存取結構成員">存取結構成員</h3>
 
-<p>使用點運算子(dot operator)存取結構成員。</p>
+<p>存取方式有二種</p>
+
+<h4 id="點運算子">點運算子</h4>
+
+<p>使用點運算子(dot operator)指派或修改結構成員的值。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -542,7 +588,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="完整程式碼">完整程式碼</h3>
+<p>完整程式碼</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -583,6 +629,67 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mary
 1
 </code></pre></div></div>
+
+<h4 id="大括號">大括號</h4>
+
+<p>使用大括號修改結構。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>結構名 = {值1,值2,值3, ...};
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Bill"</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>完整程式碼</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
+    <span class="c1">//學生姓名</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
+    <span class="c1">//學號</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Bill"</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 <h2 id="方式2">方式2</h2>
 
@@ -633,7 +740,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="完整程式碼-1">完整程式碼</h3>
+<h3 id="完整程式碼">完整程式碼</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -709,9 +816,9 @@
 
 <h3 id="存取結構成員-2">存取結構成員</h3>
 
-<p>與方式一相同。</p>
+<p>與<a href="#存取結構成員">方式一</a>相同。</p>
 
-<h3 id="完整程式碼-2">完整程式碼</h3>
+<h3 id="完整程式碼-1">完整程式碼</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -819,7 +926,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/c/conversion/implicit" class="navigation navigation-next navigation-unique" aria-label="Next page: 自動轉型">
+                        <a href="/pages/c/struct/struct_char" class="navigation navigation-next navigation-unique" aria-label="Next page: 結構與字串">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -835,6 +942,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "指標指向結構",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/c/struct/struct_pointer.md",
+            "ref": "_pages/c/struct/struct_pointer.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -930,7 +1046,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-07-03 14:18:27 +0800"
+        "time": "2024-07-11 01:45:47 +0800"
     },
     "basePath": "",
     "book": {
@@ -957,6 +1073,9 @@ window.MathJax = {
 <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
 <script src="../gitbook/gitbook-plugin-search/search.js"></script>
 -->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
 
 </body>
 </html>

@@ -47,7 +47,12 @@
             $(element).closest('li.chapter').find('ul>li').removeClass('active');
             $(element).parent().addClass('active');
             if ($(document).width() <= 1240) {
-                $('div.body-inner').animate({scrollTop: $($(element).attr('href')).get(0).offsetTop});
+                let target = $($(element).attr('href'));
+                if (target.length) {
+                    $('div.body-inner').animate({
+                        scrollTop: target.get(0).offsetTop,
+                    });
+                }
             }
             return true;
         }
@@ -72,573 +77,641 @@
             <li class="divider"></li>
 
             
-                <!-- <p>pages</p> -->
                 
+                    <!-- <p>pages</p> -->
                     
+                        
 
-                    
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/editor/xcode/">
-                        
-                            <a href="/pages/c/editor/xcode/" onclick="pageScrollToTop(this)">
-                                Xcode
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/editor/xcode/">
+                            
+                                <a href="/pages/c/editor/xcode/" onclick="pageScrollToTop(this)">
+                                    Xcode
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/jekyll/install/how_to_install_ruby/">
-                        
-                            <a href="/pages/jekyll/install/how_to_install_ruby/" onclick="pageScrollToTop(this)">
-                                安裝 Ruby on Mac
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/basic/charType/">
-                        
-                            <a href="/pages/c/basic/charType/" onclick="pageScrollToTop(this)">
-                                char字元
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/jekyll/install/how_to_install_ruby/">
+                            
+                                <a href="/pages/jekyll/install/how_to_install_ruby/" onclick="pageScrollToTop(this)">
+                                    安裝 Ruby on Mac
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/basic/printformat/">
-                        
-                            <a href="/pages/c/basic/printformat/" onclick="pageScrollToTop(this)">
-                                整數與浮點數
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/basic/scope/">
-                        
-                            <a href="/pages/c/basic/scope/" onclick="pageScrollToTop(this)">
-                                變數可見範圍與生命週期
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/basic/charType/">
+                            
+                                <a href="/pages/c/basic/charType/" onclick="pageScrollToTop(this)">
+                                    char字元
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/editor/cmake/">
-                        
-                            <a href="/pages/c/editor/cmake/" onclick="pageScrollToTop(this)">
-                                Cmake on Mac
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/editor/supportc11/">
-                        
-                            <a href="/pages/c/editor/supportc11/" onclick="pageScrollToTop(this)">
-                                Xcode支援C++11以上
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/basic/printformat/">
+                            
+                                <a href="/pages/c/basic/printformat/" onclick="pageScrollToTop(this)">
+                                    整數與浮點數
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/editor/vscode/">
-                        
-                            <a href="/pages/c/editor/vscode/" onclick="pageScrollToTop(this)">
-                                VS Code on Mac
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/template/classTemplate/">
-                        
-                            <a href="/pages/c/template/classTemplate/" onclick="pageScrollToTop(this)">
-                                類別模板
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/basic/scope/">
+                            
+                                <a href="/pages/c/basic/scope/" onclick="pageScrollToTop(this)">
+                                    變數可見範圍與生命週期
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/template/funTemplate/">
-                        
-                            <a href="/pages/c/template/funTemplate/" onclick="pageScrollToTop(this)">
-                                函式模板
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/template/stackTemplate/">
-                        
-                            <a href="/pages/c/template/stackTemplate/" onclick="pageScrollToTop(this)">
-                                Stack實作(int Array)
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/editor/cmake/">
+                            
+                                <a href="/pages/c/editor/cmake/" onclick="pageScrollToTop(this)">
+                                    Cmake on Mac
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/basic/typicalRange/">
-                        
-                            <a href="/pages/c/basic/typicalRange/" onclick="pageScrollToTop(this)">
-                                資料型態範圍
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/basic/boolType/">
-                        
-                            <a href="/pages/c/basic/boolType/" onclick="pageScrollToTop(this)">
-                                bool
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/editor/supportc11/">
+                            
+                                <a href="/pages/c/editor/supportc11/" onclick="pageScrollToTop(this)">
+                                    Xcode支援C++11以上
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/dynamicMemory/memoryLayout/">
-                        
-                            <a href="/pages/c/dynamicMemory/memoryLayout/" onclick="pageScrollToTop(this)">
-                                記憶體配置
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/conversion/explicit/">
-                        
-                            <a href="/pages/c/conversion/explicit/" onclick="pageScrollToTop(this)">
-                                強制轉型
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/editor/vscode/">
+                            
+                                <a href="/pages/c/editor/vscode/" onclick="pageScrollToTop(this)">
+                                    VS Code on Mac
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/conversion/implicit/">
-                        
-                            <a href="/pages/c/conversion/implicit/" onclick="pageScrollToTop(this)">
-                                自動轉型
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/pointer/">
-                        
-                            <a href="/pages/c/pointer/pointer/" onclick="pageScrollToTop(this)">
-                                指標基本觀念
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/template/classTemplate/">
+                            
+                                <a href="/pages/c/template/classTemplate/" onclick="pageScrollToTop(this)">
+                                    類別模板
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/pointerConst/">
-                        
-                            <a href="/pages/c/pointer/pointerConst/" onclick="pageScrollToTop(this)">
-                                const與指標
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/pointerParam/">
-                        
-                            <a href="/pages/c/pointer/pointerParam/" onclick="pageScrollToTop(this)">
-                                函式參數為指標
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/template/funTemplate/">
+                            
+                                <a href="/pages/c/template/funTemplate/" onclick="pageScrollToTop(this)">
+                                    函式模板
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/basic/simpleTraditionC/">
-                        
-                            <a href="/pages/c/basic/simpleTraditionC/" onclick="pageScrollToTop(this)">
-                                台陸指標相關名詞差異
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/dynamicMemory/newDelete/">
-                        
-                            <a href="/pages/c/dynamicMemory/newDelete/" onclick="pageScrollToTop(this)">
-                                new/delete
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/template/stackTemplate/">
+                            
+                                <a href="/pages/c/template/stackTemplate/" onclick="pageScrollToTop(this)">
+                                    Stack實作(int Array)
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/newDelete/">
-                        
-                            <a href="/pages/c/pointer/newDelete/" onclick="pageScrollToTop(this)">
-                                new/delete
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/nullptr/">
-                        
-                            <a href="/pages/c/pointer/nullptr/" onclick="pageScrollToTop(this)">
-                                0 == nullptr == NULL
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/basic/typicalRange/">
+                            
+                                <a href="/pages/c/basic/typicalRange/" onclick="pageScrollToTop(this)">
+                                    資料型態範圍
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/pointerVoid/">
-                        
-                            <a href="/pages/c/pointer/pointerVoid/" onclick="pageScrollToTop(this)">
-                                void*任何資料型態的指標
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/wildPointer/">
-                        
-                            <a href="/pages/c/pointer/wildPointer/" onclick="pageScrollToTop(this)">
-                                指標位址是無效內容
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/basic/boolType/">
+                            
+                                <a href="/pages/c/basic/boolType/" onclick="pageScrollToTop(this)">
+                                    bool
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/functionPointer/">
-                        
-                            <a href="/pages/c/pointer/functionPointer/" onclick="pageScrollToTop(this)">
-                                函式指標
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/array/array/">
-                        
-                            <a href="/pages/c/array/array/" onclick="pageScrollToTop(this)">
-                                陣列
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/dynamicMemory/memoryLayout/">
+                            
+                                <a href="/pages/c/dynamicMemory/memoryLayout/" onclick="pageScrollToTop(this)">
+                                    記憶體配置
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/array/pointerToArray/">
-                        
-                            <a href="/pages/c/array/pointerToArray/" onclick="pageScrollToTop(this)">
-                                一維陣列與指標
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/pointerArithmetic/">
-                        
-                            <a href="/pages/c/pointer/pointerArithmetic/" onclick="pageScrollToTop(this)">
-                                指標運算
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/conversion/explicit/">
+                            
+                                <a href="/pages/c/conversion/explicit/" onclick="pageScrollToTop(this)">
+                                    強制轉型
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/pointerToPointer/">
-                        
-                            <a href="/pages/c/pointer/pointerToPointer/" onclick="pageScrollToTop(this)">
-                                指標的指標
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/array/dynamicArrays/">
-                        
-                            <a href="/pages/c/array/dynamicArrays/" onclick="pageScrollToTop(this)">
-                                陣列與動態配置記憶體
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/conversion/implicit/">
+                            
+                                <a href="/pages/c/conversion/implicit/" onclick="pageScrollToTop(this)">
+                                    自動轉型
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/array/charArray/">
-                        
-                            <a href="/pages/c/array/charArray/" onclick="pageScrollToTop(this)">
-                                char 字串
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/array/qsort/">
-                        
-                            <a href="/pages/c/array/qsort/" onclick="pageScrollToTop(this)">
-                                qsort排序
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/pointer/">
+                            
+                                <a href="/pages/c/pointer/pointer/" onclick="pageScrollToTop(this)">
+                                    指標基本觀念
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/basic/typedef/">
-                        
-                            <a href="/pages/c/basic/typedef/" onclick="pageScrollToTop(this)">
-                                typedef 型別定義
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/dynamicMemory/nothrow/">
-                        
-                            <a href="/pages/c/dynamicMemory/nothrow/" onclick="pageScrollToTop(this)">
-                                記憶體不足
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/pointerConst/">
+                            
+                                <a href="/pages/c/pointer/pointerConst/" onclick="pageScrollToTop(this)">
+                                    const與指標
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/array/array2dimen/">
-                        
-                            <a href="/pages/c/array/array2dimen/" onclick="pageScrollToTop(this)">
-                                二維陣列
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/array/arrayOfPointers/">
-                        
-                            <a href="/pages/c/array/arrayOfPointers/" onclick="pageScrollToTop(this)">
-                                指標陣列存放多個記憶體位址
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/pointerParam/">
+                            
+                                <a href="/pages/c/pointer/pointerParam/" onclick="pageScrollToTop(this)">
+                                    函式參數為指標
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/array/pointerCharArr/">
-                        
-                            <a href="/pages/c/array/pointerCharArr/" onclick="pageScrollToTop(this)">
-                                char字串指標
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/reference/callByRef/">
-                        
-                            <a href="/pages/c/reference/callByRef/" onclick="pageScrollToTop(this)">
-                                傳參考
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/basic/simpleTraditionC/">
+                            
+                                <a href="/pages/c/basic/simpleTraditionC/" onclick="pageScrollToTop(this)">
+                                    台陸指標相關名詞差異
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/reference/refToPointer/">
-                        
-                            <a href="/pages/c/reference/refToPointer/" onclick="pageScrollToTop(this)">
-                                參考指向指標
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/reference/reference/">
-                        
-                            <a href="/pages/c/reference/reference/" onclick="pageScrollToTop(this)">
-                                參考
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/dynamicMemory/newDelete/">
+                            
+                                <a href="/pages/c/dynamicMemory/newDelete/" onclick="pageScrollToTop(this)">
+                                    new/delete
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/basic/l_r_value/">
-                        
-                            <a href="/pages/c/basic/l_r_value/" onclick="pageScrollToTop(this)">
-                                l-value與r-value
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/basic/lvalue/">
-                        
-                            <a href="/pages/c/basic/lvalue/" onclick="pageScrollToTop(this)">
-                                等號左邊lvalue
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/newDelete/">
+                            
+                                <a href="/pages/c/pointer/newDelete/" onclick="pageScrollToTop(this)">
+                                    new/delete
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/reference/l_r_value/">
-                        
-                            <a href="/pages/c/reference/l_r_value/" onclick="pageScrollToTop(this)">
-                                l-value與r-value
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/reference/constRef/">
-                        
-                            <a href="/pages/c/reference/constRef/" onclick="pageScrollToTop(this)">
-                                const與參考
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/nullptr/">
+                            
+                                <a href="/pages/c/pointer/nullptr/" onclick="pageScrollToTop(this)">
+                                    0 == nullptr == NULL
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/reference/l_r_ref/">
-                        
-                            <a href="/pages/c/reference/l_r_ref/" onclick="pageScrollToTop(this)">
-                                l-value參考與r-value參考
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/reference/callByValue/">
-                        
-                            <a href="/pages/c/reference/callByValue/" onclick="pageScrollToTop(this)">
-                                函式傳值與回傳值
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/pointerVoid/">
+                            
+                                <a href="/pages/c/pointer/pointerVoid/" onclick="pageScrollToTop(this)">
+                                    void*任何資料型態的指標
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/reference/func_return_ref/">
-                        
-                            <a href="/pages/c/reference/func_return_ref/" onclick="pageScrollToTop(this)">
-                                函式傳回值是參考
-                            </a>
-                            
+                                    
                                 
-                            
-                        </li>
-                    
+                            </li>
                         
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/reference/l_ref_func/">
-                        
-                            <a href="/pages/c/reference/l_ref_func/" onclick="pageScrollToTop(this)">
-                                等號左邊的函式
-                            </a>
                             
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/wildPointer/">
+                            
+                                <a href="/pages/c/pointer/wildPointer/" onclick="pageScrollToTop(this)">
+                                    指標位址是無效內容
+                                </a>
                                 
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/pages/c/struct/struct_def/">
-                        
-                            <a href="/pages/c/struct/struct_def/" onclick="pageScrollToTop(this)">
-                                定義結構
-                            </a>
-                            
+                                    
                                 
+                            </li>
+                        
                             
-                        </li>
-                    
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/functionPointer/">
+                            
+                                <a href="/pages/c/pointer/functionPointer/" onclick="pageScrollToTop(this)">
+                                    函式指標
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/array/array/">
+                            
+                                <a href="/pages/c/array/array/" onclick="pageScrollToTop(this)">
+                                    陣列
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/array/pointerToArray/">
+                            
+                                <a href="/pages/c/array/pointerToArray/" onclick="pageScrollToTop(this)">
+                                    一維陣列與指標
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/pointerArithmetic/">
+                            
+                                <a href="/pages/c/pointer/pointerArithmetic/" onclick="pageScrollToTop(this)">
+                                    指標運算
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/pointer/pointerToPointer/">
+                            
+                                <a href="/pages/c/pointer/pointerToPointer/" onclick="pageScrollToTop(this)">
+                                    指標的指標
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/array/dynamicArrays/">
+                            
+                                <a href="/pages/c/array/dynamicArrays/" onclick="pageScrollToTop(this)">
+                                    陣列與動態配置記憶體
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/array/charArray/">
+                            
+                                <a href="/pages/c/array/charArray/" onclick="pageScrollToTop(this)">
+                                    char 字串
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/array/qsort/">
+                            
+                                <a href="/pages/c/array/qsort/" onclick="pageScrollToTop(this)">
+                                    qsort排序
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/basic/typedef/">
+                            
+                                <a href="/pages/c/basic/typedef/" onclick="pageScrollToTop(this)">
+                                    typedef 型別定義
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/dynamicMemory/nothrow/">
+                            
+                                <a href="/pages/c/dynamicMemory/nothrow/" onclick="pageScrollToTop(this)">
+                                    記憶體不足
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/array/array2dimen/">
+                            
+                                <a href="/pages/c/array/array2dimen/" onclick="pageScrollToTop(this)">
+                                    二維陣列
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/array/arrayOfPointers/">
+                            
+                                <a href="/pages/c/array/arrayOfPointers/" onclick="pageScrollToTop(this)">
+                                    指標陣列存放多個記憶體位址
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/array/pointerCharArr/">
+                            
+                                <a href="/pages/c/array/pointerCharArr/" onclick="pageScrollToTop(this)">
+                                    char字串指標
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/reference/callByRef/">
+                            
+                                <a href="/pages/c/reference/callByRef/" onclick="pageScrollToTop(this)">
+                                    傳參考
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/reference/refToPointer/">
+                            
+                                <a href="/pages/c/reference/refToPointer/" onclick="pageScrollToTop(this)">
+                                    參考指向指標
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/reference/reference/">
+                            
+                                <a href="/pages/c/reference/reference/" onclick="pageScrollToTop(this)">
+                                    參考
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/basic/l_r_value/">
+                            
+                                <a href="/pages/c/basic/l_r_value/" onclick="pageScrollToTop(this)">
+                                    l-value與r-value
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/basic/lvalue/">
+                            
+                                <a href="/pages/c/basic/lvalue/" onclick="pageScrollToTop(this)">
+                                    等號左邊lvalue
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/reference/l_r_value/">
+                            
+                                <a href="/pages/c/reference/l_r_value/" onclick="pageScrollToTop(this)">
+                                    l-value與r-value
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/reference/constRef/">
+                            
+                                <a href="/pages/c/reference/constRef/" onclick="pageScrollToTop(this)">
+                                    const與參考
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/reference/l_r_ref/">
+                            
+                                <a href="/pages/c/reference/l_r_ref/" onclick="pageScrollToTop(this)">
+                                    l-value參考與r-value參考
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/reference/callByValue/">
+                            
+                                <a href="/pages/c/reference/callByValue/" onclick="pageScrollToTop(this)">
+                                    函式傳值與回傳值
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/reference/func_return_ref/">
+                            
+                                <a href="/pages/c/reference/func_return_ref/" onclick="pageScrollToTop(this)">
+                                    函式傳回值是參考
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/reference/l_ref_func/">
+                            
+                                <a href="/pages/c/reference/l_ref_func/" onclick="pageScrollToTop(this)">
+                                    等號左邊的函式
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/struct/struct_def/">
+                            
+                                <a href="/pages/c/struct/struct_def/" onclick="pageScrollToTop(this)">
+                                    定義結構
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/struct/struct_pointer/">
+                            
+                                <a href="/pages/c/struct/struct_pointer/" onclick="pageScrollToTop(this)">
+                                    指標指向結構
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/struct/struct_init/">
+                            
+                                <a href="/pages/c/struct/struct_init/" onclick="pageScrollToTop(this)">
+                                    初始化結構
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/struct/struct_array/">
+                            
+                                <a href="/pages/c/struct/struct_array/" onclick="pageScrollToTop(this)">
+                                    結構陣列
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/struct/struct_char/">
+                            
+                                <a href="/pages/c/struct/struct_char/" onclick="pageScrollToTop(this)">
+                                    結構與字串
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/struct/nested_struct/">
+                            
+                                <a href="/pages/c/struct/nested_struct/" onclick="pageScrollToTop(this)">
+                                    巢狀結構
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/c/struct/struct_within_array/">
+                            
+                                <a href="/pages/c/struct/struct_within_array/" onclick="pageScrollToTop(this)">
+                                    結構中的陣列
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
 
-                    
-                        <li class="divider"></li>
+                        
+                            <li class="divider"></li>
+                        
                     
                 
-            
-                <!-- <p>posts</p> -->
-                
+                    <!-- <p>posts</p> -->
                     
+                        
 
-                    
+                        
 
+                        
                     
                 
             
@@ -805,7 +878,7 @@
     },
     "gitbook": {
         "version": "",
-        "time": "2024-07-03 14:18:27 +0800"
+        "time": "2024-07-11 01:45:47 +0800"
     },
     "basePath": "",
     "book": {
@@ -832,6 +905,9 @@
 <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
 <script src="../gitbook/gitbook-plugin-search/search.js"></script>
 -->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
 
 </body>
 </html>
