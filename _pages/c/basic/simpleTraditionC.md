@@ -115,6 +115,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |constructor|建構式或建構子|構造方法|
 |deconstructor|解構式或解構子|析構方法或析構函數|
 |struct|結構|結構體|
+|Linked list|鏈結串列|鏈表|
 
 
 

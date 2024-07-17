@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>等號左邊lvalue · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>鏈結串列 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -441,9 +441,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/struct/linked_list" onclick="pageScrollToTop(this)"> 鏈結串列</a>
         
+            
+                <ul><li><a href="#初始化頭節點尾節點暫存節點" onclick="mobilePageScrollToAnchor(this)" >初始化頭節點/尾節點/暫存節點</a></li><li><a href="#建立節點" onclick="mobilePageScrollToAnchor(this)" >建立節點</a><ul><li><a href="#建立第一個節點" onclick="mobilePageScrollToAnchor(this)" >建立第一個節點</a></li><li><a href="#建立第二個節點" onclick="mobilePageScrollToAnchor(this)" >建立第二個節點</a></li><li><a href="#建立第三個節點" onclick="mobilePageScrollToAnchor(this)" >建立第三個節點</a></li></ul></li><li><a href="#遍歷鏈節串列" onclick="mobilePageScrollToAnchor(this)" >遍歷鏈節串列</a></li><li><a href="#刪除鏈節串列" onclick="mobilePageScrollToAnchor(this)" >刪除鏈節串列</a></li><li><a href="#完整程式碼" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul>
+
             
         </li></ul></li>
 	
@@ -508,7 +511,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >等號左邊lvalue</a>
+                            <a href="." >鏈結串列</a>
                         
                     </h1>
                 </div>
@@ -521,14 +524,303 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/basic/lvalue">等號左邊lvalue</h1>
+                        <h1 id="/pages/c/struct/linked_list">鏈結串列</h1>
                     
 
-                    <p>等號左邊(lavlue)，也就是一個能夠擺在等號左邊的東西∶<strong>一個變數，而非常數</strong>。</p>
+                    <p>Prerequisites:</p>
 
-<p>等號左邊可以是變數、陣列元素、結構、<a href="/pages/c/reference/reference/">參考</a>、<a href="/pages/c/pointer/pointer/#取值運算子">取值運算子</a>。</p>
+<ul>
+  <li><a href="/pages/c/struct/pointerInStruct/#結構中的指標是自己">結構中的指標是自己</a></li>
+</ul>
 
-<p>常數可以是<a href="/pages/c/array/pointerCharArr/#字串常數">字串常數</a>、表達式。</p>
+<h2 id="初始化頭節點尾節點暫存節點">初始化頭節點/尾節點/暫存節點</h2>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>    <span class="c1">//頭節點</span>
+    <span class="n">Student</span> <span class="o">*</span><span class="n">head</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="c1">//尾節點</span>
+    <span class="n">Student</span> <span class="o">*</span><span class="n">tail</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="c1">//暫存節點</span>
+    <span class="n">Student</span> <span class="o">*</span><span class="n">temp</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="建立節點">建立節點</h2>
+
+<h3 id="建立第一個節點">建立第一個節點</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre>    <span class="c1">//建立第1個節點</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Student</span><span class="p">({</span> <span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
+
+    <span class="c1">//讓頭節點與尾節點全指向新分配的節點</span>
+    <span class="n">head</span> <span class="o">=</span> <span class="n">tail</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="建立第二個節點">建立第二個節點</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>    <span class="c1">//建立第2個節點</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Student</span><span class="p">({</span> <span class="s">"Bill"</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
+    <span class="c1">//將上一個節點tail的next指向新建立的節點</span>
+    <span class="n">tail</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+    <span class="c1">//將tail指向新建立的節點;</span>
+    <span class="n">tail</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="建立第三個節點">建立第三個節點</h3>
+
+<p>程式碼與前一個程式一樣。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>    <span class="c1">//建立第3個節點</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Student</span><span class="p">({</span> <span class="s">"Eric"</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
+    <span class="c1">//將上一個節點tail的next指向新建立的節點</span>
+    <span class="n">tail</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+    <span class="c1">//將tail指向新建立的節點;</span>
+    <span class="n">tail</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="遍歷鏈節串列">遍歷鏈節串列</h2>
+<p>從頭節點開始，沿著next指標往後移動，直到next是nullptr。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre>    <span class="c1">//遍歷鏈節串列</span>
+    <span class="c1">//從頭節點開始</span>
+    <span class="c1">//把頭節點指向temp指標</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>
+    <span class="c1">//如果temp指標不是nullptr，就進去while</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">temp</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//印出姓名學號</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">", name = "</span> <span class="o">&lt;&lt;</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="c1">//把temp指標移到下一個節點</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="刪除鏈節串列">刪除鏈節串列</h2>
+<p>從頭節點開始刪，沿著next指標往後移動，直到next是nullptr。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre>    <span class="c1">//刪除鏈節串列</span>
+    <span class="c1">//從頭節點開始刪除</span>
+    <span class="c1">//如果頭節點不為nullptr</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">head</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//頭節點先暫存到暫存節點</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>
+        <span class="c1">//頭節點指標往後移動</span>
+        <span class="n">head</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+        <span class="c1">//刪除暫存節點</span>
+        <span class="k">delete</span> <span class="n">temp</span><span class="p">;</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="完整程式碼">完整程式碼</h2>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
+    <span class="c1">//學生姓名</span>
+    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+    <span class="c1">//學號</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+    <span class="c1">//結構中的指標</span>
+    <span class="n">Student</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//頭節點</span>
+    <span class="n">Student</span> <span class="o">*</span><span class="n">head</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="c1">//尾節點</span>
+    <span class="n">Student</span> <span class="o">*</span><span class="n">tail</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="c1">//暫存節點</span>
+    <span class="n">Student</span> <span class="o">*</span><span class="n">temp</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    
+    <span class="c1">//建立第1個節點</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">({</span> <span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
+    
+    <span class="c1">//讓頭節點與尾節點全指向新分配的節點</span>
+    <span class="n">head</span> <span class="o">=</span> <span class="n">tail</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+    
+    <span class="c1">//建立第2個節點</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">({</span> <span class="s">"Bill"</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
+    <span class="c1">//將上一個節點tail的next指向新建立的節點</span>
+    <span class="n">tail</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+    <span class="c1">//將tail指向新建立的節點;</span>
+    <span class="n">tail</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+    
+    <span class="c1">//建立第3個節點</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">({</span> <span class="s">"Eric"</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
+    <span class="c1">//將上一個節點tail的next指向新建立的節點</span>
+    <span class="n">tail</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+    <span class="c1">//將tail指向新建立的節點;</span>
+    <span class="n">tail</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+    
+    <span class="c1">//建立第4個節點</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">({</span> <span class="s">"Jeff"</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
+    <span class="c1">//將上一個節點tail的next指向新建立的節點</span>
+    <span class="n">tail</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+    <span class="c1">//將tail指向新建立的節點;</span>
+    <span class="n">tail</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+    
+    <span class="c1">//遍歷鏈節串列</span>
+    <span class="c1">//從頭節點開始</span>
+    <span class="c1">//把頭節點指向temp指標</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>
+    <span class="c1">//如果temp指標不是nullptr，就進去while</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">temp</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//印出姓名學號</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">", name = "</span> <span class="o">&lt;&lt;</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="c1">//把temp指標移到下一個節點</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="c1">//刪除鏈節串列</span>
+    <span class="c1">//從頭節點開始刪除</span>
+    <span class="c1">//如果頭節點不為nullptr</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">head</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//頭節點先暫存到暫存節點</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>
+        <span class="c1">//頭節點指標往後移動</span>
+        <span class="n">head</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+        <span class="c1">//刪除暫存節點</span>
+        <span class="k">delete</span> <span class="n">temp</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>id = 1, name = Mary
+id = 2, name = Bill
+id = 3, name = Eric
+id = 4, name = Jeff
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -591,7 +883,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/c/struct/pointerInStruct" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 結構中的指標">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/c/conversion/implicit" class="navigation navigation-next navigation-unique" aria-label="Next page: 自動轉型">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -605,15 +907,6 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
-        
-        "next": {
-            "title": "l-value與r-value",
-            "level": "1.2",
-            "depth": 1,
-            "path": "_pages/c/reference/l_r_value.md",
-            "ref": "_pages/c/reference/l_r_value.md",
-            "articles": []
-        },
         
         "dir": "ltr"
     },    "config": {
@@ -703,8 +996,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/basic/lvalue.md",
-        "mtime": "2024-06-22 00:00:00 +0800",
+        "path": "_pages/c/struct/linked_list.md",
+        "mtime": "2024-07-17 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

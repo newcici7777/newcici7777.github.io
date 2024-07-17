@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>初始化結構 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>結構中的指標 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -399,12 +399,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/struct/struct_init" onclick="pageScrollToTop(this)"> 初始化結構</a>
         
-            
-                <ul><li><a href="#使用大括號初始化" onclick="mobilePageScrollToAnchor(this)" >使用大括號{}初始化</a></li><li><a href="#定義結構時初始化" onclick="mobilePageScrollToAnchor(this)" >定義結構時初始化</a></li><li><a href="#結構成員記憶體位址的值全初始化成00000000" onclick="mobilePageScrollToAnchor(this)" >結構成員記憶體位址的值全初始化成00000000</a><ul><li><a href="#方式1" onclick="mobilePageScrollToAnchor(this)" >方式1</a></li><li><a href="#方式2" onclick="mobilePageScrollToAnchor(this)" >方式2</a></li><li><a href="#方式3" onclick="mobilePageScrollToAnchor(this)" >方式3</a></li><li><a href="#方式4" onclick="mobilePageScrollToAnchor(this)" >方式4</a></li></ul></li></ul>
-
             
         </li>
 	
@@ -437,9 +434,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/struct/pointerInStruct" onclick="pageScrollToTop(this)"> 結構中的指標</a>
         
+            
+                <ul><li><a href="#memset與結構中的指標" onclick="mobilePageScrollToAnchor(this)" >memset與結構中的指標</a><ul><li><a href="#錯誤作法" onclick="mobilePageScrollToAnchor(this)" >錯誤作法</a></li><li><a href="#正確作法" onclick="mobilePageScrollToAnchor(this)" >正確作法</a></li></ul></li><li><a href="#結構中的指標是自己" onclick="mobilePageScrollToAnchor(this)" >結構中的指標是自己</a><ul><li><a href="#初始化" onclick="mobilePageScrollToAnchor(this)" >初始化</a><ul><li><a href="#方式一" onclick="mobilePageScrollToAnchor(this)" >方式一</a></li><li><a href="#方式二" onclick="mobilePageScrollToAnchor(this)" >方式二</a></li><li><a href="#方式三" onclick="mobilePageScrollToAnchor(this)" >方式三</a></li></ul></li></ul></li></ul>
+
             
         </li>
 	
@@ -511,7 +511,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >初始化結構</a>
+                            <a href="." >結構中的指標</a>
                         
                     </h1>
                 </div>
@@ -524,13 +524,310 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/struct/struct_init">初始化結構</h1>
+                        <h1 id="/pages/c/struct/pointerInStruct">結構中的指標</h1>
                     
 
-                    <h2 id="使用大括號初始化">使用大括號{}初始化</h2>
+                    <p>Prerequisites:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>結構  變數名 = {值1, 值2 ...}
+<ul>
+  <li><a href="/pages/c/dynamicMemory/newDelete/">new/delete</a></li>
+  <li><a href="/pages/c/pointer/nullptr/#nullptr記憶體位址">null 記憶體區間</a></li>
+</ul>
+
+<h2 id="memset與結構中的指標">memset與結構中的指標</h2>
+
+<p>要把結構中的指標釋放記憶體，光是把結構使用memset把結構記憶體的值全設為00000000是不夠的，因為只是把指標指向的位置指到00000000(<a href="/pages/c/pointer/nullptr/#nullptr記憶體位址">null 記憶體區間</a>)，原本指標指向的位置的值仍未清空成0，會造成記憶體洩露。</p>
+
+<h3 id="錯誤作法">錯誤作法</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> memset(&amp;student, 0, sizeof(student));
 </code></pre></div></div>
+
+<p>以下為錯誤作法</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">SCORE_MAX</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
+    <span class="c1">//學生姓名</span>
+    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+    <span class="c1">//學號</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+    <span class="c1">//結構中的指標</span>
+    <span class="kt">int</span> <span class="o">*</span><span class="n">score</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">);</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">SCORE_MAX</span><span class="p">];</span>
+    
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">SCORE_MAX</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">//100 byte(name) + 4 byte(id) + 8 byte(*score指標)</span>
+    <span class="c1">//總共占 112 byte記憶體大小</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結構大小 = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//印出score指標指向的記憶體位址</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結構成員指標指向的記憶體位址 = "</span> <span class="o">&lt;&lt;</span>  <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//將student.score的記憶體位址先暫存下來</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">pp</span> <span class="o">=</span> <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">;</span>
+    <span class="c1">//將結構的成員全清成00000000</span>
+    <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">));</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After memset :"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//印出score指標指向的記憶體位址</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結構成員指標指向的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"原結構成員指標指向的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">pp</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//原結構成員指標指向的記憶體位址中的值</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">SCORE_MAX</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"student.score["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="p">(</span><span class="n">pp</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>結構大小 = 112
+結構成員指標指向的記憶體位址 = 0x600000008040
+After memset :
+結構成員指標指向的記憶體位址 = 0x0
+原結構成員指標指向的記憶體位址 = 0x600000008040
+student.score[0] = 0
+student.score[1] = 1
+student.score[2] = 2
+</code></pre></div></div>
+
+<h3 id="正確作法">正確作法</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>memset(student.score, 0, sizeof(int)*SCORE_MAX);
+</code></pre></div></div>
+
+<p>memset第3個參數不可以寫成成員指標，因為指標的記憶體大小永遠是8。</p>
+
+<p>以下是錯誤寫法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>memset(student.score, 0, sizeof(student.score));
+</code></pre></div></div>
+
+<p>以下的作法才是真正做到結構中指標的記憶體釋放。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">SCORE_MAX</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
+    <span class="c1">//學生姓名</span>
+    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+    <span class="c1">//學號</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+    <span class="c1">//結構中的指標</span>
+    <span class="kt">int</span> <span class="o">*</span><span class="n">score</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">);</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">SCORE_MAX</span><span class="p">];</span>
+    
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">SCORE_MAX</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">//100 byte(name) + 4 byte(id) + 8 byte(*score指標)</span>
+    <span class="c1">//總共占 112 byte記憶體大小</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結構大小 = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//印出score指標指向的記憶體位址</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結構成員指標指向的記憶體位址 = "</span> <span class="o">&lt;&lt;</span>  <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//將student.score的記憶體位址先暫存下來</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">pp</span> <span class="o">=</span> <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">;</span>
+    <span class="c1">//將結構的成員指向的記憶體位址的值全清成00000000</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="o">*</span><span class="n">SCORE_MAX</span><span class="p">);</span>
+    <span class="c1">//將結構的成員全清成00000000</span>
+    <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">));</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After memset :"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//印出score指標指向的記憶體位址</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"原score成員的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">pp</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"score成員的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>結構大小 = 112
+結構成員指標指向的記憶體位址 = 0x600000004060
+After memset :
+原score成員的記憶體位址 = 0
+score成員的記憶體位址 = 0x0
+</code></pre></div></div>
+
+<h2 id="結構中的指標是自己">結構中的指標是自己</h2>
+
+<p>注意看結構Student中的指標指向的是Student結構，也就是結構中的指標是自已。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
+    <span class="c1">//學生姓名</span>
+    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+    <span class="c1">//學號</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+    <span class="c1">//結構中的指標</span>
+    <span class="n">Student</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>不能寫成以下的寫法，會編譯失敗。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
+    <span class="c1">//學生姓名</span>
+    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+    <span class="c1">//學號</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+    <span class="c1">//結構中的指標</span>
+    <span class="n">Student</span> <span class="n">next</span><span class="p">;</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以上設計這種結構是表示每一個學生都有一個指標，指向下一個學生。</p>
+
+<p>學生A-&gt;學生B-&gt;學生C-&gt;學生D-&gt;null</p>
+
+<h3 id="初始化">初始化</h3>
+<p>初始化有三種方法</p>
+
+<h4 id="方式一">方式一</h4>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>    <span class="n">Student</span> <span class="o">*</span><span class="n">student</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">;</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">);</span>
+    <span class="n">student</span><span class="o">-&gt;</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">student</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h4 id="方式二">方式二</h4>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>    <span class="n">Student</span> <span class="o">*</span><span class="n">student</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Student</span><span class="p">({</span> <span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>    <span class="n">Student</span> <span class="o">*</span><span class="n">student</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span> 
+    <span class="n">student</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Student</span><span class="p">({</span> <span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h4 id="方式三">方式三</h4>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>    <span class="n">Student</span> <span class="o">*</span><span class="n">student</span><span class="p">;</span>
+    <span class="o">*</span><span class="p">(</span><span class="n">student</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>完整程式碼</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -549,282 +846,16 @@
 14
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">};</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mary
-1
-</code></pre></div></div>
-
-<h2 id="定義結構時初始化">定義結構時初始化</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>struct 結構名{
-	變數宣告
-}結構變數={值1, 值2 ...};
-</code></pre></div></div>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
     <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
     <span class="c1">//學號</span>
     <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">2</span><span class="p">};</span>
+    <span class="c1">//結構中的指標</span>
+    <span class="n">Student</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
+<span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Bill
-2
-</code></pre></div></div>
-
-<h2 id="結構成員記憶體位址的值全初始化成00000000">結構成員記憶體位址的值全初始化成00000000</h2>
-
-<h3 id="方式1">方式1</h3>
-
-<p>{0}把成員初始化00000000。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>struct 結構名{
-	變數宣告
-}結構變數={0};
-</code></pre></div></div>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>結構  變數名 = {0}
-</code></pre></div></div>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="方式2">方式2</h3>
-
-<p>只寫大括號也是把成員初始化00000000。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>struct 結構名{
-	變數宣告
-}結構變數={};
-</code></pre></div></div>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">student</span> <span class="o">=</span> <span class="p">{};</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>結構  變數名 = {}
-</code></pre></div></div>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="p">{};</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="方式3">方式3</h3>
-
-<p>c11之徫可以省略等於=</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>struct 結構名{
-	變數宣告
-}結構變數{};
-</code></pre></div></div>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">student</span><span class="p">{};</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>結構  變數名{}
-</code></pre></div></div>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">{};</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="方式4">方式4</h3>
-
-<p>使用memset()</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>memset(結構變數地址,0,sizeof(結構變數));
-</code></pre></div></div>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">));</span>
+    <span class="n">Student</span> <span class="o">*</span><span class="n">student</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">({</span> <span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -893,14 +924,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/struct/struct_char" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 結構與字串">
+                        <a href="/pages/c/struct/arrayInStruct" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 結構中的陣列">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/struct/struct_array" class="navigation navigation-next navigation-unique" aria-label="Next page: 結構陣列">
+                        <a href="/pages/c/struct/linked_list" class="navigation navigation-next navigation-unique" aria-label="Next page: 鏈結串列">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -918,11 +949,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "結構陣列",
+            "title": "鏈結串列",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/struct/struct_array.md",
-            "ref": "_pages/c/struct/struct_array.md",
+            "path": "_pages/c/struct/linked_list.md",
+            "ref": "_pages/c/struct/linked_list.md",
             "articles": []
         },
         
@@ -1014,8 +1045,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/struct/struct_init.md",
-        "mtime": "2024-07-04 00:00:00 +0800",
+        "path": "_pages/c/struct/pointerInStruct.md",
+        "mtime": "2024-07-15 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

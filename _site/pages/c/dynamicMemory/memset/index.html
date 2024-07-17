@@ -372,6 +372,16 @@
     	<a href="/pages/c/dynamicMemory/nothrow" onclick="pageScrollToTop(this)"> 記憶體不足</a>
         
             
+        </li>
+	
+	
+	<li class="active">
+    	<a href="/pages/c/dynamicMemory/memset" onclick="pageScrollToTop(this)"> memset</a>
+        
+            
+                
+
+            
         </li></ul></li>
 	
 	
@@ -422,6 +432,20 @@
 	
 	<li class="">
     	<a href="/pages/c/struct/arrayInStruct" onclick="pageScrollToTop(this)"> 結構中的陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/pointerInStruct" onclick="pageScrollToTop(this)"> 結構中的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/linked_list" onclick="pageScrollToTop(this)"> 鏈結串列</a>
         
             
         </li></ul></li>
@@ -505,9 +529,17 @@
 
                     <p>memset主要目的是把記憶體位址的內容(值)，設成00000000。</p>
 
-<p>資料型態為char，設成00000000，就等同設成<code class="language-plaintext highlighter-rouge">\0</code>
-資料型態為int，設成00000000，就等同設成<code class="language-plaintext highlighter-rouge">0</code>
-資料型態為指標，設成00000000，是把指標所<code class="language-plaintext highlighter-rouge">指向的記憶體位址的內容(值)</code>，設成00000000，等同於釋放記憶體空間，並非把指標的<code class="language-plaintext highlighter-rouge">指向的位址</code>改為00000000。</p>
+<p><a href="/pages/c/array/charArray/#字串清空">字串清空</a></p>
+
+<p>資料型態為char，設成00000000，就等同設成<code class="language-plaintext highlighter-rouge">\0</code>空字元(null character)，ascii code為0</p>
+
+<p><a href="/pages/c/array/array/#memset陣列清空">陣列清空</a></p>
+
+<p><a href="/pages/c/struct/struct_init/#結構成員記憶體位址的值全初始化成00000000">結構清空</a></p>
+
+<p><a href="/pages/c/struct/pointerInStruct/#memset與結構中的指標">結構中指標清空</a></p>
+
+<p>資料型態為指標，設成00000000，是把指標所<code class="language-plaintext highlighter-rouge">指向的記憶體位址的內容(值)</code>，設成00000000，等同於釋放記憶體空間，並非把指標的<code class="language-plaintext highlighter-rouge">指向的位址</code>改為00000000。</p>
 
 </section>
             </div><div class="search-results">
@@ -571,7 +603,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/c/dynamicMemory/nothrow" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 記憶體不足">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/c/struct/struct_def" class="navigation navigation-next navigation-unique" aria-label="Next page: 定義結構">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -585,6 +627,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "結構中的指標",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/c/struct/pointerInStruct.md",
+            "ref": "_pages/c/struct/pointerInStruct.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -680,7 +731,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-07-15 04:50:02 +0800"
+        "time": "2024-07-17 13:09:11 +0800"
     },
     "basePath": "",
     "book": {
