@@ -154,6 +154,13 @@
     	<a href="/pages/c/basic/scope" onclick="pageScrollToTop(this)"> 變數可見範圍與生命週期</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/loop" onclick="pageScrollToTop(this)"> 迴圈</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -275,7 +282,7 @@
     	<a href="/pages/c/array/charArray" onclick="pageScrollToTop(this)"> char 字串</a>
         
             
-                <ul><li><a href="#空字元null-character" onclick="mobilePageScrollToAnchor(this)" >空字元(null character)</a></li><li><a href="#字串常數" onclick="mobilePageScrollToAnchor(this)" >字串常數</a></li><li><a href="#字串常數宣告" onclick="mobilePageScrollToAnchor(this)" >字串常數宣告</a></li><li><a href="#字串清空" onclick="mobilePageScrollToAnchor(this)" >字串清空</a></li><li><a href="#字串拷貝-strcpy" onclick="mobilePageScrollToAnchor(this)" >字串拷貝 strcpy</a></li><li><a href="#字串修改" onclick="mobilePageScrollToAnchor(this)" >字串修改</a></li><li><a href="#字元個數拷貝-strncpy" onclick="mobilePageScrollToAnchor(this)" >字元個數拷貝 strncpy</a></li><li><a href="#字串長度-strlen" onclick="mobilePageScrollToAnchor(this)" >字串長度 strlen</a></li><li><a href="#字串連接-strcat" onclick="mobilePageScrollToAnchor(this)" >字串連接 strcat</a></li><li><a href="#二維陣列字串" onclick="mobilePageScrollToAnchor(this)" >二維陣列字串</a></li></ul>
+                <ul><li><a href="#空字元null-character" onclick="mobilePageScrollToAnchor(this)" >空字元(null character)</a></li><li><a href="#字串常數" onclick="mobilePageScrollToAnchor(this)" >字串常數</a></li><li><a href="#字串常數宣告" onclick="mobilePageScrollToAnchor(this)" >字串常數宣告</a></li><li><a href="#字串清空" onclick="mobilePageScrollToAnchor(this)" >字串清空</a></li><li><a href="#字串拷貝-strcpy" onclick="mobilePageScrollToAnchor(this)" >字串拷貝 strcpy</a></li><li><a href="#字串修改" onclick="mobilePageScrollToAnchor(this)" >字串修改</a></li><li><a href="#字元個數拷貝-strncpy" onclick="mobilePageScrollToAnchor(this)" >字元個數拷貝 strncpy</a></li><li><a href="#字串長度-strlen" onclick="mobilePageScrollToAnchor(this)" >字串長度 strlen</a></li><li><a href="#字串連接-strcat" onclick="mobilePageScrollToAnchor(this)" >字串連接 strcat</a></li><li><a href="#字串比較-strcmp" onclick="mobilePageScrollToAnchor(this)" >字串比較 strcmp</a><ul><li><a href="#s1s2傳回0" onclick="mobilePageScrollToAnchor(this)" >s1==s2傳回0</a></li><li><a href="#s1s2傳回正數ascii-code" onclick="mobilePageScrollToAnchor(this)" >s1&gt;s2傳回正數ascii code</a></li><li><a href="#s1s2傳回負數ascii-code" onclick="mobilePageScrollToAnchor(this)" >s1&lt;s2傳回負數ascii code</a></li></ul></li><li><a href="#二維陣列字串" onclick="mobilePageScrollToAnchor(this)" >二維陣列字串</a><ul><li><a href="#印出禮拜一至禮拜天的英文字母" onclick="mobilePageScrollToAnchor(this)" >印出禮拜一至禮拜天的英文字母</a></li><li><a href="#判斷數字印出月份英文" onclick="mobilePageScrollToAnchor(this)" >判斷數字，印出月份英文</a></li></ul></li></ul>
 
             
         </li>
@@ -283,6 +290,13 @@
 	
 	<li class="">
     	<a href="/pages/c/array/pointerCharArr" onclick="pageScrollToTop(this)"> char字串指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/string" onclick="pageScrollToTop(this)"> string 字串</a>
         
             
         </li></ul></li>
@@ -671,14 +685,14 @@ cstr2 長度 = 0,內容 =
 <h2 id="字串拷貝-strcpy">字串拷貝 strcpy</h2>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char * strcpy ( char * destination, const char * source );
 </code></pre></div></div>
-<p>要從來源的字串，拷貝到目標的字串。</p>
+<p>要從來源的字串，拷貝到目的字串。</p>
 
 <ul>
-  <li>參數1:目標(拷貝到那裡？)</li>
-  <li>參數2:要拷貝的字串(src)</li>
+  <li>參數1:目的字串(拷貝到那裡？)</li>
+  <li>參數2:來源字串(要拷貝的字串)</li>
 </ul>
 
-<p>拷貝完成後，會自動在目標字串最後面加上\0。</p>
+<p>拷貝完成後，會自動在目的字串最後面加上\0。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -730,12 +744,12 @@ After = Dog
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char *strncpy(char *string1, const char *string2, size_t count);
 </code></pre></div></div>
 <ul>
-  <li>參數1:目標字串(拷貝到那裡？)</li>
-  <li>參數2:要拷貝的字串(src)</li>
+  <li>參數1:目的字串(拷貝到那裡？)</li>
+  <li>參數2:來源字串(要拷貝的字串)</li>
   <li>參數3:要拷貝多少個字元</li>
 </ul>
 
-<p>若參數3(拷貝多少個字元)比參數2(來源字串長度)小，拷貝完成後，不會在參數1(目標字串)的結尾加上\0。</p>
+<p>若參數3(拷貝多少個字元)比參數2(來源字串長度)小，拷貝完成後，不會在參數1(目的字串)的結尾加上\0。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -849,11 +863,83 @@ c_str4長度:6
 c_str3 + c_str4 = helte
 </code></pre></div></div>
 
+<h2 id="字串比較-strcmp">字串比較 strcmp</h2>
+
+<p>二個字串，字元逐字元比較ascii code，直到比完或分出大小為止。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>strcmp(s1,s2)
+</code></pre></div></div>
+
+<h3 id="s1s2傳回0">s1==s2傳回0</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"abc"</span><span class="p">;</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">"abc"</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">strcmp</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0
+</code></pre></div></div>
+
+<h3 id="s1s2傳回正數ascii-code">s1&gt;s2傳回正數ascii code</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"abc"</span><span class="p">;</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">"ab"</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">strcmp</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>99
+</code></pre></div></div>
+
+<h3 id="s1s2傳回負數ascii-code">s1&lt;s2傳回負數ascii code</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"ab"</span><span class="p">;</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">"abc"</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">strcmp</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-99
+</code></pre></div></div>
+
 <h2 id="二維陣列字串">二維陣列字串</h2>
 
 <p>參考</p>
 
 <p><a href="/pages/c/array/array2dimen/">二維陣列</a></p>
+
+<h3 id="印出禮拜一至禮拜天的英文字母">印出禮拜一至禮拜天的英文字母</h3>
 
 <p>以下的例子是建立二維的字串，總共有7個字串，每個字串最大長度為10，Wednesday是最長字串，長度為9，加上\0就等於10。</p>
 
@@ -892,9 +978,45 @@ Wednesday
 Thursday
 Friday
 Saturday
-
 </code></pre></div></div>
 
+<h3 id="判斷數字印出月份英文">判斷數字，印出月份英文</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="c1">//12個月</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">MAX_MONTH</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+<span class="c1">//最長字母September</span>
+<span class="c1">//9個字元+\0</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">MAX</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">mon_arr</span><span class="p">[</span><span class="n">MAX_MONTH</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"January"</span><span class="p">,</span><span class="s">"February"</span><span class="p">,</span><span class="s">"March"</span><span class="p">,</span><span class="s">"April"</span><span class="p">,</span><span class="s">"May"</span><span class="p">,</span><span class="s">"June"</span><span class="p">,</span><span class="s">"July"</span><span class="p">,</span><span class="s">"August"</span><span class="p">,</span><span class="s">"September"</span><span class="p">,</span><span class="s">"October"</span><span class="p">,</span><span class="s">"November"</span><span class="p">,</span><span class="s">"December"</span><span class="p">};</span>
+    <span class="kt">int</span> <span class="n">month</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入數字月份(1~12):"</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">month</span><span class="p">;</span>
+    <span class="c1">//陣列索引介於0..11，所以要把month-1</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mon_arr</span><span class="p">[</span><span class="n">month</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>請輸入數字月份(1~12):12
+December
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1085,7 +1207,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-07-17 13:09:11 +0800"
+        "time": "2024-07-26 07:44:24 +0800"
     },
     "basePath": "",
     "book": {

@@ -108,12 +108,12 @@ cstr2 長度 = 0,內容 =
 ```
 char * strcpy ( char * destination, const char * source );
 ```
-要從來源的字串，拷貝到目標的字串。
+要從來源的字串，拷貝到目的字串。
 
-- 參數1:目標(拷貝到那裡？)
-- 參數2:要拷貝的字串(src)
+- 參數1:目的字串(拷貝到那裡？)
+- 參數2:來源字串(要拷貝的字串)
 
-拷貝完成後，會自動在目標字串最後面加上\0。
+拷貝完成後，會自動在目的字串最後面加上\0。
 
 {% highlight c++ linenos %}
     char c_str1[6] = {'h','e','l','\0'};
@@ -154,11 +154,11 @@ After = Dog
 ```
 char *strncpy(char *string1, const char *string2, size_t count);
 ```
-- 參數1:目標字串(拷貝到那裡？)
-- 參數2:要拷貝的字串(src)
+- 參數1:目的字串(拷貝到那裡？)
+- 參數2:來源字串(要拷貝的字串)
 - 參數3:要拷貝多少個字元
 
-若參數3(拷貝多少個字元)比參數2(來源字串長度)小，拷貝完成後，不會在參數1(目標字串)的結尾加上\0。
+若參數3(拷貝多少個字元)比參數2(來源字串長度)小，拷貝完成後，不會在參數1(目的字串)的結尾加上\0。
 
 {% highlight c++ linenos %}
     char c_str4[10];
@@ -244,12 +244,63 @@ c_str4長度:6
 c_str3 + c_str4 = helte
 ```
 
+## 字串比較 strcmp
+
+二個字串，字元逐字元比較ascii code，直到比完或分出大小為止。
+
+```
+strcmp(s1,s2)
+```
+
+### s1==s2傳回0
+
+{% highlight c++ linenos %}
+int main() {
+    char* s1 = "abc";
+    char* s2 = "abc";
+    cout << strcmp(s1,s2) << endl;
+    return 0;
+}
+{% endhighlight %}
+
+```
+0
+```
+
+### s1>s2傳回正數ascii code
+{% highlight c++ linenos %}
+int main() {
+    char* s1 = "abc";
+    char* s2 = "ab";
+    cout << strcmp(s1,s2) << endl;
+    return 0;
+}
+{% endhighlight %}
+```
+99
+```
+
+### s1<s2傳回負數ascii code
+{% highlight c++ linenos %}
+int main() {
+    char* s1 = "ab";
+    char* s2 = "abc";
+    cout << strcmp(s1,s2) << endl;
+    return 0;
+}
+{% endhighlight %}
+
+```
+-99
+```
 
 ## 二維陣列字串
 
 參考
 
 [二維陣列]({% link _pages/c/array/array2dimen.md %})
+
+### 印出禮拜一至禮拜天的英文字母
 
 以下的例子是建立二維的字串，總共有7個字串，每個字串最大長度為10，Wednesday是最長字串，長度為9，加上\0就等於10。
 
@@ -276,8 +327,28 @@ Wednesday
 Thursday
 Friday
 Saturday
-
 ```
 
+### 判斷數字，印出月份英文
 
+{% highlight c++ linenos %}
+//12個月
+const int MAX_MONTH = 12;
+//最長字母September
+//9個字元+\0
+const int MAX = 10;
+int main() {
+    char mon_arr[MAX_MONTH][MAX] = {"January","February","March","April","May","June","July","August","September","October","November","December"};
+    int month;
+    cout << "請輸入數字月份(1~12):";
+    cin >> month;
+    //陣列索引介於0..11，所以要把month-1
+    cout << mon_arr[month-1] << endl;
+    return 0;
+}
+{% endhighlight %}
 
+```
+請輸入數字月份(1~12):12
+December
+```

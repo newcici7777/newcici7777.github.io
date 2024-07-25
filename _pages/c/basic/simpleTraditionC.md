@@ -33,8 +33,10 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |英文|台灣|大陸|
 |:--:|:--:|:--:|
 |Operator|運算子|運算符|
+|condition|條件判斷式|表達式|
 |For Loop|巢狀|嵌套|
-|Expression|運算式|表達式|
+|Code block|程式碼區塊|語句塊|
+|Expression statements|運算式|表達式|
 |assign = |指定或指派或設為|賦值|
 
 ## 變數相關

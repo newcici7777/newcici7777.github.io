@@ -8,7 +8,7 @@ keywords: c++, char
 
 整數包含`char`, bool, short, unsinged short, int, unsinged int, long, unsinged long
 
-### char
+## char
 
 char是正整數，雖然顯示是字元，但實際存放在記憶體位置的資料型態是整數。
 
@@ -26,7 +26,7 @@ char所對映的整數是顯示在瑩幕上的ASCII碼。<https://zh.wikipedia.o
 |char |1    |0~127|%d   |整數  |
 
 
-#### 字元變數設為數字。
+### 字元變數設為數字。
 
 
 程式碼
@@ -45,7 +45,7 @@ printf("%c\n", c);
 a
 ```
 
-#### 印出char可用%c格式字串或%d格式字串
+### 印出char可用%c格式字串或%d格式字串
 
 {% highlight c++ linenos %}
 char c = 'a';
@@ -59,7 +59,7 @@ printf("%c\n", c);
 a
 ```
 
-#### int變數設為字元。
+### int變數設為字元。
 
 在c++中，可以直接給int變數賦值單引號\'\'包住的字元
 
@@ -76,7 +76,7 @@ int main() {
 65
 ```
 
-#### int轉型字元
+### int轉型字元
 
 想印出字元，就把int轉型成char
 
@@ -90,7 +90,7 @@ int main() {
 A
 ```
 
-#### 字元運算
+### 字元運算
 
 也可字元加整數做運算。
 
@@ -105,8 +105,112 @@ A
 執行結果
 c1=C
 ```
+### 字元轉整數
 
-#### 跳脫字元
+參考<https://zh.wikipedia.org/zh-tw/ASCII>
+
+|字元|ascii code|
+|:--:|:--:|
+|0|48|
+|1|49|
+|2|50|
+|3|51|
+|4|52|
+|5|53|
+|6|54|
+|7|55|
+|8|56|
+|9|57|
+
+字元\'0\'的ascii code為48
+
+字元\'0\'到\'9\'的ascii code - 48 = 整數0到9
+
+舉個例子，\'9\'的ascii code是57，\'0\'的ascii code為48， 57 - 48 = 整數9
+
+而char屬於整數，可以直接用字元相減，\'9\' - \'0\' = 9
+
+字元\'0\'到\'9\'減\'0\'，則會變成整數0-9。
+
+{% highlight c++ linenos %}
+int main() {
+    int num = '9' - '0';
+    cout << num << endl;
+}
+{% endhighlight %}
+
+```
+9
+```
+
+### 大小寫轉換
+
+|字元|ascii code|字元|ascii code|
+|:--:|:--:|:--:|:--:|
+|a|97|A|65|
+|b|98|B|66|
+|c|99|C|67|
+|d|100|D|68|
+|e|101|E|69|
+|f|102|F|70|
+
+
+從上表可以發現小寫的ascii code與大寫的ascii code中間的差距是32。
+
+97 - 65 = 32
+
+98 - 66 = 32
+
+99 - 66 = 32
+
+#### 小寫轉大寫
+
+{% highlight c++ linenos %}
+    char upper = 'a' - 32;
+    cout << upper << endl;
+{% endhighlight %}
+```
+A
+```
+
+#### 大寫轉小寫
+{% highlight c++ linenos %}
+    char lower = 'A' + 32;
+    cout << lower << endl;
+{% endhighlight %}
+```
+a
+```
+
+### 判斷字母區間
+
+判斷0-9
+{% highlight c++ linenos %}
+    char c = 'A';
+    if(c < '0' || c > '9') cout << "不是數字" << endl;
+{% endhighlight %}
+```
+不是數字
+```
+
+判斷a-z
+{% highlight c++ linenos %}
+    char c = 'A';
+    if(c < 'a' || c > 'z') cout << "不是小寫字母" << endl;
+{% endhighlight %}
+```
+不是小寫字母
+```
+
+判斷A-Z
+{% highlight c++ linenos %}
+    char c = 'a';
+    if(c < 'A' || c > 'Z') cout << "不是大寫字母" << endl;
+{% endhighlight %}
+```
+不是大寫字母
+```
+### 跳脫字元
 
 重要有以下幾種
 
@@ -118,7 +222,7 @@ c1=C
 |13|\\r|移動到最前面|
 
 
-##### 設定空字元
+#### 設定空字元
 
 {% highlight c++ linenos %}
     char c4 = 0;
@@ -130,7 +234,7 @@ c1=C
 c4=
 ```
 
-##### 關於斜線
+#### 關於斜線
 
 因為\"與\'與\\，被編譯器作為以下用途。
 
@@ -140,7 +244,7 @@ c4=
 
 所以不能直接使用\"與\'與\\，必須加上\\"與\\'與`\\`。
 
-##### 雙引號
+#### 雙引號
 
 {% highlight c++ linenos %}
     char c2 = '"';
@@ -158,7 +262,7 @@ c2="
 我說，"跑!"
 ```
 
-##### 單引號
+#### 單引號
 
 {% highlight c++ linenos %}
     char c3 = '\'';
@@ -175,5 +279,4 @@ c2="
 c3='
 我說，'跑!'
 ```
-
 
