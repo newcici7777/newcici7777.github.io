@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>原地反轉字串 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>字串拷貝 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -161,6 +161,13 @@
     	<a href="/pages/c/basic/loop" onclick="pageScrollToTop(this)"> 迴圈</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/chrono" onclick="pageScrollToTop(this)"> 程式執行時間</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -293,34 +300,79 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/string/string" onclick="pageScrollToTop(this)"> string 字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 實作字串函式 </a><ul>
+	
+	
+	<li class="">
     	<a href="/pages/c/basic/strLen" onclick="pageScrollToTop(this)"> 取得字串長度</a>
         
             
         </li>
 	
 	
-	<li class="active">
-    	<a href="/pages/c/array/reverseStr" onclick="pageScrollToTop(this)"> 原地反轉字串</a>
+	<li class="">
+    	<a href="/pages/c/string/reverseStr" onclick="pageScrollToTop(this)"> 原地反轉字串</a>
         
             
-                <ul><li><a href="#思路如下" onclick="mobilePageScrollToAnchor(this)" >思路如下</a><ul><li><a href="#偶數字串" onclick="mobilePageScrollToAnchor(this)" >偶數字串</a></li><li><a href="#奇數字串" onclick="mobilePageScrollToAnchor(this)" >奇數字串</a></li></ul></li><li><a href="#程式碼" onclick="mobilePageScrollToAnchor(this)" >程式碼</a></li></ul>
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/integerToStr" onclick="pageScrollToTop(this)"> 整數轉成字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/stringToInt" onclick="pageScrollToTop(this)"> 字串轉成數字</a>
+        
+            
+        </li>
+	
+	
+	<li class="active">
+    	<a href="/pages/c/string/stringCopy" onclick="pageScrollToTop(this)"> 字串拷貝</a>
+        
+            
+                <ul><li><a href="#陣列法" onclick="mobilePageScrollToAnchor(this)" >陣列法</a></li><li><a href="#指標法" onclick="mobilePageScrollToAnchor(this)" >指標法</a></li><li><a href="#memcpy" onclick="mobilePageScrollToAnchor(this)" >memcpy</a></li><li><a href="#改良式strncpy" onclick="mobilePageScrollToAnchor(this)" >改良式strncpy</a></li></ul>
 
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/array/integerToStr" onclick="pageScrollToTop(this)"> 整數轉成字串</a>
+    	<a href="/pages/c/string/stringCat" onclick="pageScrollToTop(this)"> 字串連結</a>
         
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/string" onclick="pageScrollToTop(this)"> string 字串</a>
+    	<a href="/pages/c/string/strchr" onclick="pageScrollToTop(this)"> 字元搜尋</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/strcmp" onclick="pageScrollToTop(this)"> 字串比較</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/strstr" onclick="pageScrollToTop(this)"> 字串搜尋</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 參考 </a><ul>
@@ -546,7 +598,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >原地反轉字串</a>
+                            <a href="." >字串拷貝</a>
                         
                     </h1>
                 </div>
@@ -559,61 +611,10 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/array/reverseStr">原地反轉字串</h1>
+                        <h1 id="/pages/c/string/stringCopy">字串拷貝</h1>
                     
 
-                    <p>原地的意思是只在原本的陣列移動並反轉字串。
-不額外建立其它記憶體空間。</p>
-
-<h2 id="思路如下">思路如下</h2>
-
-<h3 id="偶數字串">偶數字串</h3>
-
-<p>字串abcd從中間切一半，並頭尾向中間逐一進行交換。</p>
-
-<p>ab cd</p>
-
-<p>a與d交換</p>
-
-<p>b與c交換</p>
-
-<h3 id="奇數字串">奇數字串</h3>
-
-<p>字串abcde，中間值為c，除了c不用變，其它字母，頭尾向中間逐一進行交換。</p>
-
-<p>ab c de</p>
-
-<p>a與e交換</p>
-
-<p>b與d交換</p>
-
-<h2 id="程式碼">程式碼</h2>
-
-<p>以abcde為例，長度為5，迴圈次數 5 / 2 = 2次</p>
-
-<p>以下為互相交換的陣列索引</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">迴圈次數</th>
-      <th style="text-align: center">i</th>
-      <th style="text-align: center">len-1-i</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">第1次</td>
-      <td style="text-align: center">0</td>
-      <td style="text-align: center">4</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">第2次</td>
-      <td style="text-align: center">1</td>
-      <td style="text-align: center">3</td>
-    </tr>
-  </tbody>
-</table>
+                    <h2 id="陣列法">陣列法</h2>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -630,23 +631,162 @@
 12
 13
 14
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//清空記憶體的值</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入字串:"</span><span class="p">;</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">str</span><span class="p">;</span>
-    
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">str</span><span class="p">);</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kt">char</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-        <span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">str</span><span class="p">[</span><span class="n">len</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">];</span>
-        <span class="n">str</span><span class="p">[</span><span class="n">len</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class="code"><pre><span class="c1">//參數2因為是常數字串，所以型態為const char*</span>
+<span class="kt">char</span><span class="o">*</span> <span class="nf">myStrCpy</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//i為dest陣列的索引</span>
+    <span class="c1">//j為src陣列的索引</span>
+    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="c1">// 如果來源字串不為0就進入迴圈</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">src</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="p">{</span>
+        <span class="c1">//將src[j]的值給dest[i]，然後i++,j++</span>
+        <span class="n">dest</span><span class="p">[</span><span class="n">i</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="n">src</span><span class="p">[</span><span class="n">j</span><span class="o">++</span><span class="p">];</span>
     <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">str</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//將dest結尾放上空字元</span>
+    <span class="n">dest</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+    <span class="c1">//清空陣列記憶體中的值</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
+    <span class="n">myStrCpy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name = Bill
+</code></pre></div></div>
+
+<h2 id="指標法">指標法</h2>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre><span class="c1">//參數2因為是常數字串，所以型態為const char*</span>
+<span class="kt">char</span><span class="o">*</span> <span class="nf">myStrCpy</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//若src的值不為空就進入迴圈</span>
+    <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">src</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//將src的值指派給dest，接著指標往下個位址移動</span>
+        <span class="o">*</span><span class="n">dest</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">src</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">//將dest的值放上空字元</span>
+    <span class="o">*</span><span class="n">dest</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+    <span class="c1">//清空陣列記憶體中的值</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
+    <span class="n">myStrCpy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="memcpy">memcpy</h2>
+
+<p>將來源字串copy到目的字串，拷貝字數由參數3決定。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>memcpy(目的字串, 來源字串, 要拷貝字數);
+</code></pre></div></div>
+
+<p>strlen(src)回傳是不包含'\0'的長度，所以再+1，才會把src的結尾'\0'拷貝到目的字串。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="c1">//參數2因為是常數字串，所以型態為const char*</span>
+<span class="kt">char</span><span class="o">*</span> <span class="nf">myStrCpy</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">src</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+    <span class="c1">//清空陣列記憶體中的值</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
+    <span class="n">myStrCpy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="改良式strncpy">改良式strncpy</h2>
+
+<p>傳統的strncpy，若n的長度小於src的長度，不會在dest結尾加上'\0'。</p>
+
+<p>所以改良式strncpy，不管n是不是小於src的長度，都會在結尾加上'\0'。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="c1">//參數2因為是常數字串，所以型態為const char*</span>
+<span class="kt">char</span><span class="o">*</span> <span class="nf">myStrnCpy</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">,</span><span class="k">const</span> <span class="kt">size_t</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+    <span class="o">*</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//增加結尾符號</span>
+    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+    <span class="c1">//清空陣列記憶體中的值</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
+    <span class="n">myStrnCpy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="s">"Bill"</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -710,14 +850,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/basic/strLen" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 取得字串長度">
+                        <a href="/pages/c/string/stringToInt" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 字串轉成數字">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/array/integerToStr" class="navigation navigation-next navigation-unique" aria-label="Next page: 整數轉成字串">
+                        <a href="/pages/c/string/stringCat" class="navigation navigation-next navigation-unique" aria-label="Next page: 字串連結">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -735,11 +875,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "整數轉成字串",
+            "title": "字串轉成數字",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/array/integerToStr.md",
-            "ref": "_pages/c/array/integerToStr.md",
+            "path": "_pages/c/string/stringToInt.md",
+            "ref": "_pages/c/string/stringToInt.md",
             "articles": []
         },
         
@@ -831,13 +971,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/array/reverseStr.md",
-        "mtime": "2024-07-27 00:00:00 +0800",
+        "path": "_pages/c/string/stringCopy.md",
+        "mtime": "2024-07-29 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-07-29 07:29:25 +0800"
+        "time": "2024-08-02 15:10:15 +0800"
     },
     "basePath": "",
     "book": {

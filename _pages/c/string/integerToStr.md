@@ -106,5 +106,5 @@ Reverse result : 1234
 ```
 
 
-[1]: {% link _pages/c/array/reverseStr.md %}
+[1]: {% link _pages/c/string/reverseStr.md %}
 [2]: {% link _pages/c/basic/charType.md %}#字元運算

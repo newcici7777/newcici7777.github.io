@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>整數轉成字串 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>字元搜尋 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -161,6 +161,13 @@
     	<a href="/pages/c/basic/loop" onclick="pageScrollToTop(this)"> 迴圈</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/chrono" onclick="pageScrollToTop(this)"> 程式執行時間</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -293,6 +300,16 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/string/string" onclick="pageScrollToTop(this)"> string 字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 實作字串函式 </a><ul>
+	
+	
+	<li class="">
     	<a href="/pages/c/basic/strLen" onclick="pageScrollToTop(this)"> 取得字串長度</a>
         
             
@@ -300,27 +317,62 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/array/reverseStr" onclick="pageScrollToTop(this)"> 原地反轉字串</a>
+    	<a href="/pages/c/string/reverseStr" onclick="pageScrollToTop(this)"> 原地反轉字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/integerToStr" onclick="pageScrollToTop(this)"> 整數轉成字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/stringToInt" onclick="pageScrollToTop(this)"> 字串轉成數字</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/stringCopy" onclick="pageScrollToTop(this)"> 字串拷貝</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/stringCat" onclick="pageScrollToTop(this)"> 字串連結</a>
         
             
         </li>
 	
 	
 	<li class="active">
-    	<a href="/pages/c/array/integerToStr" onclick="pageScrollToTop(this)"> 整數轉成字串</a>
+    	<a href="/pages/c/string/strchr" onclick="pageScrollToTop(this)"> 字元搜尋</a>
         
             
-                <ul><li><a href="#思路" onclick="mobilePageScrollToAnchor(this)" >思路</a><ul><li><a href="#步驟1" onclick="mobilePageScrollToAnchor(this)" >步驟1</a></li><li><a href="#步驟2" onclick="mobilePageScrollToAnchor(this)" >步驟2</a></li><li><a href="#步驟3" onclick="mobilePageScrollToAnchor(this)" >步驟3</a></li><li><a href="#步驟4" onclick="mobilePageScrollToAnchor(this)" >步驟4</a></li><li><a href="#翻轉字串" onclick="mobilePageScrollToAnchor(this)" >翻轉字串</a></li></ul></li><li><a href="#完整程式碼" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul>
+                <ul><li><a href="#strchr" onclick="mobilePageScrollToAnchor(this)" >strchr</a></li><li><a href="#strrchr" onclick="mobilePageScrollToAnchor(this)" >strrchr</a></li></ul>
 
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/string" onclick="pageScrollToTop(this)"> string 字串</a>
+    	<a href="/pages/c/string/strcmp" onclick="pageScrollToTop(this)"> 字串比較</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/strstr" onclick="pageScrollToTop(this)"> 字串搜尋</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 參考 </a><ul>
@@ -546,7 +598,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >整數轉成字串</a>
+                            <a href="." >字元搜尋</a>
                         
                     </h1>
                 </div>
@@ -559,74 +611,10 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/array/integerToStr">整數轉成字串</h1>
+                        <h1 id="/pages/c/string/strchr">字元搜尋</h1>
                     
 
-                    <p>Prerequisites:</p>
-
-<ul>
-  <li><a href="/pages/c/array/reverseStr/">原地反轉字串</a></li>
-  <li><a href="/pages/c/basic/charType/#字元運算">字元運算</a></li>
-</ul>
-
-<h2 id="思路">思路</h2>
-
-<p>輸入1234</p>
-
-<p>轉成'1234'</p>
-
-<p>定義字元陣列 char result[20];</p>
-
-<p>定義索引 int index = 0;</p>
-
-<h3 id="步驟1">步驟1</h3>
-
-<p>1234 % 10 = 4</p>
-
-<p>1234 / 10 = 123</p>
-
-<p>將餘數4轉成字元存入陣列</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result[0] = 4 + '0';
-</code></pre></div></div>
-
-<h3 id="步驟2">步驟2</h3>
-
-<p>123 % 10 = 3</p>
-
-<p>123 / 10 = 12</p>
-
-<p>將餘數3轉成字元存入陣列</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result[1] = 3 + '0';
-</code></pre></div></div>
-
-<h3 id="步驟3">步驟3</h3>
-
-<p>12 % 10 = 2</p>
-
-<p>12 / 10 = 1</p>
-
-<p>將餘數2轉成字元存入陣列</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result[2] = 2 + '0';
-</code></pre></div></div>
-
-<h3 id="步驟4">步驟4</h3>
-
-<p>1 % 10 = 1</p>
-
-<p>1 / 10 = 0</p>
-
-<p>將餘數1轉成字元存入陣列</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result[3] = 1 + '0';
-</code></pre></div></div>
-<h3 id="翻轉字串">翻轉字串</h3>
-
-<p>將'4321'轉成'1234'</p>
-
-<h2 id="完整程式碼">完整程式碼</h2>
+                    <h2 id="strchr">strchr</h2>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -651,36 +639,96 @@
 20
 21
 22
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">input</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入整數:"</span><span class="p">;</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">input</span><span class="p">;</span>
-    <span class="kt">char</span> <span class="n">result</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">result</span><span class="p">));</span>
-    <span class="c1">//取餘數</span>
-    <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">input</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-    	<span class="c1">//將餘數轉成字元存入陣列</span>
-        <span class="n">result</span><span class="p">[</span><span class="n">index</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="n">input</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">+</span> <span class="sc">'0'</span><span class="p">;</span>
-        <span class="n">input</span> <span class="o">=</span> <span class="n">input</span> <span class="o">/</span> <span class="mi">10</span><span class="p">;</span>
+23
+24
+</pre></td><td class="code"><pre><span class="kt">char</span><span class="o">*</span> <span class="nf">mystrchr</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">s</span><span class="p">,</span><span class="kt">int</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//將s開始位址給p指標</span>
+    <span class="c1">//const char*轉成char*要強制轉型</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">)</span><span class="n">s</span><span class="p">;</span>
+    <span class="c1">//若p指標的值不為\0就進入迴圈</span>
+    <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//若為指標的值與字元是相同，代表找到</span>
+        <span class="c1">//傳回p的位址</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">p</span> <span class="o">==</span> <span class="n">c</span><span class="p">)</span> <span class="k">return</span> <span class="n">p</span><span class="p">;</span>
+        <span class="n">p</span><span class="o">++</span><span class="p">;</span><span class="c1">//位址往右移一位</span>
     <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"result : "</span> <span class="o">&lt;&lt;</span> <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//翻轉</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">result</span><span class="p">);</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kt">char</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-        <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="n">len</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">];</span>
-        <span class="n">result</span><span class="p">[</span><span class="n">len</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//找不到就回傳null的位址</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+    <span class="c1">//清空陣列記憶體中的值</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="s">"Hello World!"</span><span class="p">);</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="n">mystrchr</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="sc">'W'</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">p1</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Reverse result : "</span> <span class="o">&lt;&lt;</span> <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>請輸入整數:1234
-result : 4321
-Reverse result : 1234
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>p1 = World!
 </code></pre></div></div>
 
+<h2 id="strrchr">strrchr</h2>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+</pre></td><td class="code"><pre><span class="kt">char</span><span class="o">*</span> <span class="nf">mystrrchr</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">s</span><span class="p">,</span><span class="kt">int</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//將s開始位址給p指標</span>
+    <span class="c1">//const char*轉成char*要強制轉型</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">)</span><span class="n">s</span><span class="p">;</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="c1">//若p指標的值不為\0就進入迴圈</span>
+    <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//若為指標的值與字元是相同，代表找到</span>
+        <span class="c1">//p的位址放入p1中</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">p</span> <span class="o">==</span> <span class="n">c</span><span class="p">)</span> <span class="n">p1</span> <span class="o">=</span> <span class="n">p</span><span class="p">;</span>
+        <span class="n">p</span><span class="o">++</span><span class="p">;</span><span class="c1">//位址往右移一位</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">p1</span><span class="p">;</span><span class="c1">//回傳p1最後的位址</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+    <span class="c1">//清空陣列記憶體中的值</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="s">"Hello World!"</span><span class="p">);</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="n">mystrrchr</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="sc">'o'</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">p1</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>p1 = orld!
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -744,14 +792,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/array/reverseStr" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 原地反轉字串">
+                        <a href="/pages/c/string/stringCat" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 字串連結">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/basic/string" class="navigation navigation-next navigation-unique" aria-label="Next page: string 字串">
+                        <a href="/pages/c/string/strcmp" class="navigation navigation-next navigation-unique" aria-label="Next page: 字串比較">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -767,6 +815,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "字串比較",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/c/string/strcmp.md",
+            "ref": "_pages/c/string/strcmp.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -856,13 +913,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/array/integerToStr.md",
-        "mtime": "2024-07-29 00:00:00 +0800",
+        "path": "_pages/c/string/strchr.md",
+        "mtime": "2024-08-02 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-07-29 07:29:25 +0800"
+        "time": "2024-08-02 15:10:15 +0800"
     },
     "basePath": "",
     "book": {

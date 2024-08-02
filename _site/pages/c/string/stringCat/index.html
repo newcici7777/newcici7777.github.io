@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>string 字串 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>字串連結 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -161,6 +161,13 @@
     	<a href="/pages/c/basic/loop" onclick="pageScrollToTop(this)"> 迴圈</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/chrono" onclick="pageScrollToTop(this)"> 程式執行時間</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -293,6 +300,16 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/string/string" onclick="pageScrollToTop(this)"> string 字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 實作字串函式 </a><ul>
+	
+	
+	<li class="">
     	<a href="/pages/c/basic/strLen" onclick="pageScrollToTop(this)"> 取得字串長度</a>
         
             
@@ -300,27 +317,62 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/array/reverseStr" onclick="pageScrollToTop(this)"> 原地反轉字串</a>
+    	<a href="/pages/c/string/reverseStr" onclick="pageScrollToTop(this)"> 原地反轉字串</a>
         
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/array/integerToStr" onclick="pageScrollToTop(this)"> 整數轉成字串</a>
+    	<a href="/pages/c/string/integerToStr" onclick="pageScrollToTop(this)"> 整數轉成字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/stringToInt" onclick="pageScrollToTop(this)"> 字串轉成數字</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/stringCopy" onclick="pageScrollToTop(this)"> 字串拷貝</a>
         
             
         </li>
 	
 	
 	<li class="active">
-    	<a href="/pages/c/basic/string" onclick="pageScrollToTop(this)"> string 字串</a>
+    	<a href="/pages/c/string/stringCat" onclick="pageScrollToTop(this)"> 字串連結</a>
         
             
-                <ul><li><a href="#string陣列" onclick="mobilePageScrollToAnchor(this)" >string陣列</a></li></ul>
+                <ul><li><a href="#strcat" onclick="mobilePageScrollToAnchor(this)" >strcat</a></li><li><a href="#strncat" onclick="mobilePageScrollToAnchor(this)" >strncat</a></li></ul>
 
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/strchr" onclick="pageScrollToTop(this)"> 字元搜尋</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/strcmp" onclick="pageScrollToTop(this)"> 字串比較</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/strstr" onclick="pageScrollToTop(this)"> 字串搜尋</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 參考 </a><ul>
@@ -546,7 +598,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >string 字串</a>
+                            <a href="." >字串連結</a>
                         
                     </h1>
                 </div>
@@ -559,12 +611,123 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/basic/string">string 字串</h1>
+                        <h1 id="/pages/c/string/stringCat">字串連結</h1>
                     
 
-                    <h2 id="string陣列">string陣列</h2>
+                    <h2 id="strcat">strcat</h2>
 
-<p>判斷數字，印出月份英文</p>
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>    <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">),</span> <span class="n">src</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">src</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>假設dest字串為"Hello\0"，strlen(dest)回傳5，不包含'\0'。
+dest + 5的意思是，指標往右移動5格。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">dest字元</th>
+      <th style="text-align: center">H</th>
+      <th style="text-align: center">e</th>
+      <th style="text-align: center">l</th>
+      <th style="text-align: center">l</th>
+      <th style="text-align: center">o</th>
+      <th style="text-align: center">\0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">移動前</td>
+      <td style="text-align: center">^</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">移動+5格</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">^</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>此時dest指標的位置在'\0'。</p>
+
+<p>假設src字串為"World\0"，
+strlen(src) + 1是指要拷貝src全部字串， + 1是包含src的'\0'也一併拷貝到dest。</p>
+
+<p>從dest所在的指標位址開始拷貝src的字元。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">dest字元</th>
+      <th style="text-align: center">H</th>
+      <th style="text-align: center">e</th>
+      <th style="text-align: center">l</th>
+      <th style="text-align: center">l</th>
+      <th style="text-align: center">o</th>
+      <th style="text-align: center">\0</th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">移動前</td>
+      <td style="text-align: center">^</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">移動+5格</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">^</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">拷貝src</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">W</td>
+      <td style="text-align: center">o</td>
+      <td style="text-align: center">r</td>
+      <td style="text-align: center">l</td>
+      <td style="text-align: center">d</td>
+      <td style="text-align: center">\0</td>
+    </tr>
+  </tbody>
+</table>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -579,24 +742,170 @@
 10
 11
 12
-</pre></td><td class="code"><pre><span class="c1">//12個月</span>
-<span class="k">const</span> <span class="kt">int</span> <span class="n">MAX_MONTH</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">mon_arr</span><span class="p">[</span><span class="n">MAX_MONTH</span><span class="p">]</span> <span class="o">=</span>
-    <span class="p">{</span><span class="s">"January"</span><span class="p">,</span><span class="s">"February"</span><span class="p">,</span><span class="s">"March"</span><span class="p">,</span><span class="s">"April"</span><span class="p">,</span><span class="s">"May"</span><span class="p">,</span><span class="s">"June"</span><span class="p">,</span><span class="s">"July"</span><span class="p">,</span><span class="s">"August"</span><span class="p">,</span><span class="s">"September"</span><span class="p">,</span><span class="s">"October"</span><span class="p">,</span><span class="s">"November"</span><span class="p">,</span><span class="s">"December"</span><span class="p">};</span>
-    <span class="kt">int</span> <span class="n">month</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入數字月份(1~12):"</span><span class="p">;</span>
-    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">month</span><span class="p">;</span>
-    <span class="c1">//陣列索引介於0..11，所以要把month-1</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mon_arr</span><span class="p">[</span><span class="n">month</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="c1">//參數2因為是常數字串，所以型態為const char*</span>
+<span class="kt">char</span><span class="o">*</span> <span class="nf">myStrCat</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">//拷貝src字串</span>
+    <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">),</span> <span class="n">src</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">src</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="c1">//返回dest開始位址</span>
+    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+    <span class="c1">//清空陣列記憶體中的值</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="s">"Hello"</span><span class="p">);</span>
+    <span class="n">myStrCat</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="s">"World"</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str = "</span> <span class="o">&lt;&lt;</span> <span class="n">str</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>請輸入數字月份(1~12):1
-January
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>str = HelloWorld
 </code></pre></div></div>
+
+<h2 id="strncat">strncat</h2>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kt">char</span><span class="o">*</span> <span class="nf">myStrNCat</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">,</span><span class="k">const</span> <span class="kt">size_t</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//先把dest字串的長度先存下來</span>
+    <span class="kt">size_t</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">);</span>
+    <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+    <span class="o">*</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span> <span class="o">+</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>函式只拷貝src字串中的n個，並在拷貝n個後加上'\0'。</p>
+
+<p>以下是只拷貝2個字元的例子。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">dest字元</th>
+      <th style="text-align: center">H</th>
+      <th style="text-align: center">e</th>
+      <th style="text-align: center">l</th>
+      <th style="text-align: center">l</th>
+      <th style="text-align: center">o</th>
+      <th style="text-align: center">\0</th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">移動前</td>
+      <td style="text-align: center">^</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">移動+5</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">^</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">移動+5+2</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">^</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">拷貝src</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">W</td>
+      <td style="text-align: center">o</td>
+      <td style="text-align: center">\0</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>完整程式碼</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="kt">char</span><span class="o">*</span> <span class="nf">myStrNCat</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">,</span><span class="k">const</span> <span class="kt">size_t</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//先把dest字串的長度先存下來</span>
+    <span class="kt">size_t</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">);</span>
+    <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+    <span class="o">*</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span> <span class="o">+</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+    <span class="c1">//清空陣列記憶體中的值</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="s">"Hello"</span><span class="p">);</span>
+    <span class="n">myStrNCat</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="s">"World"</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str = "</span> <span class="o">&lt;&lt;</span> <span class="n">str</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -660,14 +969,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/array/integerToStr" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 整數轉成字串">
+                        <a href="/pages/c/string/stringCopy" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 字串拷貝">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/reference/reference" class="navigation navigation-next navigation-unique" aria-label="Next page: 參考">
+                        <a href="/pages/c/string/strchr" class="navigation navigation-next navigation-unique" aria-label="Next page: 字元搜尋">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -685,11 +994,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "迴圈",
+            "title": "字串拷貝",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/basic/loop.md",
-            "ref": "_pages/c/basic/loop.md",
+            "path": "_pages/c/string/stringCopy.md",
+            "ref": "_pages/c/string/stringCopy.md",
             "articles": []
         },
         
@@ -781,13 +1090,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/basic/string.md",
-        "mtime": "2024-07-22 00:00:00 +0800",
+        "path": "_pages/c/string/stringCat.md",
+        "mtime": "2024-07-29 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-07-29 07:29:25 +0800"
+        "time": "2024-08-02 15:10:15 +0800"
     },
     "basePath": "",
     "book": {
