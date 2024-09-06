@@ -19,8 +19,6 @@ Ascii Code 1-31為控制碼
 
 中文的Ascii Code 128-255，數字、大小寫英文字母、空格、標點符號、空字元(\0)介於Ascii Code 0-127。
 
-中文是由二個ASCII Code組成。
-
 字元char是0-255，沒有負數，在把中文字元轉換成整數之前，必須先轉成unsigned char，再轉成int，才會正確顯示中文的ascii碼。
 
 {% highlight c++ linenos %}
@@ -79,12 +77,37 @@ int main() {
 
 ## 統計中文個數
 
-一個中文算一個字元，全形符號也算一個字元，英文算一個字元，半形符號算一個字元。
 
 數字、大小寫英文字母、空格、標點符號、空字元(\0)介於Ascii Code 0-127。
 
 中文的Ascii Code 128-255。
 
-{% highlight c++ linenos %}
 
+以下程式碼是錯的，仍待修正。
+
+{% highlight c++ linenos %}
+int countChar(const char* str) {
+    if(str == 0) return -1;
+    int count = 0;
+    bool flag = false;
+    while(*str) {
+        //0
+        if((unsigned char) *str < 128) {
+            count++;
+        } else {
+            if(flag) {
+                count++;
+                flag = false;
+            } else {
+                flag = true;
+            }
+        }
+        str++;
+    }
+    return count;
+}
+int main() {
+    cout << countChar("西") << endl;
+    return 0;
+}
 {% endhighlight %}

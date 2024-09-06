@@ -43,6 +43,17 @@ int main() {
 ```
 
 ## strncmp
+
+```
+int mystrncmp(const char* str1,const char* str2,const size_t n)
+```
+
+第一個參數是比較字串1。
+
+第二個參數是比較字串2。
+
+第三個參數n是要比較多少字元，若n為2，比較字串1與字串2前2個字元。
+
 {% highlight c++ linenos %}
 int mystrncmp(const char* str1,const char* str2,const size_t n) {
     int i = 0;

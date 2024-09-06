@@ -99,7 +99,7 @@
     	<a href="/pages/c/editor/vsDebug" onclick="pageScrollToTop(this)"> VS Debug</a>
         
             
-                
+                <ul><li><a href="#設置中斷點" onclick="mobilePageScrollToAnchor(this)" >設置中斷點</a></li><li><a href="#執行斷點" onclick="mobilePageScrollToAnchor(this)" >執行斷點</a></li><li><a href="#f5-移到斷點" onclick="mobilePageScrollToAnchor(this)" >F5 移到斷點</a><ul><li><a href="#第一次迴圈" onclick="mobilePageScrollToAnchor(this)" >第一次迴圈</a></li><li><a href="#第二次迴圈" onclick="mobilePageScrollToAnchor(this)" >第二次迴圈</a></li><li><a href="#查詢變數的值" onclick="mobilePageScrollToAnchor(this)" >查詢變數的值</a></li><li><a href="#全部執行完斷點" onclick="mobilePageScrollToAnchor(this)" >全部執行完斷點</a></li></ul></li><li><a href="#f11-移到下一行程式碼" onclick="mobilePageScrollToAnchor(this)" >F11 移到下一行程式碼</a></li></ul>
 
             
         </li>
@@ -397,6 +397,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/string/split" onclick="pageScrollToTop(this)"> split 切割字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/string/chineseAscii" onclick="pageScrollToTop(this)"> ASCII與中文</a>
         
             
@@ -647,6 +654,48 @@ F5/F10開始調試
 shift+F5放棄調試
 F10逐過程執行
 F11逐語句執行(進入函式)</p>
+
+<h2 id="設置中斷點">設置中斷點</h2>
+
+<p>點擊圖下紅點位置。</p>
+
+<p><img src="/assets/img/vsdebug/debug1.png" alt="img" /></p>
+
+<h2 id="執行斷點">執行斷點</h2>
+
+<p><img src="/assets/img/vsdebug/debug2.png" alt="img" /></p>
+
+<h2 id="f5-移到斷點">F5 移到斷點</h2>
+
+<h3 id="第一次迴圈">第一次迴圈</h3>
+
+<p>以下紅框的按鈕為跳到下一個斷點，但目前範例只有在迴圈中一個斷點，也就意味下一個斷點就是下一次迴圈。</p>
+
+<p>左邊會有變數的變化，區域變數word，會根據每一次迴圈，值有所不同。</p>
+
+<p><img src="/assets/img/vsdebug/debug3.png" alt="img" /></p>
+
+<h3 id="第二次迴圈">第二次迴圈</h3>
+
+<p>紅框的按鈕為跳到下一個斷點，區域變數word的值已經變成C++。</p>
+
+<p><img src="/assets/img/vsdebug/debug4.png" alt="img" /></p>
+
+<h3 id="查詢變數的值">查詢變數的值</h3>
+
+<p><img src="/assets/img/vsdebug/debug5.png" alt="img" /></p>
+
+<h3 id="全部執行完斷點">全部執行完斷點</h3>
+
+<p>在偵錯主控台並不會邊執行邊輸出，必須等到全部執行斷點，結果才會印出來。</p>
+
+<p><img src="/assets/img/vsdebug/debug6.png" alt="img" /></p>
+
+<h2 id="f11-移到下一行程式碼">F11 移到下一行程式碼</h2>
+
+<p><img src="/assets/img/vsdebug/debug7.png" alt="img" /></p>
+
+<p><img src="/assets/img/vsdebug/debug8.png" alt="img" /></p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -733,6 +782,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "split 切割字串",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/c/string/split.md",
+            "ref": "_pages/c/string/split.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -823,12 +881,12 @@ window.MathJax = {
     },
     "file": {
         "path": "_pages/c/editor/vsDebug.md",
-        "mtime": "2024-08-31 00:00:00 +0800",
+        "mtime": "2024-09-02 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-08-31 15:11:13 +0800"
+        "time": "2024-09-06 22:46:41 +0800"
     },
     "basePath": "",
     "book": {

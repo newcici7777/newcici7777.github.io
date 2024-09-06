@@ -4,7 +4,7 @@ date: 2024-07-29
 keywords: c++, strcat 
 ---
 
-## strcat
+## strcat 字串連結
 {% highlight c++ linenos %}
     memcpy(dest + strlen(dest), src, strlen(src) + 1);
 {% endhighlight %}
@@ -53,28 +53,59 @@ int main() {
 str = HelloWorld
 ```
 
-## strncat
+## strncat 拷貝n個字元
+
+```
+memcpy(dest + len, src, n);
+```
+參數1 = dest + len 將位址移動到要拷貝的起始位址
+
+參數2 = src 從src[0]位址開始拷貝字元
+
+參數3 = n 拷貝幾個字元
+
+目的字串 = Hello
+
+來源字串 = World
+
+拷貝個數 = 2
+
+將來源字串Wo(二個字元)，接到Hello字串後面。
+
+### 將目的字串位址移到最後面
+
+|dest字元|H|e|l|l|o|\0||||||
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|移動前|^|||||||||||
+|移動+5||||||^||||||
+
+### 將Wo連到目的字串(Hello)位址最後面
+
+|dest字元|H|e|l|l|o|\0||||||
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|拷貝src||||||W|o|||||
+
+
+### 連結完來源字串Wo後，在最後面加上空字元
+
+```
+*(dest + len + n) = 0;
+```
+
+|dest字元|H|e|l|l|o|\0||||||
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|加上空字元||||||W|o|\0||||
 
 {% highlight c++ linenos %}
 char* myStrNCat(char* dest,const char* src,const size_t n) {
     //先把dest字串的長度先存下來
     size_t len = strlen(dest);
     memcpy(dest + len, src, n);
-    *(dest + len + n) = 0;
+    *(dest + len + n) = 0;//將目的字串與拷貝的字串最後面添加結尾字元0
     return dest;
 }
 {% endhighlight %}
 
-函式只拷貝src字串中的n個，並在拷貝n個後加上\'\0\'。
-
-以下是只拷貝2個字元的例子。
-
-|dest字元|H|e|l|l|o|\0||||||
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|移動前|^|||||||||||
-|移動+5||||||^||||||
-|移動+5+2||||||||^||||
-|拷貝src||||||W|o|\0||||
 
 完整程式碼
 

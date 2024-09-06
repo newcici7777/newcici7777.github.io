@@ -4,7 +4,16 @@ date: 2024-08-02
 keywords: c++, strchr 
 ---
 
-## strchr
+## strchr從字串左邊搜尋字元
+
+從字串左邊搜尋字元，回傳從左邊搜尋的第一個字元位址，並印出字元位址之後所有的字元。
+
+搜尋字串 = Hello World!
+
+搜尋字元 = W
+
+搜尋結果 = World!
+
 {% highlight c++ linenos %}
 char* mystrchr(const char* s,int c) {
     //將s開始位址給p指標
@@ -36,7 +45,15 @@ int main() {
 p1 = World!
 ```
 
-## strrchr
+## strrchr從字串右邊搜尋字元
+
+從字串右邊搜尋字元，回傳從右邊搜尋的第一個字元位址，並印出字元位址之後所有的字元。
+
+搜尋字串 = Hello World!
+
+搜尋字元 = o
+
+搜尋結果 = orld!
 
 {% highlight c++ linenos %}
 char* mystrrchr(const char* s,int c) {

@@ -369,7 +369,7 @@
     	<a href="/pages/c/string/strchr" onclick="pageScrollToTop(this)"> 字元搜尋</a>
         
             
-                <ul><li><a href="#strchr" onclick="mobilePageScrollToAnchor(this)" >strchr</a></li><li><a href="#strrchr" onclick="mobilePageScrollToAnchor(this)" >strrchr</a></li></ul>
+                <ul><li><a href="#strchr從字串左邊搜尋字元" onclick="mobilePageScrollToAnchor(this)" >strchr從字串左邊搜尋字元</a></li><li><a href="#strrchr從字串右邊搜尋字元" onclick="mobilePageScrollToAnchor(this)" >strrchr從字串右邊搜尋字元</a></li></ul>
 
             
         </li>
@@ -391,6 +391,13 @@
 	
 	<li class="">
     	<a href="/pages/c/string/delstr" onclick="pageScrollToTop(this)"> 刪除字元</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/split" onclick="pageScrollToTop(this)"> split 切割字串</a>
         
             
         </li>
@@ -642,7 +649,15 @@
                         <h1 id="/pages/c/string/strchr">字元搜尋</h1>
                     
 
-                    <h2 id="strchr">strchr</h2>
+                    <h2 id="strchr從字串左邊搜尋字元">strchr從字串左邊搜尋字元</h2>
+
+<p>從字串左邊搜尋字元，回傳從左邊搜尋的第一個字元位址，並印出字元位址之後所有的字元。</p>
+
+<p>搜尋字串 = Hello World!</p>
+
+<p>搜尋字元 = W</p>
+
+<p>搜尋結果 = World!</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -699,7 +714,15 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>p1 = World!
 </code></pre></div></div>
 
-<h2 id="strrchr">strrchr</h2>
+<h2 id="strrchr從字串右邊搜尋字元">strrchr從字串右邊搜尋字元</h2>
+
+<p>從字串右邊搜尋字元，回傳從右邊搜尋的第一個字元位址，並印出字元位址之後所有的字元。</p>
+
+<p>搜尋字串 = Hello World!</p>
+
+<p>搜尋字元 = o</p>
+
+<p>搜尋結果 = orld!</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -947,7 +970,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-08-31 15:11:13 +0800"
+        "time": "2024-09-06 22:46:41 +0800"
     },
     "basePath": "",
     "book": {

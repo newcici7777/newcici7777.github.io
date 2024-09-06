@@ -362,7 +362,7 @@
     	<a href="/pages/c/string/stringCat" onclick="pageScrollToTop(this)"> 字串連結</a>
         
             
-                <ul><li><a href="#strcat" onclick="mobilePageScrollToAnchor(this)" >strcat</a></li><li><a href="#strncat" onclick="mobilePageScrollToAnchor(this)" >strncat</a></li></ul>
+                <ul><li><a href="#strcat-字串連結" onclick="mobilePageScrollToAnchor(this)" >strcat 字串連結</a></li><li><a href="#strncat-拷貝n個字元" onclick="mobilePageScrollToAnchor(this)" >strncat 拷貝n個字元</a><ul><li><a href="#將目的字串位址移到最後面" onclick="mobilePageScrollToAnchor(this)" >將目的字串位址移到最後面</a></li><li><a href="#將wo連到目的字串hello位址最後面" onclick="mobilePageScrollToAnchor(this)" >將Wo連到目的字串(Hello)位址最後面</a></li><li><a href="#連結完來源字串wo後在最後面加上空字元" onclick="mobilePageScrollToAnchor(this)" >連結完來源字串Wo後，在最後面加上空字元</a></li></ul></li></ul>
 
             
         </li>
@@ -391,6 +391,13 @@
 	
 	<li class="">
     	<a href="/pages/c/string/delstr" onclick="pageScrollToTop(this)"> 刪除字元</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/split" onclick="pageScrollToTop(this)"> split 切割字串</a>
         
             
         </li>
@@ -642,7 +649,7 @@
                         <h1 id="/pages/c/string/stringCat">字串連結</h1>
                     
 
-                    <h2 id="strcat">strcat</h2>
+                    <h2 id="strcat-字串連結">strcat 字串連結</h2>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -796,29 +803,25 @@ strlen(src) + 1是指要拷貝src全部字串， + 1是包含src的'\0'也一併
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>str = HelloWorld
 </code></pre></div></div>
 
-<h2 id="strncat">strncat</h2>
+<h2 id="strncat-拷貝n個字元">strncat 拷貝n個字元</h2>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre><span class="kt">char</span><span class="o">*</span> <span class="nf">myStrNCat</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">,</span><span class="k">const</span> <span class="kt">size_t</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//先把dest字串的長度先存下來</span>
-    <span class="kt">size_t</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">);</span>
-    <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span> <span class="o">+</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>memcpy(dest + len, src, n);
+</code></pre></div></div>
+<p>參數1 = dest + len 將位址移動到要拷貝的起始位址</p>
 
-<p>函式只拷貝src字串中的n個，並在拷貝n個後加上'\0'。</p>
+<p>參數2 = src 從src[0]位址開始拷貝字元</p>
 
-<p>以下是只拷貝2個字元的例子。</p>
+<p>參數3 = n 拷貝幾個字元</p>
+
+<p>目的字串 = Hello</p>
+
+<p>來源字串 = World</p>
+
+<p>拷貝個數 = 2</p>
+
+<p>將來源字串Wo(二個字元)，接到Hello字串後面。</p>
+
+<h3 id="將目的字串位址移到最後面">將目的字串位址移到最後面</h3>
 
 <table>
   <thead>
@@ -866,22 +869,71 @@ strlen(src) + 1是指要拷貝src全部字串， + 1是包含src的'\0'也一併
       <td style="text-align: center"> </td>
       <td style="text-align: center"> </td>
     </tr>
+  </tbody>
+</table>
+
+<h3 id="將wo連到目的字串hello位址最後面">將Wo連到目的字串(Hello)位址最後面</h3>
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align: center">移動+5+2</td>
+      <th style="text-align: center">dest字元</th>
+      <th style="text-align: center">H</th>
+      <th style="text-align: center">e</th>
+      <th style="text-align: center">l</th>
+      <th style="text-align: center">l</th>
+      <th style="text-align: center">o</th>
+      <th style="text-align: center">\0</th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">拷貝src</td>
       <td style="text-align: center"> </td>
       <td style="text-align: center"> </td>
       <td style="text-align: center"> </td>
       <td style="text-align: center"> </td>
       <td style="text-align: center"> </td>
+      <td style="text-align: center">W</td>
+      <td style="text-align: center">o</td>
       <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">^</td>
       <td style="text-align: center"> </td>
       <td style="text-align: center"> </td>
       <td style="text-align: center"> </td>
     </tr>
+  </tbody>
+</table>
+
+<h3 id="連結完來源字串wo後在最後面加上空字元">連結完來源字串Wo後，在最後面加上空字元</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*(dest + len + n) = 0;
+</code></pre></div></div>
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align: center">拷貝src</td>
+      <th style="text-align: center">dest字元</th>
+      <th style="text-align: center">H</th>
+      <th style="text-align: center">e</th>
+      <th style="text-align: center">l</th>
+      <th style="text-align: center">l</th>
+      <th style="text-align: center">o</th>
+      <th style="text-align: center">\0</th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">加上空字元</td>
       <td style="text-align: center"> </td>
       <td style="text-align: center"> </td>
       <td style="text-align: center"> </td>
@@ -896,6 +948,24 @@ strlen(src) + 1是指要拷貝src全部字串， + 1是包含src的'\0'也一併
     </tr>
   </tbody>
 </table>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kt">char</span><span class="o">*</span> <span class="nf">myStrNCat</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">,</span><span class="k">const</span> <span class="kt">size_t</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//先把dest字串的長度先存下來</span>
+    <span class="kt">size_t</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">);</span>
+    <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+    <span class="o">*</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span> <span class="o">+</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//將目的字串與拷貝的字串最後面添加結尾字元0</span>
+    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 <p>完整程式碼</p>
 
@@ -1124,7 +1194,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-08-31 15:11:13 +0800"
+        "time": "2024-09-06 22:46:41 +0800"
     },
     "basePath": "",
     "book": {

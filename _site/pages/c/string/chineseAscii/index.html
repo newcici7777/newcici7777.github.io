@@ -393,6 +393,13 @@
         </li>
 	
 	
+	<li class="">
+    	<a href="/pages/c/string/split" onclick="pageScrollToTop(this)"> split 切割字串</a>
+        
+            
+        </li>
+	
+	
 	<li class="active">
     	<a href="/pages/c/string/chineseAscii" onclick="pageScrollToTop(this)"> ASCII與中文</a>
         
@@ -679,8 +686,6 @@
 
 <p>中文的Ascii Code 128-255，數字、大小寫英文字母、空格、標點符號、空字元(\0)介於Ascii Code 0-127。</p>
 
-<p>中文是由二個ASCII Code組成。</p>
-
 <p>字元char是0-255，沒有負數，在把中文字元轉換成整數之前，必須先轉成unsigned char，再轉成int，才會正確顯示中文的ascii碼。</p>
 
 <figure class="highlight">
@@ -768,12 +773,63 @@ str[5]=191
 
 <h2 id="統計中文個數">統計中文個數</h2>
 
-<p>一個中文算一個字元，全形符號也算一個字元，英文算一個字元，半形符號算一個字元。</p>
-
 <p>數字、大小寫英文字母、空格、標點符號、空字元(\0)介於Ascii Code 0-127。</p>
 
 <p>中文的Ascii Code 128-255。</p>
 
+<p>以下程式碼是錯的，仍待修正。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">countChar</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="n">flag</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">str</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//0</span>
+        <span class="k">if</span><span class="p">((</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">)</span> <span class="o">*</span><span class="n">str</span> <span class="o">&lt;</span> <span class="mi">128</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+                <span class="n">flag</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="n">flag</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">str</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">count</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">countChar</span><span class="p">(</span><span class="s">"西"</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -837,7 +893,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/string/delstr" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 刪除字元">
+                        <a href="/pages/c/string/split" class="navigation navigation-prev navigation-unique" aria-label="Previous page: split 切割字串">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -964,7 +1020,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-08-31 15:11:13 +0800"
+        "time": "2024-09-06 22:46:41 +0800"
     },
     "basePath": "",
     "book": {

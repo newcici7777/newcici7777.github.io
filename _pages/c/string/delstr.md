@@ -169,6 +169,9 @@ int main() {
 }
 {% endhighlight %}
 
+```
+ooooyy
+```
 
 #### 程式碼2
 
@@ -235,6 +238,12 @@ int main() {
 {% endhighlight %}
 
 ## 刪除中間字串
+
+刪除前字串 = zzz123zzz
+
+要刪除123
+
+刪除後字串 = zzzzzz
 
 ### 指標解釋
 
