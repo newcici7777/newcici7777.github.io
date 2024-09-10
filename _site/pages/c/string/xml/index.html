@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>new/delete · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>xml搜尋 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -400,9 +400,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/string/xml" onclick="pageScrollToTop(this)"> xml搜尋</a>
         
+            
+                <ul><li><a href="#思路" onclick="mobilePageScrollToAnchor(this)" >思路</a><ul><li><a href="#組成name開始標籤與結束標籤" onclick="mobilePageScrollToAnchor(this)" >組成name開始標籤與結束標籤</a></li><li><a href="#計算值的字元個數" onclick="mobilePageScrollToAnchor(this)" >計算值的字元個數</a></li><li><a href="#截取值" onclick="mobilePageScrollToAnchor(this)" >截取值</a></li></ul></li><li><a href="#完整程式碼" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul>
+
             
         </li>
 	
@@ -490,12 +493,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/dynamicMemory/newDelete" onclick="pageScrollToTop(this)"> new/delete</a>
         
-            
-                <ul><li><a href="#new" onclick="mobilePageScrollToAnchor(this)" >new</a></li><li><a href="#delete" onclick="mobilePageScrollToAnchor(this)" >delete</a></li></ul>
-
             
         </li>
 	
@@ -640,7 +640,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >new/delete</a>
+                            <a href="." >xml搜尋</a>
                         
                     </h1>
                 </div>
@@ -653,15 +653,308 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/dynamicMemory/newDelete">new/delete</h1>
+                        <h1 id="/pages/c/string/xml">xml搜尋</h1>
                     
 
-                    <h3 id="new">new</h3>
+                    <p>要在一堆xml內容中尋找標籤名為name，並取出值。</p>
 
-<p>宣告指標變數，使用new在Heap區段申請記憶體空間，申請成功會回傳記憶體占用的開始位址。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>資料型態* 指標變數 = new 資料型態(初始值);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;id&gt;1&lt;/id&gt;&lt;name&gt;Cici&lt;/name&gt;&lt;age&gt;10&lt;/age&gt;
 </code></pre></div></div>
+
+<h2 id="思路">思路</h2>
+
+<h3 id="組成name開始標籤與結束標籤">組成name開始標籤與結束標籤</h3>
+
+<p>自已建立<code class="language-plaintext highlighter-rouge">&lt;name&gt;</code>字串，並在xml中尋找是否有相同的字串，函式會回傳<code class="language-plaintext highlighter-rouge">&lt;name&gt;</code>起始位址。</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>xml</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;</code></td>
+      <td>n</td>
+      <td>a</td>
+      <td>m</td>
+      <td>e</td>
+      <td><code class="language-plaintext highlighter-rouge">&gt;</code></td>
+    </tr>
+    <tr>
+      <td>回傳位址</td>
+      <td>^</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>自已建立<code class="language-plaintext highlighter-rouge">&lt;/name&gt;</code>字串，並在xml中尋找是否有相同的字串，函式會回傳<code class="language-plaintext highlighter-rouge">&lt;/name&gt;</code>起始位址。</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>xml</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;</code></td>
+      <td>n</td>
+      <td>a</td>
+      <td>m</td>
+      <td>e</td>
+      <td><code class="language-plaintext highlighter-rouge">&gt;</code></td>
+      <td>C</td>
+      <td>i</td>
+      <td>c</td>
+      <td>i</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/</code></td>
+      <td>n</td>
+      <td>a</td>
+      <td>m</td>
+      <td>e</td>
+      <td><code class="language-plaintext highlighter-rouge">&gt;</code></td>
+    </tr>
+    <tr>
+      <td>回傳位址</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>^</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="計算值的字元個數">計算值的字元個數</h3>
+
+<p>假設位址以0x00000001開始</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>位址</td>
+      <td>01</td>
+      <td>02</td>
+      <td>03</td>
+      <td>04</td>
+      <td>05</td>
+      <td>06</td>
+      <td>07</td>
+      <td>08</td>
+      <td>09</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>14</td>
+      <td>15</td>
+      <td>16</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>xml</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;</code></td>
+      <td>n</td>
+      <td>a</td>
+      <td>m</td>
+      <td>e</td>
+      <td><code class="language-plaintext highlighter-rouge">&gt;</code></td>
+      <td>C</td>
+      <td>i</td>
+      <td>c</td>
+      <td>i</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/</code></td>
+      <td>n</td>
+      <td>a</td>
+      <td>m</td>
+      <td>e</td>
+      <td><code class="language-plaintext highlighter-rouge">&gt;</code></td>
+    </tr>
+    <tr>
+      <td>findEnd</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>^</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>findStart</td>
+      <td>^</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>值的字元個數計算方式，取得findEnd記憶體位址 - findStart記憶體位址 - 左右括號 - 標籤名</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>findEnd(11) - findStart(1) - `&lt;&gt;`左右括號(2) - xml標籤名name(4) = 4 
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">size_t</span> <span class="n">valueLen</span> <span class="o">=</span> <span class="n">findEnd</span> <span class="o">-</span> <span class="n">findStart</span> <span class="o">-</span> <span class="n">fieldLen</span> <span class="o">-</span> <span class="mi">2</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="截取值">截取值</h3>
+
+<p>指標移動2格<code class="language-plaintext highlighter-rouge">&lt;&gt;</code>左右括號，再移動4格<code class="language-plaintext highlighter-rouge">name</code>標籤名的長度，就會移動到值的起始位址。</p>
+
+<p>上一個步驟有算出，值的長度為4個字元，從移動後的指標，往後取得4個字元(包含移動後指標當前的值)。</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>位址</td>
+      <td>01</td>
+      <td>02</td>
+      <td>03</td>
+      <td>04</td>
+      <td>05</td>
+      <td>06</td>
+      <td>07</td>
+      <td>08</td>
+      <td>09</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>14</td>
+      <td>15</td>
+      <td>16</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>xml</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;</code></td>
+      <td>n</td>
+      <td>a</td>
+      <td>m</td>
+      <td>e</td>
+      <td><code class="language-plaintext highlighter-rouge">&gt;</code></td>
+      <td>C</td>
+      <td>i</td>
+      <td>c</td>
+      <td>i</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/</code></td>
+      <td>n</td>
+      <td>a</td>
+      <td>m</td>
+      <td>e</td>
+      <td><code class="language-plaintext highlighter-rouge">&gt;</code></td>
+    </tr>
+    <tr>
+      <td>移動前</td>
+      <td>^</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>移動後</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>^</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>取值</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">strncpy</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">findStart</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">fieldLen</span> <span class="p">,</span> <span class="n">valueLen</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="完整程式碼">完整程式碼</h2>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -670,44 +963,131 @@
 4
 5
 6
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"位址是 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"位址中的內容是 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+</pre></td><td class="code"><pre><span class="cm">/**
+ xmlbuffer xml字串
+ fieldname 要搜尋的 標籤名
+ values存放找到的值
+ **/</span>
+<span class="kt">bool</span> <span class="nf">xmlSearch</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">xmlbuffer</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">fieldname</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">values</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//檢查參數有沒有值</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">xmlbuffer</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">fieldname</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">values</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    
+    <span class="c1">//搜尋的欄位名大小</span>
+    <span class="kt">size_t</span> <span class="n">fieldLen</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">fieldname</span><span class="p">);</span>
+    <span class="c1">//組成xml搜尋字串</span>
+    <span class="c1">//例，找xml標籤名是name的值</span>
+    <span class="c1">//開始 標籤名的字串</span>
+    <span class="c1">//&lt;name&gt;\0</span>
+    <span class="c1">//字串大小為2個&lt;&gt;尖括號+1個結尾空字元0+標籤名name大小</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">startField</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">fieldLen</span><span class="p">];</span>
+    <span class="c1">//清空陣列</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">startField</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">startField</span><span class="p">));</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">startField</span><span class="p">,</span> <span class="s">"&lt;"</span><span class="p">);</span> <span class="n">strcat</span><span class="p">(</span><span class="n">startField</span><span class="p">,</span> <span class="n">fieldname</span><span class="p">);</span> <span class="n">strcat</span><span class="p">(</span><span class="n">startField</span><span class="p">,</span> <span class="s">"&gt;"</span><span class="p">);</span>
+    <span class="c1">//結束 標籤名的字串</span>
+    <span class="c1">//&lt;/name&gt;\0</span>
+    <span class="c1">//字串大小為3個&lt;/&gt;符號+1個結尾空字元0+標籤名name大小</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">endField</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">fieldLen</span><span class="p">];</span>
+    <span class="c1">//清空陣列</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">endField</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">endField</span><span class="p">));</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">endField</span><span class="p">,</span> <span class="s">"&lt;/"</span><span class="p">);</span> <span class="n">strcat</span><span class="p">(</span><span class="n">endField</span><span class="p">,</span> <span class="n">fieldname</span><span class="p">);</span> <span class="n">strcat</span><span class="p">(</span><span class="n">endField</span><span class="p">,</span> <span class="s">"&gt;"</span><span class="p">);</span>
+    <span class="c1">//搜&lt;name&gt;</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">findStart</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">strstr</span><span class="p">(</span><span class="n">xmlbuffer</span><span class="p">,</span> <span class="n">startField</span><span class="p">);</span>
+    <span class="c1">//搜&lt;/name&gt;</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">findEnd</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">strstr</span><span class="p">(</span><span class="n">xmlbuffer</span><span class="p">,</span> <span class="n">endField</span><span class="p">);</span>
+    <span class="c1">//在xml字串中找到&lt;name&gt;與&lt;/name&gt;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">findStart</span> <span class="o">&amp;&amp;</span> <span class="n">findEnd</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//截取&lt;name&gt;.......&lt;/name&gt;中間的值，儲存在value字串</span>
+        <span class="c1">//計算&lt;name&gt;.......&lt;/name&gt;中間的值個數</span>
+        <span class="kt">size_t</span> <span class="n">valueLen</span> <span class="o">=</span> <span class="n">findEnd</span> <span class="o">-</span> <span class="n">findStart</span> <span class="o">-</span> <span class="n">fieldLen</span> <span class="o">-</span> <span class="mi">2</span><span class="p">;</span>
+        <span class="c1">//findStart + 2 + fieldLen 是指將指標移動到&lt;name&gt;的後面</span>
+        <span class="c1">//以下第三個參數代表拷貝個數</span>
+        <span class="n">strncpy</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">findStart</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">fieldLen</span> <span class="p">,</span> <span class="n">valueLen</span><span class="p">);</span>
+        
+        <span class="c1">//清除記憶空間</span>
+        <span class="k">delete</span><span class="p">[]</span> <span class="n">startField</span><span class="p">;</span> <span class="n">startField</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+        <span class="k">delete</span><span class="p">[]</span> <span class="n">endField</span><span class="p">;</span> <span class="n">endField</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+        <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">//找不到</span>
+    <span class="c1">//清除記憶空間</span>
+    <span class="k">delete</span><span class="p">[]</span> <span class="n">startField</span><span class="p">;</span> <span class="n">startField</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="k">delete</span><span class="p">[]</span> <span class="n">endField</span><span class="p">;</span> <span class="n">endField</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">values</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+    <span class="c1">//清空陣列</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">values</span><span class="p">));</span>
+    
+    <span class="kt">bool</span> <span class="n">res</span> <span class="o">=</span> <span class="n">xmlSearch</span><span class="p">(</span><span class="s">"&lt;id&gt;1&lt;/id&gt;&lt;name&gt;Cici&lt;/name&gt;&lt;age&gt;10&lt;/age&gt;"</span><span class="p">,</span> <span class="s">"name"</span><span class="p">,</span> <span class="n">values</span><span class="p">);</span>
+    <span class="c1">//如果有找到會回傳true</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"value = "</span> <span class="o">&lt;&lt;</span> <span class="n">values</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-位址是 = 0x600000004010
-位址中的內容是 = 30
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>value = Cici
 </code></pre></div></div>
-
-<h3 id="delete">delete</h3>
-<p>在Heap區段申請記憶體空間，不用時需使用delete對記憶體進行回收，否則會產生memory leak，記憶體一直沒被回收，記憶體愈占愈多，最後就會當機。</p>
-
-<p>回收記憶體位址語法如下，delete後要把指標變數設為nullptr(也可以設0)，代表沒有指向任何位址的意思。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>delete 指標變數;
-指標變數 = nullptr;
-</code></pre></div></div>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
-    <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
-    <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -771,14 +1151,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/dynamicMemory/memoryLayout" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 記憶體配置">
+                        <a href="/pages/c/string/split" class="navigation navigation-prev navigation-unique" aria-label="Previous page: split 切割字串">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/dynamicMemory/nothrow" class="navigation navigation-next navigation-unique" aria-label="Next page: 記憶體不足">
+                        <a href="/pages/c/string/chineseAscii" class="navigation navigation-next navigation-unique" aria-label="Next page: ASCII與中文">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -794,15 +1174,6 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
-        
-        "next": {
-            "title": "new/delete",
-            "level": "1.2",
-            "depth": 1,
-            "path": "_pages/c/pointer/newDelete.md",
-            "ref": "_pages/c/pointer/newDelete.md",
-            "articles": []
-        },
         
         "dir": "ltr"
     },    "config": {
@@ -892,8 +1263,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/dynamicMemory/newDelete.md",
-        "mtime": "2024-05-30 00:00:00 +0800",
+        "path": "_pages/c/string/xml.md",
+        "mtime": "2024-09-09 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

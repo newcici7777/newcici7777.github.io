@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>new/delete · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>rand · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -490,12 +490,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/dynamicMemory/newDelete" onclick="pageScrollToTop(this)"> new/delete</a>
         
-            
-                <ul><li><a href="#new" onclick="mobilePageScrollToAnchor(this)" >new</a></li><li><a href="#delete" onclick="mobilePageScrollToAnchor(this)" >delete</a></li></ul>
-
             
         </li>
 	
@@ -640,7 +637,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >new/delete</a>
+                            <a href="." >rand</a>
                         
                     </h1>
                 </div>
@@ -653,61 +650,10 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/dynamicMemory/newDelete">new/delete</h1>
+                        <h1 id="/pages/c/basic/rand">rand</h1>
                     
 
-                    <h3 id="new">new</h3>
-
-<p>宣告指標變數，使用new在Heap區段申請記憶體空間，申請成功會回傳記憶體占用的開始位址。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>資料型態* 指標變數 = new 資料型態(初始值);
-</code></pre></div></div>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"位址是 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"位址中的內容是 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-位址是 = 0x600000004010
-位址中的內容是 = 30
-</code></pre></div></div>
-
-<h3 id="delete">delete</h3>
-<p>在Heap區段申請記憶體空間，不用時需使用delete對記憶體進行回收，否則會產生memory leak，記憶體一直沒被回收，記憶體愈占愈多，最後就會當機。</p>
-
-<p>回收記憶體位址語法如下，delete後要把指標變數設為nullptr(也可以設0)，代表沒有指向任何位址的意思。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>delete 指標變數;
-指標變數 = nullptr;
-</code></pre></div></div>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
-    <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
-    <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+                    
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -770,17 +716,7 @@ window.MathJax = {
                     
     
                     
-                        
-                        <a href="/pages/c/dynamicMemory/memoryLayout" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 記憶體配置">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                    
 
-                    
-                        
-                        <a href="/pages/c/dynamicMemory/nothrow" class="navigation navigation-next navigation-unique" aria-label="Next page: 記憶體不足">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -796,11 +732,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "new/delete",
+            "title": "xml搜尋",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/pointer/newDelete.md",
-            "ref": "_pages/c/pointer/newDelete.md",
+            "path": "_pages/c/string/xml.md",
+            "ref": "_pages/c/string/xml.md",
             "articles": []
         },
         
@@ -892,8 +828,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/dynamicMemory/newDelete.md",
-        "mtime": "2024-05-30 00:00:00 +0800",
+        "path": "_pages/c/basic/rand.md",
+        "mtime": "2024-09-09 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

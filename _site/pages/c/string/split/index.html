@@ -404,6 +404,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/string/xml" onclick="pageScrollToTop(this)"> xml搜尋</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/string/chineseAscii" onclick="pageScrollToTop(this)"> ASCII與中文</a>
         
             
@@ -753,7 +760,7 @@
   </tbody>
 </table>
 
-<p>最後一次循環</p>
+<p>最後一次循環，find已經找不到切割符號</p>
 
 <table>
   <tbody>
@@ -851,6 +858,7 @@
 44
 45
 46
+47
 </pre></td><td class="code"><pre><span class="cm">/**
  str 要切割的字串
  splitStr 切割符號
@@ -890,6 +898,7 @@
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="kt">char</span> <span class="n">values</span><span class="p">[</span><span class="mi">10</span><span class="p">][</span><span class="mi">50</span><span class="p">];</span>
     <span class="n">memset</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">values</span><span class="p">));</span>
+    <span class="c1">//回傳切割個數</span>
     <span class="kt">size_t</span> <span class="n">count</span> <span class="o">=</span> <span class="n">splitstr</span><span class="p">(</span><span class="s">"aa,bb,cc,dd,ee,ff"</span><span class="p">,</span> <span class="s">","</span><span class="p">,</span> <span class="n">values</span><span class="p">);</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
@@ -899,6 +908,15 @@
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>count = 6
+values[0] = aa
+values[1] = bb
+values[2] = cc
+values[3] = dd
+values[4] = ee
+values[5] = ff
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -969,7 +987,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/c/string/chineseAscii" class="navigation navigation-next navigation-unique" aria-label="Next page: ASCII與中文">
+                        <a href="/pages/c/string/xml" class="navigation navigation-next navigation-unique" aria-label="Next page: xml搜尋">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -985,6 +1003,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "rand",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/c/basic/rand.md",
+            "ref": "_pages/c/basic/rand.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -1080,7 +1107,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-09-06 22:46:41 +0800"
+        "time": "2024-09-10 09:28:18 +0800"
     },
     "basePath": "",
     "book": {

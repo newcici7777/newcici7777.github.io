@@ -25,7 +25,7 @@ keywords: c++, split
 |find||||^||||||||
 
 
-最後一次循環
+最後一次循環，find已經找不到切割符號
 
 |字串|aa|,|bb|,|cc|,|dd|,|ee|,|ff|
 |p|||||||||||^|
@@ -74,6 +74,7 @@ size_t splitstr(const char* str,const char* splitStr, char values[][50]) {
 int main() {
     char values[10][50];
     memset(values, 0, sizeof(values));
+    //回傳切割個數
     size_t count = splitstr("aa,bb,cc,dd,ee,ff", ",", values);
     cout << "count = " << count << endl;
     for(int i = 0; i < count; i++) {
@@ -82,3 +83,13 @@ int main() {
     return 0;
 }
 {% endhighlight %}
+
+```
+count = 6
+values[0] = aa
+values[1] = bb
+values[2] = cc
+values[3] = dd
+values[4] = ee
+values[5] = ff
+```
