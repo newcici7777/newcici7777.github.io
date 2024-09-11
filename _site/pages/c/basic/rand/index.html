@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>rand · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>亂數 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -181,6 +181,16 @@
 	<li class="">
     	<a href="/pages/c/basic/chrono" onclick="pageScrollToTop(this)"> 程式執行時間</a>
         
+            
+        </li>
+	
+	
+	<li class="active">
+    	<a href="/pages/c/basic/rand" onclick="pageScrollToTop(this)"> 亂數</a>
+        
+            
+                <ul><li><a href="#rand" onclick="mobilePageScrollToAnchor(this)" >rand()</a></li><li><a href="#srand" onclick="mobilePageScrollToAnchor(this)" >srand()</a></li><li><a href="#srandtime0" onclick="mobilePageScrollToAnchor(this)" >srand(time(0))</a></li><li><a href="#產生一定範圍的隨機數字" onclick="mobilePageScrollToAnchor(this)" >產生一定範圍的隨機數字</a><ul><li><a href="#產生020之間的亂數" onclick="mobilePageScrollToAnchor(this)" >產生0~20之間的亂數</a></li><li><a href="#產生5070之間的亂數" onclick="mobilePageScrollToAnchor(this)" >產生50~70之間的亂數</a></li><li><a href="#亂數取餘數會重覆" onclick="mobilePageScrollToAnchor(this)" >亂數取餘數會重覆</a></li></ul></li></ul>
+
             
         </li></ul></li>
 	
@@ -637,7 +647,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >rand</a>
+                            <a href="." >亂數</a>
                         
                     </h1>
                 </div>
@@ -650,10 +660,280 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/basic/rand">rand</h1>
+                        <h1 id="/pages/c/basic/rand">亂數</h1>
                     
 
-                    
+                    <h2 id="rand">rand()</h2>
+
+<p>rand() std函式庫，取得亂數，但只生成一次，每次產生的亂數不會有重覆。</p>
+
+<p>以下程式碼，不管執行幾次，產生的亂數都一樣，但10個數字都不相同。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//產生10個亂數</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">rand</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>16807
+282475249
+1622650073
+984943658
+1144108930
+470211272
+101027544
+1457850878
+1458777923
+2007237709
+</code></pre></div></div>
+
+<h2 id="srand">srand()</h2>
+
+<p>srand()，產生亂數種子，根據種子不同，會產生不同結果。</p>
+
+<p>但亂數種子若都固定相同，每次執行產生相同結果。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">srand</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+    <span class="c1">//產生10個亂數</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">rand</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>16807
+282475249
+1622650073
+984943658
+1144108930
+470211272
+101027544
+1457850878
+1458777923
+2007237709
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">srand</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+    <span class="c1">//產生10個亂數</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">rand</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>33614
+564950498
+1097816499
+1969887316
+140734213
+940422544
+202055088
+768218109
+770072199
+1866991771
+</code></pre></div></div>
+
+<h2 id="srandtime0">srand(time(0))</h2>
+<p>time(0) std函式，取得從1970-01-01累積到現在的秒數，也就是現在時間。</p>
+
+<p>把time(0)作為srand()的參數，確保每次執行亂數都不會相同。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">srand</span><span class="p">(</span><span class="n">time</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"time(0)="</span> <span class="o">&lt;&lt;</span> <span class="n">time</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//產生10個亂數</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">rand</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>time(0)=1726015663
+936144365
+1313144633
+332406612
+1152962037
+1088008978
+343639041
+957835304
+800536416
+630495257
+1049470101
+</code></pre></div></div>
+
+<h2 id="產生一定範圍的隨機數字">產生一定範圍的隨機數字</h2>
+
+<h3 id="產生020之間的亂數">產生0~20之間的亂數</h3>
+
+<p>假設產生0~20之間的數字，直接把亂數 % 20</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">srand</span><span class="p">(</span><span class="n">time</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span>
+    <span class="c1">//產生10個亂數</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">rand</span><span class="p">()</span> <span class="o">%</span> <span class="mi">20</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10
+7
+14
+1
+17
+13
+10
+12
+8
+8
+</code></pre></div></div>
+
+<h3 id="產生5070之間的亂數">產生50~70之間的亂數</h3>
+
+<p>把上一個範例0~20之間的隨機數字+50，就可以產生50~70之間的亂數。</p>
+
+<p>50就是最小的數字</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">rand</span><span class="p">()</span> <span class="o">%</span> <span class="mi">20</span> <span class="o">+</span> <span class="mi">50</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>完整程式碼</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">srand</span><span class="p">(</span><span class="n">time</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span>
+    <span class="c1">//產生10個亂數</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">rand</span><span class="p">()</span> <span class="o">%</span> <span class="mi">20</span> <span class="o">+</span> <span class="mi">50</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>58
+55
+62
+52
+61
+60
+64
+65
+51
+60
+</code></pre></div></div>
+
+<h3 id="亂數取餘數會重覆">亂數取餘數會重覆</h3>
+
+<p>rand()函式產生的亂數是不會重覆。
+但對rand() % 20，取餘數亂數就會重覆。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">srand</span><span class="p">(</span><span class="n">time</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span>
+    <span class="c1">//產生10個亂數</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">val</span> <span class="o">=</span> <span class="n">rand</span><span class="p">();</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"rand = "</span> <span class="o">&lt;&lt;</span> <span class="n">val</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">" , rand % 20 = "</span> <span class="o">&lt;&lt;</span> <span class="n">val</span> <span class="o">%</span> <span class="mi">20</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rand = 976027376 , rand % 20 = 16
+rand = 1612012646 , rand % 20 = 6
+rand = 442850770 , rand % 20 = 10
+rand = 1962054535 , rand % 20 = 15
+rand = 1639170060 , rand % 20 = 0
+rand = 1610974704 , rand % 20 = 4
+rand = 178028752 , rand % 20 = 12
+rand = 684514593 , rand % 20 = 13
+rand = 566867572 , rand % 20 = 12
+rand = 1105824512 , rand % 20 = 12
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -716,7 +996,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/c/basic/chrono" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 程式執行時間">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/c/pointer/pointer" class="navigation navigation-next navigation-unique" aria-label="Next page: 指標基本觀念">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -834,7 +1124,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-09-10 09:28:18 +0800"
+        "time": "2024-09-11 09:28:25 +0800"
     },
     "basePath": "",
     "book": {
