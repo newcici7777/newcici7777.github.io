@@ -518,6 +518,13 @@
     	<a href="/pages/c/dynamicMemory/memset" onclick="pageScrollToTop(this)"> memset</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/memory_interval" onclick="pageScrollToTop(this)"> 記憶體間隔計算</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -582,6 +589,16 @@
 	
 	<li class="">
     	<a href="/pages/c/struct/linked_list" onclick="pageScrollToTop(this)"> 鏈結串列</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料結構 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/arrayList" onclick="pageScrollToTop(this)"> ArrayList底層實作</a>
         
             
         </li></ul></li>
@@ -663,7 +680,13 @@
                         <h1 id="/pages/c/string/delstr">刪除字元</h1>
                     
 
-                    <h2 id="刪除右邊多的字元">刪除右邊多的字元</h2>
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/c/dynamicMemory/memory_interval/">記憶體間隔計算</a></li>
+</ul>
+
+<h2 id="刪除右邊多的字元">刪除右邊多的字元</h2>
 
 <p>刪除前字串:Hellloyyyoooyyy</p>
 
@@ -1145,6 +1168,7 @@
 32
 33
 34
+35
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">deletelchr</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">,</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span><span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
     <span class="c1">//p指標初始化str字串首位址</span>
@@ -1165,6 +1189,7 @@
     <span class="k">if</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="n">str</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">//把來源字串移到目的字串</span>
 <span class="c1">//        memmove(str, p, strlen(str) - (p - str) + 1);</span>
+       <span class="c1">//+1是把結尾空字元符號\0也拷貝過來</span>
        <span class="n">memmove</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">str</span><span class="p">)</span> <span class="o">-</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
@@ -1282,6 +1307,7 @@
 27
 28
 29
+30
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">deletelchr</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">,</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span><span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
     <span class="c1">//p指標存放str字串首位址</span>
@@ -1297,6 +1323,7 @@
     <span class="c1">//代表有進入上面while的迴圈</span>
     <span class="k">if</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="n">str</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">//把來源字串移到目的字串</span>
+        <span class="c1">//+1是把結尾空字元符號\0也拷貝過來</span>
         <span class="n">memmove</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">str</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="n">str</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
@@ -1327,6 +1354,8 @@
 <p>str字串陣列第0個記憶體位址</p>
 
 <p>find要刪除字串的第一個記憶體位址</p>
+
+<p>slen為要刪除字串的長度，要刪除<code class="language-plaintext highlighter-rouge">123</code>，刪除字串大小為3</p>
 
 <p>find+slen排除掉刪除字串的第一個記憶體位址。</p>
 
@@ -1431,7 +1460,7 @@
 
 <p>目的字串位址是find = 123zzz0</p>
 
-<p>來源字串位址是find + slen = zzz0</p>
+<p>來源字串位址是find + slen(3) = zzz0</p>
 
 <p>要覆蓋幾個字元？find字串長度(6) - 要刪字串的長度(3) + '\0' 空字元(1) = 4個字元</p>
 
@@ -1546,6 +1575,7 @@
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zzzzzz
 </code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1736,7 +1766,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-09-11 09:28:25 +0800"
+        "time": "2024-09-19 09:43:24 +0800"
     },
     "basePath": "",
     "book": {

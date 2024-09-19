@@ -4,6 +4,12 @@ date: 2024-09-09
 keywords: c++, xml search 
 ---
 
+Prerequisites:
+
+- [記憶體間隔計算][1]
+
+
+
 要在一堆xml內容中尋找標籤名為name，並取出值。
 
 ```
@@ -133,3 +139,5 @@ int main() {
 ```
 value = Cici
 ```
+
+[1]: {% link _pages/c/dynamicMemory/memory_interval.md %}

@@ -4,6 +4,11 @@ date: 2024-08-02
 keywords: c++, strstr 
 ---
 
+Prerequisites:
+
+- [記憶體間隔計算][1]
+
+
 目的字串
 hdhelhelloWor
 
@@ -241,3 +246,5 @@ int main() {
 ```
 helloWor
 ```
+
+[1]: {% link _pages/c/dynamicMemory/memory_interval.md %}

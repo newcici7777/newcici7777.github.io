@@ -4,6 +4,10 @@ date: 2024-08-08
 keywords: c++, deleteRchr ,deleteLchr 
 ---
 
+Prerequisites:
+
+- [記憶體間隔計算][1]
+
 ## 刪除右邊多的字元
 
 刪除前字串:Hellloyyyoooyyy
@@ -153,6 +157,7 @@ void deletelchr(char* str, const int c) {
     if(p != str) {
         //把來源字串移到目的字串
 //        memmove(str, p, strlen(str) - (p - str) + 1);
+       //+1是把結尾空字元符號\0也拷貝過來
        memmove(str, p, strlen(str) - count + 1);
     }
 }
@@ -221,6 +226,7 @@ void deletelchr(char* str, const int c) {
     //代表有進入上面while的迴圈
     if(p != str) {
         //把來源字串移到目的字串
+        //+1是把結尾空字元符號\0也拷貝過來
         memmove(str, p, strlen(str) - (p - str) + 1);
     }
 }
@@ -251,6 +257,8 @@ str字串陣列第0個記憶體位址
 
 find要刪除字串的第一個記憶體位址
 
+slen為要刪除字串的長度，要刪除`123`，刪除字串大小為3
+
 find+slen排除掉刪除字串的第一個記憶體位址。
 
 |z|z|z|1|2|3|z|z|z|0|
@@ -275,7 +283,7 @@ find+slen排除掉刪除字串的第一個記憶體位址。
 
 目的字串位址是find = 123zzz0
 
-來源字串位址是find + slen = zzz0
+來源字串位址是find + slen(3) = zzz0
 
 要覆蓋幾個字元？find字串長度(6) - 要刪字串的長度(3) + \'\0\' 空字元(1) = 4個字元
 
@@ -348,3 +356,5 @@ int main() {
 ```
 zzzzzz
 ```
+
+[1]: {% link _pages/c/dynamicMemory/memory_interval.md %}

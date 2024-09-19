@@ -4,6 +4,10 @@ date: 2024-07-29
 keywords: c++, 
 ---
 
+Prerequisites:
+
+- [記憶體間隔計算][1]
+
 ## 陣列法
 
 {% highlight c++ linenos %}
@@ -107,3 +111,5 @@ int main() {
     return 0;
 }
 {% endhighlight %}
+
+[1]: {% link _pages/c/dynamicMemory/memory_interval.md %}

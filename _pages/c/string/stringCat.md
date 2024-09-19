@@ -4,6 +4,10 @@ date: 2024-07-29
 keywords: c++, strcat 
 ---
 
+Prerequisites:
+
+- [記憶體間隔計算][1]
+
 ## strcat 字串連結
 {% highlight c++ linenos %}
     memcpy(dest + strlen(dest), src, strlen(src) + 1);
@@ -127,3 +131,5 @@ int main() {
     return 0;
 }
 {% endhighlight %}
+
+[1]: {% link _pages/c/dynamicMemory/memory_interval.md %}

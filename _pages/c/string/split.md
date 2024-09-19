@@ -4,6 +4,10 @@ date: 2024-09-06
 keywords: c++, split 
 ---
 
+Prerequisites:
+
+- [記憶體間隔計算][1]
+
 切割字串 = aa,bb,cc,dd,ee,ff
 
 切割符號 = ,
@@ -93,3 +97,5 @@ values[3] = dd
 values[4] = ee
 values[5] = ff
 ```
+
+[1]: {% link _pages/c/dynamicMemory/memory_interval.md %}
