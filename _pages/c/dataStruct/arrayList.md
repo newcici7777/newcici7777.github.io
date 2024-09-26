@@ -1,5 +1,5 @@
 ---
-title: ArrayList底層實作
+title: ArrayList實作
 date: 2024-09-16
 keywords: c++, ArrayList 
 ---
