@@ -650,6 +650,13 @@
                 <ul><li><a href="#插入過程圖" onclick="mobilePageScrollToAnchor(this)" >插入過程圖</a><ul><li><a href="#數字比5還大就把數字往後移一位" onclick="mobilePageScrollToAnchor(this)" >數字比5還大，就把數字往後移一位</a></li><li><a href="#尋找比5還小的數字把5放在比5還小的數字的後面" onclick="mobilePageScrollToAnchor(this)" >尋找比5還小的數字，把5放在比5還小的數字的後面</a></li></ul></li><li><a href="#變數起始位置" onclick="mobilePageScrollToAnchor(this)" >變數起始位置</a></li><li><a href="#二個迴圈" onclick="mobilePageScrollToAnchor(this)" >二個迴圈</a></li><li><a href="#完整程式碼" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul>
 
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/quickSort" onclick="pageScrollToTop(this)"> 快速排序</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -802,12 +809,10 @@
 30
 31
 32
-33
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">insertSort</span><span class="p">(</span><span class="kt">int</span> <span class="n">arr</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">len</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
         <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
         <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-        
         <span class="k">for</span><span class="p">(;</span> <span class="n">j</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
             <span class="k">if</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">temp</span><span class="p">)</span> <span class="p">{</span>
                 <span class="n">arr</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>
@@ -911,7 +916,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/c/conversion/implicit" class="navigation navigation-next navigation-unique" aria-label="Next page: 自動轉型">
+                        <a href="/pages/c/dataStruct/quickSort" class="navigation navigation-next navigation-unique" aria-label="Next page: 快速排序">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -927,6 +932,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "快速排序",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/c/dataStruct/quickSort.md",
+            "ref": "_pages/c/dataStruct/quickSort.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -1022,7 +1036,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-09-30 09:11:42 +0800"
+        "time": "2024-10-01 11:06:35 +0800"
     },
     "basePath": "",
     "book": {
