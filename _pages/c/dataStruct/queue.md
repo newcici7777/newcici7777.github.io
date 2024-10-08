@@ -3,6 +3,147 @@ title: Queue實作
 date: 2024-09-26
 keywords: c++, Queue 
 ---
+
+## 新增在尾部
+
+Queue是新增節點在尾部。
+
+以下是新增節點的過程。
+
+![img]({{site.imgurl}}/dataStruct/queue1.jpg)  
+
+## 刪除在頭部
+
+Queue是刪除節點在頭部。
+
+以下是刪除節點的過程。
+
+![img]({{site.imgurl}}/dataStruct/queue2.jpg) 
+
+## 結構定義
+
+Queue會定義頭節點與尾節點。
+
+{% highlight c++ linenos %}
+typedef int ElemType;
+//定義節點
+struct Node {
+    ElemType data;
+    Node *next;
+};
+struct queue {
+    //定義頭節點與尾節點
+    Node *head,*tail;
+};
+{% endhighlight %}
+
+## 初始化頭節點與尾節點
+
+一開始頭節點與尾節點都指向頭節點
+
+![img]({{site.imgurl}}/dataStruct/queue3.jpg) 
+
+{% highlight c++ linenos %}
+/**
+ 初始化Queue
+ */
+bool initQueue(queue& que) {
+    //頭節點
+    que.head = new (std::nothrow)Node;
+    //頭節點記憶體分配失敗
+    if(que.head == nullptr) return false;
+    que.head->next = nullptr;//queue的下一個節點為null
+    que.tail = que.head;//一開始頭節點與尾節點指向同一個記憶體位址
+    return true;
+}
+{% endhighlight %}
+
+
+## 新增
+
+### 完全沒任何節點
+
+在沒有任何節點的狀況下，新節點新增在tail尾節點後面。
+
+![img]({{site.imgurl}}/dataStruct/queue4.jpg) 
+
+步驟如下
+
+- 建立新節點
+- 新節點的next指向nullptr
+- 新節點新增在tail尾節點後面
+- tail尾節點指向新節點
+
+
+{% highlight c++ linenos %}
+bool inQueue(queue& que, const ElemType& ee) {
+    if(que.head == nullptr) {
+        cout << "鏈結串列不存在" << endl;
+        return false;
+    }
+    //建立新節點
+    Node* temp = new (std::nothrow)Node;
+    if(temp == nullptr) return false;
+    
+    //新節點設定傳進來的資料
+    temp->data = ee;
+    temp->next = nullptr;
+    
+    //將新節點插入到tail之後
+    que.tail->next = temp;
+    //把tail指向temp
+    que.tail = temp;
+    return true;
+}
+{% endhighlight %}
+
+### 有節點
+
+尾節點指向鏈結串列中最後一個節點(不是nullptr)。
+
+在有節點的狀況下，新節點新增在tail尾節點後面。
+
+![img]({{site.imgurl}}/dataStruct/queue5.jpg) 
+
+程式步驟跟沒任何節點的步驟一模一樣。
+
+## 刪除節點
+
+刪除的方式跟鏈結串列removeFirst()一樣，從鏈結串列第一個節點刪除。
+
+如果刪的節點是尾節點，刪除完節點後，要把尾節點指向頭節點，回到初始的狀況下。
+
+{% highlight c++ linenos %}
+bool deQueue(queue& que, ElemType& e) {
+    if(que.head == nullptr) {
+        cout << "鏈結串列不存在" << endl;
+        return false;
+    }
+    //只有頭節點，沒有後面的資料
+    if(que.head->next == nullptr) {
+        cout << "沒有任何節點" << endl;
+        return false;
+    }
+    //鏈結串列中第一個節點，不包含頭節點
+    Node* first = que.head->next;
+    //將第一個節點的值存在e，作為返回
+    e = first->data;
+    
+    //將第一個節點(不包含頭節點)指向first的下個節點
+    que.head->next = first->next;
+    
+    //如果刪的節點是tail節點
+    if(first == que.tail)
+        //將tail指向head
+        que.tail = que.head;
+    //將第一個節點刪除
+    delete first;
+    return true;
+}
+{% endhighlight %}
+
+## 完整程式碼
+
 {% highlight c++ linenos %}
 using namespace std;
 typedef int ElemType;
@@ -22,9 +163,8 @@ bool initQueue(queue& que) {
     que.head = new (std::nothrow)Node;
     //頭節點記憶體分配失敗
     if(que.head == nullptr) return false;
-    //前面節點與後面節點全設為nullptr
     que.head->next = nullptr;//queue的下一個節點為null
-    que.tail = que.head;//一開始頭節點與尾節點指向同一個位置
+    que.tail = que.head;//一開始頭節點與尾節點指向同一個記憶體位址
     return true;
 }
 /**

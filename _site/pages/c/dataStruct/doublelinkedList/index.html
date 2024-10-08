@@ -619,7 +619,7 @@
     	<a href="/pages/c/dataStruct/doublelinkedList" onclick="pageScrollToTop(this)"> 雙向鏈結串列實作</a>
         
             
-                
+                <ul><li><a href="#結構定義" onclick="mobilePageScrollToAnchor(this)" >結構定義</a></li><li><a href="#初始化" onclick="mobilePageScrollToAnchor(this)" >初始化</a></li><li><a href="#最前面新增節點" onclick="mobilePageScrollToAnchor(this)" >最前面新增節點</a></li><li><a href="#刪除節點" onclick="mobilePageScrollToAnchor(this)" >刪除節點</a></li><li><a href="#完整程式碼" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul>
 
             
         </li>
@@ -750,7 +750,187 @@
                         <h1 id="/pages/c/dataStruct/doublelinkedList">雙向鏈結串列實作</h1>
                     
 
-                    
+                    <p>雙向鏈結串列代表的是結構中有二個指標，分別指向前面節點跟後面節點</p>
+
+<p><img src="/assets/img/dataStruct/doubleList1.jpg" alt="img" /></p>
+
+<h2 id="結構定義">結構定義</h2>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="k">typedef</span> <span class="kt">int</span> <span class="n">ElemType</span><span class="p">;</span>
+<span class="c1">//定義節點</span>
+<span class="k">struct</span> <span class="nc">Node</span> <span class="p">{</span>
+    <span class="n">ElemType</span> <span class="n">data</span><span class="p">;</span>
+    <span class="n">Node</span> <span class="o">*</span><span class="n">prev</span><span class="p">,</span><span class="o">*</span><span class="n">next</span><span class="p">;</span><span class="c1">//前面節點與後面節點</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="初始化">初始化</h2>
+
+<p>以下程式碼是指把指向前面節點與後面節點的指標設為nullptr</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">head</span><span class="o">-&gt;</span><span class="n">prev</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="cm">/**
+ 初始化鏈結串列
+ */</span>
+<span class="n">Node</span><span class="o">*</span> <span class="nf">initLinkedList</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//頭節點</span>
+    <span class="n">Node</span><span class="o">*</span> <span class="n">head</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
+    <span class="c1">//頭節點記憶體分配失敗</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="c1">//前面節點與後面節點全設為nullptr</span>
+    <span class="n">head</span><span class="o">-&gt;</span><span class="n">prev</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">head</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="最前面新增節點">最前面新增節點</h2>
+
+<p>資料3要插入在最前面</p>
+
+<p><img src="/assets/img/dataStruct/doubleList2.jpg" alt="img" /></p>
+
+<p>步驟如下</p>
+
+<ul>
+  <li>建立新節點</li>
+  <li>新節點的next指向第一個節點</li>
+  <li>新節點的prev指向頭節點</li>
+  <li>頭節點的next指向新節點</li>
+  <li>第一個節點的prev指向新節點(如果沒有第一個節點就不用做這個步驟)</li>
+</ul>
+
+<p><img src="/assets/img/dataStruct/doubleList3.jpg" alt="img" /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre></td><td class="code"><pre><span class="kt">bool</span> <span class="nf">addFirst</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">ee</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">//建立新節點</span>
+    <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    
+    <span class="c1">//新節點設定傳進來的資料</span>
+    <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">ee</span><span class="p">;</span>
+    
+    <span class="c1">//新節點的下一個節點是頭節點的下一個</span>
+    <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="c1">//前面節點</span>
+    <span class="n">temp</span><span class="o">-&gt;</span><span class="n">prev</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>
+    <span class="c1">//頭節點的下一個是新節點</span>
+    <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+    
+    <span class="c1">//下一個節點的前面節點，指向新建的節點</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span>
+        <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">-&gt;</span><span class="n">prev</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="刪除節點">刪除節點</h2>
+
+<p><img src="/assets/img/dataStruct/doubleList4.jpg" alt="img" /></p>
+
+<p>步驟如下</p>
+
+<ul>
+  <li>將待刪除節點的前一個節點next指向待刪除節點的下一個節點</li>
+  <li>將待刪除節點的下一個節點的prev指向待刪除節點的前一個節點</li>
+</ul>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="cm">/**
+ 將節點刪除
+ */</span>
+<span class="kt">bool</span> <span class="nf">deleteNode</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">node</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">node</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"節點不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">//node的前一個節點的next指向node的下一個節點</span>
+    <span class="n">node</span><span class="o">-&gt;</span><span class="n">prev</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//node的下一個節點的prve指向node的prev</span>
+        <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">-&gt;</span><span class="n">prev</span> <span class="o">=</span> <span class="n">node</span><span class="o">-&gt;</span><span class="n">prev</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">delete</span> <span class="n">node</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="完整程式碼">完整程式碼</h2>
+
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -1561,7 +1741,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-10-07 02:34:48 +0800"
+        "time": "2024-10-08 14:28:40 +0800"
     },
     "basePath": "",
     "book": {

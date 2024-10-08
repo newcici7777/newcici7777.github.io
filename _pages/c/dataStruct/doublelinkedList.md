@@ -4,6 +4,119 @@ date: 2024-09-23
 keywords: c++, Double LinkedList
 ---
 
+雙向鏈結串列代表的是結構中有二個指標，分別指向前面節點跟後面節點
+
+![img]({{site.imgurl}}/dataStruct/doubleList1.jpg)  
+
+
+## 結構定義
+
+{% highlight c++ linenos %}
+typedef int ElemType;
+//定義節點
+struct Node {
+    ElemType data;
+    Node *prev,*next;//前面節點與後面節點
+};
+{% endhighlight %}
+
+## 初始化
+
+以下程式碼是指把指向前面節點與後面節點的指標設為nullptr
+
+{% highlight c++ linenos %}
+head->prev = head->next = nullptr;
+{% endhighlight %}
+
+{% highlight c++ linenos %}
+/**
+ 初始化鏈結串列
+ */
+Node* initLinkedList() {
+    //頭節點
+    Node* head = new (std::nothrow)Node;
+    //頭節點記憶體分配失敗
+    if(head == nullptr) return nullptr;
+    //前面節點與後面節點全設為nullptr
+    head->prev = head->next = nullptr;
+    return head;
+}
+{% endhighlight %}
+
+
+## 最前面新增節點
+
+資料3要插入在最前面
+
+![img]({{site.imgurl}}/dataStruct/doubleList2.jpg)  
+
+步驟如下
+
+- 建立新節點
+- 新節點的next指向第一個節點
+- 新節點的prev指向頭節點
+- 頭節點的next指向新節點
+- 第一個節點的prev指向新節點(如果沒有第一個節點就不用做這個步驟)
+
+![img]({{site.imgurl}}/dataStruct/doubleList3.jpg)  
+
+{% highlight c++ linenos %}
+bool addFirst(Node* head, const ElemType& ee) {
+    if(head == nullptr) {
+        cout << "鏈結串列不存在" << endl;
+        return false;
+    }
+    //建立新節點
+    Node* temp = new (std::nothrow)Node;
+    if(temp == nullptr) return false;
+    
+    //新節點設定傳進來的資料
+    temp->data = ee;
+    
+    //新節點的下一個節點是頭節點的下一個
+    temp->next = head->next;
+    //前面節點
+    temp->prev = head;
+    //頭節點的下一個是新節點
+    head->next = temp;
+    
+    //下一個節點的前面節點，指向新建的節點
+    if(temp->next != nullptr)
+        temp->next->prev = temp;
+    return true;
+}
+{% endhighlight %}
+
+## 刪除節點
+
+![img]({{site.imgurl}}/dataStruct/doubleList4.jpg)  
+
+步驟如下
+
+- 將待刪除節點的前一個節點next指向待刪除節點的下一個節點
+- 將待刪除節點的下一個節點的prev指向待刪除節點的前一個節點
+
+{% highlight c++ linenos %}
+/**
+ 將節點刪除
+ */
+bool deleteNode(Node* node) {
+    if(node == nullptr) {
+        cout << "節點不存在" << endl;
+        return false;
+    }
+    //node的前一個節點的next指向node的下一個節點
+    node->prev->next = node->next;
+    if(node->next != nullptr) {
+        //node的下一個節點的prve指向node的prev
+        node->next->prev = node->prev;
+    }
+    delete node;
+    return true;
+}
+{% endhighlight %}
+
+## 完整程式碼
 {% highlight c++ linenos %}
 using namespace std;
 typedef int ElemType;

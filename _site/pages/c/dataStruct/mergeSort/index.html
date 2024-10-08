@@ -834,15 +834,33 @@
 41
 42
 43
+44
+45
+46
+47
+48
+49
+50
+51
+52
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">_mergeSort</span><span class="p">(</span><span class="kt">int</span> <span class="n">arr</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">temp</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">start</span><span class="p">,</span> <span class="kt">int</span> <span class="n">end</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//列切半拆分，直到切到只剩下一個元素，start與end會是相同，就返回</span>
     <span class="k">if</span><span class="p">(</span><span class="n">start</span> <span class="o">&gt;=</span> <span class="n">end</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+    <span class="c1">//陣列切半拆分</span>
+    <span class="c1">//若拆的陣列為[654321]，拆成[654]與[321]，要再拆分[321]，3的陣列索引是3</span>
+    <span class="c1">// (5-3)/2 = 1 要再+3，拆分的中點索引才會在4，而不是在1</span>
+    <span class="c1">// 拆成[34] [1]</span>
     <span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="n">start</span> <span class="o">+</span> <span class="p">(</span><span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+    <span class="c1">//拆成二半，二個陣列的起始位置</span>
     <span class="kt">int</span> <span class="n">start1</span> <span class="o">=</span> <span class="n">start</span><span class="p">,</span> <span class="n">end1</span> <span class="o">=</span> <span class="n">mid</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">start2</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">end2</span> <span class="o">=</span> <span class="n">end</span><span class="p">;</span>
     <span class="n">_mergeSort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">mid</span><span class="p">);</span>
     <span class="n">_mergeSort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span> <span class="n">mid</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">end</span><span class="p">);</span>
     
+    <span class="c1">//臨時陣列計數器</span>
     <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">start</span><span class="p">;</span>
+
+    <span class="c1">//判斷二個拆分陣列的值的大小</span>
     <span class="k">while</span><span class="p">(</span><span class="n">start1</span> <span class="o">&lt;=</span> <span class="n">end1</span> <span class="o">&amp;&amp;</span> <span class="n">start2</span> <span class="o">&lt;=</span> <span class="n">end2</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">if</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">start1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">start2</span><span class="p">])</span> <span class="p">{</span>
             <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">start1</span><span class="o">++</span><span class="p">];</span>
@@ -1070,7 +1088,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-10-07 02:34:48 +0800"
+        "time": "2024-10-08 14:28:40 +0800"
     },
     "basePath": "",
     "book": {

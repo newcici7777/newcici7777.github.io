@@ -626,7 +626,7 @@
     	<a href="/pages/c/dataStruct/stack" onclick="pageScrollToTop(this)"> Stack實作</a>
         
             
-                
+                <ul><li><a href="#新增在頭節點" onclick="mobilePageScrollToAnchor(this)" >新增在頭節點</a></li><li><a href="#刪除在頭節點" onclick="mobilePageScrollToAnchor(this)" >刪除在頭節點</a></li><li><a href="#函式解釋" onclick="mobilePageScrollToAnchor(this)" >函式解釋</a></li><li><a href="#pop" onclick="mobilePageScrollToAnchor(this)" >pop</a></li><li><a href="#完整程式碼" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul>
 
             
         </li>
@@ -750,7 +750,87 @@
                         <h1 id="/pages/c/dataStruct/stack">Stack實作</h1>
                     
 
-                    
+                    <p>Stack是在同一個位置新增/刪除的動作。</p>
+
+<h2 id="新增在頭節點">新增在頭節點</h2>
+
+<p>Stack是新增節點在頭節點。</p>
+
+<p><img src="/assets/img/dataStruct/linkedList3.jpg" alt="img" /></p>
+
+<h2 id="刪除在頭節點">刪除在頭節點</h2>
+
+<p>Stack是刪除節點在頭節點。</p>
+
+<p><img src="/assets/img/dataStruct/linkedList7.jpg" alt="img" /></p>
+
+<h2 id="函式解釋">函式解釋</h2>
+
+<p>Stack的新增，等同於鏈結串列的addFirst，此處改為push</p>
+
+<p>Stack的刪除，等同於鏈結串列的removeFirst，此處改為pop</p>
+
+<p>程式碼與單向鏈結串列大致相同，刪除以下描述的函式。</p>
+
+<p>新增在最後addLast()，插入在某個節點前面insert()，以上二種函式在Stack中都不需要。</p>
+
+<p>刪除在最後removeLast()，刪除在某個節點deleteNode()，以上二種函式在Stack中都不需要。</p>
+
+<p>getNode()，取得節點的函式，在Stack中也不需要。</p>
+
+<h2 id="pop">pop</h2>
+
+<p>對Stack來說，刪除鏈結串列第1個節點之外，還要把值返回。
+所以以下的程式碼參數有ElemType&amp; e，接收刪除後返回值。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="code"><pre><span class="kt">bool</span> <span class="nf">pop</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">,</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">//只有頭節點，沒有後面的資料</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒有任何節點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">//不包含頭節點，取得頭節點的下一個</span>
+    <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="c1">//頭節點的下一個是 p的下一個</span>
+    <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="c1">//p的下一個節點的prev是頭節點</span>
+    <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">-&gt;</span><span class="n">prev</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>
+    <span class="n">e</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
+    <span class="c1">//把p刪掉</span>
+    <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="完整程式碼">完整程式碼</h2>
+
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -1220,7 +1300,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-10-07 02:34:48 +0800"
+        "time": "2024-10-08 14:28:40 +0800"
     },
     "basePath": "",
     "book": {

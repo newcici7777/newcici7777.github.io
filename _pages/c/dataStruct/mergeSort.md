@@ -20,6 +20,7 @@ Prerequisites:
 
 拆到只剩下一個元素，把一個一個的元素排序組回臨時的陣列，再copy到原本arr的陣列。
 
+
 先處理已拆分成個別值6,5，二個數值比大小，比較小的放入臨時陣列(temp)，start為臨時陣列的計數器，每放進一個值，start就加1
 
 ![img]({{site.imgurl}}/dataStruct/mergeSort2.jpg)  
@@ -49,14 +50,23 @@ Prerequisites:
 
 {% highlight c++ linenos %}
 void _mergeSort(int arr[], int temp[], int start, int end) {
+    //列切半拆分，直到切到只剩下一個元素，start與end會是相同，就返回
     if(start >= end) return;
+    //陣列切半拆分
+    //若拆的陣列為[654321]，拆成[654]與[321]，要再拆分[321]，3的陣列索引是3
+    // (5-3)/2 = 1 要再+3，拆分的中點索引才會在4，而不是在1
+    // 拆成[34] [1]
     int mid = start + (end - start)/2;
+    //拆成二半，二個陣列的起始位置
     int start1 = start, end1 = mid;
     int start2 = mid + 1, end2 = end;
     _mergeSort(arr, temp, start, mid);
     _mergeSort(arr, temp, mid+1, end);
     
+    //臨時陣列計數器
     int i = start;
+
+    //判斷二個拆分陣列的值的大小
     while(start1 <= end1 && start2 <= end2) {
         if(arr[start1] < arr[start2]) {
             temp[i++] = arr[start1++];
