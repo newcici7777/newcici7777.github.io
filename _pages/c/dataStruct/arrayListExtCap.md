@@ -4,11 +4,141 @@ date: 2024-09-19
 keywords: c++, ArrayList 
 ---
 
+## 預設ArrayList大小，與每一次擴展容量的大小
+
+{% highlight c++ linenos %}
+//預設
+
+#define INIT_SIZE 10
+//預設擴展大小
+#define EXT_SIZE 5
+{% endhighlight %}
+
+## 在結構定義最大容量
+
+ArrayList全部分配多少記憶體大小
+```
+    size_t capacity;//陣列最大容量
+```
+{% highlight c++ linenos %}
+//定義陣列中每一個元素的資料型態
+typedef int ElemType;
+//結構成員定義
+struct ArrayList {
+    ElemType *data;//陣列
+    size_t size;//目前陣列中數量，由1開始
+    size_t capacity;//陣列最大容量
+};
+{% endhighlight %}
+
+
+## 清空ArrayList
+
+結構 * 最大容量
+
+```
+    memset(&list, 0, sizeof(ElemType) * list.capacity);
+```
+
+{% highlight c++ linenos %}
+/**
+ 清空list
+ */
+void ClearList(ArrayList& list) {
+    list.size = 0;
+    //代入的是陣列的最大容量list.capacity
+    memset(&list, 0, sizeof(ElemType) * list.capacity);
+}
+{% endhighlight %}
+
+
+## 建立ArrayList
+
+{% highlight c++ linenos %}
+void initList(ArrayList& list) {
+    //初始化大小
+    list.capacity = INIT_SIZE;
+    //動態分配記憶體
+    list.data = new ElemType[list.capacity];
+    ClearList(list);
+}
+int main() {
+    ArrayList list; //建立ArrayList
+    initList(list
+    return 0;
+}
+{% endhighlight %}
+
+## 刪除ArrayList
+
+{% highlight c++ linenos %}
+void destroyList(ArrayList& list) {
+    //釋放記憶體
+    delete [] list.data;
+    list.data = nullptr;
+    //全部設0
+    list.capacity = 0;
+    list.size = 0;
+}
+{% endhighlight %}
+
+## 擴展容量
+
+步驟如下
+- 建立新容量的陣列
+- 將舊的陣列拷貝到新的陣列
+- 刪掉舊的陣列
+- 指標指向新的陣列
+- 重新定義最大容量
+
+![img]({{site.imgurl}}/dataStruct/extArrayList.jpg)  
+
+{% highlight c++ linenos %}
+bool extList(ArrayList& list) {
+    int new_size = list.capacity + EXT_SIZE;
+    //建立新的陣列(容量比較大的陣列)
+    ElemType *new_data = new (std::nothrow) ElemType[new_size];
+    //如果記憶體分配失敗
+    if(new_data == nullptr) return false;
+    
+    //清空新的陣列
+    memset(new_data, 0, sizeof(ElemType) * new_size);
+    
+    //拷貝舊的陣列到新的陣列
+    memcpy(new_data, list.data, sizeof(ElemType) * list.size);
+    
+    //把舊的陣列進行記憶體釋放
+    delete [] list.data;
+    
+    //把結構中的陣列，指向新的陣列記憶體位址
+    list.data = new_data;
+    
+    //重新定義結構中最大容量
+    list.capacity = new_size;
+    return true;
+}
+{% endhighlight %}
+
+## 插入
+
+判斷是否超出最大容量
+{% highlight c++ linenos %}
+    //判斷是否超出最大容量
+    if(list.size == list.capacity) {
+        //超出容量就擴展容量
+        if(!extList(list)) {
+            //若返回是false，代表建立新陣列記憶體配置產生問題
+            return false;
+        }
+    }
+{% endhighlight %}
+
+
 ## 完整程式碼
 
 {% highlight c++ linenos %}
 //預設初始化大小
-#define INIT_SIZE 1
+#define INIT_SIZE 10
 //預設擴展大小
 #define EXT_SIZE 5
 
@@ -194,6 +324,7 @@ int main() {
     cout << "---------------------" << endl;
     del(list,0);
     printList(list);
+    destroyList(list);
     return 0;
 }
 {% endhighlight %}
