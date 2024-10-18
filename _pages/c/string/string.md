@@ -27,3 +27,17 @@ int main() {
 請輸入數字月份(1~12):1
 January
 ```
+
+## 清空
+
+{% highlight c++ linenos %}
+    string name = "Bill";
+    cout << "name: " << name << endl;
+    name.clear();
+    cout << "name: " << name << endl;
+{% endhighlight %}
+
+```
+name: Bill
+name: 
+```

@@ -487,6 +487,16 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 函式 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/function" onclick="pageScrollToTop(this)"> 函式</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 記憶體 </a><ul>
 	
 	
@@ -668,8 +678,46 @@
     	<a href="/pages/c/dataStruct/recursion" onclick="pageScrollToTop(this)"> 遞迴</a>
         
             
-                <ul><li><a href="#什麼是遞迴" onclick="mobilePageScrollToAnchor(this)" >什麼是遞迴？</a><ul><li><a href="#自己呼叫自己" onclick="mobilePageScrollToAnchor(this)" >自己呼叫自己</a></li><li><a href="#終止條件" onclick="mobilePageScrollToAnchor(this)" >終止條件</a></li><li><a href="#次數" onclick="mobilePageScrollToAnchor(this)" >次數</a></li></ul></li><li><a href="#二種遞迴" onclick="mobilePageScrollToAnchor(this)" >二種遞迴</a><ul><li><a href="#傳遞函式前處理" onclick="mobilePageScrollToAnchor(this)" >傳遞函式前處理</a></li><li><a href="#傳遞函式後處理" onclick="mobilePageScrollToAnchor(this)" >傳遞函式後處理</a></li></ul></li></ul>
+                <ul><li><a href="#什麼是遞迴" onclick="mobilePageScrollToAnchor(this)" >什麼是遞迴？</a><ul><li><a href="#自己呼叫自己" onclick="mobilePageScrollToAnchor(this)" >自己呼叫自己</a></li><li><a href="#終止條件" onclick="mobilePageScrollToAnchor(this)" >終止條件</a></li><li><a href="#次數" onclick="mobilePageScrollToAnchor(this)" >次數</a></li></ul></li><li><a href="#二種遞迴" onclick="mobilePageScrollToAnchor(this)" >二種遞迴</a><ul><li><a href="#傳遞函式前處理" onclick="mobilePageScrollToAnchor(this)" >傳遞函式前處理</a></li><li><a href="#傳遞函式後處理" onclick="mobilePageScrollToAnchor(this)" >傳遞函式後處理</a></li></ul></li><li><a href="#類別與遞迴" onclick="mobilePageScrollToAnchor(this)" >類別與遞迴</a></li></ul>
 
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 類別與物件 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/class" onclick="pageScrollToTop(this)"> 類別與物件</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/enum" onclick="pageScrollToTop(this)"> Enum列舉</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/constructor" onclick="pageScrollToTop(this)"> 建構子與解構子</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/copy_constructor" onclick="pageScrollToTop(this)"> 拷貝函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/deep_shallow_copy" onclick="pageScrollToTop(this)"> 深淺拷貝</a>
+        
             
         </li></ul></li>
 	
@@ -931,6 +979,58 @@
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>55
 </code></pre></div></div>
+<h2 id="類別與遞迴">類別與遞迴</h2>
+
+<p>若在類別中寫遞迴函式，參數不用傳遞，可直接使用成員屬性供遞迴使用，成員屬性可以保存值。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Story</span> <span class="p">{</span>
+<span class="nl">public:</span>
+    <span class="kt">int</span> <span class="n">times</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="n">tell</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">times</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"第"</span> <span class="o">&lt;&lt;</span> <span class="n">times</span> <span class="o">&lt;&lt;</span> <span class="s">"次:"</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="n">times</span><span class="o">++</span><span class="p">;</span>
+        <span class="n">tell</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">Story</span> <span class="n">story</span><span class="p">;</span>
+    <span class="n">story</span><span class="p">.</span><span class="n">tell</span><span class="p">();</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>第0次:從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？
+第1次:從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？
+第2次:從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？
+第3次:從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？
+第4次:從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？
+第5次:從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？
+第6次:從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？
+第7次:從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？
+第8次:從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？
+第9次:從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？
+第10次:從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1001,7 +1101,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/c/conversion/implicit" class="navigation navigation-next navigation-unique" aria-label="Next page: 自動轉型">
+                        <a href="/pages/c/class/class" class="navigation navigation-next navigation-unique" aria-label="Next page: 類別與物件">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1017,6 +1117,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "類別與物件",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/c/class/class.md",
+            "ref": "_pages/c/class/class.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -1112,7 +1221,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-10-08 15:14:56 +0800"
+        "time": "2024-10-18 15:21:40 +0800"
     },
     "basePath": "",
     "book": {

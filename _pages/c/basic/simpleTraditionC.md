@@ -52,7 +52,8 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Global Variable|全域變數，外部變數|全局變量|
 |Parameter|參數|形參|
 |Argument|引數|實參|
-|define|宣告|聲明|
+|declaration|宣告|聲明|
+|definition|定義|定義|
 |#define|前置指令|宏|
 |Preprocessor|前置處理器|預處理器|
 |default|預設值|缺省|
@@ -108,6 +109,16 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Stack|堆疊|棧|
 |Heap|堆積|堆|
 
+## 資料結構相關
+
+|英文|台灣|大陸|
+|:--:|:--:|:--:|
+struct|結構|結構體|
+|Linked list|鏈結串列|鏈表|
+|head node|首節點|頭節點|
+|Queue|佇列|隊列|
+|佇列front|前端|頭節點|
+|佇列rear|後端|尾節點|
 
 ## 物件相關
 
@@ -116,8 +127,12 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Template|樣板|模板|
 |constructor|建構式或建構子|構造方法|
 |deconstructor|解構式或解構子|析構方法或析構函數|
-|struct|結構|結構體|
-|Linked list|鏈結串列|鏈表|
+|override|覆寫|重寫|
+|overload|多載|重載|
+|enum|列舉|枚舉|
+|class|類別|類|
+|member variable|成員屬性|成員變量|
+|member function|成員方法|成員函數|
 
 
 

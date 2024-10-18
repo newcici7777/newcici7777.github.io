@@ -127,6 +127,22 @@ char * strcpy ( char * destination, const char * source );
 c_str4:hel
 ```
 
+## 字串指標拷貝 strcpy
+
+{% highlight c++ linenos %}
+    char* c_str1 = new char[100];
+    strcpy(c_str1, "abcdefg");
+    char* c_str2 = new char[100];
+    strcpy(c_str2, c_str1);
+    cout << "c_str1 = " << c_str1 << endl;
+    cout << "c_str2 = " << c_str2 << endl;
+{% endhighlight %}
+
+```
+c_str1 = abcdefg
+c_str2 = abcdefg
+```
+
 ## 字串修改
 
 不能使用`等於=`修改字串，以下語法會編譯錯誤。
