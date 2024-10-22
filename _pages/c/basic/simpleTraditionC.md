@@ -133,6 +133,6 @@ struct|結構|結構體|
 |class|類別|類|
 |member variable|成員屬性|成員變量|
 |member function|成員方法|成員函數|
-
+|::scope resolution operator|範圍運算子|域作用符|
 
 
