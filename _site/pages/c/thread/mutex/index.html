@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>結構與字串 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>互斥鎖Mutex · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -545,12 +545,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/struct/struct_char" onclick="pageScrollToTop(this)"> 結構與字串</a>
         
-            
-                <ul><li><a href="#結構成員與char字串" onclick="mobilePageScrollToAnchor(this)" >結構成員與char字串</a></li><li><a href="#結構成員與char字串指標" onclick="mobilePageScrollToAnchor(this)" >結構成員與char字串指標</a></li><li><a href="#結構成員與char字串與字串指標c11" onclick="mobilePageScrollToAnchor(this)" >結構成員與char字串與字串指標(c11)</a></li><li><a href="#無法使用大括號修改單獨成員是字串陣列" onclick="mobilePageScrollToAnchor(this)" >無法使用大括號修改單獨成員是字串陣列</a></li></ul>
-
             
         </li>
 	
@@ -804,9 +801,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/thread/mutex" onclick="pageScrollToTop(this)"> 互斥鎖Mutex</a>
         
+            
+                <ul><li><a href="#執行緒安全" onclick="mobilePageScrollToAnchor(this)" >執行緒安全</a></li><li><a href="#互斥鎖mutex" onclick="mobilePageScrollToAnchor(this)" >互斥鎖Mutex</a><ul><li><a href="#匯入標頭檔" onclick="mobilePageScrollToAnchor(this)" >匯入標頭檔</a></li><li><a href="#互斥鎖全域變數" onclick="mobilePageScrollToAnchor(this)" >互斥鎖全域變數</a></li><li><a href="#lock-鎖上" onclick="mobilePageScrollToAnchor(this)" >lock() 鎖上</a></li><li><a href="#unlock-開鎖" onclick="mobilePageScrollToAnchor(this)" >unlock() 開鎖</a></li><li><a href="#程式碼" onclick="mobilePageScrollToAnchor(this)" >程式碼</a></li><li><a href="#判斷是那個thread加鎖解鎖申請鎖" onclick="mobilePageScrollToAnchor(this)" >判斷是那個thread加鎖/解鎖/申請鎖</a></li><li><a href="#類別與mutex" onclick="mobilePageScrollToAnchor(this)" >類別與mutex</a></li></ul></li><li><a href="#recursive_mutex" onclick="mobilePageScrollToAnchor(this)" >recursive_mutex</a></li><li><a href="#lock_guard" onclick="mobilePageScrollToAnchor(this)" >lock_guard</a></li></ul>
+
             
         </li>
 	
@@ -837,7 +837,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >結構與字串</a>
+                            <a href="." >互斥鎖Mutex</a>
                         
                     </h1>
                 </div>
@@ -850,60 +850,12 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/struct/struct_char">結構與字串</h1>
+                        <h1 id="/pages/c/thread/mutex">互斥鎖Mutex</h1>
                     
 
-                    <p>Prerequisites:</p>
+                    <h2 id="執行緒安全">執行緒安全</h2>
 
-<ul>
-  <li>
-    <p><a href="/pages/c/array/charArray/#字串常數">字串常數</a></p>
-  </li>
-  <li>
-    <p><a href="/pages/c/array/charArray/#字串修改">字串修改</a></p>
-  </li>
-  <li>
-    <p><a href="/pages/c/array/pointerCharArr/">字串指標</a></p>
-  </li>
-</ul>
-
-<h2 id="結構成員與char字串">結構成員與char字串</h2>
-
-<p>以下結構成員name為char字串。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>使用char字串，不能使用<code class="language-plaintext highlighter-rouge">等於=</code>指定值，以下語法將編譯錯誤。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>正確使用的方式是使用strcpy拷貝字串到char字串。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>完整程式碼</p>
+<p>多個執行緒搶同一個資源，就會發生問題，以下程式碼</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -927,37 +879,91 @@
 19
 20
 21
+22
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;thread&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//每一秒印1次，這裡是執行10秒</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//停1秒鐘</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="c1">//清空資料</span>
-    <span class="c1">//student記憶體位址的值全設為00000000</span>
-    <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">));</span>
-    <span class="c1">//姓名</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">);</span>
-    <span class="c1">//學號</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//建立執行緒t1</span>
+    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
+    <span class="c1">//建立執行緒t2</span>
+    <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
+    <span class="c1">//執行緒t1被記憶體釋放</span>
+    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+    <span class="c1">//執行緒t2被記憶體釋放</span>
+    <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mary
-100
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = 0, msg =test test
+i = 0, msg =abcdefg abcdefg
+i = 1, msg =test test
+i = 1, msg =abcdefg abcdefg
+i = 2, msg =abcdefg abcdefg
+i = 2, msg =test test
+i = 3i = 3, msg =test test, msg =abcdefg abcdefg
+
+i = 4i = 4, msg =abcdefg abcdefg, msg =test test
+
+i = 5, msg =test test
+i = 5, msg =abcdefg abcdefg
+i = 6, msg =test test
+i = 6, msg =abcdefg abcdefg
+i = 7, msg =test test
+i = 7, msg =abcdefg abcdefg
+i = 8, msg =abcdefg abcdefg
+i = 8, msg =test test
+i = 9, msg =abcdefg abcdefg
+i = 9, msg =test test
 </code></pre></div></div>
 
-<h2 id="結構成員與char字串指標">結構成員與char字串指標</h2>
+<p>從執行結果來看，以下二句是二個執行緒搶cout(全域變數)這個資源，導致輸出的結果不正常。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = 3i = 3, msg =test test, msg =abcdefg abcdefg
 
-<p>以下結構成員name為char字串指標。</p>
+i = 4i = 4, msg =abcdefg abcdefg, msg =test test
+</code></pre></div></div>
+
+<h2 id="互斥鎖mutex">互斥鎖Mutex</h2>
+
+<p>同步(Concurrency Control)是指，多個執行緒協調如何使用同一個資源。</p>
+
+<p>如下圖，每一個人代表一個執行緒，他們都在排隊上同一間廁所(同一個資源)，當一個人(一個執行緒)進入廁所，就要把門鎖上，當上完廁所，再把門打開，輪下一個人(下一個執行緒)進去上廁所(同一個資源)。</p>
+
+<p><img src="/assets/img/toilet.png" alt="img" /></p>
+
+<p>互斥鎖保證同一個時間只有一個人(一個執行緒)使用廁所(同一個資源)，當一個執行緒把門鎖上，其它執行緒就在門外排隊等候，等待廁所中的執行緒把門打開(開鎖)，輪下一個執行緒進去把門鎖上。</p>
+
+<h3 id="匯入標頭檔">匯入標頭檔</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;mutex&gt;
+</code></pre></div></div>
+
+<h3 id="互斥鎖全域變數">互斥鎖全域變數</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mutex mtx;
+</code></pre></div></div>
+
+<h3 id="lock-鎖上">lock() 鎖上</h3>
+
+<p>可以把mutex想像成是廁所那個門，若是門是鎖起來的狀態，代表有人(一個thread)在廁所裡面，其它人(threads)就要在門外排隊等待，直到門開鎖，沒有鎖起來的狀態，執行緒呼叫mutex.lock()會自行判斷鎖起來的狀態，若沒鎖上，執行緒會得到鎖，若鎖上，執行緒就要排隊等待。</p>
+
+<h3 id="unlock-開鎖">unlock() 開鎖</h3>
+
+<p>只有在廁所中的執行緒才有開鎖的功能，其它在廁所門外排隊的執行緒是沒辦法開鎖。</p>
+
+<h3 id="程式碼">程式碼</h3>
+
+<p>先前的程式，把cout想成廁所，程式碼修改如下</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -966,24 +972,88 @@
 4
 5
 6
-</pre></td><td class="code"><pre><span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;thread&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;mutex&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="c1">//建立mutex互斥鎖</span>
+<span class="n">mutex</span> <span class="n">mtx</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//每一秒印1次，這裡是執行10秒</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">mtx</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span><span class="c1">//把門鎖上</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//持有鎖後，再休眠1秒</span>
+        <span class="n">mtx</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span><span class="c1">//使用完畢，把門開鎖</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>使用char字串指標，可以使用<code class="language-plaintext highlighter-rouge">等於=</code>指定值。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = 0, msg =test test
+i = 1, msg =test test
+i = 2, msg =test test
+i = 3, msg =test test
+i = 4, msg =test test
+i = 5, msg =test test
+i = 0, msg =abcdefg abcdefg
+i = 1, msg =abcdefg abcdefg
+i = 2, msg =abcdefg abcdefg
+i = 3, msg =abcdefg abcdefg
+i = 4, msg =abcdefg abcdefg
+i = 5, msg =abcdefg abcdefg
+i = 6, msg =abcdefg abcdefg
+i = 7, msg =abcdefg abcdefg
+i = 8, msg =abcdefg abcdefg
+i = 9, msg =abcdefg abcdefg
+i = 6, msg =test test
+i = 7, msg =test test
+i = 8, msg =test test
+i = 9, msg =test test
+</code></pre></div></div>
+
+<h3 id="判斷是那個thread加鎖解鎖申請鎖">判斷是那個thread加鎖/解鎖/申請鎖</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//每一秒印1次，這裡是執行10秒</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"申請鎖的thread = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="n">mtx</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鎖上的thread = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//持有鎖後，再休眠1秒</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"開鎖的thread = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="n">mtx</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>完整程式碼</p>
+<h3 id="類別與mutex">類別與mutex</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1007,107 +1077,59 @@
 19
 20
 21
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
+22
+23
+24
+25
+26
+</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
+    <span class="c1">//私有成員變數互斥鎖</span>
+    <span class="n">mutex</span> <span class="n">m_mutex</span><span class="p">;</span>
+<span class="nl">public:</span>
+    <span class="kt">void</span> <span class="n">func</span><span class="p">(</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">m_mutex</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+            <span class="n">m_mutex</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="c1">//清空資料</span>
-    <span class="c1">//student記憶體位址的值全設為00000000</span>
-    <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">));</span>
-    <span class="c1">//姓名</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span><span class="c1">//建立物件</span>
+    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="s">"student1"</span><span class="p">);</span>
+    <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="s">"student2"</span><span class="p">);</span>
+    <span class="kr">thread</span> <span class="n">t3</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="s">"student3"</span><span class="p">);</span>
+    <span class="kr">thread</span> <span class="n">t4</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="s">"student4"</span><span class="p">);</span>
+    <span class="kr">thread</span> <span class="n">t5</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="s">"student5"</span><span class="p">);</span>
+    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+    <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+    <span class="n">t3</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+    <span class="n">t4</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+    <span class="n">t5</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mary
-100
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>msg = student1
+msg = student3
+msg = student5
+msg = student5
+msg = student5
+msg = student5
+msg = student5
+msg = student5
+msg = student5
+msg = student5
+msg = student5
+msg = student5
+以下截斷
 </code></pre></div></div>
 
-<h2 id="結構成員與char字串與字串指標c11">結構成員與char字串與字串指標(c11)</h2>
+<h2 id="recursive_mutex">recursive_mutex</h2>
 
-<p>使用大括號的方式，不管是字串或字串指標都可以用雙引號”“指定值。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span><span class="s">"桃園市XX區XX號"</span><span class="p">,</span> <span class="mi">1</span><span class="p">};</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//地址</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">address</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span><span class="s">"桃園市XX區XX號"</span><span class="p">,</span> <span class="mi">1</span><span class="p">};</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">address</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mary
-桃園市XX區XX號
-1
-</code></pre></div></div>
-<h2 id="無法使用大括號修改單獨成員是字串陣列">無法使用大括號修改單獨成員是字串陣列</h2>
-
-<p>以下的寫法會編譯錯誤</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Bill"</span><span class="p">};</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>必須使用strcpy修改單獨成員是字串陣列</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>完整程式碼</p>
+<p>以下程式碼，func4()呼叫func3()，但執行結果只印出func4。
+若是鎖中有鎖，會有死鎖(Dead lock)問題，mutex必須解鎖才能加鎖。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1129,33 +1151,188 @@
 17
 18
 19
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//地址</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">address</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
+</pre></td><td class="code"><pre><span class="n">mutex</span> <span class="n">mtx</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func3</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">mtx</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span><span class="c1">//加鎖</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func3"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">mtx</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span><span class="c1">//解鎖</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">func4</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">mtx</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span><span class="c1">//加鎖</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func4"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">func3</span><span class="p">();</span><span class="c1">//呼叫func3</span>
+    <span class="n">mtx</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span><span class="c1">//解鎖</span>
+<span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span><span class="s">"桃園市XX區XX號"</span><span class="p">,</span> <span class="mi">1</span><span class="p">};</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">address</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//建立執行緒t1</span>
+    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func4</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
+    <span class="c1">//執行緒t1被記憶體釋放</span>
+    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Bill
-桃園市XX區XX號
-1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func4
 </code></pre></div></div>
 
+<p>改成使用recursive_mutex，就不會有死鎖問題。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre><span class="n">recursive_mutex</span> <span class="n">r_mtx</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func3</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">r_mtx</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span><span class="c1">//加鎖</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func3"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">r_mtx</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span><span class="c1">//解鎖</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">func4</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">r_mtx</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span><span class="c1">//加鎖</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func4"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">func3</span><span class="p">();</span><span class="c1">//呼叫func3</span>
+    <span class="n">r_mtx</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span><span class="c1">//解鎖</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//建立執行緒t1</span>
+    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func4</span><span class="p">);</span>
+    <span class="c1">//執行緒t1被記憶體釋放</span>
+    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func4
+func3
+</code></pre></div></div>
+
+<h2 id="lock_guard">lock_guard</h2>
+
+<p>lock_guard是mutex的樣板，只要管加鎖，不用管解鎖，它會在離開有效範圍(Scope)與生命週期(Lifetime)，自動解鎖。</p>
+
+<p>語法</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">lock_guard</span><span class="o">&lt;</span><span class="n">mutex</span><span class="err">類別名</span><span class="o">&gt;</span> <span class="n">mlock</span><span class="p">(</span><span class="n">mtx</span><span class="err">物件名</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>把之前的程式碼修改成lock_guard</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func2</span><span class="p">(</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//每一秒印1次，這裡是執行10秒</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"申請鎖的thread = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="c1">//有效範圍scope 開始</span>
+        <span class="p">{</span>
+            <span class="n">lock_guard</span><span class="o">&lt;</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">mlock</span><span class="p">(</span><span class="n">mtx</span><span class="p">);</span><span class="c1">//把門鎖上</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鎖上的thread = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+            <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//持有鎖後，再休眠1秒</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"開鎖的thread = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="c1">//有效範圍scope 結束</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//建立執行緒t1</span>
+    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func2</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
+    <span class="c1">//建立執行緒t2</span>
+    <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func2</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
+    <span class="c1">//執行緒t1被記憶體釋放</span>
+    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+    <span class="c1">//執行緒t2被記憶體釋放</span>
+    <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>申請鎖的thread = 0x700005e2a000
+鎖上的thread = 0x700005e2a000
+i = 0, msg =test test
+申請鎖的thread = 0x700005ead000
+開鎖的thread = 0x700005e2a000
+申請鎖的thread = 0x700005e2a000
+鎖上的thread = 0x700005e2a000
+i = 1, msg =test test
+開鎖的thread = 0x700005e2a000
+申請鎖的thread = 0x700005e2a000
+鎖上的thread = 0x700005e2a000
+i = 2, msg =test test
+開鎖的thread = 0x700005e2a000
+申請鎖的thread = 0x700005e2a000
+鎖上的thread = 0x700005e2a000
+i = 3, msg =test test
+開鎖的thread = 0x700005e2a000
+申請鎖的thread = 0x700005e2a000
+鎖上的thread = 0x700005ead000
+i = 0, msg =abcdefg abcdefg
+開鎖的thread = 0x700005ead000
+申請鎖的thread = 0x700005ead000
+鎖上的thread = 0x700005ead000
+i = 1, msg =abcdefg abcdefg
+開鎖的thread = 0x700005ead000
+申請鎖的thread = 0x700005ead000
+鎖上的thread = 0x700005ead000
+i = 2, msg =abcdefg abcdefg
+開鎖的thread = 0x700005ead000
+申請鎖的thread = 0x700005ead000
+鎖上的thread = 0x700005ead000
+i = 3, msg =abcdefg abcdefg
+開鎖的thread = 0x700005ead000
+申請鎖的thread = 0x700005ead000
+鎖上的thread = 0x700005ead000
+i = 4, msg =abcdefg abcdefg
+開鎖的thread = 0x700005ead000
+以下截斷
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1219,14 +1396,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/struct/struct_def" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 定義結構">
+                        <a href="/pages/c/thread/this_thread" class="navigation navigation-prev navigation-unique" aria-label="Previous page: this_thread">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/struct/struct_init" class="navigation navigation-next navigation-unique" aria-label="Next page: 初始化結構">
+                        <a href="/pages/c/thread/condition_variable" class="navigation navigation-next navigation-unique" aria-label="Next page: condition_variable">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1244,11 +1421,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "結構中的陣列",
+            "title": "this_thread",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/struct/arrayInStruct.md",
-            "ref": "_pages/c/struct/arrayInStruct.md",
+            "path": "_pages/c/thread/this_thread.md",
+            "ref": "_pages/c/thread/this_thread.md",
             "articles": []
         },
         
@@ -1340,8 +1517,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/struct/struct_char.md",
-        "mtime": "2024-07-08 00:00:00 +0800",
+        "path": "_pages/c/thread/mutex.md",
+        "mtime": "2024-10-22 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>結構與字串 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>condition_variable · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -545,12 +545,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/struct/struct_char" onclick="pageScrollToTop(this)"> 結構與字串</a>
         
-            
-                <ul><li><a href="#結構成員與char字串" onclick="mobilePageScrollToAnchor(this)" >結構成員與char字串</a></li><li><a href="#結構成員與char字串指標" onclick="mobilePageScrollToAnchor(this)" >結構成員與char字串指標</a></li><li><a href="#結構成員與char字串與字串指標c11" onclick="mobilePageScrollToAnchor(this)" >結構成員與char字串與字串指標(c11)</a></li><li><a href="#無法使用大括號修改單獨成員是字串陣列" onclick="mobilePageScrollToAnchor(this)" >無法使用大括號修改單獨成員是字串陣列</a></li></ul>
-
             
         </li>
 	
@@ -811,9 +808,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/thread/condition_variable" onclick="pageScrollToTop(this)"> condition_variable</a>
         
+            
+                <ul><li><a href="#通知與等待" onclick="mobilePageScrollToAnchor(this)" >通知與等待</a></li></ul>
+
             
         </li></ul></li></ul></li>
 	
@@ -837,7 +837,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >結構與字串</a>
+                            <a href="." >condition_variable</a>
                         
                     </h1>
                 </div>
@@ -850,311 +850,14 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/struct/struct_char">結構與字串</h1>
+                        <h1 id="/pages/c/thread/condition_variable">condition_variable</h1>
                     
 
-                    <p>Prerequisites:</p>
+                    <h2 id="通知與等待">通知與等待</h2>
 
-<ul>
-  <li>
-    <p><a href="/pages/c/array/charArray/#字串常數">字串常數</a></p>
-  </li>
-  <li>
-    <p><a href="/pages/c/array/charArray/#字串修改">字串修改</a></p>
-  </li>
-  <li>
-    <p><a href="/pages/c/array/pointerCharArr/">字串指標</a></p>
-  </li>
-</ul>
+<p>想像一下，去應徴工作時。若應徵上，就會有信件通知，其它時候，就是等待。</p>
 
-<h2 id="結構成員與char字串">結構成員與char字串</h2>
-
-<p>以下結構成員name為char字串。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>使用char字串，不能使用<code class="language-plaintext highlighter-rouge">等於=</code>指定值，以下語法將編譯錯誤。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>正確使用的方式是使用strcpy拷貝字串到char字串。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>完整程式碼</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="c1">//清空資料</span>
-    <span class="c1">//student記憶體位址的值全設為00000000</span>
-    <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">));</span>
-    <span class="c1">//姓名</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">);</span>
-    <span class="c1">//學號</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mary
-100
-</code></pre></div></div>
-
-<h2 id="結構成員與char字串指標">結構成員與char字串指標</h2>
-
-<p>以下結構成員name為char字串指標。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>使用char字串指標，可以使用<code class="language-plaintext highlighter-rouge">等於=</code>指定值。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>完整程式碼</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="c1">//清空資料</span>
-    <span class="c1">//student記憶體位址的值全設為00000000</span>
-    <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">));</span>
-    <span class="c1">//姓名</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mary
-100
-</code></pre></div></div>
-
-<h2 id="結構成員與char字串與字串指標c11">結構成員與char字串與字串指標(c11)</h2>
-
-<p>使用大括號的方式，不管是字串或字串指標都可以用雙引號”“指定值。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span><span class="s">"桃園市XX區XX號"</span><span class="p">,</span> <span class="mi">1</span><span class="p">};</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//地址</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">address</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span><span class="s">"桃園市XX區XX號"</span><span class="p">,</span> <span class="mi">1</span><span class="p">};</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">address</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mary
-桃園市XX區XX號
-1
-</code></pre></div></div>
-<h2 id="無法使用大括號修改單獨成員是字串陣列">無法使用大括號修改單獨成員是字串陣列</h2>
-
-<p>以下的寫法會編譯錯誤</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Bill"</span><span class="p">};</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>必須使用strcpy修改單獨成員是字串陣列</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>完整程式碼</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//地址</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">address</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-<span class="p">}</span><span class="n">Student</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span><span class="s">"桃園市XX區XX號"</span><span class="p">,</span> <span class="mi">1</span><span class="p">};</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">address</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Bill
-桃園市XX區XX號
-1
-</code></pre></div></div>
+<p>接下來我們要實作等待與通知的程式碼。</p>
 
 </section>
             </div><div class="search-results">
@@ -1219,14 +922,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/struct/struct_def" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 定義結構">
+                        <a href="/pages/c/thread/mutex" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 互斥鎖Mutex">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/struct/struct_init" class="navigation navigation-next navigation-unique" aria-label="Next page: 初始化結構">
+                        <a href="/pages/jekyll/install/how_to_install_ruby" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝 Ruby on Mac">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1242,15 +945,6 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
-        
-        "next": {
-            "title": "結構中的陣列",
-            "level": "1.2",
-            "depth": 1,
-            "path": "_pages/c/struct/arrayInStruct.md",
-            "ref": "_pages/c/struct/arrayInStruct.md",
-            "articles": []
-        },
         
         "dir": "ltr"
     },    "config": {
@@ -1340,8 +1034,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/struct/struct_char.md",
-        "mtime": "2024-07-08 00:00:00 +0800",
+        "path": "_pages/c/thread/condition_variable.md",
+        "mtime": "2024-10-23 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
