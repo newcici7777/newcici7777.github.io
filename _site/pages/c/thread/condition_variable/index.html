@@ -812,7 +812,7 @@
     	<a href="/pages/c/thread/condition_variable" onclick="pageScrollToTop(this)"> condition_variable</a>
         
             
-                <ul><li><a href="#通知與等待" onclick="mobilePageScrollToAnchor(this)" >通知與等待</a></li></ul>
+                <ul><li><a href="#通知與等待" onclick="mobilePageScrollToAnchor(this)" >通知與等待</a><ul><li><a href="#建立condition_variable" onclick="mobilePageScrollToAnchor(this)" >建立condition_variable</a></li><li><a href="#通知接收訊息" onclick="mobilePageScrollToAnchor(this)" >通知接收訊息</a></li><li><a href="#unique_lock" onclick="mobilePageScrollToAnchor(this)" >unique_lock</a></li><li><a href="#等待有訊息傳過來" onclick="mobilePageScrollToAnchor(this)" >等待有訊息傳過來</a></li></ul></li><li><a href="#queue" onclick="mobilePageScrollToAnchor(this)" >Queue</a></li><li><a href="#無限迴圈" onclick="mobilePageScrollToAnchor(this)" >無限迴圈</a></li><li><a href="#完整程式碼" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li><li><a href="#證明wait自帶解鎖功能" onclick="mobilePageScrollToAnchor(this)" >證明wait()自帶解鎖功能</a></li></ul>
 
             
         </li></ul></li></ul></li>
@@ -855,9 +855,382 @@
 
                     <h2 id="通知與等待">通知與等待</h2>
 
-<p>想像一下，去應徴工作時。若應徵上，就會有信件通知，其它時候，就是等待。</p>
+<p>想像一下，當有人寄簡訊給你，你的手機會收到簡訊的通知Notify，其它時候，你的手機一直處於等待Wait的狀態。</p>
 
-<p>接下來我們要實作等待與通知的程式碼。</p>
+<p><img src="/assets/img/dataStruct/msg.jpg" alt="img" /></p>
+
+<h3 id="建立condition_variable">建立condition_variable</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>condition_variable m_cond;//條件
+</code></pre></div></div>
+
+<h3 id="通知接收訊息">通知接收訊息</h3>
+
+<p>通知一個執行緒</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>m_cond.notify_one();
+</code></pre></div></div>
+
+<p>通知多個執行緒</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>m_cond.notify_all();
+</code></pre></div></div>
+
+<h3 id="unique_lock">unique_lock</h3>
+
+<p>unique_lock支援condition_variable(通知/等待)</p>
+
+<p>unique_lock支援解鎖功能。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="n">unique_lock</span><span class="o">&lt;</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">lock</span><span class="p">(</span><span class="n">m_mtx</span><span class="p">);</span><span class="c1">//加鎖</span>
+
+<span class="n">lock</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span><span class="c1">//解鎖</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>也可使用scope有效範圍作為離開範圍解鎖</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="p">{</span>
+	<span class="n">unique_lock</span><span class="o">&lt;</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">lock</span><span class="p">(</span><span class="n">m_mtx</span><span class="p">);</span><span class="c1">//加鎖</span>
+	<span class="c1">//離開scope{}就解鎖</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="等待有訊息傳過來">等待有訊息傳過來</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">m_cond</span><span class="p">.</span><span class="n">wait</span><span class="p">(</span><span class="n">lock</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="queue">Queue</h2>
+
+<p>建立一個Queue儲存訊息。</p>
+
+<h2 id="無限迴圈">無限迴圈</h2>
+
+<p>手機無限迴圈等待有訊息通知</p>
+
+<h2 id="完整程式碼">完整程式碼</h2>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;thread&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;mutex&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;queue&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;condition_variable&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">class</span> <span class="nc">SafeQueue</span> <span class="p">{</span>
+    <span class="n">mutex</span> <span class="n">m_mtx</span><span class="p">;</span><span class="c1">//執行緒</span>
+    <span class="n">condition_variable</span> <span class="n">m_cond</span><span class="p">;</span><span class="c1">//條件</span>
+    <span class="n">queue</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">m_que</span><span class="p">;</span>
+<span class="nl">public:</span>
+    <span class="kt">void</span> <span class="n">push</span><span class="p">(</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//加鎖，scope的範圍為函式內</span>
+        <span class="n">lock_guard</span><span class="o">&lt;</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">lock</span><span class="p">(</span><span class="n">m_mtx</span><span class="p">);</span>
+        <span class="n">m_que</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span><span class="c1">//放入訊息</span>
+        <span class="n">m_cond</span><span class="p">.</span><span class="n">notify_one</span><span class="p">();</span><span class="c1">//通知執行緒來接收訊息</span>
+    <span class="p">}</span>
+    <span class="kt">void</span> <span class="n">pop</span><span class="p">(){</span>
+        <span class="c1">//無限迴圈等待有訊息通知</span>
+        <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">//每個執行緒有獨立的msg變數</span>
+            <span class="n">string</span> <span class="n">msg</span><span class="p">;</span>
+            <span class="c1">//加鎖</span>
+            <span class="c1">//因為m_cond.wait()參數只支援unique_lock</span>
+            <span class="n">unique_lock</span><span class="o">&lt;</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">lock</span><span class="p">(</span><span class="n">m_mtx</span><span class="p">);</span>
+            <span class="c1">// queue是空的才等待</span>
+            <span class="k">while</span><span class="p">(</span><span class="n">m_que</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
+                <span class="c1">//queue沒資料就等待</span>
+                <span class="n">m_cond</span><span class="p">.</span><span class="n">wait</span><span class="p">(</span><span class="n">lock</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="c1">//被通知接收資料</span>
+            <span class="c1">//若queue有資料了，才做下面的事情</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="n">m_que</span><span class="p">.</span><span class="n">front</span><span class="p">();</span><span class="c1">//拿出第一個元素</span>
+            <span class="n">m_que</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span><span class="c1">//移除元素</span>
+            <span class="c1">//印出接收到的訊息</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"執行緒:"</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">","</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+            <span class="c1">//解鎖</span>
+            <span class="n">lock</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span>
+            <span class="c1">//如果msg是end就不要再等待接收訊息</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">msg</span> <span class="o">==</span> <span class="s">"END"</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//建立物件</span>
+    <span class="n">SafeQueue</span> <span class="n">safeQue</span><span class="p">;</span>
+    <span class="c1">//建立3個執行緒</span>
+    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="o">&amp;</span><span class="n">SafeQueue</span><span class="o">::</span><span class="n">pop</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">safeQue</span><span class="p">);</span>
+    <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="o">&amp;</span><span class="n">SafeQueue</span><span class="o">::</span><span class="n">pop</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">safeQue</span><span class="p">);</span>
+    <span class="kr">thread</span> <span class="n">t3</span><span class="p">(</span><span class="o">&amp;</span><span class="n">SafeQueue</span><span class="o">::</span><span class="n">pop</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">safeQue</span><span class="p">);</span>
+    <span class="c1">//產生100個訊息</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">string</span> <span class="n">temp_msg</span> <span class="o">=</span> <span class="s">"msg"</span> <span class="o">+</span> <span class="n">to_string</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+        <span class="n">safeQue</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">temp_msg</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="c1">//產生結束訊息，跳離無限迴圈，不要再等待接收訊息</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">string</span> <span class="n">end_msg</span> <span class="o">=</span> <span class="s">"END"</span><span class="p">;</span>
+        <span class="n">safeQue</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">end_msg</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="c1">//執行緒記憶體釋放</span>
+    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+    <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+    <span class="n">t3</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行緒:0x70000ff3d000,msg0
+執行緒:0x70000ff3d000,msg1
+執行緒:0x70000ff3d000,msg2
+執行緒:0x70000ff3d000,msg3
+執行緒:0x70000ff3d000,msg4
+執行緒:0x70000ff3d000,msg5
+執行緒:0x70000ff3d000,msg6
+執行緒:0x70000ff3d000,msg7
+執行緒:0x70000ff3d000,msg8
+執行緒:0x70000ff3d000,msg9
+執行緒:0x70000ff3d000,msg10
+執行緒:0x70000ff3d000,msg11
+執行緒:0x70000ffc0000,msg12
+執行緒:0x70000ffc0000,msg13
+執行緒:0x70000ffc0000,msg14
+執行緒:0x70000ffc0000,msg15
+以下截掉
+</code></pre></div></div>
+
+<h2 id="證明wait自帶解鎖功能">證明wait()自帶解鎖功能</h2>
+
+<p>因為mutex互斥鎖一次只能把鎖給一個執行緒，拿到鎖的執行緒就可以執行互斥鎖mutex之後的程式碼，其它執行緒都在mutex之外排隊，
+但wait()的參數中又需要有lock，只能有鎖的執行緒才能等待通知，這樣就只有一個執行緒在等待通知，
+其它執行緒都在mutex之外排隊等待拿到鎖，因此wait()為了要讓其它執行緒能等待接收訊息，自帶解鎖功能，證明的過程在最後面。</p>
+
+<p>在wait()之前增加一行，休眠一小時</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>this_thread::sleep_for(chrono::hours(1));
+</code></pre></div></div>
+<p>目的是不要執行wait()，可以看到執行緒搶鎖的過程</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">pop</span><span class="p">(){</span>
+        <span class="c1">//無限迴圈等待有訊息通知</span>
+        <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">//每個執行緒有獨立的msg變數</span>
+            <span class="n">string</span> <span class="n">msg</span><span class="p">;</span>
+            <span class="c1">//加鎖</span>
+            <span class="c1">//因為m_cond.wait()參數只支援unique_lock</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"執行緒 = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">"排隊等待"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+            <span class="n">unique_lock</span><span class="o">&lt;</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">lock</span><span class="p">(</span><span class="n">m_mtx</span><span class="p">);</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"執行緒 = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">"加鎖成功"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+            <span class="n">this_thread</span><span class="o">::</span><span class="n">sleep_for</span><span class="p">(</span><span class="n">chrono</span><span class="o">::</span><span class="n">hours</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
+            <span class="c1">// queue是空的才等待</span>
+            <span class="k">while</span><span class="p">(</span><span class="n">m_que</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
+                <span class="c1">//queue沒資料就等待</span>
+                <span class="n">m_cond</span><span class="p">.</span><span class="n">wait</span><span class="p">(</span><span class="n">lock</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="c1">//被通知接收資料</span>
+            <span class="c1">//若queue有資料了，才做下面的事情</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="n">m_que</span><span class="p">.</span><span class="n">front</span><span class="p">();</span><span class="c1">//拿出第一個元素</span>
+            <span class="n">m_que</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span><span class="c1">//移除元素</span>
+            <span class="c1">//印出接收到的訊息</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"執行緒:"</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">","</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+            <span class="c1">//解鎖</span>
+            <span class="n">lock</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span>
+            <span class="c1">//如果msg是end就不要再等待接收訊息</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">msg</span> <span class="o">==</span> <span class="s">"END"</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>從執行結果可以看出，只有一個執行緒拿到鎖，並加鎖，其它執行緒都在外面排隊等待拿到鎖。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行緒 = 執行緒 = 0x7000016b9000執行緒 = 0x700001636000排隊等待0x70000173c000排隊等待
+排隊等待
+
+執行緒 = 0x7000016b9000加鎖成功
+</code></pre></div></div>
+
+<p>把休眠一小時的程式碼拿掉</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">pop</span><span class="p">(){</span>
+        <span class="c1">//無限迴圈等待有訊息通知</span>
+        <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">//每個執行緒有獨立的msg變數</span>
+            <span class="n">string</span> <span class="n">msg</span><span class="p">;</span>
+            <span class="c1">//加鎖</span>
+            <span class="c1">//因為m_cond.wait()參數只支援unique_lock</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"執行緒 = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">"排隊等待"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+            <span class="n">unique_lock</span><span class="o">&lt;</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">lock</span><span class="p">(</span><span class="n">m_mtx</span><span class="p">);</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"執行緒 = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">"加鎖成功"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+            <span class="c1">// queue是空的才等待</span>
+            <span class="k">while</span><span class="p">(</span><span class="n">m_que</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
+                <span class="c1">//queue沒資料就等待</span>
+                <span class="n">m_cond</span><span class="p">.</span><span class="n">wait</span><span class="p">(</span><span class="n">lock</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="c1">//被通知接收資料</span>
+            <span class="c1">//若queue有資料了，才做下面的事情</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="n">m_que</span><span class="p">.</span><span class="n">front</span><span class="p">();</span><span class="c1">//拿出第一個元素</span>
+            <span class="n">m_que</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span><span class="c1">//移除元素</span>
+            <span class="c1">//印出接收到的訊息</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"執行緒:"</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">","</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+            <span class="c1">//解鎖</span>
+            <span class="n">lock</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span>
+            <span class="c1">//如果msg是end就不要再等待接收訊息</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">msg</span> <span class="o">==</span> <span class="s">"END"</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>從執行結果可以看到，三個執行緒都拿到鎖，證明wait()有自帶解鎖功能。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行緒 = 執行緒 = 執行緒 = 0x70000ea07000排隊等待0x70000ea8a000
+執行緒 = 排隊等待
+0x70000ea07000加鎖成功
+執行緒 = 0x70000ea8a000加鎖成功
+0x70000e984000排隊等待
+執行緒 = 0x70000e984000加鎖成功
+</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -1040,7 +1413,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-10-23 15:11:22 +0800"
+        "time": "2024-10-25 11:15:12 +0800"
     },
     "basePath": "",
     "book": {
