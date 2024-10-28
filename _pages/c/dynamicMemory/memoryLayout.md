@@ -88,12 +88,12 @@ keywords: c++, 記憶體佈局
       <td>動態配置記憶體</td>
     </tr>
     <tr>
-      <td>bss segmen</td>
+      <td>bss segment</td>
       <td></td>
       <td>未初始化全域變數, 靜態變數</td>
     </tr>
     <tr>
-      <td>data segmen</td>
+      <td>data segment</td>
       <td></td>
       <td>已初始化全域變數, 靜態變數</td>
     </tr>
@@ -118,11 +118,11 @@ keywords: c++, 記憶體佈局
 
 儲存由動態配置(new與malloc)產生的變數，記憶體大小取決電腦實體記憶體大小(可能8GB或更大)，記憶體位址成長的方向是向上成長。
 
-#### bss segmen 記憶體區塊
+#### bss segment 記憶體區塊
 
 儲存未初始化全域變數與靜態變數。
 
-#### data segmen 記憶體區塊
+#### data segment 記憶體區塊
 
 儲存已初始化全域變數與靜態變數。
 
@@ -135,14 +135,14 @@ keywords: c++, 記憶體佈局
 {% highlight c++ linenos %}
 #include <stdio.h>
 const int global_x = 1;  // 儲存於 code segment(常數)
-int global_y = 1;        // 儲存於 data segmen(已初始化全域變數）
+int global_y = 1;        // 儲存於 data segment(已初始化全域變數）
 int global_z;            // 儲存於 bss(未初始全域變數)
 int fun1(int param1) {	 // 儲存於 stack (函式參數)
 	return param1; // 儲存於 stack (函式傳回值)
 }
 int main() {
   const static int x = 1; // 儲存於 code segment(常數)
-  static int y = 1;       // 儲存於 data segmen(已初始化靜態變數）
+  static int y = 1;       // 儲存於 data segment(已初始化靜態變數）
   static int z;           // 儲存於 bss(未初始靜態變數)
   int w = 1;              // 儲存於 stack (區域變數)
   fun1(w);

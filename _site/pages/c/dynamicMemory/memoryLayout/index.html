@@ -504,7 +504,7 @@
     	<a href="/pages/c/dynamicMemory/memoryLayout" onclick="pageScrollToTop(this)"> 記憶體配置</a>
         
             
-                <ul><li><a href="#記憶體起始與結束位址" onclick="mobilePageScrollToAnchor(this)" >記憶體起始與結束位址。</a></li><li><a href="#記憶體區段" onclick="mobilePageScrollToAnchor(this)" >記憶體區段</a><ul><li><a href="#作業系統核心" onclick="mobilePageScrollToAnchor(this)" >作業系統核心</a></li><li><a href="#stack堆疊-儲存區域變數的記憶體區塊" onclick="mobilePageScrollToAnchor(this)" >stack(堆疊) 儲存區域變數的記憶體區塊</a></li><li><a href="#heap堆積-儲存動態配置變數的記憶體區塊" onclick="mobilePageScrollToAnchor(this)" >Heap(堆積) 儲存動態配置變數的記憶體區塊</a></li><li><a href="#bss-segmen-記憶體區塊" onclick="mobilePageScrollToAnchor(this)" >bss segmen 記憶體區塊</a></li><li><a href="#data-segmen-記憶體區塊" onclick="mobilePageScrollToAnchor(this)" >data segmen 記憶體區塊</a></li><li><a href="#code-segment-記憶體區塊" onclick="mobilePageScrollToAnchor(this)" >code segment 記憶體區塊</a></li></ul></li><li><a href="#變數記憶體位址" onclick="mobilePageScrollToAnchor(this)" >變數記憶體位址</a></li><li><a href="#stack" onclick="mobilePageScrollToAnchor(this)" >Stack</a></li><li><a href="#heap" onclick="mobilePageScrollToAnchor(this)" >Heap</a></li><li><a href="#尚未使用區域" onclick="mobilePageScrollToAnchor(this)" >尚未使用區域</a></li></ul>
+                <ul><li><a href="#記憶體起始與結束位址" onclick="mobilePageScrollToAnchor(this)" >記憶體起始與結束位址。</a></li><li><a href="#記憶體區段" onclick="mobilePageScrollToAnchor(this)" >記憶體區段</a><ul><li><a href="#作業系統核心" onclick="mobilePageScrollToAnchor(this)" >作業系統核心</a></li><li><a href="#stack堆疊-儲存區域變數的記憶體區塊" onclick="mobilePageScrollToAnchor(this)" >stack(堆疊) 儲存區域變數的記憶體區塊</a></li><li><a href="#heap堆積-儲存動態配置變數的記憶體區塊" onclick="mobilePageScrollToAnchor(this)" >Heap(堆積) 儲存動態配置變數的記憶體區塊</a></li><li><a href="#bss-segment-記憶體區塊" onclick="mobilePageScrollToAnchor(this)" >bss segment 記憶體區塊</a></li><li><a href="#data-segment-記憶體區塊" onclick="mobilePageScrollToAnchor(this)" >data segment 記憶體區塊</a></li><li><a href="#code-segment-記憶體區塊" onclick="mobilePageScrollToAnchor(this)" >code segment 記憶體區塊</a></li></ul></li><li><a href="#變數記憶體位址" onclick="mobilePageScrollToAnchor(this)" >變數記憶體位址</a></li><li><a href="#stack" onclick="mobilePageScrollToAnchor(this)" >Stack</a></li><li><a href="#heap" onclick="mobilePageScrollToAnchor(this)" >Heap</a></li><li><a href="#尚未使用區域" onclick="mobilePageScrollToAnchor(this)" >尚未使用區域</a></li></ul>
 
             
         </li>
@@ -709,6 +709,20 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/class/member_class" onclick="pageScrollToTop(this)"> 成員變數是類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/static_class" onclick="pageScrollToTop(this)"> 靜態類別變數與函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/class/copy_constructor" onclick="pageScrollToTop(this)"> 拷貝函式</a>
         
             
@@ -724,6 +738,13 @@
 	
 	<li class="">
     	<a href="/pages/c/class/init_list" onclick="pageScrollToTop(this)"> 建構子初始化列表</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/operator+" onclick="pageScrollToTop(this)"> operator+()</a>
         
             
         </li></ul></li>
@@ -935,12 +956,12 @@
       <td>動態配置記憶體</td>
     </tr>
     <tr>
-      <td>bss segmen</td>
+      <td>bss segment</td>
       <td></td>
       <td>未初始化全域變數, 靜態變數</td>
     </tr>
     <tr>
-      <td>data segmen</td>
+      <td>data segment</td>
       <td></td>
       <td>已初始化全域變數, 靜態變數</td>
     </tr>
@@ -965,11 +986,11 @@
 
 <p>儲存由動態配置(new與malloc)產生的變數，記憶體大小取決電腦實體記憶體大小(可能8GB或更大)，記憶體位址成長的方向是向上成長。</p>
 
-<h4 id="bss-segmen-記憶體區塊">bss segmen 記憶體區塊</h4>
+<h4 id="bss-segment-記憶體區塊">bss segment 記憶體區塊</h4>
 
 <p>儲存未初始化全域變數與靜態變數。</p>
 
-<h4 id="data-segmen-記憶體區塊">data segmen 記憶體區塊</h4>
+<h4 id="data-segment-記憶體區塊">data segment 記憶體區塊</h4>
 
 <p>儲存已初始化全域變數與靜態變數。</p>
 
@@ -1005,14 +1026,14 @@
 23
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span><span class="k">const</span> <span class="kt">int</span> <span class="n">global_x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>  <span class="c1">// 儲存於 code segment(常數)</span>
-<span class="kt">int</span> <span class="n">global_y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>        <span class="c1">// 儲存於 data segmen(已初始化全域變數）</span>
+<span class="kt">int</span> <span class="n">global_y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>        <span class="c1">// 儲存於 data segment(已初始化全域變數）</span>
 <span class="kt">int</span> <span class="n">global_z</span><span class="p">;</span>            <span class="c1">// 儲存於 bss(未初始全域變數)</span>
 <span class="kt">int</span> <span class="nf">fun1</span><span class="p">(</span><span class="kt">int</span> <span class="n">param1</span><span class="p">)</span> <span class="p">{</span>	 <span class="c1">// 儲存於 stack (函式參數)</span>
 	<span class="k">return</span> <span class="n">param1</span><span class="p">;</span> <span class="c1">// 儲存於 stack (函式傳回值)</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">const</span> <span class="k">static</span> <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// 儲存於 code segment(常數)</span>
-  <span class="k">static</span> <span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>       <span class="c1">// 儲存於 data segmen(已初始化靜態變數）</span>
+  <span class="k">static</span> <span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>       <span class="c1">// 儲存於 data segment(已初始化靜態變數）</span>
   <span class="k">static</span> <span class="kt">int</span> <span class="n">z</span><span class="p">;</span>           <span class="c1">// 儲存於 bss(未初始靜態變數)</span>
   <span class="kt">int</span> <span class="n">w</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>              <span class="c1">// 儲存於 stack (區域變數)</span>
   <span class="n">fun1</span><span class="p">(</span><span class="n">w</span><span class="p">);</span>
@@ -1308,7 +1329,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-10-25 11:15:12 +0800"
+        "time": "2024-10-28 12:43:31 +0800"
     },
     "basePath": "",
     "book": {

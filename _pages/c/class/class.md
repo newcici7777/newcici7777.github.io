@@ -97,6 +97,8 @@ test
 
 ## 類別中的函式自動變為內嵌函式(inline)
 
+- [inline][1]
+
 類別中的函式自動變為內嵌函式，但不是在類別中的函式不會變成內嵌函式。
 
 以下print()是內嵌函式
@@ -139,3 +141,5 @@ int main() {
 }
 {% endhighlight %}
 
+
+[1]: {% link _pages/c/reference/function.md %}#內嵌函式inline
