@@ -159,25 +159,28 @@ english = 75
 chinese = 85
 ```
 
-## 返回值為物件參考
+## 回傳值型態是物件
 
 ```
 student = student + 15;
 ```
+以上的程式碼，是要把運算的結果回傳給型態是Student的物件，所以必須把回傳值型態改成物件的參考。
 
-要把student + 15的結果返回，再設值給student的物件，就必須把函式傳回值改成物件的參考。
+{% highlight c++ linenos %}
+Student& operator+(Student& s, int score) 
+{% endhighlight %}
 
-甚至也可以寫成以下這樣
+運算的過程也可以是很多數字的相加，不變的是，要把運算的結果回傳給型態是Student的物件。
 
 ```
 student = student + 15 + 5 + 5;
 ```
-以上的分解如下
+以上的運算過程，函式的呼叫如下
 
 ```
 student = (((student + 15) + 5) + 5);
 ```
-每一個括號返回的結果是物件的參考，+加號左邊的參數是operator+()第一個參數，+加號右邊是operator+()第二個參數。
+每一個括號就有一個回傳值，+加號左邊的參數是operator+()第一個參數，+加號右邊是operator+()第二個參數。
 
 再次分解如下
 
@@ -185,7 +188,7 @@ student = (((student + 15) + 5) + 5);
 student = operator+(operator+(operator+(student, 15), 5), 5);
 ```
 
-程式的返回值改寫如下
+程式的回傳值型態改寫如下
 
 {% highlight c++ linenos %}
 #include <iostream>

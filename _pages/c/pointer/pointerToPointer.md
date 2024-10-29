@@ -152,5 +152,5 @@ After p address= 0x60000000c010,After p value = 10
 outside pointer address = 0x60000000c010，outside pointer value = 10
 ```
 
-[1]: {% link _pages/c/pointer/pointerParam.md %}#引數-argument
+[1]: {% link _pages/c/basic/param.md %}
 [2]: {% link _pages/c/reference/refToPointer.md %}#參考指向指標與new

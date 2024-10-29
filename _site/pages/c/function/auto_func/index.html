@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>函式指標 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>auto與函式 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -165,6 +165,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/basic/param" onclick="pageScrollToTop(this)"> 參數與引數</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/basic/scope" onclick="pageScrollToTop(this)"> 變數可見範圍與生命週期</a>
         
             
@@ -203,13 +210,6 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/pointerParam" onclick="pageScrollToTop(this)"> 函式參數為指標</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
     	<a href="/pages/c/pointer/pointerConst" onclick="pageScrollToTop(this)"> const與指標</a>
         
             
@@ -233,16 +233,6 @@
 	<li class="">
     	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標位址是無效內容</a>
         
-            
-        </li>
-	
-	
-	<li class="active">
-    	<a href="/pages/c/pointer/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
-        
-            
-                <ul><li><a href="#函式資料型態" onclick="mobilePageScrollToAnchor(this)" >函式資料型態</a></li><li><a href="#宣告函式指標" onclick="mobilePageScrollToAnchor(this)" >宣告函式指標</a></li><li><a href="#typedef-自定義函式指標資料型態" onclick="mobilePageScrollToAnchor(this)" >typedef 自定義函式指標資料型態</a></li><li><a href="#函式參數是函式指標" onclick="mobilePageScrollToAnchor(this)" >函式參數是函式指標</a></li><li><a href="#函式參數是typedef自定義函式指標資料型態" onclick="mobilePageScrollToAnchor(this)" >函式參數是typedef，自定義函式指標資料型態</a></li><li><a href="#函式指標應用" onclick="mobilePageScrollToAnchor(this)" >函式指標應用</a></li></ul>
-
             
         </li>
 	
@@ -435,20 +425,6 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/reference/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
-    	<a href="/pages/c/reference/callByRef" onclick="pageScrollToTop(this)"> 傳參考</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
     	<a href="/pages/c/reference/refToPointer" onclick="pageScrollToTop(this)"> 參考指向指標</a>
         
             
@@ -477,13 +453,6 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/reference/func_return_ref" onclick="pageScrollToTop(this)"> 函式傳回值是參考</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
     	<a href="/pages/c/reference/l_ref_func" onclick="pageScrollToTop(this)"> 等號左邊的函式</a>
         
             
@@ -494,7 +463,73 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/reference/function" onclick="pageScrollToTop(this)"> 函式</a>
+    	<a href="/pages/c/function/func_param_pointer" onclick="pageScrollToTop(this)"> 函式參數為指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/callByRef" onclick="pageScrollToTop(this)"> 函式傳參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_return_ref" onclick="pageScrollToTop(this)"> 函式傳回值是參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_overload" onclick="pageScrollToTop(this)"> 函式多載</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_inline" onclick="pageScrollToTop(this)"> 內嵌函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_default_param" onclick="pageScrollToTop(this)"> 函式參數預設值</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="active">
+    	<a href="/pages/c/function/auto_func" onclick="pageScrollToTop(this)"> auto與函式</a>
+        
+            
+                <ul><li><a href="#自動推導函式回傳值類型" onclick="mobilePageScrollToAnchor(this)" >自動推導函式回傳值類型</a></li><li><a href="#自動推導函式指標類型" onclick="mobilePageScrollToAnchor(this)" >自動推導函式指標類型</a></li><li><a href="#簡化函式指標" onclick="mobilePageScrollToAnchor(this)" >簡化函式指標</a><ul><li><a href="#未簡化前" onclick="mobilePageScrollToAnchor(this)" >未簡化前</a></li><li><a href="#使用auto簡化函式指標" onclick="mobilePageScrollToAnchor(this)" >使用auto簡化函式指標</a></li><li><a href="#以下程式碼未簡化前" onclick="mobilePageScrollToAnchor(this)" >以下程式碼未簡化前</a></li><li><a href="#使用auto簡化函式指標-1" onclick="mobilePageScrollToAnchor(this)" >使用auto簡化函式指標</a></li></ul></li></ul>
+
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/lambda" onclick="pageScrollToTop(this)"> lambda</a>
         
             
         </li></ul></li>
@@ -709,6 +744,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/class/init_list" onclick="pageScrollToTop(this)"> 建構子初始化列表</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/class/member_class" onclick="pageScrollToTop(this)"> 成員變數是類別</a>
         
             
@@ -737,7 +779,14 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/class/init_list" onclick="pageScrollToTop(this)"> 建構子初始化列表</a>
+    	<a href="/pages/c/class/operator_assign" onclick="pageScrollToTop(this)"> operator=()</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/operator_brackets" onclick="pageScrollToTop(this)"> operator()</a>
         
             
         </li>
@@ -745,6 +794,13 @@
 	
 	<li class="">
     	<a href="/pages/c/class/operator+" onclick="pageScrollToTop(this)"> operator+()</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/operator_equal" onclick="pageScrollToTop(this)"> operator==()</a>
         
             
         </li></ul></li>
@@ -858,7 +914,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >函式指標</a>
+                            <a href="." >auto與函式</a>
                         
                     </h1>
                 </div>
@@ -871,119 +927,24 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/pointer/functionPointer">函式指標</h1>
+                        <h1 id="/pages/c/function/auto_func">auto與函式</h1>
                     
 
-                    <p>函式指標指向函式的記憶體位址，通過函式指標使用函式。</p>
+                    <p>Prerequisites:</p>
 
-<h3 id="函式資料型態">函式資料型態</h3>
+<p><a href="/pages/c/function/functionPointer/">函式指標</a></p>
 
-<p>函式資料型態是由函式的<code class="language-plaintext highlighter-rouge">傳回值資料型態/參數資料型態/參數的數量</code>所組成。</p>
+<p>auto的中文意思為自動推導類型，使用時不用特別寫準確的類型，編譯器會自動推導。</p>
 
-<p>如果多個函式的<code class="language-plaintext highlighter-rouge">傳回值資料型態/參數資料型態/參數的數量</code>都一樣，代表這些函式是同一個資料型態。</p>
+<h2 id="自動推導函式回傳值類型">自動推導函式回傳值類型</h2>
 
-<p>以下三個函式都是相同資料型態，傳回值資料型態/參數資料型態/參數的數量都一樣。</p>
-
-<ul>
-  <li>int func1(int code, string msg);</li>
-  <li>int func2(int age, string name);</li>
-  <li>int func3(int userId, string userName);</li>
-</ul>
-
-<p>以下三個函式都是相同資料型態，傳回值資料型態/參數資料型態/參數的數量都一樣。</p>
-
-<ul>
-  <li>bool func4(string param1);</li>
-  <li>bool func5(string msg);</li>
-  <li>bool func6(string name);</li>
-</ul>
-
-<p>以下二個函式不是相同資料型態。</p>
-
-<ul>
-  <li>int func1(int code, string msg);</li>
-  <li>bool func4(string param1);</li>
-</ul>
-
-<p>以下三個函式的函式資料型態為 int (*pf1)(int,string)，其中pf1為函式指標的變數名，可以為任意名稱，名稱前面要有星號*，要用括號()包起來，int為傳回值資料型態，(int,string)為函式參數資料型態與參數數量。</p>
-
-<ul>
-  <li>int func1(int code, string msg);</li>
-  <li>int func2(int age, string name);</li>
-  <li>int func3(int userId, string userName);</li>
-</ul>
-
-<p>以下三個函式的函式資料型態為 bool (*pf2)(string)，其中pf2為函式指標的變數名，可以為任意名稱。</p>
-
-<ul>
-  <li>bool func4(string param1);</li>
-  <li>bool func5(string msg);</li>
-  <li>bool func6(string name);</li>
-</ul>
-
-<h3 id="宣告函式指標">宣告函式指標</h3>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Err code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">", msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">code</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">pf1</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="p">);</span> <span class="c1">//宣告函式指標變數pf1</span>
-    <span class="n">pf1</span> <span class="o">=</span> <span class="n">func1</span><span class="p">;</span> <span class="c1">//將func1函式設給pf1函式指標變數</span>
-    <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s">"Page not found."</span><span class="p">);</span> <span class="c1">//使用函式指標pf1呼叫函式</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>第1行,宣告函式。</p>
-
-<p>第6行,宣告函式指標變數pf1。</p>
-
-<p>第7行,將func1函式設給pf1函式指標變數。</p>
-
-<p>第8行,使用函式指標pf1呼叫函式。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-Err code = 404, msg = Page not found.
-</code></pre></div></div>
-
-<h3 id="typedef-自定義函式指標資料型態">typedef 自定義函式指標資料型態</h3>
+<p>注意！這邊的函式名後面有括號()，auto是函式回傳值類型。</p>
 
 <p>語法</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>typedef 回傳值(*自定義資料型態名)(參數1,參數2,參數3 ...);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>auto 變數 = 函式名();
+auto var = func();
 </code></pre></div></div>
 
-<p>將前一個宣告函式指標的程式碼</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">pf1</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="p">);</span> 
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>改成下方的程式碼，前面添加typedef，並把pf1改成Func1，Func1可以為任意名字，並放在程式的開頭。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="k">typedef</span> <span class="nf">int</span> <span class="p">(</span><span class="o">*</span><span class="n">Func1</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>修改完的程式碼如下</p>
-
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -995,110 +956,37 @@ Err code = 404, msg = Page not found.
 8
 9
 10
-11
-12
-13
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="nf">int</span> <span class="p">(</span><span class="o">*</span><span class="n">Func1</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="p">);</span>
-<span class="kt">int</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Err code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">", msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">code</span><span class="p">;</span>
+</pre></td><td class="code"><pre><span class="c1">//宣告一個函式為func()，回傳值為string類型</span>
+<span class="n">string</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s">"test"</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Func1</span> <span class="n">pf1</span><span class="p">;</span> <span class="c1">//宣告函式指標變數pf1</span>
-    <span class="n">pf1</span> <span class="o">=</span> <span class="n">func1</span><span class="p">;</span> <span class="c1">//函式指標變數pf1設定函式</span>
-    <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s">"Page not found."</span><span class="p">);</span><span class="c1">//使用函式指標pf1呼叫函式</span>
+	<span class="c1">//使用函式的回傳值，由auto自動推導函式的回傳的類型string</span>
+    <span class="k">auto</span> <span class="n">var</span> <span class="o">=</span> <span class="n">func</span><span class="p">();</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"var = "</span> <span class="o">&lt;&lt;</span> <span class="n">var</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第3行,宣告自定義函式指標資料型態Func1。</p>
-
-<p>第9行,宣告指標變數pf1為Func1資料型態(自定義資料型態)。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-Err code = 404, msg = Page not found.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>test
 </code></pre></div></div>
 
-<h3 id="函式參數是函式指標">函式參數是函式指標</h3>
+<h2 id="自動推導函式指標類型">自動推導函式指標類型</h2>
 
-<p>宣告函式print404Msg()，第一個參數為函式指標，函式的資料型態是傳回值為int，函式指標名為pf1，2個參數資料型態分別為int跟string。</p>
+<p>函數指針設計複雜，可以使用auto簡化。</p>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">print404Msg</span><span class="p">(</span><span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">pf1</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="p">),</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p>注意！這邊的函式名後面沒有括號，auto指的是函式指標類型。</p>
 
-<p>第1行,宣告函式print404Msg()，第一個參數為函式指標，第二個參數為string資料型態。</p>
+<p>語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>auto 函式指標名 = 函式名;
+auto f = func;
 
-<p>第2行,使用函式指標pf1呼叫函式，並把404整數與msg的參數傳進函式。</p>
-
-<p>完整程式</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">void</span> <span class="nf">print404Msg</span><span class="p">(</span><span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">pf1</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="p">),</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="kt">int</span> <span class="n">func1</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Err code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">", msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">code</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">print404Msg</span><span class="p">(</span><span class="n">func1</span><span class="p">,</span> <span class="s">"Page not Found"</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-Err code = 404, msg = Page not Found
+呼叫函式
+f();
 </code></pre></div></div>
 
-<h3 id="函式參數是typedef自定義函式指標資料型態">函式參數是typedef，自定義函式指標資料型態</h3>
-
-<p>也可以使用typedef，自定義函式指標資料型態。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="code"><pre><span class="k">typedef</span> <span class="nf">int</span> <span class="p">(</span><span class="o">*</span><span class="n">Func1</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="p">);</span>
-<span class="kt">void</span> <span class="nf">print404Msg</span><span class="p">(</span><span class="n">Func1</span> <span class="n">pf1</span><span class="p">,</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>第1行,宣告自定義函式指標資料型態Func1。</p>
-
-<p>第2行,宣告函式print404Msg()，第一個參數資料型態為Func1(自定義資料型態)，第二個參數資料型態為string</p>
-
-<p>第3行,使用函式指標呼叫函式，並把第二個參數msg傳入。</p>
-
-<p>完整程式</p>
+<p>完整程式碼</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1112,101 +1000,28 @@ Err code = 404, msg = Page not Found
 9
 10
 11
-12
-13
-14
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="nf">int</span> <span class="p">(</span><span class="o">*</span><span class="n">Func1</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="p">);</span>
-<span class="kt">void</span> <span class="nf">print404Msg</span><span class="p">(</span><span class="n">Func1</span> <span class="n">pf1</span><span class="p">,</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="kt">int</span> <span class="n">func1</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Err code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">", msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">code</span><span class="p">;</span>
+</pre></td><td class="code"><pre><span class="n">string</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"abcdef"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="s">"test"</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">print404Msg</span><span class="p">(</span><span class="n">func1</span><span class="p">,</span> <span class="s">"Page not Found"</span><span class="p">);</span>
+	<span class="c1">//注意!函式func後面沒有括號</span>
+    <span class="k">auto</span> <span class="n">f</span> <span class="o">=</span> <span class="n">func</span><span class="p">;</span>
+    <span class="c1">//呼叫函式</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">f</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="函式指標應用">函式指標應用</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>abcdef
+</code></pre></div></div>
 
-<p>自定義二個函式指標資料型態</p>
+<h2 id="簡化函式指標">簡化函式指標</h2>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre><span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">Success</span><span class="p">)(</span><span class="kt">char</span><span class="o">*</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">Failure</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p>參數很多的函式，可用auto簡化函式指標。</p>
 
-<p>第1行,宣告自定義函式資料型態，函式的資料型態是傳回值為void，函式指標名為Success，參數資料型態char*指標。</p>
-
-<p>第2行,宣告自定義函式資料型態，函式的資料型態是傳回值為void，函式指標名為Failure，第1個參數資料型態int，第2個參數資料型態char*指標。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">httpOk</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"成功，結果:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="kt">void</span> <span class="n">httpFailure</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"失敗%d，原因:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>第1行,宣告函式，傳回值與參數資料型態都符合自定義函式資料型態Success</p>
-
-<p>第4行,宣告函式，傳回值與參數資料型態都符合自定義函式資料型態Failure</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">http</span><span class="p">(</span><span class="kt">int</span> <span class="n">res</span><span class="p">,</span> <span class="n">Success</span> <span class="n">success</span><span class="p">,</span> <span class="n">Failure</span> <span class="n">failure</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">res</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">success</span><span class="p">(</span><span class="s">"取得資料成功"</span><span class="p">);</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="n">failure</span><span class="p">(</span><span class="mi">505</span><span class="p">,</span><span class="s">"網路連線有問題"</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">http</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">httpOk</span><span class="p">,</span><span class="n">httpFailure</span><span class="p">);</span>
-    <span class="n">http</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">httpOk</span><span class="p">,</span><span class="n">httpFailure</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>第1行,宣告函式，第1個參數資料型態int，第2個參數自定義函式指標資料型態Success，第3個參數自定義函式指標資料型態Failure。</p>
-
-<p>第3行,使用函式指標Success呼叫函式。</p>
-
-<p>第5行,使用函式指標Failure呼叫函式，並傳入參數。</p>
-
-<p>第9行,呼叫http函式，並把函式傳回值參數與自定義Success函式資料型態一樣的httpOk函式傳入。</p>
-
-<p>第10行,呼叫http函式，並把函式傳回值參數與自定義Failure函式資料型態一樣的httpFailure函式傳入。</p>
-
-<p>完整程式</p>
+<h3 id="未簡化前">未簡化前</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1227,38 +1042,131 @@ Err code = 404, msg = Page not Found
 16
 17
 18
-19
-20
-21
-22
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">Success</span><span class="p">)(</span><span class="kt">char</span><span class="o">*</span><span class="p">);</span>
-<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">Failure</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span><span class="p">);</span>
-<span class="kt">void</span> <span class="nf">httpOk</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"成功，結果:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="kt">void</span> <span class="n">httpFailure</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"失敗%d，原因:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="kt">void</span> <span class="n">http</span><span class="p">(</span><span class="kt">int</span> <span class="n">res</span><span class="p">,</span> <span class="n">Success</span> <span class="n">success</span><span class="p">,</span> <span class="n">Failure</span> <span class="n">failure</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">res</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">success</span><span class="p">(</span><span class="s">"取得資料成功"</span><span class="p">);</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="n">failure</span><span class="p">(</span><span class="mi">505</span><span class="p">,</span><span class="s">"網路連線有問題"</span><span class="p">);</span>
-    <span class="p">}</span>
+</pre></td><td class="code"><pre><span class="c1">//定義一個函式名為println，回傳值為int，</span>
+<span class="c1">//參數有二個，分別為char指標型別的參數msg1與msg2</span>
+<span class="kt">int</span> <span class="nf">println</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">msg1</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">msg2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"印出msg1:%s</span><span class="se">\n</span><span class="s">msg2:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">msg1</span><span class="p">,</span><span class="n">msg2</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">http</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">httpOk</span><span class="p">,</span><span class="n">httpFailure</span><span class="p">);</span>
-    <span class="n">http</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">httpOk</span><span class="p">,</span><span class="n">httpFailure</span><span class="p">);</span>
+	<span class="c1">//(*funcPtr)宣告函式指標的名稱為funcPtr</span>
+	<span class="c1">//回傳值為int</span>
+	<span class="c1">//(char*,char*)代表參數型別</span>
+	<span class="c1">//實作函式指標的函式是println()的函式</span>
+	<span class="c1">//注意= println後面是沒有括號()</span>
+    <span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">funcPtr</span><span class="p">)(</span><span class="kt">char</span><span class="o">*</span><span class="p">,</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="o">=</span> <span class="n">println</span><span class="p">;</span>
+
+    <span class="c1">//呼叫函式指標，並把參數代入</span>
+    <span class="n">funcPtr</span><span class="p">(</span><span class="s">"test"</span><span class="p">,</span><span class="s">"c++"</span><span class="p">);</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-成功，結果:取得資料成功
-失敗505，原因:網路連線有問題
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>印出msg1:test
+msg2:c++
+</code></pre></div></div>
+
+<h3 id="使用auto簡化函式指標">使用auto簡化函式指標</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">println</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">msg1</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">msg2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"印出msg1:%s</span><span class="se">\n</span><span class="s">msg2:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">msg1</span><span class="p">,</span><span class="n">msg2</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">auto</span> <span class="n">func</span> <span class="o">=</span> <span class="n">println</span><span class="p">;</span>
+    <span class="n">func</span><span class="p">(</span><span class="s">"test"</span><span class="p">,</span><span class="s">"c++"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="以下程式碼未簡化前">以下程式碼未簡化前</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="kt">void</span> <span class="nf">say</span><span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)(</span><span class="kt">char</span><span class="o">*</span><span class="p">),</span><span class="kt">char</span> <span class="o">*</span><span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">p</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">println</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"印出結果:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">msg</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">void</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span> <span class="o">=</span> <span class="n">println</span><span class="p">;</span>
+    <span class="n">say</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="s">"hello"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>印出結果:hello
+</code></pre></div></div>
+
+<h3 id="使用auto簡化函式指標-1">使用auto簡化函式指標</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="code"><pre><span class="c1">//定義一個函式指標的類型為FuncPtr，回傳值為void的類型，參數是char指針</span>
+<span class="k">typedef</span> <span class="nf">void</span><span class="p">(</span><span class="o">*</span><span class="n">FuncPtr</span><span class="p">)(</span><span class="kt">char</span><span class="o">*</span><span class="p">);</span>
+
+<span class="c1">//參數為FuncPtr類型(回傳值為void的類型，參數是char指針)</span>
+<span class="kt">void</span> <span class="nf">say</span><span class="p">(</span><span class="n">FuncPtr</span> <span class="n">func1</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//呼叫函式指標</span>
+    <span class="n">func1</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">printMsg</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"msg:"</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">auto</span> <span class="n">say_fun</span> <span class="o">=</span> <span class="n">say</span><span class="p">;</span>
+    <span class="k">auto</span> <span class="n">print_fun</span> <span class="o">=</span> <span class="n">printMsg</span><span class="p">;</span>
+    <span class="c1">//注意print_fun後面沒有括號()</span>
+    <span class="n">say_fun</span><span class="p">(</span><span class="n">print_fun</span><span class="p">,</span><span class="s">"test"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>msg:test
 </code></pre></div></div>
 
 </section>
@@ -1324,14 +1232,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/pointer/wildPointer" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 指標位址是無效內容">
+                        <a href="/pages/c/function/functionPointer" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 函式指標">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/pointer/pointerToPointer" class="navigation navigation-next navigation-unique" aria-label="Next page: 指標的指標">
+                        <a href="/pages/c/function/lambda" class="navigation navigation-next navigation-unique" aria-label="Next page: lambda">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1349,11 +1257,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "陣列",
+            "title": "lambda",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/array/array.md",
-            "ref": "_pages/c/array/array.md",
+            "path": "_pages/c/function/lambda.md",
+            "ref": "_pages/c/function/lambda.md",
             "articles": []
         },
         
@@ -1445,13 +1353,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/pointer/functionPointer.md",
-        "mtime": "2024-06-03 00:00:00 +0800",
+        "path": "_pages/c/function/auto_func.md",
+        "mtime": "2024-10-29 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-10-28 12:43:31 +0800"
+        "time": "2024-10-29 16:06:26 +0800"
     },
     "basePath": "",
     "book": {

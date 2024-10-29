@@ -142,4 +142,4 @@ int main() {
 {% endhighlight %}
 
 
-[1]: {% link _pages/c/reference/function.md %}#內嵌函式inline
+[1]: {% link _pages/c/function/func_inline.md %}

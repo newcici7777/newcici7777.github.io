@@ -137,5 +137,5 @@ y = 11
 
 [1]: {% link _pages/c/reference/l_r_value.md %}
 [2]: {% link _pages/c/reference/l_r_ref.md %}
-[3]: {% link _pages/c/pointer/pointerParam.md %}#引數-argument
-[4]: {% link _pages/c/reference/func_return_ref.md %}
+[3]: {% link _pages/c/basic/param.md %}
+[4]: {% link _pages/c/function/func_return_ref.md %}

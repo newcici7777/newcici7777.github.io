@@ -4,6 +4,8 @@ date: 2024-10-27
 keywords: c++, Static Class Data 
 ---
 
+Prerequisites:
+
 [記憶體配置][1]
 
 靜態類別變數與靜態類別函式不屬於物件，與物件是分開，靜態類別變數與靜態類別函式存放在靜態bss與data segment

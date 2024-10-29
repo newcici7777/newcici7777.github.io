@@ -54,4 +54,4 @@ int main() {
 r = 1000
 ```
 
-[1]: {% link _pages/c/pointer/pointerParam.md %}#引數-argument
+[1]: {% link _pages/c/basic/param.md %}

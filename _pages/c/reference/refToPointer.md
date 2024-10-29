@@ -201,5 +201,5 @@ outside pointer address = 0x600000004010，outside pointer value = 10
 ```
 
 [1]: {% link _pages/c/pointer/pointerToPointer.md %}#函式參數為指標的指標
-[2]: {% link _pages/c/pointer/pointerParam.md %}#引數-argument
+[2]: {% link _pages/c/basic/param.md %}
 [3]: {% link _pages/c/pointer/pointerToPointer.md %}#指標的指標與new

@@ -74,4 +74,4 @@ ref = 65
 [1]: {% link _pages/c/reference/l_r_value.md %}
 [2]: {% link _pages/c/reference/l_r_ref.md %}
 [3]: {% link _pages/c/reference/l_r_ref.md %}#引數與參數r-value參考資料型態不同
-[4]: {% link _pages/c/pointer/pointerParam.md %}#引數-argument
+[4]: {% link _pages/c/basic/param.md %}

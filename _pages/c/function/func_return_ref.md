@@ -51,5 +51,5 @@ y = 11
 ```
 
 
-[1]: {% link _pages/c/reference/callByRef.md %}
-[2]: {% link _pages/c/reference/callByValue.md %}#函式傳回值是值
+[1]: {% link _pages/c/function/callByRef.md %}
+[2]: {% link _pages/c/function/callByValue.md %}#函式傳回值是值

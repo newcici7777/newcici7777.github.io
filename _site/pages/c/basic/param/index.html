@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>函式傳回值是參考 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>參數與引數 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -164,6 +164,16 @@
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 基本知識 </a><ul>
 	
 	
+	<li class="active">
+    	<a href="/pages/c/basic/param" onclick="pageScrollToTop(this)"> 參數與引數</a>
+        
+            
+                <ul><li><a href="#引數-argument" onclick="mobilePageScrollToAnchor(this)" >引數 Argument</a></li><li><a href="#參數-parameter" onclick="mobilePageScrollToAnchor(this)" >參數 Parameter</a></li></ul>
+
+            
+        </li>
+	
+	
 	<li class="">
     	<a href="/pages/c/basic/scope" onclick="pageScrollToTop(this)"> 變數可見範圍與生命週期</a>
         
@@ -203,13 +213,6 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/pointer/pointerParam" onclick="pageScrollToTop(this)"> 函式參數為指標</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
     	<a href="/pages/c/pointer/pointerConst" onclick="pageScrollToTop(this)"> const與指標</a>
         
             
@@ -232,13 +235,6 @@
 	
 	<li class="">
     	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標位址是無效內容</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
-    	<a href="/pages/c/pointer/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
         
             
         </li>
@@ -432,20 +428,6 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/reference/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
-    	<a href="/pages/c/reference/callByRef" onclick="pageScrollToTop(this)"> 傳參考</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
     	<a href="/pages/c/reference/refToPointer" onclick="pageScrollToTop(this)"> 參考指向指標</a>
         
             
@@ -473,16 +455,6 @@
         </li>
 	
 	
-	<li class="active">
-    	<a href="/pages/c/reference/func_return_ref" onclick="pageScrollToTop(this)"> 函式傳回值是參考</a>
-        
-            
-                
-
-            
-        </li>
-	
-	
 	<li class="">
     	<a href="/pages/c/reference/l_ref_func" onclick="pageScrollToTop(this)"> 等號左邊的函式</a>
         
@@ -494,7 +466,70 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/reference/function" onclick="pageScrollToTop(this)"> 函式</a>
+    	<a href="/pages/c/function/func_param_pointer" onclick="pageScrollToTop(this)"> 函式參數為指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/callByRef" onclick="pageScrollToTop(this)"> 函式傳參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_return_ref" onclick="pageScrollToTop(this)"> 函式傳回值是參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_overload" onclick="pageScrollToTop(this)"> 函式多載</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_inline" onclick="pageScrollToTop(this)"> 內嵌函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_default_param" onclick="pageScrollToTop(this)"> 函式參數預設值</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/auto_func" onclick="pageScrollToTop(this)"> auto與函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/lambda" onclick="pageScrollToTop(this)"> lambda</a>
         
             
         </li></ul></li>
@@ -709,6 +744,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/class/init_list" onclick="pageScrollToTop(this)"> 建構子初始化列表</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/class/member_class" onclick="pageScrollToTop(this)"> 成員變數是類別</a>
         
             
@@ -737,7 +779,14 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/class/init_list" onclick="pageScrollToTop(this)"> 建構子初始化列表</a>
+    	<a href="/pages/c/class/operator_assign" onclick="pageScrollToTop(this)"> operator=()</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/operator_brackets" onclick="pageScrollToTop(this)"> operator()</a>
         
             
         </li>
@@ -745,6 +794,13 @@
 	
 	<li class="">
     	<a href="/pages/c/class/operator+" onclick="pageScrollToTop(this)"> operator+()</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/operator_equal" onclick="pageScrollToTop(this)"> operator==()</a>
         
             
         </li></ul></li>
@@ -858,7 +914,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >函式傳回值是參考</a>
+                            <a href="." >參數與引數</a>
                         
                     </h1>
                 </div>
@@ -871,38 +927,16 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/reference/func_return_ref">函式傳回值是參考</h1>
+                        <h1 id="/pages/c/basic/param">參數與引數</h1>
                     
 
                     <p>Prerequisites:</p>
 
-<ul>
-  <li>
-    <p><a href="/pages/c/reference/callByRef/">傳參考</a></p>
-  </li>
-  <li>
-    <p><a href="/pages/c/reference/callByValue/#函式傳回值是值">函式傳回值是值</a></p>
-  </li>
-</ul>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%8F%83%E6%95%B8_(%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88)">維基參數和引數</a></p>
 
-<p>若傳回值是參考別名，將不會拷貝傳回值到暫存器或stack。</p>
+<h2 id="引數-argument">引數 Argument</h2>
 
-<p>函式宣告語法</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>資料型態&amp; 函式名(資料型態&amp; 參考別名)
-int&amp; getValue(int&amp; z);
-</code></pre></div></div>
-
-<p>函式呼叫方式</p>
-
-<p>y是原始變數的參考別名。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>資料型態&amp; 參考別名 = 函式(原始變數);
-int&amp; y = getValue(原始變數);
-</code></pre></div></div>
-
-<p>以下程式碼z與y都是x(原始變數)的參考別名，z與y與x三者都指向相同記憶體位址。</p>
-
-<p>完整程式碼</p>
+<p>傳給函式的變數。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -911,28 +945,30 @@ int&amp; y = getValue(原始變數);
 4
 5
 6
-7
-8
-9
-10
-11
-</pre></td><td class="code"><pre><span class="kt">int</span><span class="o">&amp;</span> <span class="n">getValue</span><span class="p">(</span><span class="kt">int</span><span class="o">&amp;</span> <span class="n">z</span><span class="p">){</span>
-    <span class="n">z</span><span class="o">++</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">z</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="kt">int</span><span class="o">&amp;</span> <span class="n">y</span> <span class="o">=</span> <span class="n">getValue</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"x = "</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"y = "</span> <span class="o">&lt;&lt;</span> <span class="n">y</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">var1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="c1">//將var1傳到func1()函式中，而var1就是引數Argument</span>
+    <span class="n">func1</span><span class="p">(</span><span class="n">var1</span><span class="p">);</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x = 11
-y = 11
-</code></pre></div></div>
+<h2 id="參數-parameter">參數 Parameter</h2>
+
+<p>函式接收到的變數。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="c1">//函式接收到來自外面傳進來的變數，變數名param1，而param1就是參數</span>
+<span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span> <span class="n">param1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"param1="</span> <span class="o">&lt;&lt;</span> <span class="n">param1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 </section>
             </div><div class="search-results">
@@ -997,14 +1033,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/reference/constRef" class="navigation navigation-prev navigation-unique" aria-label="Previous page: const與參考">
+                        <a href="/pages/c/basic/typedef" class="navigation navigation-prev navigation-unique" aria-label="Previous page: typedef 型別定義">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/reference/l_ref_func" class="navigation navigation-next navigation-unique" aria-label="Next page: 等號左邊的函式">
+                        <a href="/pages/c/basic/scope" class="navigation navigation-next navigation-unique" aria-label="Next page: 變數可見範圍與生命週期">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1022,11 +1058,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "等號左邊的函式",
+            "title": "類別與物件",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/reference/l_ref_func.md",
-            "ref": "_pages/c/reference/l_ref_func.md",
+            "path": "_pages/c/class/class.md",
+            "ref": "_pages/c/class/class.md",
             "articles": []
         },
         
@@ -1118,13 +1154,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/reference/func_return_ref.md",
-        "mtime": "2024-07-02 00:00:00 +0800",
+        "path": "_pages/c/basic/param.md",
+        "mtime": "2024-10-14 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-10-28 12:43:31 +0800"
+        "time": "2024-10-29 16:06:26 +0800"
     },
     "basePath": "",
     "book": {
