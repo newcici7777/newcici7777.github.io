@@ -71,12 +71,14 @@ int main() {
 Err code = 404, msg = Page not found.
 ```
 
-### typedef 自定義函式指標資料型態
+### typedef函式指標類型別名
+
+- [typedef類型別名][1]
 
 語法
 
 ```
-typedef 回傳值(*自定義資料型態名)(參數1,參數2,參數3 ...);
+typedef 回傳值(*類型別名)(參數1,參數2,參數3 ...);
 ```
 
 將前一個宣告函式指標的程式碼
@@ -90,26 +92,23 @@ typedef int (*Func1)(int,string);
 {% endhighlight %}
 
 修改完的程式碼如下
-
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
+//宣告Func1類型別名
 typedef int (*Func1)(int,string);
 int func1(int code, string msg) {
     cout << "Err code = " << code << ", msg = " << msg << endl;
     return code;
 }
 int main() {
+    //宣告指標變數pf1為Func1類型
     Func1 pf1; //宣告函式指標變數pf1
     pf1 = func1; //函式指標變數pf1設定函式
     pf1(404, "Page not found.");//使用函式指標pf1呼叫函式
     return 0;
 }
 {% endhighlight %}
-
-第3行,宣告自定義函式指標資料型態Func1。
-
-第9行,宣告指標變數pf1為Func1資料型態(自定義資料型態)。
 
 ```
 執行結果
@@ -152,22 +151,19 @@ int main() {
 Err code = 404, msg = Page not Found
 ```
 
-### 函式參數是typedef，自定義函式指標資料型態
+### 函式參數是typedef函式指標類型別名
 
-也可以使用typedef，自定義函式指標資料型態。
+也可以使用typedef函式指標類型另取別名。
 
 {% highlight c++ linenos %}
+//宣告Func1類型別名
 typedef int (*Func1)(int,string);
+//第一個參數資料型態為Func1
 void print404Msg(Func1 pf1, string msg) {
     pf1(404, msg);
 }
 {% endhighlight %}
 
-第1行,宣告自定義函式指標資料型態Func1。
-
-第2行,宣告函式print404Msg()，第一個參數資料型態為Func1(自定義資料型態)，第二個參數資料型態為string
-
-第3行,使用函式指標呼叫函式，並把第二個參數msg傳入。
 
 完整程式
 {% highlight c++ linenos %}
@@ -189,14 +185,15 @@ int main() {
 
 ### 函式指標應用
 
-自定義二個函式指標資料型態
+自定義二個函式指標類型別名
 {% highlight c++ linenos %}
+//宣告類型別名
+//傳回值為void，別名為Success，參數資料型態char*指標
 typedef void (*Success)(char*);
+//傳回值為void，別名為Failure，參數類型分別為int，char*指標
 typedef void (*Failure)(int, char*);
 {% endhighlight %}
-第1行,宣告自定義函式資料型態，函式的資料型態是傳回值為void，函式指標名為Success，參數資料型態char*指標。
 
-第2行,宣告自定義函式資料型態，函式的資料型態是傳回值為void，函式指標名為Failure，第1個參數資料型態int，第2個參數資料型態char*指標。
 
 {% highlight c++ linenos %}
 void httpOk(char* msg) {
@@ -206,9 +203,9 @@ void httpFailure(int code, char* msg) {
     printf("失敗%d，原因:%s\n", code, msg);
 }
 {% endhighlight %}
-第1行,宣告函式，傳回值與參數資料型態都符合自定義函式資料型態Success
+第1行,宣告函式，傳回值與參數資料型態都符合函式指標類型別名Success
 
-第4行,宣告函式，傳回值與參數資料型態都符合自定義函式資料型態Failure
+第4行,宣告函式，傳回值與參數資料型態都符合函式指標類型別名Failure
 
 {% highlight c++ linenos %}
 void http(int res, Success success, Failure failure) {
@@ -224,7 +221,7 @@ int main() {
     return 0;
 }
 {% endhighlight %}
-第1行,宣告函式，第1個參數資料型態int，第2個參數自定義函式指標資料型態Success，第3個參數自定義函式指標資料型態Failure。
+第1行,宣告函式，第1個參數資料型態int，第2個參數函式指標類型別名Success，第3個參數函式指標類型別名Failure。
 
 第3行,使用函式指標Success呼叫函式。
 
@@ -239,6 +236,7 @@ int main() {
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
+//函式指標類型別名
 typedef void (*Success)(char*);
 typedef void (*Failure)(int, char*);
 void httpOk(char* msg) {
@@ -267,3 +265,4 @@ int main() {
 失敗505，原因:網路連線有問題
 ```
 
+[1]: {% link _pages/c/basic/typedef.md %}

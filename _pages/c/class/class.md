@@ -33,66 +33,53 @@ private:
 {% highlight c++ linenos %}
 class Student {
 public:
-    char m_name[50];
-    int m_sex;
-    enum {girl = 0, boy = 1};
-private:
-    char m_address[100];
-public:
-    int m_age = 20;
-private:
-    char m_father[50];
+    string m_name;
 public:
     Student() {
-        memset(m_name,0,sizeof(m_name));
-        
     }
-    void setName(const char* name) {
-        strcpy(this->m_name, name);
-    }
-    void setAge(const int age) {
-        this->m_age = age;
-    }
-    
     void print() {
         cout << "name: " << m_name << endl;
-        cout << "age: " << m_age << endl;
-        cout << "sex: ";
-        if(m_sex == girl)
-            cout << "girl" << endl;
-        else
-            cout << "boy" <<endl;
     }
 };
 int main() {
-    Student student;
-    student.setName("Bill");
-    student.setAge(20);
-    student.m_sex = student.girl;
-    student.print();
+    Student s;
+    s.m_name = "Bill";
+    s.print();
     return 0;
 }
 {% endhighlight %}
-
+```
+name: Bill
+```
 
 ## 類別作為函式參數
 
-使用類別作為函式參數，都是使用參考的方式傳遞。
-
-string是類別，作為函式參數，使用參考的方式傳遞。
+使用類別作為函式參數，都是使用參考&的方式傳遞。
 
 {% highlight c++ linenos %}
-void func1(const string& msg) {
-    cout << msg << endl;
+class Student {
+public:
+    string m_name;
+public:
+    Student() {
+    }
+    void print() {
+        cout << "name: " << m_name << endl;
+    }
+};
+void func1(const Student& s) {
+    cout << s.m_name << endl;
 }
 int main() {
-    func1("test");
+    Student s;
+    s.m_name = "Bill";
+    func1(s);
     return 0;
 }
 {% endhighlight %}
 
 ```
-test
+Bill
 ```
 
 ## 類別中的函式自動變為內嵌函式(inline)
@@ -107,17 +94,16 @@ test
 class Student {
 public:
     char m_name[50];
+    //函式自動變為內嵌函式
     void print() {
-        cout << "name: " << m_name << endl;
-        cout << "age: " << m_age << endl;
-        cout << "sex: ";
-        if(m_sex == girl)
-            cout << "girl" << endl;
-        else
-            cout << "boy" <<endl;
     }
 };
 {% endhighlight %}
+
+
+## 成員函式在類別外定義
+
+- [函式宣告與定義][2]
 
 print()成員函式程式碼在類別之外定義，定義方式如下。
 
@@ -129,8 +115,10 @@ print()成員函式程式碼在類別之外定義，定義方式如下。
 class Student {
 public:
     char m_name[50];
+    //宣告函式
     void print();
 };
+//類別外部定義
 void Student::print() {
     cout << "test" << endl;
 }
@@ -140,6 +128,9 @@ int main() {
     return 0;
 }
 {% endhighlight %}
-
+```
+test
+```
 
 [1]: {% link _pages/c/function/func_inline.md %}
+[2]: {% link _pages/c/function/func_def.md %}

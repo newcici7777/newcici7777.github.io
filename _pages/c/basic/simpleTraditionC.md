@@ -18,7 +18,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |:--:|:--:|:--:|
 |Data|資料|數據|
 |Data Type|資料型態|數據類型|
-|typedef|型別定義|別名|
+|typedef|類型別名|別名|
 |int|整數|整型|
 |char|字元|字符|
 |string|字串|字符串|

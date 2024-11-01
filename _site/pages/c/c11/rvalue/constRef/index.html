@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>l-value與r-value · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>const與參考 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -155,7 +155,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/typedef" onclick="pageScrollToTop(this)"> typedef 型別定義</a>
+    	<a href="/pages/c/basic/typedef" onclick="pageScrollToTop(this)"> typedef類型別名</a>
         
             
         </li></ul></li>
@@ -431,30 +431,6 @@
         </li>
 	
 	
-	<li class="active">
-    	<a href="/pages/c/reference/l_r_value" onclick="pageScrollToTop(this)"> l-value與r-value</a>
-        
-            
-                <ul><li><a href="#l-value" onclick="mobilePageScrollToAnchor(this)" >l-value</a><ul><li><a href="#有定義資料型態int-double-float-char-long-long-的變數可以指派值" onclick="mobilePageScrollToAnchor(this)" >有定義資料型態(int, double, float, char, long long …)的變數，可以<code class="language-plaintext highlighter-rouge">指派值</code>。</a></li><li><a href="#有定義資料型態int-double-float-char-long-long-的指標可以指向記憶體位址" onclick="mobilePageScrollToAnchor(this)" >有定義資料型態(int, double, float, char, long long …)的指標，可以指向記憶體位址。</a></li><li><a href="#可以用取值運算子修改指標指向的記憶體位址的內容" onclick="mobilePageScrollToAnchor(this)" >可以用*取值運算子修改指標指向的記憶體位址的<code class="language-plaintext highlighter-rouge">內容</code></a></li><li><a href="#可以將變數或指標指派給參考" onclick="mobilePageScrollToAnchor(this)" >可以將變數或指標，指派給&amp;參考</a><ul><li><a href="#參考變數" onclick="mobilePageScrollToAnchor(this)" >參考變數</a></li><li><a href="#參考指標" onclick="mobilePageScrollToAnchor(this)" >參考指標</a></li></ul></li><li><a href="#陣列" onclick="mobilePageScrollToAnchor(this)" >陣列</a><ul><li><a href="#陣列元素" onclick="mobilePageScrollToAnchor(this)" >陣列元素</a></li><li><a href="#陣列名--索引" onclick="mobilePageScrollToAnchor(this)" >*(陣列名 + 索引)</a></li><li><a href="#指標指向陣列" onclick="mobilePageScrollToAnchor(this)" >指標指向陣列</a></li><li><a href="#const與指標" onclick="mobilePageScrollToAnchor(this)" >const與指標</a></li></ul></li></ul></li><li><a href="#r-value" onclick="mobilePageScrollToAnchor(this)" >r-value</a><ul><li><a href="#字串常數" onclick="mobilePageScrollToAnchor(this)" >字串常數</a></li><li><a href="#陣列-與-陣列索引" onclick="mobilePageScrollToAnchor(this)" >&amp;陣列 與 &amp;陣列[索引]</a></li><li><a href="#指標--整數0123-" onclick="mobilePageScrollToAnchor(this)" >指標 + 整數(0,1,2,3 …)</a></li></ul></li></ul>
-
-            
-        </li>
-	
-	
-	<li class="">
-    	<a href="/pages/c/reference/l_r_ref" onclick="pageScrollToTop(this)"> l-value參考與r-value參考</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
-    	<a href="/pages/c/reference/constRef" onclick="pageScrollToTop(this)"> const與參考</a>
-        
-            
-        </li>
-	
-	
 	<li class="">
     	<a href="/pages/c/reference/l_ref_func" onclick="pageScrollToTop(this)"> 等號左邊的函式</a>
         
@@ -466,7 +442,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/func_param_pointer" onclick="pageScrollToTop(this)"> 函式參數為指標</a>
+    	<a href="/pages/c/function/func_def" onclick="pageScrollToTop(this)"> 函式宣告與定義</a>
         
             
         </li>
@@ -474,6 +450,13 @@
 	
 	<li class="">
     	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_param_pointer" onclick="pageScrollToTop(this)"> 函式參數為指標</a>
         
             
         </li>
@@ -522,6 +505,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/function/func_ref" onclick="pageScrollToTop(this)"> 函式參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/function/auto_func" onclick="pageScrollToTop(this)"> auto與函式</a>
         
             
@@ -530,6 +520,13 @@
 	
 	<li class="">
     	<a href="/pages/c/function/lambda" onclick="pageScrollToTop(this)"> lambda</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/using_func_pointer" onclick="pageScrollToTop(this)"> using函式指標別名</a>
         
             
         </li></ul></li>
@@ -847,6 +844,43 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> c11 </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 左值與右值 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/rvalue/l_r_value" onclick="pageScrollToTop(this)"> l-value與r-value</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/rvalue/l_r_ref" onclick="pageScrollToTop(this)"> l-value參考與r-value參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="active">
+    	<a href="/pages/c/c11/rvalue/constRef" onclick="pageScrollToTop(this)"> const與參考</a>
+        
+            
+                <ul><li><a href="#const參考" onclick="mobilePageScrollToAnchor(this)" >const參考</a><ul><li><a href="#const參考放左值" onclick="mobilePageScrollToAnchor(this)" >const參考放左值</a></li><li><a href="#const參考放右值" onclick="mobilePageScrollToAnchor(this)" >const參考放右值</a></li><li><a href="#const參考放右值變數名" onclick="mobilePageScrollToAnchor(this)" >const參考放右值&amp;&amp;變數名</a></li><li><a href="#const參考放常數名" onclick="mobilePageScrollToAnchor(this)" >const參考放常數名</a></li><li><a href="#const參考放常數值" onclick="mobilePageScrollToAnchor(this)" >const參考放常數值</a></li></ul></li><li><a href="#函式參數為const參考" onclick="mobilePageScrollToAnchor(this)" >函式參數為const參考</a></li></ul>
+
+            
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/functional" onclick="pageScrollToTop(this)"> functional</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> pthread </a><ul>
 	
 	
@@ -914,7 +948,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >l-value與r-value</a>
+                            <a href="." >const與參考</a>
                         
                     </h1>
                 </div>
@@ -927,61 +961,48 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/reference/l_r_value">l-value與r-value</h1>
+                        <h1 id="/pages/c/c11/rvalue/constRef">const與參考</h1>
                     
 
-                    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>l-value = r-value;
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li>
+    <p><a href="/pages/c/c11/rvalue/l_r_value/">l-value與r-value</a></p>
+  </li>
+  <li>
+    <p><a href="/pages/c/c11/rvalue/l_r_ref/">l-value參考與r-value參考</a></p>
+  </li>
+</ul>
+
+<h2 id="const參考">const參考</h2>
+
+<p>const參考可以放左值(l-value)，也可以放右值(r-value)，也可以放常數。</p>
+
+<h3 id="const參考放左值">const參考放左值</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// i 是l-value</span>
+    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// 100 is r-value</span>
+    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref_i</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref_i = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref_i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ref_i = 100
 </code></pre></div></div>
 
-<p>在等號左邊的叫l-value，在等號右邊的叫r-value。</p>
-
-<h2 id="l-value">l-value</h2>
-
-<blockquote>
-  <p>lvalue simply means an object that has an identifiable location in memory</p>
-</blockquote>
-
-<p>可以放在等號左邊，並且可以被指派值都是l-value。</p>
-
-<p>等號左邊(l-value)，也就是一個能夠擺在等號左邊的東西∶<strong>一個變數，而非常數</strong>。</p>
-
-<p>等號左邊可以是變數、陣列元素、結構、<a href="/pages/c/reference/reference/">參考</a>、<a href="/pages/c/pointer/pointer/#取值運算子">取值運算子</a>。</p>
-
-<p>以下都是lavlue:</p>
-
-<h3 id="有定義資料型態int-double-float-char-long-long-的變數可以指派值">有定義資料型態(int, double, float, char, long long …)的變數，可以<code class="language-plaintext highlighter-rouge">指派值</code>。</h3>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="code"><pre>    <span class="c1">// i is l-value</span>
-    <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
-    <span class="c1">//j is l-value</span>
-    <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> 	<span class="c1">// 10 is r-value</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="有定義資料型態int-double-float-char-long-long-的指標可以指向記憶體位址">有定義資料型態(int, double, float, char, long long …)的指標，可以指向記憶體位址。</h3>
-
-<p>Prerequisites:</p>
-
-<p><a href="/pages/c/pointer/pointer/">指標基本觀念</a></p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="code"><pre>    <span class="c1">//p1 is l-value</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p1</span><span class="p">;</span>
-    <span class="c1">//p2 is l-value</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p2</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">j</span><span class="p">;</span>	<span class="c1">//&amp;j is r-value</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="可以用取值運算子修改指標指向的記憶體位址的內容">可以用*取值運算子修改指標指向的記憶體位址的<code class="language-plaintext highlighter-rouge">內容</code></h3>
+<h3 id="const參考放右值">const參考放右值</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -989,134 +1010,18 @@
 3
 4
 5
-6
-7
-8
-</pre></td><td class="code"><pre>    <span class="c1">//j is l-value</span>
-    <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">//  10 is r-value</span>
-    
-    <span class="c1">//p2 is l-value</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p2</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">j</span><span class="p">;</span>   <span class="c1">//&amp;j is r-value</span>
-    
-    <span class="c1">//*p2 is lavlue</span>
-    <span class="o">*</span><span class="n">p2</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>  <span class="c1">//100 is r-value</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="可以將變數或指標指派給參考">可以將變數或指標，指派給&amp;參考</h3>
-
-<p>Prerequisites:</p>
-
-<p><a href="/pages/c/reference/reference/">參考</a></p>
-
-<p><a href="/pages/c/reference/refToPointer/">參考指向指標</a></p>
-
-<h4 id="參考變數">參考變數</h4>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="code"><pre>    <span class="c1">// i is l-value</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">// 10 is r-value</span>
-    <span class="c1">// ref is l-value</span>
-    <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h4 id="參考指標">參考指標</h4>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre></td><td class="code"><pre>    <span class="c1">// i is l-value</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">// 10 is r-value</span>
-    
-    <span class="c1">//宣告指標</span>
-    <span class="c1">// ptr_i is l-value</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">ptr_i</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span> <span class="c1">// &amp;i is r-value</span>
-
-    <span class="c1">//宣告參考</span>
-    <span class="c1">// 指標指派給參考</span>
-    <span class="c1">// ref_to_ptr is l-value</span>
-    <span class="kt">int</span><span class="o">*&amp;</span> <span class="n">ref_to_ptr</span> <span class="o">=</span> <span class="n">ptr_i</span><span class="p">;</span> <span class="c1">// ptr_i is l-value</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="陣列">陣列</h3>
-
-<p>Prerequisites:</p>
-
-<p><a href="/pages/c/array/array/">陣列</a></p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre>	<span class="c1">// arr is l-value</span>
-    <span class="kt">int</span> <span class="n">arr</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span> <span class="c1">// 0,1,2,3 is r-value</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h4 id="陣列元素">陣列元素</h4>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// str is l-value</span>
-    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">6</span><span class="p">];</span>
-    <span class="c1">// str[0] is l-value</span>
-    <span class="n">str</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">'H'</span><span class="p">;</span> <span class="c1">// H is r-value</span>
-    <span class="c1">// str[1] is l-value</span>
-    <span class="n">str</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">'e'</span><span class="p">;</span> <span class="c1">// e is r-value</span>
-    <span class="c1">// str[2] is l-value</span>
-    <span class="n">str</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">'l'</span><span class="p">;</span> <span class="c1">// l is r-value</span>
-    <span class="c1">// str[3] is l-value</span>
-    <span class="n">str</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="sc">'l'</span><span class="p">;</span> <span class="c1">// l is r-value</span>
-    <span class="c1">// str[4] is l-value</span>
-    <span class="n">str</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="sc">'o'</span><span class="p">;</span> <span class="c1">// o is r-value</span>
-    <span class="c1">// str[5] is l-value</span>
-    <span class="n">str</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="sc">'\0'</span><span class="p">;</span> <span class="c1">// \0 is r-value</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">str</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref_r</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// 100 is r-value</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref_r = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref_i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ref_r = 100
 </code></pre></div></div>
 
-<h4 id="陣列名--索引">*(陣列名 + 索引)</h4>
-
-<p>Prerequisites:</p>
-
-<p><a href="/pages/c/array/pointerToArray/">一維陣列與指標</a></p>
+<h3 id="const參考放右值變數名">const參考放右值&amp;&amp;變數名</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1125,93 +1030,19 @@
 4
 5
 6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// str is l-value</span>
-    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">6</span><span class="p">];</span>
-    <span class="c1">//*(str + 0) is l-value</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">str</span> <span class="o">+</span> <span class="mi">0</span><span class="p">)</span> <span class="o">=</span> <span class="sc">'H'</span><span class="p">;</span> <span class="c1">// H is r-value</span>
-    <span class="c1">//*(str + 1) is l-value</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">str</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="sc">'E'</span><span class="p">;</span> <span class="c1">// E is r-value</span>
-    <span class="c1">//*(str + 2) is l-value</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">str</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span> <span class="o">=</span> <span class="sc">'L'</span><span class="p">;</span> <span class="c1">// L is r-value</span>
-    <span class="c1">//*(str + 3) is l-value</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">str</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">=</span> <span class="sc">'L'</span><span class="p">;</span> <span class="c1">// L is r-value</span>
-    <span class="c1">//*(str + 4) is l-value</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">str</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span> <span class="o">=</span> <span class="sc">'O'</span><span class="p">;</span> <span class="c1">// O is r-value</span>
-    <span class="c1">//*(str + 5) is l-value</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">str</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span> <span class="o">=</span> <span class="sc">'\0'</span><span class="p">;</span> <span class="c1">// \0 is r-value</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">str</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref_r</span> <span class="o">=</span> <span class="n">r</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref_r = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref_i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HELLO
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ref_r = 100
 </code></pre></div></div>
 
-<h4 id="指標指向陣列">指標指向陣列</h4>
-
-<p>Prerequisites:</p>
-
-<p><a href="/pages/c/array/pointerToArray/">一維陣列與指標</a></p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="code"><pre>    <span class="c1">// array is l-value</span>
-    <span class="kt">int</span> <span class="n">array</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span>
-    <span class="c1">// p is l-value</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">array</span><span class="p">;</span> <span class="c1">// array is l-value</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h4 id="const與指標">const與指標</h4>
-
-<p>Prerequisites:</p>
-
-<p><a href="/pages/c/pointer/pointerConst/">const與指標</a></p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="code"><pre>    <span class="c1">//var1 is l-value</span>
-    <span class="kt">int</span> <span class="n">var1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">// 10 is r-value</span>
-    <span class="c1">// p is l-value</span>
-    <span class="k">const</span> <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">var1</span><span class="p">;</span> <span class="c1">// &amp;var1 is r-value</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="r-value">r-value</h2>
-
-<blockquote>
-  <p>r-value” refers to data value that is stored at some address in memory.</p>
-</blockquote>
-
-<p>等號右邊的東西可以是<a href="/pages/c/array/pointerCharArr/#字串常數">字串常數</a>、表達式。</p>
-
-<p>以下是r-value:</p>
-
-<h3 id="字串常數">字串常數</h3>
-
-<p>Prerequisites:</p>
-
-<p><a href="/pages/c/array/charArray/">char字串</a></p>
+<h3 id="const參考放常數名">const參考放常數名</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1221,29 +1052,38 @@
 5
 6
 7
-8
-9
-10
-11
-12
-13
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// cstr2 is l-value</span>
-    <span class="kt">char</span> <span class="n">cstr2</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"hello"</span><span class="p">;</span> <span class="c1">// hello is r-value</span>
-    <span class="c1">//cstr3 is l-value</span>
-    <span class="kt">char</span> <span class="n">cstr3</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="s">"hello"</span><span class="p">;</span><span class="c1">// hello is r-value</span>
-    <span class="c1">//cstr4 is l-value</span>
-    <span class="kt">char</span> <span class="n">cstr4</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"hello"</span><span class="p">};</span><span class="c1">// hello is r-value</span>
-    <span class="c1">//cstr5 is l-value</span>
-    <span class="kt">char</span> <span class="n">cstr5</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"hello"</span><span class="p">};</span><span class="c1">// hello is r-value</span>
-    <span class="c1">//cstr6 is l-value</span>
-    <span class="kt">char</span> <span class="n">cstr6</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="p">{</span><span class="s">"hello"</span><span class="p">};</span><span class="c1">// hello is r-value</span>
+    <span class="c1">//con 是常數</span>
+    <span class="k">const</span> <span class="kt">int</span> <span class="n">con</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">con</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="陣列-與-陣列索引">&amp;陣列 與 &amp;陣列[索引]</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ref = 100
+</code></pre></div></div>
+
+<h3 id="const參考放常數值">const參考放常數值</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">//100是常數</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ref = 100
+</code></pre></div></div>
+<h2 id="函式參數為const參考">函式參數為const參考</h2>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1263,87 +1103,31 @@
 15
 16
 17
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// array is l-value</span>
-    <span class="kt">int</span> <span class="n">array</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span>
-    <span class="c1">// array is l-value</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"陣列名 = "</span> <span class="o">&lt;&lt;</span> <span class="n">array</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">// &amp;array is r-value</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"陣列名地址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">array</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">// &amp;array[0] is r-value</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"array[0]地址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">array</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">// &amp;array[1] is r-value</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"array[1]地址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">array</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">// &amp;array[2] is r-value</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"array[2]地址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">array</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">// &amp;array[3] is r-value</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"array[3]地址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">array</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// i is l-value</span>
+    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="c1">//l-value</span>
+    <span class="n">func</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+    
+    <span class="c1">//r-value</span>
+    <span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+    <span class="n">func</span><span class="p">(</span><span class="n">r</span><span class="p">);</span>
+    
+    <span class="n">func</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="c1">// 常數 100 , 100 is r-value</span>
+    <span class="n">func</span><span class="p">(</span><span class="sc">'A'</span><span class="p">);</span><span class="c1">// 常數 'A' , A is r-value</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="指標--整數0123-">指標 + 整數(0,1,2,3 …)</h3>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// array is l-value</span>
-    <span class="kt">int</span> <span class="n">array</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span>
-    <span class="c1">// p is l-value</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">array</span><span class="p">;</span> <span class="c1">// array is l-value</span>
-    <span class="c1">// p is l-value</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p指標內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//p + 0 is r-value</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p指標+0 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">+</span> <span class="mi">0</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//p + 1 is r-value</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p指標+1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//p + 2 is r-value</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p指標+2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//p + 3 is r-value</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p指標+3 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// array is l-value</span>
-    <span class="kt">int</span> <span class="n">array</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span>
-    <span class="c1">// p is l-value</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">array</span><span class="p">;</span> <span class="c1">// array is l-value</span>
-    <span class="c1">// p is l-value</span>
-    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// p + 1 is r-value</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ref = 10
+ref = 20
+ref = 100
+ref = 65
+</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -1408,14 +1192,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/reference/refToPointer" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 參考指向指標">
+                        <a href="/pages/c/c11/rvalue/l_r_ref" class="navigation navigation-prev navigation-unique" aria-label="Previous page: l-value參考與r-value參考">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/reference/l_r_ref" class="navigation navigation-next navigation-unique" aria-label="Next page: l-value參考與r-value參考">
+                        <a href="/pages/c/c11/functional" class="navigation navigation-next navigation-unique" aria-label="Next page: functional">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1433,11 +1217,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "const與參考",
+            "title": "l-value參考與r-value參考",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/reference/constRef.md",
-            "ref": "_pages/c/reference/constRef.md",
+            "path": "_pages/c/c11/rvalue/l_r_ref.md",
+            "ref": "_pages/c/c11/rvalue/l_r_ref.md",
             "articles": []
         },
         
@@ -1529,13 +1313,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/reference/l_r_value.md",
-        "mtime": "2024-06-22 00:00:00 +0800",
+        "path": "_pages/c/c11/rvalue/constRef.md",
+        "mtime": "2024-06-24 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-10-29 16:06:26 +0800"
+        "time": "2024-11-01 14:43:35 +0800"
     },
     "basePath": "",
     "book": {

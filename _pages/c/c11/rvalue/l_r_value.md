@@ -10,6 +10,12 @@ l-value = r-value;
 
 在等號左邊的叫l-value，在等號右邊的叫r-value。
 
+區別方式
+
+- 有名字一律為左值l-value，沒有名字一律為右值r-value
+- 可以取得記憶體位址一律為左值，沒有辦法取得記憶體位址一律為右值
+
+
 ## l-value
 
 > lvalue simply means an object that has an identifiable location in memory
@@ -185,6 +191,7 @@ Prerequisites:
     const int* p = &var1; // &var1 is r-value
 {% endhighlight %}
 
+
 ## r-value
 
 > r-value” refers to data value that is stored at some address in memory. 
@@ -271,8 +278,47 @@ int main() {
 }
 {% endhighlight %}
 
+### 函式傳回值為物件的值
 
+- [函式傳回值是值][8]
 
+以下的程式碼，main()和getStudente()都各別有存放回傳值student的記憶體位址，待getStudent()的student變數回傳給main()的student變數後，getStudent()的student變數的記憶體位址就會被釋放。
+
+被記憶體釋放，不會被保留住的物件，也是右值r-value。
+
+#### 傳回物件
+
+{% highlight c++ linenos %}
+Student getStudent() {
+    Student student;
+    return student;
+}
+int main() {
+    Student student = getStudent();
+    return 0;
+}
+{% endhighlight %}
+
+#### 傳回暫存物件
+
+- [建立暫存物件][9]
+
+暫存物件是右值。
+
+暫存物件建立語法
+```
+類別名()
+Student()
+```
+{% highlight c++ linenos %}
+Student getStudent() {
+    return Student();
+}
+int main() {
+    Student student = getStudent();
+    return 0;
+}
+{% endhighlight %}
 
 [1]: {% link _pages/c/pointer/pointer.md %}
 [2]: {% link _pages/c/array/array.md %}
@@ -281,7 +327,8 @@ int main() {
 [5]: {% link _pages/c/reference/reference.md%}
 [6]: {% link _pages/c/reference/refToPointer.md%}
 [7]: {% link _pages/c/pointer/pointerConst.md%}
-
+[8]: {% link _pages/c/function/callByValue.md %}#函式傳回值是值
+[9]: {% link _pages/c/class/constructor.md%}#建立暫存物件
 
 
 

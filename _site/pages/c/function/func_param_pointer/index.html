@@ -155,7 +155,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/typedef" onclick="pageScrollToTop(this)"> typedef 型別定義</a>
+    	<a href="/pages/c/basic/typedef" onclick="pageScrollToTop(this)"> typedef類型別名</a>
         
             
         </li></ul></li>
@@ -432,27 +432,6 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/reference/l_r_value" onclick="pageScrollToTop(this)"> l-value與r-value</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
-    	<a href="/pages/c/reference/l_r_ref" onclick="pageScrollToTop(this)"> l-value參考與r-value參考</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
-    	<a href="/pages/c/reference/constRef" onclick="pageScrollToTop(this)"> const與參考</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
     	<a href="/pages/c/reference/l_ref_func" onclick="pageScrollToTop(this)"> 等號左邊的函式</a>
         
             
@@ -462,12 +441,9 @@
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 函式 </a><ul>
 	
 	
-	<li class="active">
-    	<a href="/pages/c/function/func_param_pointer" onclick="pageScrollToTop(this)"> 函式參數為指標</a>
+	<li class="">
+    	<a href="/pages/c/function/func_def" onclick="pageScrollToTop(this)"> 函式宣告與定義</a>
         
-            
-                <ul><li><a href="#指標參數" onclick="mobilePageScrollToAnchor(this)" >指標參數</a></li><li><a href="#取值運算子取出指標參數的內容" onclick="mobilePageScrollToAnchor(this)" >取值運算子，取出指標參數的內容。</a></li><li><a href="#修改指標位址的內容" onclick="mobilePageScrollToAnchor(this)" >修改指標(位址)的內容</a></li><li><a href="#引數為指標變數" onclick="mobilePageScrollToAnchor(this)" >引數為指標變數</a></li><li><a href="#作為函式傳回值" onclick="mobilePageScrollToAnchor(this)" >作為函式傳回值</a></li><li><a href="#減少記憶體空間的使用" onclick="mobilePageScrollToAnchor(this)" >減少記憶體空間的使用</a></li></ul>
-
             
         </li>
 	
@@ -475,6 +451,16 @@
 	<li class="">
     	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
         
+            
+        </li>
+	
+	
+	<li class="active">
+    	<a href="/pages/c/function/func_param_pointer" onclick="pageScrollToTop(this)"> 函式參數為指標</a>
+        
+            
+                <ul><li><a href="#指標參數" onclick="mobilePageScrollToAnchor(this)" >指標參數</a></li><li><a href="#取值運算子取出指標參數的內容" onclick="mobilePageScrollToAnchor(this)" >取值運算子，取出指標參數的內容。</a></li><li><a href="#修改指標位址的內容" onclick="mobilePageScrollToAnchor(this)" >修改指標(位址)的內容</a></li><li><a href="#引數為指標變數" onclick="mobilePageScrollToAnchor(this)" >引數為指標變數</a></li><li><a href="#作為函式傳回值" onclick="mobilePageScrollToAnchor(this)" >作為函式傳回值</a></li><li><a href="#減少記憶體空間的使用" onclick="mobilePageScrollToAnchor(this)" >減少記憶體空間的使用</a></li></ul>
+
             
         </li>
 	
@@ -522,6 +508,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/function/func_ref" onclick="pageScrollToTop(this)"> 函式參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/function/auto_func" onclick="pageScrollToTop(this)"> auto與函式</a>
         
             
@@ -530,6 +523,13 @@
 	
 	<li class="">
     	<a href="/pages/c/function/lambda" onclick="pageScrollToTop(this)"> lambda</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/using_func_pointer" onclick="pageScrollToTop(this)"> using函式指標別名</a>
         
             
         </li></ul></li>
@@ -847,6 +847,40 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> c11 </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 左值與右值 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/rvalue/l_r_value" onclick="pageScrollToTop(this)"> l-value與r-value</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/rvalue/l_r_ref" onclick="pageScrollToTop(this)"> l-value參考與r-value參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/rvalue/constRef" onclick="pageScrollToTop(this)"> const與參考</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/functional" onclick="pageScrollToTop(this)"> functional</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> pthread </a><ul>
 	
 	
@@ -937,6 +971,8 @@
 </ul>
 
 <h2 id="指標參數">指標參數</h2>
+
+<p>傳指標是把原始變數的記憶體位址傳給呼叫的函式，傳指標的好處是函式可以存取原始變數。</p>
 
 <p>函式的參數是指標，代表參數是位址。指標參數語法為<code class="language-plaintext highlighter-rouge">資料型態* 參數名</code></p>
 
@@ -1256,14 +1292,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/reference/l_ref_func" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 等號左邊的函式">
+                        <a href="/pages/c/function/callByValue" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 函式傳值與回傳值">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/function/callByValue" class="navigation navigation-next navigation-unique" aria-label="Next page: 函式傳值與回傳值">
+                        <a href="/pages/c/function/callByRef" class="navigation navigation-next navigation-unique" aria-label="Next page: 函式傳參考">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1383,7 +1419,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-10-29 16:06:26 +0800"
+        "time": "2024-11-01 14:43:35 +0800"
     },
     "basePath": "",
     "book": {

@@ -6,10 +6,8 @@ keywords: c++, l-value reference, r-value reference
 
 Prerequisites:
 
-- [l-value與r-value][1]
-- [l-value參考與r-value參考][2]
-- [引數][3]
-- [函式傳回值是參考][4]
+- [引數][1]
+- [函式傳回值是參考][2]
 
 ## 函式傳回值是參考別名
 
@@ -135,7 +133,6 @@ y = 11
 ```
 
 
-[1]: {% link _pages/c/reference/l_r_value.md %}
-[2]: {% link _pages/c/reference/l_r_ref.md %}
-[3]: {% link _pages/c/basic/param.md %}
-[4]: {% link _pages/c/function/func_return_ref.md %}
+
+[1]: {% link _pages/c/basic/param.md %}
+[2]: {% link _pages/c/function/func_return_ref.md %}

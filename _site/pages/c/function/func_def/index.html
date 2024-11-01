@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>const與參考 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>函式宣告與定義 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -155,7 +155,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/typedef" onclick="pageScrollToTop(this)"> typedef 型別定義</a>
+    	<a href="/pages/c/basic/typedef" onclick="pageScrollToTop(this)"> typedef類型別名</a>
         
             
         </li></ul></li>
@@ -432,30 +432,6 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/reference/l_r_value" onclick="pageScrollToTop(this)"> l-value與r-value</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
-    	<a href="/pages/c/reference/l_r_ref" onclick="pageScrollToTop(this)"> l-value參考與r-value參考</a>
-        
-            
-        </li>
-	
-	
-	<li class="active">
-    	<a href="/pages/c/reference/constRef" onclick="pageScrollToTop(this)"> const與參考</a>
-        
-            
-                <ul><li><a href="#const參考與r-value" onclick="mobilePageScrollToAnchor(this)" >const參考與r-value</a></li><li><a href="#const參考與自動轉型" onclick="mobilePageScrollToAnchor(this)" >const參考與自動轉型</a></li><li><a href="#函式參數為const參考" onclick="mobilePageScrollToAnchor(this)" >函式參數為const參考</a></li></ul>
-
-            
-        </li>
-	
-	
-	<li class="">
     	<a href="/pages/c/reference/l_ref_func" onclick="pageScrollToTop(this)"> 等號左邊的函式</a>
         
             
@@ -465,15 +441,25 @@
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 函式 </a><ul>
 	
 	
-	<li class="">
-    	<a href="/pages/c/function/func_param_pointer" onclick="pageScrollToTop(this)"> 函式參數為指標</a>
+	<li class="active">
+    	<a href="/pages/c/function/func_def" onclick="pageScrollToTop(this)"> 函式宣告與定義</a>
         
+            
+                <ul><li><a href="#函式宣告declaration" onclick="mobilePageScrollToAnchor(this)" >函式宣告(declaration)</a></li><li><a href="#函式定義definition" onclick="mobilePageScrollToAnchor(this)" >函式定義(definition)</a></li><li><a href="#呼叫函式" onclick="mobilePageScrollToAnchor(this)" >呼叫函式</a></li><li><a href="#函式宣告與函式定義" onclick="mobilePageScrollToAnchor(this)" >函式宣告與函式定義</a></li><li><a href="#函式宣告與定義合在一起" onclick="mobilePageScrollToAnchor(this)" >函式宣告與定義合在一起</a></li></ul>
+
             
         </li>
 	
 	
 	<li class="">
     	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_param_pointer" onclick="pageScrollToTop(this)"> 函式參數為指標</a>
         
             
         </li>
@@ -522,6 +508,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/function/func_ref" onclick="pageScrollToTop(this)"> 函式參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/function/auto_func" onclick="pageScrollToTop(this)"> auto與函式</a>
         
             
@@ -530,6 +523,13 @@
 	
 	<li class="">
     	<a href="/pages/c/function/lambda" onclick="pageScrollToTop(this)"> lambda</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/using_func_pointer" onclick="pageScrollToTop(this)"> using函式指標別名</a>
         
             
         </li></ul></li>
@@ -847,6 +847,40 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> c11 </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 左值與右值 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/rvalue/l_r_value" onclick="pageScrollToTop(this)"> l-value與r-value</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/rvalue/l_r_ref" onclick="pageScrollToTop(this)"> l-value參考與r-value參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/rvalue/constRef" onclick="pageScrollToTop(this)"> const與參考</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/functional" onclick="pageScrollToTop(this)"> functional</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> pthread </a><ul>
 	
 	
@@ -914,7 +948,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >const與參考</a>
+                            <a href="." >函式宣告與定義</a>
                         
                     </h1>
                 </div>
@@ -927,69 +961,38 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/reference/constRef">const與參考</h1>
+                        <h1 id="/pages/c/function/func_def">函式宣告與定義</h1>
                     
 
-                    <p>Prerequisites:</p>
+                    <h2 id="函式宣告declaration">函式宣告(declaration)</h2>
 
-<ul>
-  <li>
-    <p><a href="/pages/c/reference/l_r_value/">l-value與r-value</a></p>
-  </li>
-  <li>
-    <p><a href="/pages/c/reference/l_r_ref/">l-value參考與r-value參考</a></p>
-  </li>
-</ul>
+<p>沒有程式碼，最後面有冒號;</p>
 
-<h2 id="const參考與r-value">const參考與r-value</h2>
+<p>告知編譯器有一個函式名字為print，傳回值型態為void，參數類型有int與const string&amp;，之後會有程式碼實作。</p>
 
-<p>下方程式可以指派常數100到常數參考ref1。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> const int&amp; ref1 = 100;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void print(int code,const string&amp; msg);
 </code></pre></div></div>
 
-<p>如果常數指派到參考，卻沒加上const修飾子，就會編譯錯誤，因為參考不支援常數。</p>
-<blockquote>
-  <p>Non-const lvalue reference to type ‘int’ cannot bind to a temporary of type ‘int’</p>
-</blockquote>
+<h2 id="函式定義definition">函式定義(definition)</h2>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int&amp; ref1 = 100;
-</code></pre></div></div>
-
-<p>若使用const參考，編譯器會產生一個臨時變數temp，把常數100指派到臨時變數中，再把臨時變數指派給參考。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    int temp = 100;
-    const int&amp; ref = temp;
-</code></pre></div></div>
-
-<h2 id="const參考與自動轉型">const參考與自動轉型</h2>
-
-<p>當<a href="/pages/c/basic/param/">引數</a>為常數給函式，除了<a href="/pages/c/reference/l_r_ref/#引數與參數r-value參考資料型態不同">r-value參考</a>可以接收常數，const參考也可以接收常數，二者功能相同。</p>
-
-<p>const參考會自動轉型，下面例子將’C’自動轉型為int</p>
+<p>有程式碼。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-4
-5
-6
-7
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref1</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref2</span> <span class="o">=</span> <span class="sc">'C'</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ref1 = 100
-ref2 = 67
+<h2 id="呼叫函式">呼叫函式</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print(500, "Server Error.");
 </code></pre></div></div>
 
-<h2 id="函式參數為const參考">函式參數為const參考</h2>
+<h2 id="函式宣告與函式定義">函式宣告與函式定義</h2>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1000,21 +1003,52 @@ ref2 = 67
 6
 7
 8
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+9
+10
+11
+</pre></td><td class="code"><pre><span class="c1">//函式宣告</span>
+<span class="kt">void</span> <span class="nf">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="c1">//呼叫函式</span>
+    <span class="n">print</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="s">"Server Error."</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//函式定義</span>
+<span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error code = 500 , Msg = Server Error.
+</code></pre></div></div>
+
+<h2 id="函式宣告與定義合在一起">函式宣告與定義合在一起</h2>
+
+<p>在main()主程式前宣告函式，並且實作程式碼，就是函式宣告與定義結合一起，有實作程式碼一律稱之函式定義。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="c1">//函式定義</span>
+<span class="kt">void</span> <span class="nf">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">func</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span> <span class="c1">// 常數 100 , 100 is r-value</span>
-    <span class="n">func</span><span class="p">(</span><span class="sc">'A'</span><span class="p">);</span> <span class="c1">// 常數 'A' , A is r-value </span>
+    <span class="n">print</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="s">"Server Error."</span><span class="p">);</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ref = 100
-ref = 65
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error code = 500 , Msg = Server Error.
 </code></pre></div></div>
-
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1078,14 +1112,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/reference/l_r_ref" class="navigation navigation-prev navigation-unique" aria-label="Previous page: l-value參考與r-value參考">
+                        <a href="/pages/c/reference/l_ref_func" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 等號左邊的函式">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/reference/l_ref_func" class="navigation navigation-next navigation-unique" aria-label="Next page: 等號左邊的函式">
+                        <a href="/pages/c/function/callByValue" class="navigation navigation-next navigation-unique" aria-label="Next page: 函式傳值與回傳值">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1103,11 +1137,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "l-value參考與r-value參考",
+            "title": "函式參考",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/reference/l_r_ref.md",
-            "ref": "_pages/c/reference/l_r_ref.md",
+            "path": "_pages/c/function/func_ref.md",
+            "ref": "_pages/c/function/func_ref.md",
             "articles": []
         },
         
@@ -1199,13 +1233,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/reference/constRef.md",
-        "mtime": "2024-06-24 00:00:00 +0800",
+        "path": "_pages/c/function/func_def.md",
+        "mtime": "2024-11-01 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-10-29 16:06:26 +0800"
+        "time": "2024-11-01 14:43:35 +0800"
     },
     "basePath": "",
     "book": {
