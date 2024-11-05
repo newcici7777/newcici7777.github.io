@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Callable Type 可呼叫類型 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>移動建構子與移動指派運算子 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -871,8 +871,25 @@
         </li></ul></li>
 	
 	
+	<li class="active">
+    	<a href="/pages/c/c11/move_operator" onclick="pageScrollToTop(this)"> 移動建構子與移動指派運算子</a>
+        
+            
+                <ul><li><a href="#目的" onclick="mobilePageScrollToAnchor(this)" >目的</a></li><li><a href="#語法" onclick="mobilePageScrollToAnchor(this)" >語法</a><ul><li><a href="#移動建構子move-constructor" onclick="mobilePageScrollToAnchor(this)" >移動建構子(Move constructor)</a></li><li><a href="#移動指派運算子move-assignment-operator" onclick="mobilePageScrollToAnchor(this)" >移動指派運算子(Move assignment operator)</a></li><li><a href="#指標轉移語法" onclick="mobilePageScrollToAnchor(this)" >指標轉移語法</a></li></ul></li></ul>
+
+            
+        </li>
+	
+	
 	<li class="">
     	<a href="/pages/c/c11/functional" onclick="pageScrollToTop(this)"> functional</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/bind" onclick="pageScrollToTop(this)"> bind綁定</a>
         
             
         </li></ul></li>
@@ -945,7 +962,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >Callable Type 可呼叫類型</a>
+                            <a href="." >移動建構子與移動指派運算子</a>
                         
                     </h1>
                 </div>
@@ -958,16 +975,115 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/c11/functional/callable_type">Callable Type 可呼叫類型</h1>
+                        <h1 id="/pages/c/c11/move_operator">移動建構子與移動指派運算子</h1>
                     
 
-                    <h2 id="函式類型別名">函式類型別名</h2>
-
-<h2 id="物件函式">物件函式</h2>
+                    <p>Prerequisites:</p>
 
 <ul>
-  <li><a href="/pages/c/class/operator_brackets/">物件函式</a></li>
+  <li><a href="/pages/c/class/copy_constructor/">拷貝函式</a></li>
+  <li><a href="/pages/c/class/operator_assign/">operator=()</a></li>
+  <li><a href="/pages/c/class/deep_shallow_copy/">深淺拷貝</a></li>
+  <li><a href="/pages/c/c11/rvalue/l_r_value/">l-value與r-value</a></li>
+  <li><a href="/pages/c/c11/rvalue/l_r_ref/">l-value參考與r-value參考</a></li>
 </ul>
+
+<h2 id="目的">目的</h2>
+
+<p>以下的拷貝函式，針對指標(m_ptr)動態分配記憶體位址，將來源(source)物件指標內容拷貝到新分配的記憶體位址。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre>    <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="n">Student</span> <span class="o">&amp;</span><span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//判斷來源(source)m_ptr是否null</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">)</span> <span class="p">{</span>
+        	<span class="c1">//動態分配記憶體位址</span>
+            <span class="n">m_ptr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">;</span>
+            <span class="c1">//拷貝來源物件m_ptr指標到新的記憶體位址</span>
+            <span class="n">memcpy</span><span class="p">(</span><span class="n">m_ptr</span><span class="p">,</span> <span class="n">src</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以上程式碼若拷貝的容量很大，將會花費許多時間在拷貝資料。</p>
+
+<p>移動建構子(Move constructor)與移動指派運算子(Move assignment operator)主要針對右值進行指標移動，因為右值是一個暫存物件，通常使用完畢立即記憶體釋放，移動建構子與移動指派運算子是不釋放暫存物件記憶體，把指標指向暫存物件(來源物件)的記憶體位址，省略以上程式碼拷貝動作。</p>
+
+<h2 id="語法">語法</h2>
+
+<p>移動建構子(Move constructor)與移動指派運算子(Move assignment operator)的參數都是右值(r-value)，因為要刪除來源物件指標(有修改的動作)，所以參數不用const，拷貝與指派運算子則是不會修改來源物件。</p>
+
+<h3 id="移動建構子move-constructor">移動建構子(Move constructor)</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別名(類別名&amp;&amp; 來源物件) {
+	....
+}
+</code></pre></div></div>
+
+<h3 id="移動指派運算子move-assignment-operator">移動指派運算子(Move assignment operator)</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別名&amp; operator=(類別名&amp;&amp; 來源物件) {
+	......
+	return *this;
+}
+</code></pre></div></div>
+
+<h3 id="指標轉移語法">指標轉移語法</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre>    <span class="n">Student</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;&amp;</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"移動建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="c1">//如果指標不是nullptr，先把指標釋放</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">m_ptr</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">delete</span> <span class="n">m_ptr</span><span class="p">;</span>
+        <span class="c1">//把來源的指標移到m_ptr</span>
+        <span class="n">m_ptr</span> <span class="o">=</span> <span class="n">src</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">;</span>
+        <span class="c1">//把來源的指標設nullptr</span>
+        <span class="n">src</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;&amp;</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"移動指派運算子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="c1">//如果指標不是nullptr，先把指標釋放</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">m_ptr</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">delete</span> <span class="n">m_ptr</span><span class="p">;</span>
+        <span class="c1">//把來源的指標移到m_ptr</span>
+        <span class="n">m_ptr</span> <span class="o">=</span> <span class="n">src</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">;</span>
+        <span class="c1">//把來源的指標設nullptr</span>
+        <span class="n">src</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+        <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 </section>
             </div><div class="search-results">
@@ -1031,7 +1147,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/c/c11/rvalue/constRef" class="navigation navigation-prev navigation-unique" aria-label="Previous page: const與參考">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/c/c11/functional" class="navigation navigation-next navigation-unique" aria-label="Next page: functional">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -1047,11 +1173,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "using函式指標別名",
+            "title": "固定ip設定",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/function/using_func_pointer.md",
-            "ref": "_pages/c/function/using_func_pointer.md",
+            "path": "_pages/note/ip_setting.md",
+            "ref": "_pages/note/ip_setting.md",
             "articles": []
         },
         
@@ -1143,13 +1269,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/c11/functional/callable_type.md",
-        "mtime": "2024-10-31 00:00:00 +0800",
+        "path": "_pages/c/c11/move_operator.md",
+        "mtime": "2024-11-04 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-11-01 14:43:35 +0800"
+        "time": "2024-11-05 18:50:08 +0800"
     },
     "basePath": "",
     "book": {

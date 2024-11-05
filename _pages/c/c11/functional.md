@@ -30,7 +30,7 @@ Prerequisites:
 宣告function
 
 ```
-function<函式回傳值類型(函式參數1類型,函式參數2類型, ...)> 變數名 = 函式名;
+function<函式回傳值類型(函式參數1類型 參數名1,函式參數2類型 參數名2, ...)> 變數名 = 函式名;
 ```
 
 完整程式碼
@@ -192,15 +192,15 @@ int main() {
 
 ### 宣告function
 
-- 必須把記憶體位址傳進去，所以有使用&取位址運算子
-- 模板類型，第1個參數要填入類別參考&
+- function<參數類型1, ...> 第1個參數要填入類別參考&
+- 等於號(=)指派對映的函式，必須把記憶體位址傳進去，所以使用&取位址運算子+類別名+::範圍運算子+函式名
 <pre>
     function<void(<span class="markline">Student&</span>,int, const string&)> func = <span class="markline">&Student::</span>print;
 </pre>
 
 ### 呼叫function
 
-必須把物件代入第1個模板參數
+必須把物件代入第1個參數
 
 <pre>
     func(<span class="markline">student</span>, 500, "Server error.");

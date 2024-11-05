@@ -875,7 +875,21 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/c11/move_operator" onclick="pageScrollToTop(this)"> 移動建構子與移動指派運算子</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/c11/functional" onclick="pageScrollToTop(this)"> functional</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/bind" onclick="pageScrollToTop(this)"> bind綁定</a>
         
             
         </li></ul></li>
@@ -1228,8 +1242,10 @@ Func *func_p = <span class="markline">Student::</span>print;
 
 <h4 id="物件成員函式指標語法">物件成員函式指標語法</h4>
 
-<p>必須把記憶體位址傳進去，所以有使用&amp;取位址運算子。
-呼叫函式時，使用物件加點(.)運算子與指標運算子(*)</p>
+<ul>
+  <li>必須把記憶體位址傳進去，所以有使用&amp;取位址運算子</li>
+  <li>呼叫函式時，使用物件加點(.)運算子與指標運算子(*)</li>
+</ul>
 <pre>
 void(<span class="markline">Student::</span>* func_pointer)(int, const string&amp;) = <span class="markline">&amp;Student::</span>print;
     <span class="markline">(student.*func_pointer)</span>(500, "Server error.");
@@ -1525,7 +1541,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-11-01 14:43:35 +0800"
+        "time": "2024-11-05 18:50:08 +0800"
     },
     "basePath": "",
     "book": {

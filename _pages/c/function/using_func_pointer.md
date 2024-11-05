@@ -198,8 +198,8 @@ Error code = 404 , Msg = Page not Found.
 
 #### 物件成員函式指標語法
 
-必須把記憶體位址傳進去，所以有使用&取位址運算子。
-呼叫函式時，使用物件加點(.)運算子與指標運算子(\*)
+- 必須把記憶體位址傳進去，所以有使用&取位址運算子
+- 呼叫函式時，使用物件加點(.)運算子與指標運算子(\*)
 <pre>
 void(<span class="markline">Student::</span>* func_pointer)(int, const string&) = <span class="markline">&Student::</span>print;
     <span class="markline">(student.*func_pointer)</span>(500, "Server error.");
