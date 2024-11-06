@@ -14,6 +14,4 @@ ipconfig /all
 
 如果只想使用一個 DNS 伺服器，則可以將「其他 DNS 伺服器」欄位留空。
 
-![img]({{site.imgurl}}/dataStruct/mergeSort1.jpg)  
-
-https://hackmd.io/@liaojason2/vscodecppwindows
+![img]({{site.imgurl}}/other/ip_setting.jpg)  

@@ -78,6 +78,107 @@ Prerequisites:
     }
 {% endhighlight %}
 
+### 完整程式碼
+
+測試右值的環境不好建立，待日後有環境再建立
+
+{% highlight c++ linenos %}
+#include <iostream>
+#include <functional>
+using namespace std;
+class Student {
+public:
+    int* m_ptr;
+public:
+    Student() {
+        cout << "建構子" << endl;
+        //初始化成員變數
+        m_ptr = nullptr;
+    }
+    Student(const Student &src) {
+        cout << "左值拷貝函式" << endl;
+        //判斷來源(source)m_ptr不是null
+        if(src.m_ptr) {
+            //動態分配記憶體位址
+            m_ptr = new int;
+            //拷貝來源物件m_ptr指標到新的記憶體位址
+            memcpy(m_ptr, src.m_ptr, sizeof(int));
+        } else {
+            m_ptr = nullptr;
+        }
+    }
+    Student& operator=(const Student& src) {
+        cout << "左值指派運算子" << endl;
+        //如果來源物件的m_ptr指標是空
+        if(src.m_ptr == nullptr) {
+            //要把目的物件清空(如果目的物件不是空的話)
+            if(m_ptr != nullptr) {
+                delete m_ptr;
+                m_ptr = nullptr;
+            }
+        } else {
+            //如果目的物件為空
+            if(m_ptr == nullptr) {
+                //動態分配記憶體
+                m_ptr = new int;
+                memset(m_ptr, 0, sizeof(int));
+            }
+            //記憶體的值拷貝
+            memcpy(m_ptr, src.m_ptr, sizeof(int));
+        }
+        return *this;
+    }
+    Student(Student&& src) {
+        cout << "右值移動建構子" << endl;
+        //如果指標不是nullptr，先把指標釋放
+        if(m_ptr != nullptr) delete m_ptr;
+        //把來源的指標移到m_ptr
+        m_ptr = src.m_ptr;
+        //把來源的指標設nullptr
+        src.m_ptr = nullptr;
+    }
+    Student& operator=(Student&& src) {
+        cout << "右值移動指派運算子" << endl;
+        //如果指標不是nullptr，先把指標釋放
+        if(m_ptr != nullptr) delete m_ptr;
+        //把來源的指標移到m_ptr
+        m_ptr = src.m_ptr;
+        //把來源的指標設nullptr
+        src.m_ptr = nullptr;
+        return *this;
+    }
+    ~Student() {
+        delete m_ptr;
+        m_ptr = nullptr;
+        cout << "解構子" << endl;
+    }
+    void print() {
+        //印出記憶體位址
+        cout << "m_ptr address:" << &m_ptr << endl;
+        cout << "m_ptr value = " << *m_ptr << endl;
+    }
+};
+int main() {
+    //呼叫建構子
+    Student s1;
+    s1.m_ptr = new int(100);
+    //左值拷貝函式
+    Student s2 = s1;
+    //呼叫建構子
+    Student s3;
+    //左值指派運算子
+    s3 = s1;
+    //右值移動建構子(mac/linux測試不出來右值)
+    Student s4 = [] {
+        Student s;
+        s.m_ptr = new int;
+        *s.m_ptr = 200;
+        return s;
+    }();
+    return 0;
+}
+{% endhighlight %}
+
 
 [1]: {% link _pages/c/class/copy_constructor.md %}
 [2]: {% link _pages/c/class/operator_assign.md %}
