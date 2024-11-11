@@ -3,10 +3,28 @@ title: 可變參數模板
 date: 2024-11-6
 keywords: c++, variadic template
 ---
+## 語法
+
+Args代表多個不同類型與數量的參數。
+
+以下三種...位置不同，都可以。
+
+```
+template<typename... Args>
+```
+
+```
+template<typename ...Args> 
+```
+
+```
+template<typename ... Args>
+```
 
 ## 參數清單
 
 以下程式碼"Bill","Mary","Tom","Allen"就是參數清單。
+
 {% highlight c++ linenos %}
 int main() {
     print("Bill","Mary","Tom","Allen");
@@ -16,22 +34,26 @@ int main() {
 
 ## 遞迴呼叫
 
+以下的模板是遞迴的方式在運作
+
 - T為類型
 - ...Args為參數清單類型
-- arg為每一次遞迴，就會從參數清單取出一個，並從清單移出
+- arg為每一次遞迴，就會從參數清單取出一個
 - args為每一次遞迴，未被取出的剩下參數清單
 
 {% highlight c++ linenos %}
 template<typename T, typename... Args>
 void print(T arg, Args... args) {
+	//每呼叫一次就從args中拿出一個參數arg
     cout << "參數" << arg << endl;
+    //剩下未取出的參數繼續遞迴呼叫自已
     print(args...);
 }
 {% endhighlight %}
 
 ## 遞迴結束呼叫的函式
 
-- 參數為空
+- 參數為空(因為可變參數清單已經全取出來，也沒參數可傳遞)
 - 傳回值型態void
 
 {% highlight c++ linenos %}
@@ -117,3 +139,63 @@ Tom
 Allen
 end
 ```
+
+## 可變參數模板與bind與functional
+
+- [functional][1]
+- [bind][2]
+- [l-value與r-value][3]
+- [l-value參考與r-value參考][4]
+
+
+寫一個函式可以接收任何種類的函式與不同數量的參數，函式與參數可為左值右值。
+
+以下程式碼不支援函式多載(overload)
+
+{% highlight c++ linenos %}
+#include <iostream>
+#include <functional>
+using namespace std;
+class Student {
+public:
+    void print(int code, const string& msg) {
+        cout << "Error code = " << code << " , Msg = " << msg << endl;
+    }
+};
+
+void print(int code, const string& msg) {
+    cout << "Error code = " << code << " , Msg = " << msg << endl;
+}
+
+template<typename Func, typename... Args>
+auto callFunc(Func&& func, Args&&...args)
+{
+    auto f = bind(forward<Func>(func), forward<Args>(args)...);
+    f();
+    return f;
+}
+
+int main() {
+    callFunc(print, 400, "Page not found.");
+    //物件成員函式
+    Student student;
+    callFunc(&Student::print, student, 500, "Server error.");
+    //函式為右值
+    callFunc([](int code, const string& msg) {
+            cout << "Lambda error code = " << code << " , Msg = " << msg << endl;
+    }, 500, "Server error.");
+    return 0;
+}
+{% endhighlight %}
+```
+Error code = 400 , Msg = Page not found.
+Error code = 500 , Msg = Server error.
+Lambda error code = 500 , Msg = Server error.
+```
+
+
+[1]: {% link _pages/c/c11/functional.md %}
+[2]: {% link _pages/c/c11/bind.md %}
+[3]: {% link _pages/c/c11/rvalue/l_r_value.md %}
+[4]: {% link _pages/c/c11/rvalue/l_r_ref.md %}
+[5]: {% link _pages/c/c11/forward.md %}
