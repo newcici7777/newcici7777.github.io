@@ -113,6 +113,13 @@
     	<a href="/pages/c/editor/supportc11" onclick="pageScrollToTop(this)"> Xcode支援C++11以上</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/rvo" onclick="pageScrollToTop(this)"> 關閉RVO</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -741,6 +748,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/class/temp_obj" onclick="pageScrollToTop(this)"> 臨時物件temporary object</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/class/init_list" onclick="pageScrollToTop(this)"> 建構子初始化列表</a>
         
             
@@ -844,6 +858,16 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> STL Containers </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/stl/string" onclick="pageScrollToTop(this)"> string</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> c11 </a><ul>
 	
 	
@@ -854,7 +878,7 @@
     	<a href="/pages/c/c11/rvalue/l_r_value" onclick="pageScrollToTop(this)"> l-value與r-value</a>
         
             
-                <ul><li><a href="#l-value" onclick="mobilePageScrollToAnchor(this)" >l-value</a><ul><li><a href="#有定義資料型態int-double-float-char-long-long-的變數可以指派值" onclick="mobilePageScrollToAnchor(this)" >有定義資料型態(int, double, float, char, long long …)的變數，可以<code class="language-plaintext highlighter-rouge">指派值</code>。</a></li><li><a href="#有定義資料型態int-double-float-char-long-long-的指標可以指向記憶體位址" onclick="mobilePageScrollToAnchor(this)" >有定義資料型態(int, double, float, char, long long …)的指標，可以指向記憶體位址。</a></li><li><a href="#可以用取值運算子修改指標指向的記憶體位址的內容" onclick="mobilePageScrollToAnchor(this)" >可以用*取值運算子修改指標指向的記憶體位址的<code class="language-plaintext highlighter-rouge">內容</code></a></li><li><a href="#可以將變數或指標指派給參考" onclick="mobilePageScrollToAnchor(this)" >可以將變數或指標，指派給&amp;參考</a><ul><li><a href="#參考變數" onclick="mobilePageScrollToAnchor(this)" >參考變數</a></li><li><a href="#參考指標" onclick="mobilePageScrollToAnchor(this)" >參考指標</a></li></ul></li><li><a href="#陣列" onclick="mobilePageScrollToAnchor(this)" >陣列</a><ul><li><a href="#陣列元素" onclick="mobilePageScrollToAnchor(this)" >陣列元素</a></li><li><a href="#陣列名--索引" onclick="mobilePageScrollToAnchor(this)" >*(陣列名 + 索引)</a></li><li><a href="#指標指向陣列" onclick="mobilePageScrollToAnchor(this)" >指標指向陣列</a></li><li><a href="#const與指標" onclick="mobilePageScrollToAnchor(this)" >const與指標</a></li></ul></li></ul></li><li><a href="#r-value" onclick="mobilePageScrollToAnchor(this)" >r-value</a><ul><li><a href="#字串常數" onclick="mobilePageScrollToAnchor(this)" >字串常數</a></li><li><a href="#陣列-與-陣列索引" onclick="mobilePageScrollToAnchor(this)" >&amp;陣列 與 &amp;陣列[索引]</a></li><li><a href="#指標--整數0123-" onclick="mobilePageScrollToAnchor(this)" >指標 + 整數(0,1,2,3 …)</a></li><li><a href="#函式傳回值為物件的值" onclick="mobilePageScrollToAnchor(this)" >函式傳回值為物件的值</a><ul><li><a href="#傳回物件" onclick="mobilePageScrollToAnchor(this)" >傳回物件</a></li><li><a href="#傳回暫存物件" onclick="mobilePageScrollToAnchor(this)" >傳回暫存物件</a></li></ul></li></ul></li></ul>
+                <ul><li><a href="#l-value" onclick="mobilePageScrollToAnchor(this)" >l-value</a><ul><li><a href="#有定義資料型態int-double-float-char-long-long-的變數可以指派值" onclick="mobilePageScrollToAnchor(this)" >有定義資料型態(int, double, float, char, long long …)的變數，可以<code class="language-plaintext highlighter-rouge">指派值</code>。</a></li><li><a href="#有定義資料型態int-double-float-char-long-long-的指標可以指向記憶體位址" onclick="mobilePageScrollToAnchor(this)" >有定義資料型態(int, double, float, char, long long …)的指標，可以指向記憶體位址。</a></li><li><a href="#可以用取值運算子修改指標指向的記憶體位址的內容" onclick="mobilePageScrollToAnchor(this)" >可以用*取值運算子修改指標指向的記憶體位址的<code class="language-plaintext highlighter-rouge">內容</code></a></li><li><a href="#可以將變數或指標指派給參考" onclick="mobilePageScrollToAnchor(this)" >可以將變數或指標，指派給&amp;參考</a><ul><li><a href="#參考變數" onclick="mobilePageScrollToAnchor(this)" >參考變數</a></li><li><a href="#參考指標" onclick="mobilePageScrollToAnchor(this)" >參考指標</a></li></ul></li><li><a href="#陣列" onclick="mobilePageScrollToAnchor(this)" >陣列</a><ul><li><a href="#陣列元素" onclick="mobilePageScrollToAnchor(this)" >陣列元素</a></li><li><a href="#陣列名--索引" onclick="mobilePageScrollToAnchor(this)" >*(陣列名 + 索引)</a></li><li><a href="#指標指向陣列" onclick="mobilePageScrollToAnchor(this)" >指標指向陣列</a></li><li><a href="#const與指標" onclick="mobilePageScrollToAnchor(this)" >const與指標</a></li></ul></li></ul></li><li><a href="#r-value" onclick="mobilePageScrollToAnchor(this)" >r-value</a><ul><li><a href="#字串常數" onclick="mobilePageScrollToAnchor(this)" >字串常數</a></li><li><a href="#陣列-與-陣列索引" onclick="mobilePageScrollToAnchor(this)" >&amp;陣列 與 &amp;陣列[索引]</a></li><li><a href="#指標--整數0123-" onclick="mobilePageScrollToAnchor(this)" >指標 + 整數(0,1,2,3 …)</a></li><li><a href="#函式傳回值為物件的值" onclick="mobilePageScrollToAnchor(this)" >函式傳回值為物件的值</a><ul><li><a href="#傳回物件" onclick="mobilePageScrollToAnchor(this)" >傳回物件</a></li><li><a href="#回傳值是臨時物件" onclick="mobilePageScrollToAnchor(this)" >回傳值是臨時物件</a></li></ul></li></ul></li></ul>
 
             
         </li>
@@ -1453,15 +1477,15 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h4 id="傳回暫存物件">傳回暫存物件</h4>
+<h4 id="回傳值是臨時物件">回傳值是臨時物件</h4>
 
 <ul>
-  <li><a href="/pages/c/class/constructor/#建立暫存物件">建立暫存物件</a></li>
+  <li><a href="/pages/c/class/temp_obj/">臨時物件</a></li>
 </ul>
 
-<p>暫存物件是右值。</p>
+<p>臨時物件是右值。</p>
 
-<p>暫存物件建立語法</p>
+<p>臨時物件建立語法</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別名()
 Student()
 </code></pre></div></div>
@@ -1547,7 +1571,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/template/stackTemplate" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Stack實作(int Array)">
+                        <a href="/pages/c/stl/string" class="navigation navigation-prev navigation-unique" aria-label="Previous page: string">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -1674,7 +1698,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-11-08 10:46:09 +0800"
+        "time": "2024-11-13 16:20:09 +0800"
     },
     "basePath": "",
     "book": {

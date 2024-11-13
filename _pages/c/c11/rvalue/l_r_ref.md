@@ -173,7 +173,7 @@ r-value = 66
 
 ## 函式回傳值為右值
 
-- [傳回暫存物件][3]
+- [臨時物件][3]
 
 語法
 ```
@@ -195,7 +195,7 @@ Student getStudent1() {
     return s;
 }
 Student getStudent2() {
-    //暫存物件
+    //臨時物件
     return Student();
 }
 int main() {
@@ -215,4 +215,4 @@ s2 name = Mary
 
 [1]: {% link _pages/c/c11/rvalue/l_r_value.md %}
 [2]: {% link _pages/c/basic/param.md %}
-[3]: {% link _pages/c/c11/rvalue/l_r_value.md %}#傳回暫存物件
+[3]: {% link _pages/c/class/temp_obj.md%}

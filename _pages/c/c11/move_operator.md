@@ -11,6 +11,10 @@ Prerequisites:
 - [深淺拷貝][3]
 - [l-value與r-value][4]
 - [l-value參考與r-value參考][5]
+- [臨時物件][6]
+- [關閉RVO][7]
+
+把RVO關閉後，才能進行以下的範例。
 
 ## 目的
 
@@ -31,7 +35,7 @@ Prerequisites:
 
 以上程式碼若拷貝的容量很大，將會花費許多時間在拷貝資料。
 
-移動建構子(Move constructor)與移動指派運算子(Move assignment operator)主要針對右值進行指標移動，因為右值是一個暫存物件，通常使用完畢立即記憶體釋放，移動建構子與移動指派運算子是不釋放暫存物件記憶體，把指標指向暫存物件(來源物件)的記憶體位址，省略以上程式碼拷貝動作。
+移動建構子(Move constructor)與移動指派運算子(Move assignment operator)主要針對右值進行指標移動，因為右值是一個臨時物件，通常使用完畢立即記憶體釋放，移動建構子與移動指派運算子是不釋放臨時物件記憶體，把指標指向臨時物件(來源物件)的記憶體位址，省略以上程式碼拷貝動作。
 
 ## 語法
 
@@ -59,8 +63,6 @@ Prerequisites:
 {% highlight c++ linenos %}
     Student(Student&& src) {
         cout << "移動建構子" << endl;
-        //如果指標不是nullptr，先把指標釋放
-        if(m_ptr != nullptr) delete m_ptr;
         //把來源的指標移到m_ptr
         m_ptr = src.m_ptr;
         //把來源的指標設nullptr
@@ -68,8 +70,6 @@ Prerequisites:
     }
     Student& operator=(Student&& src) {
         cout << "移動指派運算子" << endl;
-        //如果指標不是nullptr，先把指標釋放
-        if(m_ptr != nullptr) delete m_ptr;
         //把來源的指標移到m_ptr
         m_ptr = src.m_ptr;
         //把來源的指標設nullptr
@@ -78,9 +78,11 @@ Prerequisites:
     }
 {% endhighlight %}
 
-### 完整程式碼
+### 使用右值移動建構子
 
-測試右值的環境不好建立，待日後有環境再建立
+第一次右值移動建構子：return s;這個臨時對象被移動到一個中間的無名臨時對象中，觸發了第一次的右值移動建構子。
+
+第二次右值移動建構子：接著，這個中間的無名臨時對象被移動到 s4 中，觸發了第二次的右值移動建構子。
 
 {% highlight c++ linenos %}
 #include <iostream>
@@ -130,8 +132,6 @@ public:
     }
     Student(Student&& src) {
         cout << "右值移動建構子" << endl;
-        //如果指標不是nullptr，先把指標釋放
-        if(m_ptr != nullptr) delete m_ptr;
         //把來源的指標移到m_ptr
         m_ptr = src.m_ptr;
         //把來源的指標設nullptr
@@ -139,8 +139,6 @@ public:
     }
     Student& operator=(Student&& src) {
         cout << "右值移動指派運算子" << endl;
-        //如果指標不是nullptr，先把指標釋放
-        if(m_ptr != nullptr) delete m_ptr;
         //把來源的指標移到m_ptr
         m_ptr = src.m_ptr;
         //把來源的指標設nullptr
@@ -159,25 +157,29 @@ public:
     }
 };
 int main() {
-    //呼叫建構子
-    Student s1;
-    s1.m_ptr = new int(100);
-    //左值拷貝函式
-    Student s2 = s1;
-    //呼叫建構子
-    Student s3;
-    //左值指派運算子
-    s3 = s1;
-    //右值移動建構子(mac/linux測試不出來右值)
+    //右值指派運算子
     Student s4 = [] {
         Student s;
         s.m_ptr = new int;
         *s.m_ptr = 200;
         return s;
     }();
+    cout << "s4 mptr = " << *s4.m_ptr << endl;
     return 0;
 }
 {% endhighlight %}
+
+
+```
+建構子
+右值移動建構子
+解構子
+右值移動建構子
+解構子
+s4 mptr = 200
+解構子
+```
+
 
 
 [1]: {% link _pages/c/class/copy_constructor.md %}
@@ -185,3 +187,5 @@ int main() {
 [3]: {% link _pages/c/class/deep_shallow_copy.md %}
 [4]: {% link _pages/c/c11/rvalue/l_r_value.md %}
 [5]: {% link _pages/c/c11/rvalue/l_r_ref.md %}
+[6]: {% link _pages/c/class/temp_obj.md%}
+[7]: {% link _pages/c/editor/rvo.md %}

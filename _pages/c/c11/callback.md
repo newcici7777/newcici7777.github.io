@@ -191,7 +191,7 @@ msg1
  .
  以下截掉
  ```
-## callback函式為函式
+## callback參數為函式
 
 以下新增print()函式
 callback函式設為print

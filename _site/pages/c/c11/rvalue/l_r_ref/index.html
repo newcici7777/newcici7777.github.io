@@ -113,6 +113,13 @@
     	<a href="/pages/c/editor/supportc11" onclick="pageScrollToTop(this)"> Xcode支援C++11以上</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/rvo" onclick="pageScrollToTop(this)"> 關閉RVO</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -741,6 +748,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/class/temp_obj" onclick="pageScrollToTop(this)"> 臨時物件temporary object</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/class/init_list" onclick="pageScrollToTop(this)"> 建構子初始化列表</a>
         
             
@@ -839,6 +853,16 @@
 	
 	<li class="">
     	<a href="/pages/c/template/stackTemplate" onclick="pageScrollToTop(this)"> Stack實作(int Array)</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> STL Containers </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/stl/string" onclick="pageScrollToTop(this)"> string</a>
         
             
         </li></ul></li>
@@ -1244,7 +1268,7 @@ after i = 20
 <h2 id="函式回傳值為右值">函式回傳值為右值</h2>
 
 <ul>
-  <li><a href="/pages/c/c11/rvalue/l_r_value/#傳回暫存物件">傳回暫存物件</a></li>
+  <li><a href="/pages/c/class/temp_obj/">臨時物件</a></li>
 </ul>
 
 <p>語法</p>
@@ -1289,7 +1313,7 @@ Student&amp;&amp; s1 = getStudent1();
     <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="n">Student</span> <span class="n">getStudent2</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//暫存物件</span>
+    <span class="c1">//臨時物件</span>
     <span class="k">return</span> <span class="n">Student</span><span class="p">();</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
@@ -1497,7 +1521,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-11-08 10:46:09 +0800"
+        "time": "2024-11-13 16:20:09 +0800"
     },
     "basePath": "",
     "book": {

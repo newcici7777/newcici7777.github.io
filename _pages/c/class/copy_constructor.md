@@ -153,34 +153,50 @@ name: Cici
 解構子
 解構子
 ```
-## 函式傳回值為類別的值
+## 函式傳回值是臨時物件
 
 - [函式傳回值是值][2]
+- [臨時物件][3]
 
-在Linux/mac執行時不會呼叫拷貝函式，在windows會呼叫拷貝函式。
-
-Linux中只呼叫一次建構子跟一次解構子，g++認為沒必要離開函式把函式建立的物件記憶體釋放，到main主程式用另一個變數指向同一個記憶體位址。
+函式傳回值是臨時物件會呼叫拷貝函式。
 
 {% highlight c++ linenos %}
+class Student {
+public:
+    Student() {
+        cout << "建構子" << endl;
+    }
+    Student(const Student &src) {
+        cout << "拷貝函式" << endl;
+    }
+    Student& operator=(const Student& src) {
+        cout << "指派運算子" << endl;
+        return *this;
+    }
+    ~Student() {
+        cout << "解構子" << endl;
+    }
+};
 Student func() {
     Student s;
-    strcpy(s.m_name, "Cici");
     cout << "函式物件記憶體位址 = " << &s << endl;
     return s;
 }
 int main() {
     Student s1 = func();
-    s1.print();
     cout << "物件記憶體位址 = " << &s1 << endl;
     return 0;
-}    
+}
 {% endhighlight %}  
 
 ```
-沒參數建構子
-函式物件記憶體位址 = 0x7ff7bfeff430
-name: Cici
-物件記憶體位址 = 0x7ff7bfeff430
+建構子
+函式物件記憶體位址 = 0x7ff7bfeff410
+拷貝函式
+解構子
+拷貝函式
+解構子
+物件記憶體位址 = 0x7ff7bfeff468
 解構子
 ```  
 
@@ -218,3 +234,4 @@ name: 漂亮的Cici
 
 [1]: {% link _pages/c/function/callByValue.md %}#函式傳遞值-Call-by-value
 [2]: {% link _pages/c/function/callByValue.md %}#函式傳回值是值
+[3]: {% link _pages/c/class/temp_obj.md%}

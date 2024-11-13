@@ -113,6 +113,13 @@
     	<a href="/pages/c/editor/supportc11" onclick="pageScrollToTop(this)"> Xcode支援C++11以上</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/rvo" onclick="pageScrollToTop(this)"> 關閉RVO</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -737,8 +744,15 @@
     	<a href="/pages/c/class/constructor" onclick="pageScrollToTop(this)"> 建構子與解構子</a>
         
             
-                <ul><li><a href="#建構子" onclick="mobilePageScrollToAnchor(this)" >建構子</a><ul><li><a href="#參數為空的建構子" onclick="mobilePageScrollToAnchor(this)" >參數為空的建構子</a></li><li><a href="#建構子參數" onclick="mobilePageScrollToAnchor(this)" >建構子參數</a></li></ul></li><li><a href="#解構子" onclick="mobilePageScrollToAnchor(this)" >解構子</a></li><li><a href="#注意事項" onclick="mobilePageScrollToAnchor(this)" >注意事項</a><ul><li><a href="#建構子解構子自動生成" onclick="mobilePageScrollToAnchor(this)" >建構子解構子自動生成</a></li><li><a href="#不要用變數名建立物件" onclick="mobilePageScrollToAnchor(this)" >不要用變數名()建立物件</a></li><li><a href="#建立暫存物件" onclick="mobilePageScrollToAnchor(this)" >建立暫存物件</a><ul><li><a href="#不要在其它有參數的建構子呼叫暫存物件呼叫空的建構子" onclick="mobilePageScrollToAnchor(this)" >不要在其它有參數的建構子，呼叫暫存物件(呼叫空的建構子)</a></li><li><a href="#暫存物件與指標" onclick="mobilePageScrollToAnchor(this)" >暫存物件與指標</a></li></ul></li></ul></li><li><a href="#回傳暫存物件" onclick="mobilePageScrollToAnchor(this)" >回傳暫存物件</a></li><li><a href="#建立兩次物件" onclick="mobilePageScrollToAnchor(this)" >建立兩次物件</a></li><li><a href="#多個建構子使用的程式碼寫在成員函式中" onclick="mobilePageScrollToAnchor(this)" >多個建構子使用的程式碼寫在成員函式中</a></li></ul>
+                <ul><li><a href="#建構子" onclick="mobilePageScrollToAnchor(this)" >建構子</a><ul><li><a href="#參數為空的建構子" onclick="mobilePageScrollToAnchor(this)" >參數為空的建構子</a></li><li><a href="#建構子參數" onclick="mobilePageScrollToAnchor(this)" >建構子參數</a></li></ul></li><li><a href="#解構子" onclick="mobilePageScrollToAnchor(this)" >解構子</a></li><li><a href="#建構子參數只有一個可使用指派運算子" onclick="mobilePageScrollToAnchor(this)" >建構子參數只有一個，可使用指派運算子</a></li><li><a href="#注意事項" onclick="mobilePageScrollToAnchor(this)" >注意事項</a><ul><li><a href="#建構子解構子自動生成" onclick="mobilePageScrollToAnchor(this)" >建構子解構子自動生成</a></li><li><a href="#不要用變數名建立物件" onclick="mobilePageScrollToAnchor(this)" >不要用變數名()建立物件</a></li></ul></li><li><a href="#多個建構子使用的程式碼寫在成員函式中" onclick="mobilePageScrollToAnchor(this)" >多個建構子使用的程式碼寫在成員函式中</a></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/temp_obj" onclick="pageScrollToTop(this)"> 臨時物件temporary object</a>
+        
             
         </li>
 	
@@ -842,6 +856,16 @@
 	
 	<li class="">
     	<a href="/pages/c/template/stackTemplate" onclick="pageScrollToTop(this)"> Stack實作(int Array)</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> STL Containers </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/stl/string" onclick="pageScrollToTop(this)"> string</a>
         
             
         </li></ul></li>
@@ -1170,6 +1194,47 @@ name: Bill
 解構子
 </code></pre></div></div>
 
+<h2 id="建構子參數只有一個可使用指派運算子">建構子參數只有一個，可使用指派運算子</h2>
+
+<p>建構子參數只有一個，可使用指派運算子=，呼叫只有一個參數的建構子</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
+<span class="nl">public:</span>
+    <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+    <span class="n">Student</span><span class="p">(){};</span>
+    <span class="c1">//參數只有一個建構子</span>
+    <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//使用等於(=)指派運算子呼叫只有一個參數的建構子</span>
+    <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name = Bill
+</code></pre></div></div>
+
 <h2 id="注意事項">注意事項</h2>
 
 <h3 id="建構子解構子自動生成">建構子解構子自動生成</h3>
@@ -1307,333 +1372,9 @@ name: Bill
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="建立暫存物件">建立暫存物件</h3>
-
-<p>暫存物件(Temporary Object)建立語法</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別名()
-Student()
-</code></pre></div></div>
-
-<p>以下的程式碼回傳暫存物件。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre><span class="n">Student</span> <span class="nf">getStudent</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">Student</span><span class="p">();</span>
-<span class="p">}</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="n">getStudent</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h4 id="不要在其它有參數的建構子呼叫暫存物件呼叫空的建構子">不要在其它有參數的建構子，呼叫暫存物件(呼叫空的建構子)</h4>
-
-<p>在有參數的建構子呼叫無參數的建構子，是建立暫存物件(Temporary Object)，執行完建構子，馬上執行解構子</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-<span class="nl">public:</span>
-    <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">m_age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">m_age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"進入參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"建立暫存物件"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">Student</span><span class="p">();</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結束暫存物件"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
-        <span class="n">m_age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//宣告成員函式</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">};</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>進入參數建構子
-建立暫存物件
-沒參數建構子
-解構子
-結束暫存物件
-解構子
-</code></pre></div></div>
-
-<h4 id="暫存物件與指標">暫存物件與指標</h4>
-
-<p>以下程式碼建立int* m_ptr;指標，在參數為空建構子，有初始化</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>m_ptr = nullptr;
-</code></pre></div></div>
-<p>在解構子中，有把它釋放</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ~Student() {
-        delete m_ptr;
-    }
-</code></pre></div></div>
-
-<p>以下程式碼會執行錯誤。
-原因在於暫存物件呼叫空的建構子，建立m_ptr指標，接下來執行解構子把m_ptr記憶體釋放，然後等到主程式執行完畢，要執行解構子，發現找不到m_ptr指標(因為已經被暫存物件釋放掉)。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-<span class="nl">public:</span>
-    <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">m_age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">m_ptr</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">m_age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"進入參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"建立暫存物件"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">Student</span><span class="p">();</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結束暫存物件"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
-        <span class="n">m_age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">delete</span> <span class="n">m_ptr</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//宣告成員函式</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">};</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>進入參數建構子
-建立暫存物件
-沒參數建構子
-解構子
-結束暫存物件
-malloc: *** error for object 0x1000d0010: pointer being freed was not allocated
-</code></pre></div></div>
-<h2 id="回傳暫存物件">回傳暫存物件</h2>
-
-<p>當暫存物件回傳給變數，這個回傳物件就不是暫存，原本在函式中的暫存物件記憶體位址就不會被釋放，反而指派至main()的接收暫存物件的變數中。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Student student = Student();
-    Student student1 = Student("Bill", 20);
-</code></pre></div></div>
-
-<p>可以使用以下方式建立物件</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-<span class="nl">public:</span>
-    <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">m_age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">m_age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"有參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
-        <span class="n">m_age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">};</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="n">Student</span><span class="p">();</span>
-    <span class="n">Student</span> <span class="n">student1</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>沒參數建構子
-有參數建構子
-解構子
-解構子
-</code></pre></div></div>
-
-<h2 id="建立兩次物件">建立兩次物件</h2>
-
-<p>以下語法會建立兩次物件</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-<span class="nl">public:</span>
-    <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">m_age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">m_age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"有參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
-        <span class="n">m_age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">};</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="n">student</span> <span class="o">=</span> <span class="n">Student</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>沒參數建構子
-沒參數建構子
-解構子
-解構子
-</code></pre></div></div>
-
 <h2 id="多個建構子使用的程式碼寫在成員函式中">多個建構子使用的程式碼寫在成員函式中</h2>
 
-<p>以下建構子呼叫init()函式，清空成員變數。</p>
+<p>以下建構子呼叫init()函式，清空成員變數，多個建構子可以使用。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1692,6 +1433,7 @@ malloc: *** error for object 0x1000d0010: pointer being freed was not allocated
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1762,7 +1504,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/c/class/init_list" class="navigation navigation-next navigation-unique" aria-label="Next page: 建構子初始化列表">
+                        <a href="/pages/c/class/temp_obj" class="navigation navigation-next navigation-unique" aria-label="Next page: 臨時物件temporary object">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1882,7 +1624,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-11-08 10:46:09 +0800"
+        "time": "2024-11-13 16:20:09 +0800"
     },
     "basePath": "",
     "book": {

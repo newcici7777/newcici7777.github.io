@@ -113,6 +113,13 @@
     	<a href="/pages/c/editor/supportc11" onclick="pageScrollToTop(this)"> Xcode支援C++11以上</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/rvo" onclick="pageScrollToTop(this)"> 關閉RVO</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -741,6 +748,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/class/temp_obj" onclick="pageScrollToTop(this)"> 臨時物件temporary object</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/class/init_list" onclick="pageScrollToTop(this)"> 建構子初始化列表</a>
         
             
@@ -844,6 +858,16 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> STL Containers </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/stl/string" onclick="pageScrollToTop(this)"> string</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> c11 </a><ul>
 	
 	
@@ -875,7 +899,7 @@
     	<a href="/pages/c/c11/move_operator" onclick="pageScrollToTop(this)"> 移動建構子與移動指派運算子</a>
         
             
-                <ul><li><a href="#目的" onclick="mobilePageScrollToAnchor(this)" >目的</a></li><li><a href="#語法" onclick="mobilePageScrollToAnchor(this)" >語法</a><ul><li><a href="#移動建構子move-constructor" onclick="mobilePageScrollToAnchor(this)" >移動建構子(Move constructor)</a></li><li><a href="#移動指派運算子move-assignment-operator" onclick="mobilePageScrollToAnchor(this)" >移動指派運算子(Move assignment operator)</a></li><li><a href="#指標轉移語法" onclick="mobilePageScrollToAnchor(this)" >指標轉移語法</a></li><li><a href="#完整程式碼" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul></li></ul>
+                <ul><li><a href="#目的" onclick="mobilePageScrollToAnchor(this)" >目的</a></li><li><a href="#語法" onclick="mobilePageScrollToAnchor(this)" >語法</a><ul><li><a href="#移動建構子move-constructor" onclick="mobilePageScrollToAnchor(this)" >移動建構子(Move constructor)</a></li><li><a href="#移動指派運算子move-assignment-operator" onclick="mobilePageScrollToAnchor(this)" >移動指派運算子(Move assignment operator)</a></li><li><a href="#指標轉移語法" onclick="mobilePageScrollToAnchor(this)" >指標轉移語法</a></li><li><a href="#使用右值移動建構子" onclick="mobilePageScrollToAnchor(this)" >使用右值移動建構子</a></li></ul></li></ul>
 
             
         </li>
@@ -1007,7 +1031,11 @@
   <li><a href="/pages/c/class/deep_shallow_copy/">深淺拷貝</a></li>
   <li><a href="/pages/c/c11/rvalue/l_r_value/">l-value與r-value</a></li>
   <li><a href="/pages/c/c11/rvalue/l_r_ref/">l-value參考與r-value參考</a></li>
+  <li><a href="/pages/c/class/temp_obj/">臨時物件</a></li>
+  <li><a href="/pages/c/editor/rvo/">關閉RVO</a></li>
 </ul>
+
+<p>把RVO關閉後，才能進行以下的範例。</p>
 
 <h2 id="目的">目的</h2>
 
@@ -1041,7 +1069,7 @@
 
 <p>以上程式碼若拷貝的容量很大，將會花費許多時間在拷貝資料。</p>
 
-<p>移動建構子(Move constructor)與移動指派運算子(Move assignment operator)主要針對右值進行指標移動，因為右值是一個暫存物件，通常使用完畢立即記憶體釋放，移動建構子與移動指派運算子是不釋放暫存物件記憶體，把指標指向暫存物件(來源物件)的記憶體位址，省略以上程式碼拷貝動作。</p>
+<p>移動建構子(Move constructor)與移動指派運算子(Move assignment operator)主要針對右值進行指標移動，因為右值是一個臨時物件，通常使用完畢立即記憶體釋放，移動建構子與移動指派運算子是不釋放臨時物件記憶體，把指標指向臨時物件(來源物件)的記憶體位址，省略以上程式碼拷貝動作。</p>
 
 <h2 id="語法">語法</h2>
 
@@ -1080,14 +1108,8 @@
 13
 14
 15
-16
-17
-18
-19
 </pre></td><td class="code"><pre>    <span class="n">Student</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;&amp;</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"移動建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="c1">//如果指標不是nullptr，先把指標釋放</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">m_ptr</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">delete</span> <span class="n">m_ptr</span><span class="p">;</span>
         <span class="c1">//把來源的指標移到m_ptr</span>
         <span class="n">m_ptr</span> <span class="o">=</span> <span class="n">src</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">;</span>
         <span class="c1">//把來源的指標設nullptr</span>
@@ -1095,8 +1117,6 @@
     <span class="p">}</span>
     <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;&amp;</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"移動指派運算子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="c1">//如果指標不是nullptr，先把指標釋放</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">m_ptr</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">delete</span> <span class="n">m_ptr</span><span class="p">;</span>
         <span class="c1">//把來源的指標移到m_ptr</span>
         <span class="n">m_ptr</span> <span class="o">=</span> <span class="n">src</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">;</span>
         <span class="c1">//把來源的指標設nullptr</span>
@@ -1106,9 +1126,11 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="完整程式碼">完整程式碼</h3>
+<h3 id="使用右值移動建構子">使用右值移動建構子</h3>
 
-<p>測試右值的環境不好建立，待日後有環境再建立</p>
+<p>第一次右值移動建構子：return s;這個臨時對象被移動到一個中間的無名臨時對象中，觸發了第一次的右值移動建構子。</p>
+
+<p>第二次右值移動建構子：接著，這個中間的無名臨時對象被移動到 s4 中，觸發了第二次的右值移動建構子。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1193,18 +1215,6 @@
 80
 81
 82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 #include</span> <span class="cpf">&lt;functional&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
@@ -1252,8 +1262,6 @@
     <span class="p">}</span>
     <span class="n">Student</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;&amp;</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"右值移動建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="c1">//如果指標不是nullptr，先把指標釋放</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">m_ptr</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">delete</span> <span class="n">m_ptr</span><span class="p">;</span>
         <span class="c1">//把來源的指標移到m_ptr</span>
         <span class="n">m_ptr</span> <span class="o">=</span> <span class="n">src</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">;</span>
         <span class="c1">//把來源的指標設nullptr</span>
@@ -1261,8 +1269,6 @@
     <span class="p">}</span>
     <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;&amp;</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"右值移動指派運算子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="c1">//如果指標不是nullptr，先把指標釋放</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">m_ptr</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">delete</span> <span class="n">m_ptr</span><span class="p">;</span>
         <span class="c1">//把來源的指標移到m_ptr</span>
         <span class="n">m_ptr</span> <span class="o">=</span> <span class="n">src</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">;</span>
         <span class="c1">//把來源的指標設nullptr</span>
@@ -1281,26 +1287,27 @@
     <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//呼叫建構子</span>
-    <span class="n">Student</span> <span class="n">s1</span><span class="p">;</span>
-    <span class="n">s1</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
-    <span class="c1">//左值拷貝函式</span>
-    <span class="n">Student</span> <span class="n">s2</span> <span class="o">=</span> <span class="n">s1</span><span class="p">;</span>
-    <span class="c1">//呼叫建構子</span>
-    <span class="n">Student</span> <span class="n">s3</span><span class="p">;</span>
-    <span class="c1">//左值指派運算子</span>
-    <span class="n">s3</span> <span class="o">=</span> <span class="n">s1</span><span class="p">;</span>
-    <span class="c1">//右值移動建構子(mac/linux測試不出來右值)</span>
+    <span class="c1">//右值指派運算子</span>
     <span class="n">Student</span> <span class="n">s4</span> <span class="o">=</span> <span class="p">[]</span> <span class="p">{</span>
         <span class="n">Student</span> <span class="n">s</span><span class="p">;</span>
         <span class="n">s</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">;</span>
         <span class="o">*</span><span class="n">s</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
         <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
     <span class="p">}();</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s4 mptr = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">s4</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>建構子
+右值移動建構子
+解構子
+右值移動建構子
+解構子
+s4 mptr = 200
+解構子
+</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -1492,7 +1499,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-11-08 10:46:09 +0800"
+        "time": "2024-11-13 16:20:09 +0800"
     },
     "basePath": "",
     "book": {

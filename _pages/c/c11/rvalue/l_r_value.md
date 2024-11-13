@@ -299,13 +299,13 @@ int main() {
 }
 {% endhighlight %}
 
-#### 傳回暫存物件
+#### 回傳值是臨時物件
 
-- [建立暫存物件][9]
+- [臨時物件][9]
 
-暫存物件是右值。
+臨時物件是右值。
 
-暫存物件建立語法
+臨時物件建立語法
 ```
 類別名()
 Student()
@@ -328,7 +328,6 @@ int main() {
 [6]: {% link _pages/c/reference/refToPointer.md%}
 [7]: {% link _pages/c/pointer/pointerConst.md%}
 [8]: {% link _pages/c/function/callByValue.md %}#函式傳回值是值
-[9]: {% link _pages/c/class/constructor.md%}#建立暫存物件
-
+[9]: {% link _pages/c/class/temp_obj.md%}
 
 
