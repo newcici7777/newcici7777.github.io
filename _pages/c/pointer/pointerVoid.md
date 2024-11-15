@@ -4,7 +4,22 @@ date: 2024-05-30
 keywords: c++, pointer, void*, void
 ---
 
-### 函式的參數為void*指標(位址)
+## (void*)印出16進制的位址
+
+使用(void*)就可以印出16進制的位址
+
+{% highlight c++ linenos %}
+int main() {
+    char c = 'a';
+    cout << "變數c位址 = " << (void*)&c << endl;
+    return 0;
+}
+{% endhighlight %}
+```
+變數c位址 = 0x7ff7bfeff46b
+```
+
+## 函式的參數為void*指標(位址)
 
 函式的參數為void*指標，表示任何資料型態的指標(位址)都可以傳進函式，而且不需要轉型。
 
@@ -35,7 +50,7 @@ int main() {
 0x7ff7bfeff458
 ```
 
-### 函式傳回值為void*指標
+## 函式傳回值為void*指標
 
 表示可以回傳任何資料型態的指標(位址)，可以轉型成任何資料型態指標。
 
@@ -61,7 +76,7 @@ int *num = (int *)malloc(1 * 1024 * 1024);//1byte*1024 = 1kb ->1kb*1024=1mb
 {% endhighlight %}
 
 
-### 不能對`void*指標使用取值運算子*`
+## 不能對`void*指標使用取值運算子*`
 
 不能對void*指標使用`取值運算子*`，需要轉換成其它資料型態的指標才可以使用`取值運算子*`
 
@@ -90,7 +105,7 @@ int main() {
 a
 ```
 
-### 函式的參數為void
+## 函式的參數為void
 
 函式的參數為void，代表不接受任何參數。
 

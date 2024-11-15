@@ -306,8 +306,6 @@ bool empty() const;
 ```
 ### 清空字串
 
-清空後將返回0
-
 ```
 void clear();
 ```
@@ -329,6 +327,7 @@ s1[1] = e
 ```
 
 ### 取得string物件存放字串的記憶體位址
+- [(void*)印出16進制的位址][4]
 
 &是取得物件的位址
 
@@ -444,3 +443,4 @@ int main() {
 [1]: {% link _pages/c/dataStruct/arrayList.md %}
 [2]: {% link _pages/c/dataStruct/arrayListExtCap.md %}
 [3]: {% link _pages/c/class/constructor.md %}#建構子參數只有一個，可使用指派運算子
+[4]: {% link _pages/c/pointer/pointerVoid.md %}

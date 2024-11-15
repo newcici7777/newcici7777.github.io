@@ -75,6 +75,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/editor/format" onclick="pageScrollToTop(this)"> 程式碼格式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/editor/xcode" onclick="pageScrollToTop(this)"> Xcode</a>
         
             
@@ -868,6 +875,13 @@
     	<a href="/pages/c/stl/string" onclick="pageScrollToTop(this)"> string</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/stl/iterator" onclick="pageScrollToTop(this)"> iterator疊代器</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -1023,13 +1037,23 @@
                         <h1 id="/pages/c/dynamicMemory/memory_interval">記憶體間隔計算</h1>
                     
 
-                    <p>計算方式與<code class="language-plaintext highlighter-rouge">數線上兩點的距離</code>相同。</p>
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=CM1CMYDfNMw&amp;list=PLddNrqlSgts9RWyAxWRHXKtiTAlEKLmqF&amp;index=2">數線間隔</a></li>
+  <li><a href="https://www.youtube.com/watch?v=e1RSUXVSd0o&amp;list=PLddNrqlSgts9RWyAxWRHXKtiTAlEKLmqF&amp;index=7">間隔問題</a></li>
+  <li><a href="https://www.youtube.com/watch?v=MSZb0vOKzQI&amp;list=PLddNrqlSgts8ZYFZcta4ju_oyoiaA_ncr&amp;index=1">數線上兩點的距離</a></li>
+</ul>
 
 <h2 id="計算間隔1">計算間隔1</h2>
 
 <ul>
   <li><a href="/pages/c/string/xml/">xml</a></li>
 </ul>
+
+<p>指標指向0x00000001，若要指向0x00000005，請問指標要移動幾格？</p>
+
+<p><img src="/assets/img/pointer/move2.jpg" alt="img" /></p>
 
 <p>假設指標在0x00000005的位址，計算0x00000005到0x00000001之間有幾個間隔，不包含0x00000005</p>
 
@@ -1055,6 +1079,10 @@
 </table>
 
 <h2 id="計算間隔2">計算間隔2</h2>
+
+<p>指標指向0x00000001，若要指向0x00000011，請問指標要移動幾格？</p>
+
+<p><img src="/assets/img/pointer/move1.jpg" alt="img" /></p>
 
 <p>把位址全變成10進位，比較好計算。</p>
 
@@ -1497,7 +1525,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-11-13 16:20:09 +0800"
+        "time": "2024-11-15 16:30:59 +0800"
     },
     "basePath": "",
     "book": {

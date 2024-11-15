@@ -4,11 +4,19 @@ date: 2024-09-16
 keywords: c++, memory spacing problem 
 ---
 
-計算方式與`數線上兩點的距離`相同。
+Prerequisites:
+
+- [數線間隔](https://www.youtube.com/watch?v=CM1CMYDfNMw&list=PLddNrqlSgts9RWyAxWRHXKtiTAlEKLmqF&index=2)  
+- [間隔問題](https://www.youtube.com/watch?v=e1RSUXVSd0o&list=PLddNrqlSgts9RWyAxWRHXKtiTAlEKLmqF&index=7)
+- [數線上兩點的距離](https://www.youtube.com/watch?v=MSZb0vOKzQI&list=PLddNrqlSgts8ZYFZcta4ju_oyoiaA_ncr&index=1)
 
 ## 計算間隔1
 
 - [xml][1]
+
+指標指向0x00000001，若要指向0x00000005，請問指標要移動幾格？
+
+![img]({{site.imgurl}}/pointer/move2.jpg)
 
 假設指標在0x00000005的位址，計算0x00000005到0x00000001之間有幾個間隔，不包含0x00000005
 
@@ -18,6 +26,10 @@ keywords: c++, memory spacing problem
 |||||^|
 
 ## 計算間隔2
+
+指標指向0x00000001，若要指向0x00000011，請問指標要移動幾格？
+
+![img]({{site.imgurl}}/pointer/move1.jpg)
 
 把位址全變成10進位，比較好計算。
 

@@ -75,6 +75,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/editor/format" onclick="pageScrollToTop(this)"> 程式碼格式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/editor/xcode" onclick="pageScrollToTop(this)"> Xcode</a>
         
             
@@ -227,7 +234,7 @@
     	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
         
             
-                <ul><li><a href="#函式的參數為void指標位址" onclick="mobilePageScrollToAnchor(this)" >函式的參數為void*指標(位址)</a></li><li><a href="#函式傳回值為void指標" onclick="mobilePageScrollToAnchor(this)" >函式傳回值為void*指標</a></li><li><a href="#不能對void指標使用取值運算子" onclick="mobilePageScrollToAnchor(this)" >不能對<code class="language-plaintext highlighter-rouge">void*指標使用取值運算子*</code></a></li><li><a href="#函式的參數為void" onclick="mobilePageScrollToAnchor(this)" >函式的參數為void</a></li></ul>
+                <ul><li><a href="#void印出16進制的位址" onclick="mobilePageScrollToAnchor(this)" >(void*)印出16進制的位址</a></li><li><a href="#函式的參數為void指標位址" onclick="mobilePageScrollToAnchor(this)" >函式的參數為void*指標(位址)</a></li><li><a href="#函式傳回值為void指標" onclick="mobilePageScrollToAnchor(this)" >函式傳回值為void*指標</a></li><li><a href="#不能對void指標使用取值運算子" onclick="mobilePageScrollToAnchor(this)" >不能對<code class="language-plaintext highlighter-rouge">void*指標使用取值運算子*</code></a></li><li><a href="#函式的參數為void" onclick="mobilePageScrollToAnchor(this)" >函式的參數為void</a></li></ul>
 
             
         </li>
@@ -868,6 +875,13 @@
     	<a href="/pages/c/stl/string" onclick="pageScrollToTop(this)"> string</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/stl/iterator" onclick="pageScrollToTop(this)"> iterator疊代器</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -1023,7 +1037,28 @@
                         <h1 id="/pages/c/pointer/pointerVoid">void*任何資料型態的指標</h1>
                     
 
-                    <h3 id="函式的參數為void指標位址">函式的參數為void*指標(位址)</h3>
+                    <h2 id="void印出16進制的位址">(void*)印出16進制的位址</h2>
+
+<p>使用(void*)就可以印出16進制的位址</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"變數c位址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>變數c位址 = 0x7ff7bfeff46b
+</code></pre></div></div>
+
+<h2 id="函式的參數為void指標位址">函式的參數為void*指標(位址)</h2>
 
 <p>函式的參數為void*指標，表示任何資料型態的指標(位址)都可以傳進函式，而且不需要轉型。</p>
 
@@ -1071,7 +1106,7 @@
 0x7ff7bfeff458
 </code></pre></div></div>
 
-<h3 id="函式傳回值為void指標">函式傳回值為void*指標</h3>
+<h2 id="函式傳回值為void指標">函式傳回值為void*指標</h2>
 
 <p>表示可以回傳任何資料型態的指標(位址)，可以轉型成任何資料型態指標。</p>
 
@@ -1101,7 +1136,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="不能對void指標使用取值運算子">不能對<code class="language-plaintext highlighter-rouge">void*指標使用取值運算子*</code></h3>
+<h2 id="不能對void指標使用取值運算子">不能對<code class="language-plaintext highlighter-rouge">void*指標使用取值運算子*</code></h2>
 
 <p>不能對void*指標使用<code class="language-plaintext highlighter-rouge">取值運算子*</code>，需要轉換成其它資料型態的指標才可以使用<code class="language-plaintext highlighter-rouge">取值運算子*</code></p>
 
@@ -1143,7 +1178,7 @@
 a
 </code></pre></div></div>
 
-<h3 id="函式的參數為void">函式的參數為void</h3>
+<h2 id="函式的參數為void">函式的參數為void</h2>
 
 <p>函式的參數為void，代表不接受任何參數。</p>
 
@@ -1354,7 +1389,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-11-13 16:20:09 +0800"
+        "time": "2024-11-15 16:30:59 +0800"
     },
     "basePath": "",
     "book": {
