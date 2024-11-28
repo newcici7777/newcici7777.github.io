@@ -754,6 +754,13 @@
         </li>
 	
 	
+	<li class="">
+    	<a href="/pages/c/class/anonymous_obj" onclick="pageScrollToTop(this)"> 匿名物件</a>
+        
+            
+        </li>
+	
+	
 	<li class="active">
     	<a href="/pages/c/class/temp_obj" onclick="pageScrollToTop(this)"> 臨時物件temporary object</a>
         
@@ -1043,6 +1050,7 @@
   <li><a href="/pages/c/editor/rvo/">關閉RVO</a></li>
   <li><a href="/pages/c/class/copy_constructor/">拷貝函式</a></li>
   <li><a href="/pages/c/class/operator_assign/">operator=()</a></li>
+  <li><a href="/pages/c/class/anonymous_obj/">匿名物件</a></li>
 </ul>
 
 <p>把RVO關閉後，才能進行以下的範例。</p>
@@ -1087,12 +1095,6 @@
 24
 25
 26
-27
-28
-29
-30
-31
-32
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
     <span class="c1">//建構子</span>
@@ -1113,12 +1115,6 @@
         <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">};</span>
-<span class="n">Student</span> <span class="n">func</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">s</span><span class="p">;</span><span class="c1">//呼叫建構子</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"函式物件記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">s</span><span class="p">;</span><span class="c1">//呼叫拷貝函式</span>
-    <span class="c1">//離開函式，針對物件s呼叫解構子</span>
-<span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="n">Student</span> <span class="n">s1</span> <span class="o">=</span> <span class="n">Student</span><span class="p">();</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"物件記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
@@ -1559,7 +1555,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/class/constructor" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 建構子與解構子">
+                        <a href="/pages/c/class/anonymous_obj" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 匿名物件">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -1686,7 +1682,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-11-15 16:30:59 +0800"
+        "time": "2024-11-28 15:47:24 +0800"
     },
     "basePath": "",
     "book": {

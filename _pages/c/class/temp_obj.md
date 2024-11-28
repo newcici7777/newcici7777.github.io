@@ -9,6 +9,7 @@ Prerequisites:
 - [關閉RVO][1]
 - [拷貝函式][2]
 - [operator=()][3]
+- [匿名物件][4]
 
 把RVO關閉後，才能進行以下的範例。
 
@@ -46,12 +47,6 @@ public:
         cout << "解構子" << endl;
     }
 };
-Student func() {
-    Student s;//呼叫建構子
-    cout << "函式物件記憶體位址 = " << &s << endl;
-    return s;//呼叫拷貝函式
-    //離開函式，針對物件s呼叫解構子
-}
 int main() {
     Student s1 = Student();
     cout << "物件記憶體位址 = " << &s1 << endl;
@@ -287,3 +282,4 @@ int main() {
 [1]: {% link _pages/c/editor/rvo.md %}
 [2]: {% link _pages/c/class/copy_constructor.md %}
 [3]: {% link _pages/c/class/operator_assign.md %}
+[4]: {% link _pages/c/class/anonymous_obj.md %}

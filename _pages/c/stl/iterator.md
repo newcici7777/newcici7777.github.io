@@ -4,6 +4,10 @@ date: 2024-11-14
 keywords: c++, iterator
 ---
 
+Prerequisites:
+
+- [記憶體間隔計算][1]
+
 ## begin與end的位置
 
 - iterator.begin指向容器的首元素記憶體位址
@@ -36,7 +40,7 @@ int* _find(int* arr, int n, const int& val) {
 
 {% highlight c++ linenos %}
 /**
-參數1 起始位址
+參數1 開始位址
 參數2 最後位址的下一個位址
 參數3 要尋找的值
  */
@@ -58,7 +62,7 @@ struct Node {
     Node* next;
 };
 /**
-參數1 起始位址
+參數1 開始位址
 參數2 最後位址的下一個位址
 參數3 要尋找的值
  */
@@ -353,3 +357,180 @@ int main() {
 反向 : 
 7, 8, 3, 2, 1, 
 ```
+
+## 用疊代器建立容器
+
+### vector
+
+#### 建構子
+參數為其它容器的疊代器建立vector容器
+
+二個參數為iterator的建構子
+
+```
+vector(Iterator first, Iterator last)
+```
+
+{% highlight c++ linenos %}
+#include <iostream>
+#include <vector>
+using namespace std;
+int main() {
+  vector<int> v1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  //使用v1的cbegin()與v1的cend()，建立v2容器
+  vector<int> v2(v1.cbegin() + 2, v1.cend() - 3);
+  //遍歷v2容器所有元素
+  for (auto it = v2.cbegin(); it != v2.end(); it++) {
+    cout << *it << ", ";
+  }
+  cout << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+3, 4, 5, 6, 7, 
+```
+
+#### 指派
+
+```
+void assign(Iterator first, Iterator last); 
+```
+{% highlight c++ linenos %}
+#include <iostream>
+#include <vector>
+#include <list>
+using namespace std;
+int main() {
+  vector<int> v1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  //使用v1的cbegin()與v1的cend()，建立v2容器
+  vector<int> v2;
+  v2.assign(v1.cbegin() + 2, v1.cend() - 3);
+  //遍歷v2容器所有元素
+  for (auto it = v2.cbegin(); it != v2.end(); it++) {
+    cout << *it << ", ";
+  }
+  cout << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+3, 4, 5, 6, 7, 
+```
+
+#### 插入
+
+返回的位址是插入元素的位址
+```
+iterator insert(iterator pos, const T& value); 
+```
+
+{% highlight c++ linenos %}
+#include <iostream>
+#include <vector>
+using namespace std;
+int main() {
+  vector<int> v1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  //在2的位址後面插入一個12
+  //返回插入元素的位址(指標)
+  auto iter = v1.insert(v1.begin() + 2, 12);
+  cout << "插入的元素是:" << *iter << endl;
+  for (auto it = v1.cbegin(); it != v1.cend(); it++) {
+    cout << *it << " ";
+  }
+  cout << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+插入的元素是:12
+1 2 12 3 4 5 6 7 8 9 10 
+```
+
+#### 插入區間元素
+
+```
+iterator insert(iterator pos, iterator first, iterator last); 
+```
+- 參數1:要插入的位址
+- 參數2:其它容器的開始位址
+- 參數3:其它容器的結束位址
+
+{% highlight c++ linenos %}
+int main() {
+  vector<int> v1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  vector<int> v2 = {11, 22, 33, 44, 55, 66, 77, 88, 99, 100};
+  //在2的位址後面插入一個v2區間
+  //返回第一個插入元素的位址(指標)
+  auto iter = v1.insert(v1.begin() + 2, v2.begin() + 1, v2.end() - 3);
+  cout << "第一個插入的元素是:" << *iter << endl;
+  for (auto it = v1.cbegin(); it != v1.cend(); it++) {
+    cout << *it << " ";
+  }
+  cout << endl;
+  return 0;
+}
+{% endhighlight %}
+
+```
+第一個插入的元素是:22
+1 2 22 33 44 55 66 77 3 4 5 6 7 8 9 10 
+```
+
+## 疊代器失靈
+
+若在迴圈中有新增、插入、刪除的動作會導致疊代器無法移動到下一個位址。
+
+resize(),reserve(),assign(),push_back(),pop_back(),insert(),erase()導致疊代器指向陣列元素或鏈結串列的節點位址移動，會導致iterator無法作用。
+
+
+### vector刪除元素
+
+參數都是iterator，<span class="markline">重點返回的是刪除元素的下一個位址。</span>
+
+```
+iterator erase(iterator pos); 
+iterator erase(iterator first, iterator last); 
+```
+
+### 以下的程式碼會造成疊代器失靈
+
+{% highlight c++ linenos %}
+#include <iostream>
+#include <vector>
+using namespace std;
+int main() {
+  vector<int> v1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  for (vector<int>::const_iterator it = v1.begin(); it != v1.end(); it++) {
+    cout << *it << " ";
+    v1.erase(it);
+  }
+  return 0;
+}
+{% endhighlight %}
+```
+1 3 5 7 9
+```
+
+
+### 解決疊代器失靈
+
+<span class="markline">把it++移除</span>，it指向刪除元素後會<span class="markline">返回下一個位址</span>，疊代器就可以正常運作。
+
+{% highlight c++ linenos %}
+int main() {
+  vector<int> v1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  for (vector<int>::const_iterator it = v1.begin(); it != v1.end(); ) {
+    cout << *it << " ";
+    it = v1.erase(it);
+  }
+  return 0;
+}
+{% endhighlight %}
+
+```
+1 2 3 4 5 6 7 8 9 10 
+```
+
+
+[1]: {% link _pages/c/dynamicMemory/memory_interval.md %}
