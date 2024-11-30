@@ -1,10 +1,10 @@
 ---
-title: operator()
+title: operator()物件函式
 date: 2024-10-28
-keywords: c++, operator()
+keywords: c++, operator(),Functor
 ---
 
-## 物件函式
+## 物件函式Functor
 
 物件名本身就是函式名，但使用方法像呼叫函式一樣。
 

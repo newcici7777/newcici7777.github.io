@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>類別模板 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Stack實作(int Array) · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -75,13 +75,6 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/editor/format" onclick="pageScrollToTop(this)"> 程式碼格式</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
     	<a href="/pages/c/editor/xcode" onclick="pageScrollToTop(this)"> Xcode</a>
         
             
@@ -137,6 +130,16 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 基本知識 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/format" onclick="pageScrollToTop(this)"> 程式碼格式</a>
+        
+            
+        </li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
 	
 	
@@ -173,9 +176,6 @@
         
             
         </li></ul></li>
-	
-	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 基本知識 </a><ul>
 	
 	
 	<li class="">
@@ -811,14 +811,14 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/class/operator_brackets" onclick="pageScrollToTop(this)"> operator()</a>
+    	<a href="/pages/c/class/functor" onclick="pageScrollToTop(this)"> operator()物件函式</a>
         
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/class/operator+" onclick="pageScrollToTop(this)"> operator+()</a>
+    	<a href="/pages/c/class/operator_add" onclick="pageScrollToTop(this)"> operator+()</a>
         
             
         </li>
@@ -852,24 +852,38 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/template/funTemplate" onclick="pageScrollToTop(this)"> 函式模板</a>
+    	<a href="/pages/c/template/function_template" onclick="pageScrollToTop(this)"> 函式模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/class_template" onclick="pageScrollToTop(this)"> 類別模板</a>
         
             
         </li>
 	
 	
 	<li class="active">
-    	<a href="/pages/c/template/classTemplate" onclick="pageScrollToTop(this)"> 類別模板</a>
+    	<a href="/pages/c/template/stack_template" onclick="pageScrollToTop(this)"> Stack實作(int Array)</a>
         
             
-                <ul><li><a href="#語法" onclick="mobilePageScrollToAnchor(this)" >語法</a></li><li><a href="#宣告類別模板" onclick="mobilePageScrollToAnchor(this)" >宣告類別模板</a></li><li><a href="#使用類別模板" onclick="mobilePageScrollToAnchor(this)" >使用類別模板</a></li></ul>
+                <ul><li><a href="#stack-int陣列實作" onclick="mobilePageScrollToAnchor(this)" >Stack int陣列實作。</a><ul><li><a href="#使用stack" onclick="mobilePageScrollToAnchor(this)" >使用Stack</a></li></ul></li><li><a href="#stack-typedef實作" onclick="mobilePageScrollToAnchor(this)" >Stack typedef實作</a></li><li><a href="#stack-模板實作" onclick="mobilePageScrollToAnchor(this)" >Stack 模板實作</a></li></ul>
 
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/template/stackTemplate" onclick="pageScrollToTop(this)"> Stack實作(int Array)</a>
+    	<a href="/pages/c/template/foreach_template" onclick="pageScrollToTop(this)"> foreach模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/findif_template" onclick="pageScrollToTop(this)"> find_if模板</a>
         
             
         </li></ul></li>
@@ -1028,7 +1042,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >類別模板</a>
+                            <a href="." >Stack實作(int Array)</a>
                         
                     </h1>
                 </div>
@@ -1041,16 +1055,10 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/template/classTemplate">類別模板</h1>
+                        <h1 id="/pages/c/template/stack_template">Stack實作(int Array)</h1>
                     
 
-                    <h2 id="語法">語法</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>宣告模板    宣告資料型態參數  資料型態參數名    逗號 
-template &lt; class         T1       ,   class T2&gt;
-</code></pre></div></div>
-<p>宣告模板從關鍵字template開始，後接資料型態參數列表（template parameter list），資料型態參數是以class開頭，後接資料型態參數名(T1)。資料型態參數列表是用尖括號括住的一個資料型態參數或者多個資料型態參數，資料型態參數之間以逗號分隔。class也可以用typename互相替換。</p>
-
-<h2 id="宣告類別模板">宣告類別模板</h2>
+                    <h2 id="stack-int陣列實作">Stack int陣列實作。</h2>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1068,39 +1076,123 @@ template &lt; class         T1       ,   class T2&gt;
 13
 14
 15
-</pre></td><td class="code"><pre><span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="nc">K</span><span class="p">,</span> <span class="k">class</span> <span class="nc">V</span><span class="p">&gt;</span>
-<span class="k">class</span> <span class="nc">MyMap</span><span class="p">{</span>
-<span class="nl">public:</span>
-    <span class="n">MyMap</span><span class="p">(){}</span>
-    <span class="n">MyMap</span><span class="p">(</span><span class="n">K</span> <span class="n">key1</span><span class="p">,</span> <span class="n">V</span> <span class="n">value1</span><span class="p">)</span><span class="o">:</span><span class="n">key</span><span class="p">(</span><span class="n">key1</span><span class="p">),</span><span class="n">value</span><span class="p">(</span><span class="n">value1</span><span class="p">){}</span>
-    <span class="n">K</span> <span class="n">getKey</span><span class="p">(){</span>
-        <span class="k">return</span> <span class="n">key</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">V</span> <span class="n">getValue</span><span class="p">(){</span>
-        <span class="k">return</span> <span class="n">value</span><span class="p">;</span>
-    <span class="p">}</span>
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Stack</span><span class="p">{</span>
 <span class="nl">private:</span>
-    <span class="n">K</span> <span class="n">key</span><span class="p">;</span>
-    <span class="n">V</span> <span class="n">value</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="o">*</span><span class="n">items</span><span class="p">;</span> <span class="c1">//陣列指標</span>
+    <span class="kt">int</span> <span class="n">stacksize</span><span class="p">;</span><span class="c1">//stack大小</span>
+    <span class="kt">int</span> <span class="n">top</span><span class="p">;</span><span class="c1">//目前stack的數量(stack 頂端)</span>
+<span class="nl">public:</span>
+    <span class="c1">//建構式，初始化成員stacksize與top</span>
+    <span class="n">Stack</span><span class="p">(</span><span class="kt">int</span> <span class="n">size</span><span class="p">)</span><span class="o">:</span><span class="n">stacksize</span><span class="p">(</span><span class="n">size</span><span class="p">),</span><span class="n">top</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//建立int陣列指標</span>
+        <span class="n">items</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">stacksize</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="o">~</span><span class="n">Stack</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">delete</span> <span class="p">[]</span> <span class="n">items</span><span class="p">;</span><span class="c1">//刪除陣列指標</span>
+        <span class="n">items</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span><span class="c1">//指向null</span>
+    <span class="p">}</span>
+    <span class="cm">/**
+     判斷是否為空
+     */</span>
+    <span class="kt">bool</span> <span class="n">isEmpty</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">top</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="cm">/**
+     判斷是否已滿
+     */</span>
+    <span class="kt">bool</span> <span class="n">isfull</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">top</span> <span class="o">==</span> <span class="n">stacksize</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="cm">/**
+     push stack
+     */</span>
+    <span class="kt">bool</span> <span class="n">push</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//如果stack數量 小於 stacksize</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">top</span> <span class="o">&lt;</span> <span class="n">stacksize</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">items</span><span class="p">[</span><span class="n">top</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="n">item</span><span class="p">;</span><span class="c1">//把item加入</span>
+            <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="cm">/**
+     pop stack
+     */</span>
+    <span class="kt">bool</span> <span class="n">pop</span><span class="p">(</span><span class="kt">int</span><span class="o">&amp;</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">top</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">item</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="o">--</span><span class="n">top</span><span class="p">];</span>
+            <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第1行，template為類別模板宣告，&lt;class K, class V&gt;資料型態參數宣告(type parameter)。</p>
+<p>第3行，私有成員屬性items，資料型態為int指標，指向int陣列的第0筆位址。</p>
 
-<p>第2行，類別模板的名稱為MyMap。</p>
+<p>第4行，私有成員屬性stacksize，資料型態為int，存放stack最大的容量。</p>
 
-<p>第5行，建構式，初始私有成員key與value。</p>
+<p>第5行，私有成員屬性top，資料型態為int，記錄目前stack最頂端的index位置。</p>
 
-<p>第6行，取得私有成員key。</p>
+<p>第8行，建構式，初始化成員stacksize與top。</p>
 
-<p>第9行，取得私有成員value。</p>
+<p>第10行，動態配置int陣列。</p>
 
-<p>第13行，私有成員key。</p>
+<p>第12行，解構式。</p>
 
-<p>第14行，私有成員value。</p>
+<p>第13行，從記憶體回收items的空間。</p>
 
-<h2 id="使用類別模板">使用類別模板</h2>
+<p>第14行，將回收的空間指向null。</p>
+
+<p>第20行，若top位置在0，表示為空。</p>
+
+<p>第25行，若top位置在stacksize代表空間已滿。</p>
+
+<p>第31行，函式是將item推入stack，參數為參考資料型態。</p>
+
+<p>第33行，目前stack最頂端的index位置小於stack最大容量就做if的區塊。</p>
+
+<p>第34行，先做items[top] = item的動作，再做top++的動作。</p>
+
+<p>第42行，參數為參考資料型態，stack彈出頂端的值暫時放置的變數。</p>
+
+<p>第44行，先將top–的動作，再做items[top]的動作。</p>
+
+<h3 id="使用stack">使用Stack</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1113,31 +1205,186 @@ template &lt; class         T1       ,   class T2&gt;
 8
 9
 10
+11
+12
+13
+14
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">MyMap</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">myMap</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s">"test"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap key="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap</span><span class="p">.</span><span class="n">getKey</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap value="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap</span><span class="p">.</span><span class="n">getValue</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="n">MyMap</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span> <span class="n">string</span><span class="o">&gt;</span> <span class="o">*</span><span class="n">myMap_P1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyMap</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"abc"</span><span class="p">,</span><span class="s">"def"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap_P1 key="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap_P1</span><span class="o">-&gt;</span><span class="n">getKey</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap_P1 value="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap_P1</span><span class="o">-&gt;</span><span class="n">getValue</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">Stack</span> <span class="n">myStack</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+    <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+    <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+    <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+    <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
+    <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">item</span><span class="p">;</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">myStack</span><span class="p">.</span><span class="n">isEmpty</span><span class="p">()</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">myStack</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"item = "</span> <span class="o">&lt;&lt;</span> <span class="n">item</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
         <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第2行，建立物件，用尖括號&lt;K,V&gt;  指定參數資料型態，K的資料型態為int，V的資料型態為string，呼叫二個參數的建構式。</p>
+<p>第2行，建立stack物件，最大存放數量為5。</p>
 
-<p>第3行，印出值。</p>
+<p>第3~7行，依序塞入1~5。</p>
 
-<p>第4行，印出值。</p>
+<p>第8行，宣告暫時存放變數item。</p>
 
-<p>第6行，動態配置建立物件，用尖括號&lt;K,V&gt;  指定參數資料型態，K的資料型態為string，V的資料型態為string，使用new動態配置建立物件，(
-“abc”,”def”)呼叫二個參數的建構式。</p>
+<p>第9行，若stack不為空就進入循環。</p>
 
-<p>第7行，使用-&gt;印出值。</p>
+<p>第10行，將stack的頂端拿出來，放在變數item。</p>
 
-<p>第8行，使用-&gt;印出值。</p>
+<p>第11行，印出item。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果 
+item = 5
+item = 4
+item = 3
+item = 2
+item = 1 
+</code></pre></div></div>
+<h2 id="stack-typedef實作">Stack typedef實作</h2>
+
+<p>將上面的程式修改成自定義資料型態DataType。以下有黃色的部分是有變更的程式碼。</p>
+
+<pre>
+<span class="markline">typedef int DataType;</span>
+class Stack{
+private:
+    <span class="markline">DataType</span> *items; //陣列指標
+    int stacksize;//stack大小
+    int top;//目前stack的數量(stack 頂端)
+public:
+    //建構式，初始化成員stacksize與top
+    Stack(int size):stacksize(size),top(0) {
+        //建立int陣列指標
+        items = new <span class="markline">DataType</span>[stacksize];
+    }
+    ~Stack() {
+        delete [] items;//刪除陣列指標
+        items = nullptr;//指向null
+    }
+    /**
+     判斷是否為空
+     */
+    bool isEmpty() const {
+        return top == 0;
+    }
+    /**
+     判斷是否已滿
+     */
+    bool isfull() {
+        return top == stacksize;
+    }
+    /**
+     push stack
+     */
+    bool push(const <span class="markline">DataType&amp;</span> item) {
+        //如果stack數量 小於 stacksize
+        if(top &lt; stacksize) {
+            items[top++] = item;//把item加入
+            return true;
+        }
+        return false;
+    }
+    /**
+     pop stack
+     */
+    bool pop(<span class="markline">DataType&amp;</span> item) {
+        if(top &gt; 0) {
+            item = items[--top];
+            return true;
+        }
+        return false;
+    }
+};
+int main() {
+    Stack myStack(5);
+    myStack.push(1);
+    myStack.push(2);
+    myStack.push(3);
+    myStack.push(4);
+    myStack.push(5);
+    <span class="markline">DataType</span> item;
+    while(myStack.isEmpty() == false) {
+        myStack.pop(item);
+        cout &lt;&lt; "item = " &lt;&lt; item &lt;&lt; endl;
+    }
+    return 0;
+}    
+</pre>
+
+<h2 id="stack-模板實作">Stack 模板實作</h2>
+
+<p>將上面的程式再修改成模板，以下有黃色的部分是有變更的程式碼。</p>
+
+<pre>
+<span class="markline">template &lt;class DataType&gt;</span>
+class Stack{
+private:
+    DataType *items; //陣列指標
+    int stacksize;//stack大小
+    int top;//目前stack的數量(stack 頂端)
+public:
+    //建構式，初始化成員stacksize與top
+    Stack(int size):stacksize(size),top(0) {
+        //建立int陣列指標
+        items = new DataType[stacksize];
+    }
+    ~Stack() {
+        delete [] items;//刪除陣列指標
+        items = nullptr;//指向null
+    }
+    /**
+     判斷是否為空
+     */
+    bool isEmpty() const {
+        return top == 0;
+    }
+    /**
+     判斷是否已滿
+     */
+    bool isfull() {
+        return top == stacksize;
+    }
+    /**
+     push stack
+     */
+    bool push(const DataType&amp; item) {
+        //如果stack數量 小於 stacksize
+        if(top &lt; stacksize) {
+            items[top++] = item;//把item加入
+            return true;
+        }
+        return false;
+    }
+    /**
+     pop stack
+     */
+    bool pop(DataType&amp; item) {
+        if(top &gt; 0) {
+            item = items[--top];
+            return true;
+        }
+        return false;
+    }
+};
+int main() {
+    Stack<span class="markline">&lt;int&gt;</span> myStack(5);
+    myStack.push(1);
+    myStack.push(2);
+    myStack.push(3);
+    myStack.push(4);
+    myStack.push(5);
+    <span class="markline">int</span> item;
+    while(myStack.isEmpty() == false) {
+        myStack.pop(item);
+        cout &lt;&lt; "item = " &lt;&lt; item &lt;&lt; endl;
+    }
+    return 0;
+}    
+</pre>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1201,14 +1448,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/template/funTemplate" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 函式模板">
+                        <a href="/pages/c/template/class_template" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 類別模板">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/template/stackTemplate" class="navigation navigation-next navigation-unique" aria-label="Next page: Stack實作(int Array)">
+                        <a href="/pages/c/template/foreach_template" class="navigation navigation-next navigation-unique" aria-label="Next page: foreach模板">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1226,11 +1473,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "函式模板",
+            "title": "資料型態範圍",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/template/funTemplate.md",
-            "ref": "_pages/c/template/funTemplate.md",
+            "path": "_pages/c/basic/typicalRange.md",
+            "ref": "_pages/c/basic/typicalRange.md",
             "articles": []
         },
         
@@ -1322,13 +1569,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/template/classTemplate.md",
-        "mtime": "2024-04-22 00:00:00 +0800",
+        "path": "_pages/c/template/stack_template.md",
+        "mtime": "2024-04-23 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-11-28 15:47:24 +0800"
+        "time": "2024-11-30 23:12:59 +0800"
     },
     "basePath": "",
     "book": {

@@ -233,5 +233,5 @@ int main() {
 [3]: {% link _pages/c/function/functionPointer.md %}#typedef函式指標類型別名
 [4]: {% link _pages/c/function/func_ref.md %}
 [5]: {% link _pages/c/function/using_func_pointer.md %}
-[6]: {% link _pages/c/class/operator_brackets.md %}
+[6]: {% link _pages/c/class/functor.md %}
 [7]: {% link _pages/c/function/lambda.md %}

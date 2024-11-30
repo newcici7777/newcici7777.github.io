@@ -80,7 +80,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Function|函式|函數|
 |callback|回呼函式|回調函數|
 |return|函式傳回值|函數返回值|
-|Functor|物件函式|仿函數|
+
 
 ## 指標相關
 
@@ -135,5 +135,5 @@ struct|結構|結構體|
 |member variable|成員屬性|成員變量|
 |member function|成員方法|成員函數|
 |::scope resolution operator|範圍運算子|域作用符|
-
+|Functor|物件函式|仿函數|
 

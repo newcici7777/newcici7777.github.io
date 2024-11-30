@@ -6,7 +6,6 @@ menu:
       - title: 寫C++在MAC
         url: 
         subnav:
-          - url: _pages/c/editor/format.md
           - url: _pages/c/editor/xcode.md
           - url: _pages/c/editor/vscode.md
           - url: _pages/c/editor/clang.md
@@ -16,17 +15,18 @@ menu:
           - url: _pages/c/editor/rvo.md
       - title: 台灣大陸c++名詞差異
         url: _pages/c/basic/simpleTraditionC.md          
-      - title: 資料型態
-        url:
-        subnav:
-          - url: _pages/c/basic/typicalRange.md
-          - url: _pages/c/basic/charType.md   
-          - url: _pages/c/basic/boolType.md   
-          - url: _pages/c/basic/printformat.md
-          - url: _pages/c/basic/typedef.md  
       - title: 基本知識
         url:
         subnav:
+          - url: _pages/c/editor/format.md
+          - title: 資料型態
+            url:
+            subnav:
+              - url: _pages/c/basic/typicalRange.md
+              - url: _pages/c/basic/charType.md   
+              - url: _pages/c/basic/boolType.md   
+              - url: _pages/c/basic/printformat.md
+              - url: _pages/c/basic/typedef.md            
           - url: _pages/c/basic/param.md
           - url: _pages/c/basic/scope.md
           - url: _pages/c/basic/loop.md
@@ -143,8 +143,8 @@ menu:
           - url: _pages/c/class/copy_constructor.md
           - url: _pages/c/class/deep_shallow_copy.md
           - url: _pages/c/class/operator_assign.md
-          - url: _pages/c/class/operator_brackets.md
-          - url: _pages/c/class/operator+.md
+          - url: _pages/c/class/functor.md
+          - url: _pages/c/class/operator_add.md
           - url: _pages/c/class/operator_equal.md                                                       
       - title: 轉型
         url:
@@ -154,9 +154,11 @@ menu:
       - title: 模板
         url:
         subnav:
-          - url: _pages/c/template/funTemplate.md
-          - url: _pages/c/template/classTemplate.md
-          - url: _pages/c/template/stackTemplate.md
+          - url: _pages/c/template/function_template.md
+          - url: _pages/c/template/class_template.md
+          - url: _pages/c/template/stack_template.md
+          - url: _pages/c/template/foreach_template.md
+          - url: _pages/c/template/findif_template.md
       - title: STL Containers
         url:
         subnav:

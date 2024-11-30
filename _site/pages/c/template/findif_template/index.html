@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>operator() · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>find_if模板 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -75,13 +75,6 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/editor/format" onclick="pageScrollToTop(this)"> 程式碼格式</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
     	<a href="/pages/c/editor/xcode" onclick="pageScrollToTop(this)"> Xcode</a>
         
             
@@ -137,6 +130,16 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 基本知識 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/format" onclick="pageScrollToTop(this)"> 程式碼格式</a>
+        
+            
+        </li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
 	
 	
@@ -173,9 +176,6 @@
         
             
         </li></ul></li>
-	
-	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 基本知識 </a><ul>
 	
 	
 	<li class="">
@@ -810,18 +810,15 @@
         </li>
 	
 	
-	<li class="active">
-    	<a href="/pages/c/class/operator_brackets" onclick="pageScrollToTop(this)"> operator()</a>
+	<li class="">
+    	<a href="/pages/c/class/functor" onclick="pageScrollToTop(this)"> operator()物件函式</a>
         
-            
-                <ul><li><a href="#物件函式" onclick="mobilePageScrollToAnchor(this)" >物件函式</a></li><li><a href="#全域函式與物件函式同名如何執行" onclick="mobilePageScrollToAnchor(this)" >全域函式與物件函式同名如何執行？</a></li></ul>
-
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/class/operator+" onclick="pageScrollToTop(this)"> operator+()</a>
+    	<a href="/pages/c/class/operator_add" onclick="pageScrollToTop(this)"> operator+()</a>
         
             
         </li>
@@ -855,22 +852,39 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/template/funTemplate" onclick="pageScrollToTop(this)"> 函式模板</a>
+    	<a href="/pages/c/template/function_template" onclick="pageScrollToTop(this)"> 函式模板</a>
         
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/template/classTemplate" onclick="pageScrollToTop(this)"> 類別模板</a>
+    	<a href="/pages/c/template/class_template" onclick="pageScrollToTop(this)"> 類別模板</a>
         
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/template/stackTemplate" onclick="pageScrollToTop(this)"> Stack實作(int Array)</a>
+    	<a href="/pages/c/template/stack_template" onclick="pageScrollToTop(this)"> Stack實作(int Array)</a>
         
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/foreach_template" onclick="pageScrollToTop(this)"> foreach模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="active">
+    	<a href="/pages/c/template/findif_template" onclick="pageScrollToTop(this)"> find_if模板</a>
+        
+            
+                <ul><li><a href="#增加搜尋值與傳回值" onclick="mobilePageScrollToAnchor(this)" >增加搜尋值與傳回值</a></li><li><a href="#修改callback函式指標模板" onclick="mobilePageScrollToAnchor(this)" >修改callback函式指標模板</a></li><li><a href="#修改callback物件函式模板" onclick="mobilePageScrollToAnchor(this)" >修改callback物件函式模板</a></li><li><a href="#呼叫findif模板" onclick="mobilePageScrollToAnchor(this)" >呼叫findif模板</a></li><li><a href="#完整程式碼" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li><li><a href="#物件函式使用建構子搜尋值作為參數" onclick="mobilePageScrollToAnchor(this)" >物件函式，使用建構子，搜尋值作為參數</a></li></ul>
+
             
         </li></ul></li>
 	
@@ -1028,7 +1042,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >operator()</a>
+                            <a href="." >find_if模板</a>
                         
                     </h1>
                 </div>
@@ -1041,46 +1055,26 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/class/operator_brackets">operator()</h1>
+                        <h1 id="/pages/c/template/findif_template">find_if模板</h1>
                     
 
-                    <h2 id="物件函式">物件函式</h2>
-
-<p>物件名本身就是函式名，但使用方法像呼叫函式一樣。</p>
-
-<p>必須在類別裡面定義</p>
-
-<p>以下回傳值型態與參數可自定義，沒有限制，但函式名必須為<code class="language-plaintext highlighter-rouge">operator()</code></p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre>    <span class="err">回傳值型態</span> <span class="k">operator</span><span class="p">()(</span><span class="err">參數</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"要做的事"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>呼叫物件函式步驟</p>
-<ul>
-  <li>建立物件</li>
-  <li>呼叫物件函式</li>
+                    <ul>
+  <li><a href="/pages/c/basic/loop/#continue-回到迴圈的條件判斷式">continue</a></li>
+  <li><a href="/pages/c/class/functor/">物件函式</a></li>
+  <li><a href="/pages/c/template/foreach_template/">foreach模板</a></li>
 </ul>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="code"><pre>    <span class="c1">//建立物件</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="c1">//呼叫物件函式，注意!這裡不是呼叫建構子</span>
-    <span class="n">student</span><span class="p">();</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p>find_if()函式</p>
 
-<p>完整程式碼</p>
+<p>若在容器中找到元素就返回疊代器iterator，找不到就返回容器最後一個元素的下一個位址</p>
+
+<h2 id="增加搜尋值與傳回值">增加搜尋值與傳回值</h2>
+
+<p>將foreach模板的程式拿來修改，增加搜尋值T3的模板參數與T1的模板回傳值。</p>
+
+<p>找到欲搜尋的值T3，就返回iterator</p>
+
+<p>找不到就回傳容器最後一個元素的下一個位址。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1090,44 +1084,67 @@
 5
 6
 7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-<span class="nl">public:</span>
-    <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
-    <span class="kt">void</span> <span class="k">operator</span><span class="p">()()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">};</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立物件</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="c1">//呼叫物件函式，注意!這裡不是呼叫建構子</span>
-    <span class="n">student</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</pre></td><td class="code"><pre><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T1</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">T2</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">T3</span><span class="p">&gt;</span>
+<span class="n">T1</span> <span class="nf">findif</span><span class="p">(</span><span class="k">const</span> <span class="n">T1</span> <span class="n">first</span><span class="p">,</span> <span class="k">const</span> <span class="n">T1</span> <span class="n">last</span><span class="p">,</span> <span class="n">T2</span> <span class="n">callback</span><span class="p">,</span> <span class="n">T3</span> <span class="n">search_val</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">first</span><span class="p">;</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">last</span><span class="p">;</span> <span class="n">it</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">callback</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">,</span> <span class="n">search_val</span><span class="p">)</span> <span class="o">==</span> <span class="nb">true</span><span class="p">)</span> <span class="k">return</span> <span class="n">it</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">last</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello
-</code></pre></div></div>
+<h2 id="修改callback函式指標模板">修改callback函式指標模板</h2>
 
-<h2 id="全域函式與物件函式同名如何執行">全域函式與物件函式同名如何執行？</h2>
+<p>增加搜尋值T的模板參數，回傳bool，判斷msg是否與要搜尋的值相同。</p>
 
-<p>有一個全域函式名為student()</p>
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="p">&gt;</span>
+<span class="kt">bool</span> <span class="nf">callback</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">,</span> <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">search_val</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">msg</span> <span class="o">==</span> <span class="n">search_val</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
-<p>有一個物件函式名為student()</p>
+<h2 id="修改callback物件函式模板">修改callback物件函式模板</h2>
 
-<p>如何區別，使用::範圍運算子，來進行區別。</p>
+<p>增加搜尋值T的模板參數，回傳bool，判斷msg是否與要搜尋的值相同。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="p">&gt;</span>
+<span class="k">class</span> <span class="nc">Callback</span> <span class="p">{</span>
+ <span class="nl">public:</span>
+  <span class="kt">bool</span> <span class="k">operator</span><span class="p">()(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">,</span> <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">search_val</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">msg</span> <span class="o">==</span> <span class="n">search_val</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="呼叫findif模板">呼叫findif模板</h2>
+
+<p>傳回值為iterator，把iterator指標的值印出來。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>  <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;::</span><span class="n">iterator</span> <span class="n">it1</span> <span class="o">=</span> <span class="n">findif</span><span class="p">(</span><span class="n">v2</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v2</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">Callback</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(),</span> <span class="s">"03"</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"找到 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">it1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="完整程式碼">完整程式碼</h2>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1151,33 +1168,122 @@
 19
 20
 21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-<span class="nl">public:</span>
-    <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
-    <span class="kt">void</span> <span class="k">operator</span><span class="p">()()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+<span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="p">&gt;</span>
+<span class="kt">bool</span> <span class="nf">callback</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">,</span> <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">search_val</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">msg</span> <span class="o">==</span> <span class="n">search_val</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="p">&gt;</span>
+<span class="k">class</span> <span class="nc">Callback</span> <span class="p">{</span>
+ <span class="nl">public:</span>
+  <span class="kt">bool</span> <span class="k">operator</span><span class="p">()(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">,</span> <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">search_val</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">msg</span> <span class="o">==</span> <span class="n">search_val</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
-<span class="kt">void</span> <span class="n">student</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"abcdefghijkl......"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T1</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">T2</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">T3</span><span class="p">&gt;</span>
+<span class="n">T1</span> <span class="n">findif</span><span class="p">(</span><span class="k">const</span> <span class="n">T1</span> <span class="n">first</span><span class="p">,</span> <span class="k">const</span> <span class="n">T1</span> <span class="n">last</span><span class="p">,</span> <span class="n">T2</span> <span class="n">callback</span><span class="p">,</span> <span class="n">T3</span> <span class="n">search_val</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">first</span><span class="p">;</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">last</span><span class="p">;</span> <span class="n">it</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">callback</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">,</span> <span class="n">search_val</span><span class="p">)</span> <span class="o">==</span> <span class="nb">true</span><span class="p">)</span> <span class="k">return</span> <span class="n">it</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">last</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立物件</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="c1">//呼叫全域student()</span>
-    <span class="o">::</span><span class="n">student</span><span class="p">();</span>
-    <span class="c1">//呼叫物件函式</span>
-    <span class="n">student</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">v2</span> <span class="o">=</span> <span class="p">{</span><span class="s">"01"</span><span class="p">,</span> <span class="s">"02"</span><span class="p">,</span> <span class="s">"03"</span><span class="p">,</span> <span class="s">"04"</span><span class="p">,</span> <span class="s">"05"</span><span class="p">};</span>
+  <span class="c1">//物件函式</span>
+  <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;::</span><span class="n">iterator</span> <span class="n">it1</span> <span class="o">=</span> <span class="n">findif</span><span class="p">(</span><span class="n">v2</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v2</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">Callback</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(),</span> <span class="s">"03"</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"找到 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">it1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//函式指標</span>
+  <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;::</span><span class="n">iterator</span> <span class="n">it2</span> <span class="o">=</span> <span class="n">findif</span><span class="p">(</span><span class="n">v2</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v2</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">callback</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="p">,</span> <span class="s">"05"</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"找到 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">it2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>abcdefghijkl......
-Hello
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>找到 = 03
+找到 = 05
 </code></pre></div></div>
+
+<h2 id="物件函式使用建構子搜尋值作為參數">物件函式，使用建構子，搜尋值作為參數</h2>
+
+<ul>
+  <li><a href="/pages/c/class/init_list/">建構子初始化</a></li>
+</ul>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="p">&gt;</span>
+<span class="k">class</span> <span class="nc">Callback</span> <span class="p">{</span>
+ <span class="nl">public:</span>
+  <span class="n">T</span> <span class="n">search_val</span><span class="p">;</span>
+  <span class="n">Callback</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">search_val</span><span class="p">)</span><span class="o">:</span><span class="n">search_val</span><span class="p">(</span><span class="n">search_val</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="kt">bool</span> <span class="k">operator</span><span class="p">()(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">msg</span> <span class="o">==</span> <span class="n">search_val</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+<span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T1</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">T2</span><span class="p">&gt;</span>
+<span class="n">T1</span> <span class="n">findif</span><span class="p">(</span><span class="k">const</span> <span class="n">T1</span> <span class="n">first</span><span class="p">,</span> <span class="k">const</span> <span class="n">T1</span> <span class="n">last</span><span class="p">,</span> <span class="n">T2</span> <span class="n">callback</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">first</span><span class="p">;</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">last</span><span class="p">;</span> <span class="n">it</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">callback</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">)</span> <span class="o">==</span> <span class="nb">true</span><span class="p">)</span> <span class="k">return</span> <span class="n">it</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">last</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">v2</span> <span class="o">=</span> <span class="p">{</span><span class="s">"01"</span><span class="p">,</span> <span class="s">"02"</span><span class="p">,</span> <span class="s">"03"</span><span class="p">,</span> <span class="s">"04"</span><span class="p">,</span> <span class="s">"05"</span><span class="p">};</span>
+  <span class="c1">//物件函式</span>
+  <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;::</span><span class="n">iterator</span> <span class="n">it1</span> <span class="o">=</span> <span class="n">findif</span><span class="p">(</span><span class="n">v2</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v2</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">Callback</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"03"</span><span class="p">));</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"找到 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">it1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>技巧:</p>
+
+<p>在迴圈中，若函式()返回true，就continue回到迴圈的條件判斷式，返回false就繼續執行接下來的程式碼。</p>
+
+<p>之後sort模板會利用到這個技巧。</p>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1241,14 +1347,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/class/operator_assign" class="navigation navigation-prev navigation-unique" aria-label="Previous page: operator=()">
+                        <a href="/pages/c/template/foreach_template" class="navigation navigation-prev navigation-unique" aria-label="Previous page: foreach模板">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/class/operator+" class="navigation navigation-next navigation-unique" aria-label="Next page: operator+()">
+                        <a href="/pages/c/stl/string" class="navigation navigation-next navigation-unique" aria-label="Next page: string">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1266,11 +1372,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "operator==()",
+            "title": "foreach模板",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/class/operator_equal.md",
-            "ref": "_pages/c/class/operator_equal.md",
+            "path": "_pages/c/template/foreach_template.md",
+            "ref": "_pages/c/template/foreach_template.md",
             "articles": []
         },
         
@@ -1362,13 +1468,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/class/operator_brackets.md",
-        "mtime": "2024-10-28 00:00:00 +0800",
+        "path": "_pages/c/template/findif_template.md",
+        "mtime": "2024-11-29 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-11-28 15:47:24 +0800"
+        "time": "2024-11-30 23:12:59 +0800"
     },
     "basePath": "",
     "book": {
