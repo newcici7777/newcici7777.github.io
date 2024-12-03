@@ -1,0 +1,2117 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+<meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>安裝openssh-server · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/base16.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/" type="image/x-icon">
+
+<link rel="stylesheet" href="/assets/custom_css/code.css">
+
+</head>
+    <body>
+        <div class="book">
+            
+            <div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                $('div.body-inner').animate({scrollTop: $($(element).attr('href')).get(0).offsetTop});
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="">
+            
+                <a href="/" onclick="pageScrollToTop(this)">
+                    Cici&#39;s notebook
+                </a>
+            </li>
+            <li class="divider"></li>
+            
+            
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> C++ </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 寫C++在MAC </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/xcode" onclick="pageScrollToTop(this)"> Xcode</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/vscode" onclick="pageScrollToTop(this)"> VS on Mac</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/clang" onclick="pageScrollToTop(this)"> 安裝VS在MAC(實作)</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/vsDebug" onclick="pageScrollToTop(this)"> VS Debug</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/cmake" onclick="pageScrollToTop(this)"> Cmake on Mac</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/supportc11" onclick="pageScrollToTop(this)"> Xcode支援C++11以上</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/rvo" onclick="pageScrollToTop(this)"> 關閉RVO</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/simpleTraditionC" onclick="pageScrollToTop(this)"> 台陸指標相關名詞差異</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 基本知識 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/format" onclick="pageScrollToTop(this)"> 程式碼格式</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型態範圍</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/charType" onclick="pageScrollToTop(this)"> char字元</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/boolType" onclick="pageScrollToTop(this)"> bool</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/printformat" onclick="pageScrollToTop(this)"> 整數與浮點數</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/typedef" onclick="pageScrollToTop(this)"> typedef類型別名</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/param" onclick="pageScrollToTop(this)"> 參數與引數</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/scope" onclick="pageScrollToTop(this)"> 變數可見範圍與生命週期</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/loop" onclick="pageScrollToTop(this)"> 迴圈</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/chrono" onclick="pageScrollToTop(this)"> 程式執行時間</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/rand" onclick="pageScrollToTop(this)"> 亂數</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 編譯與連結 </a><ul>
+	
+	
+	<li class="active">
+    	<a href="/pages/linux/openssh_server" onclick="pageScrollToTop(this)"> 安裝openssh-server</a>
+        
+            
+                <ul><li><a href="#openssh-server" onclick="mobilePageScrollToAnchor(this)" >openssh-server</a></li><li><a href="#安裝c" onclick="mobilePageScrollToAnchor(this)" >安裝c++</a></li><li><a href="#安裝man-page" onclick="mobilePageScrollToAnchor(this)" >安裝man page</a></li><li><a href="#編譯c與c" onclick="mobilePageScrollToAnchor(this)" >編譯c與c++</a><ul><li><a href="#gcc與g分別" onclick="mobilePageScrollToAnchor(this)" >gcc與g++分別</a></li><li><a href="#g語法" onclick="mobilePageScrollToAnchor(this)" >g++語法</a></li><li><a href="#產生執行檔" onclick="mobilePageScrollToAnchor(this)" >產生執行檔</a><ul><li><a href="#建立檔案" onclick="mobilePageScrollToAnchor(this)" >建立檔案</a></li><li><a href="#產生執行檔-1" onclick="mobilePageScrollToAnchor(this)" >產生執行檔</a></li><li><a href="#執行" onclick="mobilePageScrollToAnchor(this)" >執行</a></li><li><a href="#沒有-o-執行檔名" onclick="mobilePageScrollToAnchor(this)" >沒有-o 執行檔名</a></li><li><a href="#使用2個cpp產生執行檔" onclick="mobilePageScrollToAnchor(this)" >使用2個cpp產生執行檔</a></li></ul></li></ul></li><li><a href="#靜態庫" onclick="mobilePageScrollToAnchor(this)" >靜態庫</a><ul><li><a href="#語法" onclick="mobilePageScrollToAnchor(this)" >語法</a><ul><li><a href="#-c" onclick="mobilePageScrollToAnchor(this)" >-c</a></li><li><a href="#lib庫名a" onclick="mobilePageScrollToAnchor(this)" >lib庫名.a</a></li></ul></li><li><a href="#檔案放置路徑" onclick="mobilePageScrollToAnchor(this)" >檔案放置路徑</a></li><li><a href="#publich" onclick="mobilePageScrollToAnchor(this)" >public.h</a></li><li><a href="#publiccpp" onclick="mobilePageScrollToAnchor(this)" >public.cpp</a></li><li><a href="#hellocpp" onclick="mobilePageScrollToAnchor(this)" >hello.cpp</a></li><li><a href="#產生靜態庫" onclick="mobilePageScrollToAnchor(this)" >產生靜態庫</a></li><li><a href="#使用靜態庫" onclick="mobilePageScrollToAnchor(this)" >使用靜態庫</a><ul><li><a href="#法1" onclick="mobilePageScrollToAnchor(this)" >法1</a></li><li><a href="#法2" onclick="mobilePageScrollToAnchor(this)" >法2</a></li></ul></li></ul></li><li><a href="#動態庫" onclick="mobilePageScrollToAnchor(this)" >動態庫</a><ul><li><a href="#使用動態庫" onclick="mobilePageScrollToAnchor(this)" >使用動態庫</a><ul><li><a href="#法1-1" onclick="mobilePageScrollToAnchor(this)" >法1</a></li><li><a href="#法2-1" onclick="mobilePageScrollToAnchor(this)" >法2</a></li></ul></li><li><a href="#模擬更新動態庫" onclick="mobilePageScrollToAnchor(this)" >模擬更新動態庫</a><ul><li><a href="#將publiccpp的程式碼更新" onclick="mobilePageScrollToAnchor(this)" >將public.cpp的程式碼更新。</a></li><li><a href="#重新建立動態庫" onclick="mobilePageScrollToAnchor(this)" >重新建立動態庫</a></li><li><a href="#執行主程式" onclick="mobilePageScrollToAnchor(this)" >執行主程式</a></li><li><a href="#總結" onclick="mobilePageScrollToAnchor(this)" >總結</a></li></ul></li></ul></li><li><a href="#makefile" onclick="mobilePageScrollToAnchor(this)" >makefile</a><ul><li><a href="#建立makefile" onclick="mobilePageScrollToAnchor(this)" >建立makefile</a><ul><li><a href="#產生靜態庫動態庫" onclick="mobilePageScrollToAnchor(this)" >產生靜態庫,動態庫</a></li><li><a href="#動態庫或靜態庫中的cpp更新重新編譯" onclick="mobilePageScrollToAnchor(this)" >動態庫或靜態庫中的cpp更新，重新編譯</a></li><li><a href="#clean刪除編譯完的檔案" onclick="mobilePageScrollToAnchor(this)" >clean刪除編譯完的檔案</a></li></ul></li><li><a href="#使用makefile" onclick="mobilePageScrollToAnchor(this)" >使用makefile</a><ul><li><a href="#清理" onclick="mobilePageScrollToAnchor(this)" >清理</a></li><li><a href="#產生靜態庫動態庫-1" onclick="mobilePageScrollToAnchor(this)" >產生靜態庫,動態庫</a></li></ul></li><li><a href="#多動態庫使用" onclick="mobilePageScrollToAnchor(this)" >多動態庫使用</a><ul><li><a href="#建立myapi庫" onclick="mobilePageScrollToAnchor(this)" >建立myapi庫</a></li><li><a href="#-i" onclick="mobilePageScrollToAnchor(this)" >-I</a></li><li><a href="#為demo01寫makefile" onclick="mobilePageScrollToAnchor(this)" >為demo01寫makefile</a></li><li><a href="#多個檔案" onclick="mobilePageScrollToAnchor(this)" >多個檔案</a></li></ul></li></ul></li></ul>
+
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointer" onclick="pageScrollToTop(this)"> 指標基本觀念</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerConst" onclick="pageScrollToTop(this)"> const與指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/nullptr" onclick="pageScrollToTop(this)"> 0 == nullptr == NULL</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標位址是無效內容</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToPointer" onclick="pageScrollToTop(this)"> 指標的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerArithmetic" onclick="pageScrollToTop(this)"> 指標運算</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指向陣列的指標 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/array" onclick="pageScrollToTop(this)"> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/pointerToArray" onclick="pageScrollToTop(this)"> 一維陣列與指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/qsort" onclick="pageScrollToTop(this)"> qsort排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/array2dimen" onclick="pageScrollToTop(this)"> 二維陣列</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/arrayOfPointers" onclick="pageScrollToTop(this)"> 指標陣列存放多個記憶體位址</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 字串 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/charArray" onclick="pageScrollToTop(this)"> char 字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/pointerCharArr" onclick="pageScrollToTop(this)"> char字串指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/string" onclick="pageScrollToTop(this)"> string 字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 實作字串函式 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/strLen" onclick="pageScrollToTop(this)"> 取得字串長度</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/reverseStr" onclick="pageScrollToTop(this)"> 原地反轉字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/integerToStr" onclick="pageScrollToTop(this)"> 整數轉成字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/stringToInt" onclick="pageScrollToTop(this)"> 字串轉成數字</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/stringCopy" onclick="pageScrollToTop(this)"> 字串拷貝</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/stringCat" onclick="pageScrollToTop(this)"> 字串連結</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/strchr" onclick="pageScrollToTop(this)"> 字元搜尋</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/strcmp" onclick="pageScrollToTop(this)"> 字串比較</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/strstr" onclick="pageScrollToTop(this)"> 字串搜尋</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/delstr" onclick="pageScrollToTop(this)"> 刪除字元</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/split" onclick="pageScrollToTop(this)"> split 切割字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/xml" onclick="pageScrollToTop(this)"> xml搜尋</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/chineseAscii" onclick="pageScrollToTop(this)"> ASCII與中文</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 參考 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/reference" onclick="pageScrollToTop(this)"> 參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/refToPointer" onclick="pageScrollToTop(this)"> 參考指向指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/l_ref_func" onclick="pageScrollToTop(this)"> 等號左邊的函式</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 函式 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_def" onclick="pageScrollToTop(this)"> 函式宣告與定義</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_param_pointer" onclick="pageScrollToTop(this)"> 函式參數為指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/callByRef" onclick="pageScrollToTop(this)"> 函式傳參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_return_ref" onclick="pageScrollToTop(this)"> 函式傳回值是參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_overload" onclick="pageScrollToTop(this)"> 函式多載</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_inline" onclick="pageScrollToTop(this)"> 內嵌函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_default_param" onclick="pageScrollToTop(this)"> 函式參數預設值</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_ref" onclick="pageScrollToTop(this)"> 函式參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/auto_func" onclick="pageScrollToTop(this)"> auto與函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/lambda" onclick="pageScrollToTop(this)"> lambda</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/using_func_pointer" onclick="pageScrollToTop(this)"> using函式指標別名</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 記憶體 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/memoryLayout" onclick="pageScrollToTop(this)"> 記憶體配置</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/newDelete" onclick="pageScrollToTop(this)"> new/delete</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/nothrow" onclick="pageScrollToTop(this)"> 記憶體不足</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/memset" onclick="pageScrollToTop(this)"> memset</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/memory_interval" onclick="pageScrollToTop(this)"> 記憶體間隔計算</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 結構 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_def" onclick="pageScrollToTop(this)"> 定義結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_char" onclick="pageScrollToTop(this)"> 結構與字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_init" onclick="pageScrollToTop(this)"> 初始化結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_array" onclick="pageScrollToTop(this)"> 結構陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_pointer" onclick="pageScrollToTop(this)"> 指標指向結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/nestedStruct" onclick="pageScrollToTop(this)"> 巢狀結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/arrayInStruct" onclick="pageScrollToTop(this)"> 結構中的陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/pointerInStruct" onclick="pageScrollToTop(this)"> 結構中的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/linked_list" onclick="pageScrollToTop(this)"> 鏈結串列</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料結構與演算法 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/arrayList" onclick="pageScrollToTop(this)"> ArrayList實作</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/arrayListExtCap" onclick="pageScrollToTop(this)"> ArrayList擴展容量</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/linkedList" onclick="pageScrollToTop(this)"> 單向鏈結串列實作</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/doublelinkedList" onclick="pageScrollToTop(this)"> 雙向鏈結串列實作</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/stack" onclick="pageScrollToTop(this)"> Stack實作</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/queue" onclick="pageScrollToTop(this)"> Queue實作</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/bubbleSort" onclick="pageScrollToTop(this)"> 氣泡排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/insertSort" onclick="pageScrollToTop(this)"> 插入排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/quickSort" onclick="pageScrollToTop(this)"> 快速排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/mergeSort" onclick="pageScrollToTop(this)"> 合併排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/recursion" onclick="pageScrollToTop(this)"> 遞迴</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 類別與物件 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/class" onclick="pageScrollToTop(this)"> 類別與物件</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/enum" onclick="pageScrollToTop(this)"> Enum列舉</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/constructor" onclick="pageScrollToTop(this)"> 建構子與解構子</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/anonymous_obj" onclick="pageScrollToTop(this)"> 匿名物件</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/temp_obj" onclick="pageScrollToTop(this)"> 臨時物件temporary object</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/init_list" onclick="pageScrollToTop(this)"> 建構子初始化列表</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/member_class" onclick="pageScrollToTop(this)"> 成員變數是類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/static_class" onclick="pageScrollToTop(this)"> 靜態類別變數與函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/copy_constructor" onclick="pageScrollToTop(this)"> 拷貝函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/deep_shallow_copy" onclick="pageScrollToTop(this)"> 深淺拷貝</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/operator_assign" onclick="pageScrollToTop(this)"> operator=()</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/functor" onclick="pageScrollToTop(this)"> operator()物件函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/operator_add" onclick="pageScrollToTop(this)"> operator+()</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/operator_equal" onclick="pageScrollToTop(this)"> operator==()</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/conversion/implicit" onclick="pageScrollToTop(this)"> 自動轉型</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/conversion/explicit" onclick="pageScrollToTop(this)"> 強制轉型</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 模板 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/function_template" onclick="pageScrollToTop(this)"> 函式模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/function_class_template" onclick="pageScrollToTop(this)"> 類別中函式模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/special_template" onclick="pageScrollToTop(this)"> 模板特製化</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/class_template" onclick="pageScrollToTop(this)"> 類別模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/stack_template" onclick="pageScrollToTop(this)"> Stack實作(int Array)</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/foreach_template" onclick="pageScrollToTop(this)"> foreach模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/findif_template" onclick="pageScrollToTop(this)"> find_if模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/bsort_template" onclick="pageScrollToTop(this)"> 氣泡排序模板</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> STL Containers </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/stl/string" onclick="pageScrollToTop(this)"> string</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/stl/iterator" onclick="pageScrollToTop(this)"> iterator疊代器</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> c11 </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 左值與右值 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/rvalue/l_r_value" onclick="pageScrollToTop(this)"> l-value與r-value</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/rvalue/l_r_ref" onclick="pageScrollToTop(this)"> l-value參考與r-value參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/rvalue/constRef" onclick="pageScrollToTop(this)"> const與參考</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/move_operator" onclick="pageScrollToTop(this)"> 移動建構子與移動指派運算子</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/forward" onclick="pageScrollToTop(this)"> forward</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/functional" onclick="pageScrollToTop(this)"> functional</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/bind" onclick="pageScrollToTop(this)"> bind綁定</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/variadic" onclick="pageScrollToTop(this)"> 可變參數模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/callback" onclick="pageScrollToTop(this)"> callback</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> pthread </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pthread/create_pthread" onclick="pageScrollToTop(this)"> 建立pthread</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> Thread(C11) </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/thread/create_thread" onclick="pageScrollToTop(this)"> 建立thread</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/thread/join" onclick="pageScrollToTop(this)"> 執行緒記憶體釋放</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/thread/this_thread" onclick="pageScrollToTop(this)"> this_thread</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/thread/mutex" onclick="pageScrollToTop(this)"> 互斥鎖Mutex</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/thread/condition_variable" onclick="pageScrollToTop(this)"> condition_variable</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> Jekyll </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> Install </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/jekyll/install/how_to_install_ruby" onclick="pageScrollToTop(this)"> 安裝 Ruby on Mac</a>
+        
+            
+        </li></ul></li></ul></li></ul>
+    </nav>
+</div>
+            <div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href="." >安裝openssh-server</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/pages/linux/openssh_server">安裝openssh-server</h1>
+                    
+
+                    <h2 id="openssh-server">openssh-server</h2>
+
+<p>以下環境</p>
+
+<p>本機MAC</p>
+
+<p>Ubuntu 24.04</p>
+
+<p>VMware Fusion</p>
+
+<p>以下為Ubuntu虛擬機終端機設定</p>
+
+<ul>
+  <li>更新package list
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt update
+</code></pre></div>    </div>
+  </li>
+  <li>安裝openssh-server
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install openssh-server
+</code></pre></div>    </div>
+    <p>按下y</p>
+  </li>
+  <li>啟動ssh
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl status ssh
+</code></pre></div>    </div>
+    <p>離開按q</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl enable --now ssh
+</code></pre></div>    </div>
+  </li>
+  <li>本機連ssh
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ssh localhost
+</code></pre></div>    </div>
+    <p>按下y</p>
+  </li>
+  <li>重新啟動ssh
+$ sudo systemctl restart ssh</li>
+</ul>
+
+<h2 id="安裝c">安裝c++</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install gcc
+$ sudo apt install g++
+$ sudo apt install build-essential
+$ gcc --version
+$ g++ --version
+</code></pre></div></div>
+<h2 id="安裝man-page">安裝man page</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install manpages-dev manpages-posix-dev
+$ man strcpy
+</code></pre></div></div>
+<p>按q退出
+若跟user command有衝突的函式，請在函式名前輸入3</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ man 3 sleep
+</code></pre></div></div>
+<p>1是user command
+3是Standard C library</p>
+
+<h2 id="編譯c與c">編譯c與c++</h2>
+
+<h3 id="gcc與g分別">gcc與g++分別</h3>
+
+<p>gcc編譯c</p>
+
+<p>g++編譯c++</p>
+
+<h3 id="g語法">g++語法</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ -o 執行檔名 原始檔案1.cpp 原始檔案2.cpp 原始檔案3.cpp 原始檔案N.cpp
+</code></pre></div></div>
+
+<p>常用選項:</p>
+
+<p>-o 設定"執行檔名"</p>
+
+<p>-std=c++11 支援c++11</p>
+
+<p>-c 只編譯，不鏈結</p>
+
+<h3 id="產生執行檔">產生執行檔</h3>
+
+<h4 id="建立檔案">建立檔案</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vi hello.cpp
+</code></pre></div></div>
+<p>將以下的內容貼上</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello world!</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h4 id="產生執行檔-1">產生執行檔</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ g++ -o demo hello.cpp
+</code></pre></div></div>
+<h4 id="執行">執行</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./demo
+</code></pre></div></div>
+<p>Hello world!</p>
+
+<h4 id="沒有-o-執行檔名">沒有-o 執行檔名</h4>
+
+<p>沒有-o 執行檔名，會產生a.out的檔案</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ g++ hello.cpp
+$ ls
+</code></pre></div></div>
+<p>a.out</p>
+
+<h4 id="使用2個cpp產生執行檔">使用2個cpp產生執行檔</h4>
+
+<p>$ vi public.h</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="kt">void</span> <span class="nf">func</span><span class="p">();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>$ vi public.cpp</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">"public.h"</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"call func()"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>$ vi hello.cpp</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">"public.h"</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello world!</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+  <span class="n">func</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ g++ -o demo hello.cpp public.cpp
+$ ./demo
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello world!
+call func()
+</code></pre></div></div>
+
+<h2 id="靜態庫">靜態庫</h2>
+
+<p>將cpp檔案整理成一個庫，產生執行檔可以指定庫名.a，就不用寫很多原始檔案1.cpp 原始檔案2.cpp 原始檔案3.cpp 原始檔案N.cpp</p>
+
+<p>多個procee用到同一個靜態庫中的函式或類別，每個process拷貝一份，多個process就有多個拷貝。</p>
+
+<p>靜態庫是二進制檔案</p>
+
+<p>主程式在鏈結時會把靜態庫加入，產生執行檔。</p>
+
+<p>若某個靜態庫更新了，所有使用它的程式都需要重新編譯。</p>
+
+<h3 id="語法">語法</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ -c -o lib庫名.a 原始檔案1.cpp 原始檔案2.cpp 原始檔案3.cpp 原始檔案N.cpp
+</code></pre></div></div>
+<h4 id="-c">-c</h4>
+
+<p>-c 只編譯，不鏈結</p>
+
+<h4 id="lib庫名a">lib庫名.a</h4>
+
+<p>.a代表靜態庫</p>
+
+<p>lib是固定</p>
+
+<p>庫名可以自由變換</p>
+
+<h3 id="檔案放置路徑">檔案放置路徑</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cici@cici-vm:~/test$ tree
+</code></pre></div></div>
+<p>.
+├── app
+│   └── hello.cpp
+└── tools
+    ├── public.cpp
+    └── public.h</p>
+
+<p>3 directories, 3 files</p>
+
+<p>將以下檔案依上方目錄結構放置。</p>
+
+<h3 id="publich">public.h</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="kt">void</span> <span class="nf">func</span><span class="p">();</span>
+<span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
+ <span class="nl">public:</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">();</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="publiccpp">public.cpp</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">"public.h"</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"call func()"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">Student</span><span class="o">::</span><span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"msg...."</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="hellocpp">hello.cpp</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">"../tools/public.h"</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello world!</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+  <span class="n">func</span><span class="p">();</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="產生靜態庫">產生靜態庫</h3>
+
+<p>進入tools目錄</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd tools
+</code></pre></div></div>
+<p>產生靜態庫</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ g++ -c -o libpublic.a public.cpp
+</code></pre></div></div>
+<h3 id="使用靜態庫">使用靜態庫</h3>
+
+<h4 id="法1">法1</h4>
+
+<p>回到上層</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd..
+</code></pre></div></div>
+<p>產生demo01執行檔，原始檔案有libpublic.a的靜態庫</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ g++ -o demo01 app/hello.cpp tools/libpublic.a
+</code></pre></div></div>
+<p>執行</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./demo01
+</code></pre></div></div>
+<h4 id="法2">法2</h4>
+
+<p>語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ -o 執行檔名 原始檔案1.cpp -L 靜態庫目錄位址 -l 庫名
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ g++ -o demo01 app/hello.cpp -L tools -l public
+</code></pre></div></div>
+
+<h2 id="動態庫">動態庫</h2>
+
+<p>語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ -fPIC -shared -o lib庫名.so 來源檔案1.cpp
+</code></pre></div></div>
+<p>-fPIC -shared 這二句代表製作動態庫</p>
+
+<p>-o 產生檔案</p>
+
+<p>lib庫名.so lib與.so是固定寫法，庫名可以自已取名。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd tools
+$ g++ -fPIC -shared -o libpublic.so public.cpp
+$ rm libpulic.a
+</code></pre></div></div>
+<p>為避免干擾，把libpublic.a靜態庫先刪掉</p>
+
+<h3 id="使用動態庫">使用動態庫</h3>
+
+<p>將cpp檔案整理成一個庫，產生執行檔可以指定庫名.so，就不用寫很多原始檔案1.cpp 原始檔案2.cpp 原始檔案3.cpp 原始檔案N.cpp</p>
+
+<p>動態庫是二進制檔案</p>
+
+<p>多個procee用到同一個動態庫中的函式或類別，在記憶體中只有一份，多個process共享相同程式碼，也稱共享庫，因為只有一份程式碼，不會占用記憶體。</p>
+
+<p>主程式在執行時，才把動態庫程式碼載入到記憶體。</p>
+
+<p>優點，動態庫更新，有用到動態庫的程式不用重新編譯，只需要更新動態庫。</p>
+
+<p>動態庫與靜態庫同時存在，優先使用動態庫。</p>
+
+<h4 id="法1-1">法1</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ..
+$ g++ -o demo01 app/hello.cpp tools/libpublic.so
+$ ./demo01
+</code></pre></div></div>
+
+<h4 id="法2-1">法2</h4>
+
+<p>先增加LD_LIBRARY_PATH環境變數，設定放置動態庫的目錄</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/cici/test/tools
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ g++ -o demo01 app/hello.cpp -L tools -l public
+$ ./demo01
+</code></pre></div></div>
+<p>-L 動態庫目錄位址 -l 庫名</p>
+
+<h3 id="模擬更新動態庫">模擬更新動態庫</h3>
+
+<h4 id="將publiccpp的程式碼更新">將public.cpp的程式碼更新。</h4>
+
+<p>public.cpp</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">"public.h"</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"update all func()"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">Student</span><span class="o">::</span><span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"update msg...."</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h4 id="重新建立動態庫">重新建立動態庫</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd tools
+$ g++ -fPIC -shared -o libpublic.so public.cpp
+</code></pre></div></div>
+
+<h4 id="執行主程式">執行主程式</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ..
+$ ./demo01
+Hello world!
+update call func()
+update msg....
+</code></pre></div></div>
+
+<h4 id="總結">總結</h4>
+
+<p>以上的過程，都不必重新編譯主程式。</p>
+
+<h2 id="makefile">makefile</h2>
+
+<h3 id="建立makefile">建立makefile</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd tools
+$ vi makefile
+</code></pre></div></div>
+<h4 id="產生靜態庫動態庫">產生靜態庫,動態庫</h4>
+
+<p>用空格分開</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>all: libpublic.a libpublic.so
+</code></pre></div></div>
+
+<p>換行用\</p>
+
+<p><span class="markline">注意！第二行是用tab，不是空格</span></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>all: libpublic.a \
+     libpublic.so
+</code></pre></div></div>
+
+<h4 id="動態庫或靜態庫中的cpp更新重新編譯">動態庫或靜態庫中的cpp更新，重新編譯</h4>
+
+<p>編譯靜態庫libpublic.a，需要依賴public.h和public.cpp</p>
+
+<p>若public.h或public.cpp更新，需要重新編譯</p>
+
+<p><span class="markline">注意！第二行是用tab，不是空格</span></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>libpublic.a:public.h public.cpp
+	g++ -c -o libpublic.a public.cpp
+</code></pre></div></div>
+
+<p>編譯動態庫libpublic.so，需要依賴public.h和public.cpp</p>
+
+<p>若public.h或public.cpp更新，需要重新編譯</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>libpublic.so:public.h public.cpp
+	g++ -fPIC -shared -o libpublic.so public.cpp
+</code></pre></div></div>
+
+<h4 id="clean刪除編譯完的檔案">clean刪除編譯完的檔案</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>clean:
+	rm -f libpublic.a libpublic.so
+</code></pre></div></div>
+
+<h3 id="使用makefile">使用makefile</h3>
+
+<h4 id="清理">清理</h4>
+
+<p>語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make clean
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cici@cici-vm:~/test/tools$ ls
+libpublic.a  libpublic.so  makefile  public.cpp  public.h
+cici@cici-vm:~/test/tools$ make clean
+rm -f libpublic.a libpublic.so
+cici@cici-vm:~/test/tools$ ls
+makefile  public.cpp  public.h
+</code></pre></div></div>
+
+<h4 id="產生靜態庫動態庫-1">產生靜態庫,動態庫</h4>
+
+<p>語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cici@cici-vm:~/test/tools$ make
+g++ -c -o libpublic.a public.cpp
+g++ -fPIC -shared -o libpublic.so public.cpp
+cici@cici-vm:~/test/tools$ ls
+libpublic.a  libpublic.so  makefile  public.cpp  public.h
+</code></pre></div></div>
+
+<p>若沒有修改任何.cpp或.h，再次make不會進行動作</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cici@cici-vm:~/test/tools$ make
+make: 對「all」無需做任何事。
+</code></pre></div></div>
+
+<p>修改public.cpp</p>
+
+<p>public.cpp</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">"public.h"</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"update2 all func()"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">Student</span><span class="o">::</span><span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"update2 msg...."</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>若有更改.cpp，make就會重新編譯</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cici@cici-vm:~/test/tools$ vi public.cpp
+cici@cici-vm:~/test/tools$ make
+g++ -c -o libpublic.a public.cpp
+g++ -fPIC -shared -o libpublic.so public.cpp
+</code></pre></div></div>
+
+<p>若刪除靜態檔，再make，就會重新產生靜態檔</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cici@cici-vm:~/test/tools$ rm libpublic.a
+cici@cici-vm:~/test/tools$ make
+g++ -c -o libpublic.a public.cpp
+cici@cici-vm:~/test/tools$ ls
+libpublic.a  libpublic.so  makefile  public.cpp  public.h
+</code></pre></div></div>
+
+<h3 id="多動態庫使用">多動態庫使用</h3>
+
+<h4 id="建立myapi庫">建立myapi庫</h4>
+
+<p>回到最上層目錄，建立api的目錄，並在api目錄中，建立myapi.h</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mkdir api
+$ cd api
+$ vi myapi.h
+</code></pre></div></div>
+
+<p>myapi.h</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="kt">void</span> <span class="nf">func1</span><span class="p">();</span>
+<span class="k">class</span> <span class="nc">Teacher</span> <span class="p">{</span>
+ <span class="nl">public:</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">();</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>myapi.cpp</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">"myapi.h"</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func1</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"call func1()"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">Teacher</span><span class="o">::</span><span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"teacher ... msg ..."</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>進入api目錄，並建立makefile</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="nl">all:</span><span class="n">libmyapi</span><span class="p">.</span><span class="n">a</span> <span class="n">libmyapi</span><span class="p">.</span><span class="n">so</span>
+<span class="n">libmyapi</span><span class="p">.</span><span class="n">a</span><span class="o">:</span><span class="n">myapi</span><span class="p">.</span><span class="n">h</span> <span class="n">myapi</span><span class="p">.</span><span class="n">cpp</span>
+	<span class="n">g</span><span class="o">++</span> <span class="o">-</span><span class="n">c</span> <span class="o">-</span><span class="n">o</span> <span class="n">libmyapi</span><span class="p">.</span><span class="n">a</span> <span class="n">myapi</span><span class="p">.</span><span class="n">cpp</span>
+<span class="n">libmyapi</span><span class="p">.</span><span class="n">so</span><span class="o">:</span><span class="n">myapi</span><span class="p">.</span><span class="n">h</span> <span class="n">myapi</span><span class="p">.</span><span class="n">cpp</span>
+	<span class="n">g</span><span class="o">++</span> <span class="o">-</span><span class="n">fPIC</span> <span class="o">-</span><span class="n">shared</span> <span class="o">-</span><span class="n">o</span> <span class="n">libmyapi</span><span class="p">.</span><span class="n">so</span> <span class="n">myapi</span><span class="p">.</span><span class="n">cpp</span>
+<span class="n">clean</span><span class="o">:</span>
+	<span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="n">libmyapi</span><span class="p">.</span><span class="n">a</span> <span class="n">libmyapi</span><span class="p">.</span><span class="n">so</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cici@cici-vm:~/test/api$ make
+g++ -c -o libmyapi.a myapi.cpp
+g++ -fPIC -shared -o libmyapi.so myapi.cpp
+</code></pre></div></div>
+
+<p>app目錄下的hello.cpp修改</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">"../tools/public.h"</span><span class="cp">
+#include</span> <span class="cpf">"../api/myapi.h"</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello world!</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+  <span class="n">func</span><span class="p">();</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="c1">//新增修改</span>
+  <span class="n">func1</span><span class="p">();</span>
+  <span class="n">Teacher</span> <span class="n">teacher</span><span class="p">;</span>
+  <span class="n">teacher</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>api目錄加到LD_LIBRARY_PATH</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/cici/test/api
+</code></pre></div></div>
+
+<p>回到test目錄下，執行以下語句，設定myapi動態檔放置的目錄(-L)與庫名(-l)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ g++ -o demo01 app/hello.cpp -L tools -l public -L api -l myapi
+$ ./demo01
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello world!
+update2 call func()
+update2 msg....
+call func1()
+teacher ... msg ...
+</code></pre></div></div>
+
+<h4 id="-i">-I</h4>
+
+<p>修改hello.cpp的include public.h與myapi.h路徑。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">"public.h"</span><span class="cp">
+#include</span> <span class="cpf">"myapi.h"</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello world!</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+  <span class="n">func</span><span class="p">();</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="c1">//新增修改</span>
+  <span class="n">func1</span><span class="p">();</span>
+  <span class="n">Teacher</span> <span class="n">teacher</span><span class="p">;</span>
+  <span class="n">teacher</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>使用-I，指定.h檔案的路徑</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cici@cici-vm:~/test$ g++ -o demo01 app/hello.cpp -L tools -l public -L api -l myapi -I /home/cici/test/tools -I /home/cici/test/api
+cici@cici-vm:~/test$ ./demo01
+Hello world!
+update2 call func()
+update2 msg....
+call func1()
+teacher ... msg ...
+</code></pre></div></div>
+
+<h4 id="為demo01寫makefile">為demo01寫makefile</h4>
+
+<p>路徑如下
+cici@cici-vm:~/test$ tree
+.
+├── api
+│   ├── libmyapi.a
+│   ├── libmyapi.so
+│   ├── makefile
+│   ├── myapi.cpp
+│   └── myapi.h
+├── app
+│   ├── demo01
+│   ├── hello
+│   ├── hello.cpp
+│   └── makefile
+├── makefile
+└── tools
+    ├── libpublic.a
+    ├── libpublic.so
+    ├── makefile
+    ├── public.cpp
+    └── public.h</p>
+
+<p>在/home/cici/test目錄下撰寫的makefile:</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="nl">all:</span><span class="n">demo01</span>
+<span class="n">demo01</span><span class="o">:</span><span class="n">app</span><span class="o">/</span><span class="n">hello</span><span class="p">.</span><span class="n">cpp</span>
+        <span class="n">g</span><span class="o">++</span> <span class="o">-</span><span class="n">o</span> <span class="n">demo01</span> <span class="n">app</span><span class="o">/</span><span class="n">hello</span><span class="p">.</span><span class="n">cpp</span> <span class="o">-</span><span class="n">L</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">tools</span> <span class="o">-</span><span class="n">l</span> <span class="k">public</span> <span class="o">-</span><span class="n">L</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">api</span> <span class="o">-</span><span class="n">l</span> <span class="n">myapi</span> <span class="o">-</span><span class="n">I</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">tools</span> <span class="o">-</span><span class="n">I</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">api</span>
+<span class="n">clean</span><span class="o">:</span>
+        <span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="n">demo01</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>在/home/cici/test/app目錄下撰寫的makefile:</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="nl">all:</span><span class="n">demo01</span>
+<span class="n">demo01</span><span class="o">:</span><span class="n">hello</span><span class="p">.</span><span class="n">cpp</span>
+        <span class="n">g</span><span class="o">++</span> <span class="o">-</span><span class="n">o</span> <span class="n">demo01</span> <span class="n">hello</span><span class="p">.</span><span class="n">cpp</span> <span class="o">-</span><span class="n">L</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">tools</span> <span class="o">-</span><span class="n">l</span> <span class="k">public</span> <span class="o">-</span><span class="n">L</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">api</span> <span class="o">-</span><span class="n">l</span> <span class="n">myapi</span> <span class="o">-</span><span class="n">I</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">tools</span> <span class="o">-</span><span class="n">I</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">api</span>
+<span class="n">clean</span><span class="o">:</span>
+        <span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="n">demo01</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h4 id="多個檔案">多個檔案</h4>
+
+<p>在makefile定義變數</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INCLUDEDIR=-I /home/cici/test/tools -I /home/cici/test/api
+LIBDIR=-L /home/cici/test/tools -L /home/cici/test/api
+</code></pre></div></div>
+
+<p>使用變數</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$(變數)
+</code></pre></div></div>
+
+<p>多個檔案</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="n">INCLUDEDIR</span><span class="o">=-</span><span class="n">I</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">tools</span> <span class="o">-</span><span class="n">I</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">api</span>
+<span class="n">LIBDIR</span><span class="o">=-</span><span class="n">L</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">tools</span> <span class="o">-</span><span class="n">L</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">api</span>
+<span class="n">all</span><span class="o">:</span><span class="n">demo01</span> <span class="n">demo02</span> <span class="n">demo03</span>
+<span class="n">demo01</span><span class="o">:</span><span class="n">hello</span><span class="p">.</span><span class="n">cpp</span>
+        <span class="n">g</span><span class="o">++</span> <span class="o">-</span><span class="n">o</span> <span class="n">demo01</span> <span class="n">hello</span><span class="p">.</span><span class="n">cpp</span> <span class="err">$</span><span class="p">(</span><span class="n">INCLUDEDIR</span><span class="p">)</span> <span class="err">$</span><span class="p">(</span><span class="n">LIBDIR</span><span class="p">)</span> <span class="o">-</span><span class="n">l</span> <span class="k">public</span> <span class="o">-</span><span class="n">l</span> <span class="n">myapi</span>
+<span class="n">demo02</span><span class="o">:</span><span class="n">hello</span><span class="p">.</span><span class="n">cpp</span>
+        <span class="n">g</span><span class="o">++</span> <span class="o">-</span><span class="n">o</span> <span class="n">demo02</span> <span class="n">hello</span><span class="p">.</span><span class="n">cpp</span> <span class="err">$</span><span class="p">(</span><span class="n">INCLUDEDIR</span><span class="p">)</span> <span class="err">$</span><span class="p">(</span><span class="n">LIBDIR</span><span class="p">)</span> <span class="o">-</span><span class="n">l</span> <span class="k">public</span> <span class="o">-</span><span class="n">l</span> <span class="n">myapi</span>
+<span class="n">demo03</span><span class="o">:</span><span class="n">hello</span><span class="p">.</span><span class="n">cpp</span>
+        <span class="n">g</span><span class="o">++</span> <span class="o">-</span><span class="n">o</span> <span class="n">demo03</span> <span class="n">hello</span><span class="p">.</span><span class="n">cpp</span> <span class="err">$</span><span class="p">(</span><span class="n">INCLUDEDIR</span><span class="p">)</span> <span class="err">$</span><span class="p">(</span><span class="n">LIBDIR</span><span class="p">)</span> <span class="o">-</span><span class="n">l</span> <span class="k">public</span> <span class="o">-</span><span class="n">l</span> <span class="n">myapi</span>
+<span class="n">clean</span><span class="o">:</span>
+        <span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="n">demo01</span> <span class="n">demo02</span> <span class="n">demo03</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vi makefile
+$ make
+g++ -o demo02 hello.cpp -I /home/cici/test/tools -I /home/cici/test/api -L /home/cici/test/tools -L /home/cici/test/api -l public -l myapi
+g++ -o demo03 hello.cpp -I /home/cici/test/tools -I /home/cici/test/api -L /home/cici/test/tools -L /home/cici/test/api -l public -l myapi
+$ ls
+demo01  demo02  demo03  hello  hello.cpp  makefile
+$ vi makefile
+$ ./demo01
+Hello world!
+update2 call func()
+update2 msg....
+call func1()
+teacher ... msg ...
+$ ./demo02
+Hello world!
+update2 call func()
+update2 msg....
+call func1()
+teacher ... msg ...
+$ ./demo03
+Hello world!
+update2 call func()
+update2 msg....
+call func1()
+teacher ... msg ...
+$ make clean
+rm -f demo01 demo02 demo03
+$ ls
+hello  hello.cpp  makefile
+</code></pre></div></div>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+<!------上一頁與下一頁 start---------->
+                    
+                    
+                    
+                    
+    
+                    
+                        
+                        <a href="/pages/c/basic/rand" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 亂數">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        
+                        <a href="/pages/c/pointer/pointer" class="navigation navigation-next navigation-unique" aria-label="Next page: 指標基本觀念">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                    <!------上一頁與下一頁 end---------->
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Cici's notebook",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_pages/linux/openssh_server.md",
+        "mtime": "2024-12-02 00:00:00 +0800",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "",
+        "time": "2024-12-03 22:18:38 +0800"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>

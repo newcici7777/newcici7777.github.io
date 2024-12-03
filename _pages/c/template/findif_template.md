@@ -3,6 +3,7 @@ title: find_if模板
 date: 2024-11-29
 keywords: c++, template, find_if
 ---
+Prerequisites:
 
 - [continue][1]
 - [物件函式][2]
@@ -90,10 +91,10 @@ T1 findif(const T1 first, const T1 last, T2 callback, T3 search_val) {
 }
 int main() {
   vector<string> v2 = {"01", "02", "03", "04", "05"};
-  //物件函式
+  // 物件函式
   vector<string>::iterator it1 = findif(v2.begin(), v2.end(), Callback<string>(), "03");
   cout << "找到 = " << *it1 << endl;
-  //函式指標
+  // 函式指標
   vector<string>::iterator it2 = findif(v2.begin(), v2.end(), callback<string>, "05");
   cout << "找到 = " << *it2 << endl;
   return 0;
@@ -129,7 +130,7 @@ T1 findif(const T1 first, const T1 last, T2 callback) {
 }
 int main() {
   vector<string> v2 = {"01", "02", "03", "04", "05"};
-  //物件函式
+  // 物件函式
   vector<string>::iterator it1 = findif(v2.begin(), v2.end(), Callback<string>("03"));
   cout << "找到 = " << *it1 << endl;
   return 0;

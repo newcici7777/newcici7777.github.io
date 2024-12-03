@@ -213,6 +213,16 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 編譯與連結 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/linux/openssh_server" onclick="pageScrollToTop(this)"> 安裝openssh-server</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標 </a><ul>
 	
 	
@@ -859,6 +869,20 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/template/function_class_template" onclick="pageScrollToTop(this)"> 類別中函式模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/special_template" onclick="pageScrollToTop(this)"> 模板特製化</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/template/class_template" onclick="pageScrollToTop(this)"> 類別模板</a>
         
             
@@ -885,6 +909,13 @@
             
                 <ul><li><a href="#增加搜尋值與傳回值" onclick="mobilePageScrollToAnchor(this)" >增加搜尋值與傳回值</a></li><li><a href="#修改callback函式指標模板" onclick="mobilePageScrollToAnchor(this)" >修改callback函式指標模板</a></li><li><a href="#修改callback物件函式模板" onclick="mobilePageScrollToAnchor(this)" >修改callback物件函式模板</a></li><li><a href="#呼叫findif模板" onclick="mobilePageScrollToAnchor(this)" >呼叫findif模板</a></li><li><a href="#完整程式碼" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li><li><a href="#物件函式使用建構子搜尋值作為參數" onclick="mobilePageScrollToAnchor(this)" >物件函式，使用建構子，搜尋值作為參數</a></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/bsort_template" onclick="pageScrollToTop(this)"> 氣泡排序模板</a>
+        
             
         </li></ul></li>
 	
@@ -1058,7 +1089,9 @@
                         <h1 id="/pages/c/template/findif_template">find_if模板</h1>
                     
 
-                    <ul>
+                    <p>Prerequisites:</p>
+
+<ul>
   <li><a href="/pages/c/basic/loop/#continue-回到迴圈的條件判斷式">continue</a></li>
   <li><a href="/pages/c/class/functor/">物件函式</a></li>
   <li><a href="/pages/c/template/foreach_template/">foreach模板</a></li>
@@ -1201,10 +1234,10 @@
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">v2</span> <span class="o">=</span> <span class="p">{</span><span class="s">"01"</span><span class="p">,</span> <span class="s">"02"</span><span class="p">,</span> <span class="s">"03"</span><span class="p">,</span> <span class="s">"04"</span><span class="p">,</span> <span class="s">"05"</span><span class="p">};</span>
-  <span class="c1">//物件函式</span>
+  <span class="c1">// 物件函式</span>
   <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;::</span><span class="n">iterator</span> <span class="n">it1</span> <span class="o">=</span> <span class="n">findif</span><span class="p">(</span><span class="n">v2</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v2</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">Callback</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(),</span> <span class="s">"03"</span><span class="p">);</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"找到 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">it1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="c1">//函式指標</span>
+  <span class="c1">// 函式指標</span>
   <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;::</span><span class="n">iterator</span> <span class="n">it2</span> <span class="o">=</span> <span class="n">findif</span><span class="p">(</span><span class="n">v2</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v2</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">callback</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="p">,</span> <span class="s">"05"</span><span class="p">);</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"找到 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">it2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
@@ -1270,7 +1303,7 @@
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">v2</span> <span class="o">=</span> <span class="p">{</span><span class="s">"01"</span><span class="p">,</span> <span class="s">"02"</span><span class="p">,</span> <span class="s">"03"</span><span class="p">,</span> <span class="s">"04"</span><span class="p">,</span> <span class="s">"05"</span><span class="p">};</span>
-  <span class="c1">//物件函式</span>
+  <span class="c1">// 物件函式</span>
   <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;::</span><span class="n">iterator</span> <span class="n">it1</span> <span class="o">=</span> <span class="n">findif</span><span class="p">(</span><span class="n">v2</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v2</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">Callback</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"03"</span><span class="p">));</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"找到 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">it1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
@@ -1354,7 +1387,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/c/stl/string" class="navigation navigation-next navigation-unique" aria-label="Next page: string">
+                        <a href="/pages/c/template/bsort_template" class="navigation navigation-next navigation-unique" aria-label="Next page: 氣泡排序模板">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1474,7 +1507,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-11-30 23:12:59 +0800"
+        "time": "2024-12-03 22:18:38 +0800"
     },
     "basePath": "",
     "book": {

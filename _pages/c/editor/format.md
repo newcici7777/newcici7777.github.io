@@ -181,9 +181,95 @@ xcode把tab改為2個空白
 
 ![img]({{site.imgurl}}/xcode_c++/tab_space.png)
 
+### if
+
+注意在所有情況下，if 和左括號間都有個空格。如果有大括號的話，右括號和左大括號之間也要有個空格：
+
+#### 正確方式
+
+{% highlight c++ linenos %}
+if (condition) {  // 可 - IF 後面和 { 前面都留有適當的空格。
+{% endhighlight %}
+
+#### 錯誤方式
+{% highlight c++ linenos %}
+if(condition)     // 差 - IF 後面沒空格。
+if (condition){   // 差 - { 前面沒空格。
+if(condition){    // 前面兩項錯誤犯好犯滿。
+{% endhighlight %}
+
+#### if,else if,else
+
+正確方式
+
+{% highlight c++ linenos %}
+if (condition) {  // 括號裡沒空格。
+  ...  // 2 空格縮排。
+} else if (...) {  // else 與 if 的右大括號放在同一行。
+  ...
+} else {
+  ...
+}
+{% endhighlight %}
+
+簡短的條件語句可以寫在同一行，如果這樣可讀性比較高的話。只有當句子簡單並且沒有使用 else 子句時可以使用：
+{% highlight c++ linenos %}
+if (x == kFoo) return new Foo();
+if (x == kBar) return new Bar();
+{% endhighlight %}
+
+如果述句中有 else 的話就禁止如此使用：
+
+{% highlight c++ linenos %}
+// 不可以這樣子 - 當 ELSE 子句存在時，IF 陳述句卻只擠在同一行
+if (x) DoThis();
+else DoThat();
+{% endhighlight %}
+
+#### if大括號
+
+一般來說，單行語句不需要使用大括號，如果你喜歡用也沒問題
+
+{% highlight c++ linenos %}
+if (condition)
+  DoSomething();  // 2 空格縮排。
+
+if (condition) {
+  DoSomething();  // 2 空格縮排。
+}
+{% endhighlight %}
+
+但如果整個述句中某個 if-else 的區塊使用了大括號的話，其它區塊也必須使用：
+
+{% highlight c++ linenos %}
+// 不可以這樣子 - IF 有大括號 ELSE 卻沒有。
+if (condition) {
+  foo;
+} else
+  bar;
+
+// 不可以這樣子 - ELSE 有大括號 IF 卻沒有。
+if (condition)
+  foo;
+else {
+  bar;
+}
+{% endhighlight %}
+
+正確方式
+
+{% highlight c++ linenos %}
+// 只要其中一個區塊用了大括號，兩個區塊都要用。
+if (condition) {
+  foo;
+} else {
+  bar;
+}
+{% endhighlight %}
+
 ### for
 
-for(){....}中的內縮仍是2個空白
+for () {....}中的內縮仍是2個空白
 
 {% highlight c++ linenos %}
 int main() {
@@ -216,6 +302,12 @@ for與圓括號()之間要有空白，圓括號()與左大括號{要有空白，
   for (int i = 0; i < 10; i++)
 {% endhighlight %}
 
+分號後一定要有空格。
+{% highlight c++ linenos %}
+// 迴圈中，分號後一定要有空格。
+  for (auto it = first; ; ) 
+{% endhighlight %}
+
 ### 引數
 
 大括號{...}裡面的值，逗號(,)右側留一個空白，左側不留空白，大括號{...}中，前後不留空白。
@@ -244,12 +336,45 @@ class callbackObj {
 };
 {% endhighlight %}
 
-### 註解空白
+### 模板
 
-在行尾加兩格空隔後開始註解
+template與尖括號\<，中間有空白
+
+{% highlight c++ linenos %}
+template <typename T, typename U>
+{% endhighlight %}
+
+### 註解空白與對齊
+
+#### 2個斜線後面加一個空白
+
+{% highlight c++ linenos %}
+// Process "element" unless it was already processed.
+auto iter = std::find(v.begin(), v.end(), element);
+{% endhighlight %}
+
+#### 行尾註解空2個空白
+
+在行尾加兩格空隔後，加上2個斜線，再加一個空白後，開始註解
 {% highlight c++ linenos %}
 if (.....)
   return;  // Error already logged.
+{% endhighlight %}
+
+#### 註解對齊
+
+{% highlight c++ linenos %}
+DoSomething();                  // 把註解放這裡才能和下一行對齊。
+DoSomethingElseThatIsLonger();  // 註解和程式碼之間要有兩個空格。  
+{ // 當開啟一個新的作用域時，可以只放一個空隔，
+  // 這樣接下來的註解和程式碼都可以和前面那行對齊。
+  DoSomethingElse();  // 一般來說行註解前面都需要兩個空隔。
+}
+std::vector<string> list{
+                    // 在條列初始化中，用來說明下一個元素的註解...
+                    "First item",
+                    // .. 必須要妥善對齊。
+                    "Second item"};
 {% endhighlight %}
 
 ## 斷行
@@ -260,6 +385,5 @@ if (.....)
 - 在多重 if-else 區塊裡加斷行對可讀性可能有些幫助。
 - 在註解前面加空行通常可以增加可讀性，引入一段新的註解等於在介紹一個新想法的開始，此時加上空行可以清楚地表示這段註解是在說明接下來的程式碼，而非延續前面的行為。
 
-(Cici: 個人覺得必要時仍要斷行隔開)
 
 
