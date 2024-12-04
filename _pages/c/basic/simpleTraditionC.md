@@ -9,8 +9,12 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |英文|台灣|大陸|
 |:--:|:--:|:--:|
 |head file|標頭檔案|頭文件|
-|cpp file|原始檔案|源代碼|
-|STL|函式庫|標準庫|
+|source file|原始檔案|源文件|
+|STL|函式庫|庫函數|
+|object file|目的檔|目標檔|
+|binary file|機器語言指令|二進制檔案|
+|linking|鏈結|鏈結|
+
 
 ## 資料型態相關
 

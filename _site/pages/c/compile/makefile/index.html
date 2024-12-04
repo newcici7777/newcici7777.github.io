@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>安裝openssh-server · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>makefile · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -134,7 +134,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/editor/format" onclick="pageScrollToTop(this)"> 程式碼格式</a>
+    	<a href="/pages/c/basic/format" onclick="pageScrollToTop(this)"> 程式碼格式</a>
         
             
         </li>
@@ -213,15 +213,29 @@
         </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 編譯與連結 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 編譯 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/openssh_server" onclick="pageScrollToTop(this)"> 安裝openssh-server</a>
+        
+            
+        </li>
 	
 	
 	<li class="active">
-    	<a href="/pages/linux/openssh_server" onclick="pageScrollToTop(this)"> 安裝openssh-server</a>
+    	<a href="/pages/c/compile/makefile" onclick="pageScrollToTop(this)"> makefile</a>
         
             
-                <ul><li><a href="#openssh-server" onclick="mobilePageScrollToAnchor(this)" >openssh-server</a></li><li><a href="#安裝c" onclick="mobilePageScrollToAnchor(this)" >安裝c++</a></li><li><a href="#安裝man-page" onclick="mobilePageScrollToAnchor(this)" >安裝man page</a></li><li><a href="#編譯c與c" onclick="mobilePageScrollToAnchor(this)" >編譯c與c++</a><ul><li><a href="#gcc與g分別" onclick="mobilePageScrollToAnchor(this)" >gcc與g++分別</a></li><li><a href="#g語法" onclick="mobilePageScrollToAnchor(this)" >g++語法</a></li><li><a href="#產生執行檔" onclick="mobilePageScrollToAnchor(this)" >產生執行檔</a><ul><li><a href="#建立檔案" onclick="mobilePageScrollToAnchor(this)" >建立檔案</a></li><li><a href="#產生執行檔-1" onclick="mobilePageScrollToAnchor(this)" >產生執行檔</a></li><li><a href="#執行" onclick="mobilePageScrollToAnchor(this)" >執行</a></li><li><a href="#沒有-o-執行檔名" onclick="mobilePageScrollToAnchor(this)" >沒有-o 執行檔名</a></li><li><a href="#使用2個cpp產生執行檔" onclick="mobilePageScrollToAnchor(this)" >使用2個cpp產生執行檔</a></li></ul></li></ul></li><li><a href="#靜態庫" onclick="mobilePageScrollToAnchor(this)" >靜態庫</a><ul><li><a href="#語法" onclick="mobilePageScrollToAnchor(this)" >語法</a><ul><li><a href="#-c" onclick="mobilePageScrollToAnchor(this)" >-c</a></li><li><a href="#lib庫名a" onclick="mobilePageScrollToAnchor(this)" >lib庫名.a</a></li></ul></li><li><a href="#檔案放置路徑" onclick="mobilePageScrollToAnchor(this)" >檔案放置路徑</a></li><li><a href="#publich" onclick="mobilePageScrollToAnchor(this)" >public.h</a></li><li><a href="#publiccpp" onclick="mobilePageScrollToAnchor(this)" >public.cpp</a></li><li><a href="#hellocpp" onclick="mobilePageScrollToAnchor(this)" >hello.cpp</a></li><li><a href="#產生靜態庫" onclick="mobilePageScrollToAnchor(this)" >產生靜態庫</a></li><li><a href="#使用靜態庫" onclick="mobilePageScrollToAnchor(this)" >使用靜態庫</a><ul><li><a href="#法1" onclick="mobilePageScrollToAnchor(this)" >法1</a></li><li><a href="#法2" onclick="mobilePageScrollToAnchor(this)" >法2</a></li></ul></li></ul></li><li><a href="#動態庫" onclick="mobilePageScrollToAnchor(this)" >動態庫</a><ul><li><a href="#使用動態庫" onclick="mobilePageScrollToAnchor(this)" >使用動態庫</a><ul><li><a href="#法1-1" onclick="mobilePageScrollToAnchor(this)" >法1</a></li><li><a href="#法2-1" onclick="mobilePageScrollToAnchor(this)" >法2</a></li></ul></li><li><a href="#模擬更新動態庫" onclick="mobilePageScrollToAnchor(this)" >模擬更新動態庫</a><ul><li><a href="#將publiccpp的程式碼更新" onclick="mobilePageScrollToAnchor(this)" >將public.cpp的程式碼更新。</a></li><li><a href="#重新建立動態庫" onclick="mobilePageScrollToAnchor(this)" >重新建立動態庫</a></li><li><a href="#執行主程式" onclick="mobilePageScrollToAnchor(this)" >執行主程式</a></li><li><a href="#總結" onclick="mobilePageScrollToAnchor(this)" >總結</a></li></ul></li></ul></li><li><a href="#makefile" onclick="mobilePageScrollToAnchor(this)" >makefile</a><ul><li><a href="#建立makefile" onclick="mobilePageScrollToAnchor(this)" >建立makefile</a><ul><li><a href="#產生靜態庫動態庫" onclick="mobilePageScrollToAnchor(this)" >產生靜態庫,動態庫</a></li><li><a href="#動態庫或靜態庫中的cpp更新重新編譯" onclick="mobilePageScrollToAnchor(this)" >動態庫或靜態庫中的cpp更新，重新編譯</a></li><li><a href="#clean刪除編譯完的檔案" onclick="mobilePageScrollToAnchor(this)" >clean刪除編譯完的檔案</a></li></ul></li><li><a href="#使用makefile" onclick="mobilePageScrollToAnchor(this)" >使用makefile</a><ul><li><a href="#清理" onclick="mobilePageScrollToAnchor(this)" >清理</a></li><li><a href="#產生靜態庫動態庫-1" onclick="mobilePageScrollToAnchor(this)" >產生靜態庫,動態庫</a></li></ul></li><li><a href="#多動態庫使用" onclick="mobilePageScrollToAnchor(this)" >多動態庫使用</a><ul><li><a href="#建立myapi庫" onclick="mobilePageScrollToAnchor(this)" >建立myapi庫</a></li><li><a href="#-i" onclick="mobilePageScrollToAnchor(this)" >-I</a></li><li><a href="#為demo01寫makefile" onclick="mobilePageScrollToAnchor(this)" >為demo01寫makefile</a></li><li><a href="#多個檔案" onclick="mobilePageScrollToAnchor(this)" >多個檔案</a></li></ul></li></ul></li></ul>
+                <ul><li><a href="#編譯c" onclick="mobilePageScrollToAnchor(this)" >編譯c++</a><ul><li><a href="#原理" onclick="mobilePageScrollToAnchor(this)" >原理</a></li><li><a href="#gcc與g分別" onclick="mobilePageScrollToAnchor(this)" >gcc與g++分別</a></li><li><a href="#g語法" onclick="mobilePageScrollToAnchor(this)" >g++語法</a></li><li><a href="#產生執行檔" onclick="mobilePageScrollToAnchor(this)" >產生執行檔</a><ul><li><a href="#建立檔案" onclick="mobilePageScrollToAnchor(this)" >建立檔案</a></li><li><a href="#產生執行檔-1" onclick="mobilePageScrollToAnchor(this)" >產生執行檔</a></li><li><a href="#執行" onclick="mobilePageScrollToAnchor(this)" >執行</a></li><li><a href="#沒有-o-執行檔名" onclick="mobilePageScrollToAnchor(this)" >沒有-o 執行檔名</a></li><li><a href="#使用2個cpp產生執行檔" onclick="mobilePageScrollToAnchor(this)" >使用2個cpp產生執行檔</a></li></ul></li></ul></li><li><a href="#靜態庫" onclick="mobilePageScrollToAnchor(this)" >靜態庫</a><ul><li><a href="#語法" onclick="mobilePageScrollToAnchor(this)" >語法</a><ul><li><a href="#-c" onclick="mobilePageScrollToAnchor(this)" >-c</a></li><li><a href="#lib庫名a" onclick="mobilePageScrollToAnchor(this)" >lib庫名.a</a></li></ul></li><li><a href="#檔案放置路徑" onclick="mobilePageScrollToAnchor(this)" >檔案放置路徑</a></li><li><a href="#publich" onclick="mobilePageScrollToAnchor(this)" >public.h</a></li><li><a href="#publiccpp" onclick="mobilePageScrollToAnchor(this)" >public.cpp</a></li><li><a href="#hellocpp" onclick="mobilePageScrollToAnchor(this)" >hello.cpp</a></li><li><a href="#產生靜態庫" onclick="mobilePageScrollToAnchor(this)" >產生靜態庫</a></li><li><a href="#使用靜態庫" onclick="mobilePageScrollToAnchor(this)" >使用靜態庫</a><ul><li><a href="#法1" onclick="mobilePageScrollToAnchor(this)" >法1</a></li><li><a href="#法2" onclick="mobilePageScrollToAnchor(this)" >法2</a></li></ul></li></ul></li><li><a href="#動態庫" onclick="mobilePageScrollToAnchor(this)" >動態庫</a><ul><li><a href="#使用動態庫" onclick="mobilePageScrollToAnchor(this)" >使用動態庫</a><ul><li><a href="#法1-1" onclick="mobilePageScrollToAnchor(this)" >法1</a></li><li><a href="#法2-1" onclick="mobilePageScrollToAnchor(this)" >法2</a></li></ul></li><li><a href="#模擬更新動態庫" onclick="mobilePageScrollToAnchor(this)" >模擬更新動態庫</a><ul><li><a href="#將publiccpp的程式碼更新" onclick="mobilePageScrollToAnchor(this)" >將public.cpp的程式碼更新。</a></li><li><a href="#重新建立動態庫" onclick="mobilePageScrollToAnchor(this)" >重新建立動態庫</a></li><li><a href="#執行主程式" onclick="mobilePageScrollToAnchor(this)" >執行主程式</a></li><li><a href="#總結" onclick="mobilePageScrollToAnchor(this)" >總結</a></li></ul></li></ul></li><li><a href="#makefile" onclick="mobilePageScrollToAnchor(this)" >makefile</a><ul><li><a href="#建立makefile" onclick="mobilePageScrollToAnchor(this)" >建立makefile</a><ul><li><a href="#產生靜態庫動態庫" onclick="mobilePageScrollToAnchor(this)" >產生靜態庫,動態庫</a></li><li><a href="#動態庫或靜態庫中的cpp更新重新編譯" onclick="mobilePageScrollToAnchor(this)" >動態庫或靜態庫中的cpp更新，重新編譯</a></li><li><a href="#clean刪除編譯完的檔案" onclick="mobilePageScrollToAnchor(this)" >clean刪除編譯完的檔案</a></li></ul></li><li><a href="#使用makefile" onclick="mobilePageScrollToAnchor(this)" >使用makefile</a><ul><li><a href="#清理" onclick="mobilePageScrollToAnchor(this)" >清理</a></li><li><a href="#產生靜態庫動態庫-1" onclick="mobilePageScrollToAnchor(this)" >產生靜態庫,動態庫</a></li></ul></li><li><a href="#多動態庫使用" onclick="mobilePageScrollToAnchor(this)" >多動態庫使用</a><ul><li><a href="#建立myapi庫" onclick="mobilePageScrollToAnchor(this)" >建立myapi庫</a></li><li><a href="#-i" onclick="mobilePageScrollToAnchor(this)" >-I</a></li><li><a href="#為demo01寫makefile" onclick="mobilePageScrollToAnchor(this)" >為demo01寫makefile</a></li><li><a href="#多個檔案" onclick="mobilePageScrollToAnchor(this)" >多個檔案</a></li></ul></li></ul></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/compile/gdb" onclick="pageScrollToTop(this)"> gdb</a>
+        
             
         </li></ul></li>
 	
@@ -1073,7 +1087,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >安裝openssh-server</a>
+                            <a href="." >makefile</a>
                         
                     </h1>
                 </div>
@@ -1086,66 +1100,20 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/linux/openssh_server">安裝openssh-server</h1>
+                        <h1 id="/pages/c/compile/makefile">makefile</h1>
                     
 
-                    <h2 id="openssh-server">openssh-server</h2>
+                    <h2 id="編譯c">編譯c++</h2>
 
-<p>以下環境</p>
+<h3 id="原理">原理</h3>
 
-<p>本機MAC</p>
+<p>將原始檔案變成執行檔，以下把這個過程分為二個步驟。</p>
 
-<p>Ubuntu 24.04</p>
+<p>首先將個別原始檔(.cpp)編譯成個別目的檔(object file)，目的檔的內容是可被電腦執行的機器語言指令。</p>
 
-<p>VMware Fusion</p>
+<p>第二步便是鏈結(linking)，將上一步好幾個原始檔案編譯完後有多個目的檔，由於原始檔案中會用到c++的函式庫指令，如std::cout，將多個目的檔與函式庫機器語言指令全部鏈結一起，就形成可執行檔。</p>
 
-<p>以下為Ubuntu虛擬機終端機設定</p>
-
-<ul>
-  <li>更新package list
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt update
-</code></pre></div>    </div>
-  </li>
-  <li>安裝openssh-server
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install openssh-server
-</code></pre></div>    </div>
-    <p>按下y</p>
-  </li>
-  <li>啟動ssh
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl status ssh
-</code></pre></div>    </div>
-    <p>離開按q</p>
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl enable --now ssh
-</code></pre></div>    </div>
-  </li>
-  <li>本機連ssh
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ssh localhost
-</code></pre></div>    </div>
-    <p>按下y</p>
-  </li>
-  <li>重新啟動ssh
-$ sudo systemctl restart ssh</li>
-</ul>
-
-<h2 id="安裝c">安裝c++</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install gcc
-$ sudo apt install g++
-$ sudo apt install build-essential
-$ gcc --version
-$ g++ --version
-</code></pre></div></div>
-<h2 id="安裝man-page">安裝man page</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install manpages-dev manpages-posix-dev
-$ man strcpy
-</code></pre></div></div>
-<p>按q退出
-若跟user command有衝突的函式，請在函式名前輸入3</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ man 3 sleep
-</code></pre></div></div>
-<p>1是user command
-3是Standard C library</p>
-
-<h2 id="編譯c與c">編譯c與c++</h2>
+<p><img src="/assets/img/c++/compile.jpg" alt="img" /></p>
 
 <h3 id="gcc與g分別">gcc與g++分別</h3>
 
@@ -1192,17 +1160,15 @@ $ man strcpy
 </code></pre></div></div>
 <h4 id="執行">執行</h4>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./demo
+Hello world!
 </code></pre></div></div>
-<p>Hello world!</p>
-
 <h4 id="沒有-o-執行檔名">沒有-o 執行檔名</h4>
 
 <p>沒有-o 執行檔名，會產生a.out的檔案</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ g++ hello.cpp
 $ ls
+a.out 
 </code></pre></div></div>
-<p>a.out</p>
-
 <h4 id="使用2個cpp產生執行檔">使用2個cpp產生執行檔</h4>
 
 <p>$ vi public.h</p>
@@ -1253,19 +1219,16 @@ $ ls
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ g++ -o demo hello.cpp public.cpp
 $ ./demo
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello world!
+Hello world!
 call func()
 </code></pre></div></div>
-
 <h2 id="靜態庫">靜態庫</h2>
 
-<p>將cpp檔案整理成一個庫，產生執行檔可以指定庫名.a，就不用寫很多原始檔案1.cpp 原始檔案2.cpp 原始檔案3.cpp 原始檔案N.cpp</p>
+<p>將cpp檔案整理成一個程式庫，產生執行檔可以指定庫名.a，就不用寫很多原始檔案1.cpp 原始檔案2.cpp 原始檔案3.cpp 原始檔案N.cpp</p>
 
-<p>多個procee用到同一個靜態庫中的函式或類別，每個process拷貝一份，多個process就有多個拷貝。</p>
+<p>多個process(行程)用到同一個靜態庫中的函式或類別，每個process(行程)拷貝一份，多個process(行程)就有多個拷貝。</p>
 
-<p>靜態庫是二進制檔案</p>
+<p>靜態庫是二進制檔案(機器語言指令)</p>
 
 <p>主程式在鏈結時會把靜態庫加入，產生執行檔。</p>
 
@@ -1288,15 +1251,15 @@ call func()
 
 <h3 id="檔案放置路徑">檔案放置路徑</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cici@cici-vm:~/test$ tree
-</code></pre></div></div>
-<p>.
+.
 ├── app
 │   └── hello.cpp
 └── tools
     ├── public.cpp
-    └── public.h</p>
+    └── public.h
 
-<p>3 directories, 3 files</p>
+3 directories, 3 files
+</code></pre></div></div>
 
 <p>將以下檔案依上方目錄結構放置。</p>
 
@@ -1406,9 +1369,7 @@ call func()
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd tools
 $ g++ -fPIC -shared -o libpublic.so public.cpp
-$ rm libpulic.a
 </code></pre></div></div>
-<p>為避免干擾，把libpublic.a靜態庫先刪掉</p>
 
 <h3 id="使用動態庫">使用動態庫</h3>
 
@@ -1426,8 +1387,7 @@ $ rm libpulic.a
 
 <h4 id="法1-1">法1</h4>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ..
-$ g++ -o demo01 app/hello.cpp tools/libpublic.so
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ g++ -o demo01 app/hello.cpp tools/libpublic.so
 $ ./demo01
 </code></pre></div></div>
 
@@ -1446,6 +1406,8 @@ $ ./demo01
 <h3 id="模擬更新動態庫">模擬更新動態庫</h3>
 
 <h4 id="將publiccpp的程式碼更新">將public.cpp的程式碼更新。</h4>
+
+<p>增加update的字</p>
 
 <p>public.cpp</p>
 
@@ -1476,8 +1438,7 @@ $ g++ -fPIC -shared -o libpublic.so public.cpp
 
 <h4 id="執行主程式">執行主程式</h4>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ..
-$ ./demo01
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./demo01
 Hello world!
 update call func()
 update msg....
@@ -1521,6 +1482,8 @@ $ vi makefile
 <p>編譯動態庫libpublic.so，需要依賴public.h和public.cpp</p>
 
 <p>若public.h或public.cpp更新，需要重新編譯</p>
+
+<p><span class="markline">注意！第二行是用tab，不是空格</span></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>libpublic.so:public.h public.cpp
 	g++ -fPIC -shared -o libpublic.so public.cpp
 </code></pre></div></div>
@@ -1565,6 +1528,8 @@ make: 對「all」無需做任何事。
 </code></pre></div></div>
 
 <p>修改public.cpp</p>
+
+<p>將"update"改成"update2"</p>
 
 <p>public.cpp</p>
 
@@ -1612,6 +1577,27 @@ libpublic.a  libpublic.so  makefile  public.cpp  public.h
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mkdir api
 $ cd api
 $ vi myapi.h
+</code></pre></div></div>
+
+<p>路徑如下</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cici@cici-vm:~/test$ tree
+.
+├── api
+│   ├── makefile
+│   ├── myapi.cpp
+│   └── myapi.h
+├── app
+│   ├── demo01
+│   ├── hello
+│   ├── hello.cpp
+│   └── makefile
+├── makefile
+└── tools
+    ├── libpublic.a
+    ├── libpublic.so
+    ├── makefile
+    ├── public.cpp
+    └── public.h
 </code></pre></div></div>
 
 <p>myapi.h</p>
@@ -1778,8 +1764,8 @@ teacher ... msg ...
 
 <h4 id="為demo01寫makefile">為demo01寫makefile</h4>
 
-<p>路徑如下
-cici@cici-vm:~/test$ tree
+<p>路徑如下</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cici@cici-vm:~/test$ tree
 .
 ├── api
 │   ├── libmyapi.a
@@ -1798,7 +1784,8 @@ cici@cici-vm:~/test$ tree
     ├── libpublic.so
     ├── makefile
     ├── public.cpp
-    └── public.h</p>
+    └── public.h
+</code></pre></div></div>
 
 <p>在/home/cici/test目錄下撰寫的makefile:</p>
 
@@ -1964,14 +1951,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/basic/rand" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 亂數">
+                        <a href="/pages/c/editor/openssh_server" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 安裝openssh-server">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/pointer/pointer" class="navigation navigation-next navigation-unique" aria-label="Next page: 指標基本觀念">
+                        <a href="/pages/c/compile/gdb" class="navigation navigation-next navigation-unique" aria-label="Next page: gdb">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2076,13 +2063,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/linux/openssh_server.md",
-        "mtime": "2024-12-02 00:00:00 +0800",
+        "path": "_pages/c/compile/makefile.md",
+        "mtime": "2024-12-04 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-03 22:18:38 +0800"
+        "time": "2024-12-04 15:30:38 +0800"
     },
     "basePath": "",
     "book": {

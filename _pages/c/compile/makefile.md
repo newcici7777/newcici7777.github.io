@@ -1,70 +1,20 @@
 ---
-title: 安裝openssh-server
-date: 2024-12-02
-keywords: Ubuntu, openssh-server
+title: makefile
+date: 2024-12-04
+keywords: c++, makefile
 ---
 
-## openssh-server
+## 編譯c++
 
-以下環境
+### 原理
 
-本機MAC
+將原始檔案變成執行檔，以下把這個過程分為二個步驟。
 
-Ubuntu 24.04
+首先將個別原始檔(.cpp)編譯成個別目的檔(object file)，目的檔的內容是可被電腦執行的機器語言指令。
 
-VMware Fusion
+第二步便是鏈結(linking)，將上一步好幾個原始檔案編譯完後有多個目的檔，由於原始檔案中會用到c++的函式庫指令，如std::cout，將多個目的檔與函式庫機器語言指令全部鏈結一起，就形成可執行檔。
 
-以下為Ubuntu虛擬機終端機設定
-
-- 更新package list
-```
-$ sudo apt update
-```
-- 安裝openssh-server
-```
-$ sudo apt install openssh-server
-```
-按下y
-
-- 啟動ssh
-```
-$ sudo systemctl status ssh
-```
-離開按q
-```
-$ sudo systemctl enable --now ssh
-```
-- 本機連ssh
-```
-$ ssh localhost
-```
-按下y
-
-- 重新啟動ssh
-$ sudo systemctl restart ssh
-
-## 安裝c++
-```
-$ sudo apt install gcc
-$ sudo apt install g++
-$ sudo apt install build-essential
-$ gcc --version
-$ g++ --version
-```
-## 安裝man page
-```
-$ sudo apt install manpages-dev manpages-posix-dev
-$ man strcpy
-```
-按q退出
-若跟user command有衝突的函式，請在函式名前輸入3
-```
-$ man 3 sleep
-```
-1是user command
-3是Standard C library
-
-## 編譯c與c++
+![img]({{site.imgurl}}/c++/compile.jpg)
 
 ### gcc與g++分別
 
@@ -108,18 +58,16 @@ $ g++ -o demo hello.cpp
 #### 執行
 ```
 $ ./demo
-```
 Hello world!
-
+```
 #### 沒有-o 執行檔名
 
 沒有-o 執行檔名，會產生a.out的檔案
 ```
 $ g++ hello.cpp
 $ ls
-```
 a.out 
-
+```
 #### 使用2個cpp產生執行檔
 
 $ vi public.h
@@ -151,20 +99,16 @@ int main() {
 ```
 $ g++ -o demo hello.cpp public.cpp
 $ ./demo
-```
-
-```
 Hello world!
 call func()
 ```
-
 ## 靜態庫
 
-將cpp檔案整理成一個庫，產生執行檔可以指定庫名.a，就不用寫很多原始檔案1.cpp 原始檔案2.cpp 原始檔案3.cpp 原始檔案N.cpp
+將cpp檔案整理成一個程式庫，產生執行檔可以指定庫名.a，就不用寫很多原始檔案1.cpp 原始檔案2.cpp 原始檔案3.cpp 原始檔案N.cpp
 
-多個procee用到同一個靜態庫中的函式或類別，每個process拷貝一份，多個process就有多個拷貝。
+多個process(行程)用到同一個靜態庫中的函式或類別，每個process(行程)拷貝一份，多個process(行程)就有多個拷貝。
 
-靜態庫是二進制檔案
+靜態庫是二進制檔案(機器語言指令)
 
 主程式在鏈結時會把靜態庫加入，產生執行檔。
 
@@ -189,7 +133,6 @@ lib是固定
 ### 檔案放置路徑
 ```
 cici@cici-vm:~/test$ tree
-```
 .
 ├── app
 │   └── hello.cpp
@@ -198,7 +141,7 @@ cici@cici-vm:~/test$ tree
     └── public.h
 
 3 directories, 3 files
-
+```
 
 將以下檔案依上方目錄結構放置。
 
@@ -288,9 +231,7 @@ lib庫名.so lib與.so是固定寫法，庫名可以自已取名。
 ```
 $ cd tools
 $ g++ -fPIC -shared -o libpublic.so public.cpp
-$ rm libpulic.a
 ```
-為避免干擾，把libpublic.a靜態庫先刪掉
 
 ### 使用動態庫
 
@@ -309,7 +250,6 @@ $ rm libpulic.a
 #### 法1
 
 ```
-$ cd ..
 $ g++ -o demo01 app/hello.cpp tools/libpublic.so
 $ ./demo01
 ```
@@ -332,6 +272,8 @@ $ ./demo01
 
 #### 將public.cpp的程式碼更新。
 
+增加update的字
+
 public.cpp
 {% highlight c++ linenos %}
 #include "public.h"
@@ -353,7 +295,6 @@ $ g++ -fPIC -shared -o libpublic.so public.cpp
 #### 執行主程式
 
 ```
-$ cd ..
 $ ./demo01
 Hello world!
 update call func()
@@ -402,6 +343,8 @@ libpublic.a:public.h public.cpp
 編譯動態庫libpublic.so，需要依賴public.h和public.cpp
 
 若public.h或public.cpp更新，需要重新編譯
+
+<span class="markline">注意！第二行是用tab，不是空格</span>
 ```
 libpublic.so:public.h public.cpp
 	g++ -fPIC -shared -o libpublic.so public.cpp
@@ -455,6 +398,8 @@ make: 對「all」無需做任何事。
 
 修改public.cpp
 
+將\"update\"改成\"update2\"
+
 public.cpp
 {% highlight c++ linenos %}
 #include "public.h"
@@ -494,6 +439,28 @@ libpublic.a  libpublic.so  makefile  public.cpp  public.h
 $ mkdir api
 $ cd api
 $ vi myapi.h
+```
+
+路徑如下
+```
+cici@cici-vm:~/test$ tree
+.
+├── api
+│   ├── makefile
+│   ├── myapi.cpp
+│   └── myapi.h
+├── app
+│   ├── demo01
+│   ├── hello
+│   ├── hello.cpp
+│   └── makefile
+├── makefile
+└── tools
+    ├── libpublic.a
+    ├── libpublic.so
+    ├── makefile
+    ├── public.cpp
+    └── public.h
 ```
 
 myapi.h
@@ -608,6 +575,7 @@ teacher ... msg ...
 #### 為demo01寫makefile
 
 路徑如下
+```
 cici@cici-vm:~/test$ tree
 .
 ├── api
@@ -628,6 +596,7 @@ cici@cici-vm:~/test$ tree
     ├── makefile
     ├── public.cpp
     └── public.h
+```
 
 在/home/cici/test目錄下撰寫的makefile:
 {% highlight c++ linenos %}
