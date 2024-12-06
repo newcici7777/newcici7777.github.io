@@ -14,7 +14,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |object file|目的檔|目標檔|
 |binary file|機器語言指令|二進制檔案|
 |linking|鏈結|鏈結|
-
+|process id|進程|行程|
 
 ## 資料型態相關
 

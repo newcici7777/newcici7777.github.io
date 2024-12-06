@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>互斥鎖Mutex · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>gdb core dump · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -237,9 +237,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/compile/core_dump" onclick="pageScrollToTop(this)"> gdb core dump</a>
         
+            
+                <ul><li><a href="#查看core檔案大小語法" onclick="mobilePageScrollToAnchor(this)" >查看core檔案大小語法</a></li><li><a href="#修改core檔案大小" onclick="mobilePageScrollToAnchor(this)" >修改core檔案大小</a></li><li><a href="#core-dump" onclick="mobilePageScrollToAnchor(this)" >core dump</a></li><li><a href="#debug" onclick="mobilePageScrollToAnchor(this)" >debug</a></li><li><a href="#bt" onclick="mobilePageScrollToAnchor(this)" >bt</a></li><li><a href="#q" onclick="mobilePageScrollToAnchor(this)" >q</a></li><li><a href="#顯示錯誤的行號在c函式庫" onclick="mobilePageScrollToAnchor(this)" >顯示錯誤的行號在c++函式庫</a></li><li><a href="#其它方式查看core-dump" onclick="mobilePageScrollToAnchor(this)" >其它方式查看core dump</a><ul><li><a href="#安裝coredump" onclick="mobilePageScrollToAnchor(this)" >安裝coredump</a></li><li><a href="#執行並core-dump" onclick="mobilePageScrollToAnchor(this)" >執行並core dump</a></li><li><a href="#bt-1" onclick="mobilePageScrollToAnchor(this)" >bt</a></li></ul></li></ul>
+
             
         </li>
 	
@@ -1065,12 +1068,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/thread/mutex" onclick="pageScrollToTop(this)"> 互斥鎖Mutex</a>
         
-            
-                <ul><li><a href="#執行緒安全" onclick="mobilePageScrollToAnchor(this)" >執行緒安全</a></li><li><a href="#互斥鎖mutex" onclick="mobilePageScrollToAnchor(this)" >互斥鎖Mutex</a><ul><li><a href="#匯入標頭檔" onclick="mobilePageScrollToAnchor(this)" >匯入標頭檔</a></li><li><a href="#互斥鎖全域變數" onclick="mobilePageScrollToAnchor(this)" >互斥鎖全域變數</a></li><li><a href="#lock-鎖上" onclick="mobilePageScrollToAnchor(this)" >lock() 鎖上</a></li><li><a href="#unlock-開鎖" onclick="mobilePageScrollToAnchor(this)" >unlock() 開鎖</a></li><li><a href="#程式碼" onclick="mobilePageScrollToAnchor(this)" >程式碼</a></li><li><a href="#判斷是那個thread加鎖解鎖申請鎖" onclick="mobilePageScrollToAnchor(this)" >判斷是那個thread加鎖/解鎖/申請鎖</a></li><li><a href="#類別與mutex" onclick="mobilePageScrollToAnchor(this)" >類別與mutex</a></li></ul></li><li><a href="#recursive_mutex" onclick="mobilePageScrollToAnchor(this)" >recursive_mutex</a></li><li><a href="#lock_guard" onclick="mobilePageScrollToAnchor(this)" >lock_guard</a></li></ul>
-
             
         </li>
 	
@@ -1101,7 +1101,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >互斥鎖Mutex</a>
+                            <a href="." >gdb core dump</a>
                         
                     </h1>
                 </div>
@@ -1114,12 +1114,77 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/thread/mutex">互斥鎖Mutex</h1>
+                        <h1 id="/pages/c/compile/core_dump">gdb core dump</h1>
                     
 
-                    <h2 id="執行緒安全">執行緒安全</h2>
+                    <p>產生memory leak的錯誤會存在core檔案。</p>
 
-<p>多個執行緒搶同一個資源，就會發生問題，以下程式碼</p>
+<p>linux預設不會產生core檔案，需修改系統參數。</p>
+
+<h2 id="查看core檔案大小語法">查看core檔案大小語法</h2>
+
+<p>ulimit是限制使用者資源使用量</p>
+
+<p>ulimit -a</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cici@cici-vm:~/test/app$ ulimit -a
+real-time non-blocking time  (microseconds, -R) unlimited
+core file size              (blocks, -c) 0
+data seg size               (kbytes, -d) unlimited
+scheduling priority                 (-e) 0
+file size                   (blocks, -f) unlimited
+pending signals                     (-i) 15194
+max locked memory           (kbytes, -l) 495132
+max memory size             (kbytes, -m) unlimited
+open files                          (-n) 1024
+pipe size                (512 bytes, -p) 8
+POSIX message queues         (bytes, -q) 819200
+real-time priority                  (-r) 0
+stack size                  (kbytes, -s) 8192
+cpu time                   (seconds, -t) unlimited
+max user processes                  (-u) 15194
+virtual memory              (kbytes, -v) unlimited
+file locks                          (-x) unlimited
+</code></pre></div></div>
+<p>由以上列表，可以發現core file size = 0</p>
+<pre>
+core file size              (blocks, <span class="markline">-c</span>) 0
+</pre>
+<p>從以上列表，也可以看到stack大小</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>stack size                  (kbytes, -s) 8192
+</code></pre></div></div>
+
+<h2 id="修改core檔案大小">修改core檔案大小</h2>
+
+<p>-c是上述列表中有列出來的，-c代表的是core file size</p>
+
+<p>將core file size設成無限unlimited</p>
+<pre>
+$ ulimit -c unlimited
+$ ulimit -a
+real-time non-blocking time  (microseconds, -R) unlimited
+<span class="markline">core file size              (blocks, -c) unlimited</span>
+data seg size               (kbytes, -d) unlimited
+scheduling priority                 (-e) 0
+file size                   (blocks, -f) unlimited
+pending signals                     (-i) 15194
+max locked memory           (kbytes, -l) 495132
+max memory size             (kbytes, -m) unlimited
+open files                          (-n) 1024
+pipe size                (512 bytes, -p) 8
+POSIX message queues         (bytes, -q) 819200
+real-time priority                  (-r) 0
+stack size                  (kbytes, -s) 8192
+cpu time                   (seconds, -t) unlimited
+max user processes                  (-u) 15194
+virtual memory              (kbytes, -v) unlimited
+file locks                          (-x) unlimited
+</pre>
+
+<h2 id="core-dump">core dump</h2>
+
+<p>建立一個cpp檔案core_test1.cpp</p>
+
+<p>以下func2()中，試圖給ptr指標設值，但ptr指標是nullptr。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1138,96 +1203,91 @@
 14
 15
 16
-17
-18
-19
-20
-21
-22
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;thread&gt;</span><span class="cp">
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//每一秒印1次，這裡是執行10秒</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//停1秒鐘</span>
-    <span class="p">}</span>
+<span class="kt">void</span> <span class="nf">func2</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// 宣告nullptr的ptr指標</span>
+  <span class="kt">char</span> <span class="o">*</span> <span class="n">ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="c1">// 試圖給nullptr設值</span>
+  <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="mi">97</span><span class="p">;</span>  <span class="c1">// 97代表a</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">func1</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">func2</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立執行緒t1</span>
-    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
-    <span class="c1">//建立執行緒t2</span>
-    <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
-    <span class="c1">//執行緒t1被記憶體釋放</span>
-    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="c1">//執行緒t2被記憶體釋放</span>
-    <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">func1</span><span class="p">(</span><span class="s">"test"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = 0, msg =test test
-i = 0, msg =abcdefg abcdefg
-i = 1, msg =test test
-i = 1, msg =abcdefg abcdefg
-i = 2, msg =abcdefg abcdefg
-i = 2, msg =test test
-i = 3i = 3, msg =test test, msg =abcdefg abcdefg
+<p>執行以下指令</p>
 
-i = 4i = 4, msg =abcdefg abcdefg, msg =test test
-
-i = 5, msg =test test
-i = 5, msg =abcdefg abcdefg
-i = 6, msg =test test
-i = 6, msg =abcdefg abcdefg
-i = 7, msg =test test
-i = 7, msg =abcdefg abcdefg
-i = 8, msg =abcdefg abcdefg
-i = 8, msg =test test
-i = 9, msg =abcdefg abcdefg
-i = 9, msg =test test
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ g++ -o demo04 core_test1.cpp -g
+$ ./demo04
+程式記憶體區段錯誤 (核心已傾印
+$ ls
 </code></pre></div></div>
 
-<p>從執行結果來看，以下二句是二個執行緒搶cout(全域變數)這個資源，導致輸出的結果不正常。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = 3i = 3, msg =test test, msg =abcdefg abcdefg
+<p>若是沒有產生"core"開頭的檔案，把core存放路徑改為目前執行程式的目錄下</p>
 
-i = 4i = 4, msg =abcdefg abcdefg, msg =test test
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "core" | sudo tee /proc/sys/kernel/core_pattern
 </code></pre></div></div>
 
-<h2 id="互斥鎖mutex">互斥鎖Mutex</h2>
+<p>再次執行程式</p>
 
-<p>同步(Concurrency Control)是指，多個執行緒協調如何使用同一個資源。</p>
-
-<p>如下圖，每一個人代表一個執行緒，他們都在排隊上同一間廁所(同一個資源)，當一個人(一個執行緒)進入廁所，就要把門鎖上，當上完廁所，再把門打開，輪下一個人(下一個執行緒)進去上廁所(同一個資源)。</p>
-
-<p><img src="/assets/img/toilet.png" alt="img" /></p>
-
-<p>互斥鎖保證同一個時間只有一個人(一個執行緒)使用廁所(同一個資源)，當一個執行緒把門鎖上，其它執行緒就在門外排隊等候，等待廁所中的執行緒把門打開(開鎖)，輪下一個執行緒進去把門鎖上。</p>
-
-<h3 id="匯入標頭檔">匯入標頭檔</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;mutex&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./demo04
+$ ls
 </code></pre></div></div>
 
-<h3 id="互斥鎖全域變數">互斥鎖全域變數</h3>
+<p>檢查是否已經產生"core"開頭的檔案</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mutex mtx;
+<h2 id="debug">debug</h2>
+
+<p>輸入以下指令，core是先前步驟的檔名，每個人的檔名不同，都是以core開頭</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gdb ./demo04 core
 </code></pre></div></div>
 
-<h3 id="lock-鎖上">lock() 鎖上</h3>
+<p>黃色是要輸入的字母</p>
+<pre>
+Enable debuginfod for this session? (y or [n]) <span class="markline">y</span>
+Debuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+Downloading separate debug info for system-supplied DSO at 0x7fffff0d2000
+--Type &lt; RET &gt; for more, q to quit, c to continue without paging--<span class="markline">c</span>
+[Thread debugging using libthread_db enabled]                                   
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Core was generated by `./demo04'.
+Program terminated with signal SIGSEGV, Segmentation fault.
+#0  0x00005a0b1c65d321 in func2 (msg=...) at core_test1.cpp:8
+<span class="markline">8	  *ptr = 97;  // 97代表a</span>
+(gdb) 
+</pre>
 
-<p>可以把mutex想像成是廁所那個門，若是門是鎖起來的狀態，代表有人(一個thread)在廁所裡面，其它人(threads)就要在門外排隊等待，直到門開鎖，沒有鎖起來的狀態，執行緒呼叫mutex.lock()會自行判斷鎖起來的狀態，若沒鎖上，執行緒會得到鎖，若鎖上，執行緒就要排隊等待。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>8	  *ptr = 97;  // 97代表a
+</code></pre></div></div>
+<p>會告知你錯誤的地方在第8行</p>
 
-<h3 id="unlock-開鎖">unlock() 開鎖</h3>
+<h2 id="bt">bt</h2>
 
-<p>只有在廁所中的執行緒才有開鎖的功能，其它在廁所門外排隊的執行緒是沒辦法開鎖。</p>
+<p>輸入bt，會列出呼叫函式的堆疊(call stack)</p>
 
-<h3 id="程式碼">程式碼</h3>
+<p>由下往上呼叫，最下面是main()呼叫func1()，func1()再呼叫func2()，最上層的是func2()</p>
 
-<p>先前的程式，把cout想成廁所，程式碼修改如下</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(gdb) bt
+#0  0x00005a0b1c65d321 in func2 (msg="test") at core_test1.cpp:8
+#1  0x00005a0b1c65d365 in func1 (msg="test") at core_test1.cpp:11
+#2  0x00005a0b1c65d3d4 in main () at core_test1.cpp:14
+</code></pre></div></div>
+
+<h2 id="q">q</h2>
+
+<p>輸入q就會離開gdb</p>
+
+<h2 id="顯示錯誤的行號在c函式庫">顯示錯誤的行號在c++函式庫</h2>
+
+<p>修改程式碼</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1246,78 +1306,99 @@ i = 4i = 4, msg =abcdefg abcdefg, msg =test test
 14
 15
 16
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;thread&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;mutex&gt;</span><span class="cp">
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="c1">//建立mutex互斥鎖</span>
-<span class="n">mutex</span> <span class="n">mtx</span><span class="p">;</span>
-<span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//每一秒印1次，這裡是執行10秒</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">mtx</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span><span class="c1">//把門鎖上</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//持有鎖後，再休眠1秒</span>
-        <span class="n">mtx</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span><span class="c1">//使用完畢，把門開鎖</span>
-    <span class="p">}</span>
+<span class="kt">void</span> <span class="nf">func2</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// 宣告nullptr的ptr指標</span>
+  <span class="kt">char</span> <span class="o">*</span> <span class="n">ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="c1">// 試圖給nullptr設值</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">ptr</span><span class="p">,</span> <span class="n">msg</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">func1</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">func2</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">func1</span><span class="p">(</span><span class="s">"test"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = 0, msg =test test
-i = 1, msg =test test
-i = 2, msg =test test
-i = 3, msg =test test
-i = 4, msg =test test
-i = 5, msg =test test
-i = 0, msg =abcdefg abcdefg
-i = 1, msg =abcdefg abcdefg
-i = 2, msg =abcdefg abcdefg
-i = 3, msg =abcdefg abcdefg
-i = 4, msg =abcdefg abcdefg
-i = 5, msg =abcdefg abcdefg
-i = 6, msg =abcdefg abcdefg
-i = 7, msg =abcdefg abcdefg
-i = 8, msg =abcdefg abcdefg
-i = 9, msg =abcdefg abcdefg
-i = 6, msg =test test
-i = 7, msg =test test
-i = 8, msg =test test
-i = 9, msg =test test
+<p>執行以下指令</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ g++ -o demo04 core_test1.cpp -g
+$ ./demo04
+程式記憶體區段錯誤 (核心已傾印)
+$ gdb ./demo04 core
 </code></pre></div></div>
 
-<h3 id="判斷是那個thread加鎖解鎖申請鎖">判斷是那個thread加鎖/解鎖/申請鎖</h3>
+<p>以下的錯誤無法看出來是什麼問題</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#0  __strcpy_avx2 () at ../sysdeps/x86_64/multiarch/strcpy-avx2.S:127
+</code></pre></div></div>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//每一秒印1次，這裡是執行10秒</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"申請鎖的thread = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">mtx</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鎖上的thread = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//持有鎖後，再休眠1秒</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"開鎖的thread = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">mtx</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p>使用bt可以看出錯誤</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(gdb) bt
+#0  __strcpy_avx2 () at ../sysdeps/x86_64/multiarch/strcpy-avx2.S:127
+#1  0x00005ad51c60a37f in func2 (msg="test") at core_test1.cpp:8
+#2  0x00005ad51c60a3c0 in func1 (msg="test") at core_test1.cpp:11
+#3  0x00005ad51c60a42f in main () at core_test1.cpp:14
+</code></pre></div></div>
 
-<h3 id="類別與mutex">類別與mutex</h3>
+<h2 id="其它方式查看core-dump">其它方式查看core dump</h2>
+
+<h3 id="安裝coredump">安裝coredump</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install systemd-coredump
+</code></pre></div></div>
+
+<h3 id="執行並core-dump">執行並core dump</h3>
+
+<p>進入coredumpctl，使用q可離開</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ g++ -o demo03 core_test.cpp -g
+$ ./demo03
+程式記憶體區段錯誤 (核心已傾印
+$ coredumpctl
+TIME                          PID  UID  GID SIG     COREFILE EXE                       &gt;
+Thu 2024-12-05 15:17:05 CST 25260 1000 1000 SIGSEGV present  /home/cici/test/app/demo03&gt;
+Thu 2024-12-05 15:26:49 CST 25335 1000 1000 SIGSEGV present  /home/cici/test/app/demo03&gt;
+$ coredumpctl debug demo03
+</code></pre></div></div>
+
+<h3 id="bt-1">bt</h3>
+
+<p>以下用黃色表示會要使用者輸入的部分與發生錯誤的行數。</p>
+
+<p>bt可以列出呼叫函式的堆疊(call stack)，由下往上呼叫，最下面是main()呼叫func1()，func1()再呼叫func2()，最上層的是func2()</p>
+
+<p>以下，使用q可離開</p>
+<pre>
+<span class="markline">Enable debuginfod for this session? (y or [n]) y</span>
+Debuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+[Thread debugging using libthread_db enabled]
+--Type &lt; RET &gt; for more, q to quit, c to continue without paging--<span class="markline">c</span>
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Core was generated by `./demo03'.
+Program terminated with signal SIGSEGV, Segmentation fault.
+#0  0x00005893c17b7321 in func2 (msg=...) at core_test.cpp:8
+<span class="markline">8	  *ptr = 97;  // 97代表a</span>
+(gdb) <span class="markline">bt</span>
+#0  0x00005893c17b7321 in func2 (msg="test") at core_test.cpp:8
+#1  0x00005893c17b7365 in func1 (msg="test") at core_test.cpp:11
+#2  0x00005893c17b73d4 in main () at core_test.cpp:14
+</pre>
+
+<p>若發生錯誤的是在c++的函式庫中，怎麼查找錯誤？</p>
+
+<p>將程式碼</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*ptr = 97;
+</code></pre></div></div>
+<p>修改成c++函式strcpy</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>strcpy(ptr, msg.c_str());
+</code></pre></div></div>
+
+<p>修改程式碼</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1336,267 +1417,65 @@ i = 9, msg =test test
 14
 15
 16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="c1">//私有成員變數互斥鎖</span>
-    <span class="n">mutex</span> <span class="n">m_mutex</span><span class="p">;</span>
-<span class="nl">public:</span>
-    <span class="kt">void</span> <span class="n">func</span><span class="p">(</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">m_mutex</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span>
-            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-            <span class="n">m_mutex</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">};</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span><span class="c1">//建立物件</span>
-    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="s">"student1"</span><span class="p">);</span>
-    <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="s">"student2"</span><span class="p">);</span>
-    <span class="kr">thread</span> <span class="n">t3</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="s">"student3"</span><span class="p">);</span>
-    <span class="kr">thread</span> <span class="n">t4</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="s">"student4"</span><span class="p">);</span>
-    <span class="kr">thread</span> <span class="n">t5</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="s">"student5"</span><span class="p">);</span>
-    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="n">t3</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="n">t4</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="n">t5</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func2</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// 宣告nullptr的ptr指標</span>
+  <span class="kt">char</span> <span class="o">*</span> <span class="n">ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="c1">// 試圖給nullptr設值</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">ptr</span><span class="p">,</span> <span class="n">msg</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>msg = student1
-msg = student3
-msg = student5
-msg = student5
-msg = student5
-msg = student5
-msg = student5
-msg = student5
-msg = student5
-msg = student5
-msg = student5
-msg = student5
-以下截斷
-</code></pre></div></div>
-
-<h2 id="recursive_mutex">recursive_mutex</h2>
-
-<p>以下程式碼，func4()呼叫func3()，但執行結果只印出func4。
-若是鎖中有鎖，會有死鎖(Dead lock)問題，mutex必須解鎖才能加鎖。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-</pre></td><td class="code"><pre><span class="n">mutex</span> <span class="n">mtx</span><span class="p">;</span>
-<span class="kt">void</span> <span class="nf">func3</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">mtx</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span><span class="c1">//加鎖</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func3"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">mtx</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span><span class="c1">//解鎖</span>
-<span class="p">}</span>
-<span class="kt">void</span> <span class="n">func4</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">mtx</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span><span class="c1">//加鎖</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func4"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">func3</span><span class="p">();</span><span class="c1">//呼叫func3</span>
-    <span class="n">mtx</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span><span class="c1">//解鎖</span>
+<span class="kt">void</span> <span class="n">func1</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">func2</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立執行緒t1</span>
-    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func4</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
-    <span class="c1">//執行緒t1被記憶體釋放</span>
-    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">func1</span><span class="p">(</span><span class="s">"test"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func4
+<p>重新編譯</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ g++ -o demo03 core_test.cpp -g
+$ ./demo03
+程式記憶體區段錯誤 (核心已傾印
+$ coredumpctl
+$ coredumpctl debug demo03
 </code></pre></div></div>
 
-<p>改成使用recursive_mutex，就不會有死鎖問題。</p>
+<p>使用bt，就可以查找出來發生錯誤的函式，main()呼叫func1，func1呼叫func2，func2呼叫strcpy</p>
+<pre>
+#0  __strcpy_avx2 () at ../sysdeps/x86_64/multiarch/strcpy-avx2.S:127
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-</pre></td><td class="code"><pre><span class="n">recursive_mutex</span> <span class="n">r_mtx</span><span class="p">;</span>
-<span class="kt">void</span> <span class="nf">func3</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">r_mtx</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span><span class="c1">//加鎖</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func3"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">r_mtx</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span><span class="c1">//解鎖</span>
-<span class="p">}</span>
-<span class="kt">void</span> <span class="n">func4</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">r_mtx</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span><span class="c1">//加鎖</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func4"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">func3</span><span class="p">();</span><span class="c1">//呼叫func3</span>
-    <span class="n">r_mtx</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span><span class="c1">//解鎖</span>
-<span class="p">}</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立執行緒t1</span>
-    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func4</span><span class="p">);</span>
-    <span class="c1">//執行緒t1被記憶體釋放</span>
-    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+warning: 127	../sysdeps/x86_64/multiarch/strcpy-avx2.S: 沒有此一檔案或目錄
+(gdb) <span class="markline">bt</span>
+#0  __strcpy_avx2 () at ../sysdeps/x86_64/multiarch/strcpy-avx2.S:127
+#1  0x000055a25facd37f in func2 (msg="test") at core_test.cpp:<span class="markline">8</span>
+#2  0x000055a25facd3c0 in func1 (msg="test") at core_test.cpp:<span class="markline">11</span>
+#3  0x000055a25facd42f in main () at core_test.cpp:<span class="markline">14</span>
+</pre>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func4
-func3
-</code></pre></div></div>
-
-<h2 id="lock_guard">lock_guard</h2>
-
-<p>lock_guard是mutex的樣板，只要管加鎖，不用管解鎖，它會在離開有效範圍(Scope)與生命週期(Lifetime)，自動解鎖。</p>
-
-<p>語法</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">lock_guard</span><span class="o">&lt;</span><span class="n">mutex</span><span class="err">類別名</span><span class="o">&gt;</span> <span class="n">mlock</span><span class="p">(</span><span class="n">mtx</span><span class="err">物件名</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>把之前的程式碼修改成lock_guard</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func2</span><span class="p">(</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//每一秒印1次，這裡是執行10秒</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"申請鎖的thread = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="c1">//有效範圍scope 開始</span>
-        <span class="p">{</span>
-            <span class="n">lock_guard</span><span class="o">&lt;</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">mlock</span><span class="p">(</span><span class="n">mtx</span><span class="p">);</span><span class="c1">//把門鎖上</span>
-            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鎖上的thread = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-            <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//持有鎖後，再休眠1秒</span>
-            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"開鎖的thread = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="c1">//有效範圍scope 結束</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立執行緒t1</span>
-    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func2</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
-    <span class="c1">//建立執行緒t2</span>
-    <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func2</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
-    <span class="c1">//執行緒t1被記憶體釋放</span>
-    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="c1">//執行緒t2被記憶體釋放</span>
-    <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>申請鎖的thread = 0x700005e2a000
-鎖上的thread = 0x700005e2a000
-i = 0, msg =test test
-申請鎖的thread = 0x700005ead000
-開鎖的thread = 0x700005e2a000
-申請鎖的thread = 0x700005e2a000
-鎖上的thread = 0x700005e2a000
-i = 1, msg =test test
-開鎖的thread = 0x700005e2a000
-申請鎖的thread = 0x700005e2a000
-鎖上的thread = 0x700005e2a000
-i = 2, msg =test test
-開鎖的thread = 0x700005e2a000
-申請鎖的thread = 0x700005e2a000
-鎖上的thread = 0x700005e2a000
-i = 3, msg =test test
-開鎖的thread = 0x700005e2a000
-申請鎖的thread = 0x700005e2a000
-鎖上的thread = 0x700005ead000
-i = 0, msg =abcdefg abcdefg
-開鎖的thread = 0x700005ead000
-申請鎖的thread = 0x700005ead000
-鎖上的thread = 0x700005ead000
-i = 1, msg =abcdefg abcdefg
-開鎖的thread = 0x700005ead000
-申請鎖的thread = 0x700005ead000
-鎖上的thread = 0x700005ead000
-i = 2, msg =abcdefg abcdefg
-開鎖的thread = 0x700005ead000
-申請鎖的thread = 0x700005ead000
-鎖上的thread = 0x700005ead000
-i = 3, msg =abcdefg abcdefg
-開鎖的thread = 0x700005ead000
-申請鎖的thread = 0x700005ead000
-鎖上的thread = 0x700005ead000
-i = 4, msg =abcdefg abcdefg
-開鎖的thread = 0x700005ead000
-以下截斷
-</code></pre></div></div>
+<p>行數請比對如下</p>
+<pre>
+  1 #include <cstring>
+  2 #include <iostream>
+  3 using namespace std;
+  4 void func2(const string msg) {
+  5   // 宣告nullptr的ptr指標
+  6   char * ptr = nullptr;
+  7   // 試圖給nullptr設值
+ <span class="markline"> 8   strcpy(ptr, msg.c_str());</span>
+  9 }
+ 10 void func1(const string msg) {
+ <span class="markline">11   func2(msg);</span>
+ 12 }
+ 13 int main() {
+ <span class="markline">14   func1("test");</span>
+ 15   return 0;
+ 16 }
+&lt;/pre&gt;
+</iostream></cstring></pre>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1660,14 +1539,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/thread/this_thread" class="navigation navigation-prev navigation-unique" aria-label="Previous page: this_thread">
+                        <a href="/pages/c/compile/gdb" class="navigation navigation-prev navigation-unique" aria-label="Previous page: gdb">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/thread/condition_variable" class="navigation navigation-next navigation-unique" aria-label="Next page: condition_variable">
+                        <a href="/pages/c/compile/gdb_attach_pid" class="navigation navigation-next navigation-unique" aria-label="Next page: gdb attach pid">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1685,11 +1564,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "this_thread",
+            "title": "gdb",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/thread/this_thread.md",
-            "ref": "_pages/c/thread/this_thread.md",
+            "path": "_pages/c/compile/gdb.md",
+            "ref": "_pages/c/compile/gdb.md",
             "articles": []
         },
         
@@ -1781,8 +1660,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/thread/mutex.md",
-        "mtime": "2024-10-22 00:00:00 +0800",
+        "path": "_pages/c/compile/core_dump.md",
+        "mtime": "2024-12-04 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
