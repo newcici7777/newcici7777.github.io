@@ -7,6 +7,7 @@ keywords: c++, iterator
 Prerequisites:
 
 - [記憶體間隔計算][1]
+- [函式模板][2]
 
 ## begin與end的位置
 
@@ -532,5 +533,5 @@ int main() {
 1 2 3 4 5 6 7 8 9 10 
 ```
 
-
 [1]: {% link _pages/c/dynamicMemory/memory_interval.md %}
+[2]: {% link _pages/c/template/function_template.md %}

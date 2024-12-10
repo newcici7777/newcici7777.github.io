@@ -69,7 +69,6 @@ virtual memory              (kbytes, -v) unlimited
 file locks                          (-x) unlimited
 </pre>
 
-
 ## core dump
 
 建立一個cpp檔案core_test1.cpp
@@ -93,8 +92,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
-
 
 執行以下指令
 

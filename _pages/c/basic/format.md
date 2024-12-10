@@ -385,5 +385,23 @@ std::vector<string> list{
 - 在多重 if-else 區塊裡加斷行對可讀性可能有些幫助。
 - 在註解前面加空行通常可以增加可讀性，引入一段新的註解等於在介紹一個新想法的開始，此時加上空行可以清楚地表示這段註解是在說明接下來的程式碼，而非延續前面的行為。
 
+## initializer_list
+
+若是你不得不斷行，放在下一行，加上4格的縮排
+
+{% highlight c++ linenos %}
+// 若是你不得不斷行。
+SomeFunction(
+    {"assume a zero-length name before {"},
+    some_other_function_parameter);
+SomeType variable{
+    "This is too long to fit all in one line"};
+MyType m = {  // 你也可以在 { 前斷行。
+    superlongvariablename1,
+    superlongvariablename2,
+    {short, interior, list},
+    {interiorwrappinglist,
+     interiorwrappinglist2}};
+{% endhighlight %}
 
 

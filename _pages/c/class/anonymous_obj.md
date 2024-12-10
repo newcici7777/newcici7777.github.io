@@ -113,6 +113,7 @@ int main() {
 
 
 ## initializer_list匿名物件
+- [initializer list][1]
 
 以下程式碼由initializer_list方式建立物件
 
@@ -131,3 +132,5 @@ int main() {
     return 0;
 }
 {% endhighlight %}
+
+[1]: {% link _pages/c/c11/init_list.md %}
