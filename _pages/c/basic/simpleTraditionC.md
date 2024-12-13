@@ -10,11 +10,12 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |:--:|:--:|:--:|
 |head file|標頭檔案|頭文件|
 |source file|原始檔案|源文件|
-|STL|函式庫|庫函數|
+|C++ STL = Standard Template Librar|C++函式庫|C++庫函數|
+|C libc = standard library|C函式庫|C庫函數|
 |object file|目的檔|目標檔|
 |binary file|機器語言指令|二進制檔案|
 |linking|鏈結|鏈結|
-|process id|進程|行程|
+
 
 ## 資料型態相關
 
@@ -64,7 +65,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |conversion|轉型|轉換|
 |explicit conversion|強制轉型|顯示轉換或手動轉換|
 |implicit conversion|自動轉型|隱式轉換|
-|Temp Variable|臨時變數|臨時變量|
+|Temp Variable|暫存變數或臨時變數|臨時變量|
 
 
 ## 陣列相關
@@ -141,3 +142,9 @@ struct|結構|結構體|
 |::scope resolution operator|範圍運算子|域作用符|
 |Functor|物件函式|仿函數|
 
+## process相關
+
+|英文|台灣|大陸|
+|process id|程序 id|行程(進程) id|
+|signal|訊號|信號| 
+|command|指令|命令|

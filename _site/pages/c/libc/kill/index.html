@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>string 字串 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>kill · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -200,13 +200,6 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/basic/chrono" onclick="pageScrollToTop(this)"> 程式執行時間</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
     	<a href="/pages/c/basic/rand" onclick="pageScrollToTop(this)"> 亂數</a>
         
             
@@ -365,12 +358,9 @@
         </li>
 	
 	
-	<li class="active">
-    	<a href="/pages/c/string/string" onclick="pageScrollToTop(this)"> string 字串</a>
+	<li class="">
+    	<a href="/pages/c/string/string_convert" onclick="pageScrollToTop(this)"> string convert</a>
         
-            
-                <ul><li><a href="#string陣列" onclick="mobilePageScrollToAnchor(this)" >string陣列</a></li><li><a href="#清空" onclick="mobilePageScrollToAnchor(this)" >清空</a></li></ul>
-
             
         </li>
 	
@@ -1100,7 +1090,58 @@
     	<a href="/pages/c/thread/condition_variable" onclick="pageScrollToTop(this)"> condition_variable</a>
         
             
-        </li></ul></li></ul></li>
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> time </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/time/chrono" onclick="pageScrollToTop(this)"> 程式執行時間</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/time/time" onclick="pageScrollToTop(this)"> time</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> linux系統c函式庫 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/errno" onclick="pageScrollToTop(this)"> 取得錯誤訊息</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/file_io" onclick="pageScrollToTop(this)"> 檔案目錄操作</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/system_execl" onclick="pageScrollToTop(this)"> system與execl</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> process相關 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/signal" onclick="pageScrollToTop(this)"> signal訊號</a>
+        
+            
+        </li></ul></li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> Jekyll </a><ul>
@@ -1122,7 +1163,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >string 字串</a>
+                            <a href="." >kill</a>
                         
                     </h1>
                 </div>
@@ -1135,62 +1176,21 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/string/string">string 字串</h1>
+                        <h1 id="/pages/c/libc/kill">kill</h1>
                     
 
-                    <h2 id="string陣列">string陣列</h2>
+                    <p>linux提供kill指令向程序(process)發送訊號。</p>
 
-<p>判斷數字，印出月份英文</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-</pre></td><td class="code"><pre><span class="c1">//12個月</span>
-<span class="k">const</span> <span class="kt">int</span> <span class="n">MAX_MONTH</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">mon_arr</span><span class="p">[</span><span class="n">MAX_MONTH</span><span class="p">]</span> <span class="o">=</span>
-    <span class="p">{</span><span class="s">"January"</span><span class="p">,</span><span class="s">"February"</span><span class="p">,</span><span class="s">"March"</span><span class="p">,</span><span class="s">"April"</span><span class="p">,</span><span class="s">"May"</span><span class="p">,</span><span class="s">"June"</span><span class="p">,</span><span class="s">"July"</span><span class="p">,</span><span class="s">"August"</span><span class="p">,</span><span class="s">"September"</span><span class="p">,</span><span class="s">"October"</span><span class="p">,</span><span class="s">"November"</span><span class="p">,</span><span class="s">"December"</span><span class="p">};</span>
-    <span class="kt">int</span> <span class="n">month</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入數字月份(1~12):"</span><span class="p">;</span>
-    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">month</span><span class="p">;</span>
-    <span class="c1">//陣列索引介於0..11，所以要把month-1</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mon_arr</span><span class="p">[</span><span class="n">month</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>請輸入數字月份(1~12):1
-January
+<p>語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int kill(pid_t pid, int sig);
 </code></pre></div></div>
+<p>kill函式會將參數sig訊號傳給相關pid的程序(process)。</p>
 
-<h2 id="清空">清空</h2>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="code"><pre>    <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">name</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name: Bill
-name: 
-</code></pre></div></div>
+<ul>
+  <li>pid &gt; 0 傳給訊號給特定的pid程序。</li>
+  <li>pid = 0 傳給訊號父pid相關的程序，包含父pid程序，此父pid程序的所有子程序都會收到sig訊號</li>
+  <li>pid = -1 廣播所有process程序</li>
+</ul>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1253,17 +1253,7 @@ window.MathJax = {
                     
     
                     
-                        
-                        <a href="/pages/c/array/pointerCharArr" class="navigation navigation-prev navigation-unique" aria-label="Previous page: char字串指標">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                    
 
-                    
-                        
-                        <a href="/pages/c/basic/strLen" class="navigation navigation-next navigation-unique" aria-label="Next page: 取得字串長度">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -1279,11 +1269,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "迴圈",
+            "title": "signal訊號",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/basic/loop.md",
-            "ref": "_pages/c/basic/loop.md",
+            "path": "_pages/c/libc/signal.md",
+            "ref": "_pages/c/libc/signal.md",
             "articles": []
         },
         
@@ -1375,13 +1365,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/string/string.md",
-        "mtime": "2024-07-22 00:00:00 +0800",
+        "path": "_pages/c/libc/kill.md",
+        "mtime": "2024-12-13 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-10 11:09:59 +0800"
+        "time": "2024-12-13 15:19:43 +0800"
     },
     "basePath": "",
     "book": {

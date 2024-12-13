@@ -404,4 +404,26 @@ MyType m = {  // 你也可以在 { 前斷行。
      interiorwrappinglist2}};
 {% endhighlight %}
 
+## 關係運算子放在行尾
 
+若是你不得不斷行，放在下一行，加上4格的縮排
+
+關係運算子斷行時一律放在行尾
+
+{% highlight c++ linenos %}
+string time_str =
+    to_string(tmnow.tm_year + 1900) + "/" +
+    to_string(tmnow.tm_mon + 1) + "/" +
+    to_string(tmnow.tm_mday) + "/" +
+    to_string(tmnow.tm_hour) + ":" +
+    to_string(tmnow.tm_min) + ":" +
+    to_string(tmnow.tm_sec);
+{% endhighlight %}
+
+{% highlight c++ linenos %}
+if (this_one_thing > this_other_thing &&
+    a_third_thing == a_fourth_thing &&
+    yet_another & last_one) {
+  ...
+}
+{% endhighlight %}

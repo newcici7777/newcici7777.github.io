@@ -127,7 +127,7 @@
     	<a href="/pages/c/basic/simpleTraditionC" onclick="pageScrollToTop(this)"> 台陸指標相關名詞差異</a>
         
             
-                <ul><li><a href="#文件相關" onclick="mobilePageScrollToAnchor(this)" >文件相關</a></li><li><a href="#資料型態相關" onclick="mobilePageScrollToAnchor(this)" >資料型態相關</a></li><li><a href="#運算式相關" onclick="mobilePageScrollToAnchor(this)" >運算式相關</a></li><li><a href="#變數相關" onclick="mobilePageScrollToAnchor(this)" >變數相關</a></li><li><a href="#陣列相關" onclick="mobilePageScrollToAnchor(this)" >陣列相關</a></li><li><a href="#函式相關" onclick="mobilePageScrollToAnchor(this)" >函式相關</a></li><li><a href="#指標相關" onclick="mobilePageScrollToAnchor(this)" >指標相關</a></li><li><a href="#記憶體相關" onclick="mobilePageScrollToAnchor(this)" >記憶體相關</a></li><li><a href="#資料結構相關" onclick="mobilePageScrollToAnchor(this)" >資料結構相關</a></li><li><a href="#物件相關" onclick="mobilePageScrollToAnchor(this)" >物件相關</a></li></ul>
+                <ul><li><a href="#文件相關" onclick="mobilePageScrollToAnchor(this)" >文件相關</a></li><li><a href="#資料型態相關" onclick="mobilePageScrollToAnchor(this)" >資料型態相關</a></li><li><a href="#運算式相關" onclick="mobilePageScrollToAnchor(this)" >運算式相關</a></li><li><a href="#變數相關" onclick="mobilePageScrollToAnchor(this)" >變數相關</a></li><li><a href="#陣列相關" onclick="mobilePageScrollToAnchor(this)" >陣列相關</a></li><li><a href="#函式相關" onclick="mobilePageScrollToAnchor(this)" >函式相關</a></li><li><a href="#指標相關" onclick="mobilePageScrollToAnchor(this)" >指標相關</a></li><li><a href="#記憶體相關" onclick="mobilePageScrollToAnchor(this)" >記憶體相關</a></li><li><a href="#資料結構相關" onclick="mobilePageScrollToAnchor(this)" >資料結構相關</a></li><li><a href="#物件相關" onclick="mobilePageScrollToAnchor(this)" >物件相關</a></li><li><a href="#process相關" onclick="mobilePageScrollToAnchor(this)" >process相關</a></li></ul>
 
             
         </li>
@@ -197,13 +197,6 @@
 	
 	<li class="">
     	<a href="/pages/c/basic/loop" onclick="pageScrollToTop(this)"> 迴圈</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
-    	<a href="/pages/c/basic/chrono" onclick="pageScrollToTop(this)"> 程式執行時間</a>
         
             
         </li>
@@ -369,7 +362,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/string/string" onclick="pageScrollToTop(this)"> string 字串</a>
+    	<a href="/pages/c/string/string_convert" onclick="pageScrollToTop(this)"> string convert</a>
         
             
         </li>
@@ -1100,7 +1093,58 @@
     	<a href="/pages/c/thread/condition_variable" onclick="pageScrollToTop(this)"> condition_variable</a>
         
             
-        </li></ul></li></ul></li>
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> time </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/time/chrono" onclick="pageScrollToTop(this)"> 程式執行時間</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/time/time" onclick="pageScrollToTop(this)"> time</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> linux系統c函式庫 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/errno" onclick="pageScrollToTop(this)"> 取得錯誤訊息</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/file_io" onclick="pageScrollToTop(this)"> 檔案目錄操作</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/system_execl" onclick="pageScrollToTop(this)"> system與execl</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> process相關 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/signal" onclick="pageScrollToTop(this)"> signal訊號</a>
+        
+            
+        </li></ul></li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> Jekyll </a><ul>
@@ -1160,9 +1204,14 @@
       <td style="text-align: center">源文件</td>
     </tr>
     <tr>
-      <td style="text-align: center">STL</td>
-      <td style="text-align: center">函式庫</td>
-      <td style="text-align: center">庫函數</td>
+      <td style="text-align: center">C++ STL = Standard Template Librar</td>
+      <td style="text-align: center">C++函式庫</td>
+      <td style="text-align: center">C++庫函數</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">C libc = standard library</td>
+      <td style="text-align: center">C函式庫</td>
+      <td style="text-align: center">C庫函數</td>
     </tr>
     <tr>
       <td style="text-align: center">object file</td>
@@ -1178,11 +1227,6 @@
       <td style="text-align: center">linking</td>
       <td style="text-align: center">鏈結</td>
       <td style="text-align: center">鏈結</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">process id</td>
-      <td style="text-align: center">進程</td>
-      <td style="text-align: center">行程</td>
     </tr>
   </tbody>
 </table>
@@ -1393,7 +1437,7 @@
     </tr>
     <tr>
       <td style="text-align: center">Temp Variable</td>
-      <td style="text-align: center">臨時變數</td>
+      <td style="text-align: center">暫存變數或臨時變數</td>
       <td style="text-align: center">臨時變量</td>
     </tr>
   </tbody>
@@ -1693,6 +1737,32 @@
   </tbody>
 </table>
 
+<h2 id="process相關">process相關</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>英文</td>
+      <td>台灣</td>
+      <td>大陸</td>
+    </tr>
+    <tr>
+      <td>process id</td>
+      <td>程序 id</td>
+      <td>行程(進程) id</td>
+    </tr>
+    <tr>
+      <td>signal</td>
+      <td>訊號</td>
+      <td>信號</td>
+    </tr>
+    <tr>
+      <td>command</td>
+      <td>指令</td>
+      <td>命令</td>
+    </tr>
+  </tbody>
+</table>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1883,7 +1953,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-10 11:09:59 +0800"
+        "time": "2024-12-13 15:19:43 +0800"
     },
     "basePath": "",
     "book": {

@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>程式執行時間 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>time · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -199,16 +199,6 @@
         </li>
 	
 	
-	<li class="active">
-    	<a href="/pages/c/basic/chrono" onclick="pageScrollToTop(this)"> 程式執行時間</a>
-        
-            
-                
-
-            
-        </li>
-	
-	
 	<li class="">
     	<a href="/pages/c/basic/rand" onclick="pageScrollToTop(this)"> 亂數</a>
         
@@ -369,7 +359,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/string/string" onclick="pageScrollToTop(this)"> string 字串</a>
+    	<a href="/pages/c/string/string_convert" onclick="pageScrollToTop(this)"> string convert</a>
         
             
         </li>
@@ -1100,7 +1090,61 @@
     	<a href="/pages/c/thread/condition_variable" onclick="pageScrollToTop(this)"> condition_variable</a>
         
             
-        </li></ul></li></ul></li>
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> time </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/time/chrono" onclick="pageScrollToTop(this)"> 程式執行時間</a>
+        
+            
+        </li>
+	
+	
+	<li class="active">
+    	<a href="/pages/c/time/time" onclick="pageScrollToTop(this)"> time</a>
+        
+            
+                <ul><li><a href="#取得現在時間" onclick="mobilePageScrollToAnchor(this)" >取得現在時間</a></li><li><a href="#tm結構" onclick="mobilePageScrollToAnchor(this)" >tm結構</a></li><li><a href="#localtime" onclick="mobilePageScrollToAnchor(this)" >localtime</a></li><li><a href="#計算執行時間" onclick="mobilePageScrollToAnchor(this)" >計算執行時間</a><ul><li><a href="#gettimeofday" onclick="mobilePageScrollToAnchor(this)" >gettimeofday</a></li></ul></li></ul>
+
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> linux系統c函式庫 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/errno" onclick="pageScrollToTop(this)"> 取得錯誤訊息</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/file_io" onclick="pageScrollToTop(this)"> 檔案目錄操作</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/system_execl" onclick="pageScrollToTop(this)"> system與execl</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> process相關 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/signal" onclick="pageScrollToTop(this)"> signal訊號</a>
+        
+            
+        </li></ul></li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> Jekyll </a><ul>
@@ -1122,7 +1166,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >程式執行時間</a>
+                            <a href="." >time</a>
                         
                     </h1>
                 </div>
@@ -1135,14 +1179,23 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/basic/chrono">程式執行時間</h1>
+                        <h1 id="/pages/c/time/time">time</h1>
                     
 
-                    <p>include chrono</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;chrono&gt;
+                    <p>取得從1970/01/01至今累加的秒數，以長整數(long)存放此秒數。</p>
+
+<h2 id="取得現在時間">取得現在時間</h2>
+
+<p>include語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;time.h&gt;
 </code></pre></div></div>
 
-<p>執行的程式碼，放入要計算執行效率的程式</p>
+<p>語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>time_t time(time_t *tloc);
+</code></pre></div></div>
+<ul>
+  <li>參數代入nullptr = 0</li>
+</ul>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1157,22 +1210,129 @@
 10
 11
 12
-</pre></td><td class="code"><pre>    <span class="c1">//start 計時開始</span>
-    <span class="c1">//end 計時結束</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">steady_clock</span><span class="o">::</span><span class="n">time_point</span> <span class="n">start</span><span class="p">,</span><span class="n">end</span><span class="p">;</span>
-    <span class="c1">//dt 時間差</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">nanoseconds</span> <span class="n">dt</span><span class="p">;</span>
-    <span class="n">start</span> <span class="o">=</span> <span class="n">chrono</span><span class="o">::</span><span class="n">steady_clock</span><span class="o">::</span><span class="n">now</span><span class="p">();</span> 
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100000</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="err">執行的程式碼</span>
-    <span class="p">}</span>   
-    <span class="n">end</span> <span class="o">=</span> <span class="n">chrono</span><span class="o">::</span><span class="n">steady_clock</span><span class="o">::</span><span class="n">now</span><span class="p">();</span>
-    <span class="n">dt</span> <span class="o">=</span> <span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"執行"</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">dt</span><span class="p">.</span><span class="n">count</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">1000</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">"秒"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>    
+13
+14
+15
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;time.h&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 方式1</span>
+  <span class="c1">// 把nullptr也就是0作為參數代入time()函式</span>
+  <span class="kt">time_t</span> <span class="n">now</span> <span class="o">=</span> <span class="n">time</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"now = "</span> <span class="o">&lt;&lt;</span> <span class="n">now</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">// 方式2</span>
+  <span class="c1">// 將now2的位址作為參數代入time()函式</span>
+  <span class="kt">time_t</span> <span class="n">now2</span><span class="p">;</span>
+  <span class="n">time</span><span class="p">(</span><span class="o">&amp;</span><span class="n">now2</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"now2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">now2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>完整程式碼</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>now = 1733883906
+now2 = 1733883906
+</code></pre></div></div>
+
+<h2 id="tm結構">tm結構</h2>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="k">struct</span> <span class="nc">tm</span>
+<span class="p">{</span>
+  <span class="kt">int</span> <span class="n">tm_year</span><span class="p">;</span>  <span class="c1">// 年份：其值等於實際年份減去1900</span>
+  <span class="kt">int</span> <span class="n">tm_mon</span><span class="p">;</span>   <span class="c1">// 月份：取值區間為[0,11]，其中0代表一月，11代表12月</span>
+  <span class="kt">int</span> <span class="n">tm_mday</span><span class="p">;</span>  <span class="c1">// 日期：一個月中的日期，取值區間為[1,31]</span>
+  <span class="kt">int</span> <span class="n">tm_hour</span><span class="p">;</span>  <span class="c1">// 時：取值區間為[0,23]</span>
+  <span class="kt">int</span> <span class="n">tm_min</span><span class="p">;</span>   <span class="c1">// 分：取值區間為[0,59]</span>
+  <span class="kt">int</span> <span class="n">tm_sec</span><span class="p">;</span>   <span class="c1">// 秒：取值區間為[0,59]</span>
+  <span class="kt">int</span> <span class="n">tm_wday</span><span class="p">;</span>  <span class="c1">// 星期：取值區間為[0,6]，其中0代表星期日，6代表星期六</span>
+  <span class="kt">int</span> <span class="n">tm_yday</span><span class="p">;</span>  <span class="c1">// 從每年的1月1日開始算起的天數：取值區間為[0,365]</span>
+  <span class="kt">int</span> <span class="n">tm_isdst</span><span class="p">;</span> <span class="c1">// 夏令時標識符，此欄位意義不大</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="localtime">localtime</h2>
+
+<ul>
+  <li><a href="/pages/c/stl/string/#字串連接">string append</a></li>
+  <li><a href="/pages/c/string/string_convert/">to_string()</a></li>
+</ul>
+
+<p>將time_t整數轉成tm結構</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;time.h&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">time_t</span> <span class="n">now</span> <span class="o">=</span> <span class="n">time</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="n">tm</span> <span class="n">tmnow</span><span class="p">;</span>
+  <span class="n">localtime_r</span><span class="p">(</span><span class="o">&amp;</span><span class="n">now</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">tmnow</span><span class="p">);</span>
+  <span class="n">string</span> <span class="n">time_str</span> <span class="o">=</span>
+      <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_year</span> <span class="o">+</span> <span class="mi">1900</span><span class="p">)</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span>
+      <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_mon</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span>
+      <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_mday</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span>
+      <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_hour</span><span class="p">)</span> <span class="o">+</span> <span class="s">":"</span> <span class="o">+</span>
+      <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_min</span><span class="p">)</span> <span class="o">+</span> <span class="s">":"</span> <span class="o">+</span>
+      <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_sec</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"time_str = "</span> <span class="o">&lt;&lt;</span> <span class="n">time_str</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>time_str = 2024/12/11 11:48:45
+</code></pre></div></div>
+
+<h2 id="計算執行時間">計算執行時間</h2>
+
+<h3 id="gettimeofday">gettimeofday</h3>
+
+<p>include</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;sys/time.h&gt;
+</code></pre></div></div>
+
+<p>語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int gettimeofday(struct timeval *tv, struct timezone *tz);
+</code></pre></div></div>
+
+<p>用到的參數結構</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>struct timeval {
+  time_t tv_sec;  // 1970-01-01開始的秒數
+  suseconds_t tv_usec;  // 表示微秒（1秒 = 1000000微秒）
+};
+</code></pre></div></div>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1204,37 +1364,67 @@
 27
 28
 29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;chrono&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;sys/time.h&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="c1">//參數2因為是常數字串，所以型態為const char*</span>
-<span class="kt">char</span><span class="o">*</span> <span class="nf">myStrCpy</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">src</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//start 計時開始</span>
-    <span class="c1">//end 計時結束</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">steady_clock</span><span class="o">::</span><span class="n">time_point</span> <span class="n">start</span><span class="p">,</span><span class="n">end</span><span class="p">;</span>
-    <span class="c1">//dt 時間差</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">nanoseconds</span> <span class="n">dt</span><span class="p">;</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
-    <span class="c1">//清空陣列記憶體中的值</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
-    <span class="c1">//開始計時</span>
-    <span class="n">start</span> <span class="o">=</span> <span class="n">chrono</span><span class="o">::</span><span class="n">steady_clock</span><span class="o">::</span><span class="n">now</span><span class="p">();</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10000</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">myStrCpy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="n">end</span> <span class="o">=</span> <span class="n">chrono</span><span class="o">::</span><span class="n">steady_clock</span><span class="o">::</span><span class="n">now</span><span class="p">();</span>
-    <span class="n">dt</span> <span class="o">=</span> <span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"執行"</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">dt</span><span class="p">.</span><span class="n">count</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">1000</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">"秒"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">timeval</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">;</span>
+  <span class="c1">// 開始計時</span>
+  <span class="n">gettimeofday</span><span class="p">(</span><span class="o">&amp;</span><span class="n">start</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">);</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">1000000</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">);</span>
+  <span class="c1">// 結束計時</span>
+  <span class="n">gettimeofday</span><span class="p">(</span><span class="o">&amp;</span><span class="n">end</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">);</span>
+  <span class="c1">// 儲存耗時的秒數與微秒</span>
+  <span class="n">timeval</span> <span class="n">t_val</span><span class="p">;</span>
+  <span class="c1">// end微秒與start微秒相減</span>
+  <span class="n">t_val</span><span class="p">.</span><span class="n">tv_usec</span> <span class="o">=</span> <span class="n">end</span><span class="p">.</span><span class="n">tv_usec</span> <span class="o">-</span> <span class="n">start</span><span class="p">.</span><span class="n">tv_usec</span><span class="p">;</span>
+  <span class="c1">// end秒數與start秒數相減</span>
+  <span class="n">t_val</span><span class="p">.</span><span class="n">tv_sec</span> <span class="o">=</span> <span class="n">end</span><span class="p">.</span><span class="n">tv_sec</span> <span class="o">-</span> <span class="n">start</span><span class="p">.</span><span class="n">tv_sec</span><span class="p">;</span>
+  <span class="c1">// 若end微秒與start微秒相減為負數</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">t_val</span><span class="p">.</span><span class="n">tv_usec</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 將負的微秒轉正</span>
+    <span class="c1">// 使用固定公式 tv_usec = 1000000 + tv_usec</span>
+    <span class="c1">// 例如：若 tv_usec = -200，則變為 tv_usec = 1000000 - 200 = 999800。</span>
+    <span class="n">t_val</span><span class="p">.</span><span class="n">tv_usec</span> <span class="o">=</span> <span class="mi">1000000</span> <span class="o">+</span> <span class="n">t_val</span><span class="p">.</span><span class="n">tv_usec</span><span class="p">;</span>
+    <span class="c1">// 同時，從秒部分（tv_sec）中減去 1，補償這多出的一秒。</span>
+    <span class="n">t_val</span><span class="p">.</span><span class="n">tv_sec</span><span class="o">--</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"耗費:"</span> <span class="o">&lt;&lt;</span> <span class="n">t_val</span><span class="p">.</span><span class="n">tv_sec</span> <span class="o">&lt;&lt;</span> <span class="s">"秒"</span> <span class="o">&lt;&lt;</span> <span class="n">t_val</span><span class="p">.</span><span class="n">tv_usec</span> <span class="o">&lt;&lt;</span> <span class="s">"微秒。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="c1">//  假設</span>
+<span class="c1">//  開始時間為 start = {tv_sec = 10, tv_usec = 500000}，</span>
+<span class="c1">//  結束時間為 end = {tv_sec = 12, tv_usec = 300000}。</span>
+<span class="c1">//  則：</span>
+<span class="c1">//  初始計算：</span>
+<span class="c1">//  tv_usec = 300000 - 500000 = -200000</span>
+<span class="c1">//  tv_sec = 12 - 10 = 2</span>
+<span class="c1">//  微秒補正：</span>
+<span class="c1">//  tv_usec = 1000000 - 200000 = 800000</span>
+<span class="c1">//  tv_sec = 2 - 1 = 1</span>
+<span class="c1">//  最終結果：</span>
+<span class="c1">//  tv_sec = 1</span>
+<span class="c1">//  tv_usec = 800000</span>
+<span class="c1">//  表示耗時 1秒800毫秒。</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>耗費:0秒1213微秒。
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1298,14 +1488,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/basic/loop" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 迴圈">
+                        <a href="/pages/c/time/chrono" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 程式執行時間">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/basic/rand" class="navigation navigation-next navigation-unique" aria-label="Next page: 亂數">
+                        <a href="/pages/c/libc/errno" class="navigation navigation-next navigation-unique" aria-label="Next page: 取得錯誤訊息">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1323,11 +1513,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "字元搜尋",
+            "title": "取得錯誤訊息",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/string/strchr.md",
-            "ref": "_pages/c/string/strchr.md",
+            "path": "_pages/c/libc/errno.md",
+            "ref": "_pages/c/libc/errno.md",
             "articles": []
         },
         
@@ -1419,13 +1609,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/basic/chrono.md",
-        "mtime": "2024-07-30 00:00:00 +0800",
+        "path": "_pages/c/time/time.md",
+        "mtime": "2024-12-11 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-10 11:09:59 +0800"
+        "time": "2024-12-13 15:19:43 +0800"
     },
     "basePath": "",
     "book": {

@@ -96,9 +96,6 @@ p3 first = 3, second = Jeff
 p4 first = 4, second = Ann
 ```
 
-
-
-
 [1]: {% link _pages/c/template/function_template.md %}
 [2]: {% link _pages/c/class/anonymous_obj.md %}
 [3]: {% link _pages/c/c11/init_list.md %}
