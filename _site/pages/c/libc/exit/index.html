@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>ASCII與中文 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>exit終止程序 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -452,12 +452,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/string/chineseAscii" onclick="pageScrollToTop(this)"> ASCII與中文</a>
         
-            
-                <ul><li><a href="#印出中文ascii-code" onclick="mobilePageScrollToAnchor(this)" >印出中文Ascii code</a></li><li><a href="#使用中文ascii-code指定陣列值" onclick="mobilePageScrollToAnchor(this)" >使用中文Ascii Code指定陣列值</a></li><li><a href="#統計中文個數" onclick="mobilePageScrollToAnchor(this)" >統計中文個數</a></li></ul>
-
             
         </li></ul></li></ul></li>
 	
@@ -1154,9 +1151,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/libc/exit" onclick="pageScrollToTop(this)"> exit終止程序</a>
         
+            
+                <ul><li><a href="#exit" onclick="mobilePageScrollToAnchor(this)" >exit</a></li></ul>
+
             
         </li></ul></li></ul></li></ul></li>
 	
@@ -1180,7 +1180,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >ASCII與中文</a>
+                            <a href="." >exit終止程序</a>
                         
                     </h1>
                 </div>
@@ -1193,138 +1193,24 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/string/chineseAscii">ASCII與中文</h1>
+                        <h1 id="/pages/c/libc/exit">exit終止程序</h1>
                     
 
-                    <p>Ascii Code 1-31為控制碼</p>
+                    <p>程序正常中止的方式如下</p>
+<ul>
+  <li>exit(0)</li>
+  <li>return 0</li>
+  <li>在thread中，最後一個thread呼叫return()</li>
+  <li>在thread中，最後一個thread呼叫pthread_exit()
+    <h2 id="exit">exit</h2>
+  </li>
+</ul>
 
-<table>
-  <tbody>
-    <tr>
-      <td>字元</td>
-      <td>Ascii code</td>
-    </tr>
-    <tr>
-      <td>\0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>0-9</td>
-      <td>48-57</td>
-    </tr>
-    <tr>
-      <td>A-Z</td>
-      <td>65-90</td>
-    </tr>
-    <tr>
-      <td>a-z</td>
-      <td>97-122</td>
-    </tr>
-    <tr>
-      <td>空格</td>
-      <td>32</td>
-    </tr>
-  </tbody>
-</table>
+<p>在任意子函式呼叫exit()，就會直接終止程序，不會再返回到main()函式。</p>
 
-<h2 id="印出中文ascii-code">印出中文Ascii code</h2>
+<p>以下程式碼</p>
 
-<p>字元char的範圍為0-255，不包含負數，只有正整數。</p>
-
-<p>中文的Ascii Code 128-255，數字、大小寫英文字母、空格、標點符號、空字元(\0)介於Ascii Code 0-127。</p>
-
-<p>字元char是0-255，沒有負數，在把中文字元轉換成整數之前，必須先轉成unsigned char，再轉成int，才會正確顯示中文的ascii碼。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">)</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> 
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//清空字串位址的值</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="s">"西西"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"長度:"</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">str</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">str</span><span class="p">);</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span>  <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">)</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//印出字串</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">str</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>長度:6
-str[0]=232
-str[1]=165
-str[2]=191
-str[3]=232
-str[4]=165
-str[5]=191
-西西
-</code></pre></div></div>
-
-<h2 id="使用中文ascii-code指定陣列值">使用中文Ascii Code指定陣列值</h2>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//清空字串位址的值</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
-    <span class="n">str</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">232</span><span class="p">;</span>
-    <span class="n">str</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">165</span><span class="p">;</span>
-    <span class="n">str</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">191</span><span class="p">;</span>
-    <span class="n">str</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">232</span><span class="p">;</span>
-    <span class="n">str</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="mi">165</span><span class="p">;</span>
-    <span class="n">str</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="mi">191</span><span class="p">;</span>
-    <span class="c1">//印出字串</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">str</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>西西
-</code></pre></div></div>
-
-<h2 id="統計中文個數">統計中文個數</h2>
-
-<p>數字、大小寫英文字母、空格、標點符號、空字元(\0)介於Ascii Code 0-127。</p>
-
-<p>中文的Ascii Code 128-255。</p>
-
-<p>以下程式碼是錯的，仍待修正。</p>
+<p>main()呼叫func1()，func1()呼叫func2()，func2()呼叫exit(0)離開程序。程式執行到func2，不會返回main()</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1348,35 +1234,42 @@ str[5]=191
 19
 20
 21
-22
-23
-24
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">countChar</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="n">flag</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">str</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//0</span>
-        <span class="k">if</span><span class="p">((</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">)</span> <span class="o">*</span><span class="n">str</span> <span class="o">&lt;</span> <span class="mi">128</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">count</span><span class="o">++</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">count</span><span class="o">++</span><span class="p">;</span>
-                <span class="n">flag</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-                <span class="n">flag</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-        <span class="n">str</span><span class="o">++</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="n">count</span><span class="p">;</span>
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;signal.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="c1">  // system() head file</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func2</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func2()"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">func1</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func1()"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">// call func2</span>
+  <span class="n">func2</span><span class="p">();</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"返回func1()"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">countChar</span><span class="p">(</span><span class="s">"西"</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"main()"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">// call fun1</span>
+  <span class="n">func1</span><span class="p">();</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"返回main()"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>main()
+func1()
+func2()
+</code></pre></div></div>
+
+<p>若把以上程式碼exit(0)移掉，執行結果如下</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>main()
+func1()
+func2()
+返回func1()
+返回main()
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1440,14 +1333,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/string/xml" class="navigation navigation-prev navigation-unique" aria-label="Previous page: xml搜尋">
+                        <a href="/pages/c/libc/kill" class="navigation navigation-prev navigation-unique" aria-label="Previous page: kill">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/reference/reference" class="navigation navigation-next navigation-unique" aria-label="Next page: 參考">
+                        <a href="/pages/jekyll/install/how_to_install_ruby" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝 Ruby on Mac">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1463,15 +1356,6 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
-        
-        "next": {
-            "title": "生活設計",
-            "level": "1.2",
-            "depth": 1,
-            "path": "_pages/life/design.md",
-            "ref": "_pages/life/design.md",
-            "articles": []
-        },
         
         "dir": "ltr"
     },    "config": {
@@ -1561,8 +1445,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/string/chineseAscii.md",
-        "mtime": "2024-08-14 00:00:00 +0800",
+        "path": "_pages/c/libc/exit.md",
+        "mtime": "2024-12-16 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
