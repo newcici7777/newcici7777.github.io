@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>VS on Mac · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>fork · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -81,12 +81,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/editor/vscode" onclick="pageScrollToTop(this)"> VS on Mac</a>
         
-            
-                
-
             
         </li>
 	
@@ -1154,9 +1151,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
         
+            
+                <ul><li><a href="#fork" onclick="mobilePageScrollToAnchor(this)" >fork</a></li><li><a href="#透過fork傳回值執行不同程式碼" onclick="mobilePageScrollToAnchor(this)" >透過fork傳回值執行不同程式碼</a></li><li><a href="#fork與變數" onclick="mobilePageScrollToAnchor(this)" >fork()與變數</a></li><li><a href="#取得父程序的id" onclick="mobilePageScrollToAnchor(this)" >取得父程序的id</a></li></ul>
+
             
         </li>
 	
@@ -1187,7 +1187,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >VS on Mac</a>
+                            <a href="." >fork</a>
                         
                     </h1>
                 </div>
@@ -1200,19 +1200,269 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/editor/vscode">VS on Mac</h1>
+                        <h1 id="/pages/c/libc/fork">fork</h1>
                     
 
-                    <p>可以參考其它人的影音檔。<br />
-<a href="https://www.youtube.com/watch?v=iIPST6HQgSc">https://www.youtube.com/watch?v=iIPST6HQgSc</a></p>
+                    <h2 id="fork">fork</h2>
 
-<p>參考文章<br />
-<a href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line">Visual Studio on macOS</a><br />
-<a href="https://code.visualstudio.com/docs/cpp/config-clang-mac">Using Clang in Visual Studio </a></p>
+<p>現在的程序中，使用fork()創建子程序，子程序的程式碼執行的位置由fork()開始的程式碼，父程序fork()函式的傳回值是子程序的pid，子程序fork()傳回值為0。</p>
 
-<p>若<code class="language-plaintext highlighter-rouge">code</code>.沒反應<br />
-<a href="https://stackoverflow.com/questions/29955500/code-is-not-working-in-on-the-command-line-for-visual-studio-code-on-os-x-ma">code . is not working in on the command line for Visual Studio on OS X/Mac</a></p>
+<p>fork_test.cpp</p>
 
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"父程序開始"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">// 建立子程序，子程序開始的程式碼</span>
+  <span class="n">pid_t</span> <span class="n">pid</span> <span class="o">=</span> <span class="n">fork</span><span class="p">();</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"fork() return pid = "</span> <span class="o">&lt;&lt;</span> <span class="n">pid</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">// 停止30秒，方便以ps -ef | grep 查看父程序與子程序</span>
+  <span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結束"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>父程序開始
+fork() return pid = 145656
+fork() return pid = 0
+結束
+結束
+</code></pre></div></div>
+
+<p>由執行結果可以知道，<code class="language-plaintext highlighter-rouge">父程序開始</code>的字只執行一次。</p>
+
+<p>執行上面的程式，打開另一個終端機視窗</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ps -ef | grep fork
+</code></pre></div></div>
+<p>-e：顯示所有進程，等同於 -A 選項。</p>
+
+<p>-f：顯示完整的格式，包括父進程和其他資訊。</p>
+
+<p>可以發現子程序pid是145773，父程序是145772，有二個程序都跑起來了。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cici      145772  139698  0 14:43 pts/3    00:00:00 ./fork_test
+cici      145773  145772  0 14:43 pts/3    00:00:00 ./fork_test
+</code></pre></div></div>
+
+<p>使用pstree查看子父關係</p>
+
+<p>語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pstree -p 父pid
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ pstree -p 145772
+fork_test(145772)───fork_test(145773)
+</code></pre></div></div>
+
+<p>由以上結果可以知，145772下面有一個子程序145773</p>
+
+<h2 id="透過fork傳回值執行不同程式碼">透過fork傳回值執行不同程式碼</h2>
+
+<p>父程序fork()函式的傳回值是子程序的pid，子程序fork()傳回值為0，根據傳回值判斷是父程序或子程序。</p>
+
+<p>父get fork pid = 146095</p>
+
+<p>子get fork pid = 0</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">pid_t</span> <span class="n">pid</span> <span class="o">=</span> <span class="n">fork</span><span class="p">();</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">pid</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"父get fork pid = "</span> <span class="o">&lt;&lt;</span> <span class="n">pid</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"子get fork pid = "</span> <span class="o">&lt;&lt;</span> <span class="n">pid</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">sleep</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結束"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>父get fork pid = 146095
+子get fork pid = 0
+結束
+結束
+</code></pre></div></div>
+
+<h2 id="fork與變數">fork()與變數</h2>
+
+<p>fork()函式，會把變數複製一份給子程序，雖然子程序與父程序的變數位址是相同，但實際上是存放不同位址。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 學號</span>
+  <span class="kt">int</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">888</span><span class="p">;</span>
+  <span class="c1">// 姓名</span>
+  <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"May"</span><span class="p">;</span>
+  <span class="c1">// fork傳回值pid</span>
+  <span class="n">pid_t</span> <span class="n">pid</span> <span class="o">=</span> <span class="n">fork</span><span class="p">();</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">pid</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 父程序</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"父get fork pid = "</span> <span class="o">&lt;&lt;</span> <span class="n">pid</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="s">", address = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="s">", address = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// 子程序</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"子get fork pid = "</span> <span class="o">&lt;&lt;</span> <span class="n">pid</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="s">", address = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="s">", address = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">sleep</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結束"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>父get fork pid = 146276
+id = 888, address = 0x7ffef9691170
+name = May, address = 0x7ffef9691180
+子get fork pid = 0
+id = 888, address = 0x7ffef9691170
+name = May, address = 0x7ffef9691180
+結束
+結束
+</code></pre></div></div>
+
+<p>證明不是讀取相同記憶體位址</p>
+
+<p>以下程式碼先讓子程序先執行(子程序有修改變數的值)，5秒後，再執行父程序</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 學號</span>
+  <span class="kt">int</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">888</span><span class="p">;</span>
+  <span class="c1">// 姓名</span>
+  <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"May"</span><span class="p">;</span>
+  <span class="c1">// fork傳回值pid</span>
+  <span class="n">pid_t</span> <span class="n">pid</span> <span class="o">=</span> <span class="n">fork</span><span class="p">();</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">pid</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 先讓父程序先睡5秒，讓子程序先執行</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+    <span class="c1">// 父程序</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"父get fork pid = "</span> <span class="o">&lt;&lt;</span> <span class="n">pid</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="s">", address = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="s">", address = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// 修改變數值</span>
+    <span class="n">id</span> <span class="o">=</span> <span class="mi">777</span><span class="p">;</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
+    <span class="c1">// 子程序</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"子get fork pid = "</span> <span class="o">&lt;&lt;</span> <span class="n">pid</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="s">", address = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="s">", address = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">sleep</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結束"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>子get fork pid = 0
+id = 777, address = 0x7ffeb7027c90
+name = Bill, address = 0x7ffeb7027ca0
+父get fork pid = 146339
+id = 888, address = 0x7ffeb7027c90
+name = May, address = 0x7ffeb7027ca0
+結束
+結束
+</code></pre></div></div>
+
+<p>由執行結果可以看出，即便子程序修改了變數值，但父程序仍顯示原來的值(888與Mary)。</p>
+
+<h2 id="取得父程序的id">取得父程序的id</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pid_t getpid(void);  // 取得目前程序pid
+pid_t getppid(void);  //取得父程序pid
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1276,14 +1526,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/editor/xcode" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Xcode">
+                        <a href="/pages/c/libc/exit" class="navigation navigation-prev navigation-unique" aria-label="Previous page: exit終止程序">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/editor/clang" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝VS在MAC(實作)">
+                        <a href="/pages/c/libc/kill" class="navigation navigation-next navigation-unique" aria-label="Next page: kill">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1299,15 +1549,6 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
-        
-        "next": {
-            "title": "類別模板",
-            "level": "1.2",
-            "depth": 1,
-            "path": "_pages/c/template/class_template.md",
-            "ref": "_pages/c/template/class_template.md",
-            "articles": []
-        },
         
         "dir": "ltr"
     },    "config": {
@@ -1397,8 +1638,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/editor/vscode.md",
-        "mtime": "2024-04-18 00:00:00 +0800",
+        "path": "_pages/c/libc/fork.md",
+        "mtime": "2024-12-17 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

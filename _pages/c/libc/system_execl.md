@@ -31,8 +31,8 @@ int system(const char *command)
 {% highlight c++ linenos %}
 #include <iostream>
 #include <unistd.h>  // system() head file
-#include <cstring>  // strerror() 需要head file
-#include <cerrno>  // errno全域變數的head file
+#include <cstring>   // strerror() 需要head file
+#include <cerrno>    // errno全域變數的head file
 using namespace std;
 int main() {
   int ret = system("/bin/ls -l");
@@ -53,8 +53,8 @@ ret = 0
 {% highlight c++ linenos %}
 #include <iostream>
 #include <unistd.h>  // system() head file
-#include <cstring>  // strerror() 需要head file
-#include <cerrno>  // errno全域變數的head file
+#include <cstring>   // strerror() 需要head file
+#include <cerrno>    // errno全域變數的head file
 using namespace std;
 int main() {
   int ret = system("/bin/laaaaa -l");
@@ -127,8 +127,8 @@ int ret = execl("/bin/ls", "/bin/ls", "-l", "/tmp", nullptr);
 #include <iostream>
 #include <unistd.h>  // exec() head file
 #include <string.h>
-#include <cstring>  // strerror() 需要head file
-#include <cerrno>  // errno全域變數的head file
+#include <cstring>   // strerror() 需要head file
+#include <cerrno>    // errno全域變數的head file
 using namespace std;
 int main() {
   // 執行execl
@@ -165,8 +165,8 @@ execl_test.cpp
 #include <iostream>
 #include <unistd.h>  // exec() head file
 #include <string.h>
-#include <cstring>  // strerror() 需要head file
-#include <cerrno>  // errno全域變數的head file
+#include <cstring>   // strerror() 需要head file
+#include <cerrno>    // errno全域變數的head file
 using namespace std;
 int main() {
   cout << "execl_test pid = " << getpid() << endl;
@@ -198,3 +198,55 @@ execl_test pid = 131087
 system_call pid = 131087
 被呼叫的程序: system_call
 ```
+
+## fork與execl
+
+- [fork][1]
+
+為了解決execl會取代主程序，使用fork()建立子程序，由子程序被execl取代，就不會取代主程序。
+{% highlight c++ linenos %}
+#include <iostream>
+#include <unistd.h>
+#include <string.h>
+#include <cstring>   // strerror() 需要head file
+#include <cerrno>    // errno全域變數的head file
+using namespace std;
+int main() {
+  // fork傳回值pid
+  pid_t pid = fork();
+  if (pid > 0) {
+    // 父程序
+    for (int i = 0; i < 15; i++) {
+      sleep(1);
+      cout << "第" << i << "秒" << endl;
+    }
+  } else {
+    int ret = execl("/home/cici/test/app/system_call", "/home/cici/test/app/system_call", nullptr);
+    cout << "ret = " << ret << endl;
+    cout << errno << ":" << strerror(errno) << endl;
+  }
+  cout << "結束" << endl;
+}
+{% endhighlight %}
+```
+system_call pid = 146493
+被呼叫的程序: system_call
+第0秒
+第1秒
+第2秒
+第3秒
+第4秒
+第5秒
+第6秒
+第7秒
+第8秒
+第9秒
+第10秒
+第11秒
+第12秒
+第13秒
+第14秒
+結束
+```
+
+[1]: {% link _pages/c/libc/fork.md %}

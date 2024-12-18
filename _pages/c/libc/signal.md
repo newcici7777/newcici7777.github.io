@@ -137,11 +137,19 @@ i = 86
 
 使用ctrl+c可以終止正在執行的程序，本頁範例皆為無限迴圈，需手動ctrl+c終止程序。
 
-## SIG_IGN略過
+## SIG_IGN忽略訊號
+
+```
+sighandler_t signal(int signum, sighandler_t handler);
+```
+參數:
+- handler 設置要處理訊號的函式
+
+SIG_IGN放在handler的位置。
 
 增加一行，怱略2的訊號
 ```
-  // 收到2的訊號，不要執行func函式，SIG_IGN是略過訊號
+  // 收到2的訊號，不要執行func函式，SIG_IGN是忽略訊號
   signal(2, SIG_IGN);
 ```
 
@@ -178,7 +186,15 @@ killall -2 signal_test
 
 ## SIG_DFL恢復
 
+```
+sighandler_t signal(int signum, sighandler_t handler);
+```
+參數:
+- handler 設置要處理訊號的函式
+
 若原本是有透過signal()函式處理某個訊號，也可以使用SIG_DFL恢復原本收到訊息的狀況
+
+SIG_DFL放在handler的位置。
 
 完整程式碼
 {% highlight c++ linenos %}

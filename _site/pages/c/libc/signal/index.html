@@ -1141,21 +1141,28 @@
     	<a href="/pages/c/libc/signal" onclick="pageScrollToTop(this)"> signal訊號</a>
         
             
-                <ul><li><a href="#kill與killall" onclick="mobilePageScrollToAnchor(this)" >kill與killall</a><ul><li><a href="#kill-指令" onclick="mobilePageScrollToAnchor(this)" >kill 指令</a></li><li><a href="#killall-指令" onclick="mobilePageScrollToAnchor(this)" >killall 指令</a></li><li><a href="#常用的訊號" onclick="mobilePageScrollToAnchor(this)" >常用的訊號:</a></li></ul></li><li><a href="#signal函式" onclick="mobilePageScrollToAnchor(this)" >signal函式</a></li><li><a href="#ctrlc終止程序" onclick="mobilePageScrollToAnchor(this)" >ctrl+c終止程序</a></li><li><a href="#sig_ign略過" onclick="mobilePageScrollToAnchor(this)" >SIG_IGN略過</a></li><li><a href="#sig_dfl恢復" onclick="mobilePageScrollToAnchor(this)" >SIG_DFL恢復</a></li><li><a href="#無法收到與略過的訊號" onclick="mobilePageScrollToAnchor(this)" >無法收到與略過的訊號</a></li><li><a href="#alarm函式" onclick="mobilePageScrollToAnchor(this)" >alarm函式</a></li><li><a href="#0訊號" onclick="mobilePageScrollToAnchor(this)" >0訊號</a></li></ul>
+                <ul><li><a href="#kill與killall" onclick="mobilePageScrollToAnchor(this)" >kill與killall</a><ul><li><a href="#kill-指令" onclick="mobilePageScrollToAnchor(this)" >kill 指令</a></li><li><a href="#killall-指令" onclick="mobilePageScrollToAnchor(this)" >killall 指令</a></li><li><a href="#常用的訊號" onclick="mobilePageScrollToAnchor(this)" >常用的訊號:</a></li></ul></li><li><a href="#signal函式" onclick="mobilePageScrollToAnchor(this)" >signal函式</a></li><li><a href="#ctrlc終止程序" onclick="mobilePageScrollToAnchor(this)" >ctrl+c終止程序</a></li><li><a href="#sig_ign忽略訊號" onclick="mobilePageScrollToAnchor(this)" >SIG_IGN忽略訊號</a></li><li><a href="#sig_dfl恢復" onclick="mobilePageScrollToAnchor(this)" >SIG_DFL恢復</a></li><li><a href="#無法收到與略過的訊號" onclick="mobilePageScrollToAnchor(this)" >無法收到與略過的訊號</a></li><li><a href="#alarm函式" onclick="mobilePageScrollToAnchor(this)" >alarm函式</a></li><li><a href="#0訊號" onclick="mobilePageScrollToAnchor(this)" >0訊號</a></li></ul>
 
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/kill" onclick="pageScrollToTop(this)"> kill</a>
+    	<a href="/pages/c/libc/exit" onclick="pageScrollToTop(this)"> exit終止程序</a>
         
             
         </li>
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/exit" onclick="pageScrollToTop(this)"> exit終止程序</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/kill" onclick="pageScrollToTop(this)"> kill</a>
         
             
         </li></ul></li></ul></li></ul></li>
@@ -1381,10 +1388,19 @@ i = 86
 
 <p>使用ctrl+c可以終止正在執行的程序，本頁範例皆為無限迴圈，需手動ctrl+c終止程序。</p>
 
-<h2 id="sig_ign略過">SIG_IGN略過</h2>
+<h2 id="sig_ign忽略訊號">SIG_IGN忽略訊號</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sighandler_t signal(int signum, sighandler_t handler);
+</code></pre></div></div>
+<p>參數:</p>
+<ul>
+  <li>handler 設置要處理訊號的函式</li>
+</ul>
+
+<p>SIG_IGN放在handler的位置。</p>
 
 <p>增加一行，怱略2的訊號</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  // 收到2的訊號，不要執行func函式，SIG_IGN是略過訊號
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  // 收到2的訊號，不要執行func函式，SIG_IGN是忽略訊號
   signal(2, SIG_IGN);
 </code></pre></div></div>
 
@@ -1442,7 +1458,16 @@ i = 86
 
 <h2 id="sig_dfl恢復">SIG_DFL恢復</h2>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sighandler_t signal(int signum, sighandler_t handler);
+</code></pre></div></div>
+<p>參數:</p>
+<ul>
+  <li>handler 設置要處理訊號的函式</li>
+</ul>
+
 <p>若原本是有透過signal()函式處理某個訊號，也可以使用SIG_DFL恢復原本收到訊息的狀況</p>
+
+<p>SIG_DFL放在handler的位置。</p>
 
 <p>完整程式碼</p>
 
@@ -1749,7 +1774,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/c/libc/kill" class="navigation navigation-next navigation-unique" aria-label="Next page: kill">
+                        <a href="/pages/c/libc/exit" class="navigation navigation-next navigation-unique" aria-label="Next page: exit終止程序">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1869,7 +1894,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-16 14:10:44 +0800"
+        "time": "2024-12-18 15:34:14 +0800"
     },
     "basePath": "",
     "book": {

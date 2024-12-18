@@ -1144,19 +1144,26 @@
         </li>
 	
 	
+	<li class="active">
+    	<a href="/pages/c/libc/exit" onclick="pageScrollToTop(this)"> exit終止程序</a>
+        
+            
+                <ul><li><a href="#exit" onclick="mobilePageScrollToAnchor(this)" >exit</a></li><li><a href="#終止程序與解構子" onclick="mobilePageScrollToAnchor(this)" >終止程序與解構子</a><ul><li><a href="#return與解構子" onclick="mobilePageScrollToAnchor(this)" >return與解構子</a></li><li><a href="#exit與解構子" onclick="mobilePageScrollToAnchor(this)" >exit與解構子</a></li><li><a href="#_exit與_exit與解構子" onclick="mobilePageScrollToAnchor(this)" ><code class="language-plaintext highlighter-rouge">_exit()</code>與<code class="language-plaintext highlighter-rouge">_Exit()</code>與解構子</a></li></ul></li><li><a href="#atexit" onclick="mobilePageScrollToAnchor(this)" >atexit()</a></li></ul>
+
+            
+        </li>
+	
+	
 	<li class="">
-    	<a href="/pages/c/libc/kill" onclick="pageScrollToTop(this)"> kill</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
         
             
         </li>
 	
 	
-	<li class="active">
-    	<a href="/pages/c/libc/exit" onclick="pageScrollToTop(this)"> exit終止程序</a>
+	<li class="">
+    	<a href="/pages/c/libc/kill" onclick="pageScrollToTop(this)"> kill</a>
         
-            
-                <ul><li><a href="#exit" onclick="mobilePageScrollToAnchor(this)" >exit</a></li></ul>
-
             
         </li></ul></li></ul></li></ul></li>
 	
@@ -1201,10 +1208,10 @@
   <li>exit(0)</li>
   <li>return 0</li>
   <li>在thread中，最後一個thread呼叫return()</li>
-  <li>在thread中，最後一個thread呼叫pthread_exit()
-    <h2 id="exit">exit</h2>
-  </li>
+  <li>在thread中，最後一個thread呼叫pthread_exit()</li>
 </ul>
+
+<h2 id="exit">exit</h2>
 
 <p>在任意子函式呼叫exit()，就會直接終止程序，不會再返回到main()函式。</p>
 
@@ -1270,6 +1277,198 @@ func2()
 返回func1()
 返回main()
 </code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">exit(0)</code>與<code class="language-plaintext highlighter-rouge">return 0</code>，0為預設終止程序回傳值，若不寫，也會回傳0，以下指令印出上一個程序執行回傳的值。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo $?
+</code></pre></div></div>
+
+<h2 id="終止程序與解構子">終止程序與解構子</h2>
+
+<h3 id="return與解構子">return與解構子</h3>
+
+<p>return會呼叫<span class="mark">全域與區域變數</span>的解構子。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
+ <span class="nl">public:</span>
+  <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">name</span><span class="p">)</span> <span class="o">:</span> <span class="n">name</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子 : "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+ <span class="nl">private:</span>
+  <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="c1">// 全域變數</span>
+<span class="n">Student</span> <span class="n">s1</span><span class="p">(</span><span class="s">"Mary"</span><span class="p">);</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 區域變數</span>
+  <span class="n">Student</span> <span class="n">s2</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>解構子 : Bill
+解構子 : Mary
+</code></pre></div></div>
+
+<h3 id="exit與解構子">exit與解構子</h3>
+
+<p>exit只會呼叫<span class="mark">全域</span>的解構子。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
+ <span class="nl">public:</span>
+  <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">name</span><span class="p">)</span> <span class="o">:</span> <span class="n">name</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子 : "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+ <span class="nl">private:</span>
+  <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="c1">// 全域變數</span>
+<span class="n">Student</span> <span class="n">s1</span><span class="p">(</span><span class="s">"Mary"</span><span class="p">);</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 區域變數</span>
+  <span class="n">Student</span> <span class="n">s2</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">);</span>
+  <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>解構子 : Mary
+</code></pre></div></div>
+
+<h3 id="_exit與_exit與解構子"><code class="language-plaintext highlighter-rouge">_exit()</code>與<code class="language-plaintext highlighter-rouge">_Exit()</code>與解構子</h3>
+
+<p><code class="language-plaintext highlighter-rouge">_exit()</code>與<code class="language-plaintext highlighter-rouge">_Exit()</code>不會呼叫任何解構子</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
+ <span class="nl">public:</span>
+  <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">name</span><span class="p">)</span> <span class="o">:</span> <span class="n">name</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子 : "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+ <span class="nl">private:</span>
+  <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="c1">// 全域變數</span>
+<span class="n">Student</span> <span class="n">s1</span><span class="p">(</span><span class="s">"Mary"</span><span class="p">);</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 區域變數</span>
+  <span class="n">Student</span> <span class="n">s2</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">);</span>
+  <span class="n">_exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="atexit">atexit()</h2>
+
+<p>可使用atexit()函式，註冊終止程序時要呼叫的函式。</p>
+
+<p>語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int atexit(void (*function)(void));
+</code></pre></div></div>
+<p>參數為函式指標(要符合函式指標格式)</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">destroy1</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"呼叫destroy1"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">destroy2</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"呼叫destroy2"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">atexit</span><span class="p">(</span><span class="n">destroy1</span><span class="p">);</span>
+  <span class="n">atexit</span><span class="p">(</span><span class="n">destroy2</span><span class="p">);</span>
+  <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>呼叫destroy2
+呼叫destroy1
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1333,14 +1532,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/libc/kill" class="navigation navigation-prev navigation-unique" aria-label="Previous page: kill">
+                        <a href="/pages/c/libc/signal" class="navigation navigation-prev navigation-unique" aria-label="Previous page: signal訊號">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/jekyll/install/how_to_install_ruby" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝 Ruby on Mac">
+                        <a href="/pages/c/libc/fork" class="navigation navigation-next navigation-unique" aria-label="Next page: fork">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1356,6 +1555,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "fork",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/c/libc/fork.md",
+            "ref": "_pages/c/libc/fork.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -1451,7 +1659,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-16 14:10:44 +0800"
+        "time": "2024-12-18 15:34:14 +0800"
     },
     "basePath": "",
     "book": {

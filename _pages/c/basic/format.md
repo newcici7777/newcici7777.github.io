@@ -427,3 +427,60 @@ if (this_one_thing > this_other_thing &&
   ...
 }
 {% endhighlight %}
+
+## 建構子初始
+
+建構式初值列可以放在同一行，或換行後縮排 4 個空格。
+{% highlight c++ linenos %}
+// 當一行可以塞得下時：
+MyClass::MyClass(int var) : some_var_(var) {
+  DoSomething();
+}
+
+// 如果一行塞不下建構式名稱列和初值列的話，你必須
+// 在分號前換行，並且縮排 4 個空格
+MyClass::MyClass(int var)
+    : some_var_(var), some_other_var_(var + 1) {
+  DoSomething();
+}
+
+// 若是初值列得分成好幾行的話，每個成員各占一行，
+// 排列整齊：
+MyClass::MyClass(int var)
+    : some_var_(var),             // 4 格縮排
+      some_other_var_(var + 1) {  // 對齊前一行
+  DoSomething();
+}
+
+// 和其他程式碼區塊一樣，如果塞得下的話，右大括號可以
+// 和左大括號放在同一行。
+MyClass::MyClass(int var)
+    : some_var_(var) {}
+{% endhighlight %}
+
+## 指標與reference
+
+- 在存取成員時，句點或箭頭前後沒有空格。
+- 指標運算子 * 或 & 後面沒有空格。
+
+{% highlight c++ linenos %}
+// 沒問題，空格放在星號前。
+char *c;
+const string &str;
+
+// 沒問題，空格放在星號後。
+char* c;
+const string& str;
+{% endhighlight %}
+
+允許（但不常用）在同一行宣告式中宣告 1 個以上的變數，但其中不得有指標或是 reference 的宣告，因為這樣的宣告式很容易造成混淆。
+{% highlight c++ linenos %}
+// 如果對可讀性有幫助就沒問題。
+int x, y;
+{% endhighlight %}
+
+{% highlight c++ linenos %}
+int x, *y;  // 禁止 - 多個變數的宣告式中不得有 & 或 *
+char * c;  // 不好 - 星號前後都有空格
+const string & str;  // 不好 - & 前後都有空格
+{% endhighlight %}

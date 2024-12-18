@@ -39,6 +39,17 @@ d = 10
 e = 10
 ```
 
+可以用 =、() 或 {}，以下用法都對
+
+{% highlight c++ linenos %}
+int x = 3;
+int x(3);
+int x{3};
+string name("Some Name");
+string name = "Some Name";
+string name{"Some Name"};
+{% endhighlight %}
+
 ## 浮點數
 
 {% highlight c++ linenos %}
@@ -48,6 +59,13 @@ e = 10
 ```
 f = 1.12
 ```
+
+此外，{} 初始列不允許整數型別的縮小 (narrowing) 轉換，這可以用來避免一些型別上的程式撰寫錯誤。
+
+{% highlight c++ linenos %}
+int pi(3.14);  // 可 -- pi == 3.
+int pi{3.14};  // 編譯器錯誤：縮小轉換
+{% endhighlight %}
 
 ## 陣列
 {% highlight c++ linenos %}
@@ -88,7 +106,7 @@ c++11用大括號{},等於號可省略
 using namespace std;
 class Student {
  public:
-  Student(int number, string name):number(number),name(name){}
+  Student(int number, string name) : number(number), name(name){}
  private:
   int number;  // 學號
   string name;
@@ -118,6 +136,11 @@ int main() {
   vector<int> v3{11, 12, 13};
   return 0;
 }
+{% endhighlight %}
+
+{% highlight c++ linenos %}
+std::vector<int> v(100, 1);  // vector 中有 100 個元素：每個元素都是 1
+std::vector<int> v{100, 1};  // vector 中有 2 個元素：100 和 1
 {% endhighlight %}
 
 ## 函式參數
