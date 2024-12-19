@@ -181,6 +181,8 @@ name = May, address = 0x7ffeb7027ca0
 
 ## 子進程在後台執行
 
+子進程在後台執行時，不會被ctrl+c強制終止。
+
 ### 法1
 語法
 ```
@@ -591,6 +593,98 @@ int main() {
 第14秒
 已終止的子進程pid是:155059
 異常退出，狀態 : 11
+```
+
+### 補捉SIGCHLD
+
+{% highlight c++ linenos %}
+#include <iostream>
+#include <unistd.h>
+#include <signal.h>
+#include <sys/wait.h>
+using namespace std;
+/**
+ 補捉SIGCHLD子程序退出信號
+ */
+void func(int signal) {
+  int status;  // 用於儲存子進程退出的結果
+  pid_t pid = wait(&status);  // 等待子進程退出
+  cout << "已終止的子進程pid是:" << pid << endl;
+  // 把退出結果傳給WIFEXITED()前置指令，若回傳true，代表正常退出來
+  if (WIFEXITED(status)) {
+    cout << "正常退出，狀態 : " << WEXITSTATUS(status) << endl;
+  } else {
+    cout << "異常退出，狀態 : " << WTERMSIG(status) << endl;
+  }
+}
+int main() {
+  // 補捉子進程退出的信號
+  signal(SIGCHLD, func);
+  if (fork() > 0) {
+    // 父進程執行30秒 0 .. 29
+    for (int i = 0; i < 30 ; i++) {
+      cout << "父 : 第" << i << "秒" << endl;
+      sleep(1);
+    }
+  } else {
+    // 子程序執行15秒 0 .. 14
+    for (int i = 0; i < 15 ; i++) {
+      cout << "子 : 第" << i << "秒" << endl;
+      sleep(1);
+    }
+    // 子程序執行15秒結束
+    exit(5);
+  }
+}
+{% endhighlight %}
+```
+父 : 第0秒
+子 : 第0秒
+父 : 第1秒
+子 : 第1秒
+父 : 第2秒
+子 : 第2秒
+父 : 第3秒
+子 : 第3秒
+父 : 第4秒
+子 : 第4秒
+父 : 第5秒
+子 : 第5秒
+父 : 第6秒
+子 : 第6秒
+父 : 第7秒
+子 : 第7秒
+父 : 第8秒
+子 : 第8秒
+父 : 第9秒
+子 : 第9秒
+父 : 第10秒
+子 : 第10秒
+父 : 第11秒
+子 : 第11秒
+父 : 第12秒
+子 : 第12秒
+父 : 第13秒
+子 : 第13秒
+父 : 第14秒
+子 : 第14秒
+父 : 第15秒
+已終止的子進程pid是:155462
+正常退出，狀態 : 5
+父 : 第16秒
+父 : 第17秒
+父 : 第18秒
+父 : 第19秒
+父 : 第20秒
+父 : 第21秒
+父 : 第22秒
+父 : 第23秒
+父 : 第24秒
+父 : 第25秒
+父 : 第26秒
+父 : 第27秒
+父 : 第28秒
+父 : 第29秒
 ```
 
 ## 取得父進程的id

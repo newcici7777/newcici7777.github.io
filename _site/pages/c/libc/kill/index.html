@@ -1203,7 +1203,13 @@
                         <h1 id="/pages/c/libc/kill">kill</h1>
                     
 
-                    <p>linux提供kill指令向進程(process)發送訊號。</p>
+                    <p>Prerequisites:</p>
+
+<p><a href="/pages/c/compile/makefile/">在linux編譯c++</a>
+<a href="/pages/c/libc/signal/">signal</a>
+<a href="/pages/c/libc/fork/">fork</a></p>
+
+<p>linux提供kill指令向進程(process)發送訊號。</p>
 
 <p>語法</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int kill(pid_t pid, int sig);
@@ -1215,6 +1221,158 @@
   <li>pid = 0 傳給訊號父pid相關的進程，包含父pid進程，此父pid進程的所有子進程都會收到sig訊號</li>
   <li>pid = -1 廣播所有process進程</li>
 </ul>
+
+<p>以下程式碼<span class="mark">不能用kill -9 父pid</span></p>
+
+<p>使用以下二種方法測試</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kill -15 父pid
+或
+ctrl+c
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;signal.h&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">FatherExit</span><span class="p">(</span><span class="kt">int</span> <span class="n">sig</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// 怱略二次收到相同信號</span>
+  <span class="c1">// 使用kill(0, 信號)會發給子進程也會再次發給發送信號的父進程自己</span>
+  <span class="n">signal</span><span class="p">(</span><span class="n">SIGINT</span><span class="p">,</span> <span class="n">SIG_IGN</span><span class="p">);</span>  <span class="c1">// 怱略ctrl+c</span>
+  <span class="n">signal</span><span class="p">(</span><span class="n">SIGTERM</span><span class="p">,</span> <span class="n">SIG_IGN</span><span class="p">);</span>  <span class="c1">// 怱略kill -15</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"父進程退出， signal = "</span> <span class="o">&lt;&lt;</span> <span class="n">sig</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">kill</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">SIGTERM</span><span class="p">);</span>  <span class="c1">// 向全部的子進程發送15信號，終止子進程</span>
+  <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>  <span class="c1">// 父進程退出</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">ChildExit</span><span class="p">(</span><span class="kt">int</span> <span class="n">sig</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// 防止再次收到相同信號</span>
+  <span class="n">signal</span><span class="p">(</span><span class="n">SIGINT</span><span class="p">,</span> <span class="n">SIG_IGN</span><span class="p">);</span>  <span class="c1">// 怱略ctrl+c</span>
+  <span class="n">signal</span><span class="p">(</span><span class="n">SIGTERM</span><span class="p">,</span> <span class="n">SIG_IGN</span><span class="p">);</span>  <span class="c1">// 怱略kill -15</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"子進程 pid = "</span> <span class="o">&lt;&lt;</span> <span class="n">getpid</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">" 退出， signal = "</span> <span class="o">&lt;&lt;</span> <span class="n">sig</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 父進程要補捉的信號 ctrl + c</span>
+  <span class="n">signal</span><span class="p">(</span><span class="n">SIGTERM</span><span class="p">,</span> <span class="n">FatherExit</span><span class="p">);</span>
+  <span class="c1">// 父進程要補捉kill -15</span>
+  <span class="n">signal</span><span class="p">(</span><span class="n">SIGINT</span><span class="p">,</span> <span class="n">FatherExit</span><span class="p">);</span>
+  <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">fork</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// 建立子進程</span>
+      <span class="c1">// 父進程</span>
+      <span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>  <span class="c1">// 睡5秒</span>
+      <span class="k">continue</span><span class="p">;</span>  <span class="c1">// 回到迴圈判斷式中重頭執行</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="c1">// 子進程</span>
+      <span class="c1">// 子進程要補捉的信號 ctrl + c</span>
+      <span class="n">signal</span><span class="p">(</span><span class="n">SIGTERM</span><span class="p">,</span> <span class="n">ChildExit</span><span class="p">);</span>
+      <span class="c1">// 子進程要補捉kill -15</span>
+      <span class="n">signal</span><span class="p">(</span><span class="n">SIGINT</span><span class="p">,</span> <span class="n">ChildExit</span><span class="p">);</span>
+      <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 睡3秒</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"子進程 pid = "</span> <span class="o">&lt;&lt;</span> <span class="n">getpid</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">" 正在執行中..."</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>測試指令</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ps -ef | grep kill_test
+cici      156524  139698  0 15:32 pts/3    00:00:00 ./kill_test
+cici      156525  156524  0 15:32 pts/3    00:00:00 ./kill_test
+cici      156526  156524  0 15:32 pts/3    00:00:00 ./kill_test
+cici      156527  156524  0 15:32 pts/3    00:00:00 ./kill_test
+cici      156533  156524  0 15:32 pts/3    00:00:00 ./kill_test
+cici      156535  145543  0 15:32 pts/6    00:00:00 grep --color=auto kill_test
+$ kill -15 156524
+</code></pre></div></div>
+
+<p>執行結果</p>
+
+<p>父進程收到15信號後退出，下面的所有子進程全跟著退出。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>子進程 pid = 156527 正在執行中...
+子進程 pid = 156540 正在執行中...
+子進程 pid = 156536 正在執行中...
+子進程 pid = 156526 正在執行中...
+子進程 pid = 156539 正在執行中...
+子進程 pid = 156533 正在執行中...
+子進程 pid = 156538 正在執行中...
+子進程 pid = 156525 正在執行中...
+父進程退出， signal = 15
+子進程 pid = 156527 退出， signal = 15
+子進程 pid = 156540 退出， signal = 15
+子進程 pid = 156541 退出， signal = 15
+子進程 pid = 156539 退出， signal = 15
+子進程 pid = 156533 退出， signal = 15
+子進程 pid = 156526 退出， signal = 15
+子進程 pid = 156537 退出， signal = 15
+子進程 pid = 156536 退出， signal = 15
+子進程 pid = 156538 退出， signal = 15
+</code></pre></div></div>
+
+<p>以下是使用ctrl+c，測試結果，父進程收到2信號後退出，下面的所有子進程全跟著退出。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>子進程 pid = 156636 正在執行中...
+子進程 pid = 156636 正在執行中...
+子進程 pid = 156637 正在執行中...
+子進程 pid = 156636 正在執行中...
+子進程 pid = 156637 正在執行中...
+子進程 pid = 156636 正在執行中...
+子進程 pid = 156638 正在執行中...
+子進程 pid = 156637 正在執行中...
+子進程 pid = 156636 正在執行中...
+^C父進程退出， signal = 2
+子進程 pid = 156641 退出， signal = 2
+子進程 pid = 156638 退出， signal = 15
+子進程 pid = 156637 退出， signal = 15
+</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -1406,7 +1564,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-19 11:04:13 +0800"
+        "time": "2024-12-19 15:45:45 +0800"
     },
     "basePath": "",
     "book": {

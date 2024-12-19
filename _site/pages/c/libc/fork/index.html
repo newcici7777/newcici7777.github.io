@@ -1155,7 +1155,7 @@
     	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
         
             
-                <ul><li><a href="#fork" onclick="mobilePageScrollToAnchor(this)" >fork</a></li><li><a href="#透過fork傳回值執行不同程式碼" onclick="mobilePageScrollToAnchor(this)" >透過fork傳回值執行不同程式碼</a></li><li><a href="#fork與變數" onclick="mobilePageScrollToAnchor(this)" >fork()與變數</a></li><li><a href="#子進程在後台執行" onclick="mobilePageScrollToAnchor(this)" >子進程在後台執行</a><ul><li><a href="#法1" onclick="mobilePageScrollToAnchor(this)" >法1</a></li><li><a href="#法2" onclick="mobilePageScrollToAnchor(this)" >法2</a></li><li><a href="#孤兒進程orphan-process" onclick="mobilePageScrollToAnchor(this)" >孤兒進程orphan process</a></li><li><a href="#刪除後台進程" onclick="mobilePageScrollToAnchor(this)" >刪除後台進程</a></li></ul></li><li><a href="#0號進程與1號進程與2號進程" onclick="mobilePageScrollToAnchor(this)" >0號進程與1號進程與2號進程</a><ul><li><a href="#0號進程" onclick="mobilePageScrollToAnchor(this)" >0號進程</a></li><li><a href="#1號進程" onclick="mobilePageScrollToAnchor(this)" >1號進程</a></li><li><a href="#2號進程" onclick="mobilePageScrollToAnchor(this)" >2號進程</a></li><li><a href="#進程之間的關係" onclick="mobilePageScrollToAnchor(this)" >進程之間的關係</a></li><li><a href="#查看0號進程樹" onclick="mobilePageScrollToAnchor(this)" >查看0號進程樹</a></li></ul></li><li><a href="#zombie-process" onclick="mobilePageScrollToAnchor(this)" >zombie process</a><ul><li><a href="#怱略sigchld" onclick="mobilePageScrollToAnchor(this)" >怱略SIGCHLD</a></li><li><a href="#使用wait" onclick="mobilePageScrollToAnchor(this)" >使用wait</a><ul><li><a href="#正常退出程式碼" onclick="mobilePageScrollToAnchor(this)" >正常退出程式碼</a></li><li><a href="#使用kill不正常退出1" onclick="mobilePageScrollToAnchor(this)" >使用kill不正常退出1</a></li><li><a href="#使用kill不正常退出2" onclick="mobilePageScrollToAnchor(this)" >使用kill不正常退出2</a></li><li><a href="#操作nullptr不正常退出" onclick="mobilePageScrollToAnchor(this)" >操作nullptr不正常退出</a></li></ul></li></ul></li><li><a href="#取得父進程的id" onclick="mobilePageScrollToAnchor(this)" >取得父進程的id</a></li></ul>
+                <ul><li><a href="#fork" onclick="mobilePageScrollToAnchor(this)" >fork</a></li><li><a href="#透過fork傳回值執行不同程式碼" onclick="mobilePageScrollToAnchor(this)" >透過fork傳回值執行不同程式碼</a></li><li><a href="#fork與變數" onclick="mobilePageScrollToAnchor(this)" >fork()與變數</a></li><li><a href="#子進程在後台執行" onclick="mobilePageScrollToAnchor(this)" >子進程在後台執行</a><ul><li><a href="#法1" onclick="mobilePageScrollToAnchor(this)" >法1</a></li><li><a href="#法2" onclick="mobilePageScrollToAnchor(this)" >法2</a></li><li><a href="#孤兒進程orphan-process" onclick="mobilePageScrollToAnchor(this)" >孤兒進程orphan process</a></li><li><a href="#刪除後台進程" onclick="mobilePageScrollToAnchor(this)" >刪除後台進程</a></li></ul></li><li><a href="#0號進程與1號進程與2號進程" onclick="mobilePageScrollToAnchor(this)" >0號進程與1號進程與2號進程</a><ul><li><a href="#0號進程" onclick="mobilePageScrollToAnchor(this)" >0號進程</a></li><li><a href="#1號進程" onclick="mobilePageScrollToAnchor(this)" >1號進程</a></li><li><a href="#2號進程" onclick="mobilePageScrollToAnchor(this)" >2號進程</a></li><li><a href="#進程之間的關係" onclick="mobilePageScrollToAnchor(this)" >進程之間的關係</a></li><li><a href="#查看0號進程樹" onclick="mobilePageScrollToAnchor(this)" >查看0號進程樹</a></li></ul></li><li><a href="#zombie-process" onclick="mobilePageScrollToAnchor(this)" >zombie process</a><ul><li><a href="#怱略sigchld" onclick="mobilePageScrollToAnchor(this)" >怱略SIGCHLD</a></li><li><a href="#使用wait" onclick="mobilePageScrollToAnchor(this)" >使用wait</a><ul><li><a href="#正常退出程式碼" onclick="mobilePageScrollToAnchor(this)" >正常退出程式碼</a></li><li><a href="#使用kill不正常退出1" onclick="mobilePageScrollToAnchor(this)" >使用kill不正常退出1</a></li><li><a href="#使用kill不正常退出2" onclick="mobilePageScrollToAnchor(this)" >使用kill不正常退出2</a></li><li><a href="#操作nullptr不正常退出" onclick="mobilePageScrollToAnchor(this)" >操作nullptr不正常退出</a></li></ul></li><li><a href="#補捉sigchld" onclick="mobilePageScrollToAnchor(this)" >補捉SIGCHLD</a></li></ul></li><li><a href="#取得父進程的id" onclick="mobilePageScrollToAnchor(this)" >取得父進程的id</a></li></ul>
 
             
         </li>
@@ -1459,6 +1459,8 @@ name = May, address = 0x7ffeb7027ca0
 <p>由執行結果可以看出，即便子進程修改了變數值，但父進程仍顯示原來的值(888與Mary)。</p>
 
 <h2 id="子進程在後台執行">子進程在後台執行</h2>
+
+<p>子進程在後台執行時，不會被ctrl+c強制終止。</p>
 
 <h3 id="法1">法1</h3>
 <p>語法</p>
@@ -1983,6 +1985,137 @@ cici      154674  139698  0 10:22 pts/3    00:00:00 ./fork_test
 異常退出，狀態 : 11
 </code></pre></div></div>
 
+<h3 id="補捉sigchld">補捉SIGCHLD</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;signal.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;sys/wait.h&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="cm">/**
+ 補捉SIGCHLD子程序退出信號
+ */</span>
+<span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="kt">int</span> <span class="n">signal</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">status</span><span class="p">;</span>  <span class="c1">// 用於儲存子進程退出的結果</span>
+  <span class="n">pid_t</span> <span class="n">pid</span> <span class="o">=</span> <span class="n">wait</span><span class="p">(</span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>  <span class="c1">// 等待子進程退出</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"已終止的子進程pid是:"</span> <span class="o">&lt;&lt;</span> <span class="n">pid</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">// 把退出結果傳給WIFEXITED()前置指令，若回傳true，代表正常退出來</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">WIFEXITED</span><span class="p">(</span><span class="n">status</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"正常退出，狀態 : "</span> <span class="o">&lt;&lt;</span> <span class="n">WEXITSTATUS</span><span class="p">(</span><span class="n">status</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"異常退出，狀態 : "</span> <span class="o">&lt;&lt;</span> <span class="n">WTERMSIG</span><span class="p">(</span><span class="n">status</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 補捉子進程退出的信號</span>
+  <span class="n">signal</span><span class="p">(</span><span class="n">SIGCHLD</span><span class="p">,</span> <span class="n">func</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">fork</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 父進程執行30秒 0 .. 29</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">30</span> <span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"父 : 第"</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"秒"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+      <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// 子程序執行15秒 0 .. 14</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">15</span> <span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"子 : 第"</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"秒"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+      <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="c1">// 子程序執行15秒結束</span>
+    <span class="n">exit</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>父 : 第0秒
+子 : 第0秒
+父 : 第1秒
+子 : 第1秒
+父 : 第2秒
+子 : 第2秒
+父 : 第3秒
+子 : 第3秒
+父 : 第4秒
+子 : 第4秒
+父 : 第5秒
+子 : 第5秒
+父 : 第6秒
+子 : 第6秒
+父 : 第7秒
+子 : 第7秒
+父 : 第8秒
+子 : 第8秒
+父 : 第9秒
+子 : 第9秒
+父 : 第10秒
+子 : 第10秒
+父 : 第11秒
+子 : 第11秒
+父 : 第12秒
+子 : 第12秒
+父 : 第13秒
+子 : 第13秒
+父 : 第14秒
+子 : 第14秒
+父 : 第15秒
+已終止的子進程pid是:155462
+正常退出，狀態 : 5
+父 : 第16秒
+父 : 第17秒
+父 : 第18秒
+父 : 第19秒
+父 : 第20秒
+父 : 第21秒
+父 : 第22秒
+父 : 第23秒
+父 : 第24秒
+父 : 第25秒
+父 : 第26秒
+父 : 第27秒
+父 : 第28秒
+父 : 第29秒
+</code></pre></div></div>
+
 <h2 id="取得父進程的id">取得父進程的id</h2>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pid_t getpid(void);  // 取得目前進程pid
@@ -2169,7 +2302,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-19 11:04:13 +0800"
+        "time": "2024-12-19 15:45:45 +0800"
     },
     "basePath": "",
     "book": {

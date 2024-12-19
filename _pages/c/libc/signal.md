@@ -47,7 +47,7 @@ killall -9 nginx  # 終止所有名為 "nginx" 的進程
 |SIGKILL|9|強制終止進程|
 |SIGSEGV|11|操作nullptr指標或超出陣列索引|
 |SIGALRM|14|alarm()函式發出訊號|
-|SIGTERM|15|預設訊號，請求進程正常退出|
+|SIGTERM|15|kill後不加任何-編號，請求進程正常退出|
 |SIGCHLD|17|子進程結束|
 
 ## signal函式
