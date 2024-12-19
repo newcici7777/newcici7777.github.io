@@ -1203,17 +1203,17 @@
                         <h1 id="/pages/c/libc/kill">kill</h1>
                     
 
-                    <p>linux提供kill指令向程序(process)發送訊號。</p>
+                    <p>linux提供kill指令向進程(process)發送訊號。</p>
 
 <p>語法</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int kill(pid_t pid, int sig);
 </code></pre></div></div>
-<p>kill函式會將參數sig訊號傳給相關pid的程序(process)。</p>
+<p>kill函式會將參數sig訊號傳給相關pid的進程(process)。</p>
 
 <ul>
-  <li>pid &gt; 0 傳給訊號給特定的pid程序。</li>
-  <li>pid = 0 傳給訊號父pid相關的程序，包含父pid程序，此父pid程序的所有子程序都會收到sig訊號</li>
-  <li>pid = -1 廣播所有process程序</li>
+  <li>pid &gt; 0 傳給訊號給特定的pid進程。</li>
+  <li>pid = 0 傳給訊號父pid相關的進程，包含父pid進程，此父pid進程的所有子進程都會收到sig訊號</li>
+  <li>pid = -1 廣播所有process進程</li>
 </ul>
 
 </section>
@@ -1406,7 +1406,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-18 15:34:14 +0800"
+        "time": "2024-12-19 11:04:13 +0800"
     },
     "basePath": "",
     "book": {

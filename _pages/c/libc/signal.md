@@ -7,48 +7,48 @@ Prerequisites:
 
 [在linux編譯c++][1]
 
-kill或killall給程序(process)傳送訊號(signal)，也可以使用c函式庫(libc)的kill()函式給程序(process)傳送訊號(signal)。
+kill或killall給進程(process)傳送訊號(signal)，也可以使用c函式庫(libc)的kill()函式給進程(process)傳送訊號(signal)。
 
 ## kill與killall
 ### kill 指令
 
 用法：kill [選項] <PID>
 
-功能：向特定的程序 ID (PID) 發送訊號（例如，結束程序）。
+功能：向特定的進程 ID (PID) 發送訊號（例如，結束進程）。
 
-作用範圍：只能針對指定的程序 ID。
+作用範圍：只能針對指定的進程 ID。
 
 常見訊號：
-- -9：強制終止程序（SIGKILL）。
-- -15：預設訊號，請求程序正常退出（SIGTERM）。。
+- -9：強制終止進程（SIGKILL）。
+- -15：預設訊號，請求進程正常退出（SIGTERM）。。
 
 ```
-kill -9 1234  # 終止 PID 為 1234 的程序
+kill -9 1234  # 終止 PID 為 1234 的進程
 ```
 
 ### killall 指令
 
-用法：killall [選項] <程序名稱>
+用法：killall [選項] <進程名稱>
 
-功能：根據程序名稱來終止所有匹配的程序。
+功能：根據進程名稱來終止所有匹配的進程。
 
-作用範圍：針對同名的所有程序。
+作用範圍：針對同名的所有進程。
 
 訊號選擇：與 kill 相同，也可以使用不同的訊號。
 
 ```
-killall -9 nginx  # 終止所有名為 "nginx" 的程序
+killall -9 nginx  # 終止所有名為 "nginx" 的進程
 ```
 
 ### 常用的訊號:
 
 |訊號名|訊號值|發出訊號原因|
-|SIGINT|2|ctrl+c停止程序|
-|SIGKILL|9|強制終止程序|
+|SIGINT|2|ctrl+c停止進程|
+|SIGKILL|9|強制終止進程|
 |SIGSEGV|11|操作nullptr指標或超出陣列索引|
 |SIGALRM|14|alarm()函式發出訊號|
-|SIGTERM|15|預設訊號，請求程序正常退出|
-|SIGCHLD|17|子程序結束|
+|SIGTERM|15|預設訊號，請求進程正常退出|
+|SIGCHLD|17|子進程結束|
 
 ## signal函式
 
@@ -133,9 +133,9 @@ i = 86
 .
 </pre>
 
-## ctrl+c終止程序
+## ctrl+c終止進程
 
-使用ctrl+c可以終止正在執行的程序，本頁範例皆為無限迴圈，需手動ctrl+c終止程序。
+使用ctrl+c可以終止正在執行的進程，本頁範例皆為無限迴圈，需手動ctrl+c終止進程。
 
 ## SIG_IGN忽略訊號
 
@@ -267,17 +267,17 @@ i = 20
 終止
 ```
 
-由執行結果可以發現，第2次發送訊號是正常終止程序。
+由執行結果可以發現，第2次發送訊號是正常終止進程。
 
 ## 無法收到與略過的訊號
 
 以下三種都是無法收到與略過的訊號
 |訊號名|訊號值|發出訊號原因|
-|SIGKILL|9|強制終止程序|
+|SIGKILL|9|強制終止進程|
 |SIGSEGV|11|操作nullptr指標或超出陣列索引|
-|SIGSTOP|19|終止程序|
+|SIGSTOP|19|終止進程|
 
-以下程式碼即便設定收9的訊號，但執行`killall -9 signal_test`，func()函式不會被執行，直接終止程序。
+以下程式碼即便設定收9的訊號，但執行`killall -9 signal_test`，func()函式不會被執行，直接終止進程。
 {% highlight c++ linenos %}
 #include <iostream>
 #include <signal.h>
@@ -364,7 +364,7 @@ int main() {
 
 ## 0訊號
 
-檢查程序是否正常運作。
+檢查進程是否正常運作。
 
 對上一個例子使用`./alarm_test`
 
@@ -375,7 +375,7 @@ $ killall -0 signal_test
 signal_test：找不到任何行程
 $ killall -0 alarm_test
 ```
-若程序沒執行會顯示`找不到任何行程`
+若進程沒執行會顯示`找不到任何行程`
 
 
 [1]: {% link _pages/c/compile/makefile.md %}

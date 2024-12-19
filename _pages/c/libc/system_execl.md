@@ -73,12 +73,12 @@ ret = 32512
 
 若bash是執行其它程式碼，其它程式碼的return值非0，system()函式的傳回值也會是非0。
 
-以下是被呼叫的程序system_call.cpp
+以下是被呼叫的進程system_call.cpp
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
 int main() {
-  cout << "被呼叫的程序: system_call" << endl;
+  cout << "被呼叫的進程: system_call" << endl;
   return 12;
 } 
 {% endhighlight %}
@@ -95,7 +95,7 @@ int main() {
 {% endhighlight %}
 
 ```
-被呼叫的程序: system_call
+被呼叫的進程: system_call
 ret = 3072
 0:Success
 ```
@@ -139,10 +139,10 @@ int main() {
 }
 {% endhighlight %}
 ```
-被呼叫的程序: system_call
+被呼叫的進程: system_call
 ```
 
-從以上的執行結果可以發現，不會執行以下二行，因為程序已經被system_call程式碼取代
+從以上的執行結果可以發現，不會執行以下二行，因為進程已經被system_call程式碼取代
 {% highlight c++ linenos %}
   cout << "ret = " << ret << endl;
   cout << errno << ":" << strerror(errno) << endl;
@@ -185,7 +185,7 @@ system_call.cpp
 using namespace std;
 int main() {
   cout << "system_call pid = " << getpid() << endl;
-  cout << "被呼叫的程序: system_call" << endl;
+  cout << "被呼叫的進程: system_call" << endl;
   return 12;
 }
 {% endhighlight %}
@@ -196,14 +196,14 @@ int main() {
 ```
 execl_test pid = 131087
 system_call pid = 131087
-被呼叫的程序: system_call
+被呼叫的進程: system_call
 ```
 
 ## fork與execl
 
 - [fork][1]
 
-為了解決execl會取代主程序，使用fork()建立子程序，由子程序被execl取代，就不會取代主程序。
+為了解決execl會取代主進程，使用fork()建立子進程，由子進程被execl取代，就不會取代主進程。
 {% highlight c++ linenos %}
 #include <iostream>
 #include <unistd.h>
@@ -215,7 +215,7 @@ int main() {
   // fork傳回值pid
   pid_t pid = fork();
   if (pid > 0) {
-    // 父程序
+    // 父進程
     for (int i = 0; i < 15; i++) {
       sleep(1);
       cout << "第" << i << "秒" << endl;
@@ -230,7 +230,7 @@ int main() {
 {% endhighlight %}
 ```
 system_call pid = 146493
-被呼叫的程序: system_call
+被呼叫的進程: system_call
 第0秒
 第1秒
 第2秒
