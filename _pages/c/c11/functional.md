@@ -41,14 +41,14 @@ function<函式回傳值類型(函式參數1類型 參數名1,函式參數2類�
 using namespace std;
 //函式定義
 void print(int code, const string& msg) {
-    cout << "Error code = " << code << " , Msg = " << msg << endl;
+  cout << "Error code = " << code << " , Msg = " << msg << endl;
 }
 int main() {
-    //宣告function
-    function<void(int, const string&)> func = print;
-    //呼叫函式
-    func(500, "Server error.");
-    return 0;
+  //宣告function
+  function<void(int, const string&)> func = print;
+  //呼叫函式
+  func(500, "Server error.");
+  return 0;
 }
 {% endhighlight %}
 
@@ -76,15 +76,15 @@ function<FuncType> func = print;
 using namespace std;
 //函式定義
 void print(int code, const string& msg) {
-    cout << "Error code = " << code << " , Msg = " << msg << endl;
+  cout << "Error code = " << code << " , Msg = " << msg << endl;
 }
 int main() {
-    using FuncType = void(int, const string&);
-    //宣告function
-    function<FuncType> func = print;
-    //呼叫函式
-    func(500, "Server error.");
-    return 0;
+  using FuncType = void(int, const string&);
+  //宣告function
+  function<FuncType> func = print;
+  //呼叫函式
+  func(500, "Server error.");
+  return 0;
 }
 {% endhighlight %}
 
@@ -106,16 +106,16 @@ function<void(int, const string&)> func =  <span class="markline">Student::</spa
 using namespace std;
 class Student {
 public:
-    static void print(int code, const string& msg) {
-        cout << "Error code = " << code << " , Msg = " << msg << endl;
-    }
+  static void print(int code, const string& msg) {
+    cout << "Error code = " << code << " , Msg = " << msg << endl;
+  }
 };
 int main() {
-    //宣告function
-    function<void(int, const string&)> func = Student::print;
-    //呼叫函式
-    func(500, "Server error.");
-    return 0;
+  //宣告function
+  function<void(int, const string&)> func = Student::print;
+  //呼叫函式
+  func(500, "Server error.");
+  return 0;
 }
 {% endhighlight %}
 
@@ -134,18 +134,18 @@ function<函式回傳值類型(函式參數1類型,函式參數2類型, ...)> fu
 using namespace std;
 class Student {
 public:
-    void operator()(int code, const string& msg) {
-        cout << "Error code = " << code << " , Msg = " << msg << endl;
-    }
+  void operator()(int code, const string& msg) {
+    cout << "Error code = " << code << " , Msg = " << msg << endl;
+  }
 };
 int main() {
-    //建立物件
-    Student student;
-    //宣告function
-    function<void(int, const string&)> func = student;
-    //呼叫函式
-    func(500, "Server error.");
-    return 0;
+  //建立物件
+  Student student;
+  //宣告function
+  function<void(int, const string&)> func = student;
+  //呼叫函式
+  func(500, "Server error.");
+  return 0;
 }
 {% endhighlight %}
 
@@ -159,15 +159,15 @@ int main() {
 #include <functional>
 using namespace std;
 int main() {
-    //lambda
-    auto print = [](int code, const string& msg) {
-        cout << "Error code = " << code << " , Msg = " << msg << endl;
-    };
-    //宣告function
-    function<void(int, const string&)> func = print;
-    //呼叫函式
-    func(500, "Server error.");
-    return 0;
+  //lambda
+  auto print = [](int code, const string& msg) {
+    cout << "Error code = " << code << " , Msg = " << msg << endl;
+  };
+  //宣告function
+  function<void(int, const string&)> func = print;
+  //呼叫函式
+  func(500, "Server error.");
+  return 0;
 }
 {% endhighlight %}
 
@@ -178,13 +178,13 @@ int main() {
 #include <functional>
 using namespace std;
 int main() {
-    //宣告function
-    function<void(int, const string&)> func = [](int code, const string& msg) {
-        cout << "Error code = " << code << " , Msg = " << msg << endl;
-    };
-    //呼叫函式
-    func(500, "Server error.");
-    return 0;
+  //宣告function
+  function<void(int, const string&)> func = [](int code, const string& msg) {
+    cout << "Error code = " << code << " , Msg = " << msg << endl;
+  };
+  //呼叫函式
+  func(500, "Server error.");
+  return 0;
 }
 {% endhighlight %}
 
@@ -195,7 +195,7 @@ int main() {
 - function<參數類型1, ...> 第1個參數要填入類別參考&
 - 等於號(=)指派對映的函式，必須把記憶體位址傳進去，所以使用&取位址運算子+類別名+::範圍運算子+函式名
 <pre>
-    function<void(<span class="markline">Student&</span>,int, const string&)> func = <span class="markline">&Student::</span>print;
+  function<void(<span class="markline">Student&</span>,int, const string&)> func = <span class="markline">&Student::</span>print;
 </pre>
 
 ### 呼叫function
@@ -203,7 +203,7 @@ int main() {
 必須把物件代入第1個參數
 
 <pre>
-    func(<span class="markline">student</span>, 500, "Server error.");
+  func(<span class="markline">student</span>, 500, "Server error.");
 </pre>
 
 ### 完整程式碼
@@ -213,18 +213,18 @@ int main() {
 using namespace std;
 class Student {
 public:
-    void print(int code, const string& msg) {
-        cout << "Error code = " << code << " , Msg = " << msg << endl;
-    }
+  void print(int code, const string& msg) {
+    cout << "Error code = " << code << " , Msg = " << msg << endl;
+  }
 };
 int main() {
-    //建立物件
-    Student student;
-    //宣告function
-    function<void(Student&,int, const string&)> func = &Student::print;
-    //呼叫函式
-    func(student, 500, "Server error.");
-    return 0;
+  //建立物件
+  Student student;
+  //宣告function
+  function<void(Student&,int, const string&)> func = &Student::print;
+  //呼叫函式
+  func(student, 500, "Server error.");
+  return 0;
 }
 {% endhighlight %}
 

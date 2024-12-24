@@ -10,9 +10,9 @@ keywords: c++, pointer, void*, void
 
 {% highlight c++ linenos %}
 int main() {
-    char c = 'a';
-    cout << "變數c位址 = " << (void*)&c << endl;
-    return 0;
+  char c = 'a';
+  cout << "變數c位址 = " << (void*)&c << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -26,20 +26,20 @@ int main() {
 {% highlight c++ linenos %}
 //宣告printAddr的函式，參數資料型態為void*指標
 void printAddr(void* p) {
-    //印出位址
-    cout << p << endl;
+  //印出位址
+  cout << p << endl;
 }
 int main() {
-    int i = 10;
-    //將整數i變數的位址傳入
-    printAddr(&i);
-    char c = 'a';
-    //將字元c變數的位址傳入
-    printAddr(&c);
-    double d = 150.222;
-    //將浮點數d變數的位址傳入
-    printAddr(&d);
-    return 0;
+  int i = 10;
+  //將整數i變數的位址傳入
+  printAddr(&i);
+  char c = 'a';
+  //將字元c變數的位址傳入
+  printAddr(&c);
+  double d = 150.222;
+  //將浮點數d變數的位址傳入
+  printAddr(&d);
+  return 0;
 }
 {% endhighlight %}
 
@@ -82,21 +82,21 @@ int *num = (int *)malloc(1 * 1024 * 1024);//1byte*1024 = 1kb ->1kb*1024=1mb
 
 {% highlight c++ linenos %}
 void printAddr(void* p) {
-    //編譯失敗，不能對p指標使用取值運算子*，因為它是void*指標資料型態，必須轉型後才能對指標取出內容
-    cout << *p << endl;
+  //編譯失敗，不能對p指標使用取值運算子*，因為它是void*指標資料型態，必須轉型後才能對指標取出內容
+  cout << *p << endl;
 }
 {% endhighlight %}
 
 
 {% highlight c++ linenos %}
 void printAddr(void* p) {
-    //先將p指標轉型成char*指標，接著使用`取值運算子*`取出指標位址中的內容
-    cout << *(char*)p << endl;
+  //先將p指標轉型成char*指標，接著使用`取值運算子*`取出指標位址中的內容
+  cout << *(char*)p << endl;
 }
 int main() {
-    char c = 'a';
-    printAddr(&c);
-    return 0;
+  char c = 'a';
+  printAddr(&c);
+  return 0;
 }
 {% endhighlight %}
 
@@ -117,6 +117,6 @@ int rand (void);
 
 產生0-100的亂數
 {% highlight c++ linenos %}
-    int num = rand()%100;
-    printf("rand = %d \n", num);
+  int num = rand()%100;
+  printf("rand = %d \n", num);
 {% endhighlight %}

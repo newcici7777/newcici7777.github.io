@@ -73,64 +73,64 @@ m_cond.wait(lock);
 #include <condition_variable>
 using namespace std;
 class SafeQueue {
-    mutex m_mtx;//執行緒
-    condition_variable m_cond;//條件
-    queue<string> m_que;
+  mutex m_mtx;//執行緒
+  condition_variable m_cond;//條件
+  queue<string> m_que;
 public:
-    void push(string& msg) {
-        //加鎖，scope的範圍為函式內
-        lock_guard<mutex> lock(m_mtx);
-        m_que.push(msg);//放入訊息
-        m_cond.notify_one();//通知執行緒來接收訊息
+  void push(string& msg) {
+  //加鎖，scope的範圍為函式內
+  lock_guard<mutex> lock(m_mtx);
+  m_que.push(msg);//放入訊息
+  m_cond.notify_one();//通知執行緒來接收訊息
+  }
+  void pop(){
+  //無限迴圈等待有訊息通知
+  while (true) {
+    //每個執行緒有獨立的msg變數
+    string msg;
+    //加鎖
+    //m_cond.wait()參數只支援unique_lock
+    unique_lock<mutex> lock(m_mtx);
+    // queue是空的才等待
+    while (m_que.empty()) {
+    //queue沒資料就等待
+    m_cond.wait(lock);
     }
-    void pop(){
-        //無限迴圈等待有訊息通知
-        while(true) {
-            //每個執行緒有獨立的msg變數
-            string msg;
-            //加鎖
-            //因為m_cond.wait()參數只支援unique_lock
-            unique_lock<mutex> lock(m_mtx);
-            // queue是空的才等待
-            while(m_que.empty()) {
-                //queue沒資料就等待
-                m_cond.wait(lock);
-            }
-            //被通知接收資料
-            //若queue有資料了，才做下面的事情
-            msg = m_que.front();//拿出第一個元素
-            m_que.pop();//移除元素
-            //印出接收到的訊息
-            cout << "執行緒:" << this_thread::get_id() << "," << msg << endl;
-            //解鎖
-            lock.unlock();
-            //如果msg是end就不要再等待接收訊息
-            if(msg == "END") break;
-        }
-    }
+    //被通知接收資料
+    //若queue有資料了，才做下面的事情
+    msg = m_que.front();//拿出第一個元素
+    m_que.pop();//移除元素
+    //印出接收到的訊息
+    cout << "執行緒:" << this_thread::get_id() << "," << msg << endl;
+    //解鎖
+    lock.unlock();
+    //如果msg是end就不要再等待接收訊息
+    if (msg == "END") break;
+  }
+  }
 };
 int main() {
-    //建立物件
-    SafeQueue safeQue;
-    //建立3個執行緒
-    thread t1(&SafeQueue::pop, &safeQue);
-    thread t2(&SafeQueue::pop, &safeQue);
-    thread t3(&SafeQueue::pop, &safeQue);
-    //產生100個訊息
-    for(int i = 0; i < 100; i++) {
-        string temp_msg = "msg" + to_string(i);
-        safeQue.push(temp_msg);
-    }
-    //產生結束訊息，跳離無限迴圈，不要再等待接收訊息
-    for(int i = 0; i < 3; i++) {
-        string end_msg = "END";
-        safeQue.push(end_msg);
-    }
-    //執行緒記憶體釋放
-    t1.join();
-    t2.join();
-    t3.join();
-    return 0;
+  //建立物件
+  SafeQueue safeQue;
+  //建立3個執行緒
+  thread t1(&SafeQueue::pop, &safeQue);
+  thread t2(&SafeQueue::pop, &safeQue);
+  thread t3(&SafeQueue::pop, &safeQue);
+  //產生100個訊息
+  for (int i = 0; i < 100; i++) {
+  string temp_msg = "msg" + to_string(i);
+  safeQue.push(temp_msg);
+  }
+  //產生結束訊息，跳離無限迴圈，不要再等待接收訊息
+  for (int i = 0; i < 3; i++) {
+  string end_msg = "END";
+  safeQue.push(end_msg);
+  }
+  //執行緒記憶體釋放
+  t1.join();
+  t2.join();
+  t3.join();
+  return 0;
 }
 {% endhighlight %}
 
@@ -162,39 +162,39 @@ int main() {
 
 在wait()之前增加一行，休眠一小時
 ```
-this_thread::sleep_for(chrono::hours(1));
+this_thread::sleep_for (chrono::hours(1));
 ```
 目的是不要執行wait()，可以看到執行緒搶鎖的過程
 
 {% highlight c++ linenos %}
 void pop(){
-        //無限迴圈等待有訊息通知
-        while(true) {
-            //每個執行緒有獨立的msg變數
-            string msg;
-            //加鎖
-            //因為m_cond.wait()參數只支援unique_lock
-            cout << "執行緒 = " << this_thread::get_id() << "排隊等待" << endl;
-            unique_lock<mutex> lock(m_mtx);
-            cout << "執行緒 = " << this_thread::get_id() << "加鎖成功" << endl;
-            this_thread::sleep_for(chrono::hours(1));
-            // queue是空的才等待
-            while(m_que.empty()) {
-                //queue沒資料就等待
-                m_cond.wait(lock);
-            }
-            //被通知接收資料
-            //若queue有資料了，才做下面的事情
-            msg = m_que.front();//拿出第一個元素
-            m_que.pop();//移除元素
-            //印出接收到的訊息
-            cout << "執行緒:" << this_thread::get_id() << "," << msg << endl;
-            //解鎖
-            lock.unlock();
-            //如果msg是end就不要再等待接收訊息
-            if(msg == "END") break;
-        }
+  //無限迴圈等待有訊息通知
+  while (true) {
+    //每個執行緒有獨立的msg變數
+    string msg;
+    //加鎖
+    //m_cond.wait()參數只支援unique_lock
+    cout << "執行緒 = " << this_thread::get_id() << "排隊等待" << endl;
+    unique_lock<mutex> lock(m_mtx);
+    cout << "執行緒 = " << this_thread::get_id() << "加鎖成功" << endl;
+    this_thread::sleep_for (chrono::hours(1));
+    // queue是空的才等待
+    while (m_que.empty()) {
+    //queue沒資料就等待
+    m_cond.wait(lock);
     }
+    //被通知接收資料
+    //若queue有資料了，才做下面的事情
+    msg = m_que.front();//拿出第一個元素
+    m_que.pop();//移除元素
+    //印出接收到的訊息
+    cout << "執行緒:" << this_thread::get_id() << "," << msg << endl;
+    //解鎖
+    lock.unlock();
+    //如果msg是end就不要再等待接收訊息
+    if (msg == "END") break;
+  }
+  }
 };
 {% endhighlight %}
 
@@ -211,32 +211,32 @@ void pop(){
 
 {% highlight c++ linenos %}
 void pop(){
-        //無限迴圈等待有訊息通知
-        while(true) {
-            //每個執行緒有獨立的msg變數
-            string msg;
-            //加鎖
-            //因為m_cond.wait()參數只支援unique_lock
-            cout << "執行緒 = " << this_thread::get_id() << "排隊等待" << endl;
-            unique_lock<mutex> lock(m_mtx);
-            cout << "執行緒 = " << this_thread::get_id() << "加鎖成功" << endl;
-            // queue是空的才等待
-            while(m_que.empty()) {
-                //queue沒資料就等待
-                m_cond.wait(lock);
-            }
-            //被通知接收資料
-            //若queue有資料了，才做下面的事情
-            msg = m_que.front();//拿出第一個元素
-            m_que.pop();//移除元素
-            //印出接收到的訊息
-            cout << "執行緒:" << this_thread::get_id() << "," << msg << endl;
-            //解鎖
-            lock.unlock();
-            //如果msg是end就不要再等待接收訊息
-            if(msg == "END") break;
-        }
+  //無限迴圈等待有訊息通知
+  while (true) {
+    //每個執行緒有獨立的msg變數
+    string msg;
+    //加鎖
+    //m_cond.wait()參數只支援unique_lock
+    cout << "執行緒 = " << this_thread::get_id() << "排隊等待" << endl;
+    unique_lock<mutex> lock(m_mtx);
+    cout << "執行緒 = " << this_thread::get_id() << "加鎖成功" << endl;
+    // queue是空的才等待
+    while (m_que.empty()) {
+    //queue沒資料就等待
+    m_cond.wait(lock);
     }
+    //被通知接收資料
+    //若queue有資料了，才做下面的事情
+    msg = m_que.front();//拿出第一個元素
+    m_que.pop();//移除元素
+    //印出接收到的訊息
+    cout << "執行緒:" << this_thread::get_id() << "," << msg << endl;
+    //解鎖
+    lock.unlock();
+    //如果msg是end就不要再等待接收訊息
+    if (msg == "END") break;
+  }
+  }
 };
 {% endhighlight %}
 

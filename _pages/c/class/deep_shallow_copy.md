@@ -15,39 +15,39 @@ keywords: c++, Copy constructor
 {% highlight c++ linenos %}
 class Student {
 public:
-    char m_name[50];
-    char* m_ptr;
+  char m_name[50];
+  char* m_ptr;
 public:
-    Student() {
-        m_ptr = new char[100];
-        strcpy(m_ptr, "abcdef");
-        cout << "沒參數建構子" << endl;
-    }
-    Student(const Student &s) {
-        memset(m_name,0,sizeof(m_name));
-        strcpy(m_name, s.m_name);
-        //拷貝m_ptr
-        m_ptr = s.m_ptr;
-        cout << "呼叫Student(const Student &s)拷貝函式" << endl;
-    }
-    ~Student() {
-        delete [] m_ptr;
-        m_ptr = nullptr;
-        cout << "解構子" << endl;
-    }
-    void print() {
-        cout << "name: " << m_name << endl;
-        //印出記憶體位址
-        cout << "m_ptr address:" << &m_ptr << endl;
-        cout << "m_ptr value = " << m_ptr << endl;
-    }
+  Student() {
+    m_ptr = new char[100];
+    strcpy(m_ptr, "abcdef");
+    cout << "沒參數建構子" << endl;
+  }
+  Student(const Student &s) {
+    memset(m_name,0,sizeof(m_name));
+    strcpy(m_name, s.m_name);
+    //拷貝m_ptr
+    m_ptr = s.m_ptr;
+    cout << "呼叫Student(const Student &s)拷貝函式" << endl;
+  }
+  ~Student() {
+    delete [] m_ptr;
+    m_ptr = nullptr;
+    cout << "解構子" << endl;
+  }
+  void print() {
+    cout << "name: " << m_name << endl;
+    //印出記憶體位址
+    cout << "m_ptr address:" << &m_ptr << endl;
+    cout << "m_ptr value = " << m_ptr << endl;
+  }
 };
 int main() {
-    Student s1;
-    strcpy(s1.m_name, "Cici");
-    s1.print();
-    return 0;
-}    
+  Student s1;
+  strcpy(s1.m_name, "Cici");
+  s1.print();
+  return 0;
+}  
 {% endhighlight %}
 
 ```
@@ -64,13 +64,13 @@ m_ptr value = abcdef
 
 {% highlight c++ linenos %}
 int main() {
-    Student s1;
-    strcpy(s1.m_name, "Cici");
-    s1.print();
-    Student s2(s1);
-    s2.print();
-    return 0;
-}    
+  Student s1;
+  strcpy(s1.m_name, "Cici");
+  s1.print();
+  Student s2(s1);
+  s2.print();
+  return 0;
+}  
 {% endhighlight %}
 ```
 沒參數建構子
@@ -93,44 +93,44 @@ lsn11(15006,0x100098600) malloc: *** set a breakpoint in malloc_error_break to d
 {% highlight c++ linenos %}
 class Student {
 public:
-    char m_name[50];
-    char* m_ptr;
+  char m_name[50];
+  char* m_ptr;
 public:
-    Student() {
-        m_ptr = nullptr;
-        cout << "沒參數建構子" << endl;
-    }
-    Student(const Student &s) {
-        memset(m_name,0,sizeof(m_name));
-        strcpy(m_name, s.m_name);
-        //拷貝m_ptr
-        m_ptr = s.m_ptr;
-        cout << "呼叫Student(const Student &s)拷貝函式" << endl;
-    }
-    ~Student() {
-        delete [] m_ptr;
-        m_ptr = nullptr;
-        cout << "解構子" << endl;
-    }
-    void print() {
-        cout << "name: " << m_name << endl;
-        //印出記憶體位址
-        cout << "m_ptr address:" << &m_ptr << endl;
-        cout << "m_ptr value = " << m_ptr << endl;
-    }
+  Student() {
+    m_ptr = nullptr;
+    cout << "沒參數建構子" << endl;
+  }
+  Student(const Student &s) {
+    memset(m_name,0,sizeof(m_name));
+    strcpy(m_name, s.m_name);
+    //拷貝m_ptr
+    m_ptr = s.m_ptr;
+    cout << "呼叫Student(const Student &s)拷貝函式" << endl;
+  }
+  ~Student() {
+    delete [] m_ptr;
+    m_ptr = nullptr;
+    cout << "解構子" << endl;
+  }
+  void print() {
+    cout << "name: " << m_name << endl;
+    //印出記憶體位址
+    cout << "m_ptr address:" << &m_ptr << endl;
+    cout << "m_ptr value = " << m_ptr << endl;
+  }
 };
 int main() {
-    Student s1;
-    strcpy(s1.m_name, "Cici");
-    s1.m_ptr = new char[100];
-    strcpy(s1.m_ptr, "abcdef");
-    Student s2(s1);
-    strcpy(s2.m_ptr, "zzzzz");
-    cout << "##### s1 #### " << endl;
-    s1.print();
-    cout << "##### s2 #### " << endl;
-    s2.print();
-    return 0;
+  Student s1;
+  strcpy(s1.m_name, "Cici");
+  s1.m_ptr = new char[100];
+  strcpy(s1.m_ptr, "abcdef");
+  Student s2(s1);
+  strcpy(s2.m_ptr, "zzzzz");
+  cout << "##### s1 #### " << endl;
+  s1.print();
+  cout << "##### s2 #### " << endl;
+  s2.print();
+  return 0;
 }   
 {% endhighlight %}
 
@@ -156,35 +156,35 @@ m_ptr value = zzzzz
 {% highlight c++ linenos %}
 class Student {
 public:
-    char m_name[50];
-    char* m_ptr;
+  char m_name[50];
+  char* m_ptr;
 public:
-    Student() {
-        m_ptr = nullptr;
-        cout << "沒參數建構子" << endl;
+  Student() {
+    m_ptr = nullptr;
+    cout << "沒參數建構子" << endl;
+  }
+  Student(const Student &s) {
+    memset(m_name,0,sizeof(m_name));
+    strcpy(m_name, s.m_name);
+    //拷貝m_ptr
+    if(s.m_ptr) {
+      m_ptr = new char[100];
+      strcpy(m_ptr, s.m_ptr);
+    } else {
+      m_ptr = nullptr;
     }
-    Student(const Student &s) {
-        memset(m_name,0,sizeof(m_name));
-        strcpy(m_name, s.m_name);
-        //拷貝m_ptr
-        if(s.m_ptr) {
-            m_ptr = new char[100];
-            strcpy(m_ptr, s.m_ptr);
-        } else {
-            m_ptr = nullptr;
-        }
-        cout << "呼叫Student(const Student &s)拷貝函式" << endl;
-    }
-    ~Student() {
-        delete [] m_ptr;
-        m_ptr = nullptr;
-        cout << "解構子" << endl;
-    }
-    void print() {
-        cout << "name: " << m_name << endl;
-        //印出記憶體位址
-        cout << "m_ptr address:" << &m_ptr << endl;
-        cout << "m_ptr value = " << m_ptr << endl;
-    }
+    cout << "呼叫Student(const Student &s)拷貝函式" << endl;
+  }
+  ~Student() {
+    delete [] m_ptr;
+    m_ptr = nullptr;
+    cout << "解構子" << endl;
+  }
+  void print() {
+    cout << "name: " << m_name << endl;
+    //印出記憶體位址
+    cout << "m_ptr address:" << &m_ptr << endl;
+    cout << "m_ptr value = " << m_ptr << endl;
+  }
 };
 {% endhighlight %}

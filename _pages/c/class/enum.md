@@ -26,14 +26,14 @@ day1 = 5;
 {% highlight c++ linenos %}
 enum days_of_week {Sun, Mon, Tue, Wed, Thu, Fri, Sat};
 int main() {
-    days_of_week day1, day2;
-    day1 = Mon;
-    day2 = Thu;
-    
-    int diff = day2 - day1;
-    cout << "Days between = " << diff << endl;
-    return 0;
-}    
+  days_of_week day1, day2;
+  day1 = Mon;
+  day2 = Thu;
+  
+  int diff = day2 - day1;
+  cout << "Days between = " << diff << endl;
+  return 0;
+}  
 {% endhighlight %}
 
 ```
@@ -53,7 +53,7 @@ enum {girl = 0, boy = 1};
 要記得存放enum值的變數
 
 ```
-    int sex;
+  int sex;
 ```
 
 ### 指派enum給變數
@@ -68,39 +68,39 @@ student.sex = student.girl;
 {% highlight c++ linenos %}
 class Student {
 public:
-    char name[50];
-    int sex;
-    enum {girl = 0, boy = 1};
+  char name[50];
+  int sex;
+  enum {girl = 0, boy = 1};
 private:
-    char address[100];
+  char address[100];
 public:
-    int age;
+  int age;
 private:
-    char father[50];
+  char father[50];
 public:
-    void setName(const char* name1) {
-        strcpy(name, name1);
-    }
-    void setAge(const int age) {
-        this->age = age;
-    }
-    void print() {
-        cout << "name: " << name << endl;
-        cout << "age: " << age << endl;
-        cout << "sex: ";
-        if(sex == girl)
-            cout << "girl" << endl;
-        else
-            cout << "boy" <<endl;
-    }
+  void setName(const char* name1) {
+    strcpy(name, name1);
+  }
+  void setAge(const int age) {
+    this->age = age;
+  }
+  void print() {
+    cout << "name: " << name << endl;
+    cout << "age: " << age << endl;
+    cout << "sex: ";
+    if(sex == girl)
+      cout << "girl" << endl;
+    else
+      cout << "boy" <<endl;
+  }
 };
 int main() {
-    Student student;
-    student.setName("Bill");
-    student.setAge(20);
-    student.sex = student.girl;
-    student.print();
-    return 0;
+  Student student;
+  student.setName("Bill");
+  student.setAge(20);
+  student.sex = student.girl;
+  student.print();
+  return 0;
 }
 {% endhighlight %}
 

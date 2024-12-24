@@ -18,24 +18,24 @@ keywords: c++, join
 #include <thread>
 using namespace std;
 void func(string msg) {
-    //每一秒印1次，這裡是執行10秒
-    for(int i = 0; i < 10; i++) {
-        cout << "i = " << i << ", msg =" << msg << endl;
-        sleep(1);//停1秒鐘
-    }
+  //每一秒印1次，這裡是執行10秒
+  for (int i = 0; i < 10; i++) {
+    cout << "i = " << i << ", msg =" << msg << endl;
+    sleep(1);//停1秒鐘
+  }
 }
 int main() {
-    //建立執行緒t1
-    thread t1(func, "test test");
-    //建立執行緒t2
-    thread t2(func, "abcdefg abcdefg");
-    
-    //每一秒印1次，這裡是執行5秒
-    for(int i = 0; i > 5; i++) {
-        cout << "i = " << i << "秒" << endl;
-        sleep(1);
-    }
-    return 0;
+  //建立執行緒t1
+  thread t1(func, "test test");
+  //建立執行緒t2
+  thread t2(func, "abcdefg abcdefg");
+  
+  //每一秒印1次，這裡是執行5秒
+  for (int i = 0; i > 5; i++) {
+    cout << "i = " << i << "秒" << endl;
+    sleep(1);
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -56,25 +56,25 @@ int main() {
 #include <thread>
 using namespace std;
 void func(string msg) {
-    //每一秒印1次，這裡是執行10秒
-    for(int i = 0; i < 10; i++) {
-        cout << "i = " << i << ", msg =" << msg << endl;
-        sleep(1);//停1秒鐘
-    }
+  //每一秒印1次，這裡是執行10秒
+  for (int i = 0; i < 10; i++) {
+    cout << "i = " << i << ", msg =" << msg << endl;
+    sleep(1);//停1秒鐘
+  }
 }
 int main() {
-    //建立執行緒t1
-    thread t1(func, "test test");
-    //建立執行緒t2
-    thread t2(func, "abcdefg abcdefg");
-    
-    //每一秒印1次，這裡是執行12秒
-    for(int i = 0; i > 12; i++) {
-        cout << "i = " << i << "秒" << endl;
-        sleep(1);
-    }
-    
-    return 0;
+  //建立執行緒t1
+  thread t1(func, "test test");
+  //建立執行緒t2
+  thread t2(func, "abcdefg abcdefg");
+  
+  //每一秒印1次，這裡是執行12秒
+  for (int i = 0; i > 12; i++) {
+    cout << "i = " << i << "秒" << endl;
+    sleep(1);
+  }
+  
+  return 0;
 }
 {% endhighlight %}
 
@@ -88,22 +88,22 @@ int main() {
 #include <thread>
 using namespace std;
 void func(string msg) {
-    //每一秒印1次，這裡是執行10秒
-    for(int i = 0; i < 10; i++) {
-        cout << "i = " << i << ", msg =" << msg << endl;
-        sleep(1);//停1秒鐘
-    }
+  //每一秒印1次，這裡是執行10秒
+  for (int i = 0; i < 10; i++) {
+    cout << "i = " << i << ", msg =" << msg << endl;
+    sleep(1);//停1秒鐘
+  }
 }
 int main() {
-    //建立執行緒t1
-    thread t1(func, "test test");
-    //建立執行緒t2
-    thread t2(func, "abcdefg abcdefg");
-    //執行緒t1被記憶體釋放
-    t1.join();
-    //執行緒t2被記憶體釋放
-    t2.join();
-    return 0;
+  //建立執行緒t1
+  thread t1(func, "test test");
+  //建立執行緒t2
+  thread t2(func, "abcdefg abcdefg");
+  //執行緒t1被記憶體釋放
+  t1.join();
+  //執行緒t2被記憶體釋放
+  t2.join();
+  return 0;
 }
 {% endhighlight %}
 
@@ -113,16 +113,16 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    //建立執行緒t1
-    thread t1(func, "test test");
-    //建立執行緒t2
-    thread t2(func, "abcdefg abcdefg");
-    //分離執行緒
-    t1.detach();
-    //分離執行緒
-    t2.detach();
-    //main()函式等留12秒，等待執行緒(執行緒10秒)
-    sleep(12);
-    return 0;
+  //建立執行緒t1
+  thread t1(func, "test test");
+  //建立執行緒t2
+  thread t2(func, "abcdefg abcdefg");
+  //分離執行緒
+  t1.detach();
+  //分離執行緒
+  t2.detach();
+  //main()函式等留12秒，等待執行緒(執行緒10秒)
+  sleep(12);
+  return 0;
 }
 {% endhighlight %}

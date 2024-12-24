@@ -1256,22 +1256,22 @@
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
-    <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">m_name</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">m_name</span><span class="p">;</span>
-        <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
+  <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">m_name</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">m_name</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立二個物件</span>
-    <span class="n">Student</span> <span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">;</span>
-    <span class="n">s1</span><span class="p">.</span><span class="n">m_name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
-    
-    <span class="c1">//使用operator=函式</span>
-    <span class="n">s2</span> <span class="o">=</span> <span class="n">s1</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 name = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 name = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span><span class="p">.</span><span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立二個物件</span>
+  <span class="n">Student</span> <span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">;</span>
+  <span class="n">s1</span><span class="p">.</span><span class="n">m_name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
+  
+  <span class="c1">//使用operator=函式</span>
+  <span class="n">s2</span> <span class="o">=</span> <span class="n">s1</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 name = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 name = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span><span class="p">.</span><span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1332,44 +1332,44 @@ s2 name = Bill
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">m_ptr</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">(){</span><span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;}</span>
-    <span class="o">~</span><span class="n">Student</span><span class="p">(){</span><span class="k">if</span><span class="p">(</span><span class="n">m_ptr</span><span class="p">)</span> <span class="k">delete</span> <span class="n">m_ptr</span><span class="p">;}</span>
-    <span class="c1">//參數為來源物件，也就是指要copy的物件</span>
-    <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">m_name</span> <span class="o">=</span> <span class="n">src</span><span class="p">.</span><span class="n">m_name</span><span class="p">;</span>
-        <span class="c1">//如果來源物件的m_ptr指標是空</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">src</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-            <span class="c1">//要把目的物件清空(如果目的物件不是空的話)</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">m_ptr</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-                <span class="k">delete</span> <span class="n">m_ptr</span><span class="p">;</span>
-                <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="c1">//如果目的物件為空</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">m_ptr</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-                <span class="c1">//動態分配記憶體</span>
-                <span class="n">m_ptr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="c1">//記憶體的值拷貝</span>
-            <span class="n">memcpy</span><span class="p">(</span><span class="n">m_ptr</span><span class="p">,</span> <span class="n">src</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span>
-        <span class="p">}</span>
-        <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">m_ptr</span><span class="p">;</span>
+  <span class="n">Student</span><span class="p">(){</span><span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;}</span>
+  <span class="o">~</span><span class="n">Student</span><span class="p">(){</span><span class="k">if</span><span class="p">(</span><span class="n">m_ptr</span><span class="p">)</span> <span class="k">delete</span> <span class="n">m_ptr</span><span class="p">;}</span>
+  <span class="c1">//參數為來源物件，也就是指要copy的物件</span>
+  <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">m_name</span> <span class="o">=</span> <span class="n">src</span><span class="p">.</span><span class="n">m_name</span><span class="p">;</span>
+    <span class="c1">//如果來源物件的m_ptr指標是空</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">src</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">//要把目的物件清空(如果目的物件不是空的話)</span>
+      <span class="k">if</span><span class="p">(</span><span class="n">m_ptr</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">delete</span> <span class="n">m_ptr</span><span class="p">;</span>
+        <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="c1">//如果目的物件為空</span>
+      <span class="k">if</span><span class="p">(</span><span class="n">m_ptr</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//動態分配記憶體</span>
+        <span class="n">m_ptr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="c1">//記憶體的值拷貝</span>
+      <span class="n">memcpy</span><span class="p">(</span><span class="n">m_ptr</span><span class="p">,</span> <span class="n">src</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span>
     <span class="p">}</span>
+    <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立二個物件</span>
-    <span class="n">Student</span> <span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">;</span>
-    <span class="n">s1</span><span class="p">.</span><span class="n">m_name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
-    <span class="n">s1</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">15</span><span class="p">);</span>
-    <span class="c1">//使用operator=函式</span>
-    <span class="n">s2</span> <span class="o">=</span> <span class="n">s1</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 name = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 name = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span><span class="p">.</span><span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 m_ptr = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">s1</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 m_ptr = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">s2</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立二個物件</span>
+  <span class="n">Student</span> <span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">;</span>
+  <span class="n">s1</span><span class="p">.</span><span class="n">m_name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
+  <span class="n">s1</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">15</span><span class="p">);</span>
+  <span class="c1">//使用operator=函式</span>
+  <span class="n">s2</span> <span class="o">=</span> <span class="n">s1</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 name = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 name = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span><span class="p">.</span><span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 m_ptr = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">s1</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 m_ptr = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">s2</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1569,7 +1569,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

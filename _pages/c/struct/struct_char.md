@@ -18,10 +18,10 @@ Prerequisites:
 
 {% highlight c++ linenos %}
 typedef struct{
-    //學生姓名
-    char name[100];
-    //學號
-    int id;
+  //學生姓名
+  char name[100];
+  //學號
+  int id;
 }Student;
 {% endhighlight %}
 
@@ -43,23 +43,23 @@ strcpy(student.name, "Mary");
 #include <iostream>
 using namespace std;
 typedef struct{
-    //學生姓名
-    char name[100];
-    //學號
-    int id;
+  //學生姓名
+  char name[100];
+  //學號
+  int id;
 }Student;
 int main() {
-    Student student;
-    //清空資料
-    //student記憶體位址的值全設為00000000
-    memset(&student, 0, sizeof(student));
-    //姓名
-    strcpy(student.name, "Mary");
-    //學號
-    student.id = 100;
-    cout << student.name << endl;
-    cout << student.id << endl;
-    return 0;
+  Student student;
+  //清空資料
+  //student記憶體位址的值全設為00000000
+  memset(&student, 0, sizeof(student));
+  //姓名
+  strcpy(student.name, "Mary");
+  //學號
+  student.id = 100;
+  cout << student.name << endl;
+  cout << student.id << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -75,10 +75,10 @@ Mary
 
 {% highlight c++ linenos %}
 typedef struct{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
+  //學生姓名
+  char* name;
+  //學號
+  int id;
 }Student;
 {% endhighlight %}
 
@@ -94,23 +94,23 @@ student.name = "Mary";
 #include <iostream>
 using namespace std;
 typedef struct{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
+  //學生姓名
+  char* name;
+  //學號
+  int id;
 }Student;
 int main() {
-    Student student;
-    //清空資料
-    //student記憶體位址的值全設為00000000
-    memset(&student, 0, sizeof(student));
-    //姓名
-    student.name = "Mary";
-    //學號
-    student.id = 100;
-    cout << student.name << endl;
-    cout << student.id << endl;
-    return 0;
+  Student student;
+  //清空資料
+  //student記憶體位址的值全設為00000000
+  memset(&student, 0, sizeof(student));
+  //姓名
+  student.name = "Mary";
+  //學號
+  student.id = 100;
+  cout << student.name << endl;
+  cout << student.id << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -132,20 +132,20 @@ student = {"Mary","桃園市XX區XX號", 1};
 #include <iostream>
 using namespace std;
 typedef struct{
-    //學生姓名
-    char name[100];
-    //地址
-    char* address;
-    //學號
-    int id;
+  //學生姓名
+  char name[100];
+  //地址
+  char* address;
+  //學號
+  int id;
 }Student;
 int main() {
-    Student student;
-    student = {"Mary","桃園市XX區XX號", 1};
-    cout << student.name << endl;
-    cout << student.address << endl;
-    cout << student.id << endl;
-    return 0;
+  Student student;
+  student = {"Mary","桃園市XX區XX號", 1};
+  cout << student.name << endl;
+  cout << student.address << endl;
+  cout << student.id << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -173,21 +173,21 @@ strcpy(student.name, "Bill");
 #include <iostream>
 using namespace std;
 typedef struct{
-    //學生姓名
-    char name[100];
-    //地址
-    char* address;
-    //學號
-    int id;
+  //學生姓名
+  char name[100];
+  //地址
+  char* address;
+  //學號
+  int id;
 }Student;
 int main() {
-    Student student;
-    student = {"Mary","桃園市XX區XX號", 1};
-    strcpy(student.name, "Bill");
-    cout << student.name << endl;
-    cout << student.address << endl;
-    cout << student.id << endl;
-    return 0;
+  Student student;
+  student = {"Mary","桃園市XX區XX號", 1};
+  strcpy(student.name, "Bill");
+  cout << student.name << endl;
+  cout << student.address << endl;
+  cout << student.id << endl;
+  return 0;
 }
 {% endhighlight %}
 

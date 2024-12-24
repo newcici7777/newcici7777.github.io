@@ -1248,7 +1248,7 @@
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre>    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+</pre></td><td class="code"><pre>  <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1282,22 +1282,22 @@
 #include</span> <span class="cpf">&lt;thread&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//停1秒鐘</span>
-    <span class="p">}</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//停1秒鐘</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立執行緒t1</span>
-    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
-    <span class="c1">//建立執行緒t2</span>
-    <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
-    
-    <span class="c1">//執行緒t1被記憶體釋放</span>
-    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="c1">//執行緒t2被記憶體釋放</span>
-    <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立執行緒t1</span>
+  <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
+  <span class="c1">//建立執行緒t2</span>
+  <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
+  
+  <span class="c1">//執行緒t1被記憶體釋放</span>
+  <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+  <span class="c1">//執行緒t2被記憶體釋放</span>
+  <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1344,11 +1344,11 @@ i = 10, msg =test test
 3
 4
 5
-</pre></td><td class="code"><pre>    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span><span class="c1">//建立物件</span>
-    <span class="c1">//第一個參數傳入成員函式位址，要有&amp;類別名::成員函式，注意！成員函式結尾不用括號</span>
-    <span class="c1">//第二個參數傳入物件地址</span>
-    <span class="c1">//第三個參數傳入函式的參數</span>
-    <span class="kr">thread</span> <span class="nf">t3</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="s">"ccccccc"</span><span class="p">);</span>
+</pre></td><td class="code"><pre>  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span><span class="c1">//建立物件</span>
+  <span class="c1">//第一個參數傳入成員函式位址，要有&amp;類別名::成員函式，注意！成員函式結尾不用括號</span>
+  <span class="c1">//第二個參數傳入物件地址</span>
+  <span class="c1">//第三個參數傳入函式的參數</span>
+  <span class="kr">thread</span> <span class="nf">t3</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="s">"ccccccc"</span><span class="p">);</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1383,31 +1383,31 @@ i = 10, msg =test test
 26
 27
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="k">public</span> <span class="o">:</span>
-    <span class="kt">void</span> <span class="n">func</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">" i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="p">}</span>
+  <span class="k">public</span> <span class="o">:</span>
+  <span class="kt">void</span> <span class="n">func</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">" i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="p">}</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立執行緒t1</span>
-    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
-    <span class="c1">//建立執行緒t2</span>
-    <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
-    
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span><span class="c1">//建立物件</span>
-    <span class="c1">//第一個參數傳入成員函式位址，要有&amp;類別名::成員函式，注意！成員函式結尾不用括號</span>
-    <span class="c1">//第二個參數傳入物件地址</span>
-    <span class="c1">//第三個參數傳入函式的參數</span>
-    <span class="kr">thread</span> <span class="n">t3</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="s">"ccccccc"</span><span class="p">);</span>
-    
-    <span class="c1">//執行緒t1被記憶體釋放</span>
-    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="c1">//執行緒t2被記憶體釋放</span>
-    <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="n">t3</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立執行緒t1</span>
+  <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
+  <span class="c1">//建立執行緒t2</span>
+  <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
+  
+  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span><span class="c1">//建立物件</span>
+  <span class="c1">//第一個參數傳入成員函式位址，要有&amp;類別名::成員函式，注意！成員函式結尾不用括號</span>
+  <span class="c1">//第二個參數傳入物件地址</span>
+  <span class="c1">//第三個參數傳入函式的參數</span>
+  <span class="kr">thread</span> <span class="n">t3</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="s">"ccccccc"</span><span class="p">);</span>
+  
+  <span class="c1">//執行緒t1被記憶體釋放</span>
+  <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+  <span class="c1">//執行緒t2被記憶體釋放</span>
+  <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+  <span class="n">t3</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1601,7 +1601,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

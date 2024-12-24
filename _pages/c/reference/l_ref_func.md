@@ -17,7 +17,7 @@ Prerequisites:
 int x = 10;
 //返回全域變數x的參考別名
 int& setX(){
-    return x;
+  return x;
 }
 {% endhighlight %}
 
@@ -37,14 +37,14 @@ setX() = 99;
 int x = 10;
 //返回全域變數x的參考
 int& setX(){
-    return x;
+  return x;
 }
 int main() {
-    cout << "Before x = " << x << endl;
-    //將x全域變數參考，設值成99
-    setX() = 99;
-    cout << "After x = " << x << endl;
-    return 0;
+  cout << "Before x = " << x << endl;
+  //將x全域變數參考，設值成99
+  setX() = 99;
+  cout << "After x = " << x << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -58,8 +58,8 @@ After x = 99
 以下程式碼會出錯，因為區域變數x在函式結束的時候就會被系統記憶體釋放，無法作為參考。
 {% highlight c++ linenos %}
 int& setX(){
-    int x = 10;
-    return x;
+  int x = 10;
+  return x;
 }
 {% endhighlight %}
 
@@ -73,15 +73,15 @@ int& setX(){
 //回傳值為參考別名
 //參數r為x的參考別名
 int& setX(int& r){
-    return r;
+  return r;
 }
 int main() {
-    int x = 10;
-    cout << "Before x = " << x << endl;
-    //x傳入函式，回傳x的參考
-    setX(x) = 99;
-    cout << "After x = " << x << endl;
-    return 0;
+  int x = 10;
+  cout << "Before x = " << x << endl;
+  //x傳入函式，回傳x的參考
+  setX(x) = 99;
+  cout << "After x = " << x << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -115,15 +115,15 @@ getValue(x) = 100;
 
 {% highlight c++ linenos %}
 const int& getValue(int& z){
-    z++;
-    return z;
+  z++;
+  return z;
 }
 int main() {
-    int x = 10;
-    const int& y = getValue(x);
-    cout << "x = " << x << endl;
-    cout << "y = " << y << endl;
-    return 0;
+  int x = 10;
+  const int& y = getValue(x);
+  cout << "x = " << x << endl;
+  cout << "y = " << y << endl;
+  return 0;
 }
 {% endhighlight %}
 

@@ -1251,17 +1251,17 @@ void callByRef(int&amp; param1, int&amp; param2);
 11
 12
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">callByValue</span><span class="p">(</span><span class="kt">int</span> <span class="n">param1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">param2</span><span class="p">){</span>
-    <span class="n">param1</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-    <span class="n">param2</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
+  <span class="n">param1</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="n">param2</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="n">callByValue</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"callByValue:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", j = "</span> <span class="o">&lt;&lt;</span> <span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>    
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">callByValue</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"callByValue:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", j = "</span> <span class="o">&lt;&lt;</span> <span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>  
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1290,17 +1290,17 @@ i = 10, j = 20
 11
 12
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">callByRef</span><span class="p">(</span><span class="kt">int</span><span class="o">&amp;</span> <span class="n">param1</span><span class="p">,</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">param2</span><span class="p">){</span>
-    <span class="n">param1</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-    <span class="n">param2</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
+  <span class="n">param1</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="n">param2</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="n">callByRef</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"callByReference:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", j = "</span> <span class="o">&lt;&lt;</span> <span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>    
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">callByRef</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"callByReference:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", j = "</span> <span class="o">&lt;&lt;</span> <span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>  
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1513,7 +1513,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

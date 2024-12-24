@@ -25,7 +25,7 @@ find_if()函式
 template<typename T1, typename T2, typename T3>
 T1 findif(const T1 first, const T1 last, T2 callback, T3 search_val) {
   for (auto it = first; it != last; it++) {
-    if(callback(*it, search_val) == true) return it;
+  if(callback(*it, search_val) == true) return it;
   }
   return last;
 }
@@ -51,7 +51,7 @@ template<typename T>
 class Callback {
  public:
   bool operator()(const T& msg, const T& search_val) {
-    return msg == search_val;
+  return msg == search_val;
   }
 };
 {% endhighlight %}
@@ -79,13 +79,13 @@ template<typename T>
 class Callback {
  public:
   bool operator()(const T& msg, const T& search_val) {
-    return msg == search_val;
+  return msg == search_val;
   }
 };
 template<typename T1, typename T2, typename T3>
 T1 findif(const T1 first, const T1 last, T2 callback, T3 search_val) {
   for (auto it = first; it != last; it++) {
-    if(callback(*it, search_val) == true) return it;
+  if(callback(*it, search_val) == true) return it;
   }
   return last;
 }
@@ -118,13 +118,13 @@ class Callback {
   T search_val;
   Callback(const T& search_val):search_val(search_val) {}
   bool operator()(const T& msg) {
-    return msg == search_val;
+  return msg == search_val;
   }
 };
 template<typename T1, typename T2>
 T1 findif(const T1 first, const T1 last, T2 callback) {
   for (auto it = first; it != last; it++) {
-    if(callback(*it) == true) return it;
+  if(callback(*it) == true) return it;
   }
   return last;
 }

@@ -1257,24 +1257,24 @@
 #include</span> <span class="cpf">&lt;thread&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//每一秒印1次，這裡是執行10秒</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//停1秒鐘</span>
-    <span class="p">}</span>
+  <span class="c1">//每一秒印1次，這裡是執行10秒</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//停1秒鐘</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立執行緒t1</span>
-    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
-    <span class="c1">//建立執行緒t2</span>
-    <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
-    
-    <span class="c1">//每一秒印1次，這裡是執行5秒</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"秒"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立執行緒t1</span>
+  <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
+  <span class="c1">//建立執行緒t2</span>
+  <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
+  
+  <span class="c1">//每一秒印1次，這裡是執行5秒</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"秒"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1323,25 +1323,25 @@
 #include</span> <span class="cpf">&lt;thread&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//每一秒印1次，這裡是執行10秒</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//停1秒鐘</span>
-    <span class="p">}</span>
+  <span class="c1">//每一秒印1次，這裡是執行10秒</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//停1秒鐘</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立執行緒t1</span>
-    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
-    <span class="c1">//建立執行緒t2</span>
-    <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
-    
-    <span class="c1">//每一秒印1次，這裡是執行12秒</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">12</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"秒"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-    <span class="p">}</span>
-    
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立執行緒t1</span>
+  <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
+  <span class="c1">//建立執行緒t2</span>
+  <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
+  
+  <span class="c1">//每一秒印1次，這裡是執行12秒</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">12</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"秒"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+  
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1378,22 +1378,22 @@
 #include</span> <span class="cpf">&lt;thread&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//每一秒印1次，這裡是執行10秒</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//停1秒鐘</span>
-    <span class="p">}</span>
+  <span class="c1">//每一秒印1次，這裡是執行10秒</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//停1秒鐘</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立執行緒t1</span>
-    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
-    <span class="c1">//建立執行緒t2</span>
-    <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
-    <span class="c1">//執行緒t1被記憶體釋放</span>
-    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="c1">//執行緒t2被記憶體釋放</span>
-    <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立執行緒t1</span>
+  <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
+  <span class="c1">//建立執行緒t2</span>
+  <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
+  <span class="c1">//執行緒t1被記憶體釋放</span>
+  <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+  <span class="c1">//執行緒t2被記憶體釋放</span>
+  <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1417,17 +1417,17 @@
 12
 13
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立執行緒t1</span>
-    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
-    <span class="c1">//建立執行緒t2</span>
-    <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
-    <span class="c1">//分離執行緒</span>
-    <span class="n">t1</span><span class="p">.</span><span class="n">detach</span><span class="p">();</span>
-    <span class="c1">//分離執行緒</span>
-    <span class="n">t2</span><span class="p">.</span><span class="n">detach</span><span class="p">();</span>
-    <span class="c1">//main()函式等留12秒，等待執行緒(執行緒10秒)</span>
-    <span class="n">sleep</span><span class="p">(</span><span class="mi">12</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立執行緒t1</span>
+  <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
+  <span class="c1">//建立執行緒t2</span>
+  <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
+  <span class="c1">//分離執行緒</span>
+  <span class="n">t1</span><span class="p">.</span><span class="n">detach</span><span class="p">();</span>
+  <span class="c1">//分離執行緒</span>
+  <span class="n">t2</span><span class="p">.</span><span class="n">detach</span><span class="p">();</span>
+  <span class="c1">//main()函式等留12秒，等待執行緒(執行緒10秒)</span>
+  <span class="n">sleep</span><span class="p">(</span><span class="mi">12</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1622,7 +1622,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

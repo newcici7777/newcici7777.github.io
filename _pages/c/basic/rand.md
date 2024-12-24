@@ -12,11 +12,11 @@ rand() std函式庫，取得亂數，但只生成一次，每次產生的亂數�
 
 {% highlight c++ linenos %}
 int main() {
-    //產生10個亂數
-    for(int i = 0; i < 10; i++) {
-        cout << rand() << endl;
-    }
-    return 0;
+  //產生10個亂數
+  for (int i = 0; i < 10; i++) {
+    cout << rand() << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -41,12 +41,12 @@ srand()，產生亂數種子，根據種子不同，會產生不同結果。
 
 {% highlight c++ linenos %}
 int main() {
-    srand(1);
-    //產生10個亂數
-    for(int i = 0; i < 10; i++) {
-        cout << rand() << endl;
-    }
-    return 0;
+  srand(1);
+  //產生10個亂數
+  for (int i = 0; i < 10; i++) {
+    cout << rand() << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -65,12 +65,12 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    srand(2);
-    //產生10個亂數
-    for(int i = 0; i < 10; i++) {
-        cout << rand() << endl;
-    }
-    return 0;
+  srand(2);
+  //產生10個亂數
+  for (int i = 0; i < 10; i++) {
+    cout << rand() << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -94,13 +94,13 @@ time(0) std函式，取得從1970-01-01累積到現在的秒數，也就是現�
 
 {% highlight c++ linenos %}
 int main() {
-    srand(time(0));
-    cout << "time(0)=" << time(0) << endl;
-    //產生10個亂數
-    for(int i = 0; i < 10; i++) {
-        cout << rand() << endl;
-    }
-    return 0;
+  srand(time(0));
+  cout << "time(0)=" << time(0) << endl;
+  //產生10個亂數
+  for (int i = 0; i < 10; i++) {
+    cout << rand() << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -126,12 +126,12 @@ time(0)=1726015663
 
 {% highlight c++ linenos %}
 int main() {
-    srand(time(0));
-    //產生10個亂數
-    for(int i = 0; i < 10; i++) {
-        cout << rand() % 20 << endl;
-    }
-    return 0;
+  srand(time(0));
+  //產生10個亂數
+  for (int i = 0; i < 10; i++) {
+    cout << rand() % 20 << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -161,12 +161,12 @@ rand() % 20 + 50
 完整程式碼
 {% highlight c++ linenos %}
 int main() {
-    srand(time(0));
-    //產生10個亂數
-    for(int i = 0; i < 10; i++) {
-        cout << rand() % 20 + 50 << endl;
-    }
-    return 0;
+  srand(time(0));
+  //產生10個亂數
+  for (int i = 0; i < 10; i++) {
+    cout << rand() % 20 + 50 << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -190,14 +190,14 @@ rand()函式產生的亂數是不會重覆。
 
 {% highlight c++ linenos %}
 int main() {
-    srand(time(0));
-    //產生10個亂數
-    for(int i = 0; i < 10; i++) {
-        int val = rand();
-        cout << "rand = " << val;
-        cout << " , rand % 20 = " << val % 20 << endl;
-    }
-    return 0;
+  srand(time(0));
+  //產生10個亂數
+  for (int i = 0; i < 10; i++) {
+    int val = rand();
+    cout << "rand = " << val;
+    cout << " , rand % 20 = " << val % 20 << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 

@@ -1244,11 +1244,11 @@
 3
 4
 5
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
-    <span class="c1">//宣告參考</span>
-    <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span><span class="c1">//初始化原始變數，ref是i的別名</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="s">", ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
+  <span class="c1">//宣告參考</span>
+  <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span><span class="c1">//初始化原始變數，ref是i的別名</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="s">", ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1265,9 +1265,9 @@ ref的記憶體位址 = 0x7ff7bfeff468, ref = 10
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
-    <span class="c1">//宣告參考</span>
-    <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
+  <span class="c1">//宣告參考</span>
+  <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1285,15 +1285,15 @@ ref的記憶體位址 = 0x7ff7bfeff468, ref = 10
 7
 8
 9
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
-    <span class="c1">//宣告參考</span>
-    <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="s">", ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="n">ref</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="s">", ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
+  <span class="c1">//宣告參考</span>
+  <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="s">", ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  
+  <span class="n">ref</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="s">", ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1318,16 +1318,16 @@ ref的記憶體位址 = 0x7ff7bfeff468, ref = 30
 8
 9
 10
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
-    <span class="c1">//宣告參考</span>
-    <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="s">", ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref2</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref2的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref2</span> <span class="o">&lt;&lt;</span> <span class="s">", ref2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref3</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref3的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref3</span> <span class="o">&lt;&lt;</span> <span class="s">", ref3 = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
+  <span class="c1">//宣告參考</span>
+  <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="s">", ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  
+  <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref2</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref2的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref2</span> <span class="o">&lt;&lt;</span> <span class="s">", ref2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref3</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref3的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref3</span> <span class="o">&lt;&lt;</span> <span class="s">", ref3 = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1348,12 +1348,12 @@ ref3的記憶體位址 = 0x7ff7bfeff468, ref3 = 10
 4
 5
 6
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
-    <span class="c1">//宣告參考別名</span>
-    <span class="kt">int</span><span class="o">&amp;</span><span class="n">ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="o">&amp;</span><span class="n">ref2</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="o">&amp;</span> <span class="n">ref3</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-    <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref4</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
+  <span class="c1">//宣告參考別名</span>
+  <span class="kt">int</span><span class="o">&amp;</span><span class="n">ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="o">&amp;</span><span class="n">ref2</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="o">&amp;</span> <span class="n">ref3</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref4</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1365,9 +1365,9 @@ ref3的記憶體位址 = 0x7ff7bfeff468, ref3 = 10
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
-    <span class="c1">//宣告參考別名</span>
-    <span class="kt">double</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
+  <span class="c1">//宣告參考別名</span>
+  <span class="kt">double</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1387,24 +1387,24 @@ ref3的記憶體位址 = 0x7ff7bfeff468, ref3 = 10
 9
 10
 11
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
-    <span class="c1">//宣告參考</span>
-    <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="s">", ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="n">ref</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span> <span class="c1">//將j變數 指派給 ref別名</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"j的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="s">", j = "</span> <span class="o">&lt;&lt;</span> <span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="s">", i = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//原始變數</span>
+  <span class="c1">//宣告參考</span>
+  <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="s">", ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  
+  <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">ref</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span> <span class="c1">//將j變數 指派給 ref別名</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"j的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="s">", j = "</span> <span class="o">&lt;&lt;</span> <span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="s">", i = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
 <p>上方的程式碼</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    int j = 20;
-    ref = j; //將j變數的值 指派給 ref參考別名
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  int j = 20;
+  ref = j; //將j變數的值 指派給 ref參考別名
 </code></pre></div></div>
 
 <p>以上意思並非把原始變數設為j，實際上是變數i修改成20，ref是變數i的參考別名，就等同於變數i，所以上述程式碼可以看成<code class="language-plaintext highlighter-rouge">i = 20;</code></p>
@@ -1608,7 +1608,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

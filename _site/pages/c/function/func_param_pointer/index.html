@@ -1245,7 +1245,7 @@
 2
 3
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">param1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"param1="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">param1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"param1="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">param1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1282,18 +1282,18 @@ param1=10
 15
 </pre></td><td class="code"><pre><span class="c1">//函式的參數是指標，代表參數是位址</span>
 <span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">param1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//透過取值運算子*,取出位址存放的內容</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"param1="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">param1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//使用`*指標 = 修改內容`，修改指標的內容</span>
-    <span class="o">*</span><span class="n">param1</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="c1">//透過取值運算子*,取出位址存放的內容</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"param1="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">param1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//使用`*指標 = 修改內容`，修改指標的內容</span>
+  <span class="o">*</span><span class="n">param1</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">var1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"修改前 var1 ="</span> <span class="o">&lt;&lt;</span> <span class="n">var1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//使用取位址運算子&amp;，取出var1變數的記憶體開始位址，將位址作為引數Argument傳進函式fun1()</span>
-    <span class="n">func1</span><span class="p">(</span><span class="o">&amp;</span><span class="n">var1</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"修改後 var1 ="</span> <span class="o">&lt;&lt;</span> <span class="n">var1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">var1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"修改前 var1 ="</span> <span class="o">&lt;&lt;</span> <span class="n">var1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//使用取位址運算子&amp;，取出var1變數的記憶體開始位址，將位址作為引數Argument傳進函式fun1()</span>
+  <span class="n">func1</span><span class="p">(</span><span class="o">&amp;</span><span class="n">var1</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"修改後 var1 ="</span> <span class="o">&lt;&lt;</span> <span class="n">var1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1319,13 +1319,13 @@ param1=10
 8
 9
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">param1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"param1="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">param1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"param1="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">param1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">var1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">var1</span><span class="p">;</span>
-    <span class="n">func1</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">var1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">var1</span><span class="p">;</span>
+  <span class="n">func1</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1410,64 +1410,64 @@ param1=10
 <span class="c1">//宣告Student類別</span>
 <span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="c1">//Student建構式，將參數設給私有成員name, mathScore, engScore, historyScore</span>
-    <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">double</span> <span class="n">mathScore</span><span class="p">,</span> <span class="kt">double</span> <span class="n">engScore</span><span class="p">,</span> <span class="kt">double</span> <span class="n">historyScore</span><span class="p">)</span>
-    <span class="o">:</span><span class="n">name</span><span class="p">(</span><span class="n">name</span><span class="p">),</span><span class="n">mathScore</span><span class="p">(</span><span class="n">mathScore</span><span class="p">),</span><span class="n">engScore</span><span class="p">(</span><span class="n">engScore</span><span class="p">),</span><span class="n">historyScore</span><span class="p">(</span><span class="n">historyScore</span><span class="p">){}</span>
+  <span class="c1">//Student建構式，將參數設給私有成員name, mathScore, engScore, historyScore</span>
+  <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">double</span> <span class="n">mathScore</span><span class="p">,</span> <span class="kt">double</span> <span class="n">engScore</span><span class="p">,</span> <span class="kt">double</span> <span class="n">historyScore</span><span class="p">)</span>
+  <span class="o">:</span><span class="n">name</span><span class="p">(</span><span class="n">name</span><span class="p">),</span><span class="n">mathScore</span><span class="p">(</span><span class="n">mathScore</span><span class="p">),</span><span class="n">engScore</span><span class="p">(</span><span class="n">engScore</span><span class="p">),</span><span class="n">historyScore</span><span class="p">(</span><span class="n">historyScore</span><span class="p">){}</span>
 
-    <span class="c1">//取出name, mathScore, engScore, historyScore公有方法</span>
-    <span class="n">string</span> <span class="n">getName</span><span class="p">(){</span>
-        <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="kt">double</span> <span class="n">getMathScore</span><span class="p">(){</span>
-        <span class="k">return</span> <span class="n">mathScore</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="kt">double</span> <span class="n">getEngScore</span><span class="p">(){</span>
-        <span class="k">return</span> <span class="n">engScore</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="kt">double</span> <span class="n">getHistoryScore</span><span class="p">(){</span>
-        <span class="k">return</span> <span class="n">historyScore</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="c1">//取出name, mathScore, engScore, historyScore公有方法</span>
+  <span class="n">string</span> <span class="n">getName</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="kt">double</span> <span class="n">getMathScore</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">mathScore</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="kt">double</span> <span class="n">getEngScore</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">engScore</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="kt">double</span> <span class="n">getHistoryScore</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">historyScore</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="nl">private:</span>
-    <span class="c1">//私有成員屬性</span>
-    <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
-    <span class="kt">double</span> <span class="n">mathScore</span><span class="p">;</span>
-    <span class="kt">double</span> <span class="n">engScore</span><span class="p">;</span>
-    <span class="kt">double</span> <span class="n">historyScore</span><span class="p">;</span>
+  <span class="c1">//私有成員屬性</span>
+  <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+  <span class="kt">double</span> <span class="n">mathScore</span><span class="p">;</span>
+  <span class="kt">double</span> <span class="n">engScore</span><span class="p">;</span>
+  <span class="kt">double</span> <span class="n">historyScore</span><span class="p">;</span>
 <span class="p">};</span>
 
 <span class="c1">//宣告函式，參數為Student陣列，陣列大小，maxMax指標,engMax指標,historyMax指標</span>
 <span class="kt">void</span> <span class="n">getMax</span><span class="p">(</span><span class="n">Student</span> <span class="n">studentArr</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">arrSize</span><span class="p">,</span> <span class="kt">double</span><span class="o">*</span> <span class="n">mathMax</span><span class="p">,</span> <span class="kt">double</span><span class="o">*</span> <span class="n">engMax</span><span class="p">,</span> <span class="kt">double</span><span class="o">*</span> <span class="n">historyMax</span><span class="p">){</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arrSize</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//找出數學 英文 歷史最大的分數</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">studentArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getMathScore</span><span class="p">()</span> <span class="o">&gt;</span> <span class="o">*</span><span class="n">mathMax</span><span class="p">)</span>
-            <span class="o">*</span><span class="n">mathMax</span> <span class="o">=</span> <span class="n">studentArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getMathScore</span><span class="p">();</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">studentArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getEngScore</span><span class="p">()</span> <span class="o">&gt;</span> <span class="o">*</span><span class="n">engMax</span><span class="p">)</span>
-            <span class="o">*</span><span class="n">engMax</span> <span class="o">=</span> <span class="n">studentArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getEngScore</span><span class="p">();</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">studentArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getHistoryScore</span><span class="p">()</span> <span class="o">&gt;</span> <span class="o">*</span><span class="n">historyMax</span><span class="p">)</span>
-            <span class="o">*</span><span class="n">historyMax</span> <span class="o">=</span> <span class="n">studentArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getHistoryScore</span><span class="p">();</span>
-    <span class="p">}</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arrSize</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//找出數學 英文 歷史最大的分數</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">studentArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getMathScore</span><span class="p">()</span> <span class="o">&gt;</span> <span class="o">*</span><span class="n">mathMax</span><span class="p">)</span>
+      <span class="o">*</span><span class="n">mathMax</span> <span class="o">=</span> <span class="n">studentArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getMathScore</span><span class="p">();</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">studentArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getEngScore</span><span class="p">()</span> <span class="o">&gt;</span> <span class="o">*</span><span class="n">engMax</span><span class="p">)</span>
+      <span class="o">*</span><span class="n">engMax</span> <span class="o">=</span> <span class="n">studentArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getEngScore</span><span class="p">();</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">studentArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getHistoryScore</span><span class="p">()</span> <span class="o">&gt;</span> <span class="o">*</span><span class="n">historyMax</span><span class="p">)</span>
+      <span class="o">*</span><span class="n">historyMax</span> <span class="o">=</span> <span class="n">studentArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getHistoryScore</span><span class="p">();</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立3個學生物件，利用名字,數學英文歷史成績建立物件</span>
-    <span class="n">Student</span> <span class="n">studentArr</span><span class="p">[]</span> <span class="o">=</span>
-    <span class="p">{</span><span class="n">Student</span><span class="p">(</span><span class="s">"Mary"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span>
-     <span class="n">Student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">),</span>
-     <span class="n">Student</span><span class="p">(</span><span class="s">"Lisa"</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">10</span><span class="p">)};</span>
+  <span class="c1">//建立3個學生物件，利用名字,數學英文歷史成績建立物件</span>
+  <span class="n">Student</span> <span class="n">studentArr</span><span class="p">[]</span> <span class="o">=</span>
+  <span class="p">{</span><span class="n">Student</span><span class="p">(</span><span class="s">"Mary"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span>
+   <span class="n">Student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">),</span>
+   <span class="n">Student</span><span class="p">(</span><span class="s">"Lisa"</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">10</span><span class="p">)};</span>
 
-    <span class="c1">//宣告三個存最大數學 英文 歷史成績的指標</span>
-    <span class="kt">double</span><span class="o">*</span> <span class="n">mathMax</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">double</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-    <span class="kt">double</span><span class="o">*</span> <span class="n">engMax</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">double</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-    <span class="kt">double</span><span class="o">*</span> <span class="n">historyMax</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">double</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="c1">//宣告三個存最大數學 英文 歷史成績的指標</span>
+  <span class="kt">double</span><span class="o">*</span> <span class="n">mathMax</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">double</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="kt">double</span><span class="o">*</span> <span class="n">engMax</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">double</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="kt">double</span><span class="o">*</span> <span class="n">historyMax</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">double</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
 
-    <span class="c1">//將Student陣列，陣列大小，最大數學 英文 歷史成績的指標傳入getMax函式</span>
-    <span class="n">compare</span><span class="p">(</span><span class="n">studentArr</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">mathMax</span><span class="p">,</span> <span class="n">engMax</span><span class="p">,</span> <span class="n">historyMax</span><span class="p">);</span>
+  <span class="c1">//將Student陣列，陣列大小，最大數學 英文 歷史成績的指標傳入getMax函式</span>
+  <span class="n">compare</span><span class="p">(</span><span class="n">studentArr</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">mathMax</span><span class="p">,</span> <span class="n">engMax</span><span class="p">,</span> <span class="n">historyMax</span><span class="p">);</span>
 
-    <span class="c1">//印出各科最大分數</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"mathMax = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">mathMax</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"mathEng = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">engMax</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"mathHistory = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">historyMax</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//印出各科最大分數</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"mathMax = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">mathMax</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"mathEng = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">engMax</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"mathHistory = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">historyMax</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1672,7 +1672,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

@@ -9,52 +9,52 @@ nextPage:
 {% highlight c++ linenos %}
 class Stack{
 private:
-    int *items; //陣列指標
-    int stacksize;//stack大小
-    int top;//目前stack的數量(stack 頂端)
+  int *items; //陣列指標
+  int stacksize;//stack大小
+  int top;//目前stack的數量(stack 頂端)
 public:
-    //建構式，初始化成員stacksize與top
-    Stack(int size):stacksize(size),top(0) {
-        //建立int陣列指標
-        items = new int[stacksize];
+  //建構式，初始化成員stacksize與top
+  Stack(int size):stacksize(size),top(0) {
+    //建立int陣列指標
+    items = new int[stacksize];
+  }
+  ~Stack() {
+    delete [] items;//刪除陣列指標
+    items = nullptr;//指向null
+  }
+  /**
+   判斷是否為空
+   */
+  bool isEmpty() const {
+    return top == 0;
+  }
+  /**
+   判斷是否已滿
+   */
+  bool isfull() {
+    return top == stacksize;
+  }
+  /**
+   push stack
+   */
+  bool push(const int& item) {
+    //如果stack數量 小於 stacksize
+    if(top < stacksize) {
+      items[top++] = item;//把item加入
+      return true;
     }
-    ~Stack() {
-        delete [] items;//刪除陣列指標
-        items = nullptr;//指向null
+    return false;
+  }
+  /**
+   pop stack
+   */
+  bool pop(int& item) {
+    if(top > 0) {
+      item = items[--top];
+      return true;
     }
-    /**
-     判斷是否為空
-     */
-    bool isEmpty() const {
-        return top == 0;
-    }
-    /**
-     判斷是否已滿
-     */
-    bool isfull() {
-        return top == stacksize;
-    }
-    /**
-     push stack
-     */
-    bool push(const int& item) {
-        //如果stack數量 小於 stacksize
-        if(top < stacksize) {
-            items[top++] = item;//把item加入
-            return true;
-        }
-        return false;
-    }
-    /**
-     pop stack
-     */
-    bool pop(int& item) {
-        if(top > 0) {
-            item = items[--top];
-            return true;
-        }
-        return false;
-    }
+    return false;
+  }
 };
 {% endhighlight %}
 第3行，私有成員屬性items，資料型態為int指標，指向int陣列的第0筆位址。  
@@ -90,18 +90,18 @@ public:
 ### 使用Stack
 {% highlight c++ linenos %}
 int main() {
-    Stack myStack(5);
-    myStack.push(1);
-    myStack.push(2);
-    myStack.push(3);
-    myStack.push(4);
-    myStack.push(5);
-    int item;
-    while(myStack.isEmpty() == false) {
-        myStack.pop(item);
-        cout << "item = " << item << endl;
-    }
-        return 0;
+  Stack myStack(5);
+  myStack.push(1);
+  myStack.push(2);
+  myStack.push(3);
+  myStack.push(4);
+  myStack.push(5);
+  int item;
+  while(myStack.isEmpty() == false) {
+    myStack.pop(item);
+    cout << "item = " << item << endl;
+  }
+    return 0;
 }
 {% endhighlight %}
 
@@ -132,67 +132,67 @@ item = 1
 <span class="markline">typedef int DataType;</span>
 class Stack{
 private:
-    <span class="markline">DataType</span> *items; //陣列指標
-    int stacksize;//stack大小
-    int top;//目前stack的數量(stack 頂端)
+  <span class="markline">DataType</span> *items; //陣列指標
+  int stacksize;//stack大小
+  int top;//目前stack的數量(stack 頂端)
 public:
-    //建構式，初始化成員stacksize與top
-    Stack(int size):stacksize(size),top(0) {
-        //建立int陣列指標
-        items = new <span class="markline">DataType</span>[stacksize];
+  //建構式，初始化成員stacksize與top
+  Stack(int size):stacksize(size),top(0) {
+    //建立int陣列指標
+    items = new <span class="markline">DataType</span>[stacksize];
+  }
+  ~Stack() {
+    delete [] items;//刪除陣列指標
+    items = nullptr;//指向null
+  }
+  /**
+   判斷是否為空
+   */
+  bool isEmpty() const {
+    return top == 0;
+  }
+  /**
+   判斷是否已滿
+   */
+  bool isfull() {
+    return top == stacksize;
+  }
+  /**
+   push stack
+   */
+  bool push(const <span class="markline">DataType&</span> item) {
+    //如果stack數量 小於 stacksize
+    if(top < stacksize) {
+      items[top++] = item;//把item加入
+      return true;
     }
-    ~Stack() {
-        delete [] items;//刪除陣列指標
-        items = nullptr;//指向null
+    return false;
+  }
+  /**
+   pop stack
+   */
+  bool pop(<span class="markline">DataType&</span> item) {
+    if(top > 0) {
+      item = items[--top];
+      return true;
     }
-    /**
-     判斷是否為空
-     */
-    bool isEmpty() const {
-        return top == 0;
-    }
-    /**
-     判斷是否已滿
-     */
-    bool isfull() {
-        return top == stacksize;
-    }
-    /**
-     push stack
-     */
-    bool push(const <span class="markline">DataType&</span> item) {
-        //如果stack數量 小於 stacksize
-        if(top < stacksize) {
-            items[top++] = item;//把item加入
-            return true;
-        }
-        return false;
-    }
-    /**
-     pop stack
-     */
-    bool pop(<span class="markline">DataType&</span> item) {
-        if(top > 0) {
-            item = items[--top];
-            return true;
-        }
-        return false;
-    }
+    return false;
+  }
 };
 int main() {
-    Stack myStack(5);
-    myStack.push(1);
-    myStack.push(2);
-    myStack.push(3);
-    myStack.push(4);
-    myStack.push(5);
-    <span class="markline">DataType</span> item;
-    while(myStack.isEmpty() == false) {
-        myStack.pop(item);
-        cout << "item = " << item << endl;
-    }
-    return 0;
-}    
+  Stack myStack(5);
+  myStack.push(1);
+  myStack.push(2);
+  myStack.push(3);
+  myStack.push(4);
+  myStack.push(5);
+  <span class="markline">DataType</span> item;
+  while(myStack.isEmpty() == false) {
+    myStack.pop(item);
+    cout << "item = " << item << endl;
+  }
+  return 0;
+}  
 </pre>
 
 ## Stack 模板實作
@@ -203,65 +203,65 @@ int main() {
 <span class="markline">template &lt;class DataType&gt;</span>
 class Stack{
 private:
-    DataType *items; //陣列指標
-    int stacksize;//stack大小
-    int top;//目前stack的數量(stack 頂端)
+  DataType *items; //陣列指標
+  int stacksize;//stack大小
+  int top;//目前stack的數量(stack 頂端)
 public:
-    //建構式，初始化成員stacksize與top
-    Stack(int size):stacksize(size),top(0) {
-        //建立int陣列指標
-        items = new DataType[stacksize];
+  //建構式，初始化成員stacksize與top
+  Stack(int size):stacksize(size),top(0) {
+    //建立int陣列指標
+    items = new DataType[stacksize];
+  }
+  ~Stack() {
+    delete [] items;//刪除陣列指標
+    items = nullptr;//指向null
+  }
+  /**
+   判斷是否為空
+   */
+  bool isEmpty() const {
+    return top == 0;
+  }
+  /**
+   判斷是否已滿
+   */
+  bool isfull() {
+    return top == stacksize;
+  }
+  /**
+   push stack
+   */
+  bool push(const DataType& item) {
+    //如果stack數量 小於 stacksize
+    if(top < stacksize) {
+      items[top++] = item;//把item加入
+      return true;
     }
-    ~Stack() {
-        delete [] items;//刪除陣列指標
-        items = nullptr;//指向null
+    return false;
+  }
+  /**
+   pop stack
+   */
+  bool pop(DataType& item) {
+    if(top > 0) {
+      item = items[--top];
+      return true;
     }
-    /**
-     判斷是否為空
-     */
-    bool isEmpty() const {
-        return top == 0;
-    }
-    /**
-     判斷是否已滿
-     */
-    bool isfull() {
-        return top == stacksize;
-    }
-    /**
-     push stack
-     */
-    bool push(const DataType& item) {
-        //如果stack數量 小於 stacksize
-        if(top < stacksize) {
-            items[top++] = item;//把item加入
-            return true;
-        }
-        return false;
-    }
-    /**
-     pop stack
-     */
-    bool pop(DataType& item) {
-        if(top > 0) {
-            item = items[--top];
-            return true;
-        }
-        return false;
-    }
+    return false;
+  }
 };
 int main() {
-    Stack<span class="markline">&lt;int&gt;</span> myStack(5);
-    myStack.push(1);
-    myStack.push(2);
-    myStack.push(3);
-    myStack.push(4);
-    myStack.push(5);
-    <span class="markline">int</span> item;
-    while(myStack.isEmpty() == false) {
-        myStack.pop(item);
-        cout << "item = " << item << endl;
-    }
-    return 0;
-}    
+  Stack<span class="markline">&lt;int&gt;</span> myStack(5);
+  myStack.push(1);
+  myStack.push(2);
+  myStack.push(3);
+  myStack.push(4);
+  myStack.push(5);
+  <span class="markline">int</span> item;
+  while(myStack.isEmpty() == false) {
+    myStack.pop(item);
+    cout << "item = " << item << endl;
+  }
+  return 0;
+}  
 </pre>

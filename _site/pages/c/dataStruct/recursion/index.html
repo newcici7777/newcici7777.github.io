@@ -1247,14 +1247,14 @@
 9
 10
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">story</span><span class="p">(</span><span class="kt">int</span> <span class="n">count</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"第"</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="s">"次:"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">story</span><span class="p">(</span><span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"第"</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="s">"次:"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">story</span><span class="p">(</span><span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">story</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">story</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1332,10 +1332,10 @@
 	<span class="k">return</span> <span class="n">func1</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">bullet</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">total</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">total</span> <span class="o">=</span> <span class="n">func1</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">total</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>    
+  <span class="kt">int</span> <span class="n">total</span> <span class="o">=</span> <span class="n">func1</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">total</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>  
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1389,9 +1389,9 @@
 4
 5
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="kt">int</span> <span class="n">bullet</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="c1">//自己的子彈數 + 後面的人的子彈數</span>
-    <span class="k">return</span> <span class="n">bullet</span> <span class="o">+</span> <span class="n">func2</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">bullet</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//自己的子彈數 + 後面的人的子彈數</span>
+  <span class="k">return</span> <span class="n">bullet</span> <span class="o">+</span> <span class="n">func2</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">bullet</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1421,19 +1421,19 @@
 16
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Story</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="kt">int</span> <span class="n">times</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="kt">void</span> <span class="n">tell</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">times</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"第"</span> <span class="o">&lt;&lt;</span> <span class="n">times</span> <span class="o">&lt;&lt;</span> <span class="s">"次:"</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">times</span><span class="o">++</span><span class="p">;</span>
-        <span class="n">tell</span><span class="p">();</span>
-    <span class="p">}</span>
+  <span class="kt">int</span> <span class="n">times</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">void</span> <span class="n">tell</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">times</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"第"</span> <span class="o">&lt;&lt;</span> <span class="n">times</span> <span class="o">&lt;&lt;</span> <span class="s">"次:"</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">times</span><span class="o">++</span><span class="p">;</span>
+    <span class="n">tell</span><span class="p">();</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Story</span> <span class="n">story</span><span class="p">;</span>
-    <span class="n">story</span><span class="p">.</span><span class="n">tell</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Story</span> <span class="n">story</span><span class="p">;</span>
+  <span class="n">story</span><span class="p">.</span><span class="n">tell</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1640,7 +1640,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

@@ -11,41 +11,41 @@ keywords: c++, 記憶體佈局
 
 <table class="custom-table">
   <thead>
-    <tr>
-      <th align="center" width="10%">開始與結束</th>
-      <th align="left" width="10%">位址高低</th>
-      <th align="left">位址</th>
-    </tr>  
+  <tr>
+    <th align="center" width="10%">開始與結束</th>
+    <th align="left" width="10%">位址高低</th>
+    <th align="left">位址</th>
+  </tr>  
   </thead>
   <tbody>
-    <tr>
-        <td>結束</td>
-        <td align="center" rowspan="4" width="5%" style="vertical-align: middle;">
-          高
-        </td>
-        <td>0xFFFFFFFF</td>
-    </tr>
-    <tr><td></td><td>0xFFFFFFFE</td></tr>
-    <tr><td></td><td>0xFFFFFFFD</td></tr>
-    <tr><td></td><td>0xFFFFFFFC</td></tr>
-    <tr>
-      <td></td>
-      <td align="center" rowspan="4" width="5%" style="vertical-align: middle;">
-          <span style="font-size: 20pt">&#8593;</span>
-      </td>
-      <td>......</td></tr>
-    <tr><td></td><td>......</td></tr>
-    <tr><td></td><td>......</td></tr>
-    <tr><td></td><td>......</td></tr>
-    <tr>
-      <td></td>
-      <td align="center" rowspan="4" width="5%" style="vertical-align: middle;">
-          低
-      </td>
-      <td>0x00000004</td></tr>
-    <tr><td></td><td>0x00000002</td></tr>
-    <tr><td></td><td>0x00000001</td></tr>
-    <tr><td>開始</td><td>0x00000000</td></tr>
+  <tr>
+    <td>結束</td>
+    <td align="center" rowspan="4" width="5%" style="vertical-align: middle;">
+      高
+    </td>
+    <td>0xFFFFFFFF</td>
+  </tr>
+  <tr><td></td><td>0xFFFFFFFE</td></tr>
+  <tr><td></td><td>0xFFFFFFFD</td></tr>
+  <tr><td></td><td>0xFFFFFFFC</td></tr>
+  <tr>
+    <td></td>
+    <td align="center" rowspan="4" width="5%" style="vertical-align: middle;">
+      <span style="font-size: 20pt">&#8593;</span>
+    </td>
+    <td>......</td></tr>
+  <tr><td></td><td>......</td></tr>
+  <tr><td></td><td>......</td></tr>
+  <tr><td></td><td>......</td></tr>
+  <tr>
+    <td></td>
+    <td align="center" rowspan="4" width="5%" style="vertical-align: middle;">
+      低
+    </td>
+    <td>0x00000004</td></tr>
+  <tr><td></td><td>0x00000002</td></tr>
+  <tr><td></td><td>0x00000001</td></tr>
+  <tr><td>開始</td><td>0x00000000</td></tr>
   </tbody>
 </table>
 
@@ -55,55 +55,55 @@ keywords: c++, 記憶體佈局
 
 <table class="custom-table">
   <thead>
-    <tr>
-      <th align="center" width="5%">位址高低</th>
-      <th align="left" width="30%">記憶體區塊</th>
-      <th align="left" width="5%">位址成長方向</th>
-      <th align="left">儲存項目</th>
-    </tr>    
+  <tr>
+    <th align="center" width="5%">位址高低</th>
+    <th align="left" width="30%">記憶體區塊</th>
+    <th align="left" width="5%">位址成長方向</th>
+    <th align="left">儲存項目</th>
+  </tr>  
   </thead>
   <tbody>
-    <tr>
-      <td>高</td>
-      <td>Kernel</td>
-      <td></td>
-      <td>作業系統核心</td>
-    </tr>
-    <tr>
-      <td rowspan="5" style="vertical-align: middle;">
-          <span style="font-size: 10pt">&#8593;</span>
-      </td>
-      <td>Stack</td>
-      <td>&#8595;</td>
-      <td>區域變數</td>
-    </tr>
-    <tr>
-      <td>尚未使用區域</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Heap</td>
-      <td>&#8593;</td>
-      <td>動態配置記憶體</td>
-    </tr>
-    <tr>
-      <td>bss segment</td>
-      <td></td>
-      <td>未初始化全域變數, 靜態變數</td>
-    </tr>
-    <tr>
-      <td>data segment</td>
-      <td></td>
-      <td>已初始化全域變數, 靜態變數</td>
-    </tr>
-    <tr>
-      <td>低</td>    
-      <td>code segment</td>
-      <td></td>
-      <td>常數與程式執行檔</td>
-    </tr>
-  </tbody>                
+  <tr>
+    <td>高</td>
+    <td>Kernel</td>
+    <td></td>
+    <td>作業系統核心</td>
+  </tr>
+  <tr>
+    <td rowspan="5" style="vertical-align: middle;">
+      <span style="font-size: 10pt">&#8593;</span>
+    </td>
+    <td>Stack</td>
+    <td>&#8595;</td>
+    <td>區域變數</td>
+  </tr>
+  <tr>
+    <td>尚未使用區域</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Heap</td>
+    <td>&#8593;</td>
+    <td>動態配置記憶體</td>
+  </tr>
+  <tr>
+    <td>bss segment</td>
+    <td></td>
+    <td>未初始化全域變數, 靜態變數</td>
+  </tr>
+  <tr>
+    <td>data segment</td>
+    <td></td>
+    <td>已初始化全域變數, 靜態變數</td>
+  </tr>
+  <tr>
+    <td>低</td>  
+    <td>code segment</td>
+    <td></td>
+    <td>常數與程式執行檔</td>
+  </tr>
+  </tbody>        
 </table>
 
 #### 作業系統核心
@@ -135,16 +135,16 @@ keywords: c++, 記憶體佈局
 {% highlight c++ linenos %}
 #include <stdio.h>
 const int global_x = 1;  // 儲存於 code segment(常數)
-int global_y = 1;        // 儲存於 data segment(已初始化全域變數）
-int global_z;            // 儲存於 bss(未初始全域變數)
+int global_y = 1;    // 儲存於 data segment(已初始化全域變數）
+int global_z;      // 儲存於 bss(未初始全域變數)
 int fun1(int param1) {	 // 儲存於 stack (函式參數)
 	return param1; // 儲存於 stack (函式傳回值)
 }
 int main() {
   const static int x = 1; // 儲存於 code segment(常數)
-  static int y = 1;       // 儲存於 data segment(已初始化靜態變數）
-  static int z;           // 儲存於 bss(未初始靜態變數)
-  int w = 1;              // 儲存於 stack (區域變數)
+  static int y = 1;     // 儲存於 data segment(已初始化靜態變數）
+  static int z;       // 儲存於 bss(未初始靜態變數)
+  int w = 1;        // 儲存於 stack (區域變數)
   fun1(w);
 
   // 儲存於 heap (動態分配指標)
@@ -168,12 +168,12 @@ int main() {
 
 {% highlight c++ linenos %}
 void funcMemoryLocation() {
-    int var1 = 10;
-    int var2 = 20;
-    int var3 = 30;
-    cout << "va1 = " << (long long)&var1 << endl;
-    cout << "va2 = " << (long long)&var2 << endl;
-    cout << "va3 = " << (long long)&var3 << endl;
+  int var1 = 10;
+  int var2 = 20;
+  int var3 = 30;
+  cout << "va1 = " << (long long)&var1 << endl;
+  cout << "va2 = " << (long long)&var2 << endl;
+  cout << "va3 = " << (long long)&var3 << endl;
 }
 {% endhighlight %}
 ```
@@ -192,19 +192,19 @@ va3 = 140702053822436
 以下程式碼動態分配建立三個變數，並觀察三個變數的記憶體位址是由小至大增長。證明動態分配記憶體位址向上成長。
 {% highlight c++ linenos %}
 int main() {
-    int* p1 = new int(10);
-    int* p2 = new int(20);
-    int* p3 = new int(30);
-    cout << "p1 address = " << (long long)p1 << endl;
-    cout << "p2 address = " << (long long)p2 << endl;
-    cout << "p3 address = " << (long long)p3 << endl;
-    delete p1;
-    delete p2;
-    delete p3;
-    p1 = nullptr;
-    p2 = nullptr;
-    p3 = nullptr;
-    return 0;
+  int* p1 = new int(10);
+  int* p2 = new int(20);
+  int* p3 = new int(30);
+  cout << "p1 address = " << (long long)p1 << endl;
+  cout << "p2 address = " << (long long)p2 << endl;
+  cout << "p3 address = " << (long long)p3 << endl;
+  delete p1;
+  delete p2;
+  delete p3;
+  p1 = nullptr;
+  p2 = nullptr;
+  p3 = nullptr;
+  return 0;
 }
 {% endhighlight %}
 ```

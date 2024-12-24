@@ -28,12 +28,12 @@ Prerequisites:
 參數3 要尋找的值
  */
 int* _find(int* arr, int n, const int& val) {
-    for(int i = 0; i < n; i++) {
-        //若找到與val相同的值，返回元素的記憶體位址
-        if(arr[i] == val) return &arr[i];
-    }
-    //找不到就返回null
-    return nullptr;
+  for(int i = 0; i < n; i++) {
+    //若找到與val相同的值，返回元素的記憶體位址
+    if(arr[i] == val) return &arr[i];
+  }
+  //找不到就返回null
+  return nullptr;
 }
 {% endhighlight %}
 
@@ -46,12 +46,12 @@ int* _find(int* arr, int n, const int& val) {
 參數3 要尋找的值
  */
 int* _find(int* begin, int* end, const int& val) {
-    for(int* iter = begin; iter != end; iter++) {
-        //若找到與val相同的值，返回元素的記憶體位址
-        if(*iter == val) return iter;
-    }
-    //找不到就返回null
-    return nullptr;
+  for(int* iter = begin; iter != end; iter++) {
+    //若找到與val相同的值，返回元素的記憶體位址
+    if(*iter == val) return iter;
+  }
+  //找不到就返回null
+  return nullptr;
 }
 {% endhighlight %}
 
@@ -59,8 +59,8 @@ int* _find(int* begin, int* end, const int& val) {
 
 {% highlight c++ linenos %}
 struct Node {
-    int item;
-    Node* next;
+  int item;
+  Node* next;
 };
 /**
 參數1 開始位址
@@ -68,12 +68,12 @@ struct Node {
 參數3 要尋找的值
  */
 Node* _find(Node* head, Node* end, const Node& val) {
-    for(Node* iter = head; iter != end; iter = iter->next) {
-        //若找到與val相同的值，返回元素的記憶體位址
-        if(iter->item == val.item) return iter;
-    }
-    //找不到就返回null
-    return nullptr;
+  for(Node* iter = head; iter != end; iter = iter->next) {
+    //若找到與val相同的值，返回元素的記憶體位址
+    if(iter->item == val.item) return iter;
+  }
+  //找不到就返回null
+  return nullptr;
 }
 {% endhighlight %}
 
@@ -86,11 +86,11 @@ C++的容器(vector,list,string...)都有iterator，iterator包含begin與end，
 {% highlight c++ linenos %}
 template<typename T1,typename T2>
 T1 _find(T1 begin, T1 end, const T2 &val) {
-    for(T1 iter = begin; iter != end; iter ++) {
-        if(*iter == val) return iter;
-    }
-    //注意!!如果找不到就返回end位址
-    return end;
+  for(T1 iter = begin; iter != end; iter ++) {
+    if(*iter == val) return iter;
+  }
+  //注意!!如果找不到就返回end位址
+  return end;
 }
 {% endhighlight %}
 
@@ -105,19 +105,19 @@ vector資料結構是陣列。
 using namespace std;
 template<typename T1,typename T2>
 T1 _find(T1 begin, T1 end, const T2 &val) {
-    for(T1 iter = begin; iter != end; iter ++) {
-        if(*iter == val) return iter;
-    }
-    return end;
+  for(T1 iter = begin; iter != end; iter ++) {
+    if(*iter == val) return iter;
+  }
+  return end;
 }
 int main() {
-    vector<int> v = {1, 2, 3, 4, 5};
-    vector<int>::iterator it1 = _find(v.begin(), v.end(), 4);
-    if (it1 != v.end())
-        cout << "找到" << *it1 << endl;
-    else
-        cout << "找不到" << endl;
-    return 0;
+  vector<int> v = {1, 2, 3, 4, 5};
+  vector<int>::iterator it1 = _find(v.begin(), v.end(), 4);
+  if (it1 != v.end())
+    cout << "找到" << *it1 << endl;
+  else
+    cout << "找不到" << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -134,13 +134,13 @@ list的資料結構是鏈結串列。
 ```
 {% highlight c++ linenos %}
 int main() {
-    list<int> list1 = {1, 2, 3, 4, 5};
-    list<int>::iterator it1 = _find(list1.begin(), list1.end(), 4);
-    if (it1 != list1.end())
-        cout << "找到" << *it1 << endl;
-    else
-        cout << "找不到" << endl;
-    return 0;
+  list<int> list1 = {1, 2, 3, 4, 5};
+  list<int>::iterator it1 = _find(list1.begin(), list1.end(), 4);
+  if (it1 != list1.end())
+    cout << "找到" << *it1 << endl;
+  else
+    cout << "找不到" << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -205,7 +205,7 @@ int main() {
   *it = 8;
 
   for (vector<int>::const_iterator it = v.begin(); it != v.end(); it++) {
-    cout << *it << ", ";
+  cout << *it << ", ";
   }
   return 0;
 }
@@ -225,7 +225,7 @@ const_iterator cbegin();
 原本的程式碼
 {% highlight c++ linenos %}
   for (vector<int>::const_iterator it = v.cbegin(); it != v.cend(); it++) {
-    cout << *it << ", ";
+  cout << *it << ", ";
   }
   cout << endl;
 {% endhighlight %}
@@ -233,7 +233,7 @@ const_iterator cbegin();
 類型簡寫成auto
 {% highlight c++ linenos %}
   for (auto it = v.cbegin(); it != v.cend(); it++) {
-    cout << *it << ", ";
+  cout << *it << ", ";
   }
   cout << endl;
 {% endhighlight %}
@@ -339,13 +339,13 @@ int main() {
   //正向疊代器
   cout << "正向 : " << endl;
   for (auto it = v.cbegin(); it != v.end(); it++) {
-    cout << *it << ", ";
+  cout << *it << ", ";
   }
   cout << endl;
   //反向疊代器
   cout << "反向 : " << endl;
   for (auto it = v.crbegin(); it != v.crend(); it++) {
-    cout << *it << ", ";
+  cout << *it << ", ";
   }
   cout << endl;
   return 0;
@@ -382,7 +382,7 @@ int main() {
   vector<int> v2(v1.cbegin() + 2, v1.cend() - 3);
   //遍歷v2容器所有元素
   for (auto it = v2.cbegin(); it != v2.end(); it++) {
-    cout << *it << ", ";
+  cout << *it << ", ";
   }
   cout << endl;
   return 0;
@@ -409,7 +409,7 @@ int main() {
   v2.assign(v1.cbegin() + 2, v1.cend() - 3);
   //遍歷v2容器所有元素
   for (auto it = v2.cbegin(); it != v2.end(); it++) {
-    cout << *it << ", ";
+  cout << *it << ", ";
   }
   cout << endl;
   return 0;
@@ -437,7 +437,7 @@ int main() {
   auto iter = v1.insert(v1.begin() + 2, 12);
   cout << "插入的元素是:" << *iter << endl;
   for (auto it = v1.cbegin(); it != v1.cend(); it++) {
-    cout << *it << " ";
+  cout << *it << " ";
   }
   cout << endl;
   return 0;
@@ -466,7 +466,7 @@ int main() {
   auto iter = v1.insert(v1.begin() + 2, v2.begin() + 1, v2.end() - 3);
   cout << "第一個插入的元素是:" << *iter << endl;
   for (auto it = v1.cbegin(); it != v1.cend(); it++) {
-    cout << *it << " ";
+  cout << *it << " ";
   }
   cout << endl;
   return 0;
@@ -503,8 +503,8 @@ using namespace std;
 int main() {
   vector<int> v1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   for (vector<int>::const_iterator it = v1.begin(); it != v1.end(); it++) {
-    cout << *it << " ";
-    v1.erase(it);
+  cout << *it << " ";
+  v1.erase(it);
   }
   return 0;
 }
@@ -522,8 +522,8 @@ int main() {
 int main() {
   vector<int> v1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   for (vector<int>::const_iterator it = v1.begin(); it != v1.end(); ) {
-    cout << *it << " ";
-    it = v1.erase(it);
+  cout << *it << " ";
+  it = v1.erase(it);
   }
   return 0;
 }

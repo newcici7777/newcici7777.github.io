@@ -1250,25 +1250,25 @@
 22
 </pre></td><td class="code"><pre><span class="c1">//參數2因為是常數字串，所以型態為const char*</span>
 <span class="kt">char</span><span class="o">*</span> <span class="nf">myStrCpy</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//i為dest陣列的索引</span>
-    <span class="c1">//j為src陣列的索引</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="c1">// 如果來源字串不為0就進入迴圈</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">src</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="p">{</span>
-        <span class="c1">//將src[j]的值給dest[i]，然後i++,j++</span>
-        <span class="n">dest</span><span class="p">[</span><span class="n">i</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="n">src</span><span class="p">[</span><span class="n">j</span><span class="o">++</span><span class="p">];</span>
-    <span class="p">}</span>
-    <span class="c1">//將dest結尾放上空字元</span>
-    <span class="n">dest</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+  <span class="c1">//i為dest陣列的索引</span>
+  <span class="c1">//j為src陣列的索引</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">// 如果來源字串不為0就進入迴圈</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">src</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="p">{</span>
+    <span class="c1">//將src[j]的值給dest[i]，然後i++,j++</span>
+    <span class="n">dest</span><span class="p">[</span><span class="n">i</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="n">src</span><span class="p">[</span><span class="n">j</span><span class="o">++</span><span class="p">];</span>
+  <span class="p">}</span>
+  <span class="c1">//將dest結尾放上空字元</span>
+  <span class="n">dest</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
-    <span class="c1">//清空陣列記憶體中的值</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
-    <span class="n">myStrCpy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+  <span class="c1">//清空陣列記憶體中的值</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
+  <span class="n">myStrCpy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1300,22 +1300,22 @@
 19
 </pre></td><td class="code"><pre><span class="c1">//參數2因為是常數字串，所以型態為const char*</span>
 <span class="kt">char</span><span class="o">*</span> <span class="nf">myStrCpy</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//若src的值不為空就進入迴圈</span>
-    <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">src</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//將src的值指派給dest，接著指標往下個位址移動</span>
-        <span class="o">*</span><span class="n">dest</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">src</span><span class="o">++</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//將dest的值放上空字元</span>
-    <span class="o">*</span><span class="n">dest</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+  <span class="c1">//若src的值不為空就進入迴圈</span>
+  <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">src</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//將src的值指派給dest，接著指標往下個位址移動</span>
+    <span class="o">*</span><span class="n">dest</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">src</span><span class="o">++</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//將dest的值放上空字元</span>
+  <span class="o">*</span><span class="n">dest</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
-    <span class="c1">//清空陣列記憶體中的值</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
-    <span class="n">myStrCpy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+  <span class="c1">//清空陣列記憶體中的值</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
+  <span class="n">myStrCpy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1345,16 +1345,16 @@
 13
 </pre></td><td class="code"><pre><span class="c1">//參數2因為是常數字串，所以型態為const char*</span>
 <span class="kt">char</span><span class="o">*</span> <span class="nf">myStrCpy</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">src</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+  <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">src</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
-    <span class="c1">//清空陣列記憶體中的值</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
-    <span class="n">myStrCpy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+  <span class="c1">//清空陣列記憶體中的值</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
+  <span class="n">myStrCpy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1382,17 +1382,17 @@
 14
 </pre></td><td class="code"><pre><span class="c1">//參數2因為是常數字串，所以型態為const char*</span>
 <span class="kt">char</span><span class="o">*</span> <span class="nf">myStrnCpy</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">,</span><span class="k">const</span> <span class="kt">size_t</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//增加結尾符號</span>
-    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+  <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+  <span class="o">*</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//增加結尾符號</span>
+  <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
-    <span class="c1">//清空陣列記憶體中的值</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
-    <span class="n">myStrnCpy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="s">"Bill"</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+  <span class="c1">//清空陣列記憶體中的值</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
+  <span class="n">myStrnCpy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="s">"Bill"</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1587,7 +1587,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

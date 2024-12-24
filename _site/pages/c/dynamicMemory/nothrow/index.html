@@ -1238,15 +1238,15 @@
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="o">*</span><span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="kt">int</span><span class="p">[</span><span class="mi">10000000000000001</span><span class="p">];</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">arr</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">){</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體配置失敗"</span><span class="p">;</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="n">arr</span><span class="p">[</span><span class="mi">10000000000000001</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-        <span class="k">delete</span><span class="p">[]</span> <span class="n">arr</span><span class="p">;</span>
-        <span class="n">arr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="o">*</span><span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="kt">int</span><span class="p">[</span><span class="mi">10000000000000001</span><span class="p">];</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">arr</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">){</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體配置失敗"</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="n">arr</span><span class="p">[</span><span class="mi">10000000000000001</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="k">delete</span><span class="p">[]</span> <span class="n">arr</span><span class="p">;</span>
+  <span class="n">arr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1444,7 +1444,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

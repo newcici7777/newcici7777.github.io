@@ -18,11 +18,11 @@ const參考可以放左值(l-value)，也可以放右值(r-value)，也可以放
 
 {% highlight c++ linenos %}
 int main() {
-    // i 是l-value
-    int i = 100; // 100 is r-value
-    const int& ref_i = i;
-    cout << "ref_i = " << ref_i << endl;
-    return 0;
+  // i 是l-value
+  int i = 100; // 100 is r-value
+  const int& ref_i = i;
+  cout << "ref_i = " << ref_i << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -34,9 +34,9 @@ ref_i = 100
 
 {% highlight c++ linenos %}
 int main() {
-    const int& ref_r = 100; // 100 is r-value
-    cout << "ref_r = " << ref_i << endl;
-    return 0;
+  const int& ref_r = 100; // 100 is r-value
+  cout << "ref_r = " << ref_i << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -47,10 +47,10 @@ ref_r = 100
 
 {% highlight c++ linenos %}
 int main() {
-    int&& r = 100;
-    const int& ref_r = r;
-    cout << "ref_r = " << ref_i << endl;
-    return 0;
+  int&& r = 100;
+  const int& ref_r = r;
+  cout << "ref_r = " << ref_i << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -60,11 +60,11 @@ ref_r = 100
 ### const參考放常數名
 {% highlight c++ linenos %}
 int main() {
-    //con 是常數
-    const int con = 100;
-    const int& ref = con;
-    cout << "ref = " << ref << endl;
-    return 0;
+  //con 是常數
+  const int con = 100;
+  const int& ref = con;
+  cout << "ref = " << ref << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -76,9 +76,9 @@ ref = 100
 
 {% highlight c++ linenos %}
 int main() {
-    const int& ref = 100; //100是常數
-    cout << "ref = " << ref << endl;
-    return 0;
+  const int& ref = 100; //100是常數
+  cout << "ref = " << ref << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -89,21 +89,21 @@ ref = 100
 
 {% highlight c++ linenos %}
 void func(const int& ref) {
-    cout << "ref = " << ref << endl;
+  cout << "ref = " << ref << endl;
 }
 int main() {
-    // i is l-value
-    int i = 10;
-    //l-value
-    func(i);
-    
-    //r-value
-    int&& r = 20;
-    func(r);
-    
-    func(100);// 常數 100 , 100 is r-value
-    func('A');// 常數 'A' , A is r-value
-    return 0;
+  // i is l-value
+  int i = 10;
+  //l-value
+  func(i);
+  
+  //r-value
+  int&& r = 20;
+  func(r);
+  
+  func(100);// 常數 100 , 100 is r-value
+  func('A');// 常數 'A' , A is r-value
+  return 0;
 }
 {% endhighlight %}
 

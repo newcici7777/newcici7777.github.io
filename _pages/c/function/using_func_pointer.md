@@ -51,11 +51,11 @@ using Func = void(int, const string&);
 //函式宣告
 Func print;
 int main() {
-    return 0;
+  return 0;
 }
 //函式定義
 void print(int code, const string& msg) {
-    cout << "Error code = " << code << " , Msg = " << msg << endl;
+  cout << "Error code = " << code << " , Msg = " << msg << endl;
 }
 {% endhighlight %}
 ```
@@ -82,19 +82,19 @@ using Func = void(int, const string&);
 //函式宣告
 Func print;
 int main() {
-    //宣告函式指標，指向print函式
-    Func* func_pointer = print;
-    //呼叫函式
-    func_pointer(500, "Server error.");
-    
-    //宣告函式參考，指向print函式
-    Func* func_ref = print;
-    func_ref(400, "Not Found.");
-    return 0;
+  //宣告函式指標，指向print函式
+  Func* func_pointer = print;
+  //呼叫函式
+  func_pointer(500, "Server error.");
+  
+  //宣告函式參考，指向print函式
+  Func* func_ref = print;
+  func_ref(400, "Not Found.");
+  return 0;
 }
 //函式定義
 void print(int code, const string& msg) {
-    cout << "Error code = " << code << " , Msg = " << msg << endl;
+  cout << "Error code = " << code << " , Msg = " << msg << endl;
 }
 {% endhighlight %}
 ```
@@ -121,15 +121,15 @@ using Func = void(int, const string&);
 //函式宣告
 Func print;
 int main() {
-    //宣告函式參考，指向print函式
-    Func* func_ref = print;
-    //呼叫函式
-    func_ref(400, "Not Found.");
-    return 0;
+  //宣告函式參考，指向print函式
+  Func* func_ref = print;
+  //呼叫函式
+  func_ref(400, "Not Found.");
+  return 0;
 }
 //函式定義
 void print(int code, const string& msg) {
-    cout << "Error code = " << code << " , Msg = " << msg << endl;
+  cout << "Error code = " << code << " , Msg = " << msg << endl;
 }
 {% endhighlight %}
 ```
@@ -152,15 +152,15 @@ void (*func_pointer)(int, const string&) = <span class="markline">Student::</spa
 {% highlight c++ linenos %}
 class Student {
 public:
-    static void print(int code, const string& msg) {
-        cout << "Error code = " << code << " , Msg = " << msg << endl;
-    }
+  static void print(int code, const string& msg) {
+  cout << "Error code = " << code << " , Msg = " << msg << endl;
+  }
 };
 int main() {
-    //宣告函式指標
-    void (*func_pointer)(int, const string&) = Student::print;
-    func_pointer(500, "Server error.");
-    return 0;
+  //宣告函式指標
+  void (*func_pointer)(int, const string&) = Student::print;
+  func_pointer(500, "Server error.");
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -177,17 +177,17 @@ Func *func_p = <span class="markline">Student::</span>print;
 {% highlight c++ linenos %}
 class Student {
 public:
-    static void print(int code, const string& msg) {
-        cout << "Error code = " << code << " , Msg = " << msg << endl;
-    }
+  static void print(int code, const string& msg) {
+  cout << "Error code = " << code << " , Msg = " << msg << endl;
+  }
 };
 //Func函式類型別名
 using Func = void(int, const string&);
 int main() {
-    //函式類型別名宣告函式指標
-    Func *func_p = Student::print;
-    func_p(404, "Page not Found.");
-    return 0;
+  //函式類型別名宣告函式指標
+  Func *func_p = Student::print;
+  func_p(404, "Page not Found.");
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -202,24 +202,24 @@ Error code = 404 , Msg = Page not Found.
 - 呼叫函式時，使用物件加點(.)運算子與指標運算子(\*)
 <pre>
 void(<span class="markline">Student::</span>* func_pointer)(int, const string&) = <span class="markline">&Student::</span>print;
-    <span class="markline">(student.*func_pointer)</span>(500, "Server error.");
+  <span class="markline">(student.*func_pointer)</span>(500, "Server error.");
 </pre>
 
 {% highlight c++ linenos %}
 class Student {
 public:
-    void print(int code, const string& msg) {
-        cout << "Error code = " << code << " , Msg = " << msg << endl;
-    }
+  void print(int code, const string& msg) {
+  cout << "Error code = " << code << " , Msg = " << msg << endl;
+  }
 };
 int main() {
-    //物件宣告
-    Student student;
-    //成員函式轉成函式指標
-    void(Student::* func_pointer)(int, const string&) = &Student::print;
-    //函式指標呼叫函式
-    (student.*func_pointer)(500, "Server error.");
-    return 0;
+  //物件宣告
+  Student student;
+  //成員函式轉成函式指標
+  void(Student::* func_pointer)(int, const string&) = &Student::print;
+  //函式指標呼叫函式
+  (student.*func_pointer)(500, "Server error.");
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -245,20 +245,20 @@ Error code = 500 , Msg = Server error.
 {% highlight c++ linenos %}
 class Student {
 public:
-    void print(int code, const string& msg) {
-        cout << "Error code = " << code << " , Msg = " << msg << endl;
-    }
+  void print(int code, const string& msg) {
+  cout << "Error code = " << code << " , Msg = " << msg << endl;
+  }
 };
 //Func函式類型別名
 using Func = void(Student::*)(int, const string&);
 int main() {
-    //建立物件
-    Student student;
-    //建立函式指標
-    Func func_pointer = &Student::print;
-    //呼叫函式指標
-    (student.*func_pointer)(400,"Page not found.");
-    return 0;
+  //建立物件
+  Student student;
+  //建立函式指標
+  Func func_pointer = &Student::print;
+  //呼叫函式指標
+  (student.*func_pointer)(400,"Page not found.");
+  return 0;
 }
 {% endhighlight %}
 ```

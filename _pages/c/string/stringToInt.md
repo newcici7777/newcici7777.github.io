@@ -65,16 +65,16 @@ result = 1234
 
 {% highlight c++ linenos %}
 int main() {
-    char input[10];
-    memset(input, 0, sizeof(input));
-    cout << "請輸入整數:"; cin >> input;
-    int result = 0;
-    
-    for(int i = 0, len = strlen(input); i < len; i++) {
-        result = (result * 10) + input[i] - '0';
-    }
-    cout << "result = " << result << endl;
-    return 0;
+  char input[10];
+  memset(input, 0, sizeof(input));
+  cout << "請輸入整數:"; cin >> input;
+  int result = 0;
+  
+  for(int i = 0, len = strlen(input); i < len; i++) {
+    result = (result * 10) + input[i] - '0';
+  }
+  cout << "result = " << result << endl;
+  return 0;
 }
 {% endhighlight %}
 

@@ -1227,7 +1227,7 @@
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre>    <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">),</span> <span class="n">src</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">src</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+</pre></td><td class="code"><pre>  <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">),</span> <span class="n">src</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">src</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1358,18 +1358,18 @@ strlen(src) + 1是指要拷貝src全部字串， + 1是包含src的'\0'也一併
 </pre></td><td class="code"><pre><span class="c1">//參數2因為是常數字串，所以型態為const char*</span>
 <span class="kt">char</span><span class="o">*</span> <span class="nf">myStrCat</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
 	<span class="c1">//拷貝src字串</span>
-    <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">),</span> <span class="n">src</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">src</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="c1">//返回dest開始位址</span>
-    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+  <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">),</span> <span class="n">src</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">src</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="c1">//返回dest開始位址</span>
+  <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
-    <span class="c1">//清空陣列記憶體中的值</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="s">"Hello"</span><span class="p">);</span>
-    <span class="n">myStrCat</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="s">"World"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str = "</span> <span class="o">&lt;&lt;</span> <span class="n">str</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+  <span class="c1">//清空陣列記憶體中的值</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="s">"Hello"</span><span class="p">);</span>
+  <span class="n">myStrCat</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="s">"World"</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str = "</span> <span class="o">&lt;&lt;</span> <span class="n">str</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1532,11 +1532,11 @@ strlen(src) + 1是指要拷貝src全部字串， + 1是包含src的'\0'也一併
 6
 7
 </pre></td><td class="code"><pre><span class="kt">char</span><span class="o">*</span> <span class="nf">myStrNCat</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">,</span><span class="k">const</span> <span class="kt">size_t</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//先把dest字串的長度先存下來</span>
-    <span class="kt">size_t</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">);</span>
-    <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span> <span class="o">+</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//將目的字串與拷貝的字串最後面添加結尾字元0</span>
-    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+  <span class="c1">//先把dest字串的長度先存下來</span>
+  <span class="kt">size_t</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">);</span>
+  <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+  <span class="o">*</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span> <span class="o">+</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//將目的字串與拷貝的字串最後面添加結尾字元0</span>
+  <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1561,20 +1561,20 @@ strlen(src) + 1是指要拷貝src全部字串， + 1是包含src的'\0'也一併
 15
 16
 </pre></td><td class="code"><pre><span class="kt">char</span><span class="o">*</span> <span class="nf">myStrNCat</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">dest</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">,</span><span class="k">const</span> <span class="kt">size_t</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//先把dest字串的長度先存下來</span>
-    <span class="kt">size_t</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">);</span>
-    <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span> <span class="o">+</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+  <span class="c1">//先把dest字串的長度先存下來</span>
+  <span class="kt">size_t</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">);</span>
+  <span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+  <span class="o">*</span><span class="p">(</span><span class="n">dest</span> <span class="o">+</span> <span class="n">len</span> <span class="o">+</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
-    <span class="c1">//清空陣列記憶體中的值</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="s">"Hello"</span><span class="p">);</span>
-    <span class="n">myStrNCat</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="s">"World"</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str = "</span> <span class="o">&lt;&lt;</span> <span class="n">str</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+  <span class="c1">//清空陣列記憶體中的值</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="s">"Hello"</span><span class="p">);</span>
+  <span class="n">myStrNCat</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="s">"World"</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str = "</span> <span class="o">&lt;&lt;</span> <span class="n">str</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1769,7 +1769,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

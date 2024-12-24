@@ -1251,12 +1251,12 @@
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
+  <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
 <span class="p">};</span>
 <span class="c1">//在這邊初始化靜態類別變數</span>
 <span class="kt">int</span> <span class="n">Student</span><span class="o">::</span><span class="n">count</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1284,12 +1284,12 @@
 9
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
+  <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">Student</span><span class="o">::</span><span class="n">count</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">Student</span><span class="o">::</span><span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">Student</span><span class="o">::</span><span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1330,15 +1330,15 @@
 12
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
-    <span class="k">static</span> <span class="kt">void</span> <span class="n">getCount</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
+  <span class="k">static</span> <span class="kt">void</span> <span class="n">getCount</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">Student</span><span class="o">::</span><span class="n">count</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span><span class="o">::</span><span class="n">getCount</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span><span class="o">::</span><span class="n">getCount</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1364,17 +1364,17 @@
 14
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
-    <span class="k">static</span> <span class="kt">void</span> <span class="n">getCount</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
+  <span class="k">static</span> <span class="kt">void</span> <span class="n">getCount</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">Student</span><span class="o">::</span><span class="n">count</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"student.count = "</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">getCount</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"student.count = "</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">getCount</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1404,19 +1404,19 @@ count = 100
 14
 15
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student1</span><span class="p">;</span>
-    <span class="n">student1</span><span class="p">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">110</span><span class="p">;</span>
-    
-    <span class="n">Student</span> <span class="n">student2</span><span class="p">;</span>
-    <span class="n">student2</span><span class="p">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">120</span><span class="p">;</span>
-    
-    <span class="n">Student</span> <span class="n">student3</span><span class="p">;</span>
-    <span class="n">student3</span><span class="p">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">130</span><span class="p">;</span>
-    
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"student1.count = "</span> <span class="o">&lt;&lt;</span> <span class="n">student1</span><span class="p">.</span><span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"student2.count = "</span> <span class="o">&lt;&lt;</span> <span class="n">student2</span><span class="p">.</span><span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"student3.count = "</span> <span class="o">&lt;&lt;</span> <span class="n">student3</span><span class="p">.</span><span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student1</span><span class="p">;</span>
+  <span class="n">student1</span><span class="p">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">110</span><span class="p">;</span>
+  
+  <span class="n">Student</span> <span class="n">student2</span><span class="p">;</span>
+  <span class="n">student2</span><span class="p">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">120</span><span class="p">;</span>
+  
+  <span class="n">Student</span> <span class="n">student3</span><span class="p">;</span>
+  <span class="n">student3</span><span class="p">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">130</span><span class="p">;</span>
+  
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"student1.count = "</span> <span class="o">&lt;&lt;</span> <span class="n">student1</span><span class="p">.</span><span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"student2.count = "</span> <span class="o">&lt;&lt;</span> <span class="n">student2</span><span class="p">.</span><span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"student3.count = "</span> <span class="o">&lt;&lt;</span> <span class="n">student3</span><span class="p">.</span><span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1444,12 +1444,12 @@ student3.count = 130
 9
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
-    <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
-    <span class="k">static</span> <span class="kt">void</span> <span class="n">getCount</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name ="</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+  <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
+  <span class="k">static</span> <span class="kt">void</span> <span class="n">getCount</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name ="</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1473,15 +1473,15 @@ student3.count = 130
 12
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
-    <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">static</span> <span class="kt">void</span> <span class="n">getCount</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">print</span><span class="p">();</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+  <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">static</span> <span class="kt">void</span> <span class="n">getCount</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">print</span><span class="p">();</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1527,37 +1527,37 @@ student3.count = 130
 34
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
-    <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">getCount</span><span class="p">();</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"2. count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">static</span> <span class="kt">void</span> <span class="n">getCount</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+  <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">getCount</span><span class="p">();</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"2. count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">static</span> <span class="kt">void</span> <span class="n">getCount</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">Student</span><span class="o">::</span><span class="n">count</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student1</span><span class="p">;</span>
-    <span class="n">student1</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
-    <span class="n">student1</span><span class="p">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">110</span><span class="p">;</span>
-    
-    <span class="n">Student</span> <span class="n">student2</span><span class="p">;</span>
-    <span class="n">student2</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-    <span class="n">student2</span><span class="p">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">120</span><span class="p">;</span>
-    
-    <span class="n">Student</span> <span class="n">student3</span><span class="p">;</span>
-    <span class="n">student3</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Tom"</span><span class="p">;</span>
-    <span class="n">student3</span><span class="p">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">130</span><span class="p">;</span>
-    
-    <span class="n">student1</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"-----------------"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">student2</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"-----------------"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">student3</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student1</span><span class="p">;</span>
+  <span class="n">student1</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
+  <span class="n">student1</span><span class="p">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">110</span><span class="p">;</span>
+  
+  <span class="n">Student</span> <span class="n">student2</span><span class="p">;</span>
+  <span class="n">student2</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+  <span class="n">student2</span><span class="p">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">120</span><span class="p">;</span>
+  
+  <span class="n">Student</span> <span class="n">student3</span><span class="p">;</span>
+  <span class="n">student3</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Tom"</span><span class="p">;</span>
+  <span class="n">student3</span><span class="p">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">130</span><span class="p">;</span>
+  
+  <span class="n">student1</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"-----------------"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">student2</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"-----------------"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">student3</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1607,18 +1607,18 @@ count = 130
 13
 14
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
-    <span class="k">static</span> <span class="kt">void</span> <span class="n">getCount</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
+  <span class="k">static</span> <span class="kt">void</span> <span class="n">getCount</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="nl">public:</span>
-    <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">Student</span><span class="o">::</span><span class="n">count</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">Student</span><span class="o">::</span><span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">Student</span><span class="o">::</span><span class="n">getCount</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">Student</span><span class="o">::</span><span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">Student</span><span class="o">::</span><span class="n">getCount</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1813,7 +1813,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

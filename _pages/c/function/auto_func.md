@@ -22,13 +22,13 @@ auto var = func();
 {% highlight c++ linenos %}
 //宣告一個函式為func()，回傳值為string類型
 string func() {
-    return "test";
+  return "test";
 }
 int main() {
 	//使用函式的回傳值，由auto自動推導函式的回傳的類型string
-    auto var = func();
-    cout << "var = " << var << endl;
-    return 0;
+  auto var = func();
+  cout << "var = " << var << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -54,15 +54,15 @@ f();
 完整程式碼
 {% highlight c++ linenos %}
 string func() {
-    cout << "abcdef" << endl;
-    return "test";
+  cout << "abcdef" << endl;
+  return "test";
 }
 int main() {
 	//注意!函式func後面沒有括號
-    auto f = func;
-    //呼叫函式
-    cout << f() << endl;
-    return 0;
+  auto f = func;
+  //呼叫函式
+  cout << f() << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -80,8 +80,8 @@ abcdef
 //定義一個函式名為println，回傳值為int，
 //參數有二個，分別為char指標型別的參數msg1與msg2
 int println(char* msg1, char* msg2) {
-    printf("印出msg1:%s\nmsg2:%s\n",msg1,msg2);
-    return 1;
+  printf("印出msg1:%s\nmsg2:%s\n",msg1,msg2);
+  return 1;
 }
 int main() {
 	//(*funcPtr)宣告函式指標的名稱為funcPtr
@@ -89,11 +89,11 @@ int main() {
 	//(char*,char*)代表參數型別
 	//實作函式指標的函式是println()的函式
 	//注意= println後面是沒有括號()
-    int (*funcPtr)(char*,char*)= println;
+  int (*funcPtr)(char*,char*)= println;
 
-    //呼叫函式指標，並把參數代入
-    funcPtr("test","c++");
-    return 0;
+  //呼叫函式指標，並把參數代入
+  funcPtr("test","c++");
+  return 0;
 }
 {% endhighlight %}
 
@@ -106,13 +106,13 @@ msg2:c++
 
 {% highlight c++ linenos %}
 int println(char* msg1, char* msg2) {
-    printf("印出msg1:%s\nmsg2:%s\n",msg1,msg2);
-    return 1;
+  printf("印出msg1:%s\nmsg2:%s\n",msg1,msg2);
+  return 1;
 }
 int main() {
-    auto func = println;
-    func("test","c++");
-    return 0;
+  auto func = println;
+  func("test","c++");
+  return 0;
 }
 {% endhighlight %}
 
@@ -121,15 +121,15 @@ int main() {
 {% highlight c++ linenos %}
 #include <iostream>
 void say(void (*p)(char*),char *msg) {
-    p(msg);
+  p(msg);
 }
 void println(char* msg) {
-    printf("印出結果:%s\n",msg);
+  printf("印出結果:%s\n",msg);
 }
 int main() {
-    void(*p)(char*) = println;
-    say(p, "hello");
-    return 0;
+  void(*p)(char*) = println;
+  say(p, "hello");
+  return 0;
 }
 {% endhighlight %}
 
@@ -145,18 +145,18 @@ typedef void(*FuncPtr)(char*);
 
 //參數為FuncPtr類型(回傳值為void的類型，參數是char指針)
 void say(FuncPtr func1, char* msg) {
-    //呼叫函式指標
-    func1(msg);
+  //呼叫函式指標
+  func1(msg);
 }
 void printMsg(char* msg) {
-    cout << "msg:" << msg << endl;
+  cout << "msg:" << msg << endl;
 }
 int main() {
-    auto say_fun = say;
-    auto print_fun = printMsg;
-    //注意print_fun後面沒有括號()
-    say_fun(print_fun,"test");
-    return 0;
+  auto say_fun = say;
+  auto print_fun = printMsg;
+  //注意print_fun後面沒有括號()
+  say_fun(print_fun,"test");
+  return 0;
 }
 {% endhighlight %}
 ```

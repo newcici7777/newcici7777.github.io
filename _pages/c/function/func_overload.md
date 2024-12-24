@@ -18,28 +18,28 @@ keywords: c++, function overload
 
 {% highlight c++ linenos %}
 void max(float a, float b) {
-    cout << "比較float" << endl;
-    if(a > b)
-        cout << "a大" << endl;
-    else
-        cout << "b大" << endl;
+  cout << "比較float" << endl;
+  if(a > b)
+    cout << "a大" << endl;
+  else
+    cout << "b大" << endl;
 }
 void max(int a, int b) {
-    cout << "比較int" << endl;
-    if(a > b)
-        cout << "a大" << endl;
-    else
-        cout << "b大" << endl;
+  cout << "比較int" << endl;
+  if(a > b)
+    cout << "a大" << endl;
+  else
+    cout << "b大" << endl;
 }
 int main() {
-    float a1 = 100.5f;
-    float b1 = 100.3f;
-    max(a1, b1);
-    
-    int a2 = 20;
-    int b2 = 30;
-    max(a2, b2);
-    return 0;
+  float a1 = 100.5f;
+  float b1 = 100.3f;
+  max(a1, b1);
+  
+  int a2 = 20;
+  int b2 = 30;
+  max(a2, b2);
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -57,18 +57,18 @@ b大
 
 {% highlight c++ linenos %}
 void max(float a, float b) {
-    cout << "比較float" << endl;
-    if(a > b)
-        cout << "a大" << endl;
-    else
-        cout << "b大" << endl;
+  cout << "比較float" << endl;
+  if(a > b)
+    cout << "a大" << endl;
+  else
+    cout << "b大" << endl;
 }
 void max(const float a, float b) {
-    cout << "比較float" << endl;
-    if(a > b)
-        cout << "a大" << endl;
-    else
-        cout << "b大" << endl;
+  cout << "比較float" << endl;
+  if(a > b)
+    cout << "a大" << endl;
+  else
+    cout << "b大" << endl;
 }
 {% endhighlight %}
 
@@ -78,24 +78,24 @@ void max(const float a, float b) {
 
 {% highlight c++ linenos %}
 void max(float a, float b) {
-    cout << "比較float" << endl;
-    if(a > b)
-        cout << "a大" << endl;
-    else
-        cout << "b大" << endl;
+  cout << "比較float" << endl;
+  if(a > b)
+    cout << "a大" << endl;
+  else
+    cout << "b大" << endl;
 }
 void max(float& a, float b) {
-    cout << "比較float" << endl;
-    if(a > b)
-        cout << "a大" << endl;
-    else
-        cout << "b大" << endl;
+  cout << "比較float" << endl;
+  if(a > b)
+    cout << "a大" << endl;
+  else
+    cout << "b大" << endl;
 }
 int main() {
-    float a1 = 100.5f;
-    float b1 = 100.3f;
-    max(a1, b1);
-    return 0;
+  float a1 = 100.5f;
+  float b1 = 100.3f;
+  max(a1, b1);
+  return 0;
 }
 {% endhighlight %}
 
@@ -105,16 +105,16 @@ int main() {
 
 {% highlight c++ linenos %}
 void func1(int error_code, string msg1 = "這是預設值1", const string& msg2 = "這是預設值2") {
-    cout << "Error code: " << error_code << ", ";
-    cout << "Msg1: " << msg1 << ", ";
-    cout << "Msg2: " << msg2 << endl;
+  cout << "Error code: " << error_code << ", ";
+  cout << "Msg1: " << msg1 << ", ";
+  cout << "Msg2: " << msg2 << endl;
 }
 void func1(int error_code, string msg1) {
-    cout << "Error code: " << error_code << ", ";
-    cout << "Msg1: " << msg1 << ", ";
+  cout << "Error code: " << error_code << ", ";
+  cout << "Msg1: " << msg1 << ", ";
 }
 int main() {
-    func1(500,"Server error!");
-    return 0;
+  func1(500,"Server error!");
+  return 0;
 }
 {% endhighlight %}

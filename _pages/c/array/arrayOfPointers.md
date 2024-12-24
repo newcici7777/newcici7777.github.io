@@ -7,11 +7,11 @@ keywords: c++, point of arrays
 ## 指標陣列
 
 {% highlight c++ linenos %}
-    int i1 = 10;
-    int i2 = 20;
-    int i3 = 30;
-    //宣告指標陣列存放3個記憶體位址
-    int *p_array[3] = {&i1, &i2, &i3};
+  int i1 = 10;
+  int i2 = 20;
+  int i3 = 30;
+  //宣告指標陣列存放3個記憶體位址
+  int *p_array[3] = {&i1, &i2, &i3};
 {% endhighlight %}
 
 ## 取址與取值
@@ -23,7 +23,7 @@ keywords: c++, point of arrays
 
 {% highlight c++ linenos %}
 for (int i = 0; i < 3; ++i) {
-    printf("i= %d的位置%#x, 值為%d\n",i, *(p_array + i), *(*(p_array + i)));
+  printf("i= %d的位置%#x, 值為%d\n",i, *(p_array + i), *(*(p_array + i)));
 }
 {% endhighlight %}
 

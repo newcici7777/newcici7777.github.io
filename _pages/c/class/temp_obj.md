@@ -29,29 +29,29 @@ Student s1 = Student();
 {% highlight c++ linenos %}
 class Student {
 public:
-    //建構子
-    Student() {
-        cout << "建構子" << endl;
-    }
-    //拷貝函式
-    Student(const Student &s) {
-        cout << "呼叫Student(const Student &s)拷貝函式" << endl;
-    }
-    //指派運算子
-    Student& operator=(const Student& s) {
-        cout << "呼叫Student operator=指派運算子" << endl;
-        return *this;
-    }
-    //解構子
-    ~Student() {
-        cout << "解構子" << endl;
-    }
+  //建構子
+  Student() {
+    cout << "建構子" << endl;
+  }
+  //拷貝函式
+  Student(const Student &s) {
+    cout << "呼叫Student(const Student &s)拷貝函式" << endl;
+  }
+  //指派運算子
+  Student& operator=(const Student& s) {
+    cout << "呼叫Student operator=指派運算子" << endl;
+    return *this;
+  }
+  //解構子
+  ~Student() {
+    cout << "解構子" << endl;
+  }
 };
 int main() {
-    Student s1 = Student();
-    cout << "物件記憶體位址 = " << &s1 << endl;
-    return 0;
-    //離開主程式針對s1呼叫解構子
+  Student s1 = Student();
+  cout << "物件記憶體位址 = " << &s1 << endl;
+  return 0;
+  //離開主程式針對s1呼叫解構子
 }
 {% endhighlight %}
 
@@ -78,28 +78,28 @@ int main() {
 using namespace std;
 class Student {
 public:
-    Student() {
-        cout << "沒參數建構子" << endl;
-        cout << "address = " << this << endl;
-    }
-    Student(const Student &s) {
-        cout << "呼叫Student(const Student &s)拷貝函式" << endl;
-    }
-    Student& operator=(const Student& s) {
-        cout << "呼叫Student operator=指派運算子" << endl;
-        return *this;
-    }
-    ~Student() {
-        cout << "解構子" << endl;
-    }
+  Student() {
+    cout << "沒參數建構子" << endl;
+    cout << "address = " << this << endl;
+  }
+  Student(const Student &s) {
+    cout << "呼叫Student(const Student &s)拷貝函式" << endl;
+  }
+  Student& operator=(const Student& s) {
+    cout << "呼叫Student operator=指派運算子" << endl;
+    return *this;
+  }
+  ~Student() {
+    cout << "解構子" << endl;
+  }
 };
 Student getStudent() {
-    return Student();
+  return Student();
 }
 int main() {
-    Student s1 = getStudent();
-    cout << "物件記憶體位址 = " << &s1 << endl;
-    return 0;
+  Student s1 = getStudent();
+  cout << "物件記憶體位址 = " << &s1 << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -125,9 +125,9 @@ address = 0x7ff7bfeff410
 
 {% highlight c++ linenos %}
 Student func() {
-    Student s;
-    return s;//呼叫拷貝函式
-    //離開函式，針對物件s呼叫解構子
+  Student s;
+  return s;//呼叫拷貝函式
+  //離開函式，針對物件s呼叫解構子
 }
 {% endhighlight %}
 
@@ -136,34 +136,34 @@ Student func() {
 class Student {
 public:
 	//建構子
-    Student() {
-        cout << "建構子" << endl;
-    }
-    //拷貝函式
-    Student(const Student &s) {
-        cout << "呼叫Student(const Student &s)拷貝函式" << endl;
-    }
-    //指派運算子
-    Student& operator=(const Student& s) {
-        cout << "呼叫Student operator=指派運算子" << endl;
-        return *this;
-    }
-    //解構子
-    ~Student() {
-        cout << "解構子" << endl;
-    }
+  Student() {
+    cout << "建構子" << endl;
+  }
+  //拷貝函式
+  Student(const Student &s) {
+    cout << "呼叫Student(const Student &s)拷貝函式" << endl;
+  }
+  //指派運算子
+  Student& operator=(const Student& s) {
+    cout << "呼叫Student operator=指派運算子" << endl;
+    return *this;
+  }
+  //解構子
+  ~Student() {
+    cout << "解構子" << endl;
+  }
 };
 Student func() {
-    Student s;//呼叫建構子
-    cout << "函式物件記憶體位址 = " << &s << endl;
-    return s;//呼叫拷貝函式
-    //離開函式，針對物件s呼叫解構子
+  Student s;//呼叫建構子
+  cout << "函式物件記憶體位址 = " << &s << endl;
+  return s;//呼叫拷貝函式
+  //離開函式，針對物件s呼叫解構子
 }
 int main() {
-    Student s1 = func();
-    cout << "物件記憶體位址 = " << &s1 << endl;
-    return 0;
-    //離開主程式針對s1呼叫解構子
+  Student s1 = func();
+  cout << "物件記憶體位址 = " << &s1 << endl;
+  return 0;
+  //離開主程式針對s1呼叫解構子
 }
 {% endhighlight %}
 ```
@@ -185,9 +185,9 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    Student student;
-    student = Student();
-    return 0;
+  Student student;
+  student = Student();
+  return 0;
 }
 {% endhighlight %}
 
@@ -197,28 +197,28 @@ int main() {
 using namespace std;
 class Student {
 public:
-    //建構子
-    Student() {
-        cout << "建構子" << endl;
-    }
-    //拷貝函式
-    Student(const Student &s) {
-        cout << "呼叫Student(const Student &s)拷貝函式" << endl;
-    }
-    //指派運算子
-    Student& operator=(const Student& s) {
-        cout << "呼叫Student operator=指派運算子" << endl;
-        return *this;
-    }
-    //解構子
-    ~Student() {
-        cout << "解構子" << endl;
-    }
+  //建構子
+  Student() {
+    cout << "建構子" << endl;
+  }
+  //拷貝函式
+  Student(const Student &s) {
+    cout << "呼叫Student(const Student &s)拷貝函式" << endl;
+  }
+  //指派運算子
+  Student& operator=(const Student& s) {
+    cout << "呼叫Student operator=指派運算子" << endl;
+    return *this;
+  }
+  //解構子
+  ~Student() {
+    cout << "解構子" << endl;
+  }
 };
 int main() {
-    Student student;
-    student = Student();
-    return 0;
+  Student student;
+  student = Student();
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -238,34 +238,34 @@ int main() {
 using namespace std;
 class Student {
 public:
-    //建構子
-    Student() {
-        cout << "建構子" << endl;
-    }
-    //拷貝函式
-    Student(const Student &s) {
-        cout << "呼叫Student(const Student &s)拷貝函式" << endl;
-    }
-    //指派運算子
-    Student& operator=(const Student& s) {
-        cout << "呼叫Student operator=指派運算子" << endl;
-        return *this;
-    }
-    //解構子
-    ~Student() {
-        cout << "解構子" << endl;
-    }
-    void print() {
-        cout << "建立臨時物件" << endl;
-        Student();
-        cout << "結束臨時物件" << endl;
-    }
+  //建構子
+  Student() {
+    cout << "建構子" << endl;
+  }
+  //拷貝函式
+  Student(const Student &s) {
+    cout << "呼叫Student(const Student &s)拷貝函式" << endl;
+  }
+  //指派運算子
+  Student& operator=(const Student& s) {
+    cout << "呼叫Student operator=指派運算子" << endl;
+    return *this;
+  }
+  //解構子
+  ~Student() {
+    cout << "解構子" << endl;
+  }
+  void print() {
+    cout << "建立臨時物件" << endl;
+    Student();
+    cout << "結束臨時物件" << endl;
+  }
 };
 int main() {
-    Student s1;
-    s1.print();
-    return 0;
-    //離開主程式針對s1呼叫解構子
+  Student s1;
+  s1.print();
+  return 0;
+  //離開主程式針對s1呼叫解構子
 }
 {% endhighlight %}
 

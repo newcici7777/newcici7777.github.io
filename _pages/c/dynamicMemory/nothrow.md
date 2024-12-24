@@ -12,15 +12,15 @@ keywords: c++, dynamic arrays, nothrow
 #include <iostream>
 using namespace std;
 int main() {
-    int *arr = new (std::nothrow)int[10000000000000001];
-    if(arr == nullptr){
-        cout << "記憶體配置失敗";
-    } else {
-        arr[10000000000000001] = 100;
-        delete[] arr;
-        arr = nullptr;
-    }
-    return 0;
+  int *arr = new (std::nothrow)int[10000000000000001];
+  if(arr == nullptr){
+  cout << "記憶體配置失敗";
+  } else {
+  arr[10000000000000001] = 100;
+  delete[] arr;
+  arr = nullptr;
+  }
+  return 0;
 }
 {% endhighlight %}
 

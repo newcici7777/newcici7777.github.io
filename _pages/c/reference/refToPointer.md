@@ -16,32 +16,32 @@ Prerequisites:
 資料型態*& 別名 = 原指標;
 ```
 {% highlight c++ linenos %}
-    int i = 10;
-    cout << "i address:" << &i << endl;
-    int j = 100;
-    cout << "j address:" << &j << endl;
+  int i = 10;
+  cout << "i address:" << &i << endl;
+  int j = 100;
+  cout << "j address:" << &j << endl;
 
-    //宣告指標
-    int* ptr_i = &i;
+  //宣告指標
+  int* ptr_i = &i;
 
-    //宣告參考
-    // 原指標指派給參考
-    int*& ptr_ref = ptr_i;
-    cout << "== Change value ==" << endl;
-    cout << "Before i value:" << i << endl;
-    cout << "Before value:" << *ptr_ref << endl;
-    //修改原指標指向的記憶體位址中的值
-    *ptr_ref = 20;
-    cout << "After i value:" << i << endl;
-    //取出原指標指向的記憶體位址中的值
-    cout << "After value:" << *ptr_ref << endl;
-    
-    cout << "== Change address ==" << endl;
-    cout << "Before address:" << ptr_ref << endl;
-    //更改原指標指向的記憶體位址
-    ptr_ref = &j;
-    cout << "after address:" << ptr_ref << endl;
-    return 0;
+  //宣告參考
+  // 原指標指派給參考
+  int*& ptr_ref = ptr_i;
+  cout << "== Change value ==" << endl;
+  cout << "Before i value:" << i << endl;
+  cout << "Before value:" << *ptr_ref << endl;
+  //修改原指標指向的記憶體位址中的值
+  *ptr_ref = 20;
+  cout << "After i value:" << i << endl;
+  //取出原指標指向的記憶體位址中的值
+  cout << "After value:" << *ptr_ref << endl;
+  
+  cout << "== Change address ==" << endl;
+  cout << "Before address:" << ptr_ref << endl;
+  //更改原指標指向的記憶體位址
+  ptr_ref = &j;
+  cout << "after address:" << ptr_ref << endl;
+  return 0;
 {% endhighlight %}
 
 ```
@@ -86,7 +86,7 @@ after address:0x7ff7bfeff464
 
 ```
 回傳型態 函式名(資料型態*& 別名) {
-    別名 = 其它記憶體位址
+  別名 = 其它記憶體位址
 }
 ```
 
@@ -102,16 +102,16 @@ after address:0x7ff7bfeff464
 int global_var = 100;
 // a function with “Reference to pointer” parameter
 void changeReferenceValue(int*& ptr_ptr){
-    ptr_ptr = &global_var;
+  ptr_ptr = &global_var;
 }
 int main() {
-    int var = 1;
-    int* pointer_to_var = &var;
-    cout << "Before:" << *pointer_to_var << endl;
-    //把指標變數名傳進函式中
-    changeReferenceValue(pointer_to_var);
-    cout << "After:" << *pointer_to_var << endl;
-    return 0;
+  int var = 1;
+  int* pointer_to_var = &var;
+  cout << "Before:" << *pointer_to_var << endl;
+  //把指標變數名傳進函式中
+  changeReferenceValue(pointer_to_var);
+  cout << "After:" << *pointer_to_var << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -128,16 +128,16 @@ After:100
 int global_var = 100;
 // a function with “Reference to pointer” parameter
 void changeReferenceValue(<span class="markline">int*&</span> ptr_ptr){
-    <span class="markline">ptr_ptr</span> = &global_var;
+  <span class="markline">ptr_ptr</span> = &global_var;
 }
 int main() {
-    int var = 1;
-    int* pointer_to_var = &var;
-    cout << "Before:" << *pointer_to_var << endl;
-    //把指標變數名傳進函式中
-    changeReferenceValue(<span class="markline">pointer_to_var</span>);
-    cout << "After:" << *pointer_to_var << endl;
-    return 0;
+  int var = 1;
+  int* pointer_to_var = &var;
+  cout << "Before:" << *pointer_to_var << endl;
+  //把指標變數名傳進函式中
+  changeReferenceValue(<span class="markline">pointer_to_var</span>);
+  cout << "After:" << *pointer_to_var << endl;
+  return 0;
 }
 
 </pre>
@@ -147,17 +147,17 @@ int main() {
 <pre>
 int global_var = 100;
 void changePointerValue(<span class="markline">int**</span> ptr_ptr){
-    <span class="markline">*ptr_ptr</span> = &global_var; //改為指向global_var
+  <span class="markline">*ptr_ptr</span> = &global_var; //改為指向global_var
 }
 int main() {
-    int var = 1;
-    int* pointer_to_var = &var; //指向var
-    cout << "Before:" << *pointer_to_var << endl;
-    //passing the address of the pointer
-    //把指標的位址傳進函式中
-    changePointerValue(<span class="markline">&pointer_to_var</span>);
-    cout << "After:" << *pointer_to_var << endl;
-    return 0;
+  int var = 1;
+  int* pointer_to_var = &var; //指向var
+  cout << "Before:" << *pointer_to_var << endl;
+  //passing the address of the pointer
+  //把指標的位址傳進函式中
+  changePointerValue(<span class="markline">&pointer_to_var</span>);
+  cout << "After:" << *pointer_to_var << endl;
+  return 0;
 }
 </pre>
 
@@ -174,22 +174,22 @@ new會返回動態配置記憶體的開始位址，將別名指向new返回的�
 using namespace std;
 //宣告一個函式initAddress() 別名是ref_to_p，指向外部傳入的指標
 void initAddress(int*& ref_to_p){
-    //印出別名指向的記憶體位址
-    cout << "Before address = " << ref_to_p << endl;
-    //動態配置記憶體位址，位址存放的內容為10，使用new會返回動態配置記憶體的開始位址。
-    ref_to_p = new int(10);
-    //印出別名指向的記憶體位址
-    cout  << "After address= " << ref_to_p << ",After value = " << *ref_to_p << endl;
+  //印出別名指向的記憶體位址
+  cout << "Before address = " << ref_to_p << endl;
+  //動態配置記憶體位址，位址存放的內容為10，使用new會返回動態配置記憶體的開始位址。
+  ref_to_p = new int(10);
+  //印出別名指向的記憶體位址
+  cout  << "After address= " << ref_to_p << ",After value = " << *ref_to_p << endl;
 }
 int main() {
-    //宣告指標p，初始化為nullptr，也就是沒有指向任何位址
-    int* p = nullptr;
-    //呼叫函式initAddress，引數為指標p
-    initAddress(p);
-    //印出指標p的位址，印出指標p指向的位址，對指向的位址取出內容。
-    cout << "== outside == " << endl;
-    cout << "outside pointer address = " << p << "，outside pointer value = " << *p << endl;
-    return 0;
+  //宣告指標p，初始化為nullptr，也就是沒有指向任何位址
+  int* p = nullptr;
+  //呼叫函式initAddress，引數為指標p
+  initAddress(p);
+  //印出指標p的位址，印出指標p指向的位址，對指向的位址取出內容。
+  cout << "== outside == " << endl;
+  cout << "outside pointer address = " << p << "，outside pointer value = " << *p << endl;
+  return 0;
 }
 {% endhighlight %}
 

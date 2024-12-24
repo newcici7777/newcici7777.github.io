@@ -1230,11 +1230,11 @@
 6
 7
 </pre></td><td class="code"><pre><span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">score</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+  <span class="c1">//學生姓名</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
+  <span class="c1">//學號</span>
+  <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">score</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1245,7 +1245,7 @@
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre>    <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">{</span><span class="mi">60</span><span class="p">,</span><span class="mi">70</span><span class="p">,</span><span class="mi">80</span><span class="p">}};</span>
+</pre></td><td class="code"><pre>  <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">{</span><span class="mi">60</span><span class="p">,</span><span class="mi">70</span><span class="p">,</span><span class="mi">80</span><span class="p">}};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1253,7 +1253,7 @@
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre>    <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span><span class="mi">70</span><span class="p">,</span><span class="mi">80</span><span class="p">};</span>
+</pre></td><td class="code"><pre>  <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span><span class="mi">70</span><span class="p">,</span><span class="mi">80</span><span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1268,9 +1268,9 @@
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>    <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">60</span><span class="p">;</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">70</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">60</span><span class="p">;</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">70</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1282,9 +1282,9 @@
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"score["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span><span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+</pre></td><td class="code"><pre>  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"score["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span><span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1319,25 +1319,25 @@
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
 <span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-    <span class="c1">//結構中的陣列</span>
-    <span class="kt">int</span> <span class="n">score</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+  <span class="c1">//學生姓名</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
+  <span class="c1">//學號</span>
+  <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+  <span class="c1">//結構中的陣列</span>
+  <span class="kt">int</span> <span class="n">score</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//初始化</span>
-    <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span><span class="mi">70</span><span class="p">,</span><span class="mi">80</span><span class="p">};</span>
-    <span class="c1">//修改結構中的陣列</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">60</span><span class="p">;</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">70</span><span class="p">;</span>
-    <span class="c1">//印出陣列元素</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"score["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span><span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//初始化</span>
+  <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span><span class="mi">70</span><span class="p">,</span><span class="mi">80</span><span class="p">};</span>
+  <span class="c1">//修改結構中的陣列</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">60</span><span class="p">;</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">70</span><span class="p">;</span>
+  <span class="c1">//印出陣列元素</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"score["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span><span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1380,26 +1380,26 @@ void printParent(Student* student);
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">const</span> <span class="kt">int</span> <span class="n">PARENT_SIZE</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 <span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-    <span class="c1">//定義二維陣列</span>
-    <span class="kt">char</span> <span class="n">parent</span><span class="p">[</span><span class="n">PARENT_SIZE</span><span class="p">][</span><span class="mi">100</span><span class="p">];</span>
+  <span class="c1">//學生姓名</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
+  <span class="c1">//學號</span>
+  <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+  <span class="c1">//定義二維陣列</span>
+  <span class="kt">char</span> <span class="n">parent</span><span class="p">[</span><span class="n">PARENT_SIZE</span><span class="p">][</span><span class="mi">100</span><span class="p">];</span>
 <span class="p">};</span>
 <span class="c1">//函式參數是指向結構的指標</span>
 <span class="kt">void</span> <span class="n">printParent</span><span class="p">(</span><span class="n">Student</span><span class="o">*</span> <span class="n">student</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">PARENT_SIZE</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//因為是指標，所以存取成員使用-&gt;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="o">-&gt;</span><span class="n">parent</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">PARENT_SIZE</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//因為是指標，所以存取成員使用-&gt;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="o">-&gt;</span><span class="n">parent</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//初始化</span>
-    <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">{</span><span class="s">"Alice"</span><span class="p">,</span><span class="s">"Bill"</span><span class="p">}};</span>
-    <span class="c1">//把結構的位址傳入函式</span>
-    <span class="n">printParent</span><span class="p">(</span><span class="o">&amp;</span><span class="n">student</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//初始化</span>
+  <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">{</span><span class="s">"Alice"</span><span class="p">,</span><span class="s">"Bill"</span><span class="p">}};</span>
+  <span class="c1">//把結構的位址傳入函式</span>
+  <span class="n">printParent</span><span class="p">(</span><span class="o">&amp;</span><span class="n">student</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1597,7 +1597,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

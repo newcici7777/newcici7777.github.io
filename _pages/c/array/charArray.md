@@ -16,14 +16,14 @@ char str[6];
 以下二種宣告是完全不同，一個是字串，一個是陣列。
 
 {% highlight c++ linenos %}
-    //char字串
-    // \0 代表結尾
-    char str1[6] = {'h','e','l','l','o','\0'};
-    cout << "str1 長度 = " << strlen(str1) << ",內容 = " << str1 << endl;
-    //char 陣列
-    char arr[6] = {'h','e','l','l','o','o'};
-    cout << "arr 長度 = " << strlen(arr) << ",內容 = " << arr << endl;
-    cout << "arr sizeof = " << sizeof(arr) << endl;
+  //char字串
+  // \0 代表結尾
+  char str1[6] = {'h','e','l','l','o','\0'};
+  cout << "str1 長度 = " << strlen(str1) << ",內容 = " << str1 << endl;
+  //char 陣列
+  char arr[6] = {'h','e','l','l','o','o'};
+  cout << "arr 長度 = " << strlen(arr) << ",內容 = " << arr << endl;
+  cout << "arr sizeof = " << sizeof(arr) << endl;
 {% endhighlight %}
 
 ```
@@ -50,24 +50,24 @@ char str1[] = "hello"
 #include <iostream>
 using namespace std;
 int main() {
-    char cstr1[21];//cstr1沒有初始化字串常數
-    //遇到記憶體位址的值為\0(空字元)才會停止輸出
-    cout << "cstr1 長度 = " << strlen(cstr1) << ",內容 = " << cstr1 << endl;
-    //以下結尾編譯器會自動加上\0
-    char cstr2[] = "hello";
-    cout << "cstr2 長度 = " << strlen(cstr2) << ",內容 = " << cstr2 << endl;
-    char cstr3[6] = "hello";
-    cout << "cstr3 長度 = " << strlen(cstr3) << ",內容 = " << cstr3 << endl;
-    char cstr4[] = {"hello"};
-    cout << "cstr4 長度 = " << strlen(cstr4) << ",內容 = " << cstr4 << endl;
-    char cstr5[6] = {"hello"};
-    cout << "cstr5 長度 = " << strlen(cstr5) << ",內容 = " << cstr5 << endl;
-    char cstr6[6] {"hello"};
-    cout << "cstr6 長度 = " << strlen(cstr6) << ",內容 = " << cstr6 << endl;
-    //設為nullptr
-    char cstr7[6] = {0};
-    cout << "cstr7 長度 = " << strlen(cstr7) << ",內容 = " << cstr7 << endl;
-    return 0;
+  char cstr1[21];//cstr1沒有初始化字串常數
+  //遇到記憶體位址的值為\0(空字元)才會停止輸出
+  cout << "cstr1 長度 = " << strlen(cstr1) << ",內容 = " << cstr1 << endl;
+  //以下結尾編譯器會自動加上\0
+  char cstr2[] = "hello";
+  cout << "cstr2 長度 = " << strlen(cstr2) << ",內容 = " << cstr2 << endl;
+  char cstr3[6] = "hello";
+  cout << "cstr3 長度 = " << strlen(cstr3) << ",內容 = " << cstr3 << endl;
+  char cstr4[] = {"hello"};
+  cout << "cstr4 長度 = " << strlen(cstr4) << ",內容 = " << cstr4 << endl;
+  char cstr5[6] = {"hello"};
+  cout << "cstr5 長度 = " << strlen(cstr5) << ",內容 = " << cstr5 << endl;
+  char cstr6[6] {"hello"};
+  cout << "cstr6 長度 = " << strlen(cstr6) << ",內容 = " << cstr6 << endl;
+  //設為nullptr
+  char cstr7[6] = {0};
+  cout << "cstr7 長度 = " << strlen(cstr7) << ",內容 = " << cstr7 << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -89,11 +89,11 @@ cstr7 長度 = 0,內容 =
 #include <iostream>
 using namespace std;
 int main() {
-    char cstr2[] = "hello";
-    cout << "cstr2 長度 = " << strlen(cstr2) << ",內容 = " << cstr2 << endl;
-    memset(cstr2,0,sizeof(cstr2));
-    cout << "cstr2 長度 = " << strlen(cstr2) << ",內容 = " << cstr2 << endl;
-    return 0;
+  char cstr2[] = "hello";
+  cout << "cstr2 長度 = " << strlen(cstr2) << ",內容 = " << cstr2 << endl;
+  memset(cstr2,0,sizeof(cstr2));
+  cout << "cstr2 長度 = " << strlen(cstr2) << ",內容 = " << cstr2 << endl;
+  return 0;
 }
 
 {% endhighlight %}
@@ -116,10 +116,10 @@ char * strcpy ( char * destination, const char * source );
 拷貝完成後，會自動在目的字串最後面加上\0。
 
 {% highlight c++ linenos %}
-    char c_str1[6] = {'h','e','l','\0'};
-    char c_str4[20] = {'t','e'};
-    strcpy(c_str4, c_str1);
-    cout << "c_str4:" << c_str4 << endl;
+  char c_str1[6] = {'h','e','l','\0'};
+  char c_str4[20] = {'t','e'};
+  strcpy(c_str4, c_str1);
+  cout << "c_str4:" << c_str4 << endl;
 {% endhighlight %}
 
 ```
@@ -130,12 +130,12 @@ c_str4:hel
 ## 字串指標拷貝 strcpy
 
 {% highlight c++ linenos %}
-    char* c_str1 = new char[100];
-    strcpy(c_str1, "abcdefg");
-    char* c_str2 = new char[100];
-    strcpy(c_str2, c_str1);
-    cout << "c_str1 = " << c_str1 << endl;
-    cout << "c_str2 = " << c_str2 << endl;
+  char* c_str1 = new char[100];
+  strcpy(c_str1, "abcdefg");
+  char* c_str2 = new char[100];
+  strcpy(c_str2, c_str1);
+  cout << "c_str1 = " << c_str1 << endl;
+  cout << "c_str2 = " << c_str2 << endl;
 {% endhighlight %}
 
 ```
@@ -148,17 +148,17 @@ c_str2 = abcdefg
 不能使用`等於=`修改字串，以下語法會編譯錯誤。
 
 {% highlight c++ linenos %}
-    char c_str1[6] = "Hello";
-    c_str1 = "abc";
+  char c_str1[6] = "Hello";
+  c_str1 = "abc";
 {% endhighlight %}
 
 使用strcpy修改字串。
 
 {% highlight c++ linenos %}
-    char c_str1[6] = "Hello";
-    cout << "Before = " << c_str1 << endl;
-    strcpy(c_str1,"Dog");
-    cout << "After = " << c_str1 << endl;
+  char c_str1[6] = "Hello";
+  cout << "Before = " << c_str1 << endl;
+  strcpy(c_str1,"Dog");
+  cout << "After = " << c_str1 << endl;
 {% endhighlight %}
 
 ```
@@ -177,19 +177,19 @@ char *strncpy(char *string1, const char *string2, size_t count);
 若參數3(拷貝多少個字元)比參數2(來源字串長度)小，拷貝完成後，不會在參數1(目的字串)的結尾加上\0。
 
 {% highlight c++ linenos %}
-    char c_str4[10];
-    //拷貝2個字元至c_str4
-    strncpy(c_str4,"hello",2);
-    cout << "c_str4[0] = " << c_str4[0] << endl;
-    cout << "c_str4[1] = " << c_str4[1] << endl;
-    cout << "c_str4[2] = " << c_str4[2] << endl;
-    cout << "c_str4[3] = " << c_str4[3] << endl;
-    cout << "c_str4[4] = " << c_str4[4] << endl;
-    cout << "c_str4[5] = " << c_str4[5] << endl;
-    cout << "c_str4[6] = " << c_str4[6] << endl;
-    cout << "c_str4[7] = " << c_str4[7] << endl;
-    cout << "c_str4[8] = " << c_str4[8] << endl;
-    cout << "c_str4[9] = " << c_str4[9] << endl;
+  char c_str4[10];
+  //拷貝2個字元至c_str4
+  strncpy(c_str4,"hello",2);
+  cout << "c_str4[0] = " << c_str4[0] << endl;
+  cout << "c_str4[1] = " << c_str4[1] << endl;
+  cout << "c_str4[2] = " << c_str4[2] << endl;
+  cout << "c_str4[3] = " << c_str4[3] << endl;
+  cout << "c_str4[4] = " << c_str4[4] << endl;
+  cout << "c_str4[5] = " << c_str4[5] << endl;
+  cout << "c_str4[6] = " << c_str4[6] << endl;
+  cout << "c_str4[7] = " << c_str4[7] << endl;
+  cout << "c_str4[8] = " << c_str4[8] << endl;
+  cout << "c_str4[9] = " << c_str4[9] << endl;
 {% endhighlight %}
 
 以下XCode可以正常執行，會在第2個字元以後補上\0(也就是ascii code = 0，也稱 null character)
@@ -218,8 +218,8 @@ c_str4[9] = x00
 
 若一開始把字串的記憶體位址的值全設為ascii code 0，就不會出現上述問題。
 {% highlight c++ linenos %}
-    char c_str4[10] = {0};
-    strncpy(c_str4,"hello",2);
+  char c_str4[10] = {0};
+  strncpy(c_str4,"hello",2);
 {% endhighlight %}
 
 
@@ -231,10 +231,10 @@ sizeof()是計算字串變數全部記憶體大小。
 
 {% highlight c++ linenos %}
 int main() {
-    char c_str4[10] = "hello!";
-    cout << "c_str4 size:" << sizeof(c_str4) << endl;
-    cout << "c_str4長度:" << strlen(c_str4) << endl;
-    return 0;
+  char c_str4[10] = "hello!";
+  cout << "c_str4 size:" << sizeof(c_str4) << endl;
+  cout << "c_str4長度:" << strlen(c_str4) << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -246,13 +246,13 @@ c_str4長度:6
 ## 字串連接 strcat
 
 {% highlight c++ linenos %}
-    char c_str1[6] = {'h','e','l','\0'};
-    //[]可為空
-    char c_str2[] = {'h','e','l','l','o','\0'};
-    char c_str3[10];
-    char c_str4[20] = {'t','e'};
-    strcpy(c_str3, c_str1);
-    cout << "c_str3 + c_str4 = " << strcat(c_str3,c_str4) << endl;
+  char c_str1[6] = {'h','e','l','\0'};
+  //[]可為空
+  char c_str2[] = {'h','e','l','l','o','\0'};
+  char c_str3[10];
+  char c_str4[20] = {'t','e'};
+  strcpy(c_str3, c_str1);
+  cout << "c_str3 + c_str4 = " << strcat(c_str3,c_str4) << endl;
 {% endhighlight %}
 
 ```
@@ -272,10 +272,10 @@ strcmp(s1,s2)
 
 {% highlight c++ linenos %}
 int main() {
-    char* s1 = "abc";
-    char* s2 = "abc";
-    cout << strcmp(s1,s2) << endl;
-    return 0;
+  char* s1 = "abc";
+  char* s2 = "abc";
+  cout << strcmp(s1,s2) << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -286,10 +286,10 @@ int main() {
 ### s1>s2傳回正數ascii code
 {% highlight c++ linenos %}
 int main() {
-    char* s1 = "abc";
-    char* s2 = "ab";
-    cout << strcmp(s1,s2) << endl;
-    return 0;
+  char* s1 = "abc";
+  char* s2 = "ab";
+  cout << strcmp(s1,s2) << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -299,10 +299,10 @@ int main() {
 ### s1<s2傳回負數ascii code
 {% highlight c++ linenos %}
 int main() {
-    char* s1 = "ab";
-    char* s2 = "abc";
-    cout << strcmp(s1,s2) << endl;
-    return 0;
+  char* s1 = "ab";
+  char* s2 = "abc";
+  cout << strcmp(s1,s2) << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -326,12 +326,12 @@ using namespace std;
 const int DAYS = 7; //字串數，7個字串
 const int MAX = 10; // 每個字串最大長度，包含\0
 int main() {
-    char str[DAYS][MAX] = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
-    for(int i = 0; i < DAYS; i++) {
-        //印出字串
-        cout << str[i] << endl;
-    }
-    return 0;
+  char str[DAYS][MAX] = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
+  for (int i = 0; i < DAYS; i++) {
+    //印出字串
+    cout << str[i] << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -354,13 +354,13 @@ const int MAX_MONTH = 12;
 //9個字元+\0
 const int MAX = 10;
 int main() {
-    char mon_arr[MAX_MONTH][MAX] = {"January","February","March","April","May","June","July","August","September","October","November","December"};
-    int month;
-    cout << "請輸入數字月份(1~12):";
-    cin >> month;
-    //陣列索引介於0..11，所以要把month-1
-    cout << mon_arr[month-1] << endl;
-    return 0;
+  char mon_arr[MAX_MONTH][MAX] = {"January","February","March","April","May","June","July","August","September","October","November","December"};
+  int month;
+  cout << "請輸入數字月份(1~12):";
+  cin >> month;
+  //陣列索引介於0..11，所以要把month-1
+  cout << mon_arr[month-1] << endl;
+  return 0;
 }
 {% endhighlight %}
 

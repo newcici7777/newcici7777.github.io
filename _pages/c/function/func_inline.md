@@ -12,34 +12,34 @@ keywords: c++, function inline
 
 {% highlight c++ linenos %}
 inline void print(string s) {
-    cout << s << endl;
+  cout << s << endl;
 }
 int main() {
-    print("test");
-    print("abcdef");
-    print("aaaa");
-    return 0;
-}    
+  print("test");
+  print("abcdef");
+  print("aaaa");
+  return 0;
+}  
 {% endhighlight %}
 
 轉變內嵌函式，程式在執行時就會變成以下這樣
 
 {% highlight c++ linenos %}
 int main() {
-    {
-        string s = "test";
-        cout << s << endl;
-    }
-    {
-        string s = "abcdef";
-        cout << s << endl;
-    }
-    {
-        string s = "aaaa";
-        cout << s << endl;
-    }
-    return 0;
-}    
+  {
+    string s = "test";
+    cout << s << endl;
+  }
+  {
+    string s = "abcdef";
+    cout << s << endl;
+  }
+  {
+    string s = "aaaa";
+    cout << s << endl;
+  }
+  return 0;
+}  
 {% endhighlight %}
 
 若是呼叫print() 1000次就會copy程式碼1000份在主程式中，占用記憶體空間。(變數也是占記憶體位址)

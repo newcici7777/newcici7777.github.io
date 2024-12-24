@@ -12,12 +12,12 @@ keywords: c++, nullptr
 #include <iostream>
 using namespace std;
 void func1(int* param1) {
-    cout << "param1=" << *param1 << endl;
+  cout << "param1=" << *param1 << endl;
 }
 int main() {
-    int* p = nullptr;
-    func1(p);
-    return 0;
+  int* p = nullptr;
+  func1(p);
+  return 0;
 }
 {% endhighlight %}
 
@@ -34,13 +34,13 @@ int main() {
 #include <iostream>
 using namespace std;
 void func1(int* param1) {
-    if(param1 == nullptr) return;
-    cout << "param1=" << *param1 << endl;
+  if(param1 == nullptr) return;
+  cout << "param1=" << *param1 << endl;
 }
 int main() {
-    int* p = nullptr;
-    func1(p);
-    return 0;
+  int* p = nullptr;
+  func1(p);
+  return 0;
 }
 {% endhighlight %}
 
@@ -52,9 +52,9 @@ delete nullptr 不會有編譯錯誤與執行錯誤，以下程式不會有任�
 
 {% highlight c++ linenos %}
 int main() {
-    int* p = nullptr;
-    delete p;
-    return 0;
+  int* p = nullptr;
+  delete p;
+  return 0;
 }
 {% endhighlight %}
 
@@ -79,14 +79,14 @@ int main() {
 
 {% highlight c++ linenos %}
 void func3(int n) {
-    printf("n = %d\n",n);//印出值
+  printf("n = %d\n",n);//印出值
 }
 void func3(int* p) {
-    printf("位址 = %#x\n",p);//印出位址
+  printf("位址 = %#x\n",p);//印出位址
 }
 int main() {
-    func3(0);
-    return 0;
+  func3(0);
+  return 0;
 }
 {% endhighlight %}
 
@@ -122,17 +122,17 @@ func3(static_cast<int *>(nullptr));
 
 {% highlight c++ linenos %}
 void func3(int n) {
-    printf("n = %d\n",n);//印出值
+  printf("n = %d\n",n);//印出值
 }
 void func3(int* p) {
-    printf("位址 = %#x\n",p);//印出位址
+  printf("位址 = %#x\n",p);//印出位址
 }
 int main() {
-    func3(0);
-    func3((int *)NULL);
-    func3(static_cast<int *>(NULL));
-    func3(nullptr);
-    return 0;
+  func3(0);
+  func3((int *)NULL);
+  func3(static_cast<int *>(NULL));
+  func3(nullptr);
+  return 0;
 }
 {% endhighlight %}
 
@@ -149,10 +149,10 @@ n = 0
 以下程式碼印出nullptr指標的位址，會印出0。
 {% highlight c++ linenos %}
 int main() {
-    int* p = nullptr;
-    cout << p << endl;
-    delete p;
-    return 0;
+  int* p = nullptr;
+  cout << p << endl;
+  delete p;
+  return 0;
 }
 {% endhighlight %}
 
@@ -171,10 +171,10 @@ int main() {
 ## 容易混淆寫法
 
 {% highlight c++ linenos %}
-    int a = 0 ;
-    int * p1 = 0 ; //right
-    int * p2 = NULL ; //right
-    int * p3 = a;//error
+  int a = 0 ;
+  int * p1 = 0 ; //right
+  int * p2 = NULL ; //right
+  int * p3 = a;//error
 {% endhighlight %}
 
 第1行定義整數資料型態的a變數，值為0

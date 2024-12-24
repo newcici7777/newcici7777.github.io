@@ -19,15 +19,15 @@ Prerequisites:
 
 {% highlight c++ linenos %}
 struct Address{
-    int zip;
-    char addr[100];
+  int zip;
+  char addr[100];
 };
 struct Student{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
-    Address address;
+  //學生姓名
+  char* name;
+  //學號
+  int id;
+  Address address;
 };
 {% endhighlight %}
 
@@ -44,7 +44,7 @@ struct Student{
 ```
 
 {% highlight c++ linenos %}
-    Student student = {"Mary", 1,338, "桃園市xxx"};
+  Student student = {"Mary", 1,338, "桃園市xxx"};
 {% endhighlight %}
 
 ### 方式二
@@ -56,7 +56,7 @@ struct Student{
 ```
 
 {% highlight c++ linenos %}
-    Student student = {"Mary", 1,{338, "桃園市xxx"}};
+  Student student = {"Mary", 1,{338, "桃園市xxx"}};
 {% endhighlight %}
 
 ## 修改巢狀結構
@@ -80,9 +80,9 @@ student = {"Bill", 2, 100, "台北市xxx"};
 ```
 
 {% highlight c++ linenos %}
-    student.name = "Jeff";
-    student.id = 3;
-    student.address = {300,"新竹縣xxxx"};
+  student.name = "Jeff";
+  student.id = 3;
+  student.address = {300,"新竹縣xxxx"};
 {% endhighlight %}
 
 ### 單獨修改巢狀結構中的成員
@@ -90,7 +90,7 @@ student = {"Bill", 2, 100, "台北市xxx"};
 若巢狀結構中的成員是字串，修改方式如下
 
 {% highlight c++ linenos %}
-    strcpy(student.address.addr, "新竹縣xxxx");
+  strcpy(student.address.addr, "新竹縣xxxx");
 {% endhighlight %}
 
 完整程式碼
@@ -99,28 +99,28 @@ student = {"Bill", 2, 100, "台北市xxx"};
 #include <iostream>
 using namespace std;
 struct Address{
-    int zip;
-    char addr[100];
+  int zip;
+  char addr[100];
 };
 struct Student{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
-    Address address;
+  //學生姓名
+  char* name;
+  //學號
+  int id;
+  Address address;
 };
 int main() {
-    Student student = {"Mary", 1, {338, "桃園市xxx"}};
-    student.name = "Jeff";
-    student.id = 3;
-    student.address.zip = 300;
-    strcpy(student.address.addr, "新竹縣xxxx");
-    cout << "After:" << endl;
-    cout << student.name << endl;
-    cout << student.id << endl;
-    cout << student.address.zip << endl;
-    cout << student.address.addr << endl;
-    return 0;
+  Student student = {"Mary", 1, {338, "桃園市xxx"}};
+  student.name = "Jeff";
+  student.id = 3;
+  student.address.zip = 300;
+  strcpy(student.address.addr, "新竹縣xxxx");
+  cout << "After:" << endl;
+  cout << student.name << endl;
+  cout << student.id << endl;
+  cout << student.address.zip << endl;
+  cout << student.address.addr << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -146,33 +146,33 @@ student.address.zip
 #include <iostream>
 using namespace std;
 struct Address{
-    int zip;
-    char addr[100];
+  int zip;
+  char addr[100];
 };
 struct Student{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
-    Address address;
+  //學生姓名
+  char* name;
+  //學號
+  int id;
+  Address address;
 };
 int main() {
-    Student student = {"Mary", 1, {338, "桃園市xxx"}};
-    cout << "Before:" << endl;
-    student = {"Bill", 2, 100, "台北市xxx"};
-    cout << student.name << endl;
-    cout << student.id << endl;
-    cout << student.address.zip << endl;
-    cout << student.address.addr << endl;
-    student.name = "Jeff";
-    student.id = 3;
-    student.address = {300,"新竹縣xxxx"};
-    cout << "After:" << endl;
-    cout << student.name << endl;
-    cout << student.id << endl;
-    cout << student.address.zip << endl;
-    cout << student.address.addr << endl;
-    return 0;
+  Student student = {"Mary", 1, {338, "桃園市xxx"}};
+  cout << "Before:" << endl;
+  student = {"Bill", 2, 100, "台北市xxx"};
+  cout << student.name << endl;
+  cout << student.id << endl;
+  cout << student.address.zip << endl;
+  cout << student.address.addr << endl;
+  student.name = "Jeff";
+  student.id = 3;
+  student.address = {300,"新竹縣xxxx"};
+  cout << "After:" << endl;
+  cout << student.name << endl;
+  cout << student.id << endl;
+  cout << student.address.zip << endl;
+  cout << student.address.addr << endl;
+  return 0;
 }
 {% endhighlight %}
 

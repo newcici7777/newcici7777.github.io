@@ -8,17 +8,17 @@ keywords: c++, printf
 
 ### 區域變數
 
-一對花括號`{}`包起來的就是程式碼區塊(block)或函式主體(Body)。程式碼區塊可以是if(){}或while(){}的程式碼區塊，但這篇要探討的是只有花括號`{}`包起來的程式碼區塊。
+一對花括號`{}`包起來的就是程式碼區塊(block)或函式主體(Body)。程式碼區塊可以是if (){}或while(){}的程式碼區塊，但這篇要探討的是只有花括號`{}`包起來的程式碼區塊。
 
 {% highlight c++ linenos %}
 int main() {
-    int var11 = 100;
-    {
-        int var11 = 10;
-        cout << "inner var11 = " << var11 << endl;
-    }
-    cout << "outer var11 = " << var11 << endl;
-    return 0;
+  int var11 = 100;
+  {
+    int var11 = 10;
+    cout << "inner var11 = " << var11 << endl;
+  }
+  cout << "outer var11 = " << var11 << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -37,16 +37,16 @@ outer var11 = 100
 
 {% highlight c++ linenos %}
 int main() {
-    int var11 = 100;
-    int var12 = 200;
-    {
-        int var11 = 10;
-        cout << "inner var11 = " << var11 << endl;
-        //在`{}`區塊中，可以讀取外部變數
-        cout << "inner var12 = " << var12 << endl;
-    }
-    cout << "outer var11 = " << var11 << endl;
-    return 0;
+  int var11 = 100;
+  int var12 = 200;
+  {
+    int var11 = 10;
+    cout << "inner var11 = " << var11 << endl;
+    //在`{}`區塊中，可以讀取外部變數
+    cout << "inner var12 = " << var12 << endl;
+  }
+  cout << "outer var11 = " << var11 << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -68,18 +68,18 @@ outer var11 = 100
 //定義全域變數var11
 int var11 = 100;
 int main() {
-    //定義區域變數var11
-    int var12 = 200;
-    {
-        //印出區域變數var11
-        int var11 = 10;
-        cout << "inner var11 = " << var11 << endl;
-        cout << "inner var12 = " << var12 << endl;
+  //定義區域變數var11
+  int var12 = 200;
+  {
+    //印出區域變數var11
+    int var11 = 10;
+    cout << "inner var11 = " << var11 << endl;
+    cout << "inner var12 = " << var12 << endl;
 
-        //印出全域變數var11
-        cout << "outer var11 = " << ::var11 << endl;
-    }
-    return 0;
+    //印出全域變數var11
+    cout << "outer var11 = " << ::var11 << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -95,8 +95,8 @@ outer var11 = 100
 變數i的有效範圍，只有在`{}`程式區塊中，離開`{}`程式區塊，區域變數i就無法在外部讀取。
 
 {% highlight c++ linenos %}
-for(int i = 0; i < 10; i++) {
-    
+for (int i = 0; i < 10; i++) {
+  
 }
 {% endhighlight %}
 
@@ -104,7 +104,7 @@ for(int i = 0; i < 10; i++) {
 
 {% highlight c++ linenos %}
 int i = 0;
-for(; i < 10; i++) {    
+for (; i < 10; i++) {  
 }
 cout << "i = " << i << endl;
 {% endhighlight %}
@@ -121,16 +121,16 @@ i = 10
 
 {% highlight c++ linenos %}
 int main() {
-    //宣告指標
-    int* p = 0;//0就是nullptr 代表沒有指向任何記憶空間
-    {
-        int** pp = &p;//存放指標的位址，要用雙指標
-        *pp = new int(3);//雙指標取值，並動態配置記憶體空間
-    }
+  //宣告指標
+  int* p = 0;//0就是nullptr 代表沒有指向任何記憶空間
+  {
+    int** pp = &p;//存放指標的位址，要用雙指標
+    *pp = new int(3);//雙指標取值，並動態配置記憶體空間
+  }
 
-    //印出p指標的位址，去p指標的記憶體位址取值，並印出來
-    cout << "p=" << p << ",*p=" << *p << endl;
-    return 0;
+  //印出p指標的位址，去p指標的記憶體位址取值，並印出來
+  cout << "p=" << p << ",*p=" << *p << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -146,14 +146,14 @@ p=0x60000000c000,*p=3
 {% highlight c++ linenos %}
 void initMemory(int** pp) //存放指標的位址，要用雙指標
 {
-    *pp = new int(3);//雙指標取值，並動態配置記憶體空間
+  *pp = new int(3);//雙指標取值，並動態配置記憶體空間
 }
 int main() {
-    //宣告指標
-    int* p = 0;//0就是nullptr 代表沒有指向任何記憶空間
-    initMemory(&p);//指標的位址傳入函式。
-    cout << "p=" << p << ",*p=" << *p << endl;
-    return 0;
+  //宣告指標
+  int* p = 0;//0就是nullptr 代表沒有指向任何記憶空間
+  initMemory(&p);//指標的位址傳入函式。
+  cout << "p=" << p << ",*p=" << *p << endl;
+  return 0;
 }
 {% endhighlight %}
 

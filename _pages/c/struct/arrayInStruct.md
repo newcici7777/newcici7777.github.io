@@ -10,11 +10,11 @@ keywords: c++, Array within a Structure
 
 {% highlight c++ linenos %}
 struct Student{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
-    int score[3];
+  //學生姓名
+  char* name;
+  //學號
+  int id;
+  int score[3];
 };
 {% endhighlight %}
 
@@ -23,13 +23,13 @@ struct Student{
 ### 方式一
 
 {% highlight c++ linenos %}
-    Student student = {"Mary", 1, {60,70,80}};
+  Student student = {"Mary", 1, {60,70,80}};
 {% endhighlight %}
 
 ### 方式二
 
 {% highlight c++ linenos %}
-    Student student = {"Mary", 1, 60,70,80};
+  Student student = {"Mary", 1, 60,70,80};
 {% endhighlight %}
 
 ## 存取結構中的陣列
@@ -40,9 +40,9 @@ struct Student{
 結構.成員[索引] = 值
 ```
 {% highlight c++ linenos %}
-    student.score[0] = 50;
-    student.score[1] = 60;
-    student.score[2] = 70;
+  student.score[0] = 50;
+  student.score[1] = 60;
+  student.score[2] = 70;
 {% endhighlight %}
 
 讀取寫法
@@ -50,9 +50,9 @@ struct Student{
 cout << 結構.成員[索引] << endl;
 ```
 {% highlight c++ linenos %}
-    for(int i = 0; i < 3; i++) {
-        cout << "score[" << i << "] = " <<student.score[i] << endl;
-    }
+  for(int i = 0; i < 3; i++) {
+    cout << "score[" << i << "] = " <<student.score[i] << endl;
+  }
 {% endhighlight %}
 
 
@@ -63,25 +63,25 @@ cout << 結構.成員[索引] << endl;
 using namespace std;
 
 struct Student{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
-    //結構中的陣列
-    int score[3];
+  //學生姓名
+  char* name;
+  //學號
+  int id;
+  //結構中的陣列
+  int score[3];
 };
 int main() {
-    //初始化
-    Student student = {"Mary", 1, 60,70,80};
-    //修改結構中的陣列
-    student.score[0] = 50;
-    student.score[1] = 60;
-    student.score[2] = 70;
-    //印出陣列元素
-    for(int i = 0; i < 3; i++) {
-        cout << "score[" << i << "] = " <<student.score[i] << endl;
-    }
-    return 0;
+  //初始化
+  Student student = {"Mary", 1, 60,70,80};
+  //修改結構中的陣列
+  student.score[0] = 50;
+  student.score[1] = 60;
+  student.score[2] = 70;
+  //印出陣列元素
+  for(int i = 0; i < 3; i++) {
+    cout << "score[" << i << "] = " <<student.score[i] << endl;
+  }
+  return 0;
 }
 
 {% endhighlight %}
@@ -100,26 +100,26 @@ void printParent(Student* student);
 using namespace std;
 const int PARENT_SIZE = 2;
 struct Student{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
-    //定義二維陣列
-    char parent[PARENT_SIZE][100];
+  //學生姓名
+  char* name;
+  //學號
+  int id;
+  //定義二維陣列
+  char parent[PARENT_SIZE][100];
 };
 //函式參數是指向結構的指標
 void printParent(Student* student) {
-    for(int i = 0; i < PARENT_SIZE; i++) {
-        //因為是指標，所以存取成員使用->
-        cout << student->parent[i] << endl;
-    }
+  for(int i = 0; i < PARENT_SIZE; i++) {
+    //因為是指標，所以存取成員使用->
+    cout << student->parent[i] << endl;
+  }
 }
 int main() {
-    //初始化
-    Student student = {"Mary", 1, {"Alice","Bill"}};
-    //把結構的位址傳入函式
-    printParent(&student);
-    return 0;
+  //初始化
+  Student student = {"Mary", 1, {"Alice","Bill"}};
+  //把結構的位址傳入函式
+  printParent(&student);
+  return 0;
 }
 {% endhighlight %}
 

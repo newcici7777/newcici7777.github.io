@@ -1228,9 +1228,9 @@
 4
 5
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"變數c位址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"變數c位址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1262,20 +1262,20 @@
 17
 </pre></td><td class="code"><pre><span class="c1">//宣告printAddr的函式，參數資料型態為void*指標</span>
 <span class="kt">void</span> <span class="nf">printAddr</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//印出位址</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//印出位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="c1">//將整數i變數的位址傳入</span>
-    <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">i</span><span class="p">);</span>
-    <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
-    <span class="c1">//將字元c變數的位址傳入</span>
-    <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="p">);</span>
-    <span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mf">150.222</span><span class="p">;</span>
-    <span class="c1">//將浮點數d變數的位址傳入</span>
-    <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">d</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="c1">//將整數i變數的位址傳入</span>
+  <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">i</span><span class="p">);</span>
+  <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
+  <span class="c1">//將字元c變數的位址傳入</span>
+  <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="p">);</span>
+  <span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mf">150.222</span><span class="p">;</span>
+  <span class="c1">//將浮點數d變數的位址傳入</span>
+  <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">d</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1326,8 +1326,8 @@
 3
 4
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">printAddr</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//編譯失敗，不能對p指標使用取值運算子*，因為它是void*指標資料型態，必須轉型後才能對指標取出內容</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//編譯失敗，不能對p指標使用取值運算子*，因為它是void*指標資料型態，必須轉型後才能對指標取出內容</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1343,13 +1343,13 @@
 8
 9
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">printAddr</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//先將p指標轉型成char*指標，接著使用`取值運算子*`取出指標位址中的內容</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//先將p指標轉型成char*指標，接著使用`取值運算子*`取出指標位址中的內容</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
-    <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
+  <span class="n">printAddr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1375,8 +1375,8 @@ a
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="n">rand</span><span class="p">()</span><span class="o">%</span><span class="mi">100</span><span class="p">;</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"rand = %d </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">num</span><span class="p">);</span>
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="n">rand</span><span class="p">()</span><span class="o">%</span><span class="mi">100</span><span class="p">;</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"rand = %d </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">num</span><span class="p">);</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 </section>
@@ -1569,7 +1569,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

@@ -1271,52 +1271,52 @@
 49
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Stack</span><span class="p">{</span>
 <span class="nl">private:</span>
-    <span class="kt">int</span> <span class="o">*</span><span class="n">items</span><span class="p">;</span> <span class="c1">//陣列指標</span>
-    <span class="kt">int</span> <span class="n">stacksize</span><span class="p">;</span><span class="c1">//stack大小</span>
-    <span class="kt">int</span> <span class="n">top</span><span class="p">;</span><span class="c1">//目前stack的數量(stack 頂端)</span>
+  <span class="kt">int</span> <span class="o">*</span><span class="n">items</span><span class="p">;</span> <span class="c1">//陣列指標</span>
+  <span class="kt">int</span> <span class="n">stacksize</span><span class="p">;</span><span class="c1">//stack大小</span>
+  <span class="kt">int</span> <span class="n">top</span><span class="p">;</span><span class="c1">//目前stack的數量(stack 頂端)</span>
 <span class="nl">public:</span>
-    <span class="c1">//建構式，初始化成員stacksize與top</span>
-    <span class="n">Stack</span><span class="p">(</span><span class="kt">int</span> <span class="n">size</span><span class="p">)</span><span class="o">:</span><span class="n">stacksize</span><span class="p">(</span><span class="n">size</span><span class="p">),</span><span class="n">top</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//建立int陣列指標</span>
-        <span class="n">items</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">stacksize</span><span class="p">];</span>
+  <span class="c1">//建構式，初始化成員stacksize與top</span>
+  <span class="n">Stack</span><span class="p">(</span><span class="kt">int</span> <span class="n">size</span><span class="p">)</span><span class="o">:</span><span class="n">stacksize</span><span class="p">(</span><span class="n">size</span><span class="p">),</span><span class="n">top</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//建立int陣列指標</span>
+    <span class="n">items</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">stacksize</span><span class="p">];</span>
+  <span class="p">}</span>
+  <span class="o">~</span><span class="n">Stack</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">delete</span> <span class="p">[]</span> <span class="n">items</span><span class="p">;</span><span class="c1">//刪除陣列指標</span>
+    <span class="n">items</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span><span class="c1">//指向null</span>
+  <span class="p">}</span>
+  <span class="cm">/**
+   判斷是否為空
+   */</span>
+  <span class="kt">bool</span> <span class="n">isEmpty</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">top</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="cm">/**
+   判斷是否已滿
+   */</span>
+  <span class="kt">bool</span> <span class="n">isfull</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">top</span> <span class="o">==</span> <span class="n">stacksize</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="cm">/**
+   push stack
+   */</span>
+  <span class="kt">bool</span> <span class="n">push</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//如果stack數量 小於 stacksize</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">top</span> <span class="o">&lt;</span> <span class="n">stacksize</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">items</span><span class="p">[</span><span class="n">top</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="n">item</span><span class="p">;</span><span class="c1">//把item加入</span>
+      <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="o">~</span><span class="n">Stack</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">delete</span> <span class="p">[]</span> <span class="n">items</span><span class="p">;</span><span class="c1">//刪除陣列指標</span>
-        <span class="n">items</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span><span class="c1">//指向null</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="cm">/**
+   pop stack
+   */</span>
+  <span class="kt">bool</span> <span class="n">pop</span><span class="p">(</span><span class="kt">int</span><span class="o">&amp;</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">top</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">item</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="o">--</span><span class="n">top</span><span class="p">];</span>
+      <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="cm">/**
-     判斷是否為空
-     */</span>
-    <span class="kt">bool</span> <span class="n">isEmpty</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">top</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="cm">/**
-     判斷是否已滿
-     */</span>
-    <span class="kt">bool</span> <span class="n">isfull</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">top</span> <span class="o">==</span> <span class="n">stacksize</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="cm">/**
-     push stack
-     */</span>
-    <span class="kt">bool</span> <span class="n">push</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//如果stack數量 小於 stacksize</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">top</span> <span class="o">&lt;</span> <span class="n">stacksize</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">items</span><span class="p">[</span><span class="n">top</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="n">item</span><span class="p">;</span><span class="c1">//把item加入</span>
-            <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="cm">/**
-     pop stack
-     */</span>
-    <span class="kt">bool</span> <span class="n">pop</span><span class="p">(</span><span class="kt">int</span><span class="o">&amp;</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">top</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">item</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="o">--</span><span class="n">top</span><span class="p">];</span>
-            <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1369,18 +1369,18 @@
 13
 14
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Stack</span> <span class="n">myStack</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
-    <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-    <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-    <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
-    <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
-    <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">item</span><span class="p">;</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">myStack</span><span class="p">.</span><span class="n">isEmpty</span><span class="p">()</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">myStack</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"item = "</span> <span class="o">&lt;&lt;</span> <span class="n">item</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Stack</span> <span class="n">myStack</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+  <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+  <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+  <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
+  <span class="n">myStack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+  <span class="kt">int</span> <span class="n">item</span><span class="p">;</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">myStack</span><span class="p">.</span><span class="n">isEmpty</span><span class="p">()</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">myStack</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"item = "</span> <span class="o">&lt;&lt;</span> <span class="n">item</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1411,67 +1411,67 @@ item = 1
 <span class="markline">typedef int DataType;</span>
 class Stack{
 private:
-    <span class="markline">DataType</span> *items; //陣列指標
-    int stacksize;//stack大小
-    int top;//目前stack的數量(stack 頂端)
+  <span class="markline">DataType</span> *items; //陣列指標
+  int stacksize;//stack大小
+  int top;//目前stack的數量(stack 頂端)
 public:
-    //建構式，初始化成員stacksize與top
-    Stack(int size):stacksize(size),top(0) {
-        //建立int陣列指標
-        items = new <span class="markline">DataType</span>[stacksize];
+  //建構式，初始化成員stacksize與top
+  Stack(int size):stacksize(size),top(0) {
+    //建立int陣列指標
+    items = new <span class="markline">DataType</span>[stacksize];
+  }
+  ~Stack() {
+    delete [] items;//刪除陣列指標
+    items = nullptr;//指向null
+  }
+  /**
+   判斷是否為空
+   */
+  bool isEmpty() const {
+    return top == 0;
+  }
+  /**
+   判斷是否已滿
+   */
+  bool isfull() {
+    return top == stacksize;
+  }
+  /**
+   push stack
+   */
+  bool push(const <span class="markline">DataType&amp;</span> item) {
+    //如果stack數量 小於 stacksize
+    if(top &lt; stacksize) {
+      items[top++] = item;//把item加入
+      return true;
     }
-    ~Stack() {
-        delete [] items;//刪除陣列指標
-        items = nullptr;//指向null
+    return false;
+  }
+  /**
+   pop stack
+   */
+  bool pop(<span class="markline">DataType&amp;</span> item) {
+    if(top &gt; 0) {
+      item = items[--top];
+      return true;
     }
-    /**
-     判斷是否為空
-     */
-    bool isEmpty() const {
-        return top == 0;
-    }
-    /**
-     判斷是否已滿
-     */
-    bool isfull() {
-        return top == stacksize;
-    }
-    /**
-     push stack
-     */
-    bool push(const <span class="markline">DataType&amp;</span> item) {
-        //如果stack數量 小於 stacksize
-        if(top &lt; stacksize) {
-            items[top++] = item;//把item加入
-            return true;
-        }
-        return false;
-    }
-    /**
-     pop stack
-     */
-    bool pop(<span class="markline">DataType&amp;</span> item) {
-        if(top &gt; 0) {
-            item = items[--top];
-            return true;
-        }
-        return false;
-    }
+    return false;
+  }
 };
 int main() {
-    Stack myStack(5);
-    myStack.push(1);
-    myStack.push(2);
-    myStack.push(3);
-    myStack.push(4);
-    myStack.push(5);
-    <span class="markline">DataType</span> item;
-    while(myStack.isEmpty() == false) {
-        myStack.pop(item);
-        cout &lt;&lt; "item = " &lt;&lt; item &lt;&lt; endl;
-    }
-    return 0;
-}    
+  Stack myStack(5);
+  myStack.push(1);
+  myStack.push(2);
+  myStack.push(3);
+  myStack.push(4);
+  myStack.push(5);
+  <span class="markline">DataType</span> item;
+  while(myStack.isEmpty() == false) {
+    myStack.pop(item);
+    cout &lt;&lt; "item = " &lt;&lt; item &lt;&lt; endl;
+  }
+  return 0;
+}  
 </pre>
 
 <h2 id="stack-模板實作">Stack 模板實作</h2>
@@ -1482,67 +1482,67 @@ int main() {
 <span class="markline">template &lt;class DataType&gt;</span>
 class Stack{
 private:
-    DataType *items; //陣列指標
-    int stacksize;//stack大小
-    int top;//目前stack的數量(stack 頂端)
+  DataType *items; //陣列指標
+  int stacksize;//stack大小
+  int top;//目前stack的數量(stack 頂端)
 public:
-    //建構式，初始化成員stacksize與top
-    Stack(int size):stacksize(size),top(0) {
-        //建立int陣列指標
-        items = new DataType[stacksize];
+  //建構式，初始化成員stacksize與top
+  Stack(int size):stacksize(size),top(0) {
+    //建立int陣列指標
+    items = new DataType[stacksize];
+  }
+  ~Stack() {
+    delete [] items;//刪除陣列指標
+    items = nullptr;//指向null
+  }
+  /**
+   判斷是否為空
+   */
+  bool isEmpty() const {
+    return top == 0;
+  }
+  /**
+   判斷是否已滿
+   */
+  bool isfull() {
+    return top == stacksize;
+  }
+  /**
+   push stack
+   */
+  bool push(const DataType&amp; item) {
+    //如果stack數量 小於 stacksize
+    if(top &lt; stacksize) {
+      items[top++] = item;//把item加入
+      return true;
     }
-    ~Stack() {
-        delete [] items;//刪除陣列指標
-        items = nullptr;//指向null
+    return false;
+  }
+  /**
+   pop stack
+   */
+  bool pop(DataType&amp; item) {
+    if(top &gt; 0) {
+      item = items[--top];
+      return true;
     }
-    /**
-     判斷是否為空
-     */
-    bool isEmpty() const {
-        return top == 0;
-    }
-    /**
-     判斷是否已滿
-     */
-    bool isfull() {
-        return top == stacksize;
-    }
-    /**
-     push stack
-     */
-    bool push(const DataType&amp; item) {
-        //如果stack數量 小於 stacksize
-        if(top &lt; stacksize) {
-            items[top++] = item;//把item加入
-            return true;
-        }
-        return false;
-    }
-    /**
-     pop stack
-     */
-    bool pop(DataType&amp; item) {
-        if(top &gt; 0) {
-            item = items[--top];
-            return true;
-        }
-        return false;
-    }
+    return false;
+  }
 };
 int main() {
-    Stack<span class="markline">&lt;int&gt;</span> myStack(5);
-    myStack.push(1);
-    myStack.push(2);
-    myStack.push(3);
-    myStack.push(4);
-    myStack.push(5);
-    <span class="markline">int</span> item;
-    while(myStack.isEmpty() == false) {
-        myStack.pop(item);
-        cout &lt;&lt; "item = " &lt;&lt; item &lt;&lt; endl;
-    }
-    return 0;
-}    
+  Stack<span class="markline">&lt;int&gt;</span> myStack(5);
+  myStack.push(1);
+  myStack.push(2);
+  myStack.push(3);
+  myStack.push(4);
+  myStack.push(5);
+  <span class="markline">int</span> item;
+  while(myStack.isEmpty() == false) {
+    myStack.pop(item);
+    cout &lt;&lt; "item = " &lt;&lt; item &lt;&lt; endl;
+  }
+  return 0;
+}  
 </pre>
 </section>
             </div><div class="search-results">
@@ -1734,7 +1734,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

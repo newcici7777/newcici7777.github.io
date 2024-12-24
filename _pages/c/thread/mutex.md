@@ -14,22 +14,22 @@ keywords: c++, mutex
 #include <thread>
 using namespace std;
 void func(string msg) {
-    //每一秒印1次，這裡是執行10秒
-    for(int i = 0; i < 10; i++) {
-        cout << "i = " << i << ", msg =" << msg << endl;
-        sleep(1);//停1秒鐘
-    }
+  //每一秒印1次，這裡是執行10秒
+  for (int i = 0; i < 10; i++) {
+    cout << "i = " << i << ", msg =" << msg << endl;
+    sleep(1);//停1秒鐘
+  }
 }
 int main() {
-    //建立執行緒t1
-    thread t1(func, "test test");
-    //建立執行緒t2
-    thread t2(func, "abcdefg abcdefg");
-    //執行緒t1被記憶體釋放
-    t1.join();
-    //執行緒t2被記憶體釋放
-    t2.join();
-    return 0;
+  //建立執行緒t1
+  thread t1(func, "test test");
+  //建立執行緒t2
+  thread t2(func, "abcdefg abcdefg");
+  //執行緒t1被記憶體釋放
+  t1.join();
+  //執行緒t2被記憶體釋放
+  t2.join();
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -106,13 +106,13 @@ using namespace std;
 //建立mutex互斥鎖
 mutex mtx;
 void func(string msg) {
-    //每一秒印1次，這裡是執行10秒
-    for(int i = 0; i < 10; i++) {
-        mtx.lock();//把門鎖上
-        cout << "i = " << i << ", msg =" << msg << endl;
-        sleep(1);//持有鎖後，再休眠1秒
-        mtx.unlock();//使用完畢，把門開鎖
-    }
+  //每一秒印1次，這裡是執行10秒
+  for (int i = 0; i < 10; i++) {
+    mtx.lock();//把門鎖上
+    cout << "i = " << i << ", msg =" << msg << endl;
+    sleep(1);//持有鎖後，再休眠1秒
+    mtx.unlock();//使用完畢，把門開鎖
+  }
 }
 {% endhighlight %}
 
@@ -143,16 +143,16 @@ i = 9, msg =test test
 
 {% highlight c++ linenos %}
 void func(string msg) {
-    //每一秒印1次，這裡是執行10秒
-    for(int i = 0; i < 10; i++) {
-        cout << "申請鎖的thread = " << this_thread::get_id() << endl;
-        mtx.lock();
-        cout << "鎖上的thread = " << this_thread::get_id() << endl;
-        cout << "i = " << i << ", msg =" << msg << endl;
-        sleep(1);//持有鎖後，再休眠1秒
-        cout << "開鎖的thread = " << this_thread::get_id() << endl;
-        mtx.unlock();
-    }
+  //每一秒印1次，這裡是執行10秒
+  for (int i = 0; i < 10; i++) {
+    cout << "申請鎖的thread = " << this_thread::get_id() << endl;
+    mtx.lock();
+    cout << "鎖上的thread = " << this_thread::get_id() << endl;
+    cout << "i = " << i << ", msg =" << msg << endl;
+    sleep(1);//持有鎖後，再休眠1秒
+    cout << "開鎖的thread = " << this_thread::get_id() << endl;
+    mtx.unlock();
+  }
 }
 {% endhighlight %}
 
@@ -160,30 +160,30 @@ void func(string msg) {
 
 {% highlight c++ linenos %}
 class Student {
-    //私有成員變數互斥鎖
-    mutex m_mutex;
+  //私有成員變數互斥鎖
+  mutex m_mutex;
 public:
-    void func(string msg) {
-        for(int i = 0; i < 10; i++) {
-            m_mutex.lock();
-            cout << "msg = " << msg << endl;
-            m_mutex.unlock();
-        }
+  void func(string msg) {
+    for (int i = 0; i < 10; i++) {
+      m_mutex.lock();
+      cout << "msg = " << msg << endl;
+      m_mutex.unlock();
     }
+  }
 };
 int main() {
-    Student student;//建立物件
-    thread t1(&Student::func, &student, "student1");
-    thread t2(&Student::func, &student, "student2");
-    thread t3(&Student::func, &student, "student3");
-    thread t4(&Student::func, &student, "student4");
-    thread t5(&Student::func, &student, "student5");
-    t1.join();
-    t2.join();
-    t3.join();
-    t4.join();
-    t5.join();
-    return 0;
+  Student student;//建立物件
+  thread t1(&Student::func, &student, "student1");
+  thread t2(&Student::func, &student, "student2");
+  thread t3(&Student::func, &student, "student3");
+  thread t4(&Student::func, &student, "student4");
+  thread t5(&Student::func, &student, "student5");
+  t1.join();
+  t2.join();
+  t3.join();
+  t4.join();
+  t5.join();
+  return 0;
 }
 {% endhighlight %}
 
@@ -211,22 +211,22 @@ msg = student5
 {% highlight c++ linenos %}
 mutex mtx;
 void func3() {
-    mtx.lock();//加鎖
-    cout << "func3" << endl;
-    mtx.unlock();//解鎖
+  mtx.lock();//加鎖
+  cout << "func3" << endl;
+  mtx.unlock();//解鎖
 }
 void func4() {
-    mtx.lock();//加鎖
-    cout << "func4" << endl;
-    func3();//呼叫func3
-    mtx.unlock();//解鎖
+  mtx.lock();//加鎖
+  cout << "func4" << endl;
+  func3();//呼叫func3
+  mtx.unlock();//解鎖
 }
 int main() {
-    //建立執行緒t1
-    thread t1(func4, "test test");
-    //執行緒t1被記憶體釋放
-    t1.join();
-    return 0;
+  //建立執行緒t1
+  thread t1(func4, "test test");
+  //執行緒t1被記憶體釋放
+  t1.join();
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -238,22 +238,22 @@ func4
 {% highlight c++ linenos %}
 recursive_mutex r_mtx;
 void func3() {
-    r_mtx.lock();//加鎖
-    cout << "func3" << endl;
-    r_mtx.unlock();//解鎖
+  r_mtx.lock();//加鎖
+  cout << "func3" << endl;
+  r_mtx.unlock();//解鎖
 }
 void func4() {
-    r_mtx.lock();//加鎖
-    cout << "func4" << endl;
-    func3();//呼叫func3
-    r_mtx.unlock();//解鎖
+  r_mtx.lock();//加鎖
+  cout << "func4" << endl;
+  func3();//呼叫func3
+  r_mtx.unlock();//解鎖
 }
 int main() {
-    //建立執行緒t1
-    thread t1(func4);
-    //執行緒t1被記憶體釋放
-    t1.join();
-    return 0;
+  //建立執行緒t1
+  thread t1(func4);
+  //執行緒t1被記憶體釋放
+  t1.join();
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -274,30 +274,30 @@ lock_guard<mutex類別名> mlock(mtx物件名);
 
 {% highlight c++ linenos %}
 void func2(string msg) {
-    //每一秒印1次，這裡是執行10秒
-    for(int i = 0; i < 10; i++) {
-        cout << "申請鎖的thread = " << this_thread::get_id() << endl;
-        //有效範圍scope 開始
-        {
-            lock_guard<mutex> mlock(mtx);//把門鎖上
-            cout << "鎖上的thread = " << this_thread::get_id() << endl;
-            cout << "i = " << i << ", msg =" << msg << endl;
-            sleep(1);//持有鎖後，再休眠1秒
-            cout << "開鎖的thread = " << this_thread::get_id() << endl;
-        }
-        //有效範圍scope 結束
+  //每一秒印1次，這裡是執行10秒
+  for (int i = 0; i < 10; i++) {
+    cout << "申請鎖的thread = " << this_thread::get_id() << endl;
+    //有效範圍scope 開始
+    {
+      lock_guard<mutex> mlock(mtx);//把門鎖上
+      cout << "鎖上的thread = " << this_thread::get_id() << endl;
+      cout << "i = " << i << ", msg =" << msg << endl;
+      sleep(1);//持有鎖後，再休眠1秒
+      cout << "開鎖的thread = " << this_thread::get_id() << endl;
     }
+    //有效範圍scope 結束
+  }
 }
 int main() {
-    //建立執行緒t1
-    thread t1(func2, "test test");
-    //建立執行緒t2
-    thread t2(func2, "abcdefg abcdefg");
-    //執行緒t1被記憶體釋放
-    t1.join();
-    //執行緒t2被記憶體釋放
-    t2.join();
-    return 0;
+  //建立執行緒t1
+  thread t1(func2, "test test");
+  //建立執行緒t2
+  thread t2(func2, "abcdefg abcdefg");
+  //執行緒t1被記憶體釋放
+  t1.join();
+  //執行緒t2被記憶體釋放
+  t2.join();
+  return 0;
 }
 {% endhighlight %}
 

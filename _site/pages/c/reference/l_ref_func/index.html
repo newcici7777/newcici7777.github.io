@@ -1239,7 +1239,7 @@
 <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
 <span class="c1">//返回全域變數x的參考別名</span>
 <span class="kt">int</span><span class="o">&amp;</span> <span class="n">setX</span><span class="p">(){</span>
-    <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1274,14 +1274,14 @@
 <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
 <span class="c1">//返回全域變數x的參考</span>
 <span class="kt">int</span><span class="o">&amp;</span> <span class="n">setX</span><span class="p">(){</span>
-    <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before x = "</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//將x全域變數參考，設值成99</span>
-    <span class="n">setX</span><span class="p">()</span> <span class="o">=</span> <span class="mi">99</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After x = "</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before x = "</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//將x全域變數參考，設值成99</span>
+  <span class="n">setX</span><span class="p">()</span> <span class="o">=</span> <span class="mi">99</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After x = "</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1300,8 +1300,8 @@ After x = 99
 3
 4
 </pre></td><td class="code"><pre><span class="kt">int</span><span class="o">&amp;</span> <span class="n">setX</span><span class="p">(){</span>
-    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1329,15 +1329,15 @@ After x = 99
 </pre></td><td class="code"><pre><span class="c1">//回傳值為參考別名</span>
 <span class="c1">//參數r為x的參考別名</span>
 <span class="kt">int</span><span class="o">&amp;</span> <span class="n">setX</span><span class="p">(</span><span class="kt">int</span><span class="o">&amp;</span> <span class="n">r</span><span class="p">){</span>
-    <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before x = "</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//x傳入函式，回傳x的參考</span>
-    <span class="n">setX</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">=</span> <span class="mi">99</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After x = "</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before x = "</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//x傳入函式，回傳x的參考</span>
+  <span class="n">setX</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">=</span> <span class="mi">99</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After x = "</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1379,15 +1379,15 @@ const int&amp; y = getValue(x);
 10
 11
 </pre></td><td class="code"><pre><span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">getValue</span><span class="p">(</span><span class="kt">int</span><span class="o">&amp;</span> <span class="n">z</span><span class="p">){</span>
-    <span class="n">z</span><span class="o">++</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">z</span><span class="p">;</span>
+  <span class="n">z</span><span class="o">++</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">z</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">y</span> <span class="o">=</span> <span class="n">getValue</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"x = "</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"y = "</span> <span class="o">&lt;&lt;</span> <span class="n">y</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">y</span> <span class="o">=</span> <span class="n">getValue</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"x = "</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"y = "</span> <span class="o">&lt;&lt;</span> <span class="n">y</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1586,7 +1586,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

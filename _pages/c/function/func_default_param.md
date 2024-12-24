@@ -10,12 +10,12 @@ keywords: c++, function
 
 {% highlight c++ linenos %}
 void func1(const string& msg = "這是預設值") {
-    cout << msg << endl;
+  cout << msg << endl;
 }
 int main() {
-    func1("test");
-    func1();
-    return 0;
+  func1("test");
+  func1();
+  return 0;
 }
 {% endhighlight %}
 
@@ -44,8 +44,8 @@ test
 void func1();
 int main() {
 	//呼叫函式
-    func1();
-    return 0;
+  func1();
+  return 0;
 }
 //定義函式
 void func1() {
@@ -60,13 +60,13 @@ void func1() {
 void func1(const string& msg = "這是預設值");
 int main() {
 	//呼叫函式
-    func1("test");
-    func1();
-    return 0;
+  func1("test");
+  func1();
+  return 0;
 }
 //定義函式
 void func1(const string& msg) {
-    cout << msg << endl;
+  cout << msg << endl;
 }
 {% endhighlight %}
 
@@ -83,15 +83,15 @@ test
 
 {% highlight c++ linenos %}
 void func1(int error_code, const string& msg1 = "這是預設值1", const string& msg2 = "這是預設值2") {
-    cout << "Error code: " << error_code << ", ";
-    cout << "Msg1: " << msg1 << ", ";
-    cout << "Msg2: " << msg2 << endl;
+  cout << "Error code: " << error_code << ", ";
+  cout << "Msg1: " << msg1 << ", ";
+  cout << "Msg2: " << msg2 << endl;
 }
 int main() {
-    func1(500, "Server Error!", "Server has some error.");
-    func1(404, "Not Found!");
-    func1(200);
-    return 0;
+  func1(500, "Server Error!", "Server has some error.");
+  func1(404, "Not Found!");
+  func1(200);
+  return 0;
 }
 {% endhighlight %}
 
@@ -106,21 +106,21 @@ Error code: 200, Msg1: 這是預設值1, Msg2: 這是預設值2
 下例中，傳值給第3個參數，前面2個參數都要設置。
 
 ```
-    func1(500, "Server Error!", "Server has some error.");
-    func1(404, "Not Found!");
+  func1(500, "Server Error!", "Server has some error.");
+  func1(404, "Not Found!");
 ```
 
 
 {% highlight c++ linenos %}
 void func1(int error_code, const string& msg1 = "這是預設值1", const string& msg2 = "這是預設值2") {
-    cout << "Error code: " << error_code << ", ";
-    cout << "Msg1: " << msg1 << ", ";
-    cout << "Msg2: " << msg2 << endl;
+  cout << "Error code: " << error_code << ", ";
+  cout << "Msg1: " << msg1 << ", ";
+  cout << "Msg2: " << msg2 << endl;
 }
 int main() {
-    func1(500, "Server Error!", "Server has some error.");
-    func1(404, "Not Found!");
-    return 0;
+  func1(500, "Server Error!", "Server has some error.");
+  func1(404, "Not Found!");
+  return 0;
 }
 {% endhighlight %}
 

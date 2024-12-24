@@ -47,14 +47,14 @@ keywords: c++, pointer, function pointer
 
 {% highlight c++ linenos %}
 int func1(int code, string msg) {
-    cout << "Err code = " << code << ", msg = " << msg << endl;
-    return code;
+  cout << "Err code = " << code << ", msg = " << msg << endl;
+  return code;
 }
 int main() {
-    int (*pf1)(int,string); //宣告函式指標變數pf1
-    pf1 = func1; //將func1函式設給pf1函式指標變數
-    pf1(404, "Page not found."); //使用函式指標pf1呼叫函式
-    return 0;
+  int (*pf1)(int,string); //宣告函式指標變數pf1
+  pf1 = func1; //將func1函式設給pf1函式指標變數
+  pf1(404, "Page not found."); //使用函式指標pf1呼叫函式
+  return 0;
 }
 {% endhighlight %}
 
@@ -98,15 +98,15 @@ using namespace std;
 //宣告Func1類型別名
 typedef int (*Func1)(int,string);
 int func1(int code, string msg) {
-    cout << "Err code = " << code << ", msg = " << msg << endl;
-    return code;
+  cout << "Err code = " << code << ", msg = " << msg << endl;
+  return code;
 }
 int main() {
-    //宣告指標變數pf1為Func1類型
-    Func1 pf1; //宣告函式指標變數pf1
-    pf1 = func1; //函式指標變數pf1設定函式
-    pf1(404, "Page not found.");//使用函式指標pf1呼叫函式
-    return 0;
+  //宣告指標變數pf1為Func1類型
+  Func1 pf1; //宣告函式指標變數pf1
+  pf1 = func1; //函式指標變數pf1設定函式
+  pf1(404, "Page not found.");//使用函式指標pf1呼叫函式
+  return 0;
 }
 {% endhighlight %}
 
@@ -121,7 +121,7 @@ Err code = 404, msg = Page not found.
 
 {% highlight c++ linenos %}
 void print404Msg(int (*pf1)(int,string), string msg) {
-    pf1(404, msg);
+  pf1(404, msg);
 }
 {% endhighlight %}
 
@@ -134,15 +134,15 @@ void print404Msg(int (*pf1)(int,string), string msg) {
 #include <iostream>
 using namespace std;
 void print404Msg(int (*pf1)(int,string), string msg) {
-    pf1(404, msg);
+  pf1(404, msg);
 }
 int func1(int code, string msg) {
-    cout << "Err code = " << code << ", msg = " << msg << endl;
-    return code;
+  cout << "Err code = " << code << ", msg = " << msg << endl;
+  return code;
 }
 int main() {
-    print404Msg(func1, "Page not Found");
-    return 0;
+  print404Msg(func1, "Page not Found");
+  return 0;
 }
 {% endhighlight %}
 
@@ -160,7 +160,7 @@ Err code = 404, msg = Page not Found
 typedef int (*Func1)(int,string);
 //第一個參數資料型態為Func1
 void print404Msg(Func1 pf1, string msg) {
-    pf1(404, msg);
+  pf1(404, msg);
 }
 {% endhighlight %}
 
@@ -171,15 +171,15 @@ void print404Msg(Func1 pf1, string msg) {
 using namespace std;
 typedef int (*Func1)(int,string);
 void print404Msg(Func1 pf1, string msg) {
-    pf1(404, msg);
+  pf1(404, msg);
 }
 int func1(int code, string msg) {
-    cout << "Err code = " << code << ", msg = " << msg << endl;
-    return code;
+  cout << "Err code = " << code << ", msg = " << msg << endl;
+  return code;
 }
 int main() {
-    print404Msg(func1, "Page not Found");
-    return 0;
+  print404Msg(func1, "Page not Found");
+  return 0;
 }
 {% endhighlight %}
 
@@ -197,10 +197,10 @@ typedef void (*Failure)(int, char*);
 
 {% highlight c++ linenos %}
 void httpOk(char* msg) {
-    printf("成功，結果:%s\n", msg);
+  printf("成功，結果:%s\n", msg);
 }
 void httpFailure(int code, char* msg) {
-    printf("失敗%d，原因:%s\n", code, msg);
+  printf("失敗%d，原因:%s\n", code, msg);
 }
 {% endhighlight %}
 第1行,宣告函式，傳回值與參數資料型態都符合函式指標類型別名Success
@@ -209,16 +209,16 @@ void httpFailure(int code, char* msg) {
 
 {% highlight c++ linenos %}
 void http(int res, Success success, Failure failure) {
-    if(res == 1) {
-        success("取得資料成功");
-    } else {
-        failure(505,"網路連線有問題");
-    }
+  if(res == 1) {
+    success("取得資料成功");
+  } else {
+    failure(505,"網路連線有問題");
+  }
 }
 int main() {
-    http(1,httpOk,httpFailure);
-    http(0,httpOk,httpFailure);
-    return 0;
+  http(1,httpOk,httpFailure);
+  http(0,httpOk,httpFailure);
+  return 0;
 }
 {% endhighlight %}
 第1行,宣告函式，第1個參數資料型態int，第2個參數函式指標類型別名Success，第3個參數函式指標類型別名Failure。
@@ -240,22 +240,22 @@ using namespace std;
 typedef void (*Success)(char*);
 typedef void (*Failure)(int, char*);
 void httpOk(char* msg) {
-    printf("成功，結果:%s\n", msg);
+  printf("成功，結果:%s\n", msg);
 }
 void httpFailure(int code, char* msg) {
-    printf("失敗%d，原因:%s\n", code, msg);
+  printf("失敗%d，原因:%s\n", code, msg);
 }
 void http(int res, Success success, Failure failure) {
-    if(res == 1) {
-        success("取得資料成功");
-    } else {
-        failure(505,"網路連線有問題");
-    }
+  if(res == 1) {
+    success("取得資料成功");
+  } else {
+    failure(505,"網路連線有問題");
+  }
 }
 int main() {
-    http(1,httpOk,httpFailure);
-    http(0,httpOk,httpFailure);
-    return 0;
+  http(1,httpOk,httpFailure);
+  http(0,httpOk,httpFailure);
+  return 0;
 }
 {% endhighlight %}
 

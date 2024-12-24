@@ -1252,16 +1252,16 @@ Student(){
 13
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+  <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
 <span class="nl">public:</span>
-    <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-    <span class="p">}</span>
+  <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>  
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1299,29 +1299,29 @@ Student(){
 26
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">m_age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">m_age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"有參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
-        <span class="n">m_age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//宣告成員函式</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+  <span class="kt">int</span> <span class="n">m_age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
+    <span class="n">m_age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"有參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
+    <span class="n">m_age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//宣告成員函式</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="n">Student</span> <span class="n">student1</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
-    <span class="n">student1</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student1</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+  <span class="n">student1</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1367,19 +1367,19 @@ name: Bill
 16
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+  <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
 <span class="nl">public:</span>
-    <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-    <span class="p">}</span>
-    <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
+  <span class="p">}</span>
+  <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1410,18 +1410,18 @@ name: Bill
 15
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">(){};</span>
-    <span class="c1">//參數只有一個建構子</span>
-    <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+  <span class="n">Student</span><span class="p">(){};</span>
+  <span class="c1">//參數只有一個建構子</span>
+  <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//使用等於(=)指派運算子呼叫只有一個參數的建構子</span>
-    <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//使用等於(=)指派運算子呼叫只有一個參數的建構子</span>
+  <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1465,22 +1465,22 @@ name: Bill
 19
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">m_age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"有參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
-        <span class="n">m_age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//宣告成員函式</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+  <span class="kt">int</span> <span class="n">m_age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"有參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
+    <span class="n">m_age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//宣告成員函式</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span> 
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1491,7 +1491,7 @@ name: Bill
 
 <p>注意！student()是小寫，是變數名，不是類別名Student</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Student student();
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Student student();
 </code></pre></div></div>
 <p>執行結果為空，沒有印出”沒參數建構子”</p>
 
@@ -1522,27 +1522,27 @@ name: Bill
 24
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">m_age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">m_age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"有參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
-        <span class="n">m_age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//宣告成員函式</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+  <span class="kt">int</span> <span class="n">m_age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
+    <span class="n">m_age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"有參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
+    <span class="n">m_age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//宣告成員函式</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1559,9 +1559,9 @@ name: Bill
 4
 5
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">();</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">();</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span> 
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1600,30 +1600,30 @@ name: Bill
 27
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">m_age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">init</span><span class="p">();</span>
-    <span class="p">}</span>
-    <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"有參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">init</span><span class="p">();</span>
-        <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
-        <span class="n">m_age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="kt">void</span> <span class="n">init</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">m_age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+  <span class="kt">int</span> <span class="n">m_age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">init</span><span class="p">();</span>
+  <span class="p">}</span>
+  <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"有參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">init</span><span class="p">();</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
+    <span class="n">m_age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="kt">void</span> <span class="n">init</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
+    <span class="n">m_age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="n">Student</span><span class="p">();</span>
-    <span class="n">Student</span> <span class="n">student1</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="n">Student</span><span class="p">();</span>
+  <span class="n">Student</span> <span class="n">student1</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1818,7 +1818,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

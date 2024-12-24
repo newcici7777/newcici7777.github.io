@@ -1278,14 +1278,14 @@
 9
 10
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Err code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">", msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">code</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Err code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">", msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">code</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">pf1</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="p">);</span> <span class="c1">//宣告函式指標變數pf1</span>
-    <span class="n">pf1</span> <span class="o">=</span> <span class="n">func1</span><span class="p">;</span> <span class="c1">//將func1函式設給pf1函式指標變數</span>
-    <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s">"Page not found."</span><span class="p">);</span> <span class="c1">//使用函式指標pf1呼叫函式</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">pf1</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="p">);</span> <span class="c1">//宣告函式指標變數pf1</span>
+  <span class="n">pf1</span> <span class="o">=</span> <span class="n">func1</span><span class="p">;</span> <span class="c1">//將func1函式設給pf1函式指標變數</span>
+  <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s">"Page not found."</span><span class="p">);</span> <span class="c1">//使用函式指標pf1呼叫函式</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1352,15 +1352,15 @@ Err code = 404, msg = Page not found.
 <span class="c1">//宣告Func1類型別名</span>
 <span class="k">typedef</span> <span class="nf">int</span> <span class="p">(</span><span class="o">*</span><span class="n">Func1</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="p">);</span>
 <span class="kt">int</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Err code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">", msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">code</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Err code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">", msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">code</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//宣告指標變數pf1為Func1類型</span>
-    <span class="n">Func1</span> <span class="n">pf1</span><span class="p">;</span> <span class="c1">//宣告函式指標變數pf1</span>
-    <span class="n">pf1</span> <span class="o">=</span> <span class="n">func1</span><span class="p">;</span> <span class="c1">//函式指標變數pf1設定函式</span>
-    <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s">"Page not found."</span><span class="p">);</span><span class="c1">//使用函式指標pf1呼叫函式</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//宣告指標變數pf1為Func1類型</span>
+  <span class="n">Func1</span> <span class="n">pf1</span><span class="p">;</span> <span class="c1">//宣告函式指標變數pf1</span>
+  <span class="n">pf1</span> <span class="o">=</span> <span class="n">func1</span><span class="p">;</span> <span class="c1">//函式指標變數pf1設定函式</span>
+  <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s">"Page not found."</span><span class="p">);</span><span class="c1">//使用函式指標pf1呼叫函式</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1378,7 +1378,7 @@ Err code = 404, msg = Page not found.
 2
 3
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">print404Msg</span><span class="p">(</span><span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">pf1</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="p">),</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
+  <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1406,15 +1406,15 @@ Err code = 404, msg = Page not found.
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">void</span> <span class="nf">print404Msg</span><span class="p">(</span><span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">pf1</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="p">),</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
+  <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">func1</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Err code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">", msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">code</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Err code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">", msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">code</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">print404Msg</span><span class="p">(</span><span class="n">func1</span><span class="p">,</span> <span class="s">"Page not Found"</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">print404Msg</span><span class="p">(</span><span class="n">func1</span><span class="p">,</span> <span class="s">"Page not Found"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1438,7 +1438,7 @@ Err code = 404, msg = Page not Found
 <span class="k">typedef</span> <span class="nf">int</span> <span class="p">(</span><span class="o">*</span><span class="n">Func1</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="p">);</span>
 <span class="c1">//第一個參數資料型態為Func1</span>
 <span class="kt">void</span> <span class="nf">print404Msg</span><span class="p">(</span><span class="n">Func1</span> <span class="n">pf1</span><span class="p">,</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
+  <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1464,15 +1464,15 @@ Err code = 404, msg = Page not Found
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="nf">int</span> <span class="p">(</span><span class="o">*</span><span class="n">Func1</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="p">);</span>
 <span class="kt">void</span> <span class="nf">print404Msg</span><span class="p">(</span><span class="n">Func1</span> <span class="n">pf1</span><span class="p">,</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
+  <span class="n">pf1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">func1</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Err code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">", msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">code</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Err code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">", msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">code</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">print404Msg</span><span class="p">(</span><span class="n">func1</span><span class="p">,</span> <span class="s">"Page not Found"</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">print404Msg</span><span class="p">(</span><span class="n">func1</span><span class="p">,</span> <span class="s">"Page not Found"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1503,10 +1503,10 @@ Err code = 404, msg = Page not Found
 5
 6
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">httpOk</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"成功，結果:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"成功，結果:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="kt">void</span> <span class="n">httpFailure</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"失敗%d，原因:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"失敗%d，原因:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1529,16 +1529,16 @@ Err code = 404, msg = Page not Found
 11
 12
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">http</span><span class="p">(</span><span class="kt">int</span> <span class="n">res</span><span class="p">,</span> <span class="n">Success</span> <span class="n">success</span><span class="p">,</span> <span class="n">Failure</span> <span class="n">failure</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">res</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">success</span><span class="p">(</span><span class="s">"取得資料成功"</span><span class="p">);</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="n">failure</span><span class="p">(</span><span class="mi">505</span><span class="p">,</span><span class="s">"網路連線有問題"</span><span class="p">);</span>
-    <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">res</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">success</span><span class="p">(</span><span class="s">"取得資料成功"</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">failure</span><span class="p">(</span><span class="mi">505</span><span class="p">,</span><span class="s">"網路連線有問題"</span><span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">http</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">httpOk</span><span class="p">,</span><span class="n">httpFailure</span><span class="p">);</span>
-    <span class="n">http</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">httpOk</span><span class="p">,</span><span class="n">httpFailure</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">http</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">httpOk</span><span class="p">,</span><span class="n">httpFailure</span><span class="p">);</span>
+  <span class="n">http</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">httpOk</span><span class="p">,</span><span class="n">httpFailure</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1585,22 +1585,22 @@ Err code = 404, msg = Page not Found
 <span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">Success</span><span class="p">)(</span><span class="kt">char</span><span class="o">*</span><span class="p">);</span>
 <span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">Failure</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span><span class="p">);</span>
 <span class="kt">void</span> <span class="nf">httpOk</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"成功，結果:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"成功，結果:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="kt">void</span> <span class="n">httpFailure</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"失敗%d，原因:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"失敗%d，原因:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="kt">void</span> <span class="n">http</span><span class="p">(</span><span class="kt">int</span> <span class="n">res</span><span class="p">,</span> <span class="n">Success</span> <span class="n">success</span><span class="p">,</span> <span class="n">Failure</span> <span class="n">failure</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">res</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">success</span><span class="p">(</span><span class="s">"取得資料成功"</span><span class="p">);</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="n">failure</span><span class="p">(</span><span class="mi">505</span><span class="p">,</span><span class="s">"網路連線有問題"</span><span class="p">);</span>
-    <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">res</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">success</span><span class="p">(</span><span class="s">"取得資料成功"</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">failure</span><span class="p">(</span><span class="mi">505</span><span class="p">,</span><span class="s">"網路連線有問題"</span><span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">http</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">httpOk</span><span class="p">,</span><span class="n">httpFailure</span><span class="p">);</span>
-    <span class="n">http</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">httpOk</span><span class="p">,</span><span class="n">httpFailure</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">http</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">httpOk</span><span class="p">,</span><span class="n">httpFailure</span><span class="p">);</span>
+  <span class="n">http</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">httpOk</span><span class="p">,</span><span class="n">httpFailure</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1800,7 +1800,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

@@ -1243,11 +1243,11 @@
 6
 7
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// i 是l-value</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// 100 is r-value</span>
-    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref_i</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref_i = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref_i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">// i 是l-value</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// 100 is r-value</span>
+  <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref_i</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref_i = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref_i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1264,9 +1264,9 @@
 4
 5
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref_r</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// 100 is r-value</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref_r = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref_i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref_r</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// 100 is r-value</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref_r = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref_i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1284,10 +1284,10 @@
 5
 6
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref_r</span> <span class="o">=</span> <span class="n">r</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref_r = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref_i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref_r</span> <span class="o">=</span> <span class="n">r</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref_r = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref_i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1306,11 +1306,11 @@
 6
 7
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//con 是常數</span>
-    <span class="k">const</span> <span class="kt">int</span> <span class="n">con</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">con</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//con 是常數</span>
+  <span class="k">const</span> <span class="kt">int</span> <span class="n">con</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">con</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1327,9 +1327,9 @@
 4
 5
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">//100是常數</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">//100是常數</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1357,21 +1357,21 @@
 16
 17
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// i is l-value</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="c1">//l-value</span>
-    <span class="n">func</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-    
-    <span class="c1">//r-value</span>
-    <span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="n">func</span><span class="p">(</span><span class="n">r</span><span class="p">);</span>
-    
-    <span class="n">func</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="c1">// 常數 100 , 100 is r-value</span>
-    <span class="n">func</span><span class="p">(</span><span class="sc">'A'</span><span class="p">);</span><span class="c1">// 常數 'A' , A is r-value</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">// i is l-value</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="c1">//l-value</span>
+  <span class="n">func</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+  
+  <span class="c1">//r-value</span>
+  <span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">func</span><span class="p">(</span><span class="n">r</span><span class="p">);</span>
+  
+  <span class="n">func</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="c1">// 常數 100 , 100 is r-value</span>
+  <span class="n">func</span><span class="p">(</span><span class="sc">'A'</span><span class="p">);</span><span class="c1">// 常數 'A' , A is r-value</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1572,7 +1572,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

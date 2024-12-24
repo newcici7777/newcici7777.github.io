@@ -135,26 +135,26 @@ arr[0]與arr[0+1]，二個互相比較
 {% highlight c++ linenos %}
 using namespace std;
 void bubbleSort(int arr[], int len) {
-    for(int i = len-1; i > 0; i--) {
-        for(int j = 0; j < i; j++) {
-            if(arr[j] > arr[j+1]) {
-                int temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
-            }
-        }
+  for(int i = len-1; i > 0; i--) {
+    for(int j = 0; j < i; j++) {
+      if(arr[j] > arr[j+1]) {
+        int temp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j+1] = temp;
+      }
     }
+  }
 }
 int main() {
-    int arr[] = {6,5,4,3,2,1};
-    int len = sizeof(arr)/sizeof(int);
-    bubbleSort(arr, len);
-    
-    for(int i = 0; i < len; i++) {
-        cout << arr[i] << ",";
-    }
-    cout << endl;
-    return 0;
+  int arr[] = {6,5,4,3,2,1};
+  int len = sizeof(arr)/sizeof(int);
+  bubbleSort(arr, len);
+  
+  for(int i = 0; i < len; i++) {
+    cout << arr[i] << ",";
+  }
+  cout << endl;
+  return 0;
 }
 {% endhighlight %}
 

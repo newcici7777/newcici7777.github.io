@@ -1239,9 +1239,9 @@
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>    <span class="n">tail_</span> <span class="o">=</span> <span class="p">(</span><span class="n">tail_</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">maxLen</span><span class="p">;</span>
-    <span class="c1">// 把值塞入</span>
-    <span class="n">data_</span><span class="p">[</span><span class="n">tail_</span><span class="p">]</span> <span class="o">=</span> <span class="n">element</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="n">tail_</span> <span class="o">=</span> <span class="p">(</span><span class="n">tail_</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">maxLen</span><span class="p">;</span>
+  <span class="c1">// 把值塞入</span>
+  <span class="n">data_</span><span class="p">[</span><span class="n">tail_</span><span class="p">]</span> <span class="o">=</span> <span class="n">element</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1309,7 +1309,7 @@
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre>    <span class="n">front_</span> <span class="o">=</span> <span class="p">(</span><span class="n">front_</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">maxLen</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="n">front_</span> <span class="o">=</span> <span class="p">(</span><span class="n">front_</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">maxLen</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1370,10 +1370,10 @@
 5
 6
 </pre></td><td class="code"><pre>  <span class="kt">void</span> <span class="nf">print</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">data_</span><span class="p">[(</span><span class="n">front_</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="o">%</span> <span class="n">maxLen</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">","</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">data_</span><span class="p">[(</span><span class="n">front_</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="o">%</span> <span class="n">maxLen</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">","</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1493,54 +1493,54 @@
  <span class="nl">public:</span>
   <span class="c1">// 建構子</span>
   <span class="n">CircularQueue</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Init</span><span class="p">();</span>  <span class="c1">// 呼叫初始化</span>
+  <span class="n">Init</span><span class="p">();</span>  <span class="c1">// 呼叫初始化</span>
   <span class="p">}</span>
   <span class="c1">// 初始化函式</span>
   <span class="kt">void</span> <span class="n">Init</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// 只能初始化1次，沒初始化就初始化</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">is_init_</span> <span class="o">!=</span> <span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">front_</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">// 初始化front指向0的索引(第一個元素)</span>
-      <span class="n">tail_</span> <span class="o">=</span> <span class="n">maxLen</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>  <span class="c1">// 尾指標指向陣列最後一個元素索引</span>
-      <span class="n">len_</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">// 初始化佇列實際大小為0</span>
-      <span class="n">memset</span><span class="p">(</span><span class="n">data_</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">data_</span><span class="p">));</span>  <span class="c1">// 清空陣列記憶體</span>
-      <span class="n">is_init_</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>  <span class="c1">// 設成已初始化</span>
-    <span class="p">}</span>
+  <span class="c1">// 只能初始化1次，沒初始化就初始化</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">is_init_</span> <span class="o">!=</span> <span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">front_</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">// 初始化front指向0的索引(第一個元素)</span>
+    <span class="n">tail_</span> <span class="o">=</span> <span class="n">maxLen</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>  <span class="c1">// 尾指標指向陣列最後一個元素索引</span>
+    <span class="n">len_</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">// 初始化佇列實際大小為0</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">data_</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">data_</span><span class="p">));</span>  <span class="c1">// 清空陣列記憶體</span>
+    <span class="n">is_init_</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>  <span class="c1">// 設成已初始化</span>
+  <span class="p">}</span>
   <span class="p">}</span>
   <span class="kt">bool</span> <span class="n">IsFull</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">len_</span> <span class="o">==</span> <span class="n">maxLen</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">len_</span> <span class="o">==</span> <span class="n">maxLen</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="kt">int</span> <span class="n">size</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">len_</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">len_</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="kt">bool</span> <span class="n">empty</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">len_</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">len_</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="kt">bool</span> <span class="n">push</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span> <span class="o">&amp;</span><span class="n">element</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// 判斷queue是否已經滿了</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">IsFull</span><span class="p">())</span> <span class="p">{</span>
-      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Queue is full."</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">tail_</span> <span class="o">=</span> <span class="p">(</span><span class="n">tail_</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">maxLen</span><span class="p">;</span>
-    <span class="c1">// 把值塞入</span>
-    <span class="n">data_</span><span class="p">[</span><span class="n">tail_</span><span class="p">]</span> <span class="o">=</span> <span class="n">element</span><span class="p">;</span>
-    <span class="n">len_</span><span class="o">++</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="c1">// 判斷queue是否已經滿了</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">IsFull</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Queue is full."</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">tail_</span> <span class="o">=</span> <span class="p">(</span><span class="n">tail_</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">maxLen</span><span class="p">;</span>
+  <span class="c1">// 把值塞入</span>
+  <span class="n">data_</span><span class="p">[</span><span class="n">tail_</span><span class="p">]</span> <span class="o">=</span> <span class="n">element</span><span class="p">;</span>
+  <span class="n">len_</span><span class="o">++</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="kt">bool</span> <span class="n">pop</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">empty</span><span class="p">())</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="n">front_</span> <span class="o">=</span> <span class="p">(</span><span class="n">front_</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">maxLen</span><span class="p">;</span>
-    <span class="n">len_</span><span class="o">--</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">empty</span><span class="p">())</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="n">front_</span> <span class="o">=</span> <span class="p">(</span><span class="n">front_</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">maxLen</span><span class="p">;</span>
+  <span class="n">len_</span><span class="o">--</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">data_</span><span class="p">[(</span><span class="n">front_</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="o">%</span> <span class="n">maxLen</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">","</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">data_</span><span class="p">[(</span><span class="n">front_</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="o">%</span> <span class="n">maxLen</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">","</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="n">T</span><span class="o">&amp;</span> <span class="n">front</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">data_</span><span class="p">[</span><span class="n">front_</span><span class="p">];</span>
+  <span class="k">return</span> <span class="n">data_</span><span class="p">[</span><span class="n">front_</span><span class="p">];</span>
   <span class="p">}</span>
  <span class="nl">private:</span>
   <span class="kt">bool</span> <span class="n">is_init_</span><span class="p">;</span>  <span class="c1">// 是否已經初始化</span>
@@ -1767,7 +1767,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

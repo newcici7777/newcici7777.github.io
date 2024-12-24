@@ -1225,11 +1225,11 @@
 3
 4
 5
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">i2</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">i3</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
-    <span class="c1">//宣告指標陣列存放3個記憶體位址</span>
-    <span class="kt">int</span> <span class="o">*</span><span class="n">p_array</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="o">&amp;</span><span class="n">i1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">i2</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">i3</span><span class="p">};</span>
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">i2</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">i3</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+  <span class="c1">//宣告指標陣列存放3個記憶體位址</span>
+  <span class="kt">int</span> <span class="o">*</span><span class="n">p_array</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="o">&amp;</span><span class="n">i1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">i2</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">i3</span><span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1247,7 +1247,7 @@
 2
 3
 </pre></td><td class="code"><pre><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"i= %d的位置%#x, 值為%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">i</span><span class="p">,</span> <span class="o">*</span><span class="p">(</span><span class="n">p_array</span> <span class="o">+</span> <span class="n">i</span><span class="p">),</span> <span class="o">*</span><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">p_array</span> <span class="o">+</span> <span class="n">i</span><span class="p">)));</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"i= %d的位置%#x, 值為%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">i</span><span class="p">,</span> <span class="o">*</span><span class="p">(</span><span class="n">p_array</span> <span class="o">+</span> <span class="n">i</span><span class="p">),</span> <span class="o">*</span><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">p_array</span> <span class="o">+</span> <span class="n">i</span><span class="p">)));</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1468,7 +1468,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

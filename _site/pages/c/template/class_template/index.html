@@ -1218,8 +1218,8 @@
                     
 
                     <h2 id="語法">語法</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>宣告模板    宣告資料型態參數  資料型態參數名    逗號 
-template &lt; class         T1       ,   class T2&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>宣告模板  宣告資料型態參數  資料型態參數名  逗號 
+template &lt; class     T1     ,   class T2&gt;
 </code></pre></div></div>
 <p>宣告模板從關鍵字template開始，後接資料型態參數列表（template parameter list），資料型態參數是以class開頭，後接資料型態參數名(T1)。資料型態參數列表是用尖括號括住的一個資料型態參數或者多個資料型態參數，資料型態參數之間以逗號分隔。class也可以用typename互相替換。</p>
 
@@ -1244,17 +1244,17 @@ template &lt; class         T1       ,   class T2&gt;
 </pre></td><td class="code"><pre><span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="nc">K</span><span class="p">,</span> <span class="k">class</span> <span class="nc">V</span><span class="p">&gt;</span>
 <span class="k">class</span> <span class="nc">MyMap</span><span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="n">MyMap</span><span class="p">(){}</span>
-    <span class="n">MyMap</span><span class="p">(</span><span class="n">K</span> <span class="n">key1</span><span class="p">,</span> <span class="n">V</span> <span class="n">value1</span><span class="p">)</span><span class="o">:</span><span class="n">key</span><span class="p">(</span><span class="n">key1</span><span class="p">),</span><span class="n">value</span><span class="p">(</span><span class="n">value1</span><span class="p">){}</span>
-    <span class="n">K</span> <span class="n">getKey</span><span class="p">(){</span>
-        <span class="k">return</span> <span class="n">key</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">V</span> <span class="n">getValue</span><span class="p">(){</span>
-        <span class="k">return</span> <span class="n">value</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="n">MyMap</span><span class="p">(){}</span>
+  <span class="n">MyMap</span><span class="p">(</span><span class="n">K</span> <span class="n">key1</span><span class="p">,</span> <span class="n">V</span> <span class="n">value1</span><span class="p">)</span><span class="o">:</span><span class="n">key</span><span class="p">(</span><span class="n">key1</span><span class="p">),</span><span class="n">value</span><span class="p">(</span><span class="n">value1</span><span class="p">){}</span>
+  <span class="n">K</span> <span class="n">getKey</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">key</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">V</span> <span class="n">getValue</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">value</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="nl">private:</span>
-    <span class="n">K</span> <span class="n">key</span><span class="p">;</span>
-    <span class="n">V</span> <span class="n">value</span><span class="p">;</span>
+  <span class="n">K</span> <span class="n">key</span><span class="p">;</span>
+  <span class="n">V</span> <span class="n">value</span><span class="p">;</span>
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1287,14 +1287,14 @@ template &lt; class         T1       ,   class T2&gt;
 9
 10
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">MyMap</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">myMap</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s">"test"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap key="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap</span><span class="p">.</span><span class="n">getKey</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap value="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap</span><span class="p">.</span><span class="n">getValue</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="n">MyMap</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span> <span class="n">string</span><span class="o">&gt;</span> <span class="o">*</span><span class="n">myMap_P1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyMap</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"abc"</span><span class="p">,</span><span class="s">"def"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap_P1 key="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap_P1</span><span class="o">-&gt;</span><span class="n">getKey</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap_P1 value="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap_P1</span><span class="o">-&gt;</span><span class="n">getValue</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">MyMap</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">myMap</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s">"test"</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap key="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap</span><span class="p">.</span><span class="n">getKey</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap value="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap</span><span class="p">.</span><span class="n">getValue</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  
+  <span class="n">MyMap</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span> <span class="n">string</span><span class="o">&gt;</span> <span class="o">*</span><span class="n">myMap_P1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyMap</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"abc"</span><span class="p">,</span><span class="s">"def"</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap_P1 key="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap_P1</span><span class="o">-&gt;</span><span class="n">getKey</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"myMap_P1 value="</span> <span class="o">&lt;&lt;</span> <span class="n">myMap_P1</span><span class="o">-&gt;</span><span class="n">getValue</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1501,7 +1501,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

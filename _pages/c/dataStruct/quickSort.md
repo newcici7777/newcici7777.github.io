@@ -165,66 +165,66 @@ R指標找不到比基準值3小的，最後L==R
  參數2 陣列大小
  */
 void quickSort(int arr[], int len) {
-    //至少要有2個數字才可以比較大小
-    if(len < 2) return;
-    int left = 0;
-    int right = len - 1;
-    //基準值都為arr[0]
-    int pivot = arr[0];
-    //預設先比較R
-    //action有L與R，預設先比對R的值
-    char action = 'R';
-    //若left<right才進入循環
-    while(left < right) {
-        //比較R值，尋找比基準值小
-        if(action == 'R') {
-            //比較R值，尋找比基準值小
-            //若陣列[R]<基準值，將陣列[L]的值設成陣列[R]，並且L前進一格。
-            if(arr[right] < pivot) {
-                arr[left] = arr[right];
-                left++;
-                //設定下一次是L移動
-                action = 'L';
-            } else {
-                //若以上條件不符合，R往後退一格。
-                right--;
-            }
-        //比較L值，尋找比基準值大
-        } else if(action == 'L') {
-            //比較L值，尋找比基準值大
-            //若陣列[L]>基準值，將陣列[R]的值設成陣列[L]，並且R往後退一格。
-            if(arr[left] > pivot) {
-                arr[right] = arr[left];
-                right--;
-                //設定下一次是R移動
-                action = 'R';
-            } else {
-                //若以上條件不符合，L往前一格。
-                left++;
-            }
-        }
+  //至少要有2個數字才可以比較大小
+  if(len < 2) return;
+  int left = 0;
+  int right = len - 1;
+  //基準值都為arr[0]
+  int pivot = arr[0];
+  //預設先比較R
+  //action有L與R，預設先比對R的值
+  char action = 'R';
+  //若left<right才進入循環
+  while(left < right) {
+    //比較R值，尋找比基準值小
+    if(action == 'R') {
+      //比較R值，尋找比基準值小
+      //若陣列[R]<基準值，將陣列[L]的值設成陣列[R]，並且L前進一格。
+      if(arr[right] < pivot) {
+        arr[left] = arr[right];
+        left++;
+        //設定下一次是L移動
+        action = 'L';
+      } else {
+        //若以上條件不符合，R往後退一格。
+        right--;
+      }
+    //比較L值，尋找比基準值大
+    } else if(action == 'L') {
+      //比較L值，尋找比基準值大
+      //若陣列[L]>基準值，將陣列[R]的值設成陣列[L]，並且R往後退一格。
+      if(arr[left] > pivot) {
+        arr[right] = arr[left];
+        right--;
+        //設定下一次是R移動
+        action = 'R';
+      } else {
+        //若以上條件不符合，L往前一格。
+        left++;
+      }
     }
-    //L==R
-    //將基準值放入L==R的位址
-    arr[right] = pivot;
-    //遞迴設定
-    //基準值作為中點，分為左右二半陣列(不包含基準值)
-    //參數1陣列起始位址,參數2分成左右二半的各別個數
-    //左半邊
-    quickSort(arr,left);
-    //右半邊
-    //起始位址在基準值位址的下一格
-    //個數(請參照遞迴設定的說明與圖)
-    quickSort(arr + left + 1, len - left - 1);
+  }
+  //L==R
+  //將基準值放入L==R的位址
+  arr[right] = pivot;
+  //遞迴設定
+  //基準值作為中點，分為左右二半陣列(不包含基準值)
+  //參數1陣列起始位址,參數2分成左右二半的各別個數
+  //左半邊
+  quickSort(arr,left);
+  //右半邊
+  //起始位址在基準值位址的下一格
+  //個數(請參照遞迴設定的說明與圖)
+  quickSort(arr + left + 1, len - left - 1);
 }
 int main() {
-    int arr[] = {6,5,4,3,2,1};
-    int len = sizeof(arr)/sizeof(int);
-    quickSort(arr, len);
-    for(int i = 0; i < len; i++) {
-        cout << arr[i] << ",";
-    }
-    cout << endl;
-    return 0;
+  int arr[] = {6,5,4,3,2,1};
+  int len = sizeof(arr)/sizeof(int);
+  quickSort(arr, len);
+  for(int i = 0; i < len; i++) {
+    cout << arr[i] << ",";
+  }
+  cout << endl;
+  return 0;
 }
 {% endhighlight %}

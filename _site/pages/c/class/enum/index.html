@@ -1247,14 +1247,14 @@
 10
 </pre></td><td class="code"><pre><span class="k">enum</span> <span class="n">days_of_week</span> <span class="p">{</span><span class="n">Sun</span><span class="p">,</span> <span class="n">Mon</span><span class="p">,</span> <span class="n">Tue</span><span class="p">,</span> <span class="n">Wed</span><span class="p">,</span> <span class="n">Thu</span><span class="p">,</span> <span class="n">Fri</span><span class="p">,</span> <span class="n">Sat</span><span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">days_of_week</span> <span class="n">day1</span><span class="p">,</span> <span class="n">day2</span><span class="p">;</span>
-    <span class="n">day1</span> <span class="o">=</span> <span class="n">Mon</span><span class="p">;</span>
-    <span class="n">day2</span> <span class="o">=</span> <span class="n">Thu</span><span class="p">;</span>
-    
-    <span class="kt">int</span> <span class="n">diff</span> <span class="o">=</span> <span class="n">day2</span> <span class="o">-</span> <span class="n">day1</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Days between = "</span> <span class="o">&lt;&lt;</span> <span class="n">diff</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>    
+  <span class="n">days_of_week</span> <span class="n">day1</span><span class="p">,</span> <span class="n">day2</span><span class="p">;</span>
+  <span class="n">day1</span> <span class="o">=</span> <span class="n">Mon</span><span class="p">;</span>
+  <span class="n">day2</span> <span class="o">=</span> <span class="n">Thu</span><span class="p">;</span>
+  
+  <span class="kt">int</span> <span class="n">diff</span> <span class="o">=</span> <span class="n">day2</span> <span class="o">-</span> <span class="n">day1</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Days between = "</span> <span class="o">&lt;&lt;</span> <span class="n">diff</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>  
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1272,7 +1272,7 @@
 
 <p>要記得存放enum值的變數</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    int sex;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  int sex;
 </code></pre></div></div>
 
 <h3 id="指派enum給變數">指派enum給變數</h3>
@@ -1322,39 +1322,39 @@
 36
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">sex</span><span class="p">;</span>
-    <span class="k">enum</span> <span class="p">{</span><span class="n">girl</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">boy</span> <span class="o">=</span> <span class="mi">1</span><span class="p">};</span>
+  <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+  <span class="kt">int</span> <span class="n">sex</span><span class="p">;</span>
+  <span class="k">enum</span> <span class="p">{</span><span class="n">girl</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">boy</span> <span class="o">=</span> <span class="mi">1</span><span class="p">};</span>
 <span class="nl">private:</span>
-    <span class="kt">char</span> <span class="n">address</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="kt">char</span> <span class="n">address</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
 <span class="nl">public:</span>
-    <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
 <span class="nl">private:</span>
-    <span class="kt">char</span> <span class="n">father</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+  <span class="kt">char</span> <span class="n">father</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
 <span class="nl">public:</span>
-    <span class="kt">void</span> <span class="n">setName</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name1</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">strcpy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">name1</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="kt">void</span> <span class="n">setAge</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="o">-&gt;</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"age: "</span> <span class="o">&lt;&lt;</span> <span class="n">age</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"sex: "</span><span class="p">;</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">sex</span> <span class="o">==</span> <span class="n">girl</span><span class="p">)</span>
-            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"girl"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">else</span>
-            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"boy"</span> <span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="kt">void</span> <span class="n">setName</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">name1</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="kt">void</span> <span class="n">setAge</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="o">-&gt;</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"age: "</span> <span class="o">&lt;&lt;</span> <span class="n">age</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"sex: "</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">sex</span> <span class="o">==</span> <span class="n">girl</span><span class="p">)</span>
+      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"girl"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">else</span>
+      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"boy"</span> <span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">setName</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">);</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">setAge</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">sex</span> <span class="o">=</span> <span class="n">student</span><span class="p">.</span><span class="n">girl</span><span class="p">;</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">setName</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">);</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">setAge</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">sex</span> <span class="o">=</span> <span class="n">student</span><span class="p">.</span><span class="n">girl</span><span class="p">;</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1549,7 +1549,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

@@ -10,11 +10,11 @@ keywords: c++, pointer, wildPointer
 
 {% highlight c++ linenos %}
 int main() {
-    int* p = new int(10);
-    cout << "記憶體回收前的位址 = " << p << endl;
-    delete p;
-    cout << "記憶體回收後的位址 = " << p << endl;
-    return 0;
+  int* p = new int(10);
+  cout << "記憶體回收前的位址 = " << p << endl;
+  delete p;
+  cout << "記憶體回收後的位址 = " << p << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -28,13 +28,13 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    int* p = new int(10);
-    cout << "記憶體回收前的位址 = " << p << endl;
-    cout << "記憶體回收前的位址讀取位址內容 = " << *p << endl;
-    delete p;
-    cout << "記憶體回收後的位址 = " << p << endl;
-    cout << "讀取位址內容 = " << *p << endl;
-    return 0;
+  int* p = new int(10);
+  cout << "記憶體回收前的位址 = " << p << endl;
+  cout << "記憶體回收前的位址讀取位址內容 = " << *p << endl;
+  delete p;
+  cout << "記憶體回收後的位址 = " << p << endl;
+  cout << "讀取位址內容 = " << *p << endl;
+  return 0;
 }
 {% endhighlight %}
 第7行，讀取已回收記憶體的位址中的內容。
@@ -52,13 +52,13 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    int* p = new int(10);
-    cout << "記憶體回收前的位址 = " << p << endl;
-    cout << "記憶體回收前的位址讀取位址內容 = " << *p << endl;
-    delete p;
-    p = nullptr;
-    cout << "記憶體回收後的位址 = " << p << endl;
-    return 0;
+  int* p = new int(10);
+  cout << "記憶體回收前的位址 = " << p << endl;
+  cout << "記憶體回收前的位址讀取位址內容 = " << *p << endl;
+  delete p;
+  p = nullptr;
+  cout << "記憶體回收後的位址 = " << p << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -73,9 +73,9 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    int* p;
-    cout << p << endl;
-    return 0;
+  int* p;
+  cout << p << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -92,9 +92,9 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    int* p = nullptr;
-    cout << p << endl;
-    return 0;
+  int* p = nullptr;
+  cout << p << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -111,14 +111,14 @@ int main() {
 
 {% highlight c++ linenos %}
 int* func() {
-    int i = 10;
-    cout << "i = " << i << ", &i = " << &i << endl;
-    return &i;
+  int i = 10;
+  cout << "i = " << i << ", &i = " << &i << endl;
+  return &i;
 }
 int main() {
-    int* p = func();
-    cout << "*p = " << *p << ", p = " << p << endl;
-    return 0;
+  int* p = func();
+  cout << "*p = " << *p << ", p = " << p << endl;
+  return 0;
 }
 {% endhighlight %}
 

@@ -38,14 +38,14 @@ while (i <= 100) {
 {% highlight c++ linenos %}
 int main() {
 	//初始運算式
-    int i = 0;
-    //條件判斷式
-    while (i <= 10) {
-        cout << i << endl;
-        //遞增運算式
-        i++;
-    }
-    return 0;
+  int i = 0;
+  //條件判斷式
+  while (i <= 10) {
+    cout << i << endl;
+    //遞增運算式
+    i++;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -53,10 +53,10 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    int i = 0;
-    while (true)
-        cout << i++ << endl;
-    return 0;
+  int i = 0;
+  while (true)
+    cout << i++ << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -103,17 +103,17 @@ while (true) {
 以下程式碼是若sum >= 5000就離開迴圈。
 {% highlight c++ linenos %}
 int main() {
-    int sum = 0;
-    while (true) {
-        int input = 0;
-        cout << "請輸入數字:"; cin >> input;
-        sum += input;
-        if(sum >= 5000) {
-            break;
-        }
+  int sum = 0;
+  while (true) {
+    int input = 0;
+    cout << "請輸入數字:"; cin >> input;
+    sum += input;
+    if (sum >= 5000) {
+      break;
     }
-    cout << "sum = " << sum << endl;
-    return 0;
+  }
+  cout << "sum = " << sum << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -133,16 +133,16 @@ sum = 5015
 若不是5的倍數，直接回到迴圈的條件判斷式，
 {% highlight c++ linenos %}
 int main() {
-    int i = 1;
-    while (i <= 50) {
-        if((i % 5) != 0) {
-            i++;
-            continue;
-        }
-        cout << i << endl;
-        i++;
+  int i = 1;
+  while (i <= 50) {
+    if ((i % 5) != 0) {
+      i++;
+      continue;
     }
-    return 0;
+    cout << i << endl;
+    i++;
+  }
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -165,7 +165,7 @@ for是while的變形。
 `條件判斷式`與`初始運算式`與`遞增運算式`寫在同一行。
 
 ```
-for(初始運算式;條件判斷式;遞增運算式) {
+for (初始運算式;條件判斷式;遞增運算式) {
 
 }
 ```
@@ -174,10 +174,10 @@ for(初始運算式;條件判斷式;遞增運算式) {
 
 {% highlight c++ linenos %}
 int main() {
-    for(int i = 0; i <= 50; i = i + 5) {
-        cout << i << endl;
-    }
-    return 0;
+  for (int i = 0; i <= 50; i = i + 5) {
+    cout << i << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -188,11 +188,11 @@ int main() {
 {% highlight c++ linenos %}
 int main() {
 	//i寫在for之前
-    int i = 0;
-    for(; i <= 50; i = i + 5) {
-        cout << i << endl;
-    }
-    return 0;
+  int i = 0;
+  for (; i <= 50; i = i + 5) {
+    cout << i << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -200,11 +200,11 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    for(int i = 0, j = 50; i <= 50; i = i + 5, j = j - 5) {
-        cout << "i = " << i << endl;
-        cout << "j = " << j << endl;
-    }
-    return 0;
+  for (int i = 0, j = 50; i <= 50; i = i + 5, j = j - 5) {
+    cout << "i = " << i << endl;
+    cout << "j = " << j << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -212,16 +212,16 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    //初始運算式 定義在for之前
-    int i = 0, j = 50;
-    for(; i <= 50;) {
-        cout << "i = " << i << ", ";
-        cout << "j = " << j << endl;
-        //遞增運算式寫在迴圈主體
-        i = i + 5;
-        j = j - 5;
-    }
-    return 0;
+  //初始運算式 定義在for之前
+  int i = 0, j = 50;
+  for (; i <= 50;) {
+    cout << "i = " << i << ", ";
+    cout << "j = " << j << endl;
+    //遞增運算式寫在迴圈主體
+    i = i + 5;
+    j = j - 5;
+  }
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -242,15 +242,15 @@ i = 50, j = 0
 `條件判斷式`與`初始運算式`與`遞增運算式`都不寫的狀況下是無窮迴圈，需要使用break離開迴圈。
 {% highlight c++ linenos %}
 int main() {
-    int sum = 0;
-    for(;;) {
-        int input = 0;
-        cout << "請輸入數字:"; cin >> input;
-        sum+=input;
-        if(sum >= 5000) break;
-    }
-    cout << "sum = " << sum << endl;
-    return 0;
+  int sum = 0;
+  for (;;) {
+    int input = 0;
+    cout << "請輸入數字:"; cin >> input;
+    sum+=input;
+    if (sum >= 5000) break;
+  }
+  cout << "sum = " << sum << endl;
+  return 0;
 }
 {% endhighlight %}
 ```

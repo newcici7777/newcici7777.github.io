@@ -2542,37 +2542,37 @@ hello\0</p>
 32
 33
 </pre></td><td class="code"><pre><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="nf">mystrstr</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">dest</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">search</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//i為dest的索引</span>
-    <span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="c1">//j為serch的索引</span>
-    <span class="kt">size_t</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="c1">//目的字串長度</span>
-    <span class="kt">size_t</span> <span class="n">dlen</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">);</span>
-    <span class="c1">//搜尋字串長度</span>
-    <span class="kt">size_t</span> <span class="n">slen</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">search</span><span class="p">);</span>
-    
-    <span class="c1">//若i超過目的字串長度，代表都找不到</span>
-    <span class="c1">//若j超過搜尋字串長度，代表找到</span>
-    <span class="k">while</span><span class="p">((</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">dlen</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">j</span> <span class="o">&lt;</span> <span class="n">slen</span><span class="p">))</span> <span class="p">{</span>
-        <span class="c1">//目的字元與搜索字元相等</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">dest</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">search</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="p">{</span>
-            <span class="n">i</span><span class="o">++</span><span class="p">;</span><span class="c1">//指標往下個字元移動</span>
-            <span class="n">j</span><span class="o">++</span><span class="p">;</span><span class="c1">//指標往下個字元移動</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="c1">//不相等</span>
-            <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="n">j</span><span class="p">;</span> <span class="c1">//指標移到最開始的位址</span>
-            <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//搜尋字串的索引移到最前面</span>
-            <span class="n">i</span><span class="o">++</span> <span class="p">;</span> <span class="c1">//目的字串指標往下一個位址移動</span>
-        <span class="p">}</span>
+  <span class="c1">//i為dest的索引</span>
+  <span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//j為serch的索引</span>
+  <span class="kt">size_t</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//目的字串長度</span>
+  <span class="kt">size_t</span> <span class="n">dlen</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">dest</span><span class="p">);</span>
+  <span class="c1">//搜尋字串長度</span>
+  <span class="kt">size_t</span> <span class="n">slen</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">search</span><span class="p">);</span>
+  
+  <span class="c1">//若i超過目的字串長度，代表都找不到</span>
+  <span class="c1">//若j超過搜尋字串長度，代表找到</span>
+  <span class="k">while</span><span class="p">((</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">dlen</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">j</span> <span class="o">&lt;</span> <span class="n">slen</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">//目的字元與搜索字元相等</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">dest</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">search</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="p">{</span>
+      <span class="n">i</span><span class="o">++</span><span class="p">;</span><span class="c1">//指標往下個字元移動</span>
+      <span class="n">j</span><span class="o">++</span><span class="p">;</span><span class="c1">//指標往下個字元移動</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="c1">//不相等</span>
+      <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="n">j</span><span class="p">;</span> <span class="c1">//指標移到最開始的位址</span>
+      <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//搜尋字串的索引移到最前面</span>
+      <span class="n">i</span><span class="o">++</span> <span class="p">;</span> <span class="c1">//目的字串指標往下一個位址移動</span>
     <span class="p">}</span>
-    <span class="c1">//若j等於搜尋字串的長度代表找到</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">j</span> <span class="o">==</span> <span class="n">slen</span><span class="p">)</span> <span class="k">return</span> <span class="n">dest</span> <span class="o">+</span> <span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="n">j</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//尋找失敗</span>
+  <span class="p">}</span>
+  <span class="c1">//若j等於搜尋字串的長度代表找到</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">j</span> <span class="o">==</span> <span class="n">slen</span><span class="p">)</span> <span class="k">return</span> <span class="n">dest</span> <span class="o">+</span> <span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="n">j</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//尋找失敗</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="n">mystrstr</span><span class="p">(</span><span class="s">"hdhelhelloWor"</span><span class="p">,</span> <span class="s">"hello"</span><span class="p">)</span> <span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">p1</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="n">mystrstr</span><span class="p">(</span><span class="s">"hdhelhelloWor"</span><span class="p">,</span> <span class="s">"hello"</span><span class="p">)</span> <span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">p1</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -2770,7 +2770,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

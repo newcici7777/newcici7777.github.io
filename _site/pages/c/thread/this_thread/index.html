@@ -1083,7 +1083,7 @@
     	<a href="/pages/c/thread/this_thread" onclick="pageScrollToTop(this)"> this_thread</a>
         
             
-                <ul><li><a href="#取得get_id" onclick="mobilePageScrollToAnchor(this)" >取得get_id()</a><ul><li><a href="#取得main-thread的id" onclick="mobilePageScrollToAnchor(this)" >取得main thread的id</a></li><li><a href="#取得thread的id" onclick="mobilePageScrollToAnchor(this)" >取得thread的id</a></li><li><a href="#也可以透過執行緒物件取得id" onclick="mobilePageScrollToAnchor(this)" >也可以透過執行緒物件取得id</a></li></ul></li><li><a href="#sleep_for" onclick="mobilePageScrollToAnchor(this)" >sleep_for()</a></li></ul>
+                <ul><li><a href="#取得get_id" onclick="mobilePageScrollToAnchor(this)" >取得get_id()</a><ul><li><a href="#取得main-thread的id" onclick="mobilePageScrollToAnchor(this)" >取得main thread的id</a></li><li><a href="#取得thread的id" onclick="mobilePageScrollToAnchor(this)" >取得thread的id</a></li><li><a href="#也可以透過執行緒物件取得id" onclick="mobilePageScrollToAnchor(this)" >也可以透過執行緒物件取得id</a></li></ul></li><li><a href="#sleep_for-" onclick="mobilePageScrollToAnchor(this)" >sleep_for ()</a></li></ul>
 
             
         </li>
@@ -1244,18 +1244,18 @@
 13
 14
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立執行緒t1</span>
-    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
-    <span class="c1">//建立執行緒t2</span>
-    <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
-    
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"get_id() = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="c1">//執行緒t1被記憶體釋放</span>
-    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="c1">//執行緒t2被記憶體釋放</span>
-    <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立執行緒t1</span>
+  <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
+  <span class="c1">//建立執行緒t2</span>
+  <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
+  
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"get_id() = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  
+  <span class="c1">//執行緒t1被記憶體釋放</span>
+  <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+  <span class="c1">//執行緒t2被記憶體釋放</span>
+  <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1274,12 +1274,12 @@
 7
 8
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func get_id() = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//每一秒印1次，這裡是執行10秒</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//停1秒鐘</span>
-    <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func get_id() = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//每一秒印1次，這裡是執行10秒</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", msg ="</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="c1">//停1秒鐘</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1310,32 +1310,32 @@
 14
 15
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立執行緒t1</span>
-    <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
-    <span class="c1">//建立執行緒t2</span>
-    <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
-    
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"main() get_id() = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"t1 get_id() = "</span> <span class="o">&lt;&lt;</span> <span class="n">t1</span><span class="p">.</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"t2 get_id() = "</span> <span class="o">&lt;&lt;</span> <span class="n">t2</span><span class="p">.</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//執行緒t1被記憶體釋放</span>
-    <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="c1">//執行緒t2被記憶體釋放</span>
-    <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立執行緒t1</span>
+  <span class="kr">thread</span> <span class="n">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"test test"</span><span class="p">);</span>
+  <span class="c1">//建立執行緒t2</span>
+  <span class="kr">thread</span> <span class="n">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="s">"abcdefg abcdefg"</span><span class="p">);</span>
+  
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"main() get_id() = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"t1 get_id() = "</span> <span class="o">&lt;&lt;</span> <span class="n">t1</span><span class="p">.</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"t2 get_id() = "</span> <span class="o">&lt;&lt;</span> <span class="n">t2</span><span class="p">.</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//執行緒t1被記憶體釋放</span>
+  <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+  <span class="c1">//執行緒t2被記憶體釋放</span>
+  <span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="sleep_for">sleep_for()</h2>
+<h2 id="sleep_for-">sleep_for ()</h2>
 
-<p>跟sleep()函式一樣，但sleep()會有作業系統不同造成寫法不同，匯入的標頭檔不同。但sleep_for()解決這個問題。</p>
+<p>跟sleep()函式一樣，但sleep()會有作業系統不同造成寫法不同，匯入的標頭檔不同。但sleep_for ()解決這個問題。</p>
 
 <p>以下是暫停1秒</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">this_thread</span><span class="o">::</span><span class="n">sleep_for</span><span class="p">(</span><span class="n">chrono</span><span class="o">::</span><span class="n">seconds</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
+</pre></td><td class="code"><pre><span class="n">this_thread</span><span class="o">::</span><span class="n">sleep_for</span> <span class="p">(</span><span class="n">chrono</span><span class="o">::</span><span class="n">seconds</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 </section>
@@ -1528,7 +1528,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

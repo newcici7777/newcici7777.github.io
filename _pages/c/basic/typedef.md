@@ -38,10 +38,10 @@ int64_t是long long的類型別名
 
 
 {% highlight c++ linenos %}
-    //windows
-    typedef short int16_t;//16位元整數
-    typedef int int32_t;//32位元整數
-    typedef long long int64_t;//64位元整數
+  //windows
+  typedef short int16_t;//16位元整數
+  typedef int int32_t;//32位元整數
+  typedef long long int64_t;//64位元整數
 {% endhighlight %}
 
 ## Linux類型別名
@@ -53,10 +53,10 @@ int32_t是int的類型別名
 int64_t是long的類型別名
 
 {% highlight c++ linenos %}
-    //Linux
-    typedef short int16_t;//16位元整數
-    typedef int int32_t;//32位元整數
-    typedef long int64_t;//64位元整數
+  //Linux
+  typedef short int16_t;//16位元整數
+  typedef int int32_t;//32位元整數
+  typedef long int64_t;//64位元整數
 {% endhighlight %}
 
 ## size_t 無符號整數類型

@@ -40,7 +40,7 @@ map(initializer_list<pair<K,V>> il);
   // 使用括號
   // map<int,string> m2({ {10, "Mary"}, {9, "Bill"}, {7, "Alice"}, {8, "Juli"}, {6, "Ken"} });
   for (auto& val:m2) {
-    cout << val.first << "," << val.second << " ";
+  cout << val.first << "," << val.second << " ";
   }
   cout << endl;
 {% endhighlight %}
@@ -62,7 +62,7 @@ m2[10] = Mary
   cout << "m2[10] = " << m2[10] << endl;
   cout << "m2[22] = " << m2[22] << endl;
   for (auto& val:m2) {
-    cout << val.first << "," << val.second << " ";
+  cout << val.first << "," << val.second << " ";
   }
   cout << endl;
 {% endhighlight %}
@@ -77,7 +77,7 @@ m2[22] =
   map<int,string> m2 = { {10, "Mary"}, {9, "Bill"}, {7, "Alice"}, {8, "Juli"}, {6, "Ken"} };
   cout << "修改前" << endl;
   for (auto& val:m2) {
-    cout << val.first << "," << val.second << " ";
+  cout << val.first << "," << val.second << " ";
   }
   cout << endl;
   // 新增
@@ -88,7 +88,7 @@ m2[22] =
   m2[9] = "Momo";
   cout << "修改後" << endl;
   for (auto& val:m2) {
-    cout << val.first << "," << val.second << " ";
+  cout << val.first << "," << val.second << " ";
   }
   cout << endl;
 {% endhighlight %}
@@ -112,13 +112,13 @@ void insert(initializer_list<pair<K,V>> il);
   map<int,string> m2 = { {10, "Mary"}, {9, "Bill"}, {7, "Alice"}, {8, "Juli"}, {6, "Ken"} };
   cout << "修改前" << endl;
   for (auto& val:m2) {
-    cout << val.first << "," << val.second << " ";
+  cout << val.first << "," << val.second << " ";
   }
   cout << endl;
   m2.insert({ {1, "Ben"}, {2, "Cindy"}, {3, "Rita"} });
   cout << "插入後" << endl;
   for (auto& val:m2) {
-    cout << val.first << "," << val.second << " ";
+  cout << val.first << "," << val.second << " ";
   }
   cout << endl;
 {% endhighlight %}
@@ -134,13 +134,13 @@ void insert(initializer_list<pair<K,V>> il);
   map<int,string> m2 = { {10, "Mary"}, {9, "Bill"}, {7, "Alice"}, {8, "Juli"}, {6, "Ken"} };
   cout << "修改前" << endl;
   for (auto& val:m2) {
-    cout << val.first << "," << val.second << " ";
+  cout << val.first << "," << val.second << " ";
   }
   cout << endl;
   m2.insert({ {10, "Ben"}, {9, "Cindy"}, {3, "Rita"} });
   cout << "插入後" << endl;
   for (auto& val:m2) {
-    cout << val.first << "," << val.second << " ";
+  cout << val.first << "," << val.second << " ";
   }
   cout << endl;
 {% endhighlight %}
@@ -161,10 +161,10 @@ pair<iterator,bool> insert(initializer_list<pair<K,V>> il);
   map<int,string> m2 = { {10, "Mary"}, {9, "Bill"}, {7, "Alice"}, {8, "Juli"}, {6, "Ken"} };
   auto ret = m2.insert({5, "Julia"});
   if (ret.second == true) {
-    cout << "成功" << ", first = " << ret.first->first
+  cout << "成功" << ", first = " << ret.first->first
   << ", second = " << ret.first -> second << endl;
   } else {
-    cout << "失敗" << endl;
+  cout << "失敗" << endl;
   }
 {% endhighlight %}
 ```
@@ -188,7 +188,7 @@ pair<iterator,bool> emplace(initializer_list<pair<K,V>> il);
   last--;
   map<int, string> m3(first, last);
   for (auto & val:m3) {
-    cout << val.first << "," << val.second << " ";
+  cout << val.first << "," << val.second << " ";
   }
   cout << endl;
 {% endhighlight %}

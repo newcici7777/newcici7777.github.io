@@ -23,9 +23,9 @@ tail = 5
 ### push語法
 
 {% highlight c++ linenos %}
-    tail_ = (tail_ + 1) % maxLen;
-    // 把值塞入
-    data_[tail_] = element;
+  tail_ = (tail_ + 1) % maxLen;
+  // 把值塞入
+  data_[tail_] = element;
 {% endhighlight %}
 
 ### 第1次新增
@@ -90,7 +90,7 @@ tail指向陣列索引0，新增一個資料55在陣列索引0
 
 pop語法跟push語法一模一樣
 {% highlight c++ linenos %}
-    front_ = (front_ + 1) % maxLen;
+  front_ = (front_ + 1) % maxLen;
 {% endhighlight %}
 
 把第0筆pop之前
@@ -144,10 +144,10 @@ i = 3，front = 3，最大容量為maxLen = 6
 完整print語法
 {% highlight c++ linenos %}
   void print() {
-    for (int i = 0; i < size(); i++) {
-      cout << data_[(front_ + i) % maxLen] << ",";
-    }
-    cout << endl;
+  for (int i = 0; i < size(); i++) {
+    cout << data_[(front_ + i) % maxLen] << ",";
+  }
+  cout << endl;
   }
 {% endhighlight %}
 
@@ -164,54 +164,54 @@ class CircularQueue{
  public:
   // 建構子
   CircularQueue() {
-    Init();  // 呼叫初始化
+  Init();  // 呼叫初始化
   }
   // 初始化函式
   void Init() {
-    // 只能初始化1次，沒初始化就初始化
-    if (is_init_ != true) {
-      front_ = 0;  // 初始化front指向0的索引(第一個元素)
-      tail_ = maxLen - 1;  // 尾指標指向陣列最後一個元素索引
-      len_ = 0;  // 初始化佇列實際大小為0
-      memset(data_, 0, sizeof(data_));  // 清空陣列記憶體
-      is_init_ = true;  // 設成已初始化
-    }
+  // 只能初始化1次，沒初始化就初始化
+  if (is_init_ != true) {
+    front_ = 0;  // 初始化front指向0的索引(第一個元素)
+    tail_ = maxLen - 1;  // 尾指標指向陣列最後一個元素索引
+    len_ = 0;  // 初始化佇列實際大小為0
+    memset(data_, 0, sizeof(data_));  // 清空陣列記憶體
+    is_init_ = true;  // 設成已初始化
+  }
   }
   bool IsFull() {
-    return len_ == maxLen;
+  return len_ == maxLen;
   }
   int size() {
-    return len_;
+  return len_;
   }
   bool empty() {
-    return len_ == 0;
+  return len_ == 0;
   }
   bool push(const T &element) {
-    // 判斷queue是否已經滿了
-    if (IsFull()) {
-      cout << "Queue is full." << endl;
-      return false;
-    }
-    tail_ = (tail_ + 1) % maxLen;
-    // 把值塞入
-    data_[tail_] = element;
-    len_++;
-    return true;
+  // 判斷queue是否已經滿了
+  if (IsFull()) {
+    cout << "Queue is full." << endl;
+    return false;
+  }
+  tail_ = (tail_ + 1) % maxLen;
+  // 把值塞入
+  data_[tail_] = element;
+  len_++;
+  return true;
   }
   bool pop() {
-    if (empty()) return false;
-    front_ = (front_ + 1) % maxLen;
-    len_--;
-    return true;
+  if (empty()) return false;
+  front_ = (front_ + 1) % maxLen;
+  len_--;
+  return true;
   }
   void print() {
-    for (int i = 0; i < size(); i++) {
-      cout << data_[(front_ + i) % maxLen] << ",";
-    }
-    cout << endl;
+  for (int i = 0; i < size(); i++) {
+    cout << data_[(front_ + i) % maxLen] << ",";
+  }
+  cout << endl;
   }
   T& front() {
-    return data_[front_];
+  return data_[front_];
   }
  private:
   bool is_init_;  // 是否已經初始化

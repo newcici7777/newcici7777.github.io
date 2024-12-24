@@ -20,7 +20,7 @@ void print(int code,const string& msg);
 
 {% highlight c++ linenos %}
 void print(int code, const string& msg) {
-    cout << "Error code = " << code << " , Msg = " << msg << endl;
+  cout << "Error code = " << code << " , Msg = " << msg << endl;
 }
 {% endhighlight %}
 
@@ -37,12 +37,12 @@ print(500, "Server Error.");
 void print(int code,const string& msg);
 int main() {
 	//呼叫函式
-    print(500, "Server Error.");
-    return 0;
+  print(500, "Server Error.");
+  return 0;
 }
 //函式定義
 void print(int code, const string& msg) {
-    cout << "Error code = " << code << " , Msg = " << msg << endl;
+  cout << "Error code = " << code << " , Msg = " << msg << endl;
 }
 {% endhighlight %}
 
@@ -57,11 +57,11 @@ Error code = 500 , Msg = Server Error.
 {% highlight c++ linenos %}
 //函式定義
 void print(int code, const string& msg) {
-    cout << "Error code = " << code << " , Msg = " << msg << endl;
+  cout << "Error code = " << code << " , Msg = " << msg << endl;
 }
 int main() {
-    print(500, "Server Error.");
-    return 0;
+  print(500, "Server Error.");
+  return 0;
 }
 {% endhighlight %}
 

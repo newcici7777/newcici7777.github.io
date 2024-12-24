@@ -33,15 +33,15 @@ int& y = getValue(原始變數);
 完整程式碼
 {% highlight c++ linenos %}
 int& getValue(int& z){
-    z++;
-    return z;
+  z++;
+  return z;
 }
 int main() {
-    int x = 10;
-    int& y = getValue(x);
-    cout << "x = " << x << endl;
-    cout << "y = " << y << endl;
-    return 0;
+  int x = 10;
+  int& y = getValue(x);
+  cout << "x = " << x << endl;
+  cout << "y = " << y << endl;
+  return 0;
 }
 {% endhighlight %}
 

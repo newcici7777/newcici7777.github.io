@@ -1246,8 +1246,8 @@
 <span class="k">typedef</span> <span class="kt">int</span> <span class="n">ElemType</span><span class="p">;</span>
 <span class="c1">//結構成員定義</span>
 <span class="k">struct</span> <span class="nc">ArrayList</span> <span class="p">{</span>
-    <span class="n">ElemType</span> <span class="n">data</span><span class="p">[</span><span class="n">MAXSIZE</span><span class="p">];</span><span class="c1">//陣列</span>
-    <span class="kt">size_t</span> <span class="n">size</span><span class="p">;</span><span class="c1">//目前陣列中數量，由1開始</span>
+  <span class="n">ElemType</span> <span class="n">data</span><span class="p">[</span><span class="n">MAXSIZE</span><span class="p">];</span><span class="c1">//陣列</span>
+  <span class="kt">size_t</span> <span class="n">size</span><span class="p">;</span><span class="c1">//目前陣列中數量，由1開始</span>
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1268,8 +1268,8 @@
  清空list
  */</span>
 <span class="kt">void</span> <span class="nf">ClearList</span><span class="p">(</span><span class="n">ArrayList</span><span class="o">&amp;</span> <span class="n">list</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">)</span> <span class="o">*</span> <span class="n">MAXSIZE</span><span class="p">);</span>
+  <span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">)</span> <span class="o">*</span> <span class="n">MAXSIZE</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1567,7 +1567,7 @@
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre>        <span class="n">memmove</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="n">index</span> <span class="p">,</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="n">index</span><span class="p">)</span> <span class="o">*</span> <span class="nf">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
+</pre></td><td class="code"><pre>    <span class="n">memmove</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="n">index</span> <span class="p">,</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="n">index</span><span class="p">)</span> <span class="o">*</span> <span class="nf">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1626,25 +1626,25 @@
  list[index...] -&gt; list[index + 1 ...]
  */</span>
 <span class="kt">bool</span> <span class="nf">insert</span><span class="p">(</span><span class="n">ArrayList</span><span class="o">&amp;</span> <span class="n">list</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">index</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">element</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//判斷是否超出最大容量</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">==</span> <span class="n">MAXSIZE</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="c1">//檢查插入索引</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&gt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"insert的索引介於0-"</span> <span class="o">&lt;&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span>  <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//insert的索引在中間，並非最後一個</span>
-    <span class="c1">//若插入的索引 == size，不用搬移資料，直接在最後面新增資料。</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//搬移資料</span>
-        <span class="c1">//list[index...] -&gt; list[index + 1 ...]</span>
-        <span class="n">memmove</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="n">index</span> <span class="p">,</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="n">index</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
-    <span class="p">}</span>
-    <span class="c1">//插入資料</span>
-    <span class="n">memcpy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">list</span><span class="p">.</span><span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">element</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
-    <span class="c1">//list的增加一個</span>
-    <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="o">++</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="c1">//判斷是否超出最大容量</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">==</span> <span class="n">MAXSIZE</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="c1">//檢查插入索引</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&gt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"insert的索引介於0-"</span> <span class="o">&lt;&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span>  <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//insert的索引在中間，並非最後一個</span>
+  <span class="c1">//若插入的索引 == size，不用搬移資料，直接在最後面新增資料。</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//搬移資料</span>
+    <span class="c1">//list[index...] -&gt; list[index + 1 ...]</span>
+    <span class="n">memmove</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="n">index</span> <span class="p">,</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="n">index</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
+  <span class="p">}</span>
+  <span class="c1">//插入資料</span>
+  <span class="n">memcpy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">list</span><span class="p">.</span><span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">element</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
+  <span class="c1">//list的增加一個</span>
+  <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="o">++</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1678,9 +1678,9 @@
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>    <span class="c1">//list[index + 1 ...] 拷貝-&gt; list[index ...]</span>
-    <span class="c1">//因為要刪除一個元素，所以拷貝的個數要-1</span>
-    <span class="n">memmove</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="n">index</span><span class="p">,</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="n">index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="nf">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
+</pre></td><td class="code"><pre>  <span class="c1">//list[index + 1 ...] 拷貝-&gt; list[index ...]</span>
+  <span class="c1">//因為要刪除一個元素，所以拷貝的個數要-1</span>
+  <span class="n">memmove</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="n">index</span><span class="p">,</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="n">index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="nf">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1722,22 +1722,22 @@
  list[index+1...] 拷貝至-&gt;  list[index  ...]
  */</span>
 <span class="kt">bool</span> <span class="nf">del</span><span class="p">(</span><span class="n">ArrayList</span><span class="o">&amp;</span> <span class="n">list</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">index</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//大小為0，不用刪除任何資料</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="c1">//檢查刪除索引</span>
-    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">checkIndex</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="n">index</span><span class="p">))</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"delete索引介於0-"</span> <span class="o">&lt;&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">1</span>  <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//若index不為最後一筆，要進行搬移</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="p">{</span>
-        <span class="c1">//list[index + 1 ...] 拷貝-&gt; list[index ...]</span>
-        <span class="n">memmove</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="n">index</span><span class="p">,</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="n">index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
-    <span class="p">}</span>
-    
-    <span class="c1">//總數量減1</span>
-    <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="o">--</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="c1">//大小為0，不用刪除任何資料</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="c1">//檢查刪除索引</span>
+  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">checkIndex</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="n">index</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"delete索引介於0-"</span> <span class="o">&lt;&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">1</span>  <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//若index不為最後一筆，要進行搬移</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">//list[index + 1 ...] 拷貝-&gt; list[index ...]</span>
+    <span class="n">memmove</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="n">index</span><span class="p">,</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="n">index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
+  <span class="p">}</span>
+  
+  <span class="c1">//總數量減1</span>
+  <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="o">--</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1751,9 +1751,9 @@
 4
 5
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">printList</span><span class="p">(</span><span class="k">const</span> <span class="n">ArrayList</span><span class="o">&amp;</span> <span class="n">list</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1798,40 +1798,40 @@
 35
 36
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">ArrayList</span> <span class="n">list</span><span class="p">;</span> <span class="c1">//建立ArrayList</span>
-    <span class="n">ClearList</span><span class="p">(</span><span class="n">list</span><span class="p">);</span><span class="c1">//清空</span>
-    
-    <span class="c1">//ElemType是int</span>
-    <span class="n">ElemType</span> <span class="n">element</span><span class="p">;</span>
-    
-    <span class="n">element</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>
-    <span class="c1">//在索引0插入元素</span>
-    <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
-    
-    <span class="n">element</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
-    <span class="c1">//在索引0插入元素</span>
-    <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
-    
-    <span class="n">element</span> <span class="o">=</span> <span class="mi">13</span><span class="p">;</span>
-    <span class="c1">//在索引0插入元素</span>
-    <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
-    
-    <span class="n">element</span> <span class="o">=</span> <span class="mi">14</span><span class="p">;</span>
-    <span class="c1">//在索引0插入元素</span>
-    <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
-    
-    <span class="n">element</span> <span class="o">=</span> <span class="mi">15</span><span class="p">;</span>
-    <span class="c1">//在索引0插入元素</span>
-    <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
-    
-    <span class="n">element</span> <span class="o">=</span> <span class="mi">16</span><span class="p">;</span>
-    <span class="c1">//在索引0插入元素</span>
-    <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
-    <span class="n">printList</span><span class="p">(</span><span class="n">list</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"---------------------"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">del</span><span class="p">(</span><span class="n">list</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
-    <span class="n">printList</span><span class="p">(</span><span class="n">list</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">ArrayList</span> <span class="n">list</span><span class="p">;</span> <span class="c1">//建立ArrayList</span>
+  <span class="n">ClearList</span><span class="p">(</span><span class="n">list</span><span class="p">);</span><span class="c1">//清空</span>
+  
+  <span class="c1">//ElemType是int</span>
+  <span class="n">ElemType</span> <span class="n">element</span><span class="p">;</span>
+  
+  <span class="n">element</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>
+  <span class="c1">//在索引0插入元素</span>
+  <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
+  
+  <span class="n">element</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+  <span class="c1">//在索引0插入元素</span>
+  <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
+  
+  <span class="n">element</span> <span class="o">=</span> <span class="mi">13</span><span class="p">;</span>
+  <span class="c1">//在索引0插入元素</span>
+  <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
+  
+  <span class="n">element</span> <span class="o">=</span> <span class="mi">14</span><span class="p">;</span>
+  <span class="c1">//在索引0插入元素</span>
+  <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
+  
+  <span class="n">element</span> <span class="o">=</span> <span class="mi">15</span><span class="p">;</span>
+  <span class="c1">//在索引0插入元素</span>
+  <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
+  
+  <span class="n">element</span> <span class="o">=</span> <span class="mi">16</span><span class="p">;</span>
+  <span class="c1">//在索引0插入元素</span>
+  <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
+  <span class="n">printList</span><span class="p">(</span><span class="n">list</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"---------------------"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">del</span><span class="p">(</span><span class="n">list</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+  <span class="n">printList</span><span class="p">(</span><span class="n">list</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -2001,22 +2001,22 @@
 <span class="k">typedef</span> <span class="kt">int</span> <span class="n">ElemType</span><span class="p">;</span>
 <span class="c1">//結構成員定義</span>
 <span class="k">struct</span> <span class="nc">ArrayList</span> <span class="p">{</span>
-    <span class="n">ElemType</span> <span class="n">data</span><span class="p">[</span><span class="n">MAXSIZE</span><span class="p">];</span><span class="c1">//陣列</span>
-    <span class="kt">size_t</span> <span class="n">size</span><span class="p">;</span><span class="c1">//目前陣列中數量，由1開始</span>
+  <span class="n">ElemType</span> <span class="n">data</span><span class="p">[</span><span class="n">MAXSIZE</span><span class="p">];</span><span class="c1">//陣列</span>
+  <span class="kt">size_t</span> <span class="n">size</span><span class="p">;</span><span class="c1">//目前陣列中數量，由1開始</span>
 <span class="p">};</span>
 
 <span class="cm">/**
  索引是否介於0... size-1
  */</span>
 <span class="kt">bool</span> <span class="n">checkIndex</span><span class="p">(</span><span class="k">const</span> <span class="n">ArrayList</span><span class="o">&amp;</span> <span class="n">list</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">index</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="cm">/**
  清空list
  */</span>
 <span class="kt">void</span> <span class="n">ClearList</span><span class="p">(</span><span class="n">ArrayList</span><span class="o">&amp;</span> <span class="n">list</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">)</span> <span class="o">*</span> <span class="n">MAXSIZE</span><span class="p">);</span>
+  <span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">)</span> <span class="o">*</span> <span class="n">MAXSIZE</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="cm">/**
  插入元素
@@ -2028,25 +2028,25 @@
  list[index...] -&gt; list[index + 1 ...]
  */</span>
 <span class="kt">bool</span> <span class="n">insert</span><span class="p">(</span><span class="n">ArrayList</span><span class="o">&amp;</span> <span class="n">list</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">index</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">element</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//判斷是否超出最大容量</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">==</span> <span class="n">MAXSIZE</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="c1">//檢查插入索引</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&gt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"insert的索引介於0-"</span> <span class="o">&lt;&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span>  <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//insert的索引在中間，並非最後一個</span>
-    <span class="c1">//若插入的索引 == size，不用搬移資料，直接在最後面新增資料。</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//搬移資料</span>
-        <span class="c1">//list[index...] -&gt; list[index + 1 ...]</span>
-        <span class="n">memmove</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="n">index</span> <span class="p">,</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="n">index</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
-    <span class="p">}</span>
-    <span class="c1">//插入資料</span>
-    <span class="n">memcpy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">list</span><span class="p">.</span><span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">element</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
-    <span class="c1">//list的增加一個</span>
-    <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="o">++</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="c1">//判斷是否超出最大容量</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">==</span> <span class="n">MAXSIZE</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="c1">//檢查插入索引</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&gt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"insert的索引介於0-"</span> <span class="o">&lt;&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span>  <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//insert的索引在中間，並非最後一個</span>
+  <span class="c1">//若插入的索引 == size，不用搬移資料，直接在最後面新增資料。</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//搬移資料</span>
+    <span class="c1">//list[index...] -&gt; list[index + 1 ...]</span>
+    <span class="n">memmove</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="n">index</span> <span class="p">,</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="n">index</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
+  <span class="p">}</span>
+  <span class="c1">//插入資料</span>
+  <span class="n">memcpy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">list</span><span class="p">.</span><span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">element</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
+  <span class="c1">//list的增加一個</span>
+  <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="o">++</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="cm">/**
  刪除元素
@@ -2055,28 +2055,28 @@
  list[index+1...] 拷貝至-&gt;  list[index  ...]
  */</span>
 <span class="kt">bool</span> <span class="n">del</span><span class="p">(</span><span class="n">ArrayList</span><span class="o">&amp;</span> <span class="n">list</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">index</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//大小為0，不用刪除任何資料</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="c1">//檢查刪除索引</span>
-    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">checkIndex</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="n">index</span><span class="p">))</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"delete索引介於0-"</span> <span class="o">&lt;&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">1</span>  <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//若index不為最後一筆，要進行搬移</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="p">{</span>
-        <span class="c1">//list[index + 1 ...] 拷貝-&gt; list[index ...]</span>
-        <span class="n">memmove</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="n">index</span><span class="p">,</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="n">index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
-    <span class="p">}</span>
-    
-    <span class="c1">//總數量減1</span>
-    <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="o">--</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="c1">//大小為0，不用刪除任何資料</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="c1">//檢查刪除索引</span>
+  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">checkIndex</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="n">index</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"delete索引介於0-"</span> <span class="o">&lt;&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">1</span>  <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//若index不為最後一筆，要進行搬移</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">//list[index + 1 ...] 拷貝-&gt; list[index ...]</span>
+    <span class="n">memmove</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="n">index</span><span class="p">,</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="n">index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ElemType</span><span class="p">));</span>
+  <span class="p">}</span>
+  
+  <span class="c1">//總數量減1</span>
+  <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="o">--</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="kt">void</span> <span class="n">printList</span><span class="p">(</span><span class="k">const</span> <span class="n">ArrayList</span><span class="o">&amp;</span> <span class="n">list</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="cm">/**
@@ -2084,10 +2084,10 @@
  找不到就返回-1
  */</span>
 <span class="kt">int</span> <span class="n">findElem</span><span class="p">(</span><span class="k">const</span> <span class="n">ArrayList</span><span class="o">&amp;</span> <span class="n">list</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">e</span><span class="p">)</span> <span class="k">return</span> <span class="n">i</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">e</span><span class="p">)</span> <span class="k">return</span> <span class="n">i</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="cm">/**
@@ -2096,46 +2096,46 @@
  參數3:e 返回元素
  */</span>
 <span class="kt">bool</span> <span class="n">getElem</span><span class="p">(</span><span class="k">const</span> <span class="n">ArrayList</span><span class="o">&amp;</span> <span class="n">list</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">index</span><span class="p">,</span><span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">checkIndex</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="n">index</span><span class="p">))</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="n">e</span> <span class="o">=</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">];</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">checkIndex</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="n">index</span><span class="p">))</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="n">e</span> <span class="o">=</span> <span class="n">list</span><span class="p">.</span><span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">];</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">ArrayList</span> <span class="n">list</span><span class="p">;</span> <span class="c1">//建立ArrayList</span>
-    <span class="n">ClearList</span><span class="p">(</span><span class="n">list</span><span class="p">);</span><span class="c1">//清空</span>
-    
-    <span class="c1">//ElemType是int</span>
-    <span class="n">ElemType</span> <span class="n">element</span><span class="p">;</span>
-    
-    <span class="n">element</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>
-    <span class="c1">//在索引0插入元素</span>
-    <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
-    
-    <span class="n">element</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
-    <span class="c1">//在索引0插入元素</span>
-    <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
-    
-    <span class="n">element</span> <span class="o">=</span> <span class="mi">13</span><span class="p">;</span>
-    <span class="c1">//在索引0插入元素</span>
-    <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
-    
-    <span class="n">element</span> <span class="o">=</span> <span class="mi">14</span><span class="p">;</span>
-    <span class="c1">//在索引0插入元素</span>
-    <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
-    
-    <span class="n">element</span> <span class="o">=</span> <span class="mi">15</span><span class="p">;</span>
-    <span class="c1">//在索引0插入元素</span>
-    <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
-    
-    <span class="n">element</span> <span class="o">=</span> <span class="mi">16</span><span class="p">;</span>
-    <span class="c1">//在索引0插入元素</span>
-    <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
-    <span class="n">printList</span><span class="p">(</span><span class="n">list</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"---------------------"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">del</span><span class="p">(</span><span class="n">list</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
-    <span class="n">printList</span><span class="p">(</span><span class="n">list</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">ArrayList</span> <span class="n">list</span><span class="p">;</span> <span class="c1">//建立ArrayList</span>
+  <span class="n">ClearList</span><span class="p">(</span><span class="n">list</span><span class="p">);</span><span class="c1">//清空</span>
+  
+  <span class="c1">//ElemType是int</span>
+  <span class="n">ElemType</span> <span class="n">element</span><span class="p">;</span>
+  
+  <span class="n">element</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>
+  <span class="c1">//在索引0插入元素</span>
+  <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
+  
+  <span class="n">element</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+  <span class="c1">//在索引0插入元素</span>
+  <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
+  
+  <span class="n">element</span> <span class="o">=</span> <span class="mi">13</span><span class="p">;</span>
+  <span class="c1">//在索引0插入元素</span>
+  <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
+  
+  <span class="n">element</span> <span class="o">=</span> <span class="mi">14</span><span class="p">;</span>
+  <span class="c1">//在索引0插入元素</span>
+  <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
+  
+  <span class="n">element</span> <span class="o">=</span> <span class="mi">15</span><span class="p">;</span>
+  <span class="c1">//在索引0插入元素</span>
+  <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
+  
+  <span class="n">element</span> <span class="o">=</span> <span class="mi">16</span><span class="p">;</span>
+  <span class="c1">//在索引0插入元素</span>
+  <span class="n">insert</span><span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="n">list</span><span class="p">.</span><span class="n">size</span><span class="p">,</span> <span class="n">element</span><span class="p">);</span>
+  <span class="n">printList</span><span class="p">(</span><span class="n">list</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"---------------------"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">del</span><span class="p">(</span><span class="n">list</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+  <span class="n">printList</span><span class="p">(</span><span class="n">list</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -2330,7 +2330,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

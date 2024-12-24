@@ -18,7 +18,7 @@ Prerequisites:
 using namespace std;
 void foreach(const vector<int>& v) {
   for (auto it = v.cbegin(); it != v.end(); it++) {
-    cout << *it << " ";
+  cout << *it << " ";
   }
   cout << endl;
 }
@@ -41,7 +41,7 @@ STL容器(vector,list)皆有iterator疊代器，把iterator疊代器作為參數
 using namespace std;
 void foreach(const vector<int>::iterator first, const vector<int>::iterator last) {
   for (auto it = first; it != last; it++) {
-    cout << *it << " ";
+  cout << *it << " ";
   }
   cout << endl;
 }
@@ -65,13 +65,13 @@ int main() {
 using namespace std;
 void foreach(const vector<int>::iterator first, const vector<int>::iterator last) {
   for (auto it = first; it != last; it++) {
-    cout << *it << " ";
+  cout << *it << " ";
   }
   cout << endl;
 }
 void foreach(const vector<string>::iterator first, const vector<string>::iterator last) {
   for (auto it = first; it != last; it++) {
-    cout << *it << " ";
+  cout << *it << " ";
   }
   cout << endl;
 }
@@ -99,7 +99,7 @@ using namespace std;
 template<typename T>
 void foreach(const T first, const T last) {
   for (auto it = first; it != last; it++) {
-    cout << *it << " ";
+  cout << *it << " ";
   }
   cout << endl;
 }
@@ -133,7 +133,7 @@ void callback(const string& msg) {
 template<typename T>
 void foreach(const T first, const T last, void(*callback)(const string&)) {
   for (auto it = first; it != last; it++) {
-    callback(*it);
+  callback(*it);
   }
   cout << endl;
 }
@@ -161,13 +161,13 @@ using namespace std;
 class Callback {
  public:
   void operator()(const string& msg) {
-    cout << msg << " ";
+  cout << msg << " ";
   }
 };
 template<typename T>
 void foreach(const T first, const T last, Callback callback) {
   for (auto it = first; it != last; it++) {
-    callback(*it);
+  callback(*it);
   }
   cout << endl;
 }
@@ -200,14 +200,14 @@ void callback(const string& msg) {
 class Callback {
  public:
   void operator()(const string& msg) {
-    cout << msg << " ";
+  cout << msg << " ";
   }
 };
 //把callback類型化為模板T2
 template<typename T1, typename T2>
 void foreach(const T1 first, const T1 last, T2 callback) {
   for (auto it = first; it != last; it++) {
-    callback(*it);
+  callback(*it);
   }
   cout << endl;
 }
@@ -241,7 +241,7 @@ template<typename T>
 class Callback {
  public:
   void operator()(const T& msg) {
-    cout << msg << " ";
+  cout << msg << " ";
   }
 };
 {% endhighlight %}
@@ -271,13 +271,13 @@ template<typename T>
 class Callback {
  public:
   void operator()(const T& msg) {
-    cout << msg << " ";
+  cout << msg << " ";
   }
 };
 template<typename T1, typename T2>
 void foreach(const T1 first, const T1 last, T2 callback) {
   for (auto it = first; it != last; it++) {
-    callback(*it);
+  callback(*it);
   }
   cout << endl;
 }
@@ -319,7 +319,7 @@ template<typename T>
 class Callback {
  public:
   void operator()(const T& msg) {
-    cout << msg << " ";
+  cout << msg << " ";
   }
 };
 int main() {

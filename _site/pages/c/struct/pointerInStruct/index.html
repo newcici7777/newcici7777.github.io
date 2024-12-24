@@ -1279,40 +1279,40 @@
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">const</span> <span class="kt">int</span> <span class="n">SCORE_MAX</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
 <span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-    <span class="c1">//結構中的指標</span>
-    <span class="kt">int</span> <span class="o">*</span><span class="n">score</span><span class="p">;</span>
+  <span class="c1">//學生姓名</span>
+  <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="c1">//學號</span>
+  <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+  <span class="c1">//結構中的指標</span>
+  <span class="kt">int</span> <span class="o">*</span><span class="n">score</span><span class="p">;</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">);</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">SCORE_MAX</span><span class="p">];</span>
-    
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">SCORE_MAX</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//100 byte(name) + 4 byte(id) + 8 byte(*score指標)</span>
-    <span class="c1">//總共占 112 byte記憶體大小</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結構大小 = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//印出score指標指向的記憶體位址</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結構成員指標指向的記憶體位址 = "</span> <span class="o">&lt;&lt;</span>  <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//將student.score的記憶體位址先暫存下來</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">pp</span> <span class="o">=</span> <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">;</span>
-    <span class="c1">//將結構的成員全清成00000000</span>
-    <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">));</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After memset :"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//印出score指標指向的記憶體位址</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結構成員指標指向的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"原結構成員指標指向的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">pp</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//原結構成員指標指向的記憶體位址中的值</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">SCORE_MAX</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"student.score["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="p">(</span><span class="n">pp</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">);</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">SCORE_MAX</span><span class="p">];</span>
+  
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">SCORE_MAX</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//100 byte(name) + 4 byte(id) + 8 byte(*score指標)</span>
+  <span class="c1">//總共占 112 byte記憶體大小</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結構大小 = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//印出score指標指向的記憶體位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結構成員指標指向的記憶體位址 = "</span> <span class="o">&lt;&lt;</span>  <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//將student.score的記憶體位址先暫存下來</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">pp</span> <span class="o">=</span> <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">;</span>
+  <span class="c1">//將結構的成員全清成00000000</span>
+  <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">));</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After memset :"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//印出score指標指向的記憶體位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結構成員指標指向的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"原結構成員指標指向的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">pp</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//原結構成員指標指向的記憶體位址中的值</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">SCORE_MAX</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"student.score["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="p">(</span><span class="n">pp</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1381,38 +1381,38 @@ student.score[2] = 2
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">const</span> <span class="kt">int</span> <span class="n">SCORE_MAX</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
 <span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-    <span class="c1">//結構中的指標</span>
-    <span class="kt">int</span> <span class="o">*</span><span class="n">score</span><span class="p">;</span>
+  <span class="c1">//學生姓名</span>
+  <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="c1">//學號</span>
+  <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+  <span class="c1">//結構中的指標</span>
+  <span class="kt">int</span> <span class="o">*</span><span class="n">score</span><span class="p">;</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">);</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">SCORE_MAX</span><span class="p">];</span>
-    
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">SCORE_MAX</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//100 byte(name) + 4 byte(id) + 8 byte(*score指標)</span>
-    <span class="c1">//總共占 112 byte記憶體大小</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結構大小 = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//印出score指標指向的記憶體位址</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結構成員指標指向的記憶體位址 = "</span> <span class="o">&lt;&lt;</span>  <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//將student.score的記憶體位址先暫存下來</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">pp</span> <span class="o">=</span> <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">;</span>
-    <span class="c1">//將結構的成員指向的記憶體位址的值全清成00000000</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="o">*</span><span class="n">SCORE_MAX</span><span class="p">);</span>
-    <span class="c1">//將結構的成員全清成00000000</span>
-    <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">));</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After memset :"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//印出score指標指向的記憶體位址</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"原score成員的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">pp</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"score成員的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">);</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">SCORE_MAX</span><span class="p">];</span>
+  
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">SCORE_MAX</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//100 byte(name) + 4 byte(id) + 8 byte(*score指標)</span>
+  <span class="c1">//總共占 112 byte記憶體大小</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結構大小 = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//印出score指標指向的記憶體位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"結構成員指標指向的記憶體位址 = "</span> <span class="o">&lt;&lt;</span>  <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//將student.score的記憶體位址先暫存下來</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">pp</span> <span class="o">=</span> <span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">;</span>
+  <span class="c1">//將結構的成員指向的記憶體位址的值全清成00000000</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">score</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="o">*</span><span class="n">SCORE_MAX</span><span class="p">);</span>
+  <span class="c1">//將結構的成員全清成00000000</span>
+  <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">student</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">student</span><span class="p">));</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After memset :"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//印出score指標指向的記憶體位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"原score成員的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">pp</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"score成員的記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="n">student</span><span class="p">.</span><span class="n">score</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1438,12 +1438,12 @@ score成員的記憶體位址 = 0x0
 7
 8
 </pre></td><td class="code"><pre><span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-    <span class="c1">//結構中的指標</span>
-    <span class="n">Student</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
+  <span class="c1">//學生姓名</span>
+  <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="c1">//學號</span>
+  <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+  <span class="c1">//結構中的指標</span>
+  <span class="n">Student</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1460,12 +1460,12 @@ score成員的記憶體位址 = 0x0
 7
 8
 </pre></td><td class="code"><pre><span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-    <span class="c1">//結構中的指標</span>
-    <span class="n">Student</span> <span class="n">next</span><span class="p">;</span>
+  <span class="c1">//學生姓名</span>
+  <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="c1">//學號</span>
+  <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+  <span class="c1">//結構中的指標</span>
+  <span class="n">Student</span> <span class="n">next</span><span class="p">;</span>
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1484,10 +1484,10 @@ score成員的記憶體位址 = 0x0
 2
 3
 4
-</pre></td><td class="code"><pre>    <span class="n">Student</span> <span class="o">*</span><span class="n">student</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">;</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">);</span>
-    <span class="n">student</span><span class="o">-&gt;</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="n">student</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="n">Student</span> <span class="o">*</span><span class="n">student</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">;</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">student</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">);</span>
+  <span class="n">student</span><span class="o">-&gt;</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="n">student</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1495,15 +1495,15 @@ score成員的記憶體位址 = 0x0
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre>    <span class="n">Student</span> <span class="o">*</span><span class="n">student</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Student</span><span class="p">({</span> <span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
+</pre></td><td class="code"><pre>  <span class="n">Student</span> <span class="o">*</span><span class="n">student</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Student</span><span class="p">({</span> <span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="code"><pre>    <span class="n">Student</span> <span class="o">*</span><span class="n">student</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span> 
-    <span class="n">student</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Student</span><span class="p">({</span> <span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
+</pre></td><td class="code"><pre>  <span class="n">Student</span> <span class="o">*</span><span class="n">student</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span> 
+  <span class="n">student</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Student</span><span class="p">({</span> <span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1512,8 +1512,8 @@ score成員的記憶體位址 = 0x0
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="code"><pre>    <span class="n">Student</span> <span class="o">*</span><span class="n">student</span><span class="p">;</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">student</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">};</span>
+</pre></td><td class="code"><pre>  <span class="n">Student</span> <span class="o">*</span><span class="n">student</span><span class="p">;</span>
+  <span class="o">*</span><span class="p">(</span><span class="n">student</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1537,16 +1537,16 @@ score成員的記憶體位址 = 0x0
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">struct</span> <span class="nc">Student</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-    <span class="c1">//結構中的指標</span>
-    <span class="n">Student</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
+  <span class="c1">//學生姓名</span>
+  <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="c1">//學號</span>
+  <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+  <span class="c1">//結構中的指標</span>
+  <span class="n">Student</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="o">*</span><span class="n">student</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">({</span> <span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="o">*</span><span class="n">student</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">({</span> <span class="s">"Mary"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">});</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1741,7 +1741,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

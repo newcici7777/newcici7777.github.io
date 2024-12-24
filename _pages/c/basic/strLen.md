@@ -15,19 +15,19 @@ Prerequisites:
 ### 陣列法
 {% highlight c++ linenos %}
 int length(char* str) {
-    //初始值
-    int len = 0;
-    //條件判斷式為字元不等於\0，進入迴圈
-    for(;str[len] != 0; len++);
-    return len;
+  //初始值
+  int len = 0;
+  //條件判斷式為字元不等於\0，進入迴圈
+  for (;str[len] != 0; len++);
+  return len;
 }
 int main() {
-    char str[100];
-    //清空記憶體的值
-    memset(str,0,sizeof(str));
-    cout << "請輸入字串:"; cin >> str;
-    cout << "字串長度:" << length(str) << endl;
-    return 0;
+  char str[100];
+  //清空記憶體的值
+  memset(str,0,sizeof(str));
+  cout << "請輸入字串:"; cin >> str;
+  cout << "字串長度:" << length(str) << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -37,27 +37,27 @@ int main() {
 ### 指標法1
 {% highlight c++ linenos %}
 int length(char* str) {
-    int len = 0;
-    //指標移到字串陣列[0]的位址
-    char *ptr = str;
-    //判斷字元
-    while(*ptr != 0) {
-    	//位址往下一個陣列索引移動
-        ptr++;
-        //記錄字串長度
-        len++;
-    }
-    return len;
+  int len = 0;
+  //指標移到字串陣列[0]的位址
+  char *ptr = str;
+  //判斷字元
+  while(*ptr != 0) {
+  	//位址往下一個陣列索引移動
+    ptr++;
+    //記錄字串長度
+    len++;
+  }
+  return len;
 }
 {% endhighlight %}
 
 精簡版
 {% highlight c++ linenos %}
 int length(char* str) {
-    int len = 0;
-    char *ptr = str;
-    while(*ptr++) len++;
-    return len;
+  int len = 0;
+  char *ptr = str;
+  while(*ptr++) len++;
+  return len;
 }
 {% endhighlight %}
 
@@ -65,22 +65,22 @@ int length(char* str) {
 
 {% highlight c++ linenos %}
 int length(char* str) {
-    int len = 0;
-    for(char *pos = str; *pos; pos++, len++);
-    return len;
+  int len = 0;
+  for (char *pos = str; *pos; pos++, len++);
+  return len;
 }
 {% endhighlight %}
 
 ### 遞迴法
 {% highlight c++ linenos %}
 int length(char* str) {
-    //離開遞迴基本條件base case
-    if(*str == 0) return 0;
-    //若字元不為空字元，就執行以下程式碼
-    //指標往下個位址移動
-    str++;
-    //類似迴圈len++
-    return length(str) + 1;
+  //離開遞迴基本條件base case
+  if (*str == 0) return 0;
+  //若字元不為空字元，就執行以下程式碼
+  //指標往下個位址移動
+  str++;
+  //類似迴圈len++
+  return length(str) + 1;
 }
 {% endhighlight %}
 
@@ -91,14 +91,14 @@ int length(char* str) {
 
 {% highlight c++ linenos %}
 int main() {
-    char str[100];
-    //清空記憶體的值
-    memset(str,0,sizeof(str));
-    cout << "請輸入字串:"; cin >> str;
-    for(char *pos = str; *pos; pos++)
-        cout << *pos;
-    cout << endl;
-    return 0;
+  char str[100];
+  //清空記憶體的值
+  memset(str,0,sizeof(str));
+  cout << "請輸入字串:"; cin >> str;
+  for (char *pos = str; *pos; pos++)
+    cout << *pos;
+  cout << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -117,16 +117,16 @@ strlen()執行100次
 
 {% highlight c++ linenos %}
 int main() {
-    char str[100];
-    //清空記憶體的值
-    memset(str,0,sizeof(str));
-    cout << "請輸入字串:"; cin >> str;
-    
-    for(int i = 0; i < strlen(str); i++) {
-        cout << str[i];
-    }
-    cout << endl;
-    return 0;
+  char str[100];
+  //清空記憶體的值
+  memset(str,0,sizeof(str));
+  cout << "請輸入字串:"; cin >> str;
+  
+  for (int i = 0; i < strlen(str); i++) {
+    cout << str[i];
+  }
+  cout << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -136,16 +136,16 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    char str[100];
-    //清空記憶體的值
-    memset(str,0,sizeof(str));
-    cout << "請輸入字串:"; cin >> str;
-    
-    for(int i = 0, len = strlen(str); i < len; i++) {
-        cout << str[i];
-    }
-    cout << endl;
-    return 0;
+  char str[100];
+  //清空記憶體的值
+  memset(str,0,sizeof(str));
+  cout << "請輸入字串:"; cin >> str;
+  
+  for (int i = 0, len = strlen(str); i < len; i++) {
+    cout << str[i];
+  }
+  cout << endl;
+  return 0;
 }
 {% endhighlight %}
 

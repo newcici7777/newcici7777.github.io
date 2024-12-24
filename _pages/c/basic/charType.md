@@ -18,12 +18,12 @@ char所對映的整數是顯示在瑩幕上的ASCII碼。<https://zh.wikipedia.o
 
 比如\'a\'，記憶體位址存放的十進位值是97，二進制是01100001  
 
-              
+        
 
 |整數型態|占用Byte數量|數值範圍|格式符|輸出格式|
 |:---:|:---:|:---:|:---:|:---:|
-|char |1    |0~127|%c   |字元  |
-|char |1    |0~127|%d   |整數  |
+|char |1  |0~127|%c   |字元  |
+|char |1  |0~127|%d   |整數  |
 
 
 ### 字元變數設為數字。
@@ -65,8 +65,8 @@ a
 
 {% highlight c++ linenos %}
 int main() {
-    int c1 = 'A';
-    cout << "c1=" << c1 << endl;
+  int c1 = 'A';
+  cout << "c1=" << c1 << endl;
 	return 0;
 }
 {% endhighlight %}
@@ -81,8 +81,8 @@ int main() {
 想印出字元，就把int轉型成char
 
 {% highlight c++ linenos %}
-    int c1 = 'A';
-    cout << "c1=" << (char)c1 << endl;
+  int c1 = 'A';
+  cout << "c1=" << (char)c1 << endl;
 {% endhighlight %}
 ```
 
@@ -95,8 +95,8 @@ A
 也可字元加整數做運算。
 
 {% highlight c++ linenos %}
-    int c1 = 'A' + 2;
-    cout << "c1=" << (char)c1 << endl;
+  int c1 = 'A' + 2;
+  cout << "c1=" << (char)c1 << endl;
 {% endhighlight %}
 
 第一行，字元+2。
@@ -134,8 +134,8 @@ c1=C
 
 {% highlight c++ linenos %}
 int main() {
-    int num = '9' - '0';
-    cout << num << endl;
+  int num = '9' - '0';
+  cout << num << endl;
 }
 {% endhighlight %}
 
@@ -166,8 +166,8 @@ int main() {
 #### 小寫轉大寫
 
 {% highlight c++ linenos %}
-    char upper = 'a' - 32;
-    cout << upper << endl;
+  char upper = 'a' - 32;
+  cout << upper << endl;
 {% endhighlight %}
 ```
 A
@@ -175,8 +175,8 @@ A
 
 #### 大寫轉小寫
 {% highlight c++ linenos %}
-    char lower = 'A' + 32;
-    cout << lower << endl;
+  char lower = 'A' + 32;
+  cout << lower << endl;
 {% endhighlight %}
 ```
 a
@@ -186,8 +186,8 @@ a
 
 判斷0-9
 {% highlight c++ linenos %}
-    char c = 'A';
-    if(c < '0' || c > '9') cout << "不是數字" << endl;
+  char c = 'A';
+  if (c < '0' || c > '9') cout << "不是數字" << endl;
 {% endhighlight %}
 ```
 不是數字
@@ -195,8 +195,8 @@ a
 
 判斷a-z
 {% highlight c++ linenos %}
-    char c = 'A';
-    if(c < 'a' || c > 'z') cout << "不是小寫字母" << endl;
+  char c = 'A';
+  if (c < 'a' || c > 'z') cout << "不是小寫字母" << endl;
 {% endhighlight %}
 ```
 不是小寫字母
@@ -204,8 +204,8 @@ a
 
 判斷A-Z
 {% highlight c++ linenos %}
-    char c = 'a';
-    if(c < 'A' || c > 'Z') cout << "不是大寫字母" << endl;
+  char c = 'a';
+  if (c < 'A' || c > 'Z') cout << "不是大寫字母" << endl;
 {% endhighlight %}
 ```
 不是大寫字母
@@ -225,8 +225,8 @@ a
 #### 設定空字元
 
 {% highlight c++ linenos %}
-    char c4 = 0;
-    cout << "c4=" << c4 << endl;
+  char c4 = 0;
+  cout << "c4=" << c4 << endl;
 {% endhighlight %}
 
 ```
@@ -247,9 +247,9 @@ c4=
 #### 雙引號
 
 {% highlight c++ linenos %}
-    char c2 = '"';
-    cout << "c2=" << c2 << endl;
-    cout << "我說，\"跑!\"" << endl;
+  char c2 = '"';
+  cout << "c2=" << c2 << endl;
+  cout << "我說，\"跑!\"" << endl;
 {% endhighlight %}
 
 第1行，當作字元的雙引號，前面不用加斜線`'\"'`，直接寫雙引號就可以`'"'`。
@@ -265,9 +265,9 @@ c2="
 #### 單引號
 
 {% highlight c++ linenos %}
-    char c3 = '\'';
-    cout << "c3=" << c3 << endl;
-    cout << "我說，'跑!'" << endl;
+  char c3 = '\'';
+  cout << "c3=" << c3 << endl;
+  cout << "我說，'跑!'" << endl;
 {% endhighlight %}
 
 第1行，當作字元的單引號，前面要加斜線`'\''`。

@@ -1263,39 +1263,39 @@
 35
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">m_ptr</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">m_ptr</span><span class="p">;</span>
 <span class="nl">public:</span>
-    <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">m_ptr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-        <span class="n">strcpy</span><span class="p">(</span><span class="n">m_ptr</span><span class="p">,</span> <span class="s">"abcdef"</span><span class="p">);</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="n">Student</span> <span class="o">&amp;</span><span class="n">s</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">m_name</span><span class="p">);</span>
-        <span class="c1">//拷貝m_ptr</span>
-        <span class="n">m_ptr</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"呼叫Student(const Student &amp;s)拷貝函式"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">delete</span> <span class="p">[]</span> <span class="n">m_ptr</span><span class="p">;</span>
-        <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="c1">//印出記憶體位址</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"m_ptr address:"</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"m_ptr value = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">m_ptr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">m_ptr</span><span class="p">,</span> <span class="s">"abcdef"</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="n">Student</span> <span class="o">&amp;</span><span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">m_name</span><span class="p">);</span>
+    <span class="c1">//拷貝m_ptr</span>
+    <span class="n">m_ptr</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"呼叫Student(const Student &amp;s)拷貝函式"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">delete</span> <span class="p">[]</span> <span class="n">m_ptr</span><span class="p">;</span>
+    <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//印出記憶體位址</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"m_ptr address:"</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"m_ptr value = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">s1</span><span class="p">;</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">s1</span><span class="p">.</span><span class="n">m_name</span><span class="p">,</span> <span class="s">"Cici"</span><span class="p">);</span>
-    <span class="n">s1</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>    
+  <span class="n">Student</span> <span class="n">s1</span><span class="p">;</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">s1</span><span class="p">.</span><span class="n">m_name</span><span class="p">,</span> <span class="s">"Cici"</span><span class="p">);</span>
+  <span class="n">s1</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>  
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1320,13 +1320,13 @@ m_ptr value = abcdef
 7
 8
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">s1</span><span class="p">;</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">s1</span><span class="p">.</span><span class="n">m_name</span><span class="p">,</span> <span class="s">"Cici"</span><span class="p">);</span>
-    <span class="n">s1</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="n">Student</span> <span class="n">s2</span><span class="p">(</span><span class="n">s1</span><span class="p">);</span>
-    <span class="n">s2</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>    
+  <span class="n">Student</span> <span class="n">s1</span><span class="p">;</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">s1</span><span class="p">.</span><span class="n">m_name</span><span class="p">,</span> <span class="s">"Cici"</span><span class="p">);</span>
+  <span class="n">s1</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="n">Student</span> <span class="n">s2</span><span class="p">(</span><span class="n">s1</span><span class="p">);</span>
+  <span class="n">s2</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>  
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1391,44 +1391,44 @@ lsn11(15006,0x100098600) malloc: *** set a breakpoint in malloc_error_break to d
 41
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">m_ptr</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">m_ptr</span><span class="p">;</span>
 <span class="nl">public:</span>
-    <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="n">Student</span> <span class="o">&amp;</span><span class="n">s</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">m_name</span><span class="p">);</span>
-        <span class="c1">//拷貝m_ptr</span>
-        <span class="n">m_ptr</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"呼叫Student(const Student &amp;s)拷貝函式"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">delete</span> <span class="p">[]</span> <span class="n">m_ptr</span><span class="p">;</span>
-        <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="c1">//印出記憶體位址</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"m_ptr address:"</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"m_ptr value = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="n">Student</span> <span class="o">&amp;</span><span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">m_name</span><span class="p">);</span>
+    <span class="c1">//拷貝m_ptr</span>
+    <span class="n">m_ptr</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"呼叫Student(const Student &amp;s)拷貝函式"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">delete</span> <span class="p">[]</span> <span class="n">m_ptr</span><span class="p">;</span>
+    <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//印出記憶體位址</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"m_ptr address:"</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"m_ptr value = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">s1</span><span class="p">;</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">s1</span><span class="p">.</span><span class="n">m_name</span><span class="p">,</span> <span class="s">"Cici"</span><span class="p">);</span>
-    <span class="n">s1</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">s1</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">,</span> <span class="s">"abcdef"</span><span class="p">);</span>
-    <span class="n">Student</span> <span class="n">s2</span><span class="p">(</span><span class="n">s1</span><span class="p">);</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">s2</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">,</span> <span class="s">"zzzzz"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"##### s1 #### "</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">s1</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"##### s2 #### "</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">s2</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">s1</span><span class="p">;</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">s1</span><span class="p">.</span><span class="n">m_name</span><span class="p">,</span> <span class="s">"Cici"</span><span class="p">);</span>
+  <span class="n">s1</span><span class="p">.</span><span class="n">m_ptr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">s1</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">,</span> <span class="s">"abcdef"</span><span class="p">);</span>
+  <span class="n">Student</span> <span class="n">s2</span><span class="p">(</span><span class="n">s1</span><span class="p">);</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">s2</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">,</span> <span class="s">"zzzzz"</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"##### s1 #### "</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">s1</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"##### s2 #### "</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">s2</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>   
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1487,36 +1487,36 @@ m_ptr value = zzzzz
 33
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">m_ptr</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">m_ptr</span><span class="p">;</span>
 <span class="nl">public:</span>
-    <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒參數建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="n">Student</span> <span class="o">&amp;</span><span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">m_name</span><span class="p">);</span>
+    <span class="c1">//拷貝m_ptr</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">m_ptr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+      <span class="n">strcpy</span><span class="p">(</span><span class="n">m_ptr</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="n">Student</span><span class="p">(</span><span class="k">const</span> <span class="n">Student</span> <span class="o">&amp;</span><span class="n">s</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">m_name</span><span class="p">));</span>
-        <span class="n">strcpy</span><span class="p">(</span><span class="n">m_name</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">m_name</span><span class="p">);</span>
-        <span class="c1">//拷貝m_ptr</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">m_ptr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-            <span class="n">strcpy</span><span class="p">(</span><span class="n">m_ptr</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">m_ptr</span><span class="p">);</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"呼叫Student(const Student &amp;s)拷貝函式"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">delete</span> <span class="p">[]</span> <span class="n">m_ptr</span><span class="p">;</span>
-        <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="c1">//印出記憶體位址</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"m_ptr address:"</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"m_ptr value = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"呼叫Student(const Student &amp;s)拷貝函式"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="o">~</span><span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">delete</span> <span class="p">[]</span> <span class="n">m_ptr</span><span class="p">;</span>
+    <span class="n">m_ptr</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//印出記憶體位址</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"m_ptr address:"</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"m_ptr value = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_ptr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1711,7 +1711,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

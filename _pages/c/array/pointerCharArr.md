@@ -49,18 +49,18 @@ char* message = new char[100];
 
 因為常數非動態記憶空間，所以要透過strlen來計算記憶體空間大小，注意！strlen不包含結尾\0的大小，所以計算記憶體空間要再+1，加上結尾\0的大小
 {% highlight c++ linenos %}
-    char* s = "http://www.google.com";//21個字元(不含結尾\0)
-    //因為常數非動態記憶空間，所以要透過strlen來計算記憶體空間大小
-    size_t s_size = strlen(s) + 1;//strlen不包含結尾\0的大小
+  char* s = "http://www.google.com";//21個字元(不含結尾\0)
+  //因為常數非動態記憶空間，所以要透過strlen來計算記憶體空間大小
+  size_t s_size = strlen(s) + 1;//strlen不包含結尾\0的大小
 {% endhighlight %}
 
 ### 字元陣列不是常數
 
 字元陣列不是常數，以下寫法不是常數，是有占stack堆疊的記憶體空間
 {% highlight c++ linenos %}
-    char s1[] = "http://www.google.com";
-    cout << "s1堆疊記憶體大小=" << sizeof(s1) << endl;
-    cout << "s1長度=" << strlen(s1) << endl;
+  char s1[] = "http://www.google.com";
+  cout << "s1堆疊記憶體大小=" << sizeof(s1) << endl;
+  cout << "s1長度=" << strlen(s1) << endl;
 {% endhighlight %}
 
 ```
@@ -84,25 +84,25 @@ s1長度=21
 #include <iostream>
 using namespace std;
 int main() {
-    //cstr1陣列名是記憶體起始位址
-    char cstr1[] = "Hello World!";
-    //cstr2是指標變數，指向字串常數"Hello World!"
-    //常數是放在code segment 記憶體區塊，不可以使用指標指向常數記憶體位址
-    char* cstr2 = "Hello World!";
-    
-    cout << "cstr1 = " << cstr1 << endl;
-    cout << "cstr2 = " << cstr2 << endl;
-    
-    //cstr1陣列名是記憶體起始位址，是常數，不可以++
-    //cstr1++;
-    
-    //指標是變數，可以修改
-    //指標原本指向起始位址"H"，++移動1byte，指標指向"e"的記憶體位址
-    cstr2++;
-    
-    //印出ello World!，直到遇到\0結尾字元，就停止輸出
-    cout << "cstr2 = " << cstr2 << endl;
-    return 0;
+  //cstr1陣列名是記憶體起始位址
+  char cstr1[] = "Hello World!";
+  //cstr2是指標變數，指向字串常數"Hello World!"
+  //常數是放在code segment 記憶體區塊，不可以使用指標指向常數記憶體位址
+  char* cstr2 = "Hello World!";
+  
+  cout << "cstr1 = " << cstr1 << endl;
+  cout << "cstr2 = " << cstr2 << endl;
+  
+  //cstr1陣列名是記憶體起始位址，是常數，不可以++
+  //cstr1++;
+  
+  //指標是變數，可以修改
+  //指標原本指向起始位址"H"，++移動1byte，指標指向"e"的記憶體位址
+  cstr2++;
+  
+  //印出ello World!，直到遇到\0結尾字元，就停止輸出
+  cout << "cstr2 = " << cstr2 << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -130,34 +130,34 @@ cstr2 = ello World!
 #include <iostream>
 using namespace std;
 void copystr(char* desc, char* src) {
-    //若指標指向的記憶體位址的值是\0就離開while
-    //若指標指向的記憶體位址的值不是\0就進入while
-    while(*src) {
-        //取出src指標指向的記憶體位址的內容
-        //使用*取值運算子修改desc指向記憶體位址的*
-        *desc = *src;
-        desc++;//指標往下一個位址移動，移動1byte
-        src++;//指標往下一個位址移動，移動1byte
-    }
-    //目標字串放上結尾字元，代表字串結束
-    *desc = '\0';
+  //若指標指向的記憶體位址的值是\0就離開while
+  //若指標指向的記憶體位址的值不是\0就進入while
+  while(*src) {
+    //取出src指標指向的記憶體位址的內容
+    //使用*取值運算子修改desc指向記憶體位址的*
+    *desc = *src;
+    desc++;//指標往下一個位址移動，移動1byte
+    src++;//指標往下一個位址移動，移動1byte
+  }
+  //目標字串放上結尾字元，代表字串結束
+  *desc = '\0';
 }
 int main() {
-    //拷貝的來源字串
-    char* src = "Hello World!";
-    //+1是為了加上結尾空字元\0，strlen預設是不含\0
-    size_t len = strlen(src) + 1;
-    //拷貝的目標字串
-    char* desc = new char[len];
-    
-    copystr(desc, src);
-    cout << "desc = " << desc << endl;
-    
-    //記憶體釋放陣列
-    delete[] desc;
-    //desc指標不指向任何記憶體位址
-    desc = nullptr;
-    return 0;
+  //拷貝的來源字串
+  char* src = "Hello World!";
+  //+1是為了加上結尾空字元\0，strlen預設是不含\0
+  size_t len = strlen(src) + 1;
+  //拷貝的目標字串
+  char* desc = new char[len];
+  
+  copystr(desc, src);
+  cout << "desc = " << desc << endl;
+  
+  //記憶體釋放陣列
+  delete[] desc;
+  //desc指標不指向任何記憶體位址
+  desc = nullptr;
+  return 0;
 }
 {% endhighlight %}
 
@@ -170,25 +170,25 @@ desc = Hello World!
 #include <iostream>
 using namespace std;
 void copystr(char* desc, char* src) {
-    //若指標指向的記憶體位址的值是\0就離開while
-    //若指標指向的記憶體位址的值不是\0就進入while
-    while(*src) {
-        //取出src指標指向的記憶體位址的內容
-        //使用*取值運算子修改desc指向記憶體位址的*
-        //desc與src指標往下一個位址移動，移動1byte
-        *desc++ = *src++;
-    }
-    //目標字串放上結尾字元，代表字串結束
-    *desc = '\0';
+  //若指標指向的記憶體位址的值是\0就離開while
+  //若指標指向的記憶體位址的值不是\0就進入while
+  while(*src) {
+    //取出src指標指向的記憶體位址的內容
+    //使用*取值運算子修改desc指向記憶體位址的*
+    //desc與src指標往下一個位址移動，移動1byte
+    *desc++ = *src++;
+  }
+  //目標字串放上結尾字元，代表字串結束
+  *desc = '\0';
 }
 int main() {
-    //拷貝的目標字串
-    char desc[100];
-    //拷貝的來源字串
-    char* src = "Hello World!";
-    copystr(desc, src);
-    cout << "desc = " << desc << endl;
-    return 0;
+  //拷貝的目標字串
+  char desc[100];
+  //拷貝的來源字串
+  char* src = "Hello World!";
+  copystr(desc, src);
+  cout << "desc = " << desc << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -209,13 +209,13 @@ char * strcpy ( char * destination, const char * source );
 #include <iostream>
 using namespace std;
 int main() {
-    //拷貝的目標字串
-    char desc[100];
-    //拷貝的來源字串
-    char* src = "Hello World!";
-    strcpy(desc, src);
-    cout << "desc = " << desc << endl;
-    return 0;
+  //拷貝的目標字串
+  char desc[100];
+  //拷貝的來源字串
+  char* src = "Hello World!";
+  strcpy(desc, src);
+  cout << "desc = " << desc << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -239,17 +239,17 @@ using namespace std;
 const int DAYS = 7; //字串數，7個字串
 const int MAX = 10; // 每個字串最大長度，包含\0
 int main() {
-    char str[DAYS][MAX] = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
+  char str[DAYS][MAX] = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
 
-    //印出二維陣列字串的記憶體大小
-    //7個字串 * 每個字串最大長度10byte
-    cout << "str size = " << sizeof(str) << endl;
+  //印出二維陣列字串的記憶體大小
+  //7個字串 * 每個字串最大長度10byte
+  cout << "str size = " << sizeof(str) << endl;
 
-    for(int i = 0; i < DAYS; i++) {
-        //印出字串
-        cout << str[i] << endl;
-    }
-    return 0;
+  for (int i = 0; i < DAYS; i++) {
+    //印出字串
+    cout << str[i] << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -271,15 +271,15 @@ Saturday
 using namespace std;
 const int DAYS = 7; //陣列裡的指標個數
 int main() {
-    //陣列存放7個指標，每個指標指向字串常數的第一個字元的位址
-    char *arr_ptrs[DAYS] =
-    {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};//字串指標陣列
-    
-    //指標的固定大小是8byte，指標陣列存放7個指標，總共大小為8byte*7
-    cout << "arr_ptrs size = " << sizeof(arr_ptrs) << endl;
-    for(int i = 0; i < DAYS; i++)
-        cout << arr_ptrs[i] << endl;
-    return 0;
+  //陣列存放7個指標，每個指標指向字串常數的第一個字元的位址
+  char *arr_ptrs[DAYS] =
+  {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};//字串指標陣列
+  
+  //指標的固定大小是8byte，指標陣列存放7個指標，總共大小為8byte*7
+  cout << "arr_ptrs size = " << sizeof(arr_ptrs) << endl;
+  for (int i = 0; i < DAYS; i++)
+    cout << arr_ptrs[i] << endl;
+  return 0;
 }
 {% endhighlight %}
 

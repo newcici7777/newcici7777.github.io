@@ -49,13 +49,13 @@ auto與函式要先看過才看的懂以下程式碼。
 
 {% highlight c++ linenos %}
 int main() {
-    string name = "Mary";
-    int age = 20;
-    auto f1 = [name](){
-        cout << "name = " << name << endl;
-    };
-    f1();
-    return 0;
+  string name = "Mary";
+  int age = 20;
+  auto f1 = [name](){
+    cout << "name = " << name << endl;
+  };
+  f1();
+  return 0;
 }
 {% endhighlight %}
 
@@ -76,13 +76,13 @@ name = Mary
 
 {% highlight c++ linenos %}
 int main() {
-    string name = "Mary";
-    auto f1 = [&name](){
-        name = "Bill";
-        cout << "name = " << name << endl;
-    };
-    f1();
-    return 0;
+  string name = "Mary";
+  auto f1 = [&name](){
+    name = "Bill";
+    cout << "name = " << name << endl;
+  };
+  f1();
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -98,14 +98,14 @@ name = Bill
 ```
 {% highlight c++ linenos %}
 int main() {
-    string name = "Mary";
-    int age = 18;
-    auto f1 = [=](){
-        cout << "name = " << name << endl;
-        cout << "age = " << age << endl;
-    };
-    f1();
-    return 0;
+  string name = "Mary";
+  int age = 18;
+  auto f1 = [=](){
+    cout << "name = " << name << endl;
+    cout << "age = " << age << endl;
+  };
+  f1();
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -125,16 +125,16 @@ age = 18
 ```
 {% highlight c++ linenos %}
 int main() {
-    string name = "Mary";
-    int age = 18;
-    auto f1 = [&](){
-        name = "Bill";
-        age = 30;
-        cout << "name = " << name << endl;
-        cout << "age = " << age << endl;
-    };
-    f1();
-    return 0;
+  string name = "Mary";
+  int age = 18;
+  auto f1 = [&](){
+    name = "Bill";
+    age = 30;
+    cout << "name = " << name << endl;
+    cout << "age = " << age << endl;
+  };
+  f1();
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -151,15 +151,15 @@ age = 30
 除了name變數是傳值的方式，其它lambda中有用到的變數一律傳參考的方式代入。
 {% highlight c++ linenos %}
 int main() {
-    string name = "Mary";
-    int age = 18;
-    auto f1 = [&, name](){
-        age = 30;
-        cout << "name = " << name << endl;
-        cout << "age = " << age << endl;
-    };
-    f1();
-    return 0;
+  string name = "Mary";
+  int age = 18;
+  auto f1 = [&, name](){
+    age = 30;
+    cout << "name = " << name << endl;
+    cout << "age = " << age << endl;
+  };
+  f1();
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -174,15 +174,15 @@ age = 30
 除了name變數是傳參考的方式，其它lambda中有用到的變數一律傳值的方式代入。
 {% highlight c++ linenos %}
 int main() {
-    string name = "Mary";
-    int age = 18;
-    auto f1 = [=, &name](){
-        name = "Tom";
-        cout << "name = " << name << endl;
-        cout << "age = " << age << endl;
-    };
-    f1();
-    return 0;
+  string name = "Mary";
+  int age = 18;
+  auto f1 = [=, &name](){
+    name = "Tom";
+    cout << "name = " << name << endl;
+    cout << "age = " << age << endl;
+  };
+  f1();
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -200,14 +200,14 @@ age = 18
 
 {% highlight c++ linenos %}
 int main() {
-    string name = "Mary";
-    int age = 18;
-    auto f1 = [](){
-        //cout << "name = " << name << endl;
-        //cout << "age = " << age << endl;
-    };
-    f1();
-    return 0;
+  string name = "Mary";
+  int age = 18;
+  auto f1 = [](){
+    //cout << "name = " << name << endl;
+    //cout << "age = " << age << endl;
+  };
+  f1();
+  return 0;
 }
 {% endhighlight %}
 
@@ -223,13 +223,13 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    string name = "Mary";
-    int age = 18;
-    auto f1 = [](string address){
-        cout << "address = " << address << endl;
-    };
-    f1("Taiwan Taipei ....");
-    return 0;
+  string name = "Mary";
+  int age = 18;
+  auto f1 = [](string address){
+    cout << "address = " << address << endl;
+  };
+  f1("Taiwan Taipei ....");
+  return 0;
 }
 {% endhighlight %}
 
@@ -242,15 +242,15 @@ int main() {
 ```
 {% highlight c++ linenos %}
 int main() {
-    string name = "Mary";
-    int age = 18;
-    auto f1 = [](string address) -> int{
-        cout << "address = " << address << endl;
-        return 100;
-    };
-    int val = f1("Taiwan Taipei ....");
-    cout << "val = " << val << endl;
-    return 0;
+  string name = "Mary";
+  int age = 18;
+  auto f1 = [](string address) -> int{
+    cout << "address = " << address << endl;
+    return 100;
+  };
+  int val = f1("Taiwan Taipei ....");
+  cout << "val = " << val << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -266,11 +266,11 @@ val = 100
 
 {% highlight c++ linenos %}
 int fun(int x, int y) {
-    return x + y;
+  return x + y;
 }
 int main() {
-    cout << "x + y = " << fun(10, 100) << endl;
-    return 0;
+  cout << "x + y = " << fun(10, 100) << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -283,11 +283,11 @@ x + y = 110
 
 {% highlight c++ linenos %}
 int main() {
-    auto f = [](int x, int y) -> int {
-        return x + y;
-    };
-    cout << "x + y = " << f(10, 100) << endl;
-    return 0;
+  auto f = [](int x, int y) -> int {
+    return x + y;
+  };
+  cout << "x + y = " << f(10, 100) << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -297,14 +297,14 @@ x + y = 110
 ## 比對fun函式跟lambda匿名函式
 {% highlight c++ linenos %}
 int fun(int x, int y) {
-    return x + y;
+  return x + y;
 }
 {% endhighlight %}
 
 {% highlight c++ linenos %}
 [](int x, int y) -> int {
-        return x + y;
-    };
+    return x + y;
+  };
 {% endhighlight %}
 
 [1]: {% link _pages/c/function/functionPointer.md %}

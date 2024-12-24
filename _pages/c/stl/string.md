@@ -25,29 +25,29 @@ string底層是ArrayList實作。
 #include <iostream>
 using namespace std;
 int main() {
-    //建立空的字串，呼叫string()空的建構子
-    string s1;
-    //印出string
-    cout << "s1 = " << s1 << endl;
-    //容量
-    cout << "s1.capacity() = " << s1.capacity() << endl;
-    //實際用了多少
-    cout << "s1.size()" << s1.size() << endl;
-    //s1的記憶體位址
-    cout << "s1記憶體位址 = " << (void*)s1.c_str() << endl;
-    cout << "----------------------------" << endl;
-    //記憶體擴展
-    //25個字元(Hello 5字元*5遍)
-    s1 = "HelloHelloHelloHelloHello";
-    //印出string
-    cout << "s1 = " << s1 << endl;
-    //容量
-    cout << "s1.capacity() = " << s1.capacity() << endl;
-    //實際用了多少
-    cout << "s1.size()" << s1.size() << endl;
-    //s1的記憶體位址
-    cout << "s1記憶體位址 = " << (void*)s1.c_str() << endl;
-    return 0;
+  //建立空的字串，呼叫string()空的建構子
+  string s1;
+  //印出string
+  cout << "s1 = " << s1 << endl;
+  //容量
+  cout << "s1.capacity() = " << s1.capacity() << endl;
+  //實際用了多少
+  cout << "s1.size()" << s1.size() << endl;
+  //s1的記憶體位址
+  cout << "s1記憶體位址 = " << (void*)s1.c_str() << endl;
+  cout << "----------------------------" << endl;
+  //記憶體擴展
+  //25個字元(Hello 5字元*5遍)
+  s1 = "HelloHelloHelloHelloHello";
+  //印出string
+  cout << "s1 = " << s1 << endl;
+  //容量
+  cout << "s1.capacity() = " << s1.capacity() << endl;
+  //實際用了多少
+  cout << "s1.size()" << s1.size() << endl;
+  //s1的記憶體位址
+  cout << "s1記憶體位址 = " << (void*)s1.c_str() << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -100,11 +100,11 @@ string s3 = "Hello World!";
 using namespace std;
 int main() {
 	// 方式1
-    string s2("Hello world!");
-    cout << "s2 = " << s2 << endl;
-    // 方式2
-    string s3 = "Hello World!";
-    cout << "s3 = " << s3 << endl;
+  string s2("Hello world!");
+  cout << "s2 = " << s2 << endl;
+  // 方式2
+  string s3 = "Hello World!";
+  cout << "s3 = " << s3 << endl;
 }
 {% endhighlight %}
 
@@ -129,10 +129,10 @@ string(const string &str)
 #include <iostream>
 using namespace std;
 int main() {
-    string s2("Hello world!");
-    cout << "s2 = " << s2 << endl;
-    string s3 = s2;
-    cout << "s3 = " << s3 << endl;
+  string s2("Hello world!");
+  cout << "s2 = " << s2 << endl;
+  string s3 = s2;
+  cout << "s3 = " << s3 << endl;
 }
 {% endhighlight %}
 
@@ -145,11 +145,11 @@ s3 = Hello world!
 
 {% highlight c++ linenos %}
 int main() {
-    string s1 = "Hello world";
-    string s2(s1);
-    cout << "s2 = " << s2 << endl;
-    cout << "s2 size = " << s2.size() << endl;
-    return 0;
+  string s1 = "Hello world";
+  string s2(s1);
+  cout << "s2 = " << s2 << endl;
+  cout << "s2 size = " << s2.size() << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -187,10 +187,10 @@ string(const char *s,size_t n);
 {% highlight c++ linenos %}
 int main() {
 	//從c字串的位址開始複製5個字元，建立字串
-    string s("hello world", 5);
-    cout << "s = " << s << endl;
-    cout << "size = " << s.size() << endl;
-    return 0;
+  string s("hello world", 5);
+  cout << "s = " << s << endl;
+  cout << "size = " << s.size() << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -206,10 +206,10 @@ size = 5
 {% highlight c++ linenos %}
 int main() {
 	//從c字串的位址開始複製20個字元，建立字串
-    string s("hello world", 20);
-    cout << "s = " << s << endl;
-    cout << "size = " << s.size() << endl;
-    return 0;
+  string s("hello world", 20);
+  cout << "s = " << s << endl;
+  cout << "size = " << s.size() << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -233,11 +233,11 @@ string(const string & str, size_t pos = 0, size_t n = npos)
 ### 拷貝結束位置介於字元大小間
 {% highlight c++ linenos %}
 int main() {
-    string s1 = "Hello world";
-    string s2(s1,0,3);
-    cout << "s2 = " << s2 << endl;
-    cout << "s2 size = " << s2.size() << endl;
-    return 0;
+  string s1 = "Hello world";
+  string s2(s1,0,3);
+  cout << "s2 = " << s2 << endl;
+  cout << "s2 size = " << s2.size() << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -250,11 +250,11 @@ s2 size = 3
 
 {% highlight c++ linenos %}
 int main() {
-    string s1 = "Hello world";
-    string s2(s1,0,100);
-    cout << "s2 = " << s2 << endl;
-    cout << "s2 size = " << s2.size() << endl;
-    return 0;
+  string s1 = "Hello world";
+  string s2(s1,0,100);
+  cout << "s2 = " << s2 << endl;
+  cout << "s2 size = " << s2.size() << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -272,10 +272,10 @@ string(size_t n, char c)
 
 {% highlight c++ linenos %}
 int main() {
-    string s1(100,'C');
-    cout << "s1 = " << s1 << endl;
-    cout << "s1 size = " << s1.size() << endl;
-    return 0;
+  string s1(100,'C');
+  cout << "s1 = " << s1 << endl;
+  cout << "s1 size = " << s1.size() << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -319,8 +319,8 @@ char &operator[](size_t n);
 ```
 
 {% highlight c++ linenos %}
-    string s1 = "Hello";
-    cout << "s1[1] = " << s1[1] << endl;
+  string s1 = "Hello";
+  cout << "s1[1] = " << s1[1] << endl;
 {% endhighlight %}
 ```
 s1[1] = e
@@ -343,13 +343,13 @@ const char *data() const;
 
 {% highlight c++ linenos %}
 int main() {
-    string s1 = "Hello";
-    //取得string物件的記憶體位址
-    cout << "s1 & address = " << &s1 << endl;
-    //取得string物件中動態分配記憶體空間存放字串的位址
-    cout << "s1 c_str address = " << (void*)s1.c_str() << endl;
-    cout << "s1 data address = " << (void*)s1.data() << endl;
-    return 0;
+  string s1 = "Hello";
+  //取得string物件的記憶體位址
+  cout << "s1 & address = " << &s1 << endl;
+  //取得string物件中動態分配記憶體空間存放字串的位址
+  cout << "s1 c_str address = " << (void*)s1.c_str() << endl;
+  cout << "s1 data address = " << (void*)s1.data() << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -365,10 +365,10 @@ s1 data address = 0x7ff7bfeff451
 
 {% highlight c++ linenos %}
 int main() {
-    string s1 = "Hello";
-    s1+=" world";
-    cout << "s1 = " << s1 << endl;
-    return 0;
+  string s1 = "Hello";
+  s1+=" world";
+  cout << "s1 = " << s1 << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -380,10 +380,10 @@ s1 = Hello world
 
 {% highlight c++ linenos %}
 int main() {
-    string s1 = "Hello";
-    s1.append(" world");
-    cout << "s1 = " << s1 << endl;
-    return 0;
+  string s1 = "Hello";
+  s1.append(" world");
+  cout << "s1 = " << s1 << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -394,11 +394,11 @@ s1 = Hello world
 - string &append(const string &str);
 {% highlight c++ linenos %}
 int main() {
-    string s1 = "Hello";
-    string s2 = " world";
-    s1.append(s2);
-    cout << "s1 = " << s1 << endl;
-    return 0;
+  string s1 = "Hello";
+  string s2 = " world";
+  s1.append(s2);
+  cout << "s1 = " << s1 << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -413,9 +413,9 @@ string substr(size_t pos = 0,size_t n = npos) const;
 ```
 {% highlight c++ linenos %}
 int main() {
-    string s1 = "Hello";
-    cout << "s1 = " << s1.substr(1,3) << endl;
-    return 0;
+  string s1 = "Hello";
+  cout << "s1 = " << s1.substr(1,3) << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -431,10 +431,10 @@ bool operator==(const string &str1,const string &str2) const;
 
 {% highlight c++ linenos %}
 int main() {
-    string s1 = "Hello";
-    string s2 = "world";
-    cout << "compare result = " << (s1 == s2) << endl;
-    return 0;
+  string s1 = "Hello";
+  string s2 = "world";
+  cout << "compare result = " << (s1 == s2) << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -446,14 +446,14 @@ int main() {
 //12個月
 const int MAX_MONTH = 12;
 int main() {
-    string mon_arr[MAX_MONTH] =
-    {"January","February","March","April","May","June","July","August","September","October","November","December"};
-    int month;
-    cout << "請輸入數字月份(1~12):";
-    cin >> month;
-    //陣列索引介於0..11，所以要把month-1
-    cout << mon_arr[month-1] << endl;
-    return 0;
+  string mon_arr[MAX_MONTH] =
+  {"January","February","March","April","May","June","July","August","September","October","November","December"};
+  int month;
+  cout << "請輸入數字月份(1~12):";
+  cin >> month;
+  //陣列索引介於0..11，所以要把month-1
+  cout << mon_arr[month-1] << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -465,10 +465,10 @@ January
 ## 清空
 
 {% highlight c++ linenos %}
-    string name = "Bill";
-    cout << "name: " << name << endl;
-    name.clear();
-    cout << "name: " << name << endl;
+  string name = "Bill";
+  cout << "name: " << name << endl;
+  name.clear();
+  cout << "name: " << name << endl;
 {% endhighlight %}
 
 ```

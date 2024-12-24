@@ -27,8 +27,8 @@ template<typename ... Args>
 
 {% highlight c++ linenos %}
 int main() {
-    print("Bill","Mary","Tom","Allen");
-    return 0;
+  print("Bill","Mary","Tom","Allen");
+  return 0;
 }
 {% endhighlight %}
 
@@ -44,10 +44,10 @@ int main() {
 {% highlight c++ linenos %}
 template<typename T, typename... Args>
 void print(T arg, Args... args) {
-	//每呼叫一次就從args中拿出一個參數arg
-    cout << "參數" << arg << endl;
-    //剩下未取出的參數繼續遞迴呼叫自已
-    print(args...);
+  //每呼叫一次就從args中拿出一個參數arg
+  cout << "參數" << arg << endl;
+  //剩下未取出的參數繼續遞迴呼叫自已
+  print(args...);
 }
 {% endhighlight %}
 
@@ -58,7 +58,7 @@ void print(T arg, Args... args) {
 
 {% highlight c++ linenos %}
 void print() {
-    cout << "end" << endl;
+  cout << "end" << endl;
 }
 {% endhighlight %}
 
@@ -69,18 +69,18 @@ void print() {
 using namespace std;
 //print()傳回值void，參數為空()，待遞迴結束時會呼叫此函式
 void print() {
-    cout << "end" << endl;
+  cout << "end" << endl;
 }
 //print是遞回函式template
 //每呼叫一次就從args中拿出一個參數arg，其它的args又傳入print中遞迴呼叫
 template<typename T, typename... Args>
 void print(T arg, Args... args) {
-    cout << "參數" << arg << endl;
-    print(args...);
+  cout << "參數" << arg << endl;
+  print(args...);
 }
 int main() {
-    print("Bill","Mary","Tom","Allen");
-    return 0;
+  print("Bill","Mary","Tom","Allen");
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -98,8 +98,8 @@ end
 //定義參數的類型名稱Args
 template<typename... Args>
 void func(const string& school, Args... args) {
-    cout << school << "的學生有:" << endl;
-    print(args...);
+  cout << school << "的學生有:" << endl;
+  print(args...);
 }
 {% endhighlight %}
 
@@ -110,25 +110,25 @@ void func(const string& school, Args... args) {
 using namespace std;
 //print()傳回值void，參數為空()，待遞迴結束時會呼叫此函式
 void print() {
-    cout << "end" << endl;
+  cout << "end" << endl;
 }
 //print是遞迴函式template
 //每呼叫一次就從args中拿出一個參數arg，其它的args又傳入print中遞迴呼叫
 template<typename T, typename... Args>
 void print(T arg, Args... args) {
-    cout << arg << endl;
-    print(args...);
+  cout << arg << endl;
+  print(args...);
 }
 template<typename... Args>
 void func(const string& school, Args... args) {
-    cout << school << "的學生有:" << endl;
-    print(args...);
+  cout << school << "的學生有:" << endl;
+  print(args...);
 }
 int main() {
-	//只有第1個參數傳進func印出來
-	//第1個參數之後都參數都是args，代入遞迴函式
-    func("青草湖國小","Bill","Mary","Tom","Allen");
-    return 0;
+  //只有第1個參數傳進func印出來
+  //第1個參數之後都參數都是args，代入遞迴函式
+  func("青草湖國小","Bill","Mary","Tom","Allen");
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -158,33 +158,33 @@ end
 using namespace std;
 class Student {
 public:
-    void print(int code, const string& msg) {
-        cout << "Error code = " << code << " , Msg = " << msg << endl;
-    }
+  void print(int code, const string& msg) {
+  cout << "Error code = " << code << " , Msg = " << msg << endl;
+  }
 };
 
 void print(int code, const string& msg) {
-    cout << "Error code = " << code << " , Msg = " << msg << endl;
+  cout << "Error code = " << code << " , Msg = " << msg << endl;
 }
 
 template<typename Func, typename... Args>
 auto callFunc(Func&& func, Args&&...args)
 {
-    auto f = bind(forward<Func>(func), forward<Args>(args)...);
-    f();
-    return f;
+  auto f = bind(forward<Func>(func), forward<Args>(args)...);
+  f();
+  return f;
 }
 
 int main() {
-    callFunc(print, 400, "Page not found.");
-    //物件成員函式
-    Student student;
-    callFunc(&Student::print, student, 500, "Server error.");
-    //函式為右值
-    callFunc([](int code, const string& msg) {
-            cout << "Lambda error code = " << code << " , Msg = " << msg << endl;
-    }, 500, "Server error.");
-    return 0;
+  callFunc(print, 400, "Page not found.");
+  //物件成員函式
+  Student student;
+  callFunc(&Student::print, student, 500, "Server error.");
+  //函式為右值
+  callFunc([](int code, const string& msg) {
+    cout << "Lambda error code = " << code << " , Msg = " << msg << endl;
+  }, 500, "Server error.");
+  return 0;
 }
 {% endhighlight %}
 ```

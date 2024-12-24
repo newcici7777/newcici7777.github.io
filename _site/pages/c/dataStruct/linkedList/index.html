@@ -1237,8 +1237,8 @@
 </pre></td><td class="code"><pre><span class="k">typedef</span> <span class="kt">int</span> <span class="n">ElemType</span><span class="p">;</span>
 <span class="c1">//定義節點</span>
 <span class="k">struct</span> <span class="nc">Node</span> <span class="p">{</span>
-    <span class="n">ElemType</span> <span class="n">data</span><span class="p">;</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">next</span><span class="p">;</span>
+  <span class="n">ElemType</span> <span class="n">data</span><span class="p">;</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">next</span><span class="p">;</span>
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1274,17 +1274,17 @@
  初始化鏈結串列
  */</span>
 <span class="n">Node</span><span class="o">*</span> <span class="nf">initLinkedList</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//頭節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">head</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
-    <span class="c1">//頭節點記憶體分配失敗</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span><span class="c1">//下一個節點是null</span>
-    <span class="k">return</span> <span class="n">head</span><span class="p">;</span>
+  <span class="c1">//頭節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">head</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
+  <span class="c1">//頭節點記憶體分配失敗</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span><span class="c1">//下一個節點是null</span>
+  <span class="k">return</span> <span class="n">head</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立頭節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">head</span> <span class="o">=</span> <span class="n">initLinkedList</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立頭節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">head</span> <span class="o">=</span> <span class="n">initLinkedList</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1329,26 +1329,26 @@
  參數為頭節點
  */</span>
 <span class="kt">void</span> <span class="nf">destroyLinkedList</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">){</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">Node</span> <span class="o">*</span><span class="n">temp</span><span class="p">;</span> <span class="c1">//暫存節點</span>
-    <span class="c1">//繞行鏈結串列</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">head</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//先把下一個節點存起來</span>
-        <span class="n">temp</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-        <span class="c1">//刪掉目前的節點</span>
-        <span class="k">delete</span> <span class="n">head</span><span class="p">;</span>
-        <span class="c1">//把剛才存下來的節點作為頭節點</span>
-        <span class="n">head</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">Node</span> <span class="o">*</span><span class="n">temp</span><span class="p">;</span> <span class="c1">//暫存節點</span>
+  <span class="c1">//繞行鏈結串列</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">head</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//先把下一個節點存起來</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="c1">//刪掉目前的節點</span>
+    <span class="k">delete</span> <span class="n">head</span><span class="p">;</span>
+    <span class="c1">//把剛才存下來的節點作為頭節點</span>
+    <span class="n">head</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立頭節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">head</span> <span class="o">=</span> <span class="n">initLinkedList</span><span class="p">();</span>
-    <span class="n">destroyLinkedList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立頭節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">head</span> <span class="o">=</span> <span class="n">initLinkedList</span><span class="p">();</span>
+  <span class="n">destroyLinkedList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1397,37 +1397,37 @@
 31
 32
 </pre></td><td class="code"><pre><span class="kt">bool</span> <span class="nf">addFirst</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">ee</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//建立新節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    
-    <span class="c1">//新節點設定傳進來的資料</span>
-    <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">ee</span><span class="p">;</span>
-    
-    <span class="c1">//新節點的下一個節點是頭節點的下一個</span>
-    <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="c1">//頭節點的下一個是新節點</span>
-    <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//建立新節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  
+  <span class="c1">//新節點設定傳進來的資料</span>
+  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">ee</span><span class="p">;</span>
+  
+  <span class="c1">//新節點的下一個節點是頭節點的下一個</span>
+  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="c1">//頭節點的下一個是新節點</span>
+  <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立頭節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">head</span> <span class="o">=</span> <span class="n">initLinkedList</span><span class="p">();</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
-    <span class="n">destroyLinkedList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>    
+  <span class="c1">//建立頭節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">head</span> <span class="o">=</span> <span class="n">initLinkedList</span><span class="p">();</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+  <span class="n">destroyLinkedList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>  
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1474,29 +1474,29 @@
 24
 25
 </pre></td><td class="code"><pre><span class="kt">bool</span> <span class="nf">addLast</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//先找到尾節點</span>
-    <span class="n">Node</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>
-    <span class="c1">//判斷節點的下一個是否是null</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="c1">//建立新節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    
-    <span class="c1">//新節點設定傳進來的資料</span>
-    <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">e</span><span class="p">;</span>
-    <span class="c1">//新節點的下一個節點是null</span>
-    <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    
-    <span class="c1">//尾節點的下一個是新節點</span>
-    <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//先找到尾節點</span>
+  <span class="n">Node</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>
+  <span class="c1">//判斷節點的下一個是否是null</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="p">}</span>
+  
+  <span class="c1">//建立新節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  
+  <span class="c1">//新節點設定傳進來的資料</span>
+  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">e</span><span class="p">;</span>
+  <span class="c1">//新節點的下一個節點是null</span>
+  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  
+  <span class="c1">//尾節點的下一個是新節點</span>
+  <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1527,22 +1527,22 @@
 17
 18
 </pre></td><td class="code"><pre><span class="kt">bool</span> <span class="nf">removeFirst</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//只有頭節點，沒有後面的資料</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒有任何節點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//不包含頭節點，取得頭節點的下一個</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="c1">//頭節點的下一個是 p的下一個</span>
-    <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="c1">//把p刪掉</span>
-    <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//只有頭節點，沒有後面的資料</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒有任何節點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//不包含頭節點，取得頭節點的下一個</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="c1">//頭節點的下一個是 p的下一個</span>
+  <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="c1">//把p刪掉</span>
+  <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1587,27 +1587,27 @@
  參數頭節點
  */</span>
 <span class="kt">bool</span> <span class="nf">removeLast</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="n">Node</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>
-    <span class="c1">//判斷是不是至少有一個節點</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">){</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結沒結點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//先找到倒數第二個節點</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//刪掉最後一個節點</span>
-    <span class="k">delete</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="c1">//把倒數第二個節點作為最後一個節點</span>
-    <span class="c1">//下一個節點為null</span>
-    <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  
+  <span class="n">Node</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>
+  <span class="c1">//判斷是不是至少有一個節點</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">){</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結沒結點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//先找到倒數第二個節點</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//刪掉最後一個節點</span>
+  <span class="k">delete</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="c1">//把倒數第二個節點作為最後一個節點</span>
+  <span class="c1">//下一個節點為null</span>
+  <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1653,36 +1653,36 @@
 30
 31
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">printList</span><span class="p">(</span><span class="k">const</span> <span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//從head的下一個節點開始</span>
-    <span class="c1">//head不存在值</span>
-    <span class="n">Node</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">&lt;&lt;</span> <span class="s">","</span><span class="p">;</span>
-        <span class="c1">//節點p換成下一個節點</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//從head的下一個節點開始</span>
+  <span class="c1">//head不存在值</span>
+  <span class="n">Node</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">&lt;&lt;</span> <span class="s">","</span><span class="p">;</span>
+    <span class="c1">//節點p換成下一個節點</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立頭節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">head</span> <span class="o">=</span> <span class="n">initLinkedList</span><span class="p">();</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
-    <span class="c1">//印出所有節點</span>
-    <span class="n">printList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
-    <span class="n">destroyLinkedList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>    
+  <span class="c1">//建立頭節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">head</span> <span class="o">=</span> <span class="n">initLinkedList</span><span class="p">();</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+  <span class="c1">//印出所有節點</span>
+  <span class="n">printList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
+  <span class="n">destroyLinkedList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>  
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1736,23 +1736,23 @@
  參數ElemType&amp; e 插入元素
  */</span>
 <span class="kt">bool</span> <span class="nf">insert</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">node</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">node</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"節點不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//建立新節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">new_node</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Node</span><span class="p">;</span>
-    
-    <span class="c1">//將節點的資料複製到新節點</span>
-    <span class="n">new_node</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">node</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
-    <span class="n">new_node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    
-    <span class="c1">//把節點的內容改成新的內容</span>
-    <span class="n">node</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">e</span><span class="p">;</span>
-    
-    <span class="c1">//下一個節點指向新節點</span>
-    <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">new_node</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">node</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"節點不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//建立新節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">new_node</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Node</span><span class="p">;</span>
+  
+  <span class="c1">//將節點的資料複製到新節點</span>
+  <span class="n">new_node</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">node</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
+  <span class="n">new_node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  
+  <span class="c1">//把節點的內容改成新的內容</span>
+  <span class="n">node</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">e</span><span class="p">;</span>
+  
+  <span class="c1">//下一個節點指向新節點</span>
+  <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">new_node</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1803,25 +1803,25 @@
  將節點刪除
  */</span>
 <span class="kt">bool</span> <span class="nf">deleteNode</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">node</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">node</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"節點不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//若節點為最後一個節點</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//使用其它函式removeLast()</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"要刪除的節點是最後一個節點，請使用removeLast()"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//取得後面節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">after</span> <span class="o">=</span> <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="c1">//將後面的節點資料，複製到要刪除的節點中</span>
-    <span class="n">node</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">after</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
-    <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">after</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    
-    <span class="c1">//把後面的節點刪除</span>
-    <span class="k">delete</span> <span class="n">after</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">node</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"節點不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//若節點為最後一個節點</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//使用其它函式removeLast()</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"要刪除的節點是最後一個節點，請使用removeLast()"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//取得後面節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">after</span> <span class="o">=</span> <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="c1">//將後面的節點資料，複製到要刪除的節點中</span>
+  <span class="n">node</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">after</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
+  <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">after</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  
+  <span class="c1">//把後面的節點刪除</span>
+  <span class="k">delete</span> <span class="n">after</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1850,22 +1850,22 @@
 17
 18
 </pre></td><td class="code"><pre><span class="kt">size_t</span> <span class="nf">size</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//不包含頭節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="kt">size_t</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="c1">//繞行到null</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-        <span class="n">size</span><span class="o">++</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="n">size</span><span class="p">;</span>
-    <span class="c1">//遞迴方式</span>
-    <span class="c1">//if(head == nullptr) return 0;</span>
-    <span class="c1">//return size(head-&gt;next) + 1;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//不包含頭節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="kt">size_t</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//繞行到null</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="n">size</span><span class="o">++</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">size</span><span class="p">;</span>
+  <span class="c1">//遞迴方式</span>
+  <span class="c1">//if(head == nullptr) return 0;</span>
+  <span class="c1">//return size(head-&gt;next) + 1;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1886,16 +1886,16 @@
 11
 12
 </pre></td><td class="code"><pre><span class="n">Node</span><span class="o">*</span> <span class="nf">getNode</span><span class="p">(</span><span class="k">const</span> <span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span><span class="c1">//排除頭節點，從第1個節點開始繞</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//如果節點的資料與參數e相同，回傳節點</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">==</span> <span class="n">e</span><span class="p">)</span> <span class="k">return</span> <span class="n">p</span><span class="p">;</span>
-        <span class="c1">//移到下一個節點</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//最後的是nullptr</span>
-    <span class="c1">//返回nullptr</span>
-    <span class="k">return</span> <span class="n">p</span><span class="p">;</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span><span class="c1">//排除頭節點，從第1個節點開始繞</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//如果節點的資料與參數e相同，回傳節點</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">==</span> <span class="n">e</span><span class="p">)</span> <span class="k">return</span> <span class="n">p</span><span class="p">;</span>
+    <span class="c1">//移到下一個節點</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//最後的是nullptr</span>
+  <span class="c1">//返回nullptr</span>
+  <span class="k">return</span> <span class="n">p</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -2210,20 +2210,20 @@
 </pre></td><td class="code"><pre><span class="k">typedef</span> <span class="kt">int</span> <span class="n">ElemType</span><span class="p">;</span>
 <span class="c1">//定義節點</span>
 <span class="k">struct</span> <span class="nc">Node</span> <span class="p">{</span>
-    <span class="n">ElemType</span> <span class="n">data</span><span class="p">;</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">next</span><span class="p">;</span>
+  <span class="n">ElemType</span> <span class="n">data</span><span class="p">;</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">next</span><span class="p">;</span>
 <span class="p">};</span>
 
 <span class="cm">/**
  初始化鏈結串列
  */</span>
 <span class="n">Node</span><span class="o">*</span> <span class="n">initLinkedList</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//頭節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">head</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
-    <span class="c1">//頭節點記憶體分配失敗</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span><span class="c1">//下一個節點是null</span>
-    <span class="k">return</span> <span class="n">head</span><span class="p">;</span>
+  <span class="c1">//頭節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">head</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
+  <span class="c1">//頭節點記憶體分配失敗</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span><span class="c1">//下一個節點是null</span>
+  <span class="k">return</span> <span class="n">head</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="cm">/**
@@ -2231,64 +2231,64 @@
  參數為頭節點
  */</span>
 <span class="kt">void</span> <span class="n">destroyLinkedList</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">){</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">Node</span> <span class="o">*</span><span class="n">temp</span><span class="p">;</span> <span class="c1">//暫存節點</span>
-    <span class="c1">//繞行鏈結串列</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">head</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//先把下一個節點存起來</span>
-        <span class="n">temp</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-        <span class="c1">//刪掉目前的節點</span>
-        <span class="k">delete</span> <span class="n">head</span><span class="p">;</span>
-        <span class="c1">//把剛才存下來的節點作為頭節點</span>
-        <span class="n">head</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">Node</span> <span class="o">*</span><span class="n">temp</span><span class="p">;</span> <span class="c1">//暫存節點</span>
+  <span class="c1">//繞行鏈結串列</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">head</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//先把下一個節點存起來</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="c1">//刪掉目前的節點</span>
+    <span class="k">delete</span> <span class="n">head</span><span class="p">;</span>
+    <span class="c1">//把剛才存下來的節點作為頭節點</span>
+    <span class="n">head</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="kt">bool</span> <span class="n">addFirst</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">ee</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//建立新節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    
-    <span class="c1">//新節點設定傳進來的資料</span>
-    <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">ee</span><span class="p">;</span>
-    
-    <span class="c1">//新節點的下一個節點是頭節點的下一個</span>
-    <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="c1">//頭節點的下一個是新節點</span>
-    <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//建立新節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  
+  <span class="c1">//新節點設定傳進來的資料</span>
+  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">ee</span><span class="p">;</span>
+  
+  <span class="c1">//新節點的下一個節點是頭節點的下一個</span>
+  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="c1">//頭節點的下一個是新節點</span>
+  <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">bool</span> <span class="n">addLast</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//先找到尾節點</span>
-    <span class="n">Node</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>
-    <span class="c1">//判斷節點的下一個是否是null</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="c1">//建立新節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    
-    <span class="c1">//新節點設定傳進來的資料</span>
-    <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">e</span><span class="p">;</span>
-    <span class="c1">//新節點的下一個節點是null</span>
-    <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    
-    <span class="c1">//尾節點的下一個是新節點</span>
-    <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//先找到尾節點</span>
+  <span class="n">Node</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>
+  <span class="c1">//判斷節點的下一個是否是null</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="p">}</span>
+  
+  <span class="c1">//建立新節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  
+  <span class="c1">//新節點設定傳進來的資料</span>
+  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">e</span><span class="p">;</span>
+  <span class="c1">//新節點的下一個節點是null</span>
+  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  
+  <span class="c1">//尾節點的下一個是新節點</span>
+  <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="cm">/**
@@ -2297,219 +2297,219 @@
  參數ElemType&amp; e 插入元素
  */</span>
 <span class="kt">bool</span> <span class="n">insert</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">node</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">node</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"節點不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//建立新節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">new_node</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Node</span><span class="p">;</span>
-    
-    <span class="c1">//將節點的資料複製到新節點</span>
-    <span class="n">new_node</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">node</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
-    <span class="n">new_node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    
-    <span class="c1">//把節點的內容改成新的內容</span>
-    <span class="n">node</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">e</span><span class="p">;</span>
-    
-    <span class="c1">//下一個節點指向新節點</span>
-    <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">new_node</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">node</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"節點不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//建立新節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">new_node</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Node</span><span class="p">;</span>
+  
+  <span class="c1">//將節點的資料複製到新節點</span>
+  <span class="n">new_node</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">node</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
+  <span class="n">new_node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  
+  <span class="c1">//把節點的內容改成新的內容</span>
+  <span class="n">node</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">e</span><span class="p">;</span>
+  
+  <span class="c1">//下一個節點指向新節點</span>
+  <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">new_node</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="cm">/**
  將節點刪除
  */</span>
 <span class="kt">bool</span> <span class="n">deleteNode</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">node</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">node</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"節點不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//若節點為最後一個節點</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//使用其它函式removeLast()</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"要刪除的節點是最後一個節點，請使用removeLast()"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//取得後面節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">after</span> <span class="o">=</span> <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="c1">//將後面的節點資料，複製到要刪除的節點中</span>
-    <span class="n">node</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">after</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
-    <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">after</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    
-    <span class="c1">//把後面的節點刪除</span>
-    <span class="k">delete</span> <span class="n">after</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">node</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"節點不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//若節點為最後一個節點</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//使用其它函式removeLast()</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"要刪除的節點是最後一個節點，請使用removeLast()"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//取得後面節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">after</span> <span class="o">=</span> <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="c1">//將後面的節點資料，複製到要刪除的節點中</span>
+  <span class="n">node</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">after</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
+  <span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">after</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  
+  <span class="c1">//把後面的節點刪除</span>
+  <span class="k">delete</span> <span class="n">after</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="n">Node</span><span class="o">*</span> <span class="n">getNode</span><span class="p">(</span><span class="k">const</span> <span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span><span class="c1">//排除頭節點，從第1個節點開始繞</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//如果節點的資料與參數e相同，回傳節點</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">==</span> <span class="n">e</span><span class="p">)</span> <span class="k">return</span> <span class="n">p</span><span class="p">;</span>
-        <span class="c1">//移到下一個節點</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//最後的是nullptr</span>
-    <span class="c1">//返回nullptr</span>
-    <span class="k">return</span> <span class="n">p</span><span class="p">;</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span><span class="c1">//排除頭節點，從第1個節點開始繞</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//如果節點的資料與參數e相同，回傳節點</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">==</span> <span class="n">e</span><span class="p">)</span> <span class="k">return</span> <span class="n">p</span><span class="p">;</span>
+    <span class="c1">//移到下一個節點</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//最後的是nullptr</span>
+  <span class="c1">//返回nullptr</span>
+  <span class="k">return</span> <span class="n">p</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">void</span> <span class="n">printList</span><span class="p">(</span><span class="k">const</span> <span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//從head的下一個節點開始</span>
-    <span class="c1">//head不存在值</span>
-    <span class="n">Node</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">&lt;&lt;</span> <span class="s">","</span><span class="p">;</span>
-        <span class="c1">//節點p換成下一個節點</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//從head的下一個節點開始</span>
+  <span class="c1">//head不存在值</span>
+  <span class="n">Node</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">&lt;&lt;</span> <span class="s">","</span><span class="p">;</span>
+    <span class="c1">//節點p換成下一個節點</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">size_t</span> <span class="n">size</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//不包含頭節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="kt">size_t</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="c1">//繞行到null</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-        <span class="n">size</span><span class="o">++</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="n">size</span><span class="p">;</span>
-    <span class="c1">//遞迴方式</span>
-    <span class="c1">//if(head == nullptr) return 0;</span>
-    <span class="c1">//return size(head-&gt;next) + 1;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//不包含頭節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="kt">size_t</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//繞行到null</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="n">size</span><span class="o">++</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">size</span><span class="p">;</span>
+  <span class="c1">//遞迴方式</span>
+  <span class="c1">//if(head == nullptr) return 0;</span>
+  <span class="c1">//return size(head-&gt;next) + 1;</span>
 <span class="p">}</span>
 <span class="kt">bool</span> <span class="n">removeFirst</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//只有頭節點，沒有後面的資料</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒有任何節點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//不包含頭節點，取得頭節點的下一個</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="c1">//頭節點的下一個是 p的下一個</span>
-    <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="c1">//把p刪掉</span>
-    <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//只有頭節點，沒有後面的資料</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒有任何節點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//不包含頭節點，取得頭節點的下一個</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="c1">//頭節點的下一個是 p的下一個</span>
+  <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="c1">//把p刪掉</span>
+  <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="cm">/**
  刪除鏈結串列，但頭節點不刪除
  */</span>
 <span class="kt">void</span> <span class="n">clearList</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//不包含頭節點，頭節點下一個節點不存在</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列沒有節點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">temp1</span><span class="p">;</span>
-    <span class="c1">//從下一個節點開始刪，頭節點要保留</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">temp2</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">temp2</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//下一個節點先丟到temp1</span>
-        <span class="n">temp1</span> <span class="o">=</span> <span class="n">temp2</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-        <span class="c1">//刪掉temp2</span>
-        <span class="k">delete</span> <span class="n">temp2</span><span class="p">;</span>
-        <span class="c1">//temp2變成下一個節點</span>
-        <span class="n">temp2</span> <span class="o">=</span> <span class="n">temp1</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//不包含頭節點，頭節點下一個節點不存在</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列沒有節點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">temp1</span><span class="p">;</span>
+  <span class="c1">//從下一個節點開始刪，頭節點要保留</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">temp2</span> <span class="o">=</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">temp2</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//下一個節點先丟到temp1</span>
+    <span class="n">temp1</span> <span class="o">=</span> <span class="n">temp2</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="c1">//刪掉temp2</span>
+    <span class="k">delete</span> <span class="n">temp2</span><span class="p">;</span>
+    <span class="c1">//temp2變成下一個節點</span>
+    <span class="n">temp2</span> <span class="o">=</span> <span class="n">temp1</span><span class="p">;</span>
+  <span class="p">}</span>
+  
+  <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="cm">/**
  刪除最後一個節點
  參數頭節點
  */</span>
 <span class="kt">bool</span> <span class="n">removeLast</span><span class="p">(</span><span class="n">Node</span><span class="o">*</span> <span class="n">head</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="n">Node</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>
-    <span class="c1">//判斷是不是至少有一個節點</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">){</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結沒結點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//先找到倒數第二個節點</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//刪掉最後一個節點</span>
-    <span class="k">delete</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="c1">//把倒數第二個節點作為最後一個節點</span>
-    <span class="c1">//下一個節點為null</span>
-    <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  
+  <span class="n">Node</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>
+  <span class="c1">//判斷是不是至少有一個節點</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">){</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結沒結點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//先找到倒數第二個節點</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//刪掉最後一個節點</span>
+  <span class="k">delete</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="c1">//把倒數第二個節點作為最後一個節點</span>
+  <span class="c1">//下一個節點為null</span>
+  <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立頭節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">head</span> <span class="o">=</span> <span class="n">initLinkedList</span><span class="p">();</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
-    <span class="c1">//印出所有節點</span>
-    <span class="n">printList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
-    
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"--------------"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addLast</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addLast</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addLast</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span>
-    <span class="c1">//增加節點</span>
-    <span class="n">addLast</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
-    <span class="c1">//印出所有節點</span>
-    <span class="n">printList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"size = "</span> <span class="o">&lt;&lt;</span> <span class="n">size</span><span class="p">(</span><span class="n">head</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"--------------"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//取得資料為"5"的節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">node</span> <span class="o">=</span> <span class="n">getNode</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
-    <span class="c1">//在資料為"5"的節點之前，新增54</span>
-    <span class="n">insert</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="mi">54</span><span class="p">);</span>
-    <span class="c1">//印出所有節點</span>
-    <span class="n">printList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
-    <span class="c1">//刪除54節點</span>
-    <span class="n">deleteNode</span><span class="p">(</span><span class="n">getNode</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">54</span><span class="p">));</span>
-    <span class="c1">//印出所有節點</span>
-    <span class="n">printList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
-    
-    <span class="c1">//刪除第一個節點</span>
-    <span class="n">removeFirst</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
-    <span class="c1">//印出所有節點</span>
-    <span class="n">printList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
-    <span class="c1">//刪除最後一個節點</span>
-    <span class="n">removeLast</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
-    <span class="c1">//印出所有節點</span>
-    <span class="n">printList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
-    
-    <span class="c1">//清空所有節點，(不包含頭節點)</span>
-    <span class="n">clearList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
-    
-    <span class="c1">//釋放記憶體(包含頭節點)</span>
-    <span class="n">destroyLinkedList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立頭節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">head</span> <span class="o">=</span> <span class="n">initLinkedList</span><span class="p">();</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addFirst</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+  <span class="c1">//印出所有節點</span>
+  <span class="n">printList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
+  
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"--------------"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addLast</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addLast</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addLast</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span>
+  <span class="c1">//增加節點</span>
+  <span class="n">addLast</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+  <span class="c1">//印出所有節點</span>
+  <span class="n">printList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"size = "</span> <span class="o">&lt;&lt;</span> <span class="n">size</span><span class="p">(</span><span class="n">head</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"--------------"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//取得資料為"5"的節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">node</span> <span class="o">=</span> <span class="n">getNode</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+  <span class="c1">//在資料為"5"的節點之前，新增54</span>
+  <span class="n">insert</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="mi">54</span><span class="p">);</span>
+  <span class="c1">//印出所有節點</span>
+  <span class="n">printList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
+  <span class="c1">//刪除54節點</span>
+  <span class="n">deleteNode</span><span class="p">(</span><span class="n">getNode</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="mi">54</span><span class="p">));</span>
+  <span class="c1">//印出所有節點</span>
+  <span class="n">printList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
+  
+  <span class="c1">//刪除第一個節點</span>
+  <span class="n">removeFirst</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
+  <span class="c1">//印出所有節點</span>
+  <span class="n">printList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
+  <span class="c1">//刪除最後一個節點</span>
+  <span class="n">removeLast</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
+  <span class="c1">//印出所有節點</span>
+  <span class="n">printList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
+  
+  <span class="c1">//清空所有節點，(不包含頭節點)</span>
+  <span class="n">clearList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
+  
+  <span class="c1">//釋放記憶體(包含頭節點)</span>
+  <span class="n">destroyLinkedList</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -2703,7 +2703,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

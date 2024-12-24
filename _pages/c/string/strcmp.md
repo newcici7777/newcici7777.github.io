@@ -13,25 +13,25 @@ keywords: c++, strcmp
  str1字元<str2字元 return -1
  **/
 int mystrcmp(const char* str1,const char* str2) {
-    //特別注意，使用while(true)，即便str1或str2是\0也能比較
-    while(true){
-        //str1字元>str2字元
-        if(*str1 > *str2) return 1;
-        //str1字元<str2字元
-        if(*str1 < *str2) return -1;
-        //二個字元結尾相等
-        if(*str1 == 0 && *str2 == 0) return 0;
-        //比較下一個字元
-        str1++;
-        str2++;
-    }
+  //特別注意，使用while(true)，即便str1或str2是\0也能比較
+  while(true){
+    //str1字元>str2字元
+    if(*str1 > *str2) return 1;
+    //str1字元<str2字元
+    if(*str1 < *str2) return -1;
+    //二個字元結尾相等
+    if(*str1 == 0 && *str2 == 0) return 0;
+    //比較下一個字元
+    str1++;
+    str2++;
+  }
 }
 int main() {
-    cout << mystrcmp("abc","abcd") << endl;
-    cout << mystrcmp("ab","a") << endl;
-    cout << mystrcmp("abc","abc") << endl;
-    cout << mystrcmp("","a") << endl;
-    return 0;
+  cout << mystrcmp("abc","abcd") << endl;
+  cout << mystrcmp("ab","a") << endl;
+  cout << mystrcmp("abc","abc") << endl;
+  cout << mystrcmp("","a") << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -56,27 +56,27 @@ int mystrncmp(const char* str1,const char* str2,const size_t n)
 
 {% highlight c++ linenos %}
 int mystrncmp(const char* str1,const char* str2,const size_t n) {
-    int i = 0;
-    while(i < n){
-        //str1字元>str2字元
-        if(*str1 > *str2) return 1;
-        //str1字元<str2字元
-        if(*str1 < *str2) return -1;
-        //二個字元結尾相等
-        if(*str1 == 0 && *str2 == 0) return 0;
-        //比較下一個字元
-        str1++;
-        str2++;
-        i++;
-    }
-    //比較n次仍比較不出來，就回傳0
-    return 0;
+  int i = 0;
+  while(i < n){
+    //str1字元>str2字元
+    if(*str1 > *str2) return 1;
+    //str1字元<str2字元
+    if(*str1 < *str2) return -1;
+    //二個字元結尾相等
+    if(*str1 == 0 && *str2 == 0) return 0;
+    //比較下一個字元
+    str1++;
+    str2++;
+    i++;
+  }
+  //比較n次仍比較不出來，就回傳0
+  return 0;
 }
 int main() {
-    cout << mystrncmp("abc","abcd",2) << endl;
-    cout << mystrncmp("ab","a",2) << endl;
-    cout << mystrncmp("abc","abc",2) << endl;
-    return 0;
+  cout << mystrncmp("abc","abcd",2) << endl;
+  cout << mystrncmp("ab","a",2) << endl;
+  cout << mystrncmp("abc","abc",2) << endl;
+  return 0;
 }
 {% endhighlight %}
 

@@ -1287,9 +1287,9 @@
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>    <span class="kt">char</span><span class="o">*</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"http://www.google.com"</span><span class="p">;</span><span class="c1">//21個字元(不含結尾\0)</span>
-    <span class="c1">//因為常數非動態記憶空間，所以要透過strlen來計算記憶體空間大小</span>
-    <span class="kt">size_t</span> <span class="n">s_size</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span><span class="c1">//strlen不包含結尾\0的大小</span>
+</pre></td><td class="code"><pre>  <span class="kt">char</span><span class="o">*</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"http://www.google.com"</span><span class="p">;</span><span class="c1">//21個字元(不含結尾\0)</span>
+  <span class="c1">//因為常數非動態記憶空間，所以要透過strlen來計算記憶體空間大小</span>
+  <span class="kt">size_t</span> <span class="n">s_size</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span><span class="c1">//strlen不包含結尾\0的大小</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1301,9 +1301,9 @@
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">s1</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"http://www.google.com"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1堆疊記憶體大小="</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1長度="</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">char</span> <span class="n">s1</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"http://www.google.com"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1堆疊記憶體大小="</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1長度="</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1350,25 +1350,25 @@ s1長度=21
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//cstr1陣列名是記憶體起始位址</span>
-    <span class="kt">char</span> <span class="n">cstr1</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"Hello World!"</span><span class="p">;</span>
-    <span class="c1">//cstr2是指標變數，指向字串常數"Hello World!"</span>
-    <span class="c1">//常數是放在code segment 記憶體區塊，不可以使用指標指向常數記憶體位址</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">cstr2</span> <span class="o">=</span> <span class="s">"Hello World!"</span><span class="p">;</span>
-    
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="c1">//cstr1陣列名是記憶體起始位址，是常數，不可以++</span>
-    <span class="c1">//cstr1++;</span>
-    
-    <span class="c1">//指標是變數，可以修改</span>
-    <span class="c1">//指標原本指向起始位址"H"，++移動1byte，指標指向"e"的記憶體位址</span>
-    <span class="n">cstr2</span><span class="o">++</span><span class="p">;</span>
-    
-    <span class="c1">//印出ello World!，直到遇到\0結尾字元，就停止輸出</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//cstr1陣列名是記憶體起始位址</span>
+  <span class="kt">char</span> <span class="n">cstr1</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"Hello World!"</span><span class="p">;</span>
+  <span class="c1">//cstr2是指標變數，指向字串常數"Hello World!"</span>
+  <span class="c1">//常數是放在code segment 記憶體區塊，不可以使用指標指向常數記憶體位址</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">cstr2</span> <span class="o">=</span> <span class="s">"Hello World!"</span><span class="p">;</span>
+  
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  
+  <span class="c1">//cstr1陣列名是記憶體起始位址，是常數，不可以++</span>
+  <span class="c1">//cstr1++;</span>
+  
+  <span class="c1">//指標是變數，可以修改</span>
+  <span class="c1">//指標原本指向起始位址"H"，++移動1byte，指標指向"e"的記憶體位址</span>
+  <span class="n">cstr2</span><span class="o">++</span><span class="p">;</span>
+  
+  <span class="c1">//印出ello World!，直到遇到\0結尾字元，就停止輸出</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1428,34 +1428,34 @@ cstr2 = ello World!
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">void</span> <span class="nf">copystr</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">desc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//若指標指向的記憶體位址的值是\0就離開while</span>
-    <span class="c1">//若指標指向的記憶體位址的值不是\0就進入while</span>
-    <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">src</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//取出src指標指向的記憶體位址的內容</span>
-        <span class="c1">//使用*取值運算子修改desc指向記憶體位址的*</span>
-        <span class="o">*</span><span class="n">desc</span> <span class="o">=</span> <span class="o">*</span><span class="n">src</span><span class="p">;</span>
-        <span class="n">desc</span><span class="o">++</span><span class="p">;</span><span class="c1">//指標往下一個位址移動，移動1byte</span>
-        <span class="n">src</span><span class="o">++</span><span class="p">;</span><span class="c1">//指標往下一個位址移動，移動1byte</span>
-    <span class="p">}</span>
-    <span class="c1">//目標字串放上結尾字元，代表字串結束</span>
-    <span class="o">*</span><span class="n">desc</span> <span class="o">=</span> <span class="sc">'\0'</span><span class="p">;</span>
+  <span class="c1">//若指標指向的記憶體位址的值是\0就離開while</span>
+  <span class="c1">//若指標指向的記憶體位址的值不是\0就進入while</span>
+  <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">src</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//取出src指標指向的記憶體位址的內容</span>
+    <span class="c1">//使用*取值運算子修改desc指向記憶體位址的*</span>
+    <span class="o">*</span><span class="n">desc</span> <span class="o">=</span> <span class="o">*</span><span class="n">src</span><span class="p">;</span>
+    <span class="n">desc</span><span class="o">++</span><span class="p">;</span><span class="c1">//指標往下一個位址移動，移動1byte</span>
+    <span class="n">src</span><span class="o">++</span><span class="p">;</span><span class="c1">//指標往下一個位址移動，移動1byte</span>
+  <span class="p">}</span>
+  <span class="c1">//目標字串放上結尾字元，代表字串結束</span>
+  <span class="o">*</span><span class="n">desc</span> <span class="o">=</span> <span class="sc">'\0'</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//拷貝的來源字串</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">src</span> <span class="o">=</span> <span class="s">"Hello World!"</span><span class="p">;</span>
-    <span class="c1">//+1是為了加上結尾空字元\0，strlen預設是不含\0</span>
-    <span class="kt">size_t</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">src</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="c1">//拷貝的目標字串</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">desc</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="n">len</span><span class="p">];</span>
-    
-    <span class="n">copystr</span><span class="p">(</span><span class="n">desc</span><span class="p">,</span> <span class="n">src</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"desc = "</span> <span class="o">&lt;&lt;</span> <span class="n">desc</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="c1">//記憶體釋放陣列</span>
-    <span class="k">delete</span><span class="p">[]</span> <span class="n">desc</span><span class="p">;</span>
-    <span class="c1">//desc指標不指向任何記憶體位址</span>
-    <span class="n">desc</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//拷貝的來源字串</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">src</span> <span class="o">=</span> <span class="s">"Hello World!"</span><span class="p">;</span>
+  <span class="c1">//+1是為了加上結尾空字元\0，strlen預設是不含\0</span>
+  <span class="kt">size_t</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">src</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="c1">//拷貝的目標字串</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">desc</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="n">len</span><span class="p">];</span>
+  
+  <span class="n">copystr</span><span class="p">(</span><span class="n">desc</span><span class="p">,</span> <span class="n">src</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"desc = "</span> <span class="o">&lt;&lt;</span> <span class="n">desc</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  
+  <span class="c1">//記憶體釋放陣列</span>
+  <span class="k">delete</span><span class="p">[]</span> <span class="n">desc</span><span class="p">;</span>
+  <span class="c1">//desc指標不指向任何記憶體位址</span>
+  <span class="n">desc</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1492,25 +1492,25 @@ cstr2 = ello World!
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">void</span> <span class="nf">copystr</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">desc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">src</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//若指標指向的記憶體位址的值是\0就離開while</span>
-    <span class="c1">//若指標指向的記憶體位址的值不是\0就進入while</span>
-    <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">src</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//取出src指標指向的記憶體位址的內容</span>
-        <span class="c1">//使用*取值運算子修改desc指向記憶體位址的*</span>
-        <span class="c1">//desc與src指標往下一個位址移動，移動1byte</span>
-        <span class="o">*</span><span class="n">desc</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">src</span><span class="o">++</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//目標字串放上結尾字元，代表字串結束</span>
-    <span class="o">*</span><span class="n">desc</span> <span class="o">=</span> <span class="sc">'\0'</span><span class="p">;</span>
+  <span class="c1">//若指標指向的記憶體位址的值是\0就離開while</span>
+  <span class="c1">//若指標指向的記憶體位址的值不是\0就進入while</span>
+  <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">src</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//取出src指標指向的記憶體位址的內容</span>
+    <span class="c1">//使用*取值運算子修改desc指向記憶體位址的*</span>
+    <span class="c1">//desc與src指標往下一個位址移動，移動1byte</span>
+    <span class="o">*</span><span class="n">desc</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">src</span><span class="o">++</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//目標字串放上結尾字元，代表字串結束</span>
+  <span class="o">*</span><span class="n">desc</span> <span class="o">=</span> <span class="sc">'\0'</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//拷貝的目標字串</span>
-    <span class="kt">char</span> <span class="n">desc</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//拷貝的來源字串</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">src</span> <span class="o">=</span> <span class="s">"Hello World!"</span><span class="p">;</span>
-    <span class="n">copystr</span><span class="p">(</span><span class="n">desc</span><span class="p">,</span> <span class="n">src</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"desc = "</span> <span class="o">&lt;&lt;</span> <span class="n">desc</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//拷貝的目標字串</span>
+  <span class="kt">char</span> <span class="n">desc</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="c1">//拷貝的來源字串</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">src</span> <span class="o">=</span> <span class="s">"Hello World!"</span><span class="p">;</span>
+  <span class="n">copystr</span><span class="p">(</span><span class="n">desc</span><span class="p">,</span> <span class="n">src</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"desc = "</span> <span class="o">&lt;&lt;</span> <span class="n">desc</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1543,13 +1543,13 @@ cstr2 = ello World!
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//拷貝的目標字串</span>
-    <span class="kt">char</span> <span class="n">desc</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//拷貝的來源字串</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">src</span> <span class="o">=</span> <span class="s">"Hello World!"</span><span class="p">;</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">desc</span><span class="p">,</span> <span class="n">src</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"desc = "</span> <span class="o">&lt;&lt;</span> <span class="n">desc</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//拷貝的目標字串</span>
+  <span class="kt">char</span> <span class="n">desc</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="c1">//拷貝的來源字串</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">src</span> <span class="o">=</span> <span class="s">"Hello World!"</span><span class="p">;</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">desc</span><span class="p">,</span> <span class="n">src</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"desc = "</span> <span class="o">&lt;&lt;</span> <span class="n">desc</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1590,17 +1590,17 @@ cstr2 = ello World!
 <span class="k">const</span> <span class="kt">int</span> <span class="n">DAYS</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span> <span class="c1">//字串數，7個字串</span>
 <span class="k">const</span> <span class="kt">int</span> <span class="n">MAX</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">// 每個字串最大長度，包含\0</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="n">DAYS</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Sunday"</span><span class="p">,</span><span class="s">"Monday"</span><span class="p">,</span><span class="s">"Tuesday"</span><span class="p">,</span><span class="s">"Wednesday"</span><span class="p">,</span><span class="s">"Thursday"</span><span class="p">,</span><span class="s">"Friday"</span><span class="p">,</span><span class="s">"Saturday"</span><span class="p">};</span>
+  <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="n">DAYS</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Sunday"</span><span class="p">,</span><span class="s">"Monday"</span><span class="p">,</span><span class="s">"Tuesday"</span><span class="p">,</span><span class="s">"Wednesday"</span><span class="p">,</span><span class="s">"Thursday"</span><span class="p">,</span><span class="s">"Friday"</span><span class="p">,</span><span class="s">"Saturday"</span><span class="p">};</span>
 
-    <span class="c1">//印出二維陣列字串的記憶體大小</span>
-    <span class="c1">//7個字串 * 每個字串最大長度10byte</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str size = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//印出二維陣列字串的記憶體大小</span>
+  <span class="c1">//7個字串 * 每個字串最大長度10byte</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str size = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">DAYS</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//印出字串</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">DAYS</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//印出字串</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1636,15 +1636,15 @@ Saturday
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">const</span> <span class="kt">int</span> <span class="n">DAYS</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span> <span class="c1">//陣列裡的指標個數</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//陣列存放7個指標，每個指標指向字串常數的第一個字元的位址</span>
-    <span class="kt">char</span> <span class="o">*</span><span class="n">arr_ptrs</span><span class="p">[</span><span class="n">DAYS</span><span class="p">]</span> <span class="o">=</span>
-    <span class="p">{</span><span class="s">"Sunday"</span><span class="p">,</span><span class="s">"Monday"</span><span class="p">,</span><span class="s">"Tuesday"</span><span class="p">,</span><span class="s">"Wednesday"</span><span class="p">,</span><span class="s">"Thursday"</span><span class="p">,</span><span class="s">"Friday"</span><span class="p">,</span><span class="s">"Saturday"</span><span class="p">};</span><span class="c1">//字串指標陣列</span>
-    
-    <span class="c1">//指標的固定大小是8byte，指標陣列存放7個指標，總共大小為8byte*7</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr_ptrs size = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr_ptrs</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">DAYS</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">arr_ptrs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//陣列存放7個指標，每個指標指向字串常數的第一個字元的位址</span>
+  <span class="kt">char</span> <span class="o">*</span><span class="n">arr_ptrs</span><span class="p">[</span><span class="n">DAYS</span><span class="p">]</span> <span class="o">=</span>
+  <span class="p">{</span><span class="s">"Sunday"</span><span class="p">,</span><span class="s">"Monday"</span><span class="p">,</span><span class="s">"Tuesday"</span><span class="p">,</span><span class="s">"Wednesday"</span><span class="p">,</span><span class="s">"Thursday"</span><span class="p">,</span><span class="s">"Friday"</span><span class="p">,</span><span class="s">"Saturday"</span><span class="p">};</span><span class="c1">//字串指標陣列</span>
+  
+  <span class="c1">//指標的固定大小是8byte，指標陣列存放7個指標，總共大小為8byte*7</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr_ptrs size = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr_ptrs</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">DAYS</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">arr_ptrs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1849,7 +1849,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

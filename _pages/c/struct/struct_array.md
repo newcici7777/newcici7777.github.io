@@ -26,33 +26,33 @@ Student students[size];
 #include <iostream>
 using namespace std;
 typedef struct{
-    //學生姓名
-    char name[100];
-    //學號
-    int id;
+  //學生姓名
+  char name[100];
+  //學號
+  int id;
 }Student;
 int main() {
-    int size = 3;
-    //建立三個學生
-    Student students[size];
-    //清空資料
-    //參數1是地址，student陣列名就是陣列記憶體的開始位址
-    memset(students, 0, sizeof(students));
-    
-    strcpy(students[0].name,"Bill");
-    students[0].id = 1;
-    
-    strcpy(students[1].name,"Mary");
-    students[1].id = 2;
-    
-    strcpy(students[2].name,"Jeff");
-    students[2].id = 3;
-    
-    for(int i = 0; i < size; i++) {
-        cout << "id = " << students[i].id;
-        cout << ", name = " << students[i].name << endl;
-    }
-    return 0;
+  int size = 3;
+  //建立三個學生
+  Student students[size];
+  //清空資料
+  //參數1是地址，student陣列名就是陣列記憶體的開始位址
+  memset(students, 0, sizeof(students));
+  
+  strcpy(students[0].name,"Bill");
+  students[0].id = 1;
+  
+  strcpy(students[1].name,"Mary");
+  students[1].id = 2;
+  
+  strcpy(students[2].name,"Jeff");
+  students[2].id = 3;
+  
+  for(int i = 0; i < size; i++) {
+    cout << "id = " << students[i].id;
+    cout << ", name = " << students[i].name << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -70,27 +70,27 @@ C++11以上才能使用。
 #include <iostream>
 using namespace std;
 typedef struct{
-    //學生姓名
-    char name[100];
-    //學號
-    int id;
+  //學生姓名
+  char name[100];
+  //學號
+  int id;
 }Student;
 int main() {
-    int size = 3;
-    //建立三個學生
-    Student students[size];
-    //清空資料
-    //參數1是地址，student陣列名就是陣列記憶體的開始位址
-    memset(students, 0, sizeof(students));
-    students[0] = {"Bill",1};
-    students[1] = {"Mary",2};
-    students[2] = {"Jeff",3};
-    
-    for(int i = 0; i < size; i++) {
-        cout << "id = " << students[i].id;
-        cout << ", name = " << students[i].name << endl;
-    }
-    return 0;
+  int size = 3;
+  //建立三個學生
+  Student students[size];
+  //清空資料
+  //參數1是地址，student陣列名就是陣列記憶體的開始位址
+  memset(students, 0, sizeof(students));
+  students[0] = {"Bill",1};
+  students[1] = {"Mary",2};
+  students[2] = {"Jeff",3};
+  
+  for(int i = 0; i < size; i++) {
+    cout << "id = " << students[i].id;
+    cout << ", name = " << students[i].name << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -118,30 +118,30 @@ id = 3, name = Jeff
 #include <iostream>
 using namespace std;
 typedef struct{
-    //學生姓名
-    char name[100];
-    //學號
-    int id;
+  //學生姓名
+  char name[100];
+  //學號
+  int id;
 }Student;
 int main() {
-    int size = 3;
-    //建立三個學生
-    Student students[size];
-    //清空資料
-    //參數1是地址，student陣列名就是陣列記憶體的開始位址
-    memset(students, 0, sizeof(students));
-    students[0] = {"Bill",1};
-    students[1] = {"Mary",2};
-    students[2] = {"Jeff",3};
-    
-    cout << "id = " << (students+0)->id;
-    cout << ", name = " << (students+0)->name << endl;
-    
-    for(int i = 0; i < size; i++) {
-        cout << "id = " << (students+i)->id;
-        cout << ", name = " << (students+i)->name << endl;
-    }
-    return 0;
+  int size = 3;
+  //建立三個學生
+  Student students[size];
+  //清空資料
+  //參數1是地址，student陣列名就是陣列記憶體的開始位址
+  memset(students, 0, sizeof(students));
+  students[0] = {"Bill",1};
+  students[1] = {"Mary",2};
+  students[2] = {"Jeff",3};
+  
+  cout << "id = " << (students+0)->id;
+  cout << ", name = " << (students+0)->name << endl;
+  
+  for(int i = 0; i < size; i++) {
+    cout << "id = " << (students+i)->id;
+    cout << ", name = " << (students+i)->name << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -159,9 +159,9 @@ id = 3, name = Jeff
 ```
 
 {% highlight c++ linenos %}
-    *(students + 0) = {"Bill",1};
-    *(students + 1) = {"Mary",2};
-    *(students + 2) = {"Jeff",3};
+  *(students + 0) = {"Bill",1};
+  *(students + 1) = {"Mary",2};
+  *(students + 2) = {"Jeff",3};
 {% endhighlight %}
 
 
@@ -171,30 +171,30 @@ id = 3, name = Jeff
 #include <iostream>
 using namespace std;
 typedef struct{
-    //學生姓名
-    char name[100];
-    //學號
-    int id;
+  //學生姓名
+  char name[100];
+  //學號
+  int id;
 }Student;
 int main() {
-    int size = 3;
-    //建立三個學生
-    Student students[size];
-    //清空資料
-    //參數1是地址，student陣列名就是陣列記憶體的開始位址
-    memset(students, 0, sizeof(students));
-    *(students + 0) = {"Bill",1};
-    *(students + 1) = {"Mary",2};
-    *(students + 2) = {"Jeff",3};
-    
-    cout << "id = " << (students+0)->id;
-    cout << ", name = " << (students+0)->name << endl;
-    
-    for(int i = 0; i < size; i++) {
-        cout << "id = " << (students+i)->id;
-        cout << ", name = " << (students+i)->name << endl;
-    }
-    return 0;
+  int size = 3;
+  //建立三個學生
+  Student students[size];
+  //清空資料
+  //參數1是地址，student陣列名就是陣列記憶體的開始位址
+  memset(students, 0, sizeof(students));
+  *(students + 0) = {"Bill",1};
+  *(students + 1) = {"Mary",2};
+  *(students + 2) = {"Jeff",3};
+  
+  cout << "id = " << (students+0)->id;
+  cout << ", name = " << (students+0)->name << endl;
+  
+  for(int i = 0; i < size; i++) {
+    cout << "id = " << (students+i)->id;
+    cout << ", name = " << (students+i)->name << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 

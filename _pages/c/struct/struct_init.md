@@ -14,16 +14,16 @@ keywords: c++, struct
 #include <iostream>
 using namespace std;
 typedef struct{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
+  //學生姓名
+  char* name;
+  //學號
+  int id;
 }Student;
 int main() {
-    Student student = {"Mary", 1};
-    cout << student.name << endl;
-    cout << student.id << endl;
-    return 0;
+  Student student = {"Mary", 1};
+  cout << student.name << endl;
+  cout << student.id << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -44,15 +44,15 @@ struct 結構名{
 #include <iostream>
 using namespace std;
 struct Student{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
+  //學生姓名
+  char* name;
+  //學號
+  int id;
 }student = {"Bill", 2};
 int main() {
-    cout << student.name << endl;
-    cout << student.id << endl;
-    return 0;
+  cout << student.name << endl;
+  cout << student.id << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -77,13 +77,13 @@ struct 結構名{
 #include <iostream>
 using namespace std;
 struct Student{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
+  //學生姓名
+  char* name;
+  //學號
+  int id;
 }student = {0};
 int main() {
-    return 0;
+  return 0;
 }
 {% endhighlight %}
 
@@ -95,14 +95,14 @@ int main() {
 #include <iostream>
 using namespace std;
 typedef struct{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
+  //學生姓名
+  char* name;
+  //學號
+  int id;
 }Student;
 int main() {
-    Student student = {0};
-    return 0;
+  Student student = {0};
+  return 0;
 }
 {% endhighlight %}
 
@@ -120,13 +120,13 @@ struct 結構名{
 #include <iostream>
 using namespace std;
 struct Student{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
+  //學生姓名
+  char* name;
+  //學號
+  int id;
 }student = {};
 int main() {
-    return 0;
+  return 0;
 }
 {% endhighlight %}
 
@@ -138,14 +138,14 @@ int main() {
 #include <iostream>
 using namespace std;
 typedef struct{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
+  //學生姓名
+  char* name;
+  //學號
+  int id;
 }Student;
 int main() {
-    Student student = {};
-    return 0;
+  Student student = {};
+  return 0;
 }
 {% endhighlight %}
 
@@ -164,13 +164,13 @@ struct 結構名{
 #include <iostream>
 using namespace std;
 struct Student{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
+  //學生姓名
+  char* name;
+  //學號
+  int id;
 }student{};
 int main() {
-    return 0;
+  return 0;
 }
 {% endhighlight %}
 
@@ -182,14 +182,14 @@ int main() {
 #include <iostream>
 using namespace std;
 typedef struct{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
+  //學生姓名
+  char* name;
+  //學號
+  int id;
 }Student;
 int main() {
-    Student student{};
-    return 0;
+  Student student{};
+  return 0;
 }
 {% endhighlight %}
 
@@ -203,9 +203,9 @@ memset(結構變數地址,0,sizeof(結構變數));
 
 {% highlight c++ linenos %}
 int main() {
-    Student student;
-    memset(&student, 0, sizeof(student));
-    return 0;
+  Student student;
+  memset(&student, 0, sizeof(student));
+  return 0;
 }
 {% endhighlight %}
 

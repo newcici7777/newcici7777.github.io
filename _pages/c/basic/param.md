@@ -14,10 +14,10 @@ Prerequisites:
 
 {% highlight c++ linenos %}
 int main() {
-    int var1 = 10;
-    //將var1傳到func1()函式中，而var1就是引數Argument
-    func1(var1);
-    return 0;
+  int var1 = 10;
+  //將var1傳到func1()函式中，而var1就是引數Argument
+  func1(var1);
+  return 0;
 }
 {% endhighlight %}
 
@@ -28,7 +28,7 @@ int main() {
 {% highlight c++ linenos %}
 //函式接收到來自外面傳進來的變數，變數名param1，而param1就是參數
 void func1(int param1) {
-    cout << "param1=" << param1 << endl;
+  cout << "param1=" << param1 << endl;
 }
 {% endhighlight %}
 

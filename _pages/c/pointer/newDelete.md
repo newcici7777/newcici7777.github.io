@@ -13,10 +13,10 @@ keywords: c++, new, delete, Dynamic memory allocation
 ```
 {% highlight c++ linenos %}
 int main() {
-    int* p = new int(30);
-    cout << "位址是 = " << p << endl;
-    cout << "位址中的內容是 = " << *p << endl;
-    return 0;
+  int* p = new int(30);
+  cout << "位址是 = " << p << endl;
+  cout << "位址中的內容是 = " << *p << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -38,9 +38,9 @@ delete 指標變數;
 
 {% highlight c++ linenos %}
 int main() {
-    int* p = new int(30);
-    delete p;
-    p = nullptr;
-    return 0;
+  int* p = new int(30);
+  delete p;
+  p = nullptr;
+  return 0;
 }
 {% endhighlight %}

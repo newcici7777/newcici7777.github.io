@@ -1242,8 +1242,8 @@
 3
 4
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">print</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span><span class="s">"Mary"</span><span class="p">,</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Allen"</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">print</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span><span class="s">"Mary"</span><span class="p">,</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Allen"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1269,10 +1269,10 @@
 7
 </pre></td><td class="code"><pre><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="p">,</span> <span class="k">typename</span><span class="o">...</span> <span class="nc">Args</span><span class="p">&gt;</span>
 <span class="kt">void</span> <span class="nf">print</span><span class="p">(</span><span class="n">T</span> <span class="n">arg</span><span class="p">,</span> <span class="n">Args</span><span class="p">...</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-	<span class="c1">//每呼叫一次就從args中拿出一個參數arg</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"參數"</span> <span class="o">&lt;&lt;</span> <span class="n">arg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//剩下未取出的參數繼續遞迴呼叫自已</span>
-    <span class="n">print</span><span class="p">(</span><span class="n">args</span><span class="p">...);</span>
+  <span class="c1">//每呼叫一次就從args中拿出一個參數arg</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"參數"</span> <span class="o">&lt;&lt;</span> <span class="n">arg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//剩下未取出的參數繼續遞迴呼叫自已</span>
+  <span class="n">print</span><span class="p">(</span><span class="n">args</span><span class="p">...);</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1289,7 +1289,7 @@
 2
 3
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">print</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"end"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"end"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1320,18 +1320,18 @@
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="c1">//print()傳回值void，參數為空()，待遞迴結束時會呼叫此函式</span>
 <span class="kt">void</span> <span class="nf">print</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"end"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"end"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="c1">//print是遞回函式template</span>
 <span class="c1">//每呼叫一次就從args中拿出一個參數arg，其它的args又傳入print中遞迴呼叫</span>
 <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="p">,</span> <span class="k">typename</span><span class="o">...</span> <span class="nc">Args</span><span class="p">&gt;</span>
 <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="n">T</span> <span class="n">arg</span><span class="p">,</span> <span class="n">Args</span><span class="p">...</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"參數"</span> <span class="o">&lt;&lt;</span> <span class="n">arg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">print</span><span class="p">(</span><span class="n">args</span><span class="p">...);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"參數"</span> <span class="o">&lt;&lt;</span> <span class="n">arg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">print</span><span class="p">(</span><span class="n">args</span><span class="p">...);</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">print</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span><span class="s">"Mary"</span><span class="p">,</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Allen"</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">print</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span><span class="s">"Mary"</span><span class="p">,</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Allen"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1356,8 +1356,8 @@ end
 </pre></td><td class="code"><pre><span class="c1">//定義參數的類型名稱Args</span>
 <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="o">...</span> <span class="nc">Args</span><span class="p">&gt;</span>
 <span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">school</span><span class="p">,</span> <span class="n">Args</span><span class="p">...</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">school</span> <span class="o">&lt;&lt;</span> <span class="s">"的學生有:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">print</span><span class="p">(</span><span class="n">args</span><span class="p">...);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">school</span> <span class="o">&lt;&lt;</span> <span class="s">"的學生有:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">print</span><span class="p">(</span><span class="n">args</span><span class="p">...);</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1395,25 +1395,25 @@ end
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="c1">//print()傳回值void，參數為空()，待遞迴結束時會呼叫此函式</span>
 <span class="kt">void</span> <span class="nf">print</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"end"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"end"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="c1">//print是遞迴函式template</span>
 <span class="c1">//每呼叫一次就從args中拿出一個參數arg，其它的args又傳入print中遞迴呼叫</span>
 <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="p">,</span> <span class="k">typename</span><span class="o">...</span> <span class="nc">Args</span><span class="p">&gt;</span>
 <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="n">T</span> <span class="n">arg</span><span class="p">,</span> <span class="n">Args</span><span class="p">...</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">arg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">print</span><span class="p">(</span><span class="n">args</span><span class="p">...);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">arg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">print</span><span class="p">(</span><span class="n">args</span><span class="p">...);</span>
 <span class="p">}</span>
 <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="o">...</span> <span class="nc">Args</span><span class="p">&gt;</span>
 <span class="kt">void</span> <span class="n">func</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">school</span><span class="p">,</span> <span class="n">Args</span><span class="p">...</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">school</span> <span class="o">&lt;&lt;</span> <span class="s">"的學生有:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">print</span><span class="p">(</span><span class="n">args</span><span class="p">...);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">school</span> <span class="o">&lt;&lt;</span> <span class="s">"的學生有:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">print</span><span class="p">(</span><span class="n">args</span><span class="p">...);</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-	<span class="c1">//只有第1個參數傳進func印出來</span>
-	<span class="c1">//第1個參數之後都參數都是args，代入遞迴函式</span>
-    <span class="n">func</span><span class="p">(</span><span class="s">"青草湖國小"</span><span class="p">,</span><span class="s">"Bill"</span><span class="p">,</span><span class="s">"Mary"</span><span class="p">,</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Allen"</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//只有第1個參數傳進func印出來</span>
+  <span class="c1">//第1個參數之後都參數都是args，代入遞迴函式</span>
+  <span class="n">func</span><span class="p">(</span><span class="s">"青草湖國小"</span><span class="p">,</span><span class="s">"Bill"</span><span class="p">,</span><span class="s">"Mary"</span><span class="p">,</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Allen"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1478,33 +1478,33 @@ end
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 
 <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">Func</span><span class="p">,</span> <span class="k">typename</span><span class="o">...</span> <span class="nc">Args</span><span class="p">&gt;</span>
 <span class="k">auto</span> <span class="n">callFunc</span><span class="p">(</span><span class="n">Func</span><span class="o">&amp;&amp;</span> <span class="n">func</span><span class="p">,</span> <span class="n">Args</span><span class="o">&amp;&amp;</span><span class="p">...</span><span class="n">args</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="k">auto</span> <span class="n">f</span> <span class="o">=</span> <span class="n">bind</span><span class="p">(</span><span class="n">forward</span><span class="o">&lt;</span><span class="n">Func</span><span class="o">&gt;</span><span class="p">(</span><span class="n">func</span><span class="p">),</span> <span class="n">forward</span><span class="o">&lt;</span><span class="n">Args</span><span class="o">&gt;</span><span class="p">(</span><span class="n">args</span><span class="p">)...);</span>
-    <span class="n">f</span><span class="p">();</span>
-    <span class="k">return</span> <span class="n">f</span><span class="p">;</span>
+  <span class="k">auto</span> <span class="n">f</span> <span class="o">=</span> <span class="n">bind</span><span class="p">(</span><span class="n">forward</span><span class="o">&lt;</span><span class="n">Func</span><span class="o">&gt;</span><span class="p">(</span><span class="n">func</span><span class="p">),</span> <span class="n">forward</span><span class="o">&lt;</span><span class="n">Args</span><span class="o">&gt;</span><span class="p">(</span><span class="n">args</span><span class="p">)...);</span>
+  <span class="n">f</span><span class="p">();</span>
+  <span class="k">return</span> <span class="n">f</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">callFunc</span><span class="p">(</span><span class="n">print</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="s">"Page not found."</span><span class="p">);</span>
-    <span class="c1">//物件成員函式</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="n">callFunc</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">print</span><span class="p">,</span> <span class="n">student</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="s">"Server error."</span><span class="p">);</span>
-    <span class="c1">//函式為右值</span>
-    <span class="n">callFunc</span><span class="p">([](</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Lambda error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">},</span> <span class="mi">500</span><span class="p">,</span> <span class="s">"Server error."</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">callFunc</span><span class="p">(</span><span class="n">print</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="s">"Page not found."</span><span class="p">);</span>
+  <span class="c1">//物件成員函式</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+  <span class="n">callFunc</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">print</span><span class="p">,</span> <span class="n">student</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="s">"Server error."</span><span class="p">);</span>
+  <span class="c1">//函式為右值</span>
+  <span class="n">callFunc</span><span class="p">([](</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Lambda error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">},</span> <span class="mi">500</span><span class="p">,</span> <span class="s">"Server error."</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1704,7 +1704,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

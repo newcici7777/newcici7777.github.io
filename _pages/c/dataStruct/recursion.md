@@ -25,14 +25,14 @@ keywords: c++, Recursion
 
 {% highlight c++ linenos %}
 void story(int count) {
-    if(count > 10) return;
-    cout << "第" << count << "次:";
-    cout << "從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？" << endl;
-    story(count + 1);
+  if(count > 10) return;
+  cout << "第" << count << "次:";
+  cout << "從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？" << endl;
+  story(count + 1);
 }
 int main() {
-    story(1);
-    return 0;
+  story(1);
+  return 0;
 }
 {% endhighlight %}
 
@@ -93,10 +93,10 @@ int func1(int i, int bullet, int total) {
 	return func1(i + 1, bullet + 1, total);
 }
 int main() {
-    int total = func1(1, 1, 0);
-    cout << total << endl;
-    return 0;
-}    
+  int total = func1(1, 1, 0);
+  cout << total << endl;
+  return 0;
+}  
 {% endhighlight %}
 
 ```
@@ -138,9 +138,9 @@ int func1(士兵代號,士兵子彈數) {
 
 {% highlight c++ linenos %}
 int func1(int i, int bullet) {
-    if(i > 10) return 0;
-    //自己的子彈數 + 後面的人的子彈數
-    return bullet + func2(i+1, bullet+1);
+  if(i > 10) return 0;
+  //自己的子彈數 + 後面的人的子彈數
+  return bullet + func2(i+1, bullet+1);
 }
 {% endhighlight %}
 
@@ -154,19 +154,19 @@ int func1(int i, int bullet) {
 {% highlight c++ linenos %}
 class Story {
 public:
-    int times = 0;
-    void tell() {
-        if(times > 10) return;
-        cout << "第" << times << "次:";
-        cout << "從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？" << endl;
-        times++;
-        tell();
-    }
+  int times = 0;
+  void tell() {
+    if(times > 10) return;
+    cout << "第" << times << "次:";
+    cout << "從前有座山，山裡有座廟，廟裡有個老和尚，正在給小和尚講故事呢！故事是什麼呢？" << endl;
+    times++;
+    tell();
+  }
 };
 int main() {
-    Story story;
-    story.tell();
-    return 0;
+  Story story;
+  story.tell();
+  return 0;
 }
 {% endhighlight %}
 

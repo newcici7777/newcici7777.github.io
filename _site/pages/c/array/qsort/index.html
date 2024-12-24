@@ -1218,7 +1218,7 @@
                     
 
                     <h2 id="qsort使用方法">qsort使用方法</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void qsort ( void * base , size_t nitems , size_t size , int (* compar )( const void *, const void *))         
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void qsort ( void * base , size_t nitems , size_t size , int (* compar )( const void *, const void *))     
 </code></pre></div></div>
 
 <ul>
@@ -1279,33 +1279,33 @@
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">compare</span><span class="p">(</span><span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">p1</span><span class="p">,</span> <span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">p2</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//void*指標代表接收任何資料型態的參數</span>
-    <span class="c1">//把void*指標轉成int*指標</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">pi1</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="o">*</span><span class="p">)</span> <span class="n">p1</span><span class="p">;</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">pi2</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="o">*</span><span class="p">)</span> <span class="n">p2</span><span class="p">;</span>
-    <span class="c1">//把pi1指標使用*取值運算子，取出pi1記憶體位址存放的值</span>
-    <span class="c1">//把pi2指標使用*取值運算子，取出pi2記憶體位址存放的值</span>
-    <span class="c1">//pi1記憶體位址的值 小於 pi2記憶體位址的值，傳回-1</span>
-    <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">pi1</span> <span class="o">&lt;</span> <span class="o">*</span><span class="n">pi2</span><span class="p">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-    <span class="c1">//pi1記憶體位址的值 小於 pi2記憶體位址的值，傳回0</span>
-    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">pi1</span> <span class="o">==</span> <span class="o">*</span><span class="n">pi2</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="c1">//pi1記憶體位址的值 小於 pi2記憶體位址的值，傳回1</span>
-    <span class="c1">//else if(*pi1 &gt; *pi2)</span>
-    <span class="k">else</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="c1">//void*指標代表接收任何資料型態的參數</span>
+  <span class="c1">//把void*指標轉成int*指標</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">pi1</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="o">*</span><span class="p">)</span> <span class="n">p1</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">pi2</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="o">*</span><span class="p">)</span> <span class="n">p2</span><span class="p">;</span>
+  <span class="c1">//把pi1指標使用*取值運算子，取出pi1記憶體位址存放的值</span>
+  <span class="c1">//把pi2指標使用*取值運算子，取出pi2記憶體位址存放的值</span>
+  <span class="c1">//pi1記憶體位址的值 小於 pi2記憶體位址的值，傳回-1</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">pi1</span> <span class="o">&lt;</span> <span class="o">*</span><span class="n">pi2</span><span class="p">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="c1">//pi1記憶體位址的值 小於 pi2記憶體位址的值，傳回0</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">pi1</span> <span class="o">==</span> <span class="o">*</span><span class="n">pi2</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//pi1記憶體位址的值 小於 pi2記憶體位址的值，傳回1</span>
+  <span class="c1">//else if (*pi1 &gt; *pi2)</span>
+  <span class="k">else</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//宣告大小為10的整數陣列</span>
-    <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">8</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">};</span>
-    <span class="c1">//陣列大小</span>
-    <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
-    <span class="c1">//排序</span>
-    <span class="n">qsort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">),</span> <span class="n">compare</span><span class="p">);</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//印出每個元素</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">","</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//宣告大小為10的整數陣列</span>
+  <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">8</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">};</span>
+  <span class="c1">//陣列大小</span>
+  <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+  <span class="c1">//排序</span>
+  <span class="n">qsort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">),</span> <span class="n">compare</span><span class="p">);</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//印出每個元素</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">","</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1503,7 +1503,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

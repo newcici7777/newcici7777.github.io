@@ -36,7 +36,7 @@ sleep(1);
 ### join 執行緒記憶體釋放
 
 {% highlight c++ linenos %}
-    t1.join();
+  t1.join();
 {% endhighlight %}
 
 ### 完整程式碼
@@ -47,22 +47,22 @@ sleep(1);
 #include <thread>
 using namespace std;
 void func(string msg) {
-    for(int i = 0; i <= 10; i++) {
-        cout << "i = " << i << ", msg =" << msg << endl;
-        sleep(1);//停1秒鐘
-    }
+  for (int i = 0; i <= 10; i++) {
+    cout << "i = " << i << ", msg =" << msg << endl;
+    sleep(1);//停1秒鐘
+  }
 }
 int main() {
-    //建立執行緒t1
-    thread t1(func, "test test");
-    //建立執行緒t2
-    thread t2(func, "abcdefg abcdefg");
-    
-    //執行緒t1被記憶體釋放
-    t1.join();
-    //執行緒t2被記憶體釋放
-    t2.join();
-    return 0;
+  //建立執行緒t1
+  thread t1(func, "test test");
+  //建立執行緒t2
+  thread t2(func, "abcdefg abcdefg");
+  
+  //執行緒t1被記憶體釋放
+  t1.join();
+  //執行緒t2被記憶體釋放
+  t2.join();
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -102,40 +102,40 @@ thread 執行緒變數(&類別名::成員函式, &物件名, 傳進成員函式�
 以下的程式碼包含Student的類別，t3執行緒是呼叫Student物件的成員函式func()，並代入參數msg。
 
 {% highlight c++ linenos %}
-    Student student;//建立物件
-    //第一個參數傳入成員函式位址，要有&類別名::成員函式，注意！成員函式結尾不用括號
-    //第二個參數傳入物件地址
-    //第三個參數傳入函式的參數
-    thread t3(&Student::func, &student, "ccccccc");
+  Student student;//建立物件
+  //第一個參數傳入成員函式位址，要有&類別名::成員函式，注意！成員函式結尾不用括號
+  //第二個參數傳入物件地址
+  //第三個參數傳入函式的參數
+  thread t3(&Student::func, &student, "ccccccc");
 {% endhighlight %}
 
 完整程式碼
 {% highlight c++ linenos %}
 class Student {
-    public :
-    void func(const string& msg) {
-        for(int i = 0; i <= 10; i++) {
-            cout << " i = " << i << ", msg =" << msg << endl;
-        }
+  public :
+  void func(const string& msg) {
+    for (int i = 0; i <= 10; i++) {
+      cout << " i = " << i << ", msg =" << msg << endl;
     }
+  }
 };
 int main() {
-    //建立執行緒t1
-    thread t1(func, "test test");
-    //建立執行緒t2
-    thread t2(func, "abcdefg abcdefg");
-    
-    Student student;//建立物件
-    //第一個參數傳入成員函式位址，要有&類別名::成員函式，注意！成員函式結尾不用括號
-    //第二個參數傳入物件地址
-    //第三個參數傳入函式的參數
-    thread t3(&Student::func, &student, "ccccccc");
-    
-    //執行緒t1被記憶體釋放
-    t1.join();
-    //執行緒t2被記憶體釋放
-    t2.join();
-    t3.join();
-    return 0;
+  //建立執行緒t1
+  thread t1(func, "test test");
+  //建立執行緒t2
+  thread t2(func, "abcdefg abcdefg");
+  
+  Student student;//建立物件
+  //第一個參數傳入成員函式位址，要有&類別名::成員函式，注意！成員函式結尾不用括號
+  //第二個參數傳入物件地址
+  //第三個參數傳入函式的參數
+  thread t3(&Student::func, &student, "ccccccc");
+  
+  //執行緒t1被記憶體釋放
+  t1.join();
+  //執行緒t2被記憶體釋放
+  t2.join();
+  t3.join();
+  return 0;
 }
 {% endhighlight %}

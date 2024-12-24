@@ -1270,29 +1270,29 @@
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立空的字串，呼叫string()空的建構子</span>
-    <span class="n">string</span> <span class="n">s1</span><span class="p">;</span>
-    <span class="c1">//印出string</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//容量</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1.capacity() = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//實際用了多少</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1.size()"</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//s1的記憶體位址</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="n">s1</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"----------------------------"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//記憶體擴展</span>
-    <span class="c1">//25個字元(Hello 5字元*5遍)</span>
-    <span class="n">s1</span> <span class="o">=</span> <span class="s">"HelloHelloHelloHelloHello"</span><span class="p">;</span>
-    <span class="c1">//印出string</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//容量</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1.capacity() = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//實際用了多少</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1.size()"</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//s1的記憶體位址</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="n">s1</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立空的字串，呼叫string()空的建構子</span>
+  <span class="n">string</span> <span class="n">s1</span><span class="p">;</span>
+  <span class="c1">//印出string</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//容量</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1.capacity() = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//實際用了多少</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1.size()"</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//s1的記憶體位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="n">s1</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"----------------------------"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//記憶體擴展</span>
+  <span class="c1">//25個字元(Hello 5字元*5遍)</span>
+  <span class="n">s1</span> <span class="o">=</span> <span class="s">"HelloHelloHelloHelloHello"</span><span class="p">;</span>
+  <span class="c1">//印出string</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//容量</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1.capacity() = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//實際用了多少</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1.size()"</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//s1的記憶體位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1記憶體位址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="n">s1</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1358,11 +1358,11 @@ s1記憶體位址 = 0x600000c00120
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 	<span class="c1">// 方式1</span>
-    <span class="n">string</span> <span class="n">s2</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">// 方式2</span>
-    <span class="n">string</span> <span class="n">s3</span> <span class="o">=</span> <span class="s">"Hello World!"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s3 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s2</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">// 方式2</span>
+  <span class="n">string</span> <span class="n">s3</span> <span class="o">=</span> <span class="s">"Hello World!"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s3 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1394,10 +1394,10 @@ s3 = Hello World!
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">s2</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">string</span> <span class="n">s3</span> <span class="o">=</span> <span class="n">s2</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s3 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s2</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s3</span> <span class="o">=</span> <span class="n">s2</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s3 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1417,11 +1417,11 @@ s3 = Hello world!
 6
 7
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello world"</span><span class="p">;</span>
-    <span class="n">string</span> <span class="n">s2</span><span class="p">(</span><span class="n">s1</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 size = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello world"</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s2</span><span class="p">(</span><span class="n">s1</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 size = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1472,10 +1472,10 @@ s2 size = 11
 7
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 	<span class="c1">//從c字串的位址開始複製5個字元，建立字串</span>
-    <span class="n">string</span> <span class="n">s</span><span class="p">(</span><span class="s">"hello world"</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s = "</span> <span class="o">&lt;&lt;</span> <span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"size = "</span> <span class="o">&lt;&lt;</span> <span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s</span><span class="p">(</span><span class="s">"hello world"</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s = "</span> <span class="o">&lt;&lt;</span> <span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"size = "</span> <span class="o">&lt;&lt;</span> <span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1499,10 +1499,10 @@ size = 5
 7
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 	<span class="c1">//從c字串的位址開始複製20個字元，建立字串</span>
-    <span class="n">string</span> <span class="n">s</span><span class="p">(</span><span class="s">"hello world"</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s = "</span> <span class="o">&lt;&lt;</span> <span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"size = "</span> <span class="o">&lt;&lt;</span> <span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s</span><span class="p">(</span><span class="s">"hello world"</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s = "</span> <span class="o">&lt;&lt;</span> <span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"size = "</span> <span class="o">&lt;&lt;</span> <span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1535,11 +1535,11 @@ size = 20
 6
 7
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello world"</span><span class="p">;</span>
-    <span class="n">string</span> <span class="n">s2</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 size = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello world"</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s2</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 size = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1560,11 +1560,11 @@ s2 size = 3
 6
 7
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello world"</span><span class="p">;</span>
-    <span class="n">string</span> <span class="n">s2</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 size = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello world"</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s2</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 size = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1590,10 +1590,10 @@ s2 size = 11
 5
 6
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">s1</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="sc">'C'</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 size = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s1</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="sc">'C'</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 size = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1634,8 +1634,8 @@ s1 size = 100
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="code"><pre>    <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1[1] = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1[1] = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1668,13 +1668,13 @@ s1 size = 100
 8
 9
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
-    <span class="c1">//取得string物件的記憶體位址</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 &amp; address = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//取得string物件中動態分配記憶體空間存放字串的位址</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 c_str address = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="n">s1</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 data address = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="n">s1</span><span class="p">.</span><span class="n">data</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
+  <span class="c1">//取得string物件的記憶體位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 &amp; address = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//取得string物件中動態分配記憶體空間存放字串的位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 c_str address = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="n">s1</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 data address = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="n">s1</span><span class="p">.</span><span class="n">data</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1698,10 +1698,10 @@ s1 data address = 0x7ff7bfeff451
 5
 6
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
-    <span class="n">s1</span><span class="o">+=</span><span class="s">" world"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
+  <span class="n">s1</span><span class="o">+=</span><span class="s">" world"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1721,10 +1721,10 @@ s1 data address = 0x7ff7bfeff451
 5
 6
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
-    <span class="n">s1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">" world"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
+  <span class="n">s1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">" world"</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1745,11 +1745,11 @@ s1 data address = 0x7ff7bfeff451
 6
 7
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
-    <span class="n">string</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">" world"</span><span class="p">;</span>
-    <span class="n">s1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">s2</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">" world"</span><span class="p">;</span>
+  <span class="n">s1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">s2</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1769,9 +1769,9 @@ s1 data address = 0x7ff7bfeff451
 4
 5
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">substr</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">substr</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1792,10 +1792,10 @@ s1 data address = 0x7ff7bfeff451
 5
 6
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
-    <span class="n">string</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">"world"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"compare result = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">s1</span> <span class="o">==</span> <span class="n">s2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">"world"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"compare result = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">s1</span> <span class="o">==</span> <span class="n">s2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1820,14 +1820,14 @@ s1 data address = 0x7ff7bfeff451
 </pre></td><td class="code"><pre><span class="c1">//12個月</span>
 <span class="k">const</span> <span class="kt">int</span> <span class="n">MAX_MONTH</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">mon_arr</span><span class="p">[</span><span class="n">MAX_MONTH</span><span class="p">]</span> <span class="o">=</span>
-    <span class="p">{</span><span class="s">"January"</span><span class="p">,</span><span class="s">"February"</span><span class="p">,</span><span class="s">"March"</span><span class="p">,</span><span class="s">"April"</span><span class="p">,</span><span class="s">"May"</span><span class="p">,</span><span class="s">"June"</span><span class="p">,</span><span class="s">"July"</span><span class="p">,</span><span class="s">"August"</span><span class="p">,</span><span class="s">"September"</span><span class="p">,</span><span class="s">"October"</span><span class="p">,</span><span class="s">"November"</span><span class="p">,</span><span class="s">"December"</span><span class="p">};</span>
-    <span class="kt">int</span> <span class="n">month</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入數字月份(1~12):"</span><span class="p">;</span>
-    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">month</span><span class="p">;</span>
-    <span class="c1">//陣列索引介於0..11，所以要把month-1</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mon_arr</span><span class="p">[</span><span class="n">month</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">mon_arr</span><span class="p">[</span><span class="n">MAX_MONTH</span><span class="p">]</span> <span class="o">=</span>
+  <span class="p">{</span><span class="s">"January"</span><span class="p">,</span><span class="s">"February"</span><span class="p">,</span><span class="s">"March"</span><span class="p">,</span><span class="s">"April"</span><span class="p">,</span><span class="s">"May"</span><span class="p">,</span><span class="s">"June"</span><span class="p">,</span><span class="s">"July"</span><span class="p">,</span><span class="s">"August"</span><span class="p">,</span><span class="s">"September"</span><span class="p">,</span><span class="s">"October"</span><span class="p">,</span><span class="s">"November"</span><span class="p">,</span><span class="s">"December"</span><span class="p">};</span>
+  <span class="kt">int</span> <span class="n">month</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入數字月份(1~12):"</span><span class="p">;</span>
+  <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">month</span><span class="p">;</span>
+  <span class="c1">//陣列索引介於0..11，所以要把month-1</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mon_arr</span><span class="p">[</span><span class="n">month</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1843,10 +1843,10 @@ January
 2
 3
 4
-</pre></td><td class="code"><pre>    <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">name</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">name</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -2046,7 +2046,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

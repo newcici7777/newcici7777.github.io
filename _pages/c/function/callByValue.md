@@ -27,15 +27,15 @@ Prerequisites:
 {% highlight c++ linenos %}
 //r為參數
 void setX(int r){
-    r = 1000;
+  r = 1000;
 }
 int main() {
-    int x = 10;
-    cout << "Before x = " << x << endl;
-    //x為引數
-    setX(x);
-    cout << "After x = " << x << endl;
-    return 0;
+  int x = 10;
+  cout << "Before x = " << x << endl;
+  //x為引數
+  setX(x);
+  cout << "After x = " << x << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -57,13 +57,13 @@ After x = 10
 
 {% highlight c++ linenos %}
 int getValue(){
-    int r = 1000;
-    return r;
+  int r = 1000;
+  return r;
 }
 int main() {
-    int r = getValue();
-    cout << "r = " << r << endl;
-    return 0;
+  int r = getValue();
+  cout << "r = " << r << endl;
+  return 0;
 }
 {% endhighlight %}
 

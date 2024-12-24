@@ -12,20 +12,20 @@ keywords: c++, format
 名稱要有描述性；少用縮寫。
 
 {% highlight c++ linenos %}
-int price_count_reader;    // 無縮寫。
-int num_errors;            // "num" 是很常見的縮寫字。
+int price_count_reader;  // 無縮寫。
+int num_errors;      // "num" 是很常見的縮寫字。
 int num_dns_connections;   // 大部份的人都知道 "DNS" 是啥。
-int lstm_size;             // "LSTM" 在機器學習領域中是個常用的縮寫字。
+int lstm_size;       // "LSTM" 在機器學習領域中是個常用的縮寫字。
 {% endhighlight %}
 
 {% highlight c++ linenos %}
-int n;                     // 毫無意義。
-int nerr;                  // 模稜兩可的縮寫。
-int n_comp_conns;          // 模稜兩可的縮寫。
-int wgc_connections;       // 只有貴團隊知道是啥意思。
-int pc_reader;             // "pc" 有太多可能的解釋了。
-int cstmr_id;              // 有刪減若干字母。
-FooBarRequestInfo fbri;    // 根本不是個單字。
+int n;           // 毫無意義。
+int nerr;          // 模稜兩可的縮寫。
+int n_comp_conns;      // 模稜兩可的縮寫。
+int wgc_connections;     // 只有貴團隊知道是啥意思。
+int pc_reader;       // "pc" 有太多可能的解釋了。
+int cstmr_id;        // 有刪減若干字母。
+FooBarRequestInfo fbri;  // 根本不是個單字。
 {% endhighlight %}
 
 ### 檔案名
@@ -49,11 +49,11 @@ string tablename;   // 可 - 全小寫。
 小寫變數名，最後加底線_
 {% highlight c++ linenos %}
 class TableInfo {
-    ...
-    private:
-    string table_name_;  // 可 - 字尾加底線。
-    string tablename_;   // 可。
-    static Pool<TableInfo>* pool_;  // 可。
+  ...
+  private:
+  string table_name_;  // 可 - 字尾加底線。
+  string tablename_;   // 可。
+  static Pool<TableInfo>* pool_;  // 可。
 };
 {% endhighlight %}
 
@@ -63,8 +63,8 @@ class TableInfo {
 
 {% highlight c++ linenos %}
 struct UrlTableProperties {
-    string name;
-    int num_entries;
+  string name;
+  int num_entries;
 }
 {% endhighlight %}
 
@@ -193,9 +193,9 @@ if (condition) {  // 可 - IF 後面和 { 前面都留有適當的空格。
 
 #### 錯誤方式
 {% highlight c++ linenos %}
-if(condition)     // 差 - IF 後面沒空格。
+if (condition)   // 差 - IF 後面沒空格。
 if (condition){   // 差 - { 前面沒空格。
-if(condition){    // 前面兩項錯誤犯好犯滿。
+if (condition){  // 前面兩項錯誤犯好犯滿。
 {% endhighlight %}
 
 #### if,else if,else
@@ -275,8 +275,8 @@ for () {....}中的內縮仍是2個空白
 int main() {
   vector<int> v = {1, 2, 3, 4, 5};
   for (auto it = v.crbegin(); it != v.crend(); it++) {
-    //內縮2個空白
-    cout << *it << ", ";
+  //內縮2個空白
+  cout << *it << ", ";
   }
   return 0;
 }
@@ -330,8 +330,8 @@ class callbackObj {
  public://與最邊緣留1個空白
   //與public留1個空白，與最邊緣留2個空白
   void print(const string& msg) {
-    //與void留2個空白，與最邊緣留4個空白
-    cout << msg << endl;
+  //與void留2個空白，與最邊緣留4個空白
+  cout << msg << endl;
   }
 };
 {% endhighlight %}
@@ -364,17 +364,17 @@ if (.....)
 #### 註解對齊
 
 {% highlight c++ linenos %}
-DoSomething();                  // 把註解放這裡才能和下一行對齊。
+DoSomething();          // 把註解放這裡才能和下一行對齊。
 DoSomethingElseThatIsLonger();  // 註解和程式碼之間要有兩個空格。  
 { // 當開啟一個新的作用域時，可以只放一個空隔，
   // 這樣接下來的註解和程式碼都可以和前面那行對齊。
   DoSomethingElse();  // 一般來說行註解前面都需要兩個空隔。
 }
 std::vector<string> list{
-                    // 在條列初始化中，用來說明下一個元素的註解...
-                    "First item",
-                    // .. 必須要妥善對齊。
-                    "Second item"};
+          // 在條列初始化中，用來說明下一個元素的註解...
+          "First item",
+          // .. 必須要妥善對齊。
+          "Second item"};
 {% endhighlight %}
 
 ## 斷行
@@ -392,16 +392,16 @@ std::vector<string> list{
 {% highlight c++ linenos %}
 // 若是你不得不斷行。
 SomeFunction(
-    {"assume a zero-length name before {"},
-    some_other_function_parameter);
+  {"assume a zero-length name before {"},
+  some_other_function_parameter);
 SomeType variable{
-    "This is too long to fit all in one line"};
+  "This is too long to fit all in one line"};
 MyType m = {  // 你也可以在 { 前斷行。
-    superlongvariablename1,
-    superlongvariablename2,
-    {short, interior, list},
-    {interiorwrappinglist,
-     interiorwrappinglist2}};
+  superlongvariablename1,
+  superlongvariablename2,
+  {short, interior, list},
+  {interiorwrappinglist,
+   interiorwrappinglist2}};
 {% endhighlight %}
 
 ## 關係運算子放在行尾
@@ -412,18 +412,18 @@ MyType m = {  // 你也可以在 { 前斷行。
 
 {% highlight c++ linenos %}
 string time_str =
-    to_string(tmnow.tm_year + 1900) + "/" +
-    to_string(tmnow.tm_mon + 1) + "/" +
-    to_string(tmnow.tm_mday) + "/" +
-    to_string(tmnow.tm_hour) + ":" +
-    to_string(tmnow.tm_min) + ":" +
-    to_string(tmnow.tm_sec);
+  to_string(tmnow.tm_year + 1900) + "/" +
+  to_string(tmnow.tm_mon + 1) + "/" +
+  to_string(tmnow.tm_mday) + "/" +
+  to_string(tmnow.tm_hour) + ":" +
+  to_string(tmnow.tm_min) + ":" +
+  to_string(tmnow.tm_sec);
 {% endhighlight %}
 
 {% highlight c++ linenos %}
 if (this_one_thing > this_other_thing &&
-    a_third_thing == a_fourth_thing &&
-    yet_another & last_one) {
+  a_third_thing == a_fourth_thing &&
+  yet_another & last_one) {
   ...
 }
 {% endhighlight %}
@@ -440,22 +440,22 @@ MyClass::MyClass(int var) : some_var_(var) {
 // 如果一行塞不下建構式名稱列和初值列的話，你必須
 // 在分號前換行，並且縮排 4 個空格
 MyClass::MyClass(int var)
-    : some_var_(var), some_other_var_(var + 1) {
+  : some_var_(var), some_other_var_(var + 1) {
   DoSomething();
 }
 
 // 若是初值列得分成好幾行的話，每個成員各占一行，
 // 排列整齊：
 MyClass::MyClass(int var)
-    : some_var_(var),             // 4 格縮排
-      some_other_var_(var + 1) {  // 對齊前一行
+  : some_var_(var),       // 4 格縮排
+    some_other_var_(var + 1) {  // 對齊前一行
   DoSomething();
 }
 
 // 和其他程式碼區塊一樣，如果塞得下的話，右大括號可以
 // 和左大括號放在同一行。
 MyClass::MyClass(int var)
-    : some_var_(var) {}
+  : some_var_(var) {}
 {% endhighlight %}
 
 ## 指標與reference

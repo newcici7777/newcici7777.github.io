@@ -13,13 +13,13 @@ l-value參考指向變數
 
 {% highlight c++ linenos %}
 int main() {
-    int i = 10;
-    int& l_ref = i;
-    cout << "l-value ref = " << l_ref << endl;
-    cout << "=== modify ref === " << endl;
-    l_ref = 55;
-    cout << "l-value ref = " << l_ref << endl;
-    return 0;
+  int i = 10;
+  int& l_ref = i;
+  cout << "l-value ref = " << l_ref << endl;
+  cout << "=== modify ref === " << endl;
+  l_ref = 55;
+  cout << "l-value ref = " << l_ref << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -43,12 +43,12 @@ r-value參考指向數字
 
 {% highlight c++ linenos %}
 int main() {
-    int&& r_ref = 100;
-    cout << "r-value ref = " << r_ref << endl;
-    cout << "=== modify ref === " << endl;
-    r_ref = 1000;
-    cout << "r-value ref = " << r_ref << endl;
-    return 0;
+  int&& r_ref = 100;
+  cout << "r-value ref = " << r_ref << endl;
+  cout << "=== modify ref === " << endl;
+  r_ref = 1000;
+  cout << "r-value ref = " << r_ref << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -63,9 +63,9 @@ r-value ref = 1000
 
 {% highlight c++ linenos %}
 int main() {
-    int&& r = 10;
-    cout << "r address = " << &r << endl;
-    return 0;
+  int&& r = 10;
+  cout << "r address = " << &r << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -77,11 +77,11 @@ r address = 0x7ff7bfeff45c
 右值取名字後，`名字`就變成左值，可以修改值。
 {% highlight c++ linenos %}
 int main() {
-    //r-value
-    int&& r = 10;
-    cout << "Before r = " << r << endl;
-    r = 20;
-    cout << "After r = " << r << endl;
+  //r-value
+  int&& r = 10;
+  cout << "Before r = " << r << endl;
+  r = 20;
+  cout << "After r = " << r << endl;
 {% endhighlight %}
 ```
 Before r = 10
@@ -94,11 +94,11 @@ After r = 20
 
 {% highlight c++ linenos %}
 int main() {
-    //l_val是l-value
-    int l_val = 10;
-    //定義右值參考
-    int&& r_val_ref = l_val;
-    return 0;
+  //l_val是l-value
+  int l_val = 10;
+  //定義右值參考
+  int&& r_val_ref = l_val;
+  return 0;
 }
 {% endhighlight %}
 
@@ -108,9 +108,9 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    // 10 is r-value
-    int& l_val_ref = 10;
-    return 0;
+  // 10 is r-value
+  int& l_val_ref = 10;
+  return 0;
 }
 {% endhighlight %}
 
@@ -120,14 +120,14 @@ int main() {
 #include <iostream>
 using namespace std;
 void func(int& l_ref) {
-    l_ref = 20;
+  l_ref = 20;
 }
 int main() {
-    int i = 10;
-    cout << "before i = " << i << endl;
-    func(i);
-    cout << "after i = " << i << endl;
-    return 0;
+  int i = 10;
+  cout << "before i = " << i << endl;
+  func(i);
+  cout << "after i = " << i << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -141,11 +141,11 @@ after i = 20
 #include <iostream>
 using namespace std;
 void func(int&& r_ref) {
-    cout << "r-value = " << r_ref << endl;
+  cout << "r-value = " << r_ref << endl;
 }
 int main() {
-    func(1000);
-    return 0;
+  func(1000);
+  return 0;
 }
 {% endhighlight %}
 
@@ -159,11 +159,11 @@ r-value = 1000
 
 {% highlight c++ linenos %}
 void func1(int&& r_ref) {
-    cout << "r-value = " << r_ref << endl;
+  cout << "r-value = " << r_ref << endl;
 }
 int main() {
-    func1('B');
-    return 0;
+  func1('B');
+  return 0;
 }
 {% endhighlight %}
 
@@ -187,24 +187,24 @@ Student&& s1 = getStudent1();
 using namespace std;
 class Student {
 public:
-    string name;
+  string name;
 };
 Student getStudent1() {
-    Student s;
-    s.name = "Bill";
-    return s;
+  Student s;
+  s.name = "Bill";
+  return s;
 }
 Student getStudent2() {
-    //臨時物件
-    return Student();
+  //臨時物件
+  return Student();
 }
 int main() {
-    Student&& s1 = getStudent1();
-    cout << "s1 name = " << s1.name << endl;
-    Student&& s2 = getStudent2();
-    s2.name = "Mary";
-    cout << "s2 name = " << s2.name << endl;
-    return 0;
+  Student&& s1 = getStudent1();
+  cout << "s1 name = " << s1.name << endl;
+  Student&& s2 = getStudent2();
+  s2.name = "Mary";
+  cout << "s2 name = " << s2.name << endl;
+  return 0;
 }
 {% endhighlight %}
 ```

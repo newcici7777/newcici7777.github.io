@@ -33,33 +33,33 @@ delete[] 指標變數;
 #include <iostream>
 using namespace std;
 int main() {
-    //分配連續100個int的記憶體空間
-    int *arr_p = new int[100];
-    cout << "使用陣列索引:" << endl;
-    //使用索引修改陣列的元素
-    for(int i = 0; i < 100; i++) {
-        arr_p[i] = i;
-    }
-    //使用索引印出陣列的元素
-    for(int i = 0; i < 100; i++) {
-        cout << arr_p[i] << ",";
-    }
-    cout << endl;
-    cout << "使用指標:" << endl;
-    //使用指標修改陣列的元素
-    for(int i = 0; i < 100; i++) {
-        *(arr_p + i) = i + 100;
-    }
-    //使用指標印出陣列的元素
-    for(int i = 0; i < 100; i++) {
-        cout << *(arr_p + i) << ",";
-    }
-    cout << endl;
-    //陣列記憶體回收
-    delete[] arr_p;
-    //指標設為nullptr代表不指向任何記憶體位址
-    arr_p = nullptr;
-    return 0;
+  //分配連續100個int的記憶體空間
+  int *arr_p = new int[100];
+  cout << "使用陣列索引:" << endl;
+  //使用索引修改陣列的元素
+  for (int i = 0; i < 100; i++) {
+    arr_p[i] = i;
+  }
+  //使用索引印出陣列的元素
+  for (int i = 0; i < 100; i++) {
+    cout << arr_p[i] << ",";
+  }
+  cout << endl;
+  cout << "使用指標:" << endl;
+  //使用指標修改陣列的元素
+  for (int i = 0; i < 100; i++) {
+    *(arr_p + i) = i + 100;
+  }
+  //使用指標印出陣列的元素
+  for (int i = 0; i < 100; i++) {
+    cout << *(arr_p + i) << ",";
+  }
+  cout << endl;
+  //陣列記憶體回收
+  delete[] arr_p;
+  //指標設為nullptr代表不指向任何記憶體位址
+  arr_p = nullptr;
+  return 0;
 }
 {% endhighlight %}
 
@@ -90,21 +90,21 @@ int *arr_p2 = new int[3]{1,2,3}; //1,2,3
 #include <iostream>
 using namespace std;
 int main() {
-    //全設0
-    int *arr_p1 = new int[3](); // 0,0,0
-    //設初始值
-    int *arr_p2 = new int[3]{1,2,3}; //1,2,3
-    //用索引取值
-    cout << arr_p1[0] << "," << arr_p1[1] << "," << arr_p1[2] <<  endl;
-    //用指標取值
-    cout << *(arr_p2 + 0) << "," << *(arr_p2 + 1) << "," << *(arr_p2 + 2) <<  endl;
-    //記憶體回收
-    delete [] arr_p1;
-    delete [] arr_p2;
-    //指標設為不指向任何記憶體位址
-    arr_p1 = nullptr;
-    arr_p2 = nullptr;
-    return 0;
+  //全設0
+  int *arr_p1 = new int[3](); // 0,0,0
+  //設初始值
+  int *arr_p2 = new int[3]{1,2,3}; //1,2,3
+  //用索引取值
+  cout << arr_p1[0] << "," << arr_p1[1] << "," << arr_p1[2] <<  endl;
+  //用指標取值
+  cout << *(arr_p2 + 0) << "," << *(arr_p2 + 1) << "," << *(arr_p2 + 2) <<  endl;
+  //記憶體回收
+  delete [] arr_p1;
+  delete [] arr_p2;
+  //指標設為不指向任何記憶體位址
+  arr_p1 = nullptr;
+  arr_p2 = nullptr;
+  return 0;
 }
 {% endhighlight %}
 

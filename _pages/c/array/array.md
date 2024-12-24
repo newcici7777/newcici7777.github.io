@@ -12,11 +12,11 @@ keywords: c++, array
 
 {% highlight c++ linenos %}
 int main() {
-    int arr[10] = {0,1,2,3};
-    for(int i = 0; i < sizeof(arr)/sizeof(int); i++) {
-        cout << "arr[" << i << "] = " << arr[i] << endl;
-    }
-    return 0;
+  int arr[10] = {0,1,2,3};
+  for (int i = 0; i < sizeof(arr)/sizeof(int); i++) {
+    cout << "arr[" << i << "] = " << arr[i] << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -47,11 +47,11 @@ using namespace std;
 //使用常數
 const int ARR_MAX = 10;
 int main() {
-    int arr[ARR_MAX] = {0,1,2,3};
-    for(int i = 0; i < sizeof(arr)/sizeof(int); i++) {
-        cout << "arr[" << i << "] = " << arr[i] << endl;
-    }
-    return 0;
+  int arr[ARR_MAX] = {0,1,2,3};
+  for (int i = 0; i < sizeof(arr)/sizeof(int); i++) {
+    cout << "arr[" << i << "] = " << arr[i] << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -73,15 +73,15 @@ arr[9] = 0
 #include <iostream>
 using namespace std;
 int main() {
-    double d = 10;
-    //使用運算式設定陣列長度
-    int arr[sizeof(d)/2] = {0,1,2,3};
-    int size = sizeof(arr)/sizeof(int);
-    cout << "arr size = " << size << endl;
-    for(int i = 0; i < size; i++) {
-        cout << "arr[" << i << "] = " << arr[i] << endl;
-    }
-    return 0;
+  double d = 10;
+  //使用運算式設定陣列長度
+  int arr[sizeof(d)/2] = {0,1,2,3};
+  int size = sizeof(arr)/sizeof(int);
+  cout << "arr size = " << size << endl;
+  for (int i = 0; i < size; i++) {
+    cout << "arr[" << i << "] = " << arr[i] << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -114,16 +114,16 @@ sizeof(資料型態) 是取得資料資料型態占的記憶體大小，如int�
 #include <iostream>
 using namespace std;
 int main() {
-    int arr[10] = {0};
-    for(int i = 0; i < sizeof(arr)/sizeof(int); i++) {
-        cout << "arr[" << i << "] = " << arr[i] << endl;
-    }
-    
-    int arr1[10] = {};
-    for(int i = 0; i < sizeof(arr1)/sizeof(int); i++) {
-        cout << "arr1[" << i << "] = " << arr1[i] << endl;
-    }
-    return 0;
+  int arr[10] = {0};
+  for (int i = 0; i < sizeof(arr)/sizeof(int); i++) {
+    cout << "arr[" << i << "] = " << arr[i] << endl;
+  }
+  
+  int arr1[10] = {};
+  for (int i = 0; i < sizeof(arr1)/sizeof(int); i++) {
+    cout << "arr1[" << i << "] = " << arr1[i] << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -165,15 +165,15 @@ void* memset(void *s, int c, size_t n);
 #include <iostream>
 using namespace std;
 int main() {
-    int arr[10] = {1,2,3,4,5,6,7,8,9};
-    for(int i = 0; i < sizeof(arr)/sizeof(int); i++) {
-        cout << "arr[" << i << "] = " << arr[i] << endl;
-    }
-    memset(arr, 0, sizeof(arr));
-    for(int i = 0; i < sizeof(arr)/sizeof(int); i++) {
-        cout << "arr[" << i << "] = " << arr[i] << endl;
-    }
-    return 0;
+  int arr[10] = {1,2,3,4,5,6,7,8,9};
+  for (int i = 0; i < sizeof(arr)/sizeof(int); i++) {
+    cout << "arr[" << i << "] = " << arr[i] << endl;
+  }
+  memset(arr, 0, sizeof(arr));
+  for (int i = 0; i < sizeof(arr)/sizeof(int); i++) {
+    cout << "arr[" << i << "] = " << arr[i] << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -217,18 +217,18 @@ void* memcpy(void* dest, const void* src, size_t n)
 using namespace std;
 int main() {
 	//來源陣列
-    int arr[10] = {1,2,3,4,5,6,7,8,9,10};
-    for(int i = 0; i < sizeof(arr)/sizeof(int); i++) {
-        cout << "arr[" << i << "] = " << arr[i] << endl;
-    }
+  int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+  for (int i = 0; i < sizeof(arr)/sizeof(int); i++) {
+    cout << "arr[" << i << "] = " << arr[i] << endl;
+  }
 
-    //目標陣列
-    int arr1[sizeof(arr) / sizeof(int)];
-    memcpy(arr1, arr, sizeof(arr));
-    for(int i = 0; i < sizeof(arr1)/sizeof(int); i++) {
-        cout << "arr1[" << i << "] = " << arr1[i] << endl;
-    }
-    return 0;
+  //目標陣列
+  int arr1[sizeof(arr) / sizeof(int)];
+  memcpy(arr1, arr, sizeof(arr));
+  for (int i = 0; i < sizeof(arr1)/sizeof(int); i++) {
+    cout << "arr1[" << i << "] = " << arr1[i] << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -260,22 +260,22 @@ arr1[9] = 10
 #include <iostream>
 using namespace std;
 int main() {
-    //來源陣列
-    int arr[10] = {1,2,3,4,5,6,7,8,9,10};
-    for(int i = 0; i < sizeof(arr)/sizeof(int); i++) {
-        cout << "arr[" << i << "] = " << arr[i] << endl;
-    }
+  //來源陣列
+  int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+  for (int i = 0; i < sizeof(arr)/sizeof(int); i++) {
+    cout << "arr[" << i << "] = " << arr[i] << endl;
+  }
 
-    //目標陣列
-    //元素全初始化為整數0
-    int arr1[sizeof(arr) / sizeof(int)] = {0};
-    //只複製arr陣列8byte的元素
-    //(8byte/每個元素是4byte)=2，只複製2個元素
-    memcpy(arr1, arr, 8);
-    for(int i = 0; i < sizeof(arr1)/sizeof(int); i++) {
-        cout << "arr1[" << i << "] = " << arr1[i] << endl;
-    }
-    return 0;
+  //目標陣列
+  //元素全初始化為整數0
+  int arr1[sizeof(arr) / sizeof(int)] = {0};
+  //只複製arr陣列8byte的元素
+  //(8byte/每個元素是4byte)=2，只複製2個元素
+  memcpy(arr1, arr, 8);
+  for (int i = 0; i < sizeof(arr1)/sizeof(int); i++) {
+    cout << "arr1[" << i << "] = " << arr1[i] << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 

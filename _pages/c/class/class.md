@@ -13,13 +13,13 @@ public與private與其它權限，可以在類別中出現很多次，以下publ
 {% highlight c++ linenos %}
 class Student {
 public:
-    char name[50];
+  char name[50];
 private:
-    char address[100];
+  char address[100];
 public:
-    int age;
+  int age;
 private:
-    char father[50];
+  char father[50];
 };
 {% endhighlight %}
 
@@ -33,19 +33,19 @@ private:
 {% highlight c++ linenos %}
 class Student {
 public:
-    string m_name;
+  string m_name;
 public:
-    Student() {
-    }
-    void print() {
-        cout << "name: " << m_name << endl;
-    }
+  Student() {
+  }
+  void print() {
+    cout << "name: " << m_name << endl;
+  }
 };
 int main() {
-    Student s;
-    s.m_name = "Bill";
-    s.print();
-    return 0;
+  Student s;
+  s.m_name = "Bill";
+  s.print();
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -59,22 +59,22 @@ name: Bill
 {% highlight c++ linenos %}
 class Student {
 public:
-    string m_name;
+  string m_name;
 public:
-    Student() {
-    }
-    void print() {
-        cout << "name: " << m_name << endl;
-    }
+  Student() {
+  }
+  void print() {
+    cout << "name: " << m_name << endl;
+  }
 };
 void func1(const Student& s) {
-    cout << s.m_name << endl;
+  cout << s.m_name << endl;
 }
 int main() {
-    Student s;
-    s.m_name = "Bill";
-    func1(s);
-    return 0;
+  Student s;
+  s.m_name = "Bill";
+  func1(s);
+  return 0;
 }
 {% endhighlight %}
 
@@ -93,10 +93,10 @@ Bill
 {% highlight c++ linenos %}
 class Student {
 public:
-    char m_name[50];
-    //函式自動變為內嵌函式
-    void print() {
-    }
+  char m_name[50];
+  //函式自動變為內嵌函式
+  void print() {
+  }
 };
 {% endhighlight %}
 
@@ -114,18 +114,18 @@ print()成員函式程式碼在類別之外定義，定義方式如下。
 {% highlight c++ linenos %}
 class Student {
 public:
-    char m_name[50];
-    //宣告函式
-    void print();
+  char m_name[50];
+  //宣告函式
+  void print();
 };
 //類別外部定義
 void Student::print() {
-    cout << "test" << endl;
+  cout << "test" << endl;
 }
 int main() {
-    Student student;
-    student.print();
-    return 0;
+  Student student;
+  student.print();
+  return 0;
 }
 {% endhighlight %}
 ```

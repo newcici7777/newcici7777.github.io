@@ -1248,7 +1248,7 @@
 </pre></td><td class="code"><pre><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T1</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">T2</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">T3</span><span class="p">&gt;</span>
 <span class="n">T1</span> <span class="nf">findif</span><span class="p">(</span><span class="k">const</span> <span class="n">T1</span> <span class="n">first</span><span class="p">,</span> <span class="k">const</span> <span class="n">T1</span> <span class="n">last</span><span class="p">,</span> <span class="n">T2</span> <span class="n">callback</span><span class="p">,</span> <span class="n">T3</span> <span class="n">search_val</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">first</span><span class="p">;</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">last</span><span class="p">;</span> <span class="n">it</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">callback</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">,</span> <span class="n">search_val</span><span class="p">)</span> <span class="o">==</span> <span class="nb">true</span><span class="p">)</span> <span class="k">return</span> <span class="n">it</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">callback</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">,</span> <span class="n">search_val</span><span class="p">)</span> <span class="o">==</span> <span class="nb">true</span><span class="p">)</span> <span class="k">return</span> <span class="n">it</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="k">return</span> <span class="n">last</span><span class="p">;</span>
 <span class="p">}</span>
@@ -1287,7 +1287,7 @@
 <span class="k">class</span> <span class="nc">Callback</span> <span class="p">{</span>
  <span class="nl">public:</span>
   <span class="kt">bool</span> <span class="k">operator</span><span class="p">()(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">,</span> <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">search_val</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">msg</span> <span class="o">==</span> <span class="n">search_val</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">msg</span> <span class="o">==</span> <span class="n">search_val</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -1350,13 +1350,13 @@
 <span class="k">class</span> <span class="nc">Callback</span> <span class="p">{</span>
  <span class="nl">public:</span>
   <span class="kt">bool</span> <span class="k">operator</span><span class="p">()(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">,</span> <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">search_val</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">msg</span> <span class="o">==</span> <span class="n">search_val</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">msg</span> <span class="o">==</span> <span class="n">search_val</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">};</span>
 <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T1</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">T2</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">T3</span><span class="p">&gt;</span>
 <span class="n">T1</span> <span class="n">findif</span><span class="p">(</span><span class="k">const</span> <span class="n">T1</span> <span class="n">first</span><span class="p">,</span> <span class="k">const</span> <span class="n">T1</span> <span class="n">last</span><span class="p">,</span> <span class="n">T2</span> <span class="n">callback</span><span class="p">,</span> <span class="n">T3</span> <span class="n">search_val</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">first</span><span class="p">;</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">last</span><span class="p">;</span> <span class="n">it</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">callback</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">,</span> <span class="n">search_val</span><span class="p">)</span> <span class="o">==</span> <span class="nb">true</span><span class="p">)</span> <span class="k">return</span> <span class="n">it</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">callback</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">,</span> <span class="n">search_val</span><span class="p">)</span> <span class="o">==</span> <span class="nb">true</span><span class="p">)</span> <span class="k">return</span> <span class="n">it</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="k">return</span> <span class="n">last</span><span class="p">;</span>
 <span class="p">}</span>
@@ -1419,13 +1419,13 @@
   <span class="n">T</span> <span class="n">search_val</span><span class="p">;</span>
   <span class="n">Callback</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">search_val</span><span class="p">)</span><span class="o">:</span><span class="n">search_val</span><span class="p">(</span><span class="n">search_val</span><span class="p">)</span> <span class="p">{}</span>
   <span class="kt">bool</span> <span class="k">operator</span><span class="p">()(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">msg</span> <span class="o">==</span> <span class="n">search_val</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">msg</span> <span class="o">==</span> <span class="n">search_val</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">};</span>
 <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T1</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">T2</span><span class="p">&gt;</span>
 <span class="n">T1</span> <span class="n">findif</span><span class="p">(</span><span class="k">const</span> <span class="n">T1</span> <span class="n">first</span><span class="p">,</span> <span class="k">const</span> <span class="n">T1</span> <span class="n">last</span><span class="p">,</span> <span class="n">T2</span> <span class="n">callback</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">first</span><span class="p">;</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">last</span><span class="p">;</span> <span class="n">it</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">callback</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">)</span> <span class="o">==</span> <span class="nb">true</span><span class="p">)</span> <span class="k">return</span> <span class="n">it</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">callback</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">)</span> <span class="o">==</span> <span class="nb">true</span><span class="p">)</span> <span class="k">return</span> <span class="n">it</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="k">return</span> <span class="n">last</span><span class="p">;</span>
 <span class="p">}</span>
@@ -1635,7 +1635,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

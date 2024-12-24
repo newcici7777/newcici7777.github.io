@@ -26,7 +26,7 @@ void func1(int* param1) {
 
 {% highlight c++ linenos %}
 void func1(int* param1) {
-    cout << "param1=" << *param1 << endl;
+  cout << "param1=" << *param1 << endl;
 }
 {% endhighlight %}
 
@@ -50,18 +50,18 @@ param1=10
 {% highlight c++ linenos %}
 //函式的參數是指標，代表參數是位址
 void func1(int* param1) {
-    //透過取值運算子*,取出位址存放的內容
-    cout << "param1=" << *param1 << endl;
-    //使用`*指標 = 修改內容`，修改指標的內容
-    *param1 = 20;
+  //透過取值運算子*,取出位址存放的內容
+  cout << "param1=" << *param1 << endl;
+  //使用`*指標 = 修改內容`，修改指標的內容
+  *param1 = 20;
 }
 int main() {
-    int var1 = 10;
-    cout << "修改前 var1 =" << var1 << endl;
-    //使用取位址運算子&，取出var1變數的記憶體開始位址，將位址作為引數Argument傳進函式fun1()
-    func1(&var1);
-    cout << "修改後 var1 =" << var1 << endl;
-    return 0;
+  int var1 = 10;
+  cout << "修改前 var1 =" << var1 << endl;
+  //使用取位址運算子&，取出var1變數的記憶體開始位址，將位址作為引數Argument傳進函式fun1()
+  func1(&var1);
+  cout << "修改後 var1 =" << var1 << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -78,13 +78,13 @@ param1=10
 
 {% highlight c++ linenos %}
 void func1(int* param1) {
-    cout << "param1=" << *param1 << endl;
+  cout << "param1=" << *param1 << endl;
 }
 int main() {
-    int var1 = 10;
-    int* p = &var1;
-    func1(p);
-    return 0;
+  int var1 = 10;
+  int* p = &var1;
+  func1(p);
+  return 0;
 }
 {% endhighlight %}
 
@@ -105,64 +105,64 @@ using namespace std;
 //宣告Student類別
 class Student {
 public:
-    //Student建構式，將參數設給私有成員name, mathScore, engScore, historyScore
-    Student(string name, double mathScore, double engScore, double historyScore)
-    :name(name),mathScore(mathScore),engScore(engScore),historyScore(historyScore){}
+  //Student建構式，將參數設給私有成員name, mathScore, engScore, historyScore
+  Student(string name, double mathScore, double engScore, double historyScore)
+  :name(name),mathScore(mathScore),engScore(engScore),historyScore(historyScore){}
 
-    //取出name, mathScore, engScore, historyScore公有方法
-    string getName(){
-        return name;
-    }
-    double getMathScore(){
-        return mathScore;
-    }
-    double getEngScore(){
-        return engScore;
-    }
-    double getHistoryScore(){
-        return historyScore;
-    }
+  //取出name, mathScore, engScore, historyScore公有方法
+  string getName(){
+    return name;
+  }
+  double getMathScore(){
+    return mathScore;
+  }
+  double getEngScore(){
+    return engScore;
+  }
+  double getHistoryScore(){
+    return historyScore;
+  }
 private:
-    //私有成員屬性
-    string name;
-    double mathScore;
-    double engScore;
-    double historyScore;
+  //私有成員屬性
+  string name;
+  double mathScore;
+  double engScore;
+  double historyScore;
 };
 
 //宣告函式，參數為Student陣列，陣列大小，maxMax指標,engMax指標,historyMax指標
 void getMax(Student studentArr[], int arrSize, double* mathMax, double* engMax, double* historyMax){
-    for(int i = 0; i < arrSize; i++) {
-        //找出數學 英文 歷史最大的分數
-        if(studentArr[i].getMathScore() > *mathMax)
-            *mathMax = studentArr[i].getMathScore();
-        if(studentArr[i].getEngScore() > *engMax)
-            *engMax = studentArr[i].getEngScore();
-        if(studentArr[i].getHistoryScore() > *historyMax)
-            *historyMax = studentArr[i].getHistoryScore();
-    }
+  for(int i = 0; i < arrSize; i++) {
+    //找出數學 英文 歷史最大的分數
+    if(studentArr[i].getMathScore() > *mathMax)
+      *mathMax = studentArr[i].getMathScore();
+    if(studentArr[i].getEngScore() > *engMax)
+      *engMax = studentArr[i].getEngScore();
+    if(studentArr[i].getHistoryScore() > *historyMax)
+      *historyMax = studentArr[i].getHistoryScore();
+  }
 }
 
 int main() {
-    //建立3個學生物件，利用名字,數學英文歷史成績建立物件
-    Student studentArr[] =
-    {Student("Mary", 50, 30, 100),
-     Student("Bill", 70, 80, 90),
-     Student("Lisa", 20, 99, 10)};
+  //建立3個學生物件，利用名字,數學英文歷史成績建立物件
+  Student studentArr[] =
+  {Student("Mary", 50, 30, 100),
+   Student("Bill", 70, 80, 90),
+   Student("Lisa", 20, 99, 10)};
 
-    //宣告三個存最大數學 英文 歷史成績的指標
-    double* mathMax = new double(0);
-    double* engMax = new double(0);
-    double* historyMax = new double(0);
+  //宣告三個存最大數學 英文 歷史成績的指標
+  double* mathMax = new double(0);
+  double* engMax = new double(0);
+  double* historyMax = new double(0);
 
-    //將Student陣列，陣列大小，最大數學 英文 歷史成績的指標傳入getMax函式
-    compare(studentArr, 3, mathMax, engMax, historyMax);
+  //將Student陣列，陣列大小，最大數學 英文 歷史成績的指標傳入getMax函式
+  compare(studentArr, 3, mathMax, engMax, historyMax);
 
-    //印出各科最大分數
-    cout << "mathMax = " << *mathMax << endl;
-    cout << "mathEng = " << *engMax << endl;
-    cout << "mathHistory = " << *historyMax << endl;
-    return 0;
+  //印出各科最大分數
+  cout << "mathMax = " << *mathMax << endl;
+  cout << "mathEng = " << *engMax << endl;
+  cout << "mathHistory = " << *historyMax << endl;
+  return 0;
 }
 {% endhighlight %}
 

@@ -16,16 +16,16 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 
 {% highlight c++ linenos %}
 int main() {
-    int var1 = 10;
-    //將var1的位址給指標變數p
-    int const * p = &var1;
+  int var1 = 10;
+  //將var1的位址給指標變數p
+  int const * p = &var1;
 
-    //p指標位址中的內容是常數，常數不能修改，所以不能使用*指標 = 修改的內容
-    //*p = 11;
-    
-    //印出var1的值與p指標位址中的值
-    cout << "var1=" << var1 << ",p=" << *p << endl;
-    return 0;
+  //p指標位址中的內容是常數，常數不能修改，所以不能使用*指標 = 修改的內容
+  //*p = 11;
+  
+  //印出var1的值與p指標位址中的值
+  cout << "var1=" << var1 << ",p=" << *p << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -39,10 +39,10 @@ var1=10,p=10
 
 {% highlight c++ linenos %}
 int main() {
-    int var1 = 10;
-    const int* p = &var1;
-    cout << "var1=" << var1 << ",p=" << *p << endl;
-    return 0;
+  int var1 = 10;
+  const int* p = &var1;
+  cout << "var1=" << var1 << ",p=" << *p << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -52,15 +52,15 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    int var1 = 10;
-    int var2 = 20;
-    //將var1的位址給指標p
-    const int* p = &var1;
-    cout << "var1=" << var1 << ",p=" << *p << endl;
-    //將var2的位址給指標p
-    p = &var2;
-    cout << "var2=" << var2 << ",p=" << *p << endl;
-    return 0;
+  int var1 = 10;
+  int var2 = 20;
+  //將var1的位址給指標p
+  const int* p = &var1;
+  cout << "var1=" << var1 << ",p=" << *p << endl;
+  //將var2的位址給指標p
+  p = &var2;
+  cout << "var2=" << var2 << ",p=" << *p << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -79,15 +79,15 @@ var2=20,p=20
 
 {% highlight c++ linenos %}
 int main() {
-    int var1 = 10;
-    int var2 = 11;
-    //const右邊是指標名p，代表指標名p是常數，常數需要初始化，不能是nullptr，將var1的位址給指標p。
-    int* const p = &var1;
+  int var1 = 10;
+  int var2 = 11;
+  //const右邊是指標名p，代表指標名p是常數，常數需要初始化，不能是nullptr，將var1的位址給指標p。
+  int* const p = &var1;
 
-    //將var2的位址給指標p，會編譯失敗，因為指標p是常數，不能被修改位址。
-    //p = &var2;
-    cout << "var1=" << var1 << ",p=" << *p << endl;
-    return 0;
+  //將var2的位址給指標p，會編譯失敗，因為指標p是常數，不能被修改位址。
+  //p = &var2;
+  cout << "var1=" << var1 << ",p=" << *p << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -97,11 +97,11 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    int var1 = 10;
-    int* const p = &var1;
-    *p = 55;
-    cout << "var1=" << var1 << ",p=" << *p << endl;
-    return 0;
+  int var1 = 10;
+  int* const p = &var1;
+  *p = 55;
+  cout << "var1=" << var1 << ",p=" << *p << endl;
+  return 0;
 }
 {% endhighlight %}
 

@@ -25,16 +25,16 @@ Student(){
 {% highlight c++ linenos %}
 class Student {
 public:
-    char m_name[50];
+  char m_name[50];
 public:
-    Student() {
-        cout << "沒參數建構子" << endl;
-        memset(m_name,0,sizeof(m_name));
-    }
+  Student() {
+    cout << "沒參數建構子" << endl;
+    memset(m_name,0,sizeof(m_name));
+  }
 };
 int main() {
-    Student student;
-    return 0;
+  Student student;
+  return 0;
 }  
 {% endhighlight %}
 ```
@@ -45,29 +45,29 @@ int main() {
 {% highlight c++ linenos %}
 class Student {
 public:
-    char m_name[50];
-    int m_age = 20;
-    Student() {
-        cout << "沒參數建構子" << endl;
-        memset(m_name,0,sizeof(m_name));
-        m_age = 0;
-    }
-    Student(const char* name, const int age) {
-        cout << "有參數建構子" << endl;
-        memset(m_name,0,sizeof(m_name));
-        strcpy(m_name, name);
-        m_age = age;
-    }
-    //宣告成員函式
-    void print() {
-        cout << "name: " << m_name << endl;
-    }
+  char m_name[50];
+  int m_age = 20;
+  Student() {
+    cout << "沒參數建構子" << endl;
+    memset(m_name,0,sizeof(m_name));
+    m_age = 0;
+  }
+  Student(const char* name, const int age) {
+    cout << "有參數建構子" << endl;
+    memset(m_name,0,sizeof(m_name));
+    strcpy(m_name, name);
+    m_age = age;
+  }
+  //宣告成員函式
+  void print() {
+    cout << "name: " << m_name << endl;
+  }
 };
 int main() {
-    Student student;
-    Student student1("Bill", 20);
-    student1.print();
-    return 0;
+  Student student;
+  Student student1("Bill", 20);
+  student1.print();
+  return 0;
 }
 {% endhighlight %}
 
@@ -96,19 +96,19 @@ public:
 {% highlight c++ linenos %}
 class Student {
 public:
-    char m_name[50];
+  char m_name[50];
 public:
-    Student() {
-        cout << "建構子" << endl;
-        memset(m_name,0,sizeof(m_name));
-    }
-    ~Student() {
-        cout << "解構子" << endl;
-    }
+  Student() {
+    cout << "建構子" << endl;
+    memset(m_name,0,sizeof(m_name));
+  }
+  ~Student() {
+    cout << "解構子" << endl;
+  }
 };
 int main() {
-    Student student;
-    return 0;
+  Student student;
+  return 0;
 }
 {% endhighlight %}
 
@@ -124,18 +124,18 @@ int main() {
 {% highlight c++ linenos %}
 class Student {
 public:
-    string name;
-    Student(){};
-    //參數只有一個建構子
-    Student(const char* name) {
-        this->name = name;
-    }
+  string name;
+  Student(){};
+  //參數只有一個建構子
+  Student(const char* name) {
+    this->name = name;
+  }
 };
 int main() {
-    //使用等於(=)指派運算子呼叫只有一個參數的建構子
-    Student student = "Bill";
-    cout << "name = " << student.name << endl;
-    return 0;
+  //使用等於(=)指派運算子呼叫只有一個參數的建構子
+  Student student = "Bill";
+  cout << "name = " << student.name << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -159,22 +159,22 @@ Student student;
 {% highlight c++ linenos %}
 class Student {
 public:
-    char m_name[50];
-    int m_age = 20;
-    Student(const char* name, const int age) {
-        cout << "有參數建構子" << endl;
-        memset(m_name,0,sizeof(m_name));
-        strcpy(m_name, name);
-        m_age = age;
-    }
-    //宣告成員函式
-    void print() {
-        cout << "name: " << m_name << endl;
-    }
+  char m_name[50];
+  int m_age = 20;
+  Student(const char* name, const int age) {
+    cout << "有參數建構子" << endl;
+    memset(m_name,0,sizeof(m_name));
+    strcpy(m_name, name);
+    m_age = age;
+  }
+  //宣告成員函式
+  void print() {
+    cout << "name: " << m_name << endl;
+  }
 };
 int main() {
-    Student student;
-    return 0;
+  Student student;
+  return 0;
 } 
 {% endhighlight %}
 
@@ -185,34 +185,34 @@ int main() {
 注意！student()是小寫，是變數名，不是類別名Student
 
 ```
-    Student student();
+  Student student();
 ```
 執行結果為空，沒有印出"沒參數建構子"
 
 {% highlight c++ linenos %}
 class Student {
 public:
-    char m_name[50];
-    int m_age = 20;
-    Student() {
-        cout << "沒參數建構子" << endl;
-        memset(m_name,0,sizeof(m_name));
-        m_age = 0;
-    }
-    Student(const char* name, const int age) {
-        cout << "有參數建構子" << endl;
-        memset(m_name,0,sizeof(m_name));
-        strcpy(m_name, name);
-        m_age = age;
-    }
-    //宣告成員函式
-    void print() {
-        cout << "name: " << m_name << endl;
-    }
+  char m_name[50];
+  int m_age = 20;
+  Student() {
+    cout << "沒參數建構子" << endl;
+    memset(m_name,0,sizeof(m_name));
+    m_age = 0;
+  }
+  Student(const char* name, const int age) {
+    cout << "有參數建構子" << endl;
+    memset(m_name,0,sizeof(m_name));
+    strcpy(m_name, name);
+    m_age = age;
+  }
+  //宣告成員函式
+  void print() {
+    cout << "name: " << m_name << endl;
+  }
 };
 int main() {
-    Student student();
-    return 0;
+  Student student();
+  return 0;
 }
 {% endhighlight %}
 
@@ -224,9 +224,9 @@ student.print();
 
 {% highlight c++ linenos %}
 int main() {
-    Student student();
-    student.print();
-    return 0;
+  Student student();
+  student.print();
+  return 0;
 } 
 {% endhighlight %}
 
@@ -237,30 +237,30 @@ int main() {
 {% highlight c++ linenos %}
 class Student {
 public:
-    char m_name[50];
-    int m_age = 20;
-    Student() {
-        cout << "沒參數建構子" << endl;
-        init();
-    }
-    Student(const char* name, const int age) {
-        cout << "有參數建構子" << endl;
-        init();
-        strcpy(m_name, name);
-        m_age = age;
-    }
-    ~Student() {
-        cout << "解構子" << endl;
-    }
-    void init() {
-        memset(m_name,0,sizeof(m_name));
-        m_age = 0;
-    }
+  char m_name[50];
+  int m_age = 20;
+  Student() {
+    cout << "沒參數建構子" << endl;
+    init();
+  }
+  Student(const char* name, const int age) {
+    cout << "有參數建構子" << endl;
+    init();
+    strcpy(m_name, name);
+    m_age = age;
+  }
+  ~Student() {
+    cout << "解構子" << endl;
+  }
+  void init() {
+    memset(m_name,0,sizeof(m_name));
+    m_age = 0;
+  }
 };
 int main() {
-    Student student = Student();
-    Student student1 = Student("Bill", 20);
-    return 0;
+  Student student = Student();
+  Student student1 = Student("Bill", 20);
+  return 0;
 }
 {% endhighlight %}
 

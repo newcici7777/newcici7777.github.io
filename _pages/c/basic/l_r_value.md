@@ -25,10 +25,10 @@ l-value = r-value;
 ### 有定義資料型態(int, double, float, char, long long ...)的變數，可以`指派值`。
 
 {% highlight c++ linenos %}
-    // i is l-value
-    int i;
-    //j is l-value
-    int j = 10; 	// 10 is r-value
+  // i is l-value
+  int i;
+  //j is l-value
+  int j = 10; 	// 10 is r-value
 {% endhighlight %}
 
 ### 有定義資料型態(int, double, float, char, long long ...)的指標，可以指向記憶體位址。
@@ -38,23 +38,23 @@ Prerequisites:
 [指標基本觀念][1]
 
 {% highlight c++ linenos %}
-    //p1 is l-value
-    int* p1;
-    //p2 is l-value
-    int* p2 = &j;	//&j is r-value
+  //p1 is l-value
+  int* p1;
+  //p2 is l-value
+  int* p2 = &j;	//&j is r-value
 {% endhighlight %}
 
 ### 可以用\*取值運算子修改指標指向的記憶體位址的`內容`
 
 {% highlight c++ linenos %}
-    //j is l-value
-    int j = 10; //  10 is r-value
-    
-    //p2 is l-value
-    int* p2 = &j;   //&j is r-value
-    
-    //*p2 is lavlue
-    *p2 = 100;  //100 is r-value
+  //j is l-value
+  int j = 10; //  10 is r-value
+  
+  //p2 is l-value
+  int* p2 = &j;   //&j is r-value
+  
+  //*p2 is lavlue
+  *p2 = 100;  //100 is r-value
 {% endhighlight %}
 
 ### 可以將變數或指標，指派給&參考
@@ -68,26 +68,26 @@ Prerequisites:
 #### 參考變數
 
 {% highlight c++ linenos %}
-    // i is l-value
-    int i = 10; // 10 is r-value
-    // ref is l-value
-    int& ref = i;
+  // i is l-value
+  int i = 10; // 10 is r-value
+  // ref is l-value
+  int& ref = i;
 {% endhighlight %}
 
 #### 參考指標
 
 {% highlight c++ linenos %}
-    // i is l-value
-    int i = 10; // 10 is r-value
-    
-    //宣告指標
-    // ptr_i is l-value
-    int* ptr_i = &i; // &i is r-value
+  // i is l-value
+  int i = 10; // 10 is r-value
+  
+  //宣告指標
+  // ptr_i is l-value
+  int* ptr_i = &i; // &i is r-value
 
-    //宣告參考
-    // 指標指派給參考
-    // ref_to_ptr is l-value
-    int*& ref_to_ptr = ptr_i; // ptr_i is l-value
+  //宣告參考
+  // 指標指派給參考
+  // ref_to_ptr is l-value
+  int*& ref_to_ptr = ptr_i; // ptr_i is l-value
 {% endhighlight %}
 
 ### 陣列
@@ -98,29 +98,29 @@ Prerequisites:
 
 {% highlight c++ linenos %}
 	// arr is l-value
-    int arr[] = {0,1,2,3}; // 0,1,2,3 is r-value
+  int arr[] = {0,1,2,3}; // 0,1,2,3 is r-value
 {% endhighlight %}
 
 #### 陣列元素
 
 {% highlight c++ linenos %}
 int main() {
-    // str is l-value
-    char str[6];
-    // str[0] is l-value
-    str[0] = 'H'; // H is r-value
-    // str[1] is l-value
-    str[1] = 'e'; // e is r-value
-    // str[2] is l-value
-    str[2] = 'l'; // l is r-value
-    // str[3] is l-value
-    str[3] = 'l'; // l is r-value
-    // str[4] is l-value
-    str[4] = 'o'; // o is r-value
-    // str[5] is l-value
-    str[5] = '\0'; // \0 is r-value
-    cout << str << endl;
-    return 0;
+  // str is l-value
+  char str[6];
+  // str[0] is l-value
+  str[0] = 'H'; // H is r-value
+  // str[1] is l-value
+  str[1] = 'e'; // e is r-value
+  // str[2] is l-value
+  str[2] = 'l'; // l is r-value
+  // str[3] is l-value
+  str[3] = 'l'; // l is r-value
+  // str[4] is l-value
+  str[4] = 'o'; // o is r-value
+  // str[5] is l-value
+  str[5] = '\0'; // \0 is r-value
+  cout << str << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -136,22 +136,22 @@ Prerequisites:
 
 {% highlight c++ linenos %}
 int main() {
-    // str is l-value
-    char str[6];
-    //*(str + 0) is l-value
-    *(str + 0) = 'H'; // H is r-value
-    //*(str + 1) is l-value
-    *(str + 1) = 'E'; // E is r-value
-    //*(str + 2) is l-value
-    *(str + 2) = 'L'; // L is r-value
-    //*(str + 3) is l-value
-    *(str + 3) = 'L'; // L is r-value
-    //*(str + 4) is l-value
-    *(str + 4) = 'O'; // O is r-value
-    //*(str + 5) is l-value
-    *(str + 5) = '\0'; // \0 is r-value
-    cout << str << endl;
-    return 0;
+  // str is l-value
+  char str[6];
+  //*(str + 0) is l-value
+  *(str + 0) = 'H'; // H is r-value
+  //*(str + 1) is l-value
+  *(str + 1) = 'E'; // E is r-value
+  //*(str + 2) is l-value
+  *(str + 2) = 'L'; // L is r-value
+  //*(str + 3) is l-value
+  *(str + 3) = 'L'; // L is r-value
+  //*(str + 4) is l-value
+  *(str + 4) = 'O'; // O is r-value
+  //*(str + 5) is l-value
+  *(str + 5) = '\0'; // \0 is r-value
+  cout << str << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -165,10 +165,10 @@ Prerequisites:
 [一維陣列與指標][3]
 
 {% highlight c++ linenos %}
-    // array is l-value
-    int array[5];
-    // p is l-value
-    int* p = array; // array is l-value
+  // array is l-value
+  int array[5];
+  // p is l-value
+  int* p = array; // array is l-value
 {% endhighlight %}
 
 
@@ -179,10 +179,10 @@ Prerequisites:
 [const與指標][7]
 
 {% highlight c++ linenos %}
-    //var1 is l-value
-    int var1 = 10; // 10 is r-value
-    // p is l-value
-    const int* p = &var1; // &var1 is r-value
+  //var1 is l-value
+  int var1 = 10; // 10 is r-value
+  // p is l-value
+  const int* p = &var1; // &var1 is r-value
 {% endhighlight %}
 
 ## r-value
@@ -201,17 +201,17 @@ Prerequisites:
 
 {% highlight c++ linenos %}
 int main() {
-    // cstr2 is l-value
-    char cstr2[] = "hello"; // hello is r-value
-    //cstr3 is l-value
-    char cstr3[6] = "hello";// hello is r-value
-    //cstr4 is l-value
-    char cstr4[] = {"hello"};// hello is r-value
-    //cstr5 is l-value
-    char cstr5[6] = {"hello"};// hello is r-value
-    //cstr6 is l-value
-    char cstr6[6] {"hello"};// hello is r-value
-    return 0;
+  // cstr2 is l-value
+  char cstr2[] = "hello"; // hello is r-value
+  //cstr3 is l-value
+  char cstr3[6] = "hello";// hello is r-value
+  //cstr4 is l-value
+  char cstr4[] = {"hello"};// hello is r-value
+  //cstr5 is l-value
+  char cstr5[6] = {"hello"};// hello is r-value
+  //cstr6 is l-value
+  char cstr6[6] {"hello"};// hello is r-value
+  return 0;
 }
 {% endhighlight %}
 
@@ -219,21 +219,21 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    // array is l-value
-    int array[5];
-    // array is l-value
-    cout << "陣列名 = " << array << endl;
-    // &array is r-value
-    cout << "陣列名地址 = " << &array << endl;
-    // &array[0] is r-value
-    cout << "array[0]地址 = " << &array[0] << endl;
-    // &array[1] is r-value
-    cout << "array[1]地址 = " << &array[1] << endl;
-    // &array[2] is r-value
-    cout << "array[2]地址 = " << &array[2] << endl;
-    // &array[3] is r-value
-    cout << "array[3]地址 = " << &array[3] << endl;
-    return 0;
+  // array is l-value
+  int array[5];
+  // array is l-value
+  cout << "陣列名 = " << array << endl;
+  // &array is r-value
+  cout << "陣列名地址 = " << &array << endl;
+  // &array[0] is r-value
+  cout << "array[0]地址 = " << &array[0] << endl;
+  // &array[1] is r-value
+  cout << "array[1]地址 = " << &array[1] << endl;
+  // &array[2] is r-value
+  cout << "array[2]地址 = " << &array[2] << endl;
+  // &array[3] is r-value
+  cout << "array[3]地址 = " << &array[3] << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -241,33 +241,33 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    // array is l-value
-    int array[5];
-    // p is l-value
-    int* p = array; // array is l-value
-    // p is l-value
-    cout << "p指標內容 = " << p << endl;
-    //p + 0 is r-value
-    cout << "p指標+0 = " << p + 0 << endl;
-    //p + 1 is r-value
-    cout << "p指標+1 = " << p + 1 << endl;
-    //p + 2 is r-value
-    cout << "p指標+2 = " << p + 2 << endl;
-    //p + 3 is r-value
-    cout << "p指標+3 = " << p + 3 << endl;
-    return 0;
+  // array is l-value
+  int array[5];
+  // p is l-value
+  int* p = array; // array is l-value
+  // p is l-value
+  cout << "p指標內容 = " << p << endl;
+  //p + 0 is r-value
+  cout << "p指標+0 = " << p + 0 << endl;
+  //p + 1 is r-value
+  cout << "p指標+1 = " << p + 1 << endl;
+  //p + 2 is r-value
+  cout << "p指標+2 = " << p + 2 << endl;
+  //p + 3 is r-value
+  cout << "p指標+3 = " << p + 3 << endl;
+  return 0;
 }
 {% endhighlight %}
 
 {% highlight c++ linenos %}
 int main() {
-    // array is l-value
-    int array[5];
-    // p is l-value
-    int* p = array; // array is l-value
-    // p is l-value
-    p = p + 1; // p + 1 is r-value
-    return 0;
+  // array is l-value
+  int array[5];
+  // p is l-value
+  int* p = array; // array is l-value
+  // p is l-value
+  p = p + 1; // p + 1 is r-value
+  return 0;
 }
 {% endhighlight %}
 

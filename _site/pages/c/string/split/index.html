@@ -1432,46 +1432,46 @@
  values儲存的結果陣列
 **/</span>
 <span class="kt">size_t</span> <span class="nf">splitstr</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">splitStr</span><span class="p">,</span> <span class="kt">char</span> <span class="n">values</span><span class="p">[][</span><span class="mi">50</span><span class="p">])</span> <span class="p">{</span>
-    <span class="c1">//若位址為空，回傳0</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">splitStr</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="kt">size_t</span> <span class="n">slen</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">splitStr</span><span class="p">);</span><span class="c1">//split符號長度</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">slen</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//若符號長度為0，就不用切割</span>
-    <span class="c1">//強制轉型const char* str轉成char*</span>
-    <span class="kt">char</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">str</span><span class="p">;</span>
-    <span class="c1">//aa,bb,cc,dd,ee,ff</span>
-    <span class="c1">//切割符號為逗號，切割的個數為6個，分別為aa|bb|cc|dd|ee|ff</span>
-    <span class="kt">size_t</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//記錄切割的個數</span>
-    <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//找尋切割符號第一個位置</span>
-        <span class="kt">char</span><span class="o">*</span> <span class="n">find</span> <span class="o">=</span> <span class="n">strstr</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">splitStr</span><span class="p">);</span>
-        <span class="c1">//如果找到</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">find</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-            <span class="c1">//截取p的位置到切割符號之前的字元個數</span>
-            <span class="c1">//參數1要儲存的位址</span>
-            <span class="c1">//參數2要拷貝的開始位址</span>
-            <span class="c1">//參數3要拷貝的個數</span>
-            <span class="n">strncpy</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="n">size</span><span class="o">++</span><span class="p">],</span> <span class="n">p</span><span class="p">,</span> <span class="n">find</span> <span class="o">-</span> <span class="n">p</span><span class="p">);</span>
-            <span class="c1">//將p指標移到切割符號右邊的字元</span>
-            <span class="n">p</span> <span class="o">=</span> <span class="n">find</span> <span class="o">+</span> <span class="n">slen</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="c1">//如果找不到切割符號</span>
-            <span class="c1">//代表是最後一個字串</span>
-            <span class="n">strcpy</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="n">size</span><span class="o">++</span><span class="p">],</span> <span class="n">p</span><span class="p">);</span>
-            <span class="k">break</span><span class="p">;</span><span class="c1">//跳出無限迴圈</span>
-        <span class="p">}</span>
+  <span class="c1">//若位址為空，回傳0</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">splitStr</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">size_t</span> <span class="n">slen</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">splitStr</span><span class="p">);</span><span class="c1">//split符號長度</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">slen</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//若符號長度為0，就不用切割</span>
+  <span class="c1">//強制轉型const char* str轉成char*</span>
+  <span class="kt">char</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">str</span><span class="p">;</span>
+  <span class="c1">//aa,bb,cc,dd,ee,ff</span>
+  <span class="c1">//切割符號為逗號，切割的個數為6個，分別為aa|bb|cc|dd|ee|ff</span>
+  <span class="kt">size_t</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//記錄切割的個數</span>
+  <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//找尋切割符號第一個位置</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">find</span> <span class="o">=</span> <span class="n">strstr</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">splitStr</span><span class="p">);</span>
+    <span class="c1">//如果找到</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">find</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">//截取p的位置到切割符號之前的字元個數</span>
+      <span class="c1">//參數1要儲存的位址</span>
+      <span class="c1">//參數2要拷貝的開始位址</span>
+      <span class="c1">//參數3要拷貝的個數</span>
+      <span class="n">strncpy</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="n">size</span><span class="o">++</span><span class="p">],</span> <span class="n">p</span><span class="p">,</span> <span class="n">find</span> <span class="o">-</span> <span class="n">p</span><span class="p">);</span>
+      <span class="c1">//將p指標移到切割符號右邊的字元</span>
+      <span class="n">p</span> <span class="o">=</span> <span class="n">find</span> <span class="o">+</span> <span class="n">slen</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="c1">//如果找不到切割符號</span>
+      <span class="c1">//代表是最後一個字串</span>
+      <span class="n">strcpy</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="n">size</span><span class="o">++</span><span class="p">],</span> <span class="n">p</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span><span class="c1">//跳出無限迴圈</span>
     <span class="p">}</span>
-    <span class="k">return</span> <span class="n">size</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">size</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">values</span><span class="p">[</span><span class="mi">10</span><span class="p">][</span><span class="mi">50</span><span class="p">];</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">values</span><span class="p">));</span>
-    <span class="c1">//回傳切割個數</span>
-    <span class="kt">size_t</span> <span class="n">count</span> <span class="o">=</span> <span class="n">splitstr</span><span class="p">(</span><span class="s">"aa,bb,cc,dd,ee,ff"</span><span class="p">,</span> <span class="s">","</span><span class="p">,</span> <span class="n">values</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"values["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">values</span><span class="p">[</span><span class="mi">10</span><span class="p">][</span><span class="mi">50</span><span class="p">];</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">values</span><span class="p">));</span>
+  <span class="c1">//回傳切割個數</span>
+  <span class="kt">size_t</span> <span class="n">count</span> <span class="o">=</span> <span class="n">splitstr</span><span class="p">(</span><span class="s">"aa,bb,cc,dd,ee,ff"</span><span class="p">,</span> <span class="s">","</span><span class="p">,</span> <span class="n">values</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"values["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1675,7 +1675,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

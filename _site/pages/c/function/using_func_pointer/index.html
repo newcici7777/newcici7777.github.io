@@ -1273,11 +1273,11 @@ using Func = void(int, const string&amp;);
 <span class="c1">//函式宣告</span>
 <span class="n">Func</span> <span class="n">print</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="c1">//函式定義</span>
 <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1322,19 +1322,19 @@ func_pointer(500, "Server error.");
 <span class="c1">//函式宣告</span>
 <span class="n">Func</span> <span class="n">print</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//宣告函式指標，指向print函式</span>
-    <span class="n">Func</span><span class="o">*</span> <span class="n">func_pointer</span> <span class="o">=</span> <span class="n">print</span><span class="p">;</span>
-    <span class="c1">//呼叫函式</span>
-    <span class="n">func_pointer</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="s">"Server error."</span><span class="p">);</span>
-    
-    <span class="c1">//宣告函式參考，指向print函式</span>
-    <span class="n">Func</span><span class="o">*</span> <span class="n">func_ref</span> <span class="o">=</span> <span class="n">print</span><span class="p">;</span>
-    <span class="n">func_ref</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="s">"Not Found."</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//宣告函式指標，指向print函式</span>
+  <span class="n">Func</span><span class="o">*</span> <span class="n">func_pointer</span> <span class="o">=</span> <span class="n">print</span><span class="p">;</span>
+  <span class="c1">//呼叫函式</span>
+  <span class="n">func_pointer</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="s">"Server error."</span><span class="p">);</span>
+  
+  <span class="c1">//宣告函式參考，指向print函式</span>
+  <span class="n">Func</span><span class="o">*</span> <span class="n">func_ref</span> <span class="o">=</span> <span class="n">print</span><span class="p">;</span>
+  <span class="n">func_ref</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="s">"Not Found."</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="c1">//函式定義</span>
 <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1375,15 +1375,15 @@ func_ref(500, "Server error.");
 <span class="c1">//函式宣告</span>
 <span class="n">Func</span> <span class="n">print</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//宣告函式參考，指向print函式</span>
-    <span class="n">Func</span><span class="o">*</span> <span class="n">func_ref</span> <span class="o">=</span> <span class="n">print</span><span class="p">;</span>
-    <span class="c1">//呼叫函式</span>
-    <span class="n">func_ref</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="s">"Not Found."</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//宣告函式參考，指向print函式</span>
+  <span class="n">Func</span><span class="o">*</span> <span class="n">func_ref</span> <span class="o">=</span> <span class="n">print</span><span class="p">;</span>
+  <span class="c1">//呼叫函式</span>
+  <span class="n">func_ref</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="s">"Not Found."</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="c1">//函式定義</span>
 <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1419,15 +1419,15 @@ void (*func_pointer)(int, const string&amp;) = <span class="markline">Student::<
 12
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="k">static</span> <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="k">static</span> <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//宣告函式指標</span>
-    <span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">func_pointer</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="n">Student</span><span class="o">::</span><span class="n">print</span><span class="p">;</span>
-    <span class="n">func_pointer</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="s">"Server error."</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//宣告函式指標</span>
+  <span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">func_pointer</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="n">Student</span><span class="o">::</span><span class="n">print</span><span class="p">;</span>
+  <span class="n">func_pointer</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="s">"Server error."</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1459,17 +1459,17 @@ Func *func_p = <span class="markline">Student::</span>print;
 14
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="k">static</span> <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="k">static</span> <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="c1">//Func函式類型別名</span>
 <span class="k">using</span> <span class="n">Func</span> <span class="o">=</span> <span class="kt">void</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span><span class="p">);</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//函式類型別名宣告函式指標</span>
-    <span class="n">Func</span> <span class="o">*</span><span class="n">func_p</span> <span class="o">=</span> <span class="n">Student</span><span class="o">::</span><span class="n">print</span><span class="p">;</span>
-    <span class="n">func_p</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s">"Page not Found."</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//函式類型別名宣告函式指標</span>
+  <span class="n">Func</span> <span class="o">*</span><span class="n">func_p</span> <span class="o">=</span> <span class="n">Student</span><span class="o">::</span><span class="n">print</span><span class="p">;</span>
+  <span class="n">func_p</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s">"Page not Found."</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1487,7 +1487,7 @@ Func *func_p = <span class="markline">Student::</span>print;
 </ul>
 <pre>
 void(<span class="markline">Student::</span>* func_pointer)(int, const string&amp;) = <span class="markline">&amp;Student::</span>print;
-    <span class="markline">(student.*func_pointer)</span>(500, "Server error.");
+  <span class="markline">(student.*func_pointer)</span>(500, "Server error.");
 </pre>
 
 <figure class="highlight">
@@ -1508,18 +1508,18 @@ void(<span class="markline">Student::</span>* func_pointer)(int, const string&am
 15
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//物件宣告</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="c1">//成員函式轉成函式指標</span>
-    <span class="kt">void</span><span class="p">(</span><span class="n">Student</span><span class="o">::*</span> <span class="n">func_pointer</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">print</span><span class="p">;</span>
-    <span class="c1">//函式指標呼叫函式</span>
-    <span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="o">*</span><span class="n">func_pointer</span><span class="p">)(</span><span class="mi">500</span><span class="p">,</span> <span class="s">"Server error."</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//物件宣告</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+  <span class="c1">//成員函式轉成函式指標</span>
+  <span class="kt">void</span><span class="p">(</span><span class="n">Student</span><span class="o">::*</span> <span class="n">func_pointer</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">print</span><span class="p">;</span>
+  <span class="c1">//函式指標呼叫函式</span>
+  <span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="o">*</span><span class="n">func_pointer</span><span class="p">)(</span><span class="mi">500</span><span class="p">,</span> <span class="s">"Server error."</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1569,20 +1569,20 @@ void(<span class="markline">Student::</span>* func_pointer)(int, const string&am
 17
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code = "</span> <span class="o">&lt;&lt;</span> <span class="n">code</span> <span class="o">&lt;&lt;</span> <span class="s">" , Msg = "</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="c1">//Func函式類型別名</span>
 <span class="k">using</span> <span class="n">Func</span> <span class="o">=</span> <span class="kt">void</span><span class="p">(</span><span class="n">Student</span><span class="o">::*</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span><span class="p">);</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立物件</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
-    <span class="c1">//建立函式指標</span>
-    <span class="n">Func</span> <span class="n">func_pointer</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">print</span><span class="p">;</span>
-    <span class="c1">//呼叫函式指標</span>
-    <span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="o">*</span><span class="n">func_pointer</span><span class="p">)(</span><span class="mi">400</span><span class="p">,</span><span class="s">"Page not found."</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立物件</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">;</span>
+  <span class="c1">//建立函式指標</span>
+  <span class="n">Func</span> <span class="n">func_pointer</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">Student</span><span class="o">::</span><span class="n">print</span><span class="p">;</span>
+  <span class="c1">//呼叫函式指標</span>
+  <span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="o">*</span><span class="n">func_pointer</span><span class="p">)(</span><span class="mi">400</span><span class="p">,</span><span class="s">"Page not found."</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1780,7 +1780,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

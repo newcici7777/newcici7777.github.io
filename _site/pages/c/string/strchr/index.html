@@ -1253,28 +1253,28 @@
 23
 24
 </pre></td><td class="code"><pre><span class="kt">char</span><span class="o">*</span> <span class="nf">mystrchr</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">s</span><span class="p">,</span><span class="kt">int</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//將s開始位址給p指標</span>
-    <span class="c1">//const char*轉成char*要強制轉型</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">)</span><span class="n">s</span><span class="p">;</span>
-    <span class="c1">//若p指標的值不為\0就進入迴圈</span>
-    <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//若為指標的值與字元是相同，代表找到</span>
-        <span class="c1">//傳回p的位址</span>
-        <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">p</span> <span class="o">==</span> <span class="n">c</span><span class="p">)</span> <span class="k">return</span> <span class="n">p</span><span class="p">;</span>
-        <span class="n">p</span><span class="o">++</span><span class="p">;</span><span class="c1">//位址往右移一位</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//找不到就回傳null的位址</span>
+  <span class="c1">//將s開始位址給p指標</span>
+  <span class="c1">//const char*轉成char*要強制轉型</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">)</span><span class="n">s</span><span class="p">;</span>
+  <span class="c1">//若p指標的值不為\0就進入迴圈</span>
+  <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//若為指標的值與字元是相同，代表找到</span>
+    <span class="c1">//傳回p的位址</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">p</span> <span class="o">==</span> <span class="n">c</span><span class="p">)</span> <span class="k">return</span> <span class="n">p</span><span class="p">;</span>
+    <span class="n">p</span><span class="o">++</span><span class="p">;</span><span class="c1">//位址往右移一位</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//找不到就回傳null的位址</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
-    <span class="c1">//清空陣列記憶體中的值</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="s">"Hello World!"</span><span class="p">);</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="n">mystrchr</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="sc">'W'</span><span class="p">);</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">p1</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+  <span class="c1">//清空陣列記憶體中的值</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="s">"Hello World!"</span><span class="p">);</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="n">mystrchr</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="sc">'W'</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">p1</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1319,29 +1319,29 @@
 24
 25
 </pre></td><td class="code"><pre><span class="kt">char</span><span class="o">*</span> <span class="nf">mystrrchr</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">s</span><span class="p">,</span><span class="kt">int</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//將s開始位址給p指標</span>
-    <span class="c1">//const char*轉成char*要強制轉型</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">)</span><span class="n">s</span><span class="p">;</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="c1">//若p指標的值不為\0就進入迴圈</span>
-    <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//若為指標的值與字元是相同，代表找到</span>
-        <span class="c1">//p的位址放入p1中</span>
-        <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">p</span> <span class="o">==</span> <span class="n">c</span><span class="p">)</span> <span class="n">p1</span> <span class="o">=</span> <span class="n">p</span><span class="p">;</span>
-        <span class="n">p</span><span class="o">++</span><span class="p">;</span><span class="c1">//位址往右移一位</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="n">p1</span><span class="p">;</span><span class="c1">//回傳p1最後的位址</span>
+  <span class="c1">//將s開始位址給p指標</span>
+  <span class="c1">//const char*轉成char*要強制轉型</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">)</span><span class="n">s</span><span class="p">;</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//若p指標的值不為\0就進入迴圈</span>
+  <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//若為指標的值與字元是相同，代表找到</span>
+    <span class="c1">//p的位址放入p1中</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">p</span> <span class="o">==</span> <span class="n">c</span><span class="p">)</span> <span class="n">p1</span> <span class="o">=</span> <span class="n">p</span><span class="p">;</span>
+    <span class="n">p</span><span class="o">++</span><span class="p">;</span><span class="c1">//位址往右移一位</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">p1</span><span class="p">;</span><span class="c1">//回傳p1最後的位址</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
-    <span class="c1">//清空陣列記憶體中的值</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="s">"Hello World!"</span><span class="p">);</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="n">mystrrchr</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="sc">'o'</span><span class="p">);</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">p1</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+  <span class="c1">//清空陣列記憶體中的值</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="s">"Hello World!"</span><span class="p">);</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="n">mystrrchr</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="sc">'o'</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">p1</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1538,7 +1538,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

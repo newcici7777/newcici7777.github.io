@@ -209,37 +209,37 @@ hello\0
 
 {% highlight c++ linenos %}
 const char* mystrstr(const char *dest, const char *search) {
-    //i為dest的索引
-    size_t i = 0;
-    //j為serch的索引
-    size_t j = 0;
-    //目的字串長度
-    size_t dlen = strlen(dest);
-    //搜尋字串長度
-    size_t slen = strlen(search);
-    
-    //若i超過目的字串長度，代表都找不到
-    //若j超過搜尋字串長度，代表找到
-    while((i < dlen) && (j < slen)) {
-        //目的字元與搜索字元相等
-        if(dest[i] == search[j]) {
-            i++;//指標往下個字元移動
-            j++;//指標往下個字元移動
-        } else {
-            //不相等
-            i = i - j; //指標移到最開始的位址
-            j = 0; //搜尋字串的索引移到最前面
-            i++ ; //目的字串指標往下一個位址移動
-        }
+  //i為dest的索引
+  size_t i = 0;
+  //j為serch的索引
+  size_t j = 0;
+  //目的字串長度
+  size_t dlen = strlen(dest);
+  //搜尋字串長度
+  size_t slen = strlen(search);
+  
+  //若i超過目的字串長度，代表都找不到
+  //若j超過搜尋字串長度，代表找到
+  while((i < dlen) && (j < slen)) {
+    //目的字元與搜索字元相等
+    if(dest[i] == search[j]) {
+      i++;//指標往下個字元移動
+      j++;//指標往下個字元移動
+    } else {
+      //不相等
+      i = i - j; //指標移到最開始的位址
+      j = 0; //搜尋字串的索引移到最前面
+      i++ ; //目的字串指標往下一個位址移動
     }
-    //若j等於搜尋字串的長度代表找到
-    if(j == slen) return dest + (i - j);
-    return 0;//尋找失敗
+  }
+  //若j等於搜尋字串的長度代表找到
+  if(j == slen) return dest + (i - j);
+  return 0;//尋找失敗
 }
 int main() {
-    const char* p1 = mystrstr("hdhelhelloWor", "hello") ;
-    if(p1 != 0) cout << p1 << endl;
-    return 0;
+  const char* p1 = mystrstr("hdhelhelloWor", "hello") ;
+  if(p1 != 0) cout << p1 << endl;
+  return 0;
 }
 {% endhighlight %}
 

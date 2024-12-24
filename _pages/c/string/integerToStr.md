@@ -75,26 +75,26 @@ result[3] = 1 + '0';
 
 {% highlight c++ linenos %}
 int main() {
-    int input = 0;
-    cout << "請輸入整數:"; cin >> input;
-    char result[20];
-    memset(result, 0, sizeof(result));
-    //取餘數
-    int index = 0;
-    while(input > 0) {
-    	//將餘數轉成字元存入陣列
-        result[index++] = input % 10 + '0';
-        input = input / 10;
-    }
-    cout << "result : " << result << endl;
-    //翻轉
-    for(int i = 0, len = strlen(result); i < len/2; i++) {
-        char temp = result[i];
-        result[i] = result[len - 1 - i];
-        result[len - 1 - i] = temp;
-    }
-    cout << "Reverse result : " << result << endl;
-    return 0;
+  int input = 0;
+  cout << "請輸入整數:"; cin >> input;
+  char result[20];
+  memset(result, 0, sizeof(result));
+  //取餘數
+  int index = 0;
+  while(input > 0) {
+  	//將餘數轉成字元存入陣列
+    result[index++] = input % 10 + '0';
+    input = input / 10;
+  }
+  cout << "result : " << result << endl;
+  //翻轉
+  for(int i = 0, len = strlen(result); i < len/2; i++) {
+    char temp = result[i];
+    result[i] = result[len - 1 - i];
+    result[len - 1 - i] = temp;
+  }
+  cout << "Reverse result : " << result << endl;
+  return 0;
 }
 {% endhighlight %}
 

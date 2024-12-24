@@ -72,7 +72,7 @@ int pi{3.14};  // 編譯器錯誤：縮小轉換
   //陣列
   int arr1[5]{1, 2, 3, 4, 5};
   for (int i = 0; i < 5; i++) {
-    cout << "arr1[" << i << "] = " << arr1[i] << endl;
+  cout << "arr1[" << i << "] = " << arr1[i] << endl;
   }
 {% endhighlight %}
 ```
@@ -87,7 +87,7 @@ arr1[4] = 5
 {% highlight c++ linenos %}
   int *arr_p = new int[5]{11, 12, 13, 14, 15};
   for (int i = 0; i < 5; i++) {
-    cout << "arr_p[" << i << "] = " << arr_p[i] << endl;
+  cout << "arr_p[" << i << "] = " << arr_p[i] << endl;
   }
 {% endhighlight %}
 ```
@@ -152,8 +152,8 @@ using namespace std;
 int func1(initializer_list<int> init_list) {
   int total = 0;
   for (int val : init_list) {
-    total += val;
-    cout << val << ",";
+  total += val;
+  cout << val << ",";
   }
   cout << endl;
   return total;

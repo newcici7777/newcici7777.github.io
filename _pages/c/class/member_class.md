@@ -10,7 +10,7 @@ keywords: c++, class
 {% highlight c++ linenos %}
 class Student {
 public:
-    Family m_family;
+  Family m_family;
 };
 {% endhighlight %}
 
@@ -21,19 +21,19 @@ public:
 using namespace std;
 class Family {
 public:
-    string mon;
-    string dad;
-    Family(){
-        cout << "Family 建構子" << endl;
-    }
+  string mon;
+  string dad;
+  Family(){
+    cout << "Family 建構子" << endl;
+  }
 };
 class Student {
 public:
-    Family m_family;
+  Family m_family;
 };
 int main() {
-    Student student;
-    return 0;
+  Student student;
+  return 0;
 }
 {% endhighlight %}
 

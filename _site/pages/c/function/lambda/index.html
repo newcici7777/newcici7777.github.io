@@ -1267,13 +1267,13 @@
 8
 9
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[</span><span class="n">name</span><span class="p">](){</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">};</span>
-    <span class="n">f1</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[</span><span class="n">name</span><span class="p">](){</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">};</span>
+  <span class="n">f1</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1302,13 +1302,13 @@
 8
 9
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-    <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[</span><span class="o">&amp;</span><span class="n">name</span><span class="p">](){</span>
-        <span class="n">name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">};</span>
-    <span class="n">f1</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+  <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[</span><span class="o">&amp;</span><span class="n">name</span><span class="p">](){</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">};</span>
+  <span class="n">f1</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1335,14 +1335,14 @@
 9
 10
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
-    <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[</span><span class="o">=</span><span class="p">](){</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"age = "</span> <span class="o">&lt;&lt;</span> <span class="n">age</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">};</span>
-    <span class="n">f1</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
+  <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[</span><span class="o">=</span><span class="p">](){</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"age = "</span> <span class="o">&lt;&lt;</span> <span class="n">age</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">};</span>
+  <span class="n">f1</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1375,16 +1375,16 @@ age = 18
 11
 12
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
-    <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[</span><span class="o">&amp;</span><span class="p">](){</span>
-        <span class="n">name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
-        <span class="n">age</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"age = "</span> <span class="o">&lt;&lt;</span> <span class="n">age</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">};</span>
-    <span class="n">f1</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
+  <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[</span><span class="o">&amp;</span><span class="p">](){</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
+    <span class="n">age</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"age = "</span> <span class="o">&lt;&lt;</span> <span class="n">age</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">};</span>
+  <span class="n">f1</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1413,15 +1413,15 @@ age = 30
 10
 11
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
-    <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">name</span><span class="p">](){</span>
-        <span class="n">age</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"age = "</span> <span class="o">&lt;&lt;</span> <span class="n">age</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">};</span>
-    <span class="n">f1</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
+  <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">name</span><span class="p">](){</span>
+    <span class="n">age</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"age = "</span> <span class="o">&lt;&lt;</span> <span class="n">age</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">};</span>
+  <span class="n">f1</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1448,15 +1448,15 @@ age = 30
 10
 11
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
-    <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[</span><span class="o">=</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">name</span><span class="p">](){</span>
-        <span class="n">name</span> <span class="o">=</span> <span class="s">"Tom"</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"age = "</span> <span class="o">&lt;&lt;</span> <span class="n">age</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">};</span>
-    <span class="n">f1</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
+  <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[</span><span class="o">=</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">name</span><span class="p">](){</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s">"Tom"</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"age = "</span> <span class="o">&lt;&lt;</span> <span class="n">age</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">};</span>
+  <span class="n">f1</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1484,14 +1484,14 @@ age = 18
 9
 10
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
-    <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[](){</span>
-        <span class="c1">//cout &lt;&lt; "name = " &lt;&lt; name &lt;&lt; endl;</span>
-        <span class="c1">//cout &lt;&lt; "age = " &lt;&lt; age &lt;&lt; endl;</span>
-    <span class="p">};</span>
-    <span class="n">f1</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
+  <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[](){</span>
+    <span class="c1">//cout &lt;&lt; "name = " &lt;&lt; name &lt;&lt; endl;</span>
+    <span class="c1">//cout &lt;&lt; "age = " &lt;&lt; age &lt;&lt; endl;</span>
+  <span class="p">};</span>
+  <span class="n">f1</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1516,13 +1516,13 @@ age = 18
 8
 9
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
-    <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[](</span><span class="n">string</span> <span class="n">address</span><span class="p">){</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"address = "</span> <span class="o">&lt;&lt;</span> <span class="n">address</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">};</span>
-    <span class="n">f1</span><span class="p">(</span><span class="s">"Taiwan Taipei ...."</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
+  <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[](</span><span class="n">string</span> <span class="n">address</span><span class="p">){</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"address = "</span> <span class="o">&lt;&lt;</span> <span class="n">address</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">};</span>
+  <span class="n">f1</span><span class="p">(</span><span class="s">"Taiwan Taipei ...."</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1547,15 +1547,15 @@ age = 18
 10
 11
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
-    <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[](</span><span class="n">string</span> <span class="n">address</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">int</span><span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"address = "</span> <span class="o">&lt;&lt;</span> <span class="n">address</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="mi">100</span><span class="p">;</span>
-    <span class="p">};</span>
-    <span class="kt">int</span> <span class="n">val</span> <span class="o">=</span> <span class="n">f1</span><span class="p">(</span><span class="s">"Taiwan Taipei ...."</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"val = "</span> <span class="o">&lt;&lt;</span> <span class="n">val</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
+  <span class="k">auto</span> <span class="n">f1</span> <span class="o">=</span> <span class="p">[](</span><span class="n">string</span> <span class="n">address</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">int</span><span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"address = "</span> <span class="o">&lt;&lt;</span> <span class="n">address</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="p">};</span>
+  <span class="kt">int</span> <span class="n">val</span> <span class="o">=</span> <span class="n">f1</span><span class="p">(</span><span class="s">"Taiwan Taipei ...."</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"val = "</span> <span class="o">&lt;&lt;</span> <span class="n">val</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1579,11 +1579,11 @@ val = 100
 6
 7
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">fun</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"x + y = "</span> <span class="o">&lt;&lt;</span> <span class="n">fun</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"x + y = "</span> <span class="o">&lt;&lt;</span> <span class="n">fun</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1604,11 +1604,11 @@ val = 100
 6
 7
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">auto</span> <span class="n">f</span> <span class="o">=</span> <span class="p">[](</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">int</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">;</span>
-    <span class="p">};</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"x + y = "</span> <span class="o">&lt;&lt;</span> <span class="n">f</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">auto</span> <span class="n">f</span> <span class="o">=</span> <span class="p">[](</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">int</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">;</span>
+  <span class="p">};</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"x + y = "</span> <span class="o">&lt;&lt;</span> <span class="n">f</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1623,7 +1623,7 @@ val = 100
 2
 3
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">fun</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1633,8 +1633,8 @@ val = 100
 2
 3
 </pre></td><td class="code"><pre><span class="p">[](</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">int</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">;</span>
-    <span class="p">};</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">;</span>
+  <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1828,7 +1828,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

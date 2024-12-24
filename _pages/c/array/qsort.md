@@ -6,7 +6,7 @@ keywords: c++, dynamic arrays, qsort
 
 ## qsort使用方法
 ```
-void qsort ( void * base , size_t nitems , size_t size , int (* compar )( const void *, const void *))         
+void qsort ( void * base , size_t nitems , size_t size , int (* compar )( const void *, const void *))     
 ```
 
 * 參數1，陣列名。
@@ -31,33 +31,33 @@ void qsort ( void * base , size_t nitems , size_t size , int (* compar )( const 
 #include <iostream>
 using namespace std;
 int compare(const void* p1, const void* p2) {
-    //void*指標代表接收任何資料型態的參數
-    //把void*指標轉成int*指標
-    int* pi1 = (int*) p1;
-    int* pi2 = (int*) p2;
-    //把pi1指標使用*取值運算子，取出pi1記憶體位址存放的值
-    //把pi2指標使用*取值運算子，取出pi2記憶體位址存放的值
-    //pi1記憶體位址的值 小於 pi2記憶體位址的值，傳回-1
-    if(*pi1 < *pi2) return -1;
-    //pi1記憶體位址的值 小於 pi2記憶體位址的值，傳回0
-    else if(*pi1 == *pi2) return 0;
-    //pi1記憶體位址的值 小於 pi2記憶體位址的值，傳回1
-    //else if(*pi1 > *pi2)
-    else return 1;
+  //void*指標代表接收任何資料型態的參數
+  //把void*指標轉成int*指標
+  int* pi1 = (int*) p1;
+  int* pi2 = (int*) p2;
+  //把pi1指標使用*取值運算子，取出pi1記憶體位址存放的值
+  //把pi2指標使用*取值運算子，取出pi2記憶體位址存放的值
+  //pi1記憶體位址的值 小於 pi2記憶體位址的值，傳回-1
+  if (*pi1 < *pi2) return -1;
+  //pi1記憶體位址的值 小於 pi2記憶體位址的值，傳回0
+  else if (*pi1 == *pi2) return 0;
+  //pi1記憶體位址的值 小於 pi2記憶體位址的值，傳回1
+  //else if (*pi1 > *pi2)
+  else return 1;
 }
 int main() {
-    //宣告大小為10的整數陣列
-    int arr[10] = {8,1,7,2,6,3,5,5,1,10};
-    //陣列大小
-    int size = sizeof(arr)/sizeof(int);
-    //排序
-    qsort(arr, size, sizeof(int), compare);
-    for(int i = 0; i < size; i++) {
-        //印出每個元素
-        cout << arr[i] << ",";
-    }
-    cout << endl;
-    return 0;
+  //宣告大小為10的整數陣列
+  int arr[10] = {8,1,7,2,6,3,5,5,1,10};
+  //陣列大小
+  int size = sizeof(arr)/sizeof(int);
+  //排序
+  qsort(arr, size, sizeof(int), compare);
+  for (int i = 0; i < size; i++) {
+    //印出每個元素
+    cout << arr[i] << ",";
+  }
+  cout << endl;
+  return 0;
 }
 {% endhighlight %}
 

@@ -8,13 +8,13 @@ keywords: c++, pointer to pointer
 #include <iostream>
 using namespace std;
 int main() {
-    int array[5];
-    cout << "array[0]地址 = " << (long long) &array[0] << endl;
-    cout << "array[1]地址 = " << (long long) &array[1] << endl;
-    cout << "array[2]地址 = " << (long long) &array[2] << endl;
-    cout << "array[3]地址 = " << (long long) &array[3] << endl;
-    cout << "array[4]地址 = " << (long long) &array[4] << endl;
-    return 0;
+  int array[5];
+  cout << "array[0]地址 = " << (long long) &array[0] << endl;
+  cout << "array[1]地址 = " << (long long) &array[1] << endl;
+  cout << "array[2]地址 = " << (long long) &array[2] << endl;
+  cout << "array[3]地址 = " << (long long) &array[3] << endl;
+  cout << "array[4]地址 = " << (long long) &array[4] << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -36,11 +36,11 @@ C++將陣列名視為陣列第0個元素的記憶體位址。
 #include <iostream>
 using namespace std;
 int main() {
-    int array[5];
-    cout << "陣列名 = " << array << endl;
-    cout << "陣列名地址 = " << &array << endl;
-    cout << "array[0]地址 = " << &array[0] << endl;
-    return 0;
+  int array[5];
+  cout << "陣列名 = " << array << endl;
+  cout << "陣列名地址 = " << &array << endl;
+  cout << "array[0]地址 = " << &array[0] << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -59,15 +59,15 @@ array[0]地址 = 0x7ff7bfeff450
 陣列名 + 1，位址移動的範圍取決於陣列的資料型態。
 
 {% highlight c++ linenos %}
-    int arr[] = {10, 100, 200};
-    //印出arr[0]的地址
-    cout << "arr地址=" << arr << endl;
-    //印出arr[0]的地址
-    cout << "arr+0地址=" <<  arr+0 << endl;
-    //印出arr[1]的地址
-    cout << "arr+1地址=" <<  arr+1 << endl;
-    //印出arr[2]的地址
-    cout << "arr+2地址=" <<  arr+2 << endl;
+  int arr[] = {10, 100, 200};
+  //印出arr[0]的地址
+  cout << "arr地址=" << arr << endl;
+  //印出arr[0]的地址
+  cout << "arr+0地址=" <<  arr+0 << endl;
+  //印出arr[1]的地址
+  cout << "arr+1地址=" <<  arr+1 << endl;
+  //印出arr[2]的地址
+  cout << "arr+2地址=" <<  arr+2 << endl;
 {% endhighlight %}
 
 ```
@@ -88,13 +88,13 @@ arr+2地址=0x7ff7bfeff464
 
 {% highlight c++ linenos %}
 int main() {
-    int arr[10];
-    cout << "arr位址=" <<  (long long)arr  << endl;
-    //印出arr+1的位址
-    cout << "arr+1位址=" <<  (long long)(arr + 1) << endl;
-    //印出&arr + 1的位址
-    cout << "&arr + 1位址=" <<  (long long)(&arr + 1) << endl;
-    return 0;
+  int arr[10];
+  cout << "arr位址=" <<  (long long)arr  << endl;
+  //印出arr+1的位址
+  cout << "arr+1位址=" <<  (long long)(arr + 1) << endl;
+  //印出&arr + 1的位址
+  cout << "&arr + 1位址=" <<  (long long)(&arr + 1) << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -118,23 +118,23 @@ C++編譯器將陣列名[索引] 解釋為 *(陣列名 + 索引)
 arr[0]與\*(arr \+ 0)是相同的意思，都是對陣列第0個元素的記憶體位址取出存放的內容。
 
 {% highlight c++ linenos %}
-    int arr[] = {10, 100, 200};
-    //印出arr[0]的地址
-    cout << "arr地址=" << arr << endl;
-    //印出arr[0]的地址
-    cout << "arr+0地址=" <<  arr+0 << endl;
-    //印出arr[1]的地址
-    cout << "arr+1地址=" <<  arr+1 << endl;
-    //印出arr[2]的地址
-    cout << "arr+2地址=" <<  arr+2 << endl;
-    //印出arr[0]的值
-    cout << "arr值=" << *(arr) << endl;
-    //印出arr[0]的值
-    cout << "arr+0值=" << *(arr+0) << endl;
-    //印出arr[1]的值
-    cout << "arr+1值=" <<  *(arr+1) << endl;
-    //印出arr[2]的值
-    cout << "arr+2值=" <<  *(arr+2) << endl;
+  int arr[] = {10, 100, 200};
+  //印出arr[0]的地址
+  cout << "arr地址=" << arr << endl;
+  //印出arr[0]的地址
+  cout << "arr+0地址=" <<  arr+0 << endl;
+  //印出arr[1]的地址
+  cout << "arr+1地址=" <<  arr+1 << endl;
+  //印出arr[2]的地址
+  cout << "arr+2地址=" <<  arr+2 << endl;
+  //印出arr[0]的值
+  cout << "arr值=" << *(arr) << endl;
+  //印出arr[0]的值
+  cout << "arr+0值=" << *(arr+0) << endl;
+  //印出arr[1]的值
+  cout << "arr+1值=" <<  *(arr+1) << endl;
+  //印出arr[2]的值
+  cout << "arr+2值=" <<  *(arr+2) << endl;
 {% endhighlight %}
 
 ```
@@ -155,16 +155,16 @@ arr+2值=200
 #include <iostream>
 using namespace std;
 int main() {
-    int array[5];
-    cout << "陣列名 = " << array << endl;
-    cout << "陣列名地址 = " << &array << endl;
-    cout << "array[0]地址 = " << &array[0] << endl;
-    
-    //將陣列名(也就是陣列第0個元素的記憶體位址)指定至指標變數p
-    int* p = array;
-    //印出指標變數p，也就是印出第0個元素記憶體位址
-    cout << "p指標內容 = " << p << endl;
-    return 0;
+  int array[5];
+  cout << "陣列名 = " << array << endl;
+  cout << "陣列名地址 = " << &array << endl;
+  cout << "array[0]地址 = " << &array[0] << endl;
+  
+  //將陣列名(也就是陣列第0個元素的記憶體位址)指定至指標變數p
+  int* p = array;
+  //印出指標變數p，也就是印出第0個元素記憶體位址
+  cout << "p指標內容 = " << p << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -182,27 +182,27 @@ p指標內容為陣列名的地址。
 #include <iostream>
 using namespace std;
 int main() {
-    int array[5];
-    cout << "陣列名 = " << array << endl;
-    cout << "陣列名地址 = " << &array << endl;
-    cout << "array[0]地址 = " << &array[0] << endl;
-    cout << "array[1]地址 = " << &array[1] << endl;
-    cout << "array[2]地址 = " << &array[2] << endl;
-    cout << "array[3]地址 = " << &array[3] << endl;
+  int array[5];
+  cout << "陣列名 = " << array << endl;
+  cout << "陣列名地址 = " << &array << endl;
+  cout << "array[0]地址 = " << &array[0] << endl;
+  cout << "array[1]地址 = " << &array[1] << endl;
+  cout << "array[2]地址 = " << &array[2] << endl;
+  cout << "array[3]地址 = " << &array[3] << endl;
 
-    //將陣列名(也就是陣列第0個元素的記憶體位址)指定至指標變數p
-    int* p = array;
-    //指標變數p，印出第0個元素記憶體位址
-    cout << "p指標內容 = " << p << endl;
-    //指標變數p + 0，印出第0個元素記憶體位址
-    cout << "p指標+0 = " << p + 0 << endl;
-    //指標變數p + 1，印出第1個元素記憶體位址
-    cout << "p指標+1 = " << p + 1 << endl;
-    //指標變數p + 2，印出第2個元素記憶體位址
-    cout << "p指標+2 = " << p + 2 << endl;
-    //指標變數p + 3，印出第3個元素記憶體位址
-    cout << "p指標+3 = " << p + 3 << endl;
-    return 0;
+  //將陣列名(也就是陣列第0個元素的記憶體位址)指定至指標變數p
+  int* p = array;
+  //指標變數p，印出第0個元素記憶體位址
+  cout << "p指標內容 = " << p << endl;
+  //指標變數p + 0，印出第0個元素記憶體位址
+  cout << "p指標+0 = " << p + 0 << endl;
+  //指標變數p + 1，印出第1個元素記憶體位址
+  cout << "p指標+1 = " << p + 1 << endl;
+  //指標變數p + 2，印出第2個元素記憶體位址
+  cout << "p指標+2 = " << p + 2 << endl;
+  //指標變數p + 3，印出第3個元素記憶體位址
+  cout << "p指標+3 = " << p + 3 << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -229,28 +229,28 @@ p指標+3 = 0x7ff7bfeff45c
 #include <iostream>
 using namespace std;
 int main() {
-    int array[5] = {1,2,3,4,5};
-    cout << "array[0] = " << array[0] << endl;
-    cout << "array[1] = " << array[1] << endl;
-    cout << "array[2] = " << array[2] << endl;
-    cout << "array[3] = " << array[3] << endl;
-    cout << "array[4] = " << array[4] << endl;
-    
-    //將陣列名(也就是陣列第0個元素的記憶體位址)指定至指標變數p
-    int* p = array;
-    //指標變數p使用取值運算子，取出第0個元素記憶體位址中的值
-    cout << "*p指標 = " << *p << endl;
-    //指標變數p + 0使用取值運算子，取出第0個元素記憶體位址中的值
-    cout << "*p指標+0 = " << *(p + 0) << endl;
-    //指標變數p + 1使用取值運算子，取出第1個元素記憶體位址中的值
-    cout << "*p指標+1 = " << *(p + 1) << endl;
-    //指標變數p + 2使用取值運算子，取出第2個元素記憶體位址中的值
-    cout << "*p指標+2 = " << *(p + 2) << endl;
-    //指標變數p + 3使用取值運算子，取出第3個元素記憶體位址中的值
-    cout << "*p指標+3 = " << *(p + 3) << endl;
-    //指標變數p + 4使用取值運算子，取出第4個元素記憶體位址中的值
-    cout << "*p指標+3 = " << *(p + 4) << endl;
-    return 0;
+  int array[5] = {1,2,3,4,5};
+  cout << "array[0] = " << array[0] << endl;
+  cout << "array[1] = " << array[1] << endl;
+  cout << "array[2] = " << array[2] << endl;
+  cout << "array[3] = " << array[3] << endl;
+  cout << "array[4] = " << array[4] << endl;
+  
+  //將陣列名(也就是陣列第0個元素的記憶體位址)指定至指標變數p
+  int* p = array;
+  //指標變數p使用取值運算子，取出第0個元素記憶體位址中的值
+  cout << "*p指標 = " << *p << endl;
+  //指標變數p + 0使用取值運算子，取出第0個元素記憶體位址中的值
+  cout << "*p指標+0 = " << *(p + 0) << endl;
+  //指標變數p + 1使用取值運算子，取出第1個元素記憶體位址中的值
+  cout << "*p指標+1 = " << *(p + 1) << endl;
+  //指標變數p + 2使用取值運算子，取出第2個元素記憶體位址中的值
+  cout << "*p指標+2 = " << *(p + 2) << endl;
+  //指標變數p + 3使用取值運算子，取出第3個元素記憶體位址中的值
+  cout << "*p指標+3 = " << *(p + 3) << endl;
+  //指標變數p + 4使用取值運算子，取出第4個元素記憶體位址中的值
+  cout << "*p指標+3 = " << *(p + 4) << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -279,28 +279,28 @@ C++編譯器將指標[索引] 解釋為 *(指標 + 索引)
 #include <iostream>
 using namespace std;
 int main() {
-    int array[5] = {1,2,3,4,5};
-    cout << "array[0] = " << array[0] << endl;
-    cout << "array[1] = " << array[1] << endl;
-    cout << "array[2] = " << array[2] << endl;
-    cout << "array[3] = " << array[3] << endl;
-    cout << "array[4] = " << array[4] << endl;
-    
-    int* p = array;
-    cout << "*p指標 = " << *p << endl;
-    cout << "*p指標+0 = " << *(p + 0) << endl;
-    cout << "*p指標+1 = " << *(p + 1) << endl;
-    cout << "*p指標+2 = " << *(p + 2) << endl;
-    cout << "*p指標+3 = " << *(p + 3) << endl;
-    cout << "*p指標+3 = " << *(p + 4) << endl;
+  int array[5] = {1,2,3,4,5};
+  cout << "array[0] = " << array[0] << endl;
+  cout << "array[1] = " << array[1] << endl;
+  cout << "array[2] = " << array[2] << endl;
+  cout << "array[3] = " << array[3] << endl;
+  cout << "array[4] = " << array[4] << endl;
+  
+  int* p = array;
+  cout << "*p指標 = " << *p << endl;
+  cout << "*p指標+0 = " << *(p + 0) << endl;
+  cout << "*p指標+1 = " << *(p + 1) << endl;
+  cout << "*p指標+2 = " << *(p + 2) << endl;
+  cout << "*p指標+3 = " << *(p + 3) << endl;
+  cout << "*p指標+3 = " << *(p + 4) << endl;
 
-    //使用指標[索引]的方式，把記憶體位址存放的值取出來
-    cout << "p指標[索引0] = " << p[0] << endl;
-    cout << "p指標[索引1] = " << p[1] << endl;
-    cout << "p指標[索引2] = " << p[2] << endl;
-    cout << "p指標[索引3] = " << p[3] << endl;
-    cout << "p指標[索引4] = " << p[4] << endl;
-    return 0;
+  //使用指標[索引]的方式，把記憶體位址存放的值取出來
+  cout << "p指標[索引0] = " << p[0] << endl;
+  cout << "p指標[索引1] = " << p[1] << endl;
+  cout << "p指標[索引2] = " << p[2] << endl;
+  cout << "p指標[索引3] = " << p[3] << endl;
+  cout << "p指標[索引4] = " << p[4] << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -329,48 +329,48 @@ p指標[索引4] = 5
 #include <iostream>
 using namespace std;
 int main() {
-    int array[5] = {1,2,3,4,5};
-    cout << "array[0] = " << array[0] << endl;
-    cout << "array[1] = " << array[1] << endl;
-    cout << "array[2] = " << array[2] << endl;
-    cout << "array[3] = " << array[3] << endl;
-    cout << "array[4] = " << array[4] << endl;
-    //印出陣列名[索引2]的記憶體位址
-    cout << "記憶體位址 = " << &array[2] << endl;
-    
-    //&陣列名[索引2]，代表取出陣列名[索引2]的記憶體位址，使用*取值運算子把記憶體位址存的值取出來
-    cout << "*記憶體位址 = " << *(&array[2]) << endl;
-    
-    //&陣列名[索引2]+0，記憶體位址往後移動0byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並使用*取值運算子把記憶體位址存的值取出來
-    cout << "*記憶體位址+0 = " << *(&array[2] + 0) << endl;
-    
-    //&陣列名[索引2]+1，記憶體位址往後移動4byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並使用\*取值運算子把記憶體位址存的值取出來
-    cout << "*記憶體位址+1 = " << *(&array[2] + 1) << endl;
-    
-    //&陣列名[索引2]+2，記憶體位址往後移動8byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並使用\*取值運算子把記憶體位址存的值取出來
-    cout << "*記憶體位址+2 = " << *(&array[2] + 2) << endl;
+  int array[5] = {1,2,3,4,5};
+  cout << "array[0] = " << array[0] << endl;
+  cout << "array[1] = " << array[1] << endl;
+  cout << "array[2] = " << array[2] << endl;
+  cout << "array[3] = " << array[3] << endl;
+  cout << "array[4] = " << array[4] << endl;
+  //印出陣列名[索引2]的記憶體位址
+  cout << "記憶體位址 = " << &array[2] << endl;
+  
+  //&陣列名[索引2]，代表取出陣列名[索引2]的記憶體位址，使用*取值運算子把記憶體位址存的值取出來
+  cout << "*記憶體位址 = " << *(&array[2]) << endl;
+  
+  //&陣列名[索引2]+0，記憶體位址往後移動0byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並使用*取值運算子把記憶體位址存的值取出來
+  cout << "*記憶體位址+0 = " << *(&array[2] + 0) << endl;
+  
+  //&陣列名[索引2]+1，記憶體位址往後移動4byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並使用\*取值運算子把記憶體位址存的值取出來
+  cout << "*記憶體位址+1 = " << *(&array[2] + 1) << endl;
+  
+  //&陣列名[索引2]+2，記憶體位址往後移動8byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並使用\*取值運算子把記憶體位址存的值取出來
+  cout << "*記憶體位址+2 = " << *(&array[2] + 2) << endl;
 
-    //(&陣列名[索引2])[0]，記憶體位址往後移動0byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並使用\*取值運算子把記憶體位址存的值取出來
-    cout << "記憶體位址[索引0] = " << (&array[2])[0] << endl;
-    
-    //(&陣列名[索引2])[1]，記憶體位址往後移動4byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並使用\*取值運算子把記憶體位址存的值取出來
-    cout << "記憶體位址[索引1] = " << (&array[2])[1] << endl;
-    
-    //(&陣列名[索引2])[2]，記憶體位址往後移動8byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並使用\*取值運算子把記憶體位址存的值取出來
-    cout << "記憶體位址[索引2] = " << (&array[2])[2] << endl;
+  //(&陣列名[索引2])[0]，記憶體位址往後移動0byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並使用\*取值運算子把記憶體位址存的值取出來
+  cout << "記憶體位址[索引0] = " << (&array[2])[0] << endl;
+  
+  //(&陣列名[索引2])[1]，記憶體位址往後移動4byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並使用\*取值運算子把記憶體位址存的值取出來
+  cout << "記憶體位址[索引1] = " << (&array[2])[1] << endl;
+  
+  //(&陣列名[索引2])[2]，記憶體位址往後移動8byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並使用\*取值運算子把記憶體位址存的值取出來
+  cout << "記憶體位址[索引2] = " << (&array[2])[2] << endl;
 
-    //取出陣列名[索引2]的記憶體位址指派給指標變數p
-    int* p = &array[2];
+  //取出陣列名[索引2]的記憶體位址指派給指標變數p
+  int* p = &array[2];
 
-    //指標[索引0]，記憶體位址往後移動0byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並把記憶體位址存的值取出來
-    cout << "p指標[索引0] = " << p[0] << endl;
-    
-    //指標[索引1]，記憶體位址往後移動4byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並把記憶體位址存的值取出來
-    cout << "p指標[索引1] = " << p[1] << endl;
-    
-    //指標[索引2]，記憶體位址往後移動8byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並把記憶體位址存的值取出來
-    cout << "p指標[索引2] = " << p[2] << endl;
-    return 0;
+  //指標[索引0]，記憶體位址往後移動0byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並把記憶體位址存的值取出來
+  cout << "p指標[索引0] = " << p[0] << endl;
+  
+  //指標[索引1]，記憶體位址往後移動4byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並把記憶體位址存的值取出來
+  cout << "p指標[索引1] = " << p[1] << endl;
+  
+  //指標[索引2]，記憶體位址往後移動8byte(取決於記憶體位址的資料型態，目前的資料型態是int)，並把記憶體位址存的值取出來
+  cout << "p指標[索引2] = " << p[2] << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -398,28 +398,28 @@ p指標[索引2] = 5
 #include <iostream>
 using namespace std;
 int main() {
-    int array[5] = {1,2,3,4,5};
-    int size = sizeof(array) / sizeof(int);
-    for(int i = 0; i < size; i++) {
-        //印出array[i]記憶體位址
-        cout << "array["<< i << "] 記憶體位址 = " << &array[i] << endl;
-        //印出array + i記憶體位址
-        cout << "array+"<< i << " 記憶體位址 = " << array + i << endl;
-        //印出array[i]的值
-        cout << "array["<< i << "] 的值 = " << array[i] << endl;
-        //印出*(array + i)的值
-        cout << "*(array+"<< i << ") 的值 = " << *(array + i) << endl;
-    }
+  int array[5] = {1,2,3,4,5};
+  int size = sizeof(array) / sizeof(int);
+  for (int i = 0; i < size; i++) {
+    //印出array[i]記憶體位址
+    cout << "array["<< i << "] 記憶體位址 = " << &array[i] << endl;
+    //印出array + i記憶體位址
+    cout << "array+"<< i << " 記憶體位址 = " << array + i << endl;
+    //印出array[i]的值
+    cout << "array["<< i << "] 的值 = " << array[i] << endl;
+    //印出*(array + i)的值
+    cout << "*(array+"<< i << ") 的值 = " << *(array + i) << endl;
+  }
 
-    //將陣列名(也就是陣列第0個元素的記憶體位址)指定至指標變數p
-    int* p = array;
-    for(int i = 0; i < size; i++) {
-        //印出p + i的記憶體位址
-        cout << "p + "<< i << " 記憶體位址 = " << p + i << endl;
-        //印出*(p + i)記憶體位址存放的值
-        cout << "*(p + "<< i << ") 的值 = " << *(p + i) << endl;
-    }
-    return 0;
+  //將陣列名(也就是陣列第0個元素的記憶體位址)指定至指標變數p
+  int* p = array;
+  for (int i = 0; i < size; i++) {
+    //印出p + i的記憶體位址
+    cout << "p + "<< i << " 記憶體位址 = " << p + i << endl;
+    //印出*(p + i)記憶體位址存放的值
+    cout << "*(p + "<< i << ") 的值 = " << *(p + i) << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -461,8 +461,8 @@ p + 4 記憶體位址 = 0x7ff7bfeff460
 
 #### 指標++
 ```
-    int array[5] = {1,2,3,4,5};
-    int* p = array;
+  int array[5] = {1,2,3,4,5};
+  int* p = array;
 ```
 將陣列第0個元素的記憶體位址指定至指標變數p。
 
@@ -481,19 +481,19 @@ p++也就是等於 p = p + 1
 #include <iostream>
 using namespace std;
 int main() {
-    int array[5] = {1,2,3,4,5};
-    int size = sizeof(array) / sizeof(int);
-    //將陣列名(也就是陣列第0個元素的記憶體位址)指定至指標變數p
-    int* p = array;
-    for(int i = 0; i < size; i++) {
-        //印出指標變數p的內容(指標存放的內容是記憶體位址)
-        cout << "p + "<< i << " 記憶體位址 = " << (long long)p  << endl;
-        //印出指標變數p記憶體位址存放的值
-        cout << "p + "<< i << " 的值 = " << *p << endl;
-        //p = p + 1，指標變數移動4byte，將移動後的記憶體位址指派給指標變數p
-        p++;
-    }
-    return 0;
+  int array[5] = {1,2,3,4,5};
+  int size = sizeof(array) / sizeof(int);
+  //將陣列名(也就是陣列第0個元素的記憶體位址)指定至指標變數p
+  int* p = array;
+  for (int i = 0; i < size; i++) {
+    //印出指標變數p的內容(指標存放的內容是記憶體位址)
+    cout << "p + "<< i << " 記憶體位址 = " << (long long)p  << endl;
+    //印出指標變數p記憶體位址存放的值
+    cout << "p + "<< i << " 的值 = " << *p << endl;
+    //p = p + 1，指標變數移動4byte，將移動後的記憶體位址指派給指標變數p
+    p++;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -515,14 +515,14 @@ p + 4 的值 = 5
 
 指標先取出記憶體位址存放的值，再往下一個位址移動。
 {% highlight c++ linenos %}
-    //宣告一個陣列
-    int arr[] = {10, 100, 200};
-    //將arr的第一個值(10)的位址傳給ptr指標
-    //ptr是整數型態4byte的指標
-    int *ptr = arr;
-    for(int i = 0; i < 3; i++) {
-        printf("值= %d\n",*ptr++);
-    }
+  //宣告一個陣列
+  int arr[] = {10, 100, 200};
+  //將arr的第一個值(10)的位址傳給ptr指標
+  //ptr是整數型態4byte的指標
+  int *ptr = arr;
+  for (int i = 0; i < 3; i++) {
+    printf("值= %d\n",*ptr++);
+  }
 {% endhighlight %}
 
 ```
@@ -536,14 +536,14 @@ p + 4 的值 = 5
 
 指標先往下一個記憶體位址移動，再取出記憶體位址存放的值。
 {% highlight c++ linenos %}
-    //宣告一個陣列
-    int arr[] = {10, 100, 200};
-    //將arr的第一個值(10)的位址傳給ptr指標
-    //ptr是整數型態4byte的指標
-    int *ptr = arr;
-    for(int i = 0; i < 3; i++) {
-        printf("值= %d\n",*++ptr);
-    }
+  //宣告一個陣列
+  int arr[] = {10, 100, 200};
+  //將arr的第一個值(10)的位址傳給ptr指標
+  //ptr是整數型態4byte的指標
+  int *ptr = arr;
+  for (int i = 0; i < 3; i++) {
+    printf("值= %d\n",*++ptr);
+  }
 {% endhighlight %}
 
 ```
@@ -558,16 +558,16 @@ p + 4 的值 = 5
 將指標指向前一個記憶體位址
 
 {% highlight c++ linenos %}
-    int arr[] = {10, 100, 200};
-    //取得陣列中最後一個值的記憶體位址
-    int *ptr = &arr[2];
-    for(int i = 3; i > 0; i--) {
-        printf("arr[%d]:記憶體位址= %#x\n",i ,ptr);
-        printf("arr[%d]:值= %d\n",i ,*ptr);
-        //將指標指向前一個記憶體位址
-        ptr--;
-    }    
-{% endhighlight %}    
+  int arr[] = {10, 100, 200};
+  //取得陣列中最後一個值的記憶體位址
+  int *ptr = &arr[2];
+  for (int i = 3; i > 0; i--) {
+    printf("arr[%d]:記憶體位址= %#x\n",i ,ptr);
+    printf("arr[%d]:值= %d\n",i ,*ptr);
+    //將指標指向前一個記憶體位址
+    ptr--;
+  }  
+{% endhighlight %}  
 
 ```
 執行結果
@@ -603,25 +603,25 @@ array++;
 #include <iostream>
 using namespace std;
 int main() {
-    //宣告字元陣列 大小20byte
-    char array[20];
-    //將字元陣列的記憶體空間轉型成整數資料型態的記憶體空間
-    //把轉型成整數型態的陣列[0]位址，指派給整數型態的指標變數p
-    int* p = (int*)array;
-    //sizeof(陣列名)取得陣列全部記憶體大小為20byte
-    //再除以整數資料型態的大小sizeof(int) = 4byte
-    int size = sizeof(array)/sizeof(int);
-    cout << "size = " << size << endl;
-    for(int i = 0; i < size; i++) {
-        p[i] = i;//修改記憶體位址中存放的值
-        //上面的寫法與下面的寫法是相同意思
-        //*(p + i) = i;
-    }
-    for(int i = 0; i < size; i++) {
-        //印出記憶體位址存放的值
-        cout <<"*(p + "<< i <<") = " << p[i] << endl;
-    }
-    return 0;
+  //宣告字元陣列 大小20byte
+  char array[20];
+  //將字元陣列的記憶體空間轉型成整數資料型態的記憶體空間
+  //把轉型成整數型態的陣列[0]位址，指派給整數型態的指標變數p
+  int* p = (int*)array;
+  //sizeof(陣列名)取得陣列全部記憶體大小為20byte
+  //再除以整數資料型態的大小sizeof(int) = 4byte
+  int size = sizeof(array)/sizeof(int);
+  cout << "size = " << size << endl;
+  for (int i = 0; i < size; i++) {
+    p[i] = i;//修改記憶體位址中存放的值
+    //上面的寫法與下面的寫法是相同意思
+    //*(p + i) = i;
+  }
+  for (int i = 0; i < size; i++) {
+    //印出記憶體位址存放的值
+    cout <<"*(p + "<< i <<") = " << p[i] << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -657,16 +657,16 @@ void func(int arr[], int len);
 #include <iostream>
 using namespace std;
 void func(int arr[], int len) {
-    cout << "arr指標大小 = " << sizeof(arr) << endl;
-    for(int i = 0; i < len; i++) {
-        //使用*(陣列名 + 索引)印出陣列元素，也可以使用陣列名[索引]的方式印出陣列元素
-        cout << "arr[" << i << "] = " << *(arr + i) << endl;
-    }
+  cout << "arr指標大小 = " << sizeof(arr) << endl;
+  for (int i = 0; i < len; i++) {
+    //使用*(陣列名 + 索引)印出陣列元素，也可以使用陣列名[索引]的方式印出陣列元素
+    cout << "arr[" << i << "] = " << *(arr + i) << endl;
+  }
 }
 int main() {
-    int array[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
-    //參數1傳入陣列名，陣列名為陣列第0個元素的記憶體位址，參數2傳入陣列大小
-    func(array,sizeof(array)/sizeof(int));
+  int array[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+  //參數1傳入陣列名，陣列名為陣列第0個元素的記憶體位址，參數2傳入陣列大小
+  func(array,sizeof(array)/sizeof(int));
 }
 {% endhighlight %}
 

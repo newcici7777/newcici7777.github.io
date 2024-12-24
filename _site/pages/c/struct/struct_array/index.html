@@ -1275,33 +1275,33 @@ Student students[size];
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+  <span class="c1">//學生姓名</span>
+  <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="c1">//學號</span>
+  <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
 <span class="p">}</span><span class="n">Student</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-    <span class="c1">//建立三個學生</span>
-    <span class="n">Student</span> <span class="n">students</span><span class="p">[</span><span class="n">size</span><span class="p">];</span>
-    <span class="c1">//清空資料</span>
-    <span class="c1">//參數1是地址，student陣列名就是陣列記憶體的開始位址</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">students</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">students</span><span class="p">));</span>
-    
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">students</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">name</span><span class="p">,</span><span class="s">"Bill"</span><span class="p">);</span>
-    <span class="n">students</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">students</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">name</span><span class="p">,</span><span class="s">"Mary"</span><span class="p">);</span>
-    <span class="n">students</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">id</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-    
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">students</span><span class="p">[</span><span class="mi">2</span><span class="p">].</span><span class="n">name</span><span class="p">,</span><span class="s">"Jeff"</span><span class="p">);</span>
-    <span class="n">students</span><span class="p">[</span><span class="mi">2</span><span class="p">].</span><span class="n">id</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-    
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="n">students</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">id</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">", name = "</span> <span class="o">&lt;&lt;</span> <span class="n">students</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+  <span class="c1">//建立三個學生</span>
+  <span class="n">Student</span> <span class="n">students</span><span class="p">[</span><span class="n">size</span><span class="p">];</span>
+  <span class="c1">//清空資料</span>
+  <span class="c1">//參數1是地址，student陣列名就是陣列記憶體的開始位址</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">students</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">students</span><span class="p">));</span>
+  
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">students</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">name</span><span class="p">,</span><span class="s">"Bill"</span><span class="p">);</span>
+  <span class="n">students</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">students</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">name</span><span class="p">,</span><span class="s">"Mary"</span><span class="p">);</span>
+  <span class="n">students</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">id</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+  
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">students</span><span class="p">[</span><span class="mi">2</span><span class="p">].</span><span class="n">name</span><span class="p">,</span><span class="s">"Jeff"</span><span class="p">);</span>
+  <span class="n">students</span><span class="p">[</span><span class="mi">2</span><span class="p">].</span><span class="n">id</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+  
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="n">students</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">id</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">", name = "</span> <span class="o">&lt;&lt;</span> <span class="n">students</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1344,27 +1344,27 @@ id = 3, name = Jeff
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+  <span class="c1">//學生姓名</span>
+  <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="c1">//學號</span>
+  <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
 <span class="p">}</span><span class="n">Student</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-    <span class="c1">//建立三個學生</span>
-    <span class="n">Student</span> <span class="n">students</span><span class="p">[</span><span class="n">size</span><span class="p">];</span>
-    <span class="c1">//清空資料</span>
-    <span class="c1">//參數1是地址，student陣列名就是陣列記憶體的開始位址</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">students</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">students</span><span class="p">));</span>
-    <span class="n">students</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Bill"</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
-    <span class="n">students</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
-    <span class="n">students</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Jeff"</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
-    
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="n">students</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">id</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">", name = "</span> <span class="o">&lt;&lt;</span> <span class="n">students</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+  <span class="c1">//建立三個學生</span>
+  <span class="n">Student</span> <span class="n">students</span><span class="p">[</span><span class="n">size</span><span class="p">];</span>
+  <span class="c1">//清空資料</span>
+  <span class="c1">//參數1是地址，student陣列名就是陣列記憶體的開始位址</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">students</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">students</span><span class="p">));</span>
+  <span class="n">students</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Bill"</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
+  <span class="n">students</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
+  <span class="n">students</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Jeff"</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
+  
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="n">students</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">id</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">", name = "</span> <span class="o">&lt;&lt;</span> <span class="n">students</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1421,30 +1421,30 @@ id = 3, name = Jeff
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+  <span class="c1">//學生姓名</span>
+  <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="c1">//學號</span>
+  <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
 <span class="p">}</span><span class="n">Student</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-    <span class="c1">//建立三個學生</span>
-    <span class="n">Student</span> <span class="n">students</span><span class="p">[</span><span class="n">size</span><span class="p">];</span>
-    <span class="c1">//清空資料</span>
-    <span class="c1">//參數1是地址，student陣列名就是陣列記憶體的開始位址</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">students</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">students</span><span class="p">));</span>
-    <span class="n">students</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Bill"</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
-    <span class="n">students</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
-    <span class="n">students</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Jeff"</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
-    
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="mi">0</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">", name = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="mi">0</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="n">i</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">", name = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="n">i</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+  <span class="c1">//建立三個學生</span>
+  <span class="n">Student</span> <span class="n">students</span><span class="p">[</span><span class="n">size</span><span class="p">];</span>
+  <span class="c1">//清空資料</span>
+  <span class="c1">//參數1是地址，student陣列名就是陣列記憶體的開始位址</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">students</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">students</span><span class="p">));</span>
+  <span class="n">students</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Bill"</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
+  <span class="n">students</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
+  <span class="n">students</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Jeff"</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
+  
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="mi">0</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">", name = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="mi">0</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="n">i</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">", name = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="n">i</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1464,9 +1464,9 @@ id = 3, name = Jeff
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>    <span class="o">*</span><span class="p">(</span><span class="n">students</span> <span class="o">+</span> <span class="mi">0</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Bill"</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">students</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">students</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Jeff"</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
+</pre></td><td class="code"><pre>  <span class="o">*</span><span class="p">(</span><span class="n">students</span> <span class="o">+</span> <span class="mi">0</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Bill"</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
+  <span class="o">*</span><span class="p">(</span><span class="n">students</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
+  <span class="o">*</span><span class="p">(</span><span class="n">students</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Jeff"</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1504,30 +1504,30 @@ id = 3, name = Jeff
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+  <span class="c1">//學生姓名</span>
+  <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="c1">//學號</span>
+  <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
 <span class="p">}</span><span class="n">Student</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-    <span class="c1">//建立三個學生</span>
-    <span class="n">Student</span> <span class="n">students</span><span class="p">[</span><span class="n">size</span><span class="p">];</span>
-    <span class="c1">//清空資料</span>
-    <span class="c1">//參數1是地址，student陣列名就是陣列記憶體的開始位址</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">students</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">students</span><span class="p">));</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">students</span> <span class="o">+</span> <span class="mi">0</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Bill"</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">students</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
-    <span class="o">*</span><span class="p">(</span><span class="n">students</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Jeff"</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
-    
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="mi">0</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">", name = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="mi">0</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="n">i</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">", name = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="n">i</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+  <span class="c1">//建立三個學生</span>
+  <span class="n">Student</span> <span class="n">students</span><span class="p">[</span><span class="n">size</span><span class="p">];</span>
+  <span class="c1">//清空資料</span>
+  <span class="c1">//參數1是地址，student陣列名就是陣列記憶體的開始位址</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">students</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">students</span><span class="p">));</span>
+  <span class="o">*</span><span class="p">(</span><span class="n">students</span> <span class="o">+</span> <span class="mi">0</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Bill"</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
+  <span class="o">*</span><span class="p">(</span><span class="n">students</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Mary"</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
+  <span class="o">*</span><span class="p">(</span><span class="n">students</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Jeff"</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
+  
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="mi">0</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">", name = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="mi">0</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="n">i</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">", name = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">students</span><span class="o">+</span><span class="n">i</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1722,7 +1722,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

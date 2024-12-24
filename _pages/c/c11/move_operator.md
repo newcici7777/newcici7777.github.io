@@ -20,17 +20,17 @@ Prerequisites:
 
 以下的拷貝函式，針對指標(m_ptr)動態分配記憶體位址，將來源(source)物件指標內容拷貝到新分配的記憶體位址。
 {% highlight c++ linenos %}
-    Student(const Student &s) {
-        //判斷來源(source)m_ptr是否null
-        if(s.m_ptr) {
-        	//動態分配記憶體位址
-            m_ptr = new int;
-            //拷貝來源物件m_ptr指標到新的記憶體位址
-            memcpy(m_ptr, src.m_ptr, sizeof(int));
-        } else {
-            m_ptr = nullptr;
-        }
+  Student(const Student &s) {
+    //判斷來源(source)m_ptr是否null
+    if(s.m_ptr) {
+    	//動態分配記憶體位址
+      m_ptr = new int;
+      //拷貝來源物件m_ptr指標到新的記憶體位址
+      memcpy(m_ptr, src.m_ptr, sizeof(int));
+    } else {
+      m_ptr = nullptr;
     }
+  }
 {% endhighlight %}
 
 以上程式碼若拷貝的容量很大，將會花費許多時間在拷貝資料。
@@ -61,21 +61,21 @@ Prerequisites:
 ### 指標轉移語法
 
 {% highlight c++ linenos %}
-    Student(Student&& src) {
-        cout << "移動建構子" << endl;
-        //把來源的指標移到m_ptr
-        m_ptr = src.m_ptr;
-        //把來源的指標設nullptr
-        src.m_ptr = nullptr;
-    }
-    Student& operator=(Student&& src) {
-        cout << "移動指派運算子" << endl;
-        //把來源的指標移到m_ptr
-        m_ptr = src.m_ptr;
-        //把來源的指標設nullptr
-        src.m_ptr = nullptr;
-        return *this;
-    }
+  Student(Student&& src) {
+    cout << "移動建構子" << endl;
+    //把來源的指標移到m_ptr
+    m_ptr = src.m_ptr;
+    //把來源的指標設nullptr
+    src.m_ptr = nullptr;
+  }
+  Student& operator=(Student&& src) {
+    cout << "移動指派運算子" << endl;
+    //把來源的指標移到m_ptr
+    m_ptr = src.m_ptr;
+    //把來源的指標設nullptr
+    src.m_ptr = nullptr;
+    return *this;
+  }
 {% endhighlight %}
 
 ### 使用右值移動建構子
@@ -90,82 +90,82 @@ Prerequisites:
 using namespace std;
 class Student {
 public:
-    int* m_ptr;
+  int* m_ptr;
 public:
-    Student() {
-        cout << "建構子" << endl;
-        //初始化成員變數
-        m_ptr = nullptr;
+  Student() {
+    cout << "建構子" << endl;
+    //初始化成員變數
+    m_ptr = nullptr;
+  }
+  Student(const Student &src) {
+    cout << "左值拷貝函式" << endl;
+    //判斷來源(source)m_ptr不是null
+    if(src.m_ptr) {
+      //動態分配記憶體位址
+      m_ptr = new int;
+      //拷貝來源物件m_ptr指標到新的記憶體位址
+      memcpy(m_ptr, src.m_ptr, sizeof(int));
+    } else {
+      m_ptr = nullptr;
     }
-    Student(const Student &src) {
-        cout << "左值拷貝函式" << endl;
-        //判斷來源(source)m_ptr不是null
-        if(src.m_ptr) {
-            //動態分配記憶體位址
-            m_ptr = new int;
-            //拷貝來源物件m_ptr指標到新的記憶體位址
-            memcpy(m_ptr, src.m_ptr, sizeof(int));
-        } else {
-            m_ptr = nullptr;
-        }
-    }
-    Student& operator=(const Student& src) {
-        cout << "左值指派運算子" << endl;
-        //如果來源物件的m_ptr指標是空
-        if(src.m_ptr == nullptr) {
-            //要把目的物件清空(如果目的物件不是空的話)
-            if(m_ptr != nullptr) {
-                delete m_ptr;
-                m_ptr = nullptr;
-            }
-        } else {
-            //如果目的物件為空
-            if(m_ptr == nullptr) {
-                //動態分配記憶體
-                m_ptr = new int;
-                memset(m_ptr, 0, sizeof(int));
-            }
-            //記憶體的值拷貝
-            memcpy(m_ptr, src.m_ptr, sizeof(int));
-        }
-        return *this;
-    }
-    Student(Student&& src) {
-        cout << "右值移動建構子" << endl;
-        //把來源的指標移到m_ptr
-        m_ptr = src.m_ptr;
-        //把來源的指標設nullptr
-        src.m_ptr = nullptr;
-    }
-    Student& operator=(Student&& src) {
-        cout << "右值移動指派運算子" << endl;
-        //把來源的指標移到m_ptr
-        m_ptr = src.m_ptr;
-        //把來源的指標設nullptr
-        src.m_ptr = nullptr;
-        return *this;
-    }
-    ~Student() {
+  }
+  Student& operator=(const Student& src) {
+    cout << "左值指派運算子" << endl;
+    //如果來源物件的m_ptr指標是空
+    if(src.m_ptr == nullptr) {
+      //要把目的物件清空(如果目的物件不是空的話)
+      if(m_ptr != nullptr) {
         delete m_ptr;
         m_ptr = nullptr;
-        cout << "解構子" << endl;
+      }
+    } else {
+      //如果目的物件為空
+      if(m_ptr == nullptr) {
+        //動態分配記憶體
+        m_ptr = new int;
+        memset(m_ptr, 0, sizeof(int));
+      }
+      //記憶體的值拷貝
+      memcpy(m_ptr, src.m_ptr, sizeof(int));
     }
-    void print() {
-        //印出記憶體位址
-        cout << "m_ptr address:" << &m_ptr << endl;
-        cout << "m_ptr value = " << *m_ptr << endl;
-    }
+    return *this;
+  }
+  Student(Student&& src) {
+    cout << "右值移動建構子" << endl;
+    //把來源的指標移到m_ptr
+    m_ptr = src.m_ptr;
+    //把來源的指標設nullptr
+    src.m_ptr = nullptr;
+  }
+  Student& operator=(Student&& src) {
+    cout << "右值移動指派運算子" << endl;
+    //把來源的指標移到m_ptr
+    m_ptr = src.m_ptr;
+    //把來源的指標設nullptr
+    src.m_ptr = nullptr;
+    return *this;
+  }
+  ~Student() {
+    delete m_ptr;
+    m_ptr = nullptr;
+    cout << "解構子" << endl;
+  }
+  void print() {
+    //印出記憶體位址
+    cout << "m_ptr address:" << &m_ptr << endl;
+    cout << "m_ptr value = " << *m_ptr << endl;
+  }
 };
 int main() {
-    //右值指派運算子
-    Student s4 = [] {
-        Student s;
-        s.m_ptr = new int;
-        *s.m_ptr = 200;
-        return s;
-    }();
-    cout << "s4 mptr = " << *s4.m_ptr << endl;
-    return 0;
+  //右值指派運算子
+  Student s4 = [] {
+    Student s;
+    s.m_ptr = new int;
+    *s.m_ptr = 200;
+    return s;
+  }();
+  cout << "s4 mptr = " << *s4.m_ptr << endl;
+  return 0;
 }
 {% endhighlight %}
 

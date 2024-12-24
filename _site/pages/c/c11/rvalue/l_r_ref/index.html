@@ -1238,13 +1238,13 @@
 8
 9
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="kt">int</span><span class="o">&amp;</span> <span class="n">l_ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"l-value ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">l_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"=== modify ref === "</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">l_ref</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"l-value ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">l_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">&amp;</span> <span class="n">l_ref</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"l-value ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">l_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"=== modify ref === "</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">l_ref</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"l-value ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">l_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1275,12 +1275,12 @@ int&amp;&amp; r_ref = 100;
 7
 8
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r_ref</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"r-value ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">r_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"=== modify ref === "</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">r_ref</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"r-value ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">r_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r_ref</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"r-value ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">r_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"=== modify ref === "</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">r_ref</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"r-value ref = "</span> <span class="o">&lt;&lt;</span> <span class="n">r_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1300,9 +1300,9 @@ r-value ref = 1000
 4
 5
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"r address = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">r</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"r address = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">r</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1322,11 +1322,11 @@ r-value ref = 1000
 5
 6
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//r-value</span>
-    <span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before r = "</span> <span class="o">&lt;&lt;</span> <span class="n">r</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">r</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After r = "</span> <span class="o">&lt;&lt;</span> <span class="n">r</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//r-value</span>
+  <span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before r = "</span> <span class="o">&lt;&lt;</span> <span class="n">r</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">r</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After r = "</span> <span class="o">&lt;&lt;</span> <span class="n">r</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1347,11 +1347,11 @@ After r = 20
 6
 7
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//l_val是l-value</span>
-    <span class="kt">int</span> <span class="n">l_val</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="c1">//定義右值參考</span>
-    <span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r_val_ref</span> <span class="o">=</span> <span class="n">l_val</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//l_val是l-value</span>
+  <span class="kt">int</span> <span class="n">l_val</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="c1">//定義右值參考</span>
+  <span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r_val_ref</span> <span class="o">=</span> <span class="n">l_val</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1367,9 +1367,9 @@ After r = 20
 4
 5
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// 10 is r-value</span>
-    <span class="kt">int</span><span class="o">&amp;</span> <span class="n">l_val_ref</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">// 10 is r-value</span>
+  <span class="kt">int</span><span class="o">&amp;</span> <span class="n">l_val_ref</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1392,14 +1392,14 @@ After r = 20
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="kt">int</span><span class="o">&amp;</span> <span class="n">l_ref</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">l_ref</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">l_ref</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"before i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">func</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"after i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"before i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">func</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"after i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1422,11 +1422,11 @@ after i = 20
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r_ref</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"r-value = "</span> <span class="o">&lt;&lt;</span> <span class="n">r_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"r-value = "</span> <span class="o">&lt;&lt;</span> <span class="n">r_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">func</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">func</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1447,11 +1447,11 @@ after i = 20
 6
 7
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span><span class="o">&amp;&amp;</span> <span class="n">r_ref</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"r-value = "</span> <span class="o">&lt;&lt;</span> <span class="n">r_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"r-value = "</span> <span class="o">&lt;&lt;</span> <span class="n">r_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">func1</span><span class="p">(</span><span class="sc">'B'</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">func1</span><span class="p">(</span><span class="sc">'B'</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1499,24 +1499,24 @@ Student&amp;&amp; s1 = getStudent1();
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-    <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
 <span class="p">};</span>
 <span class="n">Student</span> <span class="n">getStudent1</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">s</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">s</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="n">Student</span> <span class="n">getStudent2</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//臨時物件</span>
-    <span class="k">return</span> <span class="n">Student</span><span class="p">();</span>
+  <span class="c1">//臨時物件</span>
+  <span class="k">return</span> <span class="n">Student</span><span class="p">();</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span><span class="o">&amp;&amp;</span> <span class="n">s1</span> <span class="o">=</span> <span class="n">getStudent1</span><span class="p">();</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 name = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">Student</span><span class="o">&amp;&amp;</span> <span class="n">s2</span> <span class="o">=</span> <span class="n">getStudent2</span><span class="p">();</span>
-    <span class="n">s2</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 name = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span><span class="o">&amp;&amp;</span> <span class="n">s1</span> <span class="o">=</span> <span class="n">getStudent1</span><span class="p">();</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 name = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">Student</span><span class="o">&amp;&amp;</span> <span class="n">s2</span> <span class="o">=</span> <span class="n">getStudent2</span><span class="p">();</span>
+  <span class="n">s2</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Mary"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s2 name = "</span> <span class="o">&lt;&lt;</span> <span class="n">s2</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1715,7 +1715,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

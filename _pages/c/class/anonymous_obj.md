@@ -19,14 +19,14 @@ keywords: c++, Anonymous Object
 using namespace std;
 class Student {
 public:
-    //建構子
-    Student() {
-        cout << "建構子" << endl;
-    }
-    //解構子
-    ~Student() {
-        cout << "解構子" << endl;
-    }
+  //建構子
+  Student() {
+    cout << "建構子" << endl;
+  }
+  //解構子
+  ~Student() {
+    cout << "解構子" << endl;
+  }
 };
 int main() {
   //建立匿名物件
@@ -46,14 +46,14 @@ int main() {
 using namespace std;
 class Student {
 public:
-    //建構子
-    Student() {
-        cout << "建構子" << endl;
-    }
-    //解構子
-    ~Student() {
-        cout << "解構子" << endl;
-    }
+  //建構子
+  Student() {
+    cout << "建構子" << endl;
+  }
+  //解構子
+  ~Student() {
+    cout << "解構子" << endl;
+  }
 };
 Student createStudent() {
   return Student();
@@ -75,14 +75,14 @@ int main() {
 using namespace std;
 class Student {
 public:
-    //建構子
-    Student() {
-        cout << "建構子" << endl;
-    }
-    //解構子
-    ~Student() {
-        cout << "解構子" << endl;
-    }
+  //建構子
+  Student() {
+    cout << "建構子" << endl;
+  }
+  //解構子
+  ~Student() {
+    cout << "解構子" << endl;
+  }
 };
 int main() {
   Student s1 = Student();
@@ -127,9 +127,9 @@ int main() {
 #include <string>
 using namespace std;
 int main() {
-    map<int, string> m;
-    m.insert({ {8, "cici"}, {3, "john"} });
-    return 0;
+  map<int, string> m;
+  m.insert({ {8, "cici"}, {3, "john"} });
+  return 0;
 }
 {% endhighlight %}
 

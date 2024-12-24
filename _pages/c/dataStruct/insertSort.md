@@ -45,36 +45,36 @@ j的起始位置為i-1，也就是從i的位置以前(不含i)去搜尋有沒有
 ## 完整程式碼
 {% highlight c++ linenos %}
 void insertSort(int arr[], int len) {
-    for(int i = 1; i < len; i++) {
-        int temp = arr[i];
-        int j = i - 1;
-        for(; j >= 0; j--) {
-            if(arr[j] > temp) {
-                arr[j + 1] = arr[j];
-            } else {
-                //若i=1,j=0
-                //6放進arr[0+1]之後，就會離開這個迴圈，因為j--，j=-1
-                //j=-1，就不會執行以下這一行
-                break;
-            }
-        }
+  for(int i = 1; i < len; i++) {
+    int temp = arr[i];
+    int j = i - 1;
+    for(; j >= 0; j--) {
+      if(arr[j] > temp) {
+        arr[j + 1] = arr[j];
+      } else {
         //若i=1,j=0
-        //6放進arr[j+1]之後，就會離開迴圈，j--，j=-1
-        //arr[1]=6
-        //arr[-1 + 1] = 5
-        //arr[0] = 5
-        arr[j + 1] = temp;
+        //6放進arr[0+1]之後，就會離開這個迴圈，因為j--，j=-1
+        //j=-1，就不會執行以下這一行
+        break;
+      }
     }
+    //若i=1,j=0
+    //6放進arr[j+1]之後，就會離開迴圈，j--，j=-1
+    //arr[1]=6
+    //arr[-1 + 1] = 5
+    //arr[0] = 5
+    arr[j + 1] = temp;
+  }
 }
 int main() {
-    int arr[] = {6,5,4,3,2,1};
-    int len = sizeof(arr)/sizeof(int);
-    insertSort(arr, len);
-    for(int i = 0; i < len; i++) {
-        cout << arr[i] << ",";
-    }
-    cout << endl;
-    return 0;
+  int arr[] = {6,5,4,3,2,1};
+  int len = sizeof(arr)/sizeof(int);
+  insertSort(arr, len);
+  for(int i = 0; i < len; i++) {
+    cout << arr[i] << ",";
+  }
+  cout << endl;
+  return 0;
 }
 {% endhighlight %}
 ```

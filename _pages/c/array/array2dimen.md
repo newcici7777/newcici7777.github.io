@@ -9,13 +9,13 @@ keywords: c++, two dimensional arrays
 ### 初始化方法1
 
 {% highlight c++ linenos %}
-    int arr[2][3] = { {1,2,3}, {4,5,6} };
-    cout << "arr[0][0] = " << arr[0][0] << endl;
-    cout << "arr[0][1] = " << arr[0][1] << endl;
-    cout << "arr[0][2] = " << arr[0][2] << endl;
-    cout << "arr[1][0] = " << arr[1][0] << endl;
-    cout << "arr[1][1] = " << arr[1][1] << endl;
-    cout << "arr[1][2] = " << arr[1][2] << endl;
+  int arr[2][3] = { {1,2,3}, {4,5,6} };
+  cout << "arr[0][0] = " << arr[0][0] << endl;
+  cout << "arr[0][1] = " << arr[0][1] << endl;
+  cout << "arr[0][2] = " << arr[0][2] << endl;
+  cout << "arr[1][0] = " << arr[1][0] << endl;
+  cout << "arr[1][1] = " << arr[1][1] << endl;
+  cout << "arr[1][2] = " << arr[1][2] << endl;
 {% endhighlight %}
 ```
 arr[0][0] = 1
@@ -28,13 +28,13 @@ arr[1][2] = 6
 ### 初始化方法2
 
 {% highlight c++ linenos %}
-    int arr[2][3] = {1,2,3,4,5,6};
-    cout << "arr[0][0] = " << arr[0][0] << endl;
-    cout << "arr[0][1] = " << arr[0][1] << endl;
-    cout << "arr[0][2] = " << arr[0][2] << endl;
-    cout << "arr[1][0] = " << arr[1][0] << endl;
-    cout << "arr[1][1] = " << arr[1][1] << endl;
-    cout << "arr[1][2] = " << arr[1][2] << endl;
+  int arr[2][3] = {1,2,3,4,5,6};
+  cout << "arr[0][0] = " << arr[0][0] << endl;
+  cout << "arr[0][1] = " << arr[0][1] << endl;
+  cout << "arr[0][2] = " << arr[0][2] << endl;
+  cout << "arr[1][0] = " << arr[1][0] << endl;
+  cout << "arr[1][1] = " << arr[1][1] << endl;
+  cout << "arr[1][2] = " << arr[1][2] << endl;
 {% endhighlight %}
 
 ### 初始化方法3
@@ -42,19 +42,19 @@ arr[1][2] = 6
 第1個[]中不用寫長度，第2個[]中要寫長度。
 
 {% highlight c++ linenos %}
-    int arr[][3] = {1,2,3,4,5,6};
-    cout << "arr[0][0] = " << arr[0][0] << endl;
-    cout << "arr[0][1] = " << arr[0][1] << endl;
-    cout << "arr[0][2] = " << arr[0][2] << endl;
-    cout << "arr[1][0] = " << arr[1][0] << endl;
-    cout << "arr[1][1] = " << arr[1][1] << endl;
-    cout << "arr[1][2] = " << arr[1][2] << endl;
+  int arr[][3] = {1,2,3,4,5,6};
+  cout << "arr[0][0] = " << arr[0][0] << endl;
+  cout << "arr[0][1] = " << arr[0][1] << endl;
+  cout << "arr[0][2] = " << arr[0][2] << endl;
+  cout << "arr[1][0] = " << arr[1][0] << endl;
+  cout << "arr[1][1] = " << arr[1][1] << endl;
+  cout << "arr[1][2] = " << arr[1][2] << endl;
 {% endhighlight %}
 
 C11之後不用有等號
 
 {% highlight c++ linenos %}
-    int arr[][3]{1,2,3,4,5,6};
+  int arr[][3]{1,2,3,4,5,6};
 {% endhighlight %}
 
 以上印出結果都是一樣。
@@ -66,8 +66,8 @@ sizeof在二維陣列的使用方式是取出陣列占記憶體全部的byte。
 以下的例子二維陣列有6個元素，每個元素是整數4byte，所以陣列占的記憶體大小為6\*4 = 24
 
 {% highlight c++ linenos %}
-    int arr[][3] {1,2,3,4,5,6};
-    cout << "arr size = " << sizeof(arr) << endl;
+  int arr[][3] {1,2,3,4,5,6};
+  cout << "arr size = " << sizeof(arr) << endl;
 {% endhighlight %}
 
 ```
@@ -85,46 +85,46 @@ arr size = 24
 #include <iostream>
 using namespace std;
 int main() {
-    //宣告陣列長度，初始化陣列全部元素為整數0
-    int arr[2][3] = {0};
-    
-    //指派值到二維陣列
-    arr[0][0] = 1;
-    arr[0][1] = 2;
-    arr[0][2] = 3;
-    
-    arr[1][0] = 4;
-    arr[1][1] = 5;
-    arr[1][2] = 6;
-    
-    //印出值
-    cout << "arr[0][0] = " << arr[0][0] << endl;
-    cout << "arr[0][1] = " << arr[0][1] << endl;
-    cout << "arr[0][2] = " << arr[0][2] << endl;
-    cout << "arr[1][0] = " << arr[1][0] << endl;
-    cout << "arr[1][1] = " << arr[1][1] << endl;
-    cout << "arr[1][2] = " << arr[1][2] << endl;
-    
-    //記憶體位址是連續
-    cout << "arr[0][0]位址 = " << (long long)&arr[0][0] << endl;
-    cout << "arr[0][1]位址 = " << (long long)&arr[0][1] << endl;
-    cout << "arr[0][2]位址 = " << (long long)&arr[0][2] << endl;
-    cout << "arr[1][0]位址 = " << (long long)&arr[1][0] << endl;
-    cout << "arr[1][1]位址 = " << (long long)&arr[1][1] << endl;
-    cout << "arr[1][2]位址 = " << (long long)&arr[1][2] << endl;
-    
-    //因為記憶體位址都是連續的，把二維陣列[0][0]記憶體位址指派給指標p
-    int* p = (int*)arr;
-    //取得arr變數記憶體大小
-    int size = sizeof(arr) / sizeof(int);
-    
-    for(int i = 0; i < size; i++) {
-        //使用指標運算印出每個元素的值
-        cout << "*(p + " << i << ") = " << *(p+i) << ",";
-        //使用索引方式印出值
-        cout << " [" << i << "] = " << p[i] << endl;
-    }
-    return 0;
+  //宣告陣列長度，初始化陣列全部元素為整數0
+  int arr[2][3] = {0};
+  
+  //指派值到二維陣列
+  arr[0][0] = 1;
+  arr[0][1] = 2;
+  arr[0][2] = 3;
+  
+  arr[1][0] = 4;
+  arr[1][1] = 5;
+  arr[1][2] = 6;
+  
+  //印出值
+  cout << "arr[0][0] = " << arr[0][0] << endl;
+  cout << "arr[0][1] = " << arr[0][1] << endl;
+  cout << "arr[0][2] = " << arr[0][2] << endl;
+  cout << "arr[1][0] = " << arr[1][0] << endl;
+  cout << "arr[1][1] = " << arr[1][1] << endl;
+  cout << "arr[1][2] = " << arr[1][2] << endl;
+  
+  //記憶體位址是連續
+  cout << "arr[0][0]位址 = " << (long long)&arr[0][0] << endl;
+  cout << "arr[0][1]位址 = " << (long long)&arr[0][1] << endl;
+  cout << "arr[0][2]位址 = " << (long long)&arr[0][2] << endl;
+  cout << "arr[1][0]位址 = " << (long long)&arr[1][0] << endl;
+  cout << "arr[1][1]位址 = " << (long long)&arr[1][1] << endl;
+  cout << "arr[1][2]位址 = " << (long long)&arr[1][2] << endl;
+  
+  //因為記憶體位址都是連續的，把二維陣列[0][0]記憶體位址指派給指標p
+  int* p = (int*)arr;
+  //取得arr變數記憶體大小
+  int size = sizeof(arr) / sizeof(int);
+  
+  for (int i = 0; i < size; i++) {
+    //使用指標運算印出每個元素的值
+    cout << "*(p + " << i << ") = " << *(p+i) << ",";
+    //使用索引方式印出值
+    cout << " [" << i << "] = " << p[i] << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 
@@ -166,11 +166,11 @@ arr[1][2]位址 = 140702053823588
 
 {% highlight c++ linenos %}
 int main() {
-    //[3]代表二維陣列每個元素是大小為3的一維陣列。
-    int arr[2][3] = { {1,2,3},{4,5,6} };
-    //[3]代表二維陣列每個元素是大小為3的一維陣列。
-    int (*p)[3] = arr;
-    return 0;
+  //[3]代表二維陣列每個元素是大小為3的一維陣列。
+  int arr[2][3] = { {1,2,3},{4,5,6} };
+  //[3]代表二維陣列每個元素是大小為3的一維陣列。
+  int (*p)[3] = arr;
+  return 0;
 }
 {% endhighlight %}
 
@@ -207,18 +207,18 @@ int* p = (int*)arr;
 #include <iostream>
 using namespace std;
 void func(int (*p)[3], int len) {
-    for(int i = 0; i < len; i++) {
-        for(int j = 0; j < 3; j++) {
-            cout << "p[" << i << "][" << i << "] = " << p[i][j] << "\t";
-        }
-        cout << endl;
+  for (int i = 0; i < len; i++) {
+    for (int j = 0; j < 3; j++) {
+      cout << "p[" << i << "][" << i << "] = " << p[i][j] << "\t";
     }
+    cout << endl;
+  }
 }
 int main() {
-    //[3]代表每個元素是大小為3的一維陣列。
-    int arr[2][3] = { {1,2,3},{4,5,6} };
-    func(arr, 2);
-    return 0;
+  //[3]代表每個元素是大小為3的一維陣列。
+  int arr[2][3] = { {1,2,3},{4,5,6} };
+  func(arr, 2);
+  return 0;
 }
 {% endhighlight %}
 
@@ -253,24 +253,24 @@ void func(int p[][2][3], int len);
 #include <iostream>
 using namespace std;
 void func(int (*p)[2][3], int len) {
-    for(int i = 0; i < len; i++) {
-        for(int j = 0; j < 2; j++) {
-            for(int k = 0; k < 3; k++) {
-                cout << "p[" << i << "][" << j << "][" << k << "] = " << p[i][j][k] << "\t";
-            }
-            cout << endl;
-        }
-        cout << endl;
+  for (int i = 0; i < len; i++) {
+    for (int j = 0; j < 2; j++) {
+      for (int k = 0; k < 3; k++) {
+        cout << "p[" << i << "][" << j << "][" << k << "] = " << p[i][j][k] << "\t";
+      }
+      cout << endl;
     }
+    cout << endl;
+  }
 }
 int main() {
-    int arr[2][2][3] =
-    {
-        { {1,2,3}, {4,5,6} },
-        { {7,8,9}, {10,11,12} }
-    };
-    func(arr, 2);
-    return 0;
+  int arr[2][2][3] =
+  {
+    { {1,2,3}, {4,5,6} },
+    { {7,8,9}, {10,11,12} }
+  };
+  func(arr, 2);
+  return 0;
 }
 {% endhighlight %}
 
@@ -291,35 +291,35 @@ const int firstMax = 2;
 const int secondMax = 2;
 const int thirdMax = 3;
 void modifyArr(int p[][secondMax][thirdMax], int len) {
-    for(int i = 0; i < len; i++) {
-        for(int j = 0; j < secondMax; j++) {
-            for(int k = 0; k < thirdMax; k++) {
-                //修改指標記憶體位址的值
-                p[i][j][k] += 10;
-            }
-        }// end of j
-    }// end of i
+  for (int i = 0; i < len; i++) {
+    for (int j = 0; j < secondMax; j++) {
+      for (int k = 0; k < thirdMax; k++) {
+        //修改指標記憶體位址的值
+        p[i][j][k] += 10;
+      }
+    }// end of j
+  }// end of i
 }
 void printArr(int (*p)[secondMax][thirdMax], int len) {
-    for(int i = 0; i < len; i++) {
-        for(int j = 0; j < secondMax; j++) {
-            for(int k = 0; k < thirdMax; k++) {
-                cout << "p[" << i << "][" << j << "][" << k << "] = " << p[i][j][k] << "\t";
-            }
-            cout << endl;
-        }// end of j
-        cout << endl;
-    }//end of  i
+  for (int i = 0; i < len; i++) {
+    for (int j = 0; j < secondMax; j++) {
+      for (int k = 0; k < thirdMax; k++) {
+        cout << "p[" << i << "][" << j << "][" << k << "] = " << p[i][j][k] << "\t";
+      }
+      cout << endl;
+    }// end of j
+    cout << endl;
+  }//end of  i
 }
 int main() {
-    int arr[firstMax][secondMax][thirdMax] =
-    {
-        { {1,2,3}, {4,5,6} },
-        { {7,8,9}, {10,11,12} }
-    };
-    modifyArr(arr, firstMax);
-    printArr(arr, firstMax);
-    return 0;
+  int arr[firstMax][secondMax][thirdMax] =
+  {
+    { {1,2,3}, {4,5,6} },
+    { {7,8,9}, {10,11,12} }
+  };
+  modifyArr(arr, firstMax);
+  printArr(arr, firstMax);
+  return 0;
 }
 
 {% endhighlight %}

@@ -25,17 +25,17 @@ Student *ptr = &student;
 #include <iostream>
 using namespace std;
 typedef struct{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
+  //學生姓名
+  char* name;
+  //學號
+  int id;
 }Student;
 int main() {
-    Student student = {"marry", 1};
-    Student *ptr = &student;
-    cout << "姓名 : " << (*ptr).name << endl;
-    cout << "學號 : " << (*ptr).id << endl;
-    return 0;
+  Student student = {"marry", 1};
+  Student *ptr = &student;
+  cout << "姓名 : " << (*ptr).name << endl;
+  cout << "學號 : " << (*ptr).id << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -48,16 +48,16 @@ int main() {
 #include <iostream>
 using namespace std;
 typedef struct{
-    //學生姓名
-    char* name;
-    //學號
-    int id;
+  //學生姓名
+  char* name;
+  //學號
+  int id;
 }Student;
 int main() {
-    Student student = {"marry", 1};
-    Student *ptr = &student;
-    cout << "姓名 : " << ptr->name << endl;
-    cout << "學號 : " << ptr->id << endl;
-    return 0;
+  Student student = {"marry", 1};
+  Student *ptr = &student;
+  cout << "姓名 : " << ptr->name << endl;
+  cout << "學號 : " << ptr->id << endl;
+  return 0;
 }
 {% endhighlight %}

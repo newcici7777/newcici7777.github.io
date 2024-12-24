@@ -77,62 +77,62 @@ strncpy(values, findStart + 2 + fieldLen , valueLen);
  values存放找到的值
  **/
 bool xmlSearch(const char* xmlbuffer, const char* fieldname, char* values) {
-    //檢查參數有沒有值
-    if(xmlbuffer == 0 || fieldname == 0 || values == 0) return false;
+  //檢查參數有沒有值
+  if(xmlbuffer == 0 || fieldname == 0 || values == 0) return false;
+  
+  //搜尋的欄位名大小
+  size_t fieldLen = strlen(fieldname);
+  //組成xml搜尋字串
+  //例，找xml標籤名是name的值
+  //開始 標籤名的字串
+  //<name>\0
+  //字串大小為2個<>尖括號+1個結尾空字元0+標籤名name大小
+  char* startField = new char[2 + 1 + fieldLen];
+  //清空陣列
+  memset(startField, 0, sizeof(startField));
+  strcpy(startField, "<"); strcat(startField, fieldname); strcat(startField, ">");
+  //結束 標籤名的字串
+  //</name>\0
+  //字串大小為3個</>符號+1個結尾空字元0+標籤名name大小
+  char* endField = new char[3 + 1 + fieldLen];
+  //清空陣列
+  memset(endField, 0, sizeof(endField));
+  strcpy(endField, "</"); strcat(endField, fieldname); strcat(endField, ">");
+  //搜<name>
+  char* findStart = (char*)strstr(xmlbuffer, startField);
+  //搜</name>
+  char* findEnd = (char*)strstr(xmlbuffer, endField);
+  //在xml字串中找到<name>與</name>
+  if(findStart && findEnd) {
+    //截取<name>.......</name>中間的值，儲存在value字串
+    //計算<name>.......</name>中間的值個數
+    size_t valueLen = findEnd - findStart - fieldLen - 2;
+    //findStart + 2 + fieldLen 是指將指標移動到<name>的後面
+    //以下第三個參數代表拷貝個數
+    strncpy(values, findStart + 2 + fieldLen , valueLen);
     
-    //搜尋的欄位名大小
-    size_t fieldLen = strlen(fieldname);
-    //組成xml搜尋字串
-    //例，找xml標籤名是name的值
-    //開始 標籤名的字串
-    //<name>\0
-    //字串大小為2個<>尖括號+1個結尾空字元0+標籤名name大小
-    char* startField = new char[2 + 1 + fieldLen];
-    //清空陣列
-    memset(startField, 0, sizeof(startField));
-    strcpy(startField, "<"); strcat(startField, fieldname); strcat(startField, ">");
-    //結束 標籤名的字串
-    //</name>\0
-    //字串大小為3個</>符號+1個結尾空字元0+標籤名name大小
-    char* endField = new char[3 + 1 + fieldLen];
-    //清空陣列
-    memset(endField, 0, sizeof(endField));
-    strcpy(endField, "</"); strcat(endField, fieldname); strcat(endField, ">");
-    //搜<name>
-    char* findStart = (char*)strstr(xmlbuffer, startField);
-    //搜</name>
-    char* findEnd = (char*)strstr(xmlbuffer, endField);
-    //在xml字串中找到<name>與</name>
-    if(findStart && findEnd) {
-        //截取<name>.......</name>中間的值，儲存在value字串
-        //計算<name>.......</name>中間的值個數
-        size_t valueLen = findEnd - findStart - fieldLen - 2;
-        //findStart + 2 + fieldLen 是指將指標移動到<name>的後面
-        //以下第三個參數代表拷貝個數
-        strncpy(values, findStart + 2 + fieldLen , valueLen);
-        
-        //清除記憶空間
-        delete[] startField; startField = nullptr;
-        delete[] endField; endField = nullptr;
-        return true;
-    }
-    //找不到
     //清除記憶空間
     delete[] startField; startField = nullptr;
     delete[] endField; endField = nullptr;
-    return false;
+    return true;
+  }
+  //找不到
+  //清除記憶空間
+  delete[] startField; startField = nullptr;
+  delete[] endField; endField = nullptr;
+  return false;
 }
 int main() {
-    char values[100];
-    //清空陣列
-    memset(values, 0, sizeof(values));
-    
-    bool res = xmlSearch("<id>1</id><name>Cici</name><age>10</age>", "name", values);
-    //如果有找到會回傳true
-    if(res) {
-        cout << "value = " << values << endl;
-    }
-    return 0;
+  char values[100];
+  //清空陣列
+  memset(values, 0, sizeof(values));
+  
+  bool res = xmlSearch("<id>1</id><name>Cici</name><age>10</age>", "name", values);
+  //如果有找到會回傳true
+  if(res) {
+    cout << "value = " << values << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 

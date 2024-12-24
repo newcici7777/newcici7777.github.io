@@ -47,11 +47,11 @@ int i = 55;
 
 {% highlight c++ linenos %}
 int main() {
-    int a = 0;
-    double b = 10.5;
-    cout << "變數a位址 = " << &a << endl;
-    cout << "變數b位址 = " << &b << endl;
-    return 0;
+  int a = 0;
+  double b = 10.5;
+  cout << "變數a位址 = " << &a << endl;
+  cout << "變數b位址 = " << &b << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -89,11 +89,11 @@ cout << sizeof(p1) << endl;
 
 {% highlight c++ linenos %}
 int main() {
-    int i1 = 10;
-    int* p1 = &i1;
-    cout << "i1的位址=" << &i1 << endl;
-    cout << "p1存放的位址 =" << p1 << endl;
-    return 0;
+  int i1 = 10;
+  int* p1 = &i1;
+  cout << "i1的位址=" << &i1 << endl;
+  cout << "p1存放的位址 =" << p1 << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -123,15 +123,15 @@ p1存放的位址 =0x7ff7bfeff468
 
 {% highlight c++ linenos %}
 int main() {
-    int i1 = 10;
-    int *p1 = &i1;		//*在變數前面
-    int* p2 = &i1;		//*在資料型態後面
-    int * p3 = &i1;		//*在資料型態與變數中間
-    cout << "i1的位址=" << &i1 << endl;
-    cout << "p1存放的位址 =" << p1 << endl;
-    cout << "p2存放的位址 =" << p2 << endl;
-    cout << "p3存放的位址 =" << p3 << endl;
-    return 0;
+  int i1 = 10;
+  int *p1 = &i1;		//*在變數前面
+  int* p2 = &i1;		//*在資料型態後面
+  int * p3 = &i1;		//*在資料型態與變數中間
+  cout << "i1的位址=" << &i1 << endl;
+  cout << "p1存放的位址 =" << p1 << endl;
+  cout << "p2存放的位址 =" << p2 << endl;
+  cout << "p3存放的位址 =" << p3 << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -148,23 +148,23 @@ p3存放的位址 =0x7ff7bfeff468
 #include <iostream>
 using namespace std;
 int main() {
-    char* ptr1,* ptr2,* ptr3;
-    char *ptr4, *ptr5, *ptr6;
-    return 0;
+  char* ptr1,* ptr2,* ptr3;
+  char *ptr4, *ptr5, *ptr6;
+  return 0;
 }
 {% endhighlight %}
 
 ### 一行同時宣告指標與整數變數(容易搞混淆的宣告)
 
 {% highlight c++ linenos %}
-    int* p4, num3;
-    //p4是指標
-    p4 = &ii;
-    //num3為int資料型態的變數
-    num3 = 20;
-    cout << "p4 位址=" << p4 << endl;
-    cout << "p4 值=" << *p4 << endl;
-    cout << "num3 值=" << num3 << endl;
+  int* p4, num3;
+  //p4是指標
+  p4 = &ii;
+  //num3為int資料型態的變數
+  num3 = 20;
+  cout << "p4 位址=" << p4 << endl;
+  cout << "p4 值=" << *p4 << endl;
+  cout << "num3 值=" << num3 << endl;
 {% endhighlight %}
 
 ```
@@ -184,10 +184,10 @@ num3 值=20
 
 {% highlight c++ linenos %}
 int main() {
-    int i1 = 10;
-    int *p1 = &i1;        //將i1變數的位址存到p1指標變數
-    cout << "取出p1位址的值 = " << *p1 << endl;	//取出位址存放的值。
-    return 0;
+  int i1 = 10;
+  int *p1 = &i1;    //將i1變數的位址存到p1指標變數
+  cout << "取出p1位址的值 = " << *p1 << endl;	//取出位址存放的值。
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -203,14 +203,14 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    int i1 = 10;
-    cout << "取出i1的值 = " << i1 << endl;
-    int *p1 = &i1;
-    cout << "取出p1位址的值 = " << *p1 << endl;
-    *p1 = 20;
-    cout << "取出p1位址的值 = " << *p1 << endl;
-    cout << "取出i1的值 = " << i1 << endl;
-    return 0;
+  int i1 = 10;
+  cout << "取出i1的值 = " << i1 << endl;
+  int *p1 = &i1;
+  cout << "取出p1位址的值 = " << *p1 << endl;
+  *p1 = 20;
+  cout << "取出p1位址的值 = " << *p1 << endl;
+  cout << "取出i1的值 = " << i1 << endl;
+  return 0;
 }
 {% endhighlight %}
 第6行，把*放在指標變數p1前面，等於(=)後面放入要修改的內容20。
@@ -226,9 +226,9 @@ int main() {
 指標是存放位址，不能存放不是位址的值，會編譯錯誤。
 {% highlight c++ linenos %}
 int main() {
-    int i1 = 10;
-    int *p1 = i1;
-    return 0;
+  int i1 = 10;
+  int *p1 = i1;
+  return 0;
 }
 {% endhighlight %}
 
@@ -244,9 +244,9 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    char c = 'a';
-    cout << "變數c位址 = " << &c << endl;
-    return 0;
+  char c = 'a';
+  cout << "變數c位址 = " << &c << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -260,9 +260,9 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    char c = 'a';
-    cout << "變數c位址 = " << (void*)&c << endl;
-    return 0;
+  char c = 'a';
+  cout << "變數c位址 = " << (void*)&c << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -286,17 +286,17 @@ int main() {
 
 {% highlight c++ linenos %}
 int main() {
-    int i1 = 10;
-    int *p1 = &i1;
-    cout << "16進制 &i1 = " << (void*)&i1 << endl;
-    cout << "16進制 p1 = " << (void*)p1 << endl;
+  int i1 = 10;
+  int *p1 = &i1;
+  cout << "16進制 &i1 = " << (void*)&i1 << endl;
+  cout << "16進制 p1 = " << (void*)p1 << endl;
    
-    cout << "10進制 &i1 = " << (long long)&i1 << endl;
-    cout << "10進制 p1 = " << (long long)p1 << endl;
+  cout << "10進制 &i1 = " << (long long)&i1 << endl;
+  cout << "10進制 p1 = " << (long long)p1 << endl;
 
-    printf("c語言 &i1 = %#x \n",&i1);
-    printf("c語言 p1 = %#x \n",p1);
-    return 0;
+  printf("c語言 &i1 = %#x \n",&i1);
+  printf("c語言 p1 = %#x \n",p1);
+  return 0;
 }
 {% endhighlight %}
 ```

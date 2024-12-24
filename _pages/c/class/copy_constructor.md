@@ -25,37 +25,37 @@ keywords: c++, Copy constructor
 {% highlight c++ linenos %}
 class Student {
 public:
-    char m_name[50];
+  char m_name[50];
 public:
-    Student() {
-        cout << "沒參數建構子" << endl;
-    }
-    ~Student() {
-        cout << "解構子" << endl;
-    }
-    void print() {
-        cout << "name: " << m_name << endl;
-    }
+  Student() {
+    cout << "沒參數建構子" << endl;
+  }
+  ~Student() {
+    cout << "解構子" << endl;
+  }
+  void print() {
+    cout << "name: " << m_name << endl;
+  }
 };
 int main() {
-    Student s1;
-    strcpy(s1.m_name, "Cici");
-    Student s2 = s1;
-    s2.print();
-    return 0;
-}    
+  Student s1;
+  strcpy(s1.m_name, "Cici");
+  Student s2 = s1;
+  s2.print();
+  return 0;
+}  
 {% endhighlight %}
 
 ### 方式二
 
 {% highlight c++ linenos %}
 int main() {
-    Student s1;
-    strcpy(s1.m_name, "Cici");
-    Student s2(s1);
-    s2.print();
-    return 0;
-}    
+  Student s1;
+  strcpy(s1.m_name, "Cici");
+  Student s2(s1);
+  s2.print();
+  return 0;
+}  
 {% endhighlight %}
 
 由執行結果可以發現建立2個物件(s1,s2)只呼叫一次拷貝函式。
@@ -82,11 +82,11 @@ name: Cici
 - 拷貝函式參數要包含const 類別名&參考，不包含的話，就是建構子。
 
 {% highlight c++ linenos %}
-    Student(const Student &s) {
-        memset(m_name,0,sizeof(m_name));
-        strcpy(m_name, s.m_name);
-        cout << "呼叫Student(const Student &s)拷貝函式" << endl;
-    }
+  Student(const Student &s) {
+    memset(m_name,0,sizeof(m_name));
+    strcpy(m_name, s.m_name);
+    cout << "呼叫Student(const Student &s)拷貝函式" << endl;
+  }
 {% endhighlight %}
 
 完整程式碼
@@ -94,30 +94,30 @@ name: Cici
 {% highlight c++ linenos %}
 class Student {
 public:
-    char m_name[50];
+  char m_name[50];
 public:
-    Student() {
-        cout << "沒參數建構子" << endl;
-    }
-    Student(const Student &s) {
-        memset(m_name,0,sizeof(m_name));
-        strcpy(m_name, s.m_name);
-        cout << "呼叫Student(const Student &s)拷貝函式" << endl;
-    }
-    ~Student() {
-        cout << "解構子" << endl;
-    }
-    void print() {
-        cout << "name: " << m_name << endl;
-    }
+  Student() {
+    cout << "沒參數建構子" << endl;
+  }
+  Student(const Student &s) {
+    memset(m_name,0,sizeof(m_name));
+    strcpy(m_name, s.m_name);
+    cout << "呼叫Student(const Student &s)拷貝函式" << endl;
+  }
+  ~Student() {
+    cout << "解構子" << endl;
+  }
+  void print() {
+    cout << "name: " << m_name << endl;
+  }
 };
 int main() {
-    Student s1;
-    strcpy(s1.m_name, "Cici");
-    Student s2(s1);
-    s2.print();
-    return 0;
-}    
+  Student s1;
+  strcpy(s1.m_name, "Cici");
+  Student s2(s1);
+  s2.print();
+  return 0;
+}  
 {% endhighlight %}
 
 ```
@@ -136,14 +136,14 @@ name: Cici
 
 {% highlight c++ linenos %}
 void func(Student s) {
-    s.print();
+  s.print();
 }
 int main() {
-    Student s1;
-    strcpy(s1.m_name, "Cici");
-    func(s1);
-    return 0;
-}    
+  Student s1;
+  strcpy(s1.m_name, "Cici");
+  func(s1);
+  return 0;
+}  
 {% endhighlight %}
 
 ```
@@ -163,29 +163,29 @@ name: Cici
 {% highlight c++ linenos %}
 class Student {
 public:
-    Student() {
-        cout << "建構子" << endl;
-    }
-    Student(const Student &src) {
-        cout << "拷貝函式" << endl;
-    }
-    Student& operator=(const Student& src) {
-        cout << "指派運算子" << endl;
-        return *this;
-    }
-    ~Student() {
-        cout << "解構子" << endl;
-    }
+  Student() {
+    cout << "建構子" << endl;
+  }
+  Student(const Student &src) {
+    cout << "拷貝函式" << endl;
+  }
+  Student& operator=(const Student& src) {
+    cout << "指派運算子" << endl;
+    return *this;
+  }
+  ~Student() {
+    cout << "解構子" << endl;
+  }
 };
 Student func() {
-    Student s;
-    cout << "函式物件記憶體位址 = " << &s << endl;
-    return s;
+  Student s;
+  cout << "函式物件記憶體位址 = " << &s << endl;
+  return s;
 }
 int main() {
-    Student s1 = func();
-    cout << "物件記憶體位址 = " << &s1 << endl;
-    return 0;
+  Student s1 = func();
+  cout << "物件記憶體位址 = " << &s1 << endl;
+  return 0;
 }
 {% endhighlight %}  
 
@@ -204,24 +204,24 @@ int main() {
 
 在拷貝函式增加參數str
 {% highlight c++ linenos %}
-    Student(const Student &s, string str) {
-        memset(m_name,0,sizeof(m_name));
-        string temp = str + s.m_name;
-        strcpy(m_name, temp.c_str());
-        cout << "呼叫Student(const Student &s, string str)拷貝函式" << endl;
-    }
+  Student(const Student &s, string str) {
+    memset(m_name,0,sizeof(m_name));
+    string temp = str + s.m_name;
+    strcpy(m_name, temp.c_str());
+    cout << "呼叫Student(const Student &s, string str)拷貝函式" << endl;
+  }
 {% endhighlight %}  
 
 執行的main函式
 
 {% highlight c++ linenos %}
 int main() {
-    Student s1;
-    strcpy(s1.m_name, "Cici");
-    Student s2(s1, "漂亮的");
-    s2.print();    
-    return 0;
-}    
+  Student s1;
+  strcpy(s1.m_name, "Cici");
+  Student s2(s1, "漂亮的");
+  s2.print();  
+  return 0;
+}  
 {% endhighlight %} 
 
 ```

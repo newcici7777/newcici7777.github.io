@@ -1440,67 +1440,67 @@
  參數2 陣列大小
  */</span>
 <span class="kt">void</span> <span class="nf">quickSort</span><span class="p">(</span><span class="kt">int</span> <span class="n">arr</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">len</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//至少要有2個數字才可以比較大小</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">len</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">right</span> <span class="o">=</span> <span class="n">len</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="c1">//基準值都為arr[0]</span>
-    <span class="kt">int</span> <span class="n">pivot</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-    <span class="c1">//預設先比較R</span>
-    <span class="c1">//action有L與R，預設先比對R的值</span>
-    <span class="kt">char</span> <span class="n">action</span> <span class="o">=</span> <span class="sc">'R'</span><span class="p">;</span>
-    <span class="c1">//若left&lt;right才進入循環</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">left</span> <span class="o">&lt;</span> <span class="n">right</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//比較R值，尋找比基準值小</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">action</span> <span class="o">==</span> <span class="sc">'R'</span><span class="p">)</span> <span class="p">{</span>
-            <span class="c1">//比較R值，尋找比基準值小</span>
-            <span class="c1">//若陣列[R]&lt;基準值，將陣列[L]的值設成陣列[R]，並且L前進一格。</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">pivot</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">];</span>
-                <span class="n">left</span><span class="o">++</span><span class="p">;</span>
-                <span class="c1">//設定下一次是L移動</span>
-                <span class="n">action</span> <span class="o">=</span> <span class="sc">'L'</span><span class="p">;</span>
-            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-                <span class="c1">//若以上條件不符合，R往後退一格。</span>
-                <span class="n">right</span><span class="o">--</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="c1">//比較L值，尋找比基準值大</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">action</span> <span class="o">==</span> <span class="sc">'L'</span><span class="p">)</span> <span class="p">{</span>
-            <span class="c1">//比較L值，尋找比基準值大</span>
-            <span class="c1">//若陣列[L]&gt;基準值，將陣列[R]的值設成陣列[L]，並且R往後退一格。</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">pivot</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">];</span>
-                <span class="n">right</span><span class="o">--</span><span class="p">;</span>
-                <span class="c1">//設定下一次是R移動</span>
-                <span class="n">action</span> <span class="o">=</span> <span class="sc">'R'</span><span class="p">;</span>
-            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-                <span class="c1">//若以上條件不符合，L往前一格。</span>
-                <span class="n">left</span><span class="o">++</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
+  <span class="c1">//至少要有2個數字才可以比較大小</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">len</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">right</span> <span class="o">=</span> <span class="n">len</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="c1">//基準值都為arr[0]</span>
+  <span class="kt">int</span> <span class="n">pivot</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+  <span class="c1">//預設先比較R</span>
+  <span class="c1">//action有L與R，預設先比對R的值</span>
+  <span class="kt">char</span> <span class="n">action</span> <span class="o">=</span> <span class="sc">'R'</span><span class="p">;</span>
+  <span class="c1">//若left&lt;right才進入循環</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">left</span> <span class="o">&lt;</span> <span class="n">right</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//比較R值，尋找比基準值小</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">action</span> <span class="o">==</span> <span class="sc">'R'</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">//比較R值，尋找比基準值小</span>
+      <span class="c1">//若陣列[R]&lt;基準值，將陣列[L]的值設成陣列[R]，並且L前進一格。</span>
+      <span class="k">if</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">pivot</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">];</span>
+        <span class="n">left</span><span class="o">++</span><span class="p">;</span>
+        <span class="c1">//設定下一次是L移動</span>
+        <span class="n">action</span> <span class="o">=</span> <span class="sc">'L'</span><span class="p">;</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">//若以上條件不符合，R往後退一格。</span>
+        <span class="n">right</span><span class="o">--</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="c1">//比較L值，尋找比基準值大</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">action</span> <span class="o">==</span> <span class="sc">'L'</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">//比較L值，尋找比基準值大</span>
+      <span class="c1">//若陣列[L]&gt;基準值，將陣列[R]的值設成陣列[L]，並且R往後退一格。</span>
+      <span class="k">if</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">pivot</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">];</span>
+        <span class="n">right</span><span class="o">--</span><span class="p">;</span>
+        <span class="c1">//設定下一次是R移動</span>
+        <span class="n">action</span> <span class="o">=</span> <span class="sc">'R'</span><span class="p">;</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">//若以上條件不符合，L往前一格。</span>
+        <span class="n">left</span><span class="o">++</span><span class="p">;</span>
+      <span class="p">}</span>
     <span class="p">}</span>
-    <span class="c1">//L==R</span>
-    <span class="c1">//將基準值放入L==R的位址</span>
-    <span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">]</span> <span class="o">=</span> <span class="n">pivot</span><span class="p">;</span>
-    <span class="c1">//遞迴設定</span>
-    <span class="c1">//基準值作為中點，分為左右二半陣列(不包含基準值)</span>
-    <span class="c1">//參數1陣列起始位址,參數2分成左右二半的各別個數</span>
-    <span class="c1">//左半邊</span>
-    <span class="n">quickSort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="n">left</span><span class="p">);</span>
-    <span class="c1">//右半邊</span>
-    <span class="c1">//起始位址在基準值位址的下一格</span>
-    <span class="c1">//個數(請參照遞迴設定的說明與圖)</span>
-    <span class="n">quickSort</span><span class="p">(</span><span class="n">arr</span> <span class="o">+</span> <span class="n">left</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">len</span> <span class="o">-</span> <span class="n">left</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="c1">//L==R</span>
+  <span class="c1">//將基準值放入L==R的位址</span>
+  <span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">]</span> <span class="o">=</span> <span class="n">pivot</span><span class="p">;</span>
+  <span class="c1">//遞迴設定</span>
+  <span class="c1">//基準值作為中點，分為左右二半陣列(不包含基準值)</span>
+  <span class="c1">//參數1陣列起始位址,參數2分成左右二半的各別個數</span>
+  <span class="c1">//左半邊</span>
+  <span class="n">quickSort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="n">left</span><span class="p">);</span>
+  <span class="c1">//右半邊</span>
+  <span class="c1">//起始位址在基準值位址的下一格</span>
+  <span class="c1">//個數(請參照遞迴設定的說明與圖)</span>
+  <span class="n">quickSort</span><span class="p">(</span><span class="n">arr</span> <span class="o">+</span> <span class="n">left</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">len</span> <span class="o">-</span> <span class="n">left</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">arr</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
-    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
-    <span class="n">quickSort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">","</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">arr</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
+  <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+  <span class="n">quickSort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">","</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1694,7 +1694,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

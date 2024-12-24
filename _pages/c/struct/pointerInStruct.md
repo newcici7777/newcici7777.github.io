@@ -25,40 +25,40 @@ Prerequisites:
 using namespace std;
 const int SCORE_MAX = 3;
 struct Student{
-    //學生姓名
-    char name[100];
-    //學號
-    int id;
-    //結構中的指標
-    int *score;
+  //學生姓名
+  char name[100];
+  //學號
+  int id;
+  //結構中的指標
+  int *score;
 };
 int main() {
-    Student student;
-    strcpy(student.name, "Mary");
-    student.id = 1;
-    student.score = new int[SCORE_MAX];
-    
-    for(int i = 0; i < SCORE_MAX; i++) {
-        student.score[i] = i;
-    }
-    //100 byte(name) + 4 byte(id) + 8 byte(*score指標)
-    //總共占 112 byte記憶體大小
-    cout << "結構大小 = " << sizeof(student) << endl;
-    //印出score指標指向的記憶體位址
-    cout << "結構成員指標指向的記憶體位址 = " <<  student.score << endl;
-    //將student.score的記憶體位址先暫存下來
-    int* pp = student.score;
-    //將結構的成員全清成00000000
-    memset(&student, 0, sizeof(student));
-    cout << "After memset :" << endl;
-    //印出score指標指向的記憶體位址
-    cout << "結構成員指標指向的記憶體位址 = " << student.score << endl;
-    cout << "原結構成員指標指向的記憶體位址 = " << pp << endl;
-    //原結構成員指標指向的記憶體位址中的值
-    for(int i = 0; i < SCORE_MAX; i++) {
-        cout << "student.score[" << i << "] = " << *(pp + i) << endl;
-    }
-    return 0;
+  Student student;
+  strcpy(student.name, "Mary");
+  student.id = 1;
+  student.score = new int[SCORE_MAX];
+  
+  for(int i = 0; i < SCORE_MAX; i++) {
+    student.score[i] = i;
+  }
+  //100 byte(name) + 4 byte(id) + 8 byte(*score指標)
+  //總共占 112 byte記憶體大小
+  cout << "結構大小 = " << sizeof(student) << endl;
+  //印出score指標指向的記憶體位址
+  cout << "結構成員指標指向的記憶體位址 = " <<  student.score << endl;
+  //將student.score的記憶體位址先暫存下來
+  int* pp = student.score;
+  //將結構的成員全清成00000000
+  memset(&student, 0, sizeof(student));
+  cout << "After memset :" << endl;
+  //印出score指標指向的記憶體位址
+  cout << "結構成員指標指向的記憶體位址 = " << student.score << endl;
+  cout << "原結構成員指標指向的記憶體位址 = " << pp << endl;
+  //原結構成員指標指向的記憶體位址中的值
+  for(int i = 0; i < SCORE_MAX; i++) {
+    cout << "student.score[" << i << "] = " << *(pp + i) << endl;
+  }
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -90,38 +90,38 @@ memset(student.score, 0, sizeof(student.score));
 using namespace std;
 const int SCORE_MAX = 3;
 struct Student{
-    //學生姓名
-    char name[100];
-    //學號
-    int id;
-    //結構中的指標
-    int *score;
+  //學生姓名
+  char name[100];
+  //學號
+  int id;
+  //結構中的指標
+  int *score;
 };
 int main() {
-    Student student;
-    strcpy(student.name, "Mary");
-    student.id = 1;
-    student.score = new int[SCORE_MAX];
-    
-    for(int i = 0; i < SCORE_MAX; i++) {
-        student.score[i] = i;
-    }
-    //100 byte(name) + 4 byte(id) + 8 byte(*score指標)
-    //總共占 112 byte記憶體大小
-    cout << "結構大小 = " << sizeof(student) << endl;
-    //印出score指標指向的記憶體位址
-    cout << "結構成員指標指向的記憶體位址 = " <<  student.score << endl;
-    //將student.score的記憶體位址先暫存下來
-    int* pp = student.score;
-    //將結構的成員指向的記憶體位址的值全清成00000000
-    memset(student.score, 0, sizeof(int)*SCORE_MAX);
-    //將結構的成員全清成00000000
-    memset(&student, 0, sizeof(student));
-    cout << "After memset :" << endl;
-    //印出score指標指向的記憶體位址
-    cout << "原score成員的記憶體位址 = " << *pp << endl;
-    cout << "score成員的記憶體位址 = " << student.score << endl;
-    return 0;
+  Student student;
+  strcpy(student.name, "Mary");
+  student.id = 1;
+  student.score = new int[SCORE_MAX];
+  
+  for(int i = 0; i < SCORE_MAX; i++) {
+    student.score[i] = i;
+  }
+  //100 byte(name) + 4 byte(id) + 8 byte(*score指標)
+  //總共占 112 byte記憶體大小
+  cout << "結構大小 = " << sizeof(student) << endl;
+  //印出score指標指向的記憶體位址
+  cout << "結構成員指標指向的記憶體位址 = " <<  student.score << endl;
+  //將student.score的記憶體位址先暫存下來
+  int* pp = student.score;
+  //將結構的成員指向的記憶體位址的值全清成00000000
+  memset(student.score, 0, sizeof(int)*SCORE_MAX);
+  //將結構的成員全清成00000000
+  memset(&student, 0, sizeof(student));
+  cout << "After memset :" << endl;
+  //印出score指標指向的記憶體位址
+  cout << "原score成員的記憶體位址 = " << *pp << endl;
+  cout << "score成員的記憶體位址 = " << student.score << endl;
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -137,12 +137,12 @@ score成員的記憶體位址 = 0x0
 注意看結構Student中的指標指向的是Student結構，也就是結構中的指標是自已。
 {% highlight c++ linenos %}
 struct Student{
-    //學生姓名
-    char name[100];
-    //學號
-    int id;
-    //結構中的指標
-    Student *next;
+  //學生姓名
+  char name[100];
+  //學號
+  int id;
+  //結構中的指標
+  Student *next;
 };
 {% endhighlight %}
 
@@ -150,12 +150,12 @@ struct Student{
 
 {% highlight c++ linenos %}
 struct Student{
-    //學生姓名
-    char name[100];
-    //學號
-    int id;
-    //結構中的指標
-    Student next;
+  //學生姓名
+  char name[100];
+  //學號
+  int id;
+  //結構中的指標
+  Student next;
 };
 {% endhighlight %}
 
@@ -169,27 +169,27 @@ struct Student{
 #### 方式一
 
 {% highlight c++ linenos %}
-    Student *student = new Student;
-    strcpy(student->name, "Mary");
-    student->id = 1;
-    student->next = nullptr;
+  Student *student = new Student;
+  strcpy(student->name, "Mary");
+  student->id = 1;
+  student->next = nullptr;
 {% endhighlight %}
 
 #### 方式二
 {% highlight c++ linenos %}
-    Student *student = new Student({ "Mary", 1, nullptr});
+  Student *student = new Student({ "Mary", 1, nullptr});
 {% endhighlight %}
 
 
 {% highlight c++ linenos %}
-    Student *student = nullptr; 
-    student = new Student({ "Mary", 1, nullptr});
+  Student *student = nullptr; 
+  student = new Student({ "Mary", 1, nullptr});
 {% endhighlight %}
 
 #### 方式三
 {% highlight c++ linenos %}
-    Student *student;
-    *(student) = {1, "Mary", nullptr};
+  Student *student;
+  *(student) = {1, "Mary", nullptr};
 {% endhighlight %}
 
 
@@ -199,16 +199,16 @@ struct Student{
 #include <iostream>
 using namespace std;
 struct Student{
-    //學生姓名
-    char name[100];
-    //學號
-    int id;
-    //結構中的指標
-    Student *next;
+  //學生姓名
+  char name[100];
+  //學號
+  int id;
+  //結構中的指標
+  Student *next;
 };
 int main() {
-    Student *student = new Student({ "Mary", 1, nullptr});
-    return 0;
+  Student *student = new Student({ "Mary", 1, nullptr});
+  return 0;
 }
 {% endhighlight %}
 

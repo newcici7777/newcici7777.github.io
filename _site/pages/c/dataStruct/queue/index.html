@@ -1255,12 +1255,12 @@
 </pre></td><td class="code"><pre><span class="k">typedef</span> <span class="kt">int</span> <span class="n">ElemType</span><span class="p">;</span>
 <span class="c1">//定義節點</span>
 <span class="k">struct</span> <span class="nc">Node</span> <span class="p">{</span>
-    <span class="n">ElemType</span> <span class="n">data</span><span class="p">;</span>
-    <span class="n">Node</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
+  <span class="n">ElemType</span> <span class="n">data</span><span class="p">;</span>
+  <span class="n">Node</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
 <span class="p">};</span>
 <span class="k">struct</span> <span class="nc">queue</span> <span class="p">{</span>
-    <span class="c1">//定義頭節點與尾節點</span>
-    <span class="n">Node</span> <span class="o">*</span><span class="n">head</span><span class="p">,</span><span class="o">*</span><span class="n">tail</span><span class="p">;</span>
+  <span class="c1">//定義頭節點與尾節點</span>
+  <span class="n">Node</span> <span class="o">*</span><span class="n">head</span><span class="p">,</span><span class="o">*</span><span class="n">tail</span><span class="p">;</span>
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1288,13 +1288,13 @@
  初始化Queue
  */</span>
 <span class="kt">bool</span> <span class="nf">initQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//頭節點</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
-    <span class="c1">//頭節點記憶體分配失敗</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span><span class="c1">//queue的下一個節點為null</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span><span class="c1">//一開始頭節點與尾節點指向同一個記憶體位址</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="c1">//頭節點</span>
+  <span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
+  <span class="c1">//頭節點記憶體分配失敗</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span><span class="c1">//queue的下一個節點為null</span>
+  <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span><span class="c1">//一開始頭節點與尾節點指向同一個記憶體位址</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1337,23 +1337,23 @@
 18
 19
 </pre></td><td class="code"><pre><span class="kt">bool</span> <span class="nf">inQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">ee</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//建立新節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    
-    <span class="c1">//新節點設定傳進來的資料</span>
-    <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">ee</span><span class="p">;</span>
-    <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    
-    <span class="c1">//將新節點插入到tail之後</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">tail</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-    <span class="c1">//把tail指向temp</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//建立新節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  
+  <span class="c1">//新節點設定傳進來的資料</span>
+  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">ee</span><span class="p">;</span>
+  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  
+  <span class="c1">//將新節點插入到tail之後</span>
+  <span class="n">que</span><span class="p">.</span><span class="n">tail</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+  <span class="c1">//把tail指向temp</span>
+  <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1402,30 +1402,30 @@
 25
 26
 </pre></td><td class="code"><pre><span class="kt">bool</span> <span class="nf">deQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">,</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//只有頭節點，沒有後面的資料</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒有任何節點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//鏈結串列中第一個節點，不包含頭節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">first</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="c1">//將第一個節點的值存在e，作為返回</span>
-    <span class="n">e</span> <span class="o">=</span> <span class="n">first</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
-    
-    <span class="c1">//將第一個節點(不包含頭節點)指向first的下個節點</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">first</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    
-    <span class="c1">//如果刪的節點是tail節點</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">first</span> <span class="o">==</span> <span class="n">que</span><span class="p">.</span><span class="n">tail</span><span class="p">)</span>
-        <span class="c1">//將tail指向head</span>
-        <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span>
-    <span class="c1">//將第一個節點刪除</span>
-    <span class="k">delete</span> <span class="n">first</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//只有頭節點，沒有後面的資料</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒有任何節點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//鏈結串列中第一個節點，不包含頭節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">first</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="c1">//將第一個節點的值存在e，作為返回</span>
+  <span class="n">e</span> <span class="o">=</span> <span class="n">first</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
+  
+  <span class="c1">//將第一個節點(不包含頭節點)指向first的下個節點</span>
+  <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">first</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  
+  <span class="c1">//如果刪的節點是tail節點</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">first</span> <span class="o">==</span> <span class="n">que</span><span class="p">.</span><span class="n">tail</span><span class="p">)</span>
+    <span class="c1">//將tail指向head</span>
+    <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span>
+  <span class="c1">//將第一個節點刪除</span>
+  <span class="k">delete</span> <span class="n">first</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1610,174 +1610,174 @@
 <span class="k">typedef</span> <span class="kt">int</span> <span class="n">ElemType</span><span class="p">;</span>
 <span class="c1">//定義節點</span>
 <span class="k">struct</span> <span class="nc">Node</span> <span class="p">{</span>
-    <span class="n">ElemType</span> <span class="n">data</span><span class="p">;</span>
-    <span class="n">Node</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
+  <span class="n">ElemType</span> <span class="n">data</span><span class="p">;</span>
+  <span class="n">Node</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
 <span class="p">};</span>
 <span class="k">struct</span> <span class="nc">queue</span> <span class="p">{</span>
-    <span class="n">Node</span> <span class="o">*</span><span class="n">head</span><span class="p">,</span><span class="o">*</span><span class="n">tail</span><span class="p">;</span>
+  <span class="n">Node</span> <span class="o">*</span><span class="n">head</span><span class="p">,</span><span class="o">*</span><span class="n">tail</span><span class="p">;</span>
 <span class="p">};</span>
 <span class="cm">/**
  初始化Queue
  */</span>
 <span class="kt">bool</span> <span class="n">initQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//頭節點</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
-    <span class="c1">//頭節點記憶體分配失敗</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span><span class="c1">//queue的下一個節點為null</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span><span class="c1">//一開始頭節點與尾節點指向同一個記憶體位址</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="c1">//頭節點</span>
+  <span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
+  <span class="c1">//頭節點記憶體分配失敗</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span><span class="c1">//queue的下一個節點為null</span>
+  <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span><span class="c1">//一開始頭節點與尾節點指向同一個記憶體位址</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="cm">/**
  摧毀Queue
  參數為頭節點
  */</span>
 <span class="kt">void</span> <span class="n">destroyQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">){</span>
-    <span class="c1">//暫存節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span><span class="p">;</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//先暫存下一個節點</span>
-        <span class="n">temp</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-        <span class="c1">//刪掉目前頭節點</span>
-        <span class="k">delete</span>  <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span>
-        <span class="c1">//頭節點換成下一個節點</span>
-        <span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="c1">//暫存節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span><span class="p">;</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//先暫存下一個節點</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="c1">//刪掉目前頭節點</span>
+    <span class="k">delete</span>  <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span>
+    <span class="c1">//頭節點換成下一個節點</span>
+    <span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 <span class="kt">bool</span> <span class="n">inQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">ee</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//建立新節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    
-    <span class="c1">//新節點設定傳進來的資料</span>
-    <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">ee</span><span class="p">;</span>
-    <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    
-    <span class="c1">//將新節點插入到tail之後</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">tail</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-    <span class="c1">//把tail指向temp</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//建立新節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  
+  <span class="c1">//新節點設定傳進來的資料</span>
+  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">ee</span><span class="p">;</span>
+  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  
+  <span class="c1">//將新節點插入到tail之後</span>
+  <span class="n">que</span><span class="p">.</span><span class="n">tail</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+  <span class="c1">//把tail指向temp</span>
+  <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">bool</span> <span class="n">deQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">,</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//只有頭節點，沒有後面的資料</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒有任何節點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//鏈結串列中第一個節點，不包含頭節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">first</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="c1">//將第一個節點的值存在e，作為返回</span>
-    <span class="n">e</span> <span class="o">=</span> <span class="n">first</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
-    
-    <span class="c1">//將第一個節點(不包含頭節點)指向first的下個節點</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">first</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    
-    <span class="c1">//如果刪的節點是tail節點</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">first</span> <span class="o">==</span> <span class="n">que</span><span class="p">.</span><span class="n">tail</span><span class="p">)</span>
-        <span class="c1">//將tail指向head</span>
-        <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span>
-    <span class="c1">//將第一個節點刪除</span>
-    <span class="k">delete</span> <span class="n">first</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//只有頭節點，沒有後面的資料</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒有任何節點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//鏈結串列中第一個節點，不包含頭節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">first</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="c1">//將第一個節點的值存在e，作為返回</span>
+  <span class="n">e</span> <span class="o">=</span> <span class="n">first</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
+  
+  <span class="c1">//將第一個節點(不包含頭節點)指向first的下個節點</span>
+  <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">first</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  
+  <span class="c1">//如果刪的節點是tail節點</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">first</span> <span class="o">==</span> <span class="n">que</span><span class="p">.</span><span class="n">tail</span><span class="p">)</span>
+    <span class="c1">//將tail指向head</span>
+    <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span>
+  <span class="c1">//將第一個節點刪除</span>
+  <span class="k">delete</span> <span class="n">first</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">void</span> <span class="n">printQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//從head的下一個節點開始</span>
-    <span class="c1">//head不存在值</span>
-    <span class="n">Node</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">&lt;&lt;</span> <span class="s">","</span><span class="p">;</span>
-        <span class="c1">//節點p換成下一個節點</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//從head的下一個節點開始</span>
+  <span class="c1">//head不存在值</span>
+  <span class="n">Node</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">&lt;&lt;</span> <span class="s">","</span><span class="p">;</span>
+    <span class="c1">//節點p換成下一個節點</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">size_t</span> <span class="n">size</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//不包含頭節點</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="kt">size_t</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="c1">//繞行到null</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-        <span class="n">size</span><span class="o">++</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="n">size</span><span class="p">;</span>
-    <span class="c1">//遞迴方式</span>
-    <span class="c1">//if(head == nullptr) return 0;</span>
-    <span class="c1">//return size(head-&gt;next) + 1;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//不包含頭節點</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="kt">size_t</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//繞行到null</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="n">size</span><span class="o">++</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">size</span><span class="p">;</span>
+  <span class="c1">//遞迴方式</span>
+  <span class="c1">//if(head == nullptr) return 0;</span>
+  <span class="c1">//return size(head-&gt;next) + 1;</span>
 <span class="p">}</span>
 <span class="cm">/**
  清空鏈表，除了頭節點
  */</span>
 <span class="kt">void</span> <span class="n">clear</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//移到頭節點的下一個節點(清空不包含頭節點)</span>
-    <span class="n">Node</span><span class="o">*</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">,</span><span class="o">*</span><span class="n">tmpnext</span><span class="p">;</span>
-    <span class="c1">//繞行所有節點</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">tmp</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//把節點的下一個節點暫存</span>
-        <span class="n">tmpnext</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-        <span class="c1">//刪除目前節點</span>
-        <span class="k">delete</span>  <span class="n">tmp</span><span class="p">;</span>
-        <span class="c1">//將下一個節點作為目前節點</span>
-        <span class="n">tmp</span> <span class="o">=</span> <span class="n">tmpnext</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//頭節點的下一個設null</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="c1">//尾節點與頭節點指向相同</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//移到頭節點的下一個節點(清空不包含頭節點)</span>
+  <span class="n">Node</span><span class="o">*</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">,</span><span class="o">*</span><span class="n">tmpnext</span><span class="p">;</span>
+  <span class="c1">//繞行所有節點</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">tmp</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//把節點的下一個節點暫存</span>
+    <span class="n">tmpnext</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="c1">//刪除目前節點</span>
+    <span class="k">delete</span>  <span class="n">tmp</span><span class="p">;</span>
+    <span class="c1">//將下一個節點作為目前節點</span>
+    <span class="n">tmp</span> <span class="o">=</span> <span class="n">tmpnext</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//頭節點的下一個設null</span>
+  <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="c1">//尾節點與頭節點指向相同</span>
+  <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立queue</span>
-    <span class="n">queue</span> <span class="n">que</span><span class="p">;</span>
-    <span class="c1">//清空</span>
-    <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">que</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">que</span><span class="p">));</span>
-    <span class="c1">//初始化</span>
-    <span class="n">initQueue</span><span class="p">(</span><span class="n">que</span><span class="p">);</span>
-    <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
-    <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
-    <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
-    <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
-    
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"大小:"</span> <span class="o">&lt;&lt;</span> <span class="n">size</span><span class="p">(</span><span class="n">que</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"queue的內容:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">printQueue</span><span class="p">(</span><span class="n">que</span><span class="p">);</span>
-    
-    <span class="n">ElemType</span> <span class="n">e</span><span class="p">;</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">deQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="n">e</span><span class="p">))</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">e</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
-    <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span>
-    <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
-    <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">9</span><span class="p">);</span>
-    <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
-    
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"大小:"</span> <span class="o">&lt;&lt;</span> <span class="n">size</span><span class="p">(</span><span class="n">que</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"queue的內容:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">printQueue</span><span class="p">(</span><span class="n">que</span><span class="p">);</span>
-    <span class="n">destroyQueue</span><span class="p">(</span><span class="n">que</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立queue</span>
+  <span class="n">queue</span> <span class="n">que</span><span class="p">;</span>
+  <span class="c1">//清空</span>
+  <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">que</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">que</span><span class="p">));</span>
+  <span class="c1">//初始化</span>
+  <span class="n">initQueue</span><span class="p">(</span><span class="n">que</span><span class="p">);</span>
+  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+  
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"大小:"</span> <span class="o">&lt;&lt;</span> <span class="n">size</span><span class="p">(</span><span class="n">que</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"queue的內容:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">printQueue</span><span class="p">(</span><span class="n">que</span><span class="p">);</span>
+  
+  <span class="n">ElemType</span> <span class="n">e</span><span class="p">;</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">deQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="n">e</span><span class="p">))</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">e</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  
+  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span>
+  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">9</span><span class="p">);</span>
+  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+  
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"大小:"</span> <span class="o">&lt;&lt;</span> <span class="n">size</span><span class="p">(</span><span class="n">que</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"queue的內容:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">printQueue</span><span class="p">(</span><span class="n">que</span><span class="p">);</span>
+  <span class="n">destroyQueue</span><span class="p">(</span><span class="n">que</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1971,7 +1971,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

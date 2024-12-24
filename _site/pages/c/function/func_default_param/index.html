@@ -1231,12 +1231,12 @@
 7
 8
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span> <span class="o">=</span> <span class="s">"這是預設值"</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">func1</span><span class="p">(</span><span class="s">"test"</span><span class="p">);</span>
-    <span class="n">func1</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">func1</span><span class="p">(</span><span class="s">"test"</span><span class="p">);</span>
+  <span class="n">func1</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1282,8 +1282,8 @@
 <span class="kt">void</span> <span class="nf">func1</span><span class="p">();</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 	<span class="c1">//呼叫函式</span>
-    <span class="n">func1</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">func1</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="c1">//定義函式</span>
 <span class="kt">void</span> <span class="n">func1</span><span class="p">()</span> <span class="p">{</span>
@@ -1313,13 +1313,13 @@
 <span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span> <span class="o">=</span> <span class="s">"這是預設值"</span><span class="p">);</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 	<span class="c1">//呼叫函式</span>
-    <span class="n">func1</span><span class="p">(</span><span class="s">"test"</span><span class="p">);</span>
-    <span class="n">func1</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">func1</span><span class="p">(</span><span class="s">"test"</span><span class="p">);</span>
+  <span class="n">func1</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="c1">//定義函式</span>
 <span class="kt">void</span> <span class="n">func1</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1347,15 +1347,15 @@
 10
 11
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span> <span class="n">error_code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg1</span> <span class="o">=</span> <span class="s">"這是預設值1"</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg2</span> <span class="o">=</span> <span class="s">"這是預設值2"</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code: "</span> <span class="o">&lt;&lt;</span> <span class="n">error_code</span> <span class="o">&lt;&lt;</span> <span class="s">", "</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Msg1: "</span> <span class="o">&lt;&lt;</span> <span class="n">msg1</span> <span class="o">&lt;&lt;</span> <span class="s">", "</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Msg2: "</span> <span class="o">&lt;&lt;</span> <span class="n">msg2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code: "</span> <span class="o">&lt;&lt;</span> <span class="n">error_code</span> <span class="o">&lt;&lt;</span> <span class="s">", "</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Msg1: "</span> <span class="o">&lt;&lt;</span> <span class="n">msg1</span> <span class="o">&lt;&lt;</span> <span class="s">", "</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Msg2: "</span> <span class="o">&lt;&lt;</span> <span class="n">msg2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">func1</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="s">"Server Error!"</span><span class="p">,</span> <span class="s">"Server has some error."</span><span class="p">);</span>
-    <span class="n">func1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s">"Not Found!"</span><span class="p">);</span>
-    <span class="n">func1</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">func1</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="s">"Server Error!"</span><span class="p">,</span> <span class="s">"Server has some error."</span><span class="p">);</span>
+  <span class="n">func1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s">"Not Found!"</span><span class="p">);</span>
+  <span class="n">func1</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1369,8 +1369,8 @@ Error code: 200, Msg1: 這是預設值1, Msg2: 這是預設值2
 
 <p>下例中，傳值給第3個參數，前面2個參數都要設置。</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    func1(500, "Server Error!", "Server has some error.");
-    func1(404, "Not Found!");
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  func1(500, "Server Error!", "Server has some error.");
+  func1(404, "Not Found!");
 </code></pre></div></div>
 
 <figure class="highlight">
@@ -1385,14 +1385,14 @@ Error code: 200, Msg1: 這是預設值1, Msg2: 這是預設值2
 9
 10
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span> <span class="n">error_code</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg1</span> <span class="o">=</span> <span class="s">"這是預設值1"</span><span class="p">,</span> <span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg2</span> <span class="o">=</span> <span class="s">"這是預設值2"</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code: "</span> <span class="o">&lt;&lt;</span> <span class="n">error_code</span> <span class="o">&lt;&lt;</span> <span class="s">", "</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Msg1: "</span> <span class="o">&lt;&lt;</span> <span class="n">msg1</span> <span class="o">&lt;&lt;</span> <span class="s">", "</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Msg2: "</span> <span class="o">&lt;&lt;</span> <span class="n">msg2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Error code: "</span> <span class="o">&lt;&lt;</span> <span class="n">error_code</span> <span class="o">&lt;&lt;</span> <span class="s">", "</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Msg1: "</span> <span class="o">&lt;&lt;</span> <span class="n">msg1</span> <span class="o">&lt;&lt;</span> <span class="s">", "</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Msg2: "</span> <span class="o">&lt;&lt;</span> <span class="n">msg2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">func1</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="s">"Server Error!"</span><span class="p">,</span> <span class="s">"Server has some error."</span><span class="p">);</span>
-    <span class="n">func1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s">"Not Found!"</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">func1</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="s">"Server Error!"</span><span class="p">,</span> <span class="s">"Server has some error."</span><span class="p">);</span>
+  <span class="n">func1</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s">"Not Found!"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1587,7 +1587,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

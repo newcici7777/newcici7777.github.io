@@ -1267,44 +1267,44 @@
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="c1">//私有成員變數</span>
-    <span class="kt">int</span> <span class="n">m_math</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">m_english</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">m_chinese</span><span class="p">;</span>
+  <span class="c1">//私有成員變數</span>
+  <span class="kt">int</span> <span class="n">m_math</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">m_english</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">m_chinese</span><span class="p">;</span>
 <span class="nl">public:</span>
-    <span class="c1">//將類別外的函式設為friend，才能讀取物件私有成員變數</span>
-    <span class="k">friend</span> <span class="kt">void</span> <span class="n">addScore</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">);</span>
-    <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">(){}</span>
-    <span class="c1">//建構子，姓名，數學成績，英文成績，國文成績</span>
-    <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">math</span><span class="p">,</span> <span class="kt">int</span> <span class="n">english</span><span class="p">,</span> <span class="kt">int</span> <span class="n">chinese</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">m_name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-        <span class="n">m_math</span> <span class="o">=</span> <span class="n">math</span><span class="p">;</span>
-        <span class="n">m_english</span> <span class="o">=</span> <span class="n">english</span><span class="p">;</span>
-        <span class="n">m_chinese</span> <span class="o">=</span> <span class="n">chinese</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//印出學生姓名與分數</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"math = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_math</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"english = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_english</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"chinese = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_chinese</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="c1">//將類別外的函式設為friend，才能讀取物件私有成員變數</span>
+  <span class="k">friend</span> <span class="kt">void</span> <span class="n">addScore</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">);</span>
+  <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
+  <span class="n">Student</span><span class="p">(){}</span>
+  <span class="c1">//建構子，姓名，數學成績，英文成績，國文成績</span>
+  <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">math</span><span class="p">,</span> <span class="kt">int</span> <span class="n">english</span><span class="p">,</span> <span class="kt">int</span> <span class="n">chinese</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">m_name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="n">m_math</span> <span class="o">=</span> <span class="n">math</span><span class="p">;</span>
+    <span class="n">m_english</span> <span class="o">=</span> <span class="n">english</span><span class="p">;</span>
+    <span class="n">m_chinese</span> <span class="o">=</span> <span class="n">chinese</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//印出學生姓名與分數</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"math = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_math</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"english = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_english</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"chinese = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_chinese</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="c1">//為每個科目增加分數</span>
 <span class="kt">void</span> <span class="n">addScore</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立物件</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
-    <span class="c1">//為每個分數增加15分</span>
-    <span class="n">addScore</span><span class="p">(</span><span class="n">student</span><span class="p">,</span> <span class="mi">15</span><span class="p">);</span>
-    <span class="c1">//印出學生姓名與各科分數</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立物件</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
+  <span class="c1">//為每個分數增加15分</span>
+  <span class="n">addScore</span><span class="p">(</span><span class="n">student</span><span class="p">,</span> <span class="mi">15</span><span class="p">);</span>
+  <span class="c1">//印出學生姓名與各科分數</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1361,44 +1361,44 @@ chinese = 85
 39
 40
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="c1">//私有成員變數</span>
-    <span class="kt">int</span> <span class="n">m_math</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">m_english</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">m_chinese</span><span class="p">;</span>
+  <span class="c1">//私有成員變數</span>
+  <span class="kt">int</span> <span class="n">m_math</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">m_english</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">m_chinese</span><span class="p">;</span>
 <span class="nl">public:</span>
-    <span class="c1">//將類別外的函式設為friend，才能讀取物件私有成員變數</span>
-    <span class="k">friend</span> <span class="kt">void</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">);</span>
-    <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">(){}</span>
-    <span class="c1">//建構子，姓名，數學成績，英文成績，國文成績</span>
-    <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">math</span><span class="p">,</span> <span class="kt">int</span> <span class="n">english</span><span class="p">,</span> <span class="kt">int</span> <span class="n">chinese</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">m_name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-        <span class="n">m_math</span> <span class="o">=</span> <span class="n">math</span><span class="p">;</span>
-        <span class="n">m_english</span> <span class="o">=</span> <span class="n">english</span><span class="p">;</span>
-        <span class="n">m_chinese</span> <span class="o">=</span> <span class="n">chinese</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//印出學生姓名與分數</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"math = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_math</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"english = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_english</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"chinese = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_chinese</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="c1">//將類別外的函式設為friend，才能讀取物件私有成員變數</span>
+  <span class="k">friend</span> <span class="kt">void</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">);</span>
+  <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
+  <span class="n">Student</span><span class="p">(){}</span>
+  <span class="c1">//建構子，姓名，數學成績，英文成績，國文成績</span>
+  <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">math</span><span class="p">,</span> <span class="kt">int</span> <span class="n">english</span><span class="p">,</span> <span class="kt">int</span> <span class="n">chinese</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">m_name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="n">m_math</span> <span class="o">=</span> <span class="n">math</span><span class="p">;</span>
+    <span class="n">m_english</span> <span class="o">=</span> <span class="n">english</span><span class="p">;</span>
+    <span class="n">m_chinese</span> <span class="o">=</span> <span class="n">chinese</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//印出學生姓名與分數</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"math = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_math</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"english = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_english</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"chinese = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_chinese</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="c1">//為每個科目增加分數</span>
 <span class="kt">void</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立物件</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
-    <span class="c1">//為每個分數增加15分</span>
-    <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">student</span><span class="p">,</span> <span class="mi">15</span><span class="p">);</span>
-    <span class="c1">//印出學生姓名與各科分數</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立物件</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
+  <span class="c1">//為每個分數增加15分</span>
+  <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">student</span><span class="p">,</span> <span class="mi">15</span><span class="p">);</span>
+  <span class="c1">//印出學生姓名與各科分數</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1449,44 +1449,44 @@ chinese = 85
 39
 40
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="c1">//私有成員變數</span>
-    <span class="kt">int</span> <span class="n">m_math</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">m_english</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">m_chinese</span><span class="p">;</span>
+  <span class="c1">//私有成員變數</span>
+  <span class="kt">int</span> <span class="n">m_math</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">m_english</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">m_chinese</span><span class="p">;</span>
 <span class="nl">public:</span>
-    <span class="c1">//將類別外的函式設為friend，才能讀取物件私有成員變數</span>
-    <span class="k">friend</span> <span class="kt">void</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">);</span>
-    <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">(){}</span>
-    <span class="c1">//建構子，姓名，數學成績，英文成績，國文成績</span>
-    <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">math</span><span class="p">,</span> <span class="kt">int</span> <span class="n">english</span><span class="p">,</span> <span class="kt">int</span> <span class="n">chinese</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">m_name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-        <span class="n">m_math</span> <span class="o">=</span> <span class="n">math</span><span class="p">;</span>
-        <span class="n">m_english</span> <span class="o">=</span> <span class="n">english</span><span class="p">;</span>
-        <span class="n">m_chinese</span> <span class="o">=</span> <span class="n">chinese</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//印出學生姓名與分數</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"math = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_math</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"english = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_english</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"chinese = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_chinese</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>        
-    <span class="p">}</span>
+  <span class="c1">//將類別外的函式設為friend，才能讀取物件私有成員變數</span>
+  <span class="k">friend</span> <span class="kt">void</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">);</span>
+  <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
+  <span class="n">Student</span><span class="p">(){}</span>
+  <span class="c1">//建構子，姓名，數學成績，英文成績，國文成績</span>
+  <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">math</span><span class="p">,</span> <span class="kt">int</span> <span class="n">english</span><span class="p">,</span> <span class="kt">int</span> <span class="n">chinese</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">m_name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="n">m_math</span> <span class="o">=</span> <span class="n">math</span><span class="p">;</span>
+    <span class="n">m_english</span> <span class="o">=</span> <span class="n">english</span><span class="p">;</span>
+    <span class="n">m_chinese</span> <span class="o">=</span> <span class="n">chinese</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//印出學生姓名與分數</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"math = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_math</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"english = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_english</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"chinese = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_chinese</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>    
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="c1">//為每個科目增加分數</span>
 <span class="kt">void</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立物件</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
-    <span class="c1">//為每個分數增加15分</span>
-    <span class="n">student</span> <span class="o">+</span> <span class="mi">15</span><span class="p">;</span>
-    <span class="c1">//印出學生姓名與各科分數</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立物件</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
+  <span class="c1">//為每個分數增加15分</span>
+  <span class="n">student</span> <span class="o">+</span> <span class="mi">15</span><span class="p">;</span>
+  <span class="c1">//印出學生姓名與各科分數</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1573,45 +1573,45 @@ chinese = 85
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="c1">//私有成員變數</span>
-    <span class="kt">int</span> <span class="n">m_math</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">m_english</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">m_chinese</span><span class="p">;</span>
+  <span class="c1">//私有成員變數</span>
+  <span class="kt">int</span> <span class="n">m_math</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">m_english</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">m_chinese</span><span class="p">;</span>
 <span class="nl">public:</span>
-    <span class="c1">//將類別外的函式設為friend，才能讀取物件私有成員變數</span>
-    <span class="k">friend</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">);</span>
-    <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">(){}</span>
-    <span class="c1">//建構子，姓名，數學成績，英文成績，國文成績</span>
-    <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">math</span><span class="p">,</span> <span class="kt">int</span> <span class="n">english</span><span class="p">,</span> <span class="kt">int</span> <span class="n">chinese</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">m_name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-        <span class="n">m_math</span> <span class="o">=</span> <span class="n">math</span><span class="p">;</span>
-        <span class="n">m_english</span> <span class="o">=</span> <span class="n">english</span><span class="p">;</span>
-        <span class="n">m_chinese</span> <span class="o">=</span> <span class="n">chinese</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//印出學生姓名與分數</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"math = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_math</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"english = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_english</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"chinese = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_chinese</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>   
-    <span class="p">}</span>
+  <span class="c1">//將類別外的函式設為friend，才能讀取物件私有成員變數</span>
+  <span class="k">friend</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">);</span>
+  <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
+  <span class="n">Student</span><span class="p">(){}</span>
+  <span class="c1">//建構子，姓名，數學成績，英文成績，國文成績</span>
+  <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">math</span><span class="p">,</span> <span class="kt">int</span> <span class="n">english</span><span class="p">,</span> <span class="kt">int</span> <span class="n">chinese</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">m_name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="n">m_math</span> <span class="o">=</span> <span class="n">math</span><span class="p">;</span>
+    <span class="n">m_english</span> <span class="o">=</span> <span class="n">english</span><span class="p">;</span>
+    <span class="n">m_chinese</span> <span class="o">=</span> <span class="n">chinese</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//印出學生姓名與分數</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"math = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_math</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"english = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_english</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"chinese = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_chinese</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>   
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="c1">//為每個科目增加分數</span>
 <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立物件</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
-    <span class="c1">//為每個分數增加15分</span>
-    <span class="n">student</span> <span class="o">=</span> <span class="n">student</span> <span class="o">+</span> <span class="mi">15</span><span class="p">;</span>
-    <span class="c1">//印出學生姓名與各科分數</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立物件</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
+  <span class="c1">//為每個分數增加15分</span>
+  <span class="n">student</span> <span class="o">=</span> <span class="n">student</span> <span class="o">+</span> <span class="mi">15</span><span class="p">;</span>
+  <span class="c1">//印出學生姓名與各科分數</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1630,9 +1630,9 @@ chinese = 85
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>    <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1642,9 +1642,9 @@ chinese = 85
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>    <span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1707,42 +1707,42 @@ chinese = 85
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="c1">//私有成員變數</span>
-    <span class="kt">int</span> <span class="n">m_math</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">m_english</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">m_chinese</span><span class="p">;</span>
+  <span class="c1">//私有成員變數</span>
+  <span class="kt">int</span> <span class="n">m_math</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">m_english</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">m_chinese</span><span class="p">;</span>
 <span class="nl">public:</span>
-    <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">(){}</span>
-    <span class="c1">//建構子，姓名，數學成績，英文成績，國文成績</span>
-    <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">math</span><span class="p">,</span> <span class="kt">int</span> <span class="n">english</span><span class="p">,</span> <span class="kt">int</span> <span class="n">chinese</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">m_name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-        <span class="n">m_math</span> <span class="o">=</span> <span class="n">math</span><span class="p">;</span>
-        <span class="n">m_english</span> <span class="o">=</span> <span class="n">english</span><span class="p">;</span>
-        <span class="n">m_chinese</span> <span class="o">=</span> <span class="n">chinese</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="kt">int</span> <span class="n">score</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-        <span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-        <span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-        <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//印出學生姓名與分數</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"math = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_math</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"english = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_english</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"chinese = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_chinese</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
+  <span class="n">Student</span><span class="p">(){}</span>
+  <span class="c1">//建構子，姓名，數學成績，英文成績，國文成績</span>
+  <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">math</span><span class="p">,</span> <span class="kt">int</span> <span class="n">english</span><span class="p">,</span> <span class="kt">int</span> <span class="n">chinese</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">m_name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="n">m_math</span> <span class="o">=</span> <span class="n">math</span><span class="p">;</span>
+    <span class="n">m_english</span> <span class="o">=</span> <span class="n">english</span><span class="p">;</span>
+    <span class="n">m_chinese</span> <span class="o">=</span> <span class="n">chinese</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="kt">int</span> <span class="n">score</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+    <span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+    <span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//印出學生姓名與分數</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"math = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_math</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"english = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_english</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"chinese = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_chinese</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立物件</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
-    <span class="c1">//為每個分數增加15分</span>
-    <span class="n">student</span> <span class="o">=</span> <span class="n">student</span> <span class="o">+</span> <span class="mi">15</span> <span class="o">+</span> <span class="mi">5</span><span class="p">;</span>
-    <span class="c1">//印出學生姓名與各科分數</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立物件</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
+  <span class="c1">//為每個分數增加15分</span>
+  <span class="n">student</span> <span class="o">=</span> <span class="n">student</span> <span class="o">+</span> <span class="mi">15</span> <span class="o">+</span> <span class="mi">5</span><span class="p">;</span>
+  <span class="c1">//印出學生姓名與各科分數</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1817,52 +1817,52 @@ chinese = 85
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="c1">//私有成員變數</span>
-    <span class="kt">int</span> <span class="n">m_math</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">m_english</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">m_chinese</span><span class="p">;</span>
+  <span class="c1">//私有成員變數</span>
+  <span class="kt">int</span> <span class="n">m_math</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">m_english</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">m_chinese</span><span class="p">;</span>
 <span class="nl">public:</span>
-    <span class="c1">//將類別外的函式設為friend，才能讀取物件私有成員變數</span>
-    <span class="k">friend</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">);</span>
-    <span class="k">friend</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="kt">int</span> <span class="n">score</span><span class="p">,</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">);</span>
-    <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">(){}</span>
-    <span class="c1">//建構子，姓名，數學成績，英文成績，國文成績</span>
-    <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">math</span><span class="p">,</span> <span class="kt">int</span> <span class="n">english</span><span class="p">,</span> <span class="kt">int</span> <span class="n">chinese</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">m_name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-        <span class="n">m_math</span> <span class="o">=</span> <span class="n">math</span><span class="p">;</span>
-        <span class="n">m_english</span> <span class="o">=</span> <span class="n">english</span><span class="p">;</span>
-        <span class="n">m_chinese</span> <span class="o">=</span> <span class="n">chinese</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//印出學生姓名與分數</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"math = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_math</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"english = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_english</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"chinese = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_chinese</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="c1">//將類別外的函式設為friend，才能讀取物件私有成員變數</span>
+  <span class="k">friend</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">);</span>
+  <span class="k">friend</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="kt">int</span> <span class="n">score</span><span class="p">,</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">);</span>
+  <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
+  <span class="n">Student</span><span class="p">(){}</span>
+  <span class="c1">//建構子，姓名，數學成績，英文成績，國文成績</span>
+  <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">math</span><span class="p">,</span> <span class="kt">int</span> <span class="n">english</span><span class="p">,</span> <span class="kt">int</span> <span class="n">chinese</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">m_name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="n">m_math</span> <span class="o">=</span> <span class="n">math</span><span class="p">;</span>
+    <span class="n">m_english</span> <span class="o">=</span> <span class="n">english</span><span class="p">;</span>
+    <span class="n">m_chinese</span> <span class="o">=</span> <span class="n">chinese</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//印出學生姓名與分數</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"math = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_math</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"english = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_english</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"chinese = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_chinese</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="c1">//為每個科目增加分數</span>
 <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="kt">int</span> <span class="n">score</span><span class="p">,</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立物件</span>
-    <span class="n">Student</span> <span class="n">student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
-    <span class="c1">//為每個分數增加15分</span>
-    <span class="n">student</span> <span class="o">=</span> <span class="mi">15</span> <span class="o">+</span> <span class="n">student</span><span class="p">;</span>
-    <span class="c1">//印出學生姓名與各科分數</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立物件</span>
+  <span class="n">Student</span> <span class="n">student</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
+  <span class="c1">//為每個分數增加15分</span>
+  <span class="n">student</span> <span class="o">=</span> <span class="mi">15</span> <span class="o">+</span> <span class="n">student</span><span class="p">;</span>
+  <span class="c1">//印出學生姓名與各科分數</span>
+  <span class="n">student</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1875,9 +1875,9 @@ chinese = 85
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>    <span class="n">Student</span> <span class="nf">s1</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
-    <span class="n">Student</span> <span class="nf">s2</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
-    <span class="n">s1</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="n">Student</span> <span class="nf">s1</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
+  <span class="n">Student</span> <span class="nf">s2</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
+  <span class="n">s1</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1952,59 +1952,59 @@ chinese = 85
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="c1">//私有成員變數</span>
-    <span class="kt">int</span> <span class="n">m_math</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">m_english</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">m_chinese</span><span class="p">;</span>
+  <span class="c1">//私有成員變數</span>
+  <span class="kt">int</span> <span class="n">m_math</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">m_english</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">m_chinese</span><span class="p">;</span>
 <span class="nl">public:</span>
-    <span class="c1">//將類別外的函式設為friend，才能讀取物件私有成員變數</span>
-    <span class="k">friend</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">);</span>
-    <span class="k">friend</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="kt">int</span> <span class="n">score</span><span class="p">,</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">);</span>
-    <span class="k">friend</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s1</span><span class="p">,</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="n">s2</span><span class="p">);</span>
-    <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
-    <span class="n">Student</span><span class="p">(){}</span>
-    <span class="c1">//建構子，姓名，數學成績，英文成績，國文成績</span>
-    <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">math</span><span class="p">,</span> <span class="kt">int</span> <span class="n">english</span><span class="p">,</span> <span class="kt">int</span> <span class="n">chinese</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">m_name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-        <span class="n">m_math</span> <span class="o">=</span> <span class="n">math</span><span class="p">;</span>
-        <span class="n">m_english</span> <span class="o">=</span> <span class="n">english</span><span class="p">;</span>
-        <span class="n">m_chinese</span> <span class="o">=</span> <span class="n">chinese</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//印出學生姓名與分數</span>
-    <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"math = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_math</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"english = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_english</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"chinese = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_chinese</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="c1">//將類別外的函式設為friend，才能讀取物件私有成員變數</span>
+  <span class="k">friend</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">);</span>
+  <span class="k">friend</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="kt">int</span> <span class="n">score</span><span class="p">,</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">);</span>
+  <span class="k">friend</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s1</span><span class="p">,</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="n">s2</span><span class="p">);</span>
+  <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
+  <span class="n">Student</span><span class="p">(){}</span>
+  <span class="c1">//建構子，姓名，數學成績，英文成績，國文成績</span>
+  <span class="n">Student</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">math</span><span class="p">,</span> <span class="kt">int</span> <span class="n">english</span><span class="p">,</span> <span class="kt">int</span> <span class="n">chinese</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">m_name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="n">m_math</span> <span class="o">=</span> <span class="n">math</span><span class="p">;</span>
+    <span class="n">m_english</span> <span class="o">=</span> <span class="n">english</span><span class="p">;</span>
+    <span class="n">m_chinese</span> <span class="o">=</span> <span class="n">chinese</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//印出學生姓名與分數</span>
+  <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"math = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_math</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"english = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_english</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"chinese = "</span> <span class="o">&lt;&lt;</span> <span class="n">m_chinese</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 <span class="c1">//為每個科目增加分數</span>
 <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">score</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="kt">int</span> <span class="n">score</span><span class="p">,</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">score</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="n">Student</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Student</span><span class="o">&amp;</span> <span class="n">s1</span><span class="p">,</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="n">s2</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">s1</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">s2</span><span class="p">.</span><span class="n">m_math</span><span class="p">;</span>
-    <span class="n">s1</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">s2</span><span class="p">.</span><span class="n">m_chinese</span><span class="p">;</span>
-    <span class="n">s1</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">s2</span><span class="p">.</span><span class="n">m_english</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">s1</span><span class="p">;</span>
+  <span class="n">s1</span><span class="p">.</span><span class="n">m_math</span> <span class="o">+=</span> <span class="n">s2</span><span class="p">.</span><span class="n">m_math</span><span class="p">;</span>
+  <span class="n">s1</span><span class="p">.</span><span class="n">m_chinese</span> <span class="o">+=</span> <span class="n">s2</span><span class="p">.</span><span class="n">m_chinese</span><span class="p">;</span>
+  <span class="n">s1</span><span class="p">.</span><span class="n">m_english</span> <span class="o">+=</span> <span class="n">s2</span><span class="p">.</span><span class="n">m_english</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">s1</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立物件</span>
-    <span class="n">Student</span> <span class="n">s1</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
-    <span class="n">Student</span> <span class="n">s2</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
-    <span class="n">s1</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span><span class="p">;</span>
-    <span class="c1">//印出學生姓名與各科分數</span>
-    <span class="n">s1</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立物件</span>
+  <span class="n">Student</span> <span class="n">s1</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
+  <span class="n">Student</span> <span class="n">s2</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
+  <span class="n">s1</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span><span class="p">;</span>
+  <span class="c1">//印出學生姓名與各科分數</span>
+  <span class="n">s1</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -2027,13 +2027,13 @@ chinese = 85
 8
 9
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//建立物件</span>
-    <span class="n">Student</span> <span class="n">s1</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
-    <span class="n">Student</span> <span class="n">s2</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
-    <span class="n">s1</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">+</span> <span class="n">s2</span><span class="p">;</span>
-    <span class="c1">//印出學生姓名與各科分數</span>
-    <span class="n">s1</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//建立物件</span>
+  <span class="n">Student</span> <span class="n">s1</span><span class="p">(</span><span class="s">"Bill"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
+  <span class="n">Student</span> <span class="n">s2</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
+  <span class="n">s1</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">+</span> <span class="n">s2</span><span class="p">;</span>
+  <span class="c1">//印出學生姓名與各科分數</span>
+  <span class="n">s1</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -2227,7 +2227,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

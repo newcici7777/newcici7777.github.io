@@ -28,12 +28,12 @@ static int count;
 using namespace std;
 class Student {
 public:
-    static int count;
+  static int count;
 };
 //在這邊初始化靜態類別變數
 int Student::count = 100;
 int main() {
-    return 0;
+  return 0;
 }
 {% endhighlight %}
 
@@ -52,12 +52,12 @@ cout << "count = " << Student::count << endl;
 {% highlight c++ linenos %}
 class Student {
 public:
-    static int count;
+  static int count;
 };
 int Student::count = 100;
 int main() {
-    cout << "count = " << Student::count << endl;
-    return 0;
+  cout << "count = " << Student::count << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -88,15 +88,15 @@ Student::getCount();
 {% highlight c++ linenos %}
 class Student {
 public:
-    static int count;
-    static void getCount() {
-        cout << "count = " << count << endl;
-    }
+  static int count;
+  static void getCount() {
+    cout << "count = " << count << endl;
+  }
 };
 int Student::count = 100;
 int main() {
-    Student::getCount();
-    return 0;
+  Student::getCount();
+  return 0;
 }
 {% endhighlight %}
 
@@ -107,17 +107,17 @@ int main() {
 {% highlight c++ linenos %}
 class Student {
 public:
-    static int count;
-    static void getCount() {
-        cout << "count = " << count << endl;
-    }
+  static int count;
+  static void getCount() {
+    cout << "count = " << count << endl;
+  }
 };
 int Student::count = 100;
 int main() {
-    Student student;
-    cout << "student.count = " << student.count << endl;
-    student.getCount();
-    return 0;
+  Student student;
+  cout << "student.count = " << student.count << endl;
+  student.getCount();
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -131,19 +131,19 @@ count = 100
 
 {% highlight c++ linenos %}
 int main() {
-    Student student1;
-    student1.count = 110;
-    
-    Student student2;
-    student2.count = 120;
-    
-    Student student3;
-    student3.count = 130;
-    
-    cout << "student1.count = " << student1.count << endl;
-    cout << "student2.count = " << student2.count << endl;
-    cout << "student3.count = " << student3.count << endl;
-    return 0;
+  Student student1;
+  student1.count = 110;
+  
+  Student student2;
+  student2.count = 120;
+  
+  Student student3;
+  student3.count = 130;
+  
+  cout << "student1.count = " << student1.count << endl;
+  cout << "student2.count = " << student2.count << endl;
+  cout << "student3.count = " << student3.count << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -162,12 +162,12 @@ student3.count = 130
 {% highlight c++ linenos %}
 class Student {
 public:
-    string name;
-    static int count;
-    static void getCount() {
-        cout << "name =" << name << endl;
-        cout << "count = " << count << endl;
-    }
+  string name;
+  static int count;
+  static void getCount() {
+    cout << "name =" << name << endl;
+    cout << "count = " << count << endl;
+  }
 };
 {% endhighlight %}
 
@@ -178,15 +178,15 @@ public:
 {% highlight c++ linenos %}
 class Student {
 public:
-    string name;
-    static int count;
-    void print() {
-        cout << "name = " << name << endl;
-    }
-    static void getCount() {
-        print();
-        cout << "count = " << count << endl;
-    }
+  string name;
+  static int count;
+  void print() {
+    cout << "name = " << name << endl;
+  }
+  static void getCount() {
+    print();
+    cout << "count = " << count << endl;
+  }
 };
 {% endhighlight %}
 
@@ -197,37 +197,37 @@ public:
 {% highlight c++ linenos %}
 class Student {
 public:
-    string name;
-    static int count;
-    void print() {
-        cout << "name = " << name << endl;
-        getCount();
-        cout << "2. count = " << count << endl;
-    }
-    static void getCount() {
-        cout << "count = " << count << endl;
-    }
+  string name;
+  static int count;
+  void print() {
+    cout << "name = " << name << endl;
+    getCount();
+    cout << "2. count = " << count << endl;
+  }
+  static void getCount() {
+    cout << "count = " << count << endl;
+  }
 };
 int Student::count = 100;
 int main() {
-    Student student1;
-    student1.name = "Bill";
-    student1.count = 110;
-    
-    Student student2;
-    student2.name = "Mary";
-    student2.count = 120;
-    
-    Student student3;
-    student3.name = "Tom";
-    student3.count = 130;
-    
-    student1.print();
-    cout << "-----------------" << endl;
-    student2.print();
-    cout << "-----------------" << endl;
-    student3.print();
-    return 0;
+  Student student1;
+  student1.name = "Bill";
+  student1.count = 110;
+  
+  Student student2;
+  student2.name = "Mary";
+  student2.count = 120;
+  
+  Student student3;
+  student3.name = "Tom";
+  student3.count = 130;
+  
+  student1.print();
+  cout << "-----------------" << endl;
+  student2.print();
+  cout << "-----------------" << endl;
+  student3.print();
+  return 0;
 }
 {% endhighlight %}
 
@@ -263,18 +263,18 @@ int Student::count = 100;
 完整程式碼
 {% highlight c++ linenos %}
 class Student {
-    static int count;
-    static void getCount() {
-        cout << "count = " << count << endl;
-    }
+  static int count;
+  static void getCount() {
+    cout << "count = " << count << endl;
+  }
 public:
-    string name;
+  string name;
 };
 int Student::count = 100;
 int main() {
-    cout << Student::count << endl;
-    Student::getCount();
-    return 0;
+  cout << Student::count << endl;
+  Student::getCount();
+  return 0;
 }
 {% endhighlight %}
 

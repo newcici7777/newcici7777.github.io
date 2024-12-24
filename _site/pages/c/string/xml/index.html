@@ -1593,62 +1593,62 @@
  values存放找到的值
  **/</span>
 <span class="kt">bool</span> <span class="nf">xmlSearch</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">xmlbuffer</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">fieldname</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">values</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//檢查參數有沒有值</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">xmlbuffer</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">fieldname</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">values</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="c1">//檢查參數有沒有值</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">xmlbuffer</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">fieldname</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">values</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+  
+  <span class="c1">//搜尋的欄位名大小</span>
+  <span class="kt">size_t</span> <span class="n">fieldLen</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">fieldname</span><span class="p">);</span>
+  <span class="c1">//組成xml搜尋字串</span>
+  <span class="c1">//例，找xml標籤名是name的值</span>
+  <span class="c1">//開始 標籤名的字串</span>
+  <span class="c1">//&lt;name&gt;\0</span>
+  <span class="c1">//字串大小為2個&lt;&gt;尖括號+1個結尾空字元0+標籤名name大小</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">startField</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">fieldLen</span><span class="p">];</span>
+  <span class="c1">//清空陣列</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">startField</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">startField</span><span class="p">));</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">startField</span><span class="p">,</span> <span class="s">"&lt;"</span><span class="p">);</span> <span class="n">strcat</span><span class="p">(</span><span class="n">startField</span><span class="p">,</span> <span class="n">fieldname</span><span class="p">);</span> <span class="n">strcat</span><span class="p">(</span><span class="n">startField</span><span class="p">,</span> <span class="s">"&gt;"</span><span class="p">);</span>
+  <span class="c1">//結束 標籤名的字串</span>
+  <span class="c1">//&lt;/name&gt;\0</span>
+  <span class="c1">//字串大小為3個&lt;/&gt;符號+1個結尾空字元0+標籤名name大小</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">endField</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">fieldLen</span><span class="p">];</span>
+  <span class="c1">//清空陣列</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">endField</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">endField</span><span class="p">));</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">endField</span><span class="p">,</span> <span class="s">"&lt;/"</span><span class="p">);</span> <span class="n">strcat</span><span class="p">(</span><span class="n">endField</span><span class="p">,</span> <span class="n">fieldname</span><span class="p">);</span> <span class="n">strcat</span><span class="p">(</span><span class="n">endField</span><span class="p">,</span> <span class="s">"&gt;"</span><span class="p">);</span>
+  <span class="c1">//搜&lt;name&gt;</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">findStart</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">strstr</span><span class="p">(</span><span class="n">xmlbuffer</span><span class="p">,</span> <span class="n">startField</span><span class="p">);</span>
+  <span class="c1">//搜&lt;/name&gt;</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">findEnd</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">strstr</span><span class="p">(</span><span class="n">xmlbuffer</span><span class="p">,</span> <span class="n">endField</span><span class="p">);</span>
+  <span class="c1">//在xml字串中找到&lt;name&gt;與&lt;/name&gt;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">findStart</span> <span class="o">&amp;&amp;</span> <span class="n">findEnd</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//截取&lt;name&gt;.......&lt;/name&gt;中間的值，儲存在value字串</span>
+    <span class="c1">//計算&lt;name&gt;.......&lt;/name&gt;中間的值個數</span>
+    <span class="kt">size_t</span> <span class="n">valueLen</span> <span class="o">=</span> <span class="n">findEnd</span> <span class="o">-</span> <span class="n">findStart</span> <span class="o">-</span> <span class="n">fieldLen</span> <span class="o">-</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="c1">//findStart + 2 + fieldLen 是指將指標移動到&lt;name&gt;的後面</span>
+    <span class="c1">//以下第三個參數代表拷貝個數</span>
+    <span class="n">strncpy</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">findStart</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">fieldLen</span> <span class="p">,</span> <span class="n">valueLen</span><span class="p">);</span>
     
-    <span class="c1">//搜尋的欄位名大小</span>
-    <span class="kt">size_t</span> <span class="n">fieldLen</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">fieldname</span><span class="p">);</span>
-    <span class="c1">//組成xml搜尋字串</span>
-    <span class="c1">//例，找xml標籤名是name的值</span>
-    <span class="c1">//開始 標籤名的字串</span>
-    <span class="c1">//&lt;name&gt;\0</span>
-    <span class="c1">//字串大小為2個&lt;&gt;尖括號+1個結尾空字元0+標籤名name大小</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">startField</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">fieldLen</span><span class="p">];</span>
-    <span class="c1">//清空陣列</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">startField</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">startField</span><span class="p">));</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">startField</span><span class="p">,</span> <span class="s">"&lt;"</span><span class="p">);</span> <span class="n">strcat</span><span class="p">(</span><span class="n">startField</span><span class="p">,</span> <span class="n">fieldname</span><span class="p">);</span> <span class="n">strcat</span><span class="p">(</span><span class="n">startField</span><span class="p">,</span> <span class="s">"&gt;"</span><span class="p">);</span>
-    <span class="c1">//結束 標籤名的字串</span>
-    <span class="c1">//&lt;/name&gt;\0</span>
-    <span class="c1">//字串大小為3個&lt;/&gt;符號+1個結尾空字元0+標籤名name大小</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">endField</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">fieldLen</span><span class="p">];</span>
-    <span class="c1">//清空陣列</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">endField</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">endField</span><span class="p">));</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">endField</span><span class="p">,</span> <span class="s">"&lt;/"</span><span class="p">);</span> <span class="n">strcat</span><span class="p">(</span><span class="n">endField</span><span class="p">,</span> <span class="n">fieldname</span><span class="p">);</span> <span class="n">strcat</span><span class="p">(</span><span class="n">endField</span><span class="p">,</span> <span class="s">"&gt;"</span><span class="p">);</span>
-    <span class="c1">//搜&lt;name&gt;</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">findStart</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">strstr</span><span class="p">(</span><span class="n">xmlbuffer</span><span class="p">,</span> <span class="n">startField</span><span class="p">);</span>
-    <span class="c1">//搜&lt;/name&gt;</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">findEnd</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">strstr</span><span class="p">(</span><span class="n">xmlbuffer</span><span class="p">,</span> <span class="n">endField</span><span class="p">);</span>
-    <span class="c1">//在xml字串中找到&lt;name&gt;與&lt;/name&gt;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">findStart</span> <span class="o">&amp;&amp;</span> <span class="n">findEnd</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//截取&lt;name&gt;.......&lt;/name&gt;中間的值，儲存在value字串</span>
-        <span class="c1">//計算&lt;name&gt;.......&lt;/name&gt;中間的值個數</span>
-        <span class="kt">size_t</span> <span class="n">valueLen</span> <span class="o">=</span> <span class="n">findEnd</span> <span class="o">-</span> <span class="n">findStart</span> <span class="o">-</span> <span class="n">fieldLen</span> <span class="o">-</span> <span class="mi">2</span><span class="p">;</span>
-        <span class="c1">//findStart + 2 + fieldLen 是指將指標移動到&lt;name&gt;的後面</span>
-        <span class="c1">//以下第三個參數代表拷貝個數</span>
-        <span class="n">strncpy</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">findStart</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">fieldLen</span> <span class="p">,</span> <span class="n">valueLen</span><span class="p">);</span>
-        
-        <span class="c1">//清除記憶空間</span>
-        <span class="k">delete</span><span class="p">[]</span> <span class="n">startField</span><span class="p">;</span> <span class="n">startField</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-        <span class="k">delete</span><span class="p">[]</span> <span class="n">endField</span><span class="p">;</span> <span class="n">endField</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//找不到</span>
     <span class="c1">//清除記憶空間</span>
     <span class="k">delete</span><span class="p">[]</span> <span class="n">startField</span><span class="p">;</span> <span class="n">startField</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
     <span class="k">delete</span><span class="p">[]</span> <span class="n">endField</span><span class="p">;</span> <span class="n">endField</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//找不到</span>
+  <span class="c1">//清除記憶空間</span>
+  <span class="k">delete</span><span class="p">[]</span> <span class="n">startField</span><span class="p">;</span> <span class="n">startField</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="k">delete</span><span class="p">[]</span> <span class="n">endField</span><span class="p">;</span> <span class="n">endField</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">values</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="c1">//清空陣列</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">values</span><span class="p">));</span>
-    
-    <span class="kt">bool</span> <span class="n">res</span> <span class="o">=</span> <span class="n">xmlSearch</span><span class="p">(</span><span class="s">"&lt;id&gt;1&lt;/id&gt;&lt;name&gt;Cici&lt;/name&gt;&lt;age&gt;10&lt;/age&gt;"</span><span class="p">,</span> <span class="s">"name"</span><span class="p">,</span> <span class="n">values</span><span class="p">);</span>
-    <span class="c1">//如果有找到會回傳true</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"value = "</span> <span class="o">&lt;&lt;</span> <span class="n">values</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">values</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="c1">//清空陣列</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">values</span><span class="p">));</span>
+  
+  <span class="kt">bool</span> <span class="n">res</span> <span class="o">=</span> <span class="n">xmlSearch</span><span class="p">(</span><span class="s">"&lt;id&gt;1&lt;/id&gt;&lt;name&gt;Cici&lt;/name&gt;&lt;age&gt;10&lt;/age&gt;"</span><span class="p">,</span> <span class="s">"name"</span><span class="p">,</span> <span class="n">values</span><span class="p">);</span>
+  <span class="c1">//如果有找到會回傳true</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"value = "</span> <span class="o">&lt;&lt;</span> <span class="n">values</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1846,7 +1846,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

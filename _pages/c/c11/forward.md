@@ -18,19 +18,19 @@ Prerequisites:
 using namespace std;
 //參數左值
 void func(int& x) {
-    cout << "l-value" << endl;
+  cout << "l-value" << endl;
 }
 //參數右值
 void func(int&& x) {
-    cout << "r-value" << endl;
+  cout << "r-value" << endl;
 }
 int main() {
-    int i = 10;
-    //呼叫函式，參數為左值
-    func(i);
-    //呼叫函式，參數為右值
-    func(100);
-    return 0;
+  int i = 10;
+  //呼叫函式，參數為左值
+  func(i);
+  //呼叫函式，參數為右值
+  func(100);
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -48,22 +48,22 @@ r-value
 using namespace std;
 //參數左值
 void func(int& x) {
-    cout << "l-value" << endl;
+  cout << "l-value" << endl;
 }
 //參數右值
 void func(int&& x) {
-    cout << "r-value" << endl;
+  cout << "r-value" << endl;
 }
 void middle(int x) {
-    func(x);
+  func(x);
 }
 int main() {
-    int i = 10;
-    //呼叫函式，參數為左值
-    middle(i);
-    //呼叫函式，參數為右值
-    middle(100);
-    return 0;
+  int i = 10;
+  //呼叫函式，參數為左值
+  middle(i);
+  //呼叫函式，參數為右值
+  middle(100);
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -89,23 +89,23 @@ l-value
 using namespace std;
 //參數左值
 void func(int& x) {
-    cout << "l-value" << endl;
+  cout << "l-value" << endl;
 }
 //參數右值
 void func(int&& x) {
-    cout << "r-value" << endl;
+  cout << "r-value" << endl;
 }
 template<typename T>
 void middle(T&& x) {
-    func(forward<T>(x));
+  func(forward<T>(x));
 }
 int main() {
-    int i = 10;
-    //呼叫函式，參數為左值
-    middle(i);
-    //呼叫函式，參數為右值
-    middle(100);
-    return 0;
+  int i = 10;
+  //呼叫函式，參數為左值
+  middle(i);
+  //呼叫函式，參數為右值
+  middle(100);
+  return 0;
 }
 {% endhighlight %}
 ```

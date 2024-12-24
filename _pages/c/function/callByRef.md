@@ -29,17 +29,17 @@ void callByRef(int& param1, int& param2);
 
 {% highlight c++ linenos %}
 void callByValue(int param1, int param2){
-    param1 = 100;
-    param2 = 200;
+  param1 = 100;
+  param2 = 200;
 }
 int main() {
-    int i = 10;
-    int j = 20;
-    callByValue(i,j);
-    cout << "callByValue:" << endl;
-    cout << "i = " << i << ", j = " << j << endl;
-    return 0;
-}    
+  int i = 10;
+  int j = 20;
+  callByValue(i,j);
+  cout << "callByValue:" << endl;
+  cout << "i = " << i << ", j = " << j << endl;
+  return 0;
+}  
 {% endhighlight %}
 
 ```
@@ -57,17 +57,17 @@ callByRef(i,j);
 
 {% highlight c++ linenos %}
 void callByRef(int& param1, int& param2){
-    param1 = 100;
-    param2 = 200;
+  param1 = 100;
+  param2 = 200;
 }
 int main() {
-    int i = 10;
-    int j = 20;
-    callByRef(i,j);
-    cout << "callByReference:" << endl;
-    cout << "i = " << i << ", j = " << j << endl;
-    return 0;
-}    
+  int i = 10;
+  int j = 20;
+  callByRef(i,j);
+  cout << "callByReference:" << endl;
+  cout << "i = " << i << ", j = " << j << endl;
+  return 0;
+}  
 {% endhighlight %}
 
 ```

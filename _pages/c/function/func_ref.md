@@ -24,20 +24,20 @@ void (<span class="markline">&</span>func_ref)(int, const string&);
 //函式宣告
 void print(int code, const string& msg);
 int main() {
-    //宣告函式指標，指到print函式
-    void (*func_pointer)(int, const string&) = print;
-    //呼叫函式
-    func_pointer(500, "Server Error.");
-    
-    //宣告函式參考，指到print函式
-    void (&func_ref)(int, const string&) = print;
-    //呼叫函式
-    func_ref(500, "Server Error.");
-    return 0;
+  //宣告函式指標，指到print函式
+  void (*func_pointer)(int, const string&) = print;
+  //呼叫函式
+  func_pointer(500, "Server Error.");
+  
+  //宣告函式參考，指到print函式
+  void (&func_ref)(int, const string&) = print;
+  //呼叫函式
+  func_ref(500, "Server Error.");
+  return 0;
 }
 //函式定義
 void print(int code, const string& msg) {
-    cout << "Error code = " << code << " , Msg = " << msg << endl;
+  cout << "Error code = " << code << " , Msg = " << msg << endl;
 }
 {% endhighlight %}
 

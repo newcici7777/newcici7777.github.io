@@ -43,18 +43,18 @@ b與d交換
 
 {% highlight c++ linenos %}
 int main() {
-    char str[100];
-    //清空記憶體的值
-    memset(str,0,sizeof(str));
-    cout << "請輸入字串:"; cin >> str;
-    
-    for(int i = 0, len = strlen(str); i < len/2; i++) {
-        char temp = str[i];
-        str[i] = str[len - 1 - i];
-        str[len - 1 - i] = temp;
-    }
-    cout << str << endl;
-    return 0;
+  char str[100];
+  //清空記憶體的值
+  memset(str,0,sizeof(str));
+  cout << "請輸入字串:"; cin >> str;
+  
+  for(int i = 0, len = strlen(str); i < len/2; i++) {
+    char temp = str[i];
+    str[i] = str[len - 1 - i];
+    str[len - 1 - i] = temp;
+  }
+  cout << str << endl;
+  return 0;
 }
 {% endhighlight %}
 

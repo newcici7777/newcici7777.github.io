@@ -50,56 +50,56 @@ Prerequisites:
 
 {% highlight c++ linenos %}
 void _mergeSort(int arr[], int temp[], int start, int end) {
-    //列切半拆分，直到切到只剩下一個元素，start與end會是相同，就返回
-    if(start >= end) return;
-    //陣列切半拆分
-    //若拆的陣列為[654321]，拆成[654]與[321]，要再拆分[321]，3的陣列索引是3
-    // (5-3)/2 = 1 要再+3，拆分的中點索引才會在4，而不是在1
-    // 拆成[34] [1]
-    int mid = start + (end - start)/2;
-    //拆成二半，二個陣列的起始位置
-    int start1 = start, end1 = mid;
-    int start2 = mid + 1, end2 = end;
-    _mergeSort(arr, temp, start, mid);
-    _mergeSort(arr, temp, mid+1, end);
-    
-    //臨時陣列計數器
-    int i = start;
+  //列切半拆分，直到切到只剩下一個元素，start與end會是相同，就返回
+  if(start >= end) return;
+  //陣列切半拆分
+  //若拆的陣列為[654321]，拆成[654]與[321]，要再拆分[321]，3的陣列索引是3
+  // (5-3)/2 = 1 要再+3，拆分的中點索引才會在4，而不是在1
+  // 拆成[34] [1]
+  int mid = start + (end - start)/2;
+  //拆成二半，二個陣列的起始位置
+  int start1 = start, end1 = mid;
+  int start2 = mid + 1, end2 = end;
+  _mergeSort(arr, temp, start, mid);
+  _mergeSort(arr, temp, mid+1, end);
+  
+  //臨時陣列計數器
+  int i = start;
 
-    //判斷二個拆分陣列的值的大小
-    while(start1 <= end1 && start2 <= end2) {
-        if(arr[start1] < arr[start2]) {
-            temp[i++] = arr[start1++];
-        } else {
-            temp[i++] = arr[start2++];
-        }
+  //判斷二個拆分陣列的值的大小
+  while(start1 <= end1 && start2 <= end2) {
+    if(arr[start1] < arr[start2]) {
+      temp[i++] = arr[start1++];
+    } else {
+      temp[i++] = arr[start2++];
     }
-    
-    //左半邊
-    while(start1 <= end1) {
-        temp[i++] = arr[start1++];
-    }
-    //右半邊
-    while(start2 <= end2) {
-        temp[i++] = arr[start2++];
-    }
-    memcpy(arr+start, temp+start, (end - start + 1) * sizeof(int));
+  }
+  
+  //左半邊
+  while(start1 <= end1) {
+    temp[i++] = arr[start1++];
+  }
+  //右半邊
+  while(start2 <= end2) {
+    temp[i++] = arr[start2++];
+  }
+  memcpy(arr+start, temp+start, (end - start + 1) * sizeof(int));
 }
 void mergeSort(int arr[],size_t len) {
-    //小於2個不用比
-    if(len < 2) return;
-    int temp[len];
-    _mergeSort(arr, temp, 0, len-1);
+  //小於2個不用比
+  if(len < 2) return;
+  int temp[len];
+  _mergeSort(arr, temp, 0, len-1);
 }
 int main() {
-    int arr[] = {6,5,4,3,2,1};
-    int len = sizeof(arr)/sizeof(int);
-    mergeSort(arr, len);
-    for(int i = 0; i < len; i++) {
-        cout << arr[i] << ",";
-    }
-    cout << endl;
-    return 0;
+  int arr[] = {6,5,4,3,2,1};
+  int len = sizeof(arr)/sizeof(int);
+  mergeSort(arr, len);
+  for(int i = 0; i < len; i++) {
+    cout << arr[i] << ",";
+  }
+  cout << endl;
+  return 0;
 }
 {% endhighlight %}
 

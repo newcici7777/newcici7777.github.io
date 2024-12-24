@@ -14,14 +14,14 @@ Prerequisites:
 
 {% highlight c++ linenos %}
 int main() {
-    int i = 40;
-    cout << "i的值 = " << i << "，i的位址 = " << &i << endl;
-    int *p = &i;
-    cout << "指標p指向的位址 = " << p << "，指標p的位址 = " << &p << "，指標p指向位址的值=" << *p << endl;
-    int **pp = &p;
-    cout << "指標pp指向的位址 = " << pp << "，指標pp的位址 = " << &pp << "，指標pp指向的位址(p)指向的位址(i)=" << *pp << endl;
-    cout << "指標pp指向的位址(p)指向的位址(i)的值=" << **pp << endl;
-    return 0;
+  int i = 40;
+  cout << "i的值 = " << i << "，i的位址 = " << &i << endl;
+  int *p = &i;
+  cout << "指標p指向的位址 = " << p << "，指標p的位址 = " << &p << "，指標p指向位址的值=" << *p << endl;
+  int **pp = &p;
+  cout << "指標pp指向的位址 = " << pp << "，指標pp的位址 = " << &pp << "，指標pp指向的位址(p)指向的位址(i)=" << *pp << endl;
+  cout << "指標pp指向的位址(p)指向的位址(i)的值=" << **pp << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -36,18 +36,18 @@ i的值 = 40，i的位址 = 0x7ff7bfeff468
 
 {% highlight c++ linenos %}
 int main() {
-    int i4 = 40;
-    //宣告一個指標存i4的位址
-    int *p2 = &i4;
-    //將p2指標的位址傳給pp2
-    int **pp2 = &p2;
+  int i4 = 40;
+  //宣告一個指標存i4的位址
+  int *p2 = &i4;
+  //將p2指標的位址傳給pp2
+  int **pp2 = &p2;
 
-    //1.把pp2存放的位址，使用取值運算子*，也就是指標p2的位址
-    //*pp2;
-    //2.再把p2位址，使用取值運算子*，也就是40
-    //**pp2
-    printf("解出pp2的值:%d\n",**pp2);    
-    return 0;
+  //1.把pp2存放的位址，使用取值運算子*，也就是指標p2的位址
+  //*pp2;
+  //2.再把p2位址，使用取值運算子*，也就是40
+  //**pp2
+  printf("解出pp2的值:%d\n",**pp2);  
+  return 0;
 }
 {% endhighlight %}
 
@@ -75,7 +75,7 @@ int main() {
 
 ```
 回傳型態 函式名(指標資料型態** 指標) {
-    *指標 = 其它記憶體位址
+  *指標 = 其它記憶體位址
 }
 ```
 
@@ -92,17 +92,17 @@ int main() {
 using namespace std;
 int global_var = 100;
 void changePointerValue(int** ptr_ptr){
-    *ptr_ptr = &global_var; //改為指向global_var
+  *ptr_ptr = &global_var; //改為指向global_var
 }
 int main() {
-    int var = 1;
-    int* pointer_to_var = &var; //指向var
-    cout << "Before:" << *pointer_to_var << endl;
-    //passing the address of the pointer
-    //把指標的位址傳進函式中
-    changePointerValue(&pointer_to_var);
-    cout << "After:" << *pointer_to_var << endl;
-    return 0;
+  int var = 1;
+  int* pointer_to_var = &var; //指向var
+  cout << "Before:" << *pointer_to_var << endl;
+  //passing the address of the pointer
+  //把指標的位址傳進函式中
+  changePointerValue(&pointer_to_var);
+  cout << "After:" << *pointer_to_var << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -125,23 +125,23 @@ new會返回動態配置記憶體的開始位址，將p_to_p使用\*取值運算
 using namespace std;
 //宣告一個函式initAddress() 指標是p_to_p，指向外部指標的位址
 void initAddress(int** p_to_p){
-    //印出指向外部指標p的記憶體位址
-    cout << "Before p address = " << *p_to_p << endl;
-    //動態配置記憶體位址，位址存放的內容為10，使用new會返回動態配置記憶體的開始位址。
-    //使用*取值運算子修改指標p指向的位址
-    *p_to_p = new int(10);
-    //印出指向外部指標的記憶體位址與值
-    cout  << "After p address= " << *p_to_p << ",After p value = " << **p_to_p << endl;
+  //印出指向外部指標p的記憶體位址
+  cout << "Before p address = " << *p_to_p << endl;
+  //動態配置記憶體位址，位址存放的內容為10，使用new會返回動態配置記憶體的開始位址。
+  //使用*取值運算子修改指標p指向的位址
+  *p_to_p = new int(10);
+  //印出指向外部指標的記憶體位址與值
+  cout  << "After p address= " << *p_to_p << ",After p value = " << **p_to_p << endl;
 }
 int main() {
-    //宣告指標p，初始化為nullptr，也就是沒有指向任何位址
-    int* p = nullptr;
-    //呼叫函式initAddress，引數為指標p的位址
-    initAddress(&p);
-    //印出指標p的位址，印出指標p指向的位址，對指向的位址取出內容。
-    cout << "== outside == " << endl;
-    cout << "outside pointer address = " << p << "，outside pointer value = " << *p << endl;
-    return 0;
+  //宣告指標p，初始化為nullptr，也就是沒有指向任何位址
+  int* p = nullptr;
+  //呼叫函式initAddress，引數為指標p的位址
+  initAddress(&p);
+  //印出指標p的位址，印出指標p指向的位址，對指向的位址取出內容。
+  cout << "== outside == " << endl;
+  cout << "outside pointer address = " << p << "，outside pointer value = " << *p << endl;
+  return 0;
 }
 {% endhighlight %}
 

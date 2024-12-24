@@ -12,44 +12,44 @@ keywords: c++, operator+
 #include <iostream>
 using namespace std;
 class Student {
-    //私有成員變數
-    int m_math;
-    int m_english;
-    int m_chinese;
+  //私有成員變數
+  int m_math;
+  int m_english;
+  int m_chinese;
 public:
-    //將類別外的函式設為friend，才能讀取物件私有成員變數
-    friend void addScore(Student& s, int score);
-    string m_name;
-    Student(){}
-    //建構子，姓名，數學成績，英文成績，國文成績
-    Student(string name, int math, int english, int chinese) {
-        m_name = name;
-        m_math = math;
-        m_english = english;
-        m_chinese = chinese;
-    }
-    //印出學生姓名與分數
-    void print() {
-        cout << "name = " << m_name << endl;
-        cout << "math = " << m_math << endl;
-        cout << "english = " << m_english << endl;
-        cout << "chinese = " << m_chinese << endl;
-    }
+  //將類別外的函式設為friend，才能讀取物件私有成員變數
+  friend void addScore(Student& s, int score);
+  string m_name;
+  Student(){}
+  //建構子，姓名，數學成績，英文成績，國文成績
+  Student(string name, int math, int english, int chinese) {
+    m_name = name;
+    m_math = math;
+    m_english = english;
+    m_chinese = chinese;
+  }
+  //印出學生姓名與分數
+  void print() {
+    cout << "name = " << m_name << endl;
+    cout << "math = " << m_math << endl;
+    cout << "english = " << m_english << endl;
+    cout << "chinese = " << m_chinese << endl;
+  }
 };
 //為每個科目增加分數
 void addScore(Student& s, int score) {
-    s.m_math += score;
-    s.m_chinese += score;
-    s.m_english += score;
+  s.m_math += score;
+  s.m_chinese += score;
+  s.m_english += score;
 }
 int main() {
-    //建立物件
-    Student student("Bill", 50, 60, 70);
-    //為每個分數增加15分
-    addScore(student, 15);
-    //印出學生姓名與各科分數
-    student.print();
-    return 0;
+  //建立物件
+  Student student("Bill", 50, 60, 70);
+  //為每個分數增加15分
+  addScore(student, 15);
+  //印出學生姓名與各科分數
+  student.print();
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -65,44 +65,44 @@ chinese = 85
 
 {% highlight c++ linenos %}
 class Student {
-    //私有成員變數
-    int m_math;
-    int m_english;
-    int m_chinese;
+  //私有成員變數
+  int m_math;
+  int m_english;
+  int m_chinese;
 public:
-    //將類別外的函式設為friend，才能讀取物件私有成員變數
-    friend void operator+(Student& s, int score);
-    string m_name;
-    Student(){}
-    //建構子，姓名，數學成績，英文成績，國文成績
-    Student(string name, int math, int english, int chinese) {
-        m_name = name;
-        m_math = math;
-        m_english = english;
-        m_chinese = chinese;
-    }
-    //印出學生姓名與分數
-    void print() {
-        cout << "name = " << m_name << endl;
-        cout << "math = " << m_math << endl;
-        cout << "english = " << m_english << endl;
-        cout << "chinese = " << m_chinese << endl;
-    }
+  //將類別外的函式設為friend，才能讀取物件私有成員變數
+  friend void operator+(Student& s, int score);
+  string m_name;
+  Student(){}
+  //建構子，姓名，數學成績，英文成績，國文成績
+  Student(string name, int math, int english, int chinese) {
+    m_name = name;
+    m_math = math;
+    m_english = english;
+    m_chinese = chinese;
+  }
+  //印出學生姓名與分數
+  void print() {
+    cout << "name = " << m_name << endl;
+    cout << "math = " << m_math << endl;
+    cout << "english = " << m_english << endl;
+    cout << "chinese = " << m_chinese << endl;
+  }
 };
 //為每個科目增加分數
 void operator+(Student& s, int score) {
-    s.m_math += score;
-    s.m_chinese += score;
-    s.m_english += score;
+  s.m_math += score;
+  s.m_chinese += score;
+  s.m_english += score;
 }
 int main() {
-    //建立物件
-    Student student("Bill", 50, 60, 70);
-    //為每個分數增加15分
-    operator+(student, 15);
-    //印出學生姓名與各科分數
-    student.print();
-    return 0;
+  //建立物件
+  Student student("Bill", 50, 60, 70);
+  //為每個分數增加15分
+  operator+(student, 15);
+  //印出學生姓名與各科分數
+  student.print();
+  return 0;
 }
 {% endhighlight %}
 
@@ -112,44 +112,44 @@ int main() {
 
 {% highlight c++ linenos %}
 class Student {
-    //私有成員變數
-    int m_math;
-    int m_english;
-    int m_chinese;
+  //私有成員變數
+  int m_math;
+  int m_english;
+  int m_chinese;
 public:
-    //將類別外的函式設為friend，才能讀取物件私有成員變數
-    friend void operator+(Student& s, int score);
-    string m_name;
-    Student(){}
-    //建構子，姓名，數學成績，英文成績，國文成績
-    Student(string name, int math, int english, int chinese) {
-        m_name = name;
-        m_math = math;
-        m_english = english;
-        m_chinese = chinese;
-    }
-    //印出學生姓名與分數
-    void print() {
-        cout << "name = " << m_name << endl;
-        cout << "math = " << m_math << endl;
-        cout << "english = " << m_english << endl;
-        cout << "chinese = " << m_chinese << endl;        
-    }
+  //將類別外的函式設為friend，才能讀取物件私有成員變數
+  friend void operator+(Student& s, int score);
+  string m_name;
+  Student(){}
+  //建構子，姓名，數學成績，英文成績，國文成績
+  Student(string name, int math, int english, int chinese) {
+    m_name = name;
+    m_math = math;
+    m_english = english;
+    m_chinese = chinese;
+  }
+  //印出學生姓名與分數
+  void print() {
+    cout << "name = " << m_name << endl;
+    cout << "math = " << m_math << endl;
+    cout << "english = " << m_english << endl;
+    cout << "chinese = " << m_chinese << endl;    
+  }
 };
 //為每個科目增加分數
 void operator+(Student& s, int score) {
-    s.m_math += score;
-    s.m_chinese += score;
-    s.m_english += score;
+  s.m_math += score;
+  s.m_chinese += score;
+  s.m_english += score;
 }
 int main() {
-    //建立物件
-    Student student("Bill", 50, 60, 70);
-    //為每個分數增加15分
-    student + 15;
-    //印出學生姓名與各科分數
-    student.print();
-    return 0;
+  //建立物件
+  Student student("Bill", 50, 60, 70);
+  //為每個分數增加15分
+  student + 15;
+  //印出學生姓名與各科分數
+  student.print();
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -194,45 +194,45 @@ student = operator+(operator+(operator+(student, 15), 5), 5);
 #include <iostream>
 using namespace std;
 class Student {
-    //私有成員變數
-    int m_math;
-    int m_english;
-    int m_chinese;
+  //私有成員變數
+  int m_math;
+  int m_english;
+  int m_chinese;
 public:
-    //將類別外的函式設為friend，才能讀取物件私有成員變數
-    friend Student& operator+(Student& s, int score);
-    string m_name;
-    Student(){}
-    //建構子，姓名，數學成績，英文成績，國文成績
-    Student(string name, int math, int english, int chinese) {
-        m_name = name;
-        m_math = math;
-        m_english = english;
-        m_chinese = chinese;
-    }
-    //印出學生姓名與分數
-    void print() {
-        cout << "name = " << m_name << endl;
-        cout << "math = " << m_math << endl;
-        cout << "english = " << m_english << endl;
-        cout << "chinese = " << m_chinese << endl;   
-    }
+  //將類別外的函式設為friend，才能讀取物件私有成員變數
+  friend Student& operator+(Student& s, int score);
+  string m_name;
+  Student(){}
+  //建構子，姓名，數學成績，英文成績，國文成績
+  Student(string name, int math, int english, int chinese) {
+    m_name = name;
+    m_math = math;
+    m_english = english;
+    m_chinese = chinese;
+  }
+  //印出學生姓名與分數
+  void print() {
+    cout << "name = " << m_name << endl;
+    cout << "math = " << m_math << endl;
+    cout << "english = " << m_english << endl;
+    cout << "chinese = " << m_chinese << endl;   
+  }
 };
 //為每個科目增加分數
 Student& operator+(Student& s, int score) {
-    s.m_math += score;
-    s.m_chinese += score;
-    s.m_english += score;
-    return s;
+  s.m_math += score;
+  s.m_chinese += score;
+  s.m_english += score;
+  return s;
 }
 int main() {
-    //建立物件
-    Student student("Bill", 50, 60, 70);
-    //為每個分數增加15分
-    student = student + 15;
-    //印出學生姓名與各科分數
-    student.print();
-    return 0;
+  //建立物件
+  Student student("Bill", 50, 60, 70);
+  //為每個分數增加15分
+  student = student + 15;
+  //印出學生姓名與各科分數
+  student.print();
+  return 0;
 }
 {% endhighlight %}
 
@@ -248,15 +248,15 @@ Student& operator+(int score){}
 而原本
 
 {% highlight c++ linenos %}
-    s.m_math += score;
-    s.m_chinese += score;
-    s.m_english += score;
+  s.m_math += score;
+  s.m_chinese += score;
+  s.m_english += score;
 {% endhighlight %}
 可以改為
 {% highlight c++ linenos %}
-    m_math += score;
-    m_chinese += score;
-    m_english += score;
+  m_math += score;
+  m_chinese += score;
+  m_english += score;
 {% endhighlight %}
 
 原本的friend函式也可以刪掉
@@ -275,42 +275,42 @@ return *this;
 #include <iostream>
 using namespace std;
 class Student {
-    //私有成員變數
-    int m_math;
-    int m_english;
-    int m_chinese;
+  //私有成員變數
+  int m_math;
+  int m_english;
+  int m_chinese;
 public:
-    string m_name;
-    Student(){}
-    //建構子，姓名，數學成績，英文成績，國文成績
-    Student(string name, int math, int english, int chinese) {
-        m_name = name;
-        m_math = math;
-        m_english = english;
-        m_chinese = chinese;
-    }
-    Student& operator+(int score) {
-        m_math += score;
-        m_chinese += score;
-        m_english += score;
-        return *this;
-    }
-    //印出學生姓名與分數
-    void print() {
-        cout << "name = " << m_name << endl;
-        cout << "math = " << m_math << endl;
-        cout << "english = " << m_english << endl;
-        cout << "chinese = " << m_chinese << endl;
-    }
+  string m_name;
+  Student(){}
+  //建構子，姓名，數學成績，英文成績，國文成績
+  Student(string name, int math, int english, int chinese) {
+    m_name = name;
+    m_math = math;
+    m_english = english;
+    m_chinese = chinese;
+  }
+  Student& operator+(int score) {
+    m_math += score;
+    m_chinese += score;
+    m_english += score;
+    return *this;
+  }
+  //印出學生姓名與分數
+  void print() {
+    cout << "name = " << m_name << endl;
+    cout << "math = " << m_math << endl;
+    cout << "english = " << m_english << endl;
+    cout << "chinese = " << m_chinese << endl;
+  }
 };
 int main() {
-    //建立物件
-    Student student("Bill", 50, 60, 70);
-    //為每個分數增加15分
-    student = student + 15 + 5;
-    //印出學生姓名與各科分數
-    student.print();
-    return 0;
+  //建立物件
+  Student student("Bill", 50, 60, 70);
+  //為每個分數增加15分
+  student = student + 15 + 5;
+  //印出學生姓名與各科分數
+  student.print();
+  return 0;
 }
 {% endhighlight %}
 
@@ -333,52 +333,52 @@ Student& operator+(int score, Student& s){...}
 #include <iostream>
 using namespace std;
 class Student {
-    //私有成員變數
-    int m_math;
-    int m_english;
-    int m_chinese;
+  //私有成員變數
+  int m_math;
+  int m_english;
+  int m_chinese;
 public:
-    //將類別外的函式設為friend，才能讀取物件私有成員變數
-    friend Student& operator+(Student& s, int score);
-    friend Student& operator+(int score, Student& s);
-    string m_name;
-    Student(){}
-    //建構子，姓名，數學成績，英文成績，國文成績
-    Student(string name, int math, int english, int chinese) {
-        m_name = name;
-        m_math = math;
-        m_english = english;
-        m_chinese = chinese;
-    }
-    //印出學生姓名與分數
-    void print() {
-        cout << "name = " << m_name << endl;
-        cout << "math = " << m_math << endl;
-        cout << "english = " << m_english << endl;
-        cout << "chinese = " << m_chinese << endl;
-    }
+  //將類別外的函式設為friend，才能讀取物件私有成員變數
+  friend Student& operator+(Student& s, int score);
+  friend Student& operator+(int score, Student& s);
+  string m_name;
+  Student(){}
+  //建構子，姓名，數學成績，英文成績，國文成績
+  Student(string name, int math, int english, int chinese) {
+    m_name = name;
+    m_math = math;
+    m_english = english;
+    m_chinese = chinese;
+  }
+  //印出學生姓名與分數
+  void print() {
+    cout << "name = " << m_name << endl;
+    cout << "math = " << m_math << endl;
+    cout << "english = " << m_english << endl;
+    cout << "chinese = " << m_chinese << endl;
+  }
 };
 //為每個科目增加分數
 Student& operator+(Student& s, int score) {
-    s.m_math += score;
-    s.m_chinese += score;
-    s.m_english += score;
-    return s;
+  s.m_math += score;
+  s.m_chinese += score;
+  s.m_english += score;
+  return s;
 }
 Student& operator+(int score, Student& s) {
-    s.m_math += score;
-    s.m_chinese += score;
-    s.m_english += score;
-    return s;
+  s.m_math += score;
+  s.m_chinese += score;
+  s.m_english += score;
+  return s;
 }
 int main() {
-    //建立物件
-    Student student("Bill", 50, 60, 70);
-    //為每個分數增加15分
-    student = 15 + student;
-    //印出學生姓名與各科分數
-    student.print();
-    return 0;
+  //建立物件
+  Student student("Bill", 50, 60, 70);
+  //為每個分數增加15分
+  student = 15 + student;
+  //印出學生姓名與各科分數
+  student.print();
+  return 0;
 }
 {% endhighlight %}
 
@@ -387,9 +387,9 @@ int main() {
 若想使用以下的方式。
 
 {% highlight c++ linenos %}
-    Student s1("Bill", 50, 60, 70);
-    Student s2("Tom", 50, 60, 70);
-    s1 = s1 + s2;
+  Student s1("Bill", 50, 60, 70);
+  Student s2("Tom", 50, 60, 70);
+  s1 = s1 + s2;
 {% endhighlight %}
 
 寫一個operator+傳入的參數為2個物件
@@ -403,59 +403,59 @@ Student& operator+(Student& s1, Student& s2){}
 #include <iostream>
 using namespace std;
 class Student {
-    //私有成員變數
-    int m_math;
-    int m_english;
-    int m_chinese;
+  //私有成員變數
+  int m_math;
+  int m_english;
+  int m_chinese;
 public:
-    //將類別外的函式設為friend，才能讀取物件私有成員變數
-    friend Student& operator+(Student& s, int score);
-    friend Student& operator+(int score, Student& s);
-    friend Student& operator+(Student& s1, Student& s2);
-    string m_name;
-    Student(){}
-    //建構子，姓名，數學成績，英文成績，國文成績
-    Student(string name, int math, int english, int chinese) {
-        m_name = name;
-        m_math = math;
-        m_english = english;
-        m_chinese = chinese;
-    }
-    //印出學生姓名與分數
-    void print() {
-        cout << "name = " << m_name << endl;
-        cout << "math = " << m_math << endl;
-        cout << "english = " << m_english << endl;
-        cout << "chinese = " << m_chinese << endl;
-    }
+  //將類別外的函式設為friend，才能讀取物件私有成員變數
+  friend Student& operator+(Student& s, int score);
+  friend Student& operator+(int score, Student& s);
+  friend Student& operator+(Student& s1, Student& s2);
+  string m_name;
+  Student(){}
+  //建構子，姓名，數學成績，英文成績，國文成績
+  Student(string name, int math, int english, int chinese) {
+    m_name = name;
+    m_math = math;
+    m_english = english;
+    m_chinese = chinese;
+  }
+  //印出學生姓名與分數
+  void print() {
+    cout << "name = " << m_name << endl;
+    cout << "math = " << m_math << endl;
+    cout << "english = " << m_english << endl;
+    cout << "chinese = " << m_chinese << endl;
+  }
 };
 //為每個科目增加分數
 Student& operator+(Student& s, int score) {
-    s.m_math += score;
-    s.m_chinese += score;
-    s.m_english += score;
-    return s;
+  s.m_math += score;
+  s.m_chinese += score;
+  s.m_english += score;
+  return s;
 }
 Student& operator+(int score, Student& s) {
-    s.m_math += score;
-    s.m_chinese += score;
-    s.m_english += score;
-    return s;
+  s.m_math += score;
+  s.m_chinese += score;
+  s.m_english += score;
+  return s;
 }
 Student& operator+(Student& s1, Student& s2) {
-    s1.m_math += s2.m_math;
-    s1.m_chinese += s2.m_chinese;
-    s1.m_english += s2.m_english;
-    return s1;
+  s1.m_math += s2.m_math;
+  s1.m_chinese += s2.m_chinese;
+  s1.m_english += s2.m_english;
+  return s1;
 }
 int main() {
-    //建立物件
-    Student s1("Bill", 50, 60, 70);
-    Student s2("Tom", 50, 60, 70);
-    s1 = s1 + s2;
-    //印出學生姓名與各科分數
-    s1.print();
-    return 0;
+  //建立物件
+  Student s1("Bill", 50, 60, 70);
+  Student s2("Tom", 50, 60, 70);
+  s1 = s1 + s2;
+  //印出學生姓名與各科分數
+  s1.print();
+  return 0;
 }
 {% endhighlight %}
 
@@ -469,12 +469,12 @@ s1 = s1 + 10 + 5 + s2;
 
 {% highlight c++ linenos %}
 int main() {
-    //建立物件
-    Student s1("Bill", 50, 60, 70);
-    Student s2("Tom", 50, 60, 70);
-    s1 = s1 + 10 + 5 + s2;
-    //印出學生姓名與各科分數
-    s1.print();
-    return 0;
+  //建立物件
+  Student s1("Bill", 50, 60, 70);
+  Student s2("Tom", 50, 60, 70);
+  s1 = s1 + 10 + 5 + s2;
+  //印出學生姓名與各科分數
+  s1.print();
+  return 0;
 }
 {% endhighlight %}

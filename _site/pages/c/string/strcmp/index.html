@@ -1252,25 +1252,25 @@
  str1字元&lt;str2字元 return -1
  **/</span>
 <span class="kt">int</span> <span class="nf">mystrcmp</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">str1</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">str2</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//特別注意，使用while(true)，即便str1或str2是\0也能比較</span>
-    <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">){</span>
-        <span class="c1">//str1字元&gt;str2字元</span>
-        <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">str1</span> <span class="o">&gt;</span> <span class="o">*</span><span class="n">str2</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-        <span class="c1">//str1字元&lt;str2字元</span>
-        <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">str1</span> <span class="o">&lt;</span> <span class="o">*</span><span class="n">str2</span><span class="p">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-        <span class="c1">//二個字元結尾相等</span>
-        <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">str1</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">str2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="c1">//比較下一個字元</span>
-        <span class="n">str1</span><span class="o">++</span><span class="p">;</span>
-        <span class="n">str2</span><span class="o">++</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="c1">//特別注意，使用while(true)，即便str1或str2是\0也能比較</span>
+  <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">){</span>
+    <span class="c1">//str1字元&gt;str2字元</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">str1</span> <span class="o">&gt;</span> <span class="o">*</span><span class="n">str2</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="c1">//str1字元&lt;str2字元</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">str1</span> <span class="o">&lt;</span> <span class="o">*</span><span class="n">str2</span><span class="p">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="c1">//二個字元結尾相等</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">str1</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">str2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="c1">//比較下一個字元</span>
+    <span class="n">str1</span><span class="o">++</span><span class="p">;</span>
+    <span class="n">str2</span><span class="o">++</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mystrcmp</span><span class="p">(</span><span class="s">"abc"</span><span class="p">,</span><span class="s">"abcd"</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mystrcmp</span><span class="p">(</span><span class="s">"ab"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mystrcmp</span><span class="p">(</span><span class="s">"abc"</span><span class="p">,</span><span class="s">"abc"</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mystrcmp</span><span class="p">(</span><span class="s">""</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mystrcmp</span><span class="p">(</span><span class="s">"abc"</span><span class="p">,</span><span class="s">"abcd"</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mystrcmp</span><span class="p">(</span><span class="s">"ab"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mystrcmp</span><span class="p">(</span><span class="s">"abc"</span><span class="p">,</span><span class="s">"abc"</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mystrcmp</span><span class="p">(</span><span class="s">""</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1317,27 +1317,27 @@
 22
 23
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">mystrncmp</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">str1</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">str2</span><span class="p">,</span><span class="k">const</span> <span class="kt">size_t</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">){</span>
-        <span class="c1">//str1字元&gt;str2字元</span>
-        <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">str1</span> <span class="o">&gt;</span> <span class="o">*</span><span class="n">str2</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-        <span class="c1">//str1字元&lt;str2字元</span>
-        <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">str1</span> <span class="o">&lt;</span> <span class="o">*</span><span class="n">str2</span><span class="p">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-        <span class="c1">//二個字元結尾相等</span>
-        <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">str1</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">str2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="c1">//比較下一個字元</span>
-        <span class="n">str1</span><span class="o">++</span><span class="p">;</span>
-        <span class="n">str2</span><span class="o">++</span><span class="p">;</span>
-        <span class="n">i</span><span class="o">++</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//比較n次仍比較不出來，就回傳0</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">){</span>
+    <span class="c1">//str1字元&gt;str2字元</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">str1</span> <span class="o">&gt;</span> <span class="o">*</span><span class="n">str2</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="c1">//str1字元&lt;str2字元</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">str1</span> <span class="o">&lt;</span> <span class="o">*</span><span class="n">str2</span><span class="p">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="c1">//二個字元結尾相等</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">str1</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">str2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="c1">//比較下一個字元</span>
+    <span class="n">str1</span><span class="o">++</span><span class="p">;</span>
+    <span class="n">str2</span><span class="o">++</span><span class="p">;</span>
+    <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//比較n次仍比較不出來，就回傳0</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mystrncmp</span><span class="p">(</span><span class="s">"abc"</span><span class="p">,</span><span class="s">"abcd"</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mystrncmp</span><span class="p">(</span><span class="s">"ab"</span><span class="p">,</span><span class="s">"a"</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mystrncmp</span><span class="p">(</span><span class="s">"abc"</span><span class="p">,</span><span class="s">"abc"</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mystrncmp</span><span class="p">(</span><span class="s">"abc"</span><span class="p">,</span><span class="s">"abcd"</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mystrncmp</span><span class="p">(</span><span class="s">"ab"</span><span class="p">,</span><span class="s">"a"</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mystrncmp</span><span class="p">(</span><span class="s">"abc"</span><span class="p">,</span><span class="s">"abc"</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1536,7 +1536,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

@@ -21,11 +21,11 @@ keywords: c++, reference
 ## 宣告
 
 {% highlight c++ linenos %}
-    int i = 10;//原始變數
-    //宣告參考
-    int& ref = i;//初始化原始變數，ref是i的別名
-    cout << "i的記憶體位址 = " << &i << ", i = " << i << endl;
-    cout << "ref的記憶體位址 = " << &ref << ", ref = " << ref << endl;
+  int i = 10;//原始變數
+  //宣告參考
+  int& ref = i;//初始化原始變數，ref是i的別名
+  cout << "i的記憶體位址 = " << &i << ", i = " << i << endl;
+  cout << "ref的記憶體位址 = " << &ref << ", ref = " << ref << endl;
 {% endhighlight %}
 
 ```
@@ -39,9 +39,9 @@ ref的記憶體位址 = 0x7ff7bfeff468, ref = 10
 以下的程式寫法會編譯錯誤，因為ref參考別名沒有初始化。
 
 {% highlight c++ linenos %}
-    int i = 10;//原始變數
-    //宣告參考
-    int& ref;
+  int i = 10;//原始變數
+  //宣告參考
+  int& ref;
 {% endhighlight %}
 
 ## 參考別名跟原始變數功能一樣，可以修改跟讀取記憶體內容。
@@ -49,15 +49,15 @@ ref的記憶體位址 = 0x7ff7bfeff468, ref = 10
 參考別名跟原始變數都指向相同記憶體位址，所以可以做一樣的操作。
 
 {% highlight c++ linenos %}
-    int i = 10;//原始變數
-    //宣告參考
-    int& ref = i;
-    cout << "i的記憶體位址 = " << &i << ", i = " << i << endl;
-    cout << "ref的記憶體位址 = " << &ref << ", ref = " << ref << endl;
-    
-    ref = 30;
-    cout << "i的記憶體位址 = " << &i << ", i = " << i << endl;
-    cout << "ref的記憶體位址 = " << &ref << ", ref = " << ref << endl;
+  int i = 10;//原始變數
+  //宣告參考
+  int& ref = i;
+  cout << "i的記憶體位址 = " << &i << ", i = " << i << endl;
+  cout << "ref的記憶體位址 = " << &ref << ", ref = " << ref << endl;
+  
+  ref = 30;
+  cout << "i的記憶體位址 = " << &i << ", i = " << i << endl;
+  cout << "ref的記憶體位址 = " << &ref << ", ref = " << ref << endl;
 {% endhighlight %}
 
 ```
@@ -72,16 +72,16 @@ ref的記憶體位址 = 0x7ff7bfeff468, ref = 30
 ## 一個變數可以多個參考別名
 
 {% highlight c++ linenos %}
-    int i = 10;//原始變數
-    //宣告參考
-    int& ref = i;
-    cout << "i的記憶體位址 = " << &i << ", i = " << i << endl;
-    cout << "ref的記憶體位址 = " << &ref << ", ref = " << ref << endl;
-    
-    int& ref2 = i;
-    cout << "ref2的記憶體位址 = " << &ref2 << ", ref2 = " << ref2 << endl;
-    int& ref3 = i;
-    cout << "ref3的記憶體位址 = " << &ref3 << ", ref3 = " << ref3 << endl;
+  int i = 10;//原始變數
+  //宣告參考
+  int& ref = i;
+  cout << "i的記憶體位址 = " << &i << ", i = " << i << endl;
+  cout << "ref的記憶體位址 = " << &ref << ", ref = " << ref << endl;
+  
+  int& ref2 = i;
+  cout << "ref2的記憶體位址 = " << &ref2 << ", ref2 = " << ref2 << endl;
+  int& ref3 = i;
+  cout << "ref3的記憶體位址 = " << &ref3 << ", ref3 = " << ref3 << endl;
 {% endhighlight %}
 
 ```
@@ -96,12 +96,12 @@ ref3的記憶體位址 = 0x7ff7bfeff468, ref3 = 10
 &只要介於`資料型態`與`參考別名`之間就可以，以下的宣告別名的方式都可以。
 
 {% highlight c++ linenos %}
-    int i = 10;//原始變數
-    //宣告參考別名
-    int&ref = i;
-    int &ref2 = i;
-    int & ref3 = i;
-    int& ref4 = i;
+  int i = 10;//原始變數
+  //宣告參考別名
+  int&ref = i;
+  int &ref2 = i;
+  int & ref3 = i;
+  int& ref4 = i;
 {% endhighlight %}
 
 ## 資料型態要一致，參考別名無強制轉型
@@ -109,9 +109,9 @@ ref3的記憶體位址 = 0x7ff7bfeff468, ref3 = 10
 以下是錯誤的參考別名宣告
 
 {% highlight c++ linenos %}
-    int i = 10;//原始變數
-    //宣告參考別名
-    double& ref = i;
+  int i = 10;//原始變數
+  //宣告參考別名
+  double& ref = i;
 {% endhighlight %}
 
 原始變數i是int，無法轉成double的資料型態，也沒辦法像指標有強制轉型的功能。
@@ -119,24 +119,24 @@ ref3的記憶體位址 = 0x7ff7bfeff468, ref3 = 10
 ## 初始化後不可改變原始變數
 
 {% highlight c++ linenos %}
-    int i = 10;//原始變數
-    //宣告參考
-    int& ref = i;
-    cout << "i的記憶體位址 = " << &i << ", i = " << i << endl;
-    cout << "ref的記憶體位址 = " << &ref << ", ref = " << ref << endl;
-    
-    int j = 20;
-    ref = j; //將j變數 指派給 ref別名
-    cout << "j的記憶體位址 = " << &j << ", j = " << j << endl;
-    cout << "ref的記憶體位址 = " << &ref << ", i = " << ref << endl;
-    cout << "i的記憶體位址 = " << &i << ", i = " << i << endl;
+  int i = 10;//原始變數
+  //宣告參考
+  int& ref = i;
+  cout << "i的記憶體位址 = " << &i << ", i = " << i << endl;
+  cout << "ref的記憶體位址 = " << &ref << ", ref = " << ref << endl;
+  
+  int j = 20;
+  ref = j; //將j變數 指派給 ref別名
+  cout << "j的記憶體位址 = " << &j << ", j = " << j << endl;
+  cout << "ref的記憶體位址 = " << &ref << ", i = " << ref << endl;
+  cout << "i的記憶體位址 = " << &i << ", i = " << i << endl;
 {% endhighlight %}
 
 上方的程式碼
 
 ```
-    int j = 20;
-    ref = j; //將j變數的值 指派給 ref參考別名
+  int j = 20;
+  ref = j; //將j變數的值 指派給 ref參考別名
 ```
 
 以上意思並非把原始變數設為j，實際上是變數i修改成20，ref是變數i的參考別名，就等同於變數i，所以上述程式碼可以看成`i = 20;`

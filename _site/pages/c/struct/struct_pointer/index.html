@@ -1251,17 +1251,17 @@ Student *ptr = &amp;student;
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+  <span class="c1">//學生姓名</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
+  <span class="c1">//學號</span>
+  <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
 <span class="p">}</span><span class="n">Student</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"marry"</span><span class="p">,</span> <span class="mi">1</span><span class="p">};</span>
-    <span class="n">Student</span> <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"姓名 : "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="o">*</span><span class="n">ptr</span><span class="p">).</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"學號 : "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="o">*</span><span class="n">ptr</span><span class="p">).</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"marry"</span><span class="p">,</span> <span class="mi">1</span><span class="p">};</span>
+  <span class="n">Student</span> <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"姓名 : "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="o">*</span><span class="n">ptr</span><span class="p">).</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"學號 : "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="o">*</span><span class="n">ptr</span><span class="p">).</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1290,17 +1290,17 @@ Student *ptr = &amp;student;
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-    <span class="c1">//學生姓名</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
-    <span class="c1">//學號</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+  <span class="c1">//學生姓名</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
+  <span class="c1">//學號</span>
+  <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
 <span class="p">}</span><span class="n">Student</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"marry"</span><span class="p">,</span> <span class="mi">1</span><span class="p">};</span>
-    <span class="n">Student</span> <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"姓名 : "</span> <span class="o">&lt;&lt;</span> <span class="n">ptr</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"學號 : "</span> <span class="o">&lt;&lt;</span> <span class="n">ptr</span><span class="o">-&gt;</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s">"marry"</span><span class="p">,</span> <span class="mi">1</span><span class="p">};</span>
+  <span class="n">Student</span> <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">student</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"姓名 : "</span> <span class="o">&lt;&lt;</span> <span class="n">ptr</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"學號 : "</span> <span class="o">&lt;&lt;</span> <span class="n">ptr</span><span class="o">-&gt;</span><span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1495,7 +1495,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

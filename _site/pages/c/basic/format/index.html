@@ -1229,10 +1229,10 @@
 2
 3
 4
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">price_count_reader</span><span class="p">;</span>    <span class="c1">// 無縮寫。</span>
-<span class="kt">int</span> <span class="n">num_errors</span><span class="p">;</span>            <span class="c1">// "num" 是很常見的縮寫字。</span>
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">price_count_reader</span><span class="p">;</span>  <span class="c1">// 無縮寫。</span>
+<span class="kt">int</span> <span class="n">num_errors</span><span class="p">;</span>      <span class="c1">// "num" 是很常見的縮寫字。</span>
 <span class="kt">int</span> <span class="n">num_dns_connections</span><span class="p">;</span>   <span class="c1">// 大部份的人都知道 "DNS" 是啥。</span>
-<span class="kt">int</span> <span class="n">lstm_size</span><span class="p">;</span>             <span class="c1">// "LSTM" 在機器學習領域中是個常用的縮寫字。</span>
+<span class="kt">int</span> <span class="n">lstm_size</span><span class="p">;</span>       <span class="c1">// "LSTM" 在機器學習領域中是個常用的縮寫字。</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1244,13 +1244,13 @@
 5
 6
 7
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">n</span><span class="p">;</span>                     <span class="c1">// 毫無意義。</span>
-<span class="kt">int</span> <span class="n">nerr</span><span class="p">;</span>                  <span class="c1">// 模稜兩可的縮寫。</span>
-<span class="kt">int</span> <span class="n">n_comp_conns</span><span class="p">;</span>          <span class="c1">// 模稜兩可的縮寫。</span>
-<span class="kt">int</span> <span class="n">wgc_connections</span><span class="p">;</span>       <span class="c1">// 只有貴團隊知道是啥意思。</span>
-<span class="kt">int</span> <span class="n">pc_reader</span><span class="p">;</span>             <span class="c1">// "pc" 有太多可能的解釋了。</span>
-<span class="kt">int</span> <span class="n">cstmr_id</span><span class="p">;</span>              <span class="c1">// 有刪減若干字母。</span>
-<span class="n">FooBarRequestInfo</span> <span class="n">fbri</span><span class="p">;</span>    <span class="c1">// 根本不是個單字。</span>
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">n</span><span class="p">;</span>           <span class="c1">// 毫無意義。</span>
+<span class="kt">int</span> <span class="n">nerr</span><span class="p">;</span>          <span class="c1">// 模稜兩可的縮寫。</span>
+<span class="kt">int</span> <span class="n">n_comp_conns</span><span class="p">;</span>      <span class="c1">// 模稜兩可的縮寫。</span>
+<span class="kt">int</span> <span class="n">wgc_connections</span><span class="p">;</span>     <span class="c1">// 只有貴團隊知道是啥意思。</span>
+<span class="kt">int</span> <span class="n">pc_reader</span><span class="p">;</span>       <span class="c1">// "pc" 有太多可能的解釋了。</span>
+<span class="kt">int</span> <span class="n">cstmr_id</span><span class="p">;</span>        <span class="c1">// 有刪減若干字母。</span>
+<span class="n">FooBarRequestInfo</span> <span class="n">fbri</span><span class="p">;</span>  <span class="c1">// 根本不是個單字。</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1286,11 +1286,11 @@ struct_data_member、a_class_data_member_。</p>
 6
 7
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">TableInfo</span> <span class="p">{</span>
-    <span class="p">...</span>
-    <span class="nl">private:</span>
-    <span class="n">string</span> <span class="n">table_name_</span><span class="p">;</span>  <span class="c1">// 可 - 字尾加底線。</span>
-    <span class="n">string</span> <span class="n">tablename_</span><span class="p">;</span>   <span class="c1">// 可。</span>
-    <span class="k">static</span> <span class="n">Pool</span><span class="o">&lt;</span><span class="n">TableInfo</span><span class="o">&gt;*</span> <span class="n">pool_</span><span class="p">;</span>  <span class="c1">// 可。</span>
+  <span class="p">...</span>
+  <span class="nl">private:</span>
+  <span class="n">string</span> <span class="n">table_name_</span><span class="p">;</span>  <span class="c1">// 可 - 字尾加底線。</span>
+  <span class="n">string</span> <span class="n">tablename_</span><span class="p">;</span>   <span class="c1">// 可。</span>
+  <span class="k">static</span> <span class="n">Pool</span><span class="o">&lt;</span><span class="n">TableInfo</span><span class="o">&gt;*</span> <span class="n">pool_</span><span class="p">;</span>  <span class="c1">// 可。</span>
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1305,8 +1305,8 @@ struct_data_member、a_class_data_member_。</p>
 3
 4
 </pre></td><td class="code"><pre><span class="k">struct</span> <span class="nc">UrlTableProperties</span> <span class="p">{</span>
-    <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">num_entries</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">num_entries</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1474,9 +1474,9 @@ struct_data_member、a_class_data_member_。</p>
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre><span class="k">if</span><span class="p">(</span><span class="n">condition</span><span class="p">)</span>     <span class="c1">// 差 - IF 後面沒空格。</span>
+</pre></td><td class="code"><pre><span class="k">if</span> <span class="p">(</span><span class="n">condition</span><span class="p">)</span>   <span class="c1">// 差 - IF 後面沒空格。</span>
 <span class="k">if</span> <span class="p">(</span><span class="n">condition</span><span class="p">){</span>   <span class="c1">// 差 - { 前面沒空格。</span>
-<span class="k">if</span><span class="p">(</span><span class="n">condition</span><span class="p">){</span>    <span class="c1">// 前面兩項錯誤犯好犯滿。</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">condition</span><span class="p">){</span>  <span class="c1">// 前面兩項錯誤犯好犯滿。</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1608,8 +1608,8 @@ struct_data_member、a_class_data_member_。</p>
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">v</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">};</span>
   <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">v</span><span class="p">.</span><span class="n">crbegin</span><span class="p">();</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">v</span><span class="p">.</span><span class="n">crend</span><span class="p">();</span> <span class="n">it</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//內縮2個空白</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">it</span> <span class="o">&lt;&lt;</span> <span class="s">", "</span><span class="p">;</span>
+  <span class="c1">//內縮2個空白</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">it</span> <span class="o">&lt;&lt;</span> <span class="s">", "</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
@@ -1688,8 +1688,8 @@ struct_data_member、a_class_data_member_。</p>
  <span class="nl">public:</span><span class="c1">//與最邊緣留1個空白</span>
   <span class="c1">//與public留1個空白，與最邊緣留2個空白</span>
   <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//與void留2個空白，與最邊緣留4個空白</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//與void留2個空白，與最邊緣留4個空白</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">msg</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -1743,17 +1743,17 @@ struct_data_member、a_class_data_member_。</p>
 9
 10
 11
-</pre></td><td class="code"><pre><span class="n">DoSomething</span><span class="p">();</span>                  <span class="c1">// 把註解放這裡才能和下一行對齊。</span>
+</pre></td><td class="code"><pre><span class="n">DoSomething</span><span class="p">();</span>          <span class="c1">// 把註解放這裡才能和下一行對齊。</span>
 <span class="n">DoSomethingElseThatIsLonger</span><span class="p">();</span>  <span class="c1">// 註解和程式碼之間要有兩個空格。  </span>
 <span class="p">{</span> <span class="c1">// 當開啟一個新的作用域時，可以只放一個空隔，</span>
   <span class="c1">// 這樣接下來的註解和程式碼都可以和前面那行對齊。</span>
   <span class="n">DoSomethingElse</span><span class="p">();</span>  <span class="c1">// 一般來說行註解前面都需要兩個空隔。</span>
 <span class="p">}</span>
 <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">list</span><span class="p">{</span>
-                    <span class="c1">// 在條列初始化中，用來說明下一個元素的註解...</span>
-                    <span class="s">"First item"</span><span class="p">,</span>
-                    <span class="c1">// .. 必須要妥善對齊。</span>
-                    <span class="s">"Second item"</span><span class="p">};</span>
+          <span class="c1">// 在條列初始化中，用來說明下一個元素的註解...</span>
+          <span class="s">"First item"</span><span class="p">,</span>
+          <span class="c1">// .. 必須要妥善對齊。</span>
+          <span class="s">"Second item"</span><span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1786,16 +1786,16 @@ struct_data_member、a_class_data_member_。</p>
 12
 </pre></td><td class="code"><pre><span class="c1">// 若是你不得不斷行。</span>
 <span class="n">SomeFunction</span><span class="p">(</span>
-    <span class="p">{</span><span class="s">"assume a zero-length name before {"</span><span class="p">},</span>
-    <span class="n">some_other_function_parameter</span><span class="p">);</span>
+  <span class="p">{</span><span class="s">"assume a zero-length name before {"</span><span class="p">},</span>
+  <span class="n">some_other_function_parameter</span><span class="p">);</span>
 <span class="n">SomeType</span> <span class="n">variable</span><span class="p">{</span>
-    <span class="s">"This is too long to fit all in one line"</span><span class="p">};</span>
+  <span class="s">"This is too long to fit all in one line"</span><span class="p">};</span>
 <span class="n">MyType</span> <span class="n">m</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1">// 你也可以在 { 前斷行。</span>
-    <span class="n">superlongvariablename1</span><span class="p">,</span>
-    <span class="n">superlongvariablename2</span><span class="p">,</span>
-    <span class="p">{</span><span class="kt">short</span><span class="p">,</span> <span class="n">interior</span><span class="p">,</span> <span class="n">list</span><span class="p">},</span>
-    <span class="p">{</span><span class="n">interiorwrappinglist</span><span class="p">,</span>
-     <span class="n">interiorwrappinglist2</span><span class="p">}};</span>
+  <span class="n">superlongvariablename1</span><span class="p">,</span>
+  <span class="n">superlongvariablename2</span><span class="p">,</span>
+  <span class="p">{</span><span class="kt">short</span><span class="p">,</span> <span class="n">interior</span><span class="p">,</span> <span class="n">list</span><span class="p">},</span>
+  <span class="p">{</span><span class="n">interiorwrappinglist</span><span class="p">,</span>
+   <span class="n">interiorwrappinglist2</span><span class="p">}};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1814,12 +1814,12 @@ struct_data_member、a_class_data_member_。</p>
 6
 7
 </pre></td><td class="code"><pre><span class="n">string</span> <span class="n">time_str</span> <span class="o">=</span>
-    <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_year</span> <span class="o">+</span> <span class="mi">1900</span><span class="p">)</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span>
-    <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_mon</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span>
-    <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_mday</span><span class="p">)</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span>
-    <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_hour</span><span class="p">)</span> <span class="o">+</span> <span class="s">":"</span> <span class="o">+</span>
-    <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_min</span><span class="p">)</span> <span class="o">+</span> <span class="s">":"</span> <span class="o">+</span>
-    <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_sec</span><span class="p">);</span>
+  <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_year</span> <span class="o">+</span> <span class="mi">1900</span><span class="p">)</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span>
+  <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_mon</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span>
+  <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_mday</span><span class="p">)</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span>
+  <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_hour</span><span class="p">)</span> <span class="o">+</span> <span class="s">":"</span> <span class="o">+</span>
+  <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_min</span><span class="p">)</span> <span class="o">+</span> <span class="s">":"</span> <span class="o">+</span>
+  <span class="n">to_string</span><span class="p">(</span><span class="n">tmnow</span><span class="p">.</span><span class="n">tm_sec</span><span class="p">);</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1830,8 +1830,8 @@ struct_data_member、a_class_data_member_。</p>
 4
 5
 </pre></td><td class="code"><pre><span class="k">if</span> <span class="p">(</span><span class="n">this_one_thing</span> <span class="o">&gt;</span> <span class="n">this_other_thing</span> <span class="o">&amp;&amp;</span>
-    <span class="n">a_third_thing</span> <span class="o">==</span> <span class="n">a_fourth_thing</span> <span class="o">&amp;&amp;</span>
-    <span class="n">yet_another</span> <span class="o">&amp;</span> <span class="n">last_one</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">a_third_thing</span> <span class="o">==</span> <span class="n">a_fourth_thing</span> <span class="o">&amp;&amp;</span>
+  <span class="n">yet_another</span> <span class="o">&amp;</span> <span class="n">last_one</span><span class="p">)</span> <span class="p">{</span>
   <span class="p">...</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -1874,22 +1874,22 @@ struct_data_member、a_class_data_member_。</p>
 <span class="c1">// 如果一行塞不下建構式名稱列和初值列的話，你必須</span>
 <span class="c1">// 在分號前換行，並且縮排 4 個空格</span>
 <span class="n">MyClass</span><span class="o">::</span><span class="n">MyClass</span><span class="p">(</span><span class="kt">int</span> <span class="n">var</span><span class="p">)</span>
-    <span class="o">:</span> <span class="n">some_var_</span><span class="p">(</span><span class="n">var</span><span class="p">),</span> <span class="n">some_other_var_</span><span class="p">(</span><span class="n">var</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+  <span class="o">:</span> <span class="n">some_var_</span><span class="p">(</span><span class="n">var</span><span class="p">),</span> <span class="n">some_other_var_</span><span class="p">(</span><span class="n">var</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
   <span class="n">DoSomething</span><span class="p">();</span>
 <span class="p">}</span>
 
 <span class="c1">// 若是初值列得分成好幾行的話，每個成員各占一行，</span>
 <span class="c1">// 排列整齊：</span>
 <span class="n">MyClass</span><span class="o">::</span><span class="n">MyClass</span><span class="p">(</span><span class="kt">int</span> <span class="n">var</span><span class="p">)</span>
-    <span class="o">:</span> <span class="n">some_var_</span><span class="p">(</span><span class="n">var</span><span class="p">),</span>             <span class="c1">// 4 格縮排</span>
-      <span class="n">some_other_var_</span><span class="p">(</span><span class="n">var</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// 對齊前一行</span>
+  <span class="o">:</span> <span class="n">some_var_</span><span class="p">(</span><span class="n">var</span><span class="p">),</span>       <span class="c1">// 4 格縮排</span>
+    <span class="n">some_other_var_</span><span class="p">(</span><span class="n">var</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// 對齊前一行</span>
   <span class="n">DoSomething</span><span class="p">();</span>
 <span class="p">}</span>
 
 <span class="c1">// 和其他程式碼區塊一樣，如果塞得下的話，右大括號可以</span>
 <span class="c1">// 和左大括號放在同一行。</span>
 <span class="n">MyClass</span><span class="o">::</span><span class="n">MyClass</span><span class="p">(</span><span class="kt">int</span> <span class="n">var</span><span class="p">)</span>
-    <span class="o">:</span> <span class="n">some_var_</span><span class="p">(</span><span class="n">var</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="o">:</span> <span class="n">some_var_</span><span class="p">(</span><span class="n">var</span><span class="p">)</span> <span class="p">{}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -2127,7 +2127,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

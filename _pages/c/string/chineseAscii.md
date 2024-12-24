@@ -27,17 +27,17 @@ Ascii Code 1-31為控制碼
 
 {% highlight c++ linenos %}
 int main() {
-    char str[100];
-    //清空字串位址的值
-    memset(str, 0, sizeof(str));
-    strcpy(str, "西西");
-    cout << "長度:" << strlen(str) << endl;
-    for(int i = 0, len = strlen(str); i < len; i++) {
-        cout << "str[" << i << "] = " <<  (int)(unsigned char)str[i] << endl;
-    }
-    //印出字串
-    cout << str << endl;
-    return 0;
+  char str[100];
+  //清空字串位址的值
+  memset(str, 0, sizeof(str));
+  strcpy(str, "西西");
+  cout << "長度:" << strlen(str) << endl;
+  for(int i = 0, len = strlen(str); i < len; i++) {
+    cout << "str[" << i << "] = " <<  (int)(unsigned char)str[i] << endl;
+  }
+  //印出字串
+  cout << str << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -56,18 +56,18 @@ str[5]=191
 
 {% highlight c++ linenos %}
 int main() {
-    char str[100];
-    //清空字串位址的值
-    memset(str, 0, sizeof(str));
-    str[0] = 232;
-    str[1] = 165;
-    str[2] = 191;
-    str[3] = 232;
-    str[4] = 165;
-    str[5] = 191;
-    //印出字串
-    cout << str << endl;
-    return 0;
+  char str[100];
+  //清空字串位址的值
+  memset(str, 0, sizeof(str));
+  str[0] = 232;
+  str[1] = 165;
+  str[2] = 191;
+  str[3] = 232;
+  str[4] = 165;
+  str[5] = 191;
+  //印出字串
+  cout << str << endl;
+  return 0;
 }
 {% endhighlight %}
 
@@ -87,27 +87,27 @@ int main() {
 
 {% highlight c++ linenos %}
 int countChar(const char* str) {
-    if(str == 0) return -1;
-    int count = 0;
-    bool flag = false;
-    while(*str) {
-        //0
-        if((unsigned char) *str < 128) {
-            count++;
-        } else {
-            if(flag) {
-                count++;
-                flag = false;
-            } else {
-                flag = true;
-            }
-        }
-        str++;
+  if(str == 0) return -1;
+  int count = 0;
+  bool flag = false;
+  while(*str) {
+    //0
+    if((unsigned char) *str < 128) {
+      count++;
+    } else {
+      if(flag) {
+        count++;
+        flag = false;
+      } else {
+        flag = true;
+      }
     }
-    return count;
+    str++;
+  }
+  return count;
 }
 int main() {
-    cout << countChar("西") << endl;
-    return 0;
+  cout << countChar("西") << endl;
+  return 0;
 }
 {% endhighlight %}

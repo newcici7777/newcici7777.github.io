@@ -1253,30 +1253,30 @@
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
-    <span class="c1">//印出char的大小</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"sizeof(char) = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//印出變數c的位址</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//印出變數c的地址往後移動一格的位址，與變數c的位址相差為1byte</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c的地址 + 1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)(</span><span class="o">&amp;</span><span class="n">c</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
-    <span class="c1">//印出int的大小</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"sizeof(int) = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//印出變數i的位址</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//印出變數i的地址往後移動一格的位址與變數i的位址相差為4byte</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的地址 + 1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)(</span><span class="o">&amp;</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="kt">double</span> <span class="n">d</span><span class="p">;</span>
-    <span class="c1">//印出double的大小</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"sizeof(double) = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//印出變數d位址</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"d的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">d</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//印出變數d的地址往後移動一格的位址，與變數d的位址相差為8byte</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"d的地址 + 1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)(</span><span class="o">&amp;</span><span class="n">d</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
+  <span class="c1">//印出char的大小</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"sizeof(char) = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//印出變數c的位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//印出變數c的地址往後移動一格的位址，與變數c的位址相差為1byte</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c的地址 + 1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)(</span><span class="o">&amp;</span><span class="n">c</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  
+  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+  <span class="c1">//印出int的大小</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"sizeof(int) = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//印出變數i的位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//印出變數i的地址往後移動一格的位址與變數i的位址相差為4byte</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的地址 + 1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)(</span><span class="o">&amp;</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  
+  <span class="kt">double</span> <span class="n">d</span><span class="p">;</span>
+  <span class="c1">//印出double的大小</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"sizeof(double) = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//印出變數d位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"d的地址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">d</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//印出變數d的地址往後移動一格的位址，與變數d的位址相差為8byte</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"d的地址 + 1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)(</span><span class="o">&amp;</span><span class="n">d</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1483,7 +1483,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

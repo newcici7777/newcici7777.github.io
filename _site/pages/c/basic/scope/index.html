@@ -1221,7 +1221,7 @@
 
 <h3 id="區域變數">區域變數</h3>
 
-<p>一對花括號<code class="language-plaintext highlighter-rouge">{}</code>包起來的就是程式碼區塊(block)或函式主體(Body)。程式碼區塊可以是if(){}或while(){}的程式碼區塊，但這篇要探討的是只有花括號<code class="language-plaintext highlighter-rouge">{}</code>包起來的程式碼區塊。</p>
+<p>一對花括號<code class="language-plaintext highlighter-rouge">{}</code>包起來的就是程式碼區塊(block)或函式主體(Body)。程式碼區塊可以是if (){}或while(){}的程式碼區塊，但這篇要探討的是只有花括號<code class="language-plaintext highlighter-rouge">{}</code>包起來的程式碼區塊。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1234,13 +1234,13 @@
 8
 9
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-    <span class="p">{</span>
-        <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"outer var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"outer var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1274,16 +1274,16 @@ outer var11 = 100
 11
 12
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">var12</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
-    <span class="p">{</span>
-        <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="c1">//在`{}`區塊中，可以讀取外部變數</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var12 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var12</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"outer var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">var12</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
+  <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">//在`{}`區塊中，可以讀取外部變數</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var12 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var12</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"outer var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1322,18 +1322,18 @@ outer var11 = 100
 </pre></td><td class="code"><pre><span class="c1">//定義全域變數var11</span>
 <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//定義區域變數var11</span>
-    <span class="kt">int</span> <span class="n">var12</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
-    <span class="p">{</span>
-        <span class="c1">//印出區域變數var11</span>
-        <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var12 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var12</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//定義區域變數var11</span>
+  <span class="kt">int</span> <span class="n">var12</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
+  <span class="p">{</span>
+    <span class="c1">//印出區域變數var11</span>
+    <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var12 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var12</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 
-        <span class="c1">//印出全域變數var11</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"outer var11 = "</span> <span class="o">&lt;&lt;</span> <span class="o">::</span><span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="c1">//印出全域變數var11</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"outer var11 = "</span> <span class="o">&lt;&lt;</span> <span class="o">::</span><span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1352,8 +1352,8 @@ outer var11 = 100
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre><span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    
+</pre></td><td class="code"><pre><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1366,7 +1366,7 @@ outer var11 = 100
 3
 4
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="k">for</span><span class="p">(;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>    
+<span class="k">for</span> <span class="p">(;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>  
 <span class="p">}</span>
 <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -1395,16 +1395,16 @@ i = 10
 11
 12
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//宣告指標</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//0就是nullptr 代表沒有指向任何記憶空間</span>
-    <span class="p">{</span>
-        <span class="kt">int</span><span class="o">**</span> <span class="n">pp</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">p</span><span class="p">;</span><span class="c1">//存放指標的位址，要用雙指標</span>
-        <span class="o">*</span><span class="n">pp</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span><span class="c1">//雙指標取值，並動態配置記憶體空間</span>
-    <span class="p">}</span>
+  <span class="c1">//宣告指標</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//0就是nullptr 代表沒有指向任何記憶空間</span>
+  <span class="p">{</span>
+    <span class="kt">int</span><span class="o">**</span> <span class="n">pp</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">p</span><span class="p">;</span><span class="c1">//存放指標的位址，要用雙指標</span>
+    <span class="o">*</span><span class="n">pp</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span><span class="c1">//雙指標取值，並動態配置記憶體空間</span>
+  <span class="p">}</span>
 
-    <span class="c1">//印出p指標的位址，去p指標的記憶體位址取值，並印出來</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p="</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">",*p="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//印出p指標的位址，去p指標的記憶體位址取值，並印出來</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p="</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">",*p="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1430,14 +1430,14 @@ p=0x60000000c000,*p=3
 11
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">initMemory</span><span class="p">(</span><span class="kt">int</span><span class="o">**</span> <span class="n">pp</span><span class="p">)</span> <span class="c1">//存放指標的位址，要用雙指標</span>
 <span class="p">{</span>
-    <span class="o">*</span><span class="n">pp</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span><span class="c1">//雙指標取值，並動態配置記憶體空間</span>
+  <span class="o">*</span><span class="n">pp</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span><span class="c1">//雙指標取值，並動態配置記憶體空間</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//宣告指標</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//0就是nullptr 代表沒有指向任何記憶空間</span>
-    <span class="n">initMemory</span><span class="p">(</span><span class="o">&amp;</span><span class="n">p</span><span class="p">);</span><span class="c1">//指標的位址傳入函式。</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p="</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">",*p="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//宣告指標</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//0就是nullptr 代表沒有指向任何記憶空間</span>
+  <span class="n">initMemory</span><span class="p">(</span><span class="o">&amp;</span><span class="n">p</span><span class="p">);</span><span class="c1">//指標的位址傳入函式。</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p="</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">",*p="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1635,7 +1635,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

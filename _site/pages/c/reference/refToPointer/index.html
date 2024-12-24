@@ -1257,32 +1257,32 @@
 24
 25
 26
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i address:"</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"j address:"</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i address:"</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"j address:"</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 
-    <span class="c1">//宣告指標</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">ptr_i</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
+  <span class="c1">//宣告指標</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">ptr_i</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
 
-    <span class="c1">//宣告參考</span>
-    <span class="c1">// 原指標指派給參考</span>
-    <span class="kt">int</span><span class="o">*&amp;</span> <span class="n">ptr_ref</span> <span class="o">=</span> <span class="n">ptr_i</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"== Change value =="</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before i value:"</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before value:"</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">ptr_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//修改原指標指向的記憶體位址中的值</span>
-    <span class="o">*</span><span class="n">ptr_ref</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After i value:"</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//取出原指標指向的記憶體位址中的值</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After value:"</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">ptr_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"== Change address =="</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before address:"</span> <span class="o">&lt;&lt;</span> <span class="n">ptr_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//更改原指標指向的記憶體位址</span>
-    <span class="n">ptr_ref</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">j</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"after address:"</span> <span class="o">&lt;&lt;</span> <span class="n">ptr_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//宣告參考</span>
+  <span class="c1">// 原指標指派給參考</span>
+  <span class="kt">int</span><span class="o">*&amp;</span> <span class="n">ptr_ref</span> <span class="o">=</span> <span class="n">ptr_i</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"== Change value =="</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before i value:"</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before value:"</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">ptr_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//修改原指標指向的記憶體位址中的值</span>
+  <span class="o">*</span><span class="n">ptr_ref</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After i value:"</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//取出原指標指向的記憶體位址中的值</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After value:"</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">ptr_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"== Change address =="</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before address:"</span> <span class="o">&lt;&lt;</span> <span class="n">ptr_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//更改原指標指向的記憶體位址</span>
+  <span class="n">ptr_ref</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">j</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"after address:"</span> <span class="o">&lt;&lt;</span> <span class="n">ptr_ref</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1330,7 +1330,7 @@ after address:0x7ff7bfeff464
 <p>函式語法</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>回傳型態 函式名(資料型態*&amp; 別名) {
-    別名 = 其它記憶體位址
+  別名 = 其它記憶體位址
 }
 </code></pre></div></div>
 
@@ -1359,16 +1359,16 @@ after address:0x7ff7bfeff464
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">global_var</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 <span class="c1">// a function with “Reference to pointer” parameter</span>
 <span class="kt">void</span> <span class="nf">changeReferenceValue</span><span class="p">(</span><span class="kt">int</span><span class="o">*&amp;</span> <span class="n">ptr_ptr</span><span class="p">){</span>
-    <span class="n">ptr_ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">global_var</span><span class="p">;</span>
+  <span class="n">ptr_ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">global_var</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">var</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">pointer_to_var</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">var</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before:"</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">pointer_to_var</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//把指標變數名傳進函式中</span>
-    <span class="n">changeReferenceValue</span><span class="p">(</span><span class="n">pointer_to_var</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After:"</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">pointer_to_var</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">var</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">pointer_to_var</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">var</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before:"</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">pointer_to_var</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//把指標變數名傳進函式中</span>
+  <span class="n">changeReferenceValue</span><span class="p">(</span><span class="n">pointer_to_var</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After:"</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">pointer_to_var</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1385,16 +1385,16 @@ After:100
 int global_var = 100;
 // a function with “Reference to pointer” parameter
 void changeReferenceValue(<span class="markline">int*&amp;</span> ptr_ptr){
-    <span class="markline">ptr_ptr</span> = &global_var;
+  <span class="markline">ptr_ptr</span> = &global_var;
 }
 int main() {
-    int var = 1;
-    int* pointer_to_var = &var;
-    cout &lt;&lt; "Before:" &lt;&lt; *pointer_to_var &lt;&lt; endl;
-    //把指標變數名傳進函式中
-    changeReferenceValue(<span class="markline">pointer_to_var</span>);
-    cout &lt;&lt; "After:" &lt;&lt; *pointer_to_var &lt;&lt; endl;
-    return 0;
+  int var = 1;
+  int* pointer_to_var = &var;
+  cout &lt;&lt; "Before:" &lt;&lt; *pointer_to_var &lt;&lt; endl;
+  //把指標變數名傳進函式中
+  changeReferenceValue(<span class="markline">pointer_to_var</span>);
+  cout &lt;&lt; "After:" &lt;&lt; *pointer_to_var &lt;&lt; endl;
+  return 0;
 }
 
 </pre>
@@ -1404,17 +1404,17 @@ int main() {
 <pre>
 int global_var = 100;
 void changePointerValue(<span class="markline">int**</span> ptr_ptr){
-    <span class="markline">*ptr_ptr</span> = &global_var; //改為指向global_var
+  <span class="markline">*ptr_ptr</span> = &global_var; //改為指向global_var
 }
 int main() {
-    int var = 1;
-    int* pointer_to_var = &var; //指向var
-    cout &lt;&lt; "Before:" &lt;&lt; *pointer_to_var &lt;&lt; endl;
-    //passing the address of the pointer
-    //把指標的位址傳進函式中
-    changePointerValue(<span class="markline">&amp;pointer_to_var</span>);
-    cout &lt;&lt; "After:" &lt;&lt; *pointer_to_var &lt;&lt; endl;
-    return 0;
+  int var = 1;
+  int* pointer_to_var = &var; //指向var
+  cout &lt;&lt; "Before:" &lt;&lt; *pointer_to_var &lt;&lt; endl;
+  //passing the address of the pointer
+  //把指標的位址傳進函式中
+  changePointerValue(<span class="markline">&amp;pointer_to_var</span>);
+  cout &lt;&lt; "After:" &lt;&lt; *pointer_to_var &lt;&lt; endl;
+  return 0;
 }
 </pre>
 
@@ -1452,22 +1452,22 @@ int main() {
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="c1">//宣告一個函式initAddress() 別名是ref_to_p，指向外部傳入的指標</span>
 <span class="kt">void</span> <span class="nf">initAddress</span><span class="p">(</span><span class="kt">int</span><span class="o">*&amp;</span> <span class="n">ref_to_p</span><span class="p">){</span>
-    <span class="c1">//印出別名指向的記憶體位址</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before address = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref_to_p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//動態配置記憶體位址，位址存放的內容為10，使用new會返回動態配置記憶體的開始位址。</span>
-    <span class="n">ref_to_p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
-    <span class="c1">//印出別名指向的記憶體位址</span>
-    <span class="n">cout</span>  <span class="o">&lt;&lt;</span> <span class="s">"After address= "</span> <span class="o">&lt;&lt;</span> <span class="n">ref_to_p</span> <span class="o">&lt;&lt;</span> <span class="s">",After value = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">ref_to_p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//印出別名指向的記憶體位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before address = "</span> <span class="o">&lt;&lt;</span> <span class="n">ref_to_p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//動態配置記憶體位址，位址存放的內容為10，使用new會返回動態配置記憶體的開始位址。</span>
+  <span class="n">ref_to_p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+  <span class="c1">//印出別名指向的記憶體位址</span>
+  <span class="n">cout</span>  <span class="o">&lt;&lt;</span> <span class="s">"After address= "</span> <span class="o">&lt;&lt;</span> <span class="n">ref_to_p</span> <span class="o">&lt;&lt;</span> <span class="s">",After value = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">ref_to_p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//宣告指標p，初始化為nullptr，也就是沒有指向任何位址</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="c1">//呼叫函式initAddress，引數為指標p</span>
-    <span class="n">initAddress</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
-    <span class="c1">//印出指標p的位址，印出指標p指向的位址，對指向的位址取出內容。</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"== outside == "</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"outside pointer address = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">"，outside pointer value = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">//宣告指標p，初始化為nullptr，也就是沒有指向任何位址</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="c1">//呼叫函式initAddress，引數為指標p</span>
+  <span class="n">initAddress</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+  <span class="c1">//印出指標p的位址，印出指標p指向的位址，對指向的位址取出內容。</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"== outside == "</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"outside pointer address = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="s">"，outside pointer value = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1668,7 +1668,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

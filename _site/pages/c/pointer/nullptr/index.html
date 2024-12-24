@@ -1235,12 +1235,12 @@
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">param1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"param1="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">param1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"param1="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">param1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="n">func1</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="n">func1</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1268,13 +1268,13 @@
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">param1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">param1</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"param1="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">param1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">param1</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"param1="</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">param1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="n">func1</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="n">func1</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1292,9 +1292,9 @@
 4
 5
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1335,14 +1335,14 @@
 9
 10
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func3</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"n = %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">n</span><span class="p">);</span><span class="c1">//印出值</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"n = %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">n</span><span class="p">);</span><span class="c1">//印出值</span>
 <span class="p">}</span>
 <span class="kt">void</span> <span class="n">func3</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"位址 = %#x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">p</span><span class="p">);</span><span class="c1">//印出位址</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"位址 = %#x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">p</span><span class="p">);</span><span class="c1">//印出位址</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">func3</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">func3</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1396,17 +1396,17 @@ n = 0
 12
 13
 </pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func3</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"n = %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">n</span><span class="p">);</span><span class="c1">//印出值</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"n = %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">n</span><span class="p">);</span><span class="c1">//印出值</span>
 <span class="p">}</span>
 <span class="kt">void</span> <span class="n">func3</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"位址 = %#x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">p</span><span class="p">);</span><span class="c1">//印出位址</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"位址 = %#x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">p</span><span class="p">);</span><span class="c1">//印出位址</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">func3</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-    <span class="n">func3</span><span class="p">((</span><span class="kt">int</span> <span class="o">*</span><span class="p">)</span><span class="nb">NULL</span><span class="p">);</span>
-    <span class="n">func3</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">int</span> <span class="o">*&gt;</span><span class="p">(</span><span class="nb">NULL</span><span class="p">));</span>
-    <span class="n">func3</span><span class="p">(</span><span class="nb">nullptr</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">func3</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="n">func3</span><span class="p">((</span><span class="kt">int</span> <span class="o">*</span><span class="p">)</span><span class="nb">NULL</span><span class="p">);</span>
+  <span class="n">func3</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">int</span> <span class="o">*&gt;</span><span class="p">(</span><span class="nb">NULL</span><span class="p">));</span>
+  <span class="n">func3</span><span class="p">(</span><span class="nb">nullptr</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1430,10 +1430,10 @@ n = 0
 5
 6
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1458,10 +1458,10 @@ n = 0
 2
 3
 4
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span>
-    <span class="kt">int</span> <span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="c1">//right</span>
-    <span class="kt">int</span> <span class="o">*</span> <span class="n">p2</span> <span class="o">=</span> <span class="nb">NULL</span> <span class="p">;</span> <span class="c1">//right</span>
-    <span class="kt">int</span> <span class="o">*</span> <span class="n">p3</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span><span class="c1">//error</span>
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span>
+  <span class="kt">int</span> <span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="c1">//right</span>
+  <span class="kt">int</span> <span class="o">*</span> <span class="n">p2</span> <span class="o">=</span> <span class="nb">NULL</span> <span class="p">;</span> <span class="c1">//right</span>
+  <span class="kt">int</span> <span class="o">*</span> <span class="n">p3</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span><span class="c1">//error</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1662,7 +1662,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

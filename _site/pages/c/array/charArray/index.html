@@ -1236,14 +1236,14 @@
 6
 7
 8
-</pre></td><td class="code"><pre>    <span class="c1">//char字串</span>
-    <span class="c1">// \0 代表結尾</span>
-    <span class="kt">char</span> <span class="n">str1</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">,</span><span class="sc">'\0'</span><span class="p">};</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str1 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">str1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">str1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//char 陣列</span>
-    <span class="kt">char</span> <span class="n">arr</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">};</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr sizeof = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="c1">//char字串</span>
+  <span class="c1">// \0 代表結尾</span>
+  <span class="kt">char</span> <span class="n">str1</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">,</span><span class="sc">'\0'</span><span class="p">};</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str1 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">str1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">str1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//char 陣列</span>
+  <span class="kt">char</span> <span class="n">arr</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">};</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr sizeof = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1295,24 +1295,24 @@ arr sizeof = 6
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">cstr1</span><span class="p">[</span><span class="mi">21</span><span class="p">];</span><span class="c1">//cstr1沒有初始化字串常數</span>
-    <span class="c1">//遇到記憶體位址的值為\0(空字元)才會停止輸出</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr1 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//以下結尾編譯器會自動加上\0</span>
-    <span class="kt">char</span> <span class="n">cstr2</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"hello"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr2 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="kt">char</span> <span class="n">cstr3</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="s">"hello"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr3 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr3</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="kt">char</span> <span class="n">cstr4</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"hello"</span><span class="p">};</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr4 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr4</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr4</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="kt">char</span> <span class="n">cstr5</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"hello"</span><span class="p">};</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr5 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr5</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr5</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="kt">char</span> <span class="n">cstr6</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="p">{</span><span class="s">"hello"</span><span class="p">};</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr6 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr6</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr6</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//設為nullptr</span>
-    <span class="kt">char</span> <span class="n">cstr7</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr7 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr7</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr7</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">cstr1</span><span class="p">[</span><span class="mi">21</span><span class="p">];</span><span class="c1">//cstr1沒有初始化字串常數</span>
+  <span class="c1">//遇到記憶體位址的值為\0(空字元)才會停止輸出</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr1 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//以下結尾編譯器會自動加上\0</span>
+  <span class="kt">char</span> <span class="n">cstr2</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"hello"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr2 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">cstr3</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="s">"hello"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr3 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr3</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">cstr4</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"hello"</span><span class="p">};</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr4 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr4</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr4</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">cstr5</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"hello"</span><span class="p">};</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr5 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr5</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr5</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">cstr6</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="p">{</span><span class="s">"hello"</span><span class="p">};</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr6 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr6</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr6</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">//設為nullptr</span>
+  <span class="kt">char</span> <span class="n">cstr7</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr7 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr7</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr7</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1344,11 +1344,11 @@ cstr7 長度 = 0,內容 =
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">cstr2</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"hello"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr2 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">cstr2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">cstr2</span><span class="p">));</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr2 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">cstr2</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"hello"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr2 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">cstr2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">cstr2</span><span class="p">));</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"cstr2 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">cstr2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">cstr2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1375,10 +1375,10 @@ cstr2 長度 = 0,內容 =
 2
 3
 4
-</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c_str1</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'\0'</span><span class="p">};</span>
-    <span class="kt">char</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">20</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'t'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">};</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">c_str4</span><span class="p">,</span> <span class="n">c_str1</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4:"</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">char</span> <span class="n">c_str1</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'\0'</span><span class="p">};</span>
+  <span class="kt">char</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">20</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'t'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">};</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">c_str4</span><span class="p">,</span> <span class="n">c_str1</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4:"</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1395,12 +1395,12 @@ c_str4:hel
 4
 5
 6
-</pre></td><td class="code"><pre>    <span class="kt">char</span><span class="o">*</span> <span class="n">c_str1</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">c_str1</span><span class="p">,</span> <span class="s">"abcdefg"</span><span class="p">);</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">c_str2</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">c_str2</span><span class="p">,</span> <span class="n">c_str1</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">char</span><span class="o">*</span> <span class="n">c_str1</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">c_str1</span><span class="p">,</span> <span class="s">"abcdefg"</span><span class="p">);</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">c_str2</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">c_str2</span><span class="p">,</span> <span class="n">c_str1</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1415,8 +1415,8 @@ c_str2 = abcdefg
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c_str1</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
-    <span class="n">c_str1</span> <span class="o">=</span> <span class="s">"abc"</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">char</span> <span class="n">c_str1</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
+  <span class="n">c_str1</span> <span class="o">=</span> <span class="s">"abc"</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1427,10 +1427,10 @@ c_str2 = abcdefg
 2
 3
 4
-</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c_str1</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">c_str1</span><span class="p">,</span><span class="s">"Dog"</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">char</span> <span class="n">c_str1</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">c_str1</span><span class="p">,</span><span class="s">"Dog"</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1463,19 +1463,19 @@ After = Dog
 11
 12
 13
-</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
-    <span class="c1">//拷貝2個字元至c_str4</span>
-    <span class="n">strncpy</span><span class="p">(</span><span class="n">c_str4</span><span class="p">,</span><span class="s">"hello"</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[0] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[1] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[2] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[3] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[4] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[5] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[6] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[7] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[8] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[9] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">char</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+  <span class="c1">//拷貝2個字元至c_str4</span>
+  <span class="n">strncpy</span><span class="p">(</span><span class="n">c_str4</span><span class="p">,</span><span class="s">"hello"</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[0] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[1] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[2] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[3] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[4] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[5] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[6] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[7] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[8] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4[9] = "</span> <span class="o">&lt;&lt;</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1506,8 +1506,8 @@ c_str4[9] = x00
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
-    <span class="n">strncpy</span><span class="p">(</span><span class="n">c_str4</span><span class="p">,</span><span class="s">"hello"</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+</pre></td><td class="code"><pre>  <span class="kt">char</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+  <span class="n">strncpy</span><span class="p">(</span><span class="n">c_str4</span><span class="p">,</span><span class="s">"hello"</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1525,10 +1525,10 @@ c_str4[9] = x00
 5
 6
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="s">"hello!"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4 size:"</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">c_str4</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4長度:"</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">c_str4</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="s">"hello!"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4 size:"</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">c_str4</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str4長度:"</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">c_str4</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1547,13 +1547,13 @@ c_str4長度:6
 5
 6
 7
-</pre></td><td class="code"><pre>    <span class="kt">char</span> <span class="n">c_str1</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'\0'</span><span class="p">};</span>
-    <span class="c1">//[]可為空</span>
-    <span class="kt">char</span> <span class="n">c_str2</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">,</span><span class="sc">'\0'</span><span class="p">};</span>
-    <span class="kt">char</span> <span class="n">c_str3</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
-    <span class="kt">char</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">20</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'t'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">};</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">c_str3</span><span class="p">,</span> <span class="n">c_str1</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str3 + c_str4 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strcat</span><span class="p">(</span><span class="n">c_str3</span><span class="p">,</span><span class="n">c_str4</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">char</span> <span class="n">c_str1</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'\0'</span><span class="p">};</span>
+  <span class="c1">//[]可為空</span>
+  <span class="kt">char</span> <span class="n">c_str2</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">,</span><span class="sc">'\0'</span><span class="p">};</span>
+  <span class="kt">char</span> <span class="n">c_str3</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+  <span class="kt">char</span> <span class="n">c_str4</span><span class="p">[</span><span class="mi">20</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'t'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">};</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">c_str3</span><span class="p">,</span> <span class="n">c_str1</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c_str3 + c_str4 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strcat</span><span class="p">(</span><span class="n">c_str3</span><span class="p">,</span><span class="n">c_str4</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1578,10 +1578,10 @@ c_str3 + c_str4 = helte
 5
 6
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"abc"</span><span class="p">;</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">"abc"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">strcmp</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"abc"</span><span class="p">;</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">"abc"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">strcmp</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1599,10 +1599,10 @@ c_str3 + c_str4 = helte
 5
 6
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"abc"</span><span class="p">;</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">"ab"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">strcmp</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"abc"</span><span class="p">;</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">"ab"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">strcmp</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1620,10 +1620,10 @@ c_str3 + c_str4 = helte
 5
 6
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"ab"</span><span class="p">;</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">"abc"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">strcmp</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"ab"</span><span class="p">;</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">"abc"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">strcmp</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1659,12 +1659,12 @@ c_str3 + c_str4 = helte
 <span class="k">const</span> <span class="kt">int</span> <span class="n">DAYS</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span> <span class="c1">//字串數，7個字串</span>
 <span class="k">const</span> <span class="kt">int</span> <span class="n">MAX</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">// 每個字串最大長度，包含\0</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="n">DAYS</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Sunday"</span><span class="p">,</span><span class="s">"Monday"</span><span class="p">,</span><span class="s">"Tuesday"</span><span class="p">,</span><span class="s">"Wednesday"</span><span class="p">,</span><span class="s">"Thursday"</span><span class="p">,</span><span class="s">"Friday"</span><span class="p">,</span><span class="s">"Saturday"</span><span class="p">};</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">DAYS</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//印出字串</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="n">DAYS</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Sunday"</span><span class="p">,</span><span class="s">"Monday"</span><span class="p">,</span><span class="s">"Tuesday"</span><span class="p">,</span><span class="s">"Wednesday"</span><span class="p">,</span><span class="s">"Thursday"</span><span class="p">,</span><span class="s">"Friday"</span><span class="p">,</span><span class="s">"Saturday"</span><span class="p">};</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">DAYS</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//印出字串</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1701,13 +1701,13 @@ Saturday
 <span class="c1">//9個字元+\0</span>
 <span class="k">const</span> <span class="kt">int</span> <span class="n">MAX</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">char</span> <span class="n">mon_arr</span><span class="p">[</span><span class="n">MAX_MONTH</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"January"</span><span class="p">,</span><span class="s">"February"</span><span class="p">,</span><span class="s">"March"</span><span class="p">,</span><span class="s">"April"</span><span class="p">,</span><span class="s">"May"</span><span class="p">,</span><span class="s">"June"</span><span class="p">,</span><span class="s">"July"</span><span class="p">,</span><span class="s">"August"</span><span class="p">,</span><span class="s">"September"</span><span class="p">,</span><span class="s">"October"</span><span class="p">,</span><span class="s">"November"</span><span class="p">,</span><span class="s">"December"</span><span class="p">};</span>
-    <span class="kt">int</span> <span class="n">month</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入數字月份(1~12):"</span><span class="p">;</span>
-    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">month</span><span class="p">;</span>
-    <span class="c1">//陣列索引介於0..11，所以要把month-1</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mon_arr</span><span class="p">[</span><span class="n">month</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">mon_arr</span><span class="p">[</span><span class="n">MAX_MONTH</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"January"</span><span class="p">,</span><span class="s">"February"</span><span class="p">,</span><span class="s">"March"</span><span class="p">,</span><span class="s">"April"</span><span class="p">,</span><span class="s">"May"</span><span class="p">,</span><span class="s">"June"</span><span class="p">,</span><span class="s">"July"</span><span class="p">,</span><span class="s">"August"</span><span class="p">,</span><span class="s">"September"</span><span class="p">,</span><span class="s">"October"</span><span class="p">,</span><span class="s">"November"</span><span class="p">,</span><span class="s">"December"</span><span class="p">};</span>
+  <span class="kt">int</span> <span class="n">month</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入數字月份(1~12):"</span><span class="p">;</span>
+  <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">month</span><span class="p">;</span>
+  <span class="c1">//陣列索引介於0..11，所以要把month-1</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mon_arr</span><span class="p">[</span><span class="n">month</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1905,7 +1905,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 13:05:12 +0800"
+        "time": "2024-12-24 15:54:07 +0800"
     },
     "basePath": "",
     "book": {

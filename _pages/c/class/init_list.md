@@ -22,27 +22,27 @@ keywords: c++, Initialization list of constructors)
 {% highlight c++ linenos %}
 class Student {
 public:
-    string m_name;
-    int m_age;
+  string m_name;
+  int m_age;
 public:
-    Student() {
-        cout << "沒參數建構子" << endl;
-    }
-    Student(string name, int age):m_name(name),m_age(age) {
-        cout << "初始化列表建構子" << endl;
-    }
-    ~Student() {
-        cout << "解構子" << endl;
-    }
-    void print() {
-        cout << "name: " << m_name << endl;
-        cout << "age: " << m_age << endl;
-    }
+  Student() {
+    cout << "沒參數建構子" << endl;
+  }
+  Student(string name, int age):m_name(name),m_age(age) {
+    cout << "初始化列表建構子" << endl;
+  }
+  ~Student() {
+    cout << "解構子" << endl;
+  }
+  void print() {
+    cout << "name: " << m_name << endl;
+    cout << "age: " << m_age << endl;
+  }
 };
 int main() {
-    Student s1("cici", 18);
-    s1.print();
-    return 0;
+  Student s1("cici", 18);
+  s1.print();
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -59,27 +59,27 @@ age: 18
 {% highlight c++ linenos %}
 class Student {
 public:
-    string m_name;
-    int m_age;
+  string m_name;
+  int m_age;
 public:
-    Student() {
-        cout << "沒參數建構子" << endl;
-    }
-    Student(string name, int age):m_name("漂亮的" + name),m_age(age + 10) {
-        cout << "初始化列表建構子" << endl;
-    }
-    ~Student() {
-        cout << "解構子" << endl;
-    }
-    void print() {
-        cout << "name: " << m_name << endl;
-        cout << "age: " << m_age << endl;
-    }
+  Student() {
+    cout << "沒參數建構子" << endl;
+  }
+  Student(string name, int age):m_name("漂亮的" + name),m_age(age + 10) {
+    cout << "初始化列表建構子" << endl;
+  }
+  ~Student() {
+    cout << "解構子" << endl;
+  }
+  void print() {
+    cout << "name: " << m_name << endl;
+    cout << "age: " << m_age << endl;
+  }
 };
 int main() {
-    Student s1("cici", 18);
-    s1.print();
-    return 0;
+  Student s1("cici", 18);
+  s1.print();
+  return 0;
 }
 {% endhighlight %}
 ```
