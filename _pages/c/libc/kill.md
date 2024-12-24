@@ -5,10 +5,9 @@ keywords: c++, kill()
 ---
 
 Prerequisites:
-
-[在linux編譯c++][1]
-[signal][2]
-[fork][3]
+- [在linux編譯c++][1]
+- [signal][2]
+- [fork][3]
 
 linux提供kill指令向進程(process)發送訊號。
 

@@ -86,7 +86,7 @@ DeleteUrl()
 OpenFileOrDie()
 {% endhighlight %}
 
-#### 類別、型別
+#### 類別、結構、型別別名、列舉，以及模板型別參數
 
 字首大寫，不能有底線，採駝峰式命名
 
