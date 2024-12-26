@@ -36,16 +36,15 @@ unique_lock支援解鎖功能。
 
 {% highlight c++ linenos %}
 unique_lock<mutex> lock(m_mtx);//加鎖
-
 lock.unlock();//解鎖
 {% endhighlight %}
 
 也可使用scope有效範圍作為離開範圍解鎖
 {% highlight c++ linenos %}
-{
-	unique_lock<mutex> lock(m_mtx);//加鎖
-	//離開scope{}就解鎖
-}
+ {
+  unique_lock<mutex> lock(m_mtx);//加鎖
+  //離開scope{}就解鎖
+ }
 {% endhighlight %}
 
 ### 等待有訊息傳過來
@@ -93,8 +92,8 @@ public:
     unique_lock<mutex> lock(m_mtx);
     // queue是空的才等待
     while (m_que.empty()) {
-    //queue沒資料就等待
-    m_cond.wait(lock);
+      //queue沒資料就等待
+      m_cond.wait(lock);
     }
     //被通知接收資料
     //若queue有資料了，才做下面的事情
@@ -118,13 +117,13 @@ int main() {
   thread t3(&SafeQueue::pop, &safeQue);
   //產生100個訊息
   for (int i = 0; i < 100; i++) {
-  string temp_msg = "msg" + to_string(i);
-  safeQue.push(temp_msg);
+    string temp_msg = "msg" + to_string(i);
+    safeQue.push(temp_msg);
   }
   //產生結束訊息，跳離無限迴圈，不要再等待接收訊息
   for (int i = 0; i < 3; i++) {
-  string end_msg = "END";
-  safeQue.push(end_msg);
+    string end_msg = "END";
+    safeQue.push(end_msg);
   }
   //執行緒記憶體釋放
   t1.join();
@@ -180,8 +179,8 @@ void pop(){
     this_thread::sleep_for (chrono::hours(1));
     // queue是空的才等待
     while (m_que.empty()) {
-    //queue沒資料就等待
-    m_cond.wait(lock);
+      //queue沒資料就等待
+      m_cond.wait(lock);
     }
     //被通知接收資料
     //若queue有資料了，才做下面的事情
@@ -222,8 +221,8 @@ void pop(){
     cout << "執行緒 = " << this_thread::get_id() << "加鎖成功" << endl;
     // queue是空的才等待
     while (m_que.empty()) {
-    //queue沒資料就等待
-    m_cond.wait(lock);
+      //queue沒資料就等待
+      m_cond.wait(lock);
     }
     //被通知接收資料
     //若queue有資料了，才做下面的事情

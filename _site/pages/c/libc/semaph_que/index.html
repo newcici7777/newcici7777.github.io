@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>內嵌函式 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>semaphore作為condition · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -528,12 +528,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/function/func_inline" onclick="pageScrollToTop(this)"> 內嵌函式</a>
         
-            
-                <ul><li><a href="#內嵌函式inline" onclick="mobilePageScrollToAnchor(this)" >內嵌函式inline</a></li></ul>
-
             
         </li>
 	
@@ -1189,9 +1186,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/libc/semaph_que" onclick="pageScrollToTop(this)"> semaphore作為condition</a>
         
+            
+                
+
             
         </li></ul></li></ul></li></ul></li>
 	
@@ -1215,7 +1215,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >內嵌函式</a>
+                            <a href="." >semaphore作為condition</a>
                         
                     </h1>
                 </div>
@@ -1228,38 +1228,22 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/function/func_inline">內嵌函式</h1>
+                        <h1 id="/pages/c/libc/semaph_que">semaphore作為condition</h1>
                     
 
-                    <h2 id="內嵌函式inline">內嵌函式inline</h2>
+                    <p>Prerequisites:</p>
 
-<p>函式會占記憶體空間，主程式呼叫函式時會跳到函式占用的記憶體位址，待函式結尾再跳回主程式，為了節省跳來跳去的執行時間，可在函式前面加上inline，編譯器一看到inline就會把函式拷貝一份插入在主程式之中。</p>
+<ul>
+  <li><a href="/pages/c/thread/mutex/">mutex</a></li>
+  <li><a href="/pages/c/thread/condition_variable/">condition</a></li>
+  <li><a href="/pages/c/libc/shared_memory/#刪除共用記憶體">semaphore</a></li>
+  <li><a href="/pages/c/dataStruct/circular_queue/">circular_queue</a></li>
+  <li><a href="/pages/c/libc/shared_memory/#結合circular-queue">結合circular queue</a></li>
+</ul>
 
-<p>在以下程式碼print()最前面加上inline，使print()函式變成內嵌函式。</p>
+<p>延續先前semaphore與mutex的範例，這頁是semaphore作為condition的範例，使用circular queue作為範例</p>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="code"><pre><span class="kr">inline</span> <span class="kt">void</span> <span class="nf">print</span><span class="p">(</span><span class="n">string</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">print</span><span class="p">(</span><span class="s">"test"</span><span class="p">);</span>
-  <span class="n">print</span><span class="p">(</span><span class="s">"abcdef"</span><span class="p">);</span>
-  <span class="n">print</span><span class="p">(</span><span class="s">"aaaa"</span><span class="p">);</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>  
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>轉變內嵌函式，程式在執行時就會變成以下這樣</p>
+<p>檔名:push_test.cpp</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1277,25 +1261,262 @@
 13
 14
 15
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="p">{</span>
-    <span class="n">string</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"test"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">"semaph.h"</span><span class="cp">
+#include</span> <span class="cpf">"cir_queue.h"</span><span class="cp">
+#include</span> <span class="cpf">&lt;sys/shm.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">struct</span> <span class="nc">SharedData</span> <span class="p">{</span>
+  <span class="kt">char</span> <span class="n">data</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+<span class="p">};</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">using</span> <span class="n">ElemType</span> <span class="o">=</span> <span class="kt">int</span><span class="p">;</span>
+  <span class="c1">// 注意轉型</span>
+  <span class="kt">int</span> <span class="n">shmid</span> <span class="o">=</span> <span class="n">shmget</span><span class="p">(</span><span class="mh">0x0001</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">CircularQueue</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="mi">6</span><span class="o">&gt;</span><span class="p">),</span> <span class="mo">0640</span><span class="o">|</span><span class="n">IPC_CREAT</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">shmid</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體不足或權限不足，無法建立空間。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
   <span class="p">}</span>
-  <span class="p">{</span>
-    <span class="n">string</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"abcdef"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"shmid = "</span> <span class="o">&lt;&lt;</span> <span class="n">shmid</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">// 注意轉型</span>
+  <span class="n">CircularQueue</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="mi">6</span><span class="o">&gt;*</span> <span class="n">cir_que</span> <span class="o">=</span> <span class="p">(</span><span class="n">CircularQueue</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="mi">6</span><span class="o">&gt;*</span><span class="p">)</span><span class="n">shmat</span><span class="p">(</span><span class="n">shmid</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">cir_que</span> <span class="o">==</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"shmat() failed"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
   <span class="p">}</span>
-  <span class="p">{</span>
-    <span class="n">string</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"aaaa"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>  
+  <span class="c1">// 使用共用記憶體，不會呼叫CircularQueue的建構子，所以要手動呼叫Init()</span>
+  <span class="n">cir_que</span><span class="o">-&gt;</span><span class="n">Init</span><span class="p">();</span>
+  <span class="c1">// 建立mutex</span>
+  <span class="n">Semaph</span> <span class="n">mutex</span><span class="p">;</span>
+  <span class="n">mutex</span><span class="p">.</span><span class="n">init</span><span class="p">(</span><span class="mh">0x0001</span><span class="p">);</span>
+  <span class="c1">// 建立condition</span>
+  <span class="n">Semaph</span> <span class="n">condition</span><span class="p">;</span>
+  <span class="n">condition</span><span class="p">.</span><span class="n">init</span><span class="p">(</span><span class="mh">0x0002</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="c1">// lock加鎖</span>
+  <span class="n">mutex</span><span class="p">.</span><span class="n">wait</span><span class="p">();</span>
+  <span class="c1">// push的流程</span>
+  <span class="n">ElemType</span> <span class="n">tmp_val</span><span class="p">;</span>
+  <span class="n">tmp_val</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>
+  <span class="n">cir_que</span><span class="o">-&gt;</span><span class="n">push</span><span class="p">(</span><span class="n">tmp_val</span><span class="p">);</span>
+  <span class="n">tmp_val</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+  <span class="n">cir_que</span><span class="o">-&gt;</span><span class="n">push</span><span class="p">(</span><span class="n">tmp_val</span><span class="p">);</span>
+  <span class="n">tmp_val</span> <span class="o">=</span> <span class="mi">13</span><span class="p">;</span>
+  <span class="n">cir_que</span><span class="o">-&gt;</span><span class="n">push</span><span class="p">(</span><span class="n">tmp_val</span><span class="p">);</span>
+  <span class="c1">// unlock解鎖</span>
+  <span class="n">mutex</span><span class="p">.</span><span class="n">post</span><span class="p">();</span>
+  <span class="c1">// 計數功能</span>
+  <span class="n">condition</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>  <span class="c1">// 參數3代表生產3個資料</span>
+  <span class="n">cir_que</span><span class="o">-&gt;</span><span class="n">print</span><span class="p">();</span>
+  <span class="n">shmdt</span><span class="p">(</span><span class="n">cir_que</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>若是呼叫print() 1000次就會copy程式碼1000份在主程式中，占用記憶體空間。(變數也是占記憶體位址)</p>
+<p>檔名:pop_test.cpp</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">"semaph.h"</span><span class="cp">
+#include</span> <span class="cpf">"cir_queue.h"</span><span class="cp">
+#include</span> <span class="cpf">&lt;sys/shm.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">struct</span> <span class="nc">SharedData</span> <span class="p">{</span>
+  <span class="kt">char</span> <span class="n">data</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+<span class="p">};</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">using</span> <span class="n">ElemType</span> <span class="o">=</span> <span class="kt">int</span><span class="p">;</span>
+  <span class="c1">// 注意轉型</span>
+  <span class="kt">int</span> <span class="n">shmid</span> <span class="o">=</span> <span class="n">shmget</span><span class="p">(</span><span class="mh">0x0001</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">CircularQueue</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="mi">6</span><span class="o">&gt;</span><span class="p">),</span> <span class="mo">0640</span><span class="o">|</span><span class="n">IPC_CREAT</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">shmid</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"記憶體不足或權限不足，無法建立空間。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"shmid = "</span> <span class="o">&lt;&lt;</span> <span class="n">shmid</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">// 注意轉型</span>
+  <span class="n">CircularQueue</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="mi">6</span><span class="o">&gt;*</span> <span class="n">cir_que</span> <span class="o">=</span> <span class="p">(</span><span class="n">CircularQueue</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="mi">6</span><span class="o">&gt;*</span><span class="p">)</span><span class="n">shmat</span><span class="p">(</span><span class="n">shmid</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">cir_que</span> <span class="o">==</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"shmat() failed"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">// 使用共用記憶體，不會呼叫CircularQueue的建構子，所以要手動呼叫Init()</span>
+  <span class="n">cir_que</span><span class="o">-&gt;</span><span class="n">Init</span><span class="p">();</span>
+  <span class="c1">// 建立mutex</span>
+  <span class="n">Semaph</span> <span class="n">mutex</span><span class="p">;</span>
+  <span class="n">mutex</span><span class="p">.</span><span class="n">init</span><span class="p">(</span><span class="mh">0x0001</span><span class="p">);</span>
+  <span class="c1">// 建立condition</span>
+  <span class="n">Semaph</span> <span class="n">condition</span><span class="p">;</span>
+  <span class="n">condition</span><span class="p">.</span><span class="n">init</span><span class="p">(</span><span class="mh">0x0002</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="c1">// 存放pop出來的資料</span>
+  <span class="n">ElemType</span> <span class="n">tmp_val</span><span class="p">;</span>
+  <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// lock加鎖</span>
+    <span class="n">mutex</span><span class="p">.</span><span class="n">wait</span><span class="p">();</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">cir_que</span><span class="o">-&gt;</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>  <span class="c1">// 若佇列為空，無限迴圈</span>
+      <span class="n">mutex</span><span class="p">.</span><span class="n">post</span><span class="p">();</span>  <span class="c1">// unlock解鎖</span>
+      <span class="n">condition</span><span class="p">.</span><span class="n">wait</span><span class="p">();</span>  <span class="c1">// 等待有資料，沒資料就一直卡在這</span>
+      <span class="c1">// 若有資料就會執行以下這行，並離開cir_que-&gt;empty的迴圈</span>
+      <span class="n">mutex</span><span class="p">.</span><span class="n">wait</span><span class="p">();</span>  <span class="c1">// lock加鎖</span>
+    <span class="p">}</span>
+    <span class="c1">// pop資料</span>
+    <span class="n">tmp_val</span> <span class="o">=</span> <span class="n">cir_que</span><span class="o">-&gt;</span><span class="n">front</span><span class="p">();</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"tmp_val = "</span> <span class="o">&lt;&lt;</span> <span class="n">tmp_val</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cir_que</span><span class="o">-&gt;</span><span class="n">pop</span><span class="p">();</span>
+    <span class="c1">// unlock解鎖</span>
+    <span class="n">mutex</span><span class="p">.</span><span class="n">post</span><span class="p">();</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"val = "</span> <span class="o">&lt;&lt;</span> <span class="n">tmp_val</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">// 假設處理資料要花10秒鐘</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">shmdt</span><span class="p">(</span><span class="n">cir_que</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>編譯指令</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ -o push_test push_test.cpp semaph.cpp
+g++ -o pop_test pop_test.cpp semaph.cpp
+</code></pre></div></div>
+
+<p>打開二個終端機視窗</p>
+
+<p>一個執行push</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./push_test
+</code></pre></div></div>
+
+<p>一個執行pop</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pop_test
+</code></pre></div></div>
+
+<p>執行結果</p>
+
+<p>push</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./push_test
+shmid = 5
+Queue is full.
+Queue is full.
+Queue is full.
+11,12,13,11,12,13,
+
+$ ./push_test
+shmid = 5
+11,12,13,
+</code></pre></div></div>
+
+<p>pop</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./pop_test
+shmid = 5
+tmp_val = 11
+val = 11
+tmp_val = 12
+val = 12
+tmp_val = 13
+val = 13
+tmp_val = 11
+val = 11
+tmp_val = 12
+val = 12
+tmp_val = 13
+val = 13
+tmp_val = 11
+val = 11
+tmp_val = 12
+val = 12
+tmp_val = 13
+val = 13
+^C
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1359,14 +1580,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/function/func_overload" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 函式多載">
+                        <a href="/pages/c/libc/semaphore" class="navigation navigation-prev navigation-unique" aria-label="Previous page: semaphore">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/function/func_default_param" class="navigation navigation-next navigation-unique" aria-label="Next page: 函式參數預設值">
+                        <a href="/pages/jekyll/install/how_to_install_ruby" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝 Ruby on Mac">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1384,11 +1605,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "函式多載",
+            "title": "semaphore",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/function/func_overload.md",
-            "ref": "_pages/c/function/func_overload.md",
+            "path": "_pages/c/libc/semaphore.md",
+            "ref": "_pages/c/libc/semaphore.md",
             "articles": []
         },
         
@@ -1480,8 +1701,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/function/func_inline.md",
-        "mtime": "2024-10-14 00:00:00 +0800",
+        "path": "_pages/c/libc/semaph_que.md",
+        "mtime": "2024-12-24 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

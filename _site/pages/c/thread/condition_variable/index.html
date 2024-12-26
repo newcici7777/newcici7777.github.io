@@ -1179,6 +1179,20 @@
     	<a href="/pages/c/libc/shared_memory" onclick="pageScrollToTop(this)"> Shared Memory共用記憶體</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/semaphore" onclick="pageScrollToTop(this)"> semaphore</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/semaph_que" onclick="pageScrollToTop(this)"> semaphore作為condition</a>
+        
+            
         </li></ul></li></ul></li></ul></li>
 	
 	
@@ -1247,9 +1261,7 @@
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-3
 </pre></td><td class="code"><pre><span class="n">unique_lock</span><span class="o">&lt;</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">lock</span><span class="p">(</span><span class="n">m_mtx</span><span class="p">);</span><span class="c1">//加鎖</span>
-
 <span class="n">lock</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span><span class="c1">//解鎖</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1261,10 +1273,10 @@
 2
 3
 4
-</pre></td><td class="code"><pre><span class="p">{</span>
-	<span class="n">unique_lock</span><span class="o">&lt;</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">lock</span><span class="p">(</span><span class="n">m_mtx</span><span class="p">);</span><span class="c1">//加鎖</span>
-	<span class="c1">//離開scope{}就解鎖</span>
-<span class="p">}</span>
+</pre></td><td class="code"><pre> <span class="p">{</span>
+  <span class="n">unique_lock</span><span class="o">&lt;</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">lock</span><span class="p">(</span><span class="n">m_mtx</span><span class="p">);</span><span class="c1">//加鎖</span>
+  <span class="c1">//離開scope{}就解鎖</span>
+ <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1382,8 +1394,8 @@
     <span class="n">unique_lock</span><span class="o">&lt;</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">lock</span><span class="p">(</span><span class="n">m_mtx</span><span class="p">);</span>
     <span class="c1">// queue是空的才等待</span>
     <span class="k">while</span> <span class="p">(</span><span class="n">m_que</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
-    <span class="c1">//queue沒資料就等待</span>
-    <span class="n">m_cond</span><span class="p">.</span><span class="n">wait</span><span class="p">(</span><span class="n">lock</span><span class="p">);</span>
+      <span class="c1">//queue沒資料就等待</span>
+      <span class="n">m_cond</span><span class="p">.</span><span class="n">wait</span><span class="p">(</span><span class="n">lock</span><span class="p">);</span>
     <span class="p">}</span>
     <span class="c1">//被通知接收資料</span>
     <span class="c1">//若queue有資料了，才做下面的事情</span>
@@ -1407,13 +1419,13 @@
   <span class="kr">thread</span> <span class="n">t3</span><span class="p">(</span><span class="o">&amp;</span><span class="n">SafeQueue</span><span class="o">::</span><span class="n">pop</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">safeQue</span><span class="p">);</span>
   <span class="c1">//產生100個訊息</span>
   <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">string</span> <span class="n">temp_msg</span> <span class="o">=</span> <span class="s">"msg"</span> <span class="o">+</span> <span class="n">to_string</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-  <span class="n">safeQue</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">temp_msg</span><span class="p">);</span>
+    <span class="n">string</span> <span class="n">temp_msg</span> <span class="o">=</span> <span class="s">"msg"</span> <span class="o">+</span> <span class="n">to_string</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+    <span class="n">safeQue</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">temp_msg</span><span class="p">);</span>
   <span class="p">}</span>
   <span class="c1">//產生結束訊息，跳離無限迴圈，不要再等待接收訊息</span>
   <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">string</span> <span class="n">end_msg</span> <span class="o">=</span> <span class="s">"END"</span><span class="p">;</span>
-  <span class="n">safeQue</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">end_msg</span><span class="p">);</span>
+    <span class="n">string</span> <span class="n">end_msg</span> <span class="o">=</span> <span class="s">"END"</span><span class="p">;</span>
+    <span class="n">safeQue</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">end_msg</span><span class="p">);</span>
   <span class="p">}</span>
   <span class="c1">//執行緒記憶體釋放</span>
   <span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
@@ -1497,8 +1509,8 @@
     <span class="n">this_thread</span><span class="o">::</span><span class="n">sleep_for</span> <span class="p">(</span><span class="n">chrono</span><span class="o">::</span><span class="n">hours</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
     <span class="c1">// queue是空的才等待</span>
     <span class="k">while</span> <span class="p">(</span><span class="n">m_que</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
-    <span class="c1">//queue沒資料就等待</span>
-    <span class="n">m_cond</span><span class="p">.</span><span class="n">wait</span><span class="p">(</span><span class="n">lock</span><span class="p">);</span>
+      <span class="c1">//queue沒資料就等待</span>
+      <span class="n">m_cond</span><span class="p">.</span><span class="n">wait</span><span class="p">(</span><span class="n">lock</span><span class="p">);</span>
     <span class="p">}</span>
     <span class="c1">//被通知接收資料</span>
     <span class="c1">//若queue有資料了，才做下面的事情</span>
@@ -1567,8 +1579,8 @@
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"執行緒 = "</span> <span class="o">&lt;&lt;</span> <span class="n">this_thread</span><span class="o">::</span><span class="n">get_id</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">"加鎖成功"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="c1">// queue是空的才等待</span>
     <span class="k">while</span> <span class="p">(</span><span class="n">m_que</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
-    <span class="c1">//queue沒資料就等待</span>
-    <span class="n">m_cond</span><span class="p">.</span><span class="n">wait</span><span class="p">(</span><span class="n">lock</span><span class="p">);</span>
+      <span class="c1">//queue沒資料就等待</span>
+      <span class="n">m_cond</span><span class="p">.</span><span class="n">wait</span><span class="p">(</span><span class="n">lock</span><span class="p">);</span>
     <span class="p">}</span>
     <span class="c1">//被通知接收資料</span>
     <span class="c1">//若queue有資料了，才做下面的事情</span>
@@ -1786,7 +1798,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 15:54:07 +0800"
+        "time": "2024-12-26 16:21:39 +0800"
     },
     "basePath": "",
     "book": {

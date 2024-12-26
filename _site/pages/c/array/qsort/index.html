@@ -1179,6 +1179,20 @@
     	<a href="/pages/c/libc/shared_memory" onclick="pageScrollToTop(this)"> Shared Memory共用記憶體</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/semaphore" onclick="pageScrollToTop(this)"> semaphore</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/semaph_que" onclick="pageScrollToTop(this)"> semaphore作為condition</a>
+        
+            
         </li></ul></li></ul></li></ul></li>
 	
 	
@@ -1225,21 +1239,17 @@
   <li>參數1，陣列名。</li>
   <li>參數2，陣列大小。</li>
   <li>參數3，陣列中每個元素的大小。</li>
-  <li>
-    <p>參數4，callback函式，判斷比大小的函式。</p>
+  <li>參數4，callback函式，判斷比大小的函式。</li>
+</ul>
 
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  int compar( const void *p1, const void *p2)
-	
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int compar( const void *p1, const void *p2)
+</code></pre></div></div>
 
-  * 傳回值為int整數。
-      * 傳回值 &gt; 0
-          * p1會排在p2前面
-      * 傳回值 == 0
-          * p1與p2相等
-      * 傳回值 &lt; 0
-          * p1會排在p2後面
-</code></pre></div>    </div>
-  </li>
+<ul>
+  <li>傳回值為int整數。</li>
+  <li>傳回值 &gt; 0 ,p1會排在p2前面</li>
+  <li>傳回值 == 0 ,p1與p2相等</li>
+  <li>傳回值 &lt; 0 ,p1會排在p2後面</li>
 </ul>
 
 <h2 id="程式碼">程式碼</h2>
@@ -1503,7 +1513,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2024-12-24 15:54:07 +0800"
+        "time": "2024-12-26 16:21:39 +0800"
     },
     "basePath": "",
     "book": {

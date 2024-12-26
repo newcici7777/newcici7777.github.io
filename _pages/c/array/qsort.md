@@ -14,17 +14,14 @@ void qsort ( void * base , size_t nitems , size_t size , int (* compar )( const 
 * 參數3，陣列中每個元素的大小。
 * 參數4，callback函式，判斷比大小的函式。
 
-		
-		int compar( const void *p1, const void *p2)
-		
+```		
+int compar( const void *p1, const void *p2)
+```	
 
-		* 傳回值為int整數。
-			* 傳回值 > 0
-				* p1會排在p2前面
-			* 傳回值 == 0
-				* p1與p2相等
-			* 傳回值 < 0
-				* p1會排在p2後面
+- 傳回值為int整數。
+- 傳回值 > 0 ,p1會排在p2前面
+- 傳回值 == 0 ,p1與p2相等
+- 傳回值 < 0 ,p1會排在p2後面
 
 ## 程式碼
 {% highlight c++ linenos %}
