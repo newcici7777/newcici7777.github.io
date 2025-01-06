@@ -100,9 +100,9 @@ int main() {
     return 0;
   }
   // 3.寫入(用法與cout一樣，cout<<是輸出到螢幕，fout<<是輸出到檔案)
-  fout << "file 1 test test \n";
-  fout << "file 2 test test \n";
-  fout << "file 3 test test \n";
+  fout << "file 1 test test\n";
+  fout << "file 2 test test\n";
+  fout << "file 3 test test\n";
   // 4.關閉檔案
   fout.close();
   return 0;
@@ -548,9 +548,12 @@ file 3 test test
 
 ![img]({{site.imgurl}}/c++/file_buffer_w.jpg)  
 
-很難證明緩衝區的存在，以下程式碼可能可以證明
+以下程式碼可能可以證明緩衝區的存在。
 
 開二個linux終端機，一個編譯並執行以下程式碼，另一個終端機輸入`tail -f test1.txt`
+
+注意！<span class="markline">fout << 結尾不能是endl</span>因為endl本身自帶flush的功能。
+
 {% highlight c++ linenos %}
 #include <iostream>
 #include <fstream>
@@ -571,7 +574,7 @@ int main() {
   }
   for (int i = 0; i < 1000; i++) {
     // 寫入
-    fout << "第 i = " << i << "次,abcdefghijklm.kljoppo kllkkjlkjjljjkldfjfdladfaklffadjkfladfjadklfalfakdfadlfjadkljfdakldfajfkfjkal" << endl;
+    fout << "第 i = " << i << "次,abcdefghijklm.kljoppo kllkkjlkjjljjkldfjfdladfaklffadjkfladfjadklfalfakdfadlfjadkljfdakldfajfkfjkal \n";
     // usleep(微秒) 暫時使程式停止執行
     // 1秒 = 1,000,000 微秒
     // 0.1秒 = 100,000
@@ -583,6 +586,159 @@ int main() {
 }
 {% endhighlight %}
 
-若執行到999次之間有停頓住，代表緩衝區還沒滿，還沒把資料送過來，但一路順暢無停頓執行到999次，代表電腦效能很好。
+若執行到999次之間有停頓住，代表緩衝區還沒滿。
 
+### flush
+fout.flush()將緩衝區的資料立即寫入檔案，終端機使用`tail -f test1.txt`可以追蹤查看檔案是一列列顯示，而不會停頓一下又冒出一批資料出來。
+{% highlight c++ linenos %}
+#include <iostream>
+#include <fstream>
+#include <unistd.h>  // usleep()要用到
+using namespace std;
+int main() {
+  // linux檔案位置
+  string file_name = "/home/cici/test/app/test1.txt";
+  // 1.建立寫入檔案的物件(輸出串流)
+  ofstream fout;
+  // 2.打開檔案，若無檔案會建立新
+  // ios::trunc與ios:out與預設不代入第2個參數，覆蓋(清除)原本檔案內容
+  // ios::app是append附加在檔案內容後面
+  fout.open(file_name, ios::out);
+  if (fout.is_open() == false) {
+    cout << "開啟文字檔失敗" << endl;
+    return 0;
+  }
+  for (int i = 0; i < 1000; i++) {
+    // 寫入
+    fout << "第 i = " << i << "次,abcdefghijklm.kljoppo kllkkjlkjjljjkldfjfdladfaklffadjkfladfjadklfalfakdfadlfjadkljfdakldfajfkfjkal \n";
+    fout.flush();
+    // usleep(微秒) 暫時使程式停止執行
+    // 1秒 = 1,000,000 微秒
+    // 0.1秒 = 100,000
+    usleep(100000);
+  }
+  // 關閉檔案
+  fout.close();
+  return 0;
+}
+{% endhighlight %}
 
+### endl
+除了斷行之外，還會將緩衝區的資料立即寫入檔案。
+{% highlight c++ linenos %}
+fout << "第 i = " << i << "次,abcdefghi" << endl;
+{% endhighlight %}
+
+{% highlight c++ linenos %}
+#include <iostream>
+#include <fstream>
+#include <unistd.h>  // usleep()要用到
+using namespace std;
+int main() {
+  // linux檔案位置
+  string file_name = "/home/cici/test/app/test1.txt";
+  // 1.建立寫入檔案的物件(輸出串流)
+  ofstream fout;
+  // 2.打開檔案，若無檔案會建立新
+  // ios::trunc與ios:out與預設不代入第2個參數，覆蓋(清除)原本檔案內容
+  // ios::app是append附加在檔案內容後面
+  fout.open(file_name, ios::out);
+  if (fout.is_open() == false) {
+    cout << "開啟文字檔失敗" << endl;
+    return 0;
+  }
+  for (int i = 0; i < 1000; i++) {
+    // 寫入
+    fout << "第 i = " << i << "次,abcdefghi" << endl;
+    // usleep(微秒) 暫時使程式停止執行
+    // 1秒 = 1,000,000 微秒
+    // 0.1秒 = 100,000
+    usleep(100000);
+  }
+  // 關閉檔案
+  fout.close();
+  return 0;
+}
+{% endhighlight %}
+
+### unibuf
+將緩衝區設置為有資料立即寫入檔案。
+{% highlight c++ linenos %}
+#include <iostream>
+#include <fstream>
+#include <unistd.h>  // usleep()要用到
+using namespace std;
+int main() {
+  // linux檔案位置
+  string file_name = "/home/cici/test/app/test1.txt";
+  // 1.建立寫入檔案的物件(輸出串流)
+  ofstream fout;
+  // 2.打開檔案，若無檔案會建立新
+  // ios::trunc與ios:out與預設不代入第2個參數，覆蓋(清除)原本檔案內容
+  // ios::app是append附加在檔案內容後面
+  fout.open(file_name, ios::out);
+  fout << unitbuf;
+  if (fout.is_open() == false) {
+    cout << "開啟文字檔失敗" << endl;
+    return 0;
+  }
+  for (int i = 0; i < 1000; i++) {
+    // 寫入
+    fout << "第 i = " << i << "次 \n";
+    // usleep(微秒) 暫時使程式停止執行
+    // 1秒 = 1,000,000 微秒
+    // 0.1秒 = 100,000
+    usleep(100000);
+  }
+  // 關閉檔案
+  fout.close();
+  return 0;
+}
+{% endhighlight %}
+
+## 判斷輸入串流錯誤
+### eof()
+只有輸入串流有eofbit，輸出串流沒有。
+
+當inputstream讀到檔案末尾會設定eofbit變數，eof()函式會檢查是否設定eofbit
+{% highlight c++ linenos %}
+#include <iostream>
+#include <fstream>
+#include <string>  // getline()函式需要用到
+using namespace std;
+int main() {
+  // linux檔案位置
+  string file_name = "/home/cici/test/app/test.txt";
+  ifstream fin(file_name, ios::in);
+  if (fin.is_open() == false) {
+    cout << "開啟文字檔失敗" << endl;
+    return 0;
+  }
+  // 用於存放讀取的內容
+  string buffer;
+  while (true) {
+    fin >> buffer;
+    cout << buffer << endl;
+    if (fin.eof() == true) break;
+  }
+  // 關閉檔案
+  fin.close();
+  return 0;
+}
+{% endhighlight %}
+
+以上的程式碼可被取代為
+{% highlight c++ linenos %}
+ while (fin >> buffer) {
+    cout << buffer << endl;
+ }
+{% endhighlight %}
+
+### bad()
+bad()函式會檢查badbit是否設定，當硬碟空間不足，或系統有錯誤，就會被設定。
+
+### fail()
+fail()函式會檢查failbit是否設定，當檔案到了末尾，或程式有bug，就會被設定。
+
+### good()
+eofbit,badbit,failbit都是0的時候good()函式就會傳回true
