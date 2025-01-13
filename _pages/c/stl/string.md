@@ -4,7 +4,6 @@ date: 2024-11-12
 keywords: c++, string
 ---
 Prerequisites:
-
 - [ArrayList實作][1]
 - [ArrayList記憶體擴充][2]
 
@@ -166,6 +165,64 @@ string s3;
 s3 = "Hello World!";
 {% endhighlight %}
 
+## 字串連接
+
+### operator+=
+```
+// string
+string& operator+= (const string& str);
+// char*
+string& operator+= (const char* s);
+// character
+string& operator+= (char c);
+// initializer list
+string& operator+= (initializer_list<charT> il);
+```
+
+{% highlight c++ linenos %}
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main() {
+  string s1 = "Hello";
+  string s2 = "hi";
+  // const char*
+  s1 += " Mary!";
+  // string
+  s1 += s2;
+  // character
+  s1 += 'A';
+  cout << "s1 = " << s1 << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+s1 = Hello Mary!hiA
+```
+### append
+```
+// char*
+string &append(const char *s);
+// string
+string &append(const string &str);
+```
+
+{% highlight c++ linenos %}
+int main() {
+  string s1 = "Hello";
+  // char*
+  s1.append(" world!");
+  string s2 = " Hi, Mary!";
+  // string
+  s1.append(s2);
+  cout << "s1 = " << s1 << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+s1 = Hello world! Hi, Mary!
+```
+
 ## 建構子參數為c字串與n個字元
 
 ### n小於c字串的長度
@@ -298,6 +355,45 @@ size_t length() const;
 ```
 size_t size() const;
 ```
+{% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+int main() {
+  string s1 = "123566";
+  cout << "s1 length = " << s1.length() << endl;
+  cout << "s1 size = " << s1.size() << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+s1 length = 6
+s1 size = 6
+```
+
+- [strlen()][5]
+- [c_str()][6]
+
+strlen()是用於c字元陣列，並非string，使用strlen，需要把string轉成字元陣列指標
+```
+size_t strlen ( const char * str );
+```
+{% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+int main() {
+  string s1 = "123566";
+  cout << "s1 length = " << s1.length() << endl;
+  cout << "s1 size = " << s1.size() << endl;
+  cout << "s1 strlen = " << strlen(s1.c_str()) << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+s1 length = 6
+s1 size = 6
+s1 strlen = 6
+```
+
 ### 判斷實際使用的大小為0
 
 若為0返回true
@@ -314,9 +410,19 @@ void clear();
 
 使用[位置]，可以取得某個位置字元
 
+在 C++ 中，std::string 本質上是一個用於操作字元的容器，內部存儲的字符是一個連續的 char 陣列。
+
+通過 s1[0]，你可以訪問 std::string 中存儲的第一個字元。
+
+&s1[0] 的含義:
+- s1[0] 返回的是第一個字元，型別是 char。
+- &s1[0] 取得的是該字符在內存中的地址，因此它的型別是 char*。
+
 ```
 char &operator[](size_t n); 
 ```
+
+#### 取值
 
 {% highlight c++ linenos %}
   string s1 = "Hello";
@@ -325,13 +431,24 @@ char &operator[](size_t n);
 ```
 s1[1] = e
 ```
+#### 取出位址
+- [(void\*)印出16進制的位址][4]
+
+使用以下此法，傳回的是char\*，是沒有const
+{% highlight c++ linenos %}
+  string s1 = "Hello";
+  cout << "s1 address = " << (void*)&s1[0] << endl;
+{% endhighlight %}
+```
+s1 address = 0x7ff7bfeff2d1
+```
 
 ### 取得string物件存放字串的記憶體位址
-- [(void*)印出16進制的位址][4]
+- [(void\*)印出16進制的位址][4]
 
 &是取得物件的位址
 
-以下是取得string物件中動態分配記憶體空間存放字串的位址
+以下是取得string物件中動態分配記憶體空間存放字串的位址，注意！傳回的是const char\*，是有const
 
 ```
 const char *c_str() const;
@@ -352,61 +469,45 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 s1 & address = 0x7ff7bfeff450
 s1 c_str address = 0x7ff7bfeff451
 s1 data address = 0x7ff7bfeff451
 ```
 
-## 字串連接
+### 字串作為函式參數
 
-- string &operator+=(const string &str); 
+參數語法
+```
+const string& str
+```
+
+以下函式參數的寫法，不僅可以接收c字串指標，也可以接收string類別
+
+若函式參數為const char \*，參數就只能接收c字串指標，string類別要再透過c_str()函式轉成c字串指標。
 
 {% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+void func1(const string& str) {
+  cout << str << endl;
+}
 int main() {
-  string s1 = "Hello";
-  s1+=" world";
-  cout << "s1 = " << s1 << endl;
+  char * s1 = "http://www.google.com";
+  //可以接受c字串指標
+  func1(s1);
+  string s2 = "被討厭的勇氣";
+  //可以接受字串
+  func1(s2);
   return 0;
 }
 {% endhighlight %}
-
 ```
-s1 = Hello world
-```
-
-- string &append(const char *s); 
-
-{% highlight c++ linenos %}
-int main() {
-  string s1 = "Hello";
-  s1.append(" world");
-  cout << "s1 = " << s1 << endl;
-  return 0;
-}
-{% endhighlight %}
-
-```
-s1 = Hello world
+http://www.google.com
+被討厭的勇氣
 ```
 
-- string &append(const string &str);
-{% highlight c++ linenos %}
-int main() {
-  string s1 = "Hello";
-  string s2 = " world";
-  s1.append(s2);
-  cout << "s1 = " << s1 << endl;
-  return 0;
-}
-{% endhighlight %}
-
-```
-s1 = Hello world
-```
-
-## 字串截取
+### 字串截取
 
 ```
 string substr(size_t pos = 0,size_t n = npos) const;
@@ -423,7 +524,7 @@ int main() {
 s1 = ell
 ```
 
-## 字串比較
+### 字串比較
 
 ```
 bool operator==(const string &str1,const string &str2) const;
@@ -438,6 +539,36 @@ int main() {
 }
 {% endhighlight %}
 
+### 清空
+
+{% highlight c++ linenos %}
+  string name = "Bill";
+  cout << "name: " << name << endl;
+  name.clear();
+  cout << "name: " << name << endl;
+{% endhighlight %}
+
+```
+name: Bill
+name: 
+```
+
+### resize()
+
+若要對string記憶體位址操作，手動操作會使string本身的動態記憶體分配失效，要手動重新分配它的大小。
+{% highlight c++ linenos %}
+bool recv(string &buffer, const size_t maxlen) {
+  buffer.clear();
+  buffer.resize(maxlen);
+  // 如果接收成功，recv()會傳回收到資料的大小，-1代表接收失敗，0代表socket斷線，大於0代表成功
+  int readn = ::recv(client_fd, &buffer[0], buffer.size(), 0);
+  if (readn <= 0) return false;
+  // recv()會傳回收到資料的大小，重置大小
+  buffer.resize(readn);
+  return true;
+}
+{% endhighlight %}
+
 ## string陣列
 
 判斷數字，印出月份英文
@@ -447,7 +578,8 @@ int main() {
 const int MAX_MONTH = 12;
 int main() {
   string mon_arr[MAX_MONTH] =
-  {"January","February","March","April","May","June","July","August","September","October","November","December"};
+    {"January", "February", "March", "April", "May", "June", 
+     "July","August","September","October","November","December"};
   int month;
   cout << "請輸入數字月份(1~12):";
   cin >> month;
@@ -462,24 +594,11 @@ int main() {
 January
 ```
 
-## 清空
-
-{% highlight c++ linenos %}
-  string name = "Bill";
-  cout << "name: " << name << endl;
-  name.clear();
-  cout << "name: " << name << endl;
-{% endhighlight %}
-
-```
-name: Bill
-name: 
-```
-
-
 其它[更多成員函式](https://cplusplus.com/reference/string/string/)
 
 [1]: {% link _pages/c/dataStruct/arrayList.md %}
 [2]: {% link _pages/c/dataStruct/arrayListExtCap.md %}
 [3]: {% link _pages/c/class/constructor.md %}#建構子參數只有一個，可使用指派運算子
 [4]: {% link _pages/c/pointer/pointerVoid.md %}
+[5]: {% link _pages/c/array/charArray.md %}#字串長度-strlen
+[6]: {% link _pages/c/string/string_convert.md %}

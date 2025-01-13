@@ -87,7 +87,7 @@ fd = 3
 
 在linux編譯執行以上程式碼
 
-進入\/proc\/進程id\/fd目錄，裡面存放所有進程的File description
+進入/proc/進程id/fd目錄，裡面存放所有進程的File description
 
 ```
 cd /proc/進程id/fd

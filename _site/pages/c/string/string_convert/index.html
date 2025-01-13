@@ -203,6 +203,20 @@
     	<a href="/pages/c/basic/rand" onclick="pageScrollToTop(this)"> 亂數</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/main" onclick="pageScrollToTop(this)"> main</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/include" onclick="pageScrollToTop(this)"> include與define</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -362,7 +376,7 @@
     	<a href="/pages/c/string/string_convert" onclick="pageScrollToTop(this)"> string convert</a>
         
             
-                <ul><li><a href="#to_string" onclick="mobilePageScrollToAnchor(this)" >to_string</a></li><li><a href="#string-to-char指標" onclick="mobilePageScrollToAnchor(this)" >string to char指標</a></li><li><a href="#const-string-to-char指標" onclick="mobilePageScrollToAnchor(this)" >const string to char指標</a></li></ul>
+                <ul><li><a href="#to_string" onclick="mobilePageScrollToAnchor(this)" >to_string</a></li><li><a href="#string-to-char指標" onclick="mobilePageScrollToAnchor(this)" >string to char指標</a></li><li><a href="#const-string-to-char指標" onclick="mobilePageScrollToAnchor(this)" >const string to char指標</a></li><li><a href="#char-to-string" onclick="mobilePageScrollToAnchor(this)" >char* to string</a></li></ul>
 
             
         </li>
@@ -1210,7 +1224,17 @@
     	<a href="/pages/c/libc/semaph_que" onclick="pageScrollToTop(this)"> semaphore作為condition</a>
         
             
-        </li></ul></li></ul></li></ul></li>
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> socket </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> Jekyll </a><ul>
@@ -1276,13 +1300,30 @@
 2
 3
 4
+5
+6
+7
+8
+9
+10
+11
 </pre></td><td class="code"><pre>  <span class="c1">// char指標陣列</span>
+<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="kt">char</span><span class="o">*</span> <span class="n">arr</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
   <span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="s">"test"</span><span class="p">;</span>
   <span class="n">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="s">"/123"</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr[0] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr[1] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arr[0] = test
+arr[1] = /123
+</code></pre></div></div>
 <h2 id="const-string-to-char指標">const string to char指標</h2>
 
 <ul>
@@ -1305,6 +1346,44 @@
 </figure>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>s = 被討厭的勇氣
+</code></pre></div></div>
+
+<h2 id="char-to-string">char* to string</h2>
+<ul>
+  <li><a href="/pages/c/stl/string/#字串連接">字串連接</a></li>
+</ul>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 有const char*</span>
+  <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">c_s1</span> <span class="o">=</span> <span class="s">"Hello world!"</span><span class="p">;</span>
+  <span class="c1">// 沒const char*</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">c_s2</span> <span class="o">=</span> <span class="s">" Hi! Mary!"</span><span class="p">;</span>
+  <span class="c1">// 把其中一個char*變成string，就可以套用operator+= (const char* s)</span>
+  <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="n">string</span><span class="p">(</span><span class="n">c_s1</span><span class="p">)</span> <span class="o">+</span> <span class="n">c_s2</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"s1 = "</span> <span class="o">&lt;&lt;</span> <span class="n">s1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>s1 = Hello world! Hi! Mary!
 </code></pre></div></div>
 
 </section>
@@ -1497,7 +1576,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-06 09:23:53 +0800"
+        "time": "2025-01-13 14:51:40 +0800"
     },
     "basePath": "",
     "book": {
