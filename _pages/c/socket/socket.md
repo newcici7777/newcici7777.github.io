@@ -141,7 +141,7 @@ int main(int argc, char *argv[]) {
     cout << "請輸入 ./client_test ip port" << endl;
     return -1;
   }
-  // 建立socket
+  // 建立socket，失敗傳回-1
   int socket_fd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
   if (socket_fd == -1) {
     perror("socket");
@@ -173,18 +173,243 @@ int main(int argc, char *argv[]) {
   // send data給伺服器
   char buffer[1024];
   for (int i = 0; i < 3; i++) {
+    // 宣告send()與recv()的傳回值
     int iret;
+    // 清空buffer
     memset(buffer, 0, sizeof(buffer));
     // sprintf 格式化輸出到 buffer 裡。
     sprintf(buffer, "data %d", i + 1);
-    // send
-    if ((iret = send(sockfd, buffer, strlen(buffer), 0)) <= 0) {
+    // send buffer to server
+    if ((iret = send(socket_fd, buffer, strlen(buffer), 0)) <= 0) {
       perror("send");
       break;
     }
-    cout << "buffer = " << buffer << endl;
+    cout << "傳送給伺服器 = " << buffer << endl;
+    // 清空buffer
+    memset(buffer, 0, sizeof(buffer));
+    // 收伺服器的回應
+    if ((iret = recv(socket_fd, buffer, sizeof(buffer), 0)) <= 0) {
+      cout << "iret = " << iret << endl;
+      break;
+    }
+    cout << "伺服器的回應 = " << buffer << endl;
+    //暫停1秒
+    sleep(1);
   }
   close(socket_fd);
+  return 0;
+}
+{% endhighlight %}
+
+## server
+
+### systemctl
+systemctl指令是對服務進行管理
+
+語法
+```
+$ sudo systemctl 操作 服務名
+```
+
+以下為開啟服務，停止服務，重啟服務，查看服務狀態，檢查是否啟動
+```
+$ sudo systemctl start 服務名
+$ sudo systemctl stop 服務名
+$ sudo systemctl restart 服務名
+$ sudo systemctl status 服務名
+$ sudo systemctl is-active 服務名
+```
+
+Linux重新開機後會自動啟動服務
+```
+$ sudo systemctl enable 服務名
+```
+
+Linux重新開機後會關閉自動啟動服務
+```
+$ sudo systemctl disable 服務名
+```
+
+查看是否為開始自動啟動服務
+```
+$ sudo systemctl is-enabled 服務名
+```
+
+### 防火牆
+以下步驟是更新 -> 安裝防火牆 -> 啟動防火牆 -> 查看防火牆狀態為active(啟動)
+```
+$ sudo apt-get update
+$ sudo apt-get install ufw
+$ sudo systemctl start ufw
+$ sudo systemctl status ufw
+● ufw.service
+     Loaded: not-found (Reason: Unit ufw.service not found.)
+     Active: active (exited) since Wed 2025-01-15 09:24:41 CST; 8min ago
+   Main PID: 31048 (code=exited, status=0/SUCCESS)
+        CPU: 501ms
+```
+
+### open listen port
+增加對外開放的port
+```
+$ sudo ufw allow 1234
+$ sudo ufw status
+
+狀態： 啓用
+
+至                          動作          來自
+-                          --          --
+1234                       ALLOW       Anywhere                  
+1234 (v6)                  ALLOW       Anywhere (v6)  
+```
+
+增加iptable
+
+```
+$ sudo iptables -I INPUT -p tcp -m tcp --dport 1234 -j ACCEP
+$ sudo iptables -L -n
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+ACCEPT     6    --  0.0.0.0/0            0.0.0.0/0            tcp dpt:1234
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination     
+```
+
+編譯執行以下的程式碼
+```
+$ vi server_test.cpp
+$ g++ -o server_test server_test.cpp
+$ ./server_test 1234
+```
+
+打開另一個ssh終端機，要確認有0 0.0.0.0:1234
+```
+$ sudo netstat -tunlp
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:1234            0.0.0.0:*               LISTEN      33757/./server_test 
+```
+
+打開另一個ssh終端機，把之前的client的程式碼編譯執行
+```
+$ vi client_test.cpp
+$ g++ -o client_test client_test.cpp
+$ ./client_test 192.168.235.128 1234
+```
+
+執行結果
+
+sever_test
+```
+$ ./server_test 1234
+client已連上
+收到client data = data 1
+send = ok
+收到client data = data 2
+send = ok
+收到client data = data 3
+send = ok
+iret = 0
+```
+
+client_test
+```
+$ ./client_test 192.168.235.128 1234
+傳送給伺服器 = data 1
+伺服器的回應 = ok
+傳送給伺服器 = data 2
+伺服器的回應 = ok
+傳送給伺服器 = data 3
+伺服器的回應 = ok
+```
+
+### server程式碼
+
+建立監聽listen socket()函式 -> 轉換port變成big-endian -> bind()綁定port -> listen()監聽client個數 -> accept()接受client連進來
+
+{% highlight c++ linenos %}
+#include <iostream>
+#include <cstring>
+#include <unistd.h>
+#include <netdb.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+using namespace std;
+int main(int argc, char *argv[]) {
+  if (argc != 2) {
+    cout << "請輸入 ./server_test port" << endl;
+    return -1;
+  }
+  // 建立監聽fd listen_fd，失敗傳回-1
+  int listen_fd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+  if (listen_fd == -1) {
+    perror("socket");
+    return -1;
+  }
+  // sockaddr_in結構
+  struct sockaddr_in server_addr;
+  memset(&server_addr, 0, sizeof(server_addr));
+  server_addr.sin_family = AF_INET;
+  // server port
+  server_addr.sin_port = htons(atoi(argv[1]));
+  // server有多個ip，所有ip都會監聽port
+  server_addr.sin_addr.s_addr = htonl(INADDR_ANY);
+  // 綁定監聽器，失敗傳回-1
+  if (bind(listen_fd, (struct sockaddr*)&server_addr, sizeof(server_addr)) == -1) {
+    perror("bind error");
+    // 關閉監聽器
+    close(listen_fd);
+    return -1;
+  }
+  // 最多只讓3個client同時連server
+  if (listen(listen_fd, 3)) {
+    perror("listen");
+    close(listen_fd);
+    return -1;
+  }
+  // 接受client連接
+  int client_fd = accept(listen_fd, 0, 0);
+  if (client_fd == -1) {
+    perror("accept");
+    close(listen_fd);
+    return -1;
+  }
+  cout << "client已連上" << endl;
+  char buffer[1024];
+  // 一定要用無限循環，等待client連上來
+  while (true) {
+    int iret;
+    memset(buffer, 0, sizeof(buffer));
+    // 如果client沒有send data，recv()會等待
+    // 如果client斷線，recv()傳回0
+    // 大於0代表有收到資料
+    if ((iret = recv(client_fd, buffer, sizeof(buffer), 0)) <= 0) {
+      cout << "iret = " << iret << endl;
+      // 斷線 = 0就跳出無限循環
+      break;
+    }
+    cout << "收到client data = " << buffer << endl;
+    // 建立回應的資料給client
+    strcpy(buffer, "ok");
+    // 傳送回應的資料
+    if ((iret = send(client_fd, buffer,strlen(buffer), 0)) <= 0) {
+      perror("send");
+      break;
+    }
+    cout << "send = " << buffer << endl;
+  }
+  close(listen_fd);
+  close(client_fd);
   return 0;
 }
 {% endhighlight %}
