@@ -7,7 +7,7 @@ Prerequisites:
 - [linux下編譯c++][1]
 
 ## main函式
-main()函式為程式進入點，若沒有要抓參數，可以不寫main的參數，預設參數為空，函式傳回值預設傳0。
+main()函式為程式進入點，若沒有要抓參數，可以不寫main的參數，預設參數為空，函式[傳回值預設傳0][2]。
 
 ### main函式的參數
 
@@ -61,3 +61,4 @@ $ ./main_test aa bb cc dd ee ff
 ```
 
 [1]: {% link _pages/c/compile/makefile.md %}
+[2]: {% link _pages/c/libc/exit.md %}

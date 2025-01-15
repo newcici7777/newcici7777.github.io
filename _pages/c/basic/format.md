@@ -464,10 +464,16 @@ MyClass::MyClass(int var)
 - 指標運算子 * 或 & 後面沒有空格。
 
 {% highlight c++ linenos %}
+x = *p;
+p = &x;
+x = r.y;
+x = r->y;
+{% endhighlight %}
+
+{% highlight c++ linenos %}
 // 沒問題，空格放在星號前。
 char *c;
 const string &str;
-
 // 沒問題，空格放在星號後。
 char* c;
 const string& str;
@@ -483,4 +489,40 @@ int x, y;
 int x, *y;  // 禁止 - 多個變數的宣告式中不得有 & 或 *
 char * c;  // 不好 - 星號前後都有空格
 const string & str;  // 不好 - & 前後都有空格
+{% endhighlight %}
+
+## 類別
+
+存取控制區塊的宣告依次序是 public:、protected:、private:，每次縮排 1 個空格。
+
+- 關鍵詞 public:、protected: 和 private: 要縮排 1 個空格。
+- 這些關鍵詞後不要保留空行
+- public 放在最前面，然後是 protected，最後是 private。
+- 繼承關係，:冒號前後有空白，[建構子初始](#建構子初始)，也是冒號前後有空白
+
+{% highlight c++ linenos %}
+class MyClass : public OtherClass
+{% endhighlight %}
+
+
+{% highlight c++ linenos %}
+class MyClass : public OtherClass {
+ public:      // 注意有 1 空格縮排！
+  MyClass();  // 一般的 2 空格縮排。
+  explicit MyClass(int var);
+  ~MyClass() {}
+
+  void SomeFunction();
+  void SomeFunctionThatDoesNothing() {
+  }
+
+  void set_some_var(int var) { some_var_ = var; }
+  int some_var() const { return some_var_; }
+
+ private:
+  bool SomeInternalFunction();
+
+  int some_var_;
+  int some_other_var_;
+};
 {% endhighlight %}

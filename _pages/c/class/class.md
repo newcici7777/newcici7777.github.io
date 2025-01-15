@@ -25,25 +25,24 @@ private:
 
 ## 成員屬性命名
 
-命名方式使用`m_成員屬性`名字或`成員屬性_`
+命名方式使用`成員屬性_`
 
-- 前綴加上m_
 - 後綴加上底線_
 
 {% highlight c++ linenos %}
 class Student {
 public:
-  string m_name;
+  string name_;
 public:
   Student() {
   }
   void print() {
-    cout << "name: " << m_name << endl;
+    cout << "name: " << name_ << endl;
   }
 };
 int main() {
   Student s;
-  s.m_name = "Bill";
+  s.name_ = "Bill";
   s.print();
   return 0;
 }
@@ -59,20 +58,20 @@ name: Bill
 {% highlight c++ linenos %}
 class Student {
 public:
-  string m_name;
+  string name_;
 public:
   Student() {
   }
   void print() {
-    cout << "name: " << m_name << endl;
+    cout << "name: " << name_ << endl;
   }
 };
 void func1(const Student& s) {
-  cout << s.m_name << endl;
+  cout << s.name_ << endl;
 }
 int main() {
   Student s;
-  s.m_name = "Bill";
+  s.name_ = "Bill";
   func1(s);
   return 0;
 }
@@ -93,7 +92,7 @@ Bill
 {% highlight c++ linenos %}
 class Student {
 public:
-  char m_name[50];
+  char name_[50];
   //函式自動變為內嵌函式
   void print() {
   }
@@ -114,7 +113,7 @@ print()成員函式程式碼在類別之外定義，定義方式如下。
 {% highlight c++ linenos %}
 class Student {
 public:
-  char m_name[50];
+  char name_[50];
   //宣告函式
   void print();
 };

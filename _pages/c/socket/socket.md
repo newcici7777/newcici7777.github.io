@@ -7,6 +7,7 @@ Prerequisites:
 - [File description][1]
 - [errno][2]
 - [main][3]
+- [linux下編譯c++][5]
 
 ## socket()函式
 {% highlight c++ linenos %}
@@ -204,6 +205,9 @@ int main(int argc, char *argv[]) {
 ## server
 
 ### systemctl
+
+以下bash指令都是在ubuntu下進行
+
 systemctl指令是對服務進行管理
 
 語法
@@ -279,7 +283,9 @@ Chain OUTPUT (policy ACCEPT)
 target     prot opt source               destination     
 ```
 
-編譯執行以下的程式碼
+### 編譯執行程式
+
+編譯執行此頁最下面[server程式碼](#server程式碼)
 ```
 $ vi server_test.cpp
 $ g++ -o server_test server_test.cpp
@@ -299,7 +305,17 @@ tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      
 tcp        0      0 0.0.0.0:1234            0.0.0.0:*               LISTEN      33757/./server_test 
 ```
 
-打開另一個ssh終端機，把之前的client的程式碼編譯執行
+打開另一個ssh終端機，檢查是否能連上1234 port
+
+有出現'^]'這個符號，代表可以連上。
+```
+$ telnet 192.168.235.128 1234
+Trying 192.168.235.128...
+Connected to 192.168.235.128.
+Escape character is '^]'.
+```
+
+打開另一個ssh終端機，把上面[client建立socket程式碼](#client建立socket)編譯執行
 ```
 $ vi client_test.cpp
 $ g++ -o client_test client_test.cpp
@@ -414,7 +430,261 @@ int main(int argc, char *argv[]) {
 }
 {% endhighlight %}
 
+---
+
+## 封裝Socket
+
+封裝，物件導向中用來實作資訊隱藏的機制，確保物件的安全。其作法為：隱藏不想讓外界碰觸的成員，只公開接受外界存取的成員。
+
+使用::connect()，::二個冒號是使用Standard Library中的全域函式connect()，並不是自己建立的成員函式connect()。
+
+### client
+{% highlight c++ linenos %}
+#include <iostream>
+#include <cstring>
+#include <unistd.h>
+#include <netdb.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+using namespace std;
+class TCPClient {
+ public:
+  TCPClient() : client_fd_(-1) {}
+  bool connect(const string &ip, const unsigned short port) {
+    if (client_fd_ != -1) return false;
+    ip_ = ip;
+    port_ = port;
+    client_fd_ = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+    if (client_fd_ == -1)
+      return false;
+    // server ip轉big-endian
+    struct hostent* h;
+    if ((h = gethostbyname(ip_.c_str())) == nullptr) {
+      cout << "gethostbyname() fail." << endl;
+      // 關閉socket
+      ::close(client_fd_);
+      return -1;
+    }
+    // sockaddr_in結構
+    struct sockaddr_in server_addr;
+    memset(&server_addr, 0, sizeof(server_addr));
+    server_addr.sin_family = AF_INET;
+    // server ip
+    memcpy(&server_addr.sin_addr, h->h_addr, h->h_length);
+    // server port
+    server_addr.sin_port = htons(port_);
+    // connect伺服器，傳回值為0代表連線成功，不是0代表連線失敗
+    if (::connect(client_fd_, (struct sockaddr*)&server_addr, sizeof(server_addr)) != 0) {
+      perror("connect");
+      // 關閉socket
+      ::close(client_fd_);
+      return false;
+    }
+    return true;
+  }
+  bool send(const string &buffer) {
+    if (client_fd_ == -1) return false;
+    if ((::send(client_fd_, buffer.data(), buffer.size(), 0)) <= 0)
+      return false;
+    return true;
+  }
+  bool recv(string &buffer, const size_t maxlen) {
+    buffer.clear();
+    buffer.resize(maxlen);
+    int iret = ::recv(client_fd_, &buffer[0], buffer.size(), 0);
+    if (iret <= 0) {
+      buffer.clear();
+      return false;
+    }
+    buffer.resize(iret);
+    return true;
+  }
+  bool close() {
+    if (client_fd_ == -1) return false;
+    ::close(client_fd_);
+    client_fd_ = -1;
+    return true;
+  }
+  ~TCPClient() {
+    close();
+  }
+ private:
+  int client_fd_;
+  string ip_;
+  unsigned short port_;
+};
+int main(int argc, char *argv[]) {
+  if (argc != 3) {
+    cout << "請輸入 ./client_test ip port" << endl;
+    return -1;
+  }
+  // 建立socket
+  TCPClient tcp_client;
+  if (tcp_client.connect(argv[1], atoi(argv[2])) == false) {
+    perror("socket");
+    return -1;
+  }
+  // send data給伺服器
+  string buffer;
+  for (int i = 0; i < 3; i++) {
+    buffer = "data " + to_string(i);
+    // send buffer to server
+    if (tcp_client.send(buffer) == false) {
+      perror("send");
+      break;
+    }
+    cout << "傳送給伺服器 = " << buffer << endl;
+    // 收伺服器的回應
+    if (tcp_client.recv(buffer, 1024) == false) {
+      perror("rev");
+      break;
+    }
+    cout << "伺服器的回應 = " << buffer << endl;
+    //暫停1秒
+    sleep(1);
+  }
+  return 0;
+}
+{% endhighlight %}
+
+### server
+{% highlight c++ linenos %}
+#include <iostream>
+#include <cstring>
+#include <unistd.h>
+#include <netdb.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+using namespace std;
+class TCPServer {
+ public:
+  TCPServer() : listen_fd_(-1), client_fd_(-1) {}
+  bool init(const unsigned short port) {
+    listen_fd_ = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+    if (listen_fd_ == -1) return false;
+    port_ = port;
+    // sockaddr_in結構
+    struct sockaddr_in server_addr;
+    memset(&server_addr, 0, sizeof(server_addr));
+    server_addr.sin_family = AF_INET;
+    // server port
+    server_addr.sin_port = htons(port_);
+    // server有多個ip，所有ip都會監聽port
+    server_addr.sin_addr.s_addr = htonl(INADDR_ANY);
+    // 綁定監聽器
+    if (::bind(listen_fd_, (struct sockaddr*)&server_addr, sizeof(server_addr)) == -1) {
+      // 關閉監聽器
+      close(listen_fd_);
+      listen_fd_ = -1;
+      return false;
+    }
+    // 最多只讓3個client同時連server
+    if (listen(listen_fd_, 3)) {
+      close(listen_fd_);
+      listen_fd_ = -1;
+      return false;
+    }
+    return true;
+  }
+  bool accept() {
+    // client的ip結構
+    struct sockaddr_in client_addr;
+    socklen_t addr_len = sizeof(client_addr);
+    // 接受client的連線
+    client_fd_ = ::accept(listen_fd_, (struct sockaddr*)&client_addr, &addr_len);
+    if (client_fd_ == -1) return false;
+    // 取得client的ip
+    client_ip_ = inet_ntoa(client_addr.sin_addr);
+    return true;
+  }
+  const string& getClientIp() const {
+    return client_ip_;
+  }
+  bool send(const string &buffer) {
+    if (client_fd_ == -1) return false;
+    if ((::send(client_fd_, buffer.data(), buffer.size(), 0)) <= 0)
+      return false;
+    return true;
+  }
+  bool recv(string &buffer, const size_t maxlen) {
+    buffer.clear();
+    buffer.resize(maxlen);
+    int iret = ::recv(client_fd_, &buffer[0], buffer.size(), 0);
+    
+    if (iret <= 0) {
+      cout << "iret = " << iret << endl;
+      buffer.clear();
+      return false;
+    }
+    buffer.resize(iret);
+    return true;
+  }
+  bool closeListen() {
+    if (listen_fd_ == -1) return false;
+    ::close(listen_fd_);
+    listen_fd_ = -1;
+    return true;
+  }
+  bool closeClient() {
+    if (client_fd_ == -1) return false;
+    ::close(client_fd_);
+    client_fd_ = -1;
+    return true;
+  }
+  ~TCPServer() {
+    closeListen();
+    closeClient();
+  }
+ private:
+  int listen_fd_;
+  int client_fd_;
+  string client_ip_;
+  unsigned short port_;
+};
+int main(int argc, char *argv[]) {
+  if (argc != 2) {
+    cout << "請輸入 ./server_test port" << endl;
+    return -1;
+  }
+  // 建立監聽fd listen_fd
+  TCPServer tcpServer;
+  if (tcpServer.init(atoi(argv[1])) == false) {
+    perror("init server");
+    return -1;
+  }
+  // 接受client連接
+  if (tcpServer.accept() == false) {
+    perror("accept");
+    return -1;
+  }
+  cout << "client已連上" << endl;
+  string buffer;
+  while (true) {
+    // 如果client沒有send data，recv()會等待
+    // 收到0，代表斷線
+    if (tcpServer.recv(buffer, 1024) == false) {
+      perror("recv()");
+      break;
+    }
+    cout << "收到client data = " << buffer << endl;
+    // 建立回應的資料給client
+    buffer = "ok";
+    // 傳送回應的資料
+    if (tcpServer.send(buffer) == false) {
+      perror("send");
+      break;
+    }
+    cout << "send = " << buffer << endl;
+  }
+  return 0;
+}
+{% endhighlight %}
+
+
 [1]: {% link _pages/c/file/file_desc.md %}#fd
 [2]: {% link _pages/c/libc/errno.md %}
 [3]: {% link _pages/c/basic/main.md %}
 [4]: {% link _pages/c/basic/include.md %}
+[5]: {% link _pages/c/compile/makefile.md %}

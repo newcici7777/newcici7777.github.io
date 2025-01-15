@@ -1304,10 +1304,9 @@
 
 <h2 id="成員屬性命名">成員屬性命名</h2>
 
-<p>命名方式使用<code class="language-plaintext highlighter-rouge">m_成員屬性</code>名字或<code class="language-plaintext highlighter-rouge">成員屬性_</code></p>
+<p>命名方式使用<code class="language-plaintext highlighter-rouge">成員屬性_</code></p>
 
 <ul>
-  <li>前綴加上m_</li>
   <li>後綴加上底線_</li>
 </ul>
 
@@ -1330,17 +1329,17 @@
 16
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-  <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">name_</span><span class="p">;</span>
 <span class="nl">public:</span>
   <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
   <span class="p">}</span>
   <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">name_</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">Student</span> <span class="n">s</span><span class="p">;</span>
-  <span class="n">s</span><span class="p">.</span><span class="n">m_name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">name_</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
   <span class="n">s</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
@@ -1376,20 +1375,20 @@
 19
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-  <span class="n">string</span> <span class="n">m_name</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">name_</span><span class="p">;</span>
 <span class="nl">public:</span>
   <span class="n">Student</span><span class="p">()</span> <span class="p">{</span>
   <span class="p">}</span>
   <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"name: "</span> <span class="o">&lt;&lt;</span> <span class="n">name_</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">void</span> <span class="n">func1</span><span class="p">(</span><span class="k">const</span> <span class="n">Student</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">s</span><span class="p">.</span><span class="n">m_name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">s</span><span class="p">.</span><span class="n">name_</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">Student</span> <span class="n">s</span><span class="p">;</span>
-  <span class="n">s</span><span class="p">.</span><span class="n">m_name</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">name_</span> <span class="o">=</span> <span class="s">"Bill"</span><span class="p">;</span>
   <span class="n">func1</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
@@ -1419,7 +1418,7 @@
 7
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-  <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+  <span class="kt">char</span> <span class="n">name_</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
   <span class="c1">//函式自動變為內嵌函式</span>
   <span class="kt">void</span> <span class="n">print</span><span class="p">()</span> <span class="p">{</span>
   <span class="p">}</span>
@@ -1456,7 +1455,7 @@
 15
 </pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Student</span> <span class="p">{</span>
 <span class="nl">public:</span>
-  <span class="kt">char</span> <span class="n">m_name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+  <span class="kt">char</span> <span class="n">name_</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
   <span class="c1">//宣告函式</span>
   <span class="kt">void</span> <span class="n">print</span><span class="p">();</span>
 <span class="p">};</span>
@@ -1665,7 +1664,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-13 14:53:17 +0800"
+        "time": "2025-01-15 19:20:37 +0800"
     },
     "basePath": "",
     "book": {
