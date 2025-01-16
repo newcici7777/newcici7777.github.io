@@ -16,7 +16,7 @@ Prerequisites:
 語法
 
 ```
-函式回傳資料型態 函式名(資料型態& 別名, ...);
+函式傳回資料型態 函式名(資料型態& 別名, ...);
 
 void callByRef(int& param1, int& param2);
 

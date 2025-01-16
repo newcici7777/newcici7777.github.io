@@ -508,7 +508,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1179,7 +1179,7 @@
     	<a href="/pages/c/libc/signal" onclick="pageScrollToTop(this)"> signal訊號</a>
         
             
-                <ul><li><a href="#kill與killall" onclick="mobilePageScrollToAnchor(this)" >kill與killall</a><ul><li><a href="#kill-指令" onclick="mobilePageScrollToAnchor(this)" >kill 指令</a></li><li><a href="#killall-指令" onclick="mobilePageScrollToAnchor(this)" >killall 指令</a></li><li><a href="#常用的訊號" onclick="mobilePageScrollToAnchor(this)" >常用的訊號:</a></li></ul></li><li><a href="#signal函式" onclick="mobilePageScrollToAnchor(this)" >signal函式</a></li><li><a href="#ctrlc終止進程" onclick="mobilePageScrollToAnchor(this)" >ctrl+c終止進程</a></li><li><a href="#sig_ign忽略訊號" onclick="mobilePageScrollToAnchor(this)" >SIG_IGN忽略訊號</a></li><li><a href="#sig_dfl恢復" onclick="mobilePageScrollToAnchor(this)" >SIG_DFL恢復</a></li><li><a href="#無法收到與略過的訊號" onclick="mobilePageScrollToAnchor(this)" >無法收到與略過的訊號</a></li><li><a href="#alarm函式" onclick="mobilePageScrollToAnchor(this)" >alarm函式</a></li><li><a href="#0訊號" onclick="mobilePageScrollToAnchor(this)" >0訊號</a></li></ul>
+                <ul><li><a href="#kill與killall" onclick="mobilePageScrollToAnchor(this)" >kill與killall</a><ul><li><a href="#kill-指令" onclick="mobilePageScrollToAnchor(this)" >kill 指令</a></li><li><a href="#killall-指令" onclick="mobilePageScrollToAnchor(this)" >killall 指令</a></li><li><a href="#常用的訊號" onclick="mobilePageScrollToAnchor(this)" >常用的訊號:</a></li></ul></li><li><a href="#signal函式" onclick="mobilePageScrollToAnchor(this)" >signal函式</a></li><li><a href="#ctrlc終止程序" onclick="mobilePageScrollToAnchor(this)" >ctrl+c終止程序</a></li><li><a href="#sig_ign忽略訊號" onclick="mobilePageScrollToAnchor(this)" >SIG_IGN忽略訊號</a></li><li><a href="#sig_dfl恢復" onclick="mobilePageScrollToAnchor(this)" >SIG_DFL恢復</a></li><li><a href="#無法收到與略過的訊號" onclick="mobilePageScrollToAnchor(this)" >無法收到與略過的訊號</a></li><li><a href="#alarm函式" onclick="mobilePageScrollToAnchor(this)" >alarm函式</a></li><li><a href="#0訊號" onclick="mobilePageScrollToAnchor(this)" >0訊號</a></li></ul>
 
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1276,37 +1283,35 @@
 
 <p><a href="/pages/c/compile/makefile/">在linux編譯c++</a></p>
 
-<p>kill或killall給進程(process)傳送訊號(signal)，也可以使用c函式庫(libc)的kill()函式給進程(process)傳送訊號(signal)。</p>
+<p>kill或killall給程序(process)傳送訊號(signal)，也可以使用c函式庫(libc)的kill()函式給程序(process)傳送訊號(signal)。</p>
 
 <h2 id="kill與killall">kill與killall</h2>
 <h3 id="kill-指令">kill 指令</h3>
 
 <p>用法：kill [選項] <PID></PID></p>
 
-<p>功能：向特定的進程 ID (PID) 發送訊號（例如，結束進程）。</p>
+<p>功能：向特定的程序 ID (PID) 發送訊號（例如，結束程序）。</p>
 
-<p>作用範圍：只能針對指定的進程 ID。</p>
+<p>作用範圍：只能針對指定的程序 ID。</p>
 
 <p>常見訊號：</p>
 <ul>
-  <li>-9：強制終止進程（SIGKILL）。</li>
-  <li>-15：預設訊號，請求進程正常退出（SIGTERM）。。</li>
+  <li>-9：強制終止程序（SIGKILL）。</li>
+  <li>-15：預設訊號，請求程序正常離開（SIGTERM）。。</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kill -9 1234  # 終止 PID 為 1234 的進程
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kill -9 1234  # 終止 PID 為 1234 的程序
 </code></pre></div></div>
 
 <h3 id="killall-指令">killall 指令</h3>
 
-<p>用法：killall [選項] <進程名稱></進程名稱></p>
+<p>用法：killall [選項] <程序名稱></程序名稱></p>
 
-<p>功能：根據進程名稱來終止所有匹配的進程。</p>
+<p>功能：根據程序名稱來終止所有匹配的程序。</p>
 
-<p>作用範圍：針對同名的所有進程。</p>
+<p>作用範圍：針對同名的所有程序。</p>
 
-<p>訊號選擇：與 kill 相同，也可以使用不同的訊號。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>killall -9 nginx  # 終止所有名為 "nginx" 的進程
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>killall -9 nginx  # 終止所有名為 "nginx" 的程序
 </code></pre></div></div>
 
 <h3 id="常用的訊號">常用的訊號:</h3>
@@ -1321,12 +1326,12 @@
     <tr>
       <td>SIGINT</td>
       <td>2</td>
-      <td>ctrl+c停止進程</td>
+      <td>ctrl+c停止程序</td>
     </tr>
     <tr>
       <td>SIGKILL</td>
       <td>9</td>
-      <td>強制終止進程</td>
+      <td>強制終止程序</td>
     </tr>
     <tr>
       <td>SIGSEGV</td>
@@ -1341,12 +1346,12 @@
     <tr>
       <td>SIGTERM</td>
       <td>15</td>
-      <td>kill後不加任何-編號，請求進程正常退出</td>
+      <td>kill後不加任何-編號，請求程序正常離開</td>
     </tr>
     <tr>
       <td>SIGCHLD</td>
       <td>17</td>
-      <td>子進程結束</td>
+      <td>子程序結束</td>
     </tr>
   </tbody>
 </table>
@@ -1453,9 +1458,9 @@ i = 86
 .
 </pre>
 
-<h2 id="ctrlc終止進程">ctrl+c終止進程</h2>
+<h2 id="ctrlc終止程序">ctrl+c終止程序</h2>
 
-<p>使用ctrl+c可以終止正在執行的進程，本頁範例皆為無限迴圈，需手動ctrl+c終止進程。</p>
+<p>使用ctrl+c可以終止正在執行的程序，本頁範例皆為無限迴圈，需手動ctrl+c終止程序。</p>
 
 <h2 id="sig_ign忽略訊號">SIG_IGN忽略訊號</h2>
 
@@ -1625,17 +1630,17 @@ i = 20
 終止
 </code></pre></div></div>
 
-<p>由執行結果可以發現，第2次發送訊號是正常終止進程。</p>
+<p>由執行結果可以發現，第2次發送訊號是正常終止程序。</p>
 
 <h2 id="無法收到與略過的訊號">無法收到與略過的訊號</h2>
 
 <p>以下三種都是無法收到與略過的訊號
 |訊號名|訊號值|發出訊號原因|
-|SIGKILL|9|強制終止進程|
+|SIGKILL|9|強制終止程序|
 |SIGSEGV|11|操作nullptr指標或超出陣列索引|
-|SIGSTOP|19|終止進程|</p>
+|SIGSTOP|19|終止程序|</p>
 
-<p>以下程式碼即便設定收9的訊號，但執行<code class="language-plaintext highlighter-rouge">killall -9 signal_test</code>，func()函式不會被執行，直接終止進程。</p>
+<p>以下程式碼即便設定收9的訊號，但執行<code class="language-plaintext highlighter-rouge">killall -9 signal_test</code>，func()函式不會被執行，直接終止程序。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1761,7 +1766,7 @@ i = 20
 
 <h2 id="0訊號">0訊號</h2>
 
-<p>檢查進程是否正常運作。</p>
+<p>檢查程序是否正常運作。</p>
 
 <p>對上一個例子使用<code class="language-plaintext highlighter-rouge">./alarm_test</code></p>
 
@@ -1771,7 +1776,7 @@ i = 20
 signal_test：找不到任何行程
 $ killall -0 alarm_test
 </code></pre></div></div>
-<p>若進程沒執行會顯示<code class="language-plaintext highlighter-rouge">找不到任何行程</code></p>
+<p>若程序沒執行會顯示<code class="language-plaintext highlighter-rouge">找不到任何行程</code></p>
 
 </section>
             </div><div class="search-results">
@@ -1963,7 +1968,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

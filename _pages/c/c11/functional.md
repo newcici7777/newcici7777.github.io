@@ -30,7 +30,7 @@ Prerequisites:
 宣告function
 
 ```
-function<函式回傳值類型(函式參數1類型 參數名1,函式參數2類型 參數名2, ...)> 變數名 = 函式名;
+function<函式傳回值類型(函式參數1類型 參數名1,函式參數2類型 參數名2, ...)> 變數名 = 函式名;
 ```
 
 完整程式碼
@@ -125,7 +125,7 @@ int main() {
 
 語法
 <pre>
-function<函式回傳值類型(函式參數1類型,函式參數2類型, ...)> func =  <span class="markline">物件名</span>;
+function<函式傳回值類型(函式參數1類型,函式參數2類型, ...)> func =  <span class="markline">物件名</span>;
 </pre>
 
 {% highlight c++ linenos %}

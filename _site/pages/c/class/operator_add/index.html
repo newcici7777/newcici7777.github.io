@@ -508,7 +508,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -873,7 +873,7 @@
     	<a href="/pages/c/class/operator_add" onclick="pageScrollToTop(this)"> operator+()</a>
         
             
-                <ul><li><a href="#addscore函式" onclick="mobilePageScrollToAnchor(this)" >addScore()函式</a></li><li><a href="#operator函式" onclick="mobilePageScrollToAnchor(this)" >operator+()函式</a></li><li><a href="#student--15" onclick="mobilePageScrollToAnchor(this)" >student + 15</a></li><li><a href="#回傳值型態是物件" onclick="mobilePageScrollToAnchor(this)" >回傳值型態是物件</a></li><li><a href="#operator成員函式" onclick="mobilePageScrollToAnchor(this)" >operator+()成員函式</a></li><li><a href="#operator參數替換" onclick="mobilePageScrollToAnchor(this)" >operator+()參數替換</a></li><li><a href="#operator參數都為物件" onclick="mobilePageScrollToAnchor(this)" >operator+()參數都為物件</a></li><li><a href="#混合使用" onclick="mobilePageScrollToAnchor(this)" >混合使用</a></li></ul>
+                <ul><li><a href="#addscore函式" onclick="mobilePageScrollToAnchor(this)" >addScore()函式</a></li><li><a href="#operator函式" onclick="mobilePageScrollToAnchor(this)" >operator+()函式</a></li><li><a href="#student--15" onclick="mobilePageScrollToAnchor(this)" >student + 15</a></li><li><a href="#傳回值型態是物件" onclick="mobilePageScrollToAnchor(this)" >傳回值型態是物件</a></li><li><a href="#operator成員函式" onclick="mobilePageScrollToAnchor(this)" >operator+()成員函式</a></li><li><a href="#operator參數替換" onclick="mobilePageScrollToAnchor(this)" >operator+()參數替換</a></li><li><a href="#operator參數都為物件" onclick="mobilePageScrollToAnchor(this)" >operator+()參數都為物件</a></li><li><a href="#混合使用" onclick="mobilePageScrollToAnchor(this)" >混合使用</a></li></ul>
 
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1552,11 +1559,11 @@ english = 75
 chinese = 85
 </code></pre></div></div>
 
-<h2 id="回傳值型態是物件">回傳值型態是物件</h2>
+<h2 id="傳回值型態是物件">傳回值型態是物件</h2>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>student = student + 15;
 </code></pre></div></div>
-<p>以上的程式碼，是要把運算的結果回傳給型態是Student的物件，所以必須把回傳值型態改成物件的參考。</p>
+<p>以上的程式碼，是要把運算的結果傳回給型態是Student的物件，所以必須把傳回值型態改成物件的參考。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1564,7 +1571,7 @@ chinese = 85
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>運算的過程也可以是很多數字的相加，不變的是，要把運算的結果回傳給型態是Student的物件。</p>
+<p>運算的過程也可以是很多數字的相加，不變的是，要把運算的結果傳回給型態是Student的物件。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>student = student + 15 + 5 + 5;
 </code></pre></div></div>
@@ -1572,14 +1579,14 @@ chinese = 85
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>student = (((student + 15) + 5) + 5);
 </code></pre></div></div>
-<p>每一個括號就有一個回傳值，+加號左邊的參數是operator+()第一個參數，+加號右邊是operator+()第二個參數。</p>
+<p>每一個括號就有一個傳回值，+加號左邊的參數是operator+()第一個參數，+加號右邊是operator+()第二個參數。</p>
 
 <p>再次分解如下</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>student = operator+(operator+(operator+(student, 15), 5), 5);
 </code></pre></div></div>
 
-<p>程式的回傳值型態改寫如下</p>
+<p>程式的傳回值型態改寫如下</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1711,7 +1718,7 @@ chinese = 85
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>回傳值也改為隱藏的this指標，this指標為物件存放的記憶體位址，使用取值運算子，回傳物件。</p>
+<p>傳回值也改為隱藏的this指標，this指標為物件存放的記憶體位址，使用取值運算子，傳回物件。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>return *this;
 </code></pre></div></div>
@@ -2282,7 +2289,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

@@ -13,7 +13,7 @@ Prerequisites:
   memcpy(dest + strlen(dest), src, strlen(src) + 1);
 {% endhighlight %}
 
-假設dest字串為\"Hello\0\"，strlen(dest)回傳5，不包含\'\0\'。
+假設dest字串為\"Hello\0\"，strlen(dest)傳回5，不包含\'\0\'。
 dest + 5的意思是，指標往右移動5格。
 
 |dest字元|H|e|l|l|o|\0|

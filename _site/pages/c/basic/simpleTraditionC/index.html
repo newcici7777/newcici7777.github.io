@@ -127,7 +127,7 @@
     	<a href="/pages/c/basic/simpleTraditionC" onclick="pageScrollToTop(this)"> 台陸指標相關名詞差異</a>
         
             
-                <ul><li><a href="#文件相關" onclick="mobilePageScrollToAnchor(this)" >文件相關</a></li><li><a href="#資料型態相關" onclick="mobilePageScrollToAnchor(this)" >資料型態相關</a></li><li><a href="#運算式相關" onclick="mobilePageScrollToAnchor(this)" >運算式相關</a></li><li><a href="#變數相關" onclick="mobilePageScrollToAnchor(this)" >變數相關</a></li><li><a href="#陣列相關" onclick="mobilePageScrollToAnchor(this)" >陣列相關</a></li><li><a href="#函式相關" onclick="mobilePageScrollToAnchor(this)" >函式相關</a></li><li><a href="#指標相關" onclick="mobilePageScrollToAnchor(this)" >指標相關</a></li><li><a href="#記憶體相關" onclick="mobilePageScrollToAnchor(this)" >記憶體相關</a></li><li><a href="#資料結構相關" onclick="mobilePageScrollToAnchor(this)" >資料結構相關</a></li><li><a href="#物件相關" onclick="mobilePageScrollToAnchor(this)" >物件相關</a></li><li><a href="#process相關" onclick="mobilePageScrollToAnchor(this)" >process相關</a></li></ul>
+                <ul><li><a href="#文件相關" onclick="mobilePageScrollToAnchor(this)" >文件相關</a></li><li><a href="#資料型態相關" onclick="mobilePageScrollToAnchor(this)" >資料型態相關</a></li><li><a href="#運算式相關" onclick="mobilePageScrollToAnchor(this)" >運算式相關</a></li><li><a href="#變數相關" onclick="mobilePageScrollToAnchor(this)" >變數相關</a></li><li><a href="#陣列相關" onclick="mobilePageScrollToAnchor(this)" >陣列相關</a></li><li><a href="#函式相關" onclick="mobilePageScrollToAnchor(this)" >函式相關</a></li><li><a href="#指標相關" onclick="mobilePageScrollToAnchor(this)" >指標相關</a></li><li><a href="#記憶體相關" onclick="mobilePageScrollToAnchor(this)" >記憶體相關</a></li><li><a href="#資料結構相關" onclick="mobilePageScrollToAnchor(this)" >資料結構相關</a></li><li><a href="#物件相關" onclick="mobilePageScrollToAnchor(this)" >物件相關</a></li><li><a href="#process相關" onclick="mobilePageScrollToAnchor(this)" >process相關</a></li><li><a href="#網路相關" onclick="mobilePageScrollToAnchor(this)" >網路相關</a></li></ul>
 
             
         </li>
@@ -511,7 +511,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1591,7 +1598,7 @@
     <tr>
       <td style="text-align: center">return</td>
       <td style="text-align: center">函式傳回值</td>
-      <td style="text-align: center">函數返回值</td>
+      <td style="text-align: center">函數回傳值</td>
     </tr>
   </tbody>
 </table>
@@ -1847,9 +1854,9 @@
       <td>大陸</td>
     </tr>
     <tr>
-      <td>process id</td>
-      <td>程序 id</td>
-      <td>行程(進程) id</td>
+      <td>process</td>
+      <td>程序</td>
+      <td>進程</td>
     </tr>
     <tr>
       <td>signal</td>
@@ -1860,6 +1867,63 @@
       <td>command</td>
       <td>指令</td>
       <td>命令</td>
+    </tr>
+    <tr>
+      <td>fork</td>
+      <td>複製程序</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>foreground</td>
+      <td>前景</td>
+      <td>前台</td>
+    </tr>
+    <tr>
+      <td>background</td>
+      <td>背景</td>
+      <td>後台</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>多工</td>
+      <td>多進程</td>
+    </tr>
+    <tr>
+      <td>kernel</td>
+      <td>核心</td>
+      <td>內核</td>
+    </tr>
+    <tr>
+      <td>exec</td>
+      <td>離開</td>
+      <td>退出</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="網路相關">網路相關</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>英文</td>
+      <td>台灣</td>
+      <td>大陸</td>
+    </tr>
+    <tr>
+      <td>client</td>
+      <td>用戶端</td>
+      <td>客戶端</td>
+    </tr>
+    <tr>
+      <td>Data packet</td>
+      <td>封包</td>
+      <td>報文</td>
+    </tr>
+    <tr>
+      <td>Network</td>
+      <td>網路</td>
+      <td>網絡</td>
     </tr>
   </tbody>
 </table>
@@ -2053,7 +2117,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

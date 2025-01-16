@@ -508,7 +508,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1362,7 +1369,7 @@
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">func1</span><span class="p">(</span><span class="err">士兵代號</span><span class="p">,</span><span class="err">士兵子彈數</span><span class="p">,</span><span class="err">前面的人的子彈數</span><span class="p">)</span> <span class="p">{</span>
 	<span class="c1">//判斷前面的士兵是否為最後一個人</span>
 	<span class="c1">//若前面的士兵為最後一個人</span>
-	<span class="k">if</span><span class="p">(</span><span class="err">士兵代號</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="err">回傳全部子彈數給上一個人</span>
+	<span class="k">if</span><span class="p">(</span><span class="err">士兵代號</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="err">傳回全部子彈數給上一個人</span>
 	<span class="k">return</span> <span class="n">func1</span><span class="p">(</span><span class="err">告訴下一個士兵</span><span class="p">,</span> <span class="err">下一個士兵子彈數</span><span class="p">,</span> <span class="err">前面的人的子彈數</span> <span class="o">+</span> <span class="err">自已的子彈數</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -1695,7 +1702,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

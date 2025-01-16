@@ -44,7 +44,7 @@ socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
 ## big-endian
 網路傳輸以big-endian方式傳輸。
 
-有些電腦是以little-endian方式進行記憶體儲存，但在網路傳輸，一律轉成big-Endian。
+電腦是以little-endian方式進行記憶體儲存，但在網路傳輸，一律轉成big-Endian。
 
 host，主機，伺服器提供網站服務，此時這個伺服器是主機。
 
@@ -123,9 +123,14 @@ memcpy(&sockaddr_in.sin_addr,h->h_addr,h->h_length);
 {% endhighlight %}
 
 ## client建立socket
-建立socket流程如下
 
-socket()函式 -> 轉換ip與port變成big-endian -> connect() -> send()
+建立socket流程如下:
+
+socket()函式 -> 轉換ip與port變成big-endian -> connect() 
+
+傳輸流程如下:
+
+send()傳送資料 -> recv()接收資料
 
 完整程式碼
 {% highlight c++ linenos %}
@@ -350,7 +355,17 @@ $ ./client_test 192.168.235.128 1234
 
 ### server程式碼
 
-建立監聽listen socket()函式 -> 轉換port變成big-endian -> bind()綁定port -> listen()監聽client個數 -> accept()接受client連進來
+建立監聽socket與接受clinet連線的流程:
+
+建立監聽listen socket()函式 -> 轉換port變成big-endian -> bind()綁定ip與port -> listen()開始監聽 -> accept()接受client連線，傳回client socket
+
+傳輸流程如下:
+
+send()傳送資料 -> recv()接收資料
+
+監聽socket與client socket的區別:
+- 監聽listen socket只能建立連線
+- client的socket可以與用戶端傳送與接收資料
 
 {% highlight c++ linenos %}
 #include <iostream>
@@ -408,7 +423,9 @@ int main(int argc, char *argv[]) {
     memset(buffer, 0, sizeof(buffer));
     // 如果client沒有send data，recv()會等待
     // 如果client斷線，recv()傳回0
-    // 大於0代表有收到資料
+    // iret = -1 失敗
+    // iret = 0 socket斷線
+    // iret > 0 收到資料    
     if ((iret = recv(client_fd, buffer, sizeof(buffer), 0)) <= 0) {
       cout << "iret = " << iret << endl;
       // 斷線 = 0就跳出無限循環
@@ -434,9 +451,19 @@ int main(int argc, char *argv[]) {
 
 ## 封裝Socket
 
+Prerequisites:
+- [使用陣列索引取得記憶體位址][6]
+- [data()取得記憶體位址][7]
+- [cstring與string連結][8]
+- [resize()][9]
+- [string size][10]
+- [string參數][11]
+
 封裝，物件導向中用來實作資訊隱藏的機制，確保物件的安全。其作法為：隱藏不想讓外界碰觸的成員，只公開接受外界存取的成員。
 
 使用::connect()，::二個冒號是使用Standard Library中的全域函式connect()，並不是自己建立的成員函式connect()。
+
+`send(const string &buffer)`，參數使用const string是因為既可支援string，也可支援const char\*
 
 ### client
 {% highlight c++ linenos %}
@@ -450,21 +477,27 @@ int main(int argc, char *argv[]) {
 using namespace std;
 class TCPClient {
  public:
+  // 建構子，初始化client_fd，-1代表沒有連線
   TCPClient() : client_fd_(-1) {}
   bool connect(const string &ip, const unsigned short port) {
+    // client_fd若已連線，就不用再連，直接返回
     if (client_fd_ != -1) return false;
     ip_ = ip;
     port_ = port;
     client_fd_ = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+    // socket失敗傳回-1
     if (client_fd_ == -1)
       return false;
     // server ip轉big-endian
     struct hostent* h;
+    // gethostbyname需要cstring，所以要把string轉成cstring
     if ((h = gethostbyname(ip_.c_str())) == nullptr) {
       cout << "gethostbyname() fail." << endl;
       // 關閉socket
       ::close(client_fd_);
-      return -1;
+      // 失敗把client_fd還原成初始化-1
+      client_fd_ = -1;
+      return false;
     }
     // sockaddr_in結構
     struct sockaddr_in server_addr;
@@ -476,31 +509,52 @@ class TCPClient {
     server_addr.sin_port = htons(port_);
     // connect伺服器，傳回值為0代表連線成功，不是0代表連線失敗
     if (::connect(client_fd_, (struct sockaddr*)&server_addr, sizeof(server_addr)) != 0) {
-      perror("connect");
       // 關閉socket
       ::close(client_fd_);
+      // 失敗把client_fd還原成初始化-1
+      client_fd_ = -1;
       return false;
     }
     return true;
   }
+  // 參數使用const string是因為既可支援string，也可支援const char*
   bool send(const string &buffer) {
+    // client_fd若已斷線，直接返回
     if (client_fd_ == -1) return false;
+    // send()第2個參數填記憶體位址，第3個參數填大小
     if ((::send(client_fd_, buffer.data(), buffer.size(), 0)) <= 0)
       return false;
     return true;
   }
+  // 第一個參數要修改buffer的內容，所以不加const
   bool recv(string &buffer, const size_t maxlen) {
+    // 清空string
     buffer.clear();
+    // 分配記憶體大小
     buffer.resize(maxlen);
+    // 收到的資料放在buffer的記憶體空間
+    // 操作到string的記憶體位址，有對string物件進行讀取與寫入
+    // 第2個參數填不是const的記憶體位址，第3個參數填大小
+    // &buffer[0]取得位址，傳回值不是const
+    // buffer.data()傳回值是const，所以不用
+    // recv()傳回值是收到的資料大小
     int iret = ::recv(client_fd_, &buffer[0], buffer.size(), 0);
+    // iret = -1 失敗
+    // iret = 0 socket斷線
+    // iret > 0 收到資料
     if (iret <= 0) {
+      // 失敗時把buffer清空，否則buffer大小一直維持1024
       buffer.clear();
       return false;
     }
+    // 如果有操作到string的記憶體位址，string的自動擴展空間會失效
+    // 需要自己重設string大小
+    // 從1024大小，設為真正收到資料的大小
     buffer.resize(iret);
     return true;
   }
   bool close() {
+    // client_fd若已斷線，直接返回
     if (client_fd_ == -1) return false;
     ::close(client_fd_);
     client_fd_ = -1;
@@ -535,7 +589,7 @@ int main(int argc, char *argv[]) {
       break;
     }
     cout << "傳送給伺服器 = " << buffer << endl;
-    // 收伺服器的回應
+    // 收伺服器的回應，若伺服器沒回應，就會一直停在這裡等待回應，不會往下執行
     if (tcp_client.recv(buffer, 1024) == false) {
       perror("rev");
       break;
@@ -560,8 +614,12 @@ int main(int argc, char *argv[]) {
 using namespace std;
 class TCPServer {
  public:
+  // 建構子
+  // 監聽listen_fd，-1代表未初始化
+  // client_fd，-1代表未連線
   TCPServer() : listen_fd_(-1), client_fd_(-1) {}
-  bool init(const unsigned short port) {
+  // 初始化監聽的socket
+  bool initListen(const unsigned short port) {
     listen_fd_ = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
     if (listen_fd_ == -1) return false;
     port_ = port;
@@ -573,13 +631,14 @@ class TCPServer {
     server_addr.sin_port = htons(port_);
     // server有多個ip，所有ip都會監聽port
     server_addr.sin_addr.s_addr = htonl(INADDR_ANY);
-    // 綁定監聽器
+    // socket綁定ip與port
     if (::bind(listen_fd_, (struct sockaddr*)&server_addr, sizeof(server_addr)) == -1) {
       // 關閉監聽器
       close(listen_fd_);
       listen_fd_ = -1;
       return false;
     }
+    // 把socket設為監聽的狀態
     // 最多只讓3個client同時連server
     if (listen(listen_fd_, 3)) {
       close(listen_fd_);
@@ -593,9 +652,12 @@ class TCPServer {
     struct sockaddr_in client_addr;
     socklen_t addr_len = sizeof(client_addr);
     // 接受client的連線
+    // 若要得到client的ip，第二個參數填sockaddr_in結構，第3個參數填結構大小
+    // 若不想得到client ip，第2與第3參數填0就好
     client_fd_ = ::accept(listen_fd_, (struct sockaddr*)&client_addr, &addr_len);
     if (client_fd_ == -1) return false;
     // 取得client的ip
+    // 透過inet_ntoa把big-endian轉成little-endian
     client_ip_ = inet_ntoa(client_addr.sin_addr);
     return true;
   }
@@ -603,37 +665,61 @@ class TCPServer {
     return client_ip_;
   }
   bool send(const string &buffer) {
+    // 如果client fd是-1就沒必要繼續後面的動作，直接返回
     if (client_fd_ == -1) return false;
+    // send()第2個參數填記憶體位址，第3個參數填大小
     if ((::send(client_fd_, buffer.data(), buffer.size(), 0)) <= 0)
       return false;
     return true;
   }
+  // 第一個參數要修改buffer的內容，所以不加const
   bool recv(string &buffer, const size_t maxlen) {
+    // 清空string
     buffer.clear();
+    // 分配記憶體大小
     buffer.resize(maxlen);
+    // 收到的資料放在buffer的記憶體空間
+    // 操作到string的記憶體位址，有對string物件進行讀取與寫入
+    // 第2個參數填不是const的記憶體位址，第3個參數填大小
+    // &buffer[0]取得位址，傳回值不是const
+    // buffer.data()傳回值是const，所以不用
+    // recv()傳回值是收到的資料大小
     int iret = ::recv(client_fd_, &buffer[0], buffer.size(), 0);
-    
+    // iret = -1 失敗
+    // iret = 0 socket斷線
+    // iret > 0 收到資料
     if (iret <= 0) {
       cout << "iret = " << iret << endl;
+      // 失敗時把buffer清空，否則buffer大小一直維持1024
       buffer.clear();
       return false;
     }
+    // 如果有操作到string的記憶體位址，string的自動擴展空間會失效
+    // 需要自己重設string大小
+    // 從1024大小，設為真正收到資料的大小
     buffer.resize(iret);
     return true;
   }
+  // 關閉監聽socket
   bool closeListen() {
+    // 若未初始化，直接返回
     if (listen_fd_ == -1) return false;
     ::close(listen_fd_);
+    // 設為未初始化-1
     listen_fd_ = -1;
     return true;
   }
+  // 關閉client socket
   bool closeClient() {
+    // client_fd若已斷線，直接返回
     if (client_fd_ == -1) return false;
     ::close(client_fd_);
+    // 設成未連線-1
     client_fd_ = -1;
     return true;
   }
   ~TCPServer() {
+    // 解構子把二個socket都關掉
     closeListen();
     closeClient();
   }
@@ -650,8 +736,9 @@ int main(int argc, char *argv[]) {
   }
   // 建立監聽fd listen_fd
   TCPServer tcpServer;
-  if (tcpServer.init(atoi(argv[1])) == false) {
-    perror("init server");
+  // 初始化監聽
+  if (tcpServer.initListen(atoi(argv[1])) == false) {
+    perror("initListen");
     return -1;
   }
   // 接受client連接
@@ -659,7 +746,7 @@ int main(int argc, char *argv[]) {
     perror("accept");
     return -1;
   }
-  cout << "client已連上" << endl;
+  cout << "client已連上 = " << tcpServer.getClientIp() << endl;
   string buffer;
   while (true) {
     // 如果client沒有send data，recv()會等待
@@ -688,3 +775,9 @@ int main(int argc, char *argv[]) {
 [3]: {% link _pages/c/basic/main.md %}
 [4]: {% link _pages/c/basic/include.md %}
 [5]: {% link _pages/c/compile/makefile.md %}
+[6]: {% link _pages/c/stl/string.md %}#讀取string位置
+[7]: {% link _pages/c/stl/string.md %}#取得string物件存放字串的記憶體位址
+[8]: {% link _pages/c/string/string_convert.md %}#char-to-string
+[9]: {% link _pages/c/stl/string.md %}#resize
+[10]: {% link _pages/c/stl/string.md%}#取得string物件實際使用大小
+[11]: {% link _pages/c/stl/string.md%}#字串作為函式參數

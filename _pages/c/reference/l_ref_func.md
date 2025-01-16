@@ -65,12 +65,12 @@ int& setX(){
 
 ## 引數作為參考
 
-以下程式碼將main()函式中的x變數傳進setX()的函式，並回傳x變數的匿名參考別名。
+以下程式碼將main()函式中的x變數傳進setX()的函式，並傳回x變數的匿名參考別名。
 
 將x的參考設值99。
 
 {% highlight c++ linenos %}
-//回傳值為參考別名
+//傳回值為參考別名
 //參數r為x的參考別名
 int& setX(int& r){
   return r;
@@ -78,7 +78,7 @@ int& setX(int& r){
 int main() {
   int x = 10;
   cout << "Before x = " << x << endl;
-  //x傳入函式，回傳x的參考
+  //x傳入函式，傳回x的參考
   setX(x) = 99;
   cout << "After x = " << x << endl;
   return 0;

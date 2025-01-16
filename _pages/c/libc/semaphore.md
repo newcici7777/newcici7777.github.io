@@ -9,9 +9,9 @@ Prerequisites:
 - [mutex][1]
 - [condition][2]
 
-共用記憶體沒有mutex，所以使用semaphore來實現加鎖lock/解鎖unlock/等待wait/通知notify，以達到讀取相同記憶體時，搶到鎖的進程process就可以使用這個記憶體，而其它進程process就在門外排隊等待門的鎖打開，當鎖打開，就輪下一個進程process使用記憶體。
+共用記憶體沒有mutex，所以使用semaphore來實現加鎖lock/解鎖unlock/等待wait/通知notify，以達到讀取相同記憶體時，搶到鎖的程序process就可以使用這個記憶體，而其它程序process就在門外排隊等待門的鎖打開，當鎖打開，就輪下一個程序process使用記憶體。
 
-semaphore中文翻譯有太多種，信號量(大陸)，號誌(台灣)，所以用英文代替。
+semaphore中文翻譯有太多種，訊號量(大陸)，號誌(台灣)，所以用英文代替。
 
 ## linux semaphore指令
 
@@ -170,8 +170,8 @@ bool Semaph::post(short value)
 {
   if (semid_==-1) return false;
   struct sembuf sem_b;
-  sem_b.sem_num = 0;     // 信号量编号，0代表第一个信号量。
-  sem_b.sem_op = value;  // V操作的value必须大于0。
+  sem_b.sem_num = 0;
+  sem_b.sem_op = value;
   sem_b.sem_flg = sem_flg_;
   if (semop(semid_, &sem_b, 1) == -1) {
     perror("V semop()");

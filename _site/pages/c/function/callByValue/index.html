@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>函式傳值與回傳值 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>函式傳值與傳回值 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -508,7 +508,7 @@
 	
 	
 	<li class="active">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
                 <ul><li><a href="#函式傳遞值-call-by-value" onclick="mobilePageScrollToAnchor(this)" >函式傳遞值 Call by value</a><ul><li><a href="#解釋1" onclick="mobilePageScrollToAnchor(this)" >解釋1</a></li><li><a href="#解釋2" onclick="mobilePageScrollToAnchor(this)" >解釋2</a></li><li><a href="#解釋3" onclick="mobilePageScrollToAnchor(this)" >解釋3</a></li></ul></li><li><a href="#函式傳回值是值" onclick="mobilePageScrollToAnchor(this)" >函式傳回值是值</a><ul><li><a href="#解釋1-1" onclick="mobilePageScrollToAnchor(this)" >解釋1</a></li><li><a href="#解釋2-1" onclick="mobilePageScrollToAnchor(this)" >解釋2</a></li></ul></li></ul>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1234,6 +1234,13 @@
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
         
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
+        
+            
         </li></ul></li></ul></li>
 	
 	
@@ -1256,7 +1263,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >函式傳值與回傳值</a>
+                            <a href="." >函式傳值與傳回值</a>
                         
                     </h1>
                 </div>
@@ -1269,7 +1276,7 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/function/callByValue">函式傳值與回傳值</h1>
+                        <h1 id="/pages/c/function/callByValue">函式傳值與傳回值</h1>
                     
 
                     <p>Prerequisites:</p>
@@ -1329,7 +1336,7 @@ After x = 10
 <h2 id="函式傳回值是值">函式傳回值是值</h2>
 
 <h3 id="解釋1-1">解釋1</h3>
-<p>以下的程式碼，main()和getValue()都各別有存放回傳值r的記憶體位址，待getValue()的r變數回傳給main()的r變數後，getValue()的r變數的記憶體位址就會被釋放。</p>
+<p>以下的程式碼，main()和getValue()都各別有存放傳回值r的記憶體位址，待getValue()的r變數傳回給main()的r變數後，getValue()的r變數的記憶體位址就會被釋放。</p>
 
 <h3 id="解釋2-1">解釋2</h3>
 
@@ -1554,7 +1561,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

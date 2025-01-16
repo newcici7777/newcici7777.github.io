@@ -45,7 +45,7 @@ class MyArray{
   MyArray(T element) {
   cout << "element : " << element << endl;
   }
-  // 建立成員函式模板printMsg，回傳值為void，參數為模板類型參數T
+  // 建立成員函式模板printMsg，傳回值為void，參數為模板類型參數T
   template <typename T>
   void printMsg(T msg) {
   cout << "msg : " << msg << endl;

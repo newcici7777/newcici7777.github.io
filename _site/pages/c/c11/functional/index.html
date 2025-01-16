@@ -508,7 +508,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1297,7 +1304,7 @@
 
 <p>宣告function</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function&lt;函式回傳值類型(函式參數1類型 參數名1,函式參數2類型 參數名2, ...)&gt; 變數名 = 函式名;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function&lt;函式傳回值類型(函式參數1類型 參數名1,函式參數2類型 參數名2, ...)&gt; 變數名 = 函式名;
 </code></pre></div></div>
 
 <p>完整程式碼</p>
@@ -1438,7 +1445,7 @@ function&lt;void(int, const string&amp;)&gt; func =  <span class="markline">Stud
 
 <p>語法</p>
 <pre>
-function&lt;函式回傳值類型(函式參數1類型,函式參數2類型, ...)&gt; func =  <span class="markline">物件名</span>;
+function&lt;函式傳回值類型(函式參數1類型,函式參數2類型, ...)&gt; func =  <span class="markline">物件名</span>;
 </pre>
 
 <figure class="highlight">
@@ -1803,7 +1810,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

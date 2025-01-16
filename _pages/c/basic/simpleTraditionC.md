@@ -84,7 +84,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |:--:|:--:|:--:|
 |Function|函式|函數|
 |callback|回呼函式|回調函數|
-|return|函式傳回值|函數返回值|
+|return|函式傳回值|函數回傳值|
 
 
 ## 指標相關
@@ -147,6 +147,19 @@ struct|結構|結構體|
 ## process相關
 
 |英文|台灣|大陸|
-|process id|程序 id|行程(進程) id|
+|process|程序|進程|
 |signal|訊號|信號| 
 |command|指令|命令|
+|fork|複製程序||
+|foreground|前景|前台|
+|background|背景|後台|
+||多工|多進程|
+|kernel|核心|內核|
+|exec|離開|退出|
+
+## 網路相關
+
+|英文|台灣|大陸|
+|client|用戶端|客戶端|
+|Data packet|封包|報文|
+|Network|網路|網絡|

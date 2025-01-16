@@ -52,9 +52,9 @@ int main() {
 
 ## 函式傳回值為void*指標
 
-表示可以回傳任何資料型態的指標(位址)，可以轉型成任何資料型態指標。
+表示可以傳回任何資料型態的指標(位址)，可以轉型成任何資料型態指標。
 
-以下為malloc的回傳資料型態void*指標(位址)，void*指標可以轉成任何資料型態指標，參數size_t  __size代表設定空間大小。
+以下為malloc的傳回資料型態void*指標(位址)，void*指標可以轉成任何資料型態指標，參數size_t  __size代表設定空間大小。
 
 {% highlight c++ linenos %}
 void* malloc(size_t __size)
@@ -62,14 +62,14 @@ void* malloc(size_t __size)
 
 使用方式
 
-在heap區段，建立10 byte的記憶體空間，將回傳的位址轉成char資料型態的指標。
+在heap區段，建立10 byte的記憶體空間，將傳回的位址轉成char資料型態的指標。
 
 {% highlight c++ linenos %}
 char *name = (char *)malloc(10);//10byte
 {% endhighlight %}
 
 
-在heap區段，建立1mb的記憶體空間，將回傳的位址轉成int資料型態的指標。
+在heap區段，建立1mb的記憶體空間，將傳回的位址轉成int資料型態的指標。
 
 {% highlight c++ linenos %}
 int *num = (int *)malloc(1 * 1024 * 1024);//1byte*1024 = 1kb ->1kb*1024=1mb
@@ -109,7 +109,7 @@ a
 
 函式的參數為void，代表不接受任何參數。
 
-rand()產生亂數，以下為rand函式的定義，不接受任何參數，回傳int
+rand()產生亂數，以下為rand函式的定義，不接受任何參數，傳回int
 
 {% highlight c++ linenos %}
 int rand (void);

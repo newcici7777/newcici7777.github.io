@@ -511,7 +511,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1487,7 +1494,7 @@
  values儲存的結果陣列
 **/</span>
 <span class="kt">size_t</span> <span class="nf">splitstr</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">splitStr</span><span class="p">,</span> <span class="kt">char</span> <span class="n">values</span><span class="p">[][</span><span class="mi">50</span><span class="p">])</span> <span class="p">{</span>
-  <span class="c1">//若位址為空，回傳0</span>
+  <span class="c1">//若位址為空，傳回0</span>
   <span class="k">if</span><span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">splitStr</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
   <span class="kt">size_t</span> <span class="n">slen</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">splitStr</span><span class="p">);</span><span class="c1">//split符號長度</span>
   <span class="k">if</span><span class="p">(</span><span class="n">slen</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//若符號長度為0，就不用切割</span>
@@ -1520,7 +1527,7 @@
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="kt">char</span> <span class="n">values</span><span class="p">[</span><span class="mi">10</span><span class="p">][</span><span class="mi">50</span><span class="p">];</span>
   <span class="n">memset</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">values</span><span class="p">));</span>
-  <span class="c1">//回傳切割個數</span>
+  <span class="c1">//傳回切割個數</span>
   <span class="kt">size_t</span> <span class="n">count</span> <span class="o">=</span> <span class="n">splitstr</span><span class="p">(</span><span class="s">"aa,bb,cc,dd,ee,ff"</span><span class="p">,</span> <span class="s">","</span><span class="p">,</span> <span class="n">values</span><span class="p">);</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"count = "</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
@@ -1730,7 +1737,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

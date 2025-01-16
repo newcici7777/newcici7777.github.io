@@ -8,7 +8,7 @@ keywords: c++, strcmp
 
 {% highlight c++ linenos %}
 /**
- 字串相等回傳0
+ 字串相等傳回0
  str1字元>str2字元 return 1
  str1字元<str2字元 return -1
  **/
@@ -69,7 +69,7 @@ int mystrncmp(const char* str1,const char* str2,const size_t n) {
     str2++;
     i++;
   }
-  //比較n次仍比較不出來，就回傳0
+  //比較n次仍比較不出來，就傳回0
   return 0;
 }
 int main() {

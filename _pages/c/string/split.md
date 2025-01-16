@@ -45,7 +45,7 @@ Prerequisites:
  values儲存的結果陣列
 **/
 size_t splitstr(const char* str,const char* splitStr, char values[][50]) {
-  //若位址為空，回傳0
+  //若位址為空，傳回0
   if(str == 0 || splitStr == 0) return 0;
   size_t slen = strlen(splitStr);//split符號長度
   if(slen == 0) return 0;//若符號長度為0，就不用切割
@@ -78,7 +78,7 @@ size_t splitstr(const char* str,const char* splitStr, char values[][50]) {
 int main() {
   char values[10][50];
   memset(values, 0, sizeof(values));
-  //回傳切割個數
+  //傳回切割個數
   size_t count = splitstr("aa,bb,cc,dd,ee,ff", ",", values);
   cout << "count = " << count << endl;
   for(int i = 0; i < count; i++) {

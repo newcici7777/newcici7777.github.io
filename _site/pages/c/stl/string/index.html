@@ -508,7 +508,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1826,14 +1833,14 @@ s1 strlen = 6
 
 <p>使用[位置]，可以取得某個位置字元</p>
 
-<p>在 C++ 中，std::string 本質上是一個用於操作字元的容器，內部存儲的字符是一個連續的 char 陣列。</p>
+<p>在 C++ 中，std::string 本質上是一個用於操作字元的容器，內部存儲的字元是一個連續的 char 陣列。</p>
 
 <p>通過 s1[0]，你可以訪問 std::string 中存儲的第一個字元。</p>
 
 <p>&amp;s1[0] 的含義:</p>
 <ul>
   <li>s1[0] 返回的是第一個字元，型別是 char。</li>
-  <li>&amp;s1[0] 取得的是該字符在內存中的地址，因此它的型別是 char*。</li>
+  <li>&amp;s1[0] 取得的是該字元在內存中的地址，因此它的型別是 char*。</li>
 </ul>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char &amp;operator[](size_t n); 
@@ -2276,7 +2283,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

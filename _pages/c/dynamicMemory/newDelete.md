@@ -6,7 +6,7 @@ keywords: c++, new, delete, Dynamic memory allocation
 
 ### new
 
-宣告指標變數，使用new在Heap區段申請記憶體空間，申請成功會回傳記憶體占用的開始位址。
+宣告指標變數，使用new在Heap區段申請記憶體空間，申請成功會傳回記憶體占用的開始位址。
 
 ```
 資料型態* 指標變數 = new 資料型態(初始值);

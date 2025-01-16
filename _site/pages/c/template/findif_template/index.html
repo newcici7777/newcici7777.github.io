@@ -508,7 +508,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1286,11 +1293,11 @@
 
 <h2 id="增加搜尋值與傳回值">增加搜尋值與傳回值</h2>
 
-<p>將foreach模板的程式拿來修改，增加搜尋值T3的模板參數與T1的模板回傳值。</p>
+<p>將foreach模板的程式拿來修改，增加搜尋值T3的模板參數與T1的模板傳回值。</p>
 
 <p>找到欲搜尋的值T3，就返回iterator</p>
 
-<p>找不到就回傳容器最後一個元素的下一個位址。</p>
+<p>找不到就傳回容器最後一個元素的下一個位址。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1312,7 +1319,7 @@
 
 <h2 id="修改callback函式指標模板">修改callback函式指標模板</h2>
 
-<p>增加搜尋值T的模板參數，回傳bool，判斷msg是否與要搜尋的值相同。</p>
+<p>增加搜尋值T的模板參數，傳回bool，判斷msg是否與要搜尋的值相同。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1328,7 +1335,7 @@
 
 <h2 id="修改callback物件函式模板">修改callback物件函式模板</h2>
 
-<p>增加搜尋值T的模板參數，回傳bool，判斷msg是否與要搜尋的值相同。</p>
+<p>增加搜尋值T的模板參數，傳回bool，判斷msg是否與要搜尋的值相同。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1690,7 +1697,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

@@ -508,7 +508,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -574,7 +574,7 @@
     	<a href="/pages/c/function/auto_func" onclick="pageScrollToTop(this)"> auto與函式</a>
         
             
-                <ul><li><a href="#自動推導函式回傳值類型" onclick="mobilePageScrollToAnchor(this)" >自動推導函式回傳值類型</a></li><li><a href="#自動推導函式指標類型" onclick="mobilePageScrollToAnchor(this)" >自動推導函式指標類型</a></li><li><a href="#簡化函式指標" onclick="mobilePageScrollToAnchor(this)" >簡化函式指標</a><ul><li><a href="#未簡化前" onclick="mobilePageScrollToAnchor(this)" >未簡化前</a></li><li><a href="#使用auto簡化函式指標" onclick="mobilePageScrollToAnchor(this)" >使用auto簡化函式指標</a></li><li><a href="#以下程式碼未簡化前" onclick="mobilePageScrollToAnchor(this)" >以下程式碼未簡化前</a></li><li><a href="#使用auto簡化函式指標-1" onclick="mobilePageScrollToAnchor(this)" >使用auto簡化函式指標</a></li></ul></li></ul>
+                <ul><li><a href="#自動推導函式傳回值類型" onclick="mobilePageScrollToAnchor(this)" >自動推導函式傳回值類型</a></li><li><a href="#自動推導函式指標類型" onclick="mobilePageScrollToAnchor(this)" >自動推導函式指標類型</a></li><li><a href="#簡化函式指標" onclick="mobilePageScrollToAnchor(this)" >簡化函式指標</a><ul><li><a href="#未簡化前" onclick="mobilePageScrollToAnchor(this)" >未簡化前</a></li><li><a href="#使用auto簡化函式指標" onclick="mobilePageScrollToAnchor(this)" >使用auto簡化函式指標</a></li><li><a href="#以下程式碼未簡化前" onclick="mobilePageScrollToAnchor(this)" >以下程式碼未簡化前</a></li><li><a href="#使用auto簡化函式指標-1" onclick="mobilePageScrollToAnchor(this)" >使用auto簡化函式指標</a></li></ul></li></ul>
 
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1278,9 +1285,9 @@
 
 <p>auto的中文意思為自動推導類型，使用時不用特別寫準確的類型，編譯器會自動推導。</p>
 
-<h2 id="自動推導函式回傳值類型">自動推導函式回傳值類型</h2>
+<h2 id="自動推導函式傳回值類型">自動推導函式傳回值類型</h2>
 
-<p>注意！這邊的函式名後面有括號()，auto是函式回傳值類型。</p>
+<p>注意！這邊的函式名後面有括號()，auto是函式傳回值類型。</p>
 
 <p>語法</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>auto 變數 = 函式名();
@@ -1298,12 +1305,12 @@ auto var = func();
 8
 9
 10
-</pre></td><td class="code"><pre><span class="c1">//宣告一個函式為func()，回傳值為string類型</span>
+</pre></td><td class="code"><pre><span class="c1">//宣告一個函式為func()，傳回值為string類型</span>
 <span class="n">string</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">return</span> <span class="s">"test"</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-	<span class="c1">//使用函式的回傳值，由auto自動推導函式的回傳的類型string</span>
+	<span class="c1">//使用函式的傳回值，由auto自動推導函式的傳回的類型string</span>
   <span class="k">auto</span> <span class="n">var</span> <span class="o">=</span> <span class="n">func</span><span class="p">();</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"var = "</span> <span class="o">&lt;&lt;</span> <span class="n">var</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
@@ -1384,7 +1391,7 @@ f();
 16
 17
 18
-</pre></td><td class="code"><pre><span class="c1">//定義一個函式名為println，回傳值為int，</span>
+</pre></td><td class="code"><pre><span class="c1">//定義一個函式名為println，傳回值為int，</span>
 <span class="c1">//參數有二個，分別為char指標型別的參數msg1與msg2</span>
 <span class="kt">int</span> <span class="nf">println</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">msg1</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">msg2</span><span class="p">)</span> <span class="p">{</span>
   <span class="n">printf</span><span class="p">(</span><span class="s">"印出msg1:%s</span><span class="se">\n</span><span class="s">msg2:%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">msg1</span><span class="p">,</span><span class="n">msg2</span><span class="p">);</span>
@@ -1392,7 +1399,7 @@ f();
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
 	<span class="c1">//(*funcPtr)宣告函式指標的名稱為funcPtr</span>
-	<span class="c1">//回傳值為int</span>
+	<span class="c1">//傳回值為int</span>
 	<span class="c1">//(char*,char*)代表參數型別</span>
 	<span class="c1">//實作函式指標的函式是println()的函式</span>
 	<span class="c1">//注意= println後面是沒有括號()</span>
@@ -1487,10 +1494,10 @@ msg2:c++
 16
 17
 18
-</pre></td><td class="code"><pre><span class="c1">//定義一個函式指標的類型為FuncPtr，回傳值為void的類型，參數是char指針</span>
+</pre></td><td class="code"><pre><span class="c1">//定義一個函式指標的類型為FuncPtr，傳回值為void的類型，參數是char指針</span>
 <span class="k">typedef</span> <span class="nf">void</span><span class="p">(</span><span class="o">*</span><span class="n">FuncPtr</span><span class="p">)(</span><span class="kt">char</span><span class="o">*</span><span class="p">);</span>
 
-<span class="c1">//參數為FuncPtr類型(回傳值為void的類型，參數是char指針)</span>
+<span class="c1">//參數為FuncPtr類型(傳回值為void的類型，參數是char指針)</span>
 <span class="kt">void</span> <span class="nf">say</span><span class="p">(</span><span class="n">FuncPtr</span> <span class="n">func1</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
   <span class="c1">//呼叫函式指標</span>
   <span class="n">func1</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
@@ -1701,7 +1708,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

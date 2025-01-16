@@ -10,9 +10,9 @@ keywords: c++, operator(),Functor
 
 必須在類別裡面定義
 
-以下回傳值型態與參數可自定義，沒有限制，但函式名必須為`operator()`
+以下傳回值型態與參數可自定義，沒有限制，但函式名必須為`operator()`
 {% highlight c++ linenos %}
-  回傳值型態 operator()(參數) {
+  傳回值型態 operator()(參數) {
     cout << "要做的事" << endl;
   }
 {% endhighlight %}

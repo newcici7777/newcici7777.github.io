@@ -85,8 +85,8 @@ p3 first = 3, second = Jeff
 
 以下是c++14運行的結果
 - 先建立匿名物件，呼叫2個參數建構子
-- 再用拷貝函式，把匿名物件拷貝到回傳值
-- 再用拷貝函式，把回傳值拷貝到p4
+- 再用拷貝函式，把匿名物件拷貝到傳回值
+- 再用拷貝函式，把傳回值拷貝到p4
 
 {% highlight c++ linenos %}
   pair<int,string> p4 = make_pair<int,string>(4, "Ann");

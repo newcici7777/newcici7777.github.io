@@ -10,7 +10,7 @@ Prerequisites:
 
 ## 由小到大排序
 
-回傳true的條件，左邊的值小於右邊的值
+傳回true的條件，左邊的值小於右邊的值
 
 {% highlight c++ linenos %}
 template<typename T>
@@ -21,7 +21,7 @@ bool CompareASC(const T& left, const T& right) {
 
 ## 由大到小排序
 
-回傳true的條件，左邊的值大於右邊的值
+傳回true的條件，左邊的值大於右邊的值
 {% highlight c++ linenos %}
 template<typename T>
 bool CompareDESC(const T& left, const T& right) {

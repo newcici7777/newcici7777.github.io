@@ -511,7 +511,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1287,7 +1294,7 @@
 
 <h3 id="組成name開始標籤與結束標籤">組成name開始標籤與結束標籤</h3>
 
-<p>自已建立<code class="language-plaintext highlighter-rouge">&lt;name&gt;</code>字串，並在xml中尋找是否有相同的字串，函式會回傳<code class="language-plaintext highlighter-rouge">&lt;name&gt;</code>起始位址。</p>
+<p>自已建立<code class="language-plaintext highlighter-rouge">&lt;name&gt;</code>字串，並在xml中尋找是否有相同的字串，函式會傳回<code class="language-plaintext highlighter-rouge">&lt;name&gt;</code>起始位址。</p>
 
 <table>
   <tbody>
@@ -1301,7 +1308,7 @@
       <td><code class="language-plaintext highlighter-rouge">&gt;</code></td>
     </tr>
     <tr>
-      <td>回傳位址</td>
+      <td>傳回位址</td>
       <td>^</td>
       <td> </td>
       <td> </td>
@@ -1312,7 +1319,7 @@
   </tbody>
 </table>
 
-<p>自已建立<code class="language-plaintext highlighter-rouge">&lt;/name&gt;</code>字串，並在xml中尋找是否有相同的字串，函式會回傳<code class="language-plaintext highlighter-rouge">&lt;/name&gt;</code>起始位址。</p>
+<p>自已建立<code class="language-plaintext highlighter-rouge">&lt;/name&gt;</code>字串，並在xml中尋找是否有相同的字串，函式會傳回<code class="language-plaintext highlighter-rouge">&lt;/name&gt;</code>起始位址。</p>
 
 <table>
   <tbody>
@@ -1337,7 +1344,7 @@
       <td><code class="language-plaintext highlighter-rouge">&gt;</code></td>
     </tr>
     <tr>
-      <td>回傳位址</td>
+      <td>傳回位址</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -1699,7 +1706,7 @@
   <span class="n">memset</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">values</span><span class="p">));</span>
   
   <span class="kt">bool</span> <span class="n">res</span> <span class="o">=</span> <span class="n">xmlSearch</span><span class="p">(</span><span class="s">"&lt;id&gt;1&lt;/id&gt;&lt;name&gt;Cici&lt;/name&gt;&lt;age&gt;10&lt;/age&gt;"</span><span class="p">,</span> <span class="s">"name"</span><span class="p">,</span> <span class="n">values</span><span class="p">);</span>
-  <span class="c1">//如果有找到會回傳true</span>
+  <span class="c1">//如果有找到會傳回true</span>
   <span class="k">if</span><span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"value = "</span> <span class="o">&lt;&lt;</span> <span class="n">values</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="p">}</span>
@@ -1901,7 +1908,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

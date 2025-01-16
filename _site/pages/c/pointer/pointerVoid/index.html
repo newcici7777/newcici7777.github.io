@@ -511,7 +511,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1343,9 +1350,9 @@
 
 <h2 id="函式傳回值為void指標">函式傳回值為void*指標</h2>
 
-<p>表示可以回傳任何資料型態的指標(位址)，可以轉型成任何資料型態指標。</p>
+<p>表示可以傳回任何資料型態的指標(位址)，可以轉型成任何資料型態指標。</p>
 
-<p>以下為malloc的回傳資料型態void<em>指標(位址)，void</em>指標可以轉成任何資料型態指標，參數size_t  __size代表設定空間大小。</p>
+<p>以下為malloc的傳回資料型態void<em>指標(位址)，void</em>指標可以轉成任何資料型態指標，參數size_t  __size代表設定空間大小。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1355,7 +1362,7 @@
 
 <p>使用方式</p>
 
-<p>在heap區段，建立10 byte的記憶體空間，將回傳的位址轉成char資料型態的指標。</p>
+<p>在heap區段，建立10 byte的記憶體空間，將傳回的位址轉成char資料型態的指標。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1363,7 +1370,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>在heap區段，建立1mb的記憶體空間，將回傳的位址轉成int資料型態的指標。</p>
+<p>在heap區段，建立1mb的記憶體空間，將傳回的位址轉成int資料型態的指標。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1417,7 +1424,7 @@ a
 
 <p>函式的參數為void，代表不接受任何參數。</p>
 
-<p>rand()產生亂數，以下為rand函式的定義，不接受任何參數，回傳int</p>
+<p>rand()產生亂數，以下為rand函式的定義，不接受任何參數，傳回int</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1624,7 +1631,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

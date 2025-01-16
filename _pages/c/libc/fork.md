@@ -1,12 +1,12 @@
 ---
-title: fork
+title: fork 複製程序
 date: 2024-12-17
 keywords: linux, fork
 ---
 
 ## fork
 
-現在的進程中，使用fork()創建子進程，子進程的程式碼執行的位置由fork()開始的程式碼，父進程fork()函式的傳回值是子進程的pid，子進程fork()傳回值為0。
+現在的程序中，使用fork()複製出子程序，子程序的程式碼執行的位置由fork()開始的程式碼，父程序fork()函式的傳回值是子程序的pid，子程序fork()傳回值為0。
 
 fork_test.cpp
 {% highlight c++ linenos %}
@@ -14,35 +14,35 @@ fork_test.cpp
 #include <unistd.h>
 using namespace std;
 int main() {
-  cout << "父進程開始" << endl;
-  // 建立子進程，子進程開始的程式碼
+  cout << "父程序開始" << endl;
+  // 建立子程序，子程序開始的程式碼
   pid_t pid = fork();
   cout << "fork() return pid = " << pid << endl;
-  // 停止30秒，方便以ps -ef | grep 查看父進程與子進程
+  // 停止30秒，方便以ps -ef | grep 查看父程序與子程序
   sleep(30);
   cout << "結束" << endl;
 }
 {% endhighlight %}
 
 ```
-父進程開始
+父程序開始
 fork() return pid = 145656
 fork() return pid = 0
 結束
 結束
 ```
 
-由執行結果可以知道，`父進程開始`的字只執行一次。
+由執行結果可以知道，`父程序開始`的字只執行一次。
 
 執行上面的程式，打開另一個終端機視窗
 ```
 ps -ef | grep fork
 ```
--e：顯示所有進程，等同於 -A 選項。
+-e：顯示所有程序，等同於 -A 選項。
 
--f：顯示完整的格式，包括父進程和其他資訊。
+-f：顯示完整的格式，包括父程序和其他資訊。
 
-可以發現子進程pid是145773，父進程是145772，有二個進程都跑起來了。
+可以發現子程序pid是145773，父程序是145772，有二個程序都跑起來了。
 ```
 cici      145772  139698  0 14:43 pts/3    00:00:00 ./fork_test
 cici      145773  145772  0 14:43 pts/3    00:00:00 ./fork_test
@@ -60,11 +60,11 @@ $ pstree -p 145772
 fork_test(145772)───fork_test(145773)
 ```
 
-由以上結果可以知，145772下面有一個子進程145773
+由以上結果可以知，145772下面有一個子程序145773
 
 ## 透過fork傳回值執行不同程式碼
 
-父進程fork()函式的傳回值是子進程的pid，子進程fork()傳回值為0，根據傳回值判斷是父進程或子進程。
+父程序fork()函式的傳回值是子程序的pid，子程序fork()傳回值為0，根據傳回值判斷是父程序或子程序。
 
 父get fork pid = 146095
 
@@ -94,7 +94,7 @@ int main() {
 
 ## fork()與變數
 
-fork()函式，會把變數複製一份給子進程，雖然子進程與父進程的變數位址是相同，但實際上是存放不同位址。
+fork()函式，會把變數複製一份給子程序，雖然子程序與父程序的變數位址是相同，但實際上是存放不同位址。
 {% highlight c++ linenos %}
 #include <iostream>
 #include <unistd.h>
@@ -107,12 +107,12 @@ int main() {
   // fork傳回值pid
   pid_t pid = fork();
   if (pid > 0) {
-    // 父進程
+    // 父程序
     cout << "父get fork pid = " << pid << endl;
     cout << "id = " << id << ", address = " << &id << endl;
     cout << "name = " << name << ", address = " << &name << endl;
   } else {
-    // 子進程
+    // 子程序
     cout << "子get fork pid = " << pid << endl;
     cout << "id = " << id << ", address = " << &id << endl;
     cout << "name = " << name << ", address = " << &name << endl;
@@ -134,7 +134,7 @@ name = May, address = 0x7ffef9691180
 
 證明不是讀取相同記憶體位址
 
-以下程式碼先讓子進程先執行(子進程有修改變數的值)，5秒後，再執行父進程
+以下程式碼先讓子程序先執行(子程序有修改變數的值)，5秒後，再執行父程序
 {% highlight c++ linenos %}
 #include <iostream>
 #include <unistd.h>
@@ -147,9 +147,9 @@ int main() {
   // fork傳回值pid
   pid_t pid = fork();
   if (pid > 0) {
-    // 先讓父進程先睡5秒，讓子進程先執行
+    // 先讓父程序先睡5秒，讓子程序先執行
     sleep(5);
-    // 父進程
+    // 父程序
     cout << "父get fork pid = " << pid << endl;
     cout << "id = " << id << ", address = " << &id << endl;
     cout << "name = " << name << ", address = " << &name << endl;
@@ -157,7 +157,7 @@ int main() {
     // 修改變數值
     id = 777;
     name = "Bill";
-    // 子進程
+    // 子程序
     cout << "子get fork pid = " << pid << endl;
     cout << "id = " << id << ", address = " << &id << endl;
     cout << "name = " << name << ", address = " << &name << endl;
@@ -177,11 +177,11 @@ name = May, address = 0x7ffeb7027ca0
 結束
 ```
 
-由執行結果可以看出，即便子進程修改了變數值，但父進程仍顯示原來的值(888與Mary)。
+由執行結果可以看出，即便子程序修改了變數值，但父程序仍顯示原來的值(888與Mary)。
 
-## 子進程在後台執行
+## 子程序在背景執行
 
-子進程在後台執行時，不會被ctrl+c強制終止。
+子程序在背景執行時，不會被ctrl+c強制終止。
 
 ### 法1
 語法
@@ -201,13 +201,13 @@ if (fork() > 0) return 0;
 ./執行檔名 
 ```
 
-如果 fork() 的返回值大於 0，表示這是 父進程，執行 return 0 直接結束父進程。
+如果 fork() 的返回值大於 0，表示這是 父程序，執行 return 0 直接結束父程序。
 
-如果 fork() 的返回值等於 0，表示這是 子進程，繼續執行後面的程式碼。
+如果 fork() 的返回值等於 0，表示這是 子程序，繼續執行後面的程式碼。
 
-父進程結束後，只有子進程執行程式的剩餘部分。
+父程序結束後，只有子程序執行程式的剩餘部分。
 
-子進程會進入無限迴圈，並每秒輸出 第X秒。
+子程序會進入無限迴圈，並每秒輸出 第X秒。
 
 fork_test.cpp
 {% highlight c++ linenos %}
@@ -215,7 +215,7 @@ fork_test.cpp
 #include <unistd.h>
 using namespace std;
 int main() {
-  // 父進程退出，只剩下fork的子進程在執行
+  // 父程序離開，只剩下fork的子程序在執行
   if (fork() > 0) return 0;
   // 無限迴圈
   for (int i = 0; ; i++) {
@@ -225,111 +225,64 @@ int main() {
 }
 {% endhighlight %}
 
-### 孤兒進程orphan process
+### 孤兒程序orphan process
 
-父進程結束，子進程沒有父親，子進程變成孤兒，由init系統進程(1號進程)接管
+父程序結束，子程序沒有父親，子程序變成孤兒，由init系統程序(1號程序)接管
 
-使用ps查看父進程的pid已經變成1號進程
+使用ps查看父程序的pid已經變成1號程序
 
 ```
 $ ps -ef | grep fork_test
 cici      154291       1  0 09:46 pts/3    00:00:00 ./fork_test
 ```
 
-### 刪除後台進程
+### 刪除背景程序
 
-開另一個終端機，輸入`killall -9 進程名`或`kill 進程pid`
+開另一個終端機，輸入`killall -9 程序名`或`kill 程序pid`
 
-## 0號進程與1號進程與2號進程
+## PID 0 1 2 號
 
 
-### 0號進程
+### PID 0 號
 
-名稱：Idle 進程（也稱為 swapper 或 scheduler）
-
-特性：
-
-內核中的第一個進程，在系統啟動階段由內核創建。
-
-它的主要功能是用來初始化系統並為其他進程提供基礎服務。
-
-並不執行任何用戶程式，通常只執行在內核空閒時需要完成的工作。
-
-作用：
-
-創建 1 號進程（init 或現代系統中的 systemd）。
-
-作為空閒進程，它在沒有其他進程需要執行時，負責將 CPU 設置為低功耗狀態（通常進入 hlt 指令）。
-
-用戶看不見：
-
-雖然它是 0 號進程，但不會出現在常規的 ps 或 top 顯示中，因為它是完全運行在內核態的。
-
-### 1號進程
-
-名稱：init 進程（或 systemd）
+名稱：Idle 程序（也稱為 swapper 或 scheduler）
 
 特性：
 
-由 0 號進程創建，為操作系統中的第一個用戶態進程。
+核心中的第一個程序，在系統啟動階段由核心創建。
 
-PID（進程 ID）為 1，因此被稱為 1 號進程。
+### PID 1 號
+
+名稱：systemd
+
+由 0 號程序創建
 
 作用：
 
-負責系統初始化，如加載其他守護進程、掛載檔案系統、設置網絡等。
+負責系統初始化，如加載其他守護程序、掛載檔案系統、設置網路等。
 
-它是所有用戶態進程的祖先，因為所有其他進程都是由它派生（直接或間接）出來的。
+### PID 2 號
 
-現代系統中，systemd 通常替代了傳統的 init 進程，擁有更多功能，如並行加載服務。
-
-出現在系統中：
-
-可以通過 ps -e 或 top 查看到它，進程名稱通常是 init 或 systemd。
-
-特殊作用：
-
-如果父進程終止，孤兒進程會由 1 號進程接管，確保它們被妥善清理。
-
-### 2號進程
-
-名稱：kthreadd（內核線程管理器）
+名稱：kthreadd（核心多工管理器）
 
 特性：
 
-它是 0 號進程創建的另一個進程。
+負責執行例如磁碟 I/O、網絡處理等系統級操作。
 
-它的主要功能是內核線程的管理器，負責處理所有內核線程的生成。
+PID（程序 ID）為 2，因此被稱為 2 號程序。
 
-作用：
+### 程序之間的關係
 
-負責啟動和管理內核態的線程，這些線程執行例如磁碟 I/O、網絡處理等系統級操作。
-
-它創建的內核線程通常以 k 開頭（例如 kworker、ksoftirqd 等）。
-
-特點：
-
-像 0 號進程一樣，運行在內核態，但它的子線程會執行具體的內核任務。
-
-用戶可以在系統中通過工具（如 ps -e）看到它。
-
-
-### 進程之間的關係
 啟動順序：
 
-系統啟動時，最初由內核創建 0 號進程。
+系統啟動時，最初由核心創建 0 號程序。
 
-0 號進程創建 1 號進程（用戶態的第一個進程）。
+0 號程序創建 1 號程序
 
-0 號進程也會創建 2 號進程，來管理內核態的線程。
+0 號程序也會創建 2 號程序
 
-拓展：
+### 查看0號程序樹
 
-1 號進程負責啟動所有其他用戶態進程（例如登錄管理器、系統服務等）。
-
-2 號進程負責啟動和管理內核態進程。
-
-### 查看0號進程樹
 語法
 ```
 pstree -p 0
@@ -337,9 +290,9 @@ pstree -p 0
 
 ## zombie process
 
-父進程沒有處理子進程的退出(如:資源釋放)，造成僵屍進程，子進程的pid就會一直存在，系統的pid數量是有限的，若存在太多子進程pid，就不會再產生新的進程。
+父程序沒有處理子程序的離開(如:資源釋放)，造成僵屍程序，子程序的pid就會一直存在，系統的pid數量是有限的，若存在太多子程序pid，就不會再產生新的程序。
 
-使用以下程式碼會產生僵屍進程
+使用以下程式碼會產生僵屍程序
 
 {% highlight c++ linenos %}
 #include <iostream>
@@ -347,7 +300,7 @@ pstree -p 0
 #include <signal.h>
 using namespace std;
 int main() {
-  // 退出子進程
+  // 離開子程序
   if (fork() == 0) return 0;
   // 無限迴圈
   for (int i = 0; ; i++) {
@@ -357,7 +310,7 @@ int main() {
 }
 {% endhighlight %}
 
-執行時，再用ps查詢進程，可以發現明明子程序154631已經退出，但仍占著pid，後面跟著`< defunct >`，這就是僵屍進程
+執行時，再用ps查詢程序，可以發現明明子程序154631已經離開，但仍占著pid，後面跟著`< defunct >`，這就是僵屍程序
 
 ```
 $ ps -ef | grep fork_test
@@ -365,11 +318,11 @@ cici      154630  139698  0 10:19 pts/3    00:00:00 ./fork_test
 cici      154631  154630  0 10:19 pts/3    00:00:00 [fork_test] <defunct>
 ```
 
-避免僵屍進程的方法
+避免僵屍程序的方法
 
 ### 怱略SIGCHLD
 
-子進程退出前，kernel會向父進程發出SIGCHLD信號，把它怱略，kernel收到會釋放子進程資源。
+子程序離開前，kernel會向父程序發出SIGCHLD訊號，把它怱略，kernel收到會釋放子程序資源。
 
 語法
 ```
@@ -384,9 +337,9 @@ SIG_IGN代表怱略
 #include <signal.h>
 using namespace std;
 int main() {
-  // 呼叫fork()之前，怱略子進程退出的信號
+  // 呼叫fork()之前，怱略子程序離開的訊號
   signal(SIGCHLD, SIG_IGN);
-  // 退出子進程
+  // 離開子程序
   if (fork() == 0) return 0;
   // 無限迴圈
   for (int i = 0; ; i++) {
@@ -411,21 +364,21 @@ include
 ```
 pid_t wait(int *stat_loc);
 ```
-- pid_t:傳回子進程pid
-- stat_loc指標:用於存放子程序退出的結果
+- pid_t:傳回子程序pid
+- stat_loc指標:用於存放子程序離開的結果
 
-正常退出為以下的狀況，不管x值是什麼，都是正常退出。
+正常離開為以下的狀況，不管x值是什麼，都是正常離開。
 
 - return x;
 - exit(x);
 - `_exit(x)`或`_Exit(x)`
 
-異常退出
+異常離開
 
-- 收到信號`kill 程序pid`
+- 收到訊號`kill 程序pid`
 - abort()函式終止
 
-#### 正常退出程式碼
+#### 正常離開程式碼
 {% highlight c++ linenos %}
 #include <iostream>
 #include <unistd.h>
@@ -434,15 +387,15 @@ pid_t wait(int *stat_loc);
 using namespace std;
 int main() {
   if (fork() > 0) {
-    // 父進程
-    int status;  // 用於儲存子進程退出的結果
-    pid_t pid = wait(&status);  // 等待子進程退出
-    cout << "已終止的子進程pid是:" << pid << endl;
-    // 把退出結果傳給WIFEXITED()前置指令，若回傳true，代表正常退出來
+    // 父程序
+    int status;  // 用於儲存子程序離開的結果
+    pid_t pid = wait(&status);  // 等待子程序離開
+    cout << "已終止的子程序pid是:" << pid << endl;
+    // 把離開結果傳給WIFEXITED()前置指令，若傳回true，代表正常離開來
     if (WIFEXITED(status)) {
-      cout << "正常退出，狀態 : " << WEXITSTATUS(status) << endl;
+      cout << "正常離開，狀態 : " << WEXITSTATUS(status) << endl;
     } else {
-      cout << "異常退出，狀態 : " << WTERMSIG(status) << endl;
+      cout << "異常離開，狀態 : " << WTERMSIG(status) << endl;
     }
   } else {
     // 子程序執行15秒 0 .. 14
@@ -470,11 +423,11 @@ int main() {
 第12秒
 第13秒
 第14秒
-已終止的子進程pid是:154866
-正常退出，狀態 : 5
+已終止的子程序pid是:154866
+正常離開，狀態 : 5
 ```
 
-#### 使用kill不正常退出1
+#### 使用kill不正常離開1
 
 - 執行程式
 - 打開另一個終端機視窗
@@ -500,11 +453,11 @@ int main() {
 第10秒
 第11秒
 第12秒
-已終止的子進程pid是:154939
-異常退出，狀態 : 15
+已終止的子程序pid是:154939
+異常離開，狀態 : 15
 ```
 
-#### 使用kill不正常退出2
+#### 使用kill不正常離開2
 
 - 執行程式
 - 打開另一個終端機視窗
@@ -530,13 +483,13 @@ int main() {
 第10秒
 第11秒
 第12秒
-已終止的子進程pid是:155001
-異常退出，狀態 : 9
+已終止的子程序pid是:155001
+異常離開，狀態 : 9
 ```
 
-#### 操作nullptr不正常退出
+#### 操作nullptr不正常離開
 
-在子進程的部分，增加操作nullptr的程式碼
+在子程序的部分，增加操作nullptr的程式碼
 ```
     int* ptr = nullptr;
     *ptr = 10;
@@ -553,15 +506,15 @@ int main() {
 using namespace std;
 int main() {
   if (fork() > 0) {
-    // 父進程
-    int status;  // 用於儲存子進程退出的結果
-    pid_t pid = wait(&status);  // 等待子進程退出
-    cout << "已終止的子進程pid是:" << pid << endl;
-    // 把退出結果傳給WIFEXITED()前置指令，若回傳true，代表正常退出來
+    // 父程序
+    int status;  // 用於儲存子程序離開的結果
+    pid_t pid = wait(&status);  // 等待子程序離開
+    cout << "已終止的子程序pid是:" << pid << endl;
+    // 把離開結果傳給WIFEXITED()前置指令，若傳回true，代表正常離開來
     if (WIFEXITED(status)) {
-      cout << "正常退出，狀態 : " << WEXITSTATUS(status) << endl;
+      cout << "正常離開，狀態 : " << WEXITSTATUS(status) << endl;
     } else {
-      cout << "異常退出，狀態 : " << WTERMSIG(status) << endl;
+      cout << "異常離開，狀態 : " << WTERMSIG(status) << endl;
     }
   } else {
     // 子程序執行15秒 0 .. 14
@@ -591,8 +544,8 @@ int main() {
 第12秒
 第13秒
 第14秒
-已終止的子進程pid是:155059
-異常退出，狀態 : 11
+已終止的子程序pid是:155059
+異常離開，狀態 : 11
 ```
 
 ### 補捉SIGCHLD
@@ -604,24 +557,24 @@ int main() {
 #include <sys/wait.h>
 using namespace std;
 /**
- 補捉SIGCHLD子程序退出信號
+ 補捉SIGCHLD子程序離開訊號
  */
 void func(int signal) {
-  int status;  // 用於儲存子進程退出的結果
-  pid_t pid = wait(&status);  // 等待子進程退出
-  cout << "已終止的子進程pid是:" << pid << endl;
-  // 把退出結果傳給WIFEXITED()前置指令，若回傳true，代表正常退出來
+  int status;  // 用於儲存子程序離開的結果
+  pid_t pid = wait(&status);  // 等待子程序離開
+  cout << "已終止的子程序pid是:" << pid << endl;
+  // 把離開結果傳給WIFEXITED()前置指令，若傳回true，代表正常離開來
   if (WIFEXITED(status)) {
-    cout << "正常退出，狀態 : " << WEXITSTATUS(status) << endl;
+    cout << "正常離開，狀態 : " << WEXITSTATUS(status) << endl;
   } else {
-    cout << "異常退出，狀態 : " << WTERMSIG(status) << endl;
+    cout << "異常離開，狀態 : " << WTERMSIG(status) << endl;
   }
 }
 int main() {
-  // 補捉子進程退出的信號
+  // 補捉子程序離開的訊號
   signal(SIGCHLD, func);
   if (fork() > 0) {
-    // 父進程執行30秒 0 .. 29
+    // 父程序執行30秒 0 .. 29
     for (int i = 0; i < 30 ; i++) {
       cout << "父 : 第" << i << "秒" << endl;
       sleep(1);
@@ -669,8 +622,8 @@ int main() {
 父 : 第14秒
 子 : 第14秒
 父 : 第15秒
-已終止的子進程pid是:155462
-正常退出，狀態 : 5
+已終止的子程序pid是:155462
+正常離開，狀態 : 5
 父 : 第16秒
 父 : 第17秒
 父 : 第18秒
@@ -687,9 +640,9 @@ int main() {
 父 : 第29秒
 ```
 
-## 取得父進程的id
+## 取得父程序的id
 
 ```
-pid_t getpid(void);  // 取得目前進程pid
-pid_t getppid(void);  //取得父進程pid
+pid_t getpid(void);  // 取得目前程序pid
+pid_t getppid(void);  //取得父程序pid
 ```

@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>new/delete · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>多工的socket · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -508,7 +508,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1190,7 +1190,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1231,6 +1231,16 @@
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
         
             
+        </li>
+	
+	
+	<li class="active">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
+        
+            
+                <ul><li><a href="#父程序流程" onclick="mobilePageScrollToAnchor(this)" >父程序流程</a></li><li><a href="#子程序流程" onclick="mobilePageScrollToAnchor(this)" >子程序流程</a></li><li><a href="#多工server-socket程式碼" onclick="mobilePageScrollToAnchor(this)" >多工Server Socket程式碼</a></li></ul>
+
+            
         </li></ul></li></ul></li>
 	
 	
@@ -1253,7 +1263,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >new/delete</a>
+                            <a href="." >多工的socket</a>
                         
                     </h1>
                 </div>
@@ -1266,61 +1276,258 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/pointer/newDelete">new/delete</h1>
+                        <h1 id="/pages/c/socket/fork_socket">多工的socket</h1>
                     
 
-                    <h3 id="new">new</h3>
+                    <p>之前的socket是一對一連線，也就是一個socket對一個client。</p>
 
-<p>宣告指標變數，使用new在Heap區段申請記憶體空間，申請成功會回傳記憶體占用的開始位址。</p>
+<p>此篇是一個Server，可以讓多個Client連線。</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>資料型態* 指標變數 = new 資料型態(初始值);
-</code></pre></div></div>
+<p>每次接受Client連線後，就fork一個子程序去做傳送資料與接收資料的事。</p>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"位址是 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"位址中的內容是 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<h2 id="父程序流程">父程序流程</h2>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-位址是 = 0x600000004010
-位址中的內容是 = 30
-</code></pre></div></div>
+<p>監聽listen socket()函式 -&gt; 轉換port變成big-endian -&gt; bind()綁定ip與port -&gt; listen()開始監聽 -&gt; accept()接受client連線，傳回client socket</p>
 
-<h3 id="delete">delete</h3>
-<p>在Heap區段申請記憶體空間，不用時需使用delete對記憶體進行回收，否則會產生memory leak，記憶體一直沒被回收，記憶體愈占愈多，最後就會當機。</p>
+<p>對於父程序來說，只要管理listen socket，關閉listen socket。</p>
 
-<p>回收記憶體位址語法如下，delete後要把指標變數設為nullptr(也可以設0)，代表沒有指向任何位址的意思。</p>
+<h2 id="子程序流程">子程序流程</h2>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>delete 指標變數;
-指標變數 = nullptr;
-</code></pre></div></div>
+<p>send()傳送資料 -&gt; recv()接收資料</p>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
-  <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
-  <span class="n">p</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p>對於子程序而言，只要管理client socket，關閉client socket。</p>
+
+<h2 id="多工server-socket程式碼">多工Server Socket程式碼</h2>
+
+<ul>
+  <li>TCPServer tcpServer;設為全域變數</li>
+  <li>include signal.h</li>
+  <li>複製<a href="/pages/c/libc/kill/">kill</a>的FatherExit()與ChildExit()函式</li>
+</ul>
+
+<pre>
+class TCPServer {
+ public:
+  // 建構子
+  // 監聽listen_fd，-1代表未初始化
+  // client_fd，-1代表未連線
+  TCPServer() : listen_fd_(-1), client_fd_(-1) {}
+  // 初始化監聽的socket
+  bool initListen(const unsigned short port) {
+    listen_fd_ = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+    if (listen_fd_ == -1) return false;
+    port_ = port;
+    // sockaddr_in結構
+    struct sockaddr_in server_addr;
+    memset(&amp;server_addr, 0, sizeof(server_addr));
+    server_addr.sin_family = AF_INET;
+    // server port
+    server_addr.sin_port = htons(port_);
+    // server有多個ip，所有ip都會監聽port
+    server_addr.sin_addr.s_addr = htonl(INADDR_ANY);
+    // socket綁定ip與port
+    if (::bind(listen_fd_, (struct sockaddr*)&amp;server_addr, sizeof(server_addr)) == -1) {
+      // 關閉監聽器
+      close(listen_fd_);
+      listen_fd_ = -1;
+      return false;
+    }
+    // 把socket設為監聽的狀態
+    // 最多只讓3個client同時連server
+    if (listen(listen_fd_, 3)) {
+      close(listen_fd_);
+      listen_fd_ = -1;
+      return false;
+    }
+    return true;
+  }
+  bool accept() {
+    // client的ip結構
+    struct sockaddr_in client_addr;
+    socklen_t addr_len = sizeof(client_addr);
+    // 接受client的連線
+    // 若要得到client的ip，第二個參數填sockaddr_in結構，第3個參數填結構大小
+    // 若不想得到client ip，第2與第3參數填0就好
+    client_fd_ = ::accept(listen_fd_, (struct sockaddr*)&amp;client_addr, &amp;addr_len);
+    if (client_fd_ == -1) return false;
+    // 取得client的ip
+    // 透過inet_ntoa把big-endian轉成little-endian
+    client_ip_ = inet_ntoa(client_addr.sin_addr);
+    return true;
+  }
+  const string&amp; getClientIp() const {
+    return client_ip_;
+  }
+  bool send(const string &amp;buffer) {
+    // 如果client fd是-1就沒必要繼續後面的動作，直接返回
+    if (client_fd_ == -1) return false;
+    // send()第2個參數填記憶體位址，第3個參數填大小
+    if ((::send(client_fd_, buffer.data(), buffer.size(), 0)) &lt;= 0)
+      return false;
+    return true;
+  }
+  // 第一個參數要修改buffer的內容，所以不加const
+  bool recv(string &amp;buffer, const size_t maxlen) {
+    // 清空string
+    buffer.clear();
+    // 分配記憶體大小
+    buffer.resize(maxlen);
+    // 收到的資料放在buffer的記憶體空間
+    // 操作到string的記憶體位址，有對string物件進行讀取與寫入
+    // 第2個參數填不是const的記憶體位址，第3個參數填大小
+    // &amp;buffer[0]取得位址，傳回值不是const
+    // buffer.data()傳回值是const，所以不用
+    // recv()傳回值是收到的資料大小
+    int iret = ::recv(client_fd_, &amp;buffer[0], buffer.size(), 0);
+    // iret = -1 失敗
+    // iret = 0 socket斷線
+    // iret &gt; 0 收到資料
+    if (iret &lt;= 0) {
+      cout &lt;&lt; "iret = " &lt;&lt; iret &lt;&lt; endl;
+      // 失敗時把buffer清空，否則buffer大小一直維持1024
+      buffer.clear();
+      return false;
+    }
+    // 如果有操作到string的記憶體位址，string的自動擴展空間會失效
+    // 需要自己重設string大小
+    // 從1024大小，設為真正收到資料的大小
+    buffer.resize(iret);
+    return true;
+  }
+  // 關閉監聽socket
+  bool closeListen() {
+    // 若未初始化，直接返回
+    if (listen_fd_ == -1) return false;
+    ::close(listen_fd_);
+    // 設為未初始化-1
+    listen_fd_ = -1;
+    return true;
+  }
+  // 關閉client socket
+  bool closeClient() {
+    // client_fd若已斷線，直接返回
+    if (client_fd_ == -1) return false;
+    ::close(client_fd_);
+    // 設成未連線-1
+    client_fd_ = -1;
+    return true;
+  }
+  ~TCPServer() {
+    // 解構子把二個socket都關掉
+    closeListen();
+    closeClient();
+  }
+ private:
+  int listen_fd_;
+  int client_fd_;
+  string client_ip_;
+  unsigned short port_;
+};
+// 設成全域變數
+// 建立監聽fd listen_fd
+<span class="markline">
+TCPServer tcpServer;
+// 父程序離開
+void FatherExit(int sig) {
+  // 怱略二次收到相同訊號
+  // 使用kill(0, 訊號)會發給子程序也會再次發給發送訊號的父程序自己
+  signal(SIGINT, SIG_IGN);  // 怱略ctrl+c
+  signal(SIGTERM, SIG_IGN);  // 怱略kill -15
+  cout &lt;&lt; "父程序退出， signal = " &lt;&lt; sig &lt;&lt; endl;
+  kill(0, SIGTERM);  // 向全部的子程序發送15訊號，終止子程序
+  // 父程序管理listen socket，父程序要離開要釋放記憶體
+  // 關閉listen socket
+  tcpServer.closeListen();
+  exit(0);  // 父程序離開
+}
+// 子程序離開
+void ChildExit(int sig) {
+  // 防止再次收到相同訊號
+  signal(SIGINT, SIG_IGN);  // 怱略ctrl+c
+  signal(SIGTERM, SIG_IGN);  // 怱略kill -15
+  cout &lt;&lt; "子程序 pid = " &lt;&lt; getpid() &lt;&lt; " 退出， signal = " &lt;&lt; sig &lt;&lt; endl;
+  // 子程序管理client socket，子程序要離開要釋放記憶體
+  // 關閉client socket
+  tcpServer.closeClient();
+  exit(0);  // 子程序離開
+}
+</span>
+int main(int argc, char *argv[]) {
+  if (argc != 2) {
+    cout &lt;&lt; "請輸入 ./server_test port" &lt;&lt; endl;
+    return -1;
+  }
+  <span class="markline">
+  // 略過全部訊號
+  for (int i = 0; i &lt;= 64; i++) signal(i, SIG_IGN);
+  // 父程序要補捉的訊號 ctrl + c
+  signal(SIGTERM, FatherExit);
+  // 父程序要補捉kill -15
+  signal(SIGINT, FatherExit);
+  </span>
+  // 初始化監聽
+  if (tcpServer.initListen(atoi(argv[1])) == false) {
+    perror("initListen");
+    return -1;
+  }
+  <span class="markline">
+  // 無限循環，一直為Client提供服務
+  while (true) {</span>
+    // 接受client連接
+    if (tcpServer.accept() == false) {
+      perror("accept");
+      return -1;
+    }
+    <span class="markline">
+    // fork後，會把client socket與listen socket複製一份給子程序
+    int pid = fork();
+    if (pid == -1) {
+      perror("fork()");
+      return -1;
+    }
+    // 大於0是父程序，直接跳到while()條件句，等待Client來連線
+    if (pid &gt; 0) {
+      // fork複製出子程序後，父程序就不需要管理client socket，這個是子程序管理
+      // 關掉client socket
+      tcpServer.closeClient();
+      continue;
+    }
+    // 以下是子程序要跑的程式碼
+    // 子程序不用管理監聽的socket，所以關掉它
+    tcpServer.closeListen();
+    // 子程序要補捉的訊號 ctrl + c
+    signal(SIGTERM, ChildExit);
+    // 子程序要補捉kill -15
+    signal(SIGINT, ChildExit);
+    </span>
+    cout &lt;&lt; "client已連上 = " &lt;&lt; tcpServer.getClientIp() &lt;&lt; endl;
+    string buffer;
+    while (true) {
+      // 如果client沒有send data，recv()會等待
+      // 收到0，代表斷線
+      if (tcpServer.recv(buffer, 1024) == false) {
+        perror("recv()");
+        break;
+      }
+      cout &lt;&lt; "收到client data = " &lt;&lt; buffer &lt;&lt; endl;
+      // 建立回應的資料給client
+      buffer = "ok";
+      // 傳送回應的資料
+      if (tcpServer.send(buffer) == false) {
+        perror("send");
+        break;
+      }
+      cout &lt;&lt; "send = " &lt;&lt; buffer &lt;&lt; endl;
+    }
+    <span class="markline">
+    // 子程序處理用戶端傳輸，傳輸接收完畢後，要用return 0關閉子程序
+    // 若不關閉又會回到accept()函式
+    return 0;
+    </span>
+  }
+}
+</pre>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1383,7 +1590,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/c/socket/socket" class="navigation navigation-prev navigation-unique" aria-label="Previous page: socket">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/jekyll/install/how_to_install_ruby" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝 Ruby on Mac">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -1399,11 +1616,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "0 == nullptr == NULL",
+            "title": "socket",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/pointer/nullptr.md",
-            "ref": "_pages/c/pointer/nullptr.md",
+            "path": "_pages/c/socket/socket.md",
+            "ref": "_pages/c/socket/socket.md",
             "articles": []
         },
         
@@ -1495,13 +1712,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/pointer/newDelete.md",
-        "mtime": "2024-05-30 00:00:00 +0800",
+        "path": "_pages/c/socket/fork_socket.md",
+        "mtime": "2025-01-12 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

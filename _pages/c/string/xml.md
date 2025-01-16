@@ -20,16 +20,16 @@ Prerequisites:
 
 ### 組成name開始標籤與結束標籤
 
-自已建立`<name>`字串，並在xml中尋找是否有相同的字串，函式會回傳`<name>`起始位址。
+自已建立`<name>`字串，並在xml中尋找是否有相同的字串，函式會傳回`<name>`起始位址。
 
 |xml|`<`|n|a|m|e|`>`|
-|回傳位址|^||||||
+|傳回位址|^||||||
 
 
-自已建立`</name>`字串，並在xml中尋找是否有相同的字串，函式會回傳`</name>`起始位址。
+自已建立`</name>`字串，並在xml中尋找是否有相同的字串，函式會傳回`</name>`起始位址。
 
 |xml|`<`|n|a|m|e|`>`|C|i|c|i|`<`|`/`|n|a|m|e|`>`|
-|回傳位址|||||||||||^|||||||
+|傳回位址|||||||||||^|||||||
 
 
 ### 計算值的字元個數
@@ -128,7 +128,7 @@ int main() {
   memset(values, 0, sizeof(values));
   
   bool res = xmlSearch("<id>1</id><name>Cici</name><age>10</age>", "name", values);
-  //如果有找到會回傳true
+  //如果有找到會傳回true
   if(res) {
     cout << "value = " << values << endl;
   }

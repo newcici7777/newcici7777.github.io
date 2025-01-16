@@ -508,7 +508,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1278,13 +1285,13 @@
 
 <p>必須在類別裡面定義</p>
 
-<p>以下回傳值型態與參數可自定義，沒有限制，但函式名必須為<code class="language-plaintext highlighter-rouge">operator()</code></p>
+<p>以下傳回值型態與參數可自定義，沒有限制，但函式名必須為<code class="language-plaintext highlighter-rouge">operator()</code></p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>  <span class="err">回傳值型態</span> <span class="k">operator</span><span class="p">()(</span><span class="err">參數</span><span class="p">)</span> <span class="p">{</span>
+</pre></td><td class="code"><pre>  <span class="err">傳回值型態</span> <span class="k">operator</span><span class="p">()(</span><span class="err">參數</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"要做的事"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -1596,7 +1603,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

@@ -24,7 +24,7 @@ template <typename T1, typename T2, typename T3>
 // T 是模板參數
 template <typename T>
 // 函式模板的名稱為FuncName
-// 回傳值void，T為模板參數型別，參數名為param
+// 傳回值void，T為模板參數型別，參數名為param
 void FuncName(T param) {
   cout << "param:" << param << endl;
 }

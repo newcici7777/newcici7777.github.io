@@ -6,7 +6,7 @@ keywords: c++, dynamic arrays, nothrow
 
 ## std::nothrow
 
-可以判斷若記憶體太小導致記憶體空間分配失數，會回傳nullptr。
+可以判斷若記憶體太小導致記憶體空間分配失數，會傳回nullptr。
 
 {% highlight c++ linenos %}
 #include <iostream>

@@ -508,7 +508,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -581,7 +581,7 @@
     	<a href="/pages/c/function/lambda" onclick="pageScrollToTop(this)"> lambda</a>
         
             
-                <ul><li><a href="#語法介紹" onclick="mobilePageScrollToAnchor(this)" >語法介紹</a><ul><li><a href="#傳入外部變數值或參考" onclick="mobilePageScrollToAnchor(this)" >[]傳入外部變數值或參考</a><ul><li><a href="#傳變數值" onclick="mobilePageScrollToAnchor(this)" >傳變數值</a></li><li><a href="#傳變數參考" onclick="mobilePageScrollToAnchor(this)" >傳變數參考</a></li><li><a href="#傳值" onclick="mobilePageScrollToAnchor(this)" >傳值=</a></li><li><a href="#傳參考" onclick="mobilePageScrollToAnchor(this)" >傳參考&amp;</a></li><li><a href="#混合傳" onclick="mobilePageScrollToAnchor(this)" >混合傳</a></li><li><a href="#不傳任何外部變數" onclick="mobilePageScrollToAnchor(this)" >不傳任何外部變數</a></li></ul></li><li><a href="#傳參數" onclick="mobilePageScrollToAnchor(this)" >傳參數</a></li><li><a href="#回傳值型態" onclick="mobilePageScrollToAnchor(this)" >回傳值型態</a></li></ul></li><li><a href="#函式轉成lambda" onclick="mobilePageScrollToAnchor(this)" >函式轉成lambda</a><ul><li><a href="#轉換前" onclick="mobilePageScrollToAnchor(this)" >轉換前</a></li><li><a href="#轉換後" onclick="mobilePageScrollToAnchor(this)" >轉換後</a></li></ul></li><li><a href="#比對fun函式跟lambda匿名函式" onclick="mobilePageScrollToAnchor(this)" >比對fun函式跟lambda匿名函式</a></li></ul>
+                <ul><li><a href="#語法介紹" onclick="mobilePageScrollToAnchor(this)" >語法介紹</a><ul><li><a href="#傳入外部變數值或參考" onclick="mobilePageScrollToAnchor(this)" >[]傳入外部變數值或參考</a><ul><li><a href="#傳變數值" onclick="mobilePageScrollToAnchor(this)" >傳變數值</a></li><li><a href="#傳變數參考" onclick="mobilePageScrollToAnchor(this)" >傳變數參考</a></li><li><a href="#傳值" onclick="mobilePageScrollToAnchor(this)" >傳值=</a></li><li><a href="#傳參考" onclick="mobilePageScrollToAnchor(this)" >傳參考&amp;</a></li><li><a href="#混合傳" onclick="mobilePageScrollToAnchor(this)" >混合傳</a></li><li><a href="#不傳任何外部變數" onclick="mobilePageScrollToAnchor(this)" >不傳任何外部變數</a></li></ul></li><li><a href="#傳參數" onclick="mobilePageScrollToAnchor(this)" >傳參數</a></li><li><a href="#傳回值型態" onclick="mobilePageScrollToAnchor(this)" >傳回值型態</a></li></ul></li><li><a href="#函式轉成lambda" onclick="mobilePageScrollToAnchor(this)" >函式轉成lambda</a><ul><li><a href="#轉換前" onclick="mobilePageScrollToAnchor(this)" >轉換前</a></li><li><a href="#轉換後" onclick="mobilePageScrollToAnchor(this)" >轉換後</a></li></ul></li><li><a href="#比對fun函式跟lambda匿名函式" onclick="mobilePageScrollToAnchor(this)" >比對fun函式跟lambda匿名函式</a></li></ul>
 
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1291,7 +1298,7 @@
 
 <p>() 函式參數</p>
 
-<p>-&gt; 函式回傳值型態，若為void可以不寫，</p>
+<p>-&gt; 函式傳回值型態，若為void可以不寫，</p>
 
 <p>{} 函式主體</p>
 
@@ -1582,9 +1589,9 @@ age = 18
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="回傳值型態">回傳值型態</h3>
+<h3 id="傳回值型態">傳回值型態</h3>
 
-<p>若回傳型態為void，可以省略以下語法，也可以不寫，lambda會自動推導回值型態</p>
+<p>若傳回型態為void，可以省略以下語法，也可以不寫，lambda會自動推導回值型態</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-&gt;型態
 </code></pre></div></div>
@@ -1623,7 +1630,7 @@ val = 100
 
 <h3 id="轉換前">轉換前</h3>
 
-<p>以下程式碼有fun()的函式，參數為int型別的x與y，回傳值型別為int。</p>
+<p>以下程式碼有fun()的函式，參數為int型別的x與y，傳回值型別為int。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1883,7 +1890,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

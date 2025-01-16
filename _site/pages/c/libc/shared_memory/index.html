@@ -508,7 +508,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1190,7 +1190,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1207,7 +1207,7 @@
     	<a href="/pages/c/libc/shared_memory" onclick="pageScrollToTop(this)"> Shared Memory共用記憶體</a>
         
             
-                <ul><li><a href="#共用記憶體" onclick="mobilePageScrollToAnchor(this)" >共用記憶體</a><ul><li><a href="#include" onclick="mobilePageScrollToAnchor(this)" >include</a></li><li><a href="#shmget取得共用記憶體" onclick="mobilePageScrollToAnchor(this)" >shmget取得共用記憶體</a></li><li><a href="#shmat使用共用記憶體" onclick="mobilePageScrollToAnchor(this)" >shmat使用共用記憶體</a></li><li><a href="#shmdt進程不再使用共用記憶體不是刪除" onclick="mobilePageScrollToAnchor(this)" >shmdt進程不再使用共用記憶體，不是刪除</a></li><li><a href="#程式碼" onclick="mobilePageScrollToAnchor(this)" >程式碼</a></li></ul></li><li><a href="#共用記憶體bash指令" onclick="mobilePageScrollToAnchor(this)" >共用記憶體bash指令</a><ul><li><a href="#查看共用記憶體" onclick="mobilePageScrollToAnchor(this)" >查看共用記憶體</a></li><li><a href="#刪除共用記憶體" onclick="mobilePageScrollToAnchor(this)" >刪除共用記憶體</a></li></ul></li><li><a href="#結合circular-queue" onclick="mobilePageScrollToAnchor(this)" >結合circular queue</a></li></ul>
+                <ul><li><a href="#共用記憶體" onclick="mobilePageScrollToAnchor(this)" >共用記憶體</a><ul><li><a href="#include" onclick="mobilePageScrollToAnchor(this)" >include</a></li><li><a href="#shmget取得共用記憶體" onclick="mobilePageScrollToAnchor(this)" >shmget取得共用記憶體</a></li><li><a href="#shmat使用共用記憶體" onclick="mobilePageScrollToAnchor(this)" >shmat使用共用記憶體</a></li><li><a href="#shmdt程序不再使用共用記憶體不是刪除" onclick="mobilePageScrollToAnchor(this)" >shmdt程序不再使用共用記憶體，不是刪除</a></li><li><a href="#程式碼" onclick="mobilePageScrollToAnchor(this)" >程式碼</a></li></ul></li><li><a href="#共用記憶體bash指令" onclick="mobilePageScrollToAnchor(this)" >共用記憶體bash指令</a><ul><li><a href="#查看共用記憶體" onclick="mobilePageScrollToAnchor(this)" >查看共用記憶體</a></li><li><a href="#刪除共用記憶體" onclick="mobilePageScrollToAnchor(this)" >刪除共用記憶體</a></li></ul></li><li><a href="#結合circular-queue" onclick="mobilePageScrollToAnchor(this)" >結合circular queue</a></li></ul>
 
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1272,11 +1279,11 @@
                         <h1 id="/pages/c/libc/shared_memory">Shared Memory共用記憶體</h1>
                     
 
-                    <p>多個進程(process)共用同一塊記憶體。</p>
+                    <p>多個程序(process)共用同一塊記憶體。</p>
 
 <h2 id="共用記憶體">共用記憶體</h2>
 
-<p>若共用記憶體沒被建立過，則會重新建立，若已建立過，則會回傳shmid。</p>
+<p>若共用記憶體沒被建立過，則會重新建立，若已建立過，則會傳回shmid。</p>
 
 <h3 id="include">include</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;sys/shm.h&gt;
@@ -1284,7 +1291,7 @@
 
 <h3 id="shmget取得共用記憶體">shmget取得共用記憶體</h3>
 
-<p>建立共用記憶體，沒被建立過，則會重新建立，若已建立過，則會回傳shmid</p>
+<p>建立共用記憶體，沒被建立過，則會重新建立，若已建立過，則會傳回shmid</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int shmget (key_t key, size_t size, int shmflg);
 </code></pre></div></div>
@@ -1293,13 +1300,13 @@
   <li>key鍵值 : 使用16進位，0x開頭，後面4個數字，例:0x0001</li>
   <li>size容量 : 結構的大小(資料物件，使用 struct；其他狀況一律使用 class)</li>
   <li>shmflg權限 : 參考linux權限，前面要加上0，例:0640</li>
-  <li>shmflg權限 : IPC_CREAT代表若共用記憶體沒被建立過，則會重新建立，若已建立過，則會回傳shmid。</li>
+  <li>shmflg權限 : IPC_CREAT代表若共用記憶體沒被建立過，則會重新建立，若已建立過，則會傳回shmid。</li>
   <li>傳回值shmid : -1失敗，其它數字代表成功。</li>
 </ul>
 
 <h3 id="shmat使用共用記憶體">shmat使用共用記憶體</h3>
 
-<p>使用共用記憶體，進程連接共用記憶體，會回傳共用記憶體位址，要把void*轉成結構*。</p>
+<p>使用共用記憶體，程序連接共用記憶體，會傳回共用記憶體位址，要把void*轉成結構*。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void* shmat(int shmid, const void *shmaddr, int shmflg);
 </code></pre></div></div>
@@ -1310,7 +1317,7 @@
   <li>shmflg,通常設0</li>
 </ul>
 
-<h3 id="shmdt進程不再使用共用記憶體不是刪除">shmdt進程不再使用共用記憶體，不是刪除</h3>
+<h3 id="shmdt程序不再使用共用記憶體不是刪除">shmdt程序不再使用共用記憶體，不是刪除</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int shmdt (const void *shmaddr);
 </code></pre></div></div>
 <ul>
@@ -1872,7 +1879,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

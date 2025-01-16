@@ -29,7 +29,7 @@ struct Node {
 
 將頭節點(head)的next(下一個節點位址)設為nullptr
 
-返回頭節點的記憶體位址(使用指標回傳)，new動態分配記憶體位址，會回傳位址，需要用指標來接。
+返回頭節點的記憶體位址(使用指標傳回)，new動態分配記憶體位址，會傳回位址，需要用指標來接。
 
 在main()中建立頭節點
 
@@ -400,7 +400,7 @@ size_t size(Node* head) {
 Node* getNode(const Node* head, const ElemType& e) {
   Node* p = head->next;//排除頭節點，從第1個節點開始繞
   while(p != nullptr) {
-    //如果節點的資料與參數e相同，回傳節點
+    //如果節點的資料與參數e相同，傳回節點
     if(p->data == e) return p;
     //移到下一個節點
     p = p->next;
@@ -549,7 +549,7 @@ bool deleteNode(Node* node) {
 Node* getNode(const Node* head, const ElemType& e) {
   Node* p = head->next;//排除頭節點，從第1個節點開始繞
   while(p != nullptr) {
-    //如果節點的資料與參數e相同，回傳節點
+    //如果節點的資料與參數e相同，傳回節點
     if(p->data == e) return p;
     //移到下一個節點
     p = p->next;

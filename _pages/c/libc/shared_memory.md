@@ -4,11 +4,11 @@ date: 2024-12-20
 keywords: c++, Shared Memory
 ---
 
-多個進程(process)共用同一塊記憶體。
+多個程序(process)共用同一塊記憶體。
 
 ## 共用記憶體
 
-若共用記憶體沒被建立過，則會重新建立，若已建立過，則會回傳shmid。
+若共用記憶體沒被建立過，則會重新建立，若已建立過，則會傳回shmid。
 
 ### include
 ```
@@ -17,7 +17,7 @@ keywords: c++, Shared Memory
 
 ### shmget取得共用記憶體
 
-建立共用記憶體，沒被建立過，則會重新建立，若已建立過，則會回傳shmid
+建立共用記憶體，沒被建立過，則會重新建立，若已建立過，則會傳回shmid
 
 ```
 int shmget (key_t key, size_t size, int shmflg);
@@ -26,12 +26,12 @@ int shmget (key_t key, size_t size, int shmflg);
 - key鍵值 : 使用16進位，0x開頭，後面4個數字，例:0x0001
 - size容量 : 結構的大小(資料物件，使用 struct；其他狀況一律使用 class)
 - shmflg權限 : 參考linux權限，前面要加上0，例:0640
-- shmflg權限 : IPC_CREAT代表若共用記憶體沒被建立過，則會重新建立，若已建立過，則會回傳shmid。
+- shmflg權限 : IPC_CREAT代表若共用記憶體沒被建立過，則會重新建立，若已建立過，則會傳回shmid。
 - 傳回值shmid : -1失敗，其它數字代表成功。
 
 ### shmat使用共用記憶體
 
-使用共用記憶體，進程連接共用記憶體，會回傳共用記憶體位址，要把void\*轉成結構\*。
+使用共用記憶體，程序連接共用記憶體，會傳回共用記憶體位址，要把void\*轉成結構\*。
 
 ```
 void* shmat(int shmid, const void *shmaddr, int shmflg);
@@ -41,7 +41,7 @@ void* shmat(int shmid, const void *shmaddr, int shmflg);
 - shmaddr，通常用nullptr，由系統自已設定記憶體位址
 - shmflg,通常設0
 
-### shmdt進程不再使用共用記憶體，不是刪除
+### shmdt程序不再使用共用記憶體，不是刪除
 ```
 int shmdt (const void *shmaddr);
 ```

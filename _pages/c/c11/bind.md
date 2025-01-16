@@ -12,7 +12,7 @@ Prerequisites:
 ## 語法
 
 ```
-function<函式回傳值類型(函式參數1類型 參數名1,函式參數2類型 參數名2)> func2 = bind(函式名, placeholders::_1, placeholders::_2);
+function<函式傳回值類型(函式參數1類型 參數名1,函式參數2類型 參數名2)> func2 = bind(函式名, placeholders::_1, placeholders::_2);
 
 function<void(int, const string&)> func2 = bind(print, placeholders::_1, placeholders::_2);
 ```

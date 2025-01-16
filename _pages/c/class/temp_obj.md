@@ -131,7 +131,7 @@ Student func() {
 }
 {% endhighlight %}
 
-以下的程式碼回傳臨時物件。
+以下的程式碼傳回臨時物件。
 {% highlight c++ linenos %}
 class Student {
 public:

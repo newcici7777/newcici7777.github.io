@@ -178,12 +178,12 @@ vector<int>::const_iterator it;
 
 #### begin()
 
-iterator移到容器第0個元素，回傳的iterator可以修改值
+iterator移到容器第0個元素，傳回的iterator可以修改值
 {% highlight c++ linenos %}
 iterator begin();
 {% endhighlight %}
 
-回傳的iterator不可以修改值(有const)
+傳回的iterator不可以修改值(有const)
 {% highlight c++ linenos %}
 const_iterator begin();
 {% endhighlight %}

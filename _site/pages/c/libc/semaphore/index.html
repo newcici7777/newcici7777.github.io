@@ -508,7 +508,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1190,7 +1190,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1279,9 +1286,9 @@
   <li><a href="/pages/c/thread/condition_variable/">condition</a></li>
 </ul>
 
-<p>共用記憶體沒有mutex，所以使用semaphore來實現加鎖lock/解鎖unlock/等待wait/通知notify，以達到讀取相同記憶體時，搶到鎖的進程process就可以使用這個記憶體，而其它進程process就在門外排隊等待門的鎖打開，當鎖打開，就輪下一個進程process使用記憶體。</p>
+<p>共用記憶體沒有mutex，所以使用semaphore來實現加鎖lock/解鎖unlock/等待wait/通知notify，以達到讀取相同記憶體時，搶到鎖的程序process就可以使用這個記憶體，而其它程序process就在門外排隊等待門的鎖打開，當鎖打開，就輪下一個程序process使用記憶體。</p>
 
-<p>semaphore中文翻譯有太多種，信號量(大陸)，號誌(台灣)，所以用英文代替。</p>
+<p>semaphore中文翻譯有太多種，訊號量(大陸)，號誌(台灣)，所以用英文代替。</p>
 
 <h2 id="linux-semaphore指令">linux semaphore指令</h2>
 
@@ -1571,8 +1578,8 @@
 <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">semid_</span><span class="o">==-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
   <span class="k">struct</span> <span class="nc">sembuf</span> <span class="n">sem_b</span><span class="p">;</span>
-  <span class="n">sem_b</span><span class="p">.</span><span class="n">sem_num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>     <span class="c1">// 信号量编号，0代表第一个信号量。</span>
-  <span class="n">sem_b</span><span class="p">.</span><span class="n">sem_op</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>  <span class="c1">// V操作的value必须大于0。</span>
+  <span class="n">sem_b</span><span class="p">.</span><span class="n">sem_num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">sem_b</span><span class="p">.</span><span class="n">sem_op</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
   <span class="n">sem_b</span><span class="p">.</span><span class="n">sem_flg</span> <span class="o">=</span> <span class="n">sem_flg_</span><span class="p">;</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">semop</span><span class="p">(</span><span class="n">semid_</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">sem_b</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">perror</span><span class="p">(</span><span class="s">"V semop()"</span><span class="p">);</span>
@@ -1884,7 +1891,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

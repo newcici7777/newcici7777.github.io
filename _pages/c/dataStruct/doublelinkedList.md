@@ -255,7 +255,7 @@ bool deleteNode(Node* node) {
 Node* getNode(const Node* head, const ElemType& e) {
   Node* p = head->next;//排除頭節點，從第1個節點開始繞
   while(p != nullptr) {
-    //如果節點的資料與參數e相同，回傳節點
+    //如果節點的資料與參數e相同，傳回節點
     if(p->data == e) return p;
     //移到下一個節點
     p = p->next;

@@ -282,7 +282,7 @@ int main() {
 
 - [函式傳回值是值][8]
 
-以下的程式碼，main()和getStudente()都各別有存放回傳值student的記憶體位址，待getStudent()的student變數回傳給main()的student變數後，getStudent()的student變數的記憶體位址就會被釋放。
+以下的程式碼，main()和getStudente()都各別有存放傳回值student的記憶體位址，待getStudent()的student變數傳回給main()的student變數後，getStudent()的student變數的記憶體位址就會被釋放。
 
 被記憶體釋放，不會被保留住的物件，也是右值r-value。
 
@@ -299,7 +299,7 @@ int main() {
 }
 {% endhighlight %}
 
-#### 回傳值是臨時物件
+#### 傳回值是臨時物件
 
 - [臨時物件][9]
 

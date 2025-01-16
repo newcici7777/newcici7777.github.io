@@ -168,7 +168,7 @@ ret = -1
 
 ## perror
 
-回傳系統錯誤訊息，比起strerror(errno)，參數不用代入errno，代入的參數為使用者自訂的前綴字。
+傳回系統錯誤訊息，比起strerror(errno)，參數不用代入errno，代入的參數為使用者自訂的前綴字。
 
 include
 ```

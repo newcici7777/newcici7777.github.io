@@ -1,5 +1,5 @@
 ---
-title: 函式傳值與回傳值
+title: 函式傳值與傳回值
 date: 2024-07-02
 keywords: c++, call by value
 ---
@@ -47,7 +47,7 @@ After x = 10
 ## 函式傳回值是值
 
 ### 解釋1
-以下的程式碼，main()和getValue()都各別有存放回傳值r的記憶體位址，待getValue()的r變數回傳給main()的r變數後，getValue()的r變數的記憶體位址就會被釋放。
+以下的程式碼，main()和getValue()都各別有存放傳回值r的記憶體位址，待getValue()的r變數傳回給main()的r變數後，getValue()的r變數的記憶體位址就會被釋放。
 
 ### 解釋2
 

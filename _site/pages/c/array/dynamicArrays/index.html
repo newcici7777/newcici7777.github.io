@@ -511,7 +511,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1281,7 +1288,7 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>資料型態 *陣列名 = new 資料型態[長度];
 </code></pre></div></div>
 
-<p>new回傳值是陣列第0筆元素記憶體位址，由指標(*陣列名)接收回傳的記憶體位址。</p>
+<p>new傳回值是陣列第0筆元素記憶體位址，由指標(*陣列名)接收傳回的記憶體位址。</p>
 
 <h2 id="記憶體回收">記憶體回收</h2>
 
@@ -1290,7 +1297,7 @@
 
 <h2 id="不能使用sizeof">不能使用sizeof()</h2>
 
-<p>因為陣列名是指標，使用sizeof(陣列名)只會回傳8btye</p>
+<p>因為陣列名是指標，使用sizeof(陣列名)只會傳回8btye</p>
 
 <h2 id="程式碼">程式碼</h2>
 
@@ -1617,7 +1624,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

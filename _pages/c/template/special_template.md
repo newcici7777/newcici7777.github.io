@@ -17,7 +17,7 @@ template <>
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
-// 模板名為getMax，回傳類型為模板形參T，參數名為a與b
+// 模板名為getMax，傳回類型為模板形參T，參數名為a與b
 template <typename T>
 T getMax(T a, T b) {
   if(a > b)
@@ -93,7 +93,7 @@ s2 score = 50
 score = 78
 ```
 
-## 模板函式與特製化函式回傳值與參數要一致
+## 模板函式與特製化函式傳回值與參數要一致
 
 若模板函式是使用T，特製化模板也要使用類型。若模板函式是使用T&，特製化模板則是使用類型參考&。否則若不一致，例:模板函式用T，特製化模板用類型參考&，將會產生錯誤error: no function template matches function template specialization。
 

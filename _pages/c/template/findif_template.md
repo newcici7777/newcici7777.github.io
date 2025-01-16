@@ -15,11 +15,11 @@ find_if()函式
 
 ## 增加搜尋值與傳回值
 
-將foreach模板的程式拿來修改，增加搜尋值T3的模板參數與T1的模板回傳值。
+將foreach模板的程式拿來修改，增加搜尋值T3的模板參數與T1的模板傳回值。
 
 找到欲搜尋的值T3，就返回iterator
 
-找不到就回傳容器最後一個元素的下一個位址。
+找不到就傳回容器最後一個元素的下一個位址。
 
 {% highlight c++ linenos %}
 template<typename T1, typename T2, typename T3>
@@ -33,7 +33,7 @@ T1 findif(const T1 first, const T1 last, T2 callback, T3 search_val) {
 
 ## 修改callback函式指標模板
 
-增加搜尋值T的模板參數，回傳bool，判斷msg是否與要搜尋的值相同。
+增加搜尋值T的模板參數，傳回bool，判斷msg是否與要搜尋的值相同。
 
 {% highlight c++ linenos %}
 template<typename T>
@@ -44,7 +44,7 @@ bool callback(const T& msg, const T& search_val) {
 
 ## 修改callback物件函式模板
 
-增加搜尋值T的模板參數，回傳bool，判斷msg是否與要搜尋的值相同。
+增加搜尋值T的模板參數，傳回bool，判斷msg是否與要搜尋的值相同。
 
 {% highlight c++ linenos %}
 template<typename T>

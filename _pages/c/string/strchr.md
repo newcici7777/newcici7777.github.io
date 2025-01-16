@@ -6,7 +6,7 @@ keywords: c++, strchr
 
 ## strchr從字串左邊搜尋字元
 
-從字串左邊搜尋字元，回傳從左邊搜尋的第一個字元位址，並印出字元位址之後所有的字元。
+從字串左邊搜尋字元，傳回從左邊搜尋的第一個字元位址，並印出字元位址之後所有的字元。
 
 搜尋字串 = Hello World!
 
@@ -26,7 +26,7 @@ char* mystrchr(const char* s,int c) {
     if(*p == c) return p;
     p++;//位址往右移一位
   }
-  return 0;//找不到就回傳null的位址
+  return 0;//找不到就傳回null的位址
 }
 int main() {
   char str[20];
@@ -47,7 +47,7 @@ p1 = World!
 
 ## strrchr從字串右邊搜尋字元
 
-從字串右邊搜尋字元，回傳從右邊搜尋的第一個字元位址，並印出字元位址之後所有的字元。
+從字串右邊搜尋字元，傳回從右邊搜尋的第一個字元位址，並印出字元位址之後所有的字元。
 
 搜尋字串 = Hello World!
 
@@ -68,7 +68,7 @@ char* mystrrchr(const char* s,int c) {
     if(*p == c) p1 = p;
     p++;//位址往右移一位
   }
-  return p1;//回傳p1最後的位址
+  return p1;//傳回p1最後的位址
 }
 int main() {
   char str[20];

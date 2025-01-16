@@ -159,18 +159,18 @@ english = 75
 chinese = 85
 ```
 
-## 回傳值型態是物件
+## 傳回值型態是物件
 
 ```
 student = student + 15;
 ```
-以上的程式碼，是要把運算的結果回傳給型態是Student的物件，所以必須把回傳值型態改成物件的參考。
+以上的程式碼，是要把運算的結果傳回給型態是Student的物件，所以必須把傳回值型態改成物件的參考。
 
 {% highlight c++ linenos %}
 Student& operator+(Student& s, int score) 
 {% endhighlight %}
 
-運算的過程也可以是很多數字的相加，不變的是，要把運算的結果回傳給型態是Student的物件。
+運算的過程也可以是很多數字的相加，不變的是，要把運算的結果傳回給型態是Student的物件。
 
 ```
 student = student + 15 + 5 + 5;
@@ -180,7 +180,7 @@ student = student + 15 + 5 + 5;
 ```
 student = (((student + 15) + 5) + 5);
 ```
-每一個括號就有一個回傳值，+加號左邊的參數是operator+()第一個參數，+加號右邊是operator+()第二個參數。
+每一個括號就有一個傳回值，+加號左邊的參數是operator+()第一個參數，+加號右邊是operator+()第二個參數。
 
 再次分解如下
 
@@ -188,7 +188,7 @@ student = (((student + 15) + 5) + 5);
 student = operator+(operator+(operator+(student, 15), 5), 5);
 ```
 
-程式的回傳值型態改寫如下
+程式的傳回值型態改寫如下
 
 {% highlight c++ linenos %}
 #include <iostream>
@@ -264,7 +264,7 @@ Student& operator+(int score){}
 friend Student& operator+(Student& s, int score);
 {% endhighlight %}
 
-回傳值也改為隱藏的this指標，this指標為物件存放的記憶體位址，使用取值運算子，回傳物件。
+傳回值也改為隱藏的this指標，this指標為物件存放的記憶體位址，使用取值運算子，傳回物件。
 
 ```
 return *this;

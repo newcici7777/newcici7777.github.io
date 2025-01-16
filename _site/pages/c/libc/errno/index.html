@@ -508,7 +508,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1460,7 +1467,7 @@ errno = 109, Unknown error: 109
 
 <h2 id="perror">perror</h2>
 
-<p>回傳系統錯誤訊息，比起strerror(errno)，參數不用代入errno，代入的參數為使用者自訂的前綴字。</p>
+<p>傳回系統錯誤訊息，比起strerror(errno)，參數不用代入errno，代入的參數為使用者自訂的前綴字。</p>
 
 <p>include</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;unistd.h&gt;  // perror() head file
@@ -1697,7 +1704,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {

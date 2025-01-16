@@ -511,7 +511,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與回傳值</a>
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
         
             
         </li>
@@ -1193,7 +1193,7 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork</a>
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
         
             
         </li>
@@ -1232,6 +1232,13 @@
 	
 	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
         
             
         </li></ul></li></ul></li>
@@ -1464,7 +1471,7 @@ i = 10
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>第6行，去雙指標pp的記憶體位址取值，取出來是p的指標記憶體位址，使用new來分配動態配置記憶體空間，並且設值”3”，動態配置完成會回傳記憶體位址，由指標去存位址。</p>
+<p>第6行，去雙指標pp的記憶體位址取值，取出來是p的指標記憶體位址，使用new來分配動態配置記憶體空間，並且設值”3”，動態配置完成會傳回記憶體位址，由指標去存位址。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 p=0x60000000c000,*p=3
@@ -1690,7 +1697,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-15 19:20:37 +0800"
+        "time": "2025-01-16 16:30:38 +0800"
     },
     "basePath": "",
     "book": {
