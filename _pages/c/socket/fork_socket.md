@@ -27,7 +27,11 @@ send()傳送資料 -> recv()接收資料
 - TCPServer tcpServer;設為全域變數
 - include signal.h
 - 複製[kill][1]的FatherExit()與ChildExit()函式
-
+- 加上while
+- fork複製出子程序
+- fork複製出子程序後，父程序就不需要管理client socket，關掉client socket
+- 子程序不用管理監聽的socket，所以關掉它
+- 子程序執行完，要關閉子程序，return 0;在無限迴圈內關閉子程序，while(true){... return 0;}
 
 [1]: {% link _pages/c/libc/kill.md %}
 

@@ -377,6 +377,23 @@ std::vector<string> list{
           "Second item"};
 {% endhighlight %}
 
+### define
+
+以井號 # 開頭的前置處理器指令一律從一行的最開頭寫起。
+
+{% highlight c++ linenos %}
+// 可 - 指令從行首寫起
+  if (lopsided_score) {
+#if DISASTER_PENDING      // 正確 -- 從行首寫起。
+    DropEverything();
+# if NOTIFY               // 可以，但非必要 -- # 後面有空格
+    NotifyClient();
+# endif
+#endif
+    BackToNormal();
+  }
+{% endhighlight %}
+
 ## 斷行
 
 除非必要，不要使用斷行。尤其是：兩個函式定義之間的斷行不要超過 2 行，函式起始處不要是斷行，最後一行也不要是斷行，其餘地方也儘量少用斷行。在一個程式碼區塊中，斷行像是文章中的段落：在視覺上將兩個想法區隔開來。

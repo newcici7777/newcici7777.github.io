@@ -1241,6 +1241,13 @@
                 <ul><li><a href="#父程序流程" onclick="mobilePageScrollToAnchor(this)" >父程序流程</a></li><li><a href="#子程序流程" onclick="mobilePageScrollToAnchor(this)" >子程序流程</a></li><li><a href="#多工server-socket程式碼" onclick="mobilePageScrollToAnchor(this)" >多工Server Socket程式碼</a></li></ul>
 
             
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/file_socket" onclick="pageScrollToTop(this)"> Socket傳送檔案</a>
+        
+            
         </li></ul></li></ul></li>
 	
 	
@@ -1303,6 +1310,11 @@
   <li>TCPServer tcpServer;設為全域變數</li>
   <li>include signal.h</li>
   <li>複製<a href="/pages/c/libc/kill/">kill</a>的FatherExit()與ChildExit()函式</li>
+  <li>加上while</li>
+  <li>fork複製出子程序</li>
+  <li>fork複製出子程序後，父程序就不需要管理client socket，關掉client socket</li>
+  <li>子程序不用管理監聽的socket，所以關掉它</li>
+  <li>子程序執行完，要關閉子程序，return 0;在無限迴圈內關閉子程序，while(true){… return 0;}</li>
 </ul>
 
 <pre>
@@ -1598,7 +1610,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/jekyll/install/how_to_install_ruby" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝 Ruby on Mac">
+                        <a href="/pages/c/socket/file_socket" class="navigation navigation-next navigation-unique" aria-label="Next page: Socket傳送檔案">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1718,7 +1730,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-16 16:30:38 +0800"
+        "time": "2025-01-17 13:43:07 +0800"
     },
     "basePath": "",
     "book": {

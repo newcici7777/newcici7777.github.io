@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>socket · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Socket傳送檔案 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -1227,12 +1227,9 @@
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> socket </a><ul>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
         
-            
-                <ul><li><a href="#socket函式" onclick="mobilePageScrollToAnchor(this)" >socket()函式</a><ul><li><a href="#參數domain" onclick="mobilePageScrollToAnchor(this)" >參數domain</a></li><li><a href="#參數type" onclick="mobilePageScrollToAnchor(this)" >參數type</a></li><li><a href="#參數protocol" onclick="mobilePageScrollToAnchor(this)" >參數protocol</a><ul><li><a href="#ipproto_tcp" onclick="mobilePageScrollToAnchor(this)" >IPPROTO_TCP</a></li><li><a href="#ipproto_udp" onclick="mobilePageScrollToAnchor(this)" >IPPROTO_UDP</a></li></ul></li></ul></li><li><a href="#big-endian" onclick="mobilePageScrollToAnchor(this)" >big-endian</a></li><li><a href="#port轉成big-endian" onclick="mobilePageScrollToAnchor(this)" >port轉成big-endian</a></li><li><a href="#sockaddr結構" onclick="mobilePageScrollToAnchor(this)" >sockaddr結構</a></li><li><a href="#sockaddr_in結構" onclick="mobilePageScrollToAnchor(this)" >sockaddr_in結構</a></li><li><a href="#ip轉成big-endian" onclick="mobilePageScrollToAnchor(this)" >ip轉成big-endian</a></li><li><a href="#client建立socket" onclick="mobilePageScrollToAnchor(this)" >client建立socket</a></li><li><a href="#server" onclick="mobilePageScrollToAnchor(this)" >server</a><ul><li><a href="#systemctl" onclick="mobilePageScrollToAnchor(this)" >systemctl</a></li><li><a href="#防火牆" onclick="mobilePageScrollToAnchor(this)" >防火牆</a></li><li><a href="#open-listen-port" onclick="mobilePageScrollToAnchor(this)" >open listen port</a></li><li><a href="#編譯執行程式" onclick="mobilePageScrollToAnchor(this)" >編譯執行程式</a></li><li><a href="#server程式碼" onclick="mobilePageScrollToAnchor(this)" >server程式碼</a></li></ul></li><li><a href="#封裝socket" onclick="mobilePageScrollToAnchor(this)" >封裝Socket</a><ul><li><a href="#client" onclick="mobilePageScrollToAnchor(this)" >client</a></li><li><a href="#server-1" onclick="mobilePageScrollToAnchor(this)" >server</a></li></ul></li></ul>
-
             
         </li>
 	
@@ -1244,9 +1241,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/c/socket/file_socket" onclick="pageScrollToTop(this)"> Socket傳送檔案</a>
         
+            
+                <ul><li><a href="#client" onclick="mobilePageScrollToAnchor(this)" >client</a><ul><li><a href="#傳送流程" onclick="mobilePageScrollToAnchor(this)" >傳送流程</a></li><li><a href="#傳送檔名與檔案大小" onclick="mobilePageScrollToAnchor(this)" >傳送檔名與檔案大小</a></li><li><a href="#傳送檔案" onclick="mobilePageScrollToAnchor(this)" >傳送檔案</a></li><li><a href="#main參數" onclick="mobilePageScrollToAnchor(this)" >main參數</a></li><li><a href="#檔案結構" onclick="mobilePageScrollToAnchor(this)" >檔案結構</a></li><li><a href="#傳送檔名與檔案大小-1" onclick="mobilePageScrollToAnchor(this)" >傳送檔名與檔案大小</a></li><li><a href="#傳送完檔名與檔案後取得server回應" onclick="mobilePageScrollToAnchor(this)" >傳送完檔名與檔案後，取得server回應</a></li><li><a href="#呼叫傳送檔案" onclick="mobilePageScrollToAnchor(this)" >呼叫傳送檔案</a></li><li><a href="#傳送檔案後取得server回應" onclick="mobilePageScrollToAnchor(this)" >傳送檔案後，取得server回應</a></li></ul></li><li><a href="#server" onclick="mobilePageScrollToAnchor(this)" >server</a><ul><li><a href="#接收檔名與大小" onclick="mobilePageScrollToAnchor(this)" >接收檔名與大小</a></li><li><a href="#接收檔案" onclick="mobilePageScrollToAnchor(this)" >接收檔案</a></li><li><a href="#main參數-1" onclick="mobilePageScrollToAnchor(this)" >main參數</a></li><li><a href="#檔案結構-1" onclick="mobilePageScrollToAnchor(this)" >檔案結構</a></li><li><a href="#接收檔名與大小-1" onclick="mobilePageScrollToAnchor(this)" >接收檔名與大小</a></li><li><a href="#回應client已收到檔名與大小" onclick="mobilePageScrollToAnchor(this)" >回應client已收到檔名與大小</a></li><li><a href="#接收檔案-1" onclick="mobilePageScrollToAnchor(this)" >接收檔案</a></li><li><a href="#回應client已收到檔案" onclick="mobilePageScrollToAnchor(this)" >回應client已收到檔案</a></li></ul></li><li><a href="#完整程式碼" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a><ul><li><a href="#client程式碼" onclick="mobilePageScrollToAnchor(this)" >client程式碼</a></li><li><a href="#server程式碼" onclick="mobilePageScrollToAnchor(this)" >server程式碼</a></li><li><a href="#測試方式" onclick="mobilePageScrollToAnchor(this)" >測試方式</a><ul><li><a href="#server-1" onclick="mobilePageScrollToAnchor(this)" >server</a></li><li><a href="#client-1" onclick="mobilePageScrollToAnchor(this)" >client</a></li></ul></li></ul></li></ul>
+
             
         </li></ul></li></ul></li>
 	
@@ -1270,7 +1270,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >socket</a>
+                            <a href="." >Socket傳送檔案</a>
                         
                     </h1>
                 </div>
@@ -1283,123 +1283,16 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/socket/socket">socket</h1>
+                        <h1 id="/pages/c/socket/file_socket">Socket傳送檔案</h1>
                     
 
-                    <p>Prerequisites:</p>
-<ul>
-  <li><a href="/pages/c/file/file_desc/#fd">File description</a></li>
-  <li><a href="/pages/c/libc/errno/">errno</a></li>
-  <li><a href="/pages/c/basic/main/">main</a></li>
-  <li><a href="/pages/c/compile/makefile/">linux下編譯c++</a></li>
-</ul>
+                    <h2 id="client">client</h2>
 
-<h2 id="socket函式">socket()函式</h2>
+<h3 id="傳送流程">傳送流程</h3>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">socket</span><span class="p">(</span><span class="kt">int</span> <span class="n">domain</span><span class="p">,</span> <span class="kt">int</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">protocol</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p>傳送檔名與大小 -&gt; 取得server回應(確認server已收到檔名與大小) -&gt; 傳送檔案 -&gt; 取得server回應(確認server已收到檔案)</p>
 
-<ul>
-  <li>失敗傳回-1，錯誤訊息已放至<a href="/pages/c/libc/errno/">errno</a></li>
-  <li>成功傳回<a href="/pages/c/file/file_desc/#fd">fd</a></li>
-</ul>
-
-<h3 id="參數domain">參數domain</h3>
-
-<p>固定用AF_INET</p>
-
-<p>AF_INET支援TCP與UDP通訊傳輸協定。</p>
-
-<h3 id="參數type">參數type</h3>
-
-<table>
-  <tbody>
-    <tr>
-      <td>SOCK_STREAM</td>
-      <td>使用在TCP可靠傳輸協議，封包不會丟失</td>
-    </tr>
-    <tr>
-      <td>SOCK_DGRAM</td>
-      <td>使用在UDP不可靠傳輸協議，封包會丟失</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="參數protocol">參數protocol</h3>
-
-<h4 id="ipproto_tcp">IPPROTO_TCP</h4>
-<p>建立TCP socket語法</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="n">IPPROTO_TCP</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h4 id="ipproto_udp">IPPROTO_UDP</h4>
-<p>建立UDP socket語法</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_DGRAM</span><span class="p">,</span> <span class="n">IPPROTO_UDP</span><span class="p">);</span> 
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="big-endian">big-endian</h2>
-<p>網路傳輸以big-endian方式傳輸。</p>
-
-<p>電腦是以little-endian方式進行記憶體儲存，但在網路傳輸，一律轉成big-Endian。</p>
-
-<p>host，主機，伺服器提供網站服務，此時這個伺服器是主機。</p>
-
-<h2 id="port轉成big-endian">port轉成big-endian</h2>
-<p>透過以下語法把port互轉為big-Endian與little-endian</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="c1">// port轉成big-endian</span>
-<span class="kt">uint16_t</span> <span class="n">h</span> <span class="n">to</span> <span class="n">n</span> <span class="nf">s</span><span class="p">(</span><span class="kt">uint16_t</span> <span class="n">hostshort</span><span class="p">);</span>  <span class="c1">// uint16_t 2byte unsigned short</span>
-<span class="kt">uint32_t</span> <span class="nf">htonl</span><span class="p">(</span><span class="kt">uint32_t</span> <span class="n">hostlong</span><span class="p">);</span>      <span class="c1">// uint32_t 4byte unsigned int</span>
-<span class="c1">// big-endian的port轉成little-endian</span>
-<span class="kt">uint16_t</span> <span class="n">n</span> <span class="n">to</span> <span class="n">h</span> <span class="nf">s</span><span class="p">(</span><span class="kt">uint16_t</span> <span class="n">netshort</span><span class="p">);</span>
-<span class="kt">uint32_t</span> <span class="nf">ntohl</span><span class="p">(</span><span class="kt">uint32_t</span> <span class="n">netlong</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>h = host(主機)</p>
-
-<p>to = 轉</p>
-
-<p>n = network(網路)</p>
-
-<p>s = short(2byte=16bit)</p>
-
-<p>l = long(4byte=32bit)</p>
-
-<h2 id="sockaddr結構">sockaddr結構</h2>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="code"><pre><span class="k">struct</span> <span class="nc">sockaddr</span> <span class="p">{</span>
-  <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">sa_family</span><span class="p">;</span>  <span class="c1">// 固定填AF_INET</span>
-  <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">sa_data</span><span class="p">[</span><span class="mi">14</span><span class="p">];</span> <span class="c1">// 14byte的ip與port</span>
-<span class="p">};</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="sockaddr_in結構">sockaddr_in結構</h2>
-<p>大小與sockaddr結構一模一樣，但sockaddr結構的sa_data[14]範圍太大，此sockaddr_in結構補足sockaddr的不足。</p>
+<h3 id="傳送檔名與檔案大小">傳送檔名與檔案大小</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1411,82 +1304,26 @@
 7
 8
 9
-10
-</pre></td><td class="code"><pre><span class="k">struct</span> <span class="nc">sockaddr_in</span> <span class="p">{</span>  
-  <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">sin_family</span><span class="p">;</span>  <span class="c1">// 固定填AF_INET</span>
-  <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">sin_port</span><span class="p">;</span>    <span class="c1">// 16bit,2byte port number,用htons()函式轉成big-endian</span>
-  <span class="k">struct</span> <span class="nc">in_addr</span> <span class="n">sin_addr</span><span class="p">;</span>	  <span class="c1">// ip結構32bit,4byte</span>
-  <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">sin_zero</span><span class="p">[</span><span class="mi">8</span><span class="p">];</span>  <span class="c1">// 未使用，主要補足14byte - (ip 4byte) - (port 2byte) = 8 byte</span>
-<span class="p">};</span>
-<span class="c1">// ip結構</span>
-<span class="k">struct</span> <span class="nc">in_addr</span> <span class="p">{</span>
-  <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">s_addr</span><span class="p">;</span>  <span class="c1">// 32bit,4byte ip 透過gethostbyname()函式轉成big-endian</span>
-<span class="p">};</span>
+</pre></td><td class="code"><pre>  <span class="c1">// 傳送檔名與大小</span>
+  <span class="kt">bool</span> <span class="nf">send</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="n">buffer</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// client_fd若已斷線，直接返回</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">client_fd_</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="c1">// send()第2個參數填記憶體位址，第3個參數填大小</span>
+    <span class="k">if</span> <span class="p">((</span><span class="o">::</span><span class="n">send</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span>
+      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>在呼叫connect()函式時，再把sockaddr_in結構轉成sockaddr結構，二者記憶體大小都一樣，可以轉換。</p>
+<h3 id="傳送檔案">傳送檔案</h3>
+<p>使用while無限迴圈，待檔案傳送完，就會離開無限迴圈。</p>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="p">(</span><span class="k">struct</span> <span class="nc">sockaddr</span><span class="o">*</span> <span class="p">)</span><span class="o">&amp;</span><span class="n">server_addr</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p>把每個byte都視為1個磚頭，有1000個磚頭，每次只搬7個磚頭，直至1000個磚頭搬送完畢。</p>
 
-<h2 id="ip轉成big-endian">ip轉成big-endian</h2>
-<p>gethostbyname()函式將ip轉成big-endian</p>
+<p>檔案每次只傳7byte，除非剩下要傳的byte小於7byte，才用小於7byte的數字傳送。</p>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="k">struct</span> <span class="nc">hostent</span><span class="o">*</span> <span class="nf">gethostbyname</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<ul>
-  <li><a href="/pages/c/basic/include/">define</a></li>
-</ul>
-
-<p>hostent結構</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="code"><pre><span class="k">struct</span> <span class="nc">hostent</span> <span class="p">{</span> 
-  <span class="kt">char</span><span class="o">*</span> <span class="n">h_name</span><span class="p">;</span>      <span class="c1">// 主機名</span>
-  <span class="kt">char</span><span class="o">**</span> <span class="n">h_aliases</span><span class="p">;</span>  <span class="c1">// 主機別名</span>
-  <span class="kt">short</span> <span class="n">h_addrtype</span><span class="p">;</span>  <span class="c1">// ip類型，固定填AF_INET</span>
-  <span class="kt">short</span> <span class="n">h_length</span><span class="p">;</span>    <span class="c1">// ip長度, ipv4 是4 byte</span>
-  <span class="kt">char</span><span class="o">**</span> <span class="n">h_addr_list</span><span class="p">;</span>  <span class="c1">//ip address以big-endian存放</span>
-<span class="p">};</span>
-<span class="cp">#define h_addr h_addr_list[0]  // h_addr是h_addr_list[0]的別名</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>透過以下語法將轉成big-endian的ip拷貝到sockaddr_in結構</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">memcpy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">sockaddr_in</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">,</span><span class="n">h</span><span class="o">-&gt;</span><span class="n">h_addr</span><span class="p">,</span><span class="n">h</span><span class="o">-&gt;</span><span class="n">h_length</span><span class="p">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="client建立socket">client建立socket</h2>
-
-<p>建立socket流程如下:</p>
-
-<p>socket()函式 -&gt; 轉換ip與port變成big-endian -&gt; connect()</p>
-
-<p>傳輸流程如下:</p>
-
-<p>send()傳送資料 -&gt; recv()接收資料</p>
-
-<p>完整程式碼</p>
+<p>了解原理後，可以把7byte改成1024byte，每次只傳1024byte，直到全部的byte都傳送完畢。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1521,266 +1358,173 @@
 30
 31
 32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;netdb.h&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;sys/types.h&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;sys/socket.h&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;arpa/inet.h&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入 ./client_test ip port"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">// 建立socket，失敗傳回-1</span>
-  <span class="kt">int</span> <span class="n">socket_fd</span> <span class="o">=</span> <span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="n">IPPROTO_TCP</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">socket_fd</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">perror</span><span class="p">(</span><span class="s">"socket"</span><span class="p">);</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">// server ip轉big-endian</span>
-  <span class="k">struct</span> <span class="nc">hostent</span><span class="o">*</span> <span class="n">h</span><span class="p">;</span>
-  <span class="k">if</span> <span class="p">((</span><span class="n">h</span> <span class="o">=</span> <span class="n">gethostbyname</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"gethostbyname() fail."</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">// 關閉socket</span>
-    <span class="n">close</span><span class="p">(</span><span class="n">socket_fd</span><span class="p">);</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">// sockaddr_in結構</span>
-  <span class="k">struct</span> <span class="nc">sockaddr_in</span> <span class="n">server_addr</span><span class="p">;</span>
-  <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">server_addr</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">server_addr</span><span class="p">));</span>
-  <span class="n">server_addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
-  <span class="c1">// server ip</span>
-  <span class="n">memcpy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">server_addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">h_addr</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">h_length</span><span class="p">);</span>
-  <span class="c1">// server port</span>
-  <span class="n">server_addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="n">htons</span><span class="p">(</span><span class="n">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]));</span>
-  <span class="c1">// connect伺服器，傳回值為0代表連線成功，不是0代表連線失敗</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">connect</span><span class="p">(</span><span class="n">socket_fd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="nc">sockaddr</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">server_addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">server_addr</span><span class="p">))</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">perror</span><span class="p">(</span><span class="s">"connect"</span><span class="p">);</span>
-    <span class="c1">// 關閉socket</span>
-    <span class="n">close</span><span class="p">(</span><span class="n">socket_fd</span><span class="p">);</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">// send data給伺服器</span>
-  <span class="kt">char</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">1024</span><span class="p">];</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// 宣告send()與recv()的傳回值</span>
-    <span class="kt">int</span> <span class="n">iret</span><span class="p">;</span>
-    <span class="c1">// 清空buffer</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buffer</span><span class="p">));</span>
-    <span class="c1">// sprintf 格式化輸出到 buffer 裡。</span>
-    <span class="n">sprintf</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="s">"data %d"</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="c1">// send buffer to server</span>
-    <span class="k">if</span> <span class="p">((</span><span class="n">iret</span> <span class="o">=</span> <span class="n">send</span><span class="p">(</span><span class="n">socket_fd</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">buffer</span><span class="p">),</span> <span class="mi">0</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">perror</span><span class="p">(</span><span class="s">"send"</span><span class="p">);</span>
-      <span class="k">break</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="c1">// 傳送檔案</span>
+  <span class="kt">bool</span> <span class="nf">sendFile</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">file_name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">file_size</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 參數2指定binaryfile</span>
+    <span class="n">ifstream</span> <span class="n">fin</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">ios</span><span class="o">::</span><span class="n">binary</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">fin</span><span class="p">.</span><span class="n">is_open</span><span class="p">()</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"open file ("</span> <span class="o">&lt;&lt;</span> <span class="n">file_name</span> <span class="o">&lt;&lt;</span> <span class="s">") fail"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"傳送給伺服器 = "</span> <span class="o">&lt;&lt;</span> <span class="n">buffer</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">// 清空buffer</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buffer</span><span class="p">));</span>
-    <span class="c1">// 收伺服器的回應</span>
-    <span class="k">if</span> <span class="p">((</span><span class="n">iret</span> <span class="o">=</span> <span class="n">recv</span><span class="p">(</span><span class="n">socket_fd</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buffer</span><span class="p">),</span> <span class="mi">0</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"iret = "</span> <span class="o">&lt;&lt;</span> <span class="n">iret</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-      <span class="k">break</span><span class="p">;</span>
+    <span class="c1">// 每次要讀資料的個數(byte)</span>
+    <span class="kt">int</span> <span class="n">read</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="c1">// 記錄已傳送資料的個數，若total_byte == file_size代表傳送完</span>
+    <span class="kt">int</span> <span class="n">total_bytes</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="c1">// 每次只傳送7byte</span>
+    <span class="kt">char</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">7</span><span class="p">];</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// 清空</span>
+      <span class="n">memset</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buffer</span><span class="p">));</span>
+      <span class="c1">// 如果剩下的byte數量，大於7個，就傳送7個</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">file_size</span> <span class="o">-</span> <span class="n">total_bytes</span> <span class="o">&gt;</span> <span class="mi">7</span><span class="p">)</span>
+        <span class="n">read</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+      <span class="k">else</span>
+        <span class="c1">//小於7，就傳小於7的數量</span>
+        <span class="n">read</span> <span class="o">=</span> <span class="n">file_size</span> <span class="o">-</span> <span class="n">total_bytes</span><span class="p">;</span>
+      <span class="n">fin</span><span class="p">.</span><span class="n">read</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">read</span><span class="p">);</span>
+      <span class="c1">// 把讀到的資料送給server</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">send</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">read</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+      <span class="c1">// 加上已傳送的數量</span>
+      <span class="n">total_bytes</span> <span class="o">+=</span> <span class="n">read</span><span class="p">;</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">total_bytes</span> <span class="o">==</span> <span class="n">file_size</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"伺服器的回應 = "</span> <span class="o">&lt;&lt;</span> <span class="n">buffer</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//暫停1秒</span>
-    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
   <span class="p">}</span>
-  <span class="n">close</span><span class="p">(</span><span class="n">socket_fd</span><span class="p">);</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="main參數">main參數</h3>
+<p>改為傳送5個參數，<code class="language-plaintext highlighter-rouge">./client_test ip port 檔名 檔案大小</code></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>  <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">!=</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入 ./client_test ip port 檔名 檔案大小"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="檔案結構">檔案結構</h3>
+
+<p>包含檔名與檔案大小</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre>  <span class="c1">// 檔案結構</span>
+  <span class="k">struct</span> <span class="nc">FileInfo</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">filename</span><span class="p">[</span><span class="mi">256</span><span class="p">];</span>  <span class="c1">// 檔名</span>
+    <span class="kt">int</span> <span class="n">filesize</span><span class="p">;</span>  <span class="c1">// 檔案大小</span>
+  <span class="p">}</span> <span class="n">file_info</span><span class="p">;</span>  <span class="c1">// 變數名</span>
+  <span class="c1">// 清空</span>
+  <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">file_info</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">file_info</span><span class="p">));</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">file_info</span><span class="p">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>  <span class="c1">// 檔名</span>
+  <span class="n">file_info</span><span class="p">.</span><span class="n">filesize</span> <span class="o">=</span> <span class="n">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">4</span><span class="p">]);</span>  <span class="c1">// 檔案大小  </span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="傳送檔名與檔案大小-1">傳送檔名與檔案大小</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre>  <span class="c1">// 傳送檔名與檔案大小</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="o">&amp;</span><span class="n">file_info</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">file_info</span><span class="p">))</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">"send"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="傳送完檔名與檔案後取得server回應">傳送完檔名與檔案後，取得server回應</h3>
+
+<p>傳送完檔名與檔案大小，要等待server回應”ok”，代表server收到檔名與大小。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre>  <span class="c1">// 收到server回應</span>
+  <span class="n">string</span> <span class="n">buffer</span><span class="p">;</span>
+  <span class="c1">// 參數2，"ok"是2byte</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">recv</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">"recv"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span> <span class="o">!=</span> <span class="s">"ok"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"server沒回應ok"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="呼叫傳送檔案">呼叫傳送檔案</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre>  <span class="c1">// 傳送檔案</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">sendFile</span><span class="p">(</span><span class="n">file_info</span><span class="p">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filesize</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">"sendFile"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="傳送檔案後取得server回應">傳送檔案後，取得server回應</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre>  <span class="c1">// 參數2，"ok"是2byte</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">recv</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">"recv"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span> <span class="o">!=</span> <span class="s">"ok"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"傳送檔案失敗"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"client 傳送檔案成功"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
 <h2 id="server">server</h2>
 
-<h3 id="systemctl">systemctl</h3>
-
-<p>以下bash指令都是在ubuntu下進行</p>
-
-<p>systemctl指令是對服務進行管理</p>
-
-<p>語法</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl 操作 服務名
-</code></pre></div></div>
-
-<p>以下為開啟服務，停止服務，重啟服務，查看服務狀態，檢查是否啟動</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl start 服務名
-$ sudo systemctl stop 服務名
-$ sudo systemctl restart 服務名
-$ sudo systemctl status 服務名
-$ sudo systemctl is-active 服務名
-</code></pre></div></div>
-
-<p>Linux重新開機後會自動啟動服務</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl enable 服務名
-</code></pre></div></div>
-
-<p>Linux重新開機後會關閉自動啟動服務</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl disable 服務名
-</code></pre></div></div>
-
-<p>查看是否為開始自動啟動服務</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl is-enabled 服務名
-</code></pre></div></div>
-
-<h3 id="防火牆">防火牆</h3>
-<p>以下步驟是更新 -&gt; 安裝防火牆 -&gt; 啟動防火牆 -&gt; 查看防火牆狀態為active(啟動)</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get update
-$ sudo apt-get install ufw
-$ sudo systemctl start ufw
-$ sudo systemctl status ufw
-● ufw.service
-     Loaded: not-found (Reason: Unit ufw.service not found.)
-     Active: active (exited) since Wed 2025-01-15 09:24:41 CST; 8min ago
-   Main PID: 31048 (code=exited, status=0/SUCCESS)
-        CPU: 501ms
-</code></pre></div></div>
-
-<h3 id="open-listen-port">open listen port</h3>
-<p>增加對外開放的port</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo ufw allow 1234
-$ sudo ufw status
-
-狀態： 啓用
-
-至                          動作          來自
--                          --          --
-1234                       ALLOW       Anywhere                  
-1234 (v6)                  ALLOW       Anywhere (v6)  
-</code></pre></div></div>
-
-<p>增加iptable</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo iptables -I INPUT -p tcp -m tcp --dport 1234 -j ACCEP
-$ sudo iptables -L -n
-Chain INPUT (policy ACCEPT)
-target     prot opt source               destination         
-ACCEPT     6    --  0.0.0.0/0            0.0.0.0/0            tcp dpt:1234
-
-Chain FORWARD (policy ACCEPT)
-target     prot opt source               destination         
-
-Chain OUTPUT (policy ACCEPT)
-target     prot opt source               destination     
-</code></pre></div></div>
-
-<h3 id="編譯執行程式">編譯執行程式</h3>
-
-<p>編譯執行此頁最下面<a href="#server程式碼">server程式碼</a></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vi server_test.cpp
-$ g++ -o server_test server_test.cpp
-$ ./server_test 1234
-</code></pre></div></div>
-
-<p>打開另一個ssh終端機，要確認有0 0.0.0.0:1234</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo netstat -tunlp
-(Not all processes could be identified, non-owned process info
- will not be shown, you would have to be root to see it all.)
-Active Internet connections (only servers)
-Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      -                   
-tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN      -                   
-tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      -                   
-tcp        0      0 0.0.0.0:1234            0.0.0.0:*               LISTEN      33757/./server_test 
-</code></pre></div></div>
-
-<p>打開另一個ssh終端機，檢查是否能連上1234 port</p>
-
-<p>有出現’^]’這個符號，代表可以連上。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ telnet 192.168.235.128 1234
-Trying 192.168.235.128...
-Connected to 192.168.235.128.
-Escape character is '^]'.
-</code></pre></div></div>
-
-<p>打開另一個ssh終端機，把上面<a href="#client建立socket">client建立socket程式碼</a>編譯執行</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vi client_test.cpp
-$ g++ -o client_test client_test.cpp
-$ ./client_test 192.168.235.128 1234
-</code></pre></div></div>
-
-<p>執行結果</p>
-
-<p>sever_test</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./server_test 1234
-client已連上
-收到client data = data 1
-send = ok
-收到client data = data 2
-send = ok
-收到client data = data 3
-send = ok
-iret = 0
-</code></pre></div></div>
-
-<p>client_test</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./client_test 192.168.235.128 1234
-傳送給伺服器 = data 1
-伺服器的回應 = ok
-傳送給伺服器 = data 2
-伺服器的回應 = ok
-傳送給伺服器 = data 3
-伺服器的回應 = ok
-</code></pre></div></div>
-
-<h3 id="server程式碼">server程式碼</h3>
-
-<p>建立監聽socket與接受clinet連線的流程:</p>
-
-<p>建立監聽listen socket()函式 -&gt; 轉換port變成big-endian -&gt; bind()綁定ip與port -&gt; listen()開始監聽 -&gt; accept()接受client連線，傳回client socket</p>
-
-<p>傳輸流程如下:</p>
-
-<p>send()傳送資料 -&gt; recv()接收資料</p>
-
-<p>監聽socket與client socket的區別:</p>
-<ul>
-  <li>監聽listen socket只能建立連線</li>
-  <li>client的socket可以與用戶端傳送與接收資料</li>
-</ul>
+<h3 id="接收檔名與大小">接收檔名與大小</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1789,178 +1533,16 @@ iret = 0
 4
 5
 6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;netdb.h&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;sys/types.h&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;sys/socket.h&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;arpa/inet.h&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入 ./server_test port"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  <span class="c1">// 收到client傳來的檔案結構</span>
+  <span class="kt">bool</span> <span class="nf">recv</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">buffer</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">::</span><span class="n">recv</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span>
+      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
   <span class="p">}</span>
-  <span class="c1">// 建立監聽fd listen_fd，失敗傳回-1</span>
-  <span class="kt">int</span> <span class="n">listen_fd</span> <span class="o">=</span> <span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="n">IPPROTO_TCP</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">listen_fd</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">perror</span><span class="p">(</span><span class="s">"socket"</span><span class="p">);</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">// sockaddr_in結構</span>
-  <span class="k">struct</span> <span class="nc">sockaddr_in</span> <span class="n">server_addr</span><span class="p">;</span>
-  <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">server_addr</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">server_addr</span><span class="p">));</span>
-  <span class="n">server_addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
-  <span class="c1">// server port</span>
-  <span class="n">server_addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="n">htons</span><span class="p">(</span><span class="n">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]));</span>
-  <span class="c1">// server有多個ip，所有ip都會監聽port</span>
-  <span class="n">server_addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="n">htonl</span><span class="p">(</span><span class="n">INADDR_ANY</span><span class="p">);</span>
-  <span class="c1">// 綁定監聽器，失敗傳回-1</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">bind</span><span class="p">(</span><span class="n">listen_fd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="nc">sockaddr</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">server_addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">server_addr</span><span class="p">))</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">perror</span><span class="p">(</span><span class="s">"bind error"</span><span class="p">);</span>
-    <span class="c1">// 關閉監聽器</span>
-    <span class="n">close</span><span class="p">(</span><span class="n">listen_fd</span><span class="p">);</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">// 最多只讓3個client同時連server</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">listen</span><span class="p">(</span><span class="n">listen_fd</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span> <span class="p">{</span>
-    <span class="n">perror</span><span class="p">(</span><span class="s">"listen"</span><span class="p">);</span>
-    <span class="n">close</span><span class="p">(</span><span class="n">listen_fd</span><span class="p">);</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">// 接受client連接</span>
-  <span class="kt">int</span> <span class="n">client_fd</span> <span class="o">=</span> <span class="n">accept</span><span class="p">(</span><span class="n">listen_fd</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">client_fd</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">perror</span><span class="p">(</span><span class="s">"accept"</span><span class="p">);</span>
-    <span class="n">close</span><span class="p">(</span><span class="n">listen_fd</span><span class="p">);</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"client已連上"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="kt">char</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">1024</span><span class="p">];</span>
-  <span class="c1">// 一定要用無限循環，等待client連上來</span>
-  <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">iret</span><span class="p">;</span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buffer</span><span class="p">));</span>
-    <span class="c1">// 如果client沒有send data，recv()會等待</span>
-    <span class="c1">// 如果client斷線，recv()傳回0</span>
-    <span class="c1">// iret = -1 失敗</span>
-    <span class="c1">// iret = 0 socket斷線</span>
-    <span class="c1">// iret &gt; 0 收到資料    </span>
-    <span class="k">if</span> <span class="p">((</span><span class="n">iret</span> <span class="o">=</span> <span class="n">recv</span><span class="p">(</span><span class="n">client_fd</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buffer</span><span class="p">),</span> <span class="mi">0</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"iret = "</span> <span class="o">&lt;&lt;</span> <span class="n">iret</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-      <span class="c1">// 斷線 = 0就跳出無限循環</span>
-      <span class="k">break</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"收到client data = "</span> <span class="o">&lt;&lt;</span> <span class="n">buffer</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">// 建立回應的資料給client</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="s">"ok"</span><span class="p">);</span>
-    <span class="c1">// 傳送回應的資料</span>
-    <span class="k">if</span> <span class="p">((</span><span class="n">iret</span> <span class="o">=</span> <span class="n">send</span><span class="p">(</span><span class="n">client_fd</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span><span class="n">strlen</span><span class="p">(</span><span class="n">buffer</span><span class="p">),</span> <span class="mi">0</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">perror</span><span class="p">(</span><span class="s">"send"</span><span class="p">);</span>
-      <span class="k">break</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"send = "</span> <span class="o">&lt;&lt;</span> <span class="n">buffer</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="n">close</span><span class="p">(</span><span class="n">listen_fd</span><span class="p">);</span>
-  <span class="n">close</span><span class="p">(</span><span class="n">client_fd</span><span class="p">);</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<hr />
-
-<h2 id="封裝socket">封裝Socket</h2>
-
-<p>Prerequisites:</p>
-<ul>
-  <li><a href="/pages/c/stl/string/#讀取string位置">使用陣列索引取得記憶體位址</a></li>
-  <li><a href="/pages/c/stl/string/#取得string物件存放字串的記憶體位址">data()取得記憶體位址</a></li>
-  <li><a href="/pages/c/string/string_convert/#char-to-string">cstring與string連結</a></li>
-  <li><a href="/pages/c/stl/string/#resize">resize()</a></li>
-  <li><a href="/pages/c/stl/string/#取得string物件實際使用大小">string size</a></li>
-  <li><a href="/pages/c/stl/string/#字串作為函式參數">string參數</a></li>
-</ul>
-
-<p>封裝，物件導向中用來實作資訊隱藏的機制，確保物件的安全。其作法為：隱藏不想讓外界碰觸的成員，只公開接受外界存取的成員。</p>
-
-<p>使用::connect()，::二個冒號是使用Standard Library中的全域函式connect()，並不是自己建立的成員函式connect()。</p>
-
-<p><code class="language-plaintext highlighter-rouge">send(const string &amp;buffer)</code>，參數使用const string是因為既可支援string，也可支援const char*</p>
-
-<h3 id="client">client</h3>
+<h3 id="接收檔案">接收檔案</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1988,251 +1570,137 @@ iret = 0
 23
 24
 25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;netdb.h&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;sys/types.h&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;sys/socket.h&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;arpa/inet.h&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">class</span> <span class="nc">TCPClient</span> <span class="p">{</span>
- <span class="nl">public:</span>
-  <span class="c1">// 建構子，初始化client_fd，-1代表沒有連線</span>
-  <span class="n">TCPClient</span><span class="p">()</span> <span class="o">:</span> <span class="n">client_fd_</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{}</span>
-  <span class="kt">bool</span> <span class="n">connect</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">ip</span><span class="p">,</span> <span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">port</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// client_fd若已連線，就不用再連，直接返回</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">client_fd_</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="n">ip_</span> <span class="o">=</span> <span class="n">ip</span><span class="p">;</span>
-    <span class="n">port_</span> <span class="o">=</span> <span class="n">port</span><span class="p">;</span>
-    <span class="n">client_fd_</span> <span class="o">=</span> <span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="n">IPPROTO_TCP</span><span class="p">);</span>
-    <span class="c1">// socket失敗傳回-1</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">client_fd_</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="c1">// server ip轉big-endian</span>
-    <span class="k">struct</span> <span class="nc">hostent</span><span class="o">*</span> <span class="n">h</span><span class="p">;</span>
-    <span class="c1">// gethostbyname需要cstring，所以要把string轉成cstring</span>
-    <span class="k">if</span> <span class="p">((</span><span class="n">h</span> <span class="o">=</span> <span class="n">gethostbyname</span><span class="p">(</span><span class="n">ip_</span><span class="p">.</span><span class="n">c_str</span><span class="p">()))</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"gethostbyname() fail."</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-      <span class="c1">// 關閉socket</span>
-      <span class="o">::</span><span class="n">close</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">);</span>
-      <span class="c1">// 失敗把client_fd還原成初始化-1</span>
-      <span class="n">client_fd_</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</pre></td><td class="code"><pre>  
+  <span class="kt">bool</span> <span class="nf">recvFile</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">file_name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">file_size</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">ofstream</span> <span class="n">fout</span><span class="p">;</span>
+    <span class="n">fout</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">ios</span><span class="o">::</span><span class="n">binary</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">fout</span><span class="p">.</span><span class="n">is_open</span><span class="p">()</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"open file "</span> <span class="o">&lt;&lt;</span> <span class="n">file_name</span> <span class="o">&lt;&lt;</span> <span class="s">"fail"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
       <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="c1">// sockaddr_in結構</span>
-    <span class="k">struct</span> <span class="nc">sockaddr_in</span> <span class="n">server_addr</span><span class="p">;</span>
-    <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">server_addr</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">server_addr</span><span class="p">));</span>
-    <span class="n">server_addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
-    <span class="c1">// server ip</span>
-    <span class="n">memcpy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">server_addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">h_addr</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">h_length</span><span class="p">);</span>
-    <span class="c1">// server port</span>
-    <span class="n">server_addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="n">htons</span><span class="p">(</span><span class="n">port_</span><span class="p">);</span>
-    <span class="c1">// connect伺服器，傳回值為0代表連線成功，不是0代表連線失敗</span>
-    <span class="k">if</span> <span class="p">(</span><span class="o">::</span><span class="n">connect</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="nc">sockaddr</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">server_addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">server_addr</span><span class="p">))</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-      <span class="c1">// 關閉socket</span>
-      <span class="o">::</span><span class="n">close</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">);</span>
-      <span class="c1">// 失敗把client_fd還原成初始化-1</span>
-      <span class="n">client_fd_</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">total_bytes</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">read</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">7</span><span class="p">];</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">file_size</span> <span class="o">-</span> <span class="n">total_bytes</span> <span class="o">&gt;</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">read</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">read</span> <span class="o">=</span> <span class="n">file_size</span> <span class="o">-</span> <span class="n">total_bytes</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">recv</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">read</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+      <span class="n">fout</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">read</span><span class="p">);</span>
+      <span class="n">total_bytes</span> <span class="o">+=</span> <span class="n">read</span><span class="p">;</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">total_bytes</span> <span class="o">==</span> <span class="n">file_size</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
     <span class="p">}</span>
     <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
   <span class="p">}</span>
-  <span class="c1">// 參數使用const string是因為既可支援string，也可支援const char*</span>
-  <span class="kt">bool</span> <span class="n">send</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">buffer</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// client_fd若已斷線，直接返回</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">client_fd_</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="c1">// send()第2個參數填記憶體位址，第3個參數填大小</span>
-    <span class="k">if</span> <span class="p">((</span><span class="o">::</span><span class="n">send</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">,</span> <span class="n">buffer</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span> <span class="n">buffer</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span> <span class="mi">0</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span>
-      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">// 第一個參數要修改buffer的內容，所以不加const</span>
-  <span class="kt">bool</span> <span class="n">recv</span><span class="p">(</span><span class="n">string</span> <span class="o">&amp;</span><span class="n">buffer</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">maxlen</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// 清空string</span>
-    <span class="n">buffer</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
-    <span class="c1">// 分配記憶體大小</span>
-    <span class="n">buffer</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">maxlen</span><span class="p">);</span>
-    <span class="c1">// 收到的資料放在buffer的記憶體空間</span>
-    <span class="c1">// 操作到string的記憶體位址，有對string物件進行讀取與寫入</span>
-    <span class="c1">// 第2個參數填不是const的記憶體位址，第3個參數填大小</span>
-    <span class="c1">// &amp;buffer[0]取得位址，傳回值不是const</span>
-    <span class="c1">// buffer.data()傳回值是const，所以不用</span>
-    <span class="c1">// recv()傳回值是收到的資料大小</span>
-    <span class="kt">int</span> <span class="n">iret</span> <span class="o">=</span> <span class="o">::</span><span class="n">recv</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">buffer</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">buffer</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span> <span class="mi">0</span><span class="p">);</span>
-    <span class="c1">// iret = -1 失敗</span>
-    <span class="c1">// iret = 0 socket斷線</span>
-    <span class="c1">// iret &gt; 0 收到資料</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">iret</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-      <span class="c1">// 失敗時把buffer清空，否則buffer大小一直維持1024</span>
-      <span class="n">buffer</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
-      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">// 如果有操作到string的記憶體位址，string的自動擴展空間會失效</span>
-    <span class="c1">// 需要自己重設string大小</span>
-    <span class="c1">// 從1024大小，設為真正收到資料的大小</span>
-    <span class="n">buffer</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">iret</span><span class="p">);</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="kt">bool</span> <span class="n">close</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// client_fd若已斷線，直接返回</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">client_fd_</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="o">::</span><span class="n">close</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">);</span>
-    <span class="n">client_fd_</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="o">~</span><span class="n">TCPClient</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">close</span><span class="p">();</span>
-  <span class="p">}</span>
- <span class="nl">private:</span>
-  <span class="kt">int</span> <span class="n">client_fd_</span><span class="p">;</span>
-  <span class="n">string</span> <span class="n">ip_</span><span class="p">;</span>
-  <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">port_</span><span class="p">;</span>
-<span class="p">};</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="main參數-1">main參數</h3>
+
+<p>改為傳送3個參數，<code class="language-plaintext highlighter-rouge">./server_test port 存放目錄</code></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre>  
   <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入 ./client_test ip port"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入 ./server_test port 存放目錄"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
   <span class="p">}</span>
-  <span class="c1">// 建立socket</span>
-  <span class="n">TCPClient</span> <span class="n">tcp_client</span><span class="p">;</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">connect</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">perror</span><span class="p">(</span><span class="s">"socket"</span><span class="p">);</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">// send data給伺服器</span>
-  <span class="n">string</span> <span class="n">buffer</span><span class="p">;</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">buffer</span> <span class="o">=</span> <span class="s">"data "</span> <span class="o">+</span> <span class="n">to_string</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-    <span class="c1">// send buffer to server</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">perror</span><span class="p">(</span><span class="s">"send"</span><span class="p">);</span>
-      <span class="k">break</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"傳送給伺服器 = "</span> <span class="o">&lt;&lt;</span> <span class="n">buffer</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">// 收伺服器的回應，若伺服器沒回應，就會一直停在這裡等待回應，不會往下執行</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">recv</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">1024</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">perror</span><span class="p">(</span><span class="s">"rev"</span><span class="p">);</span>
-      <span class="k">break</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"伺服器的回應 = "</span> <span class="o">&lt;&lt;</span> <span class="n">buffer</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//暫停1秒</span>
-    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="server-1">server</h3>
+<h3 id="檔案結構-1">檔案結構</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre>  
+  <span class="c1">// 檔案結構</span>
+  <span class="k">struct</span> <span class="nc">FileInfo</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">filename</span><span class="p">[</span><span class="mi">256</span><span class="p">];</span>  <span class="c1">// 檔名</span>
+    <span class="kt">int</span> <span class="n">filesize</span><span class="p">;</span>  <span class="c1">// 檔案大小</span>
+  <span class="p">}</span> <span class="n">file_info</span><span class="p">;</span>  <span class="c1">// 變數名</span>
+  <span class="c1">// 清空</span>
+  <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">file_info</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">file_info</span><span class="p">));</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="接收檔名與大小-1">接收檔名與大小</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>  
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcpServer</span><span class="p">.</span><span class="n">recv</span><span class="p">(</span><span class="o">&amp;</span><span class="n">file_info</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">file_info</span><span class="p">))</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">"recv()"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"server 收到檔名 = "</span> <span class="o">&lt;&lt;</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filename</span> <span class="o">&lt;&lt;</span>
+  <span class="s">", 檔案大小 = "</span> <span class="o">&lt;&lt;</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filesize</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="回應client已收到檔名與大小">回應client已收到檔名與大小</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre> 
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcpServer</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="s">"ok"</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">"send"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="接收檔案-1">接收檔案</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre>  <span class="k">if</span> <span class="p">(</span><span class="n">tcpServer</span><span class="p">.</span><span class="n">recvFile</span><span class="p">(</span><span class="n">string</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filesize</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"檔案傳送失敗"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"檔案傳送成功"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="回應client已收到檔案">回應client已收到檔案</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">tcpServer</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="s">"ok"</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="完整程式碼">完整程式碼</h2>
+
+<h3 id="client程式碼">client程式碼</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2398,6 +1866,41 @@ iret = 0
 161
 162
 163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 #include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp">
 #include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
@@ -2405,6 +1908,410 @@ iret = 0
 #include</span> <span class="cpf">&lt;sys/types.h&gt;</span><span class="cp">
 #include</span> <span class="cpf">&lt;sys/socket.h&gt;</span><span class="cp">
 #include</span> <span class="cpf">&lt;arpa/inet.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;fstream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">class</span> <span class="nc">TCPClient</span> <span class="p">{</span>
+ <span class="nl">public:</span>
+  <span class="c1">// 建構子，初始化client_fd，-1代表沒有連線</span>
+  <span class="n">TCPClient</span><span class="p">()</span> <span class="o">:</span> <span class="n">client_fd_</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="kt">bool</span> <span class="n">connect</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">ip</span><span class="p">,</span> <span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">port</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// client_fd若已連線，就不用再連，直接返回</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">client_fd_</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="n">ip_</span> <span class="o">=</span> <span class="n">ip</span><span class="p">;</span>
+    <span class="n">port_</span> <span class="o">=</span> <span class="n">port</span><span class="p">;</span>
+    <span class="n">client_fd_</span> <span class="o">=</span> <span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="n">IPPROTO_TCP</span><span class="p">);</span>
+    <span class="c1">// socket失敗傳回-1</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">client_fd_</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="c1">// server ip轉big-endian</span>
+    <span class="k">struct</span> <span class="nc">hostent</span><span class="o">*</span> <span class="n">h</span><span class="p">;</span>
+    <span class="c1">// gethostbyname需要cstring，所以要把string轉成cstring</span>
+    <span class="k">if</span> <span class="p">((</span><span class="n">h</span> <span class="o">=</span> <span class="n">gethostbyname</span><span class="p">(</span><span class="n">ip_</span><span class="p">.</span><span class="n">c_str</span><span class="p">()))</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"gethostbyname() fail."</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+      <span class="c1">// 關閉socket</span>
+      <span class="o">::</span><span class="n">close</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">);</span>
+      <span class="c1">// 失敗把client_fd還原成初始化-1</span>
+      <span class="n">client_fd_</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// sockaddr_in結構</span>
+    <span class="k">struct</span> <span class="nc">sockaddr_in</span> <span class="n">server_addr</span><span class="p">;</span>
+    <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">server_addr</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">server_addr</span><span class="p">));</span>
+    <span class="n">server_addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
+    <span class="c1">// server ip</span>
+    <span class="n">memcpy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">server_addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">h_addr</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">h_length</span><span class="p">);</span>
+    <span class="c1">// server port</span>
+    <span class="n">server_addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="n">htons</span><span class="p">(</span><span class="n">port_</span><span class="p">);</span>
+    <span class="c1">// connect伺服器，傳回值為0代表連線成功，不是0代表連線失敗</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">::</span><span class="n">connect</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="nc">sockaddr</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">server_addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">server_addr</span><span class="p">))</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// 關閉socket</span>
+      <span class="o">::</span><span class="n">close</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">);</span>
+      <span class="c1">// 失敗把client_fd還原成初始化-1</span>
+      <span class="n">client_fd_</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">// 參數使用const string是因為既可支援string，也可支援const char*</span>
+  <span class="kt">bool</span> <span class="n">send</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">buffer</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// client_fd若已斷線，直接返回</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">client_fd_</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="c1">// send()第2個參數填記憶體位址，第3個參數填大小</span>
+    <span class="k">if</span> <span class="p">((</span><span class="o">::</span><span class="n">send</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">,</span> <span class="n">buffer</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span> <span class="n">buffer</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span> <span class="mi">0</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span>
+      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">// 傳送檔名與大小</span>
+  <span class="kt">bool</span> <span class="n">send</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="n">buffer</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// client_fd若已斷線，直接返回</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">client_fd_</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="c1">// send()第2個參數填記憶體位址，第3個參數填大小</span>
+    <span class="k">if</span> <span class="p">((</span><span class="o">::</span><span class="n">send</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span>
+      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">// 傳送檔案</span>
+  <span class="kt">bool</span> <span class="n">sendFile</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">file_name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">file_size</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 參數2指定binaryfile</span>
+    <span class="n">ifstream</span> <span class="n">fin</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">ios</span><span class="o">::</span><span class="n">binary</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">fin</span><span class="p">.</span><span class="n">is_open</span><span class="p">()</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"open file ("</span> <span class="o">&lt;&lt;</span> <span class="n">file_name</span> <span class="o">&lt;&lt;</span> <span class="s">") fail"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// 每次要讀資料的個數(byte)</span>
+    <span class="kt">int</span> <span class="n">read</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="c1">// 記錄已傳送資料的個數，若total_byte == file_size代表傳送完</span>
+    <span class="kt">int</span> <span class="n">total_bytes</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="c1">// 每次只傳送7byte</span>
+    <span class="kt">char</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">7</span><span class="p">];</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// 清空</span>
+      <span class="n">memset</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buffer</span><span class="p">));</span>
+      <span class="c1">// 如果剩下的byte數量，大於7個，就傳送7個</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">file_size</span> <span class="o">-</span> <span class="n">total_bytes</span> <span class="o">&gt;</span> <span class="mi">7</span><span class="p">)</span>
+        <span class="n">read</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+      <span class="k">else</span>
+        <span class="c1">//小於7，就傳小於7的數量</span>
+        <span class="n">read</span> <span class="o">=</span> <span class="n">file_size</span> <span class="o">-</span> <span class="n">total_bytes</span><span class="p">;</span>
+      <span class="n">fin</span><span class="p">.</span><span class="n">read</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">read</span><span class="p">);</span>
+      <span class="c1">// 把讀到的資料送給server</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">send</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">read</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+      <span class="c1">// 加上已傳送的數量</span>
+      <span class="n">total_bytes</span> <span class="o">+=</span> <span class="n">read</span><span class="p">;</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">total_bytes</span> <span class="o">==</span> <span class="n">file_size</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">// 第一個參數要修改buffer的內容，所以不加const</span>
+  <span class="kt">bool</span> <span class="n">recv</span><span class="p">(</span><span class="n">string</span> <span class="o">&amp;</span><span class="n">buffer</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">maxlen</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 清空string</span>
+    <span class="n">buffer</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+    <span class="c1">// 分配記憶體大小</span>
+    <span class="n">buffer</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">maxlen</span><span class="p">);</span>
+    <span class="c1">// 收到的資料放在buffer的記憶體空間</span>
+    <span class="c1">// 操作到string的記憶體位址，有對string物件進行讀取與寫入</span>
+    <span class="c1">// 第2個參數填不是const的記憶體位址，第3個參數填大小</span>
+    <span class="c1">// &amp;buffer[0]取得位址，傳回值不是const</span>
+    <span class="c1">// buffer.data()傳回值是const，所以不用</span>
+    <span class="c1">// recv()傳回值是收到的資料大小</span>
+    <span class="kt">int</span> <span class="n">iret</span> <span class="o">=</span> <span class="o">::</span><span class="n">recv</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">buffer</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">buffer</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="c1">// iret = -1 失敗</span>
+    <span class="c1">// iret = 0 socket斷線</span>
+    <span class="c1">// iret &gt; 0 收到資料</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">iret</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// 失敗時把buffer清空，否則buffer大小一直維持1024</span>
+      <span class="n">buffer</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// 如果有操作到string的記憶體位址，string的自動擴展空間會失效</span>
+    <span class="c1">// 需要自己重設string大小</span>
+    <span class="c1">// 從1024大小，設為真正收到資料的大小</span>
+    <span class="n">buffer</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">iret</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="kt">bool</span> <span class="n">close</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// client_fd若已斷線，直接返回</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">client_fd_</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="o">::</span><span class="n">close</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">);</span>
+    <span class="n">client_fd_</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="o">~</span><span class="n">TCPClient</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">close</span><span class="p">();</span>
+  <span class="p">}</span>
+ <span class="nl">private:</span>
+  <span class="kt">int</span> <span class="n">client_fd_</span><span class="p">;</span>
+  <span class="n">string</span> <span class="n">ip_</span><span class="p">;</span>
+  <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">port_</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">!=</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入 ./client_test ip port 檔名 檔案大小"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">// 建立socket</span>
+  <span class="n">TCPClient</span> <span class="n">tcp_client</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">connect</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">"socket"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">// 檔案結構</span>
+  <span class="k">struct</span> <span class="nc">FileInfo</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">filename</span><span class="p">[</span><span class="mi">256</span><span class="p">];</span>  <span class="c1">// 檔名</span>
+    <span class="kt">int</span> <span class="n">filesize</span><span class="p">;</span>  <span class="c1">// 檔案大小</span>
+  <span class="p">}</span> <span class="n">file_info</span><span class="p">;</span>  <span class="c1">// 變數名</span>
+  <span class="c1">// 清空</span>
+  <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">file_info</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">file_info</span><span class="p">));</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">file_info</span><span class="p">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>  <span class="c1">// 檔名</span>
+  <span class="n">file_info</span><span class="p">.</span><span class="n">filesize</span> <span class="o">=</span> <span class="n">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">4</span><span class="p">]);</span>  <span class="c1">// 檔案大小</span>
+  <span class="c1">// 傳送結構(檔名與檔案大小)</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="o">&amp;</span><span class="n">file_info</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">file_info</span><span class="p">))</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">"send"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"傳送檔名 = "</span> <span class="o">&lt;&lt;</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filename</span> <span class="o">&lt;&lt;</span>
+  <span class="s">", 檔案大小 = "</span> <span class="o">&lt;&lt;</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filesize</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">// 收到server回應</span>
+  <span class="n">string</span> <span class="n">buffer</span><span class="p">;</span>
+  <span class="c1">// 參數2，"ok"是2byte</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">recv</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">"recv"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span> <span class="o">!=</span> <span class="s">"ok"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"server沒回應ok"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">// 傳送檔案</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">sendFile</span><span class="p">(</span><span class="n">file_info</span><span class="p">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filesize</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">"sendFile"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">// 參數2，"ok"是2byte</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">recv</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">"recv"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span> <span class="o">!=</span> <span class="s">"ok"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"傳送檔案失敗"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"client 傳送檔案成功"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="server程式碼">server程式碼</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;netdb.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;sys/types.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;sys/socket.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;arpa/inet.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;fstream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">class</span> <span class="nc">TCPServer</span> <span class="p">{</span>
  <span class="nl">public:</span>
@@ -2494,6 +2401,36 @@ iret = 0
     <span class="n">buffer</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">iret</span><span class="p">);</span>
     <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
   <span class="p">}</span>
+  <span class="c1">// 收到client傳來的檔案結構</span>
+  <span class="kt">bool</span> <span class="n">recv</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">buffer</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">::</span><span class="n">recv</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span>
+      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="kt">bool</span> <span class="n">recvFile</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">file_name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">file_size</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">ofstream</span> <span class="n">fout</span><span class="p">;</span>
+    <span class="n">fout</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">ios</span><span class="o">::</span><span class="n">binary</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">fout</span><span class="p">.</span><span class="n">is_open</span><span class="p">()</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"open file "</span> <span class="o">&lt;&lt;</span> <span class="n">file_name</span> <span class="o">&lt;&lt;</span> <span class="s">"fail"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kt">int</span> <span class="n">total_bytes</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">read</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">7</span><span class="p">];</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">file_size</span> <span class="o">-</span> <span class="n">total_bytes</span> <span class="o">&gt;</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">read</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">read</span> <span class="o">=</span> <span class="n">file_size</span> <span class="o">-</span> <span class="n">total_bytes</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">recv</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">read</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+      <span class="n">fout</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">read</span><span class="p">);</span>
+      <span class="n">total_bytes</span> <span class="o">+=</span> <span class="n">read</span><span class="p">;</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">total_bytes</span> <span class="o">==</span> <span class="n">file_size</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="p">}</span>
   <span class="c1">// 關閉監聽socket</span>
   <span class="kt">bool</span> <span class="n">closeListen</span><span class="p">()</span> <span class="p">{</span>
     <span class="c1">// 若未初始化，直接返回</span>
@@ -2524,8 +2461,8 @@ iret = 0
   <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">port_</span><span class="p">;</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入 ./server_test port"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"請輸入 ./server_test port 存放目錄"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="c1">// 建立監聽fd listen_fd</span>
@@ -2541,29 +2478,57 @@ iret = 0
     <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"client已連上 = "</span> <span class="o">&lt;&lt;</span> <span class="n">tcpServer</span><span class="p">.</span><span class="n">getClientIp</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">string</span> <span class="n">buffer</span><span class="p">;</span>
-  <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// 如果client沒有send data，recv()會等待</span>
-    <span class="c1">// 收到0，代表斷線</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">tcpServer</span><span class="p">.</span><span class="n">recv</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">1024</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">perror</span><span class="p">(</span><span class="s">"recv()"</span><span class="p">);</span>
-      <span class="k">break</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"收到client data = "</span> <span class="o">&lt;&lt;</span> <span class="n">buffer</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">// 建立回應的資料給client</span>
-    <span class="n">buffer</span> <span class="o">=</span> <span class="s">"ok"</span><span class="p">;</span>
-    <span class="c1">// 傳送回應的資料</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">tcpServer</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">perror</span><span class="p">(</span><span class="s">"send"</span><span class="p">);</span>
-      <span class="k">break</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"send = "</span> <span class="o">&lt;&lt;</span> <span class="n">buffer</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">// 檔案結構</span>
+  <span class="k">struct</span> <span class="nc">FileInfo</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">filename</span><span class="p">[</span><span class="mi">256</span><span class="p">];</span>  <span class="c1">// 檔名</span>
+    <span class="kt">int</span> <span class="n">filesize</span><span class="p">;</span>  <span class="c1">// 檔案大小</span>
+  <span class="p">}</span> <span class="n">file_info</span><span class="p">;</span>  <span class="c1">// 變數名</span>
+  <span class="c1">// 清空</span>
+  <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">file_info</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">file_info</span><span class="p">));</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcpServer</span><span class="p">.</span><span class="n">recv</span><span class="p">(</span><span class="o">&amp;</span><span class="n">file_info</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">file_info</span><span class="p">))</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">"recv()"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
   <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"server 收到檔名 = "</span> <span class="o">&lt;&lt;</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filename</span> <span class="o">&lt;&lt;</span>
+  <span class="s">", 檔案大小 = "</span> <span class="o">&lt;&lt;</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filesize</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcpServer</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="s">"ok"</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">"send"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcpServer</span><span class="p">.</span><span class="n">recvFile</span><span class="p">(</span><span class="n">string</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filesize</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"檔案傳送失敗"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"檔案傳送成功"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">tcpServer</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="s">"ok"</span><span class="p">);</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<h3 id="測試方式">測試方式</h3>
+
+<h4 id="server-1">server</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./server_test 1234 /tmp
+client已連上 = 192.168.235.128
+server 收到檔名 = test1.txt, 檔案大小 = 15890
+檔案傳送成功
+$ cd /tmp
+$ ls
+test1.txt
+VMwareDnD
+vmware-root_727-4290690966
+$ ll test1.txt
+-rw-rw-r-- 1 cici cici 15890  1月 17 13:03 test1.txt
+</code></pre></div></div>
+
+<h4 id="client-1">client</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ll test1.txt
+-rw-rw-r-- 1 cici cici 15890 12月 31 13:33 test1.txt
+$ ./client_test 192.168.235.128 1234 test1.txt 15890
+傳送檔名 = test1.txt, 檔案大小 = 15890
+sendFile: Success
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2627,14 +2592,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/libc/semaph_que" class="navigation navigation-prev navigation-unique" aria-label="Previous page: semaphore作為condition">
+                        <a href="/pages/c/socket/fork_socket" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 多工的socket">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/socket/fork_socket" class="navigation navigation-next navigation-unique" aria-label="Next page: 多工的socket">
+                        <a href="/pages/jekyll/install/how_to_install_ruby" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝 Ruby on Mac">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2650,15 +2615,6 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
-        
-        "next": {
-            "title": "include與define",
-            "level": "1.2",
-            "depth": 1,
-            "path": "_pages/c/basic/include.md",
-            "ref": "_pages/c/basic/include.md",
-            "articles": []
-        },
         
         "dir": "ltr"
     },    "config": {
@@ -2748,8 +2704,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/socket/socket.md",
-        "mtime": "2025-01-12 00:00:00 +0800",
+        "path": "_pages/c/socket/file_socket.md",
+        "mtime": "2025-01-17 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
