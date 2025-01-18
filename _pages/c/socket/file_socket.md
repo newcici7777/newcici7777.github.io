@@ -127,7 +127,7 @@ Prerequisites:
 
 {% highlight c++ linenos %}
   // 傳送檔案
-  if (tcp_client.sendFile(file_info.filename, file_info.filesize)) {
+  if (tcp_client.sendFile(file_info.filename, file_info.filesize) == false) {
     perror("sendFile");
     return -1;
   }
@@ -148,6 +148,10 @@ Prerequisites:
 {% endhighlight %} 
 
 ## server
+
+### 接收檔案流程
+
+收到檔名與大小 -> 回應client收到檔名與大小 -> 收到檔案 -> 回應client收到檔案
 
 ### 接收檔名與大小
 {% highlight c++ linenos %}
@@ -315,8 +319,9 @@ class TCPClient {
     // client_fd若已斷線，直接返回
     if (client_fd_ == -1) return false;
     // send()第2個參數填記憶體位址，第3個參數填大小
-    if ((::send(client_fd_, buffer, size, 0)) <= 0)
+    if (::send(client_fd_, buffer, size, 0) <= 0) {
       return false;
+    }
     return true;
   }
   // 傳送檔案
@@ -432,7 +437,7 @@ int main(int argc, char *argv[]) {
     return -1;
   }
   // 傳送檔案
-  if (tcp_client.sendFile(file_info.filename, file_info.filesize)) {
+  if (tcp_client.sendFile(file_info.filename, file_info.filesize) == false) {
     perror("sendFile");
     return -1;
   }
@@ -677,7 +682,7 @@ $ ll test1.txt
 -rw-rw-r-- 1 cici cici 15890 12月 31 13:33 test1.txt
 $ ./client_test 192.168.235.128 1234 test1.txt 15890
 傳送檔名 = test1.txt, 檔案大小 = 15890
-sendFile: Success
+client 傳送檔案成功
 ```
 
 [1]: {% link _pages/c/file/file_io.md %}

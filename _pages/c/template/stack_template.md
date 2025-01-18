@@ -2,8 +2,6 @@
 title: Stack實作(int Array)
 date: 2024-04-23
 keywords: c++, stack
-prePage: 
-nextPage: 
 ---
 ## Stack int陣列實作。
 {% highlight c++ linenos %}
