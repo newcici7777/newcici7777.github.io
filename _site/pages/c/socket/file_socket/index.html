@@ -1251,6 +1251,32 @@
         </li></ul></li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> ffmpeg </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> xcode </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/ffmpeg/install_ffmpeg_mac" onclick="pageScrollToTop(this)"> FFmpeg on Mac</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> swiftui </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 事前準備 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/swift/swift_doc" onclick="pageScrollToTop(this)"> swift 文件</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> Jekyll </a><ul>
 	
 	
@@ -1494,7 +1520,7 @@
 4
 5
 </pre></td><td class="code"><pre>  <span class="c1">// 傳送檔案</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">sendFile</span><span class="p">(</span><span class="n">file_info</span><span class="p">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filesize</span><span class="p">))</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">sendFile</span><span class="p">(</span><span class="n">file_info</span><span class="p">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filesize</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">perror</span><span class="p">(</span><span class="s">"sendFile"</span><span class="p">);</span>
     <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
   <span class="p">}</span>
@@ -1910,6 +1936,7 @@
 196
 197
 198
+199
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 #include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp">
 #include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
@@ -1975,8 +2002,9 @@
     <span class="c1">// client_fd若已斷線，直接返回</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">client_fd_</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
     <span class="c1">// send()第2個參數填記憶體位址，第3個參數填大小</span>
-    <span class="k">if</span> <span class="p">((</span><span class="o">::</span><span class="n">send</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">::</span><span class="n">send</span><span class="p">(</span><span class="n">client_fd_</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
       <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
     <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="c1">// 傳送檔案</span>
@@ -2092,7 +2120,7 @@
     <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="c1">// 傳送檔案</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">sendFile</span><span class="p">(</span><span class="n">file_info</span><span class="p">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filesize</span><span class="p">))</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">tcp_client</span><span class="p">.</span><span class="n">sendFile</span><span class="p">(</span><span class="n">file_info</span><span class="p">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">file_info</span><span class="p">.</span><span class="n">filesize</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">perror</span><span class="p">(</span><span class="s">"sendFile"</span><span class="p">);</span>
     <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
   <span class="p">}</span>
@@ -2536,7 +2564,7 @@ $ ll test1.txt
 -rw-rw-r-- 1 cici cici 15890 12月 31 13:33 test1.txt
 $ ./client_test 192.168.235.128 1234 test1.txt 15890
 傳送檔名 = test1.txt, 檔案大小 = 15890
-sendFile: Success
+client 傳送檔案成功
 </code></pre></div></div>
 
 </section>
@@ -2609,7 +2637,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/jekyll/install/how_to_install_ruby" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝 Ruby on Mac">
+                        <a href="/pages/ffmpeg/install_ffmpeg_mac" class="navigation navigation-next navigation-unique" aria-label="Next page: FFmpeg on Mac">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2625,6 +2653,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "FFmpeg on Mac",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/ffmpeg/install_ffmpeg_mac.md",
+            "ref": "_pages/ffmpeg/install_ffmpeg_mac.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -2720,7 +2757,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-01-17 13:49:47 +0800"
+        "time": "2025-02-04 12:54:05 +0800"
     },
     "basePath": "",
     "book": {
