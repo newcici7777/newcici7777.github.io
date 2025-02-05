@@ -1258,21 +1258,8 @@
     	<a href="/pages/ffmpeg/install_ffmpeg_mac" onclick="pageScrollToTop(this)"> FFmpeg on Mac</a>
         
             
-                <ul><li><a href="#安裝步驟" onclick="mobilePageScrollToAnchor(this)" >安裝步驟</a><ul><li><a href="#下載ffmpeg-source-code" onclick="mobilePageScrollToAnchor(this)" >下載ffmpeg source code</a></li><li><a href="#安裝-xcode-command-line-tools" onclick="mobilePageScrollToAnchor(this)" >安裝 Xcode Command Line Tools</a></li><li><a href="#安裝gcc" onclick="mobilePageScrollToAnchor(this)" >安裝gcc</a></li><li><a href="#安裝yasm" onclick="mobilePageScrollToAnchor(this)" >安裝yasm</a></li><li><a href="#安裝ffmpeg" onclick="mobilePageScrollToAnchor(this)" >安裝ffmpeg</a></li><li><a href="#編譯ffmpeg" onclick="mobilePageScrollToAnchor(this)" >編譯ffmpeg</a></li><li><a href="#安裝ffmpeg-1" onclick="mobilePageScrollToAnchor(this)" >安裝ffmpeg</a></li><li><a href="#目錄" onclick="mobilePageScrollToAnchor(this)" >目錄</a><ul><li><a href="#lib" onclick="mobilePageScrollToAnchor(this)" >lib</a></li><li><a href="#include" onclick="mobilePageScrollToAnchor(this)" >include</a></li><li><a href="#bin" onclick="mobilePageScrollToAnchor(this)" >bin</a></li><li><a href="#share" onclick="mobilePageScrollToAnchor(this)" >share</a></li></ul></li></ul></li><li><a href="#xcode匯入ffmpeg" onclick="mobilePageScrollToAnchor(this)" >xcode匯入ffmpeg</a><ul><li><a href="#建立xcode-project" onclick="mobilePageScrollToAnchor(this)" >建立Xcode Project</a></li><li><a href="#建立目錄" onclick="mobilePageScrollToAnchor(this)" >建立目錄</a></li><li><a href="#匯入目錄" onclick="mobilePageScrollToAnchor(this)" >匯入目錄</a></li><li><a href="#建立c檔案" onclick="mobilePageScrollToAnchor(this)" >建立c檔案</a></li></ul></li></ul>
+                <ul><li><a href="#安裝步驟" onclick="mobilePageScrollToAnchor(this)" >安裝步驟</a><ul><li><a href="#下載ffmpeg-source-code" onclick="mobilePageScrollToAnchor(this)" >下載ffmpeg source code</a></li><li><a href="#安裝-xcode-command-line-tools" onclick="mobilePageScrollToAnchor(this)" >安裝 Xcode Command Line Tools</a></li><li><a href="#安裝gcc" onclick="mobilePageScrollToAnchor(this)" >安裝gcc</a></li><li><a href="#安裝yasm" onclick="mobilePageScrollToAnchor(this)" >安裝yasm</a></li><li><a href="#安裝ffmpeg" onclick="mobilePageScrollToAnchor(this)" >安裝ffmpeg</a></li><li><a href="#編譯ffmpeg" onclick="mobilePageScrollToAnchor(this)" >編譯ffmpeg</a></li><li><a href="#安裝ffmpeg-1" onclick="mobilePageScrollToAnchor(this)" >安裝ffmpeg</a></li><li><a href="#目錄" onclick="mobilePageScrollToAnchor(this)" >目錄</a><ul><li><a href="#lib" onclick="mobilePageScrollToAnchor(this)" >lib</a></li><li><a href="#include" onclick="mobilePageScrollToAnchor(this)" >include</a></li><li><a href="#bin" onclick="mobilePageScrollToAnchor(this)" >bin</a></li><li><a href="#share" onclick="mobilePageScrollToAnchor(this)" >share</a></li></ul></li></ul></li><li><a href="#xcode匯入ffmpeg" onclick="mobilePageScrollToAnchor(this)" >xcode匯入ffmpeg</a><ul><li><a href="#建立xcode-project" onclick="mobilePageScrollToAnchor(this)" >建立Xcode Project</a></li><li><a href="#建立目錄" onclick="mobilePageScrollToAnchor(this)" >建立目錄</a></li><li><a href="#匯入目錄" onclick="mobilePageScrollToAnchor(this)" >匯入目錄</a></li><li><a href="#建立c檔案" onclick="mobilePageScrollToAnchor(this)" >建立c檔案</a></li><li><a href="#手動建立bridging-header" onclick="mobilePageScrollToAnchor(this)" >手動建立Bridging Header</a></li><li><a href="#include-ffmpeg-header-file" onclick="mobilePageScrollToAnchor(this)" >include ffmpeg header file</a></li><li><a href="#swift呼叫c" onclick="mobilePageScrollToAnchor(this)" >swift呼叫c</a></li></ul></li></ul>
 
-            
-        </li></ul></li></ul></li>
-	
-	
-	<li class="chapter" data-level="1.1" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> swiftui </a><ul>
-	
-	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 事前準備 </a><ul>
-	
-	
-	<li class="">
-    	<a href="/pages/swift/swift_doc" onclick="pageScrollToTop(this)"> swift 文件</a>
-        
             
         </li></ul></li></ul></li>
 	
@@ -1447,6 +1434,26 @@ ContentView.swift	include			myapp2App.swift
 <img src="/assets/img/swift/cfile4.png" alt="img" />
 <img src="/assets/img/swift/cfile5.png" alt="img" /></p>
 
+<h3 id="手動建立bridging-header">手動建立Bridging Header</h3>
+
+<p>xcode Version 14.2，每一個版本有不同的方式。</p>
+
+<p>若先前沒有按下<code class="language-plaintext highlighter-rouge">Create Bridging Header</code>的按鈕，補救方法如下:</p>
+
+<ol>
+  <li>在 Xcode，選擇 File → New → File…</li>
+  <li>選擇 Header File (.h)，然後按 Next</li>
+  <li>命名為 專案名稱-Bridging-Header.h（例如：MyProject-Bridging-Header.h）</li>
+  <li>確保它位於你的專案內，並按 Create</li>
+</ol>
+
+<p><img src="/assets/img/swift/bridge1.png" alt="img" /></p>
+
+<p>在 Build Settings 設定 Bridging Header</p>
+
+<p><img src="/assets/img/swift/bridge2.png" alt="img" /></p>
+
+<h3 id="include-ffmpeg-header-file">include ffmpeg header file</h3>
 <p>增加以下句子在testc.h</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include "libavutil/avutil.h"
 </code></pre></div></div>
@@ -1460,12 +1467,14 @@ ContentView.swift	include			myapp2App.swift
 4
 5
 6
+7
 </pre></td><td class="code"><pre><span class="cp">#ifndef testc_h
 #define testc_h
 </span>
 <span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 #include</span> <span class="cpf">"libavutil/avutil.h"</span><span class="cp">
-#endif </span><span class="cm">/* testc_h */</span>
+</span><span class="kt">void</span> <span class="nf">printLog</span><span class="p">();</span>
+<span class="cp">#endif </span><span class="cm">/* testc_h */</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -1483,6 +1492,67 @@ ContentView.swift	include			myapp2App.swift
   <span class="n">av_log_set_level</span><span class="p">(</span><span class="n">AV_LOG_DEBUG</span><span class="p">);</span>
   <span class="n">av_log</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="n">AV_LOG_DEBUG</span><span class="p">,</span> <span class="s">"Hello world!"</span><span class="p">);</span>
   <span class="k">return</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="swift呼叫c">swift呼叫c</h3>
+<p>ViewController</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+</pre></td><td class="code"><pre><span class="n">import</span> <span class="n">Cocoa</span>
+
+<span class="k">class</span> <span class="nc">ViewController</span><span class="o">:</span> <span class="n">NSViewController</span> <span class="p">{</span>
+
+  <span class="k">override</span> <span class="n">func</span> <span class="n">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">super</span><span class="p">.</span><span class="n">viewDidLoad</span><span class="p">()</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">setFrameSize</span><span class="p">(</span><span class="n">NSSize</span><span class="p">(</span><span class="n">width</span><span class="o">:</span> <span class="mi">320</span><span class="p">,</span> <span class="n">height</span><span class="o">:</span> <span class="mi">240</span><span class="p">))</span>
+    <span class="n">let</span> <span class="n">btn</span> <span class="o">=</span> <span class="n">NSButton</span><span class="p">.</span><span class="n">init</span><span class="p">(</span><span class="n">title</span><span class="o">:</span> <span class="s">"button"</span><span class="p">,</span> <span class="n">target</span><span class="o">:</span> <span class="n">nil</span><span class="p">,</span> <span class="n">action</span><span class="o">:</span> <span class="n">nil</span><span class="p">)</span>
+    <span class="n">btn</span><span class="p">.</span><span class="n">frame</span> <span class="o">=</span> <span class="n">NSRect</span><span class="p">(</span><span class="n">x</span><span class="o">:</span> <span class="mi">320</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="mi">40</span><span class="p">,</span> <span class="n">y</span><span class="o">:</span> <span class="mi">240</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="mi">15</span><span class="p">,</span> <span class="n">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span> <span class="n">height</span><span class="o">:</span><span class="mi">30</span><span class="p">)</span>
+    <span class="n">btn</span><span class="p">.</span><span class="n">bezelStyle</span> <span class="o">=</span> <span class="p">.</span><span class="n">rounded</span>
+    <span class="n">btn</span><span class="p">.</span><span class="n">setButtonType</span><span class="p">(.</span><span class="n">pushOnPushOff</span><span class="p">)</span>
+    <span class="n">btn</span><span class="p">.</span><span class="n">target</span> <span class="o">=</span> <span class="n">self</span>
+    <span class="n">btn</span><span class="p">.</span><span class="n">action</span> <span class="o">=</span> <span class="err">#</span><span class="n">selector</span><span class="p">(</span><span class="n">myfunc</span><span class="p">)</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">addSubview</span><span class="p">(</span><span class="n">btn</span><span class="p">)</span>
+    <span class="c1">// Do any additional setup after loading the view.</span>
+  <span class="p">}</span>
+  
+  <span class="err">@</span><span class="n">objc</span>
+  <span class="n">func</span> <span class="n">myfunc</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">printLog</span><span class="p">();</span>
+  <span class="p">}</span>
+  <span class="k">override</span> <span class="n">var</span> <span class="n">representedObject</span><span class="o">:</span> <span class="n">Any</span><span class="o">?</span> <span class="p">{</span>
+    <span class="n">didSet</span> <span class="p">{</span>
+    <span class="c1">// Update the view, if already loaded.</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -1556,7 +1626,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/swift/swift_doc" class="navigation navigation-next navigation-unique" aria-label="Next page: swift 文件">
+                        <a href="/pages/jekyll/install/how_to_install_ruby" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝 Ruby on Mac">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1676,7 +1746,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-02-04 12:54:05 +0800"
+        "time": "2025-02-05 12:08:29 +0800"
     },
     "basePath": "",
     "book": {

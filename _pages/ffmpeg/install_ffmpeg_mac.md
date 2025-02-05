@@ -153,6 +153,24 @@ ContentView.swift	include			myapp2App.swift
 ![img]({{site.imgurl}}/swift/cfile4.png)
 ![img]({{site.imgurl}}/swift/cfile5.png)
 
+### 手動建立Bridging Header
+
+xcode Version 14.2，每一個版本有不同的方式。
+
+若先前沒有按下`Create Bridging Header`的按鈕，補救方法如下:
+
+1. 在 Xcode，選擇 File → New → File...
+2. 選擇 Header File (.h)，然後按 Next
+3. 命名為 專案名稱-Bridging-Header.h（例如：MyProject-Bridging-Header.h）
+4. 確保它位於你的專案內，並按 Create
+
+![img]({{site.imgurl}}/swift/bridge1.png)
+
+在 Build Settings 設定 Bridging Header
+
+![img]({{site.imgurl}}/swift/bridge2.png)
+
+### include ffmpeg header file
 增加以下句子在testc.h
 ```
 #include "libavutil/avutil.h"
@@ -165,6 +183,7 @@ testc.h
 
 #include <stdio.h>
 #include "libavutil/avutil.h"
+void printLog();
 #endif /* testc_h */
 {% endhighlight %}
 
@@ -176,5 +195,37 @@ void printLog() {
   av_log_set_level(AV_LOG_DEBUG);
   av_log(NULL, AV_LOG_DEBUG, "Hello world!");
   return;
+}
+{% endhighlight %}
+
+### swift呼叫c
+ViewController
+{% highlight c++ linenos %}
+import Cocoa
+
+class ViewController: NSViewController {
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    self.view.setFrameSize(NSSize(width: 320, height: 240))
+    let btn = NSButton.init(title: "button", target: nil, action: nil)
+    btn.frame = NSRect(x: 320/2-40, y: 240/2-15, width:80, height:30)
+    btn.bezelStyle = .rounded
+    btn.setButtonType(.pushOnPushOff)
+    btn.target = self
+    btn.action = #selector(myfunc)
+    self.view.addSubview(btn)
+    // Do any additional setup after loading the view.
+  }
+  
+  @objc
+  func myfunc() {
+    printLog();
+  }
+  override var representedObject: Any? {
+    didSet {
+    // Update the view, if already loaded.
+    }
+  }
 }
 {% endhighlight %}
