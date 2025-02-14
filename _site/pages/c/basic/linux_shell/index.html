@@ -1,0 +1,1789 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+<meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Linux shell指令 · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/base16.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/" type="image/x-icon">
+
+<link rel="stylesheet" href="/assets/custom_css/code.css">
+
+</head>
+    <body>
+        <div class="book">
+            
+            <div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                $('div.body-inner').animate({scrollTop: $($(element).attr('href')).get(0).offsetTop});
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="">
+            
+                <a href="/" onclick="pageScrollToTop(this)">
+                    Cici&#39;s notebook
+                </a>
+            </li>
+            <li class="divider"></li>
+            
+            
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> C++ </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 寫C++在MAC </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/xcode" onclick="pageScrollToTop(this)"> Xcode</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/vscode" onclick="pageScrollToTop(this)"> VS on Mac</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/clang" onclick="pageScrollToTop(this)"> 安裝VS在MAC(實作)</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/vsDebug" onclick="pageScrollToTop(this)"> VS Debug</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/cmake" onclick="pageScrollToTop(this)"> Cmake on Mac</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/supportc11" onclick="pageScrollToTop(this)"> Xcode支援C++11以上</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/rvo" onclick="pageScrollToTop(this)"> 關閉RVO</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/simpleTraditionC" onclick="pageScrollToTop(this)"> 台陸指標相關名詞差異</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 基本知識 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/format" onclick="pageScrollToTop(this)"> 程式碼格式</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料型態 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/typicalRange" onclick="pageScrollToTop(this)"> 資料型態範圍</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/charType" onclick="pageScrollToTop(this)"> char字元</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/boolType" onclick="pageScrollToTop(this)"> bool</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/printformat" onclick="pageScrollToTop(this)"> 整數與浮點數</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/typedef" onclick="pageScrollToTop(this)"> typedef類型別名</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/param" onclick="pageScrollToTop(this)"> 參數與引數</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/scope" onclick="pageScrollToTop(this)"> 變數可見範圍與生命週期</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/loop" onclick="pageScrollToTop(this)"> 迴圈</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/rand" onclick="pageScrollToTop(this)"> 亂數</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/main" onclick="pageScrollToTop(this)"> main</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/include" onclick="pageScrollToTop(this)"> include與define</a>
+        
+            
+        </li>
+	
+	
+	<li class="active">
+    	<a href="/pages/c/basic/linux_shell" onclick="pageScrollToTop(this)"> Linux shell指令</a>
+        
+            
+                <ul><li><a href="#查看檔案" onclick="mobilePageScrollToAnchor(this)" >查看檔案</a><ul><li><a href="#less分頁" onclick="mobilePageScrollToAnchor(this)" >less分頁</a></li><li><a href="#more分頁" onclick="mobilePageScrollToAnchor(this)" >more分頁</a></li><li><a href="#wc統計行數" onclick="mobilePageScrollToAnchor(this)" >wc統計行數</a></li><li><a href="#grep" onclick="mobilePageScrollToAnchor(this)" >grep</a></li><li><a href="#head" onclick="mobilePageScrollToAnchor(this)" >head</a></li><li><a href="#tail" onclick="mobilePageScrollToAnchor(this)" >tail</a></li><li><a href="#ls" onclick="mobilePageScrollToAnchor(this)" >ls</a></li><li><a href="#piple" onclick="mobilePageScrollToAnchor(this)" >piple</a></li></ul></li><li><a href="#top查看系統效能" onclick="mobilePageScrollToAnchor(this)" >top查看系統效能</a></li><li><a href="#env環境變數" onclick="mobilePageScrollToAnchor(this)" >env環境變數</a><ul><li><a href="#常用環境變數" onclick="mobilePageScrollToAnchor(this)" >常用環境變數</a><ul><li><a href="#lang系統語言" onclick="mobilePageScrollToAnchor(this)" >LANG系統語言</a></li><li><a href="#path" onclick="mobilePageScrollToAnchor(this)" >PATH</a></li><li><a href="#ld_library_path" onclick="mobilePageScrollToAnchor(this)" >LD_LIBRARY_PATH</a></li></ul></li></ul></li><li><a href="#export" onclick="mobilePageScrollToAnchor(this)" >export</a><ul><li><a href="#設定path" onclick="mobilePageScrollToAnchor(this)" >設定PATH</a></li><li><a href="#執行檔案" onclick="mobilePageScrollToAnchor(this)" >執行檔案</a></li></ul></li><li><a href="#設置使用者環境變數" onclick="mobilePageScrollToAnchor(this)" >設置使用者環境變數</a><ul><li><a href="#bash_profile" onclick="mobilePageScrollToAnchor(this)" >bash_profile</a></li><li><a href="#bashrc" onclick="mobilePageScrollToAnchor(this)" >bashrc</a></li></ul></li></ul>
+
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 編譯 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/editor/openssh_server" onclick="pageScrollToTop(this)"> 安裝openssh-server</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/compile/makefile" onclick="pageScrollToTop(this)"> makefile</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/compile/gdb" onclick="pageScrollToTop(this)"> gdb</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/compile/core_dump" onclick="pageScrollToTop(this)"> gdb core dump</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/compile/gdb_attach_pid" onclick="pageScrollToTop(this)"> gdb attach pid</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指標 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointer" onclick="pageScrollToTop(this)"> 指標基本觀念</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerConst" onclick="pageScrollToTop(this)"> const與指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerVoid" onclick="pageScrollToTop(this)"> void*任何資料型態的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/nullptr" onclick="pageScrollToTop(this)"> 0 == nullptr == NULL</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/wildPointer" onclick="pageScrollToTop(this)"> 指標位址是無效內容</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerToPointer" onclick="pageScrollToTop(this)"> 指標的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pointer/pointerArithmetic" onclick="pageScrollToTop(this)"> 指標運算</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 指向陣列的指標 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/array" onclick="pageScrollToTop(this)"> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/pointerToArray" onclick="pageScrollToTop(this)"> 一維陣列與指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/dynamicArrays" onclick="pageScrollToTop(this)"> 陣列與動態配置記憶體</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/qsort" onclick="pageScrollToTop(this)"> qsort排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/array2dimen" onclick="pageScrollToTop(this)"> 二維陣列</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/arrayOfPointers" onclick="pageScrollToTop(this)"> 指標陣列存放多個記憶體位址</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 字串 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/charArray" onclick="pageScrollToTop(this)"> char 字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/array/pointerCharArr" onclick="pageScrollToTop(this)"> char字串指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/string_convert" onclick="pageScrollToTop(this)"> string convert</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 實作字串函式 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/basic/strLen" onclick="pageScrollToTop(this)"> 取得字串長度</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/reverseStr" onclick="pageScrollToTop(this)"> 原地反轉字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/integerToStr" onclick="pageScrollToTop(this)"> 整數轉成字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/stringToInt" onclick="pageScrollToTop(this)"> 字串轉成數字</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/stringCopy" onclick="pageScrollToTop(this)"> 字串拷貝</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/stringCat" onclick="pageScrollToTop(this)"> 字串連結</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/strchr" onclick="pageScrollToTop(this)"> 字元搜尋</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/strcmp" onclick="pageScrollToTop(this)"> 字串比較</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/strstr" onclick="pageScrollToTop(this)"> 字串搜尋</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/delstr" onclick="pageScrollToTop(this)"> 刪除字元</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/split" onclick="pageScrollToTop(this)"> split 切割字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/xml" onclick="pageScrollToTop(this)"> xml搜尋</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/string/chineseAscii" onclick="pageScrollToTop(this)"> ASCII與中文</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 參考 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/reference" onclick="pageScrollToTop(this)"> 參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/refToPointer" onclick="pageScrollToTop(this)"> 參考指向指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/reference/l_ref_func" onclick="pageScrollToTop(this)"> 等號左邊的函式</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 函式 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_def" onclick="pageScrollToTop(this)"> 函式宣告與定義</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/callByValue" onclick="pageScrollToTop(this)"> 函式傳值與傳回值</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_param_pointer" onclick="pageScrollToTop(this)"> 函式參數為指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/callByRef" onclick="pageScrollToTop(this)"> 函式傳參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_return_ref" onclick="pageScrollToTop(this)"> 函式傳回值是參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_overload" onclick="pageScrollToTop(this)"> 函式多載</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_inline" onclick="pageScrollToTop(this)"> 內嵌函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_default_param" onclick="pageScrollToTop(this)"> 函式參數預設值</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/functionPointer" onclick="pageScrollToTop(this)"> 函式指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/func_ref" onclick="pageScrollToTop(this)"> 函式參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/auto_func" onclick="pageScrollToTop(this)"> auto與函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/lambda" onclick="pageScrollToTop(this)"> lambda</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/function/using_func_pointer" onclick="pageScrollToTop(this)"> using函式指標別名</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 記憶體 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/memoryLayout" onclick="pageScrollToTop(this)"> 記憶體配置</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/newDelete" onclick="pageScrollToTop(this)"> new/delete</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/nothrow" onclick="pageScrollToTop(this)"> 記憶體不足</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/memset" onclick="pageScrollToTop(this)"> memset</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dynamicMemory/memory_interval" onclick="pageScrollToTop(this)"> 記憶體間隔計算</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 結構 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_def" onclick="pageScrollToTop(this)"> 定義結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_char" onclick="pageScrollToTop(this)"> 結構與字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_init" onclick="pageScrollToTop(this)"> 初始化結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_array" onclick="pageScrollToTop(this)"> 結構陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/struct_pointer" onclick="pageScrollToTop(this)"> 指標指向結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/nestedStruct" onclick="pageScrollToTop(this)"> 巢狀結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/arrayInStruct" onclick="pageScrollToTop(this)"> 結構中的陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/pointerInStruct" onclick="pageScrollToTop(this)"> 結構中的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/struct/linked_list" onclick="pageScrollToTop(this)"> 鏈結串列</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 資料結構與演算法 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/arrayList" onclick="pageScrollToTop(this)"> ArrayList實作</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/arrayListExtCap" onclick="pageScrollToTop(this)"> ArrayList擴展容量</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/linkedList" onclick="pageScrollToTop(this)"> 單向鏈結串列實作</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/doublelinkedList" onclick="pageScrollToTop(this)"> 雙向鏈結串列實作</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/stack" onclick="pageScrollToTop(this)"> Stack實作</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/queue" onclick="pageScrollToTop(this)"> Queue實作</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/circular_queue" onclick="pageScrollToTop(this)"> circular queue環狀佇列</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/bubbleSort" onclick="pageScrollToTop(this)"> 氣泡排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/insertSort" onclick="pageScrollToTop(this)"> 插入排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/quickSort" onclick="pageScrollToTop(this)"> 快速排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/mergeSort" onclick="pageScrollToTop(this)"> 合併排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/dataStruct/recursion" onclick="pageScrollToTop(this)"> 遞迴</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 類別與物件 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/class" onclick="pageScrollToTop(this)"> 類別與物件</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/enum" onclick="pageScrollToTop(this)"> Enum列舉</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/constructor" onclick="pageScrollToTop(this)"> 建構子與解構子</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/anonymous_obj" onclick="pageScrollToTop(this)"> 匿名物件</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/temp_obj" onclick="pageScrollToTop(this)"> 臨時物件temporary object</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/init_list" onclick="pageScrollToTop(this)"> 建構子初始化列表</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/member_class" onclick="pageScrollToTop(this)"> 成員變數是類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/static_class" onclick="pageScrollToTop(this)"> 靜態類別變數與函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/copy_constructor" onclick="pageScrollToTop(this)"> 拷貝函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/deep_shallow_copy" onclick="pageScrollToTop(this)"> 深淺拷貝</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/operator_assign" onclick="pageScrollToTop(this)"> operator=()</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/functor" onclick="pageScrollToTop(this)"> operator()物件函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/operator_add" onclick="pageScrollToTop(this)"> operator+()</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/operator_equal" onclick="pageScrollToTop(this)"> operator==()</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 轉型 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/conversion/implicit" onclick="pageScrollToTop(this)"> 自動轉型</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/conversion/explicit" onclick="pageScrollToTop(this)"> 強制轉型</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 模板 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/function_template" onclick="pageScrollToTop(this)"> 函式模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/function_class_template" onclick="pageScrollToTop(this)"> 類別中函式模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/special_template" onclick="pageScrollToTop(this)"> 模板特製化</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/class_template" onclick="pageScrollToTop(this)"> 類別模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/stack_template" onclick="pageScrollToTop(this)"> Stack實作(int Array)</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/foreach_template" onclick="pageScrollToTop(this)"> foreach模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/findif_template" onclick="pageScrollToTop(this)"> find_if模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/template/bsort_template" onclick="pageScrollToTop(this)"> 氣泡排序模板</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> STL Containers </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/stl/string" onclick="pageScrollToTop(this)"> string</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/stl/iterator" onclick="pageScrollToTop(this)"> iterator疊代器</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/stl/pair" onclick="pageScrollToTop(this)"> pair</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/stl/map" onclick="pageScrollToTop(this)"> map</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> c11 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/init_list" onclick="pageScrollToTop(this)"> 初始化initializer list</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> 左值與右值 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/rvalue/l_r_value" onclick="pageScrollToTop(this)"> l-value與r-value</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/rvalue/l_r_ref" onclick="pageScrollToTop(this)"> l-value參考與r-value參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/rvalue/constRef" onclick="pageScrollToTop(this)"> const與參考</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/move_operator" onclick="pageScrollToTop(this)"> 移動建構子與移動指派運算子</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/forward" onclick="pageScrollToTop(this)"> forward</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/functional" onclick="pageScrollToTop(this)"> functional</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/bind" onclick="pageScrollToTop(this)"> bind綁定</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/variadic" onclick="pageScrollToTop(this)"> 可變參數模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/c11/callback" onclick="pageScrollToTop(this)"> callback</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> pthread </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/pthread/create_pthread" onclick="pageScrollToTop(this)"> 建立pthread</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> Thread(C11) </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/thread/create_thread" onclick="pageScrollToTop(this)"> 建立thread</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/thread/join" onclick="pageScrollToTop(this)"> 執行緒記憶體釋放</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/thread/this_thread" onclick="pageScrollToTop(this)"> this_thread</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/thread/mutex" onclick="pageScrollToTop(this)"> 互斥鎖Mutex</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/thread/condition_variable" onclick="pageScrollToTop(this)"> condition_variable</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> time </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/time/chrono" onclick="pageScrollToTop(this)"> 程式執行時間</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/time/time" onclick="pageScrollToTop(this)"> time</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> file </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/file/file_io" onclick="pageScrollToTop(this)"> File IO</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/file/file_desc" onclick="pageScrollToTop(this)"> File description</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> linux系統c函式庫 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/errno" onclick="pageScrollToTop(this)"> 取得錯誤訊息</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/file_io" onclick="pageScrollToTop(this)"> 檔案目錄操作</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/system_execl" onclick="pageScrollToTop(this)"> system與execl</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> process相關 </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/signal" onclick="pageScrollToTop(this)"> signal訊號</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/exit" onclick="pageScrollToTop(this)"> exit終止程序</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/fork" onclick="pageScrollToTop(this)"> fork 複製程序</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/kill" onclick="pageScrollToTop(this)"> kill</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/shared_memory" onclick="pageScrollToTop(this)"> Shared Memory共用記憶體</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/semaphore" onclick="pageScrollToTop(this)"> semaphore</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/libc/semaph_que" onclick="pageScrollToTop(this)"> semaphore作為condition</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> socket </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/socket" onclick="pageScrollToTop(this)"> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/fork_socket" onclick="pageScrollToTop(this)"> 多工的socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/socket/file_socket" onclick="pageScrollToTop(this)"> Socket傳送檔案</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> ffmpeg </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> xcode </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/ffmpeg/install_ffmpeg_mac" onclick="pageScrollToTop(this)"> FFmpeg on Mac</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> android </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/ffmpeg/ndk" onclick="pageScrollToTop(this)"> NDK</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> Jekyll </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="" onclick="pageScrollToTop(this)"> Install </a><ul>
+	
+	
+	<li class="">
+    	<a href="/pages/jekyll/install/how_to_install_ruby" onclick="pageScrollToTop(this)"> 安裝 Ruby on Mac</a>
+        
+            
+        </li></ul></li></ul></li></ul>
+    </nav>
+</div>
+            <div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href="." >Linux shell指令</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/pages/c/basic/linux_shell">Linux shell指令</h1>
+                    
+
+                    <h2 id="查看檔案">查看檔案</h2>
+
+<h3 id="less分頁">less分頁</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>less 檔名.副檔名
+</code></pre></div></div>
+<ol>
+  <li>q:離開</li>
+  <li>空格: 下一頁</li>
+  <li>b: 上一頁</li>
+  <li>Enter與j: 往下移動一行</li>
+  <li>k: 往上移動一行</li>
+  <li>g：跳到文件的開頭。</li>
+  <li>G：跳到文件的結尾</li>
+</ol>
+
+<h3 id="more分頁">more分頁</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>more 檔名.副檔名
+</code></pre></div></div>
+<ol>
+  <li>q:離開</li>
+  <li>空格: 下一頁</li>
+  <li>b: 上一頁</li>
+  <li>Enter與j: 往下移動一行</li>
+  <li>k: 往上移動一行</li>
+  <li>g：跳到文件的開頭。</li>
+  <li>G：跳到文件的結尾</li>
+</ol>
+
+<h3 id="wc統計行數">wc統計行數</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wc 檔名.副檔名
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>% wc config.h
+     784    2369   22076 config.h
+</code></pre></div></div>
+<ul>
+  <li>784 行數</li>
+  <li>2369 字數</li>
+  <li>22076byte 檔案大小(單位是byte)</li>
+</ul>
+
+<p>統計目前目錄所有檔案的行數,字數,檔案大小</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wc *
+</code></pre></div></div>
+
+<p>統計多個檔案</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wc 檔案1 檔案2 檔案3
+</code></pre></div></div>
+
+<h3 id="grep">grep</h3>
+
+<p>以下指令為，在ffmpeg.txt中搜尋”input”</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep "input" ffmpeg.txt
+</code></pre></div></div>
+
+<p>在所有的head檔中，搜尋那個檔案中有包含”stdio.h”</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep "stdio.h" *.h
+</code></pre></div></div>
+
+<p>執行結果</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>common.h:#include &lt;stdio.h&gt;
+file_open.h:#include &lt;stdio.h&gt;
+internal.h:#include &lt;stdio.h&gt;
+vulkan_loader.h:#include &lt;stdio.h&gt;
+</code></pre></div></div>
+<p>顯示的意思為</p>
+
+<p>檔名.副檔名: 有出現 stdio.h 的那一行</p>
+
+<h3 id="head">head</h3>
+<p>顯示檔案的前10筆</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>head 檔名.副檔名
+</code></pre></div></div>
+
+<p>顯示檔案的前15筆</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>head -n 15 檔名.副檔名
+</code></pre></div></div>
+
+<h3 id="tail">tail</h3>
+<p>顯示檔案的後10筆</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tail 檔名.副檔名
+</code></pre></div></div>
+
+<p>顯示檔案的後15筆</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tail -n 15 檔名.副檔名
+</code></pre></div></div>
+
+<p>若檔案有新增筆數(例如0.1秒新增一筆)，使用以下指令在檔案有變更時會立即更新顯示結果</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tail -f 檔名.副檔名
+</code></pre></div></div>
+<p>ctrl+c放棄追蹤更新</p>
+
+<h3 id="ls">ls</h3>
+
+<p>以下指令，最新的檔案排在最前面</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -lt
+</code></pre></div></div>
+
+<h3 id="piple">piple</h3>
+
+<p>若目錄下檔案很多，使用分頁功能查看。以下指令把ls的結果作為輸出給less指令去分頁</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -lt | less
+</code></pre></div></div>
+
+<p>查看log，使用以下指令會列出檔案中2025-01-01的log，並以分頁方式顯示</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep "2025-01-01" 檔案.log | less
+</code></pre></div></div>
+
+<p>查看行數、字數、大小</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep "2025-01-01" 檔案.log | wc
+</code></pre></div></div>
+
+<h2 id="top查看系統效能">top查看系統效能</h2>
+<p>每3秒更新cpu系統效能畫面，ctrl+c離開</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>top
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Load Avg: 3.93, 4.09, 3.47  
+</code></pre></div></div>
+<p>Load Avg:在一段時間內，cpu正在處理或等待處理的程序總合平均值，分別以最近1分鐘、5分鐘、15分鐘顯示</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Processes: 543 total, 2 running, 541 sleeping, 2150 threads 
+</code></pre></div></div>
+<p>共有543程序，2個正在執行，541個在休眠，2150個執行緒</p>
+
+<h2 id="env環境變數">env環境變數</h2>
+
+<p>顯示所有環境變數</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>env
+</code></pre></div></div>
+
+<p>使用grep搜尋要看的環境變數</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>env | grep PATH
+</code></pre></div></div>
+
+<p>環境變數分頁</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>env | less
+</code></pre></div></div>
+
+<p>使用echo顯示環境變數的值，注意！環境變數前要加錢字號$</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo $PATH
+</code></pre></div></div>
+
+<h3 id="常用環境變數">常用環境變數</h3>
+
+<h4 id="lang系統語言">LANG系統語言</h4>
+
+<p>預設中文是UTF-8</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> % echo $LANG
+en_US.UTF-8
+</code></pre></div></div>
+
+<h4 id="path">PATH</h4>
+<p>PATH的值是多個目錄，包含linux bash指令存放位置，或user的應用程式的執行檔案存放位置，以:分號分隔目錄。</p>
+
+<p>注意！環境變數前要加錢字號$</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo $PATH
+/usr/local/Cellar/ruby/3.3.0/bin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11R6/bin:/bin:/usr/bin:/usr/local/bin:/sbin:
+</code></pre></div></div>
+
+<p>例如ls指令是放在/usr/bin目錄下，如果PATH少了/usr/bin，就不能使用ls、wc、less…等等bash指令。</p>
+
+<h4 id="ld_library_path">LD_LIBRARY_PATH</h4>
+<p>c++動態庫的目錄</p>
+
+<h2 id="export">export</h2>
+
+<p>注意！export的效果只有在目前的shell中適用，重新登入就清掉了，需要設置系統環境變數才能永久有效。</p>
+
+<p>方式一</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>變數=\'值\'
+export 變數
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TEST='TEST1 TEST2 TEST3'
+export TEST
+env | grep TEST
+</code></pre></div></div>
+
+<p>方式二</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export 變數=\'值\'
+</code></pre></div></div>
+<p>如果值不是空格或特殊符號，可以不用''</p>
+
+<h3 id="設定path">設定PATH</h3>
+<p>如果要增加/Users/cici/test目錄在PATH，可以用以下指令設定，$PATH代表原來PATH變數的值，再加上:冒號，後面加上要增加的目錄</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=$PATH:/Users/cici/NDK
+</code></pre></div></div>
+
+<h3 id="執行檔案">執行檔案</h3>
+
+<p>我增加/Users/cici/testc的目錄，在目錄中，增加testc.cpp的檔案，並且編譯產生執行檔testc</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi testc.cpp
+g++ -o testc testc.cpp
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World!"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>使用<code class="language-plaintext highlighter-rouge">./</code>來執行檔案，<code class="language-plaintext highlighter-rouge">.</code>圓點代表目前的目錄下，’./testc’代表目前目錄下的testc檔案，如果只寫<code class="language-plaintext highlighter-rouge">testc</code>是找不到目前目錄下的testc檔案</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./testc
+</code></pre></div></div>
+
+<p>如果想在任何目錄都可以執行目錄目錄的執行檔案，可以在PATH增加.圓點，就可以執行testc</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=$PATH:.
+testc
+</code></pre></div></div>
+
+<p>以相對/絕對路徑執行指令，例如”/bin/ls”或”./ls”</p>
+
+<h2 id="設置使用者環境變數">設置使用者環境變數</h2>
+
+<h3 id="bash_profile">bash_profile</h3>
+<p>在user目錄下會有.bash_profile的檔案</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~
+ls -l .bash*
+-rw-r--r--@ 1 cici  staff  536 Aug 30 12:15 .bash_profile
+</code></pre></div></div>
+
+<p>使用cat指令查看檔案</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> cat .bash_profile
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
+
+alias python='python3.7'
+alias pip='pip3.7'
+
+export ANDROID_HOME=/Users/cici/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export PATH=${PATH}:/Users/cici/.rbenv/versions/3.2.2/bin
+
+
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+</code></pre></div></div>
+<h3 id="bashrc">bashrc</h3>
+<p>每開一個終端機，就會重新load一次bashrc</p>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+<!------上一頁與下一頁 start---------->
+                    
+                    
+                    
+                    
+    
+                    
+                        
+                        <a href="/pages/c/basic/include" class="navigation navigation-prev navigation-unique" aria-label="Previous page: include與define">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        
+                        <a href="/pages/c/editor/openssh_server" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝openssh-server">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                    <!------上一頁與下一頁 end---------->
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Cici's notebook",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_pages/c/basic/linux_shell.md",
+        "mtime": "2025-02-13 00:00:00 +0800",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "",
+        "time": "2025-02-14 16:26:06 +0800"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>
