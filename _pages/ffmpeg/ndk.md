@@ -37,7 +37,9 @@ NDK與CMake要有勾選
 ![img]({{site.imgurl}}/ndk/create_jni3.png)
 
 
-##下載NDK r28
+## 編譯ffmpeg
+
+### 下載ndk
 歷經千辛萬苦，終於ndk build ffmpeg成功， 以下為編譯後的重要記事作為記錄。
 
 MAC下載ndk後，請選xxxxxxxx.app，然後滑鼠"右鍵" > "顯示套件內容" > "Contents" > "NDK"
@@ -53,9 +55,16 @@ MAC下載ndk後，請選xxxxxxxx.app，然後滑鼠"右鍵" > "顯示套件內�
 {% endhighlight %}
 
 ### SYSROOT
+權限路徑
+
 extra-cflags一律簡化成只有sysroot參數
 {% highlight c++ linenos %}
   --extra-cflags="--sysroot=$SYSROOT" \
+{% endhighlight %}
+
+
+{% highlight c++ linenos %}
+  --sysroot=$SYSROOT \
 {% endhighlight %}
 
 ### cpu
@@ -90,11 +99,6 @@ grep "error" config.log
 V=1查看詳細的編譯過程
 ```
 make -j4 V=1
-```
-
-### sysroot
-```
-  --sysroot=$SYSROOT \
 ```
 
 ### BIN_PREFIX
