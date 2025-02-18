@@ -3,7 +3,7 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
 {%- if page.title -%}
-    <title>{{ page.title | escape }} · {{ site.title | escape }}</title>
+    <title>{{ page.title | escape }} </title>
 {%- else -%}
     <title>{{ site.title | escape }}</title>
 {%- endif -%}
@@ -18,6 +18,9 @@
 
 {%- if site.author -%}
     <meta name="author" content="{{ site.author | escape }}">
+{%- endif -%}
+{%- if page.keywords -%}
+    <meta name="keywords" content="{{ page.keywords }}">
 {%- endif -%}
 {%- if seo -%}
     {%- seo -%}

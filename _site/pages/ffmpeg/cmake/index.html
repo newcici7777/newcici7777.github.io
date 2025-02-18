@@ -2,8 +2,8 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Queue實作 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><meta name="keywords" content="c++, Queue"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>cmake </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><meta name="keywords" content="java, ndk, android, cmake"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -740,12 +740,9 @@
         </li>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/dataStruct/queue" onclick="pageScrollToTop(this)"> Queue實作</a>
         
-            
-                <ul><li><a href="#新增在尾部" onclick="mobilePageScrollToAnchor(this)" >新增在尾部</a></li><li><a href="#刪除在頭部" onclick="mobilePageScrollToAnchor(this)" >刪除在頭部</a></li><li><a href="#結構定義" onclick="mobilePageScrollToAnchor(this)" >結構定義</a></li><li><a href="#初始化頭節點與尾節點" onclick="mobilePageScrollToAnchor(this)" >初始化頭節點與尾節點</a></li><li><a href="#新增" onclick="mobilePageScrollToAnchor(this)" >新增</a><ul><li><a href="#完全沒任何節點" onclick="mobilePageScrollToAnchor(this)" >完全沒任何節點</a></li><li><a href="#有節點" onclick="mobilePageScrollToAnchor(this)" >有節點</a></li></ul></li><li><a href="#刪除節點" onclick="mobilePageScrollToAnchor(this)" >刪除節點</a></li><li><a href="#完整程式碼" onclick="mobilePageScrollToAnchor(this)" >完整程式碼</a></li></ul>
-
             
         </li>
 	
@@ -1281,9 +1278,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/ffmpeg/cmake" onclick="pageScrollToTop(this)"> cmake</a>
         
+            
+                <ul><li><a href="#自行編譯動態庫與靜態庫" onclick="mobilePageScrollToAnchor(this)" >自行編譯動態庫與靜態庫</a><ul><li><a href="#編譯so" onclick="mobilePageScrollToAnchor(this)" >編譯so</a></li></ul></li><li><a href="#cmake使用方法" onclick="mobilePageScrollToAnchor(this)" >cmake使用方法</a></li><li><a href="#設定版本" onclick="mobilePageScrollToAnchor(this)" >設定版本</a></li><li><a href="#原始檔案變so檔" onclick="mobilePageScrollToAnchor(this)" >原始檔案變so檔</a></li><li><a href="#尋找log" onclick="mobilePageScrollToAnchor(this)" >尋找log</a></li><li><a href="#匯入靜態庫" onclick="mobilePageScrollToAnchor(this)" >匯入靜態庫</a></li></ul>
+
             
         </li></ul></li></ul></li>
 	
@@ -1307,7 +1307,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >Queue實作</a>
+                            <a href="." >cmake</a>
                         
                     </h1>
                 </div>
@@ -1320,32 +1320,16 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/dataStruct/queue">Queue實作</h1>
+                        <h1 id="/pages/ffmpeg/cmake">cmake</h1>
                     
 
-                    <p>在日常生活中，我們經常需要排隊做事，如:看電影前要排隊買票。</p>
+                    <h2 id="自行編譯動態庫與靜態庫">自行編譯動態庫與靜態庫</h2>
 
-<p>排隊最基本的規矩就是後到的人要排在隊伍的最後面，而先到的人可以接受服務。</p>
+<p>我的ndk路徑如下</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Users/cici/NDK/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android24-clang
+</code></pre></div></div>
 
-<h2 id="新增在尾部">新增在尾部</h2>
-
-<p>Queue是新增節點在尾部。</p>
-
-<p>以下是新增節點的過程。</p>
-
-<p><img src="/assets/img/dataStruct/queue1.jpg" alt="img" /></p>
-
-<h2 id="刪除在頭部">刪除在頭部</h2>
-
-<p>Queue是刪除節點在頭部。</p>
-
-<p>以下是刪除節點的過程。</p>
-
-<p><img src="/assets/img/dataStruct/queue2.jpg" alt="img" /></p>
-
-<h2 id="結構定義">結構定義</h2>
-
-<p>Queue會定義頭節點與尾節點。</p>
+<h3 id="編譯so">編譯so</h3>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1353,540 +1337,72 @@
 3
 4
 5
-6
-7
-8
-9
-10
-</pre></td><td class="code"><pre><span class="k">typedef</span> <span class="kt">int</span> <span class="n">ElemType</span><span class="p">;</span>
-<span class="c1">//定義節點</span>
-<span class="k">struct</span> <span class="nc">Node</span> <span class="p">{</span>
-  <span class="n">ElemType</span> <span class="n">data</span><span class="p">;</span>
-  <span class="n">Node</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
-<span class="p">};</span>
-<span class="k">struct</span> <span class="nc">queue</span> <span class="p">{</span>
-  <span class="c1">//定義頭節點與尾節點</span>
-  <span class="n">Node</span> <span class="o">*</span><span class="n">head</span><span class="p">,</span><span class="o">*</span><span class="n">tail</span><span class="p">;</span>
-<span class="p">};</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="初始化頭節點與尾節點">初始化頭節點與尾節點</h2>
-
-<p>一開始頭節點與尾節點都指向頭節點</p>
-
-<p><img src="/assets/img/dataStruct/queue3.jpg" alt="img" /></p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-</pre></td><td class="code"><pre><span class="cm">/**
- 初始化Queue
- */</span>
-<span class="kt">bool</span> <span class="nf">initQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">//頭節點</span>
-  <span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
-  <span class="c1">//頭節點記憶體分配失敗</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-  <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span><span class="c1">//queue的下一個節點為null</span>
-  <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span><span class="c1">//一開始頭節點與尾節點指向同一個記憶體位址</span>
-  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World!"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="新增">新增</h2>
+<p>終端機執行以下指令</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Users/cici/NDK/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android24-clang --sysroot=/Users/cici/NDK/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -fPIC -shared testc.cpp -o libTest.so
+</code></pre></div></div>
 
-<h3 id="完全沒任何節點">完全沒任何節點</h3>
+<h2 id="cmake使用方法">cmake使用方法</h2>
 
-<p>在沒有任何節點的狀況下，新節點新增在tail尾節點後面。</p>
+<p>camke的目的是將c++檔案變成Android下可以執行的so檔，so檔是動態庫</p>
 
-<p><img src="/assets/img/dataStruct/queue4.jpg" alt="img" /></p>
+<p>cmake的使用方法，當作函式呼叫，參數以空格分開</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>函式(參數1 參數2 參數3)
+</code></pre></div></div>
 
-<p>步驟如下</p>
+<p>也可以用斷行分開</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>函式(參數1
+參數2
+參數3)
+</code></pre></div></div>
 
-<ul>
-  <li>建立新節點</li>
-  <li>新節點的next指向nullptr</li>
-  <li>新節點新增在tail尾節點後面</li>
-  <li>tail尾節點指向新節點</li>
-</ul>
+<h2 id="設定版本">設定版本</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmake_minimum_required(VERSION 3.22.1)
+</code></pre></div></div>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-</pre></td><td class="code"><pre><span class="kt">bool</span> <span class="nf">inQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">ee</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">//建立新節點</span>
-  <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-  
-  <span class="c1">//新節點設定傳進來的資料</span>
-  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">ee</span><span class="p">;</span>
-  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-  
-  <span class="c1">//將新節點插入到tail之後</span>
-  <span class="n">que</span><span class="p">.</span><span class="n">tail</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-  <span class="c1">//把tail指向temp</span>
-  <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<h2 id="原始檔案變so檔">原始檔案變so檔</h2>
 
-<h3 id="有節點">有節點</h3>
+<p>ndkproj是so檔的名字，會產生ndkproj.so的檔案</p>
 
-<p>尾節點指向鏈結串列中最後一個節點(不是nullptr)。</p>
+<p>SHARED是動態庫</p>
 
-<p>在有節點的狀況下，新節點新增在tail尾節點後面。</p>
+<p>native-lib.cpp是原始檔案</p>
 
-<p><img src="/assets/img/dataStruct/queue5.jpg" alt="img" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>add_library( # Sets the name of the library.
+        ndkproj
 
-<p>程式步驟跟沒任何節點的步驟一模一樣。</p>
+        # Sets the library as a shared library.
+        SHARED
 
-<h2 id="刪除節點">刪除節點</h2>
+        # Provides a relative path to your source file(s).
+        native-lib.cpp)
+</code></pre></div></div>
 
-<p>刪除的方式跟鏈結串列removeFirst()一樣，從鏈結串列第一個節點刪除。</p>
+<h2 id="尋找log">尋找log</h2>
 
-<p>如果刪的節點是尾節點，刪除完節點後，要把尾節點指向頭節點，回到初始的狀況下。</p>
+<p>如果沒有設定ndkVersion</p>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-</pre></td><td class="code"><pre><span class="kt">bool</span> <span class="nf">deQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">,</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">//只有頭節點，沒有後面的資料</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒有任何節點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">//鏈結串列中第一個節點，不包含頭節點</span>
-  <span class="n">Node</span><span class="o">*</span> <span class="n">first</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-  <span class="c1">//將第一個節點的值存在e，作為返回</span>
-  <span class="n">e</span> <span class="o">=</span> <span class="n">first</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
-  
-  <span class="c1">//將第一個節點(不包含頭節點)指向first的下個節點</span>
-  <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">first</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-  
-  <span class="c1">//如果刪的節點是tail節點</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">first</span> <span class="o">==</span> <span class="n">que</span><span class="p">.</span><span class="n">tail</span><span class="p">)</span>
-    <span class="c1">//將tail指向head</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span>
-  <span class="c1">//將第一個節點刪除</span>
-  <span class="k">delete</span> <span class="n">first</span><span class="p">;</span>
-  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p>預設會在local.properties下尋找sdk的安裝目錄
+<code class="language-plaintext highlighter-rouge">sdk.dir=/Users/cici/Library/Android/sdk</code>中的ndk目錄下尋找log庫，找到的path，設給log-lib這個變數</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find_library( # Sets the name of the path variable.
+        log-lib
 
-<h2 id="完整程式碼">完整程式碼</h2>
+        # Specifies the name of the NDK library that
+        # you want CMake to locate.
+        log)
+</code></pre></div></div>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-134
-135
-136
-137
-138
-139
-140
-141
-142
-143
-144
-145
-146
-147
-148
-149
-150
-151
-152
-153
-154
-155
-156
-157
-158
-159
-160
-161
-162
-163
-164
-165
-166
-167
-168
-169
-170
-171
-172
-173
-</pre></td><td class="code"><pre><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="kt">int</span> <span class="n">ElemType</span><span class="p">;</span>
-<span class="c1">//定義節點</span>
-<span class="k">struct</span> <span class="nc">Node</span> <span class="p">{</span>
-  <span class="n">ElemType</span> <span class="n">data</span><span class="p">;</span>
-  <span class="n">Node</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
-<span class="p">};</span>
-<span class="k">struct</span> <span class="nc">queue</span> <span class="p">{</span>
-  <span class="n">Node</span> <span class="o">*</span><span class="n">head</span><span class="p">,</span><span class="o">*</span><span class="n">tail</span><span class="p">;</span>
-<span class="p">};</span>
-<span class="cm">/**
- 初始化Queue
- */</span>
-<span class="kt">bool</span> <span class="n">initQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">//頭節點</span>
-  <span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
-  <span class="c1">//頭節點記憶體分配失敗</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-  <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span><span class="c1">//queue的下一個節點為null</span>
-  <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span><span class="c1">//一開始頭節點與尾節點指向同一個記憶體位址</span>
-  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="cm">/**
- 摧毀Queue
- 參數為頭節點
- */</span>
-<span class="kt">void</span> <span class="n">destroyQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">){</span>
-  <span class="c1">//暫存節點</span>
-  <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span><span class="p">;</span>
-  <span class="k">while</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//先暫存下一個節點</span>
-    <span class="n">temp</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="c1">//刪掉目前頭節點</span>
-    <span class="k">delete</span>  <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span>
-    <span class="c1">//頭節點換成下一個節點</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-<span class="kt">bool</span> <span class="n">inQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">,</span> <span class="k">const</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">ee</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">//建立新節點</span>
-  <span class="n">Node</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nothrow</span><span class="p">)</span><span class="n">Node</span><span class="p">;</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-  
-  <span class="c1">//新節點設定傳進來的資料</span>
-  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">ee</span><span class="p">;</span>
-  <span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-  
-  <span class="c1">//將新節點插入到tail之後</span>
-  <span class="n">que</span><span class="p">.</span><span class="n">tail</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-  <span class="c1">//把tail指向temp</span>
-  <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="kt">bool</span> <span class="n">deQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">,</span> <span class="n">ElemType</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">//只有頭節點，沒有後面的資料</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"沒有任何節點"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">//鏈結串列中第一個節點，不包含頭節點</span>
-  <span class="n">Node</span><span class="o">*</span> <span class="n">first</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-  <span class="c1">//將第一個節點的值存在e，作為返回</span>
-  <span class="n">e</span> <span class="o">=</span> <span class="n">first</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
-  
-  <span class="c1">//將第一個節點(不包含頭節點)指向first的下個節點</span>
-  <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">first</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-  
-  <span class="c1">//如果刪的節點是tail節點</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">first</span> <span class="o">==</span> <span class="n">que</span><span class="p">.</span><span class="n">tail</span><span class="p">)</span>
-    <span class="c1">//將tail指向head</span>
-    <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span>
-  <span class="c1">//將第一個節點刪除</span>
-  <span class="k">delete</span> <span class="n">first</span><span class="p">;</span>
-  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="kt">void</span> <span class="n">printQueue</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">//從head的下一個節點開始</span>
-  <span class="c1">//head不存在值</span>
-  <span class="n">Node</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-  <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">&lt;&lt;</span> <span class="s">","</span><span class="p">;</span>
-    <span class="c1">//節點p換成下一個節點</span>
-    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="kt">size_t</span> <span class="n">size</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">//不包含頭節點</span>
-  <span class="n">Node</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-  <span class="kt">size_t</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="c1">//繞行到null</span>
-  <span class="k">while</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="n">size</span><span class="o">++</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="n">size</span><span class="p">;</span>
-  <span class="c1">//遞迴方式</span>
-  <span class="c1">//if(head == nullptr) return 0;</span>
-  <span class="c1">//return size(head-&gt;next) + 1;</span>
-<span class="p">}</span>
-<span class="cm">/**
- 清空鏈表，除了頭節點
- */</span>
-<span class="kt">void</span> <span class="n">clear</span><span class="p">(</span><span class="n">queue</span><span class="o">&amp;</span> <span class="n">que</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">que</span><span class="p">.</span><span class="n">head</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"鏈結串列不存在"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">//移到頭節點的下一個節點(清空不包含頭節點)</span>
-  <span class="n">Node</span><span class="o">*</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">,</span><span class="o">*</span><span class="n">tmpnext</span><span class="p">;</span>
-  <span class="c1">//繞行所有節點</span>
-  <span class="k">while</span><span class="p">(</span><span class="n">tmp</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//把節點的下一個節點暫存</span>
-    <span class="n">tmpnext</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
-    <span class="c1">//刪除目前節點</span>
-    <span class="k">delete</span>  <span class="n">tmp</span><span class="p">;</span>
-    <span class="c1">//將下一個節點作為目前節點</span>
-    <span class="n">tmp</span> <span class="o">=</span> <span class="n">tmpnext</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">//頭節點的下一個設null</span>
-  <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-  <span class="c1">//尾節點與頭節點指向相同</span>
-  <span class="n">que</span><span class="p">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">head</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="c1">//建立queue</span>
-  <span class="n">queue</span> <span class="n">que</span><span class="p">;</span>
-  <span class="c1">//清空</span>
-  <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">que</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">que</span><span class="p">));</span>
-  <span class="c1">//初始化</span>
-  <span class="n">initQueue</span><span class="p">(</span><span class="n">que</span><span class="p">);</span>
-  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
-  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
-  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
-  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
-  
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"大小:"</span> <span class="o">&lt;&lt;</span> <span class="n">size</span><span class="p">(</span><span class="n">que</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"queue的內容:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">printQueue</span><span class="p">(</span><span class="n">que</span><span class="p">);</span>
-  
-  <span class="n">ElemType</span> <span class="n">e</span><span class="p">;</span>
-  <span class="k">while</span><span class="p">(</span><span class="n">deQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="n">e</span><span class="p">))</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">e</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  
-  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
-  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span>
-  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
-  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">9</span><span class="p">);</span>
-  <span class="n">inQueue</span><span class="p">(</span><span class="n">que</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
-  
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"大小:"</span> <span class="o">&lt;&lt;</span> <span class="n">size</span><span class="p">(</span><span class="n">que</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"queue的內容:"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">printQueue</span><span class="p">(</span><span class="n">que</span><span class="p">);</span>
-  <span class="n">destroyQueue</span><span class="p">(</span><span class="n">que</span><span class="p">);</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<h2 id="匯入靜態庫">匯入靜態庫</h2>
+<p>libTest.a放在跟cmake.md同一個目錄下</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>add_library(Test STATIC IMPORTED)
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1950,14 +1466,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/dataStruct/stack" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Stack實作">
+                        <a href="/pages/ffmpeg/ndk" class="navigation navigation-prev navigation-unique" aria-label="Previous page: NDK">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/dataStruct/circular_queue" class="navigation navigation-next navigation-unique" aria-label="Next page: circular queue環狀佇列">
+                        <a href="/pages/jekyll/install/how_to_install_ruby" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝 Ruby on Mac">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1973,15 +1489,6 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
-        
-        "next": {
-            "title": "插入排序",
-            "level": "1.2",
-            "depth": 1,
-            "path": "_pages/c/dataStruct/insertSort.md",
-            "ref": "_pages/c/dataStruct/insertSort.md",
-            "articles": []
-        },
         
         "dir": "ltr"
     },    "config": {
@@ -2071,8 +1578,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/dataStruct/queue.md",
-        "mtime": "2024-09-26 00:00:00 +0800",
+        "path": "_pages/ffmpeg/cmake.md",
+        "mtime": "2025-02-18 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

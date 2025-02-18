@@ -2,8 +2,8 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>NDK · Cici&#39;s notebook</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>NDK </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Cici's notebook."><meta name="generator" content="Jekyll (using style of GitBook)"><meta name="keywords" content="java, ndk, android"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -1275,8 +1275,15 @@
     	<a href="/pages/ffmpeg/ndk" onclick="pageScrollToTop(this)"> NDK</a>
         
             
-                <ul><li><a href="#建立ndk" onclick="mobilePageScrollToAnchor(this)" >建立NDK</a></li><li><a href="#檢查sdk" onclick="mobilePageScrollToAnchor(this)" >檢查SDK</a></li><li><a href="#cmake" onclick="mobilePageScrollToAnchor(this)" >cmake</a></li><li><a href="#activity" onclick="mobilePageScrollToAnchor(this)" >activity</a></li><li><a href="#增加jni方法" onclick="mobilePageScrollToAnchor(this)" >增加jni方法</a></li><li><a href="#下載ndk-r28" onclick="mobilePageScrollToAnchor(this)" >下載NDK r28</a><ul><li><a href="#llvm" onclick="mobilePageScrollToAnchor(this)" >LLVM</a></li><li><a href="#sysroot" onclick="mobilePageScrollToAnchor(this)" >SYSROOT</a></li><li><a href="#cpu" onclick="mobilePageScrollToAnchor(this)" >cpu</a></li><li><a href="#nm" onclick="mobilePageScrollToAnchor(this)" >nm</a></li><li><a href="#腳本權限" onclick="mobilePageScrollToAnchor(this)" >腳本權限</a></li><li><a href="#configlog" onclick="mobilePageScrollToAnchor(this)" >config.log</a></li><li><a href="#make-v1" onclick="mobilePageScrollToAnchor(this)" >make V=1</a></li><li><a href="#bin_prefix" onclick="mobilePageScrollToAnchor(this)" >BIN_PREFIX</a></li><li><a href="#增加pathcccxx" onclick="mobilePageScrollToAnchor(this)" >增加PATH,CC,CXX</a></li></ul></li></ul>
+                <ul><li><a href="#建立ndk" onclick="mobilePageScrollToAnchor(this)" >建立NDK</a></li><li><a href="#檢查sdk" onclick="mobilePageScrollToAnchor(this)" >檢查SDK</a></li><li><a href="#cmake" onclick="mobilePageScrollToAnchor(this)" >cmake</a></li><li><a href="#activity" onclick="mobilePageScrollToAnchor(this)" >activity</a></li><li><a href="#增加jni方法" onclick="mobilePageScrollToAnchor(this)" >增加jni方法</a></li><li><a href="#編譯ffmpeg" onclick="mobilePageScrollToAnchor(this)" >編譯ffmpeg</a><ul><li><a href="#下載ndk" onclick="mobilePageScrollToAnchor(this)" >下載ndk</a></li><li><a href="#llvm" onclick="mobilePageScrollToAnchor(this)" >LLVM</a></li><li><a href="#sysroot" onclick="mobilePageScrollToAnchor(this)" >SYSROOT</a></li><li><a href="#cpu" onclick="mobilePageScrollToAnchor(this)" >cpu</a></li><li><a href="#nm" onclick="mobilePageScrollToAnchor(this)" >nm</a></li><li><a href="#腳本權限" onclick="mobilePageScrollToAnchor(this)" >腳本權限</a></li><li><a href="#configlog" onclick="mobilePageScrollToAnchor(this)" >config.log</a></li><li><a href="#make-v1" onclick="mobilePageScrollToAnchor(this)" >make V=1</a></li><li><a href="#bin_prefix" onclick="mobilePageScrollToAnchor(this)" >BIN_PREFIX</a></li><li><a href="#增加pathcccxx" onclick="mobilePageScrollToAnchor(this)" >增加PATH,CC,CXX</a></li></ul></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/ffmpeg/cmake" onclick="pageScrollToTop(this)"> cmake</a>
+        
             
         </li></ul></li></ul></li>
 	
@@ -1346,7 +1353,9 @@
 <img src="/assets/img/ndk/create_jni2.png" alt="img" />
 <img src="/assets/img/ndk/create_jni3.png" alt="img" /></p>
 
-<h2 id="下載ndk-r28">下載NDK r28</h2>
+<h2 id="編譯ffmpeg">編譯ffmpeg</h2>
+
+<h3 id="下載ndk">下載ndk</h3>
 <p>歷經千辛萬苦，終於ndk build ffmpeg成功， 以下為編譯後的重要記事作為記錄。</p>
 
 <p>MAC下載ndk後，請選xxxxxxxx.app，然後滑鼠”右鍵” &gt; “顯示套件內容” &gt; “Contents” &gt; “NDK”</p>
@@ -1364,6 +1373,8 @@
 </figure>
 
 <h3 id="sysroot">SYSROOT</h3>
+<p>權限路徑</p>
+
 <p>extra-cflags一律簡化成只有sysroot參數</p>
 
 <figure class="highlight">
@@ -1741,7 +1752,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/jekyll/install/how_to_install_ruby" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝 Ruby on Mac">
+                        <a href="/pages/ffmpeg/cmake" class="navigation navigation-next navigation-unique" aria-label="Next page: cmake">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1861,7 +1872,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-02-17 15:17:23 +0800"
+        "time": "2025-02-18 13:41:23 +0800"
     },
     "basePath": "",
     "book": {
