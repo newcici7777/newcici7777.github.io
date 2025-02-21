@@ -4,8 +4,6 @@ date: 2025-02-13
 keywords: linux, shell
 ---
 
-
-
 ## 查看檔案
 
 ### less分頁

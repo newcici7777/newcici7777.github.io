@@ -30,14 +30,14 @@ $cmake --version
 ![img]({{site.imgurl}}/cmake/5.png)  
 在CMakeLists.txt的文件中輸入以下內容 
 ```
-//VERSION編號是之前查詢的
+#VERSION編號是之前查詢的
 cmake_minimum_required(VERSION 3.27.5)
 
-//第一參數為Project名稱
-//Project的版本是1.0.0
+#第一參數為Project名稱
+#Project的版本是1.0.0
 project(CPPLessons VERSION 1.0.0)
 
-//第一個參數是Project名稱 第二個參數為所使用的cpp
+#第一個參數是Project名稱 第二個參數為所使用的cpp
 add_executable(CPPLessons test.cpp Student.cpp)
 ```
 建立檔案，依xcode為例，在工作列按滑鼠右鍵，選"New File"  
