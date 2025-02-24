@@ -4,6 +4,7 @@ date: 2024-05-24
 keywords: c++, explicit
 ---
 
+## 基本類型的強制轉型
 將等號(=)右邊的值強制轉型，明確告訴編譯器等號(=)右邊的值的資料型態。
 
 {% highlight c++ linenos %}
@@ -15,3 +16,11 @@ int a = (int)8.3;
 {% highlight c++ linenos %}
 int a = int(8.3);
 {% endhighlight %}
+
+
+
+
+
+
+
+

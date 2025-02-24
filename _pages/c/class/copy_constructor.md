@@ -4,6 +4,9 @@ date: 2024-10-18
 keywords: c++, Copy constructor
 ---
 
+Prerequisites:
+- [RVO][4]
+
 ## 複製語法
 
 已建立的物件成員變數的值，複製給另一個物件。
@@ -235,3 +238,4 @@ name: 漂亮的Cici
 [1]: {% link _pages/c/function/callByValue.md %}#函式傳遞值-Call-by-value
 [2]: {% link _pages/c/function/callByValue.md %}#函式傳回值是值
 [3]: {% link _pages/c/class/temp_obj.md%}
+[4]: {% link _pages/c/editor/rvo.md %}

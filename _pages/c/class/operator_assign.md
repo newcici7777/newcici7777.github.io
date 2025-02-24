@@ -4,6 +4,9 @@ date: 2024-10-28
 keywords: c++, operator=
 ---
 
+Prerequisites:
+- [RVO][1]
+
 ## 指派運算子使用方式
 
 二個物件都`已經存在`，其中一個物件指派另一個物件。
@@ -101,3 +104,5 @@ s2 name = Bill
 s1 m_ptr = 15
 s2 m_ptr = 15
 ```
+
+[1]: {% link _pages/c/editor/rvo.md %}

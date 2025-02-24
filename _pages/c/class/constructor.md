@@ -4,6 +4,9 @@ date: 2024-10-16
 keywords: c++, constructor 
 ---
 
+Prerequisites:
+- [RVO][1]
+
 ## 建構子
 
 語法
@@ -265,3 +268,4 @@ int main() {
 {% endhighlight %}
 
 
+[1]: {% link _pages/c/editor/rvo.md %}

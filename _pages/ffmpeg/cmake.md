@@ -194,6 +194,8 @@ android {
 }
 {% endhighlight %}
 
+![img]({{site.imgurl}}/cmake/cmake_path_setting.png)
+
 #### jniLibs設定
 so檔放置路徑
 {% highlight c++ linenos %}

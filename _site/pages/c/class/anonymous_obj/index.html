@@ -831,6 +831,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/class/conversion_function" onclick="pageScrollToTop(this)"> 建構子轉型</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/class/init_list" onclick="pageScrollToTop(this)"> 建構子初始化列表</a>
         
             
@@ -888,6 +895,13 @@
 	
 	<li class="">
     	<a href="/pages/c/class/operator_equal" onclick="pageScrollToTop(this)"> operator==()</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/inheritance" onclick="pageScrollToTop(this)"> 繼承</a>
         
             
         </li></ul></li>
@@ -1282,6 +1296,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/ffmpeg/jni" onclick="pageScrollToTop(this)"> JNI</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/ffmpeg/cmake" onclick="pageScrollToTop(this)"> cmake</a>
         
             
@@ -1323,7 +1344,12 @@
                         <h1 id="/pages/c/class/anonymous_obj">匿名物件</h1>
                     
 
-                    <p>匿名物件，也就是沒有名字(變數名)的物件，建立後馬上銷毀，沒有生命周期。</p>
+                    <p>Prerequisites:</p>
+<ul>
+  <li><a href="/pages/c/editor/rvo/">RVO</a></li>
+</ul>
+
+<p>匿名物件，也就是沒有名字(變數名)的物件，建立後馬上銷毀，沒有生命周期。</p>
 
 <h2 id="語法">語法</h2>
 
@@ -1427,6 +1453,13 @@
 解構子
 </code></pre></div></div>
 
+<p>程式碼執行流程</p>
+<ol>
+  <li>呼叫 createStudent()</li>
+  <li>進入 createStudent()，執行 return Student();，此時產生一個臨時對象，執行 建構子。因為你已經關閉 RVO（Return Value Optimization），這個臨時物件無法被最佳化，因此會觸發額外的拷貝函式，拷貝完之後進行銷毀臨時物件。</li>
+  <li>main() 中沒有其他 Student 物件，因此程式結束，銷毀createStudent()的返回拷貝函式產生的物件。</li>
+</ol>
+
 <h2 id="匿名物件指派給變數">匿名物件指派給變數</h2>
 
 <figure class="highlight">
@@ -1471,6 +1504,13 @@
 解構子
 解構子
 </code></pre></div></div>
+
+<p>程式碼執行流程</p>
+<ol>
+  <li>呼叫 createStudent()</li>
+  <li>進入 createStudent()，執行 return Student();，此時產生一個臨時對象，執行 建構子。因為你已經關閉 RVO（Return Value Optimization），這個臨時物件無法被最佳化，因此會觸發額外的拷貝函式，拷貝完之後進行銷毀臨時物件。</li>
+  <li>程式結束，銷毀s1物件。</li>
+</ol>
 
 <h2 id="匿名物件也是臨時物件">匿名物件也是臨時物件</h2>
 
@@ -1716,7 +1756,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-02-18 13:41:23 +0800"
+        "time": "2025-02-24 11:03:17 +0800"
     },
     "basePath": "",
     "book": {

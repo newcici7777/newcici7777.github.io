@@ -445,7 +445,7 @@ if (this_one_thing > this_other_thing &&
 }
 {% endhighlight %}
 
-## 建構子初始
+## 建構子初始值
 
 建構式初值列可以放在同一行，或換行後縮排 4 個空格。
 {% highlight c++ linenos %}

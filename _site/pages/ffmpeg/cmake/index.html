@@ -828,6 +828,13 @@
 	
 	
 	<li class="">
+    	<a href="/pages/c/class/conversion_function" onclick="pageScrollToTop(this)"> 建構子轉型</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
     	<a href="/pages/c/class/init_list" onclick="pageScrollToTop(this)"> 建構子初始化列表</a>
         
             
@@ -885,6 +892,13 @@
 	
 	<li class="">
     	<a href="/pages/c/class/operator_equal" onclick="pageScrollToTop(this)"> operator==()</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/class/inheritance" onclick="pageScrollToTop(this)"> 繼承</a>
         
             
         </li></ul></li>
@@ -1278,11 +1292,18 @@
         </li>
 	
 	
+	<li class="">
+    	<a href="/pages/ffmpeg/jni" onclick="pageScrollToTop(this)"> JNI</a>
+        
+            
+        </li>
+	
+	
 	<li class="active">
     	<a href="/pages/ffmpeg/cmake" onclick="pageScrollToTop(this)"> cmake</a>
         
             
-                <ul><li><a href="#自行編譯動態庫與靜態庫" onclick="mobilePageScrollToAnchor(this)" >自行編譯動態庫與靜態庫</a><ul><li><a href="#編譯so" onclick="mobilePageScrollToAnchor(this)" >編譯so</a></li></ul></li><li><a href="#cmake使用方法" onclick="mobilePageScrollToAnchor(this)" >cmake使用方法</a></li><li><a href="#設定版本" onclick="mobilePageScrollToAnchor(this)" >設定版本</a></li><li><a href="#原始檔案變so檔" onclick="mobilePageScrollToAnchor(this)" >原始檔案變so檔</a></li><li><a href="#尋找log" onclick="mobilePageScrollToAnchor(this)" >尋找log</a></li><li><a href="#匯入靜態庫" onclick="mobilePageScrollToAnchor(this)" >匯入靜態庫</a></li></ul>
+                <ul><li><a href="#cpu不同" onclick="mobilePageScrollToAnchor(this)" >cpu不同</a><ul><li><a href="#查詢模擬器cpu架構" onclick="mobilePageScrollToAnchor(this)" >查詢模擬器CPU架構</a></li></ul></li><li><a href="#clang" onclick="mobilePageScrollToAnchor(this)" >clang</a></li><li><a href="#cmake使用方法" onclick="mobilePageScrollToAnchor(this)" >cmake使用方法</a></li><li><a href="#cmake目錄路徑" onclick="mobilePageScrollToAnchor(this)" >cmake目錄路徑</a></li><li><a href="#顯示變數" onclick="mobilePageScrollToAnchor(this)" >顯示變數</a></li><li><a href="#設定版本" onclick="mobilePageScrollToAnchor(this)" >設定版本</a></li><li><a href="#原始檔案變so檔" onclick="mobilePageScrollToAnchor(this)" >原始檔案變so檔</a></li><li><a href="#尋找log" onclick="mobilePageScrollToAnchor(this)" >尋找log</a></li><li><a href="#自行編譯動態庫與靜態庫" onclick="mobilePageScrollToAnchor(this)" >自行編譯動態庫與靜態庫</a><ul><li><a href="#ndk路徑" onclick="mobilePageScrollToAnchor(this)" >ndk路徑</a></li><li><a href="#cmakeliststxt路徑" onclick="mobilePageScrollToAnchor(this)" >CMakeLists.txt路徑</a></li><li><a href="#建立jnilibs目錄" onclick="mobilePageScrollToAnchor(this)" >建立jniLibs目錄</a></li><li><a href="#c檔案" onclick="mobilePageScrollToAnchor(this)" >c檔案</a></li><li><a href="#buildgradleapp設定" onclick="mobilePageScrollToAnchor(this)" >build.gradle(app)設定</a><ul><li><a href="#專案的abi" onclick="mobilePageScrollToAnchor(this)" >專案的ABI</a></li><li><a href="#第三方的lib的abi" onclick="mobilePageScrollToAnchor(this)" >第三方的Lib的ABI</a></li><li><a href="#cmake文件路徑" onclick="mobilePageScrollToAnchor(this)" >cmake文件路徑</a></li><li><a href="#jnilibs設定" onclick="mobilePageScrollToAnchor(this)" >jniLibs設定</a></li></ul></li><li><a href="#編譯so" onclick="mobilePageScrollToAnchor(this)" >編譯so</a><ul><li><a href="#匯入動態態庫" onclick="mobilePageScrollToAnchor(this)" >匯入動態態庫</a></li><li><a href="#檢查so檔的abi" onclick="mobilePageScrollToAnchor(this)" >檢查so檔的ABI</a></li></ul></li><li><a href="#編譯靜態庫" onclick="mobilePageScrollToAnchor(this)" >編譯靜態庫</a><ul><li><a href="#先產生o的檔案" onclick="mobilePageScrollToAnchor(this)" >先產生.o的檔案</a></li><li><a href="#產生a靜態庫" onclick="mobilePageScrollToAnchor(this)" >產生.a靜態庫</a></li><li><a href="#匯入靜態庫" onclick="mobilePageScrollToAnchor(this)" >匯入靜態庫</a></li></ul></li><li><a href="#導入到專案中" onclick="mobilePageScrollToAnchor(this)" >導入到專案中</a><ul><li><a href="#鏈結" onclick="mobilePageScrollToAnchor(this)" >鏈結</a></li></ul></li></ul></li><li><a href="#jni" onclick="mobilePageScrollToAnchor(this)" >jni</a><ul><li><a href="#extern-c" onclick="mobilePageScrollToAnchor(this)" >extern c</a></li><li><a href="#android-log-head-file" onclick="mobilePageScrollToAnchor(this)" >android log head file</a></li><li><a href="#使用android-log" onclick="mobilePageScrollToAnchor(this)" >使用android log</a></li><li><a href="#完整檔案" onclick="mobilePageScrollToAnchor(this)" >完整檔案</a></li></ul></li></ul>
 
             
         </li></ul></li></ul></li>
@@ -1323,31 +1344,42 @@
                         <h1 id="/pages/ffmpeg/cmake">cmake</h1>
                     
 
-                    <h2 id="自行編譯動態庫與靜態庫">自行編譯動態庫與靜態庫</h2>
+                    <h2 id="cpu不同">cpu不同</h2>
 
-<p>我的ndk路徑如下</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Users/cici/NDK/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android24-clang
+<p>在linux下可以使用以下語句產生執行檔</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ -o hello hello.cpp
 </code></pre></div></div>
 
-<h3 id="編譯so">編譯so</h3>
+<p>但hello執行檔可以在Linux下執行，無法在Android手機執行，原因是Linux與Android的操作系統os不同，Android手機的os是ARM架構。</p>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World!"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p>因此編譯Android os的執行檔需要使用ARM的編譯器編譯出.so(動態庫)或.a(靜態庫)，才能在Android的os上執行。</p>
 
-<p>終端機執行以下指令</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Users/cici/NDK/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android24-clang --sysroot=/Users/cici/NDK/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -fPIC -shared testc.cpp -o libTest.so
-</code></pre></div></div>
+<h3 id="查詢模擬器cpu架構">查詢模擬器CPU架構</h3>
+
+<p>MAC的Android Studio是根據MAC的晶片預設模擬器CPU架構</p>
+
+<ol>
+  <li>x86 或 x86_64 → 適合 Intel/AMD CPU，模擬效能較佳（支援 Hypervisor）。</li>
+  <li>arm64-v8a 或 armeabi-v7a → 適合 M1/M2 Mac 或某些 ARM 虛擬機，但效能較低。</li>
+  <li>如果你在 Apple Silicon（M1/M2/M3）Mac 上運行模擬器，預設會使用 ARM 版的模擬器（arm64-v8a）。</li>
+</ol>
+
+<p>查詢CPU架構</p>
+<ol>
+  <li>確保模擬器是運行</li>
+  <li>進入platform-tools</li>
+  <li>執行以下語句
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ~/Library/Android/sdk/platform-tools
+$ ./adb shell uname -m
+x86_64
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>顯示結果，我的模擬器是x86_64</p>
+
+<h2 id="clang">clang</h2>
+<p>是一個c,c++,Object-c的輕量編譯器，基於LLVM(LLVM是以c++編寫而成的編譯器)</p>
 
 <h2 id="cmake使用方法">cmake使用方法</h2>
 
@@ -1363,7 +1395,18 @@
 參數3)
 </code></pre></div></div>
 
+<h2 id="cmake目錄路徑">cmake目錄路徑</h2>
+<p>放置cmake文件的目錄</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>${CMAKE_SOURCE_DIR}
+</code></pre></div></div>
+
+<h2 id="顯示變數">顯示變數</h2>
+<p>CMakeLists.txt</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>message("Android_ABI: ${ANDROID_ABI}")
+</code></pre></div></div>
+
 <h2 id="設定版本">設定版本</h2>
+<p>CMakeLists.txt</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmake_minimum_required(VERSION 3.22.1)
 </code></pre></div></div>
 
@@ -1375,6 +1418,7 @@
 
 <p>native-lib.cpp是原始檔案</p>
 
+<p>CMakeLists.txt</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>add_library( # Sets the name of the library.
         ndkproj
 
@@ -1391,6 +1435,8 @@
 
 <p>預設會在local.properties下尋找sdk的安裝目錄
 <code class="language-plaintext highlighter-rouge">sdk.dir=/Users/cici/Library/Android/sdk</code>中的ndk目錄下尋找log庫，找到的path，設給log-lib這個變數</p>
+
+<p>CMakeLists.txt</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find_library( # Sets the name of the path variable.
         log-lib
 
@@ -1399,10 +1445,327 @@
         log)
 </code></pre></div></div>
 
-<h2 id="匯入靜態庫">匯入靜態庫</h2>
-<p>libTest.a放在跟cmake.md同一個目錄下</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>add_library(Test STATIC IMPORTED)
+<h2 id="自行編譯動態庫與靜態庫">自行編譯動態庫與靜態庫</h2>
+
+<h3 id="ndk路徑">ndk路徑</h3>
+<p>我的ndk路徑如下</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Users/cici/NDK/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android33-clang
 </code></pre></div></div>
+<h3 id="cmakeliststxt路徑">CMakeLists.txt路徑</h3>
+<p>我的CMakeLists.txt路徑如下</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Users/cici/AndroidStudioProjects/ndkProj/app/src/main/cpp
+</code></pre></div></div>
+<h3 id="建立jnilibs目錄">建立jniLibs目錄</h3>
+
+<p>在以下的路徑下建立jniLibs目錄</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Users/cici/AndroidStudioProjects/ndkProj/app/src/main
+</code></pre></div></div>
+
+<h3 id="c檔案">c檔案</h3>
+<p>檔名testc.c</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">test</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="buildgradleapp設定">build.gradle(app)設定</h3>
+<h4 id="專案的abi">專案的ABI</h4>
+<p>設置自己寫的ndk產生各種cpu的so檔，可多個，目前範例只有’x86_64’</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="n">android</span> <span class="p">{</span>
+	<span class="p">...</span>
+	<span class="n">defaultConfig</span> <span class="p">{</span>
+		<span class="p">...</span>
+        <span class="n">externalNativeBuild</span> <span class="p">{</span>
+            <span class="n">ndkBuild</span> <span class="p">{</span>
+                <span class="n">abiFilters</span> <span class="err">'</span><span class="n">x86_64</span><span class="err">'</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+		<span class="p">...</span>
+	<span class="p">}</span>
+	<span class="p">...</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h4 id="第三方的lib的abi">第三方的Lib的ABI</h4>
+
+<p>所謂第三方的Lib是指(dependencies)依賴的Lib</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="n">dependencies</span> <span class="p">{</span>
+	<span class="n">implementation</span> <span class="err">'</span><span class="p">....</span><span class="err">'</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>設置第三方的Lib產生各種cpu的so檔，可多個，目前範例只有’x86_64’</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="n">android</span> <span class="p">{</span>
+	<span class="p">...</span>
+	<span class="n">defaultConfig</span> <span class="p">{</span>
+		<span class="p">...</span>
+        <span class="n">ndk</span> <span class="p">{</span>
+            <span class="n">abiFilters</span>  <span class="err">'</span><span class="n">x86_64</span><span class="err">'</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+	<span class="p">...</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h4 id="cmake文件路徑">cmake文件路徑</h4>
+<p>cmake文件放置路徑跟build.gradle(app)同目錄下的<code class="language-plaintext highlighter-rouge">src/main/cpp</code></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="n">android</span> <span class="p">{</span>
+	<span class="p">...</span>
+    <span class="n">externalNativeBuild</span> <span class="p">{</span>
+        <span class="n">cmake</span> <span class="p">{</span>
+            <span class="n">path</span> <span class="n">file</span><span class="p">(</span><span class="err">'</span><span class="n">src</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">cpp</span><span class="o">/</span><span class="n">CMakeLists</span><span class="p">.</span><span class="n">txt</span><span class="err">'</span><span class="p">)</span>
+            <span class="n">version</span> <span class="err">'</span><span class="mf">3.22.1</span><span class="err">'</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="p">...</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p><img src="/assets/img/cmake/cmake_path_setting.png" alt="img" /></p>
+
+<h4 id="jnilibs設定">jniLibs設定</h4>
+<p>so檔放置路徑</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="n">android</span> <span class="p">{</span>
+	<span class="p">...</span>
+    <span class="n">sourceSets</span> <span class="p">{</span>
+        <span class="n">main</span> <span class="p">{</span>
+            <span class="n">jniLibs</span><span class="p">.</span><span class="n">srcDirs</span> <span class="o">=</span> <span class="p">[</span><span class="err">'</span><span class="n">src</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">jniLibs</span><span class="err">'</span><span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="p">...</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="編譯so">編譯so</h3>
+<p>終端機執行以下指令</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Users/cici/NDK/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android33-clang --sysroot=/Users/cici/NDK/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -fPIC -shared testc.c -o libTest.so
+</code></pre></div></div>
+
+<p>產生出libTest.so</p>
+
+<h4 id="匯入動態態庫">匯入動態態庫</h4>
+
+<p>CmakeList.txt</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#動態庫
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -L${CMAKE_CURRENT_SOURCE_DIR}/../jniLibs/${ANDROID_ABI}")
+</code></pre></div></div>
+<p>解釋</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">..</code>代表回上一層目錄</li>
+  <li><code class="language-plaintext highlighter-rouge">${CMAKE_CXX_FLAGS}</code>CMakeLists.txt放置的目錄</li>
+  <li><code class="language-plaintext highlighter-rouge">${ANDROID_ABI}</code>代表abiFilters，目前是x86_64</li>
+</ol>
+
+<h4 id="檢查so檔的abi">檢查so檔的ABI</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ file libTest.so
+libTest.so: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, not stripped
+</code></pre></div></div>
+
+<h3 id="編譯靜態庫">編譯靜態庫</h3>
+<h4 id="先產生o的檔案">先產生.o的檔案</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Users/cici/NDK/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android33-clang --sysroot=/Users/cici/NDK/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -fPIC -c testc.c -o testc.o
+</code></pre></div></div>
+
+<h4 id="產生a靜態庫">產生.a靜態庫</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Users/cici/NDK/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar -r libTest.a testc.o
+</code></pre></div></div>
+
+<p>產生出libTest.a</p>
+
+<h4 id="匯入靜態庫">匯入靜態庫</h4>
+<p>libTest.a放在跟cmake.md同一個目錄下</p>
+
+<p>CMakeLists.txt</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>add_library(Test STATIC IMPORTED)
+set_target_properties(Test PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/libTest.a)
+
+</code></pre></div></div>
+
+<h3 id="導入到專案中">導入到專案中</h3>
+
+<p>MainActivity.java增加</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>    <span class="k">static</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="n">loadLibrary</span><span class="p">(</span><span class="s">"ndkproj"</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="n">loadLibrary</span><span class="p">(</span><span class="s">"Test"</span><span class="p">);</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h4 id="鏈結">鏈結</h4>
+<ol>
+  <li>注意！ndkproj是要產生的project的so，所以一定要放在第一個，不能把Test放在最上面</li>
+  <li>需要編譯ndkproj.so需要依賴log-lib，需要Test的library</li>
+  <li>靜態檔:Test與add_library()中的Test是要一模一樣</li>
+  <li>動態檔:會自動尋找libTest.so，根據<code class="language-plaintext highlighter-rouge">Test</code>，前面加上lib，以及副檔名.so</li>
+</ol>
+
+<p>CMakeLists.txt</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>target_link_libraries( # Specifies the target library.
+        ndkproj
+
+        # Links the target library to the log library
+        # included in the NDK.
+        ${log-lib}
+        Test
+        )
+</code></pre></div></div>
+
+<h2 id="jni">jni</h2>
+
+<h3 id="extern-c">extern c</h3>
+
+<p>呼叫c檔案的function，要用<code class="language-plaintext highlighter-rouge">extern "C"{}</code>包起來。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">extern</span> <span class="s">"C"</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="n">test</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="android-log-head-file">android log head file</h3>
+<p>使用Logcat可以看到錯誤訊息</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;android/log.h&gt;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="使用android-log">使用android log</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">test</span><span class="p">();</span>
+
+    <span class="c1">// 使用 __android_log_print() 輸出到 Logcat</span>
+    <span class="n">__android_log_print</span><span class="p">(</span><span class="n">ANDROID_LOG_DEBUG</span><span class="p">,</span> <span class="s">"NDK_TEST"</span><span class="p">,</span> <span class="s">"test() 返回值: %d"</span><span class="p">,</span> <span class="n">result</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="完整檔案">完整檔案</h3>
+
+<p>native-lib.cpp</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;jni.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp">
+#define JNI_CLASS_PATH "com/example/ndkproj/MainActivity"
+#include</span> <span class="cpf">&lt;android/log.h&gt;</span><span class="cp">
+</span><span class="c1">// 告知編譯器 test() 是一個 C 語言函式，避免名稱修飾</span>
+<span class="k">extern</span> <span class="s">"C"</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="n">test</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="k">extern</span> <span class="s">"C"</span> <span class="n">JNIEXPORT</span> <span class="n">jstring</span> <span class="n">JNICALL</span>
+<span class="n">Java_com_example_ndkproj_MainActivity_stringFromJNI</span><span class="p">(</span>
+        <span class="n">JNIEnv</span><span class="o">*</span> <span class="n">env</span><span class="p">,</span>
+        <span class="n">jobject</span> <span class="cm">/* this */</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">test</span><span class="p">();</span>
+    <span class="c1">// 使用 __android_log_print() 輸出到 Logcat</span>
+    <span class="n">__android_log_print</span><span class="p">(</span><span class="n">ANDROID_LOG_DEBUG</span><span class="p">,</span> <span class="s">"NDK_TEST"</span><span class="p">,</span> <span class="s">"test() 返回值: %d"</span><span class="p">,</span> <span class="n">result</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">hello</span> <span class="o">=</span> <span class="s">"Hello from C++"</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">env</span><span class="o">-&gt;</span><span class="n">NewStringUTF</span><span class="p">(</span><span class="n">hello</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1466,7 +1829,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/ffmpeg/ndk" class="navigation navigation-prev navigation-unique" aria-label="Previous page: NDK">
+                        <a href="/pages/ffmpeg/jni" class="navigation navigation-prev navigation-unique" aria-label="Previous page: JNI">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -1489,6 +1852,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "建構子轉型",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/c/class/conversion_function.md",
+            "ref": "_pages/c/class/conversion_function.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -1584,7 +1956,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-02-18 13:41:23 +0800"
+        "time": "2025-02-24 11:03:17 +0800"
     },
     "basePath": "",
     "book": {

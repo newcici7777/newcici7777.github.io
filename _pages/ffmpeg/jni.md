@@ -33,6 +33,11 @@ public native String stringFromJNI();
 
 在函式前面加上native，表示這個是呼叫c++函式。
 
+### c++函式與java函式相互跳躍
+![img]({{site.imgurl}}/ndk/jump_to_c.png)
+
+![img]({{site.imgurl}}/ndk/jump_to_java.png)
+
 ### jni.h
 native-lib.cpp
 {% highlight c++ linenos %}
@@ -64,7 +69,8 @@ extern "C" JNIEXPORT jstring JNICALL
 c++函式傳回值的型態是jstring
 
 ### Java的型態與c++型態
-|Java型態|c++型態|
+
+|Java類別|jni類別|
 |:--:|:--:|
 |void   |void   |
 |boolean|jboolean|
@@ -97,11 +103,71 @@ Java_com_example_ndkproj_MainActivity_stringFromJNI(
 }
 {% endhighlight %}
 #### JNIEnv
-Java虛擬機
+
+代表Java虛擬機，透過Java虛擬機可以取得Java類別物件。
 
 #### jobject instance
 呼叫c++函式的類別，以本頁的例子是MainActivity.java
 
+
+#### jni型別轉換
+MainActivity.java
+{% highlight c++ linenos %}
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ...
+        int intArr[] = {11, 22, 33, 44};
+        String strArr[] = {"test1", "test2", "test3"};
+        test2(1, "Hello World", intArr, strArr);
+        Log.e("Java", Arrays.toString(intArr));
+    }
+{% endhighlight %}
+
+native-lib.cpp要include Android寫Log的head file
+```
+#include <android/log.h>
+// ...代表__VA_ARGS__，可變參數
+#define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, "JNI",__VA_ARGS__);
+```
+
+native-lib.cpp
+{% highlight c++ linenos %}
+extern "C"
+JNIEXPORT void JNICALL
+Java_com_example_ndkproj_MainActivity_test2(JNIEnv *env, jobject thiz, jint num, jstring str,
+                                            jintArray int_arr, jobjectArray str_arr) {
+    // 取得陣列指標
+    jint *int_arr_p = env->GetIntArrayElements(int_arr, NULL);
+    // 取得長度
+    int32_t len = env->GetArrayLength(int_arr);
+    for (int i = 0; i < len; i++) {
+        // 參數1:Log級別
+        // 參數2:TAG
+        // 參數3:印出的值
+        // 參數4:把值傳給參數3
+        //__android_log_print(ANDROID_LOG_ERROR, "JNI", "取得值%d", *(int_arr_p + i));
+        LOGE("取得值%d", *(int_arr_p + i));
+        // 修改值
+        *(int_arr_p + i) = *(int_arr_p + i) + 100;
+    }
+    // 使用GetIntArrayElements，就要釋放記憶體空間
+    // 釋放記憶體空間
+    // 參數1: java傳來的int_arr
+    // 參數2: 由GetIntArrayElements得到的指標
+    // 參數3: 模式
+    // 0 : 更新java傳來的int_arr，並且釋放指標int_arr記憶體空間
+    // 1 : 只更新java傳來的int_arr
+    // 2 : 只釋放指標int_arr記憶體空間
+    env->ReleaseIntArrayElements(int_arr, int_arr_p, 0);
+}
+{% endhighlight %}
+
+#### Android Studio Log
+
+![img]({{site.imgurl}}/other/logcat1.png)
+
+![img]({{site.imgurl}}/other/logcat2.png)
 
 ## 完整程式碼
 
