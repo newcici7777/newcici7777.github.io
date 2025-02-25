@@ -229,3 +229,35 @@ int main() {
   return 0;
 }
 {% endhighlight %}
+
+## 父類與子類建構子解構子呼叫順序
+
+建立子類物件，呼叫父類建構子->呼叫子類建構子
+
+銷毀子類物件，呼叫子類解構子->呼叫父類解構子
+
+{% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+class Parent {
+ public:
+  Parent() {cout << "Parent建構子" << endl;}
+  ~Parent() {cout << "Parent解構子" << endl;}
+};
+class Child:public Parent {
+ public:
+  Child() {cout << "Child建構子" << endl;}
+  ~Child() {cout << "Child解構子" << endl;}
+};
+int main() {
+  Child child;
+  return 0;
+}
+{% endhighlight %}
+
+```
+Parent建構子
+Child建構子
+Child解構子
+Parent解構子
+```

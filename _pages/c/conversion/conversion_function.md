@@ -11,8 +11,14 @@ Prerequisites:
 conversion function又稱作轉換函式，主要用來將一個類別轉換成另一個類別的函式，以下例子有從char轉換成Student類別，有從double轉換成Student類別，有從int轉換成Student類別。
 
 ## explicit顯示轉換
-顯示轉換就是告訴編譯器要轉型的型別，等號右邊明確定義Student型別。
-例如 
+
+語法
+```
+(類型)表達式
+類型(表達式)
+```
+
+顯示轉換就是告訴編譯器要轉型的型別，例如下方程式碼，等號右邊明確定義Student型別。
 {% highlight c++ linenos %}
 Student student2 = Student("student2");
 Student student3 = (Student)"student2";
@@ -109,7 +115,7 @@ int main() {
 }
 {% endhighlight %}
 
-### 函式的參數是物件，再隱式轉換的方式建立物件
+### 函式的參數是字串，再隱式轉換的方式建立物件
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -165,6 +171,19 @@ student7 name = Alice
 ### 若隱式轉換的型態與參數型態不同，但可以透過自動轉型，建立物件
 以下例子是由char轉成int，會呼叫int的建構子參數
 {% highlight c++ linenos %}
+class Student {
+public:
+  string name;
+  double weight;
+  int age;
+  Student(){};
+  // 解構子
+  ~Student() {}
+  Student(int age) {
+    this->age = age;
+    this->weight = weight;
+  }
+};
 Student createStudent2() {
   char a = 97;
   return a;
@@ -192,7 +211,6 @@ public:
   Student(){};
   // 解構子
   ~Student() {}
-
   // 參數是double
   explicit Student(double weight) {
     this->weight = weight;
@@ -201,6 +219,8 @@ public:
 int main() {
   // 顯式轉換
   Student student5 = Student(58.5);
+  // 無法使用以下隱式轉換
+  //Student student5 = 58.5;
   return 0;
 }
 {% endhighlight %}

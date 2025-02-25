@@ -828,13 +828,6 @@
 	
 	
 	<li class="">
-    	<a href="/pages/c/class/conversion_function" onclick="pageScrollToTop(this)"> 建構子轉型</a>
-        
-            
-        </li>
-	
-	
-	<li class="">
     	<a href="/pages/c/class/init_list" onclick="pageScrollToTop(this)"> 建構子初始化列表</a>
         
             
@@ -901,7 +894,7 @@
     	<a href="/pages/c/class/inheritance" onclick="pageScrollToTop(this)"> 繼承</a>
         
             
-                <ul><li><a href="#子類繼承父類" onclick="mobilePageScrollToAnchor(this)" >子類繼承父類</a></li><li><a href="#繼承方式" onclick="mobilePageScrollToAnchor(this)" >繼承方式</a></li></ul>
+                <ul><li><a href="#子類繼承父類" onclick="mobilePageScrollToAnchor(this)" >子類繼承父類</a></li><li><a href="#繼承方式" onclick="mobilePageScrollToAnchor(this)" >繼承方式</a></li><li><a href="#改變父類存取權限" onclick="mobilePageScrollToAnchor(this)" >改變父類存取權限</a></li><li><a href="#父類與子類建構子解構子呼叫順序" onclick="mobilePageScrollToAnchor(this)" >父類與子類建構子解構子呼叫順序</a></li></ul>
 
             
         </li></ul></li>
@@ -919,6 +912,27 @@
 	
 	<li class="">
     	<a href="/pages/c/conversion/explicit" onclick="pageScrollToTop(this)"> 強制轉型</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/conversion/conversion_function" onclick="pageScrollToTop(this)"> 建構子轉型</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/conversion/type_conversion" onclick="pageScrollToTop(this)"> c++型別轉換</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/c/conversion/cast_operator" onclick="pageScrollToTop(this)"> cast operator型別轉換運算子</a>
         
             
         </li></ul></li>
@@ -1433,6 +1447,10 @@
 
 <p>繼承方式有三種，public、protected、private。</p>
 
+<p>若繼承方式是protected，父類的public成員函式與成員變數會降級成protected，影嚮到孫子類存取祖父類的成員函式與變數。</p>
+
+<p>若繼承方式是private，父類的public成員函式與成員變數會降級成private，影嚮到孫子類無法存取祖父類的成員函式與變數。</p>
+
 <table>
   <tbody>
     <tr>
@@ -1461,6 +1479,42 @@
     </tr>
   </tbody>
 </table>
+
+<p>以下程式碼透過public的printId()與setId()就可以由外部main()函式去寫入私有成員變數與讀取私有成員變數。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">class</span> <span class="nc">Parent</span> <span class="p">{</span>
+ <span class="nl">public:</span>
+  <span class="n">string</span> <span class="n">name_</span><span class="p">;</span>
+  <span class="n">Parent</span><span class="p">(){}</span>
+  <span class="kt">void</span> <span class="n">setId</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">id</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">id_</span> <span class="o">=</span> <span class="n">id</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="kt">void</span> <span class="n">printId</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"id = "</span> <span class="o">&lt;&lt;</span> <span class="n">id_</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+ <span class="nl">private:</span>
+  <span class="n">string</span> <span class="n">id_</span><span class="p">;</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1567,7 +1621,6 @@
 102
 103
 104
-105
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">class</span> <span class="nc">Parent</span> <span class="p">{</span>
@@ -1658,7 +1711,6 @@
   <span class="n">child1</span><span class="p">.</span><span class="n">setName</span><span class="p">(</span><span class="s">"Cici"</span><span class="p">);</span>
   <span class="n">child1</span><span class="p">.</span><span class="n">setTel</span><span class="p">(</span><span class="s">"080xxxx"</span><span class="p">);</span>
   <span class="n">child1</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-  
   <span class="n">Child2</span> <span class="n">child2</span><span class="p">;</span>
   <span class="c1">// 因為繼承方式是protected，所以父類的public成員函式全降級變為protected成員函式</span>
   <span class="c1">// protected就不能在main()外部使用</span>
@@ -1676,6 +1728,118 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name = Cici,tel_ = 080xxxx
+id = 0001
+name = Bill,tel_ = 09xxxx
+id = g0001
+name = gBill,tel_ = g09xxxx
+id = 0002
+name = Jerry,tel_ = 08xxxx
+</code></pre></div></div>
+
+<h2 id="改變父類存取權限">改變父類存取權限</h2>
+
+<p>使用using 子類可以改變父類成員變數的權限，但無法修改父類權限為private成員變數。</p>
+
+<p>以下的例子public權限改為private，protected改為public</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">class</span> <span class="nc">Parent</span> <span class="p">{</span>
+ <span class="nl">public:</span>
+  <span class="n">string</span> <span class="n">name_</span><span class="p">;</span>
+ <span class="nl">protected:</span>
+  <span class="n">string</span> <span class="n">tel_</span><span class="p">;</span>
+ <span class="nl">private:</span>
+  <span class="n">string</span> <span class="n">id_</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="k">class</span> <span class="nc">Child</span><span class="o">:</span><span class="k">public</span> <span class="n">Parent</span> <span class="p">{</span>
+ <span class="nl">public:</span>
+  <span class="c1">// 父類別protected成員變數改成public</span>
+  <span class="k">using</span> <span class="n">Parent</span><span class="o">::</span><span class="n">tel_</span><span class="p">;</span>
+ <span class="nl">private:</span>
+  <span class="c1">// 父類別public成員變數改成private</span>
+  <span class="k">using</span> <span class="n">Parent</span><span class="o">::</span><span class="n">name_</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">Child</span> <span class="n">child</span><span class="p">;</span>
+  <span class="n">child</span><span class="p">.</span><span class="n">tel_</span> <span class="o">=</span> <span class="s">"087000"</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="父類與子類建構子解構子呼叫順序">父類與子類建構子解構子呼叫順序</h2>
+
+<p>建立子類物件，呼叫父類建構子-&gt;呼叫子類建構子</p>
+
+<p>銷毀子類物件，呼叫子類解構子-&gt;呼叫父類解構子</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="k">class</span> <span class="nc">Parent</span> <span class="p">{</span>
+ <span class="nl">public:</span>
+  <span class="n">Parent</span><span class="p">()</span> <span class="p">{</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Parent建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;}</span>
+  <span class="o">~</span><span class="n">Parent</span><span class="p">()</span> <span class="p">{</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Parent解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;}</span>
+<span class="p">};</span>
+<span class="k">class</span> <span class="nc">Child</span><span class="o">:</span><span class="k">public</span> <span class="n">Parent</span> <span class="p">{</span>
+ <span class="nl">public:</span>
+  <span class="n">Child</span><span class="p">()</span> <span class="p">{</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Child建構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;}</span>
+  <span class="o">~</span><span class="n">Child</span><span class="p">()</span> <span class="p">{</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Child解構子"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;}</span>
+<span class="p">};</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">Child</span> <span class="n">child</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Parent建構子
+Child建構子
+Child解構子
+Parent解構子
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1762,6 +1926,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "c++型別轉換",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/c/conversion/type_conversion.md",
+            "ref": "_pages/c/conversion/type_conversion.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -1857,7 +2030,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-02-24 11:03:17 +0800"
+        "time": "2025-02-25 15:42:39 +0800"
     },
     "basePath": "",
     "book": {
