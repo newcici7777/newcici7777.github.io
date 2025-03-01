@@ -515,7 +515,7 @@ const string & str;  // 不好 - & 前後都有空格
 - 關鍵詞 public:、protected: 和 private: 要縮排 1 個空格。
 - 這些關鍵詞後不要保留空行
 - public 放在最前面，然後是 protected，最後是 private。
-- 繼承關係，:冒號前後有空白，[建構子初始](#建構子初始)，也是冒號前後有空白
+- 繼承關係，:冒號前後有空白，[建構子初始](#建構子初始值)，也是冒號前後有空白
 
 {% highlight c++ linenos %}
 class MyClass : public OtherClass

@@ -10,20 +10,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="{{site.description}}">
 
-{%- if site.gitbook_version -%}
-    <meta name="generator" content="Jekyll (using style of GitBook {{ site.gitbook_version | escape }})">
-{%- else -%}
-    <meta name="generator" content="Jekyll (using style of GitBook)">
-{%- endif -%}
-
 {%- if site.author -%}
-    <meta name="author" content="{{ site.author | escape }}">
+    <meta name="author" content="{{ site.author | escape }}" />
 {%- endif -%}
 {%- if page.keywords -%}
-    <meta name="keywords" content="{{ page.keywords }}">
+    <meta name="keywords" content="{{ page.keywords }}" />
 {%- endif -%}
 {%- if seo -%}
     {%- seo -%}
+{%- else -%}
+    <meta name="seo" content="no seo" />
 {%- endif -%}
 <link rel="stylesheet" href="{{site.baseurl}}/assets/gitbook/style.css">
 <link rel="stylesheet" href="{{site.baseurl}}/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
