@@ -234,11 +234,11 @@ int main() {
 }
 {% endhighlight %}
 
-## 父類別與子類別建構子解構子呼叫順序
+## 繼承的建構子與解構子
 
-建立子類別物件，呼叫父類別建構子->呼叫子類別建構子
+- 建立子類別物件，呼叫父類別建構子->呼叫子類別建構子
 
-銷毀子類別物件，呼叫子類別解構子->呼叫父類別解構子
+- 銷毀子類別物件，呼叫子類別解構子->呼叫父類別解構子
 
 {% highlight c++ linenos %}
 #include <iostream>
@@ -333,6 +333,7 @@ cout << "Parent name = " << grandChild.Child::Parent::name_ << endl;
 
 ## 父類別子類別大小
 
+### sizeof
 以下的程式範例可以看出父類別有3個int變數(m1,m2,m3)，int大小為4byte，所以父類別總共為12byte<br>
 子類別只有1個int變數(m4)，4byte，但子類別會繼承父類別的變數，所以12byte + 4byte = 16byte，因此子類別建立的記憶體大小為16byte。<br>
 透過自建operator new()函式，可以看到建立Child的大小為16byte。<br>
@@ -378,3 +379,59 @@ size of Child = 16
 全域new size = 16
 全域 address = 0x600000008030
 ```
+
+### 記憶體布局 Memory layout 
+
+windows使用以下語法  
+```
+cl 原始檔案 /d1 reportSingleClassLayout類別名
+cl test.cpp /d1 reportSingleClassLayoutTestA
+```
+
+#### Parent
+mac使用以下語法  
+-A 10 代表只印出10筆  
+```
+clang++ -Xclang -fdump-record-layouts -c 原始檔案.cpp | grep -A 10 "class 類別名"
+clang++ -Xclang -fdump-record-layouts -c test1.cpp | grep -A 10 "class Parent"
+```
+
+拿上一個範例的程式碼，顯示出來的記憶體布局如下:  
+```
+         0 | class Parent
+         0 |   int m1_
+         4 |   int m2_
+         8 |   int m3_
+           | [sizeof=12, dsize=12, align=4,
+           |  nvsize=12, nvalign=4]
+```
+
+- m1_從0byte開始
+- m2_從4byte開始
+- m3_從8byte開始
+
+int整數大小是4byte，所以Parent類別的大小為12
+
+#### Child
+
+```
+clang++ -Xclang -fdump-record-layouts -c test1.cpp | grep -A 10 "class Child"
+```
+
+```
+         0 | class Child
+         0 |   class Parent (base)
+         0 |     int m1_
+         4 |     int m2_
+         8 |     int m3_
+        12 |   int m4_
+           | [sizeof=16, dsize=16, align=4,
+           |  nvsize=16, nvalign=4]
+```
+
+- Parent m1_從0byte開始
+- Parent m2_從4byte開始
+- Parent m3_從8byte開始
+- Child m4_從12byte開始
+
+子類別本身包含了父類別的成員變數，所以Child的大小為16byte。

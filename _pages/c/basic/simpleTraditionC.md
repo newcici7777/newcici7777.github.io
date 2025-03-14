@@ -110,6 +110,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |free|記憶體回收|記憶體釋放|
 |Stack|堆疊|棧|
 |Heap|堆積|堆|
+|Memory layout|記憶體布局|內存布局|
 
 ## 資料結構相關
 
@@ -145,7 +146,8 @@ struct|結構|結構體|
 |implicit conversion|自動轉型|隱式轉換|
 |Parent class|父類別|基類|
 |Child class|子類別|派生類|
-
+|virtual function|虛擬函式|虛函數|
+|pure virtual function|抽象函式或純虛擬函式|純虛函數|
 
 ## process相關
 

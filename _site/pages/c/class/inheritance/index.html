@@ -908,7 +908,7 @@
     	<a href="/pages/c/class/inheritance/" onclick="pageScrollToTop(this)"> 繼承</a>
         
             
-                <ul><li><a href="#子類別繼承父類別" onclick="mobilePageScrollToAnchor(this)" >子類別繼承父類別</a></li><li><a href="#繼承方式" onclick="mobilePageScrollToAnchor(this)" >繼承方式</a></li><li><a href="#改變父類別存取權限" onclick="mobilePageScrollToAnchor(this)" >改變父類別存取權限</a></li><li><a href="#父類別與子類別建構子解構子呼叫順序" onclick="mobilePageScrollToAnchor(this)" >父類別與子類別建構子解構子呼叫順序</a></li><li><a href="#繼承的範圍運算子" onclick="mobilePageScrollToAnchor(this)" >繼承的範圍運算子</a></li><li><a href="#父類別子類別大小" onclick="mobilePageScrollToAnchor(this)" >父類別子類別大小</a></li></ul>
+                <ul><li><a href="#子類別繼承父類別" onclick="mobilePageScrollToAnchor(this)" >子類別繼承父類別</a></li><li><a href="#繼承方式" onclick="mobilePageScrollToAnchor(this)" >繼承方式</a></li><li><a href="#改變父類別存取權限" onclick="mobilePageScrollToAnchor(this)" >改變父類別存取權限</a></li><li><a href="#繼承的建構子與解構子" onclick="mobilePageScrollToAnchor(this)" >繼承的建構子與解構子</a></li><li><a href="#繼承的範圍運算子" onclick="mobilePageScrollToAnchor(this)" >繼承的範圍運算子</a></li><li><a href="#父類別子類別大小" onclick="mobilePageScrollToAnchor(this)" >父類別子類別大小</a><ul><li><a href="#sizeof" onclick="mobilePageScrollToAnchor(this)" >sizeof</a></li><li><a href="#記憶體布局-memory-layout" onclick="mobilePageScrollToAnchor(this)" >記憶體布局 Memory layout</a><ul><li><a href="#parent" onclick="mobilePageScrollToAnchor(this)" >Parent</a></li><li><a href="#child" onclick="mobilePageScrollToAnchor(this)" >Child</a></li></ul></li></ul></li></ul>
 
             
         </li>
@@ -1829,11 +1829,16 @@ name = Jerry,tel_ = 08xxxx
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="父類別與子類別建構子解構子呼叫順序">父類別與子類別建構子解構子呼叫順序</h2>
+<h2 id="繼承的建構子與解構子">繼承的建構子與解構子</h2>
 
-<p>建立子類別物件，呼叫父類別建構子-&gt;呼叫子類別建構子</p>
-
-<p>銷毀子類別物件，呼叫子類別解構子-&gt;呼叫父類別解構子</p>
+<ul>
+  <li>
+    <p>建立子類別物件，呼叫父類別建構子-&gt;呼叫子類別建構子</p>
+  </li>
+  <li>
+    <p>銷毀子類別物件，呼叫子類別解構子-&gt;呼叫父類別解構子</p>
+  </li>
+</ul>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1979,6 +1984,7 @@ GrandChild name:GrandChild
 
 <h2 id="父類別子類別大小">父類別子類別大小</h2>
 
+<h3 id="sizeof">sizeof</h3>
 <p>以下的程式範例可以看出父類別有3個int變數(m1,m2,m3)，int大小為4byte，所以父類別總共為12byte<br />
 子類別只有1個int變數(m4)，4byte，但子類別會繼承父類別的變數，所以12byte + 4byte = 16byte，因此子類別建立的記憶體大小為16byte。<br />
 透過自建operator new()函式，可以看到建立Child的大小為16byte。<br /></p>
@@ -2054,6 +2060,61 @@ size of Child = 16
 全域new size = 16
 全域 address = 0x600000008030
 </code></pre></div></div>
+
+<h3 id="記憶體布局-memory-layout">記憶體布局 Memory layout</h3>
+
+<p>windows使用以下語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cl 原始檔案 /d1 reportSingleClassLayout類別名
+cl test.cpp /d1 reportSingleClassLayoutTestA
+</code></pre></div></div>
+
+<h4 id="parent">Parent</h4>
+<p>mac使用以下語法<br />
+-A 10 代表只印出10筆</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>clang++ -Xclang -fdump-record-layouts -c 原始檔案.cpp | grep -A 10 "class 類別名"
+clang++ -Xclang -fdump-record-layouts -c test1.cpp | grep -A 10 "class Parent"
+</code></pre></div></div>
+
+<p>拿上一個範例的程式碼，顯示出來的記憶體布局如下:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>         0 | class Parent
+         0 |   int m1_
+         4 |   int m2_
+         8 |   int m3_
+           | [sizeof=12, dsize=12, align=4,
+           |  nvsize=12, nvalign=4]
+</code></pre></div></div>
+
+<ul>
+  <li>m1_從0byte開始</li>
+  <li>m2_從4byte開始</li>
+  <li>m3_從8byte開始</li>
+</ul>
+
+<p>int整數大小是4byte，所以Parent類別的大小為12</p>
+
+<h4 id="child">Child</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>clang++ -Xclang -fdump-record-layouts -c test1.cpp | grep -A 10 "class Child"
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>         0 | class Child
+         0 |   class Parent (base)
+         0 |     int m1_
+         4 |     int m2_
+         8 |     int m3_
+        12 |   int m4_
+           | [sizeof=16, dsize=16, align=4,
+           |  nvsize=16, nvalign=4]
+</code></pre></div></div>
+
+<ul>
+  <li>Parent m1_從0byte開始</li>
+  <li>Parent m2_從4byte開始</li>
+  <li>Parent m3_從8byte開始</li>
+  <li>Child m4_從12byte開始</li>
+</ul>
+
+<p>子類別本身包含了父類別的成員變數，所以Child的大小為16byte。</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2244,7 +2305,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-03-14 09:18:24 +0800"
+        "time": "2025-03-14 23:39:08 +0800"
     },
     "basePath": "",
     "book": {
