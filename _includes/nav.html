@@ -19,14 +19,14 @@
 
 	{%- if item.url -%}
 	    {% assign route = route  | append: pageObj.id | append: ',' %}
-    	<a href="{{pageObj.id | relative_url l}}" onclick="pageScrollToTop(this)"> {{ pageObj.title }}</a>
+    	<a href="{{pageObj.id | relative_url l}}/" onclick="pageScrollToTop(this)"> {{ pageObj.title }}</a>
         {% if site.toc.enabled %}
             {% if page.url == pageObj.url %}
                 {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
             {% endif %}
         {% endif %}
 	{%- else -%}
-    	<a href="{{site.baseurl}}" onclick="pageScrollToTop(this)"> {{ item.title }} </a>
+    	<a href="{{site.baseurl}}/" onclick="pageScrollToTop(this)"> {{ item.title }} </a>
 	{%- endif -%}
 	{% capture path %}{{route}}{% endcapture %}
 	{%- if item.subnav -%}

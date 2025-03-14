@@ -4,8 +4,8 @@ date: 2025-02-24
 keywords: c++, inheritance
 ---
 
-## 子類繼承父類
-子類繼承父類，子類可以使用父類的成員變數與成員函式。
+## 子類別繼承父類別
+子類別繼承父類別，子類別可以使用父類別的成員變數與成員函式。
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -33,9 +33,9 @@ class Child:public Parent {
 int main() {
   // 建立child物件
   Child child;
-  // 使用父類的setName成員函式
+  // 使用父類別的setName成員函式
   child.setName("Cici");
-  // 使用父類的setTel成員函式
+  // 使用父類別的setTel成員函式
   child.setTel("08xxxxxx");
   child.setId(100);
   child.print();
@@ -54,11 +54,11 @@ class Child1:public Parent {
 
 繼承方式有三種，public、protected、private。
 
-若繼承方式是protected，父類的public成員函式與成員變數會降級成protected，影嚮到孫子類存取祖父類的成員函式與變數。
+若繼承方式是protected，父類別的public成員函式與成員變數會降級成protected，影嚮到孫子類別存取祖父類別的成員函式與變數。
 
-若繼承方式是private，父類的public成員函式與成員變數會降級成private，影嚮到孫子類無法存取祖父類的成員函式與變數。
+若繼承方式是private，父類別的public成員函式與成員變數會降級成private，影嚮到孫子類別無法存取祖父類別的成員函式與變數。
 
-|繼承方式	|在 main()存取父類public成員函式|在子類存取父類public成員函式|在孫子類存取祖父類public成員函式|
+|繼承方式	|在 main()存取父類別public成員函式|在子類別存取父類別public成員函式|在孫子類別存取祖父類別public成員函式|
 |public	|可存取|	可存取| 可存取|
 |protected|無法存取|可存取|可存取|
 |private|無法存取	|可存取|無法存取|
@@ -110,22 +110,22 @@ class Parent {
 class Child1:public Parent {
  public:
   void print() {
-    // 父類id_成員變數是private無法使用
+    // 父類別id_成員變數是private無法使用
     cout << "name = " << name_ << ",tel_ = " << tel_ << endl;
   }
 };
-//繼承方式為protected，父類的public成員變數與函式全變成protected
+//繼承方式為protected，父類別的public成員變數與函式全變成protected
 class Child2:protected Parent {
  public:
  void print(const string& name, const string& tel, const string& id) {
-   // 父類id_成員變數是private無法使用
-   // 父類的成員函式降級protected，但仍能在子類成員函式使用
-   // 無法在main()外部使用
+   // 父類別id_成員變數是private無法使用
+   // 父類別的成員函式降級protected，但仍能在子類別成員函式使用
+   // 無法在main()外部使用父類public的setName(),setTel(),printId()
    setName(name);
    setTel(tel);
    setId(id);
    printId();
-   // 父類的成員變數的仍可給child成員函式使用
+   // 父類別的成員變數的仍可給child成員函式使用
    cout << "name = " << name_ << ",tel_ = " << tel_ << endl;
  }
 };
@@ -133,50 +133,54 @@ class GrandChild2:protected Child2 {
  public:
  void print(const string& name, const string& tel, const string& id) {
    // 祖父id_成員變數是private無法使用
-   // 祖父的成員函式降級protected，但仍能在孫子類成員函式使用
-   // 無法在main()外部使用
+   // 祖父的成員函式setName(),setTel(),printId()降級protected，但仍能在孫子類別成員函式使用
+   // 無法在main()外部使用祖父類public的setName(),setTel(),printId()
    setName(name);
    setTel(tel);
    setId(id);
    printId();
-   // 父類的成員變數的仍可給child成員函式使用
+   // 祖父類別的成員變數的仍可給child成員函式使用
    cout << "name = " << name_ << ",tel_ = " << tel_ << endl;
  }
 };
 class Child3:private Parent {
  public:
  void print(const string& name, const string& tel, const string& id) {
-   // 父類id_成員變數是private無法使用
-   // 父類的成員函式降級private無法使用
+   // 父類別id_成員變數是private無法使用
+   // 父類別的成員函式setName(),setTel(),printId()降級private, 但仍能在子類別成員函式使用，孫子類別無法使用
+   // 無法在main()外部使用父類public的setName(),setTel(),printId()
    setName(name);
    setTel(tel);
    setId(id);
    printId();
-   // 父類的成員變數的仍可給child成員函式使用
+   // 父類別的成員變數的仍可給child成員函式使用
    cout << "name = " << name_ << ",tel_ = " << tel_ << endl;
  }
 };
 class GrandChild3:private Child3 {
  public:
  void print(const string& name, const string& tel, const string& id) {
-   // 祖父類id_成員變數是private無法使用
-   // 祖父類的成員函式降級private無法使用
+   // 祖父類別id_成員變數是private無法使用
+   // 祖父類別的成員函式setName(),setTel(),setId(),printId()降級private無法使用
+   // 祖父類別的public方法setName(),setTel(),setId(),printId()全部降級成private無法使用
    //setName(name);
    //setTel(tel);
    //setId(id);
    //printId();
-   // 祖父類的成員變數降級private無法使用
+   // 祖父類別的成員變數降級private無法使用
+   // cout << "name = " << name_ << ",tel_ = " << tel_ << endl;
  }
 };
 int main() {
-  // 建立child物件
+  // 建立child1物件
+  // 因為繼承方式是public，所以父類別的public成員函式可以使用
   Child1 child1;
   child1.setName("Cici");
   child1.setTel("080xxxx");
   child1.print();
   Child2 child2;
-  // 因為繼承方式是protected，所以父類的public成員函式全降級變為protected成員函式
-  // protected就不能在main()外部使用
+  // 因為繼承方式是protected，所以父類別的public成員函式全降級變為protected成員函式
+  // protected就不能在main()外部使用父類別的public成員函式setName()與setTel()
   //child2.setName("Cici2");
   //child2.setTel("080xxxx2");
   child2.print("Bill","09xxxx","0001");
@@ -199,9 +203,9 @@ id = 0002
 name = Jerry,tel_ = 08xxxx
 ```
 
-## 改變父類存取權限
+## 改變父類別存取權限
 
-使用using 子類可以改變父類成員變數的權限，但無法修改父類權限為private成員變數。
+使用using 子類別可以改變父類別成員變數的權限，但無法修改父類別權限為private成員變數。
 
 以下的例子public權限改為private，protected改為public
 {% highlight c++ linenos %}
@@ -217,10 +221,10 @@ class Parent {
 };
 class Child:public Parent {
  public:
-  // 父類別protected成員變數改成public
+  // 父類別別protected成員變數改成public
   using Parent::tel_;
  private:
-  // 父類別public成員變數改成private
+  // 父類別別public成員變數改成private
   using Parent::name_;
 };
 int main() {
@@ -230,11 +234,11 @@ int main() {
 }
 {% endhighlight %}
 
-## 父類與子類建構子解構子呼叫順序
+## 父類別與子類別建構子解構子呼叫順序
 
-建立子類物件，呼叫父類建構子->呼叫子類建構子
+建立子類別物件，呼叫父類別建構子->呼叫子類別建構子
 
-銷毀子類物件，呼叫子類解構子->呼叫父類解構子
+銷毀子類別物件，呼叫子類別解構子->呼叫父類別解構子
 
 {% highlight c++ linenos %}
 #include <iostream>
@@ -260,4 +264,117 @@ Parent建構子
 Child建構子
 Child解構子
 Parent解構子
+```
+
+## 繼承的範圍運算子
+以下的範例，父類別與子類別與孫類別都有print()成員函式，也都有name的成員變數，使用範圍運算子，可以明確指示出要使用祖父類別或父類別的成員函式或成員變數。
+
+呼叫父類別成員變數語法
+```
+子類物件.父類別::成員變數
+```
+
+呼叫父類別成員函式語法
+```
+子類物件.父類別::成員函式()
+```
+
+{% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+class Parent {
+ public:
+  string name_ = "Parent";
+  void print() {
+    cout << "Parent name:" << name_ << endl;
+  }
+};
+class Child:public Parent {
+ public:
+  string name_ = "Child";
+  void print() {
+    cout << "Child name:" << name_ << endl;
+  }
+};
+class GrandChild:public Child {
+ public:
+  string name_ = "GrandChild";
+ void print() {
+   cout << "GrandChild name:" << name_ << endl;
+ }
+};
+int main() {
+  GrandChild grandChild;
+  cout << "Parent name = " << grandChild.Parent::name_ << endl;
+  cout << "Child name = " << grandChild.Child::name_ << endl;
+  cout << "GrandChild name = " << grandChild.GrandChild::name_ << endl;
+  cout << "------------------------" << endl;
+  grandChild.Parent::print();
+  grandChild.Child::print();
+  grandChild.GrandChild::print();
+  return 0;
+}
+{% endhighlight %}
+```
+Parent name = Parent
+Child name = Child
+GrandChild name = GrandChild
+------------------------
+Parent name:Parent
+Child name:Child
+GrandChild name:GrandChild
+```
+
+也可以使用一層層呼叫方式，呼叫成員變數。呼叫方式子類別::父類別::父類別的成員變數
+
+{% highlight c++ linenos %}
+cout << "Parent name = " << grandChild.Child::Parent::name_ << endl;
+{% endhighlight %}
+
+## 父類別子類別大小
+
+以下的程式範例可以看出父類別有3個int變數(m1,m2,m3)，int大小為4byte，所以父類別總共為12byte<br>
+子類別只有1個int變數(m4)，4byte，但子類別會繼承父類別的變數，所以12byte + 4byte = 16byte，因此子類別建立的記憶體大小為16byte。<br>
+透過自建operator new()函式，可以看到建立Child的大小為16byte。<br>
+
+使用以下語法可以看出父類別的大小
+```
+sizeof(父類別)
+```
+{% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+void* operator new(size_t size) {
+  cout << "全域new size = " << size << endl;
+  void* ptr = malloc(size);
+  cout << "全域 address = " << ptr << endl;
+  return ptr;
+}
+void operator delete(void* ptr) {
+  if (ptr == nullptr) return;
+  cout << "全域 delete address = " << ptr << endl;
+  free(ptr);
+}
+class Parent {
+ public:
+  int m1_ = 10;
+  int m2_ = 20;
+  int m3_ = 30;
+};
+class Child:public Parent {
+ public:
+  int m4_ = 40;
+};
+int main() {
+  cout << "size of Parent = " << sizeof(Parent) << endl;
+  cout << "size of Child = " << sizeof(Child) << endl;
+  Child* ptr = new Child;
+  return 0;
+}
+{% endhighlight %}
+```
+size of Parent = 12
+size of Child = 16
+全域new size = 16
+全域 address = 0x600000008030
 ```

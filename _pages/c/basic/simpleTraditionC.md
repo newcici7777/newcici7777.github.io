@@ -62,9 +62,6 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |#define|前置指令|宏|
 |Preprocessor|前置處理器|預處理器|
 |default|預設值|缺省|
-|conversion|轉型|轉換|
-|explicit conversion|強制轉型|顯示轉換或手動轉換|
-|implicit conversion|自動轉型|隱式轉換|
 |Temp Variable|暫存變數或臨時變數|臨時變量|
 
 
@@ -143,6 +140,12 @@ struct|結構|結構體|
 |member function|成員方法|成員函數|
 |::scope resolution operator|範圍運算子|域作用符|
 |Functor|物件函式|仿函數|
+|conversion|轉型|轉換|
+|explicit conversion|強制轉型|顯式轉換或手動轉換|
+|implicit conversion|自動轉型|隱式轉換|
+|Parent class|父類別|基類|
+|Child class|子類別|派生類|
+
 
 ## process相關
 

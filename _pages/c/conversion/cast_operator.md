@@ -1,5 +1,5 @@
 ---
-title: cast operator型別轉換運算子
+title: cast operator轉型運算子
 date: 2025-02-25
 keywords: c++, cast operator
 ---
@@ -8,7 +8,7 @@ Prerequisites:
 
 在建構子轉型的文章中，是把string轉成類別、int轉成類別、double轉成類別
 
-cast operator，把類別轉換成某種類型，比如類別轉成int、類別轉成string、類別轉成float
+cast operator，把類別轉型成某種類型，比如類別轉成int、類別轉成string、類別轉成float
 
 語法，必須放在類別中，沒有傳回值類型，不能有參數。
 ```
@@ -28,7 +28,7 @@ int main() {
   cout << "name = " << name << endl;
   cout << "age = " << age << endl;
   cout << "weight = " << weight << endl;
-  // 強制轉換
+  // 強制轉型
   string name2 = (string)student;
   int age2 = (int)student;
   double weight2 = (double)student;

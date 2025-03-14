@@ -140,7 +140,7 @@ int func1(士兵代號,士兵子彈數) {
 int func1(int i, int bullet) {
   if(i > 10) return 0;
   //自己的子彈數 + 後面的人的子彈數
-  return bullet + func2(i+1, bullet+1);
+  return bullet + func1(i+1, bullet+1);
 }
 {% endhighlight %}
 
