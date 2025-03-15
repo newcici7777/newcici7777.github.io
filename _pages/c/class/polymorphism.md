@@ -140,38 +140,38 @@ int main() {
 #include <iostream>
 using namespace std;
 class Animal{
-public:
-    virtual void eat(){}
+ public:
+  virtual void eat(){}
 };
 class Wolf: public Animal{
-public:
-    void eat(){
-        cout << "Wolf eat!" << endl;
-    }
+ public:
+  void eat(){
+    cout << "Wolf eat!" << endl;
+  }
 };
 class Fish: public Animal{
-public:
-    void eat(){
-        cout << "Fish eat!" << endl;
-    }
+ public:
+  void eat(){
+    cout << "Fish eat!" << endl;
+  }
 };
 class Bird: public Animal{
-public:
-    void eat(){
-        cout << "Bird eat!" << endl;
-    }
+ public:
+  void eat(){
+    cout << "Bird eat!" << endl;
+  }
 };
 class Human: public Animal{
-public:
-    void eat(){
-        cout << "Human eat!" << endl;
-    }
+ public:
+  void eat(){
+    cout << "Human eat!" << endl;
+  }
 };
 class Cat: public Animal{
-public:
-    void eat(){
-        cout << "Cat eat!" << endl;
-    }
+ public:
+  void eat(){
+    cout << "Cat eat!" << endl;
+  }
 };
 int main() {
   // wolf
@@ -204,53 +204,53 @@ int main() {
 #include <vector>
 using namespace std;
 class Animal{
-public:
-    virtual void eat(){}
+ public:
+  virtual void eat(){}
 };
 class Wolf: public Animal{
-public:
-    void eat(){
-        cout << "Wolf eat!" << endl;
-    }
+ public:
+  void eat(){
+    cout << "Wolf eat!" << endl;
+  }
 };
 class Fish: public Animal{
-public:
-    void eat(){
-        cout << "Fish eat!" << endl;
-    }
+ public:
+  void eat(){
+    cout << "Fish eat!" << endl;
+  }
 };
 class Bird: public Animal{
-public:
-    void eat(){
-        cout << "Bird eat!" << endl;
-    }
+ public:
+  void eat(){
+    cout << "Bird eat!" << endl;
+  }
 };
 class Human: public Animal{
-public:
-    void eat(){
-        cout << "Human eat!" << endl;
-    }
+ public:
+  void eat(){
+    cout << "Human eat!" << endl;
+  }
 };
 class Cat: public Animal{
-public:
-    void eat(){
-        cout << "Cat eat!" << endl;
-    }
+ public:
+  void eat(){
+    cout << "Cat eat!" << endl;
+  }
 };
 int main() {
-    vector<Animal*> animals;
-    animals.push_back(new Wolf());
-    animals.push_back(new Fish());
-    animals.push_back(new Bird());
-    animals.push_back(new Human());
-    animals.push_back(new Cat());
-    //使用iterator
-    vector<Animal*>::iterator it = animals.begin();
-    //animals.end()指向最後一個元素的下一個元素
-    for(;it != animals.end(); it++) {
-        (*it)->eat() ;
-    }
-    return;
+  vector<Animal*> animals;
+  animals.push_back(new Wolf());
+  animals.push_back(new Fish());
+  animals.push_back(new Bird());
+  animals.push_back(new Human());
+  animals.push_back(new Cat());
+  //使用iterator
+  vector<Animal*>::iterator it = animals.begin();
+  //animals.end()指向最後一個元素的下一個元素
+  for(;it != animals.end(); it++) {
+    (*it)->eat() ;
+  }
+  return 0;
 }
 {% endhighlight %}
 ```
@@ -394,6 +394,236 @@ int main() {
 
 ### 純虛擬函式解構子
 
-原理跟多型解構子一樣，
+原理跟多型解構子一樣。  
+{% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+class Parent {
+ public:
+  virtual void func() = 0;
+  virtual ~Parent() {
+    cout << "父類別解構子" << endl;
+  }
+};
+class Child:public Parent {
+ public:
+  void func() {
+    cout << "實作父類別func()" << endl;
+  }
+  ~Child() {
+    cout << "子類別解構子" << endl;
+  }
+};
+int main() {
+  Parent* ptr = new Child;
+  ptr->func();
+  delete ptr;
+  return 0;
+}
+{% endhighlight %}
+```
+實作父類別func()
+子類別解構子
+父類別解構子
+```
+
+## typeid判斷類型
+
+使用typeid的==與!=，可以判斷類型。
+
+語法
+```
+typeid(類型)
+typeid(指標)
+typeid(參考)
+typeid(變數)
+```
+
+### 普通類別判斷類型
+以下範例建立Student物件s1。  
+建立Student指標，建立Student參考。  
+註解中有解釋各種比較。  
+{% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+class Student {
+ public:
+  string name;
+};
+int main() {
+  Student s1;
+  Student* ptr = &s1;
+  Student& ref = s1;
+  // 判斷s1變數是不是Student類別
+  if (typeid(s1) == typeid(Student)) cout << "s1 == Student" << endl;
+  // ptr指標，使用*取值運算子，取出指標存放的物件，判斷這個物件是不是Student
+  if (typeid(*ptr) == typeid(Student)) cout << "*ptr == Student" << endl;
+  // 指標與Student類別，就不是相等，一個是指標，一個是類別，怎麼會是相同東西。
+  if (typeid(ptr) == typeid(Student)) cout << "ptr指標 == Student" << endl;
+  // 指標與Student指標相比，二者都是指標
+  if (typeid(ptr) == typeid(Student*)) cout << "ptr指標 == Student指標" << endl;
+  // ref參考是不是Student類別
+  if (typeid(ref) == typeid(Student)) cout << "ref == Student" << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+s1 == Student
+*ptr == Student
+ptr指標 == Student指標
+ref == Student
+```
+
+### 多型判斷類型
+由於多型的過程，父類別指標指向各種不同的子類別，如先前的例子，Animal可以有多種類型，可以是Wolf、Fish、Cat...  
+那麼要如何知道父類別指標是那個子類型呢？透過typeid可以知道。
+
+- 注意！不能把父類別指標與子類別指標進行比較，因為二者是不同的。
+- 使用\*取值運算子，將父類別指標指向的記憶體位址的值(物件)取出來，比較類別。
+
+{% highlight c++ linenos %}
+#include <iostream>
+#include <vector>
+using namespace std;
+class Animal{
+ public:
+  virtual void eat(){}
+};
+class Fish: public Animal{
+ public:
+  void eat(){
+    cout << "Fish eat!" << endl;
+  }
+};
+class Cat: public Animal{
+public:
+  void eat(){
+    cout << "Cat eat!" << endl;
+  }
+};
+int main() {
+  Animal* animal = new Fish;
+  // animal指標是Animal，Fish指標是Fish，二者不是相同的指標
+  // 不能用父類別指標與子類別指標相互比較，即便父類別指標指向的記憶體位址的值是子類別
+  if (typeid(animal) == typeid(Fish*)) {
+    cout << "1.這是魚" << endl;
+  } else {
+    cout << "1.這不是魚" << endl;
+  }
+  // 在多型中，不能用指標來判斷類型
+  // 要使用指標指向的物件，物件與物件進行比較，才能判斷出類型
+  // 使用*取值運算子，父類別指標指向的記憶體位址的值取出來，也就是把子類別物件取出來
+  // 判斷物件是不是相同類別
+  if (typeid(*animal) == typeid(Fish)) {
+    cout << "2.這是魚" << endl;
+  } else {
+    cout << "2.這不是魚" << endl;
+  }
+  return 0;
+}
+{% endhighlight %}
+```
+1.這不是魚
+2.這是魚
+```
+
+## dynamic_cast
+dynamic_cast主要用於多型，所謂的多型，也就是父類別指標指向子類別記憶體位址。  
+當要把父類別指標(實際上指向子類別)轉型成子類別指標，除了原本c語言的強制轉型的方法之外，C++提供了dynamic_cast，把父類別指標轉回原本的子類別指標。  
+
+dynamic_cast轉型失敗會傳回nullptr。
+
+c++轉型語法
+```
+子類別指標* 指標變數名 = dynamic_cast<子類別指標*>(父類別指標);
+Fish* fish_ptr = dynamic_cast<Fish*>(parent_ptr);
+```
+
+c語言強制轉型語法  
+功能與dynamic_cast相同，但轉型失敗不會傳回nullptr。
+```
+子類別指標* 指標變數名 = (子類別指標*)父類別指標;
+Fish* fish_ptr = (Fish*)parent_ptr;
+```
+
+以下的範例是判斷是Fish類別，就呼叫游泳的功能swim()，父類別Animal是沒有swim()函式，必須將父類別指標轉成子類別指標，才能呼叫swim()函式。  
+步驟如下:  
+1. 使用\*取值運算子取出父類別指標指向的記憶體位址存放的物件。
+2. 判斷父類別指標指向的物件是否為Fish類別
+3. 使用dynamic_cast把父類別指標轉成子類別指標，因為父類別Animal是沒有swim()函式。
+4. 子類別指標呼叫swim()函式。
+{% highlight c++ linenos %}
+#include <iostream>
+#include <vector>
+using namespace std;
+class Animal{
+ public:
+  virtual void eat(){}
+};
+class Wolf: public Animal{
+ public:
+  void eat(){
+    cout << "Wolf eat!" << endl;
+  }
+};
+class Fish: public Animal{
+ public:
+  void eat(){
+    cout << "Fish eat!" << endl;
+  }
+  void swim() {
+    cout << "Fish swim!" << endl;
+  }
+};
+class Bird: public Animal{
+ public:
+  void eat(){
+    cout << "Bird eat!" << endl;
+  }
+};
+class Human: public Animal{
+ public:
+  void eat(){
+    cout << "Human eat!" << endl;
+  }
+};
+class Cat: public Animal{
+ public:
+  void eat(){
+    cout << "Cat eat!" << endl;
+  }
+};
+int main() {
+  vector<Animal*> animals;
+  animals.push_back(new Wolf());
+  animals.push_back(new Fish());
+  animals.push_back(new Bird());
+  animals.push_back(new Human());
+  animals.push_back(new Cat());
+  //使用iterator
+  vector<Animal*>::iterator it = animals.begin();
+  //animals.end()指向最後一個元素的下一個元素
+  for(;it != animals.end(); it++) {
+    Animal* parent_ptr = *it;
+    parent_ptr->eat() ;
+    if(typeid(*parent_ptr) == typeid(Fish)) {
+      //Fish* fish_ptr = dynamic_cast<Fish*>(parent_ptr);
+      Fish* fish_ptr = (Fish*)parent_ptr;
+      // 若轉型成功才執行以下程式碼，轉型失敗會傳回nullptr
+      if (fish_ptr != nullptr)
+        fish_ptr->swim();
+    }
+  }
+  return 0;
+}
+{% endhighlight %}
+```
+Wolf eat!
+Fish eat!
+Fish swim!
+Bird eat!
+Human eat!
+Cat eat!
+```
 
 [1]: {% link _pages/c/stl/iterator.md %}#正向疊代器

@@ -47,9 +47,9 @@ call func()
 call func()
 ```
 
-## this指標取得成員變數
+## this指標取得物件成員變數
 
-使用this指標取得成員變數要用->(箭頭)取得，因為this是指標，指向物件存放的位址。
+使用this指標取得物件成員變數要用->(箭頭)取得，因為this是指標，指向物件存放的位址。
 {% highlight c++ linenos %}
 class Student{
  public:
