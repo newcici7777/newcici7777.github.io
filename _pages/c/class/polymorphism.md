@@ -488,6 +488,9 @@ using namespace std;
 class Animal{
  public:
   virtual void eat(){}
+  virtual ~Animal() {
+    cout << "父類別解構子" << endl;
+  }
 };
 class Fish: public Animal{
  public:
@@ -519,6 +522,7 @@ int main() {
   } else {
     cout << "2.這不是魚" << endl;
   }
+  delete animal;
   return 0;
 }
 {% endhighlight %}
@@ -559,6 +563,9 @@ using namespace std;
 class Animal{
  public:
   virtual void eat(){}
+  virtual ~Animal() {
+    cout << "父類別解構子" << endl;
+  }  
 };
 class Wolf: public Animal{
  public:
@@ -613,6 +620,7 @@ int main() {
       if (fish_ptr != nullptr)
         fish_ptr->swim();
     }
+    delete parent_ptr;
   }
   return 0;
 }
