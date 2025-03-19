@@ -316,6 +316,33 @@ int test();
 
 ### 完整檔案
 
+MainActivity.java
+{% highlight c++ linenos %}
+public class MainActivity extends AppCompatActivity {
+
+    // Used to load the 'ndkproj' library on application startup.
+    static {
+        System.loadLibrary("ndkproj");
+        System.loadLibrary("Test");
+    }
+
+    private ActivityMainBinding binding;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        // Example of a call to a native method
+        TextView tv = binding.sampleText;
+        tv.setText(stringFromJNI() + stringFromJNI2("abcdefg") + _test());
+    }
+    public native String stringFromJNI();
+}
+{% endhighlight %}
+
 native-lib.cpp
 {% highlight c++ linenos %}
 #include <jni.h>
@@ -336,4 +363,19 @@ Java_com_example_ndkproj_MainActivity_stringFromJNI(
     std::string hello = "Hello from C++";
     return env->NewStringUTF(hello.c_str());
 }
+{% endhighlight %}
+
+CMakeLists.txt
+{% highlight c++ linenos %}
+cmake_minimum_required(VERSION 3.22.1)
+project("ndkproj")
+add_library(ndkproj SHARED native-lib.cpp)
+#靜態庫
+add_library(Test STATIC IMPORTED)
+set_target_properties(Test PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/libTest.a)
+#動態庫
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -L${CMAKE_CURRENT_SOURCE_DIR}/../jniLibs/${ANDROID_ABI}")
+find_library(log-lib log)
+link_directories(${CMAKE_SOURCE_DIR})
+target_link_libraries(ndkproj ${log-lib} Test)
 {% endhighlight %}

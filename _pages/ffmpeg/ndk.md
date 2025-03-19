@@ -33,6 +33,7 @@ NDK與CMake要有勾選
 ![img]({{site.imgurl}}/ndk/activity3.png)
 
 ## 增加jni方法
+滑鼠對著函式名(如下圖是滑鼠對著stringFromJNI2函式名)，按alt + enter，也可以產生jni方法
 ![img]({{site.imgurl}}/ndk/create_jni1.png)
 ![img]({{site.imgurl}}/ndk/create_jni2.png)
 ![img]({{site.imgurl}}/ndk/create_jni3.png)
