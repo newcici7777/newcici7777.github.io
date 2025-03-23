@@ -5,7 +5,6 @@ keywords: java, jni, android
 ---
 
 ## JNI
-
 JNI是指程式運行時Java程式碼可以使用C或C++的lib，也可以在C或C++的lib使用Java程式碼。
 
 ## NDK
@@ -14,19 +13,18 @@ JNI是指程式運行時Java程式碼可以使用C或C++的lib，也可以在C�
 ## 建立Java可以呼叫的C++
 
 ### java sdk
-我是MAC電腦，在終端機執行以下指令，就會顯示java sdk的路徑
+我是MAC電腦，在終端機執行以下指令，就會顯示java sdk的路徑  
 ```
 $ /usr/libexec/java_home
 /Users/cici/Library/Java/JavaVirtualMachines/openjdk-20.0.1/Contents/Home
 ```
 
 ### native
+在函式前面加上native，表示這個是呼叫c++函式。  
 MainActivity.java
 {% highlight c++ linenos %}
 public native String stringFromJNI();
 {% endhighlight %}
-
-在函式前面加上native，表示這個是呼叫c++函式。
 
 ### c++函式與java函式相互跳躍
 ![img]({{site.imgurl}}/ndk/jump_to_c.png)
@@ -34,22 +32,21 @@ public native String stringFromJNI();
 ![img]({{site.imgurl}}/ndk/jump_to_java.png)
 
 ### jni.h
+先include jni.h的head file  
 native-lib.cpp
 {% highlight c++ linenos %}
 #include <jni.h>
 {% endhighlight %}
 
-先include jni.h的head file
-
 ### extern c
+若是c++寫的程式，前面都要加上extern c，Java才可以辦識這是C++程式  
 native-lib.cpp
 {% highlight c++ linenos %}
 extern "C" JNIEXPORT jstring JNICALL
 {% endhighlight %}
 
-若是c++寫的程式，前面都要加上extern c，Java才可以辦識這是C++程式
-
 ### 傳回值
+c++函式傳回值的型態是jstring  
 MainActivity.java
 {% highlight c++ linenos %}
 public native String stringFromJNI();
@@ -60,7 +57,6 @@ native-lib.cpp
 {% highlight c++ linenos %}
 extern "C" JNIEXPORT jstring JNICALL
 {% endhighlight %}
-c++函式傳回值的型態是jstring
 
 ### Java的型態與c++型態
 

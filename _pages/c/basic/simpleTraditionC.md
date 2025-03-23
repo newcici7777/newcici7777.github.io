@@ -15,6 +15,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |object file|目的檔|目標檔|
 |binary file|機器語言指令|二進制檔案|
 |linking|鏈結|鏈結|
+|comment|註解|註釋|
 
 
 ## 資料型態相關
