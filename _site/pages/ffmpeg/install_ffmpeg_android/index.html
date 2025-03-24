@@ -2,8 +2,8 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>陣列 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="c++, array" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>FFmpeg on Android </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="android, ffmpeg" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -327,12 +327,9 @@
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000"><a href="/" onclick="pageScrollToTop(this)"> 指向陣列的指標 </a><ul>
 	
 	
-	<li class="active">
+	<li class="">
     	<a href="/pages/c/array/array/" onclick="pageScrollToTop(this)"> 陣列</a>
         
-            
-                <ul><li><a href="#初始化值" onclick="mobilePageScrollToAnchor(this)" >初始化值</a></li><li><a href="#陣列長度" onclick="mobilePageScrollToAnchor(this)" >陣列長度</a><ul><li><a href="#常數" onclick="mobilePageScrollToAnchor(this)" >常數</a></li><li><a href="#運算式" onclick="mobilePageScrollToAnchor(this)" >運算式</a></li></ul></li><li><a href="#陣列中有多少元素" onclick="mobilePageScrollToAnchor(this)" >陣列中有多少元素？</a></li><li><a href="#陣列中每一個值都初始化為整數0" onclick="mobilePageScrollToAnchor(this)" >陣列中每一個值都初始化為整數0</a></li><li><a href="#memset陣列清空" onclick="mobilePageScrollToAnchor(this)" >memset陣列清空</a></li><li><a href="#memcpy-複製陣列記憶體內容複製" onclick="mobilePageScrollToAnchor(this)" >memcpy() 複製陣列，記憶體內容複製</a><ul><li><a href="#複製全部元素" onclick="mobilePageScrollToAnchor(this)" >複製全部元素</a></li><li><a href="#複製部分元素" onclick="mobilePageScrollToAnchor(this)" >複製部分元素</a></li></ul></li></ul>
-
             
         </li>
 	
@@ -1375,9 +1372,12 @@
         </li>
 	
 	
-	<li class="">
+	<li class="active">
     	<a href="/pages/ffmpeg/install_ffmpeg_android/" onclick="pageScrollToTop(this)"> FFmpeg on Android</a>
         
+            
+                <ul><li><a href="#編譯ffmpeg" onclick="mobilePageScrollToAnchor(this)" >編譯ffmpeg</a><ul><li><a href="#下載ndk" onclick="mobilePageScrollToAnchor(this)" >下載ndk</a></li><li><a href="#建立build_androidsh檔案並修改權限" onclick="mobilePageScrollToAnchor(this)" >建立build_android.sh檔案並修改權限</a></li><li><a href="#交叉編譯過程" onclick="mobilePageScrollToAnchor(this)" >交叉編譯過程</a></li><li><a href="#make-v1" onclick="mobilePageScrollToAnchor(this)" >make V=1</a></li><li><a href="#make-clean" onclick="mobilePageScrollToAnchor(this)" >make clean</a></li><li><a href="#make-install" onclick="mobilePageScrollToAnchor(this)" >make install</a></li></ul></li><li><a href="#編譯參數介紹" onclick="mobilePageScrollToAnchor(this)" >編譯參數介紹</a><ul><li><a href="#llvm" onclick="mobilePageScrollToAnchor(this)" >LLVM</a></li><li><a href="#sysroot" onclick="mobilePageScrollToAnchor(this)" >SYSROOT</a></li><li><a href="#cflags" onclick="mobilePageScrollToAnchor(this)" >cflags</a><ul><li><a href="#buildninja" onclick="mobilePageScrollToAnchor(this)" >build.ninja</a></li></ul></li><li><a href="#cpu" onclick="mobilePageScrollToAnchor(this)" >cpu</a></li><li><a href="#arch架構" onclick="mobilePageScrollToAnchor(this)" >arch架構</a></li><li><a href="#nm" onclick="mobilePageScrollToAnchor(this)" >nm</a></li><li><a href="#configlog" onclick="mobilePageScrollToAnchor(this)" >config.log</a></li><li><a href="#bin_prefix" onclick="mobilePageScrollToAnchor(this)" >BIN_PREFIX</a></li><li><a href="#增加pathcccxx" onclick="mobilePageScrollToAnchor(this)" >增加PATH,CC,CXX</a></li><li><a href="#configure" onclick="mobilePageScrollToAnchor(this)" >./configure</a></li><li><a href="#configure-help" onclick="mobilePageScrollToAnchor(this)" >./configure –help</a></li><li><a href="#prefix" onclick="mobilePageScrollToAnchor(this)" >–prefix</a></li><li><a href="#configuration-options" onclick="mobilePageScrollToAnchor(this)" >Configuration options</a></li><li><a href="#program-options" onclick="mobilePageScrollToAnchor(this)" >Program options</a></li><li><a href="#component-options" onclick="mobilePageScrollToAnchor(this)" >Component options</a></li><li><a href="#individual-component-options" onclick="mobilePageScrollToAnchor(this)" >Individual component options:</a></li><li><a href="#cross-compile" onclick="mobilePageScrollToAnchor(this)" >cross-compile</a></li></ul></li><li><a href="#build_androidsh完整檔案" onclick="mobilePageScrollToAnchor(this)" >build_android.sh完整檔案</a></li></ul>
+
             
         </li></ul></li></ul></li>
 	
@@ -1401,7 +1401,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >陣列</a>
+                            <a href="." >FFmpeg on Android</a>
                         
                     </h1>
                 </div>
@@ -1414,339 +1414,265 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/array/array">陣列</h1>
+                        <h1 id="/pages/ffmpeg/install_ffmpeg_android">FFmpeg on Android</h1>
                     
 
-                    <h3 id="初始化值">初始化值</h3>
-
-<p>資料型態 陣列名[長度] = {值1, 值2, 值3 …};</p>
-
-<p>若值的數量比長度小，沒有在括號{}中的值預設為0。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arr[0] = 0
-arr[1] = 1
-arr[2] = 2
-arr[3] = 3
-arr[4] = 0
-arr[5] = 0
-arr[6] = 0
-arr[7] = 0
-arr[8] = 0
-arr[9] = 0
-</code></pre></div></div>
-
-<p>資料型態 陣列名[] = {值1, 值2, 值3 …};</p>
-
-<h3 id="陣列長度">陣列長度</h3>
-
-<p>陣列的長度可以用常數、運算式。</p>
-
-<h4 id="常數">常數</h4>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="c1">//使用常數</span>
-<span class="k">const</span> <span class="kt">int</span> <span class="n">ARR_MAX</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="n">ARR_MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arr[0] = 0
-arr[1] = 1
-arr[2] = 2
-arr[3] = 3
-arr[4] = 0
-arr[5] = 0
-arr[6] = 0
-arr[7] = 0
-arr[8] = 0
-arr[9] = 0
-</code></pre></div></div>
-
-<h4 id="運算式">運算式</h4>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-  <span class="c1">//使用運算式設定陣列長度</span>
-  <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="k">sizeof</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
-  <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr size = "</span> <span class="o">&lt;&lt;</span> <span class="n">size</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arr size = 4
-arr[0] = 0
-arr[1] = 1
-arr[2] = 2
-arr[3] = 3
-</code></pre></div></div>
-
-<h3 id="陣列中有多少元素">陣列中有多少元素？</h3>
-
-<p>sizeof(陣列名) / sizeof(陣列資料型態) = 元素個數</p>
-
-<p>sizeof(陣列名) 是取得這個陣列占記憶體的大小。
-sizeof(資料型態) 是取得資料資料型態占的記憶體大小，如int占4byte，double占8byte，char占1byte。</p>
-
-<h3 id="陣列中每一個值都初始化為整數0">陣列中每一個值都初始化為整數0</h3>
-
-<p>以下二種寫法都是一樣，初始化為整數0。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>資料型態 陣列名[長度] = {0};
-資料型態 陣列名[長度] = {};
-</code></pre></div></div>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="p">}</span>
-  
-  <span class="kt">int</span> <span class="n">arr1</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{};</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr1</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr1["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-arr[0] = 0
-arr[1] = 0
-arr[2] = 0
-arr[3] = 0
-arr[4] = 0
-arr[5] = 0
-arr[6] = 0
-arr[7] = 0
-arr[8] = 0
-arr[9] = 0
-arr1[0] = 0
-arr1[1] = 0
-arr1[2] = 0
-arr1[3] = 0
-arr1[4] = 0
-arr1[5] = 0
-arr1[6] = 0
-arr1[7] = 0
-arr1[8] = 0
-arr1[9] = 0
-</code></pre></div></div>
-
-<h3 id="memset陣列清空">memset陣列清空</h3>
-
-<p>陣列中每個元素記憶體位址的值設為00000000。</p>
-
-<p>void* memset(void *s, int c, size_t n);</p>
-
+                    <p>Prerequisites:</p>
 <ul>
-  <li>參數1 : 陣列名</li>
-  <li>參數2 : 整數0</li>
-  <li>參數3 : 陣列記憶體大小</li>
+  <li><a href="/pages/ffmpeg/cmake/#查詢模擬器CPU架構">查詢模擬器CPU架構</a></li>
 </ul>
 
+<h2 id="編譯ffmpeg">編譯ffmpeg</h2>
+<h3 id="下載ndk">下載ndk</h3>
+<p>歷經千辛萬苦，終於ndk build ffmpeg成功， 以下為編譯後的重要記事作為記錄。 <br />
+MAC下載ndk後，請選xxxxxxxx.app，然後滑鼠”右鍵” &gt; “顯示套件內容” &gt; “Contents” &gt; “NDK”<br />
+把NDK目錄複製到家目錄下(或任何你能記住的地方)</p>
+
+<h3 id="建立build_androidsh檔案並修改權限">建立build_android.sh檔案並修改權限</h3>
+<p>建立build_android.sh在ffmpeg目錄下<br />
+修改權限，增加執行功能</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod 777 build_android.sh
+</code></pre></div></div>
+<p>或</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod +x build_android.sh
+</code></pre></div></div>
+<h3 id="交叉編譯過程">交叉編譯過程</h3>
+<p>在ffmpeg目錄下執行以下指令</p>
+<ol>
+  <li>終端機執行<code class="language-plaintext highlighter-rouge">./build_android.sh</code></li>
+  <li>會自動去執行./configure，後面有設置許多編譯時需要用到的參數。</li>
+  <li>會自動產生makefile檔案</li>
+  <li>build_android.sh自動執行<code class="language-plaintext highlighter-rouge">make install</code>指令</li>
+  <li>至OUTPUT參數的路徑查看是否有產生動態庫.so或靜態庫.a</li>
+</ol>
+
+<h3 id="make-v1">make V=1</h3>
+<p>V=1查看詳細的編譯過程</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make -j4 V=1
+</code></pre></div></div>
+<h3 id="make-clean">make clean</h3>
+<p>清理</p>
+
+<h3 id="make-install">make install</h3>
+<p>執行makefile，並把產生出來的動態庫與靜態庫放在設置OUTPUT參數的目錄下</p>
+
+<h2 id="編譯參數介紹">編譯參數介紹</h2>
+<h3 id="llvm">LLVM</h3>
+<p>出現一些編譯問題，首先cross-prefix要使用llvm，因為NDK r28已經移除aarch64-linux-android-strip
+統一使用 LLVM 提供的 llvm-strip，所以cross-prefix一律由llvm來處理bin相關執行檔。</p>
+
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">};</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="n">memset</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">));</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+</pre></td><td class="code"><pre><span class="o">--</span><span class="n">cross</span><span class="o">-</span><span class="n">prefix</span><span class="o">=</span><span class="err">$</span><span class="n">TOOLCHAIN</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">llvm</span><span class="o">-</span> <span class="err">\</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-arr[0] = 1
-arr[1] = 2
-arr[2] = 3
-arr[3] = 4
-arr[4] = 5
-arr[5] = 6
-arr[6] = 7
-arr[7] = 8
-arr[8] = 9
-arr[9] = 0
-arr[0] = 0
-arr[1] = 0
-arr[2] = 0
-arr[3] = 0
-arr[4] = 0
-arr[5] = 0
-arr[6] = 0
-arr[7] = 0
-arr[8] = 0
-arr[9] = 0
+<h3 id="sysroot">SYSROOT</h3>
+<p>表頭檔(include目錄)與lib目錄的放置路徑</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>  <span class="o">--</span><span class="n">sysroot</span><span class="o">=</span><span class="err">$</span><span class="n">SYSROOT</span> <span class="err">\</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="cflags">cflags</h3>
+<p>轉給gcc編譯器的參數，參數<code class="language-plaintext highlighter-rouge">--sysroot=</code>，告訴編譯器去那個路徑尋找head file與lib
+extra-cflags一律簡化成只有sysroot參數</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>  <span class="o">--</span><span class="n">extra</span><span class="o">-</span><span class="n">cflags</span><span class="o">=</span><span class="s">"--sysroot=$SYSROOT"</span> <span class="err">\</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h4 id="buildninja">build.ninja</h4>
+<p>build.ninja是AndroidStudio交叉編譯工具<br />
+若不知道cflag(給c++編譯器的參數)怎麼寫，可以打開Android studio，參考下圖的路徑，找到你要編譯出來的andorid作業系統，找到build.ninja，參考flags參數
+<img src="/assets/img/ndk/build_ninja.png" alt="img" />
+-D 意思為Android Stuido交叉編譯器，所設置的前置指令，c++的前置指令是define</p>
+
+<h3 id="cpu">cpu</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="o">--</span><span class="n">cpu</span><span class="o">=</span><span class="n">armv8</span><span class="o">-</span><span class="n">a</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="arch架構">arch架構</h3>
+<p>要編譯那種架構的靜態庫或動態庫</p>
+
+<h3 id="nm">nm</h3>
+<p>nm由LLVM處理，因為NDK r28已經移除aarch64-linux-android-nm</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="o">--</span><span class="n">nm</span><span class="o">=</span><span class="err">$</span><span class="n">TOOLCHAIN</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">llvm</span><span class="o">-</span><span class="n">nm</span> <span class="err">\</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="configlog">config.log</h3>
+<p>檢查ffmpeg目錄下的ffbuild/config.log文件，使用error或failed等關鍵字搜尋錯誤訊息</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep "error" config.log
+</code></pre></div></div>
+<h3 id="bin_prefix">BIN_PREFIX</h3>
+<p>BIN_PREFIX最後面沒有任何<code class="language-plaintext highlighter-rouge">-</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BIN_PREFIX=$TOOLCHAIN/bin/$TARGET$API_LEVEL
+</code></pre></div></div>
+<h3 id="增加pathcccxx">增加PATH,CC,CXX</h3>
+<p>export PATH=$PATH:/Users/cici/NDK/toolchains/llvm/prebuilt/darwin-x86_64/bin
+export CC=aarch64-linux-android24-clang
+export CXX=aarch64-linux-android24-clang++</p>
+
+<h3 id="configure">./configure</h3>
+<p>configure產生makefile的shell檔案<br />
+什麼是makefile？指導gnu make如何編譯的shell檔案<br />
+執行make<br />
+會產生.so檔或.a檔<br />
+若執行./configure沒權限，替./configure增加可執行權限</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod +x configure
+</code></pre></div></div>
+<h3 id="configure-help">./configure –help</h3>
+<p>幫助的文件</p>
+
+<h3 id="prefix">–prefix</h3>
+<p>產生出來的.so檔或.a檔，放置的資料夾<br />
+pwd為放置.configure檔案的所在目錄</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure --prefix=`pwd`/android/armeabi-v72 \
+</code></pre></div></div>
+<p>傳遞–prefix參數給configure<br />
+<code class="language-plaintext highlighter-rouge">\</code>為換行字元，若沒這個字元，所有參數必須全在同一行，不能換行</p>
+
+<p>可以一行傳多個參數，注意!最後一行沒有<code class="language-plaintext highlighter-rouge">\</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure --prefix=`pwd`/android/armeabi-v72 \
+--xxx=abc \
+--xxx=abcd -xxx=abcde \
+--xxx=abcd -xxx=abcde --xx=abcdef 
 </code></pre></div></div>
 
-<h3 id="memcpy-複製陣列記憶體內容複製">memcpy() 複製陣列，記憶體內容複製</h3>
+<p>進到已解壓的ffmpeg目錄，執行以下句子</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure --help
+</code></pre></div></div>
+<p>會發現bindir,datadir,docdi,libdir…，目錄前面都有PREFIX，如:[PREFIX/lib]</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Standard options:
+  --logfile=FILE           log tests and output to FILE [ffbuild/config.log]
+  --disable-logging        do not log configure debug information
+  --fatal-warnings         fail if any configure warning is generated
+  --prefix=PREFIX          install in PREFIX [/usr/local]
+  --bindir=DIR             install binaries in DIR [PREFIX/bin]
+  --datadir=DIR            install data files in DIR [PREFIX/share/ffmpeg]
+  --docdir=DIR             install documentation in DIR [PREFIX/share/doc/ffmpeg]
+  --libdir=DIR             install libs in DIR [PREFIX/lib]
+  --shlibdir=DIR           install shared libs in DIR [LIBDIR]
+  --incdir=DIR             install includes in DIR [PREFIX/include]
+  --mandir=DIR             install man page in DIR [PREFIX/share/man]
+  --pkgconfigdir=DIR       install pkg-config files in DIR [LIBDIR/pkgconfig]
+  --enable-rpath           use rpath to allow installing libraries in paths
+                           not part of the dynamic linker search path
+                           use rpath when linking programs (USE WITH CARE)
+  --install-name-dir=DIR   Darwin directory name for installed targets
+</code></pre></div></div>
+<h3 id="configuration-options">Configuration options</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Configuration options:
+  --disable-static         do not build static libraries [no]
+  --enable-shared          build shared libraries [no]
+  --enable-small           optimize for size instead of speed
+  --disable-runtime-cpudetect disable detecting CPU capabilities at runtime (smaller binary)
+  --enable-gray            enable full grayscale support (slower color)
+  --disable-swscale-alpha  disable alpha channel support in swscale
+  --disable-all            disable building components, libraries and programs
+  --disable-autodetect     disable automatically detected external libraries [no]
+</code></pre></div></div>
 
-<h4 id="複製全部元素">複製全部元素</h4>
-<p>陣列中全部的元素(來源陣列)複製到另一個大小相同的陣列(目標陣列)。</p>
+<p>–disable-static 不要產生靜態庫.a，預設是[no]，預設會產生靜態庫.a<br />
+–enable-shared 產生動態庫.so，預設是[no]，預設不會產生動態庫.so<br />
+–enable-small 優化lib的大小，使lib容量更小</p>
 
-<p>需要引入函式庫#include <string.h>
-void* memcpy(void* dest, const void* src, size_t n)</string.h></p>
+<h3 id="program-options">Program options</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Program options:
+  --disable-programs       do not build command line programs
+  --disable-ffmpeg         disable ffmpeg build
+  --disable-ffplay         disable ffplay build
+  --disable-ffprobe        disable ffprobe build
+</code></pre></div></div>
+<p>–disable-programs 不要產生ffmpeg,ffplay,ffprobe執行檔<br />
+–disable-programs 就相當於執行以下三個</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  --disable-ffmpeg         disable ffmpeg build
+  --disable-ffplay         disable ffplay build
+  --disable-ffprobe        disable ffprobe build
+</code></pre></div></div>
 
+<h3 id="component-options">Component options</h3>
+<p>ffmpeg的組成</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Component options:
+  --disable-avdevice       disable libavdevice build
+  --disable-avcodec        disable libavcodec build
+  --disable-avformat       disable libavformat build
+  --disable-swresample     disable libswresample build
+  --disable-swscale        disable libswscale build
+  --disable-postproc       disable libpostproc build
+  --disable-avfilter       disable libavfilter build
+  --disable-pthreads       disable pthreads [autodetect]
+  --disable-w32threads     disable Win32 threads [autodetect]
+  --disable-os2threads     disable OS/2 threads [autodetect]
+  --disable-network        disable network support [no]
+  --disable-dwt            disable DWT code
+  --disable-error-resilience disable error resilience code
+  --disable-lsp            disable LSP code
+  --disable-faan           disable floating point AAN (I)DCT code
+  --disable-iamf           disable support for Immersive Audio Model
+  --disable-pixelutils     disable pixel utils in libavutil
+</code></pre></div></div>
+
+<p>ffmpeg主要由下面的元件所組成:<br />
+libavformat：用於各種音視頻封裝格式的生成和「解析」，包括獲取解碼所需資訊以產生解碼上下文結構<br />
+和讀取音視頻幀等功能；<br />
+libavcodec ：用於各種類型「聲音/影像」編「解碼」；<br />
+libavutil ：包含一些公共的「工具函數」；<br />
+libswscale ：用於視訊場景比例「縮放」、色彩映射轉換；<br />
+libpostproc ：用於後製效果處理；<br />
+ffmpeg ：此專案提供的工具，可用於格式轉換、解碼或電視卡即時編碼等；<br />
+ffsever ：一個HTTP 多媒體即時廣播串流伺服器；<br />
+ffplay ：是一個簡單的播放器，使用ffmpeg 函式庫解析和解碼，透過SDL顯示；</p>
+
+<p>要disable的有下列元件 (disable就不會產生靜態庫，不會讓apk肥大) 
+avdevice : 操作相機鏡頭(不支持android相機) 可以關閉  –disable-avdevice
+postproc : 用於後製效果處理</p>
+
+<p>不能disable的有下列元件</p>
 <ul>
-  <li>參數1 : 目標陣列</li>
-  <li>參數2 : 來源陣列</li>
-  <li>參數3 : 陣列記憶體大小，或使用者自行定義要複製的byte。</li>
+  <li>avcodec  影像聲音解碼</li>
+  <li>avformat 影像聲音封裝格式解碼</li>
+  <li>avfilter : 影像加上字幕加上浮水印</li>
+  <li>swscale : 放大縮小</li>
 </ul>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-	<span class="c1">//來源陣列</span>
-  <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">};</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="p">}</span>
+<p>swresample 聲音重新採樣，音檔可能有雙聲道，若想把雙聲道變單聲道，需要用這個元件。</p>
 
-  <span class="c1">//目標陣列</span>
-  <span class="kt">int</span> <span class="n">arr1</span><span class="p">[</span><span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">)];</span>
-  <span class="n">memcpy</span><span class="p">(</span><span class="n">arr1</span><span class="p">,</span> <span class="n">arr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">));</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr1</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr1["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arr[0] = 1
-arr[1] = 2
-arr[2] = 3
-arr[3] = 4
-arr[4] = 5
-arr[5] = 6
-arr[6] = 7
-arr[7] = 8
-arr[8] = 9
-arr[9] = 10
-arr1[0] = 1
-arr1[1] = 2
-arr1[2] = 3
-arr1[3] = 4
-arr1[4] = 5
-arr1[5] = 6
-arr1[6] = 7
-arr1[7] = 8
-arr1[8] = 9
-arr1[9] = 10
+<h3 id="individual-component-options">Individual component options:</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Individual component options:
+  --disable-encoder=NAME   disable encoder NAME
+  --enable-encoder=NAME    enable encoder NAME
+  --disable-encoders       disable all encoders
+  --disable-decoder=NAME   disable decoder NAME
+  --enable-decoder=NAME    enable decoder NAME
+  --disable-decoders       disable all decoders
 </code></pre></div></div>
+<p>–disable-encoder=NAME   關閉編碼，影片播放時不需要編碼<br />
+–enable-decoder=NAME    打開解碼，影片播放時需要解碼<br />
+–disable-muxer=NAME     關閉混合封裝  (把圖片與聲音混合在一起)，但是播放時，不需要產生影片，所以關閉。</p>
 
-<h4 id="複製部分元素">複製部分元素</h4>
+<h3 id="cross-compile">cross-compile</h3>
+<p>cross-compile就是交叉編譯的意思，使用各種不同作業系統的交叉編譯來編譯ffmpeg</p>
+<ol>
+  <li>–enable-cross-compile   打開交叉編譯</li>
+  <li>–cross-prefix=$TOOLCHAIN/bin/llvm- 設定交叉編譯的工具
+所有編譯過程使用的工具gcc或link工具，前綴都是<code class="language-plaintext highlighter-rouge">$TOOLCHAIN/bin/llvm-</code></li>
+</ol>
+
+<h2 id="build_androidsh完整檔案">build_android.sh完整檔案</h2>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -1769,50 +1695,230 @@ arr1[9] = 10
 18
 19
 20
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="c1">//來源陣列</span>
-  <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">};</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="p">}</span>
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+</pre></td><td class="code"><pre><span class="cp">#!/bin/bash
+</span>
+<span class="cp"># 設置變量
+</span><span class="n">NDK</span><span class="o">=/</span><span class="n">Users</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">NDK</span>
+<span class="n">API_LEVEL</span><span class="o">=</span><span class="mi">24</span>
+<span class="cp"># 可選：arm, arm64, x86, x86_64
+</span><span class="n">ARCH</span><span class="o">=</span><span class="n">arm64</span>  
+<span class="n">OUTPUT</span><span class="o">=/</span><span class="n">Users</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">android</span><span class="o">-</span><span class="n">build</span>
 
-  <span class="c1">//目標陣列</span>
-  <span class="c1">//元素全初始化為整數0</span>
-  <span class="kt">int</span> <span class="n">arr1</span><span class="p">[</span><span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">)]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
-  <span class="c1">//只複製arr陣列8byte的元素</span>
-  <span class="c1">//(8byte/每個元素是4byte)=2，只複製2個元素</span>
-  <span class="n">memcpy</span><span class="p">(</span><span class="n">arr1</span><span class="p">,</span> <span class="n">arr</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr1</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr1["</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"] = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="cp"># 根據架構設置目標三元組和目錄名
+</span><span class="k">case</span> <span class="s">"$ARCH"</span> <span class="n">in</span>
+  <span class="n">arm</span><span class="p">)</span>
+    <span class="n">TARGET</span><span class="o">=</span><span class="n">armv7a</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">androideabi</span>
+    <span class="p">;;</span>
+  <span class="n">arm64</span><span class="p">)</span>
+    <span class="n">TARGET</span><span class="o">=</span><span class="n">aarch64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">android</span>
+    <span class="p">;;</span>
+  <span class="n">x86</span><span class="p">)</span>
+    <span class="n">TARGET</span><span class="o">=</span><span class="n">i686</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">android</span>
+    <span class="p">;;</span>
+  <span class="n">x86_64</span><span class="p">)</span>
+    <span class="n">TARGET</span><span class="o">=</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">android</span>
+    <span class="p">;;</span>
+  <span class="o">*</span><span class="p">)</span>
+    <span class="n">echo</span> <span class="s">"錯誤：不支持的架構 '$ARCH'"</span>
+    <span class="n">exit</span> <span class="mi">1</span>
+    <span class="p">;;</span>
+<span class="n">esac</span>
+
+<span class="cp"># 工具鏈路徑
+</span><span class="n">TOOLCHAIN</span><span class="o">=</span><span class="err">$</span><span class="n">NDK</span><span class="o">/</span><span class="n">toolchains</span><span class="o">/</span><span class="n">llvm</span><span class="o">/</span><span class="n">prebuilt</span><span class="o">/</span><span class="n">darwin</span><span class="o">-</span><span class="n">x86_64</span>
+<span class="n">SYSROOT</span><span class="o">=</span><span class="err">$</span><span class="n">TOOLCHAIN</span><span class="o">/</span><span class="n">sysroot</span>
+<span class="n">BIN_PREFIX</span><span class="o">=</span><span class="err">$</span><span class="n">TOOLCHAIN</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="err">$</span><span class="n">TARGET</span><span class="err">$</span><span class="n">API_LEVEL</span>
+
+<span class="cp"># 檢查工具鏈是否存在
+</span><span class="k">if</span> <span class="p">[</span> <span class="o">!</span> <span class="o">-</span><span class="n">d</span> <span class="s">"$TOOLCHAIN"</span> <span class="p">];</span> <span class="n">then</span>
+  <span class="n">echo</span> <span class="s">"錯誤：工具鏈路徑 '$TOOLCHAIN' 不存在"</span>
+  <span class="n">exit</span> <span class="mi">1</span>
+<span class="n">fi</span>
+
+<span class="cp"># 檢查編譯器是否存在
+</span><span class="k">if</span> <span class="p">[</span> <span class="o">!</span> <span class="o">-</span><span class="n">f</span> <span class="s">"$BIN_PREFIX-clang"</span> <span class="p">];</span> <span class="n">then</span>
+  <span class="n">echo</span> <span class="s">"錯誤：編譯器 '$BIN_PREFIX-clang' 不存在"</span>
+  <span class="n">exit</span> <span class="mi">1</span>
+<span class="n">fi</span>
+
+<span class="cp"># 檢查輸出目錄是否存在，如果不存在則創建
+</span><span class="k">if</span> <span class="p">[</span> <span class="o">!</span> <span class="o">-</span><span class="n">d</span> <span class="s">"$OUTPUT"</span> <span class="p">];</span> <span class="n">then</span>
+  <span class="n">echo</span> <span class="s">"創建輸出目錄：$OUTPUT"</span>
+  <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="s">"$OUTPUT"</span>
+<span class="n">fi</span>
+
+
+<span class="cp"># 測試編譯器
+</span><span class="n">echo</span> <span class="s">"測試編譯器是否能生成可執行文件..."</span>
+<span class="n">echo</span> <span class="err">'</span><span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span> <span class="p">}</span><span class="err">'</span> <span class="o">&gt;</span> <span class="n">test</span><span class="p">.</span><span class="n">c</span>
+<span class="err">$</span><span class="n">BIN_PREFIX</span><span class="o">-</span><span class="n">clang</span> <span class="n">test</span><span class="p">.</span><span class="n">c</span> <span class="o">-</span><span class="n">o</span> <span class="n">test</span>
+
+<span class="k">if</span> <span class="p">[</span> <span class="err">$</span><span class="o">?</span> <span class="o">-</span><span class="n">ne</span> <span class="mi">0</span> <span class="p">];</span> <span class="n">then</span>
+  <span class="n">echo</span> <span class="s">"錯誤：編譯器測試失敗"</span>
+  <span class="n">echo</span> <span class="s">"請檢查以下內容："</span>
+  <span class="n">echo</span> <span class="s">"1. 編譯器路徑：$BIN_PREFIX-clang"</span>
+  <span class="n">echo</span> <span class="s">"2. sysroot 路徑：$SYSROOT"</span>
+  <span class="n">echo</span> <span class="s">"3. 環境變量：CC=$CC, CXX=$CXX, PATH=$PATH"</span>
+  <span class="n">exit</span> <span class="mi">1</span>
+<span class="k">else</span>
+  <span class="n">echo</span> <span class="s">"編譯器測試成功"</span>
+  <span class="n">rm</span> <span class="n">test</span><span class="p">.</span><span class="n">c</span> <span class="n">test</span>
+<span class="n">fi</span>
+
+<span class="n">echo</span> <span class="err">$</span><span class="n">OUTPUT</span>
+
+<span class="cp"># 配置 FFmpeg
+</span><span class="n">echo</span> <span class="s">"開始配置 FFmpeg..."</span>
+<span class="p">.</span><span class="o">/</span><span class="n">configure</span> \
+  <span class="o">--</span><span class="n">nm</span><span class="o">=</span><span class="err">$</span><span class="n">TOOLCHAIN</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">llvm</span><span class="o">-</span><span class="n">nm</span> \
+  <span class="o">--</span><span class="n">libdir</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">OUTPUT</span><span class="p">}</span><span class="o">/</span><span class="n">libs</span><span class="o">/</span><span class="err">$</span><span class="n">ARCH</span> \
+  <span class="o">--</span><span class="n">incdir</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">OUTPUT</span><span class="p">}</span><span class="o">/</span><span class="n">includes</span><span class="o">/</span><span class="err">$</span><span class="n">ARCH</span> \
+  <span class="o">--</span><span class="n">pkgconfigdir</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">OUTPUT</span><span class="p">}</span><span class="o">/</span><span class="n">pkgconfig</span><span class="o">/</span><span class="err">$</span><span class="n">ARCH</span> \
+  <span class="o">--</span><span class="n">target</span><span class="o">-</span><span class="n">os</span><span class="o">=</span><span class="n">android</span> \
+  <span class="o">--</span><span class="n">arch</span><span class="o">=</span><span class="err">$</span><span class="n">ARCH</span> \
+  <span class="o">--</span><span class="n">cpu</span><span class="o">=</span><span class="n">armv8</span><span class="o">-</span><span class="n">a</span> \
+  <span class="o">--</span><span class="n">sysroot</span><span class="o">=</span><span class="err">$</span><span class="n">SYSROOT</span> \
+  <span class="o">--</span><span class="n">cross</span><span class="o">-</span><span class="n">prefix</span><span class="o">=</span><span class="err">$</span><span class="n">TOOLCHAIN</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">llvm</span><span class="o">-</span> \
+  <span class="o">--</span><span class="n">cc</span><span class="o">=</span><span class="err">$</span><span class="n">BIN_PREFIX</span><span class="o">-</span><span class="n">clang</span> \
+  <span class="o">--</span><span class="n">cxx</span><span class="o">=</span><span class="err">$</span><span class="n">BIN_PREFIX</span><span class="o">-</span><span class="n">clang</span><span class="o">++</span> \
+  <span class="o">--</span><span class="n">extra</span><span class="o">-</span><span class="n">cflags</span><span class="o">=</span><span class="s">"--sysroot=$SYSROOT"</span> \
+  <span class="o">--</span><span class="n">extra</span><span class="o">-</span><span class="n">ldexeflags</span><span class="o">=</span><span class="s">"-pie --sysroot=$SYSROOT"</span> \
+  <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">shared</span> \
+  <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">small</span> \
+  <span class="o">--</span><span class="n">disable</span><span class="o">-</span><span class="k">static</span> \
+  <span class="o">--</span><span class="n">disable</span><span class="o">-</span><span class="n">doc</span> \
+  <span class="o">--</span><span class="n">prefix</span><span class="o">=</span><span class="err">$</span><span class="n">OUTPUT</span>
+
+<span class="cp"># 檢查配置是否成功
+</span><span class="k">if</span> <span class="p">[</span> <span class="err">$</span><span class="o">?</span> <span class="o">-</span><span class="n">ne</span> <span class="mi">0</span> <span class="p">];</span> <span class="n">then</span>
+  <span class="n">echo</span> <span class="s">"錯誤：FFmpeg 配置失敗"</span>
+  <span class="n">exit</span> <span class="mi">1</span>
+<span class="n">fi</span>
+
+<span class="cp"># 編譯並安裝
+</span><span class="n">echo</span> <span class="s">"開始編譯 FFmpeg..."</span>
+<span class="n">make</span> <span class="n">clean</span>
+<span class="n">make</span> <span class="o">-</span><span class="n">j4</span> <span class="n">V</span><span class="o">=</span><span class="mi">1</span>
+
+<span class="cp"># 檢查編譯是否成功
+</span><span class="k">if</span> <span class="p">[</span> <span class="err">$</span><span class="o">?</span> <span class="o">-</span><span class="n">ne</span> <span class="mi">0</span> <span class="p">];</span> <span class="n">then</span>
+  <span class="n">echo</span> <span class="s">"錯誤：FFmpeg 編譯失敗"</span>
+  <span class="n">exit</span> <span class="mi">1</span>
+<span class="n">fi</span>
+
+<span class="n">echo</span> <span class="s">"開始安裝 FFmpeg..."</span>
+<span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span>
+
+<span class="cp"># 檢查安裝是否成功
+</span><span class="k">if</span> <span class="p">[</span> <span class="err">$</span><span class="o">?</span> <span class="o">-</span><span class="n">ne</span> <span class="mi">0</span> <span class="p">];</span> <span class="n">then</span>
+  <span class="n">echo</span> <span class="s">"錯誤：FFmpeg 安裝失敗"</span>
+  <span class="n">exit</span> <span class="mi">1</span>
+<span class="n">fi</span>
+
+<span class="n">echo</span> <span class="s">"FFmpeg 編譯和安裝完成！"</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arr[0] = 1
-arr[1] = 2
-arr[2] = 3
-arr[3] = 4
-arr[4] = 5
-arr[5] = 6
-arr[6] = 7
-arr[7] = 8
-arr[8] = 9
-arr[9] = 10
-arr1[0] = 1
-arr1[1] = 2
-arr1[2] = 0
-arr1[3] = 0
-arr1[4] = 0
-arr1[5] = 0
-arr1[6] = 0
-arr1[7] = 0
-arr1[8] = 0
-arr1[9] = 0
-</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -1877,14 +1983,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/pointer/pointerArithmetic" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 指標運算">
+                        <a href="/pages/ffmpeg/cmake" class="navigation navigation-prev navigation-unique" aria-label="Previous page: cmake">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/array/pointerToArray" class="navigation navigation-next navigation-unique" aria-label="Next page: 一維陣列與指標">
+                        <a href="/pages/jekyll/install/how_to_install_ruby" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝 Ruby on Mac">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -1900,15 +2006,6 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
-        
-        "next": {
-            "title": "一維陣列與指標",
-            "level": "1.2",
-            "depth": 1,
-            "path": "_pages/c/array/pointerToArray.md",
-            "ref": "_pages/c/array/pointerToArray.md",
-            "articles": []
-        },
         
         "dir": "ltr"
     },    "config": {
@@ -1998,8 +2095,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/array/array.md",
-        "mtime": "2024-06-05 00:00:00 +0800",
+        "path": "_pages/ffmpeg/install_ffmpeg_android.md",
+        "mtime": "2025-03-23 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {

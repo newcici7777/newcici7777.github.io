@@ -3,7 +3,6 @@ title: JNI
 date: 2025-02-05
 keywords: java, jni, android
 ---
-
 ## JNI
 JNI是指程式運行時Java程式碼可以使用C或C++的lib，也可以在C或C++的lib使用Java程式碼。
 
@@ -691,8 +690,6 @@ Java_com_example_ndkproj_MainActivity_testThread(JNIEnv *env, jobject thiz) {
 }
 {% endhighlight %}
 
-
 lsn7_jni資料
 jni+Specification.CHM
-6997
-lsn8 24:34
+

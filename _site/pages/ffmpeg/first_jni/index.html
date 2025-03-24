@@ -2,8 +2,8 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>NDK </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="java, ndk, android" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>First jni </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="java, ndk, android, jni" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -1352,10 +1352,10 @@
 	
 	
 	<li class="active">
-    	<a href="/pages/ffmpeg/ndk/" onclick="pageScrollToTop(this)"> NDK</a>
+    	<a href="/pages/ffmpeg/first_jni/" onclick="pageScrollToTop(this)"> First jni</a>
         
             
-                <ul><li><a href="#建立ndk" onclick="mobilePageScrollToAnchor(this)" >建立NDK</a></li><li><a href="#檢查sdk" onclick="mobilePageScrollToAnchor(this)" >檢查SDK</a></li><li><a href="#cmake" onclick="mobilePageScrollToAnchor(this)" >cmake</a></li><li><a href="#activity" onclick="mobilePageScrollToAnchor(this)" >activity</a></li><li><a href="#增加jni方法" onclick="mobilePageScrollToAnchor(this)" >增加jni方法</a></li><li><a href="#編譯ffmpeg" onclick="mobilePageScrollToAnchor(this)" >編譯ffmpeg</a><ul><li><a href="#下載ndk" onclick="mobilePageScrollToAnchor(this)" >下載ndk</a></li><li><a href="#llvm" onclick="mobilePageScrollToAnchor(this)" >LLVM</a></li><li><a href="#sysroot" onclick="mobilePageScrollToAnchor(this)" >SYSROOT</a></li><li><a href="#cpu" onclick="mobilePageScrollToAnchor(this)" >cpu</a></li><li><a href="#nm" onclick="mobilePageScrollToAnchor(this)" >nm</a></li><li><a href="#腳本權限" onclick="mobilePageScrollToAnchor(this)" >腳本權限</a></li><li><a href="#configlog" onclick="mobilePageScrollToAnchor(this)" >config.log</a></li><li><a href="#make-v1" onclick="mobilePageScrollToAnchor(this)" >make V=1</a></li><li><a href="#bin_prefix" onclick="mobilePageScrollToAnchor(this)" >BIN_PREFIX</a></li><li><a href="#增加pathcccxx" onclick="mobilePageScrollToAnchor(this)" >增加PATH,CC,CXX</a></li></ul></li></ul>
+                <ul><li><a href="#jni" onclick="mobilePageScrollToAnchor(this)" >JNI</a></li><li><a href="#建立jni" onclick="mobilePageScrollToAnchor(this)" >建立JNI</a></li><li><a href="#檢查sdk" onclick="mobilePageScrollToAnchor(this)" >檢查SDK</a></li><li><a href="#cmake" onclick="mobilePageScrollToAnchor(this)" >cmake</a></li><li><a href="#activity" onclick="mobilePageScrollToAnchor(this)" >activity</a></li><li><a href="#增加jni方法" onclick="mobilePageScrollToAnchor(this)" >增加jni方法</a></li></ul>
 
             
         </li>
@@ -1370,6 +1370,13 @@
 	
 	<li class="">
     	<a href="/pages/ffmpeg/cmake/" onclick="pageScrollToTop(this)"> cmake</a>
+        
+            
+        </li>
+	
+	
+	<li class="">
+    	<a href="/pages/ffmpeg/install_ffmpeg_android/" onclick="pageScrollToTop(this)"> FFmpeg on Android</a>
         
             
         </li></ul></li></ul></li>
@@ -1394,7 +1401,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >NDK</a>
+                            <a href="." >First jni</a>
                         
                     </h1>
                 </div>
@@ -1407,11 +1414,13 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/ffmpeg/ndk">NDK</h1>
+                        <h1 id="/pages/ffmpeg/first_jni">First jni</h1>
                     
 
-                    <h2 id="建立ndk">建立NDK</h2>
+                    <h2 id="jni">JNI</h2>
+<p>JNI是指程式運行時Java程式碼可以使用C或C++的lib，也可以在C或C++的lib使用Java程式碼。</p>
 
+<h2 id="建立jni">建立JNI</h2>
 <p><img src="/assets/img/ndk/create_ndk1.png" alt="img" />
 <img src="/assets/img/ndk/create_ndk2.png" alt="img" />
 <img src="/assets/img/ndk/create_ndk3.png" alt="img" />
@@ -1430,7 +1439,6 @@
 <img src="/assets/img/ndk/cmake2.png" alt="img" /></p>
 
 <h2 id="activity">activity</h2>
-
 <p><img src="/assets/img/ndk/activity1.png" alt="img" />
 <img src="/assets/img/ndk/activity2.png" alt="img" />
 <img src="/assets/img/ndk/activity3.png" alt="img" /></p>
@@ -1441,335 +1449,6 @@
 <img src="/assets/img/ndk/create_jni2.png" alt="img" />
 <img src="/assets/img/ndk/create_jni3.png" alt="img" /></p>
 
-<h2 id="編譯ffmpeg">編譯ffmpeg</h2>
-
-<h3 id="下載ndk">下載ndk</h3>
-<p>歷經千辛萬苦，終於ndk build ffmpeg成功， 以下為編譯後的重要記事作為記錄。</p>
-
-<p>MAC下載ndk後，請選xxxxxxxx.app，然後滑鼠”右鍵” &gt; “顯示套件內容” &gt; “Contents” &gt; “NDK”</p>
-
-<p>把NDK目錄複製到家目錄下(或任何你能記住的地方)</p>
-
-<h3 id="llvm">LLVM</h3>
-<p>出現一些編譯問題，首先cross-prefix要使用llvm，因為NDK r28已經移除aarch64-linux-android-strip
-統一使用 LLVM 提供的 llvm-strip，所以cross-prefix一律由llvm來處理bin相關執行檔。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="o">--</span><span class="n">cross</span><span class="o">-</span><span class="n">prefix</span><span class="o">=</span><span class="err">$</span><span class="n">TOOLCHAIN</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">llvm</span><span class="o">-</span> <span class="err">\</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="sysroot">SYSROOT</h3>
-<p>權限路徑</p>
-
-<p>extra-cflags一律簡化成只有sysroot參數</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre>  <span class="o">--</span><span class="n">extra</span><span class="o">-</span><span class="n">cflags</span><span class="o">=</span><span class="s">"--sysroot=$SYSROOT"</span> <span class="err">\</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre>  <span class="o">--</span><span class="n">sysroot</span><span class="o">=</span><span class="err">$</span><span class="n">SYSROOT</span> <span class="err">\</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="cpu">cpu</h3>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="o">--</span><span class="n">cpu</span><span class="o">=</span><span class="n">armv8</span><span class="o">-</span><span class="n">a</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="nm">nm</h3>
-<p>nm由LLVM處理，因為NDK r28已經移除aarch64-linux-android-nm</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="o">--</span><span class="n">nm</span><span class="o">=</span><span class="err">$</span><span class="n">TOOLCHAIN</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">llvm</span><span class="o">-</span><span class="n">nm</span> <span class="err">\</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="腳本權限">腳本權限</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod 777 腳本檔名.副檔名
-</code></pre></div></div>
-<p>或</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod +x 腳本檔名.副檔名
-</code></pre></div></div>
-
-<h3 id="configlog">config.log</h3>
-
-<p>檢查 ffbuild/config.log 文件，使用error或failed等關鍵字搜尋錯誤訊息</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep "error" config.log
-</code></pre></div></div>
-
-<h3 id="make-v1">make V=1</h3>
-<p>V=1查看詳細的編譯過程</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make -j4 V=1
-</code></pre></div></div>
-
-<h3 id="bin_prefix">BIN_PREFIX</h3>
-
-<p>BIN_PREFIX最後面沒有任何<code class="language-plaintext highlighter-rouge">-</code></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BIN_PREFIX=$TOOLCHAIN/bin/$TARGET$API_LEVEL
-</code></pre></div></div>
-<h3 id="增加pathcccxx">增加PATH,CC,CXX</h3>
-
-<p>export PATH=$PATH:/Users/cici/NDK/toolchains/llvm/prebuilt/darwin-x86_64/bin
-export CC=aarch64-linux-android24-clang
-export CXX=aarch64-linux-android24-clang++</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-</pre></td><td class="code"><pre><span class="cp">#!/bin/bash
-</span>
-<span class="cp"># 設置變量
-</span><span class="n">NDK</span><span class="o">=/</span><span class="n">Users</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">NDK</span>
-<span class="n">API_LEVEL</span><span class="o">=</span><span class="mi">24</span>
-<span class="cp"># 可選：arm, arm64, x86, x86_64
-</span><span class="n">ARCH</span><span class="o">=</span><span class="n">arm64</span>  
-<span class="n">OUTPUT</span><span class="o">=/</span><span class="n">Users</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">android</span><span class="o">-</span><span class="n">build</span>
-
-<span class="cp"># 根據架構設置目標三元組和目錄名
-</span><span class="k">case</span> <span class="s">"$ARCH"</span> <span class="n">in</span>
-  <span class="n">arm</span><span class="p">)</span>
-    <span class="n">TARGET</span><span class="o">=</span><span class="n">armv7a</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">androideabi</span>
-    <span class="p">;;</span>
-  <span class="n">arm64</span><span class="p">)</span>
-    <span class="n">TARGET</span><span class="o">=</span><span class="n">aarch64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">android</span>
-    <span class="p">;;</span>
-  <span class="n">x86</span><span class="p">)</span>
-    <span class="n">TARGET</span><span class="o">=</span><span class="n">i686</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">android</span>
-    <span class="p">;;</span>
-  <span class="n">x86_64</span><span class="p">)</span>
-    <span class="n">TARGET</span><span class="o">=</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">android</span>
-    <span class="p">;;</span>
-  <span class="o">*</span><span class="p">)</span>
-    <span class="n">echo</span> <span class="s">"錯誤：不支持的架構 '$ARCH'"</span>
-    <span class="n">exit</span> <span class="mi">1</span>
-    <span class="p">;;</span>
-<span class="n">esac</span>
-
-<span class="cp"># 工具鏈路徑
-</span><span class="n">TOOLCHAIN</span><span class="o">=</span><span class="err">$</span><span class="n">NDK</span><span class="o">/</span><span class="n">toolchains</span><span class="o">/</span><span class="n">llvm</span><span class="o">/</span><span class="n">prebuilt</span><span class="o">/</span><span class="n">darwin</span><span class="o">-</span><span class="n">x86_64</span>
-<span class="n">SYSROOT</span><span class="o">=</span><span class="err">$</span><span class="n">TOOLCHAIN</span><span class="o">/</span><span class="n">sysroot</span>
-<span class="n">BIN_PREFIX</span><span class="o">=</span><span class="err">$</span><span class="n">TOOLCHAIN</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="err">$</span><span class="n">TARGET</span><span class="err">$</span><span class="n">API_LEVEL</span>
-
-<span class="cp"># 檢查工具鏈是否存在
-</span><span class="k">if</span> <span class="p">[</span> <span class="o">!</span> <span class="o">-</span><span class="n">d</span> <span class="s">"$TOOLCHAIN"</span> <span class="p">];</span> <span class="n">then</span>
-  <span class="n">echo</span> <span class="s">"錯誤：工具鏈路徑 '$TOOLCHAIN' 不存在"</span>
-  <span class="n">exit</span> <span class="mi">1</span>
-<span class="n">fi</span>
-
-<span class="cp"># 檢查編譯器是否存在
-</span><span class="k">if</span> <span class="p">[</span> <span class="o">!</span> <span class="o">-</span><span class="n">f</span> <span class="s">"$BIN_PREFIX-clang"</span> <span class="p">];</span> <span class="n">then</span>
-  <span class="n">echo</span> <span class="s">"錯誤：編譯器 '$BIN_PREFIX-clang' 不存在"</span>
-  <span class="n">exit</span> <span class="mi">1</span>
-<span class="n">fi</span>
-
-<span class="cp"># 檢查輸出目錄是否存在，如果不存在則創建
-</span><span class="k">if</span> <span class="p">[</span> <span class="o">!</span> <span class="o">-</span><span class="n">d</span> <span class="s">"$OUTPUT"</span> <span class="p">];</span> <span class="n">then</span>
-  <span class="n">echo</span> <span class="s">"創建輸出目錄：$OUTPUT"</span>
-  <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="s">"$OUTPUT"</span>
-<span class="n">fi</span>
-
-
-<span class="cp"># 測試編譯器
-</span><span class="n">echo</span> <span class="s">"測試編譯器是否能生成可執行文件..."</span>
-<span class="n">echo</span> <span class="err">'</span><span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span> <span class="p">}</span><span class="err">'</span> <span class="o">&gt;</span> <span class="n">test</span><span class="p">.</span><span class="n">c</span>
-<span class="err">$</span><span class="n">BIN_PREFIX</span><span class="o">-</span><span class="n">clang</span> <span class="n">test</span><span class="p">.</span><span class="n">c</span> <span class="o">-</span><span class="n">o</span> <span class="n">test</span>
-
-<span class="k">if</span> <span class="p">[</span> <span class="err">$</span><span class="o">?</span> <span class="o">-</span><span class="n">ne</span> <span class="mi">0</span> <span class="p">];</span> <span class="n">then</span>
-  <span class="n">echo</span> <span class="s">"錯誤：編譯器測試失敗"</span>
-  <span class="n">echo</span> <span class="s">"請檢查以下內容："</span>
-  <span class="n">echo</span> <span class="s">"1. 編譯器路徑：$BIN_PREFIX-clang"</span>
-  <span class="n">echo</span> <span class="s">"2. sysroot 路徑：$SYSROOT"</span>
-  <span class="n">echo</span> <span class="s">"3. 環境變量：CC=$CC, CXX=$CXX, PATH=$PATH"</span>
-  <span class="n">exit</span> <span class="mi">1</span>
-<span class="k">else</span>
-  <span class="n">echo</span> <span class="s">"編譯器測試成功"</span>
-  <span class="n">rm</span> <span class="n">test</span><span class="p">.</span><span class="n">c</span> <span class="n">test</span>
-<span class="n">fi</span>
-
-<span class="n">echo</span> <span class="err">$</span><span class="n">OUTPUT</span>
-
-<span class="cp"># 配置 FFmpeg
-</span><span class="n">echo</span> <span class="s">"開始配置 FFmpeg..."</span>
-<span class="p">.</span><span class="o">/</span><span class="n">configure</span> \
-  <span class="o">--</span><span class="n">nm</span><span class="o">=</span><span class="err">$</span><span class="n">TOOLCHAIN</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">llvm</span><span class="o">-</span><span class="n">nm</span> \
-  <span class="o">--</span><span class="n">libdir</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">OUTPUT</span><span class="p">}</span><span class="o">/</span><span class="n">libs</span><span class="o">/</span><span class="err">$</span><span class="n">ARCH</span> \
-  <span class="o">--</span><span class="n">incdir</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">OUTPUT</span><span class="p">}</span><span class="o">/</span><span class="n">includes</span><span class="o">/</span><span class="err">$</span><span class="n">ARCH</span> \
-  <span class="o">--</span><span class="n">pkgconfigdir</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">OUTPUT</span><span class="p">}</span><span class="o">/</span><span class="n">pkgconfig</span><span class="o">/</span><span class="err">$</span><span class="n">ARCH</span> \
-  <span class="o">--</span><span class="n">target</span><span class="o">-</span><span class="n">os</span><span class="o">=</span><span class="n">android</span> \
-  <span class="o">--</span><span class="n">arch</span><span class="o">=</span><span class="err">$</span><span class="n">ARCH</span> \
-  <span class="o">--</span><span class="n">cpu</span><span class="o">=</span><span class="n">armv8</span><span class="o">-</span><span class="n">a</span> \
-  <span class="o">--</span><span class="n">sysroot</span><span class="o">=</span><span class="err">$</span><span class="n">SYSROOT</span> \
-  <span class="o">--</span><span class="n">cross</span><span class="o">-</span><span class="n">prefix</span><span class="o">=</span><span class="err">$</span><span class="n">TOOLCHAIN</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">llvm</span><span class="o">-</span> \
-  <span class="o">--</span><span class="n">cc</span><span class="o">=</span><span class="err">$</span><span class="n">BIN_PREFIX</span><span class="o">-</span><span class="n">clang</span> \
-  <span class="o">--</span><span class="n">cxx</span><span class="o">=</span><span class="err">$</span><span class="n">BIN_PREFIX</span><span class="o">-</span><span class="n">clang</span><span class="o">++</span> \
-  <span class="o">--</span><span class="n">extra</span><span class="o">-</span><span class="n">cflags</span><span class="o">=</span><span class="s">"--sysroot=$SYSROOT"</span> \
-  <span class="o">--</span><span class="n">extra</span><span class="o">-</span><span class="n">ldexeflags</span><span class="o">=</span><span class="s">"-pie --sysroot=$SYSROOT"</span> \
-  <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">shared</span> \
-  <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">small</span> \
-  <span class="o">--</span><span class="n">disable</span><span class="o">-</span><span class="k">static</span> \
-  <span class="o">--</span><span class="n">disable</span><span class="o">-</span><span class="n">doc</span> \
-  <span class="o">--</span><span class="n">prefix</span><span class="o">=</span><span class="err">$</span><span class="n">OUTPUT</span>
-
-<span class="cp"># 檢查配置是否成功
-</span><span class="k">if</span> <span class="p">[</span> <span class="err">$</span><span class="o">?</span> <span class="o">-</span><span class="n">ne</span> <span class="mi">0</span> <span class="p">];</span> <span class="n">then</span>
-  <span class="n">echo</span> <span class="s">"錯誤：FFmpeg 配置失敗"</span>
-  <span class="n">exit</span> <span class="mi">1</span>
-<span class="n">fi</span>
-
-<span class="cp"># 編譯並安裝
-</span><span class="n">echo</span> <span class="s">"開始編譯 FFmpeg..."</span>
-<span class="n">make</span> <span class="n">clean</span>
-<span class="n">make</span> <span class="o">-</span><span class="n">j4</span> <span class="n">V</span><span class="o">=</span><span class="mi">1</span>
-
-<span class="cp"># 檢查編譯是否成功
-</span><span class="k">if</span> <span class="p">[</span> <span class="err">$</span><span class="o">?</span> <span class="o">-</span><span class="n">ne</span> <span class="mi">0</span> <span class="p">];</span> <span class="n">then</span>
-  <span class="n">echo</span> <span class="s">"錯誤：FFmpeg 編譯失敗"</span>
-  <span class="n">exit</span> <span class="mi">1</span>
-<span class="n">fi</span>
-
-<span class="n">echo</span> <span class="s">"開始安裝 FFmpeg..."</span>
-<span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span>
-
-<span class="cp"># 檢查安裝是否成功
-</span><span class="k">if</span> <span class="p">[</span> <span class="err">$</span><span class="o">?</span> <span class="o">-</span><span class="n">ne</span> <span class="mi">0</span> <span class="p">];</span> <span class="n">then</span>
-  <span class="n">echo</span> <span class="s">"錯誤：FFmpeg 安裝失敗"</span>
-  <span class="n">exit</span> <span class="mi">1</span>
-<span class="n">fi</span>
-
-<span class="n">echo</span> <span class="s">"FFmpeg 編譯和安裝完成！"</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -1858,11 +1537,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "Linux shell指令",
+            "title": "JNI",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/c/basic/linux_shell.md",
-            "ref": "_pages/c/basic/linux_shell.md",
+            "path": "_pages/ffmpeg/jni.md",
+            "ref": "_pages/ffmpeg/jni.md",
             "articles": []
         },
         
@@ -1954,13 +1633,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/ffmpeg/ndk.md",
+        "path": "_pages/ffmpeg/first_jni.md",
         "mtime": "2025-02-05 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2025-03-19 13:14:13 +0800"
+        "time": "2025-03-24 08:35:00 +0800"
     },
     "basePath": "",
     "book": {
