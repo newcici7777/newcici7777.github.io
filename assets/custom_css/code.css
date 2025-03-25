@@ -117,3 +117,28 @@ span.markline {
 .markdown-section table.custom-table tr {
   background-color: #ffffff;
 }
+/* 當前頁面高亮 */
+[data-nav-item].current-page > a {
+    color: #FF5722 !important;
+    font-weight: bold;
+}
+
+/* 展開狀態樣式 */
+[data-nav-item].expanded > a {
+    color: #2196F3;
+}
+
+/* 子目錄縮進 */
+[data-nav-item] ul {
+    padding-left: 15px;
+    display: none;
+}
+
+[data-nav-item].expanded > ul {
+    display: block;
+}
+
+/* 箭頭圖標旋轉 */
+[data-nav-item].expanded > a > .fa {
+    transform: rotate(90deg);
+}

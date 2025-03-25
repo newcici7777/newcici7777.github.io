@@ -68,14 +68,42 @@ build.ninja是AndroidStudio交叉編譯工具
 ![img]({{site.imgurl}}/ndk/build_ninja.png)
 -D 意思為Android Stuido交叉編譯器，所設置的前置指令，c++的前置指令是define  
 
-### cpu
-{% highlight c++ linenos %}
---cpu=armv8-a
-{% endhighlight %}
+### arch與cpu
 
-### arch架構
-要編譯那種架構的靜態庫或動態庫
+|arch|arm (32 位)|arm64|x86 (32 位)|x86_64 (64 位)|
+|cpu| armv7-a| armv8-a| i686| x86-64|
+|位数|  32 位|  64 位|  32 位|  64 位|
+|性能|  较低|  较高|  中等|  高|
+|功耗|  低| 较低|  较高|  高|
+|兼容性| 仅支持 32 位应用|  兼容 32 位应用| 仅支持 32 位应用|  兼容 32 位应用|
+|常见设备  |旧 Android 设备|  现代 Android 设备| 部分平板/模拟器|  高性能平板/模拟器|
+|ABI| armeabi-v7a| arm64-v8a| x86| x86_64|
+|FFmpeg TARGET|  armv7a-linux-androideabi|  aarch64-linux-android| i686-linux-android|  x86_64-linux-android|
 
+#### arm
+```
+ARCH=arm
+CPU=armv7-a
+TARGET=armv7a-linux-androideabi
+```
+#### arm64
+```
+ARCH=arm64
+CPU=armv8-a
+TARGET=aarch64-linux-android
+```
+#### x86
+```
+ARCH=x86
+CPU=i686
+TARGET=i686-linux-android
+```
+#### x86_64
+```
+ARCH=x86_64
+CPU=x86-64
+TARGET=x86_64-linux-android
+```
 ### nm
 nm由LLVM處理，因為NDK r28已經移除aarch64-linux-android-nm
 {% highlight c++ linenos %}
@@ -85,7 +113,7 @@ nm由LLVM處理，因為NDK r28已經移除aarch64-linux-android-nm
 ### config.log
 檢查ffmpeg目錄下的ffbuild/config.log文件，使用error或failed等關鍵字搜尋錯誤訊息
 ```
-grep "error" config.log
+ grep "error" ffbuild/config.log
 ```
 ### BIN_PREFIX
 BIN_PREFIX最後面沒有任何`-`
@@ -93,10 +121,11 @@ BIN_PREFIX最後面沒有任何`-`
 BIN_PREFIX=$TOOLCHAIN/bin/$TARGET$API_LEVEL
 ```
 ### 增加PATH,CC,CXX
+```
 export PATH=$PATH:/Users/cici/NDK/toolchains/llvm/prebuilt/darwin-x86_64/bin
 export CC=aarch64-linux-android24-clang
 export CXX=aarch64-linux-android24-clang++
-
+```
 ### ./configure
 configure產生makefile的shell檔案  
 什麼是makefile？指導gnu make如何編譯的shell檔案  
@@ -106,16 +135,17 @@ configure產生makefile的shell檔案
 ```
 chmod +x configure
 ```
-### ./configure --help
+### configure help文件
+`./configure --help`
 幫助的文件
 
-### --prefix
+### prefix
 產生出來的.so檔或.a檔，放置的資料夾  
 pwd為放置.configure檔案的所在目錄  
 ```
 ./configure --prefix=`pwd`/android/armeabi-v72 \
 ```
-傳遞--prefix參數給configure  
+傳遞`--prefix`參數給configure  
 `\`為換行字元，若沒這個字元，所有參數必須全在同一行，不能換行
 
 可以一行傳多個參數，注意!最後一行沒有`\`
@@ -132,25 +162,25 @@ pwd為放置.configure檔案的所在目錄
 ./configure --help
 ```
 會發現bindir,datadir,docdi,libdir...，目錄前面都有PREFIX，如:[PREFIX/lib]
-```
+<pre>
 Standard options:
   --logfile=FILE           log tests and output to FILE [ffbuild/config.log]
   --disable-logging        do not log configure debug information
   --fatal-warnings         fail if any configure warning is generated
   --prefix=PREFIX          install in PREFIX [/usr/local]
-  --bindir=DIR             install binaries in DIR [PREFIX/bin]
-  --datadir=DIR            install data files in DIR [PREFIX/share/ffmpeg]
-  --docdir=DIR             install documentation in DIR [PREFIX/share/doc/ffmpeg]
-  --libdir=DIR             install libs in DIR [PREFIX/lib]
+  --bindir=DIR             install binaries in DIR [<span class="markline">PREFIX</span>/bin]
+  --datadir=DIR            install data files in DIR [<span class="markline">PREFIX</span>/share/ffmpeg]
+  --docdir=DIR             install documentation in DIR [<span class="markline">PREFIX</span>/share/doc/ffmpeg]
+  --libdir=DIR             install libs in DIR [<span class="markline">PREFIX</span>/lib]
   --shlibdir=DIR           install shared libs in DIR [LIBDIR]
-  --incdir=DIR             install includes in DIR [PREFIX/include]
-  --mandir=DIR             install man page in DIR [PREFIX/share/man]
+  --incdir=DIR             install includes in DIR [<span class="markline">PREFIX</span>/include]
+  --mandir=DIR             install man page in DIR [<span class="markline">PREFIX</span>/share/man]
   --pkgconfigdir=DIR       install pkg-config files in DIR [LIBDIR/pkgconfig]
   --enable-rpath           use rpath to allow installing libraries in paths
                            not part of the dynamic linker search path
                            use rpath when linking programs (USE WITH CARE)
   --install-name-dir=DIR   Darwin directory name for installed targets
-```
+</pre>
 ### Configuration options
 ```
 Configuration options:
@@ -163,10 +193,9 @@ Configuration options:
   --disable-all            disable building components, libraries and programs
   --disable-autodetect     disable automatically detected external libraries [no]
 ```
-
---disable-static 不要產生靜態庫.a，預設是[no]，預設會產生靜態庫.a  
---enable-shared 產生動態庫.so，預設是[no]，預設不會產生動態庫.so  
---enable-small 優化lib的大小，使lib容量更小  
+`--disable-static` 不要產生靜態庫.a，預設是[no]，預設會產生靜態庫.a  
+`--enable-shared` 產生動態庫.so，預設是[no]，預設不會產生動態庫.so  
+`--enable-small` 優化lib的大小，使lib容量更小  
 
 ### Program options
 ```
@@ -176,8 +205,8 @@ Program options:
   --disable-ffplay         disable ffplay build
   --disable-ffprobe        disable ffprobe build
 ```
---disable-programs 不要產生ffmpeg,ffplay,ffprobe執行檔  
---disable-programs 就相當於執行以下三個  
+`--disable-programs` 不要產生ffmpeg,ffplay,ffprobe執行檔  
+`--disable-programs` 就相當於執行以下三個  
 ```
   --disable-ffmpeg         disable ffmpeg build
   --disable-ffplay         disable ffplay build
@@ -206,21 +235,21 @@ Component options:
   --disable-iamf           disable support for Immersive Audio Model
   --disable-pixelutils     disable pixel utils in libavutil
 ```
-
 ffmpeg主要由下面的元件所組成:  
-libavformat：用於各種音視頻封裝格式的生成和「解析」，包括獲取解碼所需資訊以產生解碼上下文結構  
+1. libavformat：用於各種音視頻封裝格式的生成和「解析」，包括獲取解碼所需資訊以產生解碼上下文結構  
 和讀取音視頻幀等功能；  
-libavcodec ：用於各種類型「聲音/影像」編「解碼」；  
-libavutil ：包含一些公共的「工具函數」；  
-libswscale ：用於視訊場景比例「縮放」、色彩映射轉換；  
-libpostproc ：用於後製效果處理；  
-ffmpeg ：此專案提供的工具，可用於格式轉換、解碼或電視卡即時編碼等；  
-ffsever ：一個HTTP 多媒體即時廣播串流伺服器；  
-ffplay ：是一個簡單的播放器，使用ffmpeg 函式庫解析和解碼，透過SDL顯示；  
+2. libavcodec ：用於各種類型「聲音/影像」編「解碼」；  
+3. libavutil ：包含一些公共的「工具函數」；  
+4. libswscale ：用於視訊場景比例「縮放」、色彩映射轉換；  
+5. libpostproc ：用於後製效果(浮水印，字幕)處理；  
+6. ffmpeg ：此專案提供的工具，可用於格式轉換、解碼或電視卡即時編碼等；  
+7. ffsever ：一個HTTP 多媒體即時廣播串流伺服器；  
+8. ffplay ：是一個簡單的播放器，使用ffmpeg 函式庫解析和解碼，透過SDL顯示；  
+9. swresample 聲音重新採樣，音檔可能有雙聲道，若想把雙聲道變單聲道，需要用這個元件。
 
 要disable的有下列元件 (disable就不會產生靜態庫，不會讓apk肥大) 
-avdevice : 操作相機鏡頭(不支持android相機) 可以關閉  --disable-avdevice
-postproc : 用於後製效果處理
+- avdevice : 操作相機鏡頭(不支持android相機) 可以關閉disable-avdevice
+- postproc : 用於後製效果處理
 
 不能disable的有下列元件  
 - avcodec  影像聲音解碼
@@ -228,26 +257,19 @@ postproc : 用於後製效果處理
 - avfilter : 影像加上字幕加上浮水印
 - swscale : 放大縮小
 
-swresample 聲音重新採樣，音檔可能有雙聲道，若想把雙聲道變單聲道，需要用這個元件。
-
 ### Individual component options:
 ```
 Individual component options:
-  --disable-encoder=NAME   disable encoder NAME
-  --enable-encoder=NAME    enable encoder NAME
-  --disable-encoders       disable all encoders
-  --disable-decoder=NAME   disable decoder NAME
-  --enable-decoder=NAME    enable decoder NAME
-  --disable-decoders       disable all decoders
+--disable-encoders   關閉編碼，影片播放時不需要編碼  
+--enable-decoder=NAME    打開解碼，影片播放時需要解碼(預設會打開，不用設定)  
+--disable-muxers     關閉混合封裝  (把圖片與聲音混合在一起)，但是播放時，不需要產生影片，所以關閉。
+--disable-filters 需要禁用過濾器，但仍需要產生libavfilter
 ```
---disable-encoder=NAME   關閉編碼，影片播放時不需要編碼  
---enable-decoder=NAME    打開解碼，影片播放時需要解碼  
---disable-muxer=NAME     關閉混合封裝  (把圖片與聲音混合在一起)，但是播放時，不需要產生影片，所以關閉。
 
 ### cross-compile
 cross-compile就是交叉編譯的意思，使用各種不同作業系統的交叉編譯來編譯ffmpeg
-1. --enable-cross-compile   打開交叉編譯
-2. --cross-prefix=$TOOLCHAIN/bin/llvm- 設定交叉編譯的工具
+1. `--enable-cross-compile`   打開交叉編譯
+2. `--cross-prefix=$TOOLCHAIN/bin/llvm-` 設定交叉編譯的工具
 所有編譯過程使用的工具gcc或link工具，前綴都是`$TOOLCHAIN/bin/llvm-`
 
 ## build_android.sh完整檔案
@@ -257,23 +279,26 @@ cross-compile就是交叉編譯的意思，使用各種不同作業系統的交�
 # 設置變量
 NDK=/Users/cici/NDK
 API_LEVEL=24
-# 可選：arm, arm64, x86, x86_64
-ARCH=arm64  
-OUTPUT=/Users/cici/android-build
+ARCH=x86  # 可選：arm, arm64, x86, x86_64
+OUTPUT=`pwd`/android-build/$ARCH/
 
 # 根據架構設置目標三元組和目錄名
 case "$ARCH" in
   arm)
     TARGET=armv7a-linux-androideabi
+    CPU=armv7-a
     ;;
   arm64)
     TARGET=aarch64-linux-android
+    CPU=armv8-a
     ;;
   x86)
     TARGET=i686-linux-android
+    CPU=i686
     ;;
   x86_64)
     TARGET=x86_64-linux-android
+    CPU=x86-64
     ;;
   *)
     echo "錯誤：不支持的架構 '$ARCH'"
@@ -333,17 +358,22 @@ echo "開始配置 FFmpeg..."
   --pkgconfigdir=${OUTPUT}/pkgconfig/$ARCH \
   --target-os=android \
   --arch=$ARCH \
-  --cpu=armv8-a \
+  --cpu=$CPU \
   --sysroot=$SYSROOT \
   --cross-prefix=$TOOLCHAIN/bin/llvm- \
   --cc=$BIN_PREFIX-clang \
   --cxx=$BIN_PREFIX-clang++ \
   --extra-cflags="--sysroot=$SYSROOT" \
   --extra-ldexeflags="-pie --sysroot=$SYSROOT" \
-  --enable-shared \
-  --enable-small \
-  --disable-static \
   --disable-doc \
+  --disable-programs \
+  --disable-avdevice \
+  --disable-postproc \
+  --disable-encoders \
+  --disable-muxers \
+  --disable-filters \
+  --enable-cross-compile \
+  --enable-small \
   --prefix=$OUTPUT
 
 # 檢查配置是否成功
