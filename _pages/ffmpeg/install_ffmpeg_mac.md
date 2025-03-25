@@ -65,7 +65,7 @@ bin	include	lib	share
 #### lib
 進入lib目錄，檢查是否產生動態檔，動態檔副檔名為`.dylib`，副檔名`.a`為靜態檔，是我之前產生的，可以先略過。
 ```
-cici@liyutingdeMacBook-Pro lib % ls                                            
+% ls                                            
 libavcodec.61.19.100.dylib	libavformat.dylib
 libavcodec.61.dylib		libavutil.59.39.100.dylib
 libavcodec.a			libavutil.59.dylib
