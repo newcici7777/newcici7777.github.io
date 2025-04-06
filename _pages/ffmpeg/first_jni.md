@@ -18,6 +18,16 @@ JNI是指程式運行時Java程式碼可以使用C或C++的lib，也可以在C�
 NDK與CMake要有勾選
 ![img]({{site.imgurl}}/ndk/check_sdk.png)
 
+## build project
+若出現以下error，直接按"File">"Sync Project with Gradle Files"
+
+java.lang.NullPointerException: Cannot invoke "String.length()" because "<parameter1>" is null
+- appcompat-1.7.0-runtime-jar
+- constraintlayout-2.2.0-runtime.jar
+- constraintlayout-core-1.1.0.jar
+- profileinstaller-1.4.0-runtime.jar
+![img]({{site.imgurl}}/ndk/runtime_nullptr.png)
+
 ## cmake
 自己建立lib
 ![img]({{site.imgurl}}/ndk/cmake1.png)

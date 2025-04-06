@@ -39,3 +39,11 @@ Many people went to the outside of the court to protest the punishment of abusin
 
 修正後
 Many people gathered outside the court to protest that the punishment for child abuse is too lenient. They are demanding to amend the law so that anyone who abuses or tortures a child, resulting in death, must be sentenced to death. Many people cannot tolerate a law that fails to deter evil individuals from committing such horrific acts against others.
+
+2025-03-28
+Child do something is not meaning and purpose, when they feel happy and than they draw a picture, when they want to make a story and then they write a novel. They do those things just for fun. Making a comic book is for hobby. The inital purpose is not for business. But child grow up become a adult, they do anyting will concern the benifit and how much time will be cost. Because they grow up, they have a family , they have to earn more money to raise their children, they need food and a place to live which is not free, they have to consider what kind of job can earn more money. The job career is important for the whole life.
+
+修正後的版本：
+When children do something, it is without specific meaning or purpose. They draw pictures when they feel happy, and they write stories when they want to create something. They do these things purely for fun. Making a comic book is just a hobby, and the initial purpose is not for business.
+
+However, when children grow up and become adults, they start considering the benefits and the time cost of everything they do. As adults, they have families to support and need to earn money to raise their children. Food and shelter are not free, so they must think about which jobs can provide a stable income. Career choices become crucial because they impact their entire lives.

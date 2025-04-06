@@ -7,6 +7,10 @@ Prerequisites:
 - [查詢模擬器CPU架構][1]
 
 ## 編譯ffmpeg
+### 下載ffmpeg source code
+[Download source code](https://ffmpeg.org/download.html#build-mac)
+下載完後解壓，進入解壓後的目錄
+
 ### 下載ndk
 歷經千辛萬苦，終於ndk build ffmpeg成功， 以下為編譯後的重要記事作為記錄。   
 MAC下載ndk後，請選xxxxxxxx.app，然後滑鼠"右鍵" > "顯示套件內容" > "Contents" > "NDK"  
@@ -278,8 +282,8 @@ cross-compile就是交叉編譯的意思，使用各種不同作業系統的交�
 
 # 設置變量
 NDK=/Users/cici/NDK
-API_LEVEL=24
-ARCH=x86  # 可選：arm, arm64, x86, x86_64
+API_LEVEL=30
+ARCH=x86_64  # 可選：arm, arm64, x86, x86_64
 OUTPUT=`pwd`/android-build/$ARCH/
 
 # 根據架構設置目標三元組和目錄名
@@ -364,7 +368,7 @@ echo "開始配置 FFmpeg..."
   --cc=$BIN_PREFIX-clang \
   --cxx=$BIN_PREFIX-clang++ \
   --extra-cflags="--sysroot=$SYSROOT" \
-  --extra-ldexeflags="-pie --sysroot=$SYSROOT" \
+  --extra-ldexeflags="--sysroot=$SYSROOT" \
   --disable-doc \
   --disable-programs \
   --disable-avdevice \
@@ -374,6 +378,8 @@ echo "開始配置 FFmpeg..."
   --disable-filters \
   --enable-cross-compile \
   --enable-small \
+  --disable-static \
+  --enable-shared \
   --prefix=$OUTPUT
 
 # 檢查配置是否成功

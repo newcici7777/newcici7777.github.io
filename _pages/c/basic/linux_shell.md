@@ -3,11 +3,9 @@ title: Linux shell指令
 date: 2025-02-13
 keywords: linux, shell
 ---
-
 ## 查看檔案
 
 ### less分頁
-
 ```
 less 檔名.副檔名
 ```
@@ -20,7 +18,6 @@ less 檔名.副檔名
 7. G：跳到文件的結尾
 
 ### more分頁
-
 ```
 more 檔名.副檔名
 ```
@@ -58,7 +55,6 @@ wc 檔案1 檔案2 檔案3
 ```
 
 ### grep
-
 以下指令為，在ffmpeg.txt中搜尋"input"
 ```
 grep "input" ffmpeg.txt
@@ -109,7 +105,6 @@ tail -f 檔名.副檔名
 ctrl+c放棄追蹤更新
 
 ### ls
-
 以下指令，最新的檔案排在最前面
 ```
 ls -lt
@@ -149,7 +144,6 @@ Processes: 543 total, 2 running, 541 sleeping, 2150 threads
 共有543程序，2個正在執行，541個在休眠，2150個執行緒
 
 ## env環境變數
-
 顯示所有環境變數
 ```
 env
@@ -195,7 +189,6 @@ echo $PATH
 c++動態庫的目錄
 
 ## export
-
 注意！export的效果只有在目前的shell中適用，重新登入就清掉了，需要設置系統環境變數才能永久有效。
 
 方式一
@@ -222,40 +215,8 @@ export 變數=\'值\'
 ```
 export PATH=$PATH:/Users/cici/NDK
 ```
-
-### 執行檔案
-
-我增加/Users/cici/testc的目錄，在目錄中，增加testc.cpp的檔案，並且編譯產生執行檔testc
-
-```
-vi testc.cpp
-g++ -o testc testc.cpp
-```
-
-{% highlight c++ linenos %}
-#include <iostream>
-using namespace std;
-int main() {
-  cout << "Hello World!" << endl;
-}
-{% endhighlight %}
-
-使用`./`來執行檔案，`.`圓點代表目前的目錄下，'./testc'代表目前目錄下的testc檔案，如果只寫`testc`是找不到目前目錄下的testc檔案
-```
-./testc
-```
-
-如果想在任何目錄都可以執行目錄目錄的執行檔案，可以在PATH增加.圓點，就可以執行testc
-```
-export PATH=$PATH:.
-testc
-```
-
-以相對/絕對路徑執行指令，例如"/bin/ls"或"./ls"
-
-## 設置使用者環境變數
-
-### bash_profile
+### Linux bash_profile
+僅對Linux有效
 在user目錄下會有.bash_profile的檔案
 ```
 cd ~
@@ -284,5 +245,56 @@ export PATH=${PATH}:/Users/cici/.rbenv/versions/3.2.2/bin
 # Add Visual Studio Code (code)
 export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 ```
-### bashrc
-每開一個終端機，就會重新load一次bashrc
+離開終端機或重新登入，環境變數已被修改。  
+```
+echo PATH
+```
+### MAC Zsh
+我的MAC的Shell指令是Zsh，所以修改bash_profile對MAC的環境變數是沒有新增或修改。  
+使用以下指令在終端機，查看你的MAC電腦是什麼指令。  
+```
+% echo $SHELL
+/bin/zsh
+```
+Zsh 不會讀取 .bash_profile，它有自己的設定檔：  
+~/.zshrc（互動式 Shell 配置，每次開啟終端機載入） 
+~/.zprofile（登入 Shell 配置，類似 .bash_profile） 
+
+修改環境變數:
+```
+vi ~/.zshrc
+```
+增加環境變數，後面的:$PATH是固定的，儲存並退出。
+```
+export PATH="/your/custom/path:$PATH"
+```
+使環境變數生效。
+```
+source ~/.zshrc
+```
+### 執行檔案
+我增加/Users/cici/testc的目錄，在目錄中，增加testc.cpp的檔案，並且編譯產生執行檔testc  
+```
+vi testc.cpp
+g++ -o testc testc.cpp
+```
+
+{% highlight c++ linenos %}
+#include <iostream>
+using namespace std;
+int main() {
+  cout << "Hello World!" << endl;
+}
+{% endhighlight %}
+
+使用`./`來執行檔案，`.`圓點代表目前的目錄下，'./testc'代表目前目錄下的testc檔案，如果只寫`testc`是找不到目前目錄下的testc檔案  
+```
+./testc
+```
+
+如果想在任何目錄都可以執行目錄目錄的執行檔案，可以在PATH增加.圓點，就可以執行testc  
+```
+export PATH=$PATH:.
+testc
+```
+以相對/絕對路徑執行指令，例如"/bin/ls"或"./ls"

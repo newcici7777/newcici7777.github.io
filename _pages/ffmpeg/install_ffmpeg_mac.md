@@ -1,11 +1,9 @@
 ---
-title: FFmpeg on Mac
+title: FFmpeg in Mac
 date: 2025-02-03
-keywords: c++, FFmpeg
+keywords: c++, FFmpeg, Mac, OSX, IOS
 ---
-
 ## 安裝步驟
-
 ### 下載ffmpeg source code
 [Download source code](https://ffmpeg.org/download.html#build-mac)
 

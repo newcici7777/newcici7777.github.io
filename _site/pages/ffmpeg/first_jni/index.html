@@ -1333,7 +1333,7 @@
     	<a href="/pages/ffmpeg/first_jni/" data-nav-link> First jni</a>
         
             
-                <ul><li><a href="#jni" data-nav-link " >JNI</a></li><li><a href="#建立jni" data-nav-link " >建立JNI</a></li><li><a href="#檢查sdk" data-nav-link " >檢查SDK</a></li><li><a href="#cmake" data-nav-link " >cmake</a></li><li><a href="#activity" data-nav-link " >activity</a></li><li><a href="#增加jni方法" data-nav-link " >增加jni方法</a></li></ul>
+                <ul><li><a href="#jni" data-nav-link " >JNI</a></li><li><a href="#建立jni" data-nav-link " >建立JNI</a></li><li><a href="#檢查sdk" data-nav-link " >檢查SDK</a></li><li><a href="#build-project" data-nav-link " >build project</a></li><li><a href="#cmake" data-nav-link " >cmake</a></li><li><a href="#activity" data-nav-link " >activity</a></li><li><a href="#增加jni方法" data-nav-link " >增加jni方法</a></li></ul>
 
             
         </li>
@@ -1409,6 +1409,18 @@
 <h2 id="檢查sdk">檢查SDK</h2>
 <p>NDK與CMake要有勾選
 <img src="/assets/img/ndk/check_sdk.png" alt="img" /></p>
+
+<h2 id="build-project">build project</h2>
+<p>若出現以下error，直接按”File”&gt;”Sync Project with Gradle Files”</p>
+
+<p>java.lang.NullPointerException: Cannot invoke “String.length()” because “<parameter1>" is null</parameter1></p>
+<ul>
+  <li>appcompat-1.7.0-runtime-jar</li>
+  <li>constraintlayout-2.2.0-runtime.jar</li>
+  <li>constraintlayout-core-1.1.0.jar</li>
+  <li>profileinstaller-1.4.0-runtime.jar
+<img src="/assets/img/ndk/runtime_nullptr.png" alt="img" /></li>
+</ul>
 
 <h2 id="cmake">cmake</h2>
 <p>自己建立lib
@@ -1617,7 +1629,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-03-25 15:51:17 +0800"
+        "time": "2025-03-26 10:59:26 +0800"
     },
     "basePath": "",
     "book": {
