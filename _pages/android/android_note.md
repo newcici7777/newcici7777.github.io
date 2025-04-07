@@ -7,6 +7,9 @@ keywords: Android,
 取得TAG
 MainActivity.class.getSimpleName()
 
+alt+F7 Find usage
+shit二次尋找
+
 網路測試
 {% highlight java linenos %}
 private class NetworkTestTask extends AsyncTask<Void, Void, Boolean> {

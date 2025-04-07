@@ -3,8 +3,6 @@ title: Xcode
 date: 2024-04-17
 keywords: xcode,mac,c++
 ---
-
-
 ![img]({{site.imgurl}}/xcode_c++/xcode0.png)
 
 ![img]({{site.imgurl}}/xcode_c++/xcode1.png)
