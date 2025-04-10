@@ -12,7 +12,3 @@ gem 'rouge'
 gem 'jekyll-paginate'
 gem 'jekyll-gist'
 gem 'jekyll-feed'
-
-#gem 'redcarpet'
-#gem 'pygments.rb'
-#gem 'kramdown-syntax-coderay'
