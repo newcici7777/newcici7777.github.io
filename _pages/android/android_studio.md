@@ -8,3 +8,5 @@ keywords: java, android studio
 
 ![img]({{site.imgurl}}/other/android_studio_space.png)
 
+自動格式排版
+cmd + alt + L
