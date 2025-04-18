@@ -73,7 +73,7 @@ for(index in 0 .. countForRow) {
 畫圓圈
 
 先把畫布分七等份，因一周有七天
-![img]({{site.imgurl}}/compose/line_chart3.png)  
+![img]({{site.imgurl}}/compose/line_chart3.jpeg)  
 {% highlight kotlin linenos %}
 //一周有7天，要把畫布的寬度分成7等份，然後讓圓點座落在每一等份的中間位置
 val averageOfWidth = canvasWidth / 7

@@ -164,6 +164,13 @@ int main() {
   cout << "mathMax = " << *mathMax << endl;
   cout << "mathEng = " << *engMax << endl;
   cout << "mathHistory = " << *historyMax << endl;
+  // release momery
+  delete mathMax;
+  mathMax = nullptr;
+  delete engMax;
+  engMax = nullptr;
+  delete historyMax;
+  historyMax = nullptr;
   return 0;
 }
 {% endhighlight %}

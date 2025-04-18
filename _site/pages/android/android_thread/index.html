@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Android thread </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Main Thread </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="keywords" content="Android, handler, thread, Runnable" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -96,13 +96,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/c/editor/rvo/" data-nav-link> 關閉RVO</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/c/editor/android_studio/" data-nav-link> Android studio</a>
         
             
         </li></ul></li>
@@ -983,6 +976,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/c/template/pointer_template/" data-nav-link> 指標模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/c/template/special_template/" data-nav-link> 模板特製化</a>
         
             
@@ -1364,6 +1364,37 @@
         </li></ul></li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Java </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/polymorphism/" data-nav-link> 多型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/abstract/" data-nav-link> 抽象</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/extends_constructor/" data-nav-link> 子類別繼承父類別(沒有無參數建構子)</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/thread/" data-nav-link> Thread</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Android </a><ul>
 	
 	
@@ -1371,13 +1402,27 @@
 	
 	
 	<li class="active" data-nav-item>
-    	<a href="/pages/android/android_thread/" data-nav-link> Android thread</a>
+    	<a href="/pages/android/android_thread/" data-nav-link> Main Thread</a>
         
             
-                <ul><li><a href="#thread概念" data-nav-link " >Thread概念</a></li><li><a href="#建立thread" data-nav-link " >建立Thread</a><ul><li><a href="#new建立" data-nav-link " >new建立</a></li><li><a href="#繼承thread類別" data-nav-link " >繼承thread類別</a></li></ul></li><li><a href="#覆寫run方法" data-nav-link " >覆寫run()方法</a><ul><li><a href="#runnable覆寫run方法" data-nav-link " >Runnable覆寫run()方法</a></li><li><a href="#繼承thread類別-1" data-nav-link " >繼承thread類別</a></li></ul></li><li><a href="#運行" data-nav-link " >運行</a><ul><li><a href="#new-thread呼叫start" data-nav-link " >new Thread呼叫start()</a></li><li><a href="#extends-thread呼叫start" data-nav-link " >extends Thread呼叫start()</a></li></ul></li></ul>
+                <ul><li><a href="#main-thread-ui-thread" data-nav-link " >Main Thread, UI Thread</a></li><li><a href="#main-thread有那些" data-nav-link " >Main Thread有那些?</a><ul><li><a href="#android生命周期" data-nav-link " >Android生命周期</a></li><li><a href="#事件" data-nav-link " >事件</a></li><li><a href="#ui" data-nav-link " >UI</a></li></ul></li><li><a href="#ui的同步與非同步" data-nav-link " >UI的同步與非同步</a><ul><li><a href="#同步" data-nav-link " >同步</a></li><li><a href="#非同步" data-nav-link " >非同步</a></li></ul></li></ul>
 
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/android/handler/" data-nav-link> Handler訊息溝通</a>
+        
+            
         </li></ul></li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/android/android_studio/" data-nav-link> Android studio</a>
+        
+            
+        </li>
 	
 	
 	<li class="" data-nav-item>
@@ -1910,7 +1955,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >Android thread</a>
+                            <a href="." >Main Thread</a>
                         
                     </h1>
                 </div>
@@ -1923,285 +1968,41 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/android/android_thread">Android thread</h1>
+                        <h1 id="/pages/android/android_thread">Main Thread</h1>
                     
 
-                    <h2 id="thread概念">Thread概念</h2>
-<p>程序(Process)是把程式碼載入到記憶體，從執行到執行完畢的一個過程。</p>
+                    <p>Prerequisites:</p>
+<ul>
+  <li><a href="/pages/java/thread/">thread</a></li>
+</ul>
 
-<p>操作系統(OS)可以管理多個程序(Process)，可以讓多個程序(Process)輪流使用CPU資源。</p>
+<h2 id="main-thread-ui-thread">Main Thread, UI Thread</h2>
+<p>在Android中，關於使用者介面UI的操作都要放在主要執行緒(UI thread或Main thread)，其它耗時的操作(耗時的運算,IO,網路連線,資料庫存取…等等)則放在背景執行緒(Background Thread)，所謂的背景執行緒(Background Thread)也就是主流程(UI thread)之外的其它流程，一個程序只有一個主要執行緒(UI thread或Main thread)，但有很多個背景執行緒(Background Thread)。</p>
 
-<p>Jvm視為虛擬的操作系統，管理一個程序中的多個執行緒(多個流程)。</p>
+<p>舉例來說，在主要執行緒(UI thread)發出網路連線請求，應用程式的UI就會被凍結，凍結超過5秒，就會顯示應用程式無回應 (ANR) 對話方塊，所以要把網路連線請求放在背景執行緒(background Thread)，由背景執行緒(background Thread)處理長時間執行的網路連線流程，主要執行緒(UI thread)繼續處理UI更新。</p>
 
-<p>執行緒(Thread)是流程，每個程序都會有一個主要執行緒(Main Thread)也稱作主要流程，為了執行效率提升，所以想同時運行很多流程，每一個執行緒就是一個流程，所以建立了很多執行緒(Thread)。</p>
+<h2 id="main-thread有那些">Main Thread有那些?</h2>
 
-<p>所以一個程序可以運行很多流程(執行緒Thread)，實際上是Jvm有一個排程管理系統，會十分快速的將一個流程(執行緒)切換到另一個流程(執行緒)，快速的切換讓使用者以為是同時運行這些流程(執行緒)，實際上是十分快速的輪流執行(執行緒)。</p>
+<h3 id="android生命周期">Android生命周期</h3>
+<p>onCreate(),onStart,onResume()…等等。</p>
 
-<p>在Android中，關於使用者介面UI的操作都要放在主要執行緒(UI thread或Main thread)，其它耗時的操作(耗時的運算,IO,網路連線,資料庫存取…等等)則放在背景執行緒(Background Thread)，所謂的背景執行緒(Background Thread)也就是主要流程(UI thread)之外執行的其它流程，一個程序只有一個主要執行緒(UI thread或Main thread)，但有很多個背景執行緒(Background Thread)。</p>
+<h3 id="事件">事件</h3>
+<p>onClick(),onItemClick()…等等，on開頭的方法都是Main Thread。</p>
 
-<p>舉例來說，在主要執行緒(UI thread)發出網路連線請求，應用程式的UI就會被凍結，凍結超過x秒，就會顯示應用程式無回應 (ANR) 對話方塊，所以要把網路連線請求放在背景執行緒(background Thread)，由背景執行緒(background Thread)處理長時間執行的網路連線流程，主要執行緒(UI thread)繼續處理UI更新。</p>
+<h3 id="ui">UI</h3>
+<p>例:TextView.setText()，跟UI有關的都是Main Thread。</p>
 
-<h2 id="建立thread">建立Thread</h2>
-<p>建立Thread有二個方式，一個是new建立，一個是繼承thread類別。</p>
+<h2 id="ui的同步與非同步">UI的同步與非同步</h2>
+<h3 id="同步">同步</h3>
+<p>等待上一個動作完成，才可以處理下一個動作。<br />
+需要等待回傳結果，例如金流處理，付款等相關流程，需要有一個進度bar讓ui暫時凍結。</p>
 
-<h3 id="new建立">new建立</h3>
-<p>建立的時候，建構子的參數是要Runnable物件。</p>
+<h3 id="非同步">非同步</h3>
+<p>不用等待上一個動作完成，可以同時做多個動作。<br />
+不需要等待回傳結果，例如批次下載圖片，可以先用暫時的圖片取代還未下載完成的圖片，不需要把ui凍結。使用者仍可進行其它ui操作。</p>
 
-<p>語法</p>
+<p>lance</p>
 
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="k">new</span> <span class="nc">Thread</span><span class="o">(</span><span class="k">new</span> <span class="nc">Runnalbe</span><span class="o">()</span> <span class="o">{});</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>也可以先寫好Runnable的物件再代入參數中</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">類別名</span> <span class="kd">implements</span> <span class="nc">Runnable</span> <span class="o">{}</span>
-<span class="k">new</span> <span class="nf">Thread</span><span class="o">(</span><span class="k">new</span> <span class="n">類別名</span><span class="o">());</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="繼承thread類別">繼承thread類別</h3>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">類別名</span> <span class="kd">extends</span> <span class="nc">Thread</span> <span class="o">{}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="覆寫run方法">覆寫run()方法</h2>
-<p>run()方法裡面放的是程式執行的流程，也就是這個執行緒要執行的流程。</p>
-
-<h3 id="runnable覆寫run方法">Runnable覆寫run()方法</h3>
-<p>語法</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="k">new</span> <span class="nc">Thread</span><span class="o">(</span><span class="k">new</span> <span class="nc">Runnable</span><span class="o">()</span> <span class="o">{</span>
-  <span class="nd">@Override</span>
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-    <span class="c1">// 要執行的流程</span>
-  <span class="o">}</span>
-<span class="o">})</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>也可以先寫好Runnable的物件再代入參數中</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">類別名</span> <span class="kd">implements</span> <span class="nc">Runnable</span> <span class="o">{</span>
-  <span class="nd">@Override</span>
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-    <span class="c1">// 要執行的流程</span>
-  <span class="o">}</span>  
-<span class="o">}</span>
-<span class="k">new</span> <span class="nf">Thread</span><span class="o">(</span><span class="k">new</span> <span class="n">類別名</span><span class="o">());</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="繼承thread類別-1">繼承thread類別</h3>
-<p>語法</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">類別名</span> <span class="kd">extends</span> <span class="nc">Thread</span> <span class="o">{</span>
-  <span class="nd">@Override</span>
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-    <span class="c1">// 要執行的流程</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>匿名類別的方式建立thread類別</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="k">new</span> <span class="nc">Thread</span><span class="o">()</span> <span class="o">{</span>
-  <span class="nd">@Override</span>
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-    <span class="c1">// 要執行的流程</span>
-  <span class="o">}</span>
-<span class="o">};</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="運行">運行</h2>
-<p>呼叫Thread類別的start()方法，start()方法就會去執行覆寫run()方法中的程式碼。</p>
-
-<h3 id="new-thread呼叫start">new Thread呼叫start()</h3>
-<p>語法</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="code"><pre><span class="k">new</span> <span class="nc">Thread</span><span class="o">(</span><span class="k">new</span> <span class="nc">Runnable</span><span class="o">()</span> <span class="o">{</span>
-  <span class="nd">@Override</span>
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span> <span class="o">...</span> <span class="o">}</span>
-<span class="o">}).</span><span class="na">start</span><span class="o">()</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>也可以先寫好Runnable的物件再代入參數中</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">類別名</span> <span class="kd">implements</span> <span class="nc">Runnable</span> <span class="o">{</span>
-  <span class="nd">@Override</span>
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-    <span class="c1">// 要執行的流程</span>
-  <span class="o">}</span>  
-<span class="o">}</span>
-<span class="k">new</span> <span class="nf">Thread</span><span class="o">(</span><span class="k">new</span> <span class="n">類別名</span><span class="o">()).</span><span class="na">start</span><span class="o">();</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="extends-thread呼叫start">extends Thread呼叫start()</h3>
-<p>語法</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">類別名</span> <span class="kd">extends</span> <span class="nc">Thread</span> <span class="o">{</span>
-  <span class="nd">@Override</span>
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span> <span class="o">...</span> <span class="o">}</span>
-<span class="o">}</span>
-<span class="k">new</span> <span class="n">類別名</span><span class="o">().</span><span class="na">start</span><span class="o">();</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>匿名類別的方式建立thread類別</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="k">new</span> <span class="nc">Thread</span><span class="o">()</span> <span class="o">{</span>
-  <span class="nd">@Override</span>
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-    <span class="c1">// 要執行的流程</span>
-  <span class="o">}</span>
-<span class="o">}.</span><span class="na">start</span><span class="o">();</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-</pre></td><td class="code"><pre>  <span class="kd">private</span> <span class="nc">Handler</span> <span class="n">handler</span><span class="o">;</span>
-  <span class="nd">@Override</span>
-  <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
-    <span class="n">handler</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Handler</span><span class="o">()</span> <span class="o">{</span>
-      <span class="nd">@Override</span>
-      <span class="kd">public</span> <span class="kt">void</span> <span class="nf">handleMessage</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="nc">Message</span> <span class="n">msg</span><span class="o">)</span> <span class="o">{</span>
-        <span class="kd">super</span><span class="o">.</span><span class="na">handleMessage</span><span class="o">(</span><span class="n">msg</span><span class="o">);</span>
-        <span class="k">switch</span> <span class="o">(</span><span class="n">msg</span><span class="o">.</span><span class="na">what</span><span class="o">)</span> <span class="o">{</span>
-          <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
-            <span class="nc">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="nc">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="s">"test"</span><span class="o">,</span> <span class="nc">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
-            <span class="nc">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="no">TAG</span><span class="o">,</span><span class="s">"handler test"</span><span class="o">);</span>
-            <span class="k">break</span><span class="o">;</span>
-        <span class="o">}</span>
-      <span class="o">}</span>
-    <span class="o">};</span>
-    <span class="k">new</span> <span class="nf">Thread</span><span class="o">()</span> <span class="o">{</span>
-      <span class="nd">@Override</span>
-      <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-        <span class="kd">super</span><span class="o">.</span><span class="na">run</span><span class="o">();</span>
-        <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
-        <span class="n">message</span><span class="o">.</span><span class="na">what</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
-        <span class="n">handler</span><span class="o">.</span><span class="na">sendMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
-      <span class="o">}</span>
-    <span class="o">}.</span><span class="na">start</span><span class="o">();</span>
-    <span class="k">new</span> <span class="nf">Thread</span><span class="o">(</span><span class="k">new</span> <span class="nc">Runnable</span><span class="o">()</span> <span class="o">{</span>
-      <span class="nd">@Override</span>
-      <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-        <span class="n">runOnUiThread</span><span class="o">(</span><span class="k">new</span> <span class="nc">Runnable</span><span class="o">()</span> <span class="o">{</span>
-          <span class="nd">@Override</span>
-          <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-            <span class="nc">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="nc">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="s">"ui Test"</span><span class="o">,</span> <span class="nc">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
-            <span class="nc">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="no">TAG</span><span class="o">,</span><span class="s">"ui Thread Test"</span><span class="o">);</span>
-          <span class="o">}</span>
-        <span class="o">});</span>
-      <span class="o">}</span>
-    <span class="o">}).</span><span class="na">start</span><span class="o">();</span>
-   <span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2265,14 +2066,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/ffmpeg/import_ffmpeg_android" class="navigation navigation-prev navigation-unique" aria-label="Previous page: import ffmpeg in Android">
+                        <a href="/pages/java/thread" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Thread">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/android/kdoc" class="navigation navigation-next navigation-unique" aria-label="Next page: kdoc">
+                        <a href="/pages/android/handler" class="navigation navigation-next navigation-unique" aria-label="Next page: Handler訊息溝通">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2290,11 +2091,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "github note",
+            "title": "Thread",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/note/git/github.md",
-            "ref": "_pages/note/git/github.md",
+            "path": "_pages/java/thread.md",
+            "ref": "_pages/java/thread.md",
             "articles": []
         },
         
@@ -2392,7 +2193,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-04-11 15:28:01 +0800"
+        "time": "2025-04-18 13:26:31 +0800"
     },
     "basePath": "",
     "book": {

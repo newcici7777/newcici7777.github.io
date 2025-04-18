@@ -3,7 +3,6 @@ title: 多型
 date: 2025-03-14
 keywords: c++, polymorphism
 ---
-
 ## 多型概念
 所謂的多型就是`父類別的指標指向子類別，並且可以使用子類別覆寫父類別的函式。`
 
@@ -192,7 +191,13 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
+```
+Wolf eat!
+Fish eat!
+Bird eat!
+Human eat!
+Cat eat!
+```
 ### 相同父類別的子類別全放進vector
 
 - [iterator][1]
@@ -389,6 +394,7 @@ int main() {
 }
 {% endhighlight %}
 ```
+實作父類別func()
 實作父類別func()
 ```
 

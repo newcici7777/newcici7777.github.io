@@ -98,13 +98,6 @@
     	<a href="/pages/c/editor/rvo/" data-nav-link> 關閉RVO</a>
         
             
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/c/editor/android_studio/" data-nav-link> Android studio</a>
-        
-            
         </li></ul></li>
 	
 	
@@ -948,7 +941,7 @@
     	<a href="/pages/c/conversion/conversion_function/" data-nav-link> 建構子轉型</a>
         
             
-                <ul><li><a href="#explicit顯式轉型" data-nav-link " >explicit顯式轉型</a></li><li><a href="#implicit自動轉型" data-nav-link " >implicit自動轉型</a><ul><li><a href="#多個單一參數但型別不同建構子" data-nav-link " >多個單一參數，但型別不同建構子</a></li><li><a href="#多個參數但第2個參數以後皆有預設值" data-nav-link " >多個參數，但第2個參數以後皆有預設值</a></li><li><a href="#先建立物件再自動轉型的方式建立物件" data-nav-link " >先建立物件，再自動轉型的方式建立物件</a></li><li><a href="#函式的參數是字串再自動轉型的方式建立物件" data-nav-link " >函式的參數是字串，再自動轉型的方式建立物件</a></li><li><a href="#函式傳回值為自動轉型" data-nav-link " >函式傳回值為自動轉型</a></li><li><a href="#若自動轉型的型態與參數型態不同但可以透過自動轉型建立物件" data-nav-link " >若自動轉型的型態與參數型態不同，但可以透過自動轉型，建立物件</a></li><li><a href="#建構子前加上explicit就不能使用自動轉型函式" data-nav-link " >建構子前加上explicit，就不能使用自動轉型函式</a></li><li><a href="#完整程式碼" data-nav-link " >完整程式碼</a></li></ul></li></ul>
+                <ul><li><a href="#explicit強制轉型" data-nav-link " >explicit強制轉型</a></li><li><a href="#implicit自動轉型" data-nav-link " >implicit自動轉型</a><ul><li><a href="#多個單一參數但型別不同建構子" data-nav-link " >多個單一參數，但型別不同建構子</a></li><li><a href="#多個參數但第2個參數以後皆有預設值" data-nav-link " >多個參數，但第2個參數以後皆有預設值</a></li><li><a href="#先建立物件再自動轉型的方式建立物件" data-nav-link " >先建立物件，再自動轉型的方式建立物件</a></li><li><a href="#函式的參數是字串再自動轉型的方式建立物件" data-nav-link " >函式的參數是字串，再自動轉型的方式建立物件</a></li><li><a href="#函式傳回值為自動轉型" data-nav-link " >函式傳回值為自動轉型</a></li><li><a href="#若自動轉型的型態與參數型態不同但可以透過自動轉型建立物件" data-nav-link " >若自動轉型的型態與參數型態不同，但可以透過自動轉型，建立物件</a></li><li><a href="#建構子前加上explicit就不能使用自動轉型函式" data-nav-link " >建構子前加上explicit，就不能使用自動轉型函式</a></li><li><a href="#完整程式碼" data-nav-link " >完整程式碼</a></li></ul></li></ul>
 
             
         </li>
@@ -980,6 +973,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/c/template/function_class_template/" data-nav-link> 類別中函式模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/template/pointer_template/" data-nav-link> 指標模板</a>
         
             
         </li>
@@ -1367,6 +1367,37 @@
         </li></ul></li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Java </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/polymorphism/" data-nav-link> 多型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/abstract/" data-nav-link> 抽象</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/extends_constructor/" data-nav-link> 子類別繼承父類別(沒有無參數建構子)</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/thread/" data-nav-link> Thread</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Android </a><ul>
 	
 	
@@ -1374,10 +1405,24 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/android/android_thread/" data-nav-link> Android thread</a>
+    	<a href="/pages/android/android_thread/" data-nav-link> Main Thread</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/android/handler/" data-nav-link> Handler訊息溝通</a>
         
             
         </li></ul></li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/android/android_studio/" data-nav-link> Android studio</a>
+        
+            
+        </li>
 	
 	
 	<li class="" data-nav-item>
@@ -1934,14 +1979,14 @@
 
 <p>conversion function又稱作轉型函式，主要用來將一個類別轉型成另一個類別的函式，以下例子有從char轉型成Student類別，有從double轉型成Student類別，有從int轉型成Student類別。</p>
 
-<h2 id="explicit顯式轉型">explicit顯式轉型</h2>
+<h2 id="explicit強制轉型">explicit強制轉型</h2>
 
 <p>語法</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(類型)表達式
 類型(表達式)
 </code></pre></div></div>
 
-<p>顯式轉型就是告訴編譯器要轉型的型別，例如下方程式碼，等號右邊明確定義Student型別。</p>
+<p>強制轉型就是告訴編譯器要轉型的型別，例如下方程式碼，等號右邊明確定義Student型別。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2270,7 +2315,7 @@
 </code></pre></div></div>
 
 <h3 id="建構子前加上explicit就不能使用自動轉型函式">建構子前加上explicit，就不能使用自動轉型函式</h3>
-<p>但可以使用顯式轉型</p>
+<p>但可以使用強制轉型</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2311,7 +2356,7 @@
   <span class="p">}</span>
 <span class="p">};</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="c1">// 顯式轉型</span>
+  <span class="c1">// 強制轉型</span>
   <span class="n">Student</span> <span class="n">student5</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="mf">58.5</span><span class="p">);</span>
   <span class="c1">// 無法使用以下自動轉型</span>
   <span class="c1">//Student student5 = 58.5;</span>
@@ -2432,7 +2477,7 @@
   <span class="n">Student</span> <span class="n">student1</span><span class="p">(</span><span class="s">"student1"</span><span class="p">);</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"student1 name = "</span> <span class="o">&lt;&lt;</span> <span class="n">student1</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="c1">// 強制轉型</span>
-  <span class="c1">// 手動指定轉型過程（例如 Student student2 = Student("student2");，這就是顯式轉型</span>
+  <span class="c1">// 手動指定轉型過程（例如 Student student2 = Student("student2");，這就是強制轉型</span>
   <span class="n">Student</span> <span class="n">student2</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s">"student2"</span><span class="p">);</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"student2 name = "</span> <span class="o">&lt;&lt;</span> <span class="n">student2</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="c1">// 使用等於(=)指派運算子呼叫只有一個參數的建構子</span>
@@ -2668,7 +2713,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-04-11 15:28:01 +0800"
+        "time": "2025-04-18 13:26:31 +0800"
     },
     "basePath": "",
     "book": {

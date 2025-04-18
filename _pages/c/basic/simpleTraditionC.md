@@ -3,7 +3,6 @@ title: 台陸指標相關名詞差異
 date: 2024-05-30
 keywords: c++, pointer, Pointer to Const, Const Pointer
 ---
-
 ## 文件相關
 
 |英文|台灣|大陸|
@@ -16,7 +15,6 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |binary file|機器語言指令|二進制檔案|
 |linking|鏈結|鏈結|
 |comment|註解|註釋|
-
 
 ## 資料型態相關
 
@@ -32,7 +30,6 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |bit|位元|位|
 |%d %s|格式化字串或格式化數值輸出|占位符|
 |escape sequence|跳脫字元或逸出字元|轉義字符|
-
 
 ## 運算式相關
 
@@ -66,7 +63,6 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |default|預設值|缺省|
 |Temp Variable|暫存變數或臨時變數|臨時變量|
 
-
 ## 陣列相關
 
 |英文|台灣|大陸|
@@ -76,7 +72,6 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |row|列|行|
 |column|行|列|
 
-
 ## 函式相關
 
 |英文|台灣|大陸|
@@ -84,7 +79,6 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Function|函式|函數|
 |callback|回呼函式|回調函數|
 |return|函式傳回值|函數回傳值|
-
 
 ## 指標相關
 
@@ -150,6 +144,7 @@ struct|結構|結構體|
 |Child class|子類別|派生類|
 |virtual function|虛擬函式|虛函數|
 |pure virtual function|抽象函式或純虛擬函式|純虛函數|
+|polymorphism|多型|多態|
 
 ## process相關
 
@@ -170,3 +165,37 @@ struct|結構|結構體|
 |client|用戶端|客戶端|
 |Data packet|封包|報文|
 |Network|網路|網絡|
+||通訊|通信|
+
+## thread相關
+
+|英文|台灣|大陸|
+|:--:|:--:|:--:|
+|thread|執行緒|線程|
+|Main Thread|主要執行緒|主線程|
+|background Thread|背景執行緒|子線程|
+|work Thread|工作執行緒|子線程|
+|Concurrency Control|同步|同步|
+|synchronous|同步|同步|
+|synchronous block|同步程式碼區域|同步塊|
+|asynchronous|非同步|異步|
+|lock|同步鎖|鎖|
+|Message|訊息|信息|
+
+## 影音相關
+
+|英文|台灣|大陸|
+|:--:|:--:|:--:|
+|video|視訊|視頻|
+|redio|音訊|音頻|
+|packet|封包|包|
+
+## Java相關
+
+|英文|台灣|大陸|
+|:--:|:--:|:--:|
+|Object-oriented programming|物件導向|面向對向原則|
+|Upcasting object|向上轉型物件|上轉型對象|
+|Downcasting object|向下轉型物件|下轉型對象|
+|Reference|參考|引用|
+|Interface|介面|接口|

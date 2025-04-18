@@ -98,13 +98,6 @@
     	<a href="/pages/c/editor/rvo/" data-nav-link> 關閉RVO</a>
         
             
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/c/editor/android_studio/" data-nav-link> Android studio</a>
-        
-            
         </li></ul></li>
 	
 	
@@ -986,6 +979,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/c/template/pointer_template/" data-nav-link> 指標模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/c/template/special_template/" data-nav-link> 模板特製化</a>
         
             
@@ -1367,6 +1367,37 @@
         </li></ul></li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Java </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/polymorphism/" data-nav-link> 多型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/abstract/" data-nav-link> 抽象</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/extends_constructor/" data-nav-link> 子類別繼承父類別(沒有無參數建構子)</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/thread/" data-nav-link> Thread</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Android </a><ul>
 	
 	
@@ -1374,10 +1405,24 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/android/android_thread/" data-nav-link> Android thread</a>
+    	<a href="/pages/android/android_thread/" data-nav-link> Main Thread</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/android/handler/" data-nav-link> Handler訊息溝通</a>
         
             
         </li></ul></li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/android/android_studio/" data-nav-link> Android studio</a>
+        
+            
+        </li>
 	
 	
 	<li class="" data-nav-item>
@@ -1977,22 +2022,20 @@
 14
 15
 16
-17
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="c1">// int是4byte</span>
   <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
   <span class="c1">// long在win是4byte，在linux8byte</span>
   <span class="c1">// 低精準度int轉成高精準度long，不會有小數點被截掉，精準度不足的問題</span>
-  <span class="kt">long</span> <span class="n">long0</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-  <span class="c1">// Child child;</span>
+  <span class="kt">long</span> <span class="n">long1</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
   <span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mf">5.55</span><span class="p">;</span>
   <span class="c1">// 自動轉型，double是8byte高精準度轉到long4byte低精準度</span>
   <span class="c1">// 會有小數點被截掉，精準度不足的問題</span>
-  <span class="kt">long</span> <span class="n">long1</span> <span class="o">=</span> <span class="n">d</span><span class="p">;</span>
+  <span class="kt">long</span> <span class="n">long2</span> <span class="o">=</span> <span class="n">d</span><span class="p">;</span>
   <span class="c1">// c語言的強制轉型</span>
-  <span class="kt">long</span> <span class="n">long2</span> <span class="o">=</span> <span class="p">(</span><span class="kt">long</span><span class="p">)</span><span class="n">d</span><span class="p">;</span>
+  <span class="kt">long</span> <span class="n">long3</span> <span class="o">=</span> <span class="p">(</span><span class="kt">long</span><span class="p">)</span><span class="n">d</span><span class="p">;</span>
   <span class="c1">// c++的強制轉型</span>
-  <span class="kt">long</span> <span class="n">long3</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">long</span><span class="o">&gt;</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
+  <span class="kt">long</span> <span class="n">long4</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">long</span><span class="o">&gt;</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -2423,7 +2466,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-04-11 15:28:01 +0800"
+        "time": "2025-04-18 13:26:31 +0800"
     },
     "basePath": "",
     "book": {

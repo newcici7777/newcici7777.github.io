@@ -10,7 +10,7 @@ Prerequisites:
 
 conversion function又稱作轉型函式，主要用來將一個類別轉型成另一個類別的函式，以下例子有從char轉型成Student類別，有從double轉型成Student類別，有從int轉型成Student類別。
 
-## explicit顯式轉型
+## explicit強制轉型
 
 語法
 ```
@@ -18,7 +18,7 @@ conversion function又稱作轉型函式，主要用來將一個類別轉型成�
 類型(表達式)
 ```
 
-顯式轉型就是告訴編譯器要轉型的型別，例如下方程式碼，等號右邊明確定義Student型別。
+強制轉型就是告訴編譯器要轉型的型別，例如下方程式碼，等號右邊明確定義Student型別。
 {% highlight c++ linenos %}
 Student student2 = Student("student2");
 Student student3 = (Student)"student2";
@@ -199,7 +199,7 @@ student8 age = 97
 ```
 
 ### 建構子前加上explicit，就不能使用自動轉型函式
-但可以使用顯式轉型
+但可以使用強制轉型
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -217,7 +217,7 @@ public:
   }
 };
 int main() {
-  // 顯式轉型
+  // 強制轉型
   Student student5 = Student(58.5);
   // 無法使用以下自動轉型
   //Student student5 = 58.5;
@@ -266,7 +266,7 @@ int main() {
   Student student1("student1");
   cout << "student1 name = " << student1.name << endl;
   // 強制轉型
-  // 手動指定轉型過程（例如 Student student2 = Student("student2");，這就是顯式轉型
+  // 手動指定轉型過程（例如 Student student2 = Student("student2");，這就是強制轉型
   Student student2 = Student("student2");
   cout << "student2 name = " << student2.name << endl;
   // 使用等於(=)指派運算子呼叫只有一個參數的建構子

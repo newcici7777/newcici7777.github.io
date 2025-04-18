@@ -19,6 +19,8 @@ keywords: jekyll
 ## 使用git desktop clone下來
 ![img]({{site.imgurl}}/jekyll/jekyll_install3.png)
 
+![img]({{site.imgurl}}/jekyll/jekyll_install4.png)
+
 ## 建立Gemfile
 clone下來後，在clone的目錄下建立`Gemfile`
 
@@ -94,19 +96,19 @@ http://127.0.0.1:4000
 ```
 
 ## 上傳到你的github
-
 commit > push
-
-![img]({{site.imgurl}}/jekyll/jekyll_install4.png)
 
 ## Github pages
 進入Github pages  
 ![img]({{site.imgurl}}/jekyll/jekyll_install5.png)
+
 設置branch，並save  
 ![img]({{site.imgurl}}/jekyll/jekyll_install6.png)
+
 到Action查看佈屬狀況，黃色代表正在佈屬  
 ![img]({{site.imgurl}}/jekyll/jekyll_install7.png)
-藍色代表正在佈屬
+
+綠色代表佈屬成功
 ![img]({{site.imgurl}}/jekyll/jekyll_install8.png)
 
 ## 查看網站

@@ -37,16 +37,15 @@ int main() {
   int i = 10;
   // long在win是4byte，在linux8byte
   // 低精準度int轉成高精準度long，不會有小數點被截掉，精準度不足的問題
-  long long0 = i;
-  // Child child;
+  long long1 = i;
   double d = 5.55;
   // 自動轉型，double是8byte高精準度轉到long4byte低精準度
   // 會有小數點被截掉，精準度不足的問題
-  long long1 = d;
+  long long2 = d;
   // c語言的強制轉型
-  long long2 = (long)d;
+  long long3 = (long)d;
   // c++的強制轉型
-  long long3 = static_cast<long>(d);
+  long long4 = static_cast<long>(d);
   return 0;
 }
 {% endhighlight %}

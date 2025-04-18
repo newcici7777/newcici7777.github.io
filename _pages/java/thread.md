@@ -253,3 +253,20 @@ Black ant 吃 2g蛋糕, 蛋糕剩下0g
 red ant已死亡
 Black ant已死亡
 ```
+
+## 同步與非同步
+### 同步synchronous
+等待上一個動作完成，才可以處理下一個動作。
+
+### 非同步asynchronous
+不用等待上一個動作完成，可以同時做多個動作。  
+多個流程或稱執行緒(thread)同時進行，不用特別等上一個流程(執行緒)完成，才能進行下一個流程(執行緒)。
+
+## 同步鎖lock
+- [c++互斥鎖][1]
+
+非同步(asynchronous)的流程中，共享資源時造成變數值不一致，因為多個流程(執行緒thread)同時存取或修改同一個變數，所以需要使用同步鎖(lock)，必須把目前的流程(thread)處理完，才輪下一個流程(thread)處理，還原成同步的狀況，所有流程(thread)排隊，等待進入廁所(要同步的區域)，只有拿到鎖(lock)的流程(thread)，才能進入廁所，鎖上(lock)廁所門，上完廁所(執行完)，把廁所門的鎖打開(unlock)，輪到下一個排隊的執行緒(thread)去上廁所。
+
+![img]({{site.imgurl}}/toilet.png)  
+
+[1]: {% link _pages/c/conversion/conversion_function.md %}#互斥鎖Mutex
