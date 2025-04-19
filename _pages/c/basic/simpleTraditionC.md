@@ -199,3 +199,4 @@ struct|結構|結構體|
 |Downcasting object|向下轉型物件|下轉型對象|
 |Reference|參考|引用|
 |Interface|介面|接口|
+|implements|實作|實現|

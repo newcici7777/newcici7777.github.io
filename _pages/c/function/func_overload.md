@@ -4,7 +4,7 @@ date: 2024-10-14
 keywords: c++, function overload
 ---
 
-## 多載override
+## 多載overload
 
 多載是指相同函式名，完成相似的工作。
 
