@@ -73,6 +73,7 @@ public class Outter {
 {% endhighlight %}
 
 ## 內部類別可以有public、private、protected、預設(只能在同一個package下才能用)
+內部類別權限設為private，代表只有Outter這個外部類別可以存取，其它類別不能讀取到PrivateInner這個類別。
 {% highlight java linenos %}
 public class Outter {
   private class PrivateInner {
@@ -131,14 +132,6 @@ public class Main {
 }
 {% endhighlight %}
 
-## 靜態內部類別
-{% highlight java linenos %}
-public class Outer {
-    public static class PublicStaticInner {}
-    private static class PrivateStaticInner {}
-}
-{% endhighlight %}
-
 ## 區域內部類別
 - 定義在方法或代碼塊中的類別
 - 不能使用 public、private 或 protected 修飾
@@ -154,12 +147,20 @@ public class Outer {
 }
 {% endhighlight %}
 
-## callback
-- [callback模式][1]
+### 內部類別不能有Static變數與Static方法
 
-## 內部類別不能有Static變數與Static方法
+## 其它內部類別文章:
 
-[1]: {% link _pages/design_pattern/callback.md %}
+- [靜態內部類別][1]
+
+
+[1]: {% link _pages/java/static.md %}
+
+
+
+
+
+
 
 
 

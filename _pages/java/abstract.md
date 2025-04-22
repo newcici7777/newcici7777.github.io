@@ -4,7 +4,6 @@ date: 2025-04-18
 keywords: Java, polymorphism, Upcasting object, Downcasting object, Abstract, Abstract class, Abstract method
 ---
 Prerequisites:
-
 - [多型][1]
 
 ## 抽象類別

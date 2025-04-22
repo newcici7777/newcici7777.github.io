@@ -1406,6 +1406,20 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/callby_value/" data-nav-link> 方法傳值Call by value</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/static/" data-nav-link> Static</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/thread/" data-nav-link> Thread</a>
         
             
@@ -1416,17 +1430,34 @@
     	<a href="/pages/java/extends_constructor/" data-nav-link> 子類別繼承父類別(沒有無參數建構子)</a>
         
             
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> UML </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/uml/" data-nav-link> UML類別圖</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/amateras/" data-nav-link> 安裝Amateras</a>
+        
+            
         </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Design Pattern </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Design Pattern </a><ul>
 	
 	
 	<li class="" data-nav-item>
     	<a href="/pages/design_pattern/callback/" data-nav-link> Callback模式</a>
         
             
-        </li></ul></li>
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Android </a><ul>
@@ -2064,24 +2095,37 @@
 <h3 id="匿名的方式建立子類別">匿名的方式建立子類別</h3>
 <p>所謂的匿名，就是沒有變數名，比如上一個程式碼，<code class="language-plaintext highlighter-rouge">testHuman</code>就是變數名，指向TestHuman類別的物件。</p>
 
-<p>建立匿名子類別步驟如下:</p>
-<ol>
-  <li>new 抽象類別() {}
-     要用 <code class="language-plaintext highlighter-rouge">new 抽象類別()</code>，最重重要的是，後面要加上花括號{}</li>
-  <li>在test()方法中，加上步驟1的參數<code class="language-plaintext highlighter-rouge">new 抽象類別() {}</code></li>
-</ol>
+<p>建立匿名子類別步驟如下:<br />
+1.new 抽象類別() {}<br />
+要用 <code class="language-plaintext highlighter-rouge">new 抽象類別()</code>，最重重要的是，後面要加上花括號{}</p>
+
+<p>2.在test()方法中，加上步驟1的參數<code class="language-plaintext highlighter-rouge">new 抽象類別() {}</code></p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>  <span class="n">testHuman</span><span class="o">.</span><span class="na">test</span><span class="o">(</span><span class="k">new</span> <span class="n">抽象類別</span> <span class="o">()</span> <span class="o">{});</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>3.在花括號中，覆寫(Override)抽象類別Human的抽象方法speak()</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="code"><pre>		  <span class="n">testHuman</span><span class="o">.</span><span class="na">test</span><span class="o">(</span><span class="k">new</span> <span class="n">抽象類別</span> <span class="o">()</span> <span class="o">{});</span>
-		
+3
+4
+5
+6
+</pre></td><td class="code"><pre>  <span class="n">testHuman</span><span class="o">.</span><span class="na">test</span><span class="o">(</span><span class="k">new</span> <span class="nc">Human</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">speak</span><span class="o">()</span> <span class="o">{</span>
+
+    <span class="o">}</span>
+  <span class="o">});</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<ol>
-  <li>在花括號中，覆寫(Override)抽象類別Human的抽象方法speak()</li>
-</ol>
+<p>4.加上要覆寫的內容</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2091,43 +2135,17 @@
 5
 6
 7
-</pre></td><td class="code"><pre>		  <span class="n">testHuman</span><span class="o">.</span><span class="na">test</span><span class="o">(</span><span class="k">new</span> <span class="nc">Human</span><span class="o">()</span> <span class="o">{</span>
-		    <span class="nd">@Override</span>
-		    <span class="kt">void</span> <span class="nf">speak</span><span class="o">()</span> <span class="o">{</span>
-
-		    <span class="o">}</span>
-		  <span class="o">});</span>
-		
+</pre></td><td class="code"><pre>  <span class="n">testHuman</span><span class="o">.</span><span class="na">test</span><span class="o">(</span><span class="k">new</span> <span class="nc">Human</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">speak</span><span class="o">()</span> <span class="o">{</span>
+      <span class="c1">// 覆寫的內容</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"說中文"</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">});</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<ol>
-  <li>加上要覆寫的內容</li>
-</ol>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="code"><pre>		  <span class="n">testHuman</span><span class="o">.</span><span class="na">test</span><span class="o">(</span><span class="k">new</span> <span class="nc">Human</span><span class="o">()</span> <span class="o">{</span>
-		    <span class="nd">@Override</span>
-		    <span class="kt">void</span> <span class="nf">speak</span><span class="o">()</span> <span class="o">{</span>
-		      <span class="c1">// 覆寫的內容</span>
-		      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"說中文"</span><span class="o">);</span>
-		    <span class="o">}</span>
-		  <span class="o">});</span>
-		
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	```
-	說中文
-	```
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>說中文
 </code></pre></div></div>
 
 <h3 id="匿名花括號">匿名花括號{}</h3>
@@ -2368,7 +2386,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/thread" class="navigation navigation-next navigation-unique" aria-label="Next page: Thread">
+                        <a href="/pages/java/callby_value" class="navigation navigation-next navigation-unique" aria-label="Next page: 方法傳值Call by value">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2386,11 +2404,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "內部類別",
+            "title": "方法傳值Call by value",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/java/innerclass.md",
-            "ref": "_pages/java/innerclass.md",
+            "path": "_pages/java/callby_value.md",
+            "ref": "_pages/java/callby_value.md",
             "articles": []
         },
         
@@ -2488,7 +2506,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-04-19 13:27:50 +0800"
+        "time": "2025-04-22 14:21:32 +0800"
     },
     "basePath": "",
     "book": {

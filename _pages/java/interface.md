@@ -164,5 +164,8 @@ public class Calculator {
 ## 介面的多型
 由上面例子發現，Operator介面可以是Add，可以是Minus、Multiply，一個介面有多種類型，類別只要實作Operator介面，我們就會說這個類別就是Operator介面。
 
+## callback
+- [callback模式][1]
 
+[1]: {% link _pages/design_pattern/callback.md %}
 

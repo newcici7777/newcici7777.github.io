@@ -1392,7 +1392,7 @@
     	<a href="/pages/java/innerclass/" data-nav-link> 內部類別</a>
         
             
-                <ul><li><a href="#內部類別inner-class" data-nav-link " >內部類別Inner class</a></li><li><a href="#外部類別outer-class" data-nav-link " >外部類別Outer Class</a></li><li><a href="#外部類別的成員變數與成員方法" data-nav-link " >外部類別的成員變數與成員方法</a></li><li><a href="#內部類別是外部類別的成員" data-nav-link " >內部類別是外部類別的成員</a></li><li><a href="#外部類別可以用new建立內部類別" data-nav-link " >外部類別可以用new建立內部類別</a></li><li><a href="#外部類別可以使用內部類的方法" data-nav-link " >外部類別可以使用內部類的方法</a></li><li><a href="#內部類別可以有publicprivateprotected預設只能在同一個package下才能用" data-nav-link " >內部類別可以有public、private、protected、預設(只能在同一個package下才能用)</a></li><li><a href="#在類別之外建立內部類別" data-nav-link " >在類別之外建立內部類別</a></li><li><a href="#在類別之外可以間接存取private內部類別" data-nav-link " >在類別之外可以間接存取private內部類別</a></li><li><a href="#靜態內部類別" data-nav-link " >靜態內部類別</a></li><li><a href="#區域內部類別" data-nav-link " >區域內部類別</a></li><li><a href="#callback" data-nav-link " >callback</a></li><li><a href="#內部類別不能有static變數與static方法" data-nav-link " >內部類別不能有Static變數與Static方法</a></li></ul>
+                <ul><li><a href="#內部類別inner-class" data-nav-link " >內部類別Inner class</a></li><li><a href="#外部類別outer-class" data-nav-link " >外部類別Outer Class</a></li><li><a href="#外部類別的成員變數與成員方法" data-nav-link " >外部類別的成員變數與成員方法</a></li><li><a href="#內部類別是外部類別的成員" data-nav-link " >內部類別是外部類別的成員</a></li><li><a href="#外部類別可以用new建立內部類別" data-nav-link " >外部類別可以用new建立內部類別</a></li><li><a href="#外部類別可以使用內部類的方法" data-nav-link " >外部類別可以使用內部類的方法</a></li><li><a href="#內部類別可以有publicprivateprotected預設只能在同一個package下才能用" data-nav-link " >內部類別可以有public、private、protected、預設(只能在同一個package下才能用)</a></li><li><a href="#在類別之外建立內部類別" data-nav-link " >在類別之外建立內部類別</a></li><li><a href="#在類別之外可以間接存取private內部類別" data-nav-link " >在類別之外可以間接存取private內部類別</a></li><li><a href="#區域內部類別" data-nav-link " >區域內部類別</a><ul><li><a href="#內部類別不能有static變數與static方法" data-nav-link " >內部類別不能有Static變數與Static方法</a></li></ul></li><li><a href="#其它內部類別文章" data-nav-link " >其它內部類別文章:</a></li></ul>
 
             
         </li>
@@ -1400,6 +1400,20 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/anonymous_class/" data-nav-link> 匿名類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/callby_value/" data-nav-link> 方法傳值Call by value</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/static/" data-nav-link> Static</a>
         
             
         </li>
@@ -1416,17 +1430,34 @@
     	<a href="/pages/java/extends_constructor/" data-nav-link> 子類別繼承父類別(沒有無參數建構子)</a>
         
             
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> UML </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/uml/" data-nav-link> UML類別圖</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/amateras/" data-nav-link> 安裝Amateras</a>
+        
+            
         </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Design Pattern </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Design Pattern </a><ul>
 	
 	
 	<li class="" data-nav-item>
     	<a href="/pages/design_pattern/callback/" data-nav-link> Callback模式</a>
         
             
-        </li></ul></li>
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Android </a><ul>
@@ -2124,6 +2155,7 @@
 </figure>
 
 <h2 id="內部類別可以有publicprivateprotected預設只能在同一個package下才能用">內部類別可以有public、private、protected、預設(只能在同一個package下才能用)</h2>
+<p>內部類別權限設為private，代表只有Outter這個外部類別可以存取，其它類別不能讀取到PrivateInner這個類別。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2231,20 +2263,6 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="靜態內部類別">靜態內部類別</h2>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Outer</span> <span class="o">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">PublicStaticInner</span> <span class="o">{}</span>
-    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">PrivateStaticInner</span> <span class="o">{}</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
 <h2 id="區域內部類別">區域內部類別</h2>
 <ul>
   <li>定義在方法或代碼塊中的類別</li>
@@ -2270,12 +2288,13 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="callback">callback</h2>
-<ul>
-  <li><a href="/pages/design_pattern/callback/">callback模式</a></li>
-</ul>
+<h3 id="內部類別不能有static變數與static方法">內部類別不能有Static變數與Static方法</h3>
 
-<h2 id="內部類別不能有static變數與static方法">內部類別不能有Static變數與Static方法</h2>
+<h2 id="其它內部類別文章">其它內部類別文章:</h2>
+
+<ul>
+  <li><a href="/pages/java/static/">靜態內部類別</a></li>
+</ul>
 
 </section>
             </div><div class="search-results">
@@ -2467,7 +2486,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-04-19 13:27:50 +0800"
+        "time": "2025-04-22 14:21:32 +0800"
     },
     "basePath": "",
     "book": {

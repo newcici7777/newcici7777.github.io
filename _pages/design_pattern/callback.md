@@ -3,6 +3,10 @@ title: Callback模式
 date: 2025-04-18
 keywords: Design patten, Callback patten
 ---
+Prerequisites:
+
+- [介面][1]
+
 ## Callback回呼介面
 Callback（回呼）是一種常見的設計模式，允許一個類別在特定事件發生時通知另一個類別。
 
@@ -54,3 +58,5 @@ public class Main {
   }
 }
 {% endhighlight %}
+
+[1]: {% link _pages/java/interface.md %}
