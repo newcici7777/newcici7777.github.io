@@ -31,7 +31,7 @@ public interface Callback {
 {% endhighlight %}
 
 ## 抽象方法
-抽象方法存取權限一定是public。  
+抽象「方法」存取權限一定是public。  
 public、abstract可以省略，編譯器會自動加上。  
 {% highlight java linenos %}
 public interface Callback {
@@ -147,9 +147,11 @@ public class Calculator {
   // 加法，第1個參數把實作Operator介面的Add類別丟進去
   int add_result = calculator.calculate(new Add(), x, y);
   System.out.println(x + "+" + y +" = "+add_result);
+
   // 減法，第1個參數把實作Operator介面的Minus類別丟進去
   int minus_result = calculator.calculate(new Minus(), x, y);
   System.out.println(x + "-" + y +" = "+minus_result);
+
   // 乘法，第1個參數把實作Operator介面的Multiply類別丟進去
   int multiply_result = calculator.calculate(new Multiply(), x, y);
   System.out.println(x + "*" + y +" = "+multiply_result);
@@ -164,8 +166,5 @@ public class Calculator {
 ## 介面的多型
 由上面例子發現，Operator介面可以是Add，可以是Minus、Multiply，一個介面有多種類型，類別只要實作Operator介面，我們就會說這個類別就是Operator介面。
 
-## callback
-- [callback模式][1]
 
-[1]: {% link _pages/design_pattern/callback.md %}
 

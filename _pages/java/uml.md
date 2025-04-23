@@ -12,7 +12,7 @@ keywords: Java, UML
 使用Eclipse的plugin: Amateras
 
 ## 成員屬性與方法增加
-此處的成員屬性就是成員變數，二者意思相同    
+此處的成員屬性就是成員變數，二者意思相同  
 此處的成員方法就是成員函數，二者意思相同  
 
 Add Attribute增加成員變數  
@@ -69,25 +69,25 @@ A類別「用到」B類別，箭頭圖:A類別 -> B類別
 A類別
 {% highlight java linenos %}
 public class A {
-    // 方法參數用到B類別
-	void doBmethod(B b) {
-		b.method1();
-	}
+  // 方法參數用到B類別
+  void doBmethod(B b) {
+    b.method1();
+  }
 }
 {% endhighlight %}
 
 B類別
 {% highlight java linenos %}
 public class B {
-	void method1() {
-		System.out.println("B method1 do something.");
-	}
-	void method2() {
-		System.out.println("B method2 do something.");
-	}
-	void method3() {
-		System.out.println("B method3 do something.");
-	}
+  void method1() {
+    System.out.println("B method1 do something.");
+  }
+  void method2() {
+    System.out.println("B method2 do something.");
+  }
+  void method3() {
+    System.out.println("B method3 do something.");
+  }
 }
 {% endhighlight %}
 
@@ -101,10 +101,10 @@ public class B {
 A類別
 {% highlight java linenos %}
 public class A {
-	B b;
-	void setB(B b) {
-		this.b = b;
-	}
+  B b;
+  void setB(B b) {
+    this.b = b;
+  }
 }
 {% endhighlight %}
 
@@ -122,7 +122,7 @@ A類別建構子中建立B類別，也是屬於組合的關係。
 A類別
 {% highlight java linenos %}
 public class A {
-	B b = new B();
+  B b = new B();
 }
 {% endhighlight %}
 
@@ -140,7 +140,7 @@ B類別與上述的一樣，不再另寫程式碼。
 A類別擁有B類別成員屬性
 {% highlight java linenos %}
 public class A {
-	B b; // A類別擁有B類別成員屬性
+  B b; // A類別擁有B類別成員屬性
 }
 {% endhighlight %}
 
@@ -160,14 +160,14 @@ public class B {
 A類別擁有B類別成員屬性
 {% highlight java linenos %}
 public class A {
-	B b; // A類別擁有B類別成員屬性
+  B b; // A類別擁有B類別成員屬性
 }
 {% endhighlight %}
 
 B類別擁有A類別成員屬性
 {% highlight java linenos %}
 public class B {
-	A a; // B類別擁有A類別成員屬性
+  A a; // B類別擁有A類別成員屬性
 }
 {% endhighlight %}
 
