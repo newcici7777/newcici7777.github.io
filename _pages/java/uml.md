@@ -203,4 +203,21 @@ public class B implements A{
 }
 {% endhighlight %}
 
+## 抽象類別覆寫
+線條為虛線  
+![img]({{site.imgurl}}/java/abstract.png)
+
+{% highlight java linenos %}
+public abstract class Shape {
+  abstract void draw();
+}
+
+public class Circle extends Shape {
+  @Override
+  void draw() {
+    System.out.println("畫一個圓");
+  }
+}
+{% endhighlight %}
+
 [1]: {% link _pages/java/amateras.md %}

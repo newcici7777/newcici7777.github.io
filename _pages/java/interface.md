@@ -1,7 +1,7 @@
 ---
 title: 介面Interface
 date: 2025-04-18
-keywords: Java, polymorphism, Interface, Callback Interface
+keywords: Java, polymorphism, Interface
 ---
 ## 什麼是Interface?
 介面(Interface)可以想成是「功能」，但功能的內容由實作(implements)的類別自己去完成。
@@ -146,15 +146,15 @@ public class Calculator {
   int y = 5;
   // 加法，第1個參數把實作Operator介面的Add類別丟進去
   int add_result = calculator.calculate(new Add(), x, y);
-  System.out.println(x + "+" + y +" = "+add_result);
+  System.out.println(x + "+" + y + " = " + add_result);
 
   // 減法，第1個參數把實作Operator介面的Minus類別丟進去
   int minus_result = calculator.calculate(new Minus(), x, y);
-  System.out.println(x + "-" + y +" = "+minus_result);
+  System.out.println(x + "-" + y + " = " + minus_result);
 
   // 乘法，第1個參數把實作Operator介面的Multiply類別丟進去
   int multiply_result = calculator.calculate(new Multiply(), x, y);
-  System.out.println(x + "*" + y +" = "+multiply_result);
+  System.out.println(x + "*" + y + " = " + multiply_result);
   }
 {% endhighlight %}
 ```

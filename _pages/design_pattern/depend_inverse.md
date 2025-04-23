@@ -1,7 +1,7 @@
 ---
 title: 依賴反轉原則
 date: 2025-04-22
-keywords: Java, Dependence Inversion Principle
+keywords: Java, Design patterns, Dependence Inversion Principle
 ---
 Prerequisites:
 

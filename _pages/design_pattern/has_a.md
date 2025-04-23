@@ -1,7 +1,7 @@
 ---
-title: has-a比is-a更好
-date: 2025-04-21
-keywords: Java, Liskov Substitution Principle, has-a
+title: HAS-A比IS-A更好
+date: 2025-04-23
+keywords: Java, Design patterns, Liskov Substitution Principle, HAS-A, IS-A
 ---
 Prerequisites:
 
@@ -10,9 +10,9 @@ Prerequisites:
 
 ## 有一個比是一個更好
 
-has-a是「有一個」，is-a是「是一個」。
+HAS-A是「有一個」，IS-A是「是一個」。
 
-has-a意思是多用依賴、聚合、組合，少用繼承is-a。
+HAS-A意思是多用依賴、聚合、組合，少用繼承IS-A。
 
 所謂的依賴、聚合、組合，請參考類別圖的解釋，才能繼續看以下文章。
 
@@ -54,9 +54,9 @@ B method1
 由以上的程式碼可以發現，子類別覆寫到跟父類別相同的方法，就會影嚮預期，也許其它程式碼想呼叫的是父類別的方法，但在參數為多型的時候，卻呼叫到子類別覆寫的方法。
 
 ## 解決方式
-降低耦合，使用「有一個」has-a，而非繼承is-a。
+降低耦合，使用「有一個」HAS-A，而非繼承IS-A。
 
-has-a意思是多用依賴、聚合、組合。
+HAS-A意思是多用依賴、聚合、組合。
 
 B類別想使用A類別的method1()，透過依賴使用A類別，而不是使用繼承來使用A類別的method1();
 

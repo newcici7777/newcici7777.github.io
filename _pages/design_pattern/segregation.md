@@ -1,13 +1,13 @@
 ---
 title: 介面切割原則
 date: 2025-04-22
-keywords: Java, Interface Segregation Principle
+keywords: Java, Design patterns, Interface Segregation Principle
 ---
 Prerequisites:
 
 - [類別圖][1]
 - [多型][2]
-- [介面Interface][3]
+- [介面][3]
 
 ## 介面切割原則
 
@@ -15,9 +15,9 @@ Prerequisites:
 
 我覺得稱為介面最小化原則比較適合。
 
-下圖中有interface1，implement1與implement2去實作interface1
+下圖中有Interface1，ImplementA與ImplementA去實作Interface1
 
-A與B類別會用到interface1
+A與B類別會用到Interface1
 
 ![img]({{site.imgurl}}/pattern/segregation1.png)
 
@@ -115,6 +115,7 @@ public class Test {
     ImplementB implementB = new ImplementB();
     a.call1(implementA);
     a.call2(implementA);
+    a.call3(implementA);
     b.call3(implementB);
     b.call4(implementB);
   }
