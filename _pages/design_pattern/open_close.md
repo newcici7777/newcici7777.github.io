@@ -17,7 +17,7 @@ keywords: Java, Design patterns, Open Close Principle
 
 下圖，有一個形狀Shape的類別，Circle、Rectangle、Square都繼承Shape
 
-CreateShape類別中，drawCircle()，drawRectangle()與drawSquare()方法中的參數用到Shape類別。
+CreateShape類別中，drawShap()的參數用到Shape類別。
 
 ![img]({{site.imgurl}}/pattern/open_close1.png)
 
@@ -29,13 +29,13 @@ public class Shape {
   int type = 0;
 }
 
-public class Circle  extends Shape{
+public class Circle extends Shape{
   Circle() {
     super.type = 1;
   }
 }
 
-public class Square  extends Shape{
+public class Square extends Shape{
   Square() {
     super.type = 2;
   }
