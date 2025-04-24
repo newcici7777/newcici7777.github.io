@@ -9,11 +9,11 @@ Prerequisites:
 - [靜態內部類][2]
 - [使用到靜態內部類別才會被建立][3]
 
-[1]: {% link _pages/c/test/test.md %}
-
 Singleton 有很多中文翻譯，如∶ 獨體，單例
 
 什麼是Singleton？Singleton確保一個類別只有一個實體。
+
+何時用到Singleton，消耗系統資源的建立的物件，但又頻繁使用，只想只建立一次，不想頻繁的建立。
 
 ## 靜態變數建立Singleton
 使用靜態只產生一次的特性，儲存物件，確保一個類別只有一個實體。

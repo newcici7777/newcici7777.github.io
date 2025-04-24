@@ -4,7 +4,6 @@ date: 2025-04-17
 keywords: Java, constructor
 ---
 ## 匿名程式碼區塊
-
 英文是Anonymous code blocks
 
 {}花括號裡面的內容，就是匿名程式碼區塊
@@ -32,8 +31,8 @@ public class Test {
 }
 {% endhighlight %}
 ```
-靜態區塊
 匿名區塊
+建構子區塊
 ```
 
 ## 父類別沒有無參數建構子
