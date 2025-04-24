@@ -72,7 +72,7 @@ public class Test {
   }
 
   public static void main(String[] args) {
-    Test test = new Test();
+    Test test1 = new Test();
   }
 }
 {% endhighlight %}
@@ -81,6 +81,27 @@ public class Test {
 匿名區塊
 建構子區塊
 ```
+
+## 靜態只產生一次
+把前一個程式碼的main主程式改成下方，會發現靜態區塊只產生一次。
+{% highlight java linenos %}
+  public static void main(String[] args) {
+    Test test1 = new Test();
+    Test test2 = new Test();
+  }
+{% endhighlight %}
+```
+靜態區塊
+匿名區塊
+建構子區塊
+匿名區塊
+建構子區塊
+```
+
+由以上結果可知，執行2次new建立物件，但「靜態區塊」只會產生一次，不管建立多少次物件，靜態變數、靜態方法、靜態區塊，只會產生一次。
+
+## static與jvm
+static方法、static變數、static靜態內部類別，是在JVM啟動時，ClassLoader類別載入器就已經先丟進Method area(Metaspace)的靜態資料區中，若靜態變數的類型是物件(如String)，就會把「靜態變數」放在jvm的stack中，而變數指向的「物件」則放入jvm的heap(堆)的區域中。
 
 ## 靜態方法只能存取靜態變數、靜態方法
 靜態方法沒辦法存取成員變數與成員方法
@@ -181,9 +202,6 @@ public class StaticExample {
 呼叫 staticMethod2()
 印出靜態變數:static_name
 ```
-
-## static與jvm
-static方法、static變數、static靜態內部類別，是在JVM啟動時，ClassLoader類別載入器就已經先丟進Method area(Metaspace)的靜態資料區中，若靜態變數的類型是物件(如String)，就會把變數放在jvm的stack中，而String指向的物件則放入jvm的heap(堆)的區域中。
 
 [1]: {% link _pages/java/constructor.md %}
 
