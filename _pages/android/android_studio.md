@@ -9,6 +9,11 @@ keywords: java, android studio
 ## 自動格式排版
 cmd + alt + L
 
+## 使用cmd+滑鼠滾輪
+適用MAC，windows是ctrl+滑鼠滾輪
+
+![img]({{site.imgurl}}/android/android_studio_mouse_fontsize.png)
+
 ## 程式碼文字大小
 ![img]({{site.imgurl}}/android/android_studio_code_fontsize.png)
 

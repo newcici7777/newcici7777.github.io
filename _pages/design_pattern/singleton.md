@@ -1,5 +1,5 @@
 ---
-title: Singleton單例
+title: Singleton
 date: 2025-04-23
 keywords: Java, Design patterns, Singleton
 ---

@@ -45,6 +45,8 @@ public class Test {
 靜態方法
 ```
 ## 靜態區塊
+類別加載到jvm時，會呼叫靜態區塊，而建立物件時，會呼叫匿名區塊，然後才會呼叫建構子。
+
 語法
 {% highlight java linenos %}
   static {
