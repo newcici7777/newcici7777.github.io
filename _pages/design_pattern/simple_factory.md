@@ -229,5 +229,5 @@ public class OrderPizza {
 }
 {% endhighlight %}
 
-[1]: {% link _pages/c/design_pattern/open_close.md %}
+[1]: {% link _pages/design_pattern/open_close.md %}
 [2]: {% link _pages/java/uml.md %}

@@ -2,8 +2,8 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>子類別繼承父類別(沒有無參數建構子) </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="Java, extends constract" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>建構子 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="Java, constructor" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -1368,6 +1368,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/format/" data-nav-link> Java程式碼格式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/polymorphism/" data-nav-link> 多型</a>
         
             
@@ -1423,12 +1430,16 @@
         </li>
 	
 	
-	<li class="active" data-nav-item>
-    	<a href="/pages/java/extends_constructor/" data-nav-link> 子類別繼承父類別(沒有無參數建構子)</a>
+	<li class="" data-nav-item>
+    	<a href="/pages/java/constructor/" data-nav-link> 建構子</a>
         
             
-                <ul><li><a href="#父類別沒有無參數建構子" data-nav-link " >父類別沒有無參數建構子</a></li><li><a href="#解決辦法" data-nav-link " >解決辦法</a><ul><li><a href="#子類別呼叫任何一個有參數的父建構子" data-nav-link " >子類別呼叫任何一個有參數的父建構子</a></li><li><a href="#父類別加上無參數建構子" data-nav-link " >父類別加上無參數建構子</a></li></ul></li></ul>
-
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/reflect/" data-nav-link> 反射</a>
+        
             
         </li>
 	
@@ -1454,7 +1465,84 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/design_pattern/callback/" data-nav-link> Callback模式</a>
+    	<a href="/pages/design_pattern/depend_inverse/" data-nav-link> 依賴反轉原則</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/open_close/" data-nav-link> 開放關閉原則</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/has_a/" data-nav-link> HAS-A比IS-A更好</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/demeter/" data-nav-link> 最少知道原則</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/singleton/" data-nav-link> Singleton</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/simple_factory/" data-nav-link> Simple Factory</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/abstract_factory/" data-nav-link> 抽象工廠</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/segregation/" data-nav-link> 介面切割原則</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/interface_adapter/" data-nav-link> 介面轉接器</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/object_adapter/" data-nav-link> 物件轉接器</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/composite/" data-nav-link> 合成模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/iterator/" data-nav-link> Iterator</a>
         
             
         </li></ul></li></ul></li>
@@ -2017,7 +2105,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >子類別繼承父類別(沒有無參數建構子)</a>
+                            <a href="." >建構子</a>
                         
                     </h1>
                 </div>
@@ -2030,10 +2118,57 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/java/extends_constructor">子類別繼承父類別(沒有無參數建構子)</h1>
+                        <h1 id="/pages/java/extends_constructor">建構子</h1>
                     
 
-                    <h2 id="父類別沒有無參數建構子">父類別沒有無參數建構子</h2>
+                    <h2 id="匿名程式碼區塊">匿名程式碼區塊</h2>
+
+<p>英文是Anonymous code blocks</p>
+
+<p>{}花括號裡面的內容，就是匿名程式碼區塊</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  // 花括號裡面的內容
+}
+</code></pre></div></div>
+
+<h2 id="先執行匿名程式碼區塊">先執行匿名程式碼區塊</h2>
+<p>建立物件時，會先執行匿名稱式碼區塊，再執行建構子</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"匿名區塊"</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="nc">Test</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"建構子區塊"</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Test</span> <span class="n">test</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>靜態區塊
+匿名區塊
+</code></pre></div></div>
+
+<h2 id="父類別沒有無參數建構子">父類別沒有無參數建構子</h2>
 <p>以下父類別沒有無參數建構子<code class="language-plaintext highlighter-rouge">Parent() {}</code></p>
 
 <figure class="highlight">
@@ -2212,17 +2347,7 @@ window.MathJax = {
                     
     
                     
-                        
-                        <a href="/pages/java/thread" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Thread">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                    
 
-                    
-                        
-                        <a href="/pages/java/uml" class="navigation navigation-next navigation-unique" aria-label="Next page: UML類別圖">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -2340,7 +2465,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-04-22 14:21:32 +0800"
+        "time": "2025-04-28 15:16:43 +0800"
     },
     "basePath": "",
     "book": {

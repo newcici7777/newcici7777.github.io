@@ -254,6 +254,17 @@ public class Test {
 }
 {% endhighlight %}
 
+## View.OnClickListener
+[View.OnClickListener](https://cs.android.com/android/platform/superproject/+/android15-qpr2-release:frameworks/base/core/java/android/view/View.java;l=31742?q=View.OnClickListener&ss=android%2Fplatform%2Fsuperproject)
+
+可參考Android的View類別內的OnClickListener介面，只有一個抽象方法。
+
+{% highlight java linenos %}
+public interface OnClickListener {
+  void onClick(View v);
+}
+{% endhighlight %}
+
 [1]: {% link _pages/java/uml.md %}
 [2]: {% link _pages/java/polymorphism.md %}
 [3]: {% link _pages/java/interface.md %}

@@ -1,0 +1,2620 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+<meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>開放關閉原則 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="Java, Design patterns, Open Close Principle" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/base16.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+<meta name="google-site-verification" content="65zgvtfJFNDdKge0tDpfLKShsOrANSZ0hsdp1prfxzs" />
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/" type="image/x-icon">
+
+<link rel="stylesheet" href="/assets/custom_css/code.css"></head>
+    <body>
+        <div class="book">
+            
+            <div class="book-summary">
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            <li class="chapter active" data-level="1.1" data-path="" data-nav-item>
+                <a href="http://localhost:4000" data-nav-link>
+                    Cici&#39;s notebook
+                </a>
+            </li>
+            <li class="divider"></li>
+            <!-- path =  -->
+            
+            
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> C++ </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 寫C++在MAC </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/editor/xcode/" data-nav-link> Xcode</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/editor/vscode/" data-nav-link> VS on Mac</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/editor/clang/" data-nav-link> 安裝VS在MAC(實作)</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/editor/vsDebug/" data-nav-link> VS Debug</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/editor/cmake/" data-nav-link> Cmake on Mac</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/editor/supportc11/" data-nav-link> Xcode支援C++11以上</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/editor/rvo/" data-nav-link> 關閉RVO</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/simpleTraditionC/" data-nav-link> 台陸指標相關名詞差異</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 基本知識 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/format/" data-nav-link> 程式碼格式</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 資料型態 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/typicalRange/" data-nav-link> 資料型態範圍</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/charType/" data-nav-link> char字元</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/boolType/" data-nav-link> bool</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/printformat/" data-nav-link> 整數與浮點數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/typedef/" data-nav-link> typedef類型別名</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/param/" data-nav-link> 參數與引數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/scope/" data-nav-link> 變數可見範圍與生命週期</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/loop/" data-nav-link> 迴圈</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/rand/" data-nav-link> 亂數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/main/" data-nav-link> main</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/include/" data-nav-link> include與define</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/linux_shell/" data-nav-link> Linux shell指令</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 編譯 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/editor/openssh_server/" data-nav-link> 安裝openssh-server</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/compile/makefile/" data-nav-link> makefile</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/compile/gdb/" data-nav-link> gdb</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/compile/core_dump/" data-nav-link> gdb core dump</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/compile/gdb_attach_pid/" data-nav-link> gdb attach pid</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 指標 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/pointer/pointer/" data-nav-link> 指標基本觀念</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/pointer/pointerConst/" data-nav-link> const與指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/pointer/pointerVoid/" data-nav-link> void*任何資料型態的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/pointer/nullptr/" data-nav-link> 0 == nullptr == NULL</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/pointer/wildPointer/" data-nav-link> 指標位址是無效內容</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/pointer/pointerToPointer/" data-nav-link> 指標的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/pointer/pointerArithmetic/" data-nav-link> 指標運算</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 指向陣列的指標 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/array/array/" data-nav-link> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/array/pointerToArray/" data-nav-link> 一維陣列與指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/array/dynamicArrays/" data-nav-link> 陣列與動態配置記憶體</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/array/qsort/" data-nav-link> qsort排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/array/array2dimen/" data-nav-link> 二維陣列</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/array/arrayOfPointers/" data-nav-link> 指標陣列存放多個記憶體位址</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> smart pointer </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/pointer/unique_ptr/" data-nav-link> unique_ptr</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> C字串 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/array/charArray/" data-nav-link> char 字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/array/pointerCharArr/" data-nav-link> char字串指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/string/string_convert/" data-nav-link> string convert</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 實作字串函式 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/strLen/" data-nav-link> 取得字串長度</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/string/reverseStr/" data-nav-link> 原地反轉字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/string/integerToStr/" data-nav-link> 整數轉成字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/string/stringToInt/" data-nav-link> 字串轉成數字</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/string/stringCopy/" data-nav-link> 字串拷貝</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/string/stringCat/" data-nav-link> 字串連結</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/string/strchr/" data-nav-link> 字元搜尋</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/string/strcmp/" data-nav-link> 字串比較</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/string/strstr/" data-nav-link> 字串搜尋</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/string/delstr/" data-nav-link> 刪除字元</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/string/split/" data-nav-link> split 切割字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/string/xml/" data-nav-link> xml搜尋</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/string/chineseAscii/" data-nav-link> ASCII與中文</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 參考 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/reference/reference/" data-nav-link> 參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/reference/refToPointer/" data-nav-link> 參考指向指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/reference/l_ref_func/" data-nav-link> 等號左邊的函式</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 函式 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/function/func_def/" data-nav-link> 函式宣告與定義</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/function/callByValue/" data-nav-link> 函式傳值與傳回值</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/function/func_param_pointer/" data-nav-link> 函式參數為指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/function/callByRef/" data-nav-link> 函式傳參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/function/func_return_ref/" data-nav-link> 函式傳回值是參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/function/func_overload/" data-nav-link> 函式多載</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/function/func_inline/" data-nav-link> 內嵌函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/function/func_default_param/" data-nav-link> 函式參數預設值</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/function/functionPointer/" data-nav-link> 函式指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/function/func_ref/" data-nav-link> 函式參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/function/auto_func/" data-nav-link> auto與函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/function/lambda/" data-nav-link> lambda</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/function/using_func_pointer/" data-nav-link> using函式指標別名</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 記憶體 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dynamicMemory/memoryLayout/" data-nav-link> 記憶體配置</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dynamicMemory/newDelete/" data-nav-link> new/delete</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dynamicMemory/malloc/" data-nav-link> malloc</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dynamicMemory/operator_new_delete/" data-nav-link> operator new delete</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dynamicMemory/nothrow/" data-nav-link> 記憶體不足</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dynamicMemory/memset/" data-nav-link> memset</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dynamicMemory/memory_interval/" data-nav-link> 記憶體間隔計算</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 結構 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/struct/struct_def/" data-nav-link> 定義結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/struct/struct_char/" data-nav-link> 結構與字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/struct/struct_init/" data-nav-link> 初始化結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/struct/struct_array/" data-nav-link> 結構陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/struct/struct_pointer/" data-nav-link> 指標指向結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/struct/nestedStruct/" data-nav-link> 巢狀結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/struct/arrayInStruct/" data-nav-link> 結構中的陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/struct/pointerInStruct/" data-nav-link> 結構中的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/struct/linked_list/" data-nav-link> 鏈結串列</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 資料結構與演算法 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dataStruct/arrayList/" data-nav-link> ArrayList實作</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dataStruct/arrayListExtCap/" data-nav-link> ArrayList擴展容量</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dataStruct/linkedList/" data-nav-link> 單向鏈結串列實作</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dataStruct/doublelinkedList/" data-nav-link> 雙向鏈結串列實作</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dataStruct/stack/" data-nav-link> Stack實作</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dataStruct/queue/" data-nav-link> Queue實作</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dataStruct/circular_queue/" data-nav-link> circular queue環狀佇列</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dataStruct/bubbleSort/" data-nav-link> 氣泡排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dataStruct/insertSort/" data-nav-link> 插入排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dataStruct/quickSort/" data-nav-link> 快速排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dataStruct/mergeSort/" data-nav-link> 合併排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dataStruct/recursion/" data-nav-link> 遞迴</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 類別與物件 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/class/" data-nav-link> 類別與物件</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/this/" data-nav-link> this</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/enum/" data-nav-link> Enum列舉</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/constructor/" data-nav-link> 建構子與解構子</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/anonymous_obj/" data-nav-link> 匿名物件</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/temp_obj/" data-nav-link> 臨時物件temporary object</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/init_list/" data-nav-link> 建構子初始化列表</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/member_class/" data-nav-link> 成員變數是類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/static_class/" data-nav-link> 靜態類別變數與函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/copy_constructor/" data-nav-link> 拷貝函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/deep_shallow_copy/" data-nav-link> 深淺拷貝</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/operator_assign/" data-nav-link> operator=()</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/functor/" data-nav-link> operator()物件函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/operator_add/" data-nav-link> operator+()</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/operator_equal/" data-nav-link> operator==()</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/inheritance/" data-nav-link> 繼承</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/inherit_init/" data-nav-link> 繼承初始化</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/polymorphism/" data-nav-link> 多型</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 轉型 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/conversion/implicit/" data-nav-link> 自動轉型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/conversion/explicit/" data-nav-link> 強制轉型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/conversion/conversion_function/" data-nav-link> 建構子轉型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/conversion/type_conversion/" data-nav-link> c++轉型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/conversion/cast_operator/" data-nav-link> cast operator轉型運算子</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 模板 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/template/function_template/" data-nav-link> 函式模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/template/function_class_template/" data-nav-link> 類別中函式模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/template/pointer_template/" data-nav-link> 指標模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/template/special_template/" data-nav-link> 模板特製化</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/template/class_template/" data-nav-link> 類別模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/template/stack_template/" data-nav-link> Stack實作(int Array)</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/template/foreach_template/" data-nav-link> foreach模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/template/findif_template/" data-nav-link> find_if模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/template/bsort_template/" data-nav-link> 氣泡排序模板</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> STL Containers </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/stl/string/" data-nav-link> string</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/stl/iterator/" data-nav-link> iterator疊代器</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/stl/pair/" data-nav-link> pair</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/stl/map/" data-nav-link> map</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> c11 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/c11/init_list/" data-nav-link> 初始化initializer list</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 左值與右值 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/c11/rvalue/l_r_value/" data-nav-link> l-value與r-value</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/c11/rvalue/l_r_ref/" data-nav-link> l-value參考與r-value參考</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/c11/rvalue/constRef/" data-nav-link> const與參考</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/c11/move_operator/" data-nav-link> 移動建構子與移動指派運算子</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/c11/forward/" data-nav-link> forward</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/c11/functional/" data-nav-link> functional</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/c11/bind/" data-nav-link> bind綁定</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/c11/variadic/" data-nav-link> 可變參數模板</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/c11/callback/" data-nav-link> callback</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> pthread </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/pthread/create_pthread/" data-nav-link> 建立pthread</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Thread(C11) </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/thread/create_thread/" data-nav-link> 建立thread</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/thread/join/" data-nav-link> 執行緒記憶體釋放</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/thread/this_thread/" data-nav-link> this_thread</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/thread/mutex/" data-nav-link> 互斥鎖Mutex</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/thread/condition_variable/" data-nav-link> condition_variable</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> time </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/time/chrono/" data-nav-link> 程式執行時間</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/time/time/" data-nav-link> time</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> file </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/file/file_io/" data-nav-link> File IO</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/file/file_desc/" data-nav-link> File description</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> linux系統c函式庫 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/libc/errno/" data-nav-link> 取得錯誤訊息</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/libc/file_io/" data-nav-link> 檔案目錄操作</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/libc/system_execl/" data-nav-link> system與execl</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> process相關 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/libc/signal/" data-nav-link> signal訊號</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/libc/exit/" data-nav-link> exit終止程序</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/libc/fork/" data-nav-link> fork 複製程序</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/libc/kill/" data-nav-link> kill</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/libc/shared_memory/" data-nav-link> Shared Memory共用記憶體</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/libc/semaphore/" data-nav-link> semaphore</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/libc/semaph_que/" data-nav-link> semaphore作為condition</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> socket </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/socket/socket/" data-nav-link> socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/socket/fork_socket/" data-nav-link> 多工的socket</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/socket/file_socket/" data-nav-link> Socket傳送檔案</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> ffmpeg </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> xcode </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/ffmpeg/install_ffmpeg_mac/" data-nav-link> FFmpeg in Mac</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> android </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/ffmpeg/first_jni/" data-nav-link> First jni</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/ffmpeg/jni/" data-nav-link> JNI</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/ffmpeg/cmake/" data-nav-link> cmake</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/ffmpeg/compile_ffmpeg_android/" data-nav-link> FFmpeg on Android</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/ffmpeg/import_ffmpeg_android/" data-nav-link> import ffmpeg in Android</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Java </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/format/" data-nav-link> Java程式碼格式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/polymorphism/" data-nav-link> 多型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/abstract/" data-nav-link> 抽象</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/interface/" data-nav-link> 介面Interface</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/innerclass/" data-nav-link> 內部類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/anonymous_class/" data-nav-link> 匿名類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/callby_value/" data-nav-link> 方法傳值Call by value</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/static/" data-nav-link> Static</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/thread/" data-nav-link> Thread</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/constructor/" data-nav-link> 建構子</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/reflect/" data-nav-link> 反射</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> UML </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/uml/" data-nav-link> UML類別圖</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/amateras/" data-nav-link> 安裝Amateras</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Design Pattern </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/depend_inverse/" data-nav-link> 依賴反轉原則</a>
+        
+            
+        </li>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/design_pattern/open_close/" data-nav-link> 開放關閉原則</a>
+        
+            
+                <ul><li><a href="#開放關閉原則" data-nav-link " >開放關閉原則</a></li><li><a href="#未優化前程式碼" data-nav-link " >未優化前程式碼</a></li><li><a href="#問題" data-nav-link " >問題</a></li><li><a href="#優化程式碼" data-nav-link " >優化程式碼</a></li><li><a href="#新增三角形" data-nav-link " >新增三角形</a></li></ul>
+
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/has_a/" data-nav-link> HAS-A比IS-A更好</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/demeter/" data-nav-link> 最少知道原則</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/singleton/" data-nav-link> Singleton</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/simple_factory/" data-nav-link> Simple Factory</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/abstract_factory/" data-nav-link> 抽象工廠</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/segregation/" data-nav-link> 介面切割原則</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/interface_adapter/" data-nav-link> 介面轉接器</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/object_adapter/" data-nav-link> 物件轉接器</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/composite/" data-nav-link> 合成模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/iterator/" data-nav-link> Iterator</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Android </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> thread </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/android/android_thread/" data-nav-link> Main Thread</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/android/handler/" data-nav-link> Handler訊息溝通</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/android/android_studio/" data-nav-link> Android studio</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/android/kdoc/" data-nav-link> kdoc</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/android/adb/" data-nav-link> ADB</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/android/intellij_coroutine/" data-nav-link> Intellij 安裝Coroutine</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> error </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/android/kapt_err/" data-nav-link> kaptGenerateStubsDebugKotlin task (current target is 17) jvm target</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> JetpackCompose </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 元件 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/text/" data-nav-link> Compose Text</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/sidebar/" data-nav-link> Compose sidebar</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/icon/" data-nav-link> Icon</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/box/" data-nav-link> Box</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/row/" data-nav-link> Row</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/column/" data-nav-link> Column</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/btn/" data-nav-link> Btn</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/radiobtn/" data-nav-link> RadioButton</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/listitem/" data-nav-link> ListItem</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/textfield/" data-nav-link> TextField</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/lazycolumn/" data-nav-link> LazyColumn水平置中</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 屬性 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/mutablestate/" data-nav-link> Compose mutableStateOf</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/modifier/" data-nav-link> Modifier</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/padding/" data-nav-link> padding</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/linear_gradient/" data-nav-link> 背景顏色漸變</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 圖片相關 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/clip/" data-nav-link> clip圓角</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/image_loader/" data-nav-link> ImageLoader</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/image_fullmax/" data-nav-link> 圖片全瑩幕</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/round_image/" data-nav-link> 圓形圖片</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Topbar與Navigation </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/top_bar/" data-nav-link> 自制App Top Bar</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/top_bar_err/" data-nav-link> Topbar error</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/top_bar_center/" data-nav-link> Topbar置中</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/top_bar_back/" data-nav-link> App Top bar添加上一頁跟action的按鈕</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/change_statusbar_color/" data-nav-link> Change status bar color</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/change_statusbar_height/" data-nav-link> Change status bar height</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/bottom_nav/" data-nav-link> BottomNavigation</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animat_nav/" data-nav-link> AnimationNavgation</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/nav_back/" data-nav-link> Navigation 回到上一頁轉場</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/system_bar/" data-nav-link> system bar</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 資料相關 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/retrofit/" data-nav-link> Retrofit</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/view_model/" data-nav-link> View Model</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/preferences_datastore/" data-nav-link> preferencesDataStore Flow找不到</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 其它 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/screen_info/" data-nav-link> 瑩幕寬高</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 手勢相關 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/horizontalpager/" data-nav-link> 輪播</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/pullrefresh/" data-nav-link> PullRefresh</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/canvas_chart/" data-nav-link> 畫半圓Canvas chart</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/line_chart/" data-nav-link> 折線圖</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/template/" data-nav-link> Compose代碼模版</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/xml_layout/" data-nav-link> Compose共用xml佈局</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/permission/" data-nav-link> Permission</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/text_error/" data-nav-link> Compose Text Error</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Jekyll </a><ul>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Install </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/jekyll/install/how_to_install_ruby/" data-nav-link> 安裝 Ruby on Mac</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/jekyll/install/install_jekyll/" data-nav-link> 安裝 Jekyll</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 舊資料 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/jekyll/old/install_jekyll/" data-nav-link> 安裝Gem jekyll</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/jekyll/old/install_ruby/" data-nav-link> 安裝Ruby</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/jekyll/old/change_ruby_path/" data-nav-link> 如何更改舊ruby路徑</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Other Note </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/note/sublime/" data-nav-link> sublime note</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> git </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/note/git/github/" data-nav-link> github note</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/note/git/sourcetree_create/" data-nav-link> SourceTree新增git repository</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/note/git/sourcetree_token/" data-nav-link> SourceTree token</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/note/git/remove_commit/" data-nav-link> 刪除commit</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/note/ip_setting/" data-nav-link> 固定ip設定</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/note/laravel/" data-nav-link> Laravel基本介紹</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> mac </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/note/mac/mac_usage/" data-nav-link> mac使用方式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/note/mac/mac_monitor/" data-nav-link> 外接螢幕配置主副</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/note/mac/apfs/" data-nav-link> APFS</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/note/mac/mac_time/" data-nav-link> mac時光機</a>
+        
+            
+        </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> leetcode </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/leetcode/118/" data-nav-link> 118,119 Pascal's Triangle</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/leetcode/linkedlist/" data-nav-link> MyLinkedList數據結構</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/leetcode/1367/" data-nav-link> 1367</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/leetcode/572/" data-nav-link> 572 Subtree of Another Tree</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/leetcode/144/" data-nav-link> 144 Binary Tree Preorder Traversal</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/leetcode/n01/" data-nav-link> 產生N個01的組合</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/leetcode/240/" data-nav-link> Leetcode 240 剑指 Offer 04. 二维数组中的查找</a>
+        
+            
+        </li></ul></li></ul>
+    </nav>
+</div>
+            <div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href="." >開放關閉原則</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/pages/design_pattern/open_close">開放關閉原則</h1>
+                    
+
+                    <h2 id="開放關閉原則">開放關閉原則</h2>
+
+<p>英文是Open Close Principle</p>
+
+<p>對修改關閉，對擴充開放。</p>
+
+<p>意思是增加一個新類別，不用修改程式碼。</p>
+
+<p>會變動的程式碼、細節的部分，寫在實作的具體類別，不會變動程式碼寫在抽象類別或介面。</p>
+
+<h2 id="未優化前程式碼">未優化前程式碼</h2>
+
+<p>下圖，有一個形狀Shape的類別，Circle、Rectangle、Square都繼承Shape</p>
+
+<p>CreateShape類別中，drawShap()的參數用到Shape類別。</p>
+
+<p><img src="/assets/img/pattern/open_close1.png" alt="img" /></p>
+
+<p>程式碼如下:</p>
+
+<p>形狀相關的程式碼</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Shape</span> <span class="o">{</span>
+  <span class="kt">int</span> <span class="n">type</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Circle</span> <span class="kd">extends</span> <span class="nc">Shape</span><span class="o">{</span>
+  <span class="nc">Circle</span><span class="o">()</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">.</span><span class="na">type</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Square</span> <span class="kd">extends</span> <span class="nc">Shape</span><span class="o">{</span>
+  <span class="nc">Square</span><span class="o">()</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">.</span><span class="na">type</span> <span class="o">=</span> <span class="mi">2</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Rectangle</span> <span class="kd">extends</span> <span class="nc">Shape</span><span class="o">{</span>
+  <span class="nc">Rectangle</span><span class="o">()</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">.</span><span class="na">type</span> <span class="o">=</span> <span class="mi">3</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>CreateShape</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CreateShape</span> <span class="o">{</span>
+  <span class="kt">void</span> <span class="nf">drawShap</span><span class="o">(</span><span class="nc">Shape</span> <span class="n">shape</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">shape</span><span class="o">.</span><span class="na">type</span> <span class="o">==</span> <span class="mi">1</span><span class="o">)</span>
+      <span class="n">drawCircle</span><span class="o">();</span>
+    <span class="k">else</span> <span class="nf">if</span> <span class="o">(</span><span class="n">shape</span><span class="o">.</span><span class="na">type</span> <span class="o">==</span> <span class="mi">2</span><span class="o">)</span>
+      <span class="n">drawSquare</span><span class="o">();</span>
+    <span class="k">else</span> <span class="nf">if</span> <span class="o">(</span><span class="n">shape</span><span class="o">.</span><span class="na">type</span> <span class="o">==</span> <span class="mi">3</span><span class="o">)</span>
+      <span class="n">drawRectangle</span><span class="o">();</span>
+  <span class="o">}</span>
+
+  <span class="kt">void</span> <span class="nf">drawCircle</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"圓形"</span><span class="o">);</span>
+  <span class="o">}</span>
+  
+  <span class="kt">void</span> <span class="nf">drawRectangle</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"長方形"</span><span class="o">);</span>
+  <span class="o">}</span>
+  
+  <span class="kt">void</span> <span class="nf">drawSquare</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"正方形"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>main主程式</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">CreateShape</span> <span class="n">createShape</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">CreateShape</span><span class="o">();</span>
+    <span class="n">createShape</span><span class="o">.</span><span class="na">drawShap</span><span class="o">(</span><span class="k">new</span> <span class="nc">Circle</span><span class="o">());</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>圓形
+</code></pre></div></div>
+
+<h2 id="問題">問題</h2>
+<p>請問，若要加上一個三角形，會動到那些程式碼？</p>
+
+<p>開放關閉原則是增加一個新類別，不用修改程式碼，但以上的程式碼要大幅度修改CreateShape這個類別。</p>
+
+<h2 id="優化程式碼">優化程式碼</h2>
+<p>把以上會變動、細節部分的程式碼寫在實作的類別裡，不會變動的部分就寫在抽象裡。</p>
+
+<p>Shape變成抽象類別，有一個抽象方法draw()，至於怎麼畫的細節就由子類別去覆寫draw()方法。</p>
+
+<p>CreateShape只要呼叫Shape.draw()就好了，畫draw()這個「行為」是不會變的，至於怎麼畫怎麼變動的細節就是子類別處理。</p>
+
+<p><img src="/assets/img/pattern/open_close2.png" alt="img" /></p>
+
+<p>形狀類別程式碼</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Shape</span> <span class="o">{</span>
+  <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">draw</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Circle</span> <span class="kd">extends</span> <span class="nc">Shape</span> <span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kt">void</span> <span class="nf">draw</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"畫一個圓"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Rectangle</span> <span class="kd">extends</span> <span class="nc">Shape</span><span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kt">void</span> <span class="nf">draw</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"畫一個長方形"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Square</span> <span class="kd">extends</span> <span class="nc">Shape</span><span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kt">void</span> <span class="nf">draw</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"畫一個正方形"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>CreateShape</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CreateShape</span> <span class="o">{</span>
+  <span class="kt">void</span> <span class="nf">drawShap</span><span class="o">(</span><span class="nc">Shape</span> <span class="n">shape</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">shape</span><span class="o">.</span><span class="na">draw</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>Main主程式</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+  <span class="nc">CreateShape</span> <span class="n">createShape</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">CreateShape</span><span class="o">();</span>
+  <span class="n">createShape</span><span class="o">.</span><span class="na">drawShap</span><span class="o">(</span><span class="k">new</span> <span class="nc">Circle</span><span class="o">());</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>畫一個圓
+</code></pre></div></div>
+
+<h2 id="新增三角形">新增三角形</h2>
+<p>最後，再問同個問題，新增一個三角形Triangle，要改動那些程式碼？答案是，不用改！只要建立一個Triangle類別並繼承Shape，覆寫draw()方法，把怎麼畫三角形都細節全寫進去。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Triangle</span> <span class="kd">extends</span> <span class="nc">Shape</span><span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kt">void</span> <span class="nf">draw</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"畫一個三角形"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>Main主程式</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+  <span class="nc">CreateShape</span> <span class="n">createShape</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">CreateShape</span><span class="o">();</span>
+  <span class="n">createShape</span><span class="o">.</span><span class="na">drawShap</span><span class="o">(</span><span class="k">new</span> <span class="nc">Triangle</span><span class="o">());</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>畫一個三角形
+</code></pre></div></div>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+<!------上一頁與下一頁 start---------->
+                    
+                    
+                    
+                    
+    
+                    
+                        
+                        <a href="/pages/design_pattern/depend_inverse" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 依賴反轉原則">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        
+                        <a href="/pages/design_pattern/has_a" class="navigation navigation-next navigation-unique" aria-label="Next page: HAS-A比IS-A更好">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                    <!------上一頁與下一頁 end---------->
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "Singleton",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/design_pattern/singleton.md",
+            "ref": "_pages/design_pattern/singleton.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Cici's notebook",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_pages/design_pattern/open_close.md",
+        "mtime": "2025-04-23 00:00:00 +0800",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "",
+        "time": "2025-04-28 15:16:43 +0800"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
+
+<!-- 有extra_footer_js--><!-- 進入for--><script src="/assets/js/side_bar.js"></script></body>
+</html>

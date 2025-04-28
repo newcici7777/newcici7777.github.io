@@ -236,3 +236,55 @@ Duck 被classloader載入
 物件被jvm建立
 private getAddress() test
 ```
+
+## 使用public建構子與參數
+{% highlight java linenos %}
+import java.lang.reflect.Method;
+import java.util.Scanner;
+public class Test {
+  public static void main(String[] args) throws Exception {
+    Scanner  sc= new Scanner(System.in);
+    System.out.println("輸入package.類別");
+    String strName = sc.next();
+    System.out.println("請輸入一個數");
+    int a = sc.nextInt();
+    System.out.println("請輸入另一個數");
+    int b = sc.nextInt();
+    Class class1 = Class.forName(strName);
+    // 呼叫public建構子，建立物件
+    Object ins = class1.newInstance();
+    // 取出方法與設定參數類型
+    Method md = class1.getDeclaredMethod("sum", int.class, int.class);
+    // 呼叫方法，第1個參數是物件，a與b是方法參數
+    md.invoke(ins, a, b);
+  }
+}
+{% endhighlight %}
+
+編譯，並執行
+
+## 在另一個Project，跟上一個程式碼同一個package下寫以下程式碼，並編譯
+{% highlight java linenos %}
+public class Cal {
+  public void sum(int a, int b) {
+    System.out.println("result = ");
+    System.out.println(a + b);
+  }
+}
+{% endhighlight %}
+
+## 熱部署
+熱部署（英：Hot deployment）是，伺服器不需要重新啟動的情況下，修改軟體或者軟體。
+將上面的程式碼產生出來的class檔放在已經正在運行的class目錄下
+
+回到剛才執行"使用public建構子與參數"，輸入package name與類別
+```
+輸入package.類別
+reflect.Cal
+請輸入一個數
+5
+請輸入另一個數
+3
+result = 
+8
+```

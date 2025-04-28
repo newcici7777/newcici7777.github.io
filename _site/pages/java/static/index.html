@@ -1368,6 +1368,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/format/" data-nav-link> Java程式碼格式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/polymorphism/" data-nav-link> 多型</a>
         
             
@@ -1413,7 +1420,7 @@
     	<a href="/pages/java/static/" data-nav-link> Static</a>
         
             
-                <ul><li><a href="#靜態變數" data-nav-link " >靜態變數</a></li><li><a href="#靜態方法" data-nav-link " >靜態方法</a></li><li><a href="#靜態方法不能存取物件成員變數與成員方法" data-nav-link " >靜態方法不能存取物件成員變數與成員方法</a></li><li><a href="#靜態內部類別" data-nav-link " >靜態內部類別</a></li></ul>
+                <ul><li><a href="#靜態變數" data-nav-link " >靜態變數</a></li><li><a href="#靜態方法" data-nav-link " >靜態方法</a></li><li><a href="#靜態區塊" data-nav-link " >靜態區塊</a></li><li><a href="#靜態只產生一次" data-nav-link " >靜態只產生一次</a></li><li><a href="#static與jvm" data-nav-link " >static與jvm</a></li><li><a href="#靜態方法只能存取靜態變數靜態方法" data-nav-link " >靜態方法只能存取靜態變數、靜態方法</a></li><li><a href="#成員方法可以存取靜態變數靜態方法" data-nav-link " >成員方法可以存取靜態變數、靜態方法</a></li><li><a href="#main主程式也是靜態方法" data-nav-link " >main主程式也是靜態方法</a></li></ul>
 
             
         </li>
@@ -1427,7 +1434,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/extends_constructor/" data-nav-link> 子類別繼承父類別(沒有無參數建構子)</a>
+    	<a href="/pages/java/constructor/" data-nav-link> 建構子</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/reflect/" data-nav-link> 反射</a>
         
             
         </li>
@@ -1454,7 +1468,84 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/design_pattern/callback/" data-nav-link> Callback模式</a>
+    	<a href="/pages/design_pattern/depend_inverse/" data-nav-link> 依賴反轉原則</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/open_close/" data-nav-link> 開放關閉原則</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/has_a/" data-nav-link> HAS-A比IS-A更好</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/demeter/" data-nav-link> 最少知道原則</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/singleton/" data-nav-link> Singleton</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/simple_factory/" data-nav-link> Simple Factory</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/abstract_factory/" data-nav-link> 抽象工廠</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/segregation/" data-nav-link> 介面切割原則</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/interface_adapter/" data-nav-link> 介面轉接器</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/object_adapter/" data-nav-link> 物件轉接器</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/composite/" data-nav-link> 合成模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/iterator/" data-nav-link> Iterator</a>
         
             
         </li></ul></li></ul></li>
@@ -2033,13 +2124,7 @@
                         <h1 id="/pages/java/static">Static</h1>
                     
 
-                    <p>Prerequisites:</p>
-
-<ul>
-  <li><a href="/pages/c/dynamicMemory/memoryLayout/">記憶體配置</a></li>
-</ul>
-
-<h2 id="靜態變數">靜態變數</h2>
+                    <h2 id="靜態變數">靜態變數</h2>
 <p>在類別中，除了有成員變數之外，還有一個靜態變數。</p>
 
 <p>什麼是靜態變數？靜態變數可以當作共享資源，所有物件都可以共享這個資源。</p>
@@ -2048,35 +2133,316 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別名.靜態變數
 </code></pre></div></div>
 
-<h2 id="靜態方法">靜態方法</h2>
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="nc">String</span> <span class="n">static_name</span> <span class="o">=</span> <span class="s">"靜態變數"</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Test</span><span class="o">.</span><span class="na">static_name</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>靜態變數
+</code></pre></div></div>
+
+<h2 id="靜態方法">靜態方法</h2>
 <p>靜態方法使用方法有下列二種</p>
 
 <p>使用方法:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別名.靜態方法()
 </code></pre></div></div>
 
-<h2 id="靜態方法不能存取物件成員變數與成員方法">靜態方法不能存取物件成員變數與成員方法</h2>
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">staticMethod1</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"靜態方法"</span><span class="o">);</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Test</span><span class="o">.</span><span class="na">staticMethod1</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
-<ul>
-  <li><a href="/pages/c/class/static_class/">c++靜態類別變數與函式</a></li>
-</ul>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>靜態方法
+</code></pre></div></div>
+<h2 id="靜態區塊">靜態區塊</h2>
+<p>類別加載到jvm時，會呼叫靜態區塊，而建立物件時，會呼叫匿名區塊，然後才會呼叫建構子。</p>
 
-<p>靜態方法不能存取物件變數，只能存取靜態變數，因為類別在建立物件之前，物件的成員變數與成員方法都還沒有記憶體位址，但靜態變數與方法在程式碼(byte code)載入到code segment時，就已經在記憶體中bss segment或data segment建立靜態變數與靜態方法的記憶體位址。</p>
+<p>語法</p>
 
-<h2 id="靜態內部類別">靜態內部類別</h2>
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>  <span class="kd">static</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"靜態區塊"</span><span class="o">);</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p><a href="/pages/java/constructor/">建構子</a>的文章中，提到建立物件會先呼叫「匿名區塊」，才呼叫建構子。</p>
+
+<p>那如果加上靜態區塊？誰先執行？答案是靜態區塊先執行，然後才是匿名區塊，最後是建構子</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Outer</span> <span class="o">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">PublicStaticInner</span> <span class="o">{}</span>
-    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">PrivateStaticInner</span> <span class="o">{}</span>
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="c1">// 靜態區塊</span>
+  <span class="kd">static</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"靜態區塊"</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"匿名區塊"</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="nc">Test</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"建構子區塊"</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Test</span> <span class="n">test1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">();</span>
+  <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>靜態區塊
+匿名區塊
+建構子區塊
+</code></pre></div></div>
+
+<h2 id="靜態只產生一次">靜態只產生一次</h2>
+<p>把前一個程式碼的main主程式改成下方，會發現靜態區塊只產生一次。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Test</span> <span class="n">test1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">();</span>
+    <span class="nc">Test</span> <span class="n">test2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">();</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>靜態區塊
+匿名區塊
+建構子區塊
+匿名區塊
+建構子區塊
+</code></pre></div></div>
+
+<p>由以上結果可知，執行2次new建立物件，但「靜態區塊」只會產生一次，不管建立多少次物件，靜態變數、靜態方法、靜態區塊，只會產生一次。</p>
+
+<h2 id="static與jvm">static與jvm</h2>
+<p>static方法、static變數、static靜態內部類別，是在JVM啟動時，ClassLoader類別載入器就已經先丟進Method area(Metaspace)的靜態資料區中，若靜態變數的類型是物件(如String)，就會把「靜態變數」放在jvm的stack中，而變數指向的「物件」則放入jvm的heap(堆)的區域中。</p>
+
+<h2 id="靜態方法只能存取靜態變數靜態方法">靜態方法只能存取靜態變數、靜態方法</h2>
+<p>靜態方法沒辦法存取成員變數與成員方法</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">StaticExample</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="nc">String</span> <span class="n">static_name</span> <span class="o">=</span> <span class="s">"static_name"</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"name"</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">staticMethod1</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"呼叫靜態方法:"</span><span class="o">);</span>
+    <span class="n">staticMethod2</span><span class="o">();</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"印出靜態變數:"</span> <span class="o">+</span> <span class="n">static_name</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">staticMethod2</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"呼叫 staticMethod2()"</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">StaticExample</span><span class="o">.</span><span class="na">staticMethod1</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>呼叫靜態方法:
+呼叫 staticMethod2()
+印出靜態變數:static_name
+</code></pre></div></div>
+
+<h2 id="成員方法可以存取靜態變數靜態方法">成員方法可以存取靜態變數、靜態方法</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">StaticExample</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="nc">String</span> <span class="n">static_name</span> <span class="o">=</span> <span class="s">"static_name"</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"name"</span><span class="o">;</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">staticMethod1</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"呼叫靜態方法:"</span><span class="o">);</span>
+    <span class="n">staticMethod2</span><span class="o">();</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"印出靜態變數:"</span> <span class="o">+</span> <span class="n">static_name</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">staticMethod2</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"呼叫 staticMethod2()"</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method1</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"印出成員變數:"</span> <span class="o">+</span> <span class="n">name</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"呼叫靜態方法:"</span><span class="o">);</span>
+    <span class="n">staticMethod2</span><span class="o">();</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"印出靜態變數:"</span> <span class="o">+</span> <span class="n">static_name</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">StaticExample</span> <span class="n">example</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StaticExample</span><span class="o">();</span>
+    <span class="n">example</span><span class="o">.</span><span class="na">method1</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>印出成員變數:name
+呼叫靜態方法:
+呼叫 staticMethod2()
+印出靜態變數:static_name
+</code></pre></div></div>
+
+<h2 id="main主程式也是靜態方法">main主程式也是靜態方法</h2>
+<p>main主程式也是靜態方法，可以直接存取類別的靜態方法。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">StaticExample</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="nc">String</span> <span class="n">static_name</span> <span class="o">=</span> <span class="s">"static_name"</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"name"</span><span class="o">;</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">staticMethod1</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"呼叫靜態方法:"</span><span class="o">);</span>
+    <span class="n">staticMethod2</span><span class="o">();</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"印出靜態變數:"</span> <span class="o">+</span> <span class="n">static_name</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">staticMethod2</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"呼叫 staticMethod2()"</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method1</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"印出成員變數:"</span> <span class="o">+</span> <span class="n">name</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"呼叫靜態方法:"</span><span class="o">);</span>
+    <span class="n">staticMethod2</span><span class="o">();</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"印出靜態變數:"</span> <span class="o">+</span> <span class="n">static_name</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">staticMethod1</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>呼叫靜態方法:
+呼叫 staticMethod2()
+印出靜態變數:static_name
+</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -2268,7 +2634,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-04-22 14:21:32 +0800"
+        "time": "2025-04-28 15:16:43 +0800"
     },
     "basePath": "",
     "book": {
