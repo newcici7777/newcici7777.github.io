@@ -1535,7 +1535,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/design_pattern/composite/" data-nav-link> 合成模式</a>
+    	<a href="/pages/design_pattern/composite/" data-nav-link> 合成模式(樹狀結構)</a>
         
             
         </li>
@@ -1545,8 +1545,29 @@
     	<a href="/pages/design_pattern/iterator/" data-nav-link> Iterator</a>
         
             
-                
+                <ul><li><a href="#aggregate" data-nav-link " >Aggregate</a></li><li><a href="#iterator" data-nav-link " >Iterator</a></li><li><a href="#陣列集合與iterator" data-nav-link " >陣列集合與Iterator</a></li><li><a href="#list集合與iterator" data-nav-link " >List集合與Iterator</a></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/decorator/" data-nav-link> 裝飾者模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/observer/" data-nav-link> 觀察者模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/strategy/" data-nav-link> 策略模式</a>
+        
             
         </li></ul></li></ul></li>
 	
@@ -2124,7 +2145,416 @@
                         <h1 id="/pages/design_pattern/iterator">Iterator</h1>
                     
 
-                    
+                    <p>以下的類別圖分二類，左邊是集合Aggregate，右邊是Iterator疊代器。</p>
+
+<p><img src="/assets/img/pattern/iter1.png" alt="img" /></p>
+
+<h2 id="aggregate">Aggregate</h2>
+<p>Aggregate介面有createIterator()方法必須實作。</p>
+
+<p>實作Aggregate類別，成員屬性有elements，可以是陣列、List、任何集合類別。</p>
+
+<p>createIterator()取得跟elements類別相關的Iterator，比如elements是陣列，就要取得陣列的Iterator，elements是List，就要取得List的Iterator，elements是Map，就要取得Map的Iterator。</p>
+
+<p>以上提到的Iterator自己要實作。</p>
+
+<h2 id="iterator">Iterator</h2>
+<p>Iterator介面有hasNext()、next()、remove()三個方法要實作。</p>
+
+<p>hasNext(): 有沒有下一個元素(element)？傳回值型態為boolean</p>
+
+<p>next(): 傳回下一個元素(element)。</p>
+
+<p>remove(): 刪除元素</p>
+
+<p>Iterator使用系統就有的，不另外自己寫。</p>
+
+<p>實作Iterator類別，這個要自己實作。</p>
+
+<h2 id="陣列集合與iterator">陣列集合與Iterator</h2>
+
+<p>下圖中，實作Aggregate類別的elements的類型已換成陣列。</p>
+
+<p><img src="/assets/img/pattern/iter2.png" alt="img" /></p>
+
+<p>寫一個電腦課程的集合與iterator</p>
+
+<p>課程Course</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Course</span> <span class="o">{</span>
+  <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+
+  <span class="kd">public</span> <span class="nf">Course</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>Component介面</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Component</span> <span class="o">{</span>
+  <span class="nc">Iterator</span> <span class="nf">createIterator</span><span class="o">();</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>電腦課程集合<br />
+要實作createIterator()方法，並把elements傳給iterator</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ComputerCourse</span> <span class="kd">implements</span> <span class="nc">Component</span><span class="o">{</span>
+  <span class="c1">// 陣列元素</span>
+  <span class="kd">private</span> <span class="nc">Course</span><span class="o">[]</span> <span class="n">elements</span><span class="o">;</span>
+  <span class="c1">// index索引</span>
+  <span class="kd">private</span> <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+  <span class="kd">public</span> <span class="nf">ComputerCourse</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 最多就10堂課</span>
+    <span class="n">elements</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Course</span><span class="o">[</span><span class="mi">10</span><span class="o">];</span>
+  <span class="o">}</span>
+
+  <span class="c1">//增加課程</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addCourse</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 最多就10堂課</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">)</span> <span class="o">{</span>
+      <span class="nc">Course</span> <span class="n">course</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Course</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+      <span class="n">elements</span><span class="o">[</span><span class="n">index</span><span class="o">]</span> <span class="o">=</span> <span class="n">course</span><span class="o">;</span>
+      <span class="n">index</span><span class="o">++;</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+
+  <span class="c1">// 覆寫取得Iterator</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="nc">Iterator</span> <span class="nf">createIterator</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 要把elements傳入</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="nf">ComputerCourseIter</span><span class="o">(</span><span class="n">elements</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>實作陣列的Iterator</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ComputerCourseIter</span> <span class="kd">implements</span> <span class="nc">Iterator</span> <span class="o">{</span>
+  <span class="nc">Course</span><span class="o">[]</span> <span class="n">elements</span><span class="o">;</span>
+  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+  <span class="kd">public</span> <span class="nf">ComputerCourseIter</span><span class="o">(</span><span class="nc">Course</span><span class="o">[]</span> <span class="n">elements</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">elements</span> <span class="o">=</span> <span class="n">elements</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">hasNext</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">index</span> <span class="o">&gt;=</span> <span class="n">elements</span><span class="o">.</span><span class="na">length</span> <span class="o">||</span> <span class="n">elements</span><span class="o">[</span><span class="n">index</span><span class="o">]</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="nc">Object</span> <span class="nf">next</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">Course</span> <span class="n">rtnObj</span> <span class="o">=</span> <span class="n">elements</span><span class="o">[</span><span class="n">index</span><span class="o">];</span>
+    <span class="n">index</span><span class="o">++;</span>
+    <span class="k">return</span> <span class="n">rtnObj</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">remove</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 目前沒此需求，先不寫</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>main主程式</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">ComputerCourse</span> <span class="n">computerCourse</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ComputerCourse</span><span class="o">();</span>
+    <span class="n">computerCourse</span><span class="o">.</span><span class="na">addCourse</span><span class="o">(</span><span class="s">"C++"</span><span class="o">);</span>
+    <span class="n">computerCourse</span><span class="o">.</span><span class="na">addCourse</span><span class="o">(</span><span class="s">"Java"</span><span class="o">);</span>
+    <span class="n">computerCourse</span><span class="o">.</span><span class="na">addCourse</span><span class="o">(</span><span class="s">"Android"</span><span class="o">);</span>
+    <span class="n">computerCourse</span><span class="o">.</span><span class="na">addCourse</span><span class="o">(</span><span class="s">"Swift"</span><span class="o">);</span>
+
+    <span class="nc">Iterator</span> <span class="n">iter</span> <span class="o">=</span> <span class="n">computerCourse</span><span class="o">.</span><span class="na">createIterator</span><span class="o">();</span>
+    <span class="k">while</span><span class="o">(</span><span class="n">iter</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span>
+      <span class="nc">Course</span> <span class="n">course</span> <span class="o">=</span> <span class="o">(</span><span class="nc">Course</span><span class="o">)</span> <span class="n">iter</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">course</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C++
+Java
+Android
+Swift
+</code></pre></div></div>
+
+<h2 id="list集合與iterator">List集合與Iterator</h2>
+<p>實作elements為List的集合與Iterator。</p>
+
+<p>寫一個英語課程。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">EnglishCourse</span> <span class="kd">implements</span> <span class="nc">Component</span><span class="o">{</span>
+  <span class="kd">private</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Course</span><span class="o">&gt;</span> <span class="n">elements</span><span class="o">;</span>
+
+  <span class="kd">public</span> <span class="nf">EnglishCourse</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">elements</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addCourse</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Course</span> <span class="n">course</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Course</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+    <span class="n">elements</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">course</span><span class="o">);</span>
+  <span class="o">}</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="nc">Iterator</span> <span class="nf">createIterator</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="nf">EnglishCourseIter</span><span class="o">(</span><span class="n">elements</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>實作Iterator</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">EnglishCourseIter</span> <span class="kd">implements</span> <span class="nc">Iterator</span> <span class="o">{</span>
+  <span class="kd">private</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Course</span><span class="o">&gt;</span> <span class="n">elements</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="nf">EnglishCourseIter</span><span class="o">(</span><span class="nc">List</span><span class="o">&lt;</span><span class="nc">Course</span><span class="o">&gt;</span> <span class="n">elements</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">elements</span> <span class="o">=</span> <span class="n">elements</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">hasNext</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">index</span> <span class="o">&gt;=</span> <span class="n">elements</span><span class="o">.</span><span class="na">size</span><span class="o">()){</span>
+      <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="nc">Object</span> <span class="nf">next</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">Course</span> <span class="n">rtnObj</span> <span class="o">=</span> <span class="n">elements</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">index</span><span class="o">);</span>
+    <span class="n">index</span><span class="o">++;</span>
+    <span class="k">return</span> <span class="n">rtnObj</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">remove</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 目前沒此需求，先不寫</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>main主程式</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">EnglishCourse</span> <span class="n">englishCourse</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">EnglishCourse</span><span class="o">();</span>
+    <span class="n">englishCourse</span><span class="o">.</span><span class="na">addCourse</span><span class="o">(</span><span class="s">"自然發音"</span><span class="o">);</span>
+    <span class="n">englishCourse</span><span class="o">.</span><span class="na">addCourse</span><span class="o">(</span><span class="s">"文法"</span><span class="o">);</span>
+    <span class="n">englishCourse</span><span class="o">.</span><span class="na">addCourse</span><span class="o">(</span><span class="s">"會話"</span><span class="o">);</span>
+
+    <span class="nc">Iterator</span> <span class="n">iter</span> <span class="o">=</span> <span class="n">englishCourse</span><span class="o">.</span><span class="na">createIterator</span><span class="o">();</span>
+    <span class="k">while</span><span class="o">(</span><span class="n">iter</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span>
+      <span class="nc">Course</span> <span class="n">course</span> <span class="o">=</span> <span class="o">(</span><span class="nc">Course</span><span class="o">)</span> <span class="n">iter</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">course</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>自然發音
+文法
+會話
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2188,14 +2618,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/design_pattern/composite" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 合成模式">
+                        <a href="/pages/design_pattern/composite" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 合成模式(樹狀結構)">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/android/android_thread" class="navigation navigation-next navigation-unique" aria-label="Next page: Main Thread">
+                        <a href="/pages/design_pattern/decorator" class="navigation navigation-next navigation-unique" aria-label="Next page: 裝飾者模式">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2213,11 +2643,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "物件轉接器",
+            "title": "觀察者模式",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/design_pattern/object_adapter.md",
-            "ref": "_pages/design_pattern/object_adapter.md",
+            "path": "_pages/design_pattern/observer.md",
+            "ref": "_pages/design_pattern/observer.md",
             "articles": []
         },
         
@@ -2310,12 +2740,12 @@ window.MathJax = {
     },
     "file": {
         "path": "_pages/design_pattern/iterator.md",
-        "mtime": "2025-04-28 00:00:00 +0800",
+        "mtime": "2025-04-29 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2025-04-28 15:16:43 +0800"
+        "time": "2025-04-29 15:18:06 +0800"
     },
     "basePath": "",
     "book": {

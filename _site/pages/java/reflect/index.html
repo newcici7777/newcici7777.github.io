@@ -1538,7 +1538,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/design_pattern/composite/" data-nav-link> 合成模式</a>
+    	<a href="/pages/design_pattern/composite/" data-nav-link> 合成模式(樹狀結構)</a>
         
             
         </li>
@@ -1546,6 +1546,27 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/design_pattern/iterator/" data-nav-link> Iterator</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/decorator/" data-nav-link> 裝飾者模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/observer/" data-nav-link> 觀察者模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/strategy/" data-nav-link> 策略模式</a>
         
             
         </li></ul></li></ul></li>
@@ -2314,10 +2335,6 @@ class reflect.Duck
 7
 8
 9
-10
-11
-12
-13
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Exception</span> <span class="o">{</span>
     <span class="nc">Class</span> <span class="n">class1</span> <span class="o">=</span> <span class="nc">Duck</span><span class="o">.</span><span class="na">class</span><span class="o">;</span>
@@ -2327,12 +2344,12 @@ class reflect.Duck
     <span class="o">}</span>
   <span class="o">}</span>
 <span class="o">}</span>
-<span class="err">```</span>
-<span class="kd">interface</span> <span class="nc">reflect</span><span class="o">.</span><span class="na">Fly</span>
-<span class="kd">interface</span> <span class="nc">reflect</span><span class="o">.</span><span class="na">Swim</span>
-<span class="err">```</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>interface reflect.Fly
+interface reflect.Swim
+</code></pre></div></div>
 
 <h2 id="取得public屬性">取得public屬性</h2>
 
@@ -2681,6 +2698,15 @@ window.MathJax = {
         "level": "1.1",
         "depth": 1,
         
+        "next": {
+            "title": "合成模式(樹狀結構)",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/design_pattern/composite.md",
+            "ref": "_pages/design_pattern/composite.md",
+            "articles": []
+        },
+        
         "dir": "ltr"
     },    "config": {
         "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
@@ -2775,7 +2801,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-04-28 15:16:43 +0800"
+        "time": "2025-04-29 15:18:06 +0800"
     },
     "basePath": "",
     "book": {

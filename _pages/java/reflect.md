@@ -121,11 +121,11 @@ public class Test {
     }
   }
 }
+{% endhighlight %}
 ```
 interface reflect.Fly
 interface reflect.Swim
 ```
-{% endhighlight %}
 
 ## 取得public屬性
 {% highlight java linenos %}

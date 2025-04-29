@@ -94,7 +94,7 @@ public class B {
 ## 聚合
 聚合的方式，使用成員屬性與setter方法
 
-下圖中，A類有一個B的屬性與setB()方法，空心菱形圖案代表聚合，把B聚合給A
+下圖中，A類有一個B的屬性與setB()方法，空心菱形圖案代表聚合，把B聚合給A，菱形放在目標對象，A是目標對象，B當作來源。
 
 ![img]({{site.imgurl}}/java/aggregation.png)
 
@@ -116,13 +116,25 @@ B類別與上述的一樣，不再另寫程式碼。
 建立A類別的時候，也把B類別new出來，並把B類別設給成員屬性。  
 A類別建構子中建立B類別，也是屬於組合的關係。
 
-下圖中，A類別有一個B的屬性，黑色實心菱形圖案代表組合，把B組合給A
+下圖中，A類別有一個B的屬性，黑色實心菱形圖案代表組合，把B組合給A，菱形放在目標對象，A是目標對象，B當作來源。
 ![img]({{site.imgurl}}/java/composite.png)
 
 A類別
 {% highlight java linenos %}
 public class A {
   B b = new B();
+}
+{% endhighlight %}
+
+若是用建構子，也屬於組合，A類別建立的時候，需要B類別，二者為生死相隨，不可分離，一起建立，一起被記憶體回收。
+
+A類別
+{% highlight java linenos %}
+public class A {
+  private B b;
+  public A(B b) {
+    this.b = b;
+  }
 }
 {% endhighlight %}
 
@@ -219,5 +231,13 @@ public class Circle extends Shape {
   }
 }
 {% endhighlight %}
+
+## 說明
+
+下圖有一個說明方框還有線，描述這個類別是做什麼的。
+
+![img]({{site.imgurl}}/java/comment.png)
+
+
 
 [1]: {% link _pages/java/amateras.md %}

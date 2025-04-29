@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>合成模式 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>合成模式(樹狀結構) </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="keywords" content="Java, Design patterns, Composite Pattern" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -1535,7 +1535,7 @@
 	
 	
 	<li class="active" data-nav-item>
-    	<a href="/pages/design_pattern/composite/" data-nav-link> 合成模式</a>
+    	<a href="/pages/design_pattern/composite/" data-nav-link> 合成模式(樹狀結構)</a>
         
             
                 
@@ -1546,6 +1546,27 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/design_pattern/iterator/" data-nav-link> Iterator</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/decorator/" data-nav-link> 裝飾者模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/observer/" data-nav-link> 觀察者模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/strategy/" data-nav-link> 策略模式</a>
         
             
         </li></ul></li></ul></li>
@@ -2108,7 +2129,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >合成模式</a>
+                            <a href="." >合成模式(樹狀結構)</a>
                         
                     </h1>
                 </div>
@@ -2121,11 +2142,263 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/design_pattern/composite">合成模式</h1>
+                        <h1 id="/pages/design_pattern/composite">合成模式(樹狀結構)</h1>
                     
 
                     <p>樹狀結構的物件。</p>
 
+<p><img src="/assets/img/pattern/composite.png" alt="img" /></p>
+
+<p>Componet為抽象類別，裡面有name的屬性，有add()、remove()，還有一個抽象方法print()，繼承的子類別一定要覆寫print()。</p>
+
+<p>Leaf為樹狀結構最尾端的節點，在他的下面不會再有任何節點，所以不允許使用add()與remove()的方法。</p>
+
+<p>Composite下面一定會有子節點，子節點可以是Composite也可以是Leaf，可以使用add()與remove()的方法增加子節點。</p>
+
+<p>接下來我們要寫一個學校的樹狀結構</p>
+
+<p>大學University -&gt; College學院 -&gt; Department系</p>
+
+<p>XX大學 -&gt; 電資學院 -&gt; 通訊系</p>
+
+<p>XX大學 -&gt; 商學院 -&gt; 會計系</p>
+
+<p><img src="/assets/img/pattern/composite2.png" alt="img" /></p>
+
+<p>Component</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Component</span> <span class="o">{</span>
+  <span class="kd">protected</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="nc">Component</span> <span class="n">component</span><span class="o">)</span> <span class="o">{}</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">remove</span><span class="o">(</span><span class="nc">Component</span> <span class="n">component</span><span class="o">)</span> <span class="o">{}</span>
+
+  <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">();</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>University</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">University</span> <span class="kd">extends</span> <span class="nc">Component</span><span class="o">{</span>
+  <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Component</span><span class="o">&gt;</span> <span class="n">componentList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+
+  <span class="kd">public</span> <span class="nf">University</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">();</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="nc">Component</span> <span class="n">component</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">componentList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">component</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">remove</span><span class="o">(</span><span class="nc">Component</span> <span class="n">component</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">componentList</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">component</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"===="</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">"========"</span><span class="o">);</span>
+    <span class="k">for</span> <span class="o">(</span><span class="nc">Component</span> <span class="n">element</span> <span class="o">:</span> <span class="n">componentList</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">element</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>College的程式碼與University一模一樣</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">College</span> <span class="kd">extends</span> <span class="nc">Component</span><span class="o">{</span>
+  <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Component</span><span class="o">&gt;</span> <span class="n">componentList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+
+  <span class="kd">public</span> <span class="nf">College</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">();</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="nc">Component</span> <span class="n">component</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">componentList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">component</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">remove</span><span class="o">(</span><span class="nc">Component</span> <span class="n">component</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">componentList</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">component</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"===="</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">"========"</span><span class="o">);</span>
+    <span class="k">for</span> <span class="o">(</span><span class="nc">Component</span> <span class="n">element</span> <span class="o">:</span> <span class="n">componentList</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">element</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>Department，葉子節點</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Department</span> <span class="kd">extends</span> <span class="nc">Component</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="nf">Department</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">();</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>main主程式</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Component</span> <span class="n">university</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">University</span><span class="o">(</span><span class="s">"XX大學"</span><span class="o">);</span>
+
+    <span class="nc">Component</span> <span class="n">eletricCollege</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">College</span><span class="o">(</span><span class="s">"電資學院"</span><span class="o">);</span>
+    <span class="nc">Department</span> <span class="n">edpt1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Department</span><span class="o">(</span><span class="s">"通訊系"</span><span class="o">);</span>
+    <span class="nc">Department</span> <span class="n">edpt2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Department</span><span class="o">(</span><span class="s">"資工系"</span><span class="o">);</span>
+    <span class="nc">Department</span> <span class="n">edpt3</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Department</span><span class="o">(</span><span class="s">"電機系"</span><span class="o">);</span>
+    <span class="n">eletricCollege</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">edpt1</span><span class="o">);</span>
+    <span class="n">eletricCollege</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">edpt2</span><span class="o">);</span>
+    <span class="n">eletricCollege</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">edpt3</span><span class="o">);</span>
+
+    <span class="nc">Component</span> <span class="n">businessCollege</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">College</span><span class="o">(</span><span class="s">"商學院"</span><span class="o">);</span>
+    <span class="nc">Department</span> <span class="n">bdpt1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Department</span><span class="o">(</span><span class="s">"通訊系"</span><span class="o">);</span>
+    <span class="nc">Department</span> <span class="n">bdpt2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Department</span><span class="o">(</span><span class="s">"資工系"</span><span class="o">);</span>
+    <span class="nc">Department</span> <span class="n">bdpt3</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Department</span><span class="o">(</span><span class="s">"電機系"</span><span class="o">);</span>
+    <span class="n">businessCollege</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">bdpt1</span><span class="o">);</span>
+    <span class="n">businessCollege</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">bdpt2</span><span class="o">);</span>
+    <span class="n">businessCollege</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">bdpt3</span><span class="o">);</span>
+
+    <span class="n">university</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">eletricCollege</span><span class="o">);</span>
+    <span class="n">university</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">businessCollege</span><span class="o">);</span>
+    <span class="n">university</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>====XX大學========
+====電資學院========
+通訊系
+資工系
+電機系
+====商學院========
+通訊系
+資工系
+電機系
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2214,11 +2487,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "介面轉接器",
+            "title": "裝飾者模式",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/design_pattern/interface_adapter.md",
-            "ref": "_pages/design_pattern/interface_adapter.md",
+            "path": "_pages/design_pattern/decorator.md",
+            "ref": "_pages/design_pattern/decorator.md",
             "articles": []
         },
         
@@ -2311,12 +2584,12 @@ window.MathJax = {
     },
     "file": {
         "path": "_pages/design_pattern/composite.md",
-        "mtime": "2025-04-28 00:00:00 +0800",
+        "mtime": "2025-04-29 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2025-04-28 15:16:43 +0800"
+        "time": "2025-04-29 15:18:06 +0800"
     },
     "basePath": "",
     "book": {
