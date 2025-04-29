@@ -2319,6 +2319,11 @@
 28
 29
 30
+31
+32
+33
+34
+35
 </pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="o">;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ComputerCourseIter</span> <span class="kd">implements</span> <span class="nc">Iterator</span> <span class="o">{</span>
@@ -2328,18 +2333,23 @@
   <span class="kd">public</span> <span class="nf">ComputerCourseIter</span><span class="o">(</span><span class="nc">Course</span><span class="o">[]</span> <span class="n">elements</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">this</span><span class="o">.</span><span class="na">elements</span> <span class="o">=</span> <span class="n">elements</span><span class="o">;</span>
   <span class="o">}</span>
-
+  
+  <span class="c1">// 判斷是否有下一個元素</span>
   <span class="nd">@Override</span>
   <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">hasNext</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// index 超出大小 或 值是null，因為我們有建立10個陣列大小，沒設課程都會是null</span>
     <span class="k">if</span> <span class="o">(</span><span class="n">index</span> <span class="o">&gt;=</span> <span class="n">elements</span><span class="o">.</span><span class="na">length</span> <span class="o">||</span> <span class="n">elements</span><span class="o">[</span><span class="n">index</span><span class="o">]</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
       <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
     <span class="o">}</span>
     <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
   <span class="o">}</span>
-
+  
+  <span class="c1">// 取出下一個元素</span>
   <span class="nd">@Override</span>
   <span class="kd">public</span> <span class="nc">Object</span> <span class="nf">next</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 傳回值</span>
     <span class="nc">Course</span> <span class="n">rtnObj</span> <span class="o">=</span> <span class="n">elements</span><span class="o">[</span><span class="n">index</span><span class="o">];</span>
+    <span class="c1">// index移到下一個元素的索引</span>
     <span class="n">index</span><span class="o">++;</span>
     <span class="k">return</span> <span class="n">rtnObj</span><span class="o">;</span>
   <span class="o">}</span>
@@ -2424,6 +2434,7 @@ Swift
 18
 19
 20
+21
 </pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
@@ -2439,6 +2450,7 @@ Swift
     <span class="nc">Course</span> <span class="n">course</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Course</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
     <span class="n">elements</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">course</span><span class="o">);</span>
   <span class="o">}</span>
+
   <span class="nd">@Override</span>
   <span class="kd">public</span> <span class="nc">Iterator</span> <span class="nf">createIterator</span><span class="o">()</span> <span class="o">{</span>
     <span class="k">return</span> <span class="k">new</span> <span class="nf">EnglishCourseIter</span><span class="o">(</span><span class="n">elements</span><span class="o">);</span>
@@ -2745,7 +2757,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-04-29 15:18:06 +0800"
+        "time": "2025-04-29 15:31:24 +0800"
     },
     "basePath": "",
     "book": {

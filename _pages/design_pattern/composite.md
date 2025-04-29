@@ -126,9 +126,9 @@ public class Test {
     eletricCollege.add(edpt3);
 
     Component businessCollege = new College("商學院");
-    Department bdpt1 = new Department("通訊系");
-    Department bdpt2 = new Department("資工系");
-    Department bdpt3 = new Department("電機系");
+    Department bdpt1 = new Department("會計系");
+    Department bdpt2 = new Department("國貿系");
+    Department bdpt3 = new Department("應用數學系");
     businessCollege.add(bdpt1);
     businessCollege.add(bdpt2);
     businessCollege.add(bdpt3);
@@ -146,7 +146,7 @@ public class Test {
 資工系
 電機系
 ====商學院========
-通訊系
-資工系
-電機系
+會計系
+國貿系
+應用數學系
 ```
