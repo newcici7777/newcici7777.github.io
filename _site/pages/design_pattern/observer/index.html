@@ -1559,7 +1559,7 @@
     	<a href="/pages/design_pattern/observer/" data-nav-link> 觀察者模式</a>
         
             
-                
+                <ul><li><a href="#需求" data-nav-link " >需求</a></li><li><a href="#類別圖" data-nav-link " >類別圖</a></li><li><a href="#subject主題" data-nav-link " >Subject主題</a></li><li><a href="#observer觀察者" data-nav-link " >Observer觀察者</a></li><li><a href="#weatherapi" data-nav-link " >WeatherAPI</a></li><li><a href="#googleline" data-nav-link " >Google,Line</a></li><li><a href="#main主程式" data-nav-link " >Main主程式</a></li></ul>
 
             
         </li>
@@ -1567,6 +1567,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/design_pattern/strategy/" data-nav-link> 策略模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/chain/" data-nav-link> 責任鏈</a>
         
             
         </li></ul></li></ul></li>
@@ -2145,7 +2152,228 @@
                         <h1 id="/pages/design_pattern/observer">觀察者模式</h1>
                     
 
-                    
+                    <h2 id="需求">需求</h2>
+<p>台灣氣象站提供一個天氣API，Line與Google會訂閱氣象站，一旦氣溫、溼度的資料更新，會通知有訂閱的網站更新氣象資料。</p>
+
+<h2 id="類別圖">類別圖</h2>
+<p><img src="/assets/img/pattern/observer.png" alt="img" /></p>
+
+<p>Subject主題介面，要實作的方法有register()、remove()、notifyObserver()。</p>
+
+<p>WeatherAPI實作Subject，成員屬性有observers，setData()為設定溫度與溼度的方法。</p>
+
+<p>Observer觀察者介面，要實作的方法update()</p>
+
+<p>Line與Google實作Observer。</p>
+
+<h2 id="subject主題">Subject主題</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Subject</span> <span class="o">{</span>
+  <span class="kt">void</span> <span class="nf">register</span><span class="o">(</span><span class="nc">Observer</span> <span class="n">o</span><span class="o">);</span>
+  <span class="kt">void</span> <span class="nf">remove</span><span class="o">(</span><span class="nc">Observer</span> <span class="n">o</span><span class="o">);</span>
+  <span class="kt">void</span> <span class="nf">notifyObserver</span><span class="o">();</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="observer觀察者">Observer觀察者</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Observer</span> <span class="o">{</span>
+  <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="kt">float</span> <span class="n">temperature</span><span class="o">,</span> <span class="kt">float</span> <span class="n">humidity</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="weatherapi">WeatherAPI</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">WeatherAPI</span> <span class="kd">implements</span> <span class="nc">Subject</span><span class="o">{</span>
+  <span class="c1">// 溫度</span>
+  <span class="kd">private</span> <span class="kt">float</span> <span class="n">temperature</span><span class="o">;</span>
+  <span class="c1">// 溼度</span>
+  <span class="kd">private</span> <span class="kt">float</span> <span class="n">humidity</span><span class="o">;</span>
+  <span class="c1">// 觀察者們</span>
+  <span class="kd">private</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Observer</span><span class="o">&gt;</span> <span class="n">observers</span><span class="o">;</span>
+
+  <span class="kd">public</span> <span class="nf">WeatherAPI</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">observers</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+  <span class="o">}</span>
+
+  <span class="c1">//註冊</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">register</span><span class="o">(</span><span class="nc">Observer</span> <span class="n">o</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">observers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">o</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="c1">// 刪除</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">remove</span><span class="o">(</span><span class="nc">Observer</span> <span class="n">o</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">observers</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">o</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="c1">//通知</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">notifyObserver</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">for</span> <span class="o">(</span><span class="nc">Observer</span> <span class="nl">o:</span> <span class="n">observers</span><span class="o">)</span> <span class="o">{</span>
+      <span class="c1">// 通知觀察者們更新氣象資訊</span>
+      <span class="n">o</span><span class="o">.</span><span class="na">update</span><span class="o">(</span><span class="n">getTemperature</span><span class="o">(),</span><span class="n">getHumidity</span><span class="o">());</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">float</span> <span class="nf">getTemperature</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">temperature</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">float</span> <span class="nf">getHumidity</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">humidity</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setData</span><span class="o">(</span><span class="kt">float</span> <span class="n">temperature</span><span class="o">,</span> <span class="kt">float</span> <span class="n">humidity</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">temperature</span> <span class="o">=</span> <span class="n">temperature</span><span class="o">;</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">humidity</span> <span class="o">=</span> <span class="n">humidity</span><span class="o">;</span>
+    <span class="c1">// 通知觀察者們</span>
+    <span class="n">notifyObserver</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="googleline">Google,Line</h2>
+<p>Google</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Google</span> <span class="kd">implements</span> <span class="nc">Observer</span><span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="kt">float</span> <span class="n">temperature</span><span class="o">,</span> <span class="kt">float</span> <span class="n">humidity</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"=====Google======="</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"temperature: "</span> <span class="o">+</span> <span class="n">temperature</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"humidity: "</span> <span class="o">+</span> <span class="n">humidity</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>Line</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Line</span> <span class="kd">implements</span> <span class="nc">Observer</span><span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="kt">float</span> <span class="n">temperature</span><span class="o">,</span> <span class="kt">float</span> <span class="n">humidity</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"=====Line======="</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"temperature: "</span> <span class="o">+</span> <span class="n">temperature</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"humidity: "</span> <span class="o">+</span> <span class="n">humidity</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="main主程式">Main主程式</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">WeatherAPI</span> <span class="n">weatherAPI</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">WeatherAPI</span><span class="o">();</span>
+    <span class="c1">// 註冊觀察者們</span>
+    <span class="n">weatherAPI</span><span class="o">.</span><span class="na">register</span><span class="o">(</span><span class="k">new</span> <span class="nc">Google</span><span class="o">());</span>
+    <span class="n">weatherAPI</span><span class="o">.</span><span class="na">register</span><span class="o">(</span><span class="k">new</span> <span class="nc">Line</span><span class="o">());</span>
+    <span class="c1">// 更新天氣</span>
+    <span class="n">weatherAPI</span><span class="o">.</span><span class="na">setData</span><span class="o">(</span><span class="mi">27</span><span class="n">f</span><span class="o">,</span> <span class="mi">68</span><span class="n">f</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=====Google=======
+temperature: 27.0
+humidity: 68.0
+=====Line=======
+temperature: 27.0
+humidity: 68.0
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2331,12 +2559,12 @@ window.MathJax = {
     },
     "file": {
         "path": "_pages/design_pattern/observer.md",
-        "mtime": "2025-04-29 00:00:00 +0800",
+        "mtime": "2025-04-30 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2025-04-29 15:31:24 +0800"
+        "time": "2025-04-30 13:22:08 +0800"
     },
     "basePath": "",
     "book": {

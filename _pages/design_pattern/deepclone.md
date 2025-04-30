@@ -31,17 +31,17 @@ public class Barbie implements Serializable {
   }
 
   public Barbie deepclone() {
-    //資料寫出至目的地，用輸出串流
+    //資料寫到至目的地，用輸出串流
     ByteArrayOutputStream bos = null;
     ObjectOutputStream oos = null;
     //資料從來源讀取，用輸入串流
     ObjectInputStream ois = null;
     ByteArrayInputStream bis = null;
     try {
-      //資料寫出目的地，用輸出串流
+      //資料寫到目的地，用輸出串流
       bos = new ByteArrayOutputStream();
       oos = new ObjectOutputStream(bos);
-      // 物件寫出至輸出串流
+      // 物件寫到輸出串流
       oos.writeObject(this);
       //寫出完成後，可用toByteArray()取得byte結果
       //資料從來源取出，用輸入串流

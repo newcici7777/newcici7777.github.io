@@ -171,6 +171,7 @@ public class Milk extends Decorator {
 2. 用配料的建構子，傳進飲料
 
 下圖中，包在最裡面的是飲料，其它都是配料。
+
 ![img]({{site.imgurl}}/pattern/decorator2.png)
 
 可以想像一下，每一個方框都是建構子，包在最裡面飲料，其它都是配料。
@@ -203,3 +204,20 @@ public class Test {
 珍珠=5 & 牛奶=10 & 牛奶=10 & 綠茶 = 40
 65
 ```
+
+## IO Stream
+以下的程式碼，不覺得跟上面的相同嗎？
+{% highlight java linenos %}
+  //資料寫到目的地，用輸出串流
+  ByteArrayOutputStream bos = new ByteArrayOutputStream();
+  ObjectOutputStream oos = new ObjectOutputStream(bos);
+  // 物件寫到輸出串流
+  oos.writeObject(this);
+{% endhighlight %}
+
+
+[1]: {% link _pages/java/uml.md %}
+
+
+
+

@@ -1552,7 +1552,7 @@
     	<a href="/pages/design_pattern/decorator/" data-nav-link> 裝飾者模式</a>
         
             
-                
+                <ul><li><a href="#需求" data-nav-link " >需求</a></li><li><a href="#類別圖解釋" data-nav-link " >類別圖解釋</a></li><li><a href="#component抽象類別" data-nav-link " >Component抽象類別</a></li><li><a href="#drink飲料" data-nav-link " >Drink飲料</a></li><li><a href="#decorator配料" data-nav-link " >Decorator配料</a></li><li><a href="#繼承drink類別" data-nav-link " >繼承Drink類別</a></li><li><a href="#繼承decorator配料" data-nav-link " >繼承Decorator配料</a></li><li><a href="#使用方法" data-nav-link " >使用方法</a></li><li><a href="#io-stream" data-nav-link " >IO Stream</a></li></ul>
 
             
         </li>
@@ -1567,6 +1567,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/design_pattern/strategy/" data-nav-link> 策略模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/chain/" data-nav-link> 責任鏈</a>
         
             
         </li></ul></li></ul></li>
@@ -2145,7 +2152,364 @@
                         <h1 id="/pages/design_pattern/decorator">裝飾者模式</h1>
                     
 
-                    
+                    <h2 id="需求">需求</h2>
+<p>開了一家飲料店，有綠茶、紅茶…各種茶。</p>
+
+<p>客人可以加錢加配料，比如加上珍珠、鮮奶、粉角、椰果、小芋圓，不同配料價錢不同。</p>
+
+<p>珍珠可以加2份或3份、其它配料也是，沒有限定只能加一次。</p>
+
+<p>設計一家飲料店，要求是不用修改程式，就可以添加新的茶飲與新的配料如仙草、米苔米，並計算添加配料後一杯飲料要多少錢。</p>
+
+<p>以下複雜的計算流程是不被允許，若有新的配料又要改判斷與價錢。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">cost</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="k">if</span> <span class="o">(</span><span class="n">有珍珠</span><span class="o">)</span>
+  <span class="n">cost</span> <span class="o">+=</span> <span class="mi">5</span><span class="o">;</span>
+<span class="k">if</span> <span class="o">(</span><span class="n">有粉角</span><span class="o">)</span>
+  <span class="n">cost</span> <span class="o">+=</span> <span class="mi">10</span><span class="o">;</span>
+<span class="k">if</span> <span class="o">(</span><span class="n">有鮮奶</span><span class="o">)</span>
+  <span class="n">cost</span> <span class="o">+=</span> <span class="mi">15</span><span class="o">;</span>
+<span class="o">.</span>
+<span class="o">.</span>
+<span class="o">.</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="類別圖解釋">類別圖解釋</h2>
+<p><img src="/assets/img/pattern/decorator1.png" alt="img" /></p>
+
+<p>飲料(Drink)與配料(Decorator)都繼承抽象類別Component，所以飲料與配料也是Component，飲料與配料都要覆寫cost()方法。</p>
+
+<p>注意！配料(Decorator)中有一個屬性是component，它可以是飲料Drink也可以是配料Decorator，所以才有二個黑色菱形都指向component屬性。</p>
+
+<p>黑色菱形為組合，會使用建構子，參數為飲料或配料，建構子傳遞參數就是組合，請見<a href="/pages/java/uml/">類別圖</a>。</p>
+
+<p>飲料Drink下面有綠茶、紅茶、咖啡。</p>
+
+<p>配料Decorator下面有牛奶、珍珠、果凍。</p>
+
+<h2 id="component抽象類別">Component抽象類別</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Component</span> <span class="o">{</span>
+  <span class="c1">// 價格</span>
+  <span class="kd">private</span> <span class="kt">int</span> <span class="n">price</span><span class="o">;</span>
+  <span class="c1">// 描述</span>
+  <span class="kd">private</span> <span class="nc">String</span> <span class="n">desc</span><span class="o">;</span>
+
+  <span class="c1">// 抽象方法</span>
+  <span class="kd">abstract</span> <span class="kt">int</span> <span class="nf">cost</span><span class="o">();</span>
+
+  <span class="c1">// 取得價格</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getPrice</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">price</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="c1">// 設定價格</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setPrice</span><span class="o">(</span><span class="kt">int</span> <span class="n">price</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">price</span> <span class="o">=</span> <span class="n">price</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getDesc</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">desc</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setDesc</span><span class="o">(</span><span class="nc">String</span> <span class="n">desc</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">desc</span> <span class="o">=</span> <span class="n">desc</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="drink飲料">Drink飲料</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Drink</span> <span class="kd">extends</span> <span class="nc">Component</span><span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kt">int</span> <span class="nf">cost</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 使用父類別的getPrice()方法</span>
+    <span class="k">return</span> <span class="kd">super</span><span class="o">.</span><span class="na">getPrice</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="decorator配料">Decorator配料</h2>
+<p>注意事項:</p>
+<ul>
+  <li>component 成員屬性(十分重要)</li>
+  <li>建立建構子，參數就是component</li>
+  <li>覆寫cost()方法，使用super.getPrice() + component.cost()，注意！是加component.cost()，不是component.getPrice()</li>
+  <li>覆寫desc()方法，注意！使用super.getDesc()，以免stack overflow，不能自己呼叫自己。</li>
+</ul>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Decorator</span> <span class="kd">extends</span> <span class="nc">Component</span><span class="o">{</span>
+  <span class="c1">// component可能是飲料或配料</span>
+  <span class="kd">private</span> <span class="nc">Component</span> <span class="n">component</span><span class="o">;</span>
+
+  <span class="c1">// component可能是飲料或配料</span>
+  <span class="kd">public</span> <span class="nf">Decorator</span><span class="o">(</span><span class="nc">Component</span> <span class="n">component</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">component</span> <span class="o">=</span> <span class="n">component</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kt">int</span> <span class="nf">cost</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 使用父類別的getPrice()方法</span>
+    <span class="c1">// 配料的價格 + component的「總費用」(Component可能是飲料或配料)</span>
+    <span class="k">return</span> <span class="kd">super</span><span class="o">.</span><span class="na">getPrice</span><span class="o">()</span> <span class="o">+</span> <span class="n">component</span><span class="o">.</span><span class="na">cost</span><span class="o">();</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getDesc</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 使用父類別的getDesc()方法，使用this.getDesc()會stack overflow，因為自己呼叫自己</span>
+    <span class="c1">// 印出配料的品項與配料的價格，componet的desc包含先前加上的配料品項與價格</span>
+    <span class="k">return</span> <span class="kd">super</span><span class="o">.</span><span class="na">getDesc</span><span class="o">()</span> <span class="o">+</span> <span class="s">"="</span> <span class="o">+</span> <span class="kd">super</span><span class="o">.</span><span class="na">getPrice</span><span class="o">()</span> <span class="o">+</span> <span class="s">" &amp; "</span> <span class="o">+</span> <span class="n">component</span><span class="o">.</span><span class="na">getDesc</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="繼承drink類別">繼承Drink類別</h2>
+<ul>
+  <li>設定價格</li>
+  <li>設定品項</li>
+</ul>
+
+<p>紅茶</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">BlackTea</span> <span class="kd">extends</span> <span class="nc">Drink</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="nf">BlackTea</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">setPrice</span><span class="o">(</span><span class="mi">35</span><span class="o">);</span>
+    <span class="n">setDesc</span><span class="o">(</span><span class="s">"紅茶 = "</span> <span class="o">+</span> <span class="n">getPrice</span><span class="o">());</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>綠茶</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">GreenTea</span> <span class="kd">extends</span> <span class="nc">Drink</span><span class="o">{</span>
+  <span class="kd">public</span> <span class="nf">GreenTea</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">setPrice</span><span class="o">(</span><span class="mi">40</span><span class="o">);</span>
+    <span class="n">setDesc</span><span class="o">(</span><span class="s">"綠茶 = "</span> <span class="o">+</span> <span class="n">getPrice</span><span class="o">());</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="繼承decorator配料">繼承Decorator配料</h2>
+<ul>
+  <li>設定價格</li>
+  <li>設定品項</li>
+</ul>
+
+<p>珍珠</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Bubble</span> <span class="kd">extends</span> <span class="nc">Decorator</span><span class="o">{</span>
+  <span class="kd">public</span> <span class="nf">Bubble</span><span class="o">(</span><span class="nc">Component</span> <span class="n">component</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 使用父類別Decorator建構子</span>
+    <span class="kd">super</span><span class="o">(</span><span class="n">component</span><span class="o">);</span>
+    <span class="n">setPrice</span><span class="o">(</span><span class="mi">5</span><span class="o">);</span>
+    <span class="n">setDesc</span><span class="o">(</span><span class="s">"珍珠"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>牛奶</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Milk</span> <span class="kd">extends</span> <span class="nc">Decorator</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="nf">Milk</span><span class="o">(</span><span class="nc">Component</span> <span class="n">component</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 使用父類別Decorator建構子</span>
+    <span class="kd">super</span><span class="o">(</span><span class="n">component</span><span class="o">);</span>
+    <span class="n">setPrice</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+    <span class="n">setDesc</span><span class="o">(</span><span class="s">"牛奶"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="使用方法">使用方法</h2>
+<ol>
+  <li>先建立飲料</li>
+  <li>用配料的建構子，傳進飲料</li>
+</ol>
+
+<p>下圖中，包在最裡面的是飲料，其它都是配料。</p>
+
+<p><img src="/assets/img/pattern/decorator2.png" alt="img" /></p>
+
+<p>可以想像一下，每一個方框都是建構子，包在最裡面飲料，其它都是配料。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="k">new</span> <span class="nc">Jelly</span><span class="o">(</span><span class="k">new</span> <span class="nc">Bubble</span><span class="o">(</span><span class="k">new</span> <span class="nc">Milk</span><span class="o">(</span><span class="k">new</span> <span class="nc">BlackTea</span><span class="o">())));</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>所以先前才會說Decorator的建構子參數component可能是飲料或配料。</p>
+
+<p>Main 主程式</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 建立綠茶</span>
+    <span class="nc">Component</span> <span class="n">greenTea</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">GreenTea</span><span class="o">();</span>
+    <span class="c1">// 加牛奶</span>
+    <span class="n">greenTea</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Milk</span><span class="o">(</span><span class="n">greenTea</span><span class="o">);</span>
+    <span class="c1">// 加第2份牛奶</span>
+    <span class="n">greenTea</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Milk</span><span class="o">(</span><span class="n">greenTea</span><span class="o">);</span>
+    <span class="c1">// 加珍珠</span>
+    <span class="n">greenTea</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Bubble</span><span class="o">(</span><span class="n">greenTea</span><span class="o">);</span>
+    <span class="c1">// 印出品項與價格</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">greenTea</span><span class="o">.</span><span class="na">getDesc</span><span class="o">());</span>
+    <span class="c1">// 印出全部花費</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">greenTea</span><span class="o">.</span><span class="na">cost</span><span class="o">());</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>珍珠=5 &amp; 牛奶=10 &amp; 牛奶=10 &amp; 綠茶 = 40
+65
+</code></pre></div></div>
+
+<h2 id="io-stream">IO Stream</h2>
+<p>以下的程式碼，不覺得跟上面的相同嗎？</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre>  <span class="c1">//資料寫到目的地，用輸出串流</span>
+  <span class="nc">ByteArrayOutputStream</span> <span class="n">bos</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayOutputStream</span><span class="o">();</span>
+  <span class="nc">ObjectOutputStream</span> <span class="n">oos</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ObjectOutputStream</span><span class="o">(</span><span class="n">bos</span><span class="o">);</span>
+  <span class="c1">// 物件寫到輸出串流</span>
+  <span class="n">oos</span><span class="o">.</span><span class="na">writeObject</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2336,7 +2700,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-04-29 15:31:24 +0800"
+        "time": "2025-04-30 13:22:08 +0800"
     },
     "basePath": "",
     "book": {

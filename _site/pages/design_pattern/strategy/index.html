@@ -1566,8 +1566,15 @@
     	<a href="/pages/design_pattern/strategy/" data-nav-link> 策略模式</a>
         
             
-                
+                <ul><li><a href="#flybehavior介面" data-nav-link " >FlyBehavior介面</a></li><li><a href="#flywellnotflyflybadly" data-nav-link " >FlyWell,NotFly,FlyBadly</a></li><li><a href="#bird抽象類別" data-nav-link " >Bird抽象類別</a></li><li><a href="#chickensparrowduck" data-nav-link " >Chicken,Sparrow,Duck</a></li><li><a href="#main主程式" data-nav-link " >main主程式</a></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/chain/" data-nav-link> 責任鏈</a>
+        
             
         </li></ul></li></ul></li>
 	
@@ -2145,7 +2152,260 @@
                         <h1 id="/pages/design_pattern/strategy">策略模式</h1>
                     
 
-                    
+                    <p>建一個鳥的類別，然後要定義飛這個行為。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Bird</span> <span class="o">{</span>
+  <span class="kt">void</span> <span class="nf">fly</span><span class="o">();</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>但所有的鳥類都會飛嗎？公雞就不會飛、駝鳥也不會飛，鴨子會飛一些，所以要把會飛這個行為變成一種策略，有些鳥類飛的很好，有些會飛一些，有些不會飛。</p>
+
+<ol>
+  <li>建立FlyBehavior介面。</li>
+  <li>實作flyBehavior，建立「會飛」、「飛很差」、「不會飛」三種飛的行為。</li>
+  <li>鳥的類別把flyBehavior作為成員變數。</li>
+  <li>鳥的「子」類別去設定飛的行為。</li>
+</ol>
+
+<p><img src="/assets/img/pattern/strategy1.png" alt="img" /></p>
+
+<p>FlyBehavior飛的行為，有fly()方法</p>
+
+<p>FlyWell、NotFly、FlyBadly實作FlyBehavior介面</p>
+
+<p>Bird為抽象類別有flyBehavior成員變數與fly()方法</p>
+
+<p>Chicken、Sparrow麻雀、Douck為Bird的子類。</p>
+
+<h2 id="flybehavior介面">FlyBehavior介面</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">FlyBehavior</span> <span class="o">{</span>
+  <span class="c1">// 抽象方法</span>
+  <span class="kt">void</span> <span class="nf">fly</span><span class="o">();</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="flywellnotflyflybadly">FlyWell,NotFly,FlyBadly</h2>
+<p>實作FlyBehavior，都要覆寫抽象方法fly()</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">FlyWell</span> <span class="kd">implements</span> <span class="nc">FlyBehavior</span> <span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Fly very well"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">NotFly</span> <span class="kd">implements</span> <span class="nc">FlyBehavior</span> <span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Can not fly."</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">FlyBadly</span> <span class="kd">implements</span> <span class="nc">FlyBehavior</span> <span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Fly very Badly."</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="bird抽象類別">Bird抽象類別</h2>
+<p>flyBehavior設為成員屬性</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Bird</span> <span class="o">{</span>
+  <span class="c1">// 成員屬性</span>
+  <span class="kd">protected</span> <span class="nc">FlyBehavior</span> <span class="n">flyBehavior</span><span class="o">;</span>
+  
+  <span class="c1">// 聲音</span>
+  <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">sound</span><span class="o">();</span>
+  
+  <span class="c1">// 飛的方法</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 如果有飛的行為，就用</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">flyBehavior</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+      <span class="n">flyBehavior</span><span class="o">.</span><span class="na">fly</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="chickensparrowduck">Chicken,Sparrow,Duck</h2>
+<p>子類別使用建構子設定飛的行為</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Chicken</span> <span class="kd">extends</span> <span class="nc">Bird</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="nf">Chicken</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 建構子設定飛的行為</span>
+    <span class="n">flyBehavior</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">NotFly</span><span class="o">();</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sound</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"咕咕咕"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Sparrow</span> <span class="kd">extends</span> <span class="nc">Bird</span><span class="o">{</span>
+  <span class="kd">public</span> <span class="nf">Sparrow</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 建構子設定飛的行為</span>
+    <span class="n">flyBehavior</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FlyWell</span><span class="o">();</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sound</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"吱吱"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Duck</span> <span class="kd">extends</span> <span class="nc">Bird</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="nf">Duck</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 建構子設定飛的行為</span>
+    <span class="n">flyBehavior</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FlyBadly</span><span class="o">();</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sound</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"嘎嘎"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="main主程式">main主程式</h2>
+<p>可以動態修改飛的行為</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Chicken</span> <span class="n">chicken</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Chicken</span><span class="o">();</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"=== chicken ==="</span><span class="o">);</span>
+    <span class="n">chicken</span><span class="o">.</span><span class="na">fly</span><span class="o">();</span>
+    <span class="nc">Sparrow</span> <span class="n">sparrow</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Sparrow</span><span class="o">();</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"=== Sparrow ==="</span><span class="o">);</span>
+    <span class="n">sparrow</span><span class="o">.</span><span class="na">fly</span><span class="o">();</span>
+    <span class="nc">Duck</span> <span class="n">duck</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Duck</span><span class="o">();</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"=== duck ==="</span><span class="o">);</span>
+    <span class="n">duck</span><span class="o">.</span><span class="na">fly</span><span class="o">();</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"=== setting duck again ==="</span><span class="o">);</span>
+    <span class="c1">// 動態修改飛的行為</span>
+    <span class="n">duck</span><span class="o">.</span><span class="na">flyBehavior</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FlyWell</span><span class="o">();</span>
+    <span class="n">duck</span><span class="o">.</span><span class="na">fly</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=== chicken ===
+Can not fly.
+=== Sparrow ===
+Fly very well
+=== duck ===
+Fly very Badly.
+=== setting duck again ===
+Fly very well
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2216,7 +2476,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/android/android_thread" class="navigation navigation-next navigation-unique" aria-label="Next page: Main Thread">
+                        <a href="/pages/design_pattern/chain" class="navigation navigation-next navigation-unique" aria-label="Next page: 責任鏈">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2322,12 +2582,12 @@ window.MathJax = {
     },
     "file": {
         "path": "_pages/design_pattern/strategy.md",
-        "mtime": "2025-04-29 00:00:00 +0800",
+        "mtime": "2025-04-30 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2025-04-29 15:31:24 +0800"
+        "time": "2025-04-30 13:22:08 +0800"
     },
     "basePath": "",
     "book": {
