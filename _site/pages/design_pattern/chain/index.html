@@ -1573,7 +1573,7 @@
     	<a href="/pages/design_pattern/chain/" data-nav-link> 責任鏈</a>
         
             
-                
+                <ul><li><a href="#需求" data-nav-link " >需求</a></li><li><a href="#類別圖" data-nav-link " >類別圖</a></li><li><a href="#request需求" data-nav-link " >Request需求</a></li><li><a href="#approver" data-nav-link " >Approver</a></li><li><a href="#approver子類別" data-nav-link " >Approver子類別</a></li><li><a href="#main主程式" data-nav-link " >main主程式</a></li></ul>
 
             
         </li></ul></li></ul></li>
@@ -2152,7 +2152,295 @@
                         <h1 id="/pages/design_pattern/chain">責任鏈</h1>
                     
 
-                    
+                    <h2 id="需求">需求</h2>
+<p>想像一下你是公務員，有很多承包商的報價需求，需要長官審核，長官有下列幾位</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>職等</td>
+      <td>審核金額</td>
+    </tr>
+    <tr>
+      <td>主管</td>
+      <td>0 - 49999</td>
+    </tr>
+    <tr>
+      <td>會計</td>
+      <td>50000 - 99999</td>
+    </tr>
+    <tr>
+      <td>老闆</td>
+      <td>10000以上</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>主管會處理0 - 49999元，金額超過這個範圍，給會計處理。</p>
+
+<p>會計處理5萬以上，10萬以下，金額超過這個範圍，給老闆處理。</p>
+
+<p>老闆只處理10萬元以上，10萬元以下，老闆不處理，給主管處理。</p>
+
+<p>有看出這個環狀結果嗎，主管-&gt;會計-&gt;老闆-&gt;主管。</p>
+
+<h2 id="類別圖">類別圖</h2>
+<p><img src="/assets/img/pattern/chain1.png" alt="img" /></p>
+
+<p>Request是報價需求，有編號與價錢二個成員屬性。</p>
+
+<p>Approver是抽象類別，中文意思是簽呈者，成員屬性有nextApprover設定下一個處理的人，process()是抽象方法，繼承的子類別一定要覆寫。</p>
+
+<p>Approver子類別如下ManagerApprover, AccountApprover, BossApprover，分別是主管簽呈、會計簽呈、老闆簽呈。</p>
+
+<h2 id="request需求">Request需求</h2>
+<p>有編號與價錢二個成員屬性。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Request</span> <span class="o">{</span>
+  <span class="kd">private</span> <span class="kt">int</span> <span class="n">id</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="kt">int</span> <span class="n">price</span><span class="o">;</span>
+
+  <span class="kd">public</span> <span class="nf">Request</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">,</span> <span class="kt">int</span> <span class="n">price</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">id</span> <span class="o">=</span> <span class="n">id</span><span class="o">;</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">price</span> <span class="o">=</span> <span class="n">price</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getId</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">id</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getPrice</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">price</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="approver">Approver</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Approver</span> <span class="o">{</span>
+  <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+  <span class="c1">// nextApprover設定下一個處理的人</span>
+  <span class="kd">protected</span> <span class="nc">Approver</span> <span class="n">nextApprover</span><span class="o">;</span>
+
+  <span class="c1">// 設定簽呈人的名字</span>
+  <span class="kd">public</span> <span class="nf">Approver</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="c1">// 抽象方法，子類別一定要實作，處理需求</span>
+  <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">process</span><span class="o">(</span><span class="nc">Request</span> <span class="n">request</span><span class="o">);</span>
+
+  <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+  <span class="o">}</span>
+  
+  <span class="c1">// 設定下一個處理的人</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setNextApprover</span><span class="o">(</span><span class="nc">Approver</span> <span class="n">nextApprover</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">nextApprover</span> <span class="o">=</span> <span class="n">nextApprover</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="approver子類別">Approver子類別</h2>
+<p>子類別都要覆寫process()抽象方法</p>
+
+<p>主管</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ManagerApprover</span> <span class="kd">extends</span> <span class="nc">Approver</span><span class="o">{</span>
+  <span class="kd">public</span> <span class="nf">ManagerApprover</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">process</span><span class="o">(</span><span class="nc">Request</span> <span class="n">request</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 處理金額範圍</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">request</span><span class="o">.</span><span class="na">getPrice</span><span class="o">()</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">request</span><span class="o">.</span><span class="na">getPrice</span><span class="o">()</span> <span class="o">&lt;=</span> <span class="mi">49999</span><span class="o">)</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"需求編號 ="</span> <span class="o">+</span> <span class="n">request</span><span class="o">.</span><span class="na">getId</span><span class="o">()</span> <span class="o">+</span><span class="s">"被"</span> <span class="o">+</span> <span class="n">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">"處理"</span><span class="o">);</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+      <span class="n">nextApprover</span><span class="o">.</span><span class="na">process</span><span class="o">(</span><span class="n">request</span><span class="o">);</span> <span class="c1">// 給下一個人處理</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>會計</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">AccountApprover</span> <span class="kd">extends</span> <span class="nc">Approver</span><span class="o">{</span>
+  <span class="kd">public</span> <span class="nf">AccountApprover</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">process</span><span class="o">(</span><span class="nc">Request</span> <span class="n">request</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 處理金額範圍</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">request</span><span class="o">.</span><span class="na">getPrice</span><span class="o">()</span> <span class="o">&gt;=</span> <span class="mi">50000</span> <span class="o">&amp;&amp;</span> <span class="n">request</span><span class="o">.</span><span class="na">getPrice</span><span class="o">()</span> <span class="o">&lt;=</span> <span class="mi">99999</span><span class="o">)</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"需求編號 ="</span> <span class="o">+</span> <span class="n">request</span><span class="o">.</span><span class="na">getId</span><span class="o">()</span> <span class="o">+</span><span class="s">"被"</span> <span class="o">+</span> <span class="n">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">"處理"</span><span class="o">);</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+      <span class="n">nextApprover</span><span class="o">.</span><span class="na">process</span><span class="o">(</span><span class="n">request</span><span class="o">);</span> <span class="c1">// 給下一個人處理</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>老闆</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">BossApprover</span> <span class="kd">extends</span> <span class="nc">Approver</span><span class="o">{</span>
+  <span class="kd">public</span> <span class="nf">BossApprover</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">process</span><span class="o">(</span><span class="nc">Request</span> <span class="n">request</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 處理金額範圍</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">request</span><span class="o">.</span><span class="na">getPrice</span><span class="o">()</span> <span class="o">&gt;=</span> <span class="mi">100000</span><span class="o">)</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"需求編號 ="</span> <span class="o">+</span> <span class="n">request</span><span class="o">.</span><span class="na">getId</span><span class="o">()</span> <span class="o">+</span><span class="s">"被"</span> <span class="o">+</span> <span class="n">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">"處理"</span><span class="o">);</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+      <span class="n">nextApprover</span><span class="o">.</span><span class="na">process</span><span class="o">(</span><span class="n">request</span><span class="o">);</span> <span class="c1">// 給下一個人處理</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="main主程式">main主程式</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Request</span> <span class="n">request1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Request</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">200000</span><span class="o">);</span>
+    <span class="nc">Request</span> <span class="n">request2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Request</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="mi">3500</span><span class="o">);</span>
+    <span class="nc">Request</span> <span class="n">request3</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Request</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="mi">50000</span><span class="o">);</span>
+    <span class="nc">ManagerApprover</span> <span class="n">managerApprover</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ManagerApprover</span><span class="o">(</span><span class="s">"主管"</span><span class="o">);</span>
+    <span class="nc">AccountApprover</span> <span class="n">accountApprover</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AccountApprover</span><span class="o">(</span><span class="s">"會計"</span><span class="o">);</span>
+    <span class="nc">BossApprover</span> <span class="n">bossApprover</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BossApprover</span><span class="o">(</span><span class="s">"老闆"</span><span class="o">);</span>
+
+    <span class="n">managerApprover</span><span class="o">.</span><span class="na">setApprover</span><span class="o">(</span><span class="n">accountApprover</span><span class="o">);</span>
+    <span class="n">accountApprover</span><span class="o">.</span><span class="na">setApprover</span><span class="o">(</span><span class="n">bossApprover</span><span class="o">);</span>
+    <span class="n">bossApprover</span><span class="o">.</span><span class="na">setApprover</span><span class="o">(</span><span class="n">managerApprover</span><span class="o">);</span>
+
+    <span class="n">managerApprover</span><span class="o">.</span><span class="na">process</span><span class="o">(</span><span class="n">request1</span><span class="o">);</span>
+    <span class="n">managerApprover</span><span class="o">.</span><span class="na">process</span><span class="o">(</span><span class="n">request2</span><span class="o">);</span>
+    <span class="n">managerApprover</span><span class="o">.</span><span class="na">process</span><span class="o">(</span><span class="n">request3</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>需求編號 =1被老闆處理
+需求編號 =2被主管處理
+需求編號 =3被會計處理
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2343,7 +2631,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-04-30 13:22:08 +0800"
+        "time": "2025-04-30 15:55:40 +0800"
     },
     "basePath": "",
     "book": {
