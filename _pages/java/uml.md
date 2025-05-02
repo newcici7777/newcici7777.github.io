@@ -234,7 +234,7 @@ public class Circle extends Shape {
 
 ## 說明
 
-下圖有一個說明方框還有線，描述這個類別是做什麼的。
+下圖有一個說明方框還有線，描述這個類別是做什麼的，注意線要為虛線。
 
 ![img]({{site.imgurl}}/java/comment.png)
 
