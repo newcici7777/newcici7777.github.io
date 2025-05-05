@@ -1597,6 +1597,13 @@
                 <ul><li><a href="#需求" data-nav-link " >需求</a></li><li><a href="#類別圖" data-nav-link " >類別圖</a><ul><li><a href="#eshopping" data-nav-link " >Eshopping</a></li></ul></li><li><a href="#state介面" data-nav-link " >State介面</a></li><li><a href="#abstractstate抽象狀態" data-nav-link " >AbstractState抽象狀態</a></li><li><a href="#無訂單狀態" data-nav-link " >無訂單狀態</a></li><li><a href="#訂購狀態" data-nav-link " >訂購狀態</a></li><li><a href="#裝箱狀態" data-nav-link " >裝箱狀態</a></li><li><a href="#寄送狀態" data-nav-link " >寄送狀態</a></li><li><a href="#接收狀態" data-nav-link " >接收狀態</a></li><li><a href="#測試" data-nav-link " >測試</a></li></ul>
 
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/proxy/" data-nav-link> Proxy代理人模式</a>
+        
+            
         </li></ul></li></ul></li>
 	
 	
@@ -2183,16 +2190,26 @@
   <li>訂購商品</li>
   <li>裝箱</li>
   <li>寄送商品</li>
-  <li>送達至客戶</li>
+  <li>接收產品</li>
 </ul>
 
-<p>訂購產品的時候，由無訂單狀態 -&gt; 訂購商品狀態 -&gt; 裝箱狀態 -&gt; 寄送狀態 -&gt; 接收產回狀態 -&gt; 無訂單狀態</p>
+<p>訂購產品的時候，由無訂單狀態 -&gt; 訂購商品狀態 -&gt; 裝箱狀態 -&gt; 寄送狀態 -&gt; 接收產品狀態 -&gt; 無訂單狀態</p>
 
 <h2 id="類別圖">類別圖</h2>
 <p><img src="/assets/img/pattern/state1.png" alt="img" /></p>
 
 <h3 id="eshopping">Eshopping</h3>
-<p>儲存共用的變數，各種狀態，提供轉換狀態的方法。</p>
+<p>儲存共用的變數count，各種狀態(沒訂單狀態、訂單狀態、裝箱狀態、寄送狀態、收到狀態)、state為目前狀態。</p>
+
+<ul>
+  <li>setState()設定目前狀態</li>
+  <li>order() 呼叫orderState訂單狀態的order()</li>
+  <li>box() 呼叫boxState裝箱狀態的box()</li>
+  <li>delivery() 呼叫deliveryState寄送狀態的delivery()</li>
+  <li>receiveState() 呼叫receiveState接收狀態的receive()</li>
+  <li>noOrder() 呼叫noOrderState沒有訂單狀態的noOrder()</li>
+  <li>setCount() 設定產品變數</li>
+</ul>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2278,11 +2295,21 @@
 81
 82
 83
+84
+85
+86
+87
+88
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Eshopping</span> <span class="o">{</span>
+  <span class="c1">// 沒訂單狀態</span>
   <span class="kd">private</span> <span class="nc">State</span> <span class="n">noOrderState</span><span class="o">;</span>
+  <span class="c1">// 訂單狀態</span>
   <span class="kd">private</span> <span class="nc">State</span> <span class="n">orderState</span><span class="o">;</span>
+  <span class="c1">// 裝箱狀態</span>
   <span class="kd">private</span> <span class="nc">State</span> <span class="n">boxState</span><span class="o">;</span>
+  <span class="c1">// 寄送狀態</span>
   <span class="kd">private</span> <span class="nc">State</span> <span class="n">deliveryState</span><span class="o">;</span>
+  <span class="c1">// 收到狀態</span>
   <span class="kd">private</span> <span class="nc">State</span> <span class="n">receiveState</span><span class="o">;</span>
   <span class="c1">// 目前狀態</span>
   <span class="kd">private</span> <span class="nc">State</span> <span class="n">state</span><span class="o">;</span>
@@ -2790,7 +2817,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/android/android_thread" class="navigation navigation-next navigation-unique" aria-label="Next page: Main Thread">
+                        <a href="/pages/design_pattern/proxy" class="navigation navigation-next navigation-unique" aria-label="Next page: Proxy代理人模式">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2901,7 +2928,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-05 12:00:02 +0800"
+        "time": "2025-05-05 14:51:31 +0800"
     },
     "basePath": "",
     "book": {
