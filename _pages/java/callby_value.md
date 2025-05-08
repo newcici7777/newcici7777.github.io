@@ -26,8 +26,6 @@ arg1.age = 100;
 
 對於物件記憶體位址有興趣，可以參考c++物件記憶體布局:
 
-- [物件記憶體布局 Memory layout][1]
-
 {% highlight java linenos %}
   arg1.age = 100;    
 {% endhighlight %}    
@@ -87,8 +85,8 @@ class TestClz {
 50
 ```
 
-此處的概念跟C++的[call by address][2]與[call by reference][3]完全不同，是不一樣的概念，請勿混為一談。
+此處的概念跟C++的[call by address][1]與[call by reference][2]完全不同，是不一樣的概念，請勿混為一談。
 
-[1]: {% link _pages/c/class/inheritance.md %}
-[2]: {% link _pages/c/function/func_param_pointer.md %}
-[3]: {% link _pages/c/function/callByRef.md %}
+
+[1]: {% link _pages/c/function/func_param_pointer.md %}
+[2]: {% link _pages/c/function/callByRef.md %}

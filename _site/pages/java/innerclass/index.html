@@ -1447,6 +1447,37 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> IO </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/file/" data-nav-link> File</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/io/" data-nav-link> 串流基礎概念</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/fileio/" data-nav-link> 檔案串流</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> UML </a><ul>
 	
 	
@@ -2540,6 +2571,30 @@ outter staticval = Static val
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<p>如果在外部類別中的main靜態函式建立類別，前面可以不用外部類別。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">Static_class</span> <span class="o">{</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">StaticClass</span> <span class="n">staticClass</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StaticClass</span><span class="o">();</span>
+    <span class="n">staticClass</span><span class="o">.</span><span class="na">inner_memthod</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 <h3 id="靜態內部類別建構子">靜態內部類別建構子</h3>
 <p>之前提過靜態內部類別就是類別，只是外部類別變成名稱空間，所以一定有建構子。</p>
 
@@ -3172,7 +3227,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-06 11:47:34 +0800"
+        "time": "2025-05-08 13:17:09 +0800"
     },
     "basePath": "",
     "book": {

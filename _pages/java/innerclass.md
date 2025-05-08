@@ -210,6 +210,20 @@ public class Test {
 }
 {% endhighlight %}
 
+如果在外部類別中的main靜態函式建立類別，前面可以不用外部類別。
+
+{% highlight java linenos %}
+public class Test {
+  public static class Static_class {
+  }
+
+  public static void main(String[] args) {
+    StaticClass staticClass = new StaticClass();
+    staticClass.inner_memthod();
+  }
+}
+{% endhighlight %}
+
 ### 靜態內部類別建構子
 之前提過靜態內部類別就是類別，只是外部類別變成名稱空間，所以一定有建構子。
 {% highlight java linenos %}

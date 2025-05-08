@@ -1444,6 +1444,37 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> IO </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/file/" data-nav-link> File</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/io/" data-nav-link> 串流基礎概念</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/fileio/" data-nav-link> 檔案串流</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> UML </a><ul>
 	
 	
@@ -1608,7 +1639,7 @@
     	<a href="/pages/design_pattern/mediator/" data-nav-link> 中介者模式</a>
         
             
-                <ul><li><a href="#中介者模式" data-nav-link " >中介者模式</a></li><li><a href="#類別圖" data-nav-link " >類別圖</a></li><li><a href="#mediator抽象中介者" data-nav-link " >Mediator抽象中介者</a><ul><li><a href="#要讓中間人知道是誰要彼此溝通" data-nav-link " >要讓中間人，知道是誰要彼此溝通。</a></li><li><a href="#callback回調" data-nav-link " >callback回調</a></li><li><a href="#程式碼" data-nav-link " >程式碼</a></li></ul></li><li><a href="#union工會" data-nav-link " >Union工會</a></li><li><a href="#abstractcolleague抽象同事" data-nav-link " >AbstractColleague抽象同事</a></li><li><a href="#colleague同事" data-nav-link " >Colleague同事</a></li><li><a href="#manager主管" data-nav-link " >Manager主管</a></li><li><a href="#client測試" data-nav-link " >Client測試</a></li></ul>
+                <ul><li><a href="#中介者模式" data-nav-link " >中介者模式</a></li><li><a href="#類別圖" data-nav-link " >類別圖</a></li><li><a href="#mediator抽象中介者" data-nav-link " >Mediator抽象中介者</a><ul><li><a href="#要讓中間人知道是誰要彼此溝通" data-nav-link " >要讓中間人，知道是誰要彼此溝通。</a></li><li><a href="#mediator類別sendmessage" data-nav-link " >Mediator類別sendMessage</a></li><li><a href="#程式碼" data-nav-link " >程式碼</a></li></ul></li><li><a href="#union工會" data-nav-link " >Union工會</a></li><li><a href="#abstractcolleague抽象同事" data-nav-link " >AbstractColleague抽象同事</a></li><li><a href="#colleague同事" data-nav-link " >Colleague同事</a></li><li><a href="#manager主管" data-nav-link " >Manager主管</a></li><li><a href="#client測試" data-nav-link " >Client測試</a></li></ul>
 
             
         </li>
@@ -2211,8 +2242,6 @@
 
 <p>AbstructColleague與Mediator是一條直線，因為二邊都有彼此的成員變數，是1對1雙向關係。</p>
 
-<p>有一個說明，Mediator.sendMessage()，第2個參數會用到AbstractColleague物件，並callback回調AbstractColleague.receiveMessage()</p>
-
 <h2 id="mediator抽象中介者">Mediator抽象中介者</h2>
 
 <h3 id="要讓中間人知道是誰要彼此溝通">要讓中間人，知道是誰要彼此溝通。</h3>
@@ -2220,10 +2249,10 @@
 
 <p>addColleague()方法，放置要透過中間人溝通的類別。</p>
 
-<h3 id="callback回調">callback回調</h3>
+<h3 id="mediator類別sendmessage">Mediator類別sendMessage</h3>
 <p>Mediator類別sendMessage(String message, AbstractColleague sender)</p>
 
-<p>這個方法會呼叫AbstractColleague.receiveMessage()的方法。</p>
+<p>子類別要覆寫處理各個類別的溝通方式，sender是溝通的時候，子類別物件把自己傳過來當作參數。</p>
 
 <h3 id="程式碼">程式碼</h3>
 
@@ -2290,6 +2319,7 @@
 13
 14
 15
+16
 </pre></td><td class="code"><pre><span class="c1">// 工會，中間人</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Union</span> <span class="kd">extends</span> <span class="nc">Mediator</span> <span class="o">{</span>
   <span class="c1">// 參數2是發訊息的人</span>
@@ -2298,8 +2328,9 @@
     <span class="c1">// 發送訊息給所有人</span>
     <span class="k">for</span> <span class="o">(</span><span class="nc">AbstractColleague</span> <span class="nl">user:</span> <span class="n">getColleagues</span><span class="o">())</span> <span class="o">{</span>
       <span class="c1">// 除了發送訊息本人之外，把訊息發給所有人</span>
+      <span class="c1">// 透過sender取得發訊息的人的資訊</span>
       <span class="k">if</span> <span class="o">(!</span><span class="n">user</span><span class="o">.</span><span class="na">name</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">sender</span><span class="o">.</span><span class="na">getName</span><span class="o">()))</span> <span class="o">{</span>
-        <span class="c1">// Callback回調</span>
+        <span class="c1">// 讓其它人接收來自sender的訊息</span>
         <span class="n">user</span><span class="o">.</span><span class="na">receiveMessage</span><span class="o">(</span><span class="n">sender</span><span class="o">.</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">"說"</span> <span class="o">+</span> <span class="n">message</span><span class="o">);</span>
       <span class="o">}</span>
     <span class="o">}</span>
@@ -2344,6 +2375,7 @@
 24
 25
 26
+27
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">AbstractColleague</span> <span class="o">{</span>
   <span class="c1">// Mediator 成員屬性</span>
   <span class="kd">protected</span> <span class="nc">Mediator</span> <span class="n">mediator</span><span class="o">;</span>
@@ -2359,9 +2391,10 @@
   <span class="c1">// 發送訊息，實際上是呼叫Mediator.sendMessage()</span>
   <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">sendMessage</span><span class="o">(</span><span class="nc">String</span> <span class="n">message</span><span class="o">);</span>
   
-  <span class="c1">// CallBack回調方法</span>
+  <span class="c1">// 接收訊息</span>
   <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">receiveMessage</span><span class="o">(</span><span class="nc">String</span> <span class="n">message</span><span class="o">);</span>
 
+  <span class="c1">// 取得名字</span>
   <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
     <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
   <span class="o">}</span>
@@ -2374,7 +2407,7 @@
 </figure>
 
 <h2 id="colleague同事">Colleague同事</h2>
-<p>設定回調Callback物件，在sendMessage()方法，實際上是呼叫Mediator.sendMessage()，第二個參數this，是把自己作為Callback回調物件。</p>
+<p>sendMessage()方法，實際上是呼叫Mediator.sendMessage()，第二個參數this，是把自己作為參數傳入。</p>
 
 <p>Colleague</p>
 
@@ -2395,18 +2428,20 @@
 14
 15
 16
+17
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Colleague</span> <span class="kd">extends</span> <span class="nc">AbstractColleague</span><span class="o">{</span>
   <span class="kd">public</span> <span class="nf">Colleague</span><span class="o">(</span><span class="nc">Mediator</span> <span class="n">mediator</span><span class="o">,</span> <span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 建構子，預設使用父類別建構子</span>
     <span class="kd">super</span><span class="o">(</span><span class="n">mediator</span><span class="o">,</span> <span class="n">name</span><span class="o">);</span>
   <span class="o">}</span>
 
   <span class="c1">// 實際上是呼叫Mediator.sendMessage()</span>
-  <span class="c1">// 第2個參數是設定回調Callback物件</span>
+  <span class="c1">// 第2個參數是把自己物件本身傳入</span>
   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sendMessage</span><span class="o">(</span><span class="nc">String</span> <span class="n">message</span><span class="o">)</span> <span class="o">{</span>
     <span class="n">mediator</span><span class="o">.</span><span class="na">sendMessage</span><span class="o">(</span><span class="n">message</span><span class="o">,</span> <span class="k">this</span><span class="o">);</span>
   <span class="o">}</span>
 
-  <span class="c1">// CallBack回調方法</span>
+  <span class="c1">// 接收訊息</span>
   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">receiveMessage</span><span class="o">(</span><span class="nc">String</span> <span class="n">message</span><span class="o">)</span> <span class="o">{</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"name = "</span> <span class="o">+</span> <span class="n">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">", msg = "</span> <span class="o">+</span> <span class="n">message</span><span class="o">);</span>
   <span class="o">}</span>
@@ -2491,7 +2526,7 @@
     <span class="n">union</span><span class="o">.</span><span class="na">addColleague</span><span class="o">(</span><span class="n">manager1</span><span class="o">);</span>
     <span class="n">union</span><span class="o">.</span><span class="na">addColleague</span><span class="o">(</span><span class="n">manager2</span><span class="o">);</span>
 
-    <span class="c1">// 向中介者發送訊息</span>
+    <span class="c1">// 向中介者發送訊息，中介者收到訊息再把訊息傳給其它人。</span>
     <span class="n">colleague1</span><span class="o">.</span><span class="na">sendMessage</span><span class="o">(</span><span class="s">"Hello!"</span><span class="o">);</span>
     <span class="n">colleague2</span><span class="o">.</span><span class="na">sendMessage</span><span class="o">(</span><span class="s">"Hi"</span><span class="o">);</span>
     <span class="n">manager2</span><span class="o">.</span><span class="na">sendMessage</span><span class="o">(</span><span class="s">"I'm manager."</span><span class="o">);</span>
@@ -2703,7 +2738,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-06 11:47:34 +0800"
+        "time": "2025-05-08 13:17:09 +0800"
     },
     "basePath": "",
     "book": {

@@ -18,8 +18,6 @@ Mediator，中文是調解員，在「深入淺出設計模式」一書是協調
 
 AbstructColleague與Mediator是一條直線，因為二邊都有彼此的成員變數，是1對1雙向關係。
 
-有一個說明，Mediator.sendMessage()，第2個參數會用到AbstractColleague物件，並callback回調AbstractColleague.receiveMessage()
-
 ## Mediator抽象中介者
 
 ### 要讓中間人，知道是誰要彼此溝通。
@@ -27,10 +25,10 @@ Mediator類別有個屬性colleague"s"，類型是List。
 
 addColleague()方法，放置要透過中間人溝通的類別。
 
-### callback回調
+### Mediator類別sendMessage
 Mediator類別sendMessage(String message, AbstractColleague sender)
 
-這個方法會呼叫AbstractColleague.receiveMessage()的方法。
+子類別要覆寫處理各個類別的溝通方式，sender是溝通的時候，子類別物件把自己傳過來當作參數。
 
 ### 程式碼
 {% highlight java linenos %}
@@ -67,8 +65,9 @@ public class Union extends Mediator {
     // 發送訊息給所有人
     for (AbstractColleague user: getColleagues()) {
       // 除了發送訊息本人之外，把訊息發給所有人
+      // 透過sender取得發訊息的人的資訊
       if (!user.name.equals(sender.getName())) {
-        // Callback回調
+        // 讓其它人接收來自sender的訊息
         user.receiveMessage(sender.getName() + "說" + message);
       }
     }
@@ -98,9 +97,10 @@ public abstract class AbstractColleague {
   // 發送訊息，實際上是呼叫Mediator.sendMessage()
   public abstract void sendMessage(String message);
   
-  // CallBack回調方法
+  // 接收訊息
   public abstract void receiveMessage(String message);
 
+  // 取得名字
   public String getName() {
     return name;
   }
@@ -112,22 +112,23 @@ public abstract class AbstractColleague {
 {% endhighlight %}
 
 ## Colleague同事
-設定回調Callback物件，在sendMessage()方法，實際上是呼叫Mediator.sendMessage()，第二個參數this，是把自己作為Callback回調物件。
+sendMessage()方法，實際上是呼叫Mediator.sendMessage()，第二個參數this，是把自己作為參數傳入。
 
 Colleague
 {% highlight java linenos %}
 public class Colleague extends AbstractColleague{
   public Colleague(Mediator mediator, String name) {
+    // 建構子，預設使用父類別建構子
     super(mediator, name);
   }
 
   // 實際上是呼叫Mediator.sendMessage()
-  // 第2個參數是設定回調Callback物件
+  // 第2個參數是把自己物件本身傳入
   public void sendMessage(String message) {
     mediator.sendMessage(message, this);
   }
 
-  // CallBack回調方法
+  // 接收訊息
   public void receiveMessage(String message) {
     System.out.println("name = " + getName() + ", msg = " + message);
   }
@@ -171,7 +172,7 @@ public class Client {
     union.addColleague(manager1);
     union.addColleague(manager2);
 
-    // 向中介者發送訊息
+    // 向中介者發送訊息，中介者收到訊息再把訊息傳給其它人。
     colleague1.sendMessage("Hello!");
     colleague2.sendMessage("Hi");
     manager2.sendMessage("I'm manager.");
