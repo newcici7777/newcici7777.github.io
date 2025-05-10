@@ -1468,12 +1468,26 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/string/" data-nav-link> String與char[]和byte[]</a>
+        
+            
+        </li>
+	
+	
 	<li class="active" data-nav-item>
     	<a href="/pages/java/fileio/" data-nav-link> 檔案串流</a>
         
             
-                <ul><li><a href="#fileinputstream讀取檔案" data-nav-link " >FileInputStream讀取檔案</a><ul><li><a href="#建構子" data-nav-link " >建構子</a></li></ul></li></ul>
+                <ul><li><a href="#串流固定寫法" data-nav-link " >串流固定寫法</a><ul><li><a href="#為什麼一定要關閉串流" data-nav-link " >為什麼一定要關閉串流？</a></li><li><a href="#關閉串流" data-nav-link " >關閉串流</a></li><li><a href="#自動關閉串流" data-nav-link " >自動關閉串流</a></li></ul></li><li><a href="#fileinputstream讀取檔案" data-nav-link " >FileInputStream讀取檔案</a><ul><li><a href="#建構子" data-nav-link " >建構子</a></li><li><a href="#read" data-nav-link " >read()</a></li><li><a href="#readbyte" data-nav-link " >read(byte[])</a></li></ul></li><li><a href="#fileoutputstream寫檔案" data-nav-link " >FileOutputStream寫檔案</a><ul><li><a href="#建構子-1" data-nav-link " >建構子</a></li><li><a href="#writeint寫一個byte" data-nav-link " >write(int)寫一個byte</a></li><li><a href="#writebyte" data-nav-link " >write(byte[])</a></li><li><a href="#writebyteintint" data-nav-link " >write(byte[],int,int)</a></li></ul></li><li><a href="#fileinputstream與fileoutputstream" data-nav-link " >FileInputStream與FileOutputStream</a></li><li><a href="#filereader讀取文字檔" data-nav-link " >FileReader讀取文字檔</a><ul><li><a href="#read讀取字元" data-nav-link " >read()讀取字元</a></li><li><a href="#readchar" data-nav-link " >read(char[])</a></li></ul></li><li><a href="#filewriter寫到文字檔" data-nav-link " >FileWriter寫到文字檔</a><ul><li><a href="#writeint-c" data-nav-link " >write(int c)</a></li><li><a href="#writechar" data-nav-link " >write(char[])</a></li><li><a href="#writestring" data-nav-link " >write(String)</a></li><li><a href="#writestringintint" data-nav-link " >write(String,int,int)</a></li></ul></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/decorator_io/" data-nav-link> 有附加功能的串流</a>
+        
             
         </li></ul></li>
 	
@@ -1584,6 +1598,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/design_pattern/decorator/" data-nav-link> 裝飾者模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/decorator_io/" data-nav-link> IO裝飾者模式</a>
         
             
         </li>
@@ -2225,8 +2246,578 @@
                         <h1 id="/pages/java/fileio">檔案串流</h1>
                     
 
-                    <h2 id="fileinputstream讀取檔案">FileInputStream讀取檔案</h2>
+                    <h2 id="串流固定寫法">串流固定寫法</h2>
+<h3 id="為什麼一定要關閉串流">為什麼一定要關閉串流？</h3>
+<p>不關閉串流，資料會存在記憶體，不會寫到檔案裡，有關閉的動作，才會有flush的動作，把資料寫到檔案裡。</p>
+<h3 id="關閉串流">關閉串流</h3>
+<p>因為串流產生的Error是屬於IOException，強制一定要補捉錯誤，若是Exception或RuntimeException就不用補捉錯誤。</p>
+
+<ol>
+  <li>宣告串流要在try…catch…final的外面，若宣告在try{}裡面，變數可見範圍只在try{}裡面，但串流不管有沒有錯誤，最後都一定要在final{}之中，close()關閉串流，宣告在try…catch…final的外面，變數的可見範圍才可以在final{}使用。</li>
+  <li>一定要關閉串流。</li>
+  <li>在try{}之中，建立串流。</li>
+</ol>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre>  <span class="c1">// 1.宣告串流</span>
+  <span class="nc">FileInputStream</span> <span class="n">fileInputStream</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="k">try</span> <span class="o">{</span>
+    <span class="c1">// 3.建立串流</span>
+    <span class="n">fileInputStream</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileInputStream</span><span class="o">(</span><span class="s">"/Users/cici/file_test"</span><span class="o">);</span>
+  <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+  <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
+    <span class="c1">// 2.關閉串流</span>
+    <span class="k">try</span> <span class="o">{</span>
+      <span class="c1">// 關閉時可能會有錯誤，所以要再catch一次</span>
+      <span class="n">fileInputStream</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="自動關閉串流">自動關閉串流</h3>
+<p>JDK7有自動關閉串流的功能(Try-with-resources)，不用處理關閉串流，也不能自行撰寫關閉串流，不然會呼叫close()二次(因為你又再寫一次close())。</p>
+
+<p>在try()括號之間，建立串流。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre>  <span class="c1">// 建立串流</span>
+  <span class="k">try</span> <span class="o">(</span><span class="nc">FileInputStream</span> <span class="n">fileInputStream</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileInputStream</span><span class="o">(</span><span class="s">"/Users/cici/file_test"</span><span class="o">))</span> <span class="o">{</span>
+    
+  <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 仍是要補捉IOException，有可能檔案沒有</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">err</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"發生錯誤: "</span> <span class="o">+</span> <span class="n">e</span><span class="o">.</span><span class="na">getMessage</span><span class="o">());</span>
+    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="fileinputstream讀取檔案">FileInputStream讀取檔案</h2>
 <h3 id="建構子">建構子</h3>
+<p>有下列二個建構子，參數為檔案或字串。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="nc">FileInputStream</span><span class="o">(</span><span class="nc">File</span><span class="o">)</span>
+<span class="nc">FileInputStream</span><span class="o">(</span><span class="nc">String</span> <span class="n">filename</span><span class="o">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="read">read()</h3>
+<ul>
+  <li>int read() 一次讀一個位元組byte，傳回值為資料，型態為int，若值為其它類型，要轉型。</li>
+</ul>
+
+<p>以下範例為每次只讀取一個byte，正常狀況下不會使用這個，因為一次讀一個byte速度很慢。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre>  <span class="c1">// 宣告串流</span>
+  <span class="nc">FileInputStream</span> <span class="n">fileInputStream</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="k">try</span> <span class="o">{</span>
+    <span class="c1">// 建立串流</span>
+    <span class="n">fileInputStream</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileInputStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="o">);</span>
+    <span class="kt">int</span> <span class="n">data</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="c1">// -1 代表沒有資料讀取完畢</span>
+    <span class="k">while</span> <span class="o">((</span><span class="n">data</span> <span class="o">=</span> <span class="n">fileInputStream</span><span class="o">.</span><span class="na">read</span><span class="o">())!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="c1">// 強制轉型</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">((</span><span class="kt">char</span><span class="o">)</span> <span class="n">data</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+  <span class="c1">// ...避免程式碼過多，截掉</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>h
+e
+l
+l
+o
+</code></pre></div></div>
+<h3 id="readbyte">read(byte[])</h3>
+<ul>
+  <li>int read(byte[]) 一次讀取多個位元組，假設1024，一次讀取1024個位元組，並把讀到的資料放在byte[]，傳回值為讀到的byte數量。</li>
+</ul>
+
+<p>程式碼</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre>  <span class="nc">FileInputStream</span> <span class="n">fileInputStream</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="k">try</span> <span class="o">{</span>
+    <span class="c1">// 建立串流</span>
+    <span class="n">fileInputStream</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileInputStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="o">);</span>
+    <span class="c1">// 存放讀到的byte數量</span>
+    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
+    <span class="c1">// -1 代表沒有資料讀取完畢</span>
+    <span class="k">while</span> <span class="o">((</span><span class="n">len</span> <span class="o">=</span> <span class="n">fileInputStream</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">buffer</span><span class="o">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="c1">// 透過String建構子(位元組, 0, 讀到的byte數量)，建立字串</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">buffer</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">len</span><span class="o">));</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+  <span class="c1">// ..避免程式碼過多，截掉</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hello
+</code></pre></div></div>
+
+<p>值得注意的是，若buffer大小為3，若只使用new String()，沒有指定截取的數量。結果會出錯，因為每一次讀完，陣列buffer不會被清空，會存著上一次讀取的值。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre>  <span class="nc">FileInputStream</span> <span class="n">fileInputStream</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="k">try</span> <span class="o">{</span>
+    <span class="c1">// 建立串流</span>
+    <span class="n">fileInputStream</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileInputStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="o">);</span>
+    <span class="c1">// 存放每次讀取的數量</span>
+    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">3</span><span class="o">];</span>
+    <span class="c1">// -1 代表沒有資料讀取完畢</span>
+    <span class="k">while</span> <span class="o">((</span><span class="n">len</span> <span class="o">=</span> <span class="n">fileInputStream</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">buffer</span><span class="o">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="c1">// byte[]轉字串</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">buffer</span><span class="o">));</span>
+    <span class="o">}</span>
+  <span class="o">}</span><span class="c1">// ...避免程式碼過多，截掉</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hel
+lol
+</code></pre></div></div>
+<p>預期應該會出現hel與lo，並非hel與lol。</p>
+
+<h2 id="fileoutputstream寫檔案">FileOutputStream寫檔案</h2>
+<h3 id="建構子-1">建構子</h3>
+<p>有下列二個建構子，參數為檔案或字串，預設為覆蓋原有檔案，第2個參數是不覆蓋原有檔案，而是從檔案末尾開始寫資料。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="nc">FileOutputStream</span><span class="o">(</span><span class="nc">File</span> <span class="n">file</span><span class="o">)</span>
+<span class="nc">FileOutputStream</span><span class="o">(</span><span class="nc">File</span> <span class="n">file</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">append</span><span class="o">)</span>
+<span class="nc">FileOutputStream</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span>
+<span class="nc">FileOutputStream</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">append</span><span class="o">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="writeint寫一個byte">write(int)寫一個byte</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>  <span class="nc">FileOutputStream</span> <span class="n">fileOutputStream</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="k">try</span> <span class="o">{</span>
+    <span class="c1">// 建立檔案輸出串流</span>
+    <span class="n">fileOutputStream</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileOutputStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="o">);</span>
+    <span class="c1">// 寫入輸出串流</span>
+    <span class="n">fileOutputStream</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="sc">'A'</span><span class="o">);</span>
+  <span class="o">}</span><span class="c1">// ...避免程式碼過多，截掉</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A
+</code></pre></div></div>
+<h3 id="writebyte">write(byte[])</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre>  <span class="c1">// 宣告檔案輸出串流</span>
+  <span class="nc">FileOutputStream</span> <span class="n">fileOutputStream</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="k">try</span> <span class="o">{</span>
+    <span class="c1">// 建立檔案輸出串流</span>
+    <span class="n">fileOutputStream</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileOutputStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="o">);</span>
+    <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"Hello world!"</span><span class="o">;</span>
+    <span class="c1">// 字串轉byte陣列</span>
+    <span class="n">fileOutputStream</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">getBytes</span><span class="o">());</span>
+  <span class="o">}</span><span class="c1">// ...避免程式碼過多，截掉</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello world!
+</code></pre></div></div>
+<h3 id="writebyteintint">write(byte[],int,int)</h3>
+<p>第2個參數，開始位置<br />
+第3個參數，寫入byte數量</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">write</span><span class="o">(</span><span class="kt">byte</span><span class="o">[]</span> <span class="n">b</span><span class="o">,</span> <span class="kt">int</span> <span class="n">off</span><span class="o">,</span> <span class="kt">int</span> <span class="n">len</span><span class="o">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre>  <span class="nc">FileOutputStream</span> <span class="n">fileOutputStream</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="k">try</span> <span class="o">{</span>
+    <span class="c1">// 建立檔案輸出串流</span>
+    <span class="n">fileOutputStream</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileOutputStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="o">);</span>
+    <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"Hello world!"</span><span class="o">;</span>
+    <span class="c1">// 寫入輸出串流</span>
+    <span class="n">fileOutputStream</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">getBytes</span><span class="o">(),</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">6</span><span class="o">);</span>
+  <span class="o">}</span><span class="c1">// ...避免程式碼過多，截掉</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>llo wo
+</code></pre></div></div>
+
+<h2 id="fileinputstream與fileoutputstream">FileInputStream與FileOutputStream</h2>
+<p>拷貝圖片，以下是邊讀邊寫。</p>
+
+<p>之前提過，每一次讀完，陣列buffer不會被清空，會存著上一次讀取的值，所以一定要使用write(byte[],int,int)，指定寫入的數量，假設最後一次迴圈只有讀到10byte，但buffer[1024]，1024個byte只有前面10個byte是這次讀到的值，而剩下的1014byte都是上一個迴圈舊的資料，如果把1014byte也寫到檔案，會造成檔案損毀，無法開啟。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class="code"><pre>    <span class="c1">// 宣告串流</span>
+    <span class="nc">FileInputStream</span> <span class="n">fileInputStream</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="nc">FileOutputStream</span> <span class="n">fileOutputStream</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="k">try</span> <span class="o">{</span>
+      <span class="c1">// 建立輸入(讀)串流</span>
+      <span class="n">fileInputStream</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileInputStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/1.png"</span><span class="o">);</span>
+      <span class="c1">// 建立輸出(寫)串流</span>
+      <span class="n">fileOutputStream</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileOutputStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/2.png"</span><span class="o">);</span>
+      <span class="c1">// 存放每次讀取的數量</span>
+      <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+      <span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
+      <span class="c1">// -1 代表沒有資料讀取完畢</span>
+      <span class="k">while</span> <span class="o">((</span><span class="n">len</span> <span class="o">=</span> <span class="n">fileInputStream</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">buffer</span><span class="o">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// 邊讀邊寫</span>
+        <span class="c1">// 一定要指定寫入數量len</span>
+        <span class="n">fileOutputStream</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">buffer</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">len</span><span class="o">);</span>
+      <span class="o">}</span>
+    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+    <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
+      <span class="c1">// 關閉串流</span>
+      <span class="k">try</span> <span class="o">{</span>
+        <span class="c1">// 關閉讀串流</span>
+        <span class="n">fileInputStream</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+        <span class="c1">// 關閉寫串流</span>
+        <span class="n">fileOutputStream</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+      <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="filereader讀取文字檔">FileReader讀取文字檔</h2>
+<p>只能讀取文字檔，不能讀取圖片或壓縮檔，可以處理中文字、UTF-8。</p>
+
+<h3 id="read讀取字元">read()讀取字元</h3>
+<ul>
+  <li>int read() 一次讀一個字元，傳回值為int。<br />
+傳回值是真正的資料，每次讀取完的字元存放在data變數。</li>
+</ul>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="code"><pre>  <span class="nc">FileReader</span> <span class="n">reader</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="k">try</span> <span class="o">{</span>
+    <span class="c1">// 檔案內容llo wo</span>
+    <span class="n">reader</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileReader</span><span class="o">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="o">);</span>
+    <span class="c1">// 存放值</span>
+    <span class="kt">int</span> <span class="n">data</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="c1">// -1 代表沒有資料讀取完畢</span>
+    <span class="k">while</span> <span class="o">((</span><span class="n">data</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="na">read</span><span class="o">())</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">((</span><span class="kt">char</span><span class="o">)</span><span class="n">data</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+  <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
+    <span class="c1">// 關閉串流</span>
+    <span class="k">try</span> <span class="o">{</span>
+      <span class="n">reader</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>l
+l
+o
+ 
+w
+o
+</code></pre></div></div>
+
+<h3 id="readchar">read(char[])</h3>
+<ul>
+  <li>int read(char[]) 一次讀取多個字元，假設設定8，一次讀取8字元，並把讀到的資料放在char[]。<br />
+傳回值是讀到的數量。</li>
+</ul>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre>  <span class="nc">FileReader</span> <span class="n">reader</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="k">try</span> <span class="o">{</span>
+    <span class="c1">// 檔案內容llo wo</span>
+    <span class="n">reader</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileReader</span><span class="o">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="o">);</span>
+    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="kt">char</span><span class="o">[]</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="o">[</span><span class="mi">3</span><span class="o">];</span>
+    <span class="k">while</span> <span class="o">((</span><span class="n">len</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">buffer</span><span class="o">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">buffer</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">len</span><span class="o">));</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+  <span class="c1">// ...避免程式碼過多，截掉</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>llo
+ wo
+</code></pre></div></div>
+
+<h2 id="filewriter寫到文字檔">FileWriter寫到文字檔</h2>
+<p>只能寫文字檔，不能寫圖片或壓縮檔，可以處理中文字、UTF-8。<br />
+一定要關閉串流，不然不會寫到檔案裡，只會暫存在記憶體。</p>
+<h3 id="writeint-c">write(int c)</h3>
+<p>寫入一個字元</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre>  <span class="nc">FileWriter</span> <span class="n">writer</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="k">try</span> <span class="o">{</span>
+    <span class="n">writer</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileWriter</span><span class="o">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="o">);</span>
+    <span class="n">writer</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="sc">'A'</span><span class="o">);</span>
+  <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+  <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
+    <span class="c1">// 關閉串流</span>
+    <span class="k">try</span> <span class="o">{</span>
+      <span class="n">writer</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A
+</code></pre></div></div>
+<h3 id="writechar">write(char[])</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>  <span class="nc">FileWriter</span> <span class="n">writer</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="k">try</span> <span class="o">{</span>
+    <span class="n">writer</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileWriter</span><span class="o">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="o">);</span>
+    <span class="kt">char</span><span class="o">[]</span> <span class="n">chars</span>  <span class="o">=</span> <span class="o">{</span><span class="sc">'A'</span><span class="o">,</span> <span class="sc">'B'</span><span class="o">,</span> <span class="sc">'C'</span><span class="o">};</span>
+    <span class="n">writer</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">chars</span><span class="o">);</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ABC
+</code></pre></div></div>
+<h3 id="writestring">write(String)</h3>
+<p>輸入中文字串</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre>  <span class="nc">FileWriter</span> <span class="n">writer</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="k">try</span> <span class="o">{</span>
+    <span class="n">writer</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileWriter</span><span class="o">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="o">);</span>
+    <span class="n">writer</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="s">"測試"</span><span class="o">);</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>測試
+</code></pre></div></div>
+
+<h3 id="writestringintint">write(String,int,int)</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>  <span class="nc">FileWriter</span> <span class="n">writer</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="k">try</span> <span class="o">{</span>
+    <span class="n">writer</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileWriter</span><span class="o">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="o">);</span>
+    <span class="c1">// 從索引2，取2個</span>
+    <span class="n">writer</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="s">"測試程式語言"</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>程式
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2290,14 +2881,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/java/io" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 串流基礎概念">
+                        <a href="/pages/java/string" class="navigation navigation-prev navigation-unique" aria-label="Previous page: String與char[]和byte[]">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/java/uml" class="navigation navigation-next navigation-unique" aria-label="Next page: UML類別圖">
+                        <a href="/pages/java/decorator_io" class="navigation navigation-next navigation-unique" aria-label="Next page: 有附加功能的串流">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2417,7 +3008,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-08 13:17:09 +0800"
+        "time": "2025-05-10 16:48:40 +0800"
     },
     "basePath": "",
     "book": {

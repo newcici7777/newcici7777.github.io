@@ -1465,14 +1465,28 @@
     	<a href="/pages/java/io/" data-nav-link> 串流基礎概念</a>
         
             
-                <ul><li><a href="#輸入串流inputstream" data-nav-link " >輸入串流InputStream</a></li><li><a href="#輸出串流outputstream" data-nav-link " >輸出串流OutputStream</a></li><li><a href="#串流抽象父類別" data-nav-link " >串流抽象父類別</a><ul><li><a href="#byte位元組" data-nav-link " >byte位元組</a></li><li><a href="#char字元" data-nav-link " >char字元</a></li></ul></li><li><a href="#資料的來源與寫出去的位置" data-nav-link " >資料的來源與寫出去的位置</a><ul><li><a href="#檔案" data-nav-link " >檔案</a></li><li><a href="#byte陣列" data-nav-link " >byte陣列</a></li></ul></li><li><a href="#父類別方法" data-nav-link " >父類別方法</a><ul><li><a href="#byte位元組-1" data-nav-link " >Byte位元組</a></li><li><a href="#字元" data-nav-link " >字元</a></li></ul></li></ul>
+                <ul><li><a href="#輸入串流inputstream" data-nav-link " >輸入串流InputStream</a></li><li><a href="#輸出串流outputstream" data-nav-link " >輸出串流OutputStream</a></li><li><a href="#串流抽象父類別" data-nav-link " >串流抽象父類別</a><ul><li><a href="#byte位元組" data-nav-link " >byte位元組</a></li><li><a href="#char字元" data-nav-link " >char字元</a></li></ul></li><li><a href="#子類別" data-nav-link " >子類別</a><ul><li><a href="#byte用byte位元組來讀取與輸出" data-nav-link " >Byte:用byte位元組來讀取與輸出</a></li><li><a href="#字元用char字元來讀取與輸出" data-nav-link " >字元:用char字元來讀取與輸出</a></li><li><a href="#檔案" data-nav-link " >檔案</a></li><li><a href="#記憶體byte陣列" data-nav-link " >記憶體byte陣列</a></li></ul></li><li><a href="#父類別方法" data-nav-link " >父類別方法</a><ul><li><a href="#byte位元組-1" data-nav-link " >Byte位元組</a></li><li><a href="#字元" data-nav-link " >字元</a></li></ul></li></ul>
 
             
         </li>
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/string/" data-nav-link> String與char[]和byte[]</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/fileio/" data-nav-link> 檔案串流</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/decorator_io/" data-nav-link> 有附加功能的串流</a>
         
             
         </li></ul></li>
@@ -1584,6 +1598,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/design_pattern/decorator/" data-nav-link> 裝飾者模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/decorator_io/" data-nav-link> IO裝飾者模式</a>
         
             
         </li>
@@ -2238,6 +2259,8 @@
 <h3 id="byte位元組">byte位元組</h3>
 <p>以下都是抽象類別，不能用new關鍵字建立。</p>
 
+<p><img src="/assets/img/java/io1.png" alt="img" /></p>
+
 <p>InputStream讀取位元組</p>
 
 <p>OutputStream以「位元組」方式寫出去</p>
@@ -2245,26 +2268,78 @@
 <h3 id="char字元">char字元</h3>
 <p>以下都是抽象類別，不能用new關鍵字建立。</p>
 
+<p><img src="/assets/img/java/io2.png" alt="img" /></p>
+
 <p>Reader讀取字元</p>
 
 <p>Writer以「字元」方式寫出去</p>
 
-<h2 id="資料的來源與寫出去的位置">資料的來源與寫出去的位置</h2>
+<h2 id="子類別">子類別</h2>
 <p>資料的來源與寫出的位置有二種，一種是檔案，一種是陣列。</p>
+
+<h3 id="byte用byte位元組來讀取與輸出">Byte:用byte位元組來讀取與輸出</h3>
+
+<p><img src="/assets/img/java/io3.png" alt="img" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">來源</th>
+      <th style="text-align: left">輸入(讀)</th>
+      <th style="text-align: left">輸出(寫)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">檔案</td>
+      <td style="text-align: left">FileInputStream</td>
+      <td style="text-align: left">FileOutputStream</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">記憶體</td>
+      <td style="text-align: left">ByteArrayInputStream</td>
+      <td style="text-align: left">ByteArrayOutputStream</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="字元用char字元來讀取與輸出">字元:用char字元來讀取與輸出</h3>
+
+<p><img src="/assets/img/java/io4.png" alt="img" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">來源</th>
+      <th style="text-align: left">輸入(讀)</th>
+      <th style="text-align: left">輸出(寫)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">檔案</td>
+      <td style="text-align: left">FileReader</td>
+      <td style="text-align: left">FileWriter</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">記憶體</td>
+      <td style="text-align: left">CharArrayReader</td>
+      <td style="text-align: left">CharArrayWriter</td>
+    </tr>
+  </tbody>
+</table>
 
 <h3 id="檔案">檔案</h3>
 <p>以Byte方式</p>
 <ul>
   <li>FileInputStream讀取檔案，InputStream子類別，可以用new關鍵字建立。
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.lang.Object
- ↳	java.io.InputStream
- 	   ↳	java.io.FileInputStream
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.io.InputStream
+ ↳	java.io.FileInputStream
 </code></pre></div>    </div>
   </li>
   <li>FileOutputStream寫檔案，OutputStream子類別，可以用new關鍵字建立。
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.lang.Object
- ↳	java.io.OutputStream
- 	   ↳	java.io.FileOutputStream
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.io.OutputStream
+ ↳	java.io.FileOutputStream
 </code></pre></div>    </div>
   </li>
 </ul>
@@ -2272,34 +2347,30 @@
 <p>以字元方式</p>
 <ul>
   <li>FileReader讀取檔案，Reader子類別，可以用new關鍵字建立。
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.lang.Object
- ↳	java.io.Reader
- 	   ↳	java.io.InputStreamReader
- 	 	   ↳	java.io.FileReader
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.io.Reader
+ ↳java.io.InputStreamReader
+  ↳	java.io.FileReader
 </code></pre></div>    </div>
   </li>
   <li>FileWriter寫檔案，Writer子類別，可以用new關鍵字建立。
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.lang.Object
- ↳	java.io.Writer
- 	   ↳	java.io.OutputStreamWriter
- 	 	   ↳	java.io.FileWriter
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.io.Writer
+ ↳java.io.OutputStreamWriter
+  ↳	java.io.FileWriter
 </code></pre></div>    </div>
   </li>
 </ul>
 
-<h3 id="byte陣列">byte陣列</h3>
+<h3 id="記憶體byte陣列">記憶體byte陣列</h3>
 <p>實際上就是讀寫byte陣列。</p>
 
 <p>ByteArrayInputStream 讀取Byte陣列</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.lang.Object
-   ↳	java.io.InputStream
- 	   ↳	java.io.ByteArrayInputStream
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.io.InputStream
+ ↳	java.io.ByteArrayInputStream
 </code></pre></div></div>
 
 <p>ByteArrayOutputStream 寫到Byte陣列</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.lang.Object
-   ↳	java.io.OutputStream
- 	   ↳	java.io.ByteArrayOutputStream
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.io.OutputStream
+ ↳	java.io.ByteArrayOutputStream
 </code></pre></div></div>
 
 <p>建立1024個byte</p>
@@ -2341,9 +2412,10 @@
 14
 15
 16
+17
 </pre></td><td class="code"><pre>  <span class="c1">// 建立byte陣列寫出串流</span>
   <span class="nc">ByteArrayOutputStream</span> <span class="n">baos</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayOutputStream</span><span class="o">();</span>
-  <span class="c1">// 為byte陣列串流 加上物件的功能</span>
+  <span class="c1">// 為byte陣列輸出串流 加上物件的功能</span>
   <span class="c1">// 原文: adds functionality to output stream</span>
   <span class="nc">ObjectOutputStream</span> <span class="n">oos</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ObjectOutputStream</span><span class="o">(</span><span class="n">baos</span><span class="o">);</span>
   <span class="c1">// 把物件寫入byte陣列</span>
@@ -2352,7 +2424,8 @@
   
   <span class="c1">// 建立byte陣列讀取串流， 資料的來源是byte陣列</span>
   <span class="nc">ByteArrayInputStream</span> <span class="n">bais</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayInputStream</span><span class="o">(</span><span class="n">baos</span><span class="o">.</span><span class="na">toByteArray</span><span class="o">());</span>
-  <span class="c1">// 為byte陣列串流 加上物件的功能</span>
+  <span class="c1">// 為byte陣列輸入串流 加上物件的功能</span>
+  <span class="c1">// 原文: adds functionality to input stream</span>
   <span class="nc">ObjectInputStream</span> <span class="n">ois</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ObjectInputStream</span><span class="o">(</span><span class="n">bais</span><span class="o">);</span>
   <span class="c1">// 把物件讀取出來</span>
   <span class="c1">// 使用ObjectInputStream.readObject()</span>
@@ -2364,29 +2437,38 @@
 <p>抽象父類別會提供基本的讀取與寫入方法。</p>
 
 <h3 id="byte位元組-1">Byte位元組</h3>
+<p>抽象父類別InputStream、OutputStream</p>
+
+<p><img src="/assets/img/java/io1.png" alt="img" /></p>
+
 <p>InputStream</p>
 <ul>
-  <li>int read() 一次讀一個位元組byte，傳回值為int，若值為其它類型，要轉型。</li>
+  <li>read()回傳 -1 代表沒有資料讀取完畢。</li>
+  <li>int read() 一次讀一個位元組byte，傳回值為資料，型態為int，若值為其它類型，要轉型。</li>
   <li>int read(byte[]) 一次讀取多個位元組，假設1024，一次讀取1024個位元組，並把讀到的資料放在byte[]</li>
   <li>int read(byte[], int start, int len) 第2個參數是從那個陣列索引index開始讀，第3個參數是要讀幾個，並把讀到的資料放在byte[]</li>
-  <li>以上方法回傳 -1 代表沒有資料讀取完畢。</li>
   <li>close() 關閉串流</li>
 </ul>
 
 <p>OutputStream</p>
 <ul>
-  <li>write(byte[]) 寫入位元組</li>
+  <li>write(int n) 寫一個位元組。</li>
+  <li>write(byte[]) 寫位元組。</li>
   <li>write(byte[], int start, int lne) 第2個參數是從那個陣列索引index開始寫，第3個參數是要寫幾個。</li>
   <li>close() 關閉串流</li>
 </ul>
 
 <h3 id="字元">字元</h3>
+<p>抽象父類別Reader、Writer</p>
+
+<p><img src="/assets/img/java/io2.png" alt="img" /></p>
+
 <p>Reader</p>
 <ul>
-  <li>int read() 一次讀一個字元，傳回值為int。</li>
+  <li>read()回傳 -1 代表沒有資料讀取完畢。</li>
+  <li>int read() 一次讀一個字元，傳回值為int，值為資料內容，要轉型。</li>
   <li>int read(char[]) 一次讀取多個字元，假設設定8，一次讀取8字元，並把讀到的資料放在char[]。</li>
-  <li>int read(char[], int start, int len) 第2個參數是從那個陣列索引index開始讀，第3個參數是要讀幾個，並把讀到的資料放在char[]。</li>
-  <li>以上方法回傳 -1 代表沒有資料讀取完畢。</li>
+  <li>int read(char[], int start, int len) 第2個參數是從那個索引index開始讀?第3個參數是要讀幾個，並把讀到的資料放在char[]。</li>
   <li>close() 關閉串流</li>
 </ul>
 
@@ -2394,7 +2476,7 @@
 <ul>
   <li>write(int n) 寫一個字元</li>
   <li>write(char[]) 寫入字元陣列</li>
-  <li>write(char[], int start, int lne) 第2個參數是從那個陣列索引index開始寫，第3個參數是要寫幾個。</li>
+  <li>write(char[], int start, int lne) 第1個參數為寫入的位置，第2個參數是從那個索引index開始寫?第3個參數是要寫幾個。</li>
   <li>close() 關閉串流</li>
 </ul>
 </section>
@@ -2467,7 +2549,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/fileio" class="navigation navigation-next navigation-unique" aria-label="Next page: 檔案串流">
+                        <a href="/pages/java/string" class="navigation navigation-next navigation-unique" aria-label="Next page: String與char[]和byte[]">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2483,6 +2565,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "java記事",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/java/note.md",
+            "ref": "_pages/java/note.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -2578,7 +2669,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-08 13:17:09 +0800"
+        "time": "2025-05-10 16:48:40 +0800"
     },
     "basePath": "",
     "book": {

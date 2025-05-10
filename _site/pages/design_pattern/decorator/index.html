@@ -1469,7 +1469,21 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/string/" data-nav-link> String與char[]和byte[]</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/fileio/" data-nav-link> 檔案串流</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/decorator_io/" data-nav-link> 有附加功能的串流</a>
         
             
         </li></ul></li>
@@ -1583,8 +1597,15 @@
     	<a href="/pages/design_pattern/decorator/" data-nav-link> 裝飾者模式</a>
         
             
-                <ul><li><a href="#需求" data-nav-link " >需求</a></li><li><a href="#類別圖解釋" data-nav-link " >類別圖解釋</a></li><li><a href="#component抽象類別" data-nav-link " >Component抽象類別</a></li><li><a href="#drink飲料" data-nav-link " >Drink飲料</a></li><li><a href="#decorator配料" data-nav-link " >Decorator配料</a></li><li><a href="#繼承drink類別" data-nav-link " >繼承Drink類別</a></li><li><a href="#繼承decorator配料" data-nav-link " >繼承Decorator配料</a></li><li><a href="#使用方法" data-nav-link " >使用方法</a></li><li><a href="#io-stream" data-nav-link " >IO Stream</a></li></ul>
+                <ul><li><a href="#需求" data-nav-link " >需求</a></li><li><a href="#類別圖解釋" data-nav-link " >類別圖解釋</a></li><li><a href="#component抽象類別" data-nav-link " >Component抽象類別</a></li><li><a href="#drink飲料" data-nav-link " >Drink飲料</a></li><li><a href="#decorator配料" data-nav-link " >Decorator配料</a></li><li><a href="#繼承drink類別" data-nav-link " >繼承Drink類別</a></li><li><a href="#繼承decorator配料" data-nav-link " >繼承Decorator配料</a></li><li><a href="#使用方法" data-nav-link " >使用方法</a></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/decorator_io/" data-nav-link> IO裝飾者模式</a>
+        
             
         </li>
 	
@@ -2427,9 +2448,13 @@
 4
 5
 6
+7
+8
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">BlackTea</span> <span class="kd">extends</span> <span class="nc">Drink</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="nf">BlackTea</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 設定價格</span>
     <span class="n">setPrice</span><span class="o">(</span><span class="mi">35</span><span class="o">);</span>
+    <span class="c1">// 設定品項</span>
     <span class="n">setDesc</span><span class="o">(</span><span class="s">"紅茶 = "</span> <span class="o">+</span> <span class="n">getPrice</span><span class="o">());</span>
   <span class="o">}</span>
 <span class="o">}</span>
@@ -2445,9 +2470,13 @@
 4
 5
 6
+7
+8
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">GreenTea</span> <span class="kd">extends</span> <span class="nc">Drink</span><span class="o">{</span>
   <span class="kd">public</span> <span class="nf">GreenTea</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 設定價格</span>
     <span class="n">setPrice</span><span class="o">(</span><span class="mi">40</span><span class="o">);</span>
+    <span class="c1">// 設定品項</span>
     <span class="n">setDesc</span><span class="o">(</span><span class="s">"綠茶 = "</span> <span class="o">+</span> <span class="n">getPrice</span><span class="o">());</span>
   <span class="o">}</span>
 <span class="o">}</span>
@@ -2471,11 +2500,15 @@
 6
 7
 8
+9
+10
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Bubble</span> <span class="kd">extends</span> <span class="nc">Decorator</span><span class="o">{</span>
   <span class="kd">public</span> <span class="nf">Bubble</span><span class="o">(</span><span class="nc">Component</span> <span class="n">component</span><span class="o">)</span> <span class="o">{</span>
     <span class="c1">// 使用父類別Decorator建構子</span>
     <span class="kd">super</span><span class="o">(</span><span class="n">component</span><span class="o">);</span>
+    <span class="c1">// 設定價格</span>
     <span class="n">setPrice</span><span class="o">(</span><span class="mi">5</span><span class="o">);</span>
+    <span class="c1">// 設定品項</span>
     <span class="n">setDesc</span><span class="o">(</span><span class="s">"珍珠"</span><span class="o">);</span>
   <span class="o">}</span>
 <span class="o">}</span>
@@ -2493,11 +2526,15 @@
 6
 7
 8
+9
+10
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Milk</span> <span class="kd">extends</span> <span class="nc">Decorator</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="nf">Milk</span><span class="o">(</span><span class="nc">Component</span> <span class="n">component</span><span class="o">)</span> <span class="o">{</span>
     <span class="c1">// 使用父類別Decorator建構子</span>
     <span class="kd">super</span><span class="o">(</span><span class="n">component</span><span class="o">);</span>
+    <span class="c1">// 設定價格</span>
     <span class="n">setPrice</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+    <span class="c1">// 設定品項</span>
     <span class="n">setDesc</span><span class="o">(</span><span class="s">"牛奶"</span><span class="o">);</span>
   <span class="o">}</span>
 <span class="o">}</span>
@@ -2565,23 +2602,6 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>珍珠=5 &amp; 牛奶=10 &amp; 牛奶=10 &amp; 綠茶 = 40
 65
 </code></pre></div></div>
-
-<h2 id="io-stream">IO Stream</h2>
-<p>以下的程式碼，不覺得跟上面的相同嗎？</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="code"><pre>  <span class="c1">//資料寫到目的地，用輸出串流</span>
-  <span class="nc">ByteArrayOutputStream</span> <span class="n">bos</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayOutputStream</span><span class="o">();</span>
-  <span class="nc">ObjectOutputStream</span> <span class="n">oos</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ObjectOutputStream</span><span class="o">(</span><span class="n">bos</span><span class="o">);</span>
-  <span class="c1">// 物件寫到輸出串流</span>
-  <span class="n">oos</span><span class="o">.</span><span class="na">writeObject</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
 
 </section>
             </div><div class="search-results">
@@ -2653,7 +2673,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/design_pattern/observer" class="navigation navigation-next navigation-unique" aria-label="Next page: 觀察者模式">
+                        <a href="/pages/design_pattern/decorator_io" class="navigation navigation-next navigation-unique" aria-label="Next page: IO裝飾者模式">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2773,7 +2793,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-08 13:17:09 +0800"
+        "time": "2025-05-10 16:48:40 +0800"
     },
     "basePath": "",
     "book": {

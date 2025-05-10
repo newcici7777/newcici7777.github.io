@@ -122,7 +122,9 @@ public class Decorator extends Component{
 {% highlight java linenos %}
 public class BlackTea extends Drink {
   public BlackTea() {
+    // 設定價格
     setPrice(35);
+    // 設定品項
     setDesc("紅茶 = " + getPrice());
   }
 }
@@ -132,7 +134,9 @@ public class BlackTea extends Drink {
 {% highlight java linenos %}
 public class GreenTea extends Drink{
   public GreenTea() {
+    // 設定價格
     setPrice(40);
+    // 設定品項
     setDesc("綠茶 = " + getPrice());
   }
 }
@@ -148,7 +152,9 @@ public class Bubble extends Decorator{
   public Bubble(Component component) {
     // 使用父類別Decorator建構子
     super(component);
+    // 設定價格
     setPrice(5);
+    // 設定品項
     setDesc("珍珠");
   }
 }
@@ -160,7 +166,9 @@ public class Milk extends Decorator {
   public Milk(Component component) {
     // 使用父類別Decorator建構子
     super(component);
+    // 設定價格
     setPrice(10);
+    // 設定品項
     setDesc("牛奶");
   }
 }
@@ -204,17 +212,6 @@ public class Test {
 珍珠=5 & 牛奶=10 & 牛奶=10 & 綠茶 = 40
 65
 ```
-
-## IO Stream
-以下的程式碼，不覺得跟上面的相同嗎？
-{% highlight java linenos %}
-  //資料寫到目的地，用輸出串流
-  ByteArrayOutputStream bos = new ByteArrayOutputStream();
-  ObjectOutputStream oos = new ObjectOutputStream(bos);
-  // 物件寫到輸出串流
-  oos.writeObject(this);
-{% endhighlight %}
-
 
 [1]: {% link _pages/java/uml.md %}
 
