@@ -1483,7 +1483,21 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/bytearr_io/" data-nav-link> ByteArray串流</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/decorator_io/" data-nav-link> 有附加功能的串流</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/obj_stream/" data-nav-link> 序列化與反序列化</a>
         
             
         </li></ul></li>
@@ -1666,6 +1680,16 @@
 	<li class="" data-nav-item>
     	<a href="/pages/design_pattern/template/" data-nav-link> 樣板模式</a>
         
+            
+        </li>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/design_pattern/deepclone/" data-nav-link> DeepClone</a>
+        
+            
+                
+
             
         </li></ul></li></ul></li>
 	
@@ -2243,7 +2267,14 @@
                         <h1 id="/pages/design_pattern/deepclone">DeepClone</h1>
                     
 
-                    <p>芭比工廠要生廠100隻一模一樣的芭比與肯尼，二隻娃娃一起放在盒子中賣。請問如何寫？</p>
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/java/bytearr_io/">ByteArray串流</a></li>
+  <li><a href="/pages/java/obj_stream/">序列化與反序列化</a></li>
+</ul>
+
+<p>芭比工廠要生廠100隻一模一樣的芭比與肯尼，二隻娃娃一起放在盒子中賣。請問如何寫？</p>
 
 <p>Barbie</p>
 
@@ -2306,6 +2337,10 @@
 56
 57
 58
+59
+60
+61
+62
 </pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">java.io.*</span><span class="o">;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Barbie</span> <span class="kd">implements</span> <span class="nc">Serializable</span> <span class="o">{</span>
@@ -2330,23 +2365,27 @@
   <span class="o">}</span>
 
   <span class="kd">public</span> <span class="nc">Barbie</span> <span class="nf">deepclone</span><span class="o">()</span> <span class="o">{</span>
-    <span class="c1">//資料寫到至目的地，用輸出串流</span>
+    <span class="c1">// 寫到記憶體緩衝區</span>
     <span class="nc">ByteArrayOutputStream</span> <span class="n">bos</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="c1">// 物件裝飾串流</span>
     <span class="nc">ObjectOutputStream</span> <span class="n">oos</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
-    <span class="c1">//資料從來源讀取，用輸入串流</span>
-    <span class="nc">ObjectInputStream</span> <span class="n">ois</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="c1">// 讀取記憶體緩衝區</span>
     <span class="nc">ByteArrayInputStream</span> <span class="n">bis</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="c1">// 讀取物件</span>
+    <span class="nc">ObjectInputStream</span> <span class="n">ois</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
     <span class="k">try</span> <span class="o">{</span>
-      <span class="c1">//資料寫到目的地，用輸出串流</span>
+      <span class="c1">// 建立串流</span>
       <span class="n">bos</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayOutputStream</span><span class="o">();</span>
       <span class="n">oos</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ObjectOutputStream</span><span class="o">(</span><span class="n">bos</span><span class="o">);</span>
-      <span class="c1">// 物件寫到輸出串流</span>
+      <span class="c1">// 物件寫到記憶體緩衝區</span>
       <span class="n">oos</span><span class="o">.</span><span class="na">writeObject</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
-      <span class="c1">//寫出完成後，可用toByteArray()取得byte結果</span>
-      <span class="c1">//資料從來源取出，用輸入串流</span>
+      <span class="c1">// toByteArray() 將記憶體緩衝區複製到byte[]傳回</span>
+      <span class="c1">// 建立讀取串流</span>
       <span class="n">bis</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayInputStream</span><span class="o">(</span><span class="n">bos</span><span class="o">.</span><span class="na">toByteArray</span><span class="o">());</span>
-      <span class="n">ois</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ObjectInputStream</span><span class="o">(</span><span class="n">bis</span><span class="o">);</span>
       <span class="c1">// 讀取物件</span>
+      <span class="n">ois</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ObjectInputStream</span><span class="o">(</span><span class="n">bis</span><span class="o">);</span>
+      <span class="c1">// readObject()是Object物件</span>
+      <span class="c1">// 向下轉型成Barbie才能使用Barbie的方法</span>
       <span class="nc">Barbie</span> <span class="n">copy</span> <span class="o">=</span> <span class="o">(</span><span class="nc">Barbie</span><span class="o">)</span> <span class="n">ois</span><span class="o">.</span><span class="na">readObject</span><span class="o">();</span>
       <span class="k">return</span> <span class="n">copy</span><span class="o">;</span>
     <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
@@ -2443,6 +2482,7 @@
 經典芭比/Sugar Daddy 肯尼/hashcode:693632176
 經典芭比/Sugar Daddy 肯尼/hashcode:326549596
 </code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2505,7 +2545,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/design_pattern/template" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 樣板模式">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/android/android_thread" class="navigation navigation-next navigation-unique" aria-label="Next page: Main Thread">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -2623,7 +2673,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-10 16:48:40 +0800"
+        "time": "2025-05-12 12:36:01 +0800"
     },
     "basePath": "",
     "book": {

@@ -1465,7 +1465,7 @@
     	<a href="/pages/java/io/" data-nav-link> 串流基礎概念</a>
         
             
-                <ul><li><a href="#輸入串流inputstream" data-nav-link " >輸入串流InputStream</a></li><li><a href="#輸出串流outputstream" data-nav-link " >輸出串流OutputStream</a></li><li><a href="#串流抽象父類別" data-nav-link " >串流抽象父類別</a><ul><li><a href="#byte位元組" data-nav-link " >byte位元組</a></li><li><a href="#char字元" data-nav-link " >char字元</a></li></ul></li><li><a href="#子類別" data-nav-link " >子類別</a><ul><li><a href="#byte用byte位元組來讀取與輸出" data-nav-link " >Byte:用byte位元組來讀取與輸出</a></li><li><a href="#字元用char字元來讀取與輸出" data-nav-link " >字元:用char字元來讀取與輸出</a></li><li><a href="#檔案" data-nav-link " >檔案</a></li><li><a href="#記憶體byte陣列" data-nav-link " >記憶體byte陣列</a></li></ul></li><li><a href="#父類別方法" data-nav-link " >父類別方法</a><ul><li><a href="#byte位元組-1" data-nav-link " >Byte位元組</a></li><li><a href="#字元" data-nav-link " >字元</a></li></ul></li></ul>
+                <ul><li><a href="#輸入串流inputstream" data-nav-link " >輸入串流InputStream</a></li><li><a href="#輸出串流outputstream" data-nav-link " >輸出串流OutputStream</a></li><li><a href="#串流抽象父類別" data-nav-link " >串流抽象父類別</a><ul><li><a href="#byte位元組" data-nav-link " >byte位元組</a></li><li><a href="#char字元" data-nav-link " >char字元</a></li></ul></li><li><a href="#讀取與寫出的位置" data-nav-link " >讀取與寫出的位置</a><ul><li><a href="#用byte來讀取與輸出" data-nav-link " >用byte來讀取與輸出</a></li><li><a href="#用char字元來讀取與輸出" data-nav-link " >用char字元來讀取與輸出</a></li><li><a href="#檔案" data-nav-link " >檔案</a></li><li><a href="#記憶體緩衝區" data-nav-link " >記憶體緩衝區</a></li></ul></li><li><a href="#父類別方法" data-nav-link " >父類別方法</a><ul><li><a href="#byte位元組-1" data-nav-link " >Byte位元組</a></li><li><a href="#字元" data-nav-link " >字元</a></li></ul></li></ul>
 
             
         </li>
@@ -1486,7 +1486,21 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/bytearr_io/" data-nav-link> ByteArray串流</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/decorator_io/" data-nav-link> 有附加功能的串流</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/obj_stream/" data-nav-link> 序列化與反序列化</a>
         
             
         </li></ul></li>
@@ -1668,6 +1682,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/design_pattern/template/" data-nav-link> 樣板模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/deepclone/" data-nav-link> DeepClone</a>
         
             
         </li></ul></li></ul></li>
@@ -2274,17 +2295,19 @@
 
 <p>Writer以「字元」方式寫出去</p>
 
-<h2 id="子類別">子類別</h2>
-<p>資料的來源與寫出的位置有二種，一種是檔案，一種是陣列。</p>
+<h2 id="讀取與寫出的位置">讀取與寫出的位置</h2>
+<p>資料的讀取與寫出的位置有二種，一種是檔案，一種是記憶體緩衝區。</p>
 
-<h3 id="byte用byte位元組來讀取與輸出">Byte:用byte位元組來讀取與輸出</h3>
+<p>記憶體緩衝區為電腦暫時置放輸出或輸入資料的位址。</p>
+
+<h3 id="用byte來讀取與輸出">用byte來讀取與輸出</h3>
 
 <p><img src="/assets/img/java/io3.png" alt="img" /></p>
 
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">來源</th>
+      <th style="text-align: left">讀寫位置</th>
       <th style="text-align: left">輸入(讀)</th>
       <th style="text-align: left">輸出(寫)</th>
     </tr>
@@ -2303,14 +2326,14 @@
   </tbody>
 </table>
 
-<h3 id="字元用char字元來讀取與輸出">字元:用char字元來讀取與輸出</h3>
+<h3 id="用char字元來讀取與輸出">用char字元來讀取與輸出</h3>
 
 <p><img src="/assets/img/java/io4.png" alt="img" /></p>
 
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">來源</th>
+      <th style="text-align: left">讀寫位置</th>
       <th style="text-align: left">輸入(讀)</th>
       <th style="text-align: left">輸出(寫)</th>
     </tr>
@@ -2360,15 +2383,15 @@
   </li>
 </ul>
 
-<h3 id="記憶體byte陣列">記憶體byte陣列</h3>
-<p>實際上就是讀寫byte陣列。</p>
+<h3 id="記憶體緩衝區">記憶體緩衝區</h3>
+<p>讀取與寫入的位置是記憶體緩衝區，就像變數在記憶體中會有個位址存放值，二者都是存在記憶體。</p>
 
-<p>ByteArrayInputStream 讀取Byte陣列</p>
+<p>ByteArrayInputStream 讀取記憶體緩衝區資料</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.io.InputStream
  ↳	java.io.ByteArrayInputStream
 </code></pre></div></div>
 
-<p>ByteArrayOutputStream 寫到Byte陣列</p>
+<p>ByteArrayOutputStream 寫到記憶體緩衝區資料</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.io.OutputStream
  ↳	java.io.ByteArrayOutputStream
 </code></pre></div></div>
@@ -2389,49 +2412,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>以上二者都是寫到byte陣列，但使用ByteArrayOutputStream(寫到陣列)，可以使用ObjectOutputStream物件功能，把物件寫到byte陣列。</p>
-
-<p>再透過ByteArrayInputStream讀取陣列與ObjectInputStream物件功能，讀取byte陣列中的物件，實作Deep Clone深拷貝，複製物件。</p>
-
-<p>Deep Clone程式碼</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-</pre></td><td class="code"><pre>  <span class="c1">// 建立byte陣列寫出串流</span>
-  <span class="nc">ByteArrayOutputStream</span> <span class="n">baos</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayOutputStream</span><span class="o">();</span>
-  <span class="c1">// 為byte陣列輸出串流 加上物件的功能</span>
-  <span class="c1">// 原文: adds functionality to output stream</span>
-  <span class="nc">ObjectOutputStream</span> <span class="n">oos</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ObjectOutputStream</span><span class="o">(</span><span class="n">baos</span><span class="o">);</span>
-  <span class="c1">// 把物件寫入byte陣列</span>
-  <span class="c1">// 使用ObjectOutputStream.writeObject()</span>
-  <span class="n">oos</span><span class="o">.</span><span class="na">writeObject</span><span class="o">(</span><span class="n">object</span><span class="o">);</span>
-  
-  <span class="c1">// 建立byte陣列讀取串流， 資料的來源是byte陣列</span>
-  <span class="nc">ByteArrayInputStream</span> <span class="n">bais</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayInputStream</span><span class="o">(</span><span class="n">baos</span><span class="o">.</span><span class="na">toByteArray</span><span class="o">());</span>
-  <span class="c1">// 為byte陣列輸入串流 加上物件的功能</span>
-  <span class="c1">// 原文: adds functionality to input stream</span>
-  <span class="nc">ObjectInputStream</span> <span class="n">ois</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ObjectInputStream</span><span class="o">(</span><span class="n">bais</span><span class="o">);</span>
-  <span class="c1">// 把物件讀取出來</span>
-  <span class="c1">// 使用ObjectInputStream.readObject()</span>
-  <span class="k">return</span> <span class="o">(</span><span class="no">T</span><span class="o">)</span> <span class="n">ois</span><span class="o">.</span><span class="na">readObject</span><span class="o">();</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p>以上二者都是在記憶體建立byte[]陣列的空間，存放資料。</p>
 
 <h2 id="父類別方法">父類別方法</h2>
 <p>抽象父類別會提供基本的讀取與寫入方法。</p>
@@ -2669,7 +2650,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-10 16:48:40 +0800"
+        "time": "2025-05-12 12:36:01 +0800"
     },
     "basePath": "",
     "book": {

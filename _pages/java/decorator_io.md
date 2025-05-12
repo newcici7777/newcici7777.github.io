@@ -9,34 +9,64 @@ Prerequisites:
 
 原文: adds functionality to stream
 
-意思是在來源的串流基礎上，增加其它功能的串流。
+意思是在以下8種串流基礎上，增加其它功能的串流，稱作裝飾串流。
 
-來源串流指的是
+串流讀寫格式分為byte、字元。
 
-Byte
+byte串流
 
-|來源|輸入(讀)|輸出(寫)|
+|讀寫位置|輸入(讀)|輸出(寫)|
 |檔案|FileInputStream|FileOutputStream|
 |記憶體|ByteArrayInputStream|ByteArrayOutputStream|
 
-字元
+字元串流
 
-|來源|輸入(讀)|輸出(寫)|
+|讀寫位置|輸入(讀)|輸出(寫)|
 |檔案|FileReader|FileWriter|
 |記憶體|CharArrayReader|CharArrayWriter|
 
 ## 裝飾串流
-有很多附加功能串流，目前只想說明下列幾種，下圖已經把串流的功能寫上。
+裝飾串流指的是有附加功能串流，並非以上8種串流。
 
-Byte位元組
+有很多裝飾串流，目前只想說明下列幾種，下圖已經把裝飾串流的功能寫上。
+
+byte串流
 
 ![img]({{site.imgurl}}/java/decorator_io1.png)
 
-Char字元
+char串流
 
 ![img]({{site.imgurl}}/java/decorator_io2.png)
 
 要了解裝飾串流的原理，可以查看[IO裝飾者模式][2]
+
+## 關閉串流
+直接關閉最外層的裝飾串流，程式會使用最內部的串流(檔案串流或記憶體串流)，把串流關閉，內部的串流在源始碼的變數為in。
+
+什麼是最外層的裝飾串流？以下裝飾串流分別為ObjectInputStream、BufferedInputStream，最外層的裝飾串流是ObjectInputStream。
+{% highlight java linenos %}
+ObjectInputStream ois = new ObjectInputStream(new BufferedInputStream(new FileInputStream("/Users/cici/testc/1.dat")));
+{% endhighlight %}
+
+以下程式碼，把檔案讀取串流變成一個變數fis，裝飾串流buff_in變數，關閉串流不用把二個close，直接關閉最外層的裝飾串流buff_in。
+{% highlight java linenos %}
+  FileInputStream fis = null;
+  BufferedInputStream buff_in = null;
+  try {
+    fis = new FileInputStream("/Users/cici/testc/1.png");
+    buff_in = new BufferedInputStream(fis);
+  } catch (IOException e) {
+    e.printStackTrace();
+  } finally {
+    try {
+      // 只要關閉最外面的裝飾串流
+      if (buff_in != null)
+        buff_in.close();
+    } catch (IOException ex) {
+      ex.printStackTrace();
+    }
+  }
+{% endhighlight %}
 
 ## BufferedReader
 ### 建構子
@@ -110,8 +140,10 @@ java程式設計
     e.printStackTrace();
   } finally {
     try {
-      buff_in.close();
-      buff_out.close();
+      if (buff_in != null)
+        buff_in.close();
+      if (buff_out != null)
+        buff_out.close();
     } catch (IOException ex) {
       ex.printStackTrace();
     }

@@ -24,7 +24,8 @@ keywords: Java, FileInputStream, FileOutputStream, FileReader, FileWriter
     // 2.關閉串流
     try {
       // 關閉時可能會有錯誤，所以要再catch一次
-      fileInputStream.close();
+      if (fileInputStream != null)
+        fileInputStream.close();
     } catch (IOException e) {
       e.printStackTrace();
     }
@@ -216,9 +217,11 @@ llo wo
       // 關閉串流
       try {
         // 關閉讀串流
-        fileInputStream.close();
+        if (fileInputStream != null)
+          fileInputStream.close();
         // 關閉寫串流
-        fileOutputStream.close();
+        if (fileOutputStream != null)
+          fileOutputStream.close();
       } catch (IOException e) {
         e.printStackTrace();
       }
@@ -247,7 +250,8 @@ llo wo
   } finally {
     // 關閉串流
     try {
-      reader.close();
+      if (reader != null)
+        reader.close();
     } catch (IOException e) {
       e.printStackTrace();
     }
@@ -298,7 +302,8 @@ llo
   } finally {
     // 關閉串流
     try {
-      writer.close();
+      if (writer != null)
+        writer.close();
     } catch (IOException e) {
       e.printStackTrace();
     }

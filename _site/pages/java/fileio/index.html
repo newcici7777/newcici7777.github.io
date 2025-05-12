@@ -1486,7 +1486,21 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/bytearr_io/" data-nav-link> ByteArray串流</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/decorator_io/" data-nav-link> 有附加功能的串流</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/obj_stream/" data-nav-link> 序列化與反序列化</a>
         
             
         </li></ul></li>
@@ -1668,6 +1682,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/design_pattern/template/" data-nav-link> 樣板模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/deepclone/" data-nav-link> DeepClone</a>
         
             
         </li></ul></li></ul></li>
@@ -2276,6 +2297,7 @@
 15
 16
 17
+18
 </pre></td><td class="code"><pre>  <span class="c1">// 1.宣告串流</span>
   <span class="nc">FileInputStream</span> <span class="n">fileInputStream</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
   <span class="k">try</span> <span class="o">{</span>
@@ -2287,7 +2309,8 @@
     <span class="c1">// 2.關閉串流</span>
     <span class="k">try</span> <span class="o">{</span>
       <span class="c1">// 關閉時可能會有錯誤，所以要再catch一次</span>
-      <span class="n">fileInputStream</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">fileInputStream</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+        <span class="n">fileInputStream</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
     <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
       <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
     <span class="o">}</span>
@@ -2588,6 +2611,8 @@ lol
 28
 29
 30
+31
+32
 </pre></td><td class="code"><pre>    <span class="c1">// 宣告串流</span>
     <span class="nc">FileInputStream</span> <span class="n">fileInputStream</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
     <span class="nc">FileOutputStream</span> <span class="n">fileOutputStream</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
@@ -2611,9 +2636,11 @@ lol
       <span class="c1">// 關閉串流</span>
       <span class="k">try</span> <span class="o">{</span>
         <span class="c1">// 關閉讀串流</span>
-        <span class="n">fileInputStream</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">fileInputStream</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+          <span class="n">fileInputStream</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
         <span class="c1">// 關閉寫串流</span>
-        <span class="n">fileOutputStream</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">fileOutputStream</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+          <span class="n">fileOutputStream</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
       <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
         <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
       <span class="o">}</span>
@@ -2651,6 +2678,7 @@ lol
 18
 19
 20
+21
 </pre></td><td class="code"><pre>  <span class="nc">FileReader</span> <span class="n">reader</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
   <span class="k">try</span> <span class="o">{</span>
     <span class="c1">// 檔案內容llo wo</span>
@@ -2666,7 +2694,8 @@ lol
   <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
     <span class="c1">// 關閉串流</span>
     <span class="k">try</span> <span class="o">{</span>
-      <span class="n">reader</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">reader</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+        <span class="n">reader</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
     <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
       <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
     <span class="o">}</span>
@@ -2739,6 +2768,7 @@ o
 12
 13
 14
+15
 </pre></td><td class="code"><pre>  <span class="nc">FileWriter</span> <span class="n">writer</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
   <span class="k">try</span> <span class="o">{</span>
     <span class="n">writer</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileWriter</span><span class="o">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="o">);</span>
@@ -2748,7 +2778,8 @@ o
   <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
     <span class="c1">// 關閉串流</span>
     <span class="k">try</span> <span class="o">{</span>
-      <span class="n">writer</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">writer</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+        <span class="n">writer</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
     <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
       <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
     <span class="o">}</span>
@@ -2888,7 +2919,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/decorator_io" class="navigation navigation-next navigation-unique" aria-label="Next page: 有附加功能的串流">
+                        <a href="/pages/java/bytearr_io" class="navigation navigation-next navigation-unique" aria-label="Next page: ByteArray串流">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3008,7 +3039,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-10 16:48:40 +0800"
+        "time": "2025-05-12 12:36:01 +0800"
     },
     "basePath": "",
     "book": {

@@ -31,24 +31,26 @@ Reader讀取字元
 
 Writer以「字元」方式寫出去
 
-## 子類別
-資料的來源與寫出的位置有二種，一種是檔案，一種是陣列。
+## 讀取與寫出的位置
+資料的讀取與寫出的位置有二種，一種是檔案，一種是記憶體緩衝區。
 
-### Byte:用byte位元組來讀取與輸出
+記憶體緩衝區為電腦暫時置放輸出或輸入資料的位址。
+
+### 用byte來讀取與輸出
 
 ![img]({{site.imgurl}}/java/io3.png)
 
-|來源|輸入(讀)|輸出(寫)|
+|讀寫位置|輸入(讀)|輸出(寫)|
 |:----|:----|:----|
 |檔案|FileInputStream|FileOutputStream|
 |記憶體|ByteArrayInputStream|ByteArrayOutputStream|
 
 
-### 字元:用char字元來讀取與輸出
+### 用char字元來讀取與輸出
 
 ![img]({{site.imgurl}}/java/io4.png)
 
-|來源|輸入(讀)|輸出(寫)|
+|讀寫位置|輸入(讀)|輸出(寫)|
 |:----|:----|:----|
 |檔案|FileReader|FileWriter|
 |記憶體|CharArrayReader|CharArrayWriter|
@@ -80,16 +82,16 @@ java.io.Writer
     ↳	java.io.FileWriter
 ```
 
-### 記憶體byte陣列
-實際上就是讀寫byte陣列。
+### 記憶體緩衝區
+讀取與寫入的位置是記憶體緩衝區，就像變數在記憶體中會有個位址存放值，二者都是存在記憶體。
 
-ByteArrayInputStream 讀取Byte陣列
+ByteArrayInputStream 讀取記憶體緩衝區資料
 ```
 java.io.InputStream
  ↳	java.io.ByteArrayInputStream
 ```
 
-ByteArrayOutputStream 寫到Byte陣列
+ByteArrayOutputStream 寫到記憶體緩衝區資料
 ```
 java.io.OutputStream
  ↳	java.io.ByteArrayOutputStream
@@ -105,30 +107,7 @@ byte[] bytes = new byte[1024];
 ByteArrayOutputStream baos = new ByteArrayOutputStream();
 {% endhighlight %}
 
-以上二者都是寫到byte陣列，但使用ByteArrayOutputStream(寫到陣列)，可以使用ObjectOutputStream物件功能，把物件寫到byte陣列。
-
-再透過ByteArrayInputStream讀取陣列與ObjectInputStream物件功能，讀取byte陣列中的物件，實作Deep Clone深拷貝，複製物件。
-
-Deep Clone程式碼
-{% highlight java linenos %}
-  // 建立byte陣列寫出串流
-  ByteArrayOutputStream baos = new ByteArrayOutputStream();
-  // 為byte陣列輸出串流 加上物件的功能
-  // 原文: adds functionality to output stream
-  ObjectOutputStream oos = new ObjectOutputStream(baos);
-  // 把物件寫入byte陣列
-  // 使用ObjectOutputStream.writeObject()
-  oos.writeObject(object);
-  
-  // 建立byte陣列讀取串流， 資料的來源是byte陣列
-  ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
-  // 為byte陣列輸入串流 加上物件的功能
-  // 原文: adds functionality to input stream
-  ObjectInputStream ois = new ObjectInputStream(bais);
-  // 把物件讀取出來
-  // 使用ObjectInputStream.readObject()
-  return (T) ois.readObject();
-{% endhighlight %}	
+以上二者都是在記憶體建立byte[]陣列的空間，存放資料。
 
 ## 父類別方法
 抽象父類別會提供基本的讀取與寫入方法。

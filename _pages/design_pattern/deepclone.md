@@ -3,6 +3,11 @@ title: DeepClone
 date: 2025-04-18
 keywords: Java, Design patterns, DeepClone, Prototype
 ---
+Prerequisites:
+
+- [ByteArray串流][1]
+- [序列化與反序列化][2]
+
 芭比工廠要生廠100隻一模一樣的芭比與肯尼，二隻娃娃一起放在盒子中賣。請問如何寫？
 
 Barbie
@@ -31,23 +36,27 @@ public class Barbie implements Serializable {
   }
 
   public Barbie deepclone() {
-    //資料寫到至目的地，用輸出串流
+    // 寫到記憶體緩衝區
     ByteArrayOutputStream bos = null;
+    // 物件裝飾串流
     ObjectOutputStream oos = null;
-    //資料從來源讀取，用輸入串流
-    ObjectInputStream ois = null;
+    // 讀取記憶體緩衝區
     ByteArrayInputStream bis = null;
+    // 讀取物件
+    ObjectInputStream ois = null;
     try {
-      //資料寫到目的地，用輸出串流
+      // 建立串流
       bos = new ByteArrayOutputStream();
       oos = new ObjectOutputStream(bos);
-      // 物件寫到輸出串流
+      // 物件寫到記憶體緩衝區
       oos.writeObject(this);
-      //寫出完成後，可用toByteArray()取得byte結果
-      //資料從來源取出，用輸入串流
+      // toByteArray() 將記憶體緩衝區複製到byte[]傳回
+      // 建立讀取串流
       bis = new ByteArrayInputStream(bos.toByteArray());
-      ois = new ObjectInputStream(bis);
       // 讀取物件
+      ois = new ObjectInputStream(bis);
+      // readObject()是Object物件
+      // 向下轉型成Barbie才能使用Barbie的方法
       Barbie copy = (Barbie) ois.readObject();
       return copy;
     } catch (Exception e) {
@@ -55,9 +64,8 @@ public class Barbie implements Serializable {
       return null;
     } finally {
       try {
-        bis.close();
+        // 只需要關閉裝飾串流，詳見裝飾串流文章
         ois.close();
-        bos.close();
         oos.close();
       } catch (Exception e) {
         e.printStackTrace();
@@ -89,7 +97,7 @@ public class Test {
     Ken ken = new Ken();
     ken.setName("Sugar Daddy 肯尼");
     barbie.setKen(ken);
-    //生產3隻經典芭比
+    //複製3隻經典芭比
     Barbie barbie1 = barbie.deepclone();
     System.out.println(barbie1.getName() + "/" + barbie1.getKen().getName()
         + "/hashcode:" + barbie1.hashCode());
@@ -109,3 +117,6 @@ public class Test {
 經典芭比/Sugar Daddy 肯尼/hashcode:693632176
 經典芭比/Sugar Daddy 肯尼/hashcode:326549596
 ```
+
+[1]: {% link _pages/java/bytearr_io.md %}
+[2]: {% link _pages/java/obj_stream.md %}

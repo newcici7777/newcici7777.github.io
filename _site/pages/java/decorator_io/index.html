@@ -1482,12 +1482,26 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/bytearr_io/" data-nav-link> ByteArray串流</a>
+        
+            
+        </li>
+	
+	
 	<li class="active" data-nav-item>
     	<a href="/pages/java/decorator_io/" data-nav-link> 有附加功能的串流</a>
         
             
-                <ul><li><a href="#裝飾串流" data-nav-link " >裝飾串流</a></li><li><a href="#bufferedreader" data-nav-link " >BufferedReader</a><ul><li><a href="#建構子" data-nav-link " >建構子</a></li><li><a href="#readline" data-nav-link " >readLine()</a></li><li><a href="#write與newline" data-nav-link " >write()與newLine()</a></li></ul></li></ul>
+                <ul><li><a href="#裝飾串流" data-nav-link " >裝飾串流</a></li><li><a href="#關閉串流" data-nav-link " >關閉串流</a></li><li><a href="#bufferedreader" data-nav-link " >BufferedReader</a><ul><li><a href="#建構子" data-nav-link " >建構子</a></li><li><a href="#readline" data-nav-link " >readLine()</a></li><li><a href="#write與newline" data-nav-link " >write()與newLine()</a></li></ul></li><li><a href="#bufferedinputstream與bufferedoutputstream" data-nav-link " >BufferedInputStream與BufferedOutputStream</a></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/obj_stream/" data-nav-link> 序列化與反序列化</a>
+        
             
         </li></ul></li>
 	
@@ -1668,6 +1682,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/design_pattern/template/" data-nav-link> 樣板模式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/deepclone/" data-nav-link> DeepClone</a>
         
             
         </li></ul></li></ul></li>
@@ -2254,16 +2275,16 @@
 
 <p>原文: adds functionality to stream</p>
 
-<p>意思是在來源的串流基礎上，增加其它功能的串流。</p>
+<p>意思是在以下8種串流基礎上，增加其它功能的串流，稱作裝飾串流。</p>
 
-<p>來源串流指的是</p>
+<p>串流讀寫格式分為byte、字元。</p>
 
-<p>Byte</p>
+<p>byte串流</p>
 
 <table>
   <tbody>
     <tr>
-      <td>來源</td>
+      <td>讀寫位置</td>
       <td>輸入(讀)</td>
       <td>輸出(寫)</td>
     </tr>
@@ -2280,12 +2301,12 @@
   </tbody>
 </table>
 
-<p>字元</p>
+<p>字元串流</p>
 
 <table>
   <tbody>
     <tr>
-      <td>來源</td>
+      <td>讀寫位置</td>
       <td>輸入(讀)</td>
       <td>輸出(寫)</td>
     </tr>
@@ -2303,17 +2324,68 @@
 </table>
 
 <h2 id="裝飾串流">裝飾串流</h2>
-<p>有很多附加功能串流，目前只想說明下列幾種，下圖已經把串流的功能寫上。</p>
+<p>裝飾串流指的是有附加功能串流，並非以上8種串流。</p>
 
-<p>Byte位元組</p>
+<p>有很多裝飾串流，目前只想說明下列幾種，下圖已經把裝飾串流的功能寫上。</p>
+
+<p>byte串流</p>
 
 <p><img src="/assets/img/java/decorator_io1.png" alt="img" /></p>
 
-<p>Char字元</p>
+<p>char串流</p>
 
 <p><img src="/assets/img/java/decorator_io2.png" alt="img" /></p>
 
 <p>要了解裝飾串流的原理，可以查看<a href="/pages/design_pattern/decorator_io/">IO裝飾者模式</a></p>
+
+<h2 id="關閉串流">關閉串流</h2>
+<p>直接關閉最外層的裝飾串流，程式會使用最內部的串流(檔案串流或記憶體串流)，把串流關閉，內部的串流在源始碼的變數為in。</p>
+
+<p>什麼是最外層的裝飾串流？以下裝飾串流分別為ObjectInputStream、BufferedInputStream，最外層的裝飾串流是ObjectInputStream。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">ObjectInputStream</span> <span class="n">ois</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ObjectInputStream</span><span class="o">(</span><span class="k">new</span> <span class="nc">BufferedInputStream</span><span class="o">(</span><span class="k">new</span> <span class="nc">FileInputStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/1.dat"</span><span class="o">)));</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下程式碼，把檔案讀取串流變成一個變數fis，裝飾串流buff_in變數，關閉串流不用把二個close，直接關閉最外層的裝飾串流buff_in。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre>  <span class="nc">FileInputStream</span> <span class="n">fis</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="nc">BufferedInputStream</span> <span class="n">buff_in</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="k">try</span> <span class="o">{</span>
+    <span class="n">fis</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileInputStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/1.png"</span><span class="o">);</span>
+    <span class="n">buff_in</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedInputStream</span><span class="o">(</span><span class="n">fis</span><span class="o">);</span>
+  <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+  <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
+    <span class="k">try</span> <span class="o">{</span>
+      <span class="c1">// 只要關閉最外面的裝飾串流</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">buff_in</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+        <span class="n">buff_in</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">ex</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 <h2 id="bufferedreader">BufferedReader</h2>
 <h3 id="建構子">建構子</h3>
@@ -2345,15 +2417,23 @@
 4
 5
 6
+7
+8
 </pre></td><td class="code"><pre>  <span class="nc">BufferedReader</span> <span class="n">bufferedReader</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
   <span class="k">try</span> <span class="o">{</span>
     <span class="n">bufferedReader</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">FileReader</span><span class="o">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="o">));</span>
-    <span class="nc">String</span> <span class="n">line</span> <span class="o">=</span> <span class="n">bufferedReader</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">line</span><span class="o">);</span>
-  <span class="o">}</span><span class="c1">// ...避免程式碼過多，截掉</span>
+    <span class="nc">String</span> <span class="n">line</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="k">while</span><span class="o">((</span><span class="n">line</span> <span class="o">=</span> <span class="n">bufferedReader</span><span class="o">.</span><span class="na">readLine</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">line</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>測試程式
+
+java程式設計
+</code></pre></div></div>
 <h3 id="write與newline">write()與newLine()</h3>
 <p>write()不會自動換行，需使用BufferedWriter.newLine()才會換行。</p>
 
@@ -2388,6 +2468,63 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>測試程式
 java程式設計
 </code></pre></div></div>
+
+<h2 id="bufferedinputstream與bufferedoutputstream">BufferedInputStream與BufferedOutputStream</h2>
+<p>使用緩衝區高效讀取與寫入</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+</pre></td><td class="code"><pre>  <span class="nc">BufferedInputStream</span> <span class="n">buff_in</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="nc">BufferedOutputStream</span> <span class="n">buff_out</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="k">try</span> <span class="o">{</span>
+    <span class="n">buff_in</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedInputStream</span><span class="o">(</span><span class="k">new</span> <span class="nc">FileInputStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/1.png"</span><span class="o">));</span>
+    <span class="n">buff_out</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedOutputStream</span><span class="o">(</span><span class="k">new</span> <span class="nc">FileOutputStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/3.png"</span><span class="o">));</span>
+    <span class="c1">// 每次迴圈讀到的byte數</span>
+    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="c1">// 建立buffer</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buff</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
+    <span class="k">while</span> <span class="o">((</span><span class="n">len</span> <span class="o">=</span> <span class="n">buff_in</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">buff</span><span class="o">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="c1">// 寫入</span>
+      <span class="n">buff_out</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">buff</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">len</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+  <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
+    <span class="k">try</span> <span class="o">{</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">buff_in</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+        <span class="n">buff_in</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">buff_out</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+        <span class="n">buff_out</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">ex</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 </section>
             </div><div class="search-results">
@@ -2452,14 +2589,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/java/fileio" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 檔案串流">
+                        <a href="/pages/java/bytearr_io" class="navigation navigation-prev navigation-unique" aria-label="Previous page: ByteArray串流">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/java/uml" class="navigation navigation-next navigation-unique" aria-label="Next page: UML類別圖">
+                        <a href="/pages/java/obj_stream" class="navigation navigation-next navigation-unique" aria-label="Next page: 序列化與反序列化">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2579,7 +2716,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-10 16:48:40 +0800"
+        "time": "2025-05-12 12:36:01 +0800"
     },
     "basePath": "",
     "book": {
