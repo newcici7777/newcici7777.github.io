@@ -101,11 +101,11 @@ baos.size();
 ByteArrayInputStream(byte[] buf)
 {% endhighlight %}
 
-讀取檔案
+讀取資料
 {% highlight java linenos %}
 public int read (byte[] b)
 {% endhighlight %}
-- 第1個參數是存放資料的變數
+- 參數是存放資料的變數
 - 讀取完成或沒資料可讀會傳回-1
 
 讀取緩衝區中的資料，與讀取檔案

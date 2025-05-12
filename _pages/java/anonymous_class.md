@@ -35,14 +35,12 @@ public class TestHuman {
 public class Test {
   public static void main(String[] args) {
     TestHuman testHuman = new TestHuman();
-    testHuman.test();
+    testHuman.test(要在這裡建立匿名類別);
   }
 }
 {% endhighlight %}
 
-### 匿名的方式建立子類別
-所謂的匿名，就是沒有變數名，比如上一個程式碼，`testHuman`就是變數名，指向TestHuman類別的物件。
-
+### 匿名的方式建立子類別1
 建立匿名子類別步驟如下:  
 1.new 抽象類別() {}  
 要用 `new 抽象類別()`，最重重要的是，後面要加上花括號{}
@@ -84,7 +82,40 @@ public class Test {
 }
 ```
 
-之前的在抽象類別的文章中，以向上轉型物件(Upcasting object)的方式建立子類別，並作為參數傳入方法中，此處以匿名的方式建立子類別物件傳入方法中。
+### 匿名的方式建立子類別2
+1. 宣告japan變數為父類別Human
+2. new 父類別Human()
+3. 加上花括號{}
+4. 覆寫speak方法
+此時japan就是Human的子類別
+{% highlight java linenos %}
+    Human japan = new Human() {
+      @Override
+      void speak() {
+        System.out.println("說日文");
+      }
+    };
+    japan.speak();
+{% endhighlight %}
+```
+說日文
+```
+
+### 匿名的方式建立子類別3
+1. new 父類別Human()
+2. 加上花括號{}
+3. 覆寫speak方法
+{% highlight java linenos %}
+  new Human() {
+    @Override
+    void speak() {
+      System.out.println("說日文");
+    }
+  }.speak();
+{% endhighlight %}
+```
+說日文
+```
 
 ## 類別的匿名子類別
 除了抽象類別建立的匿名類別，一般類別也可以透過匿名的方式建立子類別
@@ -98,6 +129,37 @@ public class Car {
 }
 {% endhighlight %}
 
+建立「匿名」Car的子類別，注意！加上花括號{}，表達的不是Car這個類別，而是繼承Car的子類別。
+{% highlight java linenos %}
+public static void main(String[] args) {
+  Car toyota = new Car() {
+    @Override
+    public void print() {
+      System.out.println("我是Toyota");
+    }
+  };
+  toyota.print();
+}
+{% endhighlight %}
+```
+我是Toyota
+```
+
+{% highlight java linenos %}
+public static void main(String[] args) {
+  new Car() {
+    @Override
+    public void print() {
+      System.out.println("我是Toyota");
+    }
+  }.print();
+}
+{% endhighlight %}
+```
+我是Toyota
+```
+
+## 方法參數為匿名類別
 建立一個測試參數為Car的類別，TestCar.java
 {% highlight java linenos %}
 public class TestCar {
@@ -107,7 +169,7 @@ public class TestCar {
 }
 {% endhighlight %}
 
-建立「匿名」Car的子類別，注意！加上花括號{}，表達的不是Car這個類別，而是繼承Car的子類別，即便{}花括號的內容是空的，這裡的意思是子類別，不是Car這個類別，Car變成父類別，這個沒有名字的子類別擁有父類別繼承來的print()方法。
+方法參數為「匿名」Car的子類別，注意！加上花括號{}，表達的不是Car這個類別，而是繼承Car的子類別，即便{}花括號的內容是空的，這裡的意思是子類別，不是Car這個類別，Car變成父類別，這個沒有名字的子類別擁有父類別繼承來的print()方法。
 {% highlight java linenos %}
 public static void main(String[] args) {
   TestCar testCar = new TestCar();
@@ -134,51 +196,49 @@ public static void main(String[] args) {
 ```
 我是Toyota
 ```
-## 實作(implements)介面(Interface)的匿名類別
-建立一個Callback介面
+
+## 介面(Interface)的匿名類別
+建立一個Fly介面
 {% highlight java linenos %}
-public interface Callback {
-  void sendMessage();
+public interface Fly {
+  void fly();
 }
 {% endhighlight %}
 
-建立測試類別Tester，利用testCallback()方法來測試，參數為Callback介面
-{% highlight java linenos %}
-public class Tester {
-  public void testCallback(Callback callback) {
-    callback.sendMessage();
-  }
-}
-{% endhighlight %}
+介面匿名步驟:
+1. new 介面()
+2. 加上花括號{}
+3. 覆寫fly方法
 
-主程式
+透過new 介面() {} 的方式，建立介面的匿名類別
+
+方式1:
+{% highlight java linenos %}
+new Fly() {
+    @Override
+    public void fly() {
+      System.out.println("蚊子飛");
+    }  
+}.fly();
+{% endhighlight %}
+```
+蚊子飛
+```
+
+方式2:
 {% highlight java linenos %}
 public static void main(String[] args) {
-  // 建立測試類別Tester
-  Tester tester = new Tester();
-  tester.testCallback(new Callback() {
+  Fly mosquito = new Fly() {
     @Override
-    public void sendMessage() {
-      System.out.println("這是實作Callback介面的類別送的訊息");
+    public void fly() {
+      System.out.println("蚊子飛");
     }
-  });
+  };
+  mosquito.fly();
 }
 {% endhighlight %}
 ```
-這是實作Callback介面的類別送的訊息
-```
-
-其中的`new Callback(){}`是建立一個沒有名字的類別，去實作(implements)Callback的介面，實作介面時，必須覆寫介面的抽象方法sendMessage()。
-{% highlight java linenos %}
-tester.testCallback(new Callback() {
-      @Override
-      public void sendMessage() {
-        System.out.println("這是實作Callback介面的類別送的訊息");
-      }
-    });
-{% endhighlight %}
-```
-這是實作Callback介面的類別送的訊息
+蚊子飛
 ```
 
 [1]: {% link _pages/java/polymorphism.md %}

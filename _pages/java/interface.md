@@ -8,9 +8,9 @@ keywords: Java, polymorphism, Interface
 介面跟繼承不相關，只在乎有沒有實作(implements)介面(Interface)。
 
 ## 建立介面Interface
-使用關鍵字interface來宣告這是一個介面(Interface)，這個介面(Interface)的名字是Callback。
+使用關鍵字interface來宣告這是一個介面(Interface)，這個介面(Interface)的名字是Fly。
 {% highlight java linenos %}
-public interface Callback {
+public interface Fly {
 }
 {% endhighlight %}
 
@@ -23,10 +23,10 @@ public interface Callback {
 
 可以省略public final，編譯會自動加上。
 {% highlight java linenos %}
-public interface Callback {
-  public final int ERR_CODE = 404;
+public interface Fly {
+  public final int VERSION = 1;
   // 上面這句與以下相等，二者是相同意思。
-  // int ERR_CODE = 404;
+  // int VERSION = 1;
 }
 {% endhighlight %}
 
@@ -34,42 +34,160 @@ public interface Callback {
 抽象「方法」存取權限一定是public。  
 public、abstract可以省略，編譯器會自動加上。  
 {% highlight java linenos %}
-public interface Callback {
-  void sendMessage(int msg);
+public interface Fly {
+  void fly();
   // 上面這句與以下相等，二者是相同意思。
-  // public abstract void sendMessage(int msg);
+  // public abstract void fly();
 }
 {% endhighlight %}
 
 ## 實作Interface
 實作(implements)介面(Interface)的類別就一定要覆寫(Override)介面(Interface)的抽象方法(Abstract method)，否則編譯器會產生錯誤。
 
-使用`implements`關鍵字實作Callback介面，並且一定要覆寫(Override)抽象方法sendMessage()
+使用`implements`關鍵字實作Fly介面，並且一定要覆寫(Override)抽象方法fly()
 {% highlight java linenos %}
-public class Player implements Callback{
+public class Airplane implements Fly{
   @Override
-  public void sendMessage(int msg) {}
+  public void fly() {}
 }
 {% endhighlight %}
 
 ## 實作多個Interface
-`implements Callback, Runnable`  
-以上語法使用逗號隔開不同介面，Callback, Runnable都是介面(Interface)。
+`implements Fly, Swim`  
+以上語法使用逗號隔開不同介面，Fly, Swim都是介面(Interface)。
 
 {% highlight java linenos %}
-public class Player implements Callback, Runnable{
-  // 覆寫Callback介面的sendMessage()方法
+public class Duck implements Fly, Swim{
+  // 覆寫Fly介面的fly()方法
   @Override
-  public void sendMessage(int msg) {}
+  public void fly() {}
 
-  // 覆寫Runnable介面的run()方法
   @Override
-  public void run() {}
+  public void swim() {}
 }
 {% endhighlight %}
 
 ## 介面的範例
-建立一個Operator運算元的介面(Interface)，介面中有計算的方法calculate()，由實作此介面的類別去完成。
+飛的功能
+{% highlight java linenos %}
+public interface Fly {
+  void fly();
+}
+{% endhighlight %}
+
+游泳的功能
+{% highlight java linenos %}
+public interface Swim {
+  void swim();
+}
+{% endhighlight %}
+
+飛機實作飛的功能
+{% highlight java linenos %}
+public class AirPlane implements Fly {
+  @Override
+  public void fly() {
+    System.out.println("飛機用引擎飛");
+  }
+}
+{% endhighlight %}
+
+鴨子實作飛與游泳的功能
+{% highlight java linenos %}
+public class Duck implements Fly, Swim{
+  @Override
+  public void fly() {
+    System.out.println("鴨子用翅膀飛");
+  }
+
+  @Override
+  public void swim() {
+    System.out.println("鴨子用腳掌划");
+  }
+}
+{% endhighlight %}
+
+狗實作游泳的功能
+{% highlight java linenos %}
+public class Dog implements Swim {
+  @Override
+  public void swim() {
+    System.out.println("狗游狗爬式");
+  }
+}
+{% endhighlight %}
+
+潛水艇實作游泳功能
+{% highlight java linenos %}
+public class Submarine implements Swim{
+  @Override
+  public void swim() {
+    System.out.println("潛水艇會潛水");
+  }
+}
+{% endhighlight %}
+
+測試程式
+{% highlight java linenos %}
+public class Test {
+  public static void main(String[] args) {
+    AirPlane airPlane = new AirPlane();
+    airPlane.fly();
+
+    Duck duck = new Duck();
+    duck.swim();
+    duck.fly();
+
+    Submarine submarine = new Submarine();
+    submarine.swim();
+
+    Dog dog = new Dog();
+    dog.swim();
+  }
+}
+{% endhighlight %}
+```
+飛機用引擎飛
+鴨子會游泳
+鴨子用翅膀飛
+潛水艇會潛水
+狗游狗爬式
+```
+## 介面的多型(參數)
+寫一個fly()方法，參數是有實作Fly的類別都可以放進來。
+
+寫一個Swim()方法，參數是有實作Swim的類別都可以放進來。
+{% highlight java linenos %}
+public class Test {
+  public void fly(Fly something) {
+    something.fly();
+  }
+
+  public void swim(Swim something) {
+    something.swim();
+  }
+  
+  public static void main(String[] args) {
+    Test test = new Test();
+    test.fly(new AirPlane());
+    test.fly(new Duck());
+    test.swim(new Duck());
+    test.swim(new Submarine());
+    test.swim(new Dog());
+  }
+}
+{% endhighlight %}
+```
+飛機用引擎飛
+鴨子用翅膀飛
+鴨子會游泳
+潛水艇會潛水
+狗游狗爬式
+```
+由以上可以發現，介面跟繼承是完全不同的概念，類別(AirPlane)實作介面(Fly)的抽象方法(fly)，AirPlane就是介面(Fly)。
+
+## 介面的多型
+建立一個Operator運算元的介面，介面中有抽象的計算方法calculate()
 
 Operator.java
 {% highlight java linenos %}
@@ -132,7 +250,7 @@ public class Calculator {
    * @return
    */
   public int calculate(Operator operator, int x, int y) {
-  return operator.calculate(x,y);
+    return operator.calculate(x,y);
   }
 }
 {% endhighlight %}
@@ -163,8 +281,7 @@ public class Calculator {
 10*5 = 50
 ```
 
-## 介面的多型
-由上面例子發現，Operator介面可以是Add，可以是Minus、Multiply，一個介面有多種類型，類別只要實作Operator介面，我們就會說這個類別就是Operator介面。
+由上面例子發現，Operator介面可以是Add，可以是Minus、Multiply，類別只要實作Operator介面，這個類別就是Operator。
 
 
 

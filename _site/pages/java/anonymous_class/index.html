@@ -1406,7 +1406,7 @@
     	<a href="/pages/java/anonymous_class/" data-nav-link> 匿名類別</a>
         
             
-                <ul><li><a href="#抽象類別的匿名子類別" data-nav-link " >抽象類別的匿名子類別</a><ul><li><a href="#建立抽象類別human與抽象方法speak" data-nav-link " >建立抽象類別Human，與抽象方法speak()</a></li><li><a href="#建立一個簡單的類別testhuman類別中有一個test方法參數是human類別用來測試多型只要是human的子類別都可以作為參數傳入" data-nav-link " >建立一個簡單的類別TestHuman，類別中有一個test()方法，參數是Human類別，用來測試多型，只要是Human的子類別，都可以作為參數傳入。</a></li><li><a href="#建立main主程式" data-nav-link " >建立Main主程式</a></li><li><a href="#匿名的方式建立子類別" data-nav-link " >匿名的方式建立子類別</a></li><li><a href="#匿名花括號" data-nav-link " >匿名花括號{}</a></li></ul></li><li><a href="#類別的匿名子類別" data-nav-link " >類別的匿名子類別</a></li><li><a href="#實作implements介面interface的匿名類別" data-nav-link " >實作(implements)介面(Interface)的匿名類別</a></li></ul>
+                <ul><li><a href="#抽象類別的匿名子類別" data-nav-link " >抽象類別的匿名子類別</a><ul><li><a href="#建立抽象類別human與抽象方法speak" data-nav-link " >建立抽象類別Human，與抽象方法speak()</a></li><li><a href="#建立一個簡單的類別testhuman類別中有一個test方法參數是human類別用來測試多型只要是human的子類別都可以作為參數傳入" data-nav-link " >建立一個簡單的類別TestHuman，類別中有一個test()方法，參數是Human類別，用來測試多型，只要是Human的子類別，都可以作為參數傳入。</a></li><li><a href="#建立main主程式" data-nav-link " >建立Main主程式</a></li><li><a href="#匿名的方式建立子類別1" data-nav-link " >匿名的方式建立子類別1</a></li><li><a href="#匿名花括號" data-nav-link " >匿名花括號{}</a></li><li><a href="#匿名的方式建立子類別2" data-nav-link " >匿名的方式建立子類別2</a></li><li><a href="#匿名的方式建立子類別3" data-nav-link " >匿名的方式建立子類別3</a></li></ul></li><li><a href="#類別的匿名子類別" data-nav-link " >類別的匿名子類別</a></li><li><a href="#方法參數為匿名類別" data-nav-link " >方法參數為匿名類別</a></li><li><a href="#介面interface的匿名類別" data-nav-link " >介面(Interface)的匿名類別</a></li></ul>
 
             
         </li>
@@ -1449,6 +1449,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/lambda/" data-nav-link> Lambda</a>
         
             
         </li>
@@ -1750,6 +1757,16 @@
         
             
         </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Kotlin </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/basic/" data-nav-link> Basic</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> JetpackCompose </a><ul>
@@ -2320,15 +2337,13 @@
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="nc">TestHuman</span> <span class="n">testHuman</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TestHuman</span><span class="o">();</span>
-    <span class="n">testHuman</span><span class="o">.</span><span class="na">test</span><span class="o">();</span>
+    <span class="n">testHuman</span><span class="o">.</span><span class="na">test</span><span class="o">(</span><span class="n">要在這裡建立匿名類別</span><span class="o">);</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="匿名的方式建立子類別">匿名的方式建立子類別</h3>
-<p>所謂的匿名，就是沒有變數名，比如上一個程式碼，<code class="language-plaintext highlighter-rouge">testHuman</code>就是變數名，指向TestHuman類別的物件。</p>
-
+<h3 id="匿名的方式建立子類別1">匿名的方式建立子類別1</h3>
 <p>建立匿名子類別步驟如下:<br />
 1.new 抽象類別() {}<br />
 要用 <code class="language-plaintext highlighter-rouge">new 抽象類別()</code>，最重重要的是，後面要加上花括號{}</p>
@@ -2389,7 +2404,61 @@
 }
 </code></pre></div></div>
 
-<p>之前的在抽象類別的文章中，以向上轉型物件(Upcasting object)的方式建立子類別，並作為參數傳入方法中，此處以匿名的方式建立子類別物件傳入方法中。</p>
+<h3 id="匿名的方式建立子類別2">匿名的方式建立子類別2</h3>
+<ol>
+  <li>宣告japan變數為父類別Human</li>
+  <li>new 父類別Human()</li>
+  <li>加上花括號{}</li>
+  <li>覆寫speak方法
+此時japan就是Human的子類別</li>
+</ol>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>    <span class="nc">Human</span> <span class="n">japan</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Human</span><span class="o">()</span> <span class="o">{</span>
+      <span class="nd">@Override</span>
+      <span class="kt">void</span> <span class="nf">speak</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"說日文"</span><span class="o">);</span>
+      <span class="o">}</span>
+    <span class="o">};</span>
+    <span class="n">japan</span><span class="o">.</span><span class="na">speak</span><span class="o">();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>說日文
+</code></pre></div></div>
+
+<h3 id="匿名的方式建立子類別3">匿名的方式建立子類別3</h3>
+<ol>
+  <li>new 父類別Human()</li>
+  <li>加上花括號{}</li>
+  <li>覆寫speak方法</li>
+</ol>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>  <span class="k">new</span> <span class="nc">Human</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">speak</span><span class="o">()</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"說日文"</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}.</span><span class="na">speak</span><span class="o">();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>說日文
+</code></pre></div></div>
 
 <h2 id="類別的匿名子類別">類別的匿名子類別</h2>
 <p>除了抽象類別建立的匿名類別，一般類別也可以透過匿名的方式建立子類別</p>
@@ -2410,6 +2479,57 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<p>建立「匿名」Car的子類別，注意！加上花括號{}，表達的不是Car這個類別，而是繼承Car的子類別。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+  <span class="nc">Car</span> <span class="n">toyota</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Car</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"我是Toyota"</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">};</span>
+  <span class="n">toyota</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>我是Toyota
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">new</span> <span class="nf">Car</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"我是Toyota"</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}.</span><span class="na">print</span><span class="o">();</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>我是Toyota
+</code></pre></div></div>
+
+<h2 id="方法參數為匿名類別">方法參數為匿名類別</h2>
 <p>建立一個測試參數為Car的類別，TestCar.java</p>
 
 <figure class="highlight">
@@ -2426,7 +2546,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>建立「匿名」Car的子類別，注意！加上花括號{}，表達的不是Car這個類別，而是繼承Car的子類別，即便{}花括號的內容是空的，這裡的意思是子類別，不是Car這個類別，Car變成父類別，這個沒有名字的子類別擁有父類別繼承來的print()方法。</p>
+<p>方法參數為「匿名」Car的子類別，注意！加上花括號{}，表達的不是Car這個類別，而是繼承Car的子類別，即便{}花括號的內容是空的，這裡的意思是子類別，不是Car這個類別，Car變成父類別，這個沒有名字的子類別擁有父類別繼承來的print()方法。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2471,20 +2591,30 @@
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>我是Toyota
 </code></pre></div></div>
-<h2 id="實作implements介面interface的匿名類別">實作(implements)介面(Interface)的匿名類別</h2>
-<p>建立一個Callback介面</p>
+
+<h2 id="介面interface的匿名類別">介面(Interface)的匿名類別</h2>
+<p>建立一個Fly介面</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Callback</span> <span class="o">{</span>
-  <span class="kt">void</span> <span class="nf">sendMessage</span><span class="o">();</span>
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Fly</span> <span class="o">{</span>
+  <span class="kt">void</span> <span class="nf">fly</span><span class="o">();</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>建立測試類別Tester，利用testCallback()方法來測試，參數為Callback介面</p>
+<p>介面匿名步驟:</p>
+<ol>
+  <li>new 介面()</li>
+  <li>加上花括號{}</li>
+  <li>覆寫fly方法</li>
+</ol>
+
+<p>透過new 介面() {} 的方式，建立介面的匿名類別</p>
+
+<p>方式1:</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2492,15 +2622,20 @@
 3
 4
 5
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Tester</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testCallback</span><span class="o">(</span><span class="nc">Callback</span> <span class="n">callback</span><span class="o">)</span> <span class="o">{</span>
-    <span class="n">callback</span><span class="o">.</span><span class="na">sendMessage</span><span class="o">();</span>
-  <span class="o">}</span>
-<span class="o">}</span>
+6
+</pre></td><td class="code"><pre><span class="k">new</span> <span class="nc">Fly</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"蚊子飛"</span><span class="o">);</span>
+    <span class="o">}</span>  
+<span class="o">}.</span><span class="na">fly</span><span class="o">();</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>主程式</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>蚊子飛
+</code></pre></div></div>
+
+<p>方式2:</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2512,42 +2647,19 @@
 7
 8
 9
-10
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-  <span class="c1">// 建立測試類別Tester</span>
-  <span class="nc">Tester</span> <span class="n">tester</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Tester</span><span class="o">();</span>
-  <span class="n">tester</span><span class="o">.</span><span class="na">testCallback</span><span class="o">(</span><span class="k">new</span> <span class="nc">Callback</span><span class="o">()</span> <span class="o">{</span>
+  <span class="nc">Fly</span> <span class="n">mosquito</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Fly</span><span class="o">()</span> <span class="o">{</span>
     <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sendMessage</span><span class="o">()</span> <span class="o">{</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"這是實作Callback介面的類別送的訊息"</span><span class="o">);</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"蚊子飛"</span><span class="o">);</span>
     <span class="o">}</span>
-  <span class="o">});</span>
+  <span class="o">};</span>
+  <span class="n">mosquito</span><span class="o">.</span><span class="na">fly</span><span class="o">();</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>這是實作Callback介面的類別送的訊息
-</code></pre></div></div>
-
-<p>其中的<code class="language-plaintext highlighter-rouge">new Callback(){}</code>是建立一個沒有名字的類別，去實作(implements)Callback的介面，實作介面時，必須覆寫介面的抽象方法sendMessage()。</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="n">tester</span><span class="o">.</span><span class="na">testCallback</span><span class="o">(</span><span class="k">new</span> <span class="nc">Callback</span><span class="o">()</span> <span class="o">{</span>
-      <span class="nd">@Override</span>
-      <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sendMessage</span><span class="o">()</span> <span class="o">{</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"這是實作Callback介面的類別送的訊息"</span><span class="o">);</span>
-      <span class="o">}</span>
-    <span class="o">});</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>這是實作Callback介面的類別送的訊息
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>蚊子飛
 </code></pre></div></div>
 
 </section>
@@ -2740,7 +2852,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-12 12:36:01 +0800"
+        "time": "2025-05-13 00:56:29 +0800"
     },
     "basePath": "",
     "book": {

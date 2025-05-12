@@ -1451,6 +1451,13 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/lambda/" data-nav-link> Lambda</a>
+        
+            
+        </li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> IO </a><ul>
 	
 	
@@ -1750,6 +1757,16 @@
         
             
         </li></ul></li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Kotlin </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/basic/" data-nav-link> Basic</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> JetpackCompose </a><ul>
@@ -2270,6 +2287,7 @@
                     <p>Prerequisites:</p>
 <ul>
   <li><a href="/pages/java/bytearr_io/">ByteArray串流</a></li>
+  <li><a href="/pages/java/decorator_io/">裝飾串流</a></li>
 </ul>
 
 <h2 id="裝飾串流objectinputstream與objectoutputstream">裝飾串流ObjectInputStream與ObjectOutputStream</h2>
@@ -2324,6 +2342,7 @@
 42
 43
 44
+45
 </pre></td><td class="code"><pre>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="nc">ByteArrayOutputStream</span> <span class="n">bos</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
     <span class="nc">ObjectOutputStream</span> <span class="n">oos</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
@@ -2359,6 +2378,7 @@
       <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
     <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
       <span class="k">try</span> <span class="o">{</span>
+      	<span class="c1">// 只需要關閉裝飾串流，詳見裝飾串流文章</span>
         <span class="k">if</span> <span class="o">(</span><span class="n">oos</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
           <span class="n">oos</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
         <span class="k">if</span> <span class="o">(</span><span class="n">ois</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
@@ -2571,6 +2591,7 @@ A
 51
 52
 53
+54
 </pre></td><td class="code"><pre>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="nc">ByteArrayOutputStream</span> <span class="n">bos</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
     <span class="nc">ObjectOutputStream</span> <span class="n">oos</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
@@ -2615,6 +2636,7 @@ A
       <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
     <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
       <span class="k">try</span> <span class="o">{</span>
+      	<span class="c1">// 只需要關閉裝飾串流，詳見裝飾串流文章</span>
         <span class="k">if</span> <span class="o">(</span><span class="n">oos</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
           <span class="n">oos</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
         <span class="k">if</span> <span class="o">(</span><span class="n">ois</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
@@ -2768,6 +2790,15 @@ window.MathJax = {
         "level": "1.1",
         "depth": 1,
         
+        "next": {
+            "title": "Basic",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/kotlin/basic.md",
+            "ref": "_pages/kotlin/basic.md",
+            "articles": []
+        },
+        
         "dir": "ltr"
     },    "config": {
         "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
@@ -2862,7 +2893,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-12 12:36:01 +0800"
+        "time": "2025-05-13 00:56:29 +0800"
     },
     "basePath": "",
     "book": {
