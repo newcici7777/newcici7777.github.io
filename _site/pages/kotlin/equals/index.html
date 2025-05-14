@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>比較是否相等 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>記憶體位址是否相同 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="keywords" content="kotlin, equals, compare" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -1410,7 +1410,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/callby_value/" data-nav-link> 方法傳值Call by value</a>
+    	<a href="/pages/java/callby_value/" data-nav-link> Call by value</a>
         
             
         </li>
@@ -1782,6 +1782,20 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/when_if/" data-nav-link> 區間in與when、if</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/null/" data-nav-link> Null</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/lambda/" data-nav-link> lambda</a>
         
             
         </li></ul></li>
@@ -2286,7 +2300,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >比較是否相等</a>
+                            <a href="." >記憶體位址是否相同</a>
                         
                     </h1>
                 </div>
@@ -2299,14 +2313,141 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/kotlin/equals">比較是否相等</h1>
+                        <h1 id="/pages/kotlin/equals">記憶體位址是否相同</h1>
                     
 
                     <h2>==</h2>
-<p>二個等於是比較值。</p>
+<p>二個等於是比較「值」。</p>
 
-<h2 id="-1">===</h2>
-<p>三個等於是比較記憶體位址。</p>
+<h2 id="非空類型">非空類型===</h2>
+<p>如果是基本資料型別String, Int, Double, Float, Long, Short, Char, Byte, Boolean</p>
+
+<p>比較的仍是「值」。</p>
+
+<h2 id="可空類型">可空類型===</h2>
+<p>「可空類型」，比較的是「記憶體位址」。</p>
+
+<p>要繼續讀下面的內容，一定要先了解共享模式，Integer與String pool。</p>
+<ul>
+  <li><a href="/pages/design_pattern/flyweight/">共享模式</a></li>
+</ul>
+
+<h3 id="integer">Integer</h3>
+<p>值為127，記憶體位址都是相等。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="n">println</span><span class="o">(</span><span class="s">"=========非空類型127============="</span><span class="o">)</span>
+<span class="n">val</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">127</span>
+<span class="n">val</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">127</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"位址相等 = ${x === y}"</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"值相等 = ${x == y}"</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"=========可空類型127============="</span><span class="o">)</span>
+<span class="n">val</span> <span class="nl">x1:</span><span class="nc">Int</span><span class="o">?</span> <span class="o">=</span> <span class="mi">127</span>
+<span class="n">val</span> <span class="nl">y1:</span><span class="nc">Int</span><span class="o">?</span> <span class="o">=</span> <span class="mi">127</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"位址相等 = ${x1 === y1}"</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"值相等 = ${x1 == y1}"</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"=========可空與非空類型127============="</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"位址相等 = ${x1 === x}"</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"值相等 = ${x1 == x}"</span><span class="o">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=========非空類型127=============
+位址相等 = true
+值相等 = true
+=========可空類型127=============
+位址相等 = true
+值相等 = true
+=========可空與非空類型127=============
+位址相等 = true
+值相等 = true
+</code></pre></div></div>
+
+<p>超出128，以下記憶體位址只有非空類型是相等，可空類型都不是相等。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="n">println</span><span class="o">(</span><span class="s">"=========非空類型128============="</span><span class="o">)</span>
+<span class="n">val</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">128</span>
+<span class="n">val</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">128</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"位址相等 = ${x === y}"</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"值相等 = ${x == y}"</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"=========可空類型128============="</span><span class="o">)</span>
+<span class="n">val</span> <span class="nl">x1:</span><span class="nc">Int</span><span class="o">?</span> <span class="o">=</span> <span class="mi">128</span>
+<span class="n">val</span> <span class="nl">y1:</span><span class="nc">Int</span><span class="o">?</span> <span class="o">=</span> <span class="mi">128</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"位址相等 = ${x1 === y1}"</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"值相等 = ${x1 == y1}"</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"=========可空與非空類型128============="</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"位址相等 = ${x1 === x}"</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"值相等 = ${x1 == x}"</span><span class="o">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=========非空類型128=============
+位址相等 = true
+值相等 = true
+=========可空類型128=============
+位址相等 = false
+值相等 = true
+=========可空與非空類型128=============
+位址相等 = false
+值相等 = true
+</code></pre></div></div>
+
+<h3 id="string">String</h3>
+<p>以下程式碼，不管是非空類型與可空類型，都是指向同一個記憶體位址，指向同一個String Pool中的常數。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="n">val</span> <span class="n">str1</span> <span class="o">=</span> <span class="s">"Jack"</span>
+<span class="n">val</span> <span class="n">str2</span> <span class="o">=</span> <span class="s">"Jack"</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"位址相等 = ${str1 === str2}"</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"值相等 = ${str1 == str2}"</span><span class="o">)</span>
+<span class="n">val</span> <span class="nl">s1:</span><span class="nc">String</span><span class="o">?</span> <span class="o">=</span> <span class="s">"Jack"</span>
+<span class="n">val</span> <span class="nl">s2:</span><span class="nc">String</span><span class="o">?</span> <span class="o">=</span> <span class="s">"Jack"</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"位址相等 = ${s1 === s2}"</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"值相等 = ${s1 == s2}"</span><span class="o">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>位址相等 = true
+值相等 = true
+位址相等 = true
+值相等 = true
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2385,11 +2526,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "區間in與when、if",
+            "title": "lambda",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/kotlin/when_if.md",
-            "ref": "_pages/kotlin/when_if.md",
+            "path": "_pages/kotlin/lambda.md",
+            "ref": "_pages/kotlin/lambda.md",
             "articles": []
         },
         
@@ -2487,7 +2628,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-14 14:59:52 +0800"
+        "time": "2025-05-14 23:29:04 +0800"
     },
     "basePath": "",
     "book": {

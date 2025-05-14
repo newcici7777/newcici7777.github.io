@@ -1410,7 +1410,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/callby_value/" data-nav-link> 方法傳值Call by value</a>
+    	<a href="/pages/java/callby_value/" data-nav-link> Call by value</a>
         
             
         </li>
@@ -1777,7 +1777,7 @@
     	<a href="/pages/kotlin/type/" data-nav-link> 變數與基本資料類型</a>
         
             
-                <ul><li><a href="#按2次shift鍵" data-nav-link " >按2次shift鍵</a></li><li><a href="#印出" data-nav-link " >印出</a></li><li><a href="#結尾不用分號" data-nav-link " >結尾不用分號;</a></li><li><a href="#val唯讀變數" data-nav-link " >val唯讀變數</a></li><li><a href="#var可變變數" data-nav-link " >var可變變數</a></li><li><a href="#const常數" data-nav-link " >const常數</a></li><li><a href="#unit" data-nav-link " >Unit</a></li><li><a href="#any" data-nav-link " >Any</a></li><li><a href="#基本資料類型" data-nav-link " >基本資料類型</a><ul><li><a href="#類型冒號空白" data-nav-link " >類型冒號空白</a></li><li><a href="#推斷類型" data-nav-link " >推斷類型</a></li><li><a href="#數值類型" data-nav-link " >數值類型</a></li><li><a href="#基本類型轉換" data-nav-link " >基本類型轉換</a></li></ul></li><li><a href="#floatdouble" data-nav-link " >Float,Double</a></li><li><a href="#kotlin沒有自動轉型" data-nav-link " >Kotlin沒有自動轉型</a></li><li><a href="#char" data-nav-link " >Char</a></li><li><a href="#字串" data-nav-link " >字串</a></li><li><a href="#字串模板" data-nav-link " >字串模板</a><ul><li><a href="#印出變數" data-nav-link " >印出變數</a></li><li><a href="#印出運算結果" data-nav-link " >印出運算結果</a></li><li><a href="#印出排板" data-nav-link " >印出排板</a></li></ul></li></ul>
+                <ul><li><a href="#按2次shift鍵" data-nav-link " >按2次shift鍵</a></li><li><a href="#印出" data-nav-link " >印出</a></li><li><a href="#結尾不用分號" data-nav-link " >結尾不用分號;</a></li><li><a href="#val唯讀變數" data-nav-link " >val唯讀變數</a></li><li><a href="#var可變變數" data-nav-link " >var可變變數</a></li><li><a href="#const常數" data-nav-link " >const常數</a></li><li><a href="#unit" data-nav-link " >Unit</a></li><li><a href="#any" data-nav-link " >Any</a></li><li><a href="#基本資料類型" data-nav-link " >基本資料類型</a><ul><li><a href="#變數類型" data-nav-link " >變數類型</a></li><li><a href="#推斷類型" data-nav-link " >推斷類型</a></li><li><a href="#數值類型" data-nav-link " >數值類型</a></li><li><a href="#基本類型轉換" data-nav-link " >基本類型轉換</a></li></ul></li><li><a href="#floatdouble" data-nav-link " >Float,Double</a></li><li><a href="#kotlin沒有自動轉型" data-nav-link " >Kotlin沒有自動轉型</a></li><li><a href="#char" data-nav-link " >Char</a></li><li><a href="#字串模板" data-nav-link " >字串模板</a><ul><li><a href="#印出變數" data-nav-link " >印出變數</a></li><li><a href="#印出運算結果" data-nav-link " >印出運算結果</a></li><li><a href="#印出排板" data-nav-link " >印出排板</a></li></ul></li></ul>
 
             
         </li>
@@ -1785,6 +1785,20 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/when_if/" data-nav-link> 區間in與when、if</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/null/" data-nav-link> Null</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/lambda/" data-nav-link> lambda</a>
         
             
         </li></ul></li>
@@ -2372,8 +2386,8 @@
 <h2 id="基本資料類型">基本資料類型</h2>
 <p>基本資料類型String, Int, Double, Float, Long, Short, Char, Byte, Boolean，字首全部大寫。</p>
 
-<h3 id="類型冒號空白">類型冒號空白</h3>
-<p>變數後面一個冒號，加上一個空白，接下來是類型。</p>
+<h3 id="變數類型">變數類型</h3>
+<p>定義變數的類型的方式，變數後面一個冒號，加上一個空白，接下來是類型。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2395,12 +2409,38 @@
 </figure>
 
 <h3 id="數值類型">數值類型</h3>
-<p>|整數類型|最小值|最大值|
-|:—|:—|:—|
-|Byte |-128 |127 |
-|Short|-32768 |32767 |
-|Int  |-2147483648(-2^31) |2147483647(-2^31-1) |
-|Long |-2^63 |2^63-1 |</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">整數類型</th>
+      <th style="text-align: left">最小值</th>
+      <th style="text-align: left">最大值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Byte</td>
+      <td style="text-align: left">-128</td>
+      <td style="text-align: left">127</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Short</td>
+      <td style="text-align: left">-32768</td>
+      <td style="text-align: left">32767</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Int</td>
+      <td style="text-align: left">-2147483648(-2^31)</td>
+      <td style="text-align: left">2147483647(-2^31-1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Long</td>
+      <td style="text-align: left">-2^63</td>
+      <td style="text-align: left">2^63-1</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>kotlin未超出Int，默認Int</p>
 
@@ -2588,7 +2628,7 @@ var2 =&gt; 97
 var3 =&gt; a
 var4 =&gt; 97.0
 </code></pre></div></div>
-<h2 id="字串">字串</h2>
+
 <h2 id="字串模板">字串模板</h2>
 <p>把變數與運算結果輸出到螢幕上顯示。</p>
 
@@ -2667,14 +2707,7 @@ My name is Tom, I'm 19
 
 <p>不要有多餘的縮排及空行，用trimMargin()函式消除</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>trimMargin使用行的開頭，默認使用</td>
-      <td>符號，做為每一行的開頭</td>
-    </tr>
-  </tbody>
-</table>
+<p>trimMargin使用行的開頭，默認使用| 符號，做為每一行的開頭</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2908,7 +2941,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-14 14:59:52 +0800"
+        "time": "2025-05-14 23:29:04 +0800"
     },
     "basePath": "",
     "book": {

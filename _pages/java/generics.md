@@ -19,7 +19,7 @@ T可以是成員變數的類型，也可以是成員方法參數類型。
 ## 成員變數類型
 {% highlight java linenos %}
 class 名稱<T> {
-	T 變數名;
+  T 變數名;
 }
 {% endhighlight %}
 

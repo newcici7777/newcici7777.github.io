@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>方法傳值Call by value </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Call by value </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="keywords" content="Java, call by value" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -1410,10 +1410,10 @@
 	
 	
 	<li class="active" data-nav-item>
-    	<a href="/pages/java/callby_value/" data-nav-link> 方法傳值Call by value</a>
+    	<a href="/pages/java/callby_value/" data-nav-link> Call by value</a>
         
             
-                <ul><li><a href="#修改成員變數" data-nav-link " >修改成員變數</a></li><li><a href="#修改參數的記憶體位址" data-nav-link " >修改參數的記憶體位址</a></li></ul>
+                <ul><li><a href="#修改成員變數" data-nav-link " >修改成員變數</a></li><li><a href="#參數設成新的記憶體位址" data-nav-link " >參數設成新的記憶體位址</a></li></ul>
 
             
         </li>
@@ -1785,6 +1785,20 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/when_if/" data-nav-link> 區間in與when、if</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/null/" data-nav-link> Null</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/lambda/" data-nav-link> lambda</a>
         
             
         </li></ul></li>
@@ -2289,7 +2303,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >方法傳值Call by value</a>
+                            <a href="." >Call by value</a>
                         
                     </h1>
                 </div>
@@ -2302,26 +2316,66 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/java/callby_value">方法傳值Call by value</h1>
+                        <h1 id="/pages/java/callby_value">Call by value</h1>
                     
 
-                    <p>在Java中，只有Call by value，然後要忘記c++的知識，java沒有像c++有call by address, call by reference。</p>
-
-<p>Java的reference，與C++的reference是完全不同的理念。</p>
-
-<p>方法就是函式，也就是物件中所定義的函式，物件定義的函式就叫作成員方法，也叫作成員函式，二者是一樣的意思。</p>
-
-<p>什麼是call by value?</p>
-
-<p>參數一進入方法，方法即建立新的變數保管這些參數值，同時新變數的資料型態完全吻合參數的資料型態，這種傳遞參數的方式會先把參數複製一份，稱為傳值呼叫(call by value)。</p>
+                    <p>一進入方法，若傳進來的參數是物件，也就是記憶體位址，方法建立新的變數拷貝傳進來的參數，這種方式會先把參數複製一份，稱為Call by value。</p>
 
 <h2 id="修改成員變數">修改成員變數</h2>
+<p>以下的程式碼要傳遞testClz變數給copyAddress()方法。
+TestClz</p>
 
-<p>以下的程式碼要傳遞testClz變數給函式changeClz()，實際上是複製testClz記憶體位址給arg1的「區域」變數(參考下圖)。</p>
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">TestClz</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>Test</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Test</span> <span class="n">test</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">();</span>
+    <span class="nc">TestClz</span> <span class="n">testClz</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TestClz</span><span class="o">();</span>
+    <span class="n">testClz</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="mi">50</span><span class="o">;</span>
+    <span class="c1">// 把testClz作為參數傳進copyAddress()</span>
+    <span class="n">test</span><span class="o">.</span><span class="na">copyAddress</span><span class="o">(</span><span class="n">testClz</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">testClz</span><span class="o">.</span><span class="na">age</span><span class="o">);</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">copyAddress</span><span class="o">(</span><span class="nc">TestClz</span> <span class="n">arg1</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">arg1</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="mi">100</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>「複製」testClz變數「記憶體位址」給arg1變數(參考下圖)。</p>
+<ul>
+  <li>arg1存的0x0033</li>
+  <li>testClz變數存的0x0033</li>
+</ul>
 
 <p><img src="/assets/img/java/reference1.png" alt="img" /></p>
 
-<p>找到age的記憶體位址，並修改裡面的值為100。</p>
+<p>arg1存的0x0033與testClz變數存的0x0033一樣，所以修改arg1.age，也就是修改0x0033記憶體位址中的物件。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2329,65 +2383,24 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>對於物件記憶體位址有興趣，可以參考c++物件記憶體布局:</p>
+<p>執行結果為100</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>100
+</code></pre></div></div>
 
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre>  <span class="n">arg1</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="mi">100</span><span class="o">;</span>    
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<h2 id="參數設成新的記憶體位址">參數設成新的記憶體位址</h2>
+<p>TestClz</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Teest</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">Teest</span> <span class="n">test</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Teest</span><span class="o">();</span>
-    <span class="nc">TestClz</span> <span class="n">testClz</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TestClz</span><span class="o">();</span>
-    <span class="n">testClz</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="mi">50</span><span class="o">;</span>
-    <span class="n">test</span><span class="o">.</span><span class="na">changeClz</span><span class="o">(</span><span class="n">testClz</span><span class="o">);</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">testClz</span><span class="o">.</span><span class="na">age</span><span class="o">);</span>
-  <span class="o">}</span>
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">changeClz</span><span class="o">(</span><span class="nc">TestClz</span> <span class="n">arg1</span><span class="o">)</span> <span class="o">{</span>
-    <span class="n">arg1</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="mi">100</span><span class="o">;</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-<span class="kd">class</span> <span class="nc">TestClz</span> <span class="o">{</span>
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">TestClz</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>100
-</code></pre></div></div>
-
-<h2 id="修改參數的記憶體位址">修改參數的記憶體位址</h2>
-<p>以下的程式碼要傳遞testClz變數給函式changeClzRef()，實際上是複製testClz記憶體位址給arg1的「區域」變數。</p>
-
-<p>接著arg1區域變數原本指向0x12345678，改成指向0x12345689</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre>  <span class="n">arg1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TestClz</span><span class="o">();</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p><img src="/assets/img/java/reference1.png" alt="img" /></p>
-
-<p>此時此刻，arg1區域變數與testClz變數指的都不是相同物件，所以執行結果是50，而不是印出60，區域變數arg1離開changeClzRef()方法，就立即被記憶體釋放。</p>
+<p>Test</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2404,31 +2417,48 @@
 12
 13
 14
-15
-16
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Teest</span> <span class="o">{</span>
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">Teest</span> <span class="n">test</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Teest</span><span class="o">();</span>
+    <span class="nc">Test</span> <span class="n">test</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">();</span>
     <span class="nc">TestClz</span> <span class="n">testClz</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TestClz</span><span class="o">();</span>
     <span class="n">testClz</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="mi">50</span><span class="o">;</span>
-    <span class="n">test</span><span class="o">.</span><span class="na">changeClzRef</span><span class="o">(</span><span class="n">testClz</span><span class="o">);</span>
+    <span class="n">test</span><span class="o">.</span><span class="na">copyAddress</span><span class="o">(</span><span class="n">testClz</span><span class="o">);</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">testClz</span><span class="o">.</span><span class="na">age</span><span class="o">);</span>
   <span class="o">}</span>
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">changeClzRef</span><span class="o">(</span><span class="nc">TestClz</span> <span class="n">arg1</span><span class="o">)</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">copyAddress</span><span class="o">(</span><span class="nc">TestClz</span> <span class="n">arg1</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 參數設成新的記憶體位址</span>
     <span class="n">arg1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TestClz</span><span class="o">();</span>
     <span class="n">arg1</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="mi">60</span><span class="o">;</span>
   <span class="o">}</span>
 <span class="o">}</span>
-<span class="kd">class</span> <span class="nc">TestClz</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
-<span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<p>參數arg1存其它記憶體位址。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">arg1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TestClz</span><span class="o">();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>arg1存的0x0066與testClz變數存的0x0033不一樣，所以修改arg1.age，也就是修改0x0066記憶體位址中的物件，而不是修改0x0033記憶體中的物件。</p>
+
+<p><img src="/assets/img/java/reference2.png" alt="img" /></p>
+
+<p>執行結果是50</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>50
 </code></pre></div></div>
 
-<p>此處的概念跟C++的<a href="/pages/c/function/func_param_pointer/">call by address</a>與<a href="/pages/c/function/callByRef/">call by reference</a>完全不同，是不一樣的概念，請勿混為一談。</p>
+<p>執行完copyAddress()方法後，參數arg1就會被記憶體回收，包含0x0066也會被記憶體回收。</p>
+
+<p>下圖中，離開copyAddress()方法後，Stack堆疊已經沒有arg1參數，Heap堆也沒有0x0066。</p>
+
+<p><img src="/assets/img/java/reference3.png" alt="img" /></p>
+
+<p>此處是「拷貝記憶體位址」到「參數」中，並非「指向」記憶體位址，跟C++的<a href="/pages/c/function/func_param_pointer/">call by address</a>與<a href="/pages/c/function/callByRef/">call by reference</a>完全不同的概念。</p>
+
+<p>畫圖檔案名稱為func_copy_address.drawio</p>
 
 </section>
             </div><div class="search-results">
@@ -2620,7 +2650,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-14 14:59:52 +0800"
+        "time": "2025-05-14 23:29:04 +0800"
     },
     "basePath": "",
     "book": {

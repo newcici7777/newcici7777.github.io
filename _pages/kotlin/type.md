@@ -52,8 +52,8 @@ Any 是kotlin中所有類別的根
 ## 基本資料類型
 基本資料類型String, Int, Double, Float, Long, Short, Char, Byte, Boolean，字首全部大寫。
 
-### 類型冒號空白
-變數後面一個冒號，加上一個空白，接下來是類型。
+### 變數類型
+定義變數的類型的方式，變數後面一個冒號，加上一個空白，接下來是類型。
 {% highlight kotlin linenos %}
 val str: String = "Test"
 {% endhighlight %}
@@ -67,6 +67,7 @@ val str = "Hello"
 {% endhighlight %}
 
 ### 數值類型
+
 |整數類型|最小值|最大值|
 |:---|:---|:---|
 |Byte |-128 |127 |
@@ -196,7 +197,7 @@ var2 => 97
 var3 => a
 var4 => 97.0
 ```
-## 字串
+
 ## 字串模板
 把變數與運算結果輸出到螢幕上顯示。
 
