@@ -3,7 +3,7 @@
     <head>
 <meta charset="UTF-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Lambda </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="Java, lambda" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="Java, lambda, Functional Interface" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -1698,6 +1698,13 @@
     	<a href="/pages/design_pattern/deepclone/" data-nav-link> DeepClone</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/flyweight/" data-nav-link> 共享模式</a>
+        
+            
         </li></ul></li></ul></li>
 	
 	
@@ -1763,7 +1770,21 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/basic/" data-nav-link> Basic</a>
+    	<a href="/pages/kotlin/code_style/" data-nav-link> Coding Style</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/type/" data-nav-link> 變數與基本資料類型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/when_if/" data-nav-link> 區間in與when、if</a>
         
             
         </li></ul></li>
@@ -2292,6 +2313,10 @@
   <li><a href="/pages/java/anonymous_class/">匿名類別</a></li>
 </ul>
 
+<p>介面只有一個抽象方法，可使用Lambda簡化實作介面的語法。</p>
+
+<p>Lambda又稱Functional Interface函式介面。</p>
+
 <h2 id="實作interface的各種方式">實作Interface的各種方式</h2>
 
 <figure class="highlight">
@@ -2417,7 +2442,7 @@
 </figure>
 
 <h2 id="有參數的lambda">有參數的Lambda</h2>
-<p>Interface加上時速參數，時是hour，速度是speed</p>
+<p>Interface加上參數，hour小時，km是公里。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2437,7 +2462,31 @@
 </pre></td><td class="code"><pre>  <span class="nc">Fly</span> <span class="n">helicopter</span> <span class="o">=</span> <span class="o">(</span><span class="kt">float</span> <span class="n">km</span><span class="o">,</span> <span class="kt">int</span> <span class="n">hour</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="o">{</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"直升機飛 "</span> <span class="o">+</span> <span class="n">hour</span> <span class="o">+</span> <span class="s">" 小時 "</span> <span class="o">+</span> <span class="n">km</span> <span class="o">+</span> <span class="s">"公里"</span><span class="o">);</span>
   <span class="o">};</span>
-  <span class="n">helicopter</span><span class="o">.</span><span class="na">fly</span><span class="o">(</span><span class="mi">60</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>
+  <span class="n">helicopter</span><span class="o">.</span><span class="na">fly</span><span class="o">(</span><span class="mi">600</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>去掉參數類型</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>  <span class="nc">Fly</span> <span class="n">helicopter</span> <span class="o">=</span> <span class="o">(</span><span class="n">km</span><span class="o">,</span> <span class="n">hour</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"直升機飛 "</span> <span class="o">+</span> <span class="n">hour</span> <span class="o">+</span> <span class="s">" 小時 "</span> <span class="o">+</span> <span class="n">km</span> <span class="o">+</span> <span class="s">"公里"</span><span class="o">);</span>
+  <span class="o">};</span>
+  <span class="n">helicopter</span><span class="o">.</span><span class="na">fly</span><span class="o">(</span><span class="mi">600</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>若參數只有一個，也可以去掉括號()</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>  <span class="nc">Fly</span> <span class="n">helicopter</span> <span class="o">=</span> <span class="n">km</span> <span class="o">-&gt;</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"直升機飛 "</span> <span class="o">+</span> <span class="n">km</span> <span class="o">+</span> <span class="s">"公里"</span><span class="o">);</span>
+  <span class="n">helicopter</span><span class="o">.</span><span class="na">fly</span><span class="o">(</span><span class="mi">600</span><span class="o">);</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -2631,7 +2680,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-13 00:56:29 +0800"
+        "time": "2025-05-14 14:59:52 +0800"
     },
     "basePath": "",
     "book": {

@@ -87,7 +87,7 @@ public class Test2 {
 {% endhighlight %}
 
 ## 有參數的Lambda
-Interface加上時速參數，時是hour，速度是speed
+Interface加上參數，hour小時，km是公里。
 {% highlight java linenos %}
 public interface Fly {
   void fly(float km, int hour);

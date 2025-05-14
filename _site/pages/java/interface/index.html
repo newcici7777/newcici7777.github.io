@@ -1698,6 +1698,13 @@
     	<a href="/pages/design_pattern/deepclone/" data-nav-link> DeepClone</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/design_pattern/flyweight/" data-nav-link> 共享模式</a>
+        
+            
         </li></ul></li></ul></li>
 	
 	
@@ -1763,7 +1770,21 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/basic/" data-nav-link> Basic</a>
+    	<a href="/pages/kotlin/code_style/" data-nav-link> Coding Style</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/type/" data-nav-link> 變數與基本資料類型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/when_if/" data-nav-link> 區間in與when、if</a>
         
             
         </li></ul></li>
@@ -2586,7 +2607,7 @@ public、abstract可以省略，編譯器會自動加上。</p>
 <p>由以上可以發現，介面跟繼承是完全不同的概念，類別(AirPlane)實作介面(Fly)的抽象方法(fly)，AirPlane就是介面(Fly)。</p>
 
 <h2 id="介面的多型">介面的多型</h2>
-<p>建立一個Operator運算元的介面，介面中有抽象的計算方法calculate()</p>
+<p>建立一個Operator運算子的介面，介面中有抽象的計算方法calculate()</p>
 
 <p>Operator.java</p>
 
@@ -2598,7 +2619,7 @@ public、abstract可以省略，編譯器會自動加上。</p>
 5
 6
 7
-</pre></td><td class="code"><pre><span class="c1">// 運算元</span>
+</pre></td><td class="code"><pre><span class="c1">// 運算子</span>
 <span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Operator</span> <span class="o">{</span>
   <span class="cm">/**
    * 計算功能
@@ -2608,7 +2629,7 @@ public、abstract可以省略，編譯器會自動加上。</p>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>加法運算元，實作Operator介面，覆寫(Override)calculate()方法</p>
+<p>加法運算子，實作Operator介面，覆寫(Override)calculate()方法</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2632,7 +2653,7 @@ public、abstract可以省略，編譯器會自動加上。</p>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>減法運算元，實作Operator介面，覆寫(Override)calculate()方法</p>
+<p>減法運算子，實作Operator介面，覆寫(Override)calculate()方法</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2656,7 +2677,7 @@ public、abstract可以省略，編譯器會自動加上。</p>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>乘法運算元，實作Operator介面，覆寫(Override)calculate()方法</p>
+<p>乘法運算子，實作Operator介面，覆寫(Override)calculate()方法</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2680,7 +2701,7 @@ public、abstract可以省略，編譯器會自動加上。</p>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>計算機，注意！calculate的第1個參數是Operator介面，也就是只要有實作Operator的類別(加法運算元、減法運算元、乘法運算元)都可以丟進去。</p>
+<p>計算機，注意！calculate的第1個參數是Operator介面，也就是只要有實作Operator的類別(加法運算子、減法運算子、乘法運算子)都可以丟進去。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2698,7 +2719,7 @@ public、abstract可以省略，編譯器會自動加上。</p>
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Calculator</span> <span class="o">{</span>
   <span class="cm">/**
    * 計算
-   * @param operator 運算元
+   * @param operator 運算子
    * @param x
    * @param y
    * @return
@@ -2947,7 +2968,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-13 00:56:29 +0800"
+        "time": "2025-05-14 14:59:52 +0800"
     },
     "basePath": "",
     "book": {

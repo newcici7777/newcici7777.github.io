@@ -187,11 +187,11 @@ public class Test {
 由以上可以發現，介面跟繼承是完全不同的概念，類別(AirPlane)實作介面(Fly)的抽象方法(fly)，AirPlane就是介面(Fly)。
 
 ## 介面的多型
-建立一個Operator運算元的介面，介面中有抽象的計算方法calculate()
+建立一個Operator運算子的介面，介面中有抽象的計算方法calculate()
 
 Operator.java
 {% highlight java linenos %}
-// 運算元
+// 運算子
 public interface Operator {
   /**
    * 計算功能
@@ -200,7 +200,7 @@ public interface Operator {
 }
 {% endhighlight %}
 
-加法運算元，實作Operator介面，覆寫(Override)calculate()方法
+加法運算子，實作Operator介面，覆寫(Override)calculate()方法
 {% highlight java linenos %}
 public class Add implements Operator{
   /***
@@ -213,7 +213,7 @@ public class Add implements Operator{
 }
 {% endhighlight %}
 
-減法運算元，實作Operator介面，覆寫(Override)calculate()方法
+減法運算子，實作Operator介面，覆寫(Override)calculate()方法
 {% highlight java linenos %}
 public class Minus implements Operator{
   /***
@@ -226,7 +226,7 @@ public class Minus implements Operator{
 }
 {% endhighlight %}
 
-乘法運算元，實作Operator介面，覆寫(Override)calculate()方法
+乘法運算子，實作Operator介面，覆寫(Override)calculate()方法
 {% highlight java linenos %}
 public class Multiply implements Operator{
   /***
@@ -239,12 +239,12 @@ public class Multiply implements Operator{
 }
 {% endhighlight %}
 
-計算機，注意！calculate的第1個參數是Operator介面，也就是只要有實作Operator的類別(加法運算元、減法運算元、乘法運算元)都可以丟進去。
+計算機，注意！calculate的第1個參數是Operator介面，也就是只要有實作Operator的類別(加法運算子、減法運算子、乘法運算子)都可以丟進去。
 {% highlight java linenos %}
 public class Calculator {
   /**
    * 計算
-   * @param operator 運算元
+   * @param operator 運算子
    * @param x
    * @param y
    * @return
