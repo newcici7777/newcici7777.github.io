@@ -112,7 +112,7 @@ fun sum4(vararg num:Int){
 {% endhighlight %}
 
 ### 函式參數換行
-當函式簽章不適合放在一行上時，應讓每個參數宣告獨佔一行。以此格式定義的參數應使用單縮排(+4)。右圓括號( )) 和回傳型別獨佔一行，沒有額外的縮排。
+當函式簽章不適合放在一行上時，應讓每個參數宣告獨佔一行。以此格式定義的參數應使用單縮排(+4)。右圓括號( )) 和傳回型別獨佔一行，沒有額外的縮排。
 {% highlight kotlin linenos %}
 fun <T> Iterable<T>.joinToString(
     separator: CharSequence = ", ",

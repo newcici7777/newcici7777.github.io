@@ -77,7 +77,7 @@ after address:0x7ff7bfeff464
 
 > If a pointer is passed to a function as a parameter and tried to be modified then the changes made to the pointer does not reflects back outside that function. This is because only a copy of the pointer is passed to the function. It can be said that “pass by pointer” is passing a pointer by value. In most cases, this does not present a problem. But the problem comes when you modify the pointer inside the function. Instead of modifying the variable, you are only modifying a copy of the pointer and the original pointer remains unmodified.
 
-> (google翻譯)如果將指標作為參數傳遞給函數並嘗試對其進行修改，則對指標所做的更改不會反映回該函數外部。這是因為僅將指標的副本傳遞給函數。可以說「透過指標傳遞」就是按值傳遞指標。在大多數情況下，這不會出現問題。但當你修改函數內部的指標時，問題就來了。您只是修改指標的副本，而不是修改變量，而原始指標保持不變。
+> (google翻譯)如果將指標作為參數傳遞給函式並嘗試對其進行修改，則對指標所做的更改不會反映回該函式外部。這是因為僅將指標的副本傳遞給函式。可以說「透過指標傳遞」就是按值傳遞指標。在大多數情況下，這不會出現問題。但當你修改函式內部的指標時，問題就來了。您只是修改指標的副本，而不是修改變數，而原始指標保持不變。
 
 
 ### 語法

@@ -38,7 +38,7 @@ test
 
 ## 自動推導函式指標類型
 
-函數指針設計複雜，可以使用auto簡化。
+函式指標設計複雜，可以使用auto簡化。
 
 注意！這邊的函式名後面沒有括號，auto指的是函式指標類型。
 
@@ -140,10 +140,10 @@ int main() {
 ### 使用auto簡化函式指標
 
 {% highlight c++ linenos %}
-//定義一個函式指標的類型為FuncPtr，傳回值為void的類型，參數是char指針
+//定義一個函式指標的類型為FuncPtr，傳回值為void的類型，參數是char指標
 typedef void(*FuncPtr)(char*);
 
-//參數為FuncPtr類型(傳回值為void的類型，參數是char指針)
+//參數為FuncPtr類型(傳回值為void的類型，參數是char指標)
 void say(FuncPtr func1, char* msg) {
   //呼叫函式指標
   func1(msg);

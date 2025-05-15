@@ -43,7 +43,7 @@ Java輸出入操作一定要用try catch，所以建立檔案時，要try catch�
 {% endhighlight %}
 
 ## 取得目錄下的檔案
-file.list()方法回傳值為String陣列
+file.list()方法傳回值為String陣列
 {% highlight java linenos %}
 String[] list()
 {% endhighlight %}

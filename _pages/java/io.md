@@ -118,7 +118,7 @@ ByteArrayOutputStream baos = new ByteArrayOutputStream();
 ![img]({{site.imgurl}}/java/io1.png)
 
 InputStream
-- read()回傳 -1 代表沒有資料讀取完畢。
+- read()傳回 -1 代表沒有資料讀取完畢。
 - int read() 一次讀一個位元組byte，傳回值為資料，型態為int，若值為其它類型，要轉型。
 - int read(byte[]) 一次讀取多個位元組，假設1024，一次讀取1024個位元組，並把讀到的資料放在byte[]
 - int read(byte[], int start, int len) 第2個參數是從那個陣列索引index開始讀，第3個參數是要讀幾個，並把讀到的資料放在byte[]
@@ -136,7 +136,7 @@ OutputStream
 ![img]({{site.imgurl}}/java/io2.png)
 
 Reader
-- read()回傳 -1 代表沒有資料讀取完畢。
+- read()傳回 -1 代表沒有資料讀取完畢。
 - int read() 一次讀一個字元，傳回值為int，值為資料內容，要轉型。
 - int read(char[]) 一次讀取多個字元，假設設定8，一次讀取8字元，並把讀到的資料放在char[]。
 - int read(char[], int start, int len) 第2個參數是從那個索引index開始讀?第3個參數是要讀幾個，並把讀到的資料放在char[]。

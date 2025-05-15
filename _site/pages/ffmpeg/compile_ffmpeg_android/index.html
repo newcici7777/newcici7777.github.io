@@ -1784,7 +1784,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/when_if/" data-nav-link> 區間in與when、if</a>
+    	<a href="/pages/kotlin/range/" data-nav-link> 區間in</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/when_if/" data-nav-link> if, when, while</a>
         
             
         </li>
@@ -1798,7 +1805,28 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/lambda/" data-nav-link> lambda</a>
+    	<a href="/pages/kotlin/array/" data-nav-link> array與List</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/fun/" data-nav-link> 函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/lambda/" data-nav-link> 匿名函式就是lambda</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/stdlib/" data-nav-link> 常用函式庫</a>
         
             
         </li></ul></li>
@@ -2616,7 +2644,7 @@ Standard options:
   <li>libavformat：用於各種音視頻封裝格式的生成和「解析」，包括獲取解碼所需資訊以產生解碼上下文結構<br />
 和讀取音視頻幀等功能；</li>
   <li>libavcodec ：用於各種類型「聲音/影像」編「解碼」；</li>
-  <li>libavutil ：包含一些公共的「工具函數」；</li>
+  <li>libavutil ：包含一些公共的「工具函式」；</li>
   <li>libswscale ：用於視訊場景比例「縮放」、色彩映射轉換；</li>
   <li>libpostproc ：用於後製效果(浮水印，字幕)處理；</li>
   <li>ffmpeg ：此專案提供的工具，可用於格式轉換、解碼或電視卡即時編碼等；</li>
@@ -2791,7 +2819,7 @@ Standard options:
 131
 </pre></td><td class="code"><pre><span class="cp">#!/bin/bash
 </span>
-<span class="cp"># 設置變量
+<span class="cp"># 設置變數
 </span><span class="n">NDK</span><span class="o">=/</span><span class="n">Users</span><span class="o">/</span><span class="n">cici</span><span class="o">/</span><span class="n">NDK</span>
 <span class="n">API_LEVEL</span><span class="o">=</span><span class="mi">30</span>
 <span class="n">ARCH</span><span class="o">=</span><span class="n">x86_64</span>  <span class="err">#</span> <span class="err">可選：</span><span class="n">arm</span><span class="p">,</span> <span class="n">arm64</span><span class="p">,</span> <span class="n">x86</span><span class="p">,</span> <span class="n">x86_64</span>
@@ -2855,7 +2883,7 @@ Standard options:
   <span class="n">echo</span> <span class="s">"請檢查以下內容："</span>
   <span class="n">echo</span> <span class="s">"1. 編譯器路徑：$BIN_PREFIX-clang"</span>
   <span class="n">echo</span> <span class="s">"2. sysroot 路徑：$SYSROOT"</span>
-  <span class="n">echo</span> <span class="s">"3. 環境變量：CC=$CC, CXX=$CXX, PATH=$PATH"</span>
+  <span class="n">echo</span> <span class="s">"3. 環境變數：CC=$CC, CXX=$CXX, PATH=$PATH"</span>
   <span class="n">exit</span> <span class="mi">1</span>
 <span class="k">else</span>
   <span class="n">echo</span> <span class="s">"編譯器測試成功"</span>
@@ -3113,7 +3141,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-14 23:29:04 +0800"
+        "time": "2025-05-15 16:54:31 +0800"
     },
     "basePath": "",
     "book": {

@@ -148,7 +148,7 @@ int main() {
   cout << errno << ":" << strerror(errno) << endl;
 {% endhighlight %}
 
-execl 函數用於在目前的 process 中啟動一個新的程式，取代目前 process 的執行。
+execl 函式用於在目前的 process 中啟動一個新的程式，取代目前 process 的執行。
 
 也就是成功執行後，原來的程式碼將不再執行，因為目前 process 已被新程式取代。
 

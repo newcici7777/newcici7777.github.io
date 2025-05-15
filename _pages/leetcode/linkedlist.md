@@ -21,7 +21,7 @@ Remove First要把100的節點刪掉
 7
 ![img]({{site.imgurl}}/leetcode/linklist7.png)
 ![img]({{site.imgurl}}/leetcode/linklist8.png)
-9圈起來的指針不用動它，因為沒有指針指向它，就會被垃圾回收掉
+9圈起來的指標不用動它，因為沒有指標指向它，就會被垃圾回收掉
 ![img]({{site.imgurl}}/leetcode/linklist9.png)
 10.也可把100刪掉
 ![img]({{site.imgurl}}/leetcode/linklist10.png)
@@ -53,10 +53,10 @@ class ListNode{
 }
 public class LinkedListSample {
   static void printLinkedList(ListNode head) {
-    ListNode p = head;//指針p
+    ListNode p = head;//指標p
     while(p != null) {
       System.out.println(p.val);
-      p = p.next;//指針往後走
+      p = p.next;//指標往後走
     }
   }
   //把鏈表當成二元數在遍歷，二元數有left/right，鏈表有next
@@ -81,9 +81,9 @@ public class LinkedListSample {
   }
   static ListNode addLast(ListNode head, int val) {
     if(head == null) return new ListNode(val);
-    ListNode p = head;//指針p
+    ListNode p = head;//指標p
     while(p.next != null) {
-      p = p.next;//指針p不斷往後走，走到鏈表的最後一個節點
+      p = p.next;//指標p不斷往後走，走到鏈表的最後一個節點
     }
     p.next = new ListNode(val);
     return head;
@@ -108,9 +108,9 @@ public class LinkedListSample {
    * @return
    */
   /**
-  val加到最後一個空指針
+  val加到最後一個空指標
   原本:1->2->3->4->null
-  添加5之後:1->2->3->4->[5->null] 5接在4後面再接上一個空指針
+  添加5之後:1->2->3->4->[5->null] 5接在4後面再接上一個空指標
   先遞歸的走(1->2->3->4->null)到null這個位置，再考慮怎麼去插入5
   addLast(head.next, int val) 遞歸的head.next就是在遞歸的往後走
   當走到結尾null也就是head == null
@@ -122,7 +122,7 @@ public class LinkedListSample {
     /**前面一個元素(4)要跟new出來的新節點接起來
     前一個元素(4)的next= new出來的新節點
     4.next去接新的節點5
-    遞歸的修改數據結構，每一個遞歸函數都有返回值，返回值得被數據結構自己去接收，遞歸調用head.next，就該由head.next去接收
+    遞歸的修改數據結構，每一個遞歸函式都有返回值，返回值得被數據結構自己去接收，遞歸調用head.next，就該由head.next去接收
     **/
     head.next = addLast(head.next, val);
     return head;//再把4返回給3.next， 3->4 3本來就連著4，再連一次 ，3再返回給2.next， 2再返回1.next

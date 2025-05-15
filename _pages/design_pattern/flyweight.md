@@ -155,7 +155,7 @@ String name = "Jack";
 
 ![img]({{site.imgurl}}/java/string_pool.png)
 
-以下的程式碼比較變數的記憶體位址是否相同，結果全是true，全部指向相同的記憶體位址。
+以下的程式碼比較變數的記憶體位址是否相同，結果全是true，3個變數都存放相同的記憶體位址。
 {% highlight java linenos %}
 public class Test {
   public static void main(String[] args) {
@@ -172,7 +172,7 @@ true
 true
 ```
 
-下圖中，name1, name2, name3三個變數全指向0x33的記憶體位址。
+下圖中，name1, name2, name3三個變數存放的是0x33的記憶體位址。
 
 ![img]({{site.imgurl}}/java/string_pool2.png)
 

@@ -1784,7 +1784,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/when_if/" data-nav-link> 區間in與when、if</a>
+    	<a href="/pages/kotlin/range/" data-nav-link> 區間in</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/when_if/" data-nav-link> if, when, while</a>
         
             
         </li>
@@ -1798,7 +1805,28 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/lambda/" data-nav-link> lambda</a>
+    	<a href="/pages/kotlin/array/" data-nav-link> array與List</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/fun/" data-nav-link> 函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/lambda/" data-nav-link> 匿名函式就是lambda</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/stdlib/" data-nav-link> 常用函式庫</a>
         
             
         </li></ul></li>
@@ -2363,7 +2391,7 @@ auto var = func();
 
 <h2 id="自動推導函式指標類型">自動推導函式指標類型</h2>
 
-<p>函數指針設計複雜，可以使用auto簡化。</p>
+<p>函式指標設計複雜，可以使用auto簡化。</p>
 
 <p>注意！這邊的函式名後面沒有括號，auto指的是函式指標類型。</p>
 
@@ -2534,10 +2562,10 @@ msg2:c++
 16
 17
 18
-</pre></td><td class="code"><pre><span class="c1">//定義一個函式指標的類型為FuncPtr，傳回值為void的類型，參數是char指針</span>
+</pre></td><td class="code"><pre><span class="c1">//定義一個函式指標的類型為FuncPtr，傳回值為void的類型，參數是char指標</span>
 <span class="k">typedef</span> <span class="nf">void</span><span class="p">(</span><span class="o">*</span><span class="n">FuncPtr</span><span class="p">)(</span><span class="kt">char</span><span class="o">*</span><span class="p">);</span>
 
-<span class="c1">//參數為FuncPtr類型(傳回值為void的類型，參數是char指針)</span>
+<span class="c1">//參數為FuncPtr類型(傳回值為void的類型，參數是char指標)</span>
 <span class="kt">void</span> <span class="nf">say</span><span class="p">(</span><span class="n">FuncPtr</span> <span class="n">func1</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
   <span class="c1">//呼叫函式指標</span>
   <span class="n">func1</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
@@ -2748,7 +2776,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-14 23:29:04 +0800"
+        "time": "2025-05-15 16:54:31 +0800"
     },
     "basePath": "",
     "book": {

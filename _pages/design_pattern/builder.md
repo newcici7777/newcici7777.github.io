@@ -30,7 +30,7 @@ buildPartA()、buildPartB()、buildPartC()
 ### Director指揮者
 成員屬性有builder，用聚合(空心菱形)的方法，用setBuilder()方式聚合。
 
-construct()方法，把製作產品的過程、步驟、方法統整起來，最後回傳一個Product產品出來。
+construct()方法，把製作產品的過程、步驟、方法統整起來，最後傳回一個Product產品出來。
 
 ## 建造各種房子
 以上是經典類別圖，現在根據經典類別圖，來建造房子吧！我們要建造小木屋Cabin、別墅Villa二種房子，建造過程一定是不同的。
@@ -163,7 +163,7 @@ public class Director {
     this.builder = builder;
   }
 
-  // 控管建造流程，最後把建造完成的房子回傳
+  // 控管建造流程，最後把建造完成的房子傳回
   public House construct() {
     builder.buildBase();
     builder.buildWalls();

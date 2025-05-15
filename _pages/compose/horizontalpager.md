@@ -43,7 +43,7 @@ val initialIndex = virtualCount / 2
 
 {% highlight kotlin linenos %}
 /**
- *擴展函數
+ *擴展函式
 *
  *@paramother實際總筆數
 *@return
@@ -60,7 +60,7 @@ private fun Int.floorMod(other:Int) : Int = when(other) {
 }
 {% endhighlight %}
 
-透過以下方式，呼叫上面的擴展函數
+透過以下方式，呼叫上面的擴展函式
 ```
 val actualIndex = (index - initialIndex).*floorMod*(actualCount)
 ```

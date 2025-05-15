@@ -1781,7 +1781,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/when_if/" data-nav-link> 區間in與when、if</a>
+    	<a href="/pages/kotlin/range/" data-nav-link> 區間in</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/when_if/" data-nav-link> if, when, while</a>
         
             
         </li>
@@ -1795,7 +1802,28 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/lambda/" data-nav-link> lambda</a>
+    	<a href="/pages/kotlin/array/" data-nav-link> array與List</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/fun/" data-nav-link> 函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/lambda/" data-nav-link> 匿名函式就是lambda</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/stdlib/" data-nav-link> 常用函式庫</a>
         
             
         </li></ul></li>
@@ -2337,7 +2365,7 @@ Remove First要把100的節點刪掉
 7
 <img src="/assets/img/leetcode/linklist7.png" alt="img" />
 <img src="/assets/img/leetcode/linklist8.png" alt="img" />
-9圈起來的指針不用動它，因為沒有指針指向它，就會被垃圾回收掉
+9圈起來的指標不用動它，因為沒有指標指向它，就會被垃圾回收掉
 <img src="/assets/img/leetcode/linklist9.png" alt="img" />
 10.也可把100刪掉
 <img src="/assets/img/leetcode/linklist10.png" alt="img" />
@@ -2497,10 +2525,10 @@ Remove (index)
 <span class="o">}</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">LinkedListSample</span> <span class="o">{</span>
   <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printLinkedList</span><span class="o">(</span><span class="nc">ListNode</span> <span class="n">head</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">ListNode</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span><span class="c1">//指針p</span>
+    <span class="nc">ListNode</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span><span class="c1">//指標p</span>
     <span class="k">while</span><span class="o">(</span><span class="n">p</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">p</span><span class="o">.</span><span class="na">val</span><span class="o">);</span>
-      <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="na">next</span><span class="o">;</span><span class="c1">//指針往後走</span>
+      <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="na">next</span><span class="o">;</span><span class="c1">//指標往後走</span>
     <span class="o">}</span>
   <span class="o">}</span>
   <span class="c1">//把鏈表當成二元數在遍歷，二元數有left/right，鏈表有next</span>
@@ -2525,9 +2553,9 @@ Remove (index)
   <span class="o">}</span>
   <span class="kd">static</span> <span class="nc">ListNode</span> <span class="nf">addLast</span><span class="o">(</span><span class="nc">ListNode</span> <span class="n">head</span><span class="o">,</span> <span class="kt">int</span> <span class="n">val</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">if</span><span class="o">(</span><span class="n">head</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span> <span class="k">new</span> <span class="nc">ListNode</span><span class="o">(</span><span class="n">val</span><span class="o">);</span>
-    <span class="nc">ListNode</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span><span class="c1">//指針p</span>
+    <span class="nc">ListNode</span> <span class="n">p</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span><span class="c1">//指標p</span>
     <span class="k">while</span><span class="o">(</span><span class="n">p</span><span class="o">.</span><span class="na">next</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
-      <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="na">next</span><span class="o">;</span><span class="c1">//指針p不斷往後走，走到鏈表的最後一個節點</span>
+      <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="na">next</span><span class="o">;</span><span class="c1">//指標p不斷往後走，走到鏈表的最後一個節點</span>
     <span class="o">}</span>
     <span class="n">p</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ListNode</span><span class="o">(</span><span class="n">val</span><span class="o">);</span>
     <span class="k">return</span> <span class="n">head</span><span class="o">;</span>
@@ -2552,9 +2580,9 @@ Remove (index)
    * @return
    */</span>
   <span class="cm">/**
-  val加到最後一個空指針
+  val加到最後一個空指標
   原本:1-&gt;2-&gt;3-&gt;4-&gt;null
-  添加5之後:1-&gt;2-&gt;3-&gt;4-&gt;[5-&gt;null] 5接在4後面再接上一個空指針
+  添加5之後:1-&gt;2-&gt;3-&gt;4-&gt;[5-&gt;null] 5接在4後面再接上一個空指標
   先遞歸的走(1-&gt;2-&gt;3-&gt;4-&gt;null)到null這個位置，再考慮怎麼去插入5
   addLast(head.next, int val) 遞歸的head.next就是在遞歸的往後走
   當走到結尾null也就是head == null
@@ -2566,7 +2594,7 @@ Remove (index)
     <span class="cm">/**前面一個元素(4)要跟new出來的新節點接起來
     前一個元素(4)的next= new出來的新節點
     4.next去接新的節點5
-    遞歸的修改數據結構，每一個遞歸函數都有返回值，返回值得被數據結構自己去接收，遞歸調用head.next，就該由head.next去接收
+    遞歸的修改數據結構，每一個遞歸函式都有返回值，返回值得被數據結構自己去接收，遞歸調用head.next，就該由head.next去接收
     **/</span>
     <span class="n">head</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">addLast</span><span class="o">(</span><span class="n">head</span><span class="o">.</span><span class="na">next</span><span class="o">,</span> <span class="n">val</span><span class="o">);</span>
     <span class="k">return</span> <span class="n">head</span><span class="o">;</span><span class="c1">//再把4返回給3.next， 3-&gt;4 3本來就連著4，再連一次 ，3再返回給2.next， 2再返回1.next</span>
@@ -2807,7 +2835,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-14 23:29:04 +0800"
+        "time": "2025-05-15 16:54:31 +0800"
     },
     "basePath": "",
     "book": {

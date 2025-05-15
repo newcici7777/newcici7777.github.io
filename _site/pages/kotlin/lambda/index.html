@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>lambda </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>匿名函式就是lambda </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="keywords" content="kotlin, lambda" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -1781,7 +1781,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/when_if/" data-nav-link> 區間in與when、if</a>
+    	<a href="/pages/kotlin/range/" data-nav-link> 區間in</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/when_if/" data-nav-link> if, when, while</a>
         
             
         </li>
@@ -1794,12 +1801,33 @@
         </li>
 	
 	
-	<li class="active" data-nav-item>
-    	<a href="/pages/kotlin/lambda/" data-nav-link> lambda</a>
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/array/" data-nav-link> array與List</a>
         
             
-                
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/fun/" data-nav-link> 函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/kotlin/lambda/" data-nav-link> 匿名函式就是lambda</a>
+        
+            
+                <ul><li><a href="#匿名函式是變數類型" data-nav-link " >匿名函式是變數類型</a></li><li><a href="#有名字的函式" data-nav-link " >有名字的函式</a></li><li><a href="#定義匿名函式" data-nav-link " >定義匿名函式</a></li><li><a href="#推斷變數的類型" data-nav-link " >推斷變數的類型</a></li><li><a href="#省略函式定義的參數類型" data-nav-link " >省略函式定義的參數類型</a></li><li><a href="#函式類型參數只有一個" data-nav-link " >函式類型參數只有一個</a></li><li><a href="#使用it" data-nav-link " >使用it</a></li><li><a href="#多行函式主體" data-nav-link " >多行函式主體{}</a></li><li><a href="#函式參數是匿名函式1" data-nav-link " >函式參數是匿名函式1</a></li><li><a href="#函式參數是匿名函式2" data-nav-link " >函式參數是匿名函式2</a></li><li><a href="#最後一個參數是匿名函式" data-nav-link " >最後一個參數是匿名函式</a></li><li><a href="#參數只有一個匿名函式去掉圓括號" data-nav-link " >參數只有一個匿名函式，去掉圓括號</a></li><li><a href="#透過匿名函式把標準函式重寫覆寫規則" data-nav-link " >透過匿名函式把標準函式重寫(覆寫)規則</a></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/stdlib/" data-nav-link> 常用函式庫</a>
+        
             
         </li></ul></li>
 	
@@ -2303,7 +2331,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >lambda</a>
+                            <a href="." >匿名函式就是lambda</a>
                         
                     </h1>
                 </div>
@@ -2316,10 +2344,397 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/kotlin/lambda">lambda</h1>
+                        <h1 id="/pages/kotlin/lambda">匿名函式就是lambda</h1>
                     
 
-                    
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/java/lambda/">Java lambda</a></li>
+</ul>
+
+<p>匿名函式就是lambda</p>
+
+<h2 id="匿名函式是變數類型">匿名函式是變數類型</h2>
+<p>匿名函式的類型是由「傳入的參數」與「傳回值類型」所決定的。</p>
+
+<p>此處的匿名函式與C++的<a href="/pages/c/function/functionPointer/">函式指標</a>有相同的概念。</p>
+
+<h2 id="有名字的函式">有名字的函式</h2>
+<p>有名字的函式要用return傳回值。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span> <span class="nc">Int</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="定義匿名函式">定義匿名函式</h2>
+
+<p>匿名函式不用有return，預設最後一行是傳回值。</p>
+
+<p>變數的類型是匿名函式，匿名函式的類型是「傳入的參數類型」與「傳回值類型」。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="c1">//  變數: (傳入的參數類型) -&gt; 傳回值類型 = {參數: 類型, 參數: 類型 -&gt; 傳回值}</span>
+<span class="kd">val</span> <span class="py">sum</span><span class="p">:</span> <span class="p">(</span><span class="nc">Int</span><span class="p">,</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">Int</span> <span class="p">=</span> <span class="p">{</span> <span class="n">x</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="nc">Int</span> <span class="p">-&gt;</span> <span class="n">x</span> <span class="p">+</span> <span class="n">y</span> <span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">));</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>30
+</code></pre></div></div>
+
+<h2 id="推斷變數的類型">推斷變數的類型</h2>
+<p>變數的類型是可以推斷的，就可以省略變數類型。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="c1">//  變數 = {參數:類型,參數:類型 -&gt; 傳回值}</span>
+<span class="kd">val</span> <span class="py">sum</span> <span class="p">=</span> <span class="p">{</span> <span class="n">x</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="nc">Int</span> <span class="p">-&gt;</span> <span class="n">x</span> <span class="p">+</span> <span class="n">y</span> <span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"sum = ${sum(15, 25)}"</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sum = 40
+</code></pre></div></div>
+
+<p>sendMsg1的類型是可以推斷，就可以省略變數類型。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="c1">// 變數類型為() -&gt; String</span>
+<span class="kd">val</span> <span class="py">sendMsg1</span> <span class="p">=</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">appendMsg</span> <span class="p">=</span> <span class="s">"nice to meet you."</span>
+    <span class="s">"傳回訊息1 = $appendMsg"</span>
+<span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="nf">sendMsg1</span><span class="p">())</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>傳回訊息1 = nice to meet you.
+</code></pre></div></div>
+
+<h2 id="省略函式定義的參數類型">省略函式定義的參數類型</h2>
+<p>如果函式類型沒有省略，函式定義中的參數「類型」是可以省略。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="c1">//  變數: (傳入的參數類型) -&gt; 傳回值類型 = {參數, 參數 -&gt; 傳回值}</span>
+<span class="kd">val</span> <span class="py">sum</span><span class="p">:</span> <span class="p">(</span><span class="nc">Int</span><span class="p">,</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">Int</span> <span class="p">=</span> <span class="p">{</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="p">-&gt;</span> <span class="n">x</span> <span class="p">+</span> <span class="n">y</span> <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="函式類型參數只有一個">函式類型參數只有一個</h2>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="c1">//  變數: (傳入的參數類型) -&gt; 傳回值類型 = {參數 -&gt; 傳回值}</span>
+<span class="kd">val</span> <span class="py">sendMsg</span><span class="p">:</span> <span class="p">(</span><span class="nc">String</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">String</span> <span class="p">=</span> <span class="p">{</span> <span class="n">msg</span> <span class="p">-&gt;</span> <span class="s">"傳回訊息 = $msg"</span> <span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="nf">sendMsg</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">))</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>傳回訊息 = Hello world!
+</code></pre></div></div>
+
+<h2 id="使用it">使用it</h2>
+<p>簡化參數成it，只針對函式類型「參數只有一個」。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">sendMsg</span><span class="p">:</span> <span class="p">(</span><span class="nc">String</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">String</span> <span class="p">=</span> <span class="p">{</span> <span class="s">"傳回訊息 = $it"</span> <span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="nf">sendMsg</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">))</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>傳回訊息 = Hello world!
+</code></pre></div></div>
+
+<h2 id="多行函式主體">多行函式主體{}</h2>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">sendMsg</span><span class="p">:</span> <span class="p">(</span><span class="nc">String</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">String</span> <span class="p">=</span> <span class="p">{</span> 
+    <span class="kd">val</span> <span class="py">appendMsg</span> <span class="p">=</span> <span class="s">"${it} nice to meet you."</span>
+    <span class="s">"傳回訊息 = $appendMsg"</span> 
+<span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="nf">sendMsg</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">))</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>傳回訊息 = Hello world! nice to meet you.
+</code></pre></div></div>
+
+<h2 id="函式參數是匿名函式1">函式參數是匿名函式1</h2>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">callback</span><span class="p">:</span> <span class="p">(</span><span class="nc">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">String</span> <span class="p">=</span> <span class="p">{</span>
+    <span class="k">when</span> <span class="p">(</span><span class="n">it</span><span class="p">)</span> <span class="p">{</span>
+        <span class="mi">404</span> <span class="p">-&gt;</span> <span class="s">"找不到網頁"</span>
+        <span class="mi">500</span> <span class="p">-&gt;</span> <span class="s">"Server error!"</span>
+        <span class="k">else</span> <span class="p">-&gt;</span> <span class="s">"其它錯誤"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">val</span> <span class="py">sendMsg3</span><span class="p">:</span> <span class="p">(</span><span class="nc">Int</span><span class="p">,</span> <span class="p">(</span><span class="nc">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">String</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">String</span> <span class="p">=</span> 
+    <span class="p">{</span> <span class="n">code</span><span class="p">,</span> <span class="n">function1</span> <span class="p">-&gt;</span>
+        <span class="nf">function1</span><span class="p">(</span><span class="n">code</span><span class="p">)</span>
+    <span class="p">}</span>
+
+<span class="nf">println</span><span class="p">(</span><span class="s">"函式的參數是函式，結果 = ${sendMsg3(404, callback)}"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>函式的參數是函式，結果 = 找不到網頁
+</code></pre></div></div>
+
+<p>解釋:</p>
+<ul>
+  <li>callback變數的函式類型定義是，參數是Int，傳回值是String。</li>
+  <li>sendMsg3變數的函式類型定義是，傳回值是String類型，參數有二個，分別是Int與匿名函式。</li>
+  <li>匿名函式的類型定義是，參數是Int，傳回值是String類型。</li>
+</ul>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nf">println</span><span class="p">(</span><span class="s">"函式的參數是函式，結果 = ${sendMsg3(404, callback)}"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<ul>
+  <li>使用字串模板運算式<code class="language-plaintext highlighter-rouge">${}</code></li>
+  <li>呼叫sendMsg3()函式</li>
+  <li>參數1，404</li>
+  <li>參數2，callback變數</li>
+</ul>
+
+<h2 id="函式參數是匿名函式2">函式參數是匿名函式2</h2>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">sendMsg4</span><span class="p">(</span><span class="n">code</span><span class="p">:</span><span class="nc">Int</span><span class="p">,</span> <span class="n">function1</span><span class="p">:</span> <span class="p">(</span><span class="nc">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">String</span><span class="p">):</span> <span class="nc">String</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nf">function1</span><span class="p">(</span><span class="n">code</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="kd">val</span> <span class="py">callback</span><span class="p">:</span> <span class="p">(</span><span class="nc">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">String</span> <span class="p">=</span> <span class="p">{</span>
+    <span class="k">when</span> <span class="p">(</span><span class="n">it</span><span class="p">)</span> <span class="p">{</span>
+        <span class="mi">404</span> <span class="p">-&gt;</span> <span class="s">"找不到網頁"</span>
+        <span class="mi">500</span> <span class="p">-&gt;</span> <span class="s">"Server error!"</span>
+        <span class="k">else</span> <span class="p">-&gt;</span> <span class="s">"其它錯誤"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nf">println</span><span class="p">(</span><span class="s">"有名字的函式的參數是函式，結果 = ${sendMsg4(500, callback)}"</span><span class="p">);</span>    
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>有名字的函式的參數是函式，結果 = Server error!
+</code></pre></div></div>
+
+<p>解釋:</p>
+<ul>
+  <li>callback變數的函式類型定義是，參數是Int，傳回值是String。</li>
+  <li>sendMsg4()定義在main()函式之外。</li>
+  <li>sendMsg4()，傳回值是String類型，參數有二個，分別是Int與匿名函式。</li>
+  <li>sendMsg4()是有名字的函式，要有return關鍵字。</li>
+  <li>匿名函式的類型定義是，參數是Int，傳回值是String類型。</li>
+</ul>
+
+<h2 id="最後一個參數是匿名函式">最後一個參數是匿名函式</h2>
+<p>sendMsg5函式類型定義是，傳回值是Unit，沒有傳回值。</p>
+
+<p>參數1是Int類型，參數2是匿名函式。</p>
+
+<p>code是參數1的變數名，function1是參數2的變數名。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">sendMsg5</span><span class="p">:</span> <span class="p">(</span><span class="nc">Int</span><span class="p">,</span> <span class="p">(</span><span class="nc">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">String</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">Unit</span> <span class="p">=</span> 
+    <span class="p">{</span> <span class="n">code</span><span class="p">,</span> <span class="n">function1</span> <span class="p">-&gt;</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"匿名函式在參數最後 = ${function1(code)}"</span><span class="p">)</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>把函式主體{}移出圓括號，花括號{}是匿名函式，是參2。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="nf">sendMsg5</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">it</span> <span class="p">==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+        <span class="s">"網頁正常"</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="s">"其它錯誤"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>匿名函式在參數最後 = 網頁正常
+</code></pre></div></div>
+
+<h2 id="參數只有一個匿名函式去掉圓括號">參數只有一個匿名函式，去掉圓括號</h2>
+<p>參數只有一個匿名函式。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">sendMsg6</span><span class="p">:</span> <span class="p">((</span><span class="nc">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">String</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">Unit</span> <span class="p">=</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"參數只有一個匿名函式 = ${it(200)}"</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>省略圓括號，花括號{}是匿名函式，是參數。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="nf">sendMsg6</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">it</span> <span class="p">==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+        <span class="s">"網頁正常"</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="s">"其它錯誤"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="透過匿名函式把標準函式重寫覆寫規則">透過匿名函式把標準函式重寫(覆寫)規則</h2>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">str</span> <span class="p">=</span> <span class="s">"Hello World"</span>
+<span class="kd">val</span> <span class="py">o_count</span> <span class="p">=</span> <span class="n">str</span><span class="p">.</span><span class="nf">count</span> <span class="p">({</span> <span class="n">letter</span> <span class="p">-&gt;</span>
+    <span class="n">letter</span> <span class="p">==</span> <span class="sc">'o'</span>
+<span class="p">})</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<ul>
+  <li>letter是參數。</li>
+  <li>只要計算字母為o的字元數量。</li>
+</ul>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">letter</span> <span class="p">==</span> <span class="sc">'o'</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>簡化2，圓括號去掉</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">str</span> <span class="p">=</span> <span class="s">"Hello World"</span>
+<span class="kd">val</span> <span class="py">o_count</span> <span class="p">=</span> <span class="n">str</span><span class="p">.</span><span class="nf">count</span> <span class="p">{</span> <span class="n">letter</span> <span class="p">-&gt;</span>
+    <span class="n">letter</span> <span class="p">==</span> <span class="sc">'o'</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>簡化3，letter與-&gt;箭頭去掉，因為只有一個參數，可以去掉，默認用it代替一個參數。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">str</span> <span class="p">=</span> <span class="s">"Hello World"</span>
+<span class="kd">val</span> <span class="py">o_count</span> <span class="p">=</span> <span class="n">str</span><span class="p">.</span><span class="nf">count</span> <span class="p">{</span>
+    <span class="n">it</span> <span class="p">==</span> <span class="sc">'o'</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>印出字元個數</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">str</span> <span class="p">=</span> <span class="s">"Hello World"</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"字元個數 = ${str.count()}"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"o字元個數 = ${o_count}"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>字元個數 = 11
+o字元個數 = 2
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2383,14 +2798,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/kotlin/null" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Null">
+                        <a href="/pages/kotlin/fun" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 函式">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/compose/text" class="navigation navigation-next navigation-unique" aria-label="Next page: Compose Text">
+                        <a href="/pages/kotlin/stdlib" class="navigation navigation-next navigation-unique" aria-label="Next page: 常用函式庫">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2510,7 +2925,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-14 23:29:04 +0800"
+        "time": "2025-05-15 16:54:31 +0800"
     },
     "basePath": "",
     "book": {

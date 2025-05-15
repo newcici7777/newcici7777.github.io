@@ -243,7 +243,7 @@ ffmpeg主要由下面的元件所組成:
 1. libavformat：用於各種音視頻封裝格式的生成和「解析」，包括獲取解碼所需資訊以產生解碼上下文結構  
 和讀取音視頻幀等功能；  
 2. libavcodec ：用於各種類型「聲音/影像」編「解碼」；  
-3. libavutil ：包含一些公共的「工具函數」；  
+3. libavutil ：包含一些公共的「工具函式」；  
 4. libswscale ：用於視訊場景比例「縮放」、色彩映射轉換；  
 5. libpostproc ：用於後製效果(浮水印，字幕)處理；  
 6. ffmpeg ：此專案提供的工具，可用於格式轉換、解碼或電視卡即時編碼等；  
@@ -280,7 +280,7 @@ cross-compile就是交叉編譯的意思，使用各種不同作業系統的交�
 {% highlight c++ linenos %}
 #!/bin/bash
 
-# 設置變量
+# 設置變數
 NDK=/Users/cici/NDK
 API_LEVEL=30
 ARCH=x86_64  # 可選：arm, arm64, x86, x86_64
@@ -344,7 +344,7 @@ if [ $? -ne 0 ]; then
   echo "請檢查以下內容："
   echo "1. 編譯器路徑：$BIN_PREFIX-clang"
   echo "2. sysroot 路徑：$SYSROOT"
-  echo "3. 環境變量：CC=$CC, CXX=$CXX, PATH=$PATH"
+  echo "3. 環境變數：CC=$CC, CXX=$CXX, PATH=$PATH"
   exit 1
 else
   echo "編譯器測試成功"
