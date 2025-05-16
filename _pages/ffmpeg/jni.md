@@ -301,7 +301,7 @@ Java_com_example_ndkproj_MainActivity_passObject(JNIEnv *env, jobject thiz, jobj
   // 2. 取得get方法
   // 參數1:class
   // 參數2:函式名
-  // 參數3:簽名()I代表無法參數，回傳int
+  // 參數3:簽名()I代表無法參數，傳回int
   jmethodID getI = env->GetMethodID(beanCls, "getData", "()I");
   // 3. 呼叫方法
   jint i = env->CallIntMethod(bean, getI);

@@ -3,7 +3,11 @@ title: Call by value
 date: 2025-04-18
 keywords: Java, call by value
 ---
-一進入方法，若傳進來的參數是物件，也就是記憶體位址，方法建立新的變數拷貝傳進來的參數，這種方式會先把參數複製一份，稱為Call by value。
+Prerequisites:
+
+- [記憶體模型][3]
+
+一進入方法，若傳進來的參數是物件，也就是記憶體位址，建立新的變數複製傳進來記憶體位址，把傳進來的參數複製一份到新的變數，稱為Call by value。
 
 ## 修改成員變數
 以下的程式碼要傳遞testClz變數給copyAddress()方法。
@@ -99,3 +103,4 @@ arg1存的0x0066與testClz變數存的0x0033不一樣，所以修改arg1.age，�
 
 [1]: {% link _pages/c/function/func_param_pointer.md %}
 [2]: {% link _pages/c/function/callByRef.md %}
+[3]: {% link _pages/java/memory_model.md %}

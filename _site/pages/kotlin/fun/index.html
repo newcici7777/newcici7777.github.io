@@ -1410,6 +1410,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/memory_model/" data-nav-link> Java Memory Model</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/callby_value/" data-nav-link> Call by value</a>
         
             
@@ -1812,7 +1819,7 @@
     	<a href="/pages/kotlin/fun/" data-nav-link> 函式</a>
         
             
-                <ul><li><a href="#函式宣告" data-nav-link " >函式宣告</a></li><li><a href="#私有函式" data-nav-link " >私有函式</a></li><li><a href="#用等於來指定回傳值的運算式" data-nav-link " >用等於=來指定回傳值的運算式</a></li><li><a href="#參數預設值" data-nav-link " >參數預設值</a></li><li><a href="#unit函式" data-nav-link " >Unit函式</a></li></ul>
+                <ul><li><a href="#函式宣告" data-nav-link " >函式宣告</a></li><li><a href="#私有函式" data-nav-link " >私有函式</a></li><li><a href="#用等於來指定傳回值的運算式" data-nav-link " >用等於=來指定傳回值的運算式</a></li><li><a href="#參數預設值" data-nav-link " >參數預設值</a></li><li><a href="#unit函式" data-nav-link " >Unit函式</a></li></ul>
 
             
         </li>
@@ -2350,12 +2357,9 @@
                     <h2 id="函式宣告">函式宣告</h2>
 <p>以fun開頭後面接函式名。</p>
 
-<dl>
-  <dt>圓括號裡是參數(參數1: 參數類型, 參數2: 參數類型)。</dt>
-  <dd>
-    <p>Int為傳回值型別。</p>
-  </dd>
-</dl>
+<p>圓括號裡是參數<code class="language-plaintext highlighter-rouge">(參數1: 參數類型, 參數2: 參數類型)</code>。</p>
+
+<p><code class="language-plaintext highlighter-rouge">: Int</code>為傳回值型別。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2389,8 +2393,8 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="用等於來指定回傳值的運算式">用等於=來指定回傳值的運算式</h2>
-<p>用 = 來指定回傳值的運算式</p>
+<h2 id="用等於來指定傳回值的運算式">用等於=來指定傳回值的運算式</h2>
+<p>用 = 來指定傳回值的運算式</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2449,7 +2453,7 @@
 3
 4
 5
-</pre></td><td class="code"><pre><span class="c1">//無參數，無回傳值的函式</span>
+</pre></td><td class="code"><pre><span class="c1">//無參數，無傳回值的函式</span>
 <span class="k">fun</span> <span class="nf">foo</span><span class="p">()</span> <span class="p">{}</span>
 <span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="nf">println</span><span class="p">(</span><span class="nf">foo</span><span class="p">())</span>
@@ -2650,7 +2654,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-15 16:54:31 +0800"
+        "time": "2025-05-16 16:34:14 +0800"
     },
     "basePath": "",
     "book": {

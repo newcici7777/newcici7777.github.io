@@ -1409,6 +1409,16 @@
         </li>
 	
 	
+	<li class="active" data-nav-item>
+    	<a href="/pages/java/memory_model/" data-nav-link> Java Memory Model</a>
+        
+            
+                <ul><li><a href="#基本資料型別" data-nav-link " >基本資料型別</a></li><li><a href="#陣列記憶體位址複製" data-nav-link " >陣列記憶體位址複製</a></li><li><a href="#陣列複製" data-nav-link " >陣列複製</a></li><li><a href="#2維陣列" data-nav-link " >2維陣列</a></li><li><a href="#物件建立過程" data-nav-link " >物件建立過程</a></li></ul>
+
+            
+        </li>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/java/callby_value/" data-nav-link> Call by value</a>
         
@@ -2348,6 +2358,102 @@
 
 <p><img src="/assets/img/java/memory_model.png" alt="img" /></p>
 
+<h2 id="基本資料型別">基本資料型別</h2>
+<p>基本資料型別有int, char, float, double, boolean，字母以小寫開頭。</p>
+
+<p>基本資料型別的值是放在stack中，以下是放入stack中的過程。</p>
+
+<p><img src="/assets/img/java/assign_int1.png" alt="img" /></p>
+
+<p><img src="/assets/img/java/assign_int2.png" alt="img" /></p>
+
+<p><img src="/assets/img/java/assign_int3.png" alt="img" /></p>
+
+<h2 id="陣列記憶體位址複製">陣列記憶體位址複製</h2>
+
+<p>陣列是物件，「物件」都是放在「Heap」空間，「Stack」放的是「變數」，「變數」的值是存放「Heap」空間的「記憶體位址」。</p>
+
+<p><img src="/assets/img/java/assign_arr1.png" alt="img" /></p>
+
+<p><img src="/assets/img/java/assign_arr2.png" alt="img" /></p>
+
+<p><img src="/assets/img/java/assign_arr3.png" alt="img" /></p>
+
+<h2 id="陣列複製">陣列複製</h2>
+<p>遇到new關鍵字，就是在Heap中建立一個記憶體空間，空間大小根據物件類型所定義，此處定義大小為3。</p>
+
+<p>Stack中的變數，存放「Heap」空間的「記憶體位址」。
+<img src="/assets/img/java/assign_arrcopy1.png" alt="img" /></p>
+
+<p>箭頭指向for{}最後，代表已經執行完for迴圈，Heap中的記憶體位址中的值也被設成跟arr1的值是一樣的。
+<img src="/assets/img/java/assign_arrcopy2.png" alt="img" /></p>
+
+<h2 id="2維陣列">2維陣列</h2>
+<p>陣列存的是1維陣列的記憶體位址。
+<img src="/assets/img/java/assign_arr2d1.png" alt="img" /></p>
+
+<p><img src="/assets/img/java/assign_arr2d2.png" alt="img" /></p>
+
+<h2 id="物件建立過程">物件建立過程</h2>
+<p>Dog類別</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Dog</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="nc">String</span> <span class="n">color</span><span class="o">;</span>
+
+  <span class="kd">public</span> <span class="nf">Dog</span> <span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">int</span> <span class="n">age</span><span class="o">,</span> <span class="nc">String</span> <span class="n">color</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="o">;</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">color</span> <span class="o">=</span> <span class="n">color</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>建立Dog</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>  <span class="nc">Dog</span> <span class="n">white_dog</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Dog</span><span class="o">(</span><span class="s">"小白"</span><span class="o">,</span><span class="mi">5</span><span class="o">,</span><span class="s">"白色"</span><span class="o">);</span>
+  <span class="nc">Dog</span> <span class="n">yellow_dog</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Dog</span><span class="o">(</span><span class="s">"小黃"</span><span class="o">,</span><span class="mi">6</span><span class="o">,</span><span class="s">"黃色"</span><span class="o">);</span>
+  <span class="nc">Dog</span> <span class="n">black_dog</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Dog</span><span class="o">(</span><span class="s">"小黑"</span><span class="o">,</span><span class="mi">7</span><span class="o">,</span><span class="s">"黑色"</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>Class Loader載入類別資訊</p>
+
+<p><img src="/assets/img/java/obj_model1.png" alt="img" /></p>
+
+<p>new關鍵字，建立記憶體空間，name與age與color，全用預設值，int基本型別用0預設值，name與color是物件用null。
+<img src="/assets/img/java/obj_model2.png" alt="img" /></p>
+
+<p>進入建構子，在String pool字串常數池，建立”小白”字串常數記憶體空間，Heap空間的物件name的值設成”小白”的記憶體位址。
+<img src="/assets/img/java/obj_model3.png" alt="img" /></p>
+
+<p>age是int基本型別，直接設數字5。
+<img src="/assets/img/java/obj_model4.png" alt="img" /></p>
+
+<p>color是String類別，在String pool字串常數池，建立”白色”字串常數記憶體空間，物件的color設成”白色”的記憶體位址。
+<img src="/assets/img/java/obj_model5.png" alt="img" /></p>
+
+<p>三個物件建立完畢的記憶體模型
+<img src="/assets/img/java/assign_obj1.png" alt="img" /></p>
+
 <p>164
 165
 176
@@ -2417,7 +2523,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/java/anonymous_class" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 匿名類別">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/java/callby_value" class="navigation navigation-next navigation-unique" aria-label="Next page: Call by value">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -2535,7 +2651,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-15 16:54:31 +0800"
+        "time": "2025-05-16 16:34:14 +0800"
     },
     "basePath": "",
     "book": {

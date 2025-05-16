@@ -207,7 +207,7 @@ sendMsg6 {
 }
 {% endhighlight %}
 
-## 透過匿名函式把標準函式重寫(覆寫)規則
+## 透過匿名函式把標準函式重寫(覆寫)
 {% highlight kotlin linenos %}
 var str = "Hello World"
 val o_count = str.count ({ letter ->

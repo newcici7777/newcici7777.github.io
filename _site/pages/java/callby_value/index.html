@@ -1409,6 +1409,13 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/memory_model/" data-nav-link> Java Memory Model</a>
+        
+            
+        </li>
+	
+	
 	<li class="active" data-nav-item>
     	<a href="/pages/java/callby_value/" data-nav-link> Call by value</a>
         
@@ -2347,7 +2354,13 @@
                         <h1 id="/pages/java/callby_value">Call by value</h1>
                     
 
-                    <p>一進入方法，若傳進來的參數是物件，也就是記憶體位址，方法建立新的變數拷貝傳進來的參數，這種方式會先把參數複製一份，稱為Call by value。</p>
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/java/memory_model/">記憶體模型</a></li>
+</ul>
+
+<p>一進入方法，若傳進來的參數是物件，也就是記憶體位址，建立新的變數複製傳進來記憶體位址，把傳進來的參數複製一份到新的變數，稱為Call by value。</p>
 
 <h2 id="修改成員變數">修改成員變數</h2>
 <p>以下的程式碼要傳遞testClz變數給copyAddress()方法。
@@ -2551,7 +2564,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/java/anonymous_class" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 匿名類別">
+                        <a href="/pages/java/memory_model" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Java Memory Model">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -2678,7 +2691,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-15 16:54:31 +0800"
+        "time": "2025-05-16 16:34:14 +0800"
     },
     "basePath": "",
     "book": {
