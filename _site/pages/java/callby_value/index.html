@@ -1826,7 +1826,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/lambda/" data-nav-link> 匿名函式就是lambda</a>
+    	<a href="/pages/kotlin/lambda/" data-nav-link> Lambda</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
         
             
         </li>
@@ -2358,9 +2365,10 @@
 
 <ul>
   <li><a href="/pages/java/memory_model/">記憶體模型</a></li>
+  <li><a href="/pages/c/basic/param/">引數與參數</a></li>
 </ul>
 
-<p>一進入方法，若傳進來的參數是物件，也就是記憶體位址，建立新的變數複製傳進來記憶體位址，把傳進來的參數複製一份到新的變數，稱為Call by value。</p>
+<p>一進入方法，若引數是物件，也就是記憶體位址，參數複製傳進來的引數，稱為Call by value。</p>
 
 <h2 id="修改成員變數">修改成員變數</h2>
 <p>以下的程式碼要傳遞testClz變數給copyAddress()方法。
@@ -2397,7 +2405,7 @@ TestClz</p>
     <span class="nc">Test</span> <span class="n">test</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">();</span>
     <span class="nc">TestClz</span> <span class="n">testClz</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TestClz</span><span class="o">();</span>
     <span class="n">testClz</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="mi">50</span><span class="o">;</span>
-    <span class="c1">// 把testClz作為參數傳進copyAddress()</span>
+    <span class="c1">// 把testClz傳進copyAddress()</span>
     <span class="n">test</span><span class="o">.</span><span class="na">copyAddress</span><span class="o">(</span><span class="n">testClz</span><span class="o">);</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">testClz</span><span class="o">.</span><span class="na">age</span><span class="o">);</span>
   <span class="o">}</span>
@@ -2497,7 +2505,7 @@ TestClz</p>
 
 <p><img src="/assets/img/java/reference3.png" alt="img" /></p>
 
-<p>此處是「拷貝記憶體位址」到「參數」中，並非「指向」記憶體位址，跟C++的<a href="/pages/c/function/func_param_pointer/">call by address</a>與<a href="/pages/c/function/callByRef/">call by reference</a>完全不同的概念。</p>
+<p>此處是「複製記憶體位址」到「參數」中，並非「指向」記憶體位址，跟C++的<a href="/pages/c/function/func_param_pointer/">call by address</a>與<a href="/pages/c/function/callByRef/">call by reference</a>完全不同的概念。</p>
 
 <p>畫圖檔案名稱為func_copy_address.drawio</p>
 
@@ -2691,7 +2699,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-16 16:34:14 +0800"
+        "time": "2025-05-19 19:36:19 +0800"
     },
     "basePath": "",
     "book": {

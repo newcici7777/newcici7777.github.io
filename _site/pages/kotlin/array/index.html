@@ -1812,7 +1812,7 @@
     	<a href="/pages/kotlin/array/" data-nav-link> array與List</a>
         
             
-                <ul><li><a href="#陣列宣告" data-nav-link " >陣列宣告</a></li><li><a href="#印出值" data-nav-link " >印出值</a></li><li><a href="#last" data-nav-link " >last</a></li><li><a href="#arrayof要設定值" data-nav-link " >arrayOf要設定值</a></li><li><a href="#修改值" data-nav-link " >修改值</a></li><li><a href="#陣列可以有各種類型" data-nav-link " >陣列可以有各種類型</a></li><li><a href="#二維陣列" data-nav-link " >二維陣列</a></li><li><a href="#iterator" data-nav-link " >iterator</a></li><li><a href="#for" data-nav-link " >for</a></li><li><a href="#indices" data-nav-link " >indices</a></li><li><a href="#想拿到index跟valaue" data-nav-link " >想拿到index跟valaue</a></li><li><a href="#foreach" data-nav-link " >foreach</a></li><li><a href="#foreachindexed" data-nav-link " >forEachIndexed</a></li><li><a href="#list宣告" data-nav-link " >List宣告</a></li></ul>
+                <ul><li><a href="#建立陣列" data-nav-link " >建立陣列</a></li><li><a href="#二維陣列" data-nav-link " >二維陣列</a></li><li><a href="#陣列可以有各種類型" data-nav-link " >陣列可以有各種類型</a></li><li><a href="#arrayof要設定值" data-nav-link " >arrayOf要設定值</a></li><li><a href="#唯讀list" data-nav-link " >唯讀List</a></li><li><a href="#可讀寫mutablelist" data-nav-link " >可讀寫MutableList</a></li><li><a href="#修改集合" data-nav-link " >修改集合</a></li><li><a href="#安全取值" data-nav-link " >安全取值</a></li><li><a href="#索引取值" data-nav-link " >索引取值</a></li><li><a href="#first" data-nav-link " >first()</a></li><li><a href="#last" data-nav-link " >last()</a></li><li><a href="#集合大小" data-nav-link " >集合大小</a></li><li><a href="#indexof" data-nav-link " >indexOf</a></li><li><a href="#遍歷集合" data-nav-link " >遍歷集合</a><ul><li><a href="#for" data-nav-link " >for</a></li><li><a href="#foreach" data-nav-link " >foreach</a></li><li><a href="#foreachindexed" data-nav-link " >forEachIndexed</a></li></ul></li><li><a href="#其它遍歷方式" data-nav-link " >其它遍歷方式</a><ul><li><a href="#iterator" data-nav-link " >iterator</a></li><li><a href="#indices" data-nav-link " >indices</a></li><li><a href="#想拿到index跟valaue" data-nav-link " >想拿到index跟valaue</a></li></ul></li></ul>
 
             
         </li>
@@ -1826,7 +1826,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/lambda/" data-nav-link> 匿名函式就是lambda</a>
+    	<a href="/pages/kotlin/lambda/" data-nav-link> Lambda</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
         
             
         </li>
@@ -2354,18 +2361,89 @@
                         <h1 id="/pages/kotlin/array">array與List</h1>
                     
 
-                    <h2 id="陣列宣告">陣列宣告</h2>
+                    <h2 id="建立陣列">建立陣列</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">陣列類型</th>
+      <th style="text-align: left">建立陣列語法</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">IntArray</td>
+      <td style="text-align: left">intArrayOf</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">DoubleArray</td>
+      <td style="text-align: left">doubleArrayOf</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">LongArray</td>
+      <td style="text-align: left">longArrayOf</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ShortArray</td>
+      <td style="text-align: left">shortArrayOf</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ByteArray</td>
+      <td style="text-align: left">byteArrayOf</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">FloatArray</td>
+      <td style="text-align: left">floatArrayOf</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">BooleanArray</td>
+      <td style="text-align: left">booleanArrayOf</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Array&lt;物件&gt;</td>
+      <td style="text-align: left">arrayOf</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>建立int陣列</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+2
+3
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">intarr</span><span class="p">:</span> <span class="nc">IntArray</span> <span class="p">=</span> <span class="nf">intArrayOf</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="c1">// 可省略類型，會自動推導。</span>
+<span class="kd">val</span> <span class="py">intarr</span> <span class="p">=</span> <span class="nf">intArrayOf</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="印出值">印出值</h2>
-<p>語法</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>${陣列變數[索引]}
+<p>建立String物件陣列</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">arr</span><span class="p">:</span> <span class="nc">Array</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Kevin"</span><span class="p">,</span><span class="s">"Lucy"</span><span class="p">)</span>
+<span class="c1">// 可省略類型，會自動推導。</span>
+<span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Kevin"</span><span class="p">,</span><span class="s">"Lucy"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="二維陣列">二維陣列</h2>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">number2</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="nf">arrayOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"Number:${number2[2][1]}"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Number:8
 </code></pre></div></div>
+
+<h2 id="陣列可以有各種類型">陣列可以有各種類型</h2>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2373,26 +2451,17 @@
 3
 4
 5
-</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">names</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Kevin"</span><span class="p">,</span><span class="s">"Lucy"</span><span class="p">)</span>
-<span class="nf">println</span><span class="p">(</span><span class="s">"First elements:${names[0]}"</span><span class="p">)</span>  <span class="c1">// First elements:Tom</span>
-<span class="nf">println</span><span class="p">(</span><span class="s">"First elements:${names[1]}"</span><span class="p">)</span>  <span class="c1">// First elements:Kevin</span>
-<span class="nf">println</span><span class="p">(</span><span class="s">"First elements:${names[2]}"</span><span class="p">)</span>  <span class="c1">// First elements:Lucy</span>
-<span class="c1">//println("First elements:${names[5]}")  // Index 5 out of bounds for length 3</span>
+</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">number</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="sc">'Y'</span><span class="p">)</span>
+<span class="n">number</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="sc">'A'</span> <span class="c1">// char 類型</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"First elements:${number[0]}"</span><span class="p">)</span>
+<span class="n">number</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="s">"TEST"</span> <span class="c1">// String 類型</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"First elements:${number[0]}"</span><span class="p">)</span> 
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="last">last</h2>
-<p>使用last表示最後一個元素位置</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">names</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Kevin"</span><span class="p">,</span><span class="s">"Lucy"</span><span class="p">)</span>
-<span class="nf">println</span><span class="p">(</span><span class="s">"last of elements:${names.last()}"</span><span class="p">)</span>  <span class="c1">// last of elements:Lucy</span>
-<span class="nf">println</span><span class="p">(</span><span class="s">"names elements:${names.size}"</span><span class="p">)</span>  <span class="c1">// names elements:3</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>First elements:A
+First elements:TEST
+</code></pre></div></div>
 
 <h2 id="arrayof要設定值">arrayOf要設定值</h2>
 <p>以下程式碼編譯錯誤，因為arrayOf沒有設定值。</p>
@@ -2403,7 +2472,54 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="修改值">修改值</h2>
+<h2 id="唯讀list">唯讀List</h2>
+<p>只能讀取，不能修改。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">names</span><span class="p">:</span> <span class="nc">List</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;</span> <span class="p">=</span> <span class="nf">listOf</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Jack"</span><span class="p">,</span><span class="s">"lucy"</span><span class="p">)</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">name</span> <span class="k">in</span> <span class="n">names</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Tom
+Jack
+lucy
+</code></pre></div></div>
+
+<h2 id="可讀寫mutablelist">可讀寫MutableList</h2>
+<p>removeAt(索引)、add(索引，值)，這二個不同Java。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">mutableList</span> <span class="p">=</span> <span class="n">mutableListOf</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;(</span><span class="s">"Alice"</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">,</span> <span class="s">"Gina"</span><span class="p">)</span>
+<span class="n">mutableList</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="s">"Ray"</span><span class="p">)</span>
+<span class="n">mutableList</span><span class="p">.</span><span class="nf">remove</span><span class="p">(</span><span class="s">"Alice"</span><span class="p">)</span>
+<span class="c1">// 指定刪除索引位置</span>
+<span class="n">mutableList</span><span class="p">.</span><span class="nf">removeAt</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1">// 指定插入的索引位置</span>
+<span class="n">mutableList</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s">"Tina"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">mutableList</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Bill, Tina, Gina, Ray]
+</code></pre></div></div>
+
+<h2 id="修改集合">修改集合</h2>
+<p>Array</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2417,15 +2533,65 @@
 </pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">names</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Kevin"</span><span class="p">,</span><span class="s">"Lucy"</span><span class="p">)</span>
 <span class="n">names</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="s">"Julien"</span>
 <span class="c1">// 原來的tom改成julien</span>
-<span class="nf">println</span><span class="p">(</span><span class="s">"First elements:${names[0]}"</span><span class="p">)</span>  <span class="c1">// First elements:Julien</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"[0]:${names[0]}"</span><span class="p">)</span>  
 <span class="c1">// 印出Julien第二個字母u</span>
-<span class="nf">println</span><span class="p">(</span><span class="s">"First elements:${names[0][1]}"</span><span class="p">)</span>  <span class="c1">// First elements:u</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"[0][1]:${names[0][1]}"</span><span class="p">)</span>  
 <span class="c1">// 印出長度</span>
-<span class="nf">println</span><span class="p">(</span><span class="s">"Length of Julien:${names[0].length}"</span><span class="p">)</span>  <span class="c1">// Length of Julien:6</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"Length of Julien:${names[0].length}"</span><span class="p">)</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="陣列可以有各種類型">陣列可以有各種類型</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[0]:Julien
+[0][1]:u
+Length of Julien:6
+</code></pre></div></div>
+
+<p>MutabList</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">mutableList</span> <span class="p">=</span> <span class="n">mutableListOf</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;(</span><span class="s">"Alice"</span><span class="p">,</span> <span class="s">"Bill"</span><span class="p">,</span> <span class="s">"Gina"</span><span class="p">)</span>
+<span class="n">mutableList</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="s">"Gee"</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">mutableList</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Gee
+</code></pre></div></div>
+
+<h2 id="安全取值">安全取值</h2>
+<p>get(索引)可以取得元素的值，但搭配以下二種更安全。</p>
+
+<p>語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>無此元素，就傳回預設值
+names.getOrElse(索引) { "預設值"}
+
+無此元素傳回null，使用貓王符號?:，印出預設值
+names.getOrNull(索引) ?: "預設值"
+</code></pre></div></div>
+
+<p>Array</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre> <span class="kd">val</span> <span class="py">names</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Kevin"</span><span class="p">,</span><span class="s">"Lucy"</span><span class="p">)</span>
+ <span class="nf">println</span><span class="p">(</span><span class="n">names</span><span class="p">.</span><span class="k">get</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+ <span class="nf">println</span><span class="p">(</span><span class="n">names</span><span class="p">.</span><span class="nf">getOrElse</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">{</span> <span class="s">"no data"</span><span class="p">})</span>
+ <span class="nf">println</span><span class="p">(</span><span class="n">names</span><span class="p">.</span><span class="nf">getOrNull</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">?:</span> <span class="s">"no data"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Tom
+no data
+no data
+</code></pre></div></div>
+
+<p>List</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2433,25 +2599,231 @@
 3
 4
 5
-</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">number</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="sc">'Y'</span><span class="p">)</span>
-<span class="n">number</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="sc">'A'</span> <span class="c1">// char 類型</span>
-<span class="nf">println</span><span class="p">(</span><span class="s">"First elements:${number[0]}"</span><span class="p">)</span>  <span class="c1">// First elements:A</span>
-<span class="n">number</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="s">"TEST"</span> <span class="c1">// String 類型</span>
-<span class="nf">println</span><span class="p">(</span><span class="s">"First elements:${number[0]}"</span><span class="p">)</span>  <span class="c1">// First elements:TEST</span>
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">namelist</span> <span class="p">=</span> <span class="n">listOf</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;(</span><span class="s">"Mary"</span><span class="p">,</span> <span class="s">"Amy"</span><span class="p">,</span> <span class="s">"Jery"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"======== list data ============"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">namelist</span><span class="p">.</span><span class="k">get</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">namelist</span><span class="p">.</span><span class="nf">getOrElse</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">{</span> <span class="s">"no data"</span><span class="p">})</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">namelist</span><span class="p">.</span><span class="nf">getOrNull</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">?:</span> <span class="s">"no data"</span><span class="p">)</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="二維陣列">二維陣列</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mary
+no data
+no data
+</code></pre></div></div>
+
+<h2 id="索引取值">索引取值</h2>
+<p>Array與List都可以用。</p>
+
+<p>語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>${集合變數[索引]}
+</code></pre></div></div>
+
+<p>Array</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">number2</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="nf">arrayOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
-<span class="nf">println</span><span class="p">(</span><span class="s">"Number:${number2[2][1]}"</span><span class="p">)</span>  <span class="c1">//Number:8</span>
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">names</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Kevin"</span><span class="p">,</span><span class="s">"Lucy"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"${names[0]}"</span><span class="p">)</span>  
+<span class="nf">println</span><span class="p">(</span><span class="s">"${names[1]}"</span><span class="p">)</span>  
+<span class="nf">println</span><span class="p">(</span><span class="s">"${names[2]}"</span><span class="p">)</span> 
+<span class="c1">// 超出範圍 </span>
+<span class="c1">//println("${names[5]}")  </span>
+<span class="c1">// Index 5 out of bounds for length 3</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="iterator">iterator</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Tom
+Kevin
+Lucy
+</code></pre></div></div>
+
+<p>List</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">namelist</span> <span class="p">=</span> <span class="n">listOf</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;(</span><span class="s">"Mary"</span><span class="p">,</span> <span class="s">"Amy"</span><span class="p">,</span> <span class="s">"Jery"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"list[0] = ${namelist[0]}"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"list[1] = ${namelist[1]}"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"list[2] = ${namelist[2]}"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"list first = ${namelist.first()}"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"list last = ${namelist.last()}"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>list[0] = Mary
+list[1] = Amy
+list[2] = Jery
+</code></pre></div></div>
+
+<h2 id="first">first()</h2>
+<p>取出第一個元素。</p>
+
+<p>Array</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">names</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Kevin"</span><span class="p">,</span><span class="s">"Lucy"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"first of elements: ${names.first()}"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>first of elements: Tom
+</code></pre></div></div>
+
+<p>List</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nf">println</span><span class="p">(</span><span class="s">"list first = ${namelist.first()}"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>list first = Mary
+</code></pre></div></div>
+
+<h2 id="last">last()</h2>
+<p>取出最後一個元素。</p>
+
+<p>Array</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">names</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Kevin"</span><span class="p">,</span><span class="s">"Lucy"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"last of elements:${names.last()}"</span><span class="p">)</span> 
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>last of elements:Lucy
+</code></pre></div></div>
+
+<p>List</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nf">println</span><span class="p">(</span><span class="s">"list last = ${namelist.last()}"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>list last = Jery
+</code></pre></div></div>
+
+<h2 id="集合大小">集合大小</h2>
+<p>Array</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">names</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Kevin"</span><span class="p">,</span><span class="s">"Lucy"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"names elements:${names.size}"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>names elements:3
+</code></pre></div></div>
+
+<p>List Size</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">namelist</span> <span class="p">=</span> <span class="n">listOf</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;(</span><span class="s">"Mary"</span><span class="p">,</span> <span class="s">"Amy"</span><span class="p">,</span> <span class="s">"Jery"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"list size = ${namelist.size}"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>list size = 3
+</code></pre></div></div>
+
+<h2 id="indexof">indexOf</h2>
+<p>搜尋在第幾個索引，找不到傳回-1</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">namelist</span> <span class="p">=</span> <span class="n">listOf</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;(</span><span class="s">"Mary"</span><span class="p">,</span> <span class="s">"Amy"</span><span class="p">,</span> <span class="s">"Jery"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"search index = ${namelist.indexOf("</span><span class="nc">Amy</span><span class="s">")}"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>search index = 1
+</code></pre></div></div>
+
+<h2 id="遍歷集合">遍歷集合</h2>
+<p>只要記住以下3種for即可，for裡面的i變數，前面不會有val或var。</p>
+
+<h3 id="for">for</h3>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="n">arr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+2
+</code></pre></div></div>
+
+<h3 id="foreach">foreach</h3>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">arr</span><span class="p">.</span><span class="nf">forEach</span> <span class="p">{</span> <span class="n">it</span> <span class="p">-&gt;</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+2
+</code></pre></div></div>
+
+<h3 id="foreachindexed">forEachIndexed</h3>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">arr</span><span class="p">.</span><span class="nf">forEachIndexed</span> <span class="p">{</span>
+    <span class="n">index</span><span class="p">,</span> <span class="n">i</span> <span class="p">-&gt;</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"$index $i"</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0 1
+1 2
+</code></pre></div></div>
+
+<h2 id="其它遍歷方式">其它遍歷方式</h2>
+<p>只要記得上面3種for，下面若仍有腦容量再記住吧。</p>
+<h3 id="iterator">iterator</h3>
 <ul>
   <li><a href="/pages/design_pattern/iterator/">iterator</a></li>
 </ul>
@@ -2474,25 +2846,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="for">for</h2>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="n">arr</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">println</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
-2
-</code></pre></div></div>
-
-<h2 id="indices">indices</h2>
+<h3 id="indices">indices</h3>
 <p>indices為index的複數，傳回array的索引值。</p>
 
 <figure class="highlight">
@@ -2511,7 +2865,7 @@
 1
 </code></pre></div></div>
 
-<h2 id="想拿到index跟valaue">想拿到index跟valaue</h2>
+<h3 id="想拿到index跟valaue">想拿到index跟valaue</h3>
 <p>同時想拿到index跟valaue，可以使用withIndex.返回一個對象有index跟value的屬性。</p>
 
 <figure class="highlight">
@@ -2528,63 +2882,6 @@
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>index:0, value:1
 index:1, value:2
-</code></pre></div></div>
-
-<h2 id="foreach">foreach</h2>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="n">arr</span><span class="p">.</span><span class="nf">forEach</span> <span class="p">{</span> <span class="n">it</span> <span class="p">-&gt;</span>
-    <span class="nf">println</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
-2
-</code></pre></div></div>
-
-<h2 id="foreachindexed">forEachIndexed</h2>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">arrayOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="n">arr</span><span class="p">.</span><span class="nf">forEachIndexed</span> <span class="p">{</span>
-    <span class="n">index</span><span class="p">,</span> <span class="n">i</span> <span class="p">-&gt;</span>
-    <span class="nf">println</span><span class="p">(</span><span class="s">"$index $i"</span><span class="p">)</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0 1
-1 2
-</code></pre></div></div>
-
-<h2 id="list宣告">List宣告</h2>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">names</span><span class="p">:</span> <span class="nc">List</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;</span> <span class="p">=</span> <span class="nf">listOf</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">,</span><span class="s">"Jack"</span><span class="p">,</span><span class="s">"lucy"</span><span class="p">)</span>
-<span class="k">for</span> <span class="p">(</span><span class="n">name</span> <span class="k">in</span> <span class="n">names</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">println</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Tom
-Jack
-lucy
 </code></pre></div></div>
 
 <p>要索引值使用withIndex()方法</p>
@@ -2806,7 +3103,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-16 16:34:14 +0800"
+        "time": "2025-05-19 19:36:19 +0800"
     },
     "basePath": "",
     "book": {

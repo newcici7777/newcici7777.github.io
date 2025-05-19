@@ -3,11 +3,12 @@ title: 變數與基本資料類型
 date: 2025-05-12
 keywords: kotlin, val, var, const, type
 ---
-## 按2次shift鍵
-輸入show kotlin bytecode 
+## Decompile轉碼後的java
+按2次shift鍵，輸入show kotlin bytecode 
 ![img]({{site.imgurl}}/kotlin/bytecode.png)
 
-可以看到轉碼過後的java程式碼。
+按下「Decompile」按鈕，可以看到轉碼過後的java程式碼。
+![img]({{site.imgurl}}/kotlin/bytecode2.png)
 
 ## 印出
 {% highlight kotlin linenos %}

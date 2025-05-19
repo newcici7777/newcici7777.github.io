@@ -1819,14 +1819,21 @@
     	<a href="/pages/kotlin/fun/" data-nav-link> 函式</a>
         
             
-                <ul><li><a href="#函式宣告" data-nav-link " >函式宣告</a></li><li><a href="#私有函式" data-nav-link " >私有函式</a></li><li><a href="#用等於來指定傳回值的運算式" data-nav-link " >用等於=來指定傳回值的運算式</a></li><li><a href="#參數預設值" data-nav-link " >參數預設值</a></li><li><a href="#unit函式" data-nav-link " >Unit函式</a></li></ul>
+                <ul><li><a href="#函式宣告" data-nav-link " >函式宣告</a></li><li><a href="#簡化" data-nav-link " >簡化</a></li><li><a href="#用等於來指定傳回值的運算式" data-nav-link " >用等於=來指定傳回值的運算式</a></li><li><a href="#參數預設值" data-nav-link " >參數預設值</a></li><li><a href="#unit函式" data-nav-link " >Unit函式</a></li><li><a href="#函式參考" data-nav-link " >函式參考</a></li><li><a href="#匿名函式" data-nav-link " >匿名函式</a></li><li><a href="#inline" data-nav-link " >inline</a></li><li><a href="#私有函式" data-nav-link " >私有函式</a></li></ul>
 
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/lambda/" data-nav-link> 匿名函式就是lambda</a>
+    	<a href="/pages/kotlin/lambda/" data-nav-link> Lambda</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
         
             
         </li>
@@ -2355,9 +2362,21 @@
                     
 
                     <h2 id="函式宣告">函式宣告</h2>
-<p>以fun開頭後面接函式名。</p>
+<p>以fun開頭後面接函式名，有函式名的稱為有名字的函式。</p>
 
-<p>圓括號裡是參數<code class="language-plaintext highlighter-rouge">(參數1: 參數類型, 參數2: 參數類型)</code>。</p>
+<p>有名字的函式要用return傳回值。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fun 函式名(參數: 參數類型): 傳回值類型 {
+    return 傳回值
+}
+</code></pre></div></div>
+
+<p>多參數</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fun 函式名(參數1: 參數類型, 參數2: 參數類型): 傳回值類型 {
+    return 傳回值
+}
+</code></pre></div></div>
+
+<p>以下程式碼圓括號裡是參數<code class="language-plaintext highlighter-rouge">(參數1: 參數類型, 參數2: 參數類型)</code>。</p>
 
 <p><code class="language-plaintext highlighter-rouge">: Int</code>為傳回值型別。</p>
 
@@ -2368,28 +2387,46 @@
 4
 5
 6
+7
 </pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span> <span class="nc">Int</span> <span class="p">{</span>
     <span class="k">return</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span>
 <span class="p">}</span>
 <span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nf">println</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="c1">// 有帶參數記得加上花括號印出${}</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"result =  ${sum(1, 2)}"</span><span class="p">)</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result =  3
 </code></pre></div></div>
 
-<h2 id="私有函式">私有函式</h2>
-<p>預設是public，全部的.kt文件都可以使用，若要變成私有，前面要加上private，函式只能被所在的位置.kt文件使用，不同文件.kt文件不能用。</p>
+<h2 id="簡化">簡化</h2>
+<p>如果只有一行，省略花括號{}，省略return。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre><span class="k">private</span> <span class="k">fun</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span> <span class="nc">Int</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span>
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">a</span><span class="p">():</span> <span class="nc">Int</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="mi">1</span>
 <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>使用等於=</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">b</span><span class="p">():</span><span class="nc">Int</span> <span class="p">=</span> <span class="mi">1</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>若傳回值類型可以自動推導，可以省略傳回值類型。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">c</span><span class="p">()</span> <span class="p">=</span> <span class="mi">1</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -2412,6 +2449,7 @@
 </code></pre></div></div>
 
 <h2 id="參數預設值">參數預設值</h2>
+<p>參數可以有預設值。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2463,6 +2501,92 @@
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kotlin.Unit
 </code></pre></div></div>
+
+<h2 id="函式參考">函式參考</h2>
+<p>使用2個冒號::後面是有名字的函式，呼叫函式時，有帶參數記得加上花括號印出${}</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">calculate</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span> <span class="nc">Int</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="p">+</span> <span class="mi">3</span>
+<span class="p">}</span>
+<span class="kd">val</span> <span class="py">funRef</span> <span class="p">=</span> <span class="o">::</span><span class="n">calculate</span>
+<span class="c1">// 有帶參數記得加上花括號印出${}</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"result =  ${funRef(6)}"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>9
+</code></pre></div></div>
+
+<h2 id="匿名函式">匿名函式</h2>
+<p>沒有名字的函式，沒有函式名，只有fun關鍵字。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">useAnonymousFun</span> <span class="p">=</span> <span class="k">fun</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span> <span class="nc">Int</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="p">+</span> <span class="mi">3</span>
+<span class="p">}</span>
+<span class="c1">//有帶參數記得加上花括號印出${}</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"use AnonymousFun:${useAnonymousFun(6)}"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>9
+</code></pre></div></div>
+
+<h2 id="inline">inline</h2>
+<p>在fun關鍵字前面加上inline，意思是編譯的時候把程式碼複製到呼叫的位置。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="k">inline</span> <span class="k">fun</span> <span class="nf">calculate</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span> <span class="nc">Int</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="p">+</span> <span class="mi">3</span>
+<span class="p">}</span>
+<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"inline function1 = ${calculate(5)}"</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"inline function2 = ${calculate(6)}"</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"inline function3 = ${calculate(7)}"</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>按2次shift鍵，輸入show kotlin bytecode</p>
+
+<p>按下「Decompile」按鈕，可以看到轉碼過後的java程式碼。</p>
+
+<p><img src="/assets/img/kotlin/inline.png" alt="img" /></p>
+
+<p>為什麼要使用inline呢？因為每個函式都會占記憶體，使用inline直接把函式中的程式碼複製過去，可以減少函式記憶體，但這個函式的內容不多才可以這樣做。</p>
+
+<h2 id="私有函式">私有函式</h2>
+<p>預設是public，全部的.kt文件都可以使用，若要變成私有，前面要加上private，函式只能被所在的位置.kt文件使用，不同文件.kt文件不能用。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">private</span> <span class="k">fun</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span> <span class="nc">Int</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 </section>
             </div><div class="search-results">
@@ -2534,7 +2658,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/kotlin/lambda" class="navigation navigation-next navigation-unique" aria-label="Next page: 匿名函式就是lambda">
+                        <a href="/pages/kotlin/lambda" class="navigation navigation-next navigation-unique" aria-label="Next page: Lambda">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2552,7 +2676,7 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "匿名函式就是lambda",
+            "title": "Lambda",
             "level": "1.2",
             "depth": 1,
             "path": "_pages/kotlin/lambda.md",
@@ -2654,7 +2778,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-16 16:34:14 +0800"
+        "time": "2025-05-19 19:36:19 +0800"
     },
     "basePath": "",
     "book": {

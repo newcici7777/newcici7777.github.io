@@ -6,8 +6,9 @@ keywords: Java, call by value
 Prerequisites:
 
 - [記憶體模型][3]
+- [引數與參數][4]
 
-一進入方法，若傳進來的參數是物件，也就是記憶體位址，建立新的變數複製傳進來記憶體位址，把傳進來的參數複製一份到新的變數，稱為Call by value。
+一進入方法，若引數是物件，也就是記憶體位址，參數複製傳進來的引數，稱為Call by value。
 
 ## 修改成員變數
 以下的程式碼要傳遞testClz變數給copyAddress()方法。
@@ -25,7 +26,7 @@ public class Test {
     Test test = new Test();
     TestClz testClz = new TestClz();
     testClz.age = 50;
-    // 把testClz作為參數傳進copyAddress()
+    // 把testClz傳進copyAddress()
     test.copyAddress(testClz);
     System.out.println(testClz.age);
   }
@@ -97,10 +98,11 @@ arg1存的0x0066與testClz變數存的0x0033不一樣，所以修改arg1.age，�
 
 ![img]({{site.imgurl}}/java/reference3.png)
 
-此處是「拷貝記憶體位址」到「參數」中，並非「指向」記憶體位址，跟C++的[call by address][1]與[call by reference][2]完全不同的概念。
+此處是「複製記憶體位址」到「參數」中，並非「指向」記憶體位址，跟C++的[call by address][1]與[call by reference][2]完全不同的概念。
 
 畫圖檔案名稱為func_copy_address.drawio
 
 [1]: {% link _pages/c/function/func_param_pointer.md %}
 [2]: {% link _pages/c/function/callByRef.md %}
 [3]: {% link _pages/java/memory_model.md %}
+[4]: {% link _pages/c/basic/param.md %}
