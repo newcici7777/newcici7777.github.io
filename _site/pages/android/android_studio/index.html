@@ -1736,7 +1736,7 @@
     	<a href="/pages/android/android_studio/" data-nav-link> Android studio</a>
         
             
-                <ul><li><a href="#縮排2-space" data-nav-link " >縮排2 space</a></li><li><a href="#自動格式排版" data-nav-link " >自動格式排版</a></li><li><a href="#使用cmd滑鼠滾輪" data-nav-link " >使用cmd+滑鼠滾輪</a></li><li><a href="#程式碼文字大小" data-nav-link " >程式碼文字大小</a></li><li><a href="#操作介面文字大小" data-nav-link " >操作介面文字大小</a></li></ul>
+                <ul><li><a href="#縮排2-space" data-nav-link " >縮排2 space</a></li><li><a href="#自動格式排版" data-nav-link " >自動格式排版</a></li><li><a href="#使用cmd滑鼠滾輪" data-nav-link " >使用cmd+滑鼠滾輪</a></li><li><a href="#程式碼文字大小" data-nav-link " >程式碼文字大小</a></li><li><a href="#操作介面文字大小" data-nav-link " >操作介面文字大小</a></li><li><a href="#for快速鍵" data-nav-link " >for快速鍵</a></li></ul>
 
             
         </li>
@@ -1791,7 +1791,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/range/" data-nav-link> 區間in</a>
+    	<a href="/pages/kotlin/range/" data-nav-link> IntRange區間與in</a>
         
             
         </li>
@@ -1812,10 +1812,13 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/array/" data-nav-link> array與List</a>
+    	<a href="/pages/kotlin/string/" data-nav-link> String函式</a>
         
             
         </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 函式 </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -1836,14 +1839,38 @@
     	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
         
             
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 集合 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/array/" data-nav-link> Array</a>
+        
+            
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/stdlib/" data-nav-link> 常用函式庫</a>
+    	<a href="/pages/kotlin/list/" data-nav-link> List與MutableList</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/set/" data-nav-link> Set</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/map/" data-nav-link> Map,MutableMap</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> JetpackCompose </a><ul>
@@ -2377,6 +2404,23 @@
 
 <h2 id="操作介面文字大小">操作介面文字大小</h2>
 <p><img src="/assets/img/android/android_studio_fontsize.png" alt="img" /></p>
+
+<h2 id="for快速鍵">for快速鍵</h2>
+<p>變數.for</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">s</span> <span class="p">=</span> <span class="s">"asd"</span>
+<span class="c1">// s.for，就會有迴圈的指令</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">c</span> <span class="k">in</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2567,7 +2611,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-19 19:36:19 +0800"
+        "time": "2025-05-20 16:24:52 +0800"
     },
     "basePath": "",
     "book": {

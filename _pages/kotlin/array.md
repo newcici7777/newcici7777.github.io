@@ -1,8 +1,10 @@
 ---
-title: array與List
+title: Array
 date: 2025-05-15
-keywords: kotlin, array, List
+keywords: kotlin, arrayof, intArrayOf
 ---
+陣列無法新增值，因為陣列是一個固定大小的陣列，可以修改。
+
 ## 建立陣列
 
 |陣列類型 |建立陣列語法|
@@ -21,6 +23,49 @@ keywords: kotlin, array, List
 val intarr: IntArray = intArrayOf(10, 20, 30)
 // 可省略類型，會自動推導。
 val intarr = intArrayOf(10, 20, 30)
+{% endhighlight %}
+
+建立double陣列
+{% highlight kotlin linenos %}
+var d1: DoubleArray = doubleArrayOf(1.0, 2.0, 3.0)
+{% endhighlight %}
+
+## 指定大小，但值全為0
+指定大小，但值為0的 int array，注意！array的內容不是5。
+
+是用大寫開頭的IntArray()建立陣列。
+{% highlight kotlin linenos %}
+val a3: IntArray = IntArray(5)
+for(i in a3){
+    println(i)
+}
+{% endhighlight %}
+```
+0
+0
+0
+0
+0
+```
+
+## arrayOf
+除了用intArrayOf()，也可使用arrayOf()建立Int陣列。
+
+arrayOf 通過\<T\>泛型，來決定陣列類型。
+
+其中的\<Int\>不用寫，透過1,2,3的值來自動推導類型
+{% highlight kotlin linenos %}
+var a: Array<Int> = arrayOf<Int>(1,2,3) 
+{% endhighlight %}	
+
+改成以下的方式建立Int陣列
+{% highlight kotlin linenos %}
+var a: Array<Int> = arrayOf(1,2,3) 
+{% endhighlight %}	
+
+變數的類型可以再省略，透過1,2,3的值來自動推導類型
+{% highlight kotlin linenos %}
+var a = arrayOf(1,2,3) 
 {% endhighlight %}
 
 建立String物件陣列
@@ -52,54 +97,69 @@ First elements:A
 First elements:TEST
 ```
 
-## arrayOf要設定值
-以下程式碼編譯錯誤，因為arrayOf沒有設定值。
+## 建立空的array
+以下程式碼編譯錯誤，因為arrayOf沒有設定類型。
 {% highlight kotlin linenos %}
 val names = arrayOf("") // val cannot be reassigned
 {% endhighlight %}
+
+{% highlight kotlin linenos %}
+val a2 = arrayOf<Int>()
+{% endhighlight %}
+
+想不出為什麼可以建立空的array，因為陣列是一個固定大小的陣列，建立空的陣列也沒辦法新增。
 
 ## 陣列轉List
 {% highlight kotlin linenos %}
 names.asList()
 {% endhighlight %}
 
-## 唯讀List
+## 安全取值
+get(索引)可以取得元素的值，但搭配以下二種更安全。
+
 語法
 ```
-val 變數: List<類型> = listOf(物件, 物件, 物件..)
+無此元素，就傳回預設值
+集合變數.getOrElse(索引) { "預設值"}
+
+無此元素傳回null，使用貓王運算子?:，印出預設值
+集合變數.getOrNull(索引) ?: "預設值"
 ```
 
-只能讀取，不能修改。
 {% highlight kotlin linenos %}
-val names: List<String> = listOf("Tom","Jack","lucy")
-for (name in names) {
-    println(name)
-}
+ val names = arrayOf("Tom","Kevin","Lucy")
+ println(names.get(0))
+ println(names.getOrElse(5) { "no data" })
+ println(names.getOrNull(5) ?: "no data")
 {% endhighlight %}
 ```
 Tom
-Jack
-lucy
+no data
+no data
 ```
 
-## 可讀寫MutableList
-removeAt(索引)、add(索引，值)，這二個不同Java。
+## 索引取值
+語法
+```
+${變數[索引]}
+```
+
 {% highlight kotlin linenos %}
-val mutableList = mutableListOf<String>("Alice", "Bill", "Gina")
-mutableList.add("Ray")
-mutableList.remove("Alice")
-// 指定刪除索引位置
-mutableList.removeAt(0)
-// 指定插入的索引位置
-mutableList.add(1,"Tina")
-println(mutableList)
+val names = arrayOf("Tom","Kevin","Lucy")
+println("${names[0]}")  
+println("${names[1]}")  
+println("${names[2]}") 
+// 超出範圍 
+//println("${names[5]}")  
+// Index 5 out of bounds for length 3
 {% endhighlight %}
 ```
-[Bill, Tina, Gina, Ray]
+Tom
+Kevin
+Lucy
 ```
 
-## 修改集合
-Array
+## 修改
 {% highlight kotlin linenos %}
 val names = arrayOf("Tom","Kevin","Lucy")
 names[0] = "Julien"
@@ -116,98 +176,9 @@ println("Length of Julien:${names[0].length}")
 Length of Julien:6
 ```
 
-MutabList
-{% highlight kotlin linenos %}
-val mutableList = mutableListOf<String>("Alice", "Bill", "Gina")
-mutableList[0] = "Gee"
-println(mutableList[0])
-{% endhighlight %}
-```
-Gee
-```
-
-## 安全取值
-get(索引)可以取得元素的值，但搭配以下二種更安全。
-
-語法
-```
-無此元素，就傳回預設值
-names.getOrElse(索引) { "預設值"}
-
-無此元素傳回null，使用貓王符號?:，印出預設值
-names.getOrNull(索引) ?: "預設值"
-```
-
-Array
-{% highlight kotlin linenos %}
- val names = arrayOf("Tom","Kevin","Lucy")
- println(names.get(0))
- println(names.getOrElse(5) { "no data"})
- println(names.getOrNull(5) ?: "no data")
-{% endhighlight %}
-```
-Tom
-no data
-no data
-```
-
-List
-{% highlight kotlin linenos %}
-val namelist = listOf<String>("Mary", "Amy", "Jery")
-println("======== list data ============")
-println(namelist.get(0))
-println(namelist.getOrElse(5) { "no data"})
-println(namelist.getOrNull(5) ?: "no data")
-{% endhighlight %}
-```
-Mary
-no data
-no data
-```
-
-## 索引取值
-Array與List都可以用。
-
-語法
-```
-${集合變數[索引]}
-```
-
-Array
-{% highlight kotlin linenos %}
-val names = arrayOf("Tom","Kevin","Lucy")
-println("${names[0]}")  
-println("${names[1]}")  
-println("${names[2]}") 
-// 超出範圍 
-//println("${names[5]}")  
-// Index 5 out of bounds for length 3
-{% endhighlight %}
-```
-Tom
-Kevin
-Lucy
-```
-
-List
-{% highlight kotlin linenos %}
-val namelist = listOf<String>("Mary", "Amy", "Jery")
-println("list[0] = ${namelist[0]}")
-println("list[1] = ${namelist[1]}")
-println("list[2] = ${namelist[2]}")
-println("list first = ${namelist.first()}")
-println("list last = ${namelist.last()}")
-{% endhighlight %}
-```
-list[0] = Mary
-list[1] = Amy
-list[2] = Jery
-```
-
 ## first()
 取出第一個元素。
 
-Array
 {% highlight kotlin linenos %}
 val names = arrayOf("Tom","Kevin","Lucy")
 println("first of elements: ${names.first()}")
@@ -215,19 +186,9 @@ println("first of elements: ${names.first()}")
 ```
 first of elements: Tom
 ```
-
-List
-{% highlight kotlin linenos %}
-println("list first = ${namelist.first()}")
-{% endhighlight %}
-```
-list first = Mary
-```
-
 ## last()
 取出最後一個元素。
 
-Array
 {% highlight kotlin linenos %}
 val names = arrayOf("Tom","Kevin","Lucy")
 println("last of elements:${names.last()}") 
@@ -236,31 +197,13 @@ println("last of elements:${names.last()}")
 last of elements:Lucy
 ```
 
-List
-{% highlight kotlin linenos %}
-println("list last = ${namelist.last()}")
-{% endhighlight %}
-```
-list last = Jery
-```
-
-## 集合大小
-Array
+## size
 {% highlight kotlin linenos %}
 val names = arrayOf("Tom","Kevin","Lucy")
 println("names elements:${names.size}")
 {% endhighlight %}
 ```
 names elements:3
-```
-
-List Size
-{% highlight kotlin linenos %}
-val namelist = listOf<String>("Mary", "Amy", "Jery")
-println("list size = ${namelist.size}")
-{% endhighlight %}
-```
-list size = 3
 ```
 
 ## indexOf
@@ -282,16 +225,20 @@ println("array contains = ${names.contains("Tom")}")
 array contains = true
 ```
 
+## in 
+與contains功能一樣，都有包含的意思。
 {% highlight kotlin linenos %}
-val namelist = listOf<String>("Mary", "Amy", "Jery")
-println("list contains = ${namelist.contains("Amy")}")
+val names = arrayOf("Tom","Kevin","Lucy")
+println("Tom" in names)
 {% endhighlight %}
 ```
-list contains = true
+true
 ```
 
 ## 遍歷集合
 for裡面的i變數，前面不會有val或var，也不會有變數類型，只要記住以下3種for即可。
+
+IntelliJ快速鍵: 集合變數.for
 
 ### for
 {% highlight kotlin linenos %}

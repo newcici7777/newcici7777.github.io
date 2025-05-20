@@ -41,7 +41,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Code block|程式碼區塊|語句塊|
 |Expression|運算式|表達式|
 |Statement|陳述式|表達式|
-|assign = |指定或指派或設為|賦值|
+|assign = |指派或設為|賦值|
 
 ## 變數相關
 

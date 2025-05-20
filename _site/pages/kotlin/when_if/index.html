@@ -1788,7 +1788,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/range/" data-nav-link> 區間in</a>
+    	<a href="/pages/kotlin/range/" data-nav-link> IntRange區間與in</a>
         
             
         </li>
@@ -1798,7 +1798,7 @@
     	<a href="/pages/kotlin/when_if/" data-nav-link> if, when, while</a>
         
             
-                <ul><li><a href="#if-條件運算子" data-nav-link " >if 條件運算子</a></li><li><a href="#if-接收返回值" data-nav-link " >if 接收返回值</a></li><li><a href="#when" data-nav-link " >when</a><ul><li><a href="#程式碼區塊" data-nav-link " >程式碼區塊</a></li></ul></li><li><a href="#for" data-nav-link " >for</a><ul><li><a href="#continue" data-nav-link " >continue</a></li><li><a href="#break" data-nav-link " >break</a></li></ul></li><li><a href="#foreach" data-nav-link " >foreach</a></li><li><a href="#repeat" data-nav-link " >repeat</a></li><li><a href="#while" data-nav-link " >while</a></li><li><a href="#標籤" data-nav-link " >標籤\@</a><ul><li><a href="#break標籤" data-nav-link " >break標籤\@</a></li><li><a href="#continue標籤" data-nav-link " >continue標籤\@</a></li><li><a href="#return標籤" data-nav-link " >return標籤\@</a></li><li><a href="#run標籤" data-nav-link " >run標籤\@</a></li></ul></li><li><a href="#return" data-nav-link " >return</a></li></ul>
+                <ul><li><a href="#if-條件運算子" data-nav-link " >if 條件運算子</a></li><li><a href="#if-接收傳回值" data-nav-link " >if 接收傳回值</a></li><li><a href="#if條件語句不只有一行省略return" data-nav-link " >if條件語句不只有一行，省略return</a></li><li><a href="#when" data-nav-link " >when</a><ul><li><a href="#程式碼區塊" data-nav-link " >程式碼區塊</a></li></ul></li><li><a href="#for" data-nav-link " >for</a><ul><li><a href="#continue" data-nav-link " >continue</a></li><li><a href="#break" data-nav-link " >break</a></li></ul></li><li><a href="#foreach" data-nav-link " >foreach</a></li><li><a href="#repeat" data-nav-link " >repeat</a></li><li><a href="#while" data-nav-link " >while</a></li><li><a href="#標籤" data-nav-link " >標籤\@</a><ul><li><a href="#break標籤" data-nav-link " >break標籤\@</a></li><li><a href="#continue標籤" data-nav-link " >continue標籤\@</a></li><li><a href="#return標籤" data-nav-link " >return標籤\@</a></li><li><a href="#run標籤" data-nav-link " >run標籤\@</a></li></ul></li><li><a href="#return" data-nav-link " >return</a></li></ul>
 
             
         </li>
@@ -1812,10 +1812,13 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/array/" data-nav-link> array與List</a>
+    	<a href="/pages/kotlin/string/" data-nav-link> String函式</a>
         
             
         </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 函式 </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -1836,14 +1839,38 @@
     	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
         
             
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 集合 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/array/" data-nav-link> Array</a>
+        
+            
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/stdlib/" data-nav-link> 常用函式庫</a>
+    	<a href="/pages/kotlin/list/" data-nav-link> List與MutableList</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/set/" data-nav-link> Set</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/map/" data-nav-link> Map,MutableMap</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> JetpackCompose </a><ul>
@@ -2376,14 +2403,14 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>res3:true
 </code></pre></div></div>
 
-<h2 id="if-接收返回值">if 接收返回值</h2>
-<p>什麼時候會判斷if是要有返回值的？</p>
+<h2 id="if-接收傳回值">if 接收傳回值</h2>
+<p>什麼時候會判斷if是要有傳回值的？</p>
 
-<p>拿變數去接收它會自動判斷if是要去獲取返回值的。</p>
+<p>拿變數去接收它會自動判斷if是要去獲取傳回值的。</p>
 
 <p>但一定要帶上else，因為它要判斷如果if條件不相等，要帶上其它值。</p>
 
-<p>不用有return，預設程式碼區塊{}的最後一行是返回值。</p>
+<p>不用有return，預設程式碼區塊{}的最後一行是傳回值。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2432,9 +2459,42 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>I have the answer.
 </code></pre></div></div>
 
+<h2 id="if條件語句不只有一行省略return">if條件語句不只有一行，省略return</h2>
+<p>如果if條件語句內的程式碼不只一行，必須把結果放在最後一行，而且不可以加return。</p>
+
+<p>使用if條件語句作為傳回值的時候，一定要有else區塊，確保有值，才能指派給變數</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">a</span> <span class="p">=</span> <span class="mi">3</span>
+<span class="kd">val</span> <span class="py">b</span> <span class="p">=</span> <span class="mi">9</span>
+<span class="kd">val</span> <span class="py">chooseMax</span> <span class="p">=</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="p">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"a最大"</span><span class="p">)</span>
+    <span class="n">a</span> <span class="c1">//結果值放在最後一行，不要加return</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"b最大"</span><span class="p">)</span>
+    <span class="n">b</span>
+<span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"chooseMax = $chooseMax"</span><span class="p">)</span>    
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>b最大
+chooseMax = 9
+</code></pre></div></div>
+
 <h2 id="when">when</h2>
 <h3 id="程式碼區塊">程式碼區塊</h3>
-<p>when每個程式碼區塊{}是用 -&gt; 箭頭指向程式碼區塊{}，預設程式碼區塊{}的最後一行是返回值。</p>
+<p>when每個程式碼區塊{}是用 -&gt; 箭頭指向程式碼區塊{}，預設程式碼區塊{}的最後一行是傳回值。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2600,7 +2660,7 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x 是 1
 </code></pre></div></div>
 
-<p>拿變數去接收條件語句會自動判斷when是要去獲取返回值的。</p>
+<p>拿變數去接收條件語句會自動判斷when是要去獲取傳回值的。</p>
 
 <p>但一定要有else，若之前的條件都不滿足，要有個else取得默認的傳回值。</p>
 
@@ -3064,7 +3124,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/kotlin/range" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 區間in">
+                        <a href="/pages/kotlin/range" class="navigation navigation-prev navigation-unique" aria-label="Previous page: IntRange區間與in">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -3089,7 +3149,7 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "array與List",
+            "title": "Array",
             "level": "1.2",
             "depth": 1,
             "path": "_pages/kotlin/array.md",
@@ -3191,7 +3251,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-19 19:36:19 +0800"
+        "time": "2025-05-20 16:24:52 +0800"
     },
     "basePath": "",
     "book": {

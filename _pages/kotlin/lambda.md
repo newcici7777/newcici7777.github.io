@@ -38,12 +38,22 @@ fun sum(a: Int, b: Int): Int {
 
 如果Lambda沒有參數，可以省略->
 
+Lambda
 {% highlight kotlin linenos %}
-{x:Int -> x + 5}
+{ x: Int -> "The value is $x" }
 {% endhighlight %}
 
-## Lambda類型
+把Lambda指派給變數，並執行。
+{% highlight kotlin linenos %}
+val msg = { x: Int -> "The value is $x" }
+// 執行Lambda有代入參數，要用${運算式}
+println("pass 6 to msg:${msg(6)}")
+{% endhighlight %}
+```
+pass 6 to msg:The value is 6
+```
 
+## Lambda類型
 變數的類型是Lambda，Lambda類型是「傳入的參數類型與個數」+「傳回值類型」所組合。
 
 Lambda可以指派給變數，以下把`{ x: Int, y: Int -> x + y }`指派給變數sum。
@@ -150,6 +160,7 @@ Lambda參數是Lambda，結果 = 找不到網頁
 解釋:
 - callback變數的Lambda類型是，參數是Int，傳回值是String。
 - sendMsg3變數的Lambda類型是，參數有二個，分別是Int與Lambda，傳回值是String類型。
+- sendMsg3()，參數2的Lambda類型是`(Int) -> String`，參數是Int，傳回值是String。
 
 {% highlight kotlin linenos %}
 println("Lambda參數是Lambda，結果 = ${sendMsg3(404, callback)}")
@@ -184,13 +195,12 @@ println("有名字的函式的參數是Lambda，結果 = ${sendMsg4(500, callbac
 - callback變數的Lambda類型是，參數是Int，傳回值是String。
 - sendMsg4()定義在main()函式之外。
 - sendMsg4()，傳回值是String類型，參數有二個，分別是Int與Lambda。
-- Lambda的類型定義是，參數是Int，傳回值是String類型。
+- sendMsg4()，參數2的Lambda的類型是`(Int) -> String`，參數是Int，傳回值是String類型。
 - sendMsg4()是有名字的函式，要有return關鍵字。
 
 ## 最後一個參數是Lambda
-sendMsg5()Lambda類型是，傳回值是Unit，沒有傳回值。
-
-參數1是Int類型，參數2是Lambda。
+- sendMsg5()Lambda類型是，參數1是Int類型，參數2是Lambda，傳回值是Unit，沒有傳回值。
+- sendMsg5()，參數2的Lambda的類型是`(Int) -> String`，參數是Int，傳回值是String類型。
 
 code是參數1的變數名，function1是參數2的變數名。
 {% highlight kotlin linenos %}
@@ -215,7 +225,7 @@ Lambda在參數最後 = 網頁正常
 ```
 
 ## 參數只有一個Lambda，去掉圓括號
-參數Lambda類型為(Int) -> String
+sendMsg6()，參數1的Lambda類型為(Int) -> String，參數是Int，傳回值是String類型。
 {% highlight kotlin linenos %}
 val sendMsg6: ((Int) -> String) -> Unit = {
     println("參數只有一個Lambda = ${it(200)}")
@@ -243,6 +253,24 @@ sendMsg6 {
     }
 }
 {% endhighlight %}
+
+完整程式碼
+{% highlight kotlin linenos %}
+val sendMsg6: ((Int) -> String) -> Unit = {
+    println("參數只有一個Lambda = ${it(200)}")
+}
+
+sendMsg6 {
+    if (it == 200) {
+        "網頁正常"
+    } else {
+        "其它錯誤"
+    }
+}
+{% endhighlight %}
+```
+參數只有一個Lambda = 網頁正常
+```
 
 ## 透過Lambda把標準函式重寫(覆寫)
 {% highlight kotlin linenos %}
@@ -327,7 +355,16 @@ http://www.xxx.com 找不到網頁, please contact xxx@xxx.mail.com
 
 ![img]({{site.imgurl}}/kotlin/lambda2.png)
 
-
+## 參數沒使用，用_代表
+{% highlight kotlin linenos %}
+val useLambda2: (Int, Int) -> Unit = { x, _ ->
+    println("First:$x")
+}
+useLambda2(6, 9)
+{% endhighlight %}
+```
+First:6
+```
 
 
 [1]: {% link _pages/java/lambda.md %}

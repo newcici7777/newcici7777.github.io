@@ -15,6 +15,23 @@ keywords: kotlin, val, var, const, type
 println()
 {% endhighlight %}
 
+## IntelliJ快速鍵
+{% highlight kotlin linenos %}
+var s1 = "871"
+{% endhighlight %}
+```
+變數.屬性.sout
+s1.length.sout
+```
+
+{% highlight kotlin linenos %}
+var s1 = "871"
+// s1.length.sout
+println(s1.length)
+{% endhighlight %}
+
+IntelliJ快速鍵: 集合變數.for
+
 ## 結尾不用分號;
 每一段程式碼後面不用加上分號;
 

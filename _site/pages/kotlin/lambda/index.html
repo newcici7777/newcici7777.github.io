@@ -1788,7 +1788,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/range/" data-nav-link> 區間in</a>
+    	<a href="/pages/kotlin/range/" data-nav-link> IntRange區間與in</a>
         
             
         </li>
@@ -1809,10 +1809,13 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/array/" data-nav-link> array與List</a>
+    	<a href="/pages/kotlin/string/" data-nav-link> String函式</a>
         
             
         </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 函式 </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -1826,7 +1829,7 @@
     	<a href="/pages/kotlin/lambda/" data-nav-link> Lambda</a>
         
             
-                <ul><li><a href="#lambda是變數類型" data-nav-link " >Lambda是變數類型</a></li><li><a href="#有名字的函式" data-nav-link " >有名字的函式</a></li><li><a href="#沒有名字的函式lambda" data-nav-link " >沒有名字的函式Lambda</a></li><li><a href="#lambda類型" data-nav-link " >Lambda類型</a></li><li><a href="#自動推導lambda類型" data-nav-link " >自動推導Lambda類型</a></li><li><a href="#省略函式主體參數類型" data-nav-link " >省略函式主體參數類型</a></li><li><a href="#參數只有一個使用it" data-nav-link " >參數只有一個，使用it</a></li><li><a href="#多行程式碼最後一行是傳回值" data-nav-link " >多行程式碼，最後一行是傳回值</a></li><li><a href="#lambda參數是lambda" data-nav-link " >Lambda參數是Lambda</a></li><li><a href="#有名字的函式參數是lambda" data-nav-link " >有名字的函式參數是Lambda</a></li><li><a href="#最後一個參數是lambda" data-nav-link " >最後一個參數是Lambda</a></li><li><a href="#參數只有一個lambda去掉圓括號" data-nav-link " >參數只有一個Lambda，去掉圓括號</a></li><li><a href="#透過lambda把標準函式重寫覆寫" data-nav-link " >透過Lambda把標準函式重寫(覆寫)</a></li><li><a href="#傳回值是lambda" data-nav-link " >傳回值是Lambda</a></li></ul>
+                <ul><li><a href="#lambda是變數類型" data-nav-link " >Lambda是變數類型</a></li><li><a href="#有名字的函式" data-nav-link " >有名字的函式</a></li><li><a href="#沒有名字的函式lambda" data-nav-link " >沒有名字的函式Lambda</a></li><li><a href="#lambda類型" data-nav-link " >Lambda類型</a></li><li><a href="#自動推導lambda類型" data-nav-link " >自動推導Lambda類型</a></li><li><a href="#省略函式主體參數類型" data-nav-link " >省略函式主體參數類型</a></li><li><a href="#參數只有一個使用it" data-nav-link " >參數只有一個，使用it</a></li><li><a href="#多行程式碼最後一行是傳回值" data-nav-link " >多行程式碼，最後一行是傳回值</a></li><li><a href="#lambda參數是lambda" data-nav-link " >Lambda參數是Lambda</a></li><li><a href="#有名字的函式參數是lambda" data-nav-link " >有名字的函式參數是Lambda</a></li><li><a href="#最後一個參數是lambda" data-nav-link " >最後一個參數是Lambda</a></li><li><a href="#參數只有一個lambda去掉圓括號" data-nav-link " >參數只有一個Lambda，去掉圓括號</a></li><li><a href="#透過lambda把標準函式重寫覆寫" data-nav-link " >透過Lambda把標準函式重寫(覆寫)</a></li><li><a href="#傳回值是lambda" data-nav-link " >傳回值是Lambda</a></li><li><a href="#參數沒使用用_代表" data-nav-link " >參數沒使用，用_代表</a></li></ul>
 
             
         </li>
@@ -1836,14 +1839,38 @@
     	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
         
             
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 集合 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/array/" data-nav-link> Array</a>
+        
+            
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/stdlib/" data-nav-link> 常用函式庫</a>
+    	<a href="/pages/kotlin/list/" data-nav-link> List與MutableList</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/set/" data-nav-link> Set</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/map/" data-nav-link> Map,MutableMap</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> JetpackCompose </a><ul>
@@ -2402,14 +2429,30 @@
 
 <p>如果Lambda沒有參數，可以省略-&gt;</p>
 
+<p>Lambda</p>
+
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="p">{</span><span class="n">x</span><span class="p">:</span><span class="nc">Int</span> <span class="p">-&gt;</span> <span class="n">x</span> <span class="p">+</span> <span class="mi">5</span><span class="p">}</span>
+</pre></td><td class="code"><pre><span class="p">{</span> <span class="n">x</span><span class="p">:</span> <span class="nc">Int</span> <span class="p">-&gt;</span> <span class="s">"The value is $x"</span> <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="lambda類型">Lambda類型</h2>
+<p>把Lambda指派給變數，並執行。</p>
 
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">msg</span> <span class="p">=</span> <span class="p">{</span> <span class="n">x</span><span class="p">:</span> <span class="nc">Int</span> <span class="p">-&gt;</span> <span class="s">"The value is $x"</span> <span class="p">}</span>
+<span class="c1">// 執行Lambda有代入參數，要用${運算式}</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"pass 6 to msg:${msg(6)}"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pass 6 to msg:The value is 6
+</code></pre></div></div>
+
+<h2 id="lambda類型">Lambda類型</h2>
 <p>變數的類型是Lambda，Lambda類型是「傳入的參數類型與個數」+「傳回值類型」所組合。</p>
 
 <p>Lambda可以指派給變數，以下把<code class="language-plaintext highlighter-rouge">{ x: Int, y: Int -&gt; x + y }</code>指派給變數sum。</p>
@@ -2572,6 +2615,7 @@
 <ul>
   <li>callback變數的Lambda類型是，參數是Int，傳回值是String。</li>
   <li>sendMsg3變數的Lambda類型是，參數有二個，分別是Int與Lambda，傳回值是String類型。</li>
+  <li>sendMsg3()，參數2的Lambda類型是<code class="language-plaintext highlighter-rouge">(Int) -&gt; String</code>，參數是Int，傳回值是String。</li>
 </ul>
 
 <figure class="highlight">
@@ -2629,14 +2673,15 @@
   <li>callback變數的Lambda類型是，參數是Int，傳回值是String。</li>
   <li>sendMsg4()定義在main()函式之外。</li>
   <li>sendMsg4()，傳回值是String類型，參數有二個，分別是Int與Lambda。</li>
-  <li>Lambda的類型定義是，參數是Int，傳回值是String類型。</li>
+  <li>sendMsg4()，參數2的Lambda的類型是<code class="language-plaintext highlighter-rouge">(Int) -&gt; String</code>，參數是Int，傳回值是String類型。</li>
   <li>sendMsg4()是有名字的函式，要有return關鍵字。</li>
 </ul>
 
 <h2 id="最後一個參數是lambda">最後一個參數是Lambda</h2>
-<p>sendMsg5()Lambda類型是，傳回值是Unit，沒有傳回值。</p>
-
-<p>參數1是Int類型，參數2是Lambda。</p>
+<ul>
+  <li>sendMsg5()Lambda類型是，參數1是Int類型，參數2是Lambda，傳回值是Unit，沒有傳回值。</li>
+  <li>sendMsg5()，參數2的Lambda的類型是<code class="language-plaintext highlighter-rouge">(Int) -&gt; String</code>，參數是Int，傳回值是String類型。</li>
+</ul>
 
 <p>code是參數1的變數名，function1是參數2的變數名。</p>
 
@@ -2676,7 +2721,7 @@
 </code></pre></div></div>
 
 <h2 id="參數只有一個lambda去掉圓括號">參數只有一個Lambda，去掉圓括號</h2>
-<p>參數Lambda類型為(Int) -&gt; String</p>
+<p>sendMsg6()，參數1的Lambda類型為(Int) -&gt; String，參數是Int，傳回值是String類型。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2727,6 +2772,37 @@
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<p>完整程式碼</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">sendMsg6</span><span class="p">:</span> <span class="p">((</span><span class="nc">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">String</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">Unit</span> <span class="p">=</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"參數只有一個Lambda = ${it(200)}"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nf">sendMsg6</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">it</span> <span class="p">==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+        <span class="s">"網頁正常"</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="s">"其它錯誤"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>參數只有一個Lambda = 網頁正常
+</code></pre></div></div>
 
 <h2 id="透過lambda把標準函式重寫覆寫">透過Lambda把標準函式重寫(覆寫)</h2>
 
@@ -2865,6 +2941,23 @@ msgfun(404)是把參數代入，傳回值是String</p>
 </code></pre></div></div>
 
 <p><img src="/assets/img/kotlin/lambda2.png" alt="img" /></p>
+
+<h2 id="參數沒使用用_代表">參數沒使用，用_代表</h2>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">useLambda2</span><span class="p">:</span> <span class="p">(</span><span class="nc">Int</span><span class="p">,</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">Unit</span> <span class="p">=</span> <span class="p">{</span> <span class="n">x</span><span class="p">,</span> <span class="n">_</span> <span class="p">-&gt;</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"First:$x"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nf">useLambda2</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>First:6
+</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -3056,7 +3149,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-19 19:36:19 +0800"
+        "time": "2025-05-20 16:24:52 +0800"
     },
     "basePath": "",
     "book": {

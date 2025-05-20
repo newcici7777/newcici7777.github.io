@@ -9,10 +9,10 @@ Prerequisites:
 - [Lambda][2]
 
 ## Lambda參數與傳回值
+Lambda參數為呼叫Lambda函式(let, run, with, also, apply)的物件。
 
-### Lambda參數與傳回值表格
-
-|函式  |Lambda參數|傳回值|
+|Lambda函式|參數|傳回值|
+|:----|:----|:---------|
 |let  |it  |最後一行決定|
 |run  |this|最後一行決定|
 |with |this|最後一行決定|
@@ -20,7 +20,7 @@ Prerequisites:
 |apply|this|呼叫它的物件|
 
 ### let
-- 會把呼叫它的物件代入，用it
+- it，為呼叫Lambda函式的物件。
 - 傳回值是lambda最後一行。
 
 setWritable() 和 setExecutable() 這些方法的返回值是 Boolean，表示操作是否成功
@@ -40,7 +40,7 @@ boolean (Kotlin reflection is not available)
 ```
 
 ### run
-- 會把呼叫它的物件代入，用this
+- this，為呼叫Lambda函式的物件。
 - 傳回值是lambda最後一行。
 
 {% highlight kotlin linenos %}
@@ -59,7 +59,7 @@ boolean (Kotlin reflection is not available)
 run可以呼叫函式參考
 
 ### with
-- 會把呼叫它的物件代入，用this
+- this，為呼叫Lambda函式的物件。
 - 傳回值是lambda最後一行。
 - 使用參數的方式代入，with(參數) {}
 
@@ -77,8 +77,8 @@ var5 = true
 boolean (Kotlin reflection is not available)
 ```
 ### also
-- 會把呼叫它的物件代入，用it
-- 但傳回值是呼叫它的物件。
+- it，為呼叫Lambda函式的物件。
+- 傳回值是呼叫它的物件，此處是File。
 {% highlight kotlin linenos %}
 val file2 = File("/Users/cici/testc/file_test").apply {
     setWritable(true)
@@ -94,8 +94,8 @@ class java.io.File (Kotlin reflection is not available)
 ```
 
 ### apply
-- 會把呼叫它的物件代入，用this
-- 但傳回值是呼叫它的物件。
+- it，為呼叫Lambda函式的物件。
+- 傳回值是呼叫它的物件，此處是File。
 {% highlight kotlin linenos %}
 val file4 = File("/Users/cici/testc/file_test").also {
     it.setWritable(true)
@@ -111,15 +111,17 @@ class java.io.File (Kotlin reflection is not available)
 ```
 
 ## 用法
+Lambda參數為呼叫Lambda函式(let, run, with, also, apply)的物件。
 
-|函式  |Lambda參數|傳回值|用法|
+|Lambda函式|參數|傳回值|用法|
+|:----|:----|:---------|:-----------------|
 |let  |it  |最後一行決定|null安全呼叫、修改內容|
-|run  |this|最後一行決定|運算、建議傳回true或false、函式參考|
-|with |this|最後一行決定|計算、轉換、取得資訊|
+|run  |this|最後一行決定|運算、判斷true或false、函式參考|
+|with |this|最後一行決定|與run功能相同，但沒有函式參考|
 |also |it  |呼叫它的物件|鏈式呼叫（Method chaining）|
-|apply|this|呼叫它的物件|初始化物件|
+|apply|this|呼叫它的物件|初始化、config設定|
 
-初始化
+初始化、config設定
 {% highlight kotlin linenos %}
 val file = File("/Users/cici/testc/file_test").apply {
     setWritable(true)
@@ -152,7 +154,7 @@ file content= 測試程式
 java程式設計
 ```
 
-計算、判斷
+計算、判斷true或false
 {% highlight kotlin linenos %}
 val res = file.run {
     this.readText().contains("Java")
@@ -163,7 +165,19 @@ println("res = $res")
 res = false
 ```
 
-取得檔案資訊
+with與run功能相同
+{% highlight kotlin linenos %}
+val res2 = with(file) {
+    //"file name = ${name}  length = ${length()} byte."
+    this.readText().contains("Java")
+}
+println("res2 = $res2")
+{% endhighlight %}
+```
+res2 = false
+```
+
+也可作為多行程式碼運算，或資料整理，最後一行回傳最後結果。
 {% highlight kotlin linenos %}
 val fileInfo = with(file) {
     "file name = ${name}  length = ${length()} byte."
@@ -175,7 +189,7 @@ file name = file_test  length = 30 byte.
 ```
 
 ### let與null
-配合安全呼叫問號?，不是null才呼叫let花括號\{\}中的內容，最後再配合:?貓王運算符號，得到null結果時指定預設值。
+配合安全呼叫問號?，不是null才呼叫let花括號\{\}中的內容，最後再配合:?貓王運算子，得到null結果時指定預設值。
 {% highlight kotlin linenos %}
 fun main() {
     // String類型後面加上問號?代表可以是null
@@ -220,13 +234,13 @@ fun showMsg2(isLong: Boolean): String {
 ```
 String is too long
 ```
-
 ## 其它
+以下為有條件的Lambda
 ### takeIf
-- 會把呼叫它的物件代入，用it
-- 傳回值是lambda最後一行。
+- it，為呼叫Lambda函式的物件。
+- 根據條件傳回呼叫它的物件，或null。
 
-判斷是否符合條件，符合條件傳回呼叫它的物件，否則傳回null，takeIf{...}?，後面要加上問號?，因為有可能會為null，是可空類型。
+判斷是否符合條件，符合條件傳回呼叫它的物件，否則傳回null，takeIf{...}?，後面要加上問號?，因為有可能會為null，是空值類型。
 
 以下範例是做鏈式呼叫，若條件成立，會傳回File物件，然後呼叫readText()，若條件不成立，就直接傳回null，不繼續執行readText。
 {% highlight kotlin linenos %}
@@ -238,8 +252,8 @@ null
 ```
 
 ### takeUnless
-- 會把呼叫它的物件代入，用it
-- 傳回值是lambda最後一行。
+- it，為呼叫Lambda函式的物件。
+- 根據條件傳回呼叫它的物件，或null。
 
 與takeIf相反，不符合條件，才會進入let{}中。
 {% highlight kotlin linenos %}

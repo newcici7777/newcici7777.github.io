@@ -54,8 +54,8 @@ fun b():Int = 1
 fun c() = 1
 {% endhighlight %}
 
-## 用等於\=來指定傳回值的運算式
-用 = 來指定傳回值的運算式
+## 指派
+用 = 來指派傳回值的運算式
 {% highlight kotlin linenos %}
 fun plus(a: Int, b: Int) : Int = a + b
 fun main() {
@@ -64,6 +64,106 @@ fun main() {
 {% endhighlight %}
 ```
 3
+```
+
+## if在函式中省略return過程
+if在函式有return
+{% highlight kotlin linenos %}
+fun chooseMax(a:Int, b:Int) : Int {
+    if(a > b) {
+        return a
+    } else {
+        return b
+    }
+}
+fun main() {
+    println("chooseMax fun = ${chooseMax(10, 20)}")
+}
+{% endhighlight %}
+```
+chooseMax fun = 20
+```
+
+if 條件運算子
+{% highlight kotlin linenos %}
+fun chooseMax2(a:Int, b:Int):Int{
+    return if (a > b) a else b
+}
+fun main() {
+    println("chooseMax2 fun = ${chooseMax2(10, 20)}")
+}
+{% endhighlight %}
+```
+chooseMax2 fun = 20
+```
+
+省略return，用指派=
+{% highlight kotlin linenos %}
+fun chooseMax3(a:Int, b:Int) = if (a > b) a else b
+fun main() {
+    println("chooseMax3 fun = ${chooseMax3(10, 20)}")
+}
+{% endhighlight %}
+```
+chooseMax3 fun = 20
+```
+
+if多行條件語句，用指派，省略return。
+{% highlight kotlin linenos %}
+fun chooseMax4(a:Int, b:Int) = if (a > b) {
+    println("a最大")
+    a //結果值放在最後一行，不要加return
+} else {
+    println("b最大")
+    b
+}
+fun main() {
+    println("chooseMax4 fun = ${chooseMax4(10, 20)}")
+}
+{% endhighlight %}
+```
+b最大
+chooseMax4 fun = 20
+```
+
+## 函式中的函式
+函式中的函式可以存取外部函式的變數，但外部函式無法存取內部函式的變數。
+
+func_level1()函式無法使用func_level2()與func_level3()裡面的變數。
+{% highlight kotlin linenos %}
+fun main() {
+    val level0 = 0
+    fun func_level1() {
+        println("level0 = $level0")
+        val level1 = 1
+        fun func_level2() {
+            println("=============")
+            println("level0 = $level0")
+            println("level1 = $level1")
+            val level2 = 2
+            fun func_level3() {
+                println("=============")
+                println("level0 = $level0")
+                println("level1 = $level1")
+                println("level2 = $level2")
+            }
+            func_level3()
+        }
+        func_level2()
+    }
+    func_level1()
+}
+{% endhighlight %}
+```
+level0 = 0
+=============
+level0 = 0
+level1 = 1
+=============
+level0 = 0
+level1 = 1
+level2 = 2
+
 ```
 
 ## 參數預設值

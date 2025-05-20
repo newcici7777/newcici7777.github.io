@@ -1788,7 +1788,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/range/" data-nav-link> 區間in</a>
+    	<a href="/pages/kotlin/range/" data-nav-link> IntRange區間與in</a>
         
             
         </li>
@@ -1809,10 +1809,13 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/array/" data-nav-link> array與List</a>
+    	<a href="/pages/kotlin/string/" data-nav-link> String函式</a>
         
             
         </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 函式 </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -1833,17 +1836,41 @@
     	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
         
             
-                <ul><li><a href="#lambda參數與傳回值" data-nav-link " >Lambda參數與傳回值</a><ul><li><a href="#lambda參數與傳回值表格" data-nav-link " >Lambda參數與傳回值表格</a></li><li><a href="#let" data-nav-link " >let</a></li><li><a href="#run" data-nav-link " >run</a></li><li><a href="#with" data-nav-link " >with</a></li><li><a href="#also" data-nav-link " >also</a></li><li><a href="#apply" data-nav-link " >apply</a></li></ul></li><li><a href="#用法" data-nav-link " >用法</a><ul><li><a href="#let與null" data-nav-link " >let與null</a></li><li><a href="#run與函式參考" data-nav-link " >run與函式參考</a></li></ul></li><li><a href="#其它" data-nav-link " >其它</a><ul><li><a href="#takeif" data-nav-link " >takeIf</a></li><li><a href="#takeunless" data-nav-link " >takeUnless</a></li></ul></li></ul>
+                <ul><li><a href="#lambda參數與傳回值" data-nav-link " >Lambda參數與傳回值</a><ul><li><a href="#let" data-nav-link " >let</a></li><li><a href="#run" data-nav-link " >run</a></li><li><a href="#with" data-nav-link " >with</a></li><li><a href="#also" data-nav-link " >also</a></li><li><a href="#apply" data-nav-link " >apply</a></li></ul></li><li><a href="#用法" data-nav-link " >用法</a><ul><li><a href="#let與null" data-nav-link " >let與null</a></li><li><a href="#run與函式參考" data-nav-link " >run與函式參考</a></li></ul></li><li><a href="#其它" data-nav-link " >其它</a><ul><li><a href="#takeif" data-nav-link " >takeIf</a></li><li><a href="#takeunless" data-nav-link " >takeUnless</a></li></ul></li></ul>
 
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 集合 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/array/" data-nav-link> Array</a>
+        
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/stdlib/" data-nav-link> 常用函式庫</a>
+    	<a href="/pages/kotlin/list/" data-nav-link> List與MutableList</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/set/" data-nav-link> Set</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/map/" data-nav-link> Map,MutableMap</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> JetpackCompose </a><ul>
@@ -2369,47 +2396,48 @@
 </ul>
 
 <h2 id="lambda參數與傳回值">Lambda參數與傳回值</h2>
-
-<h3 id="lambda參數與傳回值表格">Lambda參數與傳回值表格</h3>
+<p>Lambda參數為呼叫Lambda函式(let, run, with, also, apply)的物件。</p>
 
 <table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Lambda函式</th>
+      <th style="text-align: left">參數</th>
+      <th style="text-align: left">傳回值</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
-      <td>函式</td>
-      <td>Lambda參數</td>
-      <td>傳回值</td>
+      <td style="text-align: left">let</td>
+      <td style="text-align: left">it</td>
+      <td style="text-align: left">最後一行決定</td>
     </tr>
     <tr>
-      <td>let</td>
-      <td>it</td>
-      <td>最後一行決定</td>
+      <td style="text-align: left">run</td>
+      <td style="text-align: left">this</td>
+      <td style="text-align: left">最後一行決定</td>
     </tr>
     <tr>
-      <td>run</td>
-      <td>this</td>
-      <td>最後一行決定</td>
+      <td style="text-align: left">with</td>
+      <td style="text-align: left">this</td>
+      <td style="text-align: left">最後一行決定</td>
     </tr>
     <tr>
-      <td>with</td>
-      <td>this</td>
-      <td>最後一行決定</td>
+      <td style="text-align: left">also</td>
+      <td style="text-align: left">it</td>
+      <td style="text-align: left">呼叫它的物件</td>
     </tr>
     <tr>
-      <td>also</td>
-      <td>it</td>
-      <td>呼叫它的物件</td>
-    </tr>
-    <tr>
-      <td>apply</td>
-      <td>this</td>
-      <td>呼叫它的物件</td>
+      <td style="text-align: left">apply</td>
+      <td style="text-align: left">this</td>
+      <td style="text-align: left">呼叫它的物件</td>
     </tr>
   </tbody>
 </table>
 
 <h3 id="let">let</h3>
 <ul>
-  <li>會把呼叫它的物件代入，用it</li>
+  <li>it，為呼叫Lambda函式的物件。</li>
   <li>傳回值是lambda最後一行。</li>
 </ul>
 
@@ -2439,7 +2467,7 @@ boolean (Kotlin reflection is not available)
 
 <h3 id="run">run</h3>
 <ul>
-  <li>會把呼叫它的物件代入，用this</li>
+  <li>this，為呼叫Lambda函式的物件。</li>
   <li>傳回值是lambda最後一行。</li>
 </ul>
 
@@ -2468,7 +2496,7 @@ boolean (Kotlin reflection is not available)
 
 <h3 id="with">with</h3>
 <ul>
-  <li>會把呼叫它的物件代入，用this</li>
+  <li>this，為呼叫Lambda函式的物件。</li>
   <li>傳回值是lambda最後一行。</li>
   <li>使用參數的方式代入，with(參數) {}</li>
 </ul>
@@ -2496,8 +2524,8 @@ boolean (Kotlin reflection is not available)
 </code></pre></div></div>
 <h3 id="also">also</h3>
 <ul>
-  <li>會把呼叫它的物件代入，用it</li>
-  <li>但傳回值是呼叫它的物件。</li>
+  <li>it，為呼叫Lambda函式的物件。</li>
+  <li>傳回值是呼叫它的物件，此處是File。</li>
 </ul>
 
 <figure class="highlight">
@@ -2524,8 +2552,8 @@ class java.io.File (Kotlin reflection is not available)
 
 <h3 id="apply">apply</h3>
 <ul>
-  <li>會把呼叫它的物件代入，用this</li>
-  <li>但傳回值是呼叫它的物件。</li>
+  <li>it，為呼叫Lambda函式的物件。</li>
+  <li>傳回值是呼叫它的物件，此處是File。</li>
 </ul>
 
 <figure class="highlight">
@@ -2551,49 +2579,52 @@ class java.io.File (Kotlin reflection is not available)
 </code></pre></div></div>
 
 <h2 id="用法">用法</h2>
+<p>Lambda參數為呼叫Lambda函式(let, run, with, also, apply)的物件。</p>
 
 <table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Lambda函式</th>
+      <th style="text-align: left">參數</th>
+      <th style="text-align: left">傳回值</th>
+      <th style="text-align: left">用法</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
-      <td>函式</td>
-      <td>Lambda參數</td>
-      <td>傳回值</td>
-      <td>用法</td>
+      <td style="text-align: left">let</td>
+      <td style="text-align: left">it</td>
+      <td style="text-align: left">最後一行決定</td>
+      <td style="text-align: left">null安全呼叫、修改內容</td>
     </tr>
     <tr>
-      <td>let</td>
-      <td>it</td>
-      <td>最後一行決定</td>
-      <td>null安全呼叫、修改內容</td>
+      <td style="text-align: left">run</td>
+      <td style="text-align: left">this</td>
+      <td style="text-align: left">最後一行決定</td>
+      <td style="text-align: left">運算、判斷true或false、函式參考</td>
     </tr>
     <tr>
-      <td>run</td>
-      <td>this</td>
-      <td>最後一行決定</td>
-      <td>運算、建議傳回true或false、函式參考</td>
+      <td style="text-align: left">with</td>
+      <td style="text-align: left">this</td>
+      <td style="text-align: left">最後一行決定</td>
+      <td style="text-align: left">與run功能相同，但沒有函式參考</td>
     </tr>
     <tr>
-      <td>with</td>
-      <td>this</td>
-      <td>最後一行決定</td>
-      <td>計算、轉換、取得資訊</td>
+      <td style="text-align: left">also</td>
+      <td style="text-align: left">it</td>
+      <td style="text-align: left">呼叫它的物件</td>
+      <td style="text-align: left">鏈式呼叫（Method chaining）</td>
     </tr>
     <tr>
-      <td>also</td>
-      <td>it</td>
-      <td>呼叫它的物件</td>
-      <td>鏈式呼叫（Method chaining）</td>
-    </tr>
-    <tr>
-      <td>apply</td>
-      <td>this</td>
-      <td>呼叫它的物件</td>
-      <td>初始化物件</td>
+      <td style="text-align: left">apply</td>
+      <td style="text-align: left">this</td>
+      <td style="text-align: left">呼叫它的物件</td>
+      <td style="text-align: left">初始化、config設定</td>
     </tr>
   </tbody>
 </table>
 
-<p>初始化</p>
+<p>初始化、config設定</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2646,7 +2677,7 @@ file content= 測試程式
 java程式設計
 </code></pre></div></div>
 
-<p>計算、判斷</p>
+<p>計算、判斷true或false</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2663,7 +2694,26 @@ java程式設計
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>res = false
 </code></pre></div></div>
 
-<p>取得檔案資訊</p>
+<p>with與run功能相同</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">res2</span> <span class="p">=</span> <span class="nf">with</span><span class="p">(</span><span class="n">file</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//"file name = ${name}  length = ${length()} byte."</span>
+    <span class="k">this</span><span class="p">.</span><span class="nf">readText</span><span class="p">().</span><span class="nf">contains</span><span class="p">(</span><span class="s">"Java"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"res2 = $res2"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>res2 = false
+</code></pre></div></div>
+
+<p>也可作為多行程式碼運算，或資料整理，最後一行回傳最後結果。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2681,7 +2731,7 @@ java程式設計
 </code></pre></div></div>
 
 <h3 id="let與null">let與null</h3>
-<p>配合安全呼叫問號?，不是null才呼叫let花括號{}中的內容，最後再配合:?貓王運算符號，得到null結果時指定預設值。</p>
+<p>配合安全呼叫問號?，不是null才呼叫let花括號{}中的內容，最後再配合:?貓王運算子，得到null結果時指定預設值。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2760,15 +2810,15 @@ Your msg is Hello World!
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>String is too long
 </code></pre></div></div>
-
 <h2 id="其它">其它</h2>
+<p>以下為有條件的Lambda</p>
 <h3 id="takeif">takeIf</h3>
 <ul>
-  <li>會把呼叫它的物件代入，用it</li>
-  <li>傳回值是lambda最後一行。</li>
+  <li>it，為呼叫Lambda函式的物件。</li>
+  <li>根據條件傳回呼叫它的物件，或null。</li>
 </ul>
 
-<p>判斷是否符合條件，符合條件傳回呼叫它的物件，否則傳回null，takeIf{…}?，後面要加上問號?，因為有可能會為null，是可空類型。</p>
+<p>判斷是否符合條件，符合條件傳回呼叫它的物件，否則傳回null，takeIf{…}?，後面要加上問號?，因為有可能會為null，是空值類型。</p>
 
 <p>以下範例是做鏈式呼叫，若條件成立，會傳回File物件，然後呼叫readText()，若條件不成立，就直接傳回null，不繼續執行readText。</p>
 
@@ -2785,8 +2835,8 @@ Your msg is Hello World!
 
 <h3 id="takeunless">takeUnless</h3>
 <ul>
-  <li>會把呼叫它的物件代入，用it</li>
-  <li>傳回值是lambda最後一行。</li>
+  <li>it，為呼叫Lambda函式的物件。</li>
+  <li>根據條件傳回呼叫它的物件，或null。</li>
 </ul>
 
 <p>與takeIf相反，不符合條件，才會進入let{}中。</p>
@@ -2876,7 +2926,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/kotlin/stdlib" class="navigation navigation-next navigation-unique" aria-label="Next page: 常用函式庫">
+                        <a href="/pages/kotlin/array" class="navigation navigation-next navigation-unique" aria-label="Next page: Array">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2996,7 +3046,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-19 19:36:19 +0800"
+        "time": "2025-05-20 16:24:52 +0800"
     },
     "basePath": "",
     "book": {

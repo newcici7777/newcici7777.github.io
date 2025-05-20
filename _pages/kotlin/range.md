@@ -1,5 +1,5 @@
 ---
-title: 區間in
+title: IntRange區間與in
 date: 2025-05-14
 keywords: kotlin, in, when, if, for
 ---

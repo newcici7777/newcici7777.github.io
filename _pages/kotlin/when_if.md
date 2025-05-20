@@ -13,14 +13,14 @@ println("res3:$res3")
 res3:true
 ```
 
-## if 接收返回值 
-什麼時候會判斷if是要有返回值的？
+## if 接收傳回值 
+什麼時候會判斷if是要有傳回值的？
 
-拿變數去接收它會自動判斷if是要去獲取返回值的。
+拿變數去接收它會自動判斷if是要去獲取傳回值的。
 
 但一定要帶上else，因為它要判斷如果if條件不相等，要帶上其它值。
 
-不用有return，預設程式碼區塊\{\}的最後一行是返回值。
+不用有return，預設程式碼區塊\{\}的最後一行是傳回值。
 {% highlight kotlin linenos %}
 val b: Any = 1
 val res: Int = if (b == 1) {
@@ -48,9 +48,30 @@ println(answerString)
 I have the answer.
 ```
 
+## if條件語句不只有一行，省略return
+如果if條件語句內的程式碼不只一行，必須把結果放在最後一行，而且不可以加return。
+
+使用if條件語句作為傳回值的時候，一定要有else區塊，確保有值，才能指派給變數
+{% highlight kotlin linenos %}
+var a = 3
+val b = 9
+val chooseMax = if (a > b) {
+    println("a最大")
+    a //結果值放在最後一行，不要加return
+} else {
+    println("b最大")
+    b
+}
+println("chooseMax = $chooseMax")    
+{% endhighlight %}
+```
+b最大
+chooseMax = 9
+```
+
 ## when
 ### 程式碼區塊
-when每個程式碼區塊\{\}是用 -> 箭頭指向程式碼區塊{}，預設程式碼區塊\{\}的最後一行是返回值。
+when每個程式碼區塊\{\}是用 -> 箭頭指向程式碼區塊{}，預設程式碼區塊\{\}的最後一行是傳回值。
 {% highlight kotlin linenos %}
 val str: Any = "abc"
 when(str) {
@@ -146,7 +167,7 @@ val message = when(x) {
 x 是 1
 ```
 
-拿變數去接收條件語句會自動判斷when是要去獲取返回值的。
+拿變數去接收條件語句會自動判斷when是要去獲取傳回值的。
 
 但一定要有else，若之前的條件都不滿足，要有個else取得默認的傳回值。
 

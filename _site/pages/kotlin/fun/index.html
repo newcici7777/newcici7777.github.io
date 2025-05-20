@@ -1788,7 +1788,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/range/" data-nav-link> 區間in</a>
+    	<a href="/pages/kotlin/range/" data-nav-link> IntRange區間與in</a>
         
             
         </li>
@@ -1809,17 +1809,20 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/array/" data-nav-link> array與List</a>
+    	<a href="/pages/kotlin/string/" data-nav-link> String函式</a>
         
             
         </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 函式 </a><ul>
 	
 	
 	<li class="active" data-nav-item>
     	<a href="/pages/kotlin/fun/" data-nav-link> 函式</a>
         
             
-                <ul><li><a href="#函式宣告" data-nav-link " >函式宣告</a></li><li><a href="#簡化" data-nav-link " >簡化</a></li><li><a href="#用等於來指定傳回值的運算式" data-nav-link " >用等於=來指定傳回值的運算式</a></li><li><a href="#參數預設值" data-nav-link " >參數預設值</a></li><li><a href="#unit函式" data-nav-link " >Unit函式</a></li><li><a href="#函式參考" data-nav-link " >函式參考</a></li><li><a href="#匿名函式" data-nav-link " >匿名函式</a></li><li><a href="#inline" data-nav-link " >inline</a></li><li><a href="#私有函式" data-nav-link " >私有函式</a></li></ul>
+                <ul><li><a href="#函式宣告" data-nav-link " >函式宣告</a></li><li><a href="#簡化" data-nav-link " >簡化</a></li><li><a href="#指派" data-nav-link " >指派</a></li><li><a href="#if在函式中省略return過程" data-nav-link " >if在函式中省略return過程</a></li><li><a href="#函式中的函式" data-nav-link " >函式中的函式</a></li><li><a href="#參數預設值" data-nav-link " >參數預設值</a></li><li><a href="#unit函式" data-nav-link " >Unit函式</a></li><li><a href="#函式參考" data-nav-link " >函式參考</a></li><li><a href="#匿名函式" data-nav-link " >匿名函式</a></li><li><a href="#inline" data-nav-link " >inline</a></li><li><a href="#私有函式" data-nav-link " >私有函式</a></li></ul>
 
             
         </li>
@@ -1836,14 +1839,38 @@
     	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
         
             
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 集合 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/array/" data-nav-link> Array</a>
+        
+            
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/stdlib/" data-nav-link> 常用函式庫</a>
+    	<a href="/pages/kotlin/list/" data-nav-link> List與MutableList</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/set/" data-nav-link> Set</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/map/" data-nav-link> Map,MutableMap</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> JetpackCompose </a><ul>
@@ -2430,8 +2457,8 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="用等於來指定傳回值的運算式">用等於=來指定傳回值的運算式</h2>
-<p>用 = 來指定傳回值的運算式</p>
+<h2 id="指派">指派</h2>
+<p>用 = 來指派傳回值的運算式</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2446,6 +2473,168 @@
 </figure>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3
+</code></pre></div></div>
+
+<h2 id="if在函式中省略return過程">if在函式中省略return過程</h2>
+<p>if在函式有return</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">chooseMax</span><span class="p">(</span><span class="n">a</span><span class="p">:</span><span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span><span class="nc">Int</span><span class="p">)</span> <span class="p">:</span> <span class="nc">Int</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">a</span> <span class="p">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">a</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">b</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"chooseMax fun = ${chooseMax(10, 20)}"</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chooseMax fun = 20
+</code></pre></div></div>
+
+<p>if 條件運算子</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">chooseMax2</span><span class="p">(</span><span class="n">a</span><span class="p">:</span><span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span><span class="nc">Int</span><span class="p">):</span><span class="nc">Int</span><span class="p">{</span>
+    <span class="k">return</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="p">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="n">a</span> <span class="k">else</span> <span class="n">b</span>
+<span class="p">}</span>
+<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"chooseMax2 fun = ${chooseMax2(10, 20)}"</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chooseMax2 fun = 20
+</code></pre></div></div>
+
+<p>省略return，用指派=</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">chooseMax3</span><span class="p">(</span><span class="n">a</span><span class="p">:</span><span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span><span class="nc">Int</span><span class="p">)</span> <span class="p">=</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="p">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="n">a</span> <span class="k">else</span> <span class="n">b</span>
+<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"chooseMax3 fun = ${chooseMax3(10, 20)}"</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chooseMax3 fun = 20
+</code></pre></div></div>
+
+<p>if多行條件語句，用指派，省略return。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">chooseMax4</span><span class="p">(</span><span class="n">a</span><span class="p">:</span><span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span><span class="nc">Int</span><span class="p">)</span> <span class="p">=</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="p">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"a最大"</span><span class="p">)</span>
+    <span class="n">a</span> <span class="c1">//結果值放在最後一行，不要加return</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"b最大"</span><span class="p">)</span>
+    <span class="n">b</span>
+<span class="p">}</span>
+<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"chooseMax4 fun = ${chooseMax4(10, 20)}"</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>b最大
+chooseMax4 fun = 20
+</code></pre></div></div>
+
+<h2 id="函式中的函式">函式中的函式</h2>
+<p>函式中的函式可以存取外部函式的變數，但外部函式無法存取內部函式的變數。</p>
+
+<p>func_level1()函式無法使用func_level2()與func_level3()裡面的變數。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">level0</span> <span class="p">=</span> <span class="mi">0</span>
+    <span class="k">fun</span> <span class="nf">func_level1</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"level0 = $level0"</span><span class="p">)</span>
+        <span class="kd">val</span> <span class="py">level1</span> <span class="p">=</span> <span class="mi">1</span>
+        <span class="k">fun</span> <span class="nf">func_level2</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nf">println</span><span class="p">(</span><span class="s">"============="</span><span class="p">)</span>
+            <span class="nf">println</span><span class="p">(</span><span class="s">"level0 = $level0"</span><span class="p">)</span>
+            <span class="nf">println</span><span class="p">(</span><span class="s">"level1 = $level1"</span><span class="p">)</span>
+            <span class="kd">val</span> <span class="py">level2</span> <span class="p">=</span> <span class="mi">2</span>
+            <span class="k">fun</span> <span class="nf">func_level3</span><span class="p">()</span> <span class="p">{</span>
+                <span class="nf">println</span><span class="p">(</span><span class="s">"============="</span><span class="p">)</span>
+                <span class="nf">println</span><span class="p">(</span><span class="s">"level0 = $level0"</span><span class="p">)</span>
+                <span class="nf">println</span><span class="p">(</span><span class="s">"level1 = $level1"</span><span class="p">)</span>
+                <span class="nf">println</span><span class="p">(</span><span class="s">"level2 = $level2"</span><span class="p">)</span>
+            <span class="p">}</span>
+            <span class="nf">func_level3</span><span class="p">()</span>
+        <span class="p">}</span>
+        <span class="nf">func_level2</span><span class="p">()</span>
+    <span class="p">}</span>
+    <span class="nf">func_level1</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>level0 = 0
+=============
+level0 = 0
+level1 = 1
+=============
+level0 = 0
+level1 = 1
+level2 = 2
+
 </code></pre></div></div>
 
 <h2 id="參數預設值">參數預設值</h2>
@@ -2651,7 +2840,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/kotlin/array" class="navigation navigation-prev navigation-unique" aria-label="Previous page: array與List">
+                        <a href="/pages/kotlin/string" class="navigation navigation-prev navigation-unique" aria-label="Previous page: String函式">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -2778,7 +2967,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-19 19:36:19 +0800"
+        "time": "2025-05-20 16:24:52 +0800"
     },
     "basePath": "",
     "book": {

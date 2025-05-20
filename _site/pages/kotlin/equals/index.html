@@ -1788,7 +1788,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/range/" data-nav-link> 區間in</a>
+    	<a href="/pages/kotlin/range/" data-nav-link> IntRange區間與in</a>
         
             
         </li>
@@ -1809,10 +1809,13 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/array/" data-nav-link> array與List</a>
+    	<a href="/pages/kotlin/string/" data-nav-link> String函式</a>
         
             
         </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 函式 </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -1833,14 +1836,38 @@
     	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
         
             
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 集合 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/array/" data-nav-link> Array</a>
+        
+            
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/stdlib/" data-nav-link> 常用函式庫</a>
+    	<a href="/pages/kotlin/list/" data-nav-link> List與MutableList</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/set/" data-nav-link> Set</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/map/" data-nav-link> Map,MutableMap</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> JetpackCompose </a><ul>
@@ -2361,13 +2388,13 @@
                     <h2>==</h2>
 <p>二個等於是比較「值」。</p>
 
-<h2 id="非空類型">非空類型===</h2>
+<h2 id="非空值類型">非空值類型===</h2>
 <p>如果是基本資料型別String, Int, Double, Float, Long, Short, Char, Byte, Boolean</p>
 
 <p>比較的仍是「值」。</p>
 
-<h2 id="可空類型">可空類型===</h2>
-<p>「可空類型」，比較的是「記憶體位址」。</p>
+<h2 id="空值類型">空值類型===</h2>
+<p>「空值類型」，比較的是「記憶體位址」。</p>
 
 <p>要繼續讀下面的內容，一定要先了解共享模式，Integer與String pool。</p>
 <ul>
@@ -2391,34 +2418,34 @@
 11
 12
 13
-</pre></td><td class="code"><pre><span class="n">println</span><span class="o">(</span><span class="s">"=========非空類型127============="</span><span class="o">)</span>
+</pre></td><td class="code"><pre><span class="n">println</span><span class="o">(</span><span class="s">"=========非空值類型127============="</span><span class="o">)</span>
 <span class="n">val</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">127</span>
 <span class="n">val</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">127</span>
 <span class="n">println</span><span class="o">(</span><span class="s">"位址相等 = ${x === y}"</span><span class="o">)</span>
 <span class="n">println</span><span class="o">(</span><span class="s">"值相等 = ${x == y}"</span><span class="o">)</span>
-<span class="n">println</span><span class="o">(</span><span class="s">"=========可空類型127============="</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"=========空值類型127============="</span><span class="o">)</span>
 <span class="n">val</span> <span class="nl">x1:</span><span class="nc">Int</span><span class="o">?</span> <span class="o">=</span> <span class="mi">127</span>
 <span class="n">val</span> <span class="nl">y1:</span><span class="nc">Int</span><span class="o">?</span> <span class="o">=</span> <span class="mi">127</span>
 <span class="n">println</span><span class="o">(</span><span class="s">"位址相等 = ${x1 === y1}"</span><span class="o">)</span>
 <span class="n">println</span><span class="o">(</span><span class="s">"值相等 = ${x1 == y1}"</span><span class="o">)</span>
-<span class="n">println</span><span class="o">(</span><span class="s">"=========可空與非空類型127============="</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"=========空值與非空值類型127============="</span><span class="o">)</span>
 <span class="n">println</span><span class="o">(</span><span class="s">"位址相等 = ${x1 === x}"</span><span class="o">)</span>
 <span class="n">println</span><span class="o">(</span><span class="s">"值相等 = ${x1 == x}"</span><span class="o">)</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=========非空類型127=============
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=========非空值類型127=============
 位址相等 = true
 值相等 = true
-=========可空類型127=============
+=========空值類型127=============
 位址相等 = true
 值相等 = true
-=========可空與非空類型127=============
+=========空值與非空值類型127=============
 位址相等 = true
 值相等 = true
 </code></pre></div></div>
 
-<p>超出128，以下記憶體位址只有非空類型是相等，可空類型都不是相等。</p>
+<p>超出128，以下記憶體位址只有非空值類型是相等，空值類型都不是相等。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2434,35 +2461,35 @@
 11
 12
 13
-</pre></td><td class="code"><pre><span class="n">println</span><span class="o">(</span><span class="s">"=========非空類型128============="</span><span class="o">)</span>
+</pre></td><td class="code"><pre><span class="n">println</span><span class="o">(</span><span class="s">"=========非空值類型128============="</span><span class="o">)</span>
 <span class="n">val</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">128</span>
 <span class="n">val</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">128</span>
 <span class="n">println</span><span class="o">(</span><span class="s">"位址相等 = ${x === y}"</span><span class="o">)</span>
 <span class="n">println</span><span class="o">(</span><span class="s">"值相等 = ${x == y}"</span><span class="o">)</span>
-<span class="n">println</span><span class="o">(</span><span class="s">"=========可空類型128============="</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"=========空值類型128============="</span><span class="o">)</span>
 <span class="n">val</span> <span class="nl">x1:</span><span class="nc">Int</span><span class="o">?</span> <span class="o">=</span> <span class="mi">128</span>
 <span class="n">val</span> <span class="nl">y1:</span><span class="nc">Int</span><span class="o">?</span> <span class="o">=</span> <span class="mi">128</span>
 <span class="n">println</span><span class="o">(</span><span class="s">"位址相等 = ${x1 === y1}"</span><span class="o">)</span>
 <span class="n">println</span><span class="o">(</span><span class="s">"值相等 = ${x1 == y1}"</span><span class="o">)</span>
-<span class="n">println</span><span class="o">(</span><span class="s">"=========可空與非空類型128============="</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="s">"=========空值與非空值類型128============="</span><span class="o">)</span>
 <span class="n">println</span><span class="o">(</span><span class="s">"位址相等 = ${x1 === x}"</span><span class="o">)</span>
 <span class="n">println</span><span class="o">(</span><span class="s">"值相等 = ${x1 == x}"</span><span class="o">)</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=========非空類型128=============
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=========非空值類型128=============
 位址相等 = true
 值相等 = true
-=========可空類型128=============
+=========空值類型128=============
 位址相等 = false
 值相等 = true
-=========可空與非空類型128=============
+=========空值與非空值類型128=============
 位址相等 = false
 值相等 = true
 </code></pre></div></div>
 
 <h3 id="string">String</h3>
-<p>以下程式碼，不管是非空類型與可空類型，都是指向同一個記憶體位址，指向同一個String Pool中的常數。</p>
+<p>以下程式碼，不管是非空值類型與空值類型，都是指向同一個記憶體位址，指向同一個String Pool中的常數。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2670,7 +2697,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-19 19:36:19 +0800"
+        "time": "2025-05-20 16:24:52 +0800"
     },
     "basePath": "",
     "book": {
