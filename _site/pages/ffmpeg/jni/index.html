@@ -1468,6 +1468,13 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/exception/" data-nav-link> Exception</a>
+        
+            
+        </li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> IO </a><ul>
 	
 	
@@ -1813,6 +1820,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/string/" data-nav-link> String函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/exception/" data-nav-link> Exception</a>
         
             
         </li>
@@ -3028,7 +3042,7 @@ MainActivity.java</p>
   <span class="c1">// 建立java 字串</span>
   <span class="n">jstring</span> <span class="n">param1</span> <span class="o">=</span> <span class="n">env</span><span class="o">-&gt;</span><span class="n">NewStringUTF</span><span class="p">(</span><span class="s">"call static method"</span><span class="p">);</span>
   <span class="n">env</span><span class="o">-&gt;</span><span class="n">CallStaticVoidMethod</span><span class="p">(</span><span class="n">beanCls</span><span class="p">,</span><span class="n">printInfo</span><span class="p">,</span><span class="n">param1</span><span class="p">);</span>
-  <span class="c1">// 參數是自定義類別</span>
+  <span class="c1">// 參數是自訂類別</span>
   <span class="c1">// static方法</span>
   <span class="n">jmethodID</span> <span class="n">printInfo2</span> <span class="o">=</span> <span class="n">env</span><span class="o">-&gt;</span><span class="n">GetStaticMethodID</span><span class="p">(</span><span class="n">beanCls</span><span class="p">,</span> <span class="s">"printInfo"</span><span class="p">,</span> <span class="s">"(Lcom/example/ndkproj/Bean2;)V"</span><span class="p">);</span>
   <span class="c1">// 建立物件jclass</span>
@@ -3656,7 +3670,7 @@ native-lib.cpp</p>
 <span class="n">Java_com_example_ndkproj_MainActivity_testThread</span><span class="p">(</span><span class="n">JNIEnv</span> <span class="o">*</span><span class="n">env</span><span class="p">,</span> <span class="n">jobject</span> <span class="n">thiz</span><span class="p">)</span> <span class="p">{</span>
   <span class="c1">// pthread_t是long，以下可作為long pid</span>
   <span class="n">pthread_t</span> <span class="n">pid</span><span class="p">;</span>
-  <span class="c1">// 建立自定義context物件</span>
+  <span class="c1">// 建立自訂context物件</span>
   <span class="n">Context</span> <span class="o">*</span><span class="n">context</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Context</span><span class="p">;</span>
   <span class="c1">// thiz是mainActivity放置java函式的類別</span>
   <span class="c1">// 建立全域參考</span>
@@ -3864,7 +3878,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-20 16:24:52 +0800"
+        "time": "2025-05-21 16:27:46 +0800"
     },
     "basePath": "",
     "book": {

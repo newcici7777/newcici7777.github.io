@@ -3,14 +3,13 @@ title: operator()物件函式
 date: 2024-10-28
 keywords: c++, operator(),Functor
 ---
-
 ## 物件函式Functor
 
 物件名本身就是函式名，但使用方法像呼叫函式一樣。
 
 必須在類別裡面定義
 
-以下傳回值型態與參數可自定義，沒有限制，但函式名必須為`operator()`
+以下傳回值型態與參數可自訂，沒有限制，但函式名必須為`operator()`
 {% highlight c++ linenos %}
   傳回值型態 operator()(參數) {
     cout << "要做的事" << endl;

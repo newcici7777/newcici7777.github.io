@@ -124,7 +124,7 @@ item = 1
 ```
 ## Stack typedef實作
 
-將上面的程式修改成自定義資料型態DataType。以下有黃色的部分是有變更的程式碼。  
+將上面的程式修改成自訂資料型態DataType。以下有黃色的部分是有變更的程式碼。  
 
 <pre>
 <span class="markline">typedef int DataType;</span>

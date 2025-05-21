@@ -62,6 +62,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Preprocessor|前置處理器|預處理器|
 |default|預設值|缺省|
 |Temp Variable|暫存變數或臨時變數|臨時變量|
+|custom|自訂|自定義|
 
 ## 陣列相關
 
@@ -78,7 +79,9 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |:--:|:--:|:--:|
 |Function|函式|函數|
 |callback|回呼函式|回調函數|
-|return|函式傳回值|函數回傳值|
+|return|函式傳回|函數返回|
+|Function Call|呼叫函式|函數調用|
+|Function caller|函式接收者|函數調用者|
 
 ## 指標相關
 
@@ -194,9 +197,16 @@ struct|結構|結構體|
 
 |英文|台灣|大陸|
 |:--:|:--:|:--:|
-|Object-oriented programming|物件導向|面向對向原則|
+|Object-oriented programming|物件導向|面向對像|
+|constructor|建構式或建構子|構造器|
 |Upcasting object|向上轉型物件|上轉型對象|
 |Downcasting object|向下轉型物件|下轉型對象|
 |Reference|參考|引用|
 |Interface|介面|接口|
 |implements|實作|實現|
+|Exception|例外|異常|
+|catch|補捉|補獲|
+|Runtime Exception|執行時期錯誤|運行時期錯誤|
+|Method chaining|鏈式呼叫|鏈式調用|
+|Method Calls|呼叫方法|函數調用|
+|Method caller|函式接收者|調用者|

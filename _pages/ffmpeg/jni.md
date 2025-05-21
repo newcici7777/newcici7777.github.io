@@ -315,7 +315,7 @@ Java_com_example_ndkproj_MainActivity_passObject(JNIEnv *env, jobject thiz, jobj
   // 建立java 字串
   jstring param1 = env->NewStringUTF("call static method");
   env->CallStaticVoidMethod(beanCls,printInfo,param1);
-  // 參數是自定義類別
+  // 參數是自訂類別
   // static方法
   jmethodID printInfo2 = env->GetStaticMethodID(beanCls, "printInfo", "(Lcom/example/ndkproj/Bean2;)V");
   // 建立物件jclass
@@ -676,7 +676,7 @@ JNIEXPORT void JNICALL
 Java_com_example_ndkproj_MainActivity_testThread(JNIEnv *env, jobject thiz) {
   // pthread_t是long，以下可作為long pid
   pthread_t pid;
-  // 建立自定義context物件
+  // 建立自訂context物件
   Context *context = new Context;
   // thiz是mainActivity放置java函式的類別
   // 建立全域參考

@@ -185,7 +185,7 @@ int main() {
 
 ### 函式指標應用
 
-自定義二個函式指標類型別名
+自訂二個函式指標類型別名
 {% highlight c++ linenos %}
 //宣告類型別名
 //傳回值為void，別名為Success，參數資料型態char*指標
@@ -227,9 +227,9 @@ int main() {
 
 第5行,使用函式指標Failure呼叫函式，並傳入參數。
 
-第9行,呼叫http函式，並把函式傳回值參數與自定義Success函式資料型態一樣的httpOk函式傳入。
+第9行,呼叫http函式，並把函式傳回值參數與自訂Success函式資料型態一樣的httpOk函式傳入。
 
-第10行,呼叫http函式，並把函式傳回值參數與自定義Failure函式資料型態一樣的httpFailure函式傳入。
+第10行,呼叫http函式，並把函式傳回值參數與自訂Failure函式資料型態一樣的httpFailure函式傳入。
 
 完整程式
 
