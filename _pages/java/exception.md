@@ -3,19 +3,8 @@ title: Exception
 date: 2025-05-20
 keywords: Java, Exception
 ---
-## IntelliJ快速鍵
-先「選取」可能會發生錯誤的程式碼。
-
-按下快速鍵
-
-Win: ctrl + alt + t
-
-Mac: cmd + alt + t
-
-選取你要的try...catch，我都是選6。
-
 ## 什麼是例外？
-什麼是例外？不正常的錯誤導致程式執行到一半停止，或者執行到一半中斷。
+什麼是例外？不正常的錯誤導致程式執行到一半停止。
 
 以下程式碼會產生計算錯誤，因為不能除0，程式會執行到第7行時就停止，第8行以後都不執行。
 {% highlight java linenos %}
@@ -58,17 +47,17 @@ Error是程式設計師無法控制，Exception是程式設計師可以控管。
 ## Error
 StackOverFlow、Out of memory(OOM)，Stack堆疊或Heap的記憶體被占滿，導致Crash，程序崩潰。
 
-Stack堆疊存放變數與變數的值是基本資料類型(int,char,byte,float,double)。
+Stack堆疊存放變數與值是基本資料類型(int,char,byte,float,double)。
 
 Heap存放物件，透過new關鍵字建立與物件類型一致的記憶體空間，而Stack中的變數存放的是Heap的物件記憶體位址，圖文內容請見[Java Memory Model][1]
 
 程式(Program)是原始碼，程序(Process)是把程式碼載入到記憶體，從執行到執行完畢的一個過程，一個程式可以產生多個程序。
 
 ## Exception
-Exception又分為執行時期錯誤(Runtime Exception)與編譯時期例外。
+Exception又分為執行時例外(Runtime Exception)與編譯例外。
 
-### 編譯時期例外
-編譯時期例外是在寫程式時候，由編譯器檢查出來的錯誤，不是邏輯或語法錯誤，語法錯誤例如變數沒有宣告類型就使用。
+### 編譯例外
+編譯例外是在寫程式時候，由編譯器檢查出來的錯誤，不是邏輯或語法錯誤，語法錯誤例如變數沒有宣告類型就使用。
 
 語法錯誤
 {% highlight java linenos %}
@@ -89,7 +78,7 @@ public class Test {
 }
 {% endhighlight %}
 
-### 執行時期錯誤
+### 執行時例外
 執行時才發現有問題，比如發現檔案不存在，或者執行時才發現變數是null。
 
 執行語法，注意！沒有副檔名。
@@ -102,10 +91,10 @@ java 檔名
 fileInputStream = new FileInputStream("/Users/cici/abdcfd");
 {% endhighlight %}
 
-印出null，產生NullPointException。
+str是null，null呼叫length()，產生NullPointException。
 {% highlight java linenos %}
 String str = null;
-System.out.println("str = " + str);
+System.out.println("str len = " + str.length());
 {% endhighlight %}
 
 除0，會產生ArithmeticException: / by zero
@@ -122,11 +111,11 @@ Object是所有類別的父類別，Throwable是Error與Exception的父類別。
 ![img]({{site.imgurl}}/java/exception1.png)
 
 ### Error的子類別
-Error下面有StackOverflowError與OutOfMemoryError，Exception下面有執行時期錯誤RuntimeException。
+Error下面有StackOverflowError與OutOfMemoryError，Exception下面有執行時例外RuntimeException。
 
 ![img]({{site.imgurl}}/java/exception2.png)
 
-### 編譯時期例外的子類別
+### 編譯例外的子類別
 下圖看黃色方塊，父類別是Exception，IOException與ReflectiveOperationException是子類別。
 
 ReflectiveOperationException下面又有
@@ -136,9 +125,9 @@ ReflectiveOperationException下面又有
 
 ![img]({{site.imgurl}}/java/exception3.png)
 
-編譯時期例外主要針對IO串流與類別反射相關，可看[IO串流][2]與[反射][3]。
+編譯例外主要針對IO串流與類別反射相關，可看[IO串流][2]與[反射][3]。
 
-重要！!編譯時期例外的子類別，強制一定要補捉try-catch或拋出例外throws。
+重要！!編譯例外的子類別，強制一定要補捉try-catch或拋出例外throws。
 
 IOException的jdk文件:
 
@@ -148,7 +137,7 @@ ReflectiveOperationException的jdk文件:
 
 ![img]({{site.imgurl}}/java/reflect_exception.png)
 
-### 執行時期錯誤的子類別。
+### 執行時例外的子類別。
 RuntimeException，沒有強制一定要補捉try-catch，不然程式碼到處都是try-catch。
 
 RuntimeException的jdk文件:
@@ -182,8 +171,9 @@ try {
   不管有沒有例外，都會執行這個程式碼區塊
 }
 ```
-第2行產生Exception的物件，會把Exception物件作為參數放在catch (Exception e)
+上述語法，第2行產生Exception的物件，會把Exception物件作為參數放在catch (Exception e)
 
+try-catch範例
 {% highlight java linenos %}
 public class Test4 {
   public static void main(String[] args) {
@@ -206,7 +196,7 @@ finally
 ```
 
 ### 多個catch
-可以有多個catch，但只會進到其中一個，且例外類別必須由子類到父類。
+可以有多個catch，但只會進到其中一個，且例外類別必須由子類別到父類別。
 
 第一個catch是子類別NullPointerException，第2個catch是父類別Exception
 {% highlight java linenos %}
@@ -243,11 +233,12 @@ try {
 為什麼會有throws拋出例外？代表該方法沒有能力處理例外，所以把例外往呼叫者拋出。
 
 jvm呼叫main()方法，main()方法呼叫func1()，func1()呼叫func2()，func2()拋出例外給呼叫者func1()，func1不try-catch，拋出例外給呼叫者main()，main()也拋出例外，jvm收到例外後，「印出錯誤訊息」然後就「停止程序」。
+
 ![img]({{site.imgurl}}/java/throws.png)
 
-throws 後面可以是例外的父類，或是例外的類別
+throws 後面可以是例外的父類別，或是產生例外的類別。
 
-拋出FileNotFoundException。
+拋出throws FileNotFoundException。
 {% highlight java linenos %}
 public class Test2 {
   public static void main(String[] args) throws FileNotFoundException {
@@ -256,7 +247,7 @@ public class Test2 {
 }
 {% endhighlight %}
 
-拋出父類別
+拋出父類別throws IOException
 {% highlight java linenos %}
 public class Test2 {
   public static void main(String[] args) throws IOException {
@@ -279,7 +270,7 @@ public class Test2 {
 {% endhighlight %}
 
 ### 預設throws
-若程式都沒有寫try-catch，也沒有寫throws，預設會用throws拋出例外給呼叫者，至於拋出什麼例外，就看程式碼的錯誤而認定。
+若程式都沒有寫try-catch，也沒有寫throws，預設會用throws拋出例外給呼叫者，至於拋出什麼例外，就看程式碼的例外而認定。
 
 如果都沒寫try-catch，也沒有寫throws，預設會用throws。
 {% highlight java linenos %}
@@ -343,7 +334,7 @@ class ChildException extends FatherException{
 {% endhighlight %}
 
 ### 方法的throws
-IOException是屬於編譯時期例外，所以強制一定要處理例外，如果是RuntimeException就不用處理拋出例外，預設有throws會處理(前面有提到預設throws)。
+IOException是屬於編譯例外，所以強制一定要處理例外，如果是RuntimeException就不用處理拋出例外，預設有throws會處理(前面有提到預設throws)。
 
 以下程式碼會編譯錯誤，因為func1()沒有處理func2()拋出的IOException。
 {% highlight java linenos %}
@@ -520,12 +511,12 @@ func2 finally
 
 建議繼承RuntimeException，因為不會強制一定要處理例外。
 
-### message原理
-
+### 例外原始碼
 以下語法會呼叫一個參數(message)建構子
-```
+{% highlight java linenos %}
 new MyNullException("錯誤訊息")
-```
+{% endhighlight %}
+
 
 呼叫父類別一個參數(message)建構子
 {% highlight java linenos %}
@@ -547,7 +538,7 @@ public Throwable(String message) {
 {% endhighlight %}
 
 ### 繼承RuntimeException
-main()方法不用throws Exception
+main()方法不用throws Exception，會用預設的throws。
 
 {% highlight java linenos %}
 package exception;
@@ -573,7 +564,7 @@ Exception in thread "main" exception.MyNullException: 自訂NullException
 ### 繼承Exception
 繼承Exception，強制要處理例外，方式為補捉try-catch，或者throws Exception。
 
-main()方法要throws Exception，不然會產生編譯時期例外(如以下文字)，無法編譯。
+main()方法要throws Exception，不然會產生編譯例外(如以下文字)，無法編譯。
 
 Unhandled exception: exception.MyNullException
 

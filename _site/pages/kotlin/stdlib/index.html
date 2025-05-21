@@ -1788,6 +1788,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/intellij/" data-nav-link> Intellj快速鍵</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/kotlin/type/" data-nav-link> 變數與基本資料類型</a>
         
             
@@ -1810,13 +1817,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/null/" data-nav-link> Null</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/string/" data-nav-link> String函式</a>
         
             
         </li>
@@ -1853,6 +1853,26 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 函式庫 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/string/" data-nav-link> String函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/kotlin/stdlib/" data-nav-link> 常用函式庫</a>
+        
+            
+                <ul><li><a href="#取出亂數" data-nav-link " >取出亂數</a></li></ul>
+
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 集合 </a><ul>
 	
 	
@@ -1879,6 +1899,23 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/map/" data-nav-link> Map,MutableMap</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 類別與物件 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/field/" data-nav-link> 屬性</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/constructor/" data-nav-link> 建構函式</a>
         
             
         </li></ul></li></ul></li>
@@ -2399,7 +2436,19 @@
                         <h1 id="/pages/kotlin/stdlib">常用函式庫</h1>
                     
 
-                    
+                    <h2 id="取出亂數">取出亂數</h2>
+<ul>
+  <li><a href="/pages/kotlin/list/">List</a></li>
+</ul>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">randomId</span> <span class="p">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">..</span> <span class="mi">100</span><span class="p">).</span><span class="nf">shuffled</span><span class="p">().</span><span class="nf">first</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>shuffled()傳回List，first()取出List中的第一個元素。</p>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2462,7 +2511,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/kotlin/string" class="navigation navigation-prev navigation-unique" aria-label="Previous page: String函式">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/kotlin/array" class="navigation navigation-next navigation-unique" aria-label="Next page: Array">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -2580,7 +2639,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-21 16:27:46 +0800"
+        "time": "2025-05-22 00:20:29 +0800"
     },
     "basePath": "",
     "book": {

@@ -109,12 +109,13 @@ val a2 = arrayOf<Int>()
 
 想不出為什麼可以建立空的array，因為陣列是一個固定大小的陣列，建立空的陣列也沒辦法新增。
 
-## 陣列轉List
+## 陣列相關方法
+### 陣列轉List
 {% highlight kotlin linenos %}
 names.asList()
 {% endhighlight %}
 
-## 安全取值
+### 安全取值
 get(索引)可以取得元素的值，但搭配以下二種更安全。
 
 語法
@@ -138,7 +139,7 @@ no data
 no data
 ```
 
-## 索引取值
+### 索引取值
 語法
 ```
 ${變數[索引]}
@@ -159,7 +160,7 @@ Kevin
 Lucy
 ```
 
-## 修改
+### 修改
 {% highlight kotlin linenos %}
 val names = arrayOf("Tom","Kevin","Lucy")
 names[0] = "Julien"
@@ -176,7 +177,7 @@ println("Length of Julien:${names[0].length}")
 Length of Julien:6
 ```
 
-## first()
+### first()
 取出第一個元素。
 
 {% highlight kotlin linenos %}
@@ -186,7 +187,8 @@ println("first of elements: ${names.first()}")
 ```
 first of elements: Tom
 ```
-## last()
+
+### last()
 取出最後一個元素。
 
 {% highlight kotlin linenos %}
@@ -197,7 +199,7 @@ println("last of elements:${names.last()}")
 last of elements:Lucy
 ```
 
-## size
+### size
 {% highlight kotlin linenos %}
 val names = arrayOf("Tom","Kevin","Lucy")
 println("names elements:${names.size}")
@@ -206,7 +208,7 @@ println("names elements:${names.size}")
 names elements:3
 ```
 
-## indexOf
+### indexOf
 搜尋在第幾個索引，找不到傳回-1
 {% highlight kotlin linenos %}
 val namelist = listOf<String>("Mary", "Amy", "Jery")
@@ -216,7 +218,7 @@ println("search index = ${namelist.indexOf("Amy")}")
 search index = 1
 ```
 
-## contains
+### contains
 {% highlight kotlin linenos %}
 val names = arrayOf("Tom","Kevin","Lucy")
 println("array contains = ${names.contains("Tom")}")
@@ -225,7 +227,7 @@ println("array contains = ${names.contains("Tom")}")
 array contains = true
 ```
 
-## in 
+### in 
 與contains功能一樣，都有包含的意思。
 {% highlight kotlin linenos %}
 val names = arrayOf("Tom","Kevin","Lucy")
@@ -237,8 +239,6 @@ true
 
 ## 遍歷集合
 for裡面的i變數，前面不會有val或var，也不會有變數類型，只要記住以下3種for即可。
-
-IntelliJ快速鍵: 集合變數.for
 
 ### for
 {% highlight kotlin linenos %}

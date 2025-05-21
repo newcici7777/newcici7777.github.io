@@ -20,12 +20,3 @@ cmd + alt + L
 ## 操作介面文字大小
 ![img]({{site.imgurl}}/android/android_studio_fontsize.png)
 
-## for快速鍵
-變數.for
-{% highlight kotlin linenos %}
-var s = "asd"
-// s.for，就會有迴圈的指令
-for (c in s) {
-    println(c)
-}
-{% endhighlight %}

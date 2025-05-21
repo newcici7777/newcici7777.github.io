@@ -1788,6 +1788,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/intellij/" data-nav-link> Intellj快速鍵</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/kotlin/type/" data-nav-link> 變數與基本資料類型</a>
         
             
@@ -1810,13 +1817,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/null/" data-nav-link> Null</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/string/" data-nav-link> String函式</a>
         
             
         </li>
@@ -1850,8 +1850,25 @@
     	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
         
             
-                <ul><li><a href="#lambda參數與傳回值" data-nav-link " >Lambda參數與傳回值</a><ul><li><a href="#let" data-nav-link " >let</a></li><li><a href="#run" data-nav-link " >run</a></li><li><a href="#with" data-nav-link " >with</a></li><li><a href="#also" data-nav-link " >also</a></li><li><a href="#apply" data-nav-link " >apply</a></li></ul></li><li><a href="#用法" data-nav-link " >用法</a><ul><li><a href="#let與null" data-nav-link " >let與null</a></li><li><a href="#run與函式參考" data-nav-link " >run與函式參考</a></li></ul></li><li><a href="#其它" data-nav-link " >其它</a><ul><li><a href="#takeif" data-nav-link " >takeIf</a></li><li><a href="#takeunless" data-nav-link " >takeUnless</a></li></ul></li></ul>
+                <ul><li><a href="#lambda參數與傳回值" data-nav-link " >Lambda參數與傳回值</a><ul><li><a href="#let" data-nav-link " >let</a></li><li><a href="#run" data-nav-link " >run</a></li><li><a href="#with" data-nav-link " >with</a></li><li><a href="#also" data-nav-link " >also</a></li><li><a href="#apply" data-nav-link " >apply</a></li></ul></li><li><a href="#用法" data-nav-link " >用法</a><ul><li><a href="#let與null" data-nav-link " >let與null</a></li><li><a href="#also與null" data-nav-link " >also與null</a></li><li><a href="#run與函式參考" data-nav-link " >run與函式參考</a></li></ul></li><li><a href="#其它" data-nav-link " >其它</a><ul><li><a href="#takeif" data-nav-link " >takeIf</a></li><li><a href="#takeunless" data-nav-link " >takeUnless</a></li></ul></li></ul>
 
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 函式庫 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/string/" data-nav-link> String函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/stdlib/" data-nav-link> 常用函式庫</a>
+        
             
         </li></ul></li>
 	
@@ -1882,6 +1899,23 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/map/" data-nav-link> Map,MutableMap</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 類別與物件 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/field/" data-nav-link> 屬性</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/constructor/" data-nav-link> 建構函式</a>
         
             
         </li></ul></li></ul></li>
@@ -2627,7 +2661,7 @@ class java.io.File (Kotlin reflection is not available)
       <td style="text-align: left">also</td>
       <td style="text-align: left">it</td>
       <td style="text-align: left">呼叫它的物件</td>
-      <td style="text-align: left">鏈式呼叫（Method chaining）</td>
+      <td style="text-align: left">鏈式呼叫（Method chaining）對同一個物件進行一系列的操作</td>
     </tr>
     <tr>
       <td style="text-align: left">apply</td>
@@ -2664,7 +2698,7 @@ class java.io.File (Kotlin reflection is not available)
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>鏈式呼叫</p>
+<p>對同一個物件進行一系列的操作。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2783,6 +2817,28 @@ java程式設計
 =================
 Your msg is Hello World!
 </code></pre></div></div>
+
+<h3 id="also與null">also與null</h3>
+<p>配合安全呼叫問號?，若file為空值，後面的also就不會再執行了。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="n">file</span><span class="o">?.</span><span class="nf">also</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"file size = ${it.length()}"</span><span class="p">)</span>
+<span class="p">}.</span><span class="nf">also</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"file path = ${it.path}"</span><span class="p">)</span>
+<span class="p">}.</span><span class="nf">also</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"file content= ${it.readText()}"</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 <h3 id="run與函式參考">run與函式參考</h3>
 <p>鏈式呼叫與函式參考二者結合，都會把Lambda最後一行，傳到下一個函式中，最後把showMsg2()的結果印出。</p>
 
@@ -2824,6 +2880,7 @@ Your msg is Hello World!
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>String is too long
 </code></pre></div></div>
+
 <h2 id="其它">其它</h2>
 <p>以下為有條件的Lambda</p>
 <h3 id="takeif">takeIf</h3>
@@ -2940,7 +2997,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/kotlin/array" class="navigation navigation-next navigation-unique" aria-label="Next page: Array">
+                        <a href="/pages/kotlin/string" class="navigation navigation-next navigation-unique" aria-label="Next page: String函式">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3060,7 +3117,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-21 16:27:46 +0800"
+        "time": "2025-05-22 00:20:29 +0800"
     },
     "basePath": "",
     "book": {

@@ -3,34 +3,10 @@ title: 變數與基本資料類型
 date: 2025-05-12
 keywords: kotlin, val, var, const, type
 ---
-## Decompile轉碼後的java
-按2次shift鍵，輸入show kotlin bytecode 
-![img]({{site.imgurl}}/kotlin/bytecode.png)
-
-按下「Decompile」按鈕，可以看到轉碼過後的java程式碼。
-![img]({{site.imgurl}}/kotlin/bytecode2.png)
-
 ## 印出
 {% highlight kotlin linenos %}
 println()
 {% endhighlight %}
-
-## IntelliJ快速鍵
-{% highlight kotlin linenos %}
-var s1 = "871"
-{% endhighlight %}
-```
-變數.屬性.sout
-s1.length.sout
-```
-
-{% highlight kotlin linenos %}
-var s1 = "871"
-// s1.length.sout
-println(s1.length)
-{% endhighlight %}
-
-IntelliJ快速鍵: 集合變數.for
 
 ## 結尾不用分號;
 每一段程式碼後面不用加上分號;
@@ -69,6 +45,16 @@ Any 是kotlin中所有類別的根
 
 ## 基本資料類型
 基本資料類型String, Int, Double, Float, Long, Short, Char, Byte, Boolean，字首全部大寫。
+
+Kotlin的基本資料「類型」，已經是類別，所以稱為"類型"。
+
+而Java的基本資料「型態」，int, double, float, boolean, char, short, long不是類別，所以稱為"型態"。
+
+Java使用拆箱、封箱的方式，把基本資料型態轉成類別Integer, Double, Float, Boolean ...等等。
+
+因為Momery Model記憶體佈局的問題，物件會占用記憶體空間，所以Java的基本資料型態才沒設成類別。
+
+而Kotlin在轉成Java程式碼，會把Int, Double, Float, Long, Char, Boolean轉成Java基本資料「型態」。
 
 ### 變數類型
 定義變數的類型的方式，變數後面一個冒號，加上一個空白，接下來是類型。

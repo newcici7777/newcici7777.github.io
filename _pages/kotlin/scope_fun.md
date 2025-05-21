@@ -118,7 +118,7 @@ Lambda參數為呼叫Lambda函式(let, run, with, also, apply)的物件。
 |let  |it  |最後一行決定|null安全呼叫、修改內容|
 |run  |this|最後一行決定|運算、判斷true或false、函式參考|
 |with |this|最後一行決定|與run功能相同，但沒有函式參考|
-|also |it  |呼叫它的物件|鏈式呼叫（Method chaining）|
+|also |it  |呼叫它的物件|鏈式呼叫（Method chaining）對同一個物件進行一系列的操作|
 |apply|this|呼叫它的物件|初始化、config設定|
 
 初始化、config設定
@@ -136,7 +136,7 @@ val lines = file.let {
 }
 {% endhighlight %}
 
-鏈式呼叫
+對同一個物件進行一系列的操作。
 {% highlight kotlin linenos %}
 file.also {
     println("file size = ${it.length()}")
@@ -211,6 +211,19 @@ null data
 =================
 Your msg is Hello World!
 ```
+
+### also與null
+配合安全呼叫問號?，若file為空值，後面的also就不會再執行了。
+{% highlight kotlin linenos %}
+file?.also {
+    println("file size = ${it.length()}")
+}.also {
+    println("file path = ${it.path}")
+}.also {
+    println("file content= ${it.readText()}")
+}
+{% endhighlight %}
+
 ### run與函式參考
 鏈式呼叫與函式參考二者結合，都會把Lambda最後一行，傳到下一個函式中，最後把showMsg2()的結果印出。
 {% highlight kotlin linenos %}
@@ -234,6 +247,7 @@ fun showMsg2(isLong: Boolean): String {
 ```
 String is too long
 ```
+
 ## 其它
 以下為有條件的Lambda
 ### takeIf

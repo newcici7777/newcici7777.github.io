@@ -81,7 +81,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |callback|回呼函式|回調函數|
 |return|函式傳回|函數返回|
 |Function Call|呼叫函式|函數調用|
-|Function caller|函式接收者|函數調用者|
+|Function caller|函式呼叫者|函數調用者|
 
 ## 指標相關
 
@@ -209,4 +209,4 @@ struct|結構|結構體|
 |Runtime Exception|執行時期錯誤|運行時期錯誤|
 |Method chaining|鏈式呼叫|鏈式調用|
 |Method Calls|呼叫方法|函數調用|
-|Method caller|函式接收者|調用者|
+|Method caller|函式呼叫者|調用者|
