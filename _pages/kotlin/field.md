@@ -17,7 +17,7 @@ class 類別名 {
   var 屬性名: 屬性類型 = 初始值
   val 屬性名: 屬性類型 = 初始值
 
-  // 屬性是空值類型，可指派空值
+  // 屬性是空值類型，可指派空值，空值類型是var，因為要修改null值
   var 屬性名: 屬性類型? = null
 }
 ```
@@ -48,7 +48,7 @@ class Student {
 ### NotNull與checkNotNullParameter()
 看產生的java檔，[Decompile轉成Java檔][1]
 
-可以發現自動產生set()、get()，\@NotNull是kotlin的Annotation，目的是檢查屬性、傳回值、參數是否為null，Annotation的作用在於檢查，發現是null，產生錯誤。
+可以發現自動產生getName()、setName()，\@NotNull是kotlin的Annotation，目的是檢查屬性、傳回值、參數是否為null，Annotation的作用在於檢查，發現是null，產生編譯例外。
 
 checkNotNullParameter()方法是檢查是否為空值。
 {% highlight java linenos %}
@@ -62,6 +62,7 @@ public final class Student {
    }
 
    public final void setName(@NotNull String var1) {
+      // checkNotNullParameter()
       Intrinsics.checkNotNullParameter(var1, "<set-?>");
       this.name = var1;
    }
@@ -77,7 +78,11 @@ val 變數 = 類別名()
 
 建立物件，並把物件指派給student變數。
 {% highlight kotlin linenos %}
+class Student {
+    var name = "Alice"
+}
 fun main() {
+    // 建立物件
     var student = Student()
 }
 {% endhighlight %}
@@ -85,9 +90,33 @@ fun main() {
 ### val物件變數
 此處的val並不是不能修改物件的屬性，而是不能再把val物件變數指向其它物件。
 
-val物件變數，可以修改物件的屬性。
+{% highlight kotlin linenos %}
+class Student {
+    var name = "Alice"
+}
+fun main() {
+    // val物件變數
+    val student2 = Student()
+    // 以下會出錯 因為Val cannot be reassigned
+    student2 = Student()
+}
+{% endhighlight %}
 
-### 重設屬性為Bill
+val物件變數，可以修改物件的屬性，以下程式碼把name指派新的值。
+{% highlight kotlin linenos %}
+class Student {
+    var name = "Alice"
+}
+fun main() {
+    val student2 = Student()
+    student2.name = "Doris"
+    println(student2.name)
+}
+{% endhighlight %}
+```
+Doris
+```
+### 修改屬性為Bill
 {% highlight kotlin linenos %}
 class Student {
     var name = "Alice"
@@ -151,12 +180,8 @@ public final class Student {
 ```
 var 變數: 類型 = 初始值
     get() {
-    	// 好多行
-    	// .
-    	// .
-    	// .
-    	// 好多行
-    	// 最後一行是回傳值
+    	// 要記得加上return
+    	return 回傳值
     }
 ```
 
@@ -167,6 +192,18 @@ var 變數: 類型 = 初始值
 ```
 
 覆寫get()方法，field代表name，把name轉成全大寫。
+
+覆寫語法1
+{% highlight kotlin linenos %}
+class Student {
+    var name: String? = null
+        get() {
+            return field?.uppercase()
+        }        
+}
+{% endhighlight %}
+
+覆寫語法2
 {% highlight kotlin linenos %}
 class Student {
     var name: String? = null
@@ -179,11 +216,6 @@ class Student {
 ```
 var 變數: 類型 = 初始值
     set(value) {
-    	// 好多行
-    	// .
-    	// .
-    	// .
-    	// 好多行
     	field = value    
     }
 ```
@@ -199,8 +231,21 @@ class Student {
 }
 {% endhighlight %}
 
+## 覆寫可單獨只寫set()或get()
+不用同時覆寫set()與get()
+
+以下只覆寫set()
+{% highlight kotlin linenos %}
+class Student {
+    var name: String? = null
+        set(value) {
+            field = value?.trim()
+        }
+}
+{% endhighlight %}
+
 ## set()只能用field
-value指派給屬性名(例如name)，程式碼就會進入無限迴圈。
+value參數指派給屬性名(例如name)，程式碼就會進入無限迴圈。
 {% highlight kotlin linenos %}
 class Student {
     var name: String? = null
@@ -253,6 +298,41 @@ fun main() {
 ```
 BILL
 22
+```
+
+## init屬性初始化
+以下這行不能編譯成功，Property must be initialized or be abstract
+
+屬性必須要初始化。
+{% highlight kotlin linenos %}
+class Dog {
+    val name: String
+}
+{% endhighlight %}
+
+最優解是以下這種。
+{% highlight kotlin linenos %}
+class Dog {
+    val name: String = "小白"
+}
+{% endhighlight %}
+
+使用init\{\}，初始化函式，也可以初始化屬性的值，並且可以做其它事情。
+{% highlight kotlin linenos %}
+class Dog {
+    val name: String
+
+    init {
+        name = "小白"
+		println(name)
+    }
+}
+fun main() {
+    val dog = Dog()
+}
+{% endhighlight %}
+```
+小白
 ```
 
 [1]: {% link _pages/kotlin/intellij.md %}

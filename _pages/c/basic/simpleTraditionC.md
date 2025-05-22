@@ -206,7 +206,15 @@ struct|結構|結構體|
 |implements|實作|實現|
 |Exception|例外|異常|
 |catch|補捉|補獲|
-|Runtime Exception|執行時期錯誤|運行時期錯誤|
+|Runtime Exception|執行時錯誤|運行時期錯誤|
 |Method chaining|鏈式呼叫|鏈式調用|
 |Method Calls|呼叫方法|函數調用|
 |Method caller|函式呼叫者|調用者|
+
+## Kotlin
+
+|英文|台灣|大陸|
+|:--:|:--:|:--:|
+|constructor|建構函式|構造函式|
+|Primary constructor|主要建構函式|主構造函式|
+|Secondary constructor|次要建構函式|次構造函式|

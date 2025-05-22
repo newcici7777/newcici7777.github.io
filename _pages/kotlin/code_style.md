@@ -359,13 +359,14 @@ private val ICON = IconLoader.getIcon("/icons/kotlin.png")
 {% endhighlight %}
 
 ## 列舉
-將枚舉中的常數放在單獨的行上時，它們之間不需要空白行，但它們定義主體時除外。
+將枚舉中的常數放在單獨的行上時，它們之間不需要空白行，但它們有主體body(大括號\{\}包起來的部分)時，需要空白行隔開。
 {% highlight kotlin linenos %}
 enum class Answer {
     YES,
     NO,
 
     MAYBE {
+        // 主體body
         override fun toString() = """¯\_(ツ)_/¯"""
     }
 }

@@ -3058,7 +3058,7 @@
 </figure>
 
 <h2 id="列舉">列舉</h2>
-<p>將枚舉中的常數放在單獨的行上時，它們之間不需要空白行，但它們定義主體時除外。</p>
+<p>將枚舉中的常數放在單獨的行上時，它們之間不需要空白行，但它們有主體body(大括號{}包起來的部分)時，需要空白行隔開。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3069,11 +3069,13 @@
 6
 7
 8
+9
 </pre></td><td class="code"><pre><span class="k">enum</span> <span class="kd">class</span> <span class="nc">Answer</span> <span class="p">{</span>
     <span class="nc">YES</span><span class="p">,</span>
     <span class="nc">NO</span><span class="p">,</span>
 
     <span class="nc">MAYBE</span> <span class="p">{</span>
+        <span class="c1">// 主體body</span>
         <span class="k">override</span> <span class="k">fun</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">=</span> <span class="s">"""¯\_(ツ)_/¯"""</span>
     <span class="p">}</span>
 <span class="p">}</span>
@@ -3269,7 +3271,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-22 00:20:29 +0800"
+        "time": "2025-05-22 16:26:55 +0800"
     },
     "basePath": "",
     "book": {
