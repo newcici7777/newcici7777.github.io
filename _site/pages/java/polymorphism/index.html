@@ -1367,6 +1367,9 @@
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Java </a><ul>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 基本知識 </a><ul>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/java/format/" data-nav-link> Java程式碼格式</a>
         
@@ -1374,11 +1377,46 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/constructor/" data-nav-link> 建構子</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/memory_model/" data-nav-link> Java Memory Model</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/wrap/" data-nav-link> 基本型態與Wrapper Classes</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/obj_layout_core/" data-nav-link> Java Object Layout</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/callby_value/" data-nav-link> Call by value</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="active" data-nav-item>
     	<a href="/pages/java/polymorphism/" data-nav-link> 多型</a>
         
             
-                <ul><li><a href="#向上轉型物件upcasting-object" data-nav-link " >向上轉型物件Upcasting object</a><ul><li><a href="#建立向上轉型物件方式1" data-nav-link " >建立向上轉型物件，方式1</a></li><li><a href="#建立向上轉型物件方式2" data-nav-link " >建立向上轉型物件，方式2</a></li><li><a href="#建立向上轉型物件方式3" data-nav-link " >建立向上轉型物件，方式3</a></li></ul></li><li><a href="#向上轉型物件存取範圍" data-nav-link " >向上轉型物件存取範圍</a></li><li><a href="#向上轉型物件不等於父類別" data-nav-link " >向上轉型物件不等於父類別</a></li><li><a href="#向上轉型物件範例1" data-nav-link " >向上轉型物件範例1</a></li><li><a href="#向上轉型物件範例2" data-nav-link " >向上轉型物件範例2</a></li><li><a href="#向下轉型物件" data-nav-link " >向下轉型物件</a><ul><li><a href="#自動轉型" data-nav-link " >自動轉型</a></li><li><a href="#強制轉型" data-nav-link " >強制轉型</a></li><li><a href="#強轉成子類物件" data-nav-link " >強轉成子類物件</a></li></ul></li><li><a href="#多型" data-nav-link " >多型</a></li></ul>
+                <ul><li><a href="#向上轉型物件upcasting-object" data-nav-link " >向上轉型物件Upcasting object</a><ul><li><a href="#建立向上轉型物件方式1" data-nav-link " >建立向上轉型物件，方式1</a></li><li><a href="#建立向上轉型物件方式2" data-nav-link " >建立向上轉型物件，方式2</a></li><li><a href="#建立向上轉型物件方式3" data-nav-link " >建立向上轉型物件，方式3</a></li></ul></li><li><a href="#向上轉型物件存取範圍" data-nav-link " >向上轉型物件存取範圍</a></li><li><a href="#向上轉型物件範例1" data-nav-link " >向上轉型物件範例1</a></li><li><a href="#向上轉型物件範例2" data-nav-link " >向上轉型物件範例2</a></li><li><a href="#向下轉型物件" data-nav-link " >向下轉型物件</a><ul><li><a href="#自動轉型" data-nav-link " >自動轉型</a></li><li><a href="#強制轉型" data-nav-link " >強制轉型</a></li><li><a href="#強轉成子類物件" data-nav-link " >強轉成子類物件</a></li></ul></li><li><a href="#多型" data-nav-link " >多型</a></li></ul>
 
             
         </li>
@@ -1413,20 +1451,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/memory_model/" data-nav-link> Java Memory Model</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/callby_value/" data-nav-link> Call by value</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/static/" data-nav-link> Static</a>
         
             
@@ -1435,13 +1459,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/thread/" data-nav-link> Thread</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/constructor/" data-nav-link> 建構子</a>
         
             
         </li>
@@ -1798,7 +1815,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/type/" data-nav-link> 變數與基本資料類型</a>
+    	<a href="/pages/kotlin/type/" data-nav-link> 變數與基本類型</a>
         
             
         </li>
@@ -2437,9 +2454,9 @@
                     
 
                     <h2 id="向上轉型物件upcasting-object">向上轉型物件Upcasting object</h2>
-<p>使用子類別的建立物件的建構子，「產生出父類別的物件」，稱之為向上轉型物件Upcasting object。</p>
+<p>使用子類別的建構子，建立類型為父類別的物件，稱之為向上轉型物件Upcasting object。</p>
 
-<p>以下的方式，都是產生出向上轉型物件，注意！這裡不是產生子類物件，而是產生「向上轉型物件」。</p>
+<p>以下的方式，都是建立類型為父類別的物件。</p>
 
 <h3 id="建立向上轉型物件方式1">建立向上轉型物件，方式1</h3>
 
@@ -2472,15 +2489,10 @@
 </figure>
 
 <h2 id="向上轉型物件存取範圍">向上轉型物件存取範圍</h2>
-<p>向上轉型物件，無法呼叫子類別自己擁有成員變數與成員方法，只能呼叫子類別繼承的方法與變數，以及子類別「override覆寫」父類別的方法與變數。</p>
-
-<h2 id="向上轉型物件不等於父類別">向上轉型物件不等於父類別</h2>
-<p>由子類別建立的向上轉型物件，不等於父類別。</p>
-
-<p>父類別可以存取自己的成員變數與成員方法，子類別也可以存取自己的成員變數與成員方法，但向上轉型物件無法讀取自己的成員變數與成員方法，因此向上轉型物件不等於父類別也不等於子類別。</p>
+<p>向上轉型物件，無法呼叫子類別方法，但子類別「覆寫父類別的方法」可以呼叫。</p>
 
 <h2 id="向上轉型物件範例1">向上轉型物件範例1</h2>
-<p>以下Parent類別有name與age成員變數，與2個建構子。</p>
+<p>以下Parent類別有name與age屬性，與2個建構子。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2502,8 +2514,9 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>Child類別除了繼承父類，有name與age成員變數，與2個建構子。<br />
-Child類別自己有address成員變數與getAddress()與setAddress()二個成員方法，並非來自繼承得到。</p>
+<p>Child類別繼承父類別，有name與age屬性，與2個建構子。</p>
+
+<p>Child類別有address屬性與getAddress()與setAddress()二個方法，並非來自繼承得到。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2541,7 +2554,7 @@ Child類別自己有address成員變數與getAddress()與setAddress()二個成�
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>upcasting_obj是向上轉型物件，即使是用「子類別的建構子」產生的「父類別物件」，但是upcasting_obj向上轉型物件缺少了address成員變數與getAddress()與setAddress()二個成員方法，但有覆寫的Child(String name)建構子，與覆寫的name成員變數。</p>
+<p>upcasting_obj是向上轉型物件，即使是用「子類別的建構子」產生的「父類別物件」，但是upcasting_obj無法讀取address屬性，也無法呼叫getAddress()、setAddress()二個方法，但有覆寫的Child(String name)建構子。</p>
 
 <p>驗證向上轉型物件擁有繼承來的name變數</p>
 
@@ -2564,7 +2577,7 @@ Child類別自己有address成員變數與getAddress()與setAddress()二個成�
     <span class="c1">// 擁有子類別覆寫的建構子Child(String name)</span>
     <span class="c1">// 擁有繼承來的name變數</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">upcasting_obj</span><span class="o">.</span><span class="na">name</span><span class="o">);</span>
-    <span class="c1">// 以下的都無法呼叫子類別自己擁有的成員變數與成員方法</span>
+    <span class="c1">// 以下的都無法呼叫子類別的屬性與方法</span>
     <span class="c1">//upcasting_obj.setAddress("xxx");</span>
     <span class="c1">//upcasting_obj.getAddress();</span>
     <span class="c1">//System.out.println(upcasting_obj.address);</span>
@@ -2661,7 +2674,7 @@ Child類別自己有address成員變數與getAddress()與setAddress()二個成�
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>建立向上轉型物件，僅能呼叫子類別覆寫父類別的speak()方法，向上轉型物件不能呼叫子類別特有的goChurch(),tombSweeping(),dollFestival()</p>
+<p>建立向上轉型物件，僅能呼叫子類別覆寫父類別的speak()方法，向上轉型物件不能呼叫子類別的goChurch(),tombSweeping(),dollFestival()</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2695,9 +2708,9 @@ speak English.
 <h2 id="向下轉型物件">向下轉型物件</h2>
 <p>將父類別物件向下轉型成子類別。</p>
 
-<p>向上轉型的定義是，使用子類別的建立物件的建構子，「產生出父類別的物件」。</p>
+<p>向上轉型的定義是，使用子類別的建構子，建立類型是父類別的物件。</p>
 
-<p>這次我們將把「產生出父類別的物件」，向下轉型成子類別。</p>
+<p>這次我們把父類別的物件，向下轉型成子類別。</p>
 
 <h3 id="自動轉型">自動轉型</h3>
 <p>由於向上轉型只會有一個父類別，因為每個類別只能繼承一個父類別，因此使用自動轉型。</p>
@@ -2892,7 +2905,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/java/format" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Java程式碼格式">
+                        <a href="/pages/java/callby_value" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Call by value">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -3019,7 +3032,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-22 16:26:55 +0800"
+        "time": "2025-05-23 17:26:12 +0800"
     },
     "basePath": "",
     "book": {

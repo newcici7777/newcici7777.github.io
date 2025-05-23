@@ -4,9 +4,9 @@ date: 2025-04-17
 keywords: Java, polymorphism, Upcasting object, Downcasting object
 ---
 ## 向上轉型物件Upcasting object
-使用子類別的建立物件的建構子，「產生出父類別的物件」，稱之為向上轉型物件Upcasting object。
+使用子類別的建構子，建立類型為父類別的物件，稱之為向上轉型物件Upcasting object。
 
-以下的方式，都是產生出向上轉型物件，注意！這裡不是產生子類物件，而是產生「向上轉型物件」。
+以下的方式，都是建立類型為父類別的物件。
 
 ### 建立向上轉型物件，方式1
 {% highlight java linenos %}
@@ -27,15 +27,10 @@ Parent parent = new Child();
 {% endhighlight %}
 
 ## 向上轉型物件存取範圍
-向上轉型物件，無法呼叫子類別自己擁有成員變數與成員方法，只能呼叫子類別繼承的方法與變數，以及子類別「override覆寫」父類別的方法與變數。
-
-## 向上轉型物件不等於父類別
-由子類別建立的向上轉型物件，不等於父類別。
-
-父類別可以存取自己的成員變數與成員方法，子類別也可以存取自己的成員變數與成員方法，但向上轉型物件無法讀取自己的成員變數與成員方法，因此向上轉型物件不等於父類別也不等於子類別。
+向上轉型物件，無法呼叫子類別方法，但子類別「覆寫父類別的方法」可以呼叫。
 
 ## 向上轉型物件範例1
-以下Parent類別有name與age成員變數，與2個建構子。
+以下Parent類別有name與age屬性，與2個建構子。
 {% highlight java linenos %}
 public class Parent {
   String name;
@@ -47,8 +42,9 @@ public class Parent {
 }
 {% endhighlight %}
 
-Child類別除了繼承父類，有name與age成員變數，與2個建構子。  
-Child類別自己有address成員變數與getAddress()與setAddress()二個成員方法，並非來自繼承得到。
+Child類別繼承父類別，有name與age屬性，與2個建構子。 
+
+Child類別有address屬性與getAddress()與setAddress()二個方法，並非來自繼承得到。
 {% highlight java linenos %}
 public class Child extends Parent{
   String address;
@@ -69,7 +65,7 @@ public class Child extends Parent{
 Parent upcasting_obj = new Child("Alice");
 {% endhighlight %}
 
-upcasting_obj是向上轉型物件，即使是用「子類別的建構子」產生的「父類別物件」，但是upcasting_obj向上轉型物件缺少了address成員變數與getAddress()與setAddress()二個成員方法，但有覆寫的Child(String name)建構子，與覆寫的name成員變數。
+upcasting_obj是向上轉型物件，即使是用「子類別的建構子」產生的「父類別物件」，但是upcasting_obj無法讀取address屬性，也無法呼叫getAddress()、setAddress()二個方法，但有覆寫的Child(String name)建構子。
 
 驗證向上轉型物件擁有繼承來的name變數
 {% highlight java linenos %}
@@ -79,7 +75,7 @@ public class Teest {
     // 擁有子類別覆寫的建構子Child(String name)
     // 擁有繼承來的name變數
     System.out.println(upcasting_obj.name);
-    // 以下的都無法呼叫子類別自己擁有的成員變數與成員方法
+    // 以下的都無法呼叫子類別的屬性與方法
     //upcasting_obj.setAddress("xxx");
     //upcasting_obj.getAddress();
     //System.out.println(upcasting_obj.address);
@@ -137,7 +133,7 @@ public class Japanese extends People{
 }
 {% endhighlight %}
 
-建立向上轉型物件，僅能呼叫子類別覆寫父類別的speak()方法，向上轉型物件不能呼叫子類別特有的goChurch(),tombSweeping(),dollFestival()
+建立向上轉型物件，僅能呼叫子類別覆寫父類別的speak()方法，向上轉型物件不能呼叫子類別的goChurch(),tombSweeping(),dollFestival()
 {% highlight java linenos %}
 public class Test {
   public static void main(String[] args) {
@@ -159,9 +155,9 @@ speak English.
 ## 向下轉型物件
 將父類別物件向下轉型成子類別。
 
-向上轉型的定義是，使用子類別的建立物件的建構子，「產生出父類別的物件」。
+向上轉型的定義是，使用子類別的建構子，建立類型是父類別的物件。
 
-這次我們將把「產生出父類別的物件」，向下轉型成子類別。
+這次我們把父類別的物件，向下轉型成子類別。
 
 ### 自動轉型
 由於向上轉型只會有一個父類別，因為每個類別只能繼承一個父類別，因此使用自動轉型。

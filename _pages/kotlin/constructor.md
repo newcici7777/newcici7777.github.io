@@ -8,7 +8,7 @@ keywords: kotlin, constructor
 建構函式分為主要建構函式(Primary constructor)與次要建構函式(Secondary constructor)。
 
 ## 預設主要建構函式
-constructor()為主要建構函式，與class Student同一行，放在後面，預設建構函式沒有參數。
+constructor()為主要建構函式，與「class 類別名」同一行，放在「類別名」後面，預設建構函式沒有參數。
 
 語法
 ```
@@ -40,17 +40,19 @@ class 類別名 (參數) {
 ## 主要建構函式
 之前在[屬性][1]的文章中提到，val唯讀屬性，不會有set()方法。
 
-可由建構函式設定val屬性的值，在類別主體body也不用再次定義val屬性。
+可由建構函式設定val屬性的值，在類別中也不用再次定義val屬性。
 
 語法，參數可以為var或val，沒有限定只能val。
 ```
 class 類別名 (val 屬性: 類型, var 屬性: 類型, ...) {
+	// 省略類別屬性，移到主要建構函式
 }
 ```
 
 原本程式碼
 {% highlight kotlin linenos %}
 class Cat {
+    // 類別屬性
     val name = ""
 }
 {% endhighlight %}
@@ -127,19 +129,19 @@ fun main() {
 因為無法使用val與var，所以會由以下三種方式搭配次要建構函式。
 
 1. 主要建構函式 + 初始化所有屬性 + 次要建構函式。
-2. 類別主體屬性 + 次要建構函式
+2. 類別屬性 + 次要建構函式
 ```
 class 類別名 {
-  // 類別主體body屬性
+  // 類別屬性
   var 屬性名: 屬性類型 = 初始值
   val 屬性名: 屬性類型 = 初始值
 }
 ```
-3. 主要建構函式屬性 + 類別主體屬性 + 次要建構函式
+3. 主要建構函式屬性 + 類別屬性 + 次要建構函式
 
 Kotlin 的設計原則是：「能用簡單寫法就不要複雜化」！
 
-### 類別主體屬性 + 次要建構函式
+### 類別屬性 + 次要建構函式
 次要建構函式無法修改val的屬性。
 
 若要透過次要建構函式修改屬性，請設為var。
@@ -151,7 +153,7 @@ Kotlin 的設計原則是：「能用簡單寫法就不要複雜化」！
 語法:
 {% highlight kotlin linenos %}
 class 類別名 {
-    // 類別主體屬性
+    // 類別屬性
     var 屬性1: 類型 = 初始值
     var 屬性2: 類型 = 初始值
 
@@ -166,7 +168,7 @@ class 類別名 {
 範例如下:
 {% highlight kotlin linenos %}
 class Cat1 {
-    // 類別主體body定義屬性
+    // 類別屬性
     var name: String = ""
     var age = 0
     var color = ""
@@ -192,7 +194,7 @@ fun main() {
 10
 ```
 
-### 主要建構函式屬性 + 類別主體屬性 + 次要建構函式
+### 主要建構函式屬性 + 類別屬性 + 次要建構函式
 主要建構函式中的屬性可為val。
 
 次要建構函式無法修改val的屬性。
@@ -205,7 +207,7 @@ this(屬性)後面不用有類型。
 {% highlight kotlin linenos %}
 // 主要建構函式屬性 
 class Cat2(val name: String) {
-    // 類別主體屬性
+    // 類別屬性
     var age = 0
     var color = ""
 
@@ -254,13 +256,77 @@ println(cat3.age)
 嘟嘟
 10
 ```
-### 屬性初始化順序
-1. 主要建構函式參數
-2. 類別body屬性
-3. 次要建構函式
-
 ### 個人觀感
 以上所有方式，只有主要建構函式 + 所有屬性預設值，這個方法最優。
 
+## init初始化函式
+
+- [Java匿名程式碼區塊][2]
+
+這部分的知識跟Java匿名程式碼區塊很像，但執行順序不同，Java是先執行程式碼區塊，再執行建構子。
+
+Kotlin是先執行主要建構函式->類別屬性->init初始化函式->次要建構函式。
+
+以下這行不能編譯成功，Property must be initialized or be abstract
+
+屬性必須要初始化。
+{% highlight kotlin linenos %}
+class Dog {
+    val name: String
+}
+{% endhighlight %}
+
+使用init初始化函式，類別中的屬性可以不用給初始值，由init函式初始化屬性，init函式也可以做config的初始化設定。
+{% highlight kotlin linenos %}
+class Dog1 {
+    val name: String
+
+    init {
+    	// 由init函式初始化屬性
+        name = "小白"
+        loadDB()
+    }
+    fun loadDB() {
+        println("DB loading")
+        println("name = $name")
+    }
+}
+fun main() {
+    val dog1 = Dog1()
+}
+{% endhighlight %}
+```
+DB loading
+name = 小白
+```
+
+## 程式碼執行順序
+1. 主要建構函式
+2. 類別屬性
+3. init初始化函式
+4. 次要建構函式
+
+你不能像C++把屬性寫到最後面，會無法讀取到屬性，Kotlin執行順序是由上而下。
+{% highlight kotlin linenos %}
+class Dog1 {
+    init {
+        loadDB()
+    }
+
+    fun loadDB() {
+        println("DB loading")
+        // 無法讀取到屬性
+        println("name = $name")
+    }
+
+    // 屬性寫到最後面
+    val name: String = "小白"
+}
+{% endhighlight %}
+```
+DB loading
+name = null
+```
 
 [1]: {% link _pages/kotlin/field.md %}
+[2]: {% link _pages/java/constructor.md %}

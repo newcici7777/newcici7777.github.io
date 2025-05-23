@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>變數與基本資料類型 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>變數與基本類型 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="keywords" content="kotlin, val, var, const, type" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -1367,11 +1367,49 @@
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Java </a><ul>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 基本知識 </a><ul>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/java/format/" data-nav-link> Java程式碼格式</a>
         
             
         </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/constructor/" data-nav-link> 建構子</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/memory_model/" data-nav-link> Java Memory Model</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/wrap/" data-nav-link> 基本型態與Wrapper Classes</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/obj_layout_core/" data-nav-link> Java Object Layout</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/callby_value/" data-nav-link> Call by value</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="" data-nav-item>
@@ -1410,20 +1448,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/memory_model/" data-nav-link> Java Memory Model</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/callby_value/" data-nav-link> Call by value</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/static/" data-nav-link> Static</a>
         
             
@@ -1432,13 +1456,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/thread/" data-nav-link> Thread</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/constructor/" data-nav-link> 建構子</a>
         
             
         </li>
@@ -1795,10 +1812,10 @@
 	
 	
 	<li class="active" data-nav-item>
-    	<a href="/pages/kotlin/type/" data-nav-link> 變數與基本資料類型</a>
+    	<a href="/pages/kotlin/type/" data-nav-link> 變數與基本類型</a>
         
             
-                <ul><li><a href="#印出" data-nav-link " >印出</a></li><li><a href="#結尾不用分號" data-nav-link " >結尾不用分號;</a></li><li><a href="#val唯讀變數" data-nav-link " >val唯讀變數</a></li><li><a href="#var可變變數" data-nav-link " >var可變變數</a></li><li><a href="#const常數" data-nav-link " >const常數</a></li><li><a href="#unit" data-nav-link " >Unit</a></li><li><a href="#any" data-nav-link " >Any</a></li><li><a href="#基本資料類型" data-nav-link " >基本資料類型</a><ul><li><a href="#變數類型" data-nav-link " >變數類型</a></li><li><a href="#推斷類型" data-nav-link " >推斷類型</a></li><li><a href="#數值類型" data-nav-link " >數值類型</a></li><li><a href="#基本類型轉換" data-nav-link " >基本類型轉換</a></li></ul></li><li><a href="#floatdouble" data-nav-link " >Float,Double</a></li><li><a href="#kotlin沒有自動轉型" data-nav-link " >Kotlin沒有自動轉型</a></li><li><a href="#char" data-nav-link " >Char</a></li><li><a href="#字串模板" data-nav-link " >字串模板</a><ul><li><a href="#印出變數" data-nav-link " >印出變數</a></li><li><a href="#印出運算結果" data-nav-link " >印出運算結果</a></li><li><a href="#印出排板" data-nav-link " >印出排板</a></li></ul></li></ul>
+                <ul><li><a href="#印出" data-nav-link " >印出</a></li><li><a href="#結尾不用分號" data-nav-link " >結尾不用分號;</a></li><li><a href="#val唯讀變數" data-nav-link " >val唯讀變數</a></li><li><a href="#var可變變數" data-nav-link " >var可變變數</a></li><li><a href="#const常數" data-nav-link " >const常數</a></li><li><a href="#unit" data-nav-link " >Unit</a></li><li><a href="#any" data-nav-link " >Any</a></li><li><a href="#基本類型" data-nav-link " >基本類型</a><ul><li><a href="#變數類型" data-nav-link " >變數類型</a></li><li><a href="#推斷類型" data-nav-link " >推斷類型</a></li><li><a href="#數值類型" data-nav-link " >數值類型</a></li><li><a href="#基本類型轉換" data-nav-link " >基本類型轉換</a></li></ul></li><li><a href="#floatdouble" data-nav-link " >Float,Double</a></li><li><a href="#kotlin沒有自動轉型" data-nav-link " >Kotlin沒有自動轉型</a></li><li><a href="#char" data-nav-link " >Char</a></li><li><a href="#字串模板" data-nav-link " >字串模板</a><ul><li><a href="#印出變數" data-nav-link " >印出變數</a></li><li><a href="#印出運算結果" data-nav-link " >印出運算結果</a></li><li><a href="#印出排板" data-nav-link " >印出排板</a></li></ul></li></ul>
 
             
         </li>
@@ -2420,7 +2437,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >變數與基本資料類型</a>
+                            <a href="." >變數與基本類型</a>
                         
                     </h1>
                 </div>
@@ -2433,7 +2450,7 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/kotlin/type">變數與基本資料類型</h1>
+                        <h1 id="/pages/kotlin/type">變數與基本類型</h1>
                     
 
                     <h2 id="印出">印出</h2>
@@ -2472,7 +2489,7 @@
 </figure>
 
 <h2 id="const常數">const常數</h2>
-<p>只能在函式之外宣告並且定義，要寫在main()主函式外面，const常數只能使用基本資料類型String, Int, Double, Float, Long, Short, Char, Byte, Boolean</p>
+<p>只能在函式之外宣告並且定義，要寫在main()主函式外面，const常數只能使用基本類型String, Int, Double, Float, Long, Short, Char, Byte, Boolean</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2494,18 +2511,14 @@
 <h2 id="any">Any</h2>
 <p>Any 是kotlin中所有類別的根</p>
 
-<h2 id="基本資料類型">基本資料類型</h2>
-<p>基本資料類型String, Int, Double, Float, Long, Short, Char, Byte, Boolean，字首全部大寫。</p>
+<h2 id="基本類型">基本類型</h2>
+<ul>
+  <li><a href="/pages/java/wrap/">Java 基本型態</a></li>
+</ul>
 
-<p>Kotlin的基本資料「類型」，已經是類別，所以稱為”類型”。</p>
+<p>基本類型String, Int, Double, Float, Long, Short, Char, Byte, Boolean，字首全部大寫。</p>
 
-<p>而Java的基本資料「型態」，int, double, float, boolean, char, short, long不是類別，所以稱為”型態”。</p>
-
-<p>Java使用拆箱、封箱的方式，把基本資料型態轉成類別Integer, Double, Float, Boolean …等等。</p>
-
-<p>因為Momery Model記憶體佈局的問題，物件會占用記憶體空間，所以Java的基本資料型態才沒設成類別。</p>
-
-<p>而Kotlin在轉成Java程式碼，會把Int, Double, Float, Long, Char, Boolean轉成Java基本資料「型態」。</p>
+<p>Kotlin的基本類型，是類別。</p>
 
 <h3 id="變數類型">變數類型</h3>
 <p>定義變數的類型的方式，變數後面一個冒號，加上一個空白，接下來是類型。</p>
@@ -2872,6 +2885,7 @@ println(name)
 for(name in names)
 println(name)
 </code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3062,7 +3076,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-22 16:26:55 +0800"
+        "time": "2025-05-23 17:26:12 +0800"
     },
     "basePath": "",
     "book": {

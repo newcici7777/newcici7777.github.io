@@ -1,5 +1,5 @@
 ---
-title: 變數與基本資料類型
+title: 變數與基本類型
 date: 2025-05-12
 keywords: kotlin, val, var, const, type
 ---
@@ -27,7 +27,7 @@ println(str)
 {% endhighlight %}
 
 ## const常數
-只能在函式之外宣告並且定義，要寫在main()主函式外面，const常數只能使用基本資料類型String, Int, Double, Float, Long, Short, Char, Byte, Boolean
+只能在函式之外宣告並且定義，要寫在main()主函式外面，const常數只能使用基本類型String, Int, Double, Float, Long, Short, Char, Byte, Boolean
 {% highlight kotlin linenos %}
 const val MAX = 100
 fun main() {
@@ -43,18 +43,12 @@ Unit 物件，等同java的void
 ## Any
 Any 是kotlin中所有類別的根
 
-## 基本資料類型
-基本資料類型String, Int, Double, Float, Long, Short, Char, Byte, Boolean，字首全部大寫。
+## 基本類型
+- [Java 基本型態][1]
 
-Kotlin的基本資料「類型」，已經是類別，所以稱為"類型"。
+基本類型String, Int, Double, Float, Long, Short, Char, Byte, Boolean，字首全部大寫。
 
-而Java的基本資料「型態」，int, double, float, boolean, char, short, long不是類別，所以稱為"型態"。
-
-Java使用拆箱、封箱的方式，把基本資料型態轉成類別Integer, Double, Float, Boolean ...等等。
-
-因為Momery Model記憶體佈局的問題，物件會占用記憶體空間，所以Java的基本資料型態才沒設成類別。
-
-而Kotlin在轉成Java程式碼，會把Int, Double, Float, Long, Char, Boolean轉成Java基本資料「型態」。
+Kotlin的基本類型，是類別。
 
 ### 變數類型
 定義變數的類型的方式，變數後面一個冒號，加上一個空白，接下來是類型。
@@ -285,3 +279,5 @@ val names = arrayOf("Tome","GG")
 for(name in names)
 println(name)
 ```
+
+[1]: {% link _pages/java/wrap.md %}

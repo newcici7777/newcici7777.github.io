@@ -46,3 +46,10 @@ Mac: cmd + alt + t
 
 ## 建立module
 ![img]({{site.imgurl}}/kotlin/module.png)
+
+## sdk 設定
+![img]({{site.imgurl}}/java/sdk1.png)
+
+![img]({{site.imgurl}}/java/sdk2.png)
+
+![img]({{site.imgurl}}/java/sdk3.png)

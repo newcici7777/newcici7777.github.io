@@ -3,15 +3,15 @@ title: 屬性
 date: 2025-05-21
 keywords: kotlin, field, get, set
 ---
-## 類別主體body
-類別主體被\{\}花括號包住。
+## 類別body
+類別被\{\}花括號包住。
 ```
 class 類別名 {
-  // 類別主體body
+  // 類別body
 }
 ```
 ## 屬性位置
-屬性是放在類別主體中。
+屬性是放在類別中。
 ```
 class 類別名 {
   var 屬性名: 屬性類型 = 初始值
@@ -298,41 +298,6 @@ fun main() {
 ```
 BILL
 22
-```
-
-## init屬性初始化
-以下這行不能編譯成功，Property must be initialized or be abstract
-
-屬性必須要初始化。
-{% highlight kotlin linenos %}
-class Dog {
-    val name: String
-}
-{% endhighlight %}
-
-最優解是以下這種。
-{% highlight kotlin linenos %}
-class Dog {
-    val name: String = "小白"
-}
-{% endhighlight %}
-
-使用init\{\}，初始化函式，也可以初始化屬性的值，並且可以做其它事情。
-{% highlight kotlin linenos %}
-class Dog {
-    val name: String
-
-    init {
-        name = "小白"
-		println(name)
-    }
-}
-fun main() {
-    val dog = Dog()
-}
-{% endhighlight %}
-```
-小白
 ```
 
 [1]: {% link _pages/kotlin/intellij.md %}
