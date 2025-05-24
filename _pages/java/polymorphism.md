@@ -1,240 +1,140 @@
 ---
 title: 多型
 date: 2025-04-17
-keywords: Java, polymorphism, Upcasting object, Downcasting object
+keywords: Java, polymorphism, vtable
 ---
-## 向上轉型物件Upcasting object
-使用子類別的建構子，建立類型為父類別的物件，稱之為向上轉型物件Upcasting object。
+## 編譯時類型 與 執行時類型
+編譯時類型，英文是Compile-time type。
 
-以下的方式，都是建立類型為父類別的物件。
+執行時類型，英文是Runtime type。
 
-### 建立向上轉型物件，方式1
+什麼是編譯時類型？什麼是執行時類型？
+
+下方的程式碼，等號左邊是編譯時類型，等號右邊是執行時類型。
+
 {% highlight java linenos %}
-Parent parent;
-Child child = new Child();
-parent = child;
-{% endhighlight %}
-
-### 建立向上轉型物件，方式2
-{% highlight java linenos %}
-Parent parent;
-parent = new Child();
-{% endhighlight %}
-
-### 建立向上轉型物件，方式3
-{% highlight java linenos %}
+編譯時類型     =  執行時類型
 Parent parent = new Child();
 {% endhighlight %}
 
-## 向上轉型物件存取範圍
-向上轉型物件，無法呼叫子類別方法，但子類別「覆寫父類別的方法」可以呼叫。
+說白話一點就是，雖然類型是父類別，但實際上指向的是子類別物件。
 
-## 向上轉型物件範例1
-以下Parent類別有name與age屬性，與2個建構子。
+## Memory Layout
+Prerequisites:
+
+- [Object Layout core][1]
+
+- [基本型態與Wrapper Classes][2]
+
+下面的程式碼有Animal、Dog，Dog繼承Animal。
 {% highlight java linenos %}
-public class Parent {
-  String name;
-  int age;
-  Parent(){}
-  Parent(String name) {
-    this.name = name;
+class Animal {
+  int i = 10;  // 父類欄位
+  void speak() { 
+    System.out.println(i); 
   }
+}
+
+class Dog extends Animal {
+  int i = 5;  // 子類同名欄位
 }
 {% endhighlight %}
 
-Child類別繼承父類別，有name與age屬性，與2個建構子。 
+Dog Memory Layout如下:
+```
+記憶體開始位置/ 佔記憶體大小/ 型別/ 變數/ 存放的值
+OFF  SZ   TYPE DESCRIPTION               VALUE
+  0   8        (object header: mark)     0x0000000000000001 (non-biasable; age: 0)
+  8   4        (object header: class)    0x010033f8
+ 12   4    int Animal.i                  10
+ 16   4    int Dog.i                     5
+ 20   4        (object alignment gap)    
+物件大小Instance size: 24 bytes
 
-Child類別有address屬性與getAddress()與setAddress()二個方法，並非來自繼承得到。
+```
+
+發現Dog物件中有二個變數，一個變數值為10，來自父類別Animal.i，另一個變數值為5是自己的Dog.i。
+```
+ 12   4    int Animal.i                  10
+ 16   4    int Dog.i                     5
+```
+
+## vtable
+在Memory Layout中，從8byte開始到11byte結束，佔了4個byte記憶體空間，存放的是vtable的記憶體位址，什麼是vtable？
+
+儲存Dog物件的所有方法。
+
+```
+  8   4        (object header: class)    0x010033f8
+```
+
+從下面可以發現，Dog有三個方法，分別是equals(), hashCode(), speak()，下面列出每個方法的父類別。
+```
+vtable for Dog:
+[0] Object.equals()@addr1    # 繼承自 Object
+[1] Object.hashCode()@addr2  # 繼承自 Object
+[2] Animal.speak()@addr3     # 繼承自 Animal
+```
+
+由於Dog沒有覆寫父類別的speak()方法，因為在vtable中，speak()方法是來自父類別Animal。
+
+因此以下程式碼執行時，會去看Dog的vtable中的speak()方法，然後才知道要去呼叫Animal.speak()，因為是呼叫Animal類別，所以使用的是Animal類別中的i屬性，印出的結果是10。
 {% highlight java linenos %}
-public class Child extends Parent{
-  String address;
-  public String getAddress() {
-    return address;
-  }
-  public void setAddress(String address) {
-    this.address = address;
-  }
-  Child(String name) {
-    this.name = "child_" + name;
-  }
-}
-{% endhighlight %}
-
-建立向上轉型物件
-{% highlight java linenos %}
-Parent upcasting_obj = new Child("Alice");
-{% endhighlight %}
-
-upcasting_obj是向上轉型物件，即使是用「子類別的建構子」產生的「父類別物件」，但是upcasting_obj無法讀取address屬性，也無法呼叫getAddress()、setAddress()二個方法，但有覆寫的Child(String name)建構子。
-
-驗證向上轉型物件擁有繼承來的name變數
-{% highlight java linenos %}
-public class Teest {
+public class Test2 {
   public static void main(String[] args) {
-    Parent upcasting_obj = new Child("Alice");
-    // 擁有子類別覆寫的建構子Child(String name)
-    // 擁有繼承來的name變數
-    System.out.println(upcasting_obj.name);
-    // 以下的都無法呼叫子類別的屬性與方法
-    //upcasting_obj.setAddress("xxx");
-    //upcasting_obj.getAddress();
-    //System.out.println(upcasting_obj.address);
+    Animal myPet = new Dog();  // 多型
+    myPet.speak();  // 輸出：10（非 5！）
   }
 }
 {% endhighlight %}
+
+## 覆寫之後的vtable
+若是Dog類別有覆寫speak()方法，vtable裝的是什麼？
+
+{% highlight java linenos %}
+class Dog extends Animal {
+  int i = 5;  // 子類同名欄位
+  void speak() { System.out.println(i); }
+}
+{% endhighlight %}
+
 ```
-child_Alice
+vtable for Dog:
+[0] Animal.equals()@123456    # 繼承自 Object
+[1] Animal.hashCode()@234567  # 繼承自 Object
+[2] Dog.speak()@345678        
 ```
+由上面可以發現，vtable[2]已經變成Dog.speak()。
 
-## 向上轉型物件範例2
-人
+執行以下程式碼，結果為5，因為是呼叫Dog類別，所以使用的是Dog類別中的i屬性。
 {% highlight java linenos %}
-public class People {
-    public void speak() {}
-}
-{% endhighlight %}
-
-美國人
-{% highlight java linenos %}
-public class American extends People{
-    @Override
-    public void speak() {
-        System.out.println("speak English.");
-    }
-    public void goChurch() {
-        System.out.println("go to Church.");
-    }
-}
-{% endhighlight %}
-
-中國人
-{% highlight java linenos %}
-public class Chinese extends People{
-    @Override
-    public void speak() {
-        System.out.println("說中文");
-    }
-    public void tombSweeping() {
-        System.out.println("掃墓");
-    }
-}
-{% endhighlight %}
-
-日本人
-{% highlight java linenos %}
-public class Japanese extends People{
-    @Override
-    public void speak() {
-        System.out.println("說日文");
-    }
-    public void dollFestival() {
-        System.out.println("女兒節.");
-    }
-}
-{% endhighlight %}
-
-建立向上轉型物件，僅能呼叫子類別覆寫父類別的speak()方法，向上轉型物件不能呼叫子類別的goChurch(),tombSweeping(),dollFestival()
-{% highlight java linenos %}
-public class Test {
+public class Test2 {
   public static void main(String[] args) {
-    People upcasting_obj1 = new Chinese();
-    upcasting_obj1.speak();
-    People upcasting_obj2 = new American();
-    upcasting_obj2.speak();
-    People upcasting_obj3 = new Japanese();
-    upcasting_obj3.speak();
+    Animal myPet = new Dog();  // 多型
+    myPet.speak();
   }
 }
 {% endhighlight %}
-```
-說中文
-speak English.
-說日文
-```
 
-## 向下轉型物件
-將父類別物件向下轉型成子類別。
-
-向上轉型的定義是，使用子類別的建構子，建立類型是父類別的物件。
-
-這次我們把父類別的物件，向下轉型成子類別。
-
+## 父類別轉型子類別
 ### 自動轉型
-由於向上轉型只會有一個父類別，因為每個類別只能繼承一個父類別，因此使用自動轉型。
+子類別轉父類別只會有一個父類別，因此使用自動轉型。
 
 {% highlight java linenos %}
-Parent parent;
-Child child = new Child();
 // 以下是自動轉型
-parent = child;
+Animal myPet = new Dog();
 {% endhighlight %}
 
 ### 強制轉型
 父類別下面會有多個子類別，不確定要轉成那個子類別，因此採用強制轉型，也就是使用括號，括號中是要轉型的(子類別)。
 {% highlight java linenos %}
-People upcasting_obj1 = new Chinese();
+Animal myPet = new Dog();
 // 強制轉型成子類別
-Chinese chinese = (Chinese) upcasting_obj1;
+Dog dog = (Dog) myPet;
 {% endhighlight %}
 
-### 強轉成子類物件
-強轉回子類物件又會擁有子類別特有的方法。
-{% highlight java linenos %}
-public class Test {
-  public static void main(String[] args) {
-    People upcasting_obj1 = new Chinese();
-    upcasting_obj1.speak();
-    People upcasting_obj2 = new American();
-    upcasting_obj2.speak();
-    People upcasting_obj3 = new Japanese();
-    upcasting_obj3.speak();
+強轉回子類別就可以用子類別的屬性與方法。
 
-    System.out.println("------強轉成子類別----------");
-    Chinese chinese = (Chinese) upcasting_obj1;
-    chinese.tombSweeping();
-    American american = (American) upcasting_obj2;
-    american.goChurch();
-    Japanese japanese = (Japanese) upcasting_obj3;
-    japanese.dollFestival();
-  }
-}
-{% endhighlight %}
-```
-說中文
-speak English.
-說日文
-------強轉成子類別----------
-掃墓
-go to Church.
-女兒節.
-```
 
-## 多型
-所謂的多型就是，父類別可以指向多種不同子類別，父類別可以使用「子類別覆寫父類別的方法」。  
-範例如下
-{% highlight java linenos %}
-public class Test {
-  public static void main(String[] args) {
-    People people = new People();
-    // 父類別指向美國人
-    people = new American();
-    // 使用子類別覆寫父類別的方法
-    people.speak();
-
-    // 父類別指向中國人
-    people = new Chinese();
-    // 使用子類別覆寫父類別的方法
-    people.speak();
-
-    // 父類別指向日本人
-    people = new Japanese();
-    // 使用子類別覆寫父類別的方法
-    people.speak();
-  }
-}
-{% endhighlight %}
-```
-speak English.
-說中文
-說日文
-```
+[1]: {% link _pages/java/obj_layout_core.md %}
+[2]: {% link _pages/java/wrap.md %}
