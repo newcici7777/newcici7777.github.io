@@ -45,7 +45,7 @@ Dog Memory Layout如下:
 記憶體開始位置/ 佔記憶體大小/ 型別/ 變數/ 存放的值
 OFF  SZ   TYPE DESCRIPTION               VALUE
   0   8        (object header: mark)     0x0000000000000001 (non-biasable; age: 0)
-  8   4        (object header: class)    0x010033f8
+  8   4        (object header: class)    0x010033f8 Dog方法記憶體位址
  12   4    int Animal.i                  10
  16   4    int Dog.i                     5
  20   4        (object alignment gap)    
@@ -55,6 +55,8 @@ OFF  SZ   TYPE DESCRIPTION               VALUE
 
 發現Dog物件中有二個變數，一個變數值為10，來自父類別Animal.i，另一個變數值為5是自己的Dog.i。
 ```
+記憶體開始位置/ 佔記憶體大小/ 型別/ 變數/ 存放的值
+OFF  SZ   TYPE DESCRIPTION               VALUE
  12   4    int Animal.i                  10
  16   4    int Dog.i                     5
 ```
@@ -65,6 +67,8 @@ OFF  SZ   TYPE DESCRIPTION               VALUE
 儲存Dog物件的所有方法。
 
 ```
+記憶體開始位置/ 佔記憶體大小/ 型別/ 變數/ 存放的值
+OFF  SZ   TYPE DESCRIPTION               VALUE
   8   4        (object header: class)    0x010033f8
 ```
 

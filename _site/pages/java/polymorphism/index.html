@@ -2514,7 +2514,7 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>記憶體開始位置/ 佔記憶體大小/ 型別/ 變數/ 存放的值
 OFF  SZ   TYPE DESCRIPTION               VALUE
   0   8        (object header: mark)     0x0000000000000001 (non-biasable; age: 0)
-  8   4        (object header: class)    0x010033f8
+  8   4        (object header: class)    0x010033f8 Dog方法記憶體位址
  12   4    int Animal.i                  10
  16   4    int Dog.i                     5
  20   4        (object alignment gap)    
@@ -2523,7 +2523,9 @@ OFF  SZ   TYPE DESCRIPTION               VALUE
 </code></pre></div></div>
 
 <p>發現Dog物件中有二個變數，一個變數值為10，來自父類別Animal.i，另一個變數值為5是自己的Dog.i。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 12   4    int Animal.i                  10
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>記憶體開始位置/ 佔記憶體大小/ 型別/ 變數/ 存放的值
+OFF  SZ   TYPE DESCRIPTION               VALUE
+ 12   4    int Animal.i                  10
  16   4    int Dog.i                     5
 </code></pre></div></div>
 
@@ -2532,7 +2534,9 @@ OFF  SZ   TYPE DESCRIPTION               VALUE
 
 <p>儲存Dog物件的所有方法。</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  8   4        (object header: class)    0x010033f8
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>記憶體開始位置/ 佔記憶體大小/ 型別/ 變數/ 存放的值
+OFF  SZ   TYPE DESCRIPTION               VALUE
+  8   4        (object header: class)    0x010033f8
 </code></pre></div></div>
 
 <p>從下面可以發現，Dog有三個方法，分別是equals(), hashCode(), speak()，下面列出每個方法的父類別。</p>
@@ -2819,7 +2823,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-24 23:55:13 +0800"
+        "time": "2025-05-26 02:07:57 +0800"
     },
     "basePath": "",
     "book": {
