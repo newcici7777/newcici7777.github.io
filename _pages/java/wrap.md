@@ -55,12 +55,16 @@ Character 12(表頭) + 2(基本型態) + 2(自動補齊) = 16
 ### 基本型態與包裝類別記憶體大小
 
 非Number類型
+
 |基本型態|佔Stack大小|包裝類別|佔Heap大小|
+|:----|:----|:------|:----|
 |boolean|1 byte|Byte|16 byte|
 |char|2 byte|Character|16 byte|
 
 Number類型
+
 |基本型態|佔Stack大小|包裝類別|佔Heap大小|
+|:----|:----|:------|:----|
 |byte|1 byte|Byte|16 byte|
 |short|2 byte|Short|16 byte|
 |int|4 byte|Integer|16 byte|

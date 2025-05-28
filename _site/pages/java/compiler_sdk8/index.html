@@ -1427,7 +1427,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/interface/" data-nav-link> 介面Interface</a>
+    	<a href="/pages/java/interface/" data-nav-link> 介面</a>
         
             
         </li>
@@ -1454,6 +1454,30 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 泛型 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics_interface/" data-nav-link> 泛型介面</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics_method/" data-nav-link> 泛型方法</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/java/thread/" data-nav-link> Thread</a>
         
@@ -1469,13 +1493,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/lambda/" data-nav-link> Lambda</a>
         
             
@@ -1484,6 +1501,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/exception/" data-nav-link> Exception</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/compare/" data-nav-link> Comparable與Comparator</a>
         
             
         </li>
@@ -2547,7 +2571,91 @@ OpenJDK 64-Bit Server VM (build 25.462-b00-debug, mixed mode)
 
 <h2 id="測試">測試</h2>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java -XX:+UnlockDiagnosticVMOptions -XX:+PrintVtables PolyExample
+</code></pre></div></div>
 
+<h2 id="測試檔案">測試檔案</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Animal</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">speak</span><span class="o">()</span> <span class="o">{</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Animal"</span><span class="o">);</span> <span class="o">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">eat</span><span class="o">()</span> <span class="o">{</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Animal eats"</span><span class="o">);</span> <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="nc">Animal</span> <span class="o">{</span>
+    <span class="nd">@Override</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">speak</span><span class="o">()</span> <span class="o">{</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Dog"</span><span class="o">);</span> <span class="o">}</span>
+    <span class="nd">@Override</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">eat</span><span class="o">()</span> <span class="o">{</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Dog eats"</span><span class="o">);</span> <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">SuperDog</span> <span class="kd">extends</span> <span class="nc">Dog</span> <span class="o">{</span>
+    <span class="nd">@Override</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">speak</span><span class="o">()</span> <span class="o">{</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"SuperDog"</span><span class="o">);</span> <span class="o">}</span>
+    <span class="nd">@Override</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">eat</span><span class="o">()</span> <span class="o">{</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"SuperDog eats"</span><span class="o">);</span> <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestVtable</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Exception</span> <span class="o">{</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10000</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="nc">Animal</span> <span class="n">a</span> <span class="o">=</span> <span class="n">getAnimal</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+            <span class="n">a</span><span class="o">.</span><span class="na">speak</span><span class="o">();</span>
+            <span class="n">a</span><span class="o">.</span><span class="na">eat</span><span class="o">();</span>
+        <span class="o">}</span>
+        <span class="nc">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="mi">300_000</span><span class="o">);</span> <span class="c1">// 等待觀察</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="nc">Animal</span> <span class="nf">getAnimal</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="k">return</span> <span class="k">new</span> <span class="nc">SuperDog</span><span class="o">();</span>
+        <span class="k">else</span> <span class="k">return</span> <span class="k">new</span> <span class="nf">Dog</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="編譯-1">編譯</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./build/macosx-x86_64-normal-server-slowdebug/jdk/bin/javac TestVtable
+</code></pre></div></div>
+
+<h2 id="執行">執行</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./build/macosx-x86_64-normal-server-slowdebug/jdk/bin/java \
+  -Xcomp \
+  -XX:+UnlockDiagnosticVMOptions \
+  -XX:+PrintVtables \
+  -XX:+TraceClassLoading \
+  -XX:+TraceClassInitialization \
+  TestVtable 2&gt;&amp;1 | tee vtables.log
+</code></pre></div></div>
+
+<h2 id="檔案中尋找vtable">檔案中尋找vtable</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep -i vtable vtables.log
+grep -A10 'Vtable for class' vtables.log
 </code></pre></div></div>
 </section>
             </div><div class="search-results">
@@ -2729,7 +2837,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-27 16:25:06 +0800"
+        "time": "2025-05-28 13:21:31 +0800"
     },
     "basePath": "",
     "book": {

@@ -1427,7 +1427,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/interface/" data-nav-link> 介面Interface</a>
+    	<a href="/pages/java/interface/" data-nav-link> 介面</a>
         
             
         </li>
@@ -1454,6 +1454,30 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 泛型 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics_interface/" data-nav-link> 泛型介面</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics_method/" data-nav-link> 泛型方法</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/java/thread/" data-nav-link> Thread</a>
         
@@ -1469,13 +1493,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/lambda/" data-nav-link> Lambda</a>
         
             
@@ -1485,6 +1502,16 @@
 	<li class="" data-nav-item>
     	<a href="/pages/java/exception/" data-nav-link> Exception</a>
         
+            
+        </li>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/java/compare/" data-nav-link> Comparable與Comparator</a>
+        
+            
+                <ul><li><a href="#comparable" data-nav-link " >Comparable</a></li></ul>
+
             
         </li>
 	
@@ -2450,9 +2477,19 @@
                         <h1 id="/pages/java/compare">Comparable與Comparator</h1>
                     
 
-                    <p>二者都是比較介面。</p>
+                    <p>Prerequisites:</p>
 
-<p>String繼承Comparable代表二個物件可以比較大小。</p>
+<ul>
+  <li><a href="/pages/java/interface/">介面</a></li>
+  <li><a href="/pages/java/generics/">泛型</a></li>
+  <li><a href="/pages/java/generics_interface/">泛型介面</a></li>
+</ul>
+
+<h2 id="comparable">Comparable</h2>
+<p>Comparable是一個接口，有一個比較的方法，無法拆開來作為一個物件。</p>
+
+<p>Comparator比較器是獨立一個類別，通常是用來傳進方法中，提供類別去使用它的比較方法。</p>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2515,7 +2552,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/java/exception" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Exception">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/java/file" class="navigation navigation-next navigation-unique" aria-label="Next page: File">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -2633,7 +2680,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-27 16:25:06 +0800"
+        "time": "2025-05-28 13:21:31 +0800"
     },
     "basePath": "",
     "book": {

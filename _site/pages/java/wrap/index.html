@@ -1430,7 +1430,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/interface/" data-nav-link> 介面Interface</a>
+    	<a href="/pages/java/interface/" data-nav-link> 介面</a>
         
             
         </li>
@@ -1457,6 +1457,30 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 泛型 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics_interface/" data-nav-link> 泛型介面</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics_method/" data-nav-link> 泛型方法</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/java/thread/" data-nav-link> Thread</a>
         
@@ -1472,13 +1496,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/lambda/" data-nav-link> Lambda</a>
         
             
@@ -1487,6 +1504,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/exception/" data-nav-link> Exception</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/compare/" data-nav-link> Comparable與Comparator</a>
         
             
         </li>
@@ -2506,19 +2530,83 @@
 
 <h3 id="基本型態與包裝類別記憶體大小">基本型態與包裝類別記憶體大小</h3>
 
-<p>非Number類型
-|基本型態|佔Stack大小|包裝類別|佔Heap大小|
-|boolean|1 byte|Byte|16 byte|
-|char|2 byte|Character|16 byte|</p>
+<p>非Number類型</p>
 
-<p>Number類型
-|基本型態|佔Stack大小|包裝類別|佔Heap大小|
-|byte|1 byte|Byte|16 byte|
-|short|2 byte|Short|16 byte|
-|int|4 byte|Integer|16 byte|
-|long|8 byte|Long|24 byte|
-|float|4 byte|Float|16 byte|
-|double|8 byte|Double|24 byte|</p>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">基本型態</th>
+      <th style="text-align: left">佔Stack大小</th>
+      <th style="text-align: left">包裝類別</th>
+      <th style="text-align: left">佔Heap大小</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left">1 byte</td>
+      <td style="text-align: left">Byte</td>
+      <td style="text-align: left">16 byte</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">char</td>
+      <td style="text-align: left">2 byte</td>
+      <td style="text-align: left">Character</td>
+      <td style="text-align: left">16 byte</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Number類型</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">基本型態</th>
+      <th style="text-align: left">佔Stack大小</th>
+      <th style="text-align: left">包裝類別</th>
+      <th style="text-align: left">佔Heap大小</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">byte</td>
+      <td style="text-align: left">1 byte</td>
+      <td style="text-align: left">Byte</td>
+      <td style="text-align: left">16 byte</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">short</td>
+      <td style="text-align: left">2 byte</td>
+      <td style="text-align: left">Short</td>
+      <td style="text-align: left">16 byte</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">int</td>
+      <td style="text-align: left">4 byte</td>
+      <td style="text-align: left">Integer</td>
+      <td style="text-align: left">16 byte</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">long</td>
+      <td style="text-align: left">8 byte</td>
+      <td style="text-align: left">Long</td>
+      <td style="text-align: left">24 byte</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">float</td>
+      <td style="text-align: left">4 byte</td>
+      <td style="text-align: left">Float</td>
+      <td style="text-align: left">16 byte</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">double</td>
+      <td style="text-align: left">8 byte</td>
+      <td style="text-align: left">Double</td>
+      <td style="text-align: left">24 byte</td>
+    </tr>
+  </tbody>
+</table>
 
 <h3 id="記憶體位置">記憶體位置</h3>
 <p>什麼是Stack？什麼是Heap？</p>
@@ -2857,7 +2945,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-27 16:25:06 +0800"
+        "time": "2025-05-28 13:21:31 +0800"
     },
     "basePath": "",
     "book": {

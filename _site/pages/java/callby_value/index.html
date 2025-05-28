@@ -1430,7 +1430,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/interface/" data-nav-link> 介面Interface</a>
+    	<a href="/pages/java/interface/" data-nav-link> 介面</a>
         
             
         </li>
@@ -1457,6 +1457,30 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 泛型 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics_interface/" data-nav-link> 泛型介面</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics_method/" data-nav-link> 泛型方法</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/java/thread/" data-nav-link> Thread</a>
         
@@ -1472,13 +1496,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/lambda/" data-nav-link> Lambda</a>
         
             
@@ -1487,6 +1504,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/exception/" data-nav-link> Exception</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/compare/" data-nav-link> Comparable與Comparator</a>
         
             
         </li>
@@ -2463,8 +2487,9 @@
 <p>一進入方法，若引數是物件，也就是記憶體位址，參數複製傳進來的引數，稱為Call by value。</p>
 
 <h2 id="修改成員變數">修改成員變數</h2>
-<p>以下的程式碼要傳遞testClz變數給copyAddress()方法。
-TestClz</p>
+<p>以下的程式碼要傳遞testClz變數給copyAddress()方法。</p>
+
+<p>TestClz</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2591,7 +2616,7 @@ TestClz</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>50
 </code></pre></div></div>
 
-<p>執行完copyAddress()方法後，參數arg1就會被記憶體回收，包含0x0066也會被記憶體回收。</p>
+<p>執行完copyAddress()方法後，參數arg1就會被記憶體釋放，包含0x0066也會被記憶體釋放，所謂的記憶體釋放就是把arg1設為null，JVM發現有變數指向null，就會把這個變數刪掉，不浪費記憶體空間。</p>
 
 <p>下圖中，離開copyAddress()方法後，Stack堆疊已經沒有arg1參數，Heap堆也沒有0x0066。</p>
 
@@ -2791,7 +2816,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-27 16:25:06 +0800"
+        "time": "2025-05-28 13:21:31 +0800"
     },
     "basePath": "",
     "book": {

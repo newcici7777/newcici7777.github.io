@@ -3,11 +3,196 @@ title: 泛型
 date: 2025-05-06
 keywords: Java, Generics
 ---
-所謂的泛型就是除了基本類型之外(int, float, double)，其它的類型都可以，因為基本類型不是物件。
+如何理解什麼是泛型呢？
+
+{% highlight java linenos %}
+int i;
+
+i = 100;
+i = 55;
+i = 22;
+{% endhighlight %}
+i是變數。
+
+以上等號右邊的值，可以為100、55、22。
+
+{% highlight java linenos %}
+T = Integer;
+T = Double;
+T = ArrayList;
+T = Object;
+{% endhighlight %}
+T為Type類型的英文字母。
+
+T是變數。
+
+以上等號右邊的值，可以為Integer, Double, ArrayList, Object。
+
+所以下面文章內容所有的T, R, K, V ...，任何英文字母，請把它看作變數，而變數中的值，就是類型。
+
+## 自訂類型
+在類別名後面，用尖括號包住\<自訂類型\>。
+
+自訂類型的變數T, R, M 可用英文字母任意一個大寫字母。
+
+{% highlight java linenos %}
+class Cat<T, R, M> {
+}
+{% endhighlight %}
+
+## 屬性
+泛型可以用在屬性類型。
+{% highlight java linenos %}
+class Cat<T, R, M> {
+  private T t;
+  private R r;
+  private M m;
+}
+{% endhighlight %}
+
+## 建構子
+泛型可以用在建構子參數類型。
+{% highlight java linenos %}
+class Cat<T, R, M> {
+  private T t;
+  private R r;
+  private M m;
+
+  public Cat(T t, R r, M m) {
+    this.t = t;
+    this.r = r;
+    this.m = m;
+  }
+}
+{% endhighlight %}
+
+## get,set方法
+泛型可以用在方法參數類型與傳回值類型。
+{% highlight java linenos %}
+class Cat<T, R, M> {
+  private T t;
+  private R r;
+  private M m;
+
+  public T getT() {
+    return t;
+  }
+
+  public void setT(T t) {
+    this.t = t;
+  }
+
+  public R getR() {
+    return r;
+  }
+
+  public void setR(R r) {
+    this.r = r;
+  }
+
+  public M getM() {
+    return m;
+  }
+
+  public void setM(M m) {
+    this.m = m;
+  }
+
+{% endhighlight %}
+
+## 宣告與建立物件編譯器才會知道類型
+{% highlight java linenos %}
+Cat<String, Integer, Dog> cat = new Cat<String, Integer, Dog>();
+{% endhighlight %}
+
+jdk8以後可以省略後面的尖括號中的類型，因為前面已經宣告泛型(T,R,M)的類型是什麼，後面的可由前面的尖括號內容進行自動推導。
+{% highlight java linenos %}
+Cat<String, Integer, Dog> cat = new Cat<>();
+{% endhighlight %}
+
+## 沒泛型類型，預設Object
+沒設定泛型類型。
+{% highlight java linenos %}
+Cat cat = new Cat();
+{% endhighlight %}
+
+編譯器自動認為泛型類型是Object。
+{% highlight java linenos %}
+Cat<Object, Object, Object> cat = new Cat<>();
+{% endhighlight %}
+
+## 使用getClass()知道泛型類型
+{% highlight java linenos %}
+class Cat<T, R, M> {
+  public void showType() {
+    System.out.println(t.getClass());
+    System.out.println(r.getClass());
+    System.out.println(m.getClass());
+  }
+}
+public class Test {
+  public static void main(String[] args) {
+    Cat<Double, Boolean, Integer> cat = new Cat<>(12.5, true, 1);
+    cat.showType();
+  }
+}
+{% endhighlight %}
+```
+class java.lang.Double
+class java.lang.Boolean
+class java.lang.Integer
+```
+
+## 不能使用泛型的情況
+### 泛型不可以new
+以下二種new是不被允許，因為編譯器根本不知道T是什麼類型，又怎麼會知道要在記憶體建立多大空間來裝這個物件。
+{% highlight java linenos %}
+class Cat<T, R, M> {
+  private T t = new T();
+  private T[] arr = new T[10];
+}
+{% endhighlight %}
+
+### 泛型不可以用在static屬性與static方法
+
+- [memory_model][1]
+
+類別載入器(Class Loader)在方法區(Method Area)載入static屬性與static方法，但類別載入器的動作在建立物件之前，類別載入器不會知道T是什麼類型。
+
+以下三種都不能使用。
+{% highlight java linenos %}
+class Cat<T, R, M> {
+  // static屬性
+  public static T t;
+  
+  // static方法
+  public static T getStaticT() {
+  }
+  
+  // static方法
+  public static void setStaticT(T t) {
+  }
+}
+{% endhighlight %}
+
+### 不能用基本型態
+基本型態有short, int, long, double, float, boolean, char
+
+以下內容編譯不過。
+{% highlight java linenos %}
+Cat<int, double, char> cat = new Cat<>();
+{% endhighlight %}
+
+------------------------------------------------------------
+
+以下是另一種筆記。
 
 ## 語法
+在類別名後面，自訂類型。
+
+自訂類型的名稱可用T, R, K, V 任意一個大寫字母。
 {% highlight java linenos %}
-class 名稱<T> {
+class 類別名<T, R, U> {
 
 }
 {% endhighlight %}
@@ -51,7 +236,6 @@ class Obj3<T> {
 {% endhighlight %}
 
 ## 使用泛型
-
 ### 宣告
 在類別名後面有尖括號，尖括號中寫上實際的類型。
 {% highlight java linenos %}
@@ -132,3 +316,5 @@ public class Test {
 ```
 狗狗狗
 ```
+
+[1]: {% link _pages/java/memory_model.md %}#物件建立過程

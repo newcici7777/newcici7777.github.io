@@ -1427,7 +1427,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/interface/" data-nav-link> 介面Interface</a>
+    	<a href="/pages/java/interface/" data-nav-link> 介面</a>
         
             
         </li>
@@ -1454,6 +1454,33 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 泛型 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
+        
+            
+        </li>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/java/generics_interface/" data-nav-link> 泛型介面</a>
+        
+            
+                <ul><li><a href="#語法" data-nav-link " >語法</a></li><li><a href="#抽象方法" data-nav-link " >抽象方法</a></li><li><a href="#繼承時要指定泛型類型" data-nav-link " >繼承時要指定泛型類型</a></li><li><a href="#實作時要指定泛型類型" data-nav-link " >實作時要指定泛型類型</a></li><li><a href="#沒指定泛型類型預設用object" data-nav-link " >沒指定泛型類型，預設用Object</a></li><li><a href="#不能使用泛型的情況" data-nav-link " >不能使用泛型的情況</a></li><li><a href="#語法-1" data-nav-link " >語法</a></li><li><a href="#使用泛型介面" data-nav-link " >使用泛型介面</a></li></ul>
+
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics_method/" data-nav-link> 泛型方法</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/java/thread/" data-nav-link> Thread</a>
         
@@ -1469,13 +1496,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/lambda/" data-nav-link> Lambda</a>
         
             
@@ -1484,6 +1504,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/exception/" data-nav-link> Exception</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/compare/" data-nav-link> Comparable與Comparator</a>
         
             
         </li>
@@ -2450,15 +2477,191 @@
                         <h1 id="/pages/java/generics_interface">泛型介面</h1>
                     
 
-                    <p>泛型介面主要用途在於檢查介面的類型是否正確。</p>
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/java/interface/">介面</a></li>
+  <li><a href="/pages/java/generics/">泛型</a></li>
+</ul>
 
 <h2 id="語法">語法</h2>
-<p>interface 名稱後面有一對<code class="language-plaintext highlighter-rouge">&lt;&gt;</code>尖括號，尖括號包著的是泛型T</p>
+<p>在類別名後面，用尖括號包住&lt;自訂類型&gt;。</p>
+
+<p>自訂類型的名稱可用T, R, K, V 任意一個大寫字母。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="code"><pre><span class="kd">interface</span> <span class="nc">名稱</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="o">{</span>
+</pre></td><td class="code"><pre><span class="kd">interface</span> <span class="nc">介面名</span><span class="o">&lt;</span><span class="no">T</span><span class="o">,</span> <span class="no">R</span><span class="o">,</span> <span class="no">M</span><span class="o">&gt;</span> <span class="o">{</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="抽象方法">抽象方法</h2>
+<p>介面中的方法都是抽象。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">interface</span> <span class="nc">IMove</span><span class="o">&lt;</span><span class="no">T</span><span class="o">,</span> <span class="no">R</span><span class="o">,</span> <span class="no">M</span><span class="o">&gt;</span> <span class="o">{</span>
+  <span class="no">R</span> <span class="nf">doMove</span><span class="o">(</span><span class="no">M</span> <span class="n">m</span><span class="o">);</span>
+  <span class="kt">void</span> <span class="nf">move</span><span class="o">(</span><span class="no">T</span> <span class="n">t1</span><span class="o">,</span> <span class="no">T</span> <span class="n">t2</span><span class="o">,</span> <span class="no">R</span> <span class="n">r1</span><span class="o">,</span> <span class="no">M</span> <span class="n">m1</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="繼承時要指定泛型類型">繼承時要指定泛型類型</h2>
+<p>以下程式碼，IFly繼承IMove時，要指定泛型類型Integer, String, Object，才能繼承。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">interface</span> <span class="nc">IMove</span><span class="o">&lt;</span><span class="no">T</span><span class="o">,</span> <span class="no">R</span><span class="o">,</span> <span class="no">M</span><span class="o">&gt;</span> <span class="o">{</span>
+  <span class="no">R</span> <span class="nf">doMove</span><span class="o">(</span><span class="no">M</span> <span class="n">m</span><span class="o">);</span>
+  <span class="kt">void</span> <span class="nf">move</span><span class="o">(</span><span class="no">T</span> <span class="n">t1</span><span class="o">,</span> <span class="no">T</span> <span class="n">t2</span><span class="o">,</span> <span class="no">R</span> <span class="n">r1</span><span class="o">,</span> <span class="no">M</span> <span class="n">m1</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kd">interface</span> <span class="nc">IFly</span> <span class="kd">extends</span> <span class="nc">IMove</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">,</span> <span class="nc">String</span><span class="o">,</span> <span class="nc">Object</span><span class="o">&gt;</span> <span class="o">{</span>
+  
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>Duck實作IFly繼承下來的抽象方法，會自動替換類型，T, R, M 替換成 Integer, String, Object。</p>
+
+<p>實作抽象方法。</p>
+
+<p><img src="/assets/img/java/interface_generic1.png" alt="img" /></p>
+
+<p>選取要實作的抽象方法，按ok。</p>
+
+<p><img src="/assets/img/java/interface_generic2.png" alt="img" /></p>
+
+<p>方法中的類型被自動填寫。</p>
+
+<p><img src="/assets/img/java/interface_generic3.png" alt="img" /></p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Duck</span> <span class="kd">implements</span> <span class="nc">IFly</span> <span class="o">{</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="nc">String</span> <span class="nf">doMove</span><span class="o">(</span><span class="nc">Object</span> <span class="n">o</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">move</span><span class="o">(</span><span class="nc">Integer</span> <span class="n">t1</span><span class="o">,</span> <span class="nc">Integer</span> <span class="n">t2</span><span class="o">,</span> <span class="nc">String</span> <span class="n">r1</span><span class="o">,</span> <span class="nc">Object</span> <span class="n">m1</span><span class="o">)</span> <span class="o">{</span>
+
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="實作時要指定泛型類型">實作時要指定泛型類型</h2>
+<p>泛型介面</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">interface</span> <span class="nc">ISwim</span><span class="o">&lt;</span><span class="no">T</span><span class="o">,</span> <span class="no">R</span><span class="o">,</span> <span class="no">M</span><span class="o">&gt;</span> <span class="o">{</span>
+  <span class="kt">void</span> <span class="nf">swim</span><span class="o">(</span><span class="no">T</span> <span class="n">t1</span><span class="o">,</span> <span class="no">T</span> <span class="n">t2</span><span class="o">,</span> <span class="no">R</span> <span class="n">r1</span><span class="o">,</span> <span class="no">M</span> <span class="n">m1</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>實作時要指定介面的泛型類型。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Fish</span> <span class="kd">implements</span> <span class="nc">ISwim</span><span class="o">&lt;</span><span class="nc">Object</span><span class="o">,</span> <span class="nc">Character</span><span class="o">,</span> <span class="nc">String</span><span class="o">&gt;</span> <span class="o">{</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">swim</span><span class="o">(</span><span class="nc">Object</span> <span class="n">t1</span><span class="o">,</span> <span class="nc">Object</span> <span class="n">t2</span><span class="o">,</span> <span class="nc">Character</span> <span class="n">r1</span><span class="o">,</span> <span class="nc">String</span> <span class="n">m1</span><span class="o">)</span> <span class="o">{</span>
+    
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="沒指定泛型類型預設用object">沒指定泛型類型，預設用Object</h2>
+<p>潛水艇(Submarine)類別實作ISwim沒指定泛型類型，預設泛型類型為Object，所以swim方法的參數類型全部都是Object。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Submarine</span> <span class="kd">implements</span> <span class="nc">ISwim</span> <span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">swim</span><span class="o">(</span><span class="nc">Object</span> <span class="n">t1</span><span class="o">,</span> <span class="nc">Object</span> <span class="n">t2</span><span class="o">,</span> <span class="nc">Object</span> <span class="n">r1</span><span class="o">,</span> <span class="nc">Object</span> <span class="n">m1</span><span class="o">)</span> <span class="o">{</span>
+    
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>上面的程式碼與下面的程式碼是相同意思。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Submarine</span> <span class="kd">implements</span> <span class="nc">ISwim</span><span class="o">&lt;</span><span class="nc">Object</span><span class="o">,</span> <span class="nc">Object</span><span class="o">,</span> <span class="nc">Object</span><span class="o">&gt;</span> <span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">swim</span><span class="o">(</span><span class="nc">Object</span> <span class="n">t1</span><span class="o">,</span> <span class="nc">Object</span> <span class="n">t2</span><span class="o">,</span> <span class="nc">Object</span> <span class="n">r1</span><span class="o">,</span> <span class="nc">Object</span> <span class="n">m1</span><span class="o">)</span> <span class="o">{</span>
+    
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="不能使用泛型的情況">不能使用泛型的情況</h2>
+<p>不能用靜態static</p>
+
+<hr />
+<p>以下為其它筆記。</p>
+
+<p>泛型介面主要用途在於檢查介面的類型是否正確。</p>
+
+<h2 id="語法-1">語法</h2>
+<p>interface 介面名後面有一對<code class="language-plaintext highlighter-rouge">&lt;&gt;</code>尖括號，尖括號包著的是泛型T。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kd">interface</span> <span class="nc">介面名</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="o">{</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -2587,6 +2790,7 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Piano play
 Guitar play
 </code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2649,7 +2853,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/java/generics" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 泛型">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/java/generics_method" class="navigation navigation-next navigation-unique" aria-label="Next page: 泛型方法">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -2767,7 +2981,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-27 16:25:06 +0800"
+        "time": "2025-05-28 13:21:31 +0800"
     },
     "basePath": "",
     "book": {

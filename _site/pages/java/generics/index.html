@@ -1427,7 +1427,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/interface/" data-nav-link> 介面Interface</a>
+    	<a href="/pages/java/interface/" data-nav-link> 介面</a>
         
             
         </li>
@@ -1454,6 +1454,33 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 泛型 </a><ul>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
+        
+            
+                <ul><li><a href="#自訂類型" data-nav-link " >自訂類型</a></li><li><a href="#屬性" data-nav-link " >屬性</a></li><li><a href="#建構子" data-nav-link " >建構子</a></li><li><a href="#getset方法" data-nav-link " >get,set方法</a></li><li><a href="#宣告與建立物件編譯器才會知道類型" data-nav-link " >宣告與建立物件編譯器才會知道類型</a></li><li><a href="#沒泛型類型預設object" data-nav-link " >沒泛型類型，預設Object</a></li><li><a href="#使用getclass知道泛型類型" data-nav-link " >使用getClass()知道泛型類型</a></li><li><a href="#不能使用泛型的情況" data-nav-link " >不能使用泛型的情況</a><ul><li><a href="#泛型不可以new" data-nav-link " >泛型不可以new</a></li><li><a href="#泛型不可以用在static屬性與static方法" data-nav-link " >泛型不可以用在static屬性與static方法</a></li><li><a href="#不能用基本型態" data-nav-link " >不能用基本型態</a></li></ul></li><li><a href="#語法" data-nav-link " >語法</a></li><li><a href="#成員變數類型" data-nav-link " >成員變數類型</a></li><li><a href="#參數類型" data-nav-link " >參數類型</a></li><li><a href="#傳回值類型" data-nav-link " >傳回值類型</a></li><li><a href="#使用泛型" data-nav-link " >使用泛型</a><ul><li><a href="#宣告" data-nav-link " >宣告</a></li><li><a href="#建立物件" data-nav-link " >建立物件</a></li></ul></li><li><a href="#範例" data-nav-link " >範例</a></li></ul>
+
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics_interface/" data-nav-link> 泛型介面</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics_method/" data-nav-link> 泛型方法</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/java/thread/" data-nav-link> Thread</a>
         
@@ -1468,16 +1495,6 @@
         </li>
 	
 	
-	<li class="active" data-nav-item>
-    	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
-        
-            
-                <ul><li><a href="#語法" data-nav-link " >語法</a></li><li><a href="#成員變數類型" data-nav-link " >成員變數類型</a></li><li><a href="#參數類型" data-nav-link " >參數類型</a></li><li><a href="#傳回值類型" data-nav-link " >傳回值類型</a></li><li><a href="#使用泛型" data-nav-link " >使用泛型</a><ul><li><a href="#宣告" data-nav-link " >宣告</a></li><li><a href="#建立物件" data-nav-link " >建立物件</a></li></ul></li><li><a href="#範例" data-nav-link " >範例</a></li></ul>
-
-            
-        </li>
-	
-	
 	<li class="" data-nav-item>
     	<a href="/pages/java/lambda/" data-nav-link> Lambda</a>
         
@@ -1487,6 +1504,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/exception/" data-nav-link> Exception</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/compare/" data-nav-link> Comparable與Comparator</a>
         
             
         </li>
@@ -2453,15 +2477,317 @@
                         <h1 id="/pages/java/generics">泛型</h1>
                     
 
-                    <p>所謂的泛型就是除了基本類型之外(int, float, double)，其它的類型都可以，因為基本類型不是物件。</p>
-
-<h2 id="語法">語法</h2>
+                    <p>如何理解什麼是泛型呢？</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">名稱</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="o">{</span>
+4
+5
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span><span class="o">;</span>
+
+<span class="n">i</span> <span class="o">=</span> <span class="mi">100</span><span class="o">;</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="o">;</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">22</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>i是變數。</p>
+
+<p>以上等號右邊的值，可以為100、55、22。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="no">T</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">;</span>
+<span class="no">T</span> <span class="o">=</span> <span class="nc">Double</span><span class="o">;</span>
+<span class="no">T</span> <span class="o">=</span> <span class="nc">ArrayList</span><span class="o">;</span>
+<span class="no">T</span> <span class="o">=</span> <span class="nc">Object</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>T為Type類型的英文字母。</p>
+
+<p>T是變數。</p>
+
+<p>以上等號右邊的值，可以為Integer, Double, ArrayList, Object。</p>
+
+<p>所以下面文章內容所有的T, R, K, V …，任何英文字母，請把它看作變數，而變數中的值，就是類型。</p>
+
+<h2 id="自訂類型">自訂類型</h2>
+<p>在類別名後面，用尖括號包住&lt;自訂類型&gt;。</p>
+
+<p>自訂類型的變數T, R, M 可用英文字母任意一個大寫字母。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Cat</span><span class="o">&lt;</span><span class="no">T</span><span class="o">,</span> <span class="no">R</span><span class="o">,</span> <span class="no">M</span><span class="o">&gt;</span> <span class="o">{</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="屬性">屬性</h2>
+<p>泛型可以用在屬性類型。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Cat</span><span class="o">&lt;</span><span class="no">T</span><span class="o">,</span> <span class="no">R</span><span class="o">,</span> <span class="no">M</span><span class="o">&gt;</span> <span class="o">{</span>
+  <span class="kd">private</span> <span class="no">T</span> <span class="n">t</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="no">R</span> <span class="n">r</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="no">M</span> <span class="n">m</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="建構子">建構子</h2>
+<p>泛型可以用在建構子參數類型。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Cat</span><span class="o">&lt;</span><span class="no">T</span><span class="o">,</span> <span class="no">R</span><span class="o">,</span> <span class="no">M</span><span class="o">&gt;</span> <span class="o">{</span>
+  <span class="kd">private</span> <span class="no">T</span> <span class="n">t</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="no">R</span> <span class="n">r</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="no">M</span> <span class="n">m</span><span class="o">;</span>
+
+  <span class="kd">public</span> <span class="nf">Cat</span><span class="o">(</span><span class="no">T</span> <span class="n">t</span><span class="o">,</span> <span class="no">R</span> <span class="n">r</span><span class="o">,</span> <span class="no">M</span> <span class="n">m</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">t</span> <span class="o">=</span> <span class="n">t</span><span class="o">;</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">r</span> <span class="o">=</span> <span class="n">r</span><span class="o">;</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">m</span> <span class="o">=</span> <span class="n">m</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="getset方法">get,set方法</h2>
+<p>泛型可以用在方法參數類型與傳回值類型。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Cat</span><span class="o">&lt;</span><span class="no">T</span><span class="o">,</span> <span class="no">R</span><span class="o">,</span> <span class="no">M</span><span class="o">&gt;</span> <span class="o">{</span>
+  <span class="kd">private</span> <span class="no">T</span> <span class="n">t</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="no">R</span> <span class="n">r</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="no">M</span> <span class="n">m</span><span class="o">;</span>
+
+  <span class="kd">public</span> <span class="no">T</span> <span class="nf">getT</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">t</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setT</span><span class="o">(</span><span class="no">T</span> <span class="n">t</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">t</span> <span class="o">=</span> <span class="n">t</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="no">R</span> <span class="nf">getR</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">r</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setR</span><span class="o">(</span><span class="no">R</span> <span class="n">r</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">r</span> <span class="o">=</span> <span class="n">r</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="no">M</span> <span class="nf">getM</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">m</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setM</span><span class="o">(</span><span class="no">M</span> <span class="n">m</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">m</span> <span class="o">=</span> <span class="n">m</span><span class="o">;</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="宣告與建立物件編譯器才會知道類型">宣告與建立物件編譯器才會知道類型</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">Cat</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Integer</span><span class="o">,</span> <span class="nc">Dog</span><span class="o">&gt;</span> <span class="n">cat</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Cat</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Integer</span><span class="o">,</span> <span class="nc">Dog</span><span class="o">&gt;();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>jdk8以後可以省略後面的尖括號中的類型，因為前面已經宣告泛型(T,R,M)的類型是什麼，後面的可由前面的尖括號內容進行自動推導。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">Cat</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Integer</span><span class="o">,</span> <span class="nc">Dog</span><span class="o">&gt;</span> <span class="n">cat</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Cat</span><span class="o">&lt;&gt;();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="沒泛型類型預設object">沒泛型類型，預設Object</h2>
+<p>沒設定泛型類型。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">Cat</span> <span class="n">cat</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Cat</span><span class="o">();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>編譯器自動認為泛型類型是Object。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">Cat</span><span class="o">&lt;</span><span class="nc">Object</span><span class="o">,</span> <span class="nc">Object</span><span class="o">,</span> <span class="nc">Object</span><span class="o">&gt;</span> <span class="n">cat</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Cat</span><span class="o">&lt;&gt;();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="使用getclass知道泛型類型">使用getClass()知道泛型類型</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Cat</span><span class="o">&lt;</span><span class="no">T</span><span class="o">,</span> <span class="no">R</span><span class="o">,</span> <span class="no">M</span><span class="o">&gt;</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">showType</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">t</span><span class="o">.</span><span class="na">getClass</span><span class="o">());</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">r</span><span class="o">.</span><span class="na">getClass</span><span class="o">());</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">m</span><span class="o">.</span><span class="na">getClass</span><span class="o">());</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Cat</span><span class="o">&lt;</span><span class="nc">Double</span><span class="o">,</span> <span class="nc">Boolean</span><span class="o">,</span> <span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">cat</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Cat</span><span class="o">&lt;&gt;(</span><span class="mf">12.5</span><span class="o">,</span> <span class="kc">true</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+    <span class="n">cat</span><span class="o">.</span><span class="na">showType</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class java.lang.Double
+class java.lang.Boolean
+class java.lang.Integer
+</code></pre></div></div>
+
+<h2 id="不能使用泛型的情況">不能使用泛型的情況</h2>
+<h3 id="泛型不可以new">泛型不可以new</h3>
+<p>以下二種new是不被允許，因為編譯器根本不知道T是什麼類型，又怎麼會知道要在記憶體建立多大空間來裝這個物件。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Cat</span><span class="o">&lt;</span><span class="no">T</span><span class="o">,</span> <span class="no">R</span><span class="o">,</span> <span class="no">M</span><span class="o">&gt;</span> <span class="o">{</span>
+  <span class="kd">private</span> <span class="no">T</span> <span class="n">t</span> <span class="o">=</span> <span class="k">new</span> <span class="no">T</span><span class="o">();</span>
+  <span class="kd">private</span> <span class="no">T</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="no">T</span><span class="o">[</span><span class="mi">10</span><span class="o">];</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="泛型不可以用在static屬性與static方法">泛型不可以用在static屬性與static方法</h3>
+
+<ul>
+  <li><a href="/pages/java/memory_model/#物件建立過程">memory_model</a></li>
+</ul>
+
+<p>類別載入器(Class Loader)在方法區(Method Area)載入static屬性與static方法，但類別載入器的動作在建立物件之前，類別載入器不會知道T是什麼類型。</p>
+
+<p>以下三種都不能使用。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Cat</span><span class="o">&lt;</span><span class="no">T</span><span class="o">,</span> <span class="no">R</span><span class="o">,</span> <span class="no">M</span><span class="o">&gt;</span> <span class="o">{</span>
+  <span class="c1">// static屬性</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="no">T</span> <span class="n">t</span><span class="o">;</span>
+  
+  <span class="c1">// static方法</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="no">T</span> <span class="nf">getStaticT</span><span class="o">()</span> <span class="o">{</span>
+  <span class="o">}</span>
+  
+  <span class="c1">// static方法</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">setStaticT</span><span class="o">(</span><span class="no">T</span> <span class="n">t</span><span class="o">)</span> <span class="o">{</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="不能用基本型態">不能用基本型態</h3>
+<p>基本型態有short, int, long, double, float, boolean, char</p>
+
+<p>以下內容編譯不過。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">Cat</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">,</span> <span class="kt">double</span><span class="o">,</span> <span class="kt">char</span><span class="o">&gt;</span> <span class="n">cat</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Cat</span><span class="o">&lt;&gt;();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<hr />
+
+<p>以下是另一種筆記。</p>
+
+<h2 id="語法">語法</h2>
+<p>在類別名後面，自訂類型。</p>
+
+<p>自訂類型的名稱可用T, R, K, V 任意一個大寫字母。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">類別名</span><span class="o">&lt;</span><span class="no">T</span><span class="o">,</span> <span class="no">R</span><span class="o">,</span> <span class="no">U</span><span class="o">&gt;</span> <span class="o">{</span>
 
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -2530,7 +2856,6 @@
 </figure>
 
 <h2 id="使用泛型">使用泛型</h2>
-
 <h3 id="宣告">宣告</h3>
 <p>在類別名後面有尖括號，尖括號中寫上實際的類型。</p>
 
@@ -2663,6 +2988,7 @@
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>狗狗狗
 </code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2726,14 +3052,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/java/reflect" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 反射">
+                        <a href="/pages/java/static" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Static">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/java/lambda" class="navigation navigation-next navigation-unique" aria-label="Next page: Lambda">
+                        <a href="/pages/java/generics_interface" class="navigation navigation-next navigation-unique" aria-label="Next page: 泛型介面">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2853,7 +3179,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-27 16:25:06 +0800"
+        "time": "2025-05-28 13:21:31 +0800"
     },
     "basePath": "",
     "book": {

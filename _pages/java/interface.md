@@ -1,5 +1,5 @@
 ---
-title: 介面Interface
+title: 介面
 date: 2025-04-18
 keywords: Java, polymorphism, Interface
 ---

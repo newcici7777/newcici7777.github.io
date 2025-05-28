@@ -70,7 +70,7 @@ Class Loader載入類別資訊
 
 ![img]({{site.imgurl}}/java/obj_model1.png)
 
-new關鍵字，在Heap建立記憶體空間0x0070，Stack的white_dog變數存的是0x0070，Heap中0x0070位址中的name與age與color，全用預設值，int基本型別用0，name與color是String物件用null。
+new關鍵字(1)，在Heap建立記憶體空間0x0070(2)，Stack的white_dog變數存的是0x0070(3)，Heap中0x0070位址中的name與age與color，全用預設值，int基本型別用0，name與color是String物件用null。
 ![img]({{site.imgurl}}/java/obj_model2.png)
 
 進入建構子，在String pool字串常數池，建立"小白"字串常數記憶體空間，Heap空間的物件name的值設成"小白"的記憶體位址。

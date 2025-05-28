@@ -12,6 +12,7 @@ Prerequisites:
 
 ## 修改成員變數
 以下的程式碼要傳遞testClz變數給copyAddress()方法。
+
 TestClz
 {% highlight java linenos %}
 class TestClz {
@@ -92,7 +93,7 @@ arg1存的0x0066與testClz變數存的0x0033不一樣，所以修改arg1.age，�
 50
 ```
 
-執行完copyAddress()方法後，參數arg1就會被記憶體回收，包含0x0066也會被記憶體回收。  
+執行完copyAddress()方法後，參數arg1就會被記憶體釋放，包含0x0066也會被記憶體釋放，所謂的記憶體釋放就是把arg1設為null，JVM發現有變數指向null，就會把這個變數刪掉，不浪費記憶體空間。  
 
 下圖中，離開copyAddress()方法後，Stack堆疊已經沒有arg1參數，Heap堆也沒有0x0066。
 

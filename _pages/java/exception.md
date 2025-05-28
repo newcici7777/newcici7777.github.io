@@ -424,7 +424,7 @@ Exception in thread "main" java.lang.NullPointerException: error msg = null
 |throw |方法中  |throw new 物件(錯誤訊息)|throw new NullPointerException(\"錯誤\")|
 
 ## finally
-不管有沒有例外，都要執行，常用在關閉串流，資源釋放與關閉。
+不管有沒有例外，都要執行，常用在關閉串流，資源(檔案打開與關閉、資料庫連線、網路連線)釋放與關閉。
 {% highlight java linenos %}
 public class Test4 {
   public static void main(String[] args) {
@@ -449,7 +449,7 @@ finally
 ### try...finally
 這個語法沒有補捉例外，一樣會crash，主要意義在於，不管執行過程有沒有例外，在程序crash前，一定要執行finally\{\}程式區塊。
 
-可能用於寫Log或關閉釋放資源。
+可能用於寫Log或關閉釋放資源，什麼是資源？例如:打開檔案，讀取裡面的內容，檔案就是資源。DB資料庫連線，離開程序，要關閉DB資料庫連線，DB資料庫就是資源。網路連線，網路中斷，網路就是資源。
 {% highlight java linenos %}
 try {
   String str = null;
