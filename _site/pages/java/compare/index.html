@@ -1475,6 +1475,13 @@
     	<a href="/pages/java/generics_method/" data-nav-link> 泛型方法</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/generics_extend_super/" data-nav-link> ?與extends與super</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -1512,6 +1519,13 @@
             
                 <ul><li><a href="#傳回值" data-nav-link " >傳回值</a></li><li><a href="#comparable介面" data-nav-link " >Comparable介面</a><ul><li><a href="#使用方法" data-nav-link " >使用方法</a></li><li><a href="#comparetomydate參數" data-nav-link " >compareTo(MyDate)參數</a></li><li><a href="#比較" data-nav-link " >比較</a></li><li><a href="#jdk8-string-compareto" data-nav-link " >JDK8 String compareTo</a></li></ul></li><li><a href="#comparator" data-nav-link " >Comparator</a></li><li><a href="#arrayssort排序" data-nav-link " >Arrays.sort()排序</a><ul><li><a href="#sort原始碼" data-nav-link " >sort()原始碼</a></li><li><a href="#arrayssort排序與comparator" data-nav-link " >Arrays.sort()排序與Comparator</a></li><li><a href="#由大到小" data-nav-link " >由大到小</a></li></ul></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/junit_test/" data-nav-link> Junit Test</a>
+        
             
         </li>
 	
@@ -2731,21 +2745,21 @@
 </figure>
 
 <h4 id="情況1">情況1</h4>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>this = abcdefg
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>value = abcdefg
 another = abdd
 </code></pre></div></div>
 <p>結果為c(99) - d(100) = -1</p>
 
 <h4 id="情況2">情況2</h4>
 <p>以下二個字串前4個字元都一樣，只有長度不同。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>this = abcdefg
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>value = abcdefg
 another = abcd
 </code></pre></div></div>
 <p>傳回3</p>
 
 <h4 id="情況3">情況3</h4>
 <p>以下二個字串前4個字元都一樣，只有長度不同。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>this = abcde
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>value = abcde
 another = abcdfg
 </code></pre></div></div>
 <p>傳回-3</p>
@@ -2757,7 +2771,7 @@ another = abcdfg
   <li><a href="/pages/java/lambda/">Lambda</a></li>
 </ul>
 
-<p>Comparator可以透過<a href="/pages/java/anonymous_class/">匿名類別</a>、<a href="/pages/java/lambda/">Lambda</a>，成為單獨的類別，只要實作比較的內容，就可單獨使用。</p>
+<p>Comparator可以透過<a href="/pages/java/anonymous_class/">匿名類別</a>、<a href="/pages/java/lambda/">Lambda</a>，建立物件，只要實作比較的內容，就可單獨使用。</p>
 
 <p>MyDate2提供getYear()、getMon()、getDate()，供其它類別使用。</p>
 
@@ -3016,6 +3030,7 @@ another = abcdfg
 34
 35
 36
+37
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="c1">// 透過匿名類別建立物件</span>
@@ -3048,6 +3063,7 @@ another = abcdfg
         <span class="k">new</span> <span class="nf">MyDate2</span><span class="o">(</span><span class="mi">2000</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">1</span><span class="o">),</span>
         <span class="k">new</span> <span class="nf">MyDate2</span><span class="o">(</span><span class="mi">2000</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">1</span><span class="o">)</span>
     <span class="o">};</span>
+    <span class="c1">// 陣列排序，把自訂Comparator傳入。</span>
     <span class="nc">Arrays</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="n">comparator</span><span class="o">);</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">arr</span><span class="o">));</span>
   <span class="o">}</span>
@@ -3222,7 +3238,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/file" class="navigation navigation-next navigation-unique" aria-label="Next page: File">
+                        <a href="/pages/java/junit_test" class="navigation navigation-next navigation-unique" aria-label="Next page: Junit Test">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3342,7 +3358,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-28 15:50:49 +0800"
+        "time": "2025-05-29 01:21:15 +0800"
     },
     "basePath": "",
     "book": {
