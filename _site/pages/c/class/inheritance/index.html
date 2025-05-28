@@ -3052,6 +3052,12 @@ GrandChild name:GrandChild
 <h2 id="父類別子類別大小">父類別子類別大小</h2>
 
 <h3 id="sizeof">sizeof</h3>
+<p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/c/dynamicMemory/operator_new_delete/">operator new delete</a></li>
+</ul>
+
 <p>以下的程式範例可以看出父類別有3個int變數(m1,m2,m3)，int大小為4byte，所以父類別總共為12byte<br />
 子類別只有1個int變數(m4)，4byte，但子類別會繼承父類別的變數，所以12byte + 4byte = 16byte，因此子類別建立的記憶體大小為16byte。<br />
 透過自建operator new()函式，可以看到建立Child的大小為16byte。<br /></p>
@@ -3135,13 +3141,13 @@ size of Child = 16
 cl test.cpp /d1 reportSingleClassLayoutTestA
 </code></pre></div></div>
 
-<h4 id="parent">Parent</h4>
 <p>mac使用以下語法<br />
 -A 10 代表只印出10筆</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>clang++ -Xclang -fdump-record-layouts -c 原始檔案.cpp | grep -A 10 "class 類別名"
 clang++ -Xclang -fdump-record-layouts -c test1.cpp | grep -A 10 "class Parent"
 </code></pre></div></div>
 
+<h4 id="parent">Parent</h4>
 <p>拿上一個範例的程式碼，顯示出來的記憶體布局如下:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>         0 | class Parent
          0 |   int m1_
@@ -3182,6 +3188,7 @@ clang++ -Xclang -fdump-record-layouts -c test1.cpp | grep -A 10 "class Parent"
 </ul>
 
 <p>子類別本身包含了父類別的成員變數，所以Child的大小為16byte。</p>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3372,7 +3379,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-26 02:07:57 +0800"
+        "time": "2025-05-27 16:25:06 +0800"
     },
     "basePath": "",
     "book": {

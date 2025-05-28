@@ -1416,7 +1416,7 @@
     	<a href="/pages/java/polymorphism/" data-nav-link> 多型</a>
         
             
-                <ul><li><a href="#編譯時類型-與-執行時類型" data-nav-link " >編譯時類型 與 執行時類型</a></li><li><a href="#memory-layout" data-nav-link " >Memory Layout</a></li><li><a href="#vtable" data-nav-link " >vtable</a></li><li><a href="#覆寫之後的vtable" data-nav-link " >覆寫之後的vtable</a></li><li><a href="#父類別轉型子類別" data-nav-link " >父類別轉型子類別</a><ul><li><a href="#自動轉型" data-nav-link " >自動轉型</a></li><li><a href="#強制轉型" data-nav-link " >強制轉型</a></li></ul></li></ul>
+                <ul><li><a href="#編譯類型-與-執行類型" data-nav-link " >編譯類型 與 執行類型</a></li><li><a href="#memory-layout" data-nav-link " >Memory Layout</a></li><li><a href="#反射" data-nav-link " >反射</a></li><li><a href="#javap" data-nav-link " >javap</a></li><li><a href="#vtable" data-nav-link " >vtable</a></li><li><a href="#覆寫之後的vtable" data-nav-link " >覆寫之後的vtable</a></li><li><a href="#父類別轉型子類別" data-nav-link " >父類別轉型子類別</a><ul><li><a href="#自動轉型" data-nav-link " >自動轉型</a></li><li><a href="#強制轉型" data-nav-link " >強制轉型</a></li></ul></li></ul>
 
             
         </li>
@@ -2453,19 +2453,19 @@
                         <h1 id="/pages/java/polymorphism">多型</h1>
                     
 
-                    <h2 id="編譯時類型-與-執行時類型">編譯時類型 與 執行時類型</h2>
-<p>編譯時類型，英文是Compile-time type。</p>
+                    <h2 id="編譯類型-與-執行類型">編譯類型 與 執行類型</h2>
+<p>編譯類型，英文是Compile-time type。</p>
 
-<p>執行時類型，英文是Runtime type。</p>
+<p>執行類型，英文是Runtime type。</p>
 
-<p>什麼是編譯時類型？什麼是執行時類型？</p>
+<p>什麼是編譯類型？什麼是執行類型？</p>
 
-<p>下方的程式碼，等號左邊是編譯時類型，等號右邊是執行時類型。</p>
+<p>下方的程式碼，等號左邊是編譯類型，等號右邊是執行類型。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="code"><pre><span class="n">編譯時類型</span>     <span class="o">=</span>  <span class="n">執行時類型</span>
+</pre></td><td class="code"><pre><span class="n">編譯類型</span>     <span class="o">=</span>  <span class="n">執行類型</span>
 <span class="nc">Parent</span> <span class="n">parent</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Child</span><span class="o">();</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -2529,17 +2529,89 @@ OFF  SZ   TYPE DESCRIPTION               VALUE
  16   4    int Dog.i                     5
 </code></pre></div></div>
 
+<h2 id="反射">反射</h2>
+
+<ul>
+  <li><a href="/pages/java/reflect/#取得父類別所有方法">取得父類別所有方法</a></li>
+</ul>
+
+<p>使用反射知道子類繼承那些方法。</p>
+
+<h2 id="javap">javap</h2>
+<p>使用javap知道執行時物件是誰？執行的方法是來自那個物件。</p>
+
+<p>Dog繼承Animal，執行時使用多型，變數類型是父類Animal，指向Dog物件。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Animal</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">speak</span><span class="o">()</span> <span class="o">{</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Animal sound"</span><span class="o">);</span> <span class="o">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">eat</span><span class="o">()</span> <span class="o">{</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Animal eating"</span><span class="o">);</span> <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="nc">Animal</span> <span class="o">{</span>
+    <span class="nd">@Override</span> 
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">speak</span><span class="o">()</span> <span class="o">{</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Bark!"</span><span class="o">);</span> <span class="o">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fetch</span><span class="o">()</span> <span class="o">{</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Fetching..."</span><span class="o">);</span> <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test1</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Exception</span> <span class="o">{</span>
+        <span class="nc">Animal</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Dog</span><span class="o">();</span>  <span class="c1">// 多型</span>
+        <span class="n">a</span><span class="o">.</span><span class="na">speak</span><span class="o">();</span>             <span class="c1">// 輸出: Bark!</span>
+        <span class="nc">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="mi">5</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">1000</span><span class="o">);</span> <span class="c1">// 讓程序一直執行</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>編譯以上程式碼</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>javac Test1.java
+</code></pre></div></div>
+
+<p>執行javap</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>javap -c -v Test1 
+</code></pre></div></div>
+
+<p>實際呼叫的是Dog()建構子，但使用父類別Animal.speak()。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   #3 = Methodref          #2.#20      //  Dog.&lt;init&gt;:()V
+   #4 = Methodref          #22.#23     // Animal.speak:()V
+
+  #20 = NameAndType        #10:#11     //  "&lt;init&gt;":()V
+  #21 = Utf8               Dog
+  #22 = Class              #29         //  Animal
+  #23 = NameAndType        #30:#11     //  speak:()V
+
+  0: new           #2                  // class Dog
+  4: invokespecial #3                  // Method Dog."&lt;init&gt;":()V
+  9: invokevirtual #4                  // Method Animal.speak:()V
+</code></pre></div></div>
+
 <h2 id="vtable">vtable</h2>
 <p>在Memory Layout中，從8byte開始到11byte結束，佔了4個byte記憶體空間，存放的是vtable的記憶體位址，什麼是vtable？</p>
 
 <p>儲存Dog物件的所有方法。</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>記憶體開始位置/ 佔記憶體大小/ 型別/ 變數/ 存放的值
-OFF  SZ   TYPE DESCRIPTION               VALUE
-  8   4        (object header: class)    0x010033f8
-</code></pre></div></div>
+<p>由於呼叫vtable語法太困難了，以下的vtable是AI模擬出來。</p>
 
-<p>從下面可以發現，Dog有三個方法，分別是equals(), hashCode(), speak()，下面列出每個方法的父類別。</p>
+<p>從下面可以發現，Dog有三個方法，分別是equals(), hashCode(), speak()。</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vtable for Dog:
 [0] Object.equals()@addr1    # 繼承自 Object
 [1] Object.hashCode()@addr2  # 繼承自 Object
@@ -2549,6 +2621,30 @@ OFF  SZ   TYPE DESCRIPTION               VALUE
 <p>由於Dog沒有覆寫父類別的speak()方法，因為在vtable中，speak()方法是來自父類別Animal。</p>
 
 <p>因此以下程式碼執行時，會去看Dog的vtable中的speak()方法，然後才知道要去呼叫Animal.speak()，因為是呼叫Animal類別，所以使用的是Animal類別中的i屬性，印出的結果是10。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Animal</span> <span class="o">{</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>  <span class="c1">// 父類欄位</span>
+  <span class="kt">void</span> <span class="nf">speak</span><span class="o">()</span> <span class="o">{</span> 
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span> 
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="nc">Animal</span> <span class="o">{</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>  <span class="c1">// 子類同名欄位</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2586,7 +2682,7 @@ OFF  SZ   TYPE DESCRIPTION               VALUE
 [1] Animal.hashCode()@234567  # 繼承自 Object
 [2] Dog.speak()@345678        
 </code></pre></div></div>
-<p>由上面可以發現，vtable<a href="/pages/java/wrap/">2</a>已經變成Dog.speak()。</p>
+<p>由上面可以發現，vtable[2]已經變成Dog.speak()。</p>
 
 <p>執行以下程式碼，結果為5，因為是呼叫Dog類別，所以使用的是Dog類別中的i屬性。</p>
 
@@ -2823,7 +2919,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-26 02:07:57 +0800"
+        "time": "2025-05-27 16:25:06 +0800"
     },
     "basePath": "",
     "book": {

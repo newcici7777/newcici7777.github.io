@@ -334,6 +334,10 @@ cout << "Parent name = " << grandChild.Child::Parent::name_ << endl;
 ## 父類別子類別大小
 
 ### sizeof
+Prerequisites:
+
+- [operator new delete][1]
+
 以下的程式範例可以看出父類別有3個int變數(m1,m2,m3)，int大小為4byte，所以父類別總共為12byte<br>
 子類別只有1個int變數(m4)，4byte，但子類別會繼承父類別的變數，所以12byte + 4byte = 16byte，因此子類別建立的記憶體大小為16byte。<br>
 透過自建operator new()函式，可以看到建立Child的大小為16byte。<br>
@@ -388,7 +392,6 @@ cl 原始檔案 /d1 reportSingleClassLayout類別名
 cl test.cpp /d1 reportSingleClassLayoutTestA
 ```
 
-#### Parent
 mac使用以下語法  
 -A 10 代表只印出10筆  
 ```
@@ -396,6 +399,7 @@ clang++ -Xclang -fdump-record-layouts -c 原始檔案.cpp | grep -A 10 "class �
 clang++ -Xclang -fdump-record-layouts -c test1.cpp | grep -A 10 "class Parent"
 ```
 
+#### Parent
 拿上一個範例的程式碼，顯示出來的記憶體布局如下:  
 ```
          0 | class Parent
@@ -435,3 +439,5 @@ clang++ -Xclang -fdump-record-layouts -c test1.cpp | grep -A 10 "class Child"
 - Child m4_從12byte開始
 
 子類別本身包含了父類別的成員變數，所以Child的大小為16byte。
+
+[1]: {% link _pages/c/dynamicMemory/operator_new_delete.md %}

@@ -1465,7 +1465,7 @@
     	<a href="/pages/java/reflect/" data-nav-link> 反射</a>
         
             
-                <ul><li><a href="#class" data-nav-link " >Class</a></li><li><a href="#測試的程式碼" data-nav-link " >測試的程式碼</a></li><li><a href="#classforname" data-nav-link " >Class.forName</a></li><li><a href="#類別名class" data-nav-link " >類別名.class</a></li><li><a href="#getclass" data-nav-link " >getClass()</a></li><li><a href="#取得父類別" data-nav-link " >取得父類別</a></li><li><a href="#取得介面" data-nav-link " >取得介面</a></li><li><a href="#取得public屬性" data-nav-link " >取得public屬性</a></li><li><a href="#取得所有屬性" data-nav-link " >取得所有屬性</a></li><li><a href="#取得public方法與所有方法" data-nav-link " >取得public方法與所有方法</a></li><li><a href="#取得public建構子與private建構子" data-nav-link " >取得public建構子與private建構子</a></li><li><a href="#使用private建構子建立物件並呼叫私有方法" data-nav-link " >使用private建構子建立物件並呼叫私有方法</a></li><li><a href="#使用public建構子與參數" data-nav-link " >使用public建構子與參數</a></li><li><a href="#在另一個project跟上一個程式碼同一個package下寫以下程式碼並編譯" data-nav-link " >在另一個Project，跟上一個程式碼同一個package下寫以下程式碼，並編譯</a></li><li><a href="#熱部署" data-nav-link " >熱部署</a></li></ul>
+                <ul><li><a href="#class" data-nav-link " >Class</a></li><li><a href="#測試的程式碼" data-nav-link " >測試的程式碼</a></li><li><a href="#classforname" data-nav-link " >Class.forName</a></li><li><a href="#類別名class" data-nav-link " >類別名.class</a></li><li><a href="#getclass" data-nav-link " >getClass()</a></li><li><a href="#取得父類別" data-nav-link " >取得父類別</a></li><li><a href="#取得介面" data-nav-link " >取得介面</a></li><li><a href="#取得public屬性" data-nav-link " >取得public屬性</a></li><li><a href="#取得所有屬性" data-nav-link " >取得所有屬性</a></li><li><a href="#取得public方法與所有方法" data-nav-link " >取得public方法與所有方法</a></li><li><a href="#取得父類別所有方法" data-nav-link " >取得父類別所有方法</a></li><li><a href="#取得public建構子與private建構子" data-nav-link " >取得public建構子與private建構子</a></li><li><a href="#使用private建構子建立物件並呼叫私有方法" data-nav-link " >使用private建構子建立物件並呼叫私有方法</a></li><li><a href="#使用public建構子與參數" data-nav-link " >使用public建構子與參數</a></li><li><a href="#在另一個project跟上一個程式碼同一個package下寫以下程式碼並編譯" data-nav-link " >在另一個Project，跟上一個程式碼同一個package下寫以下程式碼，並編譯</a></li><li><a href="#熱部署" data-nav-link " >熱部署</a></li></ul>
 
             
         </li>
@@ -2710,11 +2710,21 @@ private java.lang.String reflect.Duck.info
 9
 10
 11
+12
+13
+14
+15
+16
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Exception</span> <span class="o">{</span>
     <span class="nc">Class</span> <span class="n">class1</span> <span class="o">=</span> <span class="nc">Duck</span><span class="o">.</span><span class="na">class</span><span class="o">;</span>
+    <span class="c1">// getMethods只有public的方法</span>
     <span class="nc">Method</span><span class="o">[]</span> <span class="n">methods</span> <span class="o">=</span> <span class="n">class1</span><span class="o">.</span><span class="na">getMethods</span><span class="o">();</span>
+    <span class="k">for</span> <span class="o">(</span><span class="nc">Method</span> <span class="n">method</span> <span class="o">:</span> <span class="n">methods</span><span class="o">)</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">method</span><span class="o">);</span>
+    <span class="o">}</span>
 
+    <span class="c1">// getDeclaredMethods() 包含所有public,private方法</span>
     <span class="nc">Method</span><span class="o">[]</span> <span class="n">dmethods</span> <span class="o">=</span> <span class="n">class1</span><span class="o">.</span><span class="na">getDeclaredMethods</span><span class="o">();</span>
     <span class="k">for</span> <span class="o">(</span><span class="nc">Method</span> <span class="n">method</span> <span class="o">:</span> <span class="n">dmethods</span><span class="o">)</span> <span class="o">{</span>
       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">method</span><span class="o">);</span>
@@ -2731,6 +2741,69 @@ public void reflect.Duck.swim()
 public void reflect.Duck.setInfo(java.lang.String)
 </code></pre></div></div>
 
+<h2 id="取得父類別所有方法">取得父類別所有方法</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test3</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Class</span><span class="o">&lt;?&gt;</span> <span class="n">clazz</span> <span class="o">=</span> <span class="nc">Dog</span><span class="o">.</span><span class="na">class</span><span class="o">;</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Methods in class: "</span> <span class="o">+</span> <span class="n">clazz</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+    <span class="k">for</span> <span class="o">(</span><span class="nc">Method</span> <span class="n">method</span> <span class="o">:</span> <span class="n">clazz</span><span class="o">.</span><span class="na">getDeclaredMethods</span><span class="o">())</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">method</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="c1">// parent</span>
+    <span class="nc">Class</span><span class="o">&lt;?&gt;</span> <span class="n">superclass</span> <span class="o">=</span> <span class="n">clazz</span><span class="o">.</span><span class="na">getSuperclass</span><span class="o">();</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Methods in Parent: "</span> <span class="o">+</span> <span class="n">clazz</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+    <span class="k">for</span> <span class="o">(</span><span class="nc">Method</span> <span class="n">method</span> <span class="o">:</span> <span class="n">superclass</span><span class="o">.</span><span class="na">getDeclaredMethods</span><span class="o">())</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">method</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Animal</span> <span class="o">{</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>  <span class="c1">// 父類欄位</span>
+  <span class="kt">void</span> <span class="nf">speak</span><span class="o">()</span> <span class="o">{</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span> <span class="o">}</span>  <span class="c1">// 印出 this.i</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="nc">Animal</span> <span class="o">{</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>  <span class="c1">// 子類同名欄位</span>
+  <span class="c1">//void speak() { System.out.println(i); }</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Methods in class: wrap.Dog
+Methods in Parent: wrap.Dog
+void wrap.Animal.speak()
+</code></pre></div></div>
+
 <h2 id="取得public建構子與private建構子">取得public建構子與private建構子</h2>
 
 <figure class="highlight">
@@ -2745,11 +2818,13 @@ public void reflect.Duck.setInfo(java.lang.String)
 9
 10
 11
+12
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Exception</span> <span class="o">{</span>
     <span class="nc">Class</span> <span class="n">class1</span> <span class="o">=</span> <span class="nc">Duck</span><span class="o">.</span><span class="na">class</span><span class="o">;</span>
     <span class="nc">Constructor</span><span class="o">[]</span> <span class="n">constructors</span> <span class="o">=</span> <span class="n">class1</span><span class="o">.</span><span class="na">getConstructors</span><span class="o">();</span>
 
+    <span class="c1">// getDeclaredConstructors() 包含所有public,private</span>
     <span class="nc">Constructor</span><span class="o">[]</span> <span class="n">dconstructors</span> <span class="o">=</span> <span class="n">class1</span><span class="o">.</span><span class="na">getDeclaredConstructors</span><span class="o">();</span>
     <span class="k">for</span> <span class="o">(</span><span class="nc">Constructor</span> <span class="n">constructor</span> <span class="o">:</span> <span class="n">dconstructors</span><span class="o">)</span> <span class="o">{</span>
       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">constructor</span><span class="o">);</span>
@@ -3109,7 +3184,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-26 02:07:57 +0800"
+        "time": "2025-05-27 16:25:06 +0800"
     },
     "basePath": "",
     "book": {

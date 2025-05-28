@@ -156,8 +156,13 @@ private java.lang.String reflect.Duck.info
 public class Test {
   public static void main(String[] args) throws Exception {
     Class class1 = Duck.class;
+    // getMethods只有public的方法
     Method[] methods = class1.getMethods();
+    for (Method method : methods) {
+      System.out.println(method);
+    }
 
+    // getDeclaredMethods() 包含所有public,private方法
     Method[] dmethods = class1.getDeclaredMethods();
     for (Method method : dmethods) {
       System.out.println(method);
@@ -173,6 +178,41 @@ public void reflect.Duck.swim()
 public void reflect.Duck.setInfo(java.lang.String)
 ```
 
+## 取得父類別所有方法
+{% highlight java linenos %}
+public class Test3 {
+  public static void main(String[] args) {
+    Class<?> clazz = Dog.class;
+    System.out.println("Methods in class: " + clazz.getName());
+    for (Method method : clazz.getDeclaredMethods()) {
+      System.out.println(method);
+    }
+
+    // parent
+    Class<?> superclass = clazz.getSuperclass();
+    System.out.println("Methods in Parent: " + clazz.getName());
+    for (Method method : superclass.getDeclaredMethods()) {
+      System.out.println(method);
+    }
+  }
+}
+
+class Animal {
+  int i = 10;  // 父類欄位
+  void speak() { System.out.println(i); }  // 印出 this.i
+}
+
+class Dog extends Animal {
+  int i = 5;  // 子類同名欄位
+  //void speak() { System.out.println(i); }
+}
+{% endhighlight %}
+```
+Methods in class: wrap.Dog
+Methods in Parent: wrap.Dog
+void wrap.Animal.speak()
+```
+
 ## 取得public建構子與private建構子
 {% highlight java linenos %}
 public class Test {
@@ -180,12 +220,14 @@ public class Test {
     Class class1 = Duck.class;
     Constructor[] constructors = class1.getConstructors();
 
+    // getDeclaredConstructors() 包含所有public,private
     Constructor[] dconstructors = class1.getDeclaredConstructors();
     for (Constructor constructor : dconstructors) {
       System.out.println(constructor);
     }
   }
 }
+
 {% endhighlight %}
 ```
 public reflect.Duck()
