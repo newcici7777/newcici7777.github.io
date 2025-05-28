@@ -467,7 +467,7 @@ static方法、static變數、static靜態內部類別，是在JVM啟動時，Cl
 ## 區域內部類別
 - 定義在方法或代碼塊中的類別
 - 不能使用 public、private 或 protected 修飾
-- 只能被該方法或代碼塊內的代碼存取
+- 只能被該方法或程式碼區塊內的程式碼使用。
 
 {% highlight java linenos %}
 public class Test2 {

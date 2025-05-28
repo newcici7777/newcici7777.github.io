@@ -3113,7 +3113,7 @@ finally
 </table>
 
 <h2 id="finally">finally</h2>
-<p>不管有沒有例外，都要執行，常用在關閉串流，資源釋放與關閉。</p>
+<p>不管有沒有例外，都要執行，常用在關閉串流，資源(檔案打開與關閉、資料庫連線、網路連線)釋放與關閉。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3154,7 +3154,7 @@ finally
 <h3 id="tryfinally">try…finally</h3>
 <p>這個語法沒有補捉例外，一樣會crash，主要意義在於，不管執行過程有沒有例外，在程序crash前，一定要執行finally{}程式區塊。</p>
 
-<p>可能用於寫Log或關閉釋放資源。</p>
+<p>可能用於寫Log或關閉釋放資源，什麼是資源？例如:打開檔案，讀取裡面的內容，檔案就是資源。DB資料庫連線，離開程序，要關閉DB資料庫連線，DB資料庫就是資源。網路連線，網路中斷，網路就是資源。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3567,7 +3567,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-28 13:21:31 +0800"
+        "time": "2025-05-28 15:50:49 +0800"
     },
     "basePath": "",
     "book": {

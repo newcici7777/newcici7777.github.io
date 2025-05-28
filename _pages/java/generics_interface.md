@@ -11,7 +11,7 @@ Prerequisites:
 ## 語法
 在類別名後面，用尖括號包住\<自訂類型\>。
 
-自訂類型的名稱可用T, R, K, V 任意一個大寫字母。
+自訂類型可用T, R, K, V 任意一個大寫字母。
 
 {% highlight java linenos %}
 interface 介面名<T, R, M> {
