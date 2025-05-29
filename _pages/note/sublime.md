@@ -18,3 +18,7 @@ keywords: sublime
 ![img]({{site.imgurl}}/sublime/sublime_fontsize1.png)
 
 ![img]({{site.imgurl}}/sublime/sublime_fontsize2.png)
+
+## 取代\\n
+
+![img]({{site.imgurl}}/sublime/sublime_n.png)

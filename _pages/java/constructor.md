@@ -17,7 +17,6 @@ class Child extends Father{
 {% highlight java linenos %}
 class Father {
   public Father() {
-
   }
 }
 
@@ -145,7 +144,6 @@ Child無參數建構子
     Child child = new Child("Momo");
   }
 {% endhighlight %}
-
 
 {% highlight java linenos %}
 class Grandpa {
