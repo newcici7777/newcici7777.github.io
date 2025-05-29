@@ -36,8 +36,6 @@ public class Test {
 {% endhighlight %}
 ```
 =============Boolean===================
-# WARNING: Unable to get Instrumentation. Dynamic Attach failed. You may add this JAR as -javaagent manually, or supply -Djdk.attach.allowAttachSelf
-# WARNING: Unable to attach Serviceability Agent. You can try again with escalated privileges. Two options: a) use -Djol.tryWithSudo=true to try with sudo; b) echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
 java.lang.Boolean object internals:
 OFF  SZ      TYPE DESCRIPTION               VALUE
   0   8           (object header: mark)     0x0000000000000001 (non-biasable; age: 0)

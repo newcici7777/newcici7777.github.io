@@ -121,6 +121,61 @@ Cat cat = new Cat();
 Cat<Object, Object, Object> cat = new Cat<>();
 {% endhighlight %}
 
+## 泛型類型可以使用子類別
+類別B繼承類別A
+{% highlight java linenos %}
+class A {}
+class B extends A {}
+{% endhighlight %}
+
+Student，有泛型類型T屬性，與建構子。
+{% highlight java linenos %}
+class Student<T> {
+  private T t;
+
+  public Student(T t) {
+    this.t = t;
+  }
+}
+{% endhighlight %}
+
+由以下的範例可以知道，泛型類型是可以用子類別。
+{% highlight java linenos %}
+  Student<A> s3 = new Student<>(new A());
+  // 泛型類型是父類別A，但建構子放的是子類別B
+  Student<A> s4 = new Student<>(new B());
+{% endhighlight %}
+
+以下的程式碼也都是正確的，ArrayList是List的子類別，也是Object的子類別。
+{% highlight java linenos %}
+  Student<List> s1 = new Student<>(new ArrayList<>());
+  Student<Object> s2 = new Student<>(new ArrayList<>());
+{% endhighlight %}
+
+## 基本型別自動轉成包裝類別
+
+- [包裝類別][2]
+
+貓咪類別
+{% highlight java linenos %}
+class Cat<T, R, M> {
+  private T t;
+  private R r;
+  private M m;
+
+  public Cat(T t, R r, M m) {
+    this.t = t;
+    this.r = r;
+    this.m = m;
+  }
+}
+{% endhighlight %}
+
+指定泛型類型，並建立物件，注意！建構子的參數都是基本型態，但內部會自動把12.5轉成Double類別，1轉成Integer類別。
+{% highlight java linenos %}
+Cat<Double, Boolean, Integer> cat = new Cat<>(12.5, true, 1);
+{% endhighlight %}
+
 ## 使用getClass()知道泛型類型
 {% highlight java linenos %}
 class Cat<T, R, M> {
@@ -318,3 +373,4 @@ public class Test {
 ```
 
 [1]: {% link _pages/java/memory_model.md %}#物件建立過程
+[2]: {% link _pages/java/wrap.md %}

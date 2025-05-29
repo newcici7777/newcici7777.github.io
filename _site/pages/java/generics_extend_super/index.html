@@ -1378,13 +1378,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/constructor/" data-nav-link> 建構子</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/memory_model/" data-nav-link> Java Memory Model</a>
         
             
@@ -1407,6 +1400,30 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/callby_value/" data-nav-link> Call by value</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 繼承 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/inheritance/" data-nav-link> 繼承</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/constructor/" data-nav-link> 建構子</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/super/" data-nav-link> super</a>
         
             
         </li></ul></li>
@@ -2414,59 +2431,7 @@
     	<a href="/pages/note/mac/mac_time/" data-nav-link> mac時光機</a>
         
             
-        </li></ul></li></ul></li>
-	
-	
-	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> leetcode </a><ul>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/leetcode/118/" data-nav-link> 118,119 Pascal's Triangle</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/leetcode/linkedlist/" data-nav-link> MyLinkedList數據結構</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/leetcode/1367/" data-nav-link> 1367</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/leetcode/572/" data-nav-link> 572 Subtree of Another Tree</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/leetcode/144/" data-nav-link> 144 Binary Tree Preorder Traversal</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/leetcode/n01/" data-nav-link> 產生N個01的組合</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/leetcode/240/" data-nav-link> Leetcode 240 剑指 Offer 04. 二维数组中的查找</a>
-        
-            
-        </li></ul></li></ul>
+        </li></ul></li></ul></li></ul>
     </nav>
 </div>
             <div class="book-body">
@@ -2508,7 +2473,7 @@
 </figure>
 
 <h2 id="-extends">? extends</h2>
-<p>泛型類型只能是Number的子類別，包含Number類別。</p>
+<p>泛型類型只能是Number或Number的子類別。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2553,7 +2518,7 @@
     <span class="n">printNumberList</span><span class="o">(</span><span class="n">charlist</span><span class="o">);</span>
   <span class="o">}</span>
 
-  <span class="c1">// 參數類型只能是Number的子類別</span>
+  <span class="c1">// 參數泛型類型只能是Number或Number的子類別</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printNumberList</span><span class="o">(</span><span class="nc">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="nc">Number</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">for</span> <span class="o">(</span><span class="nc">Number</span> <span class="n">number</span> <span class="o">:</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">number</span><span class="o">);</span>
@@ -2567,7 +2532,7 @@
 </code></pre></div></div>
 
 <h2 id="-supper">? supper</h2>
-<p>泛型類型只能是Integer的父類別，包含Integer自己。</p>
+<p>泛型類型只能是Integer或Integer父類別。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2604,6 +2569,8 @@
 24
 25
 26
+27
+28
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test1</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
@@ -2618,12 +2585,14 @@
     <span class="n">printParent</span><span class="o">(</span><span class="n">objlist</span><span class="o">);</span>
   <span class="o">}</span>
 
+  <span class="c1">// 參數泛型類型只能是Number或Number的子類別</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printNumberList</span><span class="o">(</span><span class="nc">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="nc">Number</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">for</span> <span class="o">(</span><span class="nc">Number</span> <span class="n">number</span> <span class="o">:</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">number</span><span class="o">);</span>
     <span class="o">}</span>
   <span class="o">}</span>
 
+  <span class="c1">// 參數泛型類型只能是Character或Character父類別</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printParent</span><span class="o">(</span><span class="nc">List</span><span class="o">&lt;?</span> <span class="kd">super</span> <span class="nc">Character</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">for</span> <span class="o">(</span><span class="nc">Object</span> <span class="n">o</span> <span class="o">:</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">o</span><span class="o">);</span>
@@ -2642,7 +2611,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>以下程式編譯成功。</p>
+<p>不管任何類型的list都可以使用printAnyType()方法。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2677,6 +2646,9 @@
 30
 31
 32
+33
+34
+35
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test1</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
@@ -2691,18 +2663,21 @@
     <span class="n">printAnyType</span><span class="o">(</span><span class="n">objlist</span><span class="o">);</span>
   <span class="o">}</span>
 
+  <span class="c1">// 參數泛型類型只能是Number或Number的子類別</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printNumberList</span><span class="o">(</span><span class="nc">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="nc">Number</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">for</span> <span class="o">(</span><span class="nc">Number</span> <span class="n">number</span> <span class="o">:</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">number</span><span class="o">);</span>
     <span class="o">}</span>
   <span class="o">}</span>
 
+  <span class="c1">// 參數泛型類型只能是Character或Character父類別</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printParent</span><span class="o">(</span><span class="nc">List</span><span class="o">&lt;?</span> <span class="kd">super</span> <span class="nc">Character</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">for</span> <span class="o">(</span><span class="nc">Object</span> <span class="n">o</span> <span class="o">:</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">o</span><span class="o">);</span>
     <span class="o">}</span>
   <span class="o">}</span>
 
+  <span class="c1">// 參數泛型類型可以是任何類型</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printAnyType</span><span class="o">(</span><span class="nc">List</span><span class="o">&lt;?&gt;</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">for</span> <span class="o">(</span><span class="nc">Object</span> <span class="n">o</span> <span class="o">:</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">o</span><span class="o">);</span>
@@ -2902,7 +2877,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-29 01:21:15 +0800"
+        "time": "2025-05-29 15:32:55 +0800"
     },
     "basePath": "",
     "book": {

@@ -213,6 +213,31 @@ Methods in Parent: wrap.Dog
 void wrap.Animal.speak()
 ```
 
+將以上取得父類別方法改善如下，方便以後做測試，只要輸入「package.類別名」。
+{% highlight java linenos %}
+public class Test {
+  public static void main(String[] args) throws ClassNotFoundException {
+    // 參數是「package.類別名」
+    getClzMethod(Class.forName("inherit.A"));
+  }
+
+  public static void getClzMethod(Class<?> clz) {
+    Class<?> clazz = clz;
+    System.out.println("Methods in class: " + clazz.getName());
+    for (Method method : clazz.getDeclaredMethods()) {
+      System.out.println(method);
+    }
+    System.out.println("------------------");
+    // parent
+    Class<?> superclass = clazz.getSuperclass();
+    System.out.println("Methods in Parent: " + clazz.getName());
+    for (Method method : superclass.getDeclaredMethods()) {
+      System.out.println(method);
+    }
+  }
+}
+{% endhighlight %}
+
 ## 取得public建構子與private建構子
 {% highlight java linenos %}
 public class Test {
