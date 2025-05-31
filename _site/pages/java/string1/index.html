@@ -1409,6 +1409,23 @@
     	<a href="/pages/java/equals_compare/" data-nav-link> ==與equals</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/object/" data-nav-link> Object</a>
+        
+            
+        </li>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/java/string1/" data-nav-link> String</a>
+        
+            
+                <ul><li><a href="#建立方式" data-nav-link " >建立方式</a><ul><li><a href="#字串常數" data-nav-link " >字串常數</a></li><li><a href="#建構子" data-nav-link " >建構子</a></li><li><a href="#建構子與常數的記憶體位址不同" data-nav-link " >建構子與常數的記憶體位址不同</a></li><li><a href="#二者建立方式的記憶體模型" data-nav-link " >二者建立方式的記憶體模型</a></li></ul></li><li><a href="#string-equals" data-nav-link " >String equals</a></li><li><a href="#string-intern" data-nav-link " >String intern()</a></li><li><a href="#string被指派其它常數就是建立物件" data-nav-link " >String被指派其它常數就是建立物件</a></li><li><a href="#二個字串常數相加" data-nav-link " >二個字串常數相加</a></li><li><a href="#二個字串變數相加" data-nav-link " >二個字串變數相加</a></li><li><a href="#string實作comparable" data-nav-link " >String實作Comparable</a></li><li><a href="#string-與-io" data-nav-link " >String 與 IO</a></li></ul>
+
+            
         </li></ul></li>
 	
 	
@@ -1431,6 +1448,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/extends_memory/" data-nav-link> 繼承Memory Layout</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/extends_tricky/" data-nav-link> 繼承 Tricky</a>
         
             
         </li>
@@ -2022,6 +2046,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/extends/" data-nav-link> 繼承與覆寫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/kotlin/any/" data-nav-link> Any</a>
         
             
@@ -2030,13 +2061,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/data_class/" data-nav-link> Data class</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/extends/" data-nav-link> 繼承與覆寫</a>
         
             
         </li></ul></li></ul></li>
@@ -2505,31 +2529,326 @@
                         <h1 id="/pages/java/string1">String</h1>
                     
 
-                    <h2 id="字串常數">字串常數</h2>
-<p>String用來儲存一段文字，或稱為字串常數。</p>
+                    <p>Prerequisites:</p>
 
+<ul>
+  <li><a href="/pages/java/memory_model/">Memory Model</a></li>
+  <li><a href="/pages/java/equals_compare/">== 比較</a></li>
+</ul>
+
+<h2 id="建立方式">建立方式</h2>
+<p>建立方式有二種，一種是指向字串常數，一種是使用建構子。</p>
+
+<h3 id="字串常數">字串常數</h3>
 <p>什麼是字串常數？""雙引號包住的字串是常數。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"這個就是字串常數"</span><span class="o">;</span>
+</pre></td><td class="code"><pre><span class="nc">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"這個就是字串常數"</span><span class="o">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="final-char陣列">final char陣列</h2>
-<p>String其實是final不可被繼承的char[]字元陣列。</p>
+<p>字串常數記憶體模型</p>
 
-<h2 id="建構子">建構子</h2>
+<p><img src="/assets/img/java/str1.png" alt="img" /></p>
+
+<ol>
+  <li>在String pool找有沒有Hello的字串，沒有就建立記憶體空間放Hello。</li>
+  <li>Stack中s1變數指向String pool中Hello的記憶體位址。</li>
+</ol>
+
+<h3 id="建構子">建構子</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="nc">String</span> <span class="n">s</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h4 id="string有一個value屬性">String有一個value屬性</h4>
+<p>value是final char[]，存放字串。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="code"><pre><span class="nc">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">();</span>
-<span class="nc">String</span> <span class="n">s2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="nc">String</span> <span class="n">s</span><span class="o">);</span>
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nc">String</span>
+    <span class="kd">implements</span> <span class="n">java</span><span class="o">.</span><span class="na">io</span><span class="o">.</span><span class="na">Serializable</span><span class="o">,</span> <span class="nc">Comparable</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;,</span> <span class="nc">CharSequence</span> <span class="o">{</span>
+    <span class="c1">// 存放字串</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="kt">char</span> <span class="n">value</span><span class="o">[];</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>./build/macosx-x86_64-server-fastdebug/jdk/bin/java -XX:+UnlockDiagnosticVMOptions -XX:+PrintVtableStats -version</p>
+<h4 id="建構子記憶體模型">建構子記憶體模型</h4>
+
+<p><img src="/assets/img/java/str2.png" alt="img" /></p>
+
+<ol>
+  <li>建立記憶體空間</li>
+  <li>將Stack中s1變數指向記憶體位址</li>
+  <li>在String pool找有沒有Hi的字串，沒有就建立記憶體空間放Hi。</li>
+  <li>String有一個value屬性，指向String pool中的Hi記憶體位址。</li>
+</ol>
+
+<h3 id="建構子與常數的記憶體位址不同">建構子與常數的記憶體位址不同</h3>
+<p>從以上的記憶體模型，可以發現常數建立的字串，變數是指向String Pool中的記憶體位址。</p>
+
+<p>而用new String()建立的字串，變數指向的是Heap中的記憶體位址。</p>
+
+<p>==對類別而言，是用來比較記憶體位址是否相等，String是類別。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="o">;</span>
+    <span class="nc">String</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="o">;</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"s1 == s2 "</span> <span class="o">+</span> <span class="o">(</span><span class="n">s1</span> <span class="o">==</span> <span class="n">s2</span><span class="o">));</span>
+    <span class="nc">String</span> <span class="n">s3</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="s">"Hello"</span><span class="o">);</span>
+    <span class="nc">String</span> <span class="n">s4</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="s">"Hello"</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"s3 == s4 "</span> <span class="o">+</span> <span class="o">(</span><span class="n">s3</span> <span class="o">==</span> <span class="n">s4</span><span class="o">));</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"s1 == s3 "</span> <span class="o">+</span> <span class="o">(</span><span class="n">s1</span> <span class="o">==</span> <span class="n">s3</span><span class="o">));</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>s1 == s2 true
+s3 == s4 false
+s1 == s3 false
+</code></pre></div></div>
+
+<h3 id="二者建立方式的記憶體模型">二者建立方式的記憶體模型</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="o">;</span>
+    <span class="nc">String</span> <span class="n">s2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="s">"Hello"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p><img src="/assets/img/java/str3.png" alt="img" /></p>
+
+<ol>
+  <li>在String pool找有沒有Hello的字串，沒有就建立記憶體空間放Hello。</li>
+  <li>s1變數指向String Pool中Hello的記憶體位址。</li>
+</ol>
+
+<p><img src="/assets/img/java/str4.png" alt="img" /></p>
+
+<ol>
+  <li>建立記憶體空間</li>
+  <li>將Stack中s2變數指向記憶體位址</li>
+  <li>在String pool找有沒有Hello的字串，沒有就建立記憶體空間放Hello。</li>
+  <li>String有一個value屬性，指向String pool中的Hello記憶體位址。</li>
+</ol>
+
+<h2 id="string-equals">String equals</h2>
+
+<ul>
+  <li><a href="/pages/java/equals_compare/">String與equals()</a></li>
+</ul>
+
+<p>相同的內容不想再寫一遍，請詳見上述連結。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="o">;</span>
+    <span class="nc">String</span> <span class="n">s2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="s">"Hello"</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"s1 equals s2 "</span> <span class="o">+</span> <span class="n">s1</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">s2</span><span class="o">));</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"s1 == s2 "</span> <span class="o">+</span> <span class="o">(</span><span class="n">s1</span> <span class="o">==</span> <span class="n">s2</span><span class="o">));</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>s1 equals s2 true
+s1 == s2 false
+</code></pre></div></div>
+
+<h2 id="string-intern">String intern()</h2>
+<p>intern() 取出value屬性，指向String Pool中的記憶體位址。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="o">;</span>
+    <span class="nc">String</span> <span class="n">s2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="s">"Hello"</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"s1 equals s2 "</span> <span class="o">+</span> <span class="n">s1</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">s2</span><span class="o">));</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"s1 == s2 "</span> <span class="o">+</span> <span class="o">(</span><span class="n">s1</span> <span class="o">==</span> <span class="n">s2</span><span class="o">));</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"s1 == s2.intern() "</span> <span class="o">+</span> <span class="o">(</span><span class="n">s1</span> <span class="o">==</span> <span class="n">s2</span><span class="o">.</span><span class="na">intern</span><span class="o">()));</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"s2 == s2.intern() "</span> <span class="o">+</span> <span class="o">(</span><span class="n">s2</span> <span class="o">==</span> <span class="n">s2</span><span class="o">.</span><span class="na">intern</span><span class="o">()));</span>
+    <span class="c1">// s2 指向Heap中的記憶體位址</span>
+    <span class="c1">// s2.intern()指向String Pool中的記憶體位址</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>s1 equals s2 true
+s1 == s2 false
+s1 == s2.intern() true
+s2 == s2.intern() false
+</code></pre></div></div>
+<h2 id="string被指派其它常數就是建立物件">String被指派其它常數就是建立物件</h2>
+
+<p>value是final char[]，存放字串。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nc">String</span>
+    <span class="kd">implements</span> <span class="n">java</span><span class="o">.</span><span class="na">io</span><span class="o">.</span><span class="na">Serializable</span><span class="o">,</span> <span class="nc">Comparable</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;,</span> <span class="nc">CharSequence</span> <span class="o">{</span>
+    <span class="c1">// 存放字串</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="kt">char</span> <span class="n">value</span><span class="o">[];</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>String Pool建立Hello，s1指向Hello記憶體位址。</p>
+
+<p><img src="/assets/img/java/str5.png" alt="img" /></p>
+
+<p>因為value屬性是final，所以不能修改原字串內容，直接指向其它記憶體位址。</p>
+
+<p>String Pool建立Hi，s1指向Hi記憶體位址。</p>
+
+<p><img src="/assets/img/java/str5.png" alt="img" /></p>
+
+<p>Hello在String Pool中有，s1指向Hello記憶體位址。</p>
+
+<p><img src="/assets/img/java/str5.png" alt="img" /></p>
+
+<h2 id="二個字串常數相加">二個字串常數相加</h2>
+<p>編譯器看到<code class="language-plaintext highlighter-rouge">"Hello" + " World"</code>就視為一組字串。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span> <span class="o">+</span> <span class="s">" World"</span><span class="o">;</span>
+    <span class="nc">String</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">"Hello World"</span><span class="o">;</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"s1 == s2 "</span> <span class="o">+</span> <span class="o">(</span><span class="n">s1</span> <span class="o">==</span> <span class="n">s2</span><span class="o">));</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>s1 == s2 true
+</code></pre></div></div>
+
+<p>由結果可知s1與s2是相等的。</p>
+
+<h2 id="二個字串變數相加">二個字串變數相加</h2>
+<p>字串變數相加會呼叫StringBuilder的append()方法，最後會回傳<code class="language-plaintext highlighter-rouge">new String(value, 0, cout)</code></p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="o">;</span>
+    <span class="nc">String</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">" World"</span><span class="o">;</span>
+    <span class="nc">String</span> <span class="n">s3</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span><span class="o">;</span>  <span class="c1">// 傳回Heap中的記憶體位址</span>
+    <span class="nc">String</span> <span class="n">s4</span> <span class="o">=</span> <span class="s">"Hello World"</span><span class="o">;</span>  <span class="c1">// 傳回String Pool中的記憶體位址</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"s3 == s4 "</span> <span class="o">+</span> <span class="o">(</span><span class="n">s3</span> <span class="o">==</span> <span class="n">s4</span><span class="o">));</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>s3 == s4 false
+</code></pre></div></div>
+
+<p>把上面<code class="language-plaintext highlighter-rouge">s3 = s1 + s2;</code>的程式碼過程如下。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>  <span class="nc">StringBuilder</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuilder</span><span class="o">();</span>
+  <span class="n">sb</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="s">"Hello"</span><span class="o">);</span>
+  <span class="n">sb</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="s">" World"</span><span class="o">);</span>
+  <span class="nc">String</span> <span class="n">s3</span> <span class="o">=</span> <span class="n">sb</span><span class="o">.</span><span class="na">toString</span><span class="o">();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="string實作comparable">String實作Comparable</h2>
+
+<ul>
+  <li><a href="/pages/java/compare/">String與Comparable</a></li>
+</ul>
+
+<p>請詳見上述連結。</p>
+
+<h2 id="string-與-io">String 與 IO</h2>
+
+<ul>
+  <li><a href="/pages/java/string/">String與<code class="language-plaintext highlighter-rouge">char[]</code>和<code class="language-plaintext highlighter-rouge">byte[]</code></a></li>
+</ul>
+
+<p>請詳見上述連結。</p>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2592,7 +2911,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/java/object" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Object">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/java/inheritance" class="navigation navigation-next navigation-unique" aria-label="Next page: 繼承">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -2710,7 +3039,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-31 20:04:15 +0800"
+        "time": "2025-06-01 01:34:12 +0800"
     },
     "basePath": "",
     "book": {
