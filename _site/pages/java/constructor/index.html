@@ -1426,8 +1426,15 @@
     	<a href="/pages/java/constructor/" data-nav-link> 建構子</a>
         
             
-                <ul><li><a href="#子類別預設會繼承父類別無參數建構子" data-nav-link " >子類別預設會繼承父類別無參數建構子</a></li><li><a href="#父類別沒有無參數建構子" data-nav-link " >父類別沒有無參數建構子</a></li><li><a href="#解決辦法" data-nav-link " >解決辦法</a><ul><li><a href="#子類別呼叫任何一個有參數的父建構子" data-nav-link " >子類別呼叫任何一個有參數的父建構子</a></li><li><a href="#父類別加上無參數建構子" data-nav-link " >父類別加上無參數建構子</a></li></ul></li><li><a href="#父類別與子類別建立順序" data-nav-link " >父類別與子類別建立順序</a></li><li><a href="#子類別有參數建構子呼叫順序" data-nav-link " >子類別有參數建構子呼叫順序</a></li><li><a href="#this呼叫無參數建構子" data-nav-link " >this()呼叫無參數建構子</a></li><li><a href="#super與this只能擇一且只能放第一行" data-nav-link " >super()與this()只能擇一，且只能放第一行</a></li><li><a href="#最後一定會呼叫object" data-nav-link " >最後一定會呼叫Object()</a></li><li><a href="#匿名程式碼區塊" data-nav-link " >匿名程式碼區塊</a></li><li><a href="#先執行匿名程式碼區塊再執行建構子" data-nav-link " >先執行匿名程式碼區塊，再執行建構子</a></li></ul>
+                <ul><li><a href="#子類別預設呼叫super" data-nav-link " >子類別預設呼叫super()</a></li><li><a href="#父類別沒有無參數建構子" data-nav-link " >父類別沒有無參數建構子</a></li><li><a href="#解決辦法" data-nav-link " >解決辦法</a><ul><li><a href="#子類別呼叫任何一個有參數的父建構子" data-nav-link " >子類別呼叫任何一個有參數的父建構子</a></li><li><a href="#父類別加上無參數建構子" data-nav-link " >父類別加上無參數建構子</a></li></ul></li><li><a href="#父類別與子類別建立順序" data-nav-link " >父類別與子類別建立順序</a></li><li><a href="#子類別有參數建構子呼叫順序" data-nav-link " >子類別有參數建構子呼叫順序</a></li><li><a href="#this呼叫無參數建構子" data-nav-link " >this()呼叫無參數建構子</a></li><li><a href="#super與this只能擇一且只能放第一行" data-nav-link " >super()與this()只能擇一，且只能放第一行</a></li><li><a href="#最後一定會呼叫object" data-nav-link " >最後一定會呼叫Object()</a></li><li><a href="#匿名程式碼區塊" data-nav-link " >匿名程式碼區塊</a></li><li><a href="#先執行匿名程式碼區塊再執行建構子" data-nav-link " >先執行匿名程式碼區塊，再執行建構子</a></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/extends_memory/" data-nav-link> 繼承Memory Layout</a>
+        
             
         </li>
 	
@@ -1460,11 +1467,28 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 內部類別 </a><ul>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/java/innerclass/" data-nav-link> 內部類別</a>
         
             
         </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/static_inner/" data-nav-link> 靜態內部類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/static_inner_method/" data-nav-link> 靜態內部類別方法</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="" data-nav-item>
@@ -2011,6 +2035,13 @@
     	<a href="/pages/kotlin/data_class/" data-nav-link> Data class</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/extends/" data-nav-link> 繼承與覆寫</a>
+        
+            
         </li></ul></li></ul></li>
 	
 	
@@ -2477,7 +2508,7 @@
                         <h1 id="/pages/java/constructor">建構子</h1>
                     
 
-                    <h2 id="子類別預設會繼承父類別無參數建構子">子類別預設會繼承父類別無參數建構子</h2>
+                    <h2 id="子類別預設呼叫super">子類別預設呼叫super()</h2>
 <p>以下看似什麼都沒有做。</p>
 
 <figure class="highlight">
@@ -2488,7 +2519,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>但實際上子類別的建構子，會先呼叫父類別無參數建構子，建立完父類別，才建立自己。</p>
+<p>但實際上子類別的建構子，會先呼叫super()父類別無參數建構子super，建立完父類別，才建立自己。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2988,7 +3019,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/super" class="navigation navigation-next navigation-unique" aria-label="Next page: super">
+                        <a href="/pages/java/extends_memory" class="navigation navigation-next navigation-unique" aria-label="Next page: 繼承Memory Layout">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3108,7 +3139,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-31 17:09:39 +0800"
+        "time": "2025-05-31 20:04:15 +0800"
     },
     "basePath": "",
     "book": {

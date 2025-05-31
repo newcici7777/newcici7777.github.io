@@ -1430,6 +1430,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/extends_memory/" data-nav-link> 繼承Memory Layout</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/super/" data-nav-link> super</a>
         
             
@@ -1457,14 +1464,31 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 內部類別 </a><ul>
+	
+	
 	<li class="active" data-nav-item>
     	<a href="/pages/java/innerclass/" data-nav-link> 內部類別</a>
         
             
-                <ul><li><a href="#內部類別inner-class" data-nav-link " >內部類別Inner class</a></li><li><a href="#外部類別outer-class" data-nav-link " >外部類別Outer Class</a></li><li><a href="#建立new內部類別" data-nav-link " >建立new內部類別</a></li><li><a href="#內部類別建構子" data-nav-link " >內部類別建構子</a></li><li><a href="#存取外部類別的成員變數與成員方法" data-nav-link " >存取外部類別的成員變數與成員方法</a></li><li><a href="#內部類別是外部類別的成員" data-nav-link " >內部類別是外部類別的成員</a></li><li><a href="#外部類別可以用new建立內部類別" data-nav-link " >外部類別可以用new建立內部類別</a></li><li><a href="#外部類別可以使用內部類的方法" data-nav-link " >外部類別可以使用內部類的方法</a></li><li><a href="#內部類別可以有publicprivateprotecteddefault" data-nav-link " >內部類別可以有public、private、protected、default</a></li><li><a href="#私有內部類別" data-nav-link " >私有內部類別</a></li><li><a href="#靜態內部類別" data-nav-link " >靜態內部類別</a><ul><li><a href="#使用靜態內部類別" data-nav-link " >使用靜態內部類別</a></li><li><a href="#static關鍵字" data-nav-link " >static關鍵字</a></li><li><a href="#建立new靜態內部類別" data-nav-link " >建立new靜態內部類別</a></li><li><a href="#靜態內部類別建構子" data-nav-link " >靜態內部類別建構子</a></li><li><a href="#靜態內部類別的靜態方法" data-nav-link " >靜態內部類別的靜態方法</a></li><li><a href="#靜態內部類別的成員方法" data-nav-link " >靜態內部類別的成員方法</a></li><li><a href="#使用到靜態內部類別才會被建立" data-nav-link " >使用到靜態內部類別才會被建立</a></li></ul></li><li><a href="#靜態內部類別與jvm" data-nav-link " >靜態內部類別與jvm</a></li><li><a href="#區域內部類別" data-nav-link " >區域內部類別</a></li></ul>
+                <ul><li><a href="#內部類別inner-class" data-nav-link " >內部類別Inner class</a></li><li><a href="#外部類別outer-class" data-nav-link " >外部類別Outer Class</a></li><li><a href="#建立new內部類別" data-nav-link " >建立new內部類別</a></li><li><a href="#內部類別建構子" data-nav-link " >內部類別建構子</a></li><li><a href="#存取外部類別的成員變數與成員方法" data-nav-link " >存取外部類別的成員變數與成員方法</a></li><li><a href="#內部類別是外部類別的成員" data-nav-link " >內部類別是外部類別的成員</a></li><li><a href="#外部類別可以用new建立內部類別" data-nav-link " >外部類別可以用new建立內部類別</a></li><li><a href="#外部類別可以使用內部類的方法" data-nav-link " >外部類別可以使用內部類的方法</a></li><li><a href="#內部類別可以有publicprivateprotecteddefault" data-nav-link " >內部類別可以有public、private、protected、default</a></li><li><a href="#私有內部類別" data-nav-link " >私有內部類別</a></li><li><a href="#區域內部類別" data-nav-link " >區域內部類別</a></li></ul>
 
             
         </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/static_inner/" data-nav-link> 靜態內部類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/static_inner_method/" data-nav-link> 靜態內部類別方法</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="" data-nav-item>
@@ -2009,6 +2033,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/data_class/" data-nav-link> Data class</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/extends/" data-nav-link> 繼承與覆寫</a>
         
             
         </li></ul></li></ul></li>
@@ -2751,498 +2782,6 @@ outter staticval = Static val
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="靜態內部類別">靜態內部類別</h2>
-<p>進行以下的內容，請先讀過以下2篇文章:</p>
-<ul>
-  <li><a href="/pages/java/static/">Static</a></li>
-  <li><a href="/pages/java/constructor/">建構子</a></li>
-</ul>
-
-<h3 id="使用靜態內部類別">使用靜態內部類別</h3>
-<p>什麼是靜態內部類別？其實也是一個類別，只是外部類別變成名稱空間，呼叫靜態內部類別的靜態方法，這樣呼叫:</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">外部類別</span><span class="o">.</span><span class="na">靜態內部類別</span><span class="o">.</span><span class="na">靜態方法</span><span class="o">();</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>呼叫靜態方法時，類別名也變成名稱空間，這樣呼叫:</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">類別</span><span class="o">.</span><span class="na">靜態方法</span><span class="o">();</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>以上呼叫的方法如出一徹。</p>
-
-<h3 id="static關鍵字">static關鍵字</h3>
-<p>在內部類前面加上static的關鍵字就變成靜態內部類別。</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">InnerStaticClass</span> <span class="o">{</span>
-    
-  <span class="o">}</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="建立new靜態內部類別">建立new靜態內部類別</h3>
-<p>語法</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>外部類別.內部類別 變數 = new 外部類別.內部類別()
-</code></pre></div></div>
-
-<p>注意！靜態內部類別建立的方式為「內部類別」差距很大，不相同。</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">Static_class</span> <span class="o">{</span>
-  <span class="o">}</span>
-
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">Test</span><span class="o">.</span><span class="na">StaticClass</span> <span class="n">staticClass</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">.</span><span class="na">StaticClass</span><span class="o">();</span>
-    <span class="n">staticClass</span><span class="o">.</span><span class="na">inner_memthod</span><span class="o">();</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>如果在外部類別中的main靜態函式建立類別，前面可以不用外部類別。</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">Static_class</span> <span class="o">{</span>
-  <span class="o">}</span>
-
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">StaticClass</span> <span class="n">staticClass</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StaticClass</span><span class="o">();</span>
-    <span class="n">staticClass</span><span class="o">.</span><span class="na">inner_memthod</span><span class="o">();</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="靜態內部類別建構子">靜態內部類別建構子</h3>
-<p>之前提過靜態內部類別就是類別，只是外部類別變成名稱空間，所以一定有建構子。</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">Static_class</span> <span class="o">{</span>
-    <span class="n">Static_class</span><span class="o">()</span> <span class="o">{</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"靜態內部類別建構子"</span><span class="o">);</span>
-    <span class="o">}</span>
-  <span class="o">}</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">Test</span><span class="o">.</span><span class="na">Static_class</span> <span class="n">staticClass</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">.</span><span class="na">Static_class</span><span class="o">();</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>靜態內部類別建構子
-</code></pre></div></div>
-
-<h3 id="靜態內部類別的靜態方法">靜態內部類別的靜態方法</h3>
-<ul>
-  <li>只能存取外部靜態變數與靜態方法</li>
-  <li>只能存取內部靜態變數與靜態方法</li>
-</ul>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="nc">String</span> <span class="n">static_name</span> <span class="o">=</span> <span class="s">"外部靜態變數"</span><span class="o">;</span>
-  <span class="kd">public</span> <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"外部成員變數"</span><span class="o">;</span>
-  
-  <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">staticMethod1</span><span class="o">()</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"外部靜態方法"</span><span class="o">);</span>
-  <span class="o">}</span>
-
-  <span class="kd">private</span> <span class="kt">void</span> <span class="nf">method1</span><span class="o">()</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"外部方法"</span><span class="o">);</span>
-  <span class="o">}</span>
-
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">Static_class</span> <span class="o">{</span>
-    <span class="nc">String</span> <span class="n">innclass_name</span> <span class="o">=</span> <span class="s">"內部變數"</span><span class="o">;</span>
-    <span class="kd">static</span> <span class="nc">String</span> <span class="n">innclass_static_name</span> <span class="o">=</span> <span class="s">"內部靜態變數"</span><span class="o">;</span>
-    
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">innerMethod1</span><span class="o">()</span> <span class="o">{</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"內部方法"</span><span class="o">);</span>
-    <span class="o">}</span>
-
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">innerStaticMethod1</span><span class="o">()</span> <span class="o">{</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"內部靜態方法"</span><span class="o">);</span>
-    <span class="o">}</span>
-
-    <span class="c1">// 內部類的靜態方法</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">inner_static_memthod</span><span class="o">()</span> <span class="o">{</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"靜態內部類 靜態方法區塊"</span><span class="o">);</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"外部類別 靜態變數:"</span> <span class="o">+</span> <span class="n">static_name</span><span class="o">);</span>
-      <span class="n">staticMethod1</span><span class="o">();</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"靜態內部類 靜態成員屬性innclass_static_name = "</span> <span class="o">+</span> <span class="n">innclass_static_name</span><span class="o">);</span>
-      <span class="n">innerStaticMethod1</span><span class="o">();</span>
-    <span class="o">}</span>
-  <span class="o">}</span>
-
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">Test</span><span class="o">.</span><span class="na">Static_class</span><span class="o">.</span><span class="na">inner_static_memthod</span><span class="o">();</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>靜態內部類 靜態方法區塊
-外部類別 靜態變數:外部靜態變數
-外部靜態方法
-靜態內部類 靜態成員屬性innclass_static_name = 內部靜態變數
-內部靜態方法
-</code></pre></div></div>
-
-<h3 id="靜態內部類別的成員方法">靜態內部類別的成員方法</h3>
-<p>以下無法存取:</p>
-<ul>
-  <li>外部類別成員屬性</li>
-  <li>外部類別成員方法</li>
-</ul>
-
-<p>以下都可以存取</p>
-<ul>
-  <li>內部類別成員屬性</li>
-  <li>內部類別成員方法</li>
-  <li>外部類別靜態屬性</li>
-  <li>外部類別靜態方法</li>
-  <li>內部類別靜態屬性</li>
-  <li>內部類別靜態方法</li>
-</ul>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="nc">String</span> <span class="n">static_name</span> <span class="o">=</span> <span class="s">"外部靜態變數"</span><span class="o">;</span>
-  <span class="kd">public</span> <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"外部成員變數"</span><span class="o">;</span>
-  
-  <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">staticMethod1</span><span class="o">()</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"外部靜態方法"</span><span class="o">);</span>
-  <span class="o">}</span>
-
-  <span class="kd">private</span> <span class="kt">void</span> <span class="nf">method1</span><span class="o">()</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"外部方法"</span><span class="o">);</span>
-  <span class="o">}</span>
-
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">Static_class</span> <span class="o">{</span>
-    <span class="nc">String</span> <span class="n">innclass_name</span> <span class="o">=</span> <span class="s">"內部變數"</span><span class="o">;</span>
-    <span class="kd">static</span> <span class="nc">String</span> <span class="n">innclass_static_name</span> <span class="o">=</span> <span class="s">"內部靜態變數"</span><span class="o">;</span>
-    
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">innerMethod1</span><span class="o">()</span> <span class="o">{</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"內部方法"</span><span class="o">);</span>
-    <span class="o">}</span>
-
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">innerStaticMethod1</span><span class="o">()</span> <span class="o">{</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"內部靜態方法"</span><span class="o">);</span>
-    <span class="o">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">inner_memthod</span><span class="o">()</span> <span class="o">{</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"靜態內部類 成員方法(非靜態)區塊"</span><span class="o">);</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"外部類別 靜態變數:"</span> <span class="o">+</span> <span class="n">static_name</span><span class="o">);</span>
-      <span class="n">staticMethod1</span><span class="o">();</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"靜態內部類 成員屬性innclass_name = "</span> <span class="o">+</span> <span class="n">innclass_name</span><span class="o">);</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"靜態內部類 靜態成員屬性innclass_static_name = "</span> <span class="o">+</span> <span class="n">innclass_static_name</span><span class="o">);</span>
-      <span class="n">innerMethod1</span><span class="o">();</span>
-      <span class="n">innerStaticMethod1</span><span class="o">();</span>
-      <span class="c1">// method1();</span>
-      <span class="c1">// System.out.println("外部類別 變數:" + name);</span>
-    <span class="o">}</span>
-  <span class="o">}</span>
-
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">Test</span><span class="o">.</span><span class="na">Static_class</span> <span class="n">staticClass</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">.</span><span class="na">Static_class</span><span class="o">();</span>
-    <span class="n">staticClass</span><span class="o">.</span><span class="na">inner_memthod</span><span class="o">();</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>靜態內部類 成員方法(非靜態)區塊
-外部類別 靜態變數:外部靜態變數
-外部靜態方法
-靜態內部類 成員屬性innclass_name = 內部變數
-靜態內部類 靜態成員屬性innclass_static_name = 內部靜態變數
-內部方法
-內部靜態方法
-</code></pre></div></div>
-
-<h3 id="使用到靜態內部類別才會被建立">使用到靜態內部類別才會被建立</h3>
-
-<p>注意！當靜態內部類別要用到的時候，才會初始化。</p>
-
-<p>初始化程式碼</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
-  <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"外部匿名區塊"</span><span class="o">);</span>
-  <span class="o">}</span>
-
-  <span class="kd">static</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"外部靜態區塊"</span><span class="o">);</span>
-  <span class="o">}</span>
-
-  <span class="nc">Test</span><span class="o">()</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"外部建構子區塊"</span><span class="o">);</span>
-  <span class="o">}</span>
-
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">staticMethod1</span><span class="o">()</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"外部靜態方法"</span><span class="o">);</span>
-  <span class="o">}</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">Static_class</span> <span class="o">{</span>
-    <span class="n">Static_class</span><span class="o">()</span> <span class="o">{</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"內部類別建構子"</span><span class="o">);</span>
-    <span class="o">}</span>
-
-    <span class="o">{</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"內部匿名區塊"</span><span class="o">);</span>
-    <span class="o">}</span>
-
-    <span class="kd">static</span> <span class="o">{</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"內部靜態區塊"</span><span class="o">);</span>
-    <span class="o">}</span>
-
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">innerStaticMethod1</span><span class="o">()</span> <span class="o">{</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"內部靜態方法"</span><span class="o">);</span>
-    <span class="o">}</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h4 id="未使用靜態內部類別">未使用靜態內部類別</h4>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">Test</span><span class="o">.</span><span class="na">staticMethod1</span><span class="o">();</span>
-  <span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>外部靜態區塊
-外部靜態方法
-</code></pre></div></div>
-
-<p>由以上的結果可以發現，呼叫外部類別的靜態方法時，不會呼叫任何靜態內部類別區塊。</p>
-
-<h4 id="使用靜態內部類別-1">使用靜態內部類別</h4>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">Test</span><span class="o">.</span><span class="na">Static_class</span><span class="o">.</span><span class="na">innerStaticMethod1</span><span class="o">();</span>
-  <span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>外部靜態區塊
-內部靜態區塊
-內部靜態方法
-</code></pre></div></div>
-
-<p>由以上的結果可以發現，呼叫靜態內部類別的方法時，會呼叫靜態內部類別的「靜態區塊」。</p>
-
-<h4 id="建立外部類別">建立外部類別</h4>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">Test</span> <span class="n">test</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">();</span>
-  <span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>外部靜態區塊
-外部匿名區塊
-外部建構子區塊
-</code></pre></div></div>
-
-<p>由以上的結果可以發現，外部類別建立的時候，完全不會建立靜態內部類別的任何代碼。</p>
-
-<h4 id="建立靜態內部類別">建立靜態內部類別</h4>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">Test</span><span class="o">.</span><span class="na">Static_class</span> <span class="n">test</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">.</span><span class="na">Static_class</span><span class="o">();</span>
-  <span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>外部靜態區塊
-內部靜態區塊
-內部匿名區塊
-內部類別建構子
-</code></pre></div></div>
-
-<p>由以上的結果可以發現，外部類別只是名稱空間，建立靜態內部類別的時候，外部類別只會呼叫「靜態區塊」，外部的「匿名區塊」與外部「建構子」，完全沒被呼叫。</p>
-
-<p>而靜態內部類別的「靜態區塊」與「匿名區塊」與「建構子」全呼叫。</p>
-
-<h2 id="靜態內部類別與jvm">靜態內部類別與jvm</h2>
-<p>static方法、static變數、static靜態內部類別，是在JVM啟動時，ClassLoader類別載入器就已經先丟進Method area(Metaspace)的靜態資料區中。</p>
-
 <h2 id="區域內部類別">區域內部類別</h2>
 <ul>
   <li>定義在方法或代碼塊中的類別</li>
@@ -3359,7 +2898,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/anonymous_class" class="navigation navigation-next navigation-unique" aria-label="Next page: 匿名類別">
+                        <a href="/pages/java/static_inner" class="navigation navigation-next navigation-unique" aria-label="Next page: 靜態內部類別">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3479,7 +3018,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-31 17:09:39 +0800"
+        "time": "2025-05-31 20:04:15 +0800"
     },
     "basePath": "",
     "book": {

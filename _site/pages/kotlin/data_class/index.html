@@ -1430,6 +1430,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/extends_memory/" data-nav-link> 繼承Memory Layout</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/super/" data-nav-link> super</a>
         
             
@@ -1457,11 +1464,28 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 內部類別 </a><ul>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/java/innerclass/" data-nav-link> 內部類別</a>
         
             
         </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/static_inner/" data-nav-link> 靜態內部類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/static_inner_method/" data-nav-link> 靜態內部類別方法</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="" data-nav-item>
@@ -2011,6 +2035,13 @@
                 <ul><li><a href="#與" data-nav-link " >==與===</a></li><li><a href="#tostring" data-nav-link " >toString()</a></li></ul>
 
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/extends/" data-nav-link> 繼承與覆寫</a>
+        
+            
         </li></ul></li></ul></li>
 	
 	
@@ -2535,26 +2566,6 @@ compare = false
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Airplane(id=1, capacity=500)
 </code></pre></div></div>
 
-<p>如果沒有使用data class，預設toString()是印出package+class name@16進制的hashCode</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">val</span> <span class="py">obj1</span> <span class="p">=</span> <span class="nc">Airplane</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
-    <span class="nf">println</span><span class="p">(</span><span class="n">obj1</span><span class="p">.</span><span class="nf">toString</span><span class="p">())</span>
-<span class="p">}</span>
-<span class="kd">class</span> <span class="nc">Airplane</span><span class="p">(</span><span class="kd">val</span> <span class="py">id</span><span class="p">:</span><span class="nc">Int</span><span class="p">,</span> <span class="kd">val</span> <span class="py">capacity</span><span class="p">:</span><span class="nc">Int</span> <span class="p">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Airplane@5674cd4d
-</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2625,7 +2636,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/compose/text" class="navigation navigation-next navigation-unique" aria-label="Next page: Compose Text">
+                        <a href="/pages/kotlin/extends" class="navigation navigation-next navigation-unique" aria-label="Next page: 繼承與覆寫">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2641,6 +2652,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "繼承 Tricky",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/java/extends_tricky.md",
+            "ref": "_pages/java/extends_tricky.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -2736,7 +2756,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-31 17:09:39 +0800"
+        "time": "2025-05-31 20:04:15 +0800"
     },
     "basePath": "",
     "book": {

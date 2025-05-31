@@ -1430,6 +1430,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/extends_memory/" data-nav-link> 繼承Memory Layout</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/super/" data-nav-link> super</a>
         
             
@@ -1457,6 +1464,9 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 內部類別 </a><ul>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/java/innerclass/" data-nav-link> 內部類別</a>
         
@@ -1464,11 +1474,25 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/static_inner/" data-nav-link> 靜態內部類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/static_inner_method/" data-nav-link> 靜態內部類別方法</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="active" data-nav-item>
     	<a href="/pages/java/anonymous_class/" data-nav-link> 匿名類別</a>
         
             
-                <ul><li><a href="#抽象類別的匿名子類別" data-nav-link " >抽象類別的匿名子類別</a><ul><li><a href="#建立抽象類別human與抽象方法speak" data-nav-link " >建立抽象類別Human，與抽象方法speak()</a></li><li><a href="#建立一個簡單的類別testhuman類別中有一個test方法參數是human類別用來測試多型只要是human的子類別都可以作為參數傳入" data-nav-link " >建立一個簡單的類別TestHuman，類別中有一個test()方法，參數是Human類別，用來測試多型，只要是Human的子類別，都可以作為參數傳入。</a></li><li><a href="#建立main主程式" data-nav-link " >建立Main主程式</a></li><li><a href="#匿名的方式建立子類別1" data-nav-link " >匿名的方式建立子類別1</a></li><li><a href="#匿名花括號" data-nav-link " >匿名花括號{}</a></li><li><a href="#匿名的方式建立子類別2" data-nav-link " >匿名的方式建立子類別2</a></li><li><a href="#匿名的方式建立子類別3" data-nav-link " >匿名的方式建立子類別3</a></li></ul></li><li><a href="#類別的匿名子類別" data-nav-link " >類別的匿名子類別</a></li><li><a href="#方法參數為匿名類別" data-nav-link " >方法參數為匿名類別</a></li><li><a href="#介面interface的匿名類別" data-nav-link " >介面(Interface)的匿名類別</a></li></ul>
+                <ul><li><a href="#抽象類別的匿名子類別" data-nav-link " >抽象類別的匿名子類別</a><ul><li><a href="#匿名的方式建立子類別1" data-nav-link " >匿名的方式建立子類別1</a></li><li><a href="#匿名花括號" data-nav-link " >匿名花括號{}</a></li><li><a href="#匿名的方式建立子類別2" data-nav-link " >匿名的方式建立子類別2</a></li><li><a href="#匿名的方式建立子類別3" data-nav-link " >匿名的方式建立子類別3</a></li></ul></li><li><a href="#類別的匿名子類別" data-nav-link " >類別的匿名子類別</a></li><li><a href="#方法參數為匿名類別" data-nav-link " >方法參數為匿名類別</a></li><li><a href="#介面interface的匿名類別" data-nav-link " >介面(Interface)的匿名類別</a></li></ul>
 
             
         </li>
@@ -2011,6 +2035,13 @@
     	<a href="/pages/kotlin/data_class/" data-nav-link> Data class</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/extends/" data-nav-link> 繼承與覆寫</a>
+        
+            
         </li></ul></li></ul></li>
 	
 	
@@ -2485,9 +2516,7 @@
 </ul>
 
 <h2 id="抽象類別的匿名子類別">抽象類別的匿名子類別</h2>
-<h3 id="建立抽象類別human與抽象方法speak">建立抽象類別Human，與抽象方法speak()</h3>
-
-<p>Human.java</p>
+<p>建立抽象類別Human，與抽象方法speak()</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2499,9 +2528,9 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="建立一個簡單的類別testhuman類別中有一個test方法參數是human類別用來測試多型只要是human的子類別都可以作為參數傳入">建立一個簡單的類別TestHuman，類別中有一個test()方法，參數是Human類別，用來測試多型，只要是Human的子類別，都可以作為參數傳入。</h3>
+<p>建立一個簡單的類別TestHuman，類別中有一個test()方法。</p>
 
-<p>TestHuman.java</p>
+<p>參數是Human類別，用來測試多型，只要是Human的子類別，都可以作為參數傳入。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2517,8 +2546,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="建立main主程式">建立Main主程式</h3>
-<p>用new的方式，建立TestHuman物件，並使用test()方法</p>
+<p>建立TestHuman物件，並使用test()方法</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2537,11 +2565,13 @@
 </figure>
 
 <h3 id="匿名的方式建立子類別1">匿名的方式建立子類別1</h3>
-<p>建立匿名子類別步驟如下:<br />
-1.new 抽象類別() {}<br />
-要用 <code class="language-plaintext highlighter-rouge">new 抽象類別()</code>，最重重要的是，後面要加上花括號{}</p>
+<p>語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>new 抽象類別() {}  
+</code></pre></div></div>
 
-<p>2.在test()方法中，加上步驟1的參數<code class="language-plaintext highlighter-rouge">new 抽象類別() {}</code></p>
+<ol>
+  <li>呼叫test()，參數為<code class="language-plaintext highlighter-rouge">new 抽象類別() {}</code></li>
+</ol>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2549,7 +2579,9 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>3.在花括號中，覆寫(Override)抽象類別Human的抽象方法speak()</p>
+<ol>
+  <li>在花括號{}中，覆寫speak()</li>
+</ol>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2567,7 +2599,9 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>4.加上要覆寫的內容</p>
+<ol>
+  <li>加上要覆寫的內容</li>
+</ol>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2918,7 +2952,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/java/innerclass" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 內部類別">
+                        <a href="/pages/java/static_inner_method" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 靜態內部類別方法">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -3045,7 +3079,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-31 17:09:39 +0800"
+        "time": "2025-05-31 20:04:15 +0800"
     },
     "basePath": "",
     "book": {

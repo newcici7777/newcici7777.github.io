@@ -3,14 +3,14 @@ title: 建構子
 date: 2025-04-17
 keywords: Java, constructor
 ---
-## 子類別預設會繼承父類別無參數建構子
+## 子類別預設呼叫super()
 以下看似什麼都沒有做。
 {% highlight java linenos %}
 class Father {}
 class Child extends Father {}
 {% endhighlight %}
 
-但實際上子類別的建構子，會先呼叫父類別無參數建構子，建立完父類別，才建立自己。
+但實際上子類別的建構子，會先呼叫super()父類別無參數建構子super，建立完父類別，才建立自己。
 {% highlight java linenos %}
 class Father {
   public Father() {  }

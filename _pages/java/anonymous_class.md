@@ -9,18 +9,16 @@ Prerequisites:
 - [介面][3]
 
 ## 抽象類別的匿名子類別
-### 建立抽象類別Human，與抽象方法speak()
-
-Human.java
+建立抽象類別Human，與抽象方法speak()
 {% highlight java linenos %}
 abstract class Human {
   abstract void speak();
 }
 {% endhighlight %}
 
-### 建立一個簡單的類別TestHuman，類別中有一個test()方法，參數是Human類別，用來測試多型，只要是Human的子類別，都可以作為參數傳入。
+建立一個簡單的類別TestHuman，類別中有一個test()方法。
 
-TestHuman.java
+參數是Human類別，用來測試多型，只要是Human的子類別，都可以作為參數傳入。
 {% highlight java linenos %}
 public class TestHuman {
   void test(Human human) {
@@ -29,8 +27,7 @@ public class TestHuman {
 }
 {% endhighlight %}
 
-### 建立Main主程式
-用new的方式，建立TestHuman物件，並使用test()方法
+建立TestHuman物件，並使用test()方法
 {% highlight java linenos %}
 public class Test {
   public static void main(String[] args) {
@@ -41,16 +38,17 @@ public class Test {
 {% endhighlight %}
 
 ### 匿名的方式建立子類別1
-建立匿名子類別步驟如下:  
-1.new 抽象類別() {}  
-要用 `new 抽象類別()`，最重重要的是，後面要加上花括號{}
+語法
+```  
+new 抽象類別() {}  
+```
 
-2.在test()方法中，加上步驟1的參數`new 抽象類別() {}`  
+1. 呼叫test()，參數為`new 抽象類別() {}`  
 {% highlight java linenos %}
   testHuman.test(new 抽象類別 () {});
 {% endhighlight %}
 
-3.在花括號中，覆寫(Override)抽象類別Human的抽象方法speak()  
+2. 在花括號\{\}中，覆寫speak()  
 {% highlight java linenos %}
   testHuman.test(new Human() {
     @Override
@@ -60,7 +58,7 @@ public class Test {
   });
 {% endhighlight %}
 
-4.加上要覆寫的內容  
+3. 加上要覆寫的內容  
 {% highlight java linenos %}
   testHuman.test(new Human() {
     @Override
