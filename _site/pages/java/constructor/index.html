@@ -2483,14 +2483,8 @@
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-3
-4
-5
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Father</span> <span class="o">{</span>
-<span class="o">}</span>
-
-<span class="kd">class</span> <span class="nc">Child</span> <span class="kd">extends</span> <span class="nc">Father</span><span class="o">{</span>
-<span class="o">}</span>
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Father</span> <span class="o">{}</span>
+<span class="kd">class</span> <span class="nc">Child</span> <span class="kd">extends</span> <span class="nc">Father</span> <span class="o">{}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -2506,13 +2500,9 @@
 7
 8
 9
-10
-11
 </pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Father</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="nf">Father</span><span class="o">()</span> <span class="o">{</span>
-  <span class="o">}</span>
+  <span class="kd">public</span> <span class="nf">Father</span><span class="o">()</span> <span class="o">{</span>  <span class="o">}</span>
 <span class="o">}</span>
-
 <span class="kd">class</span> <span class="nc">Child</span> <span class="kd">extends</span> <span class="nc">Father</span><span class="o">{</span>
   <span class="kd">public</span> <span class="nf">Child</span><span class="o">()</span> <span class="o">{</span>
     <span class="kd">super</span><span class="o">();</span>  <span class="c1">// 先呼叫父類別無參數建構子，建立父類別</span>
@@ -2557,9 +2547,7 @@
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Child</span> <span class="kd">extends</span> <span class="nc">Parent</span><span class="o">{</span>
-<span class="o">}</span>
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Child</span> <span class="kd">extends</span> <span class="nc">Parent</span> <span class="o">{}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -2581,7 +2569,6 @@
 </figure>
 
 <h2 id="解決辦法">解決辦法</h2>
-
 <h3 id="子類別呼叫任何一個有參數的父建構子">子類別呼叫任何一個有參數的父建構子</h3>
 <p>在 Java 中，當一個類別（Child）繼承自另一個類別（Parent），而父類別沒有無參數的建構函式（default constructor）時，子類別必須明確地呼叫父類別的某個建構函式（使用 super(…)）。</p>
 
@@ -2649,9 +2636,9 @@
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">Child</span> <span class="n">child</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Child</span><span class="o">();</span>
-  <span class="o">}</span>
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+  <span class="nc">Child</span> <span class="n">child</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Child</span><span class="o">();</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -2676,15 +2663,12 @@
 18
 19
 20
-21
-22
 </pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Grandpa</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="nf">Grandpa</span><span class="o">()</span> <span class="o">{</span>
     <span class="c1">// 3.建立Grandpa</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Grandpa無參數建構子"</span><span class="o">);</span>
   <span class="o">}</span>
 <span class="o">}</span>
-
 <span class="kd">class</span> <span class="nc">Father</span> <span class="kd">extends</span> <span class="nc">Grandpa</span><span class="o">{</span>
   <span class="kd">public</span> <span class="nf">Father</span><span class="o">()</span> <span class="o">{</span>
     <span class="kd">super</span><span class="o">();</span>  <span class="c1">// 2.先呼叫父類別無參數建構子</span>
@@ -2692,7 +2676,6 @@
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Father無參數建構子"</span><span class="o">);</span>  
   <span class="o">}</span>
 <span class="o">}</span>
-
 <span class="kd">class</span> <span class="nc">Child</span> <span class="kd">extends</span> <span class="nc">Father</span><span class="o">{</span>
   <span class="kd">public</span> <span class="nf">Child</span><span class="o">()</span> <span class="o">{</span>
     <span class="kd">super</span><span class="o">();</span>  <span class="c1">// 1.先呼叫父類別無參數建構子</span>
@@ -2715,9 +2698,9 @@ Child無參數建構子
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">Child</span> <span class="n">child</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Child</span><span class="o">(</span><span class="s">"Momo"</span><span class="o">);</span>
-  <span class="o">}</span>
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+  <span class="nc">Child</span> <span class="n">child</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Child</span><span class="o">(</span><span class="s">"Momo"</span><span class="o">);</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -2791,9 +2774,9 @@ Child有參數建構子
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">Child</span> <span class="n">child</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Child</span><span class="o">(</span><span class="s">"Momo"</span><span class="o">);</span>
-  <span class="o">}</span>
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+  <span class="nc">Child</span> <span class="n">child</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Child</span><span class="o">(</span><span class="s">"Momo"</span><span class="o">);</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -2823,15 +2806,12 @@ Child有參數建構子
 23
 24
 25
-26
-27
 </pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Grandpa</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="nf">Grandpa</span><span class="o">()</span> <span class="o">{</span>
     <span class="c1">// 4.建立Grandpa</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Grandpa無參數建構子"</span><span class="o">);</span>
   <span class="o">}</span>
 <span class="o">}</span>
-
 <span class="kd">class</span> <span class="nc">Father</span> <span class="kd">extends</span> <span class="nc">Grandpa</span><span class="o">{</span>
   <span class="kd">public</span> <span class="nf">Father</span><span class="o">()</span> <span class="o">{</span>
     <span class="kd">super</span><span class="o">();</span>  <span class="c1">// 3.先呼叫父類別無參數建構子</span>
@@ -2839,7 +2819,6 @@ Child有參數建構子
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Father無參數建構子"</span><span class="o">);</span>
   <span class="o">}</span>
 <span class="o">}</span>
-
 <span class="kd">class</span> <span class="nc">Child</span> <span class="kd">extends</span> <span class="nc">Father</span><span class="o">{</span>
   <span class="kd">public</span> <span class="nf">Child</span><span class="o">()</span> <span class="o">{</span>
     <span class="kd">super</span><span class="o">();</span><span class="c1">// 2.先呼叫父類別無參數建構子</span>
@@ -2921,17 +2900,13 @@ Child有參數建構子
 9
 10
 11
-12
-13
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="o">{</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"匿名區塊"</span><span class="o">);</span>
   <span class="o">}</span>
-
   <span class="nc">Test</span><span class="o">()</span> <span class="o">{</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"建構子區塊"</span><span class="o">);</span>
   <span class="o">}</span>
-
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="nc">Test</span> <span class="n">test</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">();</span>
   <span class="o">}</span>
@@ -3133,7 +3108,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-30 01:01:29 +0800"
+        "time": "2025-05-31 17:09:39 +0800"
     },
     "basePath": "",
     "book": {

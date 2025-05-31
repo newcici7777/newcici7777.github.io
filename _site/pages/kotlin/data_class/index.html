@@ -2008,7 +2008,7 @@
     	<a href="/pages/kotlin/data_class/" data-nav-link> Data class</a>
         
             
-                
+                <ul><li><a href="#與" data-nav-link " >==與===</a></li><li><a href="#tostring" data-nav-link " >toString()</a></li></ul>
 
             
         </li></ul></li></ul></li>
@@ -2484,11 +2484,77 @@
   <li><a href="/pages/java/equals_compare/">Java ==與equals</a></li>
 </ul>
 
+<h2 id="與">==與===</h2>
 <p>一般類別繼承Any，所以==與===都是比較記憶體位址是否相同。</p>
 
-<p>Data class資料類別會自動覆寫equals()與toString()，
+<p>Data class資料類別會自動覆寫equals()，
 所以==是比較內容是否相同，===是比較記憶體位址是否相同。</p>
 
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">obj1</span> <span class="p">=</span> <span class="nc">Airplane</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+    <span class="kd">val</span> <span class="py">obj2</span> <span class="p">=</span> <span class="nc">Airplane</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"equals = ${obj1 == obj2}"</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"compare = ${obj1 === obj2}"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="kd">data class</span> <span class="nc">Airplane</span><span class="p">(</span><span class="kd">val</span> <span class="py">id</span><span class="p">:</span><span class="nc">Int</span><span class="p">,</span> <span class="kd">val</span> <span class="py">capacity</span><span class="p">:</span><span class="nc">Int</span> <span class="p">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>equals = true
+compare = false
+</code></pre></div></div>
+<h2 id="tostring">toString()</h2>
+<p>Data class資料類別會自動覆寫toString()。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">obj1</span> <span class="p">=</span> <span class="nc">Airplane</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">obj1</span><span class="p">.</span><span class="nf">toString</span><span class="p">())</span>
+<span class="p">}</span>
+<span class="kd">data class</span> <span class="nc">Airplane</span><span class="p">(</span><span class="kd">val</span> <span class="py">id</span><span class="p">:</span><span class="nc">Int</span><span class="p">,</span> <span class="kd">val</span> <span class="py">capacity</span><span class="p">:</span><span class="nc">Int</span> <span class="p">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Airplane(id=1, capacity=500)
+</code></pre></div></div>
+
+<p>如果沒有使用data class，預設toString()是印出package+class name@16進制的hashCode</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">obj1</span> <span class="p">=</span> <span class="nc">Airplane</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">obj1</span><span class="p">.</span><span class="nf">toString</span><span class="p">())</span>
+<span class="p">}</span>
+<span class="kd">class</span> <span class="nc">Airplane</span><span class="p">(</span><span class="kd">val</span> <span class="py">id</span><span class="p">:</span><span class="nc">Int</span><span class="p">,</span> <span class="kd">val</span> <span class="py">capacity</span><span class="p">:</span><span class="nc">Int</span> <span class="p">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Airplane@5674cd4d
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2670,7 +2736,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-30 01:01:29 +0800"
+        "time": "2025-05-31 17:09:39 +0800"
     },
     "basePath": "",
     "book": {

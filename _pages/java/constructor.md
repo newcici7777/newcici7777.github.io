@@ -6,20 +6,15 @@ keywords: Java, constructor
 ## 子類別預設會繼承父類別無參數建構子
 以下看似什麼都沒有做。
 {% highlight java linenos %}
-class Father {
-}
-
-class Child extends Father{
-}
+class Father {}
+class Child extends Father {}
 {% endhighlight %}
 
 但實際上子類別的建構子，會先呼叫父類別無參數建構子，建立完父類別，才建立自己。
 {% highlight java linenos %}
 class Father {
-  public Father() {
-  }
+  public Father() {  }
 }
-
 class Child extends Father{
   public Child() {
     super();  // 先呼叫父類別無參數建構子，建立父類別
@@ -48,8 +43,7 @@ public class Parent {
 
 子類別繼承父類別，會產生錯誤。
 {% highlight java linenos %}
-public class Child extends Parent{
-}
+public class Child extends Parent {}
 {% endhighlight %}
 
 原因是，父類別沒有無參數建構子`Parent() {}`，編譯器在編譯時，會添加super()在子類別的建構子中。  
@@ -63,7 +57,6 @@ public class Child extends Parent{
 {% endhighlight %}
 
 ## 解決辦法
-
 ### 子類別呼叫任何一個有參數的父建構子
 在 Java 中，當一個類別（Child）繼承自另一個類別（Parent），而父類別沒有無參數的建構函式（default constructor）時，子類別必須明確地呼叫父類別的某個建構函式（使用 super(...)）。
 
@@ -102,9 +95,9 @@ public class Child extends Parent{
 ## 父類別與子類別建立順序
 建立Child
 {% highlight java linenos %}
-  public static void main(String[] args) {
-    Child child = new Child();
-  }
+public static void main(String[] args) {
+  Child child = new Child();
+}
 {% endhighlight %}
 
 {% highlight java linenos %}
@@ -114,7 +107,6 @@ class Grandpa {
     System.out.println("Grandpa無參數建構子");
   }
 }
-
 class Father extends Grandpa{
   public Father() {
     super();  // 2.先呼叫父類別無參數建構子
@@ -122,7 +114,6 @@ class Father extends Grandpa{
     System.out.println("Father無參數建構子");  
   }
 }
-
 class Child extends Father{
   public Child() {
     super();  // 1.先呼叫父類別無參數建構子
@@ -140,9 +131,9 @@ Child無參數建構子
 ## 子類別有參數建構子呼叫順序
 執行以下程式碼，執行順序是什麼？
 {% highlight java linenos %}
-  public static void main(String[] args) {
-    Child child = new Child("Momo");
-  }
+public static void main(String[] args) {
+  Child child = new Child("Momo");
+}
 {% endhighlight %}
 
 {% highlight java linenos %}
@@ -184,9 +175,9 @@ Child有參數建構子
 ## this()呼叫無參數建構子
 執行以下程式碼，執行順序是什麼？
 {% highlight java linenos %}
-  public static void main(String[] args) {
-    Child child = new Child("Momo");
-  }
+public static void main(String[] args) {
+  Child child = new Child("Momo");
+}
 {% endhighlight %}
 
 {% highlight java linenos %}
@@ -196,7 +187,6 @@ class Grandpa {
     System.out.println("Grandpa無參數建構子");
   }
 }
-
 class Father extends Grandpa{
   public Father() {
     super();  // 3.先呼叫父類別無參數建構子
@@ -204,7 +194,6 @@ class Father extends Grandpa{
     System.out.println("Father無參數建構子");
   }
 }
-
 class Child extends Father{
   public Child() {
     super();// 2.先呼叫父類別無參數建構子
@@ -266,11 +255,9 @@ public class Test {
   {
     System.out.println("匿名區塊");
   }
-
   Test() {
     System.out.println("建構子區塊");
   }
-
   public static void main(String[] args) {
     Test test = new Test();
   }

@@ -2486,9 +2486,13 @@
 <p>Any是所有類別的父類別。</p>
 
 <h2 id="與">===與==</h2>
-<p>類別若沒有覆寫equals的狀況下，===與==都是比較記憶體位址是否相同。</p>
+<p>Any===與==都是比較記憶體位址是否相同。</p>
+
+<p>class繼承Any若沒有覆寫equals的狀況下，==與===的功能是相同的，都是比較記憶體位址。</p>
 
 <p>如同Java的Object，equals()的功能與==是相同的，都是比較記憶體位址是否相同。</p>
+
+<p>obj1與obj2為二個物件。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2509,6 +2513,38 @@
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>equals false
+compare false
+</code></pre></div></div>
+
+<p>將obj2指向obj1記憶體位址。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">obj1</span> <span class="p">=</span> <span class="nc">Airplane</span><span class="p">()</span>
+    <span class="kd">val</span> <span class="py">obj2</span> <span class="p">=</span> <span class="n">obj1</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"equals = ${obj1 == obj2}"</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"compare = ${obj1 === obj2}"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="kd">class</span> <span class="nc">Airplane</span> <span class="p">{</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>equals = true
+compare = true
+</code></pre></div></div>
+
+<p>執行結果==與===都是比較記憶體位址是否相同。</p>
 
 </section>
             </div><div class="search-results">
@@ -2700,7 +2736,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-05-30 01:01:29 +0800"
+        "time": "2025-05-31 17:09:39 +0800"
     },
     "basePath": "",
     "book": {

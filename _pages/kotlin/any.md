@@ -50,4 +50,48 @@ compare = true
 
 執行結果==與===都是比較記憶體位址是否相同。
 
+## toString()
+印出package\+class name@16進制的hashCode
+{% highlight kotlin linenos %}
+fun main() {
+    val obj1 = Airplane(1, 500)
+    println(obj1.toString())
+}
+class Airplane(val id:Int, val capacity:Int = 0) {
+}
+{% endhighlight %}
+```
+Airplane@5674cd4d
+```
+
+印出物件，也是呼叫toString()的方法，以下程式碼的結果跟上面的一樣。
+{% highlight kotlin linenos %}
+fun main() {
+    val obj1 = Airplane(1, 500)
+    println(obj1)
+}
+class Airplane(val id:Int, val capacity:Int = 0) {
+}
+{% endhighlight %}
+```
+Airplane@5674cd4d
+```
+
+## hashCode
+使用記憶體位址進行運算，每個物件的hashCode是不相同的。
+{% highlight kotlin linenos %}
+fun main() {
+    val obj1 = Airplane(1, 500)
+    println(obj1.hashCode())
+}
+class Airplane(val id:Int, val capacity:Int = 0) {
+}
+{% endhighlight %}
+```
+1450495309
+```
+
+
+
+
 [1]: {% link _pages/java/equals_compare.md %}
