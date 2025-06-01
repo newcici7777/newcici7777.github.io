@@ -8,6 +8,8 @@ Prerequisites:
 - [靜態只產生一次][1]
 - [靜態內部類][2]
 - [使用到靜態內部類別才會被建立][3]
+- [外部類別存取private內部類別][4]
+- [靜態內部類別.靜態方法][5]
 
 Singleton 有很多中文翻譯，如∶ 獨體，單例
 
@@ -168,5 +170,7 @@ volatile中文是可見性
 
 
 [1]: {% link _pages/java/static.md %}#靜態只產生一次
-[2]: {% link _pages/java/innerclass.md %}#靜態內部類別
-[3]: {% link _pages/java/innerclass.md %}#使用到靜態內部類別才會被建立
+[2]: {% link _pages/java/static_inner.md %}
+[3]: {% link _pages/java/static_inner.md %}#使用到靜態內部類別才會被建立
+[4]: {% link _pages/java/innerclass.md %}#外部類別可以存取private內部類別與屬性
+[5]: {% link _pages/java/static_inner_method.md %}#靜態方法與Singleton

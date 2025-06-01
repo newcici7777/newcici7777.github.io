@@ -1492,7 +1492,7 @@
     	<a href="/pages/java/innerclass/" data-nav-link> 內部類別</a>
         
             
-                <ul><li><a href="#內部類別inner-class" data-nav-link " >內部類別Inner class</a></li><li><a href="#外部類別outer-class" data-nav-link " >外部類別Outer Class</a></li><li><a href="#建立new內部類別" data-nav-link " >建立new內部類別</a></li><li><a href="#內部類別建構子" data-nav-link " >內部類別建構子</a></li><li><a href="#存取外部類別的成員變數與成員方法" data-nav-link " >存取外部類別的成員變數與成員方法</a></li><li><a href="#內部類別是外部類別的成員" data-nav-link " >內部類別是外部類別的成員</a></li><li><a href="#外部類別可以用new建立內部類別" data-nav-link " >外部類別可以用new建立內部類別</a></li><li><a href="#外部類別可以使用內部類的方法" data-nav-link " >外部類別可以使用內部類的方法</a></li><li><a href="#內部類別可以有publicprivateprotecteddefault" data-nav-link " >內部類別可以有public、private、protected、default</a></li><li><a href="#私有內部類別" data-nav-link " >私有內部類別</a></li><li><a href="#區域內部類別" data-nav-link " >區域內部類別</a></li></ul>
+                <ul><li><a href="#內部類別與外部類別" data-nav-link " >內部類別與外部類別</a></li><li><a href="#內部類別是一個類別" data-nav-link " >內部類別是一個類別</a></li><li><a href="#建立內部類別" data-nav-link " >建立內部類別</a><ul><li><a href="#使用new建立內部類別" data-nav-link " >使用new建立內部類別</a></li><li><a href="#外部類別提供public方法" data-nav-link " >外部類別提供public方法</a></li></ul></li><li><a href="#外部類別的成員屬性是內部類別" data-nav-link " >外部類別的成員屬性是內部類別</a></li><li><a href="#外部類別可以存取private內部類別與屬性" data-nav-link " >外部類別可以存取private內部類別與屬性</a></li><li><a href="#內部類別建構子" data-nav-link " >內部類別建構子</a></li><li><a href="#內部類別可以存取外部類別所有屬性" data-nav-link " >內部類別可以存取外部類別所有屬性</a></li><li><a href="#內部類別繼承" data-nav-link " >內部類別繼承</a></li><li><a href="#內部類別與外部類別屬性名字相同" data-nav-link " >內部類別與外部類別屬性名字相同</a></li><li><a href="#外部類別this" data-nav-link " >外部類別.this</a></li><li><a href="#區域內部類別" data-nav-link " >區域內部類別</a><ul><li><a href="#區域內部類別繼承" data-nav-link " >區域內部類別繼承</a></li></ul></li></ul>
 
             
         </li>
@@ -2529,11 +2529,14 @@
                         <h1 id="/pages/java/innerclass">內部類別</h1>
                     
 
-                    <h2 id="內部類別inner-class">內部類別Inner class</h2>
-<p>在一個類別中，宣告一個類別，這個類別就是內部類。</p>
+                    <h2 id="內部類別與外部類別">內部類別與外部類別</h2>
+<p>在一個類別中，宣告一個類別，這個類別就是內部類別。</p>
 
-<h2 id="外部類別outer-class">外部類別Outer Class</h2>
 <p>包含內部類別的類別稱為外部類別。</p>
+
+<p>內部類別是外部類別的成員。</p>
+
+<p>所謂的成員，就像是屬性、方法，都屬於類別的成員。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2549,11 +2552,15 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="建立new內部類別">建立new內部類別</h2>
+<h2 id="內部類別是一個類別">內部類別是一個類別</h2>
+<p>一般類別該有的存取權限(public、private、protected、default)、屬性、方法、建構子、匿名程式碼區塊、靜態程式碼區塊、靜態變數、靜態方法…等等，內部類別也有。</p>
+
+<h2 id="建立內部類別">建立內部類別</h2>
+<h3 id="使用new建立內部類別">使用new建立內部類別</h3>
 <ol>
   <li>先建立外部類別物件</li>
   <li>建立方式如下
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>外部類別物件變數.new 內部類別()
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>外部類別.內部類別 inner = 外部類別物件.new 內部類別()
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -2569,22 +2576,138 @@
 8
 9
 10
-11
-12
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span> <span class="c1">//外部類別</span>
-  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Inner</span><span class="o">{</span> <span class="c1">// 內部類別</span>
-    
-  <span class="o">}</span>
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="c1">// 建立外部類別</span>
     <span class="nc">Outter</span> <span class="n">outter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Outter</span><span class="o">();</span>
-    <span class="c1">// 再建立內部類別</span>
-    <span class="nc">Inner</span> <span class="n">inner</span> <span class="o">=</span> <span class="n">outter</span><span class="o">.</span><span class="na">new</span> <span class="nf">Inner</span><span class="o">();</span>
-
-  <span class="o">}</span>  
+    <span class="nc">Outter</span><span class="o">.</span><span class="na">Inner</span> <span class="n">inner</span> <span class="o">=</span> <span class="n">outter</span><span class="o">.</span><span class="na">new</span> <span class="nf">Inner</span><span class="o">();;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span> <span class="c1">//外部類別</span>
+  <span class="c1">// 內部類別</span>
+  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Inner</span> <span class="o">{</span> <span class="o">}</span> 
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<h3 id="外部類別提供public方法">外部類別提供public方法</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Outter</span> <span class="n">outter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Outter</span><span class="o">();</span>
+    <span class="nc">Outter</span><span class="o">.</span><span class="na">Inner</span> <span class="n">inner</span> <span class="o">=</span> <span class="n">outter</span><span class="o">.</span><span class="na">getInner</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span> <span class="c1">//外部類別</span>
+  <span class="kd">public</span> <span class="nc">Inner</span> <span class="nf">getInner</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="nf">Inner</span><span class="o">();</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Inner</span> <span class="o">{}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="外部類別的成員屬性是內部類別">外部類別的成員屬性是內部類別</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Outter</span> <span class="n">outter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Outter</span><span class="o">();</span>
+    <span class="c1">// 直接使用內部類別</span>
+    <span class="n">outter</span><span class="o">.</span><span class="na">inner</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="nc">Inner</span> <span class="n">inner</span><span class="o">;</span> <span class="c1">// 成員屬性是內部類別</span>
+  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Inner</span><span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{}</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="nf">Outter</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 建立Outter物件的時候，建立內部類別</span>
+    <span class="n">inner</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Inner</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="外部類別可以存取private內部類別與屬性">外部類別可以存取private內部類別與屬性</h2>
+<p>內部類別權限設為private，代表只有外部類別可以存取，其它類別不能存取內部類別。</p>
+
+<p>以下程式碼呼叫private方法與使用private內部類別</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Outter</span> <span class="n">outter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Outter</span><span class="o">();</span>
+    <span class="n">outter</span><span class="o">.</span><span class="na">callInner</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span> <span class="c1">//外部類別</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">callInner</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 建立private內部類別物件</span>
+    <span class="nc">Inner</span> <span class="n">inner</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Inner</span><span class="o">();</span>
+    <span class="c1">// 呼叫private方法</span>
+    <span class="n">inner</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
+  <span class="o">}</span>
+  <span class="kd">private</span> <span class="kd">class</span> <span class="nc">Inner</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"私有內部類別的方法"</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>私有內部類別的方法
+</code></pre></div></div>
 
 <h2 id="內部類別建構子">內部類別建構子</h2>
 
@@ -2601,16 +2724,18 @@
 10
 11
 12
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span> <span class="c1">//外部類別</span>
+13
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Outter</span> <span class="n">outter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Outter</span><span class="o">();</span>
+    <span class="nc">Outter</span><span class="o">.</span><span class="na">Inner</span> <span class="n">inner</span> <span class="o">=</span> <span class="n">outter</span><span class="o">.</span><span class="na">new</span> <span class="nf">Inner</span><span class="o">();;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span> <span class="c1">//外部類別</span>
   <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Inner</span><span class="o">{</span>
     <span class="nc">Inner</span><span class="o">()</span> <span class="o">{</span>
       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"內部類建構子"</span><span class="o">);</span>
     <span class="o">}</span>
-  <span class="o">}</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="c1">// 建立內部類別</span>
-    <span class="nc">Outter</span> <span class="n">outter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Outter</span><span class="o">();</span>
-    <span class="nc">Inner</span> <span class="n">inner</span> <span class="o">=</span> <span class="n">outter</span><span class="o">.</span><span class="na">new</span> <span class="nf">Inner</span><span class="o">();</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -2619,8 +2744,8 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>內部類建構子
 </code></pre></div></div>
 
-<h2 id="存取外部類別的成員變數與成員方法">存取外部類別的成員變數與成員方法</h2>
-<p>外部類別的成員變數、成員方法、靜態變數、靜態方法，在內部類別是可以存取。</p>
+<h2 id="內部類別可以存取外部類別所有屬性">內部類別可以存取外部類別所有屬性</h2>
+<p>外部類別的private變數、方法、靜態變數、靜態方法，在內部類別是可以存取。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2647,86 +2772,50 @@
 22
 23
 24
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span>
-  <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Outter"</span><span class="o">;</span>
-  <span class="kd">private</span> <span class="kd">static</span> <span class="nc">String</span> <span class="n">staticval</span> <span class="o">=</span> <span class="s">"Static val"</span><span class="o">;</span>
-  <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">staticMethod</span><span class="o">()</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"outterstatic method"</span><span class="o">);</span>
-  <span class="o">}</span>
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">doSomething</span><span class="o">()</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"outter method"</span><span class="o">);</span>
-  <span class="o">}</span>
-  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Inner</span><span class="o">{</span>
-    <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
-      <span class="n">doSomething</span><span class="o">();</span> <span class="c1">// 呼叫外部方法</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"outter name = "</span> <span class="o">+</span> <span class="n">name</span><span class="o">);</span> <span class="c1">// 使用外部變數</span>
-      <span class="n">staticMethod</span><span class="o">();</span> <span class="c1">// 呼叫外部靜態方法</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"outter staticval = "</span> <span class="o">+</span> <span class="n">staticval</span><span class="o">);</span> <span class="c1">//外部靜態變數</span>
-    <span class="o">}</span>
-  <span class="o">}</span>
+25
+26
+27
+28
+29
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="c1">// 建立內部類別</span>
     <span class="nc">Outter</span> <span class="n">outter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Outter</span><span class="o">();</span>
-    <span class="nc">Inner</span> <span class="n">inner</span> <span class="o">=</span> <span class="n">outter</span><span class="o">.</span><span class="na">new</span> <span class="nf">Inner</span><span class="o">();</span>
+    <span class="nc">Outter</span><span class="o">.</span><span class="na">Inner</span> <span class="n">inner</span> <span class="o">=</span> <span class="n">outter</span><span class="o">.</span><span class="na">new</span> <span class="nf">Inner</span><span class="o">();</span>
     <span class="n">inner</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
   <span class="o">}</span>
 <span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span>
+  <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"變數"</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="kd">static</span> <span class="nc">String</span> <span class="n">staticval</span> <span class="o">=</span> <span class="s">"靜態變數"</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">staticMethod</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"靜態方法"</span><span class="o">);</span>
+  <span class="o">}</span>
+  <span class="kd">private</span> <span class="kt">void</span> <span class="nf">method1</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"方法"</span><span class="o">);</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Inner</span><span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+      <span class="c1">// 呼叫外部private方法</span>
+      <span class="n">method1</span><span class="o">();</span>
+      <span class="c1">// 使用外部private變數</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"name = "</span> <span class="o">+</span> <span class="n">name</span><span class="o">);</span>
+      <span class="c1">// 呼叫外部private靜態方法</span>
+      <span class="n">staticMethod</span><span class="o">();</span>
+      <span class="c1">// 外部private靜態變數</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"staticval = "</span> <span class="o">+</span> <span class="n">staticval</span><span class="o">);</span> 
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>outter method
-outter name = Outter
-outterstatic method
-outter staticval = Static val
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>方法
+name = 變數
+靜態方法
+staticval = 靜態變數
 </code></pre></div></div>
 
-<h2 id="內部類別是外部類別的成員">內部類別是外部類別的成員</h2>
-<p>外部類別可以宣告一個內部類別的成員變數</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span>
-  <span class="kd">private</span> <span class="nc">Inner</span> <span class="n">inner</span><span class="o">;</span> <span class="c1">// 成員屬性是內部類別</span>
-  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Inner</span><span class="o">{</span>
-    <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{}</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="外部類別可以用new建立內部類別">外部類別可以用new建立內部類別</h2>
-<p>將成員變數指向內部類別「物件」。</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span>
-  <span class="kd">private</span> <span class="nc">Inner</span> <span class="n">inner</span><span class="o">;</span> <span class="c1">// 成員屬性是內部類別</span>
-  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Inner</span><span class="o">{</span>
-    <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{}</span>
-  <span class="o">}</span>
-  <span class="kd">public</span> <span class="nf">Outter</span><span class="o">()</span> <span class="o">{</span>
-    <span class="c1">// 建立Outter物件的時候，建立內部類別</span>
-    <span class="n">inner</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Inner</span><span class="o">();</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="外部類別可以使用內部類的方法">外部類別可以使用內部類的方法</h2>
+<h2 id="內部類別繼承">內部類別繼承</h2>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2740,46 +2829,45 @@ outter staticval = Static val
 9
 10
 11
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span>
-  <span class="kd">private</span> <span class="nc">Inner</span> <span class="n">inner</span><span class="o">;</span> <span class="c1">// 成員屬性是內部類別</span>
-  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Inner</span><span class="o">{</span>
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Outter</span> <span class="n">outter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Outter</span><span class="o">();</span>
+    <span class="n">outter</span><span class="o">.</span><span class="na">callInnerChild</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span>
+  <span class="kd">private</span> <span class="kd">class</span> <span class="nc">Inner</span><span class="o">{</span>
     <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{}</span>
   <span class="o">}</span>
-  <span class="kd">public</span> <span class="nf">Outter</span><span class="o">()</span> <span class="o">{</span>
-    <span class="c1">// 建立Outter物件的時候，建立內部類別</span>
-    <span class="n">inner</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Inner</span><span class="o">();</span>
-    <span class="n">inner</span><span class="o">.</span><span class="na">print</span><span class="o">();</span> <span class="c1">// 外部類別使用內部類別的方法</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="內部類別可以有publicprivateprotecteddefault">內部類別可以有public、private、protected、default</h2>
-
-<h2 id="私有內部類別">私有內部類別</h2>
-<p>內部類別權限設為private，代表只有Outter這個外部類別可以存取，其它類別不能讀取到PrivateInner這個類別。</p>
-
-<p>私有內部類別</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span>
-  <span class="kd">private</span> <span class="kd">class</span> <span class="nc">privateInner</span> <span class="o">{</span>
+  <span class="kd">private</span> <span class="kd">class</span> <span class="nc">InnerChild</span> <span class="kd">extends</span> <span class="nc">Inner</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
     <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"privateInner"</span><span class="o">);</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"test"</span><span class="o">);</span>
     <span class="o">}</span>
   <span class="o">}</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">callInnerChild</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">InnerChild</span> <span class="n">innerChild</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">InnerChild</span><span class="o">();</span>
+    <span class="n">innerChild</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
+  <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>在其它類別呼叫</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>test
+</code></pre></div></div>
+
+<h2 id="內部類別與外部類別屬性名字相同">內部類別與外部類別屬性名字相同</h2>
+<p>內部類別有name，外部類別有name，使用Outter.this，就可以在內部類別取得外部類別的物件。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2791,23 +2879,88 @@ outter staticval = Static val
 7
 8
 9
+10
+11
+12
+13
+14
+15
+16
+17
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="nc">Outter</span> <span class="n">outter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Outter</span><span class="o">();</span>
-
-    <span class="c1">// 以下程式碼是無法執行的</span>
-    <span class="nc">Outter</span><span class="o">.</span><span class="na">privateInner</span> <span class="n">privateInner</span> <span class="o">=</span> <span class="n">outter</span><span class="o">.</span><span class="na">new</span> <span class="nf">privateInner</span><span class="o">();</span>
-    <span class="n">privateInner</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
+    <span class="nc">Outter</span><span class="o">.</span><span class="na">Inner</span> <span class="n">inner</span> <span class="o">=</span> <span class="n">outter</span><span class="o">.</span><span class="na">new</span> <span class="nf">Inner</span><span class="o">();</span>
+    <span class="n">inner</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span>
+  <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Outter"</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Inner</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Inner"</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Inner name = "</span> <span class="o">+</span> <span class="n">name</span><span class="o">);</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Outter name = "</span> <span class="o">+</span> <span class="nc">Outter</span><span class="o">.</span><span class="na">this</span><span class="o">.</span><span class="na">name</span><span class="o">);</span>
+    <span class="o">}</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Inner name = Inner
+Outter name = Outter
+</code></pre></div></div>
+
+<h2 id="外部類別this">外部類別.this</h2>
+<p>Outter.this與建立outter物件，hashCode都是一模一樣，為相同的物件。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Outter</span> <span class="n">outter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Outter</span><span class="o">();</span>
+    <span class="nc">Outter</span><span class="o">.</span><span class="na">Inner</span> <span class="n">inner</span> <span class="o">=</span> <span class="n">outter</span><span class="o">.</span><span class="na">new</span> <span class="nf">Inner</span><span class="o">();</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">outter</span><span class="o">.</span><span class="na">hashCode</span><span class="o">());</span>
+    <span class="n">inner</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span>
+  <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Outter"</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Inner</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Inner"</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Inner = "</span> <span class="o">+</span> <span class="nc">Outter</span><span class="o">.</span><span class="na">this</span><span class="o">.</span><span class="na">hashCode</span><span class="o">());</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>989110044
+Inner = 989110044
+</code></pre></div></div>
+
 <h2 id="區域內部類別">區域內部類別</h2>
 <ul>
-  <li>定義在方法或代碼塊中的類別</li>
+  <li>定義在方法或匿名程式碼區塊中的類別</li>
   <li>不能使用 public、private 或 protected 修飾</li>
-  <li>只能被該方法或程式碼區塊內的程式碼使用。</li>
+  <li>只能被該方法或匿名程式碼區塊的程式碼使用。</li>
 </ul>
 
 <figure class="highlight">
@@ -2830,12 +2983,12 @@ outter staticval = Static val
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test2</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method1</span><span class="o">()</span> <span class="o">{</span>
     <span class="kd">class</span> <span class="nc">LocalInner</span> <span class="o">{</span>
-      <span class="kd">public</span> <span class="kt">void</span> <span class="nf">localMethod1</span><span class="o">()</span> <span class="o">{</span>
+      <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="o">()</span> <span class="o">{</span>
         <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"區域內部類別中的方法"</span><span class="o">);</span>
       <span class="o">}</span>
     <span class="o">}</span>
     <span class="nc">LocalInner</span> <span class="n">localInner</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LocalInner</span><span class="o">();</span>
-    <span class="n">localInner</span><span class="o">.</span><span class="na">localMethod1</span><span class="o">();</span>
+    <span class="n">localInner</span><span class="o">.</span><span class="na">method</span><span class="o">();</span>
   <span class="o">}</span>
 
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
@@ -2848,6 +3001,54 @@ outter staticval = Static val
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>區域內部類別中的方法
 </code></pre></div></div>
+<h3 id="區域內部類別繼承">區域內部類別繼承</h3>
+<p>區域內部類別可以被繼承。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method1</span><span class="o">()</span> <span class="o">{</span>
+    <span class="kd">class</span> <span class="nc">LocalInner</span> <span class="o">{</span>
+      <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"區域內部類別中的方法"</span><span class="o">);</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="kd">class</span> <span class="nc">InnerChild</span> <span class="kd">extends</span> <span class="nc">LocalInner</span><span class="o">{</span>
+      <span class="nd">@Override</span>
+      <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"子類別覆寫"</span><span class="o">);</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="nc">LocalInner</span> <span class="n">child</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">InnerChild</span><span class="o">();</span>
+    <span class="n">child</span><span class="o">.</span><span class="na">method</span><span class="o">();</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Test</span> <span class="n">test</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">();</span>
+    <span class="n">test</span><span class="o">.</span><span class="na">method1</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 </section>
             </div><div class="search-results">
@@ -3039,7 +3240,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-01 01:34:12 +0800"
+        "time": "2025-06-02 00:03:06 +0800"
     },
     "basePath": "",
     "book": {

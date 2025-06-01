@@ -21,70 +21,104 @@ Prerequisites:
 
 以上呼叫的方法如出一徹。
 
+## 靜態內部類別是一個類別
+靜態內部類別是一個類別，所以類別該有的存取權限(public、private、protected、default)、屬性、方法、建構子、匿名程式碼區塊、靜態程式碼區塊、靜態變數、靜態方法…等等，靜態內部類別也有。
+
 ## static關鍵字
 在內部類前面加上static的關鍵字就變成靜態內部類別。
 {% highlight java linenos %}
-public class Outter {
-  public static class InnerStaticClass {
-    
+class Outter {
+  public static class StaticInner {
   }
 }
 {% endhighlight %}
 
-## 建立new靜態內部類別
+## 建立靜態內部類別
+### 使用new
 語法
 ```
 外部類別.內部類別 變數 = new 外部類別.內部類別()
 ```
 
 注意！靜態內部類別建立的方式為「內部類別」差距很大，不相同。
-
 {% highlight java linenos %}
 public class Test {
-  public static class Static_class {
-  }
-
   public static void main(String[] args) {
-    Test.StaticClass staticClass = new Test.StaticClass();
-    staticClass.inner_memthod();
+    Outter.StaticInner inner_s = new Outter.StaticInner();
+  }
+}
+class Outter {
+  public static class StaticInner {
   }
 }
 {% endhighlight %}
 
-如果在外部類別中的main靜態函式建立類別，前面可以不用外部類別。
-
+### 外部類別提供public static方法
+因為靜態內部類別，是屬於類別，所以使用static方法取得靜態內部類別。
 {% highlight java linenos %}
 public class Test {
-  public static class Static_class {
-  }
-
   public static void main(String[] args) {
-    StaticClass staticClass = new StaticClass();
-    staticClass.inner_memthod();
+    Outter.StaticInner inner_s = Outter.getStaticInner();
+  }
+}
+class Outter {
+  public static class StaticInner {
+  }
+  public static StaticInner getStaticInner() {
+    return new StaticInner();
   }
 }
 {% endhighlight %}
 
-## 靜態內部類別建構子
-之前提過靜態內部類別就是類別，只是外部類別變成名稱空間，所以一定有建構子。
+## 外部類別提供public static方法存取private
+外部類別提供public static方法，去存取private靜態內部類別。
 {% highlight java linenos %}
 public class Test {
-  public static class Static_class {
-    Static_class() {
-      System.out.println("靜態內部類別建構子");
-    }
-  }
   public static void main(String[] args) {
-    Test.Static_class staticClass = new Test.Static_class();
+    System.out.println(Outter.getInnerStr());
+  }
+}
+class Outter {
+  // 私有靜態內部類別
+  private static class StaticInner {
+    // 私有靜態屬性
+    private static String str = "私有內部屬性";
+  }
+  // 外部公有靜態方法
+  public static String getInnerStr() {
+    // 取得private靜態內部類別.private靜態屬性
+    return StaticInner.str;
   }
 }
 {% endhighlight %}
 ```
-靜態內部類別建構子
+私有內部屬性
+```
+
+## 靜態內部類別建構子
+靜態內部類別就是類別，所以一定有建構子。
+{% highlight java linenos %}
+public class Test {
+  public static void main(String[] args) {
+    Outter.StaticInner inner_s = Outter.getStaticInner();
+  }
+}
+class Outter {
+  public static class StaticInner {
+    StaticInner() {
+      System.out.println("建構子");
+    }
+  }
+  public static StaticInner getStaticInner() {
+    return new StaticInner();
+  }
+}
+{% endhighlight %}
+```
+建構子
 ```
 
 ## 使用到靜態內部類別才會被建立
-
 注意！當靜態內部類別要用到的時候，才會初始化。
 
 初始化程式碼

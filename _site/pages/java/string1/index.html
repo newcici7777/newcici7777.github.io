@@ -2594,11 +2594,11 @@
 </ol>
 
 <h3 id="建構子與常數的記憶體位址不同">建構子與常數的記憶體位址不同</h3>
-<p>從以上的記憶體模型，可以發現常數建立的字串，變數是指向String Pool中的記憶體位址。</p>
+<p>從以上的記憶體模型，可以發現常數建立的字串，是指向String Pool中的記憶體位址。</p>
 
 <p>而用new String()建立的字串，變數指向的是Heap中的記憶體位址。</p>
 
-<p>==對類別而言，是用來比較記憶體位址是否相等，String是類別。</p>
+<p>String是類別，==對類別而言，是用來比較記憶體位址是否相等。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2698,7 +2698,7 @@ s1 == s2 false
 </code></pre></div></div>
 
 <h2 id="string-intern">String intern()</h2>
-<p>intern() 取出value屬性，指向String Pool中的記憶體位址。</p>
+<p>intern() 取出String.value指向String Pool中的記憶體位址。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2737,6 +2737,8 @@ s2 == s2.intern() false
 
 <p>value是final char[]，存放字串。</p>
 
+<p>因為value屬性是final，不能直接指向其它記憶體位址，所以String字串重新指派值，實際上就是建立新物件。</p>
+
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -2755,15 +2757,13 @@ s2 == s2.intern() false
 
 <p><img src="/assets/img/java/str5.png" alt="img" /></p>
 
-<p>因為value屬性是final，所以不能修改原字串內容，直接指向其它記憶體位址。</p>
-
 <p>String Pool建立Hi，s1指向Hi記憶體位址。</p>
 
-<p><img src="/assets/img/java/str5.png" alt="img" /></p>
+<p><img src="/assets/img/java/str6.png" alt="img" /></p>
 
 <p>Hello在String Pool中有，s1指向Hello記憶體位址。</p>
 
-<p><img src="/assets/img/java/str5.png" alt="img" /></p>
+<p><img src="/assets/img/java/str7.png" alt="img" /></p>
 
 <h2 id="二個字串常數相加">二個字串常數相加</h2>
 <p>編譯器看到<code class="language-plaintext highlighter-rouge">"Hello" + " World"</code>就視為一組字串。</p>
@@ -3039,7 +3039,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-01 01:34:12 +0800"
+        "time": "2025-06-02 00:03:06 +0800"
     },
     "basePath": "",
     "book": {
