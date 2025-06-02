@@ -3,6 +3,12 @@ title: 繼承與覆寫
 date: 2025-05-31
 keywords: kotlin, extends
 ---
+Prerequisites:
+
+- [繼承父類別建構式][1]
+
+
+
 ## open
 Kotlin預設是不能被繼承，若要讓類別可以被繼承，在class前面加上open，可以被子類別覆寫的方法，在fun前面加上open，才能被子類別覆寫。
 
@@ -33,3 +39,5 @@ fun main() {
 ```
 這是覆寫showData
 ```
+
+[1]: {% link _pages/kotlin/extends_constructor.md %}
