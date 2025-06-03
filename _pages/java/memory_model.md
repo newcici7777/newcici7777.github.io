@@ -3,9 +3,17 @@ title: Java Memory Model
 date: 2025-05-14
 keywords: Java, Java Memory Model
 ---
-Java Memory Model，中文是記憶體模型，簡體中文是內存模型。
+Java Memory Model，中文是記憶體模型。
+
+記憶體分為3個區塊，3個區塊分別為Stack、Heap、Method Area(Metaspace)
+
+- Stack堆疊，存放變數，以及基本型態(int,char,float,double,long,byte,boolean)。
+- Heap堆，存放物件，會根據物件的大小建立一個記憶體空間，提供記憶體位址與變數對映。
+- Method Area方法區，又稱Metaspace，存放常數，有一個空間是String Pool字串池，存放字串常數。
 
 ![img]({{site.imgurl}}/java/memory_model.png)
+
+在Heap中，還會存放Class物件，Class物件儲存類別的所有屬性名、方法名、建構子、靜態變數、靜態方法、靜態區塊。
 
 ## 基本資料型別
 基本資料型別有int, char, float, double, boolean，字母以小寫開頭。

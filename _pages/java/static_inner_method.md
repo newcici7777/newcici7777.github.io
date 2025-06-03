@@ -58,57 +58,6 @@ class Outter {
 內部靜態方法
 ```
 
-## 靜態方法與Singleton
-外部類別可以存取private內部類別，透過這個原理，由靜態內部類別建立外部類別物件。
-
-1. 把外部類的建構子設為private。
-2. 建立private靜態內部類別
-3. 靜態內部類別，建立private靜態且final的屬性，屬性的類型是外部類別。
-4. 靜態內部類別被建立時，屬性才會`new Outter()`
-5. 建立一個public static的方法。
-6. 取得靜態內部類別的私有靜態屬性。
-
-{% highlight java linenos %}
-public class Test {
-  public static void main(String[] args) {
-    Outter outter1 = Outter.getInstance();
-    System.out.println(outter1.hashCode());
-
-    Outter outter2 = Outter.getInstance();
-    System.out.println(outter2.hashCode());
-
-    Outter outter3 = Outter.getInstance();
-    System.out.println(outter3.hashCode());
-  }
-}
-class Outter {
-  // 1.
-  private Outter() {
-    System.out.println("建立物件");
-  }
-  // 2.
-  private static class StaticInner {
-    // 3.
-    private static final Outter outter = new Outter(); // 4.
-  }
-  // 5.
-  public static Outter getInstance() {
-    // 6.
-    return StaticInner.outter;
-  }
-}
-{% endhighlight %}
-```
-建立物件
-989110044
-989110044
-989110044
-```
-
-由執行結果可以發現，「建立物件」，只執行一次。
-
-每一個物件的hashCode都是一模一樣的，代表物件只被建立一次。
-
 ### 靜態內部類別的成員方法
 以下無法存取:
 - 外部類別成員屬性、方法

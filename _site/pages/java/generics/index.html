@@ -1458,7 +1458,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/super/" data-nav-link> super</a>
+    	<a href="/pages/java/super/" data-nav-link> super與this</a>
         
             
         </li></ul></li>
@@ -1530,7 +1530,7 @@
     	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
         
             
-                <ul><li><a href="#自訂類型" data-nav-link " >自訂類型</a></li><li><a href="#屬性" data-nav-link " >屬性</a></li><li><a href="#建構子" data-nav-link " >建構子</a></li><li><a href="#getset方法" data-nav-link " >get,set方法</a></li><li><a href="#宣告與建立物件編譯器才會知道類型" data-nav-link " >宣告與建立物件編譯器才會知道類型</a></li><li><a href="#沒泛型類型預設object" data-nav-link " >沒泛型類型，預設Object</a></li><li><a href="#泛型類型可以使用子類別" data-nav-link " >泛型類型可以使用子類別</a></li><li><a href="#基本型別自動轉成包裝類別" data-nav-link " >基本型別自動轉成包裝類別</a></li><li><a href="#使用getclass知道泛型類型" data-nav-link " >使用getClass()知道泛型類型</a></li><li><a href="#不能使用泛型的情況" data-nav-link " >不能使用泛型的情況</a><ul><li><a href="#泛型不可以new" data-nav-link " >泛型不可以new</a></li><li><a href="#泛型不可以用在static屬性與static方法" data-nav-link " >泛型不可以用在static屬性與static方法</a></li><li><a href="#不能用基本型態" data-nav-link " >不能用基本型態</a></li></ul></li><li><a href="#語法" data-nav-link " >語法</a></li><li><a href="#成員變數類型" data-nav-link " >成員變數類型</a></li><li><a href="#參數類型" data-nav-link " >參數類型</a></li><li><a href="#傳回值類型" data-nav-link " >傳回值類型</a></li><li><a href="#使用泛型" data-nav-link " >使用泛型</a><ul><li><a href="#宣告" data-nav-link " >宣告</a></li><li><a href="#建立物件" data-nav-link " >建立物件</a></li></ul></li><li><a href="#範例" data-nav-link " >範例</a></li></ul>
+                <ul><li><a href="#自訂類型" data-nav-link " >自訂類型</a></li><li><a href="#屬性" data-nav-link " >屬性</a></li><li><a href="#建構子" data-nav-link " >建構子</a></li><li><a href="#getset方法" data-nav-link " >get,set方法</a></li><li><a href="#宣告與建立物件編譯器才會知道類型" data-nav-link " >宣告與建立物件編譯器才會知道類型</a></li><li><a href="#沒泛型類型預設object" data-nav-link " >沒泛型類型，預設Object</a></li><li><a href="#泛型類型可以使用子類別" data-nav-link " >泛型類型可以使用子類別</a></li><li><a href="#基本型別自動轉成包裝類別" data-nav-link " >基本型別自動轉成包裝類別</a></li><li><a href="#使用getclass知道泛型類型" data-nav-link " >使用getClass()知道泛型類型</a></li><li><a href="#不能使用泛型的情況" data-nav-link " >不能使用泛型的情況</a><ul><li><a href="#泛型不可以new" data-nav-link " >泛型不可以new</a></li><li><a href="#泛型不可以用在靜態變數與靜態方法" data-nav-link " >泛型不可以用在靜態變數與靜態方法</a></li><li><a href="#不能用基本型態" data-nav-link " >不能用基本型態</a></li></ul></li><li><a href="#語法" data-nav-link " >語法</a></li><li><a href="#成員變數類型" data-nav-link " >成員變數類型</a></li><li><a href="#參數類型" data-nav-link " >參數類型</a></li><li><a href="#傳回值類型" data-nav-link " >傳回值類型</a></li><li><a href="#使用泛型" data-nav-link " >使用泛型</a><ul><li><a href="#宣告" data-nav-link " >宣告</a></li><li><a href="#建立物件" data-nav-link " >建立物件</a></li></ul></li><li><a href="#範例" data-nav-link " >範例</a></li></ul>
 
             
         </li>
@@ -2067,7 +2067,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/extends/" data-nav-link> 繼承與覆寫</a>
+    	<a href="/pages/kotlin/extends/" data-nav-link> 繼承 覆寫 轉型</a>
         
             
         </li>
@@ -2082,6 +2082,27 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/data_class/" data-nav-link> Data class</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/object_companion/" data-nav-link> object與companion object</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/object_anonymous/" data-nav-link> object 匿名類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/inner/" data-nav-link> 內部類別</a>
         
             
         </li></ul></li></ul></li>
@@ -2893,13 +2914,14 @@ class java.lang.Integer
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="泛型不可以用在static屬性與static方法">泛型不可以用在static屬性與static方法</h3>
+<h3 id="泛型不可以用在靜態變數與靜態方法">泛型不可以用在靜態變數與靜態方法</h3>
 
 <ul>
   <li><a href="/pages/java/memory_model/#物件建立過程">memory_model</a></li>
+  <li><a href="/pages/java/static/">static</a></li>
 </ul>
 
-<p>類別載入器(Class Loader)在方法區(Method Area)載入static屬性與static方法，但類別載入器的動作在建立物件之前，類別載入器不會知道T是什麼類型。</p>
+<p>靜態變數是在Class物件中，Class物件比物件更早建立，泛型要在物件建立的時候才指定類型，但靜態物件早就建立好了，根本不可能指定靜態變數的類型。</p>
 
 <p>以下三種都不能使用。</p>
 
@@ -3347,7 +3369,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-03 10:30:51 +0800"
+        "time": "2025-06-03 16:18:55 +0800"
     },
     "basePath": "",
     "book": {

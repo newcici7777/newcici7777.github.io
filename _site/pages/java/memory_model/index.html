@@ -1461,7 +1461,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/super/" data-nav-link> super</a>
+    	<a href="/pages/java/super/" data-nav-link> super與this</a>
         
             
         </li></ul></li>
@@ -2067,7 +2067,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/extends/" data-nav-link> 繼承與覆寫</a>
+    	<a href="/pages/kotlin/extends/" data-nav-link> 繼承 覆寫 轉型</a>
         
             
         </li>
@@ -2082,6 +2082,27 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/data_class/" data-nav-link> Data class</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/object_companion/" data-nav-link> object與companion object</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/object_anonymous/" data-nav-link> object 匿名類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/inner/" data-nav-link> 內部類別</a>
         
             
         </li></ul></li></ul></li>
@@ -2550,9 +2571,19 @@
                         <h1 id="/pages/java/memory_model">Java Memory Model</h1>
                     
 
-                    <p>Java Memory Model，中文是記憶體模型，簡體中文是內存模型。</p>
+                    <p>Java Memory Model，中文是記憶體模型。</p>
+
+<p>記憶體分為3個區塊，3個區塊分別為Stack、Heap、Method Area(Metaspace)</p>
+
+<ul>
+  <li>Stack堆疊，存放變數，以及基本型態(int,char,float,double,long,byte,boolean)。</li>
+  <li>Heap堆，存放物件，會根據物件的大小建立一個記憶體空間，提供記憶體位址與變數對映。</li>
+  <li>Method Area方法區，又稱Metaspace，存放常數，有一個空間是String Pool字串池，存放字串常數。</li>
+</ul>
 
 <p><img src="/assets/img/java/memory_model.png" alt="img" /></p>
+
+<p>在Heap中，還會存放Class物件，Class物件儲存類別的所有屬性名、方法名、建構子、靜態變數、靜態方法、靜態區塊。</p>
 
 <h2 id="基本資料型別">基本資料型別</h2>
 <p>基本資料型別有int, char, float, double, boolean，字母以小寫開頭。</p>
@@ -2849,7 +2880,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-03 10:30:51 +0800"
+        "time": "2025-06-03 16:18:55 +0800"
     },
     "basePath": "",
     "book": {

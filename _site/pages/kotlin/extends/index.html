@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>繼承與覆寫 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>繼承 覆寫 轉型 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="keywords" content="kotlin, extends" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -1458,7 +1458,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/super/" data-nav-link> super</a>
+    	<a href="/pages/java/super/" data-nav-link> super與this</a>
         
             
         </li></ul></li>
@@ -2064,10 +2064,10 @@
 	
 	
 	<li class="active" data-nav-item>
-    	<a href="/pages/kotlin/extends/" data-nav-link> 繼承與覆寫</a>
+    	<a href="/pages/kotlin/extends/" data-nav-link> 繼承 覆寫 轉型</a>
         
             
-                <ul><li><a href="#open" data-nav-link " >open</a></li><li><a href="#override" data-nav-link " >override</a></li></ul>
+                <ul><li><a href="#open" data-nav-link " >open</a></li><li><a href="#override" data-nav-link " >override</a></li><li><a href="#多型" data-nav-link " >多型</a></li><li><a href="#轉型as" data-nav-link " >轉型as</a></li></ul>
 
             
         </li>
@@ -2082,6 +2082,27 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/data_class/" data-nav-link> Data class</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/object_companion/" data-nav-link> object與companion object</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/object_anonymous/" data-nav-link> object 匿名類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/inner/" data-nav-link> 內部類別</a>
         
             
         </li></ul></li></ul></li>
@@ -2534,7 +2555,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >繼承與覆寫</a>
+                            <a href="." >繼承 覆寫 轉型</a>
                         
                     </h1>
                 </div>
@@ -2547,7 +2568,7 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/kotlin/extends">繼承與覆寫</h1>
+                        <h1 id="/pages/kotlin/extends">繼承 覆寫 轉型</h1>
                     
 
                     <p>Prerequisites:</p>
@@ -2557,22 +2578,108 @@
 </ul>
 
 <h2 id="open">open</h2>
-<p>Kotlin預設是不能被繼承，若要讓類別可以被繼承，在class前面加上open，可以被子類別覆寫的方法，在fun前面加上open，才能被子類別覆寫。</p>
+<p>Kotlin預設是不能被繼承，若要讓類別可以被繼承，在class前面加上open。</p>
+
+<p>在fun前面加上open，才能被子類別覆寫。</p>
+
+<p>在變數前面加上open，才能被子類別覆寫。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
+4
 </pre></td><td class="code"><pre><span class="k">open</span> <span class="kd">class</span> <span class="nc">Parent</span> <span class="p">{</span>  <span class="c1">// 使用open class</span>
+    <span class="k">open</span> <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span> <span class="p">=</span> <span class="s">""</span>  <span class="c1">// 使用open 變數</span>
     <span class="k">open</span> <span class="k">fun</span> <span class="nf">showData</span><span class="p">()</span> <span class="p">{}</span>  <span class="c1">// 使用open fun</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
 <h2 id="override">override</h2>
-<p>用子類別 : 父類別()來繼承父類別。</p>
+<p>子類別 : 父類別()來繼承父類別。</p>
 
 <p>覆寫父類別的方法，前面要加上override。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="k">open</span> <span class="kd">class</span> <span class="nc">Parent</span> <span class="p">{</span>  <span class="c1">// 使用open class</span>
+    <span class="k">open</span> <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span> <span class="p">=</span> <span class="s">"Parent"</span>  <span class="c1">// 使用open 變數</span>
+    <span class="k">open</span> <span class="k">fun</span> <span class="nf">showData</span><span class="p">()</span> <span class="p">{}</span>  <span class="c1">// 使用open fun</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Child</span> <span class="p">:</span> <span class="nc">Parent</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">override</span> <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span> <span class="p">=</span> <span class="s">"Child"</span>
+        <span class="k">set</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">field</span> <span class="p">=</span> <span class="n">value</span><span class="p">.</span><span class="nf">trim</span><span class="p">()</span>
+        <span class="p">}</span>
+    <span class="k">override</span> <span class="k">fun</span> <span class="nf">showData</span><span class="p">()</span> <span class="p">{</span>  <span class="c1">// 使用override fun</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"name = $name"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">child</span><span class="p">:</span> <span class="nc">Child</span> <span class="p">=</span> <span class="nc">Child</span><span class="p">()</span>
+    <span class="n">child</span><span class="p">.</span><span class="nf">showData</span><span class="p">()</span>
+    <span class="n">child</span><span class="p">.</span><span class="n">name</span> <span class="p">=</span> <span class="s">"   Alex   "</span>
+    <span class="n">child</span><span class="p">.</span><span class="nf">showData</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name = Child
+name = Alex
+</code></pre></div></div>
+
+<h2 id="多型">多型</h2>
+<p>多型就是類型是父類別，實際上指向子類別，執行時也是子類別。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">obj</span><span class="p">:</span> <span class="nc">Parent</span> <span class="p">=</span> <span class="nc">Child</span><span class="p">()</span>
+    <span class="n">obj</span><span class="p">.</span><span class="nf">showData</span><span class="p">()</span>
+    <span class="n">obj</span><span class="p">.</span><span class="n">name</span> <span class="p">=</span> <span class="s">"   Alex   "</span>
+    <span class="n">obj</span><span class="p">.</span><span class="nf">showData</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name = Child
+name = Alex
+</code></pre></div></div>
+
+<h2 id="轉型as">轉型as</h2>
+<p>在子類別增加一個方法showInfo，這個方法只有子類別才有。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2587,22 +2694,94 @@
 10
 11
 12
-</pre></td><td class="code"><pre><span class="k">open</span> <span class="kd">class</span> <span class="nc">Parent</span> <span class="p">{</span>
-    <span class="k">open</span> <span class="k">fun</span> <span class="nf">showData</span><span class="p">()</span> <span class="p">{}</span>
-<span class="p">}</span>
-<span class="kd">class</span> <span class="nc">Child</span> <span class="p">:</span> <span class="nc">Parent</span><span class="p">()</span> <span class="p">{</span>
+13
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Child</span> <span class="p">:</span> <span class="nc">Parent</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">override</span> <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span> <span class="p">=</span> <span class="s">"Child"</span>
+        <span class="k">set</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">field</span> <span class="p">=</span> <span class="n">value</span><span class="p">.</span><span class="nf">trim</span><span class="p">()</span>
+        <span class="p">}</span>
     <span class="k">override</span> <span class="k">fun</span> <span class="nf">showData</span><span class="p">()</span> <span class="p">{</span>  <span class="c1">// 使用override fun</span>
-        <span class="nf">println</span><span class="p">(</span><span class="s">"這是覆寫showData"</span><span class="p">)</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"name = $name"</span><span class="p">)</span>
     <span class="p">}</span>
-<span class="p">}</span>
-<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">val</span> <span class="py">obj2</span><span class="p">:</span> <span class="nc">Parent</span> <span class="p">=</span> <span class="nc">Child</span><span class="p">()</span>
-    <span class="n">obj2</span><span class="p">.</span><span class="nf">showData</span><span class="p">()</span>
+    
+    <span class="k">fun</span> <span class="nf">showInfo</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"這是子類別才有的方法"</span><span class="p">)</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>這是覆寫showData
+<p>在多型的狀況下，類型是父類別，根本找不到showInfo()的方法。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">obj</span><span class="p">:</span> <span class="nc">Parent</span> <span class="p">=</span> <span class="nc">Child</span><span class="p">()</span>
+    <span class="n">obj</span><span class="p">.</span><span class="nf">showData</span><span class="p">()</span>
+    
+    <span class="c1">//以下無法執行</span>
+    <span class="n">obj</span><span class="p">.</span><span class="nf">showInfo</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>需要將類型是父類別，轉型成類型是子類別。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">obj</span><span class="p">:</span> <span class="nc">Parent</span> <span class="p">=</span> <span class="nc">Child</span><span class="p">()</span>
+    <span class="n">obj</span><span class="p">.</span><span class="nf">showData</span><span class="p">()</span>
+
+    <span class="c1">//以下可以執行了</span>
+    <span class="p">(</span><span class="n">obj</span> <span class="k">as</span> <span class="nc">Child</span><span class="p">).</span><span class="nf">showInfo</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name = Child
+這是子類別才有的方法
+</code></pre></div></div>
+
+<p>不可能每一次呼叫showInfo()都要轉型，kotlin支援只要執行過一次as，obj不用再轉型。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">obj</span><span class="p">:</span> <span class="nc">Parent</span> <span class="p">=</span> <span class="nc">Child</span><span class="p">()</span>
+    <span class="n">obj</span><span class="p">.</span><span class="nf">showData</span><span class="p">()</span>
+
+    <span class="c1">//以下可以執行了</span>
+    <span class="p">(</span><span class="n">obj</span> <span class="k">as</span> <span class="nc">Child</span><span class="p">).</span><span class="nf">showInfo</span><span class="p">()</span>
+    <span class="n">obj</span><span class="p">.</span><span class="nf">showInfo</span><span class="p">()</span>
+    <span class="n">obj</span><span class="p">.</span><span class="nf">showInfo</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name = Child
+這是子類別才有的方法
+這是子類別才有的方法
 </code></pre></div></div>
 
 </section>
@@ -2795,7 +2974,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-03 10:30:51 +0800"
+        "time": "2025-06-03 16:18:55 +0800"
     },
     "basePath": "",
     "book": {
