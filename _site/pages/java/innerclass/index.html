@@ -1492,7 +1492,7 @@
     	<a href="/pages/java/innerclass/" data-nav-link> 內部類別</a>
         
             
-                <ul><li><a href="#內部類別與外部類別" data-nav-link " >內部類別與外部類別</a></li><li><a href="#內部類別是一個類別" data-nav-link " >內部類別是一個類別</a></li><li><a href="#建立內部類別" data-nav-link " >建立內部類別</a><ul><li><a href="#使用new建立內部類別" data-nav-link " >使用new建立內部類別</a></li><li><a href="#外部類別提供public方法" data-nav-link " >外部類別提供public方法</a></li></ul></li><li><a href="#外部類別的成員屬性是內部類別" data-nav-link " >外部類別的成員屬性是內部類別</a></li><li><a href="#外部類別可以存取private內部類別與屬性" data-nav-link " >外部類別可以存取private內部類別與屬性</a></li><li><a href="#內部類別建構子" data-nav-link " >內部類別建構子</a></li><li><a href="#內部類別可以存取外部類別所有屬性" data-nav-link " >內部類別可以存取外部類別所有屬性</a></li><li><a href="#內部類別繼承" data-nav-link " >內部類別繼承</a></li><li><a href="#內部類別與外部類別屬性名字相同" data-nav-link " >內部類別與外部類別屬性名字相同</a></li><li><a href="#外部類別this" data-nav-link " >外部類別.this</a></li><li><a href="#區域內部類別" data-nav-link " >區域內部類別</a><ul><li><a href="#區域內部類別繼承" data-nav-link " >區域內部類別繼承</a></li></ul></li></ul>
+                <ul><li><a href="#內部類別與外部類別" data-nav-link " >內部類別與外部類別</a></li><li><a href="#內部類別是一個類別" data-nav-link " >內部類別是一個類別</a></li><li><a href="#建立內部類別" data-nav-link " >建立內部類別</a><ul><li><a href="#使用new建立內部類別" data-nav-link " >使用new建立內部類別</a></li><li><a href="#外部類別提供public方法" data-nav-link " >外部類別提供public方法</a></li></ul></li><li><a href="#外部類別的成員屬性是內部類別" data-nav-link " >外部類別的成員屬性是內部類別</a></li><li><a href="#外部類別可以存取private內部類別與屬性" data-nav-link " >外部類別可以存取private內部類別與屬性</a></li><li><a href="#內部類別建構子" data-nav-link " >內部類別建構子</a></li><li><a href="#內部類別可以存取外部類別所有屬性" data-nav-link " >內部類別可以存取外部類別所有屬性</a></li><li><a href="#內部類別繼承" data-nav-link " >內部類別繼承</a></li><li><a href="#內部類別與外部類別屬性名字相同" data-nav-link " >內部類別與外部類別屬性名字相同</a></li><li><a href="#外部類別this" data-nav-link " >外部類別.this</a></li><li><a href="#區域內部類別" data-nav-link " >區域內部類別</a><ul><li><a href="#方法中的內部類別" data-nav-link " >方法中的內部類別</a></li><li><a href="#程式碼區塊的內部類別" data-nav-link " >程式碼區塊的內部類別</a></li><li><a href="#區域內部類別繼承" data-nav-link " >區域內部類別繼承</a></li></ul></li></ul>
 
             
         </li>
@@ -2032,14 +2032,35 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/field/" data-nav-link> 屬性</a>
+    	<a href="/pages/kotlin/class/" data-nav-link> 類別</a>
         
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/constructor/" data-nav-link> 建構函式</a>
+    	<a href="/pages/kotlin/field/" data-nav-link> set get</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/constructor/" data-nav-link> 建構式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/extends_constructor/" data-nav-link> extends constructor</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/modifier/" data-nav-link> 存取修飾子</a>
         
             
         </li>
@@ -2798,11 +2819,11 @@
       <span class="c1">// 呼叫外部private方法</span>
       <span class="n">method1</span><span class="o">();</span>
       <span class="c1">// 使用外部private變數</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"name = "</span> <span class="o">+</span> <span class="n">name</span><span class="o">);</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
       <span class="c1">// 呼叫外部private靜態方法</span>
       <span class="n">staticMethod</span><span class="o">();</span>
       <span class="c1">// 外部private靜態變數</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"staticval = "</span> <span class="o">+</span> <span class="n">staticval</span><span class="o">);</span> 
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">staticval</span><span class="o">);</span> 
     <span class="o">}</span>
   <span class="o">}</span>
 <span class="o">}</span>
@@ -2810,9 +2831,9 @@
 </figure>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>方法
-name = 變數
+變數
 靜態方法
-staticval = 靜態變數
+靜態變數
 </code></pre></div></div>
 
 <h2 id="內部類別繼承">內部類別繼承</h2>
@@ -2839,6 +2860,11 @@ staticval = 靜態變數
 19
 20
 21
+22
+23
+24
+25
+26
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="nc">Outter</span> <span class="n">outter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Outter</span><span class="o">();</span>
@@ -2846,17 +2872,22 @@ staticval = 靜態變數
   <span class="o">}</span>
 <span class="o">}</span>
 <span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span>
+  <span class="c1">// 內部類別</span>
   <span class="kd">private</span> <span class="kd">class</span> <span class="nc">Inner</span><span class="o">{</span>
     <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{}</span>
   <span class="o">}</span>
+  <span class="c1">// 繼承內部類別</span>
   <span class="kd">private</span> <span class="kd">class</span> <span class="nc">InnerChild</span> <span class="kd">extends</span> <span class="nc">Inner</span> <span class="o">{</span>
+    <span class="c1">// 覆寫父類別的print()</span>
     <span class="nd">@Override</span>
     <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"test"</span><span class="o">);</span>
     <span class="o">}</span>
   <span class="o">}</span>
   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">callInnerChild</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 建立private內部類</span>
     <span class="nc">InnerChild</span> <span class="n">innerChild</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">InnerChild</span><span class="o">();</span>
+    <span class="c1">// 呼叫覆寫的方法</span>
     <span class="n">innerChild</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
   <span class="o">}</span>
 <span class="o">}</span>
@@ -2887,6 +2918,10 @@ staticval = 靜態變數
 15
 16
 17
+18
+19
+20
+21
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="nc">Outter</span> <span class="n">outter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Outter</span><span class="o">();</span>
@@ -2895,11 +2930,15 @@ staticval = 靜態變數
   <span class="o">}</span>
 <span class="o">}</span>
 <span class="kd">class</span> <span class="nc">Outter</span> <span class="o">{</span>
+  <span class="c1">// 外部類別name</span>
   <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Outter"</span><span class="o">;</span>
   <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Inner</span> <span class="o">{</span>
+    <span class="c1">// 內部類別name</span>
     <span class="kd">public</span> <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Inner"</span><span class="o">;</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+      <span class="c1">// 印出內部類別name</span>
       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Inner name = "</span> <span class="o">+</span> <span class="n">name</span><span class="o">);</span>
+      <span class="c1">// 印出外部類別name</span>
       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Outter name = "</span> <span class="o">+</span> <span class="nc">Outter</span><span class="o">.</span><span class="na">this</span><span class="o">.</span><span class="na">name</span><span class="o">);</span>
     <span class="o">}</span>
   <span class="o">}</span>
@@ -2963,6 +3002,8 @@ Inner = 989110044
   <li>只能被該方法或匿名程式碼區塊的程式碼使用。</li>
 </ul>
 
+<h3 id="方法中的內部類別">方法中的內部類別</h3>
+
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -2980,8 +3021,10 @@ Inner = 989110044
 14
 15
 16
+17
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test2</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method1</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 內部類別</span>
     <span class="kd">class</span> <span class="nc">LocalInner</span> <span class="o">{</span>
       <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="o">()</span> <span class="o">{</span>
         <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"區域內部類別中的方法"</span><span class="o">);</span>
@@ -3001,6 +3044,52 @@ Inner = 989110044
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>區域內部類別中的方法
 </code></pre></div></div>
+<h3 id="程式碼區塊的內部類別">程式碼區塊的內部類別</h3>
+<p>將內部類別寫在<code class="language-plaintext highlighter-rouge">static{}</code>靜態程式碼區塊中。</p>
+
+<p>不管建立幾次Test物件，在靜態程式碼區塊只執行一次，所以內部類別只被建立一次。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">static</span> <span class="o">{</span>
+    <span class="kd">class</span> <span class="nc">Inner</span> <span class="o">{</span>
+      <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"呼叫內部類別方法"</span><span class="o">);</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="nc">Inner</span> <span class="n">inner</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Inner</span><span class="o">();</span>
+    <span class="n">inner</span><span class="o">.</span><span class="na">method</span><span class="o">();</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 建立3次物件</span>
+    <span class="nc">Test</span> <span class="n">test1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">();</span>
+    <span class="nc">Test</span> <span class="n">test2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">();</span>
+    <span class="nc">Test</span> <span class="n">test3</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>呼叫內部類別方法
+</code></pre></div></div>
+
 <h3 id="區域內部類別繼承">區域內部類別繼承</h3>
 <p>區域內部類別可以被繼承。</p>
 
@@ -3049,6 +3138,9 @@ Inner = 989110044
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>子類別覆寫
+</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -3240,7 +3332,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-02 00:03:06 +0800"
+        "time": "2025-06-03 10:30:51 +0800"
     },
     "basePath": "",
     "book": {

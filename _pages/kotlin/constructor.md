@@ -346,6 +346,54 @@ fun main() {
 3. init初始化函式
 4. 次要建構式
 
+### 使用Decompile證明執行順序
+Kotlin程式碼
+{% highlight kotlin linenos %}
+class Cat4 (val name: String, _age: Int) { // 1. name
+    private var age:Int = _age  //2.
+    private val hobby:String
+    private var sleeptimes: Int = 0
+    init {
+        println("init block ...")  // 3.
+        hobby = "swimming"         // 4.
+    }
+    constructor(name: String, _age: Int, sleeptimes: Int):this(name, _age) {
+        this.sleeptimes = sleeptimes  // 5.
+    }
+}
+{% endhighlight %}
+
+Java程式碼，以下已把建構子中的順序與Kotlin對映。
+{% highlight java linenos %}
+public final class Cat4 {
+   private int age;
+   private final String hobby;
+   private int sleeptimes;
+   @NotNull
+   private final String name;
+
+   @NotNull
+   public final String getName() {
+      return this.name;
+   }
+   public Cat4(@NotNull String name, int _age) {
+      Intrinsics.checkNotNullParameter(name, "name");
+      super();
+      this.name = name;  // 1.
+      this.age = _age;   // 2.
+      String var3 = "init block ...";  // 3.
+      System.out.println(var3);        // 3.
+      this.hobby = "swimming";         // 4.
+   }
+
+   public Cat4(@NotNull String name, int _age, int sleeptimes) {
+      Intrinsics.checkNotNullParameter(name, "name");
+      this(name, _age);  // 先呼叫2個參數的父類建構子
+      this.sleeptimes = sleeptimes;  //5.
+   }
+{% endhighlight %}
+
+### 屬性不能寫在後面
 你不能像C++把屬性寫到最後面，會無法讀取到屬性，Kotlin執行順序是由上而下。
 {% highlight kotlin linenos %}
 class Dog1 {

@@ -68,6 +68,8 @@ class Dog {
 
 Class Loader載入類別資訊
 
+類別載入至記憶體，會在Heap建立一個記憶體空間放置Class物件，裡面包含有Dog類別所有屬性名字、方法名字、建構子，還有靜態變數，這個Class物件只會有一個，生命周期從被載入至記憶體至程序結束。
+
 ![img]({{site.imgurl}}/java/obj_model1.png)
 
 new關鍵字(1)，在Heap建立記憶體空間0x0070(2)，Stack的white_dog變數存的是0x0070(3)，Heap中0x0070位址中的name與age與color，全用預設值，int基本型別用0，name與color是String物件用null。

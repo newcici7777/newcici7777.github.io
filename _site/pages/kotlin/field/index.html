@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>屬性 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>set get </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="keywords" content="kotlin, field, get, set" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -2028,18 +2028,39 @@
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 類別與物件 </a><ul>
 	
 	
-	<li class="active" data-nav-item>
-    	<a href="/pages/kotlin/field/" data-nav-link> 屬性</a>
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/class/" data-nav-link> 類別</a>
         
             
-                <ul><li><a href="#類別body" data-nav-link " >類別body</a></li><li><a href="#屬性位置" data-nav-link " >屬性位置</a></li><li><a href="#自動產生fieldgetset" data-nav-link " >自動產生field,get(),set()</a></li><li><a href="#field" data-nav-link " >field</a></li><li><a href="#var" data-nav-link " >var</a></li><li><a href="#val" data-nav-link " >val</a></li><li><a href="#屬性非空值類型" data-nav-link " >屬性非空值類型</a><ul><li><a href="#定義類別student" data-nav-link " >定義類別Student</a></li><li><a href="#notnull與checknotnullparameter" data-nav-link " >NotNull與checkNotNullParameter()</a></li><li><a href="#建立物件" data-nav-link " >建立物件</a></li><li><a href="#val物件變數" data-nav-link " >val物件變數</a></li><li><a href="#修改屬性為bill" data-nav-link " >修改屬性為Bill</a></li></ul></li><li><a href="#屬性空值類型" data-nav-link " >屬性空值類型</a><ul><li><a href="#把name屬性改成空值類型" data-nav-link " >把name屬性改成空值類型。</a></li><li><a href="#nullable" data-nav-link " >Nullable</a></li><li><a href="#沒有checknotnullparameter" data-nav-link " >沒有checkNotNullParameter()</a></li></ul></li><li><a href="#覆寫get方法" data-nav-link " >覆寫get()方法</a></li><li><a href="#覆寫set方法" data-nav-link " >覆寫set()方法</a></li><li><a href="#覆寫可單獨只寫set或get" data-nav-link " >覆寫可單獨只寫set()或get()</a></li><li><a href="#set只能用field" data-nav-link " >set()只能用field</a></li><li><a href="#測試" data-nav-link " >測試</a></li><li><a href="#不使用field覆寫get" data-nav-link " >不使用field覆寫get()</a></li></ul>
+        </li>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/kotlin/field/" data-nav-link> set get</a>
+        
+            
+                <ul><li><a href="#屬性位置" data-nav-link " >屬性位置</a></li><li><a href="#field-get-setvalue" data-nav-link " >field get() set(value)</a><ul><li><a href="#field" data-nav-link " >field</a></li><li><a href="#覆寫get方法" data-nav-link " >覆寫get()方法</a></li><li><a href="#覆寫setvalue方法" data-nav-link " >覆寫set(value)方法</a></li><li><a href="#var與val" data-nav-link " >var與val</a></li><li><a href="#setvalue只能用field" data-nav-link " >set(value)只能用field</a></li><li><a href="#覆寫可單獨只寫set或get" data-nav-link " >覆寫可單獨只寫set()或get()</a></li><li><a href="#測試" data-nav-link " >測試</a></li><li><a href="#不使用field覆寫get" data-nav-link " >不使用field覆寫get()</a></li><li><a href="#set作為檢查的機制" data-nav-link " >set()作為檢查的機制</a></li></ul></li><li><a href="#存取權限" data-nav-link " >存取權限</a></li><li><a href="#java原始碼" data-nav-link " >Java原始碼</a><ul><li><a href="#var非空值屬性" data-nav-link " >var非空值屬性</a></li><li><a href="#屬性為空值類型" data-nav-link " >屬性為空值類型</a></li></ul></li></ul>
 
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/constructor/" data-nav-link> 建構函式</a>
+    	<a href="/pages/kotlin/constructor/" data-nav-link> 建構式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/extends_constructor/" data-nav-link> extends constructor</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/modifier/" data-nav-link> 存取修飾子</a>
         
             
         </li>
@@ -2513,7 +2534,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >屬性</a>
+                            <a href="." >set get</a>
                         
                     </h1>
                 </div>
@@ -2526,16 +2547,10 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/kotlin/field">屬性</h1>
+                        <h1 id="/pages/kotlin/field">set get</h1>
                     
 
-                    <h2 id="類別body">類別body</h2>
-<p>類別被{}花括號包住。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class 類別名 {
-  // 類別body
-}
-</code></pre></div></div>
-<h2 id="屬性位置">屬性位置</h2>
+                    <h2 id="屬性位置">屬性位置</h2>
 <p>屬性是放在類別中。</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class 類別名 {
   var 屬性名: 屬性類型 = 初始值
@@ -2546,23 +2561,289 @@
 }
 </code></pre></div></div>
 
-<h2 id="自動產生fieldgetset">自動產生field,get(),set()</h2>
-<p>Kotlin會自動為屬性產生field變數, get(), set()方法。</p>
+<h2 id="field-get-setvalue">field get() set(value)</h2>
+<p>Kotlin會自動為屬性產生field, get(), set(value)方法。</p>
 
-<h2 id="field">field</h2>
-<p>field用來儲存屬性，field只能在get()方法跟set()方法使用。</p>
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">name</span> <span class="p">=</span> <span class="s">"Alex"</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>預設會自動變成下面的程式碼。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">name</span> <span class="p">=</span> <span class="s">"Alex"</span>
+    <span class="k">get</span><span class="p">()</span> <span class="p">=</span> <span class="n">field</span>  
+    <span class="k">set</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">field</span> <span class="p">=</span> <span class="n">value</span>    
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="field">field</h3>
+<p>field儲存屬性值在記憶體中，如果要使用get()讀取屬性值，或用set()更新屬性值，需要使用field來讀取或更新，field只能在get()方法跟set()方法使用。</p>
 
 <p>為什麼要使用field？因為Java都要自己寫set(), get(), this.屬性 = 參數，this用的太多，簡化成用field省略大量程式碼。</p>
 
-<h2 id="var">var</h2>
-<p>只有var屬性才能修改，才會有set()方法。</p>
+<h3 id="覆寫get方法">覆寫get()方法</h3>
+<p>get()是讀取屬性，先前的內容說明get()會自動產生，但也可以自己覆寫。</p>
 
-<h2 id="val">val</h2>
-<p>val只能讀取，不能修改，不會有set()方法。</p>
+<p>覆寫get()方法，field代表name，把name轉成全大寫。</p>
 
-<h2 id="屬性非空值類型">屬性非空值類型</h2>
-<h3 id="定義類別student">定義類別Student</h3>
-<p>定義Student類別，可以在.kt文件裡面建立class</p>
+<p>覆寫語法1</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var 變數: 類型 = 初始值
+    get() {
+      // 要記得加上return
+      return 回傳值
+    }
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+        <span class="k">get</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">field</span><span class="o">?.</span><span class="nf">uppercase</span><span class="p">()</span>
+        <span class="p">}</span>        
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>覆寫語法2</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var 變數: 類型 = 初始值
+    get() = field
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+        <span class="k">get</span><span class="p">()</span> <span class="p">=</span> <span class="n">field</span><span class="o">?.</span><span class="nf">uppercase</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="覆寫setvalue方法">覆寫set(value)方法</h3>
+<p>set(value)，是更新屬性，先前的內容說明set()會自動產生，但也可以自己覆寫。</p>
+
+<p>語法，value為傳進來的參數。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var 變數: 類型 = 初始值
+    set(value) {
+      field = value    
+    }
+</code></pre></div></div>
+
+<p>trim()去掉前後空白，再把value指派到field，field代表name屬性。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+        <span class="k">get</span><span class="p">()</span> <span class="p">=</span> <span class="n">field</span><span class="o">?.</span><span class="nf">uppercase</span><span class="p">()</span>
+        <span class="k">set</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">field</span> <span class="p">=</span> <span class="n">value</span><span class="o">?.</span><span class="nf">trim</span><span class="p">()</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="var與val">var與val</h3>
+<p>var才能修改屬性，才會有set()更新方法。</p>
+
+<p>val只能讀取，不能修改，不會有set()更新方法，只有get()讀取。</p>
+
+<h3 id="setvalue只能用field">set(value)只能用field</h3>
+<p>set(value)方法中，不能用屬性名稱。</p>
+
+<p>value參數指派給屬性名(例如name)，程式碼就會進入無限迴圈。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+        <span class="k">get</span><span class="p">()</span> <span class="p">=</span> <span class="n">field</span><span class="o">?.</span><span class="nf">uppercase</span><span class="p">()</span>
+        <span class="k">set</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// 不能這樣寫，不能把value指派給屬性名</span>
+            <span class="n">name</span> <span class="p">=</span> <span class="n">value</span><span class="o">?.</span><span class="nf">trim</span><span class="p">()</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="覆寫可單獨只寫set或get">覆寫可單獨只寫set()或get()</h3>
+<p>不用同時覆寫set()與get()</p>
+
+<p>以下只覆寫set()</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+        <span class="k">set</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">field</span> <span class="p">=</span> <span class="n">value</span><span class="o">?.</span><span class="nf">trim</span><span class="p">()</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="測試">測試</h3>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+        <span class="k">get</span><span class="p">()</span> <span class="p">=</span> <span class="n">field</span><span class="o">?.</span><span class="nf">uppercase</span><span class="p">()</span>
+        <span class="k">set</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">field</span> <span class="p">=</span> <span class="n">value</span><span class="o">?.</span><span class="nf">trim</span><span class="p">()</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">student</span> <span class="p">=</span> <span class="nc">Student</span><span class="p">()</span>
+    <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="p">=</span> <span class="s">"     Bill      "</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BILL
+</code></pre></div></div>
+
+<h3 id="不使用field覆寫get">不使用field覆寫get()</h3>
+<p>建立一個randomId屬性，每次都取得不同的值，不使用field，也是可以覆寫get()</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">randomId</span>
+        <span class="k">get</span><span class="p">()</span> <span class="p">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">..</span> <span class="mi">100</span><span class="p">).</span><span class="nf">shuffled</span><span class="p">().</span><span class="nf">first</span><span class="p">()</span>  <span class="c1">// 取出亂數</span>
+<span class="p">}</span>
+<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">student</span> <span class="p">=</span> <span class="nc">Student</span><span class="p">()</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">randomId</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>22
+</code></pre></div></div>
+
+<h3 id="set作為檢查的機制">set()作為檢查的機制</h3>
+<p>指派給 speakerVolume 屬性的值介於 0 到 100 之間。</p>
+
+<p>可以在 set() 函式中使用 in 關鍵字，並在後面加上值的範圍，以檢查 Int 值是否介於 0 到 100 的範圍內。如果該值在預期範圍內，系統會更新 field 值，否則屬性的值維持不變。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">speakerVolume</span> <span class="p">=</span> <span class="mi">2</span>
+    <span class="k">set</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">value</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">field</span> <span class="p">=</span> <span class="n">value</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="存取權限">存取權限</h2>
+<p>若set前面加上private，代表不允許其它地方設值，只有本身的類別可以設值。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Cat4</span> <span class="p">(</span><span class="n">_name</span><span class="p">:</span> <span class="nc">String</span><span class="p">,</span> <span class="n">_age</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span><span class="nc">String</span> <span class="p">=</span> <span class="s">""</span>
+        <span class="k">private</span> <span class="k">set</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">field</span> <span class="p">=</span> <span class="n">value</span>
+        <span class="p">}</span>
+    <span class="kd">var</span> <span class="py">age</span><span class="p">:</span><span class="nc">Int</span> <span class="p">=</span> <span class="mi">0</span>
+    <span class="nf">init</span> <span class="p">{</span>
+        <span class="n">name</span> <span class="p">=</span> <span class="n">_name</span>
+        <span class="n">age</span> <span class="p">=</span> <span class="n">_age</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">cat4</span> <span class="p">=</span> <span class="nc">Cat4</span><span class="p">(</span><span class="s">"喵喵"</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">cat4</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">cat4</span><span class="p">.</span><span class="n">age</span><span class="p">)</span>
+    <span class="c1">// 以下會編譯失敗</span>
+    <span class="n">cat4</span><span class="p">.</span><span class="n">name</span> <span class="p">=</span> <span class="s">"Momo"</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="java原始碼">Java原始碼</h2>
+<h3 id="var非空值屬性">var非空值屬性</h3>
+<p>Student類別中有一個var屬性。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2574,7 +2855,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="notnull與checknotnullparameter">NotNull與checkNotNullParameter()</h3>
+<h4 id="notnull與checknotnullparameter">NotNull與checkNotNullParameter()</h4>
 <p>看產生的java檔，<a href="/pages/kotlin/intellij/">Decompile轉成Java檔</a></p>
 
 <p>可以發現自動產生getName()、setName()，\@NotNull是kotlin的Annotation，目的是檢查屬性、傳回值、參數是否為null，Annotation的作用在於檢查，發現是null，產生編譯例外。</p>
@@ -2615,82 +2896,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="建立物件">建立物件</h3>
-<p>建立物件，並把物件指派給變數。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var 變數 = 類別名()
-val 變數 = 類別名()
-</code></pre></div></div>
-
-<p>建立物件，並把物件指派給student變數。</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="py">name</span> <span class="p">=</span> <span class="s">"Alice"</span>
-<span class="p">}</span>
-<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// 建立物件</span>
-    <span class="kd">var</span> <span class="py">student</span> <span class="p">=</span> <span class="nc">Student</span><span class="p">()</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="val物件變數">val物件變數</h3>
-<p>此處的val並不是不能修改物件的屬性，而是不能再把val物件變數指向其它物件。</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="py">name</span> <span class="p">=</span> <span class="s">"Alice"</span>
-<span class="p">}</span>
-<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// val物件變數</span>
-    <span class="kd">val</span> <span class="py">student2</span> <span class="p">=</span> <span class="nc">Student</span><span class="p">()</span>
-    <span class="c1">// 以下會出錯 因為Val cannot be reassigned</span>
-    <span class="n">student2</span> <span class="p">=</span> <span class="nc">Student</span><span class="p">()</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>val物件變數，可以修改物件的屬性，以下程式碼把name指派新的值。</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="py">name</span> <span class="p">=</span> <span class="s">"Alice"</span>
-<span class="p">}</span>
-<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">val</span> <span class="py">student2</span> <span class="p">=</span> <span class="nc">Student</span><span class="p">()</span>
-    <span class="n">student2</span><span class="p">.</span><span class="n">name</span> <span class="p">=</span> <span class="s">"Doris"</span>
-    <span class="nf">println</span><span class="p">(</span><span class="n">student2</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Doris
-</code></pre></div></div>
-<h3 id="修改屬性為bill">修改屬性為Bill</h3>
+<h4 id="修改屬性為bill">修改屬性為Bill</h4>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2726,8 +2932,8 @@ val 變數 = 類別名()
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="屬性空值類型">屬性空值類型</h2>
-<h3 id="把name屬性改成空值類型">把name屬性改成空值類型。</h3>
+<h3 id="屬性為空值類型">屬性為空值類型</h3>
+<h4 id="把name屬性改成空值類型">把name屬性改成空值類型。</h4>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2747,7 +2953,7 @@ val 變數 = 類別名()
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="nullable">Nullable</h3>
+<h4 id="nullable-與-checknotnullparameter">Nullable 與 checkNotNullParameter()</h4>
 <p>Java程式碼，\@Nullable代表可為空值。</p>
 
 <figure class="highlight">
@@ -2780,7 +2986,6 @@ val 變數 = 類別名()
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="沒有checknotnullparameter">沒有checkNotNullParameter()</h3>
 <p>可為空值類型，產生出來的Java檔，就沒有checkNotNullParameter()方法。</p>
 
 <figure class="highlight">
@@ -2794,200 +2999,6 @@ val 變數 = 類別名()
    <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
-
-<h2 id="覆寫get方法">覆寫get()方法</h2>
-<p>覆寫語法1</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var 變數: 類型 = 初始值
-    get() {
-    	// 要記得加上return
-    	return 回傳值
-    }
-</code></pre></div></div>
-
-<p>覆寫語法2</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var 變數: 類型 = 初始值
-    get() = 值
-</code></pre></div></div>
-
-<p>覆寫get()方法，field代表name，把name轉成全大寫。</p>
-
-<p>覆寫語法1</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
-        <span class="k">get</span><span class="p">()</span> <span class="p">{</span>
-            <span class="k">return</span> <span class="n">field</span><span class="o">?.</span><span class="nf">uppercase</span><span class="p">()</span>
-        <span class="p">}</span>        
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>覆寫語法2</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
-        <span class="k">get</span><span class="p">()</span> <span class="p">=</span> <span class="n">field</span><span class="o">?.</span><span class="nf">uppercase</span><span class="p">()</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="覆寫set方法">覆寫set()方法</h2>
-<p>語法，value為傳進來的參數。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var 變數: 類型 = 初始值
-    set(value) {
-    	field = value    
-    }
-</code></pre></div></div>
-
-<p>trim()去掉前後空白，再把value指派到field，field代表name屬性。</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
-        <span class="k">get</span><span class="p">()</span> <span class="p">=</span> <span class="n">field</span><span class="o">?.</span><span class="nf">uppercase</span><span class="p">()</span>
-        <span class="k">set</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">field</span> <span class="p">=</span> <span class="n">value</span><span class="o">?.</span><span class="nf">trim</span><span class="p">()</span>
-        <span class="p">}</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="覆寫可單獨只寫set或get">覆寫可單獨只寫set()或get()</h2>
-<p>不用同時覆寫set()與get()</p>
-
-<p>以下只覆寫set()</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
-        <span class="k">set</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">field</span> <span class="p">=</span> <span class="n">value</span><span class="o">?.</span><span class="nf">trim</span><span class="p">()</span>
-        <span class="p">}</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="set只能用field">set()只能用field</h2>
-<p>value參數指派給屬性名(例如name)，程式碼就會進入無限迴圈。</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
-        <span class="k">get</span><span class="p">()</span> <span class="p">=</span> <span class="n">field</span><span class="o">?.</span><span class="nf">uppercase</span><span class="p">()</span>
-        <span class="k">set</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
-            <span class="c1">// 不能這樣寫，不能把value指派給屬性名</span>
-            <span class="n">name</span> <span class="p">=</span> <span class="n">value</span><span class="o">?.</span><span class="nf">trim</span><span class="p">()</span>
-        <span class="p">}</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="測試">測試</h2>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
-        <span class="k">get</span><span class="p">()</span> <span class="p">=</span> <span class="n">field</span><span class="o">?.</span><span class="nf">uppercase</span><span class="p">()</span>
-        <span class="k">set</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">field</span> <span class="p">=</span> <span class="n">value</span><span class="o">?.</span><span class="nf">trim</span><span class="p">()</span>
-        <span class="p">}</span>
-<span class="p">}</span>
-<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="py">student</span> <span class="p">=</span> <span class="nc">Student</span><span class="p">()</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="p">=</span> <span class="s">"     Bill      "</span>
-    <span class="nf">println</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BILL
-</code></pre></div></div>
-
-<h2 id="不使用field覆寫get">不使用field覆寫get()</h2>
-<p>建立一個randomId屬性，每次都取得不同的值，不使用field，也是可以覆寫get()</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
-        <span class="k">get</span><span class="p">()</span> <span class="p">=</span> <span class="n">field</span><span class="o">?.</span><span class="nf">uppercase</span><span class="p">()</span>
-        <span class="k">set</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">field</span> <span class="p">=</span> <span class="n">value</span><span class="o">?.</span><span class="nf">trim</span><span class="p">()</span>
-        <span class="p">}</span>
-    <span class="kd">val</span> <span class="py">randomId</span>
-        <span class="k">get</span><span class="p">()</span> <span class="p">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">..</span> <span class="mi">100</span><span class="p">).</span><span class="nf">shuffled</span><span class="p">().</span><span class="nf">first</span><span class="p">()</span>  <span class="c1">// 取出亂數</span>
-<span class="p">}</span>
-<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="py">student</span> <span class="p">=</span> <span class="nc">Student</span><span class="p">()</span>
-    <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="p">=</span> <span class="s">"     Bill      "</span>
-    <span class="nf">println</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
-    <span class="nf">println</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="n">randomId</span><span class="p">)</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BILL
-22
-</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -3052,14 +3063,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/kotlin/map" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Map,MutableMap">
+                        <a href="/pages/kotlin/class" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 類別">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/kotlin/constructor" class="navigation navigation-next navigation-unique" aria-label="Next page: 建構函式">
+                        <a href="/pages/kotlin/constructor" class="navigation navigation-next navigation-unique" aria-label="Next page: 建構式">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3179,7 +3190,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-02 00:03:06 +0800"
+        "time": "2025-06-03 10:30:51 +0800"
     },
     "basePath": "",
     "book": {

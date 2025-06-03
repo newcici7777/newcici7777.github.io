@@ -54,11 +54,11 @@ open class Parent(val name: String, val age: Int) {
 3. 把子類別主要建構式的參數，代入繼承父類別建構式中。
 4. 參數會代入父類別的主要建構式。
 
-![img]({{site.imgurl}}/java/extends_c1.png)
+![img]({{site.imgurl}}/kotlin/extends_c1.png)
 
-![img]({{site.imgurl}}/java/extends_c2.png)
+![img]({{site.imgurl}}/kotlin/extends_c2.png)
 
-![img]({{site.imgurl}}/java/extends_c3.png)
+![img]({{site.imgurl}}/kotlin/extends_c3.png)
 
 {% highlight kotlin linenos %}
 class Child(name: String, age:Int) : Parent(name, age) {
@@ -80,7 +80,7 @@ class Child(name: String, age:Int) : Parent(name, age) {
 5. 使用super關鍵字，把子類別次要建構式的參數，代入繼承父類別建構式。
 6. 參數會代入父類別的主要建構式。
 
-![img]({{site.imgurl}}/java/extends_sc1.png)
+![img]({{site.imgurl}}/kotlin/extends_sc1.png)
 
 {% highlight kotlin linenos %}
 class Child: Parent {

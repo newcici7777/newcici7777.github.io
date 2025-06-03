@@ -1520,7 +1520,7 @@
     	<a href="/pages/java/static/" data-nav-link> Static</a>
         
             
-                <ul><li><a href="#靜態變數" data-nav-link " >靜態變數</a></li><li><a href="#靜態方法" data-nav-link " >靜態方法</a></li><li><a href="#靜態區塊" data-nav-link " >靜態區塊</a></li><li><a href="#靜態只產生一次" data-nav-link " >靜態只產生一次</a></li><li><a href="#static與jvm" data-nav-link " >static與jvm</a></li><li><a href="#靜態方法只能存取靜態變數靜態方法" data-nav-link " >靜態方法只能存取靜態變數、靜態方法</a></li><li><a href="#成員方法可以存取靜態變數靜態方法" data-nav-link " >成員方法可以存取靜態變數、靜態方法</a></li><li><a href="#main主程式也是靜態方法" data-nav-link " >main主程式也是靜態方法</a></li></ul>
+                <ul><li><a href="#靜態變數" data-nav-link " >靜態變數</a></li><li><a href="#靜態變數的建立" data-nav-link " >靜態變數的建立</a></li><li><a href="#靜態變數的memory-model" data-nav-link " >靜態變數的Memory Model</a></li><li><a href="#靜態變數使用方法" data-nav-link " >靜態變數使用方法</a></li><li><a href="#靜態方法" data-nav-link " >靜態方法</a></li><li><a href="#靜態區塊" data-nav-link " >靜態區塊</a></li><li><a href="#靜態只產生一次" data-nav-link " >靜態只產生一次</a></li><li><a href="#靜態方法只能存取靜態變數靜態方法" data-nav-link " >靜態方法只能存取靜態變數、靜態方法</a></li><li><a href="#成員方法可以存取靜態變數靜態方法" data-nav-link " >成員方法可以存取靜態變數、靜態方法</a></li><li><a href="#main主程式也是靜態方法" data-nav-link " >main主程式也是靜態方法</a></li></ul>
 
             
         </li>
@@ -2032,14 +2032,35 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/field/" data-nav-link> 屬性</a>
+    	<a href="/pages/kotlin/class/" data-nav-link> 類別</a>
         
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/constructor/" data-nav-link> 建構函式</a>
+    	<a href="/pages/kotlin/field/" data-nav-link> set get</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/constructor/" data-nav-link> 建構式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/extends_constructor/" data-nav-link> extends constructor</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/modifier/" data-nav-link> 存取修飾子</a>
         
             
         </li>
@@ -2529,14 +2550,103 @@
                         <h1 id="/pages/java/static">Static</h1>
                     
 
-                    <h2 id="靜態變數">靜態變數</h2>
-<p>在類別中，除了有成員變數之外，還有一個靜態變數。</p>
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/java/memory_model/">Memory Model</a></li>
+</ul>
+
+<h2 id="靜態變數">靜態變數</h2>
+<p>在類別中，除了有成員變數之外，靜態變數也是類別的成員之一。</p>
 
 <p>什麼是靜態變數？靜態變數可以當作共享資源，所有物件都可以共享這個資源。</p>
 
-<p>使用方法:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別名.靜態變數
+<h2 id="靜態變數的建立">靜態變數的建立</h2>
+<ol>
+  <li>Student類別載入至記憶體，會在Heap建立一個記憶體空間放置Class物件，裡面包含有Student類別所有屬性名字、方法名字、建構子，最重要的是，還有靜態變數，這個Class物件只會有一個，生命周期從被載入至記憶體至程序結束。</li>
+  <li>count靜態變數此時為0。</li>
+</ol>
+
+<p><img src="/assets/img/java/static_count.png" alt="img" /></p>
+
+<h2 id="靜態變數的memory-model">靜態變數的Memory Model</h2>
+<p>建立s1，s1中的count記憶體位址是Class物件的0x0011，把0x0011記憶體位址中的值+1</p>
+
+<p><img src="/assets/img/java/static_count1.png" alt="img" /></p>
+
+<p>建立s2，s2中的count記憶體位址是Class物件的0x0011，把0x0011記憶體位址中的值+1</p>
+
+<p><img src="/assets/img/java/static_count2.png" alt="img" /></p>
+
+<p>由上圖知道，靜態變數的記憶體位址是跟物件的記憶體位址不同。</p>
+
+<p>建立3個學生，並統計數量。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Student</span> <span class="n">s1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Student</span><span class="o">(</span><span class="s">"Mary"</span><span class="o">);</span>
+    <span class="nc">Student</span> <span class="n">s2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Student</span><span class="o">(</span><span class="s">"Bill"</span><span class="o">);</span>
+    <span class="nc">Student</span> <span class="n">s3</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Student</span><span class="o">(</span><span class="s">"Andy"</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s1</span><span class="o">.</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">":"</span> <span class="o">+</span> <span class="n">s1</span><span class="o">.</span><span class="na">getCount</span><span class="o">());</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s2</span><span class="o">.</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">":"</span> <span class="o">+</span> <span class="n">s2</span><span class="o">.</span><span class="na">getCount</span><span class="o">());</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s3</span><span class="o">.</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">":"</span> <span class="o">+</span> <span class="n">s3</span><span class="o">.</span><span class="na">getCount</span><span class="o">());</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Student</span> <span class="o">{</span>
+  <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">count</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="nf">Student</span> <span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+    <span class="n">count</span><span class="o">++;</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getCount</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">count</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mary:3
+Bill:3
+Andy:3
 </code></pre></div></div>
+
+<h2 id="靜態變數使用方法">靜態變數使用方法</h2>
+<p>語法</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別名.靜態變數
+物件.靜態變數
+</code></pre></div></div>
+<p>大部分都是使用「類別名.靜態變數」，在Memory Model中，靜態變數是存放在Class物件中，確實是屬於類別的變數。</p>
+
+<p>使用「物件.靜態變數」，在Memory Model中，物件的靜態變數的記憶體位址，也是指向Class物件中靜態變數的記憶體位址。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2558,11 +2668,10 @@
 </code></pre></div></div>
 
 <h2 id="靜態方法">靜態方法</h2>
-<p>靜態方法使用方法有下列二種</p>
-
-<p>使用方法:</p>
+<p>語法</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別名.靜態方法()
 </code></pre></div></div>
+<p>靜態方法屬於類別的方法，只能存取靜態變數與靜態方法，通常作為工具類別，進行跟物件無關的操作。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2587,7 +2696,7 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>靜態方法
 </code></pre></div></div>
 <h2 id="靜態區塊">靜態區塊</h2>
-<p>類別加載到jvm時，會呼叫靜態區塊，而建立物件時，會呼叫匿名區塊，然後才會呼叫建構子。</p>
+<p>jvm載入類別至記憶體，會呼叫靜態區塊，而建立物件時，會呼叫匿名區塊，然後才會呼叫建構子。</p>
 
 <p>語法</p>
 
@@ -2674,11 +2783,7 @@
 
 <p>由以上結果可知，執行2次new建立物件，但「靜態區塊」只會產生一次，不管建立多少次物件，靜態變數、靜態方法、靜態區塊，只會產生一次。</p>
 
-<h2 id="static與jvm">static與jvm</h2>
-<p>static方法、static變數、static靜態內部類別，是在JVM啟動時，ClassLoader類別載入器就已經先丟進Method area(Metaspace)的靜態資料區中，若靜態變數的類型是物件(如String)，就會把「靜態變數」放在jvm的stack中，而變數指向的「物件」則放入jvm的heap(堆)的區域中。</p>
-
 <h2 id="靜態方法只能存取靜態變數靜態方法">靜態方法只能存取靜態變數、靜態方法</h2>
-<p>靜態方法沒辦法存取成員變數與成員方法</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3039,7 +3144,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-02 00:03:06 +0800"
+        "time": "2025-06-03 10:30:51 +0800"
     },
     "basePath": "",
     "book": {

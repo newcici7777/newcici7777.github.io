@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>建構函式 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>建構式 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="keywords" content="kotlin, constructor" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -2029,18 +2029,39 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/field/" data-nav-link> 屬性</a>
+    	<a href="/pages/kotlin/class/" data-nav-link> 類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/field/" data-nav-link> set get</a>
         
             
         </li>
 	
 	
 	<li class="active" data-nav-item>
-    	<a href="/pages/kotlin/constructor/" data-nav-link> 建構函式</a>
+    	<a href="/pages/kotlin/constructor/" data-nav-link> 建構式</a>
         
             
-                <ul><li><a href="#預設主要建構函式" data-nav-link " >預設主要建構函式</a></li><li><a href="#主要建構函式" data-nav-link " >主要建構函式</a></li><li><a href="#主要建構函式自動產生setget" data-nav-link " >主要建構函式自動產生set()、get()</a></li><li><a href="#主要建構函式--所有屬性預設值" data-nav-link " >主要建構函式 + 所有屬性預設值</a></li><li><a href="#次要建構函式" data-nav-link " >次要建構函式</a><ul><li><a href="#次要建構函式使用方式" data-nav-link " >次要建構函式使用方式</a></li><li><a href="#類別屬性--次要建構函式" data-nav-link " >類別屬性 + 次要建構函式</a></li><li><a href="#主要建構函式屬性--類別屬性--次要建構函式" data-nav-link " >主要建構函式屬性 + 類別屬性 + 次要建構函式</a></li><li><a href="#主要建構函式--初始化所有屬性--次要建構函式" data-nav-link " >主要建構函式 + 初始化所有屬性 + 次要建構函式</a></li><li><a href="#個人觀感" data-nav-link " >個人觀感</a></li></ul></li><li><a href="#init初始化函式" data-nav-link " >init初始化函式</a></li><li><a href="#程式碼執行順序" data-nav-link " >程式碼執行順序</a></li></ul>
+                <ul><li><a href="#預設主要建構式" data-nav-link " >預設主要建構式</a></li><li><a href="#主要建構式" data-nav-link " >主要建構式</a></li><li><a href="#主要建構式自動產生setget" data-nav-link " >主要建構式自動產生set()、get()</a></li><li><a href="#主要建構式--所有屬性預設值" data-nav-link " >主要建構式 + 所有屬性預設值</a></li><li><a href="#次要建構式" data-nav-link " >次要建構式</a><ul><li><a href="#次要建構式使用方式" data-nav-link " >次要建構式使用方式</a></li><li><a href="#類別屬性--次要建構式" data-nav-link " >類別屬性 + 次要建構式</a></li><li><a href="#主要建構式屬性--類別屬性--次要建構式" data-nav-link " >主要建構式屬性 + 類別屬性 + 次要建構式</a></li><li><a href="#主要建構式--初始化所有屬性--次要建構式" data-nav-link " >主要建構式 + 初始化所有屬性 + 次要建構式</a></li></ul></li><li><a href="#init初始化函式" data-nav-link " >init初始化函式</a></li><li><a href="#主要建構式不用有val或var" data-nav-link " >主要建構式不用有val或var</a><ul><li><a href="#可以與init搭配" data-nav-link " >可以與init搭配</a></li></ul></li><li><a href="#程式碼執行順序" data-nav-link " >程式碼執行順序</a><ul><li><a href="#使用decompile證明執行順序" data-nav-link " >使用Decompile證明執行順序</a></li><li><a href="#屬性不能寫在後面" data-nav-link " >屬性不能寫在後面</a></li></ul></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/extends_constructor/" data-nav-link> extends constructor</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/modifier/" data-nav-link> 存取修飾子</a>
+        
             
         </li>
 	
@@ -2513,7 +2534,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >建構函式</a>
+                            <a href="." >建構式</a>
                         
                     </h1>
                 </div>
@@ -2526,15 +2547,15 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/kotlin/constructor">建構函式</h1>
+                        <h1 id="/pages/kotlin/constructor">建構式</h1>
                     
 
-                    <p>建構函式跟Java建構子一樣，主要是用來建立物件。</p>
+                    <p>建構式跟Java建構子一樣，主要是用來建立物件。</p>
 
-<p>建構函式分為主要建構函式(Primary constructor)與次要建構函式(Secondary constructor)。</p>
+<p>建構式分為主要建構式(Primary constructor)與次要建構式(Secondary constructor)。</p>
 
-<h2 id="預設主要建構函式">預設主要建構函式</h2>
-<p>constructor()為主要建構函式，與「class 類別名」同一行，放在「類別名」後面，預設建構函式沒有參數。</p>
+<h2 id="預設主要建構式">預設主要建構式</h2>
+<p>constructor()為主要建構式，與「class 類別名」同一行，放在「類別名」後面，預設建構式沒有參數。</p>
 
 <p>語法</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class 類別名 constructor() {
@@ -2551,7 +2572,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>Kotlin目的在簡化程式碼，若建構函式沒有參數，可以省略constructor()，Kotlin會自動產生預設建構函式。</p>
+<p>Kotlin目的在簡化程式碼，若建構式沒有參數，也沒有權限修飾子，可以省略constructor()，Kotlin會自動產生預設建構式。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2569,14 +2590,14 @@
 }
 </code></pre></div></div>
 
-<h2 id="主要建構函式">主要建構函式</h2>
+<h2 id="主要建構式">主要建構式</h2>
 <p>之前在<a href="/pages/kotlin/field/">屬性</a>的文章中提到，val唯讀屬性，不會有set()方法。</p>
 
-<p>可由建構函式設定val屬性的值，在類別中也不用再次定義val屬性。</p>
+<p>可由建構式設定val屬性的值，在類別中也不用再次定義val屬性。</p>
 
 <p>語法，參數可以為var或val，沒有限定只能val。</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class 類別名 (val 屬性: 類型, var 屬性: 類型, ...) {
-	// 省略類別屬性，移到主要建構函式
+	// 省略類別屬性，移到主要建構式
 }
 </code></pre></div></div>
 
@@ -2594,7 +2615,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>改為主要建構函式，注意！可以不用給初始值，但一定要有類型。</p>
+<p>改為主要建構式，注意！可以不用給初始值，但一定要有類型。</p>
 
 <p>不給類型會有這個編譯錯誤，A type annotation is required on a value parameter。</p>
 
@@ -2610,7 +2631,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>由「主要建構函式」建立物件。</p>
+<p>由「主要建構式」建立物件。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2627,7 +2648,7 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>小咪
 </code></pre></div></div>
 
-<h2 id="主要建構函式自動產生setget">主要建構函式自動產生set()、get()</h2>
+<h2 id="主要建構式自動產生setget">主要建構式自動產生set()、get()</h2>
 <p>搭配val與var，會自動產生set()、get()，注意！val不會自動產生set()方法。</p>
 
 <p>因為val是唯讀，不能修改。</p>
@@ -2668,7 +2689,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="主要建構函式--所有屬性預設值">主要建構函式 + 所有屬性預設值</h2>
+<h2 id="主要建構式--所有屬性預設值">主要建構式 + 所有屬性預設值</h2>
 <p>每一個屬性都有預設值，建立物件時，只要代入<code class="language-plaintext highlighter-rouge">屬性名 = 值</code>，就可以設定屬性的值。</p>
 
 <figure class="highlight">
@@ -2692,7 +2713,7 @@
 <span class="p">}</span>
 
 <span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// 主要建構函式 屬性名 = 值</span>
+    <span class="c1">// 主要建構式 屬性名 = 值</span>
     <span class="kd">val</span> <span class="py">cat</span> <span class="p">=</span> <span class="nc">Cat</span><span class="p">(</span><span class="n">name</span> <span class="p">=</span> <span class="s">"小咪"</span><span class="p">)</span>
     <span class="nf">println</span><span class="p">(</span><span class="n">cat</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
 <span class="p">}</span>
@@ -2701,15 +2722,17 @@
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>小咪
 </code></pre></div></div>
-<h2 id="次要建構函式">次要建構函式</h2>
-<h3 id="次要建構函式使用方式">次要建構函式使用方式</h3>
-<p>次要建構函式無法使用val與var，不會自動產生set()、get()。</p>
+<h2 id="次要建構式">次要建構式</h2>
+<h3 id="次要建構式使用方式">次要建構式使用方式</h3>
+<p>次要建構式參數數量，不能跟主要建構式參數數量一樣。</p>
 
-<p>因為無法使用val與var，所以會由以下三種方式搭配次要建構函式。</p>
+<p>次要建構式無法使用val與var，不會自動產生set()、get()。</p>
+
+<p>因為無法使用val與var，所以會由以下三種方式搭配次要建構式。</p>
 
 <ol>
-  <li>主要建構函式 + 初始化所有屬性 + 次要建構函式。</li>
-  <li>類別屬性 + 次要建構函式
+  <li>主要建構式 + 初始化所有屬性 + 次要建構式。</li>
+  <li>類別屬性 + 次要建構式
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class 類別名 {
   // 類別屬性
   var 屬性名: 屬性類型 = 初始值
@@ -2717,47 +2740,33 @@
 }
 </code></pre></div>    </div>
   </li>
-  <li>主要建構函式屬性 + 類別屬性 + 次要建構函式</li>
+  <li>主要建構式屬性 + 類別屬性 + 次要建構式</li>
 </ol>
 
 <p>Kotlin 的設計原則是：「能用簡單寫法就不要複雜化」！</p>
 
-<h3 id="類別屬性--次要建構函式">類別屬性 + 次要建構函式</h3>
-<p>次要建構函式無法修改val的屬性。</p>
+<h3 id="類別屬性--次要建構式">類別屬性 + 次要建構式</h3>
+<p>次要建構式無法修改val的屬性。</p>
 
-<p>若要透過次要建構函式修改屬性，請設為var。</p>
+<p>若要透過次要建構式修改屬性，請設為var。</p>
 
-<p>注意！次要建構函式沒有val與var。</p>
+<p>注意！次要建構式沒有val與var。</p>
 
-<p>次要建構函式由constructor(屬性:類型)，注意！屬性一定要有類型。</p>
+<p>次要建構式由constructor(屬性:類型)，注意！屬性一定要有類型。</p>
 
 <p>語法:</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="err">類別名 {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class 類別名 {
     // 類別屬性
     var 屬性1: 類型 = 初始值
     var 屬性2: 類型 = 初始值
 
-    // 次要建構函式
+    // 次要建構式
     constructor(屬性1: 類型, 屬性2: 類型) {
     	this.屬性1 = 屬性1
     	this.屬性2 = 屬性2
     } 
-}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+}
+</code></pre></div></div>
 
 <p>範例如下:</p>
 
@@ -2780,7 +2789,7 @@
     <span class="kd">var</span> <span class="py">age</span> <span class="p">=</span> <span class="mi">0</span>
     <span class="kd">var</span> <span class="py">color</span> <span class="p">=</span> <span class="s">""</span>
 
-    <span class="c1">// 次要建構函式</span>
+    <span class="c1">// 次要建構式</span>
     <span class="k">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">this</span><span class="p">.</span><span class="n">name</span> <span class="p">=</span> <span class="n">name</span>
         <span class="k">this</span><span class="p">.</span><span class="n">age</span> <span class="p">=</span> <span class="n">age</span>
@@ -2809,12 +2818,12 @@
 10
 </code></pre></div></div>
 
-<h3 id="主要建構函式屬性--類別屬性--次要建構函式">主要建構函式屬性 + 類別屬性 + 次要建構函式</h3>
-<p>主要建構函式中的屬性可為val。</p>
+<h3 id="主要建構式屬性--類別屬性--次要建構式">主要建構式屬性 + 類別屬性 + 次要建構式</h3>
+<p>主要建構式中的屬性可為val。</p>
 
-<p>次要建構函式無法修改val的屬性。</p>
+<p>次要建構式無法修改val的屬性。</p>
 
-<p>次要建構函式後面就要加上 : this(屬性)，先呼叫主要建構式。</p>
+<p>次要建構式後面就要加上 : this(屬性)，先呼叫主要建構式。</p>
 
 <p>this(屬性)後面不用有類型。</p>
 
@@ -2834,15 +2843,15 @@
 11
 12
 13
-</pre></td><td class="code"><pre><span class="c1">// 主要建構函式屬性 </span>
+</pre></td><td class="code"><pre><span class="c1">// 主要建構式屬性 </span>
 <span class="kd">class</span> <span class="nc">Cat2</span><span class="p">(</span><span class="kd">val</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// 類別屬性</span>
     <span class="kd">var</span> <span class="py">age</span> <span class="p">=</span> <span class="mi">0</span>
     <span class="kd">var</span> <span class="py">color</span> <span class="p">=</span> <span class="s">""</span>
 
-    <span class="c1">// 次要建構函式</span>
+    <span class="c1">// 次要建構式</span>
     <span class="k">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">:</span> <span class="k">this</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// name是val，不能透過次要建構函式修改</span>
+        <span class="c1">// name是val，不能透過次要建構式修改</span>
         <span class="c1">// 注意！此處沒有this.name = name</span>
         <span class="k">this</span><span class="p">.</span><span class="n">age</span> <span class="p">=</span> <span class="n">age</span>
     <span class="p">}</span>
@@ -2866,7 +2875,7 @@
 2
 </code></pre></div></div>
 
-<h3 id="主要建構函式--初始化所有屬性--次要建構函式">主要建構函式 + 初始化所有屬性 + 次要建構函式</h3>
+<h3 id="主要建構式--初始化所有屬性--次要建構式">主要建構式 + 初始化所有屬性 + 次要建構式</h3>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2880,13 +2889,13 @@
 9
 10
 11
-</pre></td><td class="code"><pre><span class="c1">// 主要建構函式 + 初始化所有屬性</span>
+</pre></td><td class="code"><pre><span class="c1">// 主要建構式 + 初始化所有屬性</span>
 <span class="kd">class</span> <span class="nc">Cat3</span><span class="p">(</span>
     <span class="kd">val</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span> <span class="p">=</span> <span class="s">""</span><span class="p">,</span>
     <span class="kd">var</span> <span class="py">age</span><span class="p">:</span> <span class="nc">Int</span> <span class="p">=</span> <span class="mi">0</span><span class="p">,</span>
     <span class="kd">var</span> <span class="py">color</span><span class="p">:</span> <span class="nc">String</span> <span class="p">=</span> <span class="s">""</span>
 <span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// 次要建構函式</span>
+    <span class="c1">// 次要建構式</span>
     <span class="k">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">:</span> <span class="k">this</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">this</span><span class="p">.</span><span class="n">age</span> <span class="p">=</span> <span class="n">age</span>
     <span class="p">}</span>
@@ -2909,8 +2918,6 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>嘟嘟
 10
 </code></pre></div></div>
-<h3 id="個人觀感">個人觀感</h3>
-<p>以上所有方式，只有主要建構函式 + 所有屬性預設值，這個方法最優。</p>
 
 <h2 id="init初始化函式">init初始化函式</h2>
 
@@ -2920,7 +2927,7 @@
 
 <p>這部分的知識跟Java匿名程式碼區塊很像，但執行順序不同，Java是先執行程式碼區塊，再執行建構子。</p>
 
-<p>Kotlin是先執行主要建構函式-&gt;類別屬性-&gt;init初始化函式-&gt;次要建構函式。</p>
+<p>Kotlin是先執行主要建構式-&gt;類別屬性-&gt;init初始化函式-&gt;次要建構式。</p>
 
 <p>以下這行不能編譯成功，Property must be initialized or be abstract</p>
 
@@ -2978,14 +2985,169 @@
 name = 小白
 </code></pre></div></div>
 
+<h2 id="主要建構式不用有val或var">主要建構式不用有val或var</h2>
+<p>主要建構式可以不用有val或var，沒有val與var的參數就不是類別屬性，會使用_底線在參數前面，代表只使用一次。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Cat4</span> <span class="p">(</span><span class="n">_name</span><span class="p">:</span> <span class="nc">String</span><span class="p">,</span> <span class="n">_age</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span><span class="nc">String</span> <span class="p">=</span> <span class="n">_name</span>
+    <span class="kd">var</span> <span class="py">age</span><span class="p">:</span><span class="nc">Int</span> <span class="p">=</span> <span class="n">_age</span>
+<span class="p">}</span>
+<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">cat4</span> <span class="p">=</span> <span class="nc">Cat4</span><span class="p">(</span><span class="s">"喵喵"</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">cat4</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">cat4</span><span class="p">.</span><span class="n">age</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>喵喵
+2
+</code></pre></div></div>
+
+<h3 id="可以與init搭配">可以與init搭配</h3>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Cat4</span> <span class="p">(</span><span class="n">_name</span><span class="p">:</span> <span class="nc">String</span><span class="p">,</span> <span class="n">_age</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">name</span><span class="p">:</span><span class="nc">String</span> <span class="p">=</span> <span class="s">""</span>
+    <span class="kd">var</span> <span class="py">age</span><span class="p">:</span><span class="nc">Int</span> <span class="p">=</span> <span class="mi">0</span>
+    <span class="nf">init</span> <span class="p">{</span>
+        <span class="n">name</span> <span class="p">=</span> <span class="n">_name</span>
+        <span class="n">age</span> <span class="p">=</span> <span class="n">_age</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">cat4</span> <span class="p">=</span> <span class="nc">Cat4</span><span class="p">(</span><span class="s">"喵喵"</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">cat4</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">cat4</span><span class="p">.</span><span class="n">age</span><span class="p">)</span>
+<span class="p">|</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>喵喵
+2
+</code></pre></div></div>
+
 <h2 id="程式碼執行順序">程式碼執行順序</h2>
 <ol>
-  <li>主要建構函式</li>
+  <li>主要建構式</li>
   <li>類別屬性</li>
   <li>init初始化函式</li>
-  <li>次要建構函式</li>
+  <li>次要建構式</li>
 </ol>
 
+<h3 id="使用decompile證明執行順序">使用Decompile證明執行順序</h3>
+<p>Kotlin程式碼</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Cat4</span> <span class="p">(</span><span class="kd">val</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">,</span> <span class="n">_age</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 1. name</span>
+    <span class="k">private</span> <span class="kd">var</span> <span class="py">age</span><span class="p">:</span><span class="nc">Int</span> <span class="p">=</span> <span class="n">_age</span>  <span class="c1">//2.</span>
+    <span class="k">private</span> <span class="kd">val</span> <span class="py">hobby</span><span class="p">:</span><span class="nc">String</span>
+    <span class="k">private</span> <span class="kd">var</span> <span class="py">sleeptimes</span><span class="p">:</span> <span class="nc">Int</span> <span class="p">=</span> <span class="mi">0</span>
+    <span class="nf">init</span> <span class="p">{</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"init block ..."</span><span class="p">)</span>  <span class="c1">// 3.</span>
+        <span class="n">hobby</span> <span class="p">=</span> <span class="s">"swimming"</span>         <span class="c1">// 4.</span>
+    <span class="p">}</span>
+    <span class="k">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">,</span> <span class="n">_age</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">sleeptimes</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span><span class="k">this</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">_age</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">sleeptimes</span> <span class="p">=</span> <span class="n">sleeptimes</span>  <span class="c1">// 5.</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>Java程式碼，以下已把建構子中的順序與Kotlin對映。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nc">Cat4</span> <span class="o">{</span>
+   <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+   <span class="kd">private</span> <span class="kd">final</span> <span class="nc">String</span> <span class="n">hobby</span><span class="o">;</span>
+   <span class="kd">private</span> <span class="kt">int</span> <span class="n">sleeptimes</span><span class="o">;</span>
+   <span class="nd">@NotNull</span>
+   <span class="kd">private</span> <span class="kd">final</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+
+   <span class="nd">@NotNull</span>
+   <span class="kd">public</span> <span class="kd">final</span> <span class="nc">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">name</span><span class="o">;</span>
+   <span class="o">}</span>
+   <span class="kd">public</span> <span class="nf">Cat4</span><span class="o">(</span><span class="nd">@NotNull</span> <span class="nc">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">int</span> <span class="n">_age</span><span class="o">)</span> <span class="o">{</span>
+      <span class="nc">Intrinsics</span><span class="o">.</span><span class="na">checkNotNullParameter</span><span class="o">(</span><span class="n">name</span><span class="o">,</span> <span class="s">"name"</span><span class="o">);</span>
+      <span class="kd">super</span><span class="o">();</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>  <span class="c1">// 1.</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">_age</span><span class="o">;</span>   <span class="c1">// 2.</span>
+      <span class="nc">String</span> <span class="n">var3</span> <span class="o">=</span> <span class="s">"init block ..."</span><span class="o">;</span>  <span class="c1">// 3.</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">var3</span><span class="o">);</span>        <span class="c1">// 3.</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">hobby</span> <span class="o">=</span> <span class="s">"swimming"</span><span class="o">;</span>         <span class="c1">// 4.</span>
+   <span class="o">}</span>
+
+   <span class="kd">public</span> <span class="nf">Cat4</span><span class="o">(</span><span class="nd">@NotNull</span> <span class="nc">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">int</span> <span class="n">_age</span><span class="o">,</span> <span class="kt">int</span> <span class="n">sleeptimes</span><span class="o">)</span> <span class="o">{</span>
+      <span class="nc">Intrinsics</span><span class="o">.</span><span class="na">checkNotNullParameter</span><span class="o">(</span><span class="n">name</span><span class="o">,</span> <span class="s">"name"</span><span class="o">);</span>
+      <span class="k">this</span><span class="o">(</span><span class="n">name</span><span class="o">,</span> <span class="n">_age</span><span class="o">);</span>  <span class="c1">// 先呼叫2個參數的父類建構子</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">sleeptimes</span> <span class="o">=</span> <span class="n">sleeptimes</span><span class="o">;</span>  <span class="c1">//5.</span>
+   <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="屬性不能寫在後面">屬性不能寫在後面</h3>
 <p>你不能像C++把屬性寫到最後面，會無法讀取到屬性，Kotlin執行順序是由上而下。</p>
 
 <figure class="highlight">
@@ -3087,14 +3249,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/kotlin/field" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 屬性">
+                        <a href="/pages/kotlin/field" class="navigation navigation-prev navigation-unique" aria-label="Previous page: set get">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/kotlin/extends" class="navigation navigation-next navigation-unique" aria-label="Next page: 繼承與覆寫">
+                        <a href="/pages/kotlin/extends_constructor" class="navigation navigation-next navigation-unique" aria-label="Next page: extends constructor">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3112,7 +3274,7 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "屬性",
+            "title": "set get",
             "level": "1.2",
             "depth": 1,
             "path": "_pages/kotlin/field.md",
@@ -3214,7 +3376,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-02 00:03:06 +0800"
+        "time": "2025-06-03 10:30:51 +0800"
     },
     "basePath": "",
     "book": {

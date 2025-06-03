@@ -208,11 +208,12 @@ class Cat<T, R, M> {
 }
 {% endhighlight %}
 
-### 泛型不可以用在static屬性與static方法
+### 泛型不可以用在靜態變數與靜態方法
 
 - [memory_model][1]
+- [static][3]
 
-類別載入器(Class Loader)在方法區(Method Area)載入static屬性與static方法，但類別載入器的動作在建立物件之前，類別載入器不會知道T是什麼類型。
+靜態變數是在Class物件中，Class物件比物件更早建立，泛型要在物件建立的時候才指定類型，但靜態物件早就建立好了，根本不可能指定靜態變數的類型。
 
 以下三種都不能使用。
 {% highlight java linenos %}
@@ -374,3 +375,4 @@ public class Test {
 
 [1]: {% link _pages/java/memory_model.md %}#物件建立過程
 [2]: {% link _pages/java/wrap.md %}
+[3]: {% link _pages/java/static.md %}
