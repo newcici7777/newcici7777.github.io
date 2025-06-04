@@ -53,3 +53,10 @@ Mac: cmd + alt + t
 ![img]({{site.imgurl}}/java/sdk2.png)
 
 ![img]({{site.imgurl}}/java/sdk3.png)
+
+## 快速進入類別
+對著類別名，按下快速鍵。
+
+Win: ctrl + b
+
+Mac: cmd + b
