@@ -143,11 +143,14 @@ s1 == s2 false
 s1 == s2.intern() true
 s2 == s2.intern() false
 ```
-## String被指派其它常數就是建立物件
+## String被指派其它字串就是建立物件
+Prerequisites:
+
+- [final][5]
 
 value是final char\[\]，存放字串。
 
-因為value屬性是final，不能直接指向其它記憶體位址，所以String字串重新指派值，實際上就是建立新物件。
+因為value屬性是final，不能直接指向其它陣列，所以String物件被指派其它字串，實際上就是在String Pool中建立新的String物件，並非更新字元陣列裡面的內容。
 {% highlight java linenos %}
 public final class String
     implements java.io.Serializable, Comparable<String>, CharSequence {
@@ -228,3 +231,4 @@ s3 == s4 false
 [2]: {% link _pages/java/equals_compare.md %}
 [3]: {% link _pages/java/string.md %}
 [4]: {% link _pages/java/memory_model.md %}
+[5]: {% link _pages/java/final.md %}

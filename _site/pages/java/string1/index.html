@@ -1406,6 +1406,20 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/array/" data-nav-link> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/final/" data-nav-link> final</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/equals_compare/" data-nav-link> ==與equals</a>
         
             
@@ -1423,7 +1437,7 @@
     	<a href="/pages/java/string1/" data-nav-link> String</a>
         
             
-                <ul><li><a href="#建立方式" data-nav-link " >建立方式</a><ul><li><a href="#字串常數" data-nav-link " >字串常數</a></li><li><a href="#建構子" data-nav-link " >建構子</a></li><li><a href="#建構子與常數的記憶體位址不同" data-nav-link " >建構子與常數的記憶體位址不同</a></li><li><a href="#二者建立方式的記憶體模型" data-nav-link " >二者建立方式的記憶體模型</a></li></ul></li><li><a href="#string-equals" data-nav-link " >String equals</a></li><li><a href="#string-intern" data-nav-link " >String intern()</a></li><li><a href="#string被指派其它常數就是建立物件" data-nav-link " >String被指派其它常數就是建立物件</a></li><li><a href="#二個字串常數相加" data-nav-link " >二個字串常數相加</a></li><li><a href="#二個字串變數相加" data-nav-link " >二個字串變數相加</a></li><li><a href="#string實作comparable" data-nav-link " >String實作Comparable</a></li><li><a href="#string-與-io" data-nav-link " >String 與 IO</a></li></ul>
+                <ul><li><a href="#建立方式" data-nav-link " >建立方式</a><ul><li><a href="#字串常數" data-nav-link " >字串常數</a></li><li><a href="#建構子" data-nav-link " >建構子</a></li><li><a href="#建構子與常數的記憶體位址不同" data-nav-link " >建構子與常數的記憶體位址不同</a></li><li><a href="#二者建立方式的記憶體模型" data-nav-link " >二者建立方式的記憶體模型</a></li></ul></li><li><a href="#string-equals" data-nav-link " >String equals</a></li><li><a href="#string-intern" data-nav-link " >String intern()</a></li><li><a href="#string被指派其它字串就是建立物件" data-nav-link " >String被指派其它字串就是建立物件</a></li><li><a href="#二個字串常數相加" data-nav-link " >二個字串常數相加</a></li><li><a href="#二個字串變數相加" data-nav-link " >二個字串變數相加</a></li><li><a href="#string實作comparable" data-nav-link " >String實作Comparable</a></li><li><a href="#string-與-io" data-nav-link " >String 與 IO</a></li></ul>
 
             
         </li>
@@ -2803,11 +2817,16 @@ s1 == s2 false
 s1 == s2.intern() true
 s2 == s2.intern() false
 </code></pre></div></div>
-<h2 id="string被指派其它常數就是建立物件">String被指派其它常數就是建立物件</h2>
+<h2 id="string被指派其它字串就是建立物件">String被指派其它字串就是建立物件</h2>
+<p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/java/final/">final</a></li>
+</ul>
 
 <p>value是final char[]，存放字串。</p>
 
-<p>因為value屬性是final，不能直接指向其它記憶體位址，所以String字串重新指派值，實際上就是建立新物件。</p>
+<p>因為value屬性是final，不能直接指向其它陣列，所以String物件被指派其它字串，實際上就是在String Pool中建立新的String物件，並非更新字元陣列裡面的內容。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3109,7 +3128,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-04 11:34:50 +0800"
+        "time": "2025-06-04 15:51:57 +0800"
     },
     "basePath": "",
     "book": {

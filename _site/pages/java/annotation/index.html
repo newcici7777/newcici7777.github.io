@@ -1406,6 +1406,20 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/array/" data-nav-link> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/final/" data-nav-link> final</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/equals_compare/" data-nav-link> ==與equals</a>
         
             
@@ -1437,7 +1451,7 @@
     	<a href="/pages/java/annotation/" data-nav-link> Annotation</a>
         
             
-                <ul><li><a href="#三種annotation" data-nav-link " >三種Annotation</a></li><li><a href="#override" data-nav-link " >@Override</a><ul><li><a href="#override錯誤" data-nav-link " >@Override錯誤</a></li><li><a href="#override原始碼" data-nav-link " >@Override原始碼</a></li></ul></li><li><a href="#deprecated" data-nav-link " >@Deprecated</a><ul><li><a href="#deprecated原始檔" data-nav-link " >@Deprecated原始檔</a></li></ul></li><li><a href="#suppresswarnings-抑制警告" data-nav-link " >@SuppressWarnings 抑制警告</a></li><li><a href="#描述注釋的注釋" data-nav-link " >描述注釋的注釋</a><ul><li><a href="#retention" data-nav-link " >@Retention</a></li><li><a href="#target" data-nav-link " >@Target</a></li><li><a href="#documented" data-nav-link " >@Documented</a></li></ul></li></ul>
+                <ul><li><a href="#三種annotation" data-nav-link " >三種Annotation</a></li><li><a href="#override" data-nav-link " >@Override</a><ul><li><a href="#override錯誤" data-nav-link " >@Override錯誤</a></li><li><a href="#override原始碼" data-nav-link " >@Override原始碼</a></li></ul></li><li><a href="#deprecated" data-nav-link " >@Deprecated</a><ul><li><a href="#deprecated原始檔" data-nav-link " >@Deprecated原始檔</a></li></ul></li><li><a href="#suppresswarnings-抑制警告" data-nav-link " >@SuppressWarnings 抑制警告</a></li><li><a href="#描述注釋的注釋" data-nav-link " >描述注釋的注釋</a><ul><li><a href="#retention-注釋的保留" data-nav-link " >@Retention 注釋的保留</a></li><li><a href="#target" data-nav-link " >@Target</a></li><li><a href="#documented" data-nav-link " >@Documented</a></li></ul></li></ul>
 
             
         </li></ul></li>
@@ -2782,7 +2796,29 @@
 <p>填上unchecked，警告馬上變成綠色。
 <img src="/assets/img/java/warning6.png" alt="img" /></p>
 
-<p>原始碼</p>
+<p>程式碼</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="nd">@SuppressWarnings</span><span class="o">({</span><span class="s">"rawtypes"</span><span class="o">,</span> <span class="s">"unchecked"</span><span class="o">})</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">List</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">();</span>
+    <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"adfd"</span><span class="o">);</span>
+    <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"cccc"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>SuppressWarnings原始碼</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2797,8 +2833,15 @@
 </figure>
 
 <h2 id="描述注釋的注釋">描述注釋的注釋</h2>
-<h3 id="retention">@Retention</h3>
-<p>注釋的保留。</p>
+<h3 id="retention-注釋的保留">@Retention 注釋的保留</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nd">@Retention</span><span class="o">(</span><span class="nc">RetentionPolicy</span><span class="o">.</span><span class="na">SOURCE</span><span class="o">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>RetentionPolicy是列舉enum，有下面三種。</p>
 <ol>
   <li>SOURCE 程式碼編譯完，就會清掉程式碼中的注釋。</li>
   <li>CLASS 編譯完後，程式碼仍保留注釋在.class，但執行時，就會清掉。</li>
@@ -2814,8 +2857,14 @@
 
 <p>TYPE可以為類別、介面、enum列舉…等等。</p>
 
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nd">@Target</span><span class="o">(</span><span class="n">value</span><span class="o">={</span><span class="no">CONSTRUCTOR</span><span class="o">,</span> <span class="no">FIELD</span><span class="o">,</span> <span class="no">LOCAL_VARIABLE</span><span class="o">,</span> <span class="no">METHOD</span><span class="o">,</span> <span class="no">PACKAGE</span><span class="o">,</span> <span class="no">MODULE</span><span class="o">,</span> <span class="no">PARAMETER</span><span class="o">,</span> <span class="no">TYPE</span><span class="o">})</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 <h3 id="documented">@Documented</h3>
-<p>可用在Java Doc。</p>
+<p>可在Java Doc顯示出來注釋。</p>
 
 </section>
             </div><div class="search-results">
@@ -2905,11 +2954,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "String Buffer",
+            "title": "陣列",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/java/sb.md",
-            "ref": "_pages/java/sb.md",
+            "path": "_pages/java/array.md",
+            "ref": "_pages/java/array.md",
             "articles": []
         },
         
@@ -3007,7 +3056,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-04 11:34:50 +0800"
+        "time": "2025-06-04 15:51:57 +0800"
     },
     "basePath": "",
     "book": {

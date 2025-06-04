@@ -149,6 +149,8 @@ String name = "Jack";
 
 在Java memory model記憶體模型，有一個區塊是放常數，常數區塊中，又有一個區塊是放String pool字串池。
 
+String Pool，用來儲存重複利用的字串。
+
 ![img]({{site.imgurl}}/java/memory_model.png)
 
 在字串池有3個常數分別是Jack, Mary, Alex

@@ -61,6 +61,8 @@ class Cat {
 
 不給類型會有這個編譯錯誤，A type annotation is required on a value parameter。
 
+這一部分跟[Java final 建構子初始值][3]的內容一樣。
+
 {% highlight kotlin linenos %}
 // 屬性要有類型
 class Cat (val name: String) {
@@ -276,7 +278,10 @@ class Dog {
 }
 {% endhighlight %}
 
-使用init初始化函式，類別中的屬性可以不用給初始值，由init函式初始化屬性，init函式也可以做config的初始化設定。
+使用init初始化函式，類別中的屬性可以不用給初始值，由init函式初始化屬性。
+
+這一部分跟[Java final 匿名區塊初始化][3]的內容一樣。
+
 {% highlight kotlin linenos %}
 class Dog1 {
     val name: String
@@ -418,3 +423,4 @@ name = null
 
 [1]: {% link _pages/kotlin/field.md %}
 [2]: {% link _pages/java/constructor.md %}
+[3]: {% link _pages/java/final.md %}#不是static的final
