@@ -15,8 +15,6 @@ String Pool字串池放在Heap，存放字串常數。
 
 ![img]({{site.imgurl}}/java/memory_model.png)
 
-在Metaspace中，還會存放metadata，儲存類別的所有屬性名、方法名、建構子、靜態變數、靜態方法、靜態區塊，它是屬於C++結構，每一個類別只有一個metadata。
-
 ## 基本資料型別
 基本資料型別有int, char, float, double, boolean，字母以小寫開頭。
 
@@ -75,12 +73,6 @@ class Dog {
   Dog yellow_dog = new Dog("小黃",6,"黃色");
   Dog black_dog = new Dog("小黑",7,"黑色");
 {% endhighlight %}
-
-Class Loader載入類別資訊
-
-類別載入至記憶體，1.會在metaspace建立metadat，裡面包含有Dog類別所有屬性名字、方法名字、建構子、靜態變數…等等，2.接著在Heap建立一個Class物件，裡面也有屬性、方法、建構子…等等，但實際都是指向metadata的資料，metadata與Class物件只會有一個，生命周期從被載入至記憶體至程序結束，metadata是c++的結構，並不是物件。
-
-![img]({{site.imgurl}}/java/obj_model1.png)
 
 new關鍵字(1)，在Heap建立記憶體空間0x0070(2)，Stack的white_dog變數存的是0x0070(3)，Heap中0x0070位址中的name與age與color，全用預設值，int基本型別用0，name與color是String物件用null。
 ![img]({{site.imgurl}}/java/obj_model2.png)

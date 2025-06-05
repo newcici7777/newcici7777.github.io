@@ -235,7 +235,7 @@ class Child extends Father{
 
 ![img]({{site.imgurl}}/java/hierarchy2.png)
 
-以下為呼叫過程圖，最後會在Heap中建立一個記憶體空間0x00055，包含每個父類別的「屬性」，而父類別「們」的方法則存放在[metadata方法區][1]的[vtable][2]中。
+以下為呼叫過程圖，最後會在Heap中建立一個記憶體空間0x00055，包含每個父類別的「屬性」，而父類別「們」的方法則存放在metadata的[vtable][1]中。
 ![img]({{site.imgurl}}/java/super_hierarchy.png)
 
 ## 匿名程式碼區塊
@@ -268,5 +268,4 @@ public class Test {
 建構子區塊
 ```
 
-[1]: {% link _pages/java/memory_model.md %}#物件建立過程
-[2]: {% link _pages/java/polymorphism.md %}#vtable
+[1]: {% link _pages/java/polymorphism.md %}#vtable

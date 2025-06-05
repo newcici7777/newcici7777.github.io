@@ -68,9 +68,9 @@ Andy:3
 類別名.靜態變數
 物件.靜態變數
 ```
-大部分都是使用「類別名.靜態變數」，在Memory Model中，靜態變數是存放在Class物件中，確實是屬於類別的變數。
+大部分都是使用「類別名.靜態變數」，在Memory Model中，靜態變數是存放在metadata中。
 
-使用「物件.靜態變數」，在Memory Model中，物件的靜態變數的記憶體位址，也是指向Class物件中靜態變數的記憶體位址。
+使用「物件.靜態變數」，在Memory Model中，物件的靜態變數的記憶體位址，也是指向Mataspace中metadata靜態變數的記憶體位址。
 
 {% highlight java linenos %}
 public class Test {
@@ -104,30 +104,6 @@ public class Test {
 靜態方法
 ```
 ## 靜態區塊
-類別載入的時候，會在Metaspace中建立metadata，裡面有一個clinit()，靜態區塊的程式碼會以inline的方式合併在clinit()函式中。
-
-```
-.class 檔 → ClassLoader 載入類別
-       ↓
-   建立 metadata（Metaspace） 和 java.lang.Class（Heap）
-       ↓
-   Linking（連接）
-     ├── Verification（驗證）
-     ├── Preparation（配置 static 區域預設值）
-     └── Resolution 
-       ↓
-Initialization（執行 clinit）
-  → static 區塊與 static 欄位被初始化
-```
-
-|Linking階段|描述|
-|:-----|:-------------|
-|Verification|確保 class 檔案格式正確、邏輯正確（例如 stack 不會溢出，方法合法)|
-|Preparation|分配 static 欄位的空間，設初始值（int 為 0、Object 為 null）不執行 static 區塊|
-|Resolution| 把 symbolic reference（如 Lcom/example/Foo;）轉換為實際reference（即記憶體指標）|
-
-Initialization : static 區塊與 static 欄位被初始化，例如: static int var = 23
-
 語法
 {% highlight java linenos %}
   static {
