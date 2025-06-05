@@ -59,7 +59,7 @@ singleton1 == singleton2 = true
 
 ### 優缺點分析
 #### 優點
-static方法、static變數、static區塊、static靜態內部類別，是在JVM啟動時，ClassLoader類別載入器就已經先丟進Method area(Metaspace)的靜態資料區中，若靜態變數的類型是物件(如String)，就會把「靜態變數」放在jvm的stack中，而變數指向的「物件」則放入jvm的heap(堆)的區域中。
+static方法、static變數、static區塊、static靜態內部類別，ClassLoader類別載入時就已經存放在metadata靜態儲存區，若靜態變數的類型是物件(如String)，就會把「靜態變數」放在metadata中，而「物件」則放入Heap中。
 
 以上這些動作只做一次，不管產生多少次物件，都只做一次。
 

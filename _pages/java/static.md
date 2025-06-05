@@ -13,21 +13,21 @@ Prerequisites:
 什麼是靜態變數？靜態變數可以當作共享資源，所有物件都可以共享這個資源。
 
 ## 靜態變數的建立
-1. Student類別載入至記憶體，會在Heap建立一個記憶體空間放置Class物件，裡面包含有Student類別所有屬性名字、方法名字、建構子，最重要的是，還有靜態變數，這個Class物件只會有一個，生命周期從被載入至記憶體至程序結束。
+1. Student類別載入至記憶體，會在Metaspace建立metadata，裡面包含有Student類別所有屬性、方法、靜態變數。
 2. count靜態變數此時為0。
 
 ![img]({{site.imgurl}}/java/static_count.png)
 
 ## 靜態變數的Memory Model
-建立s1，s1中的count記憶體位址是Class物件的0x0011，把0x0011記憶體位址中的值\+1
+建立s1，s1中的count記憶體位址是0x0011，把0x0011記憶體位址中的值\+1
 
 ![img]({{site.imgurl}}/java/static_count1.png)
 
-建立s2，s2中的count記憶體位址是Class物件的0x0011，把0x0011記憶體位址中的值\+1
+建立s2，s2中的count記憶體位址0x0011，把0x0011記憶體位址中的值\+1
 
 ![img]({{site.imgurl}}/java/static_count2.png)
 
-由上圖知道，靜態變數的記憶體位址是跟物件的記憶體位址不同。
+由上圖知道，s1與s2儲存的count的記憶體位址都是0x0011，共用同一個記憶體位址。
 
 建立3個學生，並統計數量。
 {% highlight java linenos %}
@@ -104,7 +104,29 @@ public class Test {
 靜態方法
 ```
 ## 靜態區塊
-jvm載入類別至記憶體，會呼叫靜態區塊，而建立物件時，會呼叫匿名區塊，然後才會呼叫建構子。
+類別載入的時候，會在Metaspace中建立metadata，裡面有一個clinit()，靜態區塊的程式碼會以inline的方式合併在clinit()函式中。
+
+```
+.class 檔 → ClassLoader 載入類別
+       ↓
+   建立 metadata（Metaspace） 和 java.lang.Class（Heap）
+       ↓
+   Linking（連接）
+     ├── Verification（驗證）
+     ├── Preparation（配置 static 區域預設值）
+     └── Resolution 
+       ↓
+Initialization（執行 clinit）
+  → static 區塊與 static 欄位被初始化
+```
+
+|Linking階段|描述|
+|:-----|:-------------|
+|Verification|確保 class 檔案格式正確、邏輯正確（例如 stack 不會溢出，方法合法)|
+|Preparation|分配 static 欄位的空間，設初始值（int 為 0、Object 為 null）不執行 static 區塊|
+|Resolution| 把 symbolic reference（如 Lcom/example/Foo;）轉換為實際reference（即記憶體指標）|
+
+Initialization : static 區塊與 static 欄位被初始化，例如: static int var = 23
 
 語法
 {% highlight java linenos %}

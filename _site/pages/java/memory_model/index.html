@@ -1437,7 +1437,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/string1/" data-nav-link> String</a>
+    	<a href="/pages/java/string/" data-nav-link> String</a>
         
             
         </li>
@@ -1645,7 +1645,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/string/" data-nav-link> String與char[]和byte[]</a>
+    	<a href="/pages/java/string_io/" data-nav-link> String與char[]和byte[]</a>
         
             
         </li>
@@ -2615,17 +2615,19 @@
 
                     <p>Java Memory Model，中文是記憶體模型。</p>
 
-<p>記憶體分為3個區塊，3個區塊分別為Stack、Heap、Method Area(Metaspace)</p>
+<p>記憶體分為3個區塊，3個區塊分別為Stack、Heap、Metaspace</p>
 
 <ul>
   <li>Stack堆疊，存放變數，以及基本型態(int,char,float,double,long,byte,boolean)。</li>
   <li>Heap堆，存放物件，會根據物件的大小建立一個記憶體空間，提供記憶體位址與變數對映。</li>
-  <li>Method Area方法區，又稱Metaspace，存放常數，有一個空間是String Pool字串池，存放字串常數。</li>
+  <li>Metaspace，存放類別的metadata。</li>
 </ul>
+
+<p>String Pool字串池放在Heap，存放字串常數。</p>
 
 <p><img src="/assets/img/java/memory_model.png" alt="img" /></p>
 
-<p>在Heap中，還會存放Class物件，Class物件儲存類別的所有屬性名、方法名、建構子、靜態變數、靜態方法、靜態區塊。</p>
+<p>在Metaspace中，還會存放metadata，儲存類別的所有屬性名、方法名、建構子、靜態變數、靜態方法、靜態區塊，它是屬於C++結構，每一個類別只有一個metadata。</p>
 
 <h2 id="基本資料型別">基本資料型別</h2>
 <p>基本資料型別有int, char, float, double, boolean，字母以小寫開頭。</p>
@@ -2706,7 +2708,7 @@
 
 <p>Class Loader載入類別資訊</p>
 
-<p>類別載入至記憶體，會在Heap建立一個記憶體空間放置Class物件，裡面包含有Dog類別所有屬性名字、方法名字、建構子，還有靜態變數，這個Class物件只會有一個，生命周期從被載入至記憶體至程序結束。</p>
+<p>類別載入至記憶體，1.會在metaspace建立metadat，裡面包含有Dog類別所有屬性名字、方法名字、建構子、靜態變數…等等，2.接著在Heap建立一個Class物件，裡面也有屬性、方法、建構子…等等，但實際都是指向metadata的資料，metadata與Class物件只會有一個，生命周期從被載入至記憶體至程序結束，metadata是c++的結構，並不是物件。</p>
 
 <p><img src="/assets/img/java/obj_model1.png" alt="img" /></p>
 
@@ -2922,7 +2924,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-04 15:51:57 +0800"
+        "time": "2025-06-05 19:20:52 +0800"
     },
     "basePath": "",
     "book": {

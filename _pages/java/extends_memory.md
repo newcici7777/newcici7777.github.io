@@ -31,6 +31,10 @@ public class Test {
 {% endhighlight %}
 
 ## 建立步驟
+載入子類別，載入子類別就會把它的父類別、祖父類別的metadata載入到記憶體中。
+
+![img]({{site.imgurl}}/java/extends_memory.png)
+
 建立子類別，1.建立子類別記憶體空間，2.變數child指向記憶體空間。
 
 ![img]({{site.imgurl}}/java/extends_memory1.png)

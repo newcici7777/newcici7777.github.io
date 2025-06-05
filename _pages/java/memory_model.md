@@ -5,15 +5,17 @@ keywords: Java, Java Memory Model
 ---
 Java Memory Model，中文是記憶體模型。
 
-記憶體分為3個區塊，3個區塊分別為Stack、Heap、Method Area(Metaspace)
+記憶體分為3個區塊，3個區塊分別為Stack、Heap、Metaspace
 
 - Stack堆疊，存放變數，以及基本型態(int,char,float,double,long,byte,boolean)。
 - Heap堆，存放物件，會根據物件的大小建立一個記憶體空間，提供記憶體位址與變數對映。
-- Method Area方法區，又稱Metaspace，存放常數，有一個空間是String Pool字串池，存放字串常數。
+- Metaspace，存放類別的metadata。
+
+String Pool字串池放在Heap，存放字串常數。
 
 ![img]({{site.imgurl}}/java/memory_model.png)
 
-在Heap中，還會存放Class物件，Class物件儲存類別的所有屬性名、方法名、建構子、靜態變數、靜態方法、靜態區塊。
+在Metaspace中，還會存放metadata，儲存類別的所有屬性名、方法名、建構子、靜態變數、靜態方法、靜態區塊，它是屬於C++結構，每一個類別只有一個metadata。
 
 ## 基本資料型別
 基本資料型別有int, char, float, double, boolean，字母以小寫開頭。
@@ -76,7 +78,7 @@ class Dog {
 
 Class Loader載入類別資訊
 
-類別載入至記憶體，會在Heap建立一個記憶體空間放置Class物件，裡面包含有Dog類別所有屬性名字、方法名字、建構子，還有靜態變數，這個Class物件只會有一個，生命周期從被載入至記憶體至程序結束。
+類別載入至記憶體，1.會在metaspace建立metadat，裡面包含有Dog類別所有屬性名字、方法名字、建構子、靜態變數…等等，2.接著在Heap建立一個Class物件，裡面也有屬性、方法、建構子…等等，但實際都是指向metadata的資料，metadata與Class物件只會有一個，生命周期從被載入至記憶體至程序結束，metadata是c++的結構，並不是物件。
 
 ![img]({{site.imgurl}}/java/obj_model1.png)
 

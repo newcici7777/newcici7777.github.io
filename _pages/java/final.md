@@ -8,8 +8,10 @@ keywords: Java, final
 
 不能放在建構子前面。
 
-## final 變數
-final放在變數前，代表變數的值不能被修改。
+## final 常數
+final放在變數前，代表變數的值不能被修改，而且一定要給預設值。
+
+因為值不能被修改，所以不是變數，是常數。
 
 {% highlight java linenos %}
 final String msg = "Test";
@@ -24,7 +26,7 @@ public int add(final int x) {
 }
 {% endhighlight %}
 
-若使用x\+\+就會有錯誤，因為x\+\+就是`x = x + 1`，是修改x變數，但是final不能被修改。
+若使用x\+\+就會有錯誤，因為x\+\+就是`x = x + 1`，是修改x常數，但是final不能被修改。
 {% highlight java linenos %}
 public int add(final int x) {
   //
@@ -42,7 +44,7 @@ final對於陣列而言，變數是不能再指向其它陣列。
 {% highlight java linenos %}
 final char[] arr1 = {'H', 'e', 'l', 'l', 'o'};
 char[] arr2 = {'W', 'o', 'r', 'l', 'd'};
-// 下面會編譯錯誤，arr1不能再指向其它物件。
+// 下面會編譯錯誤，arr1不能再指向其它陣列。
 arr1 = arr2;
 {% endhighlight %}
 
@@ -61,7 +63,7 @@ World
 ```
 ## 類別中的final
 ### 常數
-final放在屬性前，就變成常數，因為不能再改變，不能叫變數。
+final放在屬性前，就變成常數，因為不能再改變，而且一定要給預設值。
 
 final常數，不能再被修改，繼承的子類別也不能修改final常數，本身類別也不能修改final常數，只被設定一次。
 
@@ -73,14 +75,16 @@ public class Test {
 }
 {% endhighlight %}
 
-### 在下面幾種情況，final可以不設初始值
+### 在下面幾種情況，final可以不設預設值
 #### 不是static的final
-final初始值
+final原本一定要設預設值。
 {% highlight java linenos %}
 public final String IMG_URL = "http://xxxxxxx";
 {% endhighlight %}
 
-1. 在建構子中會設定final的值，final就可以不設初始值。
+下面的狀況下，可以不用設預設值。
+
+在建構子中會設定final的值，final就可以不設預設值。
 {% highlight java linenos %}
 public class Test {
   public final String IMG_URL;
@@ -91,7 +95,7 @@ public class Test {
 }
 {% endhighlight %}
 
-2. 在匿名區塊會設定final的值，final就可以不設初始值。
+在匿名區塊會設定final的值，final就可以不設預設值。
 {% highlight java linenos %}
 public class Test {
   public final String IMG_URL;
@@ -103,12 +107,14 @@ public class Test {
 {% endhighlight %}
 
 #### final static
-final static 初始值
+final static 原本一定要設預設值。
 {% highlight java linenos %}
 public final static String IMG_URL = "http://xxxxxx";
 {% endhighlight %}
 
-在靜態區塊會設定final static的值，final static就可以不設初始值。
+在以下的狀況，可以不用設預設值。
+
+在靜態區塊會設定final static的值，final static就可以不設預設值。
 {% highlight java linenos %}
 public class Test {
   public final static String IMG_URL;

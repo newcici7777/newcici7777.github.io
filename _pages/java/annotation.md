@@ -3,7 +3,7 @@ title: Annotation
 date: 2025-06-04
 keywords: Java, annotation
 ---
-Annotation，中文稱為注釋。
+Annotation，中文稱為標註。
 
 Annotation主要用於檢查。
 
@@ -90,7 +90,7 @@ public @interface Deprecated {
 
 ![img]({{site.imgurl}}/java/warning.png)
 
-加上以下注釋，就沒有警告了。
+加上以下標註，就沒有警告了。
 ```
 @SuppressWarnings({"all"})
 ```
@@ -159,23 +159,23 @@ public @interface SuppressWarnings {
 }
 {% endhighlight %}
 
-## 描述注釋的注釋
-### @Retention 注釋的保留
+## 描述標註的標註
+### @Retention 標註的保留
 {% highlight java linenos %}
 @Retention(RetentionPolicy.SOURCE)
 {% endhighlight %}
 
 RetentionPolicy是列舉enum，有下面三種。
-1. SOURCE 程式碼編譯完，就會清掉程式碼中的注釋。
-2. CLASS 編譯完後，程式碼仍保留注釋在.class，但執行時，就會清掉。
-3. RUNTIME 執行時，注釋仍保留在[class物件][1]中，可通過反射找到注釋。
+1. SOURCE 程式碼編譯完，就會清掉程式碼中的標註。
+2. CLASS 編譯完後，程式碼仍保留標註在.class，但執行時，就會清掉。
+3. RUNTIME 執行時，標註仍保留在[class物件][1]中，可通過反射找到標註。
 
-下圖中，1與2是注釋被清掉的位置。
+下圖中，1與2是標註被清掉的位置。
 
 ![img]({{site.imgurl}}/java/annotaion1.png)
 
 ### @Target
-注釋使用的位置，可以是建構子、屬性、區域變數、方法、package、模組、參數、類型TYPE。
+標註使用的位置，可以是建構子、屬性、區域變數、方法、package、模組、參數、類型TYPE。
 
 TYPE可以為類別、介面、enum列舉...等等。
 
@@ -184,6 +184,6 @@ TYPE可以為類別、介面、enum列舉...等等。
 {% endhighlight %}
 
 ### @Documented
-可在Java Doc顯示出來注釋。
+可在Java Doc顯示出來標註。
 
 [1]: {% link _pages/java/memory_model.md %}

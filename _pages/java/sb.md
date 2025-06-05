@@ -70,4 +70,4 @@ Hello World
 
 
 
-[1]: {% link _pages/java/string1.md %}
+[1]: {% link _pages/java/string.md %}

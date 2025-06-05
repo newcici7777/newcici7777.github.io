@@ -9,6 +9,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |:--:|:--:|:--:|
 |head file|標頭檔案|頭文件|
 |source file|原始檔案|源文件|
+|source code|原始碼|源代碼|
 |C++ STL = Standard Template Librar|C++函式庫|C++庫函數|
 |C libc = standard library|C函式庫|C庫函數|
 |object file|目的檔|目標檔|
@@ -210,6 +211,10 @@ struct|結構|結構體|
 |Method chaining|鏈式呼叫|鏈式調用|
 |Method Calls|呼叫方法|函數調用|
 |Method caller|函式呼叫者|調用者|
+|package|套件|包|
+|byte code|位元碼|字節碼|
+|machine code|機器碼|二進制代碼|
+|Annotation|標註|注釋|
 
 ## Kotlin
 

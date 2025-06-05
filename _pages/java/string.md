@@ -1,188 +1,234 @@
 ---
-title: String與char[]和byte[]
-date: 2025-05-09
+title: String
+date: 2025-05-26
 keywords: Java, String
 ---
-建構子
+Prerequisites:
+
+- [Memory Model][4]
+- [== 比較][2]
+
+## 建立方式
+建立方式有二種，一種是指向字串常數，一種是使用建構子。
+
+### 字串常數
+什麼是字串常數？\"\"雙引號包住的字串是常數。
+
 {% highlight java linenos %}
-  new String(char[]);
-  // 指定開始位置與要拷貝的長度
-  new String(char[], int start, int len);
-  new String(byte[]);
-  // 指定開始位置與要拷貝的長度
-  new String(byte[], int start, int len);
+String s1 = "這個就是字串常數";
 {% endhighlight %}
 
-## 字元陣列轉字串
+字串常數記憶體模型
+
+![img]({{site.imgurl}}/java/str1.png)
+
+1. 在String pool找有沒有Hello的字串，沒有就建立記憶體空間放Hello。
+2. Stack中s1變數指向String pool中Hello的記憶體位址。
+
+### 建構子
 {% highlight java linenos %}
-  // 字元陣列轉字串
-  char[] charArr = {'A', 'B', 'C'};
-  String str2 = new String(charArr);
-  System.out.println(str2);
+String s1 = new String(String s);
 {% endhighlight %}
-```
-ABC
-```
+
+
+#### String有一個value屬性
+value是final char\[\]，存放字串。
+
 {% highlight java linenos %}
-  char[] charArr = {'A', 'B', 'C'};
-  // 指定開始位置與要拷貝的長度
-  String str3 = new String(charArr, 1, 2);
-  System.out.println(str3);
+public final class String
+    implements java.io.Serializable, Comparable<String>, CharSequence {
+    // 存放字串
+    private final char value[];
+}
 {% endhighlight %}
-```
-BC
-```
-## 字串轉字元陣列
+
+#### 建構子記憶體模型
+
+![img]({{site.imgurl}}/java/str2.png)
+
+1. 建立記憶體空間
+2. 將Stack中s1變數指向記憶體位址
+3. 在String pool找有沒有Hi的字串，沒有就建立記憶體空間放Hi。
+4. String有一個value屬性，指向String pool中的Hi記憶體位址。
+
+### 建構子與常數的記憶體位址不同
+從以上的記憶體模型，可以發現常數建立的字串，是指向String Pool中的記憶體位址。
+
+而用new String()建立的字串，變數指向的是Heap中的記憶體位址。
+
+String是類別，==對類別而言，是用來比較記憶體位址是否相等。
+
 {% highlight java linenos %}
-  String s1 = "ABCDE";
-  // 字串轉字元陣列
-  char[] charArr2 = s1.toCharArray();
-  for (char c : charArr2) {
-    System.out.println(c);
+public class Test {
+  public static void main(String[] args) {
+    String s1 = "Hello";
+    String s2 = "Hello";
+    System.out.println("s1 == s2 " + (s1 == s2));
+    String s3 = new String("Hello");
+    String s4 = new String("Hello");
+    System.out.println("s3 == s4 " + (s3 == s4));
+    System.out.println("s1 == s3 " + (s1 == s3));
   }
+}
 {% endhighlight %}
 ```
-A
-B
-C
-D
-E
-```
-## Byte陣列轉字串
-建構子
-{% highlight java linenos %}
-// 建構子是byte[]
-public String (byte[] bytes)
-// 從陣列位置offset開始，第2參數是拷貝幾個byte
-public String (byte[] bytes, int offset, int length)
-{% endhighlight %}
-
-{% highlight java linenos %}
-  // byte陣列
-  byte[] b = {'A', 'B', 'C'};
-  // 轉字串
-  String s2 = new String(b);
-  System.out.println(s2);
-{% endhighlight %}
-```
-ABC
+s1 == s2 true
+s3 == s4 false
+s1 == s3 false
 ```
 
-從陣列位置1開始，拷貝2個byte
+### 二者建立方式的記憶體模型
 {% highlight java linenos %}
-  // byte陣列
-  byte[] b = {'A', 'B', 'C'};
-  // 轉字串
-  String s3 = new String(b, 1, 2);
-  System.out.println(s3);
-{% endhighlight %}
-```
-BC
-```
-## 字串轉Byte陣列
-語法
-{% highlight java linenos %}
-public byte[] getBytes ()
-// 參數可以是字元編碼
-public byte[] getBytes (String charsetName)
-{% endhighlight %}
-
-{% highlight java linenos %}
-  // byte陣列
-  byte[] b = {'A', 'B', 'C'};
-  // 轉字串
-  String s2 = new String(b);
-  // 字串轉成byte陣列
-  byte[] b2 = s2.getBytes();
-  System.out.println("print byte");
-  for (byte b1 : b2) {
-    System.out.println(b1);
+public class Test {
+  public static void main(String[] args) {
+    String s1 = "Hello";
+    String s2 = new String("Hello");
   }
+}
+{% endhighlight %}
+
+![img]({{site.imgurl}}/java/str3.png)
+
+1. 在String pool找有沒有Hello的字串，沒有就建立記憶體空間放Hello。
+2. s1變數指向String Pool中Hello的記憶體位址。
+
+![img]({{site.imgurl}}/java/str4.png)
+
+1. 建立記憶體空間
+2. 將Stack中s2變數指向記憶體位址
+3. 在String pool找有沒有Hello的字串，沒有就建立記憶體空間放Hello。
+4. String有一個value屬性，指向String pool中的Hello記憶體位址。
+
+## String equals
+
+- [String與equals()][2]
+
+相同的內容不想再寫一遍，請詳見上述連結。
+
+{% highlight java linenos %}
+public class Test {
+  public static void main(String[] args) {
+    String s1 = "Hello";
+    String s2 = new String("Hello");
+    System.out.println("s1 equals s2 " + s1.equals(s2));
+    System.out.println("s1 == s2 " + (s1 == s2));
+  }
+}
 {% endhighlight %}
 ```
-print byte
-65
-66
-67
+s1 equals s2 true
+s1 == s2 false
 ```
 
-## 字串常用方法
-### 開頭,結尾,包含
+## String intern()
+intern() 取出String.value指向String Pool中的記憶體位址。
+
 {% highlight java linenos %}
-  String s1 = "Hello World";
-  // 是否以Hel開頭的？
-  boolean isStart = s1.startsWith("Hel");
-  System.out.println(isStart);
-  // 是否以Hel結尾的？
-  boolean isEnd = s1.endsWith("Hel");
-  System.out.println(isEnd);
-  // 是否包含abc
-  boolean isContain = s1.contains("abc");
-  System.out.println(isContain);
+public class Test {
+  public static void main(String[] args) {
+    String s1 = "Hello";
+    String s2 = new String("Hello");
+    System.out.println("s1 equals s2 " + s1.equals(s2));
+    System.out.println("s1 == s2 " + (s1 == s2));
+    System.out.println("s1 == s2.intern() " + (s1 == s2.intern()));
+    System.out.println("s2 == s2.intern() " + (s2 == s2.intern()));
+    // s2 指向Heap中的記憶體位址
+    // s2.intern()指向String Pool中的記憶體位址
+  }
+}
 {% endhighlight %}
 ```
-true
-false
-false
+s1 equals s2 true
+s1 == s2 false
+s1 == s2.intern() true
+s2 == s2.intern() false
 ```
-## 尋找字串
+## String被指派其它字串就是建立物件
+Prerequisites:
+
+- [final][5]
+
+value是final char\[\]，存放字串。
+
+因為value屬性是final，不能直接指向其它陣列，所以String物件被指派其它字串，實際上就是在String Pool中建立新的String物件，並非更新字元陣列裡面的內容。
 {% highlight java linenos %}
-  String s1 = "Hello World";
-  // 查詢參數在字串中第一次出現的位置，索引值從0開始數
-  int position1 = s1.indexOf("ol");
-  System.out.println(position1);
-  // 從指定的位置開始找
-  position1 = s1.indexOf("o", 6);
-  System.out.println(position1);
-  // 字串最後出現的位置
-  position1 = s1.lastIndexOf("ol");
-  System.out.println(position1);
+public final class String
+    implements java.io.Serializable, Comparable<String>, CharSequence {
+    // 存放字串
+    private final char value[];
+}
+{% endhighlight %}
+
+String Pool建立Hello，s1指向Hello記憶體位址。
+
+![img]({{site.imgurl}}/java/str5.png)
+
+String Pool建立Hi，s1指向Hi記憶體位址。
+
+![img]({{site.imgurl}}/java/str6.png)
+
+Hello在String Pool中有，s1指向Hello記憶體位址。
+
+![img]({{site.imgurl}}/java/str7.png)
+
+## 二個字串常數相加
+編譯器看到`"Hello" + " World"`就視為一組字串。
+{% highlight java linenos %}
+public class Test {
+  public static void main(String[] args) {
+    String s1 = "Hello" + " World";
+    String s2 = "Hello World";
+    System.out.println("s1 == s2 " + (s1 == s2));
+  }
+}
 {% endhighlight %}
 ```
-3
-7
-3
+s1 == s2 true
 ```
-## 取得字串中的子字串
+
+由結果可知s1與s2是相等的。
+
+## 二個字串變數相加
+字串變數相加會呼叫StringBuilder的append()方法，最後會回傳`new String(value, 0, cout)`
+
 {% highlight java linenos %}
-  String s1 = "Hello World";
-  // 取得字串中的子字串
-  String str4 = s1.substring(2);
-  System.out.println(str4);
-  // 取得位置2到6的字元
-  str4 = s1.substring(2, 6);
-  System.out.println(str4);
+public class Test {
+  public static void main(String[] args) {
+    String s1 = "Hello";
+    String s2 = " World";
+    String s3 = s1 + s2;  // 傳回Heap中的記憶體位址
+    String s4 = "Hello World";  // 傳回String Pool中的記憶體位址
+    System.out.println("s3 == s4 " + (s3 == s4));
+  }
+}
 {% endhighlight %}
 ```
-llo World
-llo 
+s3 == s4 false
 ```
-## 去掉字串前後
+
+把上面`s3 = s1 + s2;`的程式碼過程如下。
+
 {% highlight java linenos %}
-  // trim去掉前後空格
-  String str5 = "  Hello World!   ".trim();
-  System.out.println(str5);
+  StringBuilder sb = new StringBuilder();
+  sb.append("Hello");
+  sb.append(" World");
+  String s3 = sb.toString();
 {% endhighlight %}
-```
-Hello World!
-```
-## 字串轉基本類型
-int基本類型包了一個殼，就變成類別Interger，就可以使用類別的方法，如Interger.parseInt()字串變成數字
-{% highlight java linenos %}
-  // 字串轉基本類型
-  // 轉int
-  int i = Integer.parseInt("12345");
-  System.out.println(i);
-  // 轉double
-  double d = Double.parseDouble("12.55");
-  System.out.println(d);
-  // 基本類型轉字串
-  System.out.println(String.valueOf(i));
-  System.out.println(String.valueOf(d));
-{% endhighlight %}
-```
-12345
-12.55
-12345
-12.55
-```
+
+## String實作Comparable
+
+- [String與Comparable][1]
+
+請詳見上述連結。
+
+## String 與 IO
+
+- [String與`char[]`和`byte[]`][3]
+
+請詳見上述連結。
+
+[1]: {% link _pages/java/compare.md %}
+[2]: {% link _pages/java/equals_compare.md %}
+[3]: {% link _pages/java/string.md %}
+[4]: {% link _pages/java/memory_model.md %}
+[5]: {% link _pages/java/final.md %}
