@@ -3,39 +3,86 @@ title: Metadata
 date: 2025-06-05
 keywords: java, class loader, metadata, metaspace
 ---
-
 ## metadata
-在Metaspace(Native memory)中，還會存放metadata，儲存類別的所有屬性、靜態或非靜態方法、建構子、靜態變數、靜態區塊，它是屬於C++結構，每一個類別只有一個metadata。
+類別在ClassLoader載入時，會在Metaspace(Native memory)中，存放metadata，儲存類別的所有資訊，它是屬於C++結構，每一個類別只有一個metadata。
 
-![img]({{site.imgurl}}/java/memory_model.png)
+![img]({{site.imgurl}}/java/metadata.png)
 
-### Field info（非靜態屬性)
-### method info
-包含建構子、靜態方法、非靜態方法。
+## 存放靜態值
+就是存靜態變數中的「值」。
+
+## 靜態區塊
+靜態區塊是放在靜態方法中。
+
+## Field info
+包含類別所有靜態變數名、屬性名。
+
+## Method Info
+包含類別中所有方法與建構子。
+
+## vtable
+只有override的方法。
+
+final方法與靜態方法、private方法不能覆寫，就沒有在裡面。
+
+## itable
+只有實作介面的方法。
+
+## Constant pool
+Constant pool是存放編譯後，.class 檔案的內容，中所需要的常數資訊。
+
+### 類別名與package
+假設有下面的類別。
+{% highlight java linenos %}
+package com.example;
+public class MyClass {}
+{% endhighlight %}
+
+constant pool儲存為
 ```
-├─ Method info（包括靜態、非靜態方法和建構子）
-│    ├─ Method: <init>(int) 建構子
-│    └─ Method: toString(), etc. 
+#1 = "com/example/MyClass"
+```
+package套件名由點.轉成\/
+
+### static final
+如果遇到static final 基本型別變數，就會把值存到constant pool中。
+
+所以執行下面程式碼，不會呼叫static{}，不會呼叫ClassLoader載入類別。
+{% highlight java linenos %}
+public class Test {
+  public static void main(String[] args) {
+    System.out.println(WebSite.IMG_URL);
+  }
+}
+class WebSite {
+  public final static String IMG_URL = "http://xxxxxx";
+  static {
+    System.out.println("靜態區塊初始化");
+  }
+}
+{% endhighlight %}
+
+編譯後，就會變成以下內容，不會呼叫WebSite這個類別。
+{% highlight java linenos %}
+public class Test {
+  public static void main(String[] args) {
+    System.out.println("http://xxxxxx");
+  }
+}
+{% endhighlight %}
+
+constant pool儲存`http://xxxxxx`
+```
+#7 = String   #25             // "http://xxxxxx"
+#25 = Utf8    http://xxxxxx
 ```
 
-包含靜態區塊`<clinit>()`
+### String
+{% highlight java linenos %}
+String str = "hello";
+{% endhighlight %}
 
+\"hello\"會被編譯後，存放在constant pool中。
 
-```
-- Method Name         → "doSomething" 
-- Method Descriptor   → "(I)Ljava/lang/String;" 
-- Access Flags        → public static 
-- Code Pointer        → 指向 compiled code 
-- Max Stack Size      → 10            
-- Local Variable Table→ 參數與區域變數記錄表
-- Exception Table     → try-catch 區塊資訊
-- Line Number Table   → source 對映表
-- Runtime Annotations → @Override, etc.
-```
-
-
-### vtable
-可以override的方法。
-
-也包含建構子，靜態方法不能覆寫，就沒有在裡面。
+類別載入後，當這些字串被使用時，JVM會從constant pool取出"hello"，放進String Pool，String Pool在jdk8以後都放在Heap記憶體區塊。
 

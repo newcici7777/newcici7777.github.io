@@ -212,7 +212,7 @@ struct|結構|結構體|
 |Method Calls|呼叫方法|函數調用|
 |Method caller|函式呼叫者|調用者|
 |package|套件|包|
-|byte code|位元碼|字節碼|
+|byte code .class檔|位元碼|字節碼|
 |machine code|機器碼|二進制代碼|
 |Annotation|標註|注釋|
 

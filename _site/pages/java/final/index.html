@@ -1561,6 +1561,23 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> ClassLoader相關 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/classloader/" data-nav-link> Classloader類別載入</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/metadata/" data-nav-link> Metadata</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 泛型 </a><ul>
 	
 	
@@ -2809,6 +2826,7 @@
 </figure>
 
 <h3 id="final--static-不會呼叫靜態區塊">final + static 不會呼叫靜態區塊</h3>
+<p>編譯器看到final static 基本型態，就會自動把它的值，取出來進行覆蓋。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2836,12 +2854,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://xxxxxx
-</code></pre></div></div>
-
-<p>由執行結果可以發現，不會印出”靜態區塊初始化”，類別也不會被classLoader載入到JVM記憶體中，就不會佔用記憶體空間。</p>
-
-<p>去掉final，只剩下static。</p>
+<p>編譯後，就會變成以下內容，所以執行這段程式碼根本看不到WebSite這個類別。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2850,35 +2863,17 @@
 4
 5
 6
-7
-8
-9
-10
-11
-12
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">WebSite</span><span class="o">.</span><span class="na">IMG_URL</span><span class="o">);</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-<span class="kd">class</span> <span class="nc">WebSite</span> <span class="o">{</span>
-  <span class="c1">// 去掉final，只剩下static</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="nc">String</span> <span class="no">IMG_URL</span> <span class="o">=</span> <span class="s">"http://xxxxxx"</span><span class="o">;</span>
-  <span class="kd">static</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"靜態區塊初始化"</span><span class="o">);</span>
+    <span class="c1">// 原本是System.out.println(WebSite.IMG_URL);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"http://xxxxxx"</span><span class="o">);</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>靜態區塊初始化
-http://xxxxxx
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://xxxxxx
 </code></pre></div></div>
-
-<p>由執行結果可以發現，會印出”靜態區塊初始化”，類別會被classLoader載入到JVM記憶體中，會佔用記憶體空間。</p>
-
-<p>在Kotlin中，有一種延遲初始化的功能，也就是要用的時候，才會被初始化，才會佔用記憶體，而static + final更強大，呼叫的時候，也不會佔用記憶體空間。</p>
-
 <h2 id="final-類別">final 類別</h2>
 <p>為什麼會有final類別呢？有一些基礎的類別，不想再被人繼承，也不想被人覆寫方法。String、Double、Integer…都是final 類別。</p>
 
@@ -3195,7 +3190,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-06 11:21:00 +0800"
+        "time": "2025-06-06 15:43:21 +0800"
     },
     "basePath": "",
     "book": {

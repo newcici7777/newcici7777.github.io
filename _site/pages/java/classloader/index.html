@@ -1558,6 +1558,26 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> ClassLoader相關 </a><ul>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/java/classloader/" data-nav-link> Classloader類別載入</a>
+        
+            
+                <ul><li><a href="#什麼時候會載入類別" data-nav-link " >什麼時候會載入類別？</a></li><li><a href="#類別載入至記憶體" data-nav-link " >類別載入至記憶體</a></li><li><a href="#載入順序" data-nav-link " >載入順序</a><ul><li><a href="#verification" data-nav-link " >Verification</a></li><li><a href="#preparation準備" data-nav-link " >Preparation準備</a></li><li><a href="#resolution" data-nav-link " >Resolution</a></li><li><a href="#initialization初始化" data-nav-link " >Initialization初始化</a></li></ul></li></ul>
+
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/metadata/" data-nav-link> Metadata</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 泛型 </a><ul>
 	
 	
@@ -2620,20 +2640,39 @@
                     <h2 id="什麼時候會載入類別">什麼時候會載入類別？</h2>
 <p>使用到靜態屬性、使用new建立物件。</p>
 
-<h2 id="類別載入物件">類別載入物件</h2>
+<p>以下程式碼使用到靜態屬性StaticTest.i，就會呼叫Class Loader載入類別到記憶體。</p>
 
-<p>Class Loader載入類別資訊</p>
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">StaticTest</span> <span class="o">{</span>
+  <span class="kd">static</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">100</span><span class="o">;</span>
+<span class="o">}</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test2</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">StaticTest</span><span class="o">.</span><span class="na">i</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
-<p>類別載入至記憶體，1.會在metaspace建立metadat，裡面包含有Dog類別所有屬性、方法、靜態變數…等等，2.接著在Heap建立一個Class物件，裡面也有屬性、方法、建構子…等等，但實際都是指向metadata的資料，metadata與Class物件只會有一個，生命周期從被載入至記憶體至程序結束，metadata是c++的結構，並不是物件。</p>
+<h2 id="類別載入至記憶體">類別載入至記憶體</h2>
+<ol>
+  <li>會在metaspace建立metadat，裡面包含有類別所有屬性、方法、靜態變數…等等</li>
+  <li>接著在Heap建立一個Class物件，裡面也有屬性、方法、建構子…等等，但實際都是指向metadata的資料。</li>
+</ol>
 
 <p><img src="/assets/img/java/obj_model1.png" alt="img" /></p>
 
-<h2 id="靜態變數靜態區塊載入順序">靜態變數、靜態區塊載入順序</h2>
+<h2 id="載入順序">載入順序</h2>
 
-<h3 id="靜態區塊">靜態區塊</h3>
-<p>類別載入的時候，會在Metaspace中建立metadata，裡面有一個clinit()，靜態區塊的程式碼會以inline的方式合併在clinit()函式中。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.class 檔 → ClassLoader 載入類別
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ClassLoader 載入.class
        ↓
    建立 metadata（Metaspace） 和 java.lang.Class（Heap）
        ↓
@@ -2646,30 +2685,66 @@ Initialization（執行 clinit）
   → static 區塊與 static 欄位被初始化
 </code></pre></div></div>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Linking階段</th>
-      <th style="text-align: left">描述</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Verification</td>
-      <td style="text-align: left">確保 class 檔案格式正確、邏輯正確（例如 stack 不會溢出，方法合法)</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Preparation</td>
-      <td style="text-align: left">分配 static 欄位的空間，設初始值（int 為 0、Object 為 null）不執行 static 區塊</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Resolution</td>
-      <td style="text-align: left">把 symbolic reference（如 Lcom/example/Foo;）轉換為實際reference（即記憶體指標）</td>
-    </tr>
-  </tbody>
-</table>
+<h3 id="verification">Verification</h3>
+<p>檢查class 檔案格式正確</p>
 
-<p>Initialization : static 區塊與 static 欄位被初始化，例如: static int var = 23</p>
+<h3 id="preparation準備">Preparation準備</h3>
+<p>把靜態變數預設為原本的值，假設int就是0，String就是null，float就是0.0f。</p>
+
+<h3 id="resolution">Resolution</h3>
+<p>把靜態變數變成程式碼中設定的值。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">StaticTest</span> <span class="o">{</span>
+  <span class="kd">static</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">300</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p><a href="/pages/java/metadata/#Constantpool">Constatn Pool</a>進行套件名、類別名、常數轉換。</p>
+
+<h3 id="initialization初始化">Initialization初始化</h3>
+<p>執行靜態區塊。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">StaticTest</span> <span class="o">{</span>
+  <span class="kd">static</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"進到靜態區塊"</span><span class="o">);</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">100</span><span class="o">;</span>
+  <span class="o">}</span>
+  <span class="kd">static</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">300</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>JVM會將上面的程式碼，把多餘的程式碼去掉或合併，透過Clinit()函式執行優化後的靜態區塊。</p>
+
+<p>優化後:</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">StaticTest</span> <span class="o">{</span>
+  <span class="kd">static</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"進到靜態區塊"</span><span class="o">);</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">300</span><span class="o">;</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>若是用new建立物件，此階段也會呼叫匿名區塊與建構子。</p>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2732,7 +2807,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/java/codeblock" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 靜態與匿名區塊執行順序">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/java/metadata" class="navigation navigation-next navigation-unique" aria-label="Next page: Metadata">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -2850,7 +2935,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-06 11:21:00 +0800"
+        "time": "2025-06-06 15:43:21 +0800"
     },
     "basePath": "",
     "book": {

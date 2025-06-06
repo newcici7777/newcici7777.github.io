@@ -1558,6 +1558,26 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> ClassLoader相關 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/classloader/" data-nav-link> Classloader類別載入</a>
+        
+            
+        </li>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/java/metadata/" data-nav-link> Metadata</a>
+        
+            
+                <ul><li><a href="#metadata" data-nav-link " >metadata</a></li><li><a href="#存放靜態值" data-nav-link " >存放靜態值</a></li><li><a href="#靜態區塊" data-nav-link " >靜態區塊</a></li><li><a href="#field-info" data-nav-link " >Field info</a></li><li><a href="#method-info" data-nav-link " >Method Info</a></li><li><a href="#vtable" data-nav-link " >vtable</a></li><li><a href="#itable" data-nav-link " >itable</a></li><li><a href="#constant-pool" data-nav-link " >Constant pool</a><ul><li><a href="#類別名與package" data-nav-link " >類別名與package</a></li><li><a href="#static-final" data-nav-link " >static final</a></li><li><a href="#string" data-nav-link " >String</a></li></ul></li></ul>
+
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 泛型 </a><ul>
 	
 	
@@ -2618,35 +2638,112 @@
                     
 
                     <h2 id="metadata">metadata</h2>
-<p>在Metaspace(Native memory)中，還會存放metadata，儲存類別的所有屬性、靜態或非靜態方法、建構子、靜態變數、靜態區塊，它是屬於C++結構，每一個類別只有一個metadata。</p>
+<p>類別在ClassLoader載入時，會在Metaspace(Native memory)中，存放metadata，儲存類別的所有資訊，它是屬於C++結構，每一個類別只有一個metadata。</p>
 
-<p><img src="/assets/img/java/memory_model.png" alt="img" /></p>
+<p><img src="/assets/img/java/metadata.png" alt="img" /></p>
 
-<h3 id="field-info非靜態屬性">Field info（非靜態屬性)</h3>
-<h3 id="method-info">method info</h3>
-<p>包含建構子、靜態方法、非靜態方法。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├─ Method info（包括靜態、非靜態方法和建構子）
-│    ├─ Method: &lt;init&gt;(int) 建構子
-│    └─ Method: toString(), etc. 
+<h2 id="存放靜態值">存放靜態值</h2>
+<p>就是存靜態變數中的「值」。</p>
+
+<h2 id="靜態區塊">靜態區塊</h2>
+<p>靜態區塊是放在靜態方法中。</p>
+
+<h2 id="field-info">Field info</h2>
+<p>包含類別所有靜態變數名、屬性名。</p>
+
+<h2 id="method-info">Method Info</h2>
+<p>包含類別中所有方法與建構子。</p>
+
+<h2 id="vtable">vtable</h2>
+<p>只有override的方法。</p>
+
+<p>final方法與靜態方法、private方法不能覆寫，就沒有在裡面。</p>
+
+<h2 id="itable">itable</h2>
+<p>只有實作介面的方法。</p>
+
+<h2 id="constant-pool">Constant pool</h2>
+<p>Constant pool是存放編譯後，.class 檔案的內容，中所需要的常數資訊。</p>
+
+<h3 id="類別名與package">類別名與package</h3>
+<p>假設有下面的類別。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kn">package</span> <span class="nn">com.example</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyClass</span> <span class="o">{}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>constant pool儲存為</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#1 = "com/example/MyClass"
+</code></pre></div></div>
+<p>package套件名由點.轉成\/</p>
+
+<h3 id="static-final">static final</h3>
+<p>如果遇到static final 基本型別變數，就會把值存到constant pool中。</p>
+
+<p>所以執行下面程式碼，不會呼叫static{}，不會呼叫ClassLoader載入類別。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">WebSite</span><span class="o">.</span><span class="na">IMG_URL</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">WebSite</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">final</span> <span class="kd">static</span> <span class="nc">String</span> <span class="no">IMG_URL</span> <span class="o">=</span> <span class="s">"http://xxxxxx"</span><span class="o">;</span>
+  <span class="kd">static</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"靜態區塊初始化"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>編譯後，就會變成以下內容，不會呼叫WebSite這個類別。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"http://xxxxxx"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>constant pool儲存<code class="language-plaintext highlighter-rouge">http://xxxxxx</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#7 = String   #25             // "http://xxxxxx"
+#25 = Utf8    http://xxxxxx
 </code></pre></div></div>
 
-<p>包含靜態區塊<code class="language-plaintext highlighter-rouge">&lt;clinit&gt;()</code></p>
+<h3 id="string">String</h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Method Name         → "doSomething" 
-- Method Descriptor   → "(I)Ljava/lang/String;" 
-- Access Flags        → public static 
-- Code Pointer        → 指向 compiled code 
-- Max Stack Size      → 10            
-- Local Variable Table→ 參數與區域變數記錄表
-- Exception Table     → try-catch 區塊資訊
-- Line Number Table   → source 對映表
-- Runtime Annotations → @Override, etc.
-</code></pre></div></div>
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"hello"</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
-<h3 id="vtable">vtable</h3>
-<p>可以override的方法。</p>
+<p>"hello"會被編譯後，存放在constant pool中。</p>
 
-<p>也包含建構子，靜態方法不能覆寫，就沒有在裡面。</p>
+<p>類別載入後，當這些字串被使用時，JVM會從constant pool取出”hello”，放進String Pool，String Pool在jdk8以後都放在Heap記憶體區塊。</p>
 
 </section>
             </div><div class="search-results">
@@ -2710,7 +2807,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/java/classloader" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Classloader類別載入">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/java/generics" class="navigation navigation-next navigation-unique" aria-label="Next page: 泛型">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -2828,7 +2935,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-06 11:21:00 +0800"
+        "time": "2025-06-06 15:43:21 +0800"
     },
     "basePath": "",
     "book": {

@@ -124,6 +124,7 @@ public class Test {
 {% endhighlight %}
 
 ### final \+ static 不會呼叫靜態區塊
+編譯器看到final static 基本型態，就會自動把它的值，取出來進行覆蓋。
 {% highlight java linenos %}
 public class Test {
   public static void main(String[] args) {
@@ -137,36 +138,19 @@ class WebSite {
   }
 }
 {% endhighlight %}
-```
-http://xxxxxx
-```
 
-由執行結果可以發現，不會印出"靜態區塊初始化"，類別也不會被classLoader載入到JVM記憶體中，就不會佔用記憶體空間。
-
-去掉final，只剩下static。
+編譯後，就會變成以下內容，所以執行這段程式碼根本看不到WebSite這個類別。
 {% highlight java linenos %}
 public class Test {
   public static void main(String[] args) {
-    System.out.println(WebSite.IMG_URL);
-  }
-}
-class WebSite {
-  // 去掉final，只剩下static
-  public static String IMG_URL = "http://xxxxxx";
-  static {
-    System.out.println("靜態區塊初始化");
+    // 原本是System.out.println(WebSite.IMG_URL);
+    System.out.println("http://xxxxxx");
   }
 }
 {% endhighlight %}
 ```
-靜態區塊初始化
 http://xxxxxx
 ```
-
-由執行結果可以發現，會印出"靜態區塊初始化"，類別會被classLoader載入到JVM記憶體中，會佔用記憶體空間。
-
-在Kotlin中，有一種延遲初始化的功能，也就是要用的時候，才會被初始化，才會佔用記憶體，而static \+ final更強大，呼叫的時候，也不會佔用記憶體空間。
-
 ## final 類別
 為什麼會有final類別呢？有一些基礎的類別，不想再被人繼承，也不想被人覆寫方法。String、Double、Integer...都是final 類別。
 
