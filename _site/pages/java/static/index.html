@@ -1554,6 +1554,13 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/codeblock/" data-nav-link> 靜態與匿名區塊執行順序</a>
+        
+            
+        </li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 泛型 </a><ul>
 	
 	
@@ -2707,9 +2714,9 @@ Andy:3
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別名.靜態變數
 物件.靜態變數
 </code></pre></div></div>
-<p>大部分都是使用「類別名.靜態變數」，在Memory Model中，靜態變數是存放在Class物件中，確實是屬於類別的變數。</p>
+<p>大部分都是使用「類別名.靜態變數」，在Memory Model中，靜態變數是存放在metadata中。</p>
 
-<p>使用「物件.靜態變數」，在Memory Model中，物件的靜態變數的記憶體位址，也是指向Class物件中靜態變數的記憶體位址。</p>
+<p>使用「物件.靜態變數」，在Memory Model中，物件的靜態變數的記憶體位址，也是指向Mataspace中metadata靜態變數的記憶體位址。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2759,46 +2766,6 @@ Andy:3
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>靜態方法
 </code></pre></div></div>
 <h2 id="靜態區塊">靜態區塊</h2>
-<p>類別載入的時候，會在Metaspace中建立metadata，裡面有一個clinit()，靜態區塊的程式碼會以inline的方式合併在clinit()函式中。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.class 檔 → ClassLoader 載入類別
-       ↓
-   建立 metadata（Metaspace） 和 java.lang.Class（Heap）
-       ↓
-   Linking（連接）
-     ├── Verification（驗證）
-     ├── Preparation（配置 static 區域預設值）
-     └── Resolution 
-       ↓
-Initialization（執行 clinit）
-  → static 區塊與 static 欄位被初始化
-</code></pre></div></div>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Linking階段</th>
-      <th style="text-align: left">描述</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Verification</td>
-      <td style="text-align: left">確保 class 檔案格式正確、邏輯正確（例如 stack 不會溢出，方法合法)</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Preparation</td>
-      <td style="text-align: left">分配 static 欄位的空間，設初始值（int 為 0、Object 為 null）不執行 static 區塊</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Resolution</td>
-      <td style="text-align: left">把 symbolic reference（如 Lcom/example/Foo;）轉換為實際reference（即記憶體指標）</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Initialization : static 區塊與 static 欄位被初始化，例如: static int var = 23</p>
-
 <p>語法</p>
 
 <figure class="highlight">
@@ -3125,7 +3092,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/generics" class="navigation navigation-next navigation-unique" aria-label="Next page: 泛型">
+                        <a href="/pages/java/codeblock" class="navigation navigation-next navigation-unique" aria-label="Next page: 靜態與匿名區塊執行順序">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3245,7 +3212,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-05 19:20:52 +0800"
+        "time": "2025-06-06 11:21:00 +0800"
     },
     "basePath": "",
     "book": {

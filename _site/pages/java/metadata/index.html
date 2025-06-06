@@ -2,8 +2,8 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>類別載入 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="java, class loader" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Metadata </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="java, class loader, metadata, metaspace" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -1551,6 +1551,13 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/codeblock/" data-nav-link> 靜態與匿名區塊執行順序</a>
+        
+            
+        </li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 泛型 </a><ul>
 	
 	
@@ -2594,7 +2601,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >類別載入</a>
+                            <a href="." >Metadata</a>
                         
                     </h1>
                 </div>
@@ -2607,11 +2614,40 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/java/class_load">類別載入</h1>
+                        <h1 id="/pages/java/metadata">Metadata</h1>
                     
 
-                    <h2 id="類別載入">類別載入</h2>
-<h2 id="靜態變數靜態區塊載入順序">靜態變數、靜態區塊載入順序</h2>
+                    <h2 id="metadata">metadata</h2>
+<p>在Metaspace(Native memory)中，還會存放metadata，儲存類別的所有屬性、靜態或非靜態方法、建構子、靜態變數、靜態區塊，它是屬於C++結構，每一個類別只有一個metadata。</p>
+
+<p><img src="/assets/img/java/memory_model.png" alt="img" /></p>
+
+<h3 id="field-info非靜態屬性">Field info（非靜態屬性)</h3>
+<h3 id="method-info">method info</h3>
+<p>包含建構子、靜態方法、非靜態方法。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├─ Method info（包括靜態、非靜態方法和建構子）
+│    ├─ Method: &lt;init&gt;(int) 建構子
+│    └─ Method: toString(), etc. 
+</code></pre></div></div>
+
+<p>包含靜態區塊<code class="language-plaintext highlighter-rouge">&lt;clinit&gt;()</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Method Name         → "doSomething" 
+- Method Descriptor   → "(I)Ljava/lang/String;" 
+- Access Flags        → public static 
+- Code Pointer        → 指向 compiled code 
+- Max Stack Size      → 10            
+- Local Variable Table→ 參數與區域變數記錄表
+- Exception Table     → try-catch 區塊資訊
+- Line Number Table   → source 對映表
+- Runtime Annotations → @Override, etc.
+</code></pre></div></div>
+
+<h3 id="vtable">vtable</h3>
+<p>可以override的方法。</p>
+
+<p>也包含建構子，靜態方法不能覆寫，就沒有在裡面。</p>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2688,6 +2724,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "靜態與匿名區塊執行順序",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/java/codeblock.md",
+            "ref": "_pages/java/codeblock.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -2777,13 +2822,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/java/class_load.md",
+        "path": "_pages/java/metadata.md",
         "mtime": "2025-06-05 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-05 19:20:52 +0800"
+        "time": "2025-06-06 11:21:00 +0800"
     },
     "basePath": "",
     "book": {
