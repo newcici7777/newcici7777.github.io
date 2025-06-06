@@ -45,7 +45,7 @@ constant pool儲存為
 package套件名由點.轉成\/
 
 ### static final
-如果遇到static final 基本型別變數，就會把值存到constant pool中。
+static 靜態 \+ final不可修改 \+ 基本型別，編譯器直接視它為常數，並把常數存在.class檔中，Classloader把類別載入時，就會把常數存到constant pool中。
 
 所以執行下面程式碼，不會呼叫static{}，不會呼叫ClassLoader載入類別。
 {% highlight java linenos %}
@@ -78,6 +78,7 @@ constant pool儲存`http://xxxxxx`
 ```
 
 ### String
+遇到字串常數，編譯器直接視它為常數，並把常數存在.class檔中。
 {% highlight java linenos %}
 String str = "hello";
 {% endhighlight %}

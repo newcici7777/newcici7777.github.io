@@ -2682,7 +2682,7 @@
 <p>package套件名由點.轉成\/</p>
 
 <h3 id="static-final">static final</h3>
-<p>如果遇到static final 基本型別變數，就會把值存到constant pool中。</p>
+<p>static 靜態 + final不可修改 + 基本型別，編譯器直接視它為常數，並把常數存在.class檔中，Classloader把類別載入時，就會把常數存到constant pool中。</p>
 
 <p>所以執行下面程式碼，不會呼叫static{}，不會呼叫ClassLoader載入類別。</p>
 
@@ -2734,6 +2734,7 @@
 </code></pre></div></div>
 
 <h3 id="string">String</h3>
+<p>遇到字串常數，編譯器直接視它為常數，並把常數存在.class檔中。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2935,7 +2936,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-06 15:43:21 +0800"
+        "time": "2025-06-06 18:56:10 +0800"
     },
     "basePath": "",
     "book": {
