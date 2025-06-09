@@ -9,13 +9,29 @@ keywords: java, class loader, metadata, metaspace
 ![img]({{site.imgurl}}/java/metadata.png)
 
 ## 存放靜態值
+static field 「value」
+
 就是存靜態變數中的「值」。
+
+以下程式碼，存放的是42。
+{% highlight java linenos %}
+public class MyClass {
+  static int count = 42;
+}
+{% endhighlight %}
 
 ## 靜態區塊
 靜態區塊是放在靜態方法中。
 
 ## Field info
-包含類別所有靜態變數名、屬性名。
+包含類別所有靜態與非靜態屬性名、類型。
+
+以下程式碼，存放的是static int與count屬性名。
+{% highlight java linenos %}
+public class MyClass {
+  static int count = 42;
+}
+{% endhighlight %}
 
 ## Method Info
 包含類別中所有方法與建構子。
@@ -24,6 +40,8 @@ keywords: java, class loader, metadata, metaspace
 只有override的方法。
 
 final方法與靜態方法、private方法不能覆寫，就沒有在裡面。
+
+在多型的文章有[vtable][1]。
 
 ## itable
 只有實作介面的方法。
@@ -87,3 +105,4 @@ String str = "hello";
 
 類別載入後，當這些字串被使用時，JVM會從constant pool取出"hello"，放進String Pool，String Pool在jdk8以後都放在Heap記憶體區塊。
 
+[1]: {% link _pages/java/polymorphism.md %}#vtable

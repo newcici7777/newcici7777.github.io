@@ -1885,7 +1885,7 @@
     	<a href="/pages/design_pattern/template/" data-nav-link> 樣板模式</a>
         
             
-                <ul><li><a href="#什麼是樣板模式" data-nav-link " >什麼是樣板模式？</a></li><li><a href="#父類別放一樣的內容" data-nav-link " >父類別放一樣的內容</a></li><li><a href="#子類別覆寫不一樣的內容" data-nav-link " >子類別覆寫不一樣的內容</a></li><li><a href="#client測試" data-nav-link " >Client測試</a></li></ul>
+                <ul><li><a href="#什麼是樣板模式" data-nav-link " >什麼是樣板模式？</a></li><li><a href="#父類別放一樣的內容" data-nav-link " >父類別放一樣的內容</a></li><li><a href="#子類別覆寫不一樣的內容" data-nav-link " >子類別覆寫不一樣的內容</a></li><li><a href="#client測試" data-nav-link " >Client測試</a></li><li><a href="#計算執行時間模板" data-nav-link " >計算執行時間模板</a></li></ul>
 
             
         </li>
@@ -2637,7 +2637,13 @@
                         <h1 id="/pages/design_pattern/template">樣板模式</h1>
                     
 
-                    <p>樣板模式的重點，把不變的內容放在抽象父類別，會變的放在子類別。</p>
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/java/abstract/">抽象方法</a></li>
+</ul>
+
+<p>樣板模式的重點，把不變的內容放在抽象父類別，會變的放在子類別。</p>
 
 <h2 id="什麼是樣板模式">什麼是樣板模式？</h2>
 <p>想像成問卷，題目是一樣，把一樣的題目放在父類別。</p>
@@ -2773,6 +2779,110 @@
 雞排
 =======================
 </code></pre></div></div>
+
+<h2 id="計算執行時間模板">計算執行時間模板</h2>
+<p>計算執行時間的方式是固定的，但執行的程式碼不知道怎麼執行。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">CaculateJobTime</span> <span class="o">{</span>
+  <span class="c1">// 不知道怎麼執行的程式碼，改成抽象方法，由子類別去覆蓋這個方法</span>
+  <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">job</span><span class="o">();</span>
+
+  <span class="c1">// 計算程式執行時間</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">caculate</span><span class="o">()</span> <span class="o">{</span>
+    <span class="kt">long</span> <span class="n">start</span> <span class="o">=</span> <span class="nc">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">();</span>
+    <span class="c1">// 要執行的程式碼</span>
+    <span class="n">job</span><span class="o">();</span>
+    <span class="c1">// 計算執行時間</span>
+    <span class="kt">long</span> <span class="n">end</span> <span class="o">=</span> <span class="nc">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">();</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"執行 "</span> <span class="o">+</span> <span class="o">(</span><span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="o">)</span> <span class="o">+</span> <span class="s">" 毫秒"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">JobA</span> <span class="kd">extends</span> <span class="nc">CaculateJobTime</span> <span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kt">void</span> <span class="nf">job</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10000000</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+      <span class="kt">long</span> <span class="n">result</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span><span class="o">;</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">JobB</span> <span class="kd">extends</span> <span class="nc">CaculateJobTime</span> <span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kt">void</span> <span class="nf">job</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">50000000</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+      <span class="kt">long</span> <span class="n">result</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span><span class="o">;</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>測試</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">JobA</span> <span class="n">jobA</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">JobA</span><span class="o">();</span>
+    <span class="n">jobA</span><span class="o">.</span><span class="na">caculate</span><span class="o">();</span>
+
+    <span class="nc">JobB</span> <span class="n">jobB</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">JobB</span><span class="o">();</span>
+    <span class="n">jobB</span><span class="o">.</span><span class="na">caculate</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行 4 毫秒
+執行 5 毫秒
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2963,7 +3073,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-06 18:56:10 +0800"
+        "time": "2025-06-09 11:54:32 +0800"
     },
     "basePath": "",
     "book": {

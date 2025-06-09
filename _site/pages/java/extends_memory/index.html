@@ -2685,24 +2685,46 @@
 </figure>
 
 <h2 id="建立步驟">建立步驟</h2>
-<p>載入子類別，載入子類別就會把它的父類別、祖父類別的metadata載入到記憶體中。</p>
+<p><code class="language-plaintext highlighter-rouge">new Child()</code>，發現子類別有父類別，依下方順序載入<a href="/pages/java/metadata/">metadata</a>到記憶體中。</p>
+<ol>
+  <li>GrandPa Metadata</li>
+  <li>Father Metadata</li>
+  <li>Child Metadata</li>
+</ol>
 
 <p><img src="/assets/img/java/extends_memory.png" alt="img" /></p>
 
-<p>建立子類別，1.建立子類別記憶體空間，2.變數child指向記憶體空間。</p>
+<p>建立子類別</p>
+<ol>
+  <li>建立子類別記憶體空間</li>
+  <li>變數child指向記憶體空間。</li>
+</ol>
 
 <p><img src="/assets/img/java/extends_memory1.png" alt="img" /></p>
 
-<p>根據<a href="/pages/java/constructor/#父類別與子類別建立順序">建構子</a>，預設會先呼叫祖父建構子，建立祖父物件，1.先在String Pool中建立GrandPa的文字，2.name指向String Pool中的記憶體位址。</p>
+<p>根據<a href="/pages/java/constructor/#父類別與子類別建立順序">建構子</a>，預設會先呼叫祖父建構子，建立祖父物件。</p>
+<ol>
+  <li>先在String Pool中建立GrandPa的文字</li>
+  <li>name指向String Pool中的記憶體位址。</li>
+</ol>
 
 <p><img src="/assets/img/java/extends_memory2.png" alt="img" /></p>
 
-<p>呼叫父類別建構子，建立物件，1.先在String Pool中建立Father的文字，2.name指向String Pool中的記憶體位址。</p>
+<p>呼叫父類別建構子，建立物件。</p>
+<ol>
+  <li>先在String Pool中建立Father的文字</li>
+  <li>name指向String Pool中的記憶體位址。</li>
+</ol>
 
 <p><img src="/assets/img/java/extends_memory3.png" alt="img" /></p>
 
-<p>建立Child物件，1.先在String Pool中建立Child的文字，2.name指向String Pool中的記憶體位址。
-<img src="/assets/img/java/extends_memory4.png" alt="img" /></p>
+<p>建立Child物件。</p>
+<ol>
+  <li>先在String Pool中建立Child的文字。</li>
+  <li>name指向String Pool中的記憶體位址。</li>
+</ol>
+
+<p><img src="/assets/img/java/extends_memory4.png" alt="img" /></p>
 
 </section>
             </div><div class="search-results">
@@ -2894,7 +2916,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-06 18:56:10 +0800"
+        "time": "2025-06-09 11:54:32 +0800"
     },
     "basePath": "",
     "book": {

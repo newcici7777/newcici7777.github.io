@@ -2643,13 +2643,39 @@
 <p><img src="/assets/img/java/metadata.png" alt="img" /></p>
 
 <h2 id="存放靜態值">存放靜態值</h2>
+<p>static field 「value」</p>
+
 <p>就是存靜態變數中的「值」。</p>
+
+<p>以下程式碼，存放的是42。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyClass</span> <span class="o">{</span>
+  <span class="kd">static</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">42</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 <h2 id="靜態區塊">靜態區塊</h2>
 <p>靜態區塊是放在靜態方法中。</p>
 
 <h2 id="field-info">Field info</h2>
-<p>包含類別所有靜態變數名、屬性名。</p>
+<p>包含類別所有靜態與非靜態屬性名、類型。</p>
+
+<p>以下程式碼，存放的是static int與count屬性名。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyClass</span> <span class="o">{</span>
+  <span class="kd">static</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">42</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 <h2 id="method-info">Method Info</h2>
 <p>包含類別中所有方法與建構子。</p>
@@ -2658,6 +2684,8 @@
 <p>只有override的方法。</p>
 
 <p>final方法與靜態方法、private方法不能覆寫，就沒有在裡面。</p>
+
+<p>在多型的文章有<a href="/pages/java/polymorphism/#vtable">vtable</a>。</p>
 
 <h2 id="itable">itable</h2>
 <p>只有實作介面的方法。</p>
@@ -2936,7 +2964,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-06 18:56:10 +0800"
+        "time": "2025-06-09 11:54:32 +0800"
     },
     "basePath": "",
     "book": {

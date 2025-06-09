@@ -21,9 +21,18 @@ abstract int speak();
 {% endhighlight %}
 
 ## 為什麼要使用抽象類別？
-不能使用new來建立類別，就是抽象類別。
+有一些方法還沒想到內容要怎麼寫，所以就先不寫，由繼承的子類別去覆蓋掉原本的抽象方法。
+
+以下的程式碼，不知道人類要說什麼語言，因為不知道，就先不寫，由繼承的子類別去覆蓋speak()方法，也許子類別就知道要說什麼語言。
+{% highlight java linenos %}
+abstract class Human {
+  public abstract void speak();
+}
+{% endhighlight %}
 
 ## 抽象類別不能new，不能建立
+不能使用new來建立類別。
+
 以下是人的抽象類別。
 {% highlight java linenos %}
 abstract class Human {
@@ -37,14 +46,18 @@ Human human = new Human();
 {% endhighlight %}
 
 ## 抽象類別繼承抽象類別
-以下是「亞洲人」繼承「人」，不用覆寫speak()的方法。
+抽象繼承抽象，不用覆寫。
+
+以下是抽象「亞洲人」繼承「人」，不用覆寫speak()的方法。
+
+因為亞洲人種很多，不確定是會說什麼語言，所以先不覆蓋speak()方法。
 {% highlight java linenos %}
 abstract class Asian extends Human{
 }
 {% endhighlight %}
 
 ## 子類別繼承抽象類別
-中國人繼承抽象類別，就一定要覆寫抽象方法。
+中國人繼承抽象類別，就一定要覆寫抽象方法，因為很明確知道說什麼語言。
 {% highlight java linenos %}
 public class Chinese extends Asian{
   @Override

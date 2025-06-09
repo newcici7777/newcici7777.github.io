@@ -1510,7 +1510,7 @@
     	<a href="/pages/java/interface/" data-nav-link> 介面</a>
         
             
-                <ul><li><a href="#什麼是interface" data-nav-link " >什麼是Interface?</a></li><li><a href="#建立介面interface" data-nav-link " >建立介面Interface</a></li><li><a href="#interface只有常數與抽象方法" data-nav-link " >Interface只有常數與抽象方法</a></li><li><a href="#常數" data-nav-link " >常數</a></li><li><a href="#抽象方法" data-nav-link " >抽象方法</a></li><li><a href="#實作interface" data-nav-link " >實作Interface</a></li><li><a href="#實作多個interface" data-nav-link " >實作多個Interface</a></li><li><a href="#介面的範例" data-nav-link " >介面的範例</a></li><li><a href="#介面的多型參數" data-nav-link " >介面的多型(參數)</a></li><li><a href="#介面的多型" data-nav-link " >介面的多型</a></li></ul>
+                <ul><li><a href="#什麼是interface" data-nav-link " >什麼是Interface?</a></li><li><a href="#建立介面interface" data-nav-link " >建立介面Interface</a></li><li><a href="#屬性" data-nav-link " >屬性</a></li><li><a href="#抽象方法" data-nav-link " >抽象方法</a></li><li><a href="#實作" data-nav-link " >實作</a></li><li><a href="#實作多個interface" data-nav-link " >實作多個Interface</a></li><li><a href="#介面的範例" data-nav-link " >介面的範例</a></li><li><a href="#多型" data-nav-link " >多型</a></li><li><a href="#介面多型陣列" data-nav-link " >介面多型陣列</a></li><li><a href="#判斷子類別" data-nav-link " >判斷子類別</a></li><li><a href="#介面的多型參數" data-nav-link " >介面的多型(參數)</a></li><li><a href="#介面的多型" data-nav-link " >介面的多型</a></li><li><a href="#interface的default方法static方法" data-nav-link " >Interface的default方法、static方法</a></li></ul>
 
             
         </li>
@@ -2638,8 +2638,31 @@
                     
 
                     <h2 id="什麼是interface">什麼是Interface?</h2>
-<p>介面(Interface)可以想成是「功能」，但功能的內容由實作(implements)的類別自己去完成。
-介面跟繼承不相關，只在乎有沒有實作(implements)介面(Interface)。</p>
+<p>介面(Interface)可以想成是「功能」，但功能的內容由實作(implements)的類別自己去完成。</p>
+
+<p>實作介面的子類別，這個關係有點像是繼承，但不能把這個稱為繼承。</p>
+
+<p>有一個Fly飛的功能，飛機去實作怎麼飛的功能，可以把飛機說它是一個Fly飛嗎？</p>
+
+<p>只能說飛機可以像鳥一樣飛，Fly like a bird。</p>
+
+<p>這是一個like a的關係，像…什麼什麼…一樣，有它的功能。</p>
+
+<p>不能因為鳥有飛的功能，就把飛機繼承鳥。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">AirPlane</span> <span class="kd">extends</span> <span class="nc">Bird</span> <span class="o">{</span>
+  
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>飛機跟鳥，不是Is A(是一個)，飛機不是一個鳥。</p>
+
+<p>但飛機可以像鳥一樣飛，是Like A(像一個)的關係。</p>
 
 <h2 id="建立介面interface">建立介面Interface</h2>
 <p>使用關鍵字interface來宣告這是一個介面(Interface)，這個介面(Interface)的名字是Fly。</p>
@@ -2652,14 +2675,10 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="interface只有常數與抽象方法">Interface只有常數與抽象方法</h2>
-<p>介面(Interface)只有常數，沒有變數。<br />
-介面(Interface)只有抽象方法(Abstract method)，不是抽象方法不能放在介面(Interface)中。</p>
+<h2 id="屬性">屬性</h2>
+<p>介面的屬性存取權限一定是public，只能是final與static，final是無法再被實作的子類別修改，static是靜態屬性，static + final就是常數constant。</p>
 
-<h2 id="常數">常數</h2>
-<p>常數就是永恒不變的值，介面(Interface)的常數存取權限一定是public，只能是final。</p>
-
-<p>可以省略public final，編譯會自動加上。</p>
+<p>可以省略public final static，編譯會自動加上。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2668,16 +2687,47 @@
 4
 5
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Fly</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="kd">final</span> <span class="kt">int</span> <span class="no">VERSION</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="kd">final</span> <span class="kd">static</span> <span class="kt">int</span> <span class="no">VERSION</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
   <span class="c1">// 上面這句與以下相等，二者是相同意思。</span>
   <span class="c1">// int VERSION = 1;</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<p>使用介面.屬性</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Fly</span><span class="o">.</span><span class="na">VERSION</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>無法再被更改。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Fly</span><span class="o">.</span><span class="na">VERSION</span><span class="o">);</span>
+    <span class="c1">// 以下會編譯失敗，因為是final，不可再被更改。</span>
+    <span class="nc">Fly</span><span class="o">.</span><span class="na">VERSION</span> <span class="o">=</span> <span class="s">"addfdf"</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 <h2 id="抽象方法">抽象方法</h2>
-<p>抽象「方法」存取權限一定是public。<br />
-public、abstract可以省略，編譯器會自動加上。</p>
+<p>介面中的方法不寫內容，所以用分號<code class="language-plaintext highlighter-rouge">;</code>來結尾，由子類別去實作方法。</p>
+
+<p>抽象方法存取權限一定是public，因為設為private就沒有辦法給子類別實作。</p>
+
+<p>編譯器會自動加上為方法加上public、abstract。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2693,8 +2743,8 @@ public、abstract可以省略，編譯器會自動加上。</p>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="實作interface">實作Interface</h2>
-<p>實作(implements)介面(Interface)的類別就一定要覆寫(Override)介面(Interface)的抽象方法(Abstract method)，否則編譯器會產生錯誤。</p>
+<h2 id="實作">實作</h2>
+<p>所謂的實作就是把介面的抽象方法覆蓋掉，覆寫一個屬於自己的方法，即便內容是空的，只有花括號<code class="language-plaintext highlighter-rouge">{}</code>包住，也是覆寫。</p>
 
 <p>使用<code class="language-plaintext highlighter-rouge">implements</code>關鍵字實作Fly介面，並且一定要覆寫(Override)抽象方法fly()</p>
 
@@ -2703,9 +2753,13 @@ public、abstract可以省略，編譯器會自動加上。</p>
 2
 3
 4
+5
+6
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Airplane</span> <span class="kd">implements</span> <span class="nc">Fly</span><span class="o">{</span>
   <span class="nd">@Override</span>
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{}</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 即便內容是空的，只有花括號包住，也是覆寫。</span>
+  <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -2885,6 +2939,155 @@ public、abstract可以省略，編譯器會自動加上。</p>
 潛水艇會潛水
 狗游狗爬式
 </code></pre></div></div>
+
+<h2 id="多型">多型</h2>
+<p>什麼是編譯類型？什麼是執行類型？</p>
+
+<p>下方的程式碼，等號左邊是編譯類型，等號右邊是執行類型。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="n">編譯類型</span>     <span class="o">=</span>  <span class="n">執行類型</span>
+<span class="nc">Fly</span> <span class="n">bird</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Bird</span><span class="o">();</span>
+<span class="nc">Fly</span> <span class="n">airplane</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Airplane</span><span class="o">();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>介面作為類型，可以指向實作Fly介面的子類別。</p>
+
+<p>雖然編譯類型是介面，但執行時指向的是實作介面的子類別。</p>
+
+<p>呼叫介面的fly()，實際上是呼叫子類別的fly()。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="nc">Fly</span> <span class="n">bird</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Bird</span><span class="o">();</span>
+<span class="n">bird</span><span class="o">.</span><span class="na">fly</span><span class="o">();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="介面多型陣列">介面多型陣列</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 介面作為類型，只要是實作Fly的子類別都可以放進這個陣列</span>
+    <span class="nc">Fly</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Fly</span><span class="o">[</span><span class="mi">2</span><span class="o">];</span>
+    <span class="n">arr</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AirPlane</span><span class="o">();</span>
+    <span class="n">arr</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Bird</span><span class="o">();</span>
+
+    <span class="k">for</span> <span class="o">(</span><span class="nc">Fly</span> <span class="n">obj</span> <span class="o">:</span> <span class="n">arr</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">obj</span><span class="o">.</span><span class="na">fly</span><span class="o">();</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">AirPlane</span> <span class="kd">implements</span> <span class="nc">Fly</span> <span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"飛機飛"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Bird</span> <span class="kd">implements</span> <span class="nc">Fly</span> <span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"鳥會飛"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>飛機飛
+鳥會飛
+</code></pre></div></div>
+
+<h2 id="判斷子類別">判斷子類別</h2>
+<p>飛機有一個呼叫塔台的功能。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">AirPlane</span> <span class="kd">implements</span> <span class="nc">Fly</span> <span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"飛機飛"</span><span class="o">);</span>
+  <span class="o">}</span>
+  
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">call</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"呼叫塔台"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>使用instanceof與強制轉型成子類別，就可以呼叫子類別的方法。因為Fly介面只有fly()方法。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Fly</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Fly</span><span class="o">[</span><span class="mi">2</span><span class="o">];</span>
+    <span class="n">arr</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AirPlane</span><span class="o">();</span>
+    <span class="n">arr</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Bird</span><span class="o">();</span>
+
+    <span class="k">for</span> <span class="o">(</span><span class="nc">Fly</span> <span class="n">obj</span> <span class="o">:</span> <span class="n">arr</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">obj</span> <span class="k">instanceof</span> <span class="nc">AirPlane</span><span class="o">)</span> <span class="o">{</span>
+        <span class="o">((</span><span class="nc">AirPlane</span><span class="o">)</span> <span class="n">obj</span><span class="o">).</span><span class="na">call</span><span class="o">();</span>
+      <span class="o">}</span>
+      <span class="n">obj</span><span class="o">.</span><span class="na">fly</span><span class="o">();</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 <h2 id="介面的多型參數">介面的多型(參數)</h2>
 <p>寫一個fly()方法，參數是有實作Fly的類別都可以放進來。</p>
 
@@ -2948,20 +3151,14 @@ public、abstract可以省略，編譯器會自動加上。</p>
 2
 3
 4
-5
-6
-7
 </pre></td><td class="code"><pre><span class="c1">// 運算子</span>
 <span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Operator</span> <span class="o">{</span>
-  <span class="cm">/**
-   * 計算功能
-   */</span>
   <span class="kt">int</span> <span class="nf">calculate</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">,</span> <span class="kt">int</span> <span class="n">y</span><span class="o">);</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>加法運算子，實作Operator介面，覆寫(Override)calculate()方法</p>
+<p>加法運算子，實作Operator介面，覆寫calculate()方法</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2970,13 +3167,7 @@ public、abstract可以省略，編譯器會自動加上。</p>
 4
 5
 6
-7
-8
-9
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Add</span> <span class="kd">implements</span> <span class="nc">Operator</span><span class="o">{</span>
-  <span class="cm">/***
-   * 實作加法計算
-   */</span>
   <span class="nd">@Override</span>
   <span class="kd">public</span> <span class="kt">int</span> <span class="nf">calculate</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">,</span> <span class="kt">int</span> <span class="n">y</span><span class="o">)</span> <span class="o">{</span>
   <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="o">;</span>
@@ -2985,7 +3176,7 @@ public、abstract可以省略，編譯器會自動加上。</p>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>減法運算子，實作Operator介面，覆寫(Override)calculate()方法</p>
+<p>減法運算子，實作Operator介面，覆寫calculate()方法</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2994,13 +3185,7 @@ public、abstract可以省略，編譯器會自動加上。</p>
 4
 5
 6
-7
-8
-9
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Minus</span> <span class="kd">implements</span> <span class="nc">Operator</span><span class="o">{</span>
-  <span class="cm">/***
-   * 實作減法計算
-   */</span>
   <span class="nd">@Override</span>
   <span class="kd">public</span> <span class="kt">int</span> <span class="nf">calculate</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">,</span> <span class="kt">int</span> <span class="n">y</span><span class="o">)</span> <span class="o">{</span>
   <span class="k">return</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span><span class="o">;</span>
@@ -3009,7 +3194,7 @@ public、abstract可以省略，編譯器會自動加上。</p>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>乘法運算子，實作Operator介面，覆寫(Override)calculate()方法</p>
+<p>乘法運算子，實作Operator介面，覆寫calculate()方法</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3018,13 +3203,7 @@ public、abstract可以省略，編譯器會自動加上。</p>
 4
 5
 6
-7
-8
-9
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Multiply</span> <span class="kd">implements</span> <span class="nc">Operator</span><span class="o">{</span>
-  <span class="cm">/***
-   * 實作乘法計算
-   */</span>
   <span class="nd">@Override</span>
   <span class="kd">public</span> <span class="kt">int</span> <span class="nf">calculate</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">,</span> <span class="kt">int</span> <span class="n">y</span><span class="o">)</span> <span class="o">{</span>
   <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span><span class="o">;</span>
@@ -3041,21 +3220,7 @@ public、abstract可以省略，編譯器會自動加上。</p>
 3
 4
 5
-6
-7
-8
-9
-10
-11
-12
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Calculator</span> <span class="o">{</span>
-  <span class="cm">/**
-   * 計算
-   * @param operator 運算子
-   * @param x
-   * @param y
-   * @return
-   */</span>
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Calculator</span> <span class="o">{</span> 
   <span class="kd">public</span> <span class="kt">int</span> <span class="nf">calculate</span><span class="o">(</span><span class="nc">Operator</span> <span class="n">operator</span><span class="o">,</span> <span class="kt">int</span> <span class="n">x</span><span class="o">,</span> <span class="kt">int</span> <span class="n">y</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">return</span> <span class="n">operator</span><span class="o">.</span><span class="na">calculate</span><span class="o">(</span><span class="n">x</span><span class="o">,</span><span class="n">y</span><span class="o">);</span>
   <span class="o">}</span>
@@ -3109,6 +3274,106 @@ public、abstract可以省略，編譯器會自動加上。</p>
 </code></pre></div></div>
 
 <p>由上面例子發現，Operator介面可以是Add，可以是Minus、Multiply，類別只要實作Operator介面，這個類別就是Operator。</p>
+
+<h2 id="interface的default方法static方法">Interface的default方法、static方法</h2>
+<p>jdk1.8之後有default方法、static方法。</p>
+
+<p>前面有提過，介面有一點像繼承的關係，但又不是繼承，因為有一點像繼承，所以實作介面的子類別，都會自動擁有父介面的方法。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Fly</span> <span class="o">{</span>
+  <span class="kt">int</span> <span class="no">VERSION</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+  <span class="c1">// 抽象方法</span>
+  <span class="kt">void</span> <span class="nf">fly</span><span class="o">();</span>
+
+  <span class="c1">// default方法</span>
+  <span class="k">default</span> <span class="kt">void</span> <span class="nf">dosomething</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">fly</span><span class="o">();</span>
+  <span class="o">}</span>
+
+  <span class="c1">// 靜態方法</span>
+  <span class="kd">static</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="no">VERSION</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>鳥實作Fly介面。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Bird</span> <span class="kd">implements</span> <span class="nc">Fly</span> <span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"鳥會飛"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>測試</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Bird</span> <span class="n">bird</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Bird</span><span class="o">();</span>
+    <span class="c1">// 鳥類擁有介面的屬性與方法</span>
+    <span class="n">bird</span><span class="o">.</span><span class="na">dosomething</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>鳥會飛
+</code></pre></div></div>
+
+<p>但物件沒有擁有介面的屬性，使用介面的屬性，仍是要用「類別.介面屬性」或「介面.屬性」。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Fly</span> <span class="n">bird</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Bird</span><span class="o">();</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Bird</span><span class="o">.</span><span class="na">VERSION</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 </section>
             </div><div class="search-results">
@@ -3300,7 +3565,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-06 18:56:10 +0800"
+        "time": "2025-06-09 11:54:32 +0800"
     },
     "basePath": "",
     "book": {

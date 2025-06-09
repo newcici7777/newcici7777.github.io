@@ -3,6 +3,10 @@ title: 樣板模式
 date: 2025-05-06
 keywords: Java, Design patterns, Template pattern
 ---
+Prerequisites:
+
+- [抽象方法][1]
+
 樣板模式的重點，把不變的內容放在抽象父類別，會變的放在子類別。
 
 ## 什麼是樣板模式？
@@ -85,3 +89,63 @@ public class Client {
 雞排
 =======================
 ```
+
+## 計算執行時間模板
+計算執行時間的方式是固定的，但執行的程式碼不知道怎麼執行。
+{% highlight java linenos %}
+abstract class CaculateJobTime {
+  // 不知道怎麼執行的程式碼，改成抽象方法，由子類別去覆蓋這個方法
+  abstract void job();
+
+  // 計算程式執行時間
+  public void caculate() {
+    long start = System.currentTimeMillis();
+    // 要執行的程式碼
+    job();
+    // 計算執行時間
+    long end = System.currentTimeMillis();
+    System.out.println("執行 " + (end - start) + " 毫秒");
+  }
+}
+{% endhighlight %}
+
+{% highlight java linenos %}
+class JobA extends CaculateJobTime {
+  @Override
+  void job() {
+    for (int i = 0 ; i < 10000000; i++) {
+      long result = i * i;
+    }
+  }
+}
+{% endhighlight %}
+
+{% highlight java linenos %}
+class JobB extends CaculateJobTime {
+  @Override
+  void job() {
+    for (int i = 0 ; i < 50000000; i++) {
+      long result = i * i;
+    }
+  }
+}
+{% endhighlight %}
+
+測試
+{% highlight java linenos %}
+public class Test {
+  public static void main(String[] args) {
+    JobA jobA = new JobA();
+    jobA.caculate();
+
+    JobB jobB = new JobB();
+    jobB.caculate();
+  }
+}
+{% endhighlight %}
+```
+執行 4 毫秒
+執行 5 毫秒
+```
+
+[1]: {% link _pages/java/abstract.md %}

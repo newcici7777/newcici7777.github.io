@@ -15,7 +15,7 @@ Prerequisites:
 
 我覺得稱為介面最小化原則比較適合。
 
-下圖中有Interface1，ImplementA與ImplementA去實作Interface1
+下圖中有Interface1，ImplementA與ImplementB去實作Interface1
 
 A與B類別會用到Interface1
 

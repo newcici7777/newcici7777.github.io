@@ -215,6 +215,8 @@ struct|結構|結構體|
 |byte code .class檔|位元碼|字節碼|
 |machine code|機器碼|二進制代碼|
 |Annotation|標註|注釋|
+|enum|列舉|枚舉|
+|decompile|反編譯|反組譯|
 
 ## Kotlin
 
