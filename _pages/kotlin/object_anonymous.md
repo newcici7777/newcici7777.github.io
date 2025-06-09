@@ -21,7 +21,7 @@ object : 類別 或 介面 或 抽象類別(建構子) {
 {% highlight kotlin linenos %}
 fun main() {
     // 建立Parent的子類別
-    val obj1 = object : Parent() {
+    val obj1 = object: Parent() {
         override fun showData() {
             println("匿名類別的方法")
         }

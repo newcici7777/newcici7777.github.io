@@ -60,7 +60,7 @@ constant pool儲存為
 ```
 #1 = "com/example/MyClass"
 ```
-package套件名由點.轉成\/
+package套件名由點.轉成/
 
 ### static final
 static 靜態 \+ final不可修改 \+ 基本型別，編譯器直接視它為常數，並把常數存在.class檔中，Classloader把類別載入時，就會把常數存到constant pool中。

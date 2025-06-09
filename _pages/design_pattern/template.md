@@ -90,7 +90,7 @@ public class Client {
 =======================
 ```
 
-## 計算執行時間模板
+## 計算執行時間樣板
 計算執行時間的方式是固定的，但執行的程式碼不知道怎麼執行。
 {% highlight java linenos %}
 abstract class CaculateJobTime {

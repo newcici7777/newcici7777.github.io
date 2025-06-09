@@ -8,7 +8,7 @@ Prerequisites:
 - [Singleton][1]
 - [靜態內部類別][2]
 
-## object
+## object 類別
 這裡的object，指的是就只有一個物件，不管被建立幾次，只會被建立一次。
 
 [Singleton][1]的概念。
