@@ -1607,6 +1607,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/enum/" data-nav-link> 列舉</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/thread/" data-nav-link> Thread</a>
         
             
@@ -2140,7 +2147,7 @@
     	<a href="/pages/kotlin/data_class/" data-nav-link> Data class</a>
         
             
-                <ul><li><a href="#與" data-nav-link " >==與===</a></li><li><a href="#tostring" data-nav-link " >toString()</a></li></ul>
+                <ul><li><a href="#與" data-nav-link " >==與===</a></li><li><a href="#tostring" data-nav-link " >toString()</a></li><li><a href="#copy-拷貝" data-nav-link " >copy() 拷貝</a><ul><li><a href="#copy不支援次要建構式" data-nav-link " >copy()不支援次要建構式</a></li></ul></li><li><a href="#解構" data-nav-link " >解構</a></li></ul>
 
             
         </li>
@@ -2168,7 +2175,38 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/enum/" data-nav-link> 列舉</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/seal/" data-nav-link> Seal class</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/kotlin/lazy/" data-nav-link> lazy</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> operator </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/component/" data-nav-link> Component 解構</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/operator_plus/" data-nav-link> plus運算子</a>
         
             
         </li></ul></li></ul></li>
@@ -2695,6 +2733,104 @@ compare = false
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Airplane(id=1, capacity=500)
 </code></pre></div></div>
 
+<h2 id="copy-拷貝">copy() 拷貝</h2>
+<p>使用copy()拷貝物件，參數可以是要修改的屬性。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">obj1</span> <span class="p">=</span> <span class="nc">Airplane</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+    <span class="c1">// 參數可以為要修改的屬性</span>
+    <span class="kd">val</span> <span class="py">obj2</span> <span class="p">=</span> <span class="n">obj1</span><span class="p">.</span><span class="nf">copy</span><span class="p">(</span><span class="n">id</span> <span class="p">=</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">obj2</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="kd">data class</span> <span class="nc">Airplane</span><span class="p">(</span><span class="kd">val</span> <span class="py">id</span><span class="p">:</span><span class="nc">Int</span><span class="p">,</span> <span class="kd">val</span> <span class="py">capacity</span><span class="p">:</span><span class="nc">Int</span> <span class="p">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Airplane(id=10, capacity=500)
+</code></pre></div></div>
+
+<h3 id="copy不支援次要建構式">copy()不支援次要建構式</h3>
+<p>次要建構式多了weight屬性。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kd">data class</span> <span class="nc">Airplane</span><span class="p">(</span><span class="kd">val</span> <span class="py">id</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="kd">val</span> <span class="py">capacity</span><span class="p">:</span> <span class="nc">Int</span> <span class="p">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">weight</span><span class="p">:</span> <span class="nc">Int</span> <span class="p">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="k">constructor</span><span class="p">(</span><span class="n">id</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">capacity</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">weight</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">:</span> <span class="k">this</span><span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">capacity</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">weight</span> <span class="p">=</span> <span class="n">weight</span>
+    <span class="p">}</span>
+
+    <span class="k">override</span> <span class="k">fun</span> <span class="nf">toString</span><span class="p">():</span> <span class="nc">String</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s">"Airplane(id=$id, capacity=$capacity, weight=$weight)"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>使用次要建構式測試。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">obj1</span> <span class="p">=</span> <span class="nc">Airplane</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">obj1</span><span class="p">)</span>
+    <span class="kd">val</span> <span class="py">obj2</span> <span class="p">=</span> <span class="n">obj1</span><span class="p">.</span><span class="nf">copy</span><span class="p">(</span><span class="n">id</span> <span class="p">=</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">obj2</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Airplane(id=1, capacity=500, weight=100)
+Airplane(id=10, capacity=500, weight=0)
+</code></pre></div></div>
+<p>由執行結果可以發現，obj2的weight仍是0，沒有跟著copy過來。</p>
+
+<h2 id="解構">解構</h2>
+<p><a href="/pages/kotlin/component/">Component 解構</a></p>
+
+<p>Data Class自動就會寫Componet的語法，不用自己寫。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">val</span><span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">capacity</span><span class="p">)</span> <span class="p">=</span> <span class="nc">Airplane</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"id = $id, capacity = $capacity"</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>id = 7, capacity = 500
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2885,7 +3021,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-09 11:54:32 +0800"
+        "time": "2025-06-10 15:29:43 +0800"
     },
     "basePath": "",
     "book": {

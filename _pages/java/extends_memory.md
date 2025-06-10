@@ -13,10 +13,10 @@ Prerequisites:
 class GrandPa {
   String name = "GrandPa";
 }
-class Father {
+class Father extends GrandPa{
   String name = "Father";
 }
-class Child {
+class Child extends Father{
   String name = "Child";
 }
 {% endhighlight %}

@@ -3,6 +3,10 @@ title: Classloader類別載入
 date: 2025-06-05
 keywords: java, class loader
 ---
+Prerequisites:
+
+- [metadata][1]
+
 ## 什麼時候會載入類別？
 使用到靜態屬性、呼叫靜態方法、使用到靜態區塊、使用new建立物件。
 
@@ -19,7 +23,7 @@ public class Test2 {
 {% endhighlight %}
 
 ## 類別載入至記憶體
-1. 會在metaspace建立metadat，裡面包含有類別所有屬性、方法、靜態變數…等等
+1. 會在metaspace建立metadata，裡面包含有類別所有屬性、方法、靜態變數…等等
 2. 接著在Heap建立一個Class物件，裡面也有屬性、方法、建構子…等等，但實際都是指向metadata的資料。
 
 ![img]({{site.imgurl}}/java/obj_model1.png)
@@ -60,7 +64,7 @@ class StaticTest {
 }
 {% endhighlight %}
 
-[Constatn Pool][1]進行套件名、類別名、常數轉換。
+[Constatn Pool][2]進行套件名、類別名、常數轉換。
 
 ### Initialization初始化
 執行靜態區塊。
@@ -82,9 +86,11 @@ class StaticTest {
     System.out.println("進到靜態區塊");
     i = 300;
   }
+}
 {% endhighlight %}
 
 若是用new建立物件，此階段也會呼叫匿名區塊與建構子。
 
-[1]: {% link _pages/java/metadata.md %}#Constantpool
+[1]: {% link _pages/java/metadata.md %}
+[2]: {% link _pages/java/metadata.md %}#Constantpool
 

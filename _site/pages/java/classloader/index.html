@@ -1610,6 +1610,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/enum/" data-nav-link> 列舉</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/thread/" data-nav-link> Thread</a>
         
             
@@ -2168,7 +2175,38 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/enum/" data-nav-link> 列舉</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/seal/" data-nav-link> Seal class</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/kotlin/lazy/" data-nav-link> lazy</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> operator </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/component/" data-nav-link> Component 解構</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/operator_plus/" data-nav-link> plus運算子</a>
         
             
         </li></ul></li></ul></li>
@@ -2637,7 +2675,13 @@
                         <h1 id="/pages/java/classloader">Classloader類別載入</h1>
                     
 
-                    <h2 id="什麼時候會載入類別">什麼時候會載入類別？</h2>
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/java/metadata/">metadata</a></li>
+</ul>
+
+<h2 id="什麼時候會載入類別">什麼時候會載入類別？</h2>
 <p>使用到靜態屬性、呼叫靜態方法、使用到靜態區塊、使用new建立物件。</p>
 
 <p>以下程式碼使用到靜態屬性StaticTest.i，就會呼叫Class Loader載入類別到記憶體。</p>
@@ -2664,7 +2708,7 @@
 
 <h2 id="類別載入至記憶體">類別載入至記憶體</h2>
 <ol>
-  <li>會在metaspace建立metadat，裡面包含有類別所有屬性、方法、靜態變數…等等</li>
+  <li>會在metaspace建立metadata，裡面包含有類別所有屬性、方法、靜態變數…等等</li>
   <li>接著在Heap建立一個Class物件，裡面也有屬性、方法、建構子…等等，但實際都是指向metadata的資料。</li>
 </ol>
 
@@ -2741,11 +2785,13 @@ Initialization（執行 clinit）
 3
 4
 5
+6
 </pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">StaticTest</span> <span class="o">{</span>
   <span class="kd">static</span> <span class="o">{</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"進到靜態區塊"</span><span class="o">);</span>
     <span class="n">i</span> <span class="o">=</span> <span class="mi">300</span><span class="o">;</span>
   <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -2941,7 +2987,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-09 11:54:32 +0800"
+        "time": "2025-06-10 15:29:43 +0800"
     },
     "basePath": "",
     "book": {

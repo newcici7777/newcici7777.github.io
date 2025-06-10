@@ -1607,6 +1607,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/enum/" data-nav-link> 列舉</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/thread/" data-nav-link> Thread</a>
         
             
@@ -2168,7 +2175,38 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/enum/" data-nav-link> 列舉</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/seal/" data-nav-link> Seal class</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/kotlin/lazy/" data-nav-link> lazy</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> operator </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/component/" data-nav-link> Component 解構</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/operator_plus/" data-nav-link> plus運算子</a>
         
             
         </li></ul></li></ul></li>
@@ -2637,13 +2675,24 @@
                         <h1 id="/pages/java/reflect">反射</h1>
                     
 
-                    <p>反射英文是Reflection</p>
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/java/memory_model/">Memory Model</a></li>
+  <li><a href="/pages/java/metadata/">metadata</a></li>
+  <li><a href="/pages/java/classloader/">Classloader類別載入</a></li>
+</ul>
+
+<p><img src="/assets/img/java/class1.png" alt="img" /></p>
+
+<p>在<a href="/pages/java/classloader/">Classloader</a>文章已經說明Class類別載入的過程。</p>
+
+<p>反射英文是Reflection</p>
 
 <h2 id="class">Class</h2>
-<p>Class知道類別的屬性、方法，透過Class類別可以取得屬性、方法、建構子。</p>
+<p>Class知道類別的所有屬性、方法，透過Class類別可以取得屬性、方法、建構子。</p>
 
 <h2 id="測試的程式碼">測試的程式碼</h2>
-<p>以下程式碼有靜態區塊static{…}與建構子</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3226,6 +3275,7 @@ reflect.Cal
 result = 
 8
 </code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3416,7 +3466,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-09 11:54:32 +0800"
+        "time": "2025-06-10 15:29:43 +0800"
     },
     "basePath": "",
     "book": {

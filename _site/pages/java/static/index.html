@@ -1610,6 +1610,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/enum/" data-nav-link> 列舉</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/thread/" data-nav-link> Thread</a>
         
             
@@ -2168,7 +2175,38 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/enum/" data-nav-link> 列舉</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/seal/" data-nav-link> Seal class</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/kotlin/lazy/" data-nav-link> lazy</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> operator </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/component/" data-nav-link> Component 解構</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/operator_plus/" data-nav-link> plus運算子</a>
         
             
         </li></ul></li></ul></li>
@@ -2641,31 +2679,43 @@
 
 <ul>
   <li><a href="/pages/java/memory_model/">Memory Model</a></li>
+  <li><a href="/pages/java/metadata/">metadata</a></li>
+  <li><a href="/pages/java/classloader/">Classloader類別載入</a></li>
 </ul>
 
 <h2 id="靜態變數">靜態變數</h2>
 <p>在類別中，除了有成員變數之外，靜態變數也是類別的成員之一。</p>
 
-<p>什麼是靜態變數？靜態變數可以當作共享資源，所有物件都可以共享這個資源。</p>
+<p>什麼是靜態變數？靜態變數指向<a href="/pages/java/metadata/">metadata</a>中一個儲存靜態變數「值」的記憶體位址，只儲存值，所有物件的靜態變數都指向同一個記憶體位址。</p>
 
 <h2 id="靜態變數的建立">靜態變數的建立</h2>
 <ol>
-  <li>Student類別載入至記憶體，會在Metaspace建立metadata，裡面包含有Student類別所有屬性、方法、靜態變數。</li>
+  <li>Student<a href="/pages/java/classloader/">類別載入至記憶體</a>，會在Metaspace建立<a href="/pages/java/metadata/">metadata</a>，裡面包含有Student類別所有屬性名、方法名、建構子、靜態變數名、靜態變數「值」。</li>
   <li>count靜態變數此時為0。</li>
 </ol>
 
 <p><img src="/assets/img/java/static_count.png" alt="img" /></p>
 
 <h2 id="靜態變數的memory-model">靜態變數的Memory Model</h2>
-<p>建立s1，s1中的count記憶體位址是0x0011，把0x0011記憶體位址中的值+1</p>
+<ol>
+  <li>在Heap中建立記憶體位址是0x0022的記憶體空間，Stack的s1變數指向0x0022。</li>
+  <li>建構子把靜態變數count++</li>
+  <li>把metadata中的儲存靜態變數的「值」+1。</li>
+  <li>s1中的count屬性的記憶體位址是指向metadata中的儲存靜態值的位址0x0011。</li>
+</ol>
 
 <p><img src="/assets/img/java/static_count1.png" alt="img" /></p>
 
-<p>建立s2，s2中的count記憶體位址0x0011，把0x0011記憶體位址中的值+1</p>
+<ol>
+  <li>在Heap中建立記憶體位址是0x0044的記憶體空間，Stack的s2變數指向0x0044。</li>
+  <li>建構子把靜態變數count++</li>
+  <li>把metadata中的儲存靜態變數的「值」+1。</li>
+  <li>s2中的count屬性的記憶體位址是指向metadata中的儲存靜態值的位址0x0011。</li>
+</ol>
 
 <p><img src="/assets/img/java/static_count2.png" alt="img" /></p>
 
-<p>由上圖知道，s1與s2儲存的count的記憶體位址都是0x0011，共用同一個記憶體位址。</p>
+<p>由上圖知道，s1與s2的count屬性，指向的記憶體位址都是0x0011，共用同一個記憶體位址。</p>
 
 <p>建立3個學生，並統計數量。</p>
 
@@ -2731,9 +2781,9 @@ Andy:3
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別名.靜態變數
 物件.靜態變數
 </code></pre></div></div>
-<p>大部分都是使用「類別名.靜態變數」，在Memory Model中，靜態變數是存放在metadata中。</p>
+<p>大部分都是使用「類別名.靜態變數」。</p>
 
-<p>使用「物件.靜態變數」，在Memory Model中，物件的靜態變數的記憶體位址，也是指向Mataspace中metadata靜態變數的記憶體位址。</p>
+<p>也可以使用「物件.靜態變數」，在Memory Model中，物件的靜態變數的記憶體位址，也是指向Mataspace中metadata靜態變數「值」的記憶體位址。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3229,7 +3279,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-09 11:54:32 +0800"
+        "time": "2025-06-10 15:29:43 +0800"
     },
     "basePath": "",
     "book": {

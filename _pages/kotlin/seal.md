@@ -3,7 +3,11 @@ title: Seal class
 date: 2025-06-09
 keywords: kotlin, seal class
 ---
-Kotlin提供Seal class取代Enum。
+Prerequisites:
+
+- [Java 靜態內部類別][1]
+
+Kotlin提供Seal class，類似Enum的功能，但看了Java原始碼才發現其實是靜態內部類別。
 
 建立一個密封類別，有三個屬性，全部繼承密封類別。
 {% highlight kotlin linenos %}
@@ -39,7 +43,44 @@ val loading = NetworkEvent.Load
 val loading = NetworkEvent.Load()
 {% endhighlight %}
 
-## 密封類別的巢狀類別
+### Java原始碼
+{% highlight java linenos %}
+// NetworkEvent
+public abstract class NetworkEvent {
+   // 私有建構子
+   private NetworkEvent() {
+   }
+
+   // 公有建構子
+   public NetworkEvent(DefaultConstructorMarker $constructor_marker) {
+      this();
+   }
+
+   // Load是一個靜態內部類別，且不可以再被繼承final
+   // 繼承NetworkEvent
+   public static final class Load extends NetworkEvent {
+      // 靜態final的Singleton物件
+      @NotNull
+      public static final Load INSTANCE;
+
+      // 私有建構子
+      private Load() {
+         // 呼叫父類別的有參數建構子，但傳null進去。
+         super((DefaultConstructorMarker)null);
+      }
+
+      // 靜態區塊
+      static {
+         // 類別載入時，就建立Singleton物件
+         Load var0 = new Load();
+         // var0的記憶體位址 指派 給INSTANCE
+         INSTANCE = var0;
+      }
+   }
+}
+{% endhighlight %}
+
+## 密封類別的內部類別
 {% highlight kotlin linenos %}
 sealed class NetworkEvent {
     data class Success(val code: Int): NetworkEvent()
@@ -48,6 +89,61 @@ sealed class NetworkEvent {
 {% endhighlight %}
 
 Success與Error是NetworkEvent的巢狀類別，而且繼承:NetworkEvent()
+
+### Java原始碼
+#### Success 
+因為內部類別Success是Data Class，Data Class本身就會寫component、copy、hashCode、toString、equals等方法，這些方法就先截掉。
+{% highlight java linenos %}
+public abstract class NetworkEvent {
+    .
+    .
+    .
+    // 靜態內部類別，不可被繼承。
+   public static final class Success extends NetworkEvent {
+      private final int code;
+
+      public final int getCode() {
+         return this.code;
+      }
+
+      // 建構子
+      public Success(int code) {
+         super((DefaultConstructorMarker)null);
+         this.code = code;
+      }
+   }
+}
+{% endhighlight %}
+#### Error
+{% highlight java linenos %}
+public abstract class NetworkEvent {
+    .
+    .
+    .
+    // 靜態內部類別，不可被繼承。
+   public static final class Error extends NetworkEvent {
+      private final int errCode;
+      @NotNull
+      private final String msg;
+
+      public final int getErrCode() {
+         return this.errCode;
+      }
+
+      @NotNull
+      public final String getMsg() {
+         return this.msg;
+      }
+
+      public Error(int errCode, @NotNull String msg) {
+         Intrinsics.checkNotNullParameter(msg, "msg");
+         super((DefaultConstructorMarker)null);
+         this.errCode = errCode;
+         this.msg = msg;
+      }
+   }
+}
+{% endhighlight %}
 
 ## 判斷與使用
 使用when作為判斷
@@ -81,3 +177,43 @@ fun main() {
 失敗, code = 404 , msg = Page not found
 正在載入中
 ```
+
+### Java原始碼
+判斷的部分。
+{% highlight java linenos %}
+public static final String checkStatus(@NotNull NetworkEvent status) {
+   Intrinsics.checkNotNullParameter(status, "status");
+   String var10000;
+   if (status instanceof NetworkEvent.Load) {
+      var10000 = "正在載入中";
+   } else if (status instanceof NetworkEvent.Success) {
+      var10000 = "成功，code = " + ((NetworkEvent.Success)status).getCode();
+   } else {
+      if (!(status instanceof NetworkEvent.Error)) {
+         throw new NoWhenBranchMatchedException();
+      }
+
+      var10000 = "失敗, code = " + ((NetworkEvent.Error)status).getErrCode() + " , msg = " + ((NetworkEvent.Error)status).getMsg();
+   }
+
+   return var10000;
+}
+{% endhighlight %}
+
+main的部分。
+{% highlight java linenos %}
+public static final void main() {
+   NetworkEvent.Load loading = NetworkEvent.Load.INSTANCE;
+   NetworkEvent.Success success = new NetworkEvent.Success(200);
+   NetworkEvent.Error error = new NetworkEvent.Error(404, "Page not found");
+   String result = checkStatus((NetworkEvent)success);
+   System.out.println(result);
+   result = checkStatus((NetworkEvent)error);
+   System.out.println(result);
+   result = checkStatus((NetworkEvent)loading);
+   System.out.println(result);
+}
+{% endhighlight %}
+
+
+[1]: {% link _pages/java/static_inner.md %}

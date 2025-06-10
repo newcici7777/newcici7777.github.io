@@ -3,13 +3,22 @@ title: 反射
 date: 2025-04-28
 keywords: Java, reflect
 ---
+Prerequisites:
+
+- [Memory Model][1]
+- [metadata][2]
+- [Classloader類別載入][3]
+
+![img]({{site.imgurl}}/java/class1.png)
+
+在[Classloader][3]文章已經說明Class類別載入的過程。
+
 反射英文是Reflection
 
 ## Class
-Class知道類別的屬性、方法，透過Class類別可以取得屬性、方法、建構子。
+Class知道類別的所有屬性、方法，透過Class類別可以取得屬性、方法、建構子。
 
 ## 測試的程式碼
-以下程式碼有靜態區塊static{...}與建構子
 {% highlight java linenos %}
 public class Duck extends Animal implements Fly, Swim{
   public String name;
@@ -355,3 +364,7 @@ reflect.Cal
 result = 
 8
 ```
+
+[1]: {% link _pages/java/memory_model.md %}
+[2]: {% link _pages/java/metadata.md %}
+[3]: {% link _pages/java/classloader.md %}

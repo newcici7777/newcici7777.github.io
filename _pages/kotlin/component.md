@@ -9,7 +9,7 @@ Kotlin這邊的解構跟C++的解構子完全不同。
 
 ## 類別
 語法
-{% highlight kotlin linenos %}
+```
 class 類別 {
 operator fun component1() = 屬性
 operator fun component2() = 屬性
@@ -19,12 +19,12 @@ operator fun component4() = 屬性
 .
 .
 }
-{% endhighlight %}
+```
 
 物件拆成好幾個變數。
-{% highlight kotlin linenos %}
+```
 val (屬性1, 屬性2, 屬性3) = 物件
-{% endhighlight %}
+```
 
 範例
 {% highlight kotlin linenos %}

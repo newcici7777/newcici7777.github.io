@@ -1607,6 +1607,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/enum/" data-nav-link> 列舉</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/thread/" data-nav-link> Thread</a>
         
             
@@ -2168,7 +2175,38 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/enum/" data-nav-link> 列舉</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/seal/" data-nav-link> Seal class</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/kotlin/lazy/" data-nav-link> lazy</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> operator </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/component/" data-nav-link> Component 解構</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/operator_plus/" data-nav-link> plus運算子</a>
         
             
         </li></ul></li></ul></li>
@@ -2680,7 +2718,7 @@
 <h2 id="主要建構式">主要建構式</h2>
 <p>之前在<a href="/pages/kotlin/field/">屬性</a>的文章中提到，val唯讀屬性，不會有set()方法。</p>
 
-<p>可由建構式設定val屬性的值，在類別中也不用再次定義val屬性。</p>
+<p>可由主要建構式設定val屬性的值，在類別中也不用再次定義val屬性。</p>
 
 <p>語法，參數可以為var或val，沒有限定只能val。</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class 類別名 (val 屬性: 類型, var 屬性: 類型, ...) {
@@ -3016,7 +3054,7 @@
 
 <p>這部分的知識跟Java匿名程式碼區塊很像，但執行順序不同，Java是先執行程式碼區塊，再執行建構子。</p>
 
-<p>Kotlin是先執行主要建構式-&gt;類別屬性-&gt;init初始化函式-&gt;次要建構式。</p>
+<p>Kotlin是先執行主要建構式 -&gt; 類別屬性 -&gt; init初始化函式 -&gt; 次要建構式。</p>
 
 <p>以下這行不能編譯成功，Property must be initialized or be abstract</p>
 
@@ -3467,7 +3505,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-09 11:54:32 +0800"
+        "time": "2025-06-10 15:29:43 +0800"
     },
     "basePath": "",
     "book": {

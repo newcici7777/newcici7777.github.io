@@ -1606,11 +1606,18 @@
         </li></ul></li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/enum/" data-nav-link> 列舉</a>
+        
+            
+        </li>
+	
+	
 	<li class="active" data-nav-item>
     	<a href="/pages/java/thread/" data-nav-link> Thread</a>
         
             
-                <ul><li><a href="#thread概念" data-nav-link " >Thread概念</a></li><li><a href="#建立thread" data-nav-link " >建立Thread</a><ul><li><a href="#new建立" data-nav-link " >new建立</a></li><li><a href="#繼承thread類別" data-nav-link " >繼承thread類別</a></li></ul></li><li><a href="#覆寫run方法" data-nav-link " >覆寫run()方法</a><ul><li><a href="#runnable覆寫run方法" data-nav-link " >Runnable覆寫run()方法</a></li><li><a href="#繼承thread類別-1" data-nav-link " >繼承thread類別</a></li></ul></li><li><a href="#運行" data-nav-link " >運行</a><ul><li><a href="#new-thread呼叫start" data-nav-link " >new Thread呼叫start()</a></li><li><a href="#extends-thread呼叫start" data-nav-link " >extends Thread呼叫start()</a></li></ul></li><li><a href="#執行緒共享資源" data-nav-link " >執行緒共享資源</a><ul><li><a href="#runnable共享資源" data-nav-link " >Runnable共享資源</a></li><li><a href="#繼承thread共享資源" data-nav-link " >繼承Thread共享資源</a></li></ul></li><li><a href="#同步與非同步" data-nav-link " >同步與非同步</a><ul><li><a href="#同步synchronous" data-nav-link " >同步synchronous</a></li><li><a href="#非同步asynchronous" data-nav-link " >非同步asynchronous</a></li></ul></li><li><a href="#同步鎖lock" data-nav-link " >同步鎖lock</a></li></ul>
+                <ul><li><a href="#thread概念" data-nav-link " >Thread概念</a></li><li><a href="#建立thread" data-nav-link " >建立Thread</a><ul><li><a href="#new建立" data-nav-link " >new建立</a></li><li><a href="#繼承thread類別" data-nav-link " >繼承thread類別</a></li></ul></li><li><a href="#覆寫run方法" data-nav-link " >覆寫run()方法</a><ul><li><a href="#runnable覆寫run方法" data-nav-link " >Runnable覆寫run()方法</a></li><li><a href="#繼承thread類別-1" data-nav-link " >繼承thread類別</a></li></ul></li><li><a href="#執行" data-nav-link " >執行</a><ul><li><a href="#new-thread呼叫start" data-nav-link " >new Thread呼叫start()</a></li><li><a href="#extends-thread呼叫start" data-nav-link " >extends Thread呼叫start()</a></li></ul></li><li><a href="#執行緒共享資源" data-nav-link " >執行緒共享資源</a><ul><li><a href="#runnable共享資源" data-nav-link " >Runnable共享資源</a></li><li><a href="#繼承thread共享資源" data-nav-link " >繼承Thread共享資源</a></li></ul></li><li><a href="#同步與非同步" data-nav-link " >同步與非同步</a><ul><li><a href="#同步synchronous" data-nav-link " >同步synchronous</a></li><li><a href="#非同步asynchronous" data-nav-link " >非同步asynchronous</a></li></ul></li><li><a href="#同步鎖lock" data-nav-link " >同步鎖lock</a></li></ul>
 
             
         </li>
@@ -2168,7 +2175,38 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/enum/" data-nav-link> 列舉</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/seal/" data-nav-link> Seal class</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/kotlin/lazy/" data-nav-link> lazy</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> operator </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/component/" data-nav-link> Component 解構</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/operator_plus/" data-nav-link> plus運算子</a>
         
             
         </li></ul></li></ul></li>
@@ -2637,16 +2675,23 @@
                         <h1 id="/pages/java/thread">Thread</h1>
                     
 
-                    <h2 id="thread概念">Thread概念</h2>
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/java/anonymous_class/">匿名內部類別</a></li>
+  <li><a href="/pages/java/interface/">介面</a></li>
+</ul>
+
+<h2 id="thread概念">Thread概念</h2>
 <p>程序(Process)是把程式碼載入到記憶體，從執行到執行完畢的一個過程。</p>
 
 <p>操作系統(OS)可以管理多個程序(Process)，可以讓多個程序(Process)輪流使用CPU資源。</p>
 
 <p>Jvm視為虛擬的操作系統，管理一個程序中的多個執行緒(多個流程)。</p>
 
-<p>執行緒(Thread)是流程，每個程序都會有一個主要執行緒(Main Thread)也稱作主要流程，為了執行效率提升，所以想同時運行很多流程，每一個執行緒就是一個流程，所以建立了很多執行緒(Thread)。</p>
+<p>執行緒(Thread)是流程，每個程序都會有一個主要執行緒(Main Thread)也稱作主要流程，為了執行效率提升，所以想「同時執行」很多流程，每一個執行緒就是一個流程，所以建立了很多執行緒(Thread)。</p>
 
-<p>所以一個程序可以運行很多流程(執行緒Thread)，實際上是Jvm有一個排程管理系統，會十分快速的將一個流程(執行緒)切換到另一個流程(執行緒)，快速的切換讓使用者以為是同時運行這些流程(執行緒)，實際上是十分快速的輪流執行(執行緒)。</p>
+<p>所以一個程序可以執行很多流程(執行緒Thread)，實際上是Jvm有一個排程管理系統，會十分快速的將一個流程(執行緒)切換到另一個流程(執行緒)，快速的切換讓使用者以為是同時執行這些流程(執行緒)，實際上是十分快速的輪流執行(執行緒)。</p>
 
 <h2 id="建立thread">建立Thread</h2>
 <p>建立Thread有二個方式，一個是new建立，一個是繼承thread類別。</p>
@@ -2759,7 +2804,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="運行">運行</h2>
+<h2 id="執行">執行</h2>
 <p>呼叫Thread類別的start()方法，start()方法就會去執行覆寫run()方法中的程式碼。</p>
 
 <h3 id="new-thread呼叫start">new Thread呼叫start()</h3>
@@ -3064,9 +3109,6 @@ Black ant已死亡
 多個流程或稱執行緒(thread)同時進行，不用特別等上一個流程(執行緒)完成，才能進行下一個流程(執行緒)。</p>
 
 <h2 id="同步鎖lock">同步鎖lock</h2>
-<ul>
-  <li><a href="/pages/c/conversion/conversion_function/#互斥鎖Mutex">c++互斥鎖</a></li>
-</ul>
 
 <p>非同步(asynchronous)的流程中，共享資源時造成變數值不一致，因為多個流程(執行緒thread)同時存取或修改同一個變數，所以需要使用同步鎖(lock)，必須把目前的流程(thread)處理完，才輪下一個流程(thread)處理，還原成同步的狀況，所有流程(thread)排隊，等待進入廁所(要同步的區域)，只有拿到鎖(lock)的流程(thread)，才能進入廁所，鎖上(lock)廁所門，上完廁所(執行完)，把廁所門的鎖打開(unlock)，輪到下一個排隊的執行緒(thread)去上廁所。</p>
 
@@ -3135,7 +3177,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/java/generics_extend_super" class="navigation navigation-prev navigation-unique" aria-label="Previous page: ?與extends與super">
+                        <a href="/pages/java/enum" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 列舉">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -3262,7 +3304,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-09 11:54:32 +0800"
+        "time": "2025-06-10 15:29:43 +0800"
     },
     "basePath": "",
     "book": {
