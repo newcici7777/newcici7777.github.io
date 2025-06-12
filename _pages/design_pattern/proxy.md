@@ -7,81 +7,137 @@ Prerequisites:
 
 - [類別圖][1]
 
-代理人的作用是代替真正的類別，呼叫真正類別的方法。
+代理人的作用是代替別人，去做那個人該做的事。
+
+就好像現實世界中，我們買機票是透過旅行社去買，旅行社再跟航空公司買，而不是我們直接去跟航空公司買，但實際付錢的人是我們，不是旅行社。
+
+而旅行社就是代理人，旅客是真正的類別，買機票是方法。
 
 ## 類別圖
 ![img]({{site.imgurl}}/pattern/proxy1.png)
 
-- Proxy 代理人
-- ProxyInterface 代理介面
-- RealClass 真正的類別
+- Agency 旅行社
+- BuyTicket 介面
+- Tourist 旅客
 - Client 測試用的客戶端
 
-代理人要呼叫真正類別的方法，首先，要有一個介面，裡面是要讓代理人呼叫的方法。
+首先要有一個介面(BuyTicket)，旅行社Agency與旅客Tourist都要去實作介面pay()方法。
 
-代理人與真正的類別都要實作這個代理介面。
+旅行社Agency的成員屬性要有旅客Tourist，使用建構子參數，把旅客傳入旅行社，所以是屬於共生共死的組合關係，菱形是實心。
 
-代理人的成員屬性也要有真正的類別，本例是使用建構子的方式建立RealClass，所以是屬於無法分開且共生共死的組合關係，菱形是實心。
+旅行社Agency的pay()方法，實際上是呼叫旅客的pay()方法。
 
-而客戶端用到代理人，並非用真正的類別。
+而測試時，是用旅行社去買機票，不是旅客去買機票。
 
 ## 程式碼
-ProxyInterface
+BuyTicket介面
 {% highlight java linenos %}
-public interface ProxyInterface {
-  void method1();
+public interface BuyTicket {
+  void pay();
 }
 {% endhighlight %}
 
-RealClass
+旅客實作BuyTicket介面的pay方法。
 {% highlight java linenos %}
-public class RealClass implements ProxyInterface{
+public class Tourist implements BuyTicket{
   @Override
-  public void method1() {
-    System.out.println("真正類別要做的事");
+  public void pay() {
+    System.out.println("旅客提供信用卡 卡號付錢");
   }
 }
 {% endhighlight %}
 
-Proxy
+旅行社實作BuyTicket介面的pay方法，實際上是旅客付錢。
 {% highlight java linenos %}
-public class Proxy implements ProxyInterface{
-  private RealClass realClass;
+public class Agency implements BuyTicket{
+  // 成員屬性要有旅客Tourist
+  private Tourist tourist;
 
-  public Proxy() {
-    realClass = new RealClass();
+  // 使用建構子參數，把旅客傳入旅行社
+  public Agency(Tourist tourist) {
+    this.tourist = tourist;
   }
 
   @Override
-  public void method1() {
-    realClass.method1();
+  public void pay() {
+    // 實際上是呼叫旅客的pay()方法
+    tourist.pay();
   }
 }
 {% endhighlight %}
 
-Client
+Client測試
 {% highlight java linenos %}
 public class Client {
   public static void main(String[] args) {
-    Proxy proxy = new Proxy();
-    proxy.method1();
+    // 建立旅客
+    Tourist tourist = new Tourist();
+    // 把旅客傳入旅行社的建構子
+    Agency agency = new Agency(tourist);
+    // 旅行社付錢，實際上旅客付的。
+    agency.pay();
   }
 }
 {% endhighlight %}
 ```
-真正類別要做的事
+旅客提供信用卡 卡號付錢
 ```
 
 ## Thread
-執行緒也是代理人模式。
+- [執行緒][3]
 
+執行緒也是代理人模式，執行緒都會實作Runnable代理介面。
 
+以下是執行緒代理人。
+{% highlight java linenos %}
+class ThreadProxy implements Runnable{
+  private Runnable target;
+  @Override
+  public void run() {
+    // 真正呼叫的是target的run方法。
+    if (target != null) {
+      target.run();
+    }
+  }
+
+  public ThreadProxy(Runnable target) {
+    this.target = target;
+  }
+
+  // 啟動執行緒
+  public void start() {
+    start0();
+  }
+
+  private void start0() {
+    run();
+  }
+}
+{% endhighlight %}
+
+{% highlight java linenos %}
+public class Test3 {
+  public static void main(String[] args) {
+    // 使用匿名內部類的方法，建立一個匿名的實作Runnable介面的物件
+    Runnable r1 = new Runnable() {
+      @Override
+      public void run() {
+        System.out.println("執行r1的run方法");
+      }
+    };
+
+    // 把real class傳入建構子
+    ThreadProxy threadProxy = new ThreadProxy(r1);
+    // 真正執行的是匿名內部類別的run方法。
+    threadProxy.start();
+  }
+}
+{% endhighlight %}
 
 ## Java動態代理介面
-
 - [反射][2]
 
-使用反射，傳回代理介面，呼叫代理介面的方法，也可以呼叫到RealClass的方法。
+使用反射，傳回代理介面，呼叫代理介面的方法，也可以呼叫到target的方法。
 
 注意！傳回值為介面！不是具體的子類別。
 
@@ -90,11 +146,11 @@ public class Client {
 
 - ProxyFactory 代理工廠，建構子傳入真正類別
 - ProxyInterface 代理介面
-- RealClass 真正的類別，實作ProxyInterface中的method方法。
+- target 真正的類別，實作ProxyInterface中的method方法。
 - Client 使用ProxyFactory傳回代理介面。
 
 ### 程式碼
-ProxyInterface與RealClass跟先前的一模一樣。
+ProxyInterface與target跟先前的一模一樣。
 
 使用java.lang.reflect.Proxy
 ```
@@ -114,23 +170,23 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 public class ProxyFactory {
   // 類型為Object
-  private Object realClass;
+  private Object target;
   
   // 參數類型為Object
-  public ProxyFactory(Object realClass) {
-    this.realClass = realClass;
+  public ProxyFactory(Object target) {
+    this.target = target;
   }
 
   // 傳回值類型是Object
   public Object getProxyInstance() {
     return Proxy.newProxyInstance(
-        realClass.getClass().getClassLoader(),  // 取得classloader
-        realClass.getClass().getInterfaces(),   // 取得介面
+        target.getClass().getClassLoader(),  // 取得classloader
+        target.getClass().getInterfaces(),   // 取得介面
         new InvocationHandler() {
           @Override
           public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-          	// 第1個參數為realClass真正的類別
-            Object instance = method.invoke(realClass, args);
+          	// 第1個參數為target真正的類別
+            Object instance = method.invoke(target, args);
             return instance;
           }
         });
@@ -142,10 +198,10 @@ Client
 {% highlight java linenos %}
 public class Client {
   public static void main(String[] args) {
-    // 類型為ProxyInterface介面，使用子類別RealClass的建構子建立介面
-    ProxyInterface realClass = new RealClass();
-    // 轉型成ProxyInterface介面，參數代入realClass
-    ProxyInterface proxyClass = (ProxyInterface) new ProxyFactory(realClass).getProxyInstance();
+    // 類型為ProxyInterface介面，使用子類別target的建構子建立介面
+    ProxyInterface target = new target();
+    // 轉型成ProxyInterface介面，參數代入target
+    ProxyInterface proxyClass = (ProxyInterface) new ProxyFactory(target).getProxyInstance();
     // 使用介面的方法
     proxyClass.method1();
   }
@@ -157,3 +213,4 @@ public class Client {
 
 [1]: {% link _pages/java/uml.md %}
 [2]: {% link _pages/java/reflect.md %}
+[3]: {% link _pages/java/thread.md %}

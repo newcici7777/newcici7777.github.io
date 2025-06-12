@@ -118,10 +118,10 @@ public class Thread implements Runnable {
   }
 {% endhighlight %}
 
-## Block阻斷
+## 等待
 傳統寫程式流程，在main()方法中呼叫方法，方法執行完，再回main方法。
 
-main()要等待方法執行完，才能執行呼叫方法以下的程式碼，這個等待的過程叫做阻斷Block。
+main()要等待方法執行完，才能執行呼叫方法以下的程式碼。
 
 {% highlight java linenos %}
 public class Test2 {
@@ -144,6 +144,8 @@ public class Test2 {
 執行func1()之後的程式碼
 ```
 ## 執行緒與主程式同時執行
+執行緒與main執行緒是同時執行，main不等待。
+
 下圖中，程序呼叫主要執行緒(Main Thread)，main啟動執行緒1，但main執行結束，執行緒1仍在執行，直到程序中所有執行緒都結束了，程序才結束。
 
 ![img]({{site.imgurl}}/java/thread2.png)
