@@ -88,11 +88,11 @@ sealed class NetworkEvent {
 }
 {% endhighlight %}
 
-Success與Error是NetworkEvent的巢狀類別，而且繼承:NetworkEvent()
+Success與Error是NetworkEvent的內部類別，而且繼承:NetworkEvent()
 
 ### Java原始碼
 #### Success 
-因為內部類別Success是Data Class，Data Class本身就會寫component、copy、hashCode、toString、equals等方法，這些方法就先截掉。
+因為內部類別Success是Data Class，Data Class本身就會覆寫component、copy、toString、equals等方法，這些方法就先截掉。
 {% highlight java linenos %}
 public abstract class NetworkEvent {
     .
@@ -122,6 +122,7 @@ public abstract class NetworkEvent {
     .
     // 靜態內部類別，不可被繼承。
    public static final class Error extends NetworkEvent {
+      // 私有 不可更改 屬性
       private final int errCode;
       @NotNull
       private final String msg;
@@ -134,7 +135,8 @@ public abstract class NetworkEvent {
       public final String getMsg() {
          return this.msg;
       }
-
+      
+      // 建構子
       public Error(int errCode, @NotNull String msg) {
          Intrinsics.checkNotNullParameter(msg, "msg");
          super((DefaultConstructorMarker)null);
@@ -182,20 +184,25 @@ fun main() {
 判斷的部分。
 {% highlight java linenos %}
 public static final String checkStatus(@NotNull NetworkEvent status) {
+   // 檢查參數是否為null
    Intrinsics.checkNotNullParameter(status, "status");
+   // 傳回值
    String var10000;
+
+   // 判斷是不是Load類別
    if (status instanceof NetworkEvent.Load) {
       var10000 = "正在載入中";
-   } else if (status instanceof NetworkEvent.Success) {
+   } else if (status instanceof NetworkEvent.Success) { // 判斷是否為Success類別
       var10000 = "成功，code = " + ((NetworkEvent.Success)status).getCode();
    } else {
+      // 判斷是否為Error類別
       if (!(status instanceof NetworkEvent.Error)) {
          throw new NoWhenBranchMatchedException();
       }
 
       var10000 = "失敗, code = " + ((NetworkEvent.Error)status).getErrCode() + " , msg = " + ((NetworkEvent.Error)status).getMsg();
    }
-
+   
    return var10000;
 }
 {% endhighlight %}

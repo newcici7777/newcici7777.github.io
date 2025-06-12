@@ -72,6 +72,11 @@ public class Client {
 真正類別要做的事
 ```
 
+## Thread
+執行緒也是代理人模式。
+
+
+
 ## Java動態代理介面
 
 - [反射][2]

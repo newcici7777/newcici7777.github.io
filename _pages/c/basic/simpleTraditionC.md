@@ -39,10 +39,12 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Operator|運算子|運算符|
 |condition|條件判斷式|表達式|
 |For Loop|巢狀|嵌套|
+|while(true)|無窮迴圈|無限循環|
 |Code block|程式碼區塊|語句塊|
 |Expression|運算式|表達式|
 |Statement|陳述式|表達式|
 |assign = |指派或設為|賦值|
+
 
 ## 變數相關
 
@@ -217,6 +219,7 @@ struct|結構|結構體|
 |Annotation|標註|注釋|
 |enum|列舉|枚舉|
 |decompile|反編譯|反組譯|
+|thread|執行緒|線程|
 
 ## Kotlin
 

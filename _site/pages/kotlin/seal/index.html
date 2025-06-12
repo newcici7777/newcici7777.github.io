@@ -1434,6 +1434,16 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/annotation/" data-nav-link> Annotation</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 工具類別 </a><ul>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/string/" data-nav-link> String</a>
         
             
@@ -1448,7 +1458,21 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/annotation/" data-nav-link> Annotation</a>
+    	<a href="/pages/java/rand/" data-nav-link> 亂數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/math/" data-nav-link> Math</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/junit_test/" data-nav-link> Junit Test</a>
         
             
         </li></ul></li>
@@ -1606,15 +1630,32 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> thread </a><ul>
+	
+	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/enum/" data-nav-link> 列舉</a>
+    	<a href="/pages/java/thread/" data-nav-link> Thread</a>
         
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/thread/" data-nav-link> Thread</a>
+    	<a href="/pages/java/sync/" data-nav-link> synchronized</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/join/" data-nav-link> join</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/enum/" data-nav-link> 列舉</a>
         
             
         </li>
@@ -1643,13 +1684,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/compare/" data-nav-link> Comparable與Comparator</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/junit_test/" data-nav-link> Junit Test</a>
         
             
         </li>
@@ -2826,11 +2860,11 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>Success與Error是NetworkEvent的巢狀類別，而且繼承:NetworkEvent()</p>
+<p>Success與Error是NetworkEvent的內部類別，而且繼承:NetworkEvent()</p>
 
 <h3 id="java原始碼-1">Java原始碼</h3>
 <h4 id="success">Success</h4>
-<p>因為內部類別Success是Data Class，Data Class本身就會寫component、copy、hashCode、toString、equals等方法，這些方法就先截掉。</p>
+<p>因為內部類別Success是Data Class，Data Class本身就會覆寫component、copy、toString、equals等方法，這些方法就先截掉。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2904,12 +2938,15 @@
 25
 26
 27
+28
+29
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">NetworkEvent</span> <span class="o">{</span>
     <span class="o">.</span>
     <span class="o">.</span>
     <span class="o">.</span>
     <span class="c1">// 靜態內部類別，不可被繼承。</span>
    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nc">Error</span> <span class="kd">extends</span> <span class="nc">NetworkEvent</span> <span class="o">{</span>
+      <span class="c1">// 私有 不可更改 屬性</span>
       <span class="kd">private</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">errCode</span><span class="o">;</span>
       <span class="nd">@NotNull</span>
       <span class="kd">private</span> <span class="kd">final</span> <span class="nc">String</span> <span class="n">msg</span><span class="o">;</span>
@@ -2922,7 +2959,8 @@
       <span class="kd">public</span> <span class="kd">final</span> <span class="nc">String</span> <span class="nf">getMsg</span><span class="o">()</span> <span class="o">{</span>
          <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">msg</span><span class="o">;</span>
       <span class="o">}</span>
-
+      
+      <span class="c1">// 建構子</span>
       <span class="kd">public</span> <span class="nf">Error</span><span class="o">(</span><span class="kt">int</span> <span class="n">errCode</span><span class="o">,</span> <span class="nd">@NotNull</span> <span class="nc">String</span> <span class="n">msg</span><span class="o">)</span> <span class="o">{</span>
          <span class="nc">Intrinsics</span><span class="o">.</span><span class="na">checkNotNullParameter</span><span class="o">(</span><span class="n">msg</span><span class="o">,</span> <span class="s">"msg"</span><span class="o">);</span>
          <span class="kd">super</span><span class="o">((</span><span class="nc">DefaultConstructorMarker</span><span class="o">)</span><span class="kc">null</span><span class="o">);</span>
@@ -3011,21 +3049,31 @@
 15
 16
 17
+18
+19
+20
+21
+22
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">String</span> <span class="nf">checkStatus</span><span class="o">(</span><span class="nd">@NotNull</span> <span class="nc">NetworkEvent</span> <span class="n">status</span><span class="o">)</span> <span class="o">{</span>
+   <span class="c1">// 檢查參數是否為null</span>
    <span class="nc">Intrinsics</span><span class="o">.</span><span class="na">checkNotNullParameter</span><span class="o">(</span><span class="n">status</span><span class="o">,</span> <span class="s">"status"</span><span class="o">);</span>
+   <span class="c1">// 傳回值</span>
    <span class="nc">String</span> <span class="n">var10000</span><span class="o">;</span>
+
+   <span class="c1">// 判斷是不是Load類別</span>
    <span class="k">if</span> <span class="o">(</span><span class="n">status</span> <span class="k">instanceof</span> <span class="nc">NetworkEvent</span><span class="o">.</span><span class="na">Load</span><span class="o">)</span> <span class="o">{</span>
       <span class="n">var10000</span> <span class="o">=</span> <span class="s">"正在載入中"</span><span class="o">;</span>
-   <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">status</span> <span class="k">instanceof</span> <span class="nc">NetworkEvent</span><span class="o">.</span><span class="na">Success</span><span class="o">)</span> <span class="o">{</span>
+   <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">status</span> <span class="k">instanceof</span> <span class="nc">NetworkEvent</span><span class="o">.</span><span class="na">Success</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// 判斷是否為Success類別</span>
       <span class="n">var10000</span> <span class="o">=</span> <span class="s">"成功，code = "</span> <span class="o">+</span> <span class="o">((</span><span class="nc">NetworkEvent</span><span class="o">.</span><span class="na">Success</span><span class="o">)</span><span class="n">status</span><span class="o">).</span><span class="na">getCode</span><span class="o">();</span>
    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+      <span class="c1">// 判斷是否為Error類別</span>
       <span class="k">if</span> <span class="o">(!(</span><span class="n">status</span> <span class="k">instanceof</span> <span class="nc">NetworkEvent</span><span class="o">.</span><span class="na">Error</span><span class="o">))</span> <span class="o">{</span>
          <span class="k">throw</span> <span class="k">new</span> <span class="nf">NoWhenBranchMatchedException</span><span class="o">();</span>
       <span class="o">}</span>
 
       <span class="n">var10000</span> <span class="o">=</span> <span class="s">"失敗, code = "</span> <span class="o">+</span> <span class="o">((</span><span class="nc">NetworkEvent</span><span class="o">.</span><span class="na">Error</span><span class="o">)</span><span class="n">status</span><span class="o">).</span><span class="na">getErrCode</span><span class="o">()</span> <span class="o">+</span> <span class="s">" , msg = "</span> <span class="o">+</span> <span class="o">((</span><span class="nc">NetworkEvent</span><span class="o">.</span><span class="na">Error</span><span class="o">)</span><span class="n">status</span><span class="o">).</span><span class="na">getMsg</span><span class="o">();</span>
    <span class="o">}</span>
-
+   
    <span class="k">return</span> <span class="n">var10000</span><span class="o">;</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -3146,6 +3194,15 @@ window.MathJax = {
         "level": "1.1",
         "depth": 1,
         
+        "next": {
+            "title": "Math",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/java/math.md",
+            "ref": "_pages/java/math.md",
+            "articles": []
+        },
+        
         "dir": "ltr"
     },    "config": {
         "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
@@ -3240,7 +3297,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-10 15:29:43 +0800"
+        "time": "2025-06-12 12:36:56 +0800"
     },
     "basePath": "",
     "book": {
