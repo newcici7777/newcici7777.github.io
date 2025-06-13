@@ -1630,7 +1630,7 @@
         </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> thread </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Thread </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -1648,7 +1648,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/join/" data-nav-link> join</a>
+    	<a href="/pages/java/join/" data-nav-link> join 插隊</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/thread_state/" data-nav-link> 執行緒狀態</a>
         
             
         </li></ul></li>
@@ -1757,6 +1764,13 @@
             
                 <ul><li><a href="#類別圖製作工具" data-nav-link " >類別圖製作工具</a></li><li><a href="#成員屬性與方法增加" data-nav-link " >成員屬性與方法增加</a></li><li><a href="#成員屬性與方法" data-nav-link " >成員屬性與方法</a></li><li><a href="#存取權限" data-nav-link " >存取權限</a></li><li><a href="#關係" data-nav-link " >關係</a></li><li><a href="#依賴" data-nav-link " >依賴</a></li><li><a href="#聚合" data-nav-link " >聚合</a></li><li><a href="#組合" data-nav-link " >組合</a></li><li><a href="#關聯關係" data-nav-link " >關聯關係</a><ul><li><a href="#1對1單向有箭頭" data-nav-link " >1對1單向(有箭頭)</a></li><li><a href="#1對1雙向沒箭頭" data-nav-link " >1對1雙向(沒箭頭)</a></li></ul></li><li><a href="#繼承" data-nav-link " >繼承</a></li><li><a href="#實作" data-nav-link " >實作</a></li><li><a href="#抽象類別覆寫" data-nav-link " >抽象類別覆寫</a></li><li><a href="#說明" data-nav-link " >說明</a></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/uml_sequence/" data-nav-link> 順序圖</a>
+        
             
         </li>
 	
@@ -3104,7 +3118,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/amateras" class="navigation navigation-next navigation-unique" aria-label="Next page: 安裝Amateras">
+                        <a href="/pages/java/uml_sequence" class="navigation navigation-next navigation-unique" aria-label="Next page: 順序圖">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3224,7 +3238,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-12 12:36:56 +0800"
+        "time": "2025-06-13 13:44:28 +0800"
     },
     "basePath": "",
     "book": {
@@ -3251,6 +3265,36 @@ window.MathJax = {
 <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
 <script src="../gitbook/gitbook-plugin-search/search.js"></script>
 -->
+<script>
+    function render_mermaid() {
+        mermaid.initialize({
+            startOnLoad: false,
+            theme: "default",
+        });
+        window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    }
+
+    function initialize_mermaid() {
+        if (document.readyState === "loading") {
+            // Loading hasn't finished yet
+            document.addEventListener("DOMContentLoaded", render_mermaid);
+        } else {
+            // `DOMContentLoaded` has already fired
+            render_mermaid();
+        }
+    }
+
+    if (window.mermaid_script && window.mermaid) {
+        initialize_mermaid();
+    } else {
+        window.mermaid_script = document.createElement("script");
+        mermaid_script.onload = initialize_mermaid;
+        document.head.appendChild(mermaid_script);
+        mermaid_script.defer = true;
+        mermaid_script.id = 'mermaid-script';
+        mermaid_script.src = 'https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js';
+    }
+</script>
 
 <script src="/assets/gitbook/custom.js"></script>
 <script src="/assets/gitbook/custom-local.js"></script>

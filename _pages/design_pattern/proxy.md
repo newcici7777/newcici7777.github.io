@@ -137,56 +137,54 @@ public class Test3 {
 ## Java動態代理介面
 - [反射][2]
 
-使用反射，傳回代理介面，呼叫代理介面的方法，也可以呼叫到target的方法。
-
-注意！傳回值為介面！不是具體的子類別。
+使用反射，傳回代理介面，呼叫代理介面的方法，也可以呼叫到Tourist的方法。
 
 ### 類別圖
 ![img]({{site.imgurl}}/pattern/proxy2.png)
 
-- ProxyFactory 代理工廠，建構子傳入真正類別
-- ProxyInterface 代理介面
-- target 真正的類別，實作ProxyInterface中的method方法。
-- Client 使用ProxyFactory傳回代理介面。
+- ProxyFactory 代理工廠，建構子傳入Tourist
+- BuyTicke 介面
+- Tourist 
+- Client 測試類別
 
 ### 程式碼
-ProxyInterface與target跟先前的一模一樣。
+BuyTicket與Tourist跟先前的一模一樣。
 
 使用java.lang.reflect.Proxy
 ```
 Proxy.newProxyInstance(classLoader(), Interfaces(), InvocationHandler());
 ```
 - 第一個參數為類別的classLoader
-- 第二個參數為類別的所有介面interfaces
+- 第二個參數為介面BuyTicket
 - 第三個參數為InvocationHandler()
 
-透過反射的方法，建立代理人
+透過反射的方法，建立代理人。
 
 ProxyFactory
 {% highlight java linenos %}
-// 反射代理人需要的類別
+// 反射需要的類別
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 public class ProxyFactory {
   // 類型為Object
-  private Object target;
+  private Object tourist;
   
   // 參數類型為Object
-  public ProxyFactory(Object target) {
-    this.target = target;
+  public ProxyFactory(Object tourist) {
+    this.tourist = tourist;
   }
 
   // 傳回值類型是Object
   public Object getProxyInstance() {
     return Proxy.newProxyInstance(
-        target.getClass().getClassLoader(),  // 取得classloader
-        target.getClass().getInterfaces(),   // 取得介面
+        tourist.getClass().getClassLoader(),  // 取得classloader
+        tourist.getClass().getInterfaces(),   // 取得介面
         new InvocationHandler() {
           @Override
           public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-          	// 第1個參數為target真正的類別
-            Object instance = method.invoke(target, args);
+            // 第1個參數為tourist
+            Object instance = method.invoke(tourist, args);
             return instance;
           }
         });
@@ -198,12 +196,12 @@ Client
 {% highlight java linenos %}
 public class Client {
   public static void main(String[] args) {
-    // 類型為ProxyInterface介面，使用子類別target的建構子建立介面
-    ProxyInterface target = new target();
-    // 轉型成ProxyInterface介面，參數代入target
-    ProxyInterface proxyClass = (ProxyInterface) new ProxyFactory(target).getProxyInstance();
-    // 使用介面的方法
-    proxyClass.method1();
+    // 編譯類型為BuyTicket介面，執行類型Tourist
+    BuyTicket tourist = new Tourist();
+    // 轉型成BuyTicket介面，參數代入tourist
+    BuyTicket agency = (BuyTicket) new ProxyFactory(tourist).getProxyInstance();
+    // 呼叫pay方法，但實際上執行Tourist的pay()方法
+    agency.pay();
   }
 }
 {% endhighlight %}

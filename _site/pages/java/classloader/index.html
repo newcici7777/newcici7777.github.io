@@ -1633,7 +1633,7 @@
         </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> thread </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Thread </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -1651,7 +1651,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/join/" data-nav-link> join</a>
+    	<a href="/pages/java/join/" data-nav-link> join 插隊</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/thread_state/" data-nav-link> 執行緒狀態</a>
         
             
         </li></ul></li>
@@ -1756,6 +1763,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/uml/" data-nav-link> UML類別圖</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/uml_sequence/" data-nav-link> 順序圖</a>
         
             
         </li>
@@ -3021,7 +3035,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-12 12:36:56 +0800"
+        "time": "2025-06-13 13:44:28 +0800"
     },
     "basePath": "",
     "book": {
@@ -3048,6 +3062,36 @@ window.MathJax = {
 <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
 <script src="../gitbook/gitbook-plugin-search/search.js"></script>
 -->
+<script>
+    function render_mermaid() {
+        mermaid.initialize({
+            startOnLoad: false,
+            theme: "default",
+        });
+        window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    }
+
+    function initialize_mermaid() {
+        if (document.readyState === "loading") {
+            // Loading hasn't finished yet
+            document.addEventListener("DOMContentLoaded", render_mermaid);
+        } else {
+            // `DOMContentLoaded` has already fired
+            render_mermaid();
+        }
+    }
+
+    if (window.mermaid_script && window.mermaid) {
+        initialize_mermaid();
+    } else {
+        window.mermaid_script = document.createElement("script");
+        mermaid_script.onload = initialize_mermaid;
+        document.head.appendChild(mermaid_script);
+        mermaid_script.defer = true;
+        mermaid_script.id = 'mermaid-script';
+        mermaid_script.src = 'https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js';
+    }
+</script>
 
 <script src="/assets/gitbook/custom.js"></script>
 <script src="/assets/gitbook/custom-local.js"></script>

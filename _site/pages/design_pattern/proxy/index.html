@@ -1630,7 +1630,7 @@
         </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> thread </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Thread </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -1648,7 +1648,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/join/" data-nav-link> join</a>
+    	<a href="/pages/java/join/" data-nav-link> join 插隊</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/thread_state/" data-nav-link> 執行緒狀態</a>
         
             
         </li></ul></li>
@@ -1753,6 +1760,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/uml/" data-nav-link> UML類別圖</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/uml_sequence/" data-nav-link> 順序圖</a>
         
             
         </li>
@@ -2715,40 +2729,44 @@
   <li><a href="/pages/java/uml/">類別圖</a></li>
 </ul>
 
-<p>代理人的作用是代替真正的類別，呼叫真正類別的方法。</p>
+<p>代理人的作用是代替別人，去做那個人該做的事。</p>
+
+<p>就好像現實世界中，我們買機票是透過旅行社去買，旅行社再跟航空公司買，而不是我們直接去跟航空公司買，但實際付錢的人是我們，不是旅行社。</p>
+
+<p>而旅行社就是代理人，旅客是真正的類別，買機票是方法。</p>
 
 <h2 id="類別圖">類別圖</h2>
 <p><img src="/assets/img/pattern/proxy1.png" alt="img" /></p>
 
 <ul>
-  <li>Proxy 代理人</li>
-  <li>ProxyInterface 代理介面</li>
-  <li>RealClass 真正的類別</li>
+  <li>Agency 旅行社</li>
+  <li>BuyTicket 介面</li>
+  <li>Tourist 旅客</li>
   <li>Client 測試用的客戶端</li>
 </ul>
 
-<p>代理人要呼叫真正類別的方法，首先，要有一個介面，裡面是要讓代理人呼叫的方法。</p>
+<p>首先要有一個介面(BuyTicket)，旅行社Agency與旅客Tourist都要去實作介面pay()方法。</p>
 
-<p>代理人與真正的類別都要實作這個代理介面。</p>
+<p>旅行社Agency的成員屬性要有旅客Tourist，使用建構子參數，把旅客傳入旅行社，所以是屬於共生共死的組合關係，菱形是實心。</p>
 
-<p>代理人的成員屬性也要有真正的類別，本例是使用建構子的方式建立RealClass，所以是屬於無法分開且共生共死的組合關係，菱形是實心。</p>
+<p>旅行社Agency的pay()方法，實際上是呼叫旅客的pay()方法。</p>
 
-<p>而客戶端用到代理人，並非用真正的類別。</p>
+<p>而測試時，是用旅行社去買機票，不是旅客去買機票。</p>
 
 <h2 id="程式碼">程式碼</h2>
-<p>ProxyInterface</p>
+<p>BuyTicket介面</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">ProxyInterface</span> <span class="o">{</span>
-  <span class="kt">void</span> <span class="nf">method1</span><span class="o">();</span>
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">BuyTicket</span> <span class="o">{</span>
+  <span class="kt">void</span> <span class="nf">pay</span><span class="o">();</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>RealClass</p>
+<p>旅客實作BuyTicket介面的pay方法。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2757,16 +2775,16 @@
 4
 5
 6
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">RealClass</span> <span class="kd">implements</span> <span class="nc">ProxyInterface</span><span class="o">{</span>
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Tourist</span> <span class="kd">implements</span> <span class="nc">BuyTicket</span><span class="o">{</span>
   <span class="nd">@Override</span>
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method1</span><span class="o">()</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"真正類別要做的事"</span><span class="o">);</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">pay</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"旅客提供信用卡 卡號付錢"</span><span class="o">);</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>Proxy</p>
+<p>旅行社實作BuyTicket介面的pay方法，實際上是旅客付錢。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2781,22 +2799,28 @@
 10
 11
 12
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Proxy</span> <span class="kd">implements</span> <span class="nc">ProxyInterface</span><span class="o">{</span>
-  <span class="kd">private</span> <span class="nc">RealClass</span> <span class="n">realClass</span><span class="o">;</span>
+13
+14
+15
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Agency</span> <span class="kd">implements</span> <span class="nc">BuyTicket</span><span class="o">{</span>
+  <span class="c1">// 成員屬性要有旅客Tourist</span>
+  <span class="kd">private</span> <span class="nc">Tourist</span> <span class="n">tourist</span><span class="o">;</span>
 
-  <span class="kd">public</span> <span class="nf">Proxy</span><span class="o">()</span> <span class="o">{</span>
-    <span class="n">realClass</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">RealClass</span><span class="o">();</span>
+  <span class="c1">// 使用建構子參數，把旅客傳入旅行社</span>
+  <span class="kd">public</span> <span class="nf">Agency</span><span class="o">(</span><span class="nc">Tourist</span> <span class="n">tourist</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">tourist</span> <span class="o">=</span> <span class="n">tourist</span><span class="o">;</span>
   <span class="o">}</span>
 
   <span class="nd">@Override</span>
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method1</span><span class="o">()</span> <span class="o">{</span>
-    <span class="n">realClass</span><span class="o">.</span><span class="na">method1</span><span class="o">();</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">pay</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 實際上是呼叫旅客的pay()方法</span>
+    <span class="n">tourist</span><span class="o">.</span><span class="na">pay</span><span class="o">();</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>Client</p>
+<p>Client測試</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2805,28 +2829,127 @@
 4
 5
 6
+7
+8
+9
+10
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Client</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">Proxy</span> <span class="n">proxy</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Proxy</span><span class="o">();</span>
-    <span class="n">proxy</span><span class="o">.</span><span class="na">method1</span><span class="o">();</span>
+    <span class="c1">// 建立旅客</span>
+    <span class="nc">Tourist</span> <span class="n">tourist</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Tourist</span><span class="o">();</span>
+    <span class="c1">// 把旅客傳入旅行社的建構子</span>
+    <span class="nc">Agency</span> <span class="n">agency</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Agency</span><span class="o">(</span><span class="n">tourist</span><span class="o">);</span>
+    <span class="c1">// 旅行社付錢，實際上旅客付的。</span>
+    <span class="n">agency</span><span class="o">.</span><span class="na">pay</span><span class="o">();</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>真正類別要做的事
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>旅客提供信用卡 卡號付錢
 </code></pre></div></div>
 
 <h2 id="thread">Thread</h2>
-<p>執行緒也是代理人模式。</p>
+<ul>
+  <li><a href="/pages/java/thread/">執行緒</a></li>
+</ul>
+
+<p>執行緒也是代理人模式，執行緒都會實作Runnable代理介面。</p>
+
+<p>以下是執行緒代理人。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">ThreadProxy</span> <span class="kd">implements</span> <span class="nc">Runnable</span><span class="o">{</span>
+  <span class="kd">private</span> <span class="nc">Runnable</span> <span class="n">target</span><span class="o">;</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 真正呼叫的是target的run方法。</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">target</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">target</span><span class="o">.</span><span class="na">run</span><span class="o">();</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="nf">ThreadProxy</span><span class="o">(</span><span class="nc">Runnable</span> <span class="n">target</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">target</span> <span class="o">=</span> <span class="n">target</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="c1">// 啟動執行緒</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">start</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">start0</span><span class="o">();</span>
+  <span class="o">}</span>
+
+  <span class="kd">private</span> <span class="kt">void</span> <span class="nf">start0</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">run</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test3</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 使用匿名內部類的方法，建立一個匿名的實作Runnable介面的物件</span>
+    <span class="nc">Runnable</span> <span class="n">r1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Runnable</span><span class="o">()</span> <span class="o">{</span>
+      <span class="nd">@Override</span>
+      <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"執行r1的run方法"</span><span class="o">);</span>
+      <span class="o">}</span>
+    <span class="o">};</span>
+
+    <span class="c1">// 把real class傳入建構子</span>
+    <span class="nc">ThreadProxy</span> <span class="n">threadProxy</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ThreadProxy</span><span class="o">(</span><span class="n">r1</span><span class="o">);</span>
+    <span class="c1">// 真正執行的是匿名內部類別的run方法。</span>
+    <span class="n">threadProxy</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 <h2 id="java動態代理介面">Java動態代理介面</h2>
-
 <ul>
   <li><a href="/pages/java/reflect/">反射</a></li>
 </ul>
 
-<p>使用反射，傳回代理介面，呼叫代理介面的方法，也可以呼叫到RealClass的方法。</p>
+<p>使用反射，傳回代理介面，呼叫代理介面的方法，也可以呼叫到target的方法。</p>
 
 <p>注意！傳回值為介面！不是具體的子類別。</p>
 
@@ -2836,12 +2959,12 @@
 <ul>
   <li>ProxyFactory 代理工廠，建構子傳入真正類別</li>
   <li>ProxyInterface 代理介面</li>
-  <li>RealClass 真正的類別，實作ProxyInterface中的method方法。</li>
+  <li>target 真正的類別，實作ProxyInterface中的method方法。</li>
   <li>Client 使用ProxyFactory傳回代理介面。</li>
 </ul>
 
 <h3 id="程式碼-1">程式碼</h3>
-<p>ProxyInterface與RealClass跟先前的一模一樣。</p>
+<p>ProxyInterface與target跟先前的一模一樣。</p>
 
 <p>使用java.lang.reflect.Proxy</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Proxy.newProxyInstance(classLoader(), Interfaces(), InvocationHandler());
@@ -2891,23 +3014,23 @@
 <span class="kn">import</span> <span class="nn">java.lang.reflect.Proxy</span><span class="o">;</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ProxyFactory</span> <span class="o">{</span>
   <span class="c1">// 類型為Object</span>
-  <span class="kd">private</span> <span class="nc">Object</span> <span class="n">realClass</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="nc">Object</span> <span class="n">target</span><span class="o">;</span>
   
   <span class="c1">// 參數類型為Object</span>
-  <span class="kd">public</span> <span class="nf">ProxyFactory</span><span class="o">(</span><span class="nc">Object</span> <span class="n">realClass</span><span class="o">)</span> <span class="o">{</span>
-    <span class="k">this</span><span class="o">.</span><span class="na">realClass</span> <span class="o">=</span> <span class="n">realClass</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="nf">ProxyFactory</span><span class="o">(</span><span class="nc">Object</span> <span class="n">target</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">target</span> <span class="o">=</span> <span class="n">target</span><span class="o">;</span>
   <span class="o">}</span>
 
   <span class="c1">// 傳回值類型是Object</span>
   <span class="kd">public</span> <span class="nc">Object</span> <span class="nf">getProxyInstance</span><span class="o">()</span> <span class="o">{</span>
     <span class="k">return</span> <span class="nc">Proxy</span><span class="o">.</span><span class="na">newProxyInstance</span><span class="o">(</span>
-        <span class="n">realClass</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getClassLoader</span><span class="o">(),</span>  <span class="c1">// 取得classloader</span>
-        <span class="n">realClass</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getInterfaces</span><span class="o">(),</span>   <span class="c1">// 取得介面</span>
+        <span class="n">target</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getClassLoader</span><span class="o">(),</span>  <span class="c1">// 取得classloader</span>
+        <span class="n">target</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getInterfaces</span><span class="o">(),</span>   <span class="c1">// 取得介面</span>
         <span class="k">new</span> <span class="nf">InvocationHandler</span><span class="o">()</span> <span class="o">{</span>
           <span class="nd">@Override</span>
           <span class="kd">public</span> <span class="nc">Object</span> <span class="nf">invoke</span><span class="o">(</span><span class="nc">Object</span> <span class="n">proxy</span><span class="o">,</span> <span class="nc">Method</span> <span class="n">method</span><span class="o">,</span> <span class="nc">Object</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Throwable</span> <span class="o">{</span>
-          	<span class="c1">// 第1個參數為realClass真正的類別</span>
-            <span class="nc">Object</span> <span class="n">instance</span> <span class="o">=</span> <span class="n">method</span><span class="o">.</span><span class="na">invoke</span><span class="o">(</span><span class="n">realClass</span><span class="o">,</span> <span class="n">args</span><span class="o">);</span>
+          	<span class="c1">// 第1個參數為target真正的類別</span>
+            <span class="nc">Object</span> <span class="n">instance</span> <span class="o">=</span> <span class="n">method</span><span class="o">.</span><span class="na">invoke</span><span class="o">(</span><span class="n">target</span><span class="o">,</span> <span class="n">args</span><span class="o">);</span>
             <span class="k">return</span> <span class="n">instance</span><span class="o">;</span>
           <span class="o">}</span>
         <span class="o">});</span>
@@ -2931,10 +3054,10 @@
 10
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Client</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="c1">// 類型為ProxyInterface介面，使用子類別RealClass的建構子建立介面</span>
-    <span class="nc">ProxyInterface</span> <span class="n">realClass</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">RealClass</span><span class="o">();</span>
-    <span class="c1">// 轉型成ProxyInterface介面，參數代入realClass</span>
-    <span class="nc">ProxyInterface</span> <span class="n">proxyClass</span> <span class="o">=</span> <span class="o">(</span><span class="nc">ProxyInterface</span><span class="o">)</span> <span class="k">new</span> <span class="nc">ProxyFactory</span><span class="o">(</span><span class="n">realClass</span><span class="o">).</span><span class="na">getProxyInstance</span><span class="o">();</span>
+    <span class="c1">// 類型為ProxyInterface介面，使用子類別target的建構子建立介面</span>
+    <span class="nc">ProxyInterface</span> <span class="n">target</span> <span class="o">=</span> <span class="k">new</span> <span class="n">target</span><span class="o">();</span>
+    <span class="c1">// 轉型成ProxyInterface介面，參數代入target</span>
+    <span class="nc">ProxyInterface</span> <span class="n">proxyClass</span> <span class="o">=</span> <span class="o">(</span><span class="nc">ProxyInterface</span><span class="o">)</span> <span class="k">new</span> <span class="nc">ProxyFactory</span><span class="o">(</span><span class="n">target</span><span class="o">).</span><span class="na">getProxyInstance</span><span class="o">();</span>
     <span class="c1">// 使用介面的方法</span>
     <span class="n">proxyClass</span><span class="o">.</span><span class="na">method1</span><span class="o">();</span>
   <span class="o">}</span>
@@ -3135,7 +3258,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-12 12:36:56 +0800"
+        "time": "2025-06-13 13:44:28 +0800"
     },
     "basePath": "",
     "book": {
@@ -3162,6 +3285,36 @@ window.MathJax = {
 <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
 <script src="../gitbook/gitbook-plugin-search/search.js"></script>
 -->
+<script>
+    function render_mermaid() {
+        mermaid.initialize({
+            startOnLoad: false,
+            theme: "default",
+        });
+        window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    }
+
+    function initialize_mermaid() {
+        if (document.readyState === "loading") {
+            // Loading hasn't finished yet
+            document.addEventListener("DOMContentLoaded", render_mermaid);
+        } else {
+            // `DOMContentLoaded` has already fired
+            render_mermaid();
+        }
+    }
+
+    if (window.mermaid_script && window.mermaid) {
+        initialize_mermaid();
+    } else {
+        window.mermaid_script = document.createElement("script");
+        mermaid_script.onload = initialize_mermaid;
+        document.head.appendChild(mermaid_script);
+        mermaid_script.defer = true;
+        mermaid_script.id = 'mermaid-script';
+        mermaid_script.src = 'https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js';
+    }
+</script>
 
 <script src="/assets/gitbook/custom.js"></script>
 <script src="/assets/gitbook/custom-local.js"></script>

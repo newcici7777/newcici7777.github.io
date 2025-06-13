@@ -220,6 +220,7 @@ struct|結構|結構體|
 |enum|列舉|枚舉|
 |decompile|反編譯|反組譯|
 |thread|執行緒|線程|
+|blocked|阻斷|阻塞|
 
 ## Kotlin
 

@@ -118,10 +118,16 @@ public class Thread implements Runnable {
   }
 {% endhighlight %}
 
-## 等待
-傳統寫程式流程，在main()方法中呼叫方法，方法執行完，再回main方法。
+## 阻斷與同步
+阻斷的英文是Blocked
 
-main()要等待方法執行完，才能執行呼叫方法以下的程式碼。
+同步的英文是synchronous
+
+下面的程式碼，在main()方法中呼叫func1()，func1()執行完，再回到main()方法，執行呼叫func1()的下一行。
+
+main()在呼叫func1()的時候，是被卡住(Block)，必須等到func1()執行完，才能繼續執行，這個卡住的過程，稱為阻斷。
+
+同步(synchronous)就是等待上一個動作完成，才可以處理下一個動作，在這裡的例子是main()必須等待func1()執行完，才能執行呼叫func1()的下一行。
 
 {% highlight java linenos %}
 public class Test2 {

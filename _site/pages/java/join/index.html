@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>join </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>join 插隊 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="keywords" content="Android, java, synchronized, join" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -1630,7 +1630,7 @@
         </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> thread </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Thread </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -1648,11 +1648,18 @@
 	
 	
 	<li class="active" data-nav-item>
-    	<a href="/pages/java/join/" data-nav-link> join</a>
+    	<a href="/pages/java/join/" data-nav-link> join 插隊</a>
         
             
                 
 
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/thread_state/" data-nav-link> 執行緒狀態</a>
+        
             
         </li></ul></li>
 	
@@ -1756,6 +1763,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/uml/" data-nav-link> UML類別圖</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/uml_sequence/" data-nav-link> 順序圖</a>
         
             
         </li>
@@ -2693,7 +2707,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >join</a>
+                            <a href="." >join 插隊</a>
                         
                     </h1>
                 </div>
@@ -2706,10 +2720,108 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/java/join">join</h1>
+                        <h1 id="/pages/java/join">join 插隊</h1>
                     
 
-                    
+                    <p>所謂的join是，當所有執行緒都在同時執行的時候，某個執行緒使用join占用cpu的資源，其它執行緒就休息，待它執行完畢，讓出cpu資源，其它執行緒再繼續執行。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">R3</span> <span class="kd">implements</span> <span class="nc">Runnable</span><span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Thread</span><span class="o">.</span><span class="na">currentThread</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">" i = "</span> <span class="o">+</span> <span class="n">i</span><span class="o">);</span>
+      <span class="k">try</span> <span class="o">{</span>
+        <span class="nc">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="mi">1000</span><span class="o">);</span>
+      <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">InterruptedException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下有main執行緒與執行緒1，當main執行緒執行到i == 5，把CPU讓出來給執行緒1，等到執行緒1執行完，main再繼續執行。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test4</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">InterruptedException</span> <span class="o">{</span>
+    <span class="no">R3</span> <span class="n">r3</span> <span class="o">=</span> <span class="k">new</span> <span class="no">R3</span><span class="o">();</span>
+    <span class="nc">Thread</span> <span class="n">t1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Thread</span><span class="o">(</span><span class="n">r3</span><span class="o">);</span>
+    <span class="n">t1</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">"執行緒1"</span><span class="o">);</span>
+    <span class="c1">// 啟動</span>
+    <span class="n">t1</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">5</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// 讓執行緒1插隊先執行，main執行緒休息</span>
+        <span class="n">t1</span><span class="o">.</span><span class="na">join</span><span class="o">();</span>
+        <span class="c1">// 執行緒1執行完，main執行緒再接著執行</span>
+      <span class="o">}</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Thread</span><span class="o">.</span><span class="na">currentThread</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">" i = "</span> <span class="o">+</span> <span class="n">i</span><span class="o">);</span>
+      <span class="nc">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="mi">1000</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>main i = 0
+執行緒1 i = 0
+main i = 1
+執行緒1 i = 1
+main i = 2
+執行緒1 i = 2
+執行緒1 i = 3
+main i = 3
+main i = 4
+執行緒1 i = 4
+執行緒1 i = 5
+執行緒1 i = 6
+執行緒1 i = 7
+執行緒1 i = 8
+執行緒1 i = 9
+main i = 5
+main i = 6
+main i = 7
+main i = 8
+main i = 9
+</code></pre></div></div>
+
+<p>從執行結果可以發現，一開始都是同時執行的，到了main i = 4之後，main執行緒暫停，輪到執行緒1執行完，main執行緒才繼續執行。</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2780,7 +2892,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/enum" class="navigation navigation-next navigation-unique" aria-label="Next page: 列舉">
+                        <a href="/pages/java/thread_state" class="navigation navigation-next navigation-unique" aria-label="Next page: 執行緒狀態">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2900,7 +3012,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-12 12:36:56 +0800"
+        "time": "2025-06-13 13:44:28 +0800"
     },
     "basePath": "",
     "book": {
@@ -2927,6 +3039,36 @@ window.MathJax = {
 <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
 <script src="../gitbook/gitbook-plugin-search/search.js"></script>
 -->
+<script>
+    function render_mermaid() {
+        mermaid.initialize({
+            startOnLoad: false,
+            theme: "default",
+        });
+        window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    }
+
+    function initialize_mermaid() {
+        if (document.readyState === "loading") {
+            // Loading hasn't finished yet
+            document.addEventListener("DOMContentLoaded", render_mermaid);
+        } else {
+            // `DOMContentLoaded` has already fired
+            render_mermaid();
+        }
+    }
+
+    if (window.mermaid_script && window.mermaid) {
+        initialize_mermaid();
+    } else {
+        window.mermaid_script = document.createElement("script");
+        mermaid_script.onload = initialize_mermaid;
+        document.head.appendChild(mermaid_script);
+        mermaid_script.defer = true;
+        mermaid_script.id = 'mermaid-script';
+        mermaid_script.src = 'https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js';
+    }
+</script>
 
 <script src="/assets/gitbook/custom.js"></script>
 <script src="/assets/gitbook/custom-local.js"></script>

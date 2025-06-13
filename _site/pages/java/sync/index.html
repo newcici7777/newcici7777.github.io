@@ -1630,7 +1630,7 @@
         </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> thread </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Thread </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -1644,14 +1644,21 @@
     	<a href="/pages/java/sync/" data-nav-link> synchronized</a>
         
             
-                <ul><li><a href="#同步流程與非同步流程" data-nav-link " >同步流程與非同步流程</a><ul><li><a href="#同步流程synchronous" data-nav-link " >同步流程synchronous</a></li><li><a href="#非同步流程asynchronous" data-nav-link " >非同步流程asynchronous</a></li></ul></li><li><a href="#synchronized同步鎖" data-nav-link " >synchronized同步鎖</a></li><li><a href="#阻斷block" data-nav-link " >阻斷Block</a></li><li><a href="#synchronized-方法" data-nav-link " >synchronized 方法</a></li><li><a href="#synchronizedthis同步區塊" data-nav-link " >synchronized(this)同步區塊</a></li><li><a href="#synchronizedobject區塊" data-nav-link " >synchronized(object)區塊</a></li><li><a href="#synchronizedbankcard物件區塊" data-nav-link " >synchronized(BankCard物件)區塊</a></li><li><a href="#synchronized類別class靜態同步區塊" data-nav-link " >synchronized(類別.class)靜態同步區塊</a></li><li><a href="#靜態同步區塊" data-nav-link " >靜態同步區塊</a></li><li><a href="#靜態同步方法" data-nav-link " >靜態同步方法</a></li></ul>
+                <ul><li><a href="#同步與非同步" data-nav-link " >同步與非同步</a><ul><li><a href="#同步synchronous" data-nav-link " >同步synchronous</a></li><li><a href="#非同步asynchronous" data-nav-link " >非同步asynchronous</a></li></ul></li><li><a href="#synchronized同步鎖" data-nav-link " >synchronized同步鎖</a></li><li><a href="#阻斷block" data-nav-link " >阻斷Block</a></li><li><a href="#synchronized-方法" data-nav-link " >synchronized 方法</a></li><li><a href="#解鎖" data-nav-link " >解鎖</a></li><li><a href="#synchronizedthis同步區塊" data-nav-link " >synchronized(this)同步區塊</a></li><li><a href="#synchronizedobject區塊" data-nav-link " >synchronized(object)區塊</a></li><li><a href="#synchronizedbankcard物件區塊" data-nav-link " >synchronized(BankCard物件)區塊</a></li><li><a href="#synchronized類別class靜態同步區塊" data-nav-link " >synchronized(類別.class)靜態同步區塊</a></li><li><a href="#靜態同步區塊" data-nav-link " >靜態同步區塊</a></li><li><a href="#靜態同步方法" data-nav-link " >靜態同步方法</a></li></ul>
 
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/join/" data-nav-link> join</a>
+    	<a href="/pages/java/join/" data-nav-link> join 插隊</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/thread_state/" data-nav-link> 執行緒狀態</a>
         
             
         </li></ul></li>
@@ -1756,6 +1763,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/uml/" data-nav-link> UML類別圖</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/uml_sequence/" data-nav-link> 順序圖</a>
         
             
         </li>
@@ -2709,16 +2723,27 @@
                         <h1 id="/pages/java/sync">synchronized</h1>
                     
 
-                    <h2 id="同步流程與非同步流程">同步流程與非同步流程</h2>
-<h3 id="同步流程synchronous">同步流程synchronous</h3>
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/java/thread/#阻斷與同步">阻斷與同步</a></li>
+</ul>
+
+<h2 id="同步與非同步">同步與非同步</h2>
+<h3 id="同步synchronous">同步synchronous</h3>
+<ul>
+  <li><a href="/pages/java/thread/#阻斷與同步">阻斷與同步</a></li>
+</ul>
+
 <p>等待上一個動作完成，才可以處理下一個動作。</p>
 
-<h3 id="非同步流程asynchronous">非同步流程asynchronous</h3>
-<p>不用等待上一個動作完成，可以同時做多個動作。<br />
-多個流程同時執行或稱執行緒(thread)同時執行，不用特別等上一個流程(執行緒)完成，才能進行下一個流程(執行緒)。</p>
+<h3 id="非同步asynchronous">非同步asynchronous</h3>
+<p>不用等待上一個動作完成，可以同時做多個動作。</p>
+
+<p>多個流程同時執行或稱多個執行緒(thread)同時執行，不用特別等上一個流程(執行緒)完成，才能進行下一個流程(執行緒)。</p>
 
 <h2 id="synchronized同步鎖">synchronized同步鎖</h2>
-<p>非同步(asynchronous)的流程中，共享資源時造成變數值不一致，因為多個流程(執行緒thread)同時存取或修改同一個變數，所以需要使用同步鎖(synchronized)，必須把目前的流程(thread)處理完，才輪下一個流程(thread)處理，還原成同步的狀況。</p>
+<p>非同步(asynchronous)的流程中，因為多個流程(執行緒thread)同時存取或修改同一個變數，造成變數值不一致，所以需要使用同步鎖(synchronized)，必須把目前的流程(thread)處理完，才輪下一個流程(thread)處理，還原成同步的狀況。</p>
 
 <p>想像一下，只有一個廁所，所有執行緒都在門外排隊，只有一個執行緒能上廁所，上廁所前把門鎖上，上完廁所(執行完)，把廁所門的鎖打開(unlock解鎖)，輪到下一個執行緒去上廁所。</p>
 
@@ -2736,10 +2761,9 @@
 <h2 id="synchronized-方法">synchronized 方法</h2>
 <p>在方法前加上synchronized，代表一次只能一個執行緒執行這個方法，但執行速度會變慢，因為一次只能一個執行緒使用方法，其它執行緒都在方法外等待使用。</p>
 
-<p>使用的時候有下面的技巧，請follow以下步驟。</p>
-<ol>
-  <li>把要同步的流程，移到synchronized 「新方法」中，不要在run()方法前面加上synchronized，這樣做的話，多個執行緒啟動，只有第1個執行緒啟動。</li>
-</ol>
+<p>使用synchronized，有下面幾點技巧，請follow以下步驟。</p>
+
+<p>1.把要同步的流程，移到synchronized 「新方法」中，不要在run()方法前面加上synchronized，這樣做的話，多個執行緒啟動，只有第1個執行緒啟動。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2749,10 +2773,9 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<ol>
-  <li>使用flag來離開執行緒。</li>
-  <li>迴圈或Looper留在run()方法中。</li>
-</ol>
+<p>2.使用flag來離開執行緒。</p>
+
+<p>3.迴圈或Looper留在run()方法中。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2768,9 +2791,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<ol>
-  <li>在synchronized 「新方法」中，要用return，離開方法。</li>
-</ol>
+<p>4.在synchronized 「新方法」中，要用return，離開方法。</p>
 
 <p>以上步驟完成的結果如下:</p>
 
@@ -2889,6 +2910,21 @@
 執行緒2 提領 1000 元，剩下 1000 元
 執行緒2 提領 1000 元，剩下 0 元
 </code></pre></div></div>
+
+<h2 id="解鎖">解鎖</h2>
+<p>以下狀況都是執行緒在synchronized方法或synchronized區塊之中。</p>
+
+<ol>
+  <li>執行緒執行完畢，會解鎖。</li>
+  <li>執行緒遇到Exception，會解鎖。</li>
+  <li>執行緒遇到return，或只有一層迴圈的break，會解鎖。</li>
+  <li>執行緒呼叫wait()，會解鎖。</li>
+</ol>
+
+<p>以下狀況不會解鎖。</p>
+<ul>
+  <li>執行緒呼叫sleep()、yield()，睡覺sleep與yeild()讓出cpu資源不會解鎖。</li>
+</ul>
 
 <h2 id="synchronizedthis同步區塊">synchronized(this)同步區塊</h2>
 <p>synchronized(this)是鎖住目前物件屬性，使用在非靜態方法。</p>
@@ -3543,6 +3579,7 @@
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3613,7 +3650,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/join" class="navigation navigation-next navigation-unique" aria-label="Next page: join">
+                        <a href="/pages/java/join" class="navigation navigation-next navigation-unique" aria-label="Next page: join 插隊">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3629,6 +3666,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "執行緒狀態",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/java/thread_state.md",
+            "ref": "_pages/java/thread_state.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -3724,7 +3770,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-12 12:36:56 +0800"
+        "time": "2025-06-13 13:44:28 +0800"
     },
     "basePath": "",
     "book": {
@@ -3751,6 +3797,36 @@ window.MathJax = {
 <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
 <script src="../gitbook/gitbook-plugin-search/search.js"></script>
 -->
+<script>
+    function render_mermaid() {
+        mermaid.initialize({
+            startOnLoad: false,
+            theme: "default",
+        });
+        window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    }
+
+    function initialize_mermaid() {
+        if (document.readyState === "loading") {
+            // Loading hasn't finished yet
+            document.addEventListener("DOMContentLoaded", render_mermaid);
+        } else {
+            // `DOMContentLoaded` has already fired
+            render_mermaid();
+        }
+    }
+
+    if (window.mermaid_script && window.mermaid) {
+        initialize_mermaid();
+    } else {
+        window.mermaid_script = document.createElement("script");
+        mermaid_script.onload = initialize_mermaid;
+        document.head.appendChild(mermaid_script);
+        mermaid_script.defer = true;
+        mermaid_script.id = 'mermaid-script';
+        mermaid_script.src = 'https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js';
+    }
+</script>
 
 <script src="/assets/gitbook/custom.js"></script>
 <script src="/assets/gitbook/custom-local.js"></script>

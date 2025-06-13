@@ -3,16 +3,23 @@ title: synchronized
 date: 2025-06-12
 keywords: Android, java, synchronized, thread
 ---
-## 同步流程與非同步流程
-### 同步流程synchronous
+Prerequisites:
+
+- [阻斷與同步][1]
+
+## 同步與非同步
+### 同步synchronous
+- [阻斷與同步][1]
+
 等待上一個動作完成，才可以處理下一個動作。
 
-### 非同步流程asynchronous
-不用等待上一個動作完成，可以同時做多個動作。  
-多個流程同時執行或稱執行緒(thread)同時執行，不用特別等上一個流程(執行緒)完成，才能進行下一個流程(執行緒)。
+### 非同步asynchronous
+不用等待上一個動作完成，可以同時做多個動作。 
+
+多個流程同時執行或稱多個執行緒(thread)同時執行，不用特別等上一個流程(執行緒)完成，才能進行下一個流程(執行緒)。
 
 ## synchronized同步鎖
-非同步(asynchronous)的流程中，共享資源時造成變數值不一致，因為多個流程(執行緒thread)同時存取或修改同一個變數，所以需要使用同步鎖(synchronized)，必須把目前的流程(thread)處理完，才輪下一個流程(thread)處理，還原成同步的狀況。
+非同步(asynchronous)的流程中，因為多個流程(執行緒thread)同時存取或修改同一個變數，造成變數值不一致，所以需要使用同步鎖(synchronized)，必須把目前的流程(thread)處理完，才輪下一個流程(thread)處理，還原成同步的狀況。
 
 想像一下，只有一個廁所，所有執行緒都在門外排隊，只有一個執行緒能上廁所，上廁所前把門鎖上，上完廁所(執行完)，把廁所門的鎖打開(unlock解鎖)，輪到下一個執行緒去上廁所。
 
@@ -119,6 +126,17 @@ public class Test {
 執行緒2 提領 1000 元，剩下 1000 元
 執行緒2 提領 1000 元，剩下 0 元
 ```
+
+## 解鎖
+以下狀況都是執行緒在synchronized方法或synchronized區塊之中。
+
+1. 執行緒執行完畢，會解鎖。
+2. 執行緒遇到Exception，會解鎖。
+3. 執行緒遇到return，或只有一層迴圈的break，會解鎖。
+4. 執行緒呼叫wait()，會解鎖。
+
+以下狀況不會解鎖。
+- 執行緒呼叫sleep()、yield()，睡覺sleep與yeild()讓出cpu資源不會解鎖。
 
 ## synchronized(this)同步區塊
 synchronized(this)是鎖住目前物件屬性，使用在非靜態方法。
@@ -479,3 +497,8 @@ class TestThread2 extends Thread {
   }
 }
 {% endhighlight %}
+
+
+
+
+[1]: {% link _pages/java/thread.md %}#阻斷與同步

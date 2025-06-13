@@ -1630,7 +1630,7 @@
         </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> thread </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Thread </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -1648,7 +1648,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/join/" data-nav-link> join</a>
+    	<a href="/pages/java/join/" data-nav-link> join 插隊</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/thread_state/" data-nav-link> 執行緒狀態</a>
         
             
         </li></ul></li>
@@ -1759,6 +1766,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/uml_sequence/" data-nav-link> 順序圖</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/amateras/" data-nav-link> 安裝Amateras</a>
         
             
@@ -1800,7 +1814,7 @@
     	<a href="/pages/design_pattern/singleton/" data-nav-link> Singleton</a>
         
             
-                <ul><li><a href="#靜態變數建立singleton" data-nav-link " >靜態變數建立Singleton</a><ul><li><a href="#優缺點分析" data-nav-link " >優缺點分析</a></li></ul></li><li><a href="#singleton寫在靜態區塊" data-nav-link " >Singleton寫在靜態區塊</a></li><li><a href="#靜態內部類別建立singleton" data-nav-link " >靜態內部類別建立Singleton</a><ul><li><a href="#優點-1" data-nav-link " >優點</a></li></ul></li><li><a href="#synchronized加上雙重檢查" data-nav-link " >synchronized加上雙重檢查</a><ul><li><a href="#未優化前不推薦使用" data-nav-link " >未優化前(不推薦使用)</a></li><li><a href="#雙重檢查double-checked-locking" data-nav-link " >雙重檢查Double-Checked Locking</a></li><li><a href="#為什麼是用synchronizedsingleton1class" data-nav-link " >為什麼是用synchronized(Singleton1.class)？</a></li><li><a href="#為什麼要檢查二次" data-nav-link " >為什麼要檢查二次</a></li><li><a href="#加快效率" data-nav-link " >加快效率</a></li><li><a href="#volatile" data-nav-link " >volatile</a></li></ul></li></ul>
+                <ul><li><a href="#靜態變數建立singleton" data-nav-link " >靜態變數建立Singleton</a></li><li><a href="#singleton寫在靜態區塊" data-nav-link " >Singleton寫在靜態區塊</a><ul><li><a href="#優缺點分析" data-nav-link " >優缺點分析</a></li></ul></li><li><a href="#靜態內部類別建立singleton" data-nav-link " >靜態內部類別建立Singleton</a><ul><li><a href="#優點-1" data-nav-link " >優點</a></li></ul></li><li><a href="#synchronized加上雙重檢查" data-nav-link " >synchronized加上雙重檢查</a><ul><li><a href="#未優化前不推薦使用" data-nav-link " >未優化前(不推薦使用)</a></li><li><a href="#雙重檢查double-checked-locking" data-nav-link " >雙重檢查Double-Checked Locking</a></li><li><a href="#為什麼是用synchronizedsingleton1class" data-nav-link " >為什麼是用synchronized(Singleton1.class)？</a></li><li><a href="#為什麼要檢查二次" data-nav-link " >為什麼要檢查二次</a></li><li><a href="#加快效率" data-nav-link " >加快效率</a></li><li><a href="#volatile" data-nav-link " >volatile</a></li></ul></li></ul>
 
             
         </li>
@@ -2712,28 +2726,28 @@
                     <p>Prerequisites:</p>
 
 <ul>
-  <li><a href="/pages/java/static/#靜態只產生一次">靜態只產生一次</a></li>
-  <li><a href="/pages/java/static_inner/">靜態內部類</a></li>
-  <li><a href="/pages/java/static_inner/#使用到靜態內部類別才會被建立">使用到靜態內部類別才會被建立</a></li>
-  <li><a href="/pages/java/innerclass/#外部類別可以存取private內部類別與屬性">外部類別存取private內部類別</a></li>
-  <li><a href="/pages/java/static_inner_method/#靜態方法與Singleton">靜態內部類別.靜態方法</a></li>
+  <li><a href="/pages/java/static/#靜態只產生一次">static</a></li>
 </ul>
+
+<p>本篇文章需要相當多大量知識，了解<a href="/pages/java/classloader/">類別載入</a>，<a href="/pages/java/metadata/">metadata</a>，<a href="/pages/java/static/#靜態只產生一次">靜態變數</a>、<a href="/pages/java/codeblock/#靜態屬性是建構子">靜態區塊</a>、<a href="/pages/java/static_inner/">靜態內部類別</a>、<a href="/pages/java/final/">final</a>、<a href="/pages/java/thread/">執行緒</a>、<a href="/pages/java/sync/">synchronized</a>，擁有以上的知識，才能了解下面的內容。</p>
 
 <p>Singleton 有很多中文翻譯，如∶ 獨體，單例</p>
 
-<p>什麼是Singleton？Singleton確保一個類別只有一個實體。</p>
+<p>什麼是Singleton？Singleton是類別的靜態變數，而這個靜態變數是類別本身的物件。</p>
+
+<p>而類別的變數只會在<a href="/pages/java/classloader/">類別載入記憶體</a>時，建立一次，確保不會被其它人建立多次。</p>
 
 <p>何時用到Singleton，消耗系統資源的建立的物件，但又頻繁使用，只想只建立一次，不想頻繁的建立。</p>
 
 <h2 id="靜態變數建立singleton">靜態變數建立Singleton</h2>
-<p>使用靜態只產生一次的特性，儲存物件，確保一個類別只有一個實體。</p>
-
 <p>步驟如下:</p>
 <ol>
-  <li>把建構子變成私有</li>
-  <li>私有靜態變數來存放物件</li>
+  <li>把建構子變成私有。</li>
+  <li>私有靜態變數來存放本身類別的物件。</li>
   <li>提供public靜態的方法，傳回物件。</li>
 </ol>
+
+<p>為什麼建構子要變成私有，確保只有類別本身才可以呼叫建構子，其它類別都不能呼叫建構子建立物件。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2759,7 +2773,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>測試是否只產生一個物件，測試結果hashCode都是相同，證明不管產生幾次都為相同物件。</p>
+<p>測試是否只產生一個物件，測試結果<a href="/pages/java/object/">hashCode</a>都是相同，證明不管產生幾次都為相同物件。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2790,17 +2804,13 @@ singleton2 = 821270929
 singleton1 == singleton2 = true
 </code></pre></div></div>
 
-<h3 id="優缺點分析">優缺點分析</h3>
-<h4 id="優點">優點</h4>
-<p>static方法、static變數、static區塊、static靜態內部類別，ClassLoader類別載入時就已經存放在metadata靜態儲存區，若靜態變數的類型是物件(如String)，就會把「靜態變數」放在metadata中，而「物件」則放入Heap中。</p>
-
-<p>以上這些動作只做一次，不管產生多少次物件，都只做一次。</p>
-
-<h4 id="缺點">缺點</h4>
-<p>不管有沒有使用到，都會產生一次物件，若沒使用到這個物件就會浪費記憶體位址去存放這個物件。</p>
-
 <h2 id="singleton寫在靜態區塊">Singleton寫在靜態區塊</h2>
-<p>與以上寫法的優缺點一樣，二者是相同的東西。</p>
+<ul>
+  <li><a href="/pages/java/codeblock/#靜態屬性是建構子">靜態區塊</a></li>
+  <li><a href="/pages/java/static/#靜態只產生一次">靜態只產生一次</a></li>
+</ul>
+
+<p>靜態變數是在靜態區塊中才建立物件，跟之前的作法沒什麼不同。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2832,7 +2842,26 @@ singleton1 == singleton2 = true
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<h3 id="優缺點分析">優缺點分析</h3>
+<h4 id="優點">優點</h4>
+<p>static方法、static變數、static區塊，<a href="/pages/java/classloader/">ClassLoader類別載入</a>時就已經存放在<a href="/pages/java/metadata/">metadata</a>。</p>
+
+<p>靜態相關屬性、方法、變數，不管產生多少次物件，都只載入記憶體一次。</p>
+
+<h4 id="缺點">缺點</h4>
+<p>不管有沒有使用到，都會產生一次物件，若沒使用到這個物件就會浪費記憶體位址去存放這個物件。</p>
+
+<p>如果singleton物件要消耗很多執行時間，可能要網路連線、資料庫連線、檔案載入，執行速度就會很慢。</p>
+
 <h2 id="靜態內部類別建立singleton">靜態內部類別建立Singleton</h2>
+<ul>
+  <li><a href="/pages/java/final/">final</a></li>
+  <li><a href="/pages/java/static_inner/">靜態內部類</a></li>
+  <li><a href="/pages/java/static_inner/#使用到靜態內部類別才會被建立">使用到靜態內部類別才會被建立</a></li>
+  <li><a href="/pages/java/innerclass/#外部類別可以存取private內部類別與屬性">外部類別存取private內部類別</a></li>
+</ul>
+
+<p>為了解決先前提到的缺點，使用靜態內部類別，可以做到使用的時候，才會建立。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2847,9 +2876,11 @@ singleton1 == singleton2 = true
 10
 11
 12
+13
 </pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Singleton1</span> <span class="o">{</span>
   <span class="c1">// 1. 把建構子存取權限改成private</span>
   <span class="kd">private</span> <span class="nf">Singleton1</span><span class="o">()</span> <span class="o">{}</span>
+  <span class="c1">// 靜態內部類別</span>
   <span class="kd">private</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">InnerClz</span> <span class="o">{</span>
     <span class="c1">// final代表不能再被修改</span>
     <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">Singleton1</span> <span class="no">INSTANCE</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Singleton1</span><span class="o">();</span>
@@ -2864,15 +2895,15 @@ singleton1 == singleton2 = true
 
 <h3 id="優點-1">優點</h3>
 <ul>
-  <li>靜態只產生一次</li>
+  <li>靜態只產生一次物件。</li>
   <li>使用到靜態內部類別才會被建立，要使用的時候才去建這個類別，才不會造成記憶體空間浪費。</li>
 </ul>
 
 <h2 id="synchronized加上雙重檢查">synchronized加上雙重檢查</h2>
-<p>不使用靜態變數或靜態區塊存放物件，自行建立的好處在於，要使用的時候才去建這個類別。</p>
+<p>不使用靜態內部類別，使用靜態方法 + <a href="/pages/java/sync/">synchronized</a>，也可以有靜態內部類別的效果(使用的時候才建立物件)。</p>
 
 <h3 id="未優化前不推薦使用">未優化前(不推薦使用)</h3>
-<p>在方法上加上synchronized，一次只能有一個執行緒進入執行，執行完成後輪下一個執行緒執行此方法，若後面有1000個執行緒要執行這個方法，會造成執行緒排隊等待，執行效能緩慢，以下方法不推薦。</p>
+<p>在靜態方法前加上<a href="/pages/java/sync/">synchronized</a>，一次只能有一個<a href="/pages/java/thread/">執行緒</a>進入靜態方法執行，執行完成後輪下一個執行緒執行此方法，若後面有1000個執行緒要執行這個方法，會造成執行緒排隊等待，執行效能緩慢，以下方法不推薦。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2887,10 +2918,14 @@ singleton1 == singleton2 = true
 10
 11
 12
+13
+14
 </pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Singleton1</span> <span class="o">{</span>
   <span class="c1">// 1. 把建構子存取權限改成private</span>
   <span class="kd">private</span> <span class="nf">Singleton1</span><span class="o">()</span> <span class="o">{}</span>
+  <span class="c1">// 靜態變數</span>
   <span class="kd">private</span> <span class="kd">static</span> <span class="nc">Singleton1</span> <span class="n">instance</span><span class="o">;</span>
+  
   <span class="c1">// 2. 提供public static方法，傳回物件</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kd">synchronized</span> <span class="nc">Singleton1</span> <span class="nf">getInstance</span><span class="o">()</span> <span class="o">{</span>
     <span class="k">if</span> <span class="o">(</span><span class="n">instance</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
@@ -2903,6 +2938,10 @@ singleton1 == singleton2 = true
 </figure>
 
 <h3 id="雙重檢查double-checked-locking">雙重檢查Double-Checked Locking</h3>
+<ul>
+  <li><a href="/pages/java/sync/">靜態同步方法</a></li>
+</ul>
+
 <p>好幾百個執行緒進來要取得instance，確保只有一個執行緒建立一個instance。</p>
 
 <figure class="highlight">
@@ -2943,15 +2982,47 @@ singleton1 == singleton2 = true
 
 <h3 id="為什麼是用synchronizedsingleton1class">為什麼是用synchronized(Singleton1.class)？</h3>
 
-<p>Singleton1.class是Class類別的物件</p>
+<p>Singleton1.class是<a href="/pages/java/reflect/">Class類別</a>的物件。</p>
 
-<p>getInstance()是靜態方法，鎖的是類別，所以使用synchronized(類別.class)</p>
+<p>getInstance()是類別的靜態方法，<a href="/pages/java/sync/">同步鎖</a>，鎖的是類別，所以使用synchronized(類別.class)</p>
 
 <h3 id="為什麼要檢查二次">為什麼要檢查二次</h3>
 
 <p>為什麼要檢查二次 if (instance == null) ?</p>
 
-<p>想像一下，若有一個執行緒執行完第一個if (instance == null)，然後突然控制權輪到下一個執行緒來使用並建好instance，建完instance後，控制權又輪回前一個執行緒，它才剛執行完if (instance == null)，要開始建立instance，然後就建立第2個instance成功了。</p>
+<p>下面這個程式碼只有一次if (instance == null)</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Singleton1</span> <span class="o">{</span>
+  <span class="kd">private</span> <span class="nf">Singleton1</span><span class="o">()</span> <span class="o">{}</span>
+  <span class="kd">private</span> <span class="kd">static</span> <span class="kd">volatile</span> <span class="nc">Singleton1</span> <span class="n">instance</span><span class="o">;</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="nc">Singleton1</span> <span class="nf">getInstance</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">instance</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="kd">synchronized</span><span class="o">(</span><span class="nc">Singleton1</span><span class="o">.</span><span class="na">class</span><span class="o">)</span> <span class="o">{</span>
+          <span class="n">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Singleton1</span><span class="o">();</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="k">return</span> <span class="n">instance</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>想像一下，有一個執行緒A執行完第一個if (instance == null)，然後同步區塊有執行緒B使用中(尚未建立物件)，所以執行緒A在同步區塊外面等待，然後在同步區塊中的執行緒B， 建立好物件instance，離開同步區塊，接著就輪到執行緒A進入同步區塊，接著就建立好第2個instance。</p>
 
 <p>為了不讓人建立第2個物件，所以在同步synchronized區塊內加上第二次 if (instance == null)。</p>
 
@@ -2959,6 +3030,13 @@ singleton1 == singleton2 = true
 <p>第3個執行緒只要看到第一個 if (instance == null)，此時instance已經被建立了，就會跳離這個if判斷式，然後就不用再執行synchronized區塊，也就是說synchronized區塊最多只被執行2次。</p>
 
 <h3 id="volatile">volatile</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kd">private</span> <span class="kd">static</span> <span class="kd">volatile</span> <span class="nc">Singleton1</span> <span class="n">instance</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 <p>volatile中文是可見性</p>
 
 <p>每個變數都有自己的cache(暫存空間)，有變更不會立刻改變，好幾百個執行緒讀取這個變數，各個執行緒可能會先cache暫存起來，加上volatile，就是不讓各個執行緒把這個變數暫存，永遠重新讀取變數的值。</p>
@@ -3153,7 +3231,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-12 12:36:56 +0800"
+        "time": "2025-06-13 13:44:28 +0800"
     },
     "basePath": "",
     "book": {
@@ -3180,6 +3258,36 @@ window.MathJax = {
 <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
 <script src="../gitbook/gitbook-plugin-search/search.js"></script>
 -->
+<script>
+    function render_mermaid() {
+        mermaid.initialize({
+            startOnLoad: false,
+            theme: "default",
+        });
+        window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    }
+
+    function initialize_mermaid() {
+        if (document.readyState === "loading") {
+            // Loading hasn't finished yet
+            document.addEventListener("DOMContentLoaded", render_mermaid);
+        } else {
+            // `DOMContentLoaded` has already fired
+            render_mermaid();
+        }
+    }
+
+    if (window.mermaid_script && window.mermaid) {
+        initialize_mermaid();
+    } else {
+        window.mermaid_script = document.createElement("script");
+        mermaid_script.onload = initialize_mermaid;
+        document.head.appendChild(mermaid_script);
+        mermaid_script.defer = true;
+        mermaid_script.id = 'mermaid-script';
+        mermaid_script.src = 'https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js';
+    }
+</script>
 
 <script src="/assets/gitbook/custom.js"></script>
 <script src="/assets/gitbook/custom-local.js"></script>
