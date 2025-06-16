@@ -119,6 +119,6 @@ public int read (byte[] b)
   }
 {% endhighlight %}
 
-[1]: {% link _pages/java/string.md %}
+[1]: {% link _pages/java/string_io.md %}
 [2]: {% link _pages/java/io.md %}
 [3]: {% link _pages/java/fileio.md %}

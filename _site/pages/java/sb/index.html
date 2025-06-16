@@ -1444,23 +1444,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/string/" data-nav-link> String</a>
-        
-            
-        </li>
-	
-	
-	<li class="active" data-nav-item>
-    	<a href="/pages/java/sb/" data-nav-link> String Buffer</a>
-        
-            
-                <ul><li><a href="#字串存放位置" data-nav-link " >字串存放位置</a><ul><li><a href="#string-buffer-vs-string" data-nav-link " >String Buffer vs String</a></li></ul></li><li><a href="#建構子" data-nav-link " >建構子</a></li><li><a href="#stringbuffer轉string" data-nav-link " >StringBuffer轉String</a></li><li><a href="#stringbuffer常用方法" data-nav-link " >StringBuffer常用方法</a></li></ul>
-
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/rand/" data-nav-link> 亂數</a>
         
             
@@ -1476,6 +1459,40 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/junit_test/" data-nav-link> Junit Test</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 字串 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/string/" data-nav-link> String</a>
+        
+            
+        </li>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/java/sb/" data-nav-link> String Buffer</a>
+        
+            
+                <ul><li><a href="#字串存放位置" data-nav-link " >字串存放位置</a><ul><li><a href="#string-buffer-vs-string" data-nav-link " >String Buffer vs String</a></li></ul></li><li><a href="#建構子" data-nav-link " >建構子</a></li><li><a href="#append" data-nav-link " >append</a></li><li><a href="#stringbuffer轉string" data-nav-link " >StringBuffer轉String</a></li><li><a href="#tostring原始碼" data-nav-link " >toString原始碼</a></li><li><a href="#stringbuffer常用方法" data-nav-link " >StringBuffer常用方法</a><ul><li><a href="#delete" data-nav-link " >delete</a></li><li><a href="#replace" data-nav-link " >replace</a></li><li><a href="#indexof" data-nav-link " >indexOf</a></li><li><a href="#insert" data-nav-link " >insert</a></li><li><a href="#length長度" data-nav-link " >length長度</a></li></ul></li><li><a href="#null" data-nav-link " >null</a><ul><li><a href="#建構子傳null" data-nav-link " >建構子傳null</a></li><li><a href="#append傳null" data-nav-link " >append傳null</a></li></ul></li><li><a href="#lastindexof與insert進階" data-nav-link " >lastIndexOf與insert進階</a></li></ul>
+
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/str_buffer_builder/" data-nav-link> StringBuilder vs StringBuffer</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/string_io/" data-nav-link> String與char[]和byte[]</a>
         
             
         </li></ul></li>
@@ -1717,13 +1734,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/string_io/" data-nav-link> String與char[]和byte[]</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/fileio/" data-nav-link> 檔案串流</a>
         
             
@@ -1738,7 +1748,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/decorator_io/" data-nav-link> 有附加功能的串流</a>
+    	<a href="/pages/java/decorator_io/" data-nav-link> 裝飾串流</a>
         
             
         </li>
@@ -2794,7 +2804,33 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="stringbuffer轉string">StringBuffer轉String</h2>
+<h2 id="append">append</h2>
+<p>append傳回值就是StringBuffer。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>    <span class="nc">StringBuffer</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuffer</span><span class="o">();</span>
+    <span class="nc">StringBuffer</span> <span class="n">sb2</span> <span class="o">=</span> <span class="n">sb</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="s">"abc"</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>會把基本型別，自動轉成字串。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>    <span class="nc">StringBuffer</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuffer</span><span class="o">();</span>
+    <span class="n">sb</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="kc">true</span><span class="o">).</span><span class="na">append</span><span class="o">(</span><span class="mf">10.5</span><span class="o">).</span><span class="na">append</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">sb</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>true10.510
+</code></pre></div></div>
+
+<p>把boolean轉成字串原始碼。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2806,10 +2842,57 @@
 7
 8
 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="nc">AbstractStringBuilder</span> <span class="nf">append</span><span class="o">(</span><span class="kt">boolean</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">ensureCapacityInternal</span><span class="o">(</span><span class="n">count</span> <span class="o">+</span> <span class="o">(</span><span class="n">b</span> <span class="o">?</span> <span class="mi">4</span> <span class="o">:</span> <span class="mi">5</span><span class="o">));</span>
+    <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">count</span><span class="o">;</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">val</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">value</span><span class="o">;</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">isLatin1</span><span class="o">())</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">val</span><span class="o">[</span><span class="n">count</span><span class="o">++]</span> <span class="o">=</span> <span class="sc">'t'</span><span class="o">;</span>
+            <span class="n">val</span><span class="o">[</span><span class="n">count</span><span class="o">++]</span> <span class="o">=</span> <span class="sc">'r'</span><span class="o">;</span>
+            <span class="n">val</span><span class="o">[</span><span class="n">count</span><span class="o">++]</span> <span class="o">=</span> <span class="sc">'u'</span><span class="o">;</span>
+            <span class="n">val</span><span class="o">[</span><span class="n">count</span><span class="o">++]</span> <span class="o">=</span> <span class="sc">'e'</span><span class="o">;</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="n">val</span><span class="o">[</span><span class="n">count</span><span class="o">++]</span> <span class="o">=</span> <span class="sc">'f'</span><span class="o">;</span>
+            <span class="n">val</span><span class="o">[</span><span class="n">count</span><span class="o">++]</span> <span class="o">=</span> <span class="sc">'a'</span><span class="o">;</span>
+            <span class="n">val</span><span class="o">[</span><span class="n">count</span><span class="o">++]</span> <span class="o">=</span> <span class="sc">'l'</span><span class="o">;</span>
+            <span class="n">val</span><span class="o">[</span><span class="n">count</span><span class="o">++]</span> <span class="o">=</span> <span class="sc">'s'</span><span class="o">;</span>
+            <span class="n">val</span><span class="o">[</span><span class="n">count</span><span class="o">++]</span> <span class="o">=</span> <span class="sc">'e'</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="stringbuffer轉string">StringBuffer轉String</h2>
+<p>使用toString()或者使用String建構子放入StringBuffer。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="nc">StringBuffer</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuffer</span><span class="o">(</span><span class="s">"Hello World"</span><span class="o">);</span>
+    <span class="c1">// 使用toString()</span>
     <span class="nc">String</span> <span class="n">str1</span> <span class="o">=</span> <span class="n">sb</span><span class="o">.</span><span class="na">toString</span><span class="o">();</span>
+    <span class="c1">// 使用String建構子</span>
     <span class="nc">String</span> <span class="n">str2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">sb</span><span class="o">);</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str1</span><span class="o">);</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str2</span><span class="o">);</span>
@@ -2822,7 +2905,251 @@
 Hello World
 </code></pre></div></div>
 
+<h2 id="tostring原始碼">toString原始碼</h2>
+<p>重點是 new String()，new String是在heap建立記憶體空間，不是在String pool建立記憶體空間。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>    <span class="kd">public</span> <span class="kd">synchronized</span> <span class="nc">String</span> <span class="nf">toString</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">toStringCache</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">toStringCache</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="c1">// 重點是 new String</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nf">String</span><span class="o">(</span><span class="n">toStringCache</span><span class="o">);</span>
+    <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 <h2 id="stringbuffer常用方法">StringBuffer常用方法</h2>
+<h3 id="delete">delete</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>StringBuffer delete(int start, int end)
+start &lt;= range &lt; end
+</code></pre></div></div>
+<p>range就是要刪的範圍，不包含end。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre> <span class="nc">StringBuffer</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuffer</span><span class="o">(</span><span class="s">"Hello world,貓咪"</span><span class="o">);</span>
+ <span class="c1">// 1 &lt;= x &lt; 4 </span>
+ <span class="n">sb</span><span class="o">.</span><span class="na">delete</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">4</span><span class="o">);</span>
+ <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">sb</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ho world,貓咪
+</code></pre></div></div>
+
+<h3 id="replace">replace</h3>
+<p>修改可當作replace取代。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>StringBuffer replace(int start, int end, String str)
+start &lt;= range &lt; end
+</code></pre></div></div>
+<p>range就是要取代的範圍，不包含end。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>  <span class="nc">StringBuffer</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuffer</span><span class="o">(</span><span class="s">"貓咪Hello world"</span><span class="o">);</span>
+  <span class="n">sb</span><span class="o">.</span><span class="na">replace</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="s">"狗"</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">sb</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>貓狗llo world
+</code></pre></div></div>
+
+<h3 id="indexof">indexOf</h3>
+<p>第一次找到的位置，由左往右。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>  <span class="nc">StringBuffer</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuffer</span><span class="o">(</span><span class="s">"貓咪Hello world"</span><span class="o">);</span>
+  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">sb</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="s">"咪"</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">index</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+</code></pre></div></div>
+
+<h3 id="insert">insert</h3>
+<p>在指定位置插入字串，原本的位置往後移到插入字串的後面。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>  <span class="nc">StringBuffer</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuffer</span><span class="o">(</span><span class="s">"貓咪Hello world"</span><span class="o">);</span>
+  <span class="n">sb</span><span class="o">.</span><span class="na">insert</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="s">"恐龍"</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">sb</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>貓恐龍咪Hello world
+</code></pre></div></div>
+
+<h3 id="length長度">length長度</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="nc">StringBuffer</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuffer</span><span class="o">(</span><span class="s">"貓咪Hello world"</span><span class="o">);</span>
+<span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="n">sb</span><span class="o">.</span><span class="na">length</span><span class="o">();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="null">null</h2>
+<h3 id="建構子傳null">建構子傳null</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>  <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="nc">StringBuffer</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuffer</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">sb</span><span class="o">.</span><span class="na">length</span><span class="o">());</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>在父類別AbstractStringBuilder的建構子中，str.length()會拋出例外，因為str是null。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="nc">AbstractStringBuilder</span><span class="o">(</span><span class="nc">String</span> <span class="n">str</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="n">length</span> <span class="o">=</span> <span class="n">str</span><span class="o">.</span><span class="na">length</span><span class="o">();</span>
+    <span class="c1">// ....</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="append傳null">append傳null</h3>
+<p>先到父類別的appendNull()方法</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="nc">AbstractStringBuilder</span> <span class="nf">append</span><span class="o">(</span><span class="nc">String</span> <span class="n">str</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">str</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="nf">appendNull</span><span class="o">();</span>
+    <span class="o">}</span>
+    <span class="c1">// ....</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>appendNull，會把null的字串加在字元陣列中。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kd">private</span> <span class="nc">AbstractStringBuilder</span> <span class="nf">appendNull</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">ensureCapacityInternal</span><span class="o">(</span><span class="n">count</span> <span class="o">+</span> <span class="mi">4</span><span class="o">);</span>
+    <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">count</span><span class="o">;</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">val</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">value</span><span class="o">;</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">isLatin1</span><span class="o">())</span> <span class="o">{</span>
+        <span class="n">val</span><span class="o">[</span><span class="n">count</span><span class="o">++]</span> <span class="o">=</span> <span class="sc">'n'</span><span class="o">;</span>
+        <span class="n">val</span><span class="o">[</span><span class="n">count</span><span class="o">++]</span> <span class="o">=</span> <span class="sc">'u'</span><span class="o">;</span>
+        <span class="n">val</span><span class="o">[</span><span class="n">count</span><span class="o">++]</span> <span class="o">=</span> <span class="sc">'l'</span><span class="o">;</span>
+        <span class="n">val</span><span class="o">[</span><span class="n">count</span><span class="o">++]</span> <span class="o">=</span> <span class="sc">'l'</span><span class="o">;</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+    <span class="c1">// ....</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下執行結果為4</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>  <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="nc">StringBuffer</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuffer</span><span class="o">();</span>
+  <span class="n">sb</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">sb</span><span class="o">.</span><span class="na">length</span><span class="o">());</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>4</p>
+
+<h2 id="lastindexof與insert進階">lastIndexOf與insert進階</h2>
+<p>lastIndexOf是由最後面往前找，找到就傳回位置。</p>
+
+<p>12345.67 
+轉成 
+12,345.67</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>  <span class="nc">StringBuffer</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuffer</span><span class="o">(</span><span class="s">"12345.67"</span><span class="o">);</span>
+  <span class="c1">// 找到小數點</span>
+  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">sb</span><span class="o">.</span><span class="na">lastIndexOf</span><span class="o">(</span><span class="s">"."</span><span class="o">);</span>
+  <span class="c1">// 小數點前三位逗號</span>
+  <span class="n">sb</span><span class="o">.</span><span class="na">insert</span><span class="o">(</span><span class="n">index</span> <span class="o">-</span> <span class="mi">3</span><span class="o">,</span> <span class="s">","</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">sb</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>12,345.67
+</code></pre></div></div>
+
+<p>那如果前面的數字很長呢？例如:12345678910111213.11</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>  <span class="nc">StringBuffer</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuffer</span><span class="o">(</span><span class="s">"12345678910111213.11"</span><span class="o">);</span>
+  <span class="c1">// -3要放在初始值。</span>
+  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">sb</span><span class="o">.</span><span class="na">lastIndexOf</span><span class="o">(</span><span class="s">"."</span><span class="o">)</span> <span class="o">-</span> <span class="mi">3</span><span class="o">;</span>
+  <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">index</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">-=</span> <span class="mi">3</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">sb</span><span class="o">.</span><span class="na">insert</span><span class="o">(</span><span class="n">i</span><span class="o">,</span> <span class="s">","</span><span class="o">);</span>
+  <span class="o">}</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">sb</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>12,345,678,910,111,213.11
+</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -2894,7 +3221,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/rand" class="navigation navigation-next navigation-unique" aria-label="Next page: 亂數">
+                        <a href="/pages/java/str_buffer_builder" class="navigation navigation-next navigation-unique" aria-label="Next page: StringBuilder vs StringBuffer">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2912,11 +3239,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "System.in System.out",
+            "title": "StringBuilder vs StringBuffer",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/java/sys_in_out.md",
-            "ref": "_pages/java/sys_in_out.md",
+            "path": "_pages/java/str_buffer_builder.md",
+            "ref": "_pages/java/str_buffer_builder.md",
             "articles": []
         },
         
@@ -3014,7 +3341,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-13 13:44:28 +0800"
+        "time": "2025-06-16 11:58:14 +0800"
     },
     "basePath": "",
     "book": {

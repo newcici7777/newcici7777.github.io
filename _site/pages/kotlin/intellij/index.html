@@ -1444,20 +1444,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/string/" data-nav-link> String</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/sb/" data-nav-link> String Buffer</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/rand/" data-nav-link> 亂數</a>
         
             
@@ -1473,6 +1459,37 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/junit_test/" data-nav-link> Junit Test</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 字串 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/string/" data-nav-link> String</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/sb/" data-nav-link> String Buffer</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/str_buffer_builder/" data-nav-link> StringBuilder vs StringBuffer</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/string_io/" data-nav-link> String與char[]和byte[]</a>
         
             
         </li></ul></li>
@@ -1714,13 +1731,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/string_io/" data-nav-link> String與char[]和byte[]</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/fileio/" data-nav-link> 檔案串流</a>
         
             
@@ -1735,7 +1745,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/decorator_io/" data-nav-link> 有附加功能的串流</a>
+    	<a href="/pages/java/decorator_io/" data-nav-link> 裝飾串流</a>
         
             
         </li>
@@ -2029,7 +2039,7 @@
     	<a href="/pages/kotlin/intellij/" data-nav-link> Intellj快速鍵</a>
         
             
-                <ul><li><a href="#decompile轉碼後的java" data-nav-link " >Decompile轉碼後的java</a></li><li><a href="#變數屬性sout" data-nav-link " >變數.屬性.sout</a></li><li><a href="#集合變數for" data-nav-link " >集合變數.for</a></li><li><a href="#try-catch" data-nav-link " >try-catch</a></li><li><a href="#建立module" data-nav-link " >建立module</a></li><li><a href="#sdk-設定" data-nav-link " >sdk 設定</a></li><li><a href="#快速進入類別" data-nav-link " >快速進入類別</a></li></ul>
+                <ul><li><a href="#decompile轉碼後的java" data-nav-link " >Decompile轉碼後的java</a></li><li><a href="#全部快速鍵" data-nav-link " >全部快速鍵</a></li><li><a href="#變數屬性sout" data-nav-link " >變數.屬性.sout</a></li><li><a href="#集合變數for" data-nav-link " >集合變數.for</a></li><li><a href="#iterator迴圈" data-nav-link " >iterator迴圈</a></li><li><a href="#try-catch" data-nav-link " >try-catch</a></li><li><a href="#建立module" data-nav-link " >建立module</a></li><li><a href="#sdk-設定" data-nav-link " >sdk 設定</a></li><li><a href="#快速進入類別" data-nav-link " >快速進入類別</a></li><li><a href="#structure" data-nav-link " >Structure</a></li></ul>
 
             
         </li>
@@ -2725,10 +2735,14 @@
 
                     <h2 id="decompile轉碼後的java">Decompile轉碼後的java</h2>
 <p>按2次shift鍵，輸入show kotlin bytecode 
-<img src="/assets/img/kotlin/bytecode.png" alt="img" /></p>
+<img src="/assets/img/editor/bytecode.png" alt="img" /></p>
 
 <p>按下「Decompile」按鈕，可以看到轉碼過後的java程式碼。
-<img src="/assets/img/kotlin/bytecode2.png" alt="img" /></p>
+<img src="/assets/img/editor/bytecode2.png" alt="img" /></p>
+
+<h2 id="全部快速鍵">全部快速鍵</h2>
+<p>win: ctrl + j
+mac: cmd + j</p>
 
 <h2 id="變數屬性sout">變數.屬性.sout</h2>
 <p>s1.length.sout</p>
@@ -2752,7 +2766,8 @@
 </figure>
 
 <h2 id="集合變數for">集合變數.for</h2>
-<p>IntelliJ快速鍵: 集合變數.for</p>
+<p>IntelliJ快速鍵: I
+IntelliJ快速鍵: 集合變數.for</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2768,6 +2783,9 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<h2 id="iterator迴圈">iterator迴圈</h2>
+<p>itit</p>
+
 <h2 id="try-catch">try-catch</h2>
 <p>先「選取」可能會發生錯誤的程式碼。</p>
 
@@ -2780,14 +2798,14 @@
 <p>選取你要的try…catch，我都是選6。</p>
 
 <h2 id="建立module">建立module</h2>
-<p><img src="/assets/img/kotlin/module.png" alt="img" /></p>
+<p><img src="/assets/img/editor/module.png" alt="img" /></p>
 
 <h2 id="sdk-設定">sdk 設定</h2>
-<p><img src="/assets/img/java/sdk1.png" alt="img" /></p>
+<p><img src="/assets/img/editor/sdk1.png" alt="img" /></p>
 
-<p><img src="/assets/img/java/sdk2.png" alt="img" /></p>
+<p><img src="/assets/img/editor/sdk2.png" alt="img" /></p>
 
-<p><img src="/assets/img/java/sdk3.png" alt="img" /></p>
+<p><img src="/assets/img/editor/sdk3.png" alt="img" /></p>
 
 <h2 id="快速進入類別">快速進入類別</h2>
 <p>對著類別名，按下快速鍵。</p>
@@ -2795,6 +2813,11 @@
 <p>Win: ctrl + b</p>
 
 <p>Mac: cmd + b</p>
+
+<h2 id="structure">Structure</h2>
+<p><img src="/assets/img/editor/struture1.png" alt="img" /></p>
+
+<p><img src="/assets/img/editor/struture2.png" alt="img" /></p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2985,7 +3008,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-13 13:44:28 +0800"
+        "time": "2025-06-16 11:58:14 +0800"
     },
     "basePath": "",
     "book": {

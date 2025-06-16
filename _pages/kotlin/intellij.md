@@ -5,10 +5,14 @@ keywords: kotlin, Intellj快速鍵
 ---
 ## Decompile轉碼後的java
 按2次shift鍵，輸入show kotlin bytecode 
-![img]({{site.imgurl}}/kotlin/bytecode.png)
+![img]({{site.imgurl}}/editor/bytecode.png)
 
 按下「Decompile」按鈕，可以看到轉碼過後的java程式碼。
-![img]({{site.imgurl}}/kotlin/bytecode2.png)
+![img]({{site.imgurl}}/editor/bytecode2.png)
+
+## 全部快速鍵
+win: ctrl \+ j
+mac: cmd \+ j
 
 ## 變數.屬性.sout
 s1.length.sout
@@ -24,6 +28,7 @@ println(s1.length)
 {% endhighlight %}
 
 ## 集合變數.for
+IntelliJ快速鍵: I
 IntelliJ快速鍵: 集合變數.for
 {% highlight kotlin linenos %}
 var s = "asd"
@@ -32,6 +37,9 @@ for (c in s) {
     println(c)
 }
 {% endhighlight %}
+
+## iterator迴圈
+itit
 
 ## try-catch
 先「選取」可能會發生錯誤的程式碼。
@@ -45,14 +53,14 @@ Mac: cmd + alt + t
 選取你要的try...catch，我都是選6。
 
 ## 建立module
-![img]({{site.imgurl}}/kotlin/module.png)
+![img]({{site.imgurl}}/editor/module.png)
 
 ## sdk 設定
-![img]({{site.imgurl}}/java/sdk1.png)
+![img]({{site.imgurl}}/editor/sdk1.png)
 
-![img]({{site.imgurl}}/java/sdk2.png)
+![img]({{site.imgurl}}/editor/sdk2.png)
 
-![img]({{site.imgurl}}/java/sdk3.png)
+![img]({{site.imgurl}}/editor/sdk3.png)
 
 ## 快速進入類別
 對著類別名，按下快速鍵。
@@ -60,3 +68,8 @@ Mac: cmd + alt + t
 Win: ctrl + b
 
 Mac: cmd + b
+
+## Structure
+![img]({{site.imgurl}}/editor/struture1.png)
+
+![img]({{site.imgurl}}/editor/struture2.png)

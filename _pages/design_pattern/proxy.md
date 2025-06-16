@@ -206,7 +206,7 @@ public class Client {
 }
 {% endhighlight %}
 ```
-真正類別要做的事
+旅客提供信用卡 卡號付錢
 ```
 
 [1]: {% link _pages/java/uml.md %}

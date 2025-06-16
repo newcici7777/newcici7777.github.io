@@ -189,6 +189,8 @@ s1 == s2 true
 由結果可知s1與s2是相等的。
 
 ## 二個字串變數相加
+- [sb][6]
+
 字串變數相加會呼叫StringBuilder的append()方法，最後會回傳`new String(value, 0, cout)`
 
 {% highlight java linenos %}
@@ -229,6 +231,7 @@ s3 == s4 false
 
 [1]: {% link _pages/java/compare.md %}
 [2]: {% link _pages/java/equals_compare.md %}
-[3]: {% link _pages/java/string.md %}
+[3]: {% link _pages/java/string_io.md %}
 [4]: {% link _pages/java/memory_model.md %}
 [5]: {% link _pages/java/final.md %}
+[6]: {% link _pages/java/sb.md %}

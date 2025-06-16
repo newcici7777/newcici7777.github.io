@@ -1444,20 +1444,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/string/" data-nav-link> String</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/sb/" data-nav-link> String Buffer</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/rand/" data-nav-link> 亂數</a>
         
             
@@ -1473,6 +1459,37 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/junit_test/" data-nav-link> Junit Test</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 字串 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/string/" data-nav-link> String</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/sb/" data-nav-link> String Buffer</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/str_buffer_builder/" data-nav-link> StringBuilder vs StringBuffer</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/string_io/" data-nav-link> String與char[]和byte[]</a>
         
             
         </li></ul></li>
@@ -1714,13 +1731,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/string_io/" data-nav-link> String與char[]和byte[]</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/fileio/" data-nav-link> 檔案串流</a>
         
             
@@ -1735,7 +1745,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/decorator_io/" data-nav-link> 有附加功能的串流</a>
+    	<a href="/pages/java/decorator_io/" data-nav-link> 裝飾串流</a>
         
             
         </li>
@@ -2949,33 +2959,31 @@
   <li><a href="/pages/java/reflect/">反射</a></li>
 </ul>
 
-<p>使用反射，傳回代理介面，呼叫代理介面的方法，也可以呼叫到target的方法。</p>
-
-<p>注意！傳回值為介面！不是具體的子類別。</p>
+<p>使用反射，傳回代理介面，呼叫代理介面的方法，也可以呼叫到Tourist的方法。</p>
 
 <h3 id="類別圖-1">類別圖</h3>
 <p><img src="/assets/img/pattern/proxy2.png" alt="img" /></p>
 
 <ul>
-  <li>ProxyFactory 代理工廠，建構子傳入真正類別</li>
-  <li>ProxyInterface 代理介面</li>
-  <li>target 真正的類別，實作ProxyInterface中的method方法。</li>
-  <li>Client 使用ProxyFactory傳回代理介面。</li>
+  <li>ProxyFactory 代理工廠，建構子傳入Tourist</li>
+  <li>BuyTicke 介面</li>
+  <li>Tourist</li>
+  <li>Client 測試類別</li>
 </ul>
 
 <h3 id="程式碼-1">程式碼</h3>
-<p>ProxyInterface與target跟先前的一模一樣。</p>
+<p>BuyTicket與Tourist跟先前的一模一樣。</p>
 
 <p>使用java.lang.reflect.Proxy</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Proxy.newProxyInstance(classLoader(), Interfaces(), InvocationHandler());
 </code></pre></div></div>
 <ul>
   <li>第一個參數為類別的classLoader</li>
-  <li>第二個參數為類別的所有介面interfaces</li>
+  <li>第二個參數為介面BuyTicket</li>
   <li>第三個參數為InvocationHandler()</li>
 </ul>
 
-<p>透過反射的方法，建立代理人</p>
+<p>透過反射的方法，建立代理人。</p>
 
 <p>ProxyFactory</p>
 
@@ -3008,29 +3016,29 @@
 26
 27
 28
-</pre></td><td class="code"><pre><span class="c1">// 反射代理人需要的類別</span>
+</pre></td><td class="code"><pre><span class="c1">// 反射需要的類別</span>
 <span class="kn">import</span> <span class="nn">java.lang.reflect.InvocationHandler</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.lang.reflect.Method</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.lang.reflect.Proxy</span><span class="o">;</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ProxyFactory</span> <span class="o">{</span>
   <span class="c1">// 類型為Object</span>
-  <span class="kd">private</span> <span class="nc">Object</span> <span class="n">target</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="nc">Object</span> <span class="n">tourist</span><span class="o">;</span>
   
   <span class="c1">// 參數類型為Object</span>
-  <span class="kd">public</span> <span class="nf">ProxyFactory</span><span class="o">(</span><span class="nc">Object</span> <span class="n">target</span><span class="o">)</span> <span class="o">{</span>
-    <span class="k">this</span><span class="o">.</span><span class="na">target</span> <span class="o">=</span> <span class="n">target</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="nf">ProxyFactory</span><span class="o">(</span><span class="nc">Object</span> <span class="n">tourist</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">tourist</span> <span class="o">=</span> <span class="n">tourist</span><span class="o">;</span>
   <span class="o">}</span>
 
   <span class="c1">// 傳回值類型是Object</span>
   <span class="kd">public</span> <span class="nc">Object</span> <span class="nf">getProxyInstance</span><span class="o">()</span> <span class="o">{</span>
     <span class="k">return</span> <span class="nc">Proxy</span><span class="o">.</span><span class="na">newProxyInstance</span><span class="o">(</span>
-        <span class="n">target</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getClassLoader</span><span class="o">(),</span>  <span class="c1">// 取得classloader</span>
-        <span class="n">target</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getInterfaces</span><span class="o">(),</span>   <span class="c1">// 取得介面</span>
+        <span class="n">tourist</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getClassLoader</span><span class="o">(),</span>  <span class="c1">// 取得classloader</span>
+        <span class="n">tourist</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getInterfaces</span><span class="o">(),</span>   <span class="c1">// 取得介面</span>
         <span class="k">new</span> <span class="nf">InvocationHandler</span><span class="o">()</span> <span class="o">{</span>
           <span class="nd">@Override</span>
           <span class="kd">public</span> <span class="nc">Object</span> <span class="nf">invoke</span><span class="o">(</span><span class="nc">Object</span> <span class="n">proxy</span><span class="o">,</span> <span class="nc">Method</span> <span class="n">method</span><span class="o">,</span> <span class="nc">Object</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Throwable</span> <span class="o">{</span>
-          	<span class="c1">// 第1個參數為target真正的類別</span>
-            <span class="nc">Object</span> <span class="n">instance</span> <span class="o">=</span> <span class="n">method</span><span class="o">.</span><span class="na">invoke</span><span class="o">(</span><span class="n">target</span><span class="o">,</span> <span class="n">args</span><span class="o">);</span>
+            <span class="c1">// 第1個參數為tourist</span>
+            <span class="nc">Object</span> <span class="n">instance</span> <span class="o">=</span> <span class="n">method</span><span class="o">.</span><span class="na">invoke</span><span class="o">(</span><span class="n">tourist</span><span class="o">,</span> <span class="n">args</span><span class="o">);</span>
             <span class="k">return</span> <span class="n">instance</span><span class="o">;</span>
           <span class="o">}</span>
         <span class="o">});</span>
@@ -3054,18 +3062,18 @@
 10
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Client</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="c1">// 類型為ProxyInterface介面，使用子類別target的建構子建立介面</span>
-    <span class="nc">ProxyInterface</span> <span class="n">target</span> <span class="o">=</span> <span class="k">new</span> <span class="n">target</span><span class="o">();</span>
-    <span class="c1">// 轉型成ProxyInterface介面，參數代入target</span>
-    <span class="nc">ProxyInterface</span> <span class="n">proxyClass</span> <span class="o">=</span> <span class="o">(</span><span class="nc">ProxyInterface</span><span class="o">)</span> <span class="k">new</span> <span class="nc">ProxyFactory</span><span class="o">(</span><span class="n">target</span><span class="o">).</span><span class="na">getProxyInstance</span><span class="o">();</span>
-    <span class="c1">// 使用介面的方法</span>
-    <span class="n">proxyClass</span><span class="o">.</span><span class="na">method1</span><span class="o">();</span>
+    <span class="c1">// 編譯類型為BuyTicket介面，執行類型Tourist</span>
+    <span class="nc">BuyTicket</span> <span class="n">tourist</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Tourist</span><span class="o">();</span>
+    <span class="c1">// 轉型成BuyTicket介面，參數代入tourist</span>
+    <span class="nc">BuyTicket</span> <span class="n">agency</span> <span class="o">=</span> <span class="o">(</span><span class="nc">BuyTicket</span><span class="o">)</span> <span class="k">new</span> <span class="nc">ProxyFactory</span><span class="o">(</span><span class="n">tourist</span><span class="o">).</span><span class="na">getProxyInstance</span><span class="o">();</span>
+    <span class="c1">// 呼叫pay方法，但實際上執行Tourist的pay()方法</span>
+    <span class="n">agency</span><span class="o">.</span><span class="na">pay</span><span class="o">();</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>真正類別要做的事
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>旅客提供信用卡 卡號付錢
 </code></pre></div></div>
 
 </section>
@@ -3258,7 +3266,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-13 13:44:28 +0800"
+        "time": "2025-06-16 11:58:14 +0800"
     },
     "basePath": "",
     "book": {
