@@ -1898,6 +1898,16 @@
     "keywords": "",
     "url": "/pages/java/uml_sequence/",
     "body": "英文是Sequence Diagram，中文有不同翻譯，如:順序圖、序列圖、循序圖、時序圖。 主要是用來表達物件與物件之間交互動作，與物件的生命周期。 物件 物件變數名 冒號: 類型 flowchart LR id1[\"物件變數名:類別\"] 1 Object obj1; flowchart LR id1[\"obj1:Object\"] 生命線 表達物件的Life Cycle destory 代表結束。 有些圖是省略不畫。 呼叫方法 注意！呼叫箭頭指向的物件的方法。 都直接寫方法()，前面不會加上變數名。 1 2 Object obj1; obj1.toString(); 方法執行的時段 有些圖是省略不畫。 呼叫其它物件與傳回值 在start()方法中，呼叫其它類別UserInfo，物件變數名是user，呼叫getName()方法。 傳回的線為虛線。 注意！name是傳回的值，不是呼叫方法()，後面有圓括號()的才是方法()。 由左往右開始 執行順序是由左往右。 下圖中的順序如下 呼叫buy.start() 呼叫user.getName() 取得name 呼叫bankCard.cardNumber() 取得信用卡號 呼叫bankCard.pay() 傳回成功或失敗的代碼，rtnCode。 同一個類別，不同物件 下圖有二個類別，分別為Transfer轉帳與Account帳戶。 下圖中有三個物件，分別為transfer與account1與account2。 下圖中執行的順序如下 呼叫transfer.轉帳() 呼叫account1.檢查餘額() 取得餘額 呼叫account1.提款() 傳回成功或失敗代碼，rtnCode 呼叫account2.轉帳() 傳回成功或失敗代碼，rtnCode 建立匿名物件 匿名物件就是沒有名字的物件。 匿名物件表示方式冒號: 類別。 建立的箭頭為虛線，箭頭非實心，指向匿名物件的方框，箭頭線上的文字&lt;&lt;create&gt;&gt;。 方法可以有參數 語法 方法(參數1, 參數2) 自己呼叫自己 loop 十分簡單的順序圖"
+  },"/pages/java/Inet_address/": {
+    "title": "InetAddress取得ip",
+    "keywords": "",
+    "url": "/pages/java/Inet_address/",
+    "body": "取得本機ip 1 2 3 InetAddress inetAddress = InetAddress.getLocalHost(); System.out.println(\"ip = \" + inetAddress.getHostAddress()); System.out.println(\"電腦名 = \" + inetAddress.getHostName()); ip = 127.0.0.1 電腦名 = xxxx.local"
+  },"/pages/java/socket/": {
+    "title": "Socket",
+    "keywords": "",
+    "url": "/pages/java/socket/",
+    "body": "Socket Socket是用戶端(Client)與伺服器Server之間的連線。 二台主機之間的連線透過IO串流傳輸。 Client傳送資料到Server 建立Server Socket 伺服器端操作: 設定埠port number。 accept()監聽有沒有用戶連上port。 用戶連上，取得socket。 socket.getInputStream()取得傳來的資料。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 public class Server { public static void main(String[] args) throws IOException { // 1.設定監聽的port number ServerSocket serverSocket = new ServerSocket(9999); // 2.accept會一直等待有人連上 // 3.有人連上會傳回socket物件 Socket socket = serverSocket.accept(); // 4.socket包含客戶端傳送的資料 InputStream is = socket.getInputStream(); // 讀取資料 byte[] buff = new byte[1024]; int len = 0; while((len = is.read(buff)) != -1) { System.out.println(new String(buff, 0, len)); } // 關閉串流 is.close(); } } 建立用戶端Socket 傳送資料步驟如下: 連接伺服器ip與埠port。 連接成功取得socket物件。 取得輸出串流socket.getOutputStream() 寫入資料至輸出串流。 shutdownOutput() 傳送資料給伺服器 關閉串流。 關閉socket。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 public class Client { public static void main(String[] args) throws IOException { // 1. 連接伺服器ip與埠port。 // 2. 連接成功取得socket物件。 Socket socket = new Socket(\"127.0.0.1\", 9999); // 3. 取得輸出串流socket.getOutputStream() OutputStream os = socket.getOutputStream(); // 4. 寫入資料至輸出串流。 os.write(\"Hello, socket\".getBytes()); // 5. shutdownOutput() 傳送資料給伺服器 socket.shutdownOutput(); // 6. 關閉串流。 os.close(); // 7. 關閉socket socket.close(); } } Hello, socket Server傳送資料到Client"
   },"/pages/note/mac/textedit/": {
     "title": "文字編輯器編碼",
     "keywords": "",
