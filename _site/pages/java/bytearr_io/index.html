@@ -1741,7 +1741,7 @@
     	<a href="/pages/java/bytearr_io/" data-nav-link> ByteArray串流</a>
         
             
-                <ul><li><a href="#bytearrayoutputstream" data-nav-link " >ByteArrayOutputStream</a><ul><li><a href="#建構子" data-nav-link " >建構子</a></li><li><a href="#tobytearray" data-nav-link " >toByteArray()</a></li><li><a href="#tostring-" data-nav-link " >toString ()</a></li><li><a href="#write" data-nav-link " >write</a></li><li><a href="#size" data-nav-link " >size()</a></li><li><a href="#程式碼" data-nav-link " >程式碼</a></li></ul></li><li><a href="#bytearrayinputstream" data-nav-link " >ByteArrayInputStream</a></li></ul>
+                <ul><li><a href="#bytearrayinputstream" data-nav-link " >ByteArrayInputStream</a></li><li><a href="#bytearrayoutputstream" data-nav-link " >ByteArrayOutputStream</a><ul><li><a href="#建構子" data-nav-link " >建構子</a></li><li><a href="#方法" data-nav-link " >方法</a></li><li><a href="#寫入" data-nav-link " >寫入</a></li></ul></li><li><a href="#bytearrayinputstream與bytearrayoutputstream" data-nav-link " >ByteArrayInputStream與ByteArrayOutputStream</a></li><li><a href="#inputstream轉成byte陣列工具" data-nav-link " >InputStream轉成byte陣列工具</a></li></ul>
 
             
         </li>
@@ -1755,6 +1755,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/buffer_io/" data-nav-link> Buffered串流</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/obj_stream/" data-nav-link> 序列化與反序列化</a>
         
             
@@ -1762,7 +1769,24 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/convert_io/" data-nav-link> InputStreamReader與OutputStreamWriter</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/sys_in_out/" data-nav-link> System.in System.out</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Socket </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/file/" data-nav-link> File</a>
         
             
         </li></ul></li>
@@ -2708,6 +2732,13 @@
     	<a href="/pages/note/mac/mac_time/" data-nav-link> mac時光機</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/note/mac/textedit/" data-nav-link> 文字編輯器編碼</a>
+        
+            
         </li></ul></li></ul></li></ul>
     </nav>
 </div>
@@ -2741,14 +2772,59 @@
   <li><a href="/pages/java/fileio/">檔案串流</a></li>
 </ul>
 
-<p>讀取與寫入的位置有二種，分別是檔案與記憶體緩衝區。</p>
+<p>串流分為二類，一種是檔案串流，一種是記憶體緩衝區串流。</p>
 
-<p>根據位置不同，串流分為二類，一種是檔案串流，一種是記憶體緩衝區串流。</p>
+<p>記憶體緩衝區串流，就是資料讀取與寫入都在記憶體緩衝區，記憶體緩衝區就是到byte[]陣列。</p>
 
-<p>所謂的緩衝區串流，就是把資料寫到陣列，至於是那種類型的陣列呢？答案是<code class="language-plaintext highlighter-rouge">byte[]</code></p>
+<h2 id="bytearrayinputstream">ByteArrayInputStream</h2>
+<p>從記憶體緩衝區讀取資料。</p>
+
+<p>建構子，一定要有byte[]參數</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">ByteArrayInputStream</span><span class="o">(</span><span class="kt">byte</span><span class="o">[]</span> <span class="n">buf</span><span class="o">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>讀取資料</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kt">int</span> <span class="nf">read</span> <span class="o">(</span><span class="kt">byte</span><span class="o">[]</span> <span class="n">b</span><span class="o">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<ul>
+  <li>參數是存放資料的byte變數</li>
+  <li>讀取完成或沒資料可讀會傳回-1</li>
+</ul>
+
+<p>讀取緩衝區中的資料，與讀取檔案</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre>  <span class="nc">ByteArrayInputStream</span> <span class="n">bis</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayInputStream</span><span class="o">(</span><span class="s">"測試測試"</span><span class="o">.</span><span class="na">getBytes</span><span class="o">());</span>
+  <span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
+  <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+  <span class="k">while</span><span class="o">((</span><span class="n">len</span> <span class="o">=</span> <span class="n">bis</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">buffer</span><span class="o">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">String</span> <span class="n">s</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">buffer</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">len</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+  <span class="o">}</span>
+  <span class="n">bis</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 <h2 id="bytearrayoutputstream">ByteArrayOutputStream</h2>
 <h3 id="建構子">建構子</h3>
+<p>建構子是沒有參數，寫入到記憶體緩衝區。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2756,8 +2832,9 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="tobytearray">toByteArray()</h3>
-<p>建立一個<code class="language-plaintext highlighter-rouge">byte[]</code>陣列，把緩衝區的資料複製進去。</p>
+<h3 id="方法">方法</h3>
+<h4 id="tobytearray">toByteArray()</h4>
+<p>將記憶體緩衝區的資料轉成byte陣列。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2773,8 +2850,8 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="tostring-">toString ()</h3>
-<p>將緩衝區的資料轉成字串，若沒寫編碼參數，用系統預設的編碼格式，取決於作業系統。</p>
+<h4 id="tostring-">toString ()</h4>
+<p>將位元組串流轉成字串，若沒寫編碼參數，用系統預設的編碼格式，取決於作業系統。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2786,8 +2863,8 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="write">write</h3>
-<p>寫入byte陣列，指定位置與數量。</p>
+<h4 id="write">write</h4>
+<p>寫入資料到記憶體緩衝區。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2817,8 +2894,8 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="size">size()</h3>
-<p>取得使用的記憶體緩衝區大小。</p>
+<h4 id="size">size()</h4>
+<p>取得串流大小。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2826,7 +2903,8 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="程式碼">程式碼</h3>
+<h3 id="寫入">寫入</h3>
+<p>寫入到記憶體緩衝區，並把緩衝區資料轉為byte陣列。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2861,10 +2939,10 @@
     <span class="c1">// 字串寫入，轉byte[]</span>
     <span class="n">baos</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="s">"哈囉哈囉"</span><span class="o">.</span><span class="na">getBytes</span><span class="o">());</span>
 
-    <span class="c1">// 讀取緩衝區中的資料</span>
+    <span class="c1">// 將記憶體緩衝區的資料轉成byte陣列</span>
     <span class="kt">byte</span><span class="o">[]</span> <span class="n">data</span> <span class="o">=</span> <span class="n">baos</span><span class="o">.</span><span class="na">toByteArray</span><span class="o">();</span>
-    <span class="nc">String</span> <span class="n">convertData</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">convertData</span><span class="o">);</span>
+    <span class="c1">// 將位元組串流轉成字串</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">baos</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
   <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
     <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
   <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
@@ -2881,29 +2959,8 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>測試測試哈囉哈囉
 </code></pre></div></div>
 
-<h2 id="bytearrayinputstream">ByteArrayInputStream</h2>
-<p>建構子，一定要有byte[]參數</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="nc">ByteArrayInputStream</span><span class="o">(</span><span class="kt">byte</span><span class="o">[]</span> <span class="n">buf</span><span class="o">)</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>讀取資料</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kt">int</span> <span class="nf">read</span> <span class="o">(</span><span class="kt">byte</span><span class="o">[]</span> <span class="n">b</span><span class="o">)</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<ul>
-  <li>參數是存放資料的變數</li>
-  <li>讀取完成或沒資料可讀會傳回-1</li>
-</ul>
-
-<p>讀取緩衝區中的資料，與讀取檔案</p>
+<h2 id="bytearrayinputstream與bytearrayoutputstream">ByteArrayInputStream與ByteArrayOutputStream</h2>
+<p>將讀取資料從記憶體緩衝區，寫入資料到記憶體緩衝區，二者結合。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2913,15 +2970,167 @@
 5
 6
 7
-</pre></td><td class="code"><pre>  <span class="n">bis</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayInputStream</span><span class="o">(</span><span class="n">baos</span><span class="o">.</span><span class="na">toByteArray</span><span class="o">());</span>
-  <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-  <span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
-  <span class="k">while</span> <span class="o">((</span><span class="n">len</span> <span class="o">=</span> <span class="n">bis</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">buffer</span><span class="o">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">buffer</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">len</span><span class="o">);</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s1</span><span class="o">);</span>
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test4</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="c1">// 讀取資料從記憶體緩衝區</span>
+    <span class="nc">ByteArrayInputStream</span> <span class="n">bis</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayInputStream</span><span class="o">(</span><span class="s">"測試測試"</span><span class="o">.</span><span class="na">getBytes</span><span class="o">());</span>
+    <span class="nc">ByteArrayOutputStream</span> <span class="n">bos</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayOutputStream</span><span class="o">();</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
+    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="k">while</span><span class="o">((</span><span class="n">len</span> <span class="o">=</span> <span class="n">bis</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">buffer</span><span class="o">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="c1">// 寫入資料到記憶體緩衝區</span>
+      <span class="n">bos</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">buffer</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">len</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="c1">// 將位元組串流轉成字串</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">bos</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+    <span class="c1">// 將記憶體緩衝區的資料轉成byte陣列</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">bosData</span> <span class="o">=</span> <span class="n">bos</span><span class="o">.</span><span class="na">toByteArray</span><span class="o">();</span>
+    <span class="n">bis</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="n">bos</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>測試測試
+</code></pre></div></div>
+
+<p>ByteArrayInputStream的建構子參數也可以是ByteArrayOutputStream</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test5</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">ByteArrayOutputStream</span> <span class="n">bos</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayOutputStream</span><span class="o">();</span>
+    <span class="n">bos</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="s">"哈囉，你好"</span><span class="o">.</span><span class="na">getBytes</span><span class="o">());</span>
+    <span class="n">bos</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="s">"測試"</span><span class="o">.</span><span class="na">getBytes</span><span class="o">());</span>
+    <span class="nc">ByteArrayInputStream</span> <span class="n">bis</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayInputStream</span><span class="o">(</span><span class="n">bos</span><span class="o">.</span><span class="na">toByteArray</span><span class="o">());</span>
+    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
+    <span class="k">while</span> <span class="o">((</span><span class="n">len</span> <span class="o">=</span> <span class="n">bis</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">buffer</span><span class="o">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="nc">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">buffer</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">len</span><span class="o">);</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s1</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>哈囉，你好測試
+</code></pre></div></div>
+
+<h2 id="inputstream轉成byte陣列工具">InputStream轉成byte陣列工具</h2>
+<p>可寫成工具，給人使用。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">byte</span><span class="o">[]</span> <span class="nf">streamToByteArray</span><span class="o">(</span><span class="nc">InputStream</span> <span class="n">is</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">ByteArrayOutputStream</span> <span class="n">bos</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayOutputStream</span><span class="o">();</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
+    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="k">while</span><span class="o">((</span><span class="n">len</span> <span class="o">=</span> <span class="n">is</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">buffer</span><span class="o">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">bos</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">buffer</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">len</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">byteArr</span> <span class="o">=</span> <span class="n">bos</span><span class="o">.</span><span class="na">toByteArray</span><span class="o">();</span>
+    <span class="n">bos</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="k">return</span> <span class="n">byteArr</span><span class="o">;</span>
   <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<p>使用方式，可以是文字檔案，也可以是圖片檔案。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test4</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">byte</span><span class="o">[]</span> <span class="nf">streamToByteArray</span><span class="o">(</span><span class="nc">InputStream</span> <span class="n">is</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">ByteArrayOutputStream</span> <span class="n">bos</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ByteArrayOutputStream</span><span class="o">();</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
+    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="k">while</span><span class="o">((</span><span class="n">len</span> <span class="o">=</span> <span class="n">is</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">buffer</span><span class="o">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">bos</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">buffer</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">len</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">byteArr</span> <span class="o">=</span> <span class="n">bos</span><span class="o">.</span><span class="na">toByteArray</span><span class="o">();</span>
+    <span class="n">bos</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="k">return</span> <span class="n">byteArr</span><span class="o">;</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">FileInputStream</span> <span class="n">fis</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileInputStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/pic.png"</span><span class="o">);</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">bytes</span> <span class="o">=</span> <span class="n">streamToByteArray</span><span class="o">(</span><span class="n">fis</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>文字檔</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">FileInputStream</span> <span class="n">fis</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileInputStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/print_out"</span><span class="o">);</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">bytes</span> <span class="o">=</span> <span class="n">streamToByteArray</span><span class="o">(</span><span class="n">fis</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">bytes</span><span class="o">));</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>測試測試2
+</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -3113,7 +3322,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-16 11:58:14 +0800"
+        "time": "2025-06-17 12:32:20 +0800"
     },
     "basePath": "",
     "book": {

@@ -1751,6 +1751,16 @@
         </li>
 	
 	
+	<li class="active" data-nav-item>
+    	<a href="/pages/java/buffer_io/" data-nav-link> Buffered串流</a>
+        
+            
+                <ul><li><a href="#buffered" data-nav-link " >Buffered</a></li><li><a href="#bufferedreader與bufferedwriter" data-nav-link " >BufferedReader與BufferedWriter</a><ul><li><a href="#建構子" data-nav-link " >建構子</a></li><li><a href="#readline" data-nav-link " >readLine()</a></li><li><a href="#write與newline" data-nav-link " >write()與newLine()</a></li></ul></li><li><a href="#bufferedinputstream與bufferedoutputstream" data-nav-link " >BufferedInputStream與BufferedOutputStream</a></li></ul>
+
+            
+        </li>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/java/obj_stream/" data-nav-link> 序列化與反序列化</a>
         
@@ -1759,7 +1769,24 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/convert_io/" data-nav-link> InputStreamReader與OutputStreamWriter</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/sys_in_out/" data-nav-link> System.in System.out</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Socket </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/file/" data-nav-link> File</a>
         
             
         </li></ul></li>
@@ -2705,6 +2732,13 @@
     	<a href="/pages/note/mac/mac_time/" data-nav-link> mac時光機</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/note/mac/textedit/" data-nav-link> 文字編輯器編碼</a>
+        
+            
         </li></ul></li></ul></li></ul>
     </nav>
 </div>
@@ -2733,13 +2767,15 @@
                     <h2 id="buffered">Buffered</h2>
 <p>Buffered是指把讀取或寫入的資料，保存在記憶體緩衝區中。</p>
 
-<h2 id="bufferedreader">BufferedReader</h2>
+<h2 id="bufferedreader與bufferedwriter">BufferedReader與BufferedWriter</h2>
 <h3 id="建構子">建構子</h3>
 <p>參數只能接收Reader的子類別(處理字元的串流)。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
 </pre></td><td class="code"><pre><span class="nc">BufferedReader</span><span class="o">(</span><span class="nc">Reader</span> <span class="n">in</span><span class="o">)</span>
+<span class="nc">BufferedWriter</span><span class="o">(</span><span class="nc">Writer</span> <span class="n">out</span><span class="o">)</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -2934,7 +2970,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/java/decorator_io" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 裝飾串流">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/java/obj_stream" class="navigation navigation-next navigation-unique" aria-label="Next page: 序列化與反序列化">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -2950,11 +2996,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "裝飾串流",
+            "title": "InputStreamReader與OutputStreamWriter",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/java/decorator_io.md",
-            "ref": "_pages/java/decorator_io.md",
+            "path": "_pages/java/convert_io.md",
+            "ref": "_pages/java/convert_io.md",
             "articles": []
         },
         
@@ -3052,7 +3098,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-16 11:58:14 +0800"
+        "time": "2025-06-17 12:32:20 +0800"
     },
     "basePath": "",
     "book": {

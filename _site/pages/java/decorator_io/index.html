@@ -3,7 +3,7 @@
     <head>
 <meta charset="UTF-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>裝飾串流 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="Java," /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="Java, Decorating IO Streams" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -1755,6 +1755,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/buffer_io/" data-nav-link> Buffered串流</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/obj_stream/" data-nav-link> 序列化與反序列化</a>
         
             
@@ -1762,7 +1769,24 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/convert_io/" data-nav-link> InputStreamReader與OutputStreamWriter</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/sys_in_out/" data-nav-link> System.in System.out</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Socket </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/file/" data-nav-link> File</a>
         
             
         </li></ul></li>
@@ -2708,6 +2732,13 @@
     	<a href="/pages/note/mac/mac_time/" data-nav-link> mac時光機</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/note/mac/textedit/" data-nav-link> 文字編輯器編碼</a>
+        
+            
         </li></ul></li></ul></li></ul>
     </nav>
 </div>
@@ -2809,9 +2840,9 @@
 <p>要了解裝飾串流的原理，可以查看<a href="/pages/design_pattern/decorator_io/">IO裝飾者模式</a></p>
 
 <h2 id="關閉串流">關閉串流</h2>
-<p>直接關閉最外層的裝飾串流，程式會使用最內部的串流(檔案串流或記憶體緩衝區串流)，把串流關閉，內部的串流在源始碼的變數為in。</p>
+<p>直接關閉最外層的裝飾串流，程式會使用前面提到的8種內部串流(檔案串流或記憶體緩衝區串流)，把串流關閉，內部的串流在原始碼的變數為in。</p>
 
-<p>什麼是最外層的裝飾串流？以下裝飾串流分別為ObjectInputStream、BufferedInputStream，最外層的裝飾串流是ObjectInputStream。</p>
+<p>什麼是最外層的裝飾串流？以下裝飾串流分別為ObjectInputStream、BufferedInputStream，最外層的裝飾串流是ObjectInputStream，最內部串流是FileInputStream。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2838,7 +2869,9 @@
 14
 15
 16
+17
 </pre></td><td class="code"><pre>  <span class="nc">FileInputStream</span> <span class="n">fis</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+  <span class="c1">// 把位元組資料存在記憶體緩衝區</span>
   <span class="nc">BufferedInputStream</span> <span class="n">buff_in</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
   <span class="k">try</span> <span class="o">{</span>
     <span class="n">fis</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileInputStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/1.png"</span><span class="o">);</span>
@@ -2927,7 +2960,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/obj_stream" class="navigation navigation-next navigation-unique" aria-label="Next page: 序列化與反序列化">
+                        <a href="/pages/java/buffer_io" class="navigation navigation-next navigation-unique" aria-label="Next page: Buffered串流">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3047,7 +3080,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-16 11:58:14 +0800"
+        "time": "2025-06-17 12:32:20 +0800"
     },
     "basePath": "",
     "book": {

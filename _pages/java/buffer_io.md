@@ -6,11 +6,12 @@ keywords: Java,
 ## Buffered
 Buffered是指把讀取或寫入的資料，保存在記憶體緩衝區中。
 
-## BufferedReader
+## BufferedReader與BufferedWriter
 ### 建構子
 參數只能接收Reader的子類別(處理字元的串流)。
 {% highlight java linenos %}
 BufferedReader(Reader in)
+BufferedWriter(Writer out)
 {% endhighlight %}
 
 ### readLine()

@@ -1752,7 +1752,21 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/buffer_io/" data-nav-link> Buffered串流</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/obj_stream/" data-nav-link> 序列化與反序列化</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/convert_io/" data-nav-link> InputStreamReader與OutputStreamWriter</a>
         
             
         </li>
@@ -1762,8 +1776,18 @@
     	<a href="/pages/java/sys_in_out/" data-nav-link> System.in System.out</a>
         
             
-                <ul><li><a href="#systemin" data-nav-link " >System.in</a></li><li><a href="#scanner" data-nav-link " >Scanner</a></li><li><a href="#systemout" data-nav-link " >System.out</a></li></ul>
+                <ul><li><a href="#systemin" data-nav-link " >System.in</a></li><li><a href="#scanner" data-nav-link " >Scanner</a></li><li><a href="#systemout" data-nav-link " >System.out</a><ul><li><a href="#printstream的write" data-nav-link " >PrintStream的write()</a></li><li><a href="#設定printstream輸出文件位置" data-nav-link " >設定PrintStream輸出文件位置</a></li></ul></li><li><a href="#printwriter" data-nav-link " >PrintWriter</a><ul><li><a href="#建構子是systemout輸出到螢幕" data-nav-link " >建構子是System.out，輸出到螢幕。</a></li><li><a href="#建構子是filewriter輸出到檔案" data-nav-link " >建構子是FileWriter，輸出到檔案。</a></li></ul></li></ul>
 
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Socket </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/file/" data-nav-link> File</a>
+        
             
         </li></ul></li>
 	
@@ -2708,6 +2732,13 @@
     	<a href="/pages/note/mac/mac_time/" data-nav-link> mac時光機</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/note/mac/textedit/" data-nav-link> 文字編輯器編碼</a>
+        
+            
         </li></ul></li></ul></li></ul>
     </nav>
 </div>
@@ -2736,7 +2767,7 @@
                     <h2 id="systemin">System.in</h2>
 <p>主要是作為鍵盤輸入串流。</p>
 
-<p>透過getClass()，可以知道System.in的<a href="/pages/java/polymorphism/">執行類型</a>是BufferedInputStream。</p>
+<p>透過getClass()，可以知道System.in的<a href="/pages/java/polymorphism/">執行類型</a>是BufferedInputStream，Buffered的意思是讀取的位址是在記憶體緩衝區。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2799,6 +2830,129 @@
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class java.io.PrintStream
 </code></pre></div></div>
+
+<h3 id="printstream的write">PrintStream的write()</h3>
+<p>PrintStream繼承OutputStream，自然會有父類別的write方法。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test2</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">PrintStream</span> <span class="n">out</span> <span class="o">=</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">;</span>
+    <span class="n">out</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="s">"測試"</span><span class="o">.</span><span class="na">getBytes</span><span class="o">());</span>
+    <span class="n">out</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="設定printstream輸出文件位置">設定PrintStream輸出文件位置</h3>
+<p>預設是顯示在顯示器，可以透過建構子，設定輸出的文件位置。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PrintStream(String fileName)
+</code></pre></div></div>
+
+<p>使用System.setOut</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">System</span><span class="o">.</span><span class="na">setOut</span><span class="o">(</span><span class="k">new</span> <span class="nc">PrintStream</span><span class="o">(</span><span class="s">"文件路徑"</span><span class="o">));</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>範例1</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test2</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="c1">// 使用System.setOut</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">setOut</span><span class="o">(</span><span class="k">new</span> <span class="nc">PrintStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/print_out"</span><span class="o">));</span>
+    <span class="nc">PrintStream</span> <span class="n">out</span> <span class="o">=</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">;</span>
+    <span class="n">out</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="s">"測試"</span><span class="o">.</span><span class="na">getBytes</span><span class="o">());</span>
+    <span class="n">out</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>範例2</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test2</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">setOut</span><span class="o">(</span><span class="k">new</span> <span class="nc">PrintStream</span><span class="o">(</span><span class="s">"/Users/cici/testc/print_out"</span><span class="o">));</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"哈囉哈囉"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="printwriter">PrintWriter</h2>
+
+<h3 id="建構子是systemout輸出到螢幕">建構子是System.out，輸出到螢幕。</h3>
+<p>注意!使用時一定要close()，因為close()方法是寫入資料，如果沒呼叫close()，螢幕就不會顯示任何東西。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test3</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">PrintWriter</span> <span class="n">writer</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">PrintWriter</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">);</span>
+    <span class="n">writer</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"測試測試2"</span><span class="o">);</span>
+    <span class="c1">// 一定要close</span>
+    <span class="n">writer</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="建構子是filewriter輸出到檔案">建構子是FileWriter，輸出到檔案。</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test3</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">PrintWriter</span> <span class="n">writer</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">PrintWriter</span><span class="o">(</span><span class="k">new</span> <span class="nc">FileWriter</span><span class="o">(</span><span class="s">"/Users/cici/testc/print_out"</span><span class="o">));</span>
+    <span class="n">writer</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"測試測試2"</span><span class="o">);</span>
+    <span class="c1">// 一定要close</span>
+    <span class="n">writer</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 </section>
             </div><div class="search-results">
@@ -2863,14 +3017,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/java/obj_stream" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 序列化與反序列化">
+                        <a href="/pages/java/convert_io" class="navigation navigation-prev navigation-unique" aria-label="Previous page: InputStreamReader與OutputStreamWriter">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/java/uml" class="navigation navigation-next navigation-unique" aria-label="Next page: UML類別圖">
+                        <a href="/pages/java/file" class="navigation navigation-next navigation-unique" aria-label="Next page: File">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -2990,7 +3144,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-16 11:58:14 +0800"
+        "time": "2025-06-17 12:32:20 +0800"
     },
     "basePath": "",
     "book": {
