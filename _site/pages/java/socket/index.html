@@ -1793,8 +1793,29 @@
     	<a href="/pages/java/socket/" data-nav-link> Socket</a>
         
             
-                <ul><li><a href="#socket" data-nav-link " >Socket</a></li><li><a href="#client傳送資料到server" data-nav-link " >Client傳送資料到Server</a><ul><li><a href="#建立server-socket" data-nav-link " >建立Server Socket</a></li><li><a href="#建立用戶端socket" data-nav-link " >建立用戶端Socket</a></li></ul></li><li><a href="#server傳送資料到client" data-nav-link " >Server傳送資料到Client</a><ul><li><a href="#server" data-nav-link " >Server</a></li><li><a href="#client" data-nav-link " >Client</a></li></ul></li></ul>
+                <ul><li><a href="#socket" data-nav-link " >Socket</a></li><li><a href="#重要的方法介紹" data-nav-link " >重要的方法介紹</a><ul><li><a href="#accept" data-nav-link " >accept()</a></li><li><a href="#shutdownoutput" data-nav-link " >shutdownOutput()</a></li></ul></li><li><a href="#client傳送資料到server" data-nav-link " >Client傳送資料到Server</a><ul><li><a href="#建立server-socket" data-nav-link " >建立Server Socket</a></li><li><a href="#建立用戶端socket" data-nav-link " >建立用戶端Socket</a></li></ul></li><li><a href="#執行程式" data-nav-link " >執行程式</a></li><li><a href="#server傳送資料到client" data-nav-link " >Server傳送資料到Client</a><ul><li><a href="#server" data-nav-link " >Server</a></li><li><a href="#client" data-nav-link " >Client</a></li></ul></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/socket_file/" data-nav-link> Socket傳送檔案</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/socket_writer/" data-nav-link> Socket與Writer</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/udp/" data-nav-link> UDP</a>
+        
             
         </li></ul></li>
 	
@@ -2771,10 +2792,28 @@
                         <h1 id="/pages/java/socket">Socket</h1>
                     
 
-                    <h2 id="socket">Socket</h2>
-<p>Socket是用戶端(Client)與伺服器Server之間的連線。</p>
+                    <p>Prerequisites:</p>
 
-<p>二台主機之間的連線透過IO串流傳輸。</p>
+<ul>
+  <li><a href="/pages/java/io/">串流基礎</a></li>
+  <li><a href="/pages/java/fileio/">檔案串流</a></li>
+</ul>
+
+<h2 id="socket">Socket</h2>
+<p>Socket是用戶端(Client)與伺服器(Server)之間的連線。</p>
+
+<p>用戶端(Client)與伺服器之間的連線透過IO串流傳輸。</p>
+
+<pre><code class="language-mermaid">flowchart LR
+    Client --&gt; IO串流 --&gt; Server
+</code></pre>
+
+<h2 id="重要的方法介紹">重要的方法介紹</h2>
+<h3 id="accept">accept()</h3>
+<p>accept()方法，伺服器會一直監聽有沒有用戶連上port，程序會卡(Block)在這裡，除非有人連上Server。</p>
+
+<h3 id="shutdownoutput">shutdownOutput()</h3>
+<p>資料傳輸完成，通知Server接收資料。</p>
 
 <h2 id="client傳送資料到server">Client傳送資料到Server</h2>
 <h3 id="建立server-socket">建立Server Socket</h3>
@@ -2886,6 +2925,12 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello, socket
 </code></pre></div></div>
 
+<h2 id="執行程式">執行程式</h2>
+<ol>
+  <li>先執行Server</li>
+  <li>再執行Client</li>
+</ol>
+
 <h2 id="server傳送資料到client">Server傳送資料到Client</h2>
 <h3 id="server">Server</h3>
 
@@ -2985,6 +3030,7 @@
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>收到資料
 </code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3055,7 +3101,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/uml" class="navigation navigation-next navigation-unique" aria-label="Next page: UML類別圖">
+                        <a href="/pages/java/socket_file" class="navigation navigation-next navigation-unique" aria-label="Next page: Socket傳送檔案">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3175,7 +3221,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-18 08:33:16 +0800"
+        "time": "2025-06-18 12:44:37 +0800"
     },
     "basePath": "",
     "book": {
