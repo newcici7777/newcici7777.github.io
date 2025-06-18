@@ -17,7 +17,7 @@ Prerequisites:
 
 ```mermaid
 flowchart LR
-    File --> ByteArray --> OutputStream --> 傳輸完成
+    File -- 轉成 --> ByteArray -- 寫入 --> OutputStream
 ```
 
 ### InputStream轉成ByteArray
@@ -67,7 +67,7 @@ public class ClientFile {
 
 ```mermaid
 flowchart LR
-    InputStream --> ByteArray --> File
+    InputStream -- 轉成 --> ByteArray -- 寫入 --> File
 ```
 {% highlight java linenos %}
 public class ServerFile {

@@ -19,10 +19,14 @@ Socket存取與寫入的位置都是在記憶體緩衝區，而且是位元組�
 
 ```mermaid
 flowchart LR
-    位元組串流 --> 轉換串流 --> 字元串流
+    位元組串流 -- 轉 --> 轉換串流 -- 轉 --> 字元串流
 ```
 
 因為Socket存取與寫入的位置都在記憶體，所以需要使用Buffered字元串流(BufferedWriter,BufferedReader)。
+
+## 重要的方法介紹
+### flush()
+字元串流要使用flush()方法，把記憶體緩衝區的資料送到socket.OutputStream。
 
 ## Client傳送文字
 傳送步驟如下:

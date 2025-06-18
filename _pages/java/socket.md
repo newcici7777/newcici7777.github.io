@@ -15,7 +15,7 @@ Socket是用戶端(Client)與伺服器(Server)之間的連線。
 
 ```mermaid
 flowchart LR
-    Client --> IO串流 --> Server
+    Client -- IO串流 --- Server
 ```
 
 ## 重要的方法介紹

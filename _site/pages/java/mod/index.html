@@ -3,7 +3,7 @@
     <head>
 <meta charset="UTF-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>餘數 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="Java, mod" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="Java, C++, mod" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -1440,6 +1440,26 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 運算 </a><ul>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/java/mod/" data-nav-link> 餘數</a>
+        
+            
+                
+
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/assign_cast/" data-nav-link> 運算轉型</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 工具類別 </a><ul>
 	
 	
@@ -1783,7 +1803,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/inet_address/" data-nav-link> InetAddress取得ip</a>
+    	<a href="/pages/java/inetaddress/" data-nav-link> InetAddress取得ip</a>
         
             
         </li>
@@ -2803,7 +2823,7 @@
 5
 6
 7
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UdpRecv</span> <span class="o">{</span>
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(-</span><span class="mi">38</span> <span class="o">%</span> <span class="o">-</span><span class="mi">6</span><span class="o">);</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(-</span><span class="mi">38</span> <span class="o">%</span> <span class="mi">6</span><span class="o">);</span>
@@ -2831,17 +2851,9 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a % b    = a - (a / b) * b
 -38 % -6 = -38 - (-38 / -6) * -6
 </code></pre></div></div>
+<p>答案是-2</p>
 
-<p>負號除法，是分成正負號，與正數相除。</p>
-
-<p>-38 / -6 先當作2個正數相除 38 / 6 = 6。</p>
-
-<p>接下來處理正負號，這邊有二個負號，所以是負負得正，答案是6。</p>
-
-<p>把6代入公式中。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-38 - (6 * -6) = -38 - (-36) = -38 + 36 = -2
-</code></pre></div></div>
+<p>參考資料<a href="/pages/math/neg_div/">負數乘除</a></p>
 
 </section>
             </div><div class="search-results">
@@ -2905,7 +2917,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/java/annotation" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Annotation">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/java/assign_cast" class="navigation navigation-next navigation-unique" aria-label="Next page: 運算轉型">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -3023,7 +3045,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-18 12:44:37 +0800"
+        "time": "2025-06-18 15:16:26 +0800"
     },
     "basePath": "",
     "book": {

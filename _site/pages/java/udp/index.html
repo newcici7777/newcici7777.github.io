@@ -1440,6 +1440,23 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 運算 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/mod/" data-nav-link> 餘數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/assign_cast/" data-nav-link> 運算轉型</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 工具類別 </a><ul>
 	
 	
@@ -1783,7 +1800,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/inet_address/" data-nav-link> InetAddress取得ip</a>
+    	<a href="/pages/java/inetaddress/" data-nav-link> InetAddress取得ip</a>
         
             
         </li>
@@ -1814,7 +1831,7 @@
     	<a href="/pages/java/udp/" data-nav-link> UDP</a>
         
             
-                
+                <ul><li><a href="#介紹" data-nav-link " >介紹</a></li><li><a href="#port-number" data-nav-link " >Port number</a></li><li><a href="#建立datagrampacket封包" data-nav-link " >建立DatagramPacket封包</a><ul><li><a href="#傳送方" data-nav-link " >傳送方</a></li><li><a href="#接收方" data-nav-link " >接收方</a></li></ul></li><li><a href="#傳送封包send" data-nav-link " >傳送封包send</a></li><li><a href="#接收封包receive" data-nav-link " >接收封包receive</a><ul><li><a href="#getlength" data-nav-link " >getLength()</a></li><li><a href="#getdata" data-nav-link " >getData()</a></li></ul></li><li><a href="#執行" data-nav-link " >執行</a></li><li><a href="#雙向溝通" data-nav-link " >雙向溝通</a></li></ul>
 
             
         </li></ul></li>
@@ -2792,7 +2809,310 @@
                         <h1 id="/pages/java/udp">UDP</h1>
                     
 
-                    
+                    <h2 id="介紹">介紹</h2>
+<p>Java的UDP不可靠傳輸協議是使用DatagramSocket與DatagramPacket完成。</p>
+
+<p>DatagramPacket是封包，在二個DatagramSocket間傳輸。</p>
+
+<p>在DatagramSocket下，沒有一台主機是Server或Client，也沒有accept監聽，只有主機跟主機之間的傳輸，每一個主機都是DatagramSocket，為了簡單的稱呼，傳送資料的稱為傳送方(Sender)，接收資料的稱為接收方(Receiver)。</p>
+
+<pre><code class="language-mermaid">flowchart LR
+    Sender -- DatagramPacket --- Receiver
+</code></pre>
+
+<h2 id="port-number">Port number</h2>
+<p>傳送方與接收方都要設定埠port number，若傳送方與接收方都在本機，port number要不同。</p>
+
+<p>傳送方</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UdpSend</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="c1">// 設定埠port number</span>
+    <span class="nc">DatagramSocket</span> <span class="n">socket</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DatagramSocket</span><span class="o">(</span><span class="mi">9998</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>接收方</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UdpRecv</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="c1">// 設定埠port number</span>
+    <span class="nc">DatagramSocket</span> <span class="n">socket</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DatagramSocket</span><span class="o">(</span><span class="mi">9999</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="建立datagrampacket封包">建立DatagramPacket封包</h2>
+<h3 id="傳送方">傳送方</h3>
+<p>建立封包，裡面是傳輸的資料、資料大小、接收方的ip、接收方的port。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UdpSend</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">DatagramSocket</span> <span class="n">socket</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DatagramSocket</span><span class="o">(</span><span class="mi">9998</span><span class="o">);</span>
+    <span class="c1">// 傳輸的資料</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">bytes</span> <span class="o">=</span> <span class="s">"哈囉哈囉"</span><span class="o">.</span><span class="na">getBytes</span><span class="o">();</span>
+    <span class="c1">// 建立封包</span>
+    <span class="c1">// 參數為傳輸的資料、資料大小、接收方的ip、接收方的port</span>
+    <span class="nc">DatagramPacket</span> <span class="n">packet</span> <span class="o">=</span>
+        <span class="k">new</span> <span class="nf">DatagramPacket</span><span class="o">(</span><span class="n">bytes</span><span class="o">,</span> <span class="n">bytes</span><span class="o">.</span><span class="na">length</span><span class="o">,</span> <span class="nc">InetAddress</span><span class="o">.</span><span class="na">getByName</span><span class="o">(</span><span class="s">"127.0.0.1"</span><span class="o">),</span> <span class="mi">9999</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="接收方">接收方</h3>
+<p>建立封包，裡面是記憶體暫存區Byte Array、Byte Array長度。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UdpRecv</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">DatagramSocket</span> <span class="n">socket</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DatagramSocket</span><span class="o">(</span><span class="mi">9999</span><span class="o">);</span>
+    <span class="c1">// 建立封包，大小設為1024</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buff</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
+    <span class="c1">// 建立接收封包</span>
+    <span class="nc">DatagramPacket</span> <span class="n">packet</span> <span class="o">=</span>
+        <span class="k">new</span> <span class="nf">DatagramPacket</span><span class="o">(</span><span class="n">buff</span><span class="o">,</span> <span class="n">buff</span><span class="o">.</span><span class="na">length</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="傳送封包send">傳送封包send</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UdpSend</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">DatagramSocket</span> <span class="n">socket</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DatagramSocket</span><span class="o">(</span><span class="mi">9998</span><span class="o">);</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">bytes</span> <span class="o">=</span> <span class="s">"哈囉哈囉"</span><span class="o">.</span><span class="na">getBytes</span><span class="o">();</span>
+    <span class="nc">DatagramPacket</span> <span class="n">packet</span> <span class="o">=</span>
+        <span class="k">new</span> <span class="nf">DatagramPacket</span><span class="o">(</span><span class="n">bytes</span><span class="o">,</span> <span class="n">bytes</span><span class="o">.</span><span class="na">length</span><span class="o">,</span> <span class="nc">InetAddress</span><span class="o">.</span><span class="na">getByName</span><span class="o">(</span><span class="s">"127.0.0.1"</span><span class="o">),</span> <span class="mi">9999</span><span class="o">);</span>
+    <span class="c1">// 傳送封包</span>
+    <span class="n">socket</span><span class="o">.</span><span class="na">send</span><span class="o">(</span><span class="n">packet</span><span class="o">);</span>
+    <span class="n">socket</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="接收封包receive">接收封包receive</h2>
+<p>receive()方法是沒有資料會等待，程序停留在那一行，也就是阻斷(Block)。</p>
+
+<p>收到資料才會往下面的程式碼執行。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UdpRecv</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">DatagramSocket</span> <span class="n">socket</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DatagramSocket</span><span class="o">(</span><span class="mi">9999</span><span class="o">);</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buff</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
+    <span class="nc">DatagramPacket</span> <span class="n">packet</span> <span class="o">=</span>
+        <span class="k">new</span> <span class="nf">DatagramPacket</span><span class="o">(</span><span class="n">buff</span><span class="o">,</span> <span class="n">buff</span><span class="o">.</span><span class="na">length</span><span class="o">);</span>
+    <span class="c1">// 接收封包</span>
+    <span class="c1">// 如果沒有資料傳來就會卡住(Block)</span>
+    <span class="n">socket</span><span class="o">.</span><span class="na">receive</span><span class="o">(</span><span class="n">packet</span><span class="o">);</span>
+    <span class="c1">// 有資料才會往下走</span>
+
+    <span class="c1">// 取得傳來資料的大小</span>
+    <span class="kt">int</span> <span class="n">realLen</span> <span class="o">=</span> <span class="n">packet</span><span class="o">.</span><span class="na">getLength</span><span class="o">();</span>
+    <span class="c1">// 取得資料</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">data</span> <span class="o">=</span> <span class="n">packet</span><span class="o">.</span><span class="na">getData</span><span class="o">();</span>
+    <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">data</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">realLen</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+    <span class="n">socket</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="getlength">getLength()</h3>
+<p>取得傳來資料的大小。</p>
+
+<h3 id="getdata">getData()</h3>
+<p>取得傳來的資料。</p>
+
+<h2 id="執行">執行</h2>
+<ol>
+  <li>先執行Recv</li>
+  <li>再執行Send</li>
+</ol>
+
+<h2 id="雙向溝通">雙向溝通</h2>
+<p>雙向溝通指的是，接收方收到資料後，會傳送「已收到」給傳送方。</p>
+
+<p>傳送方發送資料後，接收另一方送來的「已收到」，送印出。</p>
+
+<p>Send傳送方</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UdpSend</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">DatagramSocket</span> <span class="n">socket</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DatagramSocket</span><span class="o">(</span><span class="mi">9998</span><span class="o">);</span>
+    <span class="c1">// 送出</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">bytes</span> <span class="o">=</span> <span class="s">"哈囉哈囉"</span><span class="o">.</span><span class="na">getBytes</span><span class="o">();</span>
+    <span class="nc">DatagramPacket</span> <span class="n">packet</span> <span class="o">=</span>
+        <span class="k">new</span> <span class="nf">DatagramPacket</span><span class="o">(</span><span class="n">bytes</span><span class="o">,</span> <span class="n">bytes</span><span class="o">.</span><span class="na">length</span><span class="o">,</span> <span class="nc">InetAddress</span><span class="o">.</span><span class="na">getByName</span><span class="o">(</span><span class="s">"127.0.0.1"</span><span class="o">),</span> <span class="mi">9999</span><span class="o">);</span>
+    <span class="n">socket</span><span class="o">.</span><span class="na">send</span><span class="o">(</span><span class="n">packet</span><span class="o">);</span>
+
+    <span class="c1">// 接收</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buff</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
+    <span class="n">packet</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DatagramPacket</span><span class="o">(</span><span class="n">buff</span><span class="o">,</span> <span class="n">buff</span><span class="o">.</span><span class="na">length</span><span class="o">);</span>
+    <span class="c1">// 如果沒有資料傳來就會卡住(Block)</span>
+    <span class="n">socket</span><span class="o">.</span><span class="na">receive</span><span class="o">(</span><span class="n">packet</span><span class="o">);</span>
+    <span class="c1">// 有資料才會往下走</span>
+    <span class="kt">int</span> <span class="n">realLen</span> <span class="o">=</span> <span class="n">packet</span><span class="o">.</span><span class="na">getLength</span><span class="o">();</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">data</span> <span class="o">=</span> <span class="n">packet</span><span class="o">.</span><span class="na">getData</span><span class="o">();</span>
+    <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">data</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">realLen</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+    <span class="n">socket</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>已收到資料
+</code></pre></div></div>
+
+<p>Recv接收方</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UdpRecv</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">DatagramSocket</span> <span class="n">socket</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DatagramSocket</span><span class="o">(</span><span class="mi">9999</span><span class="o">);</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buff</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
+    <span class="nc">DatagramPacket</span> <span class="n">packet</span> <span class="o">=</span>
+        <span class="k">new</span> <span class="nf">DatagramPacket</span><span class="o">(</span><span class="n">buff</span><span class="o">,</span> <span class="n">buff</span><span class="o">.</span><span class="na">length</span><span class="o">);</span>
+    <span class="c1">// 如果沒有資料傳來就會卡住(Block)</span>
+    <span class="n">socket</span><span class="o">.</span><span class="na">receive</span><span class="o">(</span><span class="n">packet</span><span class="o">);</span>
+    <span class="c1">// 有資料才會往下走</span>
+    <span class="kt">int</span> <span class="n">realLen</span> <span class="o">=</span> <span class="n">packet</span><span class="o">.</span><span class="na">getLength</span><span class="o">();</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">data</span> <span class="o">=</span> <span class="n">packet</span><span class="o">.</span><span class="na">getData</span><span class="o">();</span>
+    <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">data</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">realLen</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+
+    <span class="c1">// 傳送資料</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="s">"已收到資料"</span><span class="o">.</span><span class="na">getBytes</span><span class="o">();</span>
+    <span class="n">packet</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DatagramPacket</span><span class="o">(</span><span class="n">data</span><span class="o">,</span> <span class="n">data</span><span class="o">.</span><span class="na">length</span><span class="o">,</span> <span class="nc">InetAddress</span><span class="o">.</span><span class="na">getByName</span><span class="o">(</span><span class="s">"127.0.0.1"</span><span class="o">),</span> <span class="mi">9998</span><span class="o">);</span>
+    <span class="n">socket</span><span class="o">.</span><span class="na">send</span><span class="o">(</span><span class="n">packet</span><span class="o">);</span>
+    <span class="n">socket</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>哈囉哈囉
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2879,6 +3199,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "負數乘除",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/math/neg_div.md",
+            "ref": "_pages/math/neg_div.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -2974,7 +3303,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-18 12:44:37 +0800"
+        "time": "2025-06-18 15:16:26 +0800"
     },
     "basePath": "",
     "book": {

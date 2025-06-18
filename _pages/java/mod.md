@@ -9,7 +9,7 @@ keywords: Java, C++, mod
 
 例子
 {% highlight java linenos %}
-public class UdpRecv {
+public class Test {
   public static void main(String[] args) {
     System.out.println(-38 % -6);
     System.out.println(-38 % 6);
@@ -36,3 +36,8 @@ a % b    = a - (a / b) * b
 -38 % -6 = -38 - (-38 / -6) * -6
 ```
 答案是-2
+
+參考資料[負數乘除][1]
+
+
+[1]: {% link _pages/math/neg_div.md %}
