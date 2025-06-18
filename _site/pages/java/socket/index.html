@@ -1783,8 +1783,18 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/" data-nav-link> </a>
+    	<a href="/pages/java/inet_address/" data-nav-link> InetAddress取得ip</a>
         
+            
+        </li>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/java/socket/" data-nav-link> Socket</a>
+        
+            
+                <ul><li><a href="#socket" data-nav-link " >Socket</a></li><li><a href="#client傳送資料到server" data-nav-link " >Client傳送資料到Server</a><ul><li><a href="#建立server-socket" data-nav-link " >建立Server Socket</a></li><li><a href="#建立用戶端socket" data-nav-link " >建立用戶端Socket</a></li></ul></li><li><a href="#server傳送資料到client" data-nav-link " >Server傳送資料到Client</a><ul><li><a href="#server" data-nav-link " >Server</a></li><li><a href="#client" data-nav-link " >Client</a></li></ul></li></ul>
+
             
         </li></ul></li>
 	
@@ -2773,7 +2783,8 @@
   <li>設定埠port number。</li>
   <li>accept()監聽有沒有用戶連上port。</li>
   <li>用戶連上，取得socket。</li>
-  <li>socket.getInputStream()取得傳來的資料。</li>
+  <li>socket.getInputStream()讀取傳來的資料。</li>
+  <li>關閉串流</li>
 </ol>
 
 <figure class="highlight">
@@ -2796,6 +2807,8 @@
 17
 18
 19
+20
+21
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Server</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
     <span class="c1">// 1.設定監聽的port number</span>
@@ -2813,6 +2826,8 @@
     <span class="o">}</span>
     <span class="c1">// 關閉串流</span>
     <span class="n">is</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="n">socket</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="n">serverSocket</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>    
   <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -2825,7 +2840,7 @@
   <li>連接成功取得socket物件。</li>
   <li>取得輸出串流socket.getOutputStream()</li>
   <li>寫入資料至輸出串流。</li>
-  <li>shutdownOutput() 傳送資料給伺服器</li>
+  <li>shutdownOutput() 通知Server接收資料。</li>
   <li>關閉串流。</li>
   <li>關閉socket。</li>
 </ol>
@@ -2857,7 +2872,7 @@
     <span class="nc">OutputStream</span> <span class="n">os</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="na">getOutputStream</span><span class="o">();</span>
     <span class="c1">// 4. 寫入資料至輸出串流。</span>
     <span class="n">os</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="s">"Hello, socket"</span><span class="o">.</span><span class="na">getBytes</span><span class="o">());</span>
-    <span class="c1">// 5. shutdownOutput() 傳送資料給伺服器</span>
+    <span class="c1">// 5. shutdownOutput() 通知Server接收資料</span>
     <span class="n">socket</span><span class="o">.</span><span class="na">shutdownOutput</span><span class="o">();</span>
     <span class="c1">// 6. 關閉串流。</span>
     <span class="n">os</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
@@ -2872,7 +2887,104 @@
 </code></pre></div></div>
 
 <h2 id="server傳送資料到client">Server傳送資料到Client</h2>
+<h3 id="server">Server</h3>
 
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Server</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">ServerSocket</span> <span class="n">serverSocket</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ServerSocket</span><span class="o">(</span><span class="mi">9999</span><span class="o">);</span>
+    <span class="nc">Socket</span> <span class="n">socket</span> <span class="o">=</span> <span class="n">serverSocket</span><span class="o">.</span><span class="na">accept</span><span class="o">();</span>
+    <span class="nc">InputStream</span> <span class="n">is</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">();</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buff</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
+    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="k">while</span><span class="o">((</span><span class="n">len</span> <span class="o">=</span> <span class="n">is</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">buff</span><span class="o">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">buff</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">len</span><span class="o">));</span>
+    <span class="o">}</span>
+
+    <span class="c1">// 傳送資料，取得OutputStream</span>
+    <span class="nc">OutputStream</span> <span class="n">os</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="na">getOutputStream</span><span class="o">();</span>
+    <span class="c1">// 寫入資料</span>
+    <span class="n">os</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="s">"收到資料"</span><span class="o">.</span><span class="na">getBytes</span><span class="o">());</span>
+    <span class="c1">// 通知Client接收資料</span>
+    <span class="n">socket</span><span class="o">.</span><span class="na">shutdownOutput</span><span class="o">();</span>
+    <span class="c1">// 關閉串流</span>
+    <span class="n">os</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="n">is</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="n">socket</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="n">serverSocket</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello, socket
+</code></pre></div></div>
+<h3 id="client">Client</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Client</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="nc">Socket</span> <span class="n">socket</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Socket</span><span class="o">(</span><span class="s">"127.0.0.1"</span><span class="o">,</span> <span class="mi">9999</span><span class="o">);</span>
+    <span class="nc">OutputStream</span> <span class="n">os</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="na">getOutputStream</span><span class="o">();</span>
+    <span class="n">os</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="s">"Hello, socket"</span><span class="o">.</span><span class="na">getBytes</span><span class="o">());</span>
+    <span class="n">socket</span><span class="o">.</span><span class="na">shutdownOutput</span><span class="o">();</span>
+    <span class="nc">InputStream</span> <span class="n">is</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">();</span>
+    <span class="c1">// 讀取資料</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buff</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
+    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="k">while</span><span class="o">((</span><span class="n">len</span> <span class="o">=</span> <span class="n">is</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">buff</span><span class="o">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">buff</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">len</span><span class="o">));</span>
+    <span class="o">}</span>
+    <span class="n">os</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="n">socket</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>收到資料
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2935,7 +3047,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/java/inet_address" class="navigation navigation-prev navigation-unique" aria-label="Previous page: InetAddress取得ip">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/java/uml" class="navigation navigation-next navigation-unique" aria-label="Next page: UML類別圖">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -3053,7 +3175,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-17 14:21:27 +0800"
+        "time": "2025-06-18 08:33:16 +0800"
     },
     "basePath": "",
     "book": {

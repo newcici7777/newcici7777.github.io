@@ -16,6 +16,8 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |binary file|機器語言指令|二進制檔案|
 |linking|鏈結|鏈結|
 |comment|註解|註釋|
+|buffer|緩衝區|緩沖區|
+|cache|暫存區|緩存|
 
 ## 資料型態相關
 

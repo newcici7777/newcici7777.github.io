@@ -61,6 +61,8 @@ java程式設計
 
 ## BufferedInputStream與BufferedOutputStream
 位元組資料都存在記憶體緩衝區，對緩衝區進行讀取與寫入。
+
+以下是檔案拷貝程式碼。
 {% highlight java linenos %}
   BufferedInputStream buff_in = null;
   BufferedOutputStream buff_out = null;

@@ -1782,8 +1782,18 @@
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Socket </a><ul>
 	
 	
+	<li class="active" data-nav-item>
+    	<a href="/pages/java/inet_address/" data-nav-link> InetAddress取得ip</a>
+        
+            
+                <ul><li><a href="#取得本機ip" data-nav-link " >取得本機ip</a></li><li><a href="#透過域名取得ip" data-nav-link " >透過域名取得ip</a><ul><li><a href="#dns" data-nav-link " >DNS</a></li></ul></li></ul>
+
+            
+        </li>
+	
+	
 	<li class="" data-nav-item>
-    	<a href="/" data-nav-link> </a>
+    	<a href="/pages/java/socket/" data-nav-link> Socket</a>
         
             
         </li></ul></li>
@@ -2758,7 +2768,7 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/java/Inet_address">InetAddress取得ip</h1>
+                        <h1 id="/pages/java/inet_address">InetAddress取得ip</h1>
                     
 
                     <h2 id="取得本機ip">取得本機ip</h2>
@@ -2767,8 +2777,12 @@
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
+4
+5
 </pre></td><td class="code"><pre>    <span class="nc">InetAddress</span> <span class="n">inetAddress</span> <span class="o">=</span> <span class="nc">InetAddress</span><span class="o">.</span><span class="na">getLocalHost</span><span class="o">();</span>
+    <span class="c1">// 取得IP</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"ip = "</span> <span class="o">+</span> <span class="n">inetAddress</span><span class="o">.</span><span class="na">getHostAddress</span><span class="o">());</span>
+    <span class="c1">// 取得主機名</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"電腦名 = "</span> <span class="o">+</span> <span class="n">inetAddress</span><span class="o">.</span><span class="na">getHostName</span><span class="o">());</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -2776,6 +2790,39 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ip = 127.0.0.1
 電腦名 = xxxx.local
 </code></pre></div></div>
+
+<h2 id="透過域名取得ip">透過域名取得ip</h2>
+<h3 id="dns">DNS</h3>
+<p>DNS(domain name server)，也稱為域名。</p>
+
+<p>IP太長記不住，網際網路的設計者發明了DNS，DNS可以把伺服器主機名字與IP對映起來，伺服器最少會有一個主機名字。</p>
+
+<p>即便伺服器的IP改變，但伺服器主機名不會改變，還是可以對映到改變後的IP。</p>
+
+<p>語法</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">InetAddress</span> <span class="n">addr</span> <span class="o">=</span> <span class="nc">InetAddress</span><span class="o">.</span><span class="na">getByName</span><span class="o">(</span><span class="s">"DNS域名"</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>    <span class="nc">InetAddress</span> <span class="n">addr</span> <span class="o">=</span> <span class="nc">InetAddress</span><span class="o">.</span><span class="na">getByName</span><span class="o">(</span><span class="s">"www.google.com"</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">addr</span><span class="o">);</span>
+    <span class="c1">// 取得ip</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">addr</span><span class="o">.</span><span class="na">getHostAddress</span><span class="o">());</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>www.google.com/142.250.196.196
+142.250.196.196
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2838,7 +2885,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/java/sys_in_out" class="navigation navigation-prev navigation-unique" aria-label="Previous page: System.in System.out">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/java/socket" class="navigation navigation-next navigation-unique" aria-label="Next page: Socket">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -2950,13 +3007,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/java/Inet_address.md",
+        "path": "_pages/java/inet_address.md",
         "mtime": "2025-06-17 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-17 14:21:27 +0800"
+        "time": "2025-06-18 08:33:16 +0800"
     },
     "basePath": "",
     "book": {

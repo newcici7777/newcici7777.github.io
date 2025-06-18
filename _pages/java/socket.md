@@ -3,10 +3,27 @@ title: Socket
 date: 2025-06-17
 keywords: Java, socket
 ---
-## Socket
-Socket是用戶端(Client)與伺服器Server之間的連線。
+Prerequisites:
 
-二台主機之間的連線透過IO串流傳輸。
+- [串流基礎][1]
+- [檔案串流][2]
+
+## Socket
+Socket是用戶端(Client)與伺服器(Server)之間的連線。
+
+用戶端(Client)與伺服器之間的連線透過IO串流傳輸。
+
+```mermaid
+flowchart LR
+    Client --> IO串流 --> Server
+```
+
+## 重要的方法介紹
+### accept()
+accept()方法，伺服器會一直監聽有沒有用戶連上port，程序會卡(Block)在這裡，除非有人連上Server。
+
+### shutdownOutput()
+資料傳輸完成，通知Server接收資料。
 
 ## Client傳送資料到Server
 ### 建立Server Socket
@@ -74,6 +91,10 @@ public class Client {
 Hello, socket
 ```
 
+## 執行程式
+1. 先執行Server
+2. 再執行Client
+
 ## Server傳送資料到Client
 ### Server
 {% highlight java linenos %}
@@ -128,3 +149,6 @@ public class Client {
 ```
 收到資料
 ```
+
+[1]: {% link _pages/java/io.md %}
+[2]: {% link _pages/java/fileio.md %}
