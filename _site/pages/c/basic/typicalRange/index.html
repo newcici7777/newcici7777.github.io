@@ -2819,7 +2819,6 @@
                     <p>記憶體的最小單位為bit，每一個bit可以存0或1，32位元電腦的cpu有32個bit(4byte)的存放區塊可以存放記憶體位址。</p>
 
 <h2 id="位元bit與位元組byte">位元bit與位元組byte</h2>
-
 <h3 id="bit正整數範圍">bit正整數範圍</h3>
 <p>以下列出1到8個bit可以存放的最大正整數值與正整數範圍。</p>
 
@@ -2965,7 +2964,13 @@
 </table>
 
 <h2 id="正負數">正負數</h2>
-<p>若資料型態是包含正負數，會將最大整數減半，一半分給正數，一半分給負數。最左邊的第1個bit就會變成正負號，0為正數，1為負數。負數的二進制顯示方式為把正數的二進制0和1互換，最後再加1。</p>
+<p>若資料型態是包含正負數，會將最大整數減半。</p>
+
+<p>在 8-bit 下，把\(2^8 = 256\)切一半，正數 0 - 127 共 128 個正數，負數 -1 至 -128 共 128個負數，128 正數 + 128 負數 = 256個數字。</p>
+
+<p>正數二進位表示方式，最左邊的第1個bit為0，代表正數。</p>
+
+<p>負數的表示方式，最左邊的第1個bit為1，代表負數，把正數的二進位0和1互換，再加上1。</p>
 
 <h3 id="正負數-1">正負數</h3>
 
@@ -2991,7 +2996,7 @@
     </tr>
     <tr>
       <td style="text-align: right">10000000 00000001</td>
-      <td style="text-align: left">-32768</td>
+      <td style="text-align: left">-32767</td>
     </tr>
     <tr>
       <td style="text-align: right">01111111 11111111 11111111</td>
@@ -2999,7 +3004,7 @@
     </tr>
     <tr>
       <td style="text-align: right">10000000 00000000 00000001</td>
-      <td style="text-align: left">-8388608</td>
+      <td style="text-align: left">-8388607</td>
     </tr>
     <tr>
       <td style="text-align: right">01111111 11111111 11111111 11111111</td>
@@ -3007,7 +3012,7 @@
     </tr>
     <tr>
       <td style="text-align: right">10000000 00000000 00000000 00000001</td>
-      <td style="text-align: left">-2147483648</td>
+      <td style="text-align: left">-2147483647</td>
     </tr>
   </tbody>
 </table>
@@ -3024,19 +3029,19 @@
   <tbody>
     <tr>
       <td style="text-align: center">1byte</td>
-      <td style="text-align: center">-128~127</td>
+      <td style="text-align: center">-128 至 -1 ~ 0 至 127</td>
     </tr>
     <tr>
       <td style="text-align: center">2byte</td>
-      <td style="text-align: center">-32768~32767</td>
+      <td style="text-align: center">-32768 至 -1 ~ 0 至 32767</td>
     </tr>
     <tr>
       <td style="text-align: center">3byte</td>
-      <td style="text-align: center">-8388608~8388607</td>
+      <td style="text-align: center">-8388608 至 -1 ~ 0 至 8388607</td>
     </tr>
     <tr>
       <td style="text-align: center">4byte</td>
-      <td style="text-align: center">-2147483648~2147483647</td>
+      <td style="text-align: center">-2147483648 至 -1 ~ 0 至 2147483647</td>
     </tr>
   </tbody>
 </table>
@@ -3261,7 +3266,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-19 10:05:01 +0800"
+        "time": "2025-06-19 16:21:03 +0800"
     },
     "basePath": "",
     "book": {
