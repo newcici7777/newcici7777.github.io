@@ -1454,8 +1454,15 @@
     	<a href="/pages/java/assign_cast/" data-nav-link> 運算轉型</a>
         
             
-                
+                <ul><li><a href="#int與double轉型" data-nav-link " >int與double轉型</a></li><li><a href="#範例1" data-nav-link " >範例1</a></li><li><a href="#範例2" data-nav-link " >範例2</a></li><li><a href="#範例3" data-nav-link " >範例3</a></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/plusplus/" data-nav-link> 變數++</a>
+        
             
         </li></ul></li>
 	
@@ -2809,7 +2816,9 @@
                         <h1 id="/pages/java/assign_cast">運算轉型</h1>
                     
 
-                    
+                    <h2 id="int與double轉型">int與double轉型</h2>
+<h2 id="範例1">範例1</h2>
+
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -2818,7 +2827,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>以上程式碼要分二部分，首先是int整數相除與無條件捨去。</p>
+<p>以上程式碼要分二部分，首先是int整數相除與無條件捨去小數點。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2828,7 +2837,7 @@
 
 <p>執行結果為2</p>
 
-<p>第二部分是把整數相除與無條件捨去的結果，強制轉型成double。</p>
+<p>第二部分是把整數2強制轉型成double。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2837,6 +2846,30 @@
 </figure>
 
 <p>執行結果為2.0</p>
+
+<h2 id="範例2">範例2</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="mf">10.0</span> <span class="o">/</span> <span class="mi">4</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>算式中有double(10.0)，就會把int(4)轉成double，變成double的算式。</p>
+
+<p>執行結果為2.5</p>
+
+<h2 id="範例3">範例3</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="mi">10</span> <span class="o">/</span> <span class="mi">4</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>二個都為整數，無條件捨去小數點。</p>
+
+<p>執行結果為2。</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2907,7 +2940,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/rand" class="navigation navigation-next navigation-unique" aria-label="Next page: 亂數">
+                        <a href="/pages/java/plusplus" class="navigation navigation-next navigation-unique" aria-label="Next page: 變數++">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3027,7 +3060,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-18 15:16:26 +0800"
+        "time": "2025-06-19 10:05:01 +0800"
     },
     "basePath": "",
     "book": {

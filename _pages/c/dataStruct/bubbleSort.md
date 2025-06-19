@@ -3,161 +3,268 @@ title: 氣泡排序
 date: 2024-09-26
 keywords: c++, bubbleSort 
 ---
+氣泡排序的重點:
 
-## 交換過程圖
+陣列中，二個值比較，大的放後面。
+
+## 第一輪
+比5次。
+1. 6,5先比較，6比5大，放後面。
+2. 6,4比較，6比4大，放後面。
+3. 6,3比較，6比3大，放後面。
+4. 6,2比較，6比2大，放後面。
+5. 6,1比較，6比1大，放後面。
 
 ![img]({{site.imgurl}}/dataStruct/bubbleSort1.jpg)  
 
-![img]({{site.imgurl}}/dataStruct/bubbleSort2.jpg)  
+交換的方式如下圖。
 
-![img]({{site.imgurl}}/dataStruct/bubbleSort3.jpg)  
+![img]({{site.imgurl}}/dataStruct/bubbleSort_temp.png) 
 
-![img]({{site.imgurl}}/dataStruct/bubbleSort4.jpg)  
+1. 準備一個暫存變數temp。
+2. 6放在temp。
+3. 5放在6的位置。
+4. temp放在5的位置。
 
-![img]({{site.imgurl}}/dataStruct/bubbleSort5.jpg)  
-
-
-## 比較大小
-
-陣列大小為6，以下為陣列的索引
-
-|0|1|2|3|4|5|
-
-### i與j變數解釋
-
-i變數為最大輪數與最大次數。
-
-以本例來說，最大輪數為5輪
-
-以本例來說，比較最大次數5次
-
-j變數為比較次數的計數器，arr[j]與arr[j+1]，二個相鄰的變數比較大小
-
-例
-
-j = 0，arr[0]與arr[1]比較大小
-
-j = 1，arr[1]與arr[2]比較大小
-
-j = 2，arr[2]與arr[3]比較大小
-
-j = 3，arr[3]與arr[4]比較大小
-
-j = 4，arr[4]與arr[5]比較大小
-
-
-### 第1輪 i =5
-
-i最大比較次數 i = 5
-
-j < i最大次數5
-
-j的索引0...4
-
-arr[j]與arr[j+1]，二個互相比較
-
-|索引|0|1|2|3|4|5|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|j=0|0|1|||||
-|j=1||1|2||||
-|j=2|||2|3|||
-|j=3||||3|4||
-|j=4|||||4|5|
-
-### 第2輪 i =4
-
-i最大比較次數 i = 4
-
-j < i最大次數4
-
-j的索引0...3
-
-arr[j]與arr[j+1]，二個互相比較
-
-|索引|0|1|2|3|4|5|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|j=0|0|1|||||
-|j=1||1|2||||
-|j=2|||2|3|||
-|j=3||||3|4||
-
-### 第3輪 i = 3
-
-i最大比較次數 i = 3
-
-j < i最大次數3
-
-j的索引0...2
-
-arr[j]與arr[j+1]，二個互相比較
-
-|索引|0|1|2|3|4|5|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|j=0|0|1|||||
-|j=1||1|2||||
-|j=2|||2|3|||
-
-### 第4輪 i = 2
-
-i最大比較次數 i = 2
-
-j < i最大次數2
-
-j的索引0...1
-
-arr[j]與arr[j+1]，二個互相比較
-
-|索引|0|1|2|3|4|5|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|j=0|0|1|||||
-|j=1||1|2||||
-
-### 第5輪 i = 1
-
-i最大比較次數 i = 1
-
-j < i最大次數1
-
-j的索引0
-
-arr[0]與arr[0+1]，二個互相比較
-
-|索引|0|1|2|3|4|5|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|j=0|0|1|||||
-
-
-
-
-
-## 完整程式碼
+把以上的描述用程式寫死。
+1. 比5次。
+2. 都跟後面1個比，後面比較小進入下個步驟。
+3. 跟後面的值交換。
 
 {% highlight c++ linenos %}
-using namespace std;
-void bubbleSort(int arr[], int len) {
-  for(int i = len-1; i > 0; i--) {
-    for(int j = 0; j < i; j++) {
-      if(arr[j] > arr[j+1]) {
-        int temp = arr[j];
-        arr[j] = arr[j+1];
-        arr[j+1] = temp;
-      }
+  int arr[] = {6, 5, 4, 3, 2, 1};
+  // 比5次
+  for (int j = 0; j < 5; j++) {
+    // 2. 都跟後面1個比，後面比較小進入下個步驟。
+    if (arr[j] > arr[j + 1]) {
+      // 3. 跟後面的值交換。
+      int temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
     }
   }
-}
+{% endhighlight %}
+
+陣列內容變化
+```
+[5, 4, 3, 2, 1, 6]
+```
+
+## 第2輪
+比4次。
+1. 5,4先比較，5比4大，放後面。
+2. 5,3比較，5比3大，放後面。
+3. 5,2比較，5比2大，放後面。
+4. 5,1比較，5比1大，放後面。
+
+黃色方塊代表前一輪已排序好的，不用再排序。
+
+![img]({{site.imgurl}}/dataStruct/bubbleSort2.jpg) 
+
+{% highlight c++ linenos %}
+  // 比4次
+  for (int j = 0; j < 4; j++) {
+    // 2. 都跟後面1個比。
+    if (arr[j] > arr[j + 1]) {
+      // 3. 比較大的，放後面
+      int temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+    }
+  }
+{% endhighlight %}
+
+陣列內容變化
+```
+[4, 3, 2, 1, 5, 6]
+```
+
+## 第3輪
+比3次。
+
+1. 4,3比較，4比3大，放後面。
+2. 4,2比較，4比2大，放後面。
+3. 4,1比較，4比1大，放後面。
+
+![img]({{site.imgurl}}/dataStruct/bubbleSort3.jpg) 
+
+比3次
+{% highlight c++ linenos %}
+  // 比3次
+  for (int j = 0; j < 3; j++) {
+    // 2. 都跟後面1個比。
+    if (arr[j] > arr[j + 1]) {
+      // 3. 比較大的，放後面
+      int temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+    }
+  }
+{% endhighlight %}
+
+陣列內容變化
+```
+[3, 2, 1, 4, 5, 6]
+```
+
+## 第4輪
+比2次。
+
+1. 3,2比較，3比2大，放後面。
+2. 3,1比較，3比1大，放後面。
+
+![img]({{site.imgurl}}/dataStruct/bubbleSort4.jpg) 
+
+{% highlight c++ linenos %}
+  // 比2次
+  for (int j = 0; j < 2; j++) {
+    // 2. 都跟後面1個比。
+    if (arr[j] > arr[j + 1]) {
+      // 3. 比較大的，放後面
+      int temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+    }
+  }
+{% endhighlight %}
+
+陣列內容變化
+```
+[2, 1, 3, 4, 5, 6]
+```
+
+## 第5輪
+比1次。
+
+1. 2,1比較，2比1大，放後面。
+
+![img]({{site.imgurl}}/dataStruct/bubbleSort5.jpg) 
+
+{% highlight c++ linenos %}
+  // 比1次
+  for (int j = 0; j < 1; j++) {
+    // 2. 都跟後面1個比。
+    if (arr[j] > arr[j + 1]) {
+      // 3. 比較大的，放後面
+      int temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+    }
+  }
+{% endhighlight %}
+
+陣列內容變化
+```
+[1, 2, 3, 4, 5, 6]
+```
+
+## 重覆的程式碼
+以下會出現5次內容一模一樣的程式碼，只有`j < ?`是有變化的，其它都沒有變化。
+{% highlight c++ linenos %}
 int main() {
-  int arr[] = {6,5,4,3,2,1};
-  int len = sizeof(arr)/sizeof(int);
-  bubbleSort(arr, len);
-  
-  for(int i = 0; i < len; i++) {
-    cout << arr[i] << ",";
+  int arr[] = {6, 5, 4, 3, 2, 1};
+
+  // 比5次
+  for (int j = 0; j < 5; j++) {
+    // 2. 都跟後面1個比。
+    if (arr[j] > arr[j + 1]) {
+      // 3. 比較大的，放後面
+      int temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+    }
+  }
+
+  // 比4次
+  for (int j = 0; j < 4; j++) {
+    // 2. 都跟後面1個比。
+    if (arr[j] > arr[j + 1]) {
+      // 3. 比較大的，放後面
+      int temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+    }
+  }
+
+  // 比3次
+  for (int j = 0; j < 3; j++) {
+    // 2. 都跟後面1個比。
+    if (arr[j] > arr[j + 1]) {
+      // 3. 比較大的，放後面
+      int temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+    }
+  }
+
+  // 比2次
+  for (int j = 0; j < 2; j++) {
+    // 2. 都跟後面1個比。
+    if (arr[j] > arr[j + 1]) {
+      // 3. 比較大的，放後面
+      int temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+    }
+  }
+
+  // 比1次
+  for (int j = 0; j < 1; j++) {
+    // 2. 都跟後面1個比。
+    if (arr[j] > arr[j + 1]) {
+      // 3. 比較大的，放後面
+      int temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+    }
+  }
+
+  // 印出
+  for(int i = 0; i < sizeof(arr)/sizeof(int); i++) {
+    cout << arr[i] << ", ";
   }
   cout << endl;
   return 0;
 }
+
 {% endhighlight %}
 
+重覆5次的程式碼，一模一樣的程式碼，就由迴圈來省略重覆的程式碼。
+
+`j < ?`的變化是由5, 4, 3, 2, 1，由大到小遞減。
+
+所以外層迴圈要用由大到小，5 -> 4 -> 3 -> 2 -> 1。
+
+{% highlight c++ linenos %}
+int main() {
+  int arr[] = {6, 5, 4, 3, 2, 1};
+  // loop_count迴圈次數 5 -> 4 -> 3 -> 2 -> 1
+  int loop_count = 5;
+  for (int i = loop_count; i > 0; i--) {
+    for (int j = 0; j < i; j++) {
+      // 2. 都跟後面1個比。
+      if (arr[j] > arr[j + 1]) {
+        // 3. 比較大的，放後面
+        int temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+
+  // 印出
+  for(int i = 0; i < sizeof(arr)/sizeof(int); i++) {
+    cout << arr[i] << ", ";
+  }
+  cout << endl;
+  return 0;
+}  
+{% endhighlight %}
 ```
-1,2,3,4,5,6,
+1, 2, 3, 4, 5, 6, 
 ```
+
+外層迴圈次數是陣列大小 - 1。
+{% highlight c++ linenos %}
+int loop_count = sizeof(arr)/sizeof(int) - 1;
+{% endhighlight %}

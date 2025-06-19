@@ -1454,6 +1454,13 @@
     	<a href="/pages/java/assign_cast/" data-nav-link> 運算轉型</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/plusplus/" data-nav-link> 變數++</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -1824,7 +1831,7 @@
     	<a href="/pages/java/socket_writer/" data-nav-link> Socket與Writer</a>
         
             
-                <ul><li><a href="#client傳送文字" data-nav-link " >Client傳送文字</a></li><li><a href="#server接收文字" data-nav-link " >Server接收文字</a></li><li><a href="#執行程式" data-nav-link " >執行程式</a></li></ul>
+                <ul><li><a href="#重要的方法介紹" data-nav-link " >重要的方法介紹</a><ul><li><a href="#flush" data-nav-link " >flush()</a></li></ul></li><li><a href="#client傳送文字" data-nav-link " >Client傳送文字</a></li><li><a href="#server接收文字" data-nav-link " >Server接收文字</a></li><li><a href="#執行程式" data-nav-link " >執行程式</a></li></ul>
 
             
         </li>
@@ -2831,6 +2838,10 @@
 
 <p>因為Socket存取與寫入的位置都在記憶體，所以需要使用Buffered字元串流(BufferedWriter,BufferedReader)。</p>
 
+<h2 id="重要的方法介紹">重要的方法介紹</h2>
+<h3 id="flush">flush()</h3>
+<p>字元串流要使用flush()方法，把記憶體緩衝區的資料送到socket.OutputStream。</p>
+
 <h2 id="client傳送文字">Client傳送文字</h2>
 <p>傳送步驟如下:</p>
 <ol>
@@ -3127,7 +3138,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-18 15:16:26 +0800"
+        "time": "2025-06-19 10:05:01 +0800"
     },
     "basePath": "",
     "book": {
