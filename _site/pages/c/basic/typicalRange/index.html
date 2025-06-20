@@ -125,7 +125,7 @@
     	<a href="/pages/c/basic/typicalRange/" data-nav-link> 資料型態範圍</a>
         
             
-                <ul><li><a href="#位元bit與位元組byte" data-nav-link " >位元bit與位元組byte</a><ul><li><a href="#bit正整數範圍" data-nav-link " >bit正整數範圍</a></li><li><a href="#byte正整數範圍" data-nav-link " >byte正整數範圍</a></li></ul></li><li><a href="#正負數" data-nav-link " >正負數</a><ul><li><a href="#正負數-1" data-nav-link " >正負數</a></li><li><a href="#正負數範圍" data-nav-link " >正負數範圍</a></li></ul></li><li><a href="#unsinged正整數" data-nav-link " >unsinged正整數</a></li></ul>
+                <ul><li><a href="#位元bit與位元組byte" data-nav-link " >位元bit與位元組byte</a><ul><li><a href="#bit正整數範圍" data-nav-link " >bit正整數範圍</a></li><li><a href="#byte正整數範圍" data-nav-link " >byte正整數範圍</a></li></ul></li><li><a href="#正負數" data-nav-link " >正負數</a><ul><li><a href="#正負數範圍" data-nav-link " >正負數範圍</a></li></ul></li><li><a href="#unsinged正整數" data-nav-link " >unsinged正整數</a></li></ul>
 
             
         </li>
@@ -1443,7 +1443,7 @@
         </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 運算 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 運算子 </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -1454,7 +1454,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/assign_cast/" data-nav-link> 運算轉型</a>
+    	<a href="/pages/java/assign_cast/" data-nav-link> 算術運算子與轉型</a>
         
             
         </li>
@@ -1462,6 +1462,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/plusplus/" data-nav-link> 變數++</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/complement/" data-nav-link> 2的補數</a>
         
             
         </li></ul></li>
@@ -2822,6 +2829,8 @@
 <h3 id="bit正整數範圍">bit正整數範圍</h3>
 <p>以下列出1到8個bit可以存放的最大正整數值與正整數範圍。</p>
 
+<p>以下減1代表扣掉0這個數字。</p>
+
 <table>
   <thead>
     <tr>
@@ -2929,7 +2938,7 @@
   </tbody>
 </table>
 
-<p>科學記號法顯示</p>
+<p>科學記號法顯示，以下減1代表扣掉0這個數字。</p>
 
 <table>
   <thead>
@@ -2964,15 +2973,17 @@
 </table>
 
 <h2 id="正負數">正負數</h2>
+<ul>
+  <li><a href="/pages/java/complement/">負數2的補數</a></li>
+</ul>
+
 <p>若資料型態是包含正負數，會將最大整數減半。</p>
 
-<p>在 8-bit 下，把\(2^8 = 256\)切一半，正數 0 - 127 共 128 個正數，負數 -1 至 -128 共 128個負數，128 正數 + 128 負數 = 256個數字。</p>
+<p>在 8-bit 下，把\(2^8 = 256\)切一半，正整數 0 - 127 共 128 個正整數，負數 -1 至 -128 共 128個負數，128 正整數 + 128 負數 = 256個數字。</p>
 
-<p>正數二進位表示方式，最左邊的第1個bit為0，代表正數。</p>
+<p>正整數二進位表示方式，最左邊的第1個bit為0，代表正整數。</p>
 
-<p>負數的表示方式，最左邊的第1個bit為1，代表負數，把正數的二進位0和1互換，再加上1。</p>
-
-<h3 id="正負數-1">正負數</h3>
+<p>負數的表示方式，最左邊的第1個bit為1，代表負數，把正整數的二進位0和1互換，再加上1。</p>
 
 <table>
   <thead>
@@ -3018,36 +3029,111 @@
 </table>
 
 <h3 id="正負數範圍">正負數範圍</h3>
+<p>正整數二進位表示方式，最左邊的第1個bit為0，代表正整數。</p>
+
+<p>以下是最大正整數，減1代表扣掉0這個數字。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">byte</th>
+      <th style="text-align: right">bit</th>
+      <th style="text-align: left">科學記號法</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1byte</td>
+      <td style="text-align: right">01111111</td>
+      <td style="text-align: left">$2^7-1 = 127 $</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2byte</td>
+      <td style="text-align: right">01111111 11111111</td>
+      <td style="text-align: left">$2^7 * 2^8 -1= 2^{7+8}-1 = 2 ^{15}-1 = 32767$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3byte</td>
+      <td style="text-align: right">01111111 11111111 11111111</td>
+      <td style="text-align: left">$2^7 * 2^8 * 2^8-1 = 2^{7+8+8}-1 = 2 ^{23}-1 = 8388607 $</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4byte</td>
+      <td style="text-align: right">01111111 11111111 11111111 11111111</td>
+      <td style="text-align: left">$2^7 * 2^8 * 2^8 * 2^8-1 = 2^{7+8+8+8}-1 = 2 ^{31}-1 = 2147483647 $</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>最左邊的第1個bit為1，代表負數，以下為最小負數。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">byte</th>
+      <th style="text-align: right">bit</th>
+      <th style="text-align: left">科學記號法</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1byte</td>
+      <td style="text-align: right">10000000</td>
+      <td style="text-align: left">$-2^7 = -128 $</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2byte</td>
+      <td style="text-align: right">10000000 00000000</td>
+      <td style="text-align: left">$-2^7 * -2^8 = -2^{7+8} = -2 ^{15} = -32768$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3byte</td>
+      <td style="text-align: right">10000000 00000000 00000000</td>
+      <td style="text-align: left">$-2^7 * -2^8 * -2^8 = -2^{7+8+8} = -2 ^{23} = -8388608 $</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4byte</td>
+      <td style="text-align: right">10000000 00000000 00000000 00000000</td>
+      <td style="text-align: left">$-2^7 * -2^8 * -2^8 * -2^8 = 2^{7+8+8+8} = -2 ^{31} = -2147483648 $</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>結論</p>
 
 <table>
   <thead>
     <tr>
       <th style="text-align: center">占用Byte數量</th>
       <th style="text-align: center">正負數範圍</th>
+      <th style="text-align: left">科學記號法</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: center">1byte</td>
       <td style="text-align: center">-128 至 -1 ~ 0 至 127</td>
+      <td style="text-align: left">$-2^7$ 至 $2^7 - 1$</td>
     </tr>
     <tr>
       <td style="text-align: center">2byte</td>
       <td style="text-align: center">-32768 至 -1 ~ 0 至 32767</td>
+      <td style="text-align: left">$-2 ^{15}$ 至 $2 ^{15} - 1$</td>
     </tr>
     <tr>
       <td style="text-align: center">3byte</td>
       <td style="text-align: center">-8388608 至 -1 ~ 0 至 8388607</td>
+      <td style="text-align: left">$-2 ^{23}$ 至 $2 ^{23} -1$</td>
     </tr>
     <tr>
       <td style="text-align: center">4byte</td>
       <td style="text-align: center">-2147483648 至 -1 ~ 0 至 2147483647</td>
+      <td style="text-align: left">$-2 ^{31}$ 至$2 ^{31} - 1$</td>
     </tr>
   </tbody>
 </table>
 
 <h2 id="unsinged正整數">unsinged正整數</h2>
-
 <p>unsigned代表沒有符號，所以只有正整數，不會有負號。</p>
 
 <table>
@@ -3076,6 +3162,7 @@
     </tr>
   </tbody>
 </table>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3266,7 +3353,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-19 16:21:03 +0800"
+        "time": "2025-06-20 14:37:30 +0800"
     },
     "basePath": "",
     "book": {

@@ -3,11 +3,8 @@ title: makefile
 date: 2024-12-04
 keywords: c++, makefile
 ---
-
 ## 編譯c++
-
 ### 原理
-
 將原始檔案變成執行檔，以下把這個過程分為二個步驟。
 
 首先將個別原始檔(.cpp)編譯成個別目的檔(object file)，目的檔的內容是可被電腦執行的機器語言指令。
@@ -108,7 +105,7 @@ call func()
 
 多個process(行程)用到同一個靜態庫中的函式或類別，每個process(行程)拷貝一份，多個process(行程)就有多個拷貝。
 
-靜態庫是二進制檔案(機器語言指令)
+靜態庫是二進位檔案(機器語言指令)
 
 主程式在鏈結時會把靜態庫加入，產生執行檔。
 
@@ -207,7 +204,6 @@ $ g++ -o demo01 app/hello.cpp tools/libpublic.a
 $ ./demo01
 ```
 #### 法2
-
 語法
 ```
 g++ -o 執行檔名 原始檔案1.cpp -L 靜態庫目錄位址 -l 庫名
@@ -217,7 +213,6 @@ $ g++ -o demo01 app/hello.cpp -L tools -l public
 ```
 
 ## 動態庫
-
 語法
 ```
 g++ -fPIC -shared -o lib庫名.so 來源檔案1.cpp
@@ -237,7 +232,7 @@ $ g++ -fPIC -shared -o libpublic.so public.cpp
 
 將cpp檔案整理成一個庫，產生執行檔可以指定庫名.so，就不用寫很多原始檔案1.cpp 原始檔案2.cpp 原始檔案3.cpp 原始檔案N.cpp
 
-動態庫是二進制檔案
+動態庫是二進位檔案
 
 多個procee用到同一個動態庫中的函式或類別，在記憶體中只有一份，多個process共享相同程式碼，也稱共享庫，因為只有一份程式碼，不會占用記憶體。
 
@@ -255,7 +250,6 @@ $ ./demo01
 ```
 
 #### 法2
-
 先增加LD_LIBRARY_PATH環境變數，設定放置動態庫的目錄
 
 ```
@@ -293,7 +287,6 @@ $ g++ -fPIC -shared -o libpublic.so public.cpp
 ```
 
 #### 執行主程式
-
 ```
 $ ./demo01
 Hello world!
@@ -302,7 +295,6 @@ update msg....
 ```
 
 #### 總結
-
 以上的過程，都不必重新編譯主程式。
 
 ## makefile
@@ -329,7 +321,6 @@ all: libpublic.a \
 ```
 
 #### 動態庫或靜態庫中的cpp更新，重新編譯
-
 編譯靜態庫libpublic.a，需要依賴public.h和public.cpp
 
 若public.h或public.cpp更新，需要重新編譯
@@ -375,8 +366,6 @@ makefile  public.cpp  public.h
 ```
 
 #### 產生靜態庫,動態庫
-
-
 語法
 ```
 make
@@ -430,9 +419,7 @@ libpublic.a  libpublic.so  makefile  public.cpp  public.h
 ```
 
 ### 多動態庫使用
-
 #### 建立myapi庫
-
 回到最上層目錄，建立api的目錄，並在api目錄中，建立myapi.h
 
 ```
@@ -541,7 +528,6 @@ teacher ... msg ...
 ```
 
 #### -I
-
 修改hello.cpp的include public.h與myapi.h路徑。
 {% highlight c++ linenos %}
 #include <iostream>
@@ -617,7 +603,6 @@ clean:
 {% endhighlight %}
 
 #### 多個檔案
-
 在makefile定義變數
 ```
 INCLUDEDIR=-I /home/cici/test/tools -I /home/cici/test/api

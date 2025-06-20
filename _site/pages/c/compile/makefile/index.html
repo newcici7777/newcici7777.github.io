@@ -1443,7 +1443,7 @@
         </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 運算 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 運算子 </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -1454,7 +1454,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/assign_cast/" data-nav-link> 運算轉型</a>
+    	<a href="/pages/java/assign_cast/" data-nav-link> 算術運算子與轉型</a>
         
             
         </li>
@@ -1462,6 +1462,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/plusplus/" data-nav-link> 變數++</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/complement/" data-nav-link> 2的補數</a>
         
             
         </li></ul></li>
@@ -2817,9 +2824,7 @@
                     
 
                     <h2 id="編譯c">編譯c++</h2>
-
 <h3 id="原理">原理</h3>
-
 <p>將原始檔案變成執行檔，以下把這個過程分為二個步驟。</p>
 
 <p>首先將個別原始檔(.cpp)編譯成個別目的檔(object file)，目的檔的內容是可被電腦執行的機器語言指令。</p>
@@ -2941,7 +2946,7 @@ call func()
 
 <p>多個process(行程)用到同一個靜態庫中的函式或類別，每個process(行程)拷貝一份，多個process(行程)就有多個拷貝。</p>
 
-<p>靜態庫是二進制檔案(機器語言指令)</p>
+<p>靜態庫是二進位檔案(機器語言指令)</p>
 
 <p>主程式在鏈結時會把靜態庫加入，產生執行檔。</p>
 
@@ -3062,7 +3067,6 @@ call func()
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./demo01
 </code></pre></div></div>
 <h4 id="法2">法2</h4>
-
 <p>語法</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ -o 執行檔名 原始檔案1.cpp -L 靜態庫目錄位址 -l 庫名
 </code></pre></div></div>
@@ -3070,7 +3074,6 @@ call func()
 </code></pre></div></div>
 
 <h2 id="動態庫">動態庫</h2>
-
 <p>語法</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ -fPIC -shared -o lib庫名.so 來源檔案1.cpp
 </code></pre></div></div>
@@ -3088,7 +3091,7 @@ $ g++ -fPIC -shared -o libpublic.so public.cpp
 
 <p>將cpp檔案整理成一個庫，產生執行檔可以指定庫名.so，就不用寫很多原始檔案1.cpp 原始檔案2.cpp 原始檔案3.cpp 原始檔案N.cpp</p>
 
-<p>動態庫是二進制檔案</p>
+<p>動態庫是二進位檔案</p>
 
 <p>多個procee用到同一個動態庫中的函式或類別，在記憶體中只有一份，多個process共享相同程式碼，也稱共享庫，因為只有一份程式碼，不會占用記憶體。</p>
 
@@ -3105,7 +3108,6 @@ $ ./demo01
 </code></pre></div></div>
 
 <h4 id="法2-1">法2</h4>
-
 <p>先增加LD_LIBRARY_PATH環境變數，設定放置動態庫的目錄</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/cici/test/tools
@@ -3150,7 +3152,6 @@ $ g++ -fPIC -shared -o libpublic.so public.cpp
 </code></pre></div></div>
 
 <h4 id="執行主程式">執行主程式</h4>
-
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./demo01
 Hello world!
 update call func()
@@ -3158,7 +3159,6 @@ update msg....
 </code></pre></div></div>
 
 <h4 id="總結">總結</h4>
-
 <p>以上的過程，都不必重新編譯主程式。</p>
 
 <h2 id="makefile">makefile</h2>
@@ -3182,7 +3182,6 @@ $ vi makefile
 </code></pre></div></div>
 
 <h4 id="動態庫或靜態庫中的cpp更新重新編譯">動態庫或靜態庫中的cpp更新，重新編譯</h4>
-
 <p>編譯靜態庫libpublic.a，需要依賴public.h和public.cpp</p>
 
 <p>若public.h或public.cpp更新，需要重新編譯</p>
@@ -3223,7 +3222,6 @@ makefile  public.cpp  public.h
 </code></pre></div></div>
 
 <h4 id="產生靜態庫動態庫-1">產生靜態庫,動態庫</h4>
-
 <p>語法</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make
 </code></pre></div></div>
@@ -3282,9 +3280,7 @@ libpublic.a  libpublic.so  makefile  public.cpp  public.h
 </code></pre></div></div>
 
 <h3 id="多動態庫使用">多動態庫使用</h3>
-
 <h4 id="建立myapi庫">建立myapi庫</h4>
-
 <p>回到最上層目錄，建立api的目錄，並在api目錄中，建立myapi.h</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mkdir api
@@ -3429,7 +3425,6 @@ teacher ... msg ...
 </code></pre></div></div>
 
 <h4 id="-i">-I</h4>
-
 <p>修改hello.cpp的include public.h與myapi.h路徑。</p>
 
 <figure class="highlight">
@@ -3533,7 +3528,6 @@ teacher ... msg ...
 </figure>
 
 <h4 id="多個檔案">多個檔案</h4>
-
 <p>在makefile定義變數</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INCLUDEDIR=-I /home/cici/test/tools -I /home/cici/test/api
 LIBDIR=-L /home/cici/test/tools -L /home/cici/test/api
@@ -3791,7 +3785,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-19 16:21:03 +0800"
+        "time": "2025-06-20 14:37:30 +0800"
     },
     "basePath": "",
     "book": {

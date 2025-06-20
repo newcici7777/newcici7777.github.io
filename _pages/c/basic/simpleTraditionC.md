@@ -13,11 +13,23 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |C++ STL = Standard Template Librar|C++函式庫|C++庫函數|
 |C libc = standard library|C函式庫|C庫函數|
 |object file|目的檔|目標檔|
-|binary file|機器語言指令|二進制檔案|
+|binary file|二進位檔|二進制檔案|
 |linking|鏈結|鏈結|
 |comment|註解|註釋|
 |buffer|緩衝區|緩沖區|
 |cache|暫存區|緩存|
+
+## 補數
+
+|英文|台灣|大陸|
+|:--:|:--:|:--:|
+|Binary(bin)|二進位|二進制|
+|Octal(oct)|8進位|8進制|
+|Decimal(dec)|10進位|10進制|
+|Hexadecimal(hex)|16進位|16進制|
+|Sign-Magnitude Representation|正負號2進位|原碼|
+|1's Complement|1的補數|反碼|
+|2's Complement|2的補數|補碼|
 
 ## 資料型態相關
 

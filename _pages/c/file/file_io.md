@@ -259,7 +259,7 @@ ios::app \| ios::binary意思是，寫入檔案從檔案最後開始寫。
 ios::trunc \| ios::binary意思是，寫入檔案用覆蓋原本檔案的方式寫入。
 
 ### 建立內容格式
-假設要寫入類別，注意，不能用string，string 類型的資料無法直接用 write 和 read 操作進行正確的二進制序列化和反序列化。
+假設要寫入類別，注意，不能用string，string 類型的資料無法直接用 write 和 read 操作進行正確的二進位序列化和反序列化。
 {% highlight c++ linenos %}
   class Student{
    public:

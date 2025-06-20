@@ -1,7 +1,7 @@
 ---
-title: 運算轉型
+title: 算術運算子與轉型
 date: 2025-06-18
-keywords: Java
+keywords: Java, operator
 ---
 ## int與double轉型
 ## 範例1
