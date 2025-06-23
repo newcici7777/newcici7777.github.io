@@ -3,7 +3,7 @@
     <head>
 <meta charset="UTF-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>變數++ </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="Java" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="Java, Postfix Increment, prefix increment" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -1440,6 +1440,30 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 基本型別 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/number/" data-nav-link> 整數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/float_double/" data-nav-link> float與double</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/char/" data-nav-link> char</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 運算子 </a><ul>
 	
 	
@@ -1461,7 +1485,7 @@
     	<a href="/pages/java/plusplus/" data-nav-link> 變數++</a>
         
             
-                <ul><li><a href="#在後面" data-nav-link " >++在後面</a></li><li><a href="#在前面" data-nav-link " >++在前面</a></li><li><a href="#沒有指派給變數" data-nav-link " >++沒有指派給變數</a></li><li><a href="#給自己" data-nav-link " >++給自己</a><ul><li><a href="#在後面-1" data-nav-link " >++在後面</a></li><li><a href="#在前面-1" data-nav-link " >++在前面</a></li></ul></li></ul>
+                <ul><li><a href="#在後面" data-nav-link " >++在後面</a></li><li><a href="#在前面" data-nav-link " >++在前面</a></li><li><a href="#沒有指派給變數" data-nav-link " >++沒有指派給變數</a></li><li><a href="#給自己" data-nav-link " >++給自己</a><ul><li><a href="#在後面-1" data-nav-link " >++在後面</a></li><li><a href="#在前面-1" data-nav-link " >++在前面</a></li></ul></li><li><a href="#其它範例" data-nav-link " >其它範例</a></li></ul>
 
             
         </li>
@@ -1469,6 +1493,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/complement/" data-nav-link> 2的補數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/lr_shift_operator/" data-nav-link> 右移左移運算子</a>
         
             
         </li></ul></li>
@@ -2984,7 +3015,7 @@ k = 10
 <p>編譯的時候，看到<code class="language-plaintext highlighter-rouge">i = ++i;</code>，指派給自己，程式碼就會變成如下:</p>
 
 <p>1.先自增。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = i+1;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = i + 1;
 </code></pre></div></div>
 
 <p>2.建立一個暫存變數temp，代表最左邊的i。</p>
@@ -2994,6 +3025,33 @@ k = 10
 <p>3.把暫存變數，指派給i</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = temp;
 </code></pre></div></div>
+
+<h2 id="其它範例">其它範例</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">66</span><span class="o">;</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(++</span><span class="n">i</span><span class="o">+</span><span class="n">i</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>134
+</code></pre></div></div>
+
+<p>1.先自增。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>++i;
+↓
+i = i + 1;
+</code></pre></div></div>
+<p>此時 i = 67</p>
+
+<p>2.+i
+++i的結果為67，此時i是67。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>67 + i
+67 + 67
+</code></pre></div></div>
+<p>134</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3184,7 +3242,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-20 14:37:30 +0800"
+        "time": "2025-06-23 16:20:42 +0800"
     },
     "basePath": "",
     "book": {

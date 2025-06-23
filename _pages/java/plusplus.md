@@ -1,7 +1,7 @@
 ---
 title: 變數++
 date: 2025-06-18
-keywords: Java
+keywords: Java, Postfix Increment, prefix increment
 ---
 ## \+\+在後面
 {% highlight java linenos %}
@@ -118,7 +118,7 @@ i = 2
 
 1.先自增。
 ```
-i = i+1;
+i = i + 1;
 ```
 
 2.建立一個暫存變數temp，代表最左邊的i。
@@ -130,3 +130,28 @@ int temp = i;
 ```
 i = temp;
 ```
+
+## 其它範例
+{% highlight java linenos %}
+    int i = 66;
+    System.out.println(++i+i);
+{% endhighlight %}
+```
+134
+```
+
+1.先自增。
+```
+++i;
+↓
+i = i + 1;
+```
+此時 i = 67
+
+2.\+i
+\+\+i的結果為67，此時i是67。
+```
+67 + i
+67 + 67
+```
+134

@@ -1440,6 +1440,30 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 基本型別 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/number/" data-nav-link> 整數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/float_double/" data-nav-link> float與double</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/char/" data-nav-link> char</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 運算子 </a><ul>
 	
 	
@@ -1447,7 +1471,7 @@
     	<a href="/pages/java/mod/" data-nav-link> 餘數</a>
         
             
-                
+                <ul><li><a href="#負餘數" data-nav-link " >負餘數</a></li><li><a href="#餘數公式" data-nav-link " >餘數公式</a></li><li><a href="#除上小數點" data-nav-link " >除上小數點</a></li></ul>
 
             
         </li>
@@ -1469,6 +1493,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/complement/" data-nav-link> 2的補數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/lr_shift_operator/" data-nav-link> 右移左移運算子</a>
         
             
         </li></ul></li>
@@ -2825,6 +2856,7 @@
 
                     <p>國一學的正負數，取得的餘數都是正的。</p>
 
+<h2 id="負餘數">負餘數</h2>
 <p>但在C++與Java，餘數是有負數的。</p>
 
 <p>例子</p>
@@ -2852,6 +2884,7 @@
 2
 </code></pre></div></div>
 
+<h2 id="餘數公式">餘數公式</h2>
 <p>Java與C++的餘數公式如下:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a % b = a - (a / b) * b
 </code></pre></div></div>
@@ -2868,6 +2901,21 @@
 <p>答案是-2</p>
 
 <p>參考資料<a href="/pages/math/neg_div/">負數乘除</a></p>
+
+<h2 id="除上小數點">除上小數點</h2>
+<p>得到的餘數是近似值，就是大約多少，不能作為比較或相等依據。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(-</span><span class="mf">10.5</span> <span class="o">%</span> <span class="mi">3</span><span class="o">);</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(-</span><span class="mf">10.4</span> <span class="o">%</span> <span class="mi">3</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-1.5
+-1.4000000000000004
+</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -2932,7 +2980,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/java/annotation" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Annotation">
+                        <a href="/pages/java/char" class="navigation navigation-prev navigation-unique" aria-label="Previous page: char">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -3059,7 +3107,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-20 14:37:30 +0800"
+        "time": "2025-06-23 16:20:42 +0800"
     },
     "basePath": "",
     "book": {

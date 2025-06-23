@@ -1,7 +1,7 @@
 ---
 title: UDP
 date: 2025-06-18
-keywords: Java, udp
+keywords: Java, udp, DatagramPacket, DatagramSocket
 ---
 ## 介紹
 Java的UDP不可靠傳輸協議是使用DatagramSocket與DatagramPacket完成。
