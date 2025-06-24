@@ -3,7 +3,7 @@
     <head>
 <meta charset="UTF-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>整數 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="Java, int, short, long" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="Java, byte, short, int, long" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -1385,13 +1385,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/wrap/" data-nav-link> 基本型態與Wrapper Classes</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/obj_layout_core/" data-nav-link> Java Object Layout</a>
         
             
@@ -1440,14 +1433,14 @@
         </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 基本型別 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 基本型態 </a><ul>
 	
 	
 	<li class="active" data-nav-item>
     	<a href="/pages/java/number/" data-nav-link> 整數</a>
         
             
-                
+                <ul><li><a href="#占據記憶體bitbyte數量" data-nav-link " >占據記憶體bit,byte數量</a></li><li><a href="#自動轉型" data-nav-link " >自動轉型</a></li><li><a href="#強制轉型" data-nav-link " >強制轉型</a></li><li><a href="#預設整數常數型態" data-nav-link " >預設整數常數型態</a></li><li><a href="#範圍檢查" data-nav-link " >範圍檢查</a></li><li><a href="#不能把大的型態塞到小的型態" data-nav-link " >不能把大的型態塞到小的型態</a></li><li><a href="#byte" data-nav-link " >byte</a></li><li><a href="#short" data-nav-link " >short</a></li><li><a href="#byteshort計算" data-nav-link " >byte、short計算</a></li><li><a href="#long" data-nav-link " >long</a></li><li><a href="#int" data-nav-link " >int</a></li></ul>
 
             
         </li>
@@ -1462,6 +1455,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/char/" data-nav-link> char</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/wrap/" data-nav-link> 基本型態與Wrapper Classes</a>
         
             
         </li></ul></li>
@@ -2854,7 +2854,311 @@
                         <h1 id="/pages/java/number">整數</h1>
                     
 
-                    
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/c/basic/typicalRange/">byte與bit介紹</a></li>
+</ul>
+
+<p>Java的整數有下面4種，Java程式碼是在Java虛擬機上執行，不會有不同作業系統型別會有所不同，但C++的<a href="/pages/c/basic/typedef/">long類型</a>在Win與Linux下是不同的。</p>
+
+<p>為什麼要不同的基本型態，因為記憶體空間有限，不能把任何整數都放在long，這樣是很浪費記憶體空間。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">名稱</th>
+      <th style="text-align: center">byte數</th>
+      <th style="text-align: center">範圍</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">byte</td>
+      <td style="text-align: center">1 byte</td>
+      <td style="text-align: center">-128 至 127</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">short</td>
+      <td style="text-align: center">2 byte</td>
+      <td style="text-align: center">$-2 ^{15}$ 至 $2 ^{15} - 1$</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">int</td>
+      <td style="text-align: center">4 byte</td>
+      <td style="text-align: center">$-2 ^{31}$ 至$2 ^{31} - 1$</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">long</td>
+      <td style="text-align: center">8 byte</td>
+      <td style="text-align: center">$-2 ^{63}$ 至$2 ^{63} - 1$</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="占據記憶體bitbyte數量">占據記憶體bit,byte數量</h2>
+<p>1個Byte由8個bit組成的，下圖為各種基本型態占據記憶體的bit數量。</p>
+
+<p><img src="/assets/img/java/type_range.png" alt="img" /></p>
+
+<p>下圖方格子代表1byte，下圖為各種基本型態占據記憶體的byte數量。</p>
+
+<p><img src="/assets/img/java/type_range1.png" alt="img" /></p>
+
+<p>下圖中，各種型態都存入127，127是1byte，但對每一種基本型態的意義是不同的，short存入127，short占據記憶體空間是2byte，int存入127，int占據記憶體空間是4byte，long存入127，long占據記憶體空間是8byte。</p>
+
+<p><img src="/assets/img/java/type_range2.png" alt="img" /></p>
+
+<p>不同型態占據記憶體空間大小不一樣，雖然存的值都相同。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">127</span><span class="o">;</span>   <span class="c1">// 1 byte</span>
+<span class="kt">short</span> <span class="n">s1</span> <span class="o">=</span> <span class="mi">127</span><span class="o">;</span>  <span class="c1">// 2 byte</span>
+<span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="mi">127</span><span class="o">;</span>    <span class="c1">// 4 byte</span>
+<span class="kt">long</span> <span class="n">l1</span> <span class="o">=</span> <span class="mi">127</span><span class="o">;</span>   <span class="c1">// 8 byte</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>不能把4個格子int，存入1個格子byte，記憶體空間大小不一樣，以下程式碼編譯錯誤。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="mi">127</span><span class="o">;</span>
+<span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="n">i1</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>但反過來把1個格子的值存入4個格子中，是可以，從小房子搬到大房子。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">127</span><span class="o">;</span>
+<span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="n">b1</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="自動轉型">自動轉型</h2>
+<p>資料型態小的可以塞入大的資料型態，不用手動轉型，編譯器會自動轉型，</p>
+
+<p>byte型態放入int型態。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">127</span><span class="o">;</span>
+<span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="n">b1</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="強制轉型">強制轉型</h2>
+<p>資料型態大的塞入小的資料型態，要使用強制轉型，使用圓括號(轉型的型態)，程式設計師要負責轉換後精度遺失或超出資料範圍的問題。</p>
+
+<p>int型態放入byte型態。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="mi">127</span><span class="o">;</span>
+<span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="o">(</span><span class="kt">byte</span><span class="o">)</span> <span class="n">i1</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="預設整數常數型態">預設整數常數型態</h2>
+<p>什麼是常數？等號右邊若為數字或字串，這些就是常數。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">123</span><span class="o">;</span>  <span class="c1">// 123是常數</span>
+<span class="nc">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"Hello"</span>  <span class="c1">// Hello是常數</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>在程式碼任意輸入數字，預設是int。</p>
+
+<p>以下1234是int。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="mi">1234</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="範圍檢查">範圍檢查</h2>
+<p>整數預設型態是int。</p>
+
+<p>以下程式碼等號右邊是int的「值」，但java編譯器會先檢查範圍，介於範圍之間，就可以設值。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre>  <span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">127</span><span class="o">;</span>
+  <span class="kt">byte</span> <span class="n">b2</span> <span class="o">=</span> <span class="o">-</span><span class="mi">128</span><span class="o">;</span>
+  <span class="kt">short</span> <span class="n">s1</span> <span class="o">=</span> <span class="mi">32767</span><span class="o">;</span>
+  <span class="kt">short</span> <span class="n">s2</span> <span class="o">=</span> <span class="o">-</span><span class="mi">32768</span><span class="o">;</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">b1</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">b2</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s1</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s2</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127
+-128
+32767
+-32768
+</code></pre></div></div>
+
+<p>但如果不是「值」，而是基本型態，以下程式碼編譯錯誤。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="mi">127</span><span class="o">;</span>
+  <span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="n">i1</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="不能把大的型態塞到小的型態">不能把大的型態塞到小的型態</h2>
+<p>int是4byte，不能放入short 2byte。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="mi">123</span><span class="o">;</span>
+<span class="kt">short</span> <span class="n">s1</span> <span class="o">=</span> <span class="n">i1</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="byte">byte</h2>
+<p>byte等號右邊的範圍大小就是-128 至 127，超過就會編譯錯誤。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>  <span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">127</span><span class="o">;</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">b1</span><span class="o">);</span>
+  <span class="kt">byte</span> <span class="n">b2</span> <span class="o">=</span> <span class="o">-</span><span class="mi">128</span><span class="o">;</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">b2</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127
+-128
+</code></pre></div></div>
+
+<p>以下會產生編譯錯誤。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>  <span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">128</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下會產生編譯錯誤，不能把大的型態塞入小的型態，int是4byte，byte的1個byte。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="mi">123</span><span class="o">;</span>
+<span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="n">i1</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="short">short</h2>
+<p>short等號右邊的範圍大小就是-32768 至 32767，超過就會編譯錯誤。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>  <span class="kt">short</span> <span class="n">s1</span> <span class="o">=</span> <span class="mi">32767</span><span class="o">;</span>
+  <span class="kt">short</span> <span class="n">s2</span> <span class="o">=</span> <span class="o">-</span><span class="mi">32768</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="byteshort計算">byte、short計算</h2>
+<p>byte、short計算結果是int，不能把int塞入byte或short。</p>
+
+<p>以下b1 + s1是int型態。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>  <span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kt">short</span> <span class="n">s1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kt">short</span> <span class="n">s2</span> <span class="o">=</span> <span class="n">b1</span> <span class="o">+</span> <span class="n">s1</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下b1 + b2是int型態。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>  <span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kt">byte</span> <span class="n">b2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kt">byte</span> <span class="n">b3</span> <span class="o">=</span> <span class="n">b1</span> <span class="o">+</span> <span class="n">b2</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下s1 + s2是int型態。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>  <span class="kt">byte</span> <span class="n">s1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kt">byte</span> <span class="n">s2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kt">byte</span> <span class="n">s3</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="long">long</h2>
+<p>常數後面要為l或L，代表為long基本型態。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>  <span class="kt">long</span> <span class="n">l1</span> <span class="o">=</span> <span class="mi">10</span><span class="n">l</span><span class="o">;</span>
+  <span class="kt">long</span> <span class="n">l2</span> <span class="o">=</span> <span class="mi">10L</span><span class="o">;</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">l1</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">l2</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10
+10
+</code></pre></div></div>
+
+<p>注意！執行結果為10，不是10.0，不要跟double搞混。</p>
+
+<h2 id="int">int</h2>
+<p>int最大的數字是2147483647，若存放的數字超過int最大數字，請使用long。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3045,7 +3349,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-23 16:20:42 +0800"
+        "time": "2025-06-24 12:15:40 +0800"
     },
     "basePath": "",
     "book": {

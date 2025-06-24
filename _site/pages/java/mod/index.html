@@ -1385,13 +1385,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/wrap/" data-nav-link> 基本型態與Wrapper Classes</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/obj_layout_core/" data-nav-link> Java Object Layout</a>
         
             
@@ -1440,7 +1433,7 @@
         </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 基本型別 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 基本型態 </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -1461,6 +1454,13 @@
     	<a href="/pages/java/char/" data-nav-link> char</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/wrap/" data-nav-link> 基本型態與Wrapper Classes</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -1471,7 +1471,7 @@
     	<a href="/pages/java/mod/" data-nav-link> 餘數</a>
         
             
-                <ul><li><a href="#負餘數" data-nav-link " >負餘數</a></li><li><a href="#餘數公式" data-nav-link " >餘數公式</a></li><li><a href="#除上小數點" data-nav-link " >除上小數點</a></li></ul>
+                <ul><li><a href="#負餘數" data-nav-link " >負餘數</a></li><li><a href="#餘數公式" data-nav-link " >餘數公式</a></li><li><a href="#除上小數餘數是小數" data-nav-link " >除上小數，餘數是小數</a></li></ul>
 
             
         </li>
@@ -2902,8 +2902,7 @@
 
 <p>參考資料<a href="/pages/math/neg_div/">負數乘除</a></p>
 
-<h2 id="除上小數點">除上小數點</h2>
-<p>得到的餘數是近似值，就是大約多少，不能作為比較或相等依據。</p>
+<h2 id="除上小數餘數是小數">除上小數，餘數是小數</h2>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2916,6 +2915,26 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-1.5
 -1.4000000000000004
 </code></pre></div></div>
+
+<p>有疑惑的是第二個，透過公式</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a - (a/b) * b
+-10.4 - (-10.4 / 3) * 3
+</code></pre></div></div>
+
+<p>先分步驟拆解:</p>
+
+<p>1.整數相除，沒有餘數</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-10.4 / 3 = 3
+</code></pre></div></div>
+<p>2.先乘除，後加減</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3 * 3 = 9
+</code></pre></div></div>
+<p>3.結果是-1.4</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-10.4 - 9 = -1.4
+</code></pre></div></div>
+
+<p>計算結果為-1.4，為什麼程式的執行結果是-1.4000000000000004呢？
+因為電腦不是人，它以為-10.4後面還有小數-10.4x，所以結果會是-1.4000000000000004</p>
 
 </section>
             </div><div class="search-results">
@@ -2980,7 +2999,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/java/char" class="navigation navigation-prev navigation-unique" aria-label="Previous page: char">
+                        <a href="/pages/java/wrap" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 基本型態與Wrapper Classes">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -3107,7 +3126,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-23 16:20:42 +0800"
+        "time": "2025-06-24 12:15:40 +0800"
     },
     "basePath": "",
     "book": {
