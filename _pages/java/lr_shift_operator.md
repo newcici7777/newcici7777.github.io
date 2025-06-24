@@ -1,5 +1,5 @@
 ---
-title: 右移左移運算子
+title: 左移右移運算子
 date: 2025-06-20
 keywords: java, left and right shift operators
 ---
@@ -8,6 +8,9 @@ keywords: java, left and right shift operators
 >> 右移1位
 << 左移1位
 ```
+左移代表進位。
+
+右移代表退位。
 
 ## 語法
 右移1位
@@ -42,7 +45,7 @@ keywords: java, left and right shift operators
 
 範例1:
 
-個位數1，往左移一位，乘10。
+個位數1，往左移一位，乘10，代表進1位，變成十位數。
 ```
 1
 ↓
@@ -53,7 +56,7 @@ keywords: java, left and right shift operators
 
 範例2:
 
-個位數1，往右移一位，除10。
+個位數1，往右移一位，除10，代表退1位，變成十分位。
 ```
 1
 ↓

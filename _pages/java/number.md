@@ -39,13 +39,13 @@ int i1 = 127;    // 4 byte
 long l1 = 127;   // 8 byte
 {% endhighlight %}
 
-不能把4個格子int，存入1個格子byte，記憶體空間大小不一樣，以下程式碼編譯錯誤。
+不能把4個byte的int，存入1個byte的byte，記憶體空間大小不一樣，以下程式碼編譯錯誤。
 {% highlight java linenos %}
 int i1 = 127;
 byte b1 = i1;
 {% endhighlight %}
 
-但反過來把1個格子的值存入4個格子中，是可以，從小房子搬到大房子。
+但反過來把1個byte的值存入4個byte中，是可以，從小房子搬到大房子。
 {% highlight java linenos %}
 byte b1 = 127;
 int i1 = b1;
@@ -193,6 +193,23 @@ int最大的數字是2147483647，若存放的數字超過int最大數字，請�
   int i = 10;
 {% endhighlight %}
 
+### 小數無條件捨去
+{% highlight java linenos %}
+int i = (int)1.9;
+System.out.println(i);
+{% endhighlight %}
+```
+1
+```
+
+int計算時，只保留整數，小數無條件捨去。
+{% highlight java linenos %}
+int i = 10 / 4;
+System.out.println(i);
+{% endhighlight %}
+```
+2
+```
 
 [1]: {% link _pages/c/basic/typicalRange.md %}
 [2]: {% link _pages/c/basic/typedef.md %}

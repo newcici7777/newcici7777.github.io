@@ -22,3 +22,14 @@ keywords: sublime
 ## 取代\\n
 
 ![img]({{site.imgurl}}/sublime/sublime_n.png)
+
+## 目錄方式打開
+要在左側有檔案列表
+
+![img]({{site.imgurl}}/sublime/open_dir.png)
+
+## 尋找取代所有檔案中的某個字
+
+![img]({{site.imgurl}}/sublime/replace_all1.png)
+
+![img]({{site.imgurl}}/sublime/replace_all2.png)

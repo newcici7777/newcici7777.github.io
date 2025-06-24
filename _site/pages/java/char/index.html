@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>char </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>char字元 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="keywords" content="Java, char" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -1451,10 +1451,10 @@
 	
 	
 	<li class="active" data-nav-item>
-    	<a href="/pages/java/char/" data-nav-link> char</a>
+    	<a href="/pages/java/char/" data-nav-link> char字元</a>
         
             
-                
+                <ul><li><a href="#記憶體大小" data-nav-link " >記憶體大小</a></li><li><a href="#語法" data-nav-link " >語法</a></li><li><a href="#跳脫字元" data-nav-link " >跳脫字元</a></li><li><a href="#數字" data-nav-link " >數字</a></li><li><a href="#顯示ascii-code" data-nav-link " >顯示Ascii Code</a></li><li><a href="#中文" data-nav-link " >中文</a></li></ul>
 
             
         </li>
@@ -1499,7 +1499,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/lr_shift_operator/" data-nav-link> 右移左移運算子</a>
+    	<a href="/pages/java/lr_shift_operator/" data-nav-link> 左移右移運算子</a>
         
             
         </li></ul></li>
@@ -2838,7 +2838,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >char</a>
+                            <a href="." >char字元</a>
                         
                     </h1>
                 </div>
@@ -2851,10 +2851,18 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/java/char">char</h1>
+                        <h1 id="/pages/java/char">char字元</h1>
                     
 
-                    <p>Java的char與c++的char占據記憶體大小不一樣，Java占據2byte記憶體空間，C++占據1byte記憶體空間。</p>
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/c/basic/charType/">字元與Ascii碼</a></li>
+  <li><a href="/pages/c/string/chineseAscii/">ASCII與中文</a></li>
+</ul>
+
+<h2 id="記憶體大小">記憶體大小</h2>
+<p>Java的char與c++的char占據記憶體大小不一樣，Java占據2byte記憶體空間，C++占據1byte記憶體空間。</p>
 
 <table>
   <thead>
@@ -2872,6 +2880,83 @@
     </tr>
   </tbody>
 </table>
+
+<h2 id="語法">語法</h2>
+<p>是使用''，包住字元。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="sc">'B'</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下是錯誤寫法，""這個是字串，不是字元。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="s">"B"</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="跳脫字元">跳脫字元</h2>
+<p>跳脫字元雖然是用2個字元組成，但對java編譯器來說，跳脫字元視為1個字元。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">char</span> <span class="n">ch1</span> <span class="o">=</span> <span class="sc">'\t'</span><span class="o">;</span>
+<span class="kt">char</span> <span class="n">ch2</span> <span class="o">=</span> <span class="sc">'\n'</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="數字">數字</h2>
+<p>若輸入數字97，會顯示97對映的Ascii Code。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="mi">97</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">ch</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a
+</code></pre></div></div>
+
+<h2 id="顯示ascii-code">顯示Ascii Code</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="sc">'B'</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">((</span><span class="kt">int</span><span class="o">)</span><span class="n">ch</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>66
+</code></pre></div></div>
+
+<h2 id="中文">中文</h2>
+<p><a href="https://tool.chinaz.com/tools/unicode.aspx">Unicode編碼工具</a></p>
+
+<p><img src="/assets/img/java/unicode1.png" alt="img" /></p>
+
+<p>Ascii Code只能支持英語美語，大小只有256，只有正整數沒有負數。</p>
+
+<p>因為要支援其它國家的語言，才會有Unicode，Unicode包含Ascii，中文字佔2byte、英文字佔2byte，但英文字占太多記憶體大小。</p>
+
+<p>utf-8，比Unicode更省記憶體大小，英文佔1byte，中文佔3byte。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="sc">'西'</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">((</span><span class="kt">int</span><span class="o">)</span><span class="n">ch</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>35199
+</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -3063,7 +3148,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-24 12:15:40 +0800"
+        "time": "2025-06-24 16:21:20 +0800"
     },
     "basePath": "",
     "book": {

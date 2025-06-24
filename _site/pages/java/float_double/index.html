@@ -1447,14 +1447,14 @@
     	<a href="/pages/java/float_double/" data-nav-link> float與double</a>
         
             
-                
+                <ul><li><a href="#float" data-nav-link " >float</a><ul><li><a href="#只能保留小數點後7位" data-nav-link " >只能保留小數點後7位</a></li></ul></li><li><a href="#double" data-nav-link " >double</a><ul><li><a href="#預設值" data-nav-link " >預設值</a></li><li><a href="#宣告與初始化" data-nav-link " >宣告與初始化</a></li><li><a href="#自動轉型與強制轉型" data-nav-link " >自動轉型與強制轉型</a></li><li><a href="#計算時自動轉型" data-nav-link " >計算時自動轉型</a></li><li><a href="#小數點精準度比float高" data-nav-link " >小數點精準度比float高</a></li><li><a href="#近似值" data-nav-link " >近似值</a></li><li><a href="#055可以不用寫0" data-nav-link " >0.55可以不用寫0</a></li><li><a href="#指派整數" data-nav-link " >指派整數</a></li></ul></li><li><a href="#顯示小數位" data-nav-link " >顯示小數位</a></li><li><a href="#科學記號法" data-nav-link " >科學記號法</a><ul><li><a href="#10進位系統" data-nav-link " >10進位系統</a></li><li><a href="#科學記號法-1" data-nav-link " >科學記號法</a></li></ul></li></ul>
 
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/char/" data-nav-link> char</a>
+    	<a href="/pages/java/char/" data-nav-link> char字元</a>
         
             
         </li>
@@ -1499,7 +1499,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/lr_shift_operator/" data-nav-link> 右移左移運算子</a>
+    	<a href="/pages/java/lr_shift_operator/" data-nav-link> 左移右移運算子</a>
         
             
         </li></ul></li>
@@ -2854,7 +2854,344 @@
                         <h1 id="/pages/java/float_double">float與double</h1>
                     
 
-                    
+                    <p>浮點數是可以表示小數的基本型態。</p>
+
+<p>浮點數分為float與double。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">名稱</th>
+      <th style="text-align: center">byte數</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">float</td>
+      <td style="text-align: center">4 byte</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">double</td>
+      <td style="text-align: center">8 byte</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="float">float</h2>
+<p>數字後面加上f或F。</p>
+
+<p>float宣告與初始化。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">float</span> <span class="n">f1</span> <span class="o">=</span> <span class="mf">123.123f</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">f2</span> <span class="o">=</span> <span class="mf">123.123</span><span class="no">F</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="只能保留小數點後7位">只能保留小數點後7位</h3>
+<p>第7位會4捨5入。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">float</span> <span class="n">f1</span> <span class="o">=</span> <span class="mf">1.123456789f</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">f1</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.1234568
+</code></pre></div></div>
+
+<h2 id="double">double</h2>
+<h3 id="預設值">預設值</h3>
+<p>預設是double基本型態。</p>
+
+<p>以下程式碼，123.55看到小數點，預設是double型態。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="mf">123.55</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="宣告與初始化">宣告與初始化</h3>
+<p>數字後面沒有f，也沒有F，是空的，代表double。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">double</span> <span class="n">d1</span> <span class="o">=</span> <span class="mf">123.55</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="自動轉型與強制轉型">自動轉型與強制轉型</h3>
+<p>可以把float指派給double，之前在整數時有提過，可以把小的型態塞到大的型態中，編譯器會自動轉型。</p>
+
+<p>以下把float型態塞到double型態。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">double</span> <span class="n">d1</span> <span class="o">=</span> <span class="mf">123.55f</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>double型態塞到float型態要強制轉型，因為float只有4byte，double是8byte。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">float</span> <span class="n">f1</span> <span class="o">=</span> <span class="o">(</span><span class="kt">float</span><span class="o">)</span> <span class="mf">123.55</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="計算時自動轉型">計算時自動轉型</h3>
+<p>計算時，若型態是double，計算結果為int，也會自動轉成double。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">/</span> <span class="mi">4</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+<span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">/</span> <span class="mi">4</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">d</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+2.0
+</code></pre></div></div>
+
+<p>若計算的數字有各種型態，自動轉型成裡面中的最大型態。</p>
+
+<p>下面程式碼10為int，4.0為double。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="mi">10</span> <span class="o">/</span> <span class="mf">4.0</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2.5
+</code></pre></div></div>
+
+<h3 id="小數點精準度比float高">小數點精準度比float高</h3>
+<p>建議使用double，因為float只能保留小數點7位，第7位會4捨5入。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kt">float</span> <span class="n">f1</span> <span class="o">=</span> <span class="mf">1.123456789f</span><span class="o">;</span>
+<span class="kt">double</span> <span class="n">d1</span> <span class="o">=</span> <span class="mf">1.123456789101112131415</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">f1</span><span class="o">);</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">d1</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.1234568
+1.1234567891011122
+</code></pre></div></div>
+
+<h3 id="近似值">近似值</h3>
+<p>人自己算結果為2.7</p>
+
+<p>電腦不是人，它會給出近似值，接近2.7。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">double</span> <span class="n">d2</span> <span class="o">=</span> <span class="mf">8.1</span> <span class="o">/</span> <span class="mi">3</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">d2</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2.6999999999999997
+</code></pre></div></div>
+
+<p>在Java使用小數，要進行比較大小，要十分小心。</p>
+
+<p>以下是比較的正確寫法。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kt">double</span> <span class="n">d3</span> <span class="o">=</span> <span class="mf">2.7</span><span class="o">;</span>
+<span class="kt">double</span> <span class="n">d2</span> <span class="o">=</span> <span class="mf">8.1</span> <span class="o">/</span> <span class="mi">3</span><span class="o">;</span>
+<span class="k">if</span><span class="o">(</span><span class="nc">Math</span><span class="o">.</span><span class="na">abs</span><span class="o">(</span><span class="n">d3</span> <span class="o">-</span> <span class="n">d2</span><span class="o">)</span> <span class="o">&lt;</span> <span class="mf">0.00001</span><span class="o">)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"相等"</span><span class="o">);</span>
+<span class="o">}</span>    
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下是比較的「錯誤寫法」。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kt">double</span> <span class="n">d3</span> <span class="o">=</span> <span class="mf">2.7</span><span class="o">;</span>
+<span class="kt">double</span> <span class="n">d2</span> <span class="o">=</span> <span class="mf">8.1</span> <span class="o">/</span> <span class="mi">3</span><span class="o">;</span>
+<span class="k">if</span><span class="o">(</span><span class="n">d3</span> <span class="o">==</span> <span class="n">d2</span><span class="o">)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"相等"</span><span class="o">);</span>
+<span class="o">}</span>    
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="055可以不用寫0">0.55可以不用寫0</h3>
+<p>可以不用寫0，以下程式碼是正確的。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>  <span class="kt">float</span> <span class="n">f1</span> <span class="o">=</span> <span class="o">.</span><span class="mi">55</span><span class="n">f</span><span class="o">;</span>
+  <span class="kt">double</span> <span class="n">d1</span> <span class="o">=</span> <span class="o">.</span><span class="mi">55</span><span class="o">;</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">f1</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">d1</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.55
+0.55
+</code></pre></div></div>
+<h3 id="指派整數">指派整數</h3>
+<p>指派整數給float、double，後面可以有小數點或沒有小數點。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kt">float</span> <span class="n">f1</span> <span class="o">=</span> <span class="mi">12</span><span class="n">f</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">f2</span> <span class="o">=</span> <span class="mf">12.0f</span><span class="o">;</span>
+<span class="kt">double</span> <span class="n">d1</span> <span class="o">=</span> <span class="mi">12</span><span class="o">;</span>
+<span class="kt">double</span> <span class="n">d2</span> <span class="o">=</span> <span class="mf">12.0</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="顯示小數位">顯示小數位</h2>
+<p>在螢幕上顯示時，最少都會顯示小數1位。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>  <span class="kt">float</span> <span class="n">f1</span> <span class="o">=</span> <span class="mi">12</span><span class="n">f</span><span class="o">;</span>
+  <span class="kt">double</span> <span class="n">d1</span> <span class="o">=</span> <span class="mi">12</span><span class="o">;</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">f1</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">d1</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>12.0
+12.0
+</code></pre></div></div>
+
+<h2 id="科學記號法">科學記號法</h2>
+<p>科學記號法可以使用e或E，若是float，後面要加上f或F。</p>
+
+<h3 id="10進位系統">10進位系統</h3>
+
+<p><img src="/assets/img/java/decimal.png" alt="img" /></p>
+
+<p>左移1位乘10，代表進1位。 個位數 1 &amp;times 10 = 10  變成十位數。</p>
+
+<p>右移1位除10，代表退1位。 個位數 1 &amp;divide 10 = 0.1 變成十分位。</p>
+
+<h3 id="科學記號法-1">科學記號法</h3>
+<p>1e1 = $ 1 \times 10^{1} = 1 \times 10$</p>
+
+<p>1E2 = $ 1 \times 10^{2} = 1 \times 10 \times 10$</p>
+
+<p>1e3 = $ 1 \times 10^{3} = 1 \times 10 \times 10 \times 10$</p>
+
+<p>1e-1 = $ 1 \times 10^{-1} = 1 \times 0.1 = 1 \times \frac{1}{10} =  1\div10$</p>
+
+<p>1E-2 = $ 1 \times 10^{-2} = 1 \times 0.01 = 1 \times \frac{1}{10} \times \frac{1}{10} =  1 \times \frac{1}{100} = 1 \div 10 \div 10$</p>
+
+<p>1E-3 = $ 1 \times 10^{-3} = 1 \times 0.001 = 1 \times \frac{1}{10} \times \frac{1}{10} \times \frac{1}{10} =  1 \times \frac{1}{1000} = 1 \div 10 \div 10 \div 10$</p>
+
+<h4 id="指數為正">指數為正</h4>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Type</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kt">float</span> <span class="n">f1</span> <span class="o">=</span> <span class="mi">1</span><span class="n">e1f</span><span class="o">;</span>
+    <span class="kt">float</span> <span class="n">f2</span> <span class="o">=</span> <span class="mi">1</span><span class="n">e2f</span><span class="o">;</span>
+    <span class="kt">double</span> <span class="n">d1</span> <span class="o">=</span> <span class="mi">1</span><span class="no">E1</span><span class="o">;</span>
+    <span class="kt">double</span> <span class="n">d2</span> <span class="o">=</span> <span class="mi">1</span><span class="no">E2</span><span class="o">;</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">f1</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">f2</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">d1</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">d2</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10.0
+100.0
+10.0
+100.0
+</code></pre></div></div>
+
+<h4 id="指數為負">指數為負</h4>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Type</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kt">float</span> <span class="n">f1</span> <span class="o">=</span> <span class="mi">1</span><span class="n">e</span><span class="o">-</span><span class="mi">1</span><span class="n">f</span><span class="o">;</span>
+    <span class="kt">float</span> <span class="n">f2</span> <span class="o">=</span> <span class="mi">1</span><span class="n">e</span><span class="o">-</span><span class="mi">2</span><span class="n">f</span><span class="o">;</span>
+    <span class="kt">double</span> <span class="n">d1</span> <span class="o">=</span> <span class="mi">1</span><span class="no">E</span><span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+    <span class="kt">double</span> <span class="n">d2</span> <span class="o">=</span> <span class="mi">1</span><span class="no">E</span><span class="o">-</span><span class="mi">2</span><span class="o">;</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">f1</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">f2</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">d1</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">d2</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.1
+0.01
+0.1
+0.01
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -2925,7 +3262,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/char" class="navigation navigation-next navigation-unique" aria-label="Next page: char">
+                        <a href="/pages/java/char" class="navigation navigation-next navigation-unique" aria-label="Next page: char字元">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3045,7 +3382,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-24 12:15:40 +0800"
+        "time": "2025-06-24 16:21:20 +0800"
     },
     "basePath": "",
     "book": {

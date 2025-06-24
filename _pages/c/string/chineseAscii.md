@@ -77,14 +77,14 @@ int main() {
 ## 統計中文個數
 寫一個程式，計算中文個數，一個中文字算1個，一個英文字算1個。
 
-數字、大小寫英文字母、空格、標點符號、空字元(\0)介於Ascii Code 0-127。
-
-中文的Ascii Code 128-255。
-
 不同的編碼方式中文個數不同。
 
 - utf-8 中文3個byte，英文1個byte。
 - unicode 中文2個byte，英文2個byte。
+
+數字、大小寫英文字母、空格、標點符號、空字元(\0)介於Ascii Code 0-127。
+
+中文的Ascii Code 128-255。
 
 從之前的程式碼範例，「西西」二個中文字，但卻產生6個char，C++ 1個char是1byte，「西西」二個字占6byte，一個中文字占3byte，代表目前我的編譯器是使用utf-8。
 
@@ -109,7 +109,7 @@ int countChar(const char* str) {
         count++;
         chinese_cnt = 1;
       } else {
-        // 常未讀取完一個中文字
+        // 尚未讀取完一個中文字
         chinese_cnt++;
       }
     }
@@ -156,3 +156,11 @@ int main() {
 ```
 5
 ```
+
+## Unicode與utf-8
+Ascii Code只能支持英語美語，大小只有128，只有正整數沒有負數。
+
+因為要支援其它國家的語言，才會有Unicode，Unicode包含Ascii，中文字佔2byte、英文字佔2byte，但英文字占太多記憶體大小。
+
+utf-8，比Unicode更省記憶體大小，英文佔1byte，中文佔3byte。
+

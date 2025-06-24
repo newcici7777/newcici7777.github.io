@@ -1454,7 +1454,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/char/" data-nav-link> char</a>
+    	<a href="/pages/java/char/" data-nav-link> char字元</a>
         
             
         </li>
@@ -1499,7 +1499,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/lr_shift_operator/" data-nav-link> 右移左移運算子</a>
+    	<a href="/pages/java/lr_shift_operator/" data-nav-link> 左移右移運算子</a>
         
             
         </li></ul></li>
@@ -2979,10 +2979,6 @@ str[5]=191
 <h2 id="統計中文個數">統計中文個數</h2>
 <p>寫一個程式，計算中文個數，一個中文字算1個，一個英文字算1個。</p>
 
-<p>數字、大小寫英文字母、空格、標點符號、空字元(\0)介於Ascii Code 0-127。</p>
-
-<p>中文的Ascii Code 128-255。</p>
-
 <p>不同的編碼方式中文個數不同。</p>
 
 <ul>
@@ -2990,9 +2986,13 @@ str[5]=191
   <li>unicode 中文2個byte，英文2個byte。</li>
 </ul>
 
+<p>數字、大小寫英文字母、空格、標點符號、空字元(\0)介於Ascii Code 0-127。</p>
+
+<p>中文的Ascii Code 128-255。</p>
+
 <p>從之前的程式碼範例，「西西」二個中文字，但卻產生6個char，C++ 1個char是1byte，「西西」二個字占6byte，一個中文字占3byte，代表目前我的編譯器是使用utf-8。</p>
 
-<p>以下程式碼是max_chinese_cnt = 3，代表一個中文字使用3個byte。</p>
+<p>以下程式碼max_chinese_cnt = 3，代表一個中文字使用3個byte。</p>
 
 <p>chinese_cnt計算byte數量，chinese_cnt = 1，由1開始，加到第3個byte代表一個中文字讀取完畢，可以count++。</p>
 
@@ -3022,21 +3022,25 @@ str[5]=191
 23
 24
 25
+26
+27
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">countChar</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">if</span><span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">chinese_cnt</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">max_chinese_cnt</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">// 統計字數，一個中文字算1個，一個英文字算1個</span>
+  <span class="kt">int</span> <span class="n">chinese_cnt</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>  <span class="c1">// 由1開始</span>
+  <span class="kt">int</span> <span class="n">max_chinese_cnt</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>  <span class="c1">// 一個中文字使用3個byte</span>
   <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">str</span><span class="p">);</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// cout &lt;&lt; "str[" &lt;&lt; i &lt;&lt; "] = " &lt;&lt;  (int)(unsigned char)str[i] &lt;&lt; endl;</span>
-    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">tmp</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">)</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">tmp</span> <span class="o">&lt;</span> <span class="mi">128</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">ch</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">)</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">ch</span> <span class="o">&lt;</span> <span class="mi">128</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// 英文字母走這邊</span>
       <span class="n">count</span><span class="o">++</span><span class="p">;</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>  <span class="c1">// 中文走這邊</span>
+      <span class="c1">// 加到第3個byte代表一個中文字讀取完畢，可以count++</span>
       <span class="k">if</span> <span class="p">(</span><span class="n">chinese_cnt</span> <span class="o">==</span> <span class="n">max_chinese_cnt</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">count</span><span class="o">++</span><span class="p">;</span>
         <span class="n">chinese_cnt</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
       <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// 尚未讀取完一個中文字</span>
         <span class="n">chinese_cnt</span><span class="o">++</span><span class="p">;</span>
       <span class="p">}</span>
     <span class="p">}</span>
@@ -3103,7 +3107,7 @@ str[5]=191
   <span class="k">return</span> <span class="n">count</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">countChar</span><span class="p">(</span><span class="s">"西"</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">countChar</span><span class="p">(</span><span class="s">"西西abc"</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -3301,7 +3305,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-24 12:15:40 +0800"
+        "time": "2025-06-24 16:21:20 +0800"
     },
     "basePath": "",
     "book": {

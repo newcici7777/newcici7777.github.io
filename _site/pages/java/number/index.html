@@ -1440,7 +1440,7 @@
     	<a href="/pages/java/number/" data-nav-link> 整數</a>
         
             
-                <ul><li><a href="#占據記憶體bitbyte數量" data-nav-link " >占據記憶體bit,byte數量</a></li><li><a href="#自動轉型" data-nav-link " >自動轉型</a></li><li><a href="#強制轉型" data-nav-link " >強制轉型</a></li><li><a href="#預設整數常數型態" data-nav-link " >預設整數常數型態</a></li><li><a href="#範圍檢查" data-nav-link " >範圍檢查</a></li><li><a href="#不能把大的型態塞到小的型態" data-nav-link " >不能把大的型態塞到小的型態</a></li><li><a href="#byte" data-nav-link " >byte</a></li><li><a href="#short" data-nav-link " >short</a></li><li><a href="#byteshort計算" data-nav-link " >byte、short計算</a></li><li><a href="#long" data-nav-link " >long</a></li><li><a href="#int" data-nav-link " >int</a></li></ul>
+                <ul><li><a href="#占據記憶體bitbyte數量" data-nav-link " >占據記憶體bit,byte數量</a></li><li><a href="#自動轉型" data-nav-link " >自動轉型</a></li><li><a href="#強制轉型" data-nav-link " >強制轉型</a></li><li><a href="#預設整數常數型態" data-nav-link " >預設整數常數型態</a></li><li><a href="#範圍檢查" data-nav-link " >範圍檢查</a></li><li><a href="#不能把大的型態塞到小的型態" data-nav-link " >不能把大的型態塞到小的型態</a></li><li><a href="#byte" data-nav-link " >byte</a></li><li><a href="#short" data-nav-link " >short</a></li><li><a href="#byteshort計算" data-nav-link " >byte、short計算</a></li><li><a href="#long" data-nav-link " >long</a></li><li><a href="#int" data-nav-link " >int</a><ul><li><a href="#小數無條件捨去" data-nav-link " >小數無條件捨去</a></li></ul></li></ul>
 
             
         </li>
@@ -1454,7 +1454,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/char/" data-nav-link> char</a>
+    	<a href="/pages/java/char/" data-nav-link> char字元</a>
         
             
         </li>
@@ -1499,7 +1499,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/lr_shift_operator/" data-nav-link> 右移左移運算子</a>
+    	<a href="/pages/java/lr_shift_operator/" data-nav-link> 左移右移運算子</a>
         
             
         </li></ul></li>
@@ -2923,7 +2923,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>不能把4個格子int，存入1個格子byte，記憶體空間大小不一樣，以下程式碼編譯錯誤。</p>
+<p>不能把4個byte的int，存入1個byte的byte，記憶體空間大小不一樣，以下程式碼編譯錯誤。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2933,7 +2933,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>但反過來把1個格子的值存入4個格子中，是可以，從小房子搬到大房子。</p>
+<p>但反過來把1個byte的值存入4個byte中，是可以，從小房子搬到大房子。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3159,6 +3159,32 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<h3 id="小數無條件捨去">小數無條件捨去</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span><span class="mf">1.9</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+</code></pre></div></div>
+
+<p>int計算時，只保留整數，小數無條件捨去。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">/</span> <span class="mi">4</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3349,7 +3375,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-24 12:15:40 +0800"
+        "time": "2025-06-24 16:21:20 +0800"
     },
     "basePath": "",
     "book": {
