@@ -58,7 +58,8 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Expression|運算式|表達式|
 |Statement|陳述式|表達式|
 |assign = |指派或設為|賦值|
-
+|Increment operator|遞增|自增|
+|Decrement operator|遞減|自減|
 
 ## 變數相關
 

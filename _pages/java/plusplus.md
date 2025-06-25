@@ -1,15 +1,24 @@
 ---
-title: 變數++
+title: 遞增遞減運算子
 date: 2025-06-18
-keywords: Java, Postfix Increment, prefix increment
+keywords: Java, Increment operator, Decrement operator
 ---
+## 遞增遞減運算子
+遞增，就是自己加自己。<br>
+遞減，就是自己減自己。<br>
+
+### 沒有指派給其它變數
 k\+\+與\+\+k，若沒有指派給其它變數，二者都是k = k \+ 1。
 
-但指派給其它變數的話，k\+\+，k在前面，就是把k先跟其它運算子或[運算元][1]計算完後，最後才k = k \+ 1。
+### 有指派給其它變數
+#### k在前面
+k\+\+，k在前面，就是把k先指派給其它變數，最後才k = k \+ 1。
 
-\+\+k在後面，就是先k = k \+ 1，再跟其它運算子或[運算元][1]計算。
+#### k在後面
+\+\+k，k在後面，就是k先k = k \+ 1，再指派給其它變數。
 
-## \+\+在後面
+## k在前面
+先把k指派給j，然後k才遞增k = k \+ 1。
 {% highlight java linenos %}
 int k = 8;
 int j = k++;
@@ -19,44 +28,29 @@ System.out.println("k = " + k + ", j = " + j);
 k = 9, j = 8
 ```
 
-{% highlight java linenos %}
-int j = k++;
-{% endhighlight %}
-
-等同於
-
+`int j = k++;`等同於
 {% highlight java linenos %}
 int j = k;
 k = k + 1;
 {% endhighlight %}
 
-會先把k指派給j，然後k才加1。
-
-## \+\+在前面
+## k在後面
+k先遞增k = k \+ 1，然後指派給j。
 {% highlight java linenos %}
  int k = 8;
  int j = ++k;
  System.out.println("k = " + k + ", j = " + j);
 {% endhighlight %}
-```
 k = 9, j = 9
-```
 
-{% highlight java linenos %}
- int j = ++k;
-{% endhighlight %}
-
-等同於
-
+`int j = ++k;`等同於
 {% highlight java linenos %}
 k = k + 1;
 int j = k;
 {% endhighlight %}
-會先把k加1。
 
-然後指派給j。
-
-## \+\+沒有指派給變數
+## 沒有指派給其它變數
+k\+\+與\+\+k，若沒有指派給其它變數，二者都是k = k \+ 1。
 {% highlight java linenos %}
 int k = 8;
 ++k;
@@ -69,100 +63,100 @@ k = 9
 k = 10
 ```
 
-若沒有指派給變數，以下二句都是一模一樣，都是自增。`k = k + 1`
+若沒有指派給變數，以下二句都是一模一樣，都是遞增。`k = k + 1`
 {% highlight java linenos %}
 ++k;
 k++;
 {% endhighlight %}
 
-## \+\+給自己
-### \+\+在後面
+## 指派的變數是自己
+### k在前面
 {% highlight java linenos %}
 public class Test {
   public static void main(String[] args) {
-    int i = 1;
-    i = i++;
-    System.out.println("i = " + i);
+    int k = 1;
+    k = k++;
+    System.out.println("k = " + k);
   }
 }
 {% endhighlight %}
 ```
-i = 1
+k = 1
 ```
 
-編譯的時候，看到`i = i++;`，指派給自己，程式碼就會變成如下:
+編譯的時候，看到`k = k++;`，指派給自己，程式碼就會變成如下:
 
-1.會先建立一個暫存變數temp，代表最左邊的i。
+1.會先建立一個暫存變數temp，代表等號左邊的k。
 ```
-int temp = i;
-```
-
-2.自增
-```
-i = i + 1;
+int temp = k;
 ```
 
-3.把暫存變數，指派給i
+2.遞增
 ```
-i = temp;
+k = k + 1;
 ```
-### \+\+在前面
+
+3.把暫存變數，指派給k
+```
+k = temp;
+```
+### k在後面
 {% highlight java linenos %}
 public class Test {
   public static void main(String[] args) {
-    int i = 1;
-    i = ++i;
-    System.out.println("i = " + i);
+    int k = 1;
+    k = ++k;
+    System.out.println("k = " + k);  
   }
 }
 {% endhighlight %}
 ```
-i = 2
+k = 2
 ```
 
-編譯的時候，看到`i = ++i;`，指派給自己，程式碼就會變成如下:
+編譯的時候，看到`k = ++k;`，指派給自己，程式碼就會變成如下:
 
-1.先自增。
+1.先遞增。
 ```
-i = i + 1;
-```
-
-2.建立一個暫存變數temp，代表最左邊的i。
-```
-int temp = i;
+k = k + 1;
 ```
 
-3.把暫存變數，指派給i
+2.建立一個暫存變數temp，代表等號左邊的k。
 ```
-i = temp;
+int temp = k;
+```
+
+3.把暫存變數，指派給k
+```
+k = temp;
 ```
 
 ## 其它範例1
 {% highlight java linenos %}
-int i = 66;
-System.out.println(++i+i);
+int k = 66;
+System.out.println(++k+k);
 {% endhighlight %}
 ```
 134
 ```
 
-1.先自增。
+1.先遞增。
 ```
-++i;
+++k;
 ↓
-i = i + 1;
+k = k + 1;
 ```
-此時 i = 67
+此時 k = 67
 
-2.\+i
-\+\+i的結果為67，此時i是67。
+2.再加k，k是67。
 ```
-67 + i
+67 + k
 67 + 67
 ```
 134
 
 ## 其它範例2
+先把k變成負數，指派給i，然後k才遞增k = k \+ 1。
 {% highlight java linenos %}
 int i = 0, k = 5;
 i = -k++;
@@ -172,18 +166,15 @@ System.out.println("i = " + i + ", k = " + k);
 i = -5, k = 6
 ```
 
-```
-i = -k++;
-```
-k在前面，先處理k與其它運算子或[運算元][1]。
+`i = -k++;`k在前面，先處理k與其它運算子或[運算元][1]。
 
-1.先變負數
+1.k變成負數，指派給i
 ```
 i = -k;
 ↓
 i = -5;
 ```
-2.k自增
+2.k遞增，注意！此時k仍是5，不是-5。
 ```
 k = k + 1;
 ↓
