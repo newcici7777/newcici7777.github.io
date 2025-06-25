@@ -3,6 +3,12 @@ title: 變數++
 date: 2025-06-18
 keywords: Java, Postfix Increment, prefix increment
 ---
+k\+\+與\+\+k，若沒有指派給其它變數，二者都是k = k \+ 1。
+
+但指派給其它變數的話，k\+\+，k在前面，就是把k先跟其它運算子或[運算元][1]計算完後，最後才k = k \+ 1。
+
+\+\+k在後面，就是先k = k \+ 1，再跟其它運算子或[運算元][1]計算。
+
 ## \+\+在後面
 {% highlight java linenos %}
 int k = 8;
@@ -131,10 +137,10 @@ int temp = i;
 i = temp;
 ```
 
-## 其它範例
+## 其它範例1
 {% highlight java linenos %}
-    int i = 66;
-    System.out.println(++i+i);
+int i = 66;
+System.out.println(++i+i);
 {% endhighlight %}
 ```
 134
@@ -155,3 +161,36 @@ i = i + 1;
 67 + 67
 ```
 134
+
+## 其它範例2
+{% highlight java linenos %}
+int i = 0, k = 5;
+i = -k++;
+System.out.println("i = " + i + ", k = " + k);
+{% endhighlight %}
+```
+i = -5, k = 6
+```
+
+```
+i = -k++;
+```
+k在前面，先處理k與其它運算子或[運算元][1]。
+
+1.先變負數
+```
+i = -k;
+↓
+i = -5;
+```
+2.k自增
+```
+k = k + 1;
+↓
+k = 5 + 1
+```
+
+
+[1]: {% link _pages/java/operator.md %}
+
+

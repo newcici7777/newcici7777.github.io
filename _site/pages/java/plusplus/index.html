@@ -1430,6 +1430,13 @@
     	<a href="/pages/java/annotation/" data-nav-link> Annotation</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/debug/" data-nav-link> debug</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -1458,6 +1465,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/boolean/" data-nav-link> boolean</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/wrap/" data-nav-link> 基本型態與Wrapper Classes</a>
         
             
@@ -1468,14 +1482,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/mod/" data-nav-link> 餘數</a>
+    	<a href="/pages/java/operator/" data-nav-link> 運算子與運算元</a>
         
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/assign_cast/" data-nav-link> 算術運算子與轉型</a>
+    	<a href="/pages/java/mod/" data-nav-link> 餘數</a>
         
             
         </li>
@@ -1485,7 +1499,7 @@
     	<a href="/pages/java/plusplus/" data-nav-link> 變數++</a>
         
             
-                <ul><li><a href="#在後面" data-nav-link " >++在後面</a></li><li><a href="#在前面" data-nav-link " >++在前面</a></li><li><a href="#沒有指派給變數" data-nav-link " >++沒有指派給變數</a></li><li><a href="#給自己" data-nav-link " >++給自己</a><ul><li><a href="#在後面-1" data-nav-link " >++在後面</a></li><li><a href="#在前面-1" data-nav-link " >++在前面</a></li></ul></li><li><a href="#其它範例" data-nav-link " >其它範例</a></li></ul>
+                <ul><li><a href="#在後面" data-nav-link " >++在後面</a></li><li><a href="#在前面" data-nav-link " >++在前面</a></li><li><a href="#沒有指派給變數" data-nav-link " >++沒有指派給變數</a></li><li><a href="#給自己" data-nav-link " >++給自己</a><ul><li><a href="#在後面-1" data-nav-link " >++在後面</a></li><li><a href="#在前面-1" data-nav-link " >++在前面</a></li></ul></li><li><a href="#其它範例1" data-nav-link " >其它範例1</a></li><li><a href="#其它範例2" data-nav-link " >其它範例2</a></li></ul>
 
             
         </li>
@@ -1500,6 +1514,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/lr_shift_operator/" data-nav-link> 左移右移運算子</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/base_system/" data-nav-link> 進位</a>
         
             
         </li></ul></li>
@@ -2854,7 +2875,13 @@
                         <h1 id="/pages/java/plusplus">變數++</h1>
                     
 
-                    <h2 id="在後面">++在後面</h2>
+                    <p>k++與++k，若沒有指派給其它變數，二者都是k = k + 1。</p>
+
+<p>但指派給其它變數的話，k++，k在前面，就是把k先跟其它運算子或<a href="/pages/java/operator/">運算元</a>計算完後，最後才k = k + 1。</p>
+
+<p>++k在後面，就是先k = k + 1，再跟其它運算子或<a href="/pages/java/operator/">運算元</a>計算。</p>
+
+<h2 id="在後面">++在後面</h2>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3026,13 +3053,13 @@ k = 10
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = temp;
 </code></pre></div></div>
 
-<h2 id="其它範例">其它範例</h2>
+<h2 id="其它範例1">其它範例1</h2>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="code"><pre>    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">66</span><span class="o">;</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(++</span><span class="n">i</span><span class="o">+</span><span class="n">i</span><span class="o">);</span>
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">66</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(++</span><span class="n">i</span><span class="o">+</span><span class="n">i</span><span class="o">);</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -3052,6 +3079,37 @@ i = i + 1;
 67 + 67
 </code></pre></div></div>
 <p>134</p>
+
+<h2 id="其它範例2">其它範例2</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>
+<span class="n">i</span> <span class="o">=</span> <span class="o">-</span><span class="n">k</span><span class="o">++;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"i = "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">", k = "</span> <span class="o">+</span> <span class="n">k</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = -5, k = 6
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = -k++;
+</code></pre></div></div>
+<p>k在前面，先處理k與其它運算子或<a href="/pages/java/operator/">運算元</a>。</p>
+
+<p>1.先變負數</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = -k;
+↓
+i = -5;
+</code></pre></div></div>
+<p>2.k自增</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>k = k + 1;
+↓
+k = 5 + 1
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3115,7 +3173,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/java/assign_cast" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 算術運算子與轉型">
+                        <a href="/pages/java/mod" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 餘數">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -3242,7 +3300,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-24 16:21:20 +0800"
+        "time": "2025-06-25 14:40:12 +0800"
     },
     "basePath": "",
     "book": {

@@ -1430,6 +1430,13 @@
     	<a href="/pages/java/annotation/" data-nav-link> Annotation</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/debug/" data-nav-link> debug</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -1440,7 +1447,7 @@
     	<a href="/pages/java/number/" data-nav-link> 整數</a>
         
             
-                <ul><li><a href="#占據記憶體bitbyte數量" data-nav-link " >占據記憶體bit,byte數量</a></li><li><a href="#自動轉型" data-nav-link " >自動轉型</a></li><li><a href="#強制轉型" data-nav-link " >強制轉型</a></li><li><a href="#預設整數常數型態" data-nav-link " >預設整數常數型態</a></li><li><a href="#範圍檢查" data-nav-link " >範圍檢查</a></li><li><a href="#不能把大的型態塞到小的型態" data-nav-link " >不能把大的型態塞到小的型態</a></li><li><a href="#byte" data-nav-link " >byte</a></li><li><a href="#short" data-nav-link " >short</a></li><li><a href="#byteshort計算" data-nav-link " >byte、short計算</a></li><li><a href="#long" data-nav-link " >long</a></li><li><a href="#int" data-nav-link " >int</a><ul><li><a href="#小數無條件捨去" data-nav-link " >小數無條件捨去</a></li></ul></li></ul>
+                <ul><li><a href="#占據記憶體bitbyte數量" data-nav-link " >占據記憶體bit,byte數量</a></li><li><a href="#自動轉型" data-nav-link " >自動轉型</a></li><li><a href="#強制轉型" data-nav-link " >強制轉型</a></li><li><a href="#預設整數常數型態" data-nav-link " >預設整數常數型態</a></li><li><a href="#範圍檢查" data-nav-link " >範圍檢查</a></li><li><a href="#不能把大的型態塞到小的型態" data-nav-link " >不能把大的型態塞到小的型態</a></li><li><a href="#byte" data-nav-link " >byte</a></li><li><a href="#short" data-nav-link " >short</a></li><li><a href="#byteshort計算" data-nav-link " >byte、short計算</a></li><li><a href="#byte-short不能與char互相轉換" data-nav-link " >byte short不能與char互相轉換。</a></li><li><a href="#long" data-nav-link " >long</a></li><li><a href="#int" data-nav-link " >int</a><ul><li><a href="#小數無條件捨去" data-nav-link " >小數無條件捨去</a></li></ul></li><li><a href="#整數與string互相轉型" data-nav-link " >整數與String互相轉型</a></li></ul>
 
             
         </li>
@@ -1461,6 +1468,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/boolean/" data-nav-link> boolean</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/wrap/" data-nav-link> 基本型態與Wrapper Classes</a>
         
             
@@ -1471,14 +1485,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/mod/" data-nav-link> 餘數</a>
+    	<a href="/pages/java/operator/" data-nav-link> 運算子與運算元</a>
         
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/assign_cast/" data-nav-link> 算術運算子與轉型</a>
+    	<a href="/pages/java/mod/" data-nav-link> 餘數</a>
         
             
         </li>
@@ -1500,6 +1514,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/lr_shift_operator/" data-nav-link> 左移右移運算子</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/base_system/" data-nav-link> 進位</a>
         
             
         </li></ul></li>
@@ -2969,6 +2990,24 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<p>強制轉型只會轉型離自己最近的變數。</p>
+
+<p>以下編譯錯誤，因為只有強制轉型10，並非轉型整個公式的結果。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i2</span> <span class="o">=</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span><span class="mi">10</span> <span class="o">*</span> <span class="mf">1.1</span> <span class="o">*</span> <span class="mi">5</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>正確寫法如下，使用圓括號(公式)，強制轉型公式的結果。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i2</span> <span class="o">=</span> <span class="o">(</span><span class="kt">int</span><span class="o">)(</span><span class="mi">10</span> <span class="o">*</span> <span class="mf">1.1</span> <span class="o">*</span> <span class="mi">5</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 <h2 id="預設整數常數型態">預設整數常數型態</h2>
 <p>什麼是常數？等號右邊若為數字或字串，這些就是常數。</p>
 
@@ -3093,7 +3132,7 @@
 <h2 id="byteshort計算">byte、short計算</h2>
 <p>byte、short計算結果是int，不能把int塞入byte或short。</p>
 
-<p>以下b1 + s1是int型態。</p>
+<p>以下b1 + s1是int型態，以下編譯錯誤。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3105,7 +3144,19 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>以下b1 + b2是int型態。</p>
+<p>以下s1 + s2是int型態，以下編譯錯誤。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>  <span class="kt">short</span> <span class="n">s1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kt">short</span> <span class="n">s2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kt">short</span> <span class="n">s3</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下b1 + b2是int型態，以下編譯錯誤。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3117,15 +3168,50 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>以下s1 + s2是int型態。</p>
+<p>正確的方式，把計算過後的值指派給int。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre>  <span class="kt">byte</span> <span class="n">s1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
-  <span class="kt">byte</span> <span class="n">s2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
-  <span class="kt">byte</span> <span class="n">s3</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span><span class="o">;</span>
+</pre></td><td class="code"><pre>  <span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kt">byte</span> <span class="n">b2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">b1</span> <span class="o">+</span> <span class="n">b2</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>正確的方式，把計算結果強制轉型成byte，需要把公式用圓括號()包住，之前有提過強制轉型只轉型最近的變數，不包住就只轉型b1。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>  <span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kt">byte</span> <span class="n">b2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kt">byte</span> <span class="n">b3</span> <span class="o">=</span> <span class="o">(</span><span class="kt">byte</span><span class="o">)(</span><span class="n">b1</span> <span class="o">+</span> <span class="n">b2</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="byte-short不能與char互相轉換">byte short不能與char互相轉換。</h2>
+<p>byte是1byte，char是2byte，byte比char小，但也不能指派給char。</p>
+
+<p>以下編譯錯誤。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>  <span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="n">b1</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下編譯錯誤。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>  <span class="kt">short</span> <span class="n">s1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="n">s1</span><span class="o">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -3184,6 +3270,73 @@
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
 </code></pre></div></div>
+
+<h2 id="整數與string互相轉型">整數與String互相轉型</h2>
+<p>整數轉String使用 + ""</p>
+
+<p>String轉成其它基本型態，每個基本型態都有對映的包裝類別，包裝類別有提供一個parseXX()方法，提供String轉型成某個數字類型。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre><span class="kt">byte</span> <span class="n">b1</span> <span class="o">=</span> <span class="nc">Byte</span><span class="o">.</span><span class="na">parseByte</span><span class="o">(</span><span class="s">"127"</span><span class="o">);</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">b1</span><span class="o">);</span>
+<span class="nc">String</span> <span class="n">strb1</span> <span class="o">=</span> <span class="n">b1</span> <span class="o">+</span> <span class="s">""</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">strb1</span><span class="o">);</span>
+
+<span class="kt">short</span> <span class="n">s1</span> <span class="o">=</span> <span class="nc">Short</span><span class="o">.</span><span class="na">parseShort</span><span class="o">(</span><span class="s">"55"</span><span class="o">);</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s1</span><span class="o">);</span>
+<span class="nc">String</span> <span class="n">strs1</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="s">""</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">strs1</span><span class="o">);</span>
+
+<span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="s">"100"</span><span class="o">);</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i1</span><span class="o">);</span>
+<span class="nc">String</span> <span class="n">stri1</span> <span class="o">=</span> <span class="n">i1</span> <span class="o">+</span> <span class="s">""</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">stri1</span><span class="o">);</span>
+
+<span class="kt">long</span> <span class="n">l1</span> <span class="o">=</span> <span class="nc">Long</span><span class="o">.</span><span class="na">parseLong</span><span class="o">(</span><span class="s">"1000"</span><span class="o">);</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">l1</span><span class="o">);</span>
+<span class="nc">String</span> <span class="n">strl1</span> <span class="o">=</span> <span class="n">l1</span> <span class="o">+</span> <span class="s">""</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">strl1</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127
+127
+55
+55
+100
+100
+1000
+1000
+</code></pre></div></div>
+
+<p>也可以使用String.valueOf()來轉型成String。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i2</span> <span class="o">=</span> <span class="mi">98</span><span class="o">;</span>
+<span class="nc">String</span> <span class="n">s</span> <span class="o">=</span> <span class="nc">String</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="n">i2</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 </section>
             </div><div class="search-results">
@@ -3248,7 +3401,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/java/annotation" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Annotation">
+                        <a href="/pages/java/debug" class="navigation navigation-prev navigation-unique" aria-label="Previous page: debug">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -3375,7 +3528,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-24 16:21:20 +0800"
+        "time": "2025-06-25 14:40:12 +0800"
     },
     "basePath": "",
     "book": {

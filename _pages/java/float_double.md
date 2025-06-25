@@ -164,26 +164,19 @@ double d2 = 12.0;
 ## 科學記號法
 科學記號法可以使用e或E，若是float，後面要加上f或F。
 
-### 10進位系統
+1e1 = $ 1 \times 10^{1} $ 
 
-![img]({{site.imgurl}}/java/decimal.png)
+1E2 = $ 1 \times 10^{2} $
 
-左移1位乘10，代表進1位。 個位數 1 &times 10 = 10  變成十位數。
+1e3 = $ 1 \times 10^{3} $
 
-右移1位除10，代表退1位。 個位數 1 &divide 10 = 0.1 變成十分位。
+1e-1 = $ 1 \times 10^{-1} = 1\div10 $
 
-### 科學記號法
-1e1 = $ 1 \times 10^{1} = 1 \times 10$ 
+1E-2 = $ 1 \times 10^{-2} = 1 \div 100 $
 
-1E2 = $ 1 \times 10^{2} = 1 \times 10 \times 10$
+1E-3 = $ 1 \times 10^{-3} = 1 \div 1000 $
 
-1e3 = $ 1 \times 10^{3} = 1 \times 10 \times 10 \times 10$
-
-1e-1 = $ 1 \times 10^{-1} = 1 \times 0.1 = 1 \times \frac{1}{10} =  1\div10$
-
-1E-2 = $ 1 \times 10^{-2} = 1 \times 0.01 = 1 \times \frac{1}{10} \times \frac{1}{10} =  1 \times \frac{1}{100} = 1 \div 10 \div 10$
-
-1E-3 = $ 1 \times 10^{-3} = 1 \times 0.001 = 1 \times \frac{1}{10} \times \frac{1}{10} \times \frac{1}{10} =  1 \times \frac{1}{1000} = 1 \div 10 \div 10 \div 10$
+若忘了科學記號法，可查看[十進位系統][1]。
 
 #### 指數為正
 {% highlight java linenos %}
@@ -228,3 +221,22 @@ public class Type {
 0.1
 0.01
 ```
+
+## 整數、浮點數與String互相轉型
+浮點數轉String使用 \+ \"\"，小數點也會跟著顯示出來。
+{% highlight java linenos %}
+double d5 = 98.0;
+String s2 = d5 + "";
+System.out.println(s2);
+{% endhighlight %}
+```
+98.0
+```
+
+String轉成其它基本型態，每個基本型態都有對映的包裝類別，包裝類別有提供一個parseXX()方法，提供String轉型成某個數字類型。
+{% highlight java linenos %}
+double d6 = Double.parseDouble("66.6");
+float f3 = Float.parseFloat("55.4");
+{% endhighlight %}
+
+[1]: {% link _pages/math/carry10.md %}

@@ -465,7 +465,7 @@
     	<a href="/pages/c/string/chineseAscii/" data-nav-link> ASCII與中文</a>
         
             
-                <ul><li><a href="#印出中文ascii-code" data-nav-link " >印出中文Ascii code</a></li><li><a href="#使用中文ascii-code指定陣列值" data-nav-link " >使用中文Ascii Code指定陣列值</a></li><li><a href="#統計中文個數" data-nav-link " >統計中文個數</a></li></ul>
+                <ul><li><a href="#印出中文ascii-code" data-nav-link " >印出中文Ascii code</a></li><li><a href="#使用中文ascii-code指定陣列值" data-nav-link " >使用中文Ascii Code指定陣列值</a></li><li><a href="#統計中文個數" data-nav-link " >統計中文個數</a></li><li><a href="#unicode與utf-8" data-nav-link " >Unicode與utf-8</a></li></ul>
 
             
         </li></ul></li></ul></li>
@@ -1433,6 +1433,13 @@
     	<a href="/pages/java/annotation/" data-nav-link> Annotation</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/debug/" data-nav-link> debug</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -1461,6 +1468,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/boolean/" data-nav-link> boolean</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/wrap/" data-nav-link> 基本型態與Wrapper Classes</a>
         
             
@@ -1471,14 +1485,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/mod/" data-nav-link> 餘數</a>
+    	<a href="/pages/java/operator/" data-nav-link> 運算子與運算元</a>
         
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/assign_cast/" data-nav-link> 算術運算子與轉型</a>
+    	<a href="/pages/java/mod/" data-nav-link> 餘數</a>
         
             
         </li>
@@ -1500,6 +1514,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/lr_shift_operator/" data-nav-link> 左移右移運算子</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/base_system/" data-nav-link> 進位</a>
         
             
         </li></ul></li>
@@ -3115,6 +3136,14 @@ str[5]=191
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5
 </code></pre></div></div>
+
+<h2 id="unicode與utf-8">Unicode與utf-8</h2>
+<p>Ascii Code只能支持英語美語，大小只有128，只有正整數沒有負數。</p>
+
+<p>因為要支援其它國家的語言，才會有Unicode，Unicode包含Ascii，中文字佔2byte、英文字佔2byte，但英文字占太多記憶體大小。</p>
+
+<p>utf-8，比Unicode更省記憶體大小，英文佔1byte，中文佔3byte。</p>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3305,7 +3334,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-24 16:21:20 +0800"
+        "time": "2025-06-25 14:40:12 +0800"
     },
     "basePath": "",
     "book": {

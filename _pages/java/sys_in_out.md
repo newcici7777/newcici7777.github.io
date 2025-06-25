@@ -22,22 +22,31 @@ Scanner scanner = new Scanner(System.in);
 
 Scanner會去鍵盤輸入串流中取得資料。
 
-使用next()方法取得字串。
+### next(),nextInt(),nextDouble()
+當執行到next開頭的方法，終端機會等待使用者輸入，直到使用者輸入才執行下一行程式。
 {% highlight java linenos %}
 public class Test {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Please input:");
-    String next = scanner.next();
-    System.out.println(next);
+    System.out.println("請輸入名字:");
+    String name = scanner.next();  // 字串
+    System.out.println("請輸入年齡:");
+    int age = scanner.nextInt();  // int
+    System.out.println("請輸入體重");
+    double weight = scanner.nextDouble();
+    System.out.println("name = " + name + ", age = " + age + ", weight = " + weight);
   }
 }
 {% endhighlight %}
-
-使用nextInt()，取得數字。
-{% highlight java linenos %}
-int next1 = scanner.nextInt();
-{% endhighlight %}
+```
+請輸入名字:
+cici
+請輸入年齡:
+10
+請輸入體重
+25.5
+name = cici, age = 10, weight = 25.5
+```
 
 ## System.out
 執行類型是PrintStream，將資料顯示在螢幕。

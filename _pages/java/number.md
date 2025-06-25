@@ -69,6 +69,18 @@ int i1 = 127;
 byte b1 = (byte) i1;
 {% endhighlight %}
 
+強制轉型只會轉型離自己最近的變數。
+
+以下編譯錯誤，因為只有強制轉型10，並非轉型整個公式的結果。
+{% highlight java linenos %}
+int i2 = (int)10 * 1.1 * 5;
+{% endhighlight %}
+
+正確寫法如下，使用圓括號\(公式\)，強制轉型公式的結果。
+{% highlight java linenos %}
+int i2 = (int)(10 * 1.1 * 5);
+{% endhighlight %}
+
 ## 預設整數常數型態
 什麼是常數？等號右邊若為數字或字串，這些就是常數。
 {% highlight java linenos %}
@@ -151,25 +163,54 @@ short等號右邊的範圍大小就是-32768 至 32767，超過就會編譯錯�
 ## byte、short計算
 byte、short計算結果是int，不能把int塞入byte或short。
 
-以下b1 \+ s1是int型態。
+以下b1 \+ s1是int型態，以下編譯錯誤。
 {% highlight java linenos %}
   byte b1 = 1;
   short s1 = 1;
   short s2 = b1 + s1;
 {% endhighlight %}
 
-以下b1 \+ b2是int型態。
+以下s1 \+ s2是int型態，以下編譯錯誤。
+{% highlight java linenos %}
+  short s1 = 1;
+  short s2 = 1;
+  short s3 = s1 + s2;
+{% endhighlight %}
+
+以下b1 \+ b2是int型態，以下編譯錯誤。
 {% highlight java linenos %}
   byte b1 = 1;
   byte b2 = 1;
   byte b3 = b1 + b2;
 {% endhighlight %}
 
-以下s1 \+ s2是int型態。
+正確的方式，把計算過後的值指派給int。
 {% highlight java linenos %}
-  byte s1 = 1;
-  byte s2 = 1;
-  byte s3 = s1 + s2;
+  byte b1 = 1;
+  byte b2 = 1;
+  int i = b1 + b2;
+{% endhighlight %}
+
+正確的方式，把計算結果強制轉型成byte，需要把公式用圓括號\(\)包住，之前有提過強制轉型只轉型最近的變數，不包住就只轉型b1。
+{% highlight java linenos %}
+  byte b1 = 1;
+  byte b2 = 1;
+  byte b3 = (byte)(b1 + b2);
+{% endhighlight %}
+
+## byte short不能與char互相轉換。
+byte是1byte，char是2byte，byte比char小，但也不能指派給char。
+
+以下編譯錯誤。
+{% highlight java linenos %}
+  byte b1 = 1;
+  char c = b1;
+{% endhighlight %}
+
+以下編譯錯誤。
+{% highlight java linenos %}
+  short s1 = 1;
+  char c = s1;
 {% endhighlight %}
 
 ## long
@@ -210,6 +251,48 @@ System.out.println(i);
 ```
 2
 ```
+
+## 整數與String互相轉型
+整數轉String使用 \+ \"\"
+
+String轉成其它基本型態，每個基本型態都有對映的包裝類別，包裝類別有提供一個parseXX()方法，提供String轉型成某個數字類型。
+{% highlight java linenos %}
+byte b1 = Byte.parseByte("127");
+System.out.println(b1);
+String strb1 = b1 + "";
+System.out.println(strb1);
+
+short s1 = Short.parseShort("55");
+System.out.println(s1);
+String strs1 = s1 + "";
+System.out.println(strs1);
+
+int i1 = Integer.parseInt("100");
+System.out.println(i1);
+String stri1 = i1 + "";
+System.out.println(stri1);
+
+long l1 = Long.parseLong("1000");
+System.out.println(l1);
+String strl1 = l1 + "";
+System.out.println(strl1);
+{% endhighlight %}
+```
+127
+127
+55
+55
+100
+100
+1000
+1000
+```
+
+也可以使用String.valueOf()來轉型成String。
+{% highlight java linenos %}
+int i2 = 98;
+String s = String.valueOf(i2);
+{% endhighlight %}
 
 [1]: {% link _pages/c/basic/typicalRange.md %}
 [2]: {% link _pages/c/basic/typedef.md %}

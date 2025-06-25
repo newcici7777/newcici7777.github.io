@@ -1430,6 +1430,13 @@
     	<a href="/pages/java/annotation/" data-nav-link> Annotation</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/debug/" data-nav-link> debug</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -1447,7 +1454,7 @@
     	<a href="/pages/java/float_double/" data-nav-link> float與double</a>
         
             
-                <ul><li><a href="#float" data-nav-link " >float</a><ul><li><a href="#只能保留小數點後7位" data-nav-link " >只能保留小數點後7位</a></li></ul></li><li><a href="#double" data-nav-link " >double</a><ul><li><a href="#預設值" data-nav-link " >預設值</a></li><li><a href="#宣告與初始化" data-nav-link " >宣告與初始化</a></li><li><a href="#自動轉型與強制轉型" data-nav-link " >自動轉型與強制轉型</a></li><li><a href="#計算時自動轉型" data-nav-link " >計算時自動轉型</a></li><li><a href="#小數點精準度比float高" data-nav-link " >小數點精準度比float高</a></li><li><a href="#近似值" data-nav-link " >近似值</a></li><li><a href="#055可以不用寫0" data-nav-link " >0.55可以不用寫0</a></li><li><a href="#指派整數" data-nav-link " >指派整數</a></li></ul></li><li><a href="#顯示小數位" data-nav-link " >顯示小數位</a></li><li><a href="#科學記號法" data-nav-link " >科學記號法</a><ul><li><a href="#10進位系統" data-nav-link " >10進位系統</a></li><li><a href="#科學記號法-1" data-nav-link " >科學記號法</a></li></ul></li></ul>
+                <ul><li><a href="#float" data-nav-link " >float</a><ul><li><a href="#只能保留小數點後7位" data-nav-link " >只能保留小數點後7位</a></li></ul></li><li><a href="#double" data-nav-link " >double</a><ul><li><a href="#預設值" data-nav-link " >預設值</a></li><li><a href="#宣告與初始化" data-nav-link " >宣告與初始化</a></li><li><a href="#自動轉型與強制轉型" data-nav-link " >自動轉型與強制轉型</a></li><li><a href="#計算時自動轉型" data-nav-link " >計算時自動轉型</a></li><li><a href="#小數點精準度比float高" data-nav-link " >小數點精準度比float高</a></li><li><a href="#近似值" data-nav-link " >近似值</a></li><li><a href="#055可以不用寫0" data-nav-link " >0.55可以不用寫0</a></li><li><a href="#指派整數" data-nav-link " >指派整數</a></li></ul></li><li><a href="#顯示小數位" data-nav-link " >顯示小數位</a></li><li><a href="#科學記號法" data-nav-link " >科學記號法</a></li><li><a href="#整數浮點數與string互相轉型" data-nav-link " >整數、浮點數與String互相轉型</a></li></ul>
 
             
         </li>
@@ -1455,6 +1462,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/char/" data-nav-link> char字元</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/boolean/" data-nav-link> boolean</a>
         
             
         </li>
@@ -1471,14 +1485,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/mod/" data-nav-link> 餘數</a>
+    	<a href="/pages/java/operator/" data-nav-link> 運算子與運算元</a>
         
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/assign_cast/" data-nav-link> 算術運算子與轉型</a>
+    	<a href="/pages/java/mod/" data-nav-link> 餘數</a>
         
             
         </li>
@@ -1500,6 +1514,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/lr_shift_operator/" data-nav-link> 左移右移運算子</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/base_system/" data-nav-link> 進位</a>
         
             
         </li></ul></li>
@@ -3100,26 +3121,19 @@
 <h2 id="科學記號法">科學記號法</h2>
 <p>科學記號法可以使用e或E，若是float，後面要加上f或F。</p>
 
-<h3 id="10進位系統">10進位系統</h3>
+<p>1e1 = $ 1 \times 10^{1} $</p>
 
-<p><img src="/assets/img/java/decimal.png" alt="img" /></p>
+<p>1E2 = $ 1 \times 10^{2} $</p>
 
-<p>左移1位乘10，代表進1位。 個位數 1 &amp;times 10 = 10  變成十位數。</p>
+<p>1e3 = $ 1 \times 10^{3} $</p>
 
-<p>右移1位除10，代表退1位。 個位數 1 &amp;divide 10 = 0.1 變成十分位。</p>
+<p>1e-1 = $ 1 \times 10^{-1} = 1\div10 $</p>
 
-<h3 id="科學記號法-1">科學記號法</h3>
-<p>1e1 = $ 1 \times 10^{1} = 1 \times 10$</p>
+<p>1E-2 = $ 1 \times 10^{-2} = 1 \div 100 $</p>
 
-<p>1E2 = $ 1 \times 10^{2} = 1 \times 10 \times 10$</p>
+<p>1E-3 = $ 1 \times 10^{-3} = 1 \div 1000 $</p>
 
-<p>1e3 = $ 1 \times 10^{3} = 1 \times 10 \times 10 \times 10$</p>
-
-<p>1e-1 = $ 1 \times 10^{-1} = 1 \times 0.1 = 1 \times \frac{1}{10} =  1\div10$</p>
-
-<p>1E-2 = $ 1 \times 10^{-2} = 1 \times 0.01 = 1 \times \frac{1}{10} \times \frac{1}{10} =  1 \times \frac{1}{100} = 1 \div 10 \div 10$</p>
-
-<p>1E-3 = $ 1 \times 10^{-3} = 1 \times 0.001 = 1 \times \frac{1}{10} \times \frac{1}{10} \times \frac{1}{10} =  1 \times \frac{1}{1000} = 1 \div 10 \div 10 \div 10$</p>
+<p>若忘了科學記號法，可查看<a href="/pages/math/carry10/">十進位系統</a>。</p>
 
 <h4 id="指數為正">指數為正</h4>
 
@@ -3192,6 +3206,33 @@
 0.1
 0.01
 </code></pre></div></div>
+
+<h2 id="整數浮點數與string互相轉型">整數、浮點數與String互相轉型</h2>
+<p>浮點數轉String使用 + ""，小數點也會跟著顯示出來。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kt">double</span> <span class="n">d5</span> <span class="o">=</span> <span class="mf">98.0</span><span class="o">;</span>
+<span class="nc">String</span> <span class="n">s2</span> <span class="o">=</span> <span class="n">d5</span> <span class="o">+</span> <span class="s">""</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s2</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>98.0
+</code></pre></div></div>
+
+<p>String轉成其它基本型態，每個基本型態都有對映的包裝類別，包裝類別有提供一個parseXX()方法，提供String轉型成某個數字類型。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">double</span> <span class="n">d6</span> <span class="o">=</span> <span class="nc">Double</span><span class="o">.</span><span class="na">parseDouble</span><span class="o">(</span><span class="s">"66.6"</span><span class="o">);</span>
+<span class="kt">float</span> <span class="n">f3</span> <span class="o">=</span> <span class="nc">Float</span><span class="o">.</span><span class="na">parseFloat</span><span class="o">(</span><span class="s">"55.4"</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3382,7 +3423,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-24 16:21:20 +0800"
+        "time": "2025-06-25 14:40:12 +0800"
     },
     "basePath": "",
     "book": {
