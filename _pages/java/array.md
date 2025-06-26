@@ -8,6 +8,7 @@ keywords: Java, array
 {% highlight java linenos %}
 char[] arr1 = {'H', 'e', 'l', 'l', 'o'};
 int[] arr2 = {0, 1, 2, 3};
+int[] arr3 = new int[]{1, 2, 3};
 {% endhighlight %}
 
 ## 動態分配

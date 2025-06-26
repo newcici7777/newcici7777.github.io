@@ -1399,13 +1399,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/array/" data-nav-link> 陣列</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/final/" data-nav-link> final</a>
         
             
@@ -1437,7 +1430,7 @@
     	<a href="/pages/java/debug/" data-nav-link> debug</a>
         
             
-                
+                <ul><li><a href="#對jdk進行debug" data-nav-link " >對JDK進行Debug</a><ul><li><a href="#沒有force-step-into的按鈕" data-nav-link " >沒有force step into的按鈕</a></li><li><a href="#測試" data-nav-link " >測試</a></li></ul></li><li><a href="#console" data-nav-link " >console</a></li></ul>
 
             
         </li></ul></li>
@@ -1499,7 +1492,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/plusplus/" data-nav-link> 變數++</a>
+    	<a href="/pages/java/plusplus/" data-nav-link> 遞增遞減運算子</a>
         
             
         </li>
@@ -1521,6 +1514,37 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/base_system/" data-nav-link> 進位</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 陣列與集合 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/array/" data-nav-link> 陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/arrays/" data-nav-link> Arrays方法與System方法</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/arrays_sort/" data-nav-link> Arrays.sort()</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/compare/" data-nav-link> Comparable與Comparator</a>
         
             
         </li></ul></li>
@@ -1576,6 +1600,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/string_io/" data-nav-link> String與char[]和byte[]</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/string_compareto/" data-nav-link> String compareTo原始碼</a>
         
             
         </li></ul></li>
@@ -1787,13 +1818,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/exception/" data-nav-link> Exception</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/compare/" data-nav-link> Comparable與Comparator</a>
         
             
         </li>
@@ -2875,7 +2899,99 @@
                         <h1 id="/pages/java/debug">debug</h1>
                     
 
-                    <p><img src="/assets/img/editor/debug1.png" alt="img" /></p>
+                    <h2 id="對jdk進行debug">對JDK進行Debug</h2>
+<p>有時候要追到jdk原始碼裡面來debug，但要有以下的設定才能setp into JDK原始碼。</p>
+
+<p>IntelliJ -&gt; Settings</p>
+
+<p><img src="/assets/img/editor/debug1.png" alt="img" /></p>
+
+<p>把勾勾取消，代表可以進入jdk原始碼。</p>
+
+<h3 id="沒有force-step-into的按鈕">沒有force step into的按鈕</h3>
+<p>上面的設定有設的話，基本的step into(F7)就可以進到JDK原始碼。</p>
+
+<p>如果還是沒辦法進去JDK原始碼，就要試著force step into。</p>
+
+<p>以下步驟可以產生force step into按鈕，可以透過force step into進入JDK原始碼。</p>
+
+<p><img src="/assets/img/editor/debug2.png" alt="img" /></p>
+
+<p><img src="/assets/img/editor/debug3.png" alt="img" /></p>
+
+<p><img src="/assets/img/editor/debug4.png" alt="img" /></p>
+
+<p><img src="/assets/img/editor/debug5.png" alt="img" /></p>
+
+<p><img src="/assets/img/editor/debug6.png" alt="img" /></p>
+
+<p>Force step into快速鍵。</p>
+
+<p>macOS：Option + Shift + F7</p>
+
+<p>Windows：Alt + Shift + F7</p>
+
+<h3 id="測試">測試</h3>
+<p>請在Arrays.sort()這一行設中斷點。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Type</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="o">{</span><span class="mi">100</span><span class="o">,</span> <span class="mi">20</span><span class="o">,</span> <span class="mi">64</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">98</span><span class="o">};</span>
+    <span class="nc">Arrays</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">arr</span><span class="o">);</span>  <span class="c1">// 設中斷點</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p><img src="/assets/img/editor/debug7.png" alt="img" /></p>
+
+<p>然後滑鼠右鍵，按Debug。</p>
+
+<p><img src="/assets/img/editor/debug8.png" alt="img" /></p>
+
+<p>然後按step into的按鈕，或者按F7，檢查是否進入JDK原始碼。</p>
+
+<p><img src="/assets/img/editor/debug9.png" alt="img" /></p>
+
+<p>若要離開方法，按step out。</p>
+
+<p>執行下一行，setp over。</p>
+
+<h2 id="console">console</h2>
+<p>請在<code class="language-plaintext highlighter-rouge">System.out.println(arr[i]);</code>設中斷點。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="o">{</span><span class="mi">100</span><span class="o">,</span> <span class="mi">20</span><span class="o">,</span> <span class="mi">64</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">98</span><span class="o">};</span>
+<span class="nc">Arrays</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">arr</span><span class="o">);</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>然後Debug。</p>
+
+<p>執行setp over，移到下一行。</p>
+
+<p>console的部分有黃色圖示，代表有資料在console顯示。</p>
+
+<p><img src="/assets/img/editor/debug10.png" alt="img" /></p>
+
+<p>切換至console。</p>
+
+<p><img src="/assets/img/editor/debug11.png" alt="img" /></p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3066,7 +3182,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-25 14:40:12 +0800"
+        "time": "2025-06-26 15:24:40 +0800"
     },
     "basePath": "",
     "book": {

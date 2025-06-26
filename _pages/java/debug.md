@@ -36,12 +36,12 @@ macOS：Option + Shift + F7
 Windows：Alt + Shift + F7
 
 ### 測試
-請在Arrays.sort()這一行下中斷點。
+請在Arrays.sort()這一行設中斷點。
 {% highlight java linenos %}
 public class Type {
   public static void main(String[] args) {
     int[] arr = {100, 20, 64, 1, 98};
-    Arrays.sort(arr);  // 下中斷點
+    Arrays.sort(arr);  // 設中斷點
   }
 }
 {% endhighlight %}
@@ -59,3 +59,25 @@ public class Type {
 若要離開方法，按step out。
 
 執行下一行，setp over。
+
+## console
+請在`System.out.println(arr[i]);`設中斷點。
+{% highlight java linenos %}
+int[] arr = {100, 20, 64, 1, 98};
+Arrays.sort(arr);
+for (int i = 0; i < arr.length; i++) {
+  System.out.println(arr[i]);
+}
+{% endhighlight %}
+
+然後Debug。
+
+執行setp over，移到下一行。
+
+console的部分有黃色圖示，代表有資料在console顯示。
+
+![img]({{site.imgurl}}/editor/debug10.png)
+
+切換至console。
+
+![img]({{site.imgurl}}/editor/debug11.png)

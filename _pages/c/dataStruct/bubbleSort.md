@@ -264,6 +264,34 @@ int main() {
 1, 2, 3, 4, 5, 6, 
 ```
 
+外層迴圈的作用是執行5次，所以下面的程式碼可以確保外層迴圈執行5次。
+{% highlight c++ linenos %}
+int main() {
+  int arr[] = {6, 5, 4, 3, 2, 1};
+  // loop_count迴圈次數 5 -> 4 -> 3 -> 2 -> 1
+  int loop_count = 5;
+  for (int i = 0; i < loop_count; i++) {
+    for (int j = 0; j < loop_count - i; j++) {
+      // 2. 都跟後面1個比。
+      if (arr[j] > arr[j + 1]) {
+        // 3. 比較大的，放後面
+        int temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+
+  // 印出
+  for(int i = 0; i < sizeof(arr)/sizeof(int); i++) {
+    cout << arr[i] << ", ";
+  }
+  cout << endl;
+  return 0;
+}  
+{% endhighlight %}
+
+
 外層迴圈次數是陣列大小 - 1。
 {% highlight c++ linenos %}
 int loop_count = sizeof(arr)/sizeof(int) - 1;
