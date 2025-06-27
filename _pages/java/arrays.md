@@ -114,7 +114,8 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: arraycopy: 
 ```
 
 ### 複製大小自訂
-複製大小設為來源陣列大小-1，最後一個元素是預設值。<br>
+複製大小設為來源陣列大小-1<br>
+從執行結果發現，最後面會多出一個0。<br>
 int基本型態，預設值為0，若是類別，預設值是null。
 {% highlight java linenos %}
 int[] source = {100, 20, 64, 1, 98};

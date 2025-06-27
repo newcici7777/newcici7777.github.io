@@ -28,8 +28,8 @@ System.out.println("排序後:" + Arrays.toString(arr));
 
 1. 陣列不能是基本型態，必須是包裝類別Wrapper Classes。
 2. 使用匿名類別，實作Comparator介面。
-3. 由小到大，是o1 - o2。
-4. 由大到小，是o2 - o1。
+3. 由小到大，是o1 - o2，原理已經在[Comparable與Comparator][1]詳細說明。
+4. 由大到小，是o2 - o1，原理已經在[Comparable與Comparator][1]詳細說明。
 
 語法
 ```

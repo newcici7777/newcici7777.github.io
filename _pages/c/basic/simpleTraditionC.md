@@ -53,6 +53,7 @@ keywords: c++, pointer, Pointer to Const, Const Pointer
 |Operator|運算子|運算符|
 |condition|條件判斷式|表達式|
 |For Loop|巢狀|嵌套|
+|for|迴圈|循環|
 |while(true)|無窮迴圈|無限循環|
 |Code block|程式碼區塊|語句塊|
 |Expression|運算式|表達式|

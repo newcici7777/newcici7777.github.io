@@ -5,39 +5,49 @@ keywords: Java, Design patterns, Iterator Pattern
 ---
 以下的類別圖分二類，左邊是集合Aggregate，右邊是Iterator疊代器。
 
-![img]({{site.imgurl}}/pattern/iter1.png)
+![img]({{site.imgurl}}/pattern/iter2.png)
 
-## Aggregate
-Aggregate介面有createIterator()方法必須實作。
+## Aggregate介面
+### createIterator
+createIterator()取得Iterator，實作Aggregate介面的子類別都要實作此方法。
 
-實作Aggregate類別，成員屬性有elements，可以是陣列、List、任何集合類別。
+## 實作Aggregate介面的子類別
+### elements
+成員屬性有elements，可以是陣列、List、任何集合類別。
 
-createIterator()取得跟elements類別相關的Iterator，比如elements是陣列，就要取得陣列的Iterator，elements是List，就要取得List的Iterator，elements是Map，就要取得Map的Iterator。
+### createIterator
+子類別要自己覆寫此方法，取得Iterator。
 
-以上提到的Iterator自己要實作。
+elements是陣列，就要取得陣列的Iterator。<br>
+elements是List，就要取得List的Iterator。<br>elements是Map，就要取得Map的Iterator。<br>
 
 ## Iterator
+重點！Iterator使用Java原本就有的，不另外自己寫。
+
 Iterator介面有hasNext()、next()、remove()三個方法要實作。
 
-hasNext(): 有沒有下一個元素(element)？傳回值型態為boolean
+hasNext(): 有沒有元素(element)？傳回值型態為boolean
 
-next(): 傳回下一個元素(element)。
+next(): 先傳回元素(element)，再把索引\+\+。
 
 remove(): 刪除元素
-
-Iterator使用系統就有的，不另外自己寫。
 
 實作Iterator類別，這個要自己實作。
 
 ## 陣列集合與Iterator
-
-下圖中，實作Aggregate類別的elements的類型已換成陣列。
-
 ![img]({{site.imgurl}}/pattern/iter2.png)
 
 寫一個電腦課程的集合與iterator
 
-課程Course
+### Aggregate介面
+{% highlight java linenos %}
+public interface Aggregate {
+  Iterator createIterator();
+}
+{% endhighlight %}
+
+### 實作Aggregate介面的子類別
+Course(課程)
 {% highlight java linenos %}
 public class Course {
   private String name;
@@ -52,19 +62,14 @@ public class Course {
 }
 {% endhighlight %}
 
-Component介面
-{% highlight java linenos %}
-public interface Component {
-  Iterator createIterator();
-}
-{% endhighlight %}
+電腦課程集合ComputerCourse，實作Aggregate介面。
+1. 實作createIterator()方法
+2. 把集合中所有課程elements傳給iterator
 
-電腦課程集合  
-要實作createIterator()方法，並把elements傳給iterator
 {% highlight java linenos %}
 import java.util.Iterator;
 
-public class ComputerCourse implements Component{
+public class ComputerCourse implements Aggregate{
   // 陣列元素
   private Course[] elements;
   // index索引
@@ -85,7 +90,7 @@ public class ComputerCourse implements Component{
     }
   }
 
-  // 覆寫取得Iterator
+  // 取得Iterator
   @Override
   public Iterator createIterator() {
     // 要把elements傳入
@@ -100,6 +105,7 @@ import java.util.Iterator;
 
 public class ComputerCourseIter implements Iterator {
   Course[] elements;
+  // 預設是0
   int index = 0;
 
   public ComputerCourseIter(Course[] elements) {
@@ -119,7 +125,7 @@ public class ComputerCourseIter implements Iterator {
   // 取出下一個元素
   @Override
   public Object next() {
-    // 傳回值
+    // 先傳回值
     Course rtnObj = elements[index];
     // index移到下一個元素的索引
     index++;
@@ -133,7 +139,7 @@ public class ComputerCourseIter implements Iterator {
 }
 {% endhighlight %}
 
-main主程式
+測試
 {% highlight java linenos %}
 import java.util.Iterator;
 
@@ -163,14 +169,14 @@ Swift
 ## List集合與Iterator
 實作elements為List的集合與Iterator。
 
-寫一個英語課程。
+寫一個英語課程集合。
 
 {% highlight java linenos %}
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class EnglishCourse implements Component{
+public class EnglishCourse implements Aggregate{
   private List<Course> elements;
 
   public EnglishCourse() {
@@ -211,7 +217,9 @@ public class EnglishCourseIter implements Iterator {
 
   @Override
   public Object next() {
+    // 先傳回
     Course rtnObj = elements.get(index);
+    // 索引再++
     index++;
     return rtnObj;
   }
@@ -223,7 +231,7 @@ public class EnglishCourseIter implements Iterator {
 }
 {% endhighlight %}
 
-main主程式
+測試程式
 {% highlight java linenos %}
 import java.util.Iterator;
 

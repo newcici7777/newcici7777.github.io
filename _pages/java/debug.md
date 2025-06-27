@@ -81,3 +81,10 @@ console的部分有黃色圖示，代表有資料在console顯示。
 切換至console。
 
 ![img]({{site.imgurl}}/editor/debug11.png)
+
+## 顯示正確集合大小
+要Debug ArrayList查看容量變化大小，要把以下勾勾取消。
+
+![img]({{site.imgurl}}/editor/debug12.png)
+
+![img]({{site.imgurl}}/editor/debug13.png)

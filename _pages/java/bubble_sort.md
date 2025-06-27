@@ -19,7 +19,7 @@ keywords: Java, bubble sort
 
 交換的方式如下圖。
 
-![img]({{site.imgurl}}/dataStruct/bubbleSort_temp.jpg) 
+![img]({{site.imgurl}}/dataStruct/bubbleSort_temp.png) 
 
 1. 準備一個暫存變數temp。
 2. 6放在temp。
@@ -256,6 +256,31 @@ public class Test {
 [2, 1, 3, 4, 5, 6]
 [1, 2, 3, 4, 5, 6]
 ```
+
+外層迴圈的作用是執行5次，所以下面的程式碼可以確保外層迴圈執行5次。
+{% highlight java linenos %}
+public class Test {
+  public static void main(String[] args) {
+    // 6, 5, 4, 3, 2, 1
+    int[] arr = {6, 5, 4, 3, 2, 1};
+    // loop_count迴圈次數 5 -> 4 -> 3 -> 2 -> 1
+    int loop_count = 5;
+    for (int i = 0; i < loop_count; i++) {
+      for (int j = 0; j < loop_count - i ; j++) {
+        // 2. 都跟後面1個比。
+        if (arr[j] > arr[j + 1]) {
+          // 3. 比較大的，放後面
+          int temp = arr[j];
+          arr[j] = arr[j + 1];
+          arr[j + 1] = temp;
+        }
+      }
+      System.out.println(Arrays.toString(arr));
+    }
+  }
+}
+{% endhighlight %}
+
 
 外層迴圈次數是陣列大小 - 1。
 {% highlight java linenos %}
