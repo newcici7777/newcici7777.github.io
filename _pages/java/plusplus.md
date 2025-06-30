@@ -12,10 +12,10 @@ k\+\+與\+\+k，若沒有指派給其它變數，二者都是k = k \+ 1。
 
 ### 有指派給其它變數
 #### k在前面
-k\+\+，k在前面，就是把k先指派給其它變數，最後才k = k \+ 1。
+變數 = k\+\+，k在前面，就是把k先指派給其它變數，最後才k = k \+ 1。
 
 #### k在後面
-\+\+k，k在後面，就是k先k = k \+ 1，再指派給其它變數。
+變數 = \+\+k，k在後面，就是k先k = k \+ 1，再指派給其它變數。
 
 ## k在前面
 先把k指派給j，然後k才遞增k = k \+ 1。
@@ -69,6 +69,27 @@ k = 10
 k++;
 {% endhighlight %}
 
+## print與遞增
+## k在前面
+跟指派的原理一樣，先印出k，再`k = k + 1`
+{% highlight java linenos %}
+int k = 8;
+System.out.println(k++);
+{% endhighlight %}
+```
+8
+```
+
+## k在後面
+跟指派的原理一樣，先`k = k + 1`
+{% highlight java linenos %}
+int k = 8;
+System.out.println(++k);
+{% endhighlight %}
+```
+9
+```
+
 ## 指派的變數是自己
 ### k在前面
 {% highlight java linenos %}
@@ -86,7 +107,7 @@ k = 1
 
 編譯的時候，看到`k = k++;`，指派給自己，程式碼就會變成如下:
 
-1.會先建立一個暫存變數temp，代表等號左邊的k。
+1.會先建立一個暫存變數temp，k在前面，把k先指派給temp。
 ```
 int temp = k;
 ```
@@ -96,10 +117,11 @@ int temp = k;
 k = k + 1;
 ```
 
-3.把暫存變數，指派給k
+3.把暫存變數temp的值，指派給k
 ```
 k = temp;
 ```
+
 ### k在後面
 {% highlight java linenos %}
 public class Test {
@@ -116,17 +138,17 @@ k = 2
 
 編譯的時候，看到`k = ++k;`，指派給自己，程式碼就會變成如下:
 
-1.先遞增。
+1.k遞增。
 ```
 k = k + 1;
 ```
 
-2.建立一個暫存變數temp，代表等號左邊的k。
+2.建立一個暫存變數temp，把k變數的值指派給temp。
 ```
 int temp = k;
 ```
 
-3.把暫存變數，指派給k
+3.把暫存變數temp，指派給k
 ```
 k = temp;
 ```
@@ -180,6 +202,8 @@ k = k + 1;
 ↓
 k = 5 + 1
 ```
+
+
 
 
 [1]: {% link _pages/java/operator.md %}
