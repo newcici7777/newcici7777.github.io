@@ -1499,7 +1499,7 @@
     	<a href="/pages/java/complement/" data-nav-link> 2的補數</a>
         
             
-                <ul><li><a href="#名詞介紹" data-nav-link " >名詞介紹</a><ul><li><a href="#符號數值表示法" data-nav-link " >符號數值表示法</a></li><li><a href="#1的補數" data-nav-link " >1的補數</a></li><li><a href="#2的補數" data-nav-link " >2的補數</a></li></ul></li><li><a href="#正整數" data-nav-link " >正整數</a></li><li><a href="#轉成2的補數" data-nav-link " >轉成2的補數</a></li><li><a href="#2的補數轉回符號數值表示法" data-nav-link " >2的補數轉回符號數值表示法</a><ul><li><a href="#二進位減法" data-nav-link " >二進位減法</a></li><li><a href="#範例1" data-nav-link " >範例1</a></li></ul></li><li><a href="#2的補數變成程式" data-nav-link " >2的補數變成程式</a></li><li><a href="#計算結果為正整數" data-nav-link " >計算結果為正整數</a><ul><li><a href="#程式碼-1" data-nav-link " >程式碼</a></li></ul></li><li><a href="#位元or運算子計算" data-nav-link " >位元OR運算子計算</a></li><li><a href="#重要公式" data-nav-link " >重要公式</a></li><li><a href="#其它注意事項" data-nav-link " >其它注意事項</a><ul><li><a href="#0的符號數值表示法1的補數2的補數都一樣" data-nav-link " >0的符號數值表示法，1的補數，2的補數都一樣</a></li><li><a href="#8bit的-128" data-nav-link " >8bit的-128</a></li></ul></li><li><a href="#符號數值表示法2的補數" data-nav-link " >符號數值表示法、2的補數</a></li><li><a href="#unsinged" data-nav-link " >unsinged</a></li></ul>
+                <ul><li><a href="#名詞介紹" data-nav-link " >名詞介紹</a><ul><li><a href="#符號數值表示法" data-nav-link " >符號數值表示法</a></li><li><a href="#1的補數" data-nav-link " >1的補數</a></li><li><a href="#2的補數" data-nav-link " >2的補數</a></li></ul></li><li><a href="#正整數" data-nav-link " >正整數</a></li><li><a href="#轉成2的補數" data-nav-link " >轉成2的補數</a></li><li><a href="#2的補數轉回符號數值表示法" data-nav-link " >2的補數轉回符號數值表示法</a><ul><li><a href="#計算" data-nav-link " >計算</a></li><li><a href="#顯示" data-nav-link " >顯示</a></li><li><a href="#範例1" data-nav-link " >範例1</a></li></ul></li><li><a href="#2的補數變成程式" data-nav-link " >2的補數變成程式</a></li><li><a href="#計算結果為正整數" data-nav-link " >計算結果為正整數</a><ul><li><a href="#求出-2" data-nav-link " >求出-2</a></li><li><a href="#位元反轉運算子" data-nav-link " >位元反轉運算子</a></li><li><a href="#程式碼-1" data-nav-link " >程式碼</a></li></ul></li><li><a href="#位元or運算子計算" data-nav-link " >位元OR運算子計算</a></li><li><a href="#重要公式" data-nav-link " >重要公式</a></li><li><a href="#其它注意事項" data-nav-link " >其它注意事項</a><ul><li><a href="#0的符號數值表示法1的補數2的補數都一樣" data-nav-link " >0的符號數值表示法，1的補數，2的補數都一樣</a></li><li><a href="#8bit的-128" data-nav-link " >8bit的-128</a></li></ul></li><li><a href="#符號數值表示法2的補數" data-nav-link " >符號數值表示法、2的補數</a></li><li><a href="#unsinged" data-nav-link " >unsinged</a></li><li><a href="#其它補充二進位減法" data-nav-link " >其它補充:二進位減法</a></li></ul>
 
             
         </li>
@@ -1530,6 +1530,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/array2d/" data-nav-link> 二維陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/arrays/" data-nav-link> Arrays方法與System方法</a>
         
             
@@ -1545,6 +1552,20 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/compare/" data-nav-link> Comparable與Comparator</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/collection/" data-nav-link> Collection與Iterator</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/list/" data-nav-link> List</a>
         
             
         </li></ul></li>
@@ -2901,9 +2922,9 @@
 
                     <p>2的補數，把負數變成2進位0和1的方法。</p>
 
-<p>電腦儲存負數也是儲存2的補數。</p>
+<p>電腦「儲存負數」也是儲存「2的補數」。</p>
 
-<p>電腦計算的方式都是用2的補數來計算。</p>
+<p>電腦「計算」的方式都是用「2的補數」來計算。</p>
 
 <h2 id="名詞介紹">名詞介紹</h2>
 
@@ -2976,13 +2997,13 @@
 <p>要把正整數1變成負-1的過程如下:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>00000001
-↓ 
+   ↓ 
 0與1互換
-↓ 
+   ↓ 
 11111110
-↓ 
-加1
-↓ 
+   ↓ 
+  加1
+   ↓ 
 11111111
 </code></pre></div></div>
 
@@ -2995,58 +3016,31 @@
 
 <p>如何轉回符號數值表示法？</p>
 
-<p>以下是正整數變成負數(2的補數)的過程:</p>
-
-<p>2進位 -&gt; 0與1互換 -&gt; 加1 -&gt; 2的補數</p>
-
-<p>2的補數轉回符號數值表示法，倒回來計算，以下請注意箭頭方向。</p>
-
-<p>符號數值表示法 &lt;- 最左邊第1個bit不變，其它0與1互換 &lt;- 減1 &lt;- 2的補數</p>
+<p>2的補數 -&gt; 最左邊第1個bit不變，其它0與1互換 -&gt; 加1 -&gt; 符號數值表示法</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2的補數 11111111
-↓ 
-減1
-↓ 
-1111110
-↓ 
+   ↓ 
 最左邊第1個bit不變，其它0與1互換
-↓ 
+   ↓ 
+10000000
+   ↓ 
+  加1
+   ↓ 
 10000001
 </code></pre></div></div>
-
 <p><span class="markline">1</span>0000001</p>
 
 <p>注意！左邊第1個bit是正負號，0代表正整數，1代表負數。</p>
 
 <p>後面7個bit(0000001)才是代表數值1。</p>
 
-<h3 id="二進位減法">二進位減法</h3>
-<p>若尾數為0，二進位減法技巧。</p>
+<h3 id="計算">計算</h3>
+<p>電腦的計算是用2的補數在計算，所有數字都要轉成2的補數，負數(第1個bit是1)本身就是2的補數，就不用再轉成2的補數。</p>
 
-<p>從右向左，第一個出現的1變成0，後面所有的0變成1。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 10000010
--       1
-------------
- 10000001
-</code></pre></div></div>
+<p>正整數的二進位與「符號數值表示法」、「1的補數」、「2的補數」都一樣，不用再轉換。</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 10000100
--       1
-------------
- 10000011
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 10001000
--       1
-------------
- 10000111
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 10101000
--       1
-------------
- 10100111
-</code></pre></div></div>
+<h3 id="顯示">顯示</h3>
+<p>計算是用2的補數在計算，顯示結果在螢幕則是以「符號數值表示法」來顯示。</p>
 
 <h3 id="範例1">範例1</h3>
 
@@ -3058,28 +3052,29 @@
 
 <p>2的2進位 = 00000010</p>
 
-<p>~ 運算子代表0與1互換。</p>
+<p>~ 0與1位元互換，位元反轉運算子</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>00000010
-↓
+   ↓
 ~ 0與1互換
-↓
+   ↓
 11111101
 </code></pre></div></div>
 
-<p>11111101是一個負數，第1個bit是1，是2的補數。</p>
+<p>計算結果是11111101是一個負數，第1個bit是1，負數本身就是2的補數。</p>
 
-<p>2的補數要轉回「符號數值表示法」，請注意以下箭頭方向。</p>
+<p>顯示結果在螢幕則是以「符號數值表示法」來顯示，2的補數要轉回「符號數值表示法」。</p>
 
-<p>符號數值表示法 &lt;- 最左邊第1個bit不變，其它0與1互換 &lt;- 減1 &lt;- 11111101(2的補數)</p>
+<p>2的補數 -&gt; 最左邊第1個bit不變，其它0與1互換 -&gt; 加1 -&gt; 符號數值表示法</p>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>11111101
-↓ 
-2的補數減1
-↓ 
-11111100
-↓ 
-第1個bit不變，其它0與1互換
-↓ 
+   ↓ 
+最左邊第1個bit不變，其它0與1互換
+   ↓ 
+10000010
+   ↓ 
+  加1
+   ↓ 
 10000011
 </code></pre></div></div>
 
@@ -3161,7 +3156,7 @@
 </code></pre></div></div>
 
 <h2 id="計算結果為正整數">計算結果為正整數</h2>
-<p>以下計算結果為正整數，也就是左邊第1個bit是0，不用轉回符號數值表示法，一開始我就有提到正整數的符號數值表示法、1的補數與2的補數都跟二進位一樣，不用再轉換。</p>
+<p>題目:</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3169,33 +3164,39 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>根據題目，先求出-2，也就是+2的2補數(負數)。</p>
+<p>計算是用2的補數來計算，以下是計算步驟:<br /></p>
+<ol>
+  <li>先求出-2，也就是正整數2的2補數(負數)。</li>
+  <li>接下來~ 0與1位元互換，位元反轉運算子</li>
+</ol>
 
-<p>2的二進位 = 00000010</p>
+<h3 id="求出-2">求出-2</h3>
+<p>正整數2的二進位 = 00000010</p>
 
 <p>以下是正整數變成負數的過程:</p>
 
 <p>2進位 -&gt; 0與1互換 -&gt; 加1 -&gt; 2的補數</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>00000010 
-↓
+   ↓
 0與1互換
-↓
+   ↓
 11111101
-↓
-加1
-↓
+   ↓
+  加1
+   ↓
 11111110
 </code></pre></div></div>
 
 <p>得到-2(2的補數) = 11111110</p>
 
-<p>接下來~ 運算子代表0與1互換</p>
+<h3 id="位元反轉運算子">位元反轉運算子</h3>
+<p>接下來~ 0與1位元互換，位元反轉運算子</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>11111110
-↓
-0與1互換
-↓
+   ↓
+0與1位元互換，位元反轉運算子
+   ↓
 00000001
 </code></pre></div></div>
 
@@ -3223,12 +3224,23 @@
 <h2 id="位元or運算子計算">位元OR運算子計算</h2>
 <p><code class="language-plaintext highlighter-rouge">|</code>位元OR運算子，有1個為1，才是1。</p>
 
+<p>題目:<br /></p>
+
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 </pre></td><td class="code"><pre>  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(-</span><span class="mi">2</span> <span class="o">|</span> <span class="mi">3</span><span class="o">);</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<p>計算步驟:<br /></p>
+<ol>
+  <li>-2的2的補數，上一個範例已經算出來是11111110。</li>
+  <li>3是正整數，正整數2的補數與2進位的3都是相同。</li>
+  <li>-2與3，or運算。</li>
+  <li>若結果為2的補數(第1個bit為1)，要再轉回符號數值表示法。</li>
+</ol>
+
+<p>-2與3進行or運算。</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   11111110 (-2)
 or 00000011 (3)
    ---------
@@ -3237,18 +3249,18 @@ or 00000011 (3)
 
 <p>or的計算結果為負數(2的補數)，第1個bit是1。</p>
 
-<p>要把2的補數轉成符號數值表示法，注意以下箭頭方向。</p>
+<p>要把計算結果轉成「符號數值表示法」。</p>
 
-<p>符號數值表示法 &lt;- 最左邊第1個bit不變，其它0與1互換 &lt;- 減1 &lt;- 11111111</p>
+<p>2的補數 -&gt; 最左邊第1個bit不變，其它0與1互換 -&gt; 加1 -&gt; 符號數值表示法</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>11111111
-↓
-減1
-↓
-11111110
-↓
-0與1互換
-↓
+   ↓
+最左邊第1個bit不變，其它0與1互換
+   ↓
+10000000
+   ↓
+  加1
+   ↓
 10000001
 </code></pre></div></div>
 
@@ -3273,31 +3285,23 @@ or 00000011 (3)
 <h2 id="重要公式">重要公式</h2>
 <p>正整數二進位變成負數(2的補數)過程:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>正整數二進位
-↓
-0與1互換
-↓
-1的補數
-↓
-1的補數 + 1
-↓
+   ↓
+0與1互換(1的補數)
+   ↓
+  加1
+   ↓
 2的補數
 </code></pre></div></div>
 
-<p>負數(2的補數)變成「符號數值表示法」過程，也就是把上面的過程改由「由下往上」執行。</p>
+<p>負數(2的補數)變成「符號數值表示法」過程。</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2的補數
-↓
-2的補數減1
-↓
-1的補數
-↓
+   ↓
 最左邊第1個bit不變，其它0與1互換
-↓
+   ↓
+  加1
+   ↓
 符號數值表示法
 </code></pre></div></div>
-
-<p>1的補數 + 1 = 2的補數</p>
-
-<p>2的補數 - 1 = 1的補數</p>
 
 <h2 id="其它注意事項">其它注意事項</h2>
 <h3 id="0的符號數值表示法1的補數2的補數都一樣">0的符號數值表示法，1的補數，2的補數都一樣</h3>
@@ -3309,7 +3313,7 @@ or 00000011 (3)
 <p>0 2的補數 = 00000000</p>
 
 <h3 id="8bit的-128">8bit的-128</h3>
-<p>8bit的-128，10000000是2的補數，10000000沒辦法轉回「符號數值表示法」，因為8-bit最大的正整數是127，沒有對映的128正整數。</p>
+<p>8bit的-128，10000000是2的補數，10000000沒辦法轉回「符號數值表示法」。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3394,6 +3398,34 @@ or 00000011 (3)
 <p>C++有unsinged正整數。</p>
 
 <p>Java的數字都有正負號，沒有unsinged正整數。</p>
+
+<h2 id="其它補充二進位減法">其它補充:二進位減法</h2>
+<p>若尾數為0，二進位減法技巧。</p>
+
+<p>從右向左，第一個出現的1變成0，後面所有的0變成1。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 10000010
+-       1
+------------
+ 10000001
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 10000100
+-       1
+------------
+ 10000011
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 10001000
+-       1
+------------
+ 10000111
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 10101000
+-       1
+------------
+ 10100111
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3482,11 +3514,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "左移右移運算子",
+            "title": "2的補數",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/java/lr_shift_operator.md",
-            "ref": "_pages/java/lr_shift_operator.md",
+            "path": "_pages/java/complement_backup.md",
+            "ref": "_pages/java/complement_backup.md",
             "articles": []
         },
         
@@ -3584,7 +3616,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-26 15:24:40 +0800"
+        "time": "2025-07-01 11:23:15 +0800"
     },
     "basePath": "",
     "book": {

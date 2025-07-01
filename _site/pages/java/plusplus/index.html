@@ -1492,7 +1492,7 @@
     	<a href="/pages/java/plusplus/" data-nav-link> 遞增遞減運算子</a>
         
             
-                <ul><li><a href="#遞增遞減運算子" data-nav-link " >遞增遞減運算子</a><ul><li><a href="#沒有指派給其它變數" data-nav-link " >沒有指派給其它變數</a></li><li><a href="#有指派給其它變數" data-nav-link " >有指派給其它變數</a></li></ul></li><li><a href="#k在前面-1" data-nav-link " >k在前面</a></li><li><a href="#k在後面-1" data-nav-link " >k在後面</a></li><li><a href="#沒有指派給其它變數-1" data-nav-link " >沒有指派給其它變數</a></li><li><a href="#指派的變數是自己" data-nav-link " >指派的變數是自己</a><ul><li><a href="#k在前面-2" data-nav-link " >k在前面</a></li><li><a href="#k在後面-2" data-nav-link " >k在後面</a></li></ul></li><li><a href="#其它範例1" data-nav-link " >其它範例1</a></li><li><a href="#其它範例2" data-nav-link " >其它範例2</a></li></ul>
+                <ul><li><a href="#遞增遞減運算子" data-nav-link " >遞增遞減運算子</a><ul><li><a href="#沒有指派給其它變數" data-nav-link " >沒有指派給其它變數</a></li><li><a href="#有指派給其它變數" data-nav-link " >有指派給其它變數</a></li></ul></li><li><a href="#k在前面-1" data-nav-link " >k在前面</a></li><li><a href="#k在後面-1" data-nav-link " >k在後面</a></li><li><a href="#沒有指派給其它變數-1" data-nav-link " >沒有指派給其它變數</a></li><li><a href="#print與遞增" data-nav-link " >print與遞增</a></li><li><a href="#k在前面-2" data-nav-link " >k在前面</a></li><li><a href="#k在後面-2" data-nav-link " >k在後面</a></li><li><a href="#指派的變數是自己" data-nav-link " >指派的變數是自己</a><ul><li><a href="#k在前面-3" data-nav-link " >k在前面</a></li><li><a href="#k在後面-3" data-nav-link " >k在後面</a></li></ul></li><li><a href="#其它範例1" data-nav-link " >其它範例1</a></li><li><a href="#其它範例2" data-nav-link " >其它範例2</a></li></ul>
 
             
         </li>
@@ -1530,6 +1530,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/array2d/" data-nav-link> 二維陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/arrays/" data-nav-link> Arrays方法與System方法</a>
         
             
@@ -1545,6 +1552,20 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/compare/" data-nav-link> Comparable與Comparator</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/collection/" data-nav-link> Collection與Iterator</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/list/" data-nav-link> List</a>
         
             
         </li></ul></li>
@@ -2908,10 +2929,10 @@
 
 <h3 id="有指派給其它變數">有指派給其它變數</h3>
 <h4 id="k在前面">k在前面</h4>
-<p>k++，k在前面，就是把k先指派給其它變數，最後才k = k + 1。</p>
+<p>變數 = k++，k在前面，就是把k先指派給其它變數，最後才k = k + 1。</p>
 
 <h4 id="k在後面">k在後面</h4>
-<p>++k，k在後面，就是k先k = k + 1，再指派給其它變數。</p>
+<p>變數 = ++k，k在後面，就是k先k = k + 1，再指派給其它變數。</p>
 
 <h2 id="k在前面-1">k在前面</h2>
 <p>先把k指派給j，然後k才遞增k = k + 1。</p>
@@ -2995,8 +3016,37 @@ k = 10
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<h2 id="print與遞增">print與遞增</h2>
+<h2 id="k在前面-2">k在前面</h2>
+<p>跟指派的原理一樣，先印出k，再<code class="language-plaintext highlighter-rouge">k = k + 1</code></p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">8</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">k</span><span class="o">++);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>8
+</code></pre></div></div>
+
+<h2 id="k在後面-2">k在後面</h2>
+<p>跟指派的原理一樣，先<code class="language-plaintext highlighter-rouge">k = k + 1</code></p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">8</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(++</span><span class="n">k</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>9
+</code></pre></div></div>
+
 <h2 id="指派的變數是自己">指派的變數是自己</h2>
-<h3 id="k在前面-2">k在前面</h3>
+<h3 id="k在前面-3">k在前面</h3>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3021,7 +3071,7 @@ k = 10
 
 <p>編譯的時候，看到<code class="language-plaintext highlighter-rouge">k = k++;</code>，指派給自己，程式碼就會變成如下:</p>
 
-<p>1.會先建立一個暫存變數temp，代表等號左邊的k。</p>
+<p>1.會先建立一個暫存變數temp，k在前面，把k先指派給temp。</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int temp = k;
 </code></pre></div></div>
 
@@ -3029,10 +3079,11 @@ k = 10
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>k = k + 1;
 </code></pre></div></div>
 
-<p>3.把暫存變數，指派給k</p>
+<p>3.把暫存變數temp的值，指派給k</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>k = temp;
 </code></pre></div></div>
-<h3 id="k在後面-2">k在後面</h3>
+
+<h3 id="k在後面-3">k在後面</h3>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3057,15 +3108,15 @@ k = 10
 
 <p>編譯的時候，看到<code class="language-plaintext highlighter-rouge">k = ++k;</code>，指派給自己，程式碼就會變成如下:</p>
 
-<p>1.先遞增。</p>
+<p>1.k遞增。</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>k = k + 1;
 </code></pre></div></div>
 
-<p>2.建立一個暫存變數temp，代表等號左邊的k。</p>
+<p>2.建立一個暫存變數temp，把k變數的值指派給temp。</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int temp = k;
 </code></pre></div></div>
 
-<p>3.把暫存變數，指派給k</p>
+<p>3.把暫存變數temp，指派給k</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>k = temp;
 </code></pre></div></div>
 
@@ -3314,7 +3365,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-26 15:24:40 +0800"
+        "time": "2025-07-01 11:23:15 +0800"
     },
     "basePath": "",
     "book": {

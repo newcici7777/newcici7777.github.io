@@ -1527,6 +1527,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/array2d/" data-nav-link> 二維陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/arrays/" data-nav-link> Arrays方法與System方法</a>
         
             
@@ -1542,6 +1549,20 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/compare/" data-nav-link> Comparable與Comparator</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/collection/" data-nav-link> Collection與Iterator</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/list/" data-nav-link> List</a>
         
             
         </li></ul></li>
@@ -2914,7 +2935,7 @@
 
 <p>交換的方式如下圖。</p>
 
-<p><img src="/assets/img/dataStruct/bubbleSort_temp.jpg" alt="img" /></p>
+<p><img src="/assets/img/dataStruct/bubbleSort_temp.png" alt="img" /></p>
 
 <ol>
   <li>準備一個暫存變數temp。</li>
@@ -3314,6 +3335,52 @@
 [1, 2, 3, 4, 5, 6]
 </code></pre></div></div>
 
+<p>外層迴圈的作用是執行5次，所以下面的程式碼可以確保外層迴圈執行5次。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 6, 5, 4, 3, 2, 1</span>
+    <span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="o">{</span><span class="mi">6</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">1</span><span class="o">};</span>
+    <span class="c1">// loop_count迴圈次數 5 -&gt; 4 -&gt; 3 -&gt; 2 -&gt; 1</span>
+    <span class="kt">int</span> <span class="n">loop_count</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">loop_count</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+      <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">loop_count</span> <span class="o">-</span> <span class="n">i</span> <span class="o">;</span> <span class="n">j</span><span class="o">++)</span> <span class="o">{</span>
+        <span class="c1">// 2. 都跟後面1個比。</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="o">])</span> <span class="o">{</span>
+          <span class="c1">// 3. 比較大的，放後面</span>
+          <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">];</span>
+          <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="o">];</span>
+          <span class="n">arr</span><span class="o">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="o">;</span>
+        <span class="o">}</span>
+      <span class="o">}</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">arr</span><span class="o">));</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 <p>外層迴圈次數是陣列大小 - 1。</p>
 
 <figure class="highlight">
@@ -3501,7 +3568,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-26 15:24:40 +0800"
+        "time": "2025-07-01 11:23:15 +0800"
     },
     "basePath": "",
     "book": {

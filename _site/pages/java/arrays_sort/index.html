@@ -1527,6 +1527,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/array2d/" data-nav-link> 二維陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/arrays/" data-nav-link> Arrays方法與System方法</a>
         
             
@@ -1537,7 +1544,7 @@
     	<a href="/pages/java/arrays_sort/" data-nav-link> Arrays.sort()</a>
         
             
-                <ul><li><a href="#sort" data-nav-link " >sort()</a><ul><li><a href="#自訂排序大小" data-nav-link " >自訂排序大小</a></li></ul></li><li><a href="#自己寫myarrayssort" data-nav-link " >自己寫MyArrays.sort()</a></li><li><a href="#比較日期" data-nav-link " >比較日期</a><ul><li><a href="#arrayssort排序與comparator" data-nav-link " >Arrays.sort()排序與Comparator</a></li><li><a href="#由大到小" data-nav-link " >由大到小</a></li></ul></li></ul>
+                <ul><li><a href="#sort" data-nav-link " >sort()</a><ul><li><a href="#自訂排序大小" data-nav-link " >自訂排序大小</a></li></ul></li><li><a href="#自己寫myarrayssort" data-nav-link " >自己寫MyArrays.sort()</a></li><li><a href="#比較日期" data-nav-link " >比較日期</a><ul><li><a href="#日期物件" data-nav-link " >日期物件</a></li><li><a href="#comparator" data-nav-link " >Comparator</a></li><li><a href="#由大到小" data-nav-link " >由大到小</a></li></ul></li></ul>
 
             
         </li>
@@ -1545,6 +1552,20 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/compare/" data-nav-link> Comparable與Comparator</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/collection/" data-nav-link> Collection與Iterator</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/list/" data-nav-link> List</a>
         
             
         </li></ul></li>
@@ -2935,8 +2956,8 @@
 <ol>
   <li>陣列不能是基本型態，必須是包裝類別Wrapper Classes。</li>
   <li>使用匿名類別，實作Comparator介面。</li>
-  <li>由小到大，是o1 - o2。</li>
-  <li>由大到小，是o2 - o1。</li>
+  <li>由小到大，是o1 - o2，原理已經在<a href="/pages/java/compare/">Comparable與Comparator</a>詳細說明。</li>
+  <li>由大到小，是o2 - o1，原理已經在<a href="/pages/java/compare/">Comparable與Comparator</a>詳細說明。</li>
 </ol>
 
 <p>語法</p>
@@ -3048,7 +3069,8 @@
 
 <h2 id="比較日期">比較日期</h2>
 <p>有一個陣列，陣列的值是日期物件，排序這些日期物件。</p>
-<h3 id="arrayssort排序與comparator">Arrays.sort()排序與Comparator</h3>
+
+<h3 id="日期物件">日期物件</h3>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3118,7 +3140,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>自訂Comparator。</p>
+<h3 id="comparator">Comparator</h3>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3159,6 +3181,8 @@
 36
 37
 38
+39
+40
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="c1">// 透過匿名類別建立物件</span>
@@ -3167,6 +3191,7 @@
       <span class="kd">public</span> <span class="kt">int</span> <span class="nf">compare</span><span class="o">(</span><span class="nc">MyDate2</span> <span class="n">o1</span><span class="o">,</span> <span class="nc">MyDate2</span> <span class="n">o2</span><span class="o">)</span> <span class="o">{</span>
         <span class="c1">// 由小到大 o1 - o2</span>
         <span class="kt">int</span> <span class="n">diff_y</span> <span class="o">=</span> <span class="n">o1</span><span class="o">.</span><span class="na">getYear</span><span class="o">()</span> <span class="o">-</span> <span class="n">o2</span><span class="o">.</span><span class="na">getYear</span><span class="o">();</span>
+
         <span class="c1">// 不相等代表比較出結果，直接傳回比較結果</span>
         <span class="c1">// 之後的程式就沒必要再比較。</span>
         <span class="k">if</span> <span class="o">(</span><span class="n">diff_y</span> <span class="o">!=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
@@ -3192,7 +3217,8 @@
         <span class="k">new</span> <span class="nf">MyDate2</span><span class="o">(</span><span class="mi">2000</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">1</span><span class="o">),</span>
         <span class="k">new</span> <span class="nf">MyDate2</span><span class="o">(</span><span class="mi">2000</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">1</span><span class="o">)</span>
     <span class="o">};</span>
-    <span class="c1">// 陣列排序，把自訂Comparator傳入。</span>
+
+    <span class="c1">// 陣列排序，把Comparator傳入。</span>
     <span class="nc">Arrays</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="n">comparator</span><span class="o">);</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">arr</span><span class="o">));</span>
   <span class="o">}</span>
@@ -3259,9 +3285,9 @@ o2.getDay() - o1.getDay()
     <span class="nc">Comparator</span><span class="o">&lt;</span><span class="nc">MyDate2</span><span class="o">&gt;</span> <span class="n">comparator</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Comparator</span><span class="o">&lt;</span><span class="nc">MyDate2</span><span class="o">&gt;()</span> <span class="o">{</span>
       <span class="nd">@Override</span>
       <span class="kd">public</span> <span class="kt">int</span> <span class="nf">compare</span><span class="o">(</span><span class="nc">MyDate2</span> <span class="n">o1</span><span class="o">,</span> <span class="nc">MyDate2</span> <span class="n">o2</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// 由大到小</span>
         <span class="kt">int</span> <span class="n">diff_y</span> <span class="o">=</span> <span class="n">o2</span><span class="o">.</span><span class="na">getYear</span><span class="o">()</span> <span class="o">-</span> <span class="n">o1</span><span class="o">.</span><span class="na">getYear</span><span class="o">();</span>
-        <span class="c1">// 不相等代表比較出結果，直接傳回比較結果</span>
-        <span class="c1">// 之後的程式就沒必要再比較。</span>
+        
         <span class="k">if</span> <span class="o">(</span><span class="n">diff_y</span> <span class="o">!=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
           <span class="k">return</span> <span class="n">diff_y</span><span class="o">;</span>
         <span class="o">}</span>
@@ -3487,7 +3513,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-26 15:24:40 +0800"
+        "time": "2025-07-01 11:23:15 +0800"
     },
     "basePath": "",
     "book": {

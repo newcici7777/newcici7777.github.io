@@ -1527,6 +1527,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/array2d/" data-nav-link> 二維陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/arrays/" data-nav-link> Arrays方法與System方法</a>
         
             
@@ -1546,6 +1553,20 @@
             
                 <ul><li><a href="#由小到大-由大到小" data-nav-link " >由小到大 由大到小</a><ul><li><a href="#由小到大" data-nav-link " >由小到大</a></li><li><a href="#由大到小" data-nav-link " >由大到小</a></li></ul></li><li><a href="#comparable介面" data-nav-link " >Comparable介面</a><ul><li><a href="#comparetoo參數" data-nav-link " >compareTo(o)參數</a></li><li><a href="#比較" data-nav-link " >比較</a></li><li><a href="#比較日期大小" data-nav-link " >比較日期大小</a></li><li><a href="#其它泛型與comparable" data-nav-link " >其它:泛型與Comparable</a></li></ul></li><li><a href="#comparator" data-nav-link " >Comparator</a><ul><li><a href="#comparatorcompareo1o2" data-nav-link " >Comparator.compare(o1,o2)</a></li><li><a href="#比較日期大小-1" data-nav-link " >比較日期大小</a></li></ul></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/collection/" data-nav-link> Collection與Iterator</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/list/" data-nav-link> List</a>
+        
             
         </li></ul></li>
 	
@@ -2913,7 +2934,7 @@
 1, 2, 3, 4, 5 <br /></p>
 
 <h3 id="由小到大">由小到大</h3>
-<p>由小到大是指「目前位置」與「下一個位置」進行比較，比較方式是「目前位置」減「下一個位置」。</p>
+<p>由小到大是指「目前位置」的值與「下一個位置」的值進行比較，比較方式是「目前位置」的值減「下一個位置」的值。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1, 2, 3, 4, 5 
 ↑  ↑
@@ -2925,7 +2946,7 @@
 </code></pre></div></div>
 <p>1 - 2 = -1</p>
 
-<p>傳回結果為-1，代表「目前位置」比「下一個位置」小，以<a href="/pages/java/bubble_sort/">氣泡排序</a>來說，就不用交換。<br /></p>
+<p>傳回結果為-1，代表「目前位置」的值比「下一個位置」的值小，以<a href="/pages/java/bubble_sort/">氣泡排序</a>來說，就不用交換。<br /></p>
 
 <p><a href="/pages/java/bubble_sort/">氣泡排序</a></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (比較結果 &gt; 0) {
@@ -2933,8 +2954,35 @@
 }
 </code></pre></div></div>
 
+<p>假設陣列的值變成以下這樣。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2, 1, 3, 4, 5 
+↑  ↑
+目 下
+前 一
+位 個
+置 位
+   置
+</code></pre></div></div>
+<p>2 - 1 = 1</p>
+
+<p>傳回結果為1，代表「目前位置」的值比「下一個位置」的值大，以<a href="/pages/java/bubble_sort/">氣泡排序</a>來說，就要交換。<br /></p>
+
+<p>「目前位置」，如同下面程式碼的j，「下一個位置」，如同下面程式碼的j + 1，以下程式碼是「目前位置」的值 &gt; 「下一個位置」的值，就交換。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">if</span> <span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="o">])</span> <span class="o">{</span>
+  <span class="c1">// 交換</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>「目前位置」的值減「下一個位置」的值 &gt; 0，等同於<code class="language-plaintext highlighter-rouge">arr[j] &gt; arr[j + 1]</code>，二者都是「目前位置」的值「大於」「下一個位置」的值，相減才會是正整數。</p>
+
 <h3 id="由大到小">由大到小</h3>
-<p>比較方式是「下一個位置」減「目前位置」。</p>
+<p>比較方式是「下一個位置」的值減「目前位置」的值。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1, 2, 3, 4, 5 
 ↑  ↑
@@ -2944,10 +2992,10 @@
 置 位
    置
 </code></pre></div></div>
-<p>「下一個位置」減「目前位置」 <br />
+<p>「下一個位置」的值減「目前位置」的值 <br />
 2 - 1 = 1</p>
 
-<p>傳回結果為1，代表「下一個位置」比「目前位置」大，以<a href="/pages/java/bubble_sort/">氣泡排序</a>來說，比較結果 &gt; 0要交換。<br /></p>
+<p>傳回結果為1，代表「下一個位置」的值比「目前位置」的值大，以<a href="/pages/java/bubble_sort/">氣泡排序</a>來說，比較結果 &gt; 0要交換。<br /></p>
 
 <p><a href="/pages/java/bubble_sort/">氣泡排序</a></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (比較結果 &gt; 0) {
@@ -2958,6 +3006,18 @@
 <p>交換之後變成下面這樣，2與1就完成由大到小排序。</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2, 1, 3, 4, 5 
 </code></pre></div></div>
+
+<p>氣泡排序若要改成由大到小，以下的程式碼「大於&gt;」要變「小於&lt;」，代表「下一個位置j + 1 」的值比「目前位置 j 」的值大，就交換，由大到小，大的數字要在前面。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">if</span> <span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="o">])</span> <span class="o">{</span>
+  <span class="c1">// 交換</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 <h2 id="comparable介面">Comparable介面</h2>
 <p>Comparable是一個介面，有一個compareTo()方法，功用是比較大小。</p>
@@ -2975,7 +3035,7 @@
 </figure>
 
 <h3 id="comparetoo參數">compareTo(o)參數</h3>
-<p>每一個方法都有隱藏參數this，this就是目前位置物件，而o參數，是下一個位置的物件。</p>
+<p>每一個方法都有隱藏參數this，this就是「目前位置」物件，而o參數，是「下一個位置」的物件。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1, 2, 3, 4, 5 
 ↑  ↑
@@ -3203,12 +3263,10 @@
 </figure>
 
 <h3 id="comparatorcompareo1o2">Comparator.compare(o1,o2)</h3>
-<p>o1代表目前位置，o2代表下一個位置。</p>
+<p>o1是「目前位置」物件，o2是「下一個位置」物件。</p>
 
 <p>由小到大，o1 - o2 <br />
 由大到小，o2 - o1 <br /></p>
-
-<p>o1是目前位置物件，o2是下一個位置物件。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1, 2, 3, 4, 5 
 ↑  ↑
@@ -3360,7 +3418,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/rand" class="navigation navigation-next navigation-unique" aria-label="Next page: 亂數">
+                        <a href="/pages/java/collection" class="navigation navigation-next navigation-unique" aria-label="Next page: Collection與Iterator">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3378,11 +3436,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "English",
+            "title": "Java Memory Model",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/note/english.md",
-            "ref": "_pages/note/english.md",
+            "path": "_pages/java/memory_model.md",
+            "ref": "_pages/java/memory_model.md",
             "articles": []
         },
         
@@ -3475,12 +3533,12 @@ window.MathJax = {
     },
     "file": {
         "path": "_pages/java/compare.md",
-        "mtime": "2025-06-26 15:24:40 +0800",
+        "mtime": "2025-07-01 11:23:15 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-26 15:24:40 +0800"
+        "time": "2025-07-01 11:23:15 +0800"
     },
     "basePath": "",
     "book": {

@@ -1523,8 +1523,15 @@
     	<a href="/pages/java/array/" data-nav-link> 陣列</a>
         
             
-                <ul><li><a href="#靜態分配" data-nav-link " >靜態分配</a></li><li><a href="#動態分配" data-nav-link " >動態分配</a></li><li><a href="#字元陣列與print" data-nav-link " >字元陣列與print</a></li></ul>
+                <ul><li><a href="#語法" data-nav-link " >語法</a><ul><li><a href="#宣告" data-nav-link " >宣告</a></li><li><a href="#陣列大小" data-nav-link " >陣列大小</a></li><li><a href="#初始化語法" data-nav-link " >初始化語法</a></li></ul></li><li><a href="#同時初始化與建立陣列" data-nav-link " >同時初始化與建立陣列</a></li><li><a href="#建立陣列大小但並未初始化" data-nav-link " >建立陣列大小，但並未初始化。</a></li><li><a href="#預設值" data-nav-link " >預設值</a></li><li><a href="#分配陣列的值" data-nav-link " >分配陣列的值</a></li><li><a href="#索引範圍" data-nav-link " >索引範圍</a></li><li><a href="#length" data-nav-link " >length</a></li><li><a href="#最後一個元素索引" data-nav-link " >最後一個元素索引</a></li><li><a href="#迴圈" data-nav-link " >迴圈</a><ul><li><a href="#迴圈設定陣列的值" data-nav-link " >迴圈設定陣列的值</a></li></ul></li><li><a href="#字元陣列與print" data-nav-link " >字元陣列與print</a></li><li><a href="#char陣列字元運算與迴圈" data-nav-link " >char陣列字元運算與迴圈</a></li><li><a href="#指派陣列變數" data-nav-link " >指派陣列變數</a></li><li><a href="#找出陣列中最大值" data-nav-link " >找出陣列中最大值</a></li><li><a href="#原地倒轉陣列" data-nav-link " >原地倒轉陣列</a></li></ul>
 
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/array2d/" data-nav-link> 二維陣列</a>
+        
             
         </li>
 	
@@ -1545,6 +1552,20 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/compare/" data-nav-link> Comparable與Comparator</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/collection/" data-nav-link> Collection與Iterator</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/list/" data-nav-link> List</a>
         
             
         </li></ul></li>
@@ -2899,21 +2920,126 @@
                         <h1 id="/pages/java/array">陣列</h1>
                     
 
-                    <h2 id="靜態分配">靜態分配</h2>
-<p>一開始就定義陣列中的值。</p>
+                    <p>陣列裡面放是相同類型的物件，一旦初始化或設定大小，就不能再更改陣列大小。</p>
+<h2 id="語法">語法</h2>
+<h3 id="宣告">宣告</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別[] 變數;
+類別 變數[];
+</code></pre></div></div>
+<p>[]可放在類型後面，也可以放在變數後面，擇一放置。</p>
+<h3 id="陣列大小">陣列大小</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別[] 變數 = new 類別[大小];
+</code></pre></div></div>
+
+<p>陣列大小是陣列有多少「個數」，以下程式碼建立3個記憶體空間，索引為0、1、2。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">arr</span><span class="o">[]</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">3</span><span class="o">];</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>注意！大小設定之後，就不能再修改陣列的大小。</p>
+
+<p>注意！大小是從1開始，外圍陣列至少要有1個大小。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別[] 變數 = new 類別[1];
+</code></pre></div></div>
+
+<p>以下是錯誤寫法，大小不可為0，大小不是陣列索引。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別[] 變數 = new 類別[0];
+</code></pre></div></div>
+<h3 id="初始化語法">初始化語法</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>類別[] 變數 = { 值1, 值2, 值3 };
+</code></pre></div></div>
+<h2 id="同時初始化與建立陣列">同時初始化與建立陣列</h2>
+<p>一開始就初始化陣列中的值。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="code"><pre><span class="kt">char</span><span class="o">[]</span> <span class="n">arr1</span> <span class="o">=</span> <span class="o">{</span><span class="sc">'H'</span><span class="o">,</span> <span class="sc">'e'</span><span class="o">,</span> <span class="sc">'l'</span><span class="o">,</span> <span class="sc">'l'</span><span class="o">,</span> <span class="sc">'o'</span><span class="o">};</span>
-<span class="kt">int</span><span class="o">[]</span> <span class="n">arr2</span> <span class="o">=</span> <span class="o">{</span><span class="mi">0</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">};</span>
+<span class="kt">int</span> <span class="n">arr2</span><span class="o">[]</span> <span class="o">=</span> <span class="o">{</span><span class="mi">0</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">};</span>
 <span class="kt">int</span><span class="o">[]</span> <span class="n">arr3</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[]{</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">};</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="動態分配">動態分配</h2>
-<p>先定義記憶體大小，之後再動態分配陣列的值。</p>
+<h2 id="建立陣列大小但並未初始化">建立陣列大小，但並未初始化。</h2>
+<p>先設定陣列記憶體大小。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">3</span><span class="o">];</span>
+<span class="kt">int</span> <span class="n">arr</span><span class="o">[]</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">3</span><span class="o">];</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="預設值">預設值</h2>
+<ol>
+  <li>若為基本型態，初始值為基本型態預設值。</li>
+  <li>若為類別或陣列，預設值為null。</li>
+</ol>
+
+<table>
+  <tbody>
+    <tr>
+      <td>基本型態</td>
+      <td>預設值</td>
+    </tr>
+    <tr>
+      <td>byte</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>short</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>long</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>float</td>
+      <td>0.0f</td>
+    </tr>
+    <tr>
+      <td>double</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>char</td>
+      <td>\u0000</td>
+    </tr>
+    <tr>
+      <td>boolean</td>
+      <td>false</td>
+    </tr>
+  </tbody>
+</table>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">3</span><span class="o">];</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0
+0
+0
+</code></pre></div></div>
+
+<h2 id="分配陣列的值">分配陣列的值</h2>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2927,13 +3053,102 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>[]可放在類型後面，也可以放在變數後面，擇一放置。</p>
+<h2 id="索引範圍">索引範圍</h2>
+<p>索引範圍是0..(大小 - 1)<br /></p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">3</span><span class="o">];</span>
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="c1">// 索引範圍是0..1</span>
+<span class="kt">int</span><span class="o">[]</span> <span class="n">arr3</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">2</span><span class="o">];</span>
+<span class="c1">// 1維陣列索引0與1</span>
+<span class="n">arr3</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+<span class="n">arr3</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="mi">2</span><span class="o">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<h2 id="length">length</h2>
+<p>取出陣列大小。<br />
+注意！！不是arr1.length()，後面沒有圓括號()，length是屬性，不是方法！！請特別注意！</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span><span class="o">[]</span> <span class="n">arr1</span> <span class="o">=</span> <span class="o">{</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="mi">6</span><span class="o">};</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">arr1</span><span class="o">.</span><span class="na">length</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="最後一個元素索引">最後一個元素索引</h2>
+<p>最後一個元素的索引不是陣列大小，陣列大小跟陣列索引是不同的概念。<br /></p>
+
+<p>陣列大小是陣列有多少「個數」，假設建立大小為3的陣列，索引分別為0、1、2。</p>
+
+<p>以下會編譯錯誤，因為「3」超出陣列索引，索引分別為0、1、2。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">arr</span><span class="o">[]</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">3</span><span class="o">];</span>
+<span class="n">arr</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>所以最後一個元素的索引，通常都會這樣寫:</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">lastIndex</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="迴圈">迴圈</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kt">int</span><span class="o">[]</span> <span class="n">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">4</span><span class="o">];</span>
+<span class="c1">// i的範圍介於0 .. 3</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr1</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">arr1</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0
+0
+0
+0
+</code></pre></div></div>
+<h3 id="迴圈設定陣列的值">迴圈設定陣列的值</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kt">int</span><span class="o">[]</span> <span class="n">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">4</span><span class="o">];</span>
+<span class="c1">// i的範圍介於0 .. 3</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr1</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="n">arr1</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">arr1</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0
+1
+2
+3
+</code></pre></div></div>
 
 <h2 id="字元陣列與print">字元陣列與print</h2>
 <p>印出字元陣列就是印出字串。</p>
@@ -2951,6 +3166,210 @@
 <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">arr</span><span class="o">);</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ABC
+</code></pre></div></div>
+
+<h2 id="char陣列字元運算與迴圈">char陣列字元運算與迴圈</h2>
+<p>以下這樣寫不會有錯誤。<br />
+因為B和1是已知的常數，編譯時就直接檢查相加沒超過char的範圍，就可以把值指派到變數。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="sc">'B'</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">ch</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>C</p>
+
+<p>因為<code class="language-plaintext highlighter-rouge">[0]</code>是確定的變數，編譯時就直接檢查相加沒超過char的範圍，就可以把值指派到變數。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">char</span><span class="o">[]</span> <span class="n">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="o">[</span><span class="mi">10</span><span class="o">];</span>
+<span class="n">arr1</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="sc">'A'</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>B</p>
+
+<p>但若在迴圈中同樣的寫法會編譯錯誤，因為<code class="language-plaintext highlighter-rouge">arr1[i]</code>是不確定的變數。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr1</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="n">arr1</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="sc">'A'</span> <span class="o">+</span> <span class="n">i</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>在迴圈中char計算的結果為int，int的大小是4byte，char是2byte，要把「計算公式」強制轉型。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kt">char</span><span class="o">[]</span> <span class="n">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="o">[</span><span class="mi">10</span><span class="o">];</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr1</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="n">arr1</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="o">(</span><span class="kt">char</span><span class="o">)(</span><span class="sc">'A'</span> <span class="o">+</span> <span class="n">i</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">arr1</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="指派陣列變數">指派陣列變數</h2>
+<ul>
+  <li><a href="/pages/java/memory_model/">Memory Model</a></li>
+</ul>
+
+<p>指派基本型態變數給基本型態變數，實際上是複製變數的值到新的變數，n2修改值，也不會影嚮n1的值，二個變數是獨立的。</p>
+
+<p><img src="/assets/img/java/assign_int1.png" alt="img" /></p>
+
+<p><img src="/assets/img/java/assign_int2.png" alt="img" /></p>
+
+<p><img src="/assets/img/java/assign_int3.png" alt="img" /></p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">n1</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+<span class="c1">// 複製n1的值10，到n2</span>
+<span class="kt">int</span> <span class="n">n2</span> <span class="o">=</span> <span class="n">n1</span><span class="o">;</span>
+<span class="n">n2</span> <span class="o">=</span> <span class="mi">80</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">n1</span><span class="o">);</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">n2</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10
+80
+</code></pre></div></div>
+
+<p>指派陣列變數給陣列變數，是把陣列的記憶體位址複製到另一個變數。</p>
+
+<p><img src="/assets/img/java/assign_arr1.png" alt="img" /></p>
+
+<p><img src="/assets/img/java/assign_arr2.png" alt="img" /></p>
+
+<p><img src="/assets/img/java/assign_arr3.png" alt="img" /></p>
+
+<p>若修改陣列變數，會影嚮另一個陣列變數的值。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kt">int</span><span class="o">[]</span> <span class="n">arr1</span> <span class="o">=</span> <span class="o">{</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">};</span>
+<span class="c1">// arr1陣列的記憶體位址複製到arr2</span>
+<span class="kt">int</span><span class="o">[]</span> <span class="n">arr2</span> <span class="o">=</span> <span class="n">arr1</span><span class="o">;</span>
+<span class="c1">// 修改陣列變數，會影嚮另一個陣列變數的值</span>
+<span class="n">arr2</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">arr1</span><span class="o">));</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">arr2</span><span class="o">));</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1, 2, 10]
+[1, 2, 10]
+</code></pre></div></div>
+
+<h2 id="找出陣列中最大值">找出陣列中最大值</h2>
+<ol>
+  <li>使用max變數，儲存陣列中最大的值。</li>
+  <li>使用maxIndex變數，儲存陣列中最大的值的索引。</li>
+  <li>max與maxIndex初始化，為<code class="language-plaintext highlighter-rouge">arr[0]</code>與0;</li>
+  <li>遍歷由i = 1開始，因為初始值都已經用0開始，沒必要自己跟自己比。</li>
+  <li>遍歷陣列，若之後的值比max大，修改max與maxIndex，指到比較大的值與索引。</li>
+</ol>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="kt">int</span><span class="o">[]</span> <span class="n">arr1</span> <span class="o">=</span> <span class="o">{</span><span class="mi">10</span><span class="o">,</span><span class="mi">5</span><span class="o">,</span><span class="mi">49</span><span class="o">};</span>
+<span class="c1">// 1. 使用max變數，儲存陣列中最大的值。</span>
+<span class="c1">// 3. max初始化，為arr[0]</span>
+<span class="kt">int</span> <span class="n">max</span> <span class="o">=</span> <span class="n">arr1</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
+<span class="c1">// 2. 使用maxIndex變數，儲存陣列中最大的值的索引。</span>
+<span class="c1">// 3. maxIndex初始化0</span>
+<span class="kt">int</span> <span class="n">maxIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="c1">// 遍歷由i = 1開始，沒必要自己跟自己比</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr1</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="c1">// 之後的值比max大</span>
+  <span class="k">if</span> <span class="o">(</span><span class="n">arr1</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">max</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 指到比較大的值與索引</span>
+    <span class="n">max</span> <span class="o">=</span> <span class="n">arr1</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+    <span class="n">maxIndex</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"max = "</span> <span class="o">+</span> <span class="n">max</span> <span class="o">+</span> <span class="s">", maxIndex = "</span> <span class="o">+</span> <span class="n">maxIndex</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max = 49, maxIndex = 2
+</code></pre></div></div>
+
+<h2 id="原地倒轉陣列">原地倒轉陣列</h2>
+<p>原地的意思是不建立其它變數，不浪費其它記憶體空間。<br />
+題目:把陣列123456，倒轉成654321，不使用其它變數儲存。<br /></p>
+<ol>
+  <li>把陣列大小除2，代表要互換的次數。</li>
+  <li>初始化2個變數，i指向陣列頭，j指向陣列尾(陣列大小-1)。</li>
+</ol>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kt">int</span><span class="o">[]</span> <span class="n">arr1</span> <span class="o">=</span> <span class="o">{</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="mi">6</span><span class="o">};</span>
+<span class="kt">int</span> <span class="n">times</span> <span class="o">=</span> <span class="n">arr1</span><span class="o">.</span><span class="na">length</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">,</span> <span class="n">j</span> <span class="o">=</span> <span class="n">arr1</span><span class="o">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">times</span><span class="o">;</span> <span class="n">i</span><span class="o">++,</span> <span class="n">j</span><span class="o">--)</span> 
+  <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">arr1</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+  <span class="n">arr1</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr1</span><span class="o">[</span><span class="n">j</span><span class="o">];</span>
+  <span class="n">arr1</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="o">;</span>
+<span class="o">}</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">arr1</span><span class="o">));</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[6, 5, 4, 3, 2, 1]
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3021,7 +3440,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/arrays" class="navigation navigation-next navigation-unique" aria-label="Next page: Arrays方法與System方法">
+                        <a href="/pages/java/array2d" class="navigation navigation-next navigation-unique" aria-label="Next page: 二維陣列">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3039,11 +3458,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "final",
+            "title": "二維陣列",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/java/final.md",
-            "ref": "_pages/java/final.md",
+            "path": "_pages/java/array2d.md",
+            "ref": "_pages/java/array2d.md",
             "articles": []
         },
         
@@ -3141,7 +3560,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-26 15:24:40 +0800"
+        "time": "2025-07-01 11:23:15 +0800"
     },
     "basePath": "",
     "book": {

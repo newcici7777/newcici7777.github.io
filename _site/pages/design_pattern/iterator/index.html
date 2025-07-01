@@ -1527,6 +1527,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/java/array2d/" data-nav-link> 二維陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/java/arrays/" data-nav-link> Arrays方法與System方法</a>
         
             
@@ -1542,6 +1549,20 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/compare/" data-nav-link> Comparable與Comparator</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/collection/" data-nav-link> Collection與Iterator</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/list/" data-nav-link> List</a>
         
             
         </li></ul></li>
@@ -2032,7 +2053,7 @@
     	<a href="/pages/design_pattern/iterator/" data-nav-link> Iterator</a>
         
             
-                <ul><li><a href="#aggregate" data-nav-link " >Aggregate</a></li><li><a href="#iterator" data-nav-link " >Iterator</a></li><li><a href="#陣列集合與iterator" data-nav-link " >陣列集合與Iterator</a></li><li><a href="#list集合與iterator" data-nav-link " >List集合與Iterator</a></li></ul>
+                <ul><li><a href="#aggregate介面" data-nav-link " >Aggregate介面</a><ul><li><a href="#createiterator" data-nav-link " >createIterator</a></li></ul></li><li><a href="#實作aggregate介面的子類別" data-nav-link " >實作Aggregate介面的子類別</a><ul><li><a href="#elements" data-nav-link " >elements</a></li><li><a href="#createiterator-1" data-nav-link " >createIterator</a></li></ul></li><li><a href="#iterator" data-nav-link " >Iterator</a></li><li><a href="#陣列集合與iterator" data-nav-link " >陣列集合與Iterator</a><ul><li><a href="#aggregate介面-1" data-nav-link " >Aggregate介面</a></li><li><a href="#實作aggregate介面的子類別-1" data-nav-link " >實作Aggregate介面的子類別</a></li></ul></li><li><a href="#list集合與iterator" data-nav-link " >List集合與Iterator</a></li></ul>
 
             
         </li>
@@ -2901,39 +2922,54 @@
 
                     <p>以下的類別圖分二類，左邊是集合Aggregate，右邊是Iterator疊代器。</p>
 
-<p><img src="/assets/img/pattern/iter1.png" alt="img" /></p>
+<p><img src="/assets/img/pattern/iter2.png" alt="img" /></p>
 
-<h2 id="aggregate">Aggregate</h2>
-<p>Aggregate介面有createIterator()方法必須實作。</p>
+<h2 id="aggregate介面">Aggregate介面</h2>
+<h3 id="createiterator">createIterator</h3>
+<p>createIterator()取得Iterator，實作Aggregate介面的子類別都要實作此方法。</p>
 
-<p>實作Aggregate類別，成員屬性有elements，可以是陣列、List、任何集合類別。</p>
+<h2 id="實作aggregate介面的子類別">實作Aggregate介面的子類別</h2>
+<h3 id="elements">elements</h3>
+<p>成員屬性有elements，可以是陣列、List、任何集合類別。</p>
 
-<p>createIterator()取得跟elements類別相關的Iterator，比如elements是陣列，就要取得陣列的Iterator，elements是List，就要取得List的Iterator，elements是Map，就要取得Map的Iterator。</p>
+<h3 id="createiterator-1">createIterator</h3>
+<p>子類別要自己覆寫此方法，取得Iterator。</p>
 
-<p>以上提到的Iterator自己要實作。</p>
+<p>elements是陣列，就要取得陣列的Iterator。<br />
+elements是List，就要取得List的Iterator。<br />elements是Map，就要取得Map的Iterator。<br /></p>
 
 <h2 id="iterator">Iterator</h2>
+<p>重點！Iterator使用Java原本就有的，不另外自己寫。</p>
+
 <p>Iterator介面有hasNext()、next()、remove()三個方法要實作。</p>
 
-<p>hasNext(): 有沒有下一個元素(element)？傳回值型態為boolean</p>
+<p>hasNext(): 有沒有元素(element)？傳回值型態為boolean</p>
 
-<p>next(): 傳回下一個元素(element)。</p>
+<p>next(): 先傳回元素(element)，再把索引++。</p>
 
 <p>remove(): 刪除元素</p>
-
-<p>Iterator使用系統就有的，不另外自己寫。</p>
 
 <p>實作Iterator類別，這個要自己實作。</p>
 
 <h2 id="陣列集合與iterator">陣列集合與Iterator</h2>
-
-<p>下圖中，實作Aggregate類別的elements的類型已換成陣列。</p>
-
 <p><img src="/assets/img/pattern/iter2.png" alt="img" /></p>
 
 <p>寫一個電腦課程的集合與iterator</p>
 
-<p>課程Course</p>
+<h3 id="aggregate介面-1">Aggregate介面</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Aggregate</span> <span class="o">{</span>
+  <span class="nc">Iterator</span> <span class="nf">createIterator</span><span class="o">();</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="實作aggregate介面的子類別-1">實作Aggregate介面的子類別</h3>
+<p>Course(課程)</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -2961,20 +2997,11 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>Component介面</p>
-
-<figure class="highlight">
-  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Component</span> <span class="o">{</span>
-  <span class="nc">Iterator</span> <span class="nf">createIterator</span><span class="o">();</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>電腦課程集合<br />
-要實作createIterator()方法，並把elements傳給iterator</p>
+<p>電腦課程集合ComputerCourse，實作Aggregate介面。</p>
+<ol>
+  <li>實作createIterator()方法</li>
+  <li>把集合中所有課程elements傳給iterator</li>
+</ol>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3009,7 +3036,7 @@
 30
 </pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="o">;</span>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ComputerCourse</span> <span class="kd">implements</span> <span class="nc">Component</span><span class="o">{</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ComputerCourse</span> <span class="kd">implements</span> <span class="nc">Aggregate</span><span class="o">{</span>
   <span class="c1">// 陣列元素</span>
   <span class="kd">private</span> <span class="nc">Course</span><span class="o">[]</span> <span class="n">elements</span><span class="o">;</span>
   <span class="c1">// index索引</span>
@@ -3030,7 +3057,7 @@
     <span class="o">}</span>
   <span class="o">}</span>
 
-  <span class="c1">// 覆寫取得Iterator</span>
+  <span class="c1">// 取得Iterator</span>
   <span class="nd">@Override</span>
   <span class="kd">public</span> <span class="nc">Iterator</span> <span class="nf">createIterator</span><span class="o">()</span> <span class="o">{</span>
     <span class="c1">// 要把elements傳入</span>
@@ -3078,10 +3105,12 @@
 33
 34
 35
+36
 </pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="o">;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ComputerCourseIter</span> <span class="kd">implements</span> <span class="nc">Iterator</span> <span class="o">{</span>
   <span class="nc">Course</span><span class="o">[]</span> <span class="n">elements</span><span class="o">;</span>
+  <span class="c1">// 預設是0</span>
   <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
 
   <span class="kd">public</span> <span class="nf">ComputerCourseIter</span><span class="o">(</span><span class="nc">Course</span><span class="o">[]</span> <span class="n">elements</span><span class="o">)</span> <span class="o">{</span>
@@ -3101,7 +3130,7 @@
   <span class="c1">// 取出下一個元素</span>
   <span class="nd">@Override</span>
   <span class="kd">public</span> <span class="nc">Object</span> <span class="nf">next</span><span class="o">()</span> <span class="o">{</span>
-    <span class="c1">// 傳回值</span>
+    <span class="c1">// 先傳回值</span>
     <span class="nc">Course</span> <span class="n">rtnObj</span> <span class="o">=</span> <span class="n">elements</span><span class="o">[</span><span class="n">index</span><span class="o">];</span>
     <span class="c1">// index移到下一個元素的索引</span>
     <span class="n">index</span><span class="o">++;</span>
@@ -3116,7 +3145,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>main主程式</p>
+<p>測試</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3165,7 +3194,7 @@ Swift
 <h2 id="list集合與iterator">List集合與Iterator</h2>
 <p>實作elements為List的集合與Iterator。</p>
 
-<p>寫一個英語課程。</p>
+<p>寫一個英語課程集合。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3193,7 +3222,7 @@ Swift
 <span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">EnglishCourse</span> <span class="kd">implements</span> <span class="nc">Component</span><span class="o">{</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">EnglishCourse</span> <span class="kd">implements</span> <span class="nc">Aggregate</span><span class="o">{</span>
   <span class="kd">private</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Course</span><span class="o">&gt;</span> <span class="n">elements</span><span class="o">;</span>
 
   <span class="kd">public</span> <span class="nf">EnglishCourse</span><span class="o">()</span> <span class="o">{</span>
@@ -3246,6 +3275,8 @@ Swift
 28
 29
 30
+31
+32
 </pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
 
@@ -3266,7 +3297,9 @@ Swift
 
   <span class="nd">@Override</span>
   <span class="kd">public</span> <span class="nc">Object</span> <span class="nf">next</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// 先傳回</span>
     <span class="nc">Course</span> <span class="n">rtnObj</span> <span class="o">=</span> <span class="n">elements</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">index</span><span class="o">);</span>
+    <span class="c1">// 索引再++</span>
     <span class="n">index</span><span class="o">++;</span>
     <span class="k">return</span> <span class="n">rtnObj</span><span class="o">;</span>
   <span class="o">}</span>
@@ -3279,7 +3312,7 @@ Swift
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>main主程式</p>
+<p>測試程式</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3511,7 +3544,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-06-26 15:24:40 +0800"
+        "time": "2025-07-01 11:23:15 +0800"
     },
     "basePath": "",
     "book": {
