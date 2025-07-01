@@ -1,6 +1,6 @@
 ---
 title: 二維陣列
-date: 2025-06-04
+date: 2025-07-01
 keywords: Java, Two dimensional Arrays
 ---
 二維陣列，就是一維陣列的值，是一維陣列，也就是一維陣列包著多個一維陣列。
@@ -81,13 +81,13 @@ int[] arr4[] = { {1, 2, 3}, {4, 5, 6} };
 ```
 
 ## 索引範圍
-索引範圍是0..(大小 - 1)<br>
+索引範圍是0..(大小 - 1), 0 <= i <= (大小 - 1) <br>
 {% highlight java linenos %}
 int[] arr3[] = new int[2][3];
 {% endhighlight %}
 
-外圍的1維索引範圍為0..(2-1)。<br>
-裡面的1維索引範圍為0..(3-1)。<br>
+外圍的1維索引範圍為0..(2-1), 0 <= i <= 1。<br>
+裡面的1維索引範圍為0..(3-1), 0 <= i <= 2。<br>
 {% highlight java linenos %}
 int[] arr3[] = new int[2][3];
 // 外圍1維陣列索引0與1
@@ -111,9 +111,9 @@ int[] arr4[] = { {1, 2, 3}, 100};
 二維陣列就像棋盤一樣擺放。<br>
 {% highlight java linenos %}
 int[][] arr1 = new int[2][3];
-// i的範圍介於0 .. 1
+// i的範圍介於0 .. 1 , 0 <= i <= 1，i包含1
 for (int i = 0; i < arr1.length; i++) {
-  // j的範圍介於0 .. 2
+  // j的範圍介於0 .. 2, 0 <= j <= 2，j包含2
   for (int j = 0; j < arr1[i].length; j++) {
     System.out.print("[" + i + "][" + j + "]= "
         + arr1[i][j] + "\t");

@@ -1392,13 +1392,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/callby_value/" data-nav-link> Call by value</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/java/final/" data-nav-link> final</a>
         
             
@@ -1566,6 +1559,30 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/list/" data-nav-link> List</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 方法與遞迴 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/callby_value/" data-nav-link> Call by value</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/method/" data-nav-link> 方法</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/recursive/" data-nav-link> 遞迴</a>
         
             
         </li></ul></li>
@@ -3036,7 +3053,7 @@
 </code></pre></div></div>
 
 <h2 id="索引範圍">索引範圍</h2>
-<p>索引範圍是0..(大小 - 1)<br /></p>
+<p>索引範圍是0..(大小 - 1), 0 &lt;= i &lt;= (大小 - 1) <br /></p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3044,8 +3061,8 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>外圍的1維索引範圍為0..(2-1)。<br />
-裡面的1維索引範圍為0..(3-1)。<br /></p>
+<p>外圍的1維索引範圍為0..(2-1), 0 &lt;= i &lt;= 1。<br />
+裡面的1維索引範圍為0..(3-1), 0 &lt;= i &lt;= 2。<br /></p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3095,9 +3112,9 @@
 10
 11
 </pre></td><td class="code"><pre><span class="kt">int</span><span class="o">[][]</span> <span class="n">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">2</span><span class="o">][</span><span class="mi">3</span><span class="o">];</span>
-<span class="c1">// i的範圍介於0 .. 1</span>
+<span class="c1">// i的範圍介於0 .. 1 , 0 &lt;= i &lt;= 1，i包含1</span>
 <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr1</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
-  <span class="c1">// j的範圍介於0 .. 2</span>
+  <span class="c1">// j的範圍介於0 .. 2, 0 &lt;= j &lt;= 2，j包含2</span>
   <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">arr1</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">length</span><span class="o">;</span> <span class="n">j</span><span class="o">++)</span> <span class="o">{</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"["</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">"]["</span> <span class="o">+</span> <span class="n">j</span> <span class="o">+</span> <span class="s">"]= "</span>
         <span class="o">+</span> <span class="n">arr1</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span> <span class="o">+</span> <span class="s">"\t"</span><span class="o">);</span>
@@ -3441,11 +3458,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "final",
+            "title": "方法",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/java/final.md",
-            "ref": "_pages/java/final.md",
+            "path": "_pages/java/method.md",
+            "ref": "_pages/java/method.md",
             "articles": []
         },
         
@@ -3538,12 +3555,12 @@ window.MathJax = {
     },
     "file": {
         "path": "_pages/java/array2d.md",
-        "mtime": "2025-06-04 00:00:00 +0800",
+        "mtime": "2025-07-01 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-01 11:23:15 +0800"
+        "time": "2025-07-01 15:00:33 +0800"
     },
     "basePath": "",
     "book": {

@@ -23,7 +23,7 @@ int arr[] = new int[3];
 
 注意！大小設定之後，就不能再修改陣列的大小。
 
-注意！大小是從1開始，外圍陣列至少要有1個大小。
+注意！大小是從1開始，陣列至少要有1個大小。
 ```
 類別[] 變數 = new 類別[1];
 ```
@@ -96,14 +96,16 @@ arr3[0] = 1;
 arr3[1] = 2;
 {% endhighlight %}
 
-## length
+## length陣列大小
 取出陣列大小。<br>
 注意！！不是arr1.length()，後面沒有圓括號\(\)，length是屬性，不是方法！！請特別注意！
 {% highlight java linenos %}
 int[] arr1 = {1, 2, 3, 4, 5, 6};
 System.out.println(arr1.length);
 {% endhighlight %}
-
+```
+6
+```
 ## 最後一個元素索引
 最後一個元素的索引不是陣列大小，陣列大小跟陣列索引是不同的概念。<br>
 
@@ -115,14 +117,14 @@ int arr[] = new int[3];
 arr[3] = 1;
 {% endhighlight %}
 
-所以最後一個元素的索引，通常都會這樣寫:
+所以最後一個元素的索引，通常都會這樣寫:陣列大小 - 1
 {% highlight java linenos %}
 int lastIndex = arr.length - 1;
 {% endhighlight %}
 
 ## 迴圈
 ### 迴圈判斷
-arr1.length為4，陣列最後一個元素的索引為3。<br>
+arr1.length陣列大小為4，陣列「最後一個元素」的索引為陣列大小 - 1 = 3。<br>
 索引範圍為0, 1, 2, 3都小於arr1.length。<br>
 以下是最常使用陣列迴圈判斷語法。
 {% highlight java linenos %}
@@ -132,7 +134,7 @@ i < arr1.length
 ### 迴圈語法
 {% highlight java linenos %}
 int[] arr1 = new int[4];
-// i的範圍介於0 .. 3
+// i的範圍介於0 .. 3 , 0 <= i <= 3，i包含3。
 for (int i = 0; i < arr1.length; i++) {
   System.out.println(arr1[i]);
 }
@@ -146,7 +148,7 @@ for (int i = 0; i < arr1.length; i++) {
 ### 迴圈設定陣列的值
 {% highlight java linenos %}
 int[] arr1 = new int[4];
-// i的範圍介於0 .. 3
+// i的範圍介於0 .. 3, 0 <= i <= 3，i包含3。
 for (int i = 0; i < arr1.length; i++) {
   arr1[i] = i;
   System.out.println(arr1[i]);
@@ -282,7 +284,7 @@ System.out.println("max = " + max + ", maxIndex = " + maxIndex);
 max = 49, maxIndex = 2
 ```
 
-## 原地倒轉陣列
+## 原地反轉陣列
 原地的意思是不建立其它變數，不浪費其它記憶體空間。<br>
 題目:把陣列123456，倒轉成654321，不使用其它變數儲存。<br>
 1. 把陣列大小除2，代表要互換的次數。

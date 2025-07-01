@@ -9,7 +9,7 @@ keywords: java, Java Object Layout, jol-core
 
 ![img]({{site.imgurl}}/java/jol-core.png)
 
-![img]({{site.imgurl}}/java/sdk1.png)
+![img]({{site.imgurl}}/editor/sdk1.png)
 
 加入jol-core.jar
 
