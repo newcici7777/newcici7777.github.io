@@ -68,11 +68,10 @@ class TestObj {
 ## Memory Model
 ### main方法呼叫方法
 程式碼使用上一個例子。
-1. main()方法本身就是程式的入口，呼叫main()方法會在Stack堆疊空間建立一個記憶體空間。
-2. main()方法呼叫testObj.method1()方法。
-3. 在Stack建立一個method1()方法空間。
-4. 印出test後，執行return返回到main()方法呼叫method1()的位罝。
-5. 離開method1()方法後，記憶體空間會被記憶體回收。
+1. 執行程式會呼叫main()方法，會在Stack堆疊建立一個「方法記憶體空間」。
+2. main()方法呼叫method1()方法，在Stack建立一個method1()「方法記憶體空間」。
+4. 印出test後，執行「return」返回到main()方法「呼叫method1()」的位罝。
+5. 離開method1()方法後，「方法記憶體空間」會被記憶體回收。
 
 ![img]({{site.imgurl}}/java/method2.png)
 
@@ -112,11 +111,10 @@ class TestObj {
 {% endhighlight %}
 
 ### 方法呼叫方法執行過程
-以下圖片已加上執行順序編號，藍色的編號為印出螢幕的順序。<br>
-
+以下圖片已加上執行順序，編號從1至12，藍色的編號為印出螢幕的順序。<br>
 ![img]({{site.imgurl}}/java/method3.png)
-
-return最終回到main()方法，method1()、method2()、method3()、method4()記憶體空間會被記憶體回收，但為了展示執行過程，圖中的記憶體空間先保留，實際狀況是return離開當下的方法，當下的方法就會被記憶體回收。
+<br>
+return最終回到main()方法，method1()、method2()、method3()、method4()「方法記憶體空間」會被記憶體釋放，但為了展示執行過程，圖中的「方法記憶體空間」先保留，實際狀況是return離開當下的方法，當下的方法就會被記憶體釋放。
 
 main()方法執行完畢，return離開main()方法，整個程式也執行完畢。
 
@@ -128,9 +126,9 @@ test2
 test1
 main
 ```
-## 方法傳遞值
+## 方法參數
 Java的方法傳遞值，只有call by value，完全不可能會有call by address。
-### 傳遞基本型態參數
+### 參數為基本型態
 main()方法建立2個變數x與y，並把x與y傳入method1(x, y)。
 {% highlight java linenos %}
 public class Test3 {
@@ -152,15 +150,15 @@ class TestObj2 {
 ```
 #### 複製數字
 方法傳遞基本型態，就是「複製數字」到method1方法。<br>
-方法內部會自動建立區域變數x與y，並把複製的數字，指派到x與y中。<br>
-注意！區域變數x，y的生命週期只有method1方法內，離開method1方法就會被記憶體回收。<br>
+「方法記憶體空間」會自動建立區域變數x與y，並把複製的數字，指派到x與y中。<br>
+注意！區域變數x，y的生命週期只有method1「方法記憶體空間」內，離開method1方法就會被記憶體回收。<br>
 method1區域變數x，y與main()方法中的x，y是完全不同。<br>
 
 ![img]({{site.imgurl}}/java/method4.png)
 
 #### 無法修改基本型態參數
 方法傳遞基本型態，就是「複製數字」到method1方法。<br>
-所以根本無法垮越方法修改到main()方法的x與y變數，method1方法中的x與y變數生命周期與存取範圍只在method1方法中，return離開method1方法，method1方法中的x與y變數也會被記憶體釋放，根本不可能活著到返回main()方法。
+method1方法中的x與y變數生命周期與存取範圍只在method1「方法記憶體空間」中，不會修改到main()「方法記憶體空間」的x與y變數。
 {% highlight java linenos %}
 public class Test3 {
   public static void main(String[] args) {
@@ -182,14 +180,13 @@ class TestObj2 {
 x = 10, y = 20
 ```
 
-### 傳遞類別
-Prerequisites:
+### 參數是String
+Java的方法傳遞String，是把「記憶體位址」「複製」到method1方法中str1變數，「複製記憶體位址」是call by value。<br>
 
-- [callby_value][1]
+method1「方法記憶體空間」的str1變數存的「記憶體位址」跟main「方法記憶體空間」的str1記憶體位址是一樣。
 
-再次強調一次，Java的方法傳遞類別，是把「記憶體位址」「複製」到method1方法中str1變數，「複製記憶體位址」是call by value。
+但是，String是指向String Pool的記憶體位址，如果在method1()方法修改str1成abcdef，是把method1方法中str1變數指向其它「String Pool的記憶體位址」，對main()的str1不會影嚮。
 
-method1方法的str1變數存的記憶體位址跟main方法的str1記憶體位址是一樣。
 {% highlight java linenos %}
 public class Test3 {
   public static void main(String[] args) {
@@ -207,7 +204,7 @@ class TestObj2 {
 }
 {% endhighlight %}
 ```
-str1 = abcdef
+str1 = abcd
 ```
 
 ![img]({{site.imgurl}}/java/method5.png)
@@ -233,18 +230,86 @@ class TestObj2 {
 ```
 str1 = abcd
 ```
+String是指向String Pool的記憶體位址，如果在method1()方法修改str1成null，是把method1方法中str1變數指向null，對main()的str1不會影嚮。
 
-Java的方法傳遞類別，是把「記憶體位址」「複製」到method1方法中str1變數的值。<br>
+![img]({{site.imgurl}}/java/method6.png)
+
+### 參數為物件
+Prerequisites:
+
+- [callby_value][1]
+
+Java的方法傳遞物件，是把「記憶體位址」「複製」到method1方法中str1變數的值。<br>
 method1方法中的str1變數是區域變數，設為null，也只是對method1區域變數中的str1的值改變，對main()方法中的str1根本沒影嚮。
 
 method1方法中的str1變數生命周期與存取範圍只在method1方法中，return離開method1方法，method1方法中的str1變數也會被記憶體釋放，根本不可能活著到返回main()方法。
 
 method1區域變數str1與main()方法中的str1是完全不同，是個別獨立。<br>
+#### 程式碼
+{% highlight java linenos %}
+public class Test7 {
+  public void method1(Test7Obj obj) {
+    obj.name = "Alvin";
+    return;
+  }
+  public static void main(String[] args) {
+    Test7 test7 = new Test7();
+    Test7Obj obj = new Test7Obj();
+    obj.name = "Tony";
+    test7.method1(obj);
+    System.out.println(obj.name);
+  }
+}
+{% endhighlight %}
 
-![img]({{site.imgurl}}/java/method6.png)
+#### Memory model
+1. 建立obj物件，obj物件記憶體位址是Heap空間的0x0033。
+2. obj物件中的name，指向String Pool中的0x0011。
+3. 呼叫method1()方法。
+4. 傳遞obj物件，是把obj「記憶體位址0x0033」「複製」到method1方法中obj參數。
+5. 修改obj物件(0x0033)的name，指向String Pool中的0x0022。
+6. 離開方法，返回至main方法中呼叫method1()的位置。
+7. 印出obj物件(0x0033)的name(0x0022)
+
+![img]({{site.imgurl}}/java/method_obj1.png)
+
+#### 修改物件參數的記憶體位址
+##### 程式碼
+{% highlight java linenos %}
+public class Test7 {
+  public void method1(Test7Obj obj) {
+    obj = null;
+    return;
+  }
+  public static void main(String[] args) {
+    Test7 test7 = new Test7();
+    Test7Obj obj = new Test7Obj();
+    obj.name = "Tony";
+    test7.method1(obj);
+    System.out.println(obj.name);
+  }
+}
+{% endhighlight %}
+```
+Tony
+```
+##### Memory model
+1. 建立obj物件，obj物件記憶體位址是Heap空間的0x0033。
+2. obj物件中的name，指向String Pool中的0x0011。
+3. 呼叫method1()方法。
+4. 傳遞obj物件，是把obj「記憶體位址0x0033」「複製」到method1方法中obj參數。
+5. 修改method1「方法記憶體空間」的obj變數記憶體位址，指向null。
+6. 離開方法，返回至main方法中呼叫method1()的位置。
+7. 印出obj物件(0x0033)的name(0x0022)
+
+![img]({{site.imgurl}}/java/method_obj2.png)
+
+仍是會印出Tony，為什麼在method1方法中修改obj變數，不會影嚮main的obj變數呢？因為Java是call by value，不是call by address。
+
+呼叫方法，是把obj「記憶體位址0x0033」「複製」到method1方法中obj參數，前面提過main「方法記憶體空間」與metohd1「方法記憶體空間」的obj變數是「各自獨立」，各自儲存各自的值，所以修改method1方法中的obj變數，指向null，跟main()方法中的obj變數完全沒關係。
 
 ## return 傳回值
-如果有return 傳回值，那就會把方法中的值，傳回main方法，並且「要有變數去接收」傳回值。
+如果有return傳回值，那就會把方法中的值，傳回main方法，並且「要有變數去接收」傳回值，method1()方法就會影嚮main()方法的變數值。
 
 {% highlight java linenos %}
 public class Test3 {
@@ -288,6 +353,7 @@ str1 = abcd
 ```
 
 ## return 傳回值與多個方法呼叫
+### 程式碼
 {% highlight java linenos %}
 public class Test2 {
   public static void main(String[] args) {
@@ -317,10 +383,14 @@ class TestObj {
 ```
 14
 ```
-
-方法呼叫與return，傳回值如下圖所示。
-
+### 呼叫方法
+方法呼叫順序與return順序，如下圖所示。<br>
 ![img]({{site.imgurl}}/java/method7.png)
+
+### 傳回值取代方法
+每一次返回呼叫位置都會用傳回值去取代~~方法~~ ，下圖中，
+~~方法~~ 都會被清除掉，變成傳回值取代~~方法~~ 的位置。<br>
+![img]({{site.imgurl}}/java/method8.png)
 
 
 [1]: {% link _pages/java/callby_value.md %}

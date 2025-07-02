@@ -1582,7 +1582,7 @@
     	<a href="/pages/java/recursive/" data-nav-link> 遞迴</a>
         
             
-                
+                <ul><li><a href="#無傳回值遞迴" data-nav-link " >無傳回值遞迴</a></li><li><a href="#有傳迴值遞迴" data-nav-link " >有傳迴值遞迴</a><ul><li><a href="#程式碼" data-nav-link " >程式碼</a></li><li><a href="#方法呼叫" data-nav-link " >方法呼叫</a></li><li><a href="#傳回值取代方法" data-nav-link " >傳回值取代方法</a></li></ul></li><li><a href="#呼叫遞迴的守則" data-nav-link " >呼叫遞迴的守則</a></li><li><a href="#階乘" data-nav-link " >階乘</a><ul><li><a href="#程式碼-1" data-nav-link " >程式碼</a></li><li><a href="#呼叫方法" data-nav-link " >呼叫方法</a></li><li><a href="#傳回值取代方法-1" data-nav-link " >傳回值取代方法</a></li></ul></li><li><a href="#費伯納西數" data-nav-link " >費伯納西數</a></li></ul>
 
             
         </li></ul></li>
@@ -2943,9 +2943,197 @@
   <li><a href="/pages/java/method/">方法</a></li>
 </ul>
 
-<p>在<a href="/pages/java/method/">方法</a>的文章中已經提過多次方法呼叫方法的Memory Model。</p>
+<p>遞迴就是自己呼叫自己，相同的方法呼叫相同的方法。</p>
 
-<p>遞迴的呼叫方法的內容跟<a href="/pages/java/method/">方法</a>文章中一模一樣，只是呼叫的方法名全為同一個。</p>
+<p>每呼叫一次方法，就會在Stack建立一個方法記憶體空間，即便是相同的方法，也是建立新的方法記憶體空間，呼叫10次相同方法，就建立10個方法記憶體空間。</p>
+
+<h2 id="無傳回值遞迴">無傳回值遞迴</h2>
+<p>請問以下程式碼結果是什麼？</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test5</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method1</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">n</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">method1</span><span class="o">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">n</span><span class="o">);</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Test5</span> <span class="n">test5</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test5</span><span class="o">();</span>
+    <span class="n">test5</span><span class="o">.</span><span class="na">method1</span><span class="o">(</span><span class="mi">4</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+3
+4
+</code></pre></div></div>
+
+<p>方法呼叫與print印出、return順序如下圖所示。<br />
+<img src="/assets/img/java/recv.png" alt="img" /></p>
+
+<p>重點:<br /></p>
+<ol>
+  <li>印出的n，是印出所在方法記憶體空間中的n。</li>
+  <li>程式中沒有return，但會有隱藏的return。</li>
+  <li>return返回位置是「呼叫方法」的位置。</li>
+  <li>返回位置後面沒有其它<a href="/pages/java/operator/">運算元</a>或<a href="/pages/java/operator/">運算子</a>要執行的話，才執行下一行程式碼。</li>
+</ol>
+
+<h2 id="有傳迴值遞迴">有傳迴值遞迴</h2>
+<h3 id="程式碼">程式碼</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test4</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">method1</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="n">n</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="n">method1</span><span class="o">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="o">)</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+    <span class="k">return</span> <span class="n">res</span><span class="o">;</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Test4</span> <span class="n">test4</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test4</span><span class="o">();</span>
+    <span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="n">test4</span><span class="o">.</span><span class="na">method1</span><span class="o">(</span><span class="mi">4</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">res</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>4
+</code></pre></div></div>
+<h3 id="方法呼叫">方法呼叫</h3>
+<p>方法呼叫順序如下圖所示。<br />
+<img src="/assets/img/java/recv1.png" alt="img" /></p>
+
+<h3 id="傳回值取代方法">傳回值取代方法</h3>
+<p>每一次返回呼叫位置都會用傳回值去取代<del>方法</del> ，下圖中，
+<del>方法</del> 都會被清除掉，變成傳回值取代<del>方法</del> 的位置。<br />
+<img src="/assets/img/java/recv2.png" alt="img" /></p>
+
+<h2 id="呼叫遞迴的守則">呼叫遞迴的守則</h2>
+<p>1.代入的參數是要有逐漸變化(減少或增加)，最後符合停止遞迴條件，離開遞迴。<br />
+2.代入的參數都是相同就會變成無限迴圈。<br />
+以下程式碼是無限迴圈。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test4</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">method1</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="n">n</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">// 代入的參數n沒有改變，就會變成無限迴圈</span>
+    <span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="n">method1</span><span class="o">(</span><span class="n">n</span><span class="o">)</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+    <span class="k">return</span> <span class="n">res</span><span class="o">;</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Test4</span> <span class="n">test4</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test4</span><span class="o">();</span>
+    <span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="n">test4</span><span class="o">.</span><span class="na">method1</span><span class="o">(</span><span class="mi">4</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">res</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>3.「方法記憶體空間」的參數是「基本型態」不會跟「其它方法記憶體空間」共享「基本型態」參數。<br />
+4.參數是物件</p>
+
+<h2 id="階乘">階乘</h2>
+<p>以前學數學是數字大的在前面。<br />
+$5 \times 4 \times 3 \times 2 \times 1$
+但現在要反過來，數字小的在前面。<br /></p>
+
+<h3 id="程式碼-1">程式碼</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test6</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">method1</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">n</span> <span class="o">!=</span> <span class="mi">1</span><span class="o">)</span> <span class="k">return</span> <span class="n">method1</span><span class="o">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="o">)</span> <span class="o">*</span> <span class="n">n</span><span class="o">;</span>
+    <span class="k">return</span> <span class="n">n</span><span class="o">;</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Test6</span> <span class="n">test6</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test6</span><span class="o">();</span>
+    <span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="n">test6</span><span class="o">.</span><span class="na">method1</span><span class="o">(</span><span class="mi">5</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">res</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>120
+</code></pre></div></div>
+<h3 id="呼叫方法">呼叫方法</h3>
+<p>方法呼叫順序如下圖所示。<br />
+<img src="/assets/img/java/recv3.png" alt="img" /></p>
+
+<h3 id="傳回值取代方法-1">傳回值取代方法</h3>
+<p>每一次返回呼叫位置都會用傳回值去取代<del>方法</del> ，下圖中，
+<del>方法</del> 都會被清除掉，變成傳回值取代<del>方法</del> 的位置。<br />
+<img src="/assets/img/java/recv4.png" alt="img" /></p>
+
+<h2 id="費伯納西數">費伯納西數</h2>
+<p>題目:印出費伯納西數，代入n = 4，求出1+1+2+3+5 = 結果<br />
+n = 0，傳回1。<br />
+n = 1，傳回1。<br />
+n = 2，傳回前面2項(n為0與n為1)的值相加。<br />
+n = 3，傳回前面2項(n為1與n為2)的值相加。<br />
+n = 4，傳回前面2項(n為2與n為3)的值相加。<br />
+前面2項的值相加，就是n-1的值 + n-2的值。<br /></p>
 
 </section>
             </div><div class="search-results">
@@ -3128,7 +3316,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-01 15:00:33 +0800"
+        "time": "2025-07-02 16:00:35 +0800"
     },
     "basePath": "",
     "book": {
