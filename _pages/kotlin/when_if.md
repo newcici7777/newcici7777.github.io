@@ -257,7 +257,10 @@ hello
 hello
 ```
 
-## while
+## while與遞增遞減
+- [遞增遞減][1]
+
+i沒有指派給其它變數，就是單純的`i = i + 1`
 {% highlight kotlin linenos %}
 var i = 0
 while (i < 6) {
@@ -274,6 +277,7 @@ while (i < 6) {
 5
 ```
 
+變數i在前面，代表先把i印出，再加加`i = i + 1`
 {% highlight kotlin linenos %}
 i = 0
 while (i < 6) println(i++)
@@ -287,7 +291,7 @@ while (i < 6) println(i++)
 5
 ```
 
-加1放在前面表示先加1再加上自己
+\+\+在前面，代表先執行`i = i + 1`，再印出i
 {% highlight kotlin linenos %}
 i = 0
 while (i < 6) println(++i)
@@ -442,4 +446,4 @@ for j start: 2
 out foo()
 ```
 
-
+[1]: {% link _pages/java/plusplus.md %}

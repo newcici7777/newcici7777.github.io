@@ -211,6 +211,7 @@ str1 = abcd
 
 #### 方法中修改參數位址
 以下程式碼，方法把參數位址修改成null。
+
 {% highlight java linenos %}
 public class Test3 {
   public static void main(String[] args) {
@@ -230,6 +231,7 @@ class TestObj2 {
 ```
 str1 = abcd
 ```
+
 String是指向String Pool的記憶體位址，如果在method1()方法修改str1成null，是把method1方法中str1變數指向null，對main()的str1不會影嚮。
 
 ![img]({{site.imgurl}}/java/method6.png)
@@ -239,12 +241,6 @@ Prerequisites:
 
 - [callby_value][1]
 
-Java的方法傳遞物件，是把「記憶體位址」「複製」到method1方法中str1變數的值。<br>
-method1方法中的str1變數是區域變數，設為null，也只是對method1區域變數中的str1的值改變，對main()方法中的str1根本沒影嚮。
-
-method1方法中的str1變數生命周期與存取範圍只在method1方法中，return離開method1方法，method1方法中的str1變數也會被記憶體釋放，根本不可能活著到返回main()方法。
-
-method1區域變數str1與main()方法中的str1是完全不同，是個別獨立。<br>
 #### 程式碼
 {% highlight java linenos %}
 public class Test7 {
@@ -261,7 +257,9 @@ public class Test7 {
   }
 }
 {% endhighlight %}
-
+```
+Alvin
+```
 #### Memory model
 1. 建立obj物件，obj物件記憶體位址是Heap空間的0x0033。
 2. obj物件中的name，指向String Pool中的0x0011。

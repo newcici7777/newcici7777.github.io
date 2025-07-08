@@ -1423,6 +1423,13 @@
     	<a href="/pages/java/debug/" data-nav-link> debug</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/for_while/" data-nav-link> 迴圈</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -1623,14 +1630,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/sb/" data-nav-link> String Buffer</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/str_buffer_builder/" data-nav-link> StringBuilder vs StringBuffer</a>
+    	<a href="/pages/java/string_utils/" data-nav-link> String字串常用方法</a>
         
             
         </li>
@@ -1645,6 +1645,20 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/string_compareto/" data-nav-link> String compareTo原始碼</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/sb/" data-nav-link> String Buffer</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/str_buffer_builder/" data-nav-link> StringBuilder vs StringBuffer</a>
         
             
         </li></ul></li>
@@ -3079,8 +3093,8 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>3.「方法記憶體空間」的參數是「基本型態」不會跟「其它方法記憶體空間」共享「基本型態」參數。<br />
-4.參數是物件</p>
+<p>3.「方法記憶體空間」的參數是「基本型態」「不會」跟「其它方法記憶體空間」共享「基本型態」參數。<br />
+4.參數是物件，「會」跟「其它方法記憶體空間」共享。</p>
 
 <h2 id="階乘">階乘</h2>
 <p>以前學數學是數字大的在前面。<br />
@@ -3127,13 +3141,75 @@ $5 \times 4 \times 3 \times 2 \times 1$
 <img src="/assets/img/java/recv4.png" alt="img" /></p>
 
 <h2 id="費伯納西數">費伯納西數</h2>
-<p>題目:印出費伯納西數，代入n = 4，求出1+1+2+3+5 = 結果<br />
-n = 0，傳回1。<br />
+<p>題目:求出費伯納西數，1,1,2,3,5，求出前2項的相加結果<br /></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>n</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>傳回</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>5</td>
+      <td>8</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>n = 0，傳回1。<br />
 n = 1，傳回1。<br />
 n = 2，傳回前面2項(n為0與n為1)的值相加。<br />
 n = 3，傳回前面2項(n為1與n為2)的值相加。<br />
-n = 4，傳回前面2項(n為2與n為3)的值相加。<br />
-前面2項的值相加，就是n-1的值 + n-2的值。<br /></p>
+n = 4，傳回前面2項(n為2與n為3)的值相加。<br /></p>
+
+<p>前面2項的值相加，就是n-1的值 + n-2的值。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test8</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">fib</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="mi">1</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="k">return</span> <span class="nf">fib</span><span class="o">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="o">)</span> <span class="o">+</span> <span class="n">fib</span><span class="o">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="o">);</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Test8</span> <span class="n">test8</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test8</span><span class="o">();</span>
+    <span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="n">test8</span><span class="o">.</span><span class="na">fib</span><span class="o">(</span><span class="mi">4</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">res</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5
+</code></pre></div></div>
+
+<p><img src="/assets/img/java/fib.png" alt="img" /></p>
 
 </section>
             </div><div class="search-results">
@@ -3221,6 +3297,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "迴圈",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/java/for_while.md",
+            "ref": "_pages/java/for_while.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -3316,7 +3401,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-02 16:00:35 +0800"
+        "time": "2025-07-08 15:52:29 +0800"
     },
     "basePath": "",
     "book": {

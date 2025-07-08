@@ -1423,6 +1423,13 @@
     	<a href="/pages/java/debug/" data-nav-link> debug</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/for_while/" data-nav-link> 迴圈</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -1620,14 +1627,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/sb/" data-nav-link> String Buffer</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/str_buffer_builder/" data-nav-link> StringBuilder vs StringBuffer</a>
+    	<a href="/pages/java/string_utils/" data-nav-link> String字串常用方法</a>
         
             
         </li>
@@ -1642,6 +1642,20 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/string_compareto/" data-nav-link> String compareTo原始碼</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/sb/" data-nav-link> String Buffer</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/str_buffer_builder/" data-nav-link> StringBuilder vs StringBuffer</a>
         
             
         </li></ul></li>
@@ -1921,7 +1935,7 @@
     	<a href="/pages/java/sys_in_out/" data-nav-link> System.in System.out</a>
         
             
-                <ul><li><a href="#systemin" data-nav-link " >System.in</a></li><li><a href="#scanner" data-nav-link " >Scanner</a><ul><li><a href="#nextnextintnextdouble" data-nav-link " >next(),nextInt(),nextDouble()</a></li></ul></li><li><a href="#systemout" data-nav-link " >System.out</a><ul><li><a href="#printstream的write" data-nav-link " >PrintStream的write()</a></li><li><a href="#設定printstream輸出文件位置" data-nav-link " >設定PrintStream輸出文件位置</a></li></ul></li><li><a href="#printwriter" data-nav-link " >PrintWriter</a><ul><li><a href="#建構子是systemout輸出到螢幕" data-nav-link " >建構子是System.out，輸出到螢幕。</a></li><li><a href="#建構子是filewriter輸出到檔案" data-nav-link " >建構子是FileWriter，輸出到檔案。</a></li></ul></li></ul>
+                <ul><li><a href="#systemin" data-nav-link " >System.in</a></li><li><a href="#scanner" data-nav-link " >Scanner</a><ul><li><a href="#nextnextintnextdoublecharat0" data-nav-link " >next(),nextInt(),nextDouble(),charAt(0)</a></li><li><a href="#scanner與迴圈" data-nav-link " >Scanner與迴圈</a></li></ul></li><li><a href="#systemout" data-nav-link " >System.out</a><ul><li><a href="#printstream的write" data-nav-link " >PrintStream的write()</a></li><li><a href="#設定printstream輸出文件位置" data-nav-link " >設定PrintStream輸出文件位置</a></li></ul></li><li><a href="#printwriter" data-nav-link " >PrintWriter</a><ul><li><a href="#建構子是systemout輸出到螢幕" data-nav-link " >建構子是System.out，輸出到螢幕。</a></li><li><a href="#建構子是filewriter輸出到檔案" data-nav-link " >建構子是FileWriter，輸出到檔案。</a></li></ul></li></ul>
 
             
         </li></ul></li>
@@ -2962,7 +2976,7 @@
 
 <p>Scanner會去鍵盤輸入串流中取得資料。</p>
 
-<h3 id="nextnextintnextdouble">next(),nextInt(),nextDouble()</h3>
+<h3 id="nextnextintnextdoublecharat0">next(),nextInt(),nextDouble(),charAt(0)</h3>
 <p>當執行到next開頭的方法，終端機會等待使用者輸入，直到使用者輸入才執行下一行程式。</p>
 
 <figure class="highlight">
@@ -2978,16 +2992,20 @@
 10
 11
 12
+13
+14
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="nc">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"請輸入名字:"</span><span class="o">);</span>
     <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>  <span class="c1">// 字串</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"請輸入性別:"</span><span class="o">);</span>
+    <span class="kt">char</span> <span class="n">sex</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">next</span><span class="o">().</span><span class="na">charAt</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>  <span class="c1">// 字元</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"請輸入年齡:"</span><span class="o">);</span>
     <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>  <span class="c1">// int</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"請輸入體重"</span><span class="o">);</span>
     <span class="kt">double</span> <span class="n">weight</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextDouble</span><span class="o">();</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"name = "</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">", age = "</span> <span class="o">+</span> <span class="n">age</span> <span class="o">+</span> <span class="s">", weight = "</span> <span class="o">+</span> <span class="n">weight</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"name = "</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">", sex = "</span> <span class="o">+</span> <span class="n">sex</span> <span class="o">+</span> <span class="s">", age = "</span> <span class="o">+</span> <span class="n">age</span> <span class="o">+</span> <span class="s">", weight = "</span> <span class="o">+</span> <span class="n">weight</span><span class="o">);</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -2995,11 +3013,71 @@
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>請輸入名字:
 cici
+請輸入性別:
+女
 請輸入年齡:
-10
+5
 請輸入體重
-25.5
-name = cici, age = 10, weight = 25.5
+50
+name = cici, sex = 女, age = 5, weight = 50.0
+</code></pre></div></div>
+<h3 id="scanner與迴圈">Scanner與迴圈</h3>
+<p>使用時，Scanner放在迴圈之外。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="code"><pre>    <span class="nc">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+    <span class="k">do</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"==== "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" ===="</span><span class="o">);</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"請輸入名字:"</span><span class="o">);</span>
+      <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>  <span class="c1">// 字串</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"請輸入性別:"</span><span class="o">);</span>
+      <span class="kt">char</span> <span class="n">sex</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">next</span><span class="o">().</span><span class="na">charAt</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>  <span class="c1">// 字元</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"請輸入年齡:"</span><span class="o">);</span>
+      <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>  <span class="c1">// int</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"請輸入體重"</span><span class="o">);</span>
+      <span class="kt">double</span> <span class="n">weight</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextDouble</span><span class="o">();</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"name = "</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">", sex = "</span> <span class="o">+</span> <span class="n">sex</span> <span class="o">+</span> <span class="s">", age = "</span> <span class="o">+</span> <span class="n">age</span> <span class="o">+</span> <span class="s">", weight = "</span> <span class="o">+</span> <span class="n">weight</span><span class="o">);</span>
+      <span class="n">i</span><span class="o">++;</span>
+    <span class="o">}</span> <span class="k">while</span> <span class="o">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>==== 1 ====
+請輸入名字:
+cici
+請輸入性別:
+女
+請輸入年齡:
+5
+請輸入體重
+15
+name = cici, sex = 女, age = 5, weight = 15.0
+==== 2 ====
+請輸入名字:
+bill
+請輸入性別:
+男
+請輸入年齡:
+20
+請輸入體重
+70
+name = bill, sex = 男, age = 20, weight = 70.0
 </code></pre></div></div>
 
 <h2 id="systemout">System.out</h2>
@@ -3327,7 +3405,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-02 16:00:35 +0800"
+        "time": "2025-07-08 15:52:29 +0800"
     },
     "basePath": "",
     "book": {

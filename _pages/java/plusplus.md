@@ -11,13 +11,22 @@ keywords: Java, Increment operator, Decrement operator
 k\+\+與\+\+k，若沒有指派給其它變數，二者都是k = k \+ 1。
 
 ### 有指派給其它變數
-#### k在前面
-變數 = k\+\+，k在前面，就是把k先指派給其它變數，最後才k = k \+ 1。
+#### 變數k在前面，後加加
+二種記住的方法，擇一使用。
+1. 變數 = k\+\+，k在前面，就是把「k先指派給其它變數」，最後才k加1 k = k \+ 1。
+2. 變數 = k\+\+，加加在後面，就是把k先指派給其它變數，「最後才k加1」 k = k \+ 1。
 
-#### k在後面
-變數 = \+\+k，k在後面，就是k先k = k \+ 1，再指派給其它變數。
+#### 先加加，變數k在後面
+二種記住的方法，擇一使用。
+1. 變數 = \+\+k，k在後面，就是k先加1 k = k \+ 1，「最後再指派」給其它變數。
+2. 變數 = \+\+k，加加在前面，就是「k先加1」 k = k \+ 1，最後再指派給其它變數。
 
-## k在前面
+#### 我自己的記法
+看是誰在前面，是變數在前，還是加加在前面。
+1. 變數在前面，先指派給其它變數。
+2. 加加\+\+在前面，先加加。
+
+## k在前面，後加加
 先把k指派給j，然後k才遞增k = k \+ 1。
 {% highlight java linenos %}
 int k = 8;
@@ -34,7 +43,7 @@ int j = k;
 k = k + 1;
 {% endhighlight %}
 
-## k在後面
+## 先加加，k在後面
 k先遞增k = k \+ 1，然後指派給j。
 {% highlight java linenos %}
  int k = 8;
@@ -70,8 +79,8 @@ k++;
 {% endhighlight %}
 
 ## print與遞增
-## k在前面
-跟指派的原理一樣，先印出k，再`k = k + 1`
+## k在前面，後加加
+跟指派的原理一樣，k在前面，先印出k，再`k = k + 1`。
 {% highlight java linenos %}
 int k = 8;
 System.out.println(k++);
@@ -80,8 +89,8 @@ System.out.println(k++);
 8
 ```
 
-## k在後面
-跟指派的原理一樣，先`k = k + 1`
+## 先加加，k在後面
+跟指派的原理一樣，加加在前面，先`k = k + 1`，再印出k。
 {% highlight java linenos %}
 int k = 8;
 System.out.println(++k);
@@ -91,7 +100,8 @@ System.out.println(++k);
 ```
 
 ## 指派的變數是自己
-### k在前面
+### k在前面，後加加
+k在前面，先指派k給其它變數。
 {% highlight java linenos %}
 public class Test {
   public static void main(String[] args) {
@@ -123,6 +133,7 @@ k = temp;
 ```
 
 ### k在後面
+加加在前面，先遞增，再把k指派給其它變數。
 {% highlight java linenos %}
 public class Test {
   public static void main(String[] args) {
@@ -138,7 +149,7 @@ k = 2
 
 編譯的時候，看到`k = ++k;`，指派給自己，程式碼就會變成如下:
 
-1.k遞增。
+1.加加在前面，先遞增。
 ```
 k = k + 1;
 ```
@@ -162,7 +173,7 @@ System.out.println(++k+k);
 134
 ```
 
-1.先遞增。
+1.先加加，先遞增。
 ```
 ++k;
 ↓
@@ -178,6 +189,7 @@ k = k + 1;
 134
 
 ## 其它範例2
+### k在前面，後加加
 先把k變成負數，指派給i，然後k才遞增k = k \+ 1。
 {% highlight java linenos %}
 int i = 0, k = 5;
@@ -203,7 +215,20 @@ k = k + 1;
 k = 5 + 1
 ```
 
-
+## 其它範例3
+### 變數在前面，後加加
+`b++`，變數b在前面，先把b指派給result，然後b才遞增k = k \+ 1。
+{% highlight java linenos %}
+int a = 10;
+int b = 99;
+int result = a > b ? a++ : b++;
+System.out.println(result);
+System.out.println(b);
+{% endhighlight %}
+```
+99
+100
+```
 
 
 [1]: {% link _pages/java/operator.md %}

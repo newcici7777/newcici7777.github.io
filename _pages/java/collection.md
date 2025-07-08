@@ -9,7 +9,7 @@ Prerequisites:
 
 集合介面Interface的繼承圖如下:
 
-![img]({{site.imgurl}}/java/.png)
+![img]({{site.imgurl}}/java/collection.png)
 
 上圖每一個都是介面Interface。
 

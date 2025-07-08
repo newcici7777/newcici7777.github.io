@@ -22,7 +22,7 @@ Scanner scanner = new Scanner(System.in);
 
 Scanner會去鍵盤輸入串流中取得資料。
 
-### next(),nextInt(),nextDouble()
+### next(),nextInt(),nextDouble(),charAt(0)
 當執行到next開頭的方法，終端機會等待使用者輸入，直到使用者輸入才執行下一行程式。
 {% highlight java linenos %}
 public class Test {
@@ -30,22 +30,67 @@ public class Test {
     Scanner scanner = new Scanner(System.in);
     System.out.println("請輸入名字:");
     String name = scanner.next();  // 字串
+    System.out.println("請輸入性別:");
+    char sex = scanner.next().charAt(0);  // 字元
     System.out.println("請輸入年齡:");
     int age = scanner.nextInt();  // int
     System.out.println("請輸入體重");
     double weight = scanner.nextDouble();
-    System.out.println("name = " + name + ", age = " + age + ", weight = " + weight);
+    System.out.println("name = " + name + ", sex = " + sex + ", age = " + age + ", weight = " + weight);
   }
 }
 {% endhighlight %}
 ```
 請輸入名字:
 cici
+請輸入性別:
+女
 請輸入年齡:
-10
+5
 請輸入體重
-25.5
-name = cici, age = 10, weight = 25.5
+50
+name = cici, sex = 女, age = 5, weight = 50.0
+```
+### Scanner與迴圈
+使用時，Scanner放在迴圈之外。
+{% highlight java linenos %}
+    Scanner scanner = new Scanner(System.in);
+    int i = 1;
+    do {
+      System.out.println("==== " + i + " ====");
+      System.out.println("請輸入名字:");
+      String name = scanner.next();  // 字串
+      System.out.println("請輸入性別:");
+      char sex = scanner.next().charAt(0);  // 字元
+      System.out.println("請輸入年齡:");
+      int age = scanner.nextInt();  // int
+      System.out.println("請輸入體重");
+      double weight = scanner.nextDouble();
+      System.out.println("name = " + name + ", sex = " + sex + ", age = " + age + ", weight = " + weight);
+      i++;
+    } while (i <= 2);
+{% endhighlight %}
+```
+==== 1 ====
+請輸入名字:
+cici
+請輸入性別:
+女
+請輸入年齡:
+5
+請輸入體重
+15
+name = cici, sex = 女, age = 5, weight = 15.0
+==== 2 ====
+請輸入名字:
+bill
+請輸入性別:
+男
+請輸入年齡:
+20
+請輸入體重
+70
+name = bill, sex = 男, age = 20, weight = 70.0
 ```
 
 ## System.out

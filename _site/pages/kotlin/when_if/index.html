@@ -1423,6 +1423,13 @@
     	<a href="/pages/java/debug/" data-nav-link> debug</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/for_while/" data-nav-link> 迴圈</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -1620,14 +1627,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/sb/" data-nav-link> String Buffer</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/str_buffer_builder/" data-nav-link> StringBuilder vs StringBuffer</a>
+    	<a href="/pages/java/string_utils/" data-nav-link> String字串常用方法</a>
         
             
         </li>
@@ -1642,6 +1642,20 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/string_compareto/" data-nav-link> String compareTo原始碼</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/sb/" data-nav-link> String Buffer</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/str_buffer_builder/" data-nav-link> StringBuilder vs StringBuffer</a>
         
             
         </li></ul></li>
@@ -2257,7 +2271,7 @@
     	<a href="/pages/kotlin/when_if/" data-nav-link> if, when, while</a>
         
             
-                <ul><li><a href="#if-條件運算子" data-nav-link " >if 條件運算子</a></li><li><a href="#if-接收傳回值" data-nav-link " >if 接收傳回值</a></li><li><a href="#if條件語句不只有一行省略return" data-nav-link " >if條件語句不只有一行，省略return</a></li><li><a href="#when" data-nav-link " >when</a><ul><li><a href="#程式碼區塊" data-nav-link " >程式碼區塊</a></li></ul></li><li><a href="#for" data-nav-link " >for</a><ul><li><a href="#continue" data-nav-link " >continue</a></li><li><a href="#break" data-nav-link " >break</a></li></ul></li><li><a href="#foreach" data-nav-link " >foreach</a></li><li><a href="#repeat" data-nav-link " >repeat</a></li><li><a href="#while" data-nav-link " >while</a></li><li><a href="#標籤" data-nav-link " >標籤\@</a><ul><li><a href="#break標籤" data-nav-link " >break標籤\@</a></li><li><a href="#continue標籤" data-nav-link " >continue標籤\@</a></li><li><a href="#return標籤" data-nav-link " >return標籤\@</a></li><li><a href="#run標籤" data-nav-link " >run標籤\@</a></li></ul></li><li><a href="#return" data-nav-link " >return</a></li></ul>
+                <ul><li><a href="#if-條件運算子" data-nav-link " >if 條件運算子</a></li><li><a href="#if-接收傳回值" data-nav-link " >if 接收傳回值</a></li><li><a href="#if條件語句不只有一行省略return" data-nav-link " >if條件語句不只有一行，省略return</a></li><li><a href="#when" data-nav-link " >when</a><ul><li><a href="#程式碼區塊" data-nav-link " >程式碼區塊</a></li></ul></li><li><a href="#for" data-nav-link " >for</a><ul><li><a href="#continue" data-nav-link " >continue</a></li><li><a href="#break" data-nav-link " >break</a></li></ul></li><li><a href="#foreach" data-nav-link " >foreach</a></li><li><a href="#repeat" data-nav-link " >repeat</a></li><li><a href="#while與遞增遞減" data-nav-link " >while與遞增遞減</a></li><li><a href="#標籤" data-nav-link " >標籤\@</a><ul><li><a href="#break標籤" data-nav-link " >break標籤\@</a></li><li><a href="#continue標籤" data-nav-link " >continue標籤\@</a></li><li><a href="#return標籤" data-nav-link " >return標籤\@</a></li><li><a href="#run標籤" data-nav-link " >run標籤\@</a></li></ul></li><li><a href="#return" data-nav-link " >return</a></li></ul>
 
             
         </li>
@@ -3343,7 +3357,12 @@ hello
 hello
 </code></pre></div></div>
 
-<h2 id="while">while</h2>
+<h2 id="while與遞增遞減">while與遞增遞減</h2>
+<ul>
+  <li><a href="/pages/java/plusplus/">遞增遞減</a></li>
+</ul>
+
+<p>i沒有指派給其它變數，就是單純的<code class="language-plaintext highlighter-rouge">i = i + 1</code></p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3367,6 +3386,8 @@ hello
 5
 </code></pre></div></div>
 
+<p>變數i在前面，代表先把i印出，再加加<code class="language-plaintext highlighter-rouge">i = i + 1</code></p>
+
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -3383,7 +3404,7 @@ hello
 5
 </code></pre></div></div>
 
-<p>加1放在前面表示先加1再加上自己</p>
+<p>++在前面，代表先執行<code class="language-plaintext highlighter-rouge">i = i + 1</code>，再印出i</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3800,7 +3821,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-02 16:00:35 +0800"
+        "time": "2025-07-08 15:52:29 +0800"
     },
     "basePath": "",
     "book": {

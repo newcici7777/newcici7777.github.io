@@ -93,8 +93,8 @@ public class Test4 {
   }
 }
 {% endhighlight %}
-3.「方法記憶體空間」的參數是「基本型態」不會跟「其它方法記憶體空間」共享「基本型態」參數。<br>
-4.參數是物件
+3.「方法記憶體空間」的參數是「基本型態」「不會」跟「其它方法記憶體空間」共享「基本型態」參數。<br>
+4.參數是物件，「會」跟「其它方法記憶體空間」共享。
 
 ## 階乘
 以前學數學是數字大的在前面。<br>
@@ -160,6 +160,7 @@ public class Test8 {
 5
 ```
 
+![img]({{site.imgurl}}/java/fib.png)
 
 [1]: {% link _pages/java/method.md %}
 [2]: {% link _pages/java/operator.md %}
