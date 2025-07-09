@@ -341,8 +341,8 @@ i = 1, j = 2
 i = 2, j = 4
 ```
 
-### for無限迴圈
-以下的for程式碼，沒有條件判斷，是無限迴圈，需要使用break跳出迴圈。
+### for無窮迴圈
+以下的for程式碼，沒有條件判斷，是無窮迴圈，需要使用break跳出迴圈。
 {% highlight java linenos %}
 int i = 1;
 for (;;) {
@@ -356,8 +356,9 @@ for (;;) {
 ```
 if(條件為true) break;
 ```
+注意！條件為「true」，「離開」迴圈。
 ### 大於
-當i等於10，`10 > 10`，10沒有大於10，先前提過關係運算子，相同數字大於小於都是false，所以仍會執行i\+\+，條件為true，也就是i為11才是跳出迴圈的條件。
+當i等於10，`10 > 10`，10沒有大於10，先前提過關係運算子，相同數字大於小於都是false，沒有離開迴圈。<br>所以仍會執行i\+\+，i為11，條件才會為true，符合離開迴圈的條件。<br>
 {% highlight java linenos %}
 int i = 1;
 for (;;) {
@@ -381,7 +382,7 @@ System.out.println("離開的i = " + i);
 離開的i = 11
 ```
 ### 小於
-當i等於1，1沒有小於1，所以仍會執行i\-\-，i為0才是跳出迴圈的條件。
+當i等於1，1沒有小於1，先前提過關係運算子，相同數字大於小於都是false，所以仍會執行i\-\-，i為0才是離開迴圈的條件。
 {% highlight java linenos %}
 int i = 10;
 for (;;) {
@@ -404,7 +405,113 @@ System.out.println("離開的i = " + i);
 1
 離開的i = 0
 ```
-## 化繁為簡先死後活
+
+## continue
+### continue與for
+for的continue會先執行「迴圈變數遞增」，再執行「進入迴圈條件」。
+
+主要有六個部分。
+1. 迴圈變數初始化。
+2. 「進入」迴圈條件。
+3. 執行的程式碼
+4. 迴圈變數遞增或遞減。
+5. 進入continue條件
+6. continue
+
+```
+for(1迴圈變數初始化;2進入迴圈條件;5迴圈變數遞增或遞減) {
+  if (3進入continue條件) {
+    4continue
+  }
+  6程式碼
+}
+```
+
+流程圖如下:
+```mermaid
+flowchart TD
+  A[1.迴圈變數初始化] --> B{2.進入迴圈條件}
+  B -->|True| C{3.進入continue條件}
+  C -->|True| D[4.continue]
+  D --> E[5.迴圈變數遞增或遞減]
+  E --> B
+  C -->|False| F[6.程式碼]
+  F --> E
+  B ---->|False| G[離開迴圈]
+```
+
+以下i等於2，就不印出。
+{% highlight java linenos %}
+for (int i = 0; i < 5; i++) {
+  if (i == 2) {
+    continue;
+  }
+  System.out.println(i);
+}
+{% endhighlight %}
+```
+0
+1
+3
+4
+```
+
+注意下圖執行順序，continue執行完，執行「i\+\+」迴圈變數遞增，然後再執行「進入迴圈條件」。<br>
+
+![img]({{site.imgurl}}/java/continue_for.png)
+
+### while與continue
+continue在while之中，是直接執行「進入迴圈條件」，continue之後的程式碼全部不執行。
+
+注意！迴圈變數遞增遞減，一定要放在continue<span class="markline">之前</span>。<br>
+如果「迴圈變數遞增遞減」放在continue「之後」，continue「之後」的程式碼全部「不執行」，
+迴圈變數沒有遞增遞減，沒有逐漸符合離開迴圈條件，會變成無窮迴圈。<br>
+
+程式碼
+{% highlight java linenos %}
+int i = 0;
+while (i < 5) {
+  i++;
+  if (i == 2) {
+    continue;
+  }
+  System.out.println(i);
+}
+{% endhighlight %}
+```
+1
+3
+4
+5
+```
+
+流程圖
+```mermaid
+flowchart TD
+  A[1.迴圈變數初始化] --> B{2.進入迴圈條件}
+  B -->|True| D[3.迴圈變數遞增或遞減]
+  D --> E{4.進入continue條件}
+  E -->|True| F[5.continue]
+  F --> B
+  E -->|False| G[6.程式碼]
+  G --> B
+  B ---->|False| H[離開迴圈]
+```
+
+```
+1.迴圈變數初始化
+while (2.進入迴圈條件) {
+  3.迴圈變數遞增或遞減
+  if (4.進入continue條件) {
+    5.continue;
+  }
+  6.程式碼
+}
+```
+注意下圖執行順序，continue執行完，執行「進入迴圈條件」。<br>
+![img]({{site.imgurl}}/java/continue_while.png)
+
+## 化繁為簡
 一個複雜的需求，要先把需求變成最簡單，先把程式碼寫死，最後才把程式碼寫死的部分變成變數。
 
 ### 題目1
@@ -510,10 +617,11 @@ System.out.println("數量count = " + count);
 4 + 1 = 5
 5 + 0 = 5
 ```
-i為0,1,2,3,4,5<br>
-0 + 5 ，請問i = 0 與5有什麼樣的關係？<br>
-1 + 4 ，請問i = 1 與4有什麼樣的關係？<br>
-2 + 3 ，請問i = 2 與3有什麼樣的關係？<br>
+加號左邊分別為0,1,2,3,4,5<br>
+也就是i由0,1,2,3,4,5遞增，作為加號左邊的數字。<br>
+0 + 5 ，請問i = 0 與加號右邊的5有什麼樣的關係？<br>
+1 + 4 ，請問i = 1 與加號右邊的4有什麼樣的關係？<br>
+2 + 3 ，請問i = 2 與加號右邊的3有什麼樣的關係？<br>
 
 加號右邊的數字，可發現5 - i，隨著i的遞增，可求出加號右邊的數字。<br>
 5 - i = X<br>
@@ -521,14 +629,14 @@ i為0,1,2,3,4,5<br>
 5 - 1 = 4<br>
 5 - 2 = 3<br>
 
-1.先顯示左邊0到5(包含5)的數字，用print()，不是用println()。
+1.先顯示加號左邊0到5(包含5)的數字。
 {% highlight java linenos %}
 for (int i = 0; i <= 5; i++) {
   System.out.println(i);
 }
 {% endhighlight %}
 
-2.顯示右邊5,4,3,2,1的數字
+2.顯示加號右邊5,4,3,2,1的數字
 {% highlight java linenos %}
 for (int i = 0; i <= 5; i++) {
   System.out.println(i + " + " + (5 - i) + " = 5");
@@ -553,7 +661,7 @@ for (int i = 0; i <= 5; i++) {
 {% highlight java linenos %}
 int num = 1;
 for (int j = 1; j <= 9; j++) {
-  System.out.println(i + " * " + j + " = " + (num * j));
+  System.out.println(num + " * " + j + " = " + (num * j));
 }
 {% endhighlight %}
 
@@ -565,63 +673,63 @@ int num = 1;
 System.out.println("==== " + num + " ====");
 for (int j = 1; j <= 9; j++) {
   // 執行9次
-  System.out.println(i + " * " + j + " = " + (num * j));
+  System.out.println(num + " * " + j + " = " + (num * j));
 }
 
 num = 2;
 System.out.println("==== " + num + " ====");
 for (int j = 1; j <= 9; j++) {
   // 執行9次
-  System.out.println(i + " * " + j + " = " + (num * j));
+  System.out.println(num + " * " + j + " = " + (num * j));
 }
 
 num = 3;
 System.out.println("==== " + num + " ====");
 for (int j = 1; j <= 9; j++) {
   // 執行9次
-  System.out.println(i + " * " + j + " = " + (num * j));
+  System.out.println(num + " * " + j + " = " + (num * j));
 }
 
 num = 4;
 System.out.println("==== " + num + " ====");
 for (int j = 1; j <= 9; j++) {
   // 執行9次
-  System.out.println(i + " * " + j + " = " + (num * j));
+  System.out.println(num + " * " + j + " = " + (num * j));
 }
 
 num = 5;
 System.out.println("==== " + num + " ====");
 for (int j = 1; j <= 9; j++) {
   // 執行9次
-  System.out.println(i + " * " + j + " = " + (num * j));
+  System.out.println(num + " * " + j + " = " + (num * j));
 }
 
 num = 6;
 System.out.println("==== " + num + " ====");
 for (int j = 1; j <= 9; j++) {
   // 執行9次
-  System.out.println(i + " * " + j + " = " + (num * j));
+  System.out.println(num + " * " + j + " = " + (num * j));
 }
 
 num = 7;
 System.out.println("==== " + num + " ====");
 for (int j = 1; j <= 9; j++) {
   // 執行9次
-  System.out.println(i + " * " + j + " = " + (num * j));
+  System.out.println(num + " * " + j + " = " + (num * j));
 }
 
 num = 8;
 System.out.println("==== " + num + " ====");
 for (int j = 1; j <= 9; j++) {
   // 執行9次
-  System.out.println(i + " * " + j + " = " + (num * j));
+  System.out.println(num + " * " + j + " = " + (num * j));
 }
 
 num = 9;
 System.out.println("==== " + num + " ====");
 for (int j = 1; j <= 9; j++) {
   // 執行9次
-  System.out.println(i + " * " + j + " = " + (num * j));
+  System.out.println(num + " * " + j + " = " + (num * j));
 }
 {% endhighlight %}
 
@@ -633,7 +741,7 @@ for (int i = 1; i <= 9; i++) {
   System.out.println("==== " + num + " ====");
   for (int j = 1; j <= 9; j++) {
     // 執行9次
-    System.out.println(i + " * " + j + " = " + (num * j));
+    System.out.println(num + " * " + j + " = " + (num * j));
   }
 }
 {% endhighlight %}
@@ -658,7 +766,7 @@ for (int i = 1; i <= 9; i++) {
 int num = 1;
 for (int j = 1; j <= 9; j++) {
   // 執行9次
-  System.out.println(i + " * " + j + " = " + (num * j));
+  System.out.println(num + " * " + j + " = " + (num * j));
 }
 {% endhighlight %}
 
@@ -706,3 +814,210 @@ i = 1,j = 0
 i = 1,j = 1
 i = 1,j = 2
 ```
+
+## 三角形
+題目如下:
+```
+*
+**
+***
+****
+*****
+```
+1.用迴圈印出每一層的星星數量，以下程式碼星星的數量由num控制。
+{% highlight java linenos %}
+int num = 1;
+for (int j = 1; j <= num; j++) {
+  System.out.print("*");
+}
+System.out.println();  //斷行 
+num = 2;
+for (int j = 1; j <= num; j++) {
+  System.out.print("*");
+}
+System.out.println();  //斷行
+
+num = 3;
+for (int j = 1; j <= num; j++) {
+  System.out.print("*");
+}
+System.out.println();  //斷行
+num = 4;
+for (int j = 1; j <= num; j++) {
+  System.out.print("*");
+}
+System.out.println();  //斷行
+
+num = 5;
+for (int j = 1; j <= num; j++) {
+  System.out.print("*");
+}
+System.out.println();  //斷行
+{% endhighlight %}
+<br>
+2.以下是一模一樣的程式碼，重覆寫了5次。
+{% highlight java linenos %}
+for (int j = 1; j <= num; j++) {
+  System.out.print("*");
+}
+System.out.println();  //斷行
+{% endhighlight %}
+<br>
+3.把重覆的程式碼縮減成只寫一次，重覆的事，就由迴圈去做，迴圈把重覆的程式碼，執行5次。
+{% highlight java linenos %}
+for (int i = 1; i <= 5; i++) {
+  int num = 1;
+  for (int j = 1; j <= num; j++) {
+    System.out.print("*");
+  }
+  System.out.println();  //斷行
+}
+{% endhighlight %}
+<br>
+4.num的變化是1,2,3,4,5，發現跟迴圈變數i遞增的情況一模一樣是1,2,3,4,5。<br>
+將迴圈變數i取代num。<br>
+{% highlight java linenos %}
+for (int i = 1; i <= 5; i++) {
+  for (int j = 1; j <= i; j++) {
+    System.out.print("*");
+  }
+  System.out.println();  //斷行
+}
+{% endhighlight %}
+
+5.請印出以下的星星，請用2的倍數來思考。
+```
+**         第1層 層數1 * 2 = 2個星  
+****       第2層 層數2 * 2 = 4個星
+******     第3層 層數3 * 2 = 6個星
+********   第4層 層數4 * 2 = 8個星
+********** 第5層 層數5 * 2 = 10個星
+```
+第x層，x就是i迴圈變數，i迴圈變數由1,2,3,4,5遞增。<br>
+{% highlight java linenos %}
+for (int i = 1; i <= 5; i++) {
+  int num = 2 * i;
+  for (int j = 1; j <= num; j++) {
+    System.out.print("*");
+  }
+  System.out.println();  //斷行
+}
+{% endhighlight %}
+
+6.每一層再減少1個星。
+```
+*         第1層 層數1 * 2 - 1 = 1個星  
+***       第2層 層數2 * 2 - 1 = 3個星
+*****     第3層 層數3 * 2 - 1 = 5個星
+*******   第4層 層數4 * 2 - 1 = 7個星
+********* 第5層 層數5 * 2 - 1 = 9個星
+```
+{% highlight java linenos %}
+for (int i = 1; i <= 5; i++) {
+  // 每一層再減少1個星
+  int num = (2 * i) - 1;
+  for (int j = 1; j <= num; j++) {
+    System.out.print("*");
+  }
+  System.out.println();  //斷行
+}
+{% endhighlight %}
+
+7.印出星號左邊的空格
+```
+    *     第1層 總層數5 - 目前層數1 = 4個空格
+   ***    第2層 總層數5 - 目前層數2 = 3個空格
+  *****   第3層 總層數5 - 目前層數3 = 2個空格
+ *******  第4層 總層數5 - 目前層數4 = 1個空格
+********* 第5層 總層數5 - 目前層數5 = 0個空格
+```
+{% highlight java linenos %}
+for (int i = 1; i <= 5; i++) {
+  // 印出空格 總層數5 - 目前層數i
+  for (int k = 1; k <= 5 - i; k++) {
+    System.out.print(" ");
+  }
+  int num = (2 * i) - 1;
+  for (int j = 1; j <= num; j++) {
+    System.out.print("*");
+  }
+  System.out.println();  //斷行
+}
+{% endhighlight %}
+
+8.印出以下的三角形。
+```
+    *
+   * *
+  *   *
+ *     *
+*********
+```
+延續用先前的程式碼，發現j==1與j==num，才印出星，其它都印出空白。
+{% highlight java linenos %}
+for (int i = 1; i <= 5; i++) {
+  // 印出空格
+  for (int k = 1; k <= 5 - i; k++) {
+    System.out.print(" ");
+  }
+  int num = (2 * i) - 1;
+  for (int j = 1; j <= num; j++) {
+    // j==1與j==num，才印出星，其它都印出空白
+    if (j == 1 || j == num) {
+      System.out.print("*");
+    } else {
+      System.out.print(" ");
+    }
+  }
+  System.out.println();  //斷行
+}
+{% endhighlight %}
+```
+    *
+   * *
+  *   *
+ *     *
+*       *
+```
+但發現最後一排只有二個星，與題目不合。<br>
+<br>
+9.最後一層全印出星，不要印出空白。<br>
+{% highlight java linenos %}
+for (int i = 1; i <= 5; i++) {
+  // 印出空格
+  for (int k = 1; k <= 5 - i; k++) {
+    System.out.print(" ");
+  }
+  int num = (2 * i) - 1;
+  for (int j = 1; j <= num; j++) {
+    // j==1與j==num，才印出星，其它都印出空白
+    if (j == 1 || j == num || i == 5) {
+      System.out.print("*");
+    } else {
+      System.out.print(" ");
+    }
+  }
+  System.out.println();  //斷行
+}
+{% endhighlight %}
+<br>
+10.把總層數變成變數。
+{% highlight java linenos %}
+// 總層數變成變數
+int level = 5;
+for (int i = 1; i <= level; i++) {
+  // 印出空格
+  for (int k = 1; k <= level - i; k++) {
+    System.out.print(" ");
+  }
+  int num = (2 * i) - 1;
+  for (int j = 1; j <= num; j++) {
+    if (j == 1 || j == num || i == level) {
+      System.out.print("*");
+    } else {
+      System.out.print(" ");
+    }
+  }
+  System.out.println();  //斷行
+}
+{% endhighlight %}

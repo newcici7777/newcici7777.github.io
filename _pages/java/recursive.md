@@ -42,7 +42,7 @@ public class Test5 {
 3. return返回位置是「呼叫方法」的位置。
 4. 返回位置後面沒有其它[運算元][2]或[運算子][2]要執行的話，才執行下一行程式碼。
 
-## 有傳迴值遞迴
+## 有傳回值遞迴
 ### 程式碼
 {% highlight java linenos %}
 public class Test4 {

@@ -1599,7 +1599,7 @@
     	<a href="/pages/java/rand/" data-nav-link> 亂數</a>
         
             
-                <ul><li><a href="#mathrandom" data-nav-link " >Math.random()</a></li><li><a href="#傳回值是double" data-nav-link " >傳回值是double</a></li><li><a href="#產生0至x亂數" data-nav-link " >產生0至x亂數</a></li><li><a href="#產生2至7之間的亂數" data-nav-link " >產生2至7之間的亂數</a></li></ul>
+                <ul><li><a href="#mathrandom" data-nav-link " >Math.random()</a></li><li><a href="#random原始碼傳回值是double" data-nav-link " >random()原始碼傳回值是double</a></li><li><a href="#強制轉型int" data-nav-link " >強制轉型int</a></li><li><a href="#產生亂數" data-nav-link " >產生亂數</a><ul><li><a href="#產生0到99亂數" data-nav-link " >產生0到99亂數</a></li><li><a href="#產生0到100亂數" data-nav-link " >產生0到100亂數</a></li><li><a href="#產生0到6的亂數" data-nav-link " >產生0到6的亂數。</a></li><li><a href="#產生10個1到100亂數" data-nav-link " >產生10個1到100亂數</a></li></ul></li><li><a href="#產生2到7之間的亂數" data-nav-link " >產生2到7之間的亂數</a></li></ul>
 
             
         </li>
@@ -2952,24 +2952,16 @@
                     
 
                     <h2 id="mathrandom">Math.random()</h2>
-<p>產生介於0到1(不包含1)之間的亂數，0 &lt;= 數字 &lt; 1，最大是0.999999..</p>
+<p>預設產生0到0.999999(不包含1)之間的亂數，0 &lt;= 數字 &lt;= 0.999999，不包含整數1。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
-5
-6
-7
-8
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="c1">// 產生10個亂數</span>
-    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Math</span><span class="o">.</span><span class="na">random</span><span class="o">());</span>
-    <span class="o">}</span>
-  <span class="o">}</span>
+</pre></td><td class="code"><pre><span class="c1">// 產生10個亂數</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Math</span><span class="o">.</span><span class="na">random</span><span class="o">());</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -2985,7 +2977,7 @@
 0.8392257800190969
 0.736425852792078
 </code></pre></div></div>
-<h2 id="傳回值是double">傳回值是double</h2>
+<h2 id="random原始碼傳回值是double">random()原始碼傳回值是double</h2>
 <p>random()傳回值是double</p>
 
 <figure class="highlight">
@@ -2998,10 +2990,70 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="產生0至x亂數">產生0至x亂數</h2>
-<p>產生0至6的10個亂數。</p>
+<h2 id="強制轉型int">強制轉型int</h2>
+<ul>
+  <li><a href="/pages/java/number/#強制轉型">強制轉型</a></li>
+</ul>
 
-<p>以下程式碼為何要6 + 1 ? 因為亂數產生的是0至 5.999999，產生的範圍是0 &lt;= x &lt; 6，不會等於6，所以要加1，加1之後的範圍是0至 6.9999999，最大不會超過7。</p>
+<p>需要使用圓括號包住(計算公式)，強制轉型才會把整個(計算公式)的結果轉成int。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="c1">// 產生10個亂數</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">((</span><span class="kt">int</span><span class="o">)(</span><span class="nc">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()));</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="產生亂數">產生亂數</h2>
+<h3 id="產生0到99亂數">產生0到99亂數</h3>
+<p>預設產生0到0.999999(不包含1)之間的亂數，把產生的數字乘上100，就會產生0至99.999999的亂數，不包含100。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="c1">// 產生10個亂數</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">((</span><span class="kt">int</span><span class="o">)(</span><span class="nc">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()</span> <span class="o">*</span> <span class="mi">100</span><span class="o">));</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>84
+56
+74
+95
+12
+9
+82
+53
+0
+61
+</code></pre></div></div>
+<h3 id="產生0到100亂數">產生0到100亂數</h3>
+<p>把100 + 1 = 101，產生預設產生0到0.999999(不包含1)之間的亂數，把產生的數字乘上100，就會產生0至100.999999的亂數，不包含101。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="c1">// 產生10個亂數</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">((</span><span class="kt">int</span><span class="o">)(</span><span class="nc">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()</span> <span class="o">*</span> <span class="mi">101</span><span class="o">));</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="產生0到6的亂數">產生0到6的亂數。</h3>
+<p>以下程式碼為何要6 + 1 ?<br />
+因為亂數產生的是0到 5.999999，產生的範圍是0 &lt;= x &lt;= 5.999999，不會等於6，所以要加1，加1之後的範圍是0到 6.9999999，0 &lt;= x &lt;= 6.999999，最大不會超過7。<br /></p>
 
 <p>因為random傳回值是double，要使用int強制轉型，int強制轉型只會去掉小數點，不會四捨五入。</p>
 
@@ -3010,17 +3062,9 @@
 2
 3
 4
-5
-6
-7
-8
-</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">((</span><span class="kt">int</span><span class="o">)</span><span class="mf">5.8</span><span class="o">);</span>
-    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
-      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">((</span><span class="kt">int</span><span class="o">)(</span><span class="nc">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()</span> <span class="o">*</span> <span class="o">(</span><span class="mi">6</span> <span class="o">+</span> <span class="mi">1</span><span class="o">)));</span>
-    <span class="o">}</span>
-  <span class="o">}</span>
+</pre></td><td class="code"><pre><span class="c1">// 產生10個亂數</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">((</span><span class="kt">int</span><span class="o">)(</span><span class="nc">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()</span> <span class="o">*</span> <span class="o">(</span><span class="mi">6</span> <span class="o">+</span> <span class="mi">1</span><span class="o">)));</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -3037,24 +3081,130 @@
 4
 </code></pre></div></div>
 
-<h2 id="產生2至7之間的亂數">產生2至7之間的亂數</h2>
-<p>原本的Math.random()只會產生0至x的數字。</p>
+<h3 id="產生10個1到100亂數">產生10個1到100亂數</h3>
+<p>注意！是「1」到「100」，不是0到100，跟之前的不一樣。<br /></p>
 
-<p>要產生2至7的亂數，要先產生0至5的亂數，再加上2，才會符合2至7的亂數。</p>
+<p>1.先取得0到99的double。<br />
+亂數產生的是0到 99.999999，產生的範圍是0 &lt;= x &lt;= 99.999999，不會等於100<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="c1">// 產生10個亂數</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()</span> <span class="o">*</span> <span class="mi">100</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>18.117136224378395
+69.9176833968274
+83.23955274354016
+30.601213720220876
+74.22605408548534
+70.96165488922483
+4.101315350235257
+28.630693528715057
+53.496945037049684
+72.62665129052877
+</code></pre></div></div>
+
+<p>2.去掉小數點，把double強制轉成int。<br />
+需要使用圓括號包住(計算公式)，強制轉型才會把整個(計算公式)的結果轉成int。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">((</span><span class="kt">int</span><span class="o">)(</span><span class="nc">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()</span> <span class="o">*</span> <span class="mi">100</span><span class="o">));</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+18
+61
+35
+36
+22
+18
+71
+52
+21
+</code></pre></div></div>
+
+<p>3.因為求出的數字範圍是0 &lt;= x &lt;= 99，不會等於100。<br />
+只要加上1，範圍就會在「1」 &lt;= x &lt;= 100，1到100之間。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">((</span><span class="kt">int</span><span class="o">)(</span><span class="nc">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()</span> <span class="o">*</span> <span class="mi">100</span><span class="o">)</span> <span class="o">+</span> <span class="mi">1</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>13
+65
+100
+29
+53
+65
+6
+36
+16
+78
+</code></pre></div></div>
+
+<h2 id="產生2到7之間的亂數">產生2到7之間的亂數</h2>
+<p>原本的Math.random()只會產生0到x的數字。</p>
+
+<p>1.要產生2到7的亂數，要先產生0到5的亂數，再加上2，才會符合2到7的亂數。<br /></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>7 - 2 = 5
 </code></pre></div></div>
+<p>以下產生0到4.99999的亂數，不包含5。</p>
 
-<p>但0至5的亂數，只會產生0至4.99999的亂數，所以要再 + 1，這樣才會產生0至5.999999的亂數</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>7 - 2 = 5
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()</span> <span class="o">*</span> <span class="o">(</span><span class="mi">7</span> <span class="o">-</span> <span class="mi">2</span><span class="o">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
-5 + 1 = 6
+<p>2.但0到5的亂數，只會產生0到4.99999的亂數，所以要再 + 1，這樣才會產生0到5.999999的亂數，不包含6。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5 + 1 = 6
 </code></pre></div></div>
 
-<p>最後亂數再加2，並且使用強制轉型int，無條件去掉小數點。</p>
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()</span> <span class="o">*</span> <span class="o">(</span><span class="mi">7</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="o">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
-<p>公式</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(int)(Math.random() * (7 - 2 + 1)) + 2
-</code></pre></div></div>
+<p>3.使用強制轉型int，無條件去掉小數點。<br />
+需要使用圓括號包住(計算公式)，強制轉型才會把整個(計算公式)的結果轉成int。<br />
+以下程式碼產生0到5的整數亂數。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="o">(</span><span class="kt">int</span><span class="o">)(</span><span class="nc">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()</span> <span class="o">*</span> <span class="o">(</span><span class="mi">7</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="o">))</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>4.題目要求產生2到7的亂數。<br />
+把求出0到5的任意一個亂數，加上2，亂數範圍就會在2到7。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="o">(</span><span class="kt">int</span><span class="o">)(</span><span class="nc">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()</span> <span class="o">*</span> <span class="o">(</span><span class="mi">7</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="o">))</span> <span class="o">+</span> <span class="mi">2</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>程式碼</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3077,6 +3227,7 @@
 2
 3
 </code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3267,7 +3418,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-08 15:52:29 +0800"
+        "time": "2025-07-09 13:10:41 +0800"
     },
     "basePath": "",
     "book": {
