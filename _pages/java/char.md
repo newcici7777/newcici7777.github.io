@@ -152,6 +152,34 @@ System.out.println(c1);
 e
 ```
 
+## char與迴圈
+
+- [迴圈][3]
+
+char可以當作數字來計算。
+{% highlight java linenos %}
+char ch = 'a' + 1;
+{% endhighlight %}
+
+迴圈印出小寫a-z
+{% highlight java linenos %}
+for (char i = 'a'; i < 'z'; i++) {
+  System.out.print(i);
+}
+{% endhighlight %}
+```
+abcdefghijklmnopqrstuvwxy
+```
+
+{% highlight java linenos %}
+for (char i = 'A'; i < 'Z'; i++) {
+  System.out.print(i);
+}
+{% endhighlight %}
+```
+ABCDEFGHIJKLMNOPQRSTUVWXY
+```
 
 [1]: {% link _pages/c/basic/charType.md %}
 [2]: {% link _pages/c/string/chineseAscii.md %}
+[3]: {% link _pages/java/for_while.md %}

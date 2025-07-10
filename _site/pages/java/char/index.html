@@ -1423,13 +1423,6 @@
     	<a href="/pages/java/debug/" data-nav-link> debug</a>
         
             
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/for_while/" data-nav-link> 迴圈</a>
-        
-            
         </li></ul></li>
 	
 	
@@ -1454,7 +1447,7 @@
     	<a href="/pages/java/char/" data-nav-link> char字元</a>
         
             
-                <ul><li><a href="#記憶體大小" data-nav-link " >記憶體大小</a></li><li><a href="#語法" data-nav-link " >語法</a></li><li><a href="#跳脫字元" data-nav-link " >跳脫字元</a></li><li><a href="#數字" data-nav-link " >數字</a></li><li><a href="#顯示ascii-code" data-nav-link " >顯示Ascii Code</a></li><li><a href="#unicode" data-nav-link " >Unicode</a><ul><li><a href="#顯示中文unicode" data-nav-link " >顯示中文Unicode</a></li><li><a href="#unicode轉中文" data-nav-link " >Unicode轉中文</a></li></ul></li><li><a href="#char計算" data-nav-link " >char計算</a></li><li><a href="#強制轉型" data-nav-link " >強制轉型</a></li><li><a href="#char指派給其它基本型態" data-nav-link " >char指派給其它基本型態</a></li><li><a href="#string轉成char" data-nav-link " >String轉成char</a></li></ul>
+                <ul><li><a href="#記憶體大小" data-nav-link " >記憶體大小</a></li><li><a href="#語法" data-nav-link " >語法</a></li><li><a href="#跳脫字元" data-nav-link " >跳脫字元</a></li><li><a href="#數字" data-nav-link " >數字</a></li><li><a href="#顯示ascii-code" data-nav-link " >顯示Ascii Code</a></li><li><a href="#unicode" data-nav-link " >Unicode</a><ul><li><a href="#顯示中文unicode" data-nav-link " >顯示中文Unicode</a></li><li><a href="#unicode轉中文" data-nav-link " >Unicode轉中文</a></li></ul></li><li><a href="#char計算" data-nav-link " >char計算</a></li><li><a href="#強制轉型" data-nav-link " >強制轉型</a></li><li><a href="#char指派給其它基本型態" data-nav-link " >char指派給其它基本型態</a></li><li><a href="#string轉成char" data-nav-link " >String轉成char</a></li><li><a href="#char與迴圈" data-nav-link " >char與迴圈</a></li></ul>
 
             
         </li>
@@ -1514,6 +1507,23 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/base_system/" data-nav-link> 進位</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 迴圈判斷 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/for_while/" data-nav-link> 迴圈</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/switch_case/" data-nav-link> Switch case</a>
         
             
         </li></ul></li>
@@ -3172,6 +3182,48 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>e
 </code></pre></div></div>
 
+<h2 id="char與迴圈">char與迴圈</h2>
+
+<ul>
+  <li><a href="/pages/java/for_while/">迴圈</a></li>
+</ul>
+
+<p>char可以當作數字來計算。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="sc">'a'</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>迴圈印出小寫a-z</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">for</span> <span class="o">(</span><span class="kt">char</span> <span class="n">i</span> <span class="o">=</span> <span class="sc">'a'</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="sc">'z'</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>abcdefghijklmnopqrstuvwxy
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">for</span> <span class="o">(</span><span class="kt">char</span> <span class="n">i</span> <span class="o">=</span> <span class="sc">'A'</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="sc">'Z'</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ABCDEFGHIJKLMNOPQRSTUVWXY
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3362,7 +3414,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-09 13:10:41 +0800"
+        "time": "2025-07-10 13:33:29 +0800"
     },
     "basePath": "",
     "book": {

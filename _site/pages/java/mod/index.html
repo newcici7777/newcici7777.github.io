@@ -1423,13 +1423,6 @@
     	<a href="/pages/java/debug/" data-nav-link> debug</a>
         
             
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/for_while/" data-nav-link> 迴圈</a>
-        
-            
         </li></ul></li>
 	
 	
@@ -1485,7 +1478,7 @@
     	<a href="/pages/java/mod/" data-nav-link> 餘數</a>
         
             
-                <ul><li><a href="#負餘數" data-nav-link " >負餘數</a></li><li><a href="#餘數公式" data-nav-link " >餘數公式</a></li><li><a href="#除上小數餘數是小數" data-nav-link " >除上小數，餘數是小數</a></li></ul>
+                <ul><li><a href="#負餘數" data-nav-link " >負餘數</a></li><li><a href="#餘數公式" data-nav-link " >餘數公式</a></li><li><a href="#除上小數餘數是小數" data-nav-link " >除上小數，餘數是小數</a></li><li><a href="#求出百位數十位數個位數" data-nav-link " >求出百位數十位數個位數</a></li></ul>
 
             
         </li>
@@ -1514,6 +1507,23 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/base_system/" data-nav-link> 進位</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 迴圈判斷 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/for_while/" data-nav-link> 迴圈</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/switch_case/" data-nav-link> Switch case</a>
         
             
         </li></ul></li>
@@ -3036,6 +3046,31 @@
 
 <p><a href="/pages/java/float_double/#近似值">小數點的比較</a>要十分小心，因為有<a href="/pages/java/float_double/#近似值">近似值</a>的問題。</p>
 
+<h2 id="求出百位數十位數個位數">求出百位數十位數個位數</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">153</span><span class="o">;</span>
+<span class="kt">int</span> <span class="n">n100</span> <span class="o">=</span> <span class="n">num</span> <span class="o">/</span> <span class="mi">100</span><span class="o">;</span>
+<span class="kt">int</span> <span class="n">n10</span> <span class="o">=</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">/</span> <span class="mi">10</span><span class="o">;</span>
+<span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">10</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">n100</span><span class="o">);</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">n10</span><span class="o">);</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">n</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+5
+3
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3226,7 +3261,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-09 13:10:41 +0800"
+        "time": "2025-07-10 13:33:29 +0800"
     },
     "basePath": "",
     "book": {

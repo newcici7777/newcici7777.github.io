@@ -253,8 +253,8 @@ System.out.println(Arrays.toString(arr2));
 [1, 2, 10]
 [1, 2, 10]
 ```
-
-## 找出陣列中最大值
+## 陣列題目
+### 找出陣列中最大值
 1. 使用max變數，儲存陣列中最大的值。
 2. 使用maxIndex變數，儲存陣列中最大的值的索引。
 3. max與maxIndex初始化，為`arr[0]`與0;
@@ -284,7 +284,94 @@ System.out.println("max = " + max + ", maxIndex = " + maxIndex);
 max = 49, maxIndex = 2
 ```
 
-## 原地反轉陣列
+### 插入新數字
+題目:有一個陣列，由小到大排序，要找到插入的位置，並把數字插入。<br>
+1.先在陣列中找到比插入數字還大的數字，或與插入數字相等的數字，arr[i] \>= insertNumber<br>
+2.index存放插入的位置。
+{% highlight java linenos %}
+int[] arr = {10, 12, 25, 33, 45};
+int insertNumber = 25;
+int index = -1;
+for (int i = 0; i < arr.length; i++) {
+  if (arr[i] >= insertNumber) {
+    index = i;
+    break;
+  }
+}
+{% endhighlight %}
+
+3.如果index為-1，代表陣列中所有數字都比插入的數字小，把索引設為陣列長度。
+{% highlight java linenos %}
+int[] arr = {10, 12, 25, 33, 45};
+int insertNumber = 27;
+int index = -1;
+for (int i = 0; i < arr.length; i++) {
+  if (arr[i] >= insertNumber) {
+    index = i;
+    break;
+  }
+}
+if (index == -1) {
+  index = arr.length;
+}
+{% endhighlight %}
+
+4.建立一個新的陣列，大小為原本陣列大小 \+ 1，\+1是要放置新插入的數字。
+{% highlight java linenos %}
+int[] copyarr = new int[arr.length + 1];
+{% endhighlight %}
+
+5.複製arr陣列的數字到新陣列copyarr，「跳過index」，因為index要放插入的新數字。<br>
+![img]({{site.imgurl}}/java/insert_arr.png)
+<br>
+{% highlight java linenos %}
+for (int i = 0; i < arr.length; i++) {
+  if (i >= index) {
+    copyarr[i + 1] = arr[i];
+  } else {
+    copyarr[i] = arr[i];
+  }
+}
+{% endhighlight %}
+
+6.把新數字放在index的位置。
+{% highlight java linenos %}
+copyarr[index] = insertNumber;
+{% endhighlight %}
+
+7.arr的記憶體位址，改成copyarr的記憶體位址。
+{% highlight java linenos %}
+arr = copyarr;
+{% endhighlight %}
+
+完整程式碼
+{% highlight java linenos %}
+int[] arr = {10, 12, 25, 33, 45};
+int insertNumber = 27;
+int index = -1;
+for (int i = 0; i < arr.length; i++) {
+  if (arr[i] >= insertNumber) {
+    index = i;
+    break;
+  }
+}
+if (index == -1) {
+  index = arr.length;
+}
+int[] copyarr = new int[arr.length + 1];
+for (int i = 0; i < arr.length; i++) {
+  if (i >= index) {
+    copyarr[i + 1] = arr[i];
+  } else {
+    copyarr[i] = arr[i];
+  }
+}
+copyarr[index] = insertNumber;
+arr = copyarr;
+System.out.println(Arrays.toString(arr));
+{% endhighlight %}
+
+### 原地反轉陣列
 原地的意思是不建立其它變數，不浪費其它記憶體空間。<br>
 題目:把陣列123456，倒轉成654321，不使用其它變數儲存。<br>
 1. 把陣列大小除2，代表要互換的次數。

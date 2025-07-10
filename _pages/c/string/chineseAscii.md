@@ -157,6 +157,43 @@ int main() {
 5
 ```
 
+## 2byte中文
+以下程式碼適合編碼為2byte的中文，用一個flag判斷是否讀完2byte，若
+{% highlight c++ linenos %}
+int countChar(const char* str) {
+  if(str == 0) return -1;
+  int count = 0;
+  // flag預設值
+  bool flag = false;
+  while(*str) {
+    //0
+    if((unsigned char) *str < 128) {
+      count++;
+    } else {
+      if(flag) {
+        // 讀到中文第2個byte，把flag變false，代表讀完一個中文
+        // 中文個數+1
+        count++;
+        flag = false;
+      } else {
+        // 讀到中文第1個byte，把flag變true
+        flag = true;
+      }
+    }
+    str++;
+  }
+  return count;
+}
+int main() {
+  cout << countChar("西西abc") << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+5
+```
+
+
 ## Unicode與utf-8
 Ascii Code只能支持英語美語，大小只有128，只有正整數沒有負數。
 

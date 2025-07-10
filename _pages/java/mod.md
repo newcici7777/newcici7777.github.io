@@ -78,6 +78,22 @@ a - (a/b) * b
 
 [小數點的比較][2]要十分小心，因為有[近似值][2]的問題。
 
+## 求出百位數十位數個位數
+{% highlight java linenos %}
+int num = 153;
+int n100 = num / 100;
+int n10 = num % 100 / 10;
+int n = num % 10;
+System.out.println(n100);
+System.out.println(n10);
+System.out.println(n);
+{% endhighlight %}
+```
+1
+5
+3
+```
+
 
 [1]: {% link _pages/math/neg_div.md %}
 [2]: {% link _pages/java/float_double.md %}#近似值

@@ -405,6 +405,32 @@ System.out.println("離開的i = " + i);
 1
 離開的i = 0
 ```
+### 題目
+請問以下程式結果？
+{% highlight java linenos %}
+int num = 1;
+while (num < 10) {
+  System.out.println(num);
+  if (num > 5) {
+    break;
+  }
+  num += 2;
+}
+{% endhighlight %}
+
+num = ~~1~~ ~~3~~ ~~5~~ 7<br>
+
+7才是觸發break離開迴圈的條件，不是5。
+
+5 \> 5 ，break是條件為true才離開迴圈，先前關係運算子已經提過，相同數字大於小於，都為false，因為不是true，所以不能離開迴圈，繼續往下執行。
+
+console:
+```
+1
+2
+3
+7
+```
 
 ## continue
 ### continue與for
@@ -561,7 +587,7 @@ for (int i = 1; i <= 100; i++) {
     sum += i;
   }
 }
-System.out.println(); // 斷行
+System.out.println(); // 換行
 System.out.println("3的倍數數量count = " + count);
 System.out.println("3的倍數總合sum = " + sum);
 {% endhighlight %}
@@ -584,7 +610,7 @@ for (int i = 1; i <= 100; i++) {
     sum += i;
   }
 }
-System.out.println(); // 斷行
+System.out.println(); // 換行
 System.out.println(times + "的倍數數量count = " + count);
 System.out.println(times + "的倍數總合sum = " + sum);
 {% endhighlight %}
@@ -599,12 +625,37 @@ for (int i = 1; i <= 100; i++) {
     count++;
   }
 }
-System.out.println(); // 斷行
+System.out.println(); // 換行
 System.out.println("數量count = " + count);
 {% endhighlight %}
 ```
 3	6	9	12	18	21	24	27	33	36	39	42	48	51	54	57	63	66	69	72	78	81	84	87	93	96	99	
 數量count = 27
+```
+
+每五個換行。
+{% highlight java linenos %}
+int count = 0;
+for (int i = 1; i <= 100; i++) {
+  if (i % 3 == 0 && i % 5 != 0) {
+    System.out.print(i + "\t");
+    count++;
+    if (count % 5 == 0) {
+      System.out.println();  // 換行
+    }
+  }
+}
+System.out.println(); // 換行
+System.out.println("數量count = " + count);
+{% endhighlight %}
+```
+3 6 9 12  18  
+21  24  27  33  36  
+39  42  48  51  54  
+57  63  66  69  72  
+78  81  84  87  93  
+96  99  
+
 ```
 
 ### 題目3
@@ -830,29 +881,29 @@ int num = 1;
 for (int j = 1; j <= num; j++) {
   System.out.print("*");
 }
-System.out.println();  //斷行 
+System.out.println();  //換行 
 num = 2;
 for (int j = 1; j <= num; j++) {
   System.out.print("*");
 }
-System.out.println();  //斷行
+System.out.println();  //換行
 
 num = 3;
 for (int j = 1; j <= num; j++) {
   System.out.print("*");
 }
-System.out.println();  //斷行
+System.out.println();  //換行
 num = 4;
 for (int j = 1; j <= num; j++) {
   System.out.print("*");
 }
-System.out.println();  //斷行
+System.out.println();  //換行
 
 num = 5;
 for (int j = 1; j <= num; j++) {
   System.out.print("*");
 }
-System.out.println();  //斷行
+System.out.println();  //換行
 {% endhighlight %}
 <br>
 2.以下是一模一樣的程式碼，重覆寫了5次。
@@ -860,7 +911,7 @@ System.out.println();  //斷行
 for (int j = 1; j <= num; j++) {
   System.out.print("*");
 }
-System.out.println();  //斷行
+System.out.println();  //換行
 {% endhighlight %}
 <br>
 3.把重覆的程式碼縮減成只寫一次，重覆的事，就由迴圈去做，迴圈把重覆的程式碼，執行5次。
@@ -870,7 +921,7 @@ for (int i = 1; i <= 5; i++) {
   for (int j = 1; j <= num; j++) {
     System.out.print("*");
   }
-  System.out.println();  //斷行
+  System.out.println();  //換行
 }
 {% endhighlight %}
 <br>
@@ -881,7 +932,7 @@ for (int i = 1; i <= 5; i++) {
   for (int j = 1; j <= i; j++) {
     System.out.print("*");
   }
-  System.out.println();  //斷行
+  System.out.println();  //換行
 }
 {% endhighlight %}
 
@@ -900,7 +951,7 @@ for (int i = 1; i <= 5; i++) {
   for (int j = 1; j <= num; j++) {
     System.out.print("*");
   }
-  System.out.println();  //斷行
+  System.out.println();  //換行
 }
 {% endhighlight %}
 
@@ -919,7 +970,7 @@ for (int i = 1; i <= 5; i++) {
   for (int j = 1; j <= num; j++) {
     System.out.print("*");
   }
-  System.out.println();  //斷行
+  System.out.println();  //換行
 }
 {% endhighlight %}
 
@@ -941,7 +992,7 @@ for (int i = 1; i <= 5; i++) {
   for (int j = 1; j <= num; j++) {
     System.out.print("*");
   }
-  System.out.println();  //斷行
+  System.out.println();  //換行
 }
 {% endhighlight %}
 
@@ -969,7 +1020,7 @@ for (int i = 1; i <= 5; i++) {
       System.out.print(" ");
     }
   }
-  System.out.println();  //斷行
+  System.out.println();  //換行
 }
 {% endhighlight %}
 ```
@@ -997,14 +1048,14 @@ for (int i = 1; i <= 5; i++) {
       System.out.print(" ");
     }
   }
-  System.out.println();  //斷行
+  System.out.println();  //換行
 }
 {% endhighlight %}
 <br>
 10.把總層數變成變數。
+int level = 5;
 {% highlight java linenos %}
 // 總層數變成變數
-int level = 5;
 for (int i = 1; i <= level; i++) {
   // 印出空格
   for (int k = 1; k <= level - i; k++) {
@@ -1018,6 +1069,63 @@ for (int i = 1; i <= level; i++) {
       System.out.print(" ");
     }
   }
-  System.out.println();  //斷行
+  System.out.println();  //換行
 }
 {% endhighlight %}
+
+## 分數相加與迴圈
+$\frac{1}{1} - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} + ...  $
+
+1.化繁為簡，先做1+2+3+4+5
+{% highlight java linenos %}
+int sum = 0;
+for (int i = 0; i < 10; i++) {
+  sum += i;
+}
+{% endhighlight %}
+
+2.分子都為1，分母為1,2,3,4,5...
+處理分數。
+{% highlight java linenos %}
+int sum = 0;
+for (int i = 1; i <= 10; i++) {
+    sum += 1/i;
+}
+System.out.println(sum);
+{% endhighlight %}
+```
+1
+```
+
+3.int分數相除的問題
+上面程式執行結果怎麼很奇怪，照理來說$\frac{1}{1} + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + ....$，至少數字會大於1。<br>
+因為整數相除，無條件去掉小數點，不會四捨五入，有小數計算要使用double。<br>
+$\frac{1}{2} = 0$ <br>
+如果計算中有double，其它的數字是int也會升級成double。<br>
+$\frac{1.0}{2} = 0.5$ <br>
+{% highlight java linenos %}
+double sum = 0;
+for (int i = 1; i <= 10; i++) {
+    sum += 1.0 / i;
+}
+System.out.println(sum);
+{% endhighlight %}
+```
+2.9289682539682538
+```
+
+3.分母為偶數前面是負號，分母為奇數前面是正號。
+{% highlight java linenos %}
+double sum = 0;
+for (int i = 1; i <= 10; i++) {
+  if (i % 2 == 0) {
+    sum -= 1.0 / i;
+  } else {
+    sum += 1.0 / i;
+  }
+}
+System.out.println(sum);
+{% endhighlight %}
+```
+0.6456349206349207
+```

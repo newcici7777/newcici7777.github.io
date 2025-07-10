@@ -465,7 +465,7 @@
     	<a href="/pages/c/string/chineseAscii/" data-nav-link> ASCII與中文</a>
         
             
-                <ul><li><a href="#印出中文ascii-code" data-nav-link " >印出中文Ascii code</a></li><li><a href="#使用中文ascii-code指定陣列值" data-nav-link " >使用中文Ascii Code指定陣列值</a></li><li><a href="#統計中文個數" data-nav-link " >統計中文個數</a></li><li><a href="#unicode與utf-8" data-nav-link " >Unicode與utf-8</a></li></ul>
+                <ul><li><a href="#印出中文ascii-code" data-nav-link " >印出中文Ascii code</a></li><li><a href="#使用中文ascii-code指定陣列值" data-nav-link " >使用中文Ascii Code指定陣列值</a></li><li><a href="#統計中文個數" data-nav-link " >統計中文個數</a></li><li><a href="#2byte中文" data-nav-link " >2byte中文</a></li><li><a href="#unicode與utf-8" data-nav-link " >Unicode與utf-8</a></li></ul>
 
             
         </li></ul></li></ul></li>
@@ -1426,13 +1426,6 @@
     	<a href="/pages/java/debug/" data-nav-link> debug</a>
         
             
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/for_while/" data-nav-link> 迴圈</a>
-        
-            
         </li></ul></li>
 	
 	
@@ -1514,6 +1507,23 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/base_system/" data-nav-link> 進位</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 迴圈判斷 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/for_while/" data-nav-link> 迴圈</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/switch_case/" data-nav-link> Switch case</a>
         
             
         </li></ul></li>
@@ -3213,6 +3223,72 @@ str[5]=191
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5
 </code></pre></div></div>
 
+<h2 id="2byte中文">2byte中文</h2>
+<p>以下程式碼適合編碼為2byte的中文，用一個flag判斷是否讀完2byte，若</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">countChar</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">// flag預設值</span>
+  <span class="kt">bool</span> <span class="n">flag</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">str</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//0</span>
+    <span class="k">if</span><span class="p">((</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">)</span> <span class="o">*</span><span class="n">str</span> <span class="o">&lt;</span> <span class="mi">128</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="k">if</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 讀到中文第2個byte，把flag變false，代表讀完一個中文</span>
+        <span class="c1">// 中文個數+1</span>
+        <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// 讀到中文第1個byte，把flag變true</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">str</span><span class="o">++</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">count</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">countChar</span><span class="p">(</span><span class="s">"西西abc"</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5
+</code></pre></div></div>
+
 <h2 id="unicode與utf-8">Unicode與utf-8</h2>
 <p>Ascii Code只能支持英語美語，大小只有128，只有正整數沒有負數。</p>
 
@@ -3410,7 +3486,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-09 13:10:41 +0800"
+        "time": "2025-07-10 13:33:29 +0800"
     },
     "basePath": "",
     "book": {
