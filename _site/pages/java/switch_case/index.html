@@ -1523,7 +1523,7 @@
     	<a href="/pages/java/switch_case/" data-nav-link> Switch case</a>
         
             
-                <ul><li><a href="#語法" data-nav-link " >語法</a><ul><li><a href="#變數與常數" data-nav-link " >變數與常數</a></li><li><a href="#default" data-nav-link " >default</a></li><li><a href="#break" data-nav-link " >break</a></li></ul></li></ul>
+                <ul><li><a href="#語法" data-nav-link " >語法</a></li><li><a href="#變數與常數" data-nav-link " >變數與常數</a><ul><li><a href="#字串" data-nav-link " >字串</a></li><li><a href="#字元" data-nav-link " >字元</a></li><li><a href="#不支援小數點" data-nav-link " >不支援小數點</a></li></ul></li><li><a href="#default" data-nav-link " >default</a></li><li><a href="#break" data-nav-link " >break</a><ul><li><a href="#沒有break的範例" data-nav-link " >沒有break的範例</a></li></ul></li></ul>
 
             
         </li></ul></li>
@@ -1880,6 +1880,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/exception/" data-nav-link> Exception</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/regular/" data-nav-link> 規則表示式</a>
         
             
         </li>
@@ -2966,10 +2973,10 @@
   case 常數1:
 	程式碼
 	break;
-  case 常數1:
+  case 常數2:
 	程式碼
 	break;
-  case 常數1:
+  case 常數3:
 	程式碼
 	break;
   default:
@@ -2979,7 +2986,7 @@
 
 <p><img src="/assets/img/java/switch_case.png" alt="img" /></p>
 
-<h3 id="變數與常數">變數與常數</h3>
+<h2 id="變數與常數">變數與常數</h2>
 <p>只支援下方表格的基本型態與類別。</p>
 
 <table>
@@ -3011,7 +3018,7 @@
 
 <p>不支援小數點double,float</p>
 
-<h4 id="字串">字串</h4>
+<h3 id="字串">字串</h3>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3039,7 +3046,9 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h4 id="字元">字元</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>帶雨傘
+</code></pre></div></div>
+<h3 id="字元">字元</h3>
 <p>常數可以為整數，因為整數與字元可以互相轉型。</p>
 
 <figure class="highlight">
@@ -3055,16 +3064,19 @@
 </pre></td><td class="code"><pre><span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="sc">'A'</span><span class="o">;</span>
 <span class="k">switch</span> <span class="o">(</span><span class="n">ch</span><span class="o">)</span> <span class="o">{</span>
   <span class="k">case</span> <span class="mi">65</span><span class="o">:</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">ch</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="sc">'a'</span><span class="o">);</span>
     <span class="k">break</span><span class="o">;</span>
   <span class="k">case</span> <span class="mi">66</span><span class="o">:</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">ch</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="sc">'b'</span><span class="o">);</span>
     <span class="k">break</span><span class="o">;</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h4 id="不支援小數點">不支援小數點</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a
+</code></pre></div></div>
+
+<h3 id="不支援小數點">不支援小數點</h3>
 <p>不支援double與float。<br />
 以下編譯錯誤。<br /></p>
 
@@ -3086,7 +3098,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="default">default</h3>
+<h2 id="default">default</h2>
 <p>若case條件全部不符合，會來到default。</p>
 
 <ol>
@@ -3094,9 +3106,9 @@
   <li>default不用有break，執行到default，之後就會離開switch case。</li>
 </ol>
 
-<h3 id="break">break</h3>
-<p>若case條件都沒有break，直接「略過case條件判斷」，直接執行case中的程式碼。<br />
-以下程式碼除了晴天有判斷外，直接「略過case條件判斷」，直接執行case中的程式碼。</p>
+<h2 id="break">break</h2>
+<p>若case條件都沒有break，直接「略過」下一個case條件判斷，直接執行下一個case中的程式碼。<br />
+以下程式碼除了晴天有判斷外，直接「略過」下一個case條件判斷，直接執行下一個case中的程式碼。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3130,13 +3142,14 @@
 不確定什麼天氣
 </code></pre></div></div>
 
+<p><img src="/assets/img/java/switch_case_break2.png" alt="img" /></p>
+
 <p>紅色線為沒有break，略過case條件判斷，直接執行case中的程式碼。<br />
 <img src="/assets/img/java/switch_case_break.png" alt="img" /></p>
 
-<p><img src="/assets/img/java/switch_case_break2.png" alt="img" /></p>
-
 <p>遇到break，才會離開switch case，如果都沒有遇到break，最後會執行到default，然後離開switch case。</p>
 
+<h3 id="沒有break的範例">沒有break的範例</h3>
 <p>根據月份，判斷春夏秋冬。</p>
 
 <figure class="highlight">
@@ -3188,6 +3201,9 @@
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>夏
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3369,7 +3385,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-10 13:33:29 +0800"
+        "time": "2025-07-11 14:45:37 +0800"
     },
     "basePath": "",
     "book": {

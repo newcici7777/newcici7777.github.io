@@ -9,10 +9,10 @@ switch(值) {
   case 常數1:
 	程式碼
 	break;
-  case 常數1:
+  case 常數2:
 	程式碼
 	break;
-  case 常數1:
+  case 常數3:
 	程式碼
 	break;
   default:
