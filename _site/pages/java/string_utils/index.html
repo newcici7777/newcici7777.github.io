@@ -1523,6 +1523,13 @@
     	<a href="/pages/java/switch_case/" data-nav-link> Switch case</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/if_else/" data-nav-link> if elseif else</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -1640,7 +1647,7 @@
     	<a href="/pages/java/string_utils/" data-nav-link> String字串常用方法</a>
         
             
-                <ul><li><a href="#字串常用方法" data-nav-link " >字串常用方法</a><ul><li><a href="#開頭結尾包含" data-nav-link " >開頭,結尾,包含</a></li></ul></li><li><a href="#尋找字串" data-nav-link " >尋找字串</a></li><li><a href="#取得字串中的子字串" data-nav-link " >取得字串中的子字串</a></li><li><a href="#去掉字串前後" data-nav-link " >去掉字串前後</a></li><li><a href="#字串轉基本類型" data-nav-link " >字串轉基本類型</a></li></ul>
+                <ul><li><a href="#字串常用方法" data-nav-link " >字串常用方法</a><ul><li><a href="#開頭結尾包含" data-nav-link " >開頭,結尾,包含</a></li></ul></li><li><a href="#尋找字串" data-nav-link " >尋找字串</a></li><li><a href="#取得字串中的子字串" data-nav-link " >取得字串中的子字串</a></li><li><a href="#去掉字串前後" data-nav-link " >去掉字串前後</a></li><li><a href="#字串轉基本類型" data-nav-link " >字串轉基本類型</a></li><li><a href="#格式化" data-nav-link " >格式化</a></li></ul>
 
             
         </li>
@@ -3105,6 +3112,67 @@ llo
 12345
 12.55
 </code></pre></div></div>
+
+<h2 id="格式化">格式化</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>格式化</td>
+      <td>說明</td>
+    </tr>
+    <tr>
+      <td>%s</td>
+      <td>字串</td>
+    </tr>
+    <tr>
+      <td>%c</td>
+      <td>字元</td>
+    </tr>
+    <tr>
+      <td>%d</td>
+      <td>整數</td>
+    </tr>
+    <tr>
+      <td>%.2f</td>
+      <td>小數點，保留小數點2位，會四捨五入</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>使用printf()，方法結尾是f。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"姓名:%s,性別:%c,年齡:%d,體重:%.2f"</span><span class="o">,</span><span class="s">"Bill"</span><span class="o">,</span><span class="sc">'男'</span><span class="o">,</span><span class="mi">18</span><span class="o">,</span><span class="mf">60.559</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>姓名:Bill,性別:男,年齡:18,體重:60.56
+</code></pre></div></div>
+
+<p>使用String.format()方法，轉成String。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="nc">String</span> <span class="n">format</span> <span class="o">=</span> <span class="nc">String</span><span class="o">.</span><span class="na">format</span><span class="o">(</span><span class="s">"姓名:%s,性別:%c,年齡:%d,體重:%.2f"</span><span class="o">,</span><span class="s">"Bill"</span><span class="o">,</span><span class="sc">'男'</span><span class="o">,</span><span class="mi">18</span><span class="o">,</span><span class="mf">60.559</span><span class="o">);</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">format</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>姓名:Bill,性別:男,年齡:18,體重:60.56
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="nc">String</span> <span class="n">formatStr</span> <span class="o">=</span> <span class="s">"姓名:%s,性別:%c,年齡:%d,體重:%.2f"</span><span class="o">;</span>
+<span class="nc">String</span> <span class="n">format</span> <span class="o">=</span> <span class="nc">String</span><span class="o">.</span><span class="na">format</span><span class="o">(</span><span class="n">formatStr</span><span class="o">,</span><span class="s">"Bill"</span><span class="o">,</span><span class="sc">'男'</span><span class="o">,</span><span class="mi">18</span><span class="o">,</span><span class="mf">60.559</span><span class="o">);</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">format</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3295,7 +3363,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-11 14:45:37 +0800"
+        "time": "2025-07-12 10:30:37 +0800"
     },
     "basePath": "",
     "book": {

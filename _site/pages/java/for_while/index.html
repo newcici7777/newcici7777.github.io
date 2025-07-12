@@ -1526,6 +1526,13 @@
     	<a href="/pages/java/switch_case/" data-nav-link> Switch case</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/if_else/" data-nav-link> if elseif else</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -4514,7 +4521,7 @@ int level = 5;</p>
 </figure>
 
 <h2 id="分數相加與迴圈">分數相加與迴圈</h2>
-<p>$\frac{1}{1} - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} + …  $</p>
+<p>$\frac{1}{1} - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} - …  $</p>
 
 <p>1.化繁為簡，先做1+2+3+4+5</p>
 
@@ -4524,7 +4531,7 @@ int level = 5;</p>
 3
 4
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
   <span class="n">sum</span> <span class="o">+=</span> <span class="n">i</span><span class="o">;</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -4599,6 +4606,44 @@ $\frac{1.0}{2} = 0.5$ <br /></p>
 </figure>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.6456349206349207
+</code></pre></div></div>
+
+<p>若題目偶數前面為正號，奇數前面為負號為相反，如下:<br />
+$\frac{1}{1} + \frac{1}{2} - \frac{1}{3} + \frac{1}{4} - \frac{1}{5} + …  $<br /></p>
+
+<p>修改程式碼如下:</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="c1">// 1分之1是1，是正數，先用sum先加起來</span>
+<span class="kt">double</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+<span class="c1">// i由2開始</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="c1">// 偶數前面為正號</span>
+  <span class="k">if</span> <span class="o">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">sum</span> <span class="o">+=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">i</span><span class="o">;</span>
+  <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+    <span class="c1">// 奇數前面為負號</span>
+    <span class="n">sum</span> <span class="o">-=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">i</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">sum</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.3543650793650797
 </code></pre></div></div>
 </section>
             </div><div class="search-results">
@@ -4688,11 +4733,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "數學範圍",
+            "title": "String compareTo原始碼",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/math/range.md",
-            "ref": "_pages/math/range.md",
+            "path": "_pages/java/string_compareto.md",
+            "ref": "_pages/java/string_compareto.md",
             "articles": []
         },
         
@@ -4790,7 +4835,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-11 14:45:37 +0800"
+        "time": "2025-07-12 10:30:37 +0800"
     },
     "basePath": "",
     "book": {

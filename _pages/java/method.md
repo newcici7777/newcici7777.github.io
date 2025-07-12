@@ -43,6 +43,23 @@ class TestObj {
 }
 {% endhighlight %}
 
+### throw與return
+- [exception][2]
+
+throw本身自帶return功能，使用throw，後面不用再寫return。
+{% highlight java linenos %}
+public class Test {
+  public int method1() {
+    throw new NullPointerException("null pointer");
+    // return ?; throw後不用再寫return
+  }
+  public static void main(String[] args) {
+    Test test = new Test();
+    test.method1();
+  }
+}
+{% endhighlight %}
+
 ## 方法返回的位置
 方法返回的位置十分十分重要！以前我一直以為void方法返回的位置是在呼叫方法的下一行，後來才知道，方法返回位置是在原本呼叫方法的地方。
 {% highlight java linenos %}
@@ -392,3 +409,4 @@ class TestObj {
 
 
 [1]: {% link _pages/java/callby_value.md %}
+[2]: {% link _pages/java/exception.md %}

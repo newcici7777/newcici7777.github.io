@@ -3,7 +3,7 @@
     <head>
 <meta charset="UTF-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>數學範圍 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="開區間, 閉區間, 半開區間" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -1523,6 +1523,13 @@
     	<a href="/pages/java/switch_case/" data-nav-link> Switch case</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/if_else/" data-nav-link> if elseif else</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -2965,49 +2972,71 @@
                         <h1 id="/pages/math/range">數學範圍</h1>
                     
 
-                    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[ &gt;=
+                    <h2 id="閉區間">閉區間</h2>
+<p>英文closed intervals</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[ &gt;=
 </code></pre></div></div>
-<p>[代表等於，也就是包含，數學符號是大於等於。</p>
+<p>[代表等於，數學符號是大於等於。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>] &lt;=
 </code></pre></div></div>
-<p>]代表等於，也就是包含，數學符號是小於等於。</p>
+<p>]代表等於，數學符號是小於等於。</p>
+
+<h2 id="開區間">開區間</h2>
+<p>英文open intervals</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>( &gt;
 </code></pre></div></div>
-<p>代表不包含，數學符號是大於。</p>
+<p>數學符號是大於，不是大於等於，沒有等於的概念。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>) &lt;
 </code></pre></div></div>
-<p>代表不包含，數學符號是小於。</p>
+<p>數學符號是小於，不是小於等於，沒有等於的概念。</p>
 
-<p>大陸說法</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[)
+<h2 id="半開區間">半開區間</h2>
+<p>大陸說法「左閉右開」，代表左邊有等於，右邊沒等於。<br />
+x代表介於a到b之間的數字。<br />
+a &lt;= x &lt; b <br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[a, b)
 </code></pre></div></div>
-<p>左閉右開</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(]
+<p>大陸說法「左開右閉」，代表左邊沒等於，右邊有等於。<br />
+x代表介於a到b之間的數字。<br />
+a &lt; x &lt;= b <br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(a, b]
 </code></pre></div></div>
-<p>左開右閉。</p>
 
-<p>開()代表不等於的意思，閉[]代表等於。</p>
+<h2 id="範圍">範圍</h2>
+<p>開()代表不等於的意思，閉[]代表等於。<br /></p>
 
-<p><code class="language-plaintext highlighter-rouge">..</code> 代表介於怎樣的範圍之間。</p>
+<p><code class="language-plaintext highlighter-rouge">..</code> 代表介於怎樣的範圍之間。<br /></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[6 .. 10]
+<p>閉區間，閉代表等於，二邊都有等於。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[6, 10]
 &gt;= 6  &lt;=10
 </code></pre></div></div>
-<p>左閉右閉</p>
+<p>x &gt;= 6 <br />
+x &lt;= 10 <br />
+6 &lt;= x &lt;= 10 <br /></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(6 .. 10)
+<p>開區間，開代表沒有等於，二邊都沒有等於。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(6, 10)
 &gt;6    &lt;10
 </code></pre></div></div>
-<p>左開右開</p>
+<p>x &gt; 6 <br />
+x &lt; 10 <br />
+6 &lt; x &lt; 10 <br /></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[6 .. 10)
+<p>半開區間<br />
+以下左邊有等於，右邊沒等於。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[6, 10)
 &gt;=6   &lt;10
 </code></pre></div></div>
-<p>左閉右開</p>
+<p>x &gt;= 6 <br />
+x &lt; 10 <br />
+6 &lt;= x &lt; 10 <br /></p>
+
+<p>(https://www.math.ntu.edu.tw/~hchu/Calculus/Calculus%5B102%5D-01.pdf)</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3188,7 +3217,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-11 14:45:37 +0800"
+        "time": "2025-07-12 10:30:37 +0800"
     },
     "basePath": "",
     "book": {

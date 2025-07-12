@@ -1523,6 +1523,13 @@
     	<a href="/pages/java/switch_case/" data-nav-link> Switch case</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/if_else/" data-nav-link> if elseif else</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -1592,7 +1599,7 @@
     	<a href="/pages/java/method/" data-nav-link> 方法</a>
         
             
-                <ul><li><a href="#語法" data-nav-link " >語法</a></li><li><a href="#return" data-nav-link " >return</a></li><li><a href="#方法返回的位置" data-nav-link " >方法返回的位置</a></li><li><a href="#memory-model" data-nav-link " >Memory Model</a><ul><li><a href="#main方法呼叫方法" data-nav-link " >main方法呼叫方法</a></li><li><a href="#方法呼叫方法程式碼" data-nav-link " >方法呼叫方法程式碼</a></li><li><a href="#方法呼叫方法執行過程" data-nav-link " >方法呼叫方法執行過程</a></li></ul></li><li><a href="#方法參數" data-nav-link " >方法參數</a><ul><li><a href="#參數為基本型態" data-nav-link " >參數為基本型態</a></li><li><a href="#參數是string" data-nav-link " >參數是String</a></li><li><a href="#參數為物件" data-nav-link " >參數為物件</a></li></ul></li><li><a href="#return-傳回值" data-nav-link " >return 傳回值</a></li><li><a href="#return-傳回值與多個方法呼叫" data-nav-link " >return 傳回值與多個方法呼叫</a><ul><li><a href="#程式碼-2" data-nav-link " >程式碼</a></li><li><a href="#呼叫方法" data-nav-link " >呼叫方法</a></li><li><a href="#傳回值取代方法" data-nav-link " >傳回值取代方法</a></li></ul></li></ul>
+                <ul><li><a href="#語法" data-nav-link " >語法</a></li><li><a href="#return" data-nav-link " >return</a><ul><li><a href="#throw與return" data-nav-link " >throw與return</a></li></ul></li><li><a href="#方法返回的位置" data-nav-link " >方法返回的位置</a></li><li><a href="#memory-model" data-nav-link " >Memory Model</a><ul><li><a href="#main方法呼叫方法" data-nav-link " >main方法呼叫方法</a></li><li><a href="#方法呼叫方法程式碼" data-nav-link " >方法呼叫方法程式碼</a></li><li><a href="#方法呼叫方法執行過程" data-nav-link " >方法呼叫方法執行過程</a></li></ul></li><li><a href="#方法參數" data-nav-link " >方法參數</a><ul><li><a href="#參數為基本型態" data-nav-link " >參數為基本型態</a></li><li><a href="#參數是string" data-nav-link " >參數是String</a></li><li><a href="#參數為物件" data-nav-link " >參數為物件</a></li></ul></li><li><a href="#return-傳回值" data-nav-link " >return 傳回值</a></li><li><a href="#return-傳回值與多個方法呼叫" data-nav-link " >return 傳回值與多個方法呼叫</a><ul><li><a href="#程式碼-2" data-nav-link " >程式碼</a></li><li><a href="#呼叫方法" data-nav-link " >呼叫方法</a></li><li><a href="#傳回值取代方法" data-nav-link " >傳回值取代方法</a></li></ul></li></ul>
 
             
         </li>
@@ -3022,6 +3029,37 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<h3 id="throw與return">throw與return</h3>
+<ul>
+  <li><a href="/pages/java/exception/">exception</a></li>
+</ul>
+
+<p>throw本身自帶return功能，使用throw，後面不用再寫return。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">method1</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">throw</span> <span class="k">new</span> <span class="nf">NullPointerException</span><span class="o">(</span><span class="s">"null pointer"</span><span class="o">);</span>
+    <span class="c1">// return ?; throw後不用再寫return</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Test</span> <span class="n">test</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Test</span><span class="o">();</span>
+    <span class="n">test</span><span class="o">.</span><span class="na">method1</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 <h2 id="方法返回的位置">方法返回的位置</h2>
 <p>方法返回的位置十分十分重要！以前我一直以為void方法返回的位置是在呼叫方法的下一行，後來才知道，方法返回位置是在原本呼叫方法的地方。</p>
 
@@ -3762,7 +3800,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-11 14:45:37 +0800"
+        "time": "2025-07-12 10:30:37 +0800"
     },
     "basePath": "",
     "book": {

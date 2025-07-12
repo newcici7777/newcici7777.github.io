@@ -91,3 +91,34 @@ int基本類型包了一個殼，就變成類別Interger，就可以使用類別
 12345
 12.55
 ```
+
+## 格式化
+
+|格式符|說明|
+|%s|字串|
+|%c|字元|
+|%d|整數|
+|%.2f|小數點，保留小數點2位，會四捨五入|
+
+使用printf()，方法結尾是f。
+{% highlight java linenos %}
+System.out.printf("姓名:%s,性別:%c,年齡:%d,體重:%.2f","Bill",'男',18,60.559);
+{% endhighlight %}
+```
+姓名:Bill,性別:男,年齡:18,體重:60.56
+```
+
+使用String.format()方法，轉成String。
+{% highlight java linenos %}
+String format = String.format("姓名:%s,性別:%c,年齡:%d,體重:%.2f","Bill",'男',18,60.559);
+System.out.println(format);
+{% endhighlight %}
+```
+姓名:Bill,性別:男,年齡:18,體重:60.56
+```
+
+{% highlight java linenos %}
+String formatStr = "姓名:%s,性別:%c,年齡:%d,體重:%.2f";
+String format = String.format(formatStr,"Bill",'男',18,60.559);
+System.out.println(format);
+{% endhighlight %}

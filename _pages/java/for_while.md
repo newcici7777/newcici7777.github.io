@@ -1074,12 +1074,12 @@ for (int i = 1; i <= level; i++) {
 {% endhighlight %}
 
 ## 分數相加與迴圈
-$\frac{1}{1} - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} + ...  $
+$\frac{1}{1} - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} - ...  $
 
 1.化繁為簡，先做1+2+3+4+5
 {% highlight java linenos %}
 int sum = 0;
-for (int i = 0; i < 10; i++) {
+for (int i = 1; i < 10; i++) {
   sum += i;
 }
 {% endhighlight %}
@@ -1128,4 +1128,27 @@ System.out.println(sum);
 {% endhighlight %}
 ```
 0.6456349206349207
+```
+
+若題目偶數前面為正號，奇數前面為負號為相反，如下:<br>
+$\frac{1}{1} + \frac{1}{2} - \frac{1}{3} + \frac{1}{4} - \frac{1}{5} + ...  $<br>
+
+修改程式碼如下:
+{% highlight java linenos %}
+// 1分之1是1，是正數，先用sum先加起來
+double sum = 1;
+// i由2開始
+for (int i = 2; i <= 10; i++) {
+  // 偶數前面為正號
+  if (i % 2 == 0) {
+    sum += 1.0 / i;
+  } else {
+    // 奇數前面為負號
+    sum -= 1.0 / i;
+  }
+}
+System.out.println(sum);
+{% endhighlight %}
+```
+1.3543650793650797
 ```

@@ -1526,6 +1526,13 @@
                 <ul><li><a href="#語法" data-nav-link " >語法</a></li><li><a href="#變數與常數" data-nav-link " >變數與常數</a><ul><li><a href="#字串" data-nav-link " >字串</a></li><li><a href="#字元" data-nav-link " >字元</a></li><li><a href="#不支援小數點" data-nav-link " >不支援小數點</a></li></ul></li><li><a href="#default" data-nav-link " >default</a></li><li><a href="#break" data-nav-link " >break</a><ul><li><a href="#沒有break的範例" data-nav-link " >沒有break的範例</a></li></ul></li></ul>
 
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/if_else/" data-nav-link> if elseif else</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -3098,6 +3105,49 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
+<p>只能透過轉成整數來判斷</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="kt">double</span> <span class="n">score</span> <span class="o">=</span> <span class="mf">80.5</span><span class="o">;</span>
+<span class="k">if</span><span class="o">(</span><span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">100</span><span class="o">)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"優"</span><span class="o">);</span>
+<span class="o">}</span>
+<span class="k">switch</span> <span class="o">((</span><span class="kt">int</span><span class="o">)</span> <span class="n">score</span> <span class="o">/</span> <span class="mi">10</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">case</span> <span class="mi">9</span><span class="o">:</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"優"</span><span class="o">);</span>
+    <span class="k">break</span><span class="o">;</span>
+  <span class="k">case</span> <span class="mi">8</span><span class="o">:</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"甲"</span><span class="o">);</span>
+    <span class="k">break</span><span class="o">;</span>
+  <span class="k">case</span> <span class="mi">7</span><span class="o">:</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"乙"</span><span class="o">);</span>
+    <span class="k">break</span><span class="o">;</span>
+  <span class="k">default</span><span class="o">:</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"丙"</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>甲
+</code></pre></div></div>
+
 <h2 id="default">default</h2>
 <p>若case條件全部不符合，會來到default。</p>
 
@@ -3274,7 +3324,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/java/array" class="navigation navigation-next navigation-unique" aria-label="Next page: 陣列">
+                        <a href="/pages/java/if_else" class="navigation navigation-next navigation-unique" aria-label="Next page: if elseif else">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3290,6 +3340,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "if elseif else",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/java/if_else.md",
+            "ref": "_pages/java/if_else.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -3385,7 +3444,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-11 14:45:37 +0800"
+        "time": "2025-07-12 10:30:37 +0800"
     },
     "basePath": "",
     "book": {

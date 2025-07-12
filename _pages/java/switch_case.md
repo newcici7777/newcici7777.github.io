@@ -81,6 +81,30 @@ switch (val) {
 }
 {% endhighlight %}
 
+只能透過轉成整數來判斷
+{% highlight java linenos %}
+double score = 80.5;
+if(score >= 100) {
+  System.out.println("優");
+}
+switch ((int) score / 10) {
+  case 9:
+    System.out.println("優");
+    break;
+  case 8:
+    System.out.println("甲");
+    break;
+  case 7:
+    System.out.println("乙");
+    break;
+  default:
+    System.out.println("丙");
+}
+{% endhighlight %}
+```
+甲
+```
+
 ## default
 若case條件全部不符合，會來到default。
 

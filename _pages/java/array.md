@@ -117,14 +117,14 @@ int arr[] = new int[3];
 arr[3] = 1;
 {% endhighlight %}
 
-所以最後一個元素的索引，通常都會這樣寫:陣列大小 - 1
+所以最後一個元素的索引，通常都會這樣寫:「陣列大小」 - 1
 {% highlight java linenos %}
 int lastIndex = arr.length - 1;
 {% endhighlight %}
 
 ## 迴圈
 ### 迴圈判斷
-arr1.length陣列大小為4，陣列「最後一個元素」的索引為陣列大小 - 1 = 3。<br>
+arr1.length陣列大小為4，陣列「最後一個元素」的索引為「陣列大小」 - 1 = 3。<br>
 索引範圍為0, 1, 2, 3都小於arr1.length。<br>
 以下是最常使用陣列迴圈判斷語法。
 {% highlight java linenos %}
@@ -145,6 +145,20 @@ for (int i = 0; i < arr1.length; i++) {
 0
 0
 ```
+
+### 迴圈倒過來語法
+arr1.length陣列大小為4，陣列「最後一個元素」的索引為「陣列大小」 - 1 = 3。<br>
+最後一個元素的索引，通常都會這樣寫:「陣列大小」 - 1 <br>
+{% highlight java linenos %}
+int[] arr1 = new int[4];
+for (int i = arr1.length - 1; i >= 0; i--) {
+  System.out.print(arr1[i]);
+}
+{% endhighlight %}
+```
+0000
+```
+
 ### 迴圈設定陣列的值
 {% highlight java linenos %}
 int[] arr1 = new int[4];
