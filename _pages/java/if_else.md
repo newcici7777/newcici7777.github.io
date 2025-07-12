@@ -110,6 +110,65 @@ if ((year % 4 == 0 && year % 100 != 0)
 }
 {% endhighlight %}
 
+## break, return與else
+- [break離開迴圈的條件][2]
+- [return][3]
+
+### break
+{% highlight java linenos %}
+int i = 0;
+while (true) {
+  if (i > 5) {
+    break;
+  } else {
+    i++;
+  }
+}
+System.out.println(i);
+{% endhighlight %}
+
+以上程式碼與以下程式碼是相同的，差別在於下面的程式碼沒有else，但是搭配break離開迴圈、continue直接執行「進入迴圈條件」、return離開方法，只要有符合break、continue、return後面程式碼都不執行，i\+\+放在「break條件<span class="markline">之後</span>」就等同於else。
+
+{% highlight java linenos %}
+int i = 0;
+while (true) {
+  if (i > 5) {
+    break;
+  }
+  // break條件之後
+  i++;
+}
+System.out.println(i);
+{% endhighlight %}
+```
+6
+```
+
+### return
+{% highlight java linenos %}
+  public void method1(int n) {
+    if (n == 1) {
+      return;
+    } else {
+      System.out.println("執行這段程式碼");
+    }
+  }
+{% endhighlight %}
+
+以上程式碼與以下程式碼，是相同的，差別在於，下方程式碼沒有else，因為if搭配return，只要有符合break、continue、return後面程式碼都不執行，`System.out.println("執行這段程式碼");`放在「return條件<span class="markline">之後</span>」就等同於else。
+
+{% highlight java linenos %}
+  public void method1(int n) {
+    if (n == 1) {
+      return;
+    }
+    // return條件之後
+    System.out.println("執行這段程式碼");
+  }
+{% endhighlight %}
+
+
+
 [1]: {% link _pages/math/range.md %}
-
-
+[2]: {% link _pages/java/for_while.md %}#break離開迴圈的條件
+[3]: {% link _pages/java/method.md %}#return

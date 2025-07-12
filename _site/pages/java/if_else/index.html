@@ -1530,7 +1530,7 @@
     	<a href="/pages/java/if_else/" data-nav-link> if elseif else</a>
         
             
-                <ul><li><a href="#語法" data-nav-link " >語法</a></li><li><a href="#boolean" data-nav-link " >boolean</a></li><li><a href="#range" data-nav-link " >range</a></li><li><a href="#判斷閏年" data-nav-link " >判斷閏年</a></li></ul>
+                <ul><li><a href="#語法" data-nav-link " >語法</a></li><li><a href="#boolean" data-nav-link " >boolean</a></li><li><a href="#range" data-nav-link " >range</a></li><li><a href="#判斷閏年" data-nav-link " >判斷閏年</a></li><li><a href="#break-return與else" data-nav-link " >break, return與else</a><ul><li><a href="#break" data-nav-link " >break</a></li><li><a href="#return" data-nav-link " >return</a></li></ul></li></ul>
 
             
         </li></ul></li>
@@ -2200,6 +2200,16 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/design_pattern/flyweight/" data-nav-link> 共享模式</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Java資料結構 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/single_linkedList/" data-nav-link> 單向鏈結串列</a>
         
             
         </li></ul></li></ul></li>
@@ -3016,7 +3026,7 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>flow3
 </code></pre></div></div>
 
-<p>可以透過以下方法，在判斷條件的位置，指派值給變數。<br />
+<p>可以透過以下方式，在判斷條件的位置，指派值給變數。<br />
 此時flag變成false，if(false)，就不進入以下的條件判斷。<br /></p>
 
 <figure class="highlight">
@@ -3033,7 +3043,7 @@
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>找到if elseif else，只要有true就離開條件判斷句。<br />
+<p>只要有true，執行完<code class="language-plaintext highlighter-rouge">if(true) { 程式碼; }</code>就離開條件判斷句。<br />
 <img src="/assets/img/java/if_elseif.png" alt="img" /> <br /></p>
 
 <p>以下程式碼執行結果如何？</p>
@@ -3078,7 +3088,7 @@
   <li><a href="/pages/math/range/">開區間 閉區間 半開區間</a></li>
 </ul>
 
-<p>請問開區間、閉區間的方式來判斷以下的區間。</p>
+<p>使用開區間、閉區間的方式來判斷以下的區間。</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3139,6 +3149,103 @@
 <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
   <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"不是閏年"</span><span class="o">);</span>
 <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="break-return與else">break, return與else</h2>
+<ul>
+  <li><a href="/pages/java/for_while/#break離開迴圈的條件">break離開迴圈的條件</a></li>
+  <li><a href="/pages/java/method/#return">return</a></li>
+</ul>
+
+<h3 id="break">break</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="k">while</span> <span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">if</span> <span class="o">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">break</span><span class="o">;</span>
+  <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+    <span class="n">i</span><span class="o">++;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以上程式碼與以下程式碼是相同的，差別在於下面的程式碼沒有else，但是搭配break離開迴圈、continue直接執行「進入迴圈條件」、return離開方法，只要有符合break、continue、return後面程式碼都不執行，i++放在「break條件<span class="markline">之後</span>」就等同於else。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="k">while</span> <span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">if</span> <span class="o">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">break</span><span class="o">;</span>
+  <span class="o">}</span>
+  <span class="c1">// break條件之後</span>
+  <span class="n">i</span><span class="o">++;</span>
+<span class="o">}</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>6
+</code></pre></div></div>
+
+<h3 id="return">return</h3>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method1</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">return</span><span class="o">;</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"執行這段程式碼"</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以上程式碼與以下程式碼，是相同的，差別在於，下方程式碼沒有else，因為if搭配return，只要有符合break、continue、return後面程式碼都不執行，<code class="language-plaintext highlighter-rouge">System.out.println("執行這段程式碼");</code>放在「return條件<span class="markline">之後</span>」就等同於else。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method1</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">return</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">// return條件之後</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"執行這段程式碼"</span><span class="o">);</span>
+  <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -3323,7 +3430,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-12 10:30:37 +0800"
+        "time": "2025-07-13 00:33:04 +0800"
     },
     "basePath": "",
     "book": {
