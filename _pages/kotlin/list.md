@@ -237,7 +237,6 @@ println(distinctList)
 [Alice, Bill, Gina]
 ```
 
-## 遍歷集合
+## 訪問集合中所有元素
 for裡面的i變數，前面不會有val或var，也不會有變數類型。
 
-內容請見陣列中的遍歷集合。

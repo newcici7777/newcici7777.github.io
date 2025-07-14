@@ -141,6 +141,7 @@ class MyLinkedList {
   public MyLinkedList() {
     head = new Node();
   }
+
   public void add(Node newNode) {
     // 輔助變數先移動到頭節點
     Node curNode = head;
@@ -157,6 +158,7 @@ class MyLinkedList {
     // 最後一個節點的next指向新節點
     curNode.next = newNode;
   }
+
   public void visitAll() {
     // 先判斷有沒有第一個節點
     if (head.next == null) {
@@ -183,6 +185,353 @@ class Node {
   public Node(int data) {
     this.data = data;
   }
+  public int data;
+  public Node next;
+}
+{% endhighlight %}
+
+## 由小到大新增
+之前的程式碼是新增在最後面，現在我們要依照data的大小，由小到大新增。
+
+先找到串列中比新增節點還「大或是相等」的節點。
+
+因為是單向鏈結串列，每個節點只會知道下一個節點是誰，不會知道前一個節點是誰，所以輔助變數curNode指向在比新增節點還「大或是相等」的節點的<span class="markline">「前一個」</span>，如果curNode指向「大或是相等」的節點，就無法跟前一個節點串在一起。
+
+![img]({{site.imgurl}}/java_datastruct/linked_sort_insert.gif)
+
+{% highlight java linenos %}
+public void add(Node newNode) {
+  // 輔助變數先移動到頭節點
+  Node curNode = head;
+  // 判斷是否有找到>=newNode的數字
+  boolean flag = false;
+  while (true) {
+    // 若為最後一個節點
+    if (curNode.next == null) {
+      // 離開
+      break;
+    }
+    // 判斷下一個節點有沒有>=newNode
+    if (curNode.next.data >= newNode.data) {
+      flag = true; //找到
+      // 找到就離開迴圈，不要再移動
+      break;
+    }
+    // curNode輔助變數移動到下一個節點
+    curNode = curNode.next;
+  }
+  newNode.next = curNode.next;
+  curNode.next = newNode;
+}
+{% endhighlight %}
+
+## 刪除
+先找到串列中與參數節點data數值相同的節點。
+
+因為是單向鏈結串列，每個節點只會知道下一個節點是誰，不會知道前一個節點是誰，所以輔助變數curNode指向要刪除節點的<span class="markline">「前一個」</span>，如果curNode指向要刪除的節點，就無法跟前一個節點串在一起。
+
+![img]({{site.imgurl}}/java_datastruct/linked_del1.png)
+
+![img]({{site.imgurl}}/java_datastruct/linked_del2.png)
+
+{% highlight java linenos %}
+  public void del(Node delNode) {
+    // 輔助變數先移動到頭節點
+    Node curNode = head;
+    // 判斷是否有找到==delNode的數字
+    boolean flag = false;
+    while (true) {
+      // 若為最後一個節點
+      if (curNode.next == null) {
+        // 離開
+        break;
+      }
+      // 判斷下一個節點有沒有==delNode
+      if (curNode.next.data == delNode.data) {
+        flag = true; //找到
+        // 找到就離開迴圈，不要再移動
+        break;
+      }
+      // curNode輔助變數移動到下一個節點
+      curNode = curNode.next;
+    }
+    //找到要刪除的節點
+    if (flag) {
+      curNode.next = curNode.next.next;
+    } else {
+      System.out.println("找不到要刪除的節點");
+    }
+  }
+{% endhighlight %}
+
+完整程式碼
+{% highlight java linenos %}
+public class Test1 {
+  public static void main(String[] args) {
+    MyLinkedList list = new MyLinkedList();
+    // 新增節點
+    Node node1 = new Node(80);
+    list.add(node1);
+    Node node2 = new Node(20);
+    list.add(node2);
+    Node node3 = new Node(10);
+    list.add(node3);
+    // 訪問所有節點，並顯示data
+    list.visitAll();
+    System.out.println("=================");
+    list.del(node2);  // 刪除20
+    list.visitAll();
+  }
+}
+class MyLinkedList {
+  Node head;
+  public MyLinkedList() {
+    head = new Node();
+  }
+
+  public void add(Node newNode) {
+    // 輔助變數先移動到頭節點
+    Node curNode = head;
+    // 判斷是否有找到>=newNode的數字
+    boolean flag = false;
+    while (true) {
+      // 若為最後一個節點
+      if (curNode.next == null) {
+        // 離開
+        break;
+      }
+      // 判斷下一個節點有沒有>=newNode
+      if (curNode.next.data >= newNode.data) {
+        flag = true; //找到
+        // 找到就離開迴圈，不要再移動
+        break;
+      }
+      // curNode輔助變數移動到下一個節點
+      curNode = curNode.next;
+    }
+    newNode.next = curNode.next;
+    curNode.next = newNode;
+  }
+
+  public void del(Node delNode) {
+    // 輔助變數先移動到頭節點
+    Node curNode = head;
+    // 判斷是否有找到==delNode的數字
+    boolean flag = false;
+    while (true) {
+      // 若為最後一個節點
+      if (curNode.next == null) {
+        // 離開
+        break;
+      }
+      // 判斷下一個節點有沒有==delNode
+      if (curNode.next.data == delNode.data) {
+        flag = true; //找到
+        // 找到就離開迴圈，不要再移動
+        break;
+      }
+      // curNode輔助變數移動到下一個節點
+      curNode = curNode.next;
+    }
+    //找到要刪除的節點
+    if (flag) {
+      curNode.next = curNode.next.next;
+    } else {
+      System.out.println("找不到要刪除的節點");
+    }
+  }
+
+  public void visitAll() {
+    // 先判斷有沒有第一個節點
+    if (head.next == null) {
+      return;
+    }
+    // 輔助變數先移動到第一個節點
+    Node curNode = head.next;
+    while (true) {
+      // curNode移動到null
+      if (curNode == null) {
+        // 離開迴圈
+        break;
+      }
+      // 螢幕顯示出目前節點的資料data
+      System.out.println(curNode.data);
+      // 移動到下一個節點
+      curNode = curNode.next;
+    }
+  }
+}
+
+class Node {
+  public Node() {}
+  public Node(int data) {
+    this.data = data;
+  }
+  public int data;
+  public Node next;
+}
+{% endhighlight %}
+
+## 修改
+節點要進行修正，要有一個id。
+{% highlight java linenos %}
+class Node {
+  public Node() {}
+  public Node(int id, int data) {
+    this.id = id;
+    this.data = data;
+  }
+  public int id;
+  public int data;
+  public Node next;
+}
+{% endhighlight %}
+
+修改程式碼跟刪除的程式碼幾乎一模一樣。
+
+先找到串列中與參數節點id相同的節點。
+
+因為是單向鏈結串列，每個節點只會知道下一個節點是誰，不會知道前一個節點是誰，所以輔助變數curNode指向要修改節點的<span class="markline">「前一個」</span>。
+
+其它程式碼也修改成跟id進行比較，而非data。
+
+程式碼
+{% highlight java linenos %}
+public class Test1 {
+  public static void main(String[] args) {
+    MyLinkedList list = new MyLinkedList();
+    // 新增節點
+    System.out.println("======新增===========");
+    Node node1 = new Node(3,80);
+    list.add(node1);
+    Node node2 = new Node(2,20);
+    list.add(node2);
+    Node node3 = new Node(1,10);
+    list.add(node3);
+    // 訪問所有節點，並顯示data
+    list.visitAll();
+    System.out.println("======刪除===========");
+    list.del(node2);  // 刪除20
+    list.visitAll();
+    System.out.println("======修改===========");
+    list.update(new Node(3,10000));
+    list.visitAll();
+  }
+}
+class MyLinkedList {
+  Node head;
+  public MyLinkedList() {
+    head = new Node();
+  }
+
+  public void add(Node newNode) {
+    // 輔助變數先移動到頭節點
+    Node curNode = head;
+    // 判斷是否有找到>=newNode的數字
+    boolean flag = false;
+    while (true) {
+      // 若為最後一個節點
+      if (curNode.next == null) {
+        // 離開
+        break;
+      }
+      // 判斷下一個節點id有沒有>=newNode
+      if (curNode.next.id >= newNode.id) {
+        flag = true; //找到
+        // 找到就離開迴圈，不要再移動
+        break;
+      }
+      // curNode輔助變數移動到下一個節點
+      curNode = curNode.next;
+    }
+    newNode.next = curNode.next;
+    curNode.next = newNode;
+  }
+
+  public void del(Node delNode) {
+    // 輔助變數先移動到頭節點
+    Node curNode = head;
+    // 判斷是否有找到==delNode的id
+    boolean flag = false;
+    while (true) {
+      // 若為最後一個節點
+      if (curNode.next == null) {
+        // 離開
+        break;
+      }
+      // 判斷下一個節點有沒有==delNode
+      if (curNode.next.id == delNode.id) {
+        flag = true; //找到
+        // 找到就離開迴圈，不要再移動
+        break;
+      }
+      // curNode輔助變數移動到下一個節點
+      curNode = curNode.next;
+    }
+    //找到要刪除的節點
+    if (flag) {
+      curNode.next = curNode.next.next;
+    } else {
+      System.out.println("找不到要刪除的節點");
+    }
+  }
+
+  public void update(Node updateNode) {
+    // 輔助變數先移動到頭節點
+    Node curNode = head;
+    // 判斷是否有找到==updateNode的數字
+    boolean flag = false;
+    while (true) {
+      // 若為最後一個節點
+      if (curNode.next == null) {
+        // 離開
+        break;
+      }
+      // 判斷下一個節點有沒有==updateNode
+      if (curNode.next.id == updateNode.id) {
+        flag = true; //找到
+        // 找到就離開迴圈，不要再移動
+        break;
+      }
+      // curNode輔助變數移動到下一個節點
+      curNode = curNode.next;
+    }
+    //找到要修改的節點
+    if (flag) {
+      curNode.next.data = updateNode.data;
+    } else {
+      System.out.println("找不到要修改的節點");
+    }
+  }
+  public void visitAll() {
+    // 先判斷有沒有第一個節點
+    if (head.next == null) {
+      return;
+    }
+    // 輔助變數先移動到第一個節點
+    Node curNode = head.next;
+    while (true) {
+      // curNode移動到null
+      if (curNode == null) {
+        // 離開迴圈
+        break;
+      }
+      String str = String.format("id = %d, data = %d",curNode.id, curNode.data);
+      // 螢幕顯示出目前節點的資料data
+      System.out.println(str);
+      // 移動到下一個節點
+      curNode = curNode.next;
+    }
+  }
+}
+
+class Node {
+  public Node() {}
+  public Node(int id, int data) {
+    this.id = id;
+    this.data = data;
+  }
+  public int id;
   public int data;
   public Node next;
 }

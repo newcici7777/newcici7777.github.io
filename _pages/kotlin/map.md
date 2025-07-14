@@ -80,7 +80,7 @@ Momo age = 0
 Yoyo age = 0
 ```
 
-## 遍歷
+## forEach
 {% highlight kotlin linenos %}
 val mutableMap = mutableMapOf(
     "Alice" to 18,

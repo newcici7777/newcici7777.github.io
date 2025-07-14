@@ -17,7 +17,7 @@ Collection介面下面有List介面與Set介面，List是可以放重覆的資�
 
 List是有順序的，Set是沒有順序。
 
-Iterator介面是集合的疊代器，用來遍歷集合。
+Iterator介面是集合的疊代器，用來移動集合。
 
 ## Collection
 提供以下方法，只要是實作Collection介面的子類別，都可以用以下方法。<br>
@@ -107,7 +107,7 @@ System.out.println(list.containsAll(list2));
 true
 ```
 
-## iterator遍歷集合
+## iterator移動集合
 - [自己寫一個Iterator][1]
 
 透過iterator()方法，可以取得Iterator疊代器物件。

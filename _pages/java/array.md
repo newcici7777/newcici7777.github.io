@@ -272,8 +272,8 @@ System.out.println(Arrays.toString(arr2));
 1. 使用max變數，儲存陣列中最大的值。
 2. 使用maxIndex變數，儲存陣列中最大的值的索引。
 3. max與maxIndex初始化，為`arr[0]`與0;
-4. 遍歷由i = 1開始，因為初始值都已經用0開始，沒必要自己跟自己比。
-5. 遍歷陣列，若之後的值比max大，修改max與maxIndex，指到比較大的值與索引。
+4. 移動由i = 1開始，因為初始值都已經用0開始，沒必要自己跟自己比。
+5. 移動陣列，若之後的值比max大，修改max與maxIndex，指到比較大的值與索引。
 
 {% highlight java linenos %}
 int[] arr1 = {10,5,49};
@@ -283,7 +283,7 @@ int max = arr1[0];
 // 2. 使用maxIndex變數，儲存陣列中最大的值的索引。
 // 3. maxIndex初始化0
 int maxIndex = 0;
-// 遍歷由i = 1開始，沒必要自己跟自己比
+// 移動由i = 1開始，沒必要自己跟自己比
 for (int i = 1; i < arr1.length; i++) {
   // 之後的值比max大
   if (arr1[i] > max) {

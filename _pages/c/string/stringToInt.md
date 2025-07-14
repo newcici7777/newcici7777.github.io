@@ -10,7 +10,7 @@ keywords: c++ ,  string to integer
 
 定義int result = 0，作為乘數。
 
-用迴圈遍歷字串
+用迴圈訪問字串中每一個字元。
 
 ### 步驟1
 

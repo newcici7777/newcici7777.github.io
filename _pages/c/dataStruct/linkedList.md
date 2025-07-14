@@ -142,7 +142,7 @@ int main() {
 
 新增步驟如下
 
-- 先遍歷到最後一個節點(不是nullptr)
+- 先移動到最後一個節點(不是nullptr)
 - 建立新節點，將新節點的next設為nullptr
 - 尾節點的next設為新節點
 

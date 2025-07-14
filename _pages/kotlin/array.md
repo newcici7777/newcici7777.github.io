@@ -237,7 +237,7 @@ println("Tom" in names)
 true
 ```
 
-## 遍歷集合
+## 訪問集合中所有元素
 for裡面的i變數，前面不會有val或var，也不會有變數類型，只要記住以下3種for即可。
 
 ### for
@@ -277,7 +277,7 @@ arr.forEachIndexed {
 1 2
 ```
 
-## 其它遍歷方式
+## 其它訪問集合所有元素的方式
 只要記得上面3種for，下面若仍有腦容量再記住吧。
 ### iterator
 - [iterator][1]
