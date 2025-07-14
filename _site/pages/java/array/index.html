@@ -2212,6 +2212,13 @@
     	<a href="/pages/dataStruct/single_linkedList/" data-nav-link> 單向鏈結串列</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/circular_queue/" data-nav-link> circular queue環狀佇列</a>
+        
+            
         </li></ul></li></ul></li>
 	
 	
@@ -3393,8 +3400,8 @@
   <li>使用max變數，儲存陣列中最大的值。</li>
   <li>使用maxIndex變數，儲存陣列中最大的值的索引。</li>
   <li>max與maxIndex初始化，為<code class="language-plaintext highlighter-rouge">arr[0]</code>與0;</li>
-  <li>遍歷由i = 1開始，因為初始值都已經用0開始，沒必要自己跟自己比。</li>
-  <li>遍歷陣列，若之後的值比max大，修改max與maxIndex，指到比較大的值與索引。</li>
+  <li>移動由i = 1開始，因為初始值都已經用0開始，沒必要自己跟自己比。</li>
+  <li>移動陣列，若之後的值比max大，修改max與maxIndex，指到比較大的值與索引。</li>
 </ol>
 
 <figure class="highlight">
@@ -3422,7 +3429,7 @@
 <span class="c1">// 2. 使用maxIndex變數，儲存陣列中最大的值的索引。</span>
 <span class="c1">// 3. maxIndex初始化0</span>
 <span class="kt">int</span> <span class="n">maxIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-<span class="c1">// 遍歷由i = 1開始，沒必要自己跟自己比</span>
+<span class="c1">// 移動由i = 1開始，沒必要自己跟自己比</span>
 <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr1</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
   <span class="c1">// 之後的值比max大</span>
   <span class="k">if</span> <span class="o">(</span><span class="n">arr1</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">max</span><span class="o">)</span> <span class="o">{</span>
@@ -3815,7 +3822,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-13 00:33:04 +0800"
+        "time": "2025-07-14 18:45:40 +0800"
     },
     "basePath": "",
     "book": {
