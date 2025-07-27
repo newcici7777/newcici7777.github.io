@@ -4,7 +4,7 @@ date: 2025-07-14
 keywords: Java, circular queue環狀佇列
 ---
 ## 初始值
-陣列的預設值都為0，陣列大小maxsize為6，陣列實際大小len為0，tail與front一開始都是0。
+陣列大小maxsize為6，陣列實際大小len為0，tail與front一開始都是0。
 
 ### len
 會記錄目前實際大小。
@@ -67,7 +67,7 @@ len = len + 1，實際大小增加1<br>
 將以下的值代入上方push語法中<br>
 最大容量為maxLen = 6<br>
 tail = 5<br>
-arr[5] = 要新增的值 100<br>
+arr[5] = 要新增的值 30<br>
 tail = (5 + 1) % 6<br>
 新增完後，tail = 0 (指向索引0)<br>
 len = 2<br>
@@ -76,8 +76,6 @@ len = 2 + 1，實際大小變成3。<br>
 ![img]({{site.imgurl}}/java_datastruct/circular_tail4.png)
 
 ## pop與公式
-初始值 front = 0<br>
-
 pop語法
 {% highlight java linenos %}
 int rtn = arr[front];
@@ -92,7 +90,7 @@ len--;
 front = 3<br>
 先把資料取出arr[front = 3]<br>
 然後再把front變數往後移動一格，front = (3 + 1) % 6<br>
-資料取出後，front = 4 (指向索引4)<br>
+front = 4 (指向索引4)<br>
 len = 3 - 1，實際大小變成2<br>
 
 ![img]({{site.imgurl}}/java_datastruct/circular_front2.png)
@@ -107,7 +105,7 @@ len = 3 - 1，實際大小變成2<br>
 front = 5
 先把資料取出arr[front = 5]<br>
 然後再把front變數往後移動一格，front = (5 + 1) % 6<br>
-資料取出後，front = 0 (指向索引0)<br>
+front = 0 (指向索引0)<br>
 len = 1 - 1，實際大小變成0<br>
 
 ![img]({{site.imgurl}}/java_datastruct/circular_front4.png)
@@ -180,7 +178,7 @@ class CircularQueue {
     len = 0;
   }
   public boolean isFull() {
-    if (len >= maxSize) return true;
+    if (len == maxSize) return true;
     return false; // len < maxSize
   }
   public boolean isEmpty() {

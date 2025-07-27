@@ -3,7 +3,6 @@ title: char 字串
 date: 2024-06-15
 keywords: c++, char array
 ---
-
 ## 空字元(null character)
 
 char字串必須以'\0'做結尾，若不是'\0'做結尾則稱為char陣列。
@@ -20,16 +19,21 @@ char str[6];
   // \0 代表結尾
   char str1[6] = {'h','e','l','l','o','\0'};
   cout << "str1 長度 = " << strlen(str1) << ",內容 = " << str1 << endl;
+{% endhighlight %}
+```
+執行結果
+str1 長度 = 5,內容 = hello
+```
+
+{% highlight c++ linenos %}
   //char 陣列
   char arr[6] = {'h','e','l','l','o','o'};
   cout << "arr 長度 = " << strlen(arr) << ",內容 = " << arr << endl;
   cout << "arr sizeof = " << sizeof(arr) << endl;
 {% endhighlight %}
-
 ```
 執行結果
-str1 長度 = 5,內容 = hello
-arr 長度 = 11,內容 = helloohello
+arr 長度 = 6,內容 = helloo
 arr sizeof = 6
 ```
 

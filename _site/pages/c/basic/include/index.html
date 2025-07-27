@@ -2,8 +2,8 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>include與define </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="c++, include, define" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>include </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="c++, include" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -156,6 +156,30 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 常數 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/constant/" data-nav-link> 常數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/define/" data-nav-link> define</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/pointer/pointer2/" data-nav-link> 指標2</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/c/basic/param/" data-nav-link> 參數與引數</a>
         
@@ -192,10 +216,10 @@
 	
 	
 	<li class="active" data-nav-item>
-    	<a href="/pages/c/basic/include/" data-nav-link> include與define</a>
+    	<a href="/pages/c/basic/include/" data-nav-link> include</a>
         
             
-                <ul><li><a href="#head-file" data-nav-link " >head file</a></li><li><a href="#include-head-file" data-nav-link " >include head file</a></li><li><a href="#pragma-once" data-nav-link " >pragma once</a></li><li><a href="#c-standard-library" data-nav-link " >C Standard Library</a></li><li><a href="#c-standard-library-1" data-nav-link " >C++ Standard Library</a></li><li><a href="#define前置指令" data-nav-link " >define前置指令</a><ul><li><a href="#c提供的前置指令" data-nav-link " >C++提供的前置指令</a></li><li><a href="#define-只有變數沒有內容" data-nav-link " >define 只有變數沒有內容</a></li><li><a href="#ifdef" data-nav-link " >ifdef</a></li><li><a href="#ifndef" data-nav-link " >ifndef</a></li><li><a href="#判斷作業系統" data-nav-link " >判斷作業系統</a></li><li><a href="#不同作業系統定義型別" data-nav-link " >不同作業系統，定義型別</a></li></ul></li></ul>
+                <ul><li><a href="#head-file" data-nav-link " >head file</a></li><li><a href="#include-head-file" data-nav-link " >include head file</a></li><li><a href="#pragma-once" data-nav-link " >pragma once</a></li><li><a href="#c-standard-library" data-nav-link " >C Standard Library</a></li><li><a href="#c-standard-library-1" data-nav-link " >C++ Standard Library</a></li></ul>
 
             
         </li>
@@ -2219,7 +2243,24 @@
     	<a href="/pages/dataStruct/circular_queue/" data-nav-link> circular queue環狀佇列</a>
         
             
-        </li></ul></li></ul></li>
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> sort </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/mergesort/" data-nav-link> 合併排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/quicksort/" data-nav-link> 快速排序</a>
+        
+            
+        </li></ul></li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Android </a><ul>
@@ -2976,7 +3017,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >include與define</a>
+                            <a href="." >include</a>
                         
                     </h1>
                 </div>
@@ -2989,11 +3030,10 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/basic/include">include與define</h1>
+                        <h1 id="/pages/c/basic/include">include</h1>
                     
 
                     <h2 id="head-file">head file</h2>
-
 <p>檔名以.h為結尾，定義使用的標頭檔，定義(definition)函式，定義類別，定義結構…等等。</p>
 
 <h2 id="include-head-file">include head file</h2>
@@ -3015,7 +3055,7 @@
 
 <p>include也可以用.cpp檔，不是只限於.h</p>
 
-<p>include是把檔案內容複製下來，貼上呼叫include的位置，跟<a href="/pages/c/function/func_inline/">內嵌函式</a>是一樣的。</p>
+<p>include是把檔案內容複製下來，貼上呼叫include的位置，跟[內嵌函式][1]是一樣的。</p>
 
 <h2 id="pragma-once">pragma once</h2>
 <p>重覆include的標頭檔，只要include一次，放在檔案最上面。</p>
@@ -3071,261 +3111,6 @@
 </pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
-
-<h2 id="define前置指令">define前置指令</h2>
-<p>編譯的時候，編譯器把以下的內容取代變數，跟<a href="/pages/c/function/func_inline/">內嵌函式</a>是一樣的。</p>
-
-<p>define只是把內容取代變數，沒有變數型別。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="cp">#define 變數 內容</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>以下將”ABCDEFaaaaaa”取代MSG</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="code"><pre><span class="cp">#define MSG "ABCDEFaaaaaa"
-</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">MSG</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ABCDEFaaaaaa
-</code></pre></div></div>
-
-<p>把MSG變數的內容改成<code class="language-plaintext highlighter-rouge">endl;</code>斷行與分號，以下程式碼編譯不會出錯。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="cp">#define MSG endl;
-</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="c1">// 注意，以下結尾沒有分號</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">MSG</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-</code></pre></div></div>
-<p>結果只會出現一個斷行</p>
-
-<h3 id="c提供的前置指令">C++提供的前置指令</h3>
-
-<p><code class="language-plaintext highlighter-rouge">__cplusplus</code> ，可以辯別是c++還c</p>
-
-<p>檔名 : <code class="language-plaintext highlighter-rouge">__FILE__</code></p>
-
-<p>函式名 : <code class="language-plaintext highlighter-rouge">__Function__</code></p>
-
-<p>程式碼行號 : <code class="language-plaintext highlighter-rouge">__LINE__</code></p>
-
-<p>編譯日期: <code class="language-plaintext highlighter-rouge">__DATE__</code></p>
-
-<p>編譯時間: <code class="language-plaintext highlighter-rouge">__TIME__</code></p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"__cplusplus = "</span> <span class="o">&lt;&lt;</span> <span class="n">__cplusplus</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"__FILE__ = "</span> <span class="o">&lt;&lt;</span> <span class="n">__FILE__</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"__FUNCTION__ = "</span> <span class="o">&lt;&lt;</span> <span class="n">__FUNCTION__</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"__LINE__ = "</span> <span class="o">&lt;&lt;</span> <span class="n">__LINE__</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"__DATE__ = "</span> <span class="o">&lt;&lt;</span> <span class="n">__DATE__</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"__TIME__ = "</span> <span class="o">&lt;&lt;</span> <span class="n">__TIME__</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"__TIMESTAMP__ = "</span> <span class="o">&lt;&lt;</span> <span class="n">__TIMESTAMP__</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>__cplusplus = 201402
-__FILE__ = /Users/cici/projects/lsn11/lsn11/main.cpp
-__FUNCTION__ = main
-__LINE__ = 20
-__DATE__ = Jan 13 2025
-__TIME__ = 13:41:38
-__TIMESTAMP__ = Mon Jan 13 13:41:36 2025
-</code></pre></div></div>
-
-<h3 id="define-只有變數沒有內容">define 只有變數沒有內容</h3>
-<p>定義前置變數，並不是一定要有內容</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="cp">#define 變數</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>例:</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="cp">#define DEBUG</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="ifdef">ifdef</h3>
-<p>判斷是否有定義前置變數</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="code"><pre><span class="cp">#define DEBUG
-</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-<span class="cp">#ifdef DEBUG // 若有定義DEBUG
-</span>  <span class="n">printf</span><span class="p">(</span><span class="s">"測試測試</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
-<span class="cp">#else  // 若沒有定義DEBUG
-</span>  <span class="n">printf</span><span class="p">(</span><span class="s">"不是測試</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
-<span class="cp">#endif
-</span>  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>測試測試
-</code></pre></div></div>
-<h3 id="ifndef">ifndef</h3>
-<p>判斷若沒定義</p>
-
-<p>以下的程式碼功能跟pragma once一樣，只會被include一次</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="code"><pre><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="cp">#ifndef __CICI__H  // 若沒有定義CICI__H
-#define __CICI__H  // 定義它
-#include</span> <span class="cpf">"cici.h"</span><span class="c1">  // 匯入cici.h的內容</span><span class="cp">
-#endif
-</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">hi</span><span class="p">();</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello! Cici!
-</code></pre></div></div>
-
-<p>cici.h的內容如下:</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">void</span> <span class="nf">hi</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello! Cici!"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="判斷作業系統">判斷作業系統</h3>
-<p>Linux : <code class="language-plaintext highlighter-rouge">__linux__</code></p>
-
-<p>Windows : <code class="language-plaintext highlighter-rouge">_WIN32</code></p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-<span class="cp">#ifdef _WIN32  // 判斷是不是windows
-</span>  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"這是windows"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="cp">#else
-</span>  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"這不是windows"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="cp">#endif
-</span>  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>這不是windows
-</code></pre></div></div>
-
-<h3 id="不同作業系統定義型別">不同作業系統，定義型別</h3>
-
-<p>在windows中，long是4byte(32bit)，long long是8byte(64bit)</p>
-
-<p>在linux中，long是8byte(64bit)，二者的long的bit不同。</p>
-
-<p>以下範例自行定義64bit的整數型別，int64，根據判斷作業系統，採用不同的long，但型別的儲存大小都是8byte(64bit)。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-<span class="cp">#ifdef _WIN32 //判斷是不是windows
-</span>  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"這是windows"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">typedef</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">int64</span><span class="p">;</span>
-<span class="cp">#else
-</span>  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"這不是windows"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">typedef</span> <span class="kt">long</span> <span class="n">int64</span><span class="p">;</span>
-<span class="cp">#endif
-</span>  <span class="n">int64</span> <span class="n">val</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"val = "</span> <span class="o">&lt;&lt;</span> <span class="n">val</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>這不是windows
-val = 100
-</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -3517,7 +3302,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-14 18:45:40 +0800"
+        "time": "2025-07-27 10:22:33 +0800"
     },
     "basePath": "",
     "book": {

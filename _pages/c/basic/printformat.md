@@ -34,7 +34,7 @@ cout << "8/5 = " << 8/5 << endl;
 {% highlight c++ linenos %}
 char c7 = 97;
 int i1 = 25;
-long long llong1 = 150000000000;
+long long llong1 = 150000000000LL;
 cout << "97 + 25 + 150000000000 = " << c7 + i1 + llong1 << endl;
 {% endhighlight %}
 ```
@@ -69,9 +69,9 @@ i3 = 23
 unsigned int最大的值是4294967295。
 
 {% highlight c++ linenos %}
-unsigned int ui1 = 4294967295;
-unsigned int ui2 = 4294967295 + 1;
-unsigned int ui3 = 4294967295 + 2;
+unsigned int ui1 = 4294967295u;
+unsigned int ui2 = 4294967295u + 1;
+unsigned int ui3 = 4294967295u + 2;
 cout << "ui1 = " << ui1 << endl;
 cout << "ui2 = " << ui2 << endl;
 cout << "ui3 = " << ui3 << endl;
@@ -98,7 +98,6 @@ unsigned int最大的值是4294967295，若超出的二進位會被去掉。
 ```
 (資料型態)值、變數、常數、運算式
 ```
-
 
 {% highlight c++ linenos %}
 int i3 = (int)23.9999999;

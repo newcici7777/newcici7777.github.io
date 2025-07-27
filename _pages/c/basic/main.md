@@ -9,6 +9,11 @@ Prerequisites:
 ## main函式
 main()函式為程式進入點，若沒有要抓參數，可以不寫main的參數，預設參數為空，函式[傳回值預設傳0][2]。
 
+{% highlight c++ linenos %}
+int main();// 沒有參數
+int main(int argc, char* argv[]);// 有參數（命令列）
+{% endhighlight %}
+
 ### main函式的參數
 
 {% highlight c++ linenos %}

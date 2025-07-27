@@ -156,6 +156,30 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 常數 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/constant/" data-nav-link> 常數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/define/" data-nav-link> define</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/pointer/pointer2/" data-nav-link> 指標2</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/c/basic/param/" data-nav-link> 參數與引數</a>
         
@@ -192,7 +216,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/basic/include/" data-nav-link> include與define</a>
+    	<a href="/pages/c/basic/include/" data-nav-link> include</a>
         
             
         </li>
@@ -2219,7 +2243,24 @@
     	<a href="/pages/dataStruct/circular_queue/" data-nav-link> circular queue環狀佇列</a>
         
             
-        </li></ul></li></ul></li>
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> sort </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/mergesort/" data-nav-link> 合併排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/quicksort/" data-nav-link> 快速排序</a>
+        
+            
+        </li></ul></li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Android </a><ul>
@@ -3007,15 +3048,23 @@
 2
 3
 4
-5
-6
-7
-8
 </pre></td><td class="code"><pre>  <span class="c1">//char字串</span>
   <span class="c1">// \0 代表結尾</span>
   <span class="kt">char</span> <span class="n">str1</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">,</span><span class="sc">'\0'</span><span class="p">};</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str1 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">str1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">str1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="c1">//char 陣列</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+str1 長度 = 5,內容 = hello
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>  <span class="c1">//char 陣列</span>
   <span class="kt">char</span> <span class="n">arr</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'h'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">};</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr 長度 = "</span> <span class="o">&lt;&lt;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">",內容 = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr sizeof = "</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
@@ -3023,8 +3072,7 @@
 </figure>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-str1 長度 = 5,內容 = hello
-arr 長度 = 11,內容 = helloohello
+arr 長度 = 6,內容 = helloo
 arr sizeof = 6
 </code></pre></div></div>
 
@@ -3680,7 +3728,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-14 18:45:40 +0800"
+        "time": "2025-07-27 10:22:33 +0800"
     },
     "basePath": "",
     "book": {

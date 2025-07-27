@@ -156,6 +156,30 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 常數 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/constant/" data-nav-link> 常數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/define/" data-nav-link> define</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/pointer/pointer2/" data-nav-link> 指標2</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/c/basic/param/" data-nav-link> 參數與引數</a>
         
@@ -192,7 +216,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/basic/include/" data-nav-link> include與define</a>
+    	<a href="/pages/c/basic/include/" data-nav-link> include</a>
         
             
         </li>
@@ -2219,7 +2243,24 @@
                 <ul><li><a href="#初始值" data-nav-link " >初始值</a><ul><li><a href="#len" data-nav-link " >len</a></li></ul></li><li><a href="#push與tail" data-nav-link " >push與tail</a></li><li><a href="#pop與front" data-nav-link " >pop與front</a></li><li><a href="#push與公式" data-nav-link " >push與公式</a><ul><li><a href="#第1次新增" data-nav-link " >第1次新增<br /></a></li><li><a href="#tail指向陣列最後一個元素" data-nav-link " >tail指向陣列最後一個元素</a></li></ul></li><li><a href="#pop與公式" data-nav-link " >pop與公式</a></li><li><a href="#print" data-nav-link " >print</a></li><li><a href="#程式碼" data-nav-link " >程式碼</a></li></ul>
 
             
-        </li></ul></li></ul></li>
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> sort </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/mergesort/" data-nav-link> 合併排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/quicksort/" data-nav-link> 快速排序</a>
+        
+            
+        </li></ul></li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Android </a><ul>
@@ -2993,17 +3034,15 @@
                     
 
                     <h2 id="初始值">初始值</h2>
-<p>陣列的預設值都為0，陣列大小maxsize為6，陣列實際大小len為0，tail與front一開始都是0。</p>
+<p>陣列大小maxsize為6，陣列實際大小len為0，tail與front一開始都是0。</p>
 
 <h3 id="len">len</h3>
 <p>會記錄目前實際大小。</p>
 
 <h2 id="push與tail">push與tail</h2>
-<p>Queue的push，我的作法是先新增資料，然後再把tail變數往後移動一格，len + 1。<br /></p>
+<p>Queue的push，tail一開始指向0，然後新增資料，再把tail + 1，len + 1。<br /></p>
 
 <p><img src="/assets/img/java_datastruct/circular_push.gif" alt="img" /> <br /></p>
-
-<p>注意上圖，tail與len的變數，是新增了一個值，才會+1(遞增)。</p>
 
 <p>新增完索引0的值，len會變成1，tail變成1。<br />
 新增完索引1的值，len會變成2，tail變成2。<br />
@@ -3036,7 +3075,7 @@
 </figure>
 
 <h2 id="pop與front">pop與front</h2>
-<p>Queue的pop，我的作法是先把資料取出，然後再把front變數往後移動一格，len - 1。<br /></p>
+<p>Queue的pop，front一開始指向0，先把資料取出，然後再把front + 1，len - 1。<br /></p>
 
 <p><img src="/assets/img/java_datastruct/circular_pop.gif" alt="img" /></p>
 
@@ -3049,8 +3088,10 @@ push公式</p>
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
+3
 </pre></td><td class="code"><pre><span class="n">arr</span><span class="o">[</span><span class="n">tail</span><span class="o">]</span> <span class="o">=</span> <span class="n">val</span><span class="o">;</span>
 <span class="n">tail</span> <span class="o">=</span> <span class="o">(</span><span class="n">tail</span> <span class="o">+</span> <span class="mi">1</span><span class="o">)</span> <span class="o">%</span> <span class="n">maxSize</span><span class="o">;</span>
+<span class="n">len</span><span class="o">++;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -3060,7 +3101,8 @@ push公式</p>
 tail = 0<br />
 arr[tail] = 要新增的值100<br />
 tail = (0 + 1) % 6<br />
-新增完後，tail = 1 (指向索引1)<br /></p>
+新增完後，tail = 1 (指向索引1)<br />
+len = len + 1，實際大小增加1<br /></p>
 
 <p><img src="/assets/img/java_datastruct/circular_tail2.png" alt="img" /></p>
 
@@ -3070,22 +3112,24 @@ tail = (0 + 1) % 6<br />
 將以下的值代入上方push語法中<br />
 最大容量為maxLen = 6<br />
 tail = 5<br />
-arr[5] = 要新增的值 100<br />
+arr[5] = 要新增的值 30<br />
 tail = (5 + 1) % 6<br />
-新增完後，tail = 0 (指向索引0)<br /></p>
+新增完後，tail = 0 (指向索引0)<br />
+len = 2<br />
+len = 2 + 1，實際大小變成3。<br /></p>
 
 <p><img src="/assets/img/java_datastruct/circular_tail4.png" alt="img" /></p>
 
 <h2 id="pop與公式">pop與公式</h2>
-<p>初始值 front = 0<br /></p>
-
 <p>pop語法</p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
+3
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">rtn</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">front</span><span class="o">];</span>
 <span class="n">front</span> <span class="o">=</span> <span class="o">(</span><span class="n">front</span> <span class="o">+</span> <span class="mi">1</span><span class="o">)</span> <span class="o">%</span> <span class="n">maxSize</span><span class="o">;</span>
+<span class="n">len</span><span class="o">--;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -3093,10 +3137,11 @@ tail = (5 + 1) % 6<br />
 
 <p>將以下的值代入上方push語法中<br />
 最大容量為maxLen = 6<br />
-front = 3
+front = 3<br />
 先把資料取出arr[front = 3]<br />
 然後再把front變數往後移動一格，front = (3 + 1) % 6<br />
-新增完後，front = 4 (指向索引4)<br /></p>
+front = 4 (指向索引4)<br />
+len = 3 - 1，實際大小變成2<br /></p>
 
 <p><img src="/assets/img/java_datastruct/circular_front2.png" alt="img" /></p>
 
@@ -3109,7 +3154,8 @@ front = 3
 front = 5
 先把資料取出arr[front = 5]<br />
 然後再把front變數往後移動一格，front = (5 + 1) % 6<br />
-新增完後，front = 0 (指向索引0)<br /></p>
+front = 0 (指向索引0)<br />
+len = 1 - 1，實際大小變成0<br /></p>
 
 <p><img src="/assets/img/java_datastruct/circular_front4.png" alt="img" /></p>
 
@@ -3251,7 +3297,7 @@ front = 5
     <span class="n">len</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
   <span class="o">}</span>
   <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isFull</span><span class="o">()</span> <span class="o">{</span>
-    <span class="k">if</span> <span class="o">(</span><span class="n">len</span> <span class="o">&gt;=</span> <span class="n">maxSize</span><span class="o">)</span> <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">len</span> <span class="o">==</span> <span class="n">maxSize</span><span class="o">)</span> <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
     <span class="k">return</span> <span class="kc">false</span><span class="o">;</span> <span class="c1">// len &lt; maxSize</span>
   <span class="o">}</span>
   <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isEmpty</span><span class="o">()</span> <span class="o">{</span>
@@ -3359,7 +3405,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/android/android_thread" class="navigation navigation-next navigation-unique" aria-label="Next page: Main Thread">
+                        <a href="/pages/dataStruct/mergesort" class="navigation navigation-next navigation-unique" aria-label="Next page: 合併排序">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3375,6 +3421,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "chromecast相關",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/note/chromecast.md",
+            "ref": "_pages/note/chromecast.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -3470,7 +3525,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-14 18:45:40 +0800"
+        "time": "2025-07-27 10:22:33 +0800"
     },
     "basePath": "",
     "book": {
