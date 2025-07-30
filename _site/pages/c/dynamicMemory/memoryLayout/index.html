@@ -170,13 +170,6 @@
     	<a href="/pages/c/basic/define/" data-nav-link> define</a>
         
             
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/c/pointer/pointer2/" data-nav-link> 指標2</a>
-        
-            
         </li></ul></li>
 	
 	
@@ -3210,7 +3203,12 @@
 </figure>
 
 <h3 id="stack">Stack</h3>
+<p>Prerequisites:</p>
+
 <ul>
+  <li>
+    <p><a href="/pages/c/pointer/pointer/#堆疊區域變數">堆疊區域變數</a></p>
+  </li>
   <li>儲存在Stack的變數，變數離開有效範圍(Scope)後，會由系統自動回收記憶體位址。</li>
   <li>Stack記憶體容量8M。</li>
   <li>記憶體位址向下成長。</li>
@@ -3232,17 +3230,17 @@
   <span class="kt">int</span> <span class="n">var1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
   <span class="kt">int</span> <span class="n">var2</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
   <span class="kt">int</span> <span class="n">var3</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"va1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">var1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"va2 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">var2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"va3 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">var3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"var1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">var1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"var2 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">var2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"var3 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">var3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-va1 = 140702053822444
-va2 = 140702053822440
-va3 = 140702053822436
+var1 = 140702053822444
+var2 = 140702053822440
+var3 = 140702053822436
 </code></pre></div></div>
 
 <h3 id="heap">Heap</h3>
@@ -3298,6 +3296,7 @@ p3 address = 105553116315696
 <h3 id="尚未使用區域">尚未使用區域</h3>
 
 <p>變數在Stack記憶體區塊，位址增長的方向是向下，變數在Heap記憶體區塊，位址增長的方向是向上，未避免Stack與Heap的記憶體位址成長時互相交疊，中間有一個區域是分隔Stack與Heap。</p>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3488,7 +3487,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-27 10:22:33 +0800"
+        "time": "2025-07-30 14:50:05 +0800"
     },
     "basePath": "",
     "book": {

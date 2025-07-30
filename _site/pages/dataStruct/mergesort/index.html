@@ -170,13 +170,6 @@
     	<a href="/pages/c/basic/define/" data-nav-link> define</a>
         
             
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/c/pointer/pointer2/" data-nav-link> 指標2</a>
-        
-            
         </li></ul></li>
 	
 	
@@ -2250,7 +2243,7 @@
     	<a href="/pages/dataStruct/mergesort/" data-nav-link> 合併排序</a>
         
             
-                <ul><li><a href="#切割" data-nav-link " >切割</a></li><li><a href="#完整程式碼" data-nav-link " >完整程式碼</a></li></ul>
+                <ul><li><a href="#切割" data-nav-link " >切割</a><ul><li><a href="#離開遞迴的條件" data-nav-link " >離開遞迴的條件</a></li><li><a href="#leftrightmid" data-nav-link " >left,right,mid</a></li></ul></li><li><a href="#左半邊切割" data-nav-link " >左半邊切割</a><ul><li><a href="#左半邊切割1" data-nav-link " >左半邊切割1</a></li><li><a href="#左半邊切割2" data-nav-link " >左半邊切割2</a></li><li><a href="#左半邊切割3" data-nav-link " >左半邊切割3</a></li><li><a href="#左半邊切割4-1" data-nav-link " >左半邊切割4-1</a></li><li><a href="#左半邊切割4-2" data-nav-link " >左半邊切割4-2</a></li></ul></li><li><a href="#左半邊合併" data-nav-link " >左半邊合併</a><ul><li><a href="#返回左半邊切割3" data-nav-link " >返回左半邊切割3</a></li><li><a href="#返回左半邊切割2" data-nav-link " >返回左半邊切割2</a></li></ul></li><li><a href="#右半邊切割" data-nav-link " >右半邊切割</a><ul><li><a href="#右半邊切割1" data-nav-link " >右半邊切割1</a></li><li><a href="#右半邊切割2" data-nav-link " >右半邊切割2</a></li><li><a href="#右半邊切割3" data-nav-link " >右半邊切割3</a></li><li><a href="#右半邊切割4-1" data-nav-link " >右半邊切割4-1</a></li><li><a href="#右半邊切割4-2" data-nav-link " >右半邊切割4-2</a></li></ul></li><li><a href="#右半邊合併" data-nav-link " >右半邊合併</a><ul><li><a href="#返回右半邊切割3" data-nav-link " >返回右半邊切割3</a></li><li><a href="#返回右半邊切割2" data-nav-link " >返回右半邊切割2</a></li></ul></li><li><a href="#左右邊合併" data-nav-link " >左右邊合併</a></li><li><a href="#合併程式碼解釋" data-nav-link " >合併程式碼解釋</a></li><li><a href="#完整程式碼" data-nav-link " >完整程式碼</a></li></ul>
 
             
         </li>
@@ -3046,6 +3039,317 @@
 </ol>
 
 <h2 id="切割">切割</h2>
+<h3 id="離開遞迴的條件">離開遞迴的條件</h3>
+<p>把陣列切割到只剩下1個元素，也就是left與right都是相同的，就離開遞迴，也就是return。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">if</span> <span class="o">(</span><span class="n">left</span> <span class="o">==</span> <span class="n">right</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">return</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="leftrightmid">left,right,mid</h3>
+<p>left是最左邊的索引0。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>654321
+↑
+left
+</code></pre></div></div>
+
+<p>right是最右邊的索引5。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>654321
+     ↑
+     right
+</code></pre></div></div>
+
+<p>mid中間值是(left + right) / 2 = (0 + 5) / 2<br />
+整數相除，無條件捨去小數點，只留下整數，不會四捨五入。<br />
+mid = 2<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>654321
+  ↑
+ mid
+</code></pre></div></div>
+
+<h2 id="左半邊切割">左半邊切割</h2>
+<h3 id="左半邊切割1">左半邊切割1</h3>
+<p>切割左半邊與右半邊。<br />
+左半邊:left ~ mid  0 ~ 2<br />
+右半邊:mid + 1 ~ right  3 ~ 5<br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>654    321
+  ↑    ↑
+mid  mid+1
+</code></pre></div></div>
+
+<h3 id="左半邊切割2">左半邊切割2</h3>
+<p>繼續切割<br />
+mid中間值是(left + right) / 2 = (0 + 2) / 2 = 1<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>654
+ ↑
+mid
+</code></pre></div></div>
+
+<p>切割左半邊與右半邊。<br />
+左半邊:left ~ mid  0 ~ 1<br />
+右半邊:mid + 1 ~ right  2 ~ 2<br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>65   4
+ ↑   ↑
+mid  mid+1
+</code></pre></div></div>
+
+<h3 id="左半邊切割3">左半邊切割3</h3>
+<p>left與right還不是同一個，還沒切割到一個元素，繼續切割。<br />
+mid中間值是(left + right) / 2 = (0 + 1) / 2 = 0<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>65
+↑
+mid
+</code></pre></div></div>
+<p>切割左半邊與右半邊。<br />
+左半邊:left ~ mid  0 ~ 0<br />
+右半邊:mid + 1 ~ right  1 ~ 1<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>6    5
+↑    ↑
+mid  mid+1
+</code></pre></div></div>
+
+<h3 id="左半邊切割4-1">左半邊切割4-1</h3>
+<p>切到只剩下一個元素，離開目前方法，返回到切割3的方法。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>6
+</code></pre></div></div>
+
+<h3 id="左半邊切割4-2">左半邊切割4-2</h3>
+<p>切到只剩下一個元素，離開目前方法，返回到切割3的方法。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5
+</code></pre></div></div>
+
+<h4 id="切割過程">切割過程</h4>
+<p><img src="/assets/img/dataStruct/mergeSort1.jpg" alt="img" /></p>
+
+<h2 id="左半邊合併">左半邊合併</h2>
+<h3 id="返回左半邊切割3">返回左半邊切割3</h3>
+<p>當切到只剩一個元素，就返回到切割前的方法，回到切割3的步驟。<br />
+此時，left與mid都是0，mid+1與right都是1。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>6          5
+↑          ↑
+left,mid   mid+1,right
+</code></pre></div></div>
+<p>比較6與5看誰比較大，比較小的放入copyarr陣列。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[5]
+</code></pre></div></div>
+
+<p>右半邊已經比完了，把左半邊全部放入copyarr陣列。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[5,6]
+</code></pre></div></div>
+
+<p>把copyarr的值拷貝到原本的陣列，目前left是0。<br />
+原本的陣列:<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>654321
+</code></pre></div></div>
+<p>把copyarr陣列<code class="language-plaintext highlighter-rouge">[5,6]</code>覆蓋到索引0與索引1的位置。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>564321
+</code></pre></div></div>
+
+<h3 id="返回左半邊切割2">返回左半邊切割2</h3>
+<p>因陣列的值已經在切割3修改，所以左半邊是56。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>left right
+↓    ↓
+56   4
+ ↑   ↑
+mid  mid+1
+</code></pre></div></div>
+
+<p>比較左半邊的left = 5與右半邊mid+1 = 4看誰比較大，比較小的放入copyarr陣列。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[4]
+</code></pre></div></div>
+
+<p>右半邊已經比完了，把左半邊全部放入copyarr陣列。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[4,5,6]
+</code></pre></div></div>
+
+<p>把copyarr的值拷貝到原本的陣列，目前left是0。<br />
+原本的陣列:<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>564321
+</code></pre></div></div>
+<p>把copyarr陣列<code class="language-plaintext highlighter-rouge">[4,5,6]</code>覆蓋到索引0到索引2的位置。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>456321
+</code></pre></div></div>
+
+<p>此時左半邊都排好了，輪右半邊。</p>
+
+<h2 id="右半邊切割">右半邊切割</h2>
+<h3 id="右半邊切割1">右半邊切割1</h3>
+<p>切割左半邊與右半邊。<br />
+左半邊:left ~ mid  0 ~ 2<br />
+右半邊:mid + 1 ~ right  3 ~ 5<br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>654    321
+  ↑    ↑
+mid  mid+1
+</code></pre></div></div>
+
+<h3 id="右半邊切割2">右半邊切割2</h3>
+<p>繼續切割<br />
+mid中間值是(left + right) / 2 = (3 + 5) / 2 = 4<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>left=3
+↓
+321
+ ↑
+mid=4
+</code></pre></div></div>
+
+<p>切割左半邊與右半邊。<br />
+左半邊:left ~ mid  3 ~ 4<br />
+右半邊:mid + 1 ~ right  5 ~ 5<br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>32   1
+ ↑   ↑
+mid  mid+1
+</code></pre></div></div>
+
+<h3 id="右半邊切割3">右半邊切割3</h3>
+<p>left與right還不是同一個，還沒切割到一個元素，繼續切割。<br />
+mid中間值是(left + right) / 2 = (3 + 4) / 2 = 0<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LR
+↓↓
+32
+↑
+mid
+</code></pre></div></div>
+<p>切割左半邊與右半邊。<br />
+左半邊:left ~ mid  3 ~ 3<br />
+右半邊:mid + 1 ~ right  4 ~ 4<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3    2
+↑    ↑
+mid  mid+1
+</code></pre></div></div>
+
+<h3 id="右半邊切割4-1">右半邊切割4-1</h3>
+<p>切到只剩下一個元素，離開目前方法，返回到切割3的方法。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3
+</code></pre></div></div>
+
+<h3 id="右半邊切割4-2">右半邊切割4-2</h3>
+<p>切到只剩下一個元素，離開目前方法，返回到切割3的方法。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+</code></pre></div></div>
+
+<h2 id="右半邊合併">右半邊合併</h2>
+<h3 id="返回右半邊切割3">返回右半邊切割3</h3>
+<p>當切到只剩一個元素，就返回到切割前的方法，回到切割3的步驟。<br />
+此時，left與mid都是0，mid+1與right都是1。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3          2
+↑          ↑
+left,mid   mid+1,right
+</code></pre></div></div>
+<p>比較3與2看誰比較大，比較小的放入copyarr陣列。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[2]
+</code></pre></div></div>
+
+<p>右半邊已經比完了，把左半邊全部放入copyarr陣列。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[2,3]
+</code></pre></div></div>
+
+<p>把copyarr的值拷貝到原本的陣列，目前left是3。<br />
+原本的陣列:<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>456321
+</code></pre></div></div>
+<p>把copyarr陣列<code class="language-plaintext highlighter-rouge">[2,3]</code>覆蓋到索引3與索引4的位置。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>456231
+</code></pre></div></div>
+
+<h3 id="返回右半邊切割2">返回右半邊切割2</h3>
+<p>因陣列的值已經在切割3修改，所以右半邊是231。<br />
+left索引是3，mid是4，mid+1是5，right索引是5。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>left 
+↓    
+23   1
+ ↑   ↑
+mid  mid+1
+</code></pre></div></div>
+
+<p>比較左半邊的left的值 = 2與右半邊mid+1的值 = 1看誰比較小，比較小的放入copyarr陣列。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1]
+</code></pre></div></div>
+
+<p>右半邊已經比完了，把左半邊全部放入copyarr陣列。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1,2,3]
+</code></pre></div></div>
+
+<p>把copyarr的值拷貝到原本的陣列，目前left索引是3。<br />
+原本的陣列:<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>456231
+</code></pre></div></div>
+<p>把copyarr陣列<code class="language-plaintext highlighter-rouge">[1,2,3]</code>覆蓋到索引3到索引5的位置。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>456123
+</code></pre></div></div>
+
+<h2 id="左右邊合併">左右邊合併</h2>
+<p>left是索引0，mid是索引2，mid+1是索引3，right是索引5。<br />
+i變數放的是left索引，j變數放的是mid+1。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i      j
+↓      ↓
+456    123
+  ↑    ↑
+ mid  mid+1
+</code></pre></div></div>
+
+<p>比較左半邊的<code class="language-plaintext highlighter-rouge">arr[i] = 4</code>與右半邊<code class="language-plaintext highlighter-rouge">arr[j] = 1</code>看誰比較小，1比較小的放入copyarr陣列，j++。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1]
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i       j
+↓       ↓
+456    123
+</code></pre></div></div>
+
+<p>比較左半邊的<code class="language-plaintext highlighter-rouge">arr[i] = 4</code>與右半邊<code class="language-plaintext highlighter-rouge">arr[j] = 2</code>看誰比較小，2比較小的放入copyarr陣列，j++。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1,2]
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i        j
+↓        ↓
+456    123
+</code></pre></div></div>
+
+<p>比較左半邊的<code class="language-plaintext highlighter-rouge">arr[i] = 4</code>與右半邊<code class="language-plaintext highlighter-rouge">arr[j] = 3</code>看誰比較小，3比較小的放入copyarr陣列，j++。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1,2,3]
+</code></pre></div></div>
+
+<p>右邊已經全比完了，左邊直接全部放進陣列中。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1,2,3,4,5,6]
+</code></pre></div></div>
+
+<p>把copyarr的值拷貝到原本的陣列，目前left索引是0。<br />
+原本的陣列:<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>456123
+</code></pre></div></div>
+<p>把copyarr陣列<code class="language-plaintext highlighter-rouge">[1,2,3,4,5,6]</code>覆蓋到索引0到索引5的位置。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>123456
+</code></pre></div></div>
+
+<h2 id="合併程式碼解釋">合併程式碼解釋</h2>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">t</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>  <span class="c1">// 把比較大小的值放入臨時陣列copyarr，記錄copyarr的索引</span>
+<span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">left</span><span class="o">;</span>  <span class="c1">// 左半邊的開頭</span>
+<span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>  <span class="c1">// 右半邊的開頭</span>
+<span class="c1">// 左半邊的範圍left 到 mid， i設成左半邊的開頭left ，持續向後移動到 等於== mid</span>
+<span class="c1">// 右半邊的範圍mid+1 到 right, j設成右半邊的開頭mid +1，持續向後移動到 等於== right</span>
+<span class="k">while</span> <span class="o">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">mid</span> <span class="o">&amp;&amp;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="o">)</span> <span class="o">{</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 <h2 id="完整程式碼">完整程式碼</h2>
 
@@ -3100,33 +3404,55 @@
 48
 49
 50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MergeSort</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 產生5個亂數</span>
     <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>
     <span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">len</span><span class="o">];</span>
     <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
       <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span> <span class="o">(</span><span class="nc">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()</span> <span class="o">*</span> <span class="mi">100</span><span class="o">);</span>
     <span class="o">}</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"排序前:"</span> <span class="o">+</span> <span class="nc">Arrays</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">arr</span><span class="o">));</span>
+    
+    <span class="c1">// 可以放置排序好的值的臨時陣列</span>
     <span class="kt">int</span><span class="o">[]</span> <span class="n">copyarr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">];</span>
+    <span class="c1">// 切割</span>
     <span class="n">cut</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="o">,</span> <span class="n">copyarr</span><span class="o">);</span>
     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"排序後:"</span> <span class="o">+</span> <span class="nc">Arrays</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">arr</span><span class="o">));</span>
   <span class="o">}</span>
 
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">cut</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">,</span> <span class="kt">int</span> <span class="n">left</span><span class="o">,</span> <span class="kt">int</span> <span class="n">right</span><span class="o">,</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">copyarr</span><span class="o">)</span> <span class="o">{</span>
-    <span class="k">if</span> <span class="o">(</span><span class="n">left</span> <span class="o">&gt;=</span> <span class="n">right</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 相同代表切割到只剩下一個</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">left</span> <span class="o">==</span> <span class="n">right</span><span class="o">)</span> <span class="o">{</span>
       <span class="k">return</span><span class="o">;</span>
     <span class="o">}</span>
+    <span class="c1">// 取得中間值</span>
     <span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="o">(</span><span class="n">left</span> <span class="o">+</span> <span class="n">right</span><span class="o">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span>
+    <span class="c1">// 切成左半邊(包含中間值)</span>
     <span class="n">cut</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="n">left</span><span class="o">,</span> <span class="n">mid</span><span class="o">,</span> <span class="n">copyarr</span><span class="o">);</span>
+    <span class="c1">// 切成右半邊，中間值+1之後都是右半邊</span>
     <span class="n">cut</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="o">,</span> <span class="n">right</span><span class="o">,</span> <span class="n">copyarr</span><span class="o">);</span>
+    <span class="c1">// 合併</span>
     <span class="n">merge</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="n">left</span><span class="o">,</span> <span class="n">right</span><span class="o">,</span> <span class="n">mid</span><span class="o">,</span> <span class="n">copyarr</span><span class="o">);</span>
   <span class="o">}</span>
 
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">merge</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">,</span> <span class="kt">int</span> <span class="n">left</span><span class="o">,</span> <span class="kt">int</span> <span class="n">right</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mid</span><span class="o">,</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">copyarr</span><span class="o">)</span> <span class="o">{</span>
-    <span class="kt">int</span> <span class="n">t</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">left</span><span class="o">;</span>
-    <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">t</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>  <span class="c1">// 把比較大小的值放入臨時陣列copyarr，記錄copyarr的索引</span>
+    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">left</span><span class="o">;</span>  <span class="c1">// 左半邊的開頭</span>
+    <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>  <span class="c1">// 右半邊的開頭</span>
+    <span class="c1">// 左半邊的範圍left 到 mid， i設成左半邊的開頭left ，持續向後移動到 等於== mid</span>
+    <span class="c1">// 右半邊的範圍mid+1 到 right, j設成右半邊的開頭mid +1，持續向後移動到 等於== right</span>
     <span class="k">while</span> <span class="o">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">mid</span> <span class="o">&amp;&amp;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="o">)</span> <span class="o">{</span>
       <span class="k">if</span> <span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">])</span> <span class="o">{</span>
         <span class="n">copyarr</span><span class="o">[</span><span class="n">t</span><span class="o">++]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
@@ -3343,7 +3669,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-27 10:22:33 +0800"
+        "time": "2025-07-30 14:50:05 +0800"
     },
     "basePath": "",
     "book": {

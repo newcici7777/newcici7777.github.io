@@ -159,6 +159,10 @@ int main() {
 {% endhighlight %}
 
 ### Stack
+Prerequisites:
+
+- [堆疊區域變數][1]
+
 * 儲存在Stack的變數，變數離開有效範圍(Scope)後，會由系統自動回收記憶體位址。
 * Stack記憶體容量8M。
 * 記憶體位址向下成長。
@@ -171,16 +175,16 @@ void funcMemoryLocation() {
   int var1 = 10;
   int var2 = 20;
   int var3 = 30;
-  cout << "va1 = " << (long long)&var1 << endl;
-  cout << "va2 = " << (long long)&var2 << endl;
-  cout << "va3 = " << (long long)&var3 << endl;
+  cout << "var1 = " << (long long)&var1 << endl;
+  cout << "var2 = " << (long long)&var2 << endl;
+  cout << "var3 = " << (long long)&var3 << endl;
 }
 {% endhighlight %}
 ```
 執行結果
-va1 = 140702053822444
-va2 = 140702053822440
-va3 = 140702053822436
+var1 = 140702053822444
+var2 = 140702053822440
+var3 = 140702053822436
 ```
 
 ### Heap
@@ -217,3 +221,5 @@ p3 address = 105553116315696
 ### 尚未使用區域
 
 變數在Stack記憶體區塊，位址增長的方向是向下，變數在Heap記憶體區塊，位址增長的方向是向上，未避免Stack與Heap的記憶體位址成長時互相交疊，中間有一個區域是分隔Stack與Heap。
+
+[1]: {% link _pages/c/pointer/pointer.md %}#堆疊區域變數

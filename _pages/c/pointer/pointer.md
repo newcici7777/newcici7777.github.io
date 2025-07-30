@@ -36,7 +36,16 @@ int資料型態變數i，占用記憶體4 byte，變數i占的開始位址0x0000
 </table>
 
 ### 堆疊區域變數
-以下宣告a與b變數，
+Stack堆疊，以下的程式碼，a變數先push到Stack中，接著b變數再push到Stack中，然後b變數再pop出來，從0x7ff7bfeff460位址「開始」建立記憶體空間，double是8byte的記憶體空間大小，所以結束位址是0x7ff7bfeff467。<br>
+
+接著a變數pop出來，從0x7ff7bfeff468位址「開始」建立記憶體空間，int是4byte的記憶體大小，所以結束位址是0x7ff7bfeff46B。<br>
+
+- 區域變數先定義 → 比較高的位址
+- 區域變數後定義 → 比較低的位址
+
+![img]({{site.imgurl}}/pointer/stack_var1.png)
+
+以下宣告a與b變數。
 {% highlight c++ linenos %}
 int main() {
   int a = 0;
@@ -53,20 +62,19 @@ int main() {
 ```
 
 |記憶體位址|占用記憶體範圍|
-|:-------------|:--------|
+|:-------------|:--------:|
 |0x7ff7bfeff46B|a結束|
-|0x7ff7bfeff46A|a|
-|0x7ff7bfeff469|a|
+|0x7ff7bfeff46A|↑|
+|0x7ff7bfeff469|↑|
 |0x7ff7bfeff468|a開始|
 |0x7ff7bfeff467|b結束|
-|0x7ff7bfeff466|b|
-|0x7ff7bfeff465|b|
-|0x7ff7bfeff464|b|
-|0x7ff7bfeff463|b|
-|0x7ff7bfeff462|b|
-|0x7ff7bfeff461|b|
+|0x7ff7bfeff466|↑|
+|0x7ff7bfeff465|↑|
+|0x7ff7bfeff464|↑|
+|0x7ff7bfeff463|↑|
+|0x7ff7bfeff462|↑|
+|0x7ff7bfeff461|↑|
 |0x7ff7bfeff460|b開始|
-
 
 以下程式碼在函式中建立三個整數變數，並觀察三個變數的記憶體位址是由大至小遞減，並且記憶體位址都是以4byte(整數占4 byte記憶體空間)遞減，證明stack變數，記憶體位址是由大至小成長。
 {% highlight c++ linenos %}
@@ -76,32 +84,32 @@ void funcMemoryLocation() {
   int var3 = 30;
 
   //印出記憶體位址
-  cout << "va1 = " << (long long)&var1 << endl;  
-  cout << "va2 = " << (long long)&var2 << endl;
-  cout << "va3 = " << (long long)&var3 << endl;
+  cout << "var1 = " << (long long)&var1 << endl;  
+  cout << "var2 = " << (long long)&var2 << endl;
+  cout << "var3 = " << (long long)&var3 << endl;
 }
 {% endhighlight %}
 ```
 執行結果
-va1 = 140702053822444
-va2 = 140702053822440
-va3 = 140702053822436
+var1 = 140702053822444
+var2 = 140702053822440
+var3 = 140702053822436
 ```
 
 |記憶體位址|占用記憶體範圍|
-|:-------------|:--------|
-|0x7ff7bfeff46B|a結束|
-|0x7ff7bfeff46A|a|
-|0x7ff7bfeff469|a|
-|0x7ff7bfeff468|a開始|
-|0x7ff7bfeff467|b結束|
-|0x7ff7bfeff466|b|
-|0x7ff7bfeff465|b|
-|0x7ff7bfeff464|b|
-|0x7ff7bfeff463|b|
-|0x7ff7bfeff462|b|
-|0x7ff7bfeff461|b|
-|0x7ff7bfeff460|b開始|
+|:-------------|:--------:|
+|140702053822447|var1結束|
+|140702053822446|↑|
+|140702053822445|↑|
+|140702053822444|var1開始|
+|140702053822443|var2結束|
+|140702053822442|↑|
+|140702053822441|↑|
+|140702053822440|var2開始|
+|140702053822439|var3結束|
+|140702053822438|↑|
+|140702053822437|↑|
+|140702053822436|var3開始|
 
 ### 取位址運算子
 使用`&`「取位址」運算子放在i變數前，可以取出i變數的記憶體位址，取出的位址是「開始」位址0x00000008。
@@ -216,10 +224,10 @@ i的位址 = 0x00000008
 p變數的值 = 0x00000008
 ```
 ### 指標指向其它位址
-{% highlight c++ linenos %}
+```
 變數名 = 其它記憶體位址
 p = &a;
-{% endhighlight %}
+```
 
 再印出p，就會顯示p變數儲存的值，已改變成其它記憶體位址。
 

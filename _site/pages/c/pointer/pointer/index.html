@@ -170,13 +170,6 @@
     	<a href="/pages/c/basic/define/" data-nav-link> define</a>
         
             
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/c/pointer/pointer2/" data-nav-link> 指標2</a>
-        
-            
         </li></ul></li>
 	
 	
@@ -274,7 +267,7 @@
     	<a href="/pages/c/pointer/pointer/" data-nav-link> 指標基本觀念</a>
         
             
-                <ul><li><a href="#變數位址" data-nav-link " >變數位址</a><ul><li><a href="#變數占用的記憶體大小根據變數的資料型態決定" data-nav-link " >變數占用的記憶體大小，根據變數的資料型態決定。</a></li></ul></li><li><a href="#取出變數的開始記憶體位址" data-nav-link " >取出變數的<code class="language-plaintext highlighter-rouge">開始記憶體位址</code></a><ul><li><a href="#取位址運算子" data-nav-link " >取位址運算子&amp;</a></li></ul></li><li><a href="#指標是一種變數存放的內容是位址" data-nav-link " >指標是一種變數，存放的內容是位址。</a></li><li><a href="#指標的大小8byte" data-nav-link " >指標的大小8byte</a></li><li><a href="#位址放入指標變數" data-nav-link " >位址放入指標變數</a></li><li><a href="#宣告指標的各種寫法" data-nav-link " >宣告指標的各種寫法</a><ul><li><a href="#一行宣告一個指標" data-nav-link " >一行宣告一個指標</a></li><li><a href="#一行同時宣告多個指標" data-nav-link " >一行同時宣告多個指標</a></li><li><a href="#一行同時宣告指標與整數變數容易搞混淆的宣告" data-nav-link " >一行同時宣告指標與整數變數(容易搞混淆的宣告)</a></li></ul></li><li><a href="#取值運算子" data-nav-link " >取值運算子*</a></li><li><a href="#修改位址存放的值" data-nav-link " >修改位址存放的值*</a></li><li><a href="#指標資料型態要與值一致" data-nav-link " >指標資料型態要與值一致</a></li><li><a href="#印出位址" data-nav-link " >印出位址</a><ul><li><a href="#十六進制" data-nav-link " >十六進制</a></li><li><a href="#十進制" data-nav-link " >十進制</a></li><li><a href="#c語言" data-nav-link " >c語言</a></li><li><a href="#程式碼範例如下" data-nav-link " >程式碼範例如下:</a></li></ul></li><li><a href="#指標資料型態" data-nav-link " >指標資料型態</a></li></ul>
+                <ul><li><a href="#變數記憶體位址" data-nav-link " >變數記憶體位址</a><ul><li><a href="#i變數memory-layout" data-nav-link " >i變數memory layout</a></li><li><a href="#堆疊區域變數" data-nav-link " >堆疊區域變數</a></li><li><a href="#取位址運算子" data-nav-link " >取位址運算子</a></li></ul></li><li><a href="#指標類型" data-nav-link " >指標類型</a></li><li><a href="#指標類型與基本型態要對映" data-nav-link " >指標類型與基本型態要對映</a><ul><li><a href="#指標大小" data-nav-link " >指標大小</a></li><li><a href="#指標占用記憶體位址範圍與存放的值" data-nav-link " >指標占用記憶體位址範圍與存放的值</a></li><li><a href="#pointer-memory-layout" data-nav-link " >pointer memory layout</a></li><li><a href="#指標類型的變數" data-nav-link " >指標類型的變數</a></li><li><a href="#指標指向其它位址" data-nav-link " >指標指向其它位址</a></li><li><a href="#指標類型的變數位址" data-nav-link " >指標類型的變數位址</a></li><li><a href="#-取值運算子" data-nav-link " >* 取值運算子</a></li><li><a href="#-修改記憶體中的值" data-nav-link " >* 修改記憶體中的值</a></li><li><a href="#程式碼" data-nav-link " >程式碼</a></li></ul></li><li><a href="#宣告指標的各種寫法" data-nav-link " >宣告指標的各種寫法</a><ul><li><a href="#一行宣告一個指標" data-nav-link " >一行宣告一個指標</a></li><li><a href="#一行同時宣告多個指標" data-nav-link " >一行同時宣告多個指標</a></li><li><a href="#一行同時宣告指標與整數變數容易搞混淆的宣告" data-nav-link " >一行同時宣告指標與整數變數(容易搞混淆的宣告)</a></li></ul></li><li><a href="#取值運算子" data-nav-link " >取值運算子*</a></li><li><a href="#修改位址存放的值" data-nav-link " >修改位址存放的值*</a></li><li><a href="#指標資料型態要與值一致" data-nav-link " >指標資料型態要與值一致</a></li><li><a href="#印出位址" data-nav-link " >印出位址</a><ul><li><a href="#c的方式" data-nav-link " >C的方式</a></li><li><a href="#十六進制" data-nav-link " >十六進制</a></li><li><a href="#十進制" data-nav-link " >十進制</a></li><li><a href="#程式碼範例如下" data-nav-link " >程式碼範例如下:</a></li></ul></li><li><a href="#指標資料型態" data-nav-link " >指標資料型態</a></li></ul>
 
             
         </li>
@@ -3033,45 +3026,55 @@
                         <h1 id="/pages/c/pointer/pointer">指標基本觀念</h1>
                     
 
-                    <h2 id="變數位址">變數位址</h2>
-
+                    <h2 id="變數記憶體位址">變數記憶體位址</h2>
 <p>每個變數系統會分配”一塊”記憶體位址存放變數，位址通常是用16進制表示。</p>
 
-<h3 id="變數占用的記憶體大小根據變數的資料型態決定">變數占用的記憶體大小，根據變數的資料型態決定。</h3>
+<p>以下為宣告一個i的整數變數，初始值為55。</p>
 
-<p>假設有一個int資料型態的變數i，占用記憶體4 byte，變數i占的開始位址0x00000008至結束位址0x0000000B，總共占4Byte。</p>
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int i = 55;
-</code></pre></div></div>
+<p>int資料型態變數i，占用記憶體4 byte，變數i占的開始位址0x00000008至結束位址0x0000000B，總共占4Byte。<br /></p>
+
+<h3 id="i變數memory-layout">i變數memory layout</h3>
 
 <table class="custom-table">
-	<tr><th width="10%">記憶體開始與結束</th><th width="45%">記憶體位址</th><th width="45%">占用記憶體位址範圍</th></tr>
-	<tr><td>結束</td><td>0xFFFFFFFF</td><td rowspan="5"></td></tr>
-	<tr><td rowspan="15">&#8593;</td><td>......</td></tr>
-	<tr><td>0x0000000E</td></tr>
-	<tr><td>0x0000000D</td></tr>
-	<tr><td>0x0000000C</td></tr>
-	<tr><td>0x0000000B</td><td rowspan="4">int i = 55;</td></tr>
-	<tr><td>0x0000000A</td></tr>
-	<tr><td>0x00000009</td></tr>
-	<tr><td>0x00000008</td></tr>
-	<tr><td>0x00000007</td><td rowspan="8"></td></tr>
-	<tr><td>0x00000006</td></tr>
-	<tr><td>0x00000005</td></tr>
-	<tr><td>0x00000004</td></tr>
-	<tr><td>0x00000003</td></tr>
-	<tr><td>0x00000002</td></tr>
-	<tr><td>0x00000001</td></tr>
-	<tr><td>開始</td><td>0x00000000</td></tr>
+  <tr><th width="10%">記憶體開始與結束</th><th width="45%">記憶體位址</th><th width="45%">占用記憶體位址範圍</th></tr>
+  <tr><td>結束</td><td>0xFFFFFFFF</td><td rowspan="5"></td></tr>
+  <tr><td rowspan="15">&#8593;</td><td>......</td></tr>
+  <tr><td>0x0000000E</td></tr>
+  <tr><td>0x0000000D</td></tr>
+  <tr><td>0x0000000C</td></tr>
+  <tr><td>0x0000000B</td><td bgcolor="#FFDD55">i變數記憶體位址結束</td></tr>
+  <tr><td>0x0000000A</td><td rowspan="2" bgcolor="#FFDD55">i = 55;</td></tr>
+  <tr><td>0x00000009</td></tr>
+  <tr><td>0x00000008</td><td bgcolor="#FFDD55">i變數記憶體位址開始</td></tr>
+  <tr><td>0x00000007</td><td rowspan="8"></td></tr>
+  <tr><td>0x00000006</td></tr>
+  <tr><td>0x00000005</td></tr>
+  <tr><td>0x00000004</td></tr>
+  <tr><td>0x00000003</td></tr>
+  <tr><td>0x00000002</td></tr>
+  <tr><td>0x00000001</td></tr>
+  <tr><td>開始</td><td>0x00000000</td></tr>
 </table>
 
-<h2 id="取出變數的開始記憶體位址">取出變數的<code class="language-plaintext highlighter-rouge">開始記憶體位址</code></h2>
+<h3 id="堆疊區域變數">堆疊區域變數</h3>
+<p>Stack堆疊，以下的程式碼，a變數先push到Stack中，接著b變數再push到Stack中，然後b變數再pop出來，從0x7ff7bfeff460位址「開始」建立記憶體空間，double是8byte的記憶體空間大小，所以結束位址是0x7ff7bfeff467。<br /></p>
 
-<h3 id="取位址運算子">取位址運算子&amp;</h3>
+<p>接著a變數pop出來，從0x7ff7bfeff468位址「開始」建立記憶體空間，int是4byte的記憶體大小，所以結束位址是0x7ff7bfeff46B。<br /></p>
 
-<p><code class="language-plaintext highlighter-rouge">&amp;變數</code></p>
+<ul>
+  <li>區域變數先定義 → 比較高的位址</li>
+  <li>區域變數後定義 → 比較低的位址</li>
+</ul>
 
-<p>在變數前面加上&amp;可以取出變數的<code class="language-plaintext highlighter-rouge">開始記憶體位址</code>，如上一個表格中的例子，變數i的開始位址是0x00000008。</p>
+<p><img src="/assets/img/pointer/stack_var1.png" alt="img" /></p>
+
+<p>以下宣告a與b變數。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3096,25 +3099,228 @@
 變數b位址 = 0x7ff7bfeff460
 </code></pre></div></div>
 
-<h2 id="指標是一種變數存放的內容是位址">指標是一種變數，存放的內容是位址。</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">記憶體位址</th>
+      <th style="text-align: center">占用記憶體範圍</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0x7ff7bfeff46B</td>
+      <td style="text-align: center">a結束</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0x7ff7bfeff46A</td>
+      <td style="text-align: center">↑</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0x7ff7bfeff469</td>
+      <td style="text-align: center">↑</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0x7ff7bfeff468</td>
+      <td style="text-align: center">a開始</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0x7ff7bfeff467</td>
+      <td style="text-align: center">b結束</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0x7ff7bfeff466</td>
+      <td style="text-align: center">↑</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0x7ff7bfeff465</td>
+      <td style="text-align: center">↑</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0x7ff7bfeff464</td>
+      <td style="text-align: center">↑</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0x7ff7bfeff463</td>
+      <td style="text-align: center">↑</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0x7ff7bfeff462</td>
+      <td style="text-align: center">↑</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0x7ff7bfeff461</td>
+      <td style="text-align: center">↑</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0x7ff7bfeff460</td>
+      <td style="text-align: center">b開始</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>以下為宣告一個i1的整數變數，初始值為10。</p>
+<p>以下程式碼在函式中建立三個整數變數，並觀察三個變數的記憶體位址是由大至小遞減，並且記憶體位址都是以4byte(整數占4 byte記憶體空間)遞減，證明stack變數，記憶體位址是由大至小成長。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">funcMemoryLocation</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">var1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">var2</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">var3</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+
+  <span class="c1">//印出記憶體位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"var1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">var1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>  
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"var2 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">var2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"var3 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">var3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>指標變數存放的內容是位址，以下為宣告一個p1的指標變數，存放i1的開始位址。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
+var1 = 140702053822444
+var2 = 140702053822440
+var3 = 140702053822436
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">記憶體位址</th>
+      <th style="text-align: center">占用記憶體範圍</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">140702053822447</td>
+      <td style="text-align: center">var1結束</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">140702053822446</td>
+      <td style="text-align: center">↑</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">140702053822445</td>
+      <td style="text-align: center">↑</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">140702053822444</td>
+      <td style="text-align: center">var1開始</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">140702053822443</td>
+      <td style="text-align: center">var2結束</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">140702053822442</td>
+      <td style="text-align: center">↑</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">140702053822441</td>
+      <td style="text-align: center">↑</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">140702053822440</td>
+      <td style="text-align: center">var2開始</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">140702053822439</td>
+      <td style="text-align: center">var3結束</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">140702053822438</td>
+      <td style="text-align: center">↑</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">140702053822437</td>
+      <td style="text-align: center">↑</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">140702053822436</td>
+      <td style="text-align: center">var3開始</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="取位址運算子">取位址運算子</h3>
+<p>使用<code class="language-plaintext highlighter-rouge">&amp;</code>「取位址」運算子放在i變數前，可以取出i變數的記憶體位址，取出的位址是「開始」位址0x00000008。</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">int</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i1</span><span class="p">;</span>
+</pre></td><td class="code"><pre><span class="o">&amp;</span><span class="n">i</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="指標的大小8byte">指標的大小8byte</h2>
+<h2 id="指標類型">指標類型</h2>
+<p>基本型態(int,short,byte,long,long long, unsigned long, char, float, double …)都有對映的指標類型(int * ,short * ,byte * ,long * ,long long * , unsigned long * , char * , float * , double * …)。</p>
+
+<p>指標是一個類型，有變數名，存放的值是記憶體位址。<br /></p>
+
+<p>語法<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>指標類型 變數名 = 記憶體位址
+</code></pre></div></div>
+
+<p>有一個<code class="language-plaintext highlighter-rouge">int * </code>指標類型，變數名是<code class="language-plaintext highlighter-rouge">p</code>，存放的值是i變數的記憶體位址，。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>
+<span class="kt">int</span> <span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="指標類型與基本型態要對映">指標類型與基本型態要對映</h2>
+<p>以下的程式碼，i變數是整數類型，p變數也要是整數類型的指標，因為p整數指標類型是儲存int整數變數的記憶體位址。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>
+<span class="kt">int</span> <span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下會編譯錯誤，因為i是整數類型，而p是double浮點數指標類型，double指標類型無法儲存int變數的位址，二者類型無法匹配。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>
+<span class="kt">double</span> <span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下會編譯錯誤，因為i是double浮點數類型，而p是整數指標類型，int整數指標類型無法儲存double變數的位址，二者類型無法匹配。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">double</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>
+<span class="kt">int</span> <span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下是錯誤，不能直接把i指派給p，不能把int指派給int * 指標類型，二者類型不相容，p變數只能接受整數變數記憶體位址。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="o">;</span>
+<span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span> 
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="指標大小">指標大小</h3>
+<p>不管是「int * 」指標類型或其它指標類型，存放記憶體的大小一律為8 byte。<br /></p>
+
 <p>指標變數的大小8byte，使用sizeof(指標變數)可以取得指標的大小，不管是什麼資料型態的指標，佔用記憶體的大小全部為8byte。</p>
 
 <figure class="highlight">
@@ -3127,8 +3333,295 @@
 8
 </code></pre></div></div>
 
-<h2 id="位址放入指標變數">位址放入指標變數</h2>
-<p>指標存放的內容是位址，所以要先取得變數的開始位址，再放入指標變數中，使用&amp;可以取得變數開始位址。</p>
+<h3 id="指標占用記憶體位址範圍與存放的值">指標占用記憶體位址範圍與存放的值</h3>
+<p>p變數存放的開始位址0x00000000至結束位址0x00000007，總共占8byte。<br />
+<code class="language-plaintext highlighter-rouge">&amp;p</code>變數的記憶體位址是0x00000000，取得的是「開始」位址。<br />
+此時指標p存放的是，變數i的「開始」記憶體位址0x00000008。<br /></p>
+
+<table class="custom-table">
+  <tr><th width="10%">記憶體開始與結束</th><th width="45%">記憶體位址</th><th width="45%">占用記憶體位址範圍與存放的值</th></tr>
+  <tr><td>結束</td><td>0xFFFFFFFF</td><td rowspan="7"></td></tr>
+  <tr><td rowspan="17">&#8593;</td><td>......</td></tr>
+  <tr><td>0x00000010</td></tr>
+  <tr><td>0x0000000F</td></tr>
+  <tr><td>0x0000000E</td></tr>
+  <tr><td>0x0000000D</td></tr>
+  <tr><td>0x0000000C</td></tr>
+  <tr><td>0x0000000B</td><td bgcolor="#FFDD55">i變數記憶體位址結束</td></tr>
+  <tr><td>0x0000000A</td><td rowspan="2" bgcolor="#FFDD55">i = 55;</td></tr>
+  <tr><td>0x00000009</td></tr>
+  <tr><td>0x00000008</td><td bgcolor="#FFDD55">i變數記憶體位址開始</td></tr>
+  <tr><td>0x00000007</td><td bgcolor="#77DDFF">p變數記憶體位址結束</td></tr>
+  <tr><td>0x00000006</td><td rowspan="6" bgcolor="#77DDFF">p = 0x00000008</td></tr>
+  <tr><td>0x00000005</td></tr>
+  <tr><td>0x00000004</td></tr>
+  <tr><td>0x00000003</td></tr>
+  <tr><td>0x00000002</td></tr>
+  <tr><td>0x00000001</td></tr>
+  <tr><td>開始</td><td>0x00000000</td><td bgcolor="#77DDFF">p變數記憶體位址開始</td></tr>
+</table>
+
+<h3 id="pointer-memory-layout">pointer memory layout</h3>
+<p>在堆疊Stack中，i變數的記憶體位址是0x00000008，i儲存的值是55，p變數的記憶體位址是0x00000000，p儲存的值是0x00000008。<br /></p>
+
+<p><img src="/assets/img/pointer/pointer_memory1.png" alt="img" /></p>
+
+<h3 id="指標類型的變數">指標類型的變數</h3>
+<p>使用指標類型的變數，實際上是取出變數的值。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>完整程式碼:<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>  <span class="c1">// 整數類型的變數i</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>  <span class="c1">// 指標類型的變數p，儲存變數i的記憶體位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p變數的值 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i的位址 = 0x00000008
+p變數的值 = 0x00000008
+</code></pre></div></div>
+<h3 id="指標指向其它位址">指標指向其它位址</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>變數名 = 其它記憶體位址
+p = &amp;a;
+</code></pre></div></div>
+
+<p>再印出p，就會顯示p變數儲存的值，已改變成其它記憶體位址。</p>
+
+<p>完整程式碼:</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>  <span class="c1">// 整數類型的變數i</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>  <span class="c1">// 指標類型的變數p，儲存變數i的記憶體位址\</span>
+  <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">j</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"j的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p變數的值 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i的位址 = 0x0000000E
+j的位址 = 0x0000000B
+p變數的值 = 0x0000000B
+</code></pre></div></div>
+
+<p>其它範例:</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">;</span>
+  <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">;</span>
+  <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"a = "</span> <span class="o">&lt;&lt;</span> <span class="n">a</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b = "</span> <span class="o">&lt;&lt;</span> <span class="n">b</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a = 10
+b = 20
+</code></pre></div></div>
+
+<h3 id="指標類型的變數位址">指標類型的變數位址</h3>
+<p>使用<code class="language-plaintext highlighter-rouge">&amp;</code>「取位址」運算子放在p變數前，可以取出p變數的記憶體位址。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>完整程式碼:<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>  <span class="c1">// 整數類型的變數i</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>  <span class="c1">// 指標類型的變數p，儲存變數i的記憶體位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p變數的值 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i的位址 = 0x00000008
+p變數的值 = 0x00000008
+p的位址 = 0x00000000
+</code></pre></div></div>
+<h3 id="-取值運算子">* 取值運算子</h3>
+<p>使用 * 取值運算子，可以取得「記憶體位址」存放的值。<br />
+以下程式碼印出p存放的值 = 0x00000008 記憶體位址<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下的程式碼等同於<code class="language-plaintext highlighter-rouge">*0x00000008</code>，取得0x00000008記憶體位址，存放的值。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>55
+</code></pre></div></div>
+<p>顯示的結果為55。</p>
+
+<p><img src="/assets/img/pointer/pointer_memory2.png" alt="img" /></p>
+
+<p>完整程式碼:<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>  <span class="c1">// 整數類型的變數i</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>  <span class="c1">// 指標類型的變數p，儲存變數i的記憶體位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p變數的值 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"* p取得「記憶體位址」存放的值 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i的位址 = 0x00000008
+p變數的值 = 0x00000008
+p的位址 = 0x00000000
+* p取得「記憶體位址」存放的值 = 55
+</code></pre></div></div>
+
+<h3 id="-修改記憶體中的值">* 修改記憶體中的值</h3>
+<p>以下的方式，等同於<code class="language-plaintext highlighter-rouge">*0x00000008</code>，取得0x00000008記憶體位址，並修改0x00000008記憶體位址中的值，變成10。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>完整程式碼:<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>  <span class="c1">// 整數類型的變數i</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>  <span class="c1">// 指標類型的變數p，儲存變數i的記憶體位址</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p變數的值 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"* p取得「記憶體位址」存放的值 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"修改後，i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"修改後，*p = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i的位址 = 0x00000008
+p變數的值 = 0x00000008
+p的位址 = 0x00000000
+* p取得「記憶體位址」存放的值 = 55
+修改後，i = 10
+修改後，*p = 10
+</code></pre></div></div>
+
+<h3 id="程式碼">程式碼</h3>
+<p>以下為宣告一個i1的整數變數，初始值為10。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>指標變數存放的內容是位址，以下為宣告一個p1的指標變數，使用&amp;取得變數i1記憶體位址，p1變數儲存i1變數的記憶體位址。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">int</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i1</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>完整程式碼</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3157,15 +3650,14 @@
 <p>第5行，印出p1所存放的內容。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-i1的位址=0x7ff7bfeff468
+i1的位址= 0x7ff7bfeff468
 p1存放的位址 =0x7ff7bfeff468
 </code></pre></div></div>
 
 <p>從執行結果可以發現，印出的結果是一樣。</p>
 
 <h2 id="宣告指標的各種寫法">宣告指標的各種寫法</h2>
-
-<p>宣告指標可以把*放置在<code class="language-plaintext highlighter-rouge">變數前面</code>或<code class="language-plaintext highlighter-rouge">資料型態後面</code>或<code class="language-plaintext highlighter-rouge">資料型態與變數中間</code>，以下都是正確的。</p>
+<p>宣告指標可以把 * 放置在<code class="language-plaintext highlighter-rouge">變數前面</code>或<code class="language-plaintext highlighter-rouge">資料型態後面</code>或<code class="language-plaintext highlighter-rouge">資料型態與變數中間</code>，以下都是正確的。</p>
 
 <h3 id="一行宣告一個指標">一行宣告一個指標</h3>
 
@@ -3252,7 +3744,7 @@ num3 值=20
 
 <h2 id="取值運算子">取值運算子*</h2>
 
-<p>取值運算子*是取得位址中存放的值。指標存放位址，指標也就等於位址。</p>
+<p>取值運算子*是取得位址中存放的值，指標存放位址，指標也就等於位址。</p>
 
 <p><code class="language-plaintext highlighter-rouge">*指標</code></p>
 
@@ -3338,9 +3830,26 @@ num3 值=20
 <p>第3行，把10塞入指標，因為指標是存放位址，不能放10這個整數，產生編譯錯誤。</p>
 
 <h2 id="印出位址">印出位址</h2>
+<h3 id="c的方式">C的方式</h3>
+<p>使用<code class="language-plaintext highlighter-rouge">%p</code>。</p>
 
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="o">()</span> <span class="o">{</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="o">;</span>
+  <span class="n">printf</span><span class="o">(</span><span class="s">"i的位址 = %p \n"</span><span class="o">,&amp;</span><span class="n">i</span><span class="o">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i的位址 = 0x7ff7bfeff2e8 
+</code></pre></div></div>
 <h3 id="十六進制">十六進制</h3>
-
 <p>以下的方式印不出char變數的位址。</p>
 
 <figure class="highlight">
@@ -3384,16 +3893,9 @@ num3 值=20
 </code></pre></div></div>
 
 <h3 id="十進制">十進制</h3>
-
 <p><code class="language-plaintext highlighter-rouge">(long long)指標變數</code></p>
 
 <p>因為int只有4byte，位址轉成int整數會超出範圍，使用long long 8byte，就不會有超出數值範圍的問題。</p>
-
-<h3 id="c語言">c語言</h3>
-
-<p><code class="language-plaintext highlighter-rouge">printf("%#x",指標變數);</code></p>
-
-<p>使用%#x格式字串就可印出16進制的記憶體位址。</p>
 
 <h3 id="程式碼範例如下">程式碼範例如下:</h3>
 
@@ -3407,21 +3909,13 @@ num3 值=20
 7
 8
 9
-10
-11
-12
-13
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
   <span class="kt">int</span> <span class="o">*</span><span class="n">p1</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i1</span><span class="p">;</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"16進制 &amp;i1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">i1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"16進制 p1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="n">p1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-   
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"10進制 &amp;i1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">i1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"10進制 p1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="n">p1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-
-  <span class="n">printf</span><span class="p">(</span><span class="s">"c語言 &amp;i1 = %#x </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="o">&amp;</span><span class="n">i1</span><span class="p">);</span>
-  <span class="n">printf</span><span class="p">(</span><span class="s">"c語言 p1 = %#x </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">p1</span><span class="p">);</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -3432,12 +3926,9 @@ num3 值=20
 16進制 p1 = 0x7ff7bfeff468
 10進制 &amp;i1 = 140702053823592
 10進制 p1 = 140702053823592
-c語言 &amp;i1 = 0xbfeff468 
-c語言 p1 = 0xbfeff468
 </code></pre></div></div>
 
 <h2 id="指標資料型態">指標資料型態</h2>
-
 <p>指標的資料型態要與記憶體位址中的內容相符。</p>
 
 <figure class="highlight">
@@ -3642,7 +4133,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-27 10:22:33 +0800"
+        "time": "2025-07-30 14:50:05 +0800"
     },
     "basePath": "",
     "book": {
