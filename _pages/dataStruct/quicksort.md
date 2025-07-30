@@ -26,7 +26,8 @@ SSSSSEEEEEELLLLLLL<br>
 
 small變數以「前」的都是Small區域，小於pivot。<br>
 large變數以「後」的都是Large區域，大於pivot。<br>
-i變數作為移動(走訪)陣列中的每個元素，當i變數「大於」large變數，就離開迴圈，因為「小於」、「等於」、「大於」，三個區域已分類完畢。<br>
+i變數往後移動。<br>
+陣列中的每個元素，當i變數「大於」large變數，就離開迴圈，因為「小於」、「等於」、「大於」，三個區域已分類完畢。<br>
 {% highlight java linenos %}
 // 進入迴圈的條件 i <= large
 // 離開迴圈的條件 i > large

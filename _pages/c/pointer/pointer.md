@@ -204,7 +204,7 @@ p變數存放的開始位址0x00000000至結束位址0x00000007，總共占8byte
 ![img]({{site.imgurl}}/pointer/pointer_memory1.png)
 
 ### 指標類型的變數
-使用指標類型的變數，實際上是取出變數的值。
+使用指標類型的變數，實際上是取出變數的「值」。
 {% highlight c++ linenos %}
 cout << p << endl;
 {% endhighlight %}
@@ -226,16 +226,19 @@ p變數的值 = 0x00000008
 ### 指標指向其它位址
 ```
 變數名 = 其它記憶體位址
-p = &a;
+p = &j;
+cout << "p變數的值 = " << p << endl;
 ```
 
 再印出p，就會顯示p變數儲存的值，已改變成其它記憶體位址。
+
+![img]({{site.imgurl}}/pointer/pointer_memory3.png)
 
 完整程式碼:
 {% highlight c++ linenos %}
 int main() {
   int i = 55;  // 整數類型的變數i
-  int* p = &i;  // 指標類型的變數p，儲存變數i的記憶體位址\
+  int* p = &i;  // 指標類型的變數p，儲存變數i的記憶體位址
   int j = 100;
   p = &j;
   cout << "i的位址 = " << &i << endl;
@@ -267,6 +270,34 @@ int main() {
 ```
 a = 10
 b = 20
+```
+
+### 指標指向其它指標的值
+```
+指標類型 變數名 = 指標變數
+int* p2 = p;
+```
+p是p變數的「值」。<br>
+把p變數的「值」，儲存在p2的記憶體位址中，p2的值也跟p的值一樣。<br>
+下圖中，p2變數也有自己的記憶體位址0x00000000E，但它儲存的是0x00000008。<br>
+
+![img]({{site.imgurl}}/pointer/pointer_memory4.png)
+
+{% highlight c++ linenos %}
+int main() {
+  int i = 55;
+  int* p = &i;
+  int* p2 = p;
+  cout << "i 位址 = " << &i << endl;
+  cout << "p 變數的值 = " << p << endl;
+  cout << "p2 變數的值 = " << p2 << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+i 位址 = 0x00000008 
+p 變數的值 = 0x00000008
+p2 變數的值 = 0x00000008
 ```
 
 ### 指標類型的變數位址

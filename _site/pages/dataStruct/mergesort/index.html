@@ -3341,15 +3341,78 @@ i變數放的是left索引，j變數放的是mid+1。<br /></p>
 5
 6
 7
+8
+9
+10
+11
+12
+13
+14
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">t</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>  <span class="c1">// 把比較大小的值放入臨時陣列copyarr，記錄copyarr的索引</span>
 <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">left</span><span class="o">;</span>  <span class="c1">// 左半邊的開頭</span>
 <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>  <span class="c1">// 右半邊的開頭</span>
 <span class="c1">// 左半邊的範圍left 到 mid， i設成左半邊的開頭left ，持續向後移動到 等於== mid</span>
 <span class="c1">// 右半邊的範圍mid+1 到 right, j設成右半邊的開頭mid +1，持續向後移動到 等於== right</span>
 <span class="k">while</span> <span class="o">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">mid</span> <span class="o">&amp;&amp;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">if</span> <span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">])</span> <span class="o">{</span>
+    <span class="n">copyarr</span><span class="o">[</span><span class="n">t</span><span class="o">++]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+    <span class="n">i</span><span class="o">++;</span>
+  <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+    <span class="n">copyarr</span><span class="o">[</span><span class="n">t</span><span class="o">++]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">];</span>
+    <span class="n">j</span><span class="o">++;</span>
+  <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<p>迴圈初始值</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>left
+↓
+i      j
+↓      ↓
+456    123
+  ↑    ↑
+ mid  mid+1
+</code></pre></div></div>
+
+<p>copyarr</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> t = 0
+ ↓
+[ ]
+</code></pre></div></div>
+
+<p>迴圈第1次進入</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i       j
+↓       ↓
+456    123
+</code></pre></div></div>
+<p>copyarr</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   t = 1
+   ↓
+[1, ]
+</code></pre></div></div>
+
+<p>迴圈第2次進入</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i        j
+↓        ↓
+456    123
+</code></pre></div></div>
+<p>copyarr</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     t = 2
+     ↓
+[1,2, ]
+</code></pre></div></div>
+
+<p>迴圈第3次進入</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i         j
+↓         ↓
+456    123
+</code></pre></div></div>
+<p>copyarr</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       t = 3
+       ↓
+[1,2,3, ]
+</code></pre></div></div>
 
 <h2 id="完整程式碼">完整程式碼</h2>
 
@@ -3415,6 +3478,11 @@ i變數放的是left索引，j變數放的是mid+1。<br /></p>
 59
 60
 61
+62
+63
+64
+65
+66
 </pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MergeSort</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="c1">// 產生5個亂數</span>
@@ -3454,23 +3522,28 @@ i變數放的是left索引，j變數放的是mid+1。<br /></p>
     <span class="c1">// 左半邊的範圍left 到 mid， i設成左半邊的開頭left ，持續向後移動到 等於== mid</span>
     <span class="c1">// 右半邊的範圍mid+1 到 right, j設成右半邊的開頭mid +1，持續向後移動到 等於== right</span>
     <span class="k">while</span> <span class="o">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">mid</span> <span class="o">&amp;&amp;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="o">)</span> <span class="o">{</span>
+      <span class="c1">// 若arr[i]小於 arr[j]</span>
       <span class="k">if</span> <span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">])</span> <span class="o">{</span>
-        <span class="n">copyarr</span><span class="o">[</span><span class="n">t</span><span class="o">++]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
-        <span class="n">i</span><span class="o">++;</span>
+        <span class="n">copyarr</span><span class="o">[</span><span class="n">t</span><span class="o">++]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>  <span class="c1">// 把小的值複製到copyarr，t++</span>
+        <span class="n">i</span><span class="o">++;</span>  <span class="c1">// 向後移動</span>
       <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
-        <span class="n">copyarr</span><span class="o">[</span><span class="n">t</span><span class="o">++]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">];</span>
-        <span class="n">j</span><span class="o">++;</span>
+        <span class="n">copyarr</span><span class="o">[</span><span class="n">t</span><span class="o">++]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">];</span>  <span class="c1">// 把小的值複製到copyarr，t++</span>
+        <span class="n">j</span><span class="o">++;</span>  <span class="c1">// 向後移動</span>
       <span class="o">}</span>
     <span class="o">}</span>
 
+    <span class="c1">// 如果左半邊已經全比完，把右半邊全部複製到copyarr</span>
     <span class="k">while</span> <span class="o">(</span><span class="n">j</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="o">)</span> <span class="o">{</span>
       <span class="n">copyarr</span><span class="o">[</span><span class="n">t</span><span class="o">++]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">++];</span>
     <span class="o">}</span>
 
+    <span class="c1">// 如果右半邊已經全比完，把左半邊全部複製到copyarr</span>
     <span class="k">while</span> <span class="o">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">mid</span><span class="o">)</span> <span class="o">{</span>
       <span class="n">copyarr</span><span class="o">[</span><span class="n">t</span><span class="o">++]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">++];</span>
     <span class="o">}</span>
 
+    <span class="c1">// left可能為0，也可能為右半邊的開頭</span>
+    <span class="c1">// 把copyarr的已排序大小的值，覆蓋回原本陣列</span>
     <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">t</span><span class="o">;</span> <span class="n">k</span><span class="o">++)</span> <span class="o">{</span>
       <span class="n">arr</span><span class="o">[</span><span class="n">left</span><span class="o">++]</span> <span class="o">=</span> <span class="n">copyarr</span><span class="o">[</span><span class="n">k</span><span class="o">];</span>
     <span class="o">}</span>
@@ -3669,7 +3742,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-30 14:50:05 +0800"
+        "time": "2025-07-30 15:01:12 +0800"
     },
     "basePath": "",
     "book": {
