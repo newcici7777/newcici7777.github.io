@@ -73,3 +73,6 @@ Mac: cmd + b
 ![img]({{site.imgurl}}/editor/struture1.png)
 
 ![img]({{site.imgurl}}/editor/struture2.png)
+
+## 複製的時候不要把package一起複製上
+![img]({{site.imgurl}}/editor/auto_import.png)

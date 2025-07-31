@@ -3,7 +3,6 @@ title: 合併排序
 date: 2024-10-02
 keywords: c++, Merge Sort
 ---
-
 Prerequisites:
 
 - [遞迴][1]
@@ -103,4 +102,5 @@ int main() {
 }
 {% endhighlight %}
 
-[1]: {% link _pages/c/dataStruct/recursion.md %}
+
+[1]: {% link _pages/java/recursive.md %}

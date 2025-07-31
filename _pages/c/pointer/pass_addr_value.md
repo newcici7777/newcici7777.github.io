@@ -14,7 +14,7 @@ int j = i; // 把i指派給j
 ![img]({{site.imgurl}}/pointer/pass_value.png)
 
 ### 基本型態修改值
-把j變數的值，從10修改成40，不會影嚮變數i，因為i與j的記憶體空間是各別獨立，不會互相影嚮。
+把j變數的值，從55修改成40，不會影嚮變數i，因為i與j的記憶體空間是各別獨立，不會互相影嚮。
 {% highlight c++ linenos %}
 int i = 55;
 int j = i; // 把i指派給j
