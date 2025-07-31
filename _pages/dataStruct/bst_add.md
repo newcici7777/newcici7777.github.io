@@ -1,14 +1,20 @@
 ---
-title: BST
+title: BST新增
 date: 2025-07-31
 keywords: java,Binary Search Tree
 ---
 左子節點小於中間節點，右子節點大於中間節點。
 
-## 新增
-中序的方式來遍歷樹，是由小到大，因為左子節點小於中間節點，右子節點大於中間節點。
+![img]({{site.imgurl}}/java_datastruct/bst1.png)
 
+## 中序遍歷
+中序的方式來遍歷樹，是由小到大，因為左子節點小於根節點，右子節點大於根節點。
+
+## 新增
+### 判斷root是否為空
 新增的時候要判斷，若樹為空，直接把節點作為root根節點。<br>
+
+### 判斷大小
 若樹不為空，判斷新增節點是小於中間節點還是大於中間節點。<br>
 小於中間節點，判斷左節點是否為null，若為null，就把新節點接上左節點。<br>
 若左節點不是null，繼續往左子樹找適合的位置來新增。<br>
@@ -91,23 +97,3 @@ class Node {
 }
 {% endhighlight %}
 
-## 刪除
-### root節點刪除
-1. 先判斷要刪除的節點是不是root節點。
-2. 不是root，那就是子節點。
-
-### 子節點刪除
-單向鏈結串列刪除時，要先找到刪除節點的前一個節點，因為單向鏈結串列無法往回走。<br>
-樹的刪除也是一樣，要先找到「要刪除節點」的「父節點」。<br>
-
-#### 葉子節點刪除
-若是要刪除的節點是葉子，檢查要刪除的節點是左子節點，還是右子節點。<br>
-直接設為null。<br>
-左子節點<br>
-{% highlight java linenos %}
-parent.left = null;
-{% endhighlight %}
-右子節點<br>
-{% highlight java linenos %}
-parent.right = null;
-{% endhighlight %}
