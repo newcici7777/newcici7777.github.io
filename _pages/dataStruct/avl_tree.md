@@ -22,7 +22,7 @@ AVL樹左子樹與右子樹相減高度不能超過1，要小於等於1。<br>
 {% endhighlight %}
 
 ## 左右子樹高度
-此處沒加1，是不含根節點本身的高度。
+此處沒加1，是不含根節點本身的高度，只有子樹的高度。
 
 {% highlight java linenos %}
   public int leftHeight() {

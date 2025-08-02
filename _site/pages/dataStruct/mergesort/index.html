@@ -271,6 +271,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/c/pointer/pass_addr_value/" data-nav-link> 指派基本型態與指派指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/c/pointer/pointerConst/" data-nav-link> const與指標</a>
         
             
@@ -2236,6 +2243,13 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/binary_search/" data-nav-link> 二分搜尋</a>
+        
+            
+        </li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> sort </a><ul>
 	
 	
@@ -2251,6 +2265,44 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/dataStruct/quicksort/" data-nav-link> 快速排序</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> tree </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/binary_tree/" data-nav-link> 樹的前序中序後序遍歷</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/binary_tree_search/" data-nav-link> 樹的前序中序後序搜尋</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/bst_add/" data-nav-link> BST新增</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/bst_del/" data-nav-link> BST刪除</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/avl_tree/" data-nav-link> AVL高度</a>
         
             
         </li></ul></li></ul></li></ul></li>
@@ -3076,8 +3128,8 @@ mid = 2<br /></p>
 <h2 id="左半邊切割">左半邊切割</h2>
 <h3 id="左半邊切割1">左半邊切割1</h3>
 <p>切割左半邊與右半邊。<br />
-左半邊:left ~ mid  0 ~ 2<br />
-右半邊:mid + 1 ~ right  3 ~ 5<br /></p>
+左半邊:left 到 mid ， 0 ~ 2<br />
+右半邊:mid + 1 到 right ， 3 ~ 5<br /></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>654    321
   ↑    ↑
@@ -3093,8 +3145,8 @@ mid
 </code></pre></div></div>
 
 <p>切割左半邊與右半邊。<br />
-左半邊:left ~ mid  0 ~ 1<br />
-右半邊:mid + 1 ~ right  2 ~ 2<br /></p>
+左半邊:left 到 mid ， 0 ~ 1<br />
+右半邊:mid + 1 到 right ， 2 ~ 2<br /></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>65   4
  ↑   ↑
@@ -3109,8 +3161,8 @@ mid中間值是(left + right) / 2 = (0 + 1) / 2 = 0<br /></p>
 mid
 </code></pre></div></div>
 <p>切割左半邊與右半邊。<br />
-左半邊:left ~ mid  0 ~ 0<br />
-右半邊:mid + 1 ~ right  1 ~ 1<br /></p>
+左半邊:left 到 mid ， 0 ~ 0<br />
+右半邊:mid + 1 到 right ， 1 ~ 1<br /></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>6    5
 ↑    ↑
 mid  mid+1
@@ -3162,7 +3214,7 @@ left,mid   mid+1,right
 mid  mid+1
 </code></pre></div></div>
 
-<p>比較左半邊的left = 5與右半邊mid+1 = 4看誰比較大，比較小的放入copyarr陣列。<br /></p>
+<p>比較左半邊的5與右半邊4看誰比較小，比較小的放入copyarr陣列。<br /></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[4]
 </code></pre></div></div>
 
@@ -3183,8 +3235,8 @@ mid  mid+1
 <h2 id="右半邊切割">右半邊切割</h2>
 <h3 id="右半邊切割1">右半邊切割1</h3>
 <p>切割左半邊與右半邊。<br />
-左半邊:left ~ mid  0 ~ 2<br />
-右半邊:mid + 1 ~ right  3 ~ 5<br /></p>
+左半邊:left 到 mid ， 0 ~ 2<br />
+右半邊:mid + 1 到 right ， 3 ~ 5<br /></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>654    321
   ↑    ↑
@@ -3192,7 +3244,8 @@ mid  mid+1
 </code></pre></div></div>
 
 <h3 id="右半邊切割2">右半邊切割2</h3>
-<p>繼續切割<br />
+<p>left = 3, right = 5 <br />
+繼續切割<br />
 mid中間值是(left + right) / 2 = (3 + 5) / 2 = 4<br /></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>left=3
 ↓
@@ -3202,8 +3255,8 @@ mid=4
 </code></pre></div></div>
 
 <p>切割左半邊與右半邊。<br />
-左半邊:left ~ mid  3 ~ 4<br />
-右半邊:mid + 1 ~ right  5 ~ 5<br /></p>
+左半邊:left 到 mid ， 3 ~ 4<br />
+右半邊:mid + 1 到 right ， 5 ~ 5<br /></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>32   1
  ↑   ↑
@@ -3211,41 +3264,45 @@ mid  mid+1
 </code></pre></div></div>
 
 <h3 id="右半邊切割3">右半邊切割3</h3>
-<p>left與right還不是同一個，還沒切割到一個元素，繼續切割。<br />
-mid中間值是(left + right) / 2 = (3 + 4) / 2 = 0<br /></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LR
-↓↓
-32
+<p>left = 3, right = 4 <br />
+left與right還不是同一個，還沒切割到一個元素，繼續切割。<br />
+mid中間值是(left + right) / 2 = (3 + 4) / 2 = 3<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3 4
+L R
+↓ ↓
+3 2
 ↑
 mid
 </code></pre></div></div>
 <p>切割左半邊與右半邊。<br />
-左半邊:left ~ mid  3 ~ 3<br />
-右半邊:mid + 1 ~ right  4 ~ 4<br /></p>
+左半邊:left 到 mid ， 3 ~ 3<br />
+右半邊:mid + 1 到 right ， 4 ~ 4<br /></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3    2
 ↑    ↑
 mid  mid+1
 </code></pre></div></div>
 
 <h3 id="右半邊切割4-1">右半邊切割4-1</h3>
-<p>切到只剩下一個元素，離開目前方法，返回到切割3的方法。</p>
+<p>left = 3, right = 3 <br />
+切到只剩下一個元素，離開目前方法，返回到切割3的方法。</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3
 </code></pre></div></div>
 
 <h3 id="右半邊切割4-2">右半邊切割4-2</h3>
-<p>切到只剩下一個元素，離開目前方法，返回到切割3的方法。</p>
+<p>left = 4, right = 4 <br />
+切到只剩下一個元素，離開目前方法，返回到切割3的方法。</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
 </code></pre></div></div>
 
 <h2 id="右半邊合併">右半邊合併</h2>
 <h3 id="返回右半邊切割3">返回右半邊切割3</h3>
 <p>當切到只剩一個元素，就返回到切割前的方法，回到切割3的步驟。<br />
-此時，left與mid都是0，mid+1與right都是1。<br /></p>
+此時，left與mid都是索引3，mid+1與right都是索引4。<br /></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3          2
 ↑          ↑
 left,mid   mid+1,right
 </code></pre></div></div>
-<p>比較3與2看誰比較大，比較小的放入copyarr陣列。<br /></p>
+<p>比較3與2看誰比較小，比較小的放入copyarr陣列。<br /></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[2]
 </code></pre></div></div>
 
@@ -3289,9 +3346,10 @@ mid  mid+1
 
 <h2 id="左右邊合併">左右邊合併</h2>
 <p>left是索引0，mid是索引2，mid+1是索引3，right是索引5。<br />
-i變數放的是left索引，j變數放的是mid+1。<br /></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i      j
-↓      ↓
+i變數放的是left索引，j變數放的是mid+1。<br />
+i是左半邊的開頭，j是右半邊的開頭，mid是左半邊的結束，right是右半邊的結束。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i      j right
+↓      ↓ ↓
 456    123
   ↑    ↑
  mid  mid+1
@@ -3381,7 +3439,7 @@ i      j
 [ ]
 </code></pre></div></div>
 
-<p>迴圈第1次進入</p>
+<p>迴圈第1次執行結束的結果如下:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i       j
 ↓       ↓
 456    123
@@ -3392,7 +3450,7 @@ i      j
 [1, ]
 </code></pre></div></div>
 
-<p>迴圈第2次進入</p>
+<p>迴圈第2次執行結束的結果如下:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i        j
 ↓        ↓
 456    123
@@ -3403,7 +3461,7 @@ i      j
 [1,2, ]
 </code></pre></div></div>
 
-<p>迴圈第3次進入</p>
+<p>迴圈第3次執行結束的結果如下:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i         j
 ↓         ↓
 456    123
@@ -3615,7 +3673,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/dataStruct/circular_queue" class="navigation navigation-prev navigation-unique" aria-label="Previous page: circular queue環狀佇列">
+                        <a href="/pages/dataStruct/binary_search" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 二分搜尋">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -3742,7 +3800,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-30 15:01:12 +0800"
+        "time": "2025-08-02 17:08:43 +0800"
     },
     "basePath": "",
     "book": {

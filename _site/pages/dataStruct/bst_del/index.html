@@ -2,8 +2,8 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>指標2 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="C++, C, pointer" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>BST刪除 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="java,Binary Search Tree" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -265,6 +265,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/c/pointer/pointer/" data-nav-link> 指標基本觀念</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/pointer/pass_addr_value/" data-nav-link> 指派基本型態與指派指標</a>
         
             
         </li>
@@ -2236,6 +2243,13 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/binary_search/" data-nav-link> 二分搜尋</a>
+        
+            
+        </li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> sort </a><ul>
 	
 	
@@ -2248,6 +2262,47 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/dataStruct/quicksort/" data-nav-link> 快速排序</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> tree </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/binary_tree/" data-nav-link> 樹的前序中序後序遍歷</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/binary_tree_search/" data-nav-link> 樹的前序中序後序搜尋</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/bst_add/" data-nav-link> BST新增</a>
+        
+            
+        </li>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/dataStruct/bst_del/" data-nav-link> BST刪除</a>
+        
+            
+                <ul><li><a href="#root節點刪除" data-nav-link " >root節點刪除</a><ul><li><a href="#root沒有子樹" data-nav-link " >root沒有子樹</a></li><li><a href="#root有一邊是有子樹另一邊是null" data-nav-link " >root有一邊是有子樹，另一邊是null</a></li><li><a href="#root下二邊都有子樹" data-nav-link " >root下二邊都有子樹</a></li></ul></li><li><a href="#子節點刪除" data-nav-link " >子節點刪除</a></li><li><a href="#名詞解釋" data-nav-link " >名詞解釋</a><ul><li><a href="#parent" data-nav-link " >parent</a></li><li><a href="#target" data-nav-link " >target</a></li></ul></li><li><a href="#target--null" data-nav-link " >target = null</a><ul><li><a href="#葉子節點刪除" data-nav-link " >葉子節點刪除</a></li><li><a href="#要刪除的節點是左子節點下面有子樹" data-nav-link " >要刪除的節點，是左子節點，下面有子樹。</a></li><li><a href="#要刪除的節點是右子節點下面有一個子樹" data-nav-link " >要刪除的節點，是右子節點，下面有一個子樹</a></li><li><a href="#要刪除的節點有2個子樹" data-nav-link " >要刪除的節點有2個子樹</a></li></ul></li><li><a href="#程式碼" data-nav-link " >程式碼</a></li></ul>
+
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/avl_tree/" data-nav-link> AVL高度</a>
         
             
         </li></ul></li></ul></li></ul></li>
@@ -3007,7 +3062,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >指標2</a>
+                            <a href="." >BST刪除</a>
                         
                     </h1>
                 </div>
@@ -3020,547 +3075,142 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/pointer/pointer2">指標2</h1>
+                        <h1 id="/pages/dataStruct/bst_del">BST刪除</h1>
                     
 
-                    <h2 id="變數記憶體位址">變數記憶體位址</h2>
-<p>每個變數系統會分配”一塊”記憶體位址存放變數，位址通常是用16進制表示。</p>
+                    <h2 id="root節點刪除">root節點刪除</h2>
+<h3 id="root沒有子樹">root沒有子樹</h3>
+<p>直接把root設為null</p>
 
-<p>以下為宣告一個i的整數變數，初始值為55。</p>
+<h3 id="root有一邊是有子樹另一邊是null">root有一邊是有子樹，另一邊是null</h3>
+<p>如果root只有右子樹，要刪除root，直接把root指向右子樹。<br />
+如果root只有左子樹，要刪除root，直接把root指向左子樹。<br /></p>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p><img src="/assets/img/java_datastruct/del_root_has1ch.png" alt="img" /></p>
 
-<p>int資料型態變數i，占用記憶體4 byte，變數i占的開始位址0x00000008至結束位址0x0000000B，總共占4Byte。<br /></p>
+<h3 id="root下二邊都有子樹">root下二邊都有子樹</h3>
+<p>直接使用子節點刪除，<a href="#要刪除的節點有2個子樹">要刪除的節點有2個子節點</a>。</p>
 
-<h3 id="i變數memory-layout">i變數memory layout</h3>
+<h2 id="子節點刪除">子節點刪除</h2>
+<p>單向鏈結串列刪除時，要先找到刪除節點的前一個節點，因為單向鏈結串列無法往回走。<br />
+樹的刪除也是一樣，要先找到「要刪除節點」的「父節點」。<br />
+「要刪除節點」的「父節點」，命名為parent。<br />
+「要刪除節點」，命名為target。<br /></p>
 
-<table class="custom-table">
-	<tr><th width="10%">記憶體開始與結束</th><th width="45%">記憶體位址</th><th width="45%">占用記憶體位址範圍</th></tr>
-	<tr><td>結束</td><td>0xFFFFFFFF</td><td rowspan="5"></td></tr>
-	<tr><td rowspan="15">&#8593;</td><td>......</td></tr>
-	<tr><td>0x0000000E</td></tr>
-	<tr><td>0x0000000D</td></tr>
-	<tr><td>0x0000000C</td></tr>
-	<tr><td>0x0000000B</td><td bgcolor="#FFDD55">i變數記憶體位址結束</td></tr>
-	<tr><td>0x0000000A</td><td rowspan="2" bgcolor="#FFDD55">i = 55;</td></tr>
-	<tr><td>0x00000009</td></tr>
-	<tr><td>0x00000008</td><td bgcolor="#FFDD55">i變數記憶體位址開始</td></tr>
-	<tr><td>0x00000007</td><td rowspan="8"></td></tr>
-	<tr><td>0x00000006</td></tr>
-	<tr><td>0x00000005</td></tr>
-	<tr><td>0x00000004</td></tr>
-	<tr><td>0x00000003</td></tr>
-	<tr><td>0x00000002</td></tr>
-	<tr><td>0x00000001</td></tr>
-	<tr><td>開始</td><td>0x00000000</td></tr>
-</table>
+<p><img src="/assets/img/java_datastruct/bst_del_leaf.png" alt="img" /><br /></p>
 
-<h3 id="堆疊區域變數">堆疊區域變數</h3>
-<p>以下宣告a與b變數，</p>
+<h2 id="名詞解釋">名詞解釋</h2>
+<h3 id="parent">parent</h3>
+<p>parent為「要刪除節點」的「父節點」。<br />
+parent.left為「要刪除節點」的「父節點」下的左子樹。<br /></p>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="kt">double</span> <span class="n">b</span> <span class="o">=</span> <span class="mf">10.5</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"變數a位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">a</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"變數b位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">b</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<h3 id="target">target</h3>
+<p>「要刪除節點」，命名為target。<br />
+target.left為要刪除節點的左子樹。<br />
+target.right為要刪除節點的右子樹。<br /></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-變數a位址 = 0x7ff7bfeff468
-變數b位址 = 0x7ff7bfeff460
-</code></pre></div></div>
+<h2 id="target--null">target = null</h2>
+<ul>
+  <li><a href="/pages/java/method/#方法中修改參數位址">方法中區域變數指派為null</a></li>
+</ul>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">記憶體位址</th>
-      <th style="text-align: left">占用記憶體範圍</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff46B</td>
-      <td style="text-align: left">a結束</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff46A</td>
-      <td style="text-align: left">a</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff469</td>
-      <td style="text-align: left">a</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff468</td>
-      <td style="text-align: left">a開始</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff467</td>
-      <td style="text-align: left">b結束</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff466</td>
-      <td style="text-align: left">b</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff465</td>
-      <td style="text-align: left">b</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff464</td>
-      <td style="text-align: left">b</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff463</td>
-      <td style="text-align: left">b</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff462</td>
-      <td style="text-align: left">b</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff461</td>
-      <td style="text-align: left">b</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff460</td>
-      <td style="text-align: left">b開始</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>以下程式碼在函式中建立三個整數變數，並觀察三個變數的記憶體位址是由大至小遞減，並且記憶體位址都是以4byte(整數占4 byte記憶體空間)遞減，證明stack變數，記憶體位址是由大至小成長。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">funcMemoryLocation</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">var1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">var2</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">var3</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
-
-  <span class="c1">//印出記憶體位址</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"va1 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">var1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>  
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"va2 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">var2</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"va3 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">)</span><span class="o">&amp;</span><span class="n">var3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-va1 = 140702053822444
-va2 = 140702053822440
-va3 = 140702053822436
-</code></pre></div></div>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">記憶體位址</th>
-      <th style="text-align: left">占用記憶體範圍</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff46B</td>
-      <td style="text-align: left">a結束</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff46A</td>
-      <td style="text-align: left">a</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff469</td>
-      <td style="text-align: left">a</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff468</td>
-      <td style="text-align: left">a開始</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff467</td>
-      <td style="text-align: left">b結束</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff466</td>
-      <td style="text-align: left">b</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff465</td>
-      <td style="text-align: left">b</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff464</td>
-      <td style="text-align: left">b</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff463</td>
-      <td style="text-align: left">b</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff462</td>
-      <td style="text-align: left">b</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff461</td>
-      <td style="text-align: left">b</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0x7ff7bfeff460</td>
-      <td style="text-align: left">b開始</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="取位址運算子">取位址運算子</h3>
-<p>使用<code class="language-plaintext highlighter-rouge">&amp;</code>「取位址」運算子放在i變數前，可以取出i變數的記憶體位址，取出的位址是「開始」位址0x00000008。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="o">&amp;</span><span class="n">i</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="指標類型">指標類型</h2>
-<p>基本型態(int,short,byte,long,long long, unsigned long, char, float, double …)都有對映的指標類型(int * ,short * ,byte * ,long * ,long long * , unsigned long * , char * , float * , double * …)。</p>
-
-<p>指標是一個類型，有變數名，存放的值是記憶體位址。<br /></p>
-
-<p>語法<br /></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>指標類型 變數名 = 記憶體位址
-</code></pre></div></div>
-
-<p>有一個<code class="language-plaintext highlighter-rouge">int * </code>指標類型，變數名是<code class="language-plaintext highlighter-rouge">p</code>，存放的值是i變數的記憶體位址，。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>
-<span class="kt">int</span> <span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="指標類型與基本型態要對映">指標類型與基本型態要對映</h2>
-<p>以下的程式碼，i變數是整數類型，p變數也要是整數類型的指標，因為p整數指標類型是儲存int整數變數的記憶體位址。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>
-<span class="kt">int</span> <span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>以下會編譯錯誤，因為i是整數類型，而p是double浮點數指標類型，double指標類型無法儲存int變數的位址，二者類型無法匹配。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>
-<span class="kt">double</span> <span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>以下會編譯錯誤，因為i是double浮點數類型，而p是整數指標類型，int整數指標類型無法儲存double變數的位址，二者類型無法匹配。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre><span class="kt">double</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>
-<span class="kt">int</span> <span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>以下是錯誤，不能直接把i指派給p，不能把int指派給int * 指標類型，二者類型不相容，p變數只能接受整數變數記憶體位址。</p>
+<p>target為要刪除的節點。<br />
+使用target = null，無法刪除節點，因為方法中，區域變數taget修改成null，受影嚮的只有區域變數的target。<br />
+正確作法，使用要刪除節點target的父節點parent來刪除左子樹或右子樹。<br /></p>
 
 <figure class="highlight">
   <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="o">;</span>
-<span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span> 
+</pre></td><td class="code"><pre><span class="n">parent</span><span class="o">.</span><span class="na">left</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="n">parent</span><span class="o">.</span><span class="na">right</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h3 id="指標大小">指標大小</h3>
-<p>不管是「int * 」指標類型或其它指標類型，存放記憶體的大小一律為8 byte。<br /></p>
+<h3 id="葉子節點刪除">葉子節點刪除</h3>
+<p>要刪除的節點是葉子，檢查要刪除的節點是左子節點，還是右子節點。<br />
+直接設為null。<br /></p>
 
-<p>指標變數的大小8byte，使用sizeof(指標變數)可以取得指標的大小，不管是什麼資料型態的指標，佔用記憶體的大小全部為8byte。</p>
+<p>要刪除的節點是左子節點，parent為「要刪除節點」的「父節點」。<br />
+<img src="/assets/img/java_datastruct/bst_del_leaf.png" alt="img" /><br /></p>
 
 <figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">p1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">parent</span><span class="o">.</span><span class="na">left</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-8
-</code></pre></div></div>
-
-<h3 id="指標占用記憶體位址範圍與存放的值">指標占用記憶體位址範圍與存放的值</h3>
-<p>p變數存放的開始位址0x00000000至結束位址0x00000007，總共占8byte。<br />
-<code class="language-plaintext highlighter-rouge">&amp;p</code>變數的記憶體位址是0x00000000，取得的是「開始」位址。<br />
-此時指標p存放的是，變數i的「開始」記憶體位址0x00000008。<br /></p>
-
-<table class="custom-table">
-	<tr><th width="10%">記憶體開始與結束</th><th width="45%">記憶體位址</th><th width="45%">占用記憶體位址範圍與存放的值</th></tr>
-	<tr><td>結束</td><td>0xFFFFFFFF</td><td rowspan="7"></td></tr>
-	<tr><td rowspan="17">&#8593;</td><td>......</td></tr>
-	<tr><td>0x00000010</td></tr>
-	<tr><td>0x0000000F</td></tr>
-	<tr><td>0x0000000E</td></tr>
-	<tr><td>0x0000000D</td></tr>
-	<tr><td>0x0000000C</td></tr>
-	<tr><td>0x0000000B</td><td bgcolor="#FFDD55">i變數記憶體位址結束</td></tr>
-	<tr><td>0x0000000A</td><td rowspan="2" bgcolor="#FFDD55">i = 55;</td></tr>
-	<tr><td>0x00000009</td></tr>
-	<tr><td>0x00000008</td><td bgcolor="#FFDD55">i變數記憶體位址開始</td></tr>
-	<tr><td>0x00000007</td><td bgcolor="#77DDFF">p變數記憶體位址結束</td></tr>
-	<tr><td>0x00000006</td><td rowspan="6" bgcolor="#77DDFF">p = 0x00000008</td></tr>
-	<tr><td>0x00000005</td></tr>
-	<tr><td>0x00000004</td></tr>
-	<tr><td>0x00000003</td></tr>
-	<tr><td>0x00000002</td></tr>
-	<tr><td>0x00000001</td></tr>
-	<tr><td>開始</td><td>0x00000000</td><td bgcolor="#77DDFF">p變數記憶體位址開始</td></tr>
-</table>
-
-<h3 id="pointer-memory-layout">pointer memory layout</h3>
-<p>在堆疊Stack中，i變數的記憶體位址是0x00000008，i儲存的值是55，p變數的記憶體位址是0x00000000，p儲存的值是0x00000008。<br /></p>
-
-<p><img src="/assets/img/pointer/pointer_memory1.png" alt="img" /></p>
-
-<h3 id="指標類型的變數">指標類型的變數</h3>
-<p>使用指標類型的變數，實際上是取出變數的值。</p>
+<p>要刪除的節點是右子節點，parent為「要刪除節點」的「父節點」。<br />
+<img src="/assets/img/java_datastruct/bst_del_leaf2.png" alt="img" /><br /></p>
 
 <figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">parent</span><span class="o">.</span><span class="na">right</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>完整程式碼:<br /></p>
+<h3 id="要刪除的節點是左子節點下面有子樹">要刪除的節點，是左子節點，下面有子樹。</h3>
+<p>如下圖，要刪除的節點，是左子節點，下面有子樹。
+<img src="/assets/img/java_datastruct/bst_del_1child.png" alt="img" /><br /></p>
+
+<p>要刪除的節點，是左子節點，下面有一個左子樹。</p>
+
+<p>刪除後的圖如下:<br />
+<img src="/assets/img/java_datastruct/bst_del_l_1chl.png" alt="img" /><br /></p>
 
 <figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>  <span class="c1">// 整數類型的變數i</span>
-  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>  <span class="c1">// 指標類型的變數p，儲存變數i的記憶體位址</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p變數的值 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">parent</span><span class="o">.</span><span class="na">left</span> <span class="o">=</span> <span class="n">target</span><span class="o">.</span><span class="na">left</span><span class="o">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i的位址 = 0x00000008
-p變數的值 = 0x00000008
-</code></pre></div></div>
-<h3 id="指標指向其它位址">指標指向其它位址</h3>
+<p>要刪除的節點，是左子節點，下面有一個右子樹。</p>
+
+<p>刪除後的圖如下:<br />
+<img src="/assets/img/java_datastruct/bst_del_l_1chr.png" alt="img" /><br /></p>
 
 <figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre><span class="err">變數名</span> <span class="o">=</span> <span class="err">其它記憶體位址</span>
-<span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">;</span>
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">parent</span><span class="o">.</span><span class="na">left</span> <span class="o">=</span> <span class="n">target</span><span class="o">.</span><span class="na">right</span><span class="o">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p>再印出p，就會顯示p變數儲存的值，已改變成其它記憶體位址。</p>
+<h3 id="要刪除的節點是右子節點下面有一個子樹">要刪除的節點，是右子節點，下面有一個子樹</h3>
+<p>要刪除的節點，是右子節點，下面有一個左子樹。</p>
 
-<p>完整程式碼:</p>
+<p>刪除後的圖如下:<br />
+<img src="/assets/img/java_datastruct/bst_del_r_1chl.png" alt="img" /><br /></p>
 
 <figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>  <span class="c1">// 整數類型的變數i</span>
-  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>  <span class="c1">// 指標類型的變數p，儲存變數i的記憶體位址\</span>
-  <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-  <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">j</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"j的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p變數的值 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">parent</span><span class="o">.</span><span class="na">right</span> <span class="o">=</span> <span class="n">target</span><span class="o">.</span><span class="na">left</span><span class="o">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i的位址 = 0x0000000E
-j的位址 = 0x0000000B
-p變數的值 = 0x0000000B
-</code></pre></div></div>
+<p>要刪除的節點，是右子節點，下面有一個右子樹。</p>
 
-<p>其它範例:</p>
+<p>刪除後的圖如下:<br />
+<img src="/assets/img/java_datastruct/bst_del_r_1chr.png" alt="img" /><br /></p>
 
 <figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">;</span>
-  <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-  <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">;</span>
-  <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"a = "</span> <span class="o">&lt;&lt;</span> <span class="n">a</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b = "</span> <span class="o">&lt;&lt;</span> <span class="n">b</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">parent</span><span class="o">.</span><span class="na">right</span> <span class="o">=</span> <span class="n">target</span><span class="o">.</span><span class="na">right</span><span class="o">;</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a = 10
-b = 20
-</code></pre></div></div>
+<h3 id="要刪除的節點有2個子樹">要刪除的節點有2個子樹</h3>
+<p>尋找右子樹中最小值，使用temp變數，暫存最小值。<br />
+<img src="/assets/img/java_datastruct/bst_del_2ch_1.png" alt="img" /><br /></p>
 
-<h3 id="指標類型的變數位址">指標類型的變數位址</h3>
-<p>使用<code class="language-plaintext highlighter-rouge">&amp;</code>「取位址」運算子放在p變數前，可以取出p變數的記憶體位址。</p>
+<p>把最小節點8刪掉。<br />
+<img src="/assets/img/java_datastruct/bst_del_2ch_2.png" alt="img" /><br /></p>
 
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p>把要刪除節點的值，修改成temp變數最小值。<br />
+<img src="/assets/img/java_datastruct/bst_del_2ch_3.png" alt="img" /><br /></p>
 
-<p>完整程式碼:<br /></p>
+<h2 id="程式碼">程式碼</h2>
 
 <figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>  <span class="c1">// 整數類型的變數i</span>
-  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>  <span class="c1">// 指標類型的變數p，儲存變數i的記憶體位址</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p變數的值 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i的位址 = 0x00000008
-p變數的值 = 0x00000008
-p的位址 = 0x00000000
-</code></pre></div></div>
-<h3 id="-取值運算子">* 取值運算子</h3>
-<p>使用 * 取值運算子，可以取得「記憶體位址」存放的值。<br />
-以下程式碼印出p存放的值 = 0x00000008 記憶體位址<br /></p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>以下的程式碼等同於<code class="language-plaintext highlighter-rouge">*0x00000008</code>，取得0x00000008記憶體位址，存放的值。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>55
-</code></pre></div></div>
-<p>顯示的結果為55。</p>
-
-<p><img src="/assets/img/pointer/pointer_memory2.png" alt="img" /></p>
-
-<p>完整程式碼:<br /></p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>  <span class="c1">// 整數類型的變數i</span>
-  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>  <span class="c1">// 指標類型的變數p，儲存變數i的記憶體位址</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p變數的值 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"* p取得「記憶體位址」存放的值 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i的位址 = 0x00000008
-p變數的值 = 0x00000008
-p的位址 = 0x00000000
-* p取得「記憶體位址」存放的值 = 55
-</code></pre></div></div>
-
-<h3 id="-修改記憶體中的值">* 修改記憶體中的值</h3>
-<p>以下的方式，等同於<code class="language-plaintext highlighter-rouge">*0x00000008</code>，取得0x00000008記憶體位址，並修改0x00000008記憶體位址中的值，變成10。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>完整程式碼:<br /></p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -3572,80 +3222,446 @@ p的位址 = 0x00000000
 10
 11
 12
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>  <span class="c1">// 整數類型的變數i</span>
-  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>  <span class="c1">// 指標類型的變數p，儲存變數i的記憶體位址</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p變數的值 = "</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p的位址 = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"* p取得「記憶體位址」存放的值 = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"修改後，i = "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"修改後，*p = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">BSTree</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">BinarySearchTree</span> <span class="n">binarySearchTree</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BinarySearchTree</span><span class="o">();</span>
+    <span class="n">binarySearchTree</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Node</span><span class="o">(</span><span class="mi">10</span><span class="o">));</span>
+    <span class="n">binarySearchTree</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Node</span><span class="o">(</span><span class="mi">5</span><span class="o">));</span>
+    <span class="n">binarySearchTree</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Node</span><span class="o">(</span><span class="mi">12</span><span class="o">));</span>
+    <span class="n">binarySearchTree</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Node</span><span class="o">(</span><span class="mi">11</span><span class="o">));</span>
+    <span class="n">binarySearchTree</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Node</span><span class="o">(</span><span class="mi">20</span><span class="o">));</span>
+    <span class="n">binarySearchTree</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Node</span><span class="o">(</span><span class="mi">18</span><span class="o">));</span>
+    <span class="n">binarySearchTree</span><span class="o">.</span><span class="na">inOrder</span><span class="o">();</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"刪除後"</span><span class="o">);</span>
+    <span class="n">binarySearchTree</span><span class="o">.</span><span class="na">delNode</span><span class="o">(</span><span class="mi">18</span><span class="o">);</span>
+    <span class="n">binarySearchTree</span><span class="o">.</span><span class="na">delNode</span><span class="o">(</span><span class="mi">20</span><span class="o">);</span>
+    <span class="n">binarySearchTree</span><span class="o">.</span><span class="na">delNode</span><span class="o">(</span><span class="mi">5</span><span class="o">);</span>
+    <span class="n">binarySearchTree</span><span class="o">.</span><span class="na">delNode</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+    <span class="n">binarySearchTree</span><span class="o">.</span><span class="na">delNode</span><span class="o">(</span><span class="mi">11</span><span class="o">);</span>
+    <span class="n">binarySearchTree</span><span class="o">.</span><span class="na">delNode</span><span class="o">(</span><span class="mi">12</span><span class="o">);</span>
+    <span class="n">binarySearchTree</span><span class="o">.</span><span class="na">inOrder</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">BinarySearchTree</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="nc">Node</span> <span class="n">root</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="nc">Node</span> <span class="n">node</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">root</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="c1">// 如果是空樹，就把root設為node</span>
+      <span class="n">root</span> <span class="o">=</span> <span class="n">node</span><span class="o">;</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+      <span class="c1">// 如果不是空樹，就去找子樹，可新增的位罝</span>
+      <span class="n">root</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">node</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">inOrder</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">root</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">root</span><span class="o">.</span><span class="na">inOrder</span><span class="o">();</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">delNode</span><span class="o">(</span><span class="kt">int</span> <span class="n">findValue</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">root</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span><span class="o">;</span>
+    <span class="nc">Node</span> <span class="n">target</span> <span class="o">=</span> <span class="n">findTarget</span><span class="o">(</span><span class="n">findValue</span><span class="o">);</span>
+    <span class="c1">// 找不到要刪除的節點，返回</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">target</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span><span class="o">;</span>
+    <span class="c1">// root就是要刪除的節點，而且root左子樹與右子樹都是NULL</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">root</span> <span class="o">==</span> <span class="n">target</span> <span class="o">&amp;&amp;</span> <span class="n">root</span><span class="o">.</span><span class="na">left</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">root</span><span class="o">.</span><span class="na">right</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="c1">// 設為NULL</span>
+      <span class="n">root</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+      <span class="c1">// 返回</span>
+      <span class="k">return</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">// 尋找要刪除節點的父節點</span>
+    <span class="nc">Node</span> <span class="n">parent</span> <span class="o">=</span> <span class="n">findParent</span><span class="o">(</span><span class="n">findValue</span><span class="o">);</span>
+    <span class="c1">// 要刪除的是根節點，根節點沒有parent，但根節點下面左子樹或右子樹，有一邊是NULL，有一邊是有子樹</span>
+    <span class="c1">// 例:10,11 要刪除10根節點，但10下面有11這個右子樹</span>
+    <span class="c1">// 直接把11這個右子樹取代root</span>
+    <span class="c1">// 例:2,5 要刪除5根節點，但5下面有2這個左子樹</span>
+    <span class="c1">// 直接把2這個左子樹取代root</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">parent</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">root</span> <span class="o">==</span> <span class="n">target</span> <span class="o">&amp;&amp;</span> <span class="o">(</span><span class="n">root</span><span class="o">.</span><span class="na">right</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span> <span class="n">root</span><span class="o">.</span><span class="na">left</span> <span class="o">==</span> <span class="kc">null</span><span class="o">))</span> <span class="o">{</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">root</span><span class="o">.</span><span class="na">left</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">root</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="na">right</span><span class="o">;</span>
+      <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+        <span class="n">root</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="na">left</span><span class="o">;</span>
+      <span class="o">}</span>
+      <span class="c1">// 返回</span>
+      <span class="k">return</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">// 要刪除的節點是葉子</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">target</span><span class="o">.</span><span class="na">left</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">target</span><span class="o">.</span><span class="na">right</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="c1">// 判斷父節點的左子樹是否為要刪除的節點</span>
+      <span class="k">if</span><span class="o">(</span><span class="n">parent</span><span class="o">.</span><span class="na">left</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">parent</span><span class="o">.</span><span class="na">left</span><span class="o">.</span><span class="na">id</span> <span class="o">==</span> <span class="n">target</span><span class="o">.</span><span class="na">id</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// 若是葉子，直接設成NULL</span>
+        <span class="n">parent</span><span class="o">.</span><span class="na">left</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+        <span class="c1">// 判斷父節點的右子樹是否為要刪除的節點</span>
+      <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">parent</span><span class="o">.</span><span class="na">right</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">parent</span><span class="o">.</span><span class="na">right</span><span class="o">.</span><span class="na">id</span> <span class="o">==</span> <span class="n">target</span><span class="o">.</span><span class="na">id</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// 若是葉子，直接設成NULL</span>
+        <span class="n">parent</span><span class="o">.</span><span class="na">right</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+      <span class="o">}</span>
+    <span class="c1">// 左子樹與右子樹不為NULL</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">target</span><span class="o">.</span><span class="na">left</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;</span> <span class="n">target</span><span class="o">.</span><span class="na">right</span> <span class="o">!=</span><span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="c1">// 尋找右子樹中，最小值(從右子樹下的左子樹一路尋找)</span>
+      <span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="n">delRightTreeMin</span><span class="o">(</span><span class="n">target</span><span class="o">.</span><span class="na">right</span><span class="o">);</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">min</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">target</span><span class="o">.</span><span class="na">id</span> <span class="o">=</span> <span class="n">min</span><span class="o">;</span>
+      <span class="o">}</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span><span class="c1">// 若要刪的節點不為葉子，且左子樹或右子樹有一邊是NULL</span>
+      <span class="c1">// 要刪除節點target是在parent的左子樹</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">parent</span><span class="o">.</span><span class="na">left</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">parent</span><span class="o">.</span><span class="na">left</span><span class="o">.</span><span class="na">id</span> <span class="o">==</span> <span class="n">target</span><span class="o">.</span><span class="na">id</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// 要刪除的節點下面有左子樹</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">target</span><span class="o">.</span><span class="na">left</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+          <span class="n">parent</span><span class="o">.</span><span class="na">left</span> <span class="o">=</span> <span class="n">target</span><span class="o">.</span><span class="na">left</span><span class="o">;</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span><span class="c1">//要刪除的節點下面有右子樹</span>
+          <span class="n">parent</span><span class="o">.</span><span class="na">left</span> <span class="o">=</span> <span class="n">target</span><span class="o">.</span><span class="na">right</span><span class="o">;</span>
+        <span class="o">}</span>
+      <span class="c1">// 要刪除節點target是在parent的右子樹</span>
+      <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">parent</span><span class="o">.</span><span class="na">right</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">parent</span><span class="o">.</span><span class="na">right</span><span class="o">.</span><span class="na">id</span> <span class="o">==</span> <span class="n">target</span><span class="o">.</span><span class="na">id</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// 要刪除的節點下面有左子樹</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">target</span><span class="o">.</span><span class="na">left</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+          <span class="n">parent</span><span class="o">.</span><span class="na">right</span> <span class="o">=</span> <span class="n">target</span><span class="o">.</span><span class="na">left</span><span class="o">;</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span><span class="c1">//要刪除的節點下面有右子樹</span>
+          <span class="n">parent</span><span class="o">.</span><span class="na">right</span> <span class="o">=</span> <span class="n">target</span><span class="o">.</span><span class="na">right</span><span class="o">;</span>
+        <span class="o">}</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">delRightTreeMin</span><span class="o">(</span><span class="nc">Node</span> <span class="n">node</span><span class="o">)</span>  <span class="o">{</span>
+    <span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+    <span class="k">while</span> <span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">left</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">node</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="na">left</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="n">min</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="na">id</span><span class="o">;</span>
+    <span class="n">delNode</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">id</span><span class="o">);</span>
+    <span class="k">return</span> <span class="n">min</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="nc">Node</span> <span class="nf">findTarget</span><span class="o">(</span><span class="kt">int</span> <span class="n">target</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 如果ROOT為NULL，就直接傳回NULL</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">root</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+      <span class="c1">// 尋找要搜尋目標</span>
+      <span class="k">return</span> <span class="n">root</span><span class="o">.</span><span class="na">findTarget</span><span class="o">(</span><span class="n">target</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="nc">Node</span> <span class="nf">findParent</span><span class="o">(</span><span class="kt">int</span> <span class="n">target</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 如果ROOT為NULL，就直接傳回NULL</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">root</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+      <span class="c1">// 尋找要搜尋目標的父節點</span>
+      <span class="k">return</span> <span class="n">root</span><span class="o">.</span><span class="na">findParent</span><span class="o">(</span><span class="n">target</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Node</span> <span class="o">{</span>
+  <span class="kt">int</span> <span class="n">id</span><span class="o">;</span>
+  <span class="nc">Node</span> <span class="n">left</span><span class="o">;</span>
+  <span class="nc">Node</span> <span class="n">right</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="nf">Node</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">id</span> <span class="o">=</span> <span class="n">id</span><span class="o">;</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="nc">Node</span> <span class="nf">findTarget</span><span class="o">(</span><span class="kt">int</span> <span class="n">target</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">target</span> <span class="o">==</span> <span class="k">this</span><span class="o">.</span><span class="na">id</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="k">this</span><span class="o">;</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">target</span> <span class="o">&gt;</span> <span class="k">this</span><span class="o">.</span><span class="na">id</span><span class="o">)</span> <span class="o">{</span>
+      <span class="c1">// 看右子樹是否為NULL，若為NULL就傳回NULL</span>
+      <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">right</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+      <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+        <span class="c1">// 不為NULL，就繼續從右子樹搜尋</span>
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">right</span><span class="o">.</span><span class="na">findTarget</span><span class="o">(</span><span class="n">target</span><span class="o">);</span>
+      <span class="o">}</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span> <span class="c1">// target &lt; this.id</span>
+      <span class="c1">// 看左子樹是否為NULL，若為NULL就傳回NULL</span>
+      <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">left</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+      <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+        <span class="c1">// 不為NULL，就繼續從左子樹搜尋</span>
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">left</span><span class="o">.</span><span class="na">findTarget</span><span class="o">(</span><span class="n">target</span><span class="o">);</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="nc">Node</span> <span class="nf">findParent</span><span class="o">(</span><span class="kt">int</span> <span class="n">target</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// 如果左子樹不是null，並且左子樹就是要找的目標，傳回目前節點，目前節點就是根節點</span>
+    <span class="c1">// 如果右子樹不是null，並且右子樹就是要找的目標，傳回目前節點，目前節點就是根節點</span>
+    <span class="k">if</span> <span class="o">((</span><span class="k">this</span><span class="o">.</span><span class="na">left</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="o">.</span><span class="na">left</span><span class="o">.</span><span class="na">id</span> <span class="o">==</span> <span class="n">target</span><span class="o">)</span> <span class="o">||</span>
+        <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">right</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="o">.</span><span class="na">right</span><span class="o">.</span><span class="na">id</span> <span class="o">==</span> <span class="n">target</span><span class="o">))</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="k">this</span><span class="o">;</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+      <span class="c1">// 要找的目標，小於目前節點的id，代表要往左子樹找</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">target</span> <span class="o">&lt;</span> <span class="k">this</span><span class="o">.</span><span class="na">id</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// 如果左子樹是null，傳回NULL</span>
+        <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">left</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+          <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+          <span class="c1">// 往左子樹找目標</span>
+          <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">left</span><span class="o">.</span><span class="na">findParent</span><span class="o">(</span><span class="n">target</span><span class="o">);</span>
+        <span class="o">}</span>
+      <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+        <span class="c1">// 要找的目標大於等於目前節點，代表要往右子樹找</span>
+        <span class="c1">// 如果右子樹是NULL，傳回NULL</span>
+        <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">right</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+          <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+          <span class="c1">// 往右子樹找目標</span>
+          <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">right</span><span class="o">.</span><span class="na">findParent</span><span class="o">(</span><span class="n">target</span><span class="o">);</span>
+        <span class="o">}</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="nc">String</span> <span class="nf">toString</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="s">"id="</span> <span class="o">+</span> <span class="n">id</span> <span class="o">;</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">inOrder</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">left</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">left</span><span class="o">.</span><span class="na">inOrder</span><span class="o">();</span>
+    <span class="o">}</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">right</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">right</span><span class="o">.</span><span class="na">inOrder</span><span class="o">();</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="nc">Node</span> <span class="n">node</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">node</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span><span class="o">;</span>
+    <span class="c1">// 小於目前節點，新增在左子樹</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">id</span> <span class="o">&lt;</span> <span class="k">this</span><span class="o">.</span><span class="na">id</span><span class="o">)</span> <span class="o">{</span>
+      <span class="c1">// 左子樹是葉子節點，才新增</span>
+      <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">left</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">left</span> <span class="o">=</span> <span class="n">node</span><span class="o">;</span>
+      <span class="o">}</span> <span class="k">else</span> <span class="o">{</span> <span class="c1">// 不是葉子，就繼續往左子樹找</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">left</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">node</span><span class="o">);</span>
+      <span class="o">}</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+      <span class="c1">// 大於、等於目前節點，新增在右子樹</span>
+      <span class="c1">// 右子樹是葉子節點，才新增</span>
+      <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">right</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">right</span> <span class="o">=</span> <span class="n">node</span><span class="o">;</span>
+      <span class="o">}</span> <span class="k">else</span> <span class="o">{</span> <span class="c1">// 不是葉子，就繼續往右子樹找</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">right</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">node</span><span class="o">);</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i的位址 = 0x00000008
-p變數的值 = 0x00000008
-p的位址 = 0x00000000
-* p取得「記憶體位址」存放的值 = 55
-修改後，i = 10
-修改後，*p = 10
-</code></pre></div></div>
-
-<h3 id="程式碼">程式碼</h3>
-<p>以下為宣告一個i1的整數變數，初始值為10。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>指標變數存放的內容是位址，以下為宣告一個p1的指標變數，使用&amp;取得變數i1記憶體位址，p1變數儲存i1變數的記憶體位址。</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="kt">int</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i1</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>完整程式碼</p>
-
-<figure class="highlight">
-  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-  <span class="kt">int</span><span class="o">*</span> <span class="n">p1</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i1</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"i1的位址="</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">i1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"p1存放的位址 ="</span> <span class="o">&lt;&lt;</span> <span class="n">p1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>第2行，宣告i1整型變數。</p>
-
-<p>第3行，宣告p1整型指標變數，使用取位址運算子&amp;，取出i1變數的記憶體開始位址，將位址放入p1指標。</p>
-
-<p>第4行，印出i1的位址。</p>
-
-<p>第5行，印出p1所存放的內容。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
-i1的位址= 0x7ff7bfeff468
-p1存放的位址 =0x7ff7bfeff468
-</code></pre></div></div>
-
-<p>從執行結果可以發現，印出的結果是一樣。</p>
 
 </section>
             </div><div class="search-results">
@@ -3709,7 +3725,17 @@ window.MathJax = {
                     
     
                     
+                        
+                        <a href="/pages/dataStruct/bst_add" class="navigation navigation-prev navigation-unique" aria-label="Previous page: BST新增">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
 
+                    
+                        
+                        <a href="/pages/dataStruct/avl_tree" class="navigation navigation-next navigation-unique" aria-label="Next page: AVL高度">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -3723,6 +3749,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "AVL高度",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/dataStruct/avl_tree.md",
+            "ref": "_pages/dataStruct/avl_tree.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -3812,13 +3847,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/c/pointer/pointer2.md",
-        "mtime": "2025-07-27 00:00:00 +0800",
+        "path": "_pages/dataStruct/bst_del.md",
+        "mtime": "2025-07-31 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2025-07-30 15:01:12 +0800"
+        "time": "2025-08-02 17:08:43 +0800"
     },
     "basePath": "",
     "book": {

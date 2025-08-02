@@ -8,8 +8,8 @@ keywords: java,Binary Search Tree
 直接把root設為null
 
 ### root有一邊是有子樹，另一邊是null
-如果root只有左子樹，要刪除root，直接把root指向左子樹。<br>
 如果root只有右子樹，要刪除root，直接把root指向右子樹。<br>
+如果root只有左子樹，要刪除root，直接把root指向左子樹。<br>
 
 ![img]({{site.imgurl}}/java_datastruct/del_root_has1ch.png)
 
@@ -21,6 +21,8 @@ keywords: java,Binary Search Tree
 樹的刪除也是一樣，要先找到「要刪除節點」的「父節點」。<br>
 「要刪除節點」的「父節點」，命名為parent。<br>
 「要刪除節點」，命名為target。<br>
+
+![img]({{site.imgurl}}/java_datastruct/bst_del_leaf.png)<br>
 
 ## 名詞解釋
 ### parent
@@ -44,16 +46,17 @@ parent.right = null;
 {% endhighlight %}
 
 ### 葉子節點刪除
-![img]({{site.imgurl}}/java_datastruct/bst_del_leaf.png)<br>
 要刪除的節點是葉子，檢查要刪除的節點是左子節點，還是右子節點。<br>
 直接設為null。<br>
 
 要刪除的節點是左子節點，parent為「要刪除節點」的「父節點」。<br>
+![img]({{site.imgurl}}/java_datastruct/bst_del_leaf.png)<br>
 {% highlight java linenos %}
 parent.left = null;
 {% endhighlight %}
 
 要刪除的節點是右子節點，parent為「要刪除節點」的「父節點」。<br>
+![img]({{site.imgurl}}/java_datastruct/bst_del_leaf2.png)<br>
 {% highlight java linenos %}
 parent.right = null;
 {% endhighlight %}
