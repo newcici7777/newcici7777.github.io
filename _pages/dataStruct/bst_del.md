@@ -11,14 +11,37 @@ keywords: java,Binary Search Tree
 如果root只有左子樹，要刪除root，直接把root指向左子樹。<br>
 如果root只有右子樹，要刪除root，直接把root指向右子樹。<br>
 
+![img]({{site.imgurl}}/java_datastruct/del_root_has1ch.png)
+
 ### root下二邊都有子樹
-直接使用子節點刪除，[要刪除的節點，有2個子節點](#要刪除的節點，有2個子節點)。
+直接使用子節點刪除，[要刪除的節點有2個子節點](#要刪除的節點有2個子樹)。
 
 ## 子節點刪除
 單向鏈結串列刪除時，要先找到刪除節點的前一個節點，因為單向鏈結串列無法往回走。<br>
 樹的刪除也是一樣，要先找到「要刪除節點」的「父節點」。<br>
 「要刪除節點」的「父節點」，命名為parent。<br>
 「要刪除節點」，命名為target。<br>
+
+## 名詞解釋
+### parent
+parent為「要刪除節點」的「父節點」。<br>
+parent.left為「要刪除節點」的「父節點」下的左子樹。<br>
+
+### target
+「要刪除節點」，命名為target。<br>
+target.left為要刪除節點的左子樹。<br>
+target.right為要刪除節點的右子樹。<br>
+
+## target = null
+- [方法中區域變數指派為null][1]
+
+target為要刪除的節點。<br>
+使用target = null，無法刪除節點，因為方法中，區域變數taget修改成null，受影嚮的只有區域變數的target。<br>
+正確作法，使用要刪除節點target的父節點parent來刪除左子樹或右子樹。<br>
+{% highlight java linenos %}
+parent.left = null;
+parent.right = null;
+{% endhighlight %}
 
 ### 葉子節點刪除
 ![img]({{site.imgurl}}/java_datastruct/bst_del_leaf.png)<br>
@@ -57,13 +80,6 @@ parent.left = target.left;
 parent.left = target.right;
 {% endhighlight %}
 
-名詞解釋:<br>
-parent為「要刪除節點」的「父節點」。<br>
-parent.left為「要刪除節點」的「父節點」下的左子樹。<br>
-「要刪除節點」，命名為target。<br>
-target.left為要刪除節點的左子樹。<br>
-target.right為要刪除節點的右子樹。<br>
-
 ### 要刪除的節點，是右子節點，下面有一個子樹
 要刪除的節點，是右子節點，下面有一個左子樹。
 
@@ -83,7 +99,7 @@ parent.right = target.left;
 parent.right = target.right;
 {% endhighlight %}
 
-### 要刪除的節點，有2個子節點
+### 要刪除的節點有2個子樹
 尋找右子樹中最小值，使用temp變數，暫存最小值。<br>
 ![img]({{site.imgurl}}/java_datastruct/bst_del_2ch_1.png)<br>
 
@@ -156,6 +172,7 @@ class BinarySearchTree {
       } else {
         root = root.left;
       }
+      // 返回
       return;
     }
     // 要刪除的節點是葉子
@@ -320,3 +337,5 @@ class Node {
   }
 }
 {% endhighlight %}
+
+[1]: {% link _pages/java/method.md %}#方法中修改參數位址

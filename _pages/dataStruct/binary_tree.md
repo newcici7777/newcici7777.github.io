@@ -113,9 +113,6 @@ public class TreeTraversal {
     binaryTree.inOrder();
     System.out.println("====== 後序 =======");
     binaryTree.postOrder();
-//    System.out.println("====== 前序搜尋 =======");
-//    Node findNode = binaryTree.preOrderSearch(root, 5);
-//    System.out.println(findNode);
   }
 }
 class BinaryTree {
