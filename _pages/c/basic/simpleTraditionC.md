@@ -245,3 +245,9 @@ struct|結構|結構體|
 |constructor|建構函式|構造函式|
 |Primary constructor|主要建構函式|主構造函式|
 |Secondary constructor|次要建構函式|次構造函式|
+
+## 其它
+
+|英文|台灣|大陸|
+|:--:|:--:|:--:|
+|count|數量|個數|
