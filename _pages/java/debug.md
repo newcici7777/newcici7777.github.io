@@ -88,3 +88,10 @@ console的部分有黃色圖示，代表有資料在console顯示。
 ![img]({{site.imgurl}}/editor/debug12.png)
 
 ![img]({{site.imgurl}}/editor/debug13.png)
+
+## 迴圈設置要進入Debug的條件
+迴圈 for (int i = 0; i < 3; i++) 中，想直接跳過 i=0 與 i=1，從 i=2 開始 Debug。<br>
+下了中斷點後，對著中斷點按滑鼠右鍵，輸入condition條件。<br>
+然後再執行Debug。<br>
+![img]({{site.imgurl}}/editor/debug_condition.png)
+
