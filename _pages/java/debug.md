@@ -95,3 +95,8 @@ console的部分有黃色圖示，代表有資料在console顯示。
 然後再執行Debug。<br>
 ![img]({{site.imgurl}}/editor/debug_condition.png)
 
+## 在方法中，要脫離迴圈
+以下的方法是floyed()，裡面有三層for，若想跳過j=0，直接按step out，從j=1開始。<br>
+![img]({{site.imgurl}}/editor/loop_step_out.png)<br>
+
+若在main()方法，三層迴圈使用step out，則會跳出main方法()，程式執行完畢。
