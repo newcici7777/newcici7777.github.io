@@ -5,8 +5,6 @@ keywords: java, Floyd
 ---
 比較出發頂點i → 終點j的距離，與出發頂點i → 中間頂點k → 終點j的距離，誰比較短？
 
-k是一個中間頂點。
-
 下圖中，出發頂點0 → 終點2的距離為10，出發頂點0 → 中間頂點1 → 終點2的距離為3，很明顯0 → 1 → 2的距離更短。
 
 ![img]({{site.imgurl}}/java_datastruct/floyd1.png)
@@ -253,24 +251,30 @@ public class Floyed {
     }
   }
 
+  // 參數出發頂點i,終點j
+  // 印出的結果是呈現倒敘的方式，根據箭頭的方法來看路徑
   public void printPath(int i, int j) {
+    // 終點
     System.out.print(j);
-    // 出發頂點i → 終點j，是否有中間頂點
-    int k = preVertex[i][j];
-    // 若中間頂點k是出發頂點i，就代表前一個頂點，就是出發頂點i。
-    // 若中間頂點k「不是」出發頂點i，就代表有中間頂點，繼續找，直到中間頂點為i(出發頂點)。
-    while (k != i) {
-      System.out.print("->" + k + "->");
-      // 繼續找中間頂點，i是出發頂點是固定
-      k = preVertex[i][k];
+    // 出發頂點i → 終點j，前一個頂點是誰？
+    int pre = preVertex[i][j];
+    // 若前一個頂點是出發頂點i，就代表沒有中間頂點k。
+    // 若前一個頂點「不是」出發頂點i，就代表有中間頂點，繼續找，直到前一個頂點為i(出發頂點)。
+    while (pre != i) {
+      System.out.print("<-" + pre);
+      // 繼續找前一個頂點，i是出發頂點是固定
+      // 直到前一個頂點是i，pre == i，就離開迴圈
+      pre = preVertex[i][pre];
     }
-    System.out.print(i);
+    // 出發頂點
+    System.out.print("<-" + i);
   }
 
   public static void main(String[] args) {
     Floyed floy = new Floyed();
     floy.floyed();
     floy.print();
+    // 找頂點2 → 頂點0之間的路徑
     floy.printPath(2,0);
   }
 }
@@ -283,7 +287,7 @@ public class Floyed {
 0, 0, 1, 
 1, 1, 1, 
 1, 2, 2, 
-0->1->2
+0<-1<-2
 ```
 
 ## 另一種路徑表程式碼
@@ -294,9 +298,40 @@ public class Floyed {
 |i=1|-1|-1|-1|
 |i=2|-1|-1|-1|
 
+若出發頂點i → 終點j，有中間頂點k，直接存入preVertex(i, j)的位置。
+```
+preVertex[i][j] = k;
+```
 
+|出發\\終點|j=0|j=1|j=2|
+|i=0|-1|-1|1|
+|i=1|-1|-1|-1|
+|i=2|1|-1|-1|
 
+印出路徑要拆分二部分遞迴，分別為:<br>
+1. 出發頂點i → 中間頂點k
+2. 中間頂點k → 終點j
 
+遞迴結束條件為，`preVertex[i][j] == -1`，代表沒有中間節點了，把路徑i與路徑j印出來。<br>
+
+尋找出發頂點i為0 → 終點j為2，透過上面表格`preVertex[0][2] = 1`，找出中間頂點k為1。<br>
+拆分成二部分如下:<br>
+1. 出發頂點i為0 → 中間頂點k為1，`preVertex[0][1] = -1`，印出`0->1`
+2. 中間頂點k為1 → 終點j為2，`preVertex[1][2] = -1`，印出`1->2`
+
+{% highlight java linenos %}
+  public void printPath(int i, int j) {
+    if (preVertex[i][j] == -1) {
+      System.out.println(i + "->" + j);
+      return;
+    }
+    int k = preVertex[i][j];
+    printPath(i,k);
+    printPath(k,j);
+  }
+{% endhighlight %}
+
+完整程式碼
 {% highlight java linenos %}
 public class Floyed {
   private int[][] matrix;
@@ -363,3 +398,10 @@ public class Floyed {
   }
 }
 {% endhighlight %}
+```
+-1, -1, 1, 
+-1, -1, -1, 
+1, -1, -1, 
+0->1
+1->2
+```
