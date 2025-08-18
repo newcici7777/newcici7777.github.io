@@ -93,7 +93,7 @@ public class Krus {
     int parent1 = find(vertex1);
     int parent2 = find(vertex2);
     if (parent1 != parent2) {
-      parent[vertex1] = vertex2;
+      parent[parent1] = parent2;
     }
   }
 
