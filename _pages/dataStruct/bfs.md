@@ -8,8 +8,7 @@ keywords: java, BFS
 2. `visted[]`陣列，判斷是否已訪問過。
 3. Queue佇列
 
-先把頂點0放入佇列，並設為已訪問，下圖中，箭頭入是放入佇列的方向，箭頭出是從佇列取出的方向。<br>
-![img]({{site.imgurl}}/java_datastruct/bfs1.png)<br>
+matrix二維陣列:
 
 |頂點|j=0|j=1|j=2|j=3|
 |i=0  |0|1|1|0|
@@ -17,10 +16,20 @@ keywords: java, BFS
 |i=2  |1|0|0|0|
 |i=3  |0|1|0|0|
 
+visted陣列
+
+|頂點   |0|1|2|3|
+|visted|F|F|F|F|
+
+先把頂點0放入佇列，下圖中，箭頭入是放入佇列的方向，箭頭出是從佇列取出的方向。<br>
+![img]({{site.imgurl}}/java_datastruct/bfs1.png)<br>
+
+把頂點設為已訪問，避免重覆訪問。<br>
+
 |頂點   |0|1|2|3|
 |visted|~~F~~ <span class="markline">T</span>|F|F|F|
 
-把頂點0從佇列取出來，印出頂點0。
+把頂點0從佇列取出來，印出頂點0。<br>
 ![img]({{site.imgurl}}/java_datastruct/bfs2.png)<br>
 
 查一下matrix表格中，第0列(i=0)代表頂點0，j是相連頂點，1代表相連，j=1與j=2的時候，是1，是相連的，把頂點1與頂點2放入佇列。<br>
@@ -30,11 +39,12 @@ keywords: java, BFS
 
 ![img]({{site.imgurl}}/java_datastruct/bfs3.png)<br>
 
-並把頂點1與頂點2設為已訪問。
+並把頂點1與頂點2設為已訪問。<br>
+
 |頂點   |0|1|2|3|
 |visted|T|~~F~~ <span class="markline">T</span>|~~F~~ <span class="markline">T</span>|F|
 
-把頂點1從佇列取出，印出頂點1。
+把頂點1從佇列取出，印出頂點1。<br>
 ![img]({{site.imgurl}}/java_datastruct/bfs4.png)<br>
 
 查一下matrix表格中，第1列(i=1)代表頂點1，j是相連頂點，1代表相連，j=0與j=3的時候，是1，是相連的，但頂點0已被訪問過，只放入未訪問頂點3放入佇列。<br>
@@ -45,14 +55,15 @@ keywords: java, BFS
 
 ![img]({{site.imgurl}}/java_datastruct/bfs5.png)<br>
 
-並把頂點3設為已訪問。
+並把頂點3設為已訪問。<br>
+
 |頂點   |0|1|2|3|
 |visted|T|T|T|~~F~~ <span class="markline">T</span>|
 
-把頂點2從佇列取出，印出頂點2。
+把頂點2從佇列取出，印出頂點2。<br>
 ![img]({{site.imgurl}}/java_datastruct/bfs6.png)<br>
 
-把頂點3從佇列取出，印出頂點3。
+把頂點3從佇列取出，印出頂點3。<br>
 ![img]({{site.imgurl}}/java_datastruct/bfs7.png)<br>
 
 完整程式碼如下:
