@@ -400,3 +400,75 @@ Java的數字都有正負號，沒有unsinged正整數。
 ------------
  10100111
 ```
+## 2進位byte與string互轉
+### 2進位2's補數字串轉byte
+使用Integer.parseInt(字串,2)
+{% highlight java linenos %}
+// 1的2's補數為-1
+String str = "11111111";
+System.out.println((byte)Integer.parseInt(str,2));
+{% endhighlight %}
+```
+-1
+```
+
+### byte是負數，轉string二進位
+```
+Integer.toBinaryString(byte)
+```
+印出的是整數的大小4byte，1個byte中又有8bit，所以會印出8bit \* 4(因為4byte) = 32個bit的二進位字元。<br>
+傳回的仍是2進位2's補數。<br>
+{% highlight java linenos %}
+// 1的2's補數為-1
+String str = "11111111";
+byte b = (byte) Integer.parseInt(str, 2);
+// 把2's補數為-1的byte，轉成2進位String
+String str2 = Integer.toBinaryString(b);
+System.out.println("str2 = " + str2);
+{% endhighlight %}
+```
+str2 = 11111111111111111111111111111111
+```
+
+### byte是正數，轉string二進位
+但是注意！如果是正整數1，不是2's補數，印出來是1，不是32個bit的字元
+{% highlight java linenos %}
+// 正整數1
+String str = "00000001";
+// 轉成byte
+byte b_test = (byte) Integer.parseInt(str, 2);
+// byte轉str
+String str2 = Integer.toBinaryString(b_test);
+System.out.println("str2 = " + str2);
+{% endhighlight %}
+```
+str2 = 1
+```
+
+如果要取得1的二進位字元，要用256(1 0000 0000)做or。
+```
+   1 0000 0000
+or   0000 0001
+----------------
+   1 0000 0001
+``` 
+再substring，倒數8位元，取得0000 0001
+
+注意！需把byte轉成int，才能做or。
+{% highlight java linenos %}
+String str = "00000001";
+byte b_test = (byte) Integer.parseInt(str, 2);
+// 把byte轉成int
+int temp = b_test;
+// 與1 0000 0000 進行or
+temp |= 256;
+// 把二進位轉成字串
+String str2 = Integer.toBinaryString(temp);
+System.out.println("str2 = " + str2);
+// 取出倒數8位元
+System.out.println("substring str2 = " + str2.substring(str2.length() - 8));
+{% endhighlight %}
+```
+str2 = 100000001
+substring str2 = 00000001
+```

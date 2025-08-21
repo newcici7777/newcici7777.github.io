@@ -62,6 +62,22 @@ x <= 索引 < y
 llo World
 llo 
 ```
+
+取出倒數x位的字串。<br>
+```
+字串長度 - 倒數位數
+s1.length() - 2
+```
+{% highlight java linenos %}
+String s1 = "Hello World";
+// 印出倒數2位的字串
+String s2 = s1.substring(s1.length() - 2);
+System.out.println(s2);
+{% endhighlight %}
+```
+ld
+```
+
 ## 去掉字串前後
 {% highlight java linenos %}
   // trim去掉前後空格
