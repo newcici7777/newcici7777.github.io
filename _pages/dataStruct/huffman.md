@@ -3,54 +3,251 @@ title: 霍夫曼樹
 date: 2025-08-20
 keywords: java, Huffman
 ---
+## 建立簡單霍夫曼樹
+### 排序
+未排序資料如下:
+```
+60, 5, 16, 24, 12
+```
+排序後:
+```
+5, 12, 16, 24, 60
+```
+
+### 取出2個最小元素
+取出前面2個最小元素5、12，將2個元素的數值相加，並使用相加的值，建立新的節點。<br>
+新節點的左子樹指向5，右子樹指向12。<br>
+再把5,12從List中刪掉。<br>
+![img]({{site.imgurl}}/java_datastruct/huff1.png)<br>
+
+刪除5,12的List變成下方:
+```
+16, 24, 60
+```
+
+將剛才建立的17的新節點，加入List中。<br>
+增加17的List變成下方:<br>
+```
+16, 17, 24, 60
+```
+
+將16, 17取出，將2個元素的數值相加，並使用相加的值，建立新的節點。<br>
+新節點的左子樹指向16，右子樹指向17。<br>
+
+![img]({{site.imgurl}}/java_datastruct/huff2.png)<br>
+
+刪除16,17的List變成下方:<br>
+```
+24, 60
+```
+
+將新節點33加入，並排序。<br>
+![img]({{site.imgurl}}/java_datastruct/huff3.png)<br>
+
+增加17的List變成下方:<br>
+```
+24, 33, 60
+```
+
+將24, 33取出，將2個元素的數值相加，並使用相加的值，建立新的節點。<br>
+新節點的左子樹指向24，右子樹指向33。<br>
+![img]({{site.imgurl}}/java_datastruct/huff4.png)<br>
+
+刪除24,33的List變成下方:<br>
+```
+60
+```
+
+增加57的List變成下方:<br>
+```
+57, 60
+```
+
+將57, 60取出，將2個元素的數值相加，並使用相加的值，建立新的節點。<br>
+新節點的左子樹指向57，右子樹指向60。<br>
+![img]({{site.imgurl}}/java_datastruct/huff5.png)<br>
+
+刪除57,60的List變成下方:<br>
+```
+```
+
+增加117的List變成下方:<br>
+```
+117
+```
+
+最後只剩下一個元素117，霍夫曼樹建立完畢。<br>
+
 {% highlight java linenos %}
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Huffman {
+public class HuffmanBasic {
   public static void main(String[] args) {
     createHuffman();
   }
   public static void createHuffman() {
-    int[] data = {13, 7, 8, 3, 29, 6, 1};
-    List<Node> list = new ArrayList<>();
+    int[] data = {60,5,16,24,12};
+    List<HuffNode> list = new ArrayList<>();
     for (int i = 0; i < data.length; i++) {
-      Node node = new Node(data[i]);
+      // 建立節點
+      HuffNode node = new HuffNode(data[i]);
       list.add(node);
     }
-
+    
+    // 迴圈的離開條件:只剩下一個元素
+    // 迴圈的進入條件:元素大於1個
     while (list.size() > 1) {
+      // 排序，由小到大
       Collections.sort(list);
-      Node leftNode = list.get(0);
-      Node rightNode = list.get(1);
-      Node parent = new Node(leftNode.value + rightNode.value);
+      // 取出最小的前面二個元素
+      HuffNode leftNode = list.get(0);
+      HuffNode rightNode = list.get(1);
+      // 將前面最小的二個元素值相加，產生新的節點
+      HuffNode parent = new HuffNode(leftNode.value + rightNode.value);
+      // 左節點、右節點為最小的前二個元素
       parent.left = leftNode;
       parent.right = rightNode;
+      // 移除最小的前二個元素
       list.remove(leftNode);
       list.remove(rightNode);
+      // 加入新的節點
       list.add(parent);
     }
+    // 取出唯一的節點，這個就是huffman霍夫曼樹，進行前序遍歷。
     list.get(0).preOrder();
-
   }
 }
-class Node implements Comparable<Node>{
+class HuffNode implements Comparable<HuffNode>{
   public int value;
+  public HuffNode left;
+  public HuffNode right;
+
+  public HuffNode(int value) {
+    this.value = value;
+  }
+
+  /**
+   * 排序
+   * @param o the object to be compared.
+   * @return
+   */
+  @Override
+  public int compareTo(HuffNode o) {
+    return this.value - o.value;
+  }
+
+  /**
+   * 前序
+   */
+  public void preOrder() {
+    System.out.print(this.value + ", ");
+    if (this.left != null) {
+      this.left.preOrder();
+    }
+    if (this.right != null) {
+      this.right.preOrder();
+    }
+  }
+
+  @Override
+  public String toString() {
+    return "HuffNode{" +
+        "value=" + value +
+        '}';
+  }
+}
+{% endhighlight %}
+```
+117, 57, 24, 33, 16, 17, 5, 12, 60, 
+```
+
+## 霍夫曼編碼
+以下字串根據字元進行統計數量。
+```
+aabc
+```
+ASCII對映如下:<br>
+1. a 97
+2. b 98
+3. c 99
+
+統計結果如下:
+
+|字元|ASCII|數量|
+|:---:|:---:|:---|
+|a|97|2|
+|b|98|1|
+|c|99|1|
+
+按照數量由小到大排序:<br>
+98(1), 99(1), 97(2) <br>
+![img]({{site.imgurl}}/java_datastruct/huffc1.png)<br>
+
+將前二個數量最小的，把98與99的數量相加，建立新的節點，新節點是null，數量為98、99的數量總合。<br>
+新節點的左子樹指向98，右子樹指向99。<br>
+![img]({{site.imgurl}}/java_datastruct/huffc2.png)<br>
+
+把98、99的節點，從List刪除，把新節點放到List，根據數量排序。排序結果如下:<br>
+![img]({{site.imgurl}}/java_datastruct/huffc3.png)<br>
+
+將list中前二個數量最小的，數量相加，建立新節點，新節點是null，數量為二個節點的總合。<br>
+![img]({{site.imgurl}}/java_datastruct/huffc4.png)<br>
+
+會發現葉子節點都不是null，都是有數量。<br>
+使用前序遍歷，取得葉子的編碼。根節點是空，左子樹是0，右子樹是1。<br>
+![img]({{site.imgurl}}/java_datastruct/huffc5.png)<br>
+
+根據上圖，得到的編碼如下。
+
+|字母|ASCII|編碼|數量|
+|:--:|:--:|:--:|:--:|
+|a|97|0|2|
+|b|98|10|1|
+|c|99|11|1|
+
+根據原始字串，與編碼對映，拼出編碼結果。
+
+|a|a|b|c|
+|:--:|:--:|:--:|:--:|
+|0|0|10|11|
+
+最後產生的編碼為:<br>
+```
+001011
+```
+
+將其編碼轉成byte，byte是8個bit為一組，但不足8bit，代表是最後一個byte，本例案例簡單，只夠產生一個byte。
+
+
+
+
+### 建立Node
+因為相加的值的節點沒有字元，是null，所以要用物件，若用byte基本型別無法設為null，byte預設為0。
+{% highlight java linenos %}
+  public Byte data;
+{% endhighlight %}
+
+{% highlight java linenos %}
+class Node implements Comparable<Node> {
+  public Byte data;
+  public int weight;
   public Node left;
   public Node right;
 
-  public Node(int value) {
-    this.value = value;
+  public Node(Byte data, int weight) {
+    this.data = data;
+    this.weight = weight;
   }
 
   @Override
   public int compareTo(Node o) {
-    return this.value - o.value;
+    return this.weight - o.weight;
   }
 
   public void preOrder() {
-    System.out.println(this.value);
+    System.out.print(this + ",");
     if (this.left != null) {
       this.left.preOrder();
     }
@@ -62,16 +259,19 @@ class Node implements Comparable<Node>{
   @Override
   public String toString() {
     return "Node{" +
-        "value=" + value +
+        "data=" + data +
+        ", weight=" + weight +
         '}';
   }
 }
 {% endhighlight %}
 
+
+
 {% highlight java linenos %}
 public class Huffman {
   public static void main(String[] args) {
-    String content = "I like like like abc";
+    String content = "I like";
     byte[] bytes = content.getBytes();
     System.out.println(Arrays.toString(bytes));
     List<Node> countList = count(bytes);
