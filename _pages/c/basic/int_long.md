@@ -14,6 +14,10 @@ keywords: c++, int, long, short
 |long |4|%ld|$-2 ^{31}$ 至 $2 ^{31} - 1$|-2,147,483,648 至 2,147,483,647|
 |long long |8|%lld|$-2 ^{63}$ 至$2 ^{63} - 1$|-9,223,372,036,854,775,808 至 9,223,372,036,854,775,807|
 
+signed代表有正負符號。<br>
+signed int 與 int是相同的。<br>
+signed long與 long是相同的。<br> 
+
 ### 只有正數
 大小為正負符號的正數大小2倍，再加1，例:short正負符號，正數最大為32767，unsigned short最大為32767 \* 2 = 65534 \+ 1 
 
@@ -22,9 +26,15 @@ keywords: c++, int, long, short
 |unsinged short|2|%hu|$2 ^{16} - 1$|0 到 65,535|
 |unsinged int  |4|%u |$2 ^{32} - 1$|0 到 4,294,967,295|
 |unsinged long |4|%ud|$2 ^{32} - 1$|0 到 18,446,744,073,709,551,615|
-|unsinged long long |8|%llu|2 ^{64} - 1$|0 到 18,446,744,073,709,551,615|
+|unsinged long long |8|%llu|$2 ^{64} - 1$|0 到 18,446,744,073,709,551,615|
 
 ## 格式化
+
+|整數型態  |格式化|
+|int      |%d  |
+|long     |%ld |
+|long long|%lld|
+
 {% highlight c++ linenos %}
 int main() {
   // 把double轉int，小數直接去掉

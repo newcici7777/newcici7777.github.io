@@ -3,42 +3,46 @@ title: char字元
 date: 2024-04-18
 keywords: c++, char
 ---
-
 ## 整數
-
 整數包含`char`, bool, short, unsinged short, int, unsinged int, long, unsinged long
 
 ## char
-
 char是正整數，雖然顯示是字元，但實際存放在記憶體位置的資料型態是整數。
 
-char所對映的整數是顯示在瑩幕上的ASCII碼。<https://zh.wikipedia.org/zh-tw/ASCII>
+字元對映的ASCII碼。<https://zh.wikipedia.org/zh-tw/ASCII>
 
 若輸入單引號\'\'包住的字元，編譯器會自動把單引號包住的字元轉成整數。
 
 比如\'a\'，記憶體位址存放的十進位值是97，二進位是01100001  
 
-        
-
-|整數型態|占用Byte數量|數值範圍|格式符|輸出格式|
+|整數型態|占用Byte數量|數值範圍|格式化|輸出格式|
 |:---:|:---:|:---:|:---:|:---:|
 |char |1  |0~127|%c   |字元  |
 |char |1  |0~127|%d   |整數  |
 
+{% highlight c++ linenos %}
+int main() {
+  char a = 'a';
+  char b = 'b';
+  char c = 99;
+  printf("a = %c, b= %c, c = %c \n", a, b, c);
+  return 0;
+}
+{% endhighlight %}
+```
+a = a, b= b, c = c 
+```
+### char的轉換過程
+儲存'a' → 對映ASCII得到97 → 產生二進位1100001 → 儲存。<br>
+讀取 二進位1100001 → 轉成十進位97 → 對映ASCII得到'a' → 顯示。<br>
 
 ### 字元變數設為數字。
-
-
-程式碼
-
+第一行，直接給整數到c變數。
 {% highlight c++ linenos %}
 char c = 97;
 printf("%d\n", c);
 printf("%c\n", c);
 {% endhighlight %}
-
-第一行，直接給整數到c變數。
-
 ```
 執行結果
 97
@@ -46,13 +50,11 @@ a
 ```
 
 ### 印出char可用%c格式字串或%d格式字串
-
 {% highlight c++ linenos %}
 char c = 'a';
 printf("%d\n", c);
 printf("%c\n", c);
 {% endhighlight %}
-
 ```
 執行結果
 97
@@ -60,9 +62,7 @@ a
 ```
 
 ### int變數設為字元。
-
 在c++中，可以直接給int變數賦值單引號\'\'包住的字元
-
 {% highlight c++ linenos %}
 int main() {
   int c1 = 'A';
@@ -70,43 +70,51 @@ int main() {
 	return 0;
 }
 {% endhighlight %}
-
 ```
 執行結果
 65
 ```
 
 ### int轉型字元
-
 想印出字元，就把int轉型成char
-
 {% highlight c++ linenos %}
   int c1 = 'A';
   cout << "c1=" << (char)c1 << endl;
 {% endhighlight %}
 ```
-
 執行結果
 A
 ```
 
 ### 字元運算
-
-也可字元加整數做運算。
-
+也可字元加整數做運算。<br>
+第一行，字元+2。<br>
 {% highlight c++ linenos %}
   int c1 = 'A' + 2;
   cout << "c1=" << (char)c1 << endl;
 {% endhighlight %}
-
-第一行，字元+2。
-
 ```
 執行結果
 c1=C
 ```
-### 字元轉整數
 
+{% highlight c++ linenos %}
+int main() {
+  char a = 'a';
+  char b = 'b';
+  char c = 99;
+  int num = c + 100;
+  printf("a = %c, b= %c, c = %c \n", a, b, c);
+  printf("num = %d \n", num);
+  return 0;
+}
+{% endhighlight %}
+```
+a = a, b= b, c = c 
+num = 199
+```
+
+### 字元轉整數
 參考<https://zh.wikipedia.org/zh-tw/ASCII>
 
 |字元|ascii code|
@@ -211,7 +219,6 @@ a
 不是大寫字母
 ```
 ### 跳脫字元
-
 重要有以下幾種
 
 |Ascii碼|跳脫字元|描述
@@ -223,7 +230,6 @@ a
 
 
 #### 設定空字元
-
 {% highlight c++ linenos %}
   char c4 = 0;
   cout << "c4=" << c4 << endl;
@@ -235,7 +241,6 @@ c4=
 ```
 
 #### 關於斜線
-
 因為\"與\'與\\，被編譯器作為以下用途。
 
 * \"\"，把字串包起來。
@@ -245,7 +250,6 @@ c4=
 所以不能直接使用\"與\'與\\，必須加上\\"與\\'與`\\`。
 
 #### 雙引號
-
 {% highlight c++ linenos %}
   char c2 = '"';
   cout << "c2=" << c2 << endl;
@@ -263,7 +267,6 @@ c2="
 ```
 
 #### 單引號
-
 {% highlight c++ linenos %}
   char c3 = '\'';
   cout << "c3=" << c3 << endl;

@@ -4,6 +4,32 @@ date: 2025-08-25
 keywords: c++, float, double
 ---
 有小數的就是浮點數。<br>
+
+## 小數
+.55<br>
+55.0<br>
+5.12e2，科學表示法 5.12 \* 10^2 = 5.12 \* 100 <br>
+5.12E-2，科學表示法 5.12 \* 10^-2 = 5.12 / 100<br>
+{% highlight c++ linenos %}
+int main() {
+  double d1 = .55;
+  printf("d1 = %.2f \n", d1);
+  double d2 = 55.0;
+  printf("d2 = %.2f \n", d2);
+  double d3 = 5.12e2;
+  printf("d3 = %.2f \n", d3);
+  double d4 = 5.12E-2;
+  printf("d4 = %f \n", d4);
+  return 0;
+}
+{% endhighlight %}
+```
+d1 = 0.55 
+d2 = 55.00 
+d3 = 512.00 
+d4 = 0.051200 
+```
+
 ## double與float
 預設是double，若後面數字有加上f或F，就會是float。
 
@@ -107,7 +133,7 @@ int main() {
 ```
 
 ### 格式化不能用在整數，會印出0.00
-以下程式碼把double轉成int，資料直接丟失，變成0.000
+int用%f的格式化會顯示0.000
 {% highlight c++ linenos %}
 int main() {
   // 整數
