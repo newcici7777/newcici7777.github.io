@@ -44,7 +44,7 @@ keywords: java, Huffman
 將新節點33加入，並排序。<br>
 ![img]({{site.imgurl}}/java_datastruct/huff3.png)<br>
 
-增加17的List變成下方:<br>
+增加33的List變成下方:<br>
 ```
 24, 33, 60
 ```
