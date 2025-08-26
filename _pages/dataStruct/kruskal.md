@@ -1,5 +1,5 @@
 ---
-title: KrusKal
+title: Kruskal
 date: 2025-08-16
 keywords: java, KrusKal
 ---
