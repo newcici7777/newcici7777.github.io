@@ -124,3 +124,58 @@ public class BFS {
 ```
 0->1->2->3->
 ```
+
+## 一層層遍歷
+上面的程式碼，是頂點加入Queue，頂點從Queue取出，尋找跟此頂點相鄰的邊，再把相鄰的頂點加入Queue，Queue不為空，再從Queue取出頂點，尋找跟此頂點相鄰的邊，再把相鄰的頂點加入Queue，如此反覆遍歷，直到Queue為空。<br>
+如果需要知道經過幾層，才能遍歷完畢？<br>
+
+加入頂點0，頂點0是第1層。
+![img]({{site.imgurl}}/java_datastruct/bfs_lay1.png)<br>
+
+取出頂點0。
+![img]({{site.imgurl}}/java_datastruct/bfs_lay2.png)<br>
+
+加入頂點1與2，頂點1與2是第2層。
+![img]({{site.imgurl}}/java_datastruct/bfs_lay3.png)<br>
+
+取出頂點1與2，取出1的過程檢查出1的相鄰頂點3，把頂點3加入queue。
+![img]({{site.imgurl}}/java_datastruct/bfs_lay4.png)<br>
+
+取出頂點3，頂點3是第3層。
+![img]({{site.imgurl}}/java_datastruct/bfs_lay5.png)<br>
+
+{% highlight java linenos %}
+  public void bfsLayer() {
+    LinkedList<Integer> queue = new LinkedList<>();
+    // 記錄層數
+    int layer = 0;
+    // 從頂點0開始，此圖為連通圖，沒有不連通或孤立的圖
+    int start = 0;
+    queue.add(start);
+    // 設已訪問
+    visted[start] = true;
+    while (!queue.isEmpty()) {
+      // 每一層有多少頂點
+      int size = queue.size();
+      // 增加一層
+      layer++;
+      // 那一層頂點進行for循環
+      for (int cnt = 0; cnt < size; cnt++) {
+        int vertex = queue.poll();
+        System.out.print(vertex + "->");
+        for (int j = 0; j < vertexLen; j++) {
+          if (!visted[j] && matrix[vertex][j] == 1) {
+            queue.add(j);
+            visted[j] = true;
+          }
+        }
+      }
+    }
+    System.out.println();
+    System.out.println("layer = " + layer);
+  }
+{% endhighlight %}
+```
+0->1->2->3->
+layer = 3
+```
