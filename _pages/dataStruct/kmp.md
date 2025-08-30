@@ -13,9 +13,9 @@ suffix 中文為後綴，英文字尾。<br>
 ### 前綴
 但這邊的前綴是以下這樣的，不包含字尾。<br>
 字串 = abab<br>
-a<br>
-<span class="markline">ab</span><br>
-aba<br>
+<u>a</u>bab → a<br>
+<u>ab</u>ab → <span class="markline">ab</span><br>
+<u>aba</u>b → aba<br>
 
 ### 後綴
 後綴是以下這樣的，不包含字首。<br>
@@ -52,15 +52,16 @@ abab:<br>
 
 j是指向「前」綴，i是指向「後」綴。<br>
 ab，j指向a，i指向b，二個字母不相同，沒有共同前後綴，把j指向的索引0，塞入next陣列。<br>
-i\+\+，往前移動i=2。<br>
 ```
 next[i=1] = 0
 ```
 ![img]({{site.imgurl}}/java_datastruct/kmp_p1.png)<br>
 
-j指向a，i指向a，二個字母相同，j\+\+，j往前移動，j=1。<br>
+i\+\+，往前移動i=2。<br>
+j指向a，i指向a，二個字母相同<br>
 ![img]({{site.imgurl}}/java_datastruct/kmp_p2.png)<br>
 
+j\+\+，j往前移動，j=1。<br>
 j指向索引1，把j指向的索引1，塞入next陣列。<br>
 ```
 next[i=2] = 1
@@ -70,9 +71,10 @@ next[i=2] = 1
 i\+\+，往前移動i=3。<br>
 ![img]({{site.imgurl}}/java_datastruct/kmp_p4.png)<br>
 
-j指向b，i指向b，二個字母相同，j\+\+，j往前移動，j=2。<br>
+j指向b，i指向b，二個字母相同。<br>
 ![img]({{site.imgurl}}/java_datastruct/kmp_p5.png)<br>
 
+j\+\+，j往前移動，j=2。<br>
 j指向索引2，把j指向的索引2，塞入next陣列。<br>
 ```
 next[i=3] = 2
@@ -97,12 +99,75 @@ next[i=4] = 0
 ![img]({{site.imgurl}}/java_datastruct/kmp_p9.png)<br>
 
 ## 多次回推的next陣列範例
-pattern字串 = abababca
+pattern字串 = abababc
 
-目前i指向索引7，j指向5。
+對映的next陣列:<br>
 
+|索引    |0|1|2|3|4|5|6|
+|字串    |a|b|a|b|a|b|c|
+|next陣列|0|0|1|2|3|4|?|
 
+目前i指向索引6，j指向索引4。<br>
+i指向c，j指向a，二個字母不相同。<br>
+j = 4，套用以下的公式，找出`next[3] = 2`。<br>
+```
+j = next[j - 1]
+j = next[4 - 1]
+```
+![img]({{site.imgurl}}/java_datastruct/kmp_p10.png)<br>
 
+j移動到索引2的位置。<br>
+![img]({{site.imgurl}}/java_datastruct/kmp_p11.png)<br>
+
+目前i指向索引6，j指向索引2。<br>
+i指向c，j指向a，二個字母不相同。<br>
+j = 2，套用以下的公式，找出`next[1] = 0`。<br>
+```
+j = next[j - 1]
+j = next[2 - 1]
+```
+![img]({{site.imgurl}}/java_datastruct/kmp_p12.png)<br>
+
+j移動到索引0。<br>
+i指向c，j指向a，二個字母不相同。<br>
+j已經沒辦法再往前移動。<br>
+`next[i=6] = 0`，0是j的索引。<br>
+![img]({{site.imgurl}}/java_datastruct/kmp_p13.png)<br>
+
+|索引    |0|1|2|3|4|5|6|
+|字串    |a|b|a|b|a|b|c|
+|next陣列|0|0|1|2|3|4|<span class="markline">0</span>|
+
+{% highlight java linenos %}
+  public static int[] getNext(String pattern) {
+    int[] next = new int[pattern.length()];
+    // j指向前綴，預設為0
+    int j = 0;
+    // 索引0，固定都是0，因為沒有前綴後綴
+    next[0] = 0;
+    // i指向後綴，固定由1開始
+    for (int i = 1; i < pattern.length(); i++) {
+      // 判斷索引j與i指向的值是否相等，不相等就找next[j-1]
+      // j=0已經沒辦法再往前移動，就離開while迴圈
+      // j>0才能進入迴圈
+      while (j > 0 && pattern.charAt(j) != pattern.charAt(i)) {
+        j = next[j - 1];
+      }
+      // j 替換成next[j-1]，比對後可以配對到索引i指向的值
+      if (pattern.charAt(i) == pattern.charAt(j)) {
+        // j就往右邊移動一格
+        j++;
+      }
+      // 如果沒有比對到
+      // 或是有比對到
+      // next[i索引] 放置j的索引
+      next[i] = j;
+    }
+    return next;
+  }
+{% endhighlight %}
+
+## 完整程式碼
 {% highlight java linenos %}
 public class Kmp {
   public static void main(String[] args) {
@@ -132,15 +197,26 @@ public class Kmp {
   }
   public static int[] getNext(String pattern) {
     int[] next = new int[pattern.length()];
+    // j指向前綴，預設為0
     int j = 0;
+    // 索引0，固定都是0，因為沒有前綴後綴
     next[0] = 0;
+    // i指向後綴，固定由1開始
     for (int i = 1; i < pattern.length(); i++) {
+      // 判斷索引j與i指向的值是否相等，不相等就找next[j-1]
+      // j=0已經沒辦法再往前移動，就離開while迴圈
+      // j>0才能進入迴圈
       while (j > 0 && pattern.charAt(j) != pattern.charAt(i)) {
         j = next[j - 1];
       }
+      // j 替換成next[j-1]，比對後可以配對到索引i指向的值
       if (pattern.charAt(i) == pattern.charAt(j)) {
+        // j就往右邊移動一格
         j++;
       }
+      // 如果沒有比對到
+      // 或是有比對到
+      // next[i索引] 放置j的索引
       next[i] = j;
     }
     return next;
