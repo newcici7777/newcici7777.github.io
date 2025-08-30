@@ -159,7 +159,7 @@ public class BFS {
       int size = queue.size();
       // 增加一層
       layer++;
-      // 那一層頂點進行for循環
+      // 針對每一層的頂點進行for循環
       for (int cnt = 0; cnt < size; cnt++) {
         int vertex = queue.poll();
         System.out.print(vertex + "->");

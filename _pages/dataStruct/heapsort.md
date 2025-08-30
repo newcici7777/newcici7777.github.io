@@ -241,7 +241,7 @@ if (temp < arr[k]) {
 ![img]({{site.imgurl}}/java_datastruct/heapsort3.png)<br>
 
 下一次迴圈，k\+\+，k = 2。<br>
-`arr[k = 2] = 1` 沒有大於temp = 15，直接跳離迴圈。 
+`arr[k = 2] = 5` 沒有大於temp = 15，直接跳離迴圈。 
 {% highlight java linenos %}
 if (temp < arr[k]) {
   arr[i] = arr[k];
