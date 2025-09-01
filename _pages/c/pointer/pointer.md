@@ -40,8 +40,8 @@ Stack堆疊，以下的程式碼，a變數先push到Stack中，接著b變數再p
 
 接著a變數pop出來，從0x7ff7bfeff468位址「開始」建立記憶體空間，int是4byte的記憶體大小，所以結束位址是0x7ff7bfeff46B。<br>
 
-- 區域變數先定義 → 比較高的位址
-- 區域變數後定義 → 比較低的位址
+- 區域變數先定義 → 高位 → 大的記憶體位址
+- 區域變數後定義 → 低位 → 小的記憶體位址
 
 ![img]({{site.imgurl}}/pointer/stack_var1.png)
 
@@ -61,20 +61,22 @@ int main() {
 變數b位址 = 0x7ff7bfeff460
 ```
 
-|記憶體位址|占用記憶體範圍|
-|:-------------|:--------:|
-|0x7ff7bfeff46B|a結束|
-|0x7ff7bfeff46A|↑|
-|0x7ff7bfeff469|↑|
-|0x7ff7bfeff468|a開始|
-|0x7ff7bfeff467|b結束|
-|0x7ff7bfeff466|↑|
-|0x7ff7bfeff465|↑|
-|0x7ff7bfeff464|↑|
-|0x7ff7bfeff463|↑|
-|0x7ff7bfeff462|↑|
-|0x7ff7bfeff461|↑|
-|0x7ff7bfeff460|b開始|
+記憶體位址由低到高，低的(小的)記憶體位址在下面，高的(大的)記憶體位址在上面。
+
+|高位低位|記憶體位址|占用記憶體範圍|
+|:---:|:-------------|:--------:|
+|高位(大)|0x7ff7bfeff46B|a結束|
+|↑|0x7ff7bfeff46A|↑|
+|↑|0x7ff7bfeff469|↑|
+|↑|0x7ff7bfeff468|a開始|
+|↑|0x7ff7bfeff467|b結束|
+|↑|0x7ff7bfeff466|↑|
+|↑|0x7ff7bfeff465|↑|
+|↑|0x7ff7bfeff464|↑|
+|↑|0x7ff7bfeff463|↑|
+|↑|0x7ff7bfeff462|↑|
+|↑|0x7ff7bfeff461|↑|
+|低位(小)|0x7ff7bfeff460|b開始|
 
 以下程式碼在函式中建立三個整數變數，並觀察三個變數的記憶體位址是由大至小遞減，並且記憶體位址都是以4byte(整數占4 byte記憶體空間)遞減，證明stack變數，記憶體位址是由大至小成長。
 {% highlight c++ linenos %}
