@@ -45,6 +45,7 @@ abab:<br>
 
 |pattern字串 |a|b|a|b|
 |共同前後綴長度|0|0|1|2|
+|對映的字串|a|ab|aba|abab|
 
 ### next陣列程式碼步驟
 預設只有一個字元，不會有共同前後綴。
@@ -115,6 +116,8 @@ j = next[j - 1]
 j = next[4 - 1]
 ```
 ![img]({{site.imgurl}}/java_datastruct/kmp_p10.png)<br>
+![img]({{site.imgurl}}/java_datastruct/kmp_pcode1.png)<br>
+![img]({{site.imgurl}}/java_datastruct/kmp_pcode2.png)<br>
 
 j移動到索引2的位置。<br>
 ![img]({{site.imgurl}}/java_datastruct/kmp_p11.png)<br>
@@ -128,16 +131,29 @@ j = next[2 - 1]
 ```
 ![img]({{site.imgurl}}/java_datastruct/kmp_p12.png)<br>
 
+![img]({{site.imgurl}}/java_datastruct/kmp_pcode3.png)<br>
+
 j移動到索引0。<br>
 i指向c，j指向a，二個字母不相同。<br>
 j已經沒辦法再往前移動。<br>
 `next[i=6] = 0`，0是j的索引。<br>
 ![img]({{site.imgurl}}/java_datastruct/kmp_p13.png)<br>
+![img]({{site.imgurl}}/java_datastruct/kmp_pcode4.png)<br>
 
 |索引    |0|1|2|3|4|5|6|
 |字串    |a|b|a|b|a|b|c|
 |next陣列|0|0|1|2|3|4|<span class="markline">0</span>|
 
+i指向c，j指向a，二個字母不相同，不會進到if。<br>
+![img]({{site.imgurl}}/java_datastruct/kmp_pcode5.png)<br>
+
+`next[i=6] = 0`，0是j的索引。
+![img]({{site.imgurl}}/java_datastruct/kmp_pcode6.png)<br>
+
+將next陣列傳回。
+![img]({{site.imgurl}}/java_datastruct/kmp_pcode7.png)<br>
+
+getNext程式碼:
 {% highlight java linenos %}
   public static int[] getNext(String pattern) {
     int[] next = new int[pattern.length()];
