@@ -1,5 +1,5 @@
 ---
-title: 函式傳值與傳回值
+title: 函式參數傳遞
 date: 2024-07-02
 keywords: c++, call by value
 ---
@@ -24,12 +24,13 @@ int main() {
 ## 每個函式都是獨立空間
 main()函式會有自己的空間與變數n。<br>
 test()函式會有自己的空間與變數n。<br>
-二個空間的變數名稱雖然一樣，但在函式中的變數都是區域變數，存取範圍只在自己的函式中，不會影嚮其它空間的同名變數。<br>
+二個空間的變數名n雖然一樣，但不是同樣的東西，各自獨立存在各自的函式空間，存取範圍只在自己的函式中，修改main()函式的n不會更改test()函式的n，修改test()函式的n不會更改main()函式的n。<br>
+就像1年1班，有一個學生叫小明。3年1班也有一個學生叫小明，但二個人只是名字一樣，但是不同人。<br>
 
 下圖，main()函式把20傳入test()函式。<br>
 ![img]({{site.imgurl}}/c++/func/func_stack1.png)<br>
 
-test()函式，把20複製給test()空間的n變數，test()空間的n變數與main()空間的n變數是不相同。
+main()函式，把20複製給test()空間的n變數，test()空間的n變數與main()空間的n變數是不相同。
 ![img]({{site.imgurl}}/c++/func/func_stack2.png)<br>
 
 test()函式呼叫cout 印出 n。
@@ -48,11 +49,17 @@ int main() {
   return 0;
 }
 {% endhighlight %}
+
 印出結果:n=20<br>
+
+## 函式中的變數
+下圖中，main()函式中的n，與test()函式中的n，二者各自獨立，cout印出的都是自己函式中的n，不會跨界印出其它函式中的n。<br>
+![img]({{site.imgurl}}/c++/func/func_stack8.png)<br>
 
 ## 函式不能使用其它函式的區域變數
 以下會編譯不過，main()函式本身是沒有n變數，main()函式無法存取test()函式中的n變數。<br>
 二者在不同的空間。<br>
+
 {% highlight c++ linenos %}
 void test(int n) {
   cout << "n = " << n << endl;
@@ -66,7 +73,9 @@ int main() {
 
 ## 函式複製基本型態參數
 呼叫函式時，若參數為基本型態，是「複製」值。<br>
-以下程式是把20複製給test()函式中的n變數，再進行n\+\+，但test()函式中的n是區域變數，只對test()空間有效，離開test()空間後，test()空間與test()函式中的n變數會被記憶體釋放，回到main函式後，main的n變數仍是20，因為二者為不同空間的變數，不會互相影嚮。<br>
+以下程式是把20複製給test()函式中的n變數，再進行n\+\+，但test()函式中的變數n跟main()函式中的變數n二者是不同的，各自存在不同的空間，只對test()的n變數只對test()空間有效，離開test()空間後，test()空間與n變數會被記憶體釋放，回到main函式後，main的n變數仍是20，因為二者為不同空間的變數，修改test()函式中的n，不會跟著修改main()函式中的n。<br>
+
+{% highlight c++ linenos %}
 void test(int n) {
   n++;
   cout << "n = " << n << endl;
@@ -77,9 +86,68 @@ int main() {
   cout << "n = " << n << endl;
   return 0;
 }
+{% endhighlight %}
+
 ```
 n = 21
 n = 20
+```
+
+## 隱藏的return
+當test()函式執行到最後，會有一個隱藏的return，返回呼叫test()函式的「位置」。<br>
+{% highlight c++ linenos %}
+void test(int n) {
+  n++;
+  cout << "n = " << n << endl;
+  // 隱藏的return
+  return;
+}
+int main() {
+  int n = 20;
+  test(n); // return返回的位置
+  cout << "n = " << n << endl;
+  return 0;
+}
+{% endhighlight %}
+
+## 接收return
+如果函式有return傳回值，就會把test()函式的值，傳回main函式，並且「要有變數去接收」傳回值，傳回值就會影嚮main()函式的變數值。<br>
+![img]({{site.imgurl}}/c++/func/func_stack9.png)<br>
+
+{% highlight c++ linenos %}
+int test(int n) {
+  return n + 1;
+}
+int main() {
+  int n = 20;
+  n = test(n);
+  cout << "main() n = " << n << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+main() n = 21
+```
+
+return傳回值會取代原本`test(n)`的程式碼，直接由21取代，參考下圖。<br>
+![img]({{site.imgurl}}/c++/func/func_stack10.png)<br>
+
+如果沒有變數去接收，不會修改main()函式的變數值。<br>
+執行結果n仍是20。<br>
+{% highlight c++ linenos %}
+using namespace std;
+int test(int n) {
+  return n + 1;
+}
+int main() {
+  int n = 20;
+  test(n);
+  cout << "main() n = " << n << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+main() n = 20
 ```
 
 ## 複製記憶體位址
@@ -87,6 +155,8 @@ n = 20
 需要使用「記憶體位址」的方式。<br>
 把「記憶體位址」傳入test()函式，要使用「指標類型」，才可以把main()函式的n變數的記憶體位址「複製」到test()函式。<br>
 
+下圖中，test()函式中的n變數，記憶體位址是0x000008，存的「值」是記憶體位址0x000001。<br>
+main()函式中的n變數，記憶體位址0x000001，存的「值」是20。<br>
 ![img]({{site.imgurl}}/c++/func/func_stack5.png)<br>
 
 {% highlight c++ linenos %}
@@ -106,7 +176,9 @@ main n address = 0x000001
 ```
 
 ## 取得其它函式中的值
-透過\*取值運算子，可以取出記憶體位址中的「值」。<br>
+test()函式中的n變數，記憶體位址是0x000008，存的「值」是記憶體位址0x000001。<br>
+透過對「記憶體位址」使用\*取值運算子，可以取出記憶體位址中的「值」。<br>
+`*0x000001`，取出0x000001記憶體位址存放的「值」20。<br>
 ![img]({{site.imgurl}}/c++/func/func_stack6.png)<br>
 
 {% highlight c++ linenos %}
@@ -123,68 +195,100 @@ int main() {
 main() n = 20
 ```
 
-## 函式傳遞值 Call by value
+## 修改其它函式中的值
+透過對「記憶體位址」使用\*取值運算子，可以對記憶體位址的值進行修改的操作。<br>
+`*0x000001`先把記憶體的「值=20」取出來。<br>
+20\+\+的意思就是把20 \+ 1，再把21存入`0x000001`記憶體位址的值。<br>
+![img]({{site.imgurl}}/c++/func/func_stack7.png)<br>
 
-### 解釋1
-
-函式會建立新的變數將引數拷貝到新的變數，將新的變數作為參數，所以在函式對參數做的任何操作，實際上是對新的變數做操作，而不是對引數做操作。
-
-### 解釋2
-
-參數一進入函式，函式即建立新的變數保管這些參數值，同時新變數的資料型態完全吻合參數的資料型態，這種傳遞參數的方式會先把參數複製一份，稱為傳值呼叫(call by value)。
-
-### 解釋3 
-
-以傳值方式傳遞參數的函式會建立一個與參數型態相同的變數，然後把參數的值複製到該變數，因此，函式不能存取原來的變數，僅能存取其拷貝值。當函式無須修改原來的變數值時，傳值的方法很實用，同時保證函式不會破壞原來的變數值。
-
-以下程式碼是將引數x傳遞給函式setX()，將引數x拷貝到參數r，對參數r進行修改，並不會影嚮x引數。
-
+## 交換
+如果函式參數是基本型態，就無法修改其它函式中的變數。<br>
 {% highlight c++ linenos %}
-//r為參數
-void setX(int r){
-  r = 1000;
+void swap(int n1, int n2) {
+  int temp = n1;
+  n1 = n2;
+  n2 = temp;
+  printf("swap() n1 = %d, n2 = %d \n", n1, n2);
 }
 int main() {
-  int x = 10;
-  cout << "Before x = " << x << endl;
-  //x為引數
-  setX(x);
-  cout << "After x = " << x << endl;
+  int n1 = 5;
+  int n2 = 10;
+  swap(n1, n2);
+  printf("main() n1 = %d, n2 = %d \n", n1, n2);
   return 0;
 }
 {% endhighlight %}
-
 ```
-Before x = 10
-After x = 10
+swap() n1 = 10, n2 = 5 
+main() n1 = 5, n2 = 10
 ```
 
-## 函式傳回值是值
-
-### 解釋1
-以下的程式碼，main()和getValue()都各別有存放傳回值r的記憶體位址，待getValue()的r變數傳回給main()的r變數後，getValue()的r變數的記憶體位址就會被釋放。
-
-### 解釋2
-
-- [記憶體配置][2]
-
-函式會將傳回值拷貝到暫存器或stack中，然後再傳回拷貝到暫存器或stack中的值，接下來再把函式中區域變數記憶體釋放。
-
+如果函式參數是指標(記憶體位址)，複製傳入參數為記憶體位址，就可以修改其它函式中的記憶體位址中的「值」。<br>
 {% highlight c++ linenos %}
-int getValue(){
-  int r = 1000;
-  return r;
+void swap(int* n1, int* n2) {
+  int temp = *n1;
+  *n1 = *n2;
+  *n2 = temp;
+  printf("swap() n1 = %d, n2 = %d \n", *n1, *n2);
 }
 int main() {
-  int r = getValue();
-  cout << "r = " << r << endl;
+  int n1 = 5;
+  int n2 = 10;
+  swap(&n1, &n2);
+  printf("main() n1 = %d, n2 = %d \n", n1, n2);
   return 0;
 }
 {% endhighlight %}
+```
+swap() n1 = 10, n2 = 5 
+main() n1 = 10, n2 = 5 
+```
 
+## 函式區域變數
+在函式中的變數是區域變數。<br>
+若與全域變數是相同名字，函式會採取就近原則，使用函式中的區域變數。
+
+{% highlight c++ linenos %}
+int n1 = 5;
+void test() {
+  int n1 = 100;
+  printf("test() n1 = %d \n", n1);
+}
+int main() {
+  test();
+  return 0;
+}
+{% endhighlight %}
 ```
-r = 1000
+test() n1 = 100 
 ```
+
+函式中的區域變數要設初始值。<br>
+「全域」變數會根據基本型態設定對映的初始值，如:int是0，char是`\0`，「全域」變數是整個程式都可以共享，可以放在標頭檔.h，但只能被include一次。<br>
+函式中的區域變數不會設定對映的初始值，如果不設初始值，會有亂七八糟的值，甚至造成程式執行失敗。<br>
+
+{% highlight c++ linenos %}
+// 全域變數，沒設初始值，預設為0
+int n2;
+void test() {
+  // 區域變數沒設初始值，預設為亂七八糟的值。
+  int n1;
+  printf("test() n1 = %d \n", n1);
+  printf("test() n2 = %d \n", n2);
+}
+int main() {
+  test();
+  return 0;
+}
+{% endhighlight %}
+```
+test() n1 = 32759 
+test() n2 = 0 
+```
+
+從執行結果，可以知道區域變數與全域變數的預設值有很大不同。
+
+
 
 [1]: {% link _pages/c/basic/param.md %}
 [2]: {% link _pages/c/dynamicMemory/memoryLayout.md %}#變數記憶體位址

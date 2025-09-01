@@ -58,31 +58,31 @@ next[i=1] = 0
 ```
 ![img]({{site.imgurl}}/java_datastruct/kmp_p1.png)<br>
 
-i\+\+，往前移動i=2。<br>
+i\+\+，往右移動i=2。<br>
 j指向a，i指向a，二個字母相同<br>
 ![img]({{site.imgurl}}/java_datastruct/kmp_p2.png)<br>
 
-j\+\+，j往前移動，j=1。<br>
+j\+\+，j往右移動，j=1。<br>
 j指向索引1，把j指向的索引1，塞入next陣列。<br>
 ```
 next[i=2] = 1
 ```
 ![img]({{site.imgurl}}/java_datastruct/kmp_p3.png)<br>
 
-i\+\+，往前移動i=3。<br>
+i\+\+，往右移動i=3。<br>
 ![img]({{site.imgurl}}/java_datastruct/kmp_p4.png)<br>
 
 j指向b，i指向b，二個字母相同。<br>
 ![img]({{site.imgurl}}/java_datastruct/kmp_p5.png)<br>
 
-j\+\+，j往前移動，j=2。<br>
+j\+\+，j往右移動，j=2。<br>
 j指向索引2，把j指向的索引2，塞入next陣列。<br>
 ```
 next[i=3] = 2
 ```
 ![img]({{site.imgurl}}/java_datastruct/kmp_p6.png)<br>
 
-i\+\+，往前移動i=4。<br>
+i\+\+，往右移動i=4。<br>
 j指向a，i指向c，二個字母不相同。<br>
 ![img]({{site.imgurl}}/java_datastruct/kmp_p7.png)<br>
 
@@ -135,7 +135,7 @@ j = next[2 - 1]
 
 j移動到索引0。<br>
 i指向c，j指向a，二個字母不相同。<br>
-j已經沒辦法再往前移動。<br>
+j已經沒辦法再往左移動，往左移動就變-1。<br>
 `next[i=6] = 0`，0是j的索引。<br>
 ![img]({{site.imgurl}}/java_datastruct/kmp_p13.png)<br>
 ![img]({{site.imgurl}}/java_datastruct/kmp_pcode4.png)<br>
@@ -159,12 +159,12 @@ getNext程式碼:
     int[] next = new int[pattern.length()];
     // j指向前綴，預設為0
     int j = 0;
-    // 索引0，固定都是0，因為沒有前綴後綴
+    // next[0]，固定都是0，因為沒有前綴後綴
     next[0] = 0;
     // i指向後綴，固定由1開始
     for (int i = 1; i < pattern.length(); i++) {
       // 判斷索引j與i指向的值是否相等，不相等就找next[j-1]
-      // j=0已經沒辦法再往前移動，就離開while迴圈
+      // j=0已經沒辦法再往左移動變-1，就離開while迴圈
       // j>0才能進入迴圈
       while (j > 0 && pattern.charAt(j) != pattern.charAt(i)) {
         j = next[j - 1];
@@ -215,12 +215,12 @@ public class Kmp {
     int[] next = new int[pattern.length()];
     // j指向前綴，預設為0
     int j = 0;
-    // 索引0，固定都是0，因為沒有前綴後綴
+    // next[0]，固定都是0，因為沒有前綴後綴
     next[0] = 0;
     // i指向後綴，固定由1開始
     for (int i = 1; i < pattern.length(); i++) {
       // 判斷索引j與i指向的值是否相等，不相等就找next[j-1]
-      // j=0已經沒辦法再往前移動，就離開while迴圈
+      // j=0已經沒辦法再往左移動，就離開while迴圈
       // j>0才能進入迴圈
       while (j > 0 && pattern.charAt(j) != pattern.charAt(i)) {
         j = next[j - 1];
