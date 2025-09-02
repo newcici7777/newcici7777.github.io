@@ -1,19 +1,182 @@
 ---
-title: char 字串
+title: c字串
 date: 2024-06-15
 keywords: c++, char array
 ---
+## 宣告字串
+### 方式一
+若陣列大小，大於初始化初始化字元數目，其它則自動設為0。<br>
+以下只有abc有值，其它都為0。<br>
+{% highlight c++ linenos %}
+int main() {
+  char c[7] = {'a', 'b', 'c'};
+  int len = sizeof(c) / sizeof(char);
+  for(int i = 0; i < len; i++) {
+    printf("i = %d, value = %d \n", i, c[i]);
+  }
+  return 0;
+}
+{% endhighlight %}
+```
+i = 0, value = 97 
+i = 1, value = 98 
+i = 2, value = 99 
+i = 3, value = 0 
+i = 4, value = 0 
+i = 5, value = 0 
+i = 6, value = 0 
+```
+
+整數0在char代表`\0`，代表結束讀取。
+
+|二進制|十進制|跳脫字元|表示|
+|0000 0000|0|`\0`|空字元（Null)|
+
+![img]({{site.imgurl}}/c++/arr/char_arr.png)<br>
+
+{% highlight c++ linenos %}
+int main() {
+  char c[7] = {'a', 'b', 'c'};
+  printf("c = %s \n",c);
+  return 0;
+}
+{% endhighlight %}
+```
+c = abc
+```
+
+### 方式二
+若是初始化的字元數量與陣列大小一樣，其它編譯器會印出亂碼，因為印出直到「遇到0」為止，那沒有遇到0之前，就一直印。<br>
+
+![img]({{site.imgurl}}/c++/arr/char_arr2.png)<br>
+
+{% highlight c++ linenos %}
+int main() {
+  char c[3] = {'a', 'b', 'c'};
+  printf("%s \n",c);
+  return 0;
+}
+{% endhighlight %}
+
+需手動加上`\0`，代表遇到0就停止不要印出。
+{% highlight c++ linenos %}
+int main() {
+  char c[4] = {'a', 'b', 'c', '\0'};
+  printf("%s \n",c);
+  return 0;
+}
+{% endhighlight %}
+```
+abc
+```
+### 方式三
+以下沒設定陣列大小，也不會自動後面補\0。<br>
+![img]({{site.imgurl}}/c++/arr/char_arr2.png)<br>
+{% highlight c++ linenos %}
+int main() {
+  char c[] = {'a', 'b', 'c'};
+  printf("%s \n",c);
+  return 0;
+}
+{% endhighlight %}
+
+### 方式四
+等號後面是「常數」，常數會在最後自動補上`\0`，常數存在memory layout中的RODATA區塊中。<br>
+以下程式碼，會在stack建立陣列大小為4(包含`\0`)的位置，把RODATA中的常數，「複製」到c`[]`陣列中，所以可以修改`c[]`陣列中的值。
+![img]({{site.imgurl}}/c++/arr/char_arr3.png)<br>
+
+以下二種方式都可以，可以設定大小或不設定大小。
+```
+char c[] = "字串內容"
+char c[大小] = "字串內容"
+```
+讀取<br>
+{% highlight c++ linenos %}
+int main() {
+  char c[] = "abc";
+  printf("%s \n",c);
+  return 0;
+}
+{% endhighlight %}
+```
+abc
+```
+
+修改<br>
+{% highlight c++ linenos %}
+int main() {
+  char c[] = "abc";
+  printf("%s \n",c);
+  c[1] = 'g';
+  printf("%s \n",c);
+  return 0;
+}
+{% endhighlight %}
+```
+abc 
+agc 
+```
+
+陣列名是記憶體位址，陣列名不是指標，不能重新指向其它記憶體位址。<br>
+{% highlight c++ linenos %}
+int main() {
+  char c[] = "abc";
+  printf("%s \n",c);
+  c = "ggg"; 
+  return 0;
+}
+{% endhighlight %}
+
+### 方式五
+以下是指標的方式建立字串。
+```
+char *c = "字串內容"
+```
+「c指標」指向RODATA區塊的「字串常數」。<br>
+
+![img]({{site.imgurl}}/c++/arr/char_arr4.png)<br>
+
+{% highlight c++ linenos %}
+int main() {
+  char* c = "abc";
+  printf("%s \n",c);
+  return 0;
+}
+{% endhighlight %}
+
+RODATA區塊的字串常數無法修改。<br>
+以下會編譯錯誤。<br>
+
+{% highlight c++ linenos %}
+int main() {
+  char* c = "abc";
+  c[1] = g;
+  printf("%s \n",c);
+  return 0;
+}
+{% endhighlight %}
+
+指標可以指向其它字串。<br>
+{% highlight c++ linenos %}
+int main() {
+  char* c = "abc";
+  c = "zzzz";
+  printf("%s \n",c);
+  return 0;
+}
+{% endhighlight %}
+```
+zzz
+```
+
 ## 空字元(null character)
-
-char字串必須以'\0'做結尾，若不是'\0'做結尾則稱為char陣列。
-
-宣告字串，必須留1個字元，放結尾\0，以下宣告最多可以放5個字元，而第6個字元則是放\0。
+char字串必須以'\0'做結尾，若不是'\0'做結尾則稱為char陣列。<br>
+宣告字串，必須留1個字元，放結尾\0，以下宣告最多可以放5個字元，而第6個字元則是放\0。<br>
 ```
 char str[6];
 ```
 
-以下二種宣告是完全不同，一個是字串，一個是陣列。
-
+以下二種宣告是完全不同，一個是字串，一個是陣列。<br>
 {% highlight c++ linenos %}
   //char字串
   // \0 代表結尾
@@ -38,7 +201,6 @@ arr sizeof = 6
 ```
 
 ## 字串常數
-
 注意!以下""雙引號包住的字串是常數，編譯器會自動加上'\0'作結尾，不用手動加'\0'。
 
 {% highlight c++ linenos %}
@@ -47,7 +209,6 @@ char str1[] = "hello"
 {% endhighlight %}
 
 ## 字串常數宣告
-
 以下程式碼，cstr1沒有初始化字串常數，執行程式時會從cstr1的記憶體位址開始輸出值，直到遇到記憶體位址的值為\0(空字元)才會停止輸出，不會因為超過宣告字串的長度而停止印出。
 
 {% highlight c++ linenos %}
@@ -74,7 +235,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 執行結果
 cstr1 長度 = 6,內容 = p\364\357\277\367
@@ -87,7 +247,6 @@ cstr7 長度 = 0,內容 =
 ```
 
 ## 字串清空
-
 使用memset，第二個參數設為0，代表把字串的記憶體位址的值全設為\0。
 {% highlight c++ linenos %}
 #include <iostream>
@@ -148,7 +307,6 @@ c_str2 = abcdefg
 ```
 
 ## 字串修改
-
 不能使用`等於=`修改字串，以下語法會編譯錯誤。
 
 {% highlight c++ linenos %}

@@ -3,9 +3,8 @@ title: 函式參數為指標
 date: 2024-05-28
 keywords: c++, pointer
 ---
-Prerequisites:
+## 修改其它函式中的值
 
-- [引數][1]
 
 ## 指標參數
 
