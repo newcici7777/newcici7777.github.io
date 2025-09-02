@@ -3,11 +3,8 @@ title: 記憶體配置
 date: 2024-05-06
 keywords: c++, 記憶體佈局
 ---
-
-
-### 記憶體起始與結束位址。
+## 記憶體起始與結束位址。
 記憶體開始位址由下表最下方開始，記憶體結束位址在最上方。
-
 
 <table class="custom-table">
   <thead>
@@ -49,8 +46,7 @@ keywords: c++, 記憶體佈局
   </tbody>
 </table>
 
-### 記憶體區段
-
+## 記憶體區段
 記憶體區段根據位址由高到低分別為Kernel, Stack, 尚位使用區域, Heap, bass, data, code。
 
 <table class="custom-table">
@@ -106,32 +102,31 @@ keywords: c++, 記憶體佈局
   </tbody>        
 </table>
 
-#### 作業系統核心
+## Memory Layout
+![img]({{site.imgurl}}/c++/memory.png)<br>
 
+### 作業系統核心
 處理cpu記憶體Devices與應用程式運作。
 
-#### stack(堆疊) 儲存區域變數的記憶體區塊
-
+### stack(堆疊) 儲存區域變數的記憶體區塊
 儲存區域變數與函式參數與函式傳回值，記憶體大小只有8M，記憶體位址成長的方向是向下成長。
 
-#### Heap(堆積) 儲存動態配置變數的記憶體區塊
-
+### Heap 儲存動態配置變數的記憶體區塊
 儲存由動態配置(new與malloc)產生的變數，記憶體大小取決電腦實體記憶體大小(可能8GB或更大)，記憶體位址成長的方向是向上成長。
 
-#### bss segment 記憶體區塊
-
+### bss segment 記憶體區塊
 儲存未初始化全域變數與靜態變數。
 
-#### data segment 記憶體區塊
-
+### data segment 記憶體區塊
 儲存已初始化全域變數與靜態變數。
 
-#### code segment 記憶體區塊
+### text segment 記憶體區塊
+程式執行檔。
 
-儲存常數與程式執行檔。
+### RODATA
+constant常數與字串常數`char *p = "hello";`
 
 ### 變數記憶體位址
-
 {% highlight c++ linenos %}
 #include <stdio.h>
 const int global_x = 1;  // 儲存於 code segment(常數)
@@ -141,7 +136,7 @@ int fun1(int param1) {	 // 儲存於 stack (函式參數)
 	return param1; // 儲存於 stack (函式傳回值)
 }
 int main() {
-  const static int x = 1; // 儲存於 code segment(常數)
+  const static int x = 1; // 儲存於 RODATA(常數)
   static int y = 1;     // 儲存於 data segment(已初始化靜態變數）
   static int z;       // 儲存於 bss(未初始靜態變數)
   int w = 1;        // 儲存於 stack (區域變數)

@@ -3,9 +3,191 @@ title: 變數可見範圍與生命週期
 date: 2024-04-18
 keywords: c++, printf
 ---
+## 區域變數與全域變數
+### 函式中的區域變數
+在函式之外的變數是全域變數，整個程序都能使用它。<br>
+在函式之內的變數是區域變數，存取範圍就是在該函式之中。<br>
+若全域變數與函式內的區域變數相同，就近原則，使用最近的區域變數。<br>
+以下的程式碼，func()與main()函式有區域變數n，印出區域變數n。<br>
+test()沒有區域變數n，存取全域變數。<br>
+{% highlight c++ linenos %}
+// 全域
+int n = 10;
+void func() {
+  // 區域n
+  int n = 20;
+  cout << "func n =" << n << endl;
+}
+void test() {
+  // 函式沒定義區域變數n，使用全域n
+  cout << "test n = " << n << endl;
+}
+int main() {
+  // 區域n
+  int n = 30;
+  func();
+  test();
+  cout << "main n =" << n << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+func n =20
+test n = 10
+main n =30
+```
+
+### Block程式碼區塊中區域變數
+func()函式有定義區域變數n，程式碼區塊中也有定義區域變數n。<br>
+就近原則，會使用程式碼區塊中的n。<br>
+{% highlight c++ linenos %}
+int n = 10;
+void func() {
+  int n = 20;
+  {
+  int n = 55;
+  cout << "func n =" << n << endl;
+  }
+}
+int main() {
+  func();
+  return 0;
+}
+{% endhighlight %}
+```
+func n =55
+```
+
+for(int n = 1) {} 程式碼區塊，n是for程式碼區塊的區域變數。<br>
+就近原則，使用for()定義的區域變數n。<br>
+{% highlight c++ linenos %}
+int n = 10;
+void func() {
+  int n = 20;
+  for(int n = 1; n <10 ;n++) {
+    cout << n << endl;
+  }
+}
+int main() {
+  func();
+  return 0;
+}
+{% endhighlight %}
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+if(1) {} 程式碼區塊也是相同道理，就近原則。
+{% highlight c++ linenos %}
+int n = 10;
+void func(int n) {
+  if (1) {
+    int n = 100;
+    cout <<  "func n= " << n << endl;
+  }
+}
+int main() {
+  int n = 55;
+  func(n);
+  return 0;
+}
+{% endhighlight %}
+```
+func n= 100
+```
+
+### 函式參數
+函式參數也是區域變數，存取範圍只有在函式中，不可以超出函式的範圍之外。<br>
+以下程式碼func()函式有修改main()傳入的n變數，但對func而言，是把main的n變數中的值，拷貝到func()中的區域變數n的值中，修改func()函式的n變數不會影嚮main()的n變數。<br>
+
+請參考[函式參數傳遞][1]文章。<br>
+{% highlight c++ linenos %}
+int n = 10;
+void func(int n) {
+  n++;
+  cout <<  "func n= " << n << endl;
+}
+int main() {
+  int n = 66;
+  func(n);
+  cout << "main n = " << n << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+func n= 67
+main n = 66
+```
+
+## 預設值
+全域變數與全域陣列都會有預設值。
+
+|型態|預設值|
+|int|0|
+|char|`\0`|
+|float|0.0|
+|double|0.0|
+|指標類型|NULL|
+
+### 區域變數與全域變數預設值
+函式內的區域變數如果不設初始值，會是亂七八糟的值。<br>
+函式外的全域變數會使用預設值，如int就會是0，char就會是`\0`。<br>
+所以區域變數要memset，清空亂七八糟的值。<br>
+{% highlight c++ linenos %}
+int n;
+void func() {
+  int n;
+  cout << "func n = " << n << endl;
+}
+int main() {
+  func();
+  cout << "main n = " << n << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+func n = 32759
+main n = 0
+```
+
+### 區域陣列預設值
+區域陣列的值，也是亂七八糟的值，使用時要memset。<br>
+全域陣列，系統會給預設值，若是int，預設值為0。<br>
+{% highlight c++ linenos %}
+void func() {
+  int arr[5];
+  int len = sizeof(arr) / sizeof(int);
+  for (int i = 0; i < len; i++) {
+    cout << arr[i] << endl;
+  }
+}
+int main() {
+  func();
+  return 0;
+}
+{% endhighlight %}
+```
+0
+0
+0
+0
+-1074793232
+```
+
+## 區域全域變數 Memroy Layout
+下圖中，區域變數都在Statck。<br>
+![img]({{site.imgurl}}/c++/memory.png)<br>
+
 
 可見範圍(Scope)與生命週期(Lifetime)
-
 ### 區域變數
 
 一對花括號`{}`包起來的就是程式碼區塊(block)或函式主體(Body)。程式碼區塊可以是if (){}或while(){}的程式碼區塊，但這篇要探討的是只有花括號`{}`包起來的程式碼區塊。
@@ -161,3 +343,5 @@ int main() {
 執行結果
 p=0x600000008030,*p=3
 ```
+
+[1]: {% link _pages/c/function/callByValue.md %}

@@ -32,7 +32,7 @@ i = 6, value = 0
 |二進制|十進制|跳脫字元|表示|
 |0000 0000|0|`\0`|空字元（Null)|
 
-![img]({{site.imgurl}}/c++/arr/char_arr.png)<br>
+![img]({{site.imgurl}}/c++/arr/char_arr1.png)<br>
 
 {% highlight c++ linenos %}
 int main() {
