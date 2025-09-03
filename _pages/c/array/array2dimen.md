@@ -3,11 +3,113 @@ title: 二維陣列
 date: 2024-06-18
 keywords: c++, two dimensional arrays
 ---
+## 二維陣列Memory Layout
+C與C++的二維陣列記憶體配置如下:<br>
+在Stack空間，建立一個長長的陣列，假設是`int arr[3][3]`，會建立9個連續的記憶體空間。<br>
+int是4byte，也就是每個記憶體的位移是4byte。<br>
+`arr[0][0]`與`arr[0][1]`記憶體位址相差4byte。<br>
+
+![img]({{site.imgurl}}/c++/arr/arr2d1.png)<br>
+
+二維陣列宣告，以下二種方式都是正確，因為C++的Memory Layout確實是一個長長的一維陣列，只是編譯器會自動把一維轉成二維存取。
+{% highlight c++ linenos %}
+  int arr[3][3] = {{10, 20, 30}, {40, 50, 60}, {70, 80, 90}};
+  int arr[3][3] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+{% endhighlight %}
+
+## 二維陣列由一維陣列組成。
+`arr[3][3]`二維陣列，分別由三個一維陣列所組成。分別為arr[0]、arr[1]、arr[2]，這三個一維陣列所組成。
+
+![img]({{site.imgurl}}/c++/arr/arr2d2.png)<br>
+
+arr[0]指向一維陣列第1個元素記憶體位址。<br>
+arr[1]指向一維陣列第1個元素記憶體位址。<br>
+arr[2]指向一維陣列第1個元素記憶體位址。<br>
+
+arr[0]包含3個元素，arr[1]包含3個元素，arr[2]包含3個元素。
+
+`arr[0]`，陣列名本身就是記憶體位址，印出陣列名就是印出陣列地址，陣列名[0]本身就是記憶體位址，印出陣列名[0]就是印出記憶體位址。<br>
+
+arr[0]與arr[1]，中間差12byte。把arr[0]的記憶體位址0x2000 + 12 = 0x200C。<br>
+{% highlight c++ linenos %}
+  int arr[][3] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+  cout << "arr[0] address = " << arr[0] << endl;
+  cout << "arr[1] address = " << arr[1] << endl;
+  cout << "arr[2] address = " << arr[2] << endl;
+{% endhighlight %}
+```
+arr[0] address = 0x2000
+arr[1] address = 0x200C
+arr[2] address = 0x2018
+```
+
+## 求出row列與column欄
+```
+arr[列][欄]
+arr[row][column]
+```
+
+### 求出陣列有幾列row
+2維陣列全部大小`sizeof(arr)` = int為4byte，陣列有9個元素，9 \* 4 byte = 36 byte<br>
+`sizeof(arr[0])`取出第0列的大小，每一列row有3個元素 \* 4byte = 12byte <br>
+sizeof(arr) / sizeof(arr[0]) = 36 / 12 = 3列<br>
+
+{% highlight c++ linenos %}
+  int arr[3][3] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+  int row = sizeof(arr) / sizeof(arr[0]);
+  cout << "row = " << row << endl;
+{% endhighlight %}
+```
+3
+```
+
+### 求出陣列有幾欄column
+`sizeof(arr[0])`取出第0列的大小，每一列row有3個元素 \* 4byte = 12byte <br>
+`sizeof(int)`為4byte <br>
+sizeof(arr[0]) / sizeof(int) = 12 / 4byte = 3欄。<br>
+{% highlight c++ linenos %}
+  int arr[3][3] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+  int column = sizeof(arr[0]) / sizeof(int);
+  cout << "column = " << column << endl;
+{% endhighlight %}
+
+### 遍歷二維陣列
+{% highlight c++ linenos %}
+int main() {
+  //int arr[3][3] = {{10, 20, 30}, {40, 50, 60}, {70, 80, 90}};
+  int arr[3][3] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+  int row = sizeof(arr) / sizeof(arr[0]);
+  int column = sizeof(arr[0]) / sizeof(int);
+  for (int i = 0; i < row; i++) {
+    for (int j = 0; j < column; j++) {
+      cout << arr[i][j] << " ";
+    }
+    cout << endl;
+  }
+  return 0;
+}
+{% endhighlight %}
+```
+10 20 30 
+40 50 60 
+70 80 90
+```
+
+## 二維陣列初始化注意事項
+若二維陣列的值全部寫上，陣列row的大小宣告可以不寫。<br>
+編譯器可從元素數量9 / 欄位大小3，推導出row列是3。<br>
+{% highlight c++ linenos %}
+int arr[][3] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+{% endhighlight %}
+
+注意！以下的寫法是錯誤，column欄的大小不能為空，這樣編譯器無法推導大小，以下是Java的寫法，不是C++的寫法。<br>
+{% highlight c++ linenos %}
+// 錯誤！
+int arr[3][] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+{% endhighlight %}
 
 ## 初始化
-
 ### 初始化方法1
-
 {% highlight c++ linenos %}
   int arr[2][3] = { {1,2,3}, {4,5,6} };
   cout << "arr[0][0] = " << arr[0][0] << endl;
@@ -26,7 +128,6 @@ arr[1][1] = 5
 arr[1][2] = 6
 ```
 ### 初始化方法2
-
 {% highlight c++ linenos %}
   int arr[2][3] = {1,2,3,4,5,6};
   cout << "arr[0][0] = " << arr[0][0] << endl;
@@ -38,9 +139,7 @@ arr[1][2] = 6
 {% endhighlight %}
 
 ### 初始化方法3
-
 第1個[]中不用寫長度，第2個[]中要寫長度。
-
 {% highlight c++ linenos %}
   int arr[][3] = {1,2,3,4,5,6};
   cout << "arr[0][0] = " << arr[0][0] << endl;
@@ -73,7 +172,6 @@ sizeof在二維陣列的使用方式是取出陣列占記憶體全部的byte。
 ```
 arr size = 24
 ```
-
 
 ## 二維陣列轉成一維陣列
 

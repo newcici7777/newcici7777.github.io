@@ -64,16 +64,18 @@ int main() {
 call extern test() 
 ```
 
-## extern 靜態變數
-extern靜態變數跟extern全域變數的意思相反，意思是，其它檔案都不可以使用我的靜態變數。
+## extern 靜態全域變數
+靜態全域變數，無法共享給其它檔案，存取範圍只有宣告靜態全域變數的cpp或c檔案才可以用。<br>
+不支持extern 靜態全域變數，執行時會失敗。<br>
 
 以下是main2.cpp<br>
 {% highlight c++ linenos %}
 #include <stdio.h>
+// 靜態全域變數
 static int counter = 500;
 {% endhighlight %}
 
-以下是main.cpp，使用外部靜態變數執行會失敗。
+以下是main.cpp，使用extern 靜態變數執行會失敗。
 {% highlight c++ linenos %}
 extern int counter;
 int main() {
@@ -83,7 +85,8 @@ int main() {
 {% endhighlight %}
 
 ## extern 靜態函式
-extern 靜態函式，代表其它檔案都不可以使用我的靜態函式。
+靜態函式，無法共享給其它檔案，存取範圍只有宣告靜態函式的cpp或c檔案才可以用。<br>
+不支持extern 靜態函式，執行時會失敗。<br>
 
 以下是main2.cpp<br>
 {% highlight c++ linenos %}
