@@ -61,7 +61,41 @@ tempC 38.89
 ```
 
 ## 餘數
+餘數就是不夠除，取出剩下不夠除的數字。
+
+1小時有3600秒，3700秒是幾小時幾分幾秒?<br>
+3700秒 - 3600秒(1小時) = 剩下100秒。<br>
+100秒 - 60秒(1分鐘) = 剩下40秒。<br>
+
+### 小時 分鐘 秒 換算
+把秒轉成xx小時xx分鐘xx秒
+{% highlight c++ linenos %}
+int main() {
+  int second = 3700;
+  // 1小時是60分鐘 * 60秒
+  int hour = 60 * 60;
+  int h = second / hour;
+  int min = second % hour / 60;
+  int sec = second % hour % 60;
+  cout << h << "時" << min  << "分" << sec << "秒" << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+1時1分40秒
+```
+
+### 剩下幾個禮拜又幾天
 還剩下97天就放暑假了，請問還剩下幾個禮拜又幾天？<br>
+
+題目97天，很大，換成小一點的數字思考，9天還剩下幾個禮拜又幾天？<br>
+
+一個禮拜7天。<br>
+9天 - 7天(一個禮拜) = 2<br>
+
+用掉1個禮拜，還剩下2天。<br>
+
+餘數就是剩下的概念，但剩下的是有範圍，介於0到6之間，不會是7。<br>
 
 禮拜，使用除法<br>
 剩幾天，使用mod<br>
@@ -79,4 +113,41 @@ int main() {
 week = 13, day = 6 
 ```
 
+## 除法 減法
+以下二種是相同。
+```
+y = y / x;
+y /= x;
+```
+{% highlight c++ linenos %}
+int main() {
+  int y = 12;
+  int x = 3;
+  // y = y / x;
+  y /= x;
+  cout << y << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+4
+```
 
+以下二種是相同。
+```
+y = y % x;
+y %= x;
+```
+{% highlight c++ linenos %}
+int main() {
+  int y = 11;
+  int x = 3;
+  // y = y % x;
+  y %= x;
+  cout << y << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+2
+```

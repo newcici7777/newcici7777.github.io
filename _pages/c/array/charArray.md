@@ -169,6 +169,13 @@ int main() {
 zzz
 ```
 
+### 方式六
+`{}`大括號裡面是常數，常數會在最後自動補上`\0`，常數存在memory layout中的RODATA區塊中。<br>
+
+{% highlight c++ linenos %}
+char cstr4[] = {"hello"};
+{% endhighlight %}
+
 ## 空字元(null character)
 char字串必須以'\0'做結尾，若不是'\0'做結尾則稱為char陣列。<br>
 宣告字串，必須留1個字元，放結尾\0，以下宣告最多可以放5個字元，而第6個字元則是放\0。<br>
@@ -187,17 +194,36 @@ char str[6];
 執行結果
 str1 長度 = 5,內容 = hello
 ```
-
+## sizeof與strlen
+sizeof(arr)是計算陣列的大小。<br>
+strlen(arr)是計算有多少字元。<br>
 {% highlight c++ linenos %}
   //char 陣列
-  char arr[6] = {'h','e','l','l','o','o'};
+  char arr[6] = {'h','e','l'};
   cout << "arr 長度 = " << strlen(arr) << ",內容 = " << arr << endl;
   cout << "arr sizeof = " << sizeof(arr) << endl;
 {% endhighlight %}
 ```
 執行結果
-arr 長度 = 6,內容 = helloo
+arr 長度 = 3,內容 = hel
 arr sizeof = 6
+```
+
+### 字串長度 strlen
+strlen()是計算字串中有幾個字元，不包含字串結尾\0。<br>
+sizeof()是計算字串變數全部記憶體大小。<br>
+{% highlight c++ linenos %}
+int main() {
+  char c_str4[10] = "hello!";
+  cout << "c_str4 size:" << sizeof(c_str4) << endl;
+  cout << "c_str4長度:" << strlen(c_str4) << endl;
+  return 0;
+}
+{% endhighlight %}
+
+```
+c_str4 size:10
+c_str4長度:6
 ```
 
 ## 字串常數
@@ -273,11 +299,12 @@ char * strcpy ( char * destination, const char * source );
 ```
 要從來源的字串，拷貝到目的字串。
 
-- 參數1:目的字串(拷貝到那裡？)
-- 參數2:來源字串(要拷貝的字串)
+- 參數1:目的字串記憶體位址(拷貝到那裡？)
+- 參數2:來源字串記憶體位址(要拷貝的字串)
 
 拷貝完成後，會自動在目的字串最後面加上\0。
 
+陣列本身就是記憶體位址。
 {% highlight c++ linenos %}
   char c_str1[6] = {'h','e','l','\0'};
   char c_str4[20] = {'t','e'};
@@ -291,7 +318,6 @@ c_str4:hel
 ```
 
 ## 字串指標拷貝 strcpy
-
 {% highlight c++ linenos %}
   char* c_str1 = new char[100];
   strcpy(c_str1, "abcdefg");
@@ -384,28 +410,14 @@ c_str4[9] = x00
   strncpy(c_str4,"hello",2);
 {% endhighlight %}
 
-
-## 字串長度 strlen
-
-strlen()是計算字串中有幾個字元，不包含字串結尾\0。
-
-sizeof()是計算字串變數全部記憶體大小。
-
-{% highlight c++ linenos %}
-int main() {
-  char c_str4[10] = "hello!";
-  cout << "c_str4 size:" << sizeof(c_str4) << endl;
-  cout << "c_str4長度:" << strlen(c_str4) << endl;
-  return 0;
-}
-{% endhighlight %}
-
-```
-c_str4 size:10
-c_str4長度:6
-```
-
 ## 字串連接 strcat
+```
+char * strcpy ( char * destination, const char * source );
+```
+目的字串「連接」來源字串。
+
+- 參數1:目的字串記憶體位址
+- 參數2:來源字串記憶體位址
 
 {% highlight c++ linenos %}
   char c_str1[6] = {'h','e','l','\0'};
@@ -423,7 +435,6 @@ c_str3 + c_str4 = helte
 ```
 
 ## 字串比較 strcmp
-
 二個字串，字元逐字元比較ascii code，直到比完或分出大小為止。
 
 ```
@@ -431,7 +442,6 @@ strcmp(s1,s2)
 ```
 
 ### s1==s2傳回0
-
 {% highlight c++ linenos %}
 int main() {
   char* s1 = "abc";
@@ -440,7 +450,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 0
 ```
@@ -473,7 +482,6 @@ int main() {
 ```
 
 ## 二維陣列字串
-
 參考
 
 [二維陣列]({% link _pages/c/array/array2dimen.md %})

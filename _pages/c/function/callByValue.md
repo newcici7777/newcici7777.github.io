@@ -73,7 +73,7 @@ int main() {
 
 ## 函式複製基本型態參數
 呼叫函式時，若參數為基本型態，是「複製」值。<br>
-以下程式是把20複製給test()函式中的n變數，再進行n\+\+，但test()函式中的變數n跟main()函式中的變數n二者是不同的，各自存在不同的空間，只對test()的n變數只對test()空間有效，離開test()空間後，test()空間與n變數會被記憶體釋放，回到main函式後，main的n變數仍是20，因為二者為不同空間的變數，修改test()函式中的n，不會跟著修改main()函式中的n。<br>
+以下程式是把20複製給test()函式中的n變數，再進行n\+\+，但test()函式中的變數n跟main()函式中的變數n二者是不同的，各自存在不同的空間，離開test()空間後，test()空間與n變數會被記憶體釋放，回到main函式後，main的n變數仍是20，因為二者為不同空間的變數，修改test()函式中的n，不會跟著修改main()函式中的n。<br>
 
 {% highlight c++ linenos %}
 void test(int n) {
@@ -285,10 +285,7 @@ int main() {
 test() n1 = 32759 
 test() n2 = 0 
 ```
-
 從執行結果，可以知道區域變數與全域變數的預設值有很大不同。
-
-
 
 [1]: {% link _pages/c/basic/param.md %}
 [2]: {% link _pages/c/dynamicMemory/memoryLayout.md %}#變數記憶體位址

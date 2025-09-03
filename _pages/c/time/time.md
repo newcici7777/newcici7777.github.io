@@ -3,15 +3,46 @@ title: time
 date: 2024-12-11
 keywords: c++, time
 ---
-
-取得從1970/01/01至今累加的秒數，以長整數(long)存放此秒數。
-
-## 取得現在時間
-
 include語法
 ```
 #include <time.h>
 ```
+
+## 計算程式執行時間
+{% highlight c++ linenos %}
+#include <iostream>
+#include <time.h>
+using namespace std;
+void func() {
+  int temp;
+  for (int i=0 ; i <1000; i++) {
+    temp = i;
+  }
+}
+int main() {
+  //time_t結構
+  time_t start_t, end_t;
+  double diff;
+
+  // 將time_t結構記憶體位址傳入
+  time(&start_t);
+  // 要執行的函式
+  func();
+  // 將time_t結構記憶體位址傳入
+  time(&end_t);
+  // 計算差距秒數
+  // end_t - start_t
+  diff = difftime(end_t, start_t);
+  cout << "second = " << diff << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+second = 0
+```
+
+## 取得現在時間
+取得從1970/01/01至今累加的秒數，以長整數(long)存放此秒數。
 
 語法
 ```
