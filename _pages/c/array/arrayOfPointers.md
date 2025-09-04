@@ -1,21 +1,19 @@
 ---
-title: 指標陣列存放多個記憶體位址
+title: 指標陣列
 date: 2024-06-19
 keywords: c++, point of arrays
 ---
-
+指標陣列(point of arrays)，一維陣列裡面的值都是放記憶體位址。
 ## 指標陣列
-
 {% highlight c++ linenos %}
   int i1 = 10;
   int i2 = 20;
   int i3 = 30;
   //宣告指標陣列存放3個記憶體位址
-  int *p_array[3] = {&i1, &i2, &i3};
+  int * p_array[3] = {&i1, &i2, &i3};
 {% endhighlight %}
 
 ## 取址與取值
-
 方式有二種
 - 指標方式
 

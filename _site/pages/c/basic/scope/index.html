@@ -2,8 +2,8 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>變數可見範圍與生命週期 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="c++, printf" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>區域全域靜態變數 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="c++, scope" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -143,7 +143,21 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/basic/printformat/" data-nav-link> 整數與浮點數</a>
+    	<a href="/pages/c/basic/int_long/" data-nav-link> 整數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/float_double/" data-nav-link> 浮點數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/div_mod/" data-nav-link> 除法與餘數</a>
         
             
         </li>
@@ -181,10 +195,10 @@
 	
 	
 	<li class="active" data-nav-item>
-    	<a href="/pages/c/basic/scope/" data-nav-link> 變數可見範圍與生命週期</a>
+    	<a href="/pages/c/basic/scope/" data-nav-link> 區域全域靜態變數</a>
         
             
-                <ul><li><a href="#區域變數" data-nav-link " >區域變數</a></li><li><a href="#外部變數" data-nav-link " >外部變數</a></li><li><a href="#在程式區塊中無法讀取同名的外部變數" data-nav-link " >在程式區塊中<code class="language-plaintext highlighter-rouge">{}</code>無法讀取同名的外部變數</a></li><li><a href="#程式區塊中讀取跟區域變數同名的全域變數" data-nav-link " >程式區塊中<code class="language-plaintext highlighter-rouge">{}</code>讀取跟區域變數同名的全域變數</a></li><li><a href="#for程式區塊中的區域變數" data-nav-link " >for程式區塊中的區域變數</a></li><li><a href="#虛擬碼" data-nav-link " >虛擬碼</a></li></ul>
+                <ul><li><a href="#區域變數與全域變數" data-nav-link " >區域變數與全域變數</a><ul><li><a href="#函式中的區域變數" data-nav-link " >函式中的區域變數</a></li><li><a href="#block程式碼區塊中區域變數" data-nav-link " >Block程式碼區塊中區域變數</a></li><li><a href="#函式參數" data-nav-link " >函式參數</a></li></ul></li><li><a href="#預設值" data-nav-link " >預設值</a><ul><li><a href="#區域變數與全域變數預設值" data-nav-link " >區域變數與全域變數預設值</a></li><li><a href="#區域陣列預設值" data-nav-link " >區域陣列預設值</a></li></ul></li><li><a href="#區域全域變數-memory-layout" data-nav-link " >區域全域變數 Memory Layout</a></li><li><a href="#靜態變數" data-nav-link " >靜態變數</a><ul><li><a href="#函式中靜態變數" data-nav-link " >函式中靜態變數</a></li><li><a href="#區域變數" data-nav-link " >區域變數</a></li><li><a href="#程式碼區塊" data-nav-link " >程式碼區塊</a></li><li><a href="#在程式區塊中無法讀取同名的區塊外的變數" data-nav-link " >在程式區塊中<code class="language-plaintext highlighter-rouge">{}</code>無法讀取同名的區塊外的變數</a></li><li><a href="#程式區塊中讀取跟區域變數同名的全域變數" data-nav-link " >程式區塊中<code class="language-plaintext highlighter-rouge">{}</code>讀取跟區域變數同名的全域變數</a></li><li><a href="#for程式區塊中的區域變數" data-nav-link " >for程式區塊中的區域變數</a></li><li><a href="#虛擬碼" data-nav-link " >虛擬碼</a></li></ul></li></ul>
 
             
         </li>
@@ -206,6 +220,27 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/c/basic/main/" data-nav-link> main</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/div_mod/" data-nav-link> 除法與餘數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/extern/" data-nav-link> extern</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/scanf/" data-nav-link> scanf</a>
         
             
         </li>
@@ -319,10 +354,10 @@
     	<a href="/pages/c/pointer/pointerArithmetic/" data-nav-link> 指標運算</a>
         
             
-        </li>
+        </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 指向陣列的指標 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 陣列 </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -340,14 +375,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/array/dynamicArrays/" data-nav-link> 陣列與動態配置記憶體</a>
+    	<a href="/pages/c/function/func_arr/" data-nav-link> 陣列與函式</a>
         
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/array/qsort/" data-nav-link> qsort排序</a>
+    	<a href="/pages/c/array/dynamicArrays/" data-nav-link> 陣列與動態配置記憶體</a>
         
             
         </li>
@@ -357,11 +392,11 @@
     	<a href="/pages/c/array/array2dimen/" data-nav-link> 二維陣列</a>
         
             
-        </li></ul></li>
+        </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/array/arrayOfPointers/" data-nav-link> 指標陣列存放多個記憶體位址</a>
+    	<a href="/pages/c/array/arrayOfPointers/" data-nav-link> 指標陣列</a>
         
             
         </li></ul></li>
@@ -381,7 +416,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/array/charArray/" data-nav-link> char 字串</a>
+    	<a href="/pages/c/array/charArray/" data-nav-link> c字串</a>
         
             
         </li>
@@ -530,7 +565,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/function/callByValue/" data-nav-link> 函式傳值與傳回值</a>
+    	<a href="/pages/c/function/callByValue/" data-nav-link> 函式參數傳遞</a>
         
             
         </li>
@@ -813,6 +848,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/c/dataStruct/recursion/" data-nav-link> 遞迴</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/array/qsort/" data-nav-link> qsort排序</a>
         
             
         </li></ul></li>
@@ -1609,6 +1651,13 @@
     	<a href="/pages/java/list/" data-nav-link> List</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/list_debug/" data-nav-link> ArrayList原始碼</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -2253,13 +2302,6 @@
         </li>
 	
 	
-	<li class="" data-nav-item>
-    	<a href="/pages/dataStruct/hanoi/" data-nav-link> 河內塔</a>
-        
-            
-        </li>
-	
-	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> sort </a><ul>
 	
 	
@@ -2279,6 +2321,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/dataStruct/bucket_sort/" data-nav-link> Bucket Sort</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/heapsort/" data-nav-link> Heap Sort</a>
         
             
         </li></ul></li>
@@ -2319,6 +2368,13 @@
     	<a href="/pages/dataStruct/avl_tree/" data-nav-link> AVL高度</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/huffman/" data-nav-link> 霍夫曼樹</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -2326,7 +2382,63 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/dataStruct/graph_dfs/" data-nav-link> 圖DFS</a>
+    	<a href="/pages/dataStruct/dfs/" data-nav-link> DFS</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/queen/" data-nav-link> N皇后</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/bfs/" data-nav-link> BFS</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/topology/" data-nav-link> 拓樸排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/dijkstra/" data-nav-link> Dijkstra</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/floyd/" data-nav-link> Floyd</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/uni_find/" data-nav-link> Union Find</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/kruskal/" data-nav-link> Kruskal</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/prim/" data-nav-link> Prim</a>
         
             
         </li></ul></li>
@@ -2336,7 +2448,28 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/hanoi/" data-nav-link> 河內塔</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/dataStruct/dp/" data-nav-link> 動態規劃背包</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/greedy/" data-nav-link> 貪心演算法</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/kmp/" data-nav-link> KMP</a>
         
             
         </li></ul></li></ul></li></ul></li>
@@ -3096,7 +3229,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >變數可見範圍與生命週期</a>
+                            <a href="." >區域全域靜態變數</a>
                         
                     </h1>
                 </div>
@@ -3109,13 +3242,358 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/basic/scope">變數可見範圍與生命週期</h1>
+                        <h1 id="/pages/c/basic/scope">區域全域靜態變數</h1>
                     
 
-                    <p>可見範圍(Scope)與生命週期(Lifetime)</p>
+                    <h2 id="區域變數與全域變數">區域變數與全域變數</h2>
+<p>在函式之外的變數是全域變數，整個程序都能使用它。<br />
+在函式之內的變數是區域變數，存取範圍就是在該函式之中。<br /></p>
+
+<h3 id="函式中的區域變數">函式中的區域變數</h3>
+<p>若全域變數與函式內的區域變數相同，就近原則，使用最近的區域變數。<br />
+區域變數會跟著函式呼叫完畢，被記憶體回收(記憶體釋放)。<br /></p>
+
+<p>以下的程式碼，func()與main()函式有區域變數n，印出區域變數n。<br />
+test()沒有區域變數n，存取全域變數。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre><span class="c1">// 全域</span>
+<span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 區域n</span>
+  <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func n ="</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">test</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 函式沒定義區域變數n，使用全域n</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"test n = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 區域n</span>
+  <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+  <span class="n">func</span><span class="p">();</span>
+  <span class="n">test</span><span class="p">();</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"main n ="</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func n =20
+test n = 10
+main n =30
+</code></pre></div></div>
+
+<h3 id="block程式碼區塊中區域變數">Block程式碼區塊中區域變數</h3>
+<p>func()函式有定義區域變數n，程式碼區塊中也有定義區域變數n。<br />
+就近原則，會使用程式碼區塊中的n。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func n ="</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">func</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func n =55
+</code></pre></div></div>
+
+<p>for(int n = 1) {} 程式碼區塊，n是for程式碼區塊的區域變數。<br />
+就近原則，使用for()定義的區域變數n。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">n</span> <span class="o">&lt;</span><span class="mi">10</span> <span class="p">;</span><span class="n">n</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">func</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+2
+3
+4
+5
+6
+7
+8
+9
+</code></pre></div></div>
+
+<p>if(1) {} 程式碼區塊也是相同道理，就近原則。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span>  <span class="s">"func n= "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>
+  <span class="n">func</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func n= 100
+</code></pre></div></div>
+
+<h3 id="函式參數">函式參數</h3>
+<p>函式參數也是區域變數，存取範圍只有在函式中，不可以超出函式的範圍之外。<br />
+以下程式碼func()函式有修改main()傳入的n變數，但對func而言，是把main的n變數中的值，拷貝到func()中的區域變數n的值中，修改func()函式的n變數不會影嚮main()的n變數。<br /></p>
+
+<p>請參考<a href="/pages/c/function/callByValue/">函式參數傳遞</a>文章。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">n</span><span class="o">++</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span>  <span class="s">"func n= "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">66</span><span class="p">;</span>
+  <span class="n">func</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"main n = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func n= 67
+main n = 66
+</code></pre></div></div>
+
+<h2 id="預設值">預設值</h2>
+<p>全域變數與全域陣列都會有預設值。</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>型態</td>
+      <td>預設值</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>char</td>
+      <td><code class="language-plaintext highlighter-rouge">\0</code></td>
+    </tr>
+    <tr>
+      <td>float</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>double</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>指標類型</td>
+      <td>NULL</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="區域變數與全域變數預設值">區域變數與全域變數預設值</h3>
+<p>函式內的區域變數如果不設初始值，會是亂七八糟的值。<br />
+函式外的全域變數會使用預設值，如int就會是0，char就會是<code class="language-plaintext highlighter-rouge">\0</code>。<br />
+所以區域變數要memset，清空亂七八糟的值。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func n = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">func</span><span class="p">();</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"main n = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func n = 32759
+main n = 0
+</code></pre></div></div>
+
+<h3 id="區域陣列預設值">區域陣列預設值</h3>
+<p>區域陣列的值，也是亂七八糟的值，使用時要memset。<br />
+全域陣列，系統會給預設值，若是int，預設值為0。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span>
+  <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">func</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0
+0
+0
+0
+-1074793232
+</code></pre></div></div>
+
+<h2 id="區域全域變數-memory-layout">區域全域變數 Memory Layout</h2>
+<p>下圖中，區域變數都在Statck。<br />
+<img src="/assets/img/c++/memory.png" alt="img" /><br /></p>
+
+<h2 id="靜態變數">靜態變數</h2>
+<h3 id="函式中靜態變數">函式中靜態變數</h3>
+<p>函式中的靜態變數是共享變數，不會跟著函式被系統銷毀。<br />
+func()中的靜態變數n，除了第一次呼叫func()函式會執行初始化。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static int n = 10;
+</code></pre></div></div>
+<p>第二次呼叫func()函式，就不會執行初始化。<br />
+靜態變數是存放在bss segment、data segment中，查上一個Memory Layout圖。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">static</span> <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="n">n</span><span class="o">++</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"func n = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">func</span><span class="p">();</span>
+  <span class="n">func</span><span class="p">();</span>
+  <span class="n">func</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func n = 11
+func n = 12
+func n = 13
+</code></pre></div></div>
 
 <h3 id="區域變數">區域變數</h3>
-
 <p>一對花括號<code class="language-plaintext highlighter-rouge">{}</code>包起來的就是程式碼區塊(block)或函式主體(Body)。程式碼區塊可以是if (){}或while(){}的程式碼區塊，但這篇要探討的是只有花括號<code class="language-plaintext highlighter-rouge">{}</code>包起來的程式碼區塊。</p>
 
 <figure class="highlight">
@@ -3151,9 +3629,8 @@ outer var11 = 100
 
 <p>在程式碼區塊中<code class="language-plaintext highlighter-rouge">{}</code>，所定義的變數都是區域變數，離開<code class="language-plaintext highlighter-rouge">{}</code>區塊就不能再讀取了，因為<code class="language-plaintext highlighter-rouge">{}</code>區塊中的區域變數已經被系統回收掉。可以想像<code class="language-plaintext highlighter-rouge">{}</code>就像是函式一樣。在函式中，函式中定義的變數都是區域變數，離開函式就不能被外部讀取區域變數，因為區域變數已經被系統回收了。</p>
 
-<h3 id="外部變數">外部變數</h3>
-
-<p>在<code class="language-plaintext highlighter-rouge">{}</code>區塊中，可以讀取外部變數</p>
+<h3 id="程式碼區塊">程式碼區塊</h3>
+<p>在<code class="language-plaintext highlighter-rouge">{}</code>區塊中，可以讀取程式碼區塊外的變數</p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3174,7 +3651,7 @@ outer var11 = 100
   <span class="p">{</span>
     <span class="kt">int</span> <span class="n">var11</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">//在`{}`區塊中，可以讀取外部變數</span>
+    <span class="c1">//在`{}`區塊中，可以程式碼區塊外的變數</span>
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"inner var12 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var12</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"outer var11 = "</span> <span class="o">&lt;&lt;</span> <span class="n">var11</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
@@ -3189,12 +3666,10 @@ inner var12 = 200
 outer var11 = 100
 </code></pre></div></div>
 
-<h3 id="在程式區塊中無法讀取同名的外部變數">在程式區塊中<code class="language-plaintext highlighter-rouge">{}</code>無法讀取同名的外部變數</h3>
-
-<p>因為在<code class="language-plaintext highlighter-rouge">{}</code>區塊中，同名的外部變數會先被暫時隱藏，直到程式執行時離開<code class="language-plaintext highlighter-rouge">{}</code>區塊，區塊內的區域變數被系統回收掉，同名的變數就會將記憶體位置指向外部變數。</p>
+<h3 id="在程式區塊中無法讀取同名的區塊外的變數">在程式區塊中<code class="language-plaintext highlighter-rouge">{}</code>無法讀取同名的區塊外的變數</h3>
+<p>因為在<code class="language-plaintext highlighter-rouge">{}</code>區塊中，同名的區塊外變數會先被暫時隱藏，直到程式執行時離開<code class="language-plaintext highlighter-rouge">{}</code>區塊，區塊內的區域變數被系統回收掉，同名的變數就會將記憶體位置指向區塊外變數。</p>
 
 <h3 id="程式區塊中讀取跟區域變數同名的全域變數">程式區塊中<code class="language-plaintext highlighter-rouge">{}</code>讀取跟區域變數同名的全域變數</h3>
-
 <p>使用::可以讀取全域變數。</p>
 
 <figure class="highlight">
@@ -3240,7 +3715,6 @@ outer var11 = 100
 </code></pre></div></div>
 
 <h3 id="for程式區塊中的區域變數">for程式區塊中的區域變數</h3>
-
 <p>變數i的有效範圍，只有在<code class="language-plaintext highlighter-rouge">{}</code>程式區塊中，離開<code class="language-plaintext highlighter-rouge">{}</code>程式區塊，區域變數i就無法在外部讀取。</p>
 
 <figure class="highlight">
@@ -3272,7 +3746,6 @@ i = 10
 </code></pre></div></div>
 
 <h3 id="虛擬碼">虛擬碼</h3>
-
 <p>可以在程式區塊寫虛擬碼，進行驗證，作為之後正式的函式使用。
 以下程式碼是在寫參數為指標，將指標宣告記憶體空間。</p>
 
@@ -3340,6 +3813,7 @@ p=0x60000000c000,*p=3
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>執行結果
 p=0x600000008030,*p=3
 </code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3530,7 +4004,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-08-09 17:08:32 +0800"
+        "time": "2025-09-04 09:53:19 +0800"
     },
     "basePath": "",
     "book": {

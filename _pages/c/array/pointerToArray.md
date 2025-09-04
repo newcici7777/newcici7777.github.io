@@ -29,9 +29,7 @@ array[4]地址 = 140702053823584
 從以上的執行結果可以知道每個位址差距4byte，而且是連續的。
 
 ### 陣列名就是陣列第0個元素的記憶體位址
-
 C++將陣列名視為陣列第0個元素的記憶體位址。
-
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -43,7 +41,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 執行結果
 陣列名 = 0x7ff7bfeff450
@@ -53,11 +50,8 @@ array[0]地址 = 0x7ff7bfeff450
 從以上的執行結果可以知道印出`陣列名`與使用`&取址運算子+陣列名`與印出`陣列第0個元素位址`的結果是一樣的。
 
 ### 陣列運算
-
 #### 陣列名 + 1
-
-陣列名 + 1，位址移動的範圍取決於陣列的資料型態。
-
+陣列名 + 1，位址移動的範圍取決於陣列的資料型態。<br>
 {% highlight c++ linenos %}
   int arr[] = {10, 100, 200};
   //印出arr[0]的地址
@@ -69,7 +63,6 @@ array[0]地址 = 0x7ff7bfeff450
   //印出arr[2]的地址
   cout << "arr+2地址=" <<  arr+2 << endl;
 {% endhighlight %}
-
 ```
 執行結果
 arr地址=0x7ff7bfeff45c
@@ -83,9 +76,7 @@ arr+2地址=0x7ff7bfeff464
 陣列第n個元素的記憶體位址 = 陣列名 + n
 
 #### (&陣列名 + 1)
-
 若是(&陣列名+1)，移動的是整個陣列的記憶體位置。
-
 {% highlight c++ linenos %}
 int main() {
   int arr[10];
@@ -97,26 +88,19 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 arr位址=140702053823552
 arr+1位址=140702053823556
 &arr + 1位址=140702053823592
 ```
+arr+1是從 arr的記憶體位址(140702053823552)移動4byte，移到140702053823556。<br>
 
-arr+1是從 arr的記憶體位址(140702053823552)移動4byte，移到140702053823556。
+(&arr+1)是移動陣列長度10\*4byte = 40 byte，從140702053823552移到140702053823592。<br>
 
-(&arr+1)是移動陣列長度10\*4byte = 40 byte，從140702053823552移到140702053823592。
-
-
-### 陣列名[索引] 等同 *(陣列名 + 索引)
-
-透過\*取值運算子，可以取出記憶體位址存放的內容。
-
-C++編譯器將陣列名[索引] 解釋為 *(陣列名 + 索引)
-
-arr[0]與\*(arr \+ 0)是相同的意思，都是對陣列第0個元素的記憶體位址取出存放的內容。
-
+### 陣列名[索引] 等同 \*(陣列名 + 索引)
+透過\*取值運算子，可以取出記憶體位址存放的內容。<br>
+C++編譯器將陣列名[索引] 解釋為 \*(陣列名 + 索引)<br>
+arr[0]與\*(arr \+ 0)是相同的意思，都是對陣列第0個元素的記憶體位址取出存放的內容。<br>
 {% highlight c++ linenos %}
   int arr[] = {10, 100, 200};
   //印出arr[0]的地址
@@ -150,7 +134,6 @@ arr+2值=200
 ```
 
 ### 指標指向陣列
-
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -167,7 +150,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 執行結果
 陣列名 = 0x7ff7bfeff450
@@ -205,7 +187,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 陣列名 = 0x7ff7bfeff450
 陣列名地址 = 0x7ff7bfeff450
@@ -222,9 +203,7 @@ p指標+3 = 0x7ff7bfeff45c
 由以上的結果可知，指標 + 1 與 &array[1]的結果是一樣的。
 
 ### 指標運算取值
-
 透過\*取值運算子，可以取出記憶體位址存放的內容。
-
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -253,7 +232,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 執行結果
 array[0] = 1
@@ -269,11 +247,9 @@ array[4] = 5
 *p指標+3 = 5
 ```
 
-### *(指標 + 索引) 等同 指標[索引]
-
-C++編譯器將指標[索引] 解釋為 *(指標 + 索引)
-
-指標就是存放記憶體位址，陣列名就是陣列第0個元素的記憶體位址，陣列名也是記憶體位址，所以陣列名[索引]等同記憶體位址[索引]，而指標是記憶體位址，等同記憶體位址[索引]，二者是相同。
+### \*(指標 + 索引) 等同 指標[索引]
+C++編譯器將指標[索引] 解釋為 \*(指標 + 索引)<br>
+指標就是存放記憶體位址，陣列名就是陣列第0個元素的記憶體位址，陣列名也是記憶體位址，所以陣列名[索引]等同記憶體位址[索引]，而指標是記憶體位址，等同記憶體位址[索引]，二者是相同。<br>
 
 {% highlight c++ linenos %}
 #include <iostream>
@@ -303,7 +279,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 執行結果
 array[0] = 1
@@ -324,7 +299,7 @@ p指標[索引3] = 4
 p指標[索引4] = 5
 ```
 
-### 記憶體位址[索引] 等同 *(記憶體位址 + 索引)
+### 記憶體位址[索引] 等同 \*(記憶體位址 + 索引)
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -373,7 +348,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 執行結果
 array[0] = 1
@@ -392,8 +366,8 @@ p指標[索引0] = 3
 p指標[索引1] = 4
 p指標[索引2] = 5
 ```
-### 陣列與指標與迴圈
 
+### 陣列與指標與迴圈
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -407,10 +381,9 @@ int main() {
     cout << "array+"<< i << " 記憶體位址 = " << array + i << endl;
     //印出array[i]的值
     cout << "array["<< i << "] 的值 = " << array[i] << endl;
-    //印出*(array + i)的值
+    //印出 *(array + i)的值
     cout << "*(array+"<< i << ") 的值 = " << *(array + i) << endl;
   }
-
   //將陣列名(也就是陣列第0個元素的記憶體位址)指定至指標變數p
   int* p = array;
   for (int i = 0; i < size; i++) {
@@ -422,7 +395,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 執行結果
 array[0] 記憶體位址 = 0x7ff7bfeff450
@@ -458,7 +430,6 @@ p + 4 記憶體位址 = 0x7ff7bfeff460
 ```
 
 ### 陣列與指標遞增遞減
-
 #### 指標++
 ```
   int array[5] = {1,2,3,4,5};
@@ -474,9 +445,9 @@ p + 4 記憶體位址 = 0x7ff7bfeff460
 |p + 3| 140702053823580 | 4 |
 |p + 4| 140702053823584 | 5 |
 
-指標變數p指向的是一個整數資料型態(4byte)的地址，每一次p + 1，指標變數p就會移動4byte。
+指標變數p指向的是一個整數資料型態(4byte)的地址，每一次p + 1，指標變數p就會移動4byte。<br>
 
-p++也就是等於 p = p + 1
+p++也就是等於 p = p + 1<br>
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -496,7 +467,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 執行結果
 p + 0 記憶體位址 = 140702053823568
@@ -512,7 +482,6 @@ p + 4 的值 = 5
 ```
 
 #### \*ptr++
-
 指標先取出記憶體位址存放的值，再往下一個位址移動。
 {% highlight c++ linenos %}
   //宣告一個陣列
@@ -533,7 +502,6 @@ p + 4 的值 = 5
 ```
 
 #### \*++ptr
-
 指標先往下一個記憶體位址移動，再取出記憶體位址存放的值。
 {% highlight c++ linenos %}
   //宣告一個陣列
@@ -545,7 +513,6 @@ p + 4 的值 = 5
     printf("值= %d\n",*++ptr);
   }
 {% endhighlight %}
-
 ```
 執行結果
 值= 100
@@ -554,9 +521,7 @@ p + 4 的值 = 5
 ```
 
 #### ptr\-\-指標遞減
-
 將指標指向前一個記憶體位址
-
 {% highlight c++ linenos %}
   int arr[] = {10, 100, 200};
   //取得陣列中最後一個值的記憶體位址
@@ -568,7 +533,6 @@ p + 4 的值 = 5
     ptr--;
   }  
 {% endhighlight %}  
-
 ```
 執行結果
 arr[3]:記憶體位址= 0xbfdff37c
@@ -578,27 +542,69 @@ arr[2]:值= 100
 arr[1]:記憶體位址= 0xbfdff374
 arr[1]:值= 10
 ```
+![img]({{site.imgurl}}/c++/arr/arr_ptr1.png)<br>
+
+![img]({{site.imgurl}}/c++/arr/arr_ptr2.png)<br>
+
+![img]({{site.imgurl}}/c++/arr/arr_ptr3.png)<br>
+
+![img]({{site.imgurl}}/c++/arr/arr_ptr4.png)<br>
+
+指標先取出記憶體位址存放的值，再往下一個位址移動。
+{% highlight c++ linenos %}
+int main() {
+  int arr[] = {100, 200, 300};
+  int len = sizeof(arr) / sizeof(int);
+  int * ptr = arr;
+  for(int i = 0 ; i < len; i++) {
+    cout << "ptr address = " << &ptr ;
+    cout << " address =" << ptr ;
+    cout << " value = " << * ptr++ << endl;
+  }
+  return 0;
+}
+{% endhighlight %}
+```
+ptr address = 0x7ff7bfeff2c8 address =0x7ff7bfeff2dc value = 100
+ptr address = 0x7ff7bfeff2c8 address =0x7ff7bfeff2e0 value = 200
+ptr address = 0x7ff7bfeff2c8 address =0x7ff7bfeff2e4 value = 300
+```
+
+指標先取出記憶體位址存放的值，再往上一個位址移動。<br>
+{% highlight c++ linenos %}
+int main() {
+  int arr[] = {100, 200, 300};
+  int len = sizeof(arr) / sizeof(int);
+  int* ptr = &arr[2];
+  for (int i = len; i > 0; i--) {
+    cout << "ptr address = " << &ptr ;
+    cout << " address =" << ptr ;
+    cout << " value = " << * ptr-- << endl;
+  }
+  return 0;
+}
+{% endhighlight %}
+```
+ptr address = 0x7ff7bfeff2c8 address =0x7ff7bfeff2e4 value = 300
+ptr address = 0x7ff7bfeff2c8 address =0x7ff7bfeff2e0 value = 200
+ptr address = 0x7ff7bfeff2c8 address =0x7ff7bfeff2dc value = 100
+```
 
 ### 陣列名是常數，不可修改
-
 指標變數p可以設為其它記憶體位址。
-
 ```
 p = p + 1;
 p++;
 ```
 
 陣列名無法再設為其它記憶體位址，以下的語法無法編譯成功。
-
 ```
 array = array + 1;
 array++;
 ```
 
 ### 記憶體位址轉型
-
 以下程式碼將字元陣列轉型成整數陣列。
-
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -624,8 +630,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
-
 ```
 執行結果
 *(p + 0) = 0
@@ -636,7 +640,6 @@ int main() {
 ```
 
 ### 函式的參數為指向陣列的指標
-
 參數的寫法有下面二種，因為傳入的參數是指標，對指標用sizeof(指標)，只會得到8byte，所以一定要傳入陣列的長度，或者把陣列的長度設為常數。
 ```
 void func(int* arr, int len);

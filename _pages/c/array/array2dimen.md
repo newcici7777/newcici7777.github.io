@@ -1,7 +1,7 @@
 ---
 title: 二維陣列
 date: 2024-06-18
-keywords: c++, two dimensional arrays
+keywords: c++, two dimensional arrays, pointer to array
 ---
 ## 二維陣列Memory Layout
 C與C++的二維陣列記憶體配置如下:<br>
@@ -13,7 +13,7 @@ int是4byte，也就是每個記憶體的位移是4byte。<br>
 
 二維陣列宣告，以下二種方式都是正確，因為C++的Memory Layout確實是一個長長的一維陣列，只是編譯器會自動把一維轉成二維存取。
 {% highlight c++ linenos %}
-  int arr[3][3] = {{10, 20, 30}, {40, 50, 60}, {70, 80, 90}};
+  int arr[3][3] = { {10, 20, 30}, {40, 50, 60}, {70, 80, 90} };
   int arr[3][3] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
 {% endhighlight %}
 
@@ -41,6 +41,23 @@ arr[0]與arr[1]，中間差12byte。把arr[0]的記憶體位址0x2000 + 12 = 0x2
 arr[0] address = 0x2000
 arr[1] address = 0x200C
 arr[2] address = 0x2018
+```
+
+## arr與arr[0]與arr[0][0]記憶體位址都相同
+注意arr與arr[0]前面是沒有`&`<br>
+{% highlight c++ linenos %}
+int main() {
+  int arr[][3] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+  cout << "arr address = " << arr << endl;
+  cout << "arr[0] address = " << arr[0] << endl;
+  cout << "arr[0][0] address = " << &arr[0][0] << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+arr address = 0x2000
+arr[0] address = 0x2000
+arr[0][0] address = 0x2000
 ```
 
 ## 求出row列與column欄
@@ -76,7 +93,7 @@ sizeof(arr[0]) / sizeof(int) = 12 / 4byte = 3欄。<br>
 ### 遍歷二維陣列
 {% highlight c++ linenos %}
 int main() {
-  //int arr[3][3] = {{10, 20, 30}, {40, 50, 60}, {70, 80, 90}};
+  //int arr[3][3] = { {10, 20, 30}, {40, 50, 60}, {70, 80, 90} };
   int arr[3][3] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
   int row = sizeof(arr) / sizeof(arr[0]);
   int column = sizeof(arr[0]) / sizeof(int);
@@ -93,6 +110,37 @@ int main() {
 10 20 30 
 40 50 60 
 70 80 90
+```
+
+### 指標指向二維陣列
+宣告方式:有圓括號包住(* 指標名)代表指向二維陣列的指標
+```
+int (* 指標名)[大小] = 陣列名;
+int (* ptr)[3] = arr;
+```
+
+{% highlight c++ linenos %}
+int main() {
+  int arr[3][3] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+  int row = sizeof(arr) / sizeof(arr[0]);
+  int column = sizeof(arr[0]) / sizeof(int);
+  // 宣告指標，指向二維陣列
+  // 注意！有括號包住指標(* ptr)，有圓括號包住代表指向二維陣列的指標
+  int (* ptr)[3] = arr;
+  for (int i = 0; i < row; i++) {
+    for (int j = 0; j < column; j++) {
+      // 用法跟2維陣列用法相同，但變數名改為ptr
+      cout << ptr[i][j] << " ";
+    }
+    cout << endl;
+  }
+  return 0;
+}
+{% endhighlight %}
+```
+10 20 30 
+40 50 60 
+70 80 90 
 ```
 
 ## 二維陣列初始化注意事項
@@ -225,7 +273,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 arr[0][0] = 1
 arr[0][1] = 2
@@ -251,32 +298,27 @@ arr[1][2]位址 = 140702053823588
 可以使用指標把二維陣列轉成一維指標陣列，印出值。
 
 ## 指標指向二維陣列
-
-二維陣列可以解釋為，一維陣列，裡面每一個元素又指向一維陣列。
+指標指向二維陣列，英文是pointer to array。<br>
+二維陣列可以解釋為，一維陣列，裡面每一個元素又指向一維陣列。<br>
 
 宣告方式
-
 ```
 資料類型 (*指標變數)[二維陣列每個元素所指向的一維陣列大小] = 二維陣列變數名;
 ```
-
-使用二維陣列指標一定要把\*指標變數用括號()包起來，因為有運算子優先順序的問題。
-
+使用二維陣列指標一定要把\*指標變數用括號()包起來，因為有運算子優先順序的問題。<br>
 {% highlight c++ linenos %}
 int main() {
   //[3]代表二維陣列每個元素是大小為3的一維陣列。
   int arr[2][3] = { {1,2,3},{4,5,6} };
   //[3]代表二維陣列每個元素是大小為3的一維陣列。
-  int (*p)[3] = arr;
+  int (* p)[3] = arr;
   return 0;
 }
 {% endhighlight %}
-
-[上一個程式碼例子](#二維陣列轉成一維陣列) ，指標是指向二維陣列int[2][3]，無法轉成指向一維陣列的指標int*，所以要強制轉型成指向一維陣列的指標`(int*)二維陣列變數名`
+[上一個程式碼例子](#二維陣列轉成一維陣列) ，指標是指向二維陣列int[2][3]，無法轉成指向一維陣列的指標int\*，所以要強制轉型成指向一維陣列的指標`(int\*)二維陣列變數名`
 
 
 以下程式碼原本指向一維陣列的指標，指向二維陣列會編譯錯誤。
-
 ```
 //二維陣列
 int arr[2][3] = {0};
@@ -284,18 +326,16 @@ int arr[2][3] = {0};
 int* p = arr;
 ```
 
-> Cannot initialize a variable of type 'int *' with an lvalue of type 'int[2][3]'
+> Cannot initialize a variable of type 'int \*' with an lvalue of type 'int[2][3]'
 
 
 二維陣列先轉成一維陣列，使用`(int*)`，再讓指標指向轉型成一維的陣列。
-
 ```
 int arr[2][3] = {0};
 int* p = (int*)arr;
 ```
 
 ## 二維陣列傳函式
-
 方法有二種
 
 - 指標方式 void func(int (*p)[3], int len);
@@ -304,7 +344,7 @@ int* p = (int*)arr;
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
-void func(int (*p)[3], int len) {
+void func(int (* p)[3], int len) {
   for (int i = 0; i < len; i++) {
     for (int j = 0; j < 3; j++) {
       cout << "p[" << i << "][" << i << "] = " << p[i][j] << "\t";
@@ -325,17 +365,13 @@ p[0][0] = 1	p[0][0] = 2	p[0][0] = 3
 p[1][1] = 4	p[1][1] = 5	p[1][1] = 6
 ```
 ## 指標指向三維陣列
-
 宣告方式
-
 ```
 資料類型 (*指標變數)[陣列個數][元素個數] = 三維陣列變數名;
 ```
 
-三維陣列傳函式的方法有二種
-
+三維陣列傳函式的方法有二種<br>
 - 指標方式 
-
 ```
 void func(int (*p)[2][3], int len);
 ```
@@ -345,7 +381,6 @@ void func(int (*p)[2][3], int len);
 ```
 void func(int p[][2][3], int len);
 ```
-
 ### 印出陣列元素
 {% highlight c++ linenos %}
 #include <iostream>

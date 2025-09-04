@@ -3,7 +3,7 @@
     <head>
 <meta charset="UTF-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>二維陣列 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="c++, two dimensional arrays" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="c++, two dimensional arrays, pointer to array" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -143,7 +143,21 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/basic/printformat/" data-nav-link> 整數與浮點數</a>
+    	<a href="/pages/c/basic/int_long/" data-nav-link> 整數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/float_double/" data-nav-link> 浮點數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/div_mod/" data-nav-link> 除法與餘數</a>
         
             
         </li>
@@ -181,7 +195,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/basic/scope/" data-nav-link> 變數可見範圍與生命週期</a>
+    	<a href="/pages/c/basic/scope/" data-nav-link> 區域全域靜態變數</a>
         
             
         </li>
@@ -203,6 +217,27 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/c/basic/main/" data-nav-link> main</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/div_mod/" data-nav-link> 除法與餘數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/extern/" data-nav-link> extern</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/scanf/" data-nav-link> scanf</a>
         
             
         </li>
@@ -316,10 +351,10 @@
     	<a href="/pages/c/pointer/pointerArithmetic/" data-nav-link> 指標運算</a>
         
             
-        </li>
+        </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 指向陣列的指標 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 陣列 </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -337,14 +372,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/array/dynamicArrays/" data-nav-link> 陣列與動態配置記憶體</a>
+    	<a href="/pages/c/function/func_arr/" data-nav-link> 陣列與函式</a>
         
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/array/qsort/" data-nav-link> qsort排序</a>
+    	<a href="/pages/c/array/dynamicArrays/" data-nav-link> 陣列與動態配置記憶體</a>
         
             
         </li>
@@ -354,14 +389,14 @@
     	<a href="/pages/c/array/array2dimen/" data-nav-link> 二維陣列</a>
         
             
-                <ul><li><a href="#初始化" data-nav-link " >初始化</a><ul><li><a href="#初始化方法1" data-nav-link " >初始化方法1</a></li><li><a href="#初始化方法2" data-nav-link " >初始化方法2</a></li><li><a href="#初始化方法3" data-nav-link " >初始化方法3</a></li></ul></li><li><a href="#sizeof" data-nav-link " >sizeof</a></li><li><a href="#二維陣列轉成一維陣列" data-nav-link " >二維陣列轉成一維陣列</a></li><li><a href="#指標指向二維陣列" data-nav-link " >指標指向二維陣列</a></li><li><a href="#二維陣列傳函式" data-nav-link " >二維陣列傳函式</a></li><li><a href="#指標指向三維陣列" data-nav-link " >指標指向三維陣列</a><ul><li><a href="#印出陣列元素" data-nav-link " >印出陣列元素</a></li><li><a href="#修改陣列元素" data-nav-link " >修改陣列元素</a></li></ul></li></ul>
+                <ul><li><a href="#二維陣列memory-layout" data-nav-link " >二維陣列Memory Layout</a></li><li><a href="#二維陣列由一維陣列組成" data-nav-link " >二維陣列由一維陣列組成。</a></li><li><a href="#arr與arr0與arr00記憶體位址都相同" data-nav-link " >arr與arr[0]與arr[0][0]記憶體位址都相同</a></li><li><a href="#求出row列與column欄" data-nav-link " >求出row列與column欄</a><ul><li><a href="#求出陣列有幾列row" data-nav-link " >求出陣列有幾列row</a></li><li><a href="#求出陣列有幾欄column" data-nav-link " >求出陣列有幾欄column</a></li><li><a href="#遍歷二維陣列" data-nav-link " >遍歷二維陣列</a></li></ul></li><li><a href="#二維陣列初始化注意事項" data-nav-link " >二維陣列初始化注意事項</a></li><li><a href="#初始化" data-nav-link " >初始化</a><ul><li><a href="#初始化方法1" data-nav-link " >初始化方法1</a></li><li><a href="#初始化方法2" data-nav-link " >初始化方法2</a></li><li><a href="#初始化方法3" data-nav-link " >初始化方法3</a></li></ul></li><li><a href="#sizeof" data-nav-link " >sizeof</a></li><li><a href="#二維陣列轉成一維陣列" data-nav-link " >二維陣列轉成一維陣列</a></li><li><a href="#指標指向二維陣列" data-nav-link " >指標指向二維陣列</a></li><li><a href="#二維陣列傳函式" data-nav-link " >二維陣列傳函式</a></li><li><a href="#指標指向三維陣列" data-nav-link " >指標指向三維陣列</a><ul><li><a href="#印出陣列元素" data-nav-link " >印出陣列元素</a></li><li><a href="#修改陣列元素" data-nav-link " >修改陣列元素</a></li></ul></li></ul>
 
             
-        </li></ul></li>
+        </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/array/arrayOfPointers/" data-nav-link> 指標陣列存放多個記憶體位址</a>
+    	<a href="/pages/c/array/arrayOfPointers/" data-nav-link> 指標陣列</a>
         
             
         </li></ul></li>
@@ -381,7 +416,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/array/charArray/" data-nav-link> char 字串</a>
+    	<a href="/pages/c/array/charArray/" data-nav-link> c字串</a>
         
             
         </li>
@@ -530,7 +565,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/function/callByValue/" data-nav-link> 函式傳值與傳回值</a>
+    	<a href="/pages/c/function/callByValue/" data-nav-link> 函式參數傳遞</a>
         
             
         </li>
@@ -813,6 +848,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/c/dataStruct/recursion/" data-nav-link> 遞迴</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/array/qsort/" data-nav-link> qsort排序</a>
         
             
         </li></ul></li>
@@ -1609,6 +1651,13 @@
     	<a href="/pages/java/list/" data-nav-link> List</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/list_debug/" data-nav-link> ArrayList原始碼</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -2253,13 +2302,6 @@
         </li>
 	
 	
-	<li class="" data-nav-item>
-    	<a href="/pages/dataStruct/hanoi/" data-nav-link> 河內塔</a>
-        
-            
-        </li>
-	
-	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> sort </a><ul>
 	
 	
@@ -2279,6 +2321,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/dataStruct/bucket_sort/" data-nav-link> Bucket Sort</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/heapsort/" data-nav-link> Heap Sort</a>
         
             
         </li></ul></li>
@@ -2319,6 +2368,13 @@
     	<a href="/pages/dataStruct/avl_tree/" data-nav-link> AVL高度</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/huffman/" data-nav-link> 霍夫曼樹</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -2326,7 +2382,63 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/dataStruct/graph_dfs/" data-nav-link> 圖DFS</a>
+    	<a href="/pages/dataStruct/dfs/" data-nav-link> DFS</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/queen/" data-nav-link> N皇后</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/bfs/" data-nav-link> BFS</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/topology/" data-nav-link> 拓樸排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/dijkstra/" data-nav-link> Dijkstra</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/floyd/" data-nav-link> Floyd</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/uni_find/" data-nav-link> Union Find</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/kruskal/" data-nav-link> Kruskal</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/prim/" data-nav-link> Prim</a>
         
             
         </li></ul></li>
@@ -2336,7 +2448,28 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/hanoi/" data-nav-link> 河內塔</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/dataStruct/dp/" data-nav-link> 動態規劃背包</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/greedy/" data-nav-link> 貪心演算法</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/kmp/" data-nav-link> KMP</a>
         
             
         </li></ul></li></ul></li></ul></li>
@@ -3112,8 +3245,178 @@
                         <h1 id="/pages/c/array/array2dimen">二維陣列</h1>
                     
 
-                    <h2 id="初始化">初始化</h2>
+                    <h2 id="二維陣列memory-layout">二維陣列Memory Layout</h2>
+<p>C與C++的二維陣列記憶體配置如下:<br />
+在Stack空間，建立一個長長的陣列，假設是<code class="language-plaintext highlighter-rouge">int arr[3][3]</code>，會建立9個連續的記憶體空間。<br />
+int是4byte，也就是每個記憶體的位移是4byte。<br />
+<code class="language-plaintext highlighter-rouge">arr[0][0]</code>與<code class="language-plaintext highlighter-rouge">arr[0][1]</code>記憶體位址相差4byte。<br /></p>
 
+<p><img src="/assets/img/c++/arr/arr2d1.png" alt="img" /><br /></p>
+
+<p>二維陣列宣告，以下二種方式都是正確，因為C++的Memory Layout確實是一個長長的一維陣列，只是編譯器會自動把一維轉成二維存取。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">},</span> <span class="p">{</span><span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">},</span> <span class="p">{</span><span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">}</span> <span class="p">};</span>
+  <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="二維陣列由一維陣列組成">二維陣列由一維陣列組成。</h2>
+<p><code class="language-plaintext highlighter-rouge">arr[3][3]</code>二維陣列，分別由三個一維陣列所組成。分別為arr[0]、arr[1]、arr[2]，這三個一維陣列所組成。</p>
+
+<p><img src="/assets/img/c++/arr/arr2d2.png" alt="img" /><br /></p>
+
+<p>arr[0]指向一維陣列第1個元素記憶體位址。<br />
+arr[1]指向一維陣列第1個元素記憶體位址。<br />
+arr[2]指向一維陣列第1個元素記憶體位址。<br /></p>
+
+<p>arr[0]包含3個元素，arr[1]包含3個元素，arr[2]包含3個元素。</p>
+
+<p><code class="language-plaintext highlighter-rouge">arr[0]</code>，陣列名本身就是記憶體位址，印出陣列名就是印出陣列地址，陣列名[0]本身就是記憶體位址，印出陣列名[0]就是印出記憶體位址。<br /></p>
+
+<p>arr[0]與arr[1]，中間差12byte。把arr[0]的記憶體位址0x2000 + 12 = 0x200C。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">arr</span><span class="p">[][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">};</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr[0] address = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr[1] address = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr[2] address = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arr[0] address = 0x2000
+arr[1] address = 0x200C
+arr[2] address = 0x2018
+</code></pre></div></div>
+
+<h2 id="arr與arr0與arr00記憶體位址都相同">arr與arr[0]與arr[0][0]記憶體位址都相同</h2>
+<p>注意arr與arr[0]前面是沒有<code class="language-plaintext highlighter-rouge">&amp;</code><br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">arr</span><span class="p">[][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">};</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr address = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr[0] address = "</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"arr[0][0] address = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arr address = 0x2000
+arr[0] address = 0x2000
+arr[0][0] address = 0x2000
+</code></pre></div></div>
+
+<h2 id="求出row列與column欄">求出row列與column欄</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arr[列][欄]
+arr[row][column]
+</code></pre></div></div>
+
+<h3 id="求出陣列有幾列row">求出陣列有幾列row</h3>
+<p>2維陣列全部大小<code class="language-plaintext highlighter-rouge">sizeof(arr)</code> = int為4byte，陣列有9個元素，9 * 4 byte = 36 byte<br />
+<code class="language-plaintext highlighter-rouge">sizeof(arr[0])</code>取出第0列的大小，每一列row有3個元素 * 4byte = 12byte <br />
+sizeof(arr) / sizeof(arr[0]) = 36 / 12 = 3列<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">};</span>
+  <span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"row = "</span> <span class="o">&lt;&lt;</span> <span class="n">row</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3
+</code></pre></div></div>
+
+<h3 id="求出陣列有幾欄column">求出陣列有幾欄column</h3>
+<p><code class="language-plaintext highlighter-rouge">sizeof(arr[0])</code>取出第0列的大小，每一列row有3個元素 * 4byte = 12byte <br />
+<code class="language-plaintext highlighter-rouge">sizeof(int)</code>為4byte <br />
+sizeof(arr[0]) / sizeof(int) = 12 / 4byte = 3欄。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>  <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">};</span>
+  <span class="kt">int</span> <span class="n">column</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"column = "</span> <span class="o">&lt;&lt;</span> <span class="n">column</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="遍歷二維陣列">遍歷二維陣列</h3>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">//int arr[3][3] = { {10, 20, 30}, {40, 50, 60}, {70, 80, 90} };</span>
+  <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">};</span>
+  <span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+  <span class="kt">int</span> <span class="n">column</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">row</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">column</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10 20 30 
+40 50 60 
+70 80 90
+</code></pre></div></div>
+
+<h2 id="二維陣列初始化注意事項">二維陣列初始化注意事項</h2>
+<p>若二維陣列的值全部寫上，陣列row的大小宣告可以不寫。<br />
+編譯器可從元素數量9 / 欄位大小3，推導出row列是3。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">arr</span><span class="p">[][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>注意！以下的寫法是錯誤，column欄的大小不能為空，這樣編譯器無法推導大小，以下是Java的寫法，不是C++的寫法。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="c1">// 錯誤！</span>
+<span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">3</span><span class="p">][]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="初始化">初始化</h2>
 <h3 id="初始化方法1">初始化方法1</h3>
 
 <figure class="highlight">
@@ -3162,7 +3465,6 @@ arr[1][2] = 6
 </figure>
 
 <h3 id="初始化方法3">初始化方法3</h3>
-
 <p>第1個[]中不用寫長度，第2個[]中要寫長度。</p>
 
 <figure class="highlight">
@@ -3334,15 +3636,13 @@ arr[1][2]位址 = 140702053823588
 <p>可以使用指標把二維陣列轉成一維指標陣列，印出值。</p>
 
 <h2 id="指標指向二維陣列">指標指向二維陣列</h2>
-
-<p>二維陣列可以解釋為，一維陣列，裡面每一個元素又指向一維陣列。</p>
+<p>指標指向二維陣列，英文是pointer to array。<br />
+二維陣列可以解釋為，一維陣列，裡面每一個元素又指向一維陣列。<br /></p>
 
 <p>宣告方式</p>
-
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>資料類型 (*指標變數)[二維陣列每個元素所指向的一維陣列大小] = 二維陣列變數名;
 </code></pre></div></div>
-
-<p>使用二維陣列指標一定要把*指標變數用括號()包起來，因為有運算子優先順序的問題。</p>
+<p>使用二維陣列指標一定要把*指標變數用括號()包起來，因為有運算子優先順序的問題。<br /></p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3356,16 +3656,15 @@ arr[1][2]位址 = 140702053823588
   <span class="c1">//[3]代表二維陣列每個元素是大小為3的一維陣列。</span>
   <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">},{</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">}</span> <span class="p">};</span>
   <span class="c1">//[3]代表二維陣列每個元素是大小為3的一維陣列。</span>
-  <span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="p">(</span><span class="o">*</span> <span class="n">p</span><span class="p">)[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span><span class="p">;</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<p><a href="#二維陣列轉成一維陣列">上一個程式碼例子</a> ，指標是指向二維陣列int[2][3]，無法轉成指向一維陣列的指標int*，所以要強制轉型成指向一維陣列的指標<code class="language-plaintext highlighter-rouge">(int*)二維陣列變數名</code></p>
+<p><a href="#二維陣列轉成一維陣列">上一個程式碼例子</a> ，指標是指向二維陣列int[2][3]，無法轉成指向一維陣列的指標int*，所以要強制轉型成指向一維陣列的指標<code class="language-plaintext highlighter-rouge">(int\*)二維陣列變數名</code></p>
 
 <p>以下程式碼原本指向一維陣列的指標，指向二維陣列會編譯錯誤。</p>
-
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//二維陣列
 int arr[2][3] = {0};
 //原本指向一維陣列的指標，直接指向二維陣列會編譯錯誤
@@ -3377,13 +3676,11 @@ int* p = arr;
 </blockquote>
 
 <p>二維陣列先轉成一維陣列，使用<code class="language-plaintext highlighter-rouge">(int*)</code>，再讓指標指向轉型成一維的陣列。</p>
-
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int arr[2][3] = {0};
 int* p = (int*)arr;
 </code></pre></div></div>
 
 <h2 id="二維陣列傳函式">二維陣列傳函式</h2>
-
 <p>方法有二種</p>
 
 <ul>
@@ -3431,28 +3728,21 @@ int* p = (int*)arr;
 p[1][1] = 4	p[1][1] = 5	p[1][1] = 6
 </code></pre></div></div>
 <h2 id="指標指向三維陣列">指標指向三維陣列</h2>
-
 <p>宣告方式</p>
-
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>資料類型 (*指標變數)[陣列個數][元素個數] = 三維陣列變數名;
 </code></pre></div></div>
 
-<p>三維陣列傳函式的方法有二種</p>
-
+<p>三維陣列傳函式的方法有二種<br /></p>
 <ul>
-  <li>指標方式</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void func(int (*p)[2][3], int len);
-</code></pre></div></div>
-
-<ul>
+  <li>指標方式
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void func(int (*p)[2][3], int len);
+</code></pre></div>    </div>
+  </li>
   <li>陣列方式</li>
 </ul>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void func(int p[][2][3], int len);
 </code></pre></div></div>
-
 <h3 id="印出陣列元素">印出陣列元素</h3>
 
 <figure class="highlight">
@@ -3658,14 +3948,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/array/qsort" class="navigation navigation-prev navigation-unique" aria-label="Previous page: qsort排序">
+                        <a href="/pages/c/array/dynamicArrays" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 陣列與動態配置記憶體">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/c/array/arrayOfPointers" class="navigation navigation-next navigation-unique" aria-label="Next page: 指標陣列存放多個記憶體位址">
+                        <a href="/pages/c/array/arrayOfPointers" class="navigation navigation-next navigation-unique" aria-label="Next page: 指標陣列">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3683,7 +3973,7 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "指標陣列存放多個記憶體位址",
+            "title": "指標陣列",
             "level": "1.2",
             "depth": 1,
             "path": "_pages/c/array/arrayOfPointers.md",
@@ -3785,7 +4075,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-08-09 17:08:32 +0800"
+        "time": "2025-09-04 09:53:19 +0800"
     },
     "basePath": "",
     "book": {

@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>函式傳值與傳回值 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>函式參數傳遞 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="keywords" content="c++, call by value" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -143,7 +143,21 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/basic/printformat/" data-nav-link> 整數與浮點數</a>
+    	<a href="/pages/c/basic/int_long/" data-nav-link> 整數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/float_double/" data-nav-link> 浮點數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/div_mod/" data-nav-link> 除法與餘數</a>
         
             
         </li>
@@ -181,7 +195,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/basic/scope/" data-nav-link> 變數可見範圍與生命週期</a>
+    	<a href="/pages/c/basic/scope/" data-nav-link> 區域全域靜態變數</a>
         
             
         </li>
@@ -203,6 +217,27 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/c/basic/main/" data-nav-link> main</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/div_mod/" data-nav-link> 除法與餘數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/extern/" data-nav-link> extern</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/scanf/" data-nav-link> scanf</a>
         
             
         </li>
@@ -316,10 +351,10 @@
     	<a href="/pages/c/pointer/pointerArithmetic/" data-nav-link> 指標運算</a>
         
             
-        </li>
+        </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 指向陣列的指標 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 陣列 </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -337,14 +372,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/array/dynamicArrays/" data-nav-link> 陣列與動態配置記憶體</a>
+    	<a href="/pages/c/function/func_arr/" data-nav-link> 陣列與函式</a>
         
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/array/qsort/" data-nav-link> qsort排序</a>
+    	<a href="/pages/c/array/dynamicArrays/" data-nav-link> 陣列與動態配置記憶體</a>
         
             
         </li>
@@ -354,11 +389,11 @@
     	<a href="/pages/c/array/array2dimen/" data-nav-link> 二維陣列</a>
         
             
-        </li></ul></li>
+        </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/array/arrayOfPointers/" data-nav-link> 指標陣列存放多個記憶體位址</a>
+    	<a href="/pages/c/array/arrayOfPointers/" data-nav-link> 指標陣列</a>
         
             
         </li></ul></li>
@@ -378,7 +413,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/array/charArray/" data-nav-link> char 字串</a>
+    	<a href="/pages/c/array/charArray/" data-nav-link> c字串</a>
         
             
         </li>
@@ -527,10 +562,10 @@
 	
 	
 	<li class="active" data-nav-item>
-    	<a href="/pages/c/function/callByValue/" data-nav-link> 函式傳值與傳回值</a>
+    	<a href="/pages/c/function/callByValue/" data-nav-link> 函式參數傳遞</a>
         
             
-                <ul><li><a href="#函式傳遞值-call-by-value" data-nav-link " >函式傳遞值 Call by value</a><ul><li><a href="#解釋1" data-nav-link " >解釋1</a></li><li><a href="#解釋2" data-nav-link " >解釋2</a></li><li><a href="#解釋3" data-nav-link " >解釋3</a></li></ul></li><li><a href="#函式傳回值是值" data-nav-link " >函式傳回值是值</a><ul><li><a href="#解釋1-1" data-nav-link " >解釋1</a></li><li><a href="#解釋2-1" data-nav-link " >解釋2</a></li></ul></li></ul>
+                <ul><li><a href="#函式參數為基本型態" data-nav-link " >函式參數為基本型態</a></li><li><a href="#每個函式都是獨立空間" data-nav-link " >每個函式都是獨立空間</a></li><li><a href="#函式中的變數" data-nav-link " >函式中的變數</a></li><li><a href="#函式不能使用其它函式的區域變數" data-nav-link " >函式不能使用其它函式的區域變數</a></li><li><a href="#函式複製基本型態參數" data-nav-link " >函式複製基本型態參數</a></li><li><a href="#隱藏的return" data-nav-link " >隱藏的return</a></li><li><a href="#接收return" data-nav-link " >接收return</a></li><li><a href="#複製記憶體位址" data-nav-link " >複製記憶體位址</a></li><li><a href="#取得其它函式中的值" data-nav-link " >取得其它函式中的值</a></li><li><a href="#修改其它函式中的值" data-nav-link " >修改其它函式中的值</a></li><li><a href="#交換" data-nav-link " >交換</a></li><li><a href="#函式區域變數" data-nav-link " >函式區域變數</a></li></ul>
 
             
         </li>
@@ -813,6 +848,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/c/dataStruct/recursion/" data-nav-link> 遞迴</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/array/qsort/" data-nav-link> qsort排序</a>
         
             
         </li></ul></li>
@@ -1609,6 +1651,13 @@
     	<a href="/pages/java/list/" data-nav-link> List</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/list_debug/" data-nav-link> ArrayList原始碼</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -2253,13 +2302,6 @@
         </li>
 	
 	
-	<li class="" data-nav-item>
-    	<a href="/pages/dataStruct/hanoi/" data-nav-link> 河內塔</a>
-        
-            
-        </li>
-	
-	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> sort </a><ul>
 	
 	
@@ -2279,6 +2321,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/dataStruct/bucket_sort/" data-nav-link> Bucket Sort</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/heapsort/" data-nav-link> Heap Sort</a>
         
             
         </li></ul></li>
@@ -2319,6 +2368,13 @@
     	<a href="/pages/dataStruct/avl_tree/" data-nav-link> AVL高度</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/huffman/" data-nav-link> 霍夫曼樹</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -2326,7 +2382,63 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/dataStruct/graph_dfs/" data-nav-link> 圖DFS</a>
+    	<a href="/pages/dataStruct/dfs/" data-nav-link> DFS</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/queen/" data-nav-link> N皇后</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/bfs/" data-nav-link> BFS</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/topology/" data-nav-link> 拓樸排序</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/dijkstra/" data-nav-link> Dijkstra</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/floyd/" data-nav-link> Floyd</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/uni_find/" data-nav-link> Union Find</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/kruskal/" data-nav-link> Kruskal</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/prim/" data-nav-link> Prim</a>
         
             
         </li></ul></li>
@@ -2336,7 +2448,28 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/hanoi/" data-nav-link> 河內塔</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/dataStruct/dp/" data-nav-link> 動態規劃背包</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/greedy/" data-nav-link> 貪心演算法</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/kmp/" data-nav-link> KMP</a>
         
             
         </li></ul></li></ul></li></ul></li>
@@ -3096,7 +3229,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >函式傳值與傳回值</a>
+                            <a href="." >函式參數傳遞</a>
                         
                     </h1>
                 </div>
@@ -3109,7 +3242,7 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/function/callByValue">函式傳值與傳回值</h1>
+                        <h1 id="/pages/c/function/callByValue">函式參數傳遞</h1>
                     
 
                     <p>Prerequisites:</p>
@@ -3118,21 +3251,132 @@
   <li><a href="/pages/c/basic/param/">引數</a></li>
 </ul>
 
-<h2 id="函式傳遞值-call-by-value">函式傳遞值 Call by value</h2>
+<h2 id="函式參數為基本型態">函式參數為基本型態</h2>
+<p>基本型態有char, short, int , long, long long, double, float。<br /> 
+test()函式的參數為int n，int是基本型態。</p>
 
-<h3 id="解釋1">解釋1</h3>
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">test</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"n = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">test</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
-<p>函式會建立新的變數將引數拷貝到新的變數，將新的變數作為參數，所以在函式對參數做的任何操作，實際上是對新的變數做操作，而不是對引數做操作。</p>
+<h2 id="每個函式都是獨立空間">每個函式都是獨立空間</h2>
+<p>main()函式會有自己的空間與變數n。<br />
+test()函式會有自己的空間與變數n。<br />
+二個空間的變數名n雖然一樣，但不是同樣的東西，各自獨立存在各自的函式空間，存取範圍只在自己的函式中，修改main()函式的n不會更改test()函式的n，修改test()函式的n不會更改main()函式的n。<br />
+就像1年1班，有一個學生叫小明。3年1班也有一個學生叫小明，但二個人只是名字一樣，但是不同人。<br /></p>
 
-<h3 id="解釋2">解釋2</h3>
+<p>下圖，main()函式把20傳入test()函式。<br />
+<img src="/assets/img/c++/func/func_stack1.png" alt="img" /><br /></p>
 
-<p>參數一進入函式，函式即建立新的變數保管這些參數值，同時新變數的資料型態完全吻合參數的資料型態，這種傳遞參數的方式會先把參數複製一份，稱為傳值呼叫(call by value)。</p>
+<p>main()函式，把20複製給test()空間的n變數，test()空間的n變數與main()空間的n變數是不相同。
+<img src="/assets/img/c++/func/func_stack2.png" alt="img" /><br /></p>
 
-<h3 id="解釋3">解釋3</h3>
+<p>test()函式呼叫cout 印出 n。
+<img src="/assets/img/c++/func/func_stack3.png" alt="img" /><br /></p>
 
-<p>以傳值方式傳遞參數的函式會建立一個與參數型態相同的變數，然後把參數的值複製到該變數，因此，函式不能存取原來的變數，僅能存取其拷貝值。當函式無須修改原來的變數值時，傳值的方法很實用，同時保證函式不會破壞原來的變數值。</p>
+<p>test()函式全部執行完畢，在Stack中的test()函式空間會被記憶體釋放，回到main()函式中，呼叫test()的那一行。<br />
+<img src="/assets/img/c++/func/func_stack4.png" alt="img" /><br /></p>
 
-<p>以下程式碼是將引數x傳遞給函式setX()，將引數x拷貝到參數r，對參數r進行修改，並不會影嚮x引數。</p>
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">test</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"n = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">test</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>印出結果:n=20<br /></p>
+
+<h2 id="函式中的變數">函式中的變數</h2>
+<p>下圖中，main()函式中的n，與test()函式中的n，二者各自獨立，cout印出的都是自己函式中的n，不會跨界印出其它函式中的n。<br />
+<img src="/assets/img/c++/func/func_stack8.png" alt="img" /><br /></p>
+
+<h2 id="函式不能使用其它函式的區域變數">函式不能使用其它函式的區域變數</h2>
+<p>以下會編譯不過，main()函式本身是沒有n變數，main()函式無法存取test()函式中的n變數。<br />
+二者在不同的空間。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">test</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"n = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">test</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"n = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="函式複製基本型態參數">函式複製基本型態參數</h2>
+<p>呼叫函式時，若參數為基本型態，是「複製」值。<br />
+以下程式是把20複製給test()函式中的n變數，再進行n++，但test()函式中的變數n跟main()函式中的變數n二者是不同的，各自存在不同的空間，離開test()空間後，test()空間與n變數會被記憶體釋放，回到main函式後，main的n變數仍是20，因為二者為不同空間的變數，修改test()函式中的n，不會跟著修改main()函式中的n。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">test</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">n</span><span class="o">++</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"n = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">test</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"n = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>n = 21
+n = 20
+</code></pre></div></div>
+
+<h2 id="隱藏的return">隱藏的return</h2>
+<p>當test()函式執行到最後，會有一個隱藏的return，返回呼叫test()函式的「位置」。<br /></p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3147,37 +3391,24 @@
 10
 11
 12
-</pre></td><td class="code"><pre><span class="c1">//r為參數</span>
-<span class="kt">void</span> <span class="nf">setX</span><span class="p">(</span><span class="kt">int</span> <span class="n">r</span><span class="p">){</span>
-  <span class="n">r</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">test</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">n</span><span class="o">++</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"n = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="c1">// 隱藏的return</span>
+  <span class="k">return</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before x = "</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="c1">//x為引數</span>
-  <span class="n">setX</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After x = "</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">test</span><span class="p">(</span><span class="n">n</span><span class="p">);</span> <span class="c1">// return返回的位置</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"n = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Before x = 10
-After x = 10
-</code></pre></div></div>
-
-<h2 id="函式傳回值是值">函式傳回值是值</h2>
-
-<h3 id="解釋1-1">解釋1</h3>
-<p>以下的程式碼，main()和getValue()都各別有存放傳回值r的記憶體位址，待getValue()的r變數傳回給main()的r變數後，getValue()的r變數的記憶體位址就會被釋放。</p>
-
-<h3 id="解釋2-1">解釋2</h3>
-
-<ul>
-  <li><a href="/pages/c/dynamicMemory/memoryLayout/#變數記憶體位址">記憶體配置</a></li>
-</ul>
-
-<p>函式會將傳回值拷貝到暫存器或stack中，然後再傳回拷貝到暫存器或stack中的值，接下來再把函式中區域變數記憶體釋放。</p>
+<h2 id="接收return">接收return</h2>
+<p>如果函式有return傳回值，就會把test()函式的值，傳回main函式，並且「要有變數去接收」傳回值，傳回值就會影嚮main()函式的變數值。<br />
+<img src="/assets/img/c++/func/func_stack9.png" alt="img" /><br /></p>
 
 <figure class="highlight">
   <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3189,20 +3420,262 @@ After x = 10
 7
 8
 9
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">getValue</span><span class="p">(){</span>
-  <span class="kt">int</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>
-  <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">test</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">r</span> <span class="o">=</span> <span class="n">getValue</span><span class="p">();</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"r = "</span> <span class="o">&lt;&lt;</span> <span class="n">r</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">n</span> <span class="o">=</span> <span class="n">test</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"main() n = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>r = 1000
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>main() n = 21
 </code></pre></div></div>
+
+<p>return傳回值會取代原本<code class="language-plaintext highlighter-rouge">test(n)</code>的程式碼，直接由21取代，參考下圖。<br />
+<img src="/assets/img/c++/func/func_stack10.png" alt="img" /><br /></p>
+
+<p>如果沒有變數去接收，不會修改main()函式的變數值。<br />
+執行結果n仍是20。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">test</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">test</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"main() n = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>main() n = 20
+</code></pre></div></div>
+
+<h2 id="複製記憶體位址">複製記憶體位址</h2>
+<p>若要讓test()函式可以修改main()函式的n變數。<br />
+需要使用「記憶體位址」的方式。<br />
+把「記憶體位址」傳入test()函式，要使用「指標類型」，才可以把main()函式的n變數的記憶體位址「複製」到test()函式。<br /></p>
+
+<p>下圖中，test()函式中的n變數，記憶體位址是0x000008，存的「值」是記憶體位址0x000001。<br />
+main()函式中的n變數，記憶體位址0x000001，存的「值」是20。<br />
+<img src="/assets/img/c++/func/func_stack5.png" alt="img" /><br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">test</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"test n address = "</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">test</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"main n address = "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>test n address = 0x000001
+main n address = 0x000001
+</code></pre></div></div>
+
+<h2 id="取得其它函式中的值">取得其它函式中的值</h2>
+<p>test()函式中的n變數，記憶體位址是0x000008，存的「值」是記憶體位址0x000001。<br />
+透過對「記憶體位址」使用*取值運算子，可以取出記憶體位址中的「值」。<br />
+<code class="language-plaintext highlighter-rouge">*0x000001</code>，取出0x000001記憶體位址存放的「值」20。<br />
+<img src="/assets/img/c++/func/func_stack6.png" alt="img" /><br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">test</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"main() n = "</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  <span class="n">test</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>main() n = 20
+</code></pre></div></div>
+
+<h2 id="修改其它函式中的值">修改其它函式中的值</h2>
+<p>透過對「記憶體位址」使用*取值運算子，可以對記憶體位址的值進行修改的操作。<br />
+<code class="language-plaintext highlighter-rouge">*0x000001</code>先把記憶體的「值=20」取出來。<br />
+20++的意思就是把20 + 1，再把21存入<code class="language-plaintext highlighter-rouge">0x000001</code>記憶體位址的值。<br />
+<img src="/assets/img/c++/func/func_stack7.png" alt="img" /><br /></p>
+
+<h2 id="交換">交換</h2>
+<p>如果函式參數是基本型態，就無法修改其它函式中的變數。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">swap</span><span class="p">(</span><span class="kt">int</span> <span class="n">n1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">n1</span><span class="p">;</span>
+  <span class="n">n1</span> <span class="o">=</span> <span class="n">n2</span><span class="p">;</span>
+  <span class="n">n2</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"swap() n1 = %d, n2 = %d </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">n1</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">n2</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="n">swap</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"main() n1 = %d, n2 = %d </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>swap() n1 = 10, n2 = 5 
+main() n1 = 5, n2 = 10
+</code></pre></div></div>
+
+<p>如果函式參數是指標(記憶體位址)，複製傳入參數為記憶體位址，就可以修改其它函式中的記憶體位址中的「值」。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">swap</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">n1</span><span class="p">,</span> <span class="kt">int</span><span class="o">*</span> <span class="n">n2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="o">*</span><span class="n">n1</span><span class="p">;</span>
+  <span class="o">*</span><span class="n">n1</span> <span class="o">=</span> <span class="o">*</span><span class="n">n2</span><span class="p">;</span>
+  <span class="o">*</span><span class="n">n2</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"swap() n1 = %d, n2 = %d </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="o">*</span><span class="n">n1</span><span class="p">,</span> <span class="o">*</span><span class="n">n2</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">n1</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">n2</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="n">swap</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n2</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"main() n1 = %d, n2 = %d </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>swap() n1 = 10, n2 = 5 
+main() n1 = 10, n2 = 5 
+</code></pre></div></div>
+
+<h2 id="函式區域變數">函式區域變數</h2>
+<p>在函式中的變數是區域變數。<br />
+若與全域變數是相同名字，函式會採取就近原則，使用函式中的區域變數。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">n1</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">test</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">n1</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"test() n1 = %d </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">n1</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">test</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>test() n1 = 100 
+</code></pre></div></div>
+
+<p>函式中的區域變數要設初始值。<br />
+「全域」變數會根據基本型態設定對映的初始值，如:int是0，char是<code class="language-plaintext highlighter-rouge">\0</code>，「全域」變數是整個程式都可以共享，可以放在標頭檔.h，但只能被include一次。<br />
+函式中的區域變數不會設定對映的初始值，如果不設初始值，會有亂七八糟的值，甚至造成程式執行失敗。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="c1">// 全域變數，沒設初始值，預設為0</span>
+<span class="kt">int</span> <span class="n">n2</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">test</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 區域變數沒設初始值，預設為亂七八糟的值。</span>
+  <span class="kt">int</span> <span class="n">n1</span><span class="p">;</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"test() n1 = %d </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">n1</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"test() n2 = %d </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">n2</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">test</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>test() n1 = 32759 
+test() n2 = 0 
+</code></pre></div></div>
+<p>從執行結果，可以知道區域變數與全域變數的預設值有很大不同。</p>
 
 </section>
             </div><div class="search-results">
@@ -3394,7 +3867,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-08-09 17:08:32 +0800"
+        "time": "2025-09-04 09:53:19 +0800"
     },
     "basePath": "",
     "book": {
