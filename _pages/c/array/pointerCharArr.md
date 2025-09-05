@@ -16,7 +16,7 @@ keywords: c++, char array
 
 - 例1
 
-	s指標指向字串常數，常數占在記憶體唯讀空間，常數是放在code segment 記憶體區塊，只能讀取，無法修改。
+	s指標指向字串常數，常數占在記憶體唯讀空間，常數是放在RODATA記憶體區塊，只能讀取，無法修改。
 
 {% highlight c++ linenos %}
 char * s = "http://www.google.com";
@@ -223,74 +223,5 @@ int main() {
 desc = Hello World!
 ```
 
-## 指標陣列存放多個字串常數位址
 
-參考
-
-[指標陣列存放多個記憶體位址]({% link _pages/c/array/arrayOfPointers.md %})
-
-[二維陣列字串]({% link _pages/c/array/charArray.md %}#二維陣列字串)
-
-之前二維陣列字串的範例中，定義陣列的大小是7個字串陣列，每個字串固定10byte，記憶體空間就會是70byte，但每個字母有長有短，就會造成記憶體空間上的浪費。
-
-{% highlight c++ linenos %}
-#include <iostream>
-using namespace std;
-const int DAYS = 7; //字串數，7個字串
-const int MAX = 10; // 每個字串最大長度，包含\0
-int main() {
-  char str[DAYS][MAX] = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
-
-  //印出二維陣列字串的記憶體大小
-  //7個字串 * 每個字串最大長度10byte
-  cout << "str size = " << sizeof(str) << endl;
-
-  for (int i = 0; i < DAYS; i++) {
-    //印出字串
-    cout << str[i] << endl;
-  }
-  return 0;
-}
-{% endhighlight %}
-
-```
-str size = 70
-Sunday
-Monday
-Tuesday
-Wednesday
-Thursday
-Friday
-Saturday
-```
-
-使用指標陣列，存放多個字串常數的記憶體位址，每個字串常數都有起始記憶體位址，即字串常數的第一個字元的位址，就不用定義二維陣列大小去存放字元。
-
-{% highlight c++ linenos %}
-#include <iostream>
-using namespace std;
-const int DAYS = 7; //陣列裡的指標個數
-int main() {
-  //陣列存放7個指標，每個指標指向字串常數的第一個字元的位址
-  char *arr_ptrs[DAYS] =
-  {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};//字串指標陣列
-  
-  //指標的固定大小是8byte，指標陣列存放7個指標，總共大小為8byte*7
-  cout << "arr_ptrs size = " << sizeof(arr_ptrs) << endl;
-  for (int i = 0; i < DAYS; i++)
-    cout << arr_ptrs[i] << endl;
-  return 0;
-}
-{% endhighlight %}
-
-```
-arr_ptrs size = 56
-Sunday
-Monday
-Tuesday
-Wednesday
-Thursday
-Friday
-Saturday
-```
 

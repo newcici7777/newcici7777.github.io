@@ -448,6 +448,15 @@ p + 4 記憶體位址 = 0x7ff7bfeff460
 指標變數p指向的是一個整數資料型態(4byte)的地址，每一次p + 1，指標變數p就會移動4byte。<br>
 
 p++也就是等於 p = p + 1<br>
+
+![img]({{site.imgurl}}/c++/arr/arr_ptr1.png)<br>
+
+![img]({{site.imgurl}}/c++/arr/arr_ptr2.png)<br>
+
+![img]({{site.imgurl}}/c++/arr/arr_ptr3.png)<br>
+
+![img]({{site.imgurl}}/c++/arr/arr_ptr4.png)<br>
+
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -460,7 +469,7 @@ int main() {
     //印出指標變數p的內容(指標存放的內容是記憶體位址)
     cout << "p + "<< i << " 記憶體位址 = " << (long long)p  << endl;
     //印出指標變數p記憶體位址存放的值
-    cout << "p + "<< i << " 的值 = " << *p << endl;
+    cout << "p + "<< i << " 的值 = " << * p << endl;
     //p = p + 1，指標變數移動4byte，將移動後的記憶體位址指派給指標變數p
     p++;
   }
@@ -484,13 +493,33 @@ p + 4 的值 = 5
 #### \*ptr++
 指標先取出記憶體位址存放的值，再往下一個位址移動。
 {% highlight c++ linenos %}
+int main() {
+  int arr[] = {100, 200, 300};
+  int len = sizeof(arr) / sizeof(int);
+  int* ptr = arr;
+  for(int i = 0 ; i < len; i++) {
+    cout << "ptr address = " << &ptr ;
+    cout << " address =" << ptr ;
+    cout << " value = " << * ptr++ << endl;
+  }
+  return 0;
+}
+{% endhighlight %}
+```
+ptr address = 0x7ff7bfeff2c8 address =0x7ff7bfeff2dc value = 100
+ptr address = 0x7ff7bfeff2c8 address =0x7ff7bfeff2e0 value = 200
+ptr address = 0x7ff7bfeff2c8 address =0x7ff7bfeff2e4 value = 300
+```
+
+指標先取出記憶體位址存放的值，再往下一個位址移動。
+{% highlight c++ linenos %}
   //宣告一個陣列
   int arr[] = {10, 100, 200};
   //將arr的第一個值(10)的位址傳給ptr指標
   //ptr是整數型態4byte的指標
-  int *ptr = arr;
+  int* ptr = arr;
   for (int i = 0; i < 3; i++) {
-    printf("值= %d\n",*ptr++);
+    printf("值= %d\n",* ptr++);
   }
 {% endhighlight %}
 
@@ -508,9 +537,9 @@ p + 4 的值 = 5
   int arr[] = {10, 100, 200};
   //將arr的第一個值(10)的位址傳給ptr指標
   //ptr是整數型態4byte的指標
-  int *ptr = arr;
+  int* ptr = arr;
   for (int i = 0; i < 3; i++) {
-    printf("值= %d\n",*++ptr);
+    printf("值= %d\n",* ++ptr);
   }
 {% endhighlight %}
 ```
@@ -541,33 +570,6 @@ arr[2]:記憶體位址= 0xbfdff378
 arr[2]:值= 100
 arr[1]:記憶體位址= 0xbfdff374
 arr[1]:值= 10
-```
-![img]({{site.imgurl}}/c++/arr/arr_ptr1.png)<br>
-
-![img]({{site.imgurl}}/c++/arr/arr_ptr2.png)<br>
-
-![img]({{site.imgurl}}/c++/arr/arr_ptr3.png)<br>
-
-![img]({{site.imgurl}}/c++/arr/arr_ptr4.png)<br>
-
-指標先取出記憶體位址存放的值，再往下一個位址移動。
-{% highlight c++ linenos %}
-int main() {
-  int arr[] = {100, 200, 300};
-  int len = sizeof(arr) / sizeof(int);
-  int * ptr = arr;
-  for(int i = 0 ; i < len; i++) {
-    cout << "ptr address = " << &ptr ;
-    cout << " address =" << ptr ;
-    cout << " value = " << * ptr++ << endl;
-  }
-  return 0;
-}
-{% endhighlight %}
-```
-ptr address = 0x7ff7bfeff2c8 address =0x7ff7bfeff2dc value = 100
-ptr address = 0x7ff7bfeff2c8 address =0x7ff7bfeff2e0 value = 200
-ptr address = 0x7ff7bfeff2c8 address =0x7ff7bfeff2e4 value = 300
 ```
 
 指標先取出記憶體位址存放的值，再往上一個位址移動。<br>
@@ -625,7 +627,7 @@ int main() {
   }
   for (int i = 0; i < size; i++) {
     //印出記憶體位址存放的值
-    cout <<"*(p + "<< i <<") = " << p[i] << endl;
+    cout <<"* (p + "<< i <<") = " << p[i] << endl;
   }
   return 0;
 }
@@ -653,17 +655,15 @@ void func(int arr[], int len);
 * 參數1，指標變數名arr[]，使用陣列表示法不代表是陣列，而是指標。
 * 參數2，陣列長度。
 
-
 以下程式碼為傳陣列給函式的寫法。
-
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
 void func(int arr[], int len) {
   cout << "arr指標大小 = " << sizeof(arr) << endl;
   for (int i = 0; i < len; i++) {
-    //使用*(陣列名 + 索引)印出陣列元素，也可以使用陣列名[索引]的方式印出陣列元素
-    cout << "arr[" << i << "] = " << *(arr + i) << endl;
+    //使用* (陣列名 + 索引)印出陣列元素，也可以使用陣列名[索引]的方式印出陣列元素
+    cout << "arr[" << i << "] = " << * (arr + i) << endl;
   }
 }
 int main() {
@@ -672,8 +672,6 @@ int main() {
   func(array,sizeof(array)/sizeof(int));
 }
 {% endhighlight %}
-
-
 ```
 執行結果
 arr指標大小 = 8
