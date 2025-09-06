@@ -5,6 +5,11 @@ keywords: c++, char array
 ---
 ## 宣告字串
 ### 方式一
+語法
+```
+char 陣列名[大小];
+```
+陣列名c，預設指向索引[0]的記憶體位址。<br>
 若陣列大小，大於初始化初始化字元數目，其它則自動設為0。<br>
 以下只有abc有值，其它都為0。<br>
 {% highlight c++ linenos %}
@@ -44,6 +49,35 @@ int main() {
 ```
 c = abc
 ```
+
+沒有指向常數的字串陣列可修改內容。<br>
+{% highlight c++ linenos %}
+int main() {
+  char c[7] = {'a', 'b', 'c'};
+  c[0] = 'g';
+  c[1] = 'g';
+  int len = sizeof(c) / sizeof(char);
+  for(int i = 0; i < len; i++) {
+    printf("i = %d, value = %c \n", i, c[i]);
+  }
+  return 0;
+}
+{% endhighlight %}
+```
+i = 0, value = g 
+i = 1, value = g 
+i = 2, value = c 
+i = 3, value = 
+i = 4, value = 
+i = 5, value = 
+i = 6, value = 
+```
+
+#### `\0`無法印出
+使用%c，無法印出`\0`，也就是整數是0，字串的結尾。<br>
+上個程式範例，無法印出`\0`。<br>
+但如果是轉成%d，就可以印出整數。<br>
+C++中，char是整數，可以用%d或%c印出，%d是印出整數，%c是印出整數對映的ASCII Code。<br>
 
 ### 方式二
 若是初始化的字元數量與陣列大小一樣，其它編譯器會印出亂碼，因為印出直到「遇到0」為止，那沒有遇到0之前，就一直印。<br>
