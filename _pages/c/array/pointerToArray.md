@@ -3,6 +3,26 @@ title: 一維陣列與指標
 date: 2024-06-05
 keywords: c++, pointer to pointer
 ---
+## 指標的移動
+注意！單純印出指標p，是印出指標「存放」的記憶體位址。<br>
+{% highlight c++ linenos %}
+int main() {
+  int arr[] = {100, 200, 300};
+  int* p = arr;
+  int len = sizeof(arr)/sizeof(int);
+  for (int i = 0; i < len; i++) {
+    printf("p本身的address = %p, p儲存的address = %p, 值 = %d \n",&p, p, * p);
+    p = p + 1;
+  }
+  return 0;
+}
+{% endhighlight %}
+```
+p本身的address = 0x7ff7bfeff2d0, p儲存的address = 0x7ff7bfeff2dc, 值 = 100 
+p本身的address = 0x7ff7bfeff2d0, p儲存的address = 0x7ff7bfeff2e0, 值 = 200 
+p本身的address = 0x7ff7bfeff2d0, p儲存的address = 0x7ff7bfeff2e4, 值 = 300 
+```
+
 ### 陣列的記憶體位址是連續的。
 {% highlight c++ linenos %}
 #include <iostream>

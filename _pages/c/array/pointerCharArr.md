@@ -3,11 +3,8 @@ title: char字串指標
 date: 2024-06-19
 keywords: c++, char array
 ---
-
 ## 字串常數
-
 ### 字串常數是包在二個雙引號之間""
-
 ```
 "http://www.google.com"
 ```
@@ -38,11 +35,11 @@ message = nullptr;
 {% endhighlight %}
 
 ### 無法透過\*取值運算子，把字串常數指派給指標
-無法透過\*取值運算子，把字串常數指派給指標，以下會編譯錯誤，只能使狦strcpy複製字串常數。
+無法透過\*取值運算子，把字串常數指派給指標，以下會編譯錯誤，只能使用strcpy複製字串常數。
 
 {% highlight c++ linenos %}
 char* message = new char[100];
-*message = "abcdefg";//編輯錯誤
+* message = "abcdefg";//編輯錯誤
 {% endhighlight %}
 
 ### 字串常數記憶體大小
@@ -69,15 +66,6 @@ s1長度=21
 ```
 
 ## 指向字串常數的指標
-
-參考
-
-[字串常數宣告]({% link _pages/c/array/charArray.md %}#字串常數宣告)
-
-[指標陣列++]({% link _pages/c/array/pointerToArray.md %}#指標)
-
-[陣列名是常數，不可修改]({% link _pages/c/array/pointerToArray.md %}#陣列名是常數不可修改)
-
 以下程式分別為字串陣列與指標初始化字串常數，不可以使用`字串陣列名++`，因為陣列名是指向陣列記憶體的開始位址，到程式結束前都不會改變，陣列名是常數，就像我們不可能寫成`7++`的意思是一樣的，而指標是變數，變數就是可以改變值(在這裡是改變存放的記憶體位址)。
 
 {% highlight c++ linenos %}
@@ -113,17 +101,6 @@ cstr2 = ello World!
 ```
 
 ## 字串指標與函式
-
-參考
-
-[空字元]({% link _pages/c/array/charArray.md %}#空字元null-character)
-
-[strlen]({% link _pages/c/array/charArray.md %}#字串長度-strlen)
-
-[\*ptr++]({% link _pages/c/array/pointerToArray.md %}#ptr)
-
-[size_t]({% link _pages/c/basic/typedef.md %}#size_t-無符號整數型態)
-
 寫一個傳進指標的函式，函式是把來源字串(src)拷貝到目標字串(desc)。
 
 {% highlight c++ linenos %}
@@ -193,13 +170,6 @@ int main() {
 {% endhighlight %}
 
 ## 指標字串拷貝
-
-參考
-
-[字串拷貝-strcpy]({% link _pages/c/array/charArray.md %}#字串拷貝-strcpy)
-
-[const右邊是星號]({% link _pages/c/pointer/pointerConst.md %}#const右邊是星號)
-
 ```
 char * strcpy ( char * destination, const char * source );
 ```

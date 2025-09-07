@@ -3,13 +3,10 @@ title: 初始化結構
 date: 2024-07-04
 keywords: c++, struct
 ---
-
 ## 使用大括號{}初始化
-
 ```
 結構  變數名 = {值1, 值2 ...}
 ```
-
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -26,20 +23,17 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 Mary
 1
 ```
 
 ## 定義結構時初始化
-
 ```
 struct 結構名{
 	變數宣告
-}結構變數={值1, 值2 ...};
+}變數1={值1, 值2 ...}, 變數2={值1, 值2 ...};
 ```
-
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -48,25 +42,25 @@ struct Student{
   char* name;
   //學號
   int id;
-}student = {"Bill", 2};
+}s1 = {"Bill", 2}, s2 = {"Mary", 3};
 int main() {
-  cout << student.name << endl;
-  cout << student.id << endl;
+  cout << s1.name << endl;
+  cout << s1.id << endl;
+  cout << s2.name << endl;
+  cout << s2.id << endl;
   return 0;
 }
 {% endhighlight %}
-
 ```
 Bill
 2
+Mary
+3
 ```
 
 ## 結構成員記憶體位址的值全初始化成00000000
-
 ### 方式1
-
 {0}把成員初始化00000000。
-
 ```
 struct 結構名{
 	變數宣告
@@ -90,7 +84,6 @@ int main() {
 ```
 結構  變數名 = {0}
 ```
-
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -107,9 +100,7 @@ int main() {
 {% endhighlight %}
 
 ### 方式2
-
 只寫大括號也是把成員初始化00000000。
-
 ```
 struct 結構名{
 	變數宣告
@@ -133,7 +124,6 @@ int main() {
 ```
 結構  變數名 = {}
 ```
-
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -150,10 +140,7 @@ int main() {
 {% endhighlight %}
 
 ### 方式3
-
 c11之徫可以省略等於=
-
-
 ```
 struct 結構名{
 	變數宣告
@@ -177,7 +164,6 @@ int main() {
 ```
 結構  變數名{}
 ```
-
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -194,9 +180,7 @@ int main() {
 {% endhighlight %}
 
 ### 方式4
-
 使用memset()
-
 ```
 memset(結構變數地址,0,sizeof(結構變數));
 ```

@@ -3,24 +3,18 @@ title: 結構陣列
 date: 2024-07-08
 keywords: c++, struct
 ---
-
 Prerequisites:
 
-- [陣列清空][1]
-
-- [陣列運算][2]
+- [指標指向結構][1]
 
 ## 結構陣列的宣告方式
-
 ```
 結構 陣列名[陣列大小];
 Student students[size];
 ```
 
 ## 結構陣列指定元素
-
 ### 使用.運算子
-
 完整程式碼
 {% highlight c++ linenos %}
 #include <iostream>
@@ -63,9 +57,7 @@ id = 3, name = Jeff
 ```
 
 ### 使用大括號{}
-
 C++11以上才能使用。
-
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -101,11 +93,9 @@ id = 3, name = Jeff
 ```
 
 ## 使用指標運算取值
-
 使用箭頭->方式取值，括號()前面不需要加上星號\*
-
 ```
-(陣列名 + 元素索引index)->結構成
+(陣列名 + 元素索引index)->結構成員變數
 ```
 
 {% highlight c++ linenos %}
@@ -113,7 +103,6 @@ id = 3, name = Jeff
 {% endhighlight %}
 
 完整程式碼
-
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -153,20 +142,17 @@ id = 3, name = Jeff
 ```
 
 ## 使用指標運算指定值
-
 ```
 *(陣列名 + 元素索引index) = {值1,值2, ...};
 ```
 
 {% highlight c++ linenos %}
-  *(students + 0) = {"Bill",1};
-  *(students + 1) = {"Mary",2};
-  *(students + 2) = {"Jeff",3};
+  * (students + 0) = {"Bill",1};
+  * (students + 1) = {"Mary",2};
+  * (students + 2) = {"Jeff",3};
 {% endhighlight %}
 
-
 完整程式碼
-
 {% highlight c++ linenos %}
 #include <iostream>
 using namespace std;
@@ -183,10 +169,9 @@ int main() {
   //清空資料
   //參數1是地址，student陣列名就是陣列記憶體的開始位址
   memset(students, 0, sizeof(students));
-  *(students + 0) = {"Bill",1};
-  *(students + 1) = {"Mary",2};
-  *(students + 2) = {"Jeff",3};
-  
+  * (students + 0) = {"Bill",1};
+  * (students + 1) = {"Mary",2};
+  * (students + 2) = {"Jeff",3};
   cout << "id = " << (students+0)->id;
   cout << ", name = " << (students+0)->name << endl;
   
@@ -198,5 +183,4 @@ int main() {
 }
 {% endhighlight %}
 
-[1]: {% link _pages/c/array/array.md %}#memset陣列清空
-[2]: {% link _pages/c/array/pointerToArray.md %}#陣列名--1
+[1]: {% link _pages/c/struct/struct_pointer.md %}

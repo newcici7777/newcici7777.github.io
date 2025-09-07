@@ -126,7 +126,7 @@ int main() {
 {% endhighlight %}
 
 ## Struct Memory layout
-### 記憶體位址
+### 結構記憶體大小
 s1變數指向Student結構中第1個成員變數的記憶體位址。<br>
 每一個成員變數都有自己的記憶體位址，成員變數name是指標類型，占8byte，id是整數類型，占4byte，addr是指標類型，占8byte。<br>
 但結構會以最大的記憶體位址大小 8byte來作為單位。<br>
@@ -136,6 +136,7 @@ s1變數指向Student結構中第1個成員變數的記憶體位址。<br>
 
 所以成員的記憶體位址相差是8byte。<br>
 
+### 結構與字串常數指標
 name是指標變數，存放字串常數的記憶體位址，字串常數放置在RODATA唯讀區塊。<br>
 id是整數，整數是基本型態，所以直接存放1。<br>
 addr是指標變數，存放字串常數的記憶體位址，字串常數放置在RODATA唯讀區塊。<br>
@@ -150,8 +151,10 @@ struct Student {
 };
 int main() {
   struct Student s1;
+  // 5byte，包含\0字串結尾
   s1.name = "Mary";
   s1.id = 1;
+  // 12byte
   s1.addr = "Taiwan,Tapei";
   printf("&s1 = %p, &name = %p, &id = %p, &addr = %p \n",&s1, &s1.name, &s1.id, &s1.addr);
   printf("name = %p, addr = %p \n",s1.name, s1.addr);
@@ -160,10 +163,11 @@ int main() {
 {% endhighlight %}
 ```
 &s1 = 0x1000, &name = 0x1000, &id = 0x1008, &addr = 0x1010
-name = 0x2000, addr = 0x2004
+name = 0x2000, addr = 0x2005
 ```
+
 ### 各自獨立記憶體空間
-結構就像是一種模板，用結構宣告的變數s1、變數s2，變數s1與變數s2擁有相同的成員變數名，但變數名在記憶體中是完全不一樣，變數s1與s2有各自獨立記憶體空間。<br>
+結構就像是一種模板，用結構宣告的變數s1、變數s2，變數s1與變數s2擁有相同的成員變數名，但變數的記憶體位址是完全不一樣，變數s1與s2有各自獨立記憶體空間。<br>
 
 ![img]({{site.imgurl}}/c++/struct2.png)<br>
 
@@ -269,6 +273,13 @@ int main() {
 
 ## 匿名結構
 沒有結構名，一次性，只能使用1次，沒有結構名，無法重覆使用。<br>
+
+```
+struct{
+  成員變數
+} 變數;
+```
+
 以下程式碼，結構變數s1，是在main()函式中宣告。<br>
 struct後面是沒有結構名。<br>
 {% highlight c++ linenos %}

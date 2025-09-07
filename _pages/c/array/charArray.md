@@ -3,15 +3,35 @@ title: c字串
 date: 2024-06-15
 keywords: c++, char array
 ---
-## 宣告字串
-### 方式一
+## 字串陣列
 語法
 ```
 char 陣列名[大小];
 ```
-陣列名c，預設指向索引[0]的記憶體位址。<br>
-若陣列大小，大於初始化初始化字元數目，其它則自動設為0。<br>
-以下只有abc有值，其它都為0。<br>
+
+### 陣列名
+陣列名c，預設是索引[0]的記憶體位址。<br>
+所以印出c與`&c[0]`，結果都是相同。<br>
+`&c`代表整個陣列，這個只有在指標移動的時候才會看出差異。<br>
+`&c + 1`是移動整個陣列，`c + 1`從索引[0]移動到索引[1]。<br>
+{% highlight c++ linenos %}
+int main() {
+  char c[7] = {'a', 'b', 'c'};
+  printf("c address = %p \n" ,c);
+  printf("c[0] address = %p \n", &c[0]);
+  printf("&c address = %p \n", &c);
+  return 0;
+}
+{% endhighlight %}
+```
+c address = 0x7ff7bfeff2e5 
+c[0] address = 0x7ff7bfeff2e5 
+&c address = 0x7ff7bfeff2e5 
+```
+
+### 陣列初始值
+C語言支持只給部分陣列元素設初始值。<br>
+以下只有abc有值，其它都為0，若初始化的值小於陣列大小，其它值都會設為0。<br>
 {% highlight c++ linenos %}
 int main() {
   char c[7] = {'a', 'b', 'c'};
@@ -32,6 +52,26 @@ i = 5, value = 0
 i = 6, value = 0 
 ```
 
+### 印出字串陣列
+以下陣列大小20，但有值的元素只有abc，C語言印出字串陣列，直接給陣列名，陣列名也就是索引[0]的記憶體位址。C語言會先印出記憶體位址中的字元，接著指標往下一個索引移動，直到遇到0，就會停止印出。<br>
+
+C語言印出字串是使用%s格式化字元。<br>
+C++是使用cout。<br>
+重點是，以下程式碼只使用陣列名c，而不是&c。
+{% highlight c++ linenos %}
+int main() {
+  char c[7] = {'a', 'b', 'c'};
+  cout << c << endl;
+  printf("%s \n", c);
+  return 0;
+}
+{% endhighlight %}
+```
+abc
+abc 
+```
+
+#### `\0`
 整數0在char代表`\0`，代表結束讀取。
 
 |二進制|十進制|跳脫字元|表示|
@@ -49,38 +89,14 @@ int main() {
 ```
 c = abc
 ```
-
-沒有指向常數的字串陣列可修改內容。<br>
-{% highlight c++ linenos %}
-int main() {
-  char c[7] = {'a', 'b', 'c'};
-  c[0] = 'g';
-  c[1] = 'g';
-  int len = sizeof(c) / sizeof(char);
-  for(int i = 0; i < len; i++) {
-    printf("i = %d, value = %c \n", i, c[i]);
-  }
-  return 0;
-}
-{% endhighlight %}
-```
-i = 0, value = g 
-i = 1, value = g 
-i = 2, value = c 
-i = 3, value = 
-i = 4, value = 
-i = 5, value = 
-i = 6, value = 
-```
-
 #### `\0`無法印出
 使用%c，無法印出`\0`，也就是整數是0，字串的結尾。<br>
 上個程式範例，無法印出`\0`。<br>
 但如果是轉成%d，就可以印出整數。<br>
 C++中，char是整數，可以用%d或%c印出，%d是印出整數，%c是印出整數對映的ASCII Code。<br>
 
-### 方式二
-若是初始化的字元數量與陣列大小一樣，其它編譯器會印出亂碼，因為印出直到「遇到0」為止，那沒有遇到0之前，就一直印。<br>
+#### 初始化的字元數量與陣列大小一樣
+若是初始化的字元數量與陣列大小一樣，不會自動在後面補0，其它編譯器會印出亂碼，因為印出直到「遇到0」為止，那沒有遇到0之前，就一直印。<br>
 
 ![img]({{site.imgurl}}/c++/arr/char_arr2.png)<br>
 
@@ -103,7 +119,7 @@ int main() {
 ```
 abc
 ```
-### 方式三
+#### 沒設定陣列大小，後面不會補0
 以下沒設定陣列大小，也不會自動後面補\0。<br>
 ![img]({{site.imgurl}}/c++/arr/char_arr2.png)<br>
 {% highlight c++ linenos %}
@@ -114,7 +130,47 @@ int main() {
 }
 {% endhighlight %}
 
-### 方式四
+### 字串陣列可修改內容
+字串陣列可修改內容。<br>
+{% highlight c++ linenos %}
+int main() {
+  char c[7] = {'a', 'b', 'c'};
+  c[0] = 'g';
+  c[1] = 'g';
+  int len = sizeof(c) / sizeof(char);
+  for(int i = 0; i < len; i++) {
+    printf("i = %d, value = %c \n", i, c[i]);
+  }
+  return 0;
+}
+{% endhighlight %}
+```
+i = 0, value = g 
+i = 1, value = g 
+i = 2, value = c 
+i = 3, value = 
+i = 4, value = 
+i = 5, value = 
+i = 6, value = 
+```
+
+### 字元是整數
+字元本身是整數，可以運算，將陣列大小26，依序存入A \~ Z，26個英文大寫字母。<br>
+ascii code是把整數轉成字元，輸出在螢幕上，字元的存在記憶體中是整數，不是英文字母。<br>
+{% highlight c++ linenos %}
+int main() {
+  char arr[26];
+  int i;
+  for (int i = 0; i < 26; i++) {
+    arr[i] = 'A' + i;
+    cout << arr[i] << ", ";
+  }
+  cout << endl;
+  return 0;
+}
+{% endhighlight %}
+
+### 字串常數
 等號後面是「常數」，常數會在最後自動補上`\0`，常數存在memory layout中的RODATA區塊中。<br>
 以下程式碼，會在stack建立陣列大小為4(包含`\0`)的位置，把RODATA中的常數，「複製」到c`[]`陣列中，所以可以修改`c[]`陣列中的值。
 ![img]({{site.imgurl}}/c++/arr/char_arr3.png)<br>
@@ -136,7 +192,8 @@ int main() {
 abc
 ```
 
-修改<br>
+雖然c陣列指向的是字串常數，但實際上是把RODATA的字串常數，逐一複製到Stack中的char字串陣列中的位址。<br>
+所以可以修改字串陣列中的內容。<br>
 {% highlight c++ linenos %}
 int main() {
   char c[] = "abc";
@@ -151,7 +208,19 @@ abc
 agc 
 ```
 
-陣列名是記憶體位址，陣列名不是指標，不能重新指向其它記憶體位址。<br>
+#### 字串陣列無法重新設成新的字串常數
+所謂陣列，是「固定大小」，無法再改變大小。<br>
+以下宣告大小為7的陣列，已經把RODATA的常數ABC複製到Stack中的arr陣列中。<br>
+無法再複製RODATA的常數DEFG，重新複製到Stack中的arr陣列中。<br>
+{% highlight c++ linenos %}
+int main() {
+  char arr[7] = "ABC";
+  arr = "DEFG";
+  return 0;
+}
+{% endhighlight %}
+
+就算abc的字串與ggg的字串長度一樣，也無法設成新的字串常數。<br>
 {% highlight c++ linenos %}
 int main() {
   char c[] = "abc";
@@ -161,18 +230,34 @@ int main() {
 }
 {% endhighlight %}
 
-### 方式五
+#### 大括號中的常數
+`{}`大括號裡面是常數。<br>
+{% highlight c++ linenos %}
+char cstr4[] = {"hello"};
+{% endhighlight %}
+
+#### 字串陣列的常數
+注意!以下""雙引號包住的字串是常數，編譯器會自動加上'\0'作結尾，不用手動加'\0'。
+{% highlight c++ linenos %}
+//字串常數
+char str1[] = "hello"
+{% endhighlight %}
+
+## 字串指標
 以下是指標的方式建立字串。
 ```
 char *c = "字串內容"
 ```
-「c指標」指向RODATA區塊的「字串常數」。<br>
+「c指標」指向RODATA區塊的「字串常數」，RODATA是唯讀區塊，無法修改字串常數的內容，但可以修改指標指向到新的字串常數。。<br>
 
 ![img]({{site.imgurl}}/c++/arr/char_arr4.png)<br>
 
+因為指向的RODATA已經是字串常數，建議在char* 前加上constant常數宣告，編譯器才不會出現警告，加上constant代表無法修改常數的內容。<br>
+下面程式碼，加上constant無法修改\"abc\"常數字串，指標名c，可以指向其它新的常數字串。<br>
+
 {% highlight c++ linenos %}
 int main() {
-  char* c = "abc";
+  constant char* c = "abc";
   printf("%s \n",c);
   return 0;
 }
@@ -183,7 +268,7 @@ RODATA區塊的字串常數無法修改。<br>
 
 {% highlight c++ linenos %}
 int main() {
-  char* c = "abc";
+  constant char* c = "abc";
   c[1] = g;
   printf("%s \n",c);
   return 0;
@@ -193,7 +278,7 @@ int main() {
 指標可以指向其它字串。<br>
 {% highlight c++ linenos %}
 int main() {
-  char* c = "abc";
+  constant char* c = "abc";
   c = "zzzz";
   printf("%s \n",c);
   return 0;
@@ -203,12 +288,26 @@ int main() {
 zzz
 ```
 
-### 方式六
-`{}`大括號裡面是常數，常數會在最後自動補上`\0`，常數存在memory layout中的RODATA區塊中。<br>
-
+以下""雙引號包住的字串是常數，編譯器會自動加上'\0'作結尾，不用手動加'\0'。
 {% highlight c++ linenos %}
-char cstr4[] = {"hello"};
+//指標指向字串常數
+char* str1 = "hello"
 {% endhighlight %}
+
+指標有自己的記憶體位址，存的是RODATA的字串常數索引[0]記憶體位址。<br>
+{% highlight c++ linenos %}
+int main() {
+  char* p = "Hello";
+  printf("p的address = %p 儲存的address = %p \n",&p , p);
+  return 0;
+}
+{% endhighlight %}
+```
+p的address = 0x7ff7bfeff2e0 儲存的address = 0x100003f7e 
+```
+
+以下為舊的文章內容。
+----------------
 
 ## 空字元(null character)
 char字串必須以'\0'做結尾，若不是'\0'做結尾則稱為char陣列。<br>
@@ -254,21 +353,46 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 c_str4 size:10
 c_str4長度:6
 ```
 
-## 字串常數
-注意!以下""雙引號包住的字串是常數，編譯器會自動加上'\0'作結尾，不用手動加'\0'。
+### 字串指標不支持sizeof()
+```
+char* 字串指標 = "常數";
+char* str = "Hello";
+```
+以上是宣告字串指標。<br>
+若想得到常數的記憶體位址或記憶體大小，sizeof(str)，得到是8byte，因為字串指標大小是8byte。<br>
 
+#### strlen()+1
+由於sizeof(字串指標)，只會得到8byte<br>
+改用strlen(字串指標) + 1，1是包含`\0`，strlen()函式預設不包含`\0`，需手動自己加上。
 {% highlight c++ linenos %}
-//字串常數
-char str1[] = "hello"
+int main() {
+  char* cstr = "Hello";
+  cout << sizeof(cstr) << endl;
+  cout << strlen(cstr) + 1 << endl;
+}
 {% endhighlight %}
+```
+8
+6
+```
+以上結果得知，"Hello"的大小，若包含結尾`\0`，大小則為6。
 
-## 字串常數宣告
+#### strlen(字串常數)+1
+也可以自己進行檢查。<br>
+以下程式碼，不包含字串結束`\0`
+{% highlight c++ linenos %}
+  cout << strlen("Hello") << endl;
+{% endhighlight %}
+```
+5
+```
+
+### 字串常數宣告
 以下程式碼，cstr1沒有初始化字串常數，執行程式時會從cstr1的記憶體位址開始輸出值，直到遇到記憶體位址的值為\0(空字元)才會停止輸出，不會因為超過宣告字串的長度而停止印出。
 
 {% highlight c++ linenos %}
@@ -367,22 +491,33 @@ c_str2 = abcdefg
 ```
 
 ## 字串修改
-不能使用`等於=`修改字串，以下語法會編譯錯誤。
-
+陣列名，雖然存放索引[0]的記憶體位址，但陣列名不是指標，無法重新指派新的字串常數記憶體位址。
 {% highlight c++ linenos %}
   char c_str1[6] = "Hello";
   c_str1 = "abc";
 {% endhighlight %}
 
-使用strcpy修改字串。
+若是char指標，就可以重新指派新的字串常數記憶體位址。
+{% highlight c++ linenos %}
+int main() {
+  char* cstr = "Hello";
+  cout << cstr << endl;
+  cstr = "ABCDEF";
+  cout << cstr << endl;
+}
+{% endhighlight %}
+```
+Hello
+ABCDEF
+```
 
+使用strcpy修改字串陣列。
 {% highlight c++ linenos %}
   char c_str1[6] = "Hello";
   cout << "Before = " << c_str1 << endl;
   strcpy(c_str1,"Dog");
   cout << "After = " << c_str1 << endl;
 {% endhighlight %}
-
 ```
 Before = Hello
 After = Dog
@@ -470,7 +605,6 @@ c_str3 + c_str4 = helte
 
 ## 字串比較 strcmp
 二個字串，字元逐字元比較ascii code，直到比完或分出大小為止。
-
 ```
 strcmp(s1,s2)
 ```
@@ -510,18 +644,11 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 -99
 ```
 
-## 二維陣列字串
-參考
-
-[二維陣列]({% link _pages/c/array/array2dimen.md %})
-
 ### 印出禮拜一至禮拜天的英文字母
-
 以下的例子是建立二維的字串，總共有7個字串，每個字串最大長度為10，Wednesday是最長字串，長度為9，加上\0就等於10。
 
 {% highlight c++ linenos %}
@@ -550,7 +677,6 @@ Saturday
 ```
 
 ### 判斷數字，印出月份英文
-
 {% highlight c++ linenos %}
 //12個月
 const int MAX_MONTH = 12;
@@ -567,7 +693,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 請輸入數字月份(1~12):12
 December
