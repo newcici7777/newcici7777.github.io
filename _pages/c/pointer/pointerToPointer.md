@@ -3,13 +3,35 @@ title: 指標的指標
 date: 2024-06-05
 keywords: c++, pointer to pointer
 ---
+指標的指標，意思是存指標的記憶體位址。<br>
+下圖中，有變數i的記憶體位址0x1000，存放50。<br>
+ptr本身的記憶體位址是0x1004，存放變數i的記憶體位址0x1000。<br>
+pptr本身的記憶體位址是0x100c，存放的指標ptr的記憶體位址0x1004。<br>
 
-Prerequisites:
+對ptr存放的位址0x1000使用\*取值運算子，可以取得50的數值。<br>
+對pptr存放的位址0x1004使用\*取值運算子，可以取得ptr的位址。<br>
+對pptr存放的位址0x1004使用二次\*\*取值運算子，可以取得ptr的位址，再對ptr的位址使用\*取值運算子，取得50的數值。<br>
+![img]({{site.imgurl}}/pointer/pptr1.png)<br>
 
-- [引數][1]
+以下有點像鏈結串列，先從pptr存的位址，使用\*取值運算子，得到ptr存的位址，使用\*取值運算子，得到變數存放的數值。<br>
+![img]({{site.imgurl}}/pointer/pptr2.png)<br>
 
-指標的指標，意思是指標的記憶體位址。
-
+{% highlight c++ linenos %}
+int main() {
+  int i = 50;
+  int* ptr = &i;
+  int** pptr = &ptr;
+  printf("&i = %p \n", &i);
+  printf("&ptr = %p, ptr = %p, value = %d \n", &ptr, ptr, * ptr);
+  printf("&pptr = %p, pptr = %p, value = %d \n", &pptr, pptr, ** pptr);
+  return 0;
+}
+{% endhighlight %}
+```
+&i = 0x1000 
+&ptr = 0x1004, ptr = 0x1000, value = 50 
+&pptr = 0x100c, pptr = 0x1004, value = 50
+```
 ## 指標的位址
 
 {% highlight c++ linenos %}
