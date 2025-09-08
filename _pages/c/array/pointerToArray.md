@@ -5,23 +5,126 @@ keywords: c++, pointer to pointer
 ---
 ## 指標的移動
 注意！單純印出指標p，是印出指標「存放」的記憶體位址。<br>
+
+ptr指標變數本身記憶體位址是0x1000，存放的值是0x2000，一開始存的是陣列[0]的記憶體位址。<br>
+![img]({{site.imgurl}}/c++/arr/arr_ptr1.png)<br>
+
+ptr \+ 0，存放的值0x2000 + 0。<br>
+![img]({{site.imgurl}}/c++/arr/arr_ptr2.png)<br>
+
+ptr \+ 1，因為int的記憶體空間大小是4byte，\+1代表加上一個int的byte大小，存放的值0x2000 \+ 4byte。<br>
+![img]({{site.imgurl}}/c++/arr/arr_ptr3.png)<br>
+
+ptr \+ 2，\+2代表加上二個int的byte大小，存放的值0x2000 \+ 8byte。<br>
+![img]({{site.imgurl}}/c++/arr/arr_ptr4.png)<br>
+
+程式碼
 {% highlight c++ linenos %}
 int main() {
   int arr[] = {100, 200, 300};
-  int* p = arr;
+  int* ptr = arr;
   int len = sizeof(arr)/sizeof(int);
   for (int i = 0; i < len; i++) {
-    printf("p本身的address = %p, p儲存的address = %p, 值 = %d \n",&p, p, * p);
-    p = p + 1;
+    printf("ptr本身的address = %p, ptr儲存的address = %p, 值 = %d \n",&ptr, ptr, * ptr);
+    ptr = ptr + 1;
   }
   return 0;
 }
 {% endhighlight %}
 ```
-p本身的address = 0x7ff7bfeff2d0, p儲存的address = 0x7ff7bfeff2dc, 值 = 100 
-p本身的address = 0x7ff7bfeff2d0, p儲存的address = 0x7ff7bfeff2e0, 值 = 200 
-p本身的address = 0x7ff7bfeff2d0, p儲存的address = 0x7ff7bfeff2e4, 值 = 300 
+ptr本身的address = 0x1000, ptr儲存的address = 0x2000, 值 = 100 
+ptr本身的address = 0x1000, ptr儲存的address = 0x2004, 值 = 200 
+ptr本身的address = 0x1000, ptr儲存的address = 0x2008, 值 = 300 
 ```
+
+以下指標存放的記憶體位址與陣列的記憶體位址，二者都是相同記憶體位址，ptr前面沒有&。
+{% highlight c++ linenos %}
+int main() {
+  int arr[] = {100, 200, 300};
+  int* ptr = arr;
+  ptr += 2;
+  printf("ptr 存放的address = %p , value = %d \n", ptr, * ptr);
+  printf("arr[2] 存放的address = %p , value = %d \n", &arr[2], arr[2]);
+  return 0;
+}
+{% endhighlight %}
+```
+ptr 存放的address = 0x2008 , value = 300 
+arr[2] 存放的address = 0x2008 , value = 300 
+```
+
+指標指向陣列最後一個記憶體位址。
+{% highlight c++ linenos %}
+int main() {
+  int arr[] = {100, 200, 300};
+  int* ptr = &arr[2];
+  ptr -= 2;
+  printf("ptr 存放的address = %p , value = %d \n", ptr, * ptr);
+  printf("arr[0] 存放的address = %p , value = %d \n", &arr[0], arr[0]);
+  return 0;
+}
+{% endhighlight %}
+```
+ptr 存放的address = 0x2000 , value = 100 
+arr[0] 存放的address = 0x2000 , value = 100 
+```
+
+## 指標存放的記憶體位址比較
+判斷ptr的位址是不是陣列索引[0]的記憶體位址。<br>
+指標可以比較記憶體位址是否相等，也可以比較大小。<br>
+{% highlight c++ linenos %}
+int main() {
+  int arr[] = {100, 200, 300};
+  int* ptr = arr;
+  if (ptr == arr) {
+    cout << "true" << endl;
+  }
+  if (ptr == &arr[0]) {
+    cout << "true" << endl;
+  }
+  if (ptr < &arr[2]) {
+    cout << "true" << endl;
+  }
+  return 0;
+}
+{% endhighlight %}
+```
+true
+true
+true
+```
+
+以下編譯失敗，記憶體位址不能跟陣列的數值進行比較。<br>
+{% highlight c++ linenos %}
+  int arr[] = {100, 200, 300};
+  int* ptr = arr;
+  if (ptr == arr[0]) {
+    cout << "true" << endl;
+  }
+{% endhighlight %}
+
+指標比較大小範例。
+{% highlight c++ linenos %}
+int main() {
+  int arr[] = {100, 200, 300};
+  int* ptr = arr;
+  int len = sizeof(arr)/sizeof(int);
+  while (ptr <= &arr[len - 1]) {
+    printf("ptr = %p \n",ptr);
+    ptr++;
+  }
+  return 0;
+}
+{% endhighlight %}
+```
+ptr = 0x2000 
+ptr = 0x2004 
+ptr = 0x2008
+```
+
+以下是舊文章。
+
+---------------------------
 
 ### 陣列的記憶體位址是連續的。
 {% highlight c++ linenos %}
