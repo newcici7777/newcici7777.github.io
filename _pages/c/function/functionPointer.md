@@ -3,8 +3,136 @@ title: 函式指標
 date: 2024-06-03
 keywords: c++, pointer, function pointer
 ---
+函式在記憶體區塊text segment，有記憶體位址。<br>
+使用函式指標，指向函式的記憶體位址。<br>
 
-函式指標指向函式的記憶體位址，通過函式指標使用函式。
+## 定義函式指標
+```
+傳回值類型 (*指標名)(參數類型1, 參數類型2, 參數類型3 ....)
+```
+以下函式指標名是pf，傳回值類型是int，參數有2個，參數類型都為int。
+{% highlight c++ linenos %}
+int (* pf)(int,int);
+{% endhighlight %}
+
+## 函式名就是記憶體位址
+函式指標指向函式名的記憶體位址。
+```
+傳回值類型 (*指標名)(參數類型 ...) = 函式名
+```
+
+max()函式如下:
+{% highlight c++ linenos %}
+int max(int x, int y) {
+  if (x > y) 
+    return x;
+  else 
+    return y;
+}
+{% endhighlight %}
+
+把max函式名(記憶體位址)指派給pf函式指標。<br>
+{% highlight c++ linenos %}
+int (* pf)(int,int) = max;
+{% endhighlight %}
+
+## 函式指標存放的位址
+下圖中，Stack區域有一個pf變數，本身記憶體位址是0x1000，存放的記憶體位址是0x2000。
+
+![img]({{site.imgurl}}/pointer/pf1.png)<br>
+
+使用程式碼印出pf指標變數，印出pf與\*pf，二者的值都是存放的記憶體位址0x2000。
+{% highlight c++ linenos %}
+int max(int x, int y) {
+  if (x > y)
+    return x;
+  else
+    return y;
+}
+int main() {
+  int (* pf)(int,int) = max;
+  printf("pf addr= %p, &pf addr= %p, * pf addr = %p\n",pf, &pf, * pf);
+  return 0;
+}
+{% endhighlight %}
+```
+pf addr= 0x2000, &pf addr= 0x1000, * pf addr = 0x2000
+```
+
+## 函式指標呼叫函式
+pf指標存放的是max()函式記憶體位址。
+### 方式1
+{% highlight c++ linenos %}
+int ret = pf(x,y);
+{% endhighlight %}
+
+完整程式碼
+{% highlight c++ linenos %}
+int max(int x, int y) {
+  if (x > y)
+    return x;
+  else
+    return y;
+}
+int main() {
+  int (* pf)(int,int) = max;
+  int a = 10, b = 20;
+  int ret = pf(a, b);
+  cout << ret << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+20
+```
+
+### 方式2
+pf指標存放的是max()函式記憶體位址。函式記憶體位址使用\*取值運算子，把max()函式整個從記憶體中取出來。
+{% highlight c++ linenos %}
+int ret = (* pf)(x,y);
+{% endhighlight %}
+
+完整程式碼
+{% highlight c++ linenos %}
+int max(int x, int y) {
+  if (x > y)
+    return x;
+  else
+    return y;
+}
+int main() {
+  int (* pf)(int,int) = max;
+  int a = 10, b = 20;
+  int ret = (* pf)(a, b);
+  cout << ret << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+20
+```
+
+## 運算子優先順序
+函式指標正確寫法，回傳值類型為int整數。
+{% highlight c++ linenos %}
+int (* pf)(int,int);
+{% endhighlight %}
+
+錯誤寫法，沒有使用括號:
+{% highlight c++ linenos %}
+int * pf(int,int);
+{% endhighlight %}
+
+回傳值類型為「int指標」，函式名為pf。
+{% highlight c++ linenos %}
+int* pf(int,int);
+{% endhighlight %}
+
+所以使用圓括號包住指標名(* pf)，相當重要，沒有圓括號，傳回值類型就變成指標。
+
+
+以下為舊文章
+------------------------------------------
 
 ### 函式資料型態
 

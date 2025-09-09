@@ -55,43 +55,41 @@ int main() {
 
 編譯器轉換後的程式碼:
 {% highlight c++ linenos %}
-// 編譯器生成的隱藏結構（用於傳回值）
-struct Student_ret {
-    Student value;  // 傳回值暫存區
-};
-
 // 轉換後的getStudent函式
-void getStudent(Student_ret* return_addr) {
+void getStudent(Student* ret) {
     // 1. 臨時物件(呼叫建構子)
     Student temp;
     
     // 2. 拷貝到傳回值暫存區
-    return_addr->value = temp;  // 呼叫拷貝
+    ret = temp;  // 呼叫拷貝
     
     // 3. 臨時物件解構
-    temp.Student::~Student();
-    // 函式返回，result指向的記憶體仍然有效
+    // 會自動呼叫解構子，不用手動呼叫
+    //temp.~Student();
+    // 函式返回，return_addr指向的記憶體仍然有效
 }
 
 // 轉換後的main函式
 int main() {
     // 傳回值暫存區
-    Student_ret ret;
+    Student ret;
     
     // 呼叫函式，傳入傳回值地址
     getStudent(&ret);
     
-    // 呼叫建構子
+    // 建立s1物件，呼叫建構子
     Student s1;
-    s1= ret.value;  // 呼叫拷貝
+    s1 = ret;  // 呼叫拷貝
     
     // 傳回值暫存區解構
-    ret.value.Student::~Student();
+    // 會自動呼叫解構子，不用手動呼叫
+    //ret.~Student();
     
     cout << "物件記憶體位址 = " << &s1 << endl;
     
     // s1 解構
-    s1.Student::~Student();
+    // 會自動呼叫解構子，不用手動呼叫
+    //s1.~Student();
     return 0;
 }
 {% endhighlight %}

@@ -3,7 +3,6 @@ title: 建構子與解構子
 date: 2024-10-16
 keywords: c++, constructor 
 ---
-
 Prerequisites:
 - [RVO][1]
 
@@ -114,7 +113,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 ```
 建構子
 解構子
@@ -182,11 +180,9 @@ int main() {
 {% endhighlight %}
 
 ### 不要用變數名()建立物件
+以下程式碼，會編譯成功，但不會呼叫建構子，建立物件失敗。<br>
 
-以下程式碼，會編譯成功，但不會呼叫建構子，建立物件失敗，編譯器認為是呼叫函式名為student()的函式。
-
-注意！student()是小寫，是變數名，不是類別名Student
-
+編譯器認為是呼叫函式名為student()的函式，回傳值類型是Student。
 ```
   Student student();
 ```
@@ -220,11 +216,9 @@ int main() {
 {% endhighlight %}
 
 用以上student呼叫成員函式print()，會編譯失敗，因為根本沒有建立物件，沒有在記憶體產生物件存放的位址。
-
 ```
 student.print();
 ```
-
 {% highlight c++ linenos %}
 int main() {
   Student student();
