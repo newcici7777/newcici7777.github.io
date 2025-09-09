@@ -6,10 +6,11 @@ keywords: c, scanf
 ## scanf格式化
 ```
 scanf("格式化", &記憶體位址);
-scanf("%s", &name);
 ```
+- 第1參數放入格式化字串。
+- 第2參數放人記憶體位址。
 
-|基本型態|格式化|
+|基本型態|格式化字串|
 |char name[]|%s|
 |int|%d|
 |double|%lf|
@@ -21,6 +22,8 @@ scanf("%s", &name);
   scanf("%c", &gender);
 {% endhighlight %}
 
+注意！char字串陣列，name陣列名，本身就是陣列索引[0]`&name[0]`的記憶體位址。<br>
+不需要用`&name`。
 {% highlight c++ linenos %}
 int main() {
   char name[10] = "";
@@ -28,7 +31,7 @@ int main() {
   double salary = 0.0;
   char gender = ' ';
   printf("請輸入名字");
-  scanf("%s", &name);
+  scanf("%s", name);
 
   printf("請輸入年齡");
   scanf("%d", &age);

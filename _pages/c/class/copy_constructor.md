@@ -3,7 +3,6 @@ title: 拷貝函式
 date: 2024-10-18
 keywords: c++, Copy constructor
 ---
-
 Prerequisites:
 - [RVO][4]
 
@@ -72,7 +71,6 @@ name: Cici
 ```
 
 ## 拷貝函式自行實作
-
 ```
 類別名(const 類別名& 參數名) {...}
 ```
@@ -156,59 +154,8 @@ name: Cici
 解構子
 解構子
 ```
-## 函式傳回值是臨時物件
-
-- [函式傳回值是值][2]
-- [臨時物件][3]
-
-函式傳回值是臨時物件會呼叫拷貝函式。
-
-{% highlight c++ linenos %}
-class Student {
-public:
-  Student() {
-    cout << "建構子" << endl;
-  }
-  Student(const Student &src) {
-    cout << "拷貝函式" << endl;
-  }
-  Student& operator=(const Student& src) {
-    cout << "指派運算子" << endl;
-    return *this;
-  }
-  ~Student() {
-    cout << "解構子" << endl;
-  }
-};
-Student func() {
-  Student s;
-  cout << "函式物件記憶體位址 = " << &s << endl;
-  return s;
-}
-int main() {
-  Student s1 = func();
-  cout << "物件記憶體位址 = " << &s1 << endl;
-  return 0;
-}
-{% endhighlight %}  
-
-```
-建構子                      // 建立 func() 內的 s
-函式物件記憶體位址 = 0x7ff7bfeff410
-
-                           //由於 RVO 被關閉，s 不能直接被 s1 接收。
-                           //函式返回值需要創建一個新的 Student 物件 來存放 s，這個新物件是函式返回的臨時變數。
-                           //這導致拷貝建構函式被調用。
-拷貝函式                    // 拷貝函式返回的物件（臨時變數）
-解構子                      // func() 內的 s 被銷毀，s 是 func() 內部的變數，在函式執行結束時，該變數會被銷毀，執行 解構子
-拷貝函式                    // main() 裡的 Student s1 = func(); 會把 func() 返回的臨時 Student 再拷貝一次 到 s1
-解構子                      // func() 返回的 臨時 Student 物件 在 s1 建立後已無用，因此被銷毀，執行 解構子
-物件記憶體位址 = 0x7ff7bfeff468
-解構子                      // main() 執行完後，s1 離開作用域，被銷毀，執行 解構子
-```  
 
 ## 拷貝函式多載(Overload)
-
 在拷貝函式增加參數str
 {% highlight c++ linenos %}
   Student(const Student &s, string str) {
@@ -230,7 +177,6 @@ int main() {
   return 0;
 }  
 {% endhighlight %} 
-
 ```
 沒參數建構子
 呼叫Student(const Student &s, const char str[50])拷貝函式
