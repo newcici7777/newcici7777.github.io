@@ -53,15 +53,27 @@ int main() {
 }
 {% endhighlight %}
 
-編譯器轉換後的程式碼:
+編譯器轉換後的程式碼:main的部分<br>
+1. main()函式會建立一個傳回值暫存區的物件。
+2. 把暫存區的位址傳入getStudent()函式中。
+
+getStudent()函式部分:<br>
+1. 在getStudent()函式中，建立temp物件。
+2. 對暫存區指標使用\*取值運算子，取出物件，把temp物件拷貝過去。
+3. 執行完getStudent()函式，temp會自動呼叫解構子，回收記憶體位址。
+
+main()函式部分:<br>
+1. 建立s1物件。
+2. 將「傳回值」暫存區的物件拷貝到s1中。
+
 {% highlight c++ linenos %}
 // 轉換後的getStudent函式
 void getStudent(Student* ret) {
-    // 1. 臨時物件(呼叫建構子)
+    // 1. 建立臨時物件
     Student temp;
     
     // 2. 拷貝到傳回值暫存區
-    ret = temp;  // 呼叫拷貝
+    *ret = temp;  // 呼叫拷貝
     
     // 3. 臨時物件解構
     // 會自動呼叫解構子，不用手動呼叫

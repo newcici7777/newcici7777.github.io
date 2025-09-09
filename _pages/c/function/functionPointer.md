@@ -21,7 +21,7 @@ int (* pf)(int,int);
 傳回值類型 (*指標名)(參數類型 ...) = 函式名
 ```
 
-max()函式如下:
+以下max()函式也符合傳回值類型是int，參數數量為2，參數類型為int。<br>
 {% highlight c++ linenos %}
 int max(int x, int y) {
   if (x > y) 
@@ -130,6 +130,60 @@ int* pf(int,int);
 
 所以使用圓括號包住指標名(* pf)，相當重要，沒有圓括號，傳回值類型就變成指標。
 
+## 函式指標作為函式參數
+建立一個大小為10的陣列，裡面的值都是亂數。<br>
+
+產生亂數的getRand()函式<br>
+{% highlight c++ linenos %}
+int getRand() {
+  return rand();
+}
+{% endhighlight %}
+
+根據getRand()函式，定義函式指標。<br>
+傳回值是int，沒有參數，void代表沒有參數。
+{% highlight c++ linenos %}
+int(* pf)(void);
+{% endhighlight %}
+
+初始化陣列函式initArr()，把函式指標作為函式參數傳入。<br>
+{% highlight c++ linenos %}
+void initArr(int arr[], int size, int(* pf)(void));
+{% endhighlight %}
+
+由函式指標去呼叫getRand()函式。<br>
+{% highlight c++ linenos %}
+void initArr(int arr[], int size, int(* pf)(void)) {
+  for (int i = 0; i < size; i++) {
+    arr[i] = pf();  // 呼叫getRand()
+  }
+}
+{% endhighlight %}
+
+完整程式碼:<br>
+{% highlight c++ linenos %}
+int getRand() {
+  return rand();
+}
+void initArr(int arr[], int size, int(* pf)(void)) {
+  for (int i = 0; i < size; i++) {
+    arr[i] = pf();
+  }
+}
+int main() {
+  int arr[10] = {0};
+  int len = sizeof(arr) / sizeof(int);
+  initArr(arr, len, getRand);
+  for (int i = 0; i < len; i++) {
+    cout << arr[i] << ", ";
+  }
+  cout << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+16807, 282475249, 1622650073, 984943658, 1144108930, 470211272, 101027544, 1457850878, 1458777923, 2007237709, 
+```
 
 以下為舊文章
 ------------------------------------------
