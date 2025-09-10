@@ -3,7 +3,6 @@ title: c++轉型
 date: 2025-02-24
 keywords: c++, type conversion, static cast, const cast, Reinterpret cast
 ---
-
 Prerequisites:
 - [建構子轉型][1]
 - [強制轉型][2]
@@ -65,10 +64,10 @@ int main() {
 static_cast<指標類型*>(位址)
 ```
 不同類型要先轉成void指標(任何類型指標都能轉成void指標)
-{% highlight c++ linenos %}
+```
   void* point_v1 = 變數位址;
   double* 指標變數 = static_cast<類型*>(point_v1);
-{% endhighlight %}
+```
 
 完整程式碼
 {% highlight c++ linenos %}

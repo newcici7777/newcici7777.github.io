@@ -75,14 +75,19 @@ memset(p, 0, size);  // 初始化都為0
 {% endhighlight %}
 
 ### 記憶體回收
+```
+void free(void* p);
+```
+
+- 參數 p 原有malloc或calloc分配的指標「起始位址」
+
+注意！是起始位址。<br>
+
 所謂的記憶體回收，是指這個空間已經沒有人使用了，還給系統，並<span class="markline">沒有清空</span>。<br>
 只是告訴系統，這塊空間已經沒人用。<br>
 下一次系統可以分配變數使用這個記憶體空間。<br> 
 {% highlight c++ linenos %}
-size_t size = 1 * 1024 * 1024;
-void* p = malloc(size);
-memset(p, 0, size);  // 初始化都為0
-free(p);
+free(p2);
 {% endhighlight %}
 
 下面的程式，func()函式執行完後，區域變數n已經被系統回收。<br>
@@ -106,16 +111,16 @@ test test
 -610123577
 ```
 ## 指標p設為nullptr
-記憶體回收完畢，要把p指標指向nullptr。<br>
-不能讓p指標指向「已回收」的記憶體空間。<br>
-p也可以指向0。<br>
-p也可以指向NULL。<br>
+記憶體回收完畢，要把p2指標指向nullptr。<br>
+不能讓p2指標指向「已回收」的記憶體空間。<br>
+p2也可以指向0。<br>
+p2也可以指向NULL。<br>
 都是相同的意思。<br>
 {% highlight c++ linenos %}
-free(p);  
-p = nullptr;
-// p = 0;  
-// p = NULL    
+free(p2);  
+p2 = nullptr;
+// p2 = 0;  
+// p2 = NULL    
 {% endhighlight %}
 
 ## 建立陣列
@@ -163,9 +168,10 @@ int main() {
   }
   cout << endl;
   // 記憶體位址回收
-  free(p);
-  // p指標設為null
-  p = nullptr;  
+  // p2記錄p指標一開始的起始位址,p指標已經移位
+  free(p2);
+  // p2指標設為null
+  p2 = nullptr;  
   return 0;
 }
 {% endhighlight %}

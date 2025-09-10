@@ -1,5 +1,5 @@
 ---
-title: void\* 指標
+title: void* 指標
 date: 2024-05-30
 keywords: c++, pointer, void\*, void
 ---
