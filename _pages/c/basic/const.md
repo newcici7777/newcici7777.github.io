@@ -4,7 +4,7 @@ date: 2025-09-10
 keywords: c++, const
 ---
 ## const常數
-在main()主程式以前，設定const類型、常數名與值，後面(尾部)有分號`;`。<br>
+在main()函式之前定義，設定const類型、常數名與值，後面(尾部)有分號`;`。<br>
 語法
 ```
 const 類型 常數名 = 值;
@@ -20,6 +20,9 @@ int main() {
   return 0;
 }
 {% endhighlight %}
+```
+3.14159
+```
 
 ### 無法修改const
 以下程式碼會編譯錯誤，常數不可再被修改。
@@ -55,7 +58,8 @@ int main() {
 }
 {% endhighlight %}
 
-使用#define，編譯「前」就會有值，#define的中文叫前置處理，大陸的中文是預編譯，意思是編譯之前就已經有常數值。<br>
+使用#define，編譯「前」就會有值，#define的中文叫前置處理，大陸翻譯是預編譯，意思是編譯之前就已經有常數值。<br>
+
 注意！define最後面不能有分號`;`，指派10給ARR_SIZE，中間也沒有等號`=`。<br>
 以下編譯正確。<br>
 {% highlight c++ linenos %}
@@ -66,57 +70,33 @@ int main() {
 }
 {% endhighlight %}
 
-## const與變數
+## const變數
 這邊的const不是常數，而是讓變數只能讀，不能修改。
 
 `const 變數`代表只能讀取變數，不可修改變數「內容」。
 
-### const指標與函式參數，無法修改外部位址
-之前在[const與指標][1]的文件中，提到const指標可以修改記憶體位址。<br>
+### Memory Layout
+下圖，有2個變數，分別是i與j，存放在Stack區塊中。<br>
+i變數被const修飾，代表這個記憶體位址只能讀取，無法寫入。<br>
+j變數，可讀可寫。<br>
+SIZE是const全域變數，只能讀取，無法寫入，存在rodata區塊中。<br>
 
-但在函式參數中，只要是指標，就無法修改記憶體位址。<br>
+![img]({{site.imgurl}}/c++/const1.png)<br>
 
-以下程式，不管change_addr()函式的參數是一般指標或是const指標，都無法修改main()函式中的i變數記憶體位址。<br>
-
-一般指標<br>
 {% highlight c++ linenos %}
-void change_addr(int* x) {
-  x = &global_i;
-  printf("chage_addr() i addr = %p \n",x);
-}
+// const全域常數
+const int SIZE = 5;
 int main() {
-  int i = 10;
-  printf("before i addr = %p \n",i);
-  change_addr(&i);
-  printf("after i addr = %p \n",i);
+  // const 變數
+  const int i = 10;
+  // 以下編譯失敗
+  i = 77;  // 不可修改
+  int j = 55;
+  j = 66;
   return 0;
 }
 {% endhighlight %}
-```
-before i addr = 0x1000 
-chage_addr() i addr = 0x2000
-after i addr = 0x1000
-```
 
-const指標<br>
-{% highlight c++ linenos %}
-void change_addr(const int* x) {
-  x = &global_i;
-  printf("chage_addr() i addr = %p \n",x);
-}
-int main() {
-  int i = 10;
-  printf("before i addr = %p \n",i);
-  change_addr(&i);
-  printf("after i addr = %p \n",i);
-  return 0;
-}
-{% endhighlight %}
-```
-before i addr = 0x1000 
-chage_addr() i addr = 0x2000
-after i addr = 0x1000
-```
 ### const與函式參數指標
 設計一個函式只能讀取參數，但不能修改參數。<br>
 
@@ -132,6 +112,54 @@ int main() {
   return 0;
 }
 {% endhighlight %}
+
+### const指標與函式參數，無法修改外部位址
+之前在[const與指標][1]的文件中，提到const指標可以修改記憶體位址。<br>
+
+但在函式參數中，只要是指標，就無法修改記憶體位址。<br>
+
+以下程式，不管change_addr()函式的參數是指標或是const指標，都無法修改main()函式中的i變數記憶體位址。<br>
+
+下圖中，有2個function stack函式堆疊區塊，分別為main()與change_addr()。<br>
+change_addr()的x指標，本身的記憶體位址是0x2000，一開始儲存的是0x1000。<br>
+執行完以下程式碼，變成0x0500。<br>
+{% highlight c++ linenos %}
+x = &global_i;
+{% endhighlight %}
+
+而main()函式的i變數記憶體位址是0x1000，不會被影嚮。<br>
+![img]({{site.imgurl}}/c++/const2.png)<br>
+
+change_addr_const()函式中，const保護的是0x1000的<span class="markline">內容</span>只能讀取不能修改。<br>
+所以可以修改x指標的位址變成0x0500。<br>
+![img]({{site.imgurl}}/c++/const3.png)<br>
+
+完整程式碼:
+{% highlight c++ linenos %}
+int global_i = 100; 
+void change_addr(int* x) {
+  x = &global_i;
+  printf("chage_addr() i addr = %p \n",x);
+}
+void change_addr_const(const int* x) {
+  x = &global_i;
+  printf("change_addr_const() i addr = %p \n",x);
+}
+int main() {
+  int i = 10;
+  printf("before i addr = %p \n",i);
+  change_addr(&i);
+  change_addr_const(&i);
+  printf("after i addr = %p \n",i);
+  return 0;
+}
+{% endhighlight %}
+```
+before i addr = 0x1000 
+chage_addr() i addr = 0x2000
+change_addr_const() i addr = 0x2008
+after i addr = 0x1000
+```
 
 ### const與物件
 以下程式碼，在compare()函式中，參數使用const，代表只能讀取，不能修改。
@@ -260,6 +288,8 @@ int main() {
   return 0;
 }
 {% endhighlight %}
+
+
 
 
 [1]: {% link _pages/c/pointer/pointerConst.md %}

@@ -272,7 +272,7 @@ RODATA區塊的字串常數無法修改。<br>
 
 {% highlight c++ linenos %}
 int main() {
-  constant char* c = "abc";
+  const char* c = "abc";
   c[1] = g;
   printf("%s \n",c);
   return 0;
@@ -282,7 +282,7 @@ int main() {
 指標可以指向其它字串。<br>
 {% highlight c++ linenos %}
 int main() {
-  constant char* c = "abc";
+  const char* c = "abc";
   c = "zzzz";
   printf("%s \n",c);
   return 0;
