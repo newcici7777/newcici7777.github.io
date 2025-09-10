@@ -47,7 +47,7 @@ keywords: c++, 記憶體佈局
 </table>
 
 ## 記憶體區段
-記憶體區段根據位址由高到低分別為Kernel, Stack, 尚位使用區域, Heap, bass, data, code。
+記憶體區段根據位址由高到低分別為Kernel, Stack, 尚位使用區域, Heap, bass, data, rodata & text 。
 
 <table class="custom-table">
   <thead>
@@ -95,7 +95,7 @@ keywords: c++, 記憶體佈局
   </tr>
   <tr>
     <td>低</td>  
-    <td>code segment</td>
+    <td>rodata & text segment</td>
     <td></td>
     <td>常數與程式執行檔</td>
   </tr>
@@ -123,20 +123,20 @@ keywords: c++, 記憶體佈局
 ### text segment 記憶體區塊
 程式執行檔。
 
-### RODATA
-constant常數與字串常數`char *p = "hello";`
+### rodata
+const常數與字串常數`char *p = "hello";`
 
 ### 變數記憶體位址
 {% highlight c++ linenos %}
 #include <stdio.h>
-const int global_x = 1;  // 儲存於 code segment(常數)
+const int global_x = 1;  // 儲存於 rodata(常數)
 int global_y = 1;    // 儲存於 data segment(已初始化全域變數）
 int global_z;      // 儲存於 bss(未初始全域變數)
 int fun1(int param1) {	 // 儲存於 stack (函式參數)
 	return param1; // 儲存於 stack (函式傳回值)
 }
 int main() {
-  const static int x = 1; // 儲存於 RODATA(常數)
+  const static int x = 1; // 儲存於 rodata(常數)
   static int y = 1;     // 儲存於 data segment(已初始化靜態變數）
   static int z;       // 儲存於 bss(未初始靜態變數)
   int w = 1;        // 儲存於 stack (區域變數)

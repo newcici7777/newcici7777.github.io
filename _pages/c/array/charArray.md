@@ -255,12 +255,13 @@ char *c = "字串內容"
 
 ![img]({{site.imgurl}}/c++/arr/char_arr4.png)<br>
 
-因為指向的RODATA已經是字串常數，建議在char* 前加上constant常數宣告，編譯器才不會出現警告，加上constant代表無法修改常數的內容。<br>
-下面程式碼，加上constant無法修改\"abc\"常數字串，指標名c，可以指向其它新的常數字串。<br>
+### 字串指標加上const
+因為指向的RODATA已經是字串常數，建議在char* 前加上const常數宣告，編譯器才不會出現警告，字串指標加上const代表無法修改RODATA的字元，但可以指向其它常數字串。<br>
+下面程式碼，加上const無法修改\"abc\"常數字串，指標名c，可以指向其它新的常數字串。<br>
 
 {% highlight c++ linenos %}
 int main() {
-  constant char* c = "abc";
+  const char* c = "abc";
   printf("%s \n",c);
   return 0;
 }
