@@ -126,7 +126,8 @@ zzz
 int* const p = &i;
 {% endhighlight %}
 
-下圖中，const保護的是0x1008記憶體<span class="markline">位址</span>不被修改。<br>
+下圖中，const保護的是指標存的記憶體<span class="markline">位址</span>不被修改。<br>
+p變數的記憶體位址0x1008，儲存的0x1000的記憶體位址，要保護的是儲存的0x1000，不被修改成其它記憶體位址。<br>
 ![img]({{site.imgurl}}/c++/const_p2.png)<br>
 
 使用const修飾指標變數，代表指標不能再指向其它記憶體位址。<br>

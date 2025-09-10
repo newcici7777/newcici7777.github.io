@@ -1,17 +1,58 @@
 ---
-title: void*任何資料型態的指標
+title: void\* 指標
 date: 2024-05-30
-keywords: c++, pointer, void*, void
+keywords: c++, pointer, void\*, void
 ---
+## void\*轉型
+void\*指標是所有指標的父類別。<br>
+所以可以轉型成任何子類別。<br>
 
-## (void*)印出16進制的位址
+下面程式，p指標指向i變數的記憶體位址。<br>
+把p指標強制轉型成void\*指標。
+{% highlight c++ linenos %}
+int main() {
+  int i = 10;
+  int* p = &i;
+  void* vp = (void* )p;
+  return 0;
+}
+{% endhighlight %}
 
-使用(void*)就可以印出16進制的位址
+但void\*指標不支援\*取值運算子，以下編譯錯誤。<br>
+{% highlight c++ linenos %}
+int main() {
+  int i = 10;
+  int* p = &i;
+  void* vp = (void* )p;
+  cout << * vp << endl;
+  return 0;
+}
+{% endhighlight %}
+
+將位址轉成void\*要強制轉型。<br>
+{% highlight c++ linenos %} 
+  void* vp = (void* )&i;
+{% endhighlight %}
+
+將void\*強制轉型回int\*類型，就可以使用\*取值運算子。<br>
+{% highlight c++ linenos %}
+int main() {
+  int i = 10;
+  // 將位址轉成void*要強制轉型
+  void* vp = (void* )&i;
+  int* p = (int* )vp;
+  cout << * p << endl;
+  return 0;
+}
+{% endhighlight %}
+
+## (void\*)印出16進制的位址
+使用(void\*)就可以印出16進制的位址
 
 {% highlight c++ linenos %}
 int main() {
   char c = 'a';
-  cout << "變數c位址 = " << (void*)&c << endl;
+  cout << "變數c位址 = " << (void* )&c << endl;
   return 0;
 }
 {% endhighlight %}
@@ -19,10 +60,8 @@ int main() {
 變數c位址 = 0x7ff7bfeff46b
 ```
 
-## 函式的參數為void*指標(位址)
-
-函式的參數為void*指標，表示任何資料型態的指標(位址)都可以傳進函式，而且不需要轉型。
-
+## 函式的參數為void\*指標(位址)
+函式的參數為void\*指標，表示任何資料型態的指標(位址)都可以傳進函式，而且不需要轉型。
 {% highlight c++ linenos %}
 //宣告printAddr的函式，參數資料型態為void*指標
 void printAddr(void* p) {
