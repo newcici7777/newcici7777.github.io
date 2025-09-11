@@ -62,7 +62,7 @@ int main() {
 
 使用強制轉型，可以把數字轉成列舉類型
 {% highlight c++ linenos %}
-    day = (DAY) i;
+    day = (DAY) 3;
 {% endhighlight %}
 
 ## 預設值從0開始遞增

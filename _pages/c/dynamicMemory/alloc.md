@@ -14,13 +14,13 @@ void* calloc(unsigned int count,unsigned int size)
 - count數量 陣列大小
 - size 每一格元素大小
 
-下圖中，count數量是20，size是4byte。<br>
+下圖中，count數量是5，size是4byte，全部加起來是20 byte。<br>
 
 ![img]({{site.imgurl}}/c++/calloc.png)<br>
 
 {% highlight c++ linenos %}
 int main() {
-  int count = 20;
+  int count = 5;
   // p 指向起始位址
   int* p = (int * )calloc(count, 4);
   // 記錄p指標一開始的起始位址
@@ -45,7 +45,7 @@ int main() {
 }
 {% endhighlight %}
 ```
-0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
+0, 1, 2, 3, 4, 
 ```
 
 ## realloc
@@ -63,8 +63,8 @@ void* calloc(void* p,unsigned int size)
 int main() {
   int count = 20;
   // p 指向起始位址
-  // 原本大小10 * 4 = 40
-  int* p = (int * )calloc(10, 4);
+  // 原本大小5 * 4 = 20byte
+  int* p = (int * )calloc(5, 4);
   // 重新分配大小
   p = (int* ) realloc(p, count * sizeof(int));
   // 記錄p指標一開始的起始位址
