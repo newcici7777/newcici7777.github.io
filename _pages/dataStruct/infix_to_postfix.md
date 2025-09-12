@@ -18,6 +18,29 @@ while (i < str.length() &&
 }
 {% endhighlight %}
 
+## 中序轉後序步驟
+![img]({{site.imgurl}}/java_datastruct/in_pofix1.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/in_pofix2.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/in_pofix3.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/in_pofix4.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/in_pofix5.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/in_pofix6.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/in_pofix7.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/in_pofix8.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/in_pofix9.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/in_pofix10.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/in_pofix11.png)<br>
+
 ## 判斷數字與左右括號
 準備二個容器，一個是Stack，一個是List。<br>
 Stack是放「加減乘除」與左括號`(`，List是放數字<br>
@@ -85,6 +108,25 @@ stack1.add(str);
 之前的步驟，會建立後序的數字與符號，把它遍歷一遍。<br>
 建立一個Stack。
 
+### 計算步驟
+![img]({{site.imgurl}}/java_datastruct/pofix_cul1.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/pofix_cul2.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/pofix_cul3.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/pofix_cul4.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/pofix_cul5.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/pofix_cul6.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/pofix_cul7.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/pofix_cul8.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/pofix_cul9.png)<br>
+
 ### 數字
 若為數字，就放入Stack。
 {% highlight java linenos %}
@@ -123,7 +165,6 @@ if (str.equals("+")) {
 {% highlight java linenos %}
 stack.add(result + "");
 {% endhighlight %}
-
 
 完整程式碼
 {% highlight java linenos %}
@@ -213,3 +254,8 @@ public class InfixToPostfix {
   }
 }
 {% endhighlight %}
+```
+[(, 53, +, (, 34, *, 45, ), )]
+[53, 34, 45, *, +]
+1583
+```
