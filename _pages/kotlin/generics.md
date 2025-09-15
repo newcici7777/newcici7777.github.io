@@ -1,5 +1,5 @@
 ---
-title: 泛型
+title: 泛型類別
 date: 2025-09-12
 keywords: kotlin, Generics
 ---

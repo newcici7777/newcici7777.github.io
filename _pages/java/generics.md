@@ -1,9 +1,9 @@
 ---
-title: 泛型
+title: 泛型類別
 date: 2025-05-06
 keywords: Java, Generics
 ---
-如何理解什麼是泛型呢？
+如何理解什麼是泛型類別呢？
 
 {% highlight java linenos %}
 int i;
@@ -30,7 +30,7 @@ T是變數。
 
 所以下面文章內容所有的T, R, K, V ...，任何英文字母，請把它看作變數，而變數中的值，就是類型。
 
-## 自訂類型
+## 自訂泛型類別
 在類別名後面，用尖括號包住\<自訂類型\>。
 
 自訂類型T, R, M 可用英文字母任意一個大寫字母。
@@ -198,8 +198,8 @@ class java.lang.Boolean
 class java.lang.Integer
 ```
 
-## 不能使用泛型的情況
-### 泛型不可以new
+## 不能使用泛型類別的情況
+### 泛型類別不可以new
 以下二種new是不被允許，因為編譯器根本不知道T是什麼類型，又怎麼會知道要在記憶體建立多大空間來裝這個物件。
 {% highlight java linenos %}
 class Cat<T, R, M> {
@@ -208,12 +208,12 @@ class Cat<T, R, M> {
 }
 {% endhighlight %}
 
-### 泛型不可以用在靜態變數與靜態方法
+### 泛型類別不可以用在靜態變數與靜態方法
 
 - [memory_model][1]
 - [static][3]
 
-靜態變數是在Class物件中，Class物件比物件更早建立，泛型要在物件建立的時候才指定類型，但靜態物件早就建立好了，根本不可能指定靜態變數的類型。
+靜態變數是在Class物件中，Class物件比物件更早建立，泛型類別要在物件建立的時候才指定類型，但靜態物件早就建立好了，根本不可能指定靜態變數的類型。
 
 以下三種都不能使用。
 {% highlight java linenos %}
@@ -291,7 +291,7 @@ class Obj3<T> {
 }
 {% endhighlight %}
 
-## 使用泛型
+## 使用泛型類別
 ### 宣告
 在類別名後面有尖括號，尖括號中寫上實際的類型。
 {% highlight java linenos %}
