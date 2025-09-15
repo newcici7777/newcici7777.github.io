@@ -132,11 +132,62 @@ key = 1 , value = true
 ```
 
 ## 泛型方法
-泛型方法可以不用在類別中。<br>
-
 使用方法:
 ```
 fun <泛型類型> 方法名()
+```
+### 泛型類別與泛型方法
+下面的程式碼中，<br>
+
+`Box<T, U>`，此處的T是屬於泛型類別，`Box<String, Int>`，代表T為String。<br>
+
+`fun <T> func1(param1:T)`此處的T是屬於泛型方法，`box.func1(false)`，代表T為Boolean。<br>
+
+`fun func2(param1: T)`此處的T是屬於泛型類別，`Box<String, Int>`，代表T為String。<br>
+
+雖然都是T，但不是相同的T，類型不相同。<br>
+{% highlight kotlin linenos %}
+class Box<T, U>(var item1: T, val item2: U) {
+    fun <T> func1(param1: T) {
+        println("param1 = $param1")
+    }
+
+    fun func2(param1: T) {
+        item1 = param1
+        println("item1 = $item1, item2 = $item2")
+    }
+}
+
+fun main() {
+    val box = Box<String, Int>("Hello", 10)
+    box.func1(false)
+    box.func2("World")
+}
+{% endhighlight %}
+```
+param1 = false
+item1 = World, item2 = 10
+```
+
+### 泛型方法可以不用在類別中
+關係運算子比較，T一定要是Comparable<T>的子類別。
+{% highlight kotlin linenos %}
+fun <T : Comparable<T>> max(a:T, b:T) : T {
+    if (a > b) {
+      return a
+    } else {
+      return b
+    }
+}
+
+fun main() {
+    println(max(10, 55))
+    println(max(100.52, 100.55))
+}
+{% endhighlight %}
+```
+55
+100.55
 ```
 
 ### 判斷泛型類型inline與reified
@@ -172,7 +223,7 @@ result = false
 ```
 
 ### 轉型
-轉型一定要有`inline`與`reified`，缺一不可，可能會轉失敗，所以回傳值是T?
+轉型一定要有`inline`與`reified`，缺一不可，可能會轉失敗，所以回傳值是T?可空類型，因為是可空類型，使用as?可空類型。<br>
 {% highlight kotlin linenos %}
 inline fun <reified T> cast(obj: Any): T? {
     return obj as? T
@@ -182,15 +233,17 @@ open class Human
 data class Boy(val name: String, val age: Int) : Human()
 
 fun main() {
-    val boy = Boy("Bill", 20)
-    val man = cast<Human>(boy)
+    val boy:Boy = Boy("Bill", 20)
+    val person:Human? = cast<Human>(boy)
 }
 {% endhighlight %}
 
 ### 在類別中的泛型方法
 以下程式碼，<R>是屬於泛型方法的類型，泛型類別沒有R這個類型。<br>
+
 copyToMan()的func1參數為Lambda，回傳值是泛型方法的R類型。<br>
-Lambda類型為參數是泛型類別的T類型，傳回值為泛型方法的R類型。<br>
+
+Lambda類型的參數是泛型類別的T類型，傳回值為泛型方法的R類型。<br>
 {% highlight kotlin linenos %}
 fun <R> copyToMan(func1:(T) -> R):R {
     return func1(obj)
@@ -207,7 +260,9 @@ class Obj<T>(val obj: T) {
 {% endhighlight %}
 
 func1實際上是以下花括號{}的內容，it為上個程式碼obj的參數。<br>
+
 建立Man()的物件，名字與Boy物件相同，年齡加上10。<br>
+
 Lambda預設花括號{}最後一行就是回傳值，回傳值類型為R，R就是Man。<br>
 {% highlight kotlin linenos %}
 val obj1: Obj<Boy> = Obj(Boy("Bill", 5))
