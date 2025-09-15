@@ -3,8 +3,7 @@ title: 泛型類別
 date: 2025-05-06
 keywords: Java, Generics
 ---
-如何理解什麼是泛型類別呢？
-
+## 自訂類型
 {% highlight java linenos %}
 int i;
 
@@ -30,7 +29,7 @@ T是變數。
 
 所以下面文章內容所有的T, R, K, V ...，任何英文字母，請把它看作變數，而變數中的值，就是類型。
 
-## 自訂泛型類別
+## 泛型類別
 在類別名後面，用尖括號包住\<自訂類型\>。
 
 自訂類型T, R, M 可用英文字母任意一個大寫字母。
@@ -41,7 +40,7 @@ class Cat<T, R, M> {
 {% endhighlight %}
 
 ## 屬性
-泛型可以用在屬性類型。
+泛型類別的自訂類型，可以用在屬性類型。
 {% highlight java linenos %}
 class Cat<T, R, M> {
   private T t;
@@ -51,7 +50,7 @@ class Cat<T, R, M> {
 {% endhighlight %}
 
 ## 建構子
-泛型可以用在建構子參數類型。
+泛型類別的自訂類型，可以用在建構子參數類型。
 {% highlight java linenos %}
 class Cat<T, R, M> {
   private T t;
@@ -67,7 +66,7 @@ class Cat<T, R, M> {
 {% endhighlight %}
 
 ## get,set方法
-泛型可以用在方法參數類型與傳回值類型。
+泛型類別的自訂類型，可以用在方法參數類型與傳回值類型。
 {% highlight java linenos %}
 class Cat<T, R, M> {
   private T t;
@@ -105,30 +104,30 @@ class Cat<T, R, M> {
 Cat<String, Integer, Dog> cat = new Cat<String, Integer, Dog>();
 {% endhighlight %}
 
-jdk8以後可以省略後面的尖括號中的類型，因為前面已經宣告泛型(T,R,M)的類型是什麼，後面的可由前面的尖括號內容進行自動推導。
+jdk8以後可以省略後面的尖括號中的類型，因為前面已經宣告泛型類別(T,R,M)的類型是什麼，後面的可由前面的尖括號內容進行自動推導。
 {% highlight java linenos %}
 Cat<String, Integer, Dog> cat = new Cat<>();
 {% endhighlight %}
 
-## 沒泛型類型，預設Object
-沒設定泛型類型。
+## 沒泛型類別的類型，預設Object
+沒設定泛型類別的類型。
 {% highlight java linenos %}
 Cat cat = new Cat();
 {% endhighlight %}
 
-編譯器自動認為泛型類型是Object。
+編譯器自動認為泛型類別的類型是Object。
 {% highlight java linenos %}
 Cat<Object, Object, Object> cat = new Cat<>();
 {% endhighlight %}
 
-## 泛型類型可以使用子類別
+## 泛型類別可以使用子類別
 類別B繼承類別A
 {% highlight java linenos %}
 class A {}
 class B extends A {}
 {% endhighlight %}
 
-Student，有泛型類型T屬性，與建構子。
+Student是泛型類別，有類型T屬性，建構子參數為類型T。
 {% highlight java linenos %}
 class Student<T> {
   private T t;
@@ -139,10 +138,10 @@ class Student<T> {
 }
 {% endhighlight %}
 
-由以下的範例可以知道，泛型類型是可以用子類別。
+由以下的範例可以知道，泛型類別的類型是可以用子類別。
 {% highlight java linenos %}
   Student<A> s3 = new Student<>(new A());
-  // 泛型類型是父類別A，但建構子放的是子類別B
+  // T類型是父類別A，但建構子放的是子類別B
   Student<A> s4 = new Student<>(new B());
 {% endhighlight %}
 
@@ -171,12 +170,12 @@ class Cat<T, R, M> {
 }
 {% endhighlight %}
 
-指定泛型類型，並建立物件，注意！建構子的參數都是基本型態，但內部會自動把12.5轉成Double類別，1轉成Integer類別。
+指定泛型類別的類型，並建立物件，注意！建構子的參數都是基本型態，但內部會自動把12.5轉成Double類別，1轉成Integer類別。
 {% highlight java linenos %}
 Cat<Double, Boolean, Integer> cat = new Cat<>(12.5, true, 1);
 {% endhighlight %}
 
-## 使用getClass()知道泛型類型
+## 使用getClass()知道泛型類別的類型
 {% highlight java linenos %}
 class Cat<T, R, M> {
   public void showType() {

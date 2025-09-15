@@ -19,8 +19,9 @@ while (i < str.length() &&
 {% endhighlight %}
 
 ### 中序轉後序步驟
-準備二個容器，一個是Stack，一個是List。<br>
+準備二個容器，下圖中左邊是Stack，右邊是List。<br>
 Stack是放「加減乘除」與左括號`(`，List是放數字<br>
+把中序運算式遍歷一遍，加減乘除放入左邊List，數字放右邊List。<br>
 
 ![img]({{site.imgurl}}/java_datastruct/in_pofix1.png)<br>
 
@@ -99,15 +100,24 @@ stack1.pop();
 {% endhighlight %}
 
 #### 判斷步驟
-乘除優先次序最高，加減第二，左括號`\`優先次序最低。<br>
-下圖中，左邊是Stack，右邊是List。<br>
+乘除優先次序最高，加減第二，左括號優先次序最低。<br>
+下表數字愈大，代表優先次序愈高。<br>
 
-\+ 要放入「加減乘除」四則運算的Stack中，但裡面已經有\*與除`/`，\+的優先次序比乘除低，要先把乘除從Stack pop出來，並加入右邊的List，才能把\+加入。
+|符號|優先次序|
+|\+|1|
+|-|1|
+|\*|2|
+|`/`|2|
+|(|0|
+
+下圖中，左邊是Stack，專門放加減乘除與左括號，右邊是List，一開始是放數字。<br>
+
+\+ 要放入「加減乘除」的Stack中，但裡面已經有\*與除`/`，\+的優先次序比乘\*除`/`低，要先把乘\*除`/`從Stack pop出來，並加入右邊的數字List，才能把\+加入Stack中。
 ![img]({{site.imgurl}}/java_datastruct/infix_piorty1.png)<br>
 
 ![img]({{site.imgurl}}/java_datastruct/infix_piorty2.png)<br>
 
-比\+大的都pop出來後，再把\+放進Stack中。
+比\+大的優先次序都pop出來後，再把\+放進Stack中。
 ![img]({{site.imgurl}}/java_datastruct/infix_piorty3.png)<br>
 
 如果str是「加減乘除」其中之一，判斷優先次序，優先次序低的，先把stack中比它大的都pop出來放入List，最後再把str(加減乘除其中之一)，放入stack中。
@@ -117,7 +127,7 @@ while (stack1.size() != 0 &&
   piorty(str) < piorty(stack1.peek())) {
   list.add(stack1.pop());
 }
-// 最後再把str(加減乘除其中之一)，放入stack中
+// 最後再優先次序低的，放入stack中
 stack1.add(str);
 {% endhighlight %}
 

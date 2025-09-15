@@ -58,10 +58,10 @@ val mutableMap = mutableMapOf(
 {% endhighlight %}
 
 ## 讀取
-- \[key\] 沒有鍵\/值，系統就會傳回null。
-- get(key) 沒有鍵\/值，系統就會傳回null。
-- getOrDefault("Momo", 0) 沒有鍵\/值就傳回預設值。
-- getOrElse("Yoyo") \{0\} 沒有鍵\/值就傳回預設值。
+- \[key\] 沒有鍵值，系統就會傳回null。
+- get(key) 沒有鍵值，系統就會傳回null。
+- getOrDefault("Momo", 0) 沒有鍵值就傳回預設值。
+- getOrElse("Yoyo") \{0\} 沒有鍵值就傳回預設值。
 
 {% highlight kotlin linenos %}
 val mutableMap = mutableMapOf(
