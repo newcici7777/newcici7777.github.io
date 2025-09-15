@@ -97,6 +97,36 @@ int main() {
 }
 {% endhighlight %}
 
+### const與函式
+函式參數宣告為const，不管是不是const都可傳入。<br>
+{% highlight c++ linenos %}
+// 參數是const
+void func(const int& i) {
+  cout << i << endl;
+}
+int main() {
+  // 非const可傳入函式
+  int i = 10;
+  func(i);
+}
+{% endhighlight %}
+```
+10
+```
+
+const的作用在於，不能修改參數。<br>
+以下編譯失敗是因為試圖修改i。<br>
+{% highlight c++ linenos %}
+void func(const int& i) {
+  i = 100;
+  cout << i << endl;
+}
+int main() {
+  int i = 10;
+  func(i);
+}
+{% endhighlight %}
+
 ### const與函式參數指標
 設計一個函式只能讀取參數，但不能修改參數。<br>
 

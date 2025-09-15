@@ -87,18 +87,15 @@ int main() {
     Student ret;
     
     // 呼叫函式，傳入傳回值地址
-    getStudent(&ret);
+    // 建立s1物件，呼叫拷貝
+    Student s1 = getStudent(&ret);
     
-    // 建立s1物件，呼叫建構子
-    Student s1;
-    s1 = ret;  // 呼叫拷貝
+    cout << "物件記憶體位址 = " << &s1 << endl;
     
     // 傳回值暫存區解構
     // 會自動呼叫解構子，不用手動呼叫
     //ret.~Student();
-    
-    cout << "物件記憶體位址 = " << &s1 << endl;
-    
+
     // s1 解構
     // 會自動呼叫解構子，不用手動呼叫
     //s1.~Student();

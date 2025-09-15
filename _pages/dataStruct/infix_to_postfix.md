@@ -18,7 +18,10 @@ while (i < str.length() &&
 }
 {% endhighlight %}
 
-## 中序轉後序步驟
+### 中序轉後序步驟
+準備二個容器，一個是Stack，一個是List。<br>
+Stack是放「加減乘除」與左括號`(`，List是放數字<br>
+
 ![img]({{site.imgurl}}/java_datastruct/in_pofix1.png)<br>
 
 ![img]({{site.imgurl}}/java_datastruct/in_pofix2.png)<br>
@@ -33,6 +36,7 @@ while (i < str.length() &&
 
 ![img]({{site.imgurl}}/java_datastruct/in_pofix7.png)<br>
 
+右括號，把「加減乘除」符號放入List中，直到遇見左括號`(`停止。<br>
 ![img]({{site.imgurl}}/java_datastruct/in_pofix8.png)<br>
 
 ![img]({{site.imgurl}}/java_datastruct/in_pofix9.png)<br>
@@ -41,7 +45,7 @@ while (i < str.length() &&
 
 ![img]({{site.imgurl}}/java_datastruct/in_pofix11.png)<br>
 
-## 判斷數字與左右括號
+### 判斷數字與左右括號
 準備二個容器，一個是Stack，一個是List。<br>
 Stack是放「加減乘除」與左括號`(`，List是放數字<br>
 
@@ -68,16 +72,17 @@ peek是檢查堆疊頂端元素，並非pop刪除元素。<br>
 stack1.peek()
 {% endhighlight %}
 
-把「加減乘除」符號放入List中，直到遇見右括號`)`停止。<br>
+把「加減乘除」符號放入List中，直到遇見左括號`(`停止。<br>
 {% highlight java linenos %}
 while (!stack1.peek().equals("(")) {
   list.add(stack1.pop());
 }
 {% endhighlight %}
 
-最後要把右括號`)`，pop出去。
-
+最後要把左括號`(`，pop出去。
+{% highlight java linenos %}
 stack1.pop();
+{% endhighlight %}
 
 ### 加減乘除判斷優先順序
 數字愈大代表優先等級愈高，乘與除的的優先順序最高，要注意的是，左括號`(`仍在stack中，所以遇到左括號要傳回0。<br>
@@ -93,6 +98,18 @@ stack1.pop();
   }
 {% endhighlight %}
 
+#### 判斷步驟
+乘除優先次序最高，加減第二，左括號`\`優先次序最低。<br>
+下圖中，左邊是Stack，右邊是List。<br>
+
+\+ 要放入「加減乘除」四則運算的Stack中，但裡面已經有\*與除`/`，\+的優先次序比乘除低，要先把乘除從Stack pop出來，並加入右邊的List，才能把\+加入。
+![img]({{site.imgurl}}/java_datastruct/infix_piorty1.png)<br>
+
+![img]({{site.imgurl}}/java_datastruct/infix_piorty2.png)<br>
+
+比\+大的都pop出來後，再把\+放進Stack中。
+![img]({{site.imgurl}}/java_datastruct/infix_piorty3.png)<br>
+
 如果str是「加減乘除」其中之一，判斷優先次序，優先次序低的，先把stack中比它大的都pop出來放入List，最後再把str(加減乘除其中之一)，放入stack中。
 {% highlight java linenos %}
 // 優先次序低的，先把stack中比str大的都pop出來放入List
@@ -106,7 +123,8 @@ stack1.add(str);
 
 ## 計算
 之前的步驟，會建立後序的數字與符號，把它遍歷一遍。<br>
-建立一個Stack。
+
+建立一個Stack，只裝數字，遇到加減乘除，把Stack頂端前2個數字拿出來計算。<br>
 
 ### 計算步驟
 ![img]({{site.imgurl}}/java_datastruct/pofix_cul1.png)<br>
@@ -115,16 +133,24 @@ stack1.add(str);
 
 ![img]({{site.imgurl}}/java_datastruct/pofix_cul3.png)<br>
 
+遇到加減乘除，把Stack頂端前2個數字拿出來計算。<br>
+Stack最上面的，pop出來放\*的右邊。<br>
 ![img]({{site.imgurl}}/java_datastruct/pofix_cul4.png)<br>
 
+第2個數字pop出來，放\*的左邊。<br>
 ![img]({{site.imgurl}}/java_datastruct/pofix_cul5.png)<br>
 
+二個數字相乘之後，再把1530放入stack中。<br>
 ![img]({{site.imgurl}}/java_datastruct/pofix_cul6.png)<br>
 
+遇到加減乘除，把Stack頂端前2個數字拿出來計算。<br>
+Stack最上面的，pop出來放\+的右邊。<br>
 ![img]({{site.imgurl}}/java_datastruct/pofix_cul7.png)<br>
 
+第2個數字pop出來，放\+的左邊。<br>
 ![img]({{site.imgurl}}/java_datastruct/pofix_cul8.png)<br>
 
+二個數字相加之後，再把1583放入stack中。
 ![img]({{site.imgurl}}/java_datastruct/pofix_cul9.png)<br>
 
 ### 數字
