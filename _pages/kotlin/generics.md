@@ -11,7 +11,7 @@ Prerequisites:
 
 先了解以上文章，才能進行下面的文章內容。
 
-## 建構式與泛型類別
+## 泛型類別
 語法
 ```
 class 類別名<T> {}
@@ -20,45 +20,187 @@ T是類型，不知道是什麼類型。<br>
 
 泛型可以用在屬性、方法、也可以用在建構式。<br>
 
-本範例是使用在主建構式，使用`_tmp`暫存變數，T類型可以是任意類型，把T類型的參數，指派給obj成員屬性。<br>
+本範例是使用在主建構式，T類型可以是任意類型，把T類型的參數，指派給obj成員屬性。<br>
 
 {% highlight kotlin linenos %}
-class Obj<T>(_tmp: T) {
-    private var obj:T = _tmp
+class Obj<T>(val obj: T) {
+    fun print() {
+        println(obj.toString())
+    }
 }
 {% endhighlight %}
 
-以下有三個類別，分別是男孩、男人、老鼠。
+以下有三個類別，分別是男孩、男人、老鼠，使用data class是因為data class自動會產生toString()方法，toString()不用自己寫。<br>
 {% highlight kotlin linenos %}
-class Boy(val name:String, val age:Int)
-class Man(val name: String, val age:Int)
-class Mouse(val name:String, val weight:Int)
+data class Boy(val name:String, val age:Int)
+data class Man(val name: String, val age:Int)
+data class Mouse(val name:String, val age:Int, val weight:Int)
 {% endhighlight %}
 
-以下有三個變數obj1,obj2,obj3，使用Obj(物件)主要建構式，把物件設給obj成員屬性。<br>
+### 使用泛型類別語法
+```
+類別<類型>(物件)
+Obj<Boy>(Boy("Bill", 5))
+```
+若尖括號的是Boy，建構式()就不能傳入其它類別，如:Mouse，要彼此對映。
+
+使用Obj(物件)主要建構式，把物件設給obj成員屬性。<br>
+可以發現T類型可以接收任意類型的物件。<br>
 {% highlight kotlin linenos %}
 fun main() {
-    val obj1: Obj<Boy> = Obj(Boy("Bill", 5))
-    val obj2: Obj<Man> = Obj(Man("Jack", 30))
-    val obj3: Obj<Mouse> = Obj(Mouse("Kiki", 1))
+    val obj1 = Obj<Boy>(Boy("Bill", 5))
+    val obj2 = Obj<Man>(Man("Jack", 30))
+    val obj3 = Obj<Mouse>(Mouse("Kiki",1, 1))
+    obj1.print()
+    obj2.print()
+    obj3.print()
+}
+{% endhighlight %}
+```
+Boy(name=Bill, age=5)
+Man(name=Jack, age=30)
+Mouse(name=Kiki, age=1, weight=1)
+```
+
+在Java宣告List的泛型，左邊類型已經使用尖括號<String>，右邊的尖括號<>中就不會寫類型。<br>
+{% highlight java linenos %}
+ArrayList<String> list = new ArrayList<>();
+{% endhighlight %}
+
+Kotlin也是一樣，等號左邊已經宣告類型`obj1: Obj<Boy>`，等號右邊就不用有`= Obj<Boy>()`
+{% highlight kotlin linenos %}
+ val obj1: Obj<Boy> = Obj(Boy("Bill", 5))
+{% endhighlight %}
+
+### 泛型約束
+建立一個Human類別
+{% highlight kotlin linenos %}
+open class Human
+{% endhighlight %}
+
+以下Boy與Man類別繼承Human
+{% highlight kotlin linenos %}
+data class Boy(val name: String, val age: Int) : Human()
+data class Man(val name: String, val age: Int) : Human()
+{% endhighlight %}
+
+T泛型類型後面加上`: Human`，代表類型只能是Human的子類才能傳入主要建構式。
+{% highlight kotlin linenos %}
+class Obj<T : Human>(val obj: T)
+{% endhighlight %}
+
+完整程式碼:以下`val obj3: Obj<Mouse>`編譯錯誤，因為老鼠不是繼承人類，不能放入建構式。
+{% highlight kotlin linenos %}
+class Obj<T : Human>(val obj: T) {
+    fun print() {
+        println(obj.toString())
+    }
+}
+
+open class Human
+data class Boy(val name: String, val age: Int) : Human()
+data class Man(val name: String, val age: Int) : Human()
+data class Mouse(val name: String, val age: Int, val weight: Int)
+
+fun main() {
+    val obj1 = Obj<Boy>(Boy("Bill", 5))
+    val obj2 = Obj<Man>(Man("Jack", 30))
+    val obj3 = Obj<Mouse>(Mouse("Kiki", 1, 1))
+    obj1.print()
+    obj2.print()
+    obj3.print()
 }
 {% endhighlight %}
 
+### 二個泛型類別類型
+{% highlight kotlin linenos %}
+class MyPair<K, V> (val first:K, val second: V) {
+    override fun toString(): String {
+        return "key = $first , value = $second"
+    }
+}
+fun main() {
+    val pair1 = MyPair<String, Int>("國語", 90)
+    println(pair1.toString())
+    val pair2 = MyPair<Int, Boolean>(1, true)
+    println(pair2.toString())
+}
+{% endhighlight %}
+```
+key = 國語 , value = 90
+key = 1 , value = true
+```
+
 ## 泛型方法
-以下程式碼，<R>為新類型，泛型類別沒有R這個類型。<br>
-transToMan()的參數為Lambda，回傳值是泛型方法的R類型。<br>
+泛型方法可以不用在類別中。<br>
+
+使用方法:
+```
+fun <泛型類型> 方法名()
+```
+
+### 判斷泛型類型inline與reified
+以下程式碼編譯錯誤
+{% highlight kotlin linenos %}
+fun <T> isInstanceOf(obj: Any): Boolean {
+    return obj is T
+}
+{% endhighlight %}
+
+判斷泛型類型一定要有`inline`與`reified`，缺一不可，使用內嵌函式可以知道類型。
+{% highlight kotlin linenos %}
+inline fun <reified T> isInstanceOf(obj: Any): Boolean {
+    return obj is T
+}
+{% endhighlight %}
+
+使用方法
+```
+isInstanceOf<判斷類型>(物件)
+isInstanceOf<Man>(boy)
+```
+
+{% highlight kotlin linenos %}
+fun main() {
+    val boy = Boy("Bill", 20)
+    val result = isInstanceOf<Man>(boy);
+    println("result = $result")
+}
+{% endhighlight %}
+```
+result = false
+```
+
+### 轉型
+轉型一定要有`inline`與`reified`，缺一不可，可能會轉失敗，所以回傳值是T?
+{% highlight kotlin linenos %}
+inline fun <reified T> cast(obj: Any): T? {
+    return obj as? T
+}
+
+open class Human
+data class Boy(val name: String, val age: Int) : Human()
+
+fun main() {
+    val boy = Boy("Bill", 20)
+    val man = cast<Human>(boy)
+}
+{% endhighlight %}
+
+### 在類別中的泛型方法
+以下程式碼，<R>是屬於泛型方法的類型，泛型類別沒有R這個類型。<br>
+copyToMan()的func1參數為Lambda，回傳值是泛型方法的R類型。<br>
 Lambda類型為參數是泛型類別的T類型，傳回值為泛型方法的R類型。<br>
 {% highlight kotlin linenos %}
-fun <R> transToMan(func1:(T) -> R):R {
+fun <R> copyToMan(func1:(T) -> R):R {
     return func1(obj)
 }
 {% endhighlight %}
 
 Lambda傳入參數，把obj傳入func1這個Lambda
 {% highlight kotlin linenos %}
-class Obj<T>(_tmp: T) {
-    private var obj:T = _tmp
-    fun <R> transToMan(func1:(T) -> R):R {
+class Obj<T>(val obj: T) {
+    fun <R> copyToMan(func1:(T) -> R):R {
         return func1(obj)
     }
 }
@@ -68,36 +210,46 @@ func1實際上是以下花括號{}的內容，it為上個程式碼obj的參數�
 建立Man()的物件，名字與Boy物件相同，年齡加上10。<br>
 Lambda預設花括號{}最後一行就是回傳值，回傳值類型為R，R就是Man。<br>
 {% highlight kotlin linenos %}
-val man = obj1.transToMan {
+val obj1: Obj<Boy> = Obj(Boy("Bill", 5))
+val man1 = obj1.copyToMan {
     Man(it.name, it.age.plus(10))
 }
 {% endhighlight %}
 
 完整程式碼:
 {% highlight kotlin linenos %}
-class Obj<T>(_tmp: T) {
-    private var obj:T = _tmp
-    fun <R> transToMan(func1:(T) -> R):R {
+class Obj<T>(val obj: T) {
+    fun print() {
+        println(obj.toString())
+    }
+
+    fun <R> copyToMan(func1:(T) -> R):R {
         return func1(obj)
     }
 }
-class Boy(val name:String, val age:Int)
-class Man(val name: String, val age:Int)
+
+data class Boy(val name:String, val age:Int)
+data class Man(val name: String, val age:Int)
+data class Mouse(val name:String, val age:Int, val weight:Int)
+
 fun main() {
     val obj1: Obj<Boy> = Obj(Boy("Bill", 5))
-    val man = obj1.transToMan {
+    val man1 = obj1.copyToMan {
         Man(it.name, it.age.plus(10))
     }
-    println("name = ${man.name} age= ${man.age}")
+    println(man1.toString())
 }
 {% endhighlight %}
 ```
-name = Bill age= 15
+Man(name=Bill, age=15)
 ```
 
 ## 使用vararg產生泛型類別容器
 以下是一個客制的List容器，建構子使用vararg，代表可以放入多個物件，物件的類型為T，任意類型。<br>
-使用getItem(index)，可以透過索引取出，可能取不到，所以回傳類型為?可空類型. 
+
+使用out是因為，out T是getItem()方法的傳回值類型，Kotlin規定方法的「傳入」參數為「泛型」為「in」，「傳回值」為傳出去的「泛型」類型為「out」。<br>
+
+使用getItem(index)，可以透過索引取出，可能取不到，所以回傳類型為?可空類型. <br>
 {% highlight kotlin linenos %}
 class MyList<T>(vararg _items: T) {
     private var items:Array<out T> = _items
