@@ -13,10 +13,12 @@ out視為輸出，方法只能傳回return T類型的物件。<br>以下是生�
 interface Production<out T> {
     fun product() : T
 }
+{% endhighlight %}
 
 ### Consumer消費者介面
 in視為輸入，方法只能傳入T類型的參數，不能有傳回值。<br>以下是消費者介面，只有一個方法，consume()負責接收T類型參數。<br>
 實作的子類別，必須實作consume()方法。<br>
+{% highlight kotlin linenos %}
 interface Consumer<in T> {
     fun consume(item:T)
 }
