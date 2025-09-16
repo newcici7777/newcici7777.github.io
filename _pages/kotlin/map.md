@@ -3,10 +3,14 @@ title: Map,MutableMap
 date: 2025-05-20
 keywords: kotlin, Map, MutableMap
 ---
+Prerequisites:
+
+- [to 擴展函式][1]
+
 ## to函式
 to區分key與value。
 
-以下是to函式原始碼，傳回值是一個Pair的類別。
+以下是to函式原始碼，傳回值是一個Pair的類別。<br>
 {% highlight java linenos %}
 public infix fun <A, B> A.to(that: B): Pair<A, B> = Pair(this, that)
 {% endhighlight %}
@@ -141,3 +145,5 @@ mutableMap["Momo"] = 10
 mutableMap.remove(key)
 mutableMap.remove("Momo")
 {% endhighlight %}
+
+[1]: {% link _pages/kotlin/exten_func.md %}#toinfix
