@@ -2,8 +2,8 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>void*任何資料型態的指標 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="c++, pointer, void*, void" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>void* 指標 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="c++, pointer, void\*, void" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -153,38 +153,14 @@
     	<a href="/pages/c/basic/float_double/" data-nav-link> 浮點數</a>
         
             
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/c/basic/div_mod/" data-nav-link> 除法與餘數</a>
-        
-            
-        </li>
+        </li></ul></li>
 	
 	
 	<li class="" data-nav-item>
     	<a href="/pages/c/basic/typedef/" data-nav-link> typedef類型別名</a>
         
             
-        </li></ul></li>
-	
-	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 常數 </a><ul>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/c/basic/constant/" data-nav-link> 常數</a>
-        
-            
         </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/c/basic/define/" data-nav-link> define</a>
-        
-            
-        </li></ul></li>
 	
 	
 	<li class="" data-nav-item>
@@ -257,6 +233,37 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 常數 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/constant/" data-nav-link> 常數</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/const/" data-nav-link> const常數與唯讀</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/basic/define/" data-nav-link> define</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/pointer/pointerConst/" data-nav-link> const與指標</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 編譯 </a><ul>
 	
 	
@@ -312,18 +319,11 @@
         </li>
 	
 	
-	<li class="" data-nav-item>
-    	<a href="/pages/c/pointer/pointerConst/" data-nav-link> const與指標</a>
-        
-            
-        </li>
-	
-	
 	<li class="active" data-nav-item>
-    	<a href="/pages/c/pointer/pointerVoid/" data-nav-link> void*任何資料型態的指標</a>
+    	<a href="/pages/c/pointer/pointerVoid/" data-nav-link> void* 指標</a>
         
             
-                <ul><li><a href="#void印出16進制的位址" data-nav-link " >(void*)印出16進制的位址</a></li><li><a href="#函式的參數為void指標位址" data-nav-link " >函式的參數為void*指標(位址)</a></li><li><a href="#函式傳回值為void指標" data-nav-link " >函式傳回值為void*指標</a></li><li><a href="#不能對void指標使用取值運算子" data-nav-link " >不能對<code class="language-plaintext highlighter-rouge">void*指標使用取值運算子*</code></a></li><li><a href="#函式的參數為void" data-nav-link " >函式的參數為void</a></li></ul>
+                <ul><li><a href="#void轉型" data-nav-link " >void*轉型</a></li><li><a href="#void印出16進制的位址" data-nav-link " >(void*)印出16進制的位址</a></li><li><a href="#函式的參數為void指標位址" data-nav-link " >函式的參數為void*指標(位址)</a></li><li><a href="#函式傳回值為void指標" data-nav-link " >函式傳回值為void*指標</a></li><li><a href="#不能對void指標使用取值運算子" data-nav-link " >不能對<code class="language-plaintext highlighter-rouge">void*指標使用取值運算子*</code></a></li><li><a href="#函式的參數為void" data-nav-link " >函式的參數為void</a></li></ul>
 
             
         </li>
@@ -389,6 +389,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/c/array/arrayOfPointers/" data-nav-link> 指標陣列</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/c/array/array2dimen/" data-nav-link> 二維陣列</a>
         
             
@@ -396,7 +403,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/array/arrayOfPointers/" data-nav-link> 指標陣列</a>
+    	<a href="/pages/c/array/pointer_2d_arr/" data-nav-link> 指標指向2維陣列</a>
         
             
         </li></ul></li>
@@ -586,6 +593,20 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/c/function/func_return_pointer/" data-nav-link> 函式傳回指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/function/func_return_val/" data-nav-link> 函式傳回值</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/c/function/func_return_ref/" data-nav-link> 函式傳回值是參考</a>
         
             
@@ -645,6 +666,13 @@
     	<a href="/pages/c/function/using_func_pointer/" data-nav-link> using函式指標別名</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/function/variable/" data-nav-link> 函式可變參數</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -667,6 +695,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/c/dynamicMemory/malloc/" data-nav-link> malloc</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/dynamicMemory/alloc/" data-nav-link> calloc, realloc</a>
         
             
         </li>
@@ -725,14 +760,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/struct/struct_array/" data-nav-link> 結構陣列</a>
+    	<a href="/pages/c/struct/struct_pointer/" data-nav-link> 指標指向結構與結構陣列</a>
         
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/struct/struct_pointer/" data-nav-link> 指標指向結構</a>
+    	<a href="/pages/c/struct/struct_array/" data-nav-link> 結構陣列</a>
         
             
         </li>
@@ -847,13 +882,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/dataStruct/recursion/" data-nav-link> 遞迴</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/c/array/qsort/" data-nav-link> qsort排序</a>
         
             
@@ -886,20 +914,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/c/class/constructor/" data-nav-link> 建構子與解構子</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/c/class/anonymous_obj/" data-nav-link> 匿名物件</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/c/class/temp_obj/" data-nav-link> 臨時物件temporary object</a>
         
             
         </li>
@@ -986,7 +1000,24 @@
     	<a href="/pages/c/class/polymorphism/" data-nav-link> 多型</a>
         
             
-        </li></ul></li>
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 太複雜可略過 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/anonymous_obj/" data-nav-link> 匿名物件</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/temp_obj/" data-nav-link> 臨時物件temporary object</a>
+        
+            
+        </li></ul></li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 轉型 </a><ul>
@@ -1530,6 +1561,13 @@
     	<a href="/pages/java/wrap/" data-nav-link> 基本型態與Wrapper Classes</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/scope/" data-nav-link> 區域變數全域變數</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -1680,6 +1718,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/recursive/" data-nav-link> 遞迴</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/variable/" data-nav-link> 函式可變參數</a>
         
             
         </li></ul></li>
@@ -1879,7 +1924,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/generics/" data-nav-link> 泛型</a>
+    	<a href="/pages/java/generics/" data-nav-link> 泛型類別</a>
         
             
         </li>
@@ -2302,6 +2347,13 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/dataStruct/infix_to_postfix/" data-nav-link> 中序轉後序</a>
+        
+            
+        </li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> sort </a><ul>
 	
 	
@@ -2606,6 +2658,13 @@
     	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/variable/" data-nav-link> vararg函式可變參數</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -2753,6 +2812,23 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/lazy/" data-nav-link> lazy</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 泛型 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/generics/" data-nav-link> 泛型類別與泛型方法</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/in_out/" data-nav-link> in out 泛型轉型</a>
         
             
         </li></ul></li>
@@ -3229,7 +3305,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >void*任何資料型態的指標</a>
+                            <a href="." >void* 指標</a>
                         
                     </h1>
                 </div>
@@ -3242,11 +3318,85 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/c/pointer/pointerVoid">void*任何資料型態的指標</h1>
+                        <h1 id="/pages/c/pointer/pointerVoid">void* 指標</h1>
                     
 
-                    <h2 id="void印出16進制的位址">(void*)印出16進制的位址</h2>
+                    <h2 id="void轉型">void*轉型</h2>
+<p>void*指標是所有指標的父類別。<br />
+所以可以轉型成任何子類別。<br /></p>
 
+<p>下面程式，p指標指向i變數的記憶體位址。<br />
+把p指標強制轉型成void*指標。</p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
+  <span class="kt">void</span><span class="o">*</span> <span class="n">vp</span> <span class="o">=</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="p">)</span><span class="n">p</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>但void*指標不支援*取值運算子，以下編譯錯誤。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
+  <span class="kt">void</span><span class="o">*</span> <span class="n">vp</span> <span class="o">=</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="p">)</span><span class="n">p</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span> <span class="n">vp</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>將位址轉成void*要強制轉型。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre> 
+  <span class="kt">void</span><span class="o">*</span> <span class="n">vp</span> <span class="o">=</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="p">)</span><span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>將void*強制轉型回int*類型，就可以使用*取值運算子。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="c1">// 將位址轉成void*要強制轉型</span>
+  <span class="kt">void</span><span class="o">*</span> <span class="n">vp</span> <span class="o">=</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="p">)</span><span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="p">)</span><span class="n">vp</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="void印出16進制的位址">(void*)印出16進制的位址</h2>
 <p>使用(void*)就可以印出16進制的位址</p>
 
 <figure class="highlight">
@@ -3257,7 +3407,7 @@
 5
 </pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"變數c位址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"變數c位址 = "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="p">)</span><span class="o">&amp;</span><span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
@@ -3267,7 +3417,6 @@
 </code></pre></div></div>
 
 <h2 id="函式的參數為void指標位址">函式的參數為void*指標(位址)</h2>
-
 <p>函式的參數為void*指標，表示任何資料型態的指標(位址)都可以傳進函式，而且不需要轉型。</p>
 
 <figure class="highlight">
@@ -3470,7 +3619,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/c/pointer/pointerConst" class="navigation navigation-prev navigation-unique" aria-label="Previous page: const與指標">
+                        <a href="/pages/c/pointer/pass_addr_value" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 指派基本型態與指派指標">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -3597,7 +3746,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-09-04 09:53:19 +0800"
+        "time": "2025-09-16 08:51:25 +0800"
     },
     "basePath": "",
     "book": {
