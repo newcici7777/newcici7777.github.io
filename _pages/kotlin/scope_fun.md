@@ -5,13 +5,15 @@ keywords: kotlin, Scope function, let, run, with, also, apply
 ---
 Prerequisites:
 
-- [null][1]
-- [Lambda][2]
+- [Lambda][1]
+- [擴展函式][2]
 
-## Lambda參數與傳回值
-Lambda參數為呼叫Lambda函式(let, run, with, also, apply)的物件。
+請務必看完擴展函式，再看之後的內容，才容易明白。
 
-|Lambda函式|參數|傳回值|
+## 擴展函式
+這些擴展函式，只是為了讓程式碼比較好看。
+
+|擴展函式|Lambda參數|傳回值|
 |:----|:----|:---------|
 |let  |it  |最後一行決定|
 |run  |this|最後一行決定|
@@ -19,29 +21,78 @@ Lambda參數為呼叫Lambda函式(let, run, with, also, apply)的物件。
 |also |it  |呼叫它的物件|
 |apply|this|呼叫它的物件|
 
-### let
-- it，為呼叫Lambda函式的物件。
+## let
+```
+File("檔名").let()
+   ↑
+   it
+```
+- it，為呼叫擴展函式let()的物件，也就是File本身，`.let()`之前物件。
 - 傳回值是lambda最後一行。
 
 setWritable() 和 setExecutable() 這些方法的返回值是 Boolean，表示操作是否成功
-
 {% highlight kotlin linenos %}
 val var1 = File("/Users/cici/testc/file_test").let {
     it.setWritable(true)
-    it.setWritable(true)
     it.setExecutable(true) //最後一行的結果才是傳回值
 }
+// 傳回值
 println("var1 = $var1")
-println(var1::class)
 {% endhighlight %}
 ```
 file1 = true
-boolean (Kotlin reflection is not available)
+```
+
+沒有擴展函式之前:
+{% highlight kotlin linenos %}
+fun main() {
+    val file = File("/Users/cici/testc/file_test")
+    file.setWritable(true)
+    file.setExecutable(true)
+}
+{% endhighlight %}
+
+### apply
+```
+File("檔名").apply()
+   ↑
+   this
+```
+- this，為呼叫擴展函式apply()的物件，也就是File本身，`.apply()`之前物件。
+- 傳回值是this，File本身。
+- 可以隱藏this
+
+this未隱藏前。
+{% highlight kotlin linenos %}
+val file2 = File("/Users/cici/testc/file_test").apply {
+    this.setWritable(true)
+    this.setExecutable(true)
+}
+{% endhighlight %}
+
+this隱藏後。
+{% highlight kotlin linenos %}
+val file2 = File("/Users/cici/testc/file_test").apply {
+    setWritable(true)
+    setExecutable(true)
+}
+println("file2 = $file2")
+println(file2::class)
+{% endhighlight %}
+```
+file2 = /Users/cici/testc/file_test
+class java.io.File (Kotlin reflection is not available)
 ```
 
 ### run
-- this，為呼叫Lambda函式的物件。
+```
+File("檔名").run()
+   ↑
+   this
+```
+- this，為呼叫擴展函式run()的物件，也就是File本身，`.run()`之前物件。
 - 傳回值是lambda最後一行。
+- 可以隱藏this
 
 {% highlight kotlin linenos %}
 val var3 = File("/Users/cici/testc/file_test").run {
@@ -59,7 +110,12 @@ boolean (Kotlin reflection is not available)
 run可以呼叫函式參考
 
 ### with
-- this，為呼叫Lambda函式的物件。
+```
+File("檔名").with()
+   ↑
+   this
+```
+- this，為呼叫擴展函式with()的物件，也就是File本身，`.with()`之前物件。
 - 傳回值是lambda最後一行。
 - 使用參數的方式代入，with(參數) {}
 
@@ -76,26 +132,16 @@ println(var5::class)
 var5 = true
 boolean (Kotlin reflection is not available)
 ```
-### also
-- it，為呼叫Lambda函式的物件。
-- 傳回值是呼叫它的物件，此處是File。
-{% highlight kotlin linenos %}
-val file2 = File("/Users/cici/testc/file_test").apply {
-    setWritable(true)
-    setWritable(true)
-    setExecutable(true)
-}
-println("file2 = $file2")
-println(file2::class)
-{% endhighlight %}
-```
-file2 = /Users/cici/testc/file_test
-class java.io.File (Kotlin reflection is not available)
-```
 
-### apply
-- it，為呼叫Lambda函式的物件。
+### also
+```
+File("檔名").let()
+   ↑
+   it
+```
+- it，為呼叫擴展函式also()的物件，也就是File本身，`.also()`之前物件。
 - 傳回值是呼叫它的物件，此處是File。
+
 {% highlight kotlin linenos %}
 val file4 = File("/Users/cici/testc/file_test").also {
     it.setWritable(true)
@@ -111,9 +157,8 @@ class java.io.File (Kotlin reflection is not available)
 ```
 
 ## 用法
-Lambda參數為呼叫Lambda函式(let, run, with, also, apply)的物件。
 
-|Lambda函式|參數|傳回值|用法|
+|擴展函式|lambda參數|傳回值|用法|
 |:----|:----|:---------|:-----------------|
 |let  |it  |最後一行決定|null安全呼叫、修改內容|
 |run  |this|最後一行決定|運算、判斷true或false、函式參考|
@@ -168,7 +213,6 @@ res = false
 with與run功能相同
 {% highlight kotlin linenos %}
 val res2 = with(file) {
-    //"file name = ${name}  length = ${length()} byte."
     this.readText().contains("Java")
 }
 println("res2 = $res2")
@@ -280,5 +324,6 @@ println("result = $result2")
 result = file is not exist.
 ```
 
-[1]: {% link _pages/kotlin/null.md %}
-[2]: {% link _pages/kotlin/lambda.md %}
+
+[1]: {% link _pages/kotlin/lambda.md %}
+[2]: {% link _pages/kotlin/exten_func.md %}

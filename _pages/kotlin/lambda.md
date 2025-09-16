@@ -345,46 +345,7 @@ useLambda2(6, 9)
 First:6
 ```
 
-## 透過Lambda把標準函式重寫(覆寫)
-{% highlight kotlin linenos %}
-var str = "Hello World"
-val o_count = str.count ({ letter ->
-    letter == 'o'
-})
-{% endhighlight %}
-- letter是參數。
-- 只要計算字母為o的字元數量。
 
-{% highlight kotlin linenos %}
-letter == 'o'
-{% endhighlight %}
-
-簡化2，圓括號去掉
-{% highlight kotlin linenos %}
-var str = "Hello World"
-val o_count = str.count { letter ->
-    letter == 'o'
-}
-{% endhighlight %}
-
-簡化3，letter與->箭頭去掉，因為只有一個參數，可以去掉，默認用it代替一個參數。
-{% highlight kotlin linenos %}
-var str = "Hello World"
-val o_count = str.count {
-    it == 'o'
-}
-{% endhighlight %}
-
-印出字元個數
-{% highlight kotlin linenos %}
-var str = "Hello World"
-println("字元個數 = ${str.count()}")
-println("o字元個數 = ${o_count}")
-{% endhighlight %}
-```
-字元個數 = 11
-o字元個數 = 2
-```
 
 [1]: {% link _pages/java/lambda.md %}
 [2]: {% link _pages/c/function/functionPointer.md %}
