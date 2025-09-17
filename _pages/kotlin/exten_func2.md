@@ -173,3 +173,53 @@ fun main() {
 [1, 2, 3, 4, 5, 6]
 ```
 
+## fold 疊加函式
+計算List中元素的總合，total的初始值是0。
+{% highlight kotlin linenos %}
+val result = listOf(20, 30, 40).fold(0) {
+    total, num ->
+    total + num
+}
+println(result)
+{% endhighlight %}
+```
+90
+```
+
+計算List中元素的總合，total的初始值是5。
+{% highlight kotlin linenos %}
+val result = listOf(20, 30, 40).fold(5) {
+    total, num ->
+    total + num
+}
+println(result)
+{% endhighlight %}
+```
+95
+```
+
+計算List中 「元素\*3」 的總合，total的初始值是5。
+{% highlight kotlin linenos %}
+val result = listOf(20, 30, 40).fold(5) {
+    total, num ->
+    total + num * 3
+}
+println(result)
+{% endhighlight %}
+```
+275
+```
+
+## zip 合併
+二種不同的集合，把它們合併變成Pair。
+
+以下有名字的List，年齡的List，透過names.zip(ages)合併後，name變成Key，age變成Value，變成一個Pair物件存在List中，再透過toMap()轉成Map。
+{% highlight kotlin linenos %}
+val names = listOf("Mary", "Bill", "Alex")
+val ages = listOf(10, 20, 30)
+val map = names.zip(ages).toMap()
+println(map["Mary"])
+{% endhighlight %}
+```
+10
+```

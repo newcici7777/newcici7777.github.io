@@ -14,7 +14,8 @@ fun main() {
 {% endhighlight %}
 
 ## filter擴展函式
-filter擴展函式，參數是predicate Lambda，傳回值是List。
+filter擴展函式，參數是predicate Lambda，把新的list作為傳回值傳回。<br>
+filter會建立新的ArrayList<T>()，傳入filterTo函式，再把這個新的List傳回。<br>
 {% highlight kotlin linenos %}
 public inline fun <T> Iterable<T>.filter(predicate: (T) -> Boolean): List<T> {
     return filterTo(ArrayList<T>(), predicate)
@@ -23,6 +24,7 @@ public inline fun <T> Iterable<T>.filter(predicate: (T) -> Boolean): List<T> {
 
 ## filterTo擴展函式
 filterTo用來遍歷所有元素，並把每個元素作為參數，傳入predicate Lambda。<br>
+有符合predicate Lambda條件的元素，才把元素加入要傳回的destination List中。<br>
 {% highlight kotlin linenos %}
 public inline fun <T, C : MutableCollection<in T>> Iterable<T>.filterTo(destination: C, predicate: (T) -> Boolean): C {
 	// 遍歷所有元素
@@ -81,12 +83,16 @@ println(nums)
 ```
 
 ## range與filter
-range遇到filter會轉成list。<br>
+range本身不會產生List，range.filter()，filter本身就會傳回新的List。<br>
 
-以下程式碼是:2到7之間可以被2整除的數。<br>
+以下程式碼是:產生2到7之間可以被2整除的數，傳回List。<br>
+
+`{it % 2 == 0}`這段程式碼是filter predicate Lambda，元素有符合條件，才可以被加入到List中。
 {% highlight kotlin linenos %}
 val range = 2 ..7
 // 參數只有一個，可以省略參數，用it代替參數
+// it代表range中的每一個元素
+// it % 2 == 0 元素可以被2整除，餘數為0，才可以加入List中
 val list = range.filter { it % 2 == 0 }
 println(list)
 {% endhighlight %}
@@ -120,19 +126,20 @@ fun main() {
 [red apple, red fish, red car]
 ```
 
-it是每一個一維的List。<br>
+it是一維的List。<br>
 {% highlight kotlin linenos %}
 it.filter { it.contains("red")
 {% endhighlight %}
 
 可以看成以下這樣的程式碼。<br>
+it換成一維的List。<br>
 {% highlight kotlin linenos %}
 listOf("red apple", "black dog", "red fish").filter {
 	it.contains("red")
 }
 {% endhighlight %}
 
-filter會產生新的List，元素中有red的字串，加到新的list中，把新的list作為傳回值傳回
+元素中有red的字串，符合這個條件，才加到新的list中，filter會傳回新的list。
 {% highlight kotlin linenos %}
 val filterList = listOf("red apple", "black dog", "red fish")
     .filter {
@@ -150,7 +157,7 @@ println(filterList)
 fun main() {
     val nums = listOf(7, 5, 4, 3, 22, 11, 18)
     val prime = nums.filter { number ->
-        (2 until  number).map { number % it }
+        (2 until number).map { number % it }
             .none{ it == 0}
     }
     println(prime)
@@ -160,19 +167,26 @@ fun main() {
 [7, 5, 3, 11]
 ```
 
+### 條件
+符合條件才會加到filter的List中。
+{% highlight kotlin linenos %}
+(2 until number).map { number % it }
+            .none{ it == 0}
+{% endhighlight %}
+
 ### 產生2到(number - 1)的數字
-number為list中的每個元素，產生2到(number - 1)的數字，until是不包含number。<br>
-
-因為質數只能被1與本身整除，先要判斷是不是質數。<br>
-
-假設要判斷8是不是質數，要從2到7(不包含8)的數字中尋找可被整除的數字，若在這個範圍內找到可以整除8的「被除數」，代表8不是質數。<br>
-
-為何範圍是2到7，因為質數只能被1與本身的數字整除，要先排除掉1與本身能整除的數，若在2到7的範圍內，可以被2 .. 7 任何一個數字整除，代表不是質數。<br>
-
-假設number = 8
 {% highlight kotlin linenos %}
 (2 until number)
 {% endhighlight %}
+number為nums中的每個元素，產生2到(number - 1)的數字，until是不包含number。<br>
+
+因為質數只能被1與本身整除，先要判斷是不是質數。<br>
+
+假設number = 8
+
+要判斷8是不是質數，要從2到7(不包含8)的數字中尋找可被整除的數字，若在這個範圍內找到可以整除8的「除數」，代表8不是質數。<br>
+
+為何範圍是2到7，因為質數只能被1與本身的數字整除，要先排除掉1與本身能整除的數，若在2到7的範圍內，可以被2 .. 7 任何一個數字整除，代表不是質數。<br>
 
 ### list存放餘數
 map，會傳回跟原本集合一樣大小的集合。<br>
