@@ -268,26 +268,32 @@ fun main() {
 }
 {% endhighlight %}
 
-## Iterable<T>.擴展函式()
-Iterable是集合，List、Set都是Iterable的子類別，就可以用Iterable<T>.擴展函式()。<br>
+## Int.until
+Int.until是Int的擴展函式，fun前面有infix，代表可以使用空白呼叫。<br>
 
-以下建立取出第1個元素的泛型擴展函式，並讓list與set使用。<br>
+this是呼叫擴展函式的呼叫者，`2.until(7)`，2就是呼叫者，2就是this。<br>
+
+to是參數，7就是to。<br>
+
+to是參數，傳回值類型是IntRange`..`。<br>
+
+傳回值 2 .. 7-1<br>
 {% highlight kotlin linenos %}
-fun <T> Iterable<T>.getFirst(): T {
-    return this.first()
-}
-
-fun main() {
-    val list = listOf<String>("Mary", "Alex", "Bill")
-    val set1: Set<String> = setOf("Alice", "Mary", "Mary", "Alice")
-    println(list.getFirst())
-    println(set1.getFirst())
+public infix fun Int.until(to: Int): IntRange {
+    if (to <= Int.MIN_VALUE) return IntRange.EMPTY
+    return this .. (to - 1).toInt()
 }
 {% endhighlight %}
-```
-Mary
-Alice
-```
+
+原本是
+{% highlight kotlin linenos %}
+2.until(7)
+{% endhighlight %}
+
+infix可以把點`.`變空白
+{% highlight kotlin linenos %}
+2 until 7
+{% endhighlight %}
 
 ## String.count()擴展函式
 String.count()擴展函式是計算字串有幾個字元。

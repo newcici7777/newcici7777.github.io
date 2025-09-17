@@ -146,4 +146,4 @@ mutableMap.remove(key)
 mutableMap.remove("Momo")
 {% endhighlight %}
 
-[1]: {% link _pages/kotlin/exten_func.md %}#toinfix
+[1]: {% link _pages/kotlin/exten_func.md %}#to-infix

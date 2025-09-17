@@ -11,8 +11,8 @@ not in，不在某個範圍內。
 
 ## Range作為變數
 {% highlight kotlin linenos %}
-val charRange = 'a' .. 'z' //全包區間
-val intRange = 1 until 10 //半包區間，不包含10
+val charRange = 'a' .. 'z' //包含a到z
+val intRange = 1 until 10 //1到9，不包含10
 val stepRange = 1 .. 10 step 2
 {% endhighlight %}
 
@@ -40,6 +40,24 @@ println(c !in range1)
 false
 true
 ```
+
+## contans
+{% highlight kotlin linenos %}
+    val range = 2 .. 7
+    println(range.contains(5))
+{% endhighlight %}
+```
+true
+```
+
+## Range開始與結束
+{% highlight kotlin linenos %}
+val range = 2 .. 7
+println(range)          // 輸出: 2..7
+println(range.first)    // 輸出: 2
+println(range.last)     // 輸出: 7
+println(range.step)     // 輸出: 1
+{% endhighlight %}
 
 ## for與in
 ### 全包區間..
@@ -147,3 +165,17 @@ while (a in range) {
 10
 11
 ```
+
+## Range與集合
+有以下二種方法建立集合。
+1. 先建立range變數，再呼叫toList()函式。
+2. (2 .. 7).toList()
+{% highlight kotlin linenos %}
+val range = 2 .. 7
+// 轉成list
+val list = range.toList()
+// 轉成陣列
+val arr = (2 .. 7).toList().toIntArray()
+// set沒有重覆的值
+val set = range.toSet()
+{% endhighlight %}

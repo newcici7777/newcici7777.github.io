@@ -6,8 +6,58 @@ keywords: kotlin, Functional Programming, map, flatmap
 ## Functional Programming
 原本的集合不會動到，複製一份給其它函式去執行，傳回新的結果。
 
+## Iterable<T>.擴展函式()
+Iterable是集合，List、Set都是Iterable的子類別，就可以用Iterable<T>.擴展函式()。<br>
+
+以下建立取出第1個元素的泛型擴展函式，並讓list與set使用。<br>
+{% highlight kotlin linenos %}
+fun <T> Iterable<T>.getFirst(): T {
+    return this.first()
+}
+
+fun main() {
+    val list = listOf<String>("Mary", "Alex", "Bill")
+    val set1: Set<String> = setOf("Alice", "Mary", "Mary", "Alice")
+    println(list.getFirst())
+    println(set1.getFirst())
+}
+{% endhighlight %}
+```
+Mary
+Alice
+```
+
+## Iterable是一個Interface，子類別list、set、map會實作iterator()，可以使用Range與for()迴圈，遍歷每個元素。
+{% highlight kotlin linenos %}
+public interface Iterable<out T> {
+    // Returns an iterator over the elements of this object.
+    public operator fun iterator(): Iterator<T>
+}
+{% endhighlight %}
+
+## IntRange
+IntRage繼承IntProgression，IntProgression實作Iterator，實作hasNext()、nextInt()函式，遍歷每個元素。
+{% highlight kotlin linenos %}
+class IntRange(start: Int, end: Int) : IntProgression(start, end, 1) {
+    override fun iterator(): IntIterator {
+        return object : IntIterator() {
+            private var current = first
+            override fun hasNext(): Boolean = current <= last
+            override fun nextInt(): Int = current++
+        }
+    }
+}
+{% endhighlight %}
+
+{% highlight kotlin linenos %}
+for (i in 2 .. 7) {
+    print("$i ")     // 輸出: 2 3 4 5 6 7
+}
+{% endhighlight %}
+
 ## Iterable<T>.map()擴展函式
-擴展函式程式碼如下:
+Iterable<T>.map()擴展函式，會傳回跟原本集合「一樣大小」的List。<br>
+擴展函式程式碼如下:<br>
 {% highlight kotlin linenos %}
 public inline fun <T, R> Iterable<T>.map(transform: (T) -> R): List<R> {
     return mapTo(ArrayList<R>(collectionSizeOrDefault(10)), transform)
@@ -15,7 +65,6 @@ public inline fun <T, R> Iterable<T>.map(transform: (T) -> R): List<R> {
 {% endhighlight %}
 
 ### 集合元素字串長度
-Iterable<T>.map()集合擴展函式map，會傳回跟原本集合一樣大小的集合。<br>
 以下程式碼會傳回list元素的長度，傳回新的list，不會修改到原本的list。<br>
 it代表每個集合元素。<br>
 {% highlight kotlin linenos %}
@@ -45,8 +94,73 @@ fun main() {
 ```
 
 ## flatMap
-flat是平的意思。<br>
-以下是二維陣列，把二維陣列變成一維陣列，使用flatMap。<br>
+flatMap主要是把二維List變成一維List。<br>
+以下是二維List。<br>
+{% highlight kotlin linenos %}
+val list2d = listOf(listOf(1,2,3), listOf(4,5,6))
+{% endhighlight %}
+
+flatMap擴展函式，傳入一個空的ArrayList到flatMapTo()函式。
+{% highlight kotlin linenos %}
+public inline fun <T, R> Iterable<T>.flatMap(transform: (T) -> Iterable<R>): List<R> {
+    return flatMapTo(ArrayList<R>(), transform)
+}
+{% endhighlight %}
+
+實際真正做事的擴展函式是以下這個。<br>
+this是二維List，二維List每個元素都是一維陣列，使用for遍歷二維List，element就是一維陣列。
+{% highlight kotlin linenos %}
+public inline fun <T, R, C : MutableCollection<in R>> Iterable<T>.flatMapTo(destination: C, transform: (T) -> Iterable<R>): C {
+    for (element in this) {
+        val list = transform(element)
+        destination.addAll(list)
+    }
+    return destination
+}
+{% endhighlight %}
+
+二維List
+{% highlight kotlin linenos %}
+val list2d = listOf(listOf(1,2,3), listOf(4,5,6))
+{% endhighlight %}
+
+第1次循環的element是
+{% highlight kotlin linenos %}
+listOf(1,2,3)
+{% endhighlight %}
+
+第2次循環的element是
+{% highlight kotlin linenos %}
+listOf(4,5,6)
+{% endhighlight %}
+
+把每一個元素(一維List)，加入到新的ArrayList中。
+{% highlight kotlin linenos %}
+destination.addAll(list)
+{% endhighlight %}
+
+### transform Lambda
+每個一維List，傳入transform Lambda。<br>
+{% highlight kotlin linenos %}
+val list = transform(element)
+{% endhighlight %}
+
+transform類型: (T) -> Iterable<R>，傳入參數為一維List，傳回值是Iterable介面，只要繼承Iterable的子類都可以作為傳回值。<br>
+
+以下Lambda{}，參數是一維的list，傳回值也是一維的list。<br>
+list也是Iterable的子類。<br>
+{% highlight kotlin linenos %}
+val list2d = listOf(listOf(1,2,3), listOf(4,5,6))
+val list = list2d.flatMap { innerList -> innerList }
+{% endhighlight %}
+
+因為參數只有一個，可以用it來取代，it就是一維的list，傳回一維的list。<br>
+{% highlight kotlin linenos %}
+val list2d = listOf(listOf(1,2,3), listOf(4,5,6))
+val list = list2d.flatMap { it }
+{% endhighlight %}
+
+完整程式碼:把二維List變成一維List
 {% highlight kotlin linenos %}
 fun main() {
     val list = listOf(
@@ -59,152 +173,3 @@ fun main() {
 [1, 2, 3, 4, 5, 6]
 ```
 
-## filter篩選
-it是list的元素，元素中有a的字母，加到新的list中，把新的list作為傳回值傳回。<br>
-{% highlight kotlin linenos %}
-fun main() {
-    val list = listOf<String>("Mary", "Bill", "Alex", "Ben")
-        .filter { it.contains("a") }
-    println(list)
-}
-{% endhighlight %}
-
-### filter擴展函式
-filter擴展函式，參數是predicate Lambda，傳回值是List。
-{% highlight kotlin linenos %}
-public inline fun <T> Iterable<T>.filter(predicate: (T) -> Boolean): List<T> {
-    return filterTo(ArrayList<T>(), predicate)
-}
-{% endhighlight %}
-
-### filterTo擴展函式
-{% highlight kotlin linenos %}
-public inline fun <T, C : MutableCollection<in T>> Iterable<T>.filterTo(destination: C, predicate: (T) -> Boolean): C {
-	// 遍歷所有元素
-    for (element in this) {
-        // 若為true
-        if (predicate(element)) 
-            // element 加入 destination List
-            destination.add(element)
-    }
-    return destination
-}
-{% endhighlight %}
-
-重要的是下面這段程式
-{% highlight kotlin linenos %}
-// 遍歷所有元素
-for (element in this) {
-    // 若為true
-    if (predicate(element)) 
-        // element 加入 destination List
-        destination.add(element)
-}
-{% endhighlight %}
-
-### predicate Lambda
-predicate Lambda會傳回true或false，若為true就加到傳回值List中。<br>
-{% highlight kotlin linenos %}
-predicate: (T) -> Boolean
-{% endhighlight %}
-
-number為每個元素的參數，因為參數只有一個，可以省略，用it代替number。<br>
-{% highlight kotlin linenos %}
-val nums = listOf(7, 5, 4, 3, 22, 11, 18)
-    .filter { number ->
-        true
-    }
-println(nums)
-{% endhighlight %}
-```
-[7, 5, 4, 3, 22, 11, 18]
-```
-
-若為false，就沒有任何元素加入List。<br>
-{% highlight kotlin linenos %}
-val nums = listOf(7, 5, 4, 3, 22, 11, 18)
-    .filter { number ->
-        false
-    }
-println(nums)
-{% endhighlight %}
-```
-[]
-```
-
-### 傳回二維陣列中有red的元素
-以下是二維陣列，傳回一維陣列，若元素有包含red，把它加入到陣列中。<br>
-{% highlight kotlin linenos %}
-fun main() {
-    val list = listOf(
-        listOf("red apple", "black dog", "red fish"),
-        listOf("yellow car", "blue sky", "blue car"))
-        .flatMap { it.filter { it.contains("red") } }
-    println(list)
-}
-{% endhighlight %}
-```
-[red apple, red fish]
-```
-
-### 質數
-質數只能被1與自己整除。<br>
-{% highlight kotlin linenos %}
-fun main() {
-    val nums = listOf(7, 5, 4, 3, 22, 11, 18)
-    val prime = nums.filter { number ->
-        (2 until  number).map { number % it }
-            .none{ it == 0}
-    }
-    println(prime)
-}
-{% endhighlight %}
-```
-[7, 5, 3, 11]
-```
-
-#### 產生2到(number - 1)的數字
-number為list中的每個元素，產生2到(number - 1)的數字，until是不包含number。<br>
-因為質數只能被1與本身整除，所以要從2到(本身 - 1)的數字中尋找可被整除的數字。<br>
-
-{% highlight kotlin linenos %}
-(2 until number)
-{% endhighlight %}
-
-#### list存放餘數
-map，會傳回跟原本集合一樣大小的集合。<br>
-it為2到(number - 1)的數字，number是nums list的元素，別搞錯。<br>
-例:number 為 7<br>
-7 % 2 = 1 <br>
-7 % 3 = 1 <br>
-7 % 4 = 3 <br>
-7 % 5 = 2 <br>
-7 % 6 = 1 <br>
-map傳回新的list，把以上的餘數都放入list中。<br>
-{% highlight kotlin linenos %}
-(2 until number).map { number % it}
-{% endhighlight %}
-
-#### none
-擴展函式
-{% highlight kotlin linenos %}
-public inline fun <T> Iterable<T>.none(predicate: (T) -> Boolean): Boolean {
-    if (this is Collection && isEmpty()) return true
-    for (element in this) if (predicate(element)) return false
-    return true
-}
-{% endhighlight %}
-
-重點在以下這個程式碼，若predicate Lambda傳回值為true，就返回false。<br>
-{% highlight kotlin linenos %}
-if (predicate(element)) return false
-{% endhighlight %}
-
-若list中有餘數是0，代表可以被整除，Lambda傳回值為true，none()就返回false。<br>
-{% highlight kotlin linenos %}
-.none{ it == 0}
-{% endhighlight %}
-
-#### filter過濾false的元素
-predicate Lambda會傳回true或false，若為true就加到傳回值List中。<br>
-若為false，就不加入傳回值List中。<br>
