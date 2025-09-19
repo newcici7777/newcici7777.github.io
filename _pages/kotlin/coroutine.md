@@ -185,28 +185,6 @@ await()放在async{}後面，會導致doOne()執行完畢，doTwo()才能執行�
 result = 30
 total in 2024 ms
 ```
-### launch async父類別
-launch繼承Job
-{% highlight kotlin linenos %}
-public fun CoroutineScope.launch(
-    context: CoroutineContext = EmptyCoroutineContext,
-    start: CoroutineStart = CoroutineStart.DEFAULT,
-    block: suspend CoroutineScope.() -> Unit
-): Job 
-{% endhighlight %}
-
-async繼承Deferred，Deferred繼承Job，所以async父類別也是job。
-{% highlight kotlin linenos %}
-public fun <T> CoroutineScope.async(
-    context: CoroutineContext = EmptyCoroutineContext,
-    start: CoroutineStart = CoroutineStart.DEFAULT,
-    block: suspend CoroutineScope.() -> T
-): Deferred<T> 
-{% endhighlight %}
-
-{% highlight kotlin linenos %}
-public interface Deferred<out T> : Job
-{% endhighlight %}
 
 ## 協程取消與啟動模式
 啟動模式，也就是下面的start參數，async()與launch()都有start<br>
@@ -359,7 +337,7 @@ UNDISPATCHED會立刻建立協程，並立刻執行。<br>
 
 ### coroutineScope 非阻塞協程
 以下程式碼，二個suspend函式同時執行。<br>
-會等待子協程(suspend 函式)，執行完畢。<br>
+coroutineScope會等待子協程(suspend 函式)，執行完畢。<br>
 {% highlight kotlin linenos %}
   fun coroutin05() = runTest {
     val startTime = System.currentTimeMillis()
@@ -377,7 +355,7 @@ UNDISPATCHED會立刻建立協程，並立刻執行。<br>
 ### runBlocking 阻塞協程
 以下程式碼，二個suspend函式逐一執行，doOne()執行完，才輪到doTwo執行()。<br>
 所以共執行約2秒鐘左右。<br>
-會等待子協程(suspend 函式)，執行完畢。<br>
+runBlocking會等待子協程(suspend 函式)，執行完畢。<br>
 {% highlight kotlin linenos %}
   fun coroutin05() = runTest {
     val startTime = System.currentTimeMillis()
@@ -443,10 +421,183 @@ job1 finish
 ```
 
 ## Job
-launch()與async()，會產生Job物件，管理協程的生命周期。<br>
+launch()與async()，傳回值是Job物件，Job物件管理協程的生命周期。<br>
 
+### launch
+傳回值是Job。
+{% highlight kotlin linenos %}
+public fun CoroutineScope.launch(
+    context: CoroutineContext = EmptyCoroutineContext,
+    start: CoroutineStart = CoroutineStart.DEFAULT,
+    block: suspend CoroutineScope.() -> Unit
+): Job 
+{% endhighlight %}
+
+### async
+async傳回值是Deferred。
+{% highlight kotlin linenos %}
+public fun <T> CoroutineScope.async(
+    context: CoroutineContext = EmptyCoroutineContext,
+    start: CoroutineStart = CoroutineStart.DEFAULT,
+    block: suspend CoroutineScope.() -> T
+): Deferred<T> 
+{% endhighlight %}
+
+Deferred繼承Job，所以Deferred也是job。
+{% highlight kotlin linenos %}
+public interface Deferred<out T> : Job
+{% endhighlight %}
+
+### Job生命周期
 Job的狀態有New(建立)、Active、Completing(正要完成中)、Completed(已完成)、Cancelling(取消中)、Cancelled(已取消)。<br>
 
 job的對映屬性是:isActive、isCancelled、isCompleted。<br>
 
-### 丟出exception()與cancel()
+## 自建協程Scope
+以下自建協程Scope，調度器設為預設Dispatchers.Default。<br>
+使用<span class="markline">scope.</span>launch{}，使用的是自己建立的協程Scope。<br>
+
+{% highlight kotlin linenos %}
+  fun coroutin07() = runBlocking {
+    val scope = CoroutineScope(Dispatchers.Default)
+    scope.launch {
+      delay(1000)
+      println("job1")
+    }
+  }
+{% endhighlight %}
+
+但執行完卻沒有任何結果，這是為什麼？<br>
+主協程是runBlocking，自己建立的協程Scope跟主協程runBlocking的Scope，不相同，所以主協程執行完畢就結束，所以不會印出scope.launch{}的結果。<br>
+
+### 增加一個delay(大於1000)
+delay()參數要大於1000，等到協程scope執行完畢，主協程才能結束。<br>
+
+{% highlight kotlin linenos %}
+  fun coroutin07() = runBlocking {
+    val scope = CoroutineScope(Dispatchers.Default)
+    scope.launch {
+      delay(1000)
+      println("job1")
+    }
+    delay(2000)
+  }
+{% endhighlight %}
+```
+job1
+```
+
+### join
+協程Scope，使用傳回值Job，join到主協程，主協程就會等待自建的協程Scop。
+{% highlight kotlin linenos %}
+  fun coroutin07() = runBlocking {
+    val scope = CoroutineScope(Dispatchers.Default)
+    val job = scope.launch {
+      delay(1000)
+      println("job1")
+    }
+    job.join()
+  }
+{% endhighlight %}
+```
+job1
+```
+
+### GlobalScope
+GlobalScope也是自建的Scope，必須加上join，runBlocking才會等待GlobalScope執行完畢。
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutin08() = runBlocking {
+    val job = GlobalScope.launch {
+      delay(1000)
+      println("job1")
+    }
+    job.join()
+  }
+{% endhighlight %}
+
+## join 與 cancel
+以下的程式碼cancel()不會立刻馬上取消，而join會轉變成「等待」協程「cancel()取消完成」，確保job協程「執行完畢」。<br>
+{% highlight kotlin linenos %}
+  fun coroutin08() = runBlocking {
+    val job = GlobalScope.launch {
+        delay(1000)
+        println("job1")
+    }
+    // 暫停0.1秒
+    delay(100)
+    // 取消協程
+    job.cancel()
+    // 此時變成主協程等待job完成取消流程
+    job.join()
+  }
+{% endhighlight %}
+
+如果只有cancel，協程正在清理資料，但主協程執行完了，就退出了。
+```
+job.cancel()
+```
+
+如果只有join，此時協程卡住，將會永遠停止。
+```
+job.join()
+```
+
+需要二者一起搭配。
+{% highlight kotlin linenos %}
+    // 取消協程
+    job.cancel()
+    // 此時變成主協程等待job完成取消流程
+    job.join()
+{% endhighlight %}
+
+也可以使用cancelAndJoin()取代。
+{% highlight kotlin linenos %}
+job.cancelAndJoin()
+{% endhighlight %}
+
+### delay()取消流程
+因為 delay() 是一個可取消的掛起函數，當協程被取消時：
+
+1. delay() 會拋出 CancellationException
+2. 協程進入異常處理流程 (catch 區塊)
+3. 協程正常結束
+
+### exception
+取消協程不會「顯示」任何exception，但實際上會拋出CancellationException。
+{% highlight kotlin linenos %}
+  fun coroutin08() = runBlocking {
+    val job = GlobalScope.launch {
+        delay(1000)
+        println("job1")
+    }
+    // 暫停0.1秒
+    delay(100)
+    // 取消協程
+    job.cancel()
+    // 此時變成「等待」等待它完成取消流程
+    job.join()
+  }
+{% endhighlight %}
+
+加上try{}... catch{}就可以抓出CancellationException。<br>
+而join已經變成「等待
+{% highlight kotlin linenos %}
+  fun coroutin08() = runBlocking {
+    val job = GlobalScope.launch {
+      try {
+        delay(1000)
+        println("job1")
+      }catch (e:Exception) {
+        e.printStackTrace()
+      }
+    }
+    delay(100)
+    job.cancel(CancellationException("自訂取消Exception"))
+    job.join()
+  }
+{% endhighlight %}
+```
+java.util.concurrent.CancellationException: 自訂取消Exception
+  at com.example.coroutine.Test01$coroutin08$1.invokeSuspend(Test01.kt:105)
+```
