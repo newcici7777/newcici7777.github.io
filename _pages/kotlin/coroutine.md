@@ -3,7 +3,14 @@ title: 協程
 date: 2025-09-19
 keywords: kotlin, launch, async
 ---
-## runBlocking launch async
+## launch async
+### 主協程 父協程
+等號右邊=runBlocking，代表runBlocking是主協程。
+{% highlight kotlin linenos %}
+  fun coroutin01() = runBlocking {}
+{% endhighlight %}
+
+### 子協程
 runBlocking是主協程，裡面包含了job1與job2二個子協程。<br>
 runBlocking會等待job1與job2執行完畢。<br>
 launch、async都是同時執行，job2不用等待job1執行完畢才執行。<br>
@@ -334,3 +341,112 @@ suspend resume thread = DefaultDispatcher-worker-1 @coroutine#
 ### 執行
 DEFAULT、ATOMIC、LAZY，執行到子協程不會立刻執行，只會先開始建立。<br>
 UNDISPATCHED會立刻建立協程，並立刻執行。<br>
+
+## coroutineScope 與 runBlocking 
+2個suspend函式:
+{% highlight kotlin linenos %}
+  private suspend fun doOne():Int {
+    // 1秒
+    delay(1000)
+    return 10
+  }
+  private suspend fun doTwo():Int {
+    // 2秒
+    delay(1000)
+    return 20
+  }
+{% endhighlight %}
+
+### coroutineScope 非阻塞協程
+以下程式碼，二個suspend函式同時執行。<br>
+會等待子協程(suspend 函式)，執行完畢。<br>
+{% highlight kotlin linenos %}
+  fun coroutin05() = runTest {
+    val startTime = System.currentTimeMillis()
+    coroutineScope {
+        val one = doOne()
+        val two = doTwo()
+    }
+    val duration = System.currentTimeMillis() - startTime
+    println(" in ${duration} ms")
+  }
+{% endhighlight %}
+```
+ in 2 ms
+```
+### runBlocking 阻塞協程
+以下程式碼，二個suspend函式逐一執行，doOne()執行完，才輪到doTwo執行()。<br>
+所以共執行約2秒鐘左右。<br>
+會等待子協程(suspend 函式)，執行完畢。<br>
+{% highlight kotlin linenos %}
+  fun coroutin05() = runTest {
+    val startTime = System.currentTimeMillis()
+    runBlocking {
+        val one = doOne()
+        val two = doTwo()
+    }
+    val duration = System.currentTimeMillis() - startTime
+    println(" in ${duration} ms")
+  }
+{% endhighlight %}
+```
+ in 2009 ms
+```
+
+## 子協程失敗
+- coroutinScope 子協程失敗，其它子協程會取消
+- supervisorScope 子協程失敗，不會影嚮其它子協程
+
+### coroutineScope
+job2 拋出Exception()，導致job1被cancel()，不會執行job1 finish。
+{% highlight kotlin linenos %}
+  fun coroutin06() = runTest {
+    coroutineScope {
+      val job1 = launch {
+        delay(400)
+        println("job1 finish")
+      }
+      val job2 = async{
+        delay(200)
+        println("job2 finish")
+        throw IllegalArgumentException()
+      }
+    }
+  }
+{% endhighlight %}
+```
+job2 finish
+
+java.lang.IllegalArgumentException
+  at com.example.coroutine.Test01$coroutin06$1$1$job2$1.invokeSuspen
+```
+### supervisorScope
+job2 拋出Exception()，job1仍會執行完畢。
+{% highlight kotlin linenos %}
+  fun coroutin06() = runTest {
+    supervisorScope {
+      val job1 = launch {
+        delay(400)
+        println("job1 finish")
+      }
+      val job2 = async{
+        delay(200)
+        println("job2 finish")
+        throw IllegalArgumentException()
+      }
+    }
+  }
+{% endhighlight %}
+```
+job2 finish
+job1 finish
+```
+
+## Job
+launch()與async()，會產生Job物件，管理協程的生命周期。<br>
+
+Job的狀態有New(建立)、Active、Completing(正要完成中)、Completed(已完成)、Cancelling(取消中)、Cancelled(已取消)。<br>
+
+job的對映屬性是:isActive、isCancelled、isCompleted。<br>
+
+### 丟出exception()與cancel()
