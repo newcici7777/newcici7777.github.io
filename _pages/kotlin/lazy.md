@@ -34,5 +34,9 @@ fun main() {
     println(test.info)
 }
 {% endhighlight %}
+```
+load setting
+infomation
+```
 
 [1]: {% link _pages/java/static_inner.md %}#使用到靜態內部類別才會被建立
