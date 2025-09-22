@@ -453,9 +453,9 @@ Job的狀態有New(建立)、Active、Completing(正要完成中)、Completed(�
 
 job的對映屬性是:isActive、isCancelled、isCompleted。<br>
 
-## 自建協程Scope
-以下自建協程Scope，調度器設為預設Dispatchers.Default。<br>
-使用<span class="markline">scope.</span>launch{}，使用的是自己建立的協程Scope。<br>
+## Scope協程
+以下自建Scope協程，調度器設為預設Dispatchers.Default。<br>
+使用<span class="markline">scope.</span>launch{}，使用的是自建Scope協程。<br>
 
 {% highlight kotlin linenos %}
   fun coroutin07() = runBlocking {
@@ -468,10 +468,11 @@ job的對映屬性是:isActive、isCancelled、isCompleted。<br>
 {% endhighlight %}
 
 但執行完卻沒有任何結果，這是為什麼？<br>
-主協程是runBlocking，自己建立的協程Scope跟主協程runBlocking的Scope，不相同，所以主協程執行完畢就結束，所以不會印出scope.launch{}的結果。<br>
+runBlocking協程與Scope協程，沒有父子關係，所以runBlocking協程執行完畢就結束，<span class="markline">不會等待</span>scope.launch{}協程執行完，才結束。<br>
 
-### 增加一個delay(大於1000)
-delay()參數要大於1000，等到協程scope執行完畢，主協程才能結束。<br>
+### delay
+增加一個delay(大於1000)
+delay()參數要大於1000，等到scope執行完畢，runBlocking協程才能結束。<br>
 
 {% highlight kotlin linenos %}
   fun coroutin07() = runBlocking {
@@ -488,7 +489,7 @@ job1
 ```
 
 ### join
-協程Scope，使用傳回值Job，join到主協程，主協程就會等待自建的協程Scop。
+runBlocking協程「等待」scope.job完成，runBlocking才能結束。
 {% highlight kotlin linenos %}
   fun coroutin07() = runBlocking {
     val scope = CoroutineScope(Dispatchers.Default)
@@ -536,11 +537,6 @@ GlobalScope也是自建的Scope，必須加上join，runBlocking才會等待Glob
 如果只有cancel，協程正在清理資料，但主協程執行完了，就退出了。
 ```
 job.cancel()
-```
-
-如果只有join，此時協程卡住，將會永遠停止。
-```
-job.join()
 ```
 
 需要二者一起搭配。
