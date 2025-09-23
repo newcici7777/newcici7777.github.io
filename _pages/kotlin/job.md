@@ -3,12 +3,25 @@ title: Job
 date: 2025-09-19
 keywords: kotlin, job
 ---
+Prerequisites:
+
+- [runTest runBlocking][1]
+
 中文為工作、任務。<br>
 
 ## Job 生命周期
 Job的狀態有New(建立)、Active、Completing(正要完成中)、Completed(已完成)、Cancelling(取消中)、Cancelled(已取消)。<br>
 
-job的對映屬性是:isActive、isCancelled、isCompleted。<br>
+### Job生命周期圖
+1. New 建立: Job建立。
+2. Active 運行中: Job.start()啟動。
+3. child子協程加入job並啟動。
+4. Completing 完成中: child.join()等待子協程完成。
+5. Completed 已完成: Job與child子協程都執行完畢。
+
+![img]({{site.imgurl}}/kotlin/job_lifecycle.png)<br>
+
+生命周期屬性是:isActive(是否執行中)、isCancelled(是否取消)、isCompleted(是否完成)。<br>
 
 ### 建立空的Job
 {% highlight kotlin linenos %}
@@ -17,7 +30,7 @@ val job = Job()
 
 ### 啟動Job
 {% highlight kotlin linenos %}
- @Test
+@Test
 fun coroutin10() = runTest {
   // New
   val job = Job()
@@ -59,8 +72,11 @@ public fun CoroutineScope.launch(
 }
 {% endhighlight %}
 
-### runTest {}等待協程執行完畢
-join()代表等待，runTest{}是一個協程，裡面有一個協程child在執行，注意child的爸爸是Job，不是runTest，runTest與Job二者是不相同，runTest與child沒有父子關係，純粹就是<span class="markline">等待協程執行完畢</span>。
+### runTest 等待協程執行完畢
+join()代表等待，runTest{}是一個協程，裡面有一個協程child在執行，注意child的爸爸是Job，不是runTest，runTest與Job二者是不相同，runTest與child沒有父子關係，純粹就是<span class="markline">等待協程執行完畢</span>。<br>
+
+![img]({{site.imgurl}}/kotlin/job_extend1.png)<br>
+
 ```
 fun coroutin10() = runTest {
   .
@@ -159,15 +175,6 @@ After complete job isActive = false
 After complete job isCompleted= true
 ```
 
-### Job生命周期圖
-1. New 建立: Job建立。
-2. Active 運行中: Job.start()啟動。
-3. child子協程加入job並啟動。
-4. Completing 完成中: child.join()等待子協程完成。
-5. Completed 已完成: Job與child子協程都執行完畢。
-
-![img]({{site.imgurl}}/kotlin/job_lifecycle.png)<br>
-
 ## Job父子關係
 ### coroutineContext
 以下二種方法都是取得目前的Job物件，Job物件為launch{}的傳回值。
@@ -176,13 +183,16 @@ coroutineContext.job
 coroutineContext[Job]
 {% endhighlight %}
 
-下圖中，綠色的Job物件為runTest{}的傳回值coroutin11。<br>
+下圖中，綠色的Job物件為runTest{}的傳回值為TestScope，詳細內容請見[runTest][1]文章。<br>
 紅色的Job物件為launch{}的傳回值child。<br>
 ![img]({{site.imgurl}}/kotlin/get_job.png)<br>
 
 執行結果可以知道job的父親是null，child的父親是job。<br>
-而runTest傳回的是TestScope作用域。<br>
-child與job的父親都不是TestScope，都是分開來。<br>
+
+![img]({{site.imgurl}}/kotlin/job_extend1.png)<br>
+
+而runTest傳回的是TestScope。<br>
+child的祖父不是TestScope，都是分開來。<br>
 {% highlight kotlin linenos %}
   fun coroutin11() = runTest {
     println("runTest = ${coroutineContext[Job]}")
@@ -212,6 +222,14 @@ child = "coroutine#3":StandaloneCoroutine{Active}@2a62b5bc
 inner child = "coroutine#3":StandaloneCoroutine{Active}@2a62b5bc
 inner child = "coroutine#3":StandaloneCoroutine{Active}@2a62b5bc
 ```
+
+#### isActive isCompleted isCancelled
+coroutineContext.job有isActive、isCompleted、isCancelled屬性。
+{% highlight kotlin linenos %}
+    println("isActive: ${coroutineContext.job.isActive}")
+    println("isCompleted: ${coroutineContext.job.isCompleted}")
+    println("isCancelled: ${coroutineContext.job.isCancelled}")
+{% endhighlight %}
 
 ### Job中的協程數量
 取得Job中尚未完成子協程數量。<br>
@@ -259,8 +277,115 @@ childJob isActive = false
 childJob isCompleted = true
 ```
 
+## Job管理生命周期
+runTest對listof的物件，會自動start()。<br>
+runBlocking對listof的物件，不會自動start()。<br>
+本例使用runBlocking。<br>
+
+### 啟動所有子協程
+job是所有list中的子協程的父親，job.start()，所有子協程全啟動。<br>
+使用it.join()讓runTest協程等待所有協程執行完畢。<br>
+注意！runTest不是list中子協程的父親，runTest只負責「等待」別的協程執行完畢。<br>
+{% highlight kotlin linenos %}
+  fun coroutin13() = runBlocking {
+    val job = Job()
+    val list = listOf(
+      launch(job) {
+        delay(1000)
+        println("list[0] finish")
+      },
+      launch(job) {
+        delay(2000)
+        println("list[1] finish")
+      })
+    
+    job.start()
+    list.forEach { it.join() }
+    println("all children finish.")
+  }
+{% endhighlight %}
+```
+list[0] finish
+list[1] finish
+all children finish.
+```
+### 取消所有子協程
+以下只會執行list[0]的job，因為運行1.1秒後，所有子協程全被取消。<br>
+cancel()是取消協程。<br>
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutin14() = runBlocking {
+    val job = Job()
+    val list = listOf(
+      launch(job) {
+        delay(1000)
+        println("list[0] finish")
+      },
+      launch(job) {
+        delay(2000)
+        println("list[1] finish")
+      })
+    job.start()
+    // 1.1秒後，取消所有子協程
+    delay(1100)
+    job.cancel()
+    list.forEach { it.join() }
+    println("all children finish.")
+  }
+{% endhighlight %}
+```
+list[0] finish
+all children finish.
+````
+
+### isActive判斷子協程是否被取消
+isActive會傳回協程是否正在運行中。<br>
+若協程被取消，會傳回false。<br>
+以下程式3秒後，取消父親為job的所有子協程。<br>
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutin16() = runBlocking {
+    val job = Job()
+    val list = listOf(
+      launch(job) {
+        // isActive會傳回協程是否正在運行中
+        while (isActive) {
+          println("list[0] runing")
+          // 暫停1秒
+          delay(1000)
+        }
+      },
+      launch(job) {
+        // isActive會傳回協程是否正在運行中
+        while (isActive) {
+          println("list[1] runing")
+          // 暫停1秒
+          delay(1000)
+        }
+      })
+    job.start()
+    // 3秒後，取消父親為job的所有子協程。
+    delay(3000)
+    job.cancel()
+    list.forEach { it.join() }
+    println("子協程全被取消")
+  }
+{% endhighlight %}
+```
+list[0] runing
+list[1] runing
+list[0] runing
+list[1] runing
+list[0] runing
+list[1] runing
+子協程全被取消
+```
+
 ## 未指派父親Job
 等號右邊 = runTest，launch{}沒給任何job父親參數，預設runTest為job1的父協程。<br>
+
+![img]({{site.imgurl}}/kotlin/job_extend2.png)<br>
+
 因為runTest是父協程，父協程會自動<span class="markline">等待</span>子協程job1執行完畢，不用加上job1.join()，因為二者是父子關係。
 {% highlight kotlin linenos %}
 fun coroutin01() = runTest {
@@ -270,4 +395,39 @@ fun coroutin01() = runTest {
   }
 }
 {% endhighlight %}
+```
+job1 finished
+```
 
+## this
+如果只用this會混淆這個this物件是誰，可以使用`@`標籤名，來取別這個this是誰。<br>
+
+可以使用以下方法，印出物件的類別。
+```
+this@launch::class.simpleName
+```
+{% highlight kotlin linenos %}
+@Test
+fun coroutin12() = runTest {
+  println("outside this = $this")
+  val job = Job()
+  val child = launch(job) {
+    println("inner this = $this")
+    println("launch this = ${this@launch}")
+    println("runTest this = ${this@runTest}")
+    println("launch class = ${this@launch::class.simpleName}")
+    println("runTest class = ${this@runTest::class.simpleName}")
+  }
+  child.join()
+}
+{% endhighlight %}
+```
+outside this = TestScope[test started]
+inner this = "coroutine#3":StandaloneCoroutine{Active}@648c94da
+launch this = "coroutine#3":StandaloneCoroutine{Active}@648c94da
+runTest this = TestScope[test started]
+launch class = StandaloneCoroutine
+runTest class = TestScopeImpl
+```
+
+[1]: {% link _pages/kotlin/runtest.md %}
