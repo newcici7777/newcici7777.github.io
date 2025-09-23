@@ -3,8 +3,231 @@ title: 協程作用域
 date: 2025-09-22
 keywords: kotlin, coroutine scope
 ---
-## coroutineScope 與 runBlocking 
-2個suspend函式:
+## Scope獨立作用域
+### CoroutineScope
+建立一個獨立CoroutineScope作用域，runTest的作用域為TestScope。<br>
+
+CoroutineScope下面有一個子協程，名字為job1。<br>
+
+![img]({{site.imgurl}}/kotlin/scope_extend1.png)<br>
+
+調度器設為預設Dispatchers.Default。<br>
+
+使用<span class="markline">scope.</span>launch{}，建立子協程並啟動子協程。<br>
+{% highlight kotlin linenos %}
+@Test
+fun coroutin07() = runTest {
+  val scope = CoroutineScope(Dispatchers.Default)
+  val job1 = scope.launch {
+    delay(1000)
+    println("job1")
+  }
+}
+{% endhighlight %}
+
+但執行完卻沒有任何結果，這是為什麼？<br>
+runBlocking協程與作用域協程，沒有父子關係，所以runBlocking協程執行完畢就結束，<span class="markline">不會等待</span>CoroutineScope下的job1子協程執行完。<br>
+
+#### delay暫停
+增加一個delay(大於1000)，因為CoroutineScope下的子協程執行時為1秒，要讓TestScope(runTest)暫停超過1秒，再結束runTest協程。<br>
+
+delay()參數要大於1000，等到scope執行完畢，runTest協程才能結束。<br>
+
+{% highlight kotlin linenos %}
+  fun coroutin07() = runTest {
+    val scope = CoroutineScope(Dispatchers.Default)
+    scope.launch {
+      delay(1000)
+      println("job1")
+    }
+    delay(2000)
+  }
+{% endhighlight %}
+```
+job1
+```
+
+#### join 等待
+runTest協程「等待」scope.job完成，runTest才能結束。
+{% highlight kotlin linenos %}
+fun coroutin07() = runTest {
+  val scope = CoroutineScope(Dispatchers.Default)
+  val job = scope.launch {
+    delay(1000)
+    println("job1")
+  }
+  job.join()
+}
+{% endhighlight %}
+```
+job1
+```
+
+### GlobalScope
+GlobalScope也是獨立作用域，加上join，runTest才會等待GlobalScope執行完畢。
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutin08() = runTest {
+    val job = GlobalScope.launch {
+      delay(1000)
+      println("job1")
+    }
+    job.join()
+  }
+{% endhighlight %}
+```
+job1
+```
+
+## Scope cancel
+下面的程式碼是，GlobalScope獨立作用域的取消。<br>
+取消協程不會「顯示」任何exception，但實際上會拋出CancellationException。<br>
+
+### 取消作用域Scope
+作用域scope.cancel()，會直接把相同作用域的協程取消。<br>
+{% highlight kotlin linenos %}
+@Test
+fun coroutin19() = runTest {
+  val scope = CoroutineScope(Dispatchers.Default)
+  val job1 = scope.launch {
+    delay(1000)
+    println("job1 finish")
+  }
+  val job2 = scope.launch {
+    delay(1000)
+    println("job2 finish")
+  }
+  delay(500)
+  scope.cancel()
+  job1.join()
+  job2.join()
+}
+{% endhighlight %}
+
+### 取消子協程
+以下job2仍會執行，因為只有取消job1。
+{% highlight kotlin linenos %}
+@Test
+fun coroutin19() = runTest {
+  val scope = CoroutineScope(Dispatchers.Default)
+  val job1 = scope.launch {
+    delay(1000)
+    println("job1 finish")
+  }
+  val job2 = scope.launch {
+    delay(1000)
+    println("job2 finish")
+  }
+  delay(500)
+  // 只有取消job1
+  job1.cancel()
+  job1.join()
+  job2.join()
+}
+{% endhighlight %}
+```
+job2 finish
+```
+
+cancel()取消時會有CancellationException，但不會在終端機輸出，因為對kotlin來說，這是正常的Exception。<br>
+
+加上try{}... catch{}就可以抓出CancellationException。<br>
+
+join變成<span class="markline">等待取消</span>。<br>
+{% highlight kotlin linenos %}
+  fun coroutin08() = runTest {
+    val job1 = GlobalScope.launch {
+      try {
+        delay(1000)
+        println("job1")
+      }catch (e: Exception) {
+        e.printStackTrace()
+      }
+    }
+    delay(100)
+    job1.cancel(CancellationException("自訂取消Exception"))
+    job1.join()
+  }
+{% endhighlight %}
+```
+java.util.concurrent.CancellationException: 自訂取消Exception
+  at com.example.coroutine.Test01$coroutin08$1.invokeSuspend(Test01.kt:105)
+```
+
+## Scope獨立作用域與沒有獨立作用域
+
+|特性 |沒有 Scope (launch{}) |有 Scope (scope.launch{})|
+|父子關係| 與 runTest 是父子|與 runTest 無父子關係|
+|join| 自動join()|手動join()|
+|取消傳播| 自動傳播 |不會自動傳播|
+|異常處理|自動傳播異常|獨立異常處理|
+|調度器|繼承父協程|使用自定義調度器|
+
+join
+{% highlight kotlin linenos %}
+// 沒有 Scope - 自動join
+fun example1() = runTest {
+    launch {
+        delay(1000)
+        println("一定會執行") // runTest 會等待
+    }
+    // 自動等待所有子協程
+}
+
+// 有 Scope - 自己寫join()  
+fun example2() = runTest {
+    val scope = CoroutineScope(Dispatchers.Default)
+    scope.launch {
+        delay(1000)
+        println("可能不會執行！") // 如果 runTest 先結束
+    }
+    // runTest 結束時不會等待 scope 中的協程
+}
+{% endhighlight %}
+
+### Scope使用時機
+{% highlight kotlin linenos %}
+// 場景 1: 需要自定義調度器
+fun processInBackground() {
+    val ioScope = CoroutineScope(Dispatchers.IO)
+    ioScope.launch {
+        // 在IO線程執行網路請求
+    }
+}
+
+// 場景 2: 長時間運行的後台任務
+class MyService {
+    private val serviceScope = CoroutineScope(Dispatchers.Default)
+    
+    fun start() {
+        serviceScope.launch {
+            while (isActive) {
+                // 長時間運行的任務
+                delay(5000)
+            }
+        }
+    }
+    
+    fun stop() {
+        serviceScope.cancel() // 需要手動取消
+    }
+}
+
+// 場景 3: 在非協程環境中啟動協程
+fun nonCoroutineFunction() {
+    val scope = CoroutineScope(Dispatchers.Main)
+    scope.launch {
+        // 在Android主線程更新UI
+    }
+}
+{% endhighlight %}
+
+## coroutineScope runBlocking supervisorScope
+coroutineScope雖然名字有Scope，但開頭字母為小寫，不是獨立作用域，父親是runTest，runTest是TestScope的作用域。<br>
+
+![img]({{site.imgurl}}/kotlin/scope_extend2.png)<br>
+
+### 2個suspend函式:
 {% highlight kotlin linenos %}
   private suspend fun doOne():Int {
     // 1秒
@@ -54,11 +277,11 @@ runBlocking會等待子協程(suspend 函式)，執行完畢。<br>
  in 2009 ms
 ```
 
-## 子協程失敗
+### 子協程失敗
 - coroutinScope 子協程失敗，其它子協程會取消
 - supervisorScope 子協程失敗，不會影嚮其它子協程
 
-### coroutineScope
+### coroutineScope Exception
 job2 拋出Exception()，導致job1被cancel()，不會執行job1 finish。
 {% highlight kotlin linenos %}
   fun coroutin06() = runTest {
@@ -81,7 +304,7 @@ job2 finish
 java.lang.IllegalArgumentException
   at com.example.coroutine.Test01$coroutin06$1$1$job2$1.invokeSuspen
 ```
-### supervisorScope
+### supervisorScope Exception
 job2 拋出Exception()，job1仍會執行完畢。
 {% highlight kotlin linenos %}
   fun coroutin06() = runTest {
@@ -103,66 +326,3 @@ job2 finish
 job1 finish
 ```
 
-## Scope作用域
-以下自建Scope作用域，調度器設為預設Dispatchers.Default。<br>
-使用<span class="markline">scope.</span>launch{}，使用的是自建Scope協程。<br>
-
-{% highlight kotlin linenos %}
-  fun coroutin07() = runBlocking {
-    val scope = CoroutineScope(Dispatchers.Default)
-    scope.launch {
-      delay(1000)
-      println("job1")
-    }
-  }
-{% endhighlight %}
-
-但執行完卻沒有任何結果，這是為什麼？<br>
-runBlocking協程與作用域協程，沒有父子關係，所以runBlocking協程執行完畢就結束，<span class="markline">不會等待</span>scope.launch{}協程執行完，才結束。<br>
-
-### delay
-增加一個delay(大於1000)
-delay()參數要大於1000，等到scope執行完畢，runBlocking協程才能結束。<br>
-
-{% highlight kotlin linenos %}
-  fun coroutin07() = runBlocking {
-    val scope = CoroutineScope(Dispatchers.Default)
-    scope.launch {
-      delay(1000)
-      println("job1")
-    }
-    delay(2000)
-  }
-{% endhighlight %}
-```
-job1
-```
-
-### join
-runBlocking協程「等待」scope.job完成，runBlocking才能結束。
-{% highlight kotlin linenos %}
-  fun coroutin07() = runBlocking {
-    val scope = CoroutineScope(Dispatchers.Default)
-    val job = scope.launch {
-      delay(1000)
-      println("job1")
-    }
-    job.join()
-  }
-{% endhighlight %}
-```
-job1
-```
-
-### GlobalScope
-GlobalScope也是作用域，加上join，runBlocking才會等待GlobalScope執行完畢。
-{% highlight kotlin linenos %}
-  @Test
-  fun coroutin08() = runBlocking {
-    val job = GlobalScope.launch {
-      delay(1000)
-      println("job1")
-    }
-    job.join()
-  }
-{% endhighlight %}

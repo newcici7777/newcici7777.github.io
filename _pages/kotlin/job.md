@@ -277,12 +277,11 @@ childJob isActive = false
 childJob isCompleted = true
 ```
 
-## Job管理生命周期
+## job啟動所有子協程
 runTest對listof的物件，會自動start()。<br>
 runBlocking對listof的物件，不會自動start()。<br>
 本例使用runBlocking。<br>
 
-### 啟動所有子協程
 job是所有list中的子協程的父親，job.start()，所有子協程全啟動。<br>
 使用it.join()讓runTest協程等待所有協程執行完畢。<br>
 注意！runTest不是list中子協程的父親，runTest只負責「等待」別的協程執行完畢。<br>
@@ -308,77 +307,6 @@ job是所有list中的子協程的父親，job.start()，所有子協程全啟�
 list[0] finish
 list[1] finish
 all children finish.
-```
-### 取消所有子協程
-以下只會執行list[0]的job，因為運行1.1秒後，所有子協程全被取消。<br>
-cancel()是取消協程。<br>
-{% highlight kotlin linenos %}
-  @Test
-  fun coroutin14() = runBlocking {
-    val job = Job()
-    val list = listOf(
-      launch(job) {
-        delay(1000)
-        println("list[0] finish")
-      },
-      launch(job) {
-        delay(2000)
-        println("list[1] finish")
-      })
-    job.start()
-    // 1.1秒後，取消所有子協程
-    delay(1100)
-    job.cancel()
-    list.forEach { it.join() }
-    println("all children finish.")
-  }
-{% endhighlight %}
-```
-list[0] finish
-all children finish.
-````
-
-### isActive判斷子協程是否被取消
-isActive會傳回協程是否正在運行中。<br>
-若協程被取消，會傳回false。<br>
-以下程式3秒後，取消父親為job的所有子協程。<br>
-{% highlight kotlin linenos %}
-  @Test
-  fun coroutin16() = runBlocking {
-    val job = Job()
-    val list = listOf(
-      launch(job) {
-        // isActive會傳回協程是否正在運行中
-        while (isActive) {
-          println("list[0] runing")
-          // 暫停1秒
-          delay(1000)
-        }
-      },
-      launch(job) {
-        // isActive會傳回協程是否正在運行中
-        while (isActive) {
-          println("list[1] runing")
-          // 暫停1秒
-          delay(1000)
-        }
-      })
-    job.start()
-    // 3秒後，取消父親為job的所有子協程。
-    delay(3000)
-    job.cancel()
-    list.forEach { it.join() }
-    println("子協程全被取消")
-  }
-{% endhighlight %}
-```
-list[0] runing
-list[1] runing
-list[0] runing
-list[1] runing
-list[0] runing
-list[1] runing
-子協程全被取消
 ```
 
 ## 未指派父親Job
