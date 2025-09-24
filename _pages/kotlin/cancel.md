@@ -196,7 +196,12 @@ cancel()取消時會有CancellationException，但不會在終端機輸出，因
 
 加上try{}... catch{}就可以抓出CancellationException。<br>
 
-join變成<span class="markline">等待取消</span>。<br>
+可以在cancel()傳入自訂例外的名稱。<br>
+```
+job1.cancel(CancellationException("自訂取消Exception"))
+```
+
+job1.join()變成<span class="markline">等待取消</span>。<br>
 {% highlight kotlin linenos %}
   fun coroutin08() = runTest {
     val job1 = GlobalScope.launch {
@@ -217,10 +222,326 @@ java.util.concurrent.CancellationException: 自訂取消Exception
   at com.example.coroutine.Test01$coroutin08$1.invokeSuspend(Test01.kt:105)
 ```
 
+## finally
+finally是不管如何都會執行，可在finally中釋放資源。<br>
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutin22() = runTest {
+    var br: BufferedReader? = null
+    try {
+      br = BufferedReader(FileReader("/Users/cici/testc/file_test"))
+    } finally {
+      br?.close()
+    }
+  }
+{% endhighlight %}
+
+### withContext(NonCancellable)
+被cancel的協程中，在finally有suspend函式，不會執行。<br>
+以下child1被取消，不會印出「finally 2」。<br>
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutin24() = runTest {
+    val parent = Job()
+    val child1 = launch(parent) {
+      try {
+        delay(1000)
+        println("child1 finish")
+      } finally {
+        println("finally 1")
+        delay(100)
+        println("finally 2")
+      }
+    }
+    val child2 = launch(parent) {
+      delay(1000)
+      println("child2 finish")
+    }
+    delay(500)
+    child1.cancel()
+    child1.join()
+    child2.join()
+  }
+{% endhighlight %}
+```
+finally 1
+child2 finish
+```
+
+改用withContext(NonCancellable)包住suspend函式就可以。
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutin24() = runTest {
+    val parent = Job()
+    val child1 = launch(parent) {
+      try {
+        delay(1000)
+        println("child1 finish")
+      } finally {
+        withContext(NonCancellable) {
+          println("finally 1")
+          delay(100)
+          println("finally 2")
+        }
+      }
+    }
+    val child2 = launch(parent) {
+      delay(1000)
+      println("child2 finish")
+    }
+    delay(500)
+    child1.cancel()
+    child1.join()
+    child2.join()
+  }
+{% endhighlight %}
+```
+finally 1
+finally 2
+child2 finish
+```
+
+### use
+使用use擴展函式，若物件有實作Closeable，結束時，就可以使用use自動呼叫物件.close()方法。<br>
+{% highlight kotlin linenos %}
+@Test
+fun coroutin23() = runTest {
+  var br = BufferedReader(FileReader("/Users/cici/testc/file_test"))
+  br.use {
+    var line: String?
+    while (true) {
+      line = it.readLine() ?: break
+      println(line)
+    }
+  }
+}
+{% endhighlight %}
+```
+測試程式
+
+java程式設計
+```
+
+use原始碼如下:僅截取close()的程式碼
+{% highlight kotlin linenos %}
+when {
+    apiVersionIsAtLeast(1, 1, 0) -> this.closeFinally(exception)
+    this == null -> {}
+    exception == null -> close()
+    else ->
+        try {
+            close()
+        } catch (closeException: Throwable) {
+            // cause.addSuppressed(closeException) // ignored here
+        }
+}
+{% endhighlight %}
+
+讀取檔案無法寫在while()中，以前在java讀取每一行都會寫在while()中，但kotlin不行。<br>
+以下程式碼編譯失敗。<br>
+{% highlight kotlin linenos %}
+var br = BufferedReader(FileReader("/Users/cici/testc/file_test"))
+br.use {
+  var line: String?
+  while ((line = it.readLine()) !== null) {
+    println(line)
+  }
+}
+{% endhighlight %}
+
+以下是java的程式碼:
+{% highlight java linenos %}
+BufferedReader bufferedReader = null;
+try {
+  bufferedReader = new BufferedReader(new FileReader("/Users/cici/testc/file_test"));
+  String line = null;
+  while((line = bufferedReader.readLine()) != null) {
+    System.out.println(line);
+  }
+}
+{% endhighlight %}
+
 ## Cpu運算無法被取消
+以下程式碼調度器要用Dispatchers.Default，否則無法取消，Default是屬於CPU運算。<br>
 
+照理說，delay 0.1秒後，job1要被取消，但一直執行，i印到9。<br>
+{% highlight kotlin linenos %}
+  fun coroutin21() = runTest {
+    val job1 = launch(Dispatchers.Default) {
+      var nexTime = System.currentTimeMillis()
+      var i = 0
+      try {
+        while (i < 10) {
+          if (System.currentTimeMillis() >= nexTime) {
+            println("i = $i isActive = $isActive")
+            i++
+            // 每0.5秒循環一次
+            nexTime += 500
+          }
+        }
+      } catch (e: Exception) {
+        e.printStackTrace()
+      }
+    }
+    delay(100)
+    job1.cancel()
+    job1.join()
+  }
+{% endhighlight %}
+```
+i = 0 isActive = true
+i = 1 isActive = false
+i = 2 isActive = false
+i = 3 isActive = false
+i = 4 isActive = false
+i = 5 isActive = false
+i = 6 isActive = false
+i = 7 isActive = false
+i = 8 isActive = false
+i = 9 isActive = false
+```
 
+### isActive
+加上isActive判斷Job是否可以執行。<br>
 
+執行結果只印出i = 0，不會一直印出。<br>
+
+加上try ... catch ... 補捉CancellationException的例外。<br>
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutin21() = runTest {
+    val job1 = launch(Dispatchers.Default) {
+      var nexTime = System.currentTimeMillis()
+      var i = 0
+      try {
+        while (i < 10 && isActive) {
+          if (System.currentTimeMillis() >= nexTime) {
+            println("i = $i isActive = $isActive")
+            i++
+            // 每0.5秒循環一次
+            nexTime += 500
+          }
+        }
+      } catch (e: CancellationException) {
+        println("補捉到CancellationException Exception")
+      }
+    }
+    delay(100)
+    job1.cancel()
+    job1.join()
+  }
+{% endhighlight %}
+```
+i = 0 isActive = true
+補捉到CancellationException Exception
+```
+
+### ensureActive()
+Job不是Active，ensureActive()會拋出JobCancellationException，協程有例外就會停止。<br>
+
+加上try ... catch ... 補捉CancellationException的例外。<br>
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutin21() = runTest {
+    val job1 = launch(Dispatchers.Default) {
+      var nexTime = System.currentTimeMillis()
+      var i = 0
+      try {
+        while (i < 10) {
+          ensureActive()
+          if (System.currentTimeMillis() >= nexTime) {
+            println("i = $i isActive = $isActive")
+            i++
+            nexTime += 500
+          }
+        }
+      } catch (e: CancellationException) {
+        println("補捉到CancellationException Exception")
+      }
+    }
+    delay(100)
+    job1.cancel()
+    job1.join()
+  }
+{% endhighlight %}
+```
+i = 0 isActive = true
+補捉到CancellationException Exception
+```
+### yield
+Job不是Active，yield()會拋出JobCancellationException，協程有例外就會停止，並讓出cpu使用權。
+{% highlight kotlin linenos %}
+  fun coroutin21() = runTest {
+    val job1 = launch(Dispatchers.Default) {
+      var nexTime = System.currentTimeMillis()
+      var i = 0
+      try {
+        while (i < 10) {
+          yield()
+          if (System.currentTimeMillis() >= nexTime) {
+            println("i = $i isActive = $isActive")
+            i++
+            nexTime += 500
+          }
+        }
+      } catch (e: CancellationException) {
+        println("補捉到CancellationException Exception")
+      }
+    }
+    delay(100)
+    job1.cancel()
+    job1.join()
+  }
+{% endhighlight %}
+```
+i = 0 isActive = true
+補捉到CancellationException Exception
+```
+## 超時處理
+### withTimeout(ms)
+以下程式碼執行超過3秒就會被cancel()取消。<br>
+會產生TimeoutCancellationException。<br>
+{% highlight kotlin linenos %}
+fun coroutin25() = runBlocking {
+  withTimeout(3000) {
+    repeat(10) { i ->
+      println("i = $i")
+      delay(1000)
+    }
+  }
+}
+{% endhighlight %}
+```
+i = 0
+i = 1
+i = 2
+
+Timed out waiting for 3000 ms
+kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 3000 ms
+```
+
+### withTimeoutOrNull
+超時就傳回null，沒有超時就傳回finish
+{% highlight kotlin linenos %}
+@Test
+fun coroutin25() = runBlocking {
+  val timeout = withTimeoutOrNull(3000) {
+    repeat(10) { i ->
+      println("i = $i")
+      delay(1000)
+    }
+    // 完成的文字
+    "finish"
+  }
+  println("result = $timeout")
+}
+{% endhighlight %}
+```
+i = 0
+i = 1
+i = 2
+result = null
+```
 
 ## Scope獨立作用域與沒有獨立作用域
 

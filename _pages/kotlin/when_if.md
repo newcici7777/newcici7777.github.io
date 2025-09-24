@@ -257,6 +257,49 @@ hello
 hello
 ```
 
+i由0開始到9。
+{% highlight kotlin linenos %}
+    repeat(10) { i ->
+      println("i = $i")
+    }
+{% endhighlight %}
+```
+i = 0
+i = 1
+i = 2
+i = 3
+i = 4
+i = 5
+i = 6
+i = 7
+i = 8
+i = 9
+```
+
+每1秒，輸出一次i。<br>
+以下程式碼要在runBlocking阻塞的環境中才看的到。<br>
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutin25() = runBlocking {
+    repeat(10) { i ->
+      println("i = $i")
+      delay(1000)
+    }
+  }
+{% endhighlight %}
+```
+i = 0
+i = 1
+i = 2
+i = 3
+i = 4
+i = 5
+i = 6
+i = 7
+i = 8
+i = 9
+```
+
 ## while與遞增遞減
 - [遞增遞減][1]
 
