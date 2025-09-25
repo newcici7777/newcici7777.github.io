@@ -434,6 +434,9 @@ class GlobalExceptionHandler : CoroutineExceptionHandler {
 
 試著執行以下程式碼，能否補捉到exception。
 {% highlight kotlin linenos %}
+class MainActivity06 : AppCompatActivity() {
+  val mainScope = MainScope()
+  var textv: TextView? = null
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
@@ -446,7 +449,39 @@ class GlobalExceptionHandler : CoroutineExceptionHandler {
       }
     }
   }
+}
 {% endhighlight %}
 ```
 Global exception: java.lang.StringIndexOutOfBoundsException: length=3; index=10
+```
+
+## Android建立區域ExceptionHandler
+以下自訂handler，把handler作為參數傳入launch()協程構建器中。<br>
+```
+GlobalScope.launch(handler)
+```
+{% highlight kotlin linenos %}
+class MainActivity06 : AppCompatActivity() {
+  val mainScope = MainScope()
+  var textv: TextView? = null
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_main)
+    val submit = findViewById<Button>(R.id.button)
+    val handler = CoroutineExceptionHandler {
+      _, exception ->
+      Log.d("cici", "activity exception = $exception")
+    }
+    textv = findViewById<TextView>(R.id.textView)
+    submit.setOnClickListener {
+      GlobalScope.launch(handler) {
+        Log.d("cici", "click")
+        "abc".substring(10)
+      }
+    }
+  }
+}
+{% endhighlight %}
+```
+activity exception = java.lang.StringIndexOutOfBoundsException: length=3; index=10
 ```
