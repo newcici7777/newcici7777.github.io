@@ -3,6 +3,9 @@ title: cancel
 date: 2025-09-22
 keywords: kotlin, Coroutine cancel
 ---
+## 可以被取消的suspend函式
+delay()、withContext()都可以被協程取消。
+
 ## job取消協程
 以下只會執行list[0]的job，因為運行1.1秒後，所有子協程全被取消。<br>
 cancel()是取消協程。<br>
@@ -99,49 +102,6 @@ delay() 是一個可取消的掛起函數，當協程被取消時，delay()會�
 kotlinx.coroutines.JobCancellationException: StandaloneCoroutine was cancelled; job="coroutine#3":StandaloneCoroutine{Cancelling}@ff684e1
 ```
 
-### isActive判斷子協程是否被取消
-isActive會傳回協程是否正在運行中。<br>
-若協程被取消，會傳回false。<br>
-以下程式3秒後，取消父親為job的所有子協程。<br>
-{% highlight kotlin linenos %}
-  @Test
-  fun coroutin16() = runBlocking {
-    val job = Job()
-    val list = listOf(
-      launch(job) {
-        // isActive會傳回協程是否正在運行中
-        while (isActive) {
-          println("list[0] runing")
-          // 暫停1秒
-          delay(1000)
-        }
-      },
-      launch(job) {
-        // isActive會傳回協程是否正在運行中
-        while (isActive) {
-          println("list[1] runing")
-          // 暫停1秒
-          delay(1000)
-        }
-      })
-    job.start()
-    // 3秒後，取消父親為job的所有子協程。
-    delay(3000)
-    job.cancel()
-    list.forEach { it.join() }
-    println("子協程全被取消")
-  }
-{% endhighlight %}
-```
-list[0] runing
-list[1] runing
-list[0] runing
-list[1] runing
-list[0] runing
-list[1] runing
-子協程全被取消
-```
-
 ## 作用域Scope 取消
 下面的程式碼是，GlobalScope獨立作用域的取消。<br>
 取消協程不會「顯示」任何exception，但實際上會拋出CancellationException。<br>
@@ -223,6 +183,42 @@ java.util.concurrent.CancellationException: 自訂取消Exception
 ```
 
 ## finally
+### 取消但一定會執行finally
+不管有沒有被取消，都一定會執行finally{}。<br>
+
+下面程式碼，取消job1，job2沒取消，job1不會輸出"job1 finish"，但取消時會輸出"job1 finally"。<br>
+{% highlight kotlin linenos %}
+@Test
+  fun coroutin19() = runTest {
+    val scope = CoroutineScope(Dispatchers.Default)
+    val job1 = scope.launch {
+      try {
+        delay(1000)
+        println("job1 finish")
+      } finally {
+        println("job1 finally")
+      }
+    }
+    val job2 = scope.launch {
+      try {
+        delay(1000)
+        println("job2 finish")
+      } finally {
+        println("job2 finally")
+      }
+    }
+    delay(500)
+    job1.cancel()
+    job1.join()
+    job2.join()
+  }
+{% endhighlight %}
+```
+job1 finally
+job2 finish
+job2 finally
+```
+### 釋放資源
 finally是不管如何都會執行，可在finally中釋放資源。<br>
 {% highlight kotlin linenos %}
   @Test
@@ -237,7 +233,7 @@ finally是不管如何都會執行，可在finally中釋放資源。<br>
 {% endhighlight %}
 
 ### withContext(NonCancellable)
-被cancel的協程中，在finally有suspend函式，不會執行。<br>
+被cancel的協程中，在finally有suspend函式，delay()是suspend函式，不會執行。<br>
 以下child1被取消，不會印出「finally 2」。<br>
 {% highlight kotlin linenos %}
   @Test
@@ -268,7 +264,7 @@ finally 1
 child2 finish
 ```
 
-改用withContext(NonCancellable)包住suspend函式就可以。
+改用withContext(NonCancellable)包住suspend函式就可以，系統會執行完withContext後才會取消完成。
 {% highlight kotlin linenos %}
   @Test
   fun coroutin24() = runTest {
@@ -400,9 +396,73 @@ i = 7 isActive = false
 i = 8 isActive = false
 i = 9 isActive = false
 ```
+### Job Cancel狀態
+由下表可以知道Cancelling 取消中、Cancelled 取消完成、Completed 完成中，isActive都是false的狀態，所以可以利用isActive來判斷是否在取消中、取消完成。
+
+|狀態|isActive|isCompleted|isCancelled|
+|:-------|:---:|:---:|:---:|
+|New 建立|false|false|false|
+|Active 執行中|true|false|	false|
+|Completing 完成中|true|false|false|
+|Cancelling 取消中|false|false|true|
+|Cancelled 取消完成|false|true|true|
+|Completed 完成|false|true|false|
+
+下圖中，Completed完成，isCancelled是false。<br>
+
+取消中跟取消完成，isCancelled是false<br>
+
+取消中(Cancelling)、取消完成(Cancelled)、完成(Completed)，三種狀態，isActive都是false。<br>
+
+會造成取消除了使用cancel()，協程拋出非正常Exception(排除CancellationException)，都會進入到取消中(Cancelling)的狀態。<br>
+
+![img]({{site.imgurl}}/kotlin/job_cancel.png)<br>
+
+### isActive判斷子協程是否被取消
+isActive會傳回是否在取消。<br>
+若協程被取消，會傳回false。<br>
+以下程式3秒後，取消父親為job的所有子協程。<br>
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutin16() = runBlocking {
+    val job = Job()
+    val list = listOf(
+      launch(job) {
+        // isActive會傳回協程是否正在運行中
+        while (isActive) {
+          println("list[0] runing")
+          // 暫停1秒
+          delay(1000)
+        }
+      },
+      launch(job) {
+        // isActive會傳回協程是否正在運行中
+        while (isActive) {
+          println("list[1] runing")
+          // 暫停1秒
+          delay(1000)
+        }
+      })
+    job.start()
+    // 3秒後，取消父親為job的所有子協程。
+    delay(3000)
+    job.cancel()
+    list.forEach { it.join() }
+    println("子協程全被取消")
+  }
+{% endhighlight %}
+```
+list[0] runing
+list[1] runing
+list[0] runing
+list[1] runing
+list[0] runing
+list[1] runing
+子協程全被取消
+```
 
 ### isActive
-加上isActive判斷Job是否可以執行。<br>
+加上isActive判斷Job的狀態是否在取消中，若在取消中就不執行。<br>
 
 執行結果只印出i = 0，不會一直印出。<br>
 
@@ -437,7 +497,17 @@ i = 0 isActive = true
 ```
 
 ### ensureActive()
-Job不是Active，ensureActive()會拋出JobCancellationException，協程有例外就會停止。<br>
+ensureActive()原始碼也是使用isActive，判斷Job狀態是不是取消中或取消完成。<br>
+{% highlight kotlin linenos %}
+public fun Job.ensureActive(): Unit {
+    if (!isActive) throw getCancellationException()
+}
+{% endhighlight %}
+
+ensureActive()會拋出JobCancellationException。
+{% highlight kotlin linenos %}
+public fun getCancellationException(): CancellationException
+{% endhighlight %}
 
 加上try ... catch ... 補捉CancellationException的例外。<br>
 {% highlight kotlin linenos %}
@@ -469,7 +539,7 @@ i = 0 isActive = true
 補捉到CancellationException Exception
 ```
 ### yield
-Job不是Active，yield()會拋出JobCancellationException，協程有例外就會停止，並讓出cpu使用權。
+yield()判斷Job狀態是不是取消中或取消完成，密集計算會佔用cpu資源，yield會讓出部分cpu資源給其它的Job使用，不會獨佔Cpu資源，讓出「部分」cpu資源，還是會把密集計算的程式碼完成。<br>
 {% highlight kotlin linenos %}
   fun coroutin21() = runTest {
     val job1 = launch(Dispatchers.Default) {
@@ -543,33 +613,3 @@ i = 2
 result = null
 ```
 
-## Scope獨立作用域與沒有獨立作用域
-
-|特性 |沒有 Scope (launch{}) |有 Scope (scope.launch{})|
-|父子關係| 與 runTest 是父子|與 runTest 無父子關係|
-|join| 自動join()|手動join()|
-|取消傳播| 自動傳播 |不會自動傳播|
-|異常處理|自動傳播異常|獨立異常處理|
-|調度器|繼承父協程|使用自定義調度器|
-
-join
-{% highlight kotlin linenos %}
-// 沒有 Scope - 自動join
-fun example1() = runTest {
-    launch {
-        delay(1000)
-        println("一定會執行") // runTest 會等待
-    }
-    // 自動等待所有子協程
-}
-
-// 有 Scope - 自己寫join()  
-fun example2() = runTest {
-    val scope = CoroutineScope(Dispatchers.Default)
-    scope.launch {
-        delay(1000)
-        println("可能不會執行！") // 如果 runTest 先結束
-    }
-    // runTest 結束時不會等待 scope 中的協程
-}
-{% endhighlight %}

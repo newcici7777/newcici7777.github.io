@@ -4,6 +4,35 @@ date: 2025-09-22
 keywords: kotlin, coroutine scope
 ---
 ## Scope獨立作用域
+### Scope獨立作用域與沒有獨立作用域
+
+|特性 |沒有 Scope (launch{}) |有 Scope (scope.launch{})|
+|父子關係| 與 runTest 是父子|與 runTest 無父子關係|
+|join| 自動join()|手動join()|
+|調度器|繼承父協程|使用自定義調度器|
+
+join
+{% highlight kotlin linenos %}
+// 沒有 Scope - 自動join
+fun example1() = runTest {
+    launch {
+        delay(1000)
+        println("一定會執行") // runTest 會等待
+    }
+    // 自動等待所有子協程
+}
+
+// 有 Scope - 自己寫join()  
+fun example2() = runTest {
+    val scope = CoroutineScope(Dispatchers.Default)
+    scope.launch {
+        delay(1000)
+        println("可能不會執行！") // 如果 runTest 先結束
+    }
+    // runTest 結束時不會等待 scope 中的協程
+}
+{% endhighlight %}
+
 ### CoroutineScope
 建立一個獨立CoroutineScope作用域，runTest的作用域為TestScope。<br>
 

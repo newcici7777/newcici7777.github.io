@@ -42,10 +42,12 @@ fun coroutin10() = runTest {
 ```
 job = true
 ```
-### 加入並啟動子協程
+### 建立啟動子協程
 launch()是建立並啟動新協程，launch()參數是父親job，代表這個新協程是job的子協程。<br>
+
+協程是通過launch協程構建器創建的，它運行指定的代碼塊，並在該代碼塊完成時結束。<br>
 ```
-launch(job)
+launch(job) { 要執行的程式 }
 ```
 
 launch會自動啟動start()。
@@ -238,7 +240,7 @@ Job名.children.count()
 ```
 
 childJob的父親是parent，childJob下面有2個子協程，分別是child1與child2。<br>
-child2會先執行完畢，因為它才delay2秒，此時的child_scope.children.count() = 1，代表剩下一個子協程未完成。<br>
+child2會先執行完畢，因為它才delay2秒，此時的childJob.children.count() = 1，代表剩下一個子協程未完成。<br>
 
 等到delay 3秒後，child1與child2全執行完畢，childJob的狀態也變成已完成。`isCompleted = true`<br>
 {% highlight kotlin linenos %}
@@ -328,7 +330,7 @@ job1 finished
 ```
 
 ## this
-如果只用this會混淆這個this物件是誰，可以使用`@`標籤名，來取別這個this是誰。<br>
+如果只用this會混淆這個this物件是誰，可以使用`@`標籤名，來區別這個this是誰。<br>
 
 可以使用以下方法，印出物件的類別。
 ```

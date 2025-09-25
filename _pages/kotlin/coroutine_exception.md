@@ -3,6 +3,16 @@ title: 協程 exception
 date: 2025-09-24
 keywords: kotlin, coroutine exception
 ---
+## 不正常的Exception
+除了CancellationException以外的Exception，都會讓協程拋出例外，讓子協程與父協程因例外被cancel()，不執行。<br>
+
+## exception與cancel()
+當子協程拋出exception，父協程收到exception，接下來會進行協程取消cancel()的動作。<br>
+
+1. 取消子協程
+2. 取消它自己的協程
+3. 將exception，往上拋給自己的父親。
+
 ## 根協程 例外
 ### launch
 launch就直接拋出例外。<br>
@@ -257,3 +267,186 @@ fun coroutin04() = runTest {
   scope.join()
 }
 {% endhighlight %}
+
+### exception與finally
+一個子協程拋出exception會造成其它子協程取消，但取消一定會執行finnaly
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutin06() = runTest {
+    val handler = CoroutineExceptionHandler { _, exception ->
+      println("exception = $exception")
+    }
+    val scope = CoroutineScope(Job()).launch(handler) {
+      val child1 = launch {
+        delay(500)
+        throw IllegalArgumentException()
+      }
+      val child2 = launch {
+        try {
+          delay(2000)
+          println("child2 finish")
+        } finally {
+          println("child2 finally")
+        }
+      }
+      val child3 = launch {
+        try {
+          delay(2000)
+          println("child3 finish")
+        } finally {
+          println("child3 finally")
+        }
+      }
+    }
+    scope.join()
+  }
+{% endhighlight %}
+```
+child2 finally
+child3 finally
+exception = java.lang.IllegalArgumentException
+```
+
+### 多個exception
+當多個子協程exception，其它exception都會組合在第1個exception中。
+
+但只能輸出第一個exception。
+{% highlight kotlin linenos %}
+ val handler = CoroutineExceptionHandler { _, exception ->
+   println("exception = $exception")
+ }
+{% endhighlight %}
+
+其它exception，要特別使用以下語法處理。
+{% highlight kotlin linenos %}
+${exception.suppressed.contentToString()}
+{% endhighlight %}
+
+以下程式碼補捉多個exception，child2、child3在finally拋出Exception，不管是否有取消，都會執行到，若拋出Exception沒寫在finally，會直接被cancel，就不會拋出exception。<br>
+{% highlight kotlin linenos %}
+ @Test
+  fun coroutin06() = runTest {
+    val handler = CoroutineExceptionHandler { _, exception ->
+      println("exception = $exception")
+      println("other exceptions = ${exception.suppressed.contentToString()}")
+    }
+    val scope = CoroutineScope(Job()).launch(handler) {
+      val child1 = launch {
+        delay(500)
+        throw IllegalArgumentException()
+      }
+      val child2 = launch {
+        try {
+          delay(2000)
+          println("child2 finish")
+        } finally {
+          throw IndexOutOfBoundsException()
+        }
+      }
+      val child3 = launch {
+        try {
+          delay(2000)
+          println("child3 finish")
+        } finally {
+          throw ArithmeticException()
+        }
+      }
+    }
+    scope.join()
+  }
+{% endhighlight %}
+```
+exception = java.lang.IllegalArgumentException
+other exceptions = [java.lang.ArithmeticException, java.lang.IndexOutOfBoundsException]
+```
+
+### 執行順序
+以下程式碼會標註1,2,3,4，handler一定是最後執行。<br>
+{% highlight kotlin linenos %}
+ @Test
+  fun coroutin06() = runTest {
+    // 4.
+    val handler = CoroutineExceptionHandler { _, exception ->
+      println("exception = $exception")
+      println("other exceptions = ${exception.suppressed.contentToString()}")
+    }
+    val scope = CoroutineScope(Job()).launch(handler) {
+      // 1.
+      val child1 = launch {
+        delay(500)
+        throw IllegalArgumentException()
+      }
+      val child2 = launch {
+        try {
+          delay(2000)
+          println("child2 finish")
+        } finally {
+          // 2.
+          println("child2 finally")
+        }
+      }
+      val child3 = launch {
+        try {
+          delay(2000)
+          println("child3 finish")
+        } finally {
+          // 3.
+          throw ArithmeticException()
+        }
+      }
+    }
+    scope.join()
+  }
+{% endhighlight %}
+
+## Android建立全域ExceptionHandler
+在main目錄下，建立resources目錄，根據以下階層關係，建立三個目錄。
+```
+main/resources/META-INF/services/
+```
+
+對著上面的目錄按滑鼠右鍵，建立檔案<br>
+![img]({{site.imgurl}}/kotlin/global_exception1.png)<br>
+
+檔名是kotlinx.coroutines.CoroutineExceptionHandler<br>
+![img]({{site.imgurl}}/kotlin/global_exception2.png)<br>
+
+內容為
+```
+com.example.coroutine.handler.GlobalExceptionHandler
+```
+
+自己寫一個GlobalExceptionHandler，格式如下:<br>
+{% highlight kotlin linenos %}
+package com.example.coroutine.handler
+
+import android.util.Log
+import kotlinx.coroutines.CoroutineExceptionHandler
+import kotlin.coroutines.CoroutineContext
+
+class GlobalExceptionHandler : CoroutineExceptionHandler {
+  override val key = CoroutineExceptionHandler
+  override fun handleException(context: CoroutineContext, exception: Throwable) {
+    Log.d("cici", "Global exception: $exception")
+  }
+}
+{% endhighlight %}
+
+試著執行以下程式碼，能否補捉到exception。
+{% highlight kotlin linenos %}
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_main)
+    val submit = findViewById<Button>(R.id.button)
+    textv = findViewById<TextView>(R.id.textView)
+    submit.setOnClickListener {
+      GlobalScope.launch {
+        Log.d("cici", "click")
+        "abc".substring(10)
+      }
+    }
+  }
+{% endhighlight %}
+```
+Global exception: java.lang.StringIndexOutOfBoundsException: length=3; index=10
+```
