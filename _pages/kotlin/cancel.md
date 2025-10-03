@@ -40,7 +40,7 @@ all children finish.
 
 以下不會有任何執行結果，因為0.1秒(100ms)，就把child.cancel()。<br>
 {% highlight kotlin linenos %}
-  fun coroutin08() = runTest {
+  fun coroutin08() = runBlocking {
     val job = Job()
     val child = launch(job) {
         delay(1000)
@@ -50,12 +50,12 @@ all children finish.
     delay(100)
     // 取消協程
     child.cancel()
-    // runTest等待完成取消
+    // runBlocking等待完成取消
     child.join()
   }
 {% endhighlight %}
 
-如果只有cancel，協程正在清理資料，但runTest執行完了，就退出了。
+如果只有cancel，協程正在清理資料，但runBlocking執行完了，就退出了。
 ```
 job.cancel()
 ```
@@ -80,7 +80,7 @@ delay() 是一個可取消的掛起函數，當協程被取消時，delay()會�
 
 {% highlight kotlin linenos %}
   @Test
-  fun coroutin08() = runTest {
+  fun coroutin08() = runBlocking {
     val job = Job()
     val child = launch(job) {
       try {
@@ -94,7 +94,7 @@ delay() 是一個可取消的掛起函數，當協程被取消時，delay()會�
     delay(100)
     // 取消協程
     child.cancel()
-    // runTest等待完成取消
+    // runBlocking等待完成取消
     child.join()
   }
 {% endhighlight %}
@@ -110,7 +110,7 @@ kotlinx.coroutines.JobCancellationException: StandaloneCoroutine was cancelled; 
 作用域scope.cancel()，會直接把相同作用域的協程取消。<br>
 {% highlight kotlin linenos %}
 @Test
-fun coroutin19() = runTest {
+fun coroutin19() = runBlocking {
   val scope = CoroutineScope(Dispatchers.Default)
   val job1 = scope.launch {
     delay(1000)
@@ -131,7 +131,7 @@ fun coroutin19() = runTest {
 以下job2仍會執行，因為只有取消job1。
 {% highlight kotlin linenos %}
 @Test
-fun coroutin19() = runTest {
+fun coroutin19() = runBlocking {
   val scope = CoroutineScope(Dispatchers.Default)
   val job1 = scope.launch {
     delay(1000)
@@ -163,7 +163,7 @@ job1.cancel(CancellationException("自訂取消Exception"))
 
 job1.join()變成<span class="markline">等待取消</span>。<br>
 {% highlight kotlin linenos %}
-  fun coroutin08() = runTest {
+  fun coroutin08() = runBlocking {
     val job1 = GlobalScope.launch {
       try {
         delay(1000)
@@ -189,7 +189,7 @@ java.util.concurrent.CancellationException: 自訂取消Exception
 下面程式碼，取消job1，job2沒取消，job1不會輸出"job1 finish"，但取消時會輸出"job1 finally"。<br>
 {% highlight kotlin linenos %}
 @Test
-  fun coroutin19() = runTest {
+  fun coroutin19() = runBlocking {
     val scope = CoroutineScope(Dispatchers.Default)
     val job1 = scope.launch {
       try {
@@ -222,7 +222,7 @@ job2 finally
 finally是不管如何都會執行，可在finally中釋放資源。<br>
 {% highlight kotlin linenos %}
   @Test
-  fun coroutin22() = runTest {
+  fun coroutin22() = runBlocking {
     var br: BufferedReader? = null
     try {
       br = BufferedReader(FileReader("/Users/cici/testc/file_test"))
@@ -237,7 +237,7 @@ finally是不管如何都會執行，可在finally中釋放資源。<br>
 以下child1被取消，不會印出「finally 2」。<br>
 {% highlight kotlin linenos %}
   @Test
-  fun coroutin24() = runTest {
+  fun coroutin24() = runBlocking {
     val parent = Job()
     val child1 = launch(parent) {
       try {
@@ -267,7 +267,7 @@ child2 finish
 改用withContext(NonCancellable)包住suspend函式就可以，系統會執行完withContext後才會取消完成。
 {% highlight kotlin linenos %}
   @Test
-  fun coroutin24() = runTest {
+  fun coroutin24() = runBlocking {
     val parent = Job()
     val child1 = launch(parent) {
       try {
@@ -301,7 +301,7 @@ child2 finish
 使用use擴展函式，若物件有實作Closeable，結束時，就可以使用use自動呼叫物件.close()方法。<br>
 {% highlight kotlin linenos %}
 @Test
-fun coroutin23() = runTest {
+fun coroutin23() = runBlocking {
   var br = BufferedReader(FileReader("/Users/cici/testc/file_test"))
   br.use {
     var line: String?
@@ -362,7 +362,7 @@ try {
 
 照理說，delay 0.1秒後，job1要被取消，但一直執行，i印到9。<br>
 {% highlight kotlin linenos %}
-  fun coroutin21() = runTest {
+  fun coroutin21() = runBlocking {
     val job1 = launch(Dispatchers.Default) {
       var nexTime = System.currentTimeMillis()
       var i = 0
@@ -469,7 +469,7 @@ list[1] runing
 加上try ... catch ... 補捉CancellationException的例外。<br>
 {% highlight kotlin linenos %}
   @Test
-  fun coroutin21() = runTest {
+  fun coroutin21() = runBlocking {
     val job1 = launch(Dispatchers.Default) {
       var nexTime = System.currentTimeMillis()
       var i = 0
@@ -512,7 +512,7 @@ public fun getCancellationException(): CancellationException
 加上try ... catch ... 補捉CancellationException的例外。<br>
 {% highlight kotlin linenos %}
   @Test
-  fun coroutin21() = runTest {
+  fun coroutin21() = runBlocking {
     val job1 = launch(Dispatchers.Default) {
       var nexTime = System.currentTimeMillis()
       var i = 0
@@ -541,7 +541,7 @@ i = 0 isActive = true
 ### yield
 yield()判斷Job狀態是不是取消中或取消完成，密集計算會佔用cpu資源，yield會讓出部分cpu資源給其它的Job使用，不會獨佔Cpu資源，讓出「部分」cpu資源，還是會把密集計算的程式碼完成。<br>
 {% highlight kotlin linenos %}
-  fun coroutin21() = runTest {
+  fun coroutin21() = runBlocking {
     val job1 = launch(Dispatchers.Default) {
       var nexTime = System.currentTimeMillis()
       var i = 0

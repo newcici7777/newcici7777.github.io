@@ -12,7 +12,7 @@ runTest是父協程，裡面包含了job1與job2二個子協程。<br>
 runTest會等待job1與job2執行完畢。<br>
 launch、async都是同時執行，job2不用等待job1執行完畢才執行。<br>
 {% highlight kotlin linenos %}
-  fun coroutin01() = runTest {
+  fun coroutin01() = runBlocking {
     val job1 = launch {
       delay(200)
       println("job1 finished")
@@ -296,7 +296,7 @@ job協程建立時，從Thread Pool中取出IO執行緒，在此運行。<br>
 2. 執行job協程，執行緒是在IO執行緒(DefaultDispatcher-worker-1)。
 2. 呼叫suspend函式後，執行緒在IO執行緒(DefaultDispatcher-worker-1)。
 {% highlight kotlin linenos %}
-  fun coroutin04() = runTest {
+  fun coroutin04() = runBlocking {
     println("目前thread = " + Thread.currentThread().name)
     val job = async(context = Dispatchers.IO, start = CoroutineStart.DEFAULT) {
       println("協程 thread = " + Thread.currentThread().name)
@@ -322,7 +322,7 @@ job協程建立時，與coroutin03()的執行緒相同都是Test worker。<br>
 2. job協程仍在主執行緒(Test work)執行。
 2. 呼叫suspend函式後，執行緒切換至IO執行緒(DefaultDispatcher-worker-1)。
 {% highlight kotlin linenos %}
-  fun coroutin03() = runTest {
+  fun coroutin03() = runBlocking {
     println("目前thread = " + Thread.currentThread().name)
     val job = async(context = Dispatchers.IO, start = CoroutineStart.UNDISPATCHED) {
       println("協程 thread = " + Thread.currentThread().name)

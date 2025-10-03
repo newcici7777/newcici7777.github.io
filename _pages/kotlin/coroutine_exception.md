@@ -19,7 +19,7 @@ launch就直接拋出例外。<br>
 launch需要join()。<br>
 {% highlight kotlin linenos %}
   @Test
-  fun coroutin26() = runTest {
+  fun coroutin26() = runBlocking {
     val job = GlobalScope.launch {
       throw IndexOutOfBoundsException()
     }
@@ -28,10 +28,10 @@ launch需要join()。<br>
 {% endhighlight %}
 ### async
 async需要透過傳回值await()，才可以補捉到例外。<br>
-async的await()本身就有join()的功能，會請runTest等待到job1執行完畢才退出。<br>
+async的await()本身就有join()的功能，會請runBlocking等待到job1執行完畢才退出。<br>
 {% highlight kotlin linenos %}
 @Test
-fun coroutin27() = runTest {
+fun coroutin27() = runBlocking {
   val job1 = GlobalScope.async {
     throw ArithmeticException()
   }
@@ -47,7 +47,7 @@ fun coroutin27() = runTest {
 如果是協程中的協程產生例外，不用使用傳回值await()，直接拋出例外。
 {% highlight kotlin linenos %}
   @Test
-  fun coroutin28() = runTest {
+  fun coroutin28() = runBlocking {
     val job = GlobalScope.launch {
       val child = async {
         throw IllegalArgumentException()
@@ -69,7 +69,7 @@ CoroutineScope(Job())
 子協程有例外，其它子協程也會被取消。
 {% highlight kotlin linenos %}
   @Test
-  fun coroutin01() = runTest {
+  fun coroutin01() = runBlocking {
     val scope = CoroutineScope(Job())
     val job1 = scope.launch {
       delay(100)
@@ -95,7 +95,7 @@ CoroutineScope(SupervisorJob())
 子協程有例外，其它子協程也會執行，以下執行結果，會顯示job2 finish。<br>
 {% highlight kotlin linenos %}
   @Test
-  fun coroutin01() = runTest {
+  fun coroutin01() = runBlocking {
     val scope = CoroutineScope(SupervisorJob())
     val job1 = scope.launch {
       delay(100)
@@ -124,7 +124,7 @@ java.lang.IllegalArgumentException
 ### coroutineScope Exception
 job2 拋出Exception()，導致job1被cancel()，不會執行job1 finish。
 {% highlight kotlin linenos %}
-  fun coroutin06() = runTest {
+  fun coroutin06() = runBlocking {
     coroutineScope {
       val job1 = launch {
         delay(400)
@@ -147,7 +147,7 @@ java.lang.IllegalArgumentException
 ### supervisorScope 子協程Exception
 子協程job2 拋出Exception()，子協程job1仍會執行完畢。
 {% highlight kotlin linenos %}
-  fun coroutin06() = runTest {
+  fun coroutin06() = runBlocking {
     supervisorScope {
       val job1 = launch {
         delay(400)
@@ -171,7 +171,7 @@ job1 finish
 child1、child2不會執行。<br>
 {% highlight kotlin linenos %}
   @Test
-  fun coroutin02() = runTest {
+  fun coroutin02() = runBlocking {
     supervisorScope {
       val child1 = launch {
         println("child1")
@@ -197,7 +197,7 @@ java.lang.IllegalArgumentException
 ### GlobalScope
 {% highlight kotlin linenos %}
 @Test
-fun coroutin03() = runTest {
+fun coroutin03() = runBlocking {
   val handler = CoroutineExceptionHandler{ _, exception ->
     println("exception = $exception")
   }
@@ -214,7 +214,7 @@ exception = java.lang.IllegalArgumentException
 ### CoroutineScope
 {% highlight kotlin linenos %}
 @Test
-fun coroutin04() = runTest {
+fun coroutin04() = runBlocking {
   val handler = CoroutineExceptionHandler{ _, exception ->
     println("exception = $exception")
   }
@@ -235,7 +235,7 @@ CoroutineScope(Job()).launch(handler)
 ```
 {% highlight kotlin linenos %}
 @Test
-fun coroutin04() = runTest {
+fun coroutin04() = runBlocking {
   val handler = CoroutineExceptionHandler{ _, exception ->
     println("exception = $exception")
   }
@@ -255,7 +255,7 @@ val child = launch(handler)
 ```
 {% highlight kotlin linenos %}
 @Test
-fun coroutin04() = runTest {
+fun coroutin04() = runBlocking {
   val handler = CoroutineExceptionHandler{ _, exception ->
     println("exception = $exception")
   }
@@ -272,7 +272,7 @@ fun coroutin04() = runTest {
 一個子協程拋出exception會造成其它子協程取消，但取消一定會執行finnaly
 {% highlight kotlin linenos %}
   @Test
-  fun coroutin06() = runTest {
+  fun coroutin06() = runBlocking {
     val handler = CoroutineExceptionHandler { _, exception ->
       println("exception = $exception")
     }
@@ -325,7 +325,7 @@ ${exception.suppressed.contentToString()}
 以下程式碼補捉多個exception，child2、child3在finally拋出Exception，不管是否有取消，都會執行到，若拋出Exception沒寫在finally，會直接被cancel，就不會拋出exception。<br>
 {% highlight kotlin linenos %}
  @Test
-  fun coroutin06() = runTest {
+  fun coroutin06() = runBlocking {
     val handler = CoroutineExceptionHandler { _, exception ->
       println("exception = $exception")
       println("other exceptions = ${exception.suppressed.contentToString()}")
@@ -364,7 +364,7 @@ other exceptions = [java.lang.ArithmeticException, java.lang.IndexOutOfBoundsExc
 以下程式碼會標註1,2,3,4，handler一定是最後執行。<br>
 {% highlight kotlin linenos %}
  @Test
-  fun coroutin06() = runTest {
+  fun coroutin06() = runBlocking {
     // 4.
     val handler = CoroutineExceptionHandler { _, exception ->
       println("exception = $exception")

@@ -5,7 +5,7 @@ keywords: kotlin, job
 ---
 Prerequisites:
 
-- [runTest runBlocking][1]
+- [runBlocking runBlocking][1]
 
 中文為工作、任務。<br>
 
@@ -31,7 +31,7 @@ val job = Job()
 ### 啟動Job
 {% highlight kotlin linenos %}
 @Test
-fun coroutin10() = runTest {
+fun coroutin10() = runBlocking {
   // New
   val job = Job()
   // Start
@@ -74,13 +74,13 @@ public fun CoroutineScope.launch(
 }
 {% endhighlight %}
 
-### runTest 等待協程執行完畢
-join()代表等待，runTest{}是一個協程，裡面有一個協程child在執行，注意child的爸爸是Job，不是runTest，runTest與Job二者是不相同，runTest與child沒有父子關係，純粹就是<span class="markline">等待協程執行完畢</span>。<br>
+### runBlocking 等待協程執行完畢
+join()代表等待，runBlocking{}是一個協程，裡面有一個協程child在執行，注意child的爸爸是Job，不是runBlocking，runBlocking與Job二者是不相同，runBlocking與child沒有父子關係，純粹就是<span class="markline">等待協程執行完畢</span>。<br>
 
 ![img]({{site.imgurl}}/kotlin/job_extend1.png)<br>
 
 ```
-fun coroutin10() = runTest {
+fun coroutin10() = runBlocking {
   .
   .
   .
@@ -98,7 +98,7 @@ fun coroutin10() = runTest {
 但即便子協程執行完畢，Job是父親，isActive = true 狀態仍在執行中，並未完成。<br>
 {% highlight kotlin linenos %}
 @Test
-fun coroutin10() = runTest {
+fun coroutin10() = runBlocking {
   // New 建立
   val job = Job()
   // Start 啟動
@@ -143,7 +143,7 @@ if (job is CompletableJob) {
 完整程式碼
 {% highlight kotlin linenos %}
 @Test
-fun coroutin10() = runTest {
+fun coroutin10() = runBlocking {
   // New
   val job = Job()
   // Start
@@ -185,7 +185,7 @@ coroutineContext.job
 coroutineContext[Job]
 {% endhighlight %}
 
-下圖中，綠色的Job物件為runTest{}的傳回值為TestScope，詳細內容請見[runTest][1]文章。<br>
+下圖中，綠色的Job物件為runBlocking{}的傳回值為TestScope，詳細內容請見[runBlocking][1]文章。<br>
 紅色的Job物件為launch{}的傳回值child。<br>
 ![img]({{site.imgurl}}/kotlin/get_job.png)<br>
 
@@ -193,12 +193,12 @@ coroutineContext[Job]
 
 ![img]({{site.imgurl}}/kotlin/job_extend1.png)<br>
 
-而runTest傳回的是TestScope。<br>
+而runBlocking傳回的是TestScope。<br>
 child的祖父不是TestScope，都是分開來。<br>
 {% highlight kotlin linenos %}
-  fun coroutin11() = runTest {
-    println("runTest = ${coroutineContext[Job]}")
-    println("runTest = ${coroutineContext.job}")
+  fun coroutin11() = runBlocking {
+    println("runBlocking = ${coroutineContext[Job]}")
+    println("runBlocking = ${coroutineContext.job}")
     val job = Job()
     job.start()
     println("job parent = ${job.parent}")
@@ -215,8 +215,8 @@ child的祖父不是TestScope，都是分開來。<br>
   }
 {% endhighlight %}
 ```
-runTest = TestScope[test started]
-runTest = TestScope[test started]
+runBlocking = TestScope[test started]
+runBlocking = TestScope[test started]
 job parent = null
 job = JobImpl{Active}@5e4bd84a
 child parent= JobImpl{Active}@5e4bd84a
@@ -244,7 +244,7 @@ child2會先執行完畢，因為它才delay2秒，此時的childJob.children.co
 
 等到delay 3秒後，child1與child2全執行完畢，childJob的狀態也變成已完成。`isCompleted = true`<br>
 {% highlight kotlin linenos %}
-fun coroutin09() = runTest {
+fun coroutin09() = runBlocking {
   val parent = Job()
   val childJob = launch(parent) {
     val child1 = launch {
@@ -280,13 +280,12 @@ childJob isCompleted = true
 ```
 
 ## job啟動所有子協程
-runTest對listof的物件，會自動start()。<br>
 runBlocking對listof的物件，不會自動start()。<br>
 本例使用runBlocking。<br>
 
 job是所有list中的子協程的父親，job.start()，所有子協程全啟動。<br>
-使用it.join()讓runTest協程等待所有協程執行完畢。<br>
-注意！runTest不是list中子協程的父親，runTest只負責「等待」別的協程執行完畢。<br>
+使用it.join()讓runBlocking協程等待所有協程執行完畢。<br>
+注意！runBlocking不是list中子協程的父親，runBlocking只負責「等待」別的協程執行完畢。<br>
 {% highlight kotlin linenos %}
   fun coroutin13() = runBlocking {
     val job = Job()
@@ -312,13 +311,13 @@ all children finish.
 ```
 
 ## 未指派父親Job
-等號右邊 = runTest，launch{}沒給任何job父親參數，預設runTest為job1的父協程。<br>
+等號右邊 = runBlocking，launch{}沒給任何job父親參數，預設runBlocking為job1的父協程。<br>
 
 ![img]({{site.imgurl}}/kotlin/job_extend2.png)<br>
 
-因為runTest是父協程，父協程會自動<span class="markline">等待</span>子協程job1執行完畢，不用加上job1.join()，因為二者是父子關係。
+因為runBlocking是父協程，父協程會自動<span class="markline">等待</span>子協程job1執行完畢，不用加上job1.join()，因為二者是父子關係。
 {% highlight kotlin linenos %}
-fun coroutin01() = runTest {
+fun coroutin01() = runBlocking {
   val job1 = launch {
     delay(200)
     println("job1 finished")
@@ -338,15 +337,15 @@ this@launch::class.simpleName
 ```
 {% highlight kotlin linenos %}
 @Test
-fun coroutin12() = runTest {
+fun coroutin12() = runBlocking {
   println("outside this = $this")
   val job = Job()
   val child = launch(job) {
     println("inner this = $this")
     println("launch this = ${this@launch}")
-    println("runTest this = ${this@runTest}")
+    println("runBlocking this = ${this@runBlocking}")
     println("launch class = ${this@launch::class.simpleName}")
-    println("runTest class = ${this@runTest::class.simpleName}")
+    println("runBlocking class = ${this@runBlocking::class.simpleName}")
   }
   child.join()
 }
@@ -355,9 +354,9 @@ fun coroutin12() = runTest {
 outside this = TestScope[test started]
 inner this = "coroutine#3":StandaloneCoroutine{Active}@648c94da
 launch this = "coroutine#3":StandaloneCoroutine{Active}@648c94da
-runTest this = TestScope[test started]
+runBlocking this = TestScope[test started]
 launch class = StandaloneCoroutine
-runTest class = TestScopeImpl
+runBlocking class = TestScopeImpl
 ```
 
-[1]: {% link _pages/kotlin/runtest.md %}
+[1]: {% link _pages/kotlin/runBlocking.md %}

@@ -19,7 +19,7 @@ ${coroutineContext[Job]}
 
 完整程式碼
 {% highlight kotlin linenos %}
-fun coroutin07() = runTest {
+fun coroutin07() = runBlocking {
   println("job = ${coroutineContext[Job]}")
   println("dispatcher = ${coroutineContext[CoroutineDispatcher]}")
   println("name = ${coroutineContext[CoroutineName]}")
@@ -37,7 +37,7 @@ name = null
 
 ## 調度器Dispatchers
 Dispatchers調度器決定協程是在那個Thread運行。<br>
-預設是目前runTest{}的Thread。<br>
+預設是目前runBlocking{}的Thread。<br>
 
 Android的Main Thread是處理UI。<br>
 
@@ -48,7 +48,7 @@ Dispatchers分類如下:<br>
 
 {% highlight kotlin linenos %}
   @Test
-  fun coroutin08() = runTest {
+  fun coroutin08() = runBlocking {
     launch {
       println("main Thread = ${Thread.currentThread().name}")
     }
@@ -74,7 +74,7 @@ Dispatchers分類如下:<br>
 
 輸出CoroutineContext與Thread name
 {% highlight kotlin linenos %}
-fun coroutine09() = runTest {
+fun coroutine09() = runBlocking {
   val scope = CoroutineScope(Job() + Dispatchers.IO
       + CoroutineName("test"))
   val job1 = scope.launch {
