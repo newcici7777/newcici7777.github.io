@@ -2651,16 +2651,6 @@
         </li>
 	
 	
-	<li class="active" data-nav-item>
-    	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
-        
-            
-                <ul><li><a href="#lambda參數與傳回值" data-nav-link " >Lambda參數與傳回值</a><ul><li><a href="#let" data-nav-link " >let</a></li><li><a href="#run" data-nav-link " >run</a></li><li><a href="#with" data-nav-link " >with</a></li><li><a href="#also" data-nav-link " >also</a></li><li><a href="#apply" data-nav-link " >apply</a></li></ul></li><li><a href="#用法" data-nav-link " >用法</a><ul><li><a href="#let與null" data-nav-link " >let與null</a></li><li><a href="#also與null" data-nav-link " >also與null</a></li><li><a href="#run與函式參考" data-nav-link " >run與函式參考</a></li></ul></li><li><a href="#其它" data-nav-link " >其它</a><ul><li><a href="#takeif" data-nav-link " >takeIf</a></li><li><a href="#takeunless" data-nav-link " >takeUnless</a></li></ul></li></ul>
-
-            
-        </li>
-	
-	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/variable/" data-nav-link> vararg函式可變參數</a>
         
@@ -2834,6 +2824,40 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 擴展函式 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/exten_func/" data-nav-link> 泛型擴展函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/exten_func2/" data-nav-link> Iterable<T>相關函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/filter/" data-nav-link> Filter</a>
+        
+            
+        </li>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
+        
+            
+                <ul><li><a href="#擴展函式" data-nav-link " >擴展函式</a></li><li><a href="#let" data-nav-link " >let</a><ul><li><a href="#apply" data-nav-link " >apply</a></li><li><a href="#run" data-nav-link " >run</a></li><li><a href="#with" data-nav-link " >with</a></li><li><a href="#also" data-nav-link " >also</a></li></ul></li><li><a href="#用法" data-nav-link " >用法</a><ul><li><a href="#let與null" data-nav-link " >let與null</a></li><li><a href="#also與null" data-nav-link " >also與null</a></li><li><a href="#run與函式參考" data-nav-link " >run與函式參考</a></li></ul></li><li><a href="#其它" data-nav-link " >其它</a><ul><li><a href="#takeif" data-nav-link " >takeIf</a></li><li><a href="#takeunless" data-nav-link " >takeUnless</a></li></ul></li></ul>
+
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> operator </a><ul>
 	
 	
@@ -2846,6 +2870,65 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/operator_plus/" data-nav-link> plus運算子</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 協程 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/job/" data-nav-link> Job</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/context/" data-nav-link> CoroutineContext</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/launch_async/" data-nav-link> launch async</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope/" data-nav-link> 協程作用域</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/cancel/" data-nav-link> cancel</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/coroutine_exception/" data-nav-link> 協程 exception</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/flow/" data-nav-link> flow</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/runtest/" data-nav-link> runTest runBlocking</a>
         
             
         </li></ul></li></ul></li>
@@ -3324,18 +3407,20 @@
                     <p>Prerequisites:</p>
 
 <ul>
-  <li><a href="/pages/kotlin/null/">null</a></li>
   <li><a href="/pages/kotlin/lambda/">Lambda</a></li>
+  <li><a href="/pages/kotlin/exten_func/">擴展函式</a></li>
 </ul>
 
-<h2 id="lambda參數與傳回值">Lambda參數與傳回值</h2>
-<p>Lambda參數為呼叫Lambda函式(let, run, with, also, apply)的物件。</p>
+<p>請務必看完擴展函式，再看之後的內容，才容易明白。</p>
+
+<h2 id="擴展函式">擴展函式</h2>
+<p>這些擴展函式，只是為了讓程式碼比較好看。</p>
 
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">Lambda函式</th>
-      <th style="text-align: left">參數</th>
+      <th style="text-align: left">擴展函式</th>
+      <th style="text-align: left">Lambda參數</th>
       <th style="text-align: left">傳回值</th>
     </tr>
   </thead>
@@ -3368,9 +3453,13 @@
   </tbody>
 </table>
 
-<h3 id="let">let</h3>
+<h2 id="let">let</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>File("檔名").let()
+   ↑
+   it
+</code></pre></div></div>
 <ul>
-  <li>it，為呼叫Lambda函式的物件。</li>
+  <li>it，為呼叫擴展函式let()的物件，也就是File本身，<code class="language-plaintext highlighter-rouge">.let()</code>之前物件。</li>
   <li>傳回值是lambda最後一行。</li>
 </ul>
 
@@ -3383,25 +3472,90 @@
 4
 5
 6
-7
 </pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">var1</span> <span class="p">=</span> <span class="nc">File</span><span class="p">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="p">).</span><span class="nf">let</span> <span class="p">{</span>
-    <span class="n">it</span><span class="p">.</span><span class="nf">setWritable</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
     <span class="n">it</span><span class="p">.</span><span class="nf">setWritable</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
     <span class="n">it</span><span class="p">.</span><span class="nf">setExecutable</span><span class="p">(</span><span class="k">true</span><span class="p">)</span> <span class="c1">//最後一行的結果才是傳回值</span>
 <span class="p">}</span>
+<span class="c1">// 傳回值</span>
 <span class="nf">println</span><span class="p">(</span><span class="s">"var1 = $var1"</span><span class="p">)</span>
-<span class="nf">println</span><span class="p">(</span><span class="n">var1</span><span class="o">::</span><span class="k">class</span><span class="p">)</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file1 = true
-boolean (Kotlin reflection is not available)
+</code></pre></div></div>
+
+<p>沒有擴展函式之前:</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">file</span> <span class="p">=</span> <span class="nc">File</span><span class="p">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="p">)</span>
+    <span class="n">file</span><span class="p">.</span><span class="nf">setWritable</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
+    <span class="n">file</span><span class="p">.</span><span class="nf">setExecutable</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="apply">apply</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>File("檔名").apply()
+   ↑
+   this
+</code></pre></div></div>
+<ul>
+  <li>this，為呼叫擴展函式apply()的物件，也就是File本身，<code class="language-plaintext highlighter-rouge">.apply()</code>之前物件。</li>
+  <li>傳回值是this，File本身。</li>
+  <li>可以隱藏this</li>
+</ul>
+
+<p>this未隱藏前。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">file2</span> <span class="p">=</span> <span class="nc">File</span><span class="p">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="p">).</span><span class="nf">apply</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nf">setWritable</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
+    <span class="k">this</span><span class="p">.</span><span class="nf">setExecutable</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>this隱藏後。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">file2</span> <span class="p">=</span> <span class="nc">File</span><span class="p">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="p">).</span><span class="nf">apply</span> <span class="p">{</span>
+    <span class="nf">setWritable</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
+    <span class="nf">setExecutable</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"file2 = $file2"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">file2</span><span class="o">::</span><span class="k">class</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file2 = /Users/cici/testc/file_test
+class java.io.File (Kotlin reflection is not available)
 </code></pre></div></div>
 
 <h3 id="run">run</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>File("檔名").run()
+   ↑
+   this
+</code></pre></div></div>
 <ul>
-  <li>this，為呼叫Lambda函式的物件。</li>
+  <li>this，為呼叫擴展函式run()的物件，也就是File本身，<code class="language-plaintext highlighter-rouge">.run()</code>之前物件。</li>
   <li>傳回值是lambda最後一行。</li>
+  <li>可以隱藏this</li>
 </ul>
 
 <figure class="highlight">
@@ -3428,8 +3582,12 @@ boolean (Kotlin reflection is not available)
 <p>run可以呼叫函式參考</p>
 
 <h3 id="with">with</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>File("檔名").with()
+   ↑
+   this
+</code></pre></div></div>
 <ul>
-  <li>this，為呼叫Lambda函式的物件。</li>
+  <li>this，為呼叫擴展函式with()的物件，也就是File本身，<code class="language-plaintext highlighter-rouge">.with()</code>之前物件。</li>
   <li>傳回值是lambda最後一行。</li>
   <li>使用參數的方式代入，with(參數) {}</li>
 </ul>
@@ -3455,37 +3613,14 @@ boolean (Kotlin reflection is not available)
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var5 = true
 boolean (Kotlin reflection is not available)
 </code></pre></div></div>
+
 <h3 id="also">also</h3>
-<ul>
-  <li>it，為呼叫Lambda函式的物件。</li>
-  <li>傳回值是呼叫它的物件，此處是File。</li>
-</ul>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">file2</span> <span class="p">=</span> <span class="nc">File</span><span class="p">(</span><span class="s">"/Users/cici/testc/file_test"</span><span class="p">).</span><span class="nf">apply</span> <span class="p">{</span>
-    <span class="nf">setWritable</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
-    <span class="nf">setWritable</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
-    <span class="nf">setExecutable</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
-<span class="p">}</span>
-<span class="nf">println</span><span class="p">(</span><span class="s">"file2 = $file2"</span><span class="p">)</span>
-<span class="nf">println</span><span class="p">(</span><span class="n">file2</span><span class="o">::</span><span class="k">class</span><span class="p">)</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file2 = /Users/cici/testc/file_test
-class java.io.File (Kotlin reflection is not available)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>File("檔名").let()
+   ↑
+   it
 </code></pre></div></div>
-
-<h3 id="apply">apply</h3>
 <ul>
-  <li>it，為呼叫Lambda函式的物件。</li>
+  <li>it，為呼叫擴展函式also()的物件，也就是File本身，<code class="language-plaintext highlighter-rouge">.also()</code>之前物件。</li>
   <li>傳回值是呼叫它的物件，此處是File。</li>
 </ul>
 
@@ -3512,13 +3647,12 @@ class java.io.File (Kotlin reflection is not available)
 </code></pre></div></div>
 
 <h2 id="用法">用法</h2>
-<p>Lambda參數為呼叫Lambda函式(let, run, with, also, apply)的物件。</p>
 
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">Lambda函式</th>
-      <th style="text-align: left">參數</th>
+      <th style="text-align: left">擴展函式</th>
+      <th style="text-align: left">lambda參數</th>
       <th style="text-align: left">傳回值</th>
       <th style="text-align: left">用法</th>
     </tr>
@@ -3634,9 +3768,7 @@ java程式設計
 2
 3
 4
-5
 </pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">res2</span> <span class="p">=</span> <span class="nf">with</span><span class="p">(</span><span class="n">file</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">//"file name = ${name}  length = ${length()} byte."</span>
     <span class="k">this</span><span class="p">.</span><span class="nf">readText</span><span class="p">().</span><span class="nf">contains</span><span class="p">(</span><span class="s">"Java"</span><span class="p">)</span>
 <span class="p">}</span>
 <span class="nf">println</span><span class="p">(</span><span class="s">"res2 = $res2"</span><span class="p">)</span>
@@ -3875,14 +4007,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/kotlin/lambda" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Lambda">
+                        <a href="/pages/kotlin/filter" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Filter">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/kotlin/variable" class="navigation navigation-next navigation-unique" aria-label="Next page: vararg函式可變參數">
+                        <a href="/pages/kotlin/component" class="navigation navigation-next navigation-unique" aria-label="Next page: Component 解構">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -4002,7 +4134,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-09-16 08:51:25 +0800"
+        "time": "2025-10-03 15:21:56 +0800"
     },
     "basePath": "",
     "book": {

@@ -2655,13 +2655,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/kotlin/variable/" data-nav-link> vararg函式可變參數</a>
         
             
@@ -2834,6 +2827,37 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 擴展函式 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/exten_func/" data-nav-link> 泛型擴展函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/exten_func2/" data-nav-link> Iterable<T>相關函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/filter/" data-nav-link> Filter</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> operator </a><ul>
 	
 	
@@ -2846,6 +2870,65 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/operator_plus/" data-nav-link> plus運算子</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 協程 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/job/" data-nav-link> Job</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/context/" data-nav-link> CoroutineContext</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/launch_async/" data-nav-link> launch async</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope/" data-nav-link> 協程作用域</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/cancel/" data-nav-link> cancel</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/coroutine_exception/" data-nav-link> 協程 exception</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/flow/" data-nav-link> flow</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/runtest/" data-nav-link> runTest runBlocking</a>
         
             
         </li></ul></li></ul></li>
@@ -3727,6 +3810,63 @@ hello
 hello
 </code></pre></div></div>
 
+<p>i由0開始到9。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>    <span class="nf">repeat</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">{</span> <span class="n">i</span> <span class="p">-&gt;</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"i = $i"</span><span class="p">)</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = 0
+i = 1
+i = 2
+i = 3
+i = 4
+i = 5
+i = 6
+i = 7
+i = 8
+i = 9
+</code></pre></div></div>
+
+<p>每1秒，輸出一次i。<br />
+以下程式碼要在runBlocking阻塞的環境中才看的到。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutin25</span><span class="p">()</span> <span class="p">=</span> <span class="nf">runBlocking</span> <span class="p">{</span>
+    <span class="nf">repeat</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">{</span> <span class="n">i</span> <span class="p">-&gt;</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"i = $i"</span><span class="p">)</span>
+      <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = 0
+i = 1
+i = 2
+i = 3
+i = 4
+i = 5
+i = 6
+i = 7
+i = 8
+i = 9
+</code></pre></div></div>
+
 <h2 id="while與遞增遞減">while與遞增遞減</h2>
 <ul>
   <li><a href="/pages/java/plusplus/">遞增遞減</a></li>
@@ -4191,7 +4331,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-09-16 08:51:25 +0800"
+        "time": "2025-10-03 15:21:56 +0800"
     },
     "basePath": "",
     "book": {

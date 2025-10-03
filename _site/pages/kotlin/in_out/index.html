@@ -2652,13 +2652,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/kotlin/variable/" data-nav-link> vararg函式可變參數</a>
         
             
@@ -2828,8 +2821,39 @@
     	<a href="/pages/kotlin/in_out/" data-nav-link> in out 泛型轉型</a>
         
             
-                <ul><li><a href="#out" data-nav-link " >out</a></li><li><a href="#in" data-nav-link " >in</a></li><li><a href="#轉型" data-nav-link " >轉型</a></li></ul>
+                <ul><li><a href="#interface-介面" data-nav-link " >Interface 介面</a><ul><li><a href="#product生產者介面" data-nav-link " >Product生產者介面</a></li><li><a href="#consumer消費者介面" data-nav-link " >Consumer消費者介面</a></li></ul></li><li><a href="#父類別與子類別" data-nav-link " >父類別與子類別</a></li><li><a href="#實作interface" data-nav-link " >實作Interface</a><ul><li><a href="#覆寫product介面方法" data-nav-link " >覆寫Product介面方法</a></li><li><a href="#覆寫consumer介面方法" data-nav-link " >覆寫Consumer介面方法</a></li></ul></li><li><a href="#泛型類別透過介面轉型" data-nav-link " >泛型類別透過介面轉型</a><ul><li><a href="#子類泛型轉父類泛型" data-nav-link " >子類泛型轉父類泛型</a></li><li><a href="#父類泛型轉子類泛型" data-nav-link " >父類泛型轉子類泛型</a></li></ul></li><li><a href="#java無法泛型轉型" data-nav-link " >Java無法泛型轉型</a><ul><li><a href="#子類泛型轉父類泛型-1" data-nav-link " >子類泛型轉父類泛型</a></li><li><a href="#父類泛型轉子類泛型-1" data-nav-link " >父類泛型轉子類泛型</a></li></ul></li></ul>
 
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 擴展函式 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/exten_func/" data-nav-link> 泛型擴展函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/exten_func2/" data-nav-link> Iterable<T>相關函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/filter/" data-nav-link> Filter</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
+        
             
         </li></ul></li>
 	
@@ -2846,6 +2870,65 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/operator_plus/" data-nav-link> plus運算子</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 協程 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/job/" data-nav-link> Job</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/context/" data-nav-link> CoroutineContext</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/launch_async/" data-nav-link> launch async</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope/" data-nav-link> 協程作用域</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/cancel/" data-nav-link> cancel</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/coroutine_exception/" data-nav-link> 協程 exception</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/flow/" data-nav-link> flow</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/runtest/" data-nav-link> runTest runBlocking</a>
         
             
         </li></ul></li></ul></li>
@@ -3321,51 +3404,53 @@
                         <h1 id="/pages/kotlin/in_out">in out 泛型轉型</h1>
                     
 
-                    <h2 id="out">out</h2>
-<p>泛型類型只能作為方法傳回值。<br /></p>
+                    <p>泛型轉型主要是透過「泛型介面」轉型。</p>
 
-<p>泛型類型前面加上out。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class 類別名&lt;out T&gt;
-</code></pre></div></div>
-
-<p>下面建構子是private，代表建立物件要設初始值，不能被更改。<br /></p>
+<h2 id="interface-介面">Interface 介面</h2>
+<h3 id="product生產者介面">Product生產者介面</h3>
+<p>out視為輸出，方法只能傳回return T類型的物件。<br />以下是生產者介面，只有一個方法，product()負責生產T類型的東西。<br />
+實作的子類別，必須實作product()方法。<br /></p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-4
-5
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Producer</span><span class="p">&lt;</span><span class="k">out</span> <span class="nc">T</span><span class="p">&gt;(</span><span class="k">private</span> <span class="kd">val</span> <span class="py">item</span><span class="p">:</span> <span class="nc">T</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">fun</span> <span class="nf">get</span><span class="p">():</span> <span class="nc">T</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">item</span>
-    <span class="p">}</span>
+</pre></td><td class="code"><pre><span class="kd">interface</span> <span class="nc">Production</span><span class="p">&lt;</span><span class="k">out</span> <span class="nc">T</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">fun</span> <span class="nf">product</span><span class="p">()</span> <span class="p">:</span> <span class="nc">T</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="in">in</h2>
-<p>泛型類型只能作為方法的參數。<br /></p>
-
-<p>泛型類型前面加上in。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class 類別名&lt;in T&gt;
-</code></pre></div></div>
+<h3 id="consumer消費者介面">Consumer消費者介面</h3>
+<p>in視為輸入，方法只能傳入T類型的參數，不能有傳回值。<br />以下是消費者介面，只有一個方法，consume()負責接收T類型參數。<br />
+實作的子類別，必須實作consume()方法。<br /></p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-4
-5
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Consumer</span><span class="p">&lt;</span><span class="k">in</span> <span class="nc">T</span><span class="p">&gt;</span> <span class="p">{</span>
-    <span class="k">fun</span> <span class="nf">consume</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="nc">T</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nf">println</span><span class="p">(</span><span class="s">"消費 $item"</span><span class="p">)</span>
-    <span class="p">}</span>
+</pre></td><td class="code"><pre><span class="kd">interface</span> <span class="nc">Consumer</span><span class="p">&lt;</span><span class="k">in</span> <span class="nc">T</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">fun</span> <span class="nf">consume</span><span class="p">(</span><span class="n">item</span><span class="p">:</span><span class="nc">T</span><span class="p">)</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<h2 id="轉型">轉型</h2>
+<h2 id="父類別與子類別">父類別與子類別</h2>
+<p>父類別是Animal，子類別是Fish</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">open</span> <span class="kd">class</span> <span class="nc">Animal</span>
+
+<span class="kd">class</span> <span class="nc">Fish</span><span class="p">:</span><span class="nc">Animal</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="實作interface">實作Interface</h2>
+<h3 id="覆寫product介面方法">覆寫Product介面方法</h3>
+<p>實作的Product介面的子類別，一定要覆寫product()方法。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -3381,41 +3466,120 @@
 11
 12
 13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">Producer</span><span class="p">&lt;</span><span class="k">out</span> <span class="nc">T</span><span class="p">&gt;(</span><span class="k">private</span> <span class="kd">val</span> <span class="py">item</span><span class="p">:</span> <span class="nc">T</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">fun</span> <span class="nf">get</span><span class="p">():</span> <span class="nc">T</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">item</span>
+</pre></td><td class="code"><pre><span class="c1">// 賣魚商店</span>
+<span class="kd">class</span> <span class="nc">FishStroe</span><span class="p">:</span><span class="nc">Production</span><span class="p">&lt;</span><span class="nc">Fish</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">override</span> <span class="k">fun</span> <span class="nf">product</span><span class="p">():</span> <span class="nc">Fish</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nc">Fish</span><span class="p">()</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="k">open</span> <span class="kd">class</span> <span class="nc">Food</span><span class="p">(</span><span class="kd">val</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">)</span>
-<span class="kd">class</span> <span class="nc">Burger</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">)</span> <span class="p">:</span> <span class="nc">Food</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-
-<span class="kd">class</span> <span class="nc">Consumer</span><span class="p">&lt;</span><span class="k">in</span> <span class="nc">T</span><span class="p">&gt;</span> <span class="p">{</span>
-    <span class="k">fun</span> <span class="nf">consume</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="nc">T</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nf">println</span><span class="p">(</span><span class="s">"消費 $item"</span><span class="p">)</span>
+<span class="c1">// 賣動物商店</span>
+<span class="kd">class</span> <span class="nc">AnimalStroe</span><span class="p">:</span><span class="nc">Production</span><span class="p">&lt;</span><span class="nc">Animal</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">override</span> <span class="k">fun</span> <span class="nf">product</span><span class="p">():</span> <span class="nc">Animal</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nc">Animal</span><span class="p">()</span>
     <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// 子類泛型轉父類泛型</span>
-    <span class="kd">val</span> <span class="py">foodProducer</span><span class="p">:</span><span class="nc">Producer</span><span class="p">&lt;</span><span class="nc">Food</span><span class="p">&gt;</span> <span class="p">=</span> <span class="nc">Producer</span><span class="p">&lt;</span><span class="nc">Burger</span><span class="p">&gt;(</span><span class="nc">Burger</span><span class="p">(</span><span class="s">"大享堡"</span><span class="p">))</span>
-    <span class="c1">// 父類泛型</span>
-    <span class="kd">val</span> <span class="py">foodConsumer</span><span class="p">:</span><span class="nc">Consumer</span><span class="p">&lt;</span><span class="nc">Food</span><span class="p">&gt;</span> <span class="p">=</span> <span class="nc">Consumer</span><span class="p">()</span>
-    <span class="c1">// 父類泛型轉子類泛型</span>
-    <span class="kd">val</span> <span class="py">burgerConsumer</span><span class="p">:</span><span class="nc">Consumer</span><span class="p">&lt;</span><span class="nc">Burger</span><span class="p">&gt;</span> <span class="p">=</span> <span class="n">foodConsumer</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
+<h3 id="覆寫consumer介面方法">覆寫Consumer介面方法</h3>
+<p>實作的Consumer介面的子類別，一定要覆寫consume()方法。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="c1">// 買魚的消費者</span>
+<span class="kd">class</span> <span class="nc">FishConsumer</span><span class="p">:</span><span class="nc">Consumer</span><span class="p">&lt;</span><span class="nc">Fish</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">override</span> <span class="k">fun</span> <span class="nf">consume</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="nc">Fish</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"eat fish"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// 買動物的消費者</span>
+<span class="kd">class</span> <span class="nc">AnimalConsumer</span><span class="p">:</span><span class="nc">Consumer</span><span class="p">&lt;</span><span class="nc">Animal</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">override</span> <span class="k">fun</span> <span class="nf">consume</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="nc">Animal</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"eat Animal"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="泛型類別透過介面轉型">泛型類別透過介面轉型</h2>
+<h3 id="子類泛型轉父類泛型">子類泛型轉父類泛型</h3>
+<p>下面程式碼，等號左邊是Production介面，泛型類型是Animal，但實際上是FishStore的類別，執行product()方法，收到的是魚Fish物件。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>    <span class="kd">val</span> <span class="py">animalStroe</span><span class="p">:</span><span class="nc">Production</span><span class="p">&lt;</span><span class="nc">Animal</span><span class="p">&gt;</span> <span class="p">=</span> <span class="nc">FishStroe</span><span class="p">()</span>
+    <span class="kd">val</span> <span class="py">obj</span> <span class="p">=</span> <span class="n">animalStroe</span><span class="p">.</span><span class="nf">product</span><span class="p">()</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">obj</span><span class="p">.</span><span class="nf">toString</span><span class="p">())</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Fish@1be6f5c3
+</code></pre></div></div>
+<h3 id="父類泛型轉子類泛型">父類泛型轉子類泛型</h3>
+<p>下面程式碼，等號左邊是Consumer介面，泛型類型是Fish，等號右邊指派的是AnimalConsumer，呼叫consume()方法，實際上是執行AnimalConsumer.consume()方法。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>    <span class="kd">val</span> <span class="py">fishConsumer</span><span class="p">:</span><span class="nc">Consumer</span><span class="p">&lt;</span><span class="nc">Fish</span><span class="p">&gt;</span> <span class="p">=</span> <span class="nc">AnimalConsumer</span><span class="p">()</span>
+    <span class="n">fishConsumer</span><span class="p">.</span><span class="nf">consume</span><span class="p">(</span><span class="nc">Fish</span><span class="p">())</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>eat Animal
+</code></pre></div></div>
+
+<h2 id="java無法泛型轉型">Java無法泛型轉型</h2>
+<h3 id="子類泛型轉父類泛型-1">子類泛型轉父類泛型</h3>
+<p>以下編譯不過。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">List</span><span class="o">&lt;</span><span class="nc">Animal</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Fish</span><span class="o">&gt;();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>Kotlin透過泛型介面，可以子類泛型轉型成父類泛型。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">animalStroe</span><span class="p">:</span><span class="nc">Production</span><span class="p">&lt;</span><span class="nc">Animal</span><span class="p">&gt;</span> <span class="p">=</span> <span class="nc">FishStroe</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="父類泛型轉子類泛型-1">父類泛型轉子類泛型</h3>
+<p>以下編譯不過。</p>
+
+<figure class="highlight">
+  <pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nc">List</span><span class="o">&lt;</span><span class="nc">Fish</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Animal</span><span class="o">&gt;();</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>Kotlin透過泛型介面，可以父類泛型轉型成子類泛型。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">fishConsumer</span><span class="p">:</span><span class="nc">Consumer</span><span class="p">&lt;</span><span class="nc">Fish</span><span class="p">&gt;</span> <span class="p">=</span> <span class="nc">AnimalConsumer</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3486,7 +3650,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/kotlin/component" class="navigation navigation-next navigation-unique" aria-label="Next page: Component 解構">
+                        <a href="/pages/kotlin/exten_func" class="navigation navigation-next navigation-unique" aria-label="Next page: 泛型擴展函式">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3606,7 +3770,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-09-16 08:51:25 +0800"
+        "time": "2025-10-03 15:21:56 +0800"
     },
     "basePath": "",
     "book": {

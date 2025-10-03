@@ -359,4 +359,4 @@ launch class = StandaloneCoroutine
 runBlocking class = TestScopeImpl
 ```
 
-[1]: {% link _pages/kotlin/runBlocking.md %}
+[1]: {% link _pages/kotlin/runtest.md %}

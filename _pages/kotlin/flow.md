@@ -178,26 +178,6 @@ data = abc
 data = def
 data = ghi
 ```
-## onEach
-設定每一個元素要做什麼事。<br>
-以下程式碼設定每個元素都要暫停1秒，再發射。<br>
-執行結果，每筆資料的時間相差約1000ms。<br>
-{% highlight kotlin linenos %}
-@Test
-fun coroutine13() = runBlocking<Unit> {
-  flowOf("abc", "def", "ghi")
-    .onEach { delay(1000) }
-    .collect {
-      val time = System.currentTimeMillis()
-    println("time = $time  data = $it")
-  }
-}
-{% endhighlight %}
-```
-time = 1759461086051  data = abc
-time = 1759461087068  data = def
-time = 1759461088070  data = ghi
-```
 
 ## 同一個執行緒與context
 flow從emit()到collect()都是在同一個Context，同一個執行緒。<br>
@@ -277,5 +257,163 @@ Collected 2 Test worker @coroutine#1
 Collected 3 Test worker @coroutine#1
 ```
 
+## onEach
+設定每一個元素要做什麼事。<br>
+以下程式碼設定每個元素都要暫停1秒，再發射。<br>
+執行結果，每筆資料的時間相差約1000ms。<br>
+{% highlight kotlin linenos %}
+@Test
+fun coroutine13() = runBlocking<Unit> {
+  flowOf("abc", "def", "ghi")
+    .onEach { delay(1000) }
+    .collect {
+      val time = System.currentTimeMillis()
+    println("time = $time  data = $it")
+  }
+}
+{% endhighlight %}
+```
+time = 1759461086051  data = abc
+time = 1759461087068  data = def
+time = 1759461088070  data = ghi
+```
+### onEach沒有collect功能
+以下程式碼，若只有呼叫onEach()，最後沒有用collect()，就算資料發射，也沒有人去接收。
+{% highlight kotlin linenos %}
+  fun events() = (1 .. 3)
+    .asFlow().flowOn(Dispatchers.IO)
+  @Test
+  fun coroutine15() = runBlocking<Unit> {
+    events()
+      .onEach { event ->
+        println("Event: $event ${Thread.currentThread().name}") }
+      .collect {}
+  }
+{% endhighlight %}
+```
+Event: 1 Test worker @coroutine#1
+Event: 2 Test worker @coroutine#1
+Event: 3 Test worker @coroutine#1
+```
+
+## asFlow()指派給函式
+以下events()函式，指派`=` (1..3).asFlow() 給函式。<br>
+onEach印出event()發射方(emit)的Thread。<br>
+{% highlight kotlin linenos %}
+fun events() =
+  (1..3).asFlow().onEach { event ->
+    println("events() $event ${Thread.currentThread().name}")
+  }.flowOn(Dispatchers.IO)
+{% endhighlight %}
+
+coroutine15()中的onEach印出接收方(collect)的thared。<br>
+真正接收資料是collect()函式。<br>
+{% highlight kotlin linenos %}
+@Test
+fun coroutine15() = runBlocking<Unit> {
+  events()
+    .onEach { event ->
+      println("coroutine15(): $event ${Thread.currentThread().name}")
+    }
+    .collect { value ->
+      println("data= $value ${Thread.currentThread().name}")
+    }
+}
+{% endhighlight %}
+```
+events() 1 DefaultDispatcher-worker-1 @coroutine#2
+events() 2 DefaultDispatcher-worker-1 @coroutine#2
+events() 3 DefaultDispatcher-worker-1 @coroutine#2
+coroutine15(): 1 Test worker @coroutine#1
+data= 1 Test worker @coroutine#1
+coroutine15(): 2 Test worker @coroutine#1
+data= 2 Test worker @coroutine#1
+coroutine15(): 3 Test worker @coroutine#1
+data= 3 Test worker @coroutine#1
+```
 ## launchIn()改變Scope
-除了改變Context之外，launchIn()可以改變Scope。
+launchIn()可以改變Scope。<br>
+this代表目前的Thread。<br>
+```
+launchIn(this)
+```
+{% highlight kotlin linenos %}
+fun events() =
+  (1..3).asFlow().onEach { event ->
+    println("events() $event ${Thread.currentThread().name}")
+  }.flowOn(Dispatchers.IO)
+
+@Test
+fun coroutine15() = runBlocking<Unit> {
+  events()
+    .onEach { event ->
+      println("coroutine15(): $event ${Thread.currentThread().name}")
+    }.launchIn(this)
+}
+{% endhighlight %}
+```
+events() 1 DefaultDispatcher-worker-1 @coroutine#3
+events() 2 DefaultDispatcher-worker-1 @coroutine#3
+events() 3 DefaultDispatcher-worker-1 @coroutine#3
+coroutine15(): 1 Test worker @coroutine#2
+coroutine15(): 2 Test worker @coroutine#2
+coroutine15(): 3 Test worker @coroutine#2
+```
+
+### scope
+因為變成別的scope，所以最後要使用join()，這樣runBlocking的Scope才會等待CoroutineScope結束才結束，不然印不出來結果。
+```
+.launchIn(CoroutineScope(Dispatchers.Default))
+.join()
+```
+{% highlight kotlin linenos %}
+  fun events() =
+    (1..3).asFlow().onEach { event ->
+      println("events() $event ${Thread.currentThread().name}")
+    }.flowOn(Dispatchers.IO)
+
+  @Test
+  fun coroutine15() = runBlocking<Unit> {
+    events()
+      .onEach { event ->
+        println("coroutine15(): $event ${Thread.currentThread().name}")
+      }.launchIn(CoroutineScope(Dispatchers.Default))
+      .join()
+  }
+{% endhighlight %}
+
+### launchIn 傳回值
+launchIn()會傳回Job，因此可以去接收傳回值。
+{% highlight kotlin linenos %}
+public fun <T> Flow<T>.launchIn(scope: CoroutineScope): Job = scope.launch {
+    collect() // tail-call
+}
+{% endhighlight %}
+
+以下程式碼，接收launchIn()的傳回值，並且在2.5秒取消協程。<br>
+onEach設為1秒發射(emit)一次。<br>
+結果只有接收2筆。<br>
+{% highlight kotlin linenos %}
+  fun events() =
+    (1..3).asFlow().onEach {
+      delay(1000)
+    }.flowOn(Dispatchers.IO)
+
+  @Test
+  fun coroutine15() = runBlocking<Unit> {
+    val job = events()
+      .onEach { event ->
+        val time = System.currentTimeMillis()
+        println("event(): $event time = $time")
+      }.launchIn(CoroutineScope(Dispatchers.Default))
+    delay(2500)
+    job.cancel()
+    job.join()
+  }
+{% endhighlight %}
+```
+event(): 1 time = 1759476638927
+event(): 2 time = 1759476639932
+```
+
+## Cancel Flow

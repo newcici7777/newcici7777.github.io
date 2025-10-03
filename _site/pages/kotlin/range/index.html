@@ -2610,7 +2610,7 @@
     	<a href="/pages/kotlin/range/" data-nav-link> IntRange區間與in</a>
         
             
-                <ul><li><a href="#in" data-nav-link " >in</a></li><li><a href="#in-1" data-nav-link " >!in</a></li><li><a href="#range作為變數" data-nav-link " >Range作為變數</a></li><li><a href="#for與in" data-nav-link " >for與in</a><ul><li><a href="#全包區間" data-nav-link " >全包區間..</a></li><li><a href="#半包區間until" data-nav-link " >半包區間until</a></li><li><a href="#downto" data-nav-link " >downTo</a></li><li><a href="#step" data-nav-link " >step</a></li></ul></li><li><a href="#while與in" data-nav-link " >while與in</a></li></ul>
+                <ul><li><a href="#in" data-nav-link " >in</a></li><li><a href="#in-1" data-nav-link " >!in</a></li><li><a href="#range作為變數" data-nav-link " >Range作為變數</a></li><li><a href="#contans" data-nav-link " >contans</a></li><li><a href="#range開始與結束" data-nav-link " >Range開始與結束</a></li><li><a href="#for與in" data-nav-link " >for與in</a><ul><li><a href="#全包區間" data-nav-link " >全包區間..</a></li><li><a href="#半包區間until" data-nav-link " >半包區間until</a></li><li><a href="#downto" data-nav-link " >downTo</a></li><li><a href="#step" data-nav-link " >step</a></li></ul></li><li><a href="#while與in" data-nav-link " >while與in</a></li><li><a href="#range與集合" data-nav-link " >Range與集合</a></li></ul>
 
             
         </li>
@@ -2649,13 +2649,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/lambda/" data-nav-link> Lambda</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
         
             
         </li>
@@ -2834,6 +2827,37 @@
         </li></ul></li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 擴展函式 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/exten_func/" data-nav-link> 泛型擴展函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/exten_func2/" data-nav-link> Iterable<T>相關函式</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/filter/" data-nav-link> Filter</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope_fun/" data-nav-link> let,run,with,also,apply...</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> operator </a><ul>
 	
 	
@@ -2846,6 +2870,65 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/operator_plus/" data-nav-link> plus運算子</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 協程 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/job/" data-nav-link> Job</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/context/" data-nav-link> CoroutineContext</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/launch_async/" data-nav-link> launch async</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope/" data-nav-link> 協程作用域</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/cancel/" data-nav-link> cancel</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/coroutine_exception/" data-nav-link> 協程 exception</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/flow/" data-nav-link> flow</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/runtest/" data-nav-link> runTest runBlocking</a>
         
             
         </li></ul></li></ul></li>
@@ -3333,8 +3416,8 @@
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">charRange</span> <span class="p">=</span> <span class="sc">'a'</span> <span class="o">..</span> <span class="sc">'z'</span> <span class="c1">//全包區間</span>
-<span class="kd">val</span> <span class="py">intRange</span> <span class="p">=</span> <span class="mi">1</span> <span class="n">until</span> <span class="mi">10</span> <span class="c1">//半包區間，不包含10</span>
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">charRange</span> <span class="p">=</span> <span class="sc">'a'</span> <span class="o">..</span> <span class="sc">'z'</span> <span class="c1">//包含a到z</span>
+<span class="kd">val</span> <span class="py">intRange</span> <span class="p">=</span> <span class="mi">1</span> <span class="n">until</span> <span class="mi">10</span> <span class="c1">//1到9，不包含10</span>
 <span class="kd">val</span> <span class="py">stepRange</span> <span class="p">=</span> <span class="mi">1</span> <span class="o">..</span> <span class="mi">10</span> <span class="n">step</span> <span class="mi">2</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -3376,6 +3459,35 @@ true
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>false
 true
 </code></pre></div></div>
+
+<h2 id="contans">contans</h2>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>    <span class="kd">val</span> <span class="py">range</span> <span class="p">=</span> <span class="mi">2</span> <span class="o">..</span> <span class="mi">7</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">range</span><span class="p">.</span><span class="nf">contains</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>true
+</code></pre></div></div>
+
+<h2 id="range開始與結束">Range開始與結束</h2>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">range</span> <span class="p">=</span> <span class="mi">2</span> <span class="o">..</span> <span class="mi">7</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">range</span><span class="p">)</span>          <span class="c1">// 輸出: 2..7</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">range</span><span class="p">.</span><span class="n">first</span><span class="p">)</span>    <span class="c1">// 輸出: 2</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">range</span><span class="p">.</span><span class="n">last</span><span class="p">)</span>     <span class="c1">// 輸出: 7</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">range</span><span class="p">.</span><span class="n">step</span><span class="p">)</span>     <span class="c1">// 輸出: 1</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 <h2 id="for與in">for與in</h2>
 <h3 id="全包區間">全包區間..</h3>
@@ -3521,6 +3633,31 @@ e
 10
 11
 </code></pre></div></div>
+
+<h2 id="range與集合">Range與集合</h2>
+<p>有以下二種方法建立集合。</p>
+<ol>
+  <li>先建立range變數，再呼叫toList()函式。</li>
+  <li>(2 .. 7).toList()</li>
+</ol>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">range</span> <span class="p">=</span> <span class="mi">2</span> <span class="o">..</span> <span class="mi">7</span>
+<span class="c1">// 轉成list</span>
+<span class="kd">val</span> <span class="py">list</span> <span class="p">=</span> <span class="n">range</span><span class="p">.</span><span class="nf">toList</span><span class="p">()</span>
+<span class="c1">// 轉成陣列</span>
+<span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="p">(</span><span class="mi">2</span> <span class="o">..</span> <span class="mi">7</span><span class="p">).</span><span class="nf">toList</span><span class="p">().</span><span class="nf">toIntArray</span><span class="p">()</span>
+<span class="c1">// set沒有重覆的值</span>
+<span class="kd">val</span> <span class="py">set</span> <span class="p">=</span> <span class="n">range</span><span class="p">.</span><span class="nf">toSet</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3711,7 +3848,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-09-16 08:51:25 +0800"
+        "time": "2025-10-03 15:21:56 +0800"
     },
     "basePath": "",
     "book": {
