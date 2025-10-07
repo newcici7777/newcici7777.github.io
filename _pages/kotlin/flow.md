@@ -390,7 +390,7 @@ public fun <T> Flow<T>.launchIn(scope: CoroutineScope): Job = scope.launch {
 }
 {% endhighlight %}
 
-以下程式碼，接收launchIn()的傳回值，並且在2.5秒取消協程。<br>
+以下程式碼，接收launchIn()的傳回值Job，並且在2.5秒取消協程。<br>
 onEach設為1秒發射(emit)一次。<br>
 結果只有接收2筆。<br>
 {% highlight kotlin linenos %}
@@ -417,3 +417,198 @@ event(): 2 time = 1759476639932
 ```
 
 ## Cancel Flow
+flow發射emit有使用ensureActive來確認collect接收方是否已經取消接收。
+### cancel()
+收集資料到i == 3，就cancel flow。
+{% highlight kotlin linenos %}
+  fun testFlow5() = flow<Int> {
+    for (i in 1..5) {
+      delay(1000)
+      emit(i)
+      println("emit = $i")
+    }
+  }
+  @Test
+  fun coroutine18() = runBlocking<Unit> {
+    testFlow5().collect { value ->
+      println(value)
+      // 收集資料到i == 3，就cancel flow。
+      if (value == 3) cancel()
+    }
+  }
+{% endhighlight %}
+```
+1
+emit = 1
+2
+emit = 2
+3
+emit = 3
+
+BlockingCoroutine was cancelled
+```
+### withTimeoutOrNull
+testFlow4()每一秒發射一次，發完1到3需要3秒鐘，但是`withTimeoutOrNull(2500)`代表2.5秒後會被取消協程，所以執行結果只有發射2筆。<br>
+{% highlight kotlin linenos %}
+  fun testFlow4() = flow<Int> {
+    for (i in 1 .. 3) {
+      delay(1000)
+      emit(i)
+      println("emit = $i")
+    }
+  }
+
+  @Test
+  fun coroutine17() = runBlocking<Unit> {
+    withTimeoutOrNull(2500) {
+      testFlow4().collect { value ->
+        println(value)
+      }
+    }
+  }
+{% endhighlight %}
+```
+1
+emit = 1
+2
+emit = 2
+```
+### asFlow cancellable
+asFlow的cancel一定要加上cancellable()，因為asFlow是一次性的發射(emit)，不用cancellable無法使用cancel()
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutine16() = runBlocking<Unit> {
+    (1..5).asFlow().cancellable().collect { value ->
+      println(value)
+      if (value == 3) cancel()
+    }
+  }
+{% endhighlight %}
+```
+1
+2
+3
+
+BlockingCoroutine was cancelled
+kotlinx.coroutines.JobCancellationException: BlockingCoroutine was cancelled; job=nul
+```
+## buffer
+發射的時間比較快，每發射一筆資料要花100 ms，但接收的時間比較慢，每接收一筆要花200ms。<br>
+如何使用buffer讓每一筆資料是同時發射呢？<br>
+
+### flow emit是依序執行
+所謂emit依序執行，就是發射完一個，再發射下一個，以下程式碼計算emit發射的時間，發射5次，總共為500ms 左右。<br>
+但接收端仍是依序接收，接收每一次就暫停200 ms，接收5次就暫停1000 ms。<br>
+總共花費時間約1500 ms。<br>
+{% highlight kotlin linenos %}
+  fun testFlow6() = flow<Int> {
+    for (i in 1..5) {
+      delay(100)
+      emit(i)
+      println("emit = $i")
+    }
+  }
+
+  @Test
+  fun coroutine19() = runBlocking<Unit> {
+    val time = measureTimeMillis {
+      testFlow6().collect { value ->
+        delay(200)
+        println(value)
+      }
+    }
+    println("total emit time = $time ms")
+  }
+{% endhighlight %}
+```
+1
+emit = 1
+2
+emit = 2
+3
+emit = 3
+4
+emit = 4
+5
+emit = 5
+total emit time = 1573 ms
+```
+
+### flow buffer()同時發射
+接收端每200秒接收一次，使用buffer(大小)，會讓emit同時發射，同時發射5筆只會使用100 ms。<br>
+但接收端仍是依序接收，接收每一次就暫停200 ms，接收5次就暫停1000 ms。<br>
+所以總共花費時間約1100 ms。
+{% highlight kotlin linenos %}
+  fun testFlow6() = flow<Int> {
+    for (i in 1..5) {
+      delay(100)
+      emit(i)
+      println("emit = $i")
+    }
+  }
+  @Test
+  fun coroutine20() = runBlocking<Unit> {
+    val time = measureTimeMillis {
+      testFlow6().buffer(50).collect { value ->
+        delay(200)
+        println(value)
+      }
+    }
+    println("total emit time = $time ms")
+  }  
+{% endhighlight %}
+```
+emit = 1
+emit = 2
+1
+emit = 3
+emit = 4
+2
+emit = 5
+3
+4
+5
+total emit time = 1169 ms
+```
+### 與flowOn的區別
+buffer不會改變發射方的Thread，發射跟接收都是在同一個Thread。<br>
+而先前的flowOn()，使發射方可以與接收方同時進行，而不是依序執行，發射方的Thread與接收方的Thread是不同的。<br>
+以下程式執行時間也是約1100 ms，但使用的原理是不同。<br>
+{% highlight kotlin linenos %}
+  fun testFlow6() = flow<Int> {
+    for (i in 1..5) {
+      delay(100)
+      emit(i)
+      println("emit = $i")
+    }
+  }
+  @Test
+  fun coroutine21() = runBlocking<Unit> {
+    val time = measureTimeMillis {
+      testFlow6().flowOn(Dispatchers.Default).collect { value ->
+        delay(200)
+        println(value)
+      }
+    }
+    println("total emit time = $time ms")
+  }
+{% endhighlight %}
+```
+emit = 1
+emit = 2
+1
+emit = 3
+emit = 4
+2
+emit = 5
+3
+4
+5
+total emit time = 1159 ms
+```
+
+## 改變上游
+Flow(流)，分為上游與下游，上游是指發射端emit的部分，下游是指接收端collect的部分。<br>
+
+### transform
+transform可以改變上游，讓發射端，發射多筆。<br>

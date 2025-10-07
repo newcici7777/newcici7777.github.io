@@ -8,8 +8,8 @@ launch()與async()是建立子協程，並且啟動執行子協程。<br>
 launch()與async()，傳回值是Job物件，Job物件管理協程的生命周期。<br>
 
 ### launch async同時執行
-runTest是父協程，裡面包含了job1與job2二個子協程。<br>
-runTest會等待job1與job2執行完畢。<br>
+runBlocking是父協程，裡面包含了job1與job2二個子協程。<br>
+runBlocking會等待job1與job2執行完畢。<br>
 launch、async都是同時執行，job2不用等待job1執行完畢才執行。<br>
 {% highlight kotlin linenos %}
   fun coroutin01() = runBlocking {
@@ -105,7 +105,11 @@ job1先執行，job1執行完，才輪job2與job3，job2、job3同時執行。(�
     }
   }
 {% endhighlight %}
-
+```
+job1 finished
+job2 finished
+job3 finished
+```
 ### join()執行完才輪其它協程
 ```
 job1.join()
@@ -128,7 +132,11 @@ job1先執行，job1執行完，才輪job2與job3，job2、job3同時執行。(�
     }
   }
 {% endhighlight %}
-
+```
+job1 finished
+job2 finished
+job3 finished
+```
 ### 逐步執行與同時執行
 #### 沒加async是逐步執行
 measureTimeMillis()是計算執行時間。<br>
@@ -268,7 +276,8 @@ testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
 要import runTest
 {% highlight kotlin linenos %}
 import kotlinx.coroutines.test.runTest
-{% endhighlight %}
+{% endhig```
+hlight %}
 
 主要程式內容
 {% highlight kotlin linenos %}

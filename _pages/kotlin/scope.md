@@ -34,7 +34,7 @@ fun example2() = runBlocking {
 {% endhighlight %}
 
 ### CoroutineScope
-建立一個獨立CoroutineScope作用域，runBlocking的作用域為TestScope。<br>
+建立一個獨立CoroutineScope作用域，runBlocking的作用域為BlockingCoroutine。<br>
 
 CoroutineScope下面有一個子協程，名字為job1。<br>
 
@@ -58,7 +58,7 @@ fun coroutin07() = runBlocking {
 runBlocking協程與作用域協程，沒有父子關係，所以runBlocking協程執行完畢就結束，<span class="markline">不會等待</span>CoroutineScope下的job1子協程執行完。<br>
 
 #### delay暫停
-增加一個delay(大於1000)，因為CoroutineScope下的子協程執行時為1秒，要讓TestScope(runBlocking)暫停超過1秒，再結束runBlocking協程。<br>
+增加一個delay(大於1000)，因為CoroutineScope下的子協程執行時為1秒，要讓runBlocking暫停超過1秒，再結束runBlocking協程。<br>
 
 delay()參數要大於1000，等到scope執行完畢，runBlocking協程才能結束。<br>
 
@@ -146,7 +146,7 @@ fun nonCoroutineFunction() {
 {% endhighlight %}
 
 ## coroutineScope runBlocking
-coroutineScope雖然名字有Scope，但開頭字母為小寫，不是獨立作用域，父親是runBlocking，runBlocking是TestScope的作用域。<br>
+coroutineScope雖然名字有Scope，但開頭字母為小寫，不是獨立作用域，父親是runBlocking，runBlocking是BlockingCoroutine的作用域。<br>
 
 ![img]({{site.imgurl}}/kotlin/scope_extend2.png)<br>
 

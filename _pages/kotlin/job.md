@@ -3,10 +3,6 @@ title: Job
 date: 2025-09-19
 keywords: kotlin, job
 ---
-Prerequisites:
-
-- [runBlocking runBlocking][1]
-
 中文為工作、任務。<br>
 
 ## Job 生命周期
@@ -185,7 +181,7 @@ coroutineContext.job
 coroutineContext[Job]
 {% endhighlight %}
 
-下圖中，綠色的Job物件為runBlocking{}的傳回值為TestScope，詳細內容請見[runBlocking][1]文章。<br>
+下圖中，綠色的Job物件為runBlocking{}的傳回值為BlockingCoroutine。<br>
 紅色的Job物件為launch{}的傳回值child。<br>
 ![img]({{site.imgurl}}/kotlin/get_job.png)<br>
 
@@ -193,8 +189,8 @@ coroutineContext[Job]
 
 ![img]({{site.imgurl}}/kotlin/job_extend1.png)<br>
 
-而runBlocking傳回的是TestScope。<br>
-child的祖父不是TestScope，都是分開來。<br>
+而runBlocking傳回的是BlockingCoroutine。<br>
+child的祖父不是BlockingCoroutine，都是分開來。<br>
 {% highlight kotlin linenos %}
   fun coroutin11() = runBlocking {
     println("runBlocking = ${coroutineContext[Job]}")
@@ -215,8 +211,8 @@ child的祖父不是TestScope，都是分開來。<br>
   }
 {% endhighlight %}
 ```
-runBlocking = TestScope[test started]
-runBlocking = TestScope[test started]
+runBlocking = "coroutine#1":BlockingCoroutine{Active}@7674b62c
+runBlocking = "coroutine#1":BlockingCoroutine{Active}@7674b62c
 job parent = null
 job = JobImpl{Active}@5e4bd84a
 child parent= JobImpl{Active}@5e4bd84a
@@ -351,12 +347,12 @@ fun coroutin12() = runBlocking {
 }
 {% endhighlight %}
 ```
-outside this = TestScope[test started]
-inner this = "coroutine#3":StandaloneCoroutine{Active}@648c94da
-launch this = "coroutine#3":StandaloneCoroutine{Active}@648c94da
-runBlocking this = TestScope[test started]
+outside this = "coroutine#1":BlockingCoroutine{Active}@662706a7
+inner this = "coroutine#2":StandaloneCoroutine{Active}@488d1cd7
+launch this = "coroutine#2":StandaloneCoroutine{Active}@488d1cd7
+runBlocking this = "coroutine#1":BlockingCoroutine{Active}@662706a7
 launch class = StandaloneCoroutine
-runBlocking class = TestScopeImpl
+runBlocking class = BlockingCoroutine
 ```
 
 [1]: {% link _pages/kotlin/runtest.md %}
