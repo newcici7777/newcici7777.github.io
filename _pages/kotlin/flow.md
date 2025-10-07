@@ -770,6 +770,280 @@ fun testFlow4() = flow<String> {
 4 > JKL time = 1645
 ```
 
-[1]: {% link _pages/c/kotlin/exten_func2.md %}#fold-疊加函式
+## flatMapConcat flatMapMerge
+### flatMapConcat 順序發射
+flatMapConcat是按照順序執行，按照以下順序，產生新的資料流flow。<br>
+第一輪:<br>
+1. 上游 flow 發射1
+2. 暫停 50 ms
+3. flatMapConcat 收到 上游 flow，呼叫 requestFlow()
+4. 發射`start i = 1`
+5. collect接收`start i = 1`
+6. 暫停 100 ms
+7. 發射`end i = 1`
+8. collect接收`end i = 1`
+
+第二輪:<br>
+1. 上游 flow 發射2
+2. 暫停 50 ms
+3. flatMapConcat 收到 上游 flow，呼叫 requestFlow()
+4. 發射`start i = 2`
+5. collect接收`start i = 2`
+6. 暫停 100 ms
+7. 發射`end i = 2`
+8. collect接收`end i = 2`
+
+{% highlight kotlin linenos %}
+  // 中間flow
+  fun requestFlow(i: Int) = flow<String> {
+    // 4
+    emit("start i = $i")
+    // 6
+    delay(100)
+    // 7
+    emit("end i = $i")
+  }
+
+  @Test
+  fun coroutine08() = runBlocking<Unit> {
+    val startTime = System.currentTimeMillis()
+    // 上游 flow
+    // 1
+    (1..3).asFlow()
+      .onEach {
+        // 2.
+        delay(50)
+      }
+      .flatMapConcat {
+        // 3
+        requestFlow(it)
+      }
+      .collect {
+        // 5
+        // 8
+        println("$it time = ${System.currentTimeMillis() - startTime} ms")
+      }
+  }
+{% endhighlight %}
+```
+start i = 1 time = 76 ms
+end i = 1 time = 189 ms
+start i = 2 time = 244 ms
+end i = 2 time = 347 ms
+start i = 3 time = 402 ms
+end i = 3 time = 505 ms
+```
+
+### flatMapMerge 同時發射
+上游1,2,3 中間間隔50 ms，發射(emit)
+1.上游 flow 發射1，暫停50 ms <br>
+1.上游 flow 發射2，暫停50 ms <br>
+1.上游 flow 發射3，暫停50 ms <br>
+
+2.flatMapMerge 接收到，發射`start i = 1`<br>
+2.flatMapMerge 接收到，發射`start i = 2`<br>
+2.flatMapMerge 接收到，發射`start i = 3`<br>
+
+3.collect接收`start i = 1`<br>
+3.collect接收`start i = 2`<br>
+3.collect接收`start i = 3`<br>
+
+中間的200毫秒只有在發射1的時候暫停200ms，之後就沒暫停。
+
+4.flatMapMerge 接收到，發射`end i = 1`<br>
+4.flatMapMerge 接收到，發射`end i = 2`<br>
+4.flatMapMerge 接收到，發射`end i = 3`<br>
+
+5.collect接收`end i = 1`<br>
+5.collect接收`end i = 2`<br>
+5.collect接收`end i = 3`<br>
+
+{% highlight kotlin linenos %}
+  fun requestFlow(i: Int) = flow<String> {
+    emit("start i = $i")
+    delay(200)
+    emit("end i = $i")
+  }
+
+  @Test
+  fun coroutine08() = runBlocking<Unit> {
+    val startTime = System.currentTimeMillis()
+    // 上游 flow
+    // 1 
+    (1..3).asFlow()
+      .onEach {
+        delay(50)
+      }
+      .flatMapMerge {
+        requestFlow(it)
+      }
+      .collect {
+        println("$it time = ${System.currentTimeMillis() - startTime} ms")
+      }
+  }
+{% endhighlight %}
+```
+start i = 1 time = 97 ms
+start i = 2 time = 138 ms
+start i = 3 time = 193 ms
+end i = 1 time = 302 ms
+end i = 2 time = 342 ms
+end i = 3 time = 397 ms
+```
+
+### flatMapLatest
+只發射最後一筆，中間一些資料就不會發射。
+{% highlight kotlin linenos %}
+  fun requestFlow(i: Int) = flow<String> {
+    emit("start i = $i")
+    delay(200)
+    emit("end i = $i")
+  }
+
+  @Test
+  fun coroutine08() = runBlocking<Unit> {
+    val startTime = System.currentTimeMillis()
+    (1..3).asFlow()
+      .onEach {
+        delay(100)
+      }
+      .flatMapLatest {
+        requestFlow(it)
+      }
+      .collect {
+        println("$it time = ${System.currentTimeMillis() - startTime} ms")
+      }
+  }
+{% endhighlight %}
+```
+start i = 1 time = 144 ms
+start i = 2 time = 326 ms
+start i = 3 time = 433 ms
+end i = 3 time = 636 ms
+```
+
+## try catch
+### check
+check 會丟出IllegalStateException
+```
+check(condition) { "錯誤訊息" }
+```
+condition: 你要檢查的條件（必須是 Boolean）
+
+大括號 {} 中是當條件不成立時要顯示的錯誤訊息（可省略）
+
+{% highlight kotlin linenos %}
+val list = emptyList<Int>()
+check(list.isNotEmpty()) { "List 不可以是空的!" }
+{% endhighlight %}
+```
+IllegalStateException: List 不可以是空的!
+```
+
+{% highlight kotlin linenos %}
+val list = listOf(1, 2, 3)
+check(list.isNotEmpty()) { "List 不可以是空的!" }
+println("List OK!")
+{% endhighlight %}
+```
+List OK!
+```
+
+### collect()丟出錯誤
+{% highlight kotlin linenos %}
+  fun testFlow5() = flow<Int> {
+    for (i in 1..3) {
+      emit(i)
+    }
+  }
+
+  @Test
+  fun coroutine09() = runBlocking<Unit> {
+    testFlow5().collect { value ->
+      println(value)
+      check(value <= 1) {
+        "error"
+      }
+    }
+  }
+{% endhighlight %}
+```
+1
+2
+
+error
+java.lang.IllegalStateException: error
+```
+
+### 抓collect() Exception
+{% highlight kotlin linenos %}
+  fun testFlow5() = flow<Int> {
+    for (i in 1..3) {
+      emit(i)
+    }
+  }
+
+  @Test
+  fun coroutine09() = runBlocking<Unit> {
+    try {
+      testFlow5().collect { value ->
+        println(value)
+        check(value <= 1) {
+          "error"
+        }
+      }
+    } catch (e: Exception) {
+      println("caught $e")
+    }
+  }
+{% endhighlight %}
+```
+1
+2
+caught java.lang.IllegalStateException: error
+```
+
+## flow Exception
+### try .. catch
+{% highlight kotlin linenos %}
+  fun testFlow6() = flow<Int> {
+    emit(2 / 0)
+  }
+
+  @Test
+  fun coroutine10() = runBlocking<Unit> {
+    try {
+      testFlow6().collect { value ->
+        println(value)
+      }
+    } catch (e: Exception) {
+      println("caught $e")
+    }
+  }
+{% endhighlight %}
+```
+caught java.lang.ArithmeticException: / by zero
+```
+
+### .catch()
+抓到exception，再重新發射-1。
+{% highlight kotlin linenos %}
+  fun testFlow6() = flow<Int> {
+    emit(2 / 0)
+  }
+  @Test
+  fun coroutine11() = runBlocking<Unit> {
+    testFlow6()
+      .catch { e -> emit(-1) }
+      .collect { value ->
+        println(value)
+      }
+  }
+{% endhighlight %}
+```
+-1
+```
+
+[1]: {% link _pages/kotlin/exten_func2.md %}#fold-疊加函式
 
 
