@@ -607,8 +607,169 @@ emit = 5
 total emit time = 1159 ms
 ```
 
-## 改變上游
+## 中間操作符
 Flow(流)，分為上游與下游，上游是指發射端emit的部分，下游是指接收端collect的部分。<br>
 
+intermediate operator，中間操作符，可修改上游的資料。
+
 ### transform
-transform可以改變上游，讓發射端，發射多筆。<br>
+testFlow2()是上游資料。<br>
+{% highlight kotlin linenos %}
+  fun testFlow2() = flow<Int> {
+    emit(1)
+    emit(2)
+  }
+{% endhighlight %}
+
+transform可以改變上游資料，重新發射(emit)新的資料。
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutine03() = runBlocking<Unit> {
+    testFlow2().transform { request ->
+      emit("modify original request $request")
+      emit("hello $request")
+    }.collect { value ->
+      println(value)
+    }
+  }
+{% endhighlight %}
+```
+modify original request 1
+hello 1
+modify original request 2
+hello 2
+```
+
+### take
+上游資料。
+{% highlight kotlin linenos %}
+  fun testFlow3() = flow<Int> {
+    emit(1)
+    emit(2)
+    emit(3)
+    emit(4)
+  }
+{% endhighlight %}
+
+只取得上游資料的2筆。
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutine04() = runBlocking<Unit> {
+    testFlow3().take(2).collect { value ->
+      println(value)
+    }
+  }
+{% endhighlight %}
+```
+1
+2
+```
+
+## 終端操作符 (terminal operator)
+collect()，是終端操作符，功能是啟動Flow收集資料。<br>
+toList、toSet，轉成集合。<br>
+first，取得第一個。<br>
+reduce、fold，累加器。<br>
+
+### 累加器
+#### fold
+- [fold][1]
+
+之前在擴展函式中，有介紹過fold，fold也可以在flow使用。
+
+上游資料
+{% highlight kotlin linenos %}
+  fun testFlow3() = flow<Int> {
+    emit(1)
+    emit(2)
+    emit(3)
+    emit(4)
+  }
+{% endhighlight %}
+
+終端操作符fold(初始值)
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutine05() = runBlocking<Unit> {
+    val result = testFlow3().fold(10) { total, num ->
+      total + num
+    }
+    println(result)
+  }
+{% endhighlight %}
+```
+20
+```
+#### reduce
+上游資料
+{% highlight kotlin linenos %}
+  fun testFlow3() = flow<Int> {
+    emit(1)
+    emit(2)
+    emit(3)
+    emit(4)
+  }
+{% endhighlight %}
+
+reduce無法設初始值。<br>
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutine06() = runBlocking<Unit> {
+    val result = testFlow3().reduce { total, num ->
+      total + num
+    }
+    println(result)
+  }
+{% endhighlight %}
+```
+10
+```
+
+### zip合併
+上游資料1
+{% highlight kotlin linenos %}
+  fun testFlow3() = flow<Int> {
+    emit(1)
+    emit(2)
+    emit(3)
+    emit(4)
+  }
+{% endhighlight %}
+
+上游資料2
+{% highlight kotlin linenos %}
+fun testFlow4() = flow<String> {
+  emit("ABC")
+  emit("DEF")
+  emit("GHI")
+  emit("JKL")
+}
+{% endhighlight %}
+
+合併上游資料1與2。<br>
+注意！testFlow3()與testFlow4()是同時進行，所以上游資料實際上只有delay400 ms才發送。<br>
+每一次collect只花費約400 ms的時間。<br>
+執行結果的差距約400 ms。<br>
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutine07() = runBlocking<Unit> {
+    val flow3 = testFlow3().onEach { delay(300) }
+    val flow4 = testFlow4().onEach { delay(400) }
+    val startTime = System.currentTimeMillis()
+    flow3.zip(flow4) { data1, data2 ->
+      "$data1 > $data2"
+    }.collect { value ->
+      println("$value time = ${System.currentTimeMillis() - startTime}")
+    }
+  }
+{% endhighlight %}
+```
+1 > ABC time = 446
+2 > DEF time = 841
+3 > GHI time = 1241
+4 > JKL time = 1645
+```
+
+[1]: {% link _pages/c/kotlin/exten_func2.md %}#fold-疊加函式
+
+

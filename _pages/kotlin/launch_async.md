@@ -276,8 +276,7 @@ testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
 要import runTest
 {% highlight kotlin linenos %}
 import kotlinx.coroutines.test.runTest
-{% endhig```
-hlight %}
+{% endhighlight %}
 
 主要程式內容
 {% highlight kotlin linenos %}
