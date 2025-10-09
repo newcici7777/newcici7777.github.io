@@ -1,19 +1,65 @@
 ---
-title: flow
+title: flow 資料流
 date: 2025-09-26
 keywords: kotlin, flow
 ---
+## flow 語法
 flow是有順序的把管子中的資料一個一個發射(emit)出去，接收端也是一個一個接收(collect)資料。<br>
 
 資料不是同時發射，也不是同時接收，皆是有順序性的發射與接收。<br>
 
 什麼時候發射(emit)資料，當呼叫collect時，才會發射(emit)資料。<br>
 
-## import
+flow是冷資料流(Cold stream)，也就是平常是lazy的，不占記憶體空間，一旦呼叫collect才會啟動flow，才會發射emit()資料。<br>
+
+### import
 ```
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 ```
+
+### 建立flow語法
+```
+flow<要發射的資料型態> { 發射emit寫在這裡 }
+flow<Int> { ... }
+flow<String> { ... }
+```
+
+### 發射emit()
+```
+emit(1)
+emit("Test")
+```
+
+例子
+```
+flow<String> { emit("Test") }
+```
+
+### 指派
+flow 指派給函式
+{% highlight kotlin linenos %}
+fun flowtest1() = flow<String> { emit("Test") }
+{% endhighlight %}
+
+flow 指派給變數
+{% highlight kotlin linenos %}
+val flow1 = flow { emit(1) }
+{% endhighlight %}
+
+### collect()
+針對flow發射emit()出來的資料，進行收集collect()。
+{% highlight kotlin linenos %}
+val flow1 = flow { emit(1) }
+
+flow.collect { value ->
+    println(value)
+}
+
+flow.collect {
+    println(it)
+}
+{% endhighlight %}
 
 ## 簡單flow程式
 當flow呼叫collect()時，才會執行flowtest1()。<br>
@@ -109,7 +155,20 @@ collect..again
 2
 3
 ```
-
+## flow在函式中
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutine13() = runBlocking<Unit> {
+    flow {
+      emit(1)
+    }.collect { value ->
+      println(value)
+    }
+  }
+{% endhighlight %}
+```
+1
+```
 ## asFlow()
 asFlow()本身就有emit()的功能，asFlow使用在陣列或集合。<br>
 以下是asFlow()的原始碼，在forEach{}之間，一個一個發射(emit)。<br>
@@ -923,31 +982,7 @@ end i = 3 time = 636 ms
 ```
 
 ## try catch
-### check
-check 會丟出IllegalStateException
-```
-check(condition) { "錯誤訊息" }
-```
-condition: 你要檢查的條件（必須是 Boolean）
-
-大括號 {} 中是當條件不成立時要顯示的錯誤訊息（可省略）
-
-{% highlight kotlin linenos %}
-val list = emptyList<Int>()
-check(list.isNotEmpty()) { "List 不可以是空的!" }
-{% endhighlight %}
-```
-IllegalStateException: List 不可以是空的!
-```
-
-{% highlight kotlin linenos %}
-val list = listOf(1, 2, 3)
-check(list.isNotEmpty()) { "List 不可以是空的!" }
-println("List OK!")
-{% endhighlight %}
-```
-List OK!
-```
+- [check][2]
 
 ### collect()丟出錯誤
 {% highlight kotlin linenos %}
@@ -1026,6 +1061,25 @@ caught java.lang.ArithmeticException: / by zero
 ```
 
 ### .catch()
+#### 在flow端.catch()
+如果有exception，就不會執行emit()。
+{% highlight kotlin linenos %}
+  fun testFlow7() = flow<Int> {
+    emit(2 / 0)
+  }.catch { e -> println("exception = $e") }
+
+  @Test
+  fun coroutine12() = runBlocking<Unit> {
+    testFlow7()
+      .collect { value ->
+        println(value)
+      }
+  }
+{% endhighlight %}
+```
+exception = java.lang.ArithmeticException: / by zero
+```
+#### 在collect端.catch()
 抓到exception，再重新發射-1。
 {% highlight kotlin linenos %}
   fun testFlow6() = flow<Int> {
@@ -1044,6 +1098,81 @@ caught java.lang.ArithmeticException: / by zero
 -1
 ```
 
+### throw
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutine13() = runBlocking<Unit> {
+    flow {
+      emit(1)
+      throw ArithmeticException("exception")}
+    .catch { e ->
+      println("exception e = $e")}
+    .collect { value ->
+      println(value)
+    }
+  }
+{% endhighlight %}
+### finally
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutine15() = runBlocking<Unit> {
+    try {
+      flow {
+        emit(1)
+      }.collect { value ->
+        println(value)
+      }
+    } finally {
+      println("finish")
+    }
+  }
+{% endhighlight %}
+```
+1
+finish
+```
+## onCompletion 完成
+flow完成就會執行onCompletion()。
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutine14() = runBlocking<Unit> {
+    flow {
+      emit(1)
+    }.onCompletion {
+      println("finish")
+    }.collect { value ->
+      println(value)
+    }
+  }
+{% endhighlight %}
+```
+1
+finish
+```
+### onCompletion exception
+onCompletion也可以補捉exception
+{% highlight kotlin linenos %}
+  @Test
+  fun coroutine14() = runBlocking<Unit> {
+    flow {
+      emit(1)
+      throw ArithmeticException("div / 0")
+    }.onCompletion { e ->
+      if (e != null) println("exception e = $e")
+      println("finish")
+    }.collect { value ->
+      println(value)
+    }
+  }
+{% endhighlight %}
+```
+1
+exception e = java.lang.ArithmeticException: div / 0
+finish
+```
+
+
 [1]: {% link _pages/kotlin/exten_func2.md %}#fold-疊加函式
+[2]: {% link _pages/kotlin/valid.md %}
 
 

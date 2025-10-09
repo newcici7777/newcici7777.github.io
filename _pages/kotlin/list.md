@@ -240,3 +240,28 @@ println(distinctList)
 ## 訪問集合中所有元素
 for裡面的i變數，前面不會有val或var，也不會有變數類型。
 
+## 其它建立List的方式
+```
+public inline fun <T> List(size: Int, init: (Int) -> T): List<T>
+```
+
+建立大小為3，裡面的值為0 .. (size - 1)，並把它印出來，以下沒有建立List，因為沒有傳回值。
+{% highlight kotlin linenos %}
+List(3) {
+  println(it)
+}
+{% endhighlight %}
+```
+0
+1
+2
+```
+
+以下有傳回值，就會建立不可變的List。
+{% highlight kotlin linenos %}
+val list = List(3) {index: Int -> index }
+println(list)
+{% endhighlight %}
+```
+[0, 1, 2]
+```
