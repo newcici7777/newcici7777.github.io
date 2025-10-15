@@ -28,24 +28,26 @@ _number.value++
 ```
 
 ## ViewModel與MutableStateFlow
+MutableStateFlow是私有private ，僅供ViewModel修改，不對外開放。<br>
 MutableStateFlow的變數都是以底線_開頭。<br>
 
 變數不是null
 ```
-val _變數 = MutableStateFlow<變數類型>(初始值)
-val _number = MutableStateFlow<Int>(0)
+private val _變數 = MutableStateFlow<變數類型>(初始值)
+private val _number = MutableStateFlow<Int>(0)
 ```
 
 變數可以是null
 ```
-val _變數 = MutableStateFlow<變數類型>(初始值)
-val _str = MutableStateFlow<String?>(null)
+private val _變數 = MutableStateFlow<變數類型>(初始值)
+private val _str = MutableStateFlow<String?>(null)
 ```
 
 ## ViewModel與StateFlow
+StateFlow是公有public，只有唯讀，不提供修改功能，只能在Activity讀取StateFlow。<br>
 StateFlow的變數不是底線_開頭。<br>
 
-變數不是null
+語法
 ```
 val 變數: StateFlow<變數類型> = _MutableStateFlow變數
 val number: StateFlow<Int> = _number
@@ -59,7 +61,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
 class NumberViewModel : ViewModel() {
-  val _number = MutableStateFlow<Int>(0)
+  private val _number = MutableStateFlow<Int>(0)
   val number: StateFlow<Int> = _number
   fun increase() {
     _number.value++

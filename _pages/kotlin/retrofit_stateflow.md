@@ -22,7 +22,8 @@ class ArticleViewModel : ViewModel() {
 {% endhighlight %}
 
 Activity呼叫viewModel.getArticleList()。<br>
-lifecycleScope中viewModel._articleList.collect()收集接收網路回傳的資料。<br>
+lifecycleScope中viewModel.articleList.collect()收集接收網路回傳的資料。<br>
+注意！使用的是沒有底線的articleList，沒有底線的articleList是唯讀，提供給外部讀取。<br>
 {% highlight kotlin linenos %}
 class MainActivity09 : AppCompatActivity() {
   private val viewModel by viewModels<ArticleViewModel>()
@@ -32,7 +33,7 @@ class MainActivity09 : AppCompatActivity() {
     val submit = findViewById<Button>(R.id.button)
     val textv = findViewById<TextView>(R.id.textView)
     lifecycleScope.launch {
-      viewModel._articleList.collect { value ->
+      viewModel.articleList.collect { value ->
         textv.text = value.toString()
       }
     }
