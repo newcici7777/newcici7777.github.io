@@ -39,6 +39,8 @@ android {
 
 Build > CleanProject
 
+MAC是 Build > Compile All Sources
+
 接著會自動產生 FragmentMyBinding
 
 這個類是根據你的 XML 佈局檔案名稱自動生成的：

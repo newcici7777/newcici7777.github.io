@@ -85,6 +85,8 @@ class FragA: Fragment() {
 ```
 findNavController().navigate(R.id.action_homeFrag_to_fragA)
 ```
+
+注意！R專案下面的R，com.example.coroutine.R
 {% highlight kotlin linenos %}
 import android.os.Bundle
 import android.view.LayoutInflater
