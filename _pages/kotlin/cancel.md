@@ -218,19 +218,6 @@ job1 finally
 job2 finish
 job2 finally
 ```
-### 釋放資源
-finally是不管如何都會執行，可在finally中釋放資源。<br>
-{% highlight kotlin linenos %}
-  @Test
-  fun coroutin22() = runBlocking {
-    var br: BufferedReader? = null
-    try {
-      br = BufferedReader(FileReader("/Users/cici/testc/file_test"))
-    } finally {
-      br?.close()
-    }
-  }
-{% endhighlight %}
 
 ### withContext(NonCancellable)
 被cancel的協程中，在finally有suspend函式，delay()是suspend函式，不會執行。<br>
@@ -296,66 +283,6 @@ finally 1
 finally 2
 child2 finish
 ```
-
-### use
-使用use擴展函式，若物件有實作Closeable，結束時，就可以使用use自動呼叫物件.close()方法。<br>
-{% highlight kotlin linenos %}
-@Test
-fun coroutin23() = runBlocking {
-  var br = BufferedReader(FileReader("/Users/cici/testc/file_test"))
-  br.use {
-    var line: String?
-    while (true) {
-      line = it.readLine() ?: break
-      println(line)
-    }
-  }
-}
-{% endhighlight %}
-```
-測試程式
-
-java程式設計
-```
-
-use原始碼如下:僅截取close()的程式碼
-{% highlight kotlin linenos %}
-when {
-    apiVersionIsAtLeast(1, 1, 0) -> this.closeFinally(exception)
-    this == null -> {}
-    exception == null -> close()
-    else ->
-        try {
-            close()
-        } catch (closeException: Throwable) {
-            // cause.addSuppressed(closeException) // ignored here
-        }
-}
-{% endhighlight %}
-
-讀取檔案無法寫在while()中，以前在java讀取每一行都會寫在while()中，但kotlin不行。<br>
-以下程式碼編譯失敗。<br>
-{% highlight kotlin linenos %}
-var br = BufferedReader(FileReader("/Users/cici/testc/file_test"))
-br.use {
-  var line: String?
-  while ((line = it.readLine()) !== null) {
-    println(line)
-  }
-}
-{% endhighlight %}
-
-以下是java的程式碼:
-{% highlight java linenos %}
-BufferedReader bufferedReader = null;
-try {
-  bufferedReader = new BufferedReader(new FileReader("/Users/cici/testc/file_test"));
-  String line = null;
-  while((line = bufferedReader.readLine()) != null) {
-    System.out.println(line);
-  }
-}
-{% endhighlight %}
 
 ## Cpu運算無法被取消
 以下程式碼調度器要用Dispatchers.Default，否則無法取消，Default是屬於CPU運算。<br>

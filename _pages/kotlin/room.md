@@ -294,7 +294,7 @@ activity_db.xml
         android:layout_marginTop="52dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text=""
         app:layout_constraintTop_toBottomOf="@+id/uid"
         tools:layout_editor_absoluteX="107dp" />
 
