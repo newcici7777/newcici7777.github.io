@@ -5,6 +5,16 @@ keywords: kotlin, job
 ---
 中文為工作、任務。<br>
 
+## import
+{% highlight groovy linenos %}
+import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.CoroutineName
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.job
+import kotlinx.coroutines.runBlocking
+import org.junit.Test
+{% endhighlight %}
+
 ## Job 生命周期
 Job的狀態有New(建立)、Active、Completing(正要完成中)、Completed(已完成)、Cancelling(取消中)、Cancelled(已取消)。<br>
 
@@ -176,10 +186,23 @@ After complete job isCompleted= true
 ## Job父子關係
 ### coroutineContext
 以下二種方法都是取得目前的Job物件，Job物件為launch{}的傳回值。
+
 {% highlight kotlin linenos %}
 coroutineContext.job
 coroutineContext[Job]
 {% endhighlight %}
+
+若試圖輸出coroutineContext.job，會有以下格式。<br>
+```
+Job名字 #編號: 協程作用域 {Job狀態} @ Job物件hashCode
+coroutine#1":BlockingCoroutine{Active}@7674b62c
+```
+
+|每一個區塊|  含義|
+|coroutine#1| 協程的內部編號（第一個被建立的 coroutine）|
+|BlockingCoroutine| 協程的類型（這裡是由 runBlocking 建立的 coroutine）|
+|{Active}|  協程目前的狀態：可能是 Active、Completed、Cancelled 等|
+|@7674b62c| 物件的 hash code（十六進位表示）|
 
 下圖中，綠色的Job物件為runBlocking{}的傳回值為BlockingCoroutine。<br>
 紅色的Job物件為launch{}的傳回值child。<br>

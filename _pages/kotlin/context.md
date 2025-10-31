@@ -29,11 +29,13 @@ fun coroutin07() = runBlocking {
 }
 {% endhighlight %}
 ```
-job = TestScope[test started]
-dispatcher = StandardTestDispatcher[scheduler=kotlinx.coroutines.test.TestCoroutineScheduler@1b7c473a]
+job = "coroutine#1":BlockingCoroutine{Active}@25bfcafd
+dispatcher = BlockingEventLoop@6fe1b4fb
 name = null
-協程Job: TestScope[test started]
+協程Job: "coroutine#1":BlockingCoroutine{Active}@25bfcafd
 ```
+
+`coroutine#1` 為 job 的名字。
 
 ## 調度器Dispatchers
 Dispatchers調度器決定協程是在那個Thread運行。<br>
@@ -64,8 +66,30 @@ Dispatchers分類如下:<br>
     launch (newSingleThreadContext("MyThread")) {
       println("Custom Thread = ${Thread.currentThread().name}")
     }
+    println("test")
   }
 {% endhighlight %}
+
+最後面加上`println("test")`，是因為出現了以下錯誤訊息。<br>
+```
+Method 'coroutin07' annotated with '@Test' should be of type 'void'
+```
+
+在`runBlocking{}`，要有任何程式碼，而不能只是`launch() {}`。<br>
+
+執行結果:<br>
+```
+IO Thread = DefaultDispatcher-worker-1 @coroutine#3
+Default Thread = DefaultDispatcher-worker-3 @coroutine#4
+Custom Thread = MyThread @coroutine#5
+test
+main Thread = Test worker @coroutine#2
+```
+
+由執行結果可以發現，Thread Name都不同。<br>
+IO跟Default，是以`DefaultDispatcher-worker-`為開頭，後面是 `@協程編號`。<br>
+
+協程編號是根據建立的次序。如:第一個被建立的 coroutine，就會是`@coroutine#1`。<br>
 
 ## 自訂CoroutineContext
 - Job() 自己建立一個job物件

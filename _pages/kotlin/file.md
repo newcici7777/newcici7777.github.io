@@ -47,7 +47,8 @@ a
 97
 ```
 
-## 小檔案
+## 檔案是小的
+在檔案大小是小的狀況下，可用以下的方式，進行讀取與寫入，但一旦檔案很大，就會花費很多時間。<br>
 ### 文字讀取
 {% highlight kotlin linenos %}
   @Test
@@ -112,6 +113,17 @@ a
 
 ## use
 使用use擴展函式，若物件有實作Closeable，結束時，就可以使用use自動呼叫物件.close()方法。<br>
+
+語法:<br>
+{% highlight kotlin linenos %}
+resource.use { it ->
+    // 在這裡使用 resource
+}
+{% endhighlight %}
+當`{ }`區塊執行完後，use 會自動呼叫 it.close()，不需要你手動關閉。<br>
+執行完`{ }`區塊後會自動關閉，即使發生例外也會關閉。<br>
+
+範例:<br>
 {% highlight kotlin linenos %}
 val file = File("/Users/cici/testc/file_test")
 file.inputStream().use { input ->
@@ -197,7 +209,19 @@ Hello World!Nice to see you.Nice to see you.
 ```
 
 ## outputStream 寫入byte
-目前標準作法是outputStream()一定要包在inputStream()，並使用2個use。
+{% highlight kotlin linenos %}
+  @Test
+  fun test15() {
+    val file = File("/Users/cici/testc/file_test")
+    file.outputStream().use { output ->
+      output.write("test".toByteArray())
+    }
+    println(file.readText())
+  }
+{% endhighlight %}
+
+### 邊讀邊寫
+目前標準作法是outputStream()一定要包在inputStream()裡面，並使用2個use，因為use會自動把資源關閉。<br>
 {% highlight kotlin linenos %}
 val file = File("/Users/cici/testc/file_test")
 val file2 = File("/Users/cici/testc/file_test2")
