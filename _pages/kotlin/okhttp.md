@@ -7,6 +7,11 @@ Prerequisites:
 
 - [withContext][1]
 
+## client
+{% highlight kotlin linenos %}
+val client = OkHttpClient()
+{% endhighlight %}
+
 ## 同步 非同步 get post
 
 |類型|	特點|	使用方法|
@@ -362,6 +367,169 @@ body = {
   "url": "https://www.httpbin.org/get"
 }
 ```
+## cookie
+登入後，再使用其它網址，不會再請user登入。
+### 簡單測試
+{% highlight kotlin linenos %}
+  suspend fun cookie() = withContext(Dispatchers.IO) {
+    val cookieStore = mutableMapOf<String,List<Cookie>>()
+    val client1 = OkHttpClient.Builder()
+      .cookieJar(object : CookieJar {
+        override fun saveFromResponse(
+          url: HttpUrl,
+          cookies: List<Cookie>
+        ) {
+          cookieStore.put(url.host(),cookies)
+        }
+
+        override fun loadForRequest(url: HttpUrl): List<Cookie> {
+          val cookie = cookieStore[url.host()] ?: emptyList()
+          return cookie
+        }
+      })
+      .build()
+
+    val request = Request.Builder()
+      .url("https://www.httpbin.org/cookies/set?name=cici")
+      .build()
+
+    client1.newCall(request).execute().use { response ->
+      println("response = ${response.code()}")
+    }
+
+    val request2 = Request.Builder()
+      .url("https://www.httpbin.org/cookies")
+      .build()
+    client1.newCall(request2).execute().use { response ->
+      if (response.isSuccessful) {
+        response.body().let { body ->
+          val bodyString = body?.string()
+          println("body = $bodyString")
+          bodyString
+        }
+      } else {
+        null
+      }
+    }
+  }
+
+  @Test
+  fun test2() = runBlocking {
+    cookie()
+    println()
+  }
+{% endhighlight %}
+```
+response = 200
+body = {
+  "cookies": {
+    "name": "cici"
+  }
+}
+```
+### 複雜測試
+先到下方網站註冊
+
+<https://wanandroid.com/blog/show/2>
+
+使用右邊列表，5. 登录与注册的API
+```
+5. 登录与注册
+5.1 登录
+```
+{% highlight kotlin linenos %}
+  suspend fun login() = withContext(Dispatchers.IO) {
+    val formbody = FormBody.Builder()
+      .add("username", "xxx")
+      .add("password", "xxx")
+      .build()
+    val request = Request.Builder()
+      .url("https://www.wanandroid.com/user/login")
+      .post(formbody)
+      .build()
+
+    client.newCall(request).execute().use { response ->
+      if (response.isSuccessful) {
+        response.body().let { body ->
+          val bodyString = body?.string()
+          println("body = $bodyString")
+          bodyString
+        }
+      } else {
+        null
+      }
+    }
+  }
+  @Test
+  fun test2() = runBlocking {
+    login()
+    println()
+  }
+{% endhighlight %}
+
+重點:
+1. 要建立新的OkHttpClient.Builder().cookieJar()，不能再既有的client使用.cookieJar()
+2. List<Cookie> 不能為null，不能是 List<Cookie?>
+
+
+儲存cookie，先登入，收藏文章後，再執行。
+{% highlight kotlin linenos %}
+
+  suspend fun login() = withContext(Dispatchers.IO) {
+    val cookieStore = mutableMapOf<String,List<Cookie>>()
+    val client1 = OkHttpClient.Builder()
+      .cookieJar(object : CookieJar {
+        override fun saveFromResponse(
+          url: HttpUrl,
+          cookies: List<Cookie>
+        ) {
+          cookieStore.put(url.host(),cookies)
+        }
+
+        override fun loadForRequest(url: HttpUrl): List<Cookie> {
+          val cookie = cookieStore[url.host()] ?: emptyList()
+          return cookie
+        }
+      })
+      .build()
+    val formbody = FormBody.Builder()
+      .add("username", "xxx")
+      .add("password", "xxx")
+      .build()
+
+    // 第一次登入
+    val request = Request.Builder()
+      .url("https://www.wanandroid.com/user/login")
+      .post(formbody)
+      .build()
+
+    client1.newCall(request).execute().use { response ->
+      println("response = ${response.code()}")
+    }
+
+    // 登入後，看收藏文章，已經不用代入帳號密碼
+    val request2 = Request.Builder()
+      .url("https://www.wanandroid.com/lg/collect/list/0/json")
+      .build()
+    client1.newCall(request2).execute().use { response ->
+      if (response.isSuccessful) {
+        response.body().let { body ->
+          val bodyString = body?.string()
+          println("body = $bodyString")
+          bodyString
+        }
+      } else {
+        null
+      }
+    }
+  }
+
+  @Test
+  fun test2() = runBlocking {
+    login()
+    println()
+  }
+{% endhighlight %}
 
 
 [1]: {% link _pages/kotlin/withcontext.md %}
