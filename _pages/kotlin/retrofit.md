@@ -122,6 +122,7 @@ class RetrofitTest {
 user=alice&password=1234
 
 與 @Body 的差別
+
 |  標註|  傳輸格式|  用於|
 |:-----------|:-----------|:-------|
 |@FormUrlEncoded + @Field|  application/x-www-form-urlencoded| 傳送普通表單欄位（文字）  |
@@ -659,7 +660,40 @@ Api
   "url": "https://www.httpbin.org/post"
 }
 ```
+### @Url
+自己定義url，會覆蓋baseURL。<br>
 
+注意！下方的@Get後面是沒有東西，沒有圓括號()。
+{% highlight kotlin linenos %}
+  @GET
+  suspend fun getUrl(@Url url: String): Response<ResponseBody>
+{% endhighlight %}
+
+{% highlight kotlin linenos %}
+  @Test
+  fun testUrl() = runBlocking<Unit> {
+    val service = retrofit.create(ApiService::class.java)
+    val response = service.getUrl("https://www.httpbin.org/get?name=Mary")
+    if (response.isSuccessful) {
+      println(response.body()?.string())
+    }
+  }
+{% endhighlight %}
+```
+{
+  "args": {
+    "name": "Mary"
+  }, 
+  "headers": {
+    "Accept-Encoding": "gzip", 
+    "Host": "www.httpbin.org", 
+    "User-Agent": "okhttp/3.14.9", 
+    "X-Amzn-Trace-Id": "Root=1-6911872f-7c5e2e00125e9a7574732956"
+  }, 
+  "origin": "42.73.166.13", 
+  "url": "https://www.httpbin.org/get?name=Mary"
+}
+```
 ## 回傳物件
 以下是回傳的Response，要把json欄位的內容轉成UserInfo的物件回傳。
 ```
