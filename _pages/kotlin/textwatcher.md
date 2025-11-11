@@ -10,33 +10,68 @@ Prerequisites:
 傳統的EditText是透過addTextChangedListener來判斷輸入文字改變。
 {% highlight kotlin linenos %}
 editText.addTextChangedListener(object : TextWatcher {
-  override fun afterTextChanged(s: Editable?) {
-    // 1個1個的文字輸入完，會呼叫這個
-    Log.d(TAG, "afetr change $s")
-  }
+    override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+        // 文字改變前呼叫
+        Log.d("TextWatcher", "beforeTextChanged: $s")
+    }
 
-  override fun beforeTextChanged(
-    s: CharSequence?,
-    p1: Int,
-    p2: Int,
-    p3: Int
-  ) {
-    Log.d(TAG, "before change $s")
-  }
+    override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+        // 文字改變時呼叫
+        Log.d("TextWatcher", "onTextChanged: $s")
+    }
 
-  override fun onTextChanged(
-    s: CharSequence?,
-    p1: Int,
-    p2: Int,
-    p3: Int
-  ) {
-    Log.d(TAG, " changing $s")
-  }
-
+    override fun afterTextChanged(s: Editable?) {
+        // 文字改變後呼叫
+        Log.d("TextWatcher", "afterTextChanged: $s")
+        
+        // 在這裡處理文字改變後的邏輯
+        if (s?.length ?: 0 > 10) {
+            editText.error = "文字長度不能超過10個字元"
+        } else {
+            editText.error = null
+        }
+    }
 })
 {% endhighlight %}
 
 如果要使用協程，要使用callbackFlow，使用trySend()通知輸入內容已經改變，awaitClose()關閉資源，collect是接收改變的文字。
+
+1. 擴展函數 (Extension Function)
+```
+fun TextView.textWatcherFlow(): Flow<String>
+```
+為 TextView 類別添加新方法
+
+可以在任何 TextView 實例上呼叫
+
+2. callbackFlow Builder
+```
+callbackFlow { 
+    // 將回調轉換為 Flow
+}
+```
+用於將回調式 API 轉換為 Flow
+
+3. trySend()
+```
+trySend(s?.toString() ?: "")
+```
+向 Flow 發送數據（舊版本用 offer()）
+
+內部使用 trySend() 發送數據
+
+4. awaitClose()
+```
+awaitClose {
+    removeTextChangedListener(textWatcher)
+}
+```
+定義當 Flow 被取消時要執行的清理操作
+
+必須呼叫，否則會編譯錯誤
+
+必須使用 awaitClose() 清理資源
+
 {% highlight kotlin linenos %}
 import android.os.Bundle
 import android.util.Log
