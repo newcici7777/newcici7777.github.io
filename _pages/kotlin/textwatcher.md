@@ -15,7 +15,7 @@ editText.addTextChangedListener(object : TextWatcher {
         Log.d("TextWatcher", "beforeTextChanged: $s")
     }
 
-    override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+    override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {建立外部類別
         // 文字改變時呼叫
         Log.d("TextWatcher", "onTextChanged: $s")
     }

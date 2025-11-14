@@ -8,9 +8,9 @@ callbackFlow 是 Kotlin 協程 (coroutine) 中的一個非常實用的工具，�
 callbackFlow 讓你可以「把 callback 事件」包裝成一個 Flow 來收集。
 
 有時候你要使用的 API 並不是掛在協程或 Flow 上的，而是「傳統 callback 型」：
-
+```
 fun listenToLocationUpdates(listener: (Location) -> Unit)
-
+```
 
 這種 API 無法用 suspend 或 Flow 直接收集到值。
 這時你就可以用 callbackFlow 來把它「包裝」成 Flow。

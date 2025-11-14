@@ -101,15 +101,20 @@ class Agency(tourist: BuyTicket) : BuyTicket by tourist
 ```
 
 ## 屬性委托
-- [set get][2]
+要先了解operator是什麼才能繼續往下。<br>
+
+- [operator plus][4]
+- [operator by][2]
+
+Kotlin 的 by 委託，是用來把「屬性的 getter / setter 行為」交給另一個物件處理。
+
 語法
 ```
 var 屬性名   by 委托類別
 var address by someDelegate
 ```
-預設 var 屬性會有set() get()，透過`by`關鍵字，把set()與get()讓其它類別去實作。<br>
 
-其它類別要實作setValue()與getValue()，並不是實作set()與get()方法。<br>
+使用 `by` 委托關鍵字，委托的類別要實作setValue()與getValue()方法。<br>
 
 - getValue：當你讀取屬性時會被呼叫
 - setValue：當你寫入屬性時會被呼叫（只針對 var，val 沒有 setValue）
@@ -224,37 +229,66 @@ KProperty<T> → 泛型 T 表示屬性的型別
 所以 * 就像 Java 的 ?（通配符），表示「任意型別的屬性」
 
 ## Kotlin 標準庫內建的委託
-### by Delegates.observable() —— 屬性變化監聽
-可以監聽屬性值改變時的事件。
+### by Delegates.observable() 屬性變化監聽
+可以監聽屬性值改變時的事件。<br>
+語法<br>
+```
+var name:String by Delegates.observable("初始值") {
+    property, oldValue, newValue ->
+    println("${property.name} from $oldValue change to $newValue")
+}
+```
+
 {% highlight kotlin linenos %}
 import kotlin.properties.Delegates
 
-var name: String by Delegates.observable("未設定") { prop, old, new ->
-    println("${prop.name} 從 $old 改為 $new")
-}
-
 fun main() {
-    name = "Alice"
-    name = "Bob"
-}
+    var name:String by Delegates.observable("empty") {
+        property, oldValue, newValue ->
+        println("${property.name} from $oldValue change to $newValue")
+    }
+    name = "Hello"
+    name = "World"
 {% endhighlight %}
 ```
-name 從 未設定 改為 Alice
-name 從 Alice 改為 Bob
+name from empty change to Hello
+name from Hello change to World
 ```
 
 常用於 UI binding 或 資料同步 場景，比如 ViewModel 中監控狀態變化。
 
-### by Delegates.vetoable() —— 可拒絕的屬性變更
-比 observable 多一步「審核機制」，可以決定是否接受新值。
+### by Delegates.vetoable() 可拒絕的屬性變更
+比 observable 多一步「審核機制」，可以決定是否接受新值。<br>
+以下newValue必須大於0，小於150，才可以設定新的值。<br>
+語法<br>
+```
+var age:Int by Delegates.vetoable(初始值) {
+    property, oldValue, newValue ->
+    newValue > 0 && newValue < 150
+}
+```
 {% highlight kotlin linenos %}
-var score: Int by Delegates.vetoable(0) { _, old, new ->
-    new >= 0 // 負數就拒絕變更
+fun main() {
+    var age:Int by Delegates.vetoable(0) {
+        property, oldValue, newValue ->
+        newValue > 0 && newValue < 150
+    }
+    age = 10
+    println("age = $age")
+    age = -1
+    println("age = $age")
+    age = 200
+    println("age = $age")
 }
 {% endhighlight %}
-
+```
+age = 10
+age = 10
+age = 10
+```
 適合用在「狀態限制」或「驗證條件」場景，例如不能設定負值、非法輸入等。
 
 [1]: {% link _pages/design_pattern/proxy.md %}
-[2]: {% link _pages/kotlin/field.md %}
+[2]: {% link _pages/kotlin/operator_by.md %}
 [3]: {% link _pages/java/reflect.md %}
+[4]: {% link _pages/kotlin/operator_plus.md %}
