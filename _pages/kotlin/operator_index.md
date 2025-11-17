@@ -1,5 +1,5 @@
 ---
-title: [] 運算子
+title: 索引運算子
 date: 2025-11-14
 keywords: kotlin, index operator
 ---

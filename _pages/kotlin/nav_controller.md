@@ -12,26 +12,6 @@ implementation "androidx.navigation:navigation-ui:$nav_version"
 {% endhighlight %}
 
 ## Fragment
-### FragA xml
-{% highlight css linenos %}
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/name_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
-{% endhighlight %}
-
 ### HomeFrag xml
 {% highlight css linenos %}
 <?xml version="1.0" encoding="utf-8"?>
@@ -51,33 +31,6 @@ implementation "androidx.navigation:navigation-ui:$nav_version"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-{% endhighlight %}
-
-### FragA
-{% highlight kotlin linenos %}
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import com.example.coroutine.databinding.FragmentMyBinding
-
-class FragA: Fragment() {
-  private lateinit var binding: FragmentMyBinding
-  override fun onCreateView(
-    inflater: LayoutInflater,
-    container: ViewGroup?,
-    savedInstanceState: Bundle?
-  ): View? {
-    binding = FragmentMyBinding.inflate(layoutInflater)
-    return binding.root
-  }
-
-  override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-    super.onViewCreated(view, savedInstanceState)
-    binding.nameTv.text = "Hello world"
-  }
-}
 {% endhighlight %}
 
 ### HomeFrag
@@ -117,7 +70,54 @@ class HomeFrag : Fragment()  {
 }
 {% endhighlight %}
 
-## navgation
+### FragA xml
+{% highlight css linenos %}
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+{% endhighlight %}
+
+### FragA
+{% highlight kotlin linenos %}
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.example.coroutine.databinding.FragmentMyBinding
+
+class FragA: Fragment() {
+  private lateinit var binding: FragmentMyBinding
+  override fun onCreateView(
+    inflater: LayoutInflater,
+    container: ViewGroup?,
+    savedInstanceState: Bundle?
+  ): View? {
+    binding = FragmentMyBinding.inflate(layoutInflater)
+    return binding.root
+  }
+
+  override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    super.onViewCreated(view, savedInstanceState)
+    binding.nameTv.text = "Hello world"
+  }
+}
+{% endhighlight %}
+
+## MainActivity 加上 navgation
 設完Fragment，接下來設置navgation。<br>
 
 ![img]({{site.imgurl}}/kotlin/nav1.png) <br>
@@ -149,6 +149,7 @@ app:defaultNavHost="true"
 app:navGraph="@navigation/navigation1"
 ```
 
+MainActivity的xml
 {% highlight css linenos %}
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -169,6 +170,7 @@ app:navGraph="@navigation/navigation1"
 </androidx.constraintlayout.widget.ConstraintLayout>
 {% endhighlight %}
 
+MainActivity16
 {% highlight kotlin linenos %}
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
