@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>flow </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>flow 資料流 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Cici's notebook."><meta name="keywords" content="kotlin, flow" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
@@ -2672,6 +2672,13 @@
     	<a href="/pages/kotlin/stdlib/" data-nav-link> 常用函式庫</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/valid/" data-nav-link> 驗證函式</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -2801,7 +2808,21 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/lazy/" data-nav-link> lazy</a>
+    	<a href="/pages/kotlin/lazy/" data-nav-link> by lazy 延遲初始化</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/lateinit/" data-nav-link> lateinit</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/delegate/" data-nav-link> 委托 by Delegation</a>
         
             
         </li></ul></li>
@@ -2869,6 +2890,37 @@
     	<a href="/pages/kotlin/operator_plus/" data-nav-link> plus運算子</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/operator_index/" data-nav-link> 索引運算子</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/operator_by/" data-nav-link> by 運算子</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 其它 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/java_to_kotlin/" data-nav-link> Java與kotlin 互轉</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/mutex_semaph/" data-nav-link> Mutex Semaphore Atomic</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -2884,6 +2936,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/context/" data-nav-link> CoroutineContext</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/withcontext/" data-nav-link> withContext 切換執行緒</a>
         
             
         </li>
@@ -2918,17 +2977,172 @@
 	
 	
 	<li class="active" data-nav-item>
-    	<a href="/pages/kotlin/flow/" data-nav-link> flow</a>
+    	<a href="/pages/kotlin/flow/" data-nav-link> flow 資料流</a>
         
             
-                <ul><li><a href="#import" data-nav-link " >import</a></li><li><a href="#簡單flow程式" data-nav-link " >簡單flow程式</a></li><li><a href="#證明flow與launch是同時執行" data-nav-link " >證明flow與launch是同時執行</a></li><li><a href="#多次collect" data-nav-link " >多次collect</a></li><li><a href="#asflow" data-nav-link " >asFlow()</a></li><li><a href="#filter" data-nav-link " >filter</a></li><li><a href="#flowof" data-nav-link " >flowOf</a></li><li><a href="#同一個執行緒與context" data-nav-link " >同一個執行緒與context</a></li><li><a href="#flowon" data-nav-link " >flowOn</a><ul><li><a href="#錯誤的改變context" data-nav-link " >錯誤的改變context</a></li><li><a href="#正確使用flowon" data-nav-link " >正確使用flowOn</a></li></ul></li><li><a href="#oneach" data-nav-link " >onEach</a><ul><li><a href="#oneach沒有collect功能" data-nav-link " >onEach沒有collect功能</a></li></ul></li><li><a href="#asflow指派給函式" data-nav-link " >asFlow()指派給函式</a></li><li><a href="#launchin改變scope" data-nav-link " >launchIn()改變Scope</a></li></ul>
+                <ul><li><a href="#flow-語法" data-nav-link " >flow 語法</a><ul><li><a href="#import" data-nav-link " >import</a></li><li><a href="#建立flow語法" data-nav-link " >建立flow語法</a></li><li><a href="#發射emit" data-nav-link " >發射emit()</a></li><li><a href="#指派" data-nav-link " >指派</a></li><li><a href="#collect" data-nav-link " >collect()</a></li></ul></li><li><a href="#簡單flow程式" data-nav-link " >簡單flow程式</a></li><li><a href="#證明flow與launch是同時執行" data-nav-link " >證明flow與launch是同時執行</a></li><li><a href="#多次collect" data-nav-link " >多次collect</a></li><li><a href="#flow在函式中" data-nav-link " >flow在函式中</a></li><li><a href="#asflow" data-nav-link " >asFlow()</a></li><li><a href="#filter" data-nav-link " >filter</a></li><li><a href="#flowof" data-nav-link " >flowOf</a></li><li><a href="#同一個執行緒與context" data-nav-link " >同一個執行緒與context</a></li><li><a href="#flowon" data-nav-link " >flowOn</a><ul><li><a href="#錯誤的改變context" data-nav-link " >錯誤的改變context</a></li><li><a href="#正確使用flowon" data-nav-link " >正確使用flowOn</a></li></ul></li><li><a href="#oneach" data-nav-link " >onEach</a><ul><li><a href="#oneach沒有collect功能" data-nav-link " >onEach沒有collect功能</a></li></ul></li><li><a href="#asflow指派給函式" data-nav-link " >asFlow()指派給函式</a></li><li><a href="#launchin改變scope" data-nav-link " >launchIn()改變Scope</a><ul><li><a href="#scope" data-nav-link " >scope</a></li><li><a href="#launchin-傳回值" data-nav-link " >launchIn 傳回值</a></li></ul></li><li><a href="#cancel-flow" data-nav-link " >Cancel Flow</a><ul><li><a href="#cancel" data-nav-link " >cancel()</a></li><li><a href="#withtimeoutornull" data-nav-link " >withTimeoutOrNull</a></li><li><a href="#asflow-cancellable" data-nav-link " >asFlow cancellable</a></li></ul></li><li><a href="#buffer" data-nav-link " >buffer</a><ul><li><a href="#flow-emit是依序執行" data-nav-link " >flow emit是依序執行</a></li><li><a href="#flow-buffer同時發射" data-nav-link " >flow buffer()同時發射</a></li><li><a href="#與flowon的區別" data-nav-link " >與flowOn的區別</a></li></ul></li><li><a href="#中間操作符" data-nav-link " >中間操作符</a><ul><li><a href="#transform" data-nav-link " >transform</a></li><li><a href="#take" data-nav-link " >take</a></li></ul></li><li><a href="#終端操作符-terminal-operator" data-nav-link " >終端操作符 (terminal operator)</a><ul><li><a href="#累加器" data-nav-link " >累加器</a></li><li><a href="#zip合併" data-nav-link " >zip合併</a></li></ul></li><li><a href="#flatmapconcat-flatmapmerge" data-nav-link " >flatMapConcat flatMapMerge</a><ul><li><a href="#flatmapconcat-順序發射" data-nav-link " >flatMapConcat 順序發射</a></li><li><a href="#flatmapmerge-同時發射" data-nav-link " >flatMapMerge 同時發射</a></li><li><a href="#flatmaplatest" data-nav-link " >flatMapLatest</a></li></ul></li><li><a href="#try-catch" data-nav-link " >try catch</a><ul><li><a href="#collect丟出錯誤" data-nav-link " >collect()丟出錯誤</a></li><li><a href="#抓collect-exception" data-nav-link " >抓collect() Exception</a></li></ul></li><li><a href="#flow-exception" data-nav-link " >flow Exception</a><ul><li><a href="#try--catch" data-nav-link " >try .. catch</a></li><li><a href="#catch" data-nav-link " >.catch()</a></li><li><a href="#throw" data-nav-link " >throw</a></li><li><a href="#finally" data-nav-link " >finally</a></li></ul></li><li><a href="#oncompletion-完成" data-nav-link " >onCompletion 完成</a><ul><li><a href="#oncompletion-exception" data-nav-link " >onCompletion exception</a></li></ul></li></ul>
 
             
         </li>
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/channel/" data-nav-link> Channel 通道</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/kotlin/runtest/" data-nav-link> runTest runBlocking</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/callbackflow/" data-nav-link> callbackFlow</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> MVVM </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/viewmodel/" data-nav-link> ViewModel</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/stateflow/" data-nav-link> MutableStateFlow StateFlow</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/model_life_scope/" data-nav-link> viewModelScope lifecycleScope GlobalScope</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/retrofit_stateflow/" data-nav-link> Retrofit StateFlow ViewModel</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/livedata/" data-nav-link> LiveData</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> viewbinding </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/viewbinding/" data-nav-link> Activity ViewBinding</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/frag_bind/" data-nav-link> Fragment ViewBinding</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/adapter_bind/" data-nav-link> Adapter ViewBinding</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/data_bind/" data-nav-link> Data Binding</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Navigation </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/nav_controller/" data-nav-link> NavController</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/safe_args/" data-nav-link> NavController</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/nav_ui_menu/" data-nav-link> Nav UI Menu</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/room/" data-nav-link> Room</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> ui 元件 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/viewmodel/" data-nav-link> ViewModel</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/textwatcher/" data-nav-link> TextWatcher</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> File 網路IO </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/file/" data-nav-link> File</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/okhttp/" data-nav-link> Okhttp</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/retrofit/" data-nav-link> retrofit</a>
         
             
         </li></ul></li></ul></li>
@@ -3388,7 +3602,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >flow</a>
+                            <a href="." >flow 資料流</a>
                         
                     </h1>
                 </div>
@@ -3401,19 +3615,79 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/kotlin/flow">flow</h1>
+                        <h1 id="/pages/kotlin/flow">flow 資料流</h1>
                     
 
-                    <p>flow是有順序的把管子中的資料一個一個發射(emit)出去，接收端也是一個一個接收(collect)資料。<br /></p>
+                    <h2 id="flow-語法">flow 語法</h2>
+<p>flow是有順序的把管子中的資料一個一個發射(emit)出去，接收端也是一個一個接收(collect)資料。<br /></p>
 
 <p>資料不是同時發射，也不是同時接收，皆是有順序性的發射與接收。<br /></p>
 
 <p>什麼時候發射(emit)資料，當呼叫collect時，才會發射(emit)資料。<br /></p>
 
-<h2 id="import">import</h2>
+<p>flow是冷資料流(Cold stream)，也就是平常是lazy的，不占記憶體空間，一旦呼叫collect才會啟動flow，才會發射emit()資料。<br /></p>
+
+<h3 id="import">import</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 </code></pre></div></div>
+
+<h3 id="建立flow語法">建立flow語法</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>flow&lt;要發射的資料型態&gt; { 發射emit寫在這裡 }
+flow&lt;Int&gt; { ... }
+flow&lt;String&gt; { ... }
+</code></pre></div></div>
+
+<h3 id="發射emit">發射emit()</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emit(1)
+emit("Test")
+</code></pre></div></div>
+
+<p>例子</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>flow&lt;String&gt; { emit("Test") }
+</code></pre></div></div>
+
+<h3 id="指派">指派</h3>
+<p>flow 指派給函式</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">flowtest1</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;</span> <span class="p">{</span> <span class="nf">emit</span><span class="p">(</span><span class="s">"Test"</span><span class="p">)</span> <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>flow 指派給變數</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">flow1</span> <span class="p">=</span> <span class="nf">flow</span> <span class="p">{</span> <span class="nf">emit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="collect">collect()</h3>
+<p>針對flow發射emit()出來的資料，進行收集collect()。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">flow1</span> <span class="p">=</span> <span class="nf">flow</span> <span class="p">{</span> <span class="nf">emit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">}</span>
+
+<span class="n">flow</span><span class="p">.</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">flow</span><span class="p">.</span><span class="nf">collect</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 
 <h2 id="簡單flow程式">簡單flow程式</h2>
 <p>當flow呼叫collect()時，才會執行flowtest1()。<br />
@@ -3567,7 +3841,30 @@ collect..again
 2
 3
 </code></pre></div></div>
+<h2 id="flow在函式中">flow在函式中</h2>
 
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre>  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine13</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">flow</span> <span class="p">{</span>
+      <span class="nf">emit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="p">}.</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+      <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+</code></pre></div></div>
 <h2 id="asflow">asFlow()</h2>
 <p>asFlow()本身就有emit()的功能，asFlow使用在陣列或集合。<br />
 以下是asFlow()的原始碼，在forEach{}之間，一個一個發射(emit)。<br /></p>
@@ -3916,7 +4213,7 @@ data= 3 Test worker @coroutine#1
 </code></pre></div></div>
 <h2 id="launchin改變scope">launchIn()改變Scope</h2>
 <p>launchIn()可以改變Scope。<br />
-this代表目前的Thread</p>
+this代表目前的Thread。<br /></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>launchIn(this)
 </code></pre></div></div>
 
@@ -3933,18 +4230,18 @@ this代表目前的Thread</p>
 10
 11
 12
-</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">events</span><span class="p">()</span> <span class="p">=</span>
-    <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">3</span><span class="p">).</span><span class="nf">asFlow</span><span class="p">().</span><span class="nf">onEach</span> <span class="p">{</span> <span class="n">event</span> <span class="p">-&gt;</span>
-      <span class="nf">println</span><span class="p">(</span><span class="s">"events() $event ${Thread.currentThread().name}"</span><span class="p">)</span>
-    <span class="p">}.</span><span class="nf">flowOn</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="nc">IO</span><span class="p">)</span>
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">events</span><span class="p">()</span> <span class="p">=</span>
+  <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">3</span><span class="p">).</span><span class="nf">asFlow</span><span class="p">().</span><span class="nf">onEach</span> <span class="p">{</span> <span class="n">event</span> <span class="p">-&gt;</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"events() $event ${Thread.currentThread().name}"</span><span class="p">)</span>
+  <span class="p">}.</span><span class="nf">flowOn</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="nc">IO</span><span class="p">)</span>
 
-  <span class="nd">@Test</span>
-  <span class="k">fun</span> <span class="nf">coroutine15</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
-    <span class="nf">events</span><span class="p">()</span>
-      <span class="p">.</span><span class="nf">onEach</span> <span class="p">{</span> <span class="n">event</span> <span class="p">-&gt;</span>
-        <span class="nf">println</span><span class="p">(</span><span class="s">"coroutine15(): $event ${Thread.currentThread().name}"</span><span class="p">)</span>
-      <span class="p">}.</span><span class="nf">launchIn</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
-  <span class="p">}</span>
+<span class="nd">@Test</span>
+<span class="k">fun</span> <span class="nf">coroutine15</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+  <span class="nf">events</span><span class="p">()</span>
+    <span class="p">.</span><span class="nf">onEach</span> <span class="p">{</span> <span class="n">event</span> <span class="p">-&gt;</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"coroutine15(): $event ${Thread.currentThread().name}"</span><span class="p">)</span>
+    <span class="p">}.</span><span class="nf">launchIn</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
@@ -3955,6 +4252,1212 @@ coroutine15(): 1 Test worker @coroutine#2
 coroutine15(): 2 Test worker @coroutine#2
 coroutine15(): 3 Test worker @coroutine#2
 </code></pre></div></div>
+
+<h3 id="scope">scope</h3>
+<p>因為變成別的scope，所以最後要使用join()，這樣runBlocking的Scope才會等待CoroutineScope結束才結束，不然印不出來結果。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.launchIn(CoroutineScope(Dispatchers.Default))
+.join()
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">events</span><span class="p">()</span> <span class="p">=</span>
+    <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">3</span><span class="p">).</span><span class="nf">asFlow</span><span class="p">().</span><span class="nf">onEach</span> <span class="p">{</span> <span class="n">event</span> <span class="p">-&gt;</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"events() $event ${Thread.currentThread().name}"</span><span class="p">)</span>
+    <span class="p">}.</span><span class="nf">flowOn</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="nc">IO</span><span class="p">)</span>
+
+  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine15</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">events</span><span class="p">()</span>
+      <span class="p">.</span><span class="nf">onEach</span> <span class="p">{</span> <span class="n">event</span> <span class="p">-&gt;</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"coroutine15(): $event ${Thread.currentThread().name}"</span><span class="p">)</span>
+      <span class="p">}.</span><span class="nf">launchIn</span><span class="p">(</span><span class="nc">CoroutineScope</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="nc">Default</span><span class="p">))</span>
+      <span class="p">.</span><span class="nf">join</span><span class="p">()</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="launchin-傳回值">launchIn 傳回值</h3>
+<p>launchIn()會傳回Job，因此可以去接收傳回值。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">public</span> <span class="k">fun</span> <span class="p">&lt;</span><span class="nc">T</span><span class="p">&gt;</span> <span class="nf">Flow</span><span class="p">&lt;</span><span class="nc">T</span><span class="p">&gt;.</span><span class="nf">launchIn</span><span class="p">(</span><span class="n">scope</span><span class="p">:</span> <span class="nc">CoroutineScope</span><span class="p">):</span> <span class="nc">Job</span> <span class="p">=</span> <span class="n">scope</span><span class="p">.</span><span class="nf">launch</span> <span class="p">{</span>
+    <span class="nf">collect</span><span class="p">()</span> <span class="c1">// tail-call</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>以下程式碼，接收launchIn()的傳回值Job，並且在2.5秒取消協程。<br />
+onEach設為1秒發射(emit)一次。<br />
+結果只有接收2筆。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">events</span><span class="p">()</span> <span class="p">=</span>
+    <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">3</span><span class="p">).</span><span class="nf">asFlow</span><span class="p">().</span><span class="nf">onEach</span> <span class="p">{</span>
+      <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+    <span class="p">}.</span><span class="nf">flowOn</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="nc">IO</span><span class="p">)</span>
+
+  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine15</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">job</span> <span class="p">=</span> <span class="nf">events</span><span class="p">()</span>
+      <span class="p">.</span><span class="nf">onEach</span> <span class="p">{</span> <span class="n">event</span> <span class="p">-&gt;</span>
+        <span class="kd">val</span> <span class="py">time</span> <span class="p">=</span> <span class="nc">System</span><span class="p">.</span><span class="nf">currentTimeMillis</span><span class="p">()</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"event(): $event time = $time"</span><span class="p">)</span>
+      <span class="p">}.</span><span class="nf">launchIn</span><span class="p">(</span><span class="nc">CoroutineScope</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="nc">Default</span><span class="p">))</span>
+    <span class="nf">delay</span><span class="p">(</span><span class="mi">2500</span><span class="p">)</span>
+    <span class="n">job</span><span class="p">.</span><span class="nf">cancel</span><span class="p">()</span>
+    <span class="n">job</span><span class="p">.</span><span class="nf">join</span><span class="p">()</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>event(): 1 time = 1759476638927
+event(): 2 time = 1759476639932
+</code></pre></div></div>
+
+<h2 id="cancel-flow">Cancel Flow</h2>
+<p>flow發射emit有使用ensureActive來確認collect接收方是否已經取消接收。</p>
+<h3 id="cancel">cancel()</h3>
+<p>收集資料到i == 3，就cancel flow。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">testFlow5</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="mi">1</span><span class="o">..</span><span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+      <span class="nf">emit</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"emit = $i"</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine18</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">testFlow5</span><span class="p">().</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+      <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="c1">// 收集資料到i == 3，就cancel flow。</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">value</span> <span class="p">==</span> <span class="mi">3</span><span class="p">)</span> <span class="nf">cancel</span><span class="p">()</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+emit = 1
+2
+emit = 2
+3
+emit = 3
+
+BlockingCoroutine was cancelled
+</code></pre></div></div>
+<h3 id="withtimeoutornull">withTimeoutOrNull</h3>
+<p>testFlow4()每一秒發射一次，發完1到3需要3秒鐘，但是<code class="language-plaintext highlighter-rouge">withTimeoutOrNull(2500)</code>代表2.5秒後會被取消協程，所以執行結果只有發射2筆。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">testFlow4</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="mi">1</span> <span class="o">..</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+      <span class="nf">emit</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"emit = $i"</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine17</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">withTimeoutOrNull</span><span class="p">(</span><span class="mi">2500</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nf">testFlow4</span><span class="p">().</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+        <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+emit = 1
+2
+emit = 2
+</code></pre></div></div>
+<h3 id="asflow-cancellable">asFlow cancellable</h3>
+<p>asFlow的cancel一定要加上cancellable()，因為asFlow是一次性的發射(emit)，不用cancellable無法使用cancel()</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine16</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">5</span><span class="p">).</span><span class="nf">asFlow</span><span class="p">().</span><span class="nf">cancellable</span><span class="p">().</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+      <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">value</span> <span class="p">==</span> <span class="mi">3</span><span class="p">)</span> <span class="nf">cancel</span><span class="p">()</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+2
+3
+
+BlockingCoroutine was cancelled
+kotlinx.coroutines.JobCancellationException: BlockingCoroutine was cancelled; job=nul
+</code></pre></div></div>
+<h2 id="buffer">buffer</h2>
+<p>發射的時間比較快，每發射一筆資料要花100 ms，但接收的時間比較慢，每接收一筆要花200ms。<br />
+如何使用buffer讓每一筆資料是同時發射呢？<br /></p>
+
+<h3 id="flow-emit是依序執行">flow emit是依序執行</h3>
+<p>所謂emit依序執行，就是發射完一個，再發射下一個，以下程式碼計算emit發射的時間，發射5次，總共為500ms 左右。<br />
+但接收端仍是依序接收，接收每一次就暫停200 ms，接收5次就暫停1000 ms。<br />
+總共花費時間約1500 ms。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">testFlow6</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="mi">1</span><span class="o">..</span><span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nf">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+      <span class="nf">emit</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"emit = $i"</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine19</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">time</span> <span class="p">=</span> <span class="nf">measureTimeMillis</span> <span class="p">{</span>
+      <span class="nf">testFlow6</span><span class="p">().</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+        <span class="nf">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+        <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"total emit time = $time ms"</span><span class="p">)</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+emit = 1
+2
+emit = 2
+3
+emit = 3
+4
+emit = 4
+5
+emit = 5
+total emit time = 1573 ms
+</code></pre></div></div>
+
+<h3 id="flow-buffer同時發射">flow buffer()同時發射</h3>
+<p>接收端每200秒接收一次，使用buffer(大小)，會讓emit同時發射，同時發射5筆只會使用100 ms。<br />
+但接收端仍是依序接收，接收每一次就暫停200 ms，接收5次就暫停1000 ms。<br />
+所以總共花費時間約1100 ms。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">testFlow6</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="mi">1</span><span class="o">..</span><span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nf">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+      <span class="nf">emit</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"emit = $i"</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine20</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">time</span> <span class="p">=</span> <span class="nf">measureTimeMillis</span> <span class="p">{</span>
+      <span class="nf">testFlow6</span><span class="p">().</span><span class="nf">buffer</span><span class="p">(</span><span class="mi">50</span><span class="p">).</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+        <span class="nf">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+        <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"total emit time = $time ms"</span><span class="p">)</span>
+  <span class="p">}</span>  
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emit = 1
+emit = 2
+1
+emit = 3
+emit = 4
+2
+emit = 5
+3
+4
+5
+total emit time = 1169 ms
+</code></pre></div></div>
+<h3 id="與flowon的區別">與flowOn的區別</h3>
+<p>buffer不會改變發射方的Thread，發射跟接收都是在同一個Thread。<br />
+而先前的flowOn()，使發射方可以與接收方同時進行，而不是依序執行，發射方的Thread與接收方的Thread是不同的。<br />
+以下程式執行時間也是約1100 ms，但使用的原理是不同。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">testFlow6</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="mi">1</span><span class="o">..</span><span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nf">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+      <span class="nf">emit</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"emit = $i"</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine21</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">time</span> <span class="p">=</span> <span class="nf">measureTimeMillis</span> <span class="p">{</span>
+      <span class="nf">testFlow6</span><span class="p">().</span><span class="nf">flowOn</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="nc">Default</span><span class="p">).</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+        <span class="nf">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+        <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"total emit time = $time ms"</span><span class="p">)</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emit = 1
+emit = 2
+1
+emit = 3
+emit = 4
+2
+emit = 5
+3
+4
+5
+total emit time = 1159 ms
+</code></pre></div></div>
+
+<h2 id="中間操作符">中間操作符</h2>
+<p>Flow(流)，分為上游與下游，上游是指發射端emit的部分，下游是指接收端collect的部分。<br /></p>
+
+<p>intermediate operator，中間操作符，可修改上游的資料。</p>
+
+<h3 id="transform">transform</h3>
+<p>testFlow2()是上游資料。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">testFlow2</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>transform可以改變上游資料，重新發射(emit)新的資料。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre>  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine03</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">testFlow2</span><span class="p">().</span><span class="nf">transform</span> <span class="p">{</span> <span class="n">request</span> <span class="p">-&gt;</span>
+      <span class="nf">emit</span><span class="p">(</span><span class="s">"modify original request $request"</span><span class="p">)</span>
+      <span class="nf">emit</span><span class="p">(</span><span class="s">"hello $request"</span><span class="p">)</span>
+    <span class="p">}.</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+      <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>modify original request 1
+hello 1
+modify original request 2
+hello 2
+</code></pre></div></div>
+
+<h3 id="take">take</h3>
+<p>上游資料。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">testFlow3</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>只取得上游資料的2筆。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine04</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">testFlow3</span><span class="p">().</span><span class="nf">take</span><span class="p">(</span><span class="mi">2</span><span class="p">).</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+      <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+2
+</code></pre></div></div>
+
+<h2 id="終端操作符-terminal-operator">終端操作符 (terminal operator)</h2>
+<p>collect()，是終端操作符，功能是啟動Flow收集資料。<br />
+toList、toSet，轉成集合。<br />
+first，取得第一個。<br />
+reduce、fold，累加器。<br /></p>
+
+<h3 id="累加器">累加器</h3>
+<h4 id="fold">fold</h4>
+<ul>
+  <li><a href="/pages/kotlin/exten_func2/#fold-疊加函式">fold</a></li>
+</ul>
+
+<p>之前在擴展函式中，有介紹過fold，fold也可以在flow使用。</p>
+
+<p>上游資料</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">testFlow3</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>終端操作符fold(初始值)</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine05</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">result</span> <span class="p">=</span> <span class="nf">testFlow3</span><span class="p">().</span><span class="nf">fold</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">{</span> <span class="n">total</span><span class="p">,</span> <span class="n">num</span> <span class="p">-&gt;</span>
+      <span class="n">total</span> <span class="p">+</span> <span class="n">num</span>
+    <span class="p">}</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>20
+</code></pre></div></div>
+<h4 id="reduce">reduce</h4>
+<p>上游資料</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">testFlow3</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>reduce無法設初始值。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine06</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">result</span> <span class="p">=</span> <span class="nf">testFlow3</span><span class="p">().</span><span class="nf">reduce</span> <span class="p">{</span> <span class="n">total</span><span class="p">,</span> <span class="n">num</span> <span class="p">-&gt;</span>
+      <span class="n">total</span> <span class="p">+</span> <span class="n">num</span>
+    <span class="p">}</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10
+</code></pre></div></div>
+
+<h3 id="zip合併">zip合併</h3>
+<p>上游資料1</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">testFlow3</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>上游資料2</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">testFlow4</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;</span> <span class="p">{</span>
+  <span class="nf">emit</span><span class="p">(</span><span class="s">"ABC"</span><span class="p">)</span>
+  <span class="nf">emit</span><span class="p">(</span><span class="s">"DEF"</span><span class="p">)</span>
+  <span class="nf">emit</span><span class="p">(</span><span class="s">"GHI"</span><span class="p">)</span>
+  <span class="nf">emit</span><span class="p">(</span><span class="s">"JKL"</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>合併上游資料1與2。<br />
+注意！testFlow3()與testFlow4()是同時進行，所以上游資料實際上只有delay400 ms才發送。<br />
+每一次collect只花費約400 ms的時間。<br />
+執行結果的差距約400 ms。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre>  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine07</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">flow3</span> <span class="p">=</span> <span class="nf">testFlow3</span><span class="p">().</span><span class="nf">onEach</span> <span class="p">{</span> <span class="nf">delay</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span> <span class="p">}</span>
+    <span class="kd">val</span> <span class="py">flow4</span> <span class="p">=</span> <span class="nf">testFlow4</span><span class="p">().</span><span class="nf">onEach</span> <span class="p">{</span> <span class="nf">delay</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span> <span class="p">}</span>
+    <span class="kd">val</span> <span class="py">startTime</span> <span class="p">=</span> <span class="nc">System</span><span class="p">.</span><span class="nf">currentTimeMillis</span><span class="p">()</span>
+    <span class="n">flow3</span><span class="p">.</span><span class="nf">zip</span><span class="p">(</span><span class="n">flow4</span><span class="p">)</span> <span class="p">{</span> <span class="n">data1</span><span class="p">,</span> <span class="n">data2</span> <span class="p">-&gt;</span>
+      <span class="s">"$data1 &gt; $data2"</span>
+    <span class="p">}.</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"$value time = ${System.currentTimeMillis() - startTime}"</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 &gt; ABC time = 446
+2 &gt; DEF time = 841
+3 &gt; GHI time = 1241
+4 &gt; JKL time = 1645
+</code></pre></div></div>
+
+<h2 id="flatmapconcat-flatmapmerge">flatMapConcat flatMapMerge</h2>
+<h3 id="flatmapconcat-順序發射">flatMapConcat 順序發射</h3>
+<p>flatMapConcat是按照順序執行，按照以下順序，產生新的資料流flow。<br />
+第一輪:<br /></p>
+<ol>
+  <li>上游 flow 發射1</li>
+  <li>暫停 50 ms</li>
+  <li>flatMapConcat 收到 上游 flow，呼叫 requestFlow()</li>
+  <li>發射<code class="language-plaintext highlighter-rouge">start i = 1</code></li>
+  <li>collect接收<code class="language-plaintext highlighter-rouge">start i = 1</code></li>
+  <li>暫停 100 ms</li>
+  <li>發射<code class="language-plaintext highlighter-rouge">end i = 1</code></li>
+  <li>collect接收<code class="language-plaintext highlighter-rouge">end i = 1</code></li>
+</ol>
+
+<p>第二輪:<br /></p>
+<ol>
+  <li>上游 flow 發射2</li>
+  <li>暫停 50 ms</li>
+  <li>flatMapConcat 收到 上游 flow，呼叫 requestFlow()</li>
+  <li>發射<code class="language-plaintext highlighter-rouge">start i = 2</code></li>
+  <li>collect接收<code class="language-plaintext highlighter-rouge">start i = 2</code></li>
+  <li>暫停 100 ms</li>
+  <li>發射<code class="language-plaintext highlighter-rouge">end i = 2</code></li>
+  <li>collect接收<code class="language-plaintext highlighter-rouge">end i = 2</code></li>
+</ol>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class="code"><pre>  <span class="c1">// 中間flow</span>
+  <span class="k">fun</span> <span class="nf">requestFlow</span><span class="p">(</span><span class="n">i</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="c1">// 4</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="s">"start i = $i"</span><span class="p">)</span>
+    <span class="c1">// 6</span>
+    <span class="nf">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="c1">// 7</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="s">"end i = $i"</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine08</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">startTime</span> <span class="p">=</span> <span class="nc">System</span><span class="p">.</span><span class="nf">currentTimeMillis</span><span class="p">()</span>
+    <span class="c1">// 上游 flow</span>
+    <span class="c1">// 1</span>
+    <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">3</span><span class="p">).</span><span class="nf">asFlow</span><span class="p">()</span>
+      <span class="p">.</span><span class="nf">onEach</span> <span class="p">{</span>
+        <span class="c1">// 2.</span>
+        <span class="nf">delay</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+      <span class="p">}</span>
+      <span class="p">.</span><span class="nf">flatMapConcat</span> <span class="p">{</span>
+        <span class="c1">// 3</span>
+        <span class="nf">requestFlow</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+      <span class="p">}</span>
+      <span class="p">.</span><span class="nf">collect</span> <span class="p">{</span>
+        <span class="c1">// 5</span>
+        <span class="c1">// 8</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"$it time = ${System.currentTimeMillis() - startTime} ms"</span><span class="p">)</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>start i = 1 time = 76 ms
+end i = 1 time = 189 ms
+start i = 2 time = 244 ms
+end i = 2 time = 347 ms
+start i = 3 time = 402 ms
+end i = 3 time = 505 ms
+</code></pre></div></div>
+
+<h3 id="flatmapmerge-同時發射">flatMapMerge 同時發射</h3>
+<p>上游1,2,3 中間間隔50 ms，發射(emit)
+1.上游 flow 發射1，暫停50 ms <br />
+1.上游 flow 發射2，暫停50 ms <br />
+1.上游 flow 發射3，暫停50 ms <br /></p>
+
+<p>2.flatMapMerge 接收到，發射<code class="language-plaintext highlighter-rouge">start i = 1</code><br />
+2.flatMapMerge 接收到，發射<code class="language-plaintext highlighter-rouge">start i = 2</code><br />
+2.flatMapMerge 接收到，發射<code class="language-plaintext highlighter-rouge">start i = 3</code><br /></p>
+
+<p>3.collect接收<code class="language-plaintext highlighter-rouge">start i = 1</code><br />
+3.collect接收<code class="language-plaintext highlighter-rouge">start i = 2</code><br />
+3.collect接收<code class="language-plaintext highlighter-rouge">start i = 3</code><br /></p>
+
+<p>中間的200毫秒只有在發射1的時候暫停200ms，之後就沒暫停。</p>
+
+<p>4.flatMapMerge 接收到，發射<code class="language-plaintext highlighter-rouge">end i = 1</code><br />
+4.flatMapMerge 接收到，發射<code class="language-plaintext highlighter-rouge">end i = 2</code><br />
+4.flatMapMerge 接收到，發射<code class="language-plaintext highlighter-rouge">end i = 3</code><br /></p>
+
+<p>5.collect接收<code class="language-plaintext highlighter-rouge">end i = 1</code><br />
+5.collect接收<code class="language-plaintext highlighter-rouge">end i = 2</code><br />
+5.collect接收<code class="language-plaintext highlighter-rouge">end i = 3</code><br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">requestFlow</span><span class="p">(</span><span class="n">i</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="s">"start i = $i"</span><span class="p">)</span>
+    <span class="nf">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="s">"end i = $i"</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine08</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">startTime</span> <span class="p">=</span> <span class="nc">System</span><span class="p">.</span><span class="nf">currentTimeMillis</span><span class="p">()</span>
+    <span class="c1">// 上游 flow</span>
+    <span class="c1">// 1 </span>
+    <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">3</span><span class="p">).</span><span class="nf">asFlow</span><span class="p">()</span>
+      <span class="p">.</span><span class="nf">onEach</span> <span class="p">{</span>
+        <span class="nf">delay</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+      <span class="p">}</span>
+      <span class="p">.</span><span class="nf">flatMapMerge</span> <span class="p">{</span>
+        <span class="nf">requestFlow</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+      <span class="p">}</span>
+      <span class="p">.</span><span class="nf">collect</span> <span class="p">{</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"$it time = ${System.currentTimeMillis() - startTime} ms"</span><span class="p">)</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>start i = 1 time = 97 ms
+start i = 2 time = 138 ms
+start i = 3 time = 193 ms
+end i = 1 time = 302 ms
+end i = 2 time = 342 ms
+end i = 3 time = 397 ms
+</code></pre></div></div>
+
+<h3 id="flatmaplatest">flatMapLatest</h3>
+<p>只發射最後一筆，中間一些資料就不會發射。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">requestFlow</span><span class="p">(</span><span class="n">i</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="s">"start i = $i"</span><span class="p">)</span>
+    <span class="nf">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="s">"end i = $i"</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine08</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">startTime</span> <span class="p">=</span> <span class="nc">System</span><span class="p">.</span><span class="nf">currentTimeMillis</span><span class="p">()</span>
+    <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">3</span><span class="p">).</span><span class="nf">asFlow</span><span class="p">()</span>
+      <span class="p">.</span><span class="nf">onEach</span> <span class="p">{</span>
+        <span class="nf">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+      <span class="p">}</span>
+      <span class="p">.</span><span class="nf">flatMapLatest</span> <span class="p">{</span>
+        <span class="nf">requestFlow</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+      <span class="p">}</span>
+      <span class="p">.</span><span class="nf">collect</span> <span class="p">{</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"$it time = ${System.currentTimeMillis() - startTime} ms"</span><span class="p">)</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>start i = 1 time = 144 ms
+start i = 2 time = 326 ms
+start i = 3 time = 433 ms
+end i = 3 time = 636 ms
+</code></pre></div></div>
+
+<h2 id="try-catch">try catch</h2>
+<ul>
+  <li><a href="/pages/kotlin/valid/">check</a></li>
+</ul>
+
+<h3 id="collect丟出錯誤">collect()丟出錯誤</h3>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">testFlow5</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="mi">1</span><span class="o">..</span><span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nf">emit</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine09</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">testFlow5</span><span class="p">().</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+      <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="nf">check</span><span class="p">(</span><span class="n">value</span> <span class="p">&lt;=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="s">"error"</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+2
+
+error
+java.lang.IllegalStateException: error
+</code></pre></div></div>
+
+<h3 id="抓collect-exception">抓collect() Exception</h3>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">testFlow5</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="mi">1</span><span class="o">..</span><span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nf">emit</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine09</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="p">{</span>
+      <span class="nf">testFlow5</span><span class="p">().</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+        <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="nf">check</span><span class="p">(</span><span class="n">value</span> <span class="p">&lt;=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+          <span class="s">"error"</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">e</span><span class="p">:</span> <span class="nc">Exception</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"caught $e"</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+2
+caught java.lang.IllegalStateException: error
+</code></pre></div></div>
+
+<h2 id="flow-exception">flow Exception</h2>
+<h3 id="try--catch">try .. catch</h3>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">testFlow6</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">2</span> <span class="p">/</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine10</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="p">{</span>
+      <span class="nf">testFlow6</span><span class="p">().</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+        <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">e</span><span class="p">:</span> <span class="nc">Exception</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"caught $e"</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>caught java.lang.ArithmeticException: / by zero
+</code></pre></div></div>
+
+<h3 id="catch">.catch()</h3>
+<h4 id="在flow端catch">在flow端.catch()</h4>
+<p>如果有exception，就不會執行emit()。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">testFlow7</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">2</span> <span class="p">/</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="p">}.</span><span class="k">catch</span> <span class="p">{</span> <span class="n">e</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"exception = $e"</span><span class="p">)</span> <span class="p">}</span>
+
+  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine12</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">testFlow7</span><span class="p">()</span>
+      <span class="p">.</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+        <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exception = java.lang.ArithmeticException: / by zero
+</code></pre></div></div>
+<h4 id="在collect端catch">在collect端.catch()</h4>
+<p>抓到exception，再重新發射-1。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">testFlow6</span><span class="p">()</span> <span class="p">=</span> <span class="n">flow</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">emit</span><span class="p">(</span><span class="mi">2</span> <span class="p">/</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="p">}</span>
+  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine11</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">testFlow6</span><span class="p">()</span>
+      <span class="p">.</span><span class="k">catch</span> <span class="p">{</span> <span class="n">e</span> <span class="p">-&gt;</span> <span class="nf">emit</span><span class="p">(-</span><span class="mi">1</span><span class="p">)</span> <span class="p">}</span>
+      <span class="p">.</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+        <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-1
+</code></pre></div></div>
+
+<h3 id="throw">throw</h3>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre>  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine13</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">flow</span> <span class="p">{</span>
+      <span class="nf">emit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+      <span class="k">throw</span> <span class="nc">ArithmeticException</span><span class="p">(</span><span class="s">"exception"</span><span class="p">)}</span>
+    <span class="p">.</span><span class="k">catch</span> <span class="p">{</span> <span class="n">e</span> <span class="p">-&gt;</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"exception e = $e"</span><span class="p">)}</span>
+    <span class="p">.</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+      <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="finally">finally</h3>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre>  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine15</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="p">{</span>
+      <span class="nf">flow</span> <span class="p">{</span>
+        <span class="nf">emit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+      <span class="p">}.</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+        <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">}</span> <span class="k">finally</span> <span class="p">{</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"finish"</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+finish
+</code></pre></div></div>
+<h2 id="oncompletion-完成">onCompletion 完成</h2>
+<p>flow完成就會執行onCompletion()。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre>  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine14</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">flow</span> <span class="p">{</span>
+      <span class="nf">emit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="p">}.</span><span class="nf">onCompletion</span> <span class="p">{</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"finish"</span><span class="p">)</span>
+    <span class="p">}.</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+      <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+finish
+</code></pre></div></div>
+<h3 id="oncompletion-exception">onCompletion exception</h3>
+<p>onCompletion也可以補捉exception</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre>  <span class="nd">@Test</span>
+  <span class="k">fun</span> <span class="nf">coroutine14</span><span class="p">()</span> <span class="p">=</span> <span class="n">runBlocking</span><span class="p">&lt;</span><span class="nc">Unit</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nf">flow</span> <span class="p">{</span>
+      <span class="nf">emit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+      <span class="k">throw</span> <span class="nc">ArithmeticException</span><span class="p">(</span><span class="s">"div / 0"</span><span class="p">)</span>
+    <span class="p">}.</span><span class="nf">onCompletion</span> <span class="p">{</span> <span class="n">e</span> <span class="p">-&gt;</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">e</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span> <span class="nf">println</span><span class="p">(</span><span class="s">"exception e = $e"</span><span class="p">)</span>
+      <span class="nf">println</span><span class="p">(</span><span class="s">"finish"</span><span class="p">)</span>
+    <span class="p">}.</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+      <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+exception e = java.lang.ArithmeticException: div / 0
+finish
+</code></pre></div></div>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -4025,7 +5528,7 @@ window.MathJax = {
 
                     
                         
-                        <a href="/pages/kotlin/runtest" class="navigation navigation-next navigation-unique" aria-label="Next page: runTest runBlocking">
+                        <a href="/pages/kotlin/channel" class="navigation navigation-next navigation-unique" aria-label="Next page: Channel 通道">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -4041,6 +5544,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "Channel 通道",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/kotlin/channel.md",
+            "ref": "_pages/kotlin/channel.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -4136,7 +5648,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-10-03 15:21:56 +0800"
+        "time": "2025-11-17 14:07:54 +0800"
     },
     "basePath": "",
     "book": {

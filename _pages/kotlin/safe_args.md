@@ -109,7 +109,7 @@ HomeFrag 傳送參數
 {% highlight kotlin linenos %}
 val action = HomeFragDirections.actionHomeFragToFragA(username = "abcd", address = "dddd")
 findNavController().navigate(action)
-highlight %}
+{% endhighlight %}
 
 完整程式碼
 {% highlight kotlin linenos %}
