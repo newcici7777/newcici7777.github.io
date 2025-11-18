@@ -69,10 +69,19 @@ public class Duck extends Animal implements Fly, Swim{
 }
 {% endhighlight %}
 
+## class loading 步驟
+JVM 的 class loading 分三步：
+
+Loading（載入）
+
+Linking（連結）
+
+Initialization（初始化 = 執行 static 區塊）
+
 ## Class.forName
 forName("")的參數是package名字.類別名組成，用點來區隔。
 
-執行結果會被classLoader載入
+由執行結果發現，會執行到 Initialization 初始化
 {% highlight java linenos %}
 Class class1 = Class.forName("reflect.Duck");
 System.out.println(class1);
@@ -82,8 +91,35 @@ Duck 被classloader載入
 class reflect.Duck
 ```
 
-## 類別名.class
-執行結果「不會」被classLoader載入
+## 類別名.class 取得 Class 物件
+
+static 區塊：
+```
+static {
+    System.out.println("Duck 被classloader載入");
+}
+```
+實際上是在 初始化階段 執行的，而不是載入階段。
+
+Duck.class 只做「載入」，不做「初始化」
+
+```
+Duck.class
+```
+
+類別檔被 class loader 載入
+
+類別資訊被讀取
+
+Class 物件被建立
+
+但 不會執行 static 區塊。
+
+```
+因為 JVM 規範明確說：
+
+類別名.class 取得 Class 物件並不會觸發 class initialization。
+```
 {% highlight java linenos %}
 Class class2 = Duck.class;
 System.out.println(class2);
@@ -93,7 +129,7 @@ class reflect.Duck
 ```
 
 ## getClass()
-執行結果會被classLoader載入
+由執行結果發現，會執行到 Initialization 初始化
 {% highlight java linenos %}
 Duck duck = new Duck();
 Class class3 = duck.getClass();

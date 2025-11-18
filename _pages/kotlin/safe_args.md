@@ -1,9 +1,10 @@
 ---
-title: NavController
+title: Safe Args
 date: 2025-11-14
-keywords: kotlin, NavController
+keywords: kotlin, Safe Args
 ---
-## Project 的 build.gradle
+## 建置環境
+### Project 的 build.gradle
 ![img]({{site.imgurl}}/kotlin/safe_args.png)
 
 專案的build.gradle，在`plugins{}`上方，加上`buildscript {}`的內容。<br>
@@ -20,7 +21,7 @@ plugins {
 }
 {% endhighlight %}
 
-## app 的 build.gradle
+### app 的 build.gradle
 在app中的build.gradle，`plugins {}`加上`id 'androidx.navigation.safeargs.kotlin'`
 {% highlight groovy linenos %}
 plugins {
@@ -43,7 +44,7 @@ dependencies {
 implementation "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
 ```
 
-## settings.gradle
+### settings.gradle
 settings.gradle，要確保是google()，中間沒加奇奇怪怪的東西。<br>
 {% highlight groovy linenos %}
 pluginManagement {
@@ -70,10 +71,21 @@ include ':app'
 
 ## res目錄下的navigation
 注意！homeFrag是沒有參數，只有action。<br>
-fragA才有argument。<br>
+目標對象fragA才有argument。<br>
 
-navigation1.xml
-{% highlight kotlin linenos %}
+```
+<argument
+    android:name="username"
+    android:defaultValue="unknow"
+    app:argType="string" />
+<argument
+    android:name="address"
+    android:defaultValue="unknow"
+    app:argType="string" />
+```
+
+`res/navigation/navigation1.xml`
+{% highlight css linenos %}
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
