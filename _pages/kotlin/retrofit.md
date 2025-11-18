@@ -718,6 +718,12 @@ Api
   "url": "https://www.httpbin.org/post"
 }
 ```
+
+### Response`<物件>`
+尖括號包著的是回傳的物件，使用Response作為回值類型，是可以使用isSuccessful屬性，檢查回傳值是200。<br>
+```
+if (response.isSuccessful) { ... }
+```
 ### GsonConvert
 build.gradle(:app)
 ```
@@ -766,8 +772,42 @@ Api
 name = Mary password = 1234
 ```
 
+#### @SerializedName
+前一個範例遇到的問題，只能使用json欄位名，使用@SerializedName處理這個問題。<br>
+告訴gson，把json欄位，轉成userInfo的物件。<br>
+{% highlight kotlin linenos %}
+import com.google.gson.annotations.SerializedName
+
+data class ResponseWrapper1(
+  @SerializedName("json")
+  val userInfo: UserInfo
+)
+{% endhighlight %}
+
+其它內容都一樣，只是`wrapper?.userInfo`有改變。<br>
+{% highlight kotlin linenos %}
+  @Test
+  fun postObjRtn1() = runBlocking<Unit> {
+    val retrofitGson = Retrofit.Builder()
+      .baseUrl("https://www.httpbin.org/")
+      .addConverterFactory(GsonConverterFactory.create())
+      .build()
+    val service = retrofitGson.create(ApiService::class.java)
+    val userInfo = UserInfo("Mary", "1234")
+    val response = service.rtnObj1(userInfo)
+    if (response.isSuccessful) {
+      val wrapper = response.body()
+      val usr = wrapper?.userInfo
+      println("name = ${usr?.name} password = ${usr?.password}")
+    }
+  }
+{% endhighlight %}
+```
+name = Mary password = 1234
+```
+
 ### moshi
-前一個範例遇到的問題，只能使用json欄位名，使用moshi處理這個問題。<br>
+除了使用@SerializedName("json")，也可以使用moshi處理這個問題。<br>
 
 build.gradle(:app)
 ```
@@ -876,10 +916,46 @@ data class ResponseWrapper(
 ```
 就自動把 json 裡的物件解析成 UserInfo，然後包在 ResponseWrapper 裡回傳給你。
 
-## RetrofitUtil(class)
+## RetrofitUtil
+以下內容知識量很多，必須要擁有以下知識，才可以繼續。<br>
+
+Prerequisites:
+
+- [Class][1]
+- [反射][2]
+- [二個冒號::引用][3]
+- [泛型][4]
+- [object_companion][5]
+- [by lazy][6]
+- [by][7]
+
+參數是Java Class(Java類別描述檔)，因為Retrofit是java寫的，所以create()方法只能用java的class傳入。<br>
+
+使用泛型方法定義的參數T。<br>
+{% highlight kotlin linenos %}
+  fun <T> createService(clazz: Class<T>):T {
+    return retrofit.create(clazz)
+  }
+{% endhighlight %}
+
+retrofit是靜態變數，使用by委托給lazy，只執行一次`by lazy{}`的內容，之後就不會再執行，用到retrofit的屬性的時候才會執行。<br>
+
+`ArticleApi::class.java`，把KClass轉成Java Class，把Java Class作為參數傳給方法。<br>
+{% highlight kotlin linenos %}
+interface ArticleApi {
+  @GET("article/list")
+  suspend fun articleList(): ArticleList
+  companion object {
+    val retrofit: ArticleApi by lazy {
+      RetrofitUtil.createService(ArticleApi::class.java)
+    }
+  }
+}
+{% endhighlight %}
+
+完整程式碼
 {% highlight kotlin linenos %}
 package com.example.coroutine.api
-
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -897,23 +973,26 @@ object RetrofitUtil {
 }
 {% endhighlight %}
 
-ArticleApi.kt包含Item與List的data class(data class自動有setter與getter功能)。<br>
-interface ArticleApi 包含companion object，retrofit變數會初始化網路傳輸的api。<br>
+### Data class
+data class自動有setter與getter功能，不用自己寫。
+{% highlight kotlin linenos %}
+data class ArticleList(val data: List<ArticleItem>, val code: Int = -1, val message: String)
+{% endhighlight %}
+
+{% highlight kotlin linenos %}
+data class ArticleItem(val title: String, val source: String, val time: String)
+{% endhighlight %}
+
+### ServiceApi
+articleList()傳回值是ArticleList，ArticleList又包含ArticleItem。
+
 注意以下article前面無右斜線。<br>
 ```
 @GET("article/list")
 ```
-
-
-ArticleApi.kt
 {% highlight kotlin linenos %}
 package com.example.coroutine.api
-
 import retrofit2.http.GET
-
-data class ArticleItem(val title: String, val source: String, val time: String)
-
-data class ArticleList(val data: List<ArticleItem>, val code: Int = -1, val message: String)
 
 interface ArticleApi {
   @GET("article/list")
@@ -926,7 +1005,9 @@ interface ArticleApi {
 }
 {% endhighlight %}
 
-呼叫ArticleApi.retrofit.articleList()
+### 使用ArticleApi.retrofit
+呼叫ArticleApi.retrofit.articleList()，就可以執行retrofit的網路請求。<br>
+retrofit會把interface轉成物件。<br>
 {% highlight kotlin linenos %}
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -950,3 +1031,11 @@ class MainActivity07 : AppCompatActivity() {
   }
 }
 {% endhighlight %}
+
+[1]: {% link _pages/kotlin/java_class.md %}
+[2]: {% link _pages/kotlin/kotlin_reflect.md %}
+[3]: {% link _pages/kotlin/refer_operator.md %}
+[4]: {% link _pages/kotlin/generics.md %}
+[5]: {% link _pages/kotlin/object_companion.md %}
+[6]: {% link _pages/kotlin/lazy.md %}
+[7]: {% link _pages/kotlin/delegate.md %}

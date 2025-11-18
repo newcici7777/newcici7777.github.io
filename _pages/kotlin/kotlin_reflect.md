@@ -6,10 +6,15 @@ keywords: kotlin, reflect
 Prerequisites:
 
 - [Java 反射][1]
+- [兩個冒號::引用][2]
+
+類別是 KClass
+
+方法是 KFunction
+
+欄位是 KProperty
 
 ## KClass
-
-屬性（Property），不是 Java field
 
 getter / setter 是自動產生
 
@@ -29,10 +34,6 @@ companion object（Java 不存在這東西）
 
 Java 的 Class 無法描述這些行為，所以 Kotlin 需要 KClass。
 
-方法是 KFunction
-
-欄位是 KProperty
-
 ## Java Reflection Kotlin KClass 對照表
 
 簡單對映表
@@ -45,7 +46,7 @@ Java 的 Class 無法描述這些行為，所以 Kotlin 需要 KClass。
 |getMethods()	|memberFunctions|
 |getDeclaredMethods()	|declaredMemberFunctions|
 
-1. 取得 Class / KClass
+1.取得 Class / KClass
 
 |功能|	Java|	Kotlin|
 |取得 class 物件|	Duck.class|	Duck::class（KClass）|
@@ -71,27 +72,27 @@ kotlin 取得Java Class
 類別名::class.java
 ```
 
-2. 父類別與介面
+2.父類別與介面
 
 |功能|	Java|	Kotlin|
 |父類別|	clazz.getSuperclass()|	kClass.supertypes|
 |介面|	clazz.getInterfaces()|	kClass.java.interfaces 或 supertypes 過濾 interface|
 
-3. 取得欄位（Fields）
+3.取得欄位（Fields）
 
 |功能| Java| Kotlin |
 |public 欄位| clazz.getFields()| kClass.memberProperties|
 |所有欄位（含 private)| clazz.getDeclaredFields() | kClass.declaredMemberProperties |
 |欄位名稱| field.getName()|property.name|
 
-4. 取得方法（Methods）
+4.取得方法（Methods）
 
 |功能|	Java|	Kotlin|
 |public 方法|clazz.getMethods()|	kClass.memberFunctions|
 |所有方法（含 private）|clazz.getDeclaredMethods()|kClass.declaredMemberFunctions|
 |取得特定方法|clazz.getDeclaredMethod("x")|`declaredMemberFunctions.first { it.name == "x" }`|
 
-5. 建構子（Constructors）
+5.建構子（Constructors）
 
 |功能|Java|Kotlin|
 |public 建構子|	clazz.getConstructors()	|`kClass.constructors.filter { it.visibility == PUBLIC }`|
@@ -99,13 +100,13 @@ kotlin 取得Java Class
 |取出無參數建構子|clazz.getDeclaredConstructor()|`kClass.constructors.first { it.parameters.isEmpty() }`|
 |呼叫建構子|constructor.newInstance()|constructor.call()|
 
-6. 修改存取權限（private → public）
+6.修改存取權限（private → public）
 
 |功能|	Java|	Kotlin|
 |設置 private| 可呼叫	method.setAccessible(true)|method.isAccessible = true|
 |建構子private|constructor.setAccessible(true)|	constructor.isAccessible = true |
 
-7. 呼叫方法
+7.呼叫方法
 
 |功能|	Java|	Kotlin|
 |呼叫 public 方法|	method.invoke(instance)|	method.call(instance)|
@@ -113,13 +114,13 @@ kotlin 取得Java Class
 |呼叫|method.invoke(instance)|method.call(instance)|
 |呼叫帶參數方法|method.invoke(obj, a, b)|method.call(obj, a, b)|
 
-8. 建立物件
+8.建立物件
 
 |功能|	Java|	Kotlin|
 |以預設建構子建立|	clazz.newInstance()|	kClass.createInstance()|
 |以特定建構子建立|	constructor.newInstance(args...)|	constructor.call(args...)|
 
-9. 取得屬性與方法的詳細資訊
+9.取得屬性與方法的詳細資訊
 
 |功能|	Java|	Kotlin|
 |取得參數型別|	method.getParameterTypes()|	function.parameters|
@@ -127,7 +128,7 @@ kotlin 取得Java Class
 |欄位型別	|field.getType()|	property.returnType|
 |檢查是否是 private|	Modifier.isPrivate(method.getModifiers())|	function.visibility|
 
-10. 父類別方法 or 屬性
+10.父類別方法 or 屬性
 
 java
 ```
@@ -261,3 +262,4 @@ fun main() {
 {% endhighlight %}
 
 [1]: {% link _pages/java/reflect.md %}
+[2]: {% link _pages/kotlin/refer_operator.md %}

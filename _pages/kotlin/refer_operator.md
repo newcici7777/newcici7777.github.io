@@ -21,15 +21,77 @@ kotlin 取得Java Class
 
 ## 屬性引用（Property Reference)
 
-把這個屬性當作物件傳給別人使用
+{% highlight kotlin linenos %}
+var count = 10
+
+fun main() {
+    val prop = ::count   // 屬性引用
+    println(prop.get())  // 10
+    prop.set(20)
+    println(count)       // 20
+}
+{% endhighlight %}
+
+::count 是 屬性引用 (Property Reference)
+
+它不是直接取得 count 的值，而是 一個物件，類型是：
+```
+KMutableProperty0<Int>
+```
+KMutableProperty0物件本身提供 get() 與 set(value) 方法，用來操作原始變數 count。
+
+### prop.get()
+```
+println(prop.get())
+```
+prop 代表 count 的屬性引用
+
+.get() 呼叫時，實際上是去 讀取 count 目前的值
+
+因為 count = 10，所以印出 10
+
+### prop.set(20)
+```
+prop.set(20)
+```
+.set(value) 會去 改變原本的 count 值
+
+等於 count = 20
+
+### 最後 println(count)
+```
+println(count)
+```
+因為前面用 prop.set(20) 改了值
+
+所以 count 現在變成 20
+
+印出 20
+
+### 重要觀念
+
+::count → 屬性引用物件（Property Reference）
+
+prop.get() → 取得原變數值（getter）
+
+prop.set(value) → 改變原變數值（setter）
+
+好處：
+
+可以把變數當成「可操作的物件」傳遞或存放
+
+可以動態操作屬性（像委託、泛型函式、reflection）
+
+把這個屬性當作「物件」傳給別人使用
 
 不會馬上執行 取值（對屬性），只是拿它的「描述」或「參考」
 
-全域變數：
+## `::`屬性的種類
+### 全域變數：
 ```
 ::topLevelProperty
 ```
-成員變數：
+### 成員變數：
 ```
 ClassName::property 或 obj::property
 ```
@@ -46,7 +108,7 @@ fun main() {
 }
 {% endhighlight %}
 
-屬性傳遞給Kotlin標準庫使用。
+### 屬性傳遞給Kotlin標準庫使用
 {% highlight kotlin linenos %}
 val names = listOf("Alice", "Bob")
 val lengths = names.map(String::length)  // 取得 String.length 屬性引用
