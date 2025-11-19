@@ -178,6 +178,16 @@ Cat<Double, Boolean, Integer> cat = new Cat<>(12.5, true, 1);
 ## 使用getClass()知道泛型類別的類型
 {% highlight java linenos %}
 class Cat<T, R, M> {
+  private T t;
+  private R r;
+  private M m;
+
+  public Cat(T t, R r, M m) {
+    this.t = t;
+    this.r = r;
+    this.m = m;
+  }
+  
   public void showType() {
     System.out.println(t.getClass());
     System.out.println(r.getClass());

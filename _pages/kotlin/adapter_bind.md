@@ -15,26 +15,13 @@ activity_main3.xml
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/title_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyleView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 {% endhighlight %}
 
@@ -94,31 +81,21 @@ binding.recyleView.layoutManager = GridLayoutManager(this, 2)
 
 ### Main Activity
 {% highlight kotlin linenos %}
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.coroutine.adapter.ArticleItemAdapter
-import com.example.coroutine.api.ArticleItem
 import com.example.coroutine.databinding.ActivityMain3Binding
+import com.example.coroutine.model.ArticleViewModel
 import kotlinx.coroutines.launch
 import kotlin.getValue
 
 class MainActivity15 : AppCompatActivity() {
+  private val viewModel by viewModels<ArticleViewModel>()
   private lateinit var binding : ActivityMain3Binding
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     binding = ActivityMain3Binding.inflate(layoutInflater)
     setContentView(binding.root)
-    // 在 Activity 中初始化 Adapter
-    val adapter = ArticleItemAdapter(this@MainActivity15)
-    
-    // 設置 LayoutManager
+    val adapter = ArticleItemAdapter()
     binding.recyleView.layoutManager = LinearLayoutManager(this)
-    
-    // 將 Adapter 設置給 RecyclerView
     binding.recyleView.adapter = adapter
-    
-    // 提供資料給 Adapter
     val articles = listOf(
       ArticleItem("標題1", "來源1", "時間1"),
       ArticleItem("標題2", "來源2", "時間2"),
@@ -130,27 +107,38 @@ class MainActivity15 : AppCompatActivity() {
 {% endhighlight %}
 
 ### ViewHolder
-
+寫一個ViewHolder大家都可以共用。<br>
 {% highlight kotlin linenos %}
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
 
-class ItemViewHolder(val binding: ViewBinding) :
+class MyViewHolder(val binding: ViewBinding) :
   RecyclerView.ViewHolder(binding.root) {
 }
 {% endhighlight %}
 
 ### Adapter
 
+Android 官方文件說：
+```
+Adapter & ViewHolder should always use parent.context
+不要自己傳 context，也不要用 Activity context
+```
+所以這邊的context使用的是`parent.context`
 {% highlight kotlin linenos %}
-import android.content.Context
+    val binding = ArticleItemBinding.inflate(
+    LayoutInflater.from(parent.context), parent, false)
+{% endhighlight %}
+
+完整ArticleItemAdapter
+{% highlight kotlin linenos %}
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.coroutine.api.ArticleItem
 import com.example.coroutine.databinding.ArticleItemBinding
+import com.example.coroutine.repository.ArticleItem
 
-class ArticleItemAdapter(private val context: Context) : RecyclerView.Adapter<ItemViewHolder>() {
+class ArticleItemAdapter : RecyclerView.Adapter<MyViewHolder>() {
   private val data = ArrayList<ArticleItem>()
   fun setData(data: List<ArticleItem>) {
     this.data.clear()
@@ -158,12 +146,12 @@ class ArticleItemAdapter(private val context: Context) : RecyclerView.Adapter<It
     notifyDataSetChanged()
   }
 
-  override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-    val binding = ArticleItemBinding.inflate(LayoutInflater.from(context), parent, false)
-    return ItemViewHolder(binding)
+  override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+    val binding = ArticleItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+    return MyViewHolder(binding)
   }
 
-  override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+  override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
     val item = data[position]
     val binding = holder.binding as ArticleItemBinding
     binding.itemTv.text = "${item.title} "
@@ -220,12 +208,15 @@ object RetrofitUtil {
 
 ### ArticleApi.kt 
 {% highlight kotlin linenos %}
-import retrofit2.http.GET
-
 data class ArticleItem(val title: String, val source: String, val time: String)
+{% endhighlight %}
 
+{% highlight kotlin linenos %}
 data class ArticleList(val data: List<ArticleItem>, val code: Int = -1, val message: String)
+{% endhighlight %}
 
+{% highlight kotlin linenos %}
+import retrofit2.http.GET
 interface ArticleApi {
   @GET("article/list")
   suspend fun articleList(): ArticleList
@@ -239,6 +230,11 @@ interface ArticleApi {
 
 ### Activity
 {% highlight kotlin linenos %}
+import com.example.coroutine.databinding.ActivityMain3Binding
+import com.example.coroutine.model.ArticleViewModel
+import kotlinx.coroutines.launch
+import kotlin.getValue
+
 class MainActivity15 : AppCompatActivity() {
   private val viewModel by viewModels<ArticleViewModel>()
   private lateinit var binding : ActivityMain3Binding
@@ -246,14 +242,10 @@ class MainActivity15 : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     binding = ActivityMain3Binding.inflate(layoutInflater)
     setContentView(binding.root)
-    val adapter = ArticleItemAdapter(this@MainActivity15)
+    val adapter = ArticleItemAdapter()
     binding.recyleView.layoutManager = LinearLayoutManager(this)
     binding.recyleView.adapter = adapter
 
-    // 取得資料
-    viewModel.getArticleList()
-
-    // 收集資料 並 呼叫adapter
     lifecycleScope.launch {
       viewModel.articleList.collect { value ->
         value?.data?.let {

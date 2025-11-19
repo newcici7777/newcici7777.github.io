@@ -34,6 +34,33 @@ companion object（Java 不存在這東西）
 
 Java 的 Class 無法描述這些行為，所以 Kotlin 需要 KClass。
 
+## KProperty 
+KProperty 為 屬性（Property）的完整描述
+
+KProperty 是 Kotlin 反射 (kotlin.reflect) 套件的物件，
+裡面記錄了這個屬性對應到：
+
+- 哪個類別 (declaringClass)
+- 名稱 (name)
+- getter/setter 方法
+- 是否是 var 或 val
+- 註解（annotations）
+
+在 Kotlin 裡，`KProperty<*>` 是 反射屬性類型（Kotlin Property Reflection），
+它代表你正在讀取或寫入的那個 屬性本身。
+
+類型符號 `KProperty<*>` 的意義
+
+KProperty<T> → 泛型 T 表示屬性的型別
+
+例如 KProperty<String> → 代表 String 屬性
+
+`KProperty<*>` → 泛型未知，用在 delegate 時最方便
+
+因為 delegate 可以作用在任意型別的屬性上
+
+所以 * 就像 Java 的 ?（通配符），表示「任意型別的屬性」
+
 ## Java Reflection Kotlin KClass 對照表
 
 簡單對映表
