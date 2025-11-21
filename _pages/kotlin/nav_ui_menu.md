@@ -3,6 +3,10 @@ title: Nav UI Menu
 date: 2025-11-17
 keywords: kotlin, Nav UI Menu
 ---
+## 建立 menu
+![img]({{site.imgurl}}/kotlin/nav_menu1.png)<br>
+
+![img]({{site.imgurl}}/kotlin/nav_menu1.png)<br>
 ## xml設定
 以下的id = ...，是指按下「設定」，就會移動到fragA這個Fragment。
 ```
