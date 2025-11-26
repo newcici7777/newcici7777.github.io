@@ -5,14 +5,15 @@ keywords: kotlin, reflect
 ---
 Prerequisites:
 
-- [Java 反射][1]
-- [兩個冒號::引用][2]
+- [Class][1]
+- [Java 反射][2]
+- [兩個冒號::引用][3]
 
-類別是 KClass
+Kotlin的Class是 KClass
 
-方法是 KFunction
+Kotlin方法是 KFunction
 
-欄位是 KProperty
+Kotlin欄位是 KProperty
 
 ## KClass
 
@@ -288,5 +289,6 @@ fun main() {
 
 {% endhighlight %}
 
-[1]: {% link _pages/java/reflect.md %}
-[2]: {% link _pages/kotlin/refer_operator.md %}
+[1]: {% link _pages/java/class.md %}
+[2]: {% link _pages/java/reflect.md %}
+[3]: {% link _pages/kotlin/refer_operator.md %}

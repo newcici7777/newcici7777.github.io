@@ -5,54 +5,21 @@ keywords: Java, reflect
 ---
 Prerequisites:
 
+- [Class][4]
 - [Memory Model][1]
 - [metadata][2]
 - [Classloader類別載入][3]
 
-## Class 類別
-Class 類別繼承圖。<br>
-![img]({{site.imgurl}}/java/class_extends.png)<br>
-
-Class 是一個類別，繼承 Object類別，實作 Serializable介面，實作 AnnotateElement 介面，AnnotateElement 介面繼承AccessibleObject類別。<br>
-
-以下介紹這些類別的功能:<br>
-- Class 可以透過 getDeclaredConstructo() 取得類別建構子，「建立」物件，取得類別成員變數、成員方法。
-- Object Class的父類別，所有類別的父類別，getClass()可以取得物件的Class「物件」。
-- AccessibleObject 修改成員變數、方法的存取權限，如private修改成public。
-- Serializable 可以把物件支援IO功能，讀取寫入物件。
-
-## Class物件 
-產生Class物件。<br>
-![img]({{site.imgurl}}/java/class_obj1.png)<br>
-
-1. 程式碼，透過javac，產生.class的byteCode檔案。
-2. 程式碼中第一次new Cat()，呼叫ClassLoader
-3. 在Heap的記憶體位置建立Class物件。
-4. 在Meta space的位置建立Meta data。
-
-只有第1次new，才會啟動ClassLoader，因為Heap記憶體中，只會有一個Class 物件。
-
-下圖中，Cat物件與Cat的Class物件，存放在Heap中。<br>
-而Meta Space中存放Cat的Meta data。<br>
-![img]({{site.imgurl}}/java/class1.png)<br>
-
-## 取得Class物件
-分為4個階段取得Class物件。<br>
-![img]({{site.imgurl}}/java/class_obj2.png)<br>
-
-- 編譯階段 Class.forName()
-- 載入.class階段，ClassLoader.loadClass()
-- 產生Class物件階段，類別.class
-- 產生cat物件，cat物件(object).getClass()
-
-每一個cat1物件、cat2物件、cat3物件，都能取得class物件，取得的class物件是同一個，因為class物件只會存在Heap中一份。<br>
-
-class物件的類別是大寫開頭Class。<br>
-
-
-
 ## 測試的程式碼
 {% highlight java linenos %}
+interface Fly {
+  void fly();
+}
+
+interface Swim {
+  void swim();
+}
+
 public class Duck extends Animal implements Fly, Swim{
   public String name;
   private String info;
@@ -437,3 +404,4 @@ result =
 [1]: {% link _pages/java/memory_model.md %}
 [2]: {% link _pages/java/metadata.md %}
 [3]: {% link _pages/java/classloader.md %}
+[4]: {% link _pages/java/class.md %}
