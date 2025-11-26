@@ -1900,7 +1900,21 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> ClassLoader相關 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 反射相關 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/class/" data-nav-link> Class</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/reflect/" data-nav-link> 反射</a>
+        
+            
+        </li>
 	
 	
 	<li class="" data-nav-item>
@@ -1981,13 +1995,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/enum/" data-nav-link> 列舉</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/reflect/" data-nav-link> 反射</a>
         
             
         </li>
@@ -2075,6 +2082,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/sys_in_out/" data-nav-link> System.in System.out</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/properties/" data-nav-link> Properties</a>
         
             
         </li></ul></li>
@@ -2925,13 +2939,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/java_class/" data-nav-link> Class</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/kotlin/java_to_kotlin/" data-nav-link> Java與kotlin 互轉</a>
         
             
@@ -3059,6 +3066,13 @@
     	<a href="/pages/kotlin/retrofit_stateflow/" data-nav-link> Retrofit StateFlow ViewModel</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/json_to_kotlin/" data-nav-link> Json to kotlin data</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -3167,6 +3181,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/nav_ui_menu/" data-nav-link> Nav UI Menu</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/paging/" data-nav-link> paging 3</a>
         
             
         </li></ul></li></ul></li>
@@ -3677,6 +3698,14 @@
 </figure>
 
 <h2 id="interface-產生介面的實作物件">Interface 產生介面的實作物件</h2>
+<p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/java/class/">Class</a></li>
+</ul>
+
+<p>反射相關的Class了解之後，才能往下閱讀。<br /></p>
+
 <p>Interface</p>
 
 <figure class="highlight">
@@ -3703,10 +3732,12 @@
 ApiService::class.java 把 Kotlin 的 KClass 轉成 Java 的 Class <br /></p>
 
 <p>Retrofit 是一個 Java 寫的函式庫，它的 create() 方法長這樣：</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public &lt;T&gt; T create(Class&lt;T&gt; service);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public &lt;T&gt; T create(Class&lt;T&gt; clazz) {
+  return clazz.newInstance();
+}
 </code></pre></div></div>
 
-<p>所以它要的參數是 Java Class<T>，在 Kotlin 世界裡，就要加上 .java 才能轉換成Java class。</T></p>
+<p>create()的參數是 Java Class，在 Kotlin 世界裡，KClass.java 才能轉換成Java Class。</p>
 
 <table>
   <thead>
@@ -3730,22 +3761,10 @@ ApiService::class.java 把 Kotlin 的 KClass 轉成 Java 的 Class <br /></p>
   </tbody>
 </table>
 
-<p>Retrofit 執行這行時，實際做了這件事：</p>
-
-<p>幫你「生成一個實作了 ApiService 的代理類」，
-這個代理類會攔截你呼叫的 getData() 方法，
-然後組成一個 HTTP 請求發出去。</p>
-
-<p>如果你有多個 API 介面，也可以都用這樣創建：</p>
-
+<p>使用方式:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>val userApi = retrofit.create(UserApi::class.java)
 val orderApi = retrofit.create(OrderApi::class.java)
 </code></pre></div></div>
-
-<p>每個 create() 都會生成一個獨立的代理實例。</p>
-
-<p>ApiService::class.java 是在告訴 Retrofit：「幫我生成這個介面的實作物件」，<br />
-Retrofit 會在執行時根據介面的標註（@GET、@POST…）自動幫你組成 HTTP 請求。</p>
 
 <h2 id="annotations">Annotations</h2>
 <h3 id="get">@GET</h3>
@@ -4946,7 +4965,7 @@ data class ResponseWrapper(
 <p>Prerequisites:</p>
 
 <ul>
-  <li><a href="/pages/kotlin/java_class/">Class</a></li>
+  <li><a href="/pages/java/class/">Class</a></li>
   <li><a href="/pages/kotlin/kotlin_reflect/">反射</a></li>
   <li><a href="/pages/kotlin/refer_operator/">二個冒號::引用</a></li>
   <li><a href="/pages/kotlin/generics/">泛型</a></li>
@@ -5323,7 +5342,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-11-19 14:22:31 +0800"
+        "time": "2025-11-26 13:22:05 +0800"
     },
     "basePath": "",
     "book": {

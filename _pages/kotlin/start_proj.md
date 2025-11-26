@@ -81,7 +81,7 @@ fun main() {
 
 常用在只需要屬性描述（如 name、get()、set()）而不關心型別時。
 
-[1]: {% link _pages/kotlin/java_class.md %}
+[1]: {% link _pages/java/class.md %}
 [2]: {% link _pages/kotlin/kotlin_reflect.md %}
 [3]: {% link _pages/kotlin/refer_operator.md %}
 [4]: {% link _pages/kotlin/generics.md %}

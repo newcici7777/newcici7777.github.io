@@ -69,15 +69,6 @@ public class Duck extends Animal implements Fly, Swim{
 }
 {% endhighlight %}
 
-## class loading 步驟
-JVM 的 class loading 分三步：
-
-Loading（載入）
-
-Linking（連結）
-
-Initialization（初始化 = 執行 static 區塊）
-
 ## Class.forName
 forName("")的參數是package名字.類別名組成，用點來區隔。
 

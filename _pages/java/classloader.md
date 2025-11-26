@@ -29,7 +29,6 @@ public class Test2 {
 ![img]({{site.imgurl}}/java/obj_model1.png)
 
 ## 載入順序
-
 ```
 Loading ClassLoader 載入.class
        ↓
@@ -48,16 +47,16 @@ Initialization（執行 clinit）
 
 建立 metadata（Metaspace)和 java.lang.Class（Heap）
 
-### Verification
+### Verification 驗證
 檢查class 檔案格式正確
 
-### Preparation準備
+### Preparation 準備
 把靜態變數預設為原本的值，假設int就是0，String就是null，float就是0.0f。
 
-### Resolution
-在Preparation時，靜態變數是最原本預設值，int就是0，String就是null。
+### Resolution 解析
+在Preparation時，靜態變數是最原本預設值，int就是0，String就是null。<br>
 
-Resolution階段，把靜態變數變成程式碼中設定的值。
+Resolution階段，把靜態變數變成程式碼中設定的值，以下程式碼i原本在Preparation準備階段是0，在Resolution解析階段，設為300。<br>
 {% highlight java linenos %}
 class StaticTest {
   static int i = 300;
@@ -90,6 +89,8 @@ class StaticTest {
 {% endhighlight %}
 
 若是用new建立物件，此階段也會呼叫匿名區塊與建構子。
+
+
 
 [1]: {% link _pages/java/metadata.md %}
 [2]: {% link _pages/java/metadata.md %}#Constantpool

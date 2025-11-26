@@ -1900,7 +1900,21 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> ClassLoader相關 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 反射相關 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/class/" data-nav-link> Class</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/reflect/" data-nav-link> 反射</a>
+        
+            
+        </li>
 	
 	
 	<li class="" data-nav-item>
@@ -1981,13 +1995,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/enum/" data-nav-link> 列舉</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/reflect/" data-nav-link> 反射</a>
         
             
         </li>
@@ -2075,6 +2082,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/sys_in_out/" data-nav-link> System.in System.out</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/properties/" data-nav-link> Properties</a>
         
             
         </li></ul></li>
@@ -2925,13 +2939,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/java_class/" data-nav-link> Class</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/kotlin/java_to_kotlin/" data-nav-link> Java與kotlin 互轉</a>
         
             
@@ -3056,6 +3063,13 @@
     	<a href="/pages/kotlin/retrofit_stateflow/" data-nav-link> Retrofit StateFlow ViewModel</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/json_to_kotlin/" data-nav-link> Json to kotlin data</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -3111,7 +3125,7 @@
     	<a href="/pages/kotlin/paging/" data-nav-link> paging 3</a>
         
             
-                
+                <ul><li><a href="#api" data-nav-link " >api</a></li><li><a href="#pagingsource" data-nav-link " >PagingSource</a></li><li><a href="#viewmodel" data-nav-link " >ViewModel</a></li><li><a href="#pageadapter" data-nav-link " >PageAdapter</a><ul><li><a href="#viewholder" data-nav-link " >ViewHolder</a></li></ul></li><li><a href="#activity" data-nav-link " >Activity</a></li><li><a href="#xml" data-nav-link " >xml</a></li><li><a href="#loadmore" data-nav-link " >LoadMore</a><ul><li><a href="#activity-1" data-nav-link " >Activity</a></li></ul></li></ul>
 
             
         </li>
@@ -3168,6 +3182,16 @@
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/nav_ui_menu/" data-nav-link> Nav UI Menu</a>
         
+            
+        </li>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/kotlin/paging/" data-nav-link> paging 3</a>
+        
+            
+                <ul><li><a href="#api" data-nav-link " >api</a></li><li><a href="#pagingsource" data-nav-link " >PagingSource</a></li><li><a href="#viewmodel" data-nav-link " >ViewModel</a></li><li><a href="#pageadapter" data-nav-link " >PageAdapter</a><ul><li><a href="#viewholder" data-nav-link " >ViewHolder</a></li></ul></li><li><a href="#activity" data-nav-link " >Activity</a></li><li><a href="#xml" data-nav-link " >xml</a></li><li><a href="#loadmore" data-nav-link " >LoadMore</a><ul><li><a href="#activity-1" data-nav-link " >Activity</a></li></ul></li></ul>
+
             
         </li></ul></li></ul></li>
 	
@@ -3652,7 +3676,582 @@
                         <h1 id="/pages/kotlin/paging">paging 3</h1>
                     
 
-                    
+                    <h2 id="api">api</h2>
+<p>pageOffset是頁碼，pageSize是每頁大小。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="k">import</span> <span class="nn">com.example.coroutine.repository.ArticleList</span>
+<span class="k">import</span> <span class="nn">retrofit2.http.GET</span>
+<span class="k">import</span> <span class="nn">retrofit2.http.Query</span>
+
+<span class="kd">interface</span> <span class="nc">ArticleApi</span> <span class="p">{</span>
+  <span class="nd">@GET</span><span class="p">(</span><span class="s">"article/list"</span><span class="p">)</span>
+  <span class="k">suspend</span> <span class="k">fun</span> <span class="nf">list</span><span class="p">(</span><span class="nd">@Query</span><span class="p">(</span><span class="s">"pageOffset"</span><span class="p">)</span> <span class="n">pageOffset</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span>
+                   <span class="nd">@Query</span><span class="p">(</span><span class="s">"pageSize"</span><span class="p">)</span> <span class="n">pageSize</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span> <span class="nc">ArticleList</span>
+  <span class="k">companion</span> <span class="k">object</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">retrofit</span><span class="p">:</span> <span class="nc">ArticleApi</span> <span class="k">by</span> <span class="nf">lazy</span> <span class="p">{</span>
+      <span class="nc">RetrofitUtil</span><span class="p">.</span><span class="nf">createService</span><span class="p">(</span><span class="nc">ArticleApi</span><span class="o">::</span><span class="k">class</span><span class="p">.</span><span class="n">java</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="pagingsource">PagingSource</h2>
+<p>第1個泛型參數Int是固定。<br />
+第2個泛型參數為回傳的物件的類別。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PagingSource&lt;Int, ArticleItem&gt;()
+</code></pre></div></div>
+
+<ul>
+  <li>prevKey 是上一頁，若是第1頁，它的上一頁是 null(沒有上一頁)。<br /></li>
+  <li>nextKey 是下一頁，若資料為空，就傳null(沒有下一頁)。<br /></li>
+</ul>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+</pre></td><td class="code"><pre><span class="k">import</span> <span class="nn">androidx.paging.PagingSource</span>
+<span class="k">import</span> <span class="nn">androidx.paging.PagingState</span>
+<span class="k">import</span> <span class="nn">com.example.coroutine.api.ArticleApi</span>
+<span class="k">import</span> <span class="nn">com.example.coroutine.repository.ArticleItem</span>
+
+<span class="kd">class</span> <span class="nc">ArticlePagingSource</span> <span class="p">:</span> <span class="nc">PagingSource</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">,</span> <span class="nc">ArticleItem</span><span class="p">&gt;()</span> <span class="p">{</span>
+  <span class="k">override</span> <span class="k">fun</span> <span class="nf">getRefreshKey</span><span class="p">(</span><span class="n">state</span><span class="p">:</span> <span class="nc">PagingState</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">,</span> <span class="nc">ArticleItem</span><span class="p">&gt;):</span> <span class="nc">Int</span><span class="p">?</span> <span class="p">{</span>
+    <span class="nc">TODO</span><span class="p">(</span><span class="s">"Not yet implemented"</span><span class="p">)</span>
+  <span class="p">}</span>
+  <span class="k">override</span> <span class="k">suspend</span> <span class="k">fun</span> <span class="nf">load</span><span class="p">(</span><span class="n">params</span><span class="p">:</span> <span class="nc">LoadParams</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;):</span> <span class="nc">LoadResult</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">,</span> <span class="nc">ArticleItem</span><span class="p">&gt;</span> <span class="p">{</span>
+  	<span class="c1">// 若params.key 為空，設為第1頁</span>
+    <span class="kd">val</span> <span class="py">page</span> <span class="p">=</span> <span class="n">params</span><span class="p">.</span><span class="n">key</span> <span class="o">?:</span> <span class="mi">1</span>
+    <span class="kd">val</span> <span class="py">pageSize</span> <span class="p">=</span> <span class="n">params</span><span class="p">.</span><span class="n">loadSize</span>
+    <span class="k">return</span> <span class="k">try</span> <span class="p">{</span>
+      <span class="kd">val</span> <span class="py">response</span> <span class="p">=</span> <span class="nc">ArticleApi</span><span class="p">.</span><span class="n">retrofit</span><span class="p">.</span><span class="nf">list</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="n">pageSize</span><span class="p">)</span>
+      <span class="nc">LoadResult</span><span class="p">.</span><span class="nc">Page</span><span class="p">(</span>
+        <span class="n">data</span> <span class="p">=</span> <span class="n">response</span><span class="p">.</span><span class="n">data</span><span class="p">,</span>
+        <span class="n">prevKey</span> <span class="p">=</span> <span class="k">if</span> <span class="p">(</span><span class="n">page</span> <span class="p">==</span> <span class="mi">1</span><span class="p">)</span> <span class="k">null</span> <span class="k">else</span> <span class="n">page</span> <span class="p">-</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="n">nextKey</span> <span class="p">=</span> <span class="k">if</span> <span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="nf">isEmpty</span><span class="p">())</span> <span class="k">null</span> <span class="k">else</span> <span class="n">page</span> <span class="p">+</span> <span class="mi">1</span>
+      <span class="p">)</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">e</span><span class="p">:</span> <span class="nc">Exception</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nc">LoadResult</span><span class="p">.</span><span class="nc">Error</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="viewmodel">ViewModel</h2>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre><span class="k">import</span> <span class="nn">androidx.lifecycle.ViewModel</span>
+<span class="k">import</span> <span class="nn">androidx.lifecycle.viewModelScope</span>
+<span class="k">import</span> <span class="nn">androidx.paging.Pager</span>
+<span class="k">import</span> <span class="nn">androidx.paging.PagingConfig</span>
+<span class="k">import</span> <span class="nn">androidx.paging.PagingData</span>
+<span class="k">import</span> <span class="nn">androidx.paging.cachedIn</span>
+<span class="k">import</span> <span class="nn">com.example.coroutine.paging.ArticlePagingSource</span>
+<span class="k">import</span> <span class="nn">com.example.coroutine.repository.ArticleItem</span>
+<span class="k">import</span> <span class="nn">kotlinx.coroutines.flow.Flow</span>
+
+<span class="kd">class</span> <span class="nc">ArticleViewModelPage</span> <span class="p">:</span> <span class="nc">ViewModel</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">private</span> <span class="kd">val</span> <span class="py">articles</span> <span class="k">by</span> <span class="nf">lazy</span> <span class="p">{</span>
+    <span class="nc">Pager</span><span class="p">(</span>
+      <span class="n">config</span> <span class="p">=</span> <span class="nc">PagingConfig</span><span class="p">(</span><span class="n">pageSize</span> <span class="p">=</span> <span class="mi">10</span><span class="p">),</span>
+      <span class="n">pagingSourceFactory</span> <span class="p">=</span> <span class="p">{</span> <span class="nc">ArticlePagingSource</span><span class="p">()</span> <span class="p">}</span>
+    <span class="p">).</span><span class="n">flow</span><span class="p">.</span><span class="nf">cachedIn</span><span class="p">(</span><span class="n">viewModelScope</span><span class="p">)</span>
+  <span class="p">}</span>
+  <span class="k">fun</span> <span class="nf">loadArticle</span><span class="p">():</span> <span class="nc">Flow</span><span class="p">&lt;</span><span class="nc">PagingData</span><span class="p">&lt;</span><span class="nc">ArticleItem</span><span class="p">&gt;&gt;</span> <span class="p">=</span> <span class="n">articles</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="pageadapter">PageAdapter</h2>
+<p>使用getItem()取得資料。</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kd">val</span> <span class="py">item</span> <span class="p">=</span> <span class="nf">getItem</span><span class="p">(</span><span class="n">position</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>繼承PagingDataAdapter，建構子參數傳入DiffUtil。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>: PagingDataAdapter&lt;ArticleItem, MyViewHolder&gt;(DiffUtil)
+</code></pre></div></div>
+
+<p>DiffUtil 用來比對資料是否有更新，比對內容是否相同。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+</pre></td><td class="code"><pre><span class="k">import</span> <span class="nn">android.view.LayoutInflater</span>
+<span class="k">import</span> <span class="nn">android.view.ViewGroup</span>
+<span class="k">import</span> <span class="nn">androidx.paging.PagingDataAdapter</span>
+<span class="k">import</span> <span class="nn">androidx.recyclerview.widget.DiffUtil</span>
+<span class="k">import</span> <span class="nn">com.example.coroutine.databinding.ArticleItemBinding</span>
+<span class="k">import</span> <span class="nn">com.example.coroutine.repository.ArticleItem</span>
+
+<span class="kd">class</span> <span class="nc">ArticlePageAdapter</span> <span class="p">:</span>
+  <span class="nc">PagingDataAdapter</span><span class="p">&lt;</span><span class="nc">ArticleItem</span><span class="p">,</span> <span class="nc">MyViewHolder</span><span class="p">&gt;(</span>
+    <span class="kd">object</span> <span class="err">: </span><span class="nc">DiffUtil</span><span class="p">.</span><span class="nc">ItemCallback</span><span class="p">&lt;</span><span class="nc">ArticleItem</span><span class="p">&gt;()</span> <span class="p">{</span>
+      <span class="k">override</span> <span class="k">fun</span> <span class="nf">areItemsTheSame</span><span class="p">(</span>
+        <span class="n">oldItem</span><span class="p">:</span> <span class="nc">ArticleItem</span><span class="p">,</span>
+        <span class="n">newItem</span><span class="p">:</span> <span class="nc">ArticleItem</span>
+      <span class="p">):</span> <span class="nc">Boolean</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">oldItem</span><span class="p">.</span><span class="n">title</span> <span class="p">==</span> <span class="n">newItem</span><span class="p">.</span><span class="n">title</span>
+      <span class="p">}</span>
+
+      <span class="k">override</span> <span class="k">fun</span> <span class="nf">areContentsTheSame</span><span class="p">(</span>
+        <span class="n">oldItem</span><span class="p">:</span> <span class="nc">ArticleItem</span><span class="p">,</span>
+        <span class="n">newItem</span><span class="p">:</span> <span class="nc">ArticleItem</span>
+      <span class="p">):</span> <span class="nc">Boolean</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">oldItem</span> <span class="p">==</span> <span class="n">newItem</span>
+      <span class="p">}</span>
+    <span class="p">})</span> <span class="p">{</span>
+
+  <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreateViewHolder</span><span class="p">(</span>
+    <span class="n">parent</span><span class="p">:</span> <span class="nc">ViewGroup</span><span class="p">,</span>
+    <span class="n">viewType</span><span class="p">:</span> <span class="nc">Int</span>
+  <span class="p">):</span> <span class="nc">MyViewHolder</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">binding</span> <span class="p">=</span> <span class="nc">ArticleItemBinding</span><span class="p">.</span><span class="nf">inflate</span><span class="p">(</span><span class="nc">LayoutInflater</span><span class="p">.</span><span class="nf">from</span><span class="p">(</span><span class="n">parent</span><span class="p">.</span><span class="n">context</span><span class="p">),</span> <span class="n">parent</span><span class="p">,</span> <span class="k">false</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nc">MyViewHolder</span><span class="p">(</span><span class="n">binding</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="k">override</span> <span class="k">fun</span> <span class="nf">onBindViewHolder</span><span class="p">(</span><span class="n">holder</span><span class="p">:</span> <span class="nc">MyViewHolder</span><span class="p">,</span> <span class="n">position</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">item</span> <span class="p">=</span> <span class="nf">getItem</span><span class="p">(</span><span class="n">position</span><span class="p">)</span>
+    <span class="n">item</span><span class="o">?.</span><span class="nf">let</span><span class="p">{</span>
+      <span class="kd">val</span> <span class="py">binding</span> <span class="p">=</span> <span class="n">holder</span><span class="p">.</span><span class="n">binding</span> <span class="k">as</span> <span class="nc">ArticleItemBinding</span>
+      <span class="n">binding</span><span class="p">.</span><span class="n">itemTv</span><span class="p">.</span><span class="n">text</span> <span class="p">=</span> <span class="s">"${item.title} "</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="viewholder">ViewHolder</h3>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="k">import</span> <span class="nn">androidx.recyclerview.widget.RecyclerView</span>
+<span class="k">import</span> <span class="nn">androidx.viewbinding.ViewBinding</span>
+
+<span class="kd">class</span> <span class="nc">MyViewHolder</span><span class="p">(</span><span class="kd">val</span> <span class="py">binding</span><span class="p">:</span> <span class="nc">ViewBinding</span><span class="p">)</span> <span class="p">:</span>
+  <span class="nc">RecyclerView</span><span class="p">.</span><span class="nc">ViewHolder</span><span class="p">(</span><span class="n">binding</span><span class="p">.</span><span class="n">root</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="activity">Activity</h2>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</pre></td><td class="code"><pre><span class="k">import</span> <span class="nn">android.os.Bundle</span>
+<span class="k">import</span> <span class="nn">androidx.activity.viewModels</span>
+<span class="k">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span>
+<span class="k">import</span> <span class="nn">androidx.lifecycle.lifecycleScope</span>
+<span class="k">import</span> <span class="nn">androidx.recyclerview.widget.LinearLayoutManager</span>
+<span class="k">import</span> <span class="nn">com.example.coroutine.adapter.ArticlePageAdapter</span>
+<span class="k">import</span> <span class="nn">com.example.coroutine.adapter.LoadMoreAdapter</span>
+<span class="k">import</span> <span class="nn">com.example.coroutine.databinding.ActivityPageBinding</span>
+<span class="k">import</span> <span class="nn">com.example.coroutine.model.ArticleViewModelPage</span>
+<span class="k">import</span> <span class="nn">kotlinx.coroutines.launch</span>
+
+<span class="kd">class</span> <span class="nc">PageActivity</span> <span class="p">:</span> <span class="nc">AppCompatActivity</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">private</span> <span class="kd">val</span> <span class="py">articleViewModelPage</span> <span class="k">by</span> <span class="n">viewModels</span><span class="p">&lt;</span><span class="nc">ArticleViewModelPage</span><span class="p">&gt;()</span>
+  <span class="k">private</span> <span class="k">lateinit</span> <span class="kd">var</span> <span class="py">binding</span> <span class="p">:</span> <span class="nc">ActivityPageBinding</span>
+  <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">:</span> <span class="nc">Bundle</span><span class="p">?)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">.</span><span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">)</span>
+    <span class="n">binding</span> <span class="p">=</span> <span class="nc">ActivityPageBinding</span><span class="p">.</span><span class="nf">inflate</span><span class="p">(</span><span class="n">layoutInflater</span><span class="p">)</span>
+    <span class="nf">setContentView</span><span class="p">(</span><span class="n">binding</span><span class="p">.</span><span class="n">root</span><span class="p">)</span>
+    <span class="kd">val</span> <span class="py">articlePageAdapter</span> <span class="p">=</span> <span class="nc">ArticlePageAdapter</span><span class="p">()</span>
+    <span class="n">binding</span><span class="p">.</span><span class="n">recyleView</span><span class="p">.</span><span class="n">layoutManager</span> <span class="p">=</span> <span class="nc">LinearLayoutManager</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+    <span class="n">binding</span><span class="p">.</span><span class="n">recyleView</span><span class="p">.</span><span class="n">adapter</span> <span class="p">=</span> <span class="n">articlePageAdapter</span>
+    <span class="n">lifecycleScope</span><span class="p">.</span><span class="nf">launch</span> <span class="p">{</span>
+      <span class="n">articleViewModelPage</span><span class="p">.</span><span class="nf">loadArticle</span><span class="p">().</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+        <span class="n">articlePageAdapter</span><span class="p">.</span><span class="nf">submitData</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="xml">xml</h2>
+
+<p>ViewHolder article_item.xml</p>
+
+<figure class="highlight">
+  <pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="o">&lt;?</span><span class="nt">xml</span> <span class="nt">version</span><span class="o">=</span><span class="s1">"1.0"</span> <span class="nt">encoding</span><span class="o">=</span><span class="s1">"utf-8"</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nt">androidx</span><span class="nc">.constraintlayout.widget.ConstraintLayout</span> <span class="nt">xmlns</span><span class="nd">:android</span><span class="o">=</span><span class="s1">"http://schemas.android.com/apk/res/android"</span>
+    <span class="nt">xmlns</span><span class="nd">:app</span><span class="o">=</span><span class="s1">"http://schemas.android.com/apk/res-auto"</span>
+    <span class="nt">xmlns</span><span class="nd">:tools</span><span class="o">=</span><span class="s1">"http://schemas.android.com/tools"</span>
+    <span class="nt">android</span><span class="nd">:layout_width</span><span class="o">=</span><span class="s1">"match_parent"</span>
+    <span class="nt">android</span><span class="nd">:layout_height</span><span class="o">=</span><span class="s1">"wrap_content"</span><span class="o">&gt;</span>
+
+    <span class="o">&lt;</span><span class="nt">TextView</span>
+        <span class="nt">android</span><span class="nd">:id</span><span class="o">=</span><span class="s1">"@+id/item_tv"</span>
+        <span class="nt">android</span><span class="nd">:layout_width</span><span class="o">=</span><span class="s1">"wrap_content"</span>
+        <span class="nt">android</span><span class="nd">:layout_height</span><span class="o">=</span><span class="s1">"wrap_content"</span>
+        <span class="nt">android</span><span class="nd">:text</span><span class="o">=</span><span class="s1">"TextView"</span>
+        <span class="nt">app</span><span class="nd">:layout_constraintEnd_toEndOf</span><span class="o">=</span><span class="s1">"parent"</span>
+        <span class="nt">app</span><span class="nd">:layout_constraintStart_toStartOf</span><span class="o">=</span><span class="s1">"parent"</span>
+        <span class="nt">app</span><span class="nd">:layout_constraintTop_toTopOf</span><span class="o">=</span><span class="s1">"parent"</span> <span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="nt">androidx</span><span class="nc">.constraintlayout.widget.ConstraintLayout</span><span class="o">&gt;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>Activity RecyclerView</p>
+
+<figure class="highlight">
+  <pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="code"><pre><span class="o">&lt;</span><span class="nt">androidx</span><span class="nc">.constraintlayout.widget.ConstraintLayout</span> <span class="nt">xmlns</span><span class="nd">:android</span><span class="o">=</span><span class="s1">"http://schemas.android.com/apk/res/android"</span>
+    <span class="nt">xmlns</span><span class="nd">:app</span><span class="o">=</span><span class="s1">"http://schemas.android.com/apk/res-auto"</span>
+    <span class="nt">xmlns</span><span class="nd">:tools</span><span class="o">=</span><span class="s1">"http://schemas.android.com/tools"</span>
+    <span class="nt">android</span><span class="nd">:id</span><span class="o">=</span><span class="s1">"@+id/main"</span>
+    <span class="nt">android</span><span class="nd">:layout_width</span><span class="o">=</span><span class="s1">"match_parent"</span>
+    <span class="nt">android</span><span class="nd">:layout_height</span><span class="o">=</span><span class="s1">"match_parent"</span>
+    <span class="nt">tools</span><span class="nd">:context</span><span class="o">=</span><span class="s1">".activity.PageActivity"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nt">androidx</span><span class="nc">.recyclerview.widget.RecyclerView</span>
+            <span class="nt">android</span><span class="nd">:id</span><span class="o">=</span><span class="s1">"@+id/recyleView"</span>
+            <span class="nt">android</span><span class="nd">:layout_width</span><span class="o">=</span><span class="s1">"match_parent"</span>
+            <span class="nt">android</span><span class="nd">:layout_height</span><span class="o">=</span><span class="s1">"wrap_content"</span>
+            <span class="nt">app</span><span class="nd">:layout_constraintEnd_toEndOf</span><span class="o">=</span><span class="s1">"parent"</span>
+            <span class="nt">app</span><span class="nd">:layout_constraintStart_toStartOf</span><span class="o">=</span><span class="s1">"parent"</span>
+            <span class="nt">app</span><span class="nd">:layout_constraintTop_toTopOf</span><span class="o">=</span><span class="s1">"parent"</span> <span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="nt">androidx</span><span class="nc">.constraintlayout.widget.ConstraintLayout</span><span class="o">&gt;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="loadmore">LoadMore</h2>
+<p>LoadMoreAdapter</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="code"><pre><span class="k">import</span> <span class="nn">android.view.LayoutInflater</span>
+<span class="k">import</span> <span class="nn">android.view.ViewGroup</span>
+<span class="k">import</span> <span class="nn">androidx.paging.LoadState</span>
+<span class="k">import</span> <span class="nn">androidx.paging.LoadStateAdapter</span>
+<span class="k">import</span> <span class="nn">com.example.coroutine.databinding.LoadMoreBinding</span>
+
+<span class="kd">class</span> <span class="nc">LoadMoreAdapter</span> <span class="p">:</span> <span class="nc">LoadStateAdapter</span><span class="p">&lt;</span><span class="nc">MyViewHolder</span><span class="p">&gt;()</span> <span class="p">{</span>
+  <span class="k">override</span> <span class="k">fun</span> <span class="nf">onBindViewHolder</span><span class="p">(</span>
+    <span class="n">holder</span><span class="p">:</span> <span class="nc">MyViewHolder</span><span class="p">,</span>
+    <span class="n">loadState</span><span class="p">:</span> <span class="nc">LoadState</span>
+  <span class="p">)</span> <span class="p">{</span>
+  <span class="p">}</span>
+
+  <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreateViewHolder</span><span class="p">(</span>
+    <span class="n">parent</span><span class="p">:</span> <span class="nc">ViewGroup</span><span class="p">,</span>
+    <span class="n">loadState</span><span class="p">:</span> <span class="nc">LoadState</span>
+  <span class="p">):</span> <span class="nc">MyViewHolder</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">binding</span> <span class="p">=</span> <span class="nc">LoadMoreBinding</span><span class="p">.</span><span class="nf">inflate</span><span class="p">(</span><span class="nc">LayoutInflater</span><span class="p">.</span><span class="nf">from</span><span class="p">(</span><span class="n">parent</span><span class="p">.</span><span class="n">context</span><span class="p">),</span> <span class="n">parent</span><span class="p">,</span> <span class="k">false</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nc">MyViewHolder</span><span class="p">(</span><span class="n">binding</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre></td><td class="code"><pre><span class="o">&lt;?</span><span class="nt">xml</span> <span class="nt">version</span><span class="o">=</span><span class="s1">"1.0"</span> <span class="nt">encoding</span><span class="o">=</span><span class="s1">"utf-8"</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nt">androidx</span><span class="nc">.constraintlayout.widget.ConstraintLayout</span> <span class="nt">xmlns</span><span class="nd">:android</span><span class="o">=</span><span class="s1">"http://schemas.android.com/apk/res/android"</span>
+    <span class="nt">xmlns</span><span class="nd">:app</span><span class="o">=</span><span class="s1">"http://schemas.android.com/apk/res-auto"</span>
+    <span class="nt">xmlns</span><span class="nd">:tools</span><span class="o">=</span><span class="s1">"http://schemas.android.com/tools"</span>
+    <span class="nt">android</span><span class="nd">:layout_width</span><span class="o">=</span><span class="s1">"match_parent"</span>
+    <span class="nt">android</span><span class="nd">:layout_height</span><span class="o">=</span><span class="s1">"match_parent"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">ProgressBar</span>
+        <span class="nt">android</span><span class="nd">:id</span><span class="o">=</span><span class="s1">"@+id/progressBar"</span>
+        <span class="nt">style</span><span class="o">=</span><span class="s1">"?android:attr/progressBarStyle"</span>
+        <span class="nt">android</span><span class="nd">:layout_width</span><span class="o">=</span><span class="s1">"wrap_content"</span>
+        <span class="nt">android</span><span class="nd">:layout_height</span><span class="o">=</span><span class="s1">"wrap_content"</span>
+        <span class="nt">app</span><span class="nd">:layout_constraintEnd_toEndOf</span><span class="o">=</span><span class="s1">"parent"</span>
+        <span class="nt">app</span><span class="nd">:layout_constraintStart_toStartOf</span><span class="o">=</span><span class="s1">"parent"</span>
+        <span class="nt">app</span><span class="nd">:layout_constraintTop_toTopOf</span><span class="o">=</span><span class="s1">"parent"</span> <span class="o">/&gt;</span>
+
+    <span class="o">&lt;</span><span class="nt">TextView</span>
+        <span class="nt">android</span><span class="nd">:id</span><span class="o">=</span><span class="s1">"@+id/textView5"</span>
+        <span class="nt">android</span><span class="nd">:layout_width</span><span class="o">=</span><span class="s1">"wrap_content"</span>
+        <span class="nt">android</span><span class="nd">:layout_height</span><span class="o">=</span><span class="s1">"wrap_content"</span>
+        <span class="nt">android</span><span class="nd">:text</span><span class="o">=</span><span class="s1">"Loading ......."</span>
+        <span class="nt">app</span><span class="nd">:layout_constraintEnd_toEndOf</span><span class="o">=</span><span class="s1">"parent"</span>
+        <span class="nt">app</span><span class="nd">:layout_constraintStart_toStartOf</span><span class="o">=</span><span class="s1">"parent"</span>
+        <span class="nt">app</span><span class="nd">:layout_constraintTop_toBottomOf</span><span class="o">=</span><span class="s1">"@+id/progressBar"</span> <span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="nt">androidx</span><span class="nc">.constraintlayout.widget.ConstraintLayout</span><span class="o">&gt;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h3 id="activity-1">Activity</h3>
+<p>adapter換成withLoadStateFooter()</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="c1">// 換成withLoadStateFooter</span>
+<span class="n">binding</span><span class="p">.</span><span class="n">recyleView</span><span class="p">.</span><span class="n">adapter</span> <span class="p">=</span> <span class="n">articlePageAdapter</span><span class="p">.</span><span class="nf">withLoadStateFooter</span><span class="p">(</span><span class="nc">LoadMoreAdapter</span><span class="p">())</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class="code"><pre><span class="k">import</span> <span class="nn">android.os.Bundle</span>
+<span class="k">import</span> <span class="nn">androidx.activity.viewModels</span>
+<span class="k">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span>
+<span class="k">import</span> <span class="nn">androidx.lifecycle.lifecycleScope</span>
+<span class="k">import</span> <span class="nn">androidx.recyclerview.widget.LinearLayoutManager</span>
+<span class="k">import</span> <span class="nn">com.example.coroutine.adapter.ArticlePageAdapter</span>
+<span class="k">import</span> <span class="nn">com.example.coroutine.adapter.LoadMoreAdapter</span>
+<span class="k">import</span> <span class="nn">com.example.coroutine.databinding.ActivityPageBinding</span>
+<span class="k">import</span> <span class="nn">com.example.coroutine.model.ArticleViewModelPage</span>
+<span class="k">import</span> <span class="nn">kotlinx.coroutines.launch</span>
+
+<span class="kd">class</span> <span class="nc">PageActivity</span> <span class="p">:</span> <span class="nc">AppCompatActivity</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">private</span> <span class="kd">val</span> <span class="py">articleViewModelPage</span> <span class="k">by</span> <span class="n">viewModels</span><span class="p">&lt;</span><span class="nc">ArticleViewModelPage</span><span class="p">&gt;()</span>
+  <span class="k">private</span> <span class="k">lateinit</span> <span class="kd">var</span> <span class="py">binding</span> <span class="p">:</span> <span class="nc">ActivityPageBinding</span>
+  <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">:</span> <span class="nc">Bundle</span><span class="p">?)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">.</span><span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">)</span>
+    <span class="n">binding</span> <span class="p">=</span> <span class="nc">ActivityPageBinding</span><span class="p">.</span><span class="nf">inflate</span><span class="p">(</span><span class="n">layoutInflater</span><span class="p">)</span>
+    <span class="nf">setContentView</span><span class="p">(</span><span class="n">binding</span><span class="p">.</span><span class="n">root</span><span class="p">)</span>
+    <span class="kd">val</span> <span class="py">articlePageAdapter</span> <span class="p">=</span> <span class="nc">ArticlePageAdapter</span><span class="p">()</span>
+    <span class="n">binding</span><span class="p">.</span><span class="n">recyleView</span><span class="p">.</span><span class="n">layoutManager</span> <span class="p">=</span> <span class="nc">LinearLayoutManager</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+
+    <span class="c1">// 換成withLoadStateFooter</span>
+    <span class="n">binding</span><span class="p">.</span><span class="n">recyleView</span><span class="p">.</span><span class="n">adapter</span> <span class="p">=</span> <span class="n">articlePageAdapter</span><span class="p">.</span><span class="nf">withLoadStateFooter</span><span class="p">(</span><span class="nc">LoadMoreAdapter</span><span class="p">())</span>
+    <span class="n">lifecycleScope</span><span class="p">.</span><span class="nf">launch</span> <span class="p">{</span>
+      <span class="n">articleViewModelPage</span><span class="p">.</span><span class="nf">loadArticle</span><span class="p">().</span><span class="nf">collect</span> <span class="p">{</span> <span class="n">value</span> <span class="p">-&gt;</span>
+        <span class="n">articlePageAdapter</span><span class="p">.</span><span class="nf">submitData</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3716,14 +4315,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/kotlin/textwatcher" class="navigation navigation-prev navigation-unique" aria-label="Previous page: TextWatcher">
+                        <a href="/pages/kotlin/nav_ui_menu" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Nav UI Menu">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/kotlin/viewbinding" class="navigation navigation-next navigation-unique" aria-label="Next page: Activity ViewBinding">
+                        <a href="/pages/kotlin/file" class="navigation navigation-next navigation-unique" aria-label="Next page: File">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -3739,6 +4338,15 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
+        
+        "next": {
+            "title": "Properties",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/java/properties.md",
+            "ref": "_pages/java/properties.md",
+            "articles": []
+        },
         
         "dir": "ltr"
     },    "config": {
@@ -3834,7 +4442,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-11-19 14:22:31 +0800"
+        "time": "2025-11-26 13:22:05 +0800"
     },
     "basePath": "",
     "book": {

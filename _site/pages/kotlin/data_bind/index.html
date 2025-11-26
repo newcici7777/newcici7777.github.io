@@ -1900,7 +1900,21 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> ClassLoader相關 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 反射相關 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/class/" data-nav-link> Class</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/reflect/" data-nav-link> 反射</a>
+        
+            
+        </li>
 	
 	
 	<li class="" data-nav-item>
@@ -1981,13 +1995,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/enum/" data-nav-link> 列舉</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/java/reflect/" data-nav-link> 反射</a>
         
             
         </li>
@@ -2075,6 +2082,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/java/sys_in_out/" data-nav-link> System.in System.out</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/java/properties/" data-nav-link> Properties</a>
         
             
         </li></ul></li>
@@ -2925,13 +2939,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/java_class/" data-nav-link> Class</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/kotlin/java_to_kotlin/" data-nav-link> Java與kotlin 互轉</a>
         
             
@@ -3056,6 +3063,13 @@
     	<a href="/pages/kotlin/retrofit_stateflow/" data-nav-link> Retrofit StateFlow ViewModel</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/json_to_kotlin/" data-nav-link> Json to kotlin data</a>
+        
+            
         </li></ul></li>
 	
 	
@@ -3142,7 +3156,7 @@
     	<a href="/pages/kotlin/data_bind/" data-nav-link> Data Binding</a>
         
             
-                
+                <ul><li><a href="#app的buildgradle" data-nav-link " >app的build.gradle</a></li><li><a href="#layout" data-nav-link " >layout</a></li><li><a href="#binding" data-nav-link " >binding</a></li><li><a href="#data-binding-物件" data-nav-link " >data binding 物件</a></li></ul>
 
             
         </li></ul></li>
@@ -3167,6 +3181,13 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/nav_ui_menu/" data-nav-link> Nav UI Menu</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/paging/" data-nav-link> paging 3</a>
         
             
         </li></ul></li></ul></li>
@@ -3652,7 +3673,343 @@
                         <h1 id="/pages/kotlin/data_bind">Data Binding</h1>
                     
 
-                    
+                    <h2 id="app的buildgradle">app的build.gradle</h2>
+
+<figure class="highlight">
+  <pre><code class="language-groovy" data-lang="groovy"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="n">android</span> <span class="o">{</span>
+    <span class="c1">//...</span>
+    <span class="n">buildFeatures</span> <span class="o">{</span>
+        <span class="n">dataBinding</span> <span class="o">=</span> <span class="kc">true</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="layout">layout</h2>
+<p>layout有特殊要求，必須是layout開頭，然後把constraintlayout包到layout裡面。</p>
+
+<figure class="highlight">
+  <pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="o">&lt;?</span><span class="nt">xml</span> <span class="nt">version</span><span class="o">=</span><span class="s1">"1.0"</span> <span class="nt">encoding</span><span class="o">=</span><span class="s1">"utf-8"</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nt">layout</span> <span class="nt">xmlns</span><span class="nd">:android</span><span class="o">=</span><span class="s1">"http://schemas.android.com/apk/res/android"</span>
+    <span class="nt">xmlns</span><span class="nd">:app</span><span class="o">=</span><span class="s1">"http://schemas.android.com/apk/res-auto"</span>
+    <span class="nt">xmlns</span><span class="nd">:tools</span><span class="o">=</span><span class="s1">"http://schemas.android.com/tools"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">androidx</span><span class="nc">.constraintlayout.widget.ConstraintLayout</span>
+        <span class="nt">android</span><span class="nd">:id</span><span class="o">=</span><span class="s1">"@+id/main"</span>
+        <span class="nt">android</span><span class="nd">:layout_width</span><span class="o">=</span><span class="s1">"match_parent"</span>
+        <span class="nt">android</span><span class="nd">:layout_height</span><span class="o">=</span><span class="s1">"match_parent"</span>
+        <span class="nt">tools</span><span class="nd">:context</span><span class="o">=</span><span class="s1">".activity.DataBindActivity"</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="nt">androidx</span><span class="nc">.constraintlayout.widget.ConstraintLayout</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">layout</span><span class="o">&gt;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>在<code class="language-plaintext highlighter-rouge">&lt;layout&gt;&lt;/layout&gt;</code>之間增加<code class="language-plaintext highlighter-rouge">&lt;data&gt;&lt;/data&gt;</code>，裡面有變數，型別是包裝類別java.lang.Integer，不是基本型別int。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="o">&lt;</span><span class="nt">data</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">variable</span>
+        <span class="nt">name</span><span class="o">=</span><span class="s1">"username"</span>
+        <span class="nt">type</span><span class="o">=</span><span class="s1">"java.lang.String"</span> <span class="o">/&gt;</span>
+
+    <span class="o">&lt;</span><span class="nt">variable</span>
+        <span class="nt">name</span><span class="o">=</span><span class="s1">"age"</span>
+        <span class="nt">type</span><span class="o">=</span><span class="s1">"java.lang.Integer"</span> <span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="nt">data</span><span class="o">&gt;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>把TextView的<code class="language-plaintext highlighter-rouge">android:text</code>與data對映，使用<code class="language-plaintext highlighter-rouge">@{data變數名}</code></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="p">&lt;</span><span class="nc">TextView</span> <span class="n">android</span><span class="p">:</span><span class="n">text</span><span class="p">=</span><span class="s">"@{username}"</span> <span class="p">/&gt;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>若是Integer要轉成String</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="p">&lt;</span><span class="nc">TextView</span> <span class="n">android</span><span class="p">:</span><span class="n">text</span><span class="p">=</span><span class="s">"@{String.valueOf(age)}"</span><span class="p">/&gt;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>完整xml</p>
+
+<figure class="highlight">
+  <pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+</pre></td><td class="code"><pre><span class="o">&lt;?</span><span class="nt">xml</span> <span class="nt">version</span><span class="o">=</span><span class="s1">"1.0"</span> <span class="nt">encoding</span><span class="o">=</span><span class="s1">"utf-8"</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nt">layout</span> <span class="nt">xmlns</span><span class="nd">:android</span><span class="o">=</span><span class="s1">"http://schemas.android.com/apk/res/android"</span>
+    <span class="nt">xmlns</span><span class="nd">:app</span><span class="o">=</span><span class="s1">"http://schemas.android.com/apk/res-auto"</span>
+    <span class="nt">xmlns</span><span class="nd">:tools</span><span class="o">=</span><span class="s1">"http://schemas.android.com/tools"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">data</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nt">variable</span>
+            <span class="nt">name</span><span class="o">=</span><span class="s1">"username"</span>
+            <span class="nt">type</span><span class="o">=</span><span class="s1">"java.lang.String"</span> <span class="o">/&gt;</span>
+
+        <span class="o">&lt;</span><span class="nt">variable</span>
+            <span class="nt">name</span><span class="o">=</span><span class="s1">"age"</span>
+            <span class="nt">type</span><span class="o">=</span><span class="s1">"java.lang.Integer"</span> <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="nt">variable</span>
+            <span class="nt">name</span><span class="o">=</span><span class="s1">"user"</span>
+            <span class="nt">type</span><span class="o">=</span><span class="s1">"com.example.coroutine.repository.User"</span> <span class="o">/&gt;</span>
+    <span class="o">&lt;/</span><span class="nt">data</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">androidx</span><span class="nc">.constraintlayout.widget.ConstraintLayout</span>
+        <span class="nt">android</span><span class="nd">:id</span><span class="o">=</span><span class="s1">"@+id/main"</span>
+        <span class="nt">android</span><span class="nd">:layout_width</span><span class="o">=</span><span class="s1">"match_parent"</span>
+        <span class="nt">android</span><span class="nd">:layout_height</span><span class="o">=</span><span class="s1">"match_parent"</span>
+        <span class="nt">tools</span><span class="nd">:context</span><span class="o">=</span><span class="s1">".activity.DataBindActivity"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nt">TextView</span>
+            <span class="nt">android</span><span class="nd">:id</span><span class="o">=</span><span class="s1">"@+id/tv_username"</span>
+            <span class="nt">android</span><span class="nd">:layout_width</span><span class="o">=</span><span class="s1">"wrap_content"</span>
+            <span class="nt">android</span><span class="nd">:layout_height</span><span class="o">=</span><span class="s1">"wrap_content"</span>
+            <span class="nt">android</span><span class="nd">:text</span><span class="o">=</span><span class="s1">"@{username}"</span>
+            <span class="nt">app</span><span class="nd">:layout_constraintBottom_toBottomOf</span><span class="o">=</span><span class="s1">"parent"</span>
+            <span class="nt">app</span><span class="nd">:layout_constraintEnd_toEndOf</span><span class="o">=</span><span class="s1">"parent"</span>
+            <span class="nt">app</span><span class="nd">:layout_constraintStart_toStartOf</span><span class="o">=</span><span class="s1">"parent"</span>
+            <span class="nt">app</span><span class="nd">:layout_constraintTop_toTopOf</span><span class="o">=</span><span class="s1">"parent"</span>
+            <span class="nt">tools</span><span class="nd">:text</span><span class="o">=</span><span class="s1">"name"</span> <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="nt">TextView</span>
+            <span class="nt">android</span><span class="nd">:id</span><span class="o">=</span><span class="s1">"@+id/tv_age"</span>
+            <span class="nt">android</span><span class="nd">:layout_width</span><span class="o">=</span><span class="s1">"wrap_content"</span>
+            <span class="nt">android</span><span class="nd">:layout_height</span><span class="o">=</span><span class="s1">"wrap_content"</span>
+            <span class="nt">android</span><span class="nd">:layout_marginTop</span><span class="o">=</span><span class="s1">"120dp"</span>
+            <span class="nt">android</span><span class="nd">:text</span><span class="o">=</span><span class="s1">"@{String.valueOf(age)}"</span>
+            <span class="nt">app</span><span class="nd">:layout_constraintEnd_toEndOf</span><span class="o">=</span><span class="s1">"parent"</span>
+            <span class="nt">app</span><span class="nd">:layout_constraintStart_toStartOf</span><span class="o">=</span><span class="s1">"parent"</span>
+            <span class="nt">app</span><span class="nd">:layout_constraintTop_toBottomOf</span><span class="o">=</span><span class="s1">"@+id/tv_username"</span>
+            <span class="nt">tools</span><span class="nd">:text</span><span class="o">=</span><span class="s1">"age"</span> <span class="o">/&gt;</span>
+    <span class="o">&lt;/</span><span class="nt">androidx</span><span class="nc">.constraintlayout.widget.ConstraintLayout</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">layout</span><span class="o">&gt;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="binding">binding</h2>
+<p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/kotlin/viewbinding/">viewbinding</a></li>
+</ul>
+
+<p>先處理viewbinding，再把data的屬性username、age設值。<br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="kd">class</span> <span class="nc">DataBindActivity</span> <span class="p">:</span> <span class="nc">AppCompatActivity</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">:</span> <span class="nc">Bundle</span><span class="p">?)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">.</span><span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">)</span>
+    <span class="kd">val</span> <span class="py">binding</span> <span class="p">=</span> <span class="nc">ActivityDataBindBinding</span><span class="p">.</span><span class="nf">inflate</span><span class="p">(</span><span class="n">layoutInflater</span><span class="p">)</span>
+    <span class="nf">setContentView</span><span class="p">(</span><span class="n">binding</span><span class="p">.</span><span class="n">root</span><span class="p">)</span>
+    <span class="n">binding</span><span class="p">.</span><span class="n">username</span> <span class="p">=</span> <span class="s">"Bill"</span>
+    <span class="n">binding</span><span class="p">.</span><span class="n">age</span> <span class="p">=</span> <span class="mi">10</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="data-binding-物件">data binding 物件</h2>
+<p>User物件</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="kd">data class</span> <span class="nc">User</span> <span class="p">(</span><span class="kd">val</span> <span class="py">username</span><span class="p">:</span> <span class="nc">String</span><span class="p">,</span> <span class="kd">val</span> <span class="py">age</span><span class="p">:</span><span class="nc">Int</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="o">&lt;</span><span class="nt">data</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">variable</span>
+        <span class="nt">name</span><span class="o">=</span><span class="s1">"user"</span>
+        <span class="nt">type</span><span class="o">=</span><span class="s1">"com.example.coroutine.repository.User"</span> <span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="nt">data</span><span class="o">&gt;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="o">&lt;</span><span class="nt">TextView</span> <span class="nt">android</span><span class="nd">:text</span><span class="o">=</span><span class="s1">"@{user.username}"</span> <span class="o">/&gt;</span>
+<span class="o">&lt;</span><span class="nt">TextView</span> <span class="nt">android</span><span class="nd">:text</span><span class="o">=</span><span class="s1">"@{String.valueOf(user.age)}"</span> <span class="o">/&gt;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">:</span> <span class="nc">Bundle</span><span class="p">?)</span> <span class="p">{</span>
+  <span class="k">super</span><span class="p">.</span><span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">)</span>
+  <span class="kd">val</span> <span class="py">binding</span> <span class="p">=</span> <span class="nc">ActivityDataBindBinding</span><span class="p">.</span><span class="nf">inflate</span><span class="p">(</span><span class="n">layoutInflater</span><span class="p">)</span>
+  <span class="nf">setContentView</span><span class="p">(</span><span class="n">binding</span><span class="p">.</span><span class="n">root</span><span class="p">)</span>
+  <span class="kd">val</span> <span class="py">user</span> <span class="p">=</span> <span class="nc">User</span><span class="p">(</span><span class="s">"Alice"</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+  <span class="n">binding</span><span class="p">.</span><span class="n">user</span> <span class="p">=</span> <span class="n">user</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>完整xml</p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+</pre></td><td class="code"><pre><span class="p">&lt;?</span><span class="n">xml</span> <span class="n">version</span><span class="p">=</span><span class="s">"1.0"</span> <span class="n">encoding</span><span class="p">=</span><span class="s">"utf-8"</span><span class="p">?&gt;</span>
+<span class="p">&lt;</span><span class="n">layout</span> <span class="n">xmlns</span><span class="p">:</span><span class="n">android</span><span class="p">=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
+    <span class="n">xmlns</span><span class="p">:</span><span class="n">app</span><span class="p">=</span><span class="s">"http://schemas.android.com/apk/res-auto"</span>
+    <span class="n">xmlns</span><span class="p">:</span><span class="n">tools</span><span class="p">=</span><span class="s">"http://schemas.android.com/tools"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="n">data</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="n">variable</span>
+            <span class="n">name</span><span class="p">=</span><span class="s">"user"</span>
+            <span class="n">type</span><span class="p">=</span><span class="s">"com.example.coroutine.repository.User"</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;/</span><span class="n">data</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="n">androidx</span><span class="p">.</span><span class="n">constraintlayout</span><span class="p">.</span><span class="n">widget</span><span class="p">.</span><span class="nc">ConstraintLayout</span>
+        <span class="n">android</span><span class="p">:</span><span class="n">id</span><span class="p">=</span><span class="s">"@+id/main"</span>
+        <span class="n">android</span><span class="p">:</span><span class="n">layout_width</span><span class="p">=</span><span class="s">"match_parent"</span>
+        <span class="n">android</span><span class="p">:</span><span class="n">layout_height</span><span class="p">=</span><span class="s">"match_parent"</span>
+        <span class="n">tools</span><span class="p">:</span><span class="n">context</span><span class="p">=</span><span class="s">".activity.DataBindActivity"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nc">TextView</span>
+            <span class="n">android</span><span class="p">:</span><span class="n">id</span><span class="p">=</span><span class="s">"@+id/tv_username"</span>
+            <span class="n">android</span><span class="p">:</span><span class="n">layout_width</span><span class="p">=</span><span class="s">"wrap_content"</span>
+            <span class="n">android</span><span class="p">:</span><span class="n">layout_height</span><span class="p">=</span><span class="s">"wrap_content"</span>
+            <span class="n">android</span><span class="p">:</span><span class="n">text</span><span class="p">=</span><span class="s">"@{user.username}"</span>
+            <span class="n">app</span><span class="p">:</span><span class="n">layout_constraintBottom_toBottomOf</span><span class="p">=</span><span class="s">"parent"</span>
+            <span class="n">app</span><span class="p">:</span><span class="n">layout_constraintEnd_toEndOf</span><span class="p">=</span><span class="s">"parent"</span>
+            <span class="n">app</span><span class="p">:</span><span class="n">layout_constraintStart_toStartOf</span><span class="p">=</span><span class="s">"parent"</span>
+            <span class="n">app</span><span class="p">:</span><span class="n">layout_constraintTop_toTopOf</span><span class="p">=</span><span class="s">"parent"</span>
+            <span class="n">tools</span><span class="p">:</span><span class="n">text</span><span class="p">=</span><span class="s">"name"</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nc">TextView</span>
+            <span class="n">android</span><span class="p">:</span><span class="n">id</span><span class="p">=</span><span class="s">"@+id/tv_age"</span>
+            <span class="n">android</span><span class="p">:</span><span class="n">layout_width</span><span class="p">=</span><span class="s">"wrap_content"</span>
+            <span class="n">android</span><span class="p">:</span><span class="n">layout_height</span><span class="p">=</span><span class="s">"wrap_content"</span>
+            <span class="n">android</span><span class="p">:</span><span class="n">layout_marginTop</span><span class="p">=</span><span class="s">"120dp"</span>
+            <span class="n">android</span><span class="p">:</span><span class="n">text</span><span class="p">=</span><span class="s">"@{String.valueOf(user.age)}"</span>
+            <span class="n">app</span><span class="p">:</span><span class="n">layout_constraintEnd_toEndOf</span><span class="p">=</span><span class="s">"parent"</span>
+            <span class="n">app</span><span class="p">:</span><span class="n">layout_constraintStart_toStartOf</span><span class="p">=</span><span class="s">"parent"</span>
+            <span class="n">app</span><span class="p">:</span><span class="n">layout_constraintTop_toBottomOf</span><span class="p">=</span><span class="s">"@+id/tv_username"</span>
+            <span class="n">tools</span><span class="p">:</span><span class="n">text</span><span class="p">=</span><span class="s">"age"</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;/</span><span class="n">androidx</span><span class="p">.</span><span class="n">constraintlayout</span><span class="p">.</span><span class="n">widget</span><span class="p">.</span><span class="nc">ConstraintLayout</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="n">layout</span><span class="p">&gt;</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3843,7 +4200,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-11-19 14:22:31 +0800"
+        "time": "2025-11-26 13:22:05 +0800"
     },
     "basePath": "",
     "book": {

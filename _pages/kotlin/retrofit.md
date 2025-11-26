@@ -18,6 +18,12 @@ keywords: kotlin, retrofit
 {% endhighlight %}
 
 ## Interface 產生介面的實作物件
+Prerequisites:
+
+- [Class][1]
+
+反射相關的Class了解之後，才能往下閱讀。<br>
+
 Interface
 {% highlight kotlin linenos %}
 interface ApiService {
@@ -36,33 +42,23 @@ ApiService::class.java 把 Kotlin 的 KClass 轉成 Java 的 Class <br>
 
 Retrofit 是一個 Java 寫的函式庫，它的 create() 方法長這樣：
 ```
-public <T> T create(Class<T> service);
+public <T> T create(Class<T> clazz) {
+  return clazz.newInstance();
+}
 ```
 
-所以它要的參數是 Java Class<T>，在 Kotlin 世界裡，就要加上 .java 才能轉換成Java class。
+create()的參數是 Java Class，在 Kotlin 世界裡，KClass.java 才能轉換成Java Class。
 
 |Kotlin 寫法 |Java 寫法| 說明|
 |:-------|:------|:-----------|
 |ApiService::class |ApiService.class  |Kotlin 專用的 KClass|
 |ApiService::class.java|  ApiService.class|  Retrofit 要的 Java Class|
 
-Retrofit 執行這行時，實際做了這件事：
-
-幫你「生成一個實作了 ApiService 的代理類」，
-這個代理類會攔截你呼叫的 getData() 方法，
-然後組成一個 HTTP 請求發出去。
-
-如果你有多個 API 介面，也可以都用這樣創建：
-
+使用方式:
 ```
 val userApi = retrofit.create(UserApi::class.java)
 val orderApi = retrofit.create(OrderApi::class.java)
 ```
-
-每個 create() 都會生成一個獨立的代理實例。
-
-ApiService::class.java 是在告訴 Retrofit：「幫我生成這個介面的實作物件」，<br>
-Retrofit 會在執行時根據介面的標註（@GET、@POST...）自動幫你組成 HTTP 請求。
 
 ## Annotations
 ### @GET
@@ -1032,7 +1028,7 @@ class MainActivity07 : AppCompatActivity() {
 }
 {% endhighlight %}
 
-[1]: {% link _pages/kotlin/java_class.md %}
+[1]: {% link _pages/java/class.md %}
 [2]: {% link _pages/kotlin/kotlin_reflect.md %}
 [3]: {% link _pages/kotlin/refer_operator.md %}
 [4]: {% link _pages/kotlin/generics.md %}
