@@ -10,6 +10,156 @@ Prerequisites:
 - [metadata][2]
 - [Classloader類別載入][3]
 
+## 使用反射建立物件
+- newInstance(): 呼叫沒有參數的「public」建構子。
+```
+Object obj1 = fish_clz.newInstance();
+```
+- getConstructor(Class... clazz): 參數是Class類別，呼叫類型與數量對映「public」有參數的建構子，參數...是可變參數。
+```
+Constructor constructor = fish_clz.getConstructor(String.class);
+Object obj2 = constructor.newInstance("Bill");
+```
+- getDecalaredConstructor(Class... clazz): 
+```
+// 使用private私有 有參數 建構子
+Constructor constructor1 = fish_clz.getDeclaredConstructor(String.class, int.class);
+// 修改存取權限變成public
+constructor1.setAccessible(true);
+Object obj3 = constructor1.newInstance("Mary", 10);
+```
+
+魚的類別
+{% highlight java linenos %}
+class Fish {
+  public String name;
+  private int age;
+
+  public Fish() {}
+
+  public Fish(String name) {
+    this.name = name;
+  }
+
+  // 私有
+  private Fish(String name, int age) {
+    this.age = age;
+    this.name = name;
+  }
+
+  @Override
+  public String toString() {
+    return "Fish{" +
+        "name='" + name + '\'' +
+        ", age=" + age +
+        '}';
+  }
+}
+{% endhighlight %}
+
+完整程式碼
+{% highlight java linenos %}
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+
+public class ReflectTest4 {
+  public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    // 取得class
+    Class fish_clz = Class.forName("reflect.Fish");
+    // 使用public 無參數 建構子 建立物件
+    Object obj1 = fish_clz.newInstance();
+    System.out.println("obj1 = " + obj1);
+    // 使用public 有參數 建構子 建立物件
+    Constructor constructor = fish_clz.getConstructor(String.class);
+    Object obj2 = constructor.newInstance("Bill");
+    System.out.println("obj2 = " + obj2);
+    // 使用private私有 有參數 建構子
+    Constructor constructor1 = fish_clz.getDeclaredConstructor(String.class, int.class);
+    // 修改存取權限變成public
+    constructor1.setAccessible(true);
+    Object obj3 = constructor1.newInstance("Mary", 10);
+    System.out.println("obj3 = " + obj3);
+  }
+}
+{% endhighlight %}
+```
+obj1 = Fish{name='null', age=0}
+obj2 = Fish{name='Bill', age=0}
+obj3 = Fish{name='Mary', age=10}
+```
+
+## 成員變數
+{% highlight java linenos %}
+class Fish {
+  // public
+  public String name = "Default";
+  // private
+  private int age = 0;
+  // private + static
+  private static int weight = 0;
+  public Fish() {
+  }
+
+  public Fish(String name) {
+    this.name = name;
+  }
+
+  private Fish(String name, int age) {
+    this.age = age;
+    this.name = name;
+  }
+
+  @Override
+  public String toString() {
+    return "Fish{" +
+        "name='" + name + '\'' +
+        ", age=" + age +
+        '}';
+  }
+}
+{% endhighlight %}
+
+{% highlight java linenos %}
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+
+public class ReflectTest4 {
+  public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
+    // 取得class
+    Class fish_clz = Class.forName("reflect.Fish");
+    // 使用public 無參數 建構子 建立物件
+    Object obj1 = fish_clz.newInstance();
+
+    // public
+    Field name = fish_clz.getField("name");
+    System.out.println("name = " + name.get(obj1));
+    name.set(obj1, "Alice");
+    System.out.println("After changed name = " + name.get(obj1));
+    // private
+    Field age = fish_clz.getDeclaredField("age");
+    age.setAccessible(true);
+    System.out.println("age = " + age.get(obj1));
+    age.set(obj1, 30);
+    System.out.println("After changed age = " + age.get(obj1));
+    // private + static
+    Field weight = fish_clz.getDeclaredField("weight");
+    weight.setAccessible(true);
+    System.out.println("weight = " + weight.get(null));
+    weight.set(null, 100);
+    System.out.println("After changed weight = " + weight.get(null));
+  }
+}
+{% endhighlight %}
+```
+name = Default
+After changed name = Alice
+age = 0
+After changed age = 30
+weight = 0
+After changed weight = 100
+```
+
 ## 測試的程式碼
 {% highlight java linenos %}
 interface Fly {
