@@ -21,6 +21,7 @@ Constructor constructor = fish_clz.getConstructor(String.class);
 Object obj2 = constructor.newInstance("Bill");
 ```
 - getDecalaredConstructor(Class... clazz): 
+參數是Class類別，呼叫類型與數量對映「public 或 private」有參數的建構子，參數...是可變參數。
 ```
 // 使用private私有 有參數 建構子
 Constructor constructor1 = fish_clz.getDeclaredConstructor(String.class, int.class);
@@ -88,7 +89,8 @@ obj2 = Fish{name='Bill', age=0}
 obj3 = Fish{name='Mary', age=10}
 ```
 
-## 成員變數
+## 反射取得成員變數
+以下有public、private、static成員變數。
 {% highlight java linenos %}
 class Fish {
   // public
@@ -118,6 +120,22 @@ class Fish {
   }
 }
 {% endhighlight %}
+
+取得成員變數的方法:
+- getField(): 取得public的成員變數。
+- getDeclaredField(): 取得public 與 private成員變數。
+
+設定屬性
+```
+屬性名.set(物件,值);
+age.set(obj1, 30);
+```
+
+取得屬性
+```
+屬性名.get(物件);
+age.get(obj1)
+```
 
 {% highlight java linenos %}
 import java.lang.reflect.Constructor;
@@ -159,6 +177,126 @@ After changed age = 30
 weight = 0
 After changed weight = 100
 ```
+
+## 反射呼叫成員方法
+{% highlight java linenos %}
+class Fish {
+  public Fish() {
+  }
+  // public 方法
+  public String method1(String name, int age) {
+    return "public method = " + name + age;
+  }
+  // private 方法
+  private String method2(String name, int age) {
+    return "private method = " + name + age;
+  }
+  // static 方法
+  private static int method3(int age) {
+    return age;
+  }
+}
+{% endhighlight %}
+
+### 取得public method
+```
+Method 方法變數 = class物件.getMethod("方法名", 參數Class物件);
+Method method1 = fish_clz.getMethod("method1", String.class, int.class);
+```
+
+呼叫方法
+```
+Object 變數 = 方法變數.invoke(物件, "參數1", 參數2);
+Object rtn1 = method1.invoke(obj1, "Mary", 10);
+```
+
+Object是return的類型，固定傳回Object父類別。<br>
+但執行時期的類型是真正方法定義的類型，以本例來說，對傳回值使用getClass()，會取得傳回值實際執行的類型。<br>
+```
+System.out.println(rtn1.getClass());
+```
+執行結果為class java.lang.String
+
+完整程式碼
+{% highlight kotlin linenos %}
+// 取得class
+Class fish_clz = Class.forName("reflect.Fish");
+// 使用public 無參數 建構子 建立物件
+Object obj1 = fish_clz.newInstance();
+// 取得public 方法
+Method method1 = fish_clz.getMethod("method1", String.class, int.class);
+// 呼叫方法 取得傳回值，傳回值固定Object類型
+Object rtn1 = method1.invoke(obj1, "Mary", 10);
+// getClass取得傳回值實際類型
+System.out.println(rtn1.getClass());
+// 輸出結果
+System.out.println(rtn1);
+{% endhighlight %}
+```
+class java.lang.String
+public method = Mary10
+```
+
+### 取得private method
+```
+Method 方法變數 = class物件.getDeclaredMethod("方法名", 參數Class物件);
+Method method2 = fish_clz.getDeclaredMethod("method2", String.class, int.class);
+```
+
+使用方法前，要先把private存取權限設為public。
+```
+method2.setAccessible(true);
+```
+
+再如之前一樣，呼叫方法。<br>
+
+完整程式碼
+{% highlight java linenos %}
+// 取得class
+Class fish_clz = Class.forName("reflect.Fish");
+// 使用public 無參數 建構子 建立物件
+Object obj1 = fish_clz.newInstance();
+Method method2 = fish_clz.getDeclaredMethod("method2", String.class, int.class);
+method2.setAccessible(true);
+Object rtn = method2.invoke(obj1, "Mary", 10);
+System.out.println(rtn.getClass());
+System.out.println(rtn);
+{% endhighlight %}
+```
+class java.lang.String
+private method = Mary10
+```
+
+### 取得staic method
+語法，呼叫方法的時候，可以把物件變成null，因為static方法是類別方法，不用使用物件也可以呼叫。
+```
+Object 變數 = 方法變數.invoke(null, "參數1", 參數2);
+Object rtn1 = method1.invoke(null, "Mary", 10);
+```
+
+{% highlight java linenos %}
+public class ReflectTest4 {
+  public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
+    // 取得class
+    Class fish_clz = Class.forName("reflect.Fish");
+    // public
+    Object obj1 = fish_clz.newInstance();
+    Method method3 = fish_clz.getDeclaredMethod("method3", int.class);
+    method3.setAccessible(true);
+    // 呼叫static方法
+    Object rtn = method3.invoke(null,  10);
+    System.out.println(rtn.getClass());
+    System.out.println(rtn);
+  }
+}
+{% endhighlight %}
+```
+class java.lang.Integer
+10
+```
+
+## 透過反射取得類別的結構
+
 
 ## 測試的程式碼
 {% highlight java linenos %}
