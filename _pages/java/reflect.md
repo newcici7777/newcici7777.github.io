@@ -296,7 +296,391 @@ class java.lang.Integer
 ```
 
 ## 透過反射取得類別的結構
+使用先前的Fish類別。
 
+### 取得package套件路徑 與 類別名
+{% highlight java linenos %}
+// 取得class
+Class clazz = Class.forName("reflect.Fish");
+// 取得package
+System.out.println(clazz.getPackage());
+// 取得package + 類別名
+System.out.println(clazz.getName());
+// 取得類別名
+System.out.println(clazz.getSimpleName());
+{% endhighlight %}
+```
+reflect
+reflect.Fish
+Fish
+```
+
+### 共用方法
+- getName() 可以取得屬性名、方法名、建構子名
+- getType() 取得屬性的類型
+- getModifiers() 取得存取權限
+
+|存取權限|編號|
+|:------|:--:|
+|public| 1 |
+|private| 2 |
+|protected| 4 |
+|static| 8 |
+|final| 16|
+
+若有二個存取權限，則是相加，以下public是1 \+ staic 8 = 9
+```
+public static String name;
+```
+
+### 取得屬性
+父類別是Animal，子類別是Fish。
+{% highlight java linenos %}
+class Animal {
+  public String type;
+  private String color;
+}
+class Fish extends Animal{
+  public String name;
+  private String age;
+  public Fish() {
+  }
+}
+{% endhighlight %}
+
+#### 取得public屬性，包含父類別
+除了獲取本身的public成員變數(屬性)，也可以獲取父類別public的成員屬性。
+{% highlight java linenos %}
+public class ReflectTest4 {
+  public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
+    // 取得class
+    Class clazz = Class.forName("reflect.Fish");
+    Field[] fields = clazz.getFields();
+    for (Field field : fields) {
+      System.out.println("===================");
+      System.out.println("屬性名 = " + field.getName());
+      System.out.println("屬性類別 = " + field.getType());
+      System.out.println("屬性權限 = " + field.getModifiers());
+    }
+  }
+}
+{% endhighlight %}
+```
+===================
+屬性名 = name
+屬性類別 = class java.lang.String
+屬性權限 = 1
+===================
+屬性名 = type
+屬性類別 = class java.lang.String
+屬性權限 = 1
+```
+
+#### 取得類別public private全部屬性 不包含父類別
+{% highlight java linenos %}
+// 取得class
+Class clazz = Class.forName("reflect.Fish");
+Field[] fields = clazz.getDeclaredFields();
+for (Field field : fields) {
+  System.out.println("===================");
+  System.out.println("屬性名 = " + field.getName());
+  System.out.println("屬性類別 = " + field.getType());
+  System.out.println("屬性權限 = " + field.getModifiers());
+}
+{% endhighlight %}
+```
+===================
+屬性名 = name
+屬性類別 = class java.lang.String
+屬性權限 = 1
+===================
+屬性名 = age
+屬性類別 = class java.lang.String
+屬性權限 = 2
+```
+
+### 取得方法
+{% highlight java linenos %}
+class Animal {
+  public String type;
+  private String color;
+
+  public void fmethod1_public() {}
+
+  public void fmethod2_prive() {}
+}
+
+class Fish extends Animal {
+  public String name;
+  private String age;
+
+  public void method1_public() {}
+
+  public void method2_prive() {}
+}
+{% endhighlight %}
+
+#### 取得public方法(包含父類別)
+- getReturnType() 取得方法傳回值類型
+- getParameterTypes() 參數類型
+
+{% highlight java linenos %}
+public class ReflectTest4 {
+  public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
+    // 取得class
+    Class clazz = Class.forName("reflect.Fish");
+    Method[] methods = clazz.getMethods();
+    for (Method method : methods) {
+      System.out.println("===================");
+      System.out.println("方法名 = " + method.getName());
+      System.out.println("傳回類別 = " + method.getReturnType());
+      System.out.println("存取權限 = " + method.getModifiers());
+      Class<?>[] parameterTypes = method.getParameterTypes();
+      for (Class<?> parameterType : parameterTypes) {
+        System.out.println("參數類型 = " +parameterType);
+      }
+    }
+  }
+}
+{% endhighlight %}
+```
+===================
+方法名 = method1_public
+傳回類別 = void
+存取權限 = 1
+===================
+方法名 = method2_prive
+傳回類別 = void
+存取權限 = 1
+===================
+方法名 = fmethod1_public
+傳回類別 = void
+存取權限 = 1
+===================
+方法名 = fmethod2_prive
+傳回類別 = void
+存取權限 = 1
+===================
+方法名 = equals
+傳回類別 = boolean
+存取權限 = 1
+參數類型 = class java.lang.Object
+===================
+方法名 = toString
+傳回類別 = class java.lang.String
+存取權限 = 1
+===================
+方法名 = hashCode
+傳回類別 = int
+存取權限 = 257
+===================
+方法名 = getClass
+傳回類別 = class java.lang.Class
+存取權限 = 273
+===================
+方法名 = notify
+傳回類別 = void
+存取權限 = 273
+===================
+方法名 = notifyAll
+傳回類別 = void
+存取權限 = 273
+===================
+方法名 = wait
+傳回類別 = void
+存取權限 = 17
+參數類型 = long
+===================
+方法名 = wait
+傳回類別 = void
+存取權限 = 17
+參數類型 = long
+參數類型 = int
+===================
+方法名 = wait
+傳回類別 = void
+存取權限 = 17
+```
+#### 取得類別public private方法(不包含父類別)
+{% highlight java linenos %}
+// 取得class
+Class clazz = Class.forName("reflect.Fish");
+Method[] methods = clazz.getDeclaredMethods();
+for (Method method : methods) {
+  System.out.println("===================");
+  System.out.println("方法名 = " + method.getName());
+  System.out.println("傳回類別 = " + method.getReturnType());
+  System.out.println("存取權限 = " + method.getModifiers());
+  Class<?>[] parameterTypes = method.getParameterTypes();
+  for (Class<?> parameterType : parameterTypes) {
+    System.out.println("參數類型 = " +parameterType);
+  }
+}
+{% endhighlight %}
+```
+===================
+方法名 = method1_public
+傳回類別 = void
+存取權限 = 1
+===================
+方法名 = method2_prive
+傳回類別 = void
+存取權限 = 1
+```
+
+### 取得建構子(不包含父類別)
+{% highlight java linenos %}
+class Animal {
+  public String type;
+  private String color;
+
+  public void fmethod1_public() {}
+
+  public void fmethod2_prive() {}
+
+  public Animal() {}
+
+  public Animal(String type) {}
+}
+
+class Fish extends Animal {
+  public String name;
+  private String age;
+
+  public Fish() {}
+
+  public Fish(String name) {}
+
+  private Fish(String name, int age) {}
+
+  public void method1_public() {}
+
+  public void method2_prive() {}
+}
+{% endhighlight %}
+
+#### 取得public建構子(不包含父類別)
+{% highlight java linenos %}
+Class clazz = Class.forName("reflect.Fish");
+Constructor[] constructors = clazz.getConstructors();
+for (Constructor constructor : constructors) {
+  System.out.println("===================");
+  System.out.println("建構子名 = " + constructor.getName());
+  System.out.println("存取權限 = " + constructor.getModifiers());
+  Class<?>[] parameterTypes = constructor.getParameterTypes();
+  for (Class<?> parameterType : parameterTypes) {
+    System.out.println("參數類型 = " +parameterType);
+  }
+}
+{% endhighlight %}
+```
+===================
+建構子名 = reflect.Fish
+存取權限 = 1
+參數類型 = class java.lang.String
+===================
+建構子名 = reflect.Fish
+存取權限 = 1
+```
+#### 取得public private 建構子(不包含父類別)
+存取權限，1 是public， 2 是private。
+{% highlight java linenos %}
+Class clazz = Class.forName("reflect.Fish");
+Constructor[] constructors = clazz.getDeclaredConstructors();
+for (Constructor constructor : constructors) {
+  System.out.println("===================");
+  System.out.println("建構子名 = " + constructor.getName());
+  System.out.println("存取權限 = " + constructor.getModifiers());
+  Class<?>[] parameterTypes = constructor.getParameterTypes();
+  for (Class<?> parameterType : parameterTypes) {
+    System.out.println("參數類型 = " +parameterType);
+  }
+}
+{% endhighlight %}
+```
+===================
+建構子名 = reflect.Fish
+存取權限 = 2
+參數類型 = class java.lang.String
+參數類型 = int
+===================
+建構子名 = reflect.Fish
+存取權限 = 1
+參數類型 = class java.lang.String
+===================
+建構子名 = reflect.Fish
+存取權限 = 1
+```
+
+### 取得父類別
+{% highlight java linenos %}
+class Animal {
+  public String type;
+  private String color;
+
+  public Animal() {}
+
+  public Animal(String type) {}
+}
+
+interface IA {}
+
+interface IB {}
+
+class Fish extends Animal implements IA, IB {
+  public String name;
+  private String age;
+
+  public Fish() {}
+
+  public Fish(String name) {}
+
+  private Fish(String name, int age) {}
+
+}
+{% endhighlight %}
+
+{% highlight java linenos %}
+// 取得class
+Class clazz = Class.forName("reflect.Fish");
+Class super_clazz = clazz.getSuperclass();
+System.out.println(super_clazz);
+{% endhighlight %}
+```
+class reflect.Animal
+```
+### 取得Interface
+{% highlight java linenos %}
+// 取得class
+Class clazz = Class.forName("reflect.Fish");
+Class[] interfaces = clazz.getInterfaces();
+for (Class anInterface : interfaces) {
+  System.out.println(anInterface);
+}
+{% endhighlight %}
+```
+interface reflect.IA
+interface reflect.IB
+```
+
+### 取得Annoations
+{% highlight java linenos %}
+@Deprecated
+class Fish {
+  public Fish() {}
+}
+{% endhighlight %}
+
+{% highlight java linenos %}
+Class clazz = Class.forName("reflect.Fish");
+Annotation[] annotations = clazz.getAnnotations();
+for (Annotation annotation : annotations) {
+  System.out.println(annotation);
+}
+{% endhighlight %}
+```
+@java.lang.Deprecated(forRemoval=false, since="")
+```
 
 ## 測試的程式碼
 {% highlight java linenos %}
