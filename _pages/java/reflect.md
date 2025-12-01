@@ -10,6 +10,13 @@ Prerequisites:
 - [metadata][2]
 - [Classloader類別載入][3]
 
+反射有包含以下四種。
+
+- java.lang.Class 代表類別物件
+- java.lang.reflect.Method 成員方法
+- java.lang.reflect.Constructor 建構子
+- java.lang.reflect.Field 成員變數(屬性)
+
 ## 使用反射建立物件
 - newInstance(): 呼叫沒有參數的「public」建構子。
 ```
@@ -197,6 +204,36 @@ class Fish {
   }
 }
 {% endhighlight %}
+
+### 取得public method 無參數
+```
+Method 方法變數 = class物件.getMethod("方法名");
+Method method1 = fish_clz.getMethod("method1");
+```
+
+呼叫方法
+```
+Object 變數 = 方法變數.invoke(物件);
+Object rtn1 = method1.invoke(obj1);
+```
+
+{% highlight java linenos %}
+class Fish {
+  public void method1_public() {
+    System.out.println("method1_public");
+  }
+{% endhighlight %}
+
+{% highlight java linenos %}
+// 取得class
+Class clazz = Class.forName("reflect.Fish");
+Object obj1 = clazz.newInstance();
+Method method1 = clazz.getMethod("method1_public");
+method1.invoke(obj1);
+{% endhighlight %}
+```
+method1_public
+```
 
 ### 取得public method
 ```

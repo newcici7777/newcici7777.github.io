@@ -40,7 +40,7 @@ Loading 載入.class
 - Linking 連接
 - Initialization 初始化
 
-![img]({{site.imgurl}}/java/load_step.png)<br>
+![img]({{site.imgur  l}}/java/load_step.png)<br>
 
 ```
 1.Loading 載入.class檔
