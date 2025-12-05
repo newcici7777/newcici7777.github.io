@@ -3,6 +3,37 @@ title: TextField
 date: 2023-05-03
 keywords: Android, Jetpack compose, TextField 
 ---
+明確的導入remember
+```
+// 或是更明確的導入
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.mutableStateOf
+```
+
+{% highlight kotlin linenos %}
+@Composable
+fun testStatus() {
+  // 輸入框 - 會自動上移避開軟鍵盤
+  // 1. 創建一個可記住的狀態
+  var text by remember { mutableStateOf("") }
+
+  // 2. 將狀態傳遞給 TextField
+  TextField(
+    value = text,  // 使用狀態值
+    onValueChange = { newText ->
+      text = newText  // 更新狀態
+    },
+    label = { Text("輸入文字") },
+    modifier = Modifier
+      .fillMaxWidth()
+      .padding(16.dp)
+  )
+}
+{% endhighlight %}
+
+以下是舊文章
+------------------------------------------
+
 ![img]({{site.imgurl}}/compose/textfield1.png)
 ![img]({{site.imgurl}}/compose/textfield2.png)
 {% highlight kotlin linenos %}

@@ -161,15 +161,23 @@ Modifier.padding(start = 10.dp, end = 20.dp, top = 30.dp, bottom = 40.dp)
 意思是，向內部左邊增加10dp大小的空間，向內部右邊增加20dp大小的空間(Space)，向內部上面增加30dp大小的空間，向內部下方增加40dp大小的空間(Space)。<br>
 
 ### dp
-以dp為單位，1dp代表，增加1dp大小的空間(Space)。<br>
+dp是簡寫，全部的英文是 density-independent pixel
 
-1dp = 160 dpi 的 1 pixel像素。
+1dp = 160 DPI螢幕 的 1 pixel像素。
+
+原文
+```
+1 density-independent pixel = one pixel on a 160 DPI screen
+```
+
+1dp代表，增加1dp大小的空間(Space)。<br>
 
 dp 會根據不同手機大小，自動計算對映pixel像素，展示對映的大小。<br>
 
-上下左右都是增加10dp空間(Space)。<br>
-設定「一個10dp」，表示上下左右都是增加10dp空間(Space)。<br>
-以下二者都是相同意思。<br>
+### padding(數字.dp)
+以下第一行程式碼，上下左右增加10dp空間(Space)。<br>
+以下第二行程式碼，設定「一個10dp」，表示上下左右都是增加10dp空間(Space)。<br>
+二者都是相同意思。<br>
 ```
 Modifier.padding(start = 10.dp, end = 10.dp, top = 10.dp,  bottom = 10.dp)
 Modifier.padding(10.dp)
@@ -264,6 +272,7 @@ fun GreetingPreview() {
 ### Text padding
 只單純設定Text元件，發現它會增加上方的空間。<br>
 與Button不同，Button與父元件產生「距離」，而不是增加大小。<br>
+![img]({{site.imgurl}}/compose/modifier/text_padding1.png)<br>
 {% highlight kotlin linenos %}
 @Preview(showBackground = true)
 @Composable
@@ -279,7 +288,7 @@ fun GreetingPreview() {
 #### Box內的Text padding
 未設定padding前，Text 上下左右都沒有空間(Space)。<br>
 
-![img]({{site.imgurl}}/compose/modifier/text_padding1.png)<br>
+![img]({{site.imgurl}}/compose/modifier/text_padding2.png)<br>
 
 未設定Text padding程式碼
 {% highlight kotlin linenos %}
@@ -301,7 +310,7 @@ fun GreetingPreview() {
 
 設定padding後，top = 20，Text元件，上方增加20dp空間(Space)。<br>
 
-![img]({{site.imgurl}}/compose/modifier/text_padding2.png)<br>
+![img]({{site.imgurl}}/compose/modifier/text_padding3.png)<br>
 
 {% highlight kotlin linenos %}
 @Preview(showBackground = true)
