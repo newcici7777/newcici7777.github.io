@@ -154,6 +154,17 @@ fun testStatus() {
 {% endhighlight %}
 
 ## imePadding()
+
+Prerequisites:
+
+- [Remember MutableState][1]
+
+隨著輸入框變大，imePadding()也會跟著變大。<br>
+
+![img]({{site.imgurl}}/compose/modifier/textfield_padding1.png)<br>
+
+![img]({{site.imgurl}}/compose/modifier/textfield_padding2.png)<br>
+
 {% highlight kotlin linenos %}
 @Composable
 fun WithIMEPadding() {
@@ -299,3 +310,5 @@ fun ArticleDetailScreen() {
   }
 }
 {% endhighlight %}
+
+[1]: {% link _pages/compose/mutablestate.md %}
