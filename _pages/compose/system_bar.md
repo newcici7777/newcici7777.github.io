@@ -3,7 +3,7 @@ title: System UI
 date: 2023-05-03
 keywords: Android, Jetpack compose, System bar, System UI, status bar
 ---
-## System UI
+## 螢幕畫面
 ```
 ┌─────────────────────────────────┐
 │ Top    (Status Bar)             │ 
@@ -21,6 +21,7 @@ keywords: Android, Jetpack compose, System bar, System UI, status bar
 - Status Bar 頂部System UI
 - Navigation Bar 底部System UI
 - System Bar 頂部System UI \+ 底部System UI
+- ime 輸入的文字框
 
 ## Status Bar
 以下測試不能使用@Preview，會看不出來效果，要用模擬機測試。

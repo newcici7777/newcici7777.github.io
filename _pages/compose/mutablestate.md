@@ -1,7 +1,7 @@
 ---
-title: Compose mutableStateOf
+title: Remember MutableState
 date: 2023-05-03
-keywords: Android, Jetpack compose, mutableStateOf, by remeber
+keywords: Android, Jetpack compose, mutableState, remeber
 ---
 ## Remember 記憶
 remember的作用是在記憶體儲存變數。<br>
