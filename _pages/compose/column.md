@@ -3,16 +3,28 @@ title: Column
 date: 2023-05-03
 keywords: Android, Jetpack compose, Column
 ---
+Prerequisites:
+
+- [row][1]
+
 Column的排列方式如下。<br>
 ![img]({{site.imgurl}}/compose/column1.png)<br>
 
+Column的對齊都是控制Child子元件。
+
 在英文文件，會提到Main axis主軸，也就是Column的排列方式是由上至下垂直排列。<br>
+
+主軸，控制空格與位置，主軸的參數是Arrangement。
+
 Cross-axis 交叉軸，就是跟Main axis主軸相反，就是水平位置，水平位置有:靠左、置中、靠右。<br>
 
+交叉軸，控制位置，交叉軸的參數是，Alignment。
+
 ## 水平位置 horizontalAlignment
+設定「子元件」(Child) 水平對齊方式。
 
 ### Alignment.CenterHorizontally 水平置中
-![img]({{site.imgurl}}/compose/column_h_start.png)<br>
+![img]({{site.imgurl}}/compose/column_h_center.png)<br>
 
 {% highlight kotlin linenos %}
 @Composable
@@ -34,9 +46,10 @@ fun testColumn() {
 ![img]({{site.imgurl}}/compose/column_h_start.png)<br>
 
 ### Alignment.End 靠左
-![img]({{site.imgurl}}/compose/column_h_start.png)<br>
+![img]({{site.imgurl}}/compose/column_h_end.png)<br>
 
 ## 垂直對齊
+設定「子元件」(Child) 垂直對齊方式。
 ### Arrangement.Center 垂直置中
 ![img]({{site.imgurl}}/compose/column_v_center.png)<br>
 
@@ -173,3 +186,5 @@ Column(
 }
 {% endhighlight %} 
 ![img]({{site.imgurl}}/compose/compose_column1.png) 
+
+[1]: {% link _pages/compose/row.md %}

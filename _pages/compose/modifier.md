@@ -146,7 +146,17 @@ fun GreetingPreview() {
 ## Modifier 設定前後順序
 設定前後順序如下:
 1. 大小 : size, width, hight,fillMaxSize, fillMaxWidth, fillMaxHeight
-2. 水平置中、垂直置中、權重: align, weight
+2. 對齊方式、權重: 
+    - [Box Align][1]
+    - [Row Alignment Arrangement][2]
+    - [Row Alignment Arrangement][3]
+    - [Weight][4]
 3. 背景顏色 : background, border, alpha
-4. padding : padding, offset
+4. padding : [padding][5], offset
 5. 形狀 : clip
+
+[1]: {% link _pages/compose/box.md %}
+[2]: {% link _pages/compose/row.md %}
+[3]: {% link _pages/compose/column.md %}
+[4]: {% link _pages/compose/weight.md %}
+[5]: {% link _pages/compose/padding.md %}

@@ -6,11 +6,18 @@ keywords: Android, Jetpack compose, Row
 Row的排列方式如下。<br>
 ![img]({{site.imgurl}}/compose/row2.png)<br>
 
+Row的對齊都是控制Child子元件。
+
 在英文文件，會提到Main axis主軸，也就是Row的排列方式是由左至右水平排列。<br>
+
+主軸，控制空格與位置，主軸的參數是Arrangement。<br>
+
 Cross-axis 交叉軸，就是跟Main axis主軸相反，就是垂直位置，垂直位置有:靠上Top、垂直置中CenterVertically、靠下Bottom。<br>
 
+交叉軸，控制位置，交叉軸的參數是，Alignment。<br>
+
 ## 垂直位置
-verticalAlignment 設定「子元件」(Child) 垂直對齊方式，不是設定本身垂直對齊。<br>
+verticalAlignment 設定「子元件」(Child) 垂直對齊方式，不是設定本身元件垂直對齊。<br>
 
 子元件垂直對齊方式 = 靠上對齊<br>
 ![img]({{site.imgurl}}/compose/row3.png)<br>
@@ -68,6 +75,8 @@ fun testRow() {
 {% endhighlight %}
 
 ## 水平位置
+horizontalArrangement設定「子元件」(Child) 水平對齊方式。
+
 參數是Arrangement，不是Alignment。<br>
 
 預設水平排列方式是靠左。<br>
