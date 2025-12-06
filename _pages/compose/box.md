@@ -112,7 +112,7 @@ fun testBox() {
 {% endhighlight %}
 
 ## Box中的Box
-align是設置Box中的Child元件，但如果Child是Box，align設置的是Child元件在父元件「中」的位置。<br>
+align是設置Box中的Child元件，但如果Child是Box，原理跟前面Text子元件一樣，align設置的是Child元件(Child Box)在父元件(Parent Box)「中」的位置。<br>
 
 ![img]({{site.imgurl}}/compose/modifier/box_align5.png)<br>
 
