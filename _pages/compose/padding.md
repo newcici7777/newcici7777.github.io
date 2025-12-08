@@ -3,7 +3,6 @@ title: padding
 date: 2023-05-03
 keywords: Android, Jetpack compose, padding
 ---
-## padding
 空間，英文是Space，我自己是翻釋成空間，但也可以翻成空白，或間距，或空格。<br>
 
 padding()是增加內部空間(Create internal space)，參數名start 為左、end 為右、top 為上、bottom 為下。 <br>

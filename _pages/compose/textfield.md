@@ -27,12 +27,12 @@ fun testUI() {
     },
     modifier = Modifier
       .fillMaxWidth()
-      .padding(16.dp)
+      .padding(top = 30.dp)
   )
 }
 {% endhighlight %}
 
-![img]({{site.imgurl}}/compose/mutablestate1.png)<br>
+![img]({{site.imgurl}}/compose/textfield3.png)
 
 ------------------------------------------
 以下是舊文章

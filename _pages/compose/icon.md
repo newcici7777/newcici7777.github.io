@@ -3,6 +3,23 @@ title: Icon
 date: 2023-05-03
 keywords: Android, Jetpack compose, Switch/Image/Icon 
 ---
+## 語法
+```
+Icon(
+  imageVector = 圖片位置,
+  contentDescription = 視障看到的圖片描述,
+  modifier = Modifier.size(大小)
+)
+```
+{% highlight kotlin linenos %}
+Icon(
+  imageVector = Icons.Default.Notifications,
+  contentDescription = null,
+  modifier = Modifier.size(48.dp)
+)
+{% endhighlight %}
+
+
 ## checked
 checked變數設為false 
 可使用來把變數變相反 

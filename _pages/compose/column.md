@@ -83,7 +83,7 @@ fun testColumn() {
 ![img]({{site.imgurl}}/compose/column_v_envenly.png)<br>
 
 ### Arrangement.SpaceAround
-元素上下間距相等，上下有空間，item1與item2，有3格空間，item2與item2，有3格空間。<br>
+元素上下間距相等，上下有空間，item1與item2，有3格空間，item2與item3，有3格空間。<br>
 ```
 ·
 ·

@@ -1911,14 +1911,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/reflect/" data-nav-link> 反射</a>
+    	<a href="/pages/java/classloader/" data-nav-link> Classloader類別載入</a>
         
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/classloader/" data-nav-link> Classloader類別載入</a>
+    	<a href="/pages/java/reflect/" data-nav-link> 反射</a>
         
             
         </li>
@@ -2586,6 +2586,13 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/android/sync/" data-nav-link> Android Studio sync</a>
+        
+            
+        </li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> error </a><ul>
 	
 	
@@ -3187,6 +3194,16 @@
     	<a href="/pages/kotlin/paging/" data-nav-link> paging 3</a>
         
             
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 圖片相關 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/glide/" data-nav-link> Glide</a>
+        
+            
         </li></ul></li></ul></li>
 	
 	
@@ -3201,6 +3218,51 @@
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> JetpackCompose </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/install/" data-nav-link> JetpackCompose 準備</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/mutablestate/" data-nav-link> Remember MutableState</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 修飾子 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/modifier/" data-nav-link> Modifier 修飾子</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/padding/" data-nav-link> padding</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/weight/" data-nav-link> Weight 權重</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/linear_gradient/" data-nav-link> 背景顏色漸變</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 元件 </a><ul>
@@ -3281,37 +3343,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/compose/lazycolumn/" data-nav-link> LazyColumn水平置中</a>
-        
-            
-        </li></ul></li>
-	
-	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 屬性 </a><ul>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/compose/mutablestate/" data-nav-link> Compose mutableStateOf</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/compose/modifier/" data-nav-link> Modifier</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/compose/padding/" data-nav-link> padding</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/compose/linear_gradient/" data-nav-link> 背景顏色漸變</a>
         
             
         </li></ul></li>
@@ -3415,7 +3446,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/compose/system_bar/" data-nav-link> system bar</a>
+    	<a href="/pages/compose/system_bar/" data-nav-link> System UI</a>
         
             
         </li></ul></li>
@@ -3673,7 +3704,59 @@
                         <h1 id="/pages/compose/textfield">TextField</h1>
                     
 
-                    <p><img src="/assets/img/compose/textfield1.png" alt="img" />
+                    <p>Prerequisites:</p>
+
+<ul>
+  <li><a href="/pages/compose/mutablestate/">Remember MutableState</a></li>
+</ul>
+
+<p>明確的導入remember</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import androidx.compose.runtime.remember
+import androidx.compose.runtime.mutableStateOf
+</code></pre></div></div>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="nd">@Composable</span>
+<span class="k">fun</span> <span class="nf">testUI</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 1. 儲存text變數在記憶體</span>
+  <span class="kd">var</span> <span class="py">text</span> <span class="k">by</span> <span class="nf">remember</span> <span class="p">{</span> <span class="nf">mutableStateOf</span><span class="p">(</span><span class="s">""</span><span class="p">)</span> <span class="p">}</span>
+
+  <span class="c1">// 2. TextField使用text變數</span>
+  <span class="nc">TextField</span><span class="p">(</span>
+    <span class="n">value</span> <span class="p">=</span> <span class="n">text</span><span class="p">,</span>  <span class="c1">// 使用狀態值</span>
+    <span class="n">onValueChange</span> <span class="p">=</span> <span class="p">{</span> <span class="n">newText</span> <span class="p">-&gt;</span>
+      <span class="n">text</span> <span class="p">=</span> <span class="n">newText</span>  <span class="c1">// mutableState監控text變數被修改，通知TextField 重繪UI</span>
+    <span class="p">},</span>
+    <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span>
+      <span class="p">.</span><span class="nf">fillMaxWidth</span><span class="p">()</span>
+      <span class="p">.</span><span class="nf">padding</span><span class="p">(</span><span class="n">top</span> <span class="p">=</span> <span class="mi">30</span><span class="p">.</span><span class="n">dp</span><span class="p">)</span>
+  <span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p><img src="/assets/img/compose/textfield3.png" alt="img" /></p>
+
+<hr />
+<p>以下是舊文章</p>
+
+<p><img src="/assets/img/compose/textfield1.png" alt="img" />
 <img src="/assets/img/compose/textfield2.png" alt="img" /></p>
 
 <figure class="highlight">
@@ -3751,6 +3834,7 @@
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
+
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -3941,7 +4025,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-11-26 13:22:05 +0800"
+        "time": "2025-12-06 21:27:04 +0800"
     },
     "basePath": "",
     "book": {

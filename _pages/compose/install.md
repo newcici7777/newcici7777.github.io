@@ -17,6 +17,8 @@ alt + cmd + shift + r <br>
 
 畫面顯示全部仰賴`@Preview`，使用@Preview可預覽畫面。<br>
 
+@Preview的GreetingPreview()函式，是沒有參數的。<br>
+
 `(showBackground = true)`預覽畫面的背景有顏色，可以去掉。<br>
 {% highlight kotlin linenos %}
 @Preview(showBackground = true)
@@ -28,6 +30,8 @@ fun GreetingPreview() {
 }
 {% endhighlight %}
 
+
+testUI()
 
 若有錯誤，請至下方錯誤排除。
 

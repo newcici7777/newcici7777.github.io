@@ -21,6 +21,8 @@ var text by remember { mutableStateOf("") }
 var num by remember { mutableStateOf(0) }
 ```
 
+![img]({{site.imgurl}}/compose/textfield3.png)<br>
+
 {% highlight kotlin linenos %}
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.mutableStateOf
@@ -48,7 +50,7 @@ fun testUI() {
     },
     modifier = Modifier
       .fillMaxWidth()
-      .padding(16.dp)
+      .padding(top = 30.dp)
   )
 }
 {% endhighlight %}

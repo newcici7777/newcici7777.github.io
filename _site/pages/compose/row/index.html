@@ -1911,14 +1911,14 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/reflect/" data-nav-link> 反射</a>
+    	<a href="/pages/java/classloader/" data-nav-link> Classloader類別載入</a>
         
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/java/classloader/" data-nav-link> Classloader類別載入</a>
+    	<a href="/pages/java/reflect/" data-nav-link> 反射</a>
         
             
         </li>
@@ -2586,6 +2586,13 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/android/sync/" data-nav-link> Android Studio sync</a>
+        
+            
+        </li>
+	
+	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> error </a><ul>
 	
 	
@@ -3187,6 +3194,16 @@
     	<a href="/pages/kotlin/paging/" data-nav-link> paging 3</a>
         
             
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 圖片相關 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/glide/" data-nav-link> Glide</a>
+        
+            
         </li></ul></li></ul></li>
 	
 	
@@ -3201,6 +3218,51 @@
 	
 	
 	<li class="chapter" data-level="1.1" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> JetpackCompose </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/install/" data-nav-link> JetpackCompose 準備</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/mutablestate/" data-nav-link> Remember MutableState</a>
+        
+            
+        </li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 修飾子 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/modifier/" data-nav-link> Modifier 修飾子</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/padding/" data-nav-link> padding</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/weight/" data-nav-link> Weight 權重</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/linear_gradient/" data-nav-link> 背景顏色漸變</a>
+        
+            
+        </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 元件 </a><ul>
@@ -3238,7 +3300,7 @@
     	<a href="/pages/compose/row/" data-nav-link> Row</a>
         
             
-                
+                <ul><li><a href="#垂直位置" data-nav-link " >垂直位置</a></li><li><a href="#水平位置" data-nav-link " >水平位置</a></li></ul>
 
             
         </li>
@@ -3281,37 +3343,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/compose/lazycolumn/" data-nav-link> LazyColumn水平置中</a>
-        
-            
-        </li></ul></li>
-	
-	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 屬性 </a><ul>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/compose/mutablestate/" data-nav-link> Compose mutableStateOf</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/compose/modifier/" data-nav-link> Modifier</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/compose/padding/" data-nav-link> padding</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/compose/linear_gradient/" data-nav-link> 背景顏色漸變</a>
         
             
         </li></ul></li>
@@ -3415,7 +3446,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/compose/system_bar/" data-nav-link> system bar</a>
+    	<a href="/pages/compose/system_bar/" data-nav-link> System UI</a>
         
             
         </li></ul></li>
@@ -3673,7 +3704,206 @@
                         <h1 id="/pages/compose/row">Row</h1>
                     
 
-                    
+                    <p>Row的排列方式如下。<br />
+<img src="/assets/img/compose/row2.png" alt="img" /><br /></p>
+
+<p>Row的對齊都是控制Child子元件。</p>
+
+<p>在英文文件，會提到Main axis主軸，也就是Row的排列方式是由左至右水平排列。<br /></p>
+
+<p>主軸，控制空格與位置，主軸的參數是Arrangement。<br /></p>
+
+<p>Cross-axis 交叉軸，就是跟Main axis主軸相反，就是垂直位置，垂直位置有:靠上Top、垂直置中CenterVertically、靠下Bottom。<br /></p>
+
+<p>交叉軸，控制位置，交叉軸的參數是，Alignment。<br /></p>
+
+<h2 id="垂直位置">垂直位置</h2>
+<p>verticalAlignment 設定「子元件」(Child) 垂直對齊方式，不是設定本身元件垂直對齊。<br /></p>
+
+<p>子元件垂直對齊方式 = 靠上對齊<br />
+<img src="/assets/img/compose/row3.png" alt="img" /><br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="nd">@Composable</span>
+<span class="k">fun</span> <span class="nf">testRow</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nc">Row</span><span class="p">(</span>
+    <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span>
+      <span class="p">.</span><span class="nf">fillMaxWidth</span><span class="p">()</span>
+      <span class="p">.</span><span class="nf">height</span><span class="p">(</span><span class="mi">200</span><span class="p">.</span><span class="n">dp</span><span class="p">),</span>
+    <span class="n">verticalAlignment</span> <span class="p">=</span> <span class="nc">Alignment</span><span class="p">.</span><span class="nc">Top</span>
+  <span class="p">)</span> <span class="p">{</span>
+    <span class="nc">Text</span><span class="p">(</span><span class="s">"Item 1"</span><span class="p">)</span>
+    <span class="nc">Text</span><span class="p">(</span><span class="s">"Item 2"</span><span class="p">)</span>
+    <span class="nc">Text</span><span class="p">(</span><span class="s">"Item 3"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>子元件垂直對齊方式 = 靠上對齊<br />
+<img src="/assets/img/compose/row4.png" alt="img" /><br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="nd">@Composable</span>
+<span class="k">fun</span> <span class="nf">testRow</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nc">Row</span><span class="p">(</span>
+    <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span>
+      <span class="p">.</span><span class="nf">fillMaxWidth</span><span class="p">()</span>
+      <span class="p">.</span><span class="nf">height</span><span class="p">(</span><span class="mi">200</span><span class="p">.</span><span class="n">dp</span><span class="p">),</span>
+    <span class="n">verticalAlignment</span> <span class="p">=</span> <span class="nc">Alignment</span><span class="p">.</span><span class="nc">CenterVertically</span>
+  <span class="p">)</span> <span class="p">{</span>
+    <span class="nc">Text</span><span class="p">(</span><span class="s">"Item 1"</span><span class="p">)</span>
+    <span class="nc">Text</span><span class="p">(</span><span class="s">"Item 2"</span><span class="p">)</span>
+    <span class="nc">Text</span><span class="p">(</span><span class="s">"Item 3"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>子元件垂直對齊方式 = 置底<br />
+<img src="/assets/img/compose/row5.png" alt="img" /><br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="nd">@Composable</span>
+<span class="k">fun</span> <span class="nf">testRow</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nc">Row</span><span class="p">(</span>
+    <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span>
+      <span class="p">.</span><span class="nf">fillMaxWidth</span><span class="p">()</span>
+      <span class="p">.</span><span class="nf">height</span><span class="p">(</span><span class="mi">200</span><span class="p">.</span><span class="n">dp</span><span class="p">),</span>
+    <span class="n">verticalAlignment</span> <span class="p">=</span> <span class="nc">Alignment</span><span class="p">.</span><span class="nc">Bottom</span>
+  <span class="p">)</span> <span class="p">{</span>
+    <span class="nc">Text</span><span class="p">(</span><span class="s">"Item 1"</span><span class="p">)</span>
+    <span class="nc">Text</span><span class="p">(</span><span class="s">"Item 2"</span><span class="p">)</span>
+    <span class="nc">Text</span><span class="p">(</span><span class="s">"Item 3"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<h2 id="水平位置">水平位置</h2>
+<p>horizontalArrangement設定「子元件」(Child) 水平對齊方式。</p>
+
+<p>參數是Arrangement，不是Alignment。<br /></p>
+
+<p>預設水平排列方式是靠左。<br /></p>
+
+<p><img src="/assets/img/compose/row_start.png" alt="img" /><br /></p>
+
+<figure class="highlight">
+  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="nd">@Composable</span>
+<span class="k">fun</span> <span class="nf">testRow</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nc">Row</span><span class="p">(</span>
+    <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span>
+      <span class="p">.</span><span class="nf">fillMaxWidth</span><span class="p">()</span>
+      <span class="p">.</span><span class="nf">height</span><span class="p">(</span><span class="mi">200</span><span class="p">.</span><span class="n">dp</span><span class="p">),</span>
+    <span class="n">horizontalArrangement</span> <span class="p">=</span> <span class="nc">Arrangement</span><span class="p">.</span><span class="nc">Start</span>
+  <span class="p">)</span> <span class="p">{</span>
+    <span class="nc">Text</span><span class="p">(</span><span class="s">"Item 1"</span><span class="p">)</span>
+    <span class="nc">Text</span><span class="p">(</span><span class="s">"Item 2"</span><span class="p">)</span>
+    <span class="nc">Text</span><span class="p">(</span><span class="s">"Item 3"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>水平排列方式是置中。<br /></p>
+
+<p><img src="/assets/img/compose/row_center.png" alt="img" /><br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>horizontalArrangement = Arrangement.Center
+</code></pre></div></div>
+
+<p>水平排列方式是靠右。<br /></p>
+
+<p><img src="/assets/img/compose/row_end.png" alt="img" /><br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>horizontalArrangement = Arrangement.End
+</code></pre></div></div>
+
+<p>SpaceBetween，水平排列方式是均勻分散，左右二邊沒空格。<br /></p>
+
+<p><img src="/assets/img/compose/row_between.png" alt="img" /><br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>horizontalArrangement = Arrangement.SpaceBetween
+</code></pre></div></div>
+
+<p>SpaceEvenly，水平排列方式是均勻分散，左右有空格。<br />
+<img src="/assets/img/compose/row_evenly.png" alt="img" /><br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>horizontalArrangement = Arrangement.SpaceEvenly
+</code></pre></div></div>
+
+<p>SpaceAround，水平排列方式是元素周圍間距相等，item1與item2，item2與item3，二個間距是相同。<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>··[item1]···[item2]···[item3]··
+</code></pre></div></div>
+
+<p>item1與item2是3個空格。<br />
+item2與item3是3個空格。<br /></p>
+
+<p><img src="/assets/img/compose/row_around.png" alt="img" /><br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>horizontalArrangement = Arrangement.SpaceAround
+</code></pre></div></div>
+
+<p>水平排列方式比較:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Start:     [A][B][C]·········
+Center:    ····[A][B][C]·····
+End:       ········[A][B][C]
+SpaceBetween: [A]····[B]····[C]
+SpaceEvenly: ·[A]····[B]····[C]·
+SpaceAround: ··[A]···[B]···[C]··
+</code></pre></div></div>
+
+<hr />
+<p>以下是舊文章</p>
+
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -3893,7 +4123,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-11-26 13:22:05 +0800"
+        "time": "2025-12-06 21:27:04 +0800"
     },
     "basePath": "",
     "book": {

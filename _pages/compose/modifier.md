@@ -149,14 +149,17 @@ fun GreetingPreview() {
 2. 對齊方式、權重: 
     - [Box Align][1]
     - [Row Alignment Arrangement][2]
-    - [Row Alignment Arrangement][3]
+    - [column Alignment Arrangement][3]
     - [Weight][4]
-3. 背景顏色 : background, border, alpha
-4. padding : [padding][5], offset
-5. 形狀 : clip
+3. 形狀 : [clip][7]
+4. 背景顏色 : background, border, alpha
+5. padding : [padding][5], [offset][6]
+
 
 [1]: {% link _pages/compose/box.md %}
 [2]: {% link _pages/compose/row.md %}
 [3]: {% link _pages/compose/column.md %}
 [4]: {% link _pages/compose/weight.md %}
 [5]: {% link _pages/compose/padding.md %}
+[6]: {% link _pages/compose/offset.md %}
+[7]: {% link _pages/compose/clip.md %}
