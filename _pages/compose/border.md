@@ -117,4 +117,4 @@ fun testBorder() {
 {% endhighlight %}
 
 
-[1]: {% link _pages/compose/brush.md %}
+[1]: {% link _pages/compose/brush_gradient.md %}
