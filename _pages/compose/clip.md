@@ -66,7 +66,8 @@ fun testBrush() {
 ## 形狀
 - RoundedCornerShape 四邊圓角
 - CircleShape 圓形
-
+- CutCornerShape 菱角
+- RectangleShape 長方形
 
 ### RoundedCornerShape 四邊圓角
 語法
@@ -170,7 +171,7 @@ fun testBrush() {
 }
 {% endhighlight %}
 
-### 長方形
+### RectangleShape長方形
 語法
 ```
 .clip(RectangleShape)
@@ -200,6 +201,11 @@ CornerSize提供2種參數:
 
 ```
 CornerSize(0.5f)
+```
+
+假設盒子大小為50 \* 50，百分比會根據盒子大小，自適應，圓角的直徑。
+```
+50 * 0.25 = 12.5 dp
 ```
 
 不知為何，以下沒有變化，待查詢。
