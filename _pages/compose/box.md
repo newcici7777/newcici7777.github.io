@@ -3,10 +3,10 @@ title: Box
 date: 2023-05-03
 keywords: Android, Jetpack compose, Box
 ---
-## 堆疊
+## Overlay 疊加
 ![img]({{site.imgurl}}/compose/compose_box1.png)<br>
 
-若沒任何組件，默認是堆疊佈局<br>
+佈局方式是疊在一起<br>
 
 寫在後面會把前面給疊上<br>
 

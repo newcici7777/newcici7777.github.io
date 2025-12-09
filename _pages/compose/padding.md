@@ -103,68 +103,8 @@ fun GreetingPreview() {
 }
 {% endhighlight %}
 
-### Button與padding
-以下尚未有padding，Button是貼近父元件邊緣。<br>
-
-![img]({{site.imgurl}}/compose/modifier/button_padding1.png)<br>
-
-showBackground = true ，要把背景顏色打開，才看的出效果。<br>
-{% highlight kotlin linenos %}
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-  Button(
-    onClick = {}
-  ) {
-    Text(text = "Hello !")
-  }
-}
-{% endhighlight %}
-
-加了top padding，與父元件有上方top距離20dp。<br>
-
-![img]({{site.imgurl}}/compose/modifier/button_padding2.png)<br>
-
-{% highlight kotlin linenos %}
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-  Button(
-    onClick = {},
-    modifier = Modifier
-      .padding(top = 20.dp)
-  ) {
-    Text(text = "Hello !")
-  }
-}
-{% endhighlight %}
-
-#### Button內部的元件 padding
-Button內部的Text，也加上top padding。
-
-![img]({{site.imgurl}}/compose/modifier/button_padding3.png)<br>
-
-Text元件增加padding是增加上方20dp的「大小」，跟Button不一樣，Button是增加「距離」。
-
-![img]({{site.imgurl}}/compose/modifier/button_padding3_.png)<br>
-
-{% highlight kotlin linenos %}
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-  Button(
-    onClick = {},
-    modifier = Modifier.padding(top = 20.dp)
-  ) {
-    Text(text = "Hello !",
-      modifier = Modifier.padding(top = 20.dp))
-  }
-}
-{% endhighlight %}
-
 ### Text padding
 只單純設定Text元件，發現它會增加上方的空間。<br>
-與Button不同，Button與父元件產生「距離」，而不是增加大小。<br>
 ![img]({{site.imgurl}}/compose/modifier/text_padding1.png)<br>
 {% highlight kotlin linenos %}
 @Preview(showBackground = true)
@@ -175,6 +115,19 @@ fun GreetingPreview() {
         .background(Color.Blue)
         .padding(top = 20.dp)
     )
+}
+{% endhighlight %}
+
+每個Text元件，都在內部下方增加16dp的空間。<br>
+![img]({{site.imgurl}}/compose/modifier/text_padding4.png)<br>
+{% highlight kotlin linenos %}
+@Composable
+fun testTextPadding() {
+  Column {
+    Text("Item1", modifier = Modifier.background(Color.Blue).padding(bottom = 16.dp))
+    Text("Item2", modifier = Modifier.background(Color.Red).padding(bottom = 16.dp))
+    Text("Item3", modifier = Modifier.background(Color.Yellow).padding(bottom = 16.dp))
+  }
 }
 {% endhighlight %}
 
@@ -331,15 +284,11 @@ fun GreetingPreview() {
 {% endhighlight %}
 
 ### fillMaxSize() 與 padding
-先fillMaxSize()寬高跟螢幕相同，再padding(20.dp)，就是往內上下左右增加20dp的空間，內部元件Text與螢幕邊緣有20dp空間大小的距離。<br>
-排除掉增加的上下左右20dp空間，內部增加背景顏色(紅色)。<br>
-
 順序如下:
 1. fillMaxSize()寬高跟螢幕相同
 2. 往內增加上下左右20dp空間
-3. 排除掉增加的上下左右20dp空間，內部增加背景顏色(紅色)
-
-![img]({{site.imgurl}}/compose/modifier/fullmaxsize_padding.png)<br>
+3. 排除掉增加的上下左右20dp空間，內部增加背景顏色(藍色)
+4. Text，背景顏色為紅色，往內部上下左右增加8dp的空間，字與紅色邊框有8dp的距離。
 
 {% highlight kotlin linenos %}
 @Preview
