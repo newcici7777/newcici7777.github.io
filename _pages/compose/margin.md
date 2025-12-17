@@ -48,7 +48,7 @@ fun testCard() {
 以下程式碼，在Row父元件，包住二個Card子元件。<br>
 每一個Card，定義padding horizontal，向「外部左邊與右邊」增加8dp的空間大小，注意！這邊不是內部。<br>
 
-![img]({{site.imgurl}}/compose/modifier/card_margin1.png)<br>
+![img]({{site.imgurl}}/compose/modifier/card_margin2.png)<br>
 {% highlight kotlin linenos %}
 @Composable
 fun testCard() {

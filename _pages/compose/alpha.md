@@ -77,7 +77,7 @@ fun testAlpha() {
 {% endhighlight %}
 
 加了alpha後，會影嚮Button的背景透明度顏色，跟文字透明度的顏色。<br>
-![img]({{site.imgurl}}/compose/modifier/btn_alpha1.png)<br>
+![img]({{site.imgurl}}/compose/modifier/btn_alpha2.png)<br>
 {% highlight kotlin linenos %}
 @Composable
 fun testAlpha() {
