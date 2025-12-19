@@ -3,6 +3,16 @@ title: Icon
 date: 2023-05-03
 keywords: Android, Jetpack compose, Switch/Image/Icon 
 ---
+## 匯入material-icons-extended
+[material-icons-extended](https://developer.android.com/develop/ui/compose/resources?hl=zh-tw)
+
+```
+// material-icons
+def composeBom = platform('androidx.compose:compose-bom:2025.12.00')
+implementation composeBom
+implementation 'androidx.compose.material:material-icons-extended'
+```
+
 ## 語法
 ```
 Icon(
@@ -19,6 +29,8 @@ Icon(
 )
 {% endhighlight %}
 
+----------------------------------------------
+以下為舊文章
 
 ## checked
 checked變數設為false 
