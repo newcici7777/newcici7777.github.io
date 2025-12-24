@@ -131,6 +131,28 @@ fun TranslateExample() {
 }
 {% endhighlight %}
 
+### cameraDistance
+(cameraDistance仍待研究)
+
+對於 rotationX 和 rotationY（3D旋轉），必須設定 cameraDistance。
+
+cameraDistance 的作用：
+
+控制3D效果的「透視感」
+
+值越小，3D效果越強烈（魚眼效果）
+
+值越大，3D效果越平緩
+
+通常設為 8f * density
+
+{% highlight kotlin linenos %}
+.graphicsLayer {
+    rotationX = 45f  // 或 rotationY
+    cameraDistance = 8f * density  // ← 必須設定這個！
+}
+{% endhighlight %}
+
 ## TransformOrigin 設定原點座標
 預設原點是在垂直置中。
 ### X軸

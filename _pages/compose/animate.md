@@ -407,6 +407,7 @@ fun AnimatedVisibilityExample() {
 }
 {% endhighlight %}
 
+## infiniteTransition 無限循環動畫
 
 
 [1]: {% link _pages/compose/mutablestate.md %}

@@ -2,8 +2,8 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>協程作用域 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="kotlin, coroutine scope" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Scope生命周期 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="kotlin, coroutine scope lifecycle" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -2979,6 +2979,61 @@
         </li>
 	
 	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> Scope </a><ul>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/kotlin/scope/" data-nav-link> Scope生命周期</a>
+        
+            
+                
+
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope/global_scope/" data-nav-link> Global Scope</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope/lifecycle_scope/" data-nav-link> lifecycleScope</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope/viewmodel_scope/" data-nav-link> viewModelScope</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope/big_coroutine_scope/" data-nav-link> Coroutin Scope 手動管理</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope/coroutine_scope/" data-nav-link> coroutineScope</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope/runblocking/" data-nav-link> runBlocking</a>
+        
+            
+        </li></ul></li>
+	
+	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/context/" data-nav-link> CoroutineContext</a>
         
@@ -2996,16 +3051,6 @@
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/launch_async/" data-nav-link> launch async</a>
         
-            
-        </li>
-	
-	
-	<li class="active" data-nav-item>
-    	<a href="/pages/kotlin/scope/" data-nav-link> 協程作用域</a>
-        
-            
-                <ul><li><a href="#scope獨立作用域" data-nav-link " >Scope獨立作用域</a><ul><li><a href="#scope獨立作用域與沒有獨立作用域" data-nav-link " >Scope獨立作用域與沒有獨立作用域</a></li><li><a href="#coroutinescope" data-nav-link " >CoroutineScope</a></li><li><a href="#globalscope" data-nav-link " >GlobalScope</a></li><li><a href="#scope使用時機" data-nav-link " >Scope使用時機</a></li></ul></li><li><a href="#coroutinescope-runblocking" data-nav-link " >coroutineScope runBlocking</a><ul><li><a href="#2個suspend函式" data-nav-link " >2個suspend函式:</a></li><li><a href="#coroutinescope-非阻塞協程" data-nav-link " >coroutineScope 非阻塞協程</a></li><li><a href="#runblocking-阻塞協程" data-nav-link " >runBlocking 阻塞協程</a></li></ul></li></ul>
-
             
         </li>
 	
@@ -3095,13 +3140,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/stateflow/" data-nav-link> MutableStateFlow StateFlow</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/model_life_scope/" data-nav-link> viewModelScope lifecycleScope GlobalScope</a>
         
             
         </li>
@@ -3237,7 +3275,7 @@
         </li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 修飾子 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 修飾符 </a><ul>
 	
 	
 	<li class="" data-nav-item>
@@ -3255,6 +3293,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/compose/margin/" data-nav-link> Margin-like 增加外部空間</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/compose/weight/" data-nav-link> Weight 權重</a>
         
             
@@ -3262,13 +3307,107 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/compose/linear_gradient/" data-nav-link> 背景顏色漸變</a>
+    	<a href="/pages/compose/offset/" data-nav-link> offset</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/alpha/" data-nav-link> alpha</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/brush_gradient/" data-nav-link> 背景顏色漸變</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/clip/" data-nav-link> clip裁切</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/border/" data-nav-link> border</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/spacer/" data-nav-link> Spacer spacedBy</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/clickable/" data-nav-link> clickable()</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animate/" data-nav-link> 動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/rotate/" data-nav-link> rotate</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/scale/" data-nav-link> scale 放大縮小</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/graphics_layer/" data-nav-link> graphicsLayer()</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 主題 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/compositon/" data-nav-link> Compositon Local</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/material/" data-nav-link> Material Theme</a>
         
             
         </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 元件 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/card/" data-nav-link> Card</a>
+        
+            
+        </li>
 	
 	
 	<li class="" data-nav-item>
@@ -3349,13 +3488,6 @@
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 圖片相關 </a><ul>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/compose/clip/" data-nav-link> clip圓角</a>
-        
-            
-        </li>
 	
 	
 	<li class="" data-nav-item>
@@ -3688,7 +3820,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >協程作用域</a>
+                            <a href="." >Scope生命周期</a>
                         
                     </h1>
                 </div>
@@ -3701,353 +3833,70 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/kotlin/scope">協程作用域</h1>
+                        <h1 id="/pages/kotlin/scope">Scope生命周期</h1>
                     
 
-                    <h2 id="scope獨立作用域">Scope獨立作用域</h2>
-<h3 id="scope獨立作用域與沒有獨立作用域">Scope獨立作用域與沒有獨立作用域</h3>
-
-<table>
+                    <table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Scope</th>
+      <th style="text-align: left">生命週期</th>
+      <th style="text-align: left">主要用途</th>
+      <th style="text-align: left">使用場景</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
-      <td>特性</td>
-      <td>沒有 Scope (launch{})</td>
-      <td>有 Scope (scope.launch{})</td>
+      <td style="text-align: left">withContext</td>
+      <td style="text-align: left">區塊執行期間</td>
+      <td style="text-align: left">切換執行緒</td>
+      <td style="text-align: left">需要切換執行緒的操作</td>
     </tr>
     <tr>
-      <td>父子關係</td>
-      <td>與 runBlocking 是父子</td>
-      <td>與 runBlocking 無父子關係</td>
+      <td style="text-align: left">viewModelScope</td>
+      <td style="text-align: left">ViewModel 生命週期</td>
+      <td style="text-align: left">MVVM 架構</td>
+      <td style="text-align: left">ViewModel 中的資料操作</td>
     </tr>
     <tr>
-      <td>join</td>
-      <td>自動join()</td>
-      <td>手動join()</td>
+      <td style="text-align: left">rememberCoroutineScope</td>
+      <td style="text-align: left">Composable 生命週期</td>
+      <td style="text-align: left">UI 互動</td>
+      <td style="text-align: left">Compose 中的用戶操作</td>
     </tr>
     <tr>
-      <td>調度器</td>
-      <td>繼承父協程</td>
-      <td>使用自定義調度器</td>
+      <td style="text-align: left">lifecycleScope</td>
+      <td style="text-align: left">Activity/Fragment 生命週期</td>
+      <td style="text-align: left">Android 傳統 UI</td>
+      <td style="text-align: left">Activity/Fragment 中</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">GlobalScope</td>
+      <td style="text-align: left">應用程式App生命週期</td>
+      <td style="text-align: left">極少用</td>
+      <td style="text-align: left">全域單次任務（慎用）</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">CoroutineScope()</td>
+      <td style="text-align: left">手動管理</td>
+      <td style="text-align: left">協程管理</td>
+      <td style="text-align: left">自訂Dispatchers、自訂執行緒、子協程取消管理、Exception</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">coroutineScope { }</td>
+      <td style="text-align: left">函數執行期間</td>
+      <td style="text-align: left">順序或同時執行子任務</td>
+      <td style="text-align: left">順序或同時執行suspend 函數</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">runBlocking 阻塞執行</td>
+      <td style="text-align: left">測試/主程式</td>
+      <td style="text-align: left">JUnit</td>
+      <td style="text-align: left">測試、main 函數</td>
     </tr>
   </tbody>
 </table>
 
-<p>join</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-</pre></td><td class="code"><pre><span class="c1">// 沒有 Scope - 自動join</span>
-<span class="k">fun</span> <span class="nf">example1</span><span class="p">()</span> <span class="p">=</span> <span class="nf">runBlocking</span> <span class="p">{</span>
-    <span class="nf">launch</span> <span class="p">{</span>
-        <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
-        <span class="nf">println</span><span class="p">(</span><span class="s">"一定會執行"</span><span class="p">)</span> <span class="c1">// runBlocking 會等待</span>
-    <span class="p">}</span>
-    <span class="c1">// 自動等待所有子協程</span>
-<span class="p">}</span>
-
-<span class="c1">// 有 Scope - 自己寫join()  </span>
-<span class="k">fun</span> <span class="nf">example2</span><span class="p">()</span> <span class="p">=</span> <span class="nf">runBlocking</span> <span class="p">{</span>
-    <span class="kd">val</span> <span class="py">scope</span> <span class="p">=</span> <span class="nc">CoroutineScope</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="nc">Default</span><span class="p">)</span>
-    <span class="n">scope</span><span class="p">.</span><span class="nf">launch</span> <span class="p">{</span>
-        <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
-        <span class="nf">println</span><span class="p">(</span><span class="s">"可能不會執行！"</span><span class="p">)</span> <span class="c1">// 如果 runBlocking 先結束</span>
-    <span class="p">}</span>
-    <span class="c1">// runBlocking 結束時不會等待 scope 中的協程</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="coroutinescope">CoroutineScope</h3>
-<p>建立一個獨立CoroutineScope作用域，runBlocking的作用域為BlockingCoroutine。<br /></p>
-
-<p>CoroutineScope下面有一個子協程，名字為job1。<br /></p>
-
-<p><img src="/assets/img/kotlin/scope_extend1.png" alt="img" /><br /></p>
-
-<p>調度器設為預設Dispatchers.Default。<br /></p>
-
-<p>使用<span class="markline">scope.</span>launch{}，建立子協程並啟動子協程。<br /></p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="code"><pre><span class="nd">@Test</span>
-<span class="k">fun</span> <span class="nf">coroutin07</span><span class="p">()</span> <span class="p">=</span> <span class="nf">runBlocking</span> <span class="p">{</span>
-  <span class="kd">val</span> <span class="py">scope</span> <span class="p">=</span> <span class="nc">CoroutineScope</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="nc">Default</span><span class="p">)</span>
-  <span class="kd">val</span> <span class="py">job1</span> <span class="p">=</span> <span class="n">scope</span><span class="p">.</span><span class="nf">launch</span> <span class="p">{</span>
-    <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
-    <span class="nf">println</span><span class="p">(</span><span class="s">"job1"</span><span class="p">)</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>但執行完卻沒有任何結果，這是為什麼？<br />
-runBlocking協程與作用域協程，沒有父子關係，所以runBlocking協程執行完畢就結束，<span class="markline">不會等待</span>CoroutineScope下的job1子協程執行完。<br /></p>
-
-<h4 id="delay暫停">delay暫停</h4>
-<p>增加一個delay(大於1000)，因為CoroutineScope下的子協程執行時為1秒，要讓runBlocking暫停超過1秒，再結束runBlocking協程。<br /></p>
-
-<p>delay()參數要大於1000，等到scope執行完畢，runBlocking協程才能結束。<br /></p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">coroutin07</span><span class="p">()</span> <span class="p">=</span> <span class="nf">runBlocking</span> <span class="p">{</span>
-    <span class="kd">val</span> <span class="py">scope</span> <span class="p">=</span> <span class="nc">CoroutineScope</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="nc">Default</span><span class="p">)</span>
-    <span class="n">scope</span><span class="p">.</span><span class="nf">launch</span> <span class="p">{</span>
-      <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
-      <span class="nf">println</span><span class="p">(</span><span class="s">"job1"</span><span class="p">)</span>
-    <span class="p">}</span>
-    <span class="nf">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
-  <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>job1
-</code></pre></div></div>
-
-<h4 id="join-等待">join 等待</h4>
-<p>runBlocking協程「等待」scope.job完成，runBlocking才能結束。</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="code"><pre><span class="k">fun</span> <span class="nf">coroutin07</span><span class="p">()</span> <span class="p">=</span> <span class="nf">runBlocking</span> <span class="p">{</span>
-  <span class="kd">val</span> <span class="py">scope</span> <span class="p">=</span> <span class="nc">CoroutineScope</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="nc">Default</span><span class="p">)</span>
-  <span class="kd">val</span> <span class="py">job</span> <span class="p">=</span> <span class="n">scope</span><span class="p">.</span><span class="nf">launch</span> <span class="p">{</span>
-    <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
-    <span class="nf">println</span><span class="p">(</span><span class="s">"job1"</span><span class="p">)</span>
-  <span class="p">}</span>
-  <span class="n">job</span><span class="p">.</span><span class="nf">join</span><span class="p">()</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>job1
-</code></pre></div></div>
-
-<h3 id="globalscope">GlobalScope</h3>
-<p>GlobalScope也是獨立作用域，加上join，runBlocking才會等待GlobalScope執行完畢。</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="code"><pre>  <span class="nd">@Test</span>
-  <span class="k">fun</span> <span class="nf">coroutin08</span><span class="p">()</span> <span class="p">=</span> <span class="nf">runBlocking</span> <span class="p">{</span>
-    <span class="kd">val</span> <span class="py">job</span> <span class="p">=</span> <span class="nc">GlobalScope</span><span class="p">.</span><span class="nf">launch</span> <span class="p">{</span>
-      <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
-      <span class="nf">println</span><span class="p">(</span><span class="s">"job1"</span><span class="p">)</span>
-    <span class="p">}</span>
-    <span class="n">job</span><span class="p">.</span><span class="nf">join</span><span class="p">()</span>
-  <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>job1
-</code></pre></div></div>
-
-<h3 id="scope使用時機">Scope使用時機</h3>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-</pre></td><td class="code"><pre><span class="c1">// 場景 1: 需要自定義調度器</span>
-<span class="k">fun</span> <span class="nf">processInBackground</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">val</span> <span class="py">ioScope</span> <span class="p">=</span> <span class="nc">CoroutineScope</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="nc">IO</span><span class="p">)</span>
-    <span class="n">ioScope</span><span class="p">.</span><span class="nf">launch</span> <span class="p">{</span>
-        <span class="c1">// 在IO線程執行網路請求</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="c1">// 場景 2: 長時間運行的後台任務</span>
-<span class="kd">class</span> <span class="nc">MyService</span> <span class="p">{</span>
-    <span class="k">private</span> <span class="kd">val</span> <span class="py">serviceScope</span> <span class="p">=</span> <span class="nc">CoroutineScope</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="nc">Default</span><span class="p">)</span>
-    
-    <span class="k">fun</span> <span class="nf">start</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">serviceScope</span><span class="p">.</span><span class="nf">launch</span> <span class="p">{</span>
-            <span class="k">while</span> <span class="p">(</span><span class="n">isActive</span><span class="p">)</span> <span class="p">{</span>
-                <span class="c1">// 長時間運行的任務</span>
-                <span class="nf">delay</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    
-    <span class="k">fun</span> <span class="nf">stop</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">serviceScope</span><span class="p">.</span><span class="nf">cancel</span><span class="p">()</span> <span class="c1">// 需要手動取消</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="c1">// 場景 3: 在非協程環境中啟動協程</span>
-<span class="k">fun</span> <span class="nf">nonCoroutineFunction</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">val</span> <span class="py">scope</span> <span class="p">=</span> <span class="nc">CoroutineScope</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="nc">Main</span><span class="p">)</span>
-    <span class="n">scope</span><span class="p">.</span><span class="nf">launch</span> <span class="p">{</span>
-        <span class="c1">// 在Android主線程更新UI</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h2 id="coroutinescope-runblocking">coroutineScope runBlocking</h2>
-<p>coroutineScope雖然名字有Scope，但開頭字母為小寫，不是獨立作用域，父親是runBlocking，runBlocking是BlockingCoroutine的作用域。<br /></p>
-
-<p><img src="/assets/img/kotlin/scope_extend2.png" alt="img" /><br /></p>
-
-<h3 id="2個suspend函式">2個suspend函式:</h3>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="code"><pre>  <span class="k">private</span> <span class="k">suspend</span> <span class="k">fun</span> <span class="nf">doOne</span><span class="p">():</span><span class="nc">Int</span> <span class="p">{</span>
-    <span class="c1">// 1秒</span>
-    <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
-    <span class="k">return</span> <span class="mi">10</span>
-  <span class="p">}</span>
-  <span class="k">private</span> <span class="k">suspend</span> <span class="k">fun</span> <span class="nf">doTwo</span><span class="p">():</span><span class="nc">Int</span> <span class="p">{</span>
-    <span class="c1">// 2秒</span>
-    <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
-    <span class="k">return</span> <span class="mi">20</span>
-  <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<h3 id="coroutinescope-非阻塞協程">coroutineScope 非阻塞協程</h3>
-<p>以下程式碼，二個suspend函式同時執行。<br />
-coroutineScope會等待子協程(suspend 函式)，執行完畢。<br /></p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">coroutin05</span><span class="p">()</span> <span class="p">=</span> <span class="nf">runBlocking</span> <span class="p">{</span>
-    <span class="kd">val</span> <span class="py">startTime</span> <span class="p">=</span> <span class="nc">System</span><span class="p">.</span><span class="nf">currentTimeMillis</span><span class="p">()</span>
-    <span class="nf">coroutineScope</span> <span class="p">{</span>
-        <span class="kd">val</span> <span class="py">one</span> <span class="p">=</span> <span class="nf">doOne</span><span class="p">()</span>
-        <span class="kd">val</span> <span class="py">two</span> <span class="p">=</span> <span class="nf">doTwo</span><span class="p">()</span>
-    <span class="p">}</span>
-    <span class="kd">val</span> <span class="py">duration</span> <span class="p">=</span> <span class="nc">System</span><span class="p">.</span><span class="nf">currentTimeMillis</span><span class="p">()</span> <span class="p">-</span> <span class="n">startTime</span>
-    <span class="nf">println</span><span class="p">(</span><span class="s">" in ${duration} ms"</span><span class="p">)</span>
-  <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> in 2 ms
-</code></pre></div></div>
-<h3 id="runblocking-阻塞協程">runBlocking 阻塞協程</h3>
-<p>以下程式碼，二個suspend函式逐一執行，doOne()執行完，才輪到doTwo執行()。<br />
-所以共執行約2秒鐘左右。<br />
-runBlocking會等待子協程(suspend 函式)，執行完畢。<br /></p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="code"><pre>  <span class="k">fun</span> <span class="nf">coroutin05</span><span class="p">()</span> <span class="p">=</span> <span class="nf">runBlocking</span> <span class="p">{</span>
-    <span class="kd">val</span> <span class="py">startTime</span> <span class="p">=</span> <span class="nc">System</span><span class="p">.</span><span class="nf">currentTimeMillis</span><span class="p">()</span>
-    <span class="nf">runBlocking</span> <span class="p">{</span>
-        <span class="kd">val</span> <span class="py">one</span> <span class="p">=</span> <span class="nf">doOne</span><span class="p">()</span>
-        <span class="kd">val</span> <span class="py">two</span> <span class="p">=</span> <span class="nf">doTwo</span><span class="p">()</span>
-    <span class="p">}</span>
-    <span class="kd">val</span> <span class="py">duration</span> <span class="p">=</span> <span class="nc">System</span><span class="p">.</span><span class="nf">currentTimeMillis</span><span class="p">()</span> <span class="p">-</span> <span class="n">startTime</span>
-    <span class="nf">println</span><span class="p">(</span><span class="s">" in ${duration} ms"</span><span class="p">)</span>
-  <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> in 2009 ms
-</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -4111,14 +3960,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/kotlin/launch_async" class="navigation navigation-prev navigation-unique" aria-label="Previous page: launch async">
+                        <a href="/pages/kotlin/job" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Job">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/kotlin/cancel" class="navigation navigation-next navigation-unique" aria-label="Next page: cancel">
+                        <a href="/pages/kotlin/scope/global_scope" class="navigation navigation-next navigation-unique" aria-label="Next page: Global Scope">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -4238,7 +4087,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-12-06 21:27:04 +0800"
+        "time": "2025-12-24 15:36:05 +0800"
     },
     "basePath": "",
     "book": {

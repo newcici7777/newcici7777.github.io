@@ -1,12 +1,11 @@
 ---
-title: viewModelScope lifecycleScope GlobalScope
+title: lifecycleScope
 date: 2025-10-14
-keywords: kotlin, viewModelScope, lifecycleScope, GlobalScope
+keywords: Android, Kotlin, coroutines, lifecycleScope, GlobalScope
 ---
 ## 生命周期
 - GlobalScope App結束才會Destoryed。
-- lifecycleScope Activity結束才會Destoryed
-- viewModelScope 在ViewModel使用，Activity結束才會Destoryed
+- lifecycleScope Activity或Fragment結束才會Destoryed
 
 ## GlobalScope與lifecycleScope
 執行下面的程式，會發即便Activity結束，無限迴圈仍在執行，不會隨著Activity結束而結束。<br>
