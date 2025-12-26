@@ -8,7 +8,9 @@ LaunchedEffect是當「一開始進入」Compose組件時，會呼叫的區塊�
 
 語法
 ```
-
+LaunchedEffect(Unit) {  
+	// 要做的事
+}
 ```
 
 ## 狀態改變
