@@ -151,6 +151,40 @@ LaunchedEffect(isExpanded) {
 - snapTo 立即跳躍到目標值（無動畫）
 - animateDecay 物理衰減動畫（如滑動後減速）
 
+## Animatable offset
+
+![img]({{site.imgurl}}/compose/modifier/animatable_offset1.png)<br>
+
+![img]({{site.imgurl}}/compose/modifier/animatable_offset2.png)<br>
+
+{% highlight kotlin linenos %}
+@Composable
+fun AnimatableOffset() {
+  var offsetX = remember { Animatable(0f) }
+  var isActive by remember { mutableStateOf(false) }
+  LaunchedEffect(isActive) {
+    offsetX.animateTo(
+      targetValue = if (isActive) 100f else 0f,
+      animationSpec = spring()
+    )
+  }
+  Column {
+    Button(onClick = {
+      isActive = !isActive
+    }) {
+      Text("Click")
+    }
+    Box(
+      modifier = Modifier
+        .size(100.dp)
+        .offset(x = offsetX.value.dp)
+        // background() 一定要放在offset之後
+        .background(Color.Yellow)
+    )
+  }
+}
+{% endhighlight %}
+
 
 [1]: {% link _pages/compose/mutablestate.md %}
 [2]: {% link _pages/compose/scale.md %}
