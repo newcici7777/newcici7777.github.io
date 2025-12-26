@@ -3011,6 +3011,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope/withcontext/" data-nav-link> withContext 切換執行緒</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/kotlin/scope/big_coroutine_scope/" data-nav-link> Coroutin Scope 手動管理</a>
         
             
@@ -3033,13 +3040,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/context/" data-nav-link> CoroutineContext</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/withcontext/" data-nav-link> withContext 切換執行緒</a>
         
             
         </li>
@@ -3352,16 +3352,6 @@
         </li>
 	
 	
-	<li class="active" data-nav-item>
-    	<a href="/pages/compose/animate/" data-nav-link> 動畫</a>
-        
-            
-                <ul><li><a href="#動畫預覽" data-nav-link " >動畫預覽</a></li><li><a href="#animatecontentsize" data-nav-link " >animateContentSize()</a></li><li><a href="#animation-spec-動畫" data-nav-link " >Animation Spec 動畫</a><ul><li><a href="#spring-彈簧" data-nav-link " >Spring 彈簧</a></li><li><a href="#tween-動畫持續時間" data-nav-link " >tween 動畫持續時間</a></li></ul></li><li><a href="#animatexxxxasstate-狀態改變產生動畫" data-nav-link " >animateXXXXAsState 狀態改變產生動畫</a><ul><li><a href="#animatedpasstate" data-nav-link " >animateDpAsState</a></li><li><a href="#animatefloatasstate" data-nav-link " >animateFloatAsState</a></li><li><a href="#animatecolorasstate" data-nav-link " >animateColorAsState</a></li></ul></li><li><a href="#animatedvisibility-顯示與消失動畫" data-nav-link " >AnimatedVisibility 顯示與消失動畫</a></li><li><a href="#infinitetransition-無限循環動畫" data-nav-link " >infiniteTransition 無限循環動畫</a></li></ul>
-
-            
-        </li>
-	
-	
 	<li class="" data-nav-item>
     	<a href="/pages/compose/rotate/" data-nav-link> rotate</a>
         
@@ -3378,6 +3368,82 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/compose/graphics_layer/" data-nav-link> graphicsLayer()</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/intoffset/" data-nav-link> IntOffset</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/draggable/" data-nav-link> draggable delta</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/pointer_drag/" data-nav-link> pointerInput dragAmount</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 協程 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/re_coru_scope/" data-nav-link> rememberCoroutineScope</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/launchedeffect/" data-nav-link> LaunchedEffect</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 動畫 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/visible_animate/" data-nav-link> 顯示與隱藏動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animate_spec/" data-nav-link> Animation Spec 動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animate_as_state/" data-nav-link> animate AsState</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animatable/" data-nav-link> Animatable 自訂動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/infinite_animate/" data-nav-link> InfiniteTransition 無限循環動畫</a>
         
             
         </li></ul></li>
@@ -3843,105 +3909,11 @@
 </ul>
 
 <h2 id="動畫預覽">動畫預覽</h2>
-<p><img src="/assets/img/compose/modifier/interactive_mode1.png" alt="img" /><br /></p>
+<p>點選「Start Interactive Mode」開始動畫<br />
+<img src="/assets/img/compose/modifier/interactive_mode1.png" alt="img" /><br /></p>
 
-<p><img src="/assets/img/compose/modifier/interactive_mode2.png" alt="img" /><br /></p>
-
-<h2 id="animatecontentsize">animateContentSize()</h2>
-<p>animateContentSize會根據大小不同產生動畫。<br />
-<img src="/assets/img/compose/modifier/contentsize1.png" alt="img" /><br /></p>
-
-<p><img src="/assets/img/compose/modifier/contentsize2.png" alt="img" /><br /></p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-</pre></td><td class="code"><pre><span class="nd">@Composable</span>
-<span class="k">fun</span> <span class="nf">AnimateContentSizeExample</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="py">isExpanded</span> <span class="k">by</span> <span class="nf">remember</span> <span class="p">{</span> <span class="nf">mutableStateOf</span><span class="p">(</span><span class="k">false</span><span class="p">)</span> <span class="p">}</span>
-  <span class="nc">Box</span><span class="p">(</span>
-    <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span>
-      <span class="p">.</span><span class="nf">fillMaxWidth</span><span class="p">()</span>
-      <span class="p">.</span><span class="nf">animateContentSize</span><span class="p">()</span>
-      <span class="p">.</span><span class="nf">background</span><span class="p">(</span><span class="nc">Color</span><span class="p">.</span><span class="nc">Blue</span><span class="p">)</span>
-      <span class="p">.</span><span class="nf">padding</span><span class="p">(</span><span class="mi">16</span><span class="p">.</span><span class="n">dp</span><span class="p">)</span>
-      <span class="p">.</span><span class="nf">clickable</span> <span class="p">{</span>
-        <span class="n">isExpanded</span> <span class="p">=</span> <span class="p">!</span><span class="n">isExpanded</span>
-      <span class="p">}</span>
-<span class="p">)</span> <span class="p">{</span>
-    <span class="nc">Column</span> <span class="p">{</span>
-      <span class="nc">Text</span><span class="p">(</span><span class="s">"click"</span><span class="p">)</span>
-      <span class="k">if</span><span class="p">(</span><span class="n">isExpanded</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nc">Text</span><span class="p">(</span><span class="s">"hello \n"</span> <span class="p">+</span>
-            <span class="s">"world \n"</span> <span class="p">+</span>
-            <span class="s">"hi \n"</span><span class="p">,</span>
-          <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="nf">background</span><span class="p">(</span><span class="nc">Color</span><span class="p">.</span><span class="nc">White</span><span class="p">))</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
-
-<p>以下是官網的範例<br /></p>
-
-<p><a href="https://developer.android.com/develop/ui/compose/animation/composables-modifiers#animatedvisibility">https://developer.android.com/develop/ui/compose/animation/composables-modifiers#animatedvisibility</a><br /></p>
-
-<p>animateContentSize()要放置在size大小相關的函式之前。</p>
-
-<figure class="highlight">
-  <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-</pre></td><td class="code"><pre><span class="kd">var</span> <span class="py">expanded</span> <span class="k">by</span> <span class="nf">remember</span> <span class="p">{</span> <span class="nf">mutableStateOf</span><span class="p">(</span><span class="k">false</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">Box</span><span class="p">(</span>
-    <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span>
-        <span class="p">.</span><span class="nf">background</span><span class="p">(</span><span class="n">colorBlue</span><span class="p">)</span>
-        <span class="p">.</span><span class="nf">animateContentSize</span><span class="p">()</span>
-        <span class="p">.</span><span class="nf">height</span><span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="n">expanded</span><span class="p">)</span> <span class="mi">400</span><span class="p">.</span><span class="n">dp</span> <span class="k">else</span> <span class="mi">200</span><span class="p">.</span><span class="n">dp</span><span class="p">)</span>
-        <span class="p">.</span><span class="nf">fillMaxWidth</span><span class="p">()</span>
-        <span class="p">.</span><span class="nf">clickable</span><span class="p">(</span>
-            <span class="n">interactionSource</span> <span class="p">=</span> <span class="nf">remember</span> <span class="p">{</span> <span class="nc">MutableInteractionSource</span><span class="p">()</span> <span class="p">},</span>
-            <span class="n">indication</span> <span class="p">=</span> <span class="k">null</span>
-        <span class="p">)</span> <span class="p">{</span>
-            <span class="n">expanded</span> <span class="p">=</span> <span class="p">!</span><span class="n">expanded</span>
-        <span class="p">}</span>
-<span class="p">)</span> <span class="p">{}</span>
-</pre></td></tr></tbody></table></code></pre>
-</figure>
+<p>點選左上角紅色「Stop Interactive Mode」停止動畫<br />
+<img src="/assets/img/compose/modifier/interactive_mode2.png" alt="img" /><br /></p>
 
 <h2 id="animation-spec-動畫">Animation Spec 動畫</h2>
 <h3 id="spring-彈簧">Spring 彈簧</h3>
@@ -4610,17 +4582,7 @@ window.MathJax = {
                     
     
                     
-                        
-                        <a href="/pages/compose/clickable" class="navigation navigation-prev navigation-unique" aria-label="Previous page: clickable()">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                    
 
-                    
-                        
-                        <a href="/pages/compose/rotate" class="navigation navigation-next navigation-unique" aria-label="Next page: rotate">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -4636,11 +4598,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "rotate",
+            "title": "animate AsState",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/compose/rotate.md",
-            "ref": "_pages/compose/rotate.md",
+            "path": "_pages/compose/animate_as_state.md",
+            "ref": "_pages/compose/animate_as_state.md",
             "articles": []
         },
         
@@ -4738,7 +4700,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-12-24 15:36:05 +0800"
+        "time": "2025-12-26 18:58:31 +0800"
     },
     "basePath": "",
     "book": {

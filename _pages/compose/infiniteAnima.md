@@ -1,3 +1,4 @@
+---
 title: InfiniteTransition 無限循環動畫
 date: 2025-12-26
 keywords: Android, Jetpack compose, InfiniteTransition

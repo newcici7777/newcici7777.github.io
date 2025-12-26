@@ -3010,6 +3010,13 @@
         </li>
 	
 	
+	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope/withcontext/" data-nav-link> withContext 切換執行緒</a>
+        
+            
+        </li>
+	
+	
 	<li class="active" data-nav-item>
     	<a href="/pages/kotlin/scope/big_coroutine_scope/" data-nav-link> Coroutin Scope 手動管理</a>
         
@@ -3036,13 +3043,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/context/" data-nav-link> CoroutineContext</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/withcontext/" data-nav-link> withContext 切換執行緒</a>
         
             
         </li>
@@ -3356,13 +3356,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/compose/animate/" data-nav-link> 動畫</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/compose/rotate/" data-nav-link> rotate</a>
         
             
@@ -3378,6 +3371,82 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/compose/graphics_layer/" data-nav-link> graphicsLayer()</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/intoffset/" data-nav-link> IntOffset</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/draggable/" data-nav-link> draggable delta</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/pointer_drag/" data-nav-link> pointerInput dragAmount</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 協程 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/re_coru_scope/" data-nav-link> rememberCoroutineScope</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/launchedeffect/" data-nav-link> LaunchedEffect</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 動畫 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/visible_animate/" data-nav-link> 顯示與隱藏動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animate_spec/" data-nav-link> Animation Spec 動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animate_as_state/" data-nav-link> animate AsState</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animatable/" data-nav-link> Animatable 自訂動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/infinite_animate/" data-nav-link> InfiniteTransition 無限循環動畫</a>
         
             
         </li></ul></li>
@@ -3852,6 +3921,8 @@
 <h2 id="建立coroutinescope">建立CoroutineScope</h2>
 <p>建立一個獨立CoroutineScope，並且自訂Dispatchers。</p>
 
+<p>runBlocking的Scope作用域是BlockingCoroutine。</p>
+
 <p>CoroutineScope下面有一個子協程，名字為job1。<br /></p>
 
 <p><img src="/assets/img/kotlin/scope_extend1.png" alt="img" /><br /></p>
@@ -3943,8 +4014,8 @@ runBlocking協程與CoroutineScope，沒有父子關係，所以runBlocking協�
   <tbody>
     <tr>
       <td>特性</td>
-      <td>沒有 CoroutineScope (launch{})</td>
-      <td>有 CoroutineScope (scope.launch{})</td>
+      <td>沒有 CoroutineScope launch{}</td>
+      <td>有 CoroutineScope scope.launch{}</td>
     </tr>
     <tr>
       <td>父子關係</td>
@@ -3957,9 +4028,9 @@ runBlocking協程與CoroutineScope，沒有父子關係，所以runBlocking協�
       <td>手動join()</td>
     </tr>
     <tr>
-      <td>調度器</td>
-      <td>繼承父協程</td>
-      <td>使用自定義調度器</td>
+      <td>Dispatchers</td>
+      <td>繼承runBlocking預設的Dispatchers</td>
+      <td>使用自訂Dispatchers</td>
     </tr>
   </tbody>
 </table>
@@ -3985,6 +4056,7 @@ runBlocking協程與CoroutineScope，沒有父子關係，所以runBlocking協�
 16
 17
 18
+19
 </pre></td><td class="code"><pre><span class="c1">// 沒有 Scope - 自動join</span>
 <span class="k">fun</span> <span class="nf">example1</span><span class="p">()</span> <span class="p">=</span> <span class="nf">runBlocking</span> <span class="p">{</span>
     <span class="nf">launch</span> <span class="p">{</span>
@@ -4002,6 +4074,7 @@ runBlocking協程與CoroutineScope，沒有父子關係，所以runBlocking協�
         <span class="nf">println</span><span class="p">(</span><span class="s">"可能不會執行！"</span><span class="p">)</span> <span class="c1">// 如果 runBlocking 先結束</span>
     <span class="p">}</span>
     <span class="c1">// runBlocking 結束時不會等待 scope 中的協程</span>
+    <span class="c1">// 需自己寫join()，runBlocking才會等待。</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
@@ -4141,7 +4214,7 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/kotlin/scope/viewmodel_scope" class="navigation navigation-prev navigation-unique" aria-label="Previous page: viewModelScope">
+                        <a href="/pages/kotlin/scope/withcontext" class="navigation navigation-prev navigation-unique" aria-label="Previous page: withContext 切換執行緒">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -4268,7 +4341,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-12-24 15:36:05 +0800"
+        "time": "2025-12-26 18:58:31 +0800"
     },
     "basePath": "",
     "book": {

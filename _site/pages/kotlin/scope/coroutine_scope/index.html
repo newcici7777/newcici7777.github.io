@@ -3011,6 +3011,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope/withcontext/" data-nav-link> withContext 切換執行緒</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/kotlin/scope/big_coroutine_scope/" data-nav-link> Coroutin Scope 手動管理</a>
         
             
@@ -3036,13 +3043,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/context/" data-nav-link> CoroutineContext</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/withcontext/" data-nav-link> withContext 切換執行緒</a>
         
             
         </li>
@@ -3356,13 +3356,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/compose/animate/" data-nav-link> 動畫</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/compose/rotate/" data-nav-link> rotate</a>
         
             
@@ -3378,6 +3371,82 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/compose/graphics_layer/" data-nav-link> graphicsLayer()</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/intoffset/" data-nav-link> IntOffset</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/draggable/" data-nav-link> draggable delta</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/pointer_drag/" data-nav-link> pointerInput dragAmount</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 協程 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/re_coru_scope/" data-nav-link> rememberCoroutineScope</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/launchedeffect/" data-nav-link> LaunchedEffect</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 動畫 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/visible_animate/" data-nav-link> 顯示與隱藏動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animate_spec/" data-nav-link> Animation Spec 動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animate_as_state/" data-nav-link> animate AsState</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animatable/" data-nav-link> Animatable 自訂動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/infinite_animate/" data-nav-link> InfiniteTransition 無限循環動畫</a>
         
             
         </li></ul></li>
@@ -3836,7 +3905,7 @@
                         <h1 id="/pages/kotlin/scope/coroutine_scope">coroutineScope</h1>
                     
 
-                    <p>coroutineScope雖然名字有Scope，但開頭字母為小寫。</p>
+                    <p>coroutineScope開頭字母為小寫。</p>
 
 <h2 id="使用時機">使用時機</h2>
 <ul>
@@ -3875,7 +3944,7 @@
 </figure>
 
 <h3 id="順序執行">順序執行</h3>
-<p>以下程式碼，二個函式是順序執行，執行時間是2017 ms。<br />
+<p>以下程式碼，二個函式是順序執行，先執行doOne()，再執行doTwo()，執行時間是2017 ms。<br />
 coroutineScope會等待子協程(doOne,doTwo)，順序執行完畢。<br /></p>
 
 <figure class="highlight">
@@ -3905,7 +3974,7 @@ coroutineScope會等待子協程(doOne,doTwo)，順序執行完畢。<br /></p>
 
 <h3 id="同時並行執行">同時(並行)執行</h3>
 
-<p>「同時執行」(需搭配launch/async) 多個任務</p>
+<p>「同時執行」(需搭配launch/async) 多個任務，以下執行秒數為1秒，代表是同時執行與結束。</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -4159,7 +4228,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-12-24 15:36:05 +0800"
+        "time": "2025-12-26 18:58:31 +0800"
     },
     "basePath": "",
     "book": {

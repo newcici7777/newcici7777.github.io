@@ -3011,6 +3011,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope/withcontext/" data-nav-link> withContext 切換執行緒</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/kotlin/scope/big_coroutine_scope/" data-nav-link> Coroutin Scope 手動管理</a>
         
             
@@ -3034,16 +3041,6 @@
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/context/" data-nav-link> CoroutineContext</a>
         
-            
-        </li>
-	
-	
-	<li class="active" data-nav-item>
-    	<a href="/pages/kotlin/withcontext/" data-nav-link> withContext 切換執行緒</a>
-        
-            
-                <ul><li><a href="#withcontext與launch差別" data-nav-link " >withContext與launch差別</a><ul><li><a href="#withcontext執行順序" data-nav-link " >withContext執行順序:</a></li><li><a href="#launch執行順序" data-nav-link " >launch執行順序:</a></li></ul></li><li><a href="#dispatcher" data-nav-link " >Dispatcher</a></li><li><a href="#withcontext-的返回值" data-nav-link " >withContext 的返回值</a><ul><li><a href="#返回string" data-nav-link " >返回String</a></li><li><a href="#返回int" data-nav-link " >返回Int</a></li><li><a href="#返回物件" data-nav-link " >返回物件</a></li><li><a href="#返回多類型" data-nav-link " >返回多類型</a></li><li><a href="#與-launch比較" data-nav-link " >與 launch比較</a></li></ul></li><li><a href="#協程作用域" data-nav-link " >協程作用域</a><ul><li><a href="#使用方式1" data-nav-link " >使用方式1</a></li><li><a href="#使用方式2" data-nav-link " >使用方式2</a></li><li><a href="#使用方式3" data-nav-link " >使用方式3</a></li><li><a href="#使用方式4" data-nav-link " >使用方式4</a></li><li><a href="#使用方式5" data-nav-link " >使用方式5</a></li><li><a href="#使用方式6" data-nav-link " >使用方式6</a></li></ul></li><li><a href="#順序執行" data-nav-link " >順序執行</a></li><li><a href="#非同步執行" data-nav-link " >非同步執行</a></li></ul>
-
             
         </li>
 	
@@ -3356,13 +3353,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/compose/animate/" data-nav-link> 動畫</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/compose/rotate/" data-nav-link> rotate</a>
         
             
@@ -3378,6 +3368,82 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/compose/graphics_layer/" data-nav-link> graphicsLayer()</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/intoffset/" data-nav-link> IntOffset</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/draggable/" data-nav-link> draggable delta</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/pointer_drag/" data-nav-link> pointerInput dragAmount</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 協程 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/re_coru_scope/" data-nav-link> rememberCoroutineScope</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/launchedeffect/" data-nav-link> LaunchedEffect</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 動畫 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/visible_animate/" data-nav-link> 顯示與隱藏動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animate_spec/" data-nav-link> Animation Spec 動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animate_as_state/" data-nav-link> animate AsState</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animatable/" data-nav-link> Animatable 自訂動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/infinite_animate/" data-nav-link> InfiniteTransition 無限循環動畫</a>
         
             
         </li></ul></li>
@@ -3944,7 +4010,6 @@
 
 <p>返回 Job 物件（可用來取消）</p>
 
-<p>不返回結果</p>
 <h2 id="dispatcher">Dispatcher</h2>
 <ul>
   <li>Dispatchers.IO</li>
@@ -4339,7 +4404,7 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>test
 </code></pre></div></div>
 <h3 id="使用方式3">使用方式3</h3>
-<p>函式傳回值是協程作用域coroutineScope</p>
+<p>使用withContext</p>
 
 <figure class="highlight">
   <pre><code class="language-kotlin" data-lang="kotlin"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
@@ -4596,17 +4661,7 @@ window.MathJax = {
                     
     
                     
-                        
-                        <a href="/pages/kotlin/context" class="navigation navigation-prev navigation-unique" aria-label="Previous page: CoroutineContext">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                    
 
-                    
-                        
-                        <a href="/pages/kotlin/launch_async" class="navigation navigation-next navigation-unique" aria-label="Next page: launch async">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
                     
                     <!------上一頁與下一頁 end---------->
                 </div>
@@ -4724,7 +4779,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-12-24 15:36:05 +0800"
+        "time": "2025-12-26 18:58:31 +0800"
     },
     "basePath": "",
     "book": {

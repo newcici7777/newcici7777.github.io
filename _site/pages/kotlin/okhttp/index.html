@@ -3011,6 +3011,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/kotlin/scope/withcontext/" data-nav-link> withContext 切換執行緒</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/kotlin/scope/big_coroutine_scope/" data-nav-link> Coroutin Scope 手動管理</a>
         
             
@@ -3033,13 +3040,6 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/kotlin/context/" data-nav-link> CoroutineContext</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/kotlin/withcontext/" data-nav-link> withContext 切換執行緒</a>
         
             
         </li>
@@ -3356,13 +3356,6 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/compose/animate/" data-nav-link> 動畫</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
     	<a href="/pages/compose/rotate/" data-nav-link> rotate</a>
         
             
@@ -3378,6 +3371,82 @@
 	
 	<li class="" data-nav-item>
     	<a href="/pages/compose/graphics_layer/" data-nav-link> graphicsLayer()</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/intoffset/" data-nav-link> IntOffset</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/draggable/" data-nav-link> draggable delta</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/pointer_drag/" data-nav-link> pointerInput dragAmount</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 協程 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/re_coru_scope/" data-nav-link> rememberCoroutineScope</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/launchedeffect/" data-nav-link> LaunchedEffect</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 動畫 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/visible_animate/" data-nav-link> 顯示與隱藏動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animate_spec/" data-nav-link> Animation Spec 動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animate_as_state/" data-nav-link> animate AsState</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/animatable/" data-nav-link> Animatable 自訂動畫</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/compose/infinite_animate/" data-nav-link> InfiniteTransition 無限循環動畫</a>
         
             
         </li></ul></li>
@@ -3839,7 +3908,7 @@
                     <p>Prerequisites:</p>
 
 <ul>
-  <li><a href="/pages/kotlin/withcontext/">withContext</a></li>
+  <li><a href="/pages/kotlin/scope/withcontext/">withContext</a></li>
 </ul>
 
 <h2 id="import">import</h2>
@@ -3956,7 +4025,7 @@
 
 <h3 id="非同步-get">非同步 get</h3>
 <p>Kotlin 避免回調地獄，改用協程取代call.enqueue()。<br />
-我在這邊使用<a href="/pages/kotlin/withcontext/">withContext</a>，也可以用launch + withContext，達到非同步。<br /></p>
+我在這邊使用<a href="/pages/kotlin/scope/withcontext/">withContext</a>，也可以用launch + withContext，達到非同步。<br /></p>
 
 <p>另外注意！<code class="language-plaintext highlighter-rouge">body?.string()</code>只能呼叫一次，不能呼叫2次，要使用一個變數，把它存起來，呼叫2次會出現以下的錯誤，因為讀取第一次時資源就關閉了，讀第2次，就會有closed的Exception，因為資源已關閉。<br /></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.lang.IllegalStateException: closed
@@ -4944,7 +5013,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "",
-        "time": "2025-12-24 15:36:05 +0800"
+        "time": "2025-12-26 18:58:31 +0800"
     },
     "basePath": "",
     "book": {
