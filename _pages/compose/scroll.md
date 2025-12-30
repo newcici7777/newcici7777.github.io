@@ -127,4 +127,4 @@ fun ScrollExample3() {
 {% endhighlight %}
 
 [1]: {% link _pages/kotlin/when_if.md %}#repeat
-[2]: {% link _pages/compose/rememberCoroutineScope.md %}
+[2]: {% link _pages/compose/re_coru_scope.md %}

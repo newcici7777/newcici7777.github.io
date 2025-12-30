@@ -265,3 +265,16 @@ println(list)
 ```
 [0, 1, 2]
 ```
+
+Lambda`{}`花括號內最後一行就是要組成的格式，`$it`就是index索引。
+{% highlight kotlin linenos %}
+val list = List(100) {
+  "Item $it"
+}
+println(list)
+{% endhighlight %}
+
+{% highlight kotlin linenos %}
+val list = mutableListOf<String>()
+list.addAll(List(500) {"Item $it"})
+{% endhighlight %}

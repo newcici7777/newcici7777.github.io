@@ -21,6 +21,26 @@ var text by remember { mutableStateOf("") }
 var num by remember { mutableStateOf(0) }
 ```
 
+陣列
+```
+val list = remember { mutableStateListOf<String>() }
+```
+
+## 使用 by 與 = 差別
+by可以直接使用變數
+```
+var 變數 by remember { mutableStateOf("預設值") }
+var num by remember { mutableStateOf(0) }
+Text(" $num ")
+```
+
+使用`=`指派的方式，使用時要用`.value`
+```
+var 變數 = remember { mutableStateOf("預設值") }
+var num = remember { mutableStateOf(0) }
+Text(" ${num.value} ")
+```
+
 ![img]({{site.imgurl}}/compose/textfield3.png)<br>
 
 {% highlight kotlin linenos %}
