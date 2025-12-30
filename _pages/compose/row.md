@@ -3,6 +3,10 @@ title: Row
 date: 2023-05-03
 keywords: Android, Jetpack compose, Row
 ---
+Prerequisites:
+
+- [Scroll滾動Row][1]
+
 Row的排列方式如下。<br>
 ![img]({{site.imgurl}}/compose/row2.png)<br>
 
@@ -166,3 +170,6 @@ Row(
 }
 {% endhighlight %}
 ![img]({{site.imgurl}}/compose/row1.png)   
+
+
+[1]: {% link _pages/compose/scroll.md %}

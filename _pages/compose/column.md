@@ -6,6 +6,7 @@ keywords: Android, Jetpack compose, Column
 Prerequisites:
 
 - [row][1]
+- [Scroll滾動Column][2]
 
 Column的排列方式如下。<br>
 ![img]({{site.imgurl}}/compose/column1.png)<br>
@@ -188,3 +189,4 @@ Column(
 ![img]({{site.imgurl}}/compose/compose_column1.png) 
 
 [1]: {% link _pages/compose/row.md %}
+[2]: {% link _pages/compose/scroll.md %}

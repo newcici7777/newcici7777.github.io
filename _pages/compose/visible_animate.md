@@ -17,7 +17,6 @@ fun AnimateContentSizeExample() {
     modifier = Modifier
       .fillMaxWidth()
       .animateContentSize()
-      .background(Color.Blue)
       .padding(16.dp)
       .clickable {
         isExpanded = !isExpanded
@@ -29,7 +28,7 @@ fun AnimateContentSizeExample() {
         Text("hello \n" +
             "world \n" +
             "hi \n",
-          modifier = Modifier.background(Color.White))
+          modifier = Modifier.background(Color.Yellow))
       }
     }
   }
