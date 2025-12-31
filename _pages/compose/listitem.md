@@ -3,6 +3,41 @@ title: ListItem
 date: 2023-05-03
 keywords: Android, Jetpack compose, ListItem
 ---
+
+![img]({{site.imgurl}}/compose/listitem1.png)  <br>
+
+{% highlight kotlin linenos %}
+@Composable
+fun ListItemExample1() {
+  Column {
+    ListItem(
+      // 標題必填
+      headlineContent = {
+        Text("Title")
+      },
+      // 內容(非必填)
+      supportingContent = {
+        Text("Content")
+      },
+      // 前面圖案(非必填)
+      leadingContent = {
+        Icon(imageVector = Icons.Default.Favorite, contentDescription = null)
+      },
+      // 後面圖案或文字或其它元件(非必填)
+      trailingContent = {
+        Icon(imageVector = Icons.Default.ArrowUpward, contentDescription = null)
+      },
+      // 標題上方小文字(非必填)
+      overlineContent = {
+        Text("Category")
+      }
+    )
+  }
+}
+{% endhighlight %}
+
+---------------------------------------
+以下舊文章
 {% highlight kotlin linenos %}
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
