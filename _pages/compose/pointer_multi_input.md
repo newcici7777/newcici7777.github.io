@@ -5,7 +5,8 @@ keywords: Android, Jetpack compose, awaitPointerEventScope, pointerInput, event,
 ---
 使用模擬器，按下ctrl + 滑鼠左鍵，即可模擬二指縮放大小。<br>
 
-在 Jetpack Compose 中，awaitPointerEventScope 是 pointerInput 用於處理手勢和手指頭的交互動作。<br>
+在 Jetpack Compose 中，awaitPointerEventScope 等待所有手勢。<br>
+
 awaitPointerEvent是一個suspend function，是協程函式，用於監控手勢與手指頭的交互動作。<br>
 
 使用`while(true)` 持續監聽手指碰觸螢幕，當Compose Tree被記憶體回收，就會停止監控。<br>
@@ -14,6 +15,14 @@ Modifier
 .awaitPointerEventScope {
    while (true) {
    }
+}
+{% endhighlight %}
+
+awaitPointerEvent是等待下一個手勢事件。
+{% highlight kotlin linenos %}
+awaitPointerEventScope {
+    // 等待下一個手勢事件
+    val event: PointerEvent = awaitPointerEvent()
 }
 {% endhighlight %}
 
