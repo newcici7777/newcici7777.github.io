@@ -73,7 +73,7 @@ var3 type <class 'str'>
 var3 = 10HELLO
 ```
 
-### 轉型
+### int float 互轉
 將整數10轉成float，不會影嚮var1原本的型別，var1變數不管如何轉型，仍是整數型別。
 {% highlight kotlin linenos %}
 var1 = 10
@@ -89,4 +89,80 @@ var1 type <class 'int'> var1 =  10
 var2 type <class 'float'> var2 =  10.0
 var1 type <class 'int'> var1 =  10
 var3 type <class 'str'> var3 =  10
+```
+
+int轉float會增加小數點一位
+```
+10 → 10.0
+```
+
+float轉int會無條件去除小數點
+```
+10.99 → 10 
+```
+
+{% highlight python linenos %}
+var1 = 10
+var2 = float(var1)
+print("var1 type", type(var1), "var1 = ", var1)
+print("var2 type", type(var2), "var2 = ", var2)
+var3 = 10.99
+var4 = int(var3)
+print("var3 type", type(var3), "var3 = ", var3)
+print("var4 type", type(var4), "var4 = ", var4)
+{% endhighlight %}
+```
+var1 type <class 'int'> var1 =  10
+var2 type <class 'float'> var2 =  10.0
+var3 type <class 'float'> var3 =  10.99
+var4 type <class 'int'> var4 =  10
+```
+
+### int float 互轉 字串
+int float 都可以直接轉成字串
+{% highlight python linenos %}
+var1 = str(10)
+var2 = str(10.99)
+print("var1 type", type(var1), "var1 = ", var1)
+print("var2 type", type(var2), "var2 = ", var2)
+{% endhighlight %}
+```
+var1 type <class 'str'> var1 =  10
+var2 type <class 'str'> var2 =  10.99
+```
+
+字串的值是浮點數，不可轉成int
+{% highlight python linenos %}
+var1 = "10.99"
+var2 = int(var1)
+print("var1 type", type(var1), "var1 = ", var1)
+print("var2 type", type(var2), "var2 = ", var2)
+{% endhighlight %}
+```
+    var2 = int(var1)
+           ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '10.99'
+```
+
+字串的值是整數，轉成float不會有問題。
+{% highlight python linenos %}
+var1 = "10"
+var2 = float(var1)
+print("var1 type", type(var1), "var1 = ", var1)
+print("var2 type", type(var2), "var2 = ", var2)
+{% endhighlight %}
+```
+var1 type <class 'str'> var1 =  10
+var2 type <class 'float'> var2 =  10.0
+```
+
+無法將文字轉成int與float
+{% highlight python linenos %}
+var1 = ("Hello")
+var2 = int(var1)
+{% endhighlight %}
+```
+    var2 = int(var1)
+           ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'Hello'
 ```
