@@ -145,6 +145,7 @@ System.out.println(i);
 ```
 
 ### return
+return 是直接離開函式。
 {% highlight java linenos %}
   public void method1(int n) {
     if (n == 1) {
@@ -155,14 +156,13 @@ System.out.println(i);
   }
 {% endhighlight %}
 
-以上程式碼與以下程式碼，是相同的，差別在於，下方程式碼沒有else，因為if搭配return，只要有符合break、continue、return後面程式碼都不執行，`System.out.println("執行這段程式碼");`放在「return條件<span class="markline">之後</span>」就等同於else。
+以上程式碼與以下程式碼，是相同的，差別在於，下方程式碼沒有else，因為if搭配return，只要執行到return，就直接離開函式，後面程式碼都不執行，`System.out.println("執行這段程式碼");`不會執行。
 
 {% highlight java linenos %}
   public void method1(int n) {
     if (n == 1) {
       return;
     }
-    // return條件之後
     System.out.println("執行這段程式碼");
   }
 {% endhighlight %}

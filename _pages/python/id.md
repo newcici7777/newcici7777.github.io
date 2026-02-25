@@ -1,5 +1,5 @@
 ---
-title: Python id 記憶體位址
+title: id() 記憶體位址
 date: 2026-02-23
 keywords: Python, id
 ---
