@@ -89,4 +89,25 @@ print(f"{x} or {y} = ", x or y)
 0 or 5 =  5
 ```
 
+### not
+```
+not x
+```
+如果x為True，傳回False。<br>
+如果x為False，傳回True。<br>
+
+{% highlight python linenos %}
+x = 0
+y = 5
+print(f"not {x} = ", not x)
+print(f"not {y} = ", not y)
+print("not False = ", not False)
+{% endhighlight %}
+```
+not 0 =  True
+not 5 =  False
+not False =  True
+```
+
+
 [1]: {% link _pages/python/id.md %}
