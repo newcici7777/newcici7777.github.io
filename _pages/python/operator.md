@@ -13,7 +13,7 @@ keywords: Python, operator
 |運算子|描述|範例|傳回值型別|
 |:----:|:----:|:----:|:----:|
 |/|除|8/2 = 1.8|浮點數float|
-|//|整除|8//2 = 1|整數int|
+|//|整除|8//2 = 1|根據除數或被除數型別|
 |%|餘數|-38 % -6 = -2|整數int|
 |`**`|次方|2`**`4 = 16|整數int|
 
@@ -79,10 +79,11 @@ System.out.println(10 / 4.0);
 2.5
 ```
 
-### 整除`//` 回傳int
-
+### 整除`//`
 - [java floor][1]
 
+#### 傳回值為整數
+若除數與被除數是整數int，傳回值就是無條件去掉小數的「整數」。
 ```
 9 / 5 = 1.8
 ```
@@ -98,6 +99,25 @@ print("var2 type", type(var2), "var2 = ", var2)
 ```
 var1 type <class 'float'> var1 =  1.8
 var2 type <class 'int'> var2 =  1
+```
+
+#### 傳回值為浮點數
+若除數或被除數是浮點數，傳回值就是只有商數，小數點後面一律變為.0的「浮點數」。
+```
+9.0 / 5 = 1.0
+```
+整除`//`傳回小於或等於 1.8 的整數1.0，無條件去掉小數點後面的位數。
+
+{% highlight python linenos %}
+a = 9.0
+b = 5
+c = a // b
+print("type of c is ", type(c))
+print("c is ", c)
+{% endhighlight %}
+```
+type of c is  <class 'float'>
+c is  1.0
 ```
 
 #### 負數整除 
