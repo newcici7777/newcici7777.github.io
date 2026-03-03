@@ -73,9 +73,9 @@ print(list(r))
 for 流程如下:
 1. for移到range的第一個值。
 2. 檢查是不是結束值
-3. 不是結束值，把值取出來，並把值指派給「變數」
+3. 不是結束值，把range的值取出來，並把值指派給「變數」
 4. 執行程式碼。
-5. for 移到range下一個值，從步驟2循環。
+5. 移到range下一個值，回到步驟2。
 
 ![img]({{site.imgurl}}/python/for_assign.png)
 
@@ -90,10 +90,10 @@ for i in range(1, 10, 1):
 
 ```mermaid
 flowchart TD
-  A[Range是否有值] --> B{判斷是不是結束值}
-  B -->|False| C[把值取出，指派給變數]
+  A[for移到range的第一個值] --> B{判斷是不是結束值}
+  B -->|False| C[把range值取出，指派給變數]
   C --> D[執行程式碼]
-  D --> E[for 移到range下一個值]
+  D --> E[移到range下一個值]
   E --> B
   B ---->|True| F[離開迴圈]
 ```
@@ -191,38 +191,6 @@ for i in [1, 3, 5, 7]:
 7
 ```
 
-## for else break
-如果for正確執行完，沒有被break，會到else的區塊中。<br>
-{% highlight python linenos %}
-for i in range(1, 10, 2):
-    print(i)
-else:
-    print("for finish")
-{% endhighlight %}
-```
-1
-3
-5
-7
-9
-for finish
-```
-
-如果遇到break，就不會進到else的區塊。<br>
-{% highlight python linenos %}
-for i in range(1, 10, 2):
-    print(i)
-    if i == 5:
-        break
-else:
-    print("for finish")
-{% endhighlight %}
-```
-1
-3
-5
-```
-
 ## 雙層for迴圈
 當i為1，會配對j為1、2、3。<br>
 當i為2，會配對j為1、2、3。<br>
@@ -243,6 +211,97 @@ i = 2 and j = 1
 i = 2 and j = 2
 i = 2 and j = 3
 ```
+
+## for else break
+如果for正確執行完，沒有被break，會到else的區塊中。<br>
+{% highlight python linenos %}
+for i in range(1, 10, 2):
+    print(i)
+else:
+    print("else finish")
+{% endhighlight %}
+```
+1
+3
+5
+7
+9
+else finish
+```
+
+如果遇到break，就不會進到else的區塊。<br>
+{% highlight python linenos %}
+for i in range(1, 10, 2):
+    print(i)
+    if i == 5:
+        break
+else:
+    print("else finish")
+{% endhighlight %}
+```
+1
+3
+5
+```
+
+如果是雙層for迴圈，else會對映自己的for迴圈。<br>
+以下程式碼，break是發生在第二層for迴圈中，第一層else不會接收到第二層的break，所以第一層的else程式碼區塊仍會執行。<br>
+{% highlight python linenos %}
+for i in range(1,3):
+    for j in range(1,4):
+        if j==2:
+            break
+        print(f"i = {i}, j = {j}")
+else:
+    print("else finish")
+{% endhighlight %}
+```
+i = 1, j = 1
+i = 2, j = 1
+else finish
+```
+
+## continue
+continue並非離開迴圈。<br>
+
+continue 流程如下:<br>
+1. for移到range的第一個值。
+2. 檢查是不是結束值
+3. 不是結束值，把range的值取出來，並把值指派給「變數」
+4. 是否進入continue條件
+5. 若為進入continue條件，回到步驟7。
+6. 若不進入continue條件，執行程式碼
+7. 移到range下一個值，回到步驟2。
+
+```mermaid
+flowchart TD
+  A[for移到range的第一個值] --> B{判斷是不是結束值}
+  B -->|False| C[把range值取出，指派給變數]
+  C --> D{是否符合continue條件}
+  D -->|True| E[移到range下一個值]
+  D -->|False| F[程式碼] 
+  E --> B
+  F --> E
+  B ---->|True| G[離開迴圈]
+```
+
+符合continue的條件就不執行contnue之後的程式碼。<br> 
+以下程式碼，遇到i==3，就不輸出，直接移到range下一個值，判斷是不是結束值，若不為結束值就進入for迴圈。<br>
+{% highlight python linenos %}
+for i in range(1,5):
+    if i == 3:
+        continue
+    print(i)
+else:
+    print("for finish")
+{% endhighlight %}
+```
+1
+2
+4
+for finish
+```
+
 ## list記憶體位址
 Prerequisites:
 
@@ -255,10 +314,9 @@ Python list的記憶體位址分配跟C++、Java不一樣。<br>
 
 由以下程式碼可以看出x變數、`nums[0]`、`nums[1]`、`nums[2]`、`nums[3]`全指向同一個記憶體位址。<br>
 
-| 0 | 1 | 2| 3 |
+|0|1|2|3|
 |:--------:|:--------:|:--------:|:--------:|
-| 4370549520 | 4370549520 | 4370549520 | 4370549520|
-
+|4370549520|4370549520|4370549520|4370549520|
 
 {% highlight python linenos %}
 nums = [1, 1, 1, 1]
@@ -299,7 +357,7 @@ array[3] = &var1;
  4360423744
 [    0    ][    1    ][    2    ][    3    ]
 [ pointer ][ pointer ][ pointer ][ pointer ]
-[ &1 ][ &1 ][ &1 ][ &1 ]
+[   &1    ][   &1    ][   &1    ][   &1    ]
 [ 4370549520 ][ 4370549520 ][ 4370549520 ][ 4370549520 ]
 ```
 

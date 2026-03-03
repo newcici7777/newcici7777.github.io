@@ -102,3 +102,24 @@ print("i = ", i)
 2
 i =  3
 ```
+
+## continue
+以下程式碼i==2 就把i增加，並移到「進入while迴圈判斷」，continue後面的程式碼就不執行。<br>
+迴圈變數沒有遞增遞減，沒有逐漸符合離開迴圈條件，會變成無窮迴圈，所以在continue之前要把i變數遞增。<br>
+{% highlight python linenos %}
+i = 1
+while i < 5:
+    if i == 2:
+        i += 1
+        continue
+    print(i)
+    i += 1
+else:
+    print("else")
+{% endhighlight %}
+```
+1
+3
+4
+else
+```
