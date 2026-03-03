@@ -125,6 +125,32 @@ Hello
 Hello
 ```
 
+### 離開迴圈，i變數仍能使用
+Python的迴圈變數跟其它程式語言不同，離開for迴圈後，迴圈變數i仍能使用。<br>
+{% highlight python linenos %}
+for i in range(5):
+    print("Hello", i)
+print("i = ", i)
+{% endhighlight %}
+```
+Hello 0
+Hello 1
+Hello 2
+Hello 3
+Hello 4
+i =  4
+```
+
+### `end=""` 不要換行
+print後面加上`end=""`，就不會換行。
+{% highlight python linenos %}
+for i in range(1, 10, 2):
+    print(i, end="")
+{% endhighlight %}
+```
+13579
+```
+
 ## list
 ### list語法
 ```
@@ -140,7 +166,7 @@ print(data, type(data)
 [1, 3, 5, 7] <class 'list'>
 ```
 
-### list 與 for
+## list 與 for
 以下二種程式碼執行結果都一樣。<br>
 {% highlight python linenos %}
 data = [1, 3, 5, 7]
@@ -165,21 +191,71 @@ for i in [1, 3, 5, 7]:
 7
 ```
 
-### list記憶體位址
+## for else break
+如果for正確執行完，沒有被break，會到else的區塊中。<br>
+{% highlight python linenos %}
+for i in range(1, 10, 2):
+    print(i)
+else:
+    print("for finish")
+{% endhighlight %}
+```
+1
+3
+5
+7
+9
+for finish
+```
+
+如果遇到break，就不會進到else的區塊。<br>
+{% highlight python linenos %}
+for i in range(1, 10, 2):
+    print(i)
+    if i == 5:
+        break
+else:
+    print("for finish")
+{% endhighlight %}
+```
+1
+3
+5
+```
+
+## 雙層for迴圈
+當i為1，會配對j為1、2、3。<br>
+當i為2，會配對j為1、2、3。<br>
+j都是固定為1、2、3。<br>
+
+![img]({{site.imgurl}}/python/double_for.png)<br>
+
+{% highlight python linenos %}
+for i in [1,2]:
+    for j in [1,2,3]:
+        print(f"i = {i} and j = {j}")
+{% endhighlight %}
+```
+i = 1 and j = 1
+i = 1 and j = 2
+i = 1 and j = 3
+i = 2 and j = 1
+i = 2 and j = 2
+i = 2 and j = 3
+```
+## list記憶體位址
 Prerequisites:
 
 - [id][1]
-Prerequisites:
-
 - [C++ 指標陣列][2]
 
 先前在id的文章中提到，英文大小寫字母、數字0-9、底線，為了節省記憶體空間，Python都會指向相同記憶體位址。<br>
 
 Python list的記憶體位址分配跟C++、Java不一樣。<br>
 
-由以下程式碼可以看出x變數、nums[0]、nums[1]、nums[2]、nums[3] 全指向同一個記憶體位址。<br>
+由以下程式碼可以看出x變數、`nums[0]`、`nums[1]`、`nums[2]`、`nums[3]`全指向同一個記憶體位址。<br>
 
-| [0] | [1] | [2] | [3] |
+| 0 | 1 | 2| 3 |
 |:--------:|:--------:|:--------:|:--------:|
 | 4370549520 | 4370549520 | 4370549520 | 4370549520|
 
@@ -213,12 +289,12 @@ array[2] = &var1;
 array[3] = &var1;
 {% endhighlight %}
 
-記憶體位4370549520儲存「1」的數值。
+記憶體位址4370549520儲存「1」的數值。
 ```
 4370549520 → 1
 ```
 
-指標陣列儲存的是記憶體，陣列中的pointer都是1的address。
+指標陣列儲存的是記憶體位址，陣列中的pointer都是1的address。
 ```
  4360423744
 [    0    ][    1    ][    2    ][    3    ]
@@ -227,7 +303,7 @@ array[3] = &var1;
 [ 4370549520 ][ 4370549520 ][ 4370549520 ][ 4370549520 ]
 ```
 
-而nums則是指向指標陣列[0]的記憶體位址4360423744，指標陣列[0]儲存的內容是1的記憶體位址4370549520。<br>
+而nums則是指向指標陣列`[0]`的記憶體位址4360423744，指標陣列`[0]`儲存的內容是1的記憶體位址4370549520。<br>
 
 [1]: {% link _pages/python/id.md %}
-[1]: {% link _pages/c/array/arrayOfPointers.md %}
+[2]: {% link _pages/c/array/arrayOfPointers.md %}

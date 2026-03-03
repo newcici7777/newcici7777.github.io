@@ -1,7 +1,7 @@
 ---
-title: Btn
+title: Button
 date: 2023-05-03
-keywords: Android, Jetpack compose, Btn
+keywords: Android, Jetpack compose, Button
 ---
 ![img]({{site.imgurl}}/compose/compose_btn1.png)
 {% highlight kotlin linenos %}
