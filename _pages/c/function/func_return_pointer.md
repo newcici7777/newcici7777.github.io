@@ -19,14 +19,12 @@ int* func() {
 int main() {
   int* p = func();
   int n;
-  printf("test test\n");
   n = * p;
   printf("%d\n",n);
   return 0;
 }
 {% endhighlight %}
 ```
-test test
 -610123577
 ```
 輸出結果並非100，而是-610123577。
@@ -43,14 +41,12 @@ int* func() {
 int main() {
   int* p = func();
   int n;
-  printf("test test\n");
   n = * p;
   printf("%d\n",n);
   return 0;
 }
 {% endhighlight %}
 ```
-test test
 100
 ```
 輸出結果是印出100，而不是亂七八糟的數字。
@@ -87,7 +83,6 @@ int* func() {
 int main() {
   int* p = func();
   int n;
-  printf("test test\n");
   n = * p;
   printf("%d\n",n);
   delete p;
@@ -96,7 +91,6 @@ int main() {
 }
 {% endhighlight %}
 ```
-test test
 50
 ```
 

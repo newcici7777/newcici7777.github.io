@@ -173,8 +173,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
-
 ```
 執行結果
 mathMax = 70

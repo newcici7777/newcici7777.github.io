@@ -284,7 +284,7 @@ Alvin
 4. 傳遞obj物件，是把obj「記憶體位址0x0033」「複製」到method1方法中obj參數。
 5. 修改obj物件(0x0033)的name，指向String Pool中的0x0022。
 6. 離開方法，返回至main方法中呼叫method1()的位置。
-7. 印出obj物件(0x0033)的name(0x0022)
+7. 印出obj物件(0x0033)的name(0x0011)
 
 ![img]({{site.imgurl}}/java/method_obj1.png)
 

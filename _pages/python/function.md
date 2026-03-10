@@ -108,15 +108,22 @@ test(n)
 1.先執行主程式`n=55`，在Stack堆疊區中，建立新的Stack，n的變數存的是0x0011，Data資料區，0x0011記憶體位址存的是55。<br>
 ![img]({{site.imgurl}}/python/stack1.png)<br>
 
-2.執行到test(a)函式後，在Stack堆疊區中，建立新的Stack，Stack建立方式由下至上。<br>
-a的變數存的是0x0011。
+2.呼叫test()函式。<br>
 ![img]({{site.imgurl}}/python/stack2.png)<br>
 
-3.`a=10`，會把變數a存0x0022的記憶體位址，0x0022記憶體位址存的是10。
+3.執行到test(a)函式後，在Stack堆疊區中，建立新的Stack，Stack建立方式由下至上。<br>
+a的變數存的是0x0011。<br>
+
 ![img]({{site.imgurl}}/python/stack3.png)<br>
 
-4.test()函式執行完畢後，test函式的Stack會被清除，stack記憶體位址會被記憶體回收，供之後其它變數使用。<br>
+4.`a=10`，會把變數a存0x0022的記憶體位址，0x0022記憶體位址存的是10。<br>
 ![img]({{site.imgurl}}/python/stack4.png)<br>
+
+5.test()函式執行完畢後，test函式的Stack會被清除，stack記憶體位址會被記憶體回收，供之後其它變數使用。<br>
+![img]({{site.imgurl}}/python/stack5.png)<br>
+
+6.主函式main()執行完畢後，主函式main()的Stack會被清除，stack記憶體位址會被記憶體回收，供之後其它變數使用。<br>
+![img]({{site.imgurl}}/python/stack6.png)<br>
 
 函式內的變數，是屬於區域變數，離開函式無法再讀取，因為函式的記憶體位址在離開函式時已被清除。<br>
 
@@ -170,8 +177,8 @@ def get_info(produt_name = "Cookie", price):
 {% endhighlight %} 
 
 ### 可變參數
-參數數量不固定，可能有1個參數，也可能有10個參數。<br>
-會把多個參數存入tuple。<br>
+參數數量不固定，可能有0個參數、1個參數，也可能有多個參數。<br>
+參數的數量為0至多個參數，會把多個參數存入tuple。<br>
 
 參數名使用`*`星號開頭，如下面程式碼，使用`*args`作為可變參數。<br>
 
@@ -179,6 +186,90 @@ def get_info(produt_name = "Cookie", price):
 ```
 def sum(*args):
     程式碼
+```
+
+以下程式碼，`{args}`直接輸出tuple的內容，使用`type()`輸出類型是tuple。<br>
+{% highlight python linenos %}
+def get_info(*args):
+    print(f"args: {args} , type: {type(args)}")
+
+get_info("Cookie", "Bread", "Fish")
+{% endhighlight %}
+```
+args: ('Cookie', 'Bread', 'Fish') , type: <class 'tuple'>
+```
+
+使用for可以把tuple的元素一個一個輸出。
+{% highlight python linenos %}
+def get_info(*args):
+    for arg in args:
+        print(arg)
+
+get_info("Cookie", "Bread", "Fish")
+{% endhighlight %}
+```
+Cookie
+Bread
+Fish
+```
+
+使用return把傳回值傳入result的變數中。<br>
+{% highlight python linenos %}
+def sum(*args):
+    total =0
+    for arg in args:
+        total += arg
+    return total
+
+result = sum(1,2,3,4,5,6,7,8,9)
+print(result)
+{% endhighlight %}
+
+`*args`為0至多個參數，若無任何參數，也可以。<br>
+以下程式碼呼叫sum()是不代入任何參數。<br>
+{% highlight python linenos %}
+def sum(*args):
+    total =0
+    for arg in args:
+        total += arg
+    return total
+
+result = sum()
+print(result)
+{% endhighlight %}
+```
+0
+```
+
+### key與value的參數
+參數的組成為key與value，此處key的命名仍要符合變數命名規範，不能數字開頭。<br>
+```
+呼叫函式(key1 = value1, key2 = value2, key3 = value3, key4 = value4)
+info(name="Mary", age=18)
+```
+
+傳入的參數key與value會變成dict的資料型態。<br>
+
+使用二個星星`**`代表參數是key與value。
+
+語法
+```
+def info(**args):
+	程式碼
+```
+{% highlight python linenos %}
+def info(**args):
+    print(f"args: {args}, type: {type(args)}")
+    for key in args:
+        print(f"{key}: {args[key]}")
+
+
+info(name="Mary", age=18)
+{% endhighlight %}
+```
+args: {'name': 'Mary', 'age': 18}, type: <class 'dict'>
+name: Mary
+age: 18
 ```
 ## 相同的函式名
 Python可以有相同的函式名，執行函式時，執行離上方自己近的函式，不是下方。<br>
@@ -210,6 +301,7 @@ test()
 2
 ```
 
+## 函式與字串Memory Model
 
 
 
