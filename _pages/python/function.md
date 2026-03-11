@@ -86,6 +86,51 @@ print(f"r1: {r1}, r2: {r2}")
 r1: 120, r2: 80
 ```
 
+## 函式全域變數 區域變數
+函式內宣告的區域變數，函式之外不能使用。<br>
+以下程式碼編譯失敗。<br>
+{% highlight python linenos %}
+def fun1():
+    x = 50
+    print(f"x = {x}")
+
+print(f"x = {x}")
+{% endhighlight %}
+
+全域變數是n。<br>
+fun1自己宣告區域變數n，跟全域變數n是二個獨立個體，不相同。<br>
+不會修改到全域變數的n的內容。<br>
+{% highlight python linenos %}
+n = 100
+
+def fun1():
+    n = 50
+    print(f"fun1() n = {n}")
+
+fun1()
+print(f"outside n = {n}")
+{% endhighlight %}
+```
+fun1() n = 50
+outside n = 100
+```
+
+如果要修改函式外部的全域變數，函式內要使用global。
+{% highlight python linenos %}
+n = 100
+
+def fun1():
+    global n  # 使用global 變數名
+    n = 50
+    print(f"fun1() n = {n}")
+
+fun1()
+print(f"outside n = {n}")
+{% endhighlight %}
+```
+fun1() n = 50
+outside n = 50
+```
 ## 函式參數
 ### 函式參數傳遞 記憶體位址
 呼叫函式後，記憶體會開立一個「新的」Stack空間，跟主程式main的stack空間分開來。<br>
@@ -105,7 +150,7 @@ test(n)
 55
 ```
 
-1.先執行主程式`n=55`，在Stack堆疊區中，建立新的Stack，n的變數存的是0x0011，Data資料區，0x0011記憶體位址存的是55。<br>
+1.先執行主程式`n=55`，在Stack堆疊區中，建立新的Stack，n的變數存的是0x0011，Memory中的Heap區，0x0011記憶體位址存的是55。<br>
 ![img]({{site.imgurl}}/python/stack1.png)<br>
 
 2.呼叫test()函式。<br>
@@ -126,6 +171,36 @@ a的變數存的是0x0011。<br>
 ![img]({{site.imgurl}}/python/stack6.png)<br>
 
 函式內的變數，是屬於區域變數，離開函式無法再讀取，因為函式的記憶體位址在離開函式時已被清除。<br>
+
+### 相同的函式名
+Python可以有相同的函式名，執行函式時，執行離上方自己近的函式，不是下方。<br>
+{% highlight python linenos %}
+def test():
+    print("1")
+
+def test():
+    print("2")
+
+test()
+{% endhighlight %}
+```
+2
+```
+
+{% highlight python linenos %}
+def test():
+    print("1")
+
+test()
+def test():
+    print("2")
+
+test()
+{% endhighlight %}
+```
+1
+2
+```
 
 ### 呼叫的函式參數不一致
 Python函式沒有多型，以下程式碼，執行`test()`，它不會去配對參數的數量，Python會執行離自己最近的同名函式test(x)。<br>
@@ -271,35 +346,7 @@ args: {'name': 'Mary', 'age': 18}, type: <class 'dict'>
 name: Mary
 age: 18
 ```
-## 相同的函式名
-Python可以有相同的函式名，執行函式時，執行離上方自己近的函式，不是下方。<br>
-{% highlight python linenos %}
-def test():
-    print("1")
 
-def test():
-    print("2")
-
-test()
-{% endhighlight %}
-```
-2
-```
-
-{% highlight python linenos %}
-def test():
-    print("1")
-
-test()
-def test():
-    print("2")
-
-test()
-{% endhighlight %}
-```
-1
-2
-```
 
 ## 函式與字串Memory Model
 
