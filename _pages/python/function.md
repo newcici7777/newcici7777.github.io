@@ -347,13 +347,42 @@ name: Mary
 age: 18
 ```
 
-
 ## 函式與字串Memory Model
+Prerequisites:
 
+- [字串][1]
 
+1.在Stack建立main()的Stack，變數str1指向0x100的記憶體位址。<br>
+![img]({{site.imgurl}}/python/str_stack1.png)<br>
+
+2.進入change()函式，把str1的記憶體位址0x100「複製」給str_param變數，讓str_param也指向0x100。<br>
+![img]({{site.imgurl}}/python/str_stack2.png)<br>
+
+3.str_param變數指向0x200的記憶體位址。<br>
+![img]({{site.imgurl}}/python/str_stack3.png)<br>
+
+4.執行完change()函式後，change函式被記憶體回收，相關的stack與str_param變數也清除掉。<br>
+main()函式中的str1仍是指向0x100的記憶體位址。<br>
+![img]({{site.imgurl}}/python/str_stack4.png)<br>
+
+不同函式之間的參數傳遞，是用「複製」記憶體位址的方式，把複製的記憶體位址指派給函式中的變數。<br>
+
+完整程式碼:
+{% highlight python linenos %}
+def change(str_param):
+    str_param += "abc"
+    print(f"str_param: {str_param}")
+
+str1 = "Hi"
+change(str1)
+print(f"str1: {str1}")
+{% endhighlight %}
+```
+str_param: Hiabc
+str1: Hi
+```
 
 [1]: {% link _pages/c/function/callByValue.md %}
-
-
+[2]: {% link _pages/python/string.md %}
 
 
