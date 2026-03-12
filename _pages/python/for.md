@@ -1,73 +1,11 @@
 ---
-title: range list for
+title: range for
 date: 2026-02-28
 keywords: Python, range, for, list
 ---
-## range 不可變序列
-range函式文件網址<https://docs.python.org/zh-tw/3.14/library/functions.html#func-range>
+Prerequisites:
 
-### 參數介紹
-```
-range(起始值start, 不包含結束值stop, 間隔step)
-range(0, 10, 1)
-```
-以上產生0 - 9的數字 0, 1, 2, 3 ... 9
-
-數學公式如下:
-```
-起始值start <= 要產生的數字 < 結束值stop
-```
-
-注意！不包含結束值10。
-
-使用range，要用list(range)，把range強制轉型成list，才可以顯示數字。
-```
-list(range)
-```
-
-{% highlight python linenos %}
-r = range(0, 10, 1)
-print(list(r))
-{% endhighlight %}
-```
-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-```
-
-### 參數預設值
-start 預設為0 <br>
-step 預設為1 <br>
-
-### range(10)
-產生0 - 9的數字，因為start預設為0，step預設為1，若只有代入一個參數，這個參數是stop結束值，因為只有結束值沒有預設值，是必填，注意！不包含結束值。<br>
-{% highlight python linenos %}
-r = range(10)
-print(list(r))
-{% endhighlight %}
-```
-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-```
-
-### range(1, 10)
-產生1 - 9的數字，因為start修改為1，step預設為1，若只有代入二個參數，第1個參數是start = 1，第二個參數是stop結束值，注意！不包含結束值。<br>
-{% highlight python linenos %}
-r = range(1, 10)
-print(list(r))
-{% endhighlight %}
-```
-[1, 2, 3, 4, 5, 6, 7, 8, 9]
-```
-
-### range(1, 10, 2)
-產生1, 3, 5, 7, 9的數字，不包含10。<br>
-start修改為1，step修改為2。<br>
-
-{% highlight python linenos %}
-r = range(1, 10, 2)
-print(list(r))
-{% endhighlight %}
-```
-[1, 3, 5, 7, 9]
-```
+- [range][1]
 
 ## for介紹
 for 流程如下:
@@ -302,66 +240,5 @@ else:
 for finish
 ```
 
-## list記憶體位址
-Prerequisites:
+[1]: {% link _pages/python/range.md %}
 
-- [id][1]
-- [C++ 指標陣列][2]
-
-先前在id的文章中提到，英文大小寫字母、數字0-9、底線，為了節省記憶體空間，Python都會指向相同記憶體位址。<br>
-
-Python list的記憶體位址分配跟C++、Java不一樣。<br>
-
-由以下程式碼可以看出x變數、`nums[0]`、`nums[1]`、`nums[2]`、`nums[3]`全指向同一個記憶體位址。<br>
-
-|0|1|2|3|
-|:--------:|:--------:|:--------:|:--------:|
-|4370549520|4370549520|4370549520|4370549520|
-
-{% highlight python linenos %}
-nums = [1, 1, 1, 1]
-x = 1
-print("address of nums = ", id(nums))
-print("address of nums[0] = ", id(nums[0]))
-print("address of nums[1] = ", id(nums[1]))
-print("address of nums[2] = ", id(nums[2]))
-print("address of nums[3] = ", id(nums[3]))
-print("address of x = ", id(x))
-{% endhighlight %}
-```
-address of nums =  4360423744
-address of nums[0] =  4370549520
-address of nums[1] =  4370549520
-address of nums[2] =  4370549520
-address of nums[3] =  4370549520
-address of x =  4370549520
-```
-
-用C++的觀點是，建立一個指標陣列，指標就是記憶體位址，陣列中儲存的是記憶體位址。<br>
-{% highlight c++ linenos %}
-int* array[4];
-int var1 = 1;
-array[0] = &var1;
-array[1] = &var1;
-array[2] = &var1;
-array[3] = &var1;
-{% endhighlight %}
-
-記憶體位址4370549520儲存「1」的數值。
-```
-4370549520 → 1
-```
-
-指標陣列儲存的是記憶體位址，陣列中的pointer都是1的address。
-```
- 4360423744
-[    0    ][    1    ][    2    ][    3    ]
-[ pointer ][ pointer ][ pointer ][ pointer ]
-[   &1    ][   &1    ][   &1    ][   &1    ]
-[ 4370549520 ][ 4370549520 ][ 4370549520 ][ 4370549520 ]
-```
-
-而nums則是指向指標陣列`[0]`的記憶體位址4360423744，指標陣列`[0]`儲存的內容是1的記憶體位址4370549520。<br>
-
-[1]: {% link _pages/python/id.md %}
-[2]: {% link _pages/c/array/arrayOfPointers.md %}
