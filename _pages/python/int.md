@@ -1,7 +1,7 @@
 ---
-title: 整數 浮點數
+title: 整數
 date: 2026-03-11
-keywords: Python, int, float
+keywords: Python, int
 ---
 Python的數字類型為整數與浮點數。<br>
 

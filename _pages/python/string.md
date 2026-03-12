@@ -4,7 +4,7 @@ date: 2026-03-10
 keywords: Python, string
 ---
 ## 型別為str
-使用type把string的型別輸出，輸出結果為str。<br>
+使用type()函式把string的型別輸出，輸出結果為str。<br>
 {% highlight python linenos %}
 str1 = "Hello"
 print(f"type(str1) = {type(str1)}")
@@ -25,6 +25,13 @@ str1 = Hello
 
 ### 使用單引號`''`
 Python沒有字元(C++、Java有字元)，單引號包住的是字串。<br>
+{% highlight python linenos %}
+print(type('A'))
+{% endhighlight %}
+```
+<class 'str'>
+```
+
 以下範例使用單引號\'\'<br>
 {% highlight python linenos %}
 str2 = 'Hello'
@@ -166,6 +173,269 @@ str1 = Hi, id = 4488577600
 str2 = Hi, id = 4488577600
 str3 = Hi, id = 4488577600
 str4 = Hi, id = 4488577600
+```
+## 編碼
+### ord()
+字串中每個單字是由Unicode組成，Python提供ord()可以查詢Unicode碼。<br>
+參數可以是雙單號，也可以是單引號，二者皆為字串。<br>
+{% highlight python linenos %}
+print(ord('A'))
+print(ord("A"))
+{% endhighlight %}
+```
+65
+65
+```
+
+### chr()
+透過 ASCII 或 Unicode 得到對應的字元。<br>
+{% highlight python linenos %}
+print(chr(65))
+print(chr(97))
+print(chr(48))
+{% endhighlight %}
+```
+A
+a
+0
+```
+
+### 字串比較
+字串可以比較，比較的運算子有 > < >= <= == !=
+
+會根據ord()函式一個一個字母比對大小。<br>
+{% highlight python linenos %}
+str1 = "abc"
+str2 = "ab"
+print(str1 < str2)
+{% endhighlight %}
+```
+False
+```
+
+## [索引]取出字串中的字元
+使用`[索引]`取出字串中的單字，語法:<br>
+```
+字串變數[索引]
+```
+
+{% highlight python linenos %}
+str1 = "Hello"
+print(str1[0])
+print(str1[1])
+print(str1[2])
+{% endhighlight %}
+```
+H
+e
+l
+```
+
+Python沒有字元，透過索引取出來的單字，型別仍是字串。
+{% highlight python linenos %}
+str1 = "Hello"
+print(f"str1[0] = {str1[0]} , type = {type(str1[0])}")
+{% endhighlight %}
+```
+str1[0] = H , type = <class 'str'>
+```
+
+### 無法透過索引修改字串的單字
+以下程式碼會編譯錯誤。<br>
+{% highlight python linenos %}
+str1 = "Hello"
+st1[0] = "A"
+{% endhighlight %}
+
+## 字串遍歷
+### for
+{% highlight python linenos %}
+str1 = "Hello"
+for elem in str1:
+    print(elem)
+{% endhighlight %}
+```
+H
+e
+l
+l
+o
+```
+
+### while
+{% highlight python linenos %}
+str1 = "Hello"
+index = 0
+while index < len(str1):
+    print(str1[index])
+    index += 1
+{% endhighlight %}
+
+## 負數索引
+-1為字串最後一位，-2為倒數第2位。<br>
+
+|字串   | H| e| l| l| o|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|正數索引| 0| 1| 2| 3| 4|
+|負數索引| -5| -4| -3| -2| -1|
+
+{% highlight python linenos %}
+str1 = "Hello World"
+print(str1[-1])
+print(str1[-2])
+print(str1[-3])
+{% endhighlight %}
+```
+d
+l
+r
+```
+
+## 字串相關函式
+### str.capitalize() 第一個字母大寫
+{% highlight python linenos %}
+str1 = "hello"
+print(str1.capitalize())
+{% endhighlight %}
+```
+Hello
+```
+
+### str.upper() 全部大寫
+{% highlight python linenos %}
+str1 = "hello"
+print(str1.upper())
+{% endhighlight %}
+
+### str.lower() 全部小寫
+{% highlight python linenos %}
+str1 = "hello"
+print(str1.lower())
+{% endhighlight %}
+```
+hello
+```
+
+### len()字串長度
+{% highlight python linenos %}
+str1 = "hello"
+print(len(str1))
+{% endhighlight %}
+```
+5
+```
+
+### str.count()字串出現次數
+單字出現次數 
+{% highlight python linenos %}
+str1 = "hello"
+print(str1.count("l"))
+{% endhighlight %}
+```
+2
+```
+
+字串出現次數
+{% highlight python linenos %}
+str1 = "Hello world world"
+print(str1.count("world"))
+{% endhighlight %}
+```
+2
+```
+### str1.index() 尋找字串所在索引位置
+尋找單字
+{% highlight python linenos %}
+str1 = "hello"
+print(str1.index("l"))
+{% endhighlight %}
+```
+2
+```
+
+尋找字串第一個字母所在位置。<br>
+{% highlight python linenos %}
+str1 = "Hello world world"
+print(str1.index("world"))
+{% endhighlight %}
+```
+6
+```
+### str1.replace() 取代字串
+語法
+```
+str.replace("舊文字","新文字",取代幾次)
+```
+
+如果第3個參數不寫，預取是取代所有的l。
+{% highlight python linenos %}
+str1 = "hello"
+print(str1.replace("l","A"))
+{% endhighlight %}
+```
+heAAo
+```
+
+如果第3個參數有寫，以下程式碼是取代1個l。
+{% highlight python linenos %}
+str1 = "hello"
+print(str1.replace("l","A",1))
+{% endhighlight %}
+```
+heAlo
+```
+
+取代字串。
+{% highlight python linenos %}
+str1 = "Hello world world"
+print(str1.replace("world", "Mary"))
+{% endhighlight %}
+```
+Hello Mary Mary
+```
+
+### str1.strip()去除前後字元
+注意！只會去除前後字元，以下程式碼去掉字串前的空白與後面的空白。<br>
+{% highlight python linenos %}
+str1 = "   Hello world    "
+print(str1.strip(" "))
+{% endhighlight %}
+```
+Hello world
+```
+
+以下程式碼去除字串前後的abc字串。
+{% highlight python linenos %}
+str1 = "abcHello abc worldabc"
+print(str1.strip("abc"))
+{% endhighlight %}
+```
+Hello abc world
+```
+
+### str.split()
+根據空格或逗號切割字串，傳回值為list類型
+{% highlight python linenos %}
+str1 = "Hello World"
+result = str1.split(" ")
+print(f"result = {result}, type = {type(result)}")
+{% endhighlight %}
+```
+result = ['Hello', 'World'], type = <class 'list'>
+```
+
+### str.isalpha() 是否為大小寫字母
+以下程式碼判斷若為大小寫字母，把它變為大寫。<br>
+{% highlight python linenos %}
+str1 = "hello 123"
+alpha = ""
+for elem in str1:
+    if elem.isalpha():
+        alpha += elem.upper() + ", "
+print(alpha)
+{% endhighlight %}
+```
+H, E, L, L, O, 
 ```
 
 [1]: {% link _pages/python/id.md %}
