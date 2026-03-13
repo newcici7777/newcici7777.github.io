@@ -438,5 +438,5 @@ print(alpha)
 H, E, L, L, O, 
 ```
 
-[1]: {% link _pages/python/id.md %}
+[1]: {% link _pages/python/id_interning.md %}
 

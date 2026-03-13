@@ -110,4 +110,4 @@ not False =  True
 ```
 
 
-[1]: {% link _pages/python/id.md %}
+[1]: {% link _pages/python/id_interning.md %}

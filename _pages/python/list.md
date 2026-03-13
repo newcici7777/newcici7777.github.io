@@ -282,6 +282,6 @@ print(list4)
 [1, 4, 9, 16]
 ```
 
-[1]: {% link _pages/python/id.md %}
+[1]: {% link _pages/python/id_interning.md %}
 [2]: {% link _pages/c/array/arrayOfPointers.md %}
 [3]: {% link _pages/python/for.md %}
