@@ -1,7 +1,7 @@
 ---
-title: id() 記憶體位址
+title: id() 與 駐留機制
 date: 2026-02-23
-keywords: Python, id
+keywords: Python, id, Interning
 ---
 `id(變數)`函式可以檢查記憶體位址。
 
@@ -73,7 +73,7 @@ print(id(b))
 4321834720
 ```
 
-## 數字介於-5 至 256
+## 整數介於-5 至 256
 發現執行結果記憶體位址都是相同
 ```
 >>> a = -5

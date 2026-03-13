@@ -1,5 +1,5 @@
 ---
-title: range for
+title: for
 date: 2026-02-28
 keywords: Python, range, for, list
 ---
@@ -98,7 +98,7 @@ for i in range(1, 10, 2):
 
 {% highlight python linenos %}
 data = [1, 3, 5, 7]
-print(data, type(data)
+print(data, type(data))
 {% endhighlight %}
 ```
 [1, 3, 5, 7] <class 'list'>
