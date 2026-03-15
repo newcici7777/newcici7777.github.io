@@ -230,6 +230,20 @@ print(set3)
 {'d'}
 ```
 
+{% highlight python linenos %}
+english_class = {"Mary", "Bill", "John", "Alex"}
+math_class = {"Bill", "John", "Joy", "Cindy"}
+print(f"只上英文課的人 = {english_class - math_class}")
+print(f"只上數學課的人 = {math_class - english_class}")
+print(f"二堂課都有上的人 = {math_class & english_class}")
+print(f"所有學生 = {math_class | english_class}")
+{% endhighlight %}
+```
+只上英文課的人 = {'Alex', 'Mary'}
+只上數學課的人 = {'Joy', 'Cindy'}
+二堂課都有上的人 = {'John', 'Bill'}
+所有學生 = {'John', 'Bill', 'Mary', 'Joy', 'Alex', 'Cindy'}
+```
 ## Comprehension運算式 建立set
 由於set是無順序，產生出來的set，不會按照下圖的順序產生。<br>
 
