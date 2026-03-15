@@ -65,6 +65,20 @@ tuple1[1]: 2
 tuple1[2]: 3
 ```
 
+### 讀取元素為負索引
+-1為tuple的最後一個，-2為tuple的倒數第二個，依此類推。<br>
+{% highlight python linenos %}
+tuple1 = (1, 2, 3)
+print(f"tuple1[-1]: {tuple1[-1]}")
+print(f"tuple1[-2]: {tuple1[-2]}")
+print(f"tuple1[-3]: {tuple1[-3]}")
+{% endhighlight %}
+```
+tuple1[-1]: 3
+tuple1[-2]: 2
+tuple1[-3]: 1
+```
+
 ### 讀取元素為list
 {% highlight python linenos %}
 tuple1 = (1, 2, ["H", 'E', "LL"])
@@ -171,3 +185,85 @@ del tuple1[0]
 TypeError: 'tuple' object doesn't support item deletion
 ```
 
+## 元素為list
+若元素為list、dict、set，就可以新增/修改/刪除裡面的內容。<br>
+
+tuple的元素為list，可以修改list\[0\]的內容。<br>
+{% highlight python linenos %}
+tuple1 = (1,["H","E"])
+tuple1[1][0] = "A"
+print(tuple1)
+{% endhighlight %}
+
+但如果要把list\[0\]指向其它list的記憶體位址，執行時會產生錯誤，因為tuple的元素是無法修改。<br>
+
+{% highlight python linenos %}
+tuple1 = (1,["H","E"])
+tuple1[1] = ["Hello", "World"]
+print(tuple1)
+{% endhighlight %}
+```
+    tuple1[1] = ["Hello", "World"]
+    ~~~~~~^^^
+TypeError: 'tuple' object does not support item assignment
+```
+
+刪除list的第0個索引。<br>
+{% highlight python linenos %}
+tuple1 = (1,["H","E"])
+del tuple1[1][0]
+print(tuple1)
+{% endhighlight %}
+```
+(1, ['E'])
+```
+
+新增list的元素。<br>
+{% highlight python linenos %}
+tuple1 = (1,["H","E"])
+tuple1[1].append("J")
+print(tuple1)
+{% endhighlight %}
+```
+(1, ['H', 'E', 'J'])
+```
+
+## tuple常用操作函式
+
+|函式名|說明|
+|:-----:|:--------------|
+|len(tuple)|元素數量|
+|max(tuple)|元素最大值|
+|min(tuple)|元素最小值|
+|tuple.count(obj)|計算obj出現在tuple的次數|
+|tuple.index(obj)|尋找obj在tuple中的索引位置|
+|obj in tuple|判斷obj是否在tuple中|
+
+{% highlight python linenos %}
+tuple1 = (1, 2, 3, 1, 2)
+# 元素數量
+print(f"len = {len(tuple1)}")
+# 元素最大值
+print(f"max = {max(tuple1)}")
+# 元素最小值
+print(f"min = {min(tuple1)}")
+# 計算obj出現在tuple的次數
+print(f"count = {tuple1.count(1)}")
+# 尋找obj在tuple中的索引位置
+print(f"index = {tuple1.index(3)}")
+{% endhighlight %}
+```
+len = 5
+max = 3
+min = 1
+count = 2
+index = 2
+```
+
+{% highlight python linenos %}
+tuple1 = (1, 2, 3, 1, 2)
+print(3 in tuple1)
+{% endhighlight %}
+```
+True
+```
