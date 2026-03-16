@@ -308,7 +308,7 @@ print(dict1)
 
 步驟如下:
 1. 取出`list1[0]` 與 `list2[0]`的索引為0的元素。
-2. `list1[0]`指派給k `list[1]`指派給v
+2. `list1[0]`指派給k `list2[0]`指派給v
 3. k再指派給k v再指派給v
 4. 透過k、v，產生dict。
 
@@ -321,6 +321,98 @@ print(dict1)
 {% endhighlight %}
 ```
 {'s01': 'Mary', 's02': 'Bill'}
+```
+
+## dict 包 dict
+### 讀取
+使用像二個方括號`dict[key][key]`的方式，讀取dict包dict。<br>
+{% highlight python linenos %}
+dict1 = {"s01": {"name": "Mary", "age": "20"},
+         "s02": {"name": "John", "age": "21"},
+         "s03": {"name": "Bob", "age": "22"}}
+print(f"s01 name: {dict1['s01']['name']}, "
+      f"age: {dict1['s01']['age']}")
+print(f"s02 name: {dict1['s02']['name']}, "
+      f"age: {dict1['s02']['age']}")
+print(f"s03 name: {dict1['s03']['name']}, "
+      f"age: {dict1['s03']['age']}")
+{% endhighlight %}
+```
+s01 name: Mary, age: 20
+s02 name: John, age: 21
+s03 name: Bob, age: 22
+```
+
+### 修改
+修改使用二個方括號`dict[key][key] = 修改值`。
+{% highlight python linenos %}
+dict1 = {"s01": {"name": "Mary", "age": "20"},
+         "s02": {"name": "John", "age": "21"},
+         "s03": {"name": "Bob", "age": "22"}}
+dict1["s01"]["age"] = "23"
+dict1["s02"]["age"] = "24"
+print(f"s01 name: {dict1['s01']['name']}, "
+      f"age: {dict1['s01']['age']}")
+print(f"s02 name: {dict1['s02']['name']}, "
+      f"age: {dict1['s02']['age']}")
+{% endhighlight %}
+```
+s01 name: Mary, age: 23
+s02 name: John, age: 24
+```
+
+### 新增
+若不是dict包dict，可以像下面一樣新增。<br>
+{% highlight python linenos %}
+dict1 = {"s01": "mary"}
+dict1["s02"] = "bob"
+print(dict1)
+{% endhighlight %}
+```
+{'s01': 'mary', 's02': 'bob'}
+```
+
+但若是dict包dict，以下執行會有KeyError錯誤。<br>
+{% highlight python linenos %}
+dict1 = {"s01": {"name": "Mary", "age": "20"},
+         "s02": {"name": "John", "age": "21"},
+         "s03": {"name": "Bob", "age": "22"}}
+dict1["s04"]["name"] = "Alex"
+dict1["s04"]["age"] = "55"
+print(f"s04 = {dict1["s04"]}")
+{% endhighlight %}
+```
+    dict1["s04"]["name"] = "Alex"
+    ~~~~~^^^^^^^
+KeyError: 's04'
+```
+
+### 新增 修改 指派新的dict
+以下的語法，一個是修改，一個是新增。
+{% highlight python linenos %}
+dict1 = {"s01": {"name": "Mary", "age": "20"},
+         "s02": {"name": "John", "age": "21"}}
+# 修改
+dict1["s01"] = {"name": "Alex", "age": "21"}
+print(f"s01 = {dict1["s01"]}")
+# 新增
+dict1["s03"] = {"name": "Joy", "age": "25"}
+print(f"s03 = {dict1["s03"]}")
+{% endhighlight %}
+```
+s01 = {'name': 'Alex', 'age': '21'}
+s03 = {'name': 'Joy', 'age': '25'}
+```
+### 刪除
+刪除使用`del dict[key][key]`
+{% highlight python linenos %}
+dict1 = {"s01": {"name": "Mary", "age": "20"},
+         "s02": {"name": "John", "age": "21"}}
+del dict1["s02"]["age"]
+print(dict1)
+{% endhighlight %}
+```
+{'s01': {'name': 'Mary', 'age': '20'}, 's02': {'name': 'John'}}
 ```
 
 [1]: {% link _pages/python/string.md %}

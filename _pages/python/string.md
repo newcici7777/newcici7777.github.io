@@ -113,6 +113,23 @@ print(f"str1 = {str1}")
 str1 = HelloA
 ```
 
+## * 字串重覆次數
+語法
+```
+字串 * 10
+```
+相同的字串重覆10次並連在一起。<br>
+以下程式碼，Hi重覆5次並連在一起。<br>
+`-`重覆5次並連在一起。<br>
+{% highlight python linenos %}
+print("Hi" * 5)
+print("-" * 5)
+{% endhighlight %}
+```
+HiHiHiHiHi
+-----
+```
+
 ## r與跳脫字元
 `\n`與`\t`都是跳脫字元。<br>
 在雙引號或單引號最前面加上r，字串中有`\n`就不會斷行，反而直接輸出`\n`。<br>

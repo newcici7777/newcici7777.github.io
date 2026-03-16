@@ -33,6 +33,21 @@ print(f"x = {x}")
 ```
 x = 10
 ```
+
+## 多行格式化
+前面都是f開頭，字串尾部為斷行，後面不用 \+ 連結二個字串。
+{% highlight python linenos %}
+name = "Mary"
+age = 20
+score = 98.5
+print(f"name: {name}, "
+      f"age: {age}, "
+      f"score: {score}")
+{% endhighlight %}
+```
+name: Mary, age: 20, score: 98.5
+```
+
 ## print會換行
 {% highlight python linenos %}
 print("Hello")
