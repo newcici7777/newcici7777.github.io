@@ -280,6 +280,17 @@ print(list4)
 [1, 4, 9, 16]
 ```
 
+## list.reverse() list翻轉
+使用list.reverse()會把原list的元素全部翻轉。<br>
+{% highlight python linenos %}
+list1 = ["Tom", "Joy", "Jack", "Mary", "Alex", "Alice"]
+list1.reverse()
+print(f"list1 = {list1} ")
+{% endhighlight %}
+```
+list1 = ['Alice', 'Alex', 'Mary', 'Jack', 'Joy', 'Tom'] 
+```
+
 [1]: {% link _pages/python/id_interning.md %}
 [2]: {% link _pages/c/array/arrayOfPointers.md %}
 [3]: {% link _pages/python/for.md %}

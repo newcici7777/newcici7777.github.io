@@ -52,6 +52,15 @@ print("World")
 Hello World
 ```
 
+## 分隔線
+輸出20個分隔線。<br>
+{% highlight python linenos %}
+print("-" * 20)
+{% endhighlight %}
+```
+--------------------
+```
+
 ## 空一行
 語法
 ```
@@ -70,3 +79,48 @@ Hello
 
 World
 ```
+
+## %s %d %.1f
+語法:
+```
+print(" %s, %d, %.f" % (參數1, 參數2, 參數3))
+```
+- %s 字串
+- %d 整數
+- %.f 浮點數，可以為.1f 小數點1位， .2f小數點2位 .f 無小數點
+
+{% highlight python linenos %}
+name = "Mary"
+age = 20
+score = 90.5
+print("name = %s , age = %d , score = %.2f" % (name, age, score))
+print("name = %s , age = %d , score = %.f" % (name, age, score))
+{% endhighlight %}
+```
+name = Mary , age = 20 , score = 90.50
+name = Mary , age = 20 , score = 90
+```
+
+## \{\} format
+{% highlight python linenos %}
+name = "Mary"
+age = 20
+score = 90.567
+print("name = {} , age = {} , score = {}".format(name, age, score))
+{% endhighlight %}
+```
+name = Mary , age = 20 , score = 90.567
+```
+
+使用`{0}` `{1}` `{2}`，告訴這個字串，0是對映第0個參數，1是對映第2個參數，2是對映第3個參數。<br>
+{% highlight python linenos %}
+name = "Mary"
+age = 20
+score = 90.567
+print("name = {2} , age = {1} , score = {0}".format(score, age, name))
+{% endhighlight %}
+```
+name = Mary , age = 20 , score = 90.567
+```
+
+
