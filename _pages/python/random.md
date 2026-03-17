@@ -55,7 +55,7 @@ print(n)
 ```
 
 ## choice
-隨機傳回其中的元素。<br>
+從list中隨機傳回其中的元素。<br>
 {% highlight python linenos %}
 print(random.choice(['Hello', 'Marry', 'Happy']))
 {% endhighlight %}

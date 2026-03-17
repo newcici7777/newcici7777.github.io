@@ -1,7 +1,7 @@
 ---
 title: import
 date: 2026-03-10
-keywords: Python, function import
+keywords: Python, import
 ---
 模組就是寫一個py檔案，把許多函式放在裡面，這個py檔案就是模組。
 
@@ -101,7 +101,7 @@ from random import choice as mychoice
 print(mychoice(['Hello', 'Marry', 'Happy']))
 {% endhighlight %}
 
-## __name__
+## `__name__`
 test2.py 輸出__name__
 {% highlight python linenos %}
 def add(x, y):
@@ -169,7 +169,7 @@ if __name__ == '__main__':
     print(add(100, 50))
 {% endhighlight %}
 
-## __all__
+## `__all__`
 __all__ 只能用在` from 模組 import 函式`
 
 設定要開放那些函式給其它人呼叫。<br>
@@ -212,7 +212,7 @@ print(test2.minus(5,6))
 ```
 
 ## ctrl + b 查看模組所有函式
-滑鼠移到下方「math」，windows按 ctrl + b , mac 按 cmd + b，就會進入模組文件 
+滑鼠游標移到「math」之間，windows按 ctrl + b , mac 按 cmd + b，就會進入模組文件 
 {% highlight python linenos %}
 import math
 {% endhighlight %}
@@ -220,3 +220,14 @@ import math
 點擊下圖Structure ，就會展示 module 所有函式。<br>
 ![img]({{site.imgurl}}/python/module1.png)<br>
 ![img]({{site.imgurl}}/python/module2.png)<br>
+
+## alt + enter 導入不知道的模組
+不知道fabs的函式是那個 module，滑鼠游標移到「fabs」之間，使用alt + enter，就會列出所有選擇，第一種選擇是import  ，第二種選擇是安裝模組(預設最新版本)並import模組。<br>
+![img]({{site.imgurl}}/python/module3.png)
+
+如果選擇第一種「import this name」，會有以下二種選擇，第一種是「import 模組」，第二種是「from 模組 import 函式」，會自動產生，不用自己輸入。<br>
+![img]({{site.imgurl}}/python/module4.png)<br>
+
+## shift + alt + enter 導入模組
+shift + alt + enter，會有以下二種選擇，第一種是「import 模組」，第二種是「from 模組 import 函式」，會自動產生，不用自己輸入。<br>
+![img]({{site.imgurl}}/python/module4.png)<br>
