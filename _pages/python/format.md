@@ -1,9 +1,11 @@
 ---
-title: 程式碼格式 與 資源
+title: 程式碼格式 與 教學文件
 date: 2026-02-26
 keywords: Python, Python code format
 ---
 ## 線上文件
+<https://docs.python.org/zh-tw/3.12/tutorial/index.html>
+
 <https://docs.python.org/3/>
 
 語系可選擇繁點中文，選擇「函式庫參考手冊」→「內建函式」，可查詢函式庫的使用方式。<br>

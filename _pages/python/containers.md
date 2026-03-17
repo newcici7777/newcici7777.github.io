@@ -1,5 +1,5 @@
 ---
-title: 容器
+title: 容器比較
 date: 2026-03-16
 keywords: Python, containers
 ---
@@ -57,3 +57,68 @@ res: {'E', 'H'} , type = <class 'str'>
 ```
 
 ### 其它容器轉list
+{% highlight python linenos %}
+str1 = "Hello"
+tuple1 = ("Mary", "Bill")
+set1 = {"Mary", "Bill"}
+dict1 = {"name": "Mary", "age": 25}
+print(f"str1 convert list = {list(str1)}")
+print(f"tuple1 convert list = {list(tuple1)}")
+print(f"set1 convert list = {list(set1)}")
+print(f"dict1 convert list = {list(dict1)}")
+{% endhighlight %}
+```
+str1 convert list = ['H', 'e', 'l', 'l', 'o']
+tuple1 convert list = ['Mary', 'Bill']
+set1 convert list = ['Mary', 'Bill']
+dict1 convert list = ['name', 'age']
+```
+
+### 其它容器轉tuple
+{% highlight python linenos %}
+str1 = "Hello"
+list1 = [1,2,3,4,5]
+tuple1 = ("Mary", "Bill")
+set1 = {"Mary", "Bill"}
+dict1 = {"name": "Mary", "age": 25}
+print(f"str1 convert tuple = {tuple(str1)}")
+print(f"list1 convert tuple = {tuple(list1)}")
+print(f"set1 convert tuple = {tuple(set1)}")
+print(f"dict1 convert tuple = {tuple(dict1)}")
+{% endhighlight %}
+```
+str1 convert tuple = ('H', 'e', 'l', 'l', 'o')
+list1 convert tuple = (1, 2, 3, 4, 5)
+set1 convert tuple = ('Mary', 'Bill')
+dict1 convert tuple = ('name', 'age')
+```
+
+### 其它容器轉set
+{% highlight python linenos %}
+str1 = "Hello"
+list1 = [1,2,3,4,5]
+tuple1 = ("Mary", "Bill")
+set1 = {"Mary", "Bill"}
+dict1 = {"name": "Mary", "age": 25}
+print(f"str1 convert set = {set(str1)}")
+print(f"list1 convert set = {set(list1)}")
+print(f"tuple1 convert set = {set(tuple1)}")
+print(f"dict1 convert set = {set(dict1)}")
+{% endhighlight %}
+```
+str1 convert set = {'e', 'l', 'o', 'H'}
+list1 convert set = {1, 2, 3, 4, 5}
+tuple1 convert set = {'Mary', 'Bill'}
+dict1 convert set = {'name', 'age'}
+```
+
+### 說明文件
+[list](https://docs.python.org/zh-cn/3.12/library/stdtypes.html#list)
+
+[tuple](https://docs.python.org/zh-cn/3.12/library/stdtypes.html#tuple)
+
+[string](https://docs.python.org/zh-cn/3.12/library/stdtypes.html#string-methods)
+
+[set](https://docs.python.org/zh-cn/3.12/library/stdtypes.html#set)
+
+[dict](https://docs.python.org/zh-cn/3.12/library/stdtypes.html#dict)

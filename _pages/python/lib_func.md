@@ -3,6 +3,8 @@ title: 內建函式
 date: 2026-03-13
 keywords: Python, round, abs
 ---
+內建函式就是呼叫函式時，不需要import 其它模組。<br>
+
 ## round
 會自動四捨五入到指定位數。<br>
 

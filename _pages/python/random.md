@@ -53,3 +53,12 @@ print(n)
 2
 2
 ```
+
+## choice
+隨機傳回其中的元素。<br>
+{% highlight python linenos %}
+print(random.choice(['Hello', 'Marry', 'Happy']))
+{% endhighlight %}
+```
+Happy
+```
