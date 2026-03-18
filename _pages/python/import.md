@@ -102,14 +102,14 @@ print(mychoice(['Hello', 'Marry', 'Happy']))
 {% endhighlight %}
 
 ## `__name__`
-test2.py 輸出__name__
+test2.py 輸出`__name__`
 {% highlight python linenos %}
 def add(x, y):
     return x + y
 print("test2.py :" + __name__)
 {% endhighlight %}
 
-test1.py 輸出__name__
+test1.py 輸出`__name__`
 {% highlight python linenos %}
 import test2
 
@@ -125,10 +125,10 @@ test1.py :__main__
 ```
 
 由上面的結果可以發現，test1.py 呼叫 test2模組中的 add() 函式。<br>
-test1.py 是呼叫方， __name__ 輸出為 __main__ 。<br>
-test2.py 是被呼叫方， __name__ 輸出為 test2 。<br>
+test1.py 是呼叫方， `__name__` 輸出為`__main__` 。<br>
+test2.py 是被呼叫方， `__name__` 輸出為 test2 。<br>
 
-由此可知，呼叫函式的那一方，輸出的都是 __main__ 代表它是「主要」函式。<br>
+由此可知，呼叫函式的那一方，輸出的都是`__main__` 代表它是「主要」函式。<br>
 
 ### 測試模組
 如果開發test2模組時，在test2模組呼叫add()函式，但忘記註解。<br>
@@ -157,7 +157,7 @@ print(test2.add(5,6))
 
 如何讓主函式呼叫模組時，測試用的程式碼不被呼叫呢？但模組自己測試的時候又可以呼叫。<br>
 
-使用 __name__ 可以分辦執行函式的人是誰，若執行函式的人是自己， __name__ 就會是main，如果是作為模組函式執行， __name__ 就會是模組名test2。<br>
+使用 `__name__` 可以分辦執行函式的人是誰，若執行函式的人是自己， `__name__` 就會是main，如果是作為模組函式執行， `__name__` 就會是模組名test2。<br>
 
 test2.py
 {% highlight python linenos %}
@@ -170,11 +170,11 @@ if __name__ == '__main__':
 {% endhighlight %}
 
 ## `__all__`
-__all__ 只能用在` from 模組 import 函式`
+`__all__` 只能用在` from 模組 import 函式`
 
 設定要開放那些函式給其它人呼叫。<br>
 
-test2.py 有add()、minus()、div()、mul()，但利用 __all__，只開放add()函式供其它人使用。<br>
+test2.py 有add()、minus()、div()、mul()，但利用 `__all__`，只開放add()函式供其它人使用。<br>
 {% highlight python linenos %}
 __all__ = ['add']
 def add(x, y):

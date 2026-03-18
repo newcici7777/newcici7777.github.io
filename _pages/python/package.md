@@ -9,7 +9,7 @@ keywords: Python, package
 自己取package名字。<br>
 ![img]({{site.imgurl}}/python/package2.png)<br>
 
-會產生一個 __init__.py 檔案。<br>
+會產生一個 `__init__.py` 檔案。<br>
 ![img]({{site.imgurl}}/python/package3.png)<br>
 
 在我自建的package下，建立一個module1.py檔案，內容如下:<br>
@@ -102,7 +102,7 @@ print(add(1, 2))
 {% endhighlight %}
 
 ## from 套件 import *
-在 __init__.py 中，增加 __all__ 可以限制那些模組可以使用。<br>
+在 `__init__.py` 中，增加 `__all__` 可以限制那些模組可以使用。<br>
 {% highlight python linenos %}
 __all__ = ["module1", "module2"]
 {% endhighlight %}
@@ -119,8 +119,8 @@ hi
 15
 ```
 
-若模組沒加到 __all__ 中，使用星號 * 時，無法使用。<br>
-__init__.py __all__ 去除 module1 <br>
+若模組沒加到 `__all__` 中，使用星號 * 時，無法使用。<br>
+`__init__.py` `__all__` 去除 module1 <br>
 {% highlight python linenos %}
 __all__ = ["module2"]
 {% endhighlight %}
@@ -134,9 +134,9 @@ print(module1.add(5, 10))
 {% endhighlight %}
 
 以上僅對`from 套件 import *` 有效。<br>
-`from 套件 import 模組`，就不會受到 __init__.py __all__ 影嚮。<br>
+`from 套件 import 模組`，就不會受到 `__init__.py` `__all__` 影嚮。<br>
 
-以下程式碼，使用`from my_package import module1`，即便 __all__ 只有 module2 可以對外呼叫，但仍是可以使用 module1。
+以下程式碼，使用`from my_package import module1`，即便 `__all__` 只有 module2 可以對外呼叫，但仍是可以使用 module1。
 
 test1.py
 {% highlight python linenos %}
