@@ -3,8 +3,64 @@ title: debug 中斷點
 date: 2026-03-17
 keywords: Python, debug, break point
 ---
+## debug 介紹
+![img]({{site.imgurl}}/python/debug.png)<br>
+- Step over F8 執行目前行數
+- Step into F7 進入函式
+- Step out Shift `+` F8 離開函式
+- Resume 跳到下一個中斷點
+
+Console的按鈕 與 觀察變數的按鈕。
+ ![img]({{site.imgurl}}/python/console_var.png)<br>
+
+## for 迴圈debug
+程式碼
+{% highlight python linenos %}
+for i in range(1,3):
+    print(i)
+print("End")
+{% endhighlight %}
+
+設中斷點在`for i in range(1,3):`，執行Debug，點擊鍵盤 F8 (Step Over)，執行此行。<br>
+![img]({{site.imgurl}}/python/for_debug1.png)<br>
+
+移到`print(i)`，點擊鍵盤 F8 (Step Over)，執行此行。<br>
+
+1. i變數目前為1
+2. Threads&Variables 視窗按鈕
+3. 變數目前的值 `i = 1`。
+4. Console有黃色小圈圈代表，Console有輸出。
+
+![img]({{site.imgurl}}/python/for_debug2.png)<br>
+
+1. 按Console的按鈕
+2. 發現Console輸出1
+3. i變數目前仍為1。
+
+移到`for i in range(1,3):`，點擊鍵盤 F8 (Step Over)，執行此行。<br>
+![img]({{site.imgurl}}/python/for_debug3.png)<br>
+
+移到`print(i)`，此時i變為為2，點擊鍵盤 F8 (Step Over)，執行此行。<br>
+![img]({{site.imgurl}}/python/for_debug4.png)<br>
+
+1. 按Console的按鈕
+2. 發現Console輸出2
+3. i變數目前仍為2。
+
+移到`for i in range(1,3):`，點擊鍵盤 F8 (Step Over)，執行此行。<br>
+![img]({{site.imgurl}}/python/for_debug5.png)<br>
+
+移到`print("End")`，點擊鍵盤 F8 (Step Over)，執行此行。<br>
+![img]({{site.imgurl}}/python/for_debug6.png)<br>
+
+1. Debug正方形已經變成灰色。
+2. 按Console的按鈕
+3. 輸出End。
+
+![img]({{site.imgurl}}/python/for_debug7.png)<br>
+
 ## Step over 執行一行
-Step Over 的快速鍵是 F8，執行一行。<br>
+Step Over 的快速鍵是 F8，執行目前行數。<br>
 
 以下程式碼，主程式會呼叫f1()函式，f1函式會呼叫f2()函式。
 {% highlight python linenos %}
