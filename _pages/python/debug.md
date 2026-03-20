@@ -4,15 +4,15 @@ date: 2026-03-17
 keywords: Python, debug, break point
 ---
 ## debug 介紹
-執行debug:<br>
-滑鼠右鍵，選`Debug '檔名'`<br>
+執行debug:滑鼠右鍵，選`Debug '檔名'`<br>
 ![img]({{site.imgurl}}/python/debug2.png)<br>
 
+Debug Tool介紹:<br>
 ![img]({{site.imgurl}}/python/debug.png)<br>
 - Step over F8 執行目前行數
 - Step into F7 進入函式
 - Step out `Shift+F8` 離開函式
-- Resume 跳到下一個中斷點
+- Resume F9 跳到下一個中斷點
 
 Console的按鈕 與 觀察變數的按鈕。
  ![img]({{site.imgurl}}/python/console_var.png)<br>
@@ -44,7 +44,7 @@ print("End")
 移到`for i in range(1,3):`，點擊鍵盤 F8 (Step Over)，執行此行。<br>
 ![img]({{site.imgurl}}/python/for_debug3.png)<br>
 
-移到`print(i)`，此時i變為為2，點擊鍵盤 F8 (Step Over)，執行此行。<br>
+移到`print(i)`，此時i變數為2，點擊鍵盤 F8 (Step Over)，執行此行。<br>
 ![img]({{site.imgurl}}/python/for_debug4.png)<br>
 
 1. 按Console的按鈕
@@ -57,13 +57,13 @@ print("End")
 移到`print("End")`，點擊鍵盤 F8 (Step Over)，執行此行。<br>
 ![img]({{site.imgurl}}/python/for_debug6.png)<br>
 
-1. Debug正方形已經變成灰色。
+1. Debug正方形已經變成灰色，代表程式執行完畢，Debug mode結束。
 2. 按Console的按鈕
 3. 輸出End。
 
 ![img]({{site.imgurl}}/python/for_debug7.png)<br>
 
-## Step over 執行一行
+## Step over 執行目前所在的行數
 Step Over 的快速鍵是 F8，執行目前行數。<br>
 
 以下程式碼，主程式會呼叫f1()函式，f1函式會呼叫f2()函式。
