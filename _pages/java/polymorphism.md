@@ -173,6 +173,43 @@ public class Test2 {
   }
 }
 {% endhighlight %}
+```
+10
+```
+
+如果Dog有覆寫speak()方法，執行時使用Dog類別的speak()方法與Dog類別的成員變數。<br>
+{% highlight java linenos %}
+class Animal {
+  int i = 10;  // 父類欄位
+  void speak() { 
+    System.out.println(i); 
+  }
+}
+
+class Dog extends Animal {
+  int i = 5;  // 子類同名欄位
+  void speak() { 
+    System.out.println(i); 
+  }  
+}
+{% endhighlight %}
+
+{% highlight java linenos %}
+public class Test2 {
+  public static void main(String[] args) {
+    Animal myPet = new Dog();  // 多型
+    myPet.speak();  // 輸出：5
+  }
+}
+{% endhighlight %}
+```
+5
+```
+
+結論:<br>
+執行誰的方法，就是使用誰的成員變數。<br>
+執行父類別的方法，使用父類別的成員變數。<br>
+執行子類別的方法，使用子類別的成員變數。<br>
 
 ## 覆寫之後的vtable
 若是Dog類別有覆寫speak()方法，vtable裝的是什麼？

@@ -73,6 +73,84 @@ Child func1()
 Parent func2()
 ```
 
+## 多型與成員變數
+以下程式碼，父類別有成員變數name，子類別也有同名成員變數name。<br>
+在主函式 main() 中，ptr的類型為Parent指標，但實際上它是指向類型為Child記憶體位址。<br>
+以下執行結果，可以看出ptr是Child記憶體位址。<b>
+Parent中的this也確實是Child記憶體位址，證明它們二個是相同的。<br>
+但是，為什麼name是用Parent的name變數，而不是Child的name變數？<br>
+因為在C++中，若是用Parent的成員函式()，使用的是Parent的成員變數。<br>
+{% highlight c++ linenos %}
+#include <iostream>
+#include "main.h"
+using namespace std;
+class Parent {
+ public:
+  string name = "Parent";
+  virtual void func1() {
+    cout << "this address = " << this << endl;
+    cout << "name = " << this->name << endl;
+  }
+};
+class Child:public Parent {
+ public:
+  string name = "Child";
+
+};
+int main() {
+  Parent* ptr = new Child;
+  cout << "ptr address = " << ptr << endl;
+  ptr->func1();
+  return 0;
+}
+{% endhighlight %}
+```
+ptr address = 0x600001700780
+this address = 0x600001700780
+name = Parent
+```
+
+以下程式碼，Child有覆寫父類別func1()成員函式。<br>
+執行的時候，就會執行Child的func1()的成員函式，也就會使用Child的成員變數。<br>
+輸出的結果就會是Child。<br>
+{% highlight c++ linenos %}
+#include <iostream>
+#include "main.h"
+using namespace std;
+class Parent {
+ public:
+  string name = "Parent";
+  virtual void func1() {
+    cout << "this address = " << this << endl;
+    cout << "name = " << this->name << endl;
+  }
+};
+class Child:public Parent {
+ public:
+  string name = "Child";
+  void func1() {
+    cout << "this address = " << this << endl;
+    cout << "name = " << this->name << endl;
+  }
+};
+int main() {
+  Parent* ptr = new Child;
+  cout << "ptr address = " << ptr << endl;
+  ptr->func1();
+  return 0;
+}
+{% endhighlight %}
+```
+ptr address = 0x600001708180
+this address = 0x600001708180
+name = Child
+```
+
+結論:<br>
+執行誰的方法，就是使用誰的成員變數。<br>
+執行父類別的方法，使用父類別的成員變數。<br>
+執行子類別的方法，使用子類別的成員變數。<br>
+
 ## 使用父類別的函式
 父類別指標指向子類別，子類別有覆寫父類別virtual函式，但仍要使用父類別的函式，則使用父類別::函式()。
 {% highlight c++ linenos %}
