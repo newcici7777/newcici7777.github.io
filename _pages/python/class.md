@@ -241,3 +241,169 @@ print(f"name = {cat1.name}")
 ```
 name = 小黃
 ```
+
+## self
+是誰呼叫方法，那個「誰」，就是self。<br>
+以下程式碼，cat1 呼叫 getInfo() 方法，self就是cat1。<br>
+id(cat1) 的記憶體位址與 id(self)的記憶體位址一模一樣。<br>
+{% highlight python linenos %}
+class Cat:
+    name = None
+    age = None
+
+    def getInfo(self):
+        print("getInfo: id =", id(self))
+
+
+cat1 = Cat()
+print("cat1 id = ", id(cat1))
+cat1.getInfo()
+
+cat2 = Cat()
+print("cat2 id = ", id(cat2))
+cat2.getInfo()
+{% endhighlight %}
+```
+cat1 id =  4501008608
+getInfo: id = 4501008608
+cat2 id =  4501008656
+getInfo: id = 4501008656
+```
+
+### 呼叫成員方法與成員變數
+在類別內呼叫成員變數與成員方法:。<br>
+```
+self.成員變數
+self.成員方法()
+```
+
+{% highlight python linenos %}
+class Cat:
+    name = None
+    age = None
+
+    def getInfo(self):
+        print(f" {self.eat()} age = {self.age}")
+
+    def eat(self):
+        return f"{self.name} eat"
+
+
+cat1 = Cat()
+cat1.name = "小白"
+cat1.age = 5
+cat1.getInfo()
+{% endhighlight %}
+```
+ 小白 eat age = 5
+```
+
+若前面沒有self，會編譯錯誤。<br>
+{% highlight python linenos %}
+class Cat:
+    name = None
+    age = None
+
+    def getInfo(self):
+        # eat() age 前面都沒有self
+        print(f" {eat()} age = {age}")
+
+    def eat(self):
+        return f"{self.name} eat"
+{% endhighlight %}
+
+### compare_to
+可以根據self的特性，寫一個compare_to的方法。<br>
+self就是呼叫compare_to()方法的物件。<br>
+{% highlight python linenos %}
+class Cat:
+    name = None
+    age = None
+
+    def compare_to(self, other):
+        return self.name == other.name and self.age == other.age
+
+cat1 = Cat()
+cat1.name = "小白"
+cat1.age = 5
+
+cat2 = Cat()
+cat2.name = "小黑"
+cat2.age = 5
+
+print(cat1.compare_to(cat2))
+{% endhighlight %}
+```
+False
+```
+
+### 類別中的區域變數與全域變數
+方法的參數以及方法宣告的變數，都是區域變數，區域變數有效範圍只有在方法之中，離開方法就無效。<br>
+成員變數就是全域變數，在整個類別的所有方法都可以訪問。<br>
+
+{% highlight python linenos %}
+class Cat:
+    # name 與 age 是全域變數，所有方法都可以訪問
+    name = None
+    age = None
+
+    # param1, param2 為區域變數，只限定在func1()方法可以使用
+    def func1(self, param1, param2):
+        # 可以使用name age
+        print(param1, param2, self.name, self.age)
+
+    def func2(self):
+        # 無法讀取param1、param2
+        print(param1, param2)
+        # 可以使用name age
+        print(self.name, self.age)
+{% endhighlight %}
+
+在類別中，使用self.成員變數是全域變數，沒有self，就是區域變數。<br>
+
+## 靜態方法
+靜態方法宣告:
+```
+    @staticmethod
+    def 靜態方法名(參數1, 參數2, 參數3):
+        程式碼
+```
+- 靜態方法上面加上`@staticmethod`
+- 靜態方法的第一個參數不用有self
+- 參數可以有0至多個。
+
+呼叫方式:
+```
+類別名.靜態方法()
+物件.靜態方法()
+```
+
+{% highlight python linenos %}
+class Cat:
+    name = None
+    age = None
+    @staticmethod
+    def hi(param1,param2):
+        print(param1,param2)
+
+Cat.hi("Hello","World")
+cat1 = Cat()
+cat1.hi("Hi","Thank")
+{% endhighlight %}
+```
+Hello World
+Hi Thank
+```
+
+靜態方法無法使用成員變數，以下程式碼編譯錯誤。<br>
+{% highlight python linenos %}
+class Cat:
+    name = None
+    age = None
+    @staticmethod
+    def hi():
+        # 無法使用self.name成員變數
+        print(self.name)
+{% endhighlight %}
+
+
