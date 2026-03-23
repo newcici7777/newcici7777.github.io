@@ -27,11 +27,10 @@ Student(){
 {% highlight c++ linenos %}
 class Student {
 public:
-  char m_name[50];
+  const char* name_;
 public:
   Student() {
     cout << "沒參數建構子" << endl;
-    memset(m_name,0,sizeof(m_name));
   }
 };
 int main() {
@@ -45,36 +44,33 @@ int main() {
 ### 建構子參數
 
 {% highlight c++ linenos %}
+#include <iostream>
+#include "main.h"
+using namespace std;
 class Student {
 public:
-  char m_name[50];
-  int m_age = 20;
+  const char* name_;
   Student() {
     cout << "沒參數建構子" << endl;
-    memset(m_name,0,sizeof(m_name));
-    m_age = 0;
   }
-  Student(const char* name, const int age) {
+  Student(const char* name) {
     cout << "有參數建構子" << endl;
-    memset(m_name,0,sizeof(m_name));
-    strcpy(m_name, name);
-    m_age = age;
+    this->name_ = name;
   }
   //宣告成員函式
   void print() {
-    cout << "name: " << m_name << endl;
+    cout << "name: " << name_ << endl;
   }
 };
 int main() {
   Student student;
-  Student student1("Bill", 20);
+  Student student1("Bill");
   student1.print();
   return 0;
 }
 {% endhighlight %}
 
 ```
-沒參數建構子
 有參數建構子
 name: Bill
 ```
