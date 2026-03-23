@@ -3,20 +3,13 @@ title: 建構子初始化列表
 date: 2024-10-18
 keywords: c++, Initialization list of constructors)
 ---
-
 ## 語法
-
-建構子初始化列表(Initialization list of constructors)，因為不知道繁體中文的名稱，先以大陸的名稱來替代。
-
-- 成員變數已經在初始化列表，不應該再建構子中再設值
+建構子初始化列表(Initialization list of constructors)
 
 語法如下
-
 ```
 類別名(資料型態 參數名1, 資料型態 參數名2, ...):成員變數1(參數名1),成員變數2(參數名2), ... {}
 ```
-
-下方有參數的建構子，使用初始化列表，初使化成員變數。
 
 ## 程式碼
 {% highlight c++ linenos %}
@@ -52,10 +45,37 @@ age: 18
 解構子
 ```
 
+## 建構子初始化
+使用以下方式初始化。
+```
+建構子() : 成員變數名(初始值), 成員變數名(初始值) {}
+Student() : name_(nullptr), id_(0) {}
+```
+
+程式碼:
+{% highlight c++ linenos %}
+#include <iostream>
+#include <string>
+using namespace std;
+class MyClass {
+ public:
+  const char* name_;
+  int id_;
+  MyClass() : name_(nullptr), id_(0) {
+    cout << "無參數建構子" << endl;
+  }
+};
+int main() {
+  MyClass myclass;
+  return 0;
+}
+{% endhighlight %}
+```
+無參數建構子
+```
+
 ## 初始化列表與運算式
-
 下方有參數的建構子，使用初始化列表並加上運算式，初使化成員變數。
-
 {% highlight c++ linenos %}
 class Student {
 public:

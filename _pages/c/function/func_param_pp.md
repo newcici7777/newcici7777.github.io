@@ -3,6 +3,10 @@ title: 函式參數為指標的指標
 date: 2026-03-22
 keywords: c++, pointer to pointer pass to a function
 ---
+Prerequisites:
+
+- [指標的指標][3]
+
 ## 函式參數為指標
 函式參數為指標，就是「複製」記憶體位址給「參數」。<br>
 
@@ -277,4 +281,6 @@ After p address= 0x60000000c010,After p value = 10
 outside pointer address = 0x60000000c010，outside pointer value = 10
 ```
 
-[2]: {% link _pages/c/reference/refToPointer.md %}#參考指向指標與new
+[1]: {% link _pages/c/basic/param.md %}
+[2]: {% link _pages/c/reference/refToPointer.md %}
+[3]: {% link _pages/c/pointer/pointerToPointer.md %}

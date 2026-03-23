@@ -78,4 +78,4 @@ int main() {
 
 
 
-[1]: {% link _pages/c/basic/param.md %}
+

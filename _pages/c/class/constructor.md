@@ -7,13 +7,10 @@ Prerequisites:
 - [RVO][1]
 
 ## 建構子
-
 語法
 ```
 public:
 類別名() {
-}
-Student(){
 }
 ```
 
@@ -23,60 +20,27 @@ Student(){
 - 可以有參數，參數也可以有預設值
 
 ### 參數為空的建構子
-
-{% highlight c++ linenos %}
-class Student {
-public:
-  const char* name_;
-public:
-  Student() {
-    cout << "沒參數建構子" << endl;
-  }
-};
-int main() {
-  Student student;
-  return 0;
-}  
-{% endhighlight %}
-```
-沒參數建構子
-```
-### 建構子參數
-
 {% highlight c++ linenos %}
 #include <iostream>
-#include "main.h"
+#include <string>
 using namespace std;
 class Student {
-public:
+ public:
   const char* name_;
   Student() {
-    cout << "沒參數建構子" << endl;
-  }
-  Student(const char* name) {
-    cout << "有參數建構子" << endl;
-    this->name_ = name;
-  }
-  //宣告成員函式
-  void print() {
-    cout << "name: " << name_ << endl;
+    cout << "無參數建構子被呼叫：物件已初始化" << endl;
   }
 };
 int main() {
   Student student;
-  Student student1("Bill");
-  student1.print();
   return 0;
 }
 {% endhighlight %}
-
 ```
-有參數建構子
-name: Bill
+無參數建構子被呼叫：物件已初始化
 ```
 
 ## 解構子
-
 物件記憶體釋放前，會執行解構子。
 
 語法 
@@ -92,16 +56,17 @@ public:
 - 權限是public
 
 {% highlight c++ linenos %}
+#include <iostream>
+#include <string>
+using namespace std;
 class Student {
-public:
-  char m_name[50];
-public:
+ public:
+  const char* name_;
   Student() {
-    cout << "建構子" << endl;
-    memset(m_name,0,sizeof(m_name));
+    cout << "無參數建構子被呼叫：物件已初始化" << endl;
   }
   ~Student() {
-    cout << "解構子" << endl;
+    cout << "呼叫解構子" << endl;
   }
 };
 int main() {
@@ -110,33 +75,69 @@ int main() {
 }
 {% endhighlight %}
 ```
-建構子
-解構子
+無參數建構子被呼叫：物件已初始化
+呼叫解構子
 ```
 
-## 建構子參數只有一個，可使用指派運算子
-
-建構子參數只有一個，可使用指派運算子=，呼叫只有一個參數的建構子
-
+## 呼叫有參數的建構子
+語法:
+```
+類別 物件名(參數1)
+Student student("Mary");
+```
 {% highlight c++ linenos %}
+#include <iostream>
+#include <string>
+using namespace std;
 class Student {
-public:
-  string name;
-  Student(){};
-  //參數只有一個建構子
+ public:
+  const char* name_;
+  Student() {
+    cout << "無參數建構子被呼叫：物件已初始化" << endl;
+  }
   Student(const char* name) {
-    this->name = name;
+    name_ = name;
+    cout << "一個參數建構子 name_ = " << name_ << endl;
   }
 };
 int main() {
-  //使用等於(=)指派運算子呼叫只有一個參數的建構子
-  Student student = "Bill";
-  cout << "name = " << student.name << endl;
+  Student student("Mary");
   return 0;
 }
 {% endhighlight %}
 ```
-name = Bill
+一個參數建構子 name_ = Mary
+```
+
+## 建構子參數只有一個，可使用指派運算子
+建構子參數只有一個，可使用指派運算子=，呼叫只有一個參數的建構子<br>
+```
+類別 物件名 = 參數
+Student student = "Mary";
+```
+
+{% highlight c++ linenos %}
+#include <iostream>
+#include <string>
+using namespace std;
+class Student {
+ public:
+  const char* name_;
+  Student() {
+    cout << "無參數建構子被呼叫：物件已初始化" << endl;
+  }
+  Student(const char* name) {
+    name_ = name;
+    cout << "一個參數建構子 name_ = " << name_ << endl;
+  }
+};
+int main() {
+  Student student= "Mary";
+  return 0;
+}
+{% endhighlight %}
+```
+一個參數建構子 name_ = Mary
 ```
 
 ## 注意事項
@@ -148,31 +149,27 @@ name = Bill
 如果沒有實作空的建構子，只實作有參數的建構子，以下程式碼編譯不過。
 
 以下程式碼在主程式main函式，會尋找空的建構子。
-
 ```
 Student student;
 ```
+
 以下程式碼編譯不過
 {% highlight c++ linenos %}
+#include <iostream>
+#include <string>
+using namespace std;
 class Student {
-public:
-  char m_name[50];
-  int m_age = 20;
-  Student(const char* name, const int age) {
-    cout << "有參數建構子" << endl;
-    memset(m_name,0,sizeof(m_name));
-    strcpy(m_name, name);
-    m_age = age;
-  }
-  //宣告成員函式
-  void print() {
-    cout << "name: " << m_name << endl;
+ public:
+  const char* name_;
+  Student(const char* name) {
+    name_ = name;
+    cout << "一個參數建構子 name_ = " << name_ << endl;
   }
 };
 int main() {
   Student student;
   return 0;
-} 
+}
 {% endhighlight %}
 
 ### 不要用變數名()建立物件
@@ -180,29 +177,19 @@ int main() {
 
 編譯器認為是呼叫函式名為student()的函式，回傳值類型是Student。
 ```
-  Student student();
+Student student();
 ```
-執行結果為空，沒有印出"沒參數建構子"
+執行結果為空，沒有印出"無參數建構子被呼叫：物件已初始化"
 
 {% highlight c++ linenos %}
+#include <iostream>
+#include <string>
+using namespace std;
 class Student {
-public:
-  char m_name[50];
-  int m_age = 20;
+ public:
+  const char* name_;
   Student() {
-    cout << "沒參數建構子" << endl;
-    memset(m_name,0,sizeof(m_name));
-    m_age = 0;
-  }
-  Student(const char* name, const int age) {
-    cout << "有參數建構子" << endl;
-    memset(m_name,0,sizeof(m_name));
-    strcpy(m_name, name);
-    m_age = age;
-  }
-  //宣告成員函式
-  void print() {
-    cout << "name: " << m_name << endl;
+    cout << "無參數建構子被呼叫：物件已初始化" << endl;
   }
 };
 int main() {
@@ -211,51 +198,63 @@ int main() {
 }
 {% endhighlight %}
 
-用以上student呼叫成員函式print()，會編譯失敗，因為根本沒有建立物件，沒有在記憶體產生物件存放的位址。
-```
-student.print();
-```
-{% highlight c++ linenos %}
-int main() {
-  Student student();
-  student.print();
-  return 0;
-} 
-{% endhighlight %}
-
-## 多個建構子使用的程式碼寫在成員函式中
-
-以下建構子呼叫init()函式，清空成員變數，多個建構子可以使用。
-
+## 建構子初始化
+使用建構子初始化成員變數。<br>
 {% highlight c++ linenos %}
 class Student {
-public:
-  char m_name[50];
-  int m_age = 20;
+ public:
+  const char* name_;
+  int id_;
   Student() {
-    cout << "沒參數建構子" << endl;
-    init();
+    name_ = nullptr;
+    id_ = 0;
   }
-  Student(const char* name, const int age) {
-    cout << "有參數建構子" << endl;
-    init();
-    strcpy(m_name, name);
-    m_age = age;
+};
+int main() {
+  Student s;
+  if (s.name_ == nullptr) {
+      cout << "name_ is nullptr" << endl;
+  } else {
+      cout << "name_: " << s.name_ << endl;
   }
-  ~Student() {
-    cout << "解構子" << endl;
+  cout << s.id_ << endl;
+  return 0;
+}
+{% endhighlight %}
+```
+name_ is nullptr
+0
+```
+
+## 使用init()初始化成員變數
+以下每個建構子都呼叫init()初始化成員變數，若有多個成員變數要初始化，可以全寫在init()中。<br>
+{% highlight c++ linenos %}
+#include <iostream>
+#include <string>
+using namespace std;
+class Student {
+ public:
+  const char* name_;
+  Student() {
+    init();
+    cout << "無參數建構子被呼叫：物件已初始化" << endl;
+  }
+  Student(const char* name) {
+    init();
+    name_ = name;
+    cout << "一個參數建構子 name_ = " << name_ << endl;
   }
   void init() {
-    memset(m_name,0,sizeof(m_name));
-    m_age = 0;
+    name_ = nullptr;
   }
 };
 int main() {
-  Student student = Student();
-  Student student1 = Student("Bill", 20);
+  Student student= "Mary";
   return 0;
 }
 {% endhighlight %}
-
+```
+一個參數建構子 name_ = Mary
+```
 
 [1]: {% link _pages/c/editor/rvo.md %}

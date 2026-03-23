@@ -2,8 +2,8 @@
 <html lang="en" >
     <head>
 <meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>id() 記憶體位址 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Cici's notebook."><meta name="keywords" content="Python, id" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>debug 中斷點 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Cici's notebook."><meta name="keywords" content="Python, debug, break point" /><meta name="seo" content="no seo" /><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
@@ -583,6 +583,13 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/c/function/func_param_pp/" data-nav-link> 函式參數為指標的指標</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/c/function/callByRef/" data-nav-link> 函式傳參考</a>
         
             
@@ -888,22 +895,11 @@
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 類別與物件 </a><ul>
 	
 	
-	<li class="" data-nav-item>
-    	<a href="/pages/c/class/class/" data-nav-link> 類別與物件</a>
-        
-            
-        </li>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 建構子相關 </a><ul>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/class/this/" data-nav-link> this</a>
-        
-            
-        </li>
-	
-	
-	<li class="" data-nav-item>
-    	<a href="/pages/c/class/enum/" data-nav-link> Enum列舉</a>
+    	<a href="/pages/c/class/create_obj/" data-nav-link> 建立物件</a>
         
             
         </li>
@@ -920,11 +916,25 @@
     	<a href="/pages/c/class/init_list/" data-nav-link> 建構子初始化列表</a>
         
             
+        </li></ul></li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/member_var/" data-nav-link> 成員變數</a>
+        
+            
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/c/class/member_class/" data-nav-link> 成員變數是類別</a>
+    	<a href="/pages/c/class/this/" data-nav-link> this</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/c/class/enum/" data-nav-link> Enum列舉</a>
         
             
         </li>
@@ -3960,7 +3970,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/python/format/" data-nav-link> 程式碼格式 與 資源</a>
+    	<a href="/pages/python/format/" data-nav-link> 程式碼格式 與 教學文件</a>
         
             
         </li>
@@ -3969,6 +3979,30 @@
 	<li class="" data-nav-item>
     	<a href="/pages/python/print/" data-nav-link> print 格式化</a>
         
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/comment/" data-nav-link> 註解</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/id_interning/" data-nav-link> id() 與 駐留機制</a>
+        
+            
+        </li>
+	
+	
+	<li class="active" data-nav-item>
+    	<a href="/pages/python/debug/" data-nav-link> debug 中斷點</a>
+        
+            
+                <ul><li><a href="#debug-介紹" data-nav-link " >debug 介紹</a></li><li><a href="#for-迴圈debug" data-nav-link " >for 迴圈debug</a></li><li><a href="#step-over-執行目前所在的行數" data-nav-link " >Step over 執行目前所在的行數</a></li><li><a href="#step-into-進入函式" data-nav-link " >Step into 進入函式</a></li><li><a href="#step-out-離開函式" data-nav-link " >Step out 離開函式</a></li><li><a href="#step-out-執行並離開目前迴圈" data-nav-link " >Step out 執行並離開目前迴圈</a></li><li><a href="#index-out-of-range-debug" data-nav-link " >index out of range debug</a></li><li><a href="#resume-f9-跳到中斷點執行" data-nav-link " >Resume F9 跳到中斷點執行</a></li></ul>
+
             
         </li></ul></li>
 	
@@ -3991,7 +4025,28 @@
 	
 	
 	<li class="" data-nav-item>
+    	<a href="/pages/python/float/" data-nav-link> float</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/bool/" data-nav-link> bool</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
     	<a href="/pages/python/string/" data-nav-link> string 字串</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/slice/" data-nav-link> slice</a>
         
             
         </li></ul></li>
@@ -4032,7 +4087,7 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/python/for/" data-nav-link> range for</a>
+    	<a href="/pages/python/for/" data-nav-link> for</a>
         
             
         </li>
@@ -4056,30 +4111,20 @@
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/python/import/" data-nav-link> import 其它檔案的函式</a>
+    	<a href="/pages/python/func_param/" data-nav-link> 函式作為參數</a>
         
             
         </li>
 	
 	
 	<li class="" data-nav-item>
-    	<a href="/pages/python/func_param/" data-nav-link> 函式作為參數</a>
+    	<a href="/pages/python/lambda/" data-nav-link> lambda</a>
         
             
         </li></ul></li>
 	
 	
 	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 內建函式 </a><ul>
-	
-	
-	<li class="active" data-nav-item>
-    	<a href="/pages/python/id/" data-nav-link> id() 記憶體位址</a>
-        
-            
-                <ul><li><a href="#字串由英文字母大小寫0-9_" data-nav-link " >字串由英文字母大小寫0-9_</a></li><li><a href="#字串長度為1或0" data-nav-link " >字串長度為1或0</a></li><li><a href="#數字介於-5-至-256" data-nav-link " >數字介於-5 至 256</a></li><li><a href="#使用sysintern指向相同記憶體位址" data-nav-link " >使用sys.intern()指向相同記憶體位址</a></li></ul>
-
-            
-        </li>
 	
 	
 	<li class="" data-nav-item>
@@ -4107,14 +4152,104 @@
     	<a href="/pages/python/random/" data-nav-link> random randint() randrange()</a>
         
             
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/lib_func/" data-nav-link> 內建函式</a>
+        
+            
         </li></ul></li>
 	
 	
-	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 集合 </a><ul>
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 容器 </a><ul>
 	
 	
 	<li class="" data-nav-item>
     	<a href="/pages/python/list/" data-nav-link> list</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/tuple/" data-nav-link> tuple</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/dict/" data-nav-link> dict</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/set/" data-nav-link> set</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/containers/" data-nav-link> 容器比較</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 模組與套件 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/import/" data-nav-link> import</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/package/" data-nav-link> package 套件</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/pip/" data-nav-link> pip pycharm 第三方套件</a>
+        
+            
+        </li></ul></li>
+	
+	
+	<li class="chapter" data-level="1.2" data-path="http://localhost:4000" data-nav-item><a href="#" data-nav-link> 物件導向 </a><ul>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/class/" data-nav-link> class 類別</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/none/" data-nav-link> None</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/poly/" data-nav-link> 多型</a>
+        
+            
+        </li>
+	
+	
+	<li class="" data-nav-item>
+    	<a href="/pages/python/init/" data-nav-link> init</a>
         
             
         </li></ul></li></ul></li></ul>
@@ -4126,7 +4261,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >id() 記憶體位址</a>
+                            <a href="." >debug 中斷點</a>
                         
                     </h1>
                 </div>
@@ -4139,120 +4274,256 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/pages/python/id">id() 記憶體位址</h1>
+                        <h1 id="/pages/python/debug">debug 中斷點</h1>
                     
 
-                    <p><code class="language-plaintext highlighter-rouge">id(變數)</code>函式可以檢查記憶體位址。</p>
+                    <h2 id="debug-介紹">debug 介紹</h2>
+<p>執行debug:滑鼠右鍵，選<code class="language-plaintext highlighter-rouge">Debug '檔名'</code><br />
+<img src="/assets/img/python/debug2.png" alt="img" /><br /></p>
 
-<p>以下記憶體位址是相同的。</p>
+<p>Debug Tool介紹:<br />
+<img src="/assets/img/python/debug.png" alt="img" /><br /></p>
+<ul>
+  <li>Step over F8 執行目前行數</li>
+  <li>Step into F7 進入函式</li>
+  <li>Step out <code class="language-plaintext highlighter-rouge">Shift+F8</code> 離開函式</li>
+  <li>Resume F9 跳到下一個中斷點</li>
+</ul>
+
+<p>Console的按鈕 與 觀察變數的按鈕。
+ <img src="/assets/img/python/console_var.png" alt="img" /><br /></p>
+
+<h2 id="for-迴圈debug">for 迴圈debug</h2>
+<p>程式碼</p>
+
+<figure class="highlight">
+  <pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"End"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>設中斷點在<code class="language-plaintext highlighter-rouge">for i in range(1,3):</code>，執行Debug，點擊鍵盤 F8 (Step Over)，執行此行。<br />
+<img src="/assets/img/python/for_debug1.png" alt="img" /><br /></p>
+
+<p>移到<code class="language-plaintext highlighter-rouge">print(i)</code>，點擊鍵盤 F8 (Step Over)，執行此行。<br /></p>
+
 <ol>
-  <li>字串由26英文字母大小寫、數字0-9、底線_</li>
-  <li>字串長度為0或1</li>
-  <li>數字介於-5 至 256</li>
+  <li>i變數目前為1</li>
+  <li>Threads&amp;Variables 視窗按鈕</li>
+  <li>變數目前的值 <code class="language-plaintext highlighter-rouge">i = 1</code>。</li>
+  <li>Console有黃色小圈圈代表，Console有輸出。</li>
 </ol>
 
-<p>打開終端機，進入python3</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3
-</code></pre></div></div>
+<p><img src="/assets/img/python/for_debug2.png" alt="img" /><br /></p>
 
-<h2 id="字串由英文字母大小寫0-9_">字串由英文字母大小寫0-9_</h2>
+<ol>
+  <li>按Console的按鈕</li>
+  <li>發現Console輸出1</li>
+  <li>i變數目前仍為1。</li>
+</ol>
 
-<p>輸入</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; a = "ABC123_"
-&gt;&gt;&gt; b = "ABC123_"
-&gt;&gt;&gt; id(a)
-4308096592
-&gt;&gt;&gt; id(b)
-4308096592
-</code></pre></div></div>
-<p>發現變數a與變數b的記憶體位址都是相同</p>
+<p>移到<code class="language-plaintext highlighter-rouge">for i in range(1,3):</code>，點擊鍵盤 F8 (Step Over)，執行此行。<br />
+<img src="/assets/img/python/for_debug3.png" alt="img" /><br /></p>
 
-<p>最後的字尾不是1(字串由26英文字母大小寫、數字0-9、底線_)的範圍</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; a = "abcABC_123#"
-&gt;&gt;&gt; b = "abcABC_123#"
-&gt;&gt;&gt; id(a)
-4410010032
-&gt;&gt;&gt; id(b)
-4410010352
-</code></pre></div></div>
+<p>移到<code class="language-plaintext highlighter-rouge">print(i)</code>，此時i變數為2，點擊鍵盤 F8 (Step Over)，執行此行。<br />
+<img src="/assets/img/python/for_debug4.png" alt="img" /><br /></p>
 
-<p>顯示的結果是4410010032與4410010352是不同記憶體位址。</p>
+<ol>
+  <li>按Console的按鈕</li>
+  <li>發現Console輸出2</li>
+  <li>i變數目前仍為2。</li>
+</ol>
 
-<p>打開PyCharm，輸入以下程式碼，執行後，發現記憶體位址是相同，PyCharm有針對id()函式進行特殊化。</p>
+<p>移到<code class="language-plaintext highlighter-rouge">for i in range(1,3):</code>，點擊鍵盤 F8 (Step Over)，執行此行。<br />
+<img src="/assets/img/python/for_debug5.png" alt="img" /><br /></p>
+
+<p>移到<code class="language-plaintext highlighter-rouge">print("End")</code>，點擊鍵盤 F8 (Step Over)，執行此行。<br />
+<img src="/assets/img/python/for_debug6.png" alt="img" /><br /></p>
+
+<ol>
+  <li>Debug正方形已經變成灰色，代表程式執行完畢，Debug mode結束。</li>
+  <li>按Console的按鈕</li>
+  <li>輸出End。</li>
+</ol>
+
+<p><img src="/assets/img/python/for_debug7.png" alt="img" /><br /></p>
+
+<h2 id="step-over-執行目前所在的行數">Step over 執行目前所在的行數</h2>
+<p>Step Over 的快速鍵是 F8，執行目前行數。<br /></p>
+
+<p>以下程式碼，主程式會呼叫f1()函式，f1函式會呼叫f2()函式。</p>
 
 <figure class="highlight">
   <pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
-</pre></td><td class="code"><pre><span class="n">a</span> <span class="o">=</span> <span class="s">"abcABC_123#"</span>
-<span class="n">b</span> <span class="o">=</span> <span class="s">"abcABC_123#"</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">f2</span><span class="p">():</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+        <span class="nb">sum</span> <span class="o">+=</span> <span class="n">i</span>
+        <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"i = </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">sum</span>
+
+
+<span class="k">def</span> <span class="nf">f1</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Hello"</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">f2</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"result = "</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">"Start ..."</span><span class="p">)</span>
+<span class="n">f1</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Finish ..."</span><span class="p">)</span>
 </pre></td></tr></tbody></table></code></pre>
 </figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>4511047536
-4511047536
-</code></pre></div></div>
+<p>以上的程式碼設置中斷點在<code class="language-plaintext highlighter-rouge">print("Start ...")</code>，執行debug，點擊鍵盤 F8 (Step Over)，執行此行。<br />
+<img src="/assets/img/python/step_over1.png" alt="img" /><br /></p>
 
-<h2 id="字串長度為1或0">字串長度為1或0</h2>
-<p>回到終端機python3的環境下，輸入任意一個字，發現執行結果記憶體位址都是相同。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; a = "#"
-&gt;&gt;&gt; b = "#"
-&gt;&gt;&gt; id(a)
-4321877160
-&gt;&gt;&gt; id(b)
-4321877160
-</code></pre></div></div>
+<p>移到<code class="language-plaintext highlighter-rouge">f1()</code>，點擊鍵盤 F8 (Step Over)，執行此行。<br />
+<img src="/assets/img/python/step_over2.png" alt="img" /><br /></p>
 
-<p>回到終端機python3的環境下，變數長度為0，發現執行結果記憶體位址都是相同。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; a = ""
-&gt;&gt;&gt; b = ""
-&gt;&gt;&gt; id(a)
-4321834720
-&gt;&gt;&gt; id(b)
-4321834720
-</code></pre></div></div>
+<p>移到<code class="language-plaintext highlighter-rouge">print("Finish ...")</code>，不會進入f1()函式，而是執行完 f1() 函式內的程式碼，下方的圖片，點擊console，會輸出f1()與f2()函式執行結果。<br />
+<img src="/assets/img/python/step_over3.png" alt="img" /><br /></p>
 
-<h2 id="數字介於-5-至-256">數字介於-5 至 256</h2>
-<p>發現執行結果記憶體位址都是相同</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; a = -5
-&gt;&gt;&gt; b = -5
-&gt;&gt;&gt; id(a)
-4321813256
-&gt;&gt;&gt; id(b)
-4321813256
-</code></pre></div></div>
+<h2 id="step-into-進入函式">Step into 進入函式</h2>
+<p>Step into 的快速鍵是 F7，進入函式。</p>
 
-<p>數字小於-5，發現記憶體位址不相同</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; a = -6
-&gt;&gt;&gt; b = -6
-&gt;&gt;&gt; id(a)
-4306176784
-&gt;&gt;&gt; id(b)
-4304187792
-</code></pre></div></div>
+<p>程式碼設置中斷點在<code class="language-plaintext highlighter-rouge">print("Start ...")</code>，執行debug，點擊鍵盤 F8(Step Over)，執行此行。<br />
+<img src="/assets/img/python/step_over1.png" alt="img" /><br /></p>
 
-<p>數字超出256，記憶體位址不相同</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; a = 257
-&gt;&gt;&gt; b = 257
-&gt;&gt;&gt; id(a)
-4306176752
-&gt;&gt;&gt; id(b)
-4306176560
-</code></pre></div></div>
+<p>移到<code class="language-plaintext highlighter-rouge">f1()</code>，點擊鍵盤 F7(Step into)，進入函式。<br />
+<img src="/assets/img/python/step_over2.png" alt="img" /><br /></p>
 
-<h2 id="使用sysintern指向相同記憶體位址">使用sys.intern()指向相同記憶體位址</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; import sys
-&gt;&gt;&gt; a = "abc#"
-&gt;&gt;&gt; b = sys.intern(a)
-&gt;&gt;&gt; id(a)
-4308095200
-&gt;&gt;&gt; id(b)
-4308095200
-</code></pre></div></div>
+<p>就會進入到f1()函式，並移到f1()函式第一行<code class="language-plaintext highlighter-rouge">print("Hello")</code>，點擊鍵盤 F8 (Step Over)，執行此行<br />
+<img src="/assets/img/python/step_into1.png" alt="img" /><br /></p>
 
+<p>移到f1()函式<code class="language-plaintext highlighter-rouge">result = f2()</code>，點擊鍵盤 F7(Step into)，進入函式。<br />
+<img src="/assets/img/python/step_into2.png" alt="img" /><br /></p>
+
+<p>就會進入到f2()函式，並移到第一行<code class="language-plaintext highlighter-rouge">sum = 0</code>。<br />
+<img src="/assets/img/python/step_into3.png" alt="img" /><br /></p>
+
+<h2 id="step-out-離開函式">Step out 離開函式</h2>
+<p>Step out 的快速鍵是 Shift + F8，離開函式。<br /></p>
+
+<p>點擊鍵盤 Shift + F8(Step out)，離開函式。<br />
+<img src="/assets/img/python/step_into3.png" alt="img" /><br /></p>
+
+<p>移到f1()函式<code class="language-plaintext highlighter-rouge">result = f2()</code>。<br />
+<img src="/assets/img/python/step_out1.png" alt="img" /><br /></p>
+
+<p>點擊Console，會發現f2()的函式結果都執行在console，證明Step out離開f2()函式時，也會把f2()函式執行完畢。<br />
+<img src="/assets/img/python/step_out2.png" alt="img" /><br /></p>
+
+<p>點擊鍵盤 Shift + F8(Step out)，離開f1()函式。<br /></p>
+
+<p>移回呼叫<code class="language-plaintext highlighter-rouge">f1()</code>函式的位置，點開console，也有輸出<code class="language-plaintext highlighter-rouge">result =  10</code>，證明Step out離開f1()函式時，也會把f1()函式執行完畢。<br />
+<img src="/assets/img/python/step_out3.png" alt="img" /><br /></p>
+
+<h2 id="step-out-執行並離開目前迴圈">Step out 執行並離開目前迴圈</h2>
+<p>在f2()函式中，在for 迴圈中的程式碼<code class="language-plaintext highlighter-rouge">sum += i</code> 設中斷點，執行Debug。<br />
+點擊鍵盤 Shift + F8(Step out)，試圖離開函式。<br />
+<img src="/assets/img/python/step_out_loop1.png" alt="img" /><br /></p>
+
+<p>但發現無法離開f2()函式，i還變成1，因為Step out遇上迴圈，是執行完目前的迴圈，並離開目前的迴圈，移到下一個迴圈，所以i才會變成1。<br />
+<img src="/assets/img/python/step_out_loop2.png" alt="img" /><br /></p>
+
+<p>點擊鍵盤 Shift + F8(Step out)，執行並離開目前的迴圈，移到下一個迴圈，i變成2。<br />
+<img src="/assets/img/python/step_out_loop3.png" alt="img" /><br /></p>
+
+<p>若要離開f2()函式，將迴圈中的中斷點取消，再點擊鍵盤 Shift + F8 (Step out)，就會離開f2()函式。
+<img src="/assets/img/python/step_out_loop4.png" alt="img" /><br /></p>
+
+<p>移到一開始呼叫f2()的那行程式碼<code class="language-plaintext highlighter-rouge">result = f2()</code>。
+<img src="/assets/img/python/step_out_loop5.png" alt="img" /><br /></p>
+
+<p>點擊鍵盤 F8(Step Over)，就會移到下一行程式碼，不會再次Step into進入f2()函式。<br />
+<img src="/assets/img/python/step_out_loop6.png" alt="img" /><br /></p>
+
+<h2 id="index-out-of-range-debug">index out of range debug</h2>
+<p>程式碼</p>
+
+<figure class="highlight">
+  <pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Hello"</span><span class="p">,</span> <span class="s">"World"</span><span class="p">]</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">list1</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">list1</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></td></tr></tbody></table></code></pre>
+</figure>
+
+<p>中斷點設在<code class="language-plaintext highlighter-rouge">i = 0</code>，執行Debug，點擊鍵盤 F8 (Step Over)，執行此行。<br />
+<img src="/assets/img/python/out_range1.png" alt="img" /><br /></p>
+
+<p>移到<code class="language-plaintext highlighter-rouge">while i &lt;= len(list1):</code>，此時 i 為 0。<br />
+<img src="/assets/img/python/out_range2.png" alt="img" /><br /></p>
+
+<p>滑鼠選取<code class="language-plaintext highlighter-rouge">len(list1)</code>，請仔細看出圖中<code class="language-plaintext highlighter-rouge">len(list1)</code>底色是偏深藍。<br />
+<img src="/assets/img/python/out_range3.png" alt="img" /><br /></p>
+
+<p>滑鼠右鍵，有<code class="language-plaintext highlighter-rouge">Evaluate Expression</code>的選項。<br />
+<img src="/assets/img/python/out_range4.png" alt="img" /><br /></p>
+
+<p>點擊<code class="language-plaintext highlighter-rouge">Evalute</code>按鈕。<br />
+<img src="/assets/img/python/out_range5.png" alt="img" /><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">len(list1)</code>的運算結果為<code class="language-plaintext highlighter-rouge">result = (int)2</code>，2就是結果。<br />
+<img src="/assets/img/python/out_range6.png" alt="img" /><br /></p>
+
+<p>回到<code class="language-plaintext highlighter-rouge">while i &lt;= len(list1):</code>，點擊鍵盤 F8 (Step Over)，執行此行。<br />
+移到<code class="language-plaintext highlighter-rouge">print(list1[i])</code>，點擊鍵盤 F8 (Step Over)，執行此行。<br />
+<img src="/assets/img/python/out_range7.png" alt="img" /><br /></p>
+
+<p>移到<code class="language-plaintext highlighter-rouge">i += 1</code>，點擊鍵盤 F8 (Step Over)，執行此行。<br />
+點擊<code class="language-plaintext highlighter-rouge">Console</code>，會發現已輸出<code class="language-plaintext highlighter-rouge">Hello</code>。<br />
+<img src="/assets/img/python/out_range8.png" alt="img" /><br /></p>
+
+<p>回到<code class="language-plaintext highlighter-rouge">while i &lt;= len(list1):</code>，此時 i 變為 1 。<br />
+點擊鍵盤 F8 (Step Over)，執行此行。<br />
+<img src="/assets/img/python/out_range9.png" alt="img" /><br /></p>
+
+<p>移到<code class="language-plaintext highlighter-rouge">print(list1[i])</code>，點擊鍵盤 F8 (Step Over)，執行此行。<br />
+<img src="/assets/img/python/out_range10.png" alt="img" /><br /></p>
+
+<p>點擊<code class="language-plaintext highlighter-rouge">Console</code>，會發現已輸出<code class="language-plaintext highlighter-rouge">World</code>。<br />
+點擊鍵盤 F8 (Step Over)，執行<code class="language-plaintext highlighter-rouge">i += 1</code>。<br />
+<img src="/assets/img/python/out_range11.png" alt="img" /><br /></p>
+
+<p>回到<code class="language-plaintext highlighter-rouge">while i &lt;= len(list1):</code>，此時 i 變為 2 。<br />
+點擊鍵盤 F8 (Step Over)，執行此行。<br />
+<img src="/assets/img/python/out_range12.png" alt="img" /><br /></p>
+
+<p>移到<code class="language-plaintext highlighter-rouge">print(list1[i])</code>，點擊鍵盤 F8 (Step Over)，執行此行。<br />
+<img src="/assets/img/python/out_range13.png" alt="img" /><br /></p>
+
+<p>會發現有閃電符號在<code class="language-plaintext highlighter-rouge">print(list1[i])</code>這行，代表此行執行有錯誤。<br />
+Console也會有IndexError的訊息。<br />
+<img src="/assets/img/python/out_range14.png" alt="img" /><br /></p>
+
+<h2 id="resume-f9-跳到中斷點執行">Resume F9 跳到中斷點執行</h2>
+<p>點擊鍵盤 F9 (Resume)，直接跳到中斷點執行。<br /></p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -4316,14 +4587,14 @@ window.MathJax = {
     
                     
                         
-                        <a href="/pages/python/func_param" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 函式作為參數">
+                        <a href="/pages/python/id_interning" class="navigation navigation-prev navigation-unique" aria-label="Previous page: id() 與 駐留機制">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
                         
-                        <a href="/pages/python/type" class="navigation navigation-next navigation-unique" aria-label="Next page: type() 變數型別">
+                        <a href="/pages/python/int" class="navigation navigation-next navigation-unique" aria-label="Next page: 整數">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -4341,11 +4612,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "Mac Python安裝",
+            "title": "package 套件",
             "level": "1.2",
             "depth": 1,
-            "path": "_pages/python/install.md",
-            "ref": "_pages/python/install.md",
+            "path": "_pages/python/package.md",
+            "ref": "_pages/python/package.md",
             "articles": []
         },
         
@@ -4437,13 +4708,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_pages/python/id.md",
-        "mtime": "2026-02-23 00:00:00 +0800",
+        "path": "_pages/python/debug.md",
+        "mtime": "2026-03-17 00:00:00 +0800",
         "type": "markdown"
     },
     "gitbook": {
         "version": "",
-        "time": "2026-03-12 10:59:51 +0800"
+        "time": "2026-03-23 15:40:25 +0800"
     },
     "basePath": "",
     "book": {
