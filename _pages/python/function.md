@@ -288,6 +288,29 @@ Bread
 Fish
 ```
 
+可以使用`[索引]`取出個別元素:<br>
+
+{% highlight python linenos %}
+def getInfo(*args):
+    if len(args) == 1:
+        print(args[0])
+    elif len(args) == 2:
+        print(args[0], args[1])
+    else:
+        for arg in args:
+            print(arg, ",", end="")
+
+
+getInfo("Hello")
+getInfo("abc", "def")
+getInfo(1, 2, 3, 4, 5)
+{% endhighlight %}
+```
+Hello
+abc def
+1 ,2 ,3 ,4 ,5 ,
+```
+
 使用return把傳回值傳入result的變數中。<br>
 {% highlight python linenos %}
 def sum(*args):

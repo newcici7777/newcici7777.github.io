@@ -3,6 +3,13 @@ title: sublime note
 date: 2025-04-07
 keywords: sublime
 ---
+## 切換語言
+以下出現一堆紅色高亮，選擇右下角markdown。<br>
+![img]({{site.imgurl}}/sublime/sublime_markdown1.png)<br>
+
+選擇「Open all with current extension as...」 > 選擇Html
+![img]({{site.imgurl}}/sublime/sublime_markdown2.png)<br>
+
 ## Snippets
 ![img]({{site.imgurl}}/sublime/sublime_snippet1.png)
 
