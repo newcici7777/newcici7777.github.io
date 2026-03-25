@@ -3,6 +3,68 @@ title: 多型
 date: 2026-03-21
 keywords: python, polymorphism
 ---
+func1(obj: Animal) 函式的參數，可以是 Dog 類別或 Cat 類別，只要類別有繼承Animal就可以。<br>
+{% highlight python linenos %}
+class Animal:
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        print("汪汪汪")
+
+class Cat(Animal):
+    def speak(self):
+        print("喵喵喵")
+
+def func1(obj: Animal):
+    obj.speak()
+
+func1(Dog())
+func1(Cat())
+{% endhighlight %}
+```
+汪汪汪
+喵喵喵
+```
+## 判斷多型 isinstance()
+使用isinstance()函式，可以判斷類型。<br>
+
+語法:<br>
+```
+isinstance(obj, 類型)
+isinstance(obj, (類型1, 類型2, 類型3))
+```
+可以判斷obj是不是某個類型，也可以比較是不是屬於多個類型。<br>
+{% highlight python linenos %}
+class Animal:
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        print("汪汪汪")
+
+class Cat(Animal):
+    def speak(self):
+        print("喵喵喵")
+
+def func1(obj: Animal):
+    obj.speak()
+
+cat = Cat()
+dog = Dog()
+print(f"cat 是不是 Animal? {isinstance(cat, Animal)}")
+print(f"dog 是不是 Animal? {isinstance(dog, Animal)}")
+print(f"dog 是不是 Dog和Animal? {isinstance(dog, (Animal, Dog))}")
+{% endhighlight %}
+```
+cat 是不是 Animal? True
+dog 是不是 Animal? True
+dog 是不是 Dog和Animal? True
+```
+
+## c++ vs java vs python
 Prerequisites:
 
 - [C++ 多型][1]

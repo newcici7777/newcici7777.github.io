@@ -93,7 +93,7 @@ AttributeError: 'Child' object has no attribute '_Child__name'
 ## 子類別init方法 有參數
 父類別 Animal init方法有二個參數 height(身高) 與 weight(體重)<br>
 子類別 Dog 有自己的屬性color。<br>
-子類別 Dog 繼承 Animal ，子類別 init 方法，參數要先寫父類別 init 的參數 height, weight ，接著才寫自己的 color 屬性。<br>
+子類別 Dog 繼承 Animal ，子類別 init 方法，參數一定要有父類別 init 的參數 height, weight(參數位置可以隨意放) ，然後參放再放子類別的 color 屬性。<br>
 在子類別 init 方法，使用`super().__init__(父類別屬性)` 呼叫父類別init方法，初始化父類別的屬性，super()代表父類別。<br>
 若父類別與子類有同名get_info()方法，想使用父類別的get_info()方法，使用`super().get_info()`。<br>
 {% highlight python linenos %}
@@ -111,7 +111,7 @@ class Animal:
 
 class Dog(Animal):
     color = None
-
+    # 父類別參數位置可以隨便放
     def __init__(self, height, weight, color):
         super().__init__(height, weight)
         self.color = color
