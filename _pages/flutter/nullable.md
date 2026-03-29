@@ -60,12 +60,12 @@ void main() {
 null
 ```
 
-## `!` 可為Null類型 假設為 不可為Null類型。
+## `!` Nullable類型 假設為 Non-Nullable類型。
 ### 範例1
-如果變數是Non-Nullable不可以為null的類型，但指派的變數是Nullable 可以為null的類型。<br>
+如果變數是Non-Nullable(不可以null)類型，但指派的變數是Nullable(可以null)類型。<br>
 
 以下執行時會有錯誤，因為不可以把「可以null」的類型，指派給「不可以null」的類型。<br>
-因為程式不知道可以null的類型，裡面的值是null。<br>
+因為程式不知道「可以null」類型，裡面的值是不是null。<br>
 如果裡面的值是null，就不能指派給「不可以null」的類型。<br>
 {% highlight dart linenos %}
 void main() {
@@ -122,7 +122,7 @@ Null check operator used on a null value
   print(str1.length);
 {% endhighlight %}
 
-使用!驚嘆號，不管變數的內容是Null或不是Null，都假設它為「不可以Null」類型。<br>
+使用!驚嘆號，不管變數的內容是Null或不是Null，都假設它是「不可以Null」類型。<br>
 {% highlight dart linenos %}
 void main() {
   String? str1 = null;
@@ -131,8 +131,8 @@ void main() {
 {% endhighlight %}
 
 ### 範例3
-func1()函式參數str為「不可以null」的類型，str2為「可以null」的類型。<br>
-把str2可以null的類型，傳入參數為「不可以null」的類型，執行時會產生錯誤。<br>
+func1()函式參數str是「不可以null」的類型，str2是「可以null」的類型。<br>
+把str2「可以null」的類型，傳入參數為「不可以null」類型，執行時會產生錯誤。<br>
 {% highlight dart linenos %}
 void main() {
   String? str2 = "Hello";
@@ -148,7 +148,7 @@ Unhandled exception:
 Null check operator used on a null value
 ```
 
-使用驚嘆號，假設str2為「不可為Null」類型。<br>
+使用驚嘆號，假設str2為「不可Null」類型。<br>
 {% highlight dart linenos %}
 void main() {
   String? str2 = "Hello";
