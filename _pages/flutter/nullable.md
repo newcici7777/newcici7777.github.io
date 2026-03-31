@@ -3,10 +3,13 @@ title: Nullable type
 date: 2026-03-28
 keywords: flutter, dart, Nullable Type, Non-nullable Type
 ---
-Nullable Type 又稱為 可以儲存null的類型。<br>
 在dart中，變數分為可以儲存 null ，跟不可以儲存 null。<br>
+- Nullable Type，可以儲存null的類型。<br>
+- Non-Nullable Type，不可儲存null的類型稱為。<br>
 
-## Non-nullable Type 不可以儲存 null 類型
+變數<span class="markline">預設</span>是Non-Nullable，不可以儲存null。<br>
+
+## Non-nullable 不可以儲存 null 類型
 以下的程式碼，試圖讓 str 變數儲存 null，會產生編譯錯誤(語法錯誤)。<br>
 因為以下是Non-nullable(不可為null)的類型。<br>
 {% highlight dart linenos %}
@@ -23,8 +26,8 @@ void main() {
 }
 {% endhighlight %}
 
-## Nullable Type 可以儲存 null 類型
-類型旁邊加上問號?，就會變成Nullable Type(可以儲存 null 類型)。
+## Nullable 可以儲存 null 類型
+類型旁邊加上問號?，就會變成Nullable (可以儲存 null 類型)。
 ```
 類型? 變數 = null;
 ```
@@ -34,7 +37,7 @@ void main() {
 }
 {% endhighlight %}
 
-## `?.`存取 Nullable Type 類型
+## `?.`存取 Nullable 類型
 以下程式碼要對null 進行 方法 或 屬性 的操作，IDE會產生編譯錯誤，無法編譯。<br>
 因為null 物件，本身就沒有.length 的屬性。<br>
 {% highlight dart linenos %}

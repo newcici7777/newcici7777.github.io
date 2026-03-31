@@ -42,7 +42,7 @@ void main() {
 ```
 int
 1
-``
+```
 
 整除類型要用int。
 {% highlight python linenos %}

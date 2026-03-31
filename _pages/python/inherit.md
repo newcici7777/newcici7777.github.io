@@ -50,25 +50,6 @@ child.hi()
 Hi
 ```
 
-## init super()
-子類別繼承
-{% highlight python linenos %}
-class Parent:
-    def __init__(self):
-        print("Parent init")
-
-class Child(Parent):
-    def __init__(self):
-        super().__init__()
-        print("Child init")
-
-child = Child()
-{% endhighlight %}
-```
-Parent init
-Child init
-```
-
 ## 子類別無法讀取父類別私有屬性與方法
 {% highlight python linenos %}
 class Parent:
@@ -88,6 +69,30 @@ child.func1()
     print(f"name = {self.__name}")
                     ^^^^^^^^^^^
 AttributeError: 'Child' object has no attribute '_Child__name'
+```
+
+## 繼承父類別init方法
+即便子類別都沒寫任何init方法，也會擁有父類別的init方法。<br>
+{% highlight python linenos %}
+class Animal:
+    height = None
+    weight = None
+
+    def __init__(self, height, weight):
+        self.height = height
+        self.weight = weight
+
+    def get_info(self):
+        return f"height = {self.height} , weight = {self.weight}"
+
+class Dog(Animal):
+    pass
+
+dog1 = Dog(100, 5)
+print(dog1.get_info())
+{% endhighlight %}
+```
+height = 100 , weight = 5
 ```
 
 ## 子類別init方法 有參數
@@ -221,6 +226,7 @@ class Child(Parent2, Parent1):
     def call_parent1(self):
         print(f"name = {Parent1.name}")
         Parent1.hi(self)
+
     def call_parent2(self):
         print(f"name = {Parent2.name}")
         Parent2.hi(self)
