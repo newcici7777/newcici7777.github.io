@@ -22,7 +22,7 @@ void main() {
 }
 
 T getValue<T>(T value) {
-  return value;+
+  return value;
 }
 {% endhighlight %}
 
