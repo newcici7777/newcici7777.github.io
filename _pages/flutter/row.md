@@ -1,45 +1,38 @@
 ---
-title: Column
-date: 2026-03-31
-keywords: flutter, widget, column
+title: Row
+date: 2026-04-01
+keywords: flutter, widget, row
 ---
-Column是垂直排列，所以主軸(mainAxis)就是垂直。<br>
-crossAxis就是水平。<br>
+Row是水平排列，所以主軸(mainAxis)就是水平。<br>
+crossAxis就是垂直。<br>
 
-![img]({{site.imgurl}}/compose/column1.png)<br>
+![img]({{site.imgurl}}/compose/row2.png)<br>
 
 ```
-	mainAxis
-		|
-		|
-		|
-		|
-------------------> crossAxis
-		|
-		|
-		|
-		|
+  crossAxis
+    |
+    |
+    |
+    |
+------------------> mainAxis
+    |
+    |
+    |
+    |
 ```
 
-有A、B、C，三個Text()，水平排列範例:
+
+有A、B、C，三個Text()，水平排列範例
 ```
-A
-B
-C
+ABC
 ```
 
 |屬性|說明|
 |:----:|:---------------------|
-|mainAxisAlignment 主軸|垂直對齊|
-|crossAxisAlignment 交叉軸|水平對齊|
+|mainAxisAlignment|水平對齊|
+|crossAxisAlignment|垂直對齊|
 |children|子元素|
 
-以下程式碼，文字垂直方向排列，預設為置中。<br>
-```
-	A
-	B
-	C
-```
 {% highlight dart linenos %}
 import 'package:flutter/material.dart';
 
@@ -58,10 +51,11 @@ class MainPage extends StatelessWidget {
         width: 200,
         height: 200,
         color: Colors.yellow,
-        child: Column(
+        child: Row(
           children: [
             Text("A"),
             Text("B"),
+            Text("C"),
           ],
         ),
       ),
@@ -70,81 +64,40 @@ class MainPage extends StatelessWidget {
 }
 {% endhighlight %}
 
-![img]({{site.imgurl}}/flutter/column1.png)<br>
+![img]({{site.imgurl}}/flutter/row1.png)<br>
 
 ## 對齊方式
-### 垂直對齊 mainAxis
-start: 上
-```
-A
-B
-C
-.
-.
-.
-```
-
-end: 下
-```
-.
-.
-.
-A
-B
-C
-```
-
-spaceBetween: 上下各一個元素，中間置中。
-```
-A
-.
-.
-B
-.
-.
-C
-```
-
-spaceAround: item1與item2與item3之間有三個空格。
-```
-·
-·
-[item1]
-·
-·
-·
-[item2]
-·
-·
-·
-[item3]
-·
-·
-```
-
-spaceEvenly: 空間平均分配。
-```
-·
-·
-[item1]
-·
-·
-[item2]
-·
-·
-[item3]
-·
-·
-```
-
-### 水平對齊 crossAxis
-
-- start 靠左
+### 垂直對齊 crossAxis
+- start 上
 - center 置中
-- end 靠右
+- end 下
 
-### 程式碼
-以下程式碼，垂直分散對齊，水平靠左對齊。<br>
+### 水平對齊 mainAxis
+start 靠左對齊:
+```
+ABC......
+```
+
+end 靠右對齊
+```
+......ABC
+```
+
+spaceBetween: 左右各一個。
+```
+A...B...C
+```
+
+spaceAround: A與B與C，間距是3格。
+```
+..A...B...C..
+```
+
+spaceEvenly: 平均分配
+```
+...A...B...C...
+``
+
 {% highlight dart linenos %}
 import 'package:flutter/material.dart';
 
@@ -163,7 +116,7 @@ class MainPage extends StatelessWidget {
         width: 200,
         height: 200,
         color: Colors.yellow,
-        child: Column(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -178,4 +131,4 @@ class MainPage extends StatelessWidget {
 }
 {% endhighlight %}
 
-![img]({{site.imgurl}}/flutter/column2.png)<br>
+![img]({{site.imgurl}}/flutter/row2.png)<br>
