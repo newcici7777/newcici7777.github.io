@@ -131,3 +131,13 @@ void main() {
 ```
 [Hello, Hi]
 ```
+
+## List.generate()
+回傳值類型是`List<E>`，E是看return 傳回的類型。<br>
+
+語法
+```
+List.generate(數量, (index) {
+  return 要產生的東西
+})
+```

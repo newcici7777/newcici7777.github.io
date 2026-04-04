@@ -91,7 +91,6 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  TextEditingController _controller = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
