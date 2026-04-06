@@ -1,11 +1,16 @@
 ---
-title: Single Child Scroll
+title: SingleChildScrollView
 date: 2026-04-04
-keywords: flutter, Single Child Scroll
+keywords: flutter, SingleChildScrollView
 ---
-## 基本介紹
-只有一個child，可以滾動畫面。<br>
+SingleChildScrollView 包住一個子元件(只有一個child)，讓子元件可以滾動畫面。<br>
 
+- 一次性建立所有子元件，不會隨著下滑而逐漸建立子元件。
+- 因為只能一個子元件，所以會使用可以包裏住多個列或欄的子元件的佈局組件，如: Column, Row。
+- 預設滾動方向(scrollDirection)是垂直(Axis.vertical)，也可以設成水平(Axis.horizontal)
+- 滾動到某個「位置」，使用 ScrollController，可以用jumpTo()或 animateTo()。
+
+## 包住一個子元件
 ![img]({{site.imgurl}}/flutter/single_scroll1.png)<br>
 
 {% highlight dart linenos %}
@@ -99,6 +104,7 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
+            // 使用 Stack包住 Positioned，才
             body: Stack(children: [
       SingleChildScrollView(
         controller: _controller,

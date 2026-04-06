@@ -3,6 +3,19 @@ title: mac使用方式
 date: 2025-03-24
 keywords: mac
 ---
+## 傳輸線連接iphone，側邊欄找不到
+
+檢查 Finder 設定： 在 Finder 視窗中，點擊上方選單的「設定」>「側邊欄」，確保已勾選「CD、DVD 和 iOS 裝置」。
+
+
+![img]({{site.imgurl}}/mac/iphone_connect.png)
+
+## 照片遺失
+
+<https://support.apple.com/zh-tw/118558>
+
+## 標籤頁
+
 1. 使用标签页功能
 打开新标签页：在Finder窗口中，按下 Command + T 或点击菜单栏的“文件” > “新建标签页”。
 
@@ -15,3 +28,4 @@ keywords: mac
 
 3. 使用快捷键
 合并窗口：如果你有多个Finder窗口，可以按下 Command + Option + W 关闭所有窗口，然后重新打开一个Finder窗口并使用标签页功能。
+
