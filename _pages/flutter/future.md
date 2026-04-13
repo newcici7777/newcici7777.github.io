@@ -1,9 +1,11 @@
 ---
 title: Future
 date: 2026-04-11
-keywords: flutter, dart, Future
+keywords: flutter, dart, Future ,then, async
 ---
-## Future
+Future 有二種用法，一種是用then，一種是在函式中用async來使用Future。
+
+## then
 建立語法:
 ```
 Future(() {
