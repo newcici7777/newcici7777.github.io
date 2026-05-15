@@ -72,7 +72,7 @@ cat2 name: Mary, age: 10
 語法:<br>
 ```
 建構子({this.屬性1, this.屬性2});
-類別名.函式名({this.屬性1, this.屬性2});
+類別名.create({this.屬性1, this.屬性2});
 ```
 
 {% highlight dart linenos %}
@@ -88,6 +88,34 @@ class Cat {
   int? age;
   Cat({this.name, this.age});
   Cat.create({this.name, this.age});
+}
+{% endhighlight %}
+```
+cat1 name: Bill, age: 1
+cat2 name: Mary, age: 10
+```
+
+## required 建構子
+參數前面有required，代表這個參數一定要填。<br>
+語法:<br>
+```
+建構子({required this.屬性1,required this.屬性2});
+類別名.create({required this.屬性1,required this.屬性2});
+```
+
+{% highlight dart linenos %}
+void main() {
+  Cat cat1 = Cat(name: "Bill", age: 1);
+  print("cat1 name: ${cat1.name}, age: ${cat1.age}");
+  Cat cat2 = Cat.create(name: "Mary", age: 10);
+  print("cat2 name: ${cat2.name}, age: ${cat2.age}");
+}
+
+class Cat {
+  String? name;
+  int? age;
+  Cat({required this.name,required this.age});
+  Cat.create({required this.name,required this.age});
 }
 {% endhighlight %}
 ```

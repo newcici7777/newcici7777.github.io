@@ -31,6 +31,7 @@ class MainPage extends StatelessWidget {
       onGenerateRoute: (settings) {
         if (settings.name == "/detail") {
           // 使用MaterialPageRoute 需要使用MaterialPageRoute傳遞參數的方式
+          // 目前未實作MaterialPageRoute傳遞參數的方式，所以參數會null
           return MaterialPageRoute(builder: (context) => DetailPage());
         }
       },

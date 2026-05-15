@@ -5,6 +5,8 @@ keywords: mac
 ---
 ## 傳輸線連接iphone，側邊欄找不到
 
+iphone，設定 > 一般 > 移轉或重置iphone > 重置定位服務與隱私權
+
 檢查 Finder 設定： 在 Finder 視窗中，點擊上方選單的「設定」>「側邊欄」，確保已勾選「CD、DVD 和 iOS 裝置」。
 
 

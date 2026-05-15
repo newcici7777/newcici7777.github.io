@@ -53,11 +53,11 @@ String func3() {
 {% endhighlight %}
 
 ## 函式參數
-- 必要參數 (required positional parameters)
+- 必要位置參數 (required positional parameters)
 - 可選位置參數 `[]` (optional positional parameters)
 - 可選命名參數 `{}` (Named parameters)
 
-### 必要參數
+### 必要位置參數
 呼叫函式時，參數一定要傳遞，並且按照位置傳遞。
 {% highlight dart linenos %}
 void main() {
@@ -121,8 +121,8 @@ a: a, b: 0
 a: a, b: 10
 ```
 
-#### 必要參數 + 可選位置參數
-如果有「必要參數」，「可選位置參數」放在「必要參數」的後面。<br>
+#### 必要位置參數 + 可選位置參數
+如果有「必要位置參數」，「可選位置參數」放在「必要位置參數」的後面。<br>
 {% highlight dart linenos %}
 void main() {
   func3("Hello");
@@ -189,10 +189,25 @@ name: Cici, age: 0
 name: Cici, age: 18
 ```
 
-#### 必要參數 + 可選命名參數
-如果有「必要參數」，「可選命名參數」放在「必要參數」的後面。<br>
+### required 必要命名參數
+若命名參數前面有required，代表這個參數一定要填。<br>
+{% highlight dart linenos %}
+void main() {
+  func4(age: 18, name: "Cici");
+}
 
-不可以「必要參數」\+ 「可選命名參數」 \+ 「可選位置參數」。<br> 
+void func4({required String? name,required int? age}) {
+  print("name: $name, age: $age");
+}
+{% endhighlight %}
+```
+name: Cici, age: 18
+```
+
+#### 必要位置參數 + 可選命名參數
+如果有「必要位置參數」，「可選命名參數」放在「必要位置參數」的後面。<br>
+
+不可以「必要位置參數」\+ 「可選命名參數」 \+ 「可選位置參數」。<br> 
 
 ## 匿名函式
 所謂的匿名函式，就是把「程式邏輯」作為參數，傳遞給函式。<br>
