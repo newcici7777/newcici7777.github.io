@@ -56,6 +56,11 @@ vi ~/.zshrc
 export OPENAI_API_KEY="xxx"
 ```
 
+更新設定
+```
+source ~/.zshrc
+```
+
 把Pycharm重啟，去掉api_key="xxx"，會自動讀取電腦的OPENAI_API_KEY變數。
 {% highlight python linenos %}
 from openai import OpenAI
