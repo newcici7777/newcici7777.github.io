@@ -25,8 +25,29 @@ print(type(res))
 <class 'langchain_core.messages.ai.AIMessage'>
 ```
 
-## StrOutputParser
-上一個例子中，res 是 AIMessage 類別，沒辦法作為llm的參數，所以要把AIMessage的類別，透過StrOutputParser變成字串，再作為字串參數傳入llm。<br>
+## AIMessage 透過 StrOutputParser 轉成 字串
+以下程式碼，把上例AIMessage 的類型，透過chin `|`的方式，轉成字串輸出。
+{% highlight python linenos %}
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.prompts import PromptTemplate
+from langchain_google_genai import ChatGoogleGenerativeAI
+
+prompt = PromptTemplate.from_template(
+    "我的鄰居姓{lastname}，剛生了{gender}，幫忙想3個名字，只要告知名字，無需其它內容。")
+llm = ChatGoogleGenerativeAI(model="gemini-3-flash-preview", temperature=0)
+str_parser = StrOutputParser()
+chain = prompt | llm | str_parser
+res = chain.invoke({"lastname": "李", "gender": "女兒"})
+print(res)
+{% endhighlight %}
+```
+李芯妍
+李沐希
+李若菲
+```
+
+## StrOutputParser 字串作為chain輸入。
+把AIMessage的類別，透過StrOutputParser變成字串，再作為字串參數傳入llm。<br>
 {% highlight python linenos %}
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
