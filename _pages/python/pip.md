@@ -6,6 +6,9 @@ keywords: Python, pip3, pycharm , third party package
 ## 終端機安裝
 以下適用於Mac。
 
+進入終端機<br>
+![img]({{site.imgurl}}/python/venv.png)<br>
+
 打開終端機，輸入pip3，主要使用的指令有install,uninstall,list。
 ```
 % pip3

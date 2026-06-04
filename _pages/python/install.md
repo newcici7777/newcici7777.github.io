@@ -59,3 +59,36 @@ python3 --version
 
 ![img]({{site.imgurl}}/python/pycharm5.png)
 
+## homebrew安裝特定版本python 3.11
+有時候pip install 某些套件必須要把python降級才能安裝，此時就需要以下步驟。<br>
+```
+brew install python@3.11
+```
+python3.11安裝路徑 (每個MAC的版本不同，路徑不同)
+```
+/usr/local/bin/python3.11
+```
+
+### Pycharm 更換版本
+進入終端機<br>
+![img]({{site.imgurl}}/python/venv.png)<br>
+
+在終端機中輸入以下內容
+```
+(.venv) AIProject % rm -rf .venv
+(.venv) AIProject % /usr/local/bin/python3.11 -m venv .venv
+(.venv) AIProject % source .venv/bin/activate
+(.venv) AIProject % python --version
+Python 3.11.15
+```
+
+升級安裝工具
+```
+pip install --upgrade pip setuptools
+```
+
+修改Pycharm的python版本
+![img]({{site.imgurl}}/python/interpreter1.png)<br>
+![img]({{site.imgurl}}/python/interpreter2.png)<br>
+![img]({{site.imgurl}}/python/interpreter3.png)<br>
+![img]({{site.imgurl}}/python/interpreter4.png)<br>

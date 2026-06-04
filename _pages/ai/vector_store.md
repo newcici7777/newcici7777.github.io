@@ -1,8 +1,18 @@
 ---
-title: Vector store
+title: 向量資料庫（Vector Database）
 date: 2026-06-03
 keywords: Langchain, Gemini, GoogleGenerativeAIEmbeddings, InMemoryVectorStore, Vector store
 ---
+info.csv
+```
+請假
+休假
+旅行
+工作
+讀書
+考試
+做家事
+```
 {% highlight python linenos %}
 from langchain_community.document_loaders import CSVLoader
 from langchain_core.vectorstores import InMemoryVectorStore

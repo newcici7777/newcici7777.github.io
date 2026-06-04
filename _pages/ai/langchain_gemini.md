@@ -4,6 +4,9 @@ date: 2026-05-15
 keywords: Langchain, Gemini
 ---
 ## 安裝langchain
+進入終端機<br>
+![img]({{site.imgurl}}/python/venv.png)<br>
+
 以下是在MAC安裝，Windows請用pip，而不是pip3。<br>
 ```
 pip3 install langchain

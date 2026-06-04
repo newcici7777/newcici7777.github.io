@@ -4,6 +4,9 @@ date: 2026-06-02
 keywords: Langchain, Gemini, CSVLoader, JsonLoader
 ---
 ## CSVLoader
+
+![img]({{site.imgurl}}/ai/csv.png)
+
 student.csv
 ```
 name,age,gender
