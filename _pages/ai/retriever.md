@@ -3,12 +3,14 @@ title: as_retriever()
 date: 2026-06-08
 keywords: Langchain, Gemini, GoogleGenerativeAIEmbeddings, InMemoryVectorStore, Vector store,as_retriever
 ---
+## retriever
 語法
 ```
-vector_store.as_retriever(search_kwargs={"k": 要比對的數量})
-vector_store.as_retriever(search_kwargs={"k": 2})
+retriever = vector_store.as_retriever(search_kwargs={"k": 要比對的數量})
+retriever = vector_store.as_retriever(search_kwargs={"k": 2})
 ```
 
+## prompt
 prompt 的輸入參數有二個，分別是content, input。
 ```
 prompt = ChatPromptTemplate.from_messages(
@@ -19,18 +21,22 @@ prompt = ChatPromptTemplate.from_messages(
 )
 ```
 
-下方呼叫chain，是把input_text的字串「如何減肥」，作為prompt 的輸入參數input。<br>
+## input參數
+下方呼叫`chain.invoke(input_text)`，是把input_text的字串「如何減肥」，作為上方prompt 的輸入參數「input」。<br>
 ```
 input_text = "如何減肥"
 res = chain.invoke(input_text)
 ```
 
-RunnablePassthrough()會自動把`input_text`轉成prompt 的輸入參數input
+## RunnablePassthrough()
+RunnablePassthrough()會自動把`input_text`轉成prompt 的輸入參數input。
 ```
 {"input": RunnablePassthrough(),
          "content": retriever | format_func}
 ```
-retriever的傳回值是list[documents]，因為list 沒有`__or__`方法，不能加入chain，所以要把list 轉成 string，透過format_func()函式轉成string之後，就可以把retriever的結果作為參數content 傳入 prompt。
+
+## retriever的傳回值
+retriever的傳回值是list[documents]，要把list 轉成 string，透過format_func()函式轉成string之後，就可以把retriever的結果作為參數content 傳入 prompt。
 {% highlight python linenos %}
 def format_func(docs: list[Document]):
     if not docs:
