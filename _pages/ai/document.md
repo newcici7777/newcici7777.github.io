@@ -1,5 +1,5 @@
 ---
-title: CSVLoader, JsonLoader
+title: CSVLoader, JsonLoader, TextLoader, PyPDFLoader
 date: 2026-06-02
 keywords: Langchain, Gemini, CSVLoader, JsonLoader
 ---
@@ -273,13 +273,14 @@ print(documents)
 ```
 
 ## TextLoader
+content.txt
 ```
 天氣好
 你好
 Hello!
 Nice to meet you!
 ```
-
+因為我的檔案content.txt內容不多，chunk_size不能調整太大，否則無法切割段落。<br>
 {% highlight python linenos %}
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
