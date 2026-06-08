@@ -60,10 +60,10 @@ id3 讀書
 id4 旅行
 ```
 ## similarity_search
-similarity_search 在向量資料庫搜尋匹配的內容。
+similarity_search 在向量資料庫搜尋比對的內容。
 ```
 result = vector_store.similarity_search(
-    要搜尋匹配的內容,
+    要搜尋比對的內容,
     要比對的數量
 )
 
@@ -98,7 +98,7 @@ print(result)
 {% endhighlight %}
 以下會產生三筆Document，page_content 為欄名action:符合詢問的條件，row為資料是第幾筆，資料從action之後的列數開始數，「請假」的index為0, 最後一筆「旅行」的index為4。<br>
 
-匹配到三筆跟「我想出去玩」有相關的內容有:「休假」、「旅行」、「請假」<br>
+比對到三筆跟「我想出去玩」有相關的內容有:「休假」、「旅行」、「請假」<br>
 ```
 [Document(id='id1', metadata={'source': './data/info.csv', 'row': 1}, page_content='action: 休假'), Document(id='id4', metadata={'source': './data/info.csv', 'row': 4}, page_content='action: 旅行'), Document(id='id0', metadata={'source': './data/info.csv', 'row': 0}, page_content='action: 請假')]
 ```

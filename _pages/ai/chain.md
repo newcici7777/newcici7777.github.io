@@ -3,21 +3,32 @@ title: Chain
 date: 2026-05-20
 keywords: Langchain, Chain
 ---
+Chain的 or 原理:
 {% highlight python linenos %}
 class Test(object):
     def __init__(self, name):
         self.name = name
     def __or__(self, other):
+        # 把自己跟other 作為參數傳給物件
+        # a | b 參數就是a,b
+        # a | b 傳回的是 MySequence 物件
         return MySequence(self, other)
     def __str__(self):
         return self.name
 
 class MySequence(object):
+    # a | b 傳回的是 MySequence 物件
+    # *args 為 a , b
     def __init__(self, *args):
         self.sequence = []
         for arg in args:
+            print(f"init arg: {arg}")
             self.sequence.append(arg)
+    # a | b | c
+    # 因為 a | b 傳回的是 MySequence 物件，與 c 進行 or 的時候，使用的是MySequence的 or 方法
     def __or__(self, other):
+        # 會輸出 c
+        print(f"or other: {other}")
         self.sequence.append(other)
         return self
     def run(self):
@@ -33,6 +44,9 @@ if __name__ == '__main__':
     d.run()
 {% endhighlight %}
 ```
+init arg: a
+init arg: b
+or other: c
 a
 b
 c
