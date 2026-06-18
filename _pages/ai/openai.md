@@ -12,16 +12,16 @@ pip 為Python 套件安裝工具，支援下載、安裝、移除。<br>
 <https://www.python.org/>
 
 2.點擊最上方Pypi 
-![img]({{site.imgurl}}/ai/pipy1.png)<br>
+![img]({{site.imgurl}}/ai/pypi1.png)<br>
 
 搜尋openai
-![img]({{site.imgurl}}/ai/pipy2.png)<br>
+![img]({{site.imgurl}}/ai/pypi2.png)<br>
 
 搜尋出來的網址:<https://pypi.org/project/openai/>
 
 拉至網頁下方，會有相關openai的使用方法。
 
-![img]({{site.imgurl}}/ai/pipy3.png)<br>
+![img]({{site.imgurl}}/ai/pypi3.png)<br>
 
 ## 終端機安裝open ai
 Pycharm打開終端機，安裝open ai<br>

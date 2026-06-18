@@ -3,6 +3,10 @@ title: mac使用方式
 date: 2025-03-24
 keywords: mac
 ---
+## 剪下 移動 檔案
+1.在原始位置按下 Command (⌘) + C 複製。
+2.到目標資料夾，按下 Option (⌥) + Command (⌘) + V。
+
 ## 傳輸線連接iphone，側邊欄找不到
 
 iphone，設定 > 一般 > 移轉或重置iphone > 重置定位服務與隱私權
