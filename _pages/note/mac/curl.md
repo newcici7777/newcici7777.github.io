@@ -3,6 +3,9 @@ title: curl
 date: 2026-06-17
 keywords: curl
 ---
+
+參考此網站<https://www.runoob.com/linux/linux-comm-curl.html>
+
 curl 本身是 "Client URL" 的縮寫，而你後面接的 -L 和 -o 是兩個非常關鍵的參數（Flags）。我們把這行指令拆解開來，你一秒就能聽懂它在幹嘛：
 
 🔍 指令大拆解

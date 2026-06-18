@@ -56,6 +56,32 @@ Proceed (Y/n)? y
   Successfully uninstalled requests-2.32.5
 ```
 
+不設定版本，下載最新版本。
+```
+pip3 install openai
+```
+
+設定版本
+```
+pip3 install openai=設定版本
+pip3 install openai=2.13.0
+```
+
+使用 show 可查詢套件詳細資訊。
+```
+% pip show openai
+Name: openai
+Version: 2.43.0
+Summary: The official Python library for the openai API
+Home-page: https://github.com/openai/openai-python
+Author: 
+Author-email: OpenAI <support@openai.com>
+License: Apache-2.0
+Location: /Users/cici/PythonProject/AIProject/.venv/lib/python3.11/site-packages
+Requires: anyio, distro, httpx, jiter, pydantic, sniffio, tqdm, typing-extensions
+Required-by: 
+```
+
 ## Pycharm
 
 ![img]({{site.imgurl}}/python/pycharm_package1.png)<br>
