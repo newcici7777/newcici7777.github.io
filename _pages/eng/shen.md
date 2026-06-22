@@ -418,6 +418,7 @@ re回 拉=拉回来=缩回，撤销
   - retractable 可收起的adj.
 
 ## cede ceed cess走
+### cede
 precede [prI'sid] v. 先于  
 pre在前 =走在别人前面  
 
@@ -427,6 +428,17 @@ re向後 cede 走 = 向後走 = 退卻
 intercede [Inta'si:d]v.求情，调解  
 inter在中间 走 =在两个人中间走 =调解  
 
+secede [s呃'si:d] v. 退出，脱离  
+se分离 走 =走分开了 =脱离  
+
+concede [ken'si:d]v. 承认，认输  
+con強調 走=强调走的动作=让步  
+语言上的让步 =承认  
+比赛上的让步 =认输  
+
+exceed [Ik'si:d]v超过，超出  
+ex外走 =走到了范围之外=超出
+
 cede 用於動詞  
 cess  用於名詞  
 
@@ -434,8 +446,82 @@ cess  用於名詞
   - precedent 先例n ent人事物
   - unprecedented 史无前例的 adj. ed是形容詞
 - recede 退却v
-
-6902
   - recession 衰退n
+- intercede 求情， 调解v
+  - intercession 调解n
+- secede 退出v
+  - secession 退出n.
+- concede 承认，认输v
+  - concession 让步，妥协 n
+- exceed 超过v
+  - exceeding 极度的adj.
+  - exceedingly 极度地 adv.
+  - 对比：excess 过量：2过各的adlu
 
+### ceed 動詞 cess名詞
+proceed tpre' si:d] v. 前进，进行  
+pro在前 走=往前走  
 
+process [praoses] n. 过程，v. 加工  生產的過程
+pro在前 走 =在前面一步步走 =走的过程  
+
+succeed [sak'si:d]v. 成功，接替  
+suc随后 走=紧随其后跟上 =接替  
+=继续坚持做 =成功  
+
+access [aekses] n. 入口  V.接近，进入  
+ac到 走 =走到 = 进入，接近  
+
+對比:  
+proceed V前进，进行  <-對比-> process 过程n，加工  
+succeed 成功，接替 v <-對比->	success 成功n  
+
+- proceed 前进，进行v
+  - proceeding 诉讼程序n. ing 程序進行中
+  - procedure 程序n
+- process 过程n，加工v cess視為程序處理
+  - procession 队伍n. pro前 cess 走 ion事物 走在前面的事物
+- succeed 成功，接替 v
+  - succeeding 紧接的adj.
+- success 成功n
+  - successful 成功的adj.
+  - successive 相继的adj，後面跟著的人 ive是adj
+  - succession 继位n
+- access 入口n， 进入v
+  - accessible 易获取的adj. 可接近
+  - accessary 附帶的，附件 adj 接近主體附件
+
+## val 價值
+value  n. 价值，重要性  
+
+revalue [ri: vaelju]v. 重估  
+re 重新 价值 =重新定价=重估  
+
+devalue [di: vaeljur]v.贬低，贬值  
+de向下 价值 =价值变低=贬低，贬值  
+
+valid ['vaelId] adj.有效的，合法的    
+价值的=有价值的就是有效的  
+价值ID=有价值的ID = 合法有效的  
+
+avail [a'veIl] v 有益于，n.利益  
+a对 价值 =对...有价值 =有益于  
+
+Evaluate [i'vaeljueIt]v.评估，评价  
+e使 val价值 ate动词 =使…有价值 =评价  
+
+- value 价值，重要性 n.
+  - valuable 宝贵的adi.
+  - invaluable 无价的adj。
+  - valueless 没价值的adj  
+- revalue 重估 v.
+- devalue 贬低，贬值v
+- valid 有效的，合法的ad.
+  - invalid 无效的adj.
+  - validity 有效性n
+- avail 有益于w利益n
+  - available 可用的adj.
+- evaluate 评估，评价v
+  - evaluation 评估，评价n
+
+6938

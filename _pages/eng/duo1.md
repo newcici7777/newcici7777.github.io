@@ -35,10 +35,14 @@ Is Duo [on your basketball team]?
 
 She's not [on] this baseball team.
 
+### 在街上
+在这条街上有一个咖啡店。  
+There's a coffee shop [on] this street.  
+
 ## 日期
 [March first] is my son's birthday.  
 
-## in 年月四季 上午中午下午 範圍 大地方 
+## in 年月四季 上午下午晚上 範圍 大地方 
 範圍:  
 She's the tallest girl in my school.
 
@@ -59,29 +63,66 @@ summer].
 月份:
 I am not going to study in August.  
 
-上午中午下午前面要加上the :  
-We can meet at a cafe [in the] morning.  
+上午下午晚上前面要加上the :  
+- in the morning 在早上
+- in the afternoon 在下午 
+- in the evening 在晚上
 
-在下午二點  
-at two o'clock [in the afternoon].  
+We can meet at a cafe [in the] morning.   
 
-## at 小地點 時間 「一天之內」的範圍
+## at 小地點 時間 at中午/午夜 
+### 小地點
 Oscar is at an art museum.
 
+Is there a bookstore [at the end of that
+street]?
+
 We can meet at a cafe.
+
+### 時間
+it's one o'clock!  
+one 前面不加at
 
 我们可以上午十一点见吗?  
 Can we meet at 11 a.m.?  
 
+### 中午 午夜
 「一天之內」的範圍:  
-We can have dinner together at night.
+We can have dinner together at night.  
+We can have dinner together at noon.
 
+## 複合
 在下午二點  
 at two o'clock in the afternoon  
 
-## open closed 開門關門
+[on Sunday morning], she'll visit her
+aunt in Beijing.  
+
+在周五早上
+on Friday morning  
+on Monday morning.  
+on Tuesday afternoon.
+on Sunday afternoon.
+
+他在周日下午会提早回家。  
+He will come home early on Sunday afternoon.  
+
+Who will come to the party with me [in New York on
+Saturday evening]?
+
+tomorrow morning.
+
+## open closed 開門關門 from to
 The museum [is open] [from] ten o'clock [to] five o'clock [on] Saturday, but it [is closed] [on]
 Sunday.
+
+咱们从博物馆走去餐厅吧。
+Let's walk from the museum to the restaurant.  
+
+## before after
+你可以六点钟之前回家吗？  
+Can you [come home] before six o'clock?  
+
 
 ## have 吃飯 喝飲料 吃藥 舉辦party
 We can have dinner.    
@@ -89,6 +130,21 @@ have drinks.
 have medison.  
 have a party.  
 have a picnic.野餐  
+have a meeting 開會
+have a baby. 生小孩
+
+
+I [never have time] to make breakfast for you.  
+我沒有時間。  
+
+我們明天早上不會開會  
+We won't have a meeting tomorrow morning.  
+
+鸡有手吗？
+[Do] chicken[s] have hands?
+
+她明年五月会生一个宝宝。  
+she'll have a baby next May.  
 
 ## into 進入
 A janitor walks into the room.  
@@ -187,38 +243,74 @@ This is the tallest and oldest roller coaster in the country.
 
 Ben is the most important player. 
 
+这是在镇上最糟糕的咖啡店！  
+This is the worst coffee shop in town!  
+
 在美国最贵的城市是哪个？  
 Which is [the most expensive] city in the US?  
+
+哪个是在城市里最好的博物馆？  
+Which museum is the best in the city?  
+
+Which trip is the most exciting?  
 
 那场比赛最令人兴奋的部分  
 the most exciting part of that game  
 
 篮球是最难的运动吗？  
-Is basketball the most difficult sport?  
+Is basketball the most difficult sport?    
 
-Which trip is the most exciting?
+谁是在队里最糟糕的运运动员？  
+Who is the worst player [on] the team?  
+
+大城市比小城市更好吗？  
+Are big cit[ies] better than small cit[ies]?  
+
+
 
 - the youngest 最年輕
 - the fastest player
+- good, better, the best
+- bad, worse, the worst
 
 ## trip travel
 
 Which trip is the most exciting?
 
+下个月她将前往法国。  
+She'll travel to France next month.  
+
+多儿明年夏天会去加拿大旅游。  
+Duo will travel to Canada next summer.
+
+他们下个月会去英国旅游。  
+They'll travel to [the] UK next month.  
+
 ## take
 - take a test 考試
+- go on vacation 去度假
 - take a vacation 放假
 - take a trip 旅行
 
 安娜打算去美国旅行。  
 Anna is going to take a trip to the US.  
 
-## get 買東西 拿東西
+## get 買東西 拿東西 找工作 結婚
 Can I get you a cup of tea.  
 我可幫你拿一杯茶
 
+You need to get a job.  
+你需要找一份工作  
 
-## 上班 work
+when will Anna and Kevin get married?  
+
+買機票
+Can we get tickets?
+
+我明年會度假  
+I'll take a vacation next year.  
+
+## 工作上班 work
 名詞work
 Eddy is [at work].
 
@@ -230,9 +322,17 @@ I am not going to work on my birthday.
 
 I don't work on Sundays.
 
+本为一家很好的公司工作。  
+Ben works [for] a good company.  
+
+谁下周会在家工作？  
+Who will [work from home] next week?  
+
 ## come 回來 來
 come home 回家  
 I have to finish cleaning before your dad [comes home].  
+
+Kids,Mom will not [come home] [from] the hospital tonight.
 
 Lily 跟我一起來
 Lily is coming with me!
@@ -240,6 +340,9 @@ Lily is coming with me!
 Lucas goes to [the] park with his dog every day.
 
 you come to the park every day.
+
+谁今晚会跟我一起来聚会？  
+Who will come to the party with me tonight?  
 
 ## go
 go to bed「去睡覺」這件事情，bed前面沒加the  
@@ -250,11 +353,24 @@ goes to the park 去公園
 go to the doctor's office 看醫生  
 They go to the doctor's office.  
 
-## make 做菜 泡茶 做蛋糕
+你明年夏天会去哪里？  
+Where will you go next summer ?   
+
+## make 做菜 泡茶 做蛋糕 煎蛋
 蛋糕是可數名詞，記得加s。  
 I like to make cake[s] .  
 
+我在煎蛋  
+I'm making egg[s].  
 
+Making Breakfast  
+
+Eddy is making breakfast [for] Junior.  
+for 代表給，breakfast 這邊是不可數名詞，不能加s。  
+
+Junior! I'm making [a big breakfast] [for you]!  
+
+we can make lunch!  
 
 ## for
 for 後面是名詞  
@@ -289,6 +405,9 @@ Can we play your video game?
 Do you want to play tennis together [this Sunday]?  
 注意，有this，就不加on  
 
+猫在玩网球  
+The cat is playing with a tennis ball.  
+
 ## start
 start 後面可以用to或ing
 ```
@@ -297,6 +416,12 @@ start + Ving 把動作變成「做...的事情」，變名詞
 ```
 He starts eating the sandwich.  
 Junior starts to wash the dishes.  
+
+你下周会开始你的新工作。  
+You will [start] your new [job] next week.  
+
+下一节课什么时候会开始？  
+When will [the next class] start? 
 
 ## late 副詞
 副詞放在句尾  
@@ -313,7 +438,9 @@ too 前加逗號
 Adults clean the table, too.  
 
 too 前不加逗號
-I think you're beautiful too!
+I think you're beautiful too!  
+
+there's sausage too!  
 
 too 放在be 動詞後面:  
 This is too dangerous!  
@@ -335,6 +462,10 @@ see代表看見(隨意看)
 I see you drawing every day.  
 
 It's nice to see you again,
+
+## look for 尋找
+你在找哪一条街？  
+Which street are you looking for?  
 
 ## 同位詞
 Eddy and his friend [Oscar] are at an art museum.  
@@ -367,7 +498,9 @@ coffee.
 咖啡是液體，不可數名詞，不加s。  
 
 love,like是動詞，要連接其它動詞用to或Ving  
-Ilike to make a cake .
+I like to make a cake .
+
+You love eating sausage for breakfast!  
 
 ## 現在式(習慣) 頻率副詞
 always放在動詞前  
@@ -392,9 +525,6 @@ One day, he decides to talk to her.
 我们在同一个班。  
 We are in [the same] class.  
 
-## 未來(即將會去做)
-I am going to take a vacation next week.
-
 ## leave 離開
 你什麼時候離開?  
 When do you want to leave?  
@@ -405,6 +535,9 @@ When do you want to leave?
 ```
 Can I buy it for one hundred dollars.
 
+她下周会买一辆新车。  
+She will buy a new car next week.  
+
 ```
 人 pay 錢
 人 pay for 東西
@@ -413,8 +546,14 @@ Can I buy it for one hundred dollars.
 You can pay for your drink[s] here.  
 你可以在這裡為你的飲料付錢，注意！此時飲料為可數名詞加s。  
 
+```
+東西 take 花時間
+```
+making breakfast [takes a long time].  
 
-
+## between
+在咖啡店和动物园之间  
+between the coffee shop and the zoo  
 
 ## both 二者
 Both skirt[s] are green.
@@ -434,18 +573,71 @@ A lot of thing[s]!
 a lot 作為副詞，修飾動詞，放動詞後面。    
 在冬天經常下雪  
 It snows [a lot] in the winter.  
-
-
+在夏天经常下雨。
+It rains [a lot] in the summer.
 
 ## live in 住
-Ben lives in an apartment.  
+Ben [lives in] an apartment.  
+
+你明年会住在哪里？  
+Where will you [live] next year?  
+注意！這邊沒有in  
+
+## stay in 
+他们明年会留在加拿大。  
+They'll stay in Canada next year.  
 
 ## 可數不可數 名詞
 some可以形容可數與不可數名詞。  
 She needs some apple juice.  
 juice為不可數名詞，不能加s。  
 
+## near / next to / close to
+在动物园附近  
+near the zoo  
+
+我来自上海附近的一个小镇。  
+I am from a small town near Shanghai.
+
+这座楼靠近那个公园  
+This building is close to that park.  
+
+## inside
+咖啡店在楼的里面，不在外面。  
+The coffee shop is inside the building, not
+outside.  
+
+## pass past
+我需要开车经过动物园吗？  
+Do I need to drive past the zoo?  
+
+## 未來
+I am going to take a vacation next week.
+
+下个会议什么时候开始？  
+when will the next meeting start?  
+
+tomorrow you will meet your new baby brother!  
+
+他们明年冬天会搬到日本。  
+They'll move to Japan next winter.  
+
+不，我不会。我要搬到一个新城市！
+Will you buy a new car next month?  
+No, I won't. I'll move to a new city!  
+
+我们明天早上不会开会。  
+We won't have a meeting tomorrow
+morning.
+
+安娜下周末不会结婚。  
+Anna won't get married next weekend.  
+
 ## 其它疑惑
+### listen hear
+你能听到音乐吗？  
+Can you hear the music?  
+
 Sorry Anna, I can't meet you. My friend [is visiting.]  
 
 Something will go wrong!
@@ -459,5 +651,13 @@ This kind of cheese is nice!
 I love cake. cake應該是可數名詞，應該要加s
 
 We eat by the water.我们在水边吃。
+
+Can't wait for the trip!
+
+
+## 其它不知如何歸類
+你会选择哪个房子？  
+Which house will you [choose]?  
+
 
 6554
