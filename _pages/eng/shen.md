@@ -1,7 +1,7 @@
 ---
 title: Shen 字根字尾
 date: 2026-06-21
-keywords: English
+keywords: English,字根字尾
 ---
 ## port
 port 携带<br>
@@ -125,7 +125,7 @@ acle名词后缀 物品/状态 =看到的事物
   - self-respect 自尊 self自己
   - respectful 恭敬的
   - respectable 可敬的
-spectacle 壮观场面
+- spectacle 壮观场面
   - spectate 观看 ate 動詞 邊吃邊看
   - spectator 观众
   - spectacular 牡观的 ular 性質
@@ -260,7 +260,7 @@ serving ['s3vI] n.（饮食的）一份
 服务 ing名词 表示产物=服务的结果产物 =一份  
 
 servile ['s3:vaIl] adj.屈从的  
-服务 ile形容词=服务的态度 =屈从的
+服务 ile形容词=服务的态度 =屈从的  
 
 對比法  
 servi/c/e 服务  servi/l/e 屈从的 只有一個字不同  
@@ -281,4 +281,161 @@ ob朝向 服务 =朝向某个人去服务 =观察
   - observation 观察
   - observant 善子观察的 ant形容詞
 
-## tend 伸  
+## tend 伸
+tend rtend] v.倾向，照顾  
+伸 =伸向…=倾向…=伸出双手去照顾  
+
+attend [a'tend] v. 照顾、出席  
+at向 伸 =向.伸出手 =照顾  
+= 向…伸出耳=倾听=出席  
+
+contend [kon'tend] v. 斗争，主张  
+con一起 伸一起伸出手抢=斗争= 主张不同  
+
+intend [In'tend] v.打算，想要  
+in里面 伸 思绪在里面延伸 =思考=打算  
+
+- extend 延长
+  - extension 延展，延期
+  - extensive 广泛的，大量的 adj. ive形容詞
+  - extent 範圍、程度 (對比)
+- attend 照顾，出席
+  - attention 关注，注意力
+  - attentive 专心的，注意的
+  - attendance 出席，参加 n. ance是n
+- contend 斗争，主张
+  - contention 争论，论点
+- intend 打算
+  - intention 打算
+  - intended 有意的 有意的
+  - 对比：intent 意国，专注的(腦海打算認真思考)
+
+trend [trend ] v. 倾向，n.趋势  
+对比：tend =倾向于某种形势 =趋势  
+
+pretend tprr'tend] v.假装  
+pre提前 伸 =提前伸出手/脚 =假动作  
+
+tender [tenda(r) 〕 n.看护人， adj温柔的  
+伸 er人=伸手保护你的人 =看护人  
+
+tense [tens] adj. 紧张的  
+伸/拉 se色 =拉起脸色 =紧绷的神色  
+
+- tend 倾向，照料v
+  - tendance 照料n ance過程
+  - tendency 倾向，趋势n. ency狀態
+- trend 倾向火，趋势n
+  - trendy 时髦的adj. y形容詞，傾向某一趨勢
+- pretend 假装 v
+  - pretended 假装的adj.
+- tender 看护人n.温柔的a 。
+- tense 紧张的adj.
+  - intense 激烈的，强烈的adj.
+  - tension 紧张n
+
+## press 壓
+impress [Im'pres] v. 给.留下深刻印象  
+im = in 入 挤压 挤压 =挤压入 =印入脑海  
+
+express Irk'spres] n. 快车 v.表达  
+ex出 挤压 =想法从头脑里挤出来 =表达    
+=挤压出来的速度很快 =快车  
+
+depress [dI'pres] v. 使沮丧  
+de向下压 =情绪向下压=使沮丧  
+
+compress [kam'pres] v. 压缩  
+com一起 压 =各个方向一起压 =压缩  
+
+oppress [a'pres] v. 压迫  
+op加强动作 压 =拼命的压 =压迫  
+
+pressure ['presar] n. 压力，挤压  
+压 ure名词后缀 =压  
+
+- impress 给..留下深刻印象 v
+  - impression 印象n
+  - impressive 印象深刻的adj.
+- express 表达v，快车n.
+  - expression 表达、表情 n.
+  - expressive 有表现力的 adj.
+- depress 使沮丧。
+  - depression 沮丧n.
+  - depressed( 感到沮丧的adj. ed表示人的情感
+  - depressing 令人沮丧的 adj. ing表示事物
+- compress 压缩v.
+- oppress 压迫v
+- pressure 压力，挤压 n
+
+## tract 拉/抽
+
+abstract [aebstraekt] v提炼 n摘要，adj.抽象的  
+abs分离 抽 =抽出来 =提炼  
+=提炼文章 =摘要  
+=学术摘要 =抽象的  
+
+attract [a'traekt ]v. 吸引  
+at向 拉=向…拉=拉过来 =吸引  
+
+contract [kontraekt] v. 收缩，n.合同  
+con 一起 拉 =一起拉紧 =收缩  
+=双方拉到一起=签合同  
+
+subtract [sab'traekt]v.减去  
+sub下 拉=把下面的拉掉 =减去  
+
+distract idr'strcekt] v. 使分心  
+dis分开 拉 =把注意力拉开 =使分心  
+
+- abstract抽象的adj，摘要n提炼v
+  - abstracted 分离出来的，出神的adj.
+- attract 吸引v
+  - attraction 吸引力n
+  - attractive 吸引人的 adj.
+- contract 合同n收缩v
+  - contraction 收缩n
+- subtract 减去v
+  - subtraction 减法n
+
+extract rekstraekt] v. 取出  
+ex出 抽拉 =抽来出来 =取出  
+
+protract [pra'traekt] v.延长，伸展  
+pro向前 拉=向前拉=延长  
+
+retract [rI'traekt]v.缩回，收回，撒销  
+re回 拉=拉回来=缩回，撤销  
+
+- distract 使分心 V
+  - distraction 千扰 n.
+- extract 取出v
+  - extraction 取出
+  - extractor 抽油烟机，排气扇n or(人或事物東西)
+- protract 延长v
+  - protracted 拖延的，持久的adj.
+- retract 收回，撒销v
+  - retractable 可收起的adj.
+
+## cede ceed cess走
+precede [prI'sid] v. 先于  
+pre在前 =走在别人前面  
+
+recede v.退卻  
+re向後 cede 走 = 向後走 = 退卻  
+
+intercede [Inta'si:d]v.求情，调解  
+inter在中间 走 =在两个人中间走 =调解  
+
+cede 用於動詞  
+cess  用於名詞  
+
+- precede 先于v
+  - precedent 先例n ent人事物
+  - unprecedented 史无前例的 adj. ed是形容詞
+- recede 退却v
+
+6902
+  - recession 衰退n
+
+
