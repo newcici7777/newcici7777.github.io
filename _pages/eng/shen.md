@@ -524,4 +524,301 @@ e使 val价值 ate动词 =使…有价值 =评价
 - evaluate 评估，评价v
   - evaluation 评估，评价n
 
-6938
+## preci dign 價值
+appreciate [a'pri sieIt] V. 欣赏，感激  
+ap加强 价值 动词  
+= 强调一个人的价值 =欣赏感激  
+
+- precious 宝贵的adj
+  - preciousness 珍贵，珍宝n
+- appreciate 欣赏，感激v
+  - appreciation 欣赏，感激 n
+  - appreciative 欣赏的，感激的adj.
+
+indign [in'dain]adj.不值得的，不光彩的  
+in否定 dign价值=否定价值 =不值得的  
+
+dignify ['dIgnIfaIJ v.使高贵，抬举  
+dign价值 使得 =使高贵 =抬举  
+
+dignity ['dIgnati] n.高贵，尊严  
+价值 名词 =外在价值高贵 = 内在价值尊严  
+
+- indign 不值得的，不光彩的 adj
+- dignify 使高贵，抬举。
+  - dignified 高贵的adj
+  - undignified 不体面的adj.
+- dignity 高贵，尊严n.
+  - dignitary 权贵，显要人物 ary 人
+  - indignity 侮辱，轻视n
+
+## pend pens 懸掛 稱重 花費
+expend [Ik' spend] v. 花费  
+ex出 花费=花费出去  
+
+depend [dI'pend] v. 依靠，依赖  
+de下面 悬挂=悬挂在.下面
+
+pending [pendig] adj悬而末决的  
+悬挂 ing形容词 悬挂着的 =悬而未決的  
+
+pendant ['pendent] n. 挂件  
+悬挂 ant名词 = 悬挂的东西=挂件  
+
+append [a'pend] v. 附加  
+加强 悬挂 =强调挂上去的动作=附加  
+
+- expend 花费v
+  - expense 花费，费用n
+  - expensive 昂贵的adj.
+  - expenditure 支出，经费n
+- depend 依靠、依赖u
+  - dependency 依赖，属国n
+  - dependence 依赖n
+  - independence 独立n
+  - dependent 依赖的adj.
+  - independent 独立的adj.
+- pending 悬而未决的 adj.
+  - pendant 挂件n
+- append 附加v
+  - appendix 附录，闻尾n 附加器官
+  - appendicitis 阑展炎n
+
+dispense [dI'spens]v. 分配，配药  
+dis分开 pense称重= 分开来称重 =分配配药  
+
+dispensable 非必需的adj.  
+可以分配給別人，代表非必要  
+
+indispensable 必需的adj.  
+in反 非必須  able 可以
+負負得正 變成必須  
+
+dispensary 药房n  
+ary為場所，配藥的場所  
+
+pensive ['pensIv] adj.沉思的  
+pens称重 ive形容词 =称重量 =内心在衡量  
+
+pension ['pensn] n.养老金  
+pens花费 ion名词=定期支付的 =养老金  
+
+suspend [sa'spend]v.悬挂，暂停  
+sus在下面 悬挂 =悬挂在下面 =悬挂摇摆的事物终将停止
+
+pendulum [pend3alam] n.钟摆  
+悬挂 ulum事物=悬挂的东西 =钟摆  
+
+- dispense 分配，配药v
+  - dispensable 非必需的adj.
+  - indispensable 必需的adj.
+  - dispensary 药房n
+- pensive 沉思的ad.
+  - pensively 沉思地 adv.
+- pension 养老金n
+  - pensioner 养老金领取者 n. 
+- suspend 悬挂，暂停
+  - suspense 悬念，暂停n se是n
+  - suspension悬浮，停职n
+  - suspensive 暂停的adj.
+- pendulum 钟摆n
+  - pendulous 下垂的，摇摆的 ad. ous是adj
+
+## grad 邁步
+grade igrerd n.等级，级别  
+迈步 =迈步向上=等级  
+
+degrade [dI'greId ]v.降低，降解  
+de向下 grade等级= 等级下降 =降低  
+
+graduate ['graed3uat] v.毕业，n.毕业生  
+迈步 ate动名詞 u沒意思為了發音好念  
+=迈出人生第一步 =毕业生  
+
+undergraduate 大学生n  
+under下面 還沒畢業的學生  
+
+postgraduate 研究生n  
+post之後 在畢業之後  
+
+gradual ['graed3ual] adj 逐步的
+grad迈步 al形容詞 u沒意思為了發音好念
+
+ingredient [in'gridiant] n（食品）成分，要素  
+in進入 gred邁步 ent名詞 i 沒意思，發音好念  
+=迈步走进去，成为其中一部分 =成分  
+
+- grade 等级，级别n
+  - upgrade 提升，升级niv.
+  - downgrade 降低，降级nv.
+
+- degrade 降低，降解u
+  - degradable 可降解的 ad
+  - degradation 衰退，落魄n
+
+- graduate 毕业么毕业生n
+  - undergraduate 大学生n.
+  - postgraduate 研究生n
+  - graduation 毕业(典礼）n
+- gradual 逐步的adj
+  - gradually 逐步地 adv.
+- ingredient（食品)成分，要素n
+
+## gress 邁步
+progress ['prougres] v.n. 进步，进展  
+pro向前 迈步 =向前迈步 =进步，进展  
+
+digress [daI'gresJ v. 离题，走岔路  
+di离开 迈步=走路偏离了 =离题  
+
+aggress [a'gres] v. 进攻，侵犯  
+ag后 迈步 =向…靠近(敌意）=进攻  
+
+Congress ['kongres] n. 代表大会  
+con一起迈步 =（人民群众）一起向前走 = 人民代表大會  
+
+- progress 进步 nv.
+  - progressive 进步的，逐步的adj.
+  - progression 发展n  
+- digress 偏离主题v
+  - digressive 离题的adj.
+  - digression 离题，题外话n
+- aggress 政击，侵犯v
+  - aggressive 激进的adj.
+  - aggression 侵略，攻击性n
+- congress 代表大会n
+  - congressman 国会议员n
+  - congresswoman 国会女议员
+
+## fer 帶
+differ [dIfar]v.不同于  
+dif分開 带 = 分开来带=两者不同  
+
+refer [rI'fer]v.提到，涉及，参考  
+re再带 =对话时再一次带来话题=提到  
+=别人讲过的，再拿来讲=参考  
+
+prefer [prI'fer] v. 更喜欢，宁愿  
+pre先 拿=优先会拿的 =更喜欢  
+
+preferable 更好的 adj. 可以被別人喜歡，代表更好  
+
+confer [kon'fer]v. 商议，授予
+con一起 带/拿 =大家一起把意见带来 =商议  
+=大家一来拿 =授子学位  
+
+- differ 不同于，v
+  - different 不同的 adj.
+  - difference 差别n.
+- refer 提到，参考v
+  - reference 参考书n
+- prefer 更喜欢，宁愿v
+  - preference 偏爱，优先权 n
+  - preferable 更好的adj.
+  - preferably 更好地 adu.
+- confer 商议，授予v
+  - conference 会议 n.
+  - conferment 学位/荣誉授子n
+
+transfer v.n. 转乘，转让  
+trans從...到(穿) fer带 
+=从这里带到那里 =转乘转让  
+trains,火车带  
+
+offer [ofer] v.n. 提供，提议 n.录取通知书  
+of =向某一个方向带去 =提供  
+
+suffer v. 受苦，遭受  
+suf下面 带/负担 =站在下面承受负担=受苦  
+
+infer [In'Fer] v. 推断，推定  
+in裡面 =带到心里面去想 =推断  
+
+fertile [f3:taIl] adj 肥江的，富饶的  
+带 ile形容词 =（士壤里)带来的 =肥洪的  
+
+- transfer 转乘，转让 n.v
+  - transferable 可转移的adj.
+  - transferor 出让人n
+- offer 提供，提议nv，录取通知书n.
+- suffer 受苦，遭受v
+  - sufferable 可忍受的 adj.
+  - suffering 苦难n
+- infer 推断，推定v
+  - inferable 可推断的adj.
+  - inference 推断，推论n
+- fertile 肥天的 adj.
+  - fertilize 使肥洪v
+  - fertilizer 肥料n er東西、人、事物
+
+## ven vent 來
+ven vent 想成 go的過去式went 過去過來  
+
+Convene [kan'vi:n] v. 召集，集合  
+con一起 ven來=一起聚集过来 =召集  
+
+convention 大会，惯例n  
+大會=所有人召集過來  
+慣例=每天都開會  
+
+conventional 传统的adj.  
+慣例= 傳統 al形容詞  
+
+convenient adj. 方便的  
+con一起 ven來 i發音方便 ent形容詞  
+=顺便一起过来的=方便的  
+= 有時間可以一起過來 方便開會嗎？方便的    
+
+intervene [Inta'vin] v.干扰  
+inter在...之间 ven来 =在两者之间来回走 =干扰  
+
+prevent [prI'vent] v. 阳止，预防  
+pre提前 = 提前来做=预防，阻止  
+
+- convene 召集，集合v.
+  - convention 大会，惯例n
+  - conventional 传统的adi.
+- convenient 方便的 adj.
+  - convenience 便利n.
+  - inconvenient 不方便的adj.
+- intervene 千扰 v
+  - intervention 千涉n
+  - intervenient 干预的adj.  
+- prevent 阻止v
+  - preventable 可预防的adj.
+  - prevention 预防，阻止n
+
+venue [venju:] n. 聚会地点 发生地点  
+ven來 ue名词 =来的地方 =地点  
+
+revenue [revanju:] n. 收入，税收  
+re回 ven來 ue名詞=收回来的东西 =收入税收  
+
+avenue ['aevanju:] n. 林荫大道 大街  
+a向 來 ue名詞=向某个方向来来往往 =大街  
+
+invent [in'vent] v. 发明  
+in裡面 =走进来，走进研究某个领域  
+=研究出了结果 =发明  
+
+event [I'vent] n. 大事件，赛事  
+e出 來=出来的结果 = 事件  
+
+eventual 最后的adj.  
+出來的結果  
+
+advent ['aedvent] n. 来临，出现  
+ad向 來 = 向...而來 = 來臨 出現  
+
+- venue 聚会地点 n.
+- revenue 收入，税收n
+- avenue 大街，大道n
+- invent 发明v
+  - inventor 发明家n
+  - invention 发明n
+- event 大事件n
+  - eventual 最后的 adj.
+  - eventually 最后，终于adv 
+- advent 来临，出现n
+  - adventure 冒險n. ure東西來臨的機運
+  - adventurous 爱冒险的 adj
