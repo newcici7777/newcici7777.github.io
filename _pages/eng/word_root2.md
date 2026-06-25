@@ -44,6 +44,7 @@ a 強調:
 - age
 - ability
 - ation(at~~e~~ + ion)
+- ance 
 
 動詞
 - ate iate uate
@@ -60,6 +61,7 @@ a 強調:
 - y 形容詞
 - full less
 - ary ory(母音互換)
+- ant ent
 
 - 母音互換原則
 - 聲音相近字母互換原則
@@ -204,9 +206,11 @@ abl~~e~~ > ab_**l** > ab**i**l (i代表人)
 
 	dis否定能力
 
+
 ## ible 能夠
 母音互換原則:  
 **a**ble > **i**ble
+
 
 ### 字尾able 形容詞 能夠
 - change**able** adj， 易变的；常变的
@@ -240,6 +244,7 @@ m是山上
 - **mir**r**or** n. 镜子
 
 	r多寫一次 or名词（指工具）
+
 
 ## bear
 
@@ -279,6 +284,7 @@ h火 or或者 r熱 都讓人害怕
 
 	害怕 动词
 
+
 ## art n.藝術
 
 - art**work** n.艺术品
@@ -308,6 +314,7 @@ t 為**延伸**的**平台**，可以想成長長的桌子table
 - artisan n.工匠
 
 	artis~~t~~ 名词an~~t~~
+
 
 ### ert 用手去做
 母音替換原則:  
@@ -680,6 +687,163 @@ cla~~i~~m 刪掉i -> clam
 	强调de说清楚clam名词(atetion)  
 	把問題說清楚，罵政府
 
-## draw
+## draw 拉
+- draw**ing** n.素描画
 
-7524
+	draw画画ing名词
+- draw**back** n.缺点
+
+	draw拉back回來，因為缺點，拉你後腿
+- draw**er** n.抽屉
+
+	拉draw名词（工具）er
+- **with**draw v. 取款；撤回
+
+	伴随with,draw拉，把錢從銀行拉回來，放在自己身邊。
+
+### drag
+dra**w** -> dra**g**  
+
+- drag v. 拉;拖；拽
+
+## fact 做
+「做」出來的才是事實，不然都是理論。  
+
+- fact**ual** adj.事实的
+
+	ual形容词
+- fac**ulty** n.能力，才能；全体教职员
+
+	fac~~t~~制作 名词(ult+y)，有能力發揮才能的一群人
+- fact**or** n. 因素，要素
+	
+	fact制作or名词，做出事情的因素
+- factory n.工廠 ory名詞
+- **art**e**fact** n.工艺品
+
+	art手工 fact制作，e協助發音。
+
+### man 手/做
+
+- **man**u**factory** n.工廠
+
+	man手factory工廠，u協助發音。
+- manufacture nv.大量生产
+
+	manufactory 工廠 ure名词
+- manufactur**er** n.生产商，制造商
+
+	manufacture大量生产 er名词(人）
+
+### fect
+母音替換原則:  
+f**a**ct -> f**e**ct  
+
+- **a**ffect **v.** 影响
+	
+	a强调fect做
+- **e**ffect **n.** 效果
+
+	e强调fect做
+- affect**ion** n.喜爱
+- effect**ive** adj.有效的
+- **ef**fic**ient** adj.有效率的
+
+	e强调fic做ient形容词
+- effici**ency** n.效率
+
+	effici~~ent~~ 名词ency
+- **de**fect n.缺陷
+
+	de相反fect做，做出相反效果
+- defect**ive** adj，有缺陷的
+- **de**fic**ient** adj.不足的；有缺陷的 fic是做
+- defici**ency** n.不足;缺陷
+
+	defici~~ent~~ 名词ency
+- **su**ffic**ient** ad，充分的，足够的
+
+	sub下面fic做ient形容词
+- **per**fect adj.完美的
+
+
+### feat 做
+f**a**ct + f**e**ct = f**ea**t  
+
+- feat n.功绩，壮举
+
+	做出東西
+- **de**feat n/v.击败 
+
+	de相反
+- feat**ure** n.特征；特点
+
+### feas 做
+意思相近互換原則:  
+fea**t** -> fea**s**
+```
+t------------- 平台
+s~~~~~~~~~~~~~ 水流
+```
+
+- feas**ible** adj可行的
+
+### fict
+母音互換原則:  
+f**a**ct -> f**i**ct
+
+- fict**ion** n.小说
+
+	製作出小說
+
+
+### fit 做
+fi~~c~~t -> fit
+
+- **bene**fit n.好处;v.使收益；得益于
+
+	bene好 fit做
+- **bene**fic**ial** adj.有利的，有用的
+
+	好bene做fic形容词ial
+- **pro**fit n. 利润
+
+	提前pro做fit
+- **pro**fic**ient** adj.娴熟的，熟练的
+
+	pro提前fic做ient形容词
+
+
+### fic 做
+fic~~t~~ -> fic 
+
+- **di**ffic**ult** adj. 困难的
+	
+	di否定相反 做fic 形容词ult
+- difficult**y** n. 困难 字尾y這邊為名詞
+- **o**ffic**e** n. 办公室
+
+	o強調fic做 e在字尾不發音，幫助c發s
+	做事的地方
+- offic**er** n. 官员;军官；警官 er是人
+- offic**ial** n. 官员;adj，官方的
+- **sacr**ific**e** n.v.牺牲，献祭
+
+	神圣sacr做fic
+- **sign**ific**ant** adj.有重大意义的，重要的
+
+	符号sign做fic形容词ant
+- signific**ance** n.意义，重要性
+
+### fak 做
+聲音相近替換原則:  
+fa**c**~~t~~ -> fak  
+去掉字尾t，c跟k聲音相近，替換。  
+
+- fake adj.份造的，假的
+
+	製作假的
+
+## fall 錯誤 落下
+
+- fall v. 落下;n. 秋天
