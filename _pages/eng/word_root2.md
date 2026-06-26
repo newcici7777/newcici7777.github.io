@@ -62,7 +62,7 @@ a 強調:
 形容詞
 - al(ul) ous(ious) able 形容詞
 - ing 東西令人感覺
-- ed 我感覺
+- ed id 人感覺
 - y 形容詞
 - full less
 - ary ory(母音互換)
@@ -1067,6 +1067,1092 @@ pre提前jud判斷 偏見 ed 形容詞
 unprejudiced [ʌnˈprɛdʒədɪst] adj. 公正的
 un 否定 prejudiced 有偏見的
 
+## life 生命
+life 單數 lives 複數
+
+生命／生活（life, live, vital, vivid, survive, revive）
+
+life n. 生命 生活
+
+生命／生活（life, live, vital, vivid, survive, revive）
+
+lifetime [ˈlaɪfˌtaɪm] n. 一生；使用期限  
+life 生命 time 時間
+
+例句1: He spent his lifetime studying animals. 他花了一生研究動物。
+
+例句2: The machine has a lifetime of 10 years. 這台機器的使用期限是十年。
+
+例句3: She received a lifetime achievement award. 她獲得了終身成就獎。
+
+lifespan [ˈlaɪfˌspæn] n. 壽命；持續時間  
+life 生命 span 持續時間
+
+例句1: The average lifespan of a dog is 10 to 13 years. 狗的平均壽命是十到十三年。
+
+例句2: Humans have a longer lifespan than most animals. 人類的壽命比大多數動物長。
+
+例句3: Technological products have a short lifespan. 科技產品的壽命很短。
+
+lifestyle [ˈlaɪfˌstaɪl] n. 生活方式  
+life 生命 style 方式
+
+例句1: A healthy lifestyle includes exercise and good diet. 健康的生活方式包括運動和良好的飲食。
+
+例句2: He changed his lifestyle after moving to the countryside. 搬到鄉下後，他改變了生活方式。
+
+例句3: Many people prefer a simple lifestyle. 許多人偏好簡單的生活方式。
+
+lifelong [ˈlaɪfˌlɔŋ] adj. 終身的  
+life 生命 long 長
+
+例句1: They became lifelong friends. 他們成了終身的朋友。
+
+例句2: Learning is a lifelong journey. 學習是一趟終身的旅程。
+
+例句3: She has a lifelong passion for music. 她對音樂有著終身的熱情。
+
+lifeless [ˈlaɪfləs] adj. 死的；死氣沉沉的  
+life 生命 less 沒有（形容詞）
+
+例句1: The desert looked dry and lifeless. 這片沙漠看起來乾燥且毫無生氣。
+
+例句2: His eyes were lifeless and empty. 他的眼神死氣沉沉、空洞無神。
+
+例句3: The plant became lifeless after weeks without water. 這棵植物在幾週沒水後枯死了。
+
+### liv 生命
+
+live [lɪv] v. 生活；居住  
+live 生活
+
+例句1: They live in a small town. 他們住在一個小鎮上。
+
+例句2: Fish live in water. 魚生活在水中。
+
+例句3: She wants to live a happy life. 她想過幸福的生活。
+
+alive [əˈlaɪv] adj. 活著的；有活力的  
+a 強調 live 生命
+
+例句1: The patient is still alive. 病人還活著。
+
+例句2: The city comes alive at night. 這座城市在夜晚活躍起來。
+
+例句3: His stories make history come alive. 他的故事讓歷史活了起來。
+
+lively [ˈlaɪvli] adj. 精力充沛的  
+live 生命 ly 形容詞
+
+例句1: She is a lively and energetic person. 她是個活潑又有活力的人。
+
+例句2: The party was very lively. 派對非常熱鬧。
+
+例句3: The children had a lively discussion. 孩子們進行了一場熱烈的討論。
+
+### vil 生命
+liv -> 顛倒 -> vil
+
+特權／優待（privilege)  
+
+pri**vil**ege [ˈprɪvəlɪdʒ] n. 特權  
+priv 私人 leg 法律 e 名詞
+
+例句1: It is a privilege to meet you. 能見到你是我的榮幸。
+
+例句2: He has the privilege of using the private lounge. 他有使用私人休息室的特權。
+
+例句3: Education should be a right, not a privilege. 教育應該是權利，而不是特權。
+
+pri**vil**eg**ed** [ˈprɪvəlɪdʒd] adj. 享受特權的  
+privilege 特權 ed 形容詞
+
+例句1: She comes from a privileged background. 她出身特權階級。
+
+例句2: Only privileged members have access. 只有享有特權的成員才能進入。
+
+例句3: He feels privileged to work there. 他覺得能在那裡工作很榮幸。
+
+**under**privileged [ˌʌndɚˈprɪvəlɪdʒd] adj.貧窮的，弱勢的  
+under 在下面 privileged 特權
+
+例句1: The charity helps underprivileged children. 這個慈善機構幫助弱勢兒童。
+
+例句2: Many underprivileged families need support. 許多弱勢家庭需要支持。
+
+例句3: She volunteers to teach underprivileged students. 她志願教導弱勢學生。
+
+### wil 生命
+**v**vil -> wil   
+
+wild adj.野生的  
+wil是生命 d為~e~d形容词
+
+wildlife [ˈwaɪldˌlaɪf] n. 野生動物  
+wild 野生的 life 生命
+
+例句1: We saw many wildlife species in the national park. 我們在國家公園看到了許多野生動物物種。
+
+例句2: Protecting wildlife is important. 保護野生動物很重要。
+
+例句3: The documentary is about African wildlife. 這部紀錄片是關於非洲野生動物的。
+
+
+### vivi
+wil -> wi~~l~~ -> wi -> -> w拆成二個v -> vvi -> 換位置 viv
+
+vivid [ˈvɪvɪd] adj. 生動的；逼真的
+
+viv 生命 id 形容詞
+
+例句1: She has a vivid imagination. 她有生動的想像力。
+
+例句2: The colors are very vivid. 顏色非常鮮明逼真。
+
+例句3: He gave a vivid description of the accident. 他對事故做了生動的描述。
+
+**sur**vive [sɚˈvaɪv] v. 生存  
+sur 在上面，超過 vive 生命，超過生命的限制保持生命
+
+例句1: Many animals cannot survive in extreme cold. 許多動物無法在極寒中生存。
+
+例句2: She survived the car accident. 她在車禍中倖存下來。
+
+例句3: Plants need water to survive. 植物需要水才能生存。
+
+surviv**al** [sɚˈvaɪvəl] n. 生存  
+surviv~~e~~ 生存 al 名詞(形容詞名詞化)
+
+例句1: Survival depends on food and water. 生存取決於食物和水。
+
+例句2: The explorers fought for survival. 探險者們為生存而戰。
+
+例句3: Survival rates have improved. 存活率已經提高了。
+
+revive [rɪˈvaɪv] v. 復活，復甦  
+re 再次 vive 生命
+
+例句1: The doctor tried to revive the patient. 醫生試圖讓病人甦醒。
+
+例句2: They want to revive the old tradition. 他們想復興這項古老傳統。
+
+例句3: The economy is starting to revive. 經濟正開始復甦。
+
+### vit
+子音相近替換:  
+vi**v** -> vi**t** t代表生命的延伸tend
+```
+t ---------------
+```
+
+vit**al** [ˈvaɪtəl] adj. 極其重要的  
+vit 生命 al 形容詞
+
+例句1: Water is vital for all living things. 水對所有生物都至關重要。
+
+例句2: It is vital that we act quickly. 我們迅速行動至關重要。
+
+例句3: She plays a vital role in the team. 她在團隊中扮演極其重要的角色。
+
+### lon 生活
+母音替換原則:  
+l**i**v -> l**o**v
+
+把v顛倒:  
+lo**v** -> lo**n**
+
+colonize [ˈkɑləˌnaɪz] v. 聚居；殖民  
+co 一起 lon 生活 ize 動詞
+
+例句1: The British colonized many countries in the past. 英國在過去殖民了許多國家。
+
+例句2: Ants colonize new areas quickly. 螞蟻快速在新地區聚居。
+
+例句3: The settlers tried to colonize the island. 定居者試圖在島上殖民。
+
+colonization [ˌkɑlənəˈzeʃən] n. 殖民  
+coloniz~e~ 殖民 名詞（ate+ion）
+
+例句1: The colonization of Africa had a lasting impact. 非洲的殖民帶來了深遠的影響。
+
+例句2: European colonization changed the world map. 歐洲的殖民改變了世界地圖。
+
+例句3: The history of colonization is complex. 殖民的歷史很複雜。
+
+colony [ˈkɑləni] n. 群體；殖民地  
+colon~~ize~~ 聚居 y 名詞（colonize 變體）
+
+例句1: Australia was once a British colony. 澳洲曾經是英國的殖民地。
+
+例句2: There is a colony of ants under the tree. 樹下有一群螞蟻。
+
+例句3: The artist lived in a colony of artists. 這位藝術家住在一群藝術家之中。
 
 
 
+
+long 長
+
+例句1: She has long hair. 她留著長髮。
+
+例句2: The river is very long. 這條河流很長。
+
+例句3: It was a long journey. 那是一段漫長的旅程。
+
+longing [ˈlɔŋɪŋ] n. 渴望；思念
+
+long 長 ing 名詞
+
+例句1: She felt a deep longing for home. 她對家鄉深感思念。
+
+例句2: He has a longing to travel. 他渴望去旅行。
+
+例句3: The poem expresses a longing for peace. 這首詩表達了對和平的渴望。
+
+belong [bɪˈlɔŋ] v. 屬於
+
+be 狀態→待在 long 時間長
+
+例句1: This book belongs to me. 這本書屬於我。
+
+例句2: She feels she doesn't belong here. 她覺得自己不屬於這裡。
+
+例句3: Where do these items belong? 這些物品應該放在哪裡？
+
+belonging [bɪˈlɔŋɪŋ] n. 歸屬感；穩定關係
+
+belong 屬於 ing 名詞
+
+例句1: A sense of belonging is important. 歸屬感很重要。
+
+例句2: She finally found her belonging in the community. 她終於在這個社區找到了歸屬感。
+
+例句3: Family gives me a feeling of belonging. 家人給我一種歸屬感。
+
+longevity [lɔnˈdʒɛvəti] n. 長壽
+
+long 時間長 ev 年代 ity 名詞
+
+例句1: Good diet is linked to longevity. 良好的飲食與長壽有關。
+
+例句2: He is known for his longevity. 他以長壽聞名。
+
+例句3: The longevity of the company is impressive. 這家公司的長久存續令人印象深刻。
+
+longeval [lɔnˈdʒɛvəl] adj. 長壽的
+
+longevity 長壽 al 形容詞
+
+例句1: The longeval tortoise lived for over 150 years. 這隻長壽的陸龜活了一百五十多年。
+
+例句2: Longeval individuals often have healthy habits. 長壽的人通常有健康的習慣。
+
+例句3: This species is known to be longeval. 這個物種以長壽聞名。
+
+lifelong [ˈlaɪfˌlɔŋ] adj. 終身的
+
+life 生命 long 時間長
+
+例句1: They are lifelong partners. 他們是終身的伴侶。
+
+例句2: She has a lifelong dream. 她有一個終身的夢想。
+
+例句3: Lifelong learning is essential. 終身學習是必要的。
+
+prolong [prəˈlɔŋ] v. 延長（時間）
+
+pro 向前 long 長
+
+例句1: The medicine can prolong life. 這種藥可以延長壽命。
+
+例句2: Don't prolong the argument. 不要延長爭論。
+
+例句3: They want to prolong their stay. 他們想延長停留的時間。
+
+
+## 線（line）
+line [laɪn] n. 線，線條  
+line 線
+
+例句1: Draw a straight line. 畫一條直線。
+
+例句2: Please stand in line. 請排隊。
+
+例句3: The line on the map shows the route. 地圖上的線條顯示了路線。
+
+airline [ˈɛrˌlaɪn] n. 航空公司；航線  
+air 天空 line 線
+
+例句1: Which airline are you flying with? 你搭哪家航空公司？
+
+例句2: The airline has many international routes. 這家航空公司有許多國際航線。
+
+例句3: She works for a major airline. 她在一家大型航空公司工作。
+
+outline [ˈaʊtˌlaɪn] n. 輪廓；v. 概述  
+out 外面 line 線 ，畫一個東西的外線
+
+例句1: She drew the outline of the house. 她畫出了房子的輪廓。
+
+例句2: The teacher asked us to outline the chapter. 老師要求我們概述這一章。
+
+例句3: He gave a brief outline of his plan. 他簡要概述了他的計劃。
+
+
+
+lineage [ˈlɪniɪdʒ] n. 宗系；血統
+
+line 線 age 名詞
+
+例句1: He is of noble lineage. 他有貴族血統。
+
+例句2: They traced their lineage back to the 18th century. 他們將家族血統追溯到十八世紀。
+
+例句3: Her lineage is well documented. 她的血統有詳盡的記載。
+
+line-up [ˈlaɪnˌʌp] n. 陣容
+
+line 線 up 朝...的方向
+
+例句1: The band has a new line-up. 樂團有了新的陣容。
+
+例句2: The starting line-up was announced. 先發陣容已經公布。
+
+例句3: The festival has an impressive line-up of artists. 這個音樂節有令人印象深刻的演出陣容。
+
+deadline [ˈdɛdˌlaɪn] n. 截止日期
+
+dead 死 line 線
+
+例句1: The deadline is next Friday. 截止日期是下週五。
+
+例句2: We have to meet the deadline. 我們必須趕上截止日期。
+
+例句3: He missed the deadline for the application. 他錯過了申請的截止日期。
+
+lineal [ˈlɪniəl] adj. 直系的，嫡系的  
+line 線 al 形容詞 大家都在同一個生命線
+
+例句1: He is a lineal descendant of the king. 他是國王的直系後裔。
+
+例句2: The inheritance follows lineal succession. 繼承依循直系繼承順序。
+
+例句3: She is his lineal heir. 她是他的嫡系繼承人。
+
+lined [laɪnd] adj. 有皺紋的
+
+line 線 ed 形容詞
+
+例句1: Her face is lined with age. 她的臉因歲月而布滿皺紋。
+
+例句2: He has a lined forehead. 他的額頭有皺紋。
+
+例句3: The old man's hands were lined. 老人的雙手布滿皺紋。
+
+underline [ˌʌndɚˈlaɪn] v. 畫下劃線；強調突出  
+under 下面 line 線
+
+例句1: Please underline the important words. 請在重要的單詞下面畫線。
+
+例句2: The report underlines the need for reform. 這份報告強調了改革的必要性。
+
+例句3: Her speech underlined the main issues. 她的演講強調了主要問題。
+
+linear [ˈlɪniɚ] adj. 線的；直線的  
+line 線 ar 形容詞
+
+例句1: The graph shows a linear relationship. 圖表顯示了線性關係。
+
+例句2: He thinks in a linear way. 他用直線式的方式思考。
+
+例句3: The design uses linear shapes. 這個設計使用了直線形狀。
+
+delineate [dɪˈlɪniˌet] v. 描述；解釋
+
+de 下面 line 線 ate 動詞
+
+例句1: The map clearly delineates the borders. 這張地圖清楚地描繪了邊界。
+
+例句2: She delineated her plan step by step. 她一步步地描述了她的計劃。
+
+例句3: The report delineates the main causes. 這份報告闡述了主要原因。
+
+align [əˈlaɪn] v. 結盟；使對齊
+
+a 強調 lign 線（line 變體）
+
+例句1: Please align the text to the left. 請將文字向左對齊。
+
+例句2: The two companies aligned their interests. 兩家公司結盟以整合利益。
+
+例句3: His views align with mine. 他的觀點與我的一致。
+
+guideline [ˈɡaɪdˌlaɪn] n. 指導方針
+
+guide 指導 line 一行文字
+
+例句1: Follow the safety guidelines. 請遵守安全指導方針。
+
+例句2: The teacher gave us guidelines for the project. 老師給了我們這項計劃的指導方針。
+
+例句3: These are the guidelines for the exam. 這些是考試的指導原則。
+
+headline [ˈhɛdˌlaɪn] n. 標題
+
+head 頭 line 一行文字
+
+例句1: The headline caught my attention. 這個標題引起了我的注意。
+
+例句2: The story made the front-page headlines. 這個故事登上了頭版頭條。
+
+例句3: She read the headline aloud. 她大聲讀出了標題。
+
+長（long）
+long [lɔŋ] adj. 長的
+
+
+強／長度（strength, length, width, depth, death, warmth, path, growth, childbirth, wealth）
+strength [strɛŋθ] n. 強度
+
+strong 強 th 名詞（strong 變體）
+
+例句1: He has great physical strength. 他有很強的體力。
+
+例句2: The strength of the material is remarkable. 這種材料的強度很驚人。
+
+例句3: She showed inner strength. 她展現了內在的力量。
+
+length [lɛŋθ] n. 長度
+
+leng 長 th 名詞
+
+例句1: Measure the length of the table. 量一下桌子的長度。
+
+例句2: The length of the movie is two hours. 這部電影的長度是兩小時。
+
+例句3: The river is 100 miles in length. 這條河流長一百英里。
+
+lengthy [ˈlɛŋθi] adj. 漫長的
+
+length 長度 y 形容詞
+
+例句1: He gave a lengthy speech. 他發表了一場冗長的演講。
+
+例句2: The process is lengthy and complicated. 這個過程漫長而複雜。
+
+例句3: We had a lengthy discussion. 我們進行了一場漫長的討論。
+
+lengthen [ˈlɛŋθən] v. 使變長
+
+length 長度 en 動詞
+
+例句1: You can lengthen the dress. 你可以把這件連衣裙加長。
+
+例句2: The days start to lengthen in spring. 春天白天開始變長。
+
+例句3: They decided to lengthen the runway. 他們決定延長跑道。
+
+width [wɪdθ] n. 寬度
+
+wide 寬 th 名詞（wide 變體）
+
+例句1: What is the width of the room? 這個房間的寬度是多少？
+
+例句2: The width is 10 meters. 寬度是十公尺。
+
+例句3: Measure the width before buying the carpet. 買地毯前先量一下寬度。
+
+depth [dɛpθ] n. 深度
+
+deep 深 th 名詞（deep 變體）
+
+例句1: The depth of the pool is 6 feet. 游泳池的深度是六英尺。
+
+例句2: She explored the depth of his emotions. 她探討了他情感的深度。
+
+例句3: The submarine descended to great depth. 潛水艇下潛到很深的地方。
+
+death [dɛθ] n. 死亡
+
+die 死 th 名詞（die 變體）
+
+例句1: His death was a great loss. 他的逝世是巨大的損失。
+
+例句2: The accident caused several deaths. 這場事故造成數人死亡。
+
+例句3: She mourned the death of her friend. 她哀悼她朋友的去世。
+
+warmth [wɔrmθ] n. 溫暖；熱情
+
+warm 暖 th 名詞
+
+例句1: The warmth of the fire was comforting. 爐火的溫暖令人感到舒適。
+
+例句2: She spoke with warmth and kindness. 她說話時帶著溫暖和善意。
+
+例句3: We enjoyed the warmth of the sun. 我們享受著陽光的溫暖。
+
+path [pæθ] n. 道路；路徑
+
+pass 通過 th 名詞（pass 變體）
+
+例句1: The path leads to the forest. 這條小路通往森林。
+
+例句2: She followed the path to the river. 她沿著小路走到河邊。
+
+例句3: He chose a different career path. 他選擇了不同的職涯道路。
+
+growth [ɡroʊθ] n. 發育；成長
+
+grow 成長 th 名詞（grow 變體）
+
+例句1: The plant shows rapid growth. 這棵植物顯示出快速的生長。
+
+例句2: Economic growth is essential. 經濟成長是必要的。
+
+例句3: Her growth as an artist was remarkable. 她作為藝術家的成長很驚人。
+
+childbirth [ˈtʃaɪldˌbɝθ] n. 分娩，生孩子
+
+child 孩子 birth 生（bear 變體）
+
+例句1: She had a difficult childbirth. 她分娩時很困難。
+
+例句2: Modern medicine has made childbirth safer. 現代醫學讓分娩變得更安全。
+
+例句3: Her mother was present during childbirth. 她母親在分娩時在場。
+
+wealth [wɛlθ] n. 財富；富足
+
+well 好 th 名詞（well 變體）
+
+例句1: He has accumulated great wealth. 他累積了巨大的財富。
+
+例句2: Wealth does not always bring happiness. 財富不一定帶來幸福。
+
+例句3: The country is known for its natural wealth. 這個國家以自然資源豐富聞名。
+
+思想／記憶／心智（mind, ment, mean, memory）
+mind [maɪnd] n. 思想
+
+mind 思想
+
+例句1: She has a brilliant mind. 她有聰明的頭腦。
+
+例句2: His mind is full of ideas. 他的腦海裡充滿了想法。
+
+例句3: A healthy mind is as important as a healthy body. 健康的心智和健康的身體一樣重要。
+
+remind [rɪˈmaɪnd] v. 提醒，使想起
+
+re 再次 mind 想到
+
+例句1: Please remind me to call her. 請提醒我打電話給她。
+
+例句2: This song reminds me of my childhood. 這首歌讓我想起我的童年。
+
+例句3: She reminded him about the meeting. 她提醒他有關會議的事。
+
+reminder [rɪˈmaɪndɚ] n. 引起回憶的事物
+
+remind 提醒 er 名詞
+
+例句1: This photo is a reminder of our trip. 這張照片是我們旅行的紀念。
+
+例句2: Set a reminder for the appointment. 為預約設定一個提醒。
+
+例句3: The letter was a reminder of her promise. 這封信提醒了她曾經的承諾。
+
+simple-minded [ˈsɪmpəlˈmaɪndɪd] adj. 頭腦簡單的，愚蠢的
+
+simple 簡單 mind 思想 ed 形容詞
+
+例句1: He is too simple-minded to understand the joke. 他太頭腦簡單了，聽不懂這個笑話。
+
+例句2: Don't be so simple-minded! 別這麼天真！
+
+例句3: The character is portrayed as simple-minded. 這個角色被描繪成頭腦簡單。
+
+broad-minded [ˈbrɔdˈmaɪndɪd] adj. 心胸開闊的
+
+broad 寬的 mind 思想 ed 形容詞
+
+例句1: She is very broad-minded and tolerant. 她非常心胸開闊且有包容心。
+
+例句2: A broad-minded person accepts different opinions. 心胸開闊的人能接受不同的意見。
+
+例句3: He has a broad-minded view of life. 他對人生有開闊的視野。
+
+fair-minded [ˈfɛrˈmaɪndɪd] adj. 公正的
+
+fair 公平的 mind 思想 ed 形容詞
+
+例句1: A good judge must be fair-minded. 一位好法官必須是公正的。
+
+例句2: She gave a fair-minded assessment. 她做了公正的評估。
+
+例句3: He is known for being fair-minded. 他以公正聞名。
+
+high-minded [ˈhaɪˈmaɪndɪd] adj. 高尚的
+
+high 高的 mind 思想 ed 形容詞
+
+例句1: She has high-minded ideals. 她有高尚的理想。
+
+例句2: His high-minded principles guide his actions. 他高尚的原則指導著他的行動。
+
+例句3: The leader is high-minded and honest. 這位領導者高尚且誠實。
+
+like-minded [ˈlaɪkˈmaɪndɪd] adj. 志趣相投的
+
+like 像 mind 思想 ed 形容詞
+
+例句1: We are like-minded about many things. 我們在很多事情上志趣相投。
+
+例句2: She found a group of like-minded friends. 她找到了一群志同道合的朋友。
+
+例句3: Like-minded colleagues work well together. 志趣相投的同事能合作愉快。
+
+mindless [ˈmaɪndləs] adj. 沒頭腦的；機械性的
+
+mind 思想 less 沒有（形容詞）
+
+例句1: It was a mindless mistake. 這是個沒動腦筋的錯誤。
+
+例句2: The job is boring and mindless. 這份工作無聊又不用動腦。
+
+例句3: He made a mindless comment. 他說了句沒經過大腦的話。
+
+unmindful [ʌnˈmaɪndfəl] adj. 漫不經心的
+
+un 否定 mind 思想 ful 形容詞
+
+例句1: He was unmindful of the danger. 他沒注意到危險。
+
+例句2: She is often unmindful of others' feelings. 她常常不在意別人的感受。
+
+例句3: They were unmindful of the time. 他們沒注意時間。
+
+commend [kəˈmɛnd] v. 讚揚；推薦
+
+com 一起 mend 想到（mind 變體）
+
+例句1: The teacher commended her for her hard work. 老師稱讚她努力用功。
+
+例句2: I commend this book to all readers. 我向所有讀者推薦這本書。
+
+例句3: His courage was highly commended. 他的勇氣受到高度讚揚。
+
+mental [ˈmɛntəl] adj. 思想的；精神的
+
+ment 思想 al 形容詞
+
+例句1: Mental health is important. 心理健康很重要。
+
+例句2: She has strong mental strength. 她有強大的精神力量。
+
+例句3: The patient needs mental care. 病人需要精神上的照護。
+
+memorial [məˈmɔriəl] adj. 有紀念意義的；n. 紀念碑
+
+memory 回憶 ial 形容詞／名詞（memory 變體）
+
+例句1: A memorial service was held. 舉行了一場追悼儀式。
+
+例句2: The memorial honors the fallen soldiers. 這座紀念碑是為了紀念陣亡將士。
+
+例句3: They built a memorial in the park. 他們在公園裡建了一座紀念碑。
+
+mention [ˈmɛnʃən] v. 提到，寫到，說到
+
+ment 想到 ion 名詞（動詞化）
+
+例句1: Did she mention the meeting? 她有提到會議的事嗎？
+
+例句2: He mentioned your name. 他提到了你的名字。
+
+例句3: The report mentions several key issues. 這份報告提到了幾個關鍵問題。
+
+mean [min] v. 意味著，表示...的意思
+
+mean 想法
+
+例句1: What does this word mean? 這個單字是什麼意思？
+
+例句2: Love means different things to different people. 愛對不同的人有不同的意義。
+
+例句3: This signal means danger. 這個信號表示危險。
+
+meaning [ˈminɪŋ] n. 意義，意思
+
+mean 表示...的意思 ing 名詞
+
+例句1: What is the meaning of life? 生命的意義是什麼？
+
+例句2: The meaning of the word is unclear. 這個單字的意思不明確。
+
+例句3: She explained the meaning of the poem. 她解釋了這首詩的含義。
+
+mentor [ˈmɛntɔr] n. 導師；顧問
+
+ment 思想 or 名詞（指人）
+
+例句1: My mentor gave me great advice. 我的導師給了我很好的建議。
+
+例句2: She is a mentor to young entrepreneurs. 她是年輕創業家的導師。
+
+例句3: The professor served as his mentor. 這位教授擔任他的導師。
+
+remember [rɪˈmɛmbɚ] v. 回想起，記得
+
+re 再次 member 想起（mem 思想 ber 動詞化）
+
+例句1: I remember her name. 我記得她的名字。
+
+例句2: Can you remember what happened? 你記得發生了什麼事嗎？
+
+例句3: He remembered to lock the door. 他記得要鎖門。
+
+remembrance [rɪˈmɛmbrəns] n. 紀念；紀念品
+
+remember 記得 ance 名詞
+
+例句1: She kept the ring as a remembrance. 她保留這枚戒指作為紀念。
+
+例句2: A ceremony was held in remembrance of the victims. 舉行了一場儀式來紀念受害者。
+
+例句3: He gave me a photo as a remembrance. 他給我一張照片作為紀念。
+
+memory [ˈmɛməri] n. 記憶力；回憶
+
+mem 想到 ory 名詞
+
+例句1: She has a good memory. 她的記憶力很好。
+
+例句2: The song brings back happy memories. 這首歌帶回了快樂的回憶。
+
+例句3: His memory is failing. 他的記憶力正在衰退。
+
+memorize [ˈmɛməˌraɪz] v. 記憶，記住
+
+memory 記憶力 ize 動詞（memory 變體）
+
+例句1: She memorized the poem. 她背下了這首詩。
+
+例句2: You need to memorize the vocabulary. 你需要記住這些單字。
+
+例句3: He memorized all the dates. 他記住了所有的日期。
+
+光／閃電／輕微／高興／視力／飛行／緊（light, lightning, slight, blight, delight, sight, eyesight, flight, tight）
+light [laɪt] n. 光
+
+light 光
+
+例句1: The light is too bright. 光線太亮了。
+
+例句2: She turned on the light. 她打開了燈。
+
+例句3: Sun light fills the room. 陽光照亮了房間。
+
+flashlight [ˈflæʃˌlaɪt] n. 手電筒
+
+flash 閃光 light 光
+
+例句1: He used a flashlight to find his way. 他用手電筒找路。
+
+例句2: The flashlight battery is dead. 手電筒的電池沒電了。
+
+例句3: She carried a flashlight for safety. 為了安全，她帶了一支手電筒。
+
+lightning [ˈlaɪtnɪŋ] n. 閃電
+
+light 光 n ing 名詞
+
+例句1: The lightning lit up the sky. 閃電照亮了天空。
+
+例句2: Lightning struck the tree. 閃電擊中了那棵樹。
+
+例句3: Thunder and lightning frightened the children. 雷電嚇壞了孩子們。
+
+slight [slaɪt] adj. 輕微的
+
+slight 小的
+
+例句1: There is a slight difference. 有一點微小的差異。
+
+例句2: She has a slight cold. 她有點輕微的感冒。
+
+例句3: He made a slight mistake. 他犯了一個小錯誤。
+
+blight [blaɪt] n. 農作物的疫病；v. 損害
+
+blight 疫病（B=房子 聯想）
+
+例句1: The crop was destroyed by blight. 農作物被疫病摧毀了。
+
+例句2: Poverty blights many communities. 貧窮損害了許多社區。
+
+例句3: The disease blighted the plants. 這種病害侵襲了植物。
+
+delight [dɪˈlaɪt] n. 高興；v. 使高興
+
+de 加強 light 光（聯想：高興如光）
+
+例句1: The children screamed with delight. 孩子們高興地尖叫。
+
+例句2: Her singing delighted the audience. 她的歌聲讓觀眾感到愉悅。
+
+例句3: He takes delight in reading. 他從閱讀中得到樂趣。
+
+delighted [dɪˈlaɪtɪd] adj. 高興的
+
+delight 高興 ed 形容詞
+
+例句1: She was delighted with the gift. 她對這份禮物感到很高興。
+
+例句2: We are delighted to welcome you. 我們很高興歡迎你。
+
+例句3: He gave a delighted smile. 他露出了開心的笑容。
+
+sight [saɪt] n. 視野；景象
+
+sight 看
+
+例句1: The sight of the ocean was beautiful. 海洋的景象很美。
+
+例句2: He lost his sight in the accident. 他在事故中失明了。
+
+例句3: The sights of the city impressed us. 這座城市的景色給我們留下了深刻的印象。
+
+eyesight [ˈaɪˌsaɪt] n. 視力
+
+eye 眼睛 sight 看
+
+例句1: Her eyesight is getting worse. 她的視力越來越差。
+
+例句2: Good eyesight is important. 好的視力很重要。
+
+例句3: He had laser surgery to improve his eyesight. 他做了雷射手術來改善視力。
+
+flight [flaɪt] n. 飛行；航班
+
+flight 飛
+
+例句1: The flight was delayed. 航班延誤了。
+
+例句2: She booked a flight to Paris. 她訂了去巴黎的航班。
+
+例句3: The bird's flight was graceful. 鳥的飛行姿態很優雅。
+
+tight [taɪt] adj. 緊的
+
+tight 緊（tie 捆綁）
+
+例句1: These shoes are too tight. 這雙鞋太緊了。
+
+例句2: She wore a tight dress. 她穿了一件緊身的連衣裙。
+
+例句3: He has a tight schedule. 他的行程排得很緊。
+
+高／戰鬥／正確／驚嚇（height, fight, right, fright）
+height [haɪt] n. 高度
+
+high 高的 t 名詞（high 變體）
+
+例句1: What is the height of the building? 這棟建築的高度是多少？
+
+例句2: She is of average height. 她是中等身高。
+
+例句3: The plane climbed to a great height. 飛機爬升到很高的高度。
+
+fight [faɪt] n. 戰鬥；吵架
+
+fight 戰鬥
+
+例句1: They had a fight after school. 他們放學後打了一架。
+
+例句2: The fight for freedom continues. 爭取自由的戰鬥仍在繼續。
+
+例句3: He got into a fight with his brother. 他和他哥哥吵了一架。
+
+right [raɪt] adj. 正確的；n. 權利
+
+right 權利／正確
+
+例句1: You are right. 你是對的。
+
+例句2: Everyone has the right to education. 每個人都有受教育的權利。
+
+例句3: She made the right decision. 她做了正確的決定。
+
+fright [fraɪt] n. 驚嚇
+
+fright 驚嚇（right 變體）
+
+例句1: The loud noise gave me a fright. 巨大的噪音嚇了我一跳。
+
+例句2: She nearly died of fright. 她差點嚇死了。
+
+例句3: He turned pale with fright. 他嚇得臉色發白。
+
+frighten [ˈfraɪtən] v. 使驚嚇
+
+fright 驚嚇 en 動詞
+
+例句1: The storm frightened the children. 暴風雨嚇壞了孩子們。
+
+例句2: Don't frighten the dog. 別嚇那隻狗。
+
+例句3: She was frightened by the dark. 她被黑暗嚇到了。
+
+部分／分開（part, apart, apartment, department, parent, parcel, portion, proportion, apportion, separate, separation, jeopardy, jeopardize）
+part [pɑrt] n. 部分
+
+part 部分
+
+例句1: A part of me wants to go. 我有一部分想去。
+
+例句2: She played a part in the play. 她在戲劇中扮演了一個角色。
+
+例句3: The machine has many parts. 這台機器有許多零件。
+
+particle [ˈpɑrtɪkəl] n. 顆粒
+
+part 部分 icle 名詞（小）
+
+例句1: Dust particles floated in the air. 灰塵顆粒飄浮在空氣中。
+
+例句2: The filter removes small particles. 過濾器能去除微小顆粒。
+
+例句3: Scientists study subatomic particles. 科學家研究亞原子粒子。
+
+apart [əˈpɑrt] adv. 分離；相隔
+
+a 強調 part 分開
+
+例句1: They live apart from each other. 他們分開住。
+
+例句2: The two buildings are far apart. 這兩棟建築相距很遠。
+
+例句3: He tore the paper apart. 他把紙撕碎了。
+
+apartment [əˈpɑrtmənt] n. 公寓
+
+apart 分開 ment 名詞（分開的居住空間）
+
+例句1: She rents an apartment in the city. 她在城裡租了一間公寓。
+
+例句2: They live in a small apartment. 他們住在一間小公寓裡。
+
+例句3: The apartment has two bedrooms. 這間公寓有兩間臥室。
+
+department [dɪˈpɑrtmənt] n. 部門
+
+de 下面 part 分開 ment 名詞
+
+例句1: She works in the marketing department. 她在行銷部門工作。
+
+例句2: The department is hiring new staff. 這個部門正在招聘新員工。
+
+例句3: He is the head of the department. 他是這個部門的負責人。
+
+parent [ˈpɛrənt] n. 父母
+
+par 生 ent 名詞（人）
+
+例句1: Both parents attended the meeting. 父母雙方都參加了會議。
+
+例句2: She is a single parent. 她是單親家長。
+
+例句3: His parents live in the countryside. 他的父母住在鄉下。
+
+parcel [ˈpɑrsəl] n. 包裹；一塊地
+
+par 部分 cel 名詞
+
+例句1: He received a parcel in the mail. 他收到了一個郵寄包裹。
+
+例句2: The land is divided into parcels. 這塊土地被分成多塊地。
+
+例句3: She wrapped the parcel carefully. 她仔細地包裹了這個包裹。
+
+portion [ˈpɔrʃən] n. 一部分
+
+port 一部分 ion 名詞
+
+例句1: A large portion of the budget is for salaries. 預算的很大一部分用於薪資。
+
+例句2: She gave a portion of her food to the dog. 她把一部分食物給了狗。
+
+例句3: The portion was too small. 份量太小了。
+
+proportion [prəˈpɔrʃən] n. 份額；比例
+
+pro 提前 port 一部分 ion 名詞
+
+例句1: The proportion of men to women is equal. 男女比例是相等的。
+
+例句2: A small proportion of students failed the exam. 一小部分學生考試不及格。
+
+例句3: The proportion of ingredients is important. 食材的比例很重要。
+
+apportion [əˈpɔrʃən] v. 分配
+
+ap 強調 port 一部分 ion 動詞（名詞動詞化）
+
+例句1: The money was apportioned among the team members. 這筆錢在團隊成員之間進行了分配。
+
+例句2: They apportioned the tasks fairly. 他們公平地分配了任務。
+
+例句3: The land was apportioned to the settlers. 這塊土地被分配給了定居者。
+
+separate [ˈsɛpəˌret] adj. 單獨的；v. 分開
+
+se 分開 par 部分 ate 形容詞／動詞
+
+例句1: They sleep in separate rooms. 他們睡在各自的房間裡。
+
+例句2: Please separate the eggs from the flour. 請把雞蛋和麵粉分開。
+
+例句3: The couple separated last year. 這對夫妻去年分居了。
+
+separation [ˌsɛpəˈreʃən] n. 分離；離別
+
+separate 分開 ion 名詞
+
+例句1: Their separation was painful. 他們的分離很痛苦。
+
+例句2: The separation of powers is important. 權力分立很重要。
+
+例句3: She went through a difficult separation. 她經歷了一段艱難的分離。
+
+jeopardy [ˈdʒɛpɚdi] n. 危險，威脅
+
+jeopardy 危險（Joy 開心 聯想：開心有危險）
+
+例句1: His life is in jeopardy. 他的生命處於危險之中。
+
+例句2: The project is in jeopardy. 這個計劃面臨危險。
+
+例句3: She put her career in jeopardy. 她把事業置於危險之中。
+
+jeopardize [ˈdʒɛpɚˌdaɪz] v. 危害，損害
+
+jeopardy 危險 ize 動詞
+
+例句1: Smoking can jeopardize your health. 吸菸會危害你的健康。
+
+例句2: His actions could jeopardize the deal. 他的行為可能會危害這筆交易。
+
+例句3: She didn't want to jeopardize her reputation. 她不想損害自己的名譽。
+
+第一部分（part 相關補充）
+part [pɑrt] v. 分開（補充）
+
+part 分開
+
+例句1: She parted her hair in the middle. 她把頭髮從中間分開。
+
+例句2: The crowd parted to let him through. 人群分開讓他通過。
+
+例句3: They parted ways after college. 他們大學畢業後就分道揚鑣了。
