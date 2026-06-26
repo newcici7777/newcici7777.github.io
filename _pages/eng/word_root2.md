@@ -44,7 +44,12 @@ a 強調:
 - age
 - ability
 - ation(at~~e~~ + ion)
-- ance 
+- ance
+- acy 
+- ture ure
+- ice
+	- juice n果汁
+	- justice n公正 司法審介
 
 動詞
 - ate iate uate
@@ -55,13 +60,14 @@ a 強調:
 - ly
 
 形容詞
-- al(ul) ous able 形容詞
+- al(ul) ous(ious) able 形容詞
 - ing 東西令人感覺
 - ed 我感覺
 - y 形容詞
 - full less
 - ary ory(母音互換)
-- ant ent
+- ant ent en
+- 
 
 - 母音互換原則
 - 聲音相近字母互換原則
@@ -846,4 +852,221 @@ fa**c**~~t~~ -> fak
 
 ## fall 錯誤 落下
 
-- fall v. 落下;n. 秋天
+fall [fɔl] v. 落下；n. 秋天
+
+rainfall [ˈrenˌfɔl] n. 降雨量  
+rain 雨 fall 落下
+
+fallen [ˈfɔlən] adj. 倒下的；陣亡的  
+fall 落下 en~t~ 形容詞，t去掉
+
+fallacy [ˈfæləsɪ] n. 謬論  
+fall 錯誤
+
+fallacious [fəˈleʃəs] adj. 荒謬錯誤的  
+fallac~y~ 錯誤 acious 形容詞
+
+fallback [ˈfɔlˌbæk] n. 後備／退路  
+fall 倒下 back 向後，向後倒下還有退路
+
+fallible [ˈfæləbəl] adj. 會犯錯誤的  
+fall 錯誤 ible 能夠（形容詞）
+
+infallible adj.绝对可靠的  
+in否定(不會) fall犯錯
+
+### fal 落下 錯誤
+fall -> fal
+
+fal**s** 掉進水中 
+```
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+```
+
+false adj.错误的；假的
+
+falsify v. 篡政，伪造（文字记录、信息)  
+false假的 ify动词
+
+hood名詞:  
+false**hood** n.虚假；谎言  
+childhood n. 童年时期  
+neighborhood n.居住区，附近  
+
+## fail 錯誤
+f**a**l -> f**ai**l
+
+fail v. 失败
+
+failure [ˈfeljɚ] n. 失敗  
+fail 失敗 ure 名詞
+
+failed [feld] adj. 失敗的  
+fail 失敗 ed 形容詞
+
+failing [ˈfelɪŋ] n. 弱點；缺點  
+fail 失敗 ing 名詞
+
+### fault
+母音替換原則:  
+fa**i**l -> fa**u**l -> faul**t** 加上t
+
+fault [fɔlt] n. 毛病；缺點；過失
+fault 錯誤
+
+default [dɪˈfɔlt] n./v. 違約
+de 強調 fault 錯誤
+
+## hand 手
+
+handful n.一把  
+ful形容詞-> 轉名詞
+
+handled [ˈhændld] v. 處理（過去式）；此處原圖標示為 n. 手（可能有誤）
+hand 手 led
+
+handle [ˈhændəl] n. 把手；v. 處理，應付
+hand 手 le名詞
+
+handy [ˈhændɪ] adj. 順手的，便利的
+hand 手 y 形容詞
+
+hang [hæŋ] v. 懸掛；絞死
+han~d~ 手 g鉤子
+
+## man 手
+
+manage [ˈmænɪdʒ] v. 管理  
+man 手 age 動詞  
+
+manager [ˈmænɪdʒɚ] n. 經理  
+manage 管理 er 名詞（指人）  
+
+management [ˈmænɪdʒmənt] n. 管理  
+manage 管理 ment 名詞  
+
+manner [ˈmænɚ] n. 方法；舉止；禮貌  
+man 手 n er 名詞  
+
+manual [ˈmænjuəl] adj. 人工的；人造的  
+manu 手 al 形容詞  
+
+man-made [ˈmænˈmed] adj. 人工的；人造的  
+man 手 made 製造  
+
+manufactory [ˌmænjəˈfæktəri] n. 工廠  
+manu 手 fact 做 ory 地方（名詞）  
+
+manufacture [ˌmænjəˈfæktʃɚ] n./v. 大量生產  
+manu 手 fact 做 ure 名詞／動詞  
+
+manufacturer [ˌmænjəˈfæktʃɚɚ] n. 生產商，製造商  
+manufacture 大量生產 er 名詞（指人） 
+
+manipulate [məˈnɪpjəlet] v. 操控，操作  
+man 手 i 連接字母 pul 推（pull 變體） ate 動詞  
+用於控制、操作  
+
+emancipate [ɪˈmænsəpet] v. 釋放  
+e 出去 man 手 cip 抓 ate 動詞  
+用手抓一個人把他放出去   
+
+### fest 擊打 節日
+
+manifest [ˈmænəfɛst] v. 顯現；表明  
+man 手 i 擊打 fest  
+手被打到有痕跡會顯現 
+
+infest [ɪnˈfɛst] v. 大量滋生  
+in 否定 fest 擊打    
+不打細菌會大量滋生  
+
+fest**ival** [ˈfɛstəvəl] n. 節日  
+fest 擊打 ive+al 名詞／形容詞  
+節慶擊打鼓  
+
+fest**ive** adj. 節日的，喜慶的  
+
+fest**oon** n. 彩灯  
+fest節日 oon為名詞
+
+fe**a**st [fist] n. 宴會
+fest節日 節慶擊打鼓  
+中間加個a
+
+## just 剛好 剛才
+just [dʒʌst] adj. 剛好的；adv. 剛剛；正好  
+just 剛好
+
+adjust [əˈdʒʌst] v. 調整；適應  
+ad 加強 just 剛好  
+調到剛剛好
+
+adjustable [əˈdʒʌstəbəl] adj. 可調整的  
+adjust 調整 able 可以（形容詞）
+
+adjustment [əˈdʒʌstmənt] n. 調整；適應  
+adjust 調整 ment 名詞
+
+readjust [ˌriəˈdʒʌst] v. 微調；再適應   
+re 再次 adjust 調整
+
+## just 公正
+just 位於中間不偏向任何一邊
+
+just [dʒʌst] adj. 公正的，正直的  
+just 公正
+
+just**ice** [ˈdʒʌstɪs] n. 公正；司法審判  
+just 公正 ice 名詞
+
+just**ly** [ˈdʒʌstli] adv. 公正地  
+just 公正 ly 副詞
+
+just**ify** [ˈdʒʌstəˌfaɪ] v. 證明...正確；為...辯解  
+just 公正 ify 動詞
+
+justifi**able** [ˈdʒʌstəˌfaɪəbəl] adj. 正當的；可辯解的  
+justif~~y~~ 證明...正確 i 連接字母 able 形容詞
+
+justif**ication** [ˌdʒʌstəfəˈkeʃən] n. 正當理由
+justify 證明...正確 (ic+ at~e~ +ion) 名詞
+
+**in**justice [ɪnˈdʒʌstɪs] n. 不公正  
+in 否定 justice 公正
+
+**un**just [ʌnˈdʒʌst] adj. 不公正的  
+un 否定 just 公正
+
+### judg 公正
+ju**st** -> ju**dg**
+
+judg**e** [dʒʌdʒ] n. 法官；v. 判斷  
+judg 公正判斷 e 名詞／動詞
+
+judgement [ˈdʒʌdʒmənt] n. 判斷力
+judge 判斷 ment 名詞
+
+jud**icious** [dʒuˈdɪʃəs] adj. 有判斷力的，明智的
+jud~~ge~~ 公正判斷 (ic+ious) 形容詞
+
+**mis**judge [mɪsˈdʒʌdʒ] v. 錯誤判斷
+mis 錯誤 judge 判斷
+
+**ill**-judg**ed** [ˈɪlˈdʒʌdʒd] adj. 判斷不當的，考慮不周的
+ill 差 judge 判斷 ed 形容詞
+
+**pre**jud**ice** [ˈprɛdʒədɪs] n. 偏見
+pre 提前 jud~~g~~判斷 ice名詞
+
+**pre**judic**ed** [ˈprɛdʒədɪst] adj. 有偏見的
+pre提前jud判斷 偏見 ed 形容詞
+
+unprejudiced [ʌnˈprɛdʒədɪst] adj. 公正的
+un 否定 prejudiced 有偏見的
+
+
+
+
