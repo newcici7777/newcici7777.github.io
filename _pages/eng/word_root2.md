@@ -67,7 +67,7 @@ a 強調:
 - full less
 - ary ory(母音互換)
 - ant ent en
-- 
+
 
 - 母音互換原則
 - 聲音相近字母互換原則
@@ -80,84 +80,162 @@ a 強調:
 - act**ivation** ive+ate+ion 由最後一個ion決定詞性為名詞
 
 ## sit 坐
-- sit**e** 位置n
-	
-	字尾e不發音，幫助前面的母音i，發出原本的聲音  
-	坐的位置
-- **re**sit n.v.補考、重考
+- sit**e** [saɪt] n.位置 [🔊 聽發音](https://www.merriam-webster.com/dictionary/site)
 
-	re再次坐 = 重新坐在考場
-- sit**uate** v. 使坐落于
-	
-	动词字尾(ate+iate+uate)
-- situat**ion** n.情況
+  字尾e不發音，幫助前面的母音i，發出原本的聲音（坐的位置）  
+  例句1: This is the site of the new building. 這是新建築的地點。  
+  例句2: We visited the historic site. 我們參觀了歷史遺址。  
+  例句3: The site is under construction. 這個地點正在施工。  
 
-	situat~~e~~ 坐落的環境
+- **re**sit [ˌriˈsɪt] n./v.補考、重考 [🔊 聽發音](https://www.merriam-webster.com/dictionary/resit)
 
+  re再次坐 = 重新坐在考場  
+  例句1: He has to resit the exam. 他必須重考。  
+  例句2: The resit will be next week. 補考將在下週舉行。  
+  例句3: She passed the resit easily. 她輕鬆通過了補考。  
+
+- sit**uate** [ˈsɪtʃuˌet] v. 使坐落於 [🔊 聽發音](https://www.merriam-webster.com/dictionary/situate)
+
+  動詞字尾(ate+iate+uate)  
+  例句1: They plan to situate the school near the park. 他們計劃將學校坐落於公園附近。  
+  例句2: The town is situated on the river. 這個城鎮坐落於河邊。  
+  例句3: We need to situate the facts in their historical context. 我們需要將事實置於其歷史背景中。  
+
+- situat**ion** [ˌsɪtʃuˈeʃən] n.情況 [🔊 聽發音](https://www.merriam-webster.com/dictionary/situation)
+
+  situat~~e~~ 坐落的環境  
+  例句1: The situation is getting better. 情況正在好轉。  
+  例句2: She handled the difficult situation well. 她很好地處理了困難的情況。  
+  例句3: Let's review the current situation. 讓我們檢視一下當前的狀況。  
 
 ### sid sed set sess 坐
 #### sid
-聲音相近字母互換原則:  
+聲音相近字母互換原則：  
 si**t** -> si**d**
 
-- **re**sid**e** v.居住在
+- **re**sid**e** [rɪˈzaɪd] v.居住在 [🔊 聽發音](https://www.merriam-webster.com/dictionary/reside)
 
-	一個人在一個地方反覆坐  
-	re反覆 字尾e不發音，幫助i發原本字母的聲音，沒有意思
-- resid**ent** n.居民
+  一個人在一個地方反覆坐（re反覆，字尾e不發音，幫助i發原本字母的聲音，沒有意思）  
+  例句1: The family resides in the countryside. 這個家庭居住在鄉下。  
+  例句2: The power resides in the people. 權力在於人民。  
+  例句3: She resides abroad. 她居住在國外。  
 
-	resid~~e~~居住 ent名詞
-- resident**ial** adj.住宅的 ial形容词 reside居民
-- **pre**sid**e** v. 主持
+- resid**ent** [ˈrɛzədənt] n.居民 [🔊 聽發音](https://www.merriam-webster.com/dictionary/resident)
 
-	前面坐 坐在前面的主持人
-- **pre**sid**ent** 主持 人(ent) n. 主席；总统
-- **sub**side v. 下沉；减弱
+  resid~~e~~居住 ent名詞  
+  例句1: She is a resident of New York. 她是紐約的居民。  
+  例句2: Local residents are unhappy about the new development. 當地居民對這項新開發案感到不滿。  
+  例句3: The hotel has 500 residents. 這家飯店有五百位住客。  
 
-	sub 向下 坐 愈坐愈往下沈
-- **sub**sid**y** n.补贴；补助金
+- resident**ial** [ˌrɛzəˈdɛnʃəl] adj.住宅的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/residential)
 
-	sub下面 坐 y名词 坐著，下面不斷有人給你錢
+  reside居住 ial形容詞  
+  例句1: This is a quiet residential area. 這是個寧靜的住宅區。  
+  例句2: The building is used for residential purposes. 這棟建築用於住宅用途。  
+  例句3: They live in a residential neighborhood. 他們住在一個住宅區。  
 
+- **pre**sid**e** [prɪˈzaɪd] v. 主持 [🔊 聽發音](https://www.merriam-webster.com/dictionary/preside)
+
+  前面坐（坐在前面的主持人）  
+  例句1: The judge presided over the trial. 法官主持了審判。  
+  例句2: She will preside at the meeting. 她將主持會議。  
+  例句3: He presided over the company for ten years. 他主持這家公司十年了。  
+
+- **pre**sid**ent** [ˈprɛzədənt] n. 主席；總統 [🔊 聽發音](https://www.merriam-webster.com/dictionary/president)
+
+  主持 人(ent)  
+  例句1: The president gave a speech. 總統發表了演說。  
+  例句2: She was elected president of the club. 她被選為俱樂部主席。  
+  例句3: The president signed the bill into law. 總統簽署了法案使其成為法律。  
+
+- **sub**side [səbˈsaɪd] v. 下沉；減弱 [🔊 聽發音](https://www.merriam-webster.com/dictionary/subside)
+
+  sub 向下 坐（愈坐愈往下沈）  
+  例句1: The floodwaters finally subsided. 洪水終於退去了。  
+  例句2: The pain subsided after taking the medicine. 服藥後疼痛減輕了。  
+  例句3: The wind subsided in the evening. 風在傍晚時分減弱了。  
+
+- **sub**sid**y** [ˈsʌbsədi] n.補貼；補助金 [🔊 聽發音](https://www.merriam-webster.com/dictionary/subsidy)
+
+  sub下面 坐 y名詞（坐著，下面不斷有人給你錢）  
+  例句1: The government provides subsidies to farmers. 政府向農民提供補貼。  
+  例句2: They received a housing subsidy. 他們收到了住房補助金。  
+  例句3: The subsidy helps support the industry. 這項補貼有助於支持該產業。  
 
 #### sed
-母音互換原則:  
+母音互換原則：  
 s**i**d > s**e**d
 
-- sed**entary** adj.久坐的
+- sed**entary** [ˈsɛdənˌtɛri] adj.久坐的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/sedentary)
 
-	ent+ary 形容词
-- sed**ulous** adj.勤奋的
+  ent+ary 形容詞  
+  例句1: His sedentary lifestyle caused health problems. 他久坐的生活方式引起了健康問題。  
+  例句2: She has a sedentary job. 她有份久坐的工作。  
+  例句3: Sedentary habits are hard to break. 久坐的習慣很難改變。  
 
-	ul是al的變形(母音互換原則) ul+ous形容詞
-- sedi**ment** n.沉积物
+- sed**ulous** [ˈsɛdʒələs] adj.勤奮的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/sedulous)
 
-	i無作用 ment名词 坐落河底的東西，一直坐在那
-- **super**sed**e** v. 取代
+  ul是al的變形（母音互換原則）ul+ous形容詞  
+  例句1: She is a sedulous student. 她是個勤奮的學生。  
+  例句2: His sedulous efforts paid off. 他勤奮的努力得到了回報。  
+  例句3: The team worked with sedulous care. 團隊以勤奮的態度細心工作。  
 
-	super上面 坐 上面派人下來坐你的位置
+- sedi**ment** [ˈsɛdəmənt] n.沉積物 [🔊 聽發音](https://www.merriam-webster.com/dictionary/sediment)
+
+  i無作用 ment名詞（坐落河底的東西，一直坐在那）  
+  例句1: The sediment settled at the bottom of the river. 沉積物沉積在河底。  
+  例句2: There is sediment in the bottom of the bottle. 瓶底有沉澱物。  
+  例句3: The geologist studied the sediment layers. 地質學家研究了沉積物層。  
+
+- **super**sed**e** [ˌsupɚˈsid] v. 取代 [🔊 聽發音](https://www.merriam-webster.com/dictionary/supersede)
+
+  super上面 坐（上面派人下來坐你的位置）  
+  例句1: The new law supersedes the old one. 新法取代了舊法。  
+  例句2: Modern technology has superseded old methods. 現代科技已經取代了舊方法。  
+  例句3: This rule is superseded by a new regulation. 這條規則已被新規定取代。  
 
 #### set
-母音互換原則:  
+母音互換原則：  
 s**i**t > s**e**t
 
-- set 坐 v. 安置,设置；n.一套
-- sett**ing** n环境；情节设定
+- set [sɛt] v. 安置，設置；n.一套 [🔊 聽發音](https://www.merriam-webster.com/dictionary/set)
 
-	set设置ing名词
-- sett**le** v 定居；解决
+  坐  
+  例句1: Please set the table for dinner. 請擺好餐桌準備晚餐。  
+  例句2: She bought a set of tools. 她買了一套工具。  
+  例句3: The sun sets in the west. 太陽從西方落下。  
 
-	坐le动词
-- **up**set adj.难过的;v.使难过
+- sett**ing** [ˈsɛtɪŋ] n.環境；情節設定 [🔊 聽發音](https://www.merriam-webster.com/dictionary/setting)
 
-	底朝上放置 心情底朝天 快樂變難過
+  set設置 ing名詞  
+  例句1: The setting of the story is in Paris. 這個故事的背景設定在巴黎。  
+  例句2: The hotel is in a beautiful setting. 這家飯店位於美麗的環境中。  
+  例句3: Check the settings on your phone. 檢查你手機上的設定。  
 
+- sett**le** [ˈsɛtəl] v.定居；解決 [🔊 聽發音](https://www.merriam-webster.com/dictionary/settle)
+
+  坐 le動詞  
+  例句1: They decided to settle in Canada. 他們決定在加拿大定居。  
+  例句2: The dispute was finally settled. 爭議終於解決了。  
+  例句3: We need to settle this matter today. 我們今天需要解決這件事。  
+
+- **up**set [ʌpˈsɛt] adj.難過的；v.使難過 [🔊 聽發音](https://www.merriam-webster.com/dictionary/upset)
+
+  底朝上放置（心情底朝天，快樂變難過）  
+  例句1: She is upset about the news. 她對這個消息感到難過。  
+  例句2: Don't upset yourself over such a small thing. 別為這點小事讓自己難過。  
+  例句3: He was upset by her decision. 他對她的決定感到難過。  
 
 #### seat
-聲音相近字母互換原則:  
+聲音相近字母互換原則：  
 s**e**t > s**ea**t
 
-- seat n. 座位
+- seat [sit] n. 座位 [🔊 聽發音](https://www.merriam-webster.com/dictionary/seat)
+
+  坐  
+  例句1: Please take a seat. 請坐。  
+  例句2: She found a seat near the window. 她在窗邊找到了一個座位。  
+  例句3: The car has four seats. 這輛車有四個座位。  
 
 #### sess
 意思相近字母互換原則:  
@@ -169,97 +247,180 @@ t為平台，ss為水流:
 ~~~~~~~~~ 水流
 ```
 
-- **as**sess v. 评估，估算
+- **as**sess [əˈsɛs] v. 評估，估算 [🔊 聽發音](https://www.merriam-webster.com/dictionary/assess)
 
-	as强调 sess坐（法官旁边）
-- assess**ment** n评估，估算
+  as強調 sess坐（法官旁邊）  
+  例句1: The teacher assessed the students' work. 老師評估了學生的作業。  
+  例句2: It's difficult to assess the damage. 很難估算損失。  
+  例句3: We need to assess the situation first. 我們需要先評估情況。  
 
-	评估ment名词
-- sess**ion** n.一段时间;开庭；会议
+- assess**ment** [əˈsɛsmənt] n.評估，估算 [🔊 聽發音](https://www.merriam-webster.com/dictionary/assessment)
 
-	坐ion名词 坐很久
-- **ob**sess v. 使着迷
+  評估 ment名詞  
+  例句1: The assessment will take place next week. 評估將在下週進行。  
+  例句2: She completed a risk assessment. 她完成了一項風險評估。  
+  例句3: Your work is subject to continuous assessment. 你的工作將受到持續的評估。  
 
-	ob相对sess坐 二個人坐在對面，久了就喜歡
-- obsess**ion** n.痴迷；困扰
+- sess**ion** [ˈsɛʃən] n.一段時間；開庭；會議 [🔊 聽發音](https://www.merriam-webster.com/dictionary/session)
 
-	使着迷ion名词 太痴迷，對方會困擾
-- obsession**al** adj，痴迷的
+  坐 ion名詞（坐很久）  
+  例句1: The court is now in session. 法庭現在正在開庭。  
+  例句2: We had a long study session. 我們進行了一次長時間的學習時段。  
+  例句3: The training session lasted three hours. 訓練課程持續了三個小時。  
 
-	痴迷al形容词
-- obsess**ive** adj.着迷的；n.强迫症患者
+- **ob**sess [əbˈsɛs] v. 使著迷 [🔊 聽發音](https://www.merriam-webster.com/dictionary/obsess)
 
-	使着迷 ive形容词
+  ob相對 sess坐（兩個人坐在對面，久了就喜歡）  
+  例句1: He is obsessed with video games. 他對電玩遊戲著迷。  
+  例句2: Thoughts of success obsess her. 成功的想法使她著迷。  
+  例句3: Don't let work obsess your life. 別讓工作佔據你整個人生。  
+
+- obsess**ion** [əbˈsɛʃən] n.痴迷；困擾 [🔊 聽發音](https://www.merriam-webster.com/dictionary/obsession)
+
+  使著迷 ion名詞（太痴迷，對方會困擾）  
+  例句1: Her obsession with cleanliness is extreme. 她對清潔的痴迷到了極端。  
+  例句2: His obsession became a burden to his family. 他的痴迷成了家人的負擔。  
+  例句3: She has an unhealthy obsession with her appearance. 她對自己的外表有不健康的痴迷。  
+
+- obsession**al** [əbˈsɛʃənəl] adj.痴迷的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/obsessional)
+
+  痴迷 al形容詞  
+  例句1: He has obsessional tendencies. 他有強迫症傾向。  
+  例句2: Her obsessional behavior worried her friends. 她強迫性的行為讓朋友擔心。  
+  例句3: The patient suffers from obsessional thoughts. 這名患者有強迫性的念頭。  
+
+- obsess**ive** [əbˈsɛsɪv] adj.著迷的；n.強迫症患者 [🔊 聽發音](https://www.merriam-webster.com/dictionary/obsessive)
+
+  使著迷 ive形容詞  
+  例句1: He has an obsessive need for order. 他對秩序有著強迫性的需求。  
+  例句2: She is obsessive about cleanliness. 她對清潔有強迫症。  
+  例句3: Obsessive behavior can be treated. 強迫行為是可以治療的。  
 
 ## able 能夠
 
-- able adj.能够
-- **un**able adj.不能的
+- able [ˈebəl] adj.能夠 [🔊 聽發音](https://www.merriam-webster.com/dictionary/able)
 
-	un否定able能够
-- **dis**able**d** adj.残疾的
+  能夠  
+  例句1: She is able to speak three languages. 她能夠說三種語言。  
+  例句2: Will you be able to come? 你能來嗎？  
+  例句3: He was able to finish the project on time. 他能夠按時完成這個專案。  
 
-	dis否定able能够ed形容词
+- **un**able [ʌnˈebəl] adj.不能的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/unable)
 
+  un否定 able能夠  
+  例句1: He is unable to attend the meeting. 他無法參加會議。  
+  例句2: She was unable to find the answer. 她找不到答案。  
+  例句3: The baby is unable to walk yet. 這個嬰兒還不會走路。  
+
+- **dis**able**d** [dɪsˈebəld] adj.殘疾的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/disabled)
+
+  dis否定 able能夠 ed形容詞  
+  例句1: The hospital has facilities for disabled people. 這家醫院有為殘疾人士設置的設施。  
+  例句2: He was disabled in the accident. 他在事故中殘疾了。  
+  例句3: The car is equipped for disabled drivers. 這輛車配備了供殘疾駕駛者使用的裝置。  
 
 ### abil 能夠
 abl~~e~~ > ab_**l** > ab**i**l (i代表人)
 
-- abil**ity** n.能力
+- abil**ity** [əˈbɪləti] n.能力 [🔊 聽發音](https://www.merriam-webster.com/dictionary/ability)
 
-	能够 名词
-- **dis**ability n.残疾
+  能夠 名詞  
+  例句1: She has the ability to solve complex problems. 她有解決複雜問題的能力。  
+  例句2: His ability as a leader is unquestionable. 他作為領導者的能力是無庸置疑的。  
+  例句3: The ability to communicate is essential. 溝通的能力是必要的。  
 
-	dis否定能力
+- **dis**ability [ˌdɪsəˈbɪləti] n.殘疾 [🔊 聽發音](https://www.merriam-webster.com/dictionary/disability)
+
+  dis否定能力  
+  例句1: He was born with a disability. 他天生有殘疾。  
+  例句2: The center provides support for people with disabilities. 這個中心為殘疾人士提供支援。  
+  例句3: Her disability does not stop her from working. 她的殘疾並未阻止她工作。  
 
 
-## ible 能夠
-母音互換原則:  
+### ible 能夠
+母音互換原則：  
 **a**ble > **i**ble
 
 
 ### 字尾able 形容詞 能夠
-- change**able** adj， 易变的；常变的
+- change**able** [ˈtʃendʒəbəl] adj.易變的；常變的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/changeable)
 
-	改变 able形容词（能够）
-- reason**able** adj.合理的
+  改變 able形容詞（能夠）  
+  例句1: The weather is very changeable in spring. 春天的天氣非常多變。  
+  例句2: His mood is changeable. 他的情緒變化無常。  
+  例句3: Fashion is changeable. 時尚是變幻無常的。  
 
-	有能大把理由說明白
-- enjoy v.享受，喜欢
+- reason**able** [ˈrizənəbəl] adj.合理的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/reasonable)
 
-	in 进入 喜悦
-- enjoy**able** adj，令人愉悦的
+  有能大把理由說明白  
+  例句1: His offer is reasonable. 他的出價是合理的。  
+  例句2: She made a reasonable decision. 她做了一個合理的決定。  
+  例句3: The price seems reasonable. 價格看起來合理。  
 
-	能够享受able形容词(能够）
-- suitable adj.合适的
+- enjoy [ɪnˈdʒɔɪ] v.享受，喜歡 [🔊 聽發音](https://www.merriam-webster.com/dictionary/enjoy)
 
-	能够适合
+  in 進入 喜悅  
+  例句1: I enjoy reading books. 我喜歡閱讀。  
+  例句2: She enjoys playing tennis. 她喜歡打網球。  
+  例句3: We enjoyed the party very much. 我們非常享受這場派對。  
+
+- enjoy**able** [ɪnˈdʒɔɪəbəl] adj.令人愉悅的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/enjoyable)
+
+  能夠享受 able形容詞（能夠）  
+  例句1: It was an enjoyable evening. 那是個愉快的夜晚。  
+  例句2: The trip was very enjoyable. 這次旅行非常令人愉快。  
+  例句3: She finds her work enjoyable. 她覺得她的工作很愉快。  
+
+- suitable [ˈsutəbəl] adj.合適的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/suitable)
+
+  能夠適合  
+  例句1: Is this dress suitable for the occasion? 這件洋裝適合這個場合嗎？  
+  例句2: The movie is suitable for children. 這部電影適合兒童觀看。  
+  例句3: We need to find a suitable time to meet. 我們需要找一個合適的時間見面。  
 
 
-## mir 看 远望，眺望
+## mir 看 遠望，眺望
 m是山上  
 **i**r > **e**r 母音互換原則 er是人  
-人站在山上，**看**風景  = mir 远望，眺望 看  
+人站在山上，看風景 = mir 遠望，眺望 看  
 
-- **ad**mir**e** v. 钦慕；仰慕
+- **ad**mir**e** [ədˈmaɪr] v. 欽慕；仰慕 [🔊 聽發音](https://www.merriam-webster.com/dictionary/admire)
 
-	ad强调mir看
-- admir**able** adj值得钦佩的
+  ad強調 mir看  
+  例句1: I admire her courage. 我欽佩她的勇氣。  
+  例句2: He admires his father very much. 他非常仰慕他的父親。  
+  例句3: They admired the beautiful scenery. 他們欣賞了美麗的風景。  
 
-	admir~~e~~敬仰 able形容词（能够）
-- **mir**r**or** n. 镜子
+- admir**able** [ˈædmərəbəl] adj.值得欽佩的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/admirable)
 
-	r多寫一次 or名词（指工具）
+  admir~~e~~敬仰 able形容詞（能夠）  
+  例句1: Her dedication is admirable. 她的奉獻精神值得欽佩。  
+  例句2: He showed admirable patience. 他表現出值得欽佩的耐心。  
+  例句3: The team's performance was admirable. 這個團隊的表現令人敬佩。  
+
+- **mir**r**or** [ˈmɪrɚ] n. 鏡子 [🔊 聽發音](https://www.merriam-webster.com/dictionary/mirror)
+
+  r多寫一次 or名詞（指工具）  
+  例句1: She looked at herself in the mirror. 她照鏡子看自己。  
+  例句2: The mirror was broken. 鏡子破了。  
+  例句3: He hung a mirror on the wall. 他在牆上掛了一面鏡子。  
 
 
 ## bear
 
-- bear n.熊 v. 承受，忍受
+- bear [bɛr] n.熊 v. 承受，忍受 [🔊 聽發音](https://www.merriam-webster.com/dictionary/bear)
 
-	看到熊 装死,忍住
-- **un**bear**able** adj.难以忍受的；无法接受的
+  看到熊 裝死，忍住  
+  例句1: I can't bear the pain. 我無法忍受這疼痛。  
+  例句2: He bears responsibility for the project. 他承擔這個專案的責任。  
+  例句3: The ice is too thin to bear your weight. 冰太薄，承受不了你的重量。  
 
-	un否定bear忍受able形容词(能够）
+- **un**bear**able** [ʌnˈbɛrəbəl] adj.難以忍受的；無法接受的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/unbearable)
+
+  un否定 bear忍受 able形容詞（能夠）  
+  例句1: The heat is unbearable. 炎熱令人難以忍受。  
+  例句2: His behavior is unbearable. 他的行為令人無法接受。  
+  例句3: The grief was unbearable for her. 悲傷對她來說是難以承受的。  
 
 ## lieve = love 愛
 母音互換原則: 
@@ -1152,8 +1313,8 @@ pri**vil**eg**ed** [ˈprɪvəlɪdʒd] adj. 享受特權的
 ### wil 生命
 **v**vil -> wil   
 
-wild adj.野生的  
-wil是生命 d為~e~d形容词
+wild adj.野生的   
+  -wil是生命 d為ed形容词
 
 wildlife [ˈwaɪldˌlaɪf] n. 野生動物  
   - wild 野生的 life 生命  
@@ -1162,7 +1323,7 @@ wildlife [ˈwaɪldˌlaɪf] n. 野生動物
     例句3: The documentary is about African wildlife. 這部紀錄片是關於非洲野生動物的。
 
 
-### vivi
+### viv
 wil -> wi~~l~~ -> wi -> -> w拆成二個v -> vvi -> 換位置 viv
 
 vivid [ˈvɪvɪd] adj. 生動的；逼真的  
@@ -1332,7 +1493,7 @@ alignment [əˈlaɪnmənt] n. 結盟；排列整齊
 
 例句3: Check the alignment of the wheels. 檢查輪子的對齊情況。
 
-## long 長
+### long 長
 
 long [lɔŋ] adj. 長的  
   - 時間長  
@@ -1905,7 +2066,7 @@ par**ent** [ˈpɛrənt] n. 父母
     例句2: The separation of powers is important. 權力分立很重要。  
     例句3: She went through a difficult separation. 她經歷了一段艱難的分離。
 
-## pard
+### pard
 par**t** -> par**d**
 
 jeopardy [ˈdʒɛpɚdi] n. 危險，威脅  
