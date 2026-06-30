@@ -33,21 +33,21 @@ keywords: English, 字根字尾字首
   例句3: Diet restrictions are necessary for her health. 飲食限制對她的健康是必要的。  
 
 
-- constrict [kənˈstrɪkt] v.收縮；約束 [🔊 聽發音](https://www.merriam-webster.com/dictionary/constrict)
+- **con**strict [kənˈstrɪkt] v.收縮；約束 [🔊 聽發音](https://www.merriam-webster.com/dictionary/constrict)
 
   con 一起 strict 拉緊  
   例句1: The snake constricts its prey. 蛇收縮身體纏住獵物。  
   例句2: The tight collar constricted his breathing. 緊衣領壓迫他的呼吸。  
   例句3: Fear constricted his chest. 恐懼讓他胸口緊縮。  
 
-- constriction [kənˈstrɪkʃən] n.約束 [🔊 聽發音](https://www.merriam-webster.com/dictionary/constriction)
+- **con**strict**ion** [kənˈstrɪkʃən] n.約束 [🔊 聽發音](https://www.merriam-webster.com/dictionary/constriction)
 
-  constrict 收縮 ion 名詞  
+  con一起 strict 拉緊收縮 ion 名詞  
   例句1: He felt a constriction in his throat. 他感到喉嚨緊縮。  
   例句2: The constriction of blood vessels can cause high blood pressure. 血管收縮可能導致高血壓。  
   例句3: The new rules put a constriction on trade. 新規定對貿易造成了約束。  
 
-- district [ˈdɪstrɪkt] n.地區；行政區 [🔊 聽發音](https://www.merriam-webster.com/dictionary/district)
+- **dis**trict [ˈdɪstrɪkt] n.地區；行政區 [🔊 聽發音](https://www.merriam-webster.com/dictionary/district)
 
   dis 分開 strict 拉緊（分開的區域，管理者把自己的資源牢牢拉緊）  
   例句1: She lives in the business district. 她住在商業區。  
@@ -56,7 +56,7 @@ keywords: English, 字根字尾字首
 
 - stretch [strɛtʃ] v.拉緊；伸展 [🔊 聽發音](https://www.merriam-webster.com/dictionary/stretch)
 
-  str~~ic~~t 拉緊 ch 動詞 
+  str**i**c -> str**e**c -> stre**c** -> stre**tch** 拉緊 ch 動詞  
   例句1: She stretched her arms above her head. 她將手臂舉過頭頂伸展。  
   例句2: The rubber band stretched to its limit. 橡皮筋被拉緊到極限。  
   例句3: He stretched out his hand to shake mine. 他伸出手來和我握手。  
@@ -71,14 +71,14 @@ str**i**ct -> str**e**ct -> stre*ct** -> stress
   例句2: She is under a lot of stress at work. 她工作壓力很大。  
   例句3: He couldn't handle the stress of the job. 他無法承受這份工作的壓力。  
 
-- stressful [ˈstrɛsfəl] adj.緊張的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/stressful)
+- stress**ful** [ˈstrɛsfəl] adj.緊張的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/stressful)
 
   stress 壓力 ful 形容詞  
   例句1: The exam was very stressful. 考試非常緊張。  
   例句2: She has a stressful job. 她有份壓力很大的工作。  
   例句3: Moving to a new city can be stressful. 搬到一個新城市可能會很緊張。  
 
-- distress [dɪˈstrɛs] n.憂慮；v.使憂慮 [🔊 聽發音](https://www.merriam-webster.com/dictionary/distress)
+- **dis**tress [dɪˈstrɛs] n.憂慮；v.使憂慮 [🔊 聽發音](https://www.merriam-webster.com/dictionary/distress)
 
   dis 分散 stress 精神壓力  
   例句1: She was in great distress over the news. 她對這個消息感到非常憂慮。  
@@ -94,26 +94,26 @@ str**i**ct -> str**e**ct -> stre*ct** -> stress
   例句2: He is under a lot of strain. 他承受很大的壓力。  
   例句3: This is a new strain of wheat. 這是小麥的一個新品種。  
 
-- constrain [kənˈstren] v.約束；強迫 [🔊 聽發音](https://www.merriam-webster.com/dictionary/constrain)
+- **con**strain [kənˈstren] v.約束；強迫 [🔊 聽發音](https://www.merriam-webster.com/dictionary/constrain)
 
   con 一起 strain 拉緊  
   例句1: The law constrains his actions. 法律約束了他的行動。  
   例句2: He felt constrained to accept the offer. 他覺得被迫接受了提議。  
   例句3: Poverty constrained his choices. 貧窮限制了他的選擇。  
 
-- restrain [rɪˈstren] v.約束（自己）；（用武力）制止 [🔊 聽發音](https://www.merriam-webster.com/dictionary/restrain)
+- **re**strain [rɪˈstren] v.約束（自己）；（用武力）制止 [🔊 聽發音](https://www.merriam-webster.com/dictionary/restrain)
 
   re 反覆 strain 拉緊  
   例句1: She restrained herself from shouting. 她克制住自己沒有大叫。  
   例句2: The police restrained the suspect. 警方制止了嫌疑犯。  
   例句3: He had to restrain his anger. 他必須克制自己的憤怒。  
 
-## struct 建立
+## struct 建造
 str -> strong 力氣  
 u -> you  
 c -> 手  
 t -> 推或拉  
-有力氣建立  
+有力氣/有手/推或拉，建造  
 
 
 - con**struct** [kənˈstrʌkt] v. 建造；建設 [🔊 聽發音](https://www.merriam-webster.com/dictionary/construct)
@@ -138,9 +138,9 @@ t -> 推或拉
   例句2: He instructed me how to use the machine. 他教我如何使用這台機器。  
   例句3: Please instruct the new workers carefully. 請仔細指導新員工。  
 
-- instruct**ion** [ɪnˈstrʌkʃən] n. 指示；說明 [🔊 聽發音](https://www.merriam-webster.com/dictionary/instruction)
+- **in**struct**ion** [ɪnˈstrʌkʃən] n. 指示；說明 [🔊 聽發音](https://www.merriam-webster.com/dictionary/instruction)
 
-  instruction 指示 + 名詞  
+  in(內心裡面) + struct(建造) + ion名詞  
   例句1: Read the instructions carefully. 請仔細閱讀說明。
   例句2: Follow my instructions. 按照我的指示。
   例句3: The instruction is easy to understand. 這份說明很容易理解。
@@ -150,7 +150,7 @@ stru~~ct~~ -> stru
 
 - **in**stru**ment** [ˈɪnstrəmənt] n. 儀器；樂器 [🔊 聽發音](https://www.merriam-webster.com/dictionary/instrument)
 
-  instrument in(裡面) + struct(建造) + 名詞 → 內部有複雜結構的東西  
+  in(裡面) + struct(建造) + 名詞 → 內部有複雜結構的東西  
   例句1: She plays a musical instrument. 她會演奏樂器。
   例句2: The doctor used a special instrument. 醫生使用了一種特殊儀器。
   例句3: This instrument is very expensive. 這台儀器很昂貴。
@@ -279,11 +279,7 @@ str~~o~~y -> stry
   例句2: There is a strong association between smoking and lung cancer. 吸煙與肺癌之間有很強的關聯。  
   例句3: She joined the teachers' association. 她加入了教師協會。  
 
-## spond
-s -> 代表說話  
-p -> 手  
-on -> 在上面  
-d -> 手  
+## spond 承諾
 
 - respond [rɪˈspɑnd] v.回答；回應 [🔊 聽發音](https://www.merriam-webster.com/dictionary/respond)
 
@@ -299,7 +295,7 @@ d -> 手
   例句2: The two versions don't correspond. 這兩個版本不符。  
   例句3: His job corresponds to his interests. 他的工作符合他的興趣。  
 
-### spons
+### spons 承諾
 spon**d** -> spon**s**
 
 - sponsor [ˈspɑnsɚ] n.贊助者；贊助商 [🔊 聽發音](https://www.merriam-webster.com/dictionary/sponsor)
@@ -809,12 +805,132 @@ anim~~al~~ -> anim
 
 - object [ˈɑbdʒɪkt] n.物體；v.反對 [🔊 聽發音](https://www.merriam-webster.com/dictionary/object)
 
-  ob 相反 ject 投擲（投擲到對面 → 物體；反對）  
+  ob 相反 ject 投擲（投擲到對面 → 物體；反對，相反方向拋球，對我有意見）  
   例句1: There was a strange object on the table. 桌子上有一個奇怪的物體。  
   例句2: She objected to the new policy. 她反對這項新政策。  
   例句3: The object of the game is to score points. 這個遊戲的目標是得分。  
 
-8907
+- reject [rɪˈdʒɛkt] v. 拒絕 [🔊 聽發音](https://www.merriam-webster.com/dictionary/reject)
+
+  re 向後 ject 拋（向後拋 → 拒絕）  
+  例句1: She rejected his offer. 她拒絕了他的提議。  
+  例句2: The company rejected my application. 公司拒絕了我的申請。  
+  例句3: He rejected the idea without hesitation. 他毫不猶豫地拒絕了這個想法。  
+
+- project [ˈprɑdʒɛkt] n. 項目；v. 投射 [🔊 聽發音](https://www.merriam-webster.com/dictionary/project)
+
+  pro 向前 ject 拋（向前拋出計劃 → 項目）  
+  例句1: She is working on a new project. 她正在進行一個新項目。  
+  例句2: The images were projected onto the screen. 影像被投射到螢幕上。  
+  例句3: He projected confidence during the presentation. 他在簡報時展現了自信。  
+
+- jet [dʒɛt] n. 噴氣式飛機 [🔊 聽發音](https://www.merriam-webster.com/dictionary/jet)
+
+  jet 拋向天空  
+  例句1: The jet flew across the sky. 噴氣式飛機飛過天空。  
+  例句2: She took a private jet to Paris. 她搭私人噴射機去巴黎。  
+  例句3: The jet engine is very powerful. 噴射引擎非常強大。  
+
+## labor 勞動
+
+- labor [ˈlebɚ] n. 體力勞動；v. 努力做（困難的事） [🔊 聽發音](https://www.merriam-webster.com/dictionary/labor)
+
+  labor 勞動 
+  例句1: The workers labored all day in the hot sun. 工人們在烈日下努力勞動了一整天。  
+  例句2: Building the house required a lot of labor. 蓋這棟房子需要大量的體力勞動。  
+  例句3: She labored to finish the report on time. 她努力按時完成報告。  
+
+- labor**er** [ˈlebərɚ] n. 勞動者 [🔊 聽發音](https://www.merriam-webster.com/dictionary/laborer)
+
+  labor 勞動 er 名詞（指人）  
+  例句1: The laborers are working on the construction site. 勞動者們正在建築工地工作。  
+  例句2: He started as a farm laborer. 他從農場工人做起。  
+  例句3: Many laborers work in the factory. 許多勞動者在工廠工作。  
+
+- labor**ious** [ləˈbɔriəs] adj. 耗時費力的；辛苦的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/laborious)
+
+  labor 勞動 ious 形容詞  
+  例句1: The task was very laborious. 這項任務非常耗時費力。  
+  例句2: She completed the laborious process of data analysis. 她完成了辛苦的數據分析過程。  
+  例句3: Moving the furniture was laborious work. 搬動家具是件辛苦的工作。  
+
+- labor**ed** [ˈlebɚd] adj.（文章或言談）刻意的；矯揉造作的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/labored)
+
+  labor 勞動 ed 形容詞 (「用力」修飾說話 → 矯揉造作的)  
+  例句1: His speech sounded labored. 他的演講聽起來很刻意。  
+  例句2: The writing style is labored and unnatural. 這種寫作風格很矯揉造作、不自然。  
+  例句3: She gave a labored explanation. 她給了一個刻意的解釋。  
+
+- labor**atory** [ˈlæbrəˌtɔri] n. 實驗室 [🔊 聽發音](https://www.merriam-webster.com/dictionary/laboratory)
+
+  labor 勞動 at~~e~~ + ory 名詞（工作的場所）  
+  例句1: The scientists are working in the laboratory. 科學家們正在實驗室裡工作。  
+  例句2: She spends most of her time in the laboratory. 她大部分時間都在實驗室裡。  
+  例句3: The laboratory is equipped with advanced instruments. 實驗室配備了先進的儀器。  
+
+- lab [læb] n. 實驗室（慣用縮寫） [🔊 聽發音](https://www.merriam-webster.com/dictionary/lab)
+
+  laboratory 的縮寫  
+  例句1: He works in the chemistry lab. 他在化學實驗室工作。  
+  例句2: The lab is closed on weekends. 實驗室週末不開放。  
+  例句3: She is a lab technician. 她是一名實驗室技術員。  
+
+- laborator**ian** [ˌlæbrəˈtɔriən] n. 實驗室工作人員 [🔊 聽發音](https://www.merriam-webster.com/dictionary/laboratorian)
+
+  laborator~~y 實驗室 ian 名詞（指人）  
+  例句1: The laboratorian prepared the samples. 實驗室工作人員準備了樣本。  
+  例句2: She is an experienced laboratorian. 她是個經驗豐富的實驗室工作人員。  
+  例句3: The laboratorian assisted the scientists. 實驗室工作人員協助了科學家們。  
+
+- **col**labor**ate** [kəˈlæbəˌret] v. 合作；勾結敵人 [🔊 聽發音](https://www.merriam-webster.com/dictionary/collaborate)
+
+  col 一起 labor 勞動 ate 動詞  
+  例句1: The two companies collaborated on the project. 這兩家公司在這個項目上合作。  
+  例句2: She collaborated with a famous artist. 她與一位著名藝術家合作。  
+  例句3: He was accused of collaborating with the enemy. 他被指控勾結敵人。  
+
+- **col**labor**ation** [kəˌlæbəˈreʃən] n. 合作；勾結敵人 [🔊 聽發音](https://www.merriam-webster.com/dictionary/collaboration)
+
+  collaborate 合作 ion 名詞  
+  例句1: The collaboration was very successful. 這次合作非常成功。  
+  例句2: They worked in close collaboration. 他們密切合作。  
+  例句3: His collaboration with the enemy was exposed. 他與敵人的勾結被揭發了。  
+
+- **col**labor**ative** [kəˈlæbərətɪv] adj. 合作的；協作的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/collaborative)
+
+  collaborate 合作 ive 形容詞  
+  例句1: They worked in a collaborative environment. 他們在合作的環境中工作。  
+  例句2: The project was a collaborative effort. 這個專案是協作的成果。  
+  例句3: Collaborative learning helps students improve. 協作式學習有助於學生進步。  
+
+- **e**labor**ate** [ɪˈlæbəˌret] v. 詳盡闡述；精心製作 [🔊 聽發音](https://www.merriam-webster.com/dictionary/elaborate)
+
+  e 向外 labor 勞動 ate 動詞  
+  例句1: Could you elaborate on that point? 你能詳細闡述那一點嗎？  
+  例句2: She elaborated her plan in detail. 她詳細闡述了她的計劃。  
+  例句3: He elaborated the design for months. 他花了幾個月精心製作這個設計。 
+
+- **e**labor**ate** [ɪˈlæbərɪt] adj. 複雜的；詳盡的；精心製作的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/elaborate)
+
+  e 向外 labor 勞動 ate 形容詞（東西向外展示說明解釋要付出勞動力氣 → 東西是精心製作的 -> 複雜的）  
+  例句1: She planned an elaborate wedding. 她策劃了一場精心製作的婚禮。  
+  例句2: The design is very elaborate. 這個設計非常複雜精細。  
+  例句3: He gave an elaborate explanation. 他給了一個詳盡的解釋。  
+
+- **e**labor**ation** [ɪˌlæbəˈreʃən] n. 精心完成的東西；苦心經營的成果 [🔊 聽發音](https://www.merriam-webster.com/dictionary/elaboration)
+
+  elaborate 精心製作 ion 名詞  
+  例句1: The elaboration of the plan took weeks. 這個計劃的精心製作花了好幾週。  
+  例句2: Her elaboration of the theory was impressive. 她對這個理論的詳盡闡述令人印象深刻。  
+  例句3: The project is the result of years of elaboration. 這個專案是多年苦心經營的成果。  
+
+- **e**laborat**ive** [ɪˈlæbəˌretɪv] adj. 煞費苦心的；仔細的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/elaborative)
+
+  elaborate 精心製作 ive 形容詞  
+  例句1: She gave an elaborative explanation. 她給了煞費苦心的解釋。  
+  例句2: The elaborative process took hours to complete. 這個仔細的過程花了好幾個小時才完成。  
+  例句3: His elaborative research impressed the committee. 他煞費苦心的研究給委員會留下了深刻的印象。  
+
 
 範例:
 - **di**strict [kk音標] n.地区；行政区 [🔊 聽發音](https://www.merriam-webster.com/dictionary/distric)
