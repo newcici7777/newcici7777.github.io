@@ -730,5 +730,453 @@ pl~~e~~as -> pla**s** -> pla**c**
   例句2: She has a placid personality. 她有平和的人格特質。  
   例句3: The baby fell asleep in the placid atmosphere. 嬰兒在平和的氣氛中睡著了。  
 
+## point
 
-8194
+- point [pɔɪnt] n. 點；觀點；v. 指 [🔊 聽發音](https://www.merriam-webster.com/dictionary/point)
+
+  point 點(指在一個點上)  
+  例句1: What is your point? 你的觀點是什麼？  
+  例句2: She pointed at the map. 她指著地圖。  
+  例句3: The point of the pencil is sharp. 鉛筆的筆尖很尖。  
+
+- point**less** [ˈpɔɪntləs] adj. 無意義的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/pointless)
+
+  point 觀點 less 形容詞（沒有）  
+  例句1: It's pointless to argue with him. 跟他爭論是沒有意義的。  
+  例句2: The meeting was pointless. 這場會議毫無意義。  
+  例句3: She made a pointless comment. 她發表了無意義的評論。  
+
+- point**y** [ˈpɔɪnti] adj. 尖的；尖銳的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/pointy)
+
+  point 點 y 形容詞（點 → 尖兒）  
+  例句1: She wore pointy shoes. 她穿了尖頭鞋。  
+  例句2: The witch had a pointy hat. 女巫有一頂尖帽子。  
+  例句3: The pencil has a pointy tip. 鉛筆有個尖頭。  
+
+- point**ed** [ˈpɔɪntɪd] adj. 尖的；尖銳的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/pointed)
+
+  point 點 ed 形容詞（點 → 尖兒）  
+  例句1: The roof has a pointed design. 屋頂有尖銳的設計。  
+  例句2: She made a pointed remark. 她發表了尖銳的評論。  
+  例句3: The church has a pointed steeple. 教堂有一個尖頂。  
+
+- **a**ppoint [əˈpɔɪnt] v. 任命，委任 [🔊 聽發音](https://www.merriam-webster.com/dictionary/appoint)
+
+  ap 強調 point 指（指定你去做某個職位 → 任命）  
+  例句1: The company appointed a new manager. 公司任命了一位新經理。  
+  例句2: She was appointed as the team leader. 她被任命為團隊領導者。  
+  例句3: They appointed him to the position. 他們任命他擔任這個職位。  
+
+- appoint**ment** [əˈpɔɪntmənt] n. 任命；約定 [🔊 聽發音](https://www.merriam-webster.com/dictionary/appointment)
+
+  appoint 任命 ment 名詞  
+  例句1: She has an appointment with the doctor. 她和醫生有約定。  
+  例句2: The appointment of the new principal was announced. 新校長的任命已經宣布。  
+  例句3: I need to cancel my appointment. 我需要取消我的約定。  
+
+- **dis**appoint [ˌdɪsəˈpɔɪnt] v. 使失望 [🔊 聽發音](https://www.merriam-webster.com/dictionary/disappoint)
+
+  dis 否定 appoint 任命（想去做某個職位，但沒有指派給我 → 使失望）  
+  例句1: The movie disappointed me. 這部電影讓我失望。  
+  例句2: She disappointed her parents by failing the exam. 她考試不及格讓父母失望。  
+  例句3: Don't disappoint your fans. 別讓你的粉絲失望。  
+
+- **dis**appoint**ment** [ˌdɪsəˈpɔɪntmənt] n. 失望 [🔊 聽發音](https://www.merriam-webster.com/dictionary/disappointment)
+
+  disappoint 使失望 ment 名詞  
+  例句1: She couldn't hide her disappointment. 她無法隱藏她的失望。  
+  例句2: The failure was a great disappointment. 這次失敗是極大的失望。  
+  例句3: He faced many disappointments in life. 他在生活中面臨許多失望。  
+
+- disappoint**ed** [ˌdɪsəˈpɔɪntɪd] adj. 感到失望的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/disappointed)
+
+  disappoint 使失望 ed 形容詞（感到...的）  
+  例句1: She was disappointed with the result. 她對結果感到失望。  
+  例句2: He looked disappointed when he heard the news. 他聽到消息時看起來很失望。  
+  例句3: I'm disappointed in you. 我對你感到失望。  
+
+- disappoint**ing** [ˌdɪsəˈpɔɪntɪŋ] adj. 令人感到失望的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/disappointing)
+
+  disappoint 使失望 ing 形容詞（令人...的）  
+  例句1: The movie was disappointing. 這部電影令人失望。  
+  例句2: The team's performance was disappointing. 團隊的表現令人失望。  
+  例句3: She received disappointing news. 她收到了令人失望的消息。  
+
+### punct 點
+p**o**int -> o拆成上下二半 -> p**un**int -> pun~~i~~nt -> pun**n**t -> 把n轉90度 -> punct 
+
+- punctu**ation** [ˌpʌŋktʃuˈeʃən] n. 標點符號 [🔊 聽發音](https://www.merriam-webster.com/dictionary/punctuation)
+
+  punct 點 u 連接 at~~e~~ + ion 名詞（標點符號）  
+  例句1: Proper punctuation is important in writing. 寫作中正確的標點符號很重要。  
+  例句2: Please check the punctuation in your essay. 請檢查你文章中的標點符號。  
+  例句3: Punctuation helps make the meaning clear. 標點符號有助於讓意思更清楚。  
+
+- punctu**al** [ˈpʌŋktʃuəl] adj. 准時的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/punctual)
+
+  punct 點 u 連接 al 形容詞（在特定時間點到達 → 准時的）  
+  例句1: She is always punctual for meetings. 她開會總是準時。  
+  例句2: The train is punctual. 火車準時。  
+  例句3: Being punctual is a good habit. 守時是個好習慣。
+
+- punctual**ity** [ˌpʌŋktʃuˈæləti] n. 準時性；準點 [🔊 聽發音](https://www.merriam-webster.com/dictionary/punctuality)
+
+  punctual 準時的 ity 名詞（準時的特質 → 準時性）  
+  例句1: Punctuality is important at work. 準時在工作中很重要。  
+  例句2: Her punctuality impressed the manager. 她的準時給經理留下深刻印象。  
+  例句3: Schools encourage punctuality. 學校鼓勵準時。  
+
+## press 壓
+
+- press [prɛs] v. 壓；按；n. 新聞界；出版社；報章雜誌 [🔊 聽發音](https://www.merriam-webster.com/dictionary/press)
+
+  press 壓  
+  例句1: Please press the button. 請按下按鈕。  
+  例句2: She pressed the book against her chest. 她把書緊緊抱在胸前。  
+  例句3: The press reported the news quickly. 媒體很快報導了這則新聞。  
+
+- pr**int** [prɪnt] v. 印刷；列印 [🔊 聽發音](https://www.merriam-webster.com/dictionary/print)
+
+  pr~~ess~~ 壓 int~~o~~ 進入（把油墨壓進紙張 → 印刷）  
+  例句1: Please print this document. 請列印這份文件。  
+  例句2: The machine prints very quickly. 這台機器列印得很快。  
+  例句3: I printed the report yesterday. 我昨天列印了報告。  
+
+- **im**press [ɪmˈprɛs] v. 給……留下深刻印象；使欽佩 [🔊 聽發音](https://www.merriam-webster.com/dictionary/impress)
+
+  im 進入 press 壓（把印象壓進心裡 → 留下深刻印象）  
+  例句1: Her speech impressed everyone. 她的演講讓大家印象深刻。  
+  例句2: He impressed us with his kindness. 他的善良讓我們印象深刻。  
+  例句3: Good manners impress people. 良好的禮貌會給人留下好印象。  
+
+- **im**press**ion** [ɪmˈprɛʃən] n. 印象 [🔊 聽發音](https://www.merriam-webster.com/dictionary/impression)
+
+  im 進入 press 壓 ion 名詞（壓進心裡的東西 → 印象）  
+  例句1: She made a good impression. 她留下了好印象。  
+  例句2: My first impression was positive. 我的第一印象很好。  
+  例句3: The movie left a deep impression on me. 那部電影給我留下深刻印象。  
+
+- impress**ive** [ɪmˈprɛsɪv] adj. 令人印象深刻的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/impressive)
+
+  impress 留下深刻印象 ive 形容詞（能留下深刻印象的 → 令人印象深刻的）  
+  例句1: She gave an impressive speech. 她發表了一場令人印象深刻的演講。  
+  例句2: The building is very impressive. 那棟建築令人印象深刻。  
+  例句3: His performance was impressive. 他的表現令人讚嘆。  
+
+- **ex**press [ɪkˈsprɛs] v. 表達；表示 [🔊 聽發音](https://www.merriam-webster.com/dictionary/express)
+
+  ex 出去 press 壓（把想法壓出去 → 表達）  
+  例句1: She expressed her feelings honestly. 她誠實地表達自己的感受。  
+  例句2: Please express your opinion. 請表達你的意見。  
+  例句3: He expressed his thanks. 他表達了感謝。  
+
+- **ex**press**ion** [ɪkˈsprɛʃən] n. 表達；表情；措辭 [🔊 聽發音](https://www.merriam-webster.com/dictionary/expression)
+
+  ex 出去 press 壓 ion 名詞（表達出來的內容 → 表達、表情）  
+  例句1: Her expression looked serious. 她的表情看起來很嚴肅。  
+  例句2: Freedom of expression is important. 表達自由很重要。  
+  例句3: His facial expression changed suddenly. 他的表情突然改變了。  
+
+- press**ure** [ˈprɛʃɚ] n. 壓力；壓強 [🔊 聽發音](https://www.merriam-webster.com/dictionary/pressure)
+
+  press 壓 ure 名詞（壓出來的力量 → 壓力）  
+  例句1: He is under a lot of pressure. 他承受很大的壓力。  
+  例句2: Water pressure is low today. 今天水壓很低。  
+  例句3: Don't put too much pressure on yourself. 不要給自己太大的壓力。  
+
+- **de**press [dɪˈprɛs] v. 使沮喪；使消沉 [🔊 聽發音](https://www.merriam-webster.com/dictionary/depress)
+
+  de 向下 press 壓（向下壓人的情緒 → 使沮喪）  
+  例句1: Bad news can depress people. 壞消息會使人沮喪。  
+  例句2: The rainy weather depressed him. 陰雨天讓他情緒低落。  
+  例句3: Don't let failure depress you. 不要讓失敗打擊你。  
+
+- impress**ive** [ɪmˈprɛsɪv] adj. 令人印象深刻的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/impressive)
+
+  impress 留下深刻印象 ive 形容詞（能留下深刻印象的 → 令人印象深刻的）  
+  例句1: She gave an impressive speech. 她發表了一場令人印象深刻的演講。  
+  例句2: The building is very impressive. 那棟建築令人印象深刻。  
+  例句3: His performance was impressive. 他的表現令人讚嘆。  
+
+- **ex**press [ɪkˈsprɛs] v. 表達；表示 [🔊 聽發音](https://www.merriam-webster.com/dictionary/express)
+
+  ex 出去 press 壓（把想法壓出去 → 表達）  
+  例句1: She expressed her feelings honestly. 她誠實地表達自己的感受。  
+  例句2: Please express your opinion. 請表達你的意見。  
+  例句3: He expressed his thanks. 他表達了感謝。  
+
+- **ex**press**ion** [ɪkˈsprɛʃən] n. 表達；表情；措辭 [🔊 聽發音](https://www.merriam-webster.com/dictionary/expression)
+
+  ex 出去 press 壓 ion 名詞（表達出來的內容 → 表達、表情）  
+  例句1: Her expression looked serious. 她的表情看起來很嚴肅。  
+  例句2: Freedom of expression is important. 表達自由很重要。  
+  例句3: His facial expression changed suddenly. 他的表情突然改變了。  
+
+- press**ure** [ˈprɛʃɚ] n. 壓力；壓強 [🔊 聽發音](https://www.merriam-webster.com/dictionary/pressure)
+
+  press 壓 ure 名詞（壓出來的力量 → 壓力）  
+  例句1: He is under a lot of pressure. 他承受很大的壓力。  
+  例句2: Water pressure is low today. 今天水壓很低。  
+  例句3: Don't put too much pressure on yourself. 不要給自己太大的壓力。  
+
+- **de**press [dɪˈprɛs] v. 使沮喪；使消沉 [🔊 聽發音](https://www.merriam-webster.com/dictionary/depress)
+
+  de 向下 press 壓（向下壓人的情緒 → 使沮喪）  
+  例句1: Bad news can depress people. 壞消息會使人沮喪。  
+  例句2: The rainy weather depressed him. 陰雨天讓他情緒低落。  
+  例句3: Don't let failure depress you. 不要讓失敗打擊你。  
+
+- **de**press**ive** [dɪˈprɛsɪv] adj. 抑鬱的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/depressive)
+
+  depress 使抑鬱 ive 形容詞  
+  例句1: She has a depressive personality. 她有抑鬱的性格。  
+  例句2: The depressive symptoms lasted for weeks. 抑鬱症狀持續了好幾週。  
+  例句3: He suffers from depressive disorder. 他患有抑鬱症。  
+
+- **de**press**ed** [dɪˈprɛst] adj. 感到抑鬱的；不景氣的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/depressed)
+
+  depress 使抑鬱 ed 形容詞  
+  例句1: She felt depressed about the results. 她對結果感到抑鬱。  
+  例句2: The economy is depressed. 經濟不景氣。  
+  例句3: He has been depressed since losing his job. 他自從失業以來一直感到抑鬱。  
+
+- **de**press**ing** [dɪˈprɛsɪŋ] adj. 令人沮喪的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/depressing)
+
+  depress 使抑鬱 ing 形容詞  
+  例句1: The news is very depressing. 這個消息非常令人沮喪。  
+  例句2: She found the movie depressing. 她覺得這部電影令人沮喪。  
+  例句3: The weather is so depressing today. 今天的天氣真令人沮喪。  
+
+- **de**press**ion** [dɪˈprɛʃən] n. 抑鬱症；蕭條期 [🔊 聽發音](https://www.merriam-webster.com/dictionary/depression)
+
+  depress 使抑鬱 ion 名詞  
+  例句1: She is suffering from depression. 她患有抑鬱症。  
+  例句2: The Great Depression affected many countries. 經濟大蕭條影響了許多國家。  
+  例句3: He fell into a deep depression. 他陷入了嚴重的抑鬱。  
+
+- **op**press**ion** [əˈprɛʃən] n. 壓迫；虐待；壓制 [🔊 聽發音](https://www.merriam-webster.com/dictionary/oppression)
+
+  op 強調 press 壓 ion 名詞（強力壓迫的行為 → 壓迫、虐待）  
+  例句1: The people fought against oppression. 人民奮起反抗壓迫。  
+  例句2: They suffered years of oppression. 他們遭受了多年的壓迫。  
+  例句3: Freedom helps end oppression. 自由有助於終結壓迫。  
+
+- **op**press**or** [əˈprɛsɚ] n. 壓迫者；暴君 [🔊 聽發音](https://www.merriam-webster.com/dictionary/oppressor)
+
+  op 強調 press 壓 or 人（施加壓迫的人 → 壓迫者）  
+  例句1: The oppressor controlled the country by force. 壓迫者用武力統治國家。  
+  例句2: People rose against the oppressor. 人民起來反抗壓迫者。  
+  例句3: History remembers many oppressors. 歷史記錄了許多暴君。  
+
+- oppress**ed** [əˈprɛst] adj. 被壓迫的；受欺壓的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/oppressed)
+
+  oppress 壓迫 ed 形容詞（遭受壓迫的）  
+  例句1: The oppressed people demanded freedom. 受壓迫的人民要求自由。  
+  例句2: He spoke for the oppressed. 他替受壓迫的人發聲。  
+  例句3: The oppressed workers organized a protest. 受壓迫的工人組織了抗議活動。  
+
+- oppressor [əˈprɛsɚ] n. 壓迫者，暴君 [🔊 聽發音](https://www.merriam-webster.com/dictionary/oppressor)
+
+  oppress 壓迫 or 名詞（指人）  
+  例句1: The people fought against the oppressor. 人民對抗壓迫者。  
+  例句2: The king was a cruel oppressor. 這位國王是個殘酷的暴君。  
+  例句3: She spoke out against the oppressors. 她公開反對壓迫者。  
+
+- **sup**press [səˈprɛs] v. 鎮壓；壓制；抑制 [🔊 聽發音](https://www.merriam-webster.com/dictionary/suppress)
+
+  sup 向下 press 壓（向下壓住 → 壓制、抑制）  
+  例句1: The government tried to suppress the protest. 政府試圖鎮壓抗議活動。  
+  例句2: She suppressed her anger. 她壓抑了自己的怒氣。  
+  例句3: This medicine suppresses coughing. 這種藥能抑制咳嗽。  
+
+## pain 疼痛 痛苦
+
+- pain**ful** [ˈpeɪnfəl] adj. 令人疼痛的；令人痛苦的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/painful)
+
+  pain 疼痛 ful 充滿（充滿疼痛 → 令人疼痛的）  
+  例句1: It was a painful experience. 那是一段痛苦的經歷。  
+  例句2: My leg is still painful. 我的腿仍然很痛。  
+  例句3: Losing a friend can be painful. 失去朋友可能令人痛苦。  
+
+- painful**ly** [ˈpeɪnfəli] adv. 痛苦地；疼痛地 [🔊 聽發音](https://www.merriam-webster.com/dictionary/painfully)
+
+  painful 令人痛苦的 ly 副詞（痛苦地）  
+  例句1: He smiled painfully. 他痛苦地笑了一下。  
+  例句2: She walked painfully after the accident. 她在事故後痛苦地走路。  
+  例句3: The truth was painfully clear. 真相令人痛苦地明顯。  
+
+- pain**less** [ˈpeɪnləs] adj. 無痛的；輕鬆的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/painless)
+
+  pain 疼痛 less 沒有（沒有疼痛 → 無痛的）  
+  例句1: The operation was almost painless. 那次手術幾乎沒有疼痛。  
+  例句2: This test is quick and painless. 這項檢查又快又無痛。  
+  例句3: We found a painless solution. 我們找到了一個輕鬆的解決方法。  
+
+- pain**killer** [ˈpeɪnˌkɪlər] n. 止痛藥 [🔊 聽發音](https://www.merriam-webster.com/dictionary/painkiller)
+
+  pain 疼痛 killer 殺死、去除（消除疼痛 → 止痛藥）  
+  例句1: The doctor gave me a painkiller. 醫生開了一顆止痛藥給我。  
+  例句2: This painkiller works quickly. 這種止痛藥見效很快。  
+  例句3: Take the painkiller after meals. 請在飯後服用止痛藥。  
+
+- painstak**ing** [ˈpeɪnˌsteɪkɪŋ] adj. 需細心的；需專注的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/painstaking)
+
+  pain 很多疼痛 stake 承擔 ing 形容詞（願意承擔許多辛苦 → 需細心的、需專注的）  
+  例句1: She did painstaking research. 她做了非常細心的研究。  
+  例句2: The artist is painstaking in every detail. 這位藝術家對每個細節都非常用心。  
+  例句3: Building the model was painstaking work. 製作這個模型是一項需要耐心細心的工作。  
+
+### pun 疼痛 痛苦
+p**ai**n -> pun
+
+- pun**ish** [ˈpʌnɪʃ] v. 懲罰；處罰 [🔊 聽發音](https://www.merriam-webster.com/dictionary/punish)
+
+  pun 痛苦 ish 動詞（使人痛苦 → 懲罰）  
+  例句1: Parents should not punish children unfairly. 父母不應該不公平地懲罰孩子。  
+  例句2: The law punishes serious crimes. 法律懲罰重大犯罪。  
+  例句3: He was punished for cheating. 他因作弊而受到處罰。  
+
+- pun**ishment** [ˈpʌnɪʃmənt] n. 懲罰；處罰 [🔊 聽發音](https://www.merriam-webster.com/dictionary/punishment)
+
+  pun 痛苦 ish + ment 名詞（懲罰的行為 → 懲罰）  
+  例句1: The punishment was too harsh. 那項處罰太嚴厲了。  
+  例句2: He accepted his punishment. 他接受了自己的處罰。  
+  例句3: Punishment should be fair. 處罰應該公平。  
+
+- pun**itive** [ˈpjuːnətɪv] adj. 懲罰性的；刑罰的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/punitive)
+
+  pun 痛苦 it~~y~~ + ive 形容詞（具有懲罰性質的）  
+  例句1: The company faced punitive damages. 該公司面臨懲罰性賠償。  
+  例句2: The judge imposed punitive measures. 法官施加了懲罰性措施。  
+  例句3: The policy is too punitive. 這項政策過於嚴苛。  
+
+- **im**pun**ity** [ɪmˈpjuːnəti] n. 免於懲罰 [🔊 聽發音](https://www.merriam-webster.com/dictionary/impunity)
+
+  im 否定 punish 懲罰 ity 名詞（沒有受到懲罰 → 免於懲罰）  
+  例句1: Criminals should not act with impunity. 犯罪者不應逍遙法外。  
+  例句2: Corruption cannot continue with impunity. 貪污不能一直免於懲罰。  
+  例句3: No one should enjoy impunity. 沒有人應該免受懲罰。  
+
+- pun**ishing** [ˈpʌnɪʃɪŋ] adj. 令人筋疲力盡的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/punishing)
+
+  punish 痛苦 ish + ing 形容詞  
+  例句1: The schedule is punishing. 這個行程令人筋疲力盡。  
+  例句2: She had a punishing workout at the gym. 她在健身房做了令人筋疲力盡的鍛鍊。  
+  例句3: The punishing heat made it hard to breathe. 令人筋疲力盡的高溫讓人難以呼吸。  
+
+- pun**ch** [pʌntʃ] v. 拳打；n. 一拳；吸引力 [🔊 聽發音](https://www.merriam-webster.com/dictionary/punch)
+
+  pun 痛苦 ch 擊打（造成痛苦的一擊 → 拳打）  
+  例句1: He punched the bag hard. 他用力打沙包。  
+  例句2: She gave him a punch on the arm. 她打了他的手臂一拳。  
+  例句3: The speech packed a real punch. 那場演講很有震撼力。  
+
+- teach
+- reach
+- lunch
+- church
+
+- punch**line** [ˈpʌntʃlaɪn] n. 妙趣橫生的語句；妙語；笑點 [🔊 聽發音](https://www.merriam-webster.com/dictionary/punchline)
+
+  punch 吸引力(打一拳產生吸引力) line 一行（最吸引人的那一句 → 妙語、笑點）  
+  例句1: The comedian saved the best punchline for last. 那位喜劇演員把最好笑的笑點留到最後。  
+  例句2: Everyone laughed at the punchline. 每個人都因為笑點而大笑。  
+  例句3: The joke needs a stronger punchline. 這個笑話需要更有力的結尾。  
+
+### pen 疼痛 痛苦
+p**u**n -> pen
+
+- pen**al** [ˈpiːnəl] adj. 懲罰的；刑罰的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/penal)
+
+  pen 痛苦 al 形容詞（與懲罰有關的 → 刑罰的）  
+  例句1: The country has a strict penal system. 那個國家有嚴格的刑罰制度。  
+  例句2: Penal laws were changed last year. 刑法去年已經修改。  
+  例句3: He works in a penal institution. 他在監獄工作。  
+
+- penal**ty** [ˈpɛnəlti] n. 懲罰；刑罰；罰則 [🔊 聽發音](https://www.merriam-webster.com/dictionary/penalty)
+
+  penal 刑罰的 ty 名詞（刑罰 → 懲罰、罰則）  
+  例句1: There is a penalty for speeding. 超速會受到處罰。  
+  例句2: He paid the penalty for breaking the rules. 他因違反規則而受罰。  
+  例句3: The penalty was a large fine. 處罰是一筆高額罰款。  
+
+### pent 疼痛 痛苦
+
+- **re**pent [rɪˈpɛnt] v. 懺悔；後悔 [🔊 聽發音](https://www.merriam-webster.com/dictionary/repent)
+
+  re 再次 pent 痛苦（再次感到痛苦 → 懺悔、後悔）  
+  例句1: He repented of his mistakes. 他對自己的錯誤感到懺悔。  
+  例句2: She sincerely repented. 她真誠地懺悔。  
+  例句3: It's never too late to repent. 懺悔永遠不嫌晚。  
+
+- **re**pent**ance** [rɪˈpɛntəns] n. 懺悔；悔改 [🔊 聽發音](https://www.merriam-webster.com/dictionary/repentance)
+
+  re 再次 pent 痛苦 ance 名詞（懺悔的行為 → 懺悔）  
+  例句1: He showed true repentance. 他表現出真正的悔意。  
+  例句2: Repentance can bring peace. 懺悔可以帶來平靜。  
+  例句3: She asked for forgiveness in repentance. 她帶著悔意請求原諒。  
+
+- **re**pent**ant** [rɪˈpɛntənt] adj. 表示悔過的；懺悔的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/repentant)
+
+  re 再次 pent 痛苦 ant 形容詞（感到後悔的 → 懺悔的）  
+  例句1: He looked truly repentant. 他看起來真的很懺悔。  
+  例句2: The repentant thief apologized. 那位悔過的小偷道了歉。  
+  例句3: She gave a repentant smile. 她露出懺悔的微笑。  
+
+## pet 追求
+p -> 揮手    
+e -> 眼睛  
+t -> 延伸  
+狗看到人揮手就衝過來  
+
+- pet [pet] n. 寵物 [🔊 聽發音](https://www.merriam-webster.com/dictionary/pet)
+
+  pet 寵物（狗貓等人們飼養的動物）  
+  例句1: My pet is a cute dog. 我的寵物是一隻可愛的小狗。  
+  例句2: She loves her pet cat. 她很愛她的寵物貓。  
+  例句3: Many families have a pet. 許多家庭都有養寵物。  
+
+- **com**pet**e** [kəmˈpiːt] v. 競爭 [🔊 聽發音](https://www.merriam-webster.com/dictionary/compete)
+
+  com 一起 pete 追求（一起追求同一個目標 → 競爭）  
+  例句1: Many teams compete in the tournament. 許多隊伍參加比賽競爭。  
+  例句2: We compete with other companies. 我們與其他公司競爭。  
+  例句3: She hopes to compete next year. 她希望明年參加競賽。  
+
+- **com**petit**ion** [ˌkɑːmpəˈtɪʃən] n. 競爭；比賽 [🔊 聽發音](https://www.merriam-webster.com/dictionary/competition)
+
+  com 一起 pete 追求 it走 ion 名詞（一起競爭 → 競爭、比賽）  
+  例句1: The competition was exciting. 那場比賽很精彩。  
+  例句2: There is strong competition in business. 商業競爭非常激烈。  
+  例句3: She won the singing competition. 她贏得了歌唱比賽。  
+
+- **com**pet**itor** [kəmˈpɛtɪtər] n. 競爭者；對手 [🔊 聽發音](https://www.merriam-webster.com/dictionary/competitor)
+
+  com 一起 pete 追求 it走 or 人（一起競爭的人 → 競爭者）  
+  例句1: Our biggest competitor lowered its prices. 我們最大的競爭對手降價了。  
+  例句2: Every competitor did their best. 每位參賽者都盡了全力。  
+  例句3: She is a strong competitor. 她是一位很強的競爭者。  
+
+- **com**pet**ence** [ˈkɑmpətəns] n. 能力；勝任 [🔊 聽發音](https://www.merriam-webster.com/dictionary/competence)
+
+  com 一起 pet 追求 ence 名詞（一起追求的能力）  
+  例句1: She has great competence in her field. 她在她的領域有很強的能力。  
+  例句2: His competence as a manager is unquestionable. 他作為經理的能力是無庸置疑的。  
+  例句3: The job requires professional competence. 這份工作需要專業能力。  
+
+- **ap**pet**ite** [ˈæpəˌtaɪt] n. 食欲；強烈欲望 [🔊 聽發音](https://www.merriam-webster.com/dictionary/appetite)
+
+  ap 加強 pete 追求 it走 e 名詞（強烈追求食物 → 食欲）  
+  例句1: I have a good appetite today. 我今天胃口很好。  
+  例句2: Exercise increases your appetite. 運動會增加食欲。  
+  例句3: He lost his appetite after the illness. 他生病後失去了食欲。  
+
+### peat 追求
+p**e**t -> p**ea**t
+
+- **re**peat [rɪˈpit] v. 重複 [🔊 聽發音](https://www.merriam-webster.com/dictionary/repeat)
+
+  re 反覆 pe 追求 at（重複追求 → 重複）  
+  例句1: Please repeat the question. 請重複問題。  
+  例句2: She repeated her mistake. 她重複了她的錯誤。  
+  例句3: The pattern repeats every year. 這個模式每年重複。
