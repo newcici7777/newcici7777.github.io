@@ -373,3 +373,334 @@ apt = 適合、能力（源自拉丁語 aptus「適合的、有能力的」）
   - tense muscles 紧绷的肌肉
   - a tense situation 紧张的局势
 - tension n紧张；焦虑；绷紧；拉力
+
+## cap cip cept cop 抓拿
+cop 警察 (警察抓小偷)
+### cap 前
+- cap**ture** v.抓住；捕捉
+- cap**able** adj有能力的 (有能力抓住的)
+- cap**acity** n.容量 能力 (能夠拿的) acity 性質
+- cap**acious** adj.宽敞的；容量大的 acious具有..性質
+- cap**ive** n.俘虜adj.被俘虜的 ive人/具有某种性质的 (被抓住的人或東西)
+### cip 中
+- part**cip**ate v.參與 (抓到一部分)
+- re**cip**ient n.接受者；收件人 (把東西拿回來的人)
+### cept 後
+- **con**cept n.概念 (把想法拿在一起)
+- **ex**cept prep.v.conj. 除外 (把它拿出去)
+- **inter**cept n.v.攔截 (在中間把它截住)
+- **pre**cept n.規訓戒律 (事先拿捏住的)
+- **a**ccept v.接受 (把東西拿過來，a是朝向)
+
+## secu sequ 跟隨
+- consecutive
+- persecute
+- sequence
+- subsequent
+- consequent
+- consequently
+- consequence
+
+- consecutive [kənˈsɛkjətɪv] adj. 連續的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consecutive)
+
+  con 一起 secut 跟隨 ive 形容詞（一起跟著 → 連續的）  
+  例句1: She won the championship for three consecutive years. 她連續三年贏得冠軍。  
+  例句2: The team lost five consecutive games. 這支球隊連續輸了五場比賽。  
+  例句3: He worked for ten consecutive days without a break. 他連續工作了十天沒有休息。  
+
+- persecute [ˈpɝsəˌkjut] v. 迫害 [🔊 聽發音](https://www.merriam-webster.com/dictionary/persecute)
+
+  per 透過 secut 跟隨（一直跟著不放 → 迫害）  
+  例句1: The minority group was persecuted for its beliefs. 這個少數族群因其信仰而受到迫害。  
+  例句2: He was persecuted for his political opinions. 他因政治觀點而受到迫害。  
+  例句3: They fled to avoid being persecuted. 他們逃離以避免遭受迫害。  
+
+- sequence [ˈsikwəns] n. 順序；序列 [🔊 聽發音](https://www.merriam-webster.com/dictionary/sequence)
+
+  sequ 跟隨 ence 名詞（跟著的順序 → 序列）  
+  例句1: The events happened in a strange sequence. 事件以奇怪的順序發生。  
+  例句2: She arranged the numbers in sequence. 她將數字按順序排列。  
+  例句3: The sequence of events led to the crisis. 事件的順序導致了危機。  
+
+- subsequent [ˈsʌbsɪˌkwɛnt] adj. 後來的；隨後的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/subsequent)
+
+  sub 下面 sequ 跟隨 ent 形容詞（跟在下面 → 後來的）  
+  例句1: The subsequent events proved him wrong. 後續事件證明他錯了。  
+  例句2: His health improved in subsequent years. 他的健康在接下來的幾年裡改善了。  
+  例句3: Subsequent research confirmed the findings. 後續的研究證實了這些發現。  
+
+- consequent [ˈkɑnsəˌkwɛnt] adj. 隨之發生的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consequent)
+
+  con 一起 sequ 跟隨 ent 形容詞（跟著一起來的 → 隨之發生的）  
+  例句1: The heavy rain and consequent flooding caused damage. 大雨和隨之而來的洪水造成了損害。  
+  例句2: The economic crisis and consequent unemployment affected many. 經濟危機和隨之而來的失業影響了許多人。  
+  例句3: The decision had a consequent effect on the whole industry. 這個決定對整個行業產生了隨之而來的影響。  
+
+- consequently [ˈkɑnsəˌkwɛntli] adv. 因此；所以 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consequently)
+
+  consequent 隨之發生的 ly 副詞  
+  例句1: She didn't study; consequently, she failed the exam. 她沒有讀書，因此考試不及格。  
+  例句2: The bridge was closed; consequently, we took another route. 橋封閉了，所以我們走了另一條路。  
+  例句3: He was late for work; consequently, he lost his job. 他上班遲到了，因此丟了工作。  
+
+- consequence [ˈkɑnsəˌkwɛns] n. 結果；後果 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consequence)
+
+  con 一起 sequ 跟隨 ence 名詞（跟著來的事物 → 結果）  
+  例句1: She faced the consequences of her actions. 她承擔了她行為的後果。  
+  例句2: The accident was a consequence of his carelessness. 這次事故是他粗心的結果。  
+  例句3: You must accept the consequences. 你必須接受後果。  
+
+## sect 切
+- section [ˈsɛkʃən] n. 部分；章節；部件；路段；板塊；截面；領域 [🔊 聽發音](https://www.merriam-webster.com/dictionary/section)
+
+  sect 切割 ion 名詞（切開的部分）  
+  例句1: The library has a large reference section. 這座圖書館有一個很大的參考書區。  
+  例句2: Please read the next section of the book. 請閱讀本書的下一章節。  
+  例句3: The car's engine section needs to be repaired. 汽車的引擎部件需要修理。  
+  例句4: This section of the road is under construction. 這一路段正在施工中。  
+  例句5: The earth's crust is divided into several sections. 地殼被分成幾個板塊。  
+  例句6: The diagram shows a cross-section of the flower. 這張圖顯示了花的橫截面。  
+  例句7: She works in the research section of the company. 她在公司的研究領域工作。 
+
+- dissect
+- dissection
+- intersect
+- intersection
+
+- dissect [dɪˈsɛkt] v. 解剖；仔細分析 [🔊 聽發音](https://www.merriam-webster.com/dictionary/dissect)
+
+  dis 分開 sect 切割（切開 → 解剖）  
+  例句1: The biology students dissected a frog in class. 生物課的學生在課堂上解剖了一隻青蛙。  
+  例句2: The critics dissected the movie scene by scene. 評論家仔細分析這部電影的每一個場景。  
+  例句3: She dissected the argument to find its flaws. 她仔細分析這個論點以找出其缺陷。  
+
+- dissection [dɪˈsɛkʃən] n. 解剖；仔細分析 [🔊 聽發音](https://www.merriam-webster.com/dictionary/dissection)
+
+  dissect 解剖 ion 名詞  
+  例句1: The dissection of the specimen took several hours. 標本的解剖花了幾個小時。  
+  例句2: His dissection of the novel was very detailed. 他對這部小說的仔細分析非常詳細。  
+  例句3: The dissection of the problem revealed its complexity. 對問題的仔細分析揭示了其複雜性。  
+
+- intersect [ˌɪntɚˈsɛkt] v. 相交；交叉 [🔊 聽發音](https://www.merriam-webster.com/dictionary/intersect)
+
+  inter 之間 sect 切割（在兩者之間切割 → 相交、交叉）  
+  例句1: The two roads intersect at the traffic light. 這兩條路在紅綠燈處相交。  
+  例句2: The line intersects the circle at two points. 這條線與圓在兩個點上交會。  
+  例句3: Their lives intersected unexpectedly. 他們的人生意外地交會了。  
+
+- intersection [ˌɪntɚˈsɛkʃən] n. 交叉路口；交點 [🔊 聽發音](https://www.merriam-webster.com/dictionary/intersection)
+
+  intersect 相交 ion 名詞  
+  例句1: Turn left at the next intersection. 在下一個交叉路口左轉。  
+  例句2: The accident happened at a busy intersection. 事故發生在一個繁忙的十字路口。  
+  例句3: The intersection of two lines is a point. 兩條線的交點是一個點。  
+
+數字 + sect = 幾等份
+
+- bisect
+- trisect
+
+- bisect [ˈbaɪsɛkt] v. 平分；二等分 [🔊 聽發音](https://www.merriam-webster.com/dictionary/bisect)
+
+  bi 二 sect 切割（切成二等分 → 平分）  
+  例句1: A line that bisects an angle divides it into two equal parts. 平分一個角的線將其分成兩個相等的部分。  
+  例句2: The river bisects the city into two halves. 這條河將城市平分為兩半。  
+  例句3: She bisected the cake into equal portions. 她把蛋糕平分為兩等份。  
+
+- trisect [ˈtraɪsɛkt] v. 三等分 [🔊 聽發音](https://www.merriam-webster.com/dictionary/trisect)
+
+  tri 三 sect 切割（切成三等分）  
+  例句1: The teacher asked the students to trisect the line segment. 老師要求學生將線段三等分。  
+  例句2: The city is trisected by three major highways. 這座城市被三條主要公路劃分成三部分。  
+  例句3: He trisected the pie into three equal slices. 他把派三等分切成三片。
+
+## vok voc 喊
+- vocal
+- vocation
+- advocate
+- invoke
+- evoke
+- provoke
+- revoke
+- convoke
+
+- vocal [ˈvokəl] adj. 聲音的；口頭的；暢所欲言的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/vocal)
+
+  voc 聲音 al 形容詞  
+  例句1: She has great vocal talent. 她有很好的聲音天賦。  
+  例句2: He is very vocal about his opinions. 他對自己的意見非常暢所欲言。  
+  例句3: The vocal performance was impressive. 這場聲樂表演令人印象深刻。  
+
+- vocation [voˈkeʃən] n. 職業；使命感 [🔊 聽發音](https://www.merriam-webster.com/dictionary/vocation)
+
+  voc 呼喚 ation 名詞（被呼喚去做的事 → 職業、使命感）  
+  例句1: Teaching is more than a job; it's a vocation. 教學不只是一份工作，更是一種使命感。  
+  例句2: She found her vocation in nursing. 她在護理工作中找到了自己的職業使命。  
+  例句3: He has a strong sense of vocation. 他有強烈的職業使命感。  
+
+- advocate [ˈædvəˌket] v. 提倡；主張；n. 倡導者 [🔊 聽發音](https://www.merriam-webster.com/dictionary/advocate)
+
+  ad 強調 voc 呼喚（大聲呼籲 → 提倡、主張）  
+  例句1: She advocates for equal rights. 她提倡平等權利。  
+  例句2: He is a strong advocate of environmental protection. 他是環境保護的強力倡導者。  
+  例句3: The doctor advocates a healthy diet. 醫生提倡健康飲食。  
+
+- invoke [ɪnˈvok] v. 援引；召喚 [🔊 聽發音](https://www.merriam-webster.com/dictionary/invoke)
+
+  in 進入 vok 呼喚（向內呼喚 → 援引、召喚）  
+  例句1: The lawyer invoked an old law to defend his client. 律師援引了一條古老的法律來為當事人辯護。  
+  例句2: She invoked the name of the president. 她引用了總統的名字。  
+  例句3: The ritual invoked the spirits of ancestors. 這項儀式召喚了祖先的靈魂。  
+
+- evoke [ɪˈvok] v. 喚起；引起 [🔊 聽發音](https://www.merriam-webster.com/dictionary/evoke)
+
+  e 向外 vok 呼喚（向外呼喚 → 喚起、引起）  
+  例句1: The music evoked memories of her childhood. 這首音樂喚起了她童年的回憶。  
+  例句2: The painting evokes a sense of peace. 這幅畫引起了一種寧靜的感覺。  
+  例句3: His speech evoked strong emotions. 他的演講引發了強烈的情感。  
+
+- provoke [prəˈvok] v. 挑釁；激怒 [🔊 聽發音](https://www.merriam-webster.com/dictionary/provoke)
+
+  pro 向前 vok 呼喚（向前大聲呼喊 → 挑釁、激怒）  
+  例句1: His rude comments provoked her anger. 他粗魯的評論激怒了她。  
+  例句2: The dog was provoked by the stranger. 這隻狗被陌生人挑釁了。  
+  例句3: Don't provoke him; he has a short temper. 別激怒他，他脾氣不好。  
+
+- revoke [rɪˈvok] v. 撤銷；廢止 [🔊 聽發音](https://www.merriam-webster.com/dictionary/revoke)
+
+  re 反覆 vok 呼喚（反覆呼喚回來 → 撤銷、廢止）  
+  例句1: The government revoked the license. 政府撤銷了這張許可證。  
+  例句2: His driving license was revoked. 他的駕駛執照被吊銷了。  
+  例句3: The court revoked the previous decision. 法院廢止了先前的判決。  
+
+- convoke [kənˈvok] v. 召集；召開 [🔊 聽發音](https://www.merriam-webster.com/dictionary/convoke)
+
+  con 一起 vok 呼喚（呼喚大家在一起 → 召集）  
+  例句1: The president convoked the committee for an emergency meeting. 主席召集委員會召開緊急會議。  
+  例句2: The council was convoked to discuss the issue. 議會被召集來討論這個問題。  
+  例句3: He convoked all his advisors for a strategy session. 他召集了所有顧問進行戰略會議。  
+
+## nov 新的
+- novel
+- noveity
+- novice
+- innovate
+- innovation
+- innovative
+- renovate
+- renovation
+- nova
+- supernova
+
+- novel [ˈnɑvəl] n. 小說；adj. 新穎的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/novel)
+
+  nov 新 el 名詞／形容詞  
+  例句1: She wrote a best-selling novel. 她寫了一本暢銷小說。  
+  例句2: He came up with a novel idea. 他提出了一個新穎的想法。  
+  例句3: The novel approach solved the problem. 這種新穎的方法解決了問題。  
+
+- novelty [ˈnɑvəlti] n. 新奇；新穎 [🔊 聽發音](https://www.merriam-webster.com/dictionary/novelty)
+
+  novel 新穎 ty 名詞  
+  例句1: The novelty of the toy soon wore off. 這個玩具的新奇感很快就消失了。  
+  例句2: She enjoyed the novelty of living in a foreign country. 她享受在國外生活的新奇感。  
+  例句3: The store sells novelties and gifts. 這家商店銷售新奇小物和禮品。  
+
+- novice [ˈnɑvɪs] n. 新手；初學者 [🔊 聽發音](https://www.merriam-webster.com/dictionary/novice)
+
+  nov 新 ice 名詞（剛接觸的人 → 新手）  
+  例句1: She is a novice at skiing. 她是滑雪新手。  
+  例句2: The course is for novices only. 這門課只適合初學者。  
+  例句3: He made mistakes like a novice. 他像個新手一樣犯錯。  
+
+- innovate [ˈɪnəˌvet] v. 創新；改革 [🔊 聽發音](https://www.merriam-webster.com/dictionary/innovate)
+
+  in 進入 nov 新 ate 動詞（引入新東西 → 創新）  
+  例句1: The company innovated new technology. 這家公司創新了新技術。  
+  例句2: She always tries to innovate in her work. 她總是在工作中嘗試創新。  
+  例句3: They innovated a better system for communication. 他們創新了一個更好的溝通系統。  
+
+- innovation [ˌɪnəˈveʃən] n. 創新；改革 [🔊 聽發音](https://www.merriam-webster.com/dictionary/innovation)
+
+  innovate 創新 ion 名詞  
+  例句1: Innovation is the key to progress. 創新是進步的關鍵。  
+  例句2: The company is known for its innovations. 這家公司以創新聞名。  
+  例句3: Recent innovations in technology have changed our lives. 近期的技術創新改變了我們的生活。  
+
+- innovative [ˈɪnəˌvetɪv] adj. 創新的；革新的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/innovative)
+
+  innovate 創新 ive 形容詞  
+  例句1: She is an innovative designer. 她是個創新的設計師。  
+  例句2: The product features an innovative design. 這個產品具有創新的設計。  
+  例句3: They came up with an innovative solution. 他們提出了一個創新的解決方案。  
+
+- renovate [ˈrɛnəˌvet] v. 翻新；整修 [🔊 聽發音](https://www.merriam-webster.com/dictionary/renovate)
+
+  re 再次 nov 新 ate 動詞（重新變新 → 翻新）  
+  例句1: They renovated the old house. 他們翻新了這棟老房子。  
+  例句2: The kitchen was renovated last year. 廚房去年整修了。  
+  例句3: He renovated the furniture to look new. 他把家具翻新得像新的一樣。  
+
+- renovation [ˌrɛnəˈveʃən] n. 翻新；整修 [🔊 聽發音](https://www.merriam-webster.com/dictionary/renovation)
+
+  renovate 翻新 ion 名詞  
+  例句1: The renovation of the building took a year. 這棟建築的翻新花了整整一年。  
+  例句2: They are doing renovations on their house. 他們正在對房子進行整修。  
+  例句3: The hotel is closed for renovations. 這家飯店因整修而暫停營業。  
+
+- nova [ˈnovə] n. 新星 [🔊 聽發音](https://www.merriam-webster.com/dictionary/nova)
+
+  nov 新 a 名詞（突然變亮的新星）  
+  例句1: Astronomers observed a nova in the sky. 天文學家觀測到天空中出現了一顆新星。  
+  例句2: The nova was discovered last night. 這顆新星是昨晚被發現的。  
+  例句3: The brightness of the nova gradually faded. 這顆新星的亮度逐漸消退。  
+
+- supernova [ˌsupɚˈnovə] n. 超新星 [🔊 聽發音](https://www.merriam-webster.com/dictionary/supernova)
+
+  super 超級 nova 新星（超級新星 → 超新星）  
+  例句1: Scientists observed a supernova explosion. 科學家觀察到了一次超新星爆炸。  
+  例句2: The supernova was visible to the naked eye. 這顆超新星用肉眼就能看見。  
+  例句3: The light from the supernova traveled millions of years. 這顆超新星的光行了數百萬年。  
+
+## cul col 耕種
+- colere
+- colture
+- colony
+
+### cul
+- culture
+- cultural
+- culturally
+- cultured
+
+- agriculture
+- agricultureal
+
+- horticulture
+- horticultural
+
+- cultivation
+- cultivated
+- cultivator
+
+- inculcate
+- cultish
+- cultic
+- cultist
+- cult-like
+
+### col
+- colony
+
+- colonial
+- colonialist
+- colonialism
+- colonize
+- colonized
+- colonizer
+- colonization
+- decolonize
+- decolonize
+
+
+8582
