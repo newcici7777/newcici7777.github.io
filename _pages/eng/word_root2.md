@@ -26,9 +26,11 @@ a 強調:
 
 名詞
 - ion ent ment ity 名詞
+- ance ence
 - or er 代表人、東西
 - ist ent ant an(an~~t~~的縮減) ian 代表人
 - ing 東西
+- ity
 - y
   - arm**y** 陸軍部對
 - le
@@ -44,30 +46,55 @@ a 強調:
 - age
 - ability
 - ation(at~~e~~ + ion)
-- ance
 - acy 
 - ture ure
 - ice
 	- juice n果汁
 	- justice n公正 司法審介
+- sis 病理相關
+  - diagnosis n.診斷
+
 
 動詞
 - ate iate uate
 - ify 使...
+- e
+- ore
 - ize
+- ose ise
+  - diagnose v.診斷
 
 副詞
 - ly
 
 形容詞
-- al(ul) ous(ious) able 形容詞
+- ive
+- al(ul) ial
+- ous(ious) 
+- able 形容詞
 - ing 東西令人感覺
 - ed id 人感覺
 - y 形容詞
-- full less
 - ary ory(母音互換)
 - ant ent en
+- ic
+- full less
 
+ic 形容詞/名詞
+
+y 形容詞/名詞:
+- **in**quir**y** [ˈɪnkwəri] n. 詢問 
+
+it 動詞/形容詞/名詞  
+- **ex**plo**it** [ɪkˈsplɔɪt] v. 開採；剝削 
+- **ex**plic**it** [ɪkˈsplɪsɪt] adj. 清楚明白的
+- spir**it**(名词）
+
+特殊字尾:  
+- aire 名詞
+  - questionn**aire** [ˌkwɛstʃəˈnɛr] n. 問卷
+- ue 動詞
+  - **con**tin**ue** [kənˈtɪnju] v. 繼續
 
 - 母音互換原則
 - 聲音相近字母互換原則
