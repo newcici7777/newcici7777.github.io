@@ -663,25 +663,122 @@ cop 警察 (警察抓小偷)
   例句3: The light from the supernova traveled millions of years. 這顆超新星的光行了數百萬年。  
 
 ## cul col 耕種
-- colere
-- colture
-- colony
+- colere 字根分三大類
+  - cul 培養與培育
+  - cul 敬畏與崇拜
+  - col 定居/殖民
 
-### cul
+### cul 耕種
 - culture
-- cultural
-- culturally
-- cultured
-
 - agriculture
-- agricultureal
-
 - horticulture
-- horticultural
 
-- cultivation
-- cultivated
-- cultivator
+- culture [ˈkʌltʃɚ] n. 文化；培養；種植 [🔊 聽發音](https://www.merriam-webster.com/dictionary/culture)
+
+  cult 培養 ure 名詞 = 慢慢培養出來的成果 = 文化  
+  例句1: She is interested in different cultures. 她對不同的文化感興趣。  
+  例句2: The culture of cells requires careful attention. 細胞培養需要仔細照顧。  
+  例句3: He studied the culture of ancient civilizations. 他研究了古代文明的文化。  
+
+- agriculture [ˈægrəˌkʌltʃɚ] n. 農業 [🔊 聽發音](https://www.merriam-webster.com/dictionary/agriculture)
+
+  agri 田地 cult 耕作 ure 名詞（在田地上耕作）= 農業  
+  例句1: Agriculture is important for the economy. 農業對經濟很重要。  
+  例句2: She works in the agriculture industry. 她在農業產業工作。  
+  例句3: Modern agriculture uses advanced technology. 現代農業使用先進技術。  
+
+- horticulture [ˈhɔrtəˌkʌltʃɚ] n. 園藝 [🔊 聽發音](https://www.merriam-webster.com/dictionary/horticulture)
+
+  horti 花園 cult 耕作 ure 名詞（在花園中耕作 → 園藝）  
+  例句1: She studied horticulture at university. 她在大學讀園藝。  
+  例句2: Horticulture involves growing flowers and vegetables. 園藝涉及種植花卉和蔬菜。  
+  例句3: He has a degree in horticulture. 他有園藝學位。  
+
+### 詞性構成
+
+| 單字 | 構成 | 詞性 | 中文釋義 |
+|------|------|------|----------|
+| cultural(描述社會) | culture + -al | Adj. | 文化的，文化相關的 |
+| cultured(描述人) | culture + -ed | Adj. | 有教養的，有文化修養的 |
+| culturally | cultural + -ly | Adv. | 在文化方面 |
+| agricultural | agriculture + -al | Adj. | 農業的，與農業有關的 |
+| horticultural | horticulture + -al | Adj. | 園藝的，與園藝有關的 |
+
+- cultural 關於文化的 
+  - 用來描述與社會、藝術、傳統、習俗等文化層面有關的事物
+- cultured 有教養的；有文化修養的
+  - 用來描述一個人受過良好教育、舉止優雅、對藝術和知識有品味的個人特質
+
+- cultural [ˈkʌltʃərəl] adj. 文化的，文化相關的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/cultural)
+
+  culture 文化 al 形容詞  
+  修飾對象：通常是事物，如活動、差異、遺產、政策、背景等。  
+  例句1: The city is a major cultural center. (這座城市是主要的文化中心。)  
+  例句2: There are cultural differences between the two countries. 這兩個國家之間有文化差異。  
+  例句3: The museum displays cultural artifacts. 這間博物館展示文化文物。  
+  例句4: We need to protect our cultural heritage. (我們需要保護我們的文化遺產。)  
+
+- cultured [ˈkʌltʃɚd] adj. 有教養的，有文化修養的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/cultured)
+
+  culture 文化 ed 形容詞  
+  修飾對象：幾乎永遠是人（或形容人的舉止、口音、品味等）。  
+  例句1: She is a cultured person who loves art and music. 她是有文化修養的人，熱愛藝術和音樂。  
+  例句2: He comes from a cultured family. 他出身於有教養的家庭。  
+  例句3: Her cultured accent impressed everyone. 她有教養的口音給每個人留下了深刻的印象。  
+  例句4: He has very cultured taste in music. (他在音樂方面有很優雅的品味。)
+
+- agricultural [ˌægrəˈkʌltʃərəl] adj. 農業的，與農業有關的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/agricultural)
+
+  agriculture 農業 al 形容詞  
+  例句1: The country's economy is based on agricultural products. 這個國家的經濟以農產品為基礎。  
+  例句2: She works in the agricultural sector. 她在農業部門工作。  
+  例句3: Agricultural land is important for food production. 農地對糧食生產很重要。  
+
+- horticultural [ˌhɔrtəˈkʌltʃərəl] adj. 園藝的，與園藝有關的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/horticultural)
+
+  horticulture 園藝 al 形容詞  
+  例句1: She joined the horticultural society. 她加入了園藝協會。  
+  例句2: The garden has many horticultural plants. 這個花園裡有很多園藝植物。  
+  例句3: He works in horticultural research. 他在園藝研究領域工作。  
+
+### 培養
+- **cul**（耕種、培養） + **ate**（動詞後綴） → **cultivate** 去「耕種」「培養」某物，也可以是感情、能力、關係
+
+| 單字 | 詞性 | 中文釋義 |
+|------|------|----------|
+| cultivation | n. | 培養，耕種 |
+| cultivated | adj. | 有教養的，精心栽培的 |
+| cultivator | n. | 耕作者，栽培者；耕耘機（農業機械） |
+
+- cultivate [ˈkʌltəˌvet] v. 耕種；培養 [🔊 聽發音](https://www.merriam-webster.com/dictionary/cultivate)
+
+  cul 耕作 + tivate（tiv + ate）動詞後綴（使成為...）  
+  例句1: She cultivates vegetables in her garden. 她在花園裡種植蔬菜。  
+  例句2: He cultivated a good relationship with his colleagues. 他與同事培養了良好的關係。  
+  例句3: The land is cultivated by local farmers. 這塊土地由當地農民耕種。  
+
+- cultivation [ˌkʌltəˈveʃən] n. 培養，耕種 [🔊 聽發音](https://www.merriam-webster.com/dictionary/cultivation)
+
+  cultivate 培養 ion 名詞  
+  例句1: The cultivation of crops requires patience. 農作物的耕種需要耐心。  
+  例句2: The cultivation of good habits takes time. 好習慣的培養需要時間。  
+  例句3: Rice cultivation is the main industry here. 水稻耕種是這裡的主要產業。  
+
+- cultivated [ˈkʌltəˌvetɪd] adj. 有教養的，精心栽培的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/cultivated)
+
+  cultivate 培養 ed 形容詞  
+  例句1: She has a cultivated taste in art. 她在藝術方面有精心的品味。  
+  例句2: He is a cultivated and polite gentleman. 他是有教養且有禮貌的紳士。  
+  例句3: The cultivated flowers are beautiful. 這些精心栽培的花很漂亮。  
+
+- cultivator [ˈkʌltəˌvetɚ] n. 耕作者，栽培者；耕耘機（農業機械） [🔊 聽發音](https://www.merriam-webster.com/dictionary/cultivator)
+
+  cultivate 培養 or 名詞（指人或工具）  
+  例句1: The cultivator prepared the soil for planting. 耕耘機為播種準備了土壤。  
+  例句2: She is a cultivator of rare orchids. 她是珍稀蘭花的栽培者。  
+  例句3: The farmers used a cultivator to break up the soil. 農民用耕耘機來鬆土。  
+
+8518
 
 - inculcate
 - cultish
