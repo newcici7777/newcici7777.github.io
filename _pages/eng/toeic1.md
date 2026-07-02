@@ -171,9 +171,6 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | counsel | /ˈkaʊnsəl/ | 建議；法律顧問 | 有「sel」像「說」（say），給建議 |
 | council | /ˈkaʊnsəl/ | 委員會；議會 | 有「cil」像「召集」（call），一群人被召集 |
 
-
-### consult / counsel / council 對照
-
 ### 字根說明
 - **sul / sel / cil** = 召集、拿取（源自拉丁語 *sul* 與 *cilium* 的組合）
 - **cil** = 召集（源自拉丁語 *calare*「召集、召喚」）
@@ -190,7 +187,6 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **consult** | [kənˈsʌlt] | v. | 諮詢 | con（一起）+ sul（召集）+ t |
 | **council** | [ˈkaʊnsəl] | n. | 委員會 | coun（一起）+ cil（sul 變體） |
 
-待整理
 
 - **con**sult [kənˈsʌlt] v. 諮詢；查閱；商議 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consult)
 
@@ -269,7 +265,6 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 
 | 單字 | 字源 | 詞性 | 中文釋義 |
 |------|------|------|----------|
-| crescent | cresc（成長）+ ent | n./adj. | 新月；漸增的 |
 | increase | in（向內）+ crease（成長） | v./n. | 增加；增長 |
 | decrease | de（向下）+ crease（成長） | v./n. | 減少；下降 |
 | concrete | con（一起）+ crete（成長） | adj./n. | 具體的；混凝土 |
