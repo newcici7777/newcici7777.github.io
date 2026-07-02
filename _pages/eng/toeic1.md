@@ -54,29 +54,6 @@ keywords: English, toeic
   例句2: He retired on a pension. 他靠退休金退休了。  
   例句3: The pension plan is very generous. 這個退休金計劃非常優厚。
 
-- apprentice [əˈprɛntɪs] n. 學徒；v. 使成為學徒 [🔊 聽發音](https://www.merriam-webster.com/dictionary/apprentice)
-
-  ap 強調 prent 抓住 ice 名詞（抓住知識的人 → 學徒）  
-  例句1: He works as an apprentice in a bakery. 他在麵包店當學徒。  
-  例句2: She was apprenticed to a famous artist. 她被送去跟隨一位著名藝術家當學徒。  
-  例句3: The apprentice is learning the trade. 這位學徒正在學習這門手藝。  
-
-- apprenticeship [əˈprɛntɪsʃɪp] n. 學徒身份；學徒期 [🔊 聽發音](https://www.merriam-webster.com/dictionary/apprenticeship)
-
-  apprentice 學徒 ship 名詞（表示身份或時期）  
-  例句1: He completed a four-year apprenticeship. 他完成了四年的學徒期。  
-  例句2: She started her apprenticeship at age 16. 她十六歲開始當學徒。  
-  例句3: The apprenticeship program is very competitive. 這個學徒計畫非常有競爭性。  
-
-
-| 單字 | 字源拆解 | 意義演變 |
-|------|----------|----------|
-| apprentice | ap（強調）+ prent（抓住）+ ice | 抓住知識的人 → 學徒 |
-| apprehend | ap（強調）+ prehend（抓住） | 抓住想法 → 理解；抓住人 → 逮捕 |
-| comprehend | com（一起）+ prehend（抓住） | 全部抓住 → 理解 |
-| comprehensive | com（一起）+ prehens（抓住）+ ive | 全部抓住的 → 全面的 |
-
-
 ## peal 推動 驅使
 
 - appeal [əˈpil] n./v. 呼籲；吸引；上訴 [🔊 聽發音](https://www.merriam-webster.com/dictionary/appeal)
@@ -93,19 +70,20 @@ keywords: English, toeic
   例句2: She has an appealing personality. 她有吸引人的個性。  
   例句3: The idea of a vacation is very appealing. 度假的想法非常令人感興趣。  
 
-- appellant [əˈpɛlənt] n. 上訴人 [🔊 聽發音](https://www.merriam-webster.com/dictionary/appellant)
+- **re**pel [rɪˈpɛl] v. 擊退；驅除；排斥 [🔊 聽發音](https://www.merriam-webster.com/dictionary/repel)
 
-  appeal 上訴 ant 名詞（指人）  
-  例句1: The appellant filed a motion to appeal. 上訴人提出上訴動議。  
-  例句2: The appellant's lawyer argued the case. 上訴人的律師為案件辯護。  
-  例句3: The appellant lost the case. 上訴人敗訴了。  
+  re 回 pel 驅趕（驅趕回去 → 擊退、排斥）  
+  例句1: The soldiers repelled the enemy attack. 士兵們擊退了敵人的進攻。  
+  例句2: This material repels water. 這種材質防水（排斥水）。  
+  例句3: She felt repelled by his rude behavior. 她對他的粗魯行為感到排斥。  
 
-- appellate [əˈpɛlɪt] adj. 上訴的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/appellate)
+- **com**pel [kəmˈpɛl] v. 強迫；迫使 [🔊 聽發音](https://www.merriam-webster.com/dictionary/compel)
 
-  appeal 上訴 ate 形容詞  
-  例句1: The case was sent to the appellate court. 案件被送到上訴法院。  
-  例句2: The appellate judge reviewed the evidence. 上訴法官審查了證據。  
-  例句3: The appellate decision was final. 上訴判決是最終的。  
+  com 一起 pel 驅趕（驅趕到一起 → 強迫、迫使）  
+  例句1: The situation compelled him to resign. 情況迫使他辭職。  
+  例句2: I feel compelled to tell you the truth. 我覺得有必要告訴你真相。  
+  例句3: The law compels employers to provide safe working conditions. 法律強迫雇主提供安全工作環境。  
+ 
 
 ### peal vs pet vs peat
 peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向外移動」。
@@ -128,6 +106,28 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | peat | repeat | 重複 | re（再次）+ peat（追求） |
 
 ## prehend 抓住
+- apprentice [əˈprɛntɪs] n. 學徒；v. 使成為學徒 [🔊 聽發音](https://www.merriam-webster.com/dictionary/apprentice)
+
+  ap 強調 prent 抓住 ice 名詞（抓住知識的人 → 學徒）  
+  例句1: He works as an apprentice in a bakery. 他在麵包店當學徒。  
+  例句2: She was apprenticed to a famous artist. 她被送去跟隨一位著名藝術家當學徒。  
+  例句3: The apprentice is learning the trade. 這位學徒正在學習這門手藝。  
+
+- apprenticeship [əˈprɛntɪsʃɪp] n. 學徒身份；學徒期 [🔊 聽發音](https://www.merriam-webster.com/dictionary/apprenticeship)
+
+  apprentice 學徒 ship 名詞（表示身份或時期）  
+  例句1: He completed a four-year apprenticeship. 他完成了四年的學徒期。  
+  例句2: She started her apprenticeship at age 16. 她十六歲開始當學徒。  
+  例句3: The apprenticeship program is very competitive. 這個學徒計畫非常有競爭性。  
+
+
+| 單字 | 字源拆解 | 意義演變 |
+|------|----------|----------|
+| apprentice | ap（強調）+ prent（抓住）+ ice | 抓住知識的人 → 學徒 |
+| apprehend | ap（強調）+ prehend（抓住） | 抓住想法 → 理解；抓住人 → 逮捕 |
+| comprehend | com（一起）+ prehend（抓住） | 全部抓住 → 理解 |
+| comprehensive | com（一起）+ prehens（抓住）+ ive | 全部抓住的 → 全面的 |
+
 - apprehensive [ˌæprɪˈhɛnsɪv] adj. 憂慮的；擔憂的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/apprehensive)
 
   ap 強調 prehend 抓住 ive 形容詞（被抓住 → 被擔憂抓住 → 憂慮的）  
@@ -184,11 +184,64 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **counsel** | coun（一起）+ sel（召集）| n./v. | 建議；法律顧問 |
 | **council** | coun（一起）+ cil（召集）| n. | 委員會；議會 |
 
+| 單字 | 發音 | 詞性 | 意思 | 關聯字根 |
+|------|------|------|------|----------|
+| **consul** | [ˈkɑnsəl] | n. | 領事 | con（一起）+ sul（召集） |
+| **consult** | [kənˈsʌlt] | v. | 諮詢 | con（一起）+ sul（召集）+ t |
+| **council** | [ˈkaʊnsəl] | n. | 委員會 | coun（一起）+ cil（sul 變體） |
+
 待整理
 
-- consult / consultant / consultation
-- consul / consulate
-- council
+- **con**sult [kənˈsʌlt] v. 諮詢；查閱；商議 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consult)
+
+  con 一起 sul 召集 t（連接字母）→ 召集在一起討論 → 諮詢、商議  
+  例句1: Please consult your doctor before taking this medicine. 服用此藥前請諮詢你的醫生。  
+  例句2: I need to consult the dictionary for the meaning. 我需要查閱字典了解意思。  
+  例句3: The manager consulted with the team before making a decision. 經理在做決定前與團隊商議。  
+
+- **con**sultant [kənˈsʌltənt] n. 顧問；諮詢師 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consultant)
+
+  con 一起 sul 召集 tant 人 → 被召集來提供專業意見的人 → 顧問  
+  例句1: The company hired a financial consultant to improve profits. 公司聘請了一位財務顧問來提升利潤。  
+  例句2: She works as an IT consultant for a global firm. 她在一家全球性公司擔任IT顧問。  
+  例句3: The consultant recommended a new marketing strategy. 顧問推薦了一項新的行銷策略。  
+
+- **con**sultation [ˌkɑnsəlˈteʃən] n. 諮詢；協商；會診 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consultation)
+
+  con 一起 sul 召集 tation 名詞 → 召集在一起討論的過程或會議 → 諮詢、協商  
+  例句1: The consultation lasted over two hours. 這場諮詢會議持續了兩個多小時。  
+  例句2: We need a consultation with the legal team. 我們需要與法律團隊進行協商。  
+  例句3: The doctor held a consultation with several specialists. 醫生與幾位專家進行了會診。  
+
+- **con**sul [ˈkɑnsəl] n. 領事 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consul)
+
+  con 一起 sul 召集 → 召集並代表國家處理外交事務的人 → 領事  
+  例句1: He was appointed consul to the United States. 他被任命為駐美國領事。  
+  例句2: The consul helped the citizens abroad. 領事協助了在國外的公民。  
+  例句3: The British consul attended the ceremony. 英國領事出席了典禮。  
+
+- **con**sulate [ˈkɑnsəlɪt] n. 領事館 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consulate)
+
+  con 一起 sul 召集 ate 場所 → 領事辦公的場所 → 領事館  
+  例句1: I need to go to the consulate to renew my visa. 我需要去領事館更新我的簽證。  
+  例句2: The consulate is located in the city center. 領事館位於市中心。  
+  例句3: He applied for a travel document at the consulate. 他在領事館申請了旅行證件。  
+
+- **coun**cil [ˈkaʊnsəl] n. 委員會；理事會 [🔊 聽發音](https://www.merriam-webster.com/dictionary/council)
+
+  coun 一起 cil（sul 的變體）召集 → 召集在一起開會的組織 → 委員會  
+  例句1: The city council approved the new budget. 市議會批准了新預算。  
+  例句2: She was elected to the student council. 她被選入學生會。  
+  例句3: The council will meet to discuss the proposal. 委員會將開會討論該提案。  
+
+| 單字 | 字源 | 詞性 | 中文釋義 |
+|------|------|------|----------|
+| consult | con（一起）+ sul（召集）+ t | v. | 諮詢；查閱；商議 |
+| consultant | con（一起）+ sul（召集）+ tant（人） | n. | 顧問；諮詢師 |
+| consultation | con（一起）+ sul（召集）+ tation（名詞） | n. | 諮詢；協商；會診 |
+| consul | con（一起）+ sul（召集） | n. | 領事 |
+| consulate | con（一起）+ sul（召集）+ ate（場所） | n. | 領事館 |
+| council | coun（一起）+ cil（sul 變體，召集） | n. | 委員會；理事會 |
 
 ## cruit 成長
 - recruit [rɪˈkrut] v. 招募；徵募；n. 新成員；新兵 [🔊 聽發音](https://www.merriam-webster.com/dictionary/recruit)
@@ -210,7 +263,7 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   recruit 招募 er 名詞（指人）  
   例句1: The recruiter called her for an interview. 招聘人員打電話通知她面試。  
   例句2: He works as a military recruiter. 他是一名徵兵人員。  
-  例句3: The recruiter was impressed by her resume. 招聘人員對她的履歷印象深刻。  
+  例句3: The recruiter was impressed by her resume. 招聘人員對她的履歷印象深刻。    
 
 ### 相同字根
 
