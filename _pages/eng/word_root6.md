@@ -742,7 +742,7 @@ cop 警察 (警察抓小偷)
   例句3: He works in horticultural research. 他在園藝研究領域工作。  
 
 ### 培養
-- **cul**（耕種、培養） + **ate**（動詞後綴） → **cultivate** 去「耕種」「培養」某物，也可以是感情、能力、關係
+- **cul**（耕種、培養） + **tivate**（動詞後綴） → **cultivate** 去「耕種」「培養」某物，也可以是感情、能力、關係
 
 | 單字 | 詞性 | 中文釋義 |
 |------|------|----------|
@@ -777,6 +777,7 @@ cop 警察 (警察抓小偷)
   例句1: The cultivator prepared the soil for planting. 耕耘機為播種準備了土壤。  
   例句2: She is a cultivator of rare orchids. 她是珍稀蘭花的栽培者。  
   例句3: The farmers used a cultivator to break up the soil. 農民用耕耘機來鬆土。  
+
 
 8518
 
