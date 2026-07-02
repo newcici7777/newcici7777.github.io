@@ -101,14 +101,14 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 
 | 字根 | 單字 | 中文 | 字源拆解 |
 |------|------|------|----------|
-| peal | appeal | 呼籲 | ap（強調）+ peal（推動） |
+| peal | appeal | 呼籲 | ap（朝向）+ peal（推動） |
 | pet | compete | 競爭 | com（一起）+ pet（追求） |
 | peat | repeat | 重複 | re（再次）+ peat（追求） |
 
 ## prehend 抓住
 - apprentice [əˈprɛntɪs] n. 學徒；v. 使成為學徒 [🔊 聽發音](https://www.merriam-webster.com/dictionary/apprentice)
 
-  ap 強調 prent 抓住 ice 名詞（抓住知識的人 → 學徒）  
+  ap 朝向 prent 抓住 ice 名詞（抓住知識的人 → 學徒）  
   例句1: He works as an apprentice in a bakery. 他在麵包店當學徒。  
   例句2: She was apprenticed to a famous artist. 她被送去跟隨一位著名藝術家當學徒。  
   例句3: The apprentice is learning the trade. 這位學徒正在學習這門手藝。  
@@ -123,14 +123,14 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 
 | 單字 | 字源拆解 | 意義演變 |
 |------|----------|----------|
-| apprentice | ap（強調）+ prent（抓住）+ ice | 抓住知識的人 → 學徒 |
-| apprehend | ap（強調）+ prehend（抓住） | 抓住想法 → 理解；抓住人 → 逮捕 |
+| apprentice | ap（朝向）+ prent（抓住）+ ice | 抓住知識的人 → 學徒 |
+| apprehend | ap（朝向）+ prehend（抓住） | 抓住想法 → 理解；抓住人 → 逮捕 |
 | comprehend | com（一起）+ prehend（抓住） | 全部抓住 → 理解 |
 | comprehensive | com（一起）+ prehens（抓住）+ ive | 全部抓住的 → 全面的 |
 
 - apprehensive [ˌæprɪˈhɛnsɪv] adj. 憂慮的；擔憂的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/apprehensive)
 
-  ap 強調 prehend 抓住 ive 形容詞（被抓住 → 被擔憂抓住 → 憂慮的）  
+  ap 朝向 prehend 抓住 ive 形容詞（被抓住 → 被擔憂抓住 → 憂慮的）  
   例句1: She is apprehensive about the exam. 她對考試感到憂慮。  
   例句2: He felt apprehensive before the interview. 他在面試前感到擔憂。  
   例句3: They were apprehensive about the future. 他們對未來感到憂慮。  
@@ -394,7 +394,7 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **discernible** | discern + ible | adj. | 可辨別的；可識別的 |
 | **concern** | con（一起）+ cern（篩選）| n./v. | 關心；擔憂 |
 | **concerning** | concern + ing | prep. | 關於 |
-| **ascertain** | as（強調）+ cert（確定）+ ain | v. | 查明；確定 |
+| **ascertain** | as（朝向）+ cert（確定）+ ain | v. | 查明；確定 |
 
 ### cret（拉丁語 *cretus* → 已被篩選、分開）
 
@@ -520,7 +520,7 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 ## vot 誓言 / 承諾
 - devote [dɪˈvot] v. 奉獻；致力於 [🔊 聽發音](https://www.merriam-webster.com/dictionary/devote)
 
-  de 強調 vote 誓言（用力承諾 → 奉獻）  
+  de 朝向 vote 誓言（用力承諾 → 奉獻）  
   例句1: She devoted her life to helping others. 她奉獻了一生來幫助他人。  
   例句2: He devotes all his time to his work. 他將所有時間奉獻給工作。  
   例句3: They devoted their energy to the project. 他們將精力奉獻給這個專案。  
@@ -541,17 +541,17 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 
 - devout [dɪˈvaʊt] adj. 虔誠的；誠摯的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/devout)
 
-  de 強調 vout 誓言（堅守誓言 → 虔誠的）  
+  de 朝向 vout 誓言（堅守誓言 → 虔誠的）  
   例句1: She is a devout Christian. 她是個虔誠的基督徒。  
   例句2: He made a devout wish for peace. 他誠摯地祈求和平。  
   例句3: The devout followers gathered at the temple. 虔誠的信徒聚集在寺廟裡。  
 
 | 單字 | 詞性 | 字源拆解 | 中文釋義 |
 |------|------|----------|----------|
-| devote | v. | de（強調）+ vote（誓言） | 奉獻；致力於 |
+| devote | v. | de（完全）+ vote（誓言） | 奉獻；致力於 |
 | devoted | adj. | devote + ed | 忠誠的；奉獻的 |
 | devotion | n. | devote + ion | 奉獻；忠誠；熱愛 |
-| devout | adj. | de（強調）+ vout（誓言） | 虔誠的；誠摯的 |
+| devout | adj. | de（完全）+ vout（誓言） | 虔誠的；誠摯的 |
 | vow | n./v. | vow（誓言） | 誓言；發誓 |
 | vote | n./v. | vote（誓言 → 投票） | 投票（承諾支持某人） |
 
@@ -682,7 +682,7 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 
 - accomplish [əˈkɑmplɪʃ] v. 完成；實現 [🔊 聽發音](https://www.merriam-webster.com/dictionary/accomplish)
 
-  ac 強調 compl 充滿 ish 動詞（使充滿 → 完成、實現）  
+  ac 朝向 compl 充滿 ish 動詞（使充滿 → 完成、實現）  
   例句1: She accomplished her goal. 她達成了她的目標。  
   例句2: He accomplished a lot in his career. 他在職涯中完成了許多事。  
   例句3: The team accomplished the task ahead of schedule. 團隊提前完成了任務。  
@@ -699,7 +699,7 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 |------|----------|------|----------|
 | complete | com（一起）+ plete（充滿） | adj./v. | 完整的；完成 |
 | completion | complete + ion | n. | 完成；結束 |
-| accomplish | ac（強調）+ compl（充滿）+ ish | v. | 完成；實現 |
+| accomplish | ac（朝向）+ compl（充滿）+ ish | v. | 完成；實現 |
 | accomplishment | accomplish + ment | n. | 成就；完成 |
 | complement | com（一起）+ ple（充滿）+ ment | n./v. | 補充；互補 |
 | supplement | sup（下面）+ ple（充滿）+ ment | n./v. | 補充；增補 |
@@ -729,7 +729,7 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 
 - appropriate [əˈpropriɪt] adj. 適當的；合適的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/appropriate)
 
-  ap 強調 propri 適當 ate 形容詞  
+  ap 朝向 propri 適當 ate 形容詞  
   例句1: His comments were not appropriate for the occasion. 他的評論不適合這個場合。  
   例句2: She wore appropriate clothing for the weather. 她穿了適合天氣的服裝。  
   例句3: The appropriate time to call is between 9 and 5. 合適的來電時間是九點到五點。  
@@ -754,7 +754,7 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | proper | propri（自己的、適當的） | adj. | 適當的；正確的 |
 | properly | proper + ly | adv. | 適當地；正確地 |
 | property | proper + ty（名詞） | n. | 財產；特性 |
-| appropriate | ap（強調）+ propri + ate | adj. | 適當的；合適的 |
+| appropriate | ap（朝向）+ propri + ate | adj. | 適當的；合適的 |
 | appropriately | appropriate + ly | adv. | 適當地；合適地 |
 | inappropriate | in（否定）+ appropriate | adj. | 不適當的；不合適的 |
 | proprietor | propri（自己的）+ etor | n. | 所有者；經營者 |
@@ -862,7 +862,7 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **elevator** | elevate + or（工具）| n. | 電梯 |
 | **levitate** | lev（輕）+ itate | v. | 懸浮（使變輕而上升）|
 | **lever** | lev（舉起）+ er（工具）| n. | 槓桿 |
-| **alleviate** | al（強調）+ lev（輕）+ iate | v. | 緩解；減輕 |
+| **alleviate** | al（朝向）+ lev（輕）+ iate | v. | 緩解；減輕 |
 | **alleviation** | alleviate + ion | n. | 緩解；減輕 |
 
 ## audi 聽
@@ -1132,7 +1132,7 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **credential** | cred + ent + ial | n. | 證書；憑證；資格證明 |
 | **credence** | cred + ence | n. | 信任；相信 |
 | **discredit** | dis（否定）+ credit | v./n. | 敗壞名聲；名譽掃地 |
-| **accredit** | ac（強調）+ credit | v. | 認可；委派 |
+| **accredit** | ac（朝向）+ credit | v. | 認可；委派 |
 | **accreditation** | accredit + ation | n. | 認證；資格認可 |
 | **creed** | cred（相信）→ 信仰 | n. | 信條；信念 |
 | **credulous** | cred + ulous（傾向於）| adj. | 輕信的 |
@@ -1244,10 +1244,10 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **contain** | con（一起）+ tain（拿住）| v. | 包含；容納 |
 | **content** | con（一起）+ tent（拿住）| n./adj. | 內容；滿足的 |
 | **maintain** | main（手）+ tain（拿住）| v. | 維持；保養 |
-| **obtain** | ob（強調）+ tain（拿住）| v. | 獲得 |
+| **obtain** | ob（朝向）+ tain（拿住）| v. | 獲得 |
 | **retain** | re（再次）+ tain（拿住）| v. | 保留；保持 |
 | **sustain** | sus（下面）+ tain（拿住）| v. | 維持；支撐 |
-| **attain** | at（強調）+ tain（拿住）| v. | 達成；獲得 |
+| **attain** | at（朝向）+ tain（拿住）| v. | 達成；獲得 |
 | **detain** | de（向下）+ tain（拿住）| v. | 拘留；扣押 |
 | **entertain** | enter（進入）+ tain（拿住）| v. | 娛樂；款待 |
 | **tenure** | ten（拿住）+ ure | n. | 任期；終身職 |
@@ -1300,7 +1300,7 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **quest** | quest（追求）| n. | 追求；探索 |
 | **request** | re（再次）+ quest（問）| n./v. | 要求；請求 |
 | **inquiry** | in（裡面）+ quir（問）+ y | n. | 詢問；調查 |
-| **acquire** | a（強調）+ quir（問）+ e | v. | 獲得 |
+| **acquire** | a（朝向）+ quir（問）+ e | v. | 獲得 |
 | **require** | re（再次）+ quir（問）+ e | v. | 要求；需要 |
 
 ## plen 充滿/滿
@@ -1326,7 +1326,7 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **plenty** | plen（充滿）+ ty | n. | 充足；大量 |
 | **plentiful** | plenty + ful | adj. | 豐富的；充足的 |
 | **complete** | com（一起）+ plete（充滿）| adj./v. | 完整的；完成 |
-| **accomplish** | ac（強調）+ compl（充滿）+ ish | v. | 完成；實現 |
+| **accomplish** | ac（朝向）+ compl（充滿）+ ish | v. | 完成；實現 |
 | **complement** | com（一起）+ ple（充滿）+ ment | n./v. | 補充；互補 |
 | **supplement** | sup（下面）+ ple（充滿）+ ment | n./v. | 補充；增補 |
 | **implement** | im（裡面）+ ple（充滿）+ ment | n./v. | 工具；實施 |
@@ -1359,7 +1359,7 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **supply** | sup（下面）+ ply（充滿）| v./n. | 供應；供應量 |
 | **supplies** | supply + s（複數）| n. | 物資；必需品 |
 | **reply** | re（反覆）+ ply（摺疊）| v./n. | 回覆；答覆 |
-| **apply** | ap（強調）+ ply（摺疊）| v. | 申請；應用 |
+| **apply** | ap（朝向）+ ply（摺疊）| v. | 申請；應用 |
 | **application** | apply + ation | n. | 申請；應用 |
 | **comply** | com（一起）+ ply（摺疊）| v. | 遵守；服從 |
 | **compliance** | comply + ance | n. | 遵守；服從 |
@@ -1821,7 +1821,7 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **prove** | prov（測試）+ e | v. | 證明 |
 | **proof** | proof（測試）| n. | 證據；證明 |
 | **probe** | prob（測試）+ e | v./n. | 探查；探測器 |
-| **approve** | ap（強調）+ prov（測試）+ e | v. | 批准；認可 |
+| **approve** | ap（朝向）+ prov（測試）+ e | v. | 批准；認可 |
 | **disapprove** | dis（否定）+ approve | v. | 不贊成；反對 |
 | **reprove** | re（反覆）+ prov（測試）+ e | v. | 責備；訓斥 |
 

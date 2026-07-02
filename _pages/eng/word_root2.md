@@ -173,7 +173,7 @@ t為平台，ss為水流:
 
 - **as**sess [əˈsɛs] v. 評估，估算 [🔊 聽發音](https://www.merriam-webster.com/dictionary/assess)
 
-  as強調 sess坐（法官旁邊）  
+  as朝向 sess坐（法官旁邊）  
   例句1: The teacher assessed the students' work. 老師評估了學生的作業。  
   例句2: It's difficult to assess the damage. 很難估算損失。  
   例句3: We need to assess the situation first. 我們需要先評估情況。  
@@ -310,7 +310,7 @@ m是山上
 
 - **ad**mir**e** [ədˈmaɪr] v. 欽慕；仰慕 [🔊 聽發音](https://www.merriam-webster.com/dictionary/admire)
 
-  ad強調 mir看  
+  ad朝向 mir看  
   例句1: I admire her courage. 我欽佩她的勇氣。  
   例句2: He admires his father very much. 他非常仰慕他的父親。  
   例句3: They admired the beautiful scenery. 他們欣賞了美麗的風景。  
@@ -744,7 +744,7 @@ b**a**l > bol 把中間的o看成圓圓的球
 
 - debar [dɪˈbɑr] v.阻止；禁止 [🔊 聽發音](https://www.merriam-webster.com/dictionary/debar)
 
-  de強調 bar障礙  
+  de否定 bar障礙  
   例句1: The law debars him from voting. 法律禁止他投票。  
   例句2: They were debarred from entering the country. 他們被禁止入境。  
   例句3: The regulations debar certain activities. 這些規定禁止某些活動。  
@@ -951,7 +951,7 @@ c**a**r -> c**u**r
 
 - **ac**cur**acy** [ˈækjərəsi] n.準確，精準 [🔊 聽發音](https://www.merriam-webster.com/dictionary/accuracy)
 
-  a強調cur關心acy名詞，在意結果注重精確性  
+  a朝向cur關心acy名詞，在意結果注重精確性  
   例句1: She checked the accuracy of the data. 她核對了數據的準確性。  
   例句2: The accuracy of his aim was impressive. 他瞄準的精確度令人印象深刻。  
   例句3: We need to improve the accuracy of our measurements. 我們需要提高測量的準確性。  
@@ -1038,7 +1038,7 @@ ca~~re~~ + cu~~r~~ -> ca~~c~~u 去掉重覆的c -> cau
 ## count 計算 數數字
 - **ac**count [əˈkaʊnt] n.帳戶；解釋 [🔊 聽發音](https://www.merriam-webster.com/dictionary/account)
 
-  a加強強調 計算帳戶中的錢，解釋資金流向  
+  a朝向 計算帳戶中的錢，解釋資金流向  
   例句1: She opened a bank account. 她開了一個銀行帳戶。  
   例句2: He gave an account of what happened. 他對發生的事做了解釋。  
   例句3: Please pay the money into my account. 請把錢存入我的帳戶。  
@@ -1244,7 +1244,7 @@ cl~~e~~ar 刪掉e -> clar
 
 - **de**clar**e** [dɪˈklɛr] v.聲明 [🔊 聽發音](https://www.merriam-webster.com/dictionary/declare)
 
-  de強調clar清楚，e不發音  
+  de加強 clar清楚，e不發音  
   例句1: He declared his intention to run for president. 他宣布了競選總統的意圖。  
   例句2: She declared that she was innocent. 她聲明自己是無辜的。  
   例句3: The country declared war. 該國宣戰了。  
@@ -1263,14 +1263,14 @@ cl**ea**n -> cl**ai**n -> 把n變成m clai**m**
 
 - **de**claim [dɪˈklem] v.（在公眾前）慷慨陳詞 [🔊 聽發音](https://www.merriam-webster.com/dictionary/declaim)
 
-  de強調claim說清楚  
+  de強調 claim說清楚  
   例句1: He declaimed against the government. 他公開抨擊政府。  
   例句2: The politician declaimed his views on television. 這位政治人物在電視上慷慨陳詞。  
   例句3: She declaimed a poem at the ceremony. 她在典禮上朗誦了一首詩。  
 
 - **ac**claim [əˈklem] n./v.讚譽，高度評價 [🔊 聽發音](https://www.merriam-webster.com/dictionary/acclaim)
 
-  a強調claim說清楚，優點說清楚，誇獎別人  
+  a朝向claim說清楚，優點說清楚，誇獎別人  
   例句1: The book received critical acclaim. 這本書獲得了評論界的好評。  
   例句2: He was acclaimed as the best actor of his generation. 他被譽為他這一代最優秀的演員。  
   例句3: The artist's work was acclaimed by critics. 這位藝術家的作品受到評論家的讚賞。  
@@ -1323,7 +1323,7 @@ cla~~i~~m 刪掉i -> clam
 
 - **de**clam**ation** [ˌdɛkləˈmeʃən] n.反抗，譴責 [🔊 聽發音](https://www.merriam-webster.com/dictionary/declamation)
 
-  強調de說清楚 clam名詞（ate+ion）把問題說清楚，罵政府  
+  de加強 clam說清楚 名詞（ate+ion）把問題說清楚，罵政府  
   例句1: His declamation against injustice was powerful. 他對不公義的譴責很有力。  
   例句2: She gave a passionate declamation. 她做了一場慷慨激昂的演說。  
   例句3: The declamation was met with applause. 這番慷慨陳詞贏得了掌聲。  
@@ -1510,7 +1510,7 @@ fic~~t~~ -> fic
 
 - **o**ffic**e** [ˈɔfɪs] n.辦公室 [🔊 聽發音](https://www.merriam-webster.com/dictionary/office)
 
-  o強調fic做 e在字尾不發音，幫助c發s（做事的地方）  
+  o朝向fic做 e在字尾不發音，幫助c發s（做事的地方）  
   例句1: She works in a large office. 她在一間大辦公室工作。  
   例句2: The office is closed on weekends. 辦公室週末不開放。  
   例句3: He left his bag in the office. 他把包包忘在辦公室了。  
@@ -1688,7 +1688,7 @@ fa**i**l -> fa**u**l -> faul**t** 加上t
 
 - default [dɪˈfɔlt] n./v.違約 [🔊 聽發音](https://www.merriam-webster.com/dictionary/default)
 
-  de 強調 fault 錯誤  
+  de加強 fault 錯誤  
   例句1: He defaulted on his loan payments. 他拖欠了貸款。  
   例句2: The company went into default. 這家公司違約了。  
   例句3: The default setting is recommended. 建議使用預設設定。  
@@ -2059,7 +2059,7 @@ live [lɪv] v. 生活；居住
     例句3: She wants to live a happy life. 她想過幸福的生活。
 
 alive [əˈlaɪv] adj. 活著的；有活力的  
-  - a 強調 live 生命  
+  - a 朝向 live 生命  
     例句1: The patient is still alive. 病人還活著。  
     例句2: The city comes alive at night. 這座城市在夜晚活躍起來。  
     例句3: His stories make history come alive. 他的故事讓歷史活了起來。
@@ -2263,7 +2263,7 @@ link n/v.连接
 lin~~e~~ -> li**n** -> li_n -> li**g**n g代表勾子
 
 align [əˈlaɪn] v. 結盟；使對齊  
-  - a 強調 lign 線（line 變體）  
+  - a 朝向 lign 線（line 變體）  
     例句1: Please align the text to the left. 請將文字向左對齊。  
     例句2: The two companies aligned their interests. 兩家公司結盟以整合利益。  
     例句3: His views align with mine. 他的觀點與我的一致。
@@ -2787,7 +2787,7 @@ part**icle** [ˈpɑrtɪkəl] n. 顆粒
     例句3: He imparted his knowledge to the younger generation. 他將知識傳授給年輕一代。
 
 **a**part [əˈpɑrt] adv. 分離；相隔  
-  - a 強調 part 分開  
+  - a 朝向 part 分開  
     例句1: They live apart from each other. 他們分開住。  
     例句2: The two buildings are far apart. 這兩棟建築相距很遠。  
     例句3: He tore the paper apart. 他把紙撕碎了。
@@ -2889,7 +2889,7 @@ port**ion** [ˈpɔrʃən] n. 一部分
     例句3: The proportion of ingredients is important. 食材的比例很重要。
 
 **ap**port**ion** [əˈpɔrʃən] v. 分配  
-  - ap 強調 port 一部分 ion 動詞（名詞動詞化）  
+  - ap 朝向 port 一部分 ion 動詞（名詞動詞化）  
     例句1: The money was apportioned among the team members. 這筆錢在團隊成員之間進行了分配。  
     例句2: They apportioned the tasks fairly. 他們公平地分配了任務。  
     例句3: The land was apportioned to the settlers. 這塊土地被分配給了定居者。

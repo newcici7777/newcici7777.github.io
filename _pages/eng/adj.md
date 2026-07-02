@@ -59,6 +59,51 @@ ad會省略d，a+重覆字根的第一個單字，也有朝向的意思:
 - attract = 朝自己這邊拉過來 v.吸引
 - attend = 朝某處伸手 v.照顧;出席;吸引注意
 
+## de 向下 減少 離開 去除 相反 否定 完全
+帶有「向下」、「離開」、「去除」與「相反/否定」四種核心概念
+
+向下、減少:
+- decline (下降/拒絕) = de (向下) + cline (傾斜)
+- decrease (減少) = de (向下) + crease (增加/生長)
+- depress (使沮喪/壓下) = de (向下) + press (壓)
+- devalue (貶值) = de (向下) + value (價值
+
+離開、分離:
+- depart (離開/出發) = de (離開) + part (部分/分開)
+- detach (分離/拆卸) = de (離開) + tach (連接)
+- deprive (剝奪) = de (分離) + prive (私人/佔有) -> 將屬於個人的東西拿走
+
+去除、否定:
+- deactivate (使無效化) = de (去除) + activate (啟動)
+- decode (解碼) = de (去除) + code (密碼)
+- defrost (除霜) = de (去除) + frost (霜)
+
+加強語氣、完整、完全:
+- decide (決定) = de (完全) + cide (切) -> 將問題徹底切斷（解決）
+- determine (決定/確定) = de (加強) + termine (界線/結束) -> 確定界線
+- dedicate (奉獻) = de (加強) + dicare (宣告) -> 徹底宣告獻身
+
+## op 反、對著、阻擋、朝向
+
+逆向、相對（against, toward）
+- obstacle（障礙）→ ob-（against）+ stacle（stand，站立）= 阻擋前進的東西
+- obstruct（阻礙）→ ob-（against）+ struct（build，建造）= 妨礙建設
+- oppose（反對）→ ob- 變成 op-（against）+ pose（放置）= 站在對立面
+
+加強語氣（intensive）
+- obtain（獲得）→ ob-（加強）+ tain（hold，握住）= 緊握在手中
+- observe（觀察）→ ob-（加強）+ serve（看守）= 仔細看守
+
+朝向、對著（toward）
+- opportunity（機會）→ ob-（toward）+ portus（港口）= 船順利朝港口前進
+- oblige（強迫、使負責）→ ob-（toward）+ ligare（綁住）= 綁住某人去做某事
+
+表示「反對、面對、壓制」（最常見）
+- oppose (op + pose)：反對。字面為「反著放」，站在對立面反對。
+- oppress (op + press)：壓迫、欺壓。字面為「向下施加壓力」，指外力不公地壓在人身上。
+- opponent (op + pon + ent)：對手、反對者。字面是「被擺在對立面的人」。
+- obstacle (ob + stacle)：障礙。字面為「站著反對/阻擋前進的東西」（發音關係同化）。
+
 ## 字首 字根 字尾 解釋
 字首(補充意思) + 字根(核心意思) + 字尾(動詞/名詞/形容/副詞)  
 **re**act**ion** n. 反應  

@@ -12,7 +12,7 @@ t -> 延伸
 
 - **ad**mit [ədˈmɪt] v. 承認；准許進入 [🔊 聽發音](https://www.merriam-webster.com/dictionary/admit)
 
-  ad 靠近強調 mit 送出（允許送出去 → 准許進入；承認）  
+  ad 靠近朝向 mit 送出（允許送出去 → 准許進入；承認）  
   例句1: She admitted her mistake. 她承認了她的錯誤。  
   例句2: He was admitted to the hospital. 他被准許進入醫院。  
   例句3: They admitted that they were wrong. 他們承認他們錯了。  
@@ -74,7 +74,7 @@ s是水，通過水送出去。
 
 - **ad**miss**ion** [ədˈmɪʃən] n. 准入 [🔊 聽發音](https://www.merriam-webster.com/dictionary/admission)
 
-  ad 強調 miss 送出 ion 名詞（允許送進去 → 准入）  
+  ad 朝向 miss 送出 ion 名詞（允許送進去 → 准入）  
   例句1: Admission to the museum is free. 博物館免費入場。  
   例句2: He applied for admission to the university. 他申請了大學的入學許可。  
   例句3: Her admission of guilt surprised everyone. 她承認有罪讓所有人驚訝。  
@@ -762,7 +762,7 @@ pl~~e~~as -> pla**s** -> pla**c**
 
 - **a**ppoint [əˈpɔɪnt] v. 任命，委任 [🔊 聽發音](https://www.merriam-webster.com/dictionary/appoint)
 
-  ap 強調 point 指（指定你去做某個職位 → 任命）  
+  ap 朝向 point 指（指定你去做某個職位 → 任命）  
   例句1: The company appointed a new manager. 公司任命了一位新經理。  
   例句2: She was appointed as the team leader. 她被任命為團隊領導者。  
   例句3: They appointed him to the position. 他們任命他擔任這個職位。  
@@ -956,14 +956,14 @@ p**o**int -> o拆成上下二半 -> p**un**int -> pun~~i~~nt -> pun**n**t -> 把
 
 - **op**press**ion** [əˈprɛʃən] n. 壓迫；虐待；壓制 [🔊 聽發音](https://www.merriam-webster.com/dictionary/oppression)
 
-  op 強調 press 壓 ion 名詞（強力壓迫的行為 → 壓迫、虐待）  
+  op 向下 press 壓 ion 名詞（強力壓迫的行為 → 壓迫、虐待）  
   例句1: The people fought against oppression. 人民奮起反抗壓迫。  
   例句2: They suffered years of oppression. 他們遭受了多年的壓迫。  
   例句3: Freedom helps end oppression. 自由有助於終結壓迫。  
 
 - **op**press**or** [əˈprɛsɚ] n. 壓迫者；暴君 [🔊 聽發音](https://www.merriam-webster.com/dictionary/oppressor)
 
-  op 強調 press 壓 or 人（施加壓迫的人 → 壓迫者）  
+  op 向下 press 壓 or 人（施加壓迫的人 → 壓迫者）  
   例句1: The oppressor controlled the country by force. 壓迫者用武力統治國家。  
   例句2: People rose against the oppressor. 人民起來反抗壓迫者。  
   例句3: History remembers many oppressors. 歷史記錄了許多暴君。  

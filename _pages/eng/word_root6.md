@@ -222,7 +222,7 @@ neg = 否定（源自拉丁語 nec「不」）= negtive
 
 - aspire [əˈspaɪr] v. 渴望；立志 [🔊 聽發音](https://www.merriam-webster.com/dictionary/aspire)
 
-  a 強調 spir 呼吸（用力呼吸 → 渴望、立志）  
+  a 朝向 spir 呼吸（用力呼吸 → 渴望、立志）  
   例句1: She aspires to become a doctor. 她立志成為醫生。  
   例句2: He aspires to great things. 他渴望成就大事。  
   例句3: Many young people aspire to success. 許多年輕人渴望成功。  
@@ -279,7 +279,7 @@ opt = 選擇（源自拉丁語 optare「選擇」）
 
 - adopt [əˈdɑpt] v. 採用；收養 [🔊 聽發音](https://www.merriam-webster.com/dictionary/adopt)
 
-  ad 強調 opt 選擇（特別選擇 → 採用、收養）  
+  ad 朝向 opt 選擇（特別選擇 → 採用、收養）  
   例句1: They decided to adopt a child. 他們決定收養一個孩子。  
   例句2: The company adopted a new policy. 公司採用了新政策。  
   例句3: She adopted a different approach. 她採用了不同的方法。  
@@ -307,7 +307,7 @@ apt = 適合、能力（源自拉丁語 aptus「適合的、有能力的」）
 
 - adapt [əˈdæpt] v. 適應；改編 [🔊 聽發音](https://www.merriam-webster.com/dictionary/adapt)
 
-  ad 強調 apt 適合、能力（使具備能力去適合 → 適應、改編）  
+  ad 朝向 apt 適合、能力（使具備能力去適合 → 適應、改編）  
   例句1: She adapted quickly to the new environment. 她很快適應了新環境。  
   例句2: The movie was adapted from a novel. 這部電影改編自小說。  
   例句3: He adapted his teaching style to the students. 他調整了教學風格以適應學生。  
@@ -332,7 +332,7 @@ apt = 適合、能力（源自拉丁語 aptus「適合的、有能力的」）
 
 - adept [əˈdɛpt] adj. 熟練的；擅長的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/adept)
 
-  ad 強調 apt 能力（強調有能力 → 熟練的）  
+  ad 朝向 apt 能力（朝向有能力 → 熟練的）  
   例句1: She is adept at playing the piano. 她彈鋼琴很熟練。  
   例句2: He is adept in dealing with difficult customers. 他擅長處理難纏的顧客。  
   例句3: The chef is adept at preparing French cuisine. 這位廚師擅長做法國菜。  
@@ -540,7 +540,7 @@ cop 警察 (警察抓小偷)
 
 - advocate [ˈædvəˌket] v. 提倡；主張；n. 倡導者 [🔊 聽發音](https://www.merriam-webster.com/dictionary/advocate)
 
-  ad 強調 voc 呼喚（大聲呼籲 → 提倡、主張）  
+  ad 朝向 voc 呼喚（大聲呼籲 → 提倡、主張）  
   例句1: She advocates for equal rights. 她提倡平等權利。  
   例句2: He is a strong advocate of environmental protection. 他是環境保護的強力倡導者。  
   例句3: The doctor advocates a healthy diet. 醫生提倡健康飲食。  

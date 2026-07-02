@@ -354,7 +354,7 @@ spon**d** -> spon**s**
 
 - adverb [ˈædˌvɝb] n.副詞 [🔊 聽發音](https://www.merriam-webster.com/dictionary/adverb)
 
-  ad 強調 verb 動詞（加強動詞的詞 → 副詞）  
+  ad 朝向 verb 動詞（加強動詞的詞 → 副詞）  
   例句1: "Quickly" is an adverb. 「Quickly」是個副詞。  
   例句2: Adverbs modify verbs, adjectives, or other adverbs. 副詞修飾動詞、形容詞或其他副詞。  
   例句3: She used many adverbs in her writing. 她在寫作中用了許多副詞。  
@@ -505,7 +505,7 @@ vo~~y~~ -> v**o** -> v**i**
 
 - **ob**vi**ous** [ˈɑbviəs] adj.明顯的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/obvious)
 
-  ob 強調 vi 路 ous 形容詞（在路上，一眼就看到）  
+  ob 朝向 vi 路 ous 形容詞（在路上，一眼就看到）  
   例句1: It's obvious that she loves him. 很明顯她愛他。  
   例句2: The answer is obvious. 答案很明顯。  
   例句3: He made an obvious mistake. 他犯了一個明顯的錯誤。  
@@ -701,7 +701,7 @@ ast~~ro~~ -> ast
 ## apt 能力
 - **ad**apt [əˈdæpt] v. 適應 [🔊 聽發音](https://www.merriam-webster.com/dictionary/adapt)
 
-  ad 強調 apt 能力（強調能力去適應）  
+  ad 朝向 apt 能力（朝向能力去適應）  
   例句1: She adapted quickly to the new environment. 她很快適應了新環境。  
   例句2: The plants adapted to the dry climate. 這些植物適應了乾燥的氣候。  
   例句3: He adapted his teaching methods to the students. 他調整了教學方法以適應學生。  
@@ -722,7 +722,7 @@ ast~~ro~~ -> ast
 
 - adept [əˈdɛpt] adj.熟練的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/adept)
 
-  ad 強調 **a**pt(動詞) -> **e**pt(形容詞)  適合（適合做事 → 熟練的）  
+  ad 朝向 **a**pt(動詞) -> **e**pt(形容詞)  適合（適合做事 → 熟練的）  
   例句1: He is adept at playing the piano. 他彈鋼琴很熟練。  
   例句2: She is adept in dealing with difficult customers. 她擅長處理難纏的顧客。  
   例句3: The chef is adept at preparing French cuisine. 這位廚師擅長做法國菜。  

@@ -150,7 +150,7 @@ po~~ss~~ -> po
 
 - **ac**quire [əˈkwaɪr] v. 獲得 [🔊 聽發音](https://www.merriam-webster.com/dictionary/acquire)
 
-  a 強調 quir 問 e（一直問，就會等到答案 → 獲得）  
+  a 朝向 quir 問 e（一直問，就會等到答案 → 獲得）  
   例句1: She acquired a new skill. 她獲得了一項新技能。  
   例句2: He acquired the company last year. 他去年獲得了這家公司。  
   例句3: Knowledge is acquired through learning. 知識是透過學習獲得的。  
@@ -183,7 +183,7 @@ po~~ss~~ -> po
 
 - **ac**quis**ition** [ˌækwɪˈzɪʃn] n. 獲得 [🔊 聽發音](https://www.merriam-webster.com/dictionary/acquisition)
 
-  a 強調 quir 問 it 走 ion 名詞（問和走才可以得到答案 → 獲得）  
+  a 朝向 quir 問 it 走 ion 名詞（問和走才可以得到答案 → 獲得）  
   例句1: The acquisition of knowledge is important. 知識的獲得很重要。  
   例句2: The company made a new acquisition. 這家公司有一項新的收購。  
   例句3: She is responsible for the acquisition of new skills. 她負責新技能的習得。  
@@ -250,7 +250,7 @@ po~~ss~~ -> po
 
 - **as**sign [əˈsaɪn] v. 分配；指派 [🔊 聽發音](https://www.merriam-webster.com/dictionary/assign)
 
-  as 強調 sign 記號（人做記號，什麼記號做什麼工作 ）  
+  as 朝向 sign 記號（人做記號，什麼記號做什麼工作 ）  
   例句1: The teacher assigned homework to the students. 老師給學生指派了作業。  
   例句2: She was assigned to a new project. 她被指派到一個新專案。  
   例句3: They assigned tasks to each team member. 他們給每個團隊成員分配了任務。  
@@ -678,7 +678,7 @@ t**u**r**n** -> t**o**r**t**
 
 - **ap**ply [əˈplaɪ] v. 申請 [🔊 聽發音](https://www.merriam-webster.com/dictionary/apply)
 
-  ap 強調 ply 摺疊（把申請者摺疊起來寄出去 → 申請）  
+  ap 朝向 ply 摺疊（把申請者摺疊起來寄出去 → 申請）  
   例句1: She applied for the job. 她申請了這份工作。  
   例句2: He applied to three universities. 他申請了三所大學。  
   例句3: You need to apply for a visa. 你需要申請簽證。
@@ -702,7 +702,7 @@ pl**y** -> pl**i** -> pli**c**
 
 - **ap**plic**ation** [ˌæpləˈkeʃən] n. 申請 [🔊 聽發音](https://www.merriam-webster.com/dictionary/application)
 
-  ap 強調 plic 摺疊 at~~e~~ + ion 名詞（把申請者摺疊起來寄出去 → 申請）  
+  ap 朝向 plic 摺疊 at~~e~~ + ion 名詞（把申請者摺疊起來寄出去 → 申請）  
   例句1: She submitted her application for the job. 她提交了工作申請。  
   例句2: The application deadline is next Friday. 申請截止日期是下週五。  
   例句3: He filled out the application form. 他填寫了申請表。  
@@ -755,7 +755,7 @@ pl**o** -> pl**e**
 
 - **ap**par**ent** [əˈpærənt] adj. 顯而易見的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/apparent)
 
-  ap 強調 par 看 ent 形容詞  
+  ap 朝向 par 看 ent 形容詞  
   例句1: It was apparent that she was upset. 很明顯她不高興。  
   例句2: The reasons for his decision are apparent. 他決定的理由顯而易見。  
   例句3: Her talent is apparent to everyone. 她的才華對每個人來說都顯而易見。  
@@ -786,7 +786,7 @@ p**a**r -> p**ea**r 聲音相近
 
 - **ap**pear [əˈpɪr] v. 出現 [🔊 聽發音](https://www.merriam-webster.com/dictionary/appear)
 
-  ap 強調 pear 看（看到你出現 → 出現）  
+  ap 朝向 pear 看（看到你出現 → 出現）  
   例句1: A rainbow appeared in the sky. 天空出現了一道彩虹。  
   例句2: She appears to be very happy. 她看起來很高興。  
   例句3: The problem appeared suddenly. 問題突然出現了。  
@@ -891,7 +891,7 @@ p**a**r -> p**ai**r
 
 - **ob**tain [əbˈten] v. 獲得 [🔊 聽發音](https://www.merriam-webster.com/dictionary/obtain)
 
-  ob 強調 tain 拿住（用力拿住 → 獲得）  
+  ob 朝向 tain 拿住（用力拿住 → 獲得）  
   例句1: She obtained a degree in law. 她獲得了法律學位。  
   例句2: He obtained the information from the internet. 他從網路上獲得了資訊。  
   例句3: The results obtained were surprising. 獲得的結果令人驚訝。  
