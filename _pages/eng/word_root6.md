@@ -4,19 +4,22 @@ date: 2026-07-01
 keywords: English, 字根字尾字首
 ---
 ## spir 氣
-- spirit
-- spiritual
-- inspire
-- inspiration
-- expire
-- expiration
-- respire
-- perspire
-- perspiration
-- aspire
-- aspiration
-- conspire
-- conspiracy
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| spirit [ˈspɪrɪt] | n. | spir（呼吸）+ it | 呼吸 → 靈魂；精神；勇氣 |
+| spiritual [ˈspɪrɪtʃuəl] | adj. | spirit + ual | 與靈有關的 → 精神的；心靈的 |
+| inspire [ɪnˈspaɪr] | v. | in（向內）+ spire（呼吸） | 向內吹入氣息（注入靈感）→ 啟發；激勵 |
+| inspiration [ˌɪnspəˈreʃən] | n. | inspire + ation | 啟發的結果 → 靈感；啟發 |
+| expire [ɪkˈspaɪr] | v. | ex（向外）+ spire（呼吸） | 呼出最後一口氣 → 到期；死亡；屆滿 |
+| expiration [ˌɛkspəˈreʃən] | n. | expire + ation | 呼氣 → 到期；屆滿 |
+| respire [rɪˈspaɪr] | v. | re（再次）+ spire（呼吸） | 再次呼吸 → 呼吸 |
+| perspire [pɚˈspaɪr] | v. | per（透過）+ spire（呼吸） | 透過皮膚排出水分 → 流汗 |
+| perspiration [ˌpɝspəˈreʃən] | n. | perspire + ation | 流汗的行為 → 流汗；汗水 |
+| aspire [əˈspaɪr] | v. | a（朝向）+ spire（呼吸） | 朝向目標深深呼吸 → 渴望；立志 |
+| aspiration [ˌæspəˈreʃən] | n. | aspire + ation | 渴望的目標 → 渴望；志向 |
+| conspire [kənˈspaɪr] | v. | con（一起）+ spire（呼吸） | 一起呼吸 → 共謀；密謀 |
+| conspiracy [kənˈspɪrəsi] | n. | conspire + acy | 共謀的行為 → 陰謀；共謀 |
 
 - spirit [ˈspɪrɪt] n. 精神；靈魂；勇氣 [🔊 聽發音](https://www.merriam-webster.com/dictionary/spirit)
 
@@ -111,11 +114,14 @@ keywords: English, 字根字尾字首
 
 ## opt
 opt = 選擇（源自拉丁語 optare「選擇」）
-- opt
-- option
-- optional
-- adopt
-- adoption
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| opt [ɑpt] | v. | opt（選擇） | 做出選擇 → 選擇 |
+| option [ˈɑpʃən] | n. | opt（選擇）+ ion | 選擇的內容 → 選項；選擇權 |
+| optional [ˈɑpʃənəl] | adj. | option + al | 屬於選擇範圍的 → 可選擇的；非強制的 |
+| adopt [əˈdɑpt] | v. | ad（朝向）+ opt（選擇） | 朝向某目標選擇 → 採納；收養 |
+| adoption [əˈdɑpʃən] | n. | adopt + ion | 選擇接納的行為 → 採納；收養 |
 
 - opt [ɑpt] v. 選擇 [🔊 聽發音](https://www.merriam-webster.com/dictionary/opt)
 
@@ -155,9 +161,11 @@ opt = 選擇（源自拉丁語 optare「選擇」）
 ## apt
 apt = 適合、能力（源自拉丁語 aptus「適合的、有能力的」）
 
-- apt
-- adapt
-- aptitude
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| apt [æpt] | adj. | apt（適合） | 適合的 → 恰當的；有…傾向的 |
+| adapt [əˈdæpt] | v. | ad（朝向）+ apt（適合） | 朝向適合的方向調整 → 適應；改編 |
+| aptitude [ˈæptəˌtjud] | n. | apt（適合）+ itude | 適合某事的先天狀態 → 天賦；才能；傾向 |
 
 - apt [æpt] adj. 有能力的；恰當的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/apt)
 
@@ -186,10 +194,11 @@ apt = 適合、能力（源自拉丁語 aptus「適合的、有能力的」）
 - apt 適合的、有能力的 adapt（適應）、aptitude（天賦）
 - ept 適合的、有能力的（變體）adept（熟練的）、inept（無能的）
 
-
-- adept **adj**
-- inept
-- ineptitude
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| adept [əˈdɛpt] | adj./n. | ad（朝向）+ ept（適合） | 朝向適合的狀態 → 熟練的；內行的人 |
+| inept [ɪˈnɛpt] | adj. | in（否定）+ ept（適合） | 不適合的 → 笨拙的；不稱職的 |
+| ineptitude [ɪˈnɛptəˌtjud] | n. | inept + itude | 不適合的狀態 → 無能；笨拙 |
 
 - adept [əˈdɛpt] adj. 熟練的；擅長的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/adept)
 
@@ -213,27 +222,35 @@ apt = 適合、能力（源自拉丁語 aptus「適合的、有能力的」）
   例句3: The project failed due to managerial ineptitude. 這個專案因管理上的無能而失敗。  
 
 ## tend
-- tend v.照料：照顾
-- tend v.倾向于；趋向于
-- tendency n.倾向：趋势
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| tend [tɛnd] | v. | tend（伸展） | 伸手去做 → 照料；照顧 |
+| tend [tɛnd] | v. | tend（伸展） | 向某方向伸展 → 傾向於；趨向於 |
+| tendency [ˈtɛndənsi] | n. | tend + ency | 伸展的方向 → 傾向；趨勢 |
+| attend [əˈtɛnd] | v. | at（朝向）+ tend（伸展） | 將注意力伸展過去 → 出席；參加 |
+| attend [əˈtɛnd] | v. | at（朝向）+ tend（伸展） | 將心力伸展向他人 → 照應；接待；護理 |
+| attendance [əˈtɛndəns] | n. | attend + ance | 出席的狀態 → 出席；出勤；出勤情況 |
+| extend [ɪkˈstɛnd] | v. | ex（向外）+ tend（伸展） | 向外伸展 → 延伸；延長；擴展 |
+| extension [ɪkˈstɛnʃən] | n. | extend + ion | 伸展的結果 → 延伸；延長；擴展 |
+| extensive [ɪkˈstɛnsɪv] | adj. | extend + ive | 向外伸展的 → 廣闊的；廣泛的 |
+| intend [ɪnˈtɛnd] | v. | in（向內）+ tend（伸展） | 向內心伸展專注 → 想要；打算；準備 |
+| intention [ɪnˈtɛnʃən] | n. | intend + ion | 內心伸展的方向 → 意圖；目的；打算 |
+| contend [kənˈtɛnd] | v. | con（一起）+ tend（伸展） | 一起伸展（爭奪方向）→ 競爭；爭奪 |
+| contend [kənˈtɛnd] | v. | con（一起）+ tend（伸展） | 伸展論點交鋒 → 爭論；辯論 |
+| contend [kənˈtɛnd] | v. | con（一起）+ tend（伸展） | 伸展主張 → 主張；堅稱 |
+| tense [tɛns] | adj. | tens（伸展）+ e | 被伸展拉緊的 → 繃緊的；緊張的 |
+| tension [ˈtɛnʃən] | n. | tens（伸展）+ ion | 伸展拉緊的狀態 → 緊張；焦慮；繃緊；拉力 |
+
 - attend v. 出席；参加
   - attend school
   - attend class 
   - attend a meeting
-- attend v.照应；接待；护理
-- attendance n.出席：出勤：出勤情况
-- extend v.延伸;延长；扩展
-- extension n.延伸;延长；扩展
-- extensive adj.广阔的；广泛的
-- intend v.想要；打算；准备
-- intention n.意图；目的；打算
-- contend v.竟争；争夺
-- contend v.争论；辩论
-- contend v.主张；坚称
 - tense adj.绷紧的；紧张的
   - tense muscles 紧绷的肌肉
   - a tense situation 紧张的局势
 - tension n紧张；焦虑；绷紧；拉力
+
 
 ## cap cip cept cop 抓拿
 cop 警察 (警察抓小偷)
@@ -243,9 +260,25 @@ cop 警察 (警察抓小偷)
 - cap**acity** n.容量 能力 (能夠拿的) acity 性質
 - cap**acious** adj.宽敞的；容量大的 acious具有..性質
 - cap**ive** n.俘虜adj.被俘虜的 ive人/具有某种性质的 (被抓住的人或東西)
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| capture [ˈkæptʃɚ] | v. | capt（拿、抓）+ ure | 抓住的動作 → 抓住；捕捉 |
+| capable [ˈkepəbəl] | adj. | cap（拿、抓）+ able（能夠） | 能夠抓住的 → 有能力的 |
+| capacity [kəˈpæsəti] | n. | cap（拿、抓）+ acity（性質） | 能夠拿住的性質 → 容量；能力 |
+| capacious [kəˈpeʃəs] | adj. | cap（拿、抓）+ acious（具有…性質） | 具有能拿住很多性質的 → 寬敞的；容量大的 |
+| captive [ˈkæptɪv] | n./adj. | capt（拿、抓）+ ive（人／具有某種性質） | 被抓住的人或東西 → 俘虜；被俘虜的 |
+
 ### cip 中
 - part**cip**ate v.參與 (抓到一部分)
 - re**cip**ient n.接受者；收件人 (把東西拿回來的人)
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| participate [pɑrˈtɪsəˌpet] | v. | part（部分）+ cip（拿、抓）+ ate | 抓到一部分 → 參與 |
+| recipient [rɪˈsɪpiənt] | n. | re（回、向後）+ cip（拿、抓）+ ient（人） | 把東西拿回來的人 → 接受者；收件人 |
+
+
 ### cept 後
 - **con**cept n.概念 (把想法拿在一起)
 - **ex**cept prep.v.conj. 除外 (把它拿出去)
@@ -253,14 +286,26 @@ cop 警察 (警察抓小偷)
 - **pre**cept n.規訓戒律 (事先拿捏住的)
 - **a**ccept v.接受 (把東西拿過來，a是朝向)
 
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| concept [ˈkɑnsɛpt] | n. | con（一起）+ cept（拿、抓） | 把想法抓在一起 → 概念 |
+| except [ɪkˈsɛpt] | prep./v./conj. | ex（向外）+ cept（拿、抓） | 把它拿出去 → 除外 |
+| intercept [ˌɪntɚˈsɛpt] | n./v. | inter（之間）+ cept（拿、抓） | 在中間截住 → 攔截 |
+| precept [ˈprisɛpt] | n. | pre（預先）+ cept（拿、抓） | 事先拿捏住的準則 → 規訓；戒律 |
+| accept [əkˈsɛpt] | v. | a（朝向）+ cept（拿、抓） | 把東西拿過來 → 接受 |
+
 ## secu sequ 跟隨
-- consecutive
-- persecute
-- sequence
-- subsequent
-- consequent
-- consequently
-- consequence
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| consecutive [kənˈsɛkjətɪv] | adj. | con（一起）+ secut（跟隨）+ ive | 一個接一個跟隨 → 連續的；接續的 |
+| persecute [ˈpɝsɪˌkjut] | v. | per（透過）+ secut（跟隨）+ e | 緊追不捨 → 迫害；殘害 |
+| sequence [ˈsikwəns] | n. | sequ（跟隨）+ ence | 跟隨的順序 → 順序；序列 |
+| subsequent [ˈsʌbsɪˌkwɛnt] | adj. | sub（下面）+ sequ（跟隨）+ ent | 跟在下面的 → 後續的；隨後的 |
+| consequent [ˈkɑnsəˌkwɛnt] | adj. | con（一起）+ sequ（跟隨）+ ent | 跟著一起來的 → 隨之發生的；作為結果的 |
+| consequently [ˈkɑnsəˌkwɛntli] | adv. | consequent + ly | 作為結果 → 因此；所以 |
+| consequence [ˈkɑnsəˌkwɛns] | n. | con（一起）+ sequ（跟隨）+ ence | 跟隨一起來的結果 → 結果；後果 |
+
 
 - consecutive [kənˈsɛkjətɪv] adj. 連續的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consecutive)
 
@@ -312,6 +357,17 @@ cop 警察 (警察抓小偷)
   例句3: You must accept the consequences. 你必須接受後果。  
 
 ## sect 切
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| section [ˈsɛkʃən] | n./v. | sect（切、割）+ ion | 切割的結果 → 部分；章節；切開 |
+| dissect [dɪˈsɛkt] | v. | dis（分開）+ sect（切、割） | 切開分離 → 解剖；仔細分析 |
+| dissection [dɪˈsɛkʃən] | n. | dissect + ion | 解剖的行為 → 解剖；仔細分析 |
+| intersect [ˌɪntɚˈsɛkt] | v. | inter（之間）+ sect（切、割） | 在中間切割交會 → 交叉；相交 |
+| intersection [ˌɪntɚˈsɛkʃən] | n. | intersect + ion | 交叉的結果 → 交叉口；交點 |
+| bisect [ˈbaɪsɛkt] | v. | bi（二、兩）+ sect（切、割） | 切成兩半 → 平分；二等分 |
+| trisect [ˈtraɪsɛkt] | v. | tri（三）+ sect（切、割） | 切成三等分 → 三等分 |
+
 - section [ˈsɛkʃən] n. 部分；章節；部件；路段；板塊；截面；領域 [🔊 聽發音](https://www.merriam-webster.com/dictionary/section)
 
   sect 切割 ion 名詞（切開的部分）  
@@ -322,11 +378,6 @@ cop 警察 (警察抓小偷)
   例句5: The earth's crust is divided into several sections. 地殼被分成幾個板塊。  
   例句6: The diagram shows a cross-section of the flower. 這張圖顯示了花的橫截面。  
   例句7: She works in the research section of the company. 她在公司的研究領域工作。 
-
-- dissect
-- dissection
-- intersect
-- intersection
 
 - dissect [dɪˈsɛkt] v. 解剖；仔細分析 [🔊 聽發音](https://www.merriam-webster.com/dictionary/dissect)
 
@@ -376,14 +427,17 @@ cop 警察 (警察抓小偷)
   例句3: He trisected the pie into three equal slices. 他把派三等分切成三片。
 
 ## vok voc 喊
-- vocal
-- vocation
-- advocate
-- invoke
-- evoke
-- provoke
-- revoke
-- convoke
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| vocal [ˈvokəl] | adj./n. | voc（聲音）+ al | 與聲音有關的 → 聲音的； vocal（人聲） |
+| vocation [voˈkeʃən] | n. | voc（聲音、呼喚）+ ation | 被呼喚去做的事 → 職業；天職 |
+| advocate [ˈædvəˌket] | v./n. | ad（向著）+ voc（聲音）+ ate | 為某人發聲 → 提倡；支持者 |
+| invoke [ɪnˈvok] | v. | in（向內）+ voke（呼喚） | 內心呼喚 → 祈求；援引 |
+| evoke [ɪˈvok] | v. | e（向外）+ voke（呼喚） | 向外喚出 → 喚起；引發 |
+| provoke [prəˈvok] | v. | pro（向前）+ voke（呼喚） | 向前叫囂 → 激怒；挑釁 |
+| revoke [rɪˈvok] | v. | re（回、向後）+ voke（呼喚） | 叫回來 → 撤銷；廢除 |
+| convoke [kənˈvok] | v. | con（一起）+ voke（呼喚） | 召喚到一起 → 召集（會議） |
 
 - vocal [ˈvokəl] adj. 聲音的；口頭的；暢所欲言的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/vocal)
 
@@ -442,16 +496,19 @@ cop 警察 (警察抓小偷)
   例句3: He convoked all his advisors for a strategy session. 他召集了所有顧問進行戰略會議。  
 
 ## nov 新的
-- novel
-- noveity
-- novice
-- innovate
-- innovation
-- innovative
-- renovate
-- renovation
-- nova
-- supernova
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| novel [ˈnɑvəl] | n./adj. | nov（新的）+ el | 新的（事物）→ 小說；新穎的 |
+| novelty [ˈnɑvəlti] | n. | novel + ty | 新奇的狀態 → 新奇；新鮮感 |
+| novice [ˈnɑvɪs] | n. | nov（新的）+ ice（人） | 新手 → 生手；初學者 |
+| innovate [ˈɪnəˌvet] | v. | in（向內）+ nov（新的）+ ate | 引入新事物 → 創新；改革 |
+| innovation [ˌɪnəˈveʃən] | n. | innovate + ion | 創新的結果 → 創新；新事物 |
+| innovative [ˈɪnəˌvetɪv] | adj. | innovate + ive | 具有創新性質的 → 創新的；新穎的 |
+| renovate [ˈrɛnəˌvet] | v. | re（再次）+ nov（新的）+ ate | 使再次變新 → 翻新；修復 |
+| renovation [ˌrɛnəˈveʃən] | n. | renovate + ion | 翻新的行為 → 翻新；整修 |
+| nova [ˈnovə] | n. | nov（新的）+ a | 突然變亮的新星 → 新星 |
+| supernova [ˌsupɚˈnovə] | n. | super（超級）+ nova | 超級爆炸的新星 → 超新星 |
 
 - novel [ˈnɑvəl] n. 小說；adj. 新穎的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/novel)
 
@@ -530,9 +587,12 @@ cop 警察 (警察抓小偷)
   - col 定居/殖民
 
 ### cul 耕種
-- culture
-- agriculture
-- horticulture
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| culture [ˈkʌltʃɚ] | n./v. | cult（耕種、培養）+ ure | 耕種培育的結果 → 文化；教養；培養 |
+| agriculture [ˈægrɪˌkʌltʃɚ] | n. | agri（田地）+ culture（耕種） | 耕種田地 → 農業 |
+| horticulture [ˈhɔrtəˌkʌltʃɚ] | n. | horti（花園）+ culture（耕種） | 耕種花園 → 園藝 |
 
 - culture [ˈkʌltʃɚ] n. 文化；培養；種植 [🔊 聽發音](https://www.merriam-webster.com/dictionary/culture)
 
@@ -557,13 +617,13 @@ cop 警察 (警察抓小偷)
 
 ### 詞性構成
 
-| 單字 | 構成 | 詞性 | 中文釋義 |
-|------|------|------|----------|
-| cultural(描述社會) | culture + -al | Adj. | 文化的，文化相關的 |
-| cultured(描述人) | culture + -ed | Adj. | 有教養的，有文化修養的 |
-| culturally | cultural + -ly | Adv. | 在文化方面 |
-| agricultural | agriculture + -al | Adj. | 農業的，與農業有關的 |
-| horticultural | horticulture + -al | Adj. | 園藝的，與園藝有關的 |
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| cultural [ˈkʌltʃərəl] | adj. | culture + al | 與文化有關的 → 文化的 |
+| cultured [ˈkʌltʃɚd] | adj. | culture + ed | 經過文化薰陶的 → 有教養的；文雅的 |
+| culturally [ˈkʌltʃərəli] | adv. | cultural + ly | 以文化的方式 → 文化上地 |
+| agricultural [ˌægrɪˈkʌltʃərəl] | adj. | agriculture + al | 與農業有關的 → 農業的 |
+| horticultural [ˌhɔrtəˈkʌltʃərəl] | adj. | horticulture + al | 與園藝有關的 → 園藝的 |
 
 - cultural 關於文化的 
   - 用來描述與社會、藝術、傳統、習俗等文化層面有關的事物
@@ -605,6 +665,13 @@ cop 警察 (警察抓小偷)
 ### 培養
 - **cul**（耕種、培養） + **tivate**（動詞後綴） → **cultivate** 去「耕種」「培養」某物，也可以是感情、能力、關係
 
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| cultivation [ˌkʌltəˈveʃən] | n. | cult（耕種、培養）+ iv + ation | 耕種培育的過程 → 培養；耕種 |
+| cultivated [ˈkʌltəˌvetɪd] | adj. | cultivate + ed | 被精心耕種培育的 → 有教養的；精心栽培的 |
+| cultivator [ˈkʌltəˌvetɚ] | n. | cultivate + or（工具／人） | 執行耕種的人或工具 → 耕作者；栽培者；耕耘機 |
+
+
 | 單字 | 詞性 | 中文釋義 |
 |------|------|----------|
 | cultivation | n. | 培養，耕種 |
@@ -639,6 +706,13 @@ cop 警察 (警察抓小偷)
   例句2: She is a cultivator of rare orchids. 她是珍稀蘭花的栽培者。  
   例句3: The farmers used a cultivator to break up the soil. 農民用耕耘機來鬆土。  
 
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| inculcate [ɪnˈkʌlket] | v. | in（入內）+ culc（耕種、培養）+ ate | 將想法種入人心 → 反覆灌輸；諄諄教誨 |
+| inculcation [ˌɪnkʌlˈkeʃən] | n. | inculcate + ion | 灌輸的行為 → 灌輸；諄諄教導 |
+| inculcator [ɪnˈkʌlketɚ] | n. | inculcate + or（人） | 執行灌輸的人 → 灌輸者；諄諄教導者 |
+
 - **in**culc**ate** [ˈɪnkʌlkeɪt] v. 反覆灌輸；諄諄教誨 [🔊 聽發音](https://www.merriam-webster.com/dictionary/inculcate)
 
   in 大腦裡面 cul 把思想耕種、培養在大腦裡面 ate動詞  
@@ -646,37 +720,32 @@ cop 警察 (警察抓小偷)
   例句2: We have tried to inculcate a feeling of citizenship in youngsters. 我們試圖向年輕人反覆灌輸公民意識。  
   例句3: They inculcated the will to succeed in their children. 他們向子女反覆灌輸立志成功的決心。  
 
-| 單字 | 字源 | 詞性 | 中文釋義 |
-|------|------|------|----------|
-| inculcate | in（入內）+ culc（耕種、培養）+ ate | v. | 反覆灌輸；諄諄教誨 |
-| inculcation | in（入內）+ culc（培養）+ ation（名詞） | n. | 灌輸；諄諄教導 |
-| inculcator | in（入內）+ culc（培養）+ ator（人） | n. | 灌輸者；諄諄教導者 |
 
 #### cult 宗教狂熱
 cult 把思想耕種、培養在大腦裡面 = 宗教洗腦教徒 = 宗教狂熱
 
-| 單字 | KK 音標 | 詞性 | 中文釋義 |
-|------|---------|------|----------|
-| cultish | /ˈkʌltɪʃ/ | Adj. | 邪教般的；狂熱迷信的（貶義） |
-| cultic | /ˈkʌltɪk/ | Adj. | 與宗教崇拜或邪教相關的 |
-| cultist | /ˈkʌltɪst/ | n. | 邪教成員；盲目崇拜者 |
-| cult-like | /ˈkʌltˌlaɪk/ | Adj. | 類似邪教的；狂熱追隨的 |
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| cultish [ˈkʌltɪʃ] | Adj. | cult（崇拜）+ ish（具有…性質的） | 具有邪教性質的 → 邪教般的；狂熱迷信的（貶義） |
+| cultic [ˈkʌltɪk] | Adj. | cult（崇拜）+ ic（與…有關的） | 與崇拜有關的 → 與宗教崇拜或邪教相關的 |
+| cultist [ˈkʌltɪst] | n. | cult（崇拜）+ ist（…主義者／人） | 實行崇拜的人 → 邪教成員；盲目崇拜者 |
+| cult-like [ˈkʌltˌlaɪk] | Adj. | cult + like（像…的） | 像邪教一樣的 → 類似邪教的；狂熱追隨的 |
 
 ### col 居住 殖民
 col定居 + ony名詞 = colony
 
 colony = 居住地 = 殖民地 = 菌落 = 定居群(ant colony 蟻群)
 
-| 單字 | KK 音標 | 構成 | 詞性 | 中文釋義 |
-|------|---------|------|------|----------|
-| colonial | /kəˈloniəl/ | colony + -al | Adj. | 殖民的；殖民地的 |
-| colonialist | /kəˈloniəlɪst/ | colonial + -ist | n. | 殖民主義者 |
-| colonialism | /kəˈloniəˌlɪzəm/ | colony + -ism | n. | 殖民主義 |
-| colonize | /ˈkɑləˌnaɪz/ | colony + -ize | v. | 殖民化，使成為殖民地 |
-| colonized | /ˈkɑləˌnaɪzd/ | colonize + -ed | Adj. | 被殖民的 |
-| colonizer | /ˈkɑləˌnaɪzɚ/ | colonize + -er | n. | 殖民者，殖民統治者 |
-| colonization | /ˌkɑlənəˈzeʃən/ | colonize + -ation | n. | 殖民過程，殖民地化 |
-| decolonize | /diˈkɑləˌnaɪz/ | de- + colonize | v. | 去殖民化，擺脫殖民統治 |
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| colonial [kəˈloniəl] | Adj. | colon（農民、墾殖者）+ ial（形容詞） | 與墾殖者有關的 → 殖民的；殖民地的 |
+| colonialist [kəˈloniəlɪst] | n. | colonial + ist（主義者） | 信奉殖民主義的人 → 殖民主義者 |
+| colonialism [kəˈloniəˌlɪzəm] | n. | colon（墾殖者）+ ial + ism（主義） | 主張殖民的理論 → 殖民主義 |
+| colonize [ˈkɑləˌnaɪz] | v. | colon（墾殖者）+ ize（使成為） | 使成為殖民地 → 殖民化，使成為殖民地 |
+| colonized [ˈkɑləˌnaɪzd] | Adj. | colonize + ed（被動） | 被殖民化的 → 被殖民的 |
+| colonizer [ˈkɑləˌnaɪzɚ] | n. | colonize + er（人） | 執行殖民的人 → 殖民者，殖民統治者 |
+| colonization [ˌkɑlənəˈzeʃən] | n. | colonize + ation（名詞） | 殖民的過程 → 殖民過程，殖民地化 |
+| decolonize [diˈkɑləˌnaɪz] | v. | de（反轉）+ colonize | 反轉殖民 → 去殖民化，擺脫殖民統治 |
 
 - **col**ony [ˈkɑləni] n. 殖民地；群體；群落 [🔊 聽發音](https://www.merriam-webster.com/dictionary/colony)
 
@@ -752,26 +821,21 @@ colony = 居住地 = 殖民地 = 菌落 = 定居群(ant colony 蟻群)
 | 生物／生態 | colony（菌落、群落） |
 | 社會／文化 | colony（藝術家聚居地、外僑社群） |
 
-8518
-
-- inculcate
-- cultish
-- cultic
-- cultist
-- cult-like
 
 ### col
 - colony
 
-- colonial
-- colonialist
-- colonialism
-- colonize
-- colonized
-- colonizer
-- colonization
-- decolonize
-- decolonize
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| colonial [kəˈloniəl] | adj. | colon（農民、墾殖者）+ ial | 與墾殖者有關的 → 殖民的；殖民地的 |
+| colonialist [kəˈloniəlɪst] | n. | colonial + ist | 信奉殖民主義的人 → 殖民主義者 |
+| colonialism [kəˈloniəˌlɪzəm] | n. | colonial + ism | 主張殖民的理論 → 殖民主義 |
+| colonize [ˈkɑləˌnaɪz] | v. | colon（墾殖者）+ ize | 使成為殖民地 → 殖民化 |
+| colonized [ˈkɑləˌnaɪzd] | adj. | colonize + ed | 被殖民化的 → 被殖民的 |
+| colonizer [ˈkɑləˌnaɪzɚ] | n. | colonize + er | 執行殖民的人 → 殖民者 |
+| colonization [ˌkɑlənəˈzeʃən] | n. | colonize + ation | 殖民的過程 → 殖民過程 |
+| decolonize [diˈkɑləˌnaɪz] | v. | de + colonize | 反轉殖民 → 去殖民化 |
+| decolonization [diˌkɑlənəˈzeʃən] | n. | de + colonization | 去殖民化的過程 → 去殖民化過程 |
 
 
 8582
