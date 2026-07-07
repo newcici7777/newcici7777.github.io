@@ -202,6 +202,13 @@ pel 這個字根就像「驅趕羊群的牧羊人」：
   例句2: The company appealed to customers to buy local products. 該公司呼籲顧客購買本地產品。  
   例句3: The court dismissed the appeal. 法院駁回了上訴。  
 
+- appealing [əˈpilɪŋ] adj. 吸引人的；令人感興趣的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/appealing)
+
+  appeal 吸引 ing 形容詞  
+  例句1: The cake looks very appealing. 這個蛋糕看起來非常吸引人。  
+  例句2: She has an appealing personality. 她有吸引人的個性。  
+  例句3: The idea of a vacation is very appealing. 度假的想法非常令人感興趣。  
+
 ## pet（追求、尋求）
 
 | 單字 | 字源拆解 | 詞性 | 意義演變 |

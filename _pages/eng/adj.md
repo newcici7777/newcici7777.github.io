@@ -104,7 +104,7 @@ ad會省略d，a+重覆字根的第一個單字，也有朝向的意思:
 - opponent (op + pon + ent)：對手、反對者。字面是「被擺在對立面的人」。
 - obstacle (ob + stacle)：障礙。字面為「站著反對/阻擋前進的東西」（發音關係同化）。
 
-## con 一起 共同
+## con 一起 共
 ### com
 con + b,p,m 嘴巴閉上 = com(嘴巴閉上)
 
@@ -117,6 +117,18 @@ con + b,p,m 嘴巴閉上 = com(嘴巴閉上)
 | combine | /kəmˈbaɪn/ | -bine（二、兩） | 合在一起 | 結合；合併 |
 | compare | /kəmˈpɛr/ | -par（相等、並列） | 放在一起比對 | 比較；對比 |
 | communicate | /kəˈmjunəˌket/ | -mun（服務、共同） | 使共同（分享訊息） | 溝通；傳達 |
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| combine [kəmˈbaɪn] | com（一起）+ bine（二） | v. | 兩個東西合在一起 → 結合、合併 |
+| combination [ˌkɑmbəˈneʃən] | com（一起）+ bin（二）+ ation（名詞） | n. | 結合在一起的狀態 → 結合、組合、密碼 |
+| compare [kəmˈpɛr] | com（一起）+ par（平等） | v. | 放在一起看是否平等 → 比較、對比 |
+| comparison [kəmˈpærəsən] | com（一起）+ par（平等）+ ison（名詞） | n. | 放在一起比較的過程 → 比較、對比 |
+| comparable [ˈkɑmpərəbəl] | com（一起）+ par（平等）+ able（可…的） | adj. | 可以放在一起比較的 → 可比較的、類似的 |
+| communicate [kəˈmjunəˌket] | com（一起）+ muni（服務）+ ate（動詞） | v. | 讓資訊共同流通 → 溝通、傳達 |
+| communication [kəˌmjunəˈkeʃən] | com（一起）+ muni（服務）+ cation（名詞） | n. | 讓資訊共同流通的過程 → 溝通、通訊 |
+| communicative [kəˈmjunəkətɪv] | com（一起）+ muni（服務）+ cative（形容詞） | adj. | 擅長讓資訊流通的 → 善於溝通的 |
+
 
 ### col
 co~~n~~ + l(舌頭頂在門牙後面) = col
