@@ -122,6 +122,18 @@ keywords: English, toeic
 
 ## pel 驅趕
 
+peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向外移動」。
+
+- peal（來自 pellere「推動」）
+  - 核心概念：用力向外推
+  - 衍生單字：appeal（向外推→呼籲）、repel（推回去→擊退）、compel（一起推→強迫）
+- pet（來自 petere「追求」）
+  - 核心概念：向前追求、去獲得
+  - 衍生單字：compete（一起追求→競爭）、petition（追求→請願）、appetite（追求→食慾）
+- peat 追求（petere 的變體，過去分詞詞幹）
+  - 核心概念：重複的追求
+  - 衍生單字：repeat（再次追求→重複）、impetus（內部追求→衝力）
+
 | 單字 | 字源拆解 | 詞性 | 意義演變 |
 |------|----------|------|----------|
 | repel [rɪˈpɛl] | re（回）+ pel（驅趕） | v. | 驅趕回去 → 擊退、排斥 |
@@ -664,7 +676,7 @@ criterion vs criteria:
 | certified | cert（區分）+ ified（使…的）| adj. | 經認證的；有證書的 |
 | certificate [sərˈtɪfɪkət] | cert（區分）+ ific（產生）+ ate（名詞）| n. | 能幫助釐清的證明文件 → 證書、證明 |
 | certification | cert（區分、確定）+ ification（使…化、過程）| n. | 認證；證明；合格證書 |
-| ascertain [ˌæsərˈten] | as（強調）+ cert（區分）+ ain | v. | 一再區分釐清 → 查明、確定 |
+| ascertain [ˌæsərˈten] | as（朝向）+ cert（區分）+ ain | v. | 一再區分釐清 → 查明、確定 |
 
 - **cer**tain [ˈsɜrtən] adj. 確定的；肯定的; 某個 [🔊 聽發音](https://www.merriam-webster.com/dictionary/certain)
 
@@ -710,7 +722,7 @@ criterion vs criteria:
 
 - **as**certain [ˌæsərˈten] v. 查明；確定 [🔊 聽發音](https://www.merriam-webster.com/dictionary/ascertain)
 
-  as（強調）+ cert 區分 ain → 一再區分釐清 → 查明[citation:5][citation:14]  
+  as（朝向）+ cert 區分 ain → 一再區分釐清 → 查明[citation:5][citation:14]  
   例句1: The investigation will ascertain the cause of the accident. 調查將查明事故原因。  
   例句2: We need to ascertain the facts before making a decision. 在做決定之前，我們需要查明事實。  
   例句3: She ascertained that the data was correct. 她確認了數據是正確的。  

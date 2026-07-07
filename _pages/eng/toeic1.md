@@ -4,6 +4,18 @@ date: 2026-07-02
 keywords: English, toeic
 ---
 ## lig 選擇
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| eligible [ˈɛlɪdʒəbəl] | e（出、向外）+ lig（選擇、挑選）+ ible（可…的）| adj. | 可以被挑選出來的 → 合格的、有資格的 |
+| eligibility [ˌɛlɪdʒəˈbɪlɪti] | e（出）+ lig（選擇）+ ibility（名詞）| n. | 可以被挑選出來的狀態 → 資格、合格性 |
+| ineligible [ɪnˈɛlɪdʒəbəl] | in（不）+ eligible（合格的）| adj. | 不可以被挑選出來的 → 不合格的、無資格的 |
+
+**lig** 這個字根就像「**在一群候選人中挑選**」：
+- **eligible**：可以被「挑選」出來的 → 合格的、有資格的
+- **eligibility**：可以被「挑選」出來的狀態 → 資格
+- **ineligible**：不可以被「挑選」出來的 → 不合格的、無資格的
+
 - eligible [ˈɛlɪdʒəbəl] adj. 有資格的；合格的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/eligible)
 
   e 向外 lig 選擇 ible 能夠（能夠被選擇出來 → 有資格的）  
@@ -13,19 +25,43 @@ keywords: English, toeic
 
 - eligibility [ˌɛlɪdʒəˈbɪləti] n. 資格；合格 [🔊 聽發音](https://www.merriam-webster.com/dictionary/eligibility)
 
-  eligible 有資格的 ity 名詞  
+  e（出）+ lig（選擇）+ ibility（名詞）→ 可以被挑選出來的狀態 → 資格、合格性   
   例句1: Check your eligibility for the program. 檢查你參加該計劃的資格。  
   例句2: The eligibility requirements are strict. 資格要求很嚴格。  
   例句3: Her eligibility for the award is confirmed. 她獲得該獎項的資格已確認。  
 
 - ineligible [ɪnˈɛlɪdʒəbəl] adj. 不合格的；無資格的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/ineligible)
 
-  in 否定 eligible 有資格的  
+  in（不）+ eligible（合格的）→ 不可以被挑選出來的 → 不合格的、無資格的  
   例句1: She is ineligible for the competition due to her age. 她因年齡而不符合參賽資格。  
   例句2: Non-members are ineligible to vote. 非會員無資格投票。  
   例句3: He was declared ineligible for the position. 他被宣布不符合該職位的資格。
 
 ### neg lect lig 選擇
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| neglect [nɪˈglɛkt] | neg（不、未）+ lect（選擇、挑選） | v./n. | 不去選擇 → 忽略、疏忽、遺漏 |
+| neglectful [nɪˈglɛktfəl] | neglect + ful（充滿…的） | adj. | 充滿忽略的 → 疏忽的、怠慢的 |
+| negligent [ˈnɛglɪdʒənt] | neg（不、未）+ lig（選擇）+ ent（形容詞） | adj. | 不去選擇的 → 疏忽的、粗心大意的 |
+| negligence [ˈnɛglɪdʒəns] | neg（不、未）+ lig（選擇）+ ence（名詞） | n. | 不去選擇的狀態 → 疏忽、過失 |
+| negligible [ˈnɛglɪdʒəbəl] | neg（不、未）+ lig（選擇）+ ible（可…的） | adj. | 可以不選擇的 → 可忽略的、微不足道的 |
+
+**neg + lig／lect** 就像「**在一堆文件中故意不去挑選**」：
+- **neglect**：不去「選擇」→ 忽略、疏忽
+- **neglectful**：充滿忽略的 → 疏忽的、怠慢的
+- **negligent**：不去「選擇」的 → 疏忽的、粗心大意的
+- **negligence**：不去「選擇」的狀態 → 疏忽、過失
+- **negligible**：可以不去「選擇」的 → 可忽略的、微不足道的
+
+| 單字 | 字源 | 詞性 | 中文釋義 |
+|------|------|------|----------|
+| neglect | neg（不、未）+ lect（選擇） | v./n. | 忽略；疏忽；遺漏 |
+| neglectful | neglect + ful（充滿…的） | adj. | 疏忽的；怠慢的 |
+| negligent | neg（不、未）+ lig（選擇）+ ent | adj. | 疏忽的；粗心大意的 |
+| negligence | neg（不、未）+ lig（選擇）+ ence | n. | 疏忽；過失 |
+| negligible | neg（不、未）+ lig（選擇）+ ible | adj. | 可忽略的；微不足道的 |
+
 neg = 否定（源自拉丁語 nec「不」）= negtive
 
 - **neg**lect [nɪˈglɛkt] v./n. 忽視；疏忽 [🔊 聽發音](https://www.merriam-webster.com/dictionary/neglect)
@@ -44,7 +80,7 @@ neg = 否定（源自拉丁語 nec「不」）= negtive
 
 - **neg**lig**ence** [ˈnɛglədʒəns] n. 過失；疏忽 [🔊 聽發音](https://www.merriam-webster.com/dictionary/negligence)
 
-  negligent 疏忽的 ence 名詞  
+  neg（不、未）+ lig（選擇）+ ence（名詞）→ 不去選擇的狀態 → 疏忽、過失  
   例句1: The accident was caused by negligence. 這次事故是由過失造成的。  
   例句2: He was sued for medical negligence. 他因醫療過失而被起訴。  
   例句3: The company was accused of negligence. 這家公司被指控有過失。  
@@ -58,12 +94,37 @@ neg = 否定（源自拉丁語 nec「不」）= negtive
 
 - **neg**lect**ful** [nɪˈglɛktfəl] adj. 疏忽的；不關心的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/neglectful)
 
-  neglect 忽視 ful 形容詞  
+  neglect + ful（充滿…的）→ 充滿忽略的 → 疏忽的、怠慢的   
   例句1: She was neglectful of her children. 她對孩子們疏忽了。  
   例句2: He is neglectful of his responsibilities. 他對自己的責任不關心。  
   例句3: The neglectful owner failed to feed the dog. 疏忽的主人忘了餵狗。
 
 ## pens 稱重花費
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| pension [ˈpɛnʃən] | pens（衡量、稱重）+ ion（名詞）| n. | 衡量後按時支付的金額 → 退休金、養老金 |
+| compensate [ˈkɑmpənˌset] | com（一起、完全）+ pens（衡量）+ ate（動詞）| v. | 完全衡量以達到平衡 → 賠償、補償、彌補 |
+| compensation [ˌkɑmpənˈseʃən] | com（一起）+ pens（衡量）+ ation（名詞）| n. | 完全衡量的過程或結果 → 賠償金、補償、報酬 |
+| compensatory [kəmˈpɛnsəˌtɔri] | com（一起）+ pens（衡量）+ atory（形容詞）| adj. | 用來衡量以達到平衡的 → 補償的、賠償的 |
+| suspense [səˈspɛns] | sus（下、向上）+ pens（衡量）+ e | n. | 懸而未決、無法下決定 → 懸念、焦慮、緊張 |
+| dispense [dɪˈspɛns] | dis（分開、出去）+ pens（衡量）+ e | v. | 衡量後分配出去 → 分配、分發；免除、豁免 |
+
+**pens** 這個字根就像「**用天平仔細衡量**」：
+- **pension**：工作一輩子後「衡量」你該拿多少 → 退休金
+- **compensate**：把你損失的「完全衡量」回來 → 賠償、補償
+- **compensation**：「衡量」損失並給予回報的結果 → 賠償金、補償
+- **compensatory**：用來「衡量」以達到平衡的 → 補償的、賠償的
+- **suspense**：事情掛在天平上「衡量」，無法決定結果 → 懸念、緊張
+- **dispense**：「衡量」之後分配出去 → 分配、分發；免除、豁免
+
+- pension [ˈpɛnʃən] n. 退休金；養老金 [🔊 聽發音](https://www.merriam-webster.com/dictionary/pension)
+
+  pens 支付 ion 名詞（定期支付的錢 → 退休金）  
+  例句1: She receives a pension every month. 她每月領取退休金。  
+  例句2: He retired on a pension. 他靠退休金退休了。  
+  例句3: The pension plan is very generous. 這個退休金計劃非常優厚。 
+
 - compensate [ˈkɑmpənˌset] v. 補償；賠償 [🔊 聽發音](https://www.merriam-webster.com/dictionary/compensate)
 
   com 一起 pens 稱重 ate 動詞（一起稱重 → 平衡 → 補償）  
@@ -85,65 +146,27 @@ neg = 否定（源自拉丁語 nec「不」）= negtive
   例句2: She received compensatory leave for working overtime. 她因加班獲得了補休。  
   例句3: The compensatory measures were effective. 這些補償措施很有效。  
 
-- pension [ˈpɛnʃən] n. 退休金；養老金 [🔊 聽發音](https://www.merriam-webster.com/dictionary/pension)
+- **sus**pense [səˈspɛns] n. 懸念；焦慮；緊張 [🔊 聽發音](https://www.merriam-webster.com/dictionary/suspense)
 
-  pens 支付 ion 名詞（定期支付的錢 → 退休金）  
-  例句1: She receives a pension every month. 她每月領取退休金。  
-  例句2: He retired on a pension. 他靠退休金退休了。  
-  例句3: The pension plan is very generous. 這個退休金計劃非常優厚。
+  sus（下、向上）+ pens（衡量）+ e → 懸而未決、無法下決定 → 懸念、緊張  
+  例句1: The movie kept the audience in suspense until the very end. 那部電影讓觀眾懸著心直到最後一刻。  
+  例句2: Please tell me what happened—I can't stand the suspense. 請告訴我發生了什麼事——我受不了這種懸而未決的感覺。  
+  例句3: The suspense was killing me while I waited for the test results. 在等待考試結果時，緊張感讓我快受不了了。  
 
-## peal 推動 驅使
+- **dis**pense [dɪˈspɛns] v. 分配；分發；免除；豁免 [🔊 聽發音](https://www.merriam-webster.com/dictionary/dispense)
 
-- appeal [əˈpil] n./v. 呼籲；吸引；上訴 [🔊 聽發音](https://www.merriam-webster.com/dictionary/appeal)
-
-  ap 朝向 peal 推動（朝向某方推動 → 呼籲、吸引）  
-  例句1: The charity made an appeal for donations. 這家慈善機構呼籲捐款。  
-  例句2: The idea appeals to me. 這個想法吸引了我。  
-  例句3: He appealed against the court decision. 他對法院的判決提出上訴。  
-
-- appealing [əˈpilɪŋ] adj. 吸引人的；令人感興趣的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/appealing)
-
-  appeal 吸引 ing 形容詞  
-  例句1: The cake looks very appealing. 這個蛋糕看起來非常吸引人。  
-  例句2: She has an appealing personality. 她有吸引人的個性。  
-  例句3: The idea of a vacation is very appealing. 度假的想法非常令人感興趣。  
-
-- **re**pel [rɪˈpɛl] v. 擊退；驅除；排斥 [🔊 聽發音](https://www.merriam-webster.com/dictionary/repel)
-
-  re 回 pel 驅趕（驅趕回去 → 擊退、排斥）  
-  例句1: The soldiers repelled the enemy attack. 士兵們擊退了敵人的進攻。  
-  例句2: This material repels water. 這種材質防水（排斥水）。  
-  例句3: She felt repelled by his rude behavior. 她對他的粗魯行為感到排斥。  
-
-- **com**pel [kəmˈpɛl] v. 強迫；迫使 [🔊 聽發音](https://www.merriam-webster.com/dictionary/compel)
-
-  com 一起 pel 驅趕（驅趕到一起 → 強迫、迫使）  
-  例句1: The situation compelled him to resign. 情況迫使他辭職。  
-  例句2: I feel compelled to tell you the truth. 我覺得有必要告訴你真相。  
-  例句3: The law compels employers to provide safe working conditions. 法律強迫雇主提供安全工作環境。  
- 
-
-### peal vs pet vs peat
-peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向外移動」。
-
-- peal（來自 pellere「推動」）
-  - 核心概念：用力向外推
-  - 衍生單字：appeal（向外推→呼籲）、repel（推回去→擊退）、compel（一起推→強迫）
-- pet（來自 petere「追求」）
-  - 核心概念：向前追求、去獲得
-  - 衍生單字：compete（一起追求→競爭）、petition（追求→請願）、appetite（追求→食慾）
-- peat 追求（petere 的變體，過去分詞詞幹）
-  - 核心概念：重複的追求
-  - 衍生單字：repeat（再次追求→重複）、impetus（內部追求→衝力）  
-
-
-| 字根 | 單字 | 中文 | 字源拆解 |
-|------|------|------|----------|
-| peal | appeal | 呼籲 | ap（朝向）+ peal（推動） |
-| pet | compete | 競爭 | com（一起）+ pet（追求） |
-| peat | repeat | 重複 | re（再次）+ peat（追求） |
+  dis（分開、出去）+ pens（衡量）+ e → 衡量後分配出去 → 分配、分發；免除  
+  例句1: The pharmacist dispensed the medication to the patient. 藥劑師將藥品分發給病人。  
+  例句2: The machine dispenses tickets to customers. 這台機器向顧客發放票券。  
+  例句3: The judge dispensed with the formalities and went straight to the point. 法官免去了繁文縟節，直接切入重點。  
 
 ## prehend 抓住
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| apprentice [əˈprɛntɪs] | ap（朝向）+ prent（抓住）+ ice | n. | 朝向抓住知識的人 → 學徒、新手 |
+| apprenticeship [əˈprɛntɪsʃɪp] | apprentice + ship | n. | 學徒的身分或時期 → 學徒訓練、學徒期 |
+
 - apprentice [əˈprɛntɪs] n. 學徒；v. 使成為學徒 [🔊 聽發音](https://www.merriam-webster.com/dictionary/apprentice)
 
   ap 朝向 prent 抓住 ice 名詞（抓住知識的人 → 學徒）  
@@ -159,12 +182,29 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句3: The apprenticeship program is very competitive. 這個學徒計畫非常有競爭性。  
 
 
-| 單字 | 字源拆解 | 意義演變 |
-|------|----------|----------|
-| apprentice | ap（朝向）+ prent（抓住）+ ice | 抓住知識的人 → 學徒 |
-| apprehend | ap（朝向）+ prehend（抓住） | 抓住想法 → 理解；抓住人 → 逮捕 |
-| comprehend | com（一起）+ prehend（抓住） | 全部抓住 → 理解 |
-| comprehensive | com（一起）+ prehens（抓住）+ ive | 全部抓住的 → 全面的 |
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| apprehend [ˌæprɪˈhɛnd] | ap（朝向）+ prehend（抓住）| v. | 朝向抓住 → 理解；抓住人 → 逮捕；抓住壞念頭 → 擔憂 |
+| apprehension [ˌæprɪˈhɛnʃən] | ap（朝向）+ prehens（抓住）+ ion | n. | 抓住的能力／狀態 → 理解力；憂慮；逮捕 |
+| apprehensive [ˌæprɪˈhɛnsɪv] | ap（朝向）+ prehens（抓住）+ ive | adj. | 被壞念頭抓住的 → 擔憂的、恐懼的 |
+| comprehend [ˌkɑmprɪˈhɛnd] | com（一起）+ prehend（抓住）| v. | 全部抓住 → 理解、領會 |
+| comprehension [ˌkɑmprɪˈhɛnʃən] | com（一起）+ prehens（抓住）+ ion | n. | 全部抓住的能力 → 理解力；理解測驗 |
+| comprehensive [ˌkɑmprɪˈhɛnsɪv] | com（一起）+ prehens（抓住）+ ive | adj. | 全部抓住的 → 全面的、綜合的 |
+
+
+- **ap**prehend [ˌæprɪˈhɛnd] v. 理解；擔憂；逮捕 [🔊 聽發音](https://www.merriam-webster.com/dictionary/apprehend)
+
+  ap（朝向）+ prehend（抓住）→ 朝向抓住 → 理解；抓住人 → 逮捕；抓住壞念頭 → 擔憂  
+  例句1: I cannot apprehend the full implications of this theory. 我無法完全理解這個理論的深遠含義。  
+  例句2: She apprehended that something might go wrong. 她擔心可能會出事。  
+  例句3: The suspect was apprehended by plainclothes officers. 嫌疑人被便衣警察逮捕。  
+
+- **ap**prehension [ˌæprɪˈhɛnʃən] n. 理解力；憂慮；逮捕 [🔊 聽發音](https://www.merriam-webster.com/dictionary/apprehension)
+
+  ap（朝向）+ prehens（抓住）+ ion（名詞）→ 抓住的能力／狀態 → 理解力；憂慮；逮捕  
+  例句1: Her apprehension of the problem was deep and clear. 她對這個問題的理解既深刻又清晰。  
+  例句2: There was an apprehension in her voice. 她的語氣裡透著擔憂。  
+  例句3: The apprehension of the suspect took place at dawn. 嫌疑人在黎明時被逮捕。 
 
 - apprehensive [ˌæprɪˈhɛnsɪv] adj. 憂慮的；擔憂的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/apprehensive)
 
@@ -172,6 +212,20 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句1: She is apprehensive about the exam. 她對考試感到憂慮。  
   例句2: He felt apprehensive before the interview. 他在面試前感到擔憂。  
   例句3: They were apprehensive about the future. 他們對未來感到憂慮。  
+
+- **com**prehend [ˌkɑmprɪˈhɛnd] v. 理解；領會 [🔊 聽發音](https://www.merriam-webster.com/dictionary/comprehend)
+
+  com（一起、完全）+ prehend（抓住）→ 全部抓住 → 理解、領會  
+  例句1: She could not comprehend the complexity of the problem. 她無法理解這個問題的複雜性。  
+  例句2: He finally comprehended the instructions after reading them twice. 他在讀了兩次說明後終於理解了。  
+  例句3: The human mind cannot fully comprehend the universe. 人類的心智無法完全理解宇宙。  
+
+- **com**prehension [ˌkɑmprɪˈhɛnʃən] n. 理解力；理解測驗 [🔊 聽發音](https://www.merriam-webster.com/dictionary/comprehension)
+
+  com（一起）+ prehens（抓住）+ ion（名詞）→ 全部抓住的能力 → 理解力  
+  例句1: The assignment is beyond my comprehension. 這項作業超出我的理解能力。  
+  例句2: The test includes a reading comprehension section. 這項測驗包含閱讀理解部分。  
+  例句3: She has a deep comprehension of the subject. 她對該學科有深入的理解。  
 
 - comprehensive [ˌkɑmprɪˈhɛnsɪv] adj. 全面的；詳盡的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/comprehensive)
 
@@ -181,35 +235,99 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句3: The comprehensive guide covers everything you need to know. 這本詳盡的指南涵蓋了你需要知道的一切。  
 
 ## cruit 成長
-- recruit [rɪˈkrut] v. 招募；徵募；n. 新成員；新兵 [🔊 聽發音](https://www.merriam-webster.com/dictionary/recruit)
 
-  re 再次 cruit 成長（使再次成長 → 招募新血）  
-  例句1: The company is recruiting new employees. 這家公司正在招募新員工。  
-  例句2: He was recruited into the army. 他被徵召入伍。  
-  例句3: The new recruits are being trained. 新成員正在受訓。  
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| recruit [rɪˈkrut] | re（再次、重新）+ cruit（= crescere，生長、增加）| v./n. | 讓軍隊再次生長、增加新成員 → 招募、徵募新兵；新成員 |
+| recruitment [rɪˈkrutmənt] | recruit + ment（名詞）| n. | 招募新成員的過程或行為 → 招募、招聘 |
+| recruiter [rɪˈkrutɚ] | recruit + er（人）| n. | 執行招募行為的人 → 招募人員、招聘專員 |
 
-- recruitment [rɪˈkrutmənt] n. 招募；徵募 [🔊 聽發音](https://www.merriam-webster.com/dictionary/recruitment)
+**cruit** 這個字根就像「**讓組織再次長大**」：
+- **recruit**：讓軍隊或公司「再次生長」→ 招募新人
+- **recruitment**：招募的「過程與行為」→ 招聘
+- **recruiter**：執行「招募」的人 → 招募人員
 
-  recruit 招募 ment 名詞  
-  例句1: The recruitment process takes two weeks. 招募過程需要兩週。  
-  例句2: She is in charge of recruitment. 她負責招募工作。  
-  例句3: The recruitment of qualified staff is difficult. 招募合格的員工很困難。  
+- **re**cruit [rɪˈkrut] v. 招募；徵募；n. 新成員；新兵 [🔊 聽發音](https://www.merriam-webster.com/dictionary/recruit)
 
-- recruiter [rɪˈkrutɚ] n. 招聘人員；徵兵人員 [🔊 聽發音](https://www.merriam-webster.com/dictionary/recruiter)
+  re（再次、重新）+ cruit（= crescere，生長、增加）→ 讓組織再次生長、增加新成員 → 招募  
+  例句1: The company is recruiting new employees for the sales department. 該公司正在為業務部門招募新員工。  
+  例句2: The army recruited many young men during the war. 軍隊在戰爭期間徵募了許多年輕人。  
+  例句3: She is a new recruit in the marketing team. 她是行銷團隊的新成員。  
 
-  recruit 招募 er 名詞（指人）  
-  例句1: The recruiter called her for an interview. 招聘人員打電話通知她面試。  
-  例句2: He works as a military recruiter. 他是一名徵兵人員。  
-  例句3: The recruiter was impressed by her resume. 招聘人員對她的履歷印象深刻。    
+- **re**cruitment [rɪˈkrutmənt] n. 招募；招聘 [🔊 聽發音](https://www.merriam-webster.com/dictionary/recruitment)
 
-### 相同字根
+  recruit + ment（名詞）→ 招募新成員的過程或行為 → 招募、招聘  
+  例句1: The recruitment process usually takes two to three weeks. 招募過程通常需要兩到三週。  
+  例句2: She works in the recruitment department of a large firm. 她在一家大公司的招募部門工作。  
+  例句3: Online recruitment has become increasingly popular. 線上招募已變得越來越普及。  
 
-| 單字 | 字源 | 詞性 | 中文釋義 |
-|------|------|------|----------|
-| increase | in（向內）+ crease（成長） | v./n. | 增加；增長 |
-| decrease | de（向下）+ crease（成長） | v./n. | 減少；下降 |
-| concrete | con（一起）+ crete（成長） | adj./n. | 具體的；混凝土 |
+- **re**cruiter [rɪˈkrutɚ] n. 招募人員；招聘專員 [🔊 聽發音](https://www.merriam-webster.com/dictionary/recruiter)
 
+  recruit + er（人）→ 執行招募行為的人 → 招募人員  
+  例句1: The recruiter called me for an interview. 招募人員打電話給我安排面試。  
+  例句2: She works as a recruiter for a tech company. 她在一家科技公司擔任招募專員。  
+  例句3: A good recruiter can identify the best candidates. 一位優秀的招募人員能辨識出最佳人選。  
+
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| accrue [əˈkru] | ac（=ad，朝向、增添）+ cru（=cre，生長）+ e | v. | 不斷「生長」而增添 → （利息等）自然積累、產生 |
+| accretion [əˈkriʃən] | ac（朝向）+ cret（生長）+ ion（名詞）| n. | 「生長」在一起的過程或結果 → 增加物、堆積層、添加 |
+| concrete [ˈkɑnkrit] | con（一起）+ cret（生長）+ e | adj./n. | 「生長」在一起而凝結成實體 → 具體的、有形的；混凝土 |
+| increase [ɪnˈkris] | in（內、向上）+ cre（生長）+ ase | v./n. | 繼續「生長」變大 → 增加、增長 |
+| decrease [dɪˈkris] | de（向下）+ cre（生長）+ ase | v./n. | 反向「生長」變小 → 減少、降低 |
+| increment [ˈɪnkrəmənt] | in（內、向上）+ cre（生長）+ ment（名詞）| n. | 持續「生長」增加的幅度 → 增加量、增額 |
+
+
+| 單字 | 字根 | 核心意思 | 易混淆原因 |
+|------|------|----------|------------|
+| recruit | cruit（=cre，生長）| 讓組織再次「生長」→ 招募 | 與 military 相關 |
+| concrete | cret（生長）| 「生長」在一起而凝結 → 具體的、混凝土 | 與 building 相關 |
+| increase | cre（生長）| 數量或程度「生長」→ 增加 | 與數字、數量相關 |
+| accrue | cru（=cre，生長）| 隨時間「生長」而積累 → 累積 | 多指利息、權利的自然累積 |
+
+**cruit / cret / cre** 這個字根的核心就是「**生長、長大**」：
+- **recruit**：讓組織「再次生長」→ 招募新人
+- **increase**：繼續「生長」變大 → 增加
+- **decrease**：反向「生長」變小 → 減少
+- **accrue**：隨時間不斷「生長」→ 利息、權利自然累積
+- **concrete**：一起「生長」凝結 → 具體的、混凝土
+- **increment**：持續「生長」的幅度 → 增加量
+
+- **ac**crue [əˈkru] v. 累積；積累 [🔊 聽發音](https://www.merriam-webster.com/dictionary/accrue)
+
+  ac（=ad，朝向、增添）+ cru（=cre，生長）+ e → 不斷生長而增添 → 自然累積  
+  例句1: Interest will accrue on the account each month. 每個月帳戶都會產生利息。  
+  例句2: Benefits accrue to employees who stay with the company long-term. 長期留在公司的員工會累積福利。  
+  例句3: Over time, significant savings can accrue from this plan. 隨著時間推移，這個計劃可以累積可觀的節省。  
+
+- **in**crease [ɪnˈkris] v. 增加；增長 [🔊 聽發音](https://www.merriam-webster.com/dictionary/increase)
+
+  in（內、向上）+ cre（生長）+ ase → 繼續生長變大 → 增加  
+  例句1: Sales increased by 20% last quarter. 上季銷售額增加了20%。  
+  例句2: The population of the city has increased rapidly. 該城市的人口迅速增長。  
+  例句3: Exercise can increase your energy level. 運動可以提升你的精力。  
+
+- **de**crease [dɪˈkris] v. 減少；降低 [🔊 聽發音](https://www.merriam-webster.com/dictionary/decrease)
+
+  de（向下）+ cre（生長）+ ase → 反向生長變小 → 減少  
+  例句1: The number of applicants has decreased this year. 今年的申請人數減少了。  
+  例句2: We need to decrease our expenses. 我們需要減少開支。  
+  例句3: Smoking has decreased among young adults. 年輕人的吸菸率已經下降。  
+
+- **in**crement [ˈɪnkrəmənt] n. 增加量；增額 [🔊 聽發音](https://www.merriam-webster.com/dictionary/increment)
+
+  in（內、向上）+ cre（生長）+ ment（名詞）→ 持續生長增加的幅度 → 增加量  
+  例句1: Salaries are reviewed annually with a 3% increment. 薪資每年檢討，調幅為3%。  
+  例句2: The work is paid in increments based on productivity. 這份工作按生產力分級支付報酬。  
+  例句3: The project is delivered in small increments. 該專案以小幅增量方式交付。  
+
+- **con**crete [ˈkɑnkrit] adj. 具體的；有形的；n. 混凝土 [🔊 聽發音](https://www.merriam-webster.com/dictionary/concrete)
+
+  con（一起）+ cret（生長）+ e → 生長在一起而凝結成實體 → 具體的、混凝土  
+  例句1: We need concrete evidence to support our claim. 我們需要具體證據來支持我們的主張。  
+  例句2: The plan is still not concrete. 計劃仍然不夠具體。  
+  例句3: The building is made of concrete and steel. 這棟建築由混凝土和鋼筋建造而成。    
 
 ## halt 停止
 - halt [hɔlt] v./n. 停止；停下 [🔊 聽發音](https://www.merriam-webster.com/dictionary/halt)
@@ -281,49 +399,84 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | 空間 / 外觀 | interior（室內的、內庭的） | exterior（外觀的、表面的） |
 
 ## pract 實行行動
-- practical [ˈpræktɪkəl] adj. 實際的；實用的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/practical)
 
-  pract 實行 ical 形容詞（可以實行的 → 實際的、實用的）  
-  例句1: She has a lot of practical experience. 她有很多實際經驗。  
-  例句2: This tool is very practical for everyday use. 這個工具在日常使用上很實用。  
-  例句3: He gave some practical advice. 他給了一些實用的建議。  
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| practice [ˈpræktɪs] | pract（做、實行）+ ice（名詞）| n. | 反覆實行 → 實踐、練習、慣例、業務 |
+| practise [ˈpræktɪs] | pract（做、實行）+ ise（動詞）| v. | 實際去做 → 練習、實行、從業 |
+| practical [ˈpræktɪkəl] | pract（做、實行）+ ical（形容詞）| adj. | 與實行相關的 → 實際的、實用的 |
+| practically [ˈpræktɪkli] | practical + ly（副詞）| adv. | 以實際的方式 → 實際上、幾乎 |
+| practicable [ˈpræktɪkəbəl] | pract（做、實行）+ icable（可…的）| adj. | 可以實行的 → 可行的 |
+| practitioner [prækˈtɪʃənɚ] | pract（做、實行）+ itioner（表人）| n. | 實際執行業務的人 → 從業者、執業醫師 |
+| malpractice [mælˈpræktɪs] | mal（壞、錯誤）+ practice（實行、業務）| n. | 錯誤的執行業務 → 失職、瀆職 |
 
-- practically [ˈpræktɪkli] adv. 實際地；幾乎 [🔊 聽發音](https://www.merriam-webster.com/dictionary/practically)
+ **pract** 這個字根的核心就是「**去做、去實行**」：
+ - **practice**：反覆「去做」→ 練習；長期「實行」→ 慣例、業務
+ - **practise**：實際「去做」→ 練習、實行、從業
+ - **practical**：與「實行」相關的 → 實際的、實用的
+ - **practicable**：可以「實行」的 → 可行的
+ - **practitioner**：實際「執行」業務的人 → 從業者
+ - **malpractice**：「錯誤地執行」業務 → 失職、瀆職
 
-  practical 實際的 ly 副詞  
-  例句1: She practically runs the whole office. 她幾乎掌管整個辦公室。  
-  例句2: The work is practically finished. 這項工作幾乎完成了。  
-  例句3: He practically lives in the library. 他幾乎住在圖書館裡。  
+- **prac**tice [ˈpræktɪs] n. 實踐；練習；業務；慣例 [🔊 聽發音](https://www.merriam-webster.com/dictionary/practice)
 
-- practice [ˈpræktɪs] n. 練習；慣例；實踐 [🔊 聽發音](https://www.merriam-webster.com/dictionary/practice)
+  pract 做、實行 + ice 名詞 → 重複實行 → 練習、實踐、慣例  
+  例句1: You need more practice to improve your skills. 你需要更多練習來提升技能。  
+  例句2: The company has a policy of fair hiring practice. 該公司有公平聘用的慣例。  
+  例句3: She runs a successful medical practice. 她經營一家成功的醫療診所。  
 
-  pract 實行 ice 名詞  
-  例句1: Practice makes perfect. 熟能生巧。  
-  例句2: It is common practice to wear a suit to an interview. 穿西裝去面試是常見的慣例。  
-  例句3: She puts her theory into practice. 她將理論付諸實踐。  
+- **prac**tise [ˈpræktɪs] v. 練習；實行；從業 [🔊 聽發音](https://www.merriam-webster.com/dictionary/practise)
 
-- practice [ˈpræktɪs] v. 練習；實踐（美式拼寫）[🔊 聽發音](https://www.merriam-webster.com/dictionary/practice)
+  pract 做、實行 + ise 動詞 → 實際去做 → 練習、實行  
+  例句1: You should practise speaking English every day. 你應該每天練習說英文。  
+  例句2: He practises law at a top firm. 他在一家頂尖律師事務所執業。  
+  例句3: She practises yoga in the morning. 她早上練習瑜珈。  
 
-  pract 實行 ice 動詞  
-  例句1: She practices the piano every day. 她每天練習鋼琴。  
-  例句2: He practices law in New York. 他在紐約從事法律工作。  
-  例句3: You need to practice what you preach. 你需要言行一致。  
+- **prac**tical [ˈpræktɪkəl] adj. 實際的；實用的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/practical)
 
-- practise [ˈpræktɪs] v. 練習；實踐（英式拼寫）[🔊 聽發音](https://www.merriam-webster.com/dictionary/practise)
+  pract 做、實行 + ical 形容詞 → 與實行相關的 → 實際的、實用的  
+  例句1: We need a practical solution to the problem. 我們需要一個實際的解決方案。  
+  例句2: The new design is both stylish and practical. 這個新設計既時尚又實用。  
+  例句3: She is a very practical person. 她是一個非常注重實際的人。  
 
-  pract 實行 ise 動詞  
-  例句1: She practises the violin every evening. 她每晚練習小提琴。  
-  例句2: He practises medicine in London. 他在倫敦行醫。  
-  例句3: You should practise speaking English every day. 你應該每天練習說英文。  
+- **prac**tically [ˈpræktɪkli] adv. 實際上；幾乎 [🔊 聽發音](https://www.merriam-webster.com/dictionary/practically)
 
-- practitioner [prækˈtɪʃənɚ] n. 從業者；執業者 [🔊 聽發音](https://www.merriam-webster.com/dictionary/practitioner)
+  practical + ly 副詞 → 以實際的方式 → 實際上、幾乎  
+  例句1: The project is practically finished. 這個專案幾乎完成了。  
+  例句2: Practically speaking, the plan is not feasible. 實際上來說，這個計畫不可行。  
+  例句3: She practically runs the entire department. 她幾乎掌管整個部門。  
 
-  practice 實踐 tioner 名詞（指人）  
-  例句1: She is a medical practitioner. 她是一名醫療從業者。  
-  例句2: The practitioner has many years of experience. 這位從業者有很多年的經驗。  
-  例句3: He is a practitioner of alternative medicine. 他是替代療法的執業者。  
+- **prac**ticable [ˈpræktɪkəbəl] adj. 可行的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/practicable)
+
+  pract 做、實行 + icable 可…的 → 可以實行的 → 可行的  
+  例句1: The plan is practicable within the given budget. 這個計畫在既有預算內是可行的。  
+  例句2: We need a practicable route to the destination. 我們需要一條可行的路線到達目的地。  
+  例句3: The solution may not be practicable in reality. 這個解決方案在現實中可能不可行。  
+
+- **prac**titioner [prækˈtɪʃənɚ] n. 從業者；執業醫師 [🔊 聽發音](https://www.merriam-webster.com/dictionary/practitioner)
+
+  pract 做、實行 + itioner 名詞（表人）→ 實際執行業務的人 → 從業者  
+  例句1: She is a general practitioner at a local clinic. 她是當地診所的一位全科醫師。  
+  例句2: Legal practitioners must follow professional ethics. 法律從業者必須遵守職業道德。  
+  例句3: Experienced practitioners can provide valuable advice. 經驗豐富的從業者能提供寶貴建議。  
+
+- **mal**practice [mælˈpræktɪs] n. 失職；瀆職 [🔊 聽發音](https://www.merriam-webster.com/dictionary/malpractice)
+
+  mal 壞、錯誤 + practice（實行、業務）→ 錯誤的執行業務 → 失職、瀆職  
+  例句1: The doctor was sued for medical malpractice. 這位醫生因醫療失職被起訴。  
+  例句2: The company was accused of professional malpractice. 該公司被指控專業失職。  
+  例句3: Malpractice insurance is essential for doctors. 失職保險對醫生來說是必要的。  
 
 ## zeal 熱情 狂熱
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| zeal [zil] | n. | zeal 熱情 | 內心強烈的熱情 → 狂熱 |
+| zealous [ˈzɛləs] | adj. | zeal + ous | 充滿熱情的 → 熱心的；狂熱的 |
+| zealously [ˈzɛləsli] | adv. | zealous + ly | 以熱情的方式 → 熱心地；狂熱地 |
+| zealot [ˈzɛlət] | n. | zeal + ot（指人） | 充滿熱情的人 → 狂熱者；激進分子 |
+| zealotry [ˈzɛlətri] | n. | zealot + ry | 狂熱者的行為 → 狂熱行為；極端主義 |
+
 - zeal [zil] n. 熱情；狂熱 [🔊 聽發音](https://www.merriam-webster.com/dictionary/zeal)
 
   zeal 熱情  
@@ -352,17 +505,17 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: The zealots refused to compromise. 激進分子拒絕妥協。  
   例句3: She is a zealot for social justice. 她是社會正義的狂熱者。  
 
-
-| 單字 | 詞性 | 字源拆解 | 中文釋義 |
-|------|------|----------|----------|
-| zeal | n. | zeal 熱情 | 熱情；狂熱 |
-| zealous | adj. | zeal + ous | 熱心的；狂熱的 |
-| zealously | adv. | zealous + ly | 熱心地；狂熱地 |
-| zealot | n. | zeal + ot（指人） | 狂熱者；激進分子 |
-| zealotry | n. | zealot + ry | 狂熱行為；極端主義 |
-
-
 ## vot 誓言 / 承諾
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| devote [dɪˈvot] | v. | de（完全）+ vote（誓言） | 完全獻出誓言 → 奉獻；致力於 |
+| devoted [dɪˈvotɪd] | adj. | devote + ed | 奉獻自己的 → 忠誠的；奉獻的 |
+| devotion [dɪˈvoʃən] | n. | devote + ion | 奉獻的行為 → 奉獻；忠誠；熱愛 |
+| devout [dɪˈvaʊt] | adj. | de（完全）+ vout（誓言） | 完全獻身於信仰 → 虔誠的；誠摯的 |
+| vow [vaʊ] | n./v. | vow（誓言） | 對神或人的承諾 → 誓言；發誓 |
+| vote [vot] | n./v. | vote（誓言 → 投票） | 以誓言支持某人 → 投票（承諾支持某人） |
+
 - devote [dɪˈvot] v. 奉獻；致力於 [🔊 聽發音](https://www.merriam-webster.com/dictionary/devote)
 
   de 朝向 vote 誓言（用力承諾 → 奉獻）  
@@ -391,17 +544,15 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: He made a devout wish for peace. 他誠摯地祈求和平。  
   例句3: The devout followers gathered at the temple. 虔誠的信徒聚集在寺廟裡。  
 
-| 單字 | 詞性 | 字源拆解 | 中文釋義 |
-|------|------|----------|----------|
-| devote | v. | de（完全）+ vote（誓言） | 奉獻；致力於 |
-| devoted | adj. | devote + ed | 忠誠的；奉獻的 |
-| devotion | n. | devote + ion | 奉獻；忠誠；熱愛 |
-| devout | adj. | de（完全）+ vout（誓言） | 虔誠的；誠摯的 |
-| vow | n./v. | vow（誓言） | 誓言；發誓 |
-| vote | n./v. | vote（誓言 → 投票） | 投票（承諾支持某人） |
-
-
 ## thus 神/靈感
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| enthusiasm [ɪnˈθuzɪæzəm] | n. | en（進入）+ thus（神靈）+ iasm | 神靈進入內心 → 熱情；熱忱 |
+| enthusiast [ɪnˈθuzɪæst] | n. | en + thus + iast（名詞指人） | 被神靈附身的人 → 熱愛者；狂熱者 |
+| enthusiastic [ɪnˌθuzɪˈæstɪk] | adj. | enthusiast + ic | 具有熱愛者特質的 → 熱情的；熱心的 |
+| enthusiastically [ɪnˌθuzɪˈæstɪkli] | adv. | enthusiastic + ly | 以熱情的方式 → 熱情地 |
+
 - enthusiasm [ɪnˈθuziˌæzəm] n. 熱情；熱忱 [🔊 聽發音](https://www.merriam-webster.com/dictionary/enthusiasm)
 
   en 進入 thus 神靈 iasm 名詞（受到神靈啟發 → 熱情）  
@@ -430,14 +581,16 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: The fans cheered enthusiastically. 粉絲們熱情地歡呼。  
   例句3: He enthusiastically supported the proposal. 他熱情地支持這個提案。  
 
-| 單字 | 詞性 | 字源拆解 | 中文釋義 |
-|------|------|----------|----------|
-| enthusiasm | n. | en（進入）+ thus（神靈）+ iasm | 熱情；熱忱 |
-| enthusiast | n. | en + thus + iast（名詞指人） | 熱愛者；狂熱者 |
-| enthusiastic | adj. | enthusiast + ic | 熱情的；熱心的 |
-| enthusiastically | adv. | enthusiastic + ly | 熱情地 |
-
 ## clud clus 關閉
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| exclude [ɪkˈsklud] | v. | ex（向外）+ clude（關） | 關在外面 → 排除；拒絕 |
+| include [ɪnˈklud] | v. | in（向內）+ clude（關） | 關在裡面 → 包含；包括 |
+| conclude [kənˈklud] | v. | con（一起）+ clude（關） | 一起關閉 → 結束；推斷 |
+| preclude [prɪˈklud] | v. | pre（提前）+ clude（關） | 提前關閉 → 阻止；妨礙 |
+| seclude [sɪˈklud] | v. | se（分開）+ clude（關） | 分開關閉 → 隔離；隱居 |
+
 - exclude [ɪkˈsklud] v. 排除；拒絕 [🔊 聽發音](https://www.merriam-webster.com/dictionary/exclude)
 
   ex 向外 clud 關閉（關在外面 → 排除）  
@@ -466,15 +619,16 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: She writes exclusively for that newspaper. 她專為那家報紙撰稿。  
   例句3: The company focuses exclusively on renewable energy. 這家公司專門專注於可再生能源。  
 
-| 單字 | 字首 | 字源拆解 | 中文釋義 |
-|------|------|----------|----------|
-| exclude | ex（向外） | 關在外面 | 排除；拒絕 |
-| include | in（向內） | 關在裡面 | 包含；包括 |
-| conclude | con（一起） | 一起關閉 | 結束；推斷 |
-| preclude | pre（提前） | 提前關閉 | 阻止；妨礙 |
-| seclude | se（分開） | 分開關閉 | 隔離；隱居 |
 
 ## examin 秤重衡量
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| examine [ɪgˈzæmɪn] | v. | ex（向外）+ amin（秤重） | 秤重以判斷真偽 → 檢查；考試 |
+| examination [ɪgˌzæməˈneʃən] | n. | examine + ation | 檢查的行為 → 檢查；考試 |
+| examiner [ɪgˈzæmɪnɚ] | n. | examine + er（指人） | 執行檢查的人 → 主考官；檢查員 |
+| cross-examination [ˌkrɔsɪgˌzæməˈneʃən] | n. | cross + examination | 交互提問檢查 → 交叉詢問 |
+
 - examine [ɪgˈzæmɪn] v. 檢查；考試 [🔊 聽發音](https://www.merriam-webster.com/dictionary/examine)
 
   ex 向外 amin 秤重（向外衡量 → 檢查）  
@@ -496,14 +650,17 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: She is a medical examiner. 她是個法醫檢查員。  
   例句3: The examiner checked all the documents carefully. 檢查員仔細檢查了所有文件。  
 
-| 單字 | 詞性 | 字源拆解 | 中文釋義 |
-|------|------|----------|----------|
-| examine | v. | ex（向外）+ amin（秤重） | 檢查；考試 |
-| examination | n. | examine + ation | 檢查；考試 |
-| examiner | n. | examine + er（指人） | 主考官；檢查員 |
-| cross-examination | n. | cross + examination | 交叉詢問 |
-
 ## plet 充滿/完成
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| complete [kəmˈplit] | adj./v. | com（一起）+ plete（充滿） | 一起充滿 → 完整的；完成 |
+| completion [kəmˈpliʃən] | n. | complete + ion | 完成的狀態 → 完成；結束 |
+| accomplish [əˈkɑmplɪʃ] | v. | ac（朝向）+ compl（充滿）+ ish | 朝向充滿 → 完成；實現 |
+| accomplishment [əˈkɑmplɪʃmənt] | n. | accomplish + ment | 完成的成果 → 成就；完成 |
+| complement [ˈkɑmpləmənt] | n./v. | com（一起）+ ple（充滿）+ ment | 一起使之充滿 → 補充；互補 |
+| supplement [ˈsʌpləmənt] | n./v. | sup（下面）+ ple（充滿）+ ment | 在下面補充滿 → 補充；增補 |
+
 - complete [kəmˈplit] adj. 完整的；v. 完成 [🔊 聽發音](https://www.merriam-webster.com/dictionary/complete)
 
   com 一起 plete 充滿（全部充滿 → 完整、完成）  
@@ -539,18 +696,94 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: She listed her accomplishments on her resume. 她在履歷上列出了她的成就。  
   例句3: The accomplishment of the mission took months. 這項任務的完成花了數個月。  
 
+## plen 充滿/滿
 
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| complete | com（一起）+ plete（充滿） | adj./v. | 完整的；完成 |
-| completion | complete + ion | n. | 完成；結束 |
-| accomplish | ac（朝向）+ compl（充滿）+ ish | v. | 完成；實現 |
-| accomplishment | accomplish + ment | n. | 成就；完成 |
-| complement | com（一起）+ ple（充滿）+ ment | n./v. | 補充；互補 |
-| supplement | sup（下面）+ ple（充滿）+ ment | n./v. | 補充；增補 |
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| replenish [rɪˈplɛnɪʃ] | v. | re（再次）+ plen（充滿）+ ish | 再次充滿 → 補充；重新裝滿 |
+| replenishment [rɪˈplɛnɪʃmənt] | n. | replenish + ment | 補充的行為 → 補充；補給 |
+| plenty [ˈplɛnti] | n. | plen（充滿）+ ty | 充滿的狀態 → 充足；大量 |
+| plentiful [ˈplɛntɪfəl] | adj. | plenty + ful | 充滿大量的 → 豐富的；充足的 |
+| complete [kəmˈplit] | adj./v. | com（一起）+ plete（充滿） | 一起充滿 → 完整的；完成 |
+| accomplish [əˈkɑmplɪʃ] | v. | ac（朝向）+ compl（充滿）+ ish | 朝向充滿 → 完成；實現 |
+| complement [ˈkɑmpləmənt] | n./v. | com（一起）+ ple（充滿）+ ment | 一起使之充滿 → 補充；互補 |
+| supplement [ˈsʌpləmənt] | n./v. | sup（下面）+ ple（充滿）+ ment | 在下面補充使之充滿 → 補充；增補 |
+| implement [ˈɪmpləmənt] | n./v. | im（裡面）+ ple（充滿）+ ment | 在裡面裝滿（工具）→ 工具；實施 |
+| plenitude [ˈplɛnəˌtjud] | n. | plen（充滿）+ itude | 充滿的狀態 → 大量；充足 |
 
+- replenish [rɪˈplɛnɪʃ] v. 補充；重新裝滿 [🔊 聽發音](https://www.merriam-webster.com/dictionary/replenish)
+
+  re 再次 plen 充滿 ish 動詞（再次充滿 → 補充）  
+  例句1: Please replenish the water bottles. 請補充水瓶。  
+  例句2: The soil needs to be replenished with nutrients. 土壤需要補充養分。  
+  例句3: She replenished her energy with a short nap. 她小睡一下補充了體力。  
+
+- replenishment [rɪˈplɛnɪʃmənt] n. 補充；補給 [🔊 聽發音](https://www.merriam-webster.com/dictionary/replenishment)
+
+  replenish 補充 ment 名詞  
+  例句1: The replenishment of supplies took two days. 物資的補充花了兩天。  
+  例句2: The army needs regular replenishment. 軍隊需要定期補給。  
+  例句3: The inventory replenishment system is automated. 庫存補充系統是自動化的。  
+
+## ply ple 充滿/摺疊
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| supply [səˈplaɪ] | v./n. | sup（下面）+ ply（充滿） | 從下面填滿 → 供應；供應量 |
+| supplies [səˈplaɪz] | n. | supply + s（複數） | 被供應的物品 → 物資；必需品 |
+| reply [rɪˈplaɪ] | v./n. | re（反覆）+ ply（摺疊） | 反覆摺回 → 回覆；答覆 |
+| apply [əˈplaɪ] | v. | ap（朝向）+ ply（摺疊） | 朝向某處摺去 → 申請；應用 |
+| application [ˌæpləˈkeʃən] | n. | apply + ation | 應用的行為 → 申請；應用 |
+| comply [kəmˈplaɪ] | v. | com（一起）+ ply（摺疊） | 一起摺疊 → 遵守；服從 |
+| compliance [kəmˈplaɪəns] | n. | comply + ance | 服從的狀態 → 遵守；服從 |
+| imply [ɪmˈplaɪ] | v. | im（裡面）+ ply（摺疊） | 摺疊在裡面 → 暗示；意味著 |
+| implication [ˌɪmpləˈkeʃən] | n. | imply + ation | 暗示的結果 → 暗示；含義 |
+
+- supply [səˈplaɪ] v. 供應；供給；n. 供應量 [🔊 聽發音](https://www.merriam-webster.com/dictionary/supply)
+
+  sup 下面 ply 充滿（從下面往上充滿 → 供應）  
+  例句1: The company supplies office equipment. 這家公司供應辦公室設備。  
+  例句2: The river supplies water to the city. 這條河為城市供水。  
+  例句3: The supply of fresh water is limited. 淡水的供應量有限。  
+
+- supplies [səˈplaɪz] n. 物資；必需品（複數）[🔊 聽發音](https://www.merriam-webster.com/dictionary/supplies)
+
+  supply 供應 s 複數  
+  例句1: The school ordered new art supplies. 學校訂購了新的美術用品。  
+  例句2: Emergency supplies were sent to the disaster area. 緊急物資被送往災區。  
+  例句3: We need to buy office supplies. 我們需要購買辦公用品。  
+
+- supply單複數
+  - supply（單數）  指整體的「供應」行為或「供應量」  
+    - The water supply is limited. 水的供應量有限。
+  - supplies（複數）  指具體的「物資」、「用品」 
+    - Medical supplies are needed. 需要醫療物資。
+
+| 複合詞 | 字源拆解 | 中文釋義 | 例句 |
+|--------|----------|----------|------|
+| **office supplies** | office（辦公室）+ supplies（用品）| 辦公用品 | We need to order more office supplies. 我們需要訂購更多辦公用品。 |
+| **medical supplies** | medical（醫療的）+ supplies | 醫療物資 | The hospital is running low on medical supplies. 醫院的醫療物資快用完了。 |
+| **school supplies** | school（學校）+ supplies | 學校用品；文具 | Parents bought school supplies for their children. 家長為孩子們購買了學校用品。 |
+| **emergency supplies** | emergency（緊急）+ supplies | 緊急物資 | Emergency supplies were sent to the flood victims. 緊急物資被送給水災災民。 |
+| **food supplies** | food（食物）+ supplies | 食物供應；糧食 | Food supplies are expected to last for three months. 食物供應預計可維持三個月。 |
+| **water supplies** | water（水）+ supplies | 水源供應 | The town's water supplies are contaminated. 小鎮的水源供應受到污染。 |
+| **military supplies** | military（軍事的）+ supplies | 軍用物資 | The army transported military supplies to the base. 軍隊將軍用物資運往基地。 |
+| **household supplies** | household（家庭的）+ supplies | 家庭用品 | She bought household supplies like detergent and paper towels. 她購買了清潔劑和紙巾等家庭用品。 |
+| **cleaning supplies** | cleaning（清潔）+ supplies | 清潔用品 | The janitor requested more cleaning supplies. 管理員要求更多清潔用品。 |
+| **first aid supplies** | first aid（急救）+ supplies | 急救用品 | Every classroom should have first aid supplies. 每間教室都應該有急救用品。 |
 
 ## propri 自己的/適當的
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| proper [ˈprɑpɚ] | adj. | propri（自己的、適當的） | 屬於自己的 → 適當的；正確的 |
+| properly [ˈprɑpɚli] | adv. | proper + ly | 以適當的方式 → 適當地；正確地 |
+| property [ˈprɑpɚti] | n. | proper + ty（名詞） | 屬於自己的東西 → 財產；特性 |
+| appropriate [əˈpropriɪt] | adj. | ap（朝向）+ propri + ate | 朝向適合的狀態 → 適當的；合適的 |
+| appropriately [əˈpropriɪtli] | adv. | appropriate + ly | 以合適的方式 → 適當地；合適地 |
+| inappropriate [ˌɪnəˈpropriɪt] | adj. | in（否定）+ appropriate | 不適合的 → 不適當的；不合適的 |
+| proprietor [prəˈpraɪətɚ] | n. | propri（自己的）+ etor | 擁有自己財產的人 → 所有者；經營者 |
+
 - proper [ˈprɑpɚ] adj. 適當的；正確的；真正的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/proper)
 
   proper 適當的  
@@ -593,18 +826,18 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: He made an inappropriate comment. 他發表了不適當的評論。  
   例句3: Her behavior was inappropriate for the occasion. 她的行為不適合這個場合。  
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| proper | propri（自己的、適當的） | adj. | 適當的；正確的 |
-| properly | proper + ly | adv. | 適當地；正確地 |
-| property | proper + ty（名詞） | n. | 財產；特性 |
-| appropriate | ap（朝向）+ propri + ate | adj. | 適當的；合適的 |
-| appropriately | appropriate + ly | adv. | 適當地；合適地 |
-| inappropriate | in（否定）+ appropriate | adj. | 不適當的；不合適的 |
-| proprietor | propri（自己的）+ etor | n. | 所有者；經營者 |
-
 ## vac 空
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| vacant [ˈvekənt] | adj. | vac（空）+ ant | 空的狀態 → 空著的；空缺的 |
+| vacancy [ˈvekənsi] | n. | vac + ancy | 空的狀態（名詞） → 空缺；空房；空位 |
+| vacate [ˈveket] | v. | vac + ate | 使變空 → 空出；搬離 |
+| vacation [veˈkeʃən] | n. | vac + ation | 使空出時間 → 假期（美式） |
+| evacuate [ɪˈvækjuet] | v. | e（向外）+ vacu + ate | 使內部向外變空 → 撤離；疏散 |
+| evacuation [ɪˌvækjuˈeʃən] | n. | evacuate + ion | 撤離的行為 → 撤離；疏散 |
+| vacuum [ˈvækjuəm] | n. | vacu + um | 完全空的空間 → 真空；吸塵器 |
+
 - vacant [ˈvekənt] adj. 空著的；空缺的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/vacant)
 
   vac 空 ant 形容詞  
@@ -647,18 +880,22 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: They ordered an immediate evacuation. 他們下令立即撤離。  
   例句3: The evacuation plan was successfully executed. 撤離計劃被成功執行。  
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **vacant** | vac（空）+ ant | adj. | 空著的；空缺的 |
-| **vacancy** | vac + ancy | n. | 空缺；空房；空位 |
-| **vacate** | vac + ate | v. | 空出；搬離 |
-| **vacation** | vac + ation | n. | 假期（美式）|
-| **evacuate** | e（向外）+ vacu + ate | v. | 撤離；疏散 |
-| **evacuation** | evacuate + ion | n. | 撤離；疏散 |
-| **vacuum** | vacu + um | n. | 真空；吸塵器 |
-
 ## lev 舉起/輕
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| relevant [ˈrɛləvənt] | adj. | re（再次）+ lev（舉起）+ ant | 再次被舉起（被提及）的 → 相關的；有關的 |
+| relevance [ˈrɛləvəns] | n. | relevant + ance | 相關的狀態 → 相關性；關聯 |
+| irrelevant [ɪˈrɛləvənt] | adj. | ir（否定）+ relevant | 不相關的 → 不相關的；不重要的 |
+| relieve [rɪˈliv] | v. | re（再次）+ lieve（舉起） | 再次舉起（減輕重量）→ 緩解；減輕 |
+| relief [rɪˈlif] | n. | relieve + f | 緩解後的狀態 → 緩解；減輕；寬慰 |
+| elevate [ˈɛləvet] | v. | e（向外）+ lev（舉起）+ ate | 向外舉起 → 提升；舉起 |
+| elevator [ˈɛləˌvetɚ] | n. | elevate + or（工具） | 用來舉起的工具 → 電梯 |
+| levitate [ˈlɛvətet] | v. | lev（輕）+ itate | 使變輕而上升 → 懸浮 |
+| lever [ˈlɛvɚ] | n. | lev（舉起）+ er（工具） | 用來舉起的工具 → 槓桿 |
+| alleviate [əˈliviˌet] | v. | al（朝向）+ lev（輕）+ iate | 朝向減輕的狀態 → 緩解；減輕 |
+| alleviation [əˌliviˈeʃən] | n. | alleviate + ion | 緩解的行為 → 緩解；減輕 |
+
 - relevant [ˈrɛləvənt] adj. 相關的；有關的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/relevant)
 
   re 再次 lev 舉起 ant 形容詞（再次舉起 → 相關的、有關的）  
@@ -694,23 +931,19 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: She felt a sense of relief. 她感到一陣寬慰。  
   例句3: The relief effort is ongoing. 救濟工作正在進行中。  
 
-## lev = 舉起、輕（拉丁語 *levare* / *levis*）
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **relevant** | re（再次）+ lev（舉起）+ ant | adj. | 相關的；有關的 |
-| **relevance** | relevant + ance | n. | 相關性；關聯 |
-| **irrelevant** | ir（否定）+ relevant | adj. | 不相關的；不重要的 |
-| **relieve** | re（再次）+ lieve（舉起）| v. | 緩解；減輕 |
-| **relief** | relieve + f | n. | 緩解；減輕；寬慰 |
-| **elevate** | e（向外）+ lev（舉起）+ ate | v. | 提升；舉起 |
-| **elevator** | elevate + or（工具）| n. | 電梯 |
-| **levitate** | lev（輕）+ itate | v. | 懸浮（使變輕而上升）|
-| **lever** | lev（舉起）+ er（工具）| n. | 槓桿 |
-| **alleviate** | al（朝向）+ lev（輕）+ iate | v. | 緩解；減輕 |
-| **alleviation** | alleviate + ion | n. | 緩解；減輕 |
-
 ## audi 聽
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| audio [ˈɔdɪo] | adj./n. | audi（聽）+ o | 與聽有關的 → 聲音的；音頻 |
+| audience [ˈɔdɪəns] | n. | audi（聽）+ ence（名詞） | 聽的群體 → 觀眾；聽眾 |
+| audible [ˈɔdəbəl] | adj. | audi（聽）+ ble（能夠） | 能夠被聽到的 → 聽得見的 |
+| inaudible [ɪnˈɔdəbəl] | adj. | in（否定）+ audible | 無法被聽到的 → 聽不見的 |
+| auditorium [ˌɔdəˈtorɪəm] | n. | audi（聽）+ torium（場所） | 聽的場所 → 禮堂；觀眾席 |
+| audition [ɔˈdɪʃən] | n./v. | audi（聽）+ tion | 聽的行為 → 試鏡；試音 |
+| auditory [ˈɔdəˌtorɪ] | adj. | audi（聽）+ tory（形容詞） | 與聽有關的 → 聽覺的 |
+| audiovisual [ˌɔdioˈvɪʒuəl] | adj. | audio + visual | 聲音與視覺結合的 → 視聽的 |
+| audiobook [ˈɔdioˌbʊk] | n. | audio + book | 用聽的書 → 有聲書 |
 
 - audio [ˈɔdio] adj. 聲音的；n. 音頻 [🔊 聽發音](https://www.merriam-webster.com/dictionary/audio)
 
@@ -747,20 +980,23 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: He auditioned for the lead role. 他試鏡了主角。  
   例句3: The audition was very competitive. 試鏡競爭非常激烈。  
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **audio** | audi（聽）+ o | adj./n. | 聲音的；音頻 |
-| **audience** | audi（聽）+ ence（名詞）| n. | 觀眾；聽眾 |
-| **audible** | audi（聽）+ ble（能夠）| adj. | 聽得見的 |
-| **inaudible** | in（否定）+ audible | adj. | 聽不見的 |
-| **auditorium** | audi（聽）+ torium（場所）| n. | 禮堂；觀眾席 |
-| **audition** | audi（聽）+ tion | n./v. | 試鏡；試音 |
-| **auditory** | audi（聽）+ tory（形容詞）| adj. | 聽覺的 |
-| **audiovisual** | audio + visual | adj. | 視聽的 |
-| **audiobook** | audio + book | n. | 有聲書 |
-
 ## reg 規則、統治
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| regular [ˈrɛgjəlɚ] | adj. | reg（規則）+ ular | 符合規則的 → 規律的；經常的；普通的 |
+| regularly [ˈrɛgjəlɚli] | adv. | regular + ly | 以規律的方式 → 規律地；經常地 |
+| regularity [ˌrɛgjəˈlærəti] | n. | regular + ity | 規律的狀態 → 規律性；經常性 |
+| irregular [ɪˈrɛgjəlɚ] | adj. | ir（否定）+ regular | 不符合規則的 → 不規則的；不正常的 |
+| regulate [ˈrɛgjəˌlet] | v. | reg（規則）+ ul + ate | 使符合規則 → 調節；規範 |
+| regulation [ˌrɛgjəˈleʃən] | n. | regulate + ion | 規範的行為或結果 → 規定；法規 |
+| regulator [ˈrɛgjəˌletɚ] | n. | regulate + or（工具／人） | 執行調節者 → 調節器；監管者 |
+| regulatory [ˈrɛgjələˌtorɪ] | adj. | regulate + ory | 與調節有關的 → 監管的；規範的 |
+| reign [ren] | n./v. | reg（統治）+ n（輔音） | 統治的權力或時期 → 統治；王朝 |
+| regime [reˈʒim] | n. | reg（統治）+ ime | 統治的體系 → 政權；制度 |
+| region [ˈridʒən] | n. | reg（統治）+ ion | 被統治的範圍 → 地區；區域 |
+| regional [ˈridʒənəl] | adj. | region + al | 與地區有關的 → 地區的；區域的 |
+
 - regular [ˈrɛgjəlɚ] adj. 規律的；經常的；普通的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/regular)
 
   reg 規則 ular 形容詞  
@@ -803,24 +1039,22 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: Safety regulations must be followed. 必須遵守安全法規。  
   例句3: He violated the traffic regulations. 他違反了交通規定。  
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **regular** | reg（規則）+ ular | adj. | 規律的；經常的；普通的 |
-| **regularly** | regular + ly | adv. | 規律地；經常地 |
-| **regularity** | regular + ity | n. | 規律性；經常性 |
-| **irregular** | ir（否定）+ regular | adj. | 不規則的；不正常的 |
-| **regulate** | reg（規則）+ ul + ate | v. | 調節；規範 |
-| **regulation** | regulate + ion | n. | 規定；法規 |
-| **regulator** | regulate + or（工具／人）| n. | 調節器；監管者 |
-| **regulatory** | regulate + ory | adj. | 監管的；規範的 |
-| **reign** | reg（統治）+ n（輔音）| n./v. | 統治；王朝 |
-| **regime** | reg（統治）+ ime | n. | 政權；制度 |
-| **region** | reg（統治）+ ion | n. | 地區；區域 |
-| **regional** | region + al | adj. | 地區的；區域的 |
-
-
 ## habit 居住/擁有
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| habit [ˈhæbɪt] | n. | habit（居住） | 居住的行為固定下來 → 習慣 |
+| habitual [həˈbɪtʃuəl] | adj. | habit + ual | 已成為居住般固定的 → 習慣性的；慣常的 |
+| inhabit [ɪnˈhæbɪt] | v. | in（裡面）+ habit（居住） | 在裡面居住 → 居住於 |
+| inhabitant [ɪnˈhæbɪtənt] | n. | inhabit + ant（指人） | 在裡面居住的人 → 居民；棲息者 |
+| habitat [ˈhæbəˌtæt] | n. | habit + at（場所） | 居住的場所 → 棲息地 |
+| inhibit [ɪnˈhɪbɪt] | v. | in（裡面）+ hibit（居住） | 限制在裡面 → 抑制；阻止 |
+| inhibition [ˌɪnhəˈbɪʃən] | n. | inhibit + ion | 抑制的行為 → 抑制；禁忌 |
+| prohibit [proˈhɪbɪt] | v. | pro（提前）+ hibit（居住） | 提前封住 → 禁止 |
+| prohibition [ˌproɪˈbɪʃən] | n. | prohibit + ion | 禁止的行為 → 禁止；禁令 |
+| exhibit [ɪgˈzɪbɪt] | v./n. | ex（向外）+ hibit（居住） | 向外擺放 → 展示；展覽 |
+| exhibition [ˌɛksəˈbɪʃən] | n. | exhibit + ion | 展示的行為 → 展覽；展出 |
+
 - habit [ˈhæbɪt] n. 習慣 [🔊 聽發音](https://www.merriam-webster.com/dictionary/habit)
 
   habit 居住（居住久了產生的行為 → 習慣）  
@@ -870,22 +1104,18 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: The prohibition was enforced by the police. 禁令由警察執行。  
   例句3: He violated the prohibition on drinking. 他違反了飲酒禁令。  
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **habit** | habit（居住）| n. | 習慣 |
-| **habitual** | habit + ual | adj. | 習慣性的；慣常的 |
-| **inhabit** | in（裡面）+ habit（居住）| v. | 居住於 |
-| **inhabitant** | inhabit + ant（指人）| n. | 居民；棲息者 |
-| **habitat** | habit + at（場所）| n. | 棲息地 |
-| **inhibit** | in（裡面）+ hibit（居住）| v. | 抑制；阻止 |
-| **inhibition** | inhibit + ion | n. | 抑制；禁忌 |
-| **prohibit** | pro（提前）+ hibit（居住）| v. | 禁止 |
-| **prohibition** | prohibit + ion | n. | 禁止；禁令 |
-| **exhibit** | ex（向外）+ hibit（居住）| v./n. | 展示；展覽 |
-| **exhibition** | exhibit + ion | n. | 展覽；展出 |
-
 ## force 力量
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| force [fɔrs] | n./v. | force（力量） | 力量本身 → 力量；武力；強迫 |
+| workforce [ˈwɝkˌfɔrs] | n. | work + force | 工作中的力量 → 勞動力；全體員工 |
+| enforce [ɪnˈfɔrs] | v. | en（使成為）+ force | 使成為力量（執行）→ 執行；強制 |
+| reinforce [ˌriɪnˈfɔrs] | v. | re（再次）+ in + force | 再次注入力量 → 加強；強化 |
+| reinforcement [ˌriɪnˈfɔrsmənt] | n. | reinforce + ment | 加強的行為或結果 → 加強；強化 |
+| forceful [ˈfɔrsfəl] | adj. | force + ful | 充滿力量的 → 有力的；強而有力的 |
+| forcible [ˈfɔrsəbəl] | adj. | force + ible | 能夠被力量執行的 → 強行的；用武力的 |
+
 - force [fɔrs] n. 力量；武力；v. 強迫 [🔊 聽發音](https://www.merriam-webster.com/dictionary/force)
 
   force 力量  
@@ -914,18 +1144,22 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: The walls were reinforced with steel. 牆壁用鋼鐵加固了。  
   例句3: The evidence reinforced his argument. 證據加強了他的論點。 
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **force** | force（力量）| n./v. | 力量；武力；強迫 |
-| **workforce** | work + force | n. | 勞動力；全體員工 |
-| **enforce** | en（使成為）+ force | v. | 執行；強制 |
-| **reinforce** | re（再次）+ in + force | v. | 加強；強化 |
-| **reinforcement** | reinforce + ment | n. | 加強；強化 |
-| **forceful** | force + ful | adj. | 有力的；強而有力的 |
-| **forcible** | force + ible | adj. | 強行的；用武力的 | 
-
 ## cred 相信/信任
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| credit [ˈkrɛdɪt] | n. | cred（相信）+ it | 被相信的事物 → 信用；讚揚；學分 |
+| credible [ˈkrɛdəbəl] | adj. | cred + ible（能夠） | 能夠被相信的 → 可信的；可靠的 |
+| incredible [ɪnˈkrɛdəbəl] | adj. | in（否定）+ credible | 無法被相信的 → 難以置信的；極好的 |
+| credential [krɪˈdɛnʃəl] | n. | cred + ent + ial | 使人相信的依據 → 證書；憑證；資格證明 |
+| credence [ˈkridəns] | n. | cred + ence | 相信的狀態 → 信任；相信 |
+| discredit [dɪsˈkrɛdɪt] | v./n. | dis（否定）+ credit | 喪失被相信的資格 → 敗壞名聲；名譽掃地 |
+| accredit [əˈkrɛdɪt] | v. | ac（朝向）+ credit | 授予被相信的資格 → 認可；委派 |
+| accreditation [əˌkrɛdɪˈteʃən] | n. | accredit + ation | 認可的行為 → 認證；資格認可 |
+| creed [krid] | n. | cred（相信）→ 信仰 | 所相信的系統 → 信條；信念 |
+| credulous [ˈkrɛdʒələs] | adj. | cred + ulous（傾向於） | 傾向於相信的 → 輕信的 |
+| incredulous [ɪnˈkrɛdʒələs] | adj. | in（否定）+ credulous | 不傾向於相信的 → 不輕信的；懷疑的 |
+
 - credit [ˈkrɛdɪt] n. 信用；讚揚；學分 [🔊 聽發音](https://www.merriam-webster.com/dictionary/credit)
 
   cred 相信 it 名詞  
@@ -968,22 +1202,16 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: The new evidence discredited his theory. 新證據使他的理論失去可信度。  
   例句3: He brought discredit to the family. 他使家族名譽掃地。  
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **credit** | cred（相信）+ it | n. | 信用；讚揚；學分 |
-| **credible** | cred + ible（能夠）| adj. | 可信的；可靠的 |
-| **incredible** | in（否定）+ credible | adj. | 難以置信的；極好的 |
-| **credential** | cred + ent + ial | n. | 證書；憑證；資格證明 |
-| **credence** | cred + ence | n. | 信任；相信 |
-| **discredit** | dis（否定）+ credit | v./n. | 敗壞名聲；名譽掃地 |
-| **accredit** | ac（朝向）+ credit | v. | 認可；委派 |
-| **accreditation** | accredit + ation | n. | 認證；資格認可 |
-| **creed** | cred（相信）→ 信仰 | n. | 信條；信念 |
-| **credulous** | cred + ulous（傾向於）| adj. | 輕信的 |
-| **incredulous** | in（否定）+ credulous | adj. | 不輕信的；懷疑的 |
-
 ## screen 遮擋 / 篩選
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| screen [skrin] | n./v. | screen（遮擋） | 遮擋物 → 螢幕；紗窗；遮擋；篩選 |
+| screening [ˈskrinɪŋ] | n. | screen + ing | 遮擋的動作 → 篩選；檢查；放映 |
+| sunscreen [ˈsʌnˌskrin] | n. | sun + screen | 遮擋陽光的東西 → 防曬乳 |
+| screenwriter [ˈskrinˌraɪtɚ] | n. | screen + writer | 為螢幕寫作的人 → 編劇 |
+| silver screen [ˈsɪlvɚ ˌskrin] | n. | silver + screen | 銀色的螢幕 → 銀幕；電影界 |
+
 - screen [skrin] n. 螢幕；紗窗；v. 遮擋；篩選 [🔊 聽發音](https://www.merriam-webster.com/dictionary/screen)
 
   screen 遮擋  
@@ -998,17 +1226,20 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: She went for a health screening. 她去做了健康檢查。  
   例句3: The screening of the film will be at 8 p.m. 電影放映將在晚上八點。  
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **screen** | screen（遮擋）| n./v. | 螢幕；紗窗；遮擋；篩選 |
-| **screening** | screen + ing | n. | 篩選；檢查；放映 |
-| **sunscreen** | sun + screen | n. | 防曬乳（遮擋陽光）|
-| **screenwriter** | screen + writer | n. | 編劇（寫螢幕故事的人）|
-| **silver screen** | silver + screen | n. | 銀幕；電影界 |
-
-
 ## ori 升起/起源
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| orient [ˈɔriənt] | n./v. | ori（升起）+ ent | 太陽升起的方向 → 東方；使適應；確定方向 |
+| orientate [ˈɔriənˌtet] | v. | orient + ate | 使朝向東方 → 使適應；確定方向（英式） |
+| oriented [ˈɔriˌɛntɪd] | adj. | orient + ed | 已確定方向的 → 以...為導向的；重視...的 |
+| orientation [ˌɔriənˈteʃən] | n. | orient + ation | 確定方向的行為 → 方向；適應；新生訓練 |
+| disorient [dɪsˈɔriˌɛnt] | v. | dis（否定）+ orient | 使失去方向 → 使迷失方向 |
+| disoriented [dɪsˈɔriˌɛntɪd] | adj. | disorient + ed | 失去方向的 → 迷失方向的；困惑的 |
+| origin [ˈɔrədʒɪn] | n. | ori（升起）+ gin | 開始升起的地方 → 起源；來源 |
+| original [əˈrɪdʒənəl] | adj./n. | origin + al | 屬於起點的 → 原始的；原創的；原件 |
+| originate [əˈrɪdʒəˌnet] | v. | origin + ate | 從起源處開始 → 起源於；源自 |
+
 - orient [ˈɔriənt] n. 東方（the Orient）；v. 使適應；確定方向 [🔊 聽發音](https://www.merriam-webster.com/dictionary/orient)
 
   ori 升起 ent（太陽升起的地方 → 東方；使朝向某方向 → 確定方向）  
@@ -1038,19 +1269,6 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句3: She attended a company orientation program. 她參加了公司的新人訓練。  
 
 
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **orient** | ori（升起）+ ent | n./v. | 東方；使適應；確定方向 |
-| **orientate** | orient + ate | v. | 使適應；確定方向（英式）|
-| **oriented** | orient + ed | adj. | 以...為導向的；重視...的 |
-| **orientation** | orient + ation | n. | 方向；適應；新生訓練 |
-| **disorient** | dis（否定）+ orient | v. | 使迷失方向 |
-| **disoriented** | disorient + ed | adj. | 迷失方向的；困惑的 |
-| **origin** | ori（升起）+ gin | n. | 起源；來源 |
-| **original** | origin + al | adj./n. | 原始的；原創的；原件 |
-| **originate** | origin + ate | v. | 起源於；源自 |
-
-
 常見 oriented 複合詞
 
 | 複合詞 | 字源拆解 | 中文釋義 | 例句 |
@@ -1067,6 +1285,23 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **future-oriented** | future（未來）+ oriented | 面向未來的 | The policy is future-oriented. 這項政策是面向未來的。 |
 
 ## tain 拿住/持有
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| pertain [pɚˈten] | v. | per（完全）+ tain（拿住） | 完全拿住 → 有關；屬於 |
+| pertaining to [pɚˈtenɪŋ tu] | prep. | pertain + ing + to | 拿住的對象 → 有關；關於 |
+| contain [kənˈten] | v. | con（一起）+ tain（拿住） | 一起拿住 → 包含；容納 |
+| content [ˈkɑntɛnt]（n.）/ [kənˈtɛnt]（adj.） | n./adj. | con（一起）+ tent（拿住） | 一起拿住的東西 → 內容；滿足的 |
+| maintain [menˈten] | v. | main（手）+ tain（拿住） | 拿在手中 → 維持；保養 |
+| obtain [əbˈten] | v. | ob（朝向）+ tain（拿住） | 朝向目標拿住 → 獲得 |
+| retain [rɪˈten] | v. | re（再次）+ tain（拿住） | 再次拿住 → 保留；保持 |
+| sustain [səˈsten] | v. | sus（下面）+ tain（拿住） | 從下面撐住 → 維持；支撐 |
+| attain [əˈten] | v. | at（朝向）+ tain（拿住） | 朝向目標拿到 → 達成；獲得 |
+| detain [dɪˈten] | v. | de（向下）+ tain（拿住） | 向下壓制拿住 → 拘留；扣押 |
+| entertain [ˌɛntɚˈten] | v. | enter（進入）+ tain（拿住） | 進入（心靈）抓住 → 娛樂；款待 |
+| tenure [ˈtɛnjɚ] | n. | ten（拿住）+ ure | 拿住的狀態 → 任期；終身職 |
+| tenacious [təˈneʃəs] | adj. | ten（拿住）+ acious | 能牢牢拿住的 → 堅持的；堅韌的 |
+
 - pertain [pɚˈten] v. 有關；屬於 [🔊 聽發音](https://www.merriam-webster.com/dictionary/pertain)
 
   per 完全 tain 拿住（完全拿住 → 有關、屬於）  
@@ -1081,24 +1316,21 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: The rules pertaining to safety must be followed. 與安全有關的規定必須遵守。  
   例句3: She asked questions pertaining to the new procedure. 她問了與新程序有關的問題。  
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **pertain** | per（完全）+ tain（拿住）| v. | 有關；屬於 |
-| **pertaining to** | pertain + ing + to | prep. | 有關；關於 |
-| **contain** | con（一起）+ tain（拿住）| v. | 包含；容納 |
-| **content** | con（一起）+ tent（拿住）| n./adj. | 內容；滿足的 |
-| **maintain** | main（手）+ tain（拿住）| v. | 維持；保養 |
-| **obtain** | ob（朝向）+ tain（拿住）| v. | 獲得 |
-| **retain** | re（再次）+ tain（拿住）| v. | 保留；保持 |
-| **sustain** | sus（下面）+ tain（拿住）| v. | 維持；支撐 |
-| **attain** | at（朝向）+ tain（拿住）| v. | 達成；獲得 |
-| **detain** | de（向下）+ tain（拿住）| v. | 拘留；扣押 |
-| **entertain** | enter（進入）+ tain（拿住）| v. | 娛樂；款待 |
-| **tenure** | ten（拿住）+ ure | n. | 任期；終身職 |
-| **tenacious** | ten（拿住）+ acious | adj. | 堅持的；堅韌的 |
-
 ## quest 問 / 追求
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| question [ˈkwɛstʃən] | n./v. | quest（問）+ ion | 問的行為 → 問題；質疑 |
+| questionable [ˈkwɛstʃənəbəl] | adj. | question + able（能夠） | 能夠被質疑的 → 可疑的；值得懷疑的 |
+| questionably [ˈkwɛstʃənəbli] | adv. | questionable + ly | 以可疑的方式 → 可疑地；值得懷疑地 |
+| unquestionable [ʌnˈkwɛstʃənəbəl] | adj. | un（否定）+ questionable | 無法被質疑的 → 毫無疑問的；不容質疑的 |
+| unquestionably [ʌnˈkwɛstʃənəbli] | adv. | unquestionable + ly | 以毫無疑問的方式 → 毫無疑問地 |
+| quest [kwɛst] | n. | quest（追求） | 追求的目標或過程 → 追求；探索 |
+| request [rɪˈkwɛst] | n./v. | re（再次）+ quest（問） | 再次詢問 → 要求；請求 |
+| inquiry [ɪnˈkwaɪri] | n. | in（裡面）+ quir（問）+ y | 深入探索詢問 → 詢問；調查 |
+| acquire [əˈkwaɪr] | v. | a（朝向）+ quir（問）+ e | 努力追尋而獲得 → 獲得 |
+| require [rɪˈkwaɪr] | v. | re（再次）+ quir（問）+ e | 迫切需要 → 要求；需要 |
+
 - question [ˈkwɛstʃən] n. 問題；v. 質疑 [🔊 聽發音](https://www.merriam-webster.com/dictionary/question)
 
   quest 問 ion 名詞  
@@ -1134,100 +1366,21 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: This is unquestionably a major achievement. 這毫無疑問是一項重大成就。  
   例句3: The team was unquestionably superior. 這支隊伍毫無疑問更優秀。  
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **question** | quest（問）+ ion | n./v. | 問題；質疑 |
-| **questionable** | question + able（能夠）| adj. | 可疑的；值得懷疑的 |
-| **questionably** | questionable + ly | adv. | 可疑地；值得懷疑地 |
-| **unquestionable** | un（否定）+ questionable | adj. | 毫無疑問的；不容質疑的 |
-| **unquestionably** | unquestionable + ly | adv. | 毫無疑問地 |
-| **quest** | quest（追求）| n. | 追求；探索 |
-| **request** | re（再次）+ quest（問）| n./v. | 要求；請求 |
-| **inquiry** | in（裡面）+ quir（問）+ y | n. | 詢問；調查 |
-| **acquire** | a（朝向）+ quir（問）+ e | v. | 獲得 |
-| **require** | re（再次）+ quir（問）+ e | v. | 要求；需要 |
-
-## plen 充滿/滿
-- replenish [rɪˈplɛnɪʃ] v. 補充；重新裝滿 [🔊 聽發音](https://www.merriam-webster.com/dictionary/replenish)
-
-  re 再次 plen 充滿 ish 動詞（再次充滿 → 補充）  
-  例句1: Please replenish the water bottles. 請補充水瓶。  
-  例句2: The soil needs to be replenished with nutrients. 土壤需要補充養分。  
-  例句3: She replenished her energy with a short nap. 她小睡一下補充了體力。  
-
-- replenishment [rɪˈplɛnɪʃmənt] n. 補充；補給 [🔊 聽發音](https://www.merriam-webster.com/dictionary/replenishment)
-
-  replenish 補充 ment 名詞  
-  例句1: The replenishment of supplies took two days. 物資的補充花了兩天。  
-  例句2: The army needs regular replenishment. 軍隊需要定期補給。  
-  例句3: The inventory replenishment system is automated. 庫存補充系統是自動化的。  
-
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **replenish** | re（再次）+ plen（充滿）+ ish | v. | 補充；重新裝滿 |
-| **replenishment** | replenish + ment | n. | 補充；補給 |
-| **plenty** | plen（充滿）+ ty | n. | 充足；大量 |
-| **plentiful** | plenty + ful | adj. | 豐富的；充足的 |
-| **complete** | com（一起）+ plete（充滿）| adj./v. | 完整的；完成 |
-| **accomplish** | ac（朝向）+ compl（充滿）+ ish | v. | 完成；實現 |
-| **complement** | com（一起）+ ple（充滿）+ ment | n./v. | 補充；互補 |
-| **supplement** | sup（下面）+ ple（充滿）+ ment | n./v. | 補充；增補 |
-| **implement** | im（裡面）+ ple（充滿）+ ment | n./v. | 工具；實施 |
-| **plenitude** | plen（充滿）+ itude | n. | 大量；充足 |
-
-## ply ple 充滿/摺疊
-- supply [səˈplaɪ] v. 供應；供給；n. 供應量 [🔊 聽發音](https://www.merriam-webster.com/dictionary/supply)
-
-  sup 下面 ply 充滿（從下面往上充滿 → 供應）  
-  例句1: The company supplies office equipment. 這家公司供應辦公室設備。  
-  例句2: The river supplies water to the city. 這條河為城市供水。  
-  例句3: The supply of fresh water is limited. 淡水的供應量有限。  
-
-- supplies [səˈplaɪz] n. 物資；必需品（複數）[🔊 聽發音](https://www.merriam-webster.com/dictionary/supplies)
-
-  supply 供應 s 複數  
-  例句1: The school ordered new art supplies. 學校訂購了新的美術用品。  
-  例句2: Emergency supplies were sent to the disaster area. 緊急物資被送往災區。  
-  例句3: We need to buy office supplies. 我們需要購買辦公用品。  
-
-- supply單複數
-  - supply（單數）	指整體的「供應」行為或「供應量」	
-    - The water supply is limited. 水的供應量有限。
-  - supplies（複數）	指具體的「物資」、「用品」	
-    - Medical supplies are needed. 需要醫療物資。
-
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **supply** | sup（下面）+ ply（充滿）| v./n. | 供應；供應量 |
-| **supplies** | supply + s（複數）| n. | 物資；必需品 |
-| **reply** | re（反覆）+ ply（摺疊）| v./n. | 回覆；答覆 |
-| **apply** | ap（朝向）+ ply（摺疊）| v. | 申請；應用 |
-| **application** | apply + ation | n. | 申請；應用 |
-| **comply** | com（一起）+ ply（摺疊）| v. | 遵守；服從 |
-| **compliance** | comply + ance | n. | 遵守；服從 |
-| **imply** | im（裡面）+ ply（摺疊）| v. | 暗示；意味著 |
-| **implication** | imply + ation | n. | 暗示；含義 |
-
-
-
-| 複合詞 | 字源拆解 | 中文釋義 | 例句 |
-|--------|----------|----------|------|
-| **office supplies** | office（辦公室）+ supplies（用品）| 辦公用品 | We need to order more office supplies. 我們需要訂購更多辦公用品。 |
-| **medical supplies** | medical（醫療的）+ supplies | 醫療物資 | The hospital is running low on medical supplies. 醫院的醫療物資快用完了。 |
-| **school supplies** | school（學校）+ supplies | 學校用品；文具 | Parents bought school supplies for their children. 家長為孩子們購買了學校用品。 |
-| **emergency supplies** | emergency（緊急）+ supplies | 緊急物資 | Emergency supplies were sent to the flood victims. 緊急物資被送給水災災民。 |
-| **food supplies** | food（食物）+ supplies | 食物供應；糧食 | Food supplies are expected to last for three months. 食物供應預計可維持三個月。 |
-| **water supplies** | water（水）+ supplies | 水源供應 | The town's water supplies are contaminated. 小鎮的水源供應受到污染。 |
-| **military supplies** | military（軍事的）+ supplies | 軍用物資 | The army transported military supplies to the base. 軍隊將軍用物資運往基地。 |
-| **household supplies** | household（家庭的）+ supplies | 家庭用品 | She bought household supplies like detergent and paper towels. 她購買了清潔劑和紙巾等家庭用品。 |
-| **cleaning supplies** | cleaning（清潔）+ supplies | 清潔用品 | The janitor requested more cleaning supplies. 管理員要求更多清潔用品。 |
-| **first aid supplies** | first aid（急救）+ supplies | 急救用品 | Every classroom should have first aid supplies. 每間教室都應該有急救用品。 |
-
-
 ## stell 星星
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| star [stɑr] | n. | star（星星，日耳曼語源） | 天上發光體 → 星星；明星 |
+| stellar [ˈstɛlɚ] | adj. | stell（星星）+ ar | 與星星有關的 → 星星的；傑出的 |
+| constellation [ˌkɑnstəˈleʃən] | n. | con（一起）+ stell + ation | 星星聚集在一起 → 星座 |
+| interstellar [ˌɪntɚˈstɛlɚ] | adj. | inter（之間）+ stell + ar | 在星星之間的 → 星際的 |
+| stellate [ˈstɛlɪt] | adj. | stell + ate | 呈星星形狀的 → 星形的；星狀的 |
+| circumstellar [ˌsɝkəmˈstɛlɚ] | adj. | circum（環繞）+ stellar | 環繞星星的 → 環繞恆星的 |
+| extraterrestrial [ˌɛkstrətəˈrɛstriəl] | adj./n. | extra（外部）+ terrestrial（地球） | 在地球之外的 → 地球外的；外星人 |
+| astronomy [əˈstrɑnəmi] | n. | astr（星星）+ onomy（學科） | 研究星星的學科 → 天文學 |
+| astrology [əˈstrɑlədʒi] | n. | astr（星星）+ ology（學說） | 關於星星的學說 → 占星術 |
+| astronaut [ˈæstrəˌnɔt] | n. | astr（星星）+ naut（航行） | 在星際航行的人 → 太空人 |
+
 - star [stɑr] n. 星星；明星 [🔊 聽發音](https://www.merriam-webster.com/dictionary/star)
 
   star 星星（日耳曼語源，與拉丁語 stella 同源）  
@@ -1256,21 +1409,6 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: The spacecraft explored interstellar space. 太空船探索了星際空間。  
   例句3: Interstellar dust clouds are common in space. 星際塵埃雲在太空中很常見。  
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **star** | star（星星，日耳曼語源）| n. | 星星；明星 |
-| **stellar** | stell（星星）+ ar | adj. | 星星的；傑出的 |
-| **constellation** | con（一起）+ stell + ation | n. | 星座 |
-| **interstellar** | inter（之間）+ stell + ar | adj. | 星際的 |
-| **stellate** | stell + ate | adj. | 星形的；星狀的 |
-| **circumstellar** | circum（環繞）+ stellar | adj. | 環繞恆星的 |
-| **extraterrestrial** | extra（外部）+ terrestrial（地球）| adj./n. | 地球外的；外星人 |
-| **astronomy** | astr（星星）+ onomy（學科）| n. | 天文學 |
-| **astrology** | astr（星星）+ ology（學說）| n. | 占星術 |
-| **astronaut** | astr（星星）+ naut（航行）| n. | 太空人 |
-
-
 | 用法 | 中文釋義 | 例句 |
 |------|----------|------|
 | **stellar performance** | 傑出的表現 | She gave a stellar performance in the play. 她在劇中有傑出的表現。 |
@@ -1286,6 +1424,22 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 
 
 ## vert vers 轉
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| versatile [ˈvɝsətəl] | adj. | vers（轉）+ atile | 能夠轉換的 → 多才多藝的；多功能的 |
+| versatility [ˌvɝsəˈtɪləti] | n. | versatile + ity | 能夠轉換的狀態 → 多才多藝；多功能性 |
+| convert [kənˈvɝt] | v. | con（一起）+ vert（轉） | 一起轉 → 轉換；改變信仰 |
+| divert [dəˈvɝt] | v. | di（分開）+ vert（轉） | 轉向分開 → 轉移；使分心 |
+| invert [ɪnˈvɝt] | v. | in（向內）+ vert（轉） | 向內反轉 → 倒轉；顛倒 |
+| revert [rɪˈvɝt] | v. | re（返回）+ vert（轉） | 轉回原狀 → 恢復；回復 |
+| reverse [rɪˈvɝs] | v./adj./n. | re（返回）+ vers（轉）+ e | 轉回反方向 → 逆轉；相反的；反面 |
+| version [ˈvɝʒən] | n. | vers（轉）+ ion | 轉換後的結果 → 版本；說法 |
+| diverse [dəˈvɝs] | adj. | di（分開）+ vers（轉）+ e | 轉向不同方向 → 多樣的；不同的 |
+| diversity [dəˈvɝsəti] | n. | diverse + ity | 多樣的狀態 → 多樣性 |
+| advertise [ˈædvɚˌtaɪz] | v. | ad（向著）+ vert（轉）+ ise | 使注意力轉向 → 廣告；宣傳 |
+| advertisement [ˌædvɚˈtaɪzmənt] | n. | advertise + ment | 宣傳的內容 → 廣告 |
+
 - versatile [ˈvɝsətəl] adj. 多才多藝的；多功能的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/versatile)
 
   vers 轉 atile 形容詞（能夠轉換到不同角色 → 多才多藝的）  
@@ -1300,23 +1454,6 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: The tool's versatility makes it very useful. 這個工具的多功能性讓它非常實用。  
   例句3: He is known for his versatility in sports. 他以在運動方面的多才多藝聞名。 
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **versatile** | vers（轉）+ atile | adj. | 多才多藝的；多功能的 |
-| **versatility** | versatile + ity | n. | 多才多藝；多功能性 |
-| **convert** | con（一起）+ vert（轉）| v. | 轉換；改變信仰 |
-| **divert** | di（分開）+ vert（轉）| v. | 轉移；使分心 |
-| **invert** | in（向內）+ vert（轉）| v. | 倒轉；顛倒 |
-| **revert** | re（返回）+ vert（轉）| v. | 恢復；回復 |
-| **reverse** | re（返回）+ vers（轉）+ e | v./adj./n. | 逆轉；相反的；反面 |
-| **version** | vers（轉）+ ion | n. | 版本；說法 |
-| **diverse** | di（分開）+ vers（轉）+ e | adj. | 多樣的；不同的 |
-| **diversity** | diverse + ity | n. | 多樣性 |
-| **advertise** | ad（向著）+ vert（轉）+ ise | v. | 廣告；宣傳 |
-| **advertisement** | advertise + ment | n. | 廣告 | 
-
-
 | 用法 | 中文釋義 | 例句 |
 |------|----------|------|
 | **versatile actor** | 多才多藝的演員 | He is a versatile actor. 他是個多才多藝的演員。 |
@@ -1325,6 +1462,19 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **versatile design** | 多用途設計 | The room has a versatile design. 這個房間有多用途設計。 |
 
 ## mensur 測量
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| measure [ˈmɛʒɚ] | n./v. | measur（測量）+ e | 測量的行為或結果 → 測量；措施；尺寸 |
+| measurement [ˈmɛʒɚmənt] | n. | measure + ment | 測量的結果 → 測量；尺寸 |
+| commensurate [kəˈmɛnʃərɪt] | adj./v. | com（一起）+ mensur + ate | 一起測量 → 相稱的；使相稱 |
+| incommensurate [ˌɪnkəˈmɛnʃərɪt] | adj. | in（否定）+ commensurate | 無法一起測量的 → 不相稱的 |
+| dimension [dəˈmɛnʃən] | n. | di（分開）+ mens（測量）+ ion | 分開測量的範圍 → 尺寸；維度 |
+| dimensional [dəˈmɛnʃənəl] | adj. | dimension + al | 與測量範圍有關的 → 維度的；尺寸的 |
+| immense [ɪˈmɛns] | adj. | im（否定）+ mense（測量） | 無法測量的 → 巨大的；無邊的 |
+| mensurable [ˈmɛnʃərəbəl] | adj. | mensur（測量）+ able | 能夠被測量的 → 可測量的 |
+| immeasurable [ɪˈmɛʒərəbəl] | adj. | im（否定）+ measurable | 無法被測量的 → 不可測量的；無限的 |
+
 - commensurate [kəˈmɛnsərɪt] adj. 相稱的；相當的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/commensurate)
 
   com 一起 mensur 測量 ate 形容詞（一起測量 → 相稱的）  
@@ -1360,21 +1510,6 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: The measurements of the room are 10 by 12 feet. 房間的尺寸是十英尺乘十二英尺。  
   例句3: She took measurements for the curtains. 她量了窗簾的尺寸。  
 
-
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **measure** | measur（測量）+ e | n./v. | 測量；措施；尺寸 |
-| **measurement** | measure + ment | n. | 測量；尺寸 |
-| **commensurate** | com（一起）+ mensur + ate | adj./v. | 相稱的；使相稱 |
-| **incommensurate** | in（否定）+ commensurate | adj. | 不相稱的 |
-| **dimension** | di（分開）+ mens（測量）+ ion | n. | 尺寸；維度 |
-| **dimensional** | dimension + al | adj. | 維度的；尺寸的 |
-| **immense** | im（否定）+ mense（測量）| adj. | 巨大的；無邊的 |
-| **mensurable** | mensur（測量）+ able | adj. | 可測量的 |
-| **immeasurable** | im（否定）+ measurable | adj. | 不可測量的；無限的 |
-
-
 | 搭配 | 中文釋義 | 例句 |
 |------|----------|------|
 | **commensurate with** | 與...相稱 | The salary is commensurate with experience. 薪資與經驗相稱。 |
@@ -1388,8 +1523,20 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **directly commensurate** | 直接相稱的 | The pay is directly commensurate with performance. 薪資與表現直接相稱。 |
 | **roughly commensurate** | 大致相稱的 | The budget is roughly commensurate with the needs. 預算大致與需求相稱。 |
 
-
 ## acr acer 尖銳、敏銳
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| eager [ˈigɚ] | adj. | eag（尖銳→強烈） | 尖銳感轉為內心強烈 → 渴望的；熱切的 |
+| eagerness [ˈigɚnɪs] | n. | eager + ness | 渴望的狀態 → 渴望；熱切 |
+| eagerly [ˈigɚli] | adv. | eager + ly | 以渴望的方式 → 渴望地；熱切地 |
+| acute [əˈkjut] | adj. | acu（尖銳）+ te | 像針尖般銳利 → 敏銳的；急性的；嚴重的 |
+| acupuncture [ˈækjəˌpʌŋktʃɚ] | n. | acu（針）+ puncture（刺） | 用針刺入 → 針灸 |
+| acrid [ˈækrɪd] | adj. | acr（尖銳）+ id | 尖銳刺鼻的 → 辛辣的；刺鼻的 |
+| acrimony [ˈækrəˌmoni] | n. | acr（尖銳）+ imony | 尖銳的言詞 → 尖酸；刻薄 |
+| acid [ˈæsɪd] | n./adj. | ac（尖銳）+ id | 尖銳腐蝕性的 → 酸；酸的；尖銳的 |
+| exacerbate [ɪgˈzæsɚˌbet] | v. | ex（向外）+ acerb（尖銳）+ ate | 使尖銳化向外 → 使惡化；激化 |
+
 - eager [ˈigɚ] adj. 渴望的；熱切的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/eager)
 
   eag 尖銳（→ 心情強烈 → 渴望的）  
@@ -1411,20 +1558,6 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: The children eagerly waited for the show to begin. 孩子們熱切地等待表演開始。  
   例句3: He eagerly shared his ideas. 他熱切地分享了他的想法。  
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **eager** | eag（尖銳→強烈）| adj. | 渴望的；熱切的 |
-| **eagerness** | eager + ness | n. | 渴望；熱切 |
-| **eagerly** | eager + ly | adv. | 渴望地；熱切地 |
-| **acute** | acu（尖銳）+ te | adj. | 敏銳的；急性的；嚴重的 |
-| **acupuncture** | acu（針）+ puncture（刺）| n. | 針灸 |
-| **acrid** | acr（尖銳）+ id | adj. | 辛辣的；刺鼻的 |
-| **acrimony** | acr（尖銳）+ imony | n. | 尖酸；刻薄 |
-| **acid** | ac（尖銳）+ id | n./adj. | 酸；酸的；尖銳的 |
-| **exacerbate** | ex（向外）+ acerb（尖銳）+ ate | v. | 使惡化；激化 |
-
-
 | 搭配 | 中文釋義 | 例句 |
 |------|----------|------|
 | **eager to + V** | 渴望做... | She is eager to start the new project. 她渴望開始新專案。 |
@@ -1434,6 +1567,21 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **eager audience** | 熱切的聽眾 | She spoke to an eager audience. 她對著熱切的聽眾說話。 |
 
 ## mind = 思想、注意
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| mind [maɪnd] | n./v. | mind（思想） | 思想的能力 → 思想；介意；注意 |
+| mindful [ˈmaɪndfəl] | adj. | mind + ful（充滿） | 充滿思想的 → 注意的；留心的 |
+| mindfulness [ˈmaɪndfəlnɪs] | n. | mindful + ness | 留心的狀態 → 覺察；正念 |
+| mindless [ˈmaɪndlɪs] | adj. | mind + less（沒有） | 沒有思想的 → 不用腦的；機械性的 |
+| remind [rɪˈmaɪnd] | v. | re（再次）+ mind（注意） | 再次使注意 → 提醒；使想起 |
+| reminder [rɪˈmaɪndɚ] | n. | remind + er（工具） | 提醒的工具 → 提醒物；備忘錄 |
+| broad-minded [ˈbrɔdˈmaɪndɪd] | adj. | broad（寬）+ minded | 思想寬廣的 → 心胸開闊的 |
+| narrow-minded [ˈnæroˈmaɪndɪd] | adj. | narrow（狹窄）+ minded | 思想狹窄的 → 心胸狹窄的 |
+| open-minded [ˈopənˈmaɪndɪd] | adj. | open（開放）+ minded | 思想開放的 → 思想開放的 |
+| absent-minded [ˌæbsəntˈmaɪndɪd] | adj. | absent（缺席）+ minded | 思想缺席的 → 心不在焉的 |
+| like-minded [ˈlaɪkˈmaɪndɪd] | adj. | like（相同）+ minded | 思想相同的 → 志趣相投的 |
+
 - mind [maɪnd] n. 思想；v. 介意；注意 [🔊 聽發音](https://www.merriam-webster.com/dictionary/mind)
 
   mind 思想  
@@ -1462,23 +1610,6 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: The job is boring and mindless. 這份工作無聊又不用動腦。  
   例句3: He made a mindless comment. 他說了句不經大腦的話。  
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **mind** | mind（思想）| n./v. | 思想；介意；注意 |
-| **mindful** | mind + ful（充滿）| adj. | 注意的；留心的 |
-| **mindfulness** | mindful + ness | n. | 覺察；正念 |
-| **mindless** | mind + less（沒有）| adj. | 不用腦的；機械性的 |
-| **remind** | re（再次）+ mind（注意）| v. | 提醒；使想起 |
-| **reminder** | remind + er（工具）| n. | 提醒物；備忘錄 |
-| **broad-minded** | broad（寬）+ minded | adj. | 心胸開闊的 |
-| **narrow-minded** | narrow（狹窄）+ minded | adj. | 心胸狹窄的 |
-| **open-minded** | open（開放）+ minded | adj. | 思想開放的 |
-| **absent-minded** | absent（缺席）+ minded | adj. | 心不在焉的 |
-| **like-minded** | like（相同）+ minded | adj. | 志趣相投的 |
-
-
-
 | 搭配 | 中文釋義 | 例句 |
 |------|----------|------|
 | **mindful of** | 注意...；留心... | Be mindful of your surroundings. 注意你周圍的環境。 |
@@ -1488,6 +1619,19 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **stay mindful** | 保持覺察 | Try to stay mindful throughout the day. 試著在一天中保持覺察。 |
 
 ## min = 突出、重要
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| preeminent [priˈɛmənənt] | adj. | pre（前面）+ e（向外）+ min + ent | 站在最前面向外突出 → 卓越的；傑出的 |
+| preeminence [priˈɛmənəns] | n. | preeminent + ence | 卓越的狀態 → 卓越；傑出 |
+| eminent [ˈɛmənənt] | adj. | e（向外）+ min + ent | 向外突出的 → 著名的；卓越的 |
+| eminence [ˈɛmənəns] | n. | eminent + ence | 突出的狀態 → 著名；卓越；高處 |
+| prominent [ˈprɑmənənt] | adj. | pro（向前）+ min + ent | 向前突出的 → 突出的；顯著的 |
+| prominence [ˈprɑmənəns] | n. | prominent + ence | 突出的狀態 → 突出；顯著 |
+| imminent [ˈɪmənənt] | adj. | im（上面）+ min + ent | 懸在頭上突出的 → 即將發生的；迫近的 |
+| imminence [ˈɪmənəns] | n. | imminent + ence | 迫近的狀態 → 迫近；急迫 |
+| supereminent [ˌsupɚˈɛmənənt] | adj. | super（超級）+ eminent | 超級突出的 → 超群的；卓越的 |
+
 - preeminent [priˈɛmənənt] adj. 卓越的；傑出的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/preeminent)
 
   pre 前面 em 向外 min 突出 ent 形容詞（在前面向外突出 → 卓越的）  
@@ -1523,21 +1667,21 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: She is a prominent figure in politics. 她是政治界的重要人物。  
   例句3: His nose is very prominent. 他的鼻子很突出。  
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **preeminent** | pre（前面）+ e（向外）+ min + ent | adj. | 卓越的；傑出的 |
-| **preeminence** | preeminent + ence | n. | 卓越；傑出 |
-| **eminent** | e（向外）+ min + ent | adj. | 著名的；卓越的 |
-| **eminence** | eminent + ence | n. | 著名；卓越；高處 |
-| **prominent** | pro（向前）+ min + ent | adj. | 突出的；顯著的 |
-| **prominence** | prominent + ence | n. | 突出；顯著 |
-| **imminent** | im（上面）+ min + ent | adj. | 即將發生的；迫近的 |
-| **imminence** | imminent + ence | n. | 迫近；急迫 |
-| **supereminent** | super（超級）+ eminent | adj. | 超群的；卓越的 |
-
-
 ## limin = 門檻、邊界
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| preliminary [prɪˈlɪməˌnɛri] | adj./n. | pre（前面）+ limin（門檻）+ ary | 在進門檻之前 → 初步的；初步行動 |
+| preliminarily [prɪˈlɪməˌnɛrəli] | adv. | preliminary + ly | 以初步的方式 → 初步地 |
+| limit [ˈlɪmɪt] | n./v. | limit（門檻→界線） | 門檻即界線 → 界線；限制 |
+| limitation [ˌlɪməˈteʃən] | n. | limit + ation | 限制的行為或結果 → 限制；局限性 |
+| limited [ˈlɪmɪtɪd] | adj. | limit + ed | 被畫下界線的 → 有限的 |
+| unlimited [ʌnˈlɪmɪtɪd] | adj. | un（否定）+ limited | 沒有界線的 → 無限的 |
+| subliminal [sʌbˈlɪmənəl] | adj. | sub（下面）+ limin（門檻）+ al | 在門檻之下 → 潛意識的 |
+| eliminate [ɪˈlɪməˌnet] | v. | e（向外）+ limin（門檻）+ ate | 丟出門檻外 → 消除；淘汰 |
+| elimination [ɪˌlɪməˈneʃən] | n. | eliminate + ion | 丟出門外的行為 → 消除；淘汰 |
+| liminal [ˈlɪmənəl] | adj. | limin（門檻）+ al | 位於門檻的 → 門檻的；中間狀態的 |
+
 - preliminary [prɪˈlɪməˌnɛri] adj. 初步的；預備的；n. 初步行動 [🔊 聽發音](https://www.merriam-webster.com/dictionary/preliminary)
 
   pre 前面 limin 門檻 ary 形容詞（在門檻之前的 → 初步的）  
@@ -1580,22 +1724,6 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: She has unlimited potential. 她有無限的潛力。  
   例句3: The plan includes unlimited data usage. 這個方案包含無限數據使用量。  
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **preliminary** | pre（前面）+ limin（門檻）+ ary | adj./n. | 初步的；初步行動 |
-| **preliminarily** | preliminary + ly | adv. | 初步地 |
-| **limit** | limit（門檻→界線）| n./v. | 界線；限制 |
-| **limitation** | limit + ation | n. | 限制；局限性 |
-| **limited** | limit + ed | adj. | 有限的 |
-| **unlimited** | un（否定）+ limited | adj. | 無限的 |
-| **subliminal** | sub（下面）+ limin（門檻）+ al | adj. | 潛意識的（在門檻之下）|
-| **eliminate** | e（向外）+ limin（門檻）+ ate | v. | 消除；淘汰（把東西丟出門檻外）|
-| **elimination** | eliminate + ion | n. | 消除；淘汰 |
-| **liminal** | limin（門檻）+ al | adj. | 門檻的；中間狀態的 |
-
-
-
 | 搭配 | 中文釋義 | 例句 |
 |------|----------|------|
 | **preliminary results** | 初步結果 | The preliminary results are promising. 初步結果很有希望。 |
@@ -1606,6 +1734,21 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 | **preliminary approval** | 初步批准 | The project received preliminary approval. 該項目獲得了初步批准。 |
 
 ## prob = 測試、證明
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| probation [proˈbeʃən] | n. | prob（測試）+ ation | 測試的階段 → 試用期；緩刑 |
+| probationer [proˈbeʃənɚ] | n. | probation + er（指人） | 處於測試期的人 → 試用人員；受刑人 |
+| probable [ˈprɑbəbəl] | adj. | prob（測試）+ able（能夠） | 能夠通過測試的 → 很可能發生的 |
+| probably [ˈprɑbəbli] | adv. | probable + ly | 以很可能的方式 → 很可能 |
+| probability [ˌprɑbəˈbɪləti] | n. | probable + ity | 可能發生的狀態 → 可能性 |
+| prove [pruv] | v. | prov（測試）+ e | 經過測試而證實 → 證明 |
+| proof [pruf] | n. | proof（測試） | 測試的結果 → 證據；證明 |
+| probe [prob] | v./n. | prob（測試）+ e | 深入測試 → 探查；探測器 |
+| approve [əˈpruv] | v. | ap（朝向）+ prov（測試）+ e | 測試後給予肯定 → 批准；認可 |
+| disapprove [ˌdɪsəˈpruv] | v. | dis（否定）+ approve | 不給予肯定 → 不贊成；反對 |
+| reprove [rɪˈpruv] | v. | re（反覆）+ prov（測試）+ e | 反覆測試後指出錯誤 → 責備；訓斥 |
+
 - probation [proˈbeʃən] n. 試用期；緩刑 [🔊 聽發音](https://www.merriam-webster.com/dictionary/probation)
 
   prob 測試 ation 名詞  
@@ -1655,21 +1798,6 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: The doctor probed the wound. 醫生探查了傷口。  
   例句3: The space probe sent back images. 太空探測器傳回了影像。  
 
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **probation** | prob（測試）+ ation | n. | 試用期；緩刑 |
-| **probationer** | probation + er（指人）| n. | 試用人員；受刑人 |
-| **probable** | prob（測試）+ able（能夠）| adj. | 很可能發生的 |
-| **probably** | probable + ly | adv. | 很可能 |
-| **probability** | probable + ity | n. | 可能性 |
-| **prove** | prov（測試）+ e | v. | 證明 |
-| **proof** | proof（測試）| n. | 證據；證明 |
-| **probe** | prob（測試）+ e | v./n. | 探查；探測器 |
-| **approve** | ap（朝向）+ prov（測試）+ e | v. | 批准；認可 |
-| **disapprove** | dis（否定）+ approve | v. | 不贊成；反對 |
-| **reprove** | re（反覆）+ prov（測試）+ e | v. | 責備；訓斥 |
-
 ### on probation 用法
 
 | 片語 | 中文釋義 | 例句 |
@@ -1685,6 +1813,15 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 
 
 ## stern = 嚴厲的、嚴格的
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| stern [stɝn] | adj./n. | stern（嚴厲的） | 嚴肅剛硬的態度 → 嚴厲的；嚴格的；船尾 |
+| sternly [ˈstɝnli] | adv. | stern + ly | 以嚴厲的方式 → 嚴厲地；嚴格地 |
+| sternness [ˈstɝnnɪs] | n. | stern + ness | 嚴厲的狀態 → 嚴厲；嚴格 |
+| stern-faced [ˈstɝnˌfest] | adj. | stern + faced | 面容帶著嚴厲的 → 面容嚴肅的 |
+| stern-looking [ˈstɝnˌlʊkɪŋ] | adj. | stern + looking | 看起來嚴厲的 → 看起來嚴厲的 |
+
 - stern [stɝn] adj. 嚴厲的；嚴格的；n. 船尾 [🔊 聽發音](https://www.merriam-webster.com/dictionary/stern)
 
   stern 嚴厲的  
@@ -1705,17 +1842,6 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句1: The sternness in his voice made her nervous. 他聲音中的嚴厲讓她緊張。  
   例句2: Her sternness as a teacher is well known. 她作為老師的嚴格是眾所周知的。  
   例句3: The sternness of the punishment surprised everyone. 懲罰的嚴厲讓所有人驚訝。  
-
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **stern** | stern（嚴厲的）| adj./n. | 嚴厲的；嚴格的；船尾 |
-| **sternly** | stern + ly | adv. | 嚴厲地；嚴格地 |
-| **sternness** | stern + ness | n. | 嚴厲；嚴格 |
-| **stern-faced** | stern + faced | adj. | 面容嚴肅的 |
-| **stern-looking** | stern + looking | adj. | 看起來嚴厲的 |
-
-
 
 | 搭配 | 中文釋義 | 例句 |
 |------|----------|------|
