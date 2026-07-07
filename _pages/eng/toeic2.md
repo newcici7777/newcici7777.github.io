@@ -4,6 +4,24 @@ date: 2026-07-02
 keywords: English, toeic
 ---
 ## tain / ten / tent（保持、抓住）
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| contain [kənˈten] | con（一起）+ tain（保持） | v. | 把東西保持在一起 → 包含、容納 |
+| maintain [menˈten] | main（手）+ tain（保持） | v. | 用手牢牢保持住 → 維持、保養、主張 |
+| obtain [əbˈten] | ob（向前）+ tain（保持） | v. | 向前伸手去保持住 → 獲得、取得 |
+| sustain [səˈsten] | sus（下方）+ tain（保持） | v. | 從下方保持住不墜 → 支撐、維持、承受 |
+| retain [rɪˈten] | re（回）+ tain（保持） | v. | 保持回自己手中 → 保留、記住 |
+| detain [dɪˈten] | de（分離）+ tain（保持） | v. | 把人分開留下來 → 拘留、耽誤 |
+| content [ˈkɑn.tɛnt] | con（一起）+ tent（保持的結果） | n. | 被保持在一起的東西 → 內容、目錄 |
+| abstain [əbˈsten] | abs（遠離）+ tain（保持） | v. | 保持遠離 → 戒除、棄權 |
+| pertain [pɚˈten] | per（穿透）+ tain（保持） | v. | 保持貫穿其中 → 與…相關、適用於 |
+| continue [kənˈtɪn.ju] | con（一起）+ tin（保持）+ ue | v. | 一直保持在一起不中斷 → 繼續 |
+| continuous [kənˈtɪn.ju.əs] | con（一起）+ tinu（保持）+ ous | adj. | 一直保持不斷的 → 連續不斷的 |
+| tentative [ˈtɛn.tə.tɪv] | tent（保持）+ ative（形容詞） | adj. | 保持不確定的試探狀態 → 暫時的、試探性的 |
+| retention [rɪˈtɛn.ʃən] | re（回）+ tent（抓住）+ ion | n. | 抓回來的狀態 → 保留、記憶力 |
+| sustenance [ˈsʌs.tə.nəns] | sus（下）+ ten（保持）+ ance | n. | 從下方撐住所需的東西 → 營養品、維持生計 |
+
 - **con**tain [kənˈten] v. 包含；容納 [🔊 聽發音](https://www.merriam-webster.com/dictionary/contain)
 
   con 一起 tain~~e~~ 保持（一起保持住 → 包含）  
@@ -102,25 +120,26 @@ keywords: English, toeic
   例句2: Water is essential for sustenance of life. 水是維持生命所必需的。  
   例句3: They had no sustenance for days. 他們好幾天沒有食物了。 
 
-
-| 單字 | 字源拆解 | 意義演變 |
-|------|----------|----------|
-| contain [kənˈten] | con（一起）+ tain（保持） | 把東西保持在一起 → 包含、容納 |
-| maintain [menˈten] | main（手）+ tain（保持） | 用手牢牢保持住 → 維持、保養、主張 |
-| obtain [əbˈten] | ob（向前）+ tain（保持） | 向前伸手去保持住 → 獲得、取得 |
-| sustain [səˈsten] | sus（下方）+ tain（保持） | 從下方保持住不墜 → 支撐、維持、承受 |
-| retain [rɪˈten] | re（回）+ tain（保持） | 保持回自己手中 → 保留、記住 |
-| detain [dɪˈten] | de（分離）+ tain（保持） | 把人分開留下來 → 拘留、耽誤 |
-| content [ˈkɑn.tɛnt] | con（一起）+ tent（保持的結果） | 被保持在一起的東西 → 內容、目錄 |
-| abstain [əbˈsten] | abs（遠離）+ tain（保持） | 保持遠離 → 戒除、棄權 |
-| pertain [pɚˈten] | per（穿透）+ tain（保持） | 保持貫穿其中 → 與…相關、適用於 |
-| continue [kənˈtɪn.ju] | con（一起）+ tin（保持）+ ue | 一直保持在一起不中斷 → 繼續 |
-| continuous [kənˈtɪn.ju.əs] | con（一起）+ tinu（保持）+ ous | 一直保持不斷的 → 連續不斷的 |
-| tentative [ˈtɛn.tə.tɪv] | tent（保持）+ ative（形容詞） | 保持不確定的試探狀態 → 暫時的、試探性的 |
-| retention [rɪˈtɛn.ʃən] | re（回）+ tent（抓住）+ ion | 抓回來的狀態 → 保留、記憶力 |
-| sustenance [ˈsʌs.tə.nəns] | sus（下）+ ten（保持）+ ance | 從下方撐住所需的東西 → 營養品、維持生計 |
-
 ## pel 驅趕
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| repel [rɪˈpɛl] | re（回）+ pel（驅趕） | v. | 驅趕回去 → 擊退、排斥 |
+| compel [kəmˈpɛl] | com（一起）+ pel（驅趕） | v. | 驅趕到一起 → 強迫、迫使 |
+| impel [ɪmˈpɛl] | im（入內）+ pel（驅趕） | v. | 驅趕向前進入 → 推動、驅使 |
+| dispel [dɪˈspɛl] | dis（散開）+ pel（驅趕） | v. | 驅趕使散開 → 驅散、消除 |
+| propel [prəˈpɛl] | pro（向前）+ pel（驅趕） | v. | 驅趕向前 → 推進、驅動 |
+| expel [ɪkˈspɛl] | ex（向外）+ pel（驅趕） | v. | 驅趕出去 → 開除、驅逐 |
+| appeal [əˈpil] | ap（朝向）+ peal（pel 變體） | n./v. | 驅使別人朝向自己 → 吸引力、呼籲、上訴 |
+
+pel 這個字根就像「驅趕羊群的牧羊人」：
+- repel：把敵人「驅趕回去」（擊退）
+- compel：把羊「驅趕到一起」（強迫）
+- impel：把羊「驅趕向前進入」（推動）
+- dispel：把羊群「驅趕散開」（驅散）
+- propel：把羊「驅趕向前走」（推進）
+- expel：把羊「驅趕出去」（開除）
+- appeal：吸引別人「朝向」你（呼籲、吸引力）
 
 - **re**pel [rɪˈpɛl] v. 擊退；排斥 [🔊 聽發音](https://www.merriam-webster.com/dictionary/repel)
 
@@ -171,27 +190,37 @@ keywords: English, toeic
   例句2: The company appealed to customers to buy local products. 該公司呼籲顧客購買本地產品。  
   例句3: The court dismissed the appeal. 法院駁回了上訴。  
 
-| 單字 | 字源拆解 | 意義演變 |
-|------|----------|----------|
-| repel [rɪˈpɛl] | re（回）+ pel（驅趕） | 驅趕回去 → 擊退、排斥 |
-| compel [kəmˈpɛl] | com（一起）+ pel（驅趕） | 驅趕到一起 → 強迫、迫使 |
-| impel [ɪmˈpɛl] | im（入內）+ pel（驅趕） | 驅趕向前進入 → 推動、驅使 |
-| dispel [dɪˈspɛl] | dis（散開）+ pel（驅趕） | 驅趕使散開 → 驅散、消除 |
-| propel [prəˈpɛl] | pro（向前）+ pel（驅趕） | 驅趕向前 → 推進、驅動 |
-| expel [ɪkˈspɛl] | ex（向外）+ pel（驅趕） | 驅趕出去 → 開除、驅逐 |
-| appeal [əˈpil] | ap（朝向）+ peal（pel 變體） | 驅使別人朝向自己 → 吸引力、呼籲 |
-
-pel 這個字根就像「驅趕羊群的牧羊人」：
-- repel：把敵人「驅趕回去」（擊退）
-- compel：把羊「驅趕到一起」（強迫）
-- impel：把羊「驅趕向前進入」（推動）
-- dispel：把羊群「驅趕散開」（驅散）
-- propel：把羊「驅趕向前走」（推進）
-- expel：把羊「驅趕出去」（開除）
-- appeal：吸引別人「朝向」你（呼籲、吸引力）
-
-
 ## pet（追求、尋求）
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| compete [kəmˈpit] | com（一起）+ pete（pet 變體，追求） | v. | 一起追求同一個目標 → 競爭 |
+| competition [ˌkɑmpəˈtɪʃən] | com（一起）+ pet（追求）+ ition（名詞） | n. | 一起追求的過程 → 競爭、競賽 |
+| competitive [kəmˈpɛtətɪv] | com（一起）+ pet（追求）+ itive（形容詞） | adj. | 具有競爭特性的 → 有競爭力的、好勝的 |
+| competitor [kəmˈpɛtətɚ] | com（一起）+ pet（追求）+ itor（人） | n. | 一起追求的人 → 競爭對手 |
+| competent [ˈkɑmpətənt] | com（一起）+ pet（追求）+ ent（形容詞） | adj. | 能夠一起追求的 → 有能力、勝任的 |
+| appetite [ˈæpəˌtaɪt] | ap（朝向）+ pet（追求）+ ite（名詞） | n. | 朝向目標追求的欲望 → 食慾、渴望 |
+| petition [pəˈtɪʃən] | pet（追求）+ ition（名詞） | n./v. | 正式地追求請求 → 請願書、請求 |
+| impetus [ˈɪmpətəs] | im（朝向、入內）+ pet（追求）+ us（名詞） | n. | 向內追求的動力 → 推動力、刺激 |
+| perpetual [pɚˈpɛtʃuəl] | per（徹底）+ pet（追求）+ ual（形容詞） | adj. | 永遠持續追求的 → 永久的、不斷的 |
+| repeat [rɪˈpit] | re（再次）+ peat（pet 變體，追求） | v./n. | 再次追求 → 重複、重做 |
+
+字根聯想:
+- compete：和別人「一起追求」同一個目標 → 競爭
+- appetite：「朝向」目標「追求」的欲望 → 食慾、渴望
+- petition：正式地去「追求」請求 → 請願
+- impetus：「向內追求的」動力 → 推動力
+- perpetual：永遠持續「追求」而不停止 → 永久的
+- repeat：「再次追求」→ 重複
+
+| 情境 | 相關單字 |
+|------|----------|
+| 商業競爭 | compete, competition, competitive, competitor |
+| 職場能力 | competent |
+| 市場策略 | appetite, impetus |
+| 法律／正式文件 | petition |
+| 日常／合約 | perpetual, repeat |
+
 - **com**pete [kəmˈpit] v. 競爭；比賽 [🔊 聽發音](https://www.merriam-webster.com/dictionary/compete)
 
   com 一起 pete（pet 變體）追求 → 一起追求同一個目標 → 競爭 [citation:4]  
@@ -250,7 +279,7 @@ pel 這個字根就像「驅趕羊群的牧羊人」：
 
 - **per**petual [pɚˈpɛtʃuəl] adj. 永久的；不斷的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/perpetual)
 
-  per（徹底、穿透）+ pet 追求 ual 形容詞 → 永遠持續追求的 → 永久的、不斷的 [citation:14]  
+  per（完全、從頭到尾、徹底、貫穿）+ pet 追求 ual 形容詞 → 永遠持續追求的 → 永久的、不斷的 [citation:14]  
   例句1: The machine is in perpetual need of maintenance. 這台機器需要持續不斷的維護。  
   例句2: She lives in perpetual fear of losing her job. 她活在不斷害怕失業的恐懼中。  
   例句3: The company signed a perpetual contract. 該公司簽了一份永久合約。  
@@ -262,36 +291,14 @@ pel 這個字根就像「驅趕羊群的牧羊人」：
   例句2: The test will be repeated next week. 下週將進行重測。  
   例句3: She repeated her demand for a raise. 她重複要求加薪。  
 
-| 單字 | 字源拆解 | 意義演變 |
-|------|----------|----------|
-| compete [kəmˈpit] | com（一起）+ pete（pet 變體，追求） | 一起追求同一個目標 → 競爭 |
-| competition [ˌkɑmpəˈtɪʃən] | com（一起）+ pet（追求）+ ition（名詞） | 一起追求的過程 → 競爭、競賽 |
-| competitive [kəmˈpɛtətɪv] | com（一起）+ pet（追求）+ itive（形容詞） | 具有競爭特性的 → 有競爭力的、好勝的 |
-| competitor [kəmˈpɛtətɚ] | com（一起）+ pet（追求）+ itor（人） | 一起追求的人 → 競爭對手 |
-| competent [ˈkɑmpətənt] | com（一起）+ pet（追求）+ ent（形容詞） | 能夠一起追求的 → 有能力、勝任的 |
-| appetite [ˈæpəˌtaɪt] | ap（朝向）+ pet（追求）+ ite（名詞） | 朝向目標追求的欲望 → 食慾、渴望 |
-| petition [pəˈtɪʃən] | pet（追求）+ ition（名詞） | 正式地追求請求 → 請願書、請求 |
-| impetus [ˈɪmpətəs] | im（朝向、入內）+ pet（追求）+ us（名詞） | 向內追求的動力 → 推動力、刺激 |
-| perpetual [pɚˈpɛtʃuəl] | per（徹底）+ pet（追求）+ ual（形容詞） | 永遠持續追求的 → 永久的、不斷的 |
-| repeat [rɪˈpit] | re（再次）+ peat（pet 變體，追求） | 再次追求 → 重複、重做 |
+## sul / sel / cil 召集
+### sul 諮詢
 
-字根聯想:
-- compete：和別人「一起追求」同一個目標 → 競爭
-- appetite：「朝向」目標「追求」的欲望 → 食慾、渴望
-- petition：正式地去「追求」請求 → 請願
-- impetus：「向內追求的」動力 → 推動力
-- perpetual：永遠持續「追求」而不停止 → 永久的
-- repeat：「再次追求」→ 重複
-
-| 情境 | 相關單字 |
-|------|----------|
-| 商業競爭 | compete, competition, competitive, competitor |
-| 職場能力 | competent |
-| 市場策略 | appetite, impetus |
-| 法律／正式文件 | petition |
-| 日常／合約 | perpetual, repeat |
-
-##
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| consult [kənˈsʌlt] | con（一起）+ sul（召集）+ t | v. | 召集在一起討論 → 諮詢、查閱、商議 |
+| consultant [kənˈsʌltənt] | con（一起）+ sul（召集）+ tant（人） | n. | 被召集來提供意見的人 → 顧問、諮詢師 |
+| consultation [ˌkɑnsəlˈteʃən] | con（一起）+ sul（召集）+ tation（名詞） | n. | 召集討論的過程或會議 → 諮詢、協商 |
 
 - **con**sult [kənˈsʌlt] v. 諮詢；查閱；商議 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consult)
 
@@ -314,6 +321,111 @@ pel 這個字根就像「驅趕羊群的牧羊人」：
   例句2: We need a consultation with the legal team. 我們需要與法律團隊進行協商。  
   例句3: The doctor held a consultation with several specialists. 醫生與幾位專家進行了會診。  
 
+### sel 諮詢
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| counsel [ˈkaʊnsəl] | coun（一起）+ sel（sul 變體，召集） | n./v. | 召集討論 → 建議、勸告；法律顧問 |
+| counselor [ˈkaʊnsəlɚ] | coun（一起）+ sel（召集）+ or（人） | n. | 被召集來提供建議的人 → 顧問、輔導員、律師 |
+| counseling [ˈkaʊnsəlɪŋ] | coun（一起）+ sel（召集）+ ing（名詞） | n. | 召集討論的過程 → 諮詢、輔導 |
+
+- **coun**sel [ˈkaʊnsəl] n./v. 建議；勸告；法律顧問；律師 [🔊 聽發音](https://www.merriam-webster.com/dictionary/counsel)
+
+  coun 一起 sel（sul 變體）召集 → 召集在一起討論 → 商議、建議  
+  例句1: You should seek counsel from a financial advisor. 你應該尋求財務顧問的建議。  
+  例句2: The defendant was represented by counsel. 被告由律師代表。  
+  例句3: She counseled him to wait before making a decision. 她建議他等一等再做決定。  
+
+- **coun**selor [ˈkaʊnsəlɚ] n. 顧問；輔導員；律師 [🔊 聽發音](https://www.merriam-webster.com/dictionary/counselor)
+
+  coun 一起 sel 召集 or 人 → 被召集來提供建議的人 → 顧問、輔導員  
+  例句1: The school counselor helps students with career planning. 學校輔導員幫助學生進行職涯規劃。  
+  例句2: A marriage counselor helped them resolve their issues. 一位婚姻諮商師幫助他們解決了問題。  
+  例句3: He works as a camp counselor during the summer. 他暑假在營隊擔任輔導員。  
+
+- **coun**seling [ˈkaʊnsəlɪŋ] n. 諮詢；輔導 [🔊 聽發音](https://www.merriam-webster.com/dictionary/counseling)
+
+  coun 一起 sel 召集 ing 名詞 → 召集在一起討論的過程 → 諮詢、輔導  
+  例句1: The company offers free counseling to its employees. 該公司提供員工免費諮詢服務。  
+  例句2: She sought counseling after the traumatic event. 她在創傷事件後尋求了心理輔導。  
+  例句3: Career counseling can help you find the right job. 職涯輔導可以幫助你找到合適的工作。  
+
+### counsel vs consult
+
+| 面向 | counsel | consult |
+|------|---------|---------|
+| 核心意義 | 給予建議（提供方） | 尋求建議（接收方） |
+| 方向性 | 主動給予專業指導 | 主動去詢問／請教 |
+| 詞性 | n./v.（及物／不及物） | v.（及物／不及物）、n. |
+| 專業層級 | 通常較正式、權威性高 | 一般諮詢／查閱 |
+| 常見對象 | 心理師、律師、輔導員 | 醫生、顧問、字典、專家 |
+
+| 單字 | 方向 | 說明 |
+|------|------|------|
+| **counsel** | 給予建議（to give advice） | 具專業資格的人「主動」提供指導 |
+| **consult** | 尋求建議（to seek advice） | 需要幫助的人「主動」去請教專家或查閱資料 |
+
+**例句對比：**
+- The therapist counseled her through the grief. 心理師輔導她走過悲傷。（心理師給予建議）
+- She consulted a therapist for her anxiety. 她因焦慮而諮詢心理師。（她去尋求建議）
+
+| 單字 | 詞性 | 用法 | 例句 |
+|------|------|------|------|
+| **counsel** | v. (及物) | counsel + 人（直接給某人建議） | He counseled the young employee. |
+| **counsel** | v. (及物) | counsel + 人 + to V（建議某人做某事） | She counseled him to wait. |
+| **counsel** | n. (不可數) | seek / follow / give counsel（建議、勸告） | You should follow his counsel. |
+| **counsel** | n. (可數) | defense / legal counsel（律師、法律顧問） | The counsel for the defense spoke. |
+| **consult** | v. (及物) | consult + 人／資料（去請教／查閱） | Please consult your doctor. |
+| **consult** | v. (及物) | consult + 人 + about + 事 | She consulted her lawyer about the case. |
+| **consult** | v. (不及物) | consult with + 人（與人商議） | I need to consult with my team. |
+| **consult** | n. | 較少用作名詞（通常用 consultation） | We had a consultation. |
+
+| 單字 | 語域 | 說明 |
+|------|------|------|
+| **counsel** | 較正式、權威 | 常用於法律（法律顧問）、心理（心理輔導）、宗教（靈性指導） |
+| **consult** | 一般正式 | 常見於商業、醫療、專業服務、查閱資料 |
+
+**例句對比：**
+- The judge appointed counsel for the defendant. 法官為被告指派了法律顧問。（法律正式用語）
+- I consulted the dictionary for the spelling. 我查閱字典確認拼寫。（一般諮詢）
+
+| 搭配 | counsel | consult |
+|------|---------|---------|
+| 常見受詞 | patient（病人）、client（當事人）、student（學生）| doctor（醫生）、lawyer（律師）、expert（專家）、dictionary（字典）|
+| 常見介係詞 | 無 (counsel + 人) | consult with + 人（與人商議） |
+| 名詞搭配 | legal counsel、marriage counseling | consultation fee、consulting firm |
+| 形容詞 | counseling services | consulting services |
+
+
+| | counsel | consult |
+|------|---------|---------|
+| 身份 | 像「顧問、輔導員」本人 | 像「客戶、學生」去請教 |
+| 動作 | give advice（給建議） | ask for advice（要建議） |
+| 關係 | 專業人士「對你」說話 | 你「向」專業人士請教 |
+
+- **counsel** = 站在「給建議」的那一端（主動給予專業指導）
+- **consult** = 站在「要建議」的那一端（主動去請教專家或查閱資料）
+
+簡單記法：
+- **counsel** 像「教授」→ 他在「教」你
+- **consult** 像「學生」→ 你「問」教授
+
+#### toeic 考題
+
+| 題型 | 正確用法 | 錯誤用法 |
+|------|----------|----------|
+| 字彙選擇 | She consulted a financial advisor. | ~~She counseled a financial advisor.~~（語意不對）|
+| 字彙選擇 | The lawyer counseled the client to settle. | ~~The lawyer consulted the client to settle.~~（語意不對）|
+| 名詞搭配 | He sought legal counsel. | ~~He sought legal consult.~~（應為 consultation）|
+| 人稱區別 | counselor（輔導員）/ consultant（顧問）| 前者給予心理／法律指導，後者給予商業／專業建議 |
+
+### sul 外交官
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| consul [ˈkɑnsəl] | con（一起）+ sul（召集） | n. | 召集並代表國家處理外交的人 → 領事 |
+| consulate [ˈkɑnsəlɪt] | con（一起）+ sul（召集）+ ate（場所） | n. | 領事辦公的場所 → 領事館 |
+
 - **con**sul [ˈkɑnsəl] n. 領事 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consul)
 
   con 一起 sul 召集 → 召集並代表國家處理外交事務的人 → 領事  
@@ -327,6 +439,21 @@ pel 這個字根就像「驅趕羊群的牧羊人」：
   例句1: I need to go to the consulate to renew my visa. 我需要去領事館更新我的簽證。  
   例句2: The consulate is located in the city center. 領事館位於市中心。  
   例句3: He applied for a travel document at the consulate. 他在領事館申請了旅行證件。  
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| council [ˈkaʊnsəl] | coun（一起）+ cil（sul 變體，召集） | n. | 召集開會的組織 → 委員會、理事會 |
+
+### cil 調解委員會
+
+發音提示：consul 和 council 發音幾乎相同，書寫時請特別注意拼字差異！
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| council [ˈkaʊnsəl] | coun（一起）+ cil（sul 變體，召集） | n. | 召集開會的組織 → 委員會、理事會 |
+| reconcile [ˈrɛkənˌsaɪl] | re（再次）+ con（一起）+ cil（召集）+ e | v. | 再次召集到一起 → 和解、調和、使一致 |
+| irreconcilable [ɪˈrɛkənˌsaɪləbəl] | ir（不）+ reconcile（和解）+ able（可…的） | adj. | 無法和解的 → 不可調和的 |
+| conciliate [kənˈsɪliˌet] | con（共同）+ cil（召集）+ iate（動詞） | v. | 把人召集到一起相互陪伴 → 安撫、調和 |
 
 - **coun**cil [ˈkaʊnsəl] n. 委員會；理事會 [🔊 聽發音](https://www.merriam-webster.com/dictionary/council)
 
@@ -342,6 +469,13 @@ pel 這個字根就像「驅趕羊群的牧羊人」：
   例句2: We need to reconcile our differences. 我們需要調和彼此的分歧。  
   例句3: It's difficult to reconcile work and family life. 要兼顧工作與家庭生活並不容易。  
 
+- **ir**reconcilable [ɪˈrɛkənˌsaɪləbəl] adj. 不可調和的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/irreconcilable)
+
+  ir 不 reconcile 和解 able 可…的 → 不可調和的  
+  例句1: Their differences are irreconcilable. 他們的分歧是不可調和的。  
+  例句2: The two sides hold irreconcilable views. 雙方持有不可調和的觀點。  
+  例句3: This is an irreconcilable conflict of interest. 這是一項不可調和的利益衝突。 
+
 - **con**ciliate [kənˈsɪliˌet] v. 安撫；調和；贏得支持 [🔊 聽發音](https://www.merriam-webster.com/dictionary/conciliate)
 
   con 共同 cil 召集 iate 動詞 → 把人召集到一起相互陪伴 → 安撫、調和  
@@ -349,61 +483,61 @@ pel 這個字根就像「驅趕羊群的牧羊人」：
   例句2: She conciliated the opposing parties. 她調和了對立的雙方。  
   例句3: The company conciliated customer complaints with refunds. 該公司以退款來安撫客戶投訴。  
 
-- **ir**reconcilable [ɪˈrɛkənˌsaɪləbəl] adj. 不可調和的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/irreconcilable)
+#### council 與 counsel 聲音一樣
 
-  ir 不 reconcile 和解 able 可…的 → 不可調和的  
-  例句1: Their differences are irreconcilable. 他們的分歧是不可調和的。  
-  例句2: The two sides hold irreconcilable views. 雙方持有不可調和的觀點。  
-  例句3: This is an irreconcilable conflict of interest. 這是一項不可調和的利益衝突。  
-
-
-| 單字 | 字源拆解 | 意義演變 |
-|------|----------|----------|
-| consult [kənˈsʌlt] | con（一起）+ sul（召集）+ t | 召集在一起討論 → 諮詢、查閱、商議 |
-| consultant [kənˈsʌltənt] | con（一起）+ sul（召集）+ tant（人） | 被召集來提供意見的人 → 顧問、諮詢師 |
-| consultation [ˌkɑnsəlˈteʃən] | con（一起）+ sul（召集）+ tation（名詞） | 召集討論的過程或會議 → 諮詢、協商 |
-| consul [ˈkɑnsəl] | con（一起）+ sul（召集） | 召集並代表國家處理外交的人 → 領事 |
-| consulate [ˈkɑnsəlɪt] | con（一起）+ sul（召集）+ ate（場所） | 領事辦公的場所 → 領事館 |
-| council [ˈkaʊnsəl] | coun（一起）+ cil（sul 變體，召集） | 召集開會的組織 → 委員會、理事會 |
-| reconcile [ˈrɛkənˌsaɪl] | re（再次）+ con（一起）+ cil（召集）+ e | 再次召集到一起 → 和解、調和、使一致 |
-| conciliate [kənˈsɪliˌet] | con（共同）+ cil（召集）+ iate（動詞） | 把人召集到一起相互陪伴 → 安撫、調和 |
-| irreconcilable [ɪˈrɛkənˌsaɪləbəl] | ir（不）+ reconcile（和解）+ able（可…的） | 無法和解的 → 不可調和的 |
-
-| 單字 | 字源 | 詞性 | 中文釋義 |
+| 單字 | 發音 | 意義 | 記憶訣竅 |
 |------|------|------|----------|
-| consult | con（一起）+ sul（召集）+ t | v. | 諮詢；查閱；商議 |
-| consultant | con（一起）+ sul（召集）+ tant（人） | n. | 顧問；諮詢師 |
-| consultation | con（一起）+ sul（召集）+ tation（名詞） | n. | 諮詢；協商；會診 |
-| consul | con（一起）+ sul（召集） | n. | 領事 |
-| consulate | con（一起）+ sul（召集）+ ate（場所） | n. | 領事館 |
-| council | coun（一起）+ cil（sul 變體，召集） | n. | 委員會；理事會 |
-| reconcile | re（再次）+ con（一起）+ cil（召集）+ e | v. | 調和；和解；使一致 |
-| conciliate | con（共同）+ cil（召集）+ iate（動詞） | v. | 安撫；調和；贏得支持 |
-| irreconcilable | ir（不）+ reconcile（和解）+ able（可…的） | adj. | 不可調和的 |
+| counsel | /ˈkaʊnsəl/ | 建議；法律顧問 | 有「sel」像「說」（say），給建議 |
+| council | /ˈkaʊnsəl/ | 委員會；議會 | 有「cil」像「召集」（call），一群人被召集 |
 
-發音提示：consul 和 council 發音幾乎相同，書寫時請特別注意拼字差異！
+- council 有「cil」→ 像「c」ircle（圓桌會議），指一群人開會的「組織」
+- counsel 有「sel」→ 像「s」uggest（建議），指「建議」本身或提供建議的「人」。
 
-| 單字 | 發音 | 詞性 | 意思 | 關聯字根 |
-|------|------|------|------|----------|
-| **consul** | [ˈkɑnsəl] | n. | 領事 | con（一起）+ sul（召集） |
-| **council** | [ˈkaʊnsəl] | n. | 委員會 | coun（一起）+ cil（sul 變體） |
-| **consult** | [kənˈsʌlt] | v. | 諮詢 | con（一起）+ sul（召集）+ t |
-
-> **sul / sel / cil** 這個字根就像「**召集各方人馬的會議主席**」：
-> - **consult**：把專家「召集」到一起討論 → 諮詢
-> - **consultant**：被「召集」來提供專業意見的人 → 顧問
-> - **consul**：被「召集」來代表國家處理外交的人 → 領事
-> - **council**：被「召集」在一起開會的組織 → 委員會
-> - **reconcile**：把爭執的雙方「再次召集」到一起 → 和解
-> - **conciliate**：把大家「共同召集」到一起相互陪伴 → 安撫
-
-| 情境 | 相關單字 |
-|------|----------|
-| 商業諮詢 | consult, consultant, consultation |
-| 外交／行政 | consul, consulate, council |
-| 衝突處理 | reconcile, conciliate, irreconcilable |
 
 ## crit / cern / cret / cert 
+這個字根就像「**拿著篩子的裁判**」，核心是「判斷與區分」：
+
+### 核心意義演變
+
+| 字根 | 來源 | 核心意義 | 意義演變方向 |
+|------|------|----------|-------------|
+| **crit** | 希臘語 | 區分、判斷 | → 批評、判斷、危機 |
+| **cern** | 拉丁語 | 篩選、區分 | → 辨別、關心、查明 |
+| **cret** | 拉丁語（過去分詞）| 已被篩選、分開 | → 秘密、分離、謹慎 |
+| **cert** | 拉丁語（過去分詞變體）| 已被篩選 → 確定 | → 確定、證明、認證 |
+
+| 字根 | 發音 | 記憶口訣 |
+|------|------|----------|
+| crit | /krɪt/ | 希臘語來，硬 /k/ 音，判斷、批評 |
+| cern | /sɜːn/ | 拉丁語來，/s/ 音，篩選、區分 |
+| cret | /kret/ 或 /krit/ | 拉丁語過去分詞，已被分開 |
+| cert | /sɜːt/ | 拉丁語變體，/s/ 音，確定、可靠 |
+
+### crit 判斷
+
+- **critic**：做出「判斷」的人 → 評論家
+- **criterion**：做出「判斷」的依據 → 標準
+- **discriminate**：「分開」「區分」對待 → 歧視
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| critic [ˈkrɪtɪk] | crit（判斷）+ ic（人）| n. | 做出判斷的人 → 評論家、批評者 |
+| critical [ˈkrɪtɪkəl] | crit（判斷）+ ical（形容詞）| adj. | 需要做出判斷的 → 關鍵的、批判的、危急的 |
+| criticize [ˈkrɪtəˌsaɪz] | crit（判斷）+ ic + ize（使…）| v. | 做出判斷 → 批評、批判 |
+| critique [krɪˈtik] | crit（判斷）+ ique（名詞）| n./v. | 做出判斷的文章或行為 → 評論、批評 |
+| crisis [ˈkraɪsɪs] | cris（判斷、區分）+ is（名詞） | n. | 需要做出關鍵判斷的時刻 → 危機、緊要關頭 |
+| criterion [kraɪˈtɪriən] | crit（判斷）+ erion（名詞）| n. | 判斷的依據 → 標準、準則（單數） |
+| criteria [kraɪˈtɪriə] | crit（判斷）+ eria（名詞複數）| n. | 判斷的依據 → 標準、準則（複數） |
+| discriminate [dɪˈskrɪməˌnet] | dis（分開）+ crimin（區分）+ ate | v. | 分開區分對待 → 區別、歧視 |
+
+criterion vs criteria:
+
+| 錯誤用法 | 正確用法 | 說明 |
+|----------|----------|------|
+| ~~These criteria is...~~ | These criteria are... | criteria 是複數，後面接複數動詞 |
+| ~~This criteria...~~ | This criterion... | 單數要用 criterion |
+| ~~Criterias~~ | Criteria | criteria 本身就是複數，不加 s |
+
 - **crit**ic [ˈkrɪtɪk] n. 評論家；批評者 [🔊 聽發音](https://www.merriam-webster.com/dictionary/critic)
 
   crit 判斷 ic 人 → 做出判斷的人 → 評論家[citation:4][citation:8]  
@@ -418,12 +552,58 @@ pel 這個字根就像「驅趕羊群的牧羊人」：
   例句2: The patient is in critical condition. 病人處於危急狀態。  
   例句3: She wrote a critical review of the product. 她寫了一篇對該產品的批判性評論。  
 
-- **crit**erion [kraɪˈtɪriən] n. 標準；準則 [🔊 聽發音](https://www.merriam-webster.com/dictionary/criterion)
+- **crit**icize [ˈkrɪtəˌsaɪz] v. 批評；批判 [🔊 聽發音](https://www.merriam-webster.com/dictionary/criticize)
 
-  crit 判斷 erion 名詞 → 判斷的依據 → 標準[citation:1][citation:8][citation:12]  
-  例句1: What is the main criterion for selecting a candidate? 選拔候選人的主要標準是什麼？  
+  crit 判斷 icize 使… → 做出判斷 → 批評  
+  例句1: The manager criticized the team for missing the deadline. 經理批評團隊錯過了截止日期。  
+  例句2: She was criticized for her handling of the situation. 她因處理情況的方式而受到批評。  
+  例句3: It's easy to criticize, but harder to offer solutions. 批評很容易，但提出解決方案更難。  
+
+- **crit**ique [krɪˈtik] n./v. 評論；批評 [🔊 聽發音](https://www.merriam-webster.com/dictionary/critique)
+
+  crit 判斷 ique 名詞 → 做出判斷的文章或行為 → 評論  
+  例句1: She wrote a critique of the new policy. 她寫了一篇對新政策的評論。  
+  例句2: The professor asked us to critique each other's work. 教授要求我們互相評論彼此的作品。  
+  例句3: His critique of the project was constructive. 他對該專案的評論是有建設性的。  
+
+- criterion [kraɪˈtɪriən] n. 標準；準則（單數） [🔊 聽發音](https://www.merriam-webster.com/dictionary/criterion)
+
+  crit 判斷 erion 名詞（用來判斷的依據 → 標準）  
+  例句1: What is the main criterion for selection? 選拔的主要標準是什麼？  
+  例句2: The criterion for success is clearly defined. 成功的標準被清楚定義了。  
+  例句3: She met all the criteria for the job. 她符合這份工作的所有標準。  
+
+- criteria [kraɪˈtɪriə] n. 標準；準則（複數） [🔊 聽發音](https://www.merriam-webster.com/dictionary/criteria)
+
+  crit 判斷 eria 名詞複數 → 判斷的依據（複數） → 標準、準則    
+  例句1: What are the criteria for selecting a candidate? 選拔候選人的標準是什麼？  
   例句2: The criteria for success are clearly defined. 成功的標準已有明確界定。  
   例句3: We need to establish objective criteria for evaluation. 我們需要建立客觀的評估標準。  
+
+- **cri**sis [ˈkraɪsɪs] n. 危機；緊要關頭 [🔊 聽發音](https://www.merriam-webster.com/dictionary/crisis)
+
+  cris 判斷 is 名詞 → 需要做出關鍵判斷的時刻 → 危機  
+  例句1: The company is facing a financial crisis. 這家公司正面臨財務危機。  
+  例句2: We need a leader who can handle a crisis. 我們需要一位能處理危機的領導者。  
+  例句3: The crisis brought about major changes in policy. 這場危機帶來了政策的重大改變。  
+
+- **dis**criminate [dɪˈskrɪməˌnet] v. 區別；歧視 [🔊 聽發音](https://www.merriam-webster.com/dictionary/discriminate)
+
+  dis 分開 crimin 區分 ate 動詞 → 分開區分對待 → 區別、歧視 
+  例句1: The law prohibits employers from discriminating against employees. 法律禁止雇主歧視員工。  
+  例句2: It is difficult to discriminate between the two options. 很難區分這兩個選項。  
+  例句3: The company has a policy against discrimination. 公司有禁止歧視的政策。  
+
+### cern 關心 辦別
+
+- **concern**：需要大家共同「釐清」的事 → 關心、涉及
+- **discern**：「分開」來「區分」→ 辨別
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| concern [kənˈsɜrn] | con（共同）+ cern（區分）| n./v. | 需要共同釐清的事 → 關心、擔憂、涉及 |
+| concerning [kənˈsɜrnɪŋ] | con（共同）+ cern（區分）+ ing | prep. | 關於、有關 |
+| discern [dɪˈsɜrn] | dis（分開）+ cern（區分）| v. | 分開區分 → 辨別、識別 |
 
 - **con**cern [kənˈsɜrn] n./v. 關心；擔憂；涉及 [🔊 聽發音](https://www.merriam-webster.com/dictionary/concern)
 
@@ -444,7 +624,17 @@ pel 這個字根就像「驅趕羊群的牧羊人」：
   dis 分開 cern 區分 → 分開區分 → 辨別[citation:5][citation:9]  
   例句1: It is difficult to discern the difference between the two products. 很難辨別這兩種產品的差異。  
   例句2: She discerned a pattern in the data. 她在數據中看出了一個規律。  
-  例句3: The manager discerned the need for change. 經理看出了改變的必要性。  
+  例句3: The manager discerned the need for change. 經理看出了改變的必要性。 
+
+### cret 分開 謹慎
+
+- **discrete**：「分開」來「區分」的 → 分立的
+- **discretion**：一再「區分」釐清 → 謹慎、裁量權
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| discrete [dɪˈskrit] | dis（分開）+ cret（區分）| adj. | 分開區分的 → 分立的、不連續的 |
+| discretion [dɪˈskrɛʃən] | dis（分開）+ cret（區分）+ ion | n. | 一再區分釐清的狀態 → 謹慎、裁量權 |
 
 - **dis**crete [dɪˈskrit] adj. 分立的；不連續的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/discrete)
 
@@ -460,19 +650,42 @@ pel 這個字根就像「驅趕羊群的牧羊人」：
   例句2: The manager has the discretion to approve the budget. 經理有批准預算的裁量權。  
   例句3: You can trust her discretion. 你可以相信她的慎重。  
 
-- **cer**tain [ˈsɜrtən] adj. 確定的；肯定的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/certain)
+### cert 確認
 
-  cert 區分 ain → 已經區分清楚的 → 確定的[citation:5]  
-  例句1: Are you certain about the deadline? 你確定截止日期嗎？  
-  例句2: I'm certain that we can achieve our goal. 我確定我們能達成目標。  
-  例句3: There is no certain answer to this question. 這個問題沒有確定的答案。  
+- **certain**：已經「區分」清楚的 → 確定的
+- **certificate**：能幫助「釐清」的證明文件 → 證書
 
-- **cer**tificate [sərˈtɪfɪkət] n. 證書；證明 [🔊 聽發音](https://www.merriam-webster.com/dictionary/certificate)
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| certain [ˈsɜrtən] | cert（區分）+ ain（形容詞）| adj. | 已經區分清楚的 → 確定的、肯定的 |
+| certainly | certain + ly | adv. | 當然；一定 |
+| certainty | certain + ty | n. | 確定性；必然 |
+| certify [ˈsɜrtəˌfaɪ] | cert（區分）+ ify（使…）| v. | 使清楚 → 證明、認證 |
+| certified | cert（區分）+ ified（使…的）| adj. | 經認證的；有證書的 |
+| certificate [sərˈtɪfɪkət] | cert（區分）+ ific（產生）+ ate（名詞）| n. | 能幫助釐清的證明文件 → 證書、證明 |
+| certification | cert（區分、確定）+ ification（使…化、過程）| n. | 認證；證明；合格證書 |
+| ascertain [ˌæsərˈten] | as（強調）+ cert（區分）+ ain | v. | 一再區分釐清 → 查明、確定 |
 
-  cert 區分 ific 產生 ate 名詞 → 能幫助釐清的證明文件 → 證書[citation:5][citation:7]  
-  例句1: She received a certificate of completion. 她收到了結業證書。  
-  例句2: You need a medical certificate to take leave. 你需要醫生證明才能請假。  
-  例句3: The company issued a certificate of authenticity. 公司發出了真品證明。  
+- **cer**tain [ˈsɜrtən] adj. 確定的；肯定的; 某個 [🔊 聽發音](https://www.merriam-webster.com/dictionary/certain)
+
+  cert 區分 ain → 已經區分清楚的 → 確定的[citation:5]    
+  例句1: There is no certain answer to this question. 這個問題沒有確定的答案。  
+  例句2: She is certain to win. 她一定會贏。    
+  例句3: Certain people are not allowed to enter. 某些人不准進入。
+
+- certain**ly** [ˈsɝtənli] adv. 當然；一定 [🔊 聽發音](https://www.merriam-webster.com/dictionary/certainly)
+
+  certain 確定的 ly 副詞  
+  例句1: I will certainly help you. 我一定會幫助你。  
+  例句2: She certainly knows the answer. 她當然知道答案。  
+  例句3: He was certainly surprised by the news. 他當然對這個消息感到驚訝。  
+
+- certain**ty** [ˈsɝtənti] n. 確定性；必然 [🔊 聽發音](https://www.merriam-webster.com/dictionary/certainty)
+
+  certain 確定的 ty 名詞  
+  例句1: There is no certainty that he will come. 無法確定他會來。  
+  例句2: She spoke with absolute certainty. 她帶著絕對的確定性說話。  
+  例句3: The outcome is a certainty. 結果是必然的。  
 
 - **cer**tify [ˈsɜrtəˌfaɪ] v. 證明；認證 [🔊 聽發音](https://www.merriam-webster.com/dictionary/certify)
 
@@ -481,6 +694,20 @@ pel 這個字根就像「驅趕羊群的牧羊人」：
   例句2: The product is certified by the safety authority. 該產品已通過安全機構認證。  
   例句3: The accountant certified the financial statements. 會計師認證了財務報表。  
 
+- **cer**tificate [sərˈtɪfɪkət] n. 證書；證明 [🔊 聽發音](https://www.merriam-webster.com/dictionary/certificate)
+
+  cert 區分 ific 產生 ate 名詞 → 能幫助釐清的證明文件 → 證書  
+  例句1: She received a certificate of completion. 她收到了結業證書。  
+  例句2: You need a medical certificate to take leave. 你需要醫生證明才能請假。  
+  例句3: The company issued a certificate of authenticity. 公司發出了真品證明。  
+
+- **cer**tification [ˌsɜrtəfəˈkeɪʃən] n. 認證；證明；合格證書 [🔊 聽發音](https://www.merriam-webster.com/dictionary/certification)
+
+  cert 區分 ification 使…化、…過程（使清楚、證明 → 認證、證明文件）  
+  例句1: She had to wait until her certification as a nurse before she could start her new job. 她必須等到取得護理師認證後才能開始新工作。  
+  例句2: The certification program is $200 plus the cost of the three workshops. 該認證課程費用為兩百美元，外加三場工作坊的費用。  
+  例句3: The certification process takes two to three weeks and costs $449. 認證過程需要兩到三週，費用為四百四十九美元。  
+
 - **as**certain [ˌæsərˈten] v. 查明；確定 [🔊 聽發音](https://www.merriam-webster.com/dictionary/ascertain)
 
   as（強調）+ cert 區分 ain → 一再區分釐清 → 查明[citation:5][citation:14]  
@@ -488,60 +715,4 @@ pel 這個字根就像「驅趕羊群的牧羊人」：
   例句2: We need to ascertain the facts before making a decision. 在做決定之前，我們需要查明事實。  
   例句3: She ascertained that the data was correct. 她確認了數據是正確的。  
 
-- **dis**criminate [dɪˈskrɪməˌnet] v. 區別；歧視 [🔊 聽發音](https://www.merriam-webster.com/dictionary/discriminate)
-
-  dis 分開 crimin 區分 ate 動詞 → 分開區分對待 → 區別、歧視[citation:5][citation:8]  
-  例句1: The law prohibits employers from discriminating against employees. 法律禁止雇主歧視員工。  
-  例句2: It is difficult to discriminate between the two options. 很難區分這兩個選項。  
-  例句3: The company has a policy against discrimination. 公司有禁止歧視的政策。  
-
-| 單字 | 字源拆解 | 意義演變 |
-|------|----------|----------|
-| critic [ˈkrɪtɪk] | crit（判斷）+ ic（人）| 做出判斷的人 → 評論家、批評者 |
-| critical [ˈkrɪtɪkəl] | crit（判斷）+ ical（形容詞）| 需要做出判斷的 → 關鍵的、批判的 |
-| criterion [kraɪˈtɪriən] | crit（判斷）+ erion（名詞）| 判斷的依據 → 標準、準則 |
-| concern [kənˈsɜrn] | con（共同）+ cern（區分）| 需要共同釐清的事 → 關心、擔憂、涉及 |
-| concerning [kənˈsɜrnɪŋ] | con（共同）+ cern（區分）+ ing | 關於、有關 |
-| discern [dɪˈsɜrn] | dis（分開）+ cern（區分）| 分開區分 → 辨別、識別 |
-| discrete [dɪˈskrit] | dis（分開）+ cret（區分）| 分開區分的 → 分立的、不連續的 |
-| discretion [dɪˈskrɛʃən] | dis（分開）+ cret（區分）+ ion | 一再區分釐清的狀態 → 謹慎、裁量權 |
-| certain [ˈsɜrtən] | cert（區分）+ ain（形容詞）| 已經區分清楚的 → 確定的、肯定的 |
-| certificate [sərˈtɪfɪkət] | cert（區分）+ ific（產生）+ ate（名詞）| 能幫助釐清的證明文件 → 證書、證明 |
-| certify [ˈsɜrtəˌfaɪ] | cert（區分）+ ify（使…）| 使清楚 → 證明、認證 |
-| ascertain [ˌæsərˈten] | as（強調）+ cert（區分）+ ain | 一再區分釐清 → 查明、確定 |
-| discriminate [dɪˈskrɪməˌnet] | dis（分開）+ crimin（區分）+ ate | 分開區分對待 → 區別、歧視 |
-
-| 單字 | 字源 | 詞性 | 中文釋義 |
-|------|------|------|----------|
-| critic | crit（判斷）+ ic（人）| n. | 評論家；批評者 |
-| critical | crit（判斷）+ ical | adj. | 關鍵的；批判的；危急的 |
-| criterion | crit（判斷）+ erion | n. | 標準；準則 |
-| concern | con（共同）+ cern（區分）| n./v. | 關心；擔憂；涉及 |
-| concerning | con（共同）+ cern（區分）+ ing | prep. | 關於；有關 |
-| discern | dis（分開）+ cern（區分）| v. | 辨別；識別；看出 |
-| discrete | dis（分開）+ cret（區分）| adj. | 分立的；不連續的 |
-| discretion | dis（分開）+ cret（區分）+ ion | n. | 謹慎；慎重；裁量權 |
-| certain | cert（區分）+ ain | adj. | 確定的；肯定的 |
-| certificate | cert（區分）+ ific + ate | n. | 證書；證明 |
-| certify | cert（區分）+ ify | v. | 證明；認證 |
-| ascertain | as（強調）+ cert（區分）+ ain | v. | 查明；確定 |
-| discriminate | dis（分開）+ crimin（區分）+ ate | v. | 區別；歧視 |
-
-> **crit / cern / cret / cert** 這個字根就像「**拿著篩子的裁判**」，核心是「判斷與區分」：
-> - **critic**：做出「判斷」的人 → 評論家
-> - **criterion**：做出「判斷」的依據 → 標準
-> - **concern**：需要大家共同「釐清」的事 → 關心、涉及
-> - **discern**：「分開」來「區分」→ 辨別
-> - **discrete**：「分開」來「區分」的 → 分立的
-> - **discretion**：一再「區分」釐清 → 謹慎、裁量權
-> - **certain**：已經「區分」清楚的 → 確定的
-> - **certificate**：能幫助「釐清」的證明文件 → 證書
-> - **discriminate**：「分開」「區分」對待 → 歧視
-
-| 情境 | 相關單字 |
-|------|----------|
-| 決策與判斷 | critical, criterion, certain, ascertain |
-| 商業文件 | certificate, certify |
-| 職場溝通 | concern, concerning, discretion |
-| 分析與區分 | discern, discrete, discriminate |
-| 評論與評價 | critic, critical |
+ 

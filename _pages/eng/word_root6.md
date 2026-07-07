@@ -3,145 +3,6 @@ title: 字根字尾字首6
 date: 2026-07-01
 keywords: English, 字根字尾字首
 ---
-## cern,cret 區分 篩選
-- **con**cern [kənˈsɝn] n./v. 關心；擔憂 [🔊 聽發音](https://www.merriam-webster.com/dictionary/concern)
-
-  con 一起 cern 篩選（把所有事情放在一起篩選 → 關心、擔憂）  
-  例句1: Her health is a major concern. 她的健康是主要的擔憂。  
-  例句2: The issue concerns everyone. 這個問題關係到每個人。  
-  例句3: He showed great concern for others. 他表現出對他人的高度關心。  
-
-- **dis**cern [dɪˈsɝn] v. 辨別；識別 [🔊 聽發音](https://www.merriam-webster.com/dictionary/discern)
-
-  dis 分開 cern 區分  
-  例句1: It is difficult to discern the truth. 很難辨別真相。  
-  例句2: She could discern a figure in the darkness. 她能在黑暗中辨識出一個人影。  
-  例句3: He discerned a change in her attitude. 他察覺到她態度上的變化。  
-
-- **dis**cern**ible** [dɪˈsɝnəbəl] adj. 可辨別的；可識別的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/discernible)
-
-  discern 辨別 ible 能夠  
-  例句1: There was no discernible difference. 沒有可辨別的差異。  
-  例句2: The shape was barely discernible in the fog. 霧中幾乎無法辨識出形狀。  
-  例句3: Her accent is easily discernible. 她的口音很容易辨別。  
-
-- concern**ing** [kənˈsɝnɪŋ] prep. 關於 [🔊 聽發音](https://www.merriam-webster.com/dictionary/concerning)
-
-  concern 關心 ing  
-  例句1: She asked a question concerning the project. 她問了一個關於這個專案的問題。  
-  例句2: The letter contains information concerning the meeting. 這封信包含關於會議的資訊。  
-  例句3: He called concerning his order. 他打電話詢問關於他的訂單。  
-
-### cret 分開
-- **se**cret [ˈsikrɪt] n. 秘密；adj. 秘密的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/secret)
-
-  se 分開 cret 篩選（分開篩選，不讓別人知道 → 秘密）  
-  例句1: She told me a secret. 她告訴我一個秘密。  
-  例句2: They met in a secret location. 他們在秘密地點會面。  
-  例句3: He kept his plans secret. 他對他的計劃保密。
-
-- **se**cr**ete** [sɪˈkrit] v. 分泌；隱藏 [🔊 聽發音](https://www.merriam-webster.com/dictionary/secrete)
-
-  se 分開 cret 篩選 ate動詞（分開篩選出來 → 分泌；隱藏）  
-  例句1: The glands secrete hormones. 腺體分泌荷爾蒙。  
-  例句2: He secreted the documents in a safe place. 他把文件藏在安全的地方。  
-  例句3: The plant secretes a sticky substance. 這種植物分泌黏性物質。 
-
-- **se**cret**ary** [ˈsɛkrəˌtɛri] n. 祕書 [🔊 聽發音](https://www.merriam-webster.com/dictionary/secretary)
-
-  secret 秘密 ary 名詞（指人）（保管秘密的人）  
-  例句1: She works as a secretary at the company. 她在公司擔任祕書。  
-  例句2: The secretary took notes during the meeting. 祕書在會議期間做了筆記。  
-  例句3: He is the secretary of the committee. 他是委員會的祕書。  
-
-- **dis**cre**et** [dɪˈskrit] adj. 謹慎的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/discreet)
-
-  dis 分開 cre 篩選 e~~n~~t（分開篩選 → 小心選擇 → 謹慎）  
-  例句1: She was discreet about her personal life. 她對自己的私生活很謹慎。  
-  例句2: He made a discreet inquiry. 他做了謹慎的詢問。  
-  例句3: Please be discreet with this information. 請對這項資訊保持謹慎。  
-
-- **dis**cret**ion** [dɪˈskrɛʃən] n. 謹慎；自由裁量權 [🔊 聽發音](https://www.merriam-webster.com/dictionary/discretion)
-
-  discreet 謹慎 ion 名詞  
-  例句1: She used her discretion in handling the problem. 她在處理問題時運用了自己的判斷力。  
-  例句2: The decision is left to the discretion of the manager. 這個決定由經理自行裁量。  
-  例句3: He showed great discretion in the matter. 他在這件事上表現出很大的謹慎。  
-
-## cert 確認
-- cert**ain** [ˈsɝtən] adj. 確定的；某個 [🔊 聽發音](https://www.merriam-webster.com/dictionary/certain)
-
-  cert 確定 ain 形容詞  
-  例句1: I am certain about his honesty. 我確定他是誠實的。  
-  例句2: Certain people are not allowed to enter. 某些人不准進入。  
-  例句3: She is certain to win. 她一定會贏。  
-
-- certain**ly** [ˈsɝtənli] adv. 當然；一定 [🔊 聽發音](https://www.merriam-webster.com/dictionary/certainly)
-
-  certain 確定的 ly 副詞  
-  例句1: I will certainly help you. 我一定會幫助你。  
-  例句2: She certainly knows the answer. 她當然知道答案。  
-  例句3: He was certainly surprised by the news. 他當然對這個消息感到驚訝。  
-
-- certain**ty** [ˈsɝtənti] n. 確定性；必然 [🔊 聽發音](https://www.merriam-webster.com/dictionary/certainty)
-
-  certain 確定的 ty 名詞  
-  例句1: There is no certainty that he will come. 無法確定他會來。  
-  例句2: She spoke with absolute certainty. 她帶著絕對的確定性說話。  
-  例句3: The outcome is a certainty. 結果是必然的。  
-
-- cert**ify** [ˈsɝtəˌfaɪ] v. 證明；認證 [🔊 聽發音](https://www.merriam-webster.com/dictionary/certify)
-
-  cert 確定 ify 動詞  
-  例句1: The document certifies his identity. 這份文件證明了他的身分。  
-  例句2: The school certified her as a teacher. 這所學校認證她為教師。  
-  例句3: The product is certified organic. 這個產品被認證為有機的。  
-
-- cert**ificate** [sɚˈtɪfəkɪt] n. 證書；憑證 [🔊 聽發音](https://www.merriam-webster.com/dictionary/certificate)
-
-  certify 證明 ate 名詞  
-  例句1: She received a certificate of achievement. 她收到了一份成就證書。  
-  例句2: He has a teaching certificate. 他有教學資格證書。  
-  例句3: The certificate is valid for three years. 這份證書有效期為三年。  
-
-## lect lig 選擇
-neg = 否定（源自拉丁語 nec「不」）= negtive
-
-- **neg**lect [nɪˈglɛkt] v./n. 忽視；疏忽 [🔊 聽發音](https://www.merriam-webster.com/dictionary/neglect)
-
-  neg 否定 lect 選擇（不去選擇關心 → 忽視）  
-  例句1: She neglected her health. 她忽視了自己的健康。  
-  例句2: The building has been neglected for years. 這棟建築多年來被疏忽了。  
-  例句3: His neglect of duty caused the accident. 他的職務疏忽導致了事故。  
-
-- **neg**lig**ent** [ˈnɛglədʒənt] adj. 疏忽的；粗心大意的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/negligent)
-
-  neg 否定 lig 選擇 ent 形容詞（不去選擇關心 → 疏忽的）  
-  例句1: The driver was negligent and caused the crash. 司機粗心大意導致了車禍。  
-  例句2: She was negligent in her duties. 她對職責疏忽了。  
-  例句3: The hospital was found negligent in patient care. 醫院被認定在病患照護上有過失。  
-
-- **neg**lig**ence** [ˈnɛglədʒəns] n. 過失；疏忽 [🔊 聽發音](https://www.merriam-webster.com/dictionary/negligence)
-
-  negligent 疏忽的 ence 名詞  
-  例句1: The accident was caused by negligence. 這次事故是由過失造成的。  
-  例句2: He was sued for medical negligence. 他因醫療過失而被起訴。  
-  例句3: The company was accused of negligence. 這家公司被指控有過失。  
-
-- **neg**lig**ible** [ˈnɛglədʒəbəl] adj. 可忽略的；微不足道的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/negligible)
-
-  neg 否定 lig 選擇 ible 能夠（可以不去選擇 → 可忽略的）  
-  例句1: The difference is negligible. 差異微不足道。  
-  例句2: The cost is negligible. 成本可以忽略不計。  
-  例句3: The risk is negligible. 風險微乎其微。  
-
-- **neg**lect**ful** [nɪˈglɛktfəl] adj. 疏忽的；不關心的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/neglectful)
-
-  neglect 忽視 ful 形容詞  
-  例句1: She was neglectful of her children. 她對孩子們疏忽了。  
-  例句2: He is neglectful of his responsibilities. 他對自己的責任不關心。  
-  例句3: The neglectful owner failed to feed the dog. 疏忽的主人忘了餵狗。  
-
 ## spir 氣
 - spirit
 - spiritual
@@ -778,6 +639,118 @@ cop 警察 (警察抓小偷)
   例句2: She is a cultivator of rare orchids. 她是珍稀蘭花的栽培者。  
   例句3: The farmers used a cultivator to break up the soil. 農民用耕耘機來鬆土。  
 
+- **in**culc**ate** [ˈɪnkʌlkeɪt] v. 反覆灌輸；諄諄教誨 [🔊 聽發音](https://www.merriam-webster.com/dictionary/inculcate)
+
+  in 大腦裡面 cul 把思想耕種、培養在大腦裡面 ate動詞  
+  例句1: Teachers try to inculcate good values in their students. 老師試圖向學生灌輸良好的價值觀。  
+  例句2: We have tried to inculcate a feeling of citizenship in youngsters. 我們試圖向年輕人反覆灌輸公民意識。  
+  例句3: They inculcated the will to succeed in their children. 他們向子女反覆灌輸立志成功的決心。  
+
+| 單字 | 字源 | 詞性 | 中文釋義 |
+|------|------|------|----------|
+| inculcate | in（入內）+ culc（耕種、培養）+ ate | v. | 反覆灌輸；諄諄教誨 |
+| inculcation | in（入內）+ culc（培養）+ ation（名詞） | n. | 灌輸；諄諄教導 |
+| inculcator | in（入內）+ culc（培養）+ ator（人） | n. | 灌輸者；諄諄教導者 |
+
+#### cult 宗教狂熱
+cult 把思想耕種、培養在大腦裡面 = 宗教洗腦教徒 = 宗教狂熱
+
+| 單字 | KK 音標 | 詞性 | 中文釋義 |
+|------|---------|------|----------|
+| cultish | /ˈkʌltɪʃ/ | Adj. | 邪教般的；狂熱迷信的（貶義） |
+| cultic | /ˈkʌltɪk/ | Adj. | 與宗教崇拜或邪教相關的 |
+| cultist | /ˈkʌltɪst/ | n. | 邪教成員；盲目崇拜者 |
+| cult-like | /ˈkʌltˌlaɪk/ | Adj. | 類似邪教的；狂熱追隨的 |
+
+### col 居住 殖民
+col定居 + ony名詞 = colony
+
+colony = 居住地 = 殖民地 = 菌落 = 定居群(ant colony 蟻群)
+
+| 單字 | KK 音標 | 構成 | 詞性 | 中文釋義 |
+|------|---------|------|------|----------|
+| colonial | /kəˈloniəl/ | colony + -al | Adj. | 殖民的；殖民地的 |
+| colonialist | /kəˈloniəlɪst/ | colonial + -ist | n. | 殖民主義者 |
+| colonialism | /kəˈloniəˌlɪzəm/ | colony + -ism | n. | 殖民主義 |
+| colonize | /ˈkɑləˌnaɪz/ | colony + -ize | v. | 殖民化，使成為殖民地 |
+| colonized | /ˈkɑləˌnaɪzd/ | colonize + -ed | Adj. | 被殖民的 |
+| colonizer | /ˈkɑləˌnaɪzɚ/ | colonize + -er | n. | 殖民者，殖民統治者 |
+| colonization | /ˌkɑlənəˈzeʃən/ | colonize + -ation | n. | 殖民過程，殖民地化 |
+| decolonize | /diˈkɑləˌnaɪz/ | de- + colonize | v. | 去殖民化，擺脫殖民統治 |
+
+- **col**ony [ˈkɑləni] n. 殖民地；群體；群落 [🔊 聽發音](https://www.merriam-webster.com/dictionary/colony)
+
+  col 居住 ony 名詞（一群人居住的地方 → 殖民地、群體）  
+  例句1: Australia was originally a British colony. 澳洲最初是英國的殖民地。  
+  例句2: The island is home to a seal colony. 這座島嶼是海豹群落的棲息地。  
+  例句3: There is a small artists' colony in the town. 這個小鎮有一個藝術家聚居地。  
+
+- **col**onial [kəˈloniəl] adj. 殖民地的；n. 殖民地居民 [🔊 聽發音](https://www.merriam-webster.com/dictionary/colonial)
+
+  col 居住 onial 形容詞／名詞 → 與居住地相關的 → 殖民地的  
+  例句1: The country still has many colonial buildings. 該國仍有許多殖民地時期的建築。  
+  例句2: The museum displays colonial artifacts. 博物館展出殖民地時期的文物。  
+  例句3: The colonial government imposed new taxes. 殖民地政府徵收了新稅。  
+
+- **col**onize [ˈkɑləˌnaɪz] v. 殖民；拓殖 [🔊 聽發音](https://www.merriam-webster.com/dictionary/colonize)
+
+  col 居住 onize 使… → 使人去居住 → 殖民  
+  例句1: The British colonized many parts of Africa. 英國在非洲許多地區建立殖民地。  
+  例句2: The area was colonized by European settlers. 該地區曾被歐洲殖民者拓殖。  
+  例句3: The company plans to colonize the new territory. 該公司計劃開拓這片新領土。  
+
+- **col**onist [ˈkɑlənɪst] n. 殖民者；定居者 [🔊 聽發音](https://www.merriam-webster.com/dictionary/colonist)
+
+  col 居住 onist 人 → 去居住的人 → 殖民者、定居者  
+  例句1: The first colonists arrived in the 17th century. 第一批殖民者在十七世紀抵達。  
+  例句2: The colonists built the first school in the village. 殖民者在村裡建立了第一所學校。  
+  例句3: Many colonists came seeking religious freedom. 許多殖民者為尋求宗教自由而來。  
+
+- **col**onization [ˌkɑlənəˈzeʃən] n. 殖民化；拓殖 [🔊 聽發音](https://www.merriam-webster.com/dictionary/colonization)
+
+  col 居住 onization 名詞 → 使人去居住的過程 → 殖民化  
+  例句1: The colonization of the region took over a century. 該地區的殖民化歷時超過一個世紀。  
+  例句2: Colonization had a lasting impact on the local culture. 殖民化對當地文化產生了持久的影響。  
+  例句3: The book examines the history of colonization in Africa. 這本書探討了非洲的殖民歷史。  
+
+- **de**colonize [diˈkɑləˌnaɪz] v. 使非殖民化 [🔊 聽發音](https://www.merriam-webster.com/dictionary/decolonize)
+
+  de 去除 colonize 殖民 → 去除殖民統治 → 非殖民化  
+  例句1: Many African nations were decolonized in the 1960s. 許多非洲國家在1960年代脫離殖民統治。  
+  例句2: The university decided to decolonize its curriculum. 該大學決定使其課程去殖民化。  
+  例句3: The movement aimed to decolonize the country. 該運動旨在使國家非殖民化。  
+
+| 單字 | 字源拆解 | 意義演變 |
+|------|----------|----------|
+| colony [ˈkɑləni] | col（居住）+ ony（名詞） | 一群人居住的地方 → 殖民地、聚居地、群落 |
+| colonial [kəˈloniəl] | col（居住）+ onial（形容詞／名詞） | 與居住地相關的 → 殖民地的、殖民地居民 |
+| colonize [ˈkɑləˌnaɪz] | col（居住）+ onize（使…） | 使人去居住 → 殖民、拓殖 |
+| colonist [ˈkɑlənɪst] | col（居住）+ onist（人） | 去居住的人 → 殖民者、定居者 |
+| colonization [ˌkɑlənəˈzeʃən] | col（居住）+ onization（名詞） | 使人去居住的過程 → 殖民化、拓殖 |
+| decolonize [diˈkɑləˌnaɪz] | de（去除）+ colonize（殖民） | 去除殖民統治 → 使非殖民化 |
+
+| 單字 | 字源 | 詞性 | 中文釋義 |
+|------|------|------|----------|
+| colony | col（居住）+ ony（名詞） | n. | 殖民地；群體；群落 |
+| colonial | col（居住）+ onial（形容詞／名詞） | adj./n. | 殖民地的；殖民地居民 |
+| colonize | col（居住）+ onize（使…） | v. | 殖民；拓殖 |
+| colonist | col（居住）+ onist（人） | n. | 殖民者；定居者 |
+| colonization | col（居住）+ onization（名詞） | n. | 殖民化；拓殖 |
+| decolonize | de（去除）+ colonize（殖民） | v. | 使非殖民化 |
+
+
+**col** 這個字根就像「**一群人落腳定居**」：
+- **colony**：一群人「居住」的地方 → 殖民地、聚居地
+- **colonist**：去「居住」的人 → 殖民者
+- **colonize**：使一群人「居住」→ 殖民、拓殖
+- **colonial**：與「居住地」相關的 → 殖民地的
+- **decolonize**：去除「殖民」狀態 → 非殖民化
+
+| 情境 | 相關單字 |
+|------|----------|
+| 歷史／政治 | colony, colonial, colonize, colonist, colonization, decolonize |
+| 生物／生態 | colony（菌落、群落） |
+| 社會／文化 | colony（藝術家聚居地、外僑社群） |
 
 8518
 

@@ -11,19 +11,57 @@ keywords: English, toeic
   例句2: Only citizens are eligible to vote. 只有公民有資格投票。  
   例句3: He is not eligible for the job. 他不符合這份工作的資格。  
 
-- ineligible [ɪnˈɛlɪdʒəbəl] adj. 不合格的；無資格的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/ineligible)
-
-  in 否定 eligible 有資格的  
-  例句1: She is ineligible for the competition due to her age. 她因年齡而不符合參賽資格。  
-  例句2: Non-members are ineligible to vote. 非會員無資格投票。  
-  例句3: He was declared ineligible for the position. 他被宣布不符合該職位的資格。  
-
 - eligibility [ˌɛlɪdʒəˈbɪləti] n. 資格；合格 [🔊 聽發音](https://www.merriam-webster.com/dictionary/eligibility)
 
   eligible 有資格的 ity 名詞  
   例句1: Check your eligibility for the program. 檢查你參加該計劃的資格。  
   例句2: The eligibility requirements are strict. 資格要求很嚴格。  
   例句3: Her eligibility for the award is confirmed. 她獲得該獎項的資格已確認。  
+
+- ineligible [ɪnˈɛlɪdʒəbəl] adj. 不合格的；無資格的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/ineligible)
+
+  in 否定 eligible 有資格的  
+  例句1: She is ineligible for the competition due to her age. 她因年齡而不符合參賽資格。  
+  例句2: Non-members are ineligible to vote. 非會員無資格投票。  
+  例句3: He was declared ineligible for the position. 他被宣布不符合該職位的資格。
+
+### neg lect lig 選擇
+neg = 否定（源自拉丁語 nec「不」）= negtive
+
+- **neg**lect [nɪˈglɛkt] v./n. 忽視；疏忽 [🔊 聽發音](https://www.merriam-webster.com/dictionary/neglect)
+
+  neg 否定 lect 選擇（不去選擇關心 → 忽視）  
+  例句1: She neglected her health. 她忽視了自己的健康。  
+  例句2: The building has been neglected for years. 這棟建築多年來被疏忽了。  
+  例句3: His neglect of duty caused the accident. 他的職務疏忽導致了事故。  
+
+- **neg**lig**ent** [ˈnɛglədʒənt] adj. 疏忽的；粗心大意的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/negligent)
+
+  neg 否定 lig 選擇 ent 形容詞（不去選擇關心 → 疏忽的）  
+  例句1: The driver was negligent and caused the crash. 司機粗心大意導致了車禍。  
+  例句2: She was negligent in her duties. 她對職責疏忽了。  
+  例句3: The hospital was found negligent in patient care. 醫院被認定在病患照護上有過失。  
+
+- **neg**lig**ence** [ˈnɛglədʒəns] n. 過失；疏忽 [🔊 聽發音](https://www.merriam-webster.com/dictionary/negligence)
+
+  negligent 疏忽的 ence 名詞  
+  例句1: The accident was caused by negligence. 這次事故是由過失造成的。  
+  例句2: He was sued for medical negligence. 他因醫療過失而被起訴。  
+  例句3: The company was accused of negligence. 這家公司被指控有過失。  
+
+- **neg**lig**ible** [ˈnɛglədʒəbəl] adj. 可忽略的；微不足道的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/negligible)
+
+  neg 否定 lig 選擇 ible 能夠（可以不去選擇 → 可忽略的）  
+  例句1: The difference is negligible. 差異微不足道。  
+  例句2: The cost is negligible. 成本可以忽略不計。  
+  例句3: The risk is negligible. 風險微乎其微。  
+
+- **neg**lect**ful** [nɪˈglɛktfəl] adj. 疏忽的；不關心的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/neglectful)
+
+  neglect 忽視 ful 形容詞  
+  例句1: She was neglectful of her children. 她對孩子們疏忽了。  
+  例句2: He is neglectful of his responsibilities. 他對自己的責任不關心。  
+  例句3: The neglectful owner failed to feed the dog. 疏忽的主人忘了餵狗。
 
 ## pens 稱重花費
 - compensate [ˈkɑmpənˌset] v. 補償；賠償 [🔊 聽發音](https://www.merriam-webster.com/dictionary/compensate)
@@ -142,103 +180,6 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   例句2: She has a comprehensive understanding of the topic. 她對這個主題有詳盡的理解。  
   例句3: The comprehensive guide covers everything you need to know. 這本詳盡的指南涵蓋了你需要知道的一切。  
 
-## sul sel cil 召集
-- consult [kənˈsʌlt] v. 諮詢；查閱 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consult)
-
-  con 一起 sul 召集（召集在一起商議 → 諮詢）  
-  例句1: She consulted a doctor about her symptoms. 她向醫生諮詢了她的症狀。  
-  例句2: Please consult the dictionary for the meaning. 請查閱字典以了解意思。  
-  例句3: He consulted with his lawyer before signing. 他在簽字前向律師諮詢。  
-
-- counsel [ˈkaʊnsəl] n./v. 建議；法律顧問 [🔊 聽發音](https://www.merriam-webster.com/dictionary/counsel)
-
-  coun 一起 sel 召集（召集在一起討論 → 建議）  
-  例句1: She sought counsel from her mentor. 她向導師尋求建議。  
-  例句2: The lawyer gave him sound counsel. 律師給了他很好的建議。  
-  例句3: He counseled her to be patient. 他建議她要耐心。  
-
-- council [ˈkaʊnsəl] n. 委員會；議會 [🔊 聽發音](https://www.merriam-webster.com/dictionary/council)
-
-  coun 一起 cil 召集（召集在一起的一群人 → 委員會）  
-  例句1: The city council approved the new policy. 市議會批准了新政策。  
-  例句2: She is a member of the student council. 她是學生會的成員。  
-  例句3: The council meets every Monday. 議會每週一開會。 
-
-### counsel 與 council 聲音一樣
-
-| 單字 | 發音 | 意義 | 記憶訣竅 |
-|------|------|------|----------|
-| counsel | /ˈkaʊnsəl/ | 建議；法律顧問 | 有「sel」像「說」（say），給建議 |
-| council | /ˈkaʊnsəl/ | 委員會；議會 | 有「cil」像「召集」（call），一群人被召集 |
-
-### 字根說明
-- **sul / sel / cil** = 召集、拿取（源自拉丁語 *sul* 與 *cilium* 的組合）
-- **cil** = 召集（源自拉丁語 *calare*「召集、召喚」）
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **consult** | con（一起）+ sul（召集）| v. | 諮詢；查閱 |
-| **counsel** | coun（一起）+ sel（召集）| n./v. | 建議；法律顧問 |
-| **council** | coun（一起）+ cil（召集）| n. | 委員會；議會 |
-
-| 單字 | 發音 | 詞性 | 意思 | 關聯字根 |
-|------|------|------|------|----------|
-| **consul** | [ˈkɑnsəl] | n. | 領事 | con（一起）+ sul（召集） |
-| **consult** | [kənˈsʌlt] | v. | 諮詢 | con（一起）+ sul（召集）+ t |
-| **council** | [ˈkaʊnsəl] | n. | 委員會 | coun（一起）+ cil（sul 變體） |
-
-
-- **con**sult [kənˈsʌlt] v. 諮詢；查閱；商議 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consult)
-
-  con 一起 sul 召集 t（連接字母）→ 召集在一起討論 → 諮詢、商議  
-  例句1: Please consult your doctor before taking this medicine. 服用此藥前請諮詢你的醫生。  
-  例句2: I need to consult the dictionary for the meaning. 我需要查閱字典了解意思。  
-  例句3: The manager consulted with the team before making a decision. 經理在做決定前與團隊商議。  
-
-- **con**sultant [kənˈsʌltənt] n. 顧問；諮詢師 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consultant)
-
-  con 一起 sul 召集 tant 人 → 被召集來提供專業意見的人 → 顧問  
-  例句1: The company hired a financial consultant to improve profits. 公司聘請了一位財務顧問來提升利潤。  
-  例句2: She works as an IT consultant for a global firm. 她在一家全球性公司擔任IT顧問。  
-  例句3: The consultant recommended a new marketing strategy. 顧問推薦了一項新的行銷策略。  
-
-- **con**sultation [ˌkɑnsəlˈteʃən] n. 諮詢；協商；會診 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consultation)
-
-  con 一起 sul 召集 tation 名詞 → 召集在一起討論的過程或會議 → 諮詢、協商  
-  例句1: The consultation lasted over two hours. 這場諮詢會議持續了兩個多小時。  
-  例句2: We need a consultation with the legal team. 我們需要與法律團隊進行協商。  
-  例句3: The doctor held a consultation with several specialists. 醫生與幾位專家進行了會診。  
-
-- **con**sul [ˈkɑnsəl] n. 領事 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consul)
-
-  con 一起 sul 召集 → 召集並代表國家處理外交事務的人 → 領事  
-  例句1: He was appointed consul to the United States. 他被任命為駐美國領事。  
-  例句2: The consul helped the citizens abroad. 領事協助了在國外的公民。  
-  例句3: The British consul attended the ceremony. 英國領事出席了典禮。  
-
-- **con**sulate [ˈkɑnsəlɪt] n. 領事館 [🔊 聽發音](https://www.merriam-webster.com/dictionary/consulate)
-
-  con 一起 sul 召集 ate 場所 → 領事辦公的場所 → 領事館  
-  例句1: I need to go to the consulate to renew my visa. 我需要去領事館更新我的簽證。  
-  例句2: The consulate is located in the city center. 領事館位於市中心。  
-  例句3: He applied for a travel document at the consulate. 他在領事館申請了旅行證件。  
-
-- **coun**cil [ˈkaʊnsəl] n. 委員會；理事會 [🔊 聽發音](https://www.merriam-webster.com/dictionary/council)
-
-  coun 一起 cil（sul 的變體）召集 → 召集在一起開會的組織 → 委員會  
-  例句1: The city council approved the new budget. 市議會批准了新預算。  
-  例句2: She was elected to the student council. 她被選入學生會。  
-  例句3: The council will meet to discuss the proposal. 委員會將開會討論該提案。  
-
-| 單字 | 字源 | 詞性 | 中文釋義 |
-|------|------|------|----------|
-| consult | con（一起）+ sul（召集）+ t | v. | 諮詢；查閱；商議 |
-| consultant | con（一起）+ sul（召集）+ tant（人） | n. | 顧問；諮詢師 |
-| consultation | con（一起）+ sul（召集）+ tation（名詞） | n. | 諮詢；協商；會診 |
-| consul | con（一起）+ sul（召集） | n. | 領事 |
-| consulate | con（一起）+ sul（召集）+ ate（場所） | n. | 領事館 |
-| council | coun（一起）+ cil（sul 變體，召集） | n. | 委員會；理事會 |
-
 ## cruit 成長
 - recruit [rɪˈkrut] v. 招募；徵募；n. 新成員；新兵 [🔊 聽發音](https://www.merriam-webster.com/dictionary/recruit)
 
@@ -334,106 +275,10 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
   - 例句：The car has a sleek exterior design. (這輛車有流線型的外觀設計。)
   - 例句：The paint protects the exterior walls from rain. (油漆保護外牆免受雨水侵蝕。)
 
-
 | 比較項目 | 內部 | 外部 |
 |----------|------|------|
 | 抽象 / 本質 | internal（內在的、體內的） | external（外在的、外來的） |
 | 空間 / 外觀 | interior（室內的、內庭的） | exterior（外觀的、表面的） |
-
-## crit 判斷、區分
-- criterion [kraɪˈtɪriən] n. 標準；準則（單數） [🔊 聽發音](https://www.merriam-webster.com/dictionary/criterion)
-
-  crit 判斷 erion 名詞（用來判斷的依據 → 標準）  
-  例句1: What is the main criterion for selection? 選拔的主要標準是什麼？  
-  例句2: The criterion for success is clearly defined. 成功的標準被清楚定義了。  
-  例句3: She met all the criteria for the job. 她符合這份工作的所有標準。  
-
-- criteria [kraɪˈtɪriə] n. 標準；準則（複數） [🔊 聽發音](https://www.merriam-webster.com/dictionary/criteria)
-
-  criterion 的複數形  
-  例句1: The criteria for admission are strict. 入學的標準很嚴格。  
-  例句2: We need to establish clear criteria. 我們需要建立明確的標準。  
-  例句3: All applicants must meet the following criteria. 所有申請者必須符合以下標準。  
-
-
-| 錯誤用法 | 正確用法 | 說明 |
-|----------|----------|------|
-| ~~These criteria is...~~ | These criteria are... | criteria 是複數，後面接複數動詞 |
-| ~~This criteria...~~ | This criterion... | 單數要用 criterion |
-| ~~Criterias~~ | Criteria | criteria 本身就是複數，不加 s |
-
-同根字補充
-
-| 單字 | 字源 | 詞性 | 中文釋義 |
-|------|------|------|----------|
-| critical | crit（判斷）+ ical | adj. | 關鍵的；批判的 |
-| criticize | crit（判斷）+ ize | v. | 批評；批判 |
-| critique | crit（判斷）+ ique | n./v. | 評論；批評 |
-| hypocrite | hypo（下面）+ crit（判斷） | n. | 偽君子 |
-
-
-
-## crit / cern / cret / cert = 篩選、區分、判斷（PIE *krei-）
-
-### crit（希臘語 *krinein* → 判斷、區分）
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **critical** | crit（判斷）+ ical | adj. | 關鍵的；批判的 |
-| **criterion** | crit（判斷）+ erion | n. | 標準；準則 |
-| **criticize** | crit（判斷）+ ize | v. | 批評；批判 |
-| **critique** | crit（判斷）+ ique | n./v. | 評論；批評 |
-| **hypocrite** | hypo（下面）+ crit（判斷）| n. | 偽君子 |
-| **crisis** | crit（區分）→ 決定性時刻 | n. | 危機 |
-
-### cern（拉丁語 *cernere* → 篩選、區分）
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **discern** | dis（分開）+ cern（篩選）| v. | 辨別；識別 |
-| **discernible** | discern + ible | adj. | 可辨別的；可識別的 |
-| **concern** | con（一起）+ cern（篩選）| n./v. | 關心；擔憂 |
-| **concerning** | concern + ing | prep. | 關於 |
-| **ascertain** | as（朝向）+ cert（確定）+ ain | v. | 查明；確定 |
-
-### cret（拉丁語 *cretus* → 已被篩選、分開）
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **secret** | se（分開）+ cret（篩選）| n./adj. | 秘密；秘密的 |
-| **secretary** | secret + ary（指人）| n. | 祕書 |
-| **secrete** | se（分開）+ crete | v. | 分泌；隱藏 |
-| **discrete** | dis（分開）+ crete（篩選）| adj. | 分離的；不連續的 |
-| **discretion** | discret(e) + ion | n. | 謹慎；自由裁量權 |
-| **discreet** | dis（分開）+ creet（篩選）| adj. | 謹慎的 |
-
-### cert（拉丁語 *certus* → 已被篩選 → 確定）
-
-| 單字 | 字源拆解 | 詞性 | 中文釋義 |
-|------|----------|------|----------|
-| **certain** | cert（確定）+ ain | adj. | 確定的；某個 |
-| **certainly** | certain + ly | adv. | 當然；一定 |
-| **certainty** | certain + ty | n. | 確定性；必然 |
-| **certify** | cert（確定）+ ify | v. | 證明；認證 |
-| **certificate** | certify + ate | n. | 證書；憑證 |
-| **certification** | certify + ation | n. | 認證；證明 |
-
-### 核心意義演變
-
-| 字根 | 來源 | 核心意義 | 意義演變方向 |
-|------|------|----------|-------------|
-| **crit** | 希臘語 | 區分、判斷 | → 批評、判斷、危機 |
-| **cern** | 拉丁語 | 篩選、區分 | → 辨別、關心、查明 |
-| **cret** | 拉丁語（過去分詞）| 已被篩選、分開 | → 秘密、分離、謹慎 |
-| **cert** | 拉丁語（過去分詞變體）| 已被篩選 → 確定 | → 確定、證明、認證 |
-
-
-| 字根 | 發音 | 記憶口訣 |
-|------|------|----------|
-| crit | /krɪt/ | 希臘語來，硬 /k/ 音，判斷、批評 |
-| cern | /sɜːn/ | 拉丁語來，/s/ 音，篩選、區分 |
-| cret | /kret/ 或 /krit/ | 拉丁語過去分詞，已被分開 |
-| cert | /sɜːt/ | 拉丁語變體，/s/ 音，確定、可靠 |
 
 ## pract 實行行動
 - practical [ˈpræktɪkəl] adj. 實際的；實用的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/practical)
