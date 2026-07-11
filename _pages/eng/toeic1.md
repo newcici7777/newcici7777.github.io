@@ -158,7 +158,24 @@ neg = 否定（源自拉丁語 nec「不」）= negtive
   dis（分開、出去）+ pens（衡量）+ e → 衡量後分配出去 → 分配、分發；免除  
   例句1: The pharmacist dispensed the medication to the patient. 藥劑師將藥品分發給病人。  
   例句2: The machine dispenses tickets to customers. 這台機器向顧客發放票券。  
-  例句3: The judge dispensed with the formalities and went straight to the point. 法官免去了繁文縟節，直接切入重點。  
+  例句3: The judge dispensed with the formalities and went straight to the point. 法官免去了繁文縟節，直接切入重點。
+
+| 單字 | 字源 | 詞性 | 意義演變 |
+|------|------|------|----------|
+| dispense [dɪˈspɛns] | dis（分開）+ pense（衡量）| v. | 衡量後分發 → 分配、配藥 |
+| dispensary [dɪˈspɛnsəri] | dis（分開、出去）+ pens（衡量、稱重）+ ary（場所）| n. | 配藥的場所 → 藥房、診療所 |
+| dispensable [dɪˈspɛnsəbəl] | dispense + able（可…的）| adj. | 可以分發出去的 → 可拋棄的、非必要的 |
+
+**pens** 這個字根的核心是「**衡量、稱重**」：
+- **dispensary**：藥劑師「衡量」藥品後「分發」出去的「場所」→ 藥房、診療所
+- 此字最早於 1690 年代出現，原指「為窮人提供免費或低價醫療服務和藥品的公共機構」
+
+- **dis**pensary [dɪˈspɛnsəri] n. 藥房；（學校、兵營或工廠的）診療所；防治站 [🔊 聽發音](https://www.merriam-webster.com/dictionary/dispensary)
+
+  dis（分開、出去）+ pens（衡量、稱重）+ ary（場所）→ 衡量藥品後分發出去的場所 → 藥房、診療所  
+  例句1: Please take this prescription to the dispensary. 請把這張處方箋拿到藥房去。  
+  例句2: He bought some pills from the school dispensary. 他從學校的醫務室買了一些藥片。  
+  例句3: The dispensary provides free medicine to the poor. 這家診療所向窮人提供免費藥品。  
 
 ## prehend 抓住
 

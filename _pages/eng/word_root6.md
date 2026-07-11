@@ -837,5 +837,257 @@ colony = 居住地 = 殖民地 = 菌落 = 定居群(ant colony 蟻群)
 | decolonize [diˈkɑləˌnaɪz] | v. | de + colonize | 反轉殖民 → 去殖民化 |
 | decolonization [diˌkɑlənəˈzeʃən] | n. | de + colonization | 去殖民化的過程 → 去殖民化過程 |
 
+## vert vers 轉 轉向
+vert 動詞 vers名詞:
+- intro 向內 + vert 轉 = introver
+- intro 向內 + vers 轉 + ion 名詞字尾 = introversion
+- extro 向外 + vert 轉 = extrovert
+- extro 向外 + vers 轉 + ion = extroversion
 
-8582
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| introvert [ˈɪntrəˌvɝt] | n./v. | intro（向內）+ vert（轉） | 向內轉的人 → 內向者；使內向 |
+| introversion [ˌɪntrəˈvɝʒən] | n. | intro（向內）+ vers（轉）+ ion | 向內轉的狀態 → 內向；內傾性 |
+| extrovert [ˈɛkstrəˌvɝt] | n./v. | extro（向外）+ vert（轉） | 向外轉的人 → 外向者；使外向 |
+| extroversion [ˌɛkstrəˈvɝʒən] | n. | extro（向外）+ vers（轉）+ ion | 向外轉的狀態 → 外向；外傾性 |
+
+### introvert [ˈɪntrəˌvɝt]
+- **詞性**：n./v.
+- **字源**：intro（向內）+ vert（轉）
+- **意義演變**：向內轉的人 → 內向者；使內向
+- **例句 1**：She is an introvert who enjoys reading alone.  
+  （她是個內向者，喜歡獨自閱讀。）
+- **例句 2**：As an introvert, he finds large crowds exhausting.  
+  （作為一個內向者，他覺得人群擁擠很累人。）
+
+### introversion [ˌɪntrəˈvɝʒən]
+- **詞性**：n.
+- **字源**：intro（向內）+ vers（轉）+ ion
+- **意義演變**：向內轉的狀態 → 內向；內傾性
+- **例句 1**：Introversion is not a flaw but a personality trait.  
+  （內向不是缺陷，而是一種人格特質。）
+- **例句 2**：Her introversion makes her prefer quiet environments.  
+  （她的內向使她偏愛安靜的環境。）
+
+### extrovert [ˈɛkstrəˌvɝt]
+- **詞性**：n./v.
+- **字源**：extro（向外）+ vert（轉）
+- **意義演變**：向外轉的人 → 外向者；使外向
+- **例句 1**：He is an extrovert who loves parties and socializing.  
+  （他是個外向者，熱愛派對和社交。）
+- **例句 2**：Being an extrovert, she easily makes new friends.  
+  （作為一個外向者，她很容易結交新朋友。）
+
+### extroversion [ˌɛkstrəˈvɝʒən]
+- **詞性**：n.
+- **字源**：extro（向外）+ vers（轉）+ ion
+- **意義演變**：向外轉的狀態 → 外向；外傾性
+- **例句 1**：Extroversion is often associated with sociability.  
+  （外向通常與善於社交連結在一起。）
+- **例句 2**：His extroversion makes him a natural leader.  
+  （他的外向使他成為天生的領袖。）
+
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| invert [ɪnˈvɝt] | v. | in（向內）+ vert（轉） | 向內反轉 → 倒置；顛倒 |
+| revert [rɪˈvɝt] | v. | re（回、再次）+ vert（轉） | 轉回原狀 → 恢復到；回到（原來的情況、系統、習慣）|
+| reverse [rɪˈvɝs] | v./n./adj. | re（回、再次）+ vers（轉）+ e | 轉回反方向 → 反轉；相反；倒車；相反的 |
+| reversal [rɪˈvɝsəl] | n. | reverse + al | 反轉的結果 → 逆轉；徹底的變化；推翻 |
+| reversible [rɪˈvɝsəbəl] | adj. | reverse + ible（能夠） | 能夠反轉的 → 可逆的；可翻轉的；可恢復的 |
+| irreversible [ˌɪrɪˈvɝsəbəl] | adj. | ir（否定）+ reversible | 無法反轉的 → 不可逆的；無法恢復的 |
+| convert [kənˈvɝt] | v. | con（一起）+ vert（轉） | 一起轉變 → 轉變；改變（形式、用途、身份、信仰等）|
+| converse [kənˈvɝs] | v./n./adj. | con（一起）+ vers（轉）+ e | 一起交替轉換話語 → 交談；反面；相反的 |
+| conversation [ˌkɑnvɚˈseʃən] | n. | converse + ation | 交談的行為 → 交談 |
+| subvert [səbˈvɝt] | v. | sub（下面）+ vert（轉） | 從下面翻轉 → 顛覆；推翻（制度、政權、觀念等）|
+
+### invert [ɪnˈvɝt]
+- **詞性**：v.
+- **字源**：in（向內）+ vert（轉）
+- **意義演變**：向內反轉 → 倒置；顛倒
+- **例句 1**：Please invert the image before printing.  
+  （請在列印前將圖片倒置。）
+- **例句 2**：The photographer inverted the camera to get a unique angle.  
+  （攝影師顛倒相機以獲得獨特的角度。）
+
+### revert [rɪˈvɝt]
+- **詞性**：v.
+- **字源**：re（回、再次）+ vert（轉）
+- **意義演變**：轉回原狀 → 恢復到；回到（原來的情況、系統、習慣）
+- **例句 1**：The system will revert to its default settings.  
+  （系統將恢復到預設設定。）
+- **例句 2**：After the reform, some people wanted to revert to the old ways.  
+  （改革後，有些人想恢復舊有的方式。）
+
+### reverse [rɪˈvɝs]
+- **詞性**：v./n./adj.
+- **字源**：re（回、再次）+ vers（轉）+ e
+- **意義演變**：轉回反方向 → 反轉；相反；倒車；相反的
+- **例句 1**：The judge decided to reverse the ruling.  
+  （法官決定撤銷這項裁決。）
+- **例句 2**：The car reversed into the garage slowly.  
+  （車子緩慢地倒車進車庫。）
+
+### reversal [rɪˈvɝsəl]
+- **詞性**：n.
+- **字源**：reverse + al
+- **意義演變**：反轉的結果 → 逆轉；徹底的變化；推翻
+- **例句 1**：The stock market experienced a sudden reversal.  
+  （股市經歷了突然的逆轉。）
+- **例句 2**：There was a complete reversal of the company's policy.  
+  （公司的政策出現了徹底的翻轉。）
+
+### reversible [rɪˈvɝsəbəl]
+- **詞性**：adj.
+- **字源**：reverse + ible（能夠）
+- **意義演變**：能夠反轉的 → 可逆的；可翻轉的；可恢復的
+- **例句 1**：The jacket is reversible, with two different colors.  
+  （這件夾克是雙面可穿的，有兩種不同顏色。）
+- **例句 2**：The chemical reaction is reversible under certain conditions.  
+  （這化學反應在特定條件下是可逆的。）
+
+### irreversible [ˌɪrɪˈvɝsəbəl]
+- **詞性**：adj.
+- **字源**：ir（否定）+ reversible
+- **意義演變**：無法反轉的 → 不可逆的；無法恢復的
+- **例句 1**：Global warming may cause irreversible damage to the planet.  
+  （全球暖化可能對地球造成不可逆的傷害。）
+- **例句 2**：The decision to close the factory was irreversible.  
+  （關閉工廠的決定是不可逆轉的。）
+
+### convert [kənˈvɝt]
+- **詞性**：v.
+- **字源**：con（一起）+ vert（轉）
+- **意義演變**：一起轉變 → 轉變；改變（形式、用途、身份、信仰等）
+- **例句 1**：She decided to convert to Buddhism.  
+  （她決定皈依佛教。）
+- **例句 2**：The hotel was converted into an apartment building.  
+  （這間飯店被改建成公寓大樓。）
+
+### converse [kənˈvɝs]
+- **詞性**：v./n./adj.
+- **字源**：con（一起）+ vers（轉）+ e
+- **意義演變**：一起交替轉換話語 → 交談；反面；相反的
+- **例句 1**：They conversed in French for over an hour.  
+  （他們用法語交談了超過一個小時。）
+- **例句 2**：The two opinions are converse to each other.  
+  （這兩種意見彼此相反。）
+
+### conversation [ˌkɑnvɚˈseʃən]
+- **詞性**：n.
+- **字源**：converse + ation
+- **意義演變**：交談的行為 → 交談
+- **例句 1**：I had a pleasant conversation with my neighbor.  
+  （我和鄰居進行了一次愉快的交談。）
+- **例句 2**：The conversation turned to politics.  
+  （話題轉向了政治。）
+
+### subvert [səbˈvɝt]
+- **詞性**：v.
+- **字源**：sub（下面）+ vert（轉）
+- **意義演變**：從下面翻轉 → 顛覆；推翻（制度、政權、觀念等）
+- **例句 1**：The rebels attempted to subvert the government.  
+  （叛軍試圖顛覆政府。）
+- **例句 2**：His ideas subverted traditional values.  
+  （他的觀念顛覆了傳統價值觀。）
+
+## sol 太陽
+s**o**l -> 母音互換原則 -> su**l** -> 子音互換原則l換成n -> su**n**  
+sol與sun都是太陽 
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| solar [ˈsolɚ] | adj. | sol（太陽）+ ar | 與太陽有關的 → 太陽的 |
+| parasol [ˈpærəˌsɔl] | n. | para（遮擋）+ sol（太陽） | 遮擋陽光的傘 → 遮陽傘 |
+| solarium [soˈlɛriəm] | n. | sol（太陽）+ arium（場所） | 接觸陽光的場所 → 日光浴室 |
+| solstice [ˈsɑlstɪs] | n. | sol（太陽）+ st（站立）+ ice | 太陽站立不動的時刻 → 至日（夏至／冬至）|
+| sole [sol] | adj. | sol（獨自）| 獨自一個的 → 單獨的；唯一的 |
+
+### solar [ˈsolɚ]
+- **詞性**：adj.
+- **字源**：sol（太陽）+ ar
+- **意義演變**：與太陽有關的 → 太陽的
+- **例句 1**：Solar energy is becoming more affordable. （太陽能正變得更經濟實惠。）
+- **例句 2**：The solar system consists of eight planets. （太陽系由八顆行星組成。）
+
+### parasol [ˈpærəˌsɔl]
+- **詞性**：n.
+- **字源**：para（遮擋）+ sol（太陽）
+- **意義演變**：遮擋陽光的傘 → 遮陽傘
+- **例句 1**：She carried a parasol to protect her skin. （她帶了遮陽傘來保護皮膚。）
+- **例句 2**：The outdoor café provided parasols for guests. （戶外咖啡廳為客人準備了遮陽傘。）
+
+### solarium [soˈlɛriəm]
+- **詞性**：n.
+- **字源**：sol（太陽）+ arium（場所）
+- **意義演變**：接觸陽光的場所 → 日光浴室
+- **例句 1**：The hotel has a solarium on the rooftop. （飯店屋頂有一間日光浴室。）
+- **例句 2**：He goes to the solarium to get some sunlight in winter. （冬天他會去日光浴室曬點太陽。）
+
+### solstice [ˈsɑlstɪs]
+- **詞性**：n.
+- **字源**：sol（太陽）+ st（站立）+ ice
+- **意義演變**：太陽站立不動的時刻 → 至日（夏至／冬至）
+- **例句 1**：The summer solstice is the longest day of the year. （夏至是一年中最長的一天。）
+- **例句 2**：Many ancient cultures celebrated the winter solstice. （許多古代文化都會慶祝冬至。）
+
+## sol 單獨
+sol~~e~~ -> sol 單獨
+
+| 單字 | 詞性 | 字源拆解 | 意義演變 |
+|------|------|----------|----------|
+| console [kənˈsol] | v. | con（一起）+ sole（獨自）| 使不再獨自悲傷 → 安慰；慰藉 |
+| solo [ˈsolo] | n. | sol（獨自）+ o | 獨自表演 → 獨奏；個人表演 |
+| solitary [ˈsɑləˌtɛri] | adj. | sol（獨自）+ it + ary(形容詞) | 獨自狀態的 → 孤立的；獨自的 |
+| solitude [ˈsɑləˌtjud] | n. | sol（獨自）+ itude（狀態）| 獨自的狀態 → 孤獨；獨處 |
+| desolate [ˈdɛsəlɪt] | v. | de（完全）+ sol（獨自）+ ate(動詞) | 完全孤獨荒涼 → 使淒涼 |
+| isolate [ˈaɪsəˌlet] | adj./v. | isol（孤島）+ ate | 像孤島一樣分離 → 孤立的；隔絕 |
+
+### sole [sol]
+- **詞性**：adj.
+- **字源**：sol（獨自）
+- **意義演變**：獨自一個的 → 單獨的；唯一的
+- **例句 1**：She is the sole survivor of the accident. （她是這場事故的唯一倖存者。）
+- **例句 2**：His sole purpose was to help others. （他唯一的目標就是幫助別人。）
+
+### console [kənˈsol]
+- **詞性**：v.
+- **字源**：con（一起）+ sole（獨自）
+- **意義演變**：使不再獨自悲傷 → 安慰；慰藉
+- **例句 1**：Her friend tried to console her after the loss. （她的朋友試圖在她失去親人後安慰她。）
+- **例句 2**：Music can console the brokenhearted. （音樂能撫慰心碎的人。）
+
+### solo [ˈsolo]
+- **詞性**：n.
+- **字源**：sol（獨自）+ o
+- **意義演變**：獨自表演 → 獨奏；個人表演
+- **例句 1**：She performed a beautiful piano solo. （她表演了一首優美的鋼琴獨奏。）
+- **例句 2**：He released his first solo album last year. （他去年發行了第一張個人專輯。）
+
+### solitary [ˈsɑləˌtɛri]
+- **詞性**：adj.
+- **字源**：sol（獨自）+ itary
+- **意義演變**：獨自狀態的 → 孤立的；獨自的
+- **例句 1**：He lives a solitary life in the countryside. （他在鄉村過著獨居的生活。）
+- **例句 2**：The prisoner was kept in solitary confinement. （這名囚犯被單獨監禁。）
+
+### solitude [ˈsɑləˌtjud]
+- **詞性**：n.
+- **字源**：sol（獨自）+ itude（狀態）
+- **意義演變**：獨自的狀態 → 孤獨；獨處
+- **例句 1**：She enjoys the solitude of the mountains. （她享受山中的孤獨與寧靜。）
+- **例句 2**：Solitude helps him clear his mind. （獨處能幫助他理清思緒。）
+
+### desolate [ˈdɛsəlɪt]
+- **詞性**：v.
+- **字源**：de（完全）+ sol（獨自）+ ate
+- **意義演變**：完全孤獨荒涼 → 使淒涼
+- **例句 1**：The war desolated the entire region. （戰爭使整個地區變得淒涼。）
+- **例句 2**：She felt desolated after her best friend moved away. （她最好的朋友搬走後，她感到十分淒涼。）
+
+### isolate [ˈaɪsəˌlet]
+- **詞性**：adj./v.
+- **字源**：isol（孤島）+ ate
+- **意義演變**：像孤島一樣分離 → 孤立的；隔絕
+- **例句 1**：The village was isolated by heavy snow. （村莊因大雪而與外界隔絕。）
+- **例句 2**：He felt isolated from the rest of the group. （他感覺自己與團體中的其他人隔絕。）

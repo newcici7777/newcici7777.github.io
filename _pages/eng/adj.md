@@ -273,12 +273,225 @@ tivate 本身並不是一個獨立的字根，而是 tiv + ate 的組合，主�
 | captivate | capt（抓住）+ ivate | 迷住、吸引 |
 | festive | fest（節日）+ ivate | 慶祝（較少用） |
 
+## 場所相關字尾 arium orium ary
+### arium
+
+| 字尾 | 意思 | 範例 |
+|------|------|------|
+| -arium | 場所、館、室 | aquarium, planetarium |
+| -orium | 場所（常指公共場所）| auditorium（禮堂）, dormitorium（宿舍） |
+| -ary | 與…相關的地點／事物 | library（圖書館）, dispensary（藥局）|
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| aquarium [əˈkwɛriəm] | aqu（水）+ arium（場所）| n. | 與水相關的場所 → 水族館、養魚缸 |
+| planetarium [ˌplænəˈtɛriəm] | planet（行星）+ arium（場所）| n. | 展示行星的場所 → 天文館 |
+| solarium [soʊˈlɛriəm] | sol（太陽）+ arium（場所）| n. | 與太陽相關的場所 → 日光浴室 |
+| terrarium [təˈrɛriəm] | terr（陸地）+ arium（場所）| n. | 與陸地相關的場所 → 生態箱、飼養箱 |
+| herbarium [hɜrˈbɛriəm] | herb（草本植物）+ arium（場所）| n. | 存放植物標本的場所 → 植物標本館 |
+| sanitarium [ˌsænəˈtɛriəm] | sanit（健康）+ arium（場所）| n. | 促進健康的場所 → 療養院 |
+| vivarium [vaɪˈvɛriəm] | viv（生命）+ arium（場所）| n. | 維持生命的場所 → 動物飼養所 |
+| insectarium [ˌɪnsɛkˈtɛriəm] | insect（昆蟲）+ arium（場所）| n. | 展示昆蟲的場所 → 昆蟲館 |
+
+**-arium** 這個字尾就像「**專門為某種目的設計的場地**」：
+- **aquarium**：專門養「水」中生物的地方 → 水族館
+- **planetarium**：展示「行星」的地方 → 天文館
+- **solarium**：曬「太陽」的地方 → 日光浴室
+- **terrarium**：養「陸地」生物的地方 → 生態箱
+- **herbarium**：收藏「草本植物」的地方 → 植物標本館
+- **sanitarium**：促進「健康」的地方 → 療養院
+- **vivarium**：維持「生命」的地方 → 動物飼養所
+- **insectarium**：展示「昆蟲」的地方 → 昆蟲館
+
+| 情境 | 相關單字 |
+|------|----------|
+| 旅遊／觀光 | aquarium, planetarium, insectarium |
+| 醫療／健康 | sanitarium, solarium |
+| 生物／生態 | terrarium, vivarium, herbarium |
+| 學術研究 | herbarium, vivarium |
+
+- **aqu**arium [əˈkwɛriəm] n. 水族館；養魚缸 [🔊 聽發音](https://www.merriam-webster.com/dictionary/aquarium)
+
+  aqu（水）+ arium（場所）→ 與水相關的場所 → 水族館  
+  例句1: We visited the aquarium during our trip to the city. 我們在去城市旅行時參觀了水族館。  
+  例句2: The aquarium has a wide variety of tropical fish. 這座水族館有多種熱帶魚。  
+  例句3: He cleaned the aquarium at home every week. 他每週清理家裡的魚缸。  
+
+- **plan**etarium [ˌplænəˈtɛriəm] n. 天文館 [🔊 聽發音](https://www.merriam-webster.com/dictionary/planetarium)
+
+  planet（行星）+ arium（場所）→ 展示行星的場所 → 天文館  
+  例句1: The school took the students to the planetarium. 學校帶學生去天文館。  
+  例句2: The planetarium offers shows about the solar system. 天文館提供關於太陽系的展覽。  
+  例句3: She gave a lecture at the planetarium. 她在天文館進行了一場演講。  
+
+- **sol**arium [soʊˈlɛriəm] n. 日光浴室 [🔊 聽發音](https://www.merriam-webster.com/dictionary/solarium)
+
+  sol（太陽）+ arium（場所）→ 與太陽相關的場所 → 日光浴室  
+  例句1: The hotel has a solarium on the rooftop. 這家飯店屋頂有一個日光浴室。  
+  例句2: She relaxed in the solarium for an hour. 她在日光浴室放鬆了一小時。  
+  例句3: The solarium is only open during the summer months. 日光浴室只在夏季開放。  
+
+- **terr**arium [təˈrɛriəm] n. 陸地生物飼養箱；玻璃生態箱 [🔊 聽發音](https://www.merriam-webster.com/dictionary/terrarium)
+
+  terr（土地、陸地）+ arium（場所）→ 與陸地相關的場所 → 玻璃生態箱  
+  例句1: She keeps a terrarium with small plants and insects. 她用生態箱養小植物和昆蟲。  
+  例句2: The terrarium needs regular misting to maintain humidity. 生態箱需要定期噴霧來保持濕度。  
+  例句3: He built a terrarium for his pet lizard. 他為寵物蜥蜴做了一個飼養箱。  
+
+- **herb**arium [hɜrˈbɛriəm] n. 植物標本館；植物標本集 [🔊 聽發音](https://www.merriam-webster.com/dictionary/herbarium)
+
+  herb（草本植物）+ arium（場所）→ 存放植物標本的場所 → 植物標本館  
+  例句1: The university maintains a large herbarium for research. 該大學為研究保存了一座大型植物標本館。  
+  例句2: The herbarium contains thousands of plant specimens. 這座植物標本館收藏了數千件植物標本。  
+  例句3: She donated her collection to the herbarium. 她將自己的收藏捐贈給植物標本館。  
+
+- **sani**tarium [ˌsænəˈtɛriəm] n. 療養院 [🔊 聽發音](https://www.merriam-webster.com/dictionary/sanitarium)
+
+  sanit（健康）+ arium（場所）→ 促進健康的場所 → 療養院  
+  例句1: He spent three months in a sanitarium recovering from illness. 他在療養院度過三個月恢復健康。  
+  例句2: The sanitarium is located in a peaceful mountain area. 療養院位於寧靜的山區。  
+  例句3: She worked as a nurse at a sanitarium. 她在一家療養院擔任護士。  
+
+- **viv**arium [vaɪˈvɛriəm] n. 動物飼養所；生態缸 [🔊 聽發音](https://www.merriam-webster.com/dictionary/vivarium)
+
+  viv（生命）+ arium（場所）→ 維持生命的場所 → 動物飼養所  
+  例句1: The zoo has a large vivarium for reptiles. 動物園有一座大型爬蟲類飼養所。  
+  例句2: The vivarium is carefully temperature-controlled. 這座生態缸經過精確的溫度控制。  
+  例句3: He studies animal behavior in the vivarium. 他在動物飼養所研究動物行為。  
+
+- **insect**arium [ˌɪnsɛkˈtɛriəm] n. 昆蟲館 [🔊 聽發音](https://www.merriam-webster.com/dictionary/insectarium)
+
+  insect（昆蟲）+ arium（場所）→ 展示昆蟲的場所 → 昆蟲館  
+  例句1: The insectarium attracts many visitors during the summer. 昆蟲館在夏季吸引許多遊客。  
+  例句2: They added a new butterfly exhibit to the insectarium. 他們在昆蟲館新增了蝴蝶展區。  
+  例句3: The insectarium is part of the natural history museum. 昆蟲館是自然史博物館的一部分。  
+
+### orium
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| auditorium [ˌɔdəˈtɔriəm] | audit（聽）+ orium（場所）| n. | 聽講的場所 → 禮堂、觀眾席 |
+| emporium [ɛmˈpɔriəm] | empor（貿易）+ ium（場所）| n. | 貿易的場所 → 大商場、百貨公司 |
+| dormitory [ˈdɔrməˌtɔri] | dorm（睡覺）+ itory（場所）| n. | 睡覺的場所 → 宿舍 |
+
+- **aud**itorium [ˌɔdəˈtɔriəm] n. 禮堂；觀眾席 [🔊 聽發音](https://www.merriam-webster.com/dictionary/auditorium)
+
+  audit（聽）+ orium（場所）→ 聽講的場所 → 禮堂、觀眾席 
+  例句1: The conference will be held in the main auditorium. 會議將在主禮堂舉行。  
+  例句2: The auditorium can seat 500 people. 這座禮堂可容納五百人。  
+  例句3: The school auditorium is used for assemblies and performances. 學校禮堂用於集會和表演。  
+
+- **empor**ium [ɛmˈpɔriəm] n. 大百貨公司；商場 [🔊 聽發音](https://www.merriam-webster.com/dictionary/emporium)
+
+  empor（貿易、市場）+ ium（場所）→ 進行貿易的場所 → 大商場  
+  例句1: They own a large furniture emporium in the city. 他們在城裡擁有一家大型家具商場。  
+  例句2: The department store is a famous shopping emporium. 這家百貨公司是著名的購物商場。  
+  例句3: The emporium offers a wide range of products. 這家商場提供種類繁多的產品。  
+
+- **dorm**itory [ˈdɔrməˌtɔri] n. 宿舍 [🔊 聽發音](https://www.merriam-webster.com/dictionary/dormitory)
+
+  dorm（睡覺）+ itory（=orium，場所）→ 睡覺的場所 → 宿舍  
+  例句1: The university has four dormitories for students. 這所大學有四棟學生宿舍。  
+  例句2: He lives in a dormitory near the campus. 他住在校園附近的宿舍。  
+  例句3: The dormitory rules require quiet hours after 10 PM. 宿舍規定晚上十點後需保持安靜。  
+
+### ary 地點
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| library [ˈlaɪˌbrɛri] | libr（書）+ ary（場所）| n. | 放書的場所 → 圖書館 |
+| dispensary [dɪˈspɛnsəri] | dis（分開、出去）+ pens（衡量、稱重）+ ary（場所）| n. | 配藥的場所 → 藥房、診療所 |
+
+- **li**brary [ˈlaɪˌbrɛri] n. 圖書館 [🔊 聽發音](https://www.merriam-webster.com/dictionary/library)
+
+  libr（書）+ ary（場所）→ 放書的場所 → 圖書館[citation:4][citation:6]  
+  例句1: The public library is open until 9 PM. 公共圖書館開放到晚上九點。  
+  例句2: She borrowed several books from the library. 她從圖書館借了幾本書。  
+  例句3: The university library has a large collection. 大學圖書館藏書豐富。  
+
+## ary 人事物 名詞
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| secretary [ˈsɛkrəˌtɛri] | secret（秘密）+ ary（人）| n. | 處理機密事物的人 → 秘書 |
+| notary [ˈnoʊtəri] | not（記錄）+ ary（人）| n. | 做記錄的人 → 公證人 |
+| glossary [ˈɡlɑsəri] | gloss（語言）+ ary（場所/集合）| n. | 存放詞語解釋的地方 → 詞彙表 |
+| commentary [ˈkɑmənˌtɛri] | comment（評論）+ ary（事物）| n. | 評論的事物 → 評論、解說 |
+
+- **glos**sary [ˈɡlɑsəri] n. 詞彙表；術語表 [🔊 聽發音](https://www.merriam-webster.com/dictionary/glossary)
+
+  gloss（語言、解釋）+ ary（場所、集合）→ 存放詞語解釋的地方 → 詞彙表 
+  例句1: The textbook includes a glossary of technical terms. 這本課本包含專業術語詞彙表。  
+  例句2: Please refer to the glossary for definitions. 請參閱詞彙表查詢定義。  
+  例句3: The glossary at the end of the book is very helpful. 書末的詞彙表非常實用。  
+
+- **sec**retary [ˈsɛkrəˌtɛri] n. 秘書；幹事 [🔊 聽發音](https://www.merriam-webster.com/dictionary/secretary)
+
+  secret（秘密）+ ary（人）→ 處理機密事物的人 → 秘書  
+  例句1: She works as an executive secretary at a law firm. 她在一家律師事務所擔任執行秘書。  
+  例句2: The secretary will schedule the meeting for you. 秘書會為你安排會議時間。  
+  例句3: He was elected secretary of the committee. 他被選為委員會的幹事。  
+
+- **no**tary [ˈnoʊtəri] n. 公證人 [🔊 聽發音](https://www.merriam-webster.com/dictionary/notary)
+
+  not（記號、記錄）+ ary（人）→ 做記錄的人 → 公證人  
+  例句1: You need to sign the document in front of a notary. 你需要在公證人面前簽署文件。  
+  例句2: The notary verified the signatures on the contract. 公證人驗證了合約上的簽名。  
+  例句3: He works as a notary in the city. 他在城裡擔任公證人。  
+
+- **com**mentary [ˈkɑmənˌtɛri] n. 評論；解說 [🔊 聽發音](https://www.merriam-webster.com/dictionary/commentary)
+
+  comment（評論）+ ary（事物）→ 評論的事物 → 評論、解說
+  例句1: The newspaper provides political commentary. 這份報紙提供政治評論。  
+  例句2: The DVD includes a director's commentary. 這張DVD包含導演解說。  
+  例句3: His commentary on the situation was insightful. 他對局勢的評論很有見解。  
+
+## ary 形容詞 與…相關的
+
+| 單字 | 字源拆解 | 詞性 | 意義演變 |
+|------|----------|------|----------|
+| elementary [ˌɛləˈmɛntəri] | element（元素、基礎）+ ary（形容詞）| adj. | 與基礎相關的 → 基本的、初級的 |
+| honorary [ˈɑnəˌrɛri] | honor（榮譽）+ ary（形容詞）| adj. | 與榮譽相關的 → 名譽的 |
+| stationary [ˈsteʃəˌnɛri] | station（位置）+ ary（形容詞）| adj. | 與位置相關的 → 靜止的、固定的 |
+| tributary [ˈtrɪbjəˌtɛri] | tribut（給予）+ ary（形容詞/名詞）| adj./n. | 有貢獻的 → 附屬的、支流 |
+
+- **ele**mentary [ˌɛləˈmɛntəri] adj. 基本的；初級的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/elementary)
+
+  element（元素、基礎）+ ary（形容詞）→ 與基礎相關的 → 基本的、初級的[citation:4][citation:6]  
+  例句1: She teaches at an elementary school. 她在小學教書。  
+  例句2: This is an elementary course for beginners. 這是為初學者開設的基礎課程。  
+  例句3: The instructions are written in elementary terms. 說明書用基本詞彙撰寫。  
+
+- **hon**orary [ˈɑnəˌrɛri] adj. 名譽的；榮譽的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/honorary)
+
+  honor（榮譽）+ ary（形容詞）→ 與榮譽相關的 → 名譽的[citation:4][citation:6]  
+  例句1: He received an honorary degree from the university. 他獲得了該大學的名譽學位。  
+  例句2: She is an honorary member of the organization. 她是該組織的名譽成員。  
+  例句3: The honorary chairman gave a speech at the event. 名譽主席在活動上致詞。  
+
+- **sta**tionary [ˈsteʃəˌnɛri] adj. 靜止的；固定的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/stationary)
+
+  station（位置、站立）+ ary（形容詞）→ 與位置相關的 → 靜止的、固定的 
+  例句1: The car remained stationary at the traffic light. 那輛車在紅綠燈前靜止不動。  
+  例句2: A stationary bike is used for indoor exercise. 固定式自行車用於室內運動。  
+  例句3: The machines are stationary and cannot be moved. 這些機器是固定的，無法移動。  
+
+- **tri**butary [ˈtrɪbjəˌtɛri] adj. 附屬的；支流的；n. 附屬國；支流 [🔊 聽發音](https://www.merriam-webster.com/dictionary/tributary)
+
+  tribut（給予、貢獻）+ ary（形容詞／名詞）→ 有貢獻的 → 附屬的；支流
+  例句1: The tributary rivers flow into the main river. 支流匯入主流。  
+  例句2: The country was a tributary state of its larger neighbor. 該國是其較大鄰國的附屬國。  
+  例句3: The tributary streams provide water to the lake. 支流為湖泊提供水源。  
+
 
 ## 字母互換原則
 - 母音互換原則
 - 聲音相近字母互換原則
   - si**t** -> si**d**
 - 意思相近字母互換原則
+- 子音互換 m n l r
+  - s**o**l -> 母音互換原則 -> su**l** -> 子音互換原則l換成n -> su**n**  
+  - sol與sun都是太陽
 
 ## 字首 字根 字尾 解釋
 字首(補充意思) + 字根(核心意思) + 字尾(動詞/名詞/形容/副詞)  
