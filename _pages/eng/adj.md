@@ -1,8 +1,21 @@
 ---
-title: 形容詞字尾
+title: 字首字尾
 date: 2026-06-23
-keywords: English, adj字尾
+keywords: English, 字首字尾
 ---
+## 母音互換
+母音互換，因為以前的人使用替換母音來分動詞時態、名詞單複數，但後來單字愈來愈多，使用ed做為過去式，名詞後面加上s，但仍有多數單字保留母音互換的傳統。
+
+### 不規則動詞
+- sing sang sung
+- sit sat sat
+- win won won
+
+### 名詞單複數
+- man men
+- tooth teeth
+- mouse mice
+
 ## ab vs ad
 ab 反/遠離/脫離/否定/狀態斷開: 口訣不不不不不不bbbbb
 - ab(沒有)sent(看見) 缺席
@@ -172,6 +185,52 @@ con + 沒有在之前提到過的子音 = con
 | contest | /kənˈtɛst/（v.）/ˈkɑntɛst（n.） | -test（測試） | 大家一起測試（競爭） | 比賽；競爭；質疑 |
 | conclude | /kənˈklud/ | -clude（關、閉） | 把內容一起關閉，下總結 | 結束；推斷；締結 |
 
+### uni 一個
+**u**ni -> u換o -> on**i** -> i換e -> on**e**
+
+- uni + t = 一個整體 n.單位 個體
+- uni + on = 合為一體 n.聯合;工會
+- uni + te = 使成為 v. 聯合;團結
+- uni + ty = 一體性 n.統一;團結
+- uni + que = que是跟隨，只跟隨一個 = 獨特 adj.獨一無二
+- uni + form = 一個形式  adj.統一的 n.制服
+
+## in 否定
+- in(不) + correct = incorrect不正確
+- in(不) + visible = invisible不可見的
+- in(不) + dependent = independent不依賴人的 = 獨立
+
+### im + p,b,m
+鼻音in -> 結束時需要張嘴  
+p音，嘴巴要先閉上再發音，因此把in改成im，m可以閉上嘴巴，再發p音  
+
+| 單字 | 字源拆解 | 意義演變 |
+|------|----------|----------|
+| impossible [ɪmˈpɑsəbəl] | im（否定）+ poss（能夠）+ ible | 無法做到的 → 不可能的 |
+| imperfect [ɪmˈpɝfɪkt] | im（否定）+ perfect（完美的） | 不完美的 → 不完美的 |
+| impolite [ˌɪmpəˈlaɪt] | im（否定）+ polite（禮貌的） | 不禮貌的 → 不禮貌的 |
+| impatient [ɪmˈpeʃənt] | im（否定）+ patient（耐心的） | 沒有耐心的 → 沒耐心的 |
+| immature [ˌɪməˈtʃʊr] | im（否定）+ mature（成熟的） | 不成熟的 → 不成熟的 |
+| immoral [ɪˈmɔrəl] | im（否定）+ moral（道德的） | 不道德的 → 不道德的 |
+| imbalance [ɪmˈbæləns] | im（否定）+ balance（平衡） | 不平衡的狀態 → 不平衡的 |
+
+### il + l
+in 舌尖要先頂住上門牙後面，但又要馬上發出l的聲音，於是就乾脆用l的聲音代替n
+
+| 單字 | 字源拆解 | 意義演變 |
+|------|----------|----------|
+| illegal [ɪˈligəl] | il（否定）+ legal（合法的） | 不合法的 → 非法的 |
+| illogical [ɪˈlɑdʒɪkəl] | il（否定）+ logical（合乎邏輯的） | 不合邏輯的 → 不合邏輯的 |
+| illimitable [ɪˈlɪmɪtəbəl] | il（否定）+ limit（界限）+ able（能夠） | 無法被畫下界線的 → 無限的 |
+
+### ir + r
+in 舌尖頂住上門牙後面，再發r音，發不出r的捲舌音，於是就乾脆用r的聲音代替n
+
+| 單字 | 字源拆解 | 意義演變 |
+|------|----------|----------|
+| irregular [ɪˈrɛgjəlɚ] | ir（否定）+ regular（規則的） | 不符合規則的 → 不規則的 |
+| irresponsible [ˌɪrɪˈspɑnsəbəl] | ir（否定）+ responsible（負責的） | 不負責任的 → 不負責任的 |
+| irrelevant [ɪˈrɛləvənt] | ir（否定）+ relevant（相關的） | 不相關的 → 不相關的 |
 
 ## ile
  -ilis，核心意思是「傾向於...的」、「能夠...的」或「具有...性質的」。
@@ -492,6 +551,10 @@ tivate 本身並不是一個獨立的字根，而是 tiv + ate 的組合，主�
 - 子音互換 m n l r
   - s**o**l -> 母音互換原則 -> su**l** -> 子音互換原則l換成n -> su**n**  
   - sol與sun都是太陽
+- 子音互換 d t s th
+- 子音互換 u v w
+- 子音互換 b p m f v
+- 子音互換 g k h
 
 ## 字首 字根 字尾 解釋
 字首(補充意思) + 字根(核心意思) + 字尾(動詞/名詞/形容/副詞)  

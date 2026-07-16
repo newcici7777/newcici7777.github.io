@@ -222,6 +222,27 @@ apt = 適合、能力（源自拉丁語 aptus「適合的、有能力的」）
   例句3: The project failed due to managerial ineptitude. 這個專案因管理上的無能而失敗。  
 
 ## tend
+- tend v.照料：照顾
+- tend v.倾向于；趋向于
+- tendency n.倾向：趋势
+- attend v. 出席；参加
+  - attend school
+  - attend class 
+  - attend a meeting
+- attend v.照应；接待；护理
+- attendance n.出席：出勤：出勤情况
+- extend v.延伸;延长；扩展
+- extension n.延伸;延长；扩展
+- extensive adj.广阔的；广泛的
+- intend v.想要；打算；准备
+- intention n.意图；目的；打算
+- contend v.竟争；争夺
+- contend v.争论；辩论
+- contend v.主张；坚称
+- tense adj.绷紧的；紧张的
+  - tense muscles 紧绷的肌肉
+  - a tense situation 紧张的局势
+- tension n紧张；焦虑；绷紧；拉力
 
 | 單字 | 詞性 | 字源拆解 | 意義演變 |
 |------|------|----------|----------|
