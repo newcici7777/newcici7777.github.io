@@ -183,3 +183,54 @@ st.set_page_config(
 )
 {% endhighlight %}
 ![img]({{site.imgurl}}/streamlit/config2.png)<br>
+
+## st.chat_input() st.chat_message()
+
+文件位置:API reference/Chat elements/st.chat_input
+
+文件位置:API reference/Chat elements/st.chat_message
+
+![img]({{site.imgurl}}/streamlit/chat_msg2.png)<br>
+
+{% highlight python linenos %}
+import streamlit as st
+from openai import OpenAI
+
+st.set_page_config(
+    page_title="Streamlit Example",
+    page_icon="😁",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        "About": "This is a example page.",
+        "Get Help": "https://streamlit.io/",
+    }
+)
+
+system_prompt = "You are a helpful assistant."
+
+client = OpenAI(
+    # Gemini 提供的 OpenAI 兼容 Base URL
+    base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
+)
+
+prompt = st.chat_input("請問你要問什麼問題")
+if prompt:
+    st.chat_message("user").write(prompt)
+
+    response = client.chat.completions.create(
+        # 使用 Gemini 的模型名稱
+        model="gemini-3-flash-preview",
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": prompt}
+        ],
+        stream=False  # 串流輸出, 注意是大寫的True
+    )
+    print(response.choices[0].message.content)
+    st.chat_message("assistant").write(response.choices[0].message.content)
+{% endhighlight %}
+
+![img]({{site.imgurl}}/streamlit/chat_msg1.png)<br>
+
+
