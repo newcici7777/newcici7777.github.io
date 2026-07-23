@@ -171,6 +171,22 @@ Thank you.
 Nice to see you.
 ```
 
+### 去掉`\n`
+{% highlight python linenos %}
+f = open("/Users/cici/testc/file_test2", "r", encoding="utf-8")
+lines = f.readlines()
+for line in lines:
+    # end = "" 不要換行，print本身就會自動換行
+    # 每一個line後面都有\n
+    # strip()去掉每一個lint後面的\n
+    print(line.strip(), end = "")
+f.close()
+{% endhighlight %}
+```
+Hello!Hi!Thank you.Nice to see you.
+Process finished with exit code 0
+```
+
 ## 寫入檔案
 ### mode = w
 以下程式碼建立檔案，如果沒有此檔案，則會建立，若已經有此檔案，則會清空內容，並寫入新的內容。<br>
@@ -488,6 +504,14 @@ def print_info(dir_path):
 
 path = "/Users/cici/testc"
 print_info(path)
+{% endhighlight %}
+
+## 判斷是否存在目錄
+{% highlight python linenos %}
+import os
+
+if not os.path.exists("目錄名"):
+    print("目錄不存在")
 {% endhighlight %}
 
 [1]: {% link _pages/python/sleep_ctime.md %}

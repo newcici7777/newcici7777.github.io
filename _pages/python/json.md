@@ -90,3 +90,66 @@ print(res_dict)
 ```
 {'name': 'Cici', 'age': 20, 'gender': '女'}
 ```
+
+## json 檔案讀與寫
+- dump 把dict 轉成 json格式 存入檔案
+- load 把 json格式 轉成 dict
+
+把dict obj 轉成 json格式 存入檔案，第二個參數有f
+```
+obj = {
+    "name": "王大明",
+    "age": 18,
+    "gender": "male",
+}
+json.dump(obj, f)
+```
+
+把檔案裡的json格式轉成dict，以下參數有f
+```
+obj = json.load(f)
+```
+
+### json 寫入檔案
+indent 為縮排空格
+{% highlight python linenos %}
+import json
+
+obj = {
+    "name": "王大明",
+    "age": 18,
+    "gender": "male",
+}
+with open("data/session.json", "w", encoding="utf-8") as f:
+    json.dump(obj, f, ensure_ascii=False, indent=2)
+{% endhighlight %}
+```
+{
+  "name": "王大明",
+  "age": 18,
+  "gender": "male"
+}
+```
+
+### 讀取json檔案
+{% highlight python linenos %}
+import json
+
+with open("data/session.json", "r", encoding="utf-8") as f:
+    obj = json.load(f)
+    print(obj)
+{% endhighlight %}
+```
+{'name': '王大明', 'age': 18, 'gender': 'male'}
+```
+
+### 物件格式是dict
+{% highlight python linenos %}
+import json
+with open("data/session.json", "r", encoding="utf-8") as f:
+    obj = json.load(f)
+    print(type(obj))
+{% endhighlight %}
+```
+<class 'dict'>
+```
