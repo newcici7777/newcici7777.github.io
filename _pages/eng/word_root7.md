@@ -618,7 +618,7 @@ fluctuate
 
 ## spec spic 看
 - inspect -> 向裡面看 -> 檢查
-- specific -> 看得清楚 -> 具體的
+- specific ->   看得清楚 -> 具體的
 - respect -> 再次看 -> 尊敬
 - conspicuous -> 大家都能看見 -> 顯眼的
 

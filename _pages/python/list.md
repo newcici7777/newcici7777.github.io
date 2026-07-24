@@ -291,6 +291,12 @@ print(f"list1 = {list1} ")
 list1 = ['Alice', 'Alex', 'Mary', 'Jack', 'Joy', 'Tom'] 
 ```
 
+## `reverse=True` 翻轉排序
+{% highlight python linenos %}
+    session_list.sort(reverse=True)
+    return session_list
+{% endhighlight %}
+
 [1]: {% link _pages/python/id_interning.md %}
 [2]: {% link _pages/c/array/arrayOfPointers.md %}
 [3]: {% link _pages/python/for.md %}

@@ -233,4 +233,43 @@ if prompt:
 
 ![img]({{site.imgurl}}/streamlit/chat_msg1.png)<br>
 
+## column
+位置在 API reference/Layouts and containers/st.columns
+
+<https://docs.streamlit.io/develop/api-reference/layout/st.columns>
+
+```
+st.columns(spec, *, gap="small", vertical_alignment="top", border=False, width="stretch")
+```
+
+spec寬度比例，可以是浮點數或整數
+```
+以下分成2欄，第1欄70%寬，第2欄30%寬
+[0.7, 0.3]
+
+以下分成6等份，第1欄佔1份，第2欄佔2份，第3欄佔3份
+[1, 2, 3]
+```
+
+spec為分成幾等份，以下為範例:
+{% highlight python linenos %}
+import streamlit as st
+# 分成3等份
+# 分別為col1 col2 col3
+col1, col2, col3 = st.columns(3)
+
+# 每一等份中的組件內容
+with col1:
+    st.header("A cat")
+    st.image("https://static.streamlit.io/examples/cat.jpg")
+
+with col2:
+    st.header("A dog")
+    st.image("https://static.streamlit.io/examples/dog.jpg")
+
+with col3:
+    st.header("An owl")
+    st.image("https://static.streamlit.io/examples/owl.jpg")
+{% endhighlight %}
+
 
