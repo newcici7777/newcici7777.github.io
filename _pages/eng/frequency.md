@@ -1,0 +1,28 @@
+---
+title: 頻率副詞
+date: 2026-07-29
+keywords: English, Frequency
+---
+
+## 現在式(習慣) 頻率副詞
+always放在動詞前  
+- Tom alwavs visits his grandma on her birthday. It's in May.Tom总是在他奶奶生日的时候去看望她。是在五月。
+- Anna sometimes goes to work by car.
+- Where does she usually play basketball?
+- He often walks to school
+
+What do you usually draw?  
+
+Do you usually cook dinner?  
+
+every 每一  
+She practices guitar every Tuesday.  
+注意，guitar前面沒有the
+
+Every day放句首  
+Every day, he sees Lily drawing in the park.  
+
+One day放句首
+One day, he decides to talk to her.
+
+

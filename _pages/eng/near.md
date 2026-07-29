@@ -1,0 +1,93 @@
+---
+title: 地方副詞 close to, next to, near, beside
+date: 2026-07-28
+keywords: close to, next to, near, beside
+---
+## in 大地方(大範圍)/國家 
+in the Park.  
+in Taiwan.  
+
+- Do you like the weather in Taiwan?  
+
+## in在裡面
+Are you in the classroom?  
+你在教室里吗？
+
+## in 範圍
+She's the tallest girl in my school.
+
+## in在冰箱裡
+- Do we have milk in the refrigerator?
+- The food is in the refrigerator.
+
+## on在街上
+在这条街上有一个咖啡店。  
+There's a coffee shop [on] this street. 
+
+### at小地點
+Oscar is at an art museum.
+
+Is there a bookstore [at the end of that
+street]?
+
+We can meet at a cafe.
+
+## inside
+咖啡店在楼的里面，不在外面。  
+The coffee shop is inside the building, not
+outside. 
+
+## outside
+- It's too hot outside. It's the hottest day in August. I want to go home.
+- The swimming pool is outside.
+
+## between A地 and B地
+- between the coffee shop and the zoo (在咖啡店和动物园之间 )
+
+## from A地 to B地
+- Let's walk from the museum to the restaurant(咱们从博物馆走去餐厅吧。)
+
+## 地方修飾前面的名詞
+- The breakfast **here** is very good!
+- People **in this city** speak French
+
+## close to
+- Our new house is closer to our grandparents' village
+- Our house is close to the river, but it's closer to
+the garden.
+- This building is close to that park.(这座楼靠近那个公园 )
+
+## next to
+- That flower garden is next to my house.
+- He is sitting next to you!
+- There is a refrigerator next to the swimming pool.
+- Let's put this plant next to the window.(咱们把这个植物放在窗户旁边吧。)
+- The kitchen is next to the dining room.
+
+
+## near
+- Do you want the duck near the water or on the grass?
+- near the zoo(在动物园附近)
+- I am from a small town near Shanghai.(我来自上海附近的一个小镇。)
+
+## behind
+- The garden behind the house has many flowers and trees.
+- A lot of people are waiting behind you!
+
+ 
+## pass past
+我需要开车经过动物园吗？  
+Do I need to drive past the zoo? 
+
+
+## stop 地點
+- Because the road stops here. At the river.
+
+
+
+- The driver turns left and stops the car.
+- Turn left at the end of the street,
+- I don't need to turn for three more miles.
+- I think my directions are wrong.
+- Do you want to use my directions?
+- The directions on my phone say that road is faster...

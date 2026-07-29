@@ -164,6 +164,53 @@ if __name__ == '__main__':
     # app 為先前fastapi物件
     # 0.0.0.0 為任何電腦都可訪問，ip不限制
     uvicorn.run(app, host="0.0.0.0", port=8000)
-
 {% endhighlight %}
 
+## 建立目錄 與 日期
+### 建立目錄
+import
+```
+import os
+```
+{% highlight python linenos %}
+if not os.path.exists('sessions'):
+    os.mkdir('sessions')
+{% endhighlight %}
+
+### 日期產生session
+```
+from datetime import datetime
+```
+{% highlight python linenos %}
+def generate_session_id():
+    return datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+{% endhighlight %}
+
+## session api
+建立sessioin
+{% highlight python linenos %}
+@app.post("/api/sessions")
+def create_session():
+    session_id = generate_session_id()
+    session_data = {"session_id": session_id,
+                    "messages": []}
+    with open(os.path.join('sessions', session_id + ".json"), "w") as f:
+        json.dump(session_data, f, ensure_ascii=False, indent=2)
+
+    return {"code":200, "message":"session created", "data":session_id}
+{% endhighlight %}
+
+![img]({{site.imgurl}}/fastapi/api_session.png)<br>
+
+檢查是否有sessions目錄與建立日期檔案<br>
+![img]({{site.imgurl}}/fastapi/api_session2.png)<br>
+
+點擊檔案內容:
+```
+{
+  "session_id": "2026-07-28_15-23-46",
+  "messages": []
+}
+```
+
+6385
