@@ -213,4 +213,209 @@ def create_session():
 }
 ```
 
-6385
+## pydantic的BaseModel 父類別
+
+FastAPI 學習 > 教學 - 使用者指南 > 回應模型 - 回傳型別
+
+回應模型 - 回傳型別:<https://fastapi.tiangolo.com/zh-hant/tutorial/response-model/>
+
+使用 Pydantic 將**回傳資料序列化為 JSON**
+
+{% highlight python linenos %}
+# FastApi Response 父類別
+from pydantic import BaseModel
+# 任意類型
+from typing import Any
+
+# 繼承父類別BaseModel
+class ApiResponse(BaseModel):
+    code: int
+    message: str
+    data: Any # 任意類別
+{% endhighlight %}
+
+修改一下回傳值
+{% highlight python linenos %}
+@app.post("/api/sessions")
+def create_session():
+    session_id = generate_session_id()
+    session_data = {"session_id": session_id,
+                    "messages": []}
+    with open(os.path.join('sessions', session_id + ".json"), "w") as f:
+        json.dump(session_data, f, ensure_ascii=False, indent=2)
+
+    # 修改用ApiResponse回傳
+    return ApiResponse(code=200, message="Session created successfully.", data=session_id)
+{% endhighlight %}
+postman 執行 Post http://127.0.0.1:8000/api/sessions
+```
+{
+    "code": 200,
+    "message": "Session created successfully.",
+    "data": "2026-07-30_13-19-22"
+}
+```
+
+## 處理Request
+```
+Post http://127.0.0.1:8000/api/chat
+```
+
+傳送的資料row
+```
+{
+    "session_id": "2026-07-30_13-19-22",
+    "message": "hello"
+}
+```
+![img]({{site.imgurl}}/fastapi/request.png)<br>
+
+{% highlight python linenos %}
+# Request父類別 繼承BaseModel
+class ChatRequest(BaseModel):
+    session_id: str
+    message: str
+
+# request 接收參數
+@app.post("/api/chat")
+def chat(request: ChatRequest) -> ApiResponse:
+    # 輸出收到的參數
+    print(f"session_id = {request.session_id}, message = {request.message}")
+    return ApiResponse(code=200, message="測試", data="")
+{% endhighlight %}
+
+
+{% highlight python linenos %}
+# 取得session檔案
+def get_session_file_name(session_id):
+    return f"sessions/{session_id}.json"
+{% endhighlight %}
+
+## 完整程式碼
+{% highlight python linenos %}
+import json
+import os
+from datetime import datetime
+from typing import Any
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+from starlette.responses import FileResponse
+from starlette.staticfiles import StaticFiles
+from openai import OpenAI
+
+# 建立fastapi物件
+app = FastAPI()
+# 掛載（mounting）
+# 第一個 "/static" 指的是這個「子應用」要被「掛載」的子路徑。因此，任何以 "/static" 開頭的路徑都會由它處理。
+# directory="static" 指向包含你靜態檔案的目錄名稱。
+# name="static" 為它指定一個可供 FastAPI 內部使用的名稱。
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+if not os.path.exists('sessions'):
+    os.mkdir('sessions')
+
+# 取得session_id
+def generate_session_id():
+    return datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+
+
+# 取得session檔案
+def get_session_file_name(session_id):
+    return f"sessions/{session_id}.json"
+
+# 建立session_id檔案
+@app.post("/api/sessions")
+def create_session():
+    session_id = generate_session_id()
+    session_data = {"session_id": session_id,
+                    "messages": []}
+    with open(os.path.join('sessions', session_id + ".json"), "w") as f:
+        json.dump(session_data, f, ensure_ascii=False, indent=2)
+
+    return ApiResponse(code=200, message="Session created successfully.", data=session_id)
+
+# 傳回值類型 父類別
+class ApiResponse(BaseModel):
+    code: int
+    message: str
+    data: Any
+
+# Request 父類別
+class ChatRequest(BaseModel):
+    session_id: str
+    message: str
+
+# ai
+client = OpenAI(
+    # Gemini 提供的 OpenAI 兼容 Base URL
+    base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
+)
+
+# 處理與ai 聊天
+@app.post("/api/chat")
+def chat(request: ChatRequest) -> ApiResponse:
+    # print(f"session_id = {request.session_id}, message = {request.message}")
+    # 取得session_id 檔案
+    session_path = get_session_file_name(request.session_id)
+    with open(session_path, "r", encoding="utf-8") as f:
+        # 將檔案內容轉成json
+        session_data = json.load(f)
+    # 系統提示詞
+    messages = [{"role": "system", "content": "你的名字是王小美，身份是好朋友"}]
+
+    # 取得session_id檔案中的對話記錄
+    for message in session_data["messages"]:
+        messages.append(message)
+
+    # user的訊息
+    messages.append({"role": "user", "content": request.message})
+
+    # 問AI
+    response = client.chat.completions.create(
+        # 使用 Gemini 的模型名稱
+        model="gemini-3-flash-preview",
+        messages=messages,
+        stream=False  # 串流輸出, 注意是大寫的True
+    )
+
+    # ai回覆
+    ai_response = response.choices[0].message.content
+
+    # 移掉系統提示詞
+    messages.pop(0)
+    # 加上ai回覆(讓ai有記憶)
+    messages.append({"role": "assistant", "content": ai_response})
+    # 將新的messages 存入session_data["messages"]
+    session_data["messages"] = messages
+    # 將messages對話內容存入session_id檔案
+    with open(session_path, "w", encoding="utf-8") as f:
+        json.dump(session_data, f, ensure_ascii=False, indent=2)
+    # 傳回值
+    return ApiResponse(code=200, message="成功取得AI回覆", data=ai_response)
+
+# 路徑函式
+@app.get("/")
+def root():
+    return FileResponse("static/index.html")
+
+
+@app.get("/users")
+def get_users():
+    return [
+        {"id": 1, "name": "Mary"},
+        {"id": 2, "name": "Bill"}
+    ]
+
+
+# fastapi server
+if __name__ == '__main__':
+    import uvicorn
+
+    # app 為先前fastapi物件
+    # 0.0.0.0 為任何電腦都可訪問，ip不限制
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+
+{% endhighlight %}
+
+6512
