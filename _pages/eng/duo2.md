@@ -28,6 +28,7 @@ him.
 - they want to meet us at the theater.
 - Do you want to meet at the big doors?
 - Duo will meet them at the library
+- Eddy meets his neighbor Vikram at the airport.
 
 ## never
 - We never work on Friday**s**
@@ -53,14 +54,7 @@ him.
 ## carrying
 - Eddy is carrying a painting.
 
-## home
-- why are you home?(為什麼你在家)
-- What is your home address?(你家的地址是什么？)
-- When she gets home
-- I want to go home
-- come home 回家 
-- work from home 在家工作
-- I'll be at home between six o'clock and seven o'clock.(我在六点到七点之间会在家。)
+
 
 ## day off 放假
 - I have a day off!
@@ -71,6 +65,7 @@ him.
 
 ## both A and B
 - both Anna and I love our new house!
+- Both Times Square and Wall street are in New York.
 
 ## both 二者
 Both skirt[s] are green.
@@ -85,6 +80,7 @@ each + 單數動詞
 ## hard
 - they work hard during the week.(hard作為副詞)
 - this is a hard work. (hard作為形容詞)
+- The test was hard yesterday.
 
 ## work
 ### 名詞work
@@ -123,8 +119,34 @@ Who will [work from home] next week?
 - And I want all my friends to come!
 - We need to invite them all now!
 
-## be + wearing 
+## be + wearing 穿什麼衣服/穿什麼鞋子/戴什麼帽子
 - Is she wearing a red hat ?
+
+## kind of 種類
+- This kind of cheese is nice!
+
+## then 然後
+- It rained then snowed.(下雨然後下雪)
+
+## remember 
+remember + to 
+- I remembered to water your plants...
+
+## only 只是
+- I was only gone for a week!
+
+## just 剛剛/僅僅
+- what did you just eat?
+
+## arrive at
+- They arrive at Vikram's apartment.
+
+
+## water
+- I watered your plants three times every day!(澆水)
+- We eat by the water.我们在水边吃。
+
+
 
 ## 無法分類
 - That road **to** our village is long and busy.(到我们村子的那条路又长又繁忙。)

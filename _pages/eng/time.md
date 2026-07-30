@@ -129,8 +129,11 @@ tomorrow morning.
 Can you [come home] before six o'clock?  
 
 ## 前天 大後天 幾天前 幾天後
+
 - I'll be too busy **the day after tomorrow.**
 - where will Duo be the day after tomorrow?
+
+- I called Bob the day before yesterday.
 
 ## start
 start 後面可以用to或ing
@@ -141,14 +144,14 @@ start + Ving 把動作變成「做...的事情」，變名詞
 - He starts eating the sandwich.  
 - Junior starts to wash the dishes.  
 
-你下周会开始你的新工作。  
-You will [start] your new job next week.  
-
-下一节课什么时候会开始？  
-When will [the next class] start? 
-
+問時間
+- when will the next meeting start?(下个会议什么时候开始？)  
+- When will [the next class] start? 下一节课什么时候会开始？ 
+- Does the English exam start at six
 - The game starts at five.
 - What time does the meeting start?
+- You will [start] your new job next week.你下周会开始你的新工作。  
+
 
 ### start 開學
 - When do you start school?

@@ -418,4 +418,28 @@ if __name__ == '__main__':
 
 {% endhighlight %}
 
-6512
+## 取得 session_ids
+![img]({{site.imgurl}}/fastapi/session_ids.png)<br>
+{% highlight python linenos %}
+# 取得sessions List
+@app.get("/api/sessions")
+def get_sessions() -> ApiResponse:
+    # 取得sessions目錄下所有檔案
+    session_files = os.listdir("sessions")
+
+    # 取得session_ids
+    session_ids = [file.split(".")[0] for file in session_files]
+    return ApiResponse(code=200, message="取得session_ids成功", data=session_ids)
+{% endhighlight %}
+
+## 取得單獨session_id
+![img]({{site.imgurl}}/java_datastruct/session_id.png)<br>
+{% highlight python linenos %}
+@app.get("/api/sessions/{session_id}")
+def get_session(session_id: str) -> ApiResponse:
+    session_file = get_session_file_name(session_id)
+    with open(session_file, "r", encoding="utf-8") as f:
+        session_data = json.load(f)
+    return ApiResponse(code=200,message="取得對話檔案成功",data=session_data)
+{% endhighlight %}
+

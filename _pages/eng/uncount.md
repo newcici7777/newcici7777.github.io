@@ -14,18 +14,15 @@ keywords: countable , uncountable
 ```
 a lot of + 可數s/不可數 名詞
 ```
-A lot of people do this every day.
-
-A lot of people are waiting behind you!
-
-A lot of thing[s]!
+- A lot of people do this every day.
+- A lot of people are waiting behind you!
+- A lot of thing[s]!
 
 ## a lot 作為副詞
 a lot 作為副詞，修飾動詞，放動詞後面。    
-在冬天經常下雪  
-It snows [a lot] in the winter.  
-在夏天经常下雨。
-It rains [a lot] in the summer.
+
+- It snows [a lot] in the winter.(在冬天經常下雪  )  
+- It rains [a lot] in the summer.(在夏天经常下雨。)
 
 a lot放最後
 - I like her a lot.
@@ -41,6 +38,8 @@ a lot放最後
 - I want to do so many things!
 - There are many old books on the bookcase.
 - She has many photoes of her daughter.
+- There are many shows in Las Vegas.
+- How many babies are at the party?
 
 ## much + 不可數名詞
 
@@ -66,3 +65,7 @@ juice為不可數名詞，不能加s。
 - She'll buy her parents some beans.
 - Duo will give me some potatoes tomorrow.
 - I love these flower**s**
+
+## Cake Pizza可為可數/不可數
+- It's a very small cake.(有數量，代表可數)
+- I like to make cakes.

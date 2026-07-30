@@ -8,5 +8,12 @@ keywords: talk, tell, speak, ask
 - Can I ask you a question?
 - I will ask Lisa some questions tomorrow.
 
+## tell
+```
+tell + 人 + 事
+```
+- I need to tell you something.
+
 ## talk
 - you're talking to Leo!
+- I told you to water the plants three times every week!

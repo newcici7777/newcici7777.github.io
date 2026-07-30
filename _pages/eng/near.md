@@ -24,13 +24,16 @@ She's the tallest girl in my school.
 在这条街上有一个咖啡店。  
 There's a coffee shop [on] this street. 
 
-### at小地點
-Oscar is at an art museum.
+## at小地點
+- Oscar is at an art museum.
+- We can meet at a cafe.
 
-Is there a bookstore [at the end of that
-street]?
+## at the end of 
+- Is there a bookstore at the end of that
+street?
 
-We can meet at a cafe.
+## at the table 在桌邊
+- Lin sees her grandmother, Lucy, at the table.
 
 ## inside
 咖啡店在楼的里面，不在外面。  
@@ -44,12 +47,14 @@ outside.
 ## between A地 and B地
 - between the coffee shop and the zoo (在咖啡店和动物园之间 )
 
-## from A地 to B地
+## 動詞 from A地 to B地
 - Let's walk from the museum to the restaurant(咱们从博物馆走去餐厅吧。)
+- I walked from my hotel to the concert last night.
 
 ## 地方修飾前面的名詞
 - The breakfast **here** is very good!
 - People **in this city** speak French
+- The English class **yesterday** was not bad!
 
 ## close to
 - Our new house is closer to our grandparents' village
@@ -78,6 +83,9 @@ the garden.
 ## pass past
 我需要开车经过动物园吗？  
 Do I need to drive past the zoo? 
+
+## 動詞 + home
+- Thanks for driving me home.
 
 
 ## stop 地點

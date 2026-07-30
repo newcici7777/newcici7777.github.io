@@ -63,7 +63,6 @@ l'm paying for the ride,
 ## get
 ### 買
 - Do you want to get a tall bookcase or a short bookcase ?(你想要买一个高的书柜还是一个矮的书柜？)
-- let's get some beans(我們去買一些豆子吧)
 - Can we get tickets?(買機票)
 
 ### 抵達
