@@ -29,6 +29,7 @@ him.
 - Do you want to meet at the big doors?
 - Duo will meet them at the library
 - Eddy meets his neighbor Vikram at the airport.
+- tomorrow you will meet your new baby brother! 
 
 ## never
 - We never work on Friday**s**
@@ -46,18 +47,13 @@ him.
 - the book store is open.
 - The museum [is open] [from] ten o'clock [to] five o'clock [on] Saturday, but it [is closed] [on] Sunday.
 
-## 動詞 + 方向
+## 動詞 + into 動作感的進入
 - Eddy walks into Oscar's apartment.
 - Junior runs into his room.
 - A janitor walks into the room.(janitor 為清潔員)
 
 ## carrying
 - Eddy is carrying a painting.
-
-
-
-## day off 放假
-- I have a day off!
 
 ## put
 - I'm going to put these boxes in the living room. After lunch, can you help me put the refrigerator in the kitchen?
@@ -146,6 +142,15 @@ remember + to
 - I watered your plants three times every day!(澆水)
 - We eat by the water.我们在水边吃。
 
+## is visiting 短暫拜訪
+Sorry Anna, I can't meet you. My friend [is visiting.]  
+
+## its
+- That sheep is eating its food right now
+- That cow is eating its grass.
+- This sheep has a big head, but its
+eyes are very small.
+- Is your watch in its box ?(你的手表在它的盒子里吗？)
 
 
 ## 無法分類
@@ -154,4 +159,4 @@ remember + to
 - She needs a bath
 - France has beautiful mountains
 
-7389
+0056

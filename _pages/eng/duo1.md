@@ -27,34 +27,6 @@ Is Duo [on your basketball team]?
 
 She's not [on] this baseball team.
 
-## have 吃飯 喝飲料 吃藥 舉辦party
-### 吃
-We can have dinner.    
-
-### 吃藥
-have medison.  
-
-### 喝
-- Do you want to have coffee with us?
-- have drinks. 
-
-### have 活動
-- Let's have a party
-- have a party.  
-- have a picnic.野餐  
-- have a meeting 開會
-- Do you have classes today? (上課，記得課是複數es)
-- We won't have a meeting tomorrow morning.(我們明天早上不會開會 )  
-- What time do you want to have your party?
-
-### 擁有
-- I [never have time] to make breakfast for you.我沒有時間。 
-- [Do] chicken[s] have hands? 鸡有手吗？
-
-### 生小孩
-她明年五月会生一个宝宝。  
-she'll have a baby next May.  
-
 ## subject, course
 subject為科目、課
 此處的Japanese為日文，subject為科目、課  
@@ -70,165 +42,6 @@ I need a course book.
 
 你今天有课吗？  
 Do you have class[es] today?  
-
-## of 屬於 東西的
-「通常」沒有生命的東西，表示屬於誰的，用 
-前面的東西「屬於of」後面的東西，也可用先翻譯「後面東西」的of「前面東西」
-```
-前面的東西 of 後面的東西
-a picture of 人事物
-```
-- 照片(前面的東西)屬於人事物(後面的東西)
-- 人事物(後面的東西)的照片(前面的東西)
-
-人的用's  
-My son's birthday. 
-
-所有格也可表示誰的  
-My birthday.   
-
-你知道那场比赛的时间吗？  
-Do you know the time of that game?  
-
-He is an important part of our team.
-
-那场比赛最令人兴奋的部分  
-the most exciting part of that game 
-
-## to 的
-- the key to our house.(我們房子的key)
-- This is the key to your new house.(这是你的新房子的钥匙。)
-- She is looking for the key to her apartment.
-- I can't find the key to my office!(我找不到我辦公室的鑰匙)
-
-## 畫畫
-paint 是水彩畫 draw 是用鉛筆描寫  
-
-你能画一张图片吗？    
-- Can you paint a picture?  
-
-我不会画画。  
-- I cannot paint. 
-- Drawing in the Park.
-- he sees Lily drawing in the park.
-- What are you drawing?
-- I'm not drawing you.
-- I'm drawing your dog.
-
-## picture painting photo
-圖片picture 後面加上of，代表是什麼東西/人的圖片
-```
-a picture of 人事物
-pictures of 人事物
-```
-
-- Are you [painting] [a picture of your mom] [on this paper]?
-  - 紙上用 [on] the paper
-- Eddy looks at [a painting of a dog].
-- A man stops and looks at the painting.  
-- Are you drawing a picture of me?
-- He [takes] [a photo of his cat] every day.
-- That is a photo of Beijing.
-- Lily painted a nice picture of New York last year.
-
-
-## travel to + 目的地
-- She'll travel to France next month.(下个月她将前往法国。)  
-- Duo will travel to Canada next summer.(多儿明年夏天会去加拿大旅游。)
-- They'll travel to [the] UK next month.(他们下个月会去英国旅游。)  
-
-## travel in 國家
-- We traveled in the US by car last year.
-
-## take
-- take a test 考試
-- go on vacation 去度假
-- take a vacation 放假
-- take a trip 旅行
-
-安娜打算去美国旅行。  
-Anna is going to take a trip to the US.  
-
-我明年會度假  
-I'll take a vacation next year.  
-
-## trip 當名詞
-- Did you enjoy your trip to Chicago last summer?
-
-## on vacation 
-- He was on vacation in Miami.(他在迈阿密度假。)
-
-## fly
-- Do you want to fly to New York or Los Angeles?
-- I want to fly to Japan.
-
-
-## 機票
-- I want to get a ticket.
-- Can I have a ticket to London.
-- Do you want a one-way ticket or a round-trip ticket?
-- Do you want a one-way ticket or a return ticket?
-- Are you looking for where the ticket is?
-
-## 倒裝句
-- Here's your ticket.(原句:Your ticket is here)
-
-
-## come 回來 來
-- Lily is coming with me!(Lily 跟我一起來)
-- My friend will come with me as well.
-- She's coming here with her boyfriend.
-- Lucas goes to [the] park with his dog every day.
-- you come to the park every day.
-- Who will come to the party with me tonight?(谁今晚会跟我一起来聚会？ )  
-- Sorry, I can't come to the party.
-- Can my dog come with me to the party?
-
-## home
-- why are you home?(為什麼你在家)
-- What is your home address?(你家的地址是什么？)
-- When she gets home
-- I want to go home
-- come home 回家
-- I have to finish cleaning before your dad [comes home].  
-- Kids,Mom will not [come home] [from] the hospital tonight. 
-- work from home 在家工作
-- I'll be at home between six o'clock and seven o'clock.(我在六点到七点之间会在家。)
-
-## go
-go to bed「去睡覺」這件事情，bed前面沒加the  
-- You need to go to bed!  
-- go to the bed 去床邊  
-
-### go to + 地點
-- goes to the park 去公園  
-- She doesn't want to go to the theater
-
-### 看醫生
-go to the doctor's office 看醫生  
-They go to the doctor's office.  
-
-### 省略to
-你明年夏天会去哪里？  
-Where will you go next summer ?   
-
-## be going to + 地點
-- we are going to a nice cafe.
-- I'm not going to the dance party tonight.
-
-## go out 出去玩
-- Emma doesn't want to go out with me.
-- Let's go out for dinner with them
-- Let's go out for dinner.
-- she wants to go out on Friday night!
-
-## with
-### with + 人 和誰一起
-動詞後面用with  
-
-- Who is going to the party with you?(誰和你一起去party )  
-- I'm here with you.
-- Lily is coming with me!
 
 ## play 玩
 玩電動  
@@ -265,37 +78,6 @@ as well 放在最後，意思是「也」
 - Is Anna going to the party with us as well?
 - My friend will come with me as well.
 
-## watch see look
-watch 看別人在做的「一連串動作」。  
-Zari is watching Junior.
-
-看球賽「一連串動作」。  
-We're going to watch a baseball game on Thursday.  
-
-look at「專注」看  
-Eddy looks at a painting of a dog.
-
-後面沒加at  
-Look!  
-
-see代表看見(隨意看)  
-- I see you drawing every day.  
-- It's nice to see you again,
-- Lin sees her grandmother, Lucy, at the table.
-
-## look for 尋找
-你在找哪一条街？  
-Which street are you looking for?  
-
-- She is looking for the key to her apartment.
-
-## look at 看手機
-- She is looking at the map on her phone.
-- Eddy looks at his phone.
-
-## look in 冰箱
-- She looks in the fridge.
-
 ## 同位詞
 Eddy and his friend [Oscar] are at an art museum.  
 friend = Oscar 二者相同。刪除his friend或刪除Oscar都不影嚮句意。
@@ -311,41 +93,6 @@ That painting is boring.
 Is Japanese more interesting than French?
 
 [人]感到無聊 ed
-
-## love/like
-```
-like + 可數複數名詞s
-```
-- I love dogs!  
-  - dogs要用複數，因為你不可能只喜歡一隻狗，而是很多隻狗，dog為可數名詞要加s。
-- I don't like parties.
-  - 舞會不會只有一個，指的是很多舞會
-
-```
-like + 不可數名詞
-```
-
-- I love ice cream.
-  - (Ice cream 變成水就是液體，液體是不可數名詞)  
-- I love cake. cake不可數
-- I like pizza. 不可數
-- My dogs love warm weather, but my cat loves cold weather.  
-  - weather是不可數名詞，不加s  
-- Does he like coffee? He likes coffee.  
-  - 咖啡是液體，不可數名詞，不加s。  
-
-like是動詞，要連接其它動詞用to或Ving 
-```
-love + Ving/ to V
-like + Ving/ to V 
-```
-
-- I like to make a cake .
-- You love eating sausage for breakfast!  
-- Emma's boyfriend likes playing basketball.
-
-## look like 看起來像
-- What does it look like?
 
 ## same
 我们在同一个班。  
@@ -370,9 +117,6 @@ Emma usually stays in the library at night.
 
 ## 未來
 I am going to take a vacation next week.
-
-
-tomorrow you will meet your new baby brother!  
 
 他们明年冬天会搬到日本。  
 They'll move to Japan next winter.  
@@ -400,22 +144,17 @@ Anna won't get married next weekend.
 - Where will the dance party be this weekend?
 - I won't be at school tomorrow.(我明天不会在学校。)
 
+
 ## 其它疑惑
-
-你能听到音乐吗？  
-Can you hear the music?  
-
-Sorry Anna, I can't meet you. My friend [is visiting.]  
 
 Something will go wrong!
 
-do you want to [ride the roller coaster] or not?
+do you want to ride the roller coaster or not?
 
 I draw things that I think are interesting or beautiful.
 
 This kind of cheese is nice!
 
-## 其它不知如何歸類
 你会选择哪个房子？  
 Which house will you [choose]?  
 
