@@ -51,6 +51,33 @@ some可以形容可數與不可數名詞。
 She needs some apple juice.  
 juice為不可數名詞，不能加s。  
 
+## less + 不可數名詞
+little(原級) -> less(比較級) -> least(最高級)
+
+|級別|級別|翻譯|
+|:----|:----|:----|
+|原級|little|少許、幾乎沒有|
+|比較級|less|更少的|
+|最高級|the least|最少的|
+
+- I need less time to finish this.我需要較少的時間來完成這個。
+- John wants less noise.約翰想要少一點噪音。
+- It's usually less crowded if you go on a weekday.
+
+### less 作為副詞修飾形容詞
+- This book is less interesting than that one.(這本書沒有那一本那麼有趣)
+
+## few + 可數名詞
+
+|級別|級別|翻譯|
+|:----|:----|:----|
+|原級|few|少許、幾乎沒有|
+|比較級|fewer|更少的|
+|最高級|the fewest|最少的|
+
+- There are fewer cars on the road today.（今天路上的車子比較少。）
+
+## 可數與不可數名詞
 
 不可數名詞
 - buy lots of fruit
@@ -67,5 +94,7 @@ juice為不可數名詞，不能加s。
 - I love these flower**s**
 
 ## Cake Pizza可為可數/不可數
-- It's a very small cake.(有數量，代表可數)
-- I like to make cakes.
+- It's a very small cake.(a有數量，代表可數)
+- I like to make cakes.(cake可數，後面加s)
+- I love cake. cake不可數，後面不加s
+- I like pizza. pizza不可數，後面不加s

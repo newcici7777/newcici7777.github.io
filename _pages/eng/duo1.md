@@ -71,12 +71,42 @@ too 放在be 動詞後面(太...)，作為副詞
 also放在動詞前面，意思是「也」
 - Adults also clean the table.  
 - Can we also have a big cake?
+- He also asked if I like cats.
+- I can also help you.（我也可以幫你。）
+
+放在be動詞後面 + also 
+- He is also a student.（他也是個學生。）
 
 ## as well 也
 as well 放在最後，意思是「也」
 - Yes, I like the lunch as well.
 - Is Anna going to the party with us as well?
 - My friend will come with me as well.
+
+## then 然後
+- It rained then snowed.(下雨然後下雪)
+
+## only 只是
+- I was only gone for a week!
+
+## just 剛剛/僅僅/只是
+放在 be 動詞後面、 動詞前面
+- what did you just eat?
+- He's just practicing his English.(他只是在練習他的英文啦。)
+
+## even 甚至
+even 副詞，even放在一般動詞前
+- He even asked about my family!(他甚至還問了我的家庭！)
+
+be動詞後面放even
+- He is even taller than his brother.（他甚至比他哥哥還要高。）
+- She can even speak French.（她甚至會說法文。）
+
+放在名詞前面，強調名詞
+- Even a child can do this.（連小孩子都會做這個。）
+- He knows everyone, even me.（他每個人都認識，連我都認識。）
+
+
 
 ## 同位詞
 Eddy and his friend [Oscar] are at an art museum.  
@@ -92,6 +122,10 @@ That painting is boring.
 日语比法语更有意思吗？
 Is Japanese more interesting than French?
 
+### Ving 為形容詞
+- I found the book interesting.
+  - 形容詞interesting放在名詞the book後面，修飾前面的名詞
+
 [人]感到無聊 ed
 
 ## same
@@ -99,8 +133,13 @@ Is Japanese more interesting than French?
 We are in [the same] class.  
 
 ## leave 離開
-你什麼時候離開?  
-When do you want to leave?  
+Leave 在這裡是不及物動詞（後面不需要直接接受詞）。
+- When do you want to leave?你什麼時候離開?    
+- That train leaves at 7 p.m.(火車在晚上 7 點開出 / 發車)
+
+Leave + for + [目的地]。
+- I'm leaving for New York tomorrow.（我明天要動身前往紐約了。）
+- The train leaves for Tokyo at 7 p.m.（這班開往東京的火車在晚上 7 點發車。）
 
 ## live in 住
 Ben [lives in] an apartment.  

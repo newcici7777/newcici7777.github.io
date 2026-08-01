@@ -36,9 +36,6 @@ him.
 - First painting**s** are never good.
 - we nerver finish the school early
 
-## 建築物/房子/傢具 have 有
-- Our school has a nice library.
-
 ## open close closed(形容詞)
 ### open 動詞
 - That new restaurant opens tonight!(那家新餐厅今晚开业！)
@@ -121,18 +118,10 @@ Who will [work from home] next week?
 ## kind of 種類
 - This kind of cheese is nice!
 
-## then 然後
-- It rained then snowed.(下雨然後下雪)
-
 ## remember 
 remember + to 
 - I remembered to water your plants...
 
-## only 只是
-- I was only gone for a week!
-
-## just 剛剛/僅僅
-- what did you just eat?
 
 ## arrive at
 - They arrive at Vikram's apartment.
@@ -143,7 +132,32 @@ remember + to
 - We eat by the water.我们在水边吃。
 
 ## is visiting 短暫拜訪
-Sorry Anna, I can't meet you. My friend [is visiting.]  
+現在分詞 visiting：當作形容詞時，專門用來形容「暫時停留、作客、交流」的人或事
+
+- He visits Italy every year.
+  - 他每年都去義大利玩。——這是規律、習慣，用普通現在式。
+- He is visiting Italy this week.
+  - （他這星期正在造訪義大利／人目前在義大利。——這是一個暫時的行程，過幾天就結束了，所以用進行式。）
+
+visiting from 這個結構中，介系詞 from 的意思是「來自於……（某個地方）」。
+
+它用來交代這個「暫時來訪的人」原本是從哪裡出發、屬於哪個國家或機構。
+
+
+"Is that the student [who is] visiting from Italy?"
+（那是從義大利來訪問／交流的學生嗎？）
+
+現在分詞片語用來形容人或物時，可以直接放在名詞後面，並省略掉「who is（關係代名詞 + be動詞）」
+
+- The student visiting from Italy?
+- Sorry Anna, I can't meet you. My friend [is visiting.]  
+- He is visiting from Japan.（他從日本來參訪)
+- She is a student visiting from another school.
+（她是一位從別的學校來交流的學生。）
+- We have a professor visiting from the U.S.
+（我們有一位從美國來訪問的教授。）
+- My visiting professor is from Japan.（我的客座教授來自日本——不是長期任教的。）
+- She is just a visiting student here.（她這裡只是一個交換生／短期參訪的學生。）
 
 ## its
 - That sheep is eating its food right now
@@ -151,6 +165,83 @@ Sorry Anna, I can't meet you. My friend [is visiting.]
 - This sheep has a big head, but its
 eyes are very small.
 - Is your watch in its box ?(你的手表在它的盒子里吗？)
+
+
+## skies
+- Blue skies and sunshine!（藍天與陽光！）
+- We had clear skies all week.（我們整個禮拜都遇到晴朗的好天氣。）
+- Stormy skies（暴風雨的天空 / 陰暗的天空）
+
+## about 關於、有關、涉及……的範圍或主題
+about有分類的意思，把限定範圍。
+
+- talk about weather（談論關於天氣的事）
+  - 把範圍縮小，談論天氣
+- a book about space（一本關於太空的書）
+  - 把書的範圍縮小，天空的書
+
+
+## think 認為
+主詞 + think + that可省略 + (完整子句)
+- Why do you think that he wants...(為什麼你覺得他想要……？)
+- Why do you think he wants...(為什麼你覺得他想要……？)
+
+
+
+## It's OK（沒關係）+ if（如果）+ 子句
+「如果……也沒關係／是可以的」。
+- it's OK if you don't get a perfect grade!(拿不到滿分／完美成績也沒關係的！)
+
+## be 動詞 + in love (with + 對象)
+- Enzo is in love with me.(Enzo愛上我了)
+
+## pair of + 單數動詞
+句子的真正主詞是計量單位 pair（一雙）。
+- Is this pair of glasses thirty dollars?
+- Is that pair of shoes thirty dollars?
+（那一雙鞋是三十美元嗎？）
+- How much is that pair of shoes?（那一雙鞋多少錢？）
+
+如果拿掉pair of，就要用複數動詞
+- Are these glasses thirty dollars?
+
+## There are
+- Was there an accident?這裡有發生意外嗎？
+
+## crowded
+[地方] + be動詞 + crowded
+- The MRT is crowded today.（捷運今天好擁擠。）
+
+crowded形容詞 + 名詞
+- Is New York a crowded city?
+
+擠滿crowded with + [人/事物]
+- The street is crowded with people.（這條街擠滿了人。）
+
+## check
+帳單
+- Can I have the check, please?
+- Ask for the check.（索取帳單）
+
+支票
+- Pay by check.（用支票付款）
+
+Check（檢查/查看）：不只是看，還包含「為了獲得某個資訊、或確認某件事是否正確」的動作。
+
+- Check the map.（查看地圖）
+- Check the directions.（查看導航）
+- Check the time.看一下時間(確認現在幾點了)
+- Check your email.看一下信箱 (確認有沒有新信)
+- Check the route.（查路線 / 看路徑)
+  - Let me check the route on my phone.（我看一下手機上的路線。）
+  - Wait, let me check the directions on my phone.等一下，我看個手機上的導航路線。
+
+## next
+next 是當作時間副詞（或稱地方/順序副詞）使用，意思是「接下來、下一步」。
+- Where can we go next?
+- What should we do next?（我們接下來該做什麼？）
+- Where are we going next?（我們接下來要去哪裡？）
+- Who is next?（下一個是誰？）
 
 
 ## 無法分類

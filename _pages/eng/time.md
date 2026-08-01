@@ -63,6 +63,45 @@ on Sunday afternoon.
 他在周日下午会提早回家。  
 He will come home early on Sunday afternoon.  
 
+## week周/weekday平日/weekend週末
+- A week 一周 (禮拜一至禮拜日)
+- Weekday 平日 (禮拜一至禮拜五)
+- Weekend 周末 (禮拜五晚上至禮拜日)
+
+### week
+- See you next week(未省略前:See you on next week)
+- We had clear skies all week.我們整個禮拜都遇到晴朗的好天氣。）
+
+### weekday形容詞 + 名詞
+- Monday is a weekday.（星期一是個平日。）
+- I have a weekday routine.
+（我有一個平日的作息規律。）
+- Traffic is always heavy during weekday mornings.
+（平日的早晨交通總是特別塞車。）
+- Do you have any weekday plans?
+（你有任何平日的計畫嗎？)
+
+### on a weekday
+泛指平日裡的其中某一天。  
+當你們還沒決定要挑星期幾，只是想把時間範圍縮小到「平日（週一到週五的其中一天）」時，就會用 a weekday。  
+
+weekday+s 代表每一個平日
+
+- It's usually less crowded if you go on a weekday.(如果你挑平日去，通常人比較少。)
+- Do you prefer meeting on a weekday or the weekend?(你比較喜歡約在平日的某一天，還是特定的週末？)
+- Let's meet on a weekday.（我們挑某個平日見面吧。）
+- Can we meet on a weekday instead of the weekend?
+- I usually get up early on weekdays.（我通常在平日起得比較早。）
+
+### on the weekend 在週末
+在週末為禮拜五下班開始 ~ 禮拜日  
+- Are you free on the weekend?
+- Are you free the weekend?(省略on)
+- Are you free on weekend**s**?（你平常週末都有空嗎？）
+- Are you free this weekend?(有this就沒on)
+- I have too much work, so I can't go on the weekend.(我有太多工作了，所以我週末不能去。)
+- What are you doing on the weekend?（你這週末要做什麼？）
+
 ## in 年/月/四季 上午下午晚上
 季節前面要加上the:  
 The weather is nice here [in the

@@ -24,3 +24,16 @@ You need to get a job.
 ## 結婚
 - when will Anna and Kevin get married?  
 - My friend is getting married.
+
+## 得到分數
+- I got an A on the test.(考試用on)
+- get a grade 就是「拿到成績」。
+- you don't get a perfect grade!
+  - grade是A,B,C,D分數 perfect滿分
+- I got score 95 points
+
+
+## on 考試
+- get an A on the test（在考試上拿 A）
+- do well on the exam（在考試中表現好）
+- make a mistake on the quiz（在小考中出錯）

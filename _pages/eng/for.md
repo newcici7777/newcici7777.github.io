@@ -51,3 +51,7 @@ keywords: for
 - It snowed for about two hours yesterday.(about是大約)
 - They stayed in Germany for six years.
 
+## 其它
+- for the last time 最後一次
+
+

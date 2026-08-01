@@ -14,7 +14,16 @@ Are you in the classroom?
 你在教室里吗？
 
 ## in 範圍
-She's the tallest girl in my school.
+- She's the tallest girl in my school.
+
+## in 走廊
+- in the hall（大廳、走廊、會堂）
+- in the school hall學校禮堂 
+- in the hallway（在走廊裡）-way（意指道路、通道）
+- in the corridor（在走廊/通道裡）
+- in the lobby（在大廳裡）
+
+- Don't leave your shoes in the hallway.（別把鞋子留在走廊上。）
 
 ## in在冰箱裡
 - Do we have milk in the refrigerator?
@@ -43,6 +52,10 @@ outside.
 ## outside
 - It's too hot outside. It's the hottest day in August. I want to go home.
 - The swimming pool is outside.
+
+## there here 副詞
+前面不加任何介系詞
+
 
 ## between A地 and B地
 - between the coffee shop and the zoo (在咖啡店和动物园之间 )
@@ -93,9 +106,4 @@ Do I need to drive past the zoo?
 
 
 
-- The driver turns left and stops the car.
-- Turn left at the end of the street,
-- I don't need to turn for three more miles.
-- I think my directions are wrong.
-- Do you want to use my directions?
-- The directions on my phone say that road is faster...
+

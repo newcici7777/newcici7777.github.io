@@ -1,8 +1,33 @@
 ---
-title: 比較 最高級
+title: more 比較 最高級
 date: 2026-07-29
-keywords: er,est
+keywords: more , most
 ---
+## more 代名詞 更多
+- Can you tell me more? 跟我多講一點
+- I want more.（我想要更多。）
+
+### more 代名詞 + about 限定範圍(關於)
+- I want to know more about you（我想多了解你一點。）
+- Can you tell me more about this job?（你可以跟我多講一點關於這份工作的事嗎？）
+- Can you tell me more about that story?(about 限定範圍)
+
+## more 形容詞 + 名詞
+more為更多
+- I need more time.（我需要更多時間。） 
+- Can you give me more food?
+- Do you want a single duck or more ducks **in** the photo?
+- I don't need to turn for three more miles.
+
+## more形容詞 + 比較長的形容詞
+- The blue skirt is more expensive
+- This book is more interesting.
+
+## more 副詞 + 副詞
+- He is more careful.（他更小心了。）
+- She speaks English more fluently.(（她說英文說得更流利。)
+
+
 ## 比較級
 - The living room is bigger than
 the kitchen.
@@ -61,10 +86,3 @@ Are big cit[ies] better than small cit[ies]?
 - nice, nicer, the nicist
 - safe, safer, the safest
 
-## more 更多
-Can you give me more food?
-Do you want a single duck or more ducks **in** the photo?
-I don't need to turn for [three more miles.]
-
-## more + 比較長的形容詞
-- The blue skirt is more expensive
