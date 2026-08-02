@@ -243,6 +243,46 @@ next 是當作時間副詞（或稱地方/順序副詞）使用，意思是「�
 - Where are we going next?（我們接下來要去哪裡？）
 - Who is next?（下一個是誰？）
 
+## Country（國家）vs The Country（鄉下、農村地區）
+Country > City > Town > the country > village 
+
+- Country（國家）
+  - How many countries have you visited?（你去過多少個國家？））
+
+- The Country （鄉下、農村地區）
+  - 鄉下涵蓋了無數個小村莊（villages）和農田
+  - They moved out of the city and bought a house in the country.（他們搬出城市，在鄉下買了一棟房子。）
+  - I want to live in the country when I retire.（我退休後想住在鄉下。）
+
+- Village（村莊）— 最小、最原始
+  - He lives in a quiet fishing village.
+
+- town 鎮
+  - There is a nice bookstore in town.（鎮上有一家不錯的書店。）
+  - I grew up in a small town in the mountains.（我在山裡的一個小鎮長大。
+
+- City（城市 / 市）
+  - Taipei is a big and busy city.（台北是一個大而繁忙的城市。）
+
+## 不定代名詞
+以 -thing、-body 或 -one 結尾的字（例如 anything, nothing, somebody, everyone）
+
+something 就是指「某樣東西」，當作名詞使用（當作動詞的受詞）
+
+形容詞放在不定代名詞 後面
+```
+不定代名詞 + 形容詞
+```
+- I'd like (I would like) something sweet. （我想吃某些甜的東西。）
+- something sweet
+- something cold to drink
+
+- Anything（任何東西——常用在否定句或問句）：
+  - Is there anything new?（有什麼新鮮事嗎？）
+- Nothing（沒有東西、沒事）
+  - There is nothing wrong.（沒有什麼不對勁 / 沒事。）
+- Everything（每件事物）
+  - I want everything ready by tomorrow.（我希望明天前每樣東西都準備好。）
 
 ## 無法分類
 - That road **to** our village is long and busy.(到我们村子的那条路又长又繁忙。)

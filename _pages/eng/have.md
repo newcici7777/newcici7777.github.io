@@ -20,6 +20,10 @@ have medison.
 ## 開會
 - have a meeting 開會
 
+## 比賽
+- They have competitions every year.
+（他們每年舉辦比賽。）
+
 ## 烤肉
 
 ## 露營

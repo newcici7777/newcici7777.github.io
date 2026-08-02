@@ -11,13 +11,16 @@ clothes/kloʊðz/ 衣服 不可數名詞
 可以站起來走動的交通工具用on，不能站起來走動的交通工具用in，以前的雲宵飛車是用站的   
 - I'm not going on this roller coaster! 
 
+- On foot（步行、靠雙腳）
+- On horseback（騎馬）
+
 ## in 交通工具
 - Bea is in a taxi.
 
 ## by 交通工具
 - Anna sometimes goes to work by car.
 - We traveled in the US by car last year.
-
+- By car / By cable car 坐車 / 搭纜車
 ## on 球隊
 谁是在这个队里最快的运动员？  
 Who is the fastest player [on this team]?  

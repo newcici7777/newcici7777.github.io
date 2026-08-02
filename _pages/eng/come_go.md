@@ -4,6 +4,7 @@ date: 2026-07-31
 keywords: come, go, home, with
 ---
 ## 移動動詞 to + 人
+to 的意思是「朝向、往……方向」
 移動動詞: go, come, get, walk, drive, fly, move
 
 - walk to 人：走路走向某人
@@ -16,6 +17,8 @@ keywords: come, go, home, with
 - Zari runs to Lily in the hall at school. Zari在學校的走廊上跑向莉莉。）
 
 ## 移動動詞 to + 目的地
+to 的意思是「朝向、往……方向」，在這裡當作目的地的大門。
+
 移動動詞: go, come, get, walk, drive, fly, move
 - go to
   - I go to work.我去上班。
@@ -39,6 +42,8 @@ keywords: come, go, home, with
   - I will move to New York next week.
   - They moved to New York.（他們搬去紐約了。）
   - They moved to Taipei.
+  - They move to the country（搬到鄉下，鄉下country前面要有the，沒有the是國家）
+  - They move to a new house（搬到新房子）
 - Run to + 目的地 （跑向……）
   - Run fast to the trees.快跑去樹林那裡
   - He ran to the bus stop.（他跑向公車站。）
@@ -55,11 +60,13 @@ keywords: come, go, home, with
 - Jog to ...（慢跑去……）
   - She jogs to the park every morning.（她每天早上慢跑去公園。）
 
+## Past（經過 / 走過去 — 擦身而過）
+移動動詞 + past
+- Walk past the bank.走過銀行
+- Drive past the bank 開車經過銀行
+
 ## get to 抵達
 - What time will you get to the office?（你幾點會到辦公室？）
-
-## Leave for 動身前往
-- I am leaving for Paris.（我即將動身前往巴黎
 
 ## 移動動詞 + here/there
 當遇到「移動類」動詞（如 go, come, get抵達, walk, drive）：
@@ -70,11 +77,38 @@ keywords: come, go, home, with
 - The hill is there
 - The police are here. 
 
-## 沿著……走
+## along 沿著……走
+```
+ 怎麼移動：Walk / Drive / Run / Go  + 朝哪裡走：straight / along / down 
+```
+
 walk + along + [長條狀場所]
 - Walk along the street.（沿著這條街走。）後面絕對不加 to
+- Drive along Main Street（沿著大街開車）
 
-## straight + to 直直
+## down 沿著/順著開
+Down 在這裡不是「向下（往下爬）」的意思，而是指「順著街道的延伸方向往下走 / 往前走」。在英文直覺裡，走進一條街道、順著它走下去，就是用 down。
+
+- Walk down the street 沿著街走路
+- Drive down the street 沿著街開車
+- Drive down this road（順著這條路開下去）
+- Drive down this highway, and you'll see the exit.（順著這條高速公路開下去，你就會看到出口。）
+- Walk down Maple Street（順著楓樹街往下走）
+- Walk down this street, and you'll find it.（順著這條街走下去，你就會找到它。）
+
+## straight 筆直的/直的(形容詞)
+- This is a straight line.（這是一條直線。）
+- Her hair is long and straight.（她的頭髮又長又直。）
+
+## straight 直直地/筆直地 (副詞)
+- Go straight!直直的走，別拐彎
+- Walk straight 走路直走
+- Drive straight 開車直走
+
+## straight + for + 數字 + blocks 路口
+- Walk straight for two blocks.（直走過兩個路口。）
+
+## straight 直直走 + to 目的地
 straight 和 to 在這裡的分工完全不同，它們一個負責「怎麼走」，一個負責「去哪裡」
 - Go straight to the end of this street.直走到這條街的盡頭。
 - Walk straight to the top of the hill.直走到山頂。
@@ -83,18 +117,59 @@ straight 和 to 在這裡的分工完全不同，它們一個負責「怎麼走�
 - Drive straight to the parking lot.直開車去停車場
 - Drive straight to the airport.
 
+## straight + pass 直走並經過
+- Go straight past the traffic light.（直走經過紅綠燈）
+
+## ahead
+Ahead 負責：「朝著前方、目標在前面」
+- Go ahead! 往前走
+- Just go ahead, and you’ll see the convenience store.
+（一直往前走，你就會看到便利商店。）
+
+## straight ahead
+請你保持直線（Straight），並且朝著你正前方（Ahead）一直走到底！
+- Drive straight ahead（開車直直往前開）
+- Move straight ahead.（直直往前移動。）
+- Walk straight ahead for one block.
+（筆直往前走一個路口。）
 
 ## 移動動詞 + right + to 直接
 - Walk right to the finish line.
 （直接走到終點線。）
 
-## 移動動詞 + directly to 直接
+- Right here 就在這裡（right 強調精準，here 指這裡）
+- Right now 就是現在（right 強調立刻，now 指現在）
+
+## 移動動詞 + directly to 直接(不停留)
 - Head directly to the meeting room.直接前往會議室。
-- Fly directly to New York. 直飛去紐約。
+- Fly directly to New York. 直飛去紐約(沒有轉機)
 
 ## 移動動詞 + 快/慢 + to
 - Run quickly to the front door.快跑去前門。
 - Walk slowly to the nearest station.慢慢走去最近的車站。
+
+## 移動動詞 + Forward 向前
+- Move forward a little bit.（往前挪一點點——例如排隊或移車時）。
+
+## 移動動詞 + back
+「回頭、返回」或「走回原本的地方」
+- Go back.（走回頭路 / 你走過頭了）
+- Step back. 往後站
+- Turn back 回頭
+- You missed the turn. You need to go back.
+（你錯過轉彎了。你必須走回去。）
+- Walk back the way you came.
+（沿著你剛剛來的那條路走回去。）
+
+## 移動動詞 + backward 向後地
+- He took a step backward.（他向後退了一步。）
+- Drive backwards into the parking space.（倒車停進停車格裡。）
+
+## 移動動詞 + up
+- Go up the mountain on foot.（走路爬山 / 步行上山）
+
+## 移動動詞 + out
+- They moved out of the city.(他們搬出城市)
 
 ## next
 next 是當作時間副詞（或稱地方/順序副詞）使用，意思是「接下來、下一步」。
