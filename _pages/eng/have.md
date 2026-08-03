@@ -23,6 +23,8 @@ have medison.
 ## 比賽
 - They have competitions every year.
 （他們每年舉辦比賽。）
+- Let's have a climbing competition
+- have a race（舉辦賽跑）
 
 ## 烤肉
 

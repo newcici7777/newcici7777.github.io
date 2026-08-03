@@ -27,8 +27,14 @@ keywords: give send show
 - bring（帶來） 
   - Bring your homework to the teacher.
   - Bring the teacher your homework.
+- write(寫信)
+  - write a letter to me
+  - write me a letter
+- read
+  - read a story to the child
+  - read the child a story
 
-
+  
 ## give
 ### 人 + give + 人 + 物
 - I gave you a gift.

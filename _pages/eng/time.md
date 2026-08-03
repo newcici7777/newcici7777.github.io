@@ -4,10 +4,15 @@ date: 2026-07-28
 keywords: time, date, day
 ---
 ## 問日期 
+因為 date（日期）具有「唯一性」。
+
+月曆上的那一天（例如：7月20日），在一年、甚至人類歷史中就只有那麼一個特定、具體的數字。因為它像一個長得很有特色、獨一無二的「特定物品」，所以我們可以很自然地用 the date
+
 問日期What為受詞，後面要為動詞，不是名詞。  
 - What's the date?(今天是幾月幾號)
 - what's the date today?(今天是幾月幾號)
   - it's September sixth.(今天是九月六号。)
+- What's the date tomorrow?  
 - **What** is the date of his birthday?
   - [March first] is his birthday.
 - What is the date of our next meeting?
@@ -41,8 +46,22 @@ it 代表今天
 - What day is it?(今天星期幾)
 
 ## 問星期 on 星期
+day of the week（一週裡的哪一天）
+
+day 在問星期的語境下，指的是 Monday 到 Sunday 這 7 個名字在不斷循環。
+英文在詢問「種類、屬性」時，習慣把那個種類的單字（day）直接砸在 What 的後面，變成 What day...。
+
+當我們要問時間、顏色、星期這種「屬於哪一個範疇」的問題時，母語者的大腦制約就是 What + 種類 + is it...。
+
+- 問時間：“What time is it?”（現在幾點？
+- 問顏色：“What color is your car?”
+- 問名字：“What name did you choose?”（你選了什麼名字？）
+
 問星期的時候，What變成形容詞，後面要為名詞，不是動詞    
-what [day] is it? Is [it] Saturday or Sunday?  
+- what [day] is it? Is [it] Saturday or Sunday?  
+
+問明天是禮拜幾
+- What day is it tomorrow?明天屬於星期幾（哪種日子）呀？
 
 I wash my clothes on Monday, but grandma washes her clothes on Tuesday.  
 

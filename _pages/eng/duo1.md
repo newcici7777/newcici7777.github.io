@@ -7,20 +7,6 @@ keywords: English, duolingo
 cloth/kloθ/ 布料     
 clothes/kloʊðz/ 衣服 不可數名詞  
 
-## on 交通工具
-可以站起來走動的交通工具用on，不能站起來走動的交通工具用in，以前的雲宵飛車是用站的   
-- I'm not going on this roller coaster! 
-
-- On foot（步行、靠雙腳）
-- On horseback（騎馬）
-
-## in 交通工具
-- Bea is in a taxi.
-
-## by 交通工具
-- Anna sometimes goes to work by car.
-- We traveled in the US by car last year.
-- By car / By cable car 坐車 / 搭纜車
 ## on 球隊
 谁是在这个队里最快的运动员？  
 Who is the fastest player [on this team]?  
@@ -46,6 +32,13 @@ I need a course book.
 你今天有课吗？  
 Do you have class[es] today?  
 
+lesson課表上的那『一節課』的時間（通常是40~50分鐘）
+- She has a math lesson every Wednesday.
+
+學鋼琴、學吉他、學開車、學外語（偏向練技能）： 大家都愛用 lesson。
+
+學校的傳統科目（如數學、歷史）： 美國人愛用 class，英國人愛用 lesson。兩者都算對！
+
 ## play 玩
 玩電動  
 Can we play your video game?  
@@ -60,6 +53,27 @@ The cat is playing with a tennis ball.
 副詞放在句尾  
 - Adults go to bed late.  
 - This bus is always late.
+- The bus was late. 公車遲到了。
+
+## 數字 + 單位 + late
+```
+數字 + 單位 + late
+```
+- The bus was ten minutes late yesterday morning.公車遲到了[十分鐘]。
+
+## 數字單位 ＋ 形容詞
+
+「具體的多寡（數字＋單位）」永遠是拿來修飾形容詞的，所以要乖乖排在形容詞的前面。
+
+- 20 years old 多老？20歲那麼老。
+- ten minutes late  多晚？10分鐘那麼晚（遲到）。
+
+- I am [20 years] old. 我20歲.數字單位放在形容詞 old 前面
+- He is [6 feet] tall.數字單位放在形容詞 tall 前面
+- The river is [3 meters] deep.這條河有3公尺深。數字單位放在形容詞 deep 前面
+- The road is [2 miles] long. 這條路有2英哩長,數字單位放在形容詞 long 前面
+
+- The bus was ten minutes early yesterday morning.昨天早上公車早到了十分鐘。
 
 ## too
 too放在句子的最後面，前面(可加或不加)逗號
@@ -112,11 +126,17 @@ be動詞後面放even
 
 
 ## 同位詞
-Eddy and his friend [Oscar] are at an art museum.  
-friend = Oscar 二者相同。刪除his friend或刪除Oscar都不影嚮句意。
+- Eddy and his friend [Oscar] are at an art museum.  
+  - friend = Oscar 二者相同。刪除his friend或刪除Oscar都不影嚮句意。
+- My friend, Lily, is coming with me!
+  - friend = Lily 二者相同。刪除his friend或刪除Oscar都不影嚮句意。Lily前後有逗號
+- My friend, Anny, lives in New York.
+- We visited Taipei, the capital of Taiwan.
 
-My friend, Lily, is coming with me!
-friend = Lily 二者相同。刪除his friend或刪除Oscar都不影嚮句意。Lily前後有逗號
+當你前面講了一個總數或大範圍，後面用逗號直接把具體的東西列出來
+- The English test has two parts,listening and speaking.
+- I love two sports, basketball and swimming.
+- The house has two colors, red and white.
 
 ## 感到
 [東西]令人無聊 Ving

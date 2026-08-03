@@ -40,6 +40,7 @@ a lot放最後
 - She has many photoes of her daughter.
 - There are many shows in Las Vegas.
 - How many babies are at the party?
+- How many slice**s** of pizza did you take?你拿了幾片披薩？
 
 ## much + 不可數名詞
 
@@ -47,9 +48,12 @@ a lot放最後
 - Does he sleep too much?
 
 ## some
-some可以形容可數與不可數名詞。  
-She needs some apple juice.  
-juice為不可數名詞，不能加s。  
+some + 不可數  
+- She needs some apple juice.  juice為不可數名詞，不能加s。  
+
+some + 可數
+- some strawberries
+- Does your farm have any bananas?
 
 ## less + 不可數名詞
 little(原級) -> less(比較級) -> least(最高級)
@@ -98,3 +102,5 @@ little(原級) -> less(比較級) -> least(最高級)
 - I like to make cakes.(cake可數，後面加s)
 - I love cake. cake不可數，後面不加s
 - I like pizza. pizza不可數，後面不加s
+- That's a lot of pizza.(沒加s)
+- She takes some pizza.她拿了一些披薩（去吃）。

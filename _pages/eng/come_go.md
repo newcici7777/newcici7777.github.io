@@ -60,13 +60,64 @@ to 的意思是「朝向、往……方向」，在這裡當作目的地的大�
 - Jog to ...（慢跑去……）
   - She jogs to the park every morning.（她每天早上慢跑去公園。）
 
+## get to 抵達
+- What time will you get to the office?（你幾點會到辦公室？）
+
 ## Past（經過 / 走過去 — 擦身而過）
 移動動詞 + past
 - Walk past the bank.走過銀行
 - Drive past the bank 開車經過銀行
 
-## get to 抵達
-- What time will you get to the office?（你幾點會到辦公室？）
+## home
+home 本身是副詞
+- go home（回家）離開目前的地方，返回家裡
+  - It's getting late; I think I should go home.
+（時間不早了，我想我該回家了。）
+- come home（回來家裡）說話的人此時「人已經在家裡」，等待另一半或家人回來
+  - What time will you come home tonight? I'm making dinner.
+（你今晚幾點回來（家裡）？我正在做晚餐。）
+- get home（到家）
+  - Text me when you get home.
+（你到家的時候發個訊息給我。）
+- arrive home（抵達家門 - 較正式）
+  - The travelers arrived home safe and sound.
+（旅客們安全無恙地抵達家園。）
+- walk home（走路回家 / 散步回家）
+  - It was a nice evening, so I decided to walk home.
+（那是個美好的夜晚，所以我決定走路回家。）
+- drive home（開車回家）
+  - Be careful when you drive home in the rain.
+（下雨天開車回家要小心喔。）
+- ride home（騎車回家 ）
+  - I usually ride home on my scooter after work.
+（我下班後通常都騎機車回家。）
+- run home（跑回家 / 急忙趕回家）
+  - It started to pour, so we had to run home.
+（突然下起傾盆大雨，我們只好跑回家。）
+- bring home（帶...回家 ）
+  - Can you bring home some milk on your way back?
+（你回來的路上可以順便帶瓶牛奶回家嗎？）
+- take home（帶走 / 把人送回家）
+  - Don't worry, I will take you home safely.
+（別擔心，我會安全地送你回家。）
+
+home前面加上「誰的」房子，就要用to
+- go to her home.
+- We drove to her home.（我們開車去她家。）
+- Welcome to my home!
+
+## 移動動詞 + into 動作感的進入
+- Eddy walks into Oscar's apartment.
+- Junior runs into his room.
+- A janitor walks into the room.(janitor 為清潔員)
+- She runs into an office building.
+- The cat ran into the kitchen.
+
+
+## run into 人 = 遇見
+- I ran into my ex-boyfriend yesterday.我昨天巧遇了我前男友。
+- Guess who I ran into at the mall?猜猜看我昨天在購物中心巧遇了誰？
+
 
 ## 移動動詞 + here/there
 當遇到「移動類」動詞（如 go, come, get抵達, walk, drive）：
@@ -161,6 +212,22 @@ Ahead 負責：「朝著前方、目標在前面」
 - Walk back the way you came.
 （沿著你剛剛來的那條路走回去。）
 
+## go back + to 朝向/方向
+to 是朝向
+- I need to go back to work. 回去工作(work是抽象名詞，前面不加a 或 the)
+
+go back to 抽象名詞，回到某個狀態。
+- The kids need to go back to school.(孩子們該回學校上課了。 👉 指恢復學生的生活狀態)
+- He had to go back to prison.（他必須回監獄服刑了。）
+
+go back to the 地點
+- go back to the office.
+
+
+## go back home
+home 本身就有方向，是副詞
+- I need to go back home.
+
 ## 移動動詞 + backward 向後地
 - He took a step backward.（他向後退了一步。）
 - Drive backwards into the parking space.（倒車停進停車格裡。）
@@ -190,6 +257,21 @@ next 是當作時間副詞（或稱地方/順序副詞）使用，意思是「�
 - Who will come to the party with me tonight?(谁今晚会跟我一起来聚会？ )  
 - Sorry, I can't come to the party.
 - Can my dog come with me to the party?
+
+## Come over 過來一下
+Over = 跨過那段距離。
+
+所以，只要你聽到有人說 “Come over”，他的大腦畫面就是：「別在電話裡講了，你直接過來我家這邊吧！」
+
+- Come over for dinner
+
+加上 for 是為了交代目的：
+
+“Come over for dinner.”（來我家吃晚餐。）
+
+“Come over for a drink.”（來我家喝杯東西。）
+
+“Come over for a chat.”（來我家聊聊天。）
 
 ## home
 - why are you home?(為什麼你在家)
@@ -230,3 +312,10 @@ go後面省略to，因為next就是副詞
 - Let's go out for dinner with them
 - Let's go out for dinner.
 - she wants to go out on Friday night!
+
+## Go get
+- Go get some pizza
+  - 原本Go and get some pizza.（去，然後拿些披薩。）
+- Go check the door.去看看門［有沒有鎖／是誰在敲門］
+- Go tell him the news.去告訴他這個消息
+- Go wash your hands.去洗手。
