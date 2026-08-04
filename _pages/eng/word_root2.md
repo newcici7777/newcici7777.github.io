@@ -20,7 +20,7 @@ keywords: English, 字根字尾字首
 
 - sit**uate** [ˈsɪtʃuˌet] v. 使坐落於 [🔊 聽發音](https://www.merriam-webster.com/dictionary/situate)
 
-  動詞字尾(ate+iate+uate)  
+  動詞字尾ate 
   例句1: They plan to situate the school near the park. 他們計劃將學校坐落於公園附近。  
   例句2: The town is situated on the river. 這個城鎮坐落於河邊。  
   例句3: We need to situate the facts in their historical context. 我們需要將事實置於其歷史背景中。  

@@ -3,6 +3,38 @@ title: 字尾搭配
 date: 2026-08-03
 keywords: 
 ---
+## -ive 變 -ivity名詞
+- Creative (創意的) → Creativity (創意)
+- Active (活躍的) → Activity (活動)
+
+## -able / -ible 變 -ability / -ibility 名詞
+- Capable (有能力的) → Capability (能力)
+- Flexible (有彈性的) → Flexibility (彈性)
+
+## ent 變 ence/ency 名詞
+- Different (不同的) → Difference (差異)
+- Efficient (有效率的) → Efficiency (效率)
+
+## ness, hood, ship
+單字很短、很生活化、小時候第一批背到的單字（基礎生活字） 
+名詞加上 -ness 或 -hood 或 -ship
+
+- Sad（悲傷） + ness → Sadness (悲傷) → （絕對不會有 Sadity 這種字！）
+- Happy（快樂） + ness → Happiness (快樂)
+- Child（孩子） + hood → Childhood (童年)
+- Friend（朋友） + ship → Friendship (友誼)
+
+## tion
+尾巴已經是 -t 了，名詞就直接戴上 -tion
+- Create（動詞） → Creation（名詞）
+- Direct（形容詞/動詞） → Direction（名詞）
+
+## 形容詞ic + ity = 名詞
+- Elastic (有彈性的) → Elasticity (彈性 → 唸「伊賴斯替色體」)
+- Specific (具體的) → Specificity (特異性/具體性)
+
+---------------
+
 ## 動詞 → 形容詞
 動詞尾巴有 t 或 d → 優先配 -ive
 - Act（動詞） → 尾巴是 t → 配 -ive → Active（活躍的）
@@ -26,6 +58,8 @@ keywords:
 - Agree（同意） → Agreement（協議）
 - Develop（發展） → Development（發展）
 
+## ure
+sure 代表心理  
 動詞尾巴是 ss → 配 -ure 或 -sure [ʃər]
 - Press（壓） → 配 -ure → Pressure（壓力 → s 融合成 sh 的音）
 
@@ -36,9 +70,11 @@ keywords:
 - Please（使取悅，動詞） → 去掉 e 加上 -ure → Pleasure（榮幸/快樂，名詞）
 
 尾巴是 t → 配 -ure 融合成 ture [tʃər]  
-true 具體發生的事件、結果
-- Depart（出發，動詞） + -ure → Departure（出發/離境，名詞）
+true 發生的事件、結果、具體的東西
+- Depart（出發，動詞） + -ure → Departure（班機起飛、離境這個具體事件 → 機場看得到的看板）
 - Sign（簽名） → 加上拉丁動態字根變體 signat + -ure → Signature（簽名，名詞 ）
+- Create（創造） → Creature（生物、造物 → 被創造出來的「實體活物」）。
+- Struct（建造字根） → Structure（結構、建築物 → 被蓋出來的具體鋼筋水泥）。
 
 ## 名詞 → 形容詞
 名詞 + ous 
@@ -134,4 +170,40 @@ ory 則偏愛黏在動詞後面。
 acious (形) → -acy (名)
 - Efficacious (有效的)
   - Efficacy (功效)能產生預期效果的能力/狀態。
+------------------------------------------
 
+## ... → 名詞 → 形容詞
+- 結構： 字根/動詞 → 名詞字尾 (-ion) → 形容詞字尾 (-ate)
+- 拼法： 尾巴通常是 -ionate 或 -sionate。
+- 詞性： 100% 是形容詞！因為最外層的 -ate 是用來修飾名詞的。
+- 範例：
+  - Passion（名詞） → Passionate（形容詞：熱情的）
+  - Compassion（名詞） → Compassionate（形容詞：有同情心的）
+
+### 情感與狀態型字根（走「形容詞軌道」）
+如果最核心的字根是情緒、感受、抽象狀態（如 pass- 情感/痛苦、affect- 影響/感動）：
+它們本來就已經是名詞了（passion, affection）。
+它們不需要被「執行」，而是需要拿來「形容人」，所以會直接在最外層套上形容詞 -ate 變成 passionate, affectionate。
+
+##  ... → 形容詞 → 動詞 → 名詞
+- 結構： 字根 → 形容詞 (-ive) → 動詞 (-ate) → 名詞 (-ion)
+- 拼法： 尾巴通常是 -ation
+- 詞性： 100% 是名詞！因為最外層的 -ion 把整個字打包成了名詞。
+- 範例：
+  - Active（形容詞） → Activate（動詞：活化） → Activation（名詞：啟動）
+
+### 動作型字根（走「動詞軌道」）
+如果最核心的字根是個大動作（如 act 行動、cre- 創造、regul- 規範）：  
+它們需要被「催化、執行」，所以它們會優先配上動詞 -ate（如 activate 活化、regulate 管制）。
+最後要名詞化，才在最外層套上 -ion 變成 activation, regulation。
+
+為什麼 -ive 後面會接 -ate？（形 → 動）  
+英文喜歡把「形容詞」加上 -ate 轉化為「動詞」，意思是「使具備這個形容詞的特徵」。
+- Active（活躍的） → Activate（使活躍 → 活化/啟動）
+- Captive（被俘虜的） → Captivate（使著迷/俘虜心靈）
+
+## ation
+動詞是 -ate 結尾時，它要變成名詞，唯一首選就是 -ion。
+
+## 動詞 → 名詞 (-ment) → 形容詞 (-ary)
+ment 是一個把動詞打包成「實體物品、制度、工具」的名詞字尾
