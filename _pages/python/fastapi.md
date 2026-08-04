@@ -433,7 +433,7 @@ def get_sessions() -> ApiResponse:
 {% endhighlight %}
 
 ## 取得單獨session_id
-![img]({{site.imgurl}}/java_datastruct/session_id.png)<br>
+![img]({{site.imgurl}}/fastapi/session_id.png)<br>
 {% highlight python linenos %}
 @app.get("/api/sessions/{session_id}")
 def get_session(session_id: str) -> ApiResponse:

@@ -47,7 +47,7 @@ one more 的後面非常百搭，只要直接加上「單數的可數名詞」�
 - some = 首次加入購物車（給我一點）。
 - more = 追加數量（我還要更多）。
 
-``
+```
 more + 複數可數名詞
 ```
 - Lin wants more slices of pizza.Lin 想要更多片披薩

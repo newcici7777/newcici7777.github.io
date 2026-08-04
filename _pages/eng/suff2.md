@@ -15,7 +15,8 @@ keywords:
 - Prepare（準備，來自拉丁字根 parat-） → Preparatory（準備的/預備的）
 
 ## 動詞 → 名詞
-動詞尾巴有 t 或 ate → 100% 瘋狂配 -tion
+動詞尾巴有 t 或 ate → 配 -tion  
+代表「抽象的動作、過程或概念」
 - Act → Action（行動）
 - Create → Creation（創造）
 - Translate → Translation（翻譯）
@@ -25,9 +26,8 @@ keywords:
 - Agree（同意） → Agreement（協議）
 - Develop（發展） → Development（發展）
 
-動詞尾巴是 ss → 優先配 -ure 或 -sure [ʃər]
+動詞尾巴是 ss → 配 -ure 或 -sure [ʃər]
 - Press（壓） → 配 -ure → Pressure（壓力 → s 融合成 sh 的音）
-- Express（表達，動詞） + -ure → Expressure（表達/表現，古英語/文學名詞，現多用 expression）
 
 動詞尾巴是 se（發有磁性的 [z] 音）時，去掉尾巴不發音的 e，加上 -ure 
 [ʒər]
@@ -37,10 +37,8 @@ keywords:
 
 尾巴是 t → 配 -ure 融合成 ture [tʃər]  
 true 具體發生的事件、結果
-- Depart（出發，動詞） + -ure → Departure（出發/離境，名詞 → 唸 「底趴 去爾」）
-- Sign（簽名） → 加上拉丁動態字根變體 signat + -ure → Signature（簽名，名詞 → 唸 「席g納 去爾」）
-
-tion 流派：代表「抽象的動作、過程或概念」
+- Depart（出發，動詞） + -ure → Departure（出發/離境，名詞）
+- Sign（簽名） → 加上拉丁動態字根變體 signat + -ure → Signature（簽名，名詞 ）
 
 ## 名詞 → 形容詞
 名詞 + ous 
@@ -55,9 +53,9 @@ tion 流派：代表「抽象的動作、過程或概念」
 - Reliable（可靠的） → Reliability（可靠性）
 
 形容詞 -ive → 名詞 -ivity
-Creative（有創意的） → Creativity（創意/創造力）
-Active（活躍的） → Activity（活動/活力）
-Productive（有生產力的） → Productivity（生產力）
+- Creative（有創意的） → Creativity（創意/創造力）
+- Active（活躍的） → Activity（活動/活力）
+- Productive（有生產力的） → Productivity（生產力）
 
 形容詞 -al → 名詞 -ality
 - Personal（個人的） → Personality（個性/人格）
@@ -76,9 +74,6 @@ Productive（有生產力的） → Productivity（生產力）
 
 ## ent 形容詞
 ent/ant 接在「動詞」後面
--ent 偏向動詞尾巴常帶有 e 或 i。
--ant 偏向動詞尾巴常帶有 a。
-
 - Differ（不同） → Different（不同的 → 呈現出不一樣的狀態）
 - Excel（優秀） → Excellent（優秀的）
 - Rely（依賴） → Reliant（依賴的 → 變 y 為 i，呈現依賴的狀態）
@@ -86,11 +81,11 @@ ent/ant 接在「動詞」後面
 
 
 ## ary ory 與...有關的
-- ary 喜歡黏在「名詞」後面。
-- ory 則偏愛黏在「-ate 結尾的動詞」後面（通常會把 ate 融化掉）。
-
+ary 喜歡黏在「名詞」後面。
 - Document（文件，名詞） → Documentary（紀錄片的/文件的 → 與文件紀錄有關的）
 - Custom（習慣，名詞） → Customary（慣例的）
+
+ory 則偏愛黏在動詞後面。
 - Introduce（介紹，動詞） → Introductory（介紹的、入門的）
 - Satisfy（滿足，動詞） → Satisfactory（令人滿意的）
 
