@@ -60,7 +60,10 @@ ment「一整套工具或具體成果」（如「付款、設備、管理」）�
 - adopt（採用） → adoption
 
 ## sion 名詞
+結尾為d或s + sion
 - Decide（決定） → Decision（決定，名詞）。
+
+例外:
 - Permit（允許） → Permission（允許/許可證，名詞）。
 
 ## true 名詞
@@ -223,26 +226,36 @@ it 放在單字尾巴時，通常代表一個「走、去、移動」的動作�
 
 
 ## ite 
-ite 是拉丁文的過去分詞，
-為了讓前面的母音發長音，英文习惯在尾巴補上一個不發音的 e，於是就固定成了 -ite。
+ite 是ed，被動式，「被……的」「具有……性質的」
 
 ### ite 抽象的形容詞
 抽象字根 + ite = 形容詞
 
 - Opposite (形容詞/名詞)： op- (反方向) + pos (放置) + -ite 
-  - 「被放在反方向的狀態」 → 相反的、對立的
+  - 「被」放在反方向的 → 相反的、對立的
 - Definite：de- (向下/明確) + fin (界線) + ite 
-  - 已經劃好界線、很明確的狀態 → 明確的、肯定的。
+  - Define 動詞，是「去劃定界線、去定義」
+  - 「界線被劃得很清楚的」 → 引申為「明確的、肯定的」（形容詞）
+- Finite[ˈfaɪnaɪt] (adj. 有限的、有盡頭的)
+  - 拆解： fin- (範圍、結束、做完) + -ite (形容詞：…的狀態)
+  - 意思： 事情已經被「做好邊界、劃下句點」了，所以是有限的。
 - Infinite：in- (否定) + fin (界線) + ite 
-  - 沒有界線的狀態 → 無限的、無窮的。
+  - 沒有界線的 → 無限的、無窮的。
+  -（in- 是「不」，界線無法「被」劃定的）
 - Polite：pol (擦亮/平滑) + ite 
-  - 行為舉止像被擦拭得亮晶晶一樣 → 有禮貌的。
+  - 行為舉止像「被」擦拭得亮晶晶一樣 → 有禮貌的。
+- unite: un(統合成一個) + ite 「被」統一。(形容詞/動詞)
+- Deficit (n. 赤字、虧損 / 沒做好)
+  - 拆解： de- (向下、減少) + fic- (做) + -it/ite (名詞/形容詞字尾)
+  - 意思： 字面意思是「事情沒有做夠、往下做、沒做好」，引申為錢不夠、赤字。
 
 ### ite 名詞 人或物
-- Favorite：favor (喜愛) + ite → 被偏愛的那個人 → 最喜愛的人或物。
+- Favorite：favor (喜愛) + ite → 「被」偏愛的那個人 → 最喜愛的人或物。
 - Elite：選出來（elect）的優秀人群 → 菁英、優秀分子。
 - Socialite：social (社交) + ite → 活躍於社交圈的人 → 名媛、社交名流。
-
+- Appetite [ˈæpəˌtaɪt] (n. 食慾、胃口) 
+  - 拆解： ad- (朝向) + pet- (追求、尋找) + -ite
+  - 意思： 本能地去追求食物，直到「被」滿足為止。
 
 ## age 名詞
 動詞 + age = 動作的過程、結果
@@ -401,11 +414,12 @@ se + 地名 = 變成「該國/該地的人或語言」。
 - Europe（歐洲） + -an → European（歐洲人/歐洲的)
 - Mediterranean（地中海的 → 由 medius「中間」+ terra「陸地」組合，再套上古典的 -ean）
 
-## ain 土地、邊界、空間的
+## ain 名詞
+具有某種特質的物理範圍或空間
 ### ain「土地、邊界、空間」相關的名詞後面
 - Mount（山，名詞） + -ain → Mountain（山脈 / 山的 → 名詞/形容詞）。
+- Terrain（地形、地勢、地帶）terra土地 + ain名詞
 - Font-（源泉 / 泉水，拉丁字根） + -ain → Fountain（噴泉 / 水源 → 🌟 物理畫面：與泉水、出水口相關的噴泉）。
-- Port（港口 / 門戶） + -ain → Porcelain（瓷器 → 🌟 原意與貝殼、光滑表面相關，經法語演變而來）。
 
 ### 人
 - Cap-（頭 / 首領） + -ain → Captain（船長 / 首領 → 🌟 物理畫面：一個群體的「頭部」人物）。
@@ -524,6 +538,69 @@ se + 地名 = 變成「該國/該地的人或語言」。
 - Vess（血管/容器） + -el → Vessel（船隻/容器/血管 → 用來裝液體的精緻載體）。
 - Kern（穀物/核心） + -el → Kernel（果仁/核心 → 最微小、最硬的那顆心）。
 
+## ile
+### ile 黏在「動詞」後面:代表形容詞「容易被……的」或「很會……的」
+- Fragile[ˈfrædʒəl]（易碎的狀態）Frag- (破裂，動詞) + -ile
+- Flexible 易彎曲的、靈活的 Flect- (彎曲) + -ile
+- agile：ag(推動) 容易移動的 → 敏捷的
+- fertile：能夠生產的 → 肥沃的
+
+其它:
+- infantile：infant嬰兒 + ile → 嬰兒般的（形容詞）
+
+### ate(動) + ile(形) = atile 形容詞
+ate是動詞，代表這個東西非常擅長做某個動作 
+- versatile：能夠轉換的 → 多才多藝的
+- volatile：Vol- (飛) + -atile (擅長……的)  → 易揮發的、不穩定的
+
+### ile名詞
+ile 結尾的單字是名詞，用來指稱「做某事的人」或「某種工具」，與形容詞的形態相同，需根據上下文判斷詞性。
+
+- automobile：自動移動的（形容詞）→ 汽車（名詞）
+- tactile：觸覺的（形容詞）→ 觸覺（名詞較罕見）
+- missile：能夠被發射的（形容詞）→ 導彈（名詞）
+- mobile：能夠移動的（形容詞）→ 手機（名詞）
+
+### 形容詞名詞兼具
+- missile：形容詞（可發射的）與名詞（導彈）兼具。
+- mobile：形容詞（可移動的）與名詞（手機、懸掛飾物）兼具。
+
+### ile vs ible
+
+| 後綴 | 核心意義 | 詞性 | 範例 |
+|------|----------|------|------|
+| -ile | 傾向於...的 / 能夠...的 | 主要為 adj., 少數為 n. | versatile (adj.), missile (n.) |
+| -able/-ible | 能夠被...的（被動意味） | 幾乎全為 adj. | readable (可被閱讀的) |
+
+## -atile 
+表示「傾向於...的」、「具有...性質的」、「能夠...的」。
+
+- at-  拉丁語動詞過去分詞標記（= -ed）  表示「已被...的」
+- -ile  表示「傾向於...的」、「能夠...的」
+
+```
+-atile
+  │
+  ├── vers + atile → 能夠轉換 → 多才多藝
+  │
+  └── vol + atile → 能夠飛走 → 易揮發、不穩定
+```
+
+| 單字 | 字根 | 字根意義 | 完整意義 |
+|------|------|----------|----------|
+| versatile | vers（轉）+ atile | 轉 → 能夠轉換的 | 多才多藝的；多功能的 |
+| volatile | vol（飛）+ atile | 飛 → 容易飛走的 | 易揮發的；不穩定的 |
+| labile | lab（滑）+ ile | 滑 → 容易滑動的 | 易變的；不穩定的（無-at-） |
+
+### atile vs ile vs ible
+
+| 後綴 | 意義 | 範例 |
+|------|------|------|
+| -atile | 傾向於...的、能夠...的 | versatile, volatile |
+| -ile | 傾向於...的 | agile（敏捷的）, fertile（肥沃的） |
+| -able / -ible | 能夠被...的 | readable（可讀的）, visible（可見的） |
+
+
 ## ent/ant 形容詞
 ent拉丁文中的ing，專門用來把動詞變成「正在做某事、具備某種狀態」的字尾。
 所以會有形容詞跟名詞二種身份。
@@ -569,19 +646,53 @@ ent拉丁文中的ing，專門用來把動詞變成「正在做某事、具備�
 - 形容詞尾：-ent / -ant（例如：fluent 流利的、agent 代理的）
 - 名詞字尾：-ency / -ancy（例如：fluency 流暢度、agency 代理處）
 
-正在進行某個動作、或處於某種特定狀態下的『特質、行為、或機構』
+正在進行某個動作、或處於某種特定狀態下的『特質、行為』
 - Fluency(流暢度)
   - Flu-（流動，動詞）
   - 正在流暢地流動的這種「狀態與特質」。
-- Agency (代理處/局)
-  - Ag-（去做、執行，動詞）
-  - 替別人去執行、去運作的那個「機構或媒介」。
+- Fre-qu-ency (n. 頻率 / 次數)  
+  - Frequent（頻繁的）
+  - 畫面是某個東西在一段時間內，不斷重複點頭、發生的那種次數現象。
 - Emergency(緊急事件)
   - Emerge（浮現、突然出現，動詞）
   - 突然浮現、冒出來需要立刻處理的「緊急狀態」。
+- Urgency 緊急(名詞) 
+  - Urgent 緊急的 
+- Vacancy 空缺
+  - Vacant (形容詞:空的) 
+  - Vacate(動詞:空)
+  - Vacation（名詞:假期)
+- Pregnancy 懷孕
+- Tendency (傾向/趨勢) Tendent (有傾向的)
+- Constancy (堅定/恆久) Constant (持續的)
+- Expectancy (期待/期望) Expectant (期待的)
+- Piracy (盜版/海盜行為)
+
+職位、機關
+- Agency (代理處/局)
+  - Ag-（去做、執行，動詞）
+  - 替別人去執行、去運作的那個「機構或媒介」。
 - Presidency(總統職位/任期)
   - Preside（主持、坐在前面掌控）
   - 坐在最前面主持大局的這個「職位與任期狀態」。
+
+科學與錢
+- Consist-ency (n. 一致性、黏稠度)
+  - Consistent（始終如一的）。
+  - 在日常指前後一致的特質；在廚房或科學上，指醬汁攪拌均勻、各處質地都一樣的黏稠狀態。
+- Curr-ency (n. 貨幣)： 
+  - 來自 Current（流動的、當前的）。
+  - 像水流一樣在市場上到處傳遞、流動的交易媒介 ➡️ 錢、貨幣。
+
+## y cy acy ancy ency 大比較
+
+|名詞字尾|情況|意思|單字|
+|:----|:--------|:--------------------|:--------------------------|
+|-y|抽象名詞字尾|「特質」「行為結果」或「行業」|Honesty (誠實)<br>Discovery (發現)<br>Philosophy (哲學)|
+|-cy|當 -y 遇到 t 或 s 的音|「身分」「狀態」或「制度」|Bankruptcy (破產狀態)<br>Lunacy (瘋狂行為/狀態)<br>Policy (政策/方針)|
+|-acy|-cy 黏上形容詞尾 -ate|「特質」、「能力」或「非法行為」|Privacy (隱私狀態)<br>Accuracy (精確度)<br>Piracy (盜版/海盜行為)<br>|
+|-ancy|名詞字尾|「正在持續中的狀態」（常與站立、空間有關）|Vacancy (空缺/空房狀態)<br>Expectancy (期待感/預期值)<br>Pregnancy (懷孕狀態)|
+|-ency|名詞字尾|「反覆發生的現象」、「能力」或「代理機構」|Fluency (流利度/能力)<br>Frequency (頻率/次數)<br>Agency (代理商/政府機關)|
 
 ## ence/ance 名詞 具體的動作、過程、或結果
 一種持續存在的【狀態】、【特質】或【性質】」，它不強調激烈的動作，而是強調「靜態的現象」。
@@ -600,14 +711,39 @@ ent拉丁文中的ing，專門用來把動詞變成「正在做某事、具備�
 - exist（存在） → existence（存在狀態）
 - depend（依賴） → dependence（依賴狀態）
 
-
 ## ence vs ency
+- 字尾是 -ce 結尾： 畫面是「一件事、一個事實」（路上 80% 的字都是它）。
+- 字尾是 -cy 結尾： 畫面是「一種狀態、一種能力、或一個機構」。
 
 |基礎字|ence 結果或過程|ency 抽象狀態|
 |:----------|:-----------|:-------------|
 |Coincide(同時發生)|Coincidence巧合（一個具體發生的事件)|Coincidency一致性（事物互相符合的狀態）|
 |Emerge(浮現)|Emergence興起、顯露（進行中的過程）|Emergency緊急事件（卡在危急中的狀態）|
 |Persist(堅持)|Persistence堅持、固執（持續做的行為）|Persistency持久性（物理或化學上的無形性質）|
+
+- Dependence (n.)： 指的是「依賴、依靠」這個行為或事實。
+  - 例： Energy dependence（能源依賴 ➡️ 一國能源需要靠別國提供的事實）。
+- Dependency (n.)： 指的是長期「處於依賴他人、無法自立的狀態」，甚至引申為「受保護的領地（屬地）」。
+  - 例： Alcohol dependency（酒精依賴症 ➡️ 身體陷入無法自拔的狀態）。
+
+- Emergence (n.)： 指的是一個東西「冒出來、出現」的那場動作或歷史事件。
+  - 例： The emergence of new technologies（新科技的興起/出現這件事）。
+- Emergency (n.)： 指的是突然冒出來、讓人措手不及的「緊急狀態」（如火災、急診）。
+
+多數選 -ance（行為/事實）：
+- Perform ➡️ Performance（表演 ➡️ 一場具體的行為）
+- Import ➡️ Importance（重要性 ➡️ 一個客觀事實）
+少數選 -ancy（特質/狀態/職位）：
+- Vacant ➡️ Vacancy（空缺的狀態）
+- Expectant ➡️ Expectancy（期待的狀態/預期值）
+
+多數選 -ence（行為/事實）：
+- Differ ➡️ Difference（不同之處 ➡️ 客觀事實）
+- Exist ➡️ Existence（存在 ➡️ 客觀事實）
+少數選 -ency（能力/狀態/機構）：
+- Fluent ➡️ Fluency（流利的能力/特質）
+- Agent ➡️ Agency（代理人運作的機構 ➡️ 代理商）
+
 
 ## 動詞 → ent(形) → ence(名)
 - differ (動) → different (形) → difference (名)
@@ -618,6 +754,15 @@ ent拉丁文中的ing，專門用來把動詞變成「正在做某事、具備�
 當它表示「處於某種動作的狀態中」，且它的名詞形是 -ence 或 -ency 時：
 - silent（安靜的） → 名詞是 silence
 - efficient（有效率的） → 名詞是 efficiency
+
+## ent(形) 變 ency(名)
+
+|動詞|ent形容詞(處於...狀態)|ency抽象名詞(狀態)|
+|:--------------|:------------------|:--------------------------|
+|Flu- (流動，像 Fly/Flow)|Fluent (流利的 ➡️ 話語像水一樣流動的)|Fluency (流利度 / 流暢性)|
+|Emerge (浮現、冒出來)|Emergent (新興的、突然冒出來的)|Emergency (突然冒出來的緊急狀況 ➡️ 急診/緊急事件)|
+|Depend (依靠、依賴)|Dependent (依賴的、靠別人站著的)|Dependency (依賴狀態 / 依賴性)|
+|Tend (伸展、傾向)|Tend-ent (古英文：有某種傾向的)|Tendency (腦袋往某個方向伸的 ➡️ 傾向/趨勢)|
 
 ## ous 形容詞
 名詞 + ous = 形容詞
@@ -671,13 +816,20 @@ ous 形容詞 -> 變 -> os**ity** 名詞
 - Effect（效果） + ive → Effective（有效的 → 能產生預期效果的）。
 - Prevent（預防，動詞） → Preventive（預防性的）
 
+### sive
+動詞結尾發 d 或是 s 的音 → 為了好發音，會演變成 -sive
+- Decide 決定 → Decisive 果斷的
+- Express 表達 → Expressive 表情豐富的
+
 ## ive 名詞
 ## 特定身分的人 或 抽象概念
 - Execute（執行） + ive → Executive（高階主管、執行長 → 執行決策的人，如 CEO 裡的 E）。
 - Represent（代表） + ive → Representative（業務代表、代理人 → 被派出來代表大家的人）。
 - Object（反對/客觀） + ive → Objective（目標、目的 → 往前走要達到的地方）。
+- Alter(adj. 可替代的) + ive → Alternative(n. 選擇、替代方案)
 - Incent（激勵） + ive → Incentive（誘因、獎勵金 → 能夠激勵你行動的東西）。
- 
+
+
 變成副詞： 100% 直接加 -ly 
 - Actively（積極地）
 - Creatively（有創意地）。
@@ -746,18 +898,34 @@ Fortune（運氣，名詞） + -ate → Fortunate（幸運的 → 帶有運氣�
 
 ## acy 抽象名詞
 重音在 -acy 的前一格  
-acy 一種抽象的狀態、性質、地位或制度
 
 ### -ate (形/名) → -acy (名) 狀態、地位
+形容詞尾是 -ate ，去掉ate，變成 acy
+- Priv-ate ➡️ 去掉 -ate 換上 -acy ➡️ Privacy。
 
-|名容詞/名詞|抽象名詞|轉化後的「狀態、地位」|
+|前面單字詞性|前面單字|字尾變acy|意思|
+|:----------|:-----------|:-------------|:-----------|
+|黏 形容詞 ➡️|Private (私人的)|Privacy|私人的狀態 ➡️ 隱私|
+|黏 形容詞 ➡️|Accurate (精確的)|Accuracy|精確的特質 ➡️ 精確度 / 準確性|
+|黏 形容詞 ➡️|Literate (識字的)|Literacy|識字的能力 ➡️ 讀寫能力 / 識字率|
+
+
+|形容詞/名詞|抽象名詞|轉化後的「狀態、地位」|
 |:----------|:-----------|:-------------|
 |Accurate (精確的)|Accuracy (精確度)|處於非常精確的狀態。|
 |Delicate (精緻的/脆弱的)|Delicacy (精緻/佳餚)|精緻的特質，或精緻的食物。|
 |Intimate (親密的)|Intimacy (親密感)|彼此很親密的狀態。|
 |Legitimate (合法的)|Legitimacy (合法性)|合乎法律的性質。|
-|Candidate (候選人)|Candidacy (候選人身分)|擔任候選人的地位與資格。|
 |Illiterate (文盲的)|Illiteracy (文盲狀態)|無法識字讀書的狀態。|
+
+
+名詞指「人」時 ➡️ 變成「該職業的行為或體制」
+
+|前面單字|字尾變acy|意思|
+|:-----------|:-------------|:-----------|
+|Pirate (海盜)|Piracy|海盜的行為 ➡️ 海上搶劫 / 著作權盜版|
+|Bureau (政府機關)|Bureaucracy|官僚體制的制度 ➡️ 官僚作風 / 官僚體制|
+|Candidate (候選人)|Candidacy (候選人身分)|擔任候選人的地位與資格。|
 
 ### -ate (動) → -acy (名) 抽象名詞
 
@@ -993,13 +1161,17 @@ Managerial (管理的 ← manager), Memorial (紀念的)
 - Volunt-（自願、意志） + ary → Voluntary（自願的、志願的 → 處於出於自己意志的狀態）。
 
 ### 動詞 + ory = 形容詞
+字尾t + ory
 - Introduct-（介紹、引進） + ory 
   - Introductory（介紹的、入門的/嘗試性的 → 用來做起步介紹的，如 introductory price 體驗價）。
-- Complus-（強迫） + ory 
-  - Compulsory（義務的、強制性的 → 法律規定非做不可的）。
 - Prepar-（準備） + ory 
   - Preparatory（準備的、預備的 → 為了後續動作做準備的）。
+- Complus-（強迫） + ory 
+  - Compulsory（義務的、強制性的 → 法律規定非做不可的）。
 
+動詞 + ory = 名詞
+- Dorm-（拉丁文：睡覺，像 Dormant 休眠的）+ -ory = Dormitory（睡覺的地方 ➡️ 宿舍，簡稱 Dorm）。
+  
 例外:
 - Imagine（想像，動詞） → Imaginary（虛構的/幻想的，形容詞）
   - 與「想像」這個動作密切相關的 → 也就是不存在於現實、大腦自己捏造出來的狀態。
@@ -1068,22 +1240,51 @@ Managerial (管理的 ← manager), Memorial (紀念的)
 - Jewel-（珠寶） + -ery → Jewelry（珠寶首飾總稱 → 🌟 不可數名詞，代表桌上那一堆亮晶晶的首飾）。
 - Scen-（鏡頭/景色） + -ery → Scenery（風景/景色總稱 → 眼睛看過去一整片的大自然畫面）。
 
-### 動詞 + ery = 某種技術、行為或狀態
+### 動詞 + ery = 名詞 某種技術、行為或狀態
 - Arch-（Archer 射手） + -ery → Archery（射箭術/射箭運動 → 🌟 射箭這門技術）。
 - Rob（搶劫，動詞） + -ery → Robbery（搶劫案/搶劫行為 → 🌟 搶劫這個動作的具體事件）。
 - Brib-（賄賂，動詞） + -ery → Bribery（行賄/受賄行為）。
 - Discov-（發現，動詞） + -ery → Discovery（發現 → 🌟 我們前面聊過，它是 discover + -y 融合成的，長相與 -ery 殊途同歸）。
 
-## ary vs ory vs ery
+### ury 名詞
+ -ury 結尾的字雖然不算特別多，但它們的意思通通符合「一個集體」或「一個抽象的狀態 / 地方」的規律：
+
+- Cent (數字) ➡️ Century (世紀)
+  - -ury (字尾)： 表示「一個……的集體、狀態或地方」。
+  - 「一百個單位的集體」 → 在時間上，就指「一百年」，也就是我們說的「一個世紀」
+- Luxury (n. 奢侈、奢侈品) 💎
+  - 字根： Lux-（原本在拉丁文是「歪扭、過度、放縱」的意思）。
+  - 合體： Lux- + -ury（狀態）
+  - 意思： 一種「物質享受過度、極度放縱」的生活狀態，引申為奢侈。
+- Treasury (n. 國庫、寶庫) 💰
+  - Treasure（金銀珠寶）。
+  - Treas- + -ury（地方）
+  - 專門用來「集中存放所有金銀珠寶的地方」 → 也就是國庫或財政部。
+- Injury (n. 傷害、受傷) 🩹
+  - In- (不) + Jur- (法律、正義，像 Jury 陪審團)。
+  - In- + jur- + -ury（概念）
+  - 字面意思是「不正當、不公義的對待」，後來引申為身體或心理上受到的傷害。
+
+
+## ary ory ery ury 大比較
 ### ery 日常、手藝、場所
 - Bakery (麵包店)         
 - Jewelry (珠寶)  
 ### ary 與...相關的人事物
 - Secretary (秘書)
 - Military (軍事) 
+
 ### ory 帶有功能性的場所/形容詞
+字尾t + ory
 - History (歷史)     
 - Laboratory (實驗室)
+
+|字根|詞性|前面單字的詞性偏好|單字|
+|:----|:------|:---------------|:-------------------|
+|-ury|100% 名詞|喜歡黏 數量 / 抽象字根<br>代表「一整個集合體、抽象狀態」|- Cent (數字) ➡️ Century (世紀)<br> - Treasure (名詞) ➡️ Treasury (寶庫/國庫)|
+|-ery|100% 名詞|喜歡黏 名詞 / 動詞<br>代表「某種行業、場所、集體」|- Bake (動詞) ➡️ Bakery (麵包店)<br> - Jewel (名詞) ➡️ Jewelry (珠寶總稱)|
+|-ary|形容詞 / 名詞|喜歡黏 名詞 / 數字<br>代表「與……有關的、人、場所」|- Secret (名詞) ➡️ Secretary (秘書)<br> - Bound (名詞) ➡️ Boundary (邊界)|
+|-ory|名詞 / 形容詞|喜歡黏 動詞 (特別是 t 結尾)<br>代表「做動作的場所、具備該傾向的」|- Direct (動詞) ➡️ Directory (指南/名錄)<br> - Satisfy (動詞) ➡️ Satisfactory (令人滿意的)|
 
 ## ic 形容詞 
 具備...藝術風格的、像...一樣特性的
@@ -1162,10 +1363,14 @@ fluct + ate = 波動、起伏(動詞)
   - Length（長度，母音變音成 [ɛ]）。
 - Strong（強壯的，母音 [ɔ]） + -th
   - Strength（力量/強度，母音變音成 [ɛ]）。
-- Warm（溫暖的） + -th
-  - Warmth（溫暖）。
-- Broad（寬闊的） + -th
-  - Breadth（幅員/寬廣）。
+- Grow (成長)[ɡroʊ] → Growth[ɡroθ] (成長、增長)
+- Heal[hil] (治癒) → Health[helθ] (健康)
+- Warm[wɔrm]（溫暖的） + -th
+  - Warmth[wɔmθ]（溫暖）。
+- Broad[brɔd]（寬闊的） + -th
+  - Breadth[bredθ]（幅員/寬廣）。
+
+
 
 ### 動詞 + th = 該動作產生的抽象結果
 - Grow（成長，動詞） + -th  
