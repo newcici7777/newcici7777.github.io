@@ -5,11 +5,19 @@ keywords: true, ment, tion
 ---
 ## ment 名詞
 動詞 + ment = 名詞  
-ment是一個把動詞打包成「實體物品、制度、工具」的名詞字尾。
+
+### ment是一個把動詞打包成「實體物品、制度、工具」的名詞字尾。  
 - Docu（教導/記錄字根） → Document（文件，名詞）
 - Frag-（打破字根） → Fragment（碎片，名詞）
 - Comple-（完成/填充字根） → Complement（互補物，名詞）
 - Compli（讚美） → Compliment（稱讚，名詞）
+
+### 動作的【工具、手段】或【完成後的具體狀態、結果】
+ment「一整套工具或具體成果」（如「付款、設備、管理」）的動詞
+- pay（付款） → payment（款項 → 付款後的具體結果）
+- move（移動） → movement（移動 → 移動的具體狀態/運動）
+- develop（發展） → development（發展）
+- govern（統治） → government（政府 → 統治國家的具體工具/機構）
 
 ## tion 名詞
 ### tion 把動作，變成「一件事情或行為」
@@ -39,6 +47,17 @@ ment是一個把動詞打包成「實體物品、制度、工具」的名詞字�
 - Inform（通知，重音在 form） → Information（訊息，重音被吸到 ma 身上）。
 - Introduce（介紹，重音在最前） → Introduction（介紹，重音被吸到 duc 身上）。
 - Communicate（溝通，重音在 mu） → Communication（溝通，重音被吸到 ca 身上）。
+
+### ate + ion = ation
+-ate 結尾的動詞 → 去掉 e 變成 -ation：
+- create（創造） → creation**
+- educate（教育） → education**
+
+### ct/pt + ion = tion
+-ct / -pt 結尾的動詞 → 直接銲上 -ion（因為有 t 了，直接防撞）：
+- act（行動） → action
+- direct（指導） → direction
+- adopt（採用） → adoption
 
 ## sion 名詞
 - Decide（決定） → Decision（決定，名詞）。
@@ -134,6 +153,15 @@ ment是一個把動詞打包成「實體物品、制度、工具」的名詞字�
 - Active → Ac`tivity（共 4 音節，倒數第三是 ti）
 - Possible → Possi`bility（共 5 音節，倒數第三是 bi）
 
+## 字尾d 變 t 名詞
+動作（動詞，聲帶震動 d）→ 結果/狀態（名詞，聲帶熄火 t）
+- extend (動：延伸) → + -t → extent (名：程度/範圍)
+- intend (動：打算) → + -t → intent (名：意圖)
+- ascend (動：上升) → + -t → ascent (名：上升)
+- descend(動詞：下降、走下去 → 來自 de- 向下 + climb 爬) + -t → descent 名詞（下降/血統）
+- Ascend (上升) Ascent (上升/上坡)
+- Bend (彎曲) → Bent (傾向/愛好)
+- Lend (借出) → Loan / Lent (借出物/借期)
 
 ## it 走 (名詞)
 it 放在單字尾巴時，通常代表一個「走、去、移動」的動作或結果
@@ -333,11 +361,64 @@ logy（學問）家族：
 - Fort（強壯/勇敢） + itude → Fortitude（堅韌、剛毅 → 內心無比強壯的狀態）。
 - Solitude solus (單獨的) 一個人待著的狀態 → 孤獨、獨居、隱居
 
-## -ian（名詞字尾：...國家的人、...專家）
-重音在ian的前一個音節
-- Canada（加拿大，重音在最前） → Canadian（加拿大人的，重音跑到 na 身上）
-- Music（音樂，重音在最前） → Musician（音樂家，重音跑到 si 身上，發音還順便變成「協」）
+## se 名詞/形容詞 某個國家的人、或是語言
+se + 地名 = 變成「該國/該地的人或語言」。
+
+發音：大聲的 z
+ 
+- China → Chinese（中國人/中國人的.../中文 ）
+- Japan → Japanese（日本人/日本人的.../日文 ）
+- Taiwan（台灣） + -ese → Taiwanese(台灣人/台灣人的...)
+
+## an
+### 字尾a + n
+- America → + -n → American（美國人/美國的）
+- Africa → + -n → African（非洲人/非洲的）
+- Asia → + -n → Asian（亞洲人/亞洲的）
+- Korea → + -n → Korean（韓國人/韓國的）
+
+### 其它:
+- Republic（共和） → + -an → Republican（共和黨的/共和黨員）
+
+## ian 名詞/形容詞
+重音在ian的前一個音節  
+尾巴是標準子音 + ian  
+### -ian 地名 + ian = 該國/該地的人或語言
+- Canada（加拿大，重音在最前,去掉結尾元音 a） → Canadian（加拿大人的，重音跑到 na 身上)
+- Egypt（埃及） + -ian → Egyptian（埃及人/埃及的）
+- Paris（巴黎） + -ian → Parisian（巴黎人/巴黎的）
+
+### -ian 特定學科/技術名詞 + ian =  該領域的專家/職業
+- Music（音樂） + -ian → Musician（音樂家,重音跑到 si ）
+- Clinic（診所/臨床） + -ian → Clinician（臨床醫生）
+- Library（圖書館） + -ian → Librarian（圖書館管理員 → y 變成 i 潤滑）
+- Magic（魔術） + -ian → Magician（魔術師）
 - History（歷史） → Historian（歷史學家，重音跑到 to 身上）
+
+## ean 名詞/形容詞
+結尾自備 -e、-ea 的專有名詞 + an
+- Europe（歐洲） + -an → European（歐洲人/歐洲的)
+- Mediterranean（地中海的 → 由 medius「中間」+ terra「陸地」組合，再套上古典的 -ean）
+
+## ain 土地、邊界、空間的
+### ain「土地、邊界、空間」相關的名詞後面
+- Mount（山，名詞） + -ain → Mountain（山脈 / 山的 → 名詞/形容詞）。
+- Font-（源泉 / 泉水，拉丁字根） + -ain → Fountain（噴泉 / 水源 → 🌟 物理畫面：與泉水、出水口相關的噴泉）。
+- Port（港口 / 門戶） + -ain → Porcelain（瓷器 → 🌟 原意與貝殼、光滑表面相關，經法語演變而來）。
+
+### 人
+- Cap-（頭 / 首領） + -ain → Captain（船長 / 首領 → 🌟 物理畫面：一個群體的「頭部」人物）。
+
+### 握住tain
+- con-（共同） + -tain（握住） → Contain（包含 / 容納 → 🌟 物理畫面：大家一起被握在裡面）。
+- ob-（去、朝向） + -tain（握住） → Obtain（獲得 / 取得 → 🌟 物理畫面：伸手去把它握在手裡）。
+- re-（往回 / 重新） + -tain（握住） → Retain（保留 / 留住 → 🌟 物理畫面：往回拉，不讓它跑掉）。
+- sus-（在...下面） + -tain（握住） → Sustain（維持 / 支撐 → 🌟 物理畫面：在下面用手死死托住、握住）。
+
+### str-拉緊的狀態
+拉扯、延伸、限制動詞 + ain = 受力限制的狀態。
+- Con-（共同） + str-（拉緊） + -ain → Constrain（限制 / 強迫 → 🌟 物理畫面：大家一起被繩子勒緊）。
+- Dis-（分開） + str-（拉緊） + -ain → Distrain（扣押 / 充公 → 🌟 法律術語，把財產拉走扣留）。
 
 ## tune 名詞 跟命運有關的名詞
 - Fortune（名詞：財富、運氣）
@@ -351,31 +432,38 @@ logy（學問）家族：
   - An opportune time → 一個合適的時間點。
 
 ## ice 名詞
-「在做某件事」的機構或具體行為，都喜歡用 -ice 結尾
-- Just（公正的、正義的） + ice → Justice（正義、公正 ）
+### 動詞 + ice = 名詞「在做某件事」的具體行為，都喜歡用 -ice 結尾
 - Serv-（服務、伺候） + ice → Service（服務、協助）。
-- Prac-（做、實踐） + ice → Practice（練習、實習、慣例）。
-- Off-（履行職責） + ice → Office（辦公室、官職 → 履行職務的具體場所）。
+- Prac-（實踐/實行，動作） + -ice → Practice（實踐/練習）。
+- Adv-（提供意見） + -ice → Advice（建議/忠告 → 🌟 動詞是 advise，名詞配 -ice 變成 advice）。
+
+### 形容詞 +  ice = 名詞 抽象美德或惡習的名詞
+- Just（正義的/公平的） + -ice → Justice（正義/司法 → 具有公平特質的狀態）。
+- Nov-（新的，如 novel 新奇的） + -ice → Novice（新手/初學者 → 處於剛來、很新狀態的人）。
+- Mal-（壞的/惡意的） + -ice → Malice（惡意/怨恨 → 懷有壞心眼的狀態）。
+
+### 動詞 + ice = 名詞 「在做某件事」的機構
+- Serv-（服務/伺候，動詞） + -ice → Service（服務/公共設施）。
+- Off-（職責/工作） + -ice → Office（辦公室/職權 → 履行職責的具體場所）。
 - Not-（注意到） + ice → Notice（通知、公告 → 讓你注意到的那個具體文件）。
 
-產品或物品
+### 產品或物品
 - Juice（果汁 → 雖然自成一個字，但古源頭也是從植物的「精華狀態」固化而來的字）。
 - Device（設備、裝置 → 源自分開、設計的動作，固化成一台實體的機器）。
 - Slice（薄片 → 切下來的具體片狀物）。
-- Advice（建議，名詞）
 
 ## se 動詞
 【動詞】發出磁性 [z] 音，代表「去做某個動作」
-- Advi-（注意、看） + se → Advise（建議，動詞 → 唸 [ədˈvaɪz] 呃底歪z）。
-- Revi-（再次看） + se → Revise（修訂、修改，動詞 → 唸 [rɪˈvaɪz] 瑞歪z）。
-- Empha-（強調） + size（變體） → Emphasize（強調，動詞 → 唸 [ˈɛmfəsaɪz] 欸m發塞z）。
-- Clo-（關閉） + se → Close（關閉，動詞 → 唸 [kloʊz] 扣摟烏z）。
+- Advi-（注意、看） + se → Advise[ədˈvaɪz]（建議，動詞 ）。
+- Revi-（再次看） + se → Revise[rɪˈvaɪz]（修訂、修改，動詞 ）。
+- Empha-（強調） + size（變體） → Emphasize[ˈɛmfəsaɪz]（強調，動詞 ）。
+- Clo-（關閉） + se → Close[kloʊz]（關閉，動詞  ）。
 
 ## se 名詞
 【名詞/形容詞】漏氣 [s] 音，代表「概念、實體或狀態」
-- Close（接近的、親密的，形容詞 → 雖然拼法跟動詞一樣，但當形容詞時要唸 [kloʊs] 扣摟烏絲！）。
-- Purpo-（打算） + se → Purpose（目的、意圖，名詞 → 唸 [ˈpɜːrpəs] ㄆㄛㄆ呃絲）。
-- Expen-（花費） + se → Expense（費用、開支，名詞 → 唸 [ɪkˈspɛns] 伊k死班絲）。
+- Close[kloʊs]（接近的、親密的，形容詞 ）。
+- Purpo-（打算） + se → Purpose[ˈpɜːrpəs]（目的、意圖，名詞 ）。
+- Expen-（花費） + se → Expense[ɪkˈspɛns]（費用、開支，名詞 ）。
 
 ## se 名詞 某個國家的人、或是語言
 發音：大聲的 z
@@ -389,6 +477,7 @@ logy（學問）家族：
 |🎬 Advise (動詞) 🌟 有震動的 [z] 「去執行」給建議的這個動作。| 🏷️ Advice (名詞) 🍃 漏氣的 [s] 老闆給你的那一句話（具體的話語）。|
 | 🎬 Practise (動詞/英式) 🌟 有震動的 [z]「去進行」練習、或是醫生律師「去執業」。| 🏷️ Practice (名詞) 🍃 漏氣的 [s]練習的這件事、或是職場上的「慣例」。|
 | 🎬 License (動詞)🌟 有震動的 [z]官方「去准許、去授權」你做某件事。|- 🏷️ Licence (名詞/英式) 🍃 漏氣的 [s]那張實體的「駕照、執照」卡片。|
+
 
 ## er ee eer
 動詞 + er/ee/eer = 名詞
@@ -440,10 +529,11 @@ ent拉丁文中的ing，專門用來把動詞變成「正在做某事、具備�
 
 ### ent 形容詞
 形容某個人或事物的狀態
-- Differ（不同） + ent → Different（不同的）。
-- Depend（依賴） + ent → Dependent（依賴的、取決於...的）。
+- Differ（動詞：不同、相異） + ent → Different（不同的）。
+- Depend（依賴,動詞） + ent → Dependent（依賴的、取決於...的）。
 - Sil-（保持安靜） + ent → Silent（安靜的、沉默的）。
 - Con-fide（信任） + ent → Confident（有信心的 → 內心充滿信任的）。
+- exist (動) → existent (形：存在的) 
 
 ### ent/ant 名詞 人
 做這個動作的人
@@ -493,9 +583,22 @@ ent拉丁文中的ing，專門用來把動詞變成「正在做某事、具備�
   - 坐在最前面主持大局的這個「職位與任期狀態」。
 
 ## ence/ance 名詞 具體的動作、過程、或結果
+一種持續存在的【狀態】、【特質】或【性質】」，它不強調激烈的動作，而是強調「靜態的現象」。
+
 - Differ（不同，動詞） → Difference（差異 → 兩個東西不一樣的結果）。
 - Emerge（浮現） → Emergence（出現、興起 → 正在冒出來的過程，如：the emergence of AI）。
 - Reside（居住） → Residence（住宅、住所 → 🌟 甚至直接固化成一個具體的建築物！）。
+
+### ence 最愛黏在 字尾 -er、-exist、-end
+#### er 結尾的動詞 → 偏愛 -ence：
+- differ（相異） → difference（差異）
+- prefer（偏好） → preference（偏好）
+- interfer（干涉） → interference（干涉）
+
+#### exist / -depend 系列的動詞 → 偏愛 -ence：
+- exist（存在） → existence（存在狀態）
+- depend（依賴） → dependence（依賴狀態）
+
 
 ## ence vs ency
 
@@ -505,6 +608,15 @@ ent拉丁文中的ing，專門用來把動詞變成「正在做某事、具備�
 |Emerge(浮現)|Emergence興起、顯露（進行中的過程）|Emergency緊急事件（卡在危急中的狀態）|
 |Persist(堅持)|Persistence堅持、固執（持續做的行為）|Persistency持久性（物理或化學上的無形性質）|
 
+## 動詞 → ent(形) → ence(名)
+- differ (動) → different (形) → difference (名)
+- depend (動) → dependent (形：依賴的) → dependence (名：依賴)
+- exist (動) → existent (形：存在的) → existence (名：存在)
+
+## ent(形) → ence(名)
+當它表示「處於某種動作的狀態中」，且它的名詞形是 -ence 或 -ency 時：
+- silent（安靜的） → 名詞是 silence
+- efficient（有效率的） → 名詞是 efficiency
 
 ## ous 形容詞
 名詞 + ous = 形容詞
@@ -780,7 +892,7 @@ Managerial (管理的 ← manager), Memorial (紀念的)
 |Substance / Substant(物質 → 名詞)|Substantial(實質的 / 大量的)原本的「物質」變成形容詞「內容實質、份量巨大的」。|
 
 ### ial 重音
-重音在前一個音節
+重音在ial前一個音節
 - Finance（金融，名詞重音在最前） → Financial（重音被瞬間吸到 nan 身上！）。
 - Industry（工業，名詞重音在最前） → Industrial（工業的，重音被吸到 dus 身上！）。
 - Manager（經理） → Managerial（管理上的，重音直接大跳躍到 ge 身上！）。
@@ -921,6 +1033,33 @@ Managerial (管理的 ← manager), Memorial (紀念的)
 - Station（車站/駐地，名詞） → 加上形容詞字尾 -ary → Stationary（靜止的/不動的，形容詞）。
 - Revolute（旋轉/變革） → Revolution（革命，名詞） → Revolutionary（革命性的，形容詞）。
 
+## ery 名詞
+### ery 該職業工作的【場所】
+- Bak-（Baker 麵包師） + -ery → Bakery（麵包店 → 🌟 麵包師工作的地方）。
+- Nur-（Nurse 護士/看護） + -ery → Nursery（育兒室 / 苗圃 → 進行照料和培育的空間）。
+- Fish-（魚） + -ery → Fishery（漁場 → 捕魚、養魚的場所）。
+
+### ery 總稱 / 集合名詞
+- Machin-（機器） + -ery → Machinery（機械/機器總稱 → 🌟 不可數名詞，指工廠裡一整套的機械系統）。
+- Jewel-（珠寶） + -ery → Jewelry（珠寶首飾總稱 → 🌟 不可數名詞，代表桌上那一堆亮晶晶的首飾）。
+- Scen-（鏡頭/景色） + -ery → Scenery（風景/景色總稱 → 眼睛看過去一整片的大自然畫面）。
+
+### 動詞 + ery = 某種技術、行為或狀態
+- Arch-（Archer 射手） + -ery → Archery（射箭術/射箭運動 → 🌟 射箭這門技術）。
+- Rob（搶劫，動詞） + -ery → Robbery（搶劫案/搶劫行為 → 🌟 搶劫這個動作的具體事件）。
+- Brib-（賄賂，動詞） + -ery → Bribery（行賄/受賄行為）。
+- Discov-（發現，動詞） + -ery → Discovery（發現 → 🌟 我們前面聊過，它是 discover + -y 融合成的，長相與 -ery 殊途同歸）。
+
+## ary vs ory vs ery
+### ery 日常、手藝、場所
+- Bakery (麵包店)         
+- Jewelry (珠寶)  
+### ary 與...相關的人事物
+- Secretary (秘書)
+- Military (軍事) 
+### ory 帶有功能性的場所/形容詞
+- History (歷史)     
+- Laboratory (實驗室)
 
 ## ic 形容詞 
 具備...藝術風格的、像...一樣特性的
@@ -938,19 +1077,6 @@ Managerial (管理的 ← manager), Memorial (紀念的)
 - Real → Realist（現實主義者） + -ic → Realistic（現實的/寫實的）
 - Optim → Optimist（樂觀主義者） + -ic → Optimistic（樂觀的）
 - Character → Characteristic（特徵的/典型的）
-
-## ice 名詞
-### 形容詞 +  ice = 名詞 抽象美德或惡習的名詞
-- Just（正義的/公平的） + -ice → Justice（正義/司法 → 具有公平特質的狀態）。
-- Nov-（新的，如 novel 新奇的） + -ice → Novice（新手/初學者 → 處於剛來、很新狀態的人）。
-- Mal-（壞的/惡意的） + -ice → Malice（惡意/怨恨 → 懷有壞心眼的狀態）。
-
-### 動詞 + ice = 名詞 具體的行為、服務、機構
-- Serv-（服務/伺候，動詞） + -ice → Service（服務/公共設施）。
-- Prac-（實踐/實行，動作） + -ice → Practice（實踐/練習）。
-- Off-（職責/工作） + -ice → Office（辦公室/職權 → 履行職責的具體場所）。
-- Adv-（提供意見） + -ice → Advice（建議/忠告 → 🌟 動詞是 advise，名詞配 -ice 變成 advice）。
-
 
 ## st 站得筆挺、動彈不得
 最常出現在「形容詞」和「名詞」身上
@@ -1000,3 +1126,46 @@ fluct + ate = 波動、起伏(動詞)
 |Ojbect|物體目標|反對|
 |destruct|破壞的|毀滅|
 
+## th 名詞
+ -th 發音，為了好唸，前面形容詞原本的長母音，通常會「縮水」變成短母音：
+
+### 形容詞 + th = 名詞 該特質的度量衡或抽象狀態
+- Wide（寬的，長音 [aɪ]） + -th
+  - Width（寬度，母音縮水成短音 [ɪ]）。
+- Deep（深的，長音 [i]） + -th
+  - Depth（深度，母音縮水成短音 [ɛ]）。
+- Long（長的，母音 [ɔ]） + -th
+  - Length（長度，母音變音成 [ɛ]）。
+- Strong（強壯的，母音 [ɔ]） + -th
+  - Strength（力量/強度，母音變音成 [ɛ]）。
+- Warm（溫暖的） + -th
+  - Warmth（溫暖）。
+- Broad（寬闊的） + -th
+  - Breadth（幅員/寬廣）。
+
+### 動詞 + th = 該動作產生的抽象結果
+- Grow（成長，動詞） + -th  
+  - Growth（成長/發育，名詞）。
+- Heal（治癒，動詞） + -th 
+  - Health（健康 → 物理畫面：身體被治癒後的完好狀態，母音同樣縮水成短音 [ɛ]）。
+- Die（死亡，動詞） + -th
+  - Death（死亡，名詞 → 底層拼寫發生了形變）。
+- Steal（偷竊，動詞） + -th
+  - Stealth（秘密行動/隱形 → 物理畫面：像小偷一樣鬼鬼祟祟的狀態）。
+- Bear（誕生/承受，動詞） + -th
+  - Birth（出生/誕生，名詞）。
+
+### th開頭
+th，專門用來把動詞/人轉成「抽象名詞、事件或結果」
+
+- thief[θiːf](小偷，可數名詞) 發的是長母音 [i]。
+- theft[θeft](n.偷竊 這個「行為」)
+  - 尾巴 -t 變成事件時，為了快速把字唸完，母音瞬間縮水，變成了短母音 [ɛ]（欸）。
+  - 於是：長音的 thief → 縮短並同化成短音、無聲的 theft。
+
+## ief 人
+- thief 小偷
+- chief 首領
+
+其它
+- grief 悲傷
