@@ -232,6 +232,18 @@ in 舌尖頂住上門牙後面，再發r音，發不出r的捲舌音，於是就
 | irresponsible [ˌɪrɪˈspɑnsəbəl] | ir（否定）+ responsible（負責的） | 不負責任的 → 不負責任的 |
 | irrelevant [ɪˈrɛləvənt] | ir（否定）+ relevant（相關的） | 不相關的 → 不相關的 |
 
+
+## en
+
+|單字|拆解|意思|
+|:-------|:-----------------|:-----------------------------------|
+|entitle|en-（使...擁有） + title（頭銜、稱號）|給予某人資格/權利|
+|Enforce|en- (使) + force (力量/法律)|使力量或法律發生效力 → 強制執行、實施|
+|Ensure|en- (使) + sure (確定)|使事情變得百分之百確定 → 確保、保證|
+|Enable|en- (使) + able (能夠)|使某人變得有能力做到 → 使能夠、賦予能力|
+
+
+
 ## ile
  -ilis，核心意思是「傾向於...的」、「能夠...的」或「具有...性質的」。
 ### 形容詞
@@ -315,22 +327,6 @@ credit 的字源拆解更精確是：cred (相信) + it (過去分詞標記)，�
 | product | productum | 已被生產的（東西） | 名詞 |
 | contract | contractum | 已被拉在一起的（東西） | 名詞 |
 
-## tivate 進行...的動作
-tivate 的來源與意義:  
-tivate 本身並不是一個獨立的字根，而是 tiv + ate 的組合，主要功能是將名詞或形容詞轉變為動詞，表示「使成為...」或「進行...的動作」。
-
-| 組成部分 | 來源 | 意義 |
-|----------|------|------|
-| tiv | 拉丁語 tivus（轉變為形容詞或動詞的連接成分） | 表示「與...有關的」、「具有...性質的」 |
-| ate | 拉丁語 -atus（動詞後綴） | 使成為...、做...的動作 |
-
-| 單字 | 字根 | 意義 |
-|------|------|------|
-| cultivate | cul（耕作）+ tivate | 耕種、培養 |
-| activate | activ（活躍的）+ ate | 激活、啟動 |
-| motivate | mot（移動）+ ivate | 激發、促使 |
-| captivate | capt（抓住）+ ivate | 迷住、吸引 |
-| festive | fest（節日）+ ivate | 慶祝（較少用） |
 
 ## 場所相關字尾 arium orium ary
 ### arium
@@ -368,6 +364,7 @@ tivate 本身並不是一個獨立的字根，而是 tiv + ate 的組合，主�
 | 醫療／健康 | sanitarium, solarium |
 | 生物／生態 | terrarium, vivarium, herbarium |
 | 學術研究 | herbarium, vivarium |
+
 
 - **aqu**arium [əˈkwɛriəm] n. 水族館；養魚缸 [🔊 聽發音](https://www.merriam-webster.com/dictionary/aquarium)
 

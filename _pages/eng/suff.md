@@ -50,8 +50,8 @@ ment「一整套工具或具體成果」（如「付款、設備、管理」）�
 
 ### ate + ion = ation
 -ate 結尾的動詞 → 去掉 e 變成 -ation：
-- create（創造） → creation**
-- educate（教育） → education**
+- create（創造） → creation
+- educate（教育） → education
 
 ### ct/pt + ion = tion
 -ct / -pt 結尾的動詞 → 直接銲上 -ion（因為有 t 了，直接防撞）：
@@ -106,38 +106,27 @@ ment「一整套工具或具體成果」（如「付款、設備、管理」）�
 - expose (暴露) → Exposure 
   - 被完全打開、暴露在外的狀態 → 暴露、曝光率
 
-## ty/ity 名詞
-
-### 何時加ty 或 ity
-形容詞字尾是 -e 結尾： 通常直接加 -ty。
-- Safe → Safety 
-- Pure → Purity（e 變成 i）。
-
-形容詞字尾ble/al/l/ive + ity = 名詞
-- Possible → Possibility（可能性）
-- Formal → Formality（正式手續）。
-
-### ty 名詞 ...的特質  
-形容詞 + ty = 名詞 ...的特質  
+## ty/ity 抽象名詞
+### ty 名詞 形容詞字尾是e
+形容詞字尾是e + ty = 名詞 形容詞意思的「抽象名詞」
 - Safe（安全的） + ty → Safety（安全、安全性）。
-- Cruel（殘忍的） + ty → Cruelty（殘忍、殘酷行為）。
-- Pure（純淨的） + ity → Purity（純淨、純潔）。
+- Pure（純淨的） + ity（e 變成 i） → Purity（純淨、純潔）。
+
+例外:
 - Simp-（簡單的） + icity（變體） → Simplicity（簡單、樸素）。
 
 ### ty 名詞 某種能力、營運指標或商品特質
-名詞/形容詞 + ty/ity = 名詞  
-
-- Able（有能力的） + ity 
-  - Ability（能力）。
-- Productive（有生產力的） + ity 
-  - Productivity（生產力、生產率 ）。
-- Creative（有創造力的） + ity 
-  - Creativity（創造力）。
-- Flexible（有彈性的） + ity
-  - Flexibility（彈性、靈活性 → 如：上班時間的彈性）。
+形容詞字尾able/ive/al/l + ty/ity = 形容詞意思的「抽象名詞」  
+- Cruel（殘忍的） + ty → Cruelty（殘忍、殘酷行為）。
+- Able（有能力的） + ity = Ability（能力）。
+- Productive（有生產力的） + ity = Productivity（生產力、生產率 ）。
+- Creative（有創造力的） + ity = Creativity（創造力）。
+- Flexible（有彈性的） + ity = Flexibility（彈性、靈活性 → 如：上班時間的彈性）。
 - Quality（品質）qual + ity
 - Quantity（數量）
 - Availability（可利用性/空位)
+- Possible → Possibility（可能性）
+- Formal → Formality（正式手續）。
 
 ### ty 一整群人或一個整體（集合名詞）
 具備某種特質的人事物「打包成一個群體」
@@ -152,6 +141,18 @@ ment「一整套工具或具體成果」（如「付款、設備、管理」）�
 重音在倒數第三個音節 
 - Active → Ac`tivity（共 4 音節，倒數第三是 ti）
 - Possible → Possi`bility（共 5 音節，倒數第三是 bi）
+
+## 字尾t + ive(形) + ate(動詞) = 動詞 
+把形容詞變成動詞，動詞是形容詞的「動態」意思
+- act(n.行為) ac(做)+ ct(做) → active(adj.活躍的) → activ(去掉e) + ate (v.啟動; 觸發；使活化) 
+
+| 單字 | 字根 | 意義 |
+|------|------|------|
+| cultivate | cul（耕作）+ tivate | 耕種、培養 |
+| activate | activ（活躍的）+ ate | 激活、啟動 |
+| motivate | mot（移動）+ ivate | 激發、促使 |
+| captivate | capt（抓住）+ ivate | 迷住、吸引 |
+| festive | fest（節日）+ ivate | 慶祝（較少用） |
 
 ## 字尾d 變 t 名詞
 動作（動詞，聲帶震動 d）→ 結果/狀態（名詞，聲帶熄火 t）
@@ -826,9 +827,8 @@ Modernize（動詞，唸買z） → Modernization（名詞，重音跑到 za 身
 |Comic (喜劇的)|Comic (名詞：漫畫書)|Comical (形容詞：滑稽可笑的)|
 
 
-## al/ial 形容詞
-### 與...有關的
-名詞 + al = 形容詞
+## al/ial 形容詞 （與……相關的）
+### 名詞 + al = 形容詞
 - Nation（國家） + al → National（國家的、國民的 → 與國家有關的）。
 - Person（個人） + al → Personal（個人的、私人的 → 與個人有關的）。
 - Origin（起源） + al → Original（最初的、原創的 → 與源頭有關的）。
@@ -863,6 +863,20 @@ Partial (部分的), Essential (本質的)
 #### 去y + ial
 Managerial (管理的 ← manager), Memorial (紀念的)
 
+### ant + ial 當形容詞
+
+|ant| antial|
+|:-----------|:----------------------|
+|Assistant(助理 / 幫手 → 名詞)|Assistential(輔助性的 / 救濟的)|
+|Covenant(盟約 / 協定 → 名詞)|Covenantal(盟約的)這裡直接加 -al 轉化為形容詞。|
+|Substance / Substant(物質 → 名詞)|Substantial(實質的 / 大量的)原本的「物質」變成形容詞「內容實質、份量巨大的」。|
+
+### ial 重音
+重音在ial前一個音節
+- Finance（金融，名詞重音在最前） → Financial（重音被瞬間吸到 nan 身上！）。
+- Industry（工業，名詞重音在最前） → Industrial（工業的，重音被吸到 dus 身上！）。
+- Manager（經理） → Managerial（管理上的，重音直接大跳躍到 ge 身上！）。
+
 ### ent + ial當形容詞
 因為ent變成其它意思 使用ent + ial當形容詞
 - President（原本是形容詞「主持的」，後來變成名詞「總統/總裁」）
@@ -883,19 +897,29 @@ Managerial (管理的 ← manager), Memorial (紀念的)
 |Difference（差異）|Differential 差別的 |
 |Credence（信用/憑證）|Credential（憑證的 / 🌟 複數 credentials 代表證書）|
 
-### ant + ial 當形容詞
+### ent vs ial 多重形容詞
+- -ent 永遠先搶佔最核心、最靠近主體的「人」或「主觀狀態」（居民 / 自信）。
+- -ial 則是等主體穩定後，向外擴展去形容周邊的「環境、規範或客觀事物」（住宅區 / 機密文件）。
 
-|ant| antial|
-|:-----------|:----------------------|
-|Assistant(助理 / 幫手 → 名詞)|Assistential(輔助性的 / 救濟的)|
-|Covenant(盟約 / 協定 → 名詞)|Covenantal(盟約的)這裡直接加 -al 轉化為形容詞。|
-|Substance / Substant(物質 → 名詞)|Substantial(實質的 / 大量的)原本的「物質」變成形容詞「內容實質、份量巨大的」。|
+|基礎詞（動詞）|-ent（主體：人/狀態）|-ial（與...有關的）|
+|:-------------|:---------------------|:---------------------------------|
+|confide(信任/吐露)|confident充滿信任狀態的（自信的）|confidential與信任/悄悄話相關的（機密的）|
+|reside(定居/坐下)|resident坐下留在那裡的人（居民）|residential與定居/住處相關的環境（住宅的）|
 
-### ial 重音
-重音在ial前一個音節
-- Finance（金融，名詞重音在最前） → Financial（重音被瞬間吸到 nan 身上！）。
-- Industry（工業，名詞重音在最前） → Industrial（工業的，重音被吸到 dus 身上！）。
-- Manager（經理） → Managerial（管理上的，重音直接大跳躍到 ge 身上！）。
+- resident → 坐下留下來的【人】
+  - 詞性:  定居者 → 居民（名詞），或是形容居住狀態的 居留的（形容詞）。
+  - He is a resident of New York.（他是紐約的居民。）
+  - A resident doctor（住院醫生 → 必須「住在/留在」醫院裡的醫生）
+- residential 與居住行為「有關的..」
+  - 詞性: 形容詞 與居住相關的 → 住宅的、適合居住的。
+  - This is a residential area.（這是一個住宅區)
+
+### ic vs ial 多重形容詞
+
+| 單字| ic 形容詞| ial形容詞|
+|:------|:---------------|:-------------------------|
+|history|historic歷史意義的/劃時代的|historical（歷史的、史實的、跟過去有關的）|
+|art|artistic（有藝術才華的、藝術家的）|artificial（人造的、假的）|
 
 ## -y 形容詞
 - 短單字 + 簡單名詞 → 100% 是形容詞。
@@ -1169,3 +1193,24 @@ th，專門用來把動詞/人轉成「抽象名詞、事件或結果」
 
 其它
 - grief 悲傷
+
+## anti-
+### anti + 名詞 = 名詞
+一個具體的物質或人」**（如 antibody 抗體、antibiotic 抗生素），拼裝出來就是 名詞。
+- antibody（抗體）anti-（抗） + body（名詞：身體/物體）
+- antibiotic（抗生素）anti-（抗） + bio（生命/細菌） + -tic（形容詞/名詞字尾）
+
+### anti + 名詞 = 形容詞
+「某個產品的防護功能」**（如 antitheft 防盜的、antiaging 抗老的、antislip 防滑的），不管它後面黏的是名詞還是動詞，拼出來一律當作 形容詞
+- antitheft（防盜的）anti-（防） + theft（名詞：偷竊案）
+  - an antitheft system（防盜系統）
+- antislip（防滑的）anti-（防） + slip（名詞/動詞：滑倒）
+  - an antislip mat（防滑墊）
+### anti + 形容詞 = 形容詞
+- antiviral（抗病毒的）anti-（抗） + viral（形容詞：病毒的
+
+### anti + 事件/行為 = 形容詞
+- Anticrime（防犯罪的）
+- Waterproof / Rainproof（防水/防雨的）
+
+
