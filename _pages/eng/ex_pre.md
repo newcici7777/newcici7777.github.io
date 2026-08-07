@@ -34,6 +34,12 @@ keywords: ex-, pre-
 
 ## s後面是子音念[s]
 
+## ex中的x，音節要分二邊，k給前面音節 [ɛk's] [ɪgˈz] [ɪkˈs]
+以下的範例，x音節分二邊，半邊給前面音節，半邊給後面音節。
+- exit [ˈɛk.sɪt] 出口
+- exist[ɪgˈzɪst] 存在
+- express [ɪkˈsprɛs] 表達
+
 ## ex[ɛks] 是重音：唸 [ɛ]，x唸無聲的[ks] = [ɛks]
 - exit：重音在最前面，發無聲的 [ˈɛk.sɪt]
 - expert：重音在最前面，所以 x 輕鬆發無聲的 [ˈɛk.spɚt]。
