@@ -60,4 +60,22 @@ server.listen(8080, ()=>{
 執行網頁
 ![img]({{site.imgurl}}/node/web.png)<br>
 
-1155
+載入網頁，網址輸入
+{% highlight javascript linenos %}
+const http = require('http')
+const fs = require('fs')
+const path = require('path')
+const server = http.createServer()
+server.on('request', function(req,res){
+    const url = req.url
+    const fpath = path.join(__dirname,url)
+    fs.readFile(fpath, 'utf8', (err,dataStr) => {
+        if(err) return res.end('404 not found')
+        res.end(dataStr)
+    })
+})
+
+server.listen(8080,function(){
+    console.log('server at http://127.0.0.1:8080 ')
+})
+{% endhighlight %}

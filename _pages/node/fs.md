@@ -250,7 +250,7 @@ function resolveCSS(htmlStr) {
 }
 function resolveHTML(htmlstr) {
     // 把原本css的位置，換成以下內容
-    const newHTML = htmlstr.replace(regStyle, '<link rel="stylesheet" href="./index.cs" />')
+    const newHTML = htmlstr.replace(regStyle, '<link rel="stylesheet" href="./index.css" />')
     // 新的html寫入到index.html
     fs.writeFile(path.join(__dirname,'./data/index.html'),newHTML,function(err){
         if(err) return console.log("fail" + err.message)
