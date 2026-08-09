@@ -14,6 +14,15 @@ keywords: English, travel, ticket, fly, tour, trip
 ## fly
 - Do you want to fly to New York or Los Angeles?
 - I want to fly to Japan.
+- Ben often flies to Germany.本经常坐飞机去德国。
+- Tom flew from New York to London. Tom从纽约飞到了伦敦
+- Now he's going to fly from London to Paris. He's travling a lot.现在他要从伦敦飞往巴黎。他经常旅行。
+- Ben often flies to Germany.本经常坐飞机去德国。
+- I flew from London to Oxford yesterday.我昨天从伦敦飞去了
+牛津。
+
+## arrive late
+- Our plane arrived really late last night.When did your plane arrive?
 
 ## 機票
 - I want to get a ticket.
@@ -49,9 +58,11 @@ have強調的是擁有一天的假期。
 visit a 地點
 ```
 - visit a museum（參觀博物館）
-  - I want to visit the National Palace Museum
+  - I want to visit the National Palace Museum.
 - visit a gallery（參觀美術館）
 - visit a city（造訪某城市）
+
+- We visited many exciting places in New York.(places複數)我们在纽约去了很多令人兴奋的地方。
 
 ## take
 take 除了「拿、帶」之外，有一個很大的功能是用來表示「進行、從事一個需要花時間或體力的活動／行程」。
@@ -128,8 +139,16 @@ Trip 則是一般廣義的「旅行、出遊」，不一定有導覽性質，單
 注意，不是of，是to
 
 ### trip 旅行(名詞)
-enjoy 是享受，用to代表方向。
-- Did you enjoy your trip to Chicago last summer?
+```
+one's trip to 地點
+```
+enjoy 是享受。
+- Did you enjoy your trip to Chicago last summer? 你很享受你去Chicago的旅行吗？
+- Kevin enjoyed his trip to New York last year.Kevin很享受他去年去纽约的旅行。
+- how was your trip to Beijing last month?你上个月去北京的旅行怎么样？
+
+### take trips
+- Emma likes to take trips. She wants to work in the travel business.
 
 ### take a trip to 地方 
 - We decided to take a trip to the museum.我們決定去博物館一趟

@@ -53,6 +53,7 @@ class 前面有形容詞，就會有the、a。
 ## subject, course, lesson
 - lesson: 學鋼琴、學吉他、學開車、學外語（偏向練技能）
 - class, lesson: 學校的課（如數學課、歷史課)
+  - The English class yesterday was not bad!
 - subject為科目  
 - course 代表一學期要上的課程名
 

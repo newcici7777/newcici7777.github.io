@@ -8,8 +8,8 @@ keywords:
 
 ## 疑問句是主詞
 動詞搭配主詞
-
 - Who will come with us?
+- Who was your server yesterday?昨天谁是你的服务员？
 
 ## 疑問「形容詞」
 疑問詞作為形容詞，修飾後面的名詞。  
@@ -60,7 +60,6 @@ What color is it? (範圍：色譜)
 What size do you need? (範圍：尺寸表)
 
 
-
 ### What kind of 什麼種類的...
 - What kind of party do you want
 
@@ -84,9 +83,12 @@ How long
 ```
 
 - How long did you go camping at the park?（你們去公園露營去了多久？）
+- How long did you work for that company?(你為那家公司做了多久)
 
+## How was
+- How was your sister's life in Japan?你妹妹（或姊姊）在日本的生活過得怎麼樣？
 
-## how did you ...?
+## How did you ...?
 how did you 來問一件已經發生的意外或狀況時，通常是在追問原因、表達驚訝或不可置信，而不是在詢問具體的步驟。
 
 - How did you miss the train? how 不是問「如何（用什麼方法）」錯過火車，而是問「怎麼會這樣？／為什麼會發生這種事？」。
@@ -94,3 +96,11 @@ how did you 來問一件已經發生的意外或狀況時，通常是在追問�
 - How did you break your leg?
   - 不是問「你怎麼辦到的（用什麼工具把腿弄斷的）」，而是問：「你怎麼把腿摔斷的？／發生什麼事了？」
 - How did you lose your keys?你怎麼會把鑰匙弄丟的？
+
+
+
+## 疑問子句
+- Are you looking for where the ticket is?
+
+## 疑問子句 + to
+- but do you know where to buy glasses?

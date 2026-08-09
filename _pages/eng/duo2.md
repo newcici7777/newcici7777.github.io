@@ -3,12 +3,6 @@ title: 其它
 date: 2026-07-28
 keywords: 其它
 ---
-## 進行式
-- Bea is sitting on a bench in the park.
-- Zari is babysitting her neighbor,
-- Who are you writing to?
-- I'm waiting for my friend.
-
 ## 身份
 She's a teenager.
 
@@ -30,6 +24,9 @@ him.
 - Duo will meet them at the library
 - Eddy meets his neighbor Vikram at the airport.
 - tomorrow you will meet your new baby brother! 
+- We met in Cambridge last weekend.我们上周末在剑桥
+见面了。
+- I met Anna in London last month.When did you meet her?
 
 ## never
 - We never work on Friday**s**
@@ -60,8 +57,11 @@ him.
 - all day
   - Why were you at school all day yesterday? 地點（Place） ＋ 時間（Time）
 
+
 ## be + wearing 穿什麼衣服/穿什麼鞋子/戴什麼帽子
 - Is she wearing a red hat ?
+- The woman in the red shirt?
+
 
 ## kind of 種類
 - This kind of cheese is nice!
@@ -79,33 +79,6 @@ remember + to
 - I watered your plants three times every day!(澆水)
 - We eat by the water.我们在水边吃。
 
-## is visiting 短暫拜訪
-現在分詞 visiting：當作形容詞時，專門用來形容「暫時停留、作客、交流」的人或事
-
-- He visits Italy every year.
-  - 他每年都去義大利玩。——這是規律、習慣，用普通現在式。
-- He is visiting Italy this week.
-  - （他這星期正在造訪義大利／人目前在義大利。——這是一個暫時的行程，過幾天就結束了，所以用進行式。）
-
-visiting from 這個結構中，介系詞 from 的意思是「來自於……（某個地方）」。
-
-它用來交代這個「暫時來訪的人」原本是從哪裡出發、屬於哪個國家或機構。
-
-
-"Is that the student [who is] visiting from Italy?"
-（那是從義大利來訪問／交流的學生嗎？）
-
-現在分詞片語用來形容人或物時，可以直接放在名詞後面，並省略掉「who is（關係代名詞 + be動詞）」
-
-- The student visiting from Italy?
-- Sorry Anna, I can't meet you. My friend [is visiting.]  
-- He is visiting from Japan.（他從日本來參訪)
-- She is a student visiting from another school.
-（她是一位從別的學校來交流的學生。）
-- We have a professor visiting from the U.S.
-（我們有一位從美國來訪問的教授。）
-- My visiting professor is from Japan.（我的客座教授來自日本——不是長期任教的。）
-- She is just a visiting student here.（她這裡只是一個交換生／短期參訪的學生。）
 
 ## its
 - That sheep is eating its food right now
@@ -147,6 +120,7 @@ about有分類的意思，把限定範圍。
 - Is that pair of shoes thirty dollars?
 （那一雙鞋是三十美元嗎？）
 - How much is that pair of shoes?（那一雙鞋多少錢？）
+- My friend needs a pair!
 
 如果拿掉pair of，就要用複數動詞
 - Are these glasses thirty dollars?
@@ -215,11 +189,6 @@ Country > City > Town > the country > village
 - You won the competition!
 - Mia won with a vanilla cake.米亞憑著一個香草蛋糕贏了比賽
   - 某人 + won + with + [武器 / 食譜 / 策略 / 方法]
-
-## go + 活動
-- go dancing
-  - We went dancing last night.（我們昨晚去跳舞了。）
-- go camping去露營
 
 ## Go to sleep與go to bed
 Go to sleep 與 go to bed 的核心差別在於：一個強調「入睡的這個動作／狀態」，另一個強調「上床躺著的行為」。
@@ -320,18 +289,40 @@ Go to the vet：去獸醫那裡（看寵物）
 - I have a toothache, so I need to go to the dentist.（我牙痛，所以我需要去看牙醫。）
 - She is at the dentist now.（她現在在牙醫診所。）
 
-
-
+## see a doctor
+- Are you sick? You need to see a doctor.你生病了吗？你需要看医生。
 
 ## available 可以被使用／預約
 available形容詞，專門用來形容某人或某個時間、物品是「處於可以被使用／預約／見面」的狀態
 - I'm sorry. Dr. Wang is busy today, but she's available tomorrow.
 - Dr. Wang is busy today, but she has time tomorrow.（王醫師今天很忙，但他明天有時間。）
 
-## 無法分類
+## have a note 診斷證明
+- Does she have a note from the doctor?診斷證明
 
+
+## different
+- Wait, the job is in a different office?
+- She moved to a different city
+## perfect for
+- Carl is perfect for the job!
+
+## be poor
+- Is her family poor?
+
+## 現在完成式
+- I haven't talked to her in five years.
+
+## remember
+- She probably doesn't remember me.
+
+## That's not her
+- That's not her!用That 表示人
+
+
+## 無法分類
 - Ben is angry at us
 - She needs a bath
 - France has beautiful mountains
 
-0056
+0403

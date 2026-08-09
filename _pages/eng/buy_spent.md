@@ -5,9 +5,9 @@ keywords: buy, get, pay, spend, take, cost
 ---
 ## buy
 ### 人 + buy + 物
+- She will buy a new car next week. 她下周会买一辆新车。 
+- Do you want to buy this jam?
 
-她下周会买一辆新车。  
-She will buy a new car next week. 
 
 ### 人 + buy + 人 + 物
 

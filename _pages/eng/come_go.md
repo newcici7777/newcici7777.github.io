@@ -67,6 +67,7 @@ to 的意思是「朝向、往……方向」，在這裡當作目的地的大�
 移動動詞 + past
 - Walk past the bank.走過銀行
 - Drive past the bank 開車經過銀行
+- Bea's boss walks past Bea's desk.
 
 ## home
 home 本身是副詞
@@ -112,7 +113,7 @@ home前面加上「誰的」房子，就要用to
 - A janitor walks into the room.(janitor 為清潔員)
 - She runs into an office building.
 - The cat ran into the kitchen.
-
+- An old man walks into the cafe.
 
 ## run into 人 = 遇見
 - I ran into my ex-boyfriend yesterday.我昨天巧遇了我前男友。
@@ -252,6 +253,7 @@ next 是當作時間副詞（或稱地方/順序副詞）使用，意思是「�
 - Lily is coming with me!(Lily 跟我一起來)
 - My friend will come with me as well.
 - She's coming here with her boyfriend.
+- She's coming here now!
 - Lucas goes to [the] park with his dog every day.
 - you come to the park every day.
 - Who will come to the party with me tonight?(谁今晚会跟我一起来聚会？ )  

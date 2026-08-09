@@ -29,9 +29,9 @@ Are you in the classroom?
 - Do we have milk in the refrigerator?
 - The food is in the refrigerator.
 
-## on在街上
-在这条街上有一个咖啡店。  
-There's a coffee shop [on] this street. 
+## on
+- There's a coffee shop on this street. 在这条街上有一个咖啡店。
+- Ary you on the third floor or the first floor?
 
 ## at小地點
 - Oscar is at an art museum.
@@ -43,6 +43,9 @@ street?
 
 ## at the table 在桌邊
 - Lin sees her grandmother, Lucy, at the table.
+
+## leaves the table 離開桌子(離開位子)
+- Lucy leaves the table.
 
 ## inside
 咖啡店在楼的里面，不在外面。  
@@ -68,6 +71,7 @@ outside.
 - The breakfast **here** is very good!
 - People **in this city** speak French
 - The English class **yesterday** was not bad!
+- The people in this village are poor.在这个村子里的人很穷。
 
 ## close to
 - Our new house is closer to our grandparents' village

@@ -34,6 +34,12 @@ Leave + for + [目的地]。
 - I'm leaving for New York tomorrow.（我明天要動身前往紐約了。）
 - The train leaves for Tokyo at 7 p.m.（這班開往東京的火車在晚上 7 點發車。）
 
+## 離開桌子
+- Lucy leaves the table.
+
+at the table 在桌邊
+- Lin sees her grandmother, Lucy, at the table.
+
 ## 忘記帶東西
 物品是「不小心被留在某個空間或物體上，而人自己走了」，它才會變成中文常說的「遺留、落掉、忘記帶走」。
 

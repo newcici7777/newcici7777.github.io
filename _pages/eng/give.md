@@ -60,7 +60,11 @@ keywords: give send show
 - Grandpa will send us some new books.
 - Can you send him an email?
 
+### send + 人 + to 地方
+- send him to a different office.
+
 ### 人 + send + 物 + to + 人
+
 
 ## show
 ### 人 show + 人 + 物

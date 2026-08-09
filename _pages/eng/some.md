@@ -11,6 +11,13 @@ keywords: English
 - Both skirt[s] are green.
 - He is good at both cooking and baking
 
+## both of one's
+遇到所有格, the, this 指示代名詞，都要用of
+- Both of my parents were taxi drivers.我的父母以前都是出租车司机。
+- Both of his sisters were Japanese teachers. 他的两个妹妹以前都是日语老师。
+- Were both of your sisters servers? 你的二個姐姐以前是服務生嗎
+- Are both of your parents bus drivers?你的父母都是公車司機嗎？
+
 ## each
 each + 單數動詞
 - each room has a TV!

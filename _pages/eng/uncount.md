@@ -27,6 +27,7 @@ a lot 作為副詞，修飾動詞，放動詞後面。
 a lot放最後
 - I like her a lot.
 - She likes him a lot.
+- He's travling a lot.
 
 ## lots of
 - I see lots of cows.

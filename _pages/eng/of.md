@@ -38,12 +38,14 @@ to用來表示「目標、對應關係或終點」
 - I can't find the key to my office!(我找不到我辦公室的鑰匙)
 
 ## 介系詞片語（To 是方向/連接）
-如果 to 後面接的是名詞/地方（to our village, to success），它是介系詞，代表「通往……的 / 關於……的（事物）」。
+to 後面接的是名詞/地方，它是介系詞，代表「通往……的 / 關於……的（事物）」。
 
-- That road [to our village] is long and busy.（通往我們村莊的那條路又長又忙碌。）
-  - 它跟前面的 to bring 完全不同。這裡的 to 是直接連接名詞 village。整個 to our village 是用來修飾前面的名詞 road（哪裡的道路？通往我們村莊的道路）
-
+- That road to our village is long and busy.（通往我們村莊的那條路又長又忙碌。）
+  - 這裡的 to 是直接連接名詞 village。整個 to our village 是用來修飾前面的名詞 road（哪裡的道路？通往我們村莊的道路）
 - The ticket to Taipei（去台北的車票——通往台北的票）
+- Kevin enjoyed his trip to New York last year.Kevin很享受他去年去纽约的旅行。
+
+
 - The key to success（成功的關鍵）
 - The door to success（通往成功的大門——比喻成功之門）
 - The answer to the question（問題的答案）

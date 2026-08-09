@@ -17,12 +17,16 @@ Is Duo [on your basketball team]?
 She's not [on] this baseball team.
 
 ## play 玩 運動
-玩  
+### 玩  
 - Can we play your video game?  玩電動
 - Do you want to play tennis together [this Sunday]? 注意，有this，就不加on  
 - The cat is playing with a tennis ball.猫在玩网球  
 
-運動
+### 音樂家
+- She was in a band, she was a guitar player.她以前在一个乐队里，她以前是一个吉他手。
+- Were they piano players?他们是钢琴家吗？
+
+### 運動
 - He shouldn't play sports today.(sports後面加s)
   - play sports 字面上的意思就是「從事／參與運動競技」
 
@@ -33,10 +37,16 @@ Play + 球類 / 競技運動（需要規則或對抗的）：
 Do + 個人健身、武術或體操（比較偏向個人的鍛鍊、沒有直接對抗）：
 - do yoga（做瑜伽）
 - do exercise（做運動／鍛鍊）
+
+
+## go + 活動
 Go + 以 -ing 結尾的戶外運動（通常是去某個地方進行的活動）：
 - go jogging（去慢跑）
 - go swimming（去游泳）
 - go dancing(去跳舞)
+  - We went dancing last night.（我們昨晚去跳舞了。）
+- go camping去露營
+
 
 ## late 副詞
 副詞放在句尾  
@@ -141,17 +151,15 @@ Is Japanese more interesting than French?
 [人]感到無聊 ed
 
 ## live in 住
-Ben [lives in] an apartment.  
+- Ben lives in an apartment.  
+- When did you live in Seattle, Grandma?
+- Where will you [live] next year?  你明年会住在哪里？(注意！這邊沒有in)  
 
-你明年会住在哪里？  
-Where will you [live] next year?  
-注意！這邊沒有in  
+## stay in  
+- They'll stay in Canada next year.他们明年会留在加拿大。 
+- Emma usually stays in the library at night.
+- We stayed in a small town in California last summer.
 
-## stay in 
-他们明年会留在加拿大。  
-They'll stay in Canada next year.  
-
-Emma usually stays in the library at night.
 
 ## 未來
 - They'll move to Japan next winter. 他们明年冬天会搬到日本。 
@@ -169,11 +177,22 @@ Emma usually stays in the library at night.
 - Where will the dance party be this weekend?
 - I won't be at school tomorrow.(我明天不会在学校。)
 
+## born 出生 (用被動式)
+- Were you born on November fifth or on November eighth? 
+- When was he born?他是什么时候出生的？
+- Emma's grandpa was born on January eighth.艾玛的爷爷是在一月八号出生的。
+- I was born in November,not in April.
+
+## server 服務生
+- Do you want to be a server?你想要做一个服务员吗？
+- was your friend a server too?你的朋友以前也是一个服务员吗？
+
+## worker 員工
+- Our grandparents were't hotel workers.我们的祖父母以前不是酒店员工。
+- was your younger sister a hotel worker?你的妹妹以前是一个酒店员工吗？
+
 
 ## 其它疑惑
-
-
-
 I draw things that I think are interesting or beautiful.
 
 

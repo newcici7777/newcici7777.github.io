@@ -64,6 +64,7 @@ wait for + 人/物
 ## for 一段時間
 - Is it raining today? It rained for six hours in Chicago yesterday!
 - It snowed for about two hours yesterday.(about是大約)
+- It rained for six hours yesterday!
 - They stayed in Germany for six years.
 
 ## 其它

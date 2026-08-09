@@ -18,6 +18,9 @@ keywords: talk, tell, say, speak
 - He told me very romantic things.
 - He told me some things.
 
+## tell + 人 + 疑問詞 + to
+- He tells me how to do my job. 
+
 ------------------------
 
 ## say(及物)
@@ -26,6 +29,10 @@ keywords: talk, tell, say, speak
 - He said hello to me.
 - He said some things to me.
 
+### sad + 子句
+- you said he's terrible!
+- You said he is always late.
+
 ------------------------------
 
 ## talk(不及物) to/with/about
@@ -33,14 +40,17 @@ talk 是一個不及物動詞（不能直接加受詞）
 ### talk + to + 人
 - you're talking to Leo!
 - Talk to me.
+- Talk to her!
 - Can I talk to you?
 - We need to talk.(不及物)
 
 ### talk + with + 人
 - He is talking with his friend.（他在跟他的朋友聊天。）
+- Are you going to talk to her now?
 
 ### talk + about + 主題
 - What are they talking about?（他們在談論什麼？）
+- Hi, Bea. Can we talk about Carl?
 
 ### talk + to + 人 + about + 主題
 - Talk to you about something

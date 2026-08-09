@@ -8,6 +8,7 @@ keywords: look, see, watch, seem, feel, hear, listen to,
 
 - Look（看起來，眼睛看到的外觀)
   - This house looks modern.（這房子看起來很現代。）
+  - She looks nice.
 - Sound（聽起來）
   - That idea sounds great.（那個主意聽起來很棒。
 - Smell（聞起來）
@@ -37,12 +38,16 @@ keywords: look, see, watch, seem, feel, hear, listen to,
 
 - See（看到）
   - I saw him cross the street.（我看到他過馬路。)
+  - He sees Lin.
+  - Lin sees her grandmother, Lucy, at the table.
+  - She saw you!
 - Watch（注視、觀看）
   - She watched the kids play in the park.（她看著孩子們在公園玩耍。）
 - Notice（注意到）
   - I noticed someone enter the room.（我注意到有人進了房間。）
 - Hear(聽見)
   - I heard her sing a song.（我聽到她唱歌。)
+  - I'm sorry to hear that.
 - Listen to（聆聽——注意聽）
   - We listened to the band play music.（我們聽樂團演奏音樂。）
 - Feel（感受到肢體接觸）
@@ -54,6 +59,7 @@ keywords: look, see, watch, seem, feel, hear, listen to,
 ```
 - See
   - I saw him crossing the street. 我看到他正在過馬路。
+  - I saw you waving at me.
 - Feel
   - I felt him touching me.我感受到他「正在碰你、那個動作持續進行中」的畫面。
 
@@ -63,11 +69,11 @@ keywords: look, see, watch, seem, feel, hear, listen to,
 - It seems to rain.（天好像要下雨了。）
 - They seem to be enjoying the party.
 
-## 感官 + like + 名詞/子句
 
+## 感官 + like + 名詞/子句
 - look like（像什麼人事物） + 名詞/子句
   - Her hobby looks like painting.她的興趣看起來像畫畫
-  - What does it look like
+  - What does it look like?
   - This house looks like a castle.（這棟房子看起來像個城堡)
   - You look like your father.（你長得像你爸爸)
   - He looks like a ghost.（他看起來像個鬼)

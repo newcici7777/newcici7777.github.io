@@ -56,6 +56,8 @@ keywords: to
 - 句型：It is + 形容詞 + to V
 - 例句：It is important to learn English.（學英文很重要。)
 
+- It's nice to be here again.
+
 ### 作受詞
 （放在特定動詞後面，如 want、decide、plan、hope）
 - 例句：I want to go abroad.（我想出國。）

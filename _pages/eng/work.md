@@ -14,6 +14,8 @@ work是抽象名詞，不可數名詞，前面不加a 或the
 work（動詞：工作）+ 地點
 ```
 - Do you work downtown? downtown（副詞：在市中心）
+- I worked in Oxford for two years.我在牛津工作了
+两年。
 
 ## work(動詞) + on 日期 在某個日期工作或不工作
 - I don't work on Sundays.
@@ -28,13 +30,14 @@ work（動詞：工作）+ 地點
 - Ben works [for] a good company.(本为一家很好的公司工作。)  
 
 ## work in 產業
-- She has been working in the tech industry for over ten years.她一直在科技產業工作超過十年了。
-  - 用現在完成進行式 (has been working) 來表達持續到現在的動作。
-- Many young graduates aspire to work in the financial sector.許多剛畢業的年輕人渴望在金融業工作。
-  - financial sector（金融部門/產業）是另一個表達產業時很道地的用法，aspire to 則是指「渴望、有志於」
+- Is she in the food business ?她从事食品行业吗？
+- She wants to work in the travel business.。她想要从事旅游业。
 
 ## work from home 在家工作
 - Who will work from home next week?谁下周会在家工作？   
+
+## work with 一起工作
+- Do you like working with him?
 
 ## finish work 下班
 - Emma usually finishes work at half past eight.
@@ -70,3 +73,4 @@ work hard (hard是副詞)
 
 ## 其它
 - I don’t work on this project.這個專案我不參與 
+

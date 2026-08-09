@@ -30,6 +30,8 @@ Take 東西 to 人/地點
 ## take + 電梯 = 搭電梯
 - You can't take this elevator now.你現在不能搭這部電梯。
 - You shouldn't take the elevator during a fire.（火災時你不應該搭電梯。）
+
+
 ## Take + 交通工具、大眾運輸
 - Take a bus / a train / a plane（搭公車 / 搭火車 / 搭飛機）
 - Take a taxi / an Uber（坐計程車 / 叫Uber）
@@ -37,6 +39,7 @@ Take 東西 to 人/地點
 
 ## 拍照
 - Take a picture / photo（拍照）
+- They took lots of photos in Cambridge.他们在剑桥拍了许多照片。
 
 ## 佔位
 - The seat was taken.這個座位有人了。
@@ -45,6 +48,8 @@ Take 東西 to 人/地點
 
 ## 吃藥
 - Did you take your medicine?（你吃藥了嗎？）
+- Grandpa took his medicine at half pass nine.爷爷在九点半吃了他的药。
+
 
 ## 加
 咖啡或茶裡面「加」糖或奶精
@@ -72,7 +77,6 @@ take 後面接單數可數名詞時，習慣上需要加上不定冠詞 a。
 
 ## 散步
 - take a walk（散步）
-
 
 ## 看一下
 take 轉變成了一個輔助性質的動詞，中文通常會翻譯成：「進行、做、採取、執行」某個動作。

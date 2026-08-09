@@ -12,6 +12,7 @@ keywords: time, date, day
 - What's the date?(今天是幾月幾號)
 - what's the date today?(今天是幾月幾號)
   - it's September sixth.(今天是九月六号。)
+  - Today is December eighth.
 - What's the date tomorrow?  
 - **What** is the date of his birthday?
   - [March first] is his birthday.
@@ -46,12 +47,7 @@ it 代表今天
 - What day is it?(今天星期幾)
 
 ## 問星期 on 星期
-
-
-### day
 day 在問星期的語境下，指的是 Monday 到 Sunday 這 7 個名字在不斷循環。
-
-day of the week（一週裡的哪一天）
 
 英文在詢問「種類、屬性」時，習慣把那個種類的單字（day）直接砸在 What 的後面，變成 What day...。
 
@@ -66,25 +62,18 @@ day of the week（一週裡的哪一天）
 
 問明天是禮拜幾
 - What day is it tomorrow?明天屬於星期幾（哪種日子）呀？
+- I wash my clothes on Monday, but grandma washes her clothes on Tuesday.  
+- We're going to watch a baseball game on Thursday.
+- Is the game [on] Thursday? 比赛是在周四吗？ 
+- We clean our house on Sunday[s]. 每一個禮拜天後面加s，代表「每一個」禮拜天。 
 
-I wash my clothes on Monday, but grandma washes her clothes on Tuesday.  
+複合詞
+- on Friday morning.在周五早上  
+- on Monday morning.  
+- on Tuesday afternoon.
+- on Sunday afternoon.
 
-We're going to watch a baseball game on Thursday.
-
-比赛是在周四吗？  
-Is the game [on] Thursday?  
-
-每一個禮拜天後面加s，代表「每一個」禮拜天。  
-We clean our house on Sunday[s].  
-
-在周五早上
-on Friday morning  
-on Monday morning.  
-on Tuesday afternoon.
-on Sunday afternoon.
-
-他在周日下午会提早回家。  
-He will come home early on Sunday afternoon.  
+He will come home early on Sunday afternoon.他在周日下午会提早回家。  
 
 ## week周/weekday平日/weekend週末
 - A week 一周 (禮拜一至禮拜日)
@@ -95,6 +84,9 @@ He will come home early on Sunday afternoon.
 
 week 通常指的是「一週」或「這星期／這週」。
 - We have many classes during the week?我們這週有很多堂課。
+
+## 問一星期中的那一天
+- Which day of the week is usually the busiest at your restaurant?們餐廳通常星期幾最忙？
 
 ### week
 - See you next week(未省略前:See you on next week)
@@ -131,52 +123,39 @@ weekday+s 代表每一個平日
 - What are you doing on the weekend?（你這週末要做什麼？）
 
 ## in 年/月/四季 上午下午晚上
-季節前面要加上the:  
-The weather is nice here [in the
-summer].
+- The weather is nice here [in the summer].季節前面要加上the
 
 月份:
-I am not going to study in August.  
+- I am not going to study in August.  
 
 上午下午晚上前面要加上the :  
 - in the morning 在早上
 - in the afternoon 在下午 
 - in the evening 在晚上
 
-We can meet at a cafe [in the] morning.   
+- We can meet at a cafe [in the] morning.   
 
 ## 問時間 at 時間
 What形容詞 + 不可數名詞time
 - What time will you finish work tonight?
   - lusually finish work at 6 p.m.
 
-it's one o'clock!  
-one 前面不加at
-
-我们可以上午十一点见吗?  
-Can we meet at 11 a.m.?  
-
-At twelve.在十二点。
+- it's one o'clock!(one 前面不加at)
+- Can we meet at 11 a.m.? 我们可以上午十一点见吗? 
+- At twelve.在十二点。
 
 ### 中午 午夜
 - at midnight
 - at night
 - at noon
 
-We can have dinner together at night.  
-We can have dinner together at noon.
+- We can have dinner together at night.  
 
 ## 複合
-在下午二點  
-at two o'clock in the afternoon  
-
-[on Sunday morning], she'll visit her
-aunt in Beijing.  
-
-Who will come to the party with me [in New York on
-Saturday evening]?
-
-tomorrow morning.
+- at two o'clock in the afternoon. 在下午二點  
+- on Sunday morning, she'll visit her aunt in Beijing.  
+- Who will come to the party with me in New York on Saturday evening?
+- tomorrow morning.
 
 ## from 時間 to 時間
 - The museum is open from ten o'clock to five o'clock [on] Saturday, but it is closed [on] Sunday.
@@ -192,14 +171,16 @@ tomorrow morning.
 - We will eat lunch during meetings.
 
 ## before after
-你可以六点钟之前回家吗？  
-Can you [come home] before six o'clock?  
+- Can you [come home] before six o'clock?你可以六点钟之前回家吗？  
 
-## 前天 大後天 幾天前 幾天後
+### after
+- Let's go to a museum now. Sure,after I go to the restroom.
+- We played many games after the show last night.
+
+### 前天 大後天 幾天前 幾天後
 
 - I'll be too busy **the day after tomorrow.**
 - where will Duo be the day after tomorrow?
-
 - I called Bob the day before yesterday.
 
 ## start
@@ -222,6 +203,7 @@ start + Ving 把動作變成「做...的事情」，變名詞
 
 ### start 開學
 - When do you start school?
+- we stopped talking.
 
 ## begin
 - my French course won't begin until February eleventh!
