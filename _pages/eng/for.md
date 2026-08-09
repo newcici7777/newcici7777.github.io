@@ -38,10 +38,15 @@ keywords: for
 - My video game is not for kids. (for 提供的對象)
 
 ## wait for
-- I'm waiting for my friend.
-- I can't wait for my birthday party!
+```
+wait for + 人/物
+```
 - I can't wait!
+- wait for the bus.
+- I can't wait for my birthday party!
 - Can't wait for the trip!
+- I'm waiting for my friend.
+- Are you waiting for me at the gate?
 
 ## wait for 一段時間
 - I waited at the airport in Miami for two hours

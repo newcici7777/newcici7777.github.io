@@ -19,35 +19,52 @@ Take ＝ 「把東西帶走 / 拿走」（從內往外帶）
 
 ## 加
 咖啡或茶裡面「加」糖或奶精
-- Do you take sugar in your coffee? 你咖啡吃糖嗎？
+- Do you take sugar in your coffee? 你咖啡加糖嗎？
 
-## 報名上課
-你站在一個販賣機或琳瑯滿目的課表前，伸手把那門課「抓（take）」進你的購物車裡。
-- 主動報名選課
-  - My friend takes writing lessons.主動去報名、付費或選修了一個寫作班
-  - Which classes are you taking this semester?你這學期選了哪些課？
+## 旅行
+take 進行、從事一個需要花時間或體力的活動／行程
 
-## 上課
-take 的語感更偏向「修讀、參與課程」的過程。
+take 除了「拿、帶」之外，有一個很大的功能是用來表示「進行、從事一個需要花時間或體力的活動／行程」。
 
-Take a class
-- 下班後，主動報名要上的課
-  - I’m taking driving lessons these days.我最近在上駕訓班。 👉 你主動報名、付錢去學一項新技能
-  - I am taking a yoga class this month.我這個月在上一堂瑜珈課。 👉 強調你現在是這個課程的學員，正在經歷上課的過程。
-  - I signed up for cooking lessons!我報名了烹飪課！
-    - Oh really? When do you start taking them?真的假的？那你什麼時候開始去上課？
+take 我把自己投入進去、經歷這段過程
 
-- Take：你主動伸手去拿這門課（選課、報名、修課）。
-- Have：這門課已經躺在你的行程表裡（有課）。have 的語感更偏向「行程表上的時間到了」。
-  - I have my first class next Monday.（我下週一上第一堂課）
-  - The children have reading lessons every Thursday.「行程表上『有』這堂課」。
-- In：你的肉體已經坐在教室裡聽講了（正在上課中）。
+- take a tour 
+- take a trip 
 
-你什麼時候上課
-- When do you start taking the lessons?
-- When do you have the lessons?
+## 休息
+這些都是把名詞當成一個「動作」來做，而 take 是最順手的動詞。
+- take a break（休息一下）
+- take a rest
+- take a walk（散步）
 
-- I am taking a math lesson now.我現在正在「修/聽」一堂數學進度課。
-- I am in a math class.我身處在數學課的狀態/空間裡。身處的『空間/狀態』
+## 看一下
+take 轉變成了一個輔助性質的動詞，中文通常會翻譯成：「進行、做、採取、執行」某個動作。
 
-- I don’t want to take the english lesson我不想上課
+- take a look（看一看）
+
+也就是說，英語習慣把一個原本可以當動詞的詞（例如：look 可以當動詞「看」），包裝成名詞（a look「一眼、看一看」），然後前面借用 take 來把它變成一個完整的動詞片語。
+
+- Take a look at this.（看一看這個)
+- Look at this.（看這個 → 比較像命令句、直白）
+
+把動作變成名詞（加了 a）之後，你就可以在中間塞入形容詞來豐富語意，這是單純用動詞做不到的：
+- take a quick look（快速看一眼）
+- take a long break（休個長假）
+- take a hard test（考一個很難的試）
+
+## 考試
+- take a test
+- take an exam（參加考試）
+
+take 的核心語感：「主動採取、執行、花力氣」
+
+考試需要正襟危坐、花費腦力去「應付／應考」，所以用 take（主動去接受這個挑戰）比用 have 來得更正式、更常見。
+
+take 帶有比較多「主動去做、執行一個任務、或需要付出精神/時間」的感覺。
+
+
+考試需要正襟危坐、花費腦力去「應付／應考」，所以用 take（主動去接受這個挑戰）比用 have 來得更正式、更常見。
+註：英式英文有時候會說 have an exam，但在美式英文或一般標準用法中，考試幾乎都用 take a test / take an exam。
+take a tour（進行參觀）
+參觀需要走動、花體力，所以用 take。
+

@@ -46,9 +46,18 @@ it 代表今天
 - What day is it?(今天星期幾)
 
 ## 問星期 on 星期
+### week
+week 通常指的是「一週」或「這星期／這週」。
+- We have many classes during the week?我們這週有很多堂課。
+
+- this week：這週
+- during the week：在這段期間內（這週之內）
+
+### day
+day 在問星期的語境下，指的是 Monday 到 Sunday 這 7 個名字在不斷循環。
+
 day of the week（一週裡的哪一天）
 
-day 在問星期的語境下，指的是 Monday 到 Sunday 這 7 個名字在不斷循環。
 英文在詢問「種類、屬性」時，習慣把那個種類的單字（day）直接砸在 What 的後面，變成 What day...。
 
 當我們要問時間、顏色、星期這種「屬於哪一個範疇」的問題時，母語者的大腦制約就是 What + 種類 + is it...。

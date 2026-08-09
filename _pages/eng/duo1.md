@@ -16,29 +16,6 @@ Is Duo [on your basketball team]?
 
 She's not [on] this baseball team.
 
-## subject, course
-subject為科目、課
-此處的Japanese為日文，subject為科目、課  
-Does Emma like Japanese?  
-Yes, it's her favorite subject!  
-
-怀特小姐教什么課、科目？
-What subiect does Miss White teach? 
-
-a Japanese course 一個日語課程
-
-I need a course book.
-
-你今天有课吗？  
-Do you have class[es] today?  
-
-lesson課表上的那『一節課』的時間（通常是40~50分鐘）
-- She has a math lesson every Wednesday.
-
-學鋼琴、學吉他、學開車、學外語（偏向練技能）： 大家都愛用 lesson。
-
-學校的傳統科目（如數學、歷史）： 美國人愛用 class，英國人愛用 lesson。兩者都算對！
-
 ## play 玩
 玩電動  
 Can we play your video game?  
@@ -151,19 +128,6 @@ Is Japanese more interesting than French?
 
 [人]感到無聊 ed
 
-## same
-我们在同一个班。  
-We are in [the same] class.  
-
-## leave 離開
-Leave 在這裡是不及物動詞（後面不需要直接接受詞）。
-- When do you want to leave?你什麼時候離開?    
-- That train leaves at 7 p.m.(火車在晚上 7 點開出 / 發車)
-
-Leave + for + [目的地]。
-- I'm leaving for New York tomorrow.（我明天要動身前往紐約了。）
-- The train leaves for Tokyo at 7 p.m.（這班開往東京的火車在晚上 7 點發車。）
-
 ## live in 住
 Ben [lives in] an apartment.  
 
@@ -178,23 +142,10 @@ They'll stay in Canada next year.
 Emma usually stays in the library at night.
 
 ## 未來
-I am going to take a vacation next week.
-
-他们明年冬天会搬到日本。  
-They'll move to Japan next winter.  
-
-不，我不会。我要搬到一个新城市！
-Will you buy a new car next month?  
-No, I won't. I'll move to a new city!  
-
-我们明天早上不会开会。  
-We won't have a meeting tomorrow
-morning.
-
-安娜下周末不会结婚。  
-Anna won't get married next weekend.  
-
-
+- They'll move to Japan next winter. 他们明年冬天会搬到日本。 
+- Will you buy a new car next month?  
+  - No, I won't. I'll move to a new city!不，我不会。我要搬到一个新城市！  
+- Anna won't get married next weekend. 安娜下周末不会结婚。 
 - Where will the dance party **be** this weekend(这个周末舞会会在哪里？)
 - Will you be my boyfriend?(你愿意做我的男朋友吗？)
 - OK, I won't be late for lunch!

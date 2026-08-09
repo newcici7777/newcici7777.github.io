@@ -81,3 +81,13 @@ How long
 ```
 
 - How long did you go camping at the park?（你們去公園露營去了多久？）
+
+
+## how did you ...?
+how did you 來問一件已經發生的意外或狀況時，通常是在追問原因、表達驚訝或不可置信，而不是在詢問具體的步驟。
+
+- How did you miss the train? how 不是問「如何（用什麼方法）」錯過火車，而是問「怎麼會這樣？／為什麼會發生這種事？」。
+- Why did you miss the train?"（你為什麼會錯過火車？）等同how did you...?
+- How did you break your leg?
+  - 不是問「你怎麼辦到的（用什麼工具把腿弄斷的）」，而是問：「你怎麼把腿摔斷的？／發生什麼事了？」
+- How did you lose your keys?你怎麼會把鑰匙弄丟的？

@@ -3,22 +3,36 @@ title: Leave
 date: 2026-08-02
 keywords: leave, left   
 ---
-## 飛機/火車 出發
+## 飛機/火車 發車、開航或起飛
+雖然 leave 的本意是「離開」，但在與交通工具（如 flight、train、bus）搭配時，通常指該班次「發車、開航或起飛」。
+
+表示交通工具（如火車、飛機、公車）按計畫即將出發或起飛時，經常用現在進行式來表達確定的未來安排。
+
 - The flight is leaving at 7 PM.(飛機預計7點起飛，現在式代替未來式)
 - The train is leaving at 7 PM.(火車預計7點發車，現在式代替未來式)
+- That train leaves at 7 p.m.(火車在晚上 7 點開出 / 發車)
+- Duo's flight is leaving in fifteen minutes.多哥（Duo）的班機在十五分鐘後就要起飛了。這裡的 leaving 是 「起飛」 的意思。
 
 ## 出門/離開
 後面接的是「地方（城市、房間、辦公室）」 就是單純的「離開」。
 - leave the city（離開城市）
 - leave home（離家）
 - leave the room（離開房間）。
-
+  
 - I left my house at 8 AM.（我早上八點離開家。）
 - He left the office early.（他很早就離開辦公室了。）
 - Anna wants to leave the city and move to the country.
 
+Leave 不及物動詞（後面不需要直接接受詞）。
+- When do you want to leave?你什麼時候離開?  
+
 ## Leave for 動身前往 + 目的地
+```
+Leave + for + [目的地]。
+```
 - I am leaving for Paris.我即將動身前往巴黎
+- I'm leaving for New York tomorrow.（我明天要動身前往紐約了。）
+- The train leaves for Tokyo at 7 p.m.（這班開往東京的火車在晚上 7 點發車。）
 
 ## 忘記帶東西
 物品是「不小心被留在某個空間或物體上，而人自己走了」，它才會變成中文常說的「遺留、落掉、忘記帶走」。

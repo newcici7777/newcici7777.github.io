@@ -104,6 +104,15 @@ Do I need to drive past the zoo?
 ## stop 地點
 - Because the road stops here. At the river.
 
+## downtown
+### downtown 名詞 市中心
+- go to downtown(to 是介系詞，後面接名詞)
+- Downtown is very busy today.
 
+### downtown 副詞 去市中心
+- Does this bus go downtown? (不需要 to，downtown 直接修飾動詞 go 往哪裡去)
+- live in downtown
+- Do you work downtown?你在市中心上班嗎？
 
-
+- 當它前面接像 go, drive, head 這種動詞 → 表方向的副詞（去市中心）。
+- 當它前面接像 work, live, stay 這種動詞 → 表地點的副詞（在市中心）。
