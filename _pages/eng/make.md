@@ -20,3 +20,17 @@ keywords: make
   - cake可作為不可數名詞，也可作為可數名詞
 - Vikram is making tea in the kitchen.
 - But let's make dinner now!
+
+## 預約
+「預約、約定」這類抽象的行程或安排時，最常搭配的動詞就是 make，Make 的其中一個核心意思是「製造、安排、促成」。
+- make an appointment 是一個固定的黃金組合。
+- make a reservation（訂位／預訂房間、餐廳）
+- make a plan（做計畫）
+- make a phone call（打電話）
+- make a decision（做決定）
+
+- She made an appointment with the dentist yesterday.
+
+## call a doctor 預約
+- You look terrible. You should call a doctor.（你看起來氣色很差，你應該打個電話給醫生。）
+- She called a doctor yesterday.（她昨天打電話給醫生了）

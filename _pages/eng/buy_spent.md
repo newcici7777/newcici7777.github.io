@@ -30,8 +30,10 @@ Can I buy it for one hundred dollars.
  
 ## pay
 ### 人 pay 錢 for 物
+- I paid 100 dollars for this book.（我為了這本書付了一百塊。）
 - You can pay for your drink[s] here.(你可以在這裡為你的飲料付錢，注意！此時飲料為可數名詞加s。)  
 - I'm paying for the ride
+- I paid money for it.（我為這個付了錢。）
 
 ### 人 pay 錢 for 人
 - He paid the bill for me.（他替我付了帳單）
@@ -62,8 +64,12 @@ Can I buy it for one hundred dollars.
 - I spent money buying a cake for you.
 （我花錢買了個蛋糕給你。）
 - He spent 100 dollars buying a book.
-### 人 + spend + 時間 + on + 物
 
+### 人 + spend + 錢 + on + 物
+- I spent 100 dollars on this book.（我花了一百塊買這本書。）
+- I spent money on it.（我把錢花在這上面。）
+
+### 人 + spend + 時間 + on + 物
 - I **spent** two hours **on** my homework.
 - He spent the whole weekend on his homework.
 （他整個週末都花在寫功課上。）

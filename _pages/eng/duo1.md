@@ -16,15 +16,27 @@ Is Duo [on your basketball team]?
 
 She's not [on] this baseball team.
 
-## play 玩
-玩電動  
-Can we play your video game?  
+## play 玩 運動
+玩  
+- Can we play your video game?  玩電動
+- Do you want to play tennis together [this Sunday]? 注意，有this，就不加on  
+- The cat is playing with a tennis ball.猫在玩网球  
 
-Do you want to play tennis together [this Sunday]?  
-注意，有this，就不加on  
+運動
+- He shouldn't play sports today.(sports後面加s)
+  - play sports 字面上的意思就是「從事／參與運動競技」
 
-猫在玩网球  
-The cat is playing with a tennis ball.  
+Play + 球類 / 競技運動（需要規則或對抗的）：
+- play sports（做運動）
+- play basketball（打籃球）
+- play tennis（打網球）
+Do + 個人健身、武術或體操（比較偏向個人的鍛鍊、沒有直接對抗）：
+- do yoga（做瑜伽）
+- do exercise（做運動／鍛鍊）
+Go + 以 -ing 結尾的戶外運動（通常是去某個地方進行的活動）：
+- go jogging（去慢跑）
+- go swimming（去游泳）
+- go dancing(去跳舞)
 
 ## late 副詞
 副詞放在句尾  
@@ -160,16 +172,13 @@ Emma usually stays in the library at night.
 
 ## 其它疑惑
 
-Something will go wrong!
 
-do you want to ride the roller coaster or not?
 
 I draw things that I think are interesting or beautiful.
 
-This kind of cheese is nice!
 
-你会选择哪个房子？  
-Which house will you [choose]?  
+
+
 
 
 6554

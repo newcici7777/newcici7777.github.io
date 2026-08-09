@@ -48,9 +48,20 @@ she'll have a baby next May.
 ## 買東西
 - Can I have a ticket? 買機票
 
+## have 點餐/拿某樣東西
+- I'll have a cup of coffee, please.（我要一杯咖啡。——字面意思是「我會『拿/點』一杯咖啡」）
+
+## 招待客人
+- Would you have some tea?（你要不要喝杯茶/來杯茶？——帶有「拿杯茶給你」的意思）
+
 ## 付帳單
 have the check
 - Can I have the check, please?
+
+## 拿/給某人某物 have... for... 
+- I have something for you.（我有一個東西要給你／我這裡有你的東西。）
+- I brought something for you.（我帶了東西要給你。）
+- I got something for you.（我幫你準備了/拿了個東西。）
 
 ## have a ...
 當用 have 來搭配動作名詞時，通常帶有「去經歷、去體驗、或從中得到某種感受」的味道。
@@ -76,3 +87,31 @@ have the check
 - The city has a lot of parks.（這座城市擁有許多公園。）
 - The country has blue skies.（這個國家擁有蔚藍的天空／這裡的天空總是藍天白雲。）
 - The country has blue skies sky.
+
+## Do you have a toothache?
+生病或身體不適的症狀（如頭痛、牙痛、發燒）通常會被視為一種「狀態或名詞」，
+ have（患有、帶有、遭遇）來表達你「目前正經歷這個症狀」
+ ```
+ have + a/an + 症狀名詞
+```
+- Do you have a toothache? 
+- have a toothache（牙痛）
+- have a headache（頭痛）
+- have a stomachache（肚子痛）
+- have a fever（發燒）
+- have a cold（感冒）
+- have a sore throat（喉嚨痛）
+
+## hurt 「痛」當作動詞來用
+把「痛」當作動詞來用，英文可以用 hurt 或 ache，這時主詞就要換成「身體部位」
+```
+身體部位 + hurt/ache
+```
+- My tooth hurts.（我的牙齒在痛。—— 以「身體部位」為主詞）
+
+## 隨身攜帶
+- Do you have a pen?（你身上有帶筆嗎？——相當於 Do you carry a pen?）
+- I don't have any cash on me.（我身上沒有帶現金。）
+- Do you have your ID with you?（你身上有帶身分證嗎？）
+
+

@@ -52,9 +52,9 @@ class 前面有形容詞，就會有the、a。
 
 ## subject, course, lesson
 - lesson: 學鋼琴、學吉他、學開車、學外語（偏向練技能）
-- class, cours, lesson: 學校的科目（如數學、歷史)
-- subject為科目、課，此處的Japanese為日文，subject為科目、課  
-- course 代表一學期要上的課
+- class, lesson: 學校的課（如數學課、歷史課)
+- subject為科目  
+- course 代表一學期要上的課程名
 
 例句:
 - Does Emma like Japanese?  Yes, it's her favorite subject!  
@@ -96,7 +96,6 @@ campus 指的是學校那塊「土地、地面範圍」，所以用 on。
 - I need a textbook.
 
 ## take a test 考試 
-
 
 
 

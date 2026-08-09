@@ -37,7 +37,7 @@ something 就是指「某樣東西」，當作名詞使用（當作動詞的受�
 - I'd like (I would like) something sweet. （我想吃某些甜的東西。）
 - something sweet
 - something cold to drink
-
+- Something will go wrong!
 - Anything（任何東西——常用在否定句或問句）：
   - Is there anything new?（有什麼新鮮事嗎？）
 - Nothing（沒有東西、沒事）

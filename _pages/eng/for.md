@@ -32,6 +32,16 @@ keywords: for
 ## for 目的
 - I need to buy lots of fruit for a party.
 
+## for 預約時間 日期
+預約、安排時間（例如約時間開會、看醫生、訂位）時， for 理解成 「把……保留給」 或 「預定在……時刻」 
+- I booked a table for two.（我訂了一個給兩個人坐的桌子。）
+- Can I make an appointment for nine? (我可以預約在九點嗎？)
+- Book a room for tonight.（預訂今晚的房間。）
+- Schedule a meeting for Monday.（把會議排在星期一。）
+- Set the alarm for 7:00.（把鬧鐘設在 7 點。）
+
+可用at
+- Can I make an appointment at nine?
 
 ## for 對於某人來說/ 適合的身份
 - Sorry, but you're too young for me. (for 對於某人來說)

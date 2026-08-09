@@ -21,7 +21,8 @@ keywords:
 - Which room is bigger, the living room or the kitchen?(那一間房間)
 - Which trip is the most exciting?(那一個短程旅行)
 - Which street are you looking for?(你在找哪一条街？)
-
+- Which house will you choose? 你会选择哪个房子？ 
+ 
 ### What 什麼
 - What color is your car ? (你的車是「什麼」顏色)
 - what day is it? Is it Saturday or Sunday?(那一天)
@@ -57,6 +58,8 @@ What time is it? (範圍：時鐘上的點)
 What color is it? (範圍：色譜)
 
 What size do you need? (範圍：尺寸表)
+
+
 
 ### What kind of 什麼種類的...
 - What kind of party do you want

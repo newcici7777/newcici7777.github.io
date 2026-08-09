@@ -6,6 +6,8 @@ keywords: ex-, pre-
 ## 重音
 - 名詞重音在第一個音節，動詞重音在第二個音節
 - ate 重音在倒數第三個音節
+- ite 重音在倒數第三個音節
+- tion 重音在 tion前一個音節
 
 ## e 字母
 ### e 是重音：唸 [ɛ]
@@ -45,7 +47,9 @@ keywords: ex-, pre-
 - expert：重音在最前面，所以 x 輕鬆發無聲的 [ˈɛk.spɚt]。
 - expert [ˈɛkspɚt] 專家
 - excellent [ˈɛk.sə.lənt]
+- extra /ˈek.strə/
 - exercise [ˈɛk.sɚ.saɪz] 運動
+- exhibition /ˌek.sɪˈbɪʃ.ən/ n.展覽 h不發音的，超過三個音節，全部變短母音
 
 詳解原因:
 - expert 
@@ -54,19 +58,22 @@ keywords: ex-, pre-
   - 子音關門（閉音節）： 開頭的 e 變短母音 [ɛ]。
 
 ## ex 不是重音: e 唸[ɪ]
-### x後面有母音:唸有聲的[gz]
+### x後面有母音:唸有聲的[ɪg'z]一格
 - exist[ɪgˈzɪst] 存在 
 - executive [ɪgˈzɛkjətɪv] 執行長
 - exam[ɪgˈzæm]，x後面是母音a
 - example[ɪgˈzæm.pl] x後面是母音a
+- exhibit /ɪɡˈzɪb.ɪt/ v.展示 h不發音的 
+- executive /ɪɡˈzek.jə.tɪv/ IPA[iɡˈzekyədiv] 執行長，注意!這邊的u發短「一」
 
-### x後面是子音:唸無聲的[ks]
+### x後面是子音:唸無聲的[k's]
 x後面接著的是像 p、t、c、s，x唸無聲的[ks]
 - express [ɪkˈsprɛs] 表達
 - excite：x 後面接無聲的 c [k]，發無聲的 [ɪkˈsaɪt]。
 - explain：x 後面接無聲的 p，發無聲的 [ɪkˈspleɪn]。
 - Export [ɪkˈspɔrt] (出口)
 - Expect [ɪkˈspɛkt] (期待)
+- exterior/ɪkˈstɪə.ri.ər/ n.adj.外表
 
 ## exc[ɪkˈs]
 - exceed[ɪkˈsiːd] v.超過; 超出；超越
@@ -178,8 +185,12 @@ ign沒有字尾不發音，有字尾g發音。
 - Provocation[ˌprɒvəˈkeɪʃn] (名詞：挑釁)： 重音搬到了前面，而且後面拖了很長的尾巴（pro-vo-ca-tion）。這時候為了人體工學、為了趕快把後面的字唸完，重音位置的 pro- 直接被踩扁縮短，發成 [ˌprɑvəˈkeʃən] 的短音 [ɑ]。
 
 ## pro[o]
-- Program [ˈprogræm](n.節目)
-- Profile [ˈprofaɪl](n. 側臉、個人檔案) 
-- Protest [ˈprotest](n. 抗議) 
+- Program [ˈprogræm] (n.節目)
+- Profile [ˈprofaɪl] (n. 側臉、個人檔案) 
+- Protest [ˈprotest] (n. 抗議) 
 
 結論:pro的o發什麼聲音，沒什麼規則，請查看字典。
+
+## ign不發音
+- regin [reɪn] 君主統治時期
+- sign [saɪn] 簽名

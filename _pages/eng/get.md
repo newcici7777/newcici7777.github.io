@@ -30,10 +30,15 @@ You need to get a job.
 - get a grade 就是「拿到成績」。
 - you don't get a perfect grade!
   - grade是A,B,C,D分數 perfect滿分
-- I got score 95 points
-
+- I got 95 points.
+- My score was 95.
 
 ## on 考試
 - get an A on the test（在考試上拿 A）
 - do well on the exam（在考試中表現好）
 - make a mistake on the quiz（在小考中出錯）
+
+## get 休息
+get 有「去取得、獲得、讓自己得到」的意思，去爭取一些休息時間來恢復體力
+- Get some rest（去弄點休息、好好休息)
+  - 注意！沒有get a rest 這個說法

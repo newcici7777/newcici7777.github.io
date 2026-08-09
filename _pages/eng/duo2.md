@@ -221,9 +221,27 @@ Country > City > Town > the country > village
   - We went dancing last night.（我們昨晚去跳舞了。）
 - go camping去露營
 
+## Go to sleep與go to bed
+Go to sleep 與 go to bed 的核心差別在於：一個強調「入睡的這個動作／狀態」，另一個強調「上床躺著的行為」。
+- It's 10 PM. It's time to go to bed.（現在晚上十點了。該上床睡覺（就寢）了。）
+- The baby finally went to sleep.（那個嬰兒終於睡著了。）
+- I tried to go to sleep, but the noise was too loud.（我試著入睡，但噪音太大了。）
+- You should not go to sleep late.(你不應該太晚睡（入睡）)
 
-## a ride
+## ride
+- I paid for the ride.我付了車資 / 我付了這趟車的錢
+  - pay for + 名詞（為……付錢）。呼應我們前面討論過的 pay ... for ...，這裡的 ride 就是那個被購買的「搭乘服務」。
 - get a ride home 搭別人的便車回家
+- Have a ride（去搭車、兜風、搭乘一次）
+  - Do you want to have a ride with us?（你想跟我們一起去兜風/搭便車嗎？）
+  - He offered to have a ride on his new motorcycle.（他主動說要讓我試乘他的新機車。）
+
+Ride 則強調「騎乘」或是「坐在上面隨之移動」的動作
+- ride a bike
+- ride a motorcycle
+- ride a horse
+- ride the roller coaster 坐雲霄飛車
+  - do you want to ride the roller coaster or not?
 
 ## 量詞
 - Pizza（披薩）
@@ -273,9 +291,45 @@ hall 要表示「禮堂、大廳、展覽館」這種比較大型的室內空間
 - town hall（市政廳）
 - hotel hall（飯店大廳，通常也常說 lobby）
 
+## fall off （從……掉落、從...摔下）
+人或物體從某個表面「脫離並掉落」
+```
+fall off + 掉落的地方
+```
+- He fell off his bicycle.（他從腳踏車上摔下來。）
+- The apple fell off the tree.（那顆蘋果從樹上掉落下來。）
+- fall off a chair（從椅子上摔下來 —— 椅子也不高，但你是從椅子「上面」掉到地上）
+- fall off the bed（從床上滾下來）
+
+
+## fall down 跌倒、往下倒塌
+- The boy ran too fast and fell down.（那男孩跑太快而跌倒了。）
+- The old tree fell down in the storm.（那棵老樹在暴風雨中倒了。）
+- He fell down with his bicycle.（他連人帶車摔倒了。）
+
+## Go to the dentist 看醫生
+意思是「去找那個人（通常是在他的診所或工作場所）」。
+```
+go to the [職業]，
+```
+
+Go to the doctor：去看醫生（內科／一般門診）  
+Go to the dentist：去看牙醫  
+Go to the vet：去獸醫那裡（看寵物）  
+
+- I have a toothache, so I need to go to the dentist.（我牙痛，所以我需要去看牙醫。）
+- She is at the dentist now.（她現在在牙醫診所。）
+
+
+
+
+## available 可以被使用／預約
+available形容詞，專門用來形容某人或某個時間、物品是「處於可以被使用／預約／見面」的狀態
+- I'm sorry. Dr. Wang is busy today, but she's available tomorrow.
+- Dr. Wang is busy today, but she has time tomorrow.（王醫師今天很忙，但他明天有時間。）
 
 ## 無法分類
-- That road **to** our village is long and busy.(到我们村子的那条路又长又繁忙。)
+
 - Ben is angry at us
 - She needs a bath
 - France has beautiful mountains
