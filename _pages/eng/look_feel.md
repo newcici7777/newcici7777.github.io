@@ -50,6 +50,7 @@ keywords: look, see, watch, seem, feel, hear, listen to,
   - I'm sorry to hear that.
 - Listen to（聆聽——注意聽）
   - We listened to the band play music.（我們聽樂團演奏音樂。）
+  - Listen to the piano!
 - Feel（感受到肢體接觸）
   - I felt him touch me.
 
@@ -60,6 +61,7 @@ keywords: look, see, watch, seem, feel, hear, listen to,
 - See
   - I saw him crossing the street. 我看到他正在過馬路。
   - I saw you waving at me.
+  - he sees Lily drawing in the park.
 - Feel
   - I felt him touching me.我感受到他「正在碰你、那個動作持續進行中」的畫面。
 
@@ -71,14 +73,15 @@ keywords: look, see, watch, seem, feel, hear, listen to,
 
 
 ## 感官 + like + 名詞/子句
-- look like（像什麼人事物） + 名詞/子句
-  - Her hobby looks like painting.她的興趣看起來像畫畫
-  - What does it look like?
-  - This house looks like a castle.（這棟房子看起來像個城堡)
-  - You look like your father.（你長得像你爸爸)
-  - He looks like a ghost.（他看起來像個鬼)
-  - It looks like it's going to rain.（看起來好像要下雨了。）
-  - It looks like we are lost.（我們看起來好像迷路了。）
+look like（像什麼人事物） + 名詞/子句
+- Her hobby looks like painting.她的興趣看起來像畫畫
+- What does it look like?
+- This house looks like a castle.（這棟房子看起來像個城堡)
+- You look like your father.（你長得像你爸爸)
+- He looks like a ghost.（他看起來像個鬼)
+- It looks like it's going to rain.（看起來好像要下雨了。）
+- It looks like we are lost.（我們看起來好像迷路了。）
+- You look like someone I knew many years ago!
 
 ## Feel like
 - Feel like(想要「做」某事) + 動詞Ving

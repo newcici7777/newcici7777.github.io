@@ -9,6 +9,10 @@ keywords: ask
 - Can I ask you a question?
 - I will ask Lisa some questions tomorrow.
 
+### ask 人 問題 about 事
+- I asked my teacher a question about the homework.我问了我的老师一个
+关于作业的问题。
+
 ### ask + 問題 + to + 人 
 - he's asking those questions to everyone in our class(代表這陣子、這幾天，他「正在對大家問這些問題」。)
 

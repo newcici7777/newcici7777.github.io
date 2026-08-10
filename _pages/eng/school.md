@@ -65,6 +65,11 @@ class 前面有形容詞，就會有the、a。
 lesson課表上的那『一節課』的時間（通常是40~50分鐘）
 - She has a math lesson every Wednesday.
 
+## go to school
+school變抽象名詞，不可數，前面不能加a跟the。
+- go to school(去上學)
+- go to university（上大學）
+
 ## in school 在學中
 In (社會制度)正在學校的體制裡面。她還在讀書、還沒畢業。（交代身份）  
 
@@ -85,7 +90,16 @@ At (據點)地圖上的座標定位在學校。
 - My kids will finish school at ten past seven.(我的孩子们会在七点过十分放学。)
 - When does your son finish school?
 
+
+## finish school 畢業(過去式)
+school 當抽象名詞，抽象名詞不可數，前面沒有a 跟 the。
+- when did you finish school?你是什么时候毕业的？
+- I finished school in 1980 and then I worked as a doctor.我在1980年毕业的，然后我当过医生。
+- She finished school and then moved to Beijing.她毕业了，然后搬到了北京。
+
+
 ## after school 放學
+school 當抽象名詞，抽象名詞不可數，前面沒有a 跟 the。
 - Anna and her boyfriend will be at the library after school.
 
 ## on campus（在校園裡）
@@ -97,6 +111,4 @@ campus 指的是學校那塊「土地、地面範圍」，所以用 on。
 - I need a textbook.
 
 ## take a test 考試 
-
-
 

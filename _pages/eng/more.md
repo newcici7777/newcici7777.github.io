@@ -62,6 +62,8 @@ more + 不可數名詞
 - I need more money.我需要更多錢。
 - You need to drink more water.你需要多喝點水。
 - more pizza.
+- It will be more fun to make a pizza!
+- More hot coffee or more water?再来一些咖啡还是再来一些水？
 
 ## more 形容詞 + 名詞
 more為更多
@@ -78,51 +80,55 @@ more為更多
 - He is more careful.（他更小心了。）
 - She speaks English more fluently.(（她說英文說得更流利。)
 
+## less更少 + 不可數名詞
+little(原級) -> less(比較級) -> least(最高級)
+
+|級別|級別|翻譯|
+|:----|:----|:----|
+|原級|little|少許、幾乎沒有|
+|比較級|less|更少的|
+|最高級|the least|最少的|
+
+- I need less time to finish this.我需要較少的時間來完成這個。
+- John wants less noise.約翰想要少一點噪音。
+- It's usually less crowded if you go on a weekday.
+- You drink less tea.你喝更少茶。
+- I drink less juice.我喝更少的果汁
+- More or less. 更多还是更少？
+
+### less 作為副詞修飾形容詞
+- This book is less interesting than that one.(這本書沒有那一本那麼有趣)
+
 
 ## 比較級
-- The living room is bigger than
-the kitchen.
+- The living room is bigger than the kitchen.
+- Are big cities better than small cities? 大城市比小城市更好吗？city要加複數
+
 
 ## 最高級
-- It's the hottest day in August
-- Is March the hottest month?
-- Which trip is the most exciting?
-
-## 最高級形容詞
 ```
 主詞 be the 最高級形容詞 名詞 in 範圍
 ```
 
-Ben is the tallest boy in his family.
+- It's the hottest day in August
+- Is March the hottest month?
 
-She's the tallest girl in my school.
+- Ben is the tallest boy in his family.
+- She's the tallest girl in my school.
+- This is the tallest and oldest roller coaster in the country.
 
-This is the tallest and oldest roller coaster in the country.
+- Ben is the most important player. 
+- Which trip is the most exciting?
+- the most exciting part of that game. 那场比赛最令人兴奋的部分    
+- Which is the most expensive city in the US?在美国最贵的城市是哪个？ 
+- Is basketball the most difficult sport? 篮球是最难的运动吗？  
 
-Ben is the most important player. 
+- Which museum is the best in the city?哪个是在城市里最好的博物馆？  
+- Who is the worst player on the team? 谁是在队里最糟糕的运运动员？
+- This is the worst coffee shop in town!这是在镇上最糟糕的咖啡店！   
+- I'm sorry my English is the worst 我很抱歉，我的英文
+最糟糕。
 
-这是在镇上最糟糕的咖啡店！  
-This is the worst coffee shop in town!  
-
-在美国最贵的城市是哪个？  
-Which is [the most expensive] city in the US?  
-
-哪个是在城市里最好的博物馆？  
-Which museum is the best in the city?  
-
-Which trip is the most exciting?  
-
-那场比赛最令人兴奋的部分  
-the most exciting part of that game  
-
-篮球是最难的运动吗？  
-Is basketball the most difficult sport?    
-
-谁是在队里最糟糕的运运动员？  
-Who is the worst player [on] the team?  
-
-大城市比小城市更好吗？  
-Are big cit[ies] better than small cit[ies]?  
 
 - the youngest 最年輕
 - the fastest player

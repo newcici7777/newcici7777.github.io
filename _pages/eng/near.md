@@ -10,8 +10,9 @@ in Taiwan.
 - Do you like the weather in Taiwan?  
 
 ## in在裡面
-Are you in the classroom?  
-你在教室里吗？
+- Are you in the classroom?你在教室里吗？  
+- They are in a coffee shop.
+
 
 ## in 範圍
 - She's the tallest girl in my school.
@@ -31,11 +32,16 @@ Are you in the classroom?
 
 ## on
 - There's a coffee shop on this street. 在这条街上有一个咖啡店。
-- Ary you on the third floor or the first floor?
+- Ary you on the third floor or the first floor?你在三层还是一层？
 
 ## at小地點
 - Oscar is at an art museum.
 - We can meet at a cafe.
+- I studied at Oxford University last spring.我去年春天在
+牛津大学学习。
+- I met my friend at Big Ben yesterday morning.我昨天早上在大笨鐘见了我的朋友。
+- Ben studied at a famous university last spring. 本去年春天在一个有名的大学学习。
+
 
 ## at the end of 
 - Is there a bookstore at the end of that
@@ -56,12 +62,9 @@ outside.
 - It's too hot outside. It's the hottest day in August. I want to go home.
 - The swimming pool is outside.
 
-## there here 副詞
-前面不加任何介系詞
-
-
 ## between A地 and B地
 - between the coffee shop and the zoo (在咖啡店和动物园之间 )
+- between the museum and the restaurant 在博物馆和餐厅之间
 
 ## 動詞 from A地 to B地
 - Let's walk from the museum to the restaurant(咱们从博物馆走去餐厅吧。)
@@ -91,6 +94,8 @@ the garden.
 - Do you want the duck near the water or on the grass?
 - near the zoo(在动物园附近)
 - I am from a small town near Shanghai.(我来自上海附近的一个小镇。)
+- In 1990, there were many restaurants near my school, but there was only one cafe.
+
 
 ## behind
 - The garden behind the house has many flowers and trees.

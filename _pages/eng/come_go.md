@@ -124,10 +124,14 @@ home前面加上「誰的」房子，就要用to
 當遇到「移動類」動詞（如 go, come, get抵達, walk, drive）：
 當你要說「去那裡」或「來這裡」時，副詞 here 和 there 前面直接接，不用加 to。
 
-- Let’s go there.（我們去那裡。）
-- When did you get here？（你什麼時候到這裡的？）
 - The hill is there
+- It's nice to be here again.
 - The police are here. 
+
+- Let’s go there.（我們去那裡。）
+- Can we go there again.我们可以再去那里一次吗？
+
+- When did you get here？（你什麼時候到這裡的？）
 
 ## along 沿著……走
 ```
@@ -286,28 +290,18 @@ Over = 跨過那段距離。
 - work from home 在家工作
 - I'll be at home between six o'clock and seven o'clock.(我在六点到七点之间会在家。)
 
-## go
-go to bed「去睡覺」這件事情，bed前面沒加the  
-- You need to go to bed!  
-- go to the bed 去床邊  
-
 ### go to + 地點
 「去公園」，因為公園是名詞（park），才需要加 to 變成 go to the park。
 
-- goes to the park 去公園  
+- He goes to the park 去公園  
 - She doesn't want to go to the theater
-
-### 看醫生
-go to the doctor's office 看醫生  
-They go to the doctor's office.  
+- Let's go to a museum now.
 
 ### go next
 go後面省略to，因為next就是副詞
 - Where will you go next summer ?(你明年夏天会去哪里？)   
-
-## be going to + 地點
-- we are going to a nice cafe.
-- I'm not going to the dance party tonight.
+- Where can we go next?
+- Where are we going next?（我們接下來要去哪裡？）
 
 ## go out 出去玩
 - Emma doesn't want to go out with me.

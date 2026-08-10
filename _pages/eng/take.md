@@ -25,7 +25,16 @@ Take 東西 to 人/地點
 - Take your umbrella.（把你的傘帶走。）
 
 ## 載人去某地
+```
+Take 人 to 某地
+```
 - He took his kids to school this morning.（他今天早上載小孩去學校)
+- I can't take them to the beach now.我現在不能帶他們去海灘
+- Who took the children to school yesterday?谁昨天带孩子们去的
+学校？
+- Can you take the boys to the park?你可以带男孩们去公园吗？
+- My mom took me to a birthday party last weekend.我的妈妈上周末带我去了一个生日聚会。
+- My grandma took me to school every morning.我的奶奶每天早上送我去学校。
 
 ## take + 電梯 = 搭電梯
 - You can't take this elevator now.你現在不能搭這部電梯。
@@ -33,13 +42,24 @@ Take 東西 to 人/地點
 
 
 ## Take + 交通工具、大眾運輸
-- Take a bus / a train / a plane（搭公車 / 搭火車 / 搭飛機）
+### take the ...
+- Take the bus.公車有時間表的用the
+- Take the train. 火車有時間表的用the
+ - I usually take the train to work.（我通常搭火車去上班。）
+- take the subway.搭地鐵有時間表用the
+
+### take a ...
+- take a plane 搭飛機
+  - I decided to take a plane instead of the train.我決定搭飛機而不是坐火車
+- Take a flight.搭飛機 更常用flight航班
+  - I'm taking a flight to Japan.
 - Take a taxi / an Uber（坐計程車 / 叫Uber）
-- I usually take the train to work.（我通常搭火車去上班。）
+
 
 ## 拍照
 - Take a picture / photo（拍照）
 - They took lots of photos in Cambridge.他们在剑桥拍了许多照片。
+
 
 ## 佔位
 - The seat was taken.這個座位有人了。

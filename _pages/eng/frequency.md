@@ -4,7 +4,8 @@ date: 2026-07-29
 keywords: English, Frequency
 ---
 ## 現在式(習慣) 頻率副詞
-always放在動詞前  
+頻率副詞放在be動詞後，一般動詞前面。 
+
 - Tom alwavs visits his grandma on her birthday. It's in May.Tom总是在他奶奶生日的时候去看望她。是在五月。
 - Anna sometimes goes to work by car.
 - Where does she usually play basketball?
@@ -28,14 +29,12 @@ three times every Sunday 每個禮拜天 三次
 - I told you to water the plants three times every week!
 - She practices guitar every Tuesday.(注意，guitar前面沒有the)  
 
+## never 當作否定
+- You never responded to my letters...
+
+## 頻率副詞放最後面
+- Please play it often.
 
 
-
-
-Every day放句首  
-Every day, he sees Lily drawing in the park.  
-
-One day放句首
-One day, he decides to talk to her.
 
 

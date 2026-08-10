@@ -14,15 +14,15 @@ keywords: English, travel, ticket, fly, tour, trip
 ## fly
 - Do you want to fly to New York or Los Angeles?
 - I want to fly to Japan.
-- Ben often flies to Germany.本经常坐飞机去德国。
-- Tom flew from New York to London. Tom从纽约飞到了伦敦
 - Now he's going to fly from London to Paris. He's travling a lot.现在他要从伦敦飞往巴黎。他经常旅行。
+- Dad flies to London every week.爸爸每周都飞去伦敦。
 - Ben often flies to Germany.本经常坐飞机去德国。
+- He often flies to the UK.他经常飞去英国。
+- Tom flew from New York to London. Tom从纽约飞到了伦敦
 - I flew from London to Oxford yesterday.我昨天从伦敦飞去了
 牛津。
+- I flew to London last Saturday.我上周六飞去了伦敦。
 
-## arrive late
-- Our plane arrived really late last night.When did your plane arrive?
 
 ## 機票
 - I want to get a ticket.
@@ -136,9 +136,8 @@ join 強調跟著團體一起
 
 ## trip 名詞:旅行
 Trip 則是一般廣義的「旅行、出遊」，不一定有導覽性質，單純指「去某地旅行」。
-注意，不是of，是to
+- Which trip is the most exciting?
 
-### trip 旅行(名詞)
 ```
 one's trip to 地點
 ```

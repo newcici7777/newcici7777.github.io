@@ -116,14 +116,14 @@ weekday+s 代表每一個平日
 ### on the weekend 在週末
 在週末為禮拜五下班開始 ~ 禮拜日  
 - Are you free on the weekend?
-- Are you free the weekend?(省略on)
 - Are you free on weekend**s**?（你平常週末都有空嗎？）
 - Are you free this weekend?(有this就沒on)
 - I have too much work, so I can't go on the weekend.(我有太多工作了，所以我週末不能去。)
 - What are you doing on the weekend?（你這週末要做什麼？）
+- Did your family play games on the weekend? Yes, we loved it!
 
 ## in 年/月/四季 上午下午晚上
-- The weather is nice here [in the summer].季節前面要加上the
+- The weather is nice here in the summer.季節前面要加上the
 
 月份:
 - I am not going to study in August.  
@@ -133,7 +133,12 @@ weekday+s 代表每一個平日
 - in the afternoon 在下午 
 - in the evening 在晚上
 
-- We can meet at a cafe [in the] morning.   
+- We can meet at a cafe in the morning.   
+- In 1990,
+
+## in 在多久時間...之後
+- In two hours.
+
 
 ## 問時間 at 時間
 What形容詞 + 不可數名詞time
@@ -158,7 +163,7 @@ What形容詞 + 不可數名詞time
 - tomorrow morning.
 
 ## from 時間 to 時間
-- The museum is open from ten o'clock to five o'clock [on] Saturday, but it is closed [on] Sunday.
+- The museum is open from ten o'clock to five o'clock on Saturday, but it is closed on Sunday.
 - Is the shoe store closed from January first to January fourth?
 - The bank is open from one o'clock to five o'clock.
 
@@ -171,7 +176,7 @@ What形容詞 + 不可數名詞time
 - We will eat lunch during meetings.
 
 ## before after
-- Can you [come home] before six o'clock?你可以六点钟之前回家吗？  
+- Can you come home before six o'clock?你可以六点钟之前回家吗？  
 
 ### after
 - Let's go to a museum now. Sure,after I go to the restroom.
@@ -233,3 +238,13 @@ past six.(丽莎平时在六点过二十分左右起床。)
 
 ## at the end of
 - Our kids will start school at the end of August.(我们的孩子们会在八月底开学。)
+
+## all + 時間名詞
+- All afternoon：整個下午
+  - I studied all afternoon yesterday.
+- All night一整晚 / 徹夜
+  - He stayed up all night playing games.他通宵一整晚打遊戲。
+- All morning：整個上午
+  - She was in meetings all morning.她整個上午都在開會。
+- all day
+  - Why were you at school all day yesterday? 地點（Place） ＋ 時間（Time）

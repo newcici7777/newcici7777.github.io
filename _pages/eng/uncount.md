@@ -44,6 +44,9 @@ a lot放最後
 - How many slice**s** of pizza did you take?你拿了幾片披薩？
 
 ## much + 不可數名詞
+- I don't like it very much.
+- I loved her very much.
+
 
 ## too much + 不可數名詞
 - Does he sleep too much?
@@ -55,22 +58,7 @@ some + 不可數
 some + 可數
 - some strawberries
 - Does your farm have any bananas?
-
-## less + 不可數名詞
-little(原級) -> less(比較級) -> least(最高級)
-
-|級別|級別|翻譯|
-|:----|:----|:----|
-|原級|little|少許、幾乎沒有|
-|比較級|less|更少的|
-|最高級|the least|最少的|
-
-- I need less time to finish this.我需要較少的時間來完成這個。
-- John wants less noise.約翰想要少一點噪音。
-- It's usually less crowded if you go on a weekday.
-
-### less 作為副詞修飾形容詞
-- This book is less interesting than that one.(這本書沒有那一本那麼有趣)
+- Would you like some cookies ?你想要一些饼干吗？
 
 ## few + 可數名詞
 
@@ -82,6 +70,11 @@ little(原級) -> less(比較級) -> least(最高級)
 
 - There are fewer cars on the road today.（今天路上的車子比較少。）
 
+## a little + 不可數
+- I speak a little English.我说一点点英文。
+- I speak Chinese and a little English.我说中文和一点点英语。
+
+
 ## 可數與不可數名詞
 
 不可數名詞
@@ -92,11 +85,15 @@ little(原級) -> less(比較級) -> least(最高級)
 - Do we have milk in the refrigerator?
 - A lot of ice cream!
 - But can we still have ice cream today
+
+
 可數名詞
 - Let's cook some beans.
 - She'll buy her parents some beans.
 - Duo will give me some potatoes tomorrow.
 - I love these flower**s**
+- We watched cartoons yesterday morning.(卡通加s)我们昨天早上看了卡通片。
+
 
 ## Cake Pizza可為可數/不可數
 - It's a very small cake.(a有數量，代表可數)

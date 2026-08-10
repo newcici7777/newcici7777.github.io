@@ -3,6 +3,14 @@ title: 最近 現在進行式
 date: 2026-08-09
 keywords: be going to
 ---
+## be going to + 地點
+- we are going to a nice cafe.
+- I'm not going to the dance party tonight.
+- I'm going to a museum with my granddaughter now.
+
+## going next
+- Where are we going next?（我們接下來要去哪裡？）
+
 ## 進行式
 - Bea is sitting on a bench in the park.
 - Zari is babysitting her neighbor,
@@ -11,6 +19,9 @@ keywords: be going to
 
 ## is visiting 短暫拜訪
 現在分詞 visiting：當作形容詞時，專門用來形容「暫時停留、作客、交流」的人或事
+
+- Lin and her grandmother, Lucy, are visiting Seattle.
+
 
 - He visits Italy every year.
   - 他每年都去義大利玩。——這是規律、習慣，用普通現在式。

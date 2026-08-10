@@ -10,6 +10,10 @@ keywords:
 動詞搭配主詞
 - Who will come with us?
 - Who was your server yesterday?昨天谁是你的服务员？
+- Who had afternoon tea?谁喝了下午茶？
+- Who took the children to school yesterday?谁昨天带孩子们去的
+学校？
+- Who showed you this place?谁给你看了这个地方？
 
 ## 疑問「形容詞」
 疑問詞作為形容詞，修飾後面的名詞。  
@@ -101,6 +105,16 @@ how did you 來問一件已經發生的意外或狀況時，通常是在追問�
 
 ## 疑問子句
 - Are you looking for where the ticket is?
+- I don't know where she is now...
 
 ## 疑問子句 + to
 - but do you know where to buy glasses?
+
+## 子句
+- You look like someone I knew many years ago!
+
+
+## It's OK（沒關係）+ if（如果）+ 子句
+「如果……也沒關係／是可以的」。
+- it's OK if you don't get a perfect grade!(拿不到滿分／完美成績也沒關係的！)
+- It's OK to eat one slice. 吃一片披薩沒關係。

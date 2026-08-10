@@ -65,8 +65,7 @@ paint 是水彩畫 draw 是用鉛筆描寫
 
 我不会画画。  
 - I cannot paint. 
-- Drawing in the Park.
-- he sees Lily drawing in the park.
+
 - What are you drawing?
 - I'm not drawing you.
 - I'm drawing your dog.

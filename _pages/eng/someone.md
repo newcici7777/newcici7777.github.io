@@ -6,6 +6,7 @@ keywords: English
 ## both A and B
 - both Anna and I love our new house!
 - Both Times Square and Wall street are in New York.
+- Are both China and Japan in Asia? 日本和中國都在亞洲嗎
 
 ## both 二者
 - Both skirt[s] are green.

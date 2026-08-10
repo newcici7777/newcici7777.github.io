@@ -3,6 +3,14 @@ title: talk, tell, say, speak
 date: 2026-07-29
 keywords: talk, tell, say, speak
 ---
+## about 關於、有關、涉及……的範圍或主題
+about有分類的意思，把限定範圍。
+
+- talk about weather（談論關於天氣的事）
+  - 把範圍縮小，談論天氣
+- a book about space（一本關於太空的書）
+  - 把書的範圍縮小，天空的書
+
 ## tell(及物)
 ### tell 及物動詞 + 事
 - Don't tell lies.
@@ -42,7 +50,9 @@ talk 是一個不及物動詞（不能直接加受詞）
 - Talk to me.
 - Talk to her!
 - Can I talk to you?
+- he decides to talk to her.
 - We need to talk.(不及物)
+
 
 ### talk + with + 人
 - He is talking with his friend.（他在跟他的朋友聊天。）

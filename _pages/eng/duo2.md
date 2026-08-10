@@ -47,32 +47,29 @@ him.
 - Can you put this plant on the table?
 
 
-## all + 時間名詞
-- All afternoon：整個下午
-  - I studied all afternoon yesterday.
-- All night一整晚 / 徹夜
-  - He stayed up all night playing games.他通宵一整晚打遊戲。
-- All morning：整個上午
-  - She was in meetings all morning.她整個上午都在開會。
-- all day
-  - Why were you at school all day yesterday? 地點（Place） ＋ 時間（Time）
-
-
 ## be + wearing 穿什麼衣服/穿什麼鞋子/戴什麼帽子
 - Is she wearing a red hat ?
-- The woman in the red shirt?
+- She likes to wear expensive shoes.她喜欢穿贵的鞋。
 
+
+## 使用in/with 形容前面的名詞
+- The woman in the red shirt?
+- That boy with short hair is fourteen years old.那个有短头发的男孩十四岁。
 
 ## kind of 種類
 - This kind of cheese is nice!
 
 ## remember 
 remember + to 
-- I remembered to water your plants...
+- I remembered to water your plants.
 
+remember + ving
+- I remember hearing this song the night we met.
 
-## arrive at
-- They arrive at Vikram's apartment.
+remember + 名詞
+- She probably doesn't remember me.
+- Do you remember your favorite class?你记得你最喜欢的课
+吗？
 
 
 ## water
@@ -93,24 +90,13 @@ eyes are very small.
 - We had clear skies all week.（我們整個禮拜都遇到晴朗的好天氣。）
 - Stormy skies（暴風雨的天空 / 陰暗的天空）
 
-## about 關於、有關、涉及……的範圍或主題
-about有分類的意思，把限定範圍。
 
-- talk about weather（談論關於天氣的事）
-  - 把範圍縮小，談論天氣
-- a book about space（一本關於太空的書）
-  - 把書的範圍縮小，天空的書
 
 
 ## think 認為
 主詞 + think + that可省略 + (完整子句)
 - Why do you think that he wants...(為什麼你覺得他想要……？)
 - Why do you think he wants...(為什麼你覺得他想要……？)
-
-## It's OK（沒關係）+ if（如果）+ 子句
-「如果……也沒關係／是可以的」。
-- it's OK if you don't get a perfect grade!(拿不到滿分／完美成績也沒關係的！)
-- It's OK to eat one slice. 吃一片披薩沒關係。
 
 
 
@@ -158,10 +144,9 @@ Check（檢查/查看）：不只是看，還包含「為了獲得某個資訊�
 
 ## next
 next 是當作時間副詞（或稱地方/順序副詞）使用，意思是「接下來、下一步」。
-- Where can we go next?
 - What should we do next?（我們接下來該做什麼？）
-- Where are we going next?（我們接下來要去哪裡？）
-- Who is next?（下一個是誰？）
+- Next time, send an email! 形容詞
+- Who is next?（下一個是誰？）代名詞？
 
 ## Country（國家）vs The Country（鄉下、農村地區）
 Country > City > Town > the country > village 
@@ -189,13 +174,6 @@ Country > City > Town > the country > village
 - You won the competition!
 - Mia won with a vanilla cake.米亞憑著一個香草蛋糕贏了比賽
   - 某人 + won + with + [武器 / 食譜 / 策略 / 方法]
-
-## Go to sleep與go to bed
-Go to sleep 與 go to bed 的核心差別在於：一個強調「入睡的這個動作／狀態」，另一個強調「上床躺著的行為」。
-- It's 10 PM. It's time to go to bed.（現在晚上十點了。該上床睡覺（就寢）了。）
-- The baby finally went to sleep.（那個嬰兒終於睡著了。）
-- I tried to go to sleep, but the noise was too loud.（我試著入睡，但噪音太大了。）
-- You should not go to sleep late.(你不應該太晚睡（入睡）)
 
 ## ride
 - I paid for the ride.我付了車資 / 我付了這趟車的錢
@@ -227,19 +205,6 @@ slices
 Pieces（塊 / 片）
 - Do you want some cake?要吃蛋糕嗎？
   - Yeah, give me two pieces.好啊，給我兩塊。
-
-## be lost / get lost
-描述現在的狀況
-```
-be 動詞 + 形容詞 (lost)
-```
-- I am lost.（我是個「迷路的人」／我現在迷路了）
-
-get 在這裡有「變成、陷入」的意思（狀態的轉變)，「迷路」這個狀況是什麼時候發生的。
-```
-get + 形容詞 (lost)
-```
-- I was fine at first, but then I got lost."（我本來很好，但後來（不小心）迷路了。）
 
 ## hall 走廊
 - Is there a restroom at the end of the hall ? 走廊盡頭有洗手間嗎？
@@ -276,53 +241,128 @@ fall off + 掉落的地方
 - The old tree fell down in the storm.（那棵老樹在暴風雨中倒了。）
 - He fell down with his bicycle.（他連人帶車摔倒了。）
 
-## Go to the dentist 看醫生
-意思是「去找那個人（通常是在他的診所或工作場所）」。
-```
-go to the [職業]，
-```
-
-Go to the doctor：去看醫生（內科／一般門診）  
-Go to the dentist：去看牙醫  
-Go to the vet：去獸醫那裡（看寵物）  
-
-- I have a toothache, so I need to go to the dentist.（我牙痛，所以我需要去看牙醫。）
-- She is at the dentist now.（她現在在牙醫診所。）
-
-## see a doctor
-- Are you sick? You need to see a doctor.你生病了吗？你需要看医生。
-
-## available 可以被使用／預約
-available形容詞，專門用來形容某人或某個時間、物品是「處於可以被使用／預約／見面」的狀態
-- I'm sorry. Dr. Wang is busy today, but she's available tomorrow.
-- Dr. Wang is busy today, but she has time tomorrow.（王醫師今天很忙，但他明天有時間。）
-
-## have a note 診斷證明
-- Does she have a note from the doctor?診斷證明
-
-
 ## different
 - Wait, the job is in a different office?
 - She moved to a different city
+
+
 ## perfect for
 - Carl is perfect for the job!
 
 ## be poor
 - Is her family poor?
 
-## 現在完成式
+## 現在完成式 以前到現在
+### 現在完成式否定句 一直沒有
+haven't, hasn't, didn't 時，in + 一段時間，代表這段期間之內（一直都沒有）
+```
+in + 一段時間 = 「在這段期間之內（一直都沒有）」。
+```
 - I haven't talked to her in five years.
+  - 以前到現在「一直沒有」聯絡
+- I haven't seen him in a long time.（我有很長一段時間沒見到他了。）
+- I haven't seen her in two years.這二年內沒有見過她
+- I haven't eaten meat in three years.(我三年沒吃肉了。)
 
-## remember
-- She probably doesn't remember me.
+否定句也可以用for
+- I haven't eaten for two days.我已經兩天沒吃東西了
 
-## That's not her
+「狀態」從以前持續到現在
+- I have never been rich.我从来没有富有过。
+  - 從以前到「現在」都沒富有過。
+
+從以前到「現在」，一直喜歡
+- I have always loved this guitar.
+- My children have always loved chocolate.我的孩子们一直都爱
+巧克力。
+- Anna has always wanted a dog.
+  - 從以前到「現在」都想要一隻狗。
+
+### 經驗:做過某職業
+- I have been a server for two years.我当服务员已经两年了。
+- She has worked as a server for five years.她当服务员五年了。
+- My sister has never worked.我的妹妹从来没有工作过。
+
+### 從以前到「現在」持續「多久時間」
+問待了多久，持續到現在，以下句子現在仍在韓國
+- My friend has stayed in Korea for a long time.我的朋友在韩国待了很长时间了。
+
+### 有沒有去過
+- Duo has been to Korea.多儿去过韩国。
+- Emma has traveled in Europe by train, and I have traveled in Africa by car!
+- She has traveled in Asia with her girlfriend.她跟她的女朋友一起
+在亚洲旅行过。
+
+## 過去式
+- what did you say?你说了什么？
+- Mom and Dad moved to New York in 1990.妈妈和爸爸在1990年搬到了纽约。
+- My parents lived in Scotland for twenty years.我的父母在苏格兰住了二十年。
+- My aunt lived in England for five years.我的阿姨在英格兰住了五年。
+- Did you live in an apartment last year?你去年住在公寓里吗？
+- It snowed for about two hours yesterday.(about是大約)
+- It rained for six hours yesterday!
+- They stayed in Germany for six years.
+- I studied English in London for four years.我在伦敦学习英语
+学习了四年。
+- I waited at the airport in Miami for two hours
+
+## then
+- Look at this old photo!The kids were very young then.看这张旧照片！孩子们那时候非常年纪
+非當小。
+- Were they small children then?他们当时是小孩子吗？
+- He was only seven years old then.他当时只有七岁。
+
+
+## at the age of ...
+- She learned to drive at the age of twenty.她在二十发的时候学会了开车。
+- She learned to swim at the age of five.
+- I finished school at the age of seventeen.(school前面沒有the)我是在十七岁的时候毕业的。
+
+## That's 人
 - That's not her!用That 表示人
+
+## It's 人
+- It's you!
+- It's me, Marco!
+
+## call
+- we can call and order a pizza!
+
+## for week
+- My parents often fly to London for work. 我的父母经常飞去伦敦工作。
+
+
+## return from
+- Lucy returns from the bathroom.
+
+
+## 環遊世界
+- I was sailing around the world.我當時正在環遊世界（乘船／航海）。
+  - 我當時正在航行（過去進行式，強調過去某個時刻正在進行的動作）
+- Fly around the world：搭飛機環遊世界。
+- Travel around the world.不限交通工具
+
+## fun vs funny
+- fun adj.有趣的
+- funny adj. 好笑的
 
 
 ## 無法分類
 - Ben is angry at us
 - She needs a bath
 - France has beautiful mountains
+- You know she always saves the day in the end!你知道她最后总能挽救局面！
+- In the end, the hero saved the day. 最后，英雄挽救了局面。
+- I wonder which hero will save the day in the next movie!我想知道下一部电影里哪位英雄会力挽狂澜！
+- Why would anyone want to make a sequel?为什么会有人想要制作续集？
+  - sequel [ˈsiːkwəl] 續集
+- Summer is long.
+- We can finally be together!
+- Actually, I'm going to a museum with my granddaughter now.
 
-0403
+
+- Every day, he sees Lily drawing in the park.  
+- One day, he decides to talk to her.
+
+
+1196

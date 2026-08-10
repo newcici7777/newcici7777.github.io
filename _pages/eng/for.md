@@ -24,6 +24,7 @@ keywords: for
 - We won't be late to lunch
 
 ## for 把「什麼東西」當作 早餐/午餐/晚餐
+- What do you want for dinner?
 - What do you want for launch? (你要把什麼東西當作午餐)  
 - Would you like pizza[s] for dinner?  (你想要把pizza當作午餐嗎)
 - I want a hamberger for lunch.  (漢堡當作午餐)
@@ -31,6 +32,8 @@ keywords: for
 
 ## for 目的
 - I need to buy lots of fruit for a party.
+
+
 
 ## for 預約時間 日期
 預約、安排時間（例如約時間開會、看醫生、訂位）時， for 理解成 「把……保留給」 或 「預定在……時刻」 
@@ -46,6 +49,7 @@ keywords: for
 ## for 對於某人來說/ 適合的身份
 - Sorry, but you're too young for me. (for 對於某人來說)
 - My video game is not for kids. (for 提供的對象)
+- Fun for you?Fun for us!
 
 ## wait for
 ```
@@ -58,14 +62,9 @@ wait for + 人/物
 - I'm waiting for my friend.
 - Are you waiting for me at the gate?
 
-## wait for 一段時間
-- I waited at the airport in Miami for two hours
-
 ## for 一段時間
 - Is it raining today? It rained for six hours in Chicago yesterday!
-- It snowed for about two hours yesterday.(about是大約)
-- It rained for six hours yesterday!
-- They stayed in Germany for six years.
+
 
 ## 其它
 - for the last time 最後一次

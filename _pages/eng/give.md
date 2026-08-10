@@ -53,6 +53,7 @@ keywords: give send show
 - Will you give this book to them.(你会把这本书给他们吗？)
 - Will you give that plant to your mom?(你会把那个植物给你的妈妈吗？)
 - She wants to give movie tickets to her friend.
+- do you want my guitar? I can give it to you.
 
 ## send
 ### 人 + send + 人 + 物
@@ -70,7 +71,7 @@ keywords: give send show
 ### 人 show + 人 + 物
 - Emma wants to show us her new house.
 - Can you show me your vegetable garden (你可以给我看看你的蔬菜园吗？)
-
+- Who showed you this place?谁给你看了这个地方？
 
 ## lend to
 ```

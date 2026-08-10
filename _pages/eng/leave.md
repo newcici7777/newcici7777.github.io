@@ -13,6 +13,15 @@ keywords: leave, left
 - That train leaves at 7 p.m.(火車在晚上 7 點開出 / 發車)
 - Duo's flight is leaving in fifteen minutes.多哥（Duo）的班機在十五分鐘後就要起飛了。這裡的 leaving 是 「起飛」 的意思。
 
+## arrive
+- They arrive at Vikram's apartment.
+- When did your train arrive? 你的火车是什么时候到的？
+- Our plane arrived really late last night.When did your plane arrive?
+- We arrived in London last Friday at about seven o'clock.我们上周五是在七点钟左右到的伦敦。
+- The bus usually arrives at the station at one o'clock in the afternoon. 公交车通常在下午一点到站。
+- We arrived in London yesterday morning. Did you arrive last night?
+
+
 ## 出門/離開
 後面接的是「地方（城市、房間、辦公室）」 就是單純的「離開」。
 - leave the city（離開城市）
@@ -34,11 +43,8 @@ Leave + for + [目的地]。
 - I'm leaving for New York tomorrow.（我明天要動身前往紐約了。）
 - The train leaves for Tokyo at 7 p.m.（這班開往東京的火車在晚上 7 點發車。）
 
-## 離開桌子
+## leaves the table 離開桌子(離開位子)
 - Lucy leaves the table.
-
-at the table 在桌邊
-- Lin sees her grandmother, Lucy, at the table.
 
 ## 忘記帶東西
 物品是「不小心被留在某個空間或物體上，而人自己走了」，它才會變成中文常說的「遺留、落掉、忘記帶走」。

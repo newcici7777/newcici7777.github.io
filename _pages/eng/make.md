@@ -12,14 +12,15 @@ keywords: make
 
 - I'm making egg[s].(我在煎蛋) 
 - Making Breakfast  
-- Eddy is making breakfast [for] Junior.  
+- Eddy is making breakfast for Junior.  
   - for 代表給，breakfast 這邊是不可數名詞，不能加s。
-- I'm making [a big breakfast] [for you]!  
+- I'm making a big breakfast for you!  
 - we can make lunch!  
 - I like to make cakes.
   - cake可作為不可數名詞，也可作為可數名詞
 - Vikram is making tea in the kitchen.
 - But let's make dinner now!
+- We can make a pizza!
 
 ## 預約
 「預約、約定」這類抽象的行程或安排時，最常搭配的動詞就是 make，Make 的其中一個核心意思是「製造、安排、促成」。

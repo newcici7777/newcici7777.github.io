@@ -81,7 +81,10 @@ too放在句子的最後面，前面(可加或不加)逗號
 - there's sausage too!  
 
 too 放在be 動詞後面(太...)，作為副詞 
-- This is too dangerous!  
+- This is too dangerous!
+
+## too + 形容詞
+- My new apartment is too small.  
 
 ## also
 also放在動詞前面，意思是「也」
@@ -89,6 +92,7 @@ also放在動詞前面，意思是「也」
 - Can we also have a big cake?
 - He also asked if I like cats.
 - I can also help you.（我也可以幫你。）
+- But it's also a very important song.
 
 放在be動詞後面 + also 
 - He is also a student.（他也是個學生。）
@@ -104,6 +108,7 @@ as well 放在最後，意思是「也」
 
 ## only 只是
 - I was only gone for a week!
+- He was only seven years old then.他当时只有七岁。
 
 ## just 剛剛/僅僅/只是
 放在 be 動詞後面、 動詞前面
@@ -122,8 +127,6 @@ be動詞後面放even
 - Even a child can do this.（連小孩子都會做這個。）
 - He knows everyone, even me.（他每個人都認識，連我都認識。）
 
-
-
 ## 同位詞
 - Eddy and his friend [Oscar] are at an art museum.  
   - friend = Oscar 二者相同。刪除his friend或刪除Oscar都不影嚮句意。
@@ -138,22 +141,21 @@ be動詞後面放even
 - The house has two colors, red and white.
 
 ## 感到
-[東西]令人無聊 Ving
-That painting is boring.
+Ving 為形容詞
 
-日语比法语更有意思吗？
-Is Japanese more interesting than French?
-
-### Ving 為形容詞
+- That painting is boring.[東西]令人無聊 Ving
+- This song is boring.
+- Is Japanese more interesting than French?日语比法语更有意思吗？
 - I found the book interesting.
   - 形容詞interesting放在名詞the book後面，修飾前面的名詞
 
-[人]感到無聊 ed
+
 
 ## live in 住
 - Ben lives in an apartment.  
 - When did you live in Seattle, Grandma?
-- Where will you [live] next year?  你明年会住在哪里？(注意！這邊沒有in)  
+- Where will you live next year?  你明年会住在哪里？(注意！這邊沒有in)  
+
 
 ## stay in  
 - They'll stay in Canada next year.他们明年会留在加拿大。 
@@ -191,6 +193,28 @@ Is Japanese more interesting than French?
 - Our grandparents were't hotel workers.我们的祖父母以前不是酒店员工。
 - was your younger sister a hotel worker?你的妹妹以前是一个酒店员工吗？
 
+## wave at
+- I'm going to wave at her.
+- I saw you waving at me.
+
+## put
+- Now we can put it all together.
+- They put the flour, water, and salt together.
+
+## ready
+- I want everything ready by tomorrow.（我希望明天前每樣東西都準備好。）
+- When will it be ready?
+
+
+## color 畫畫 動詞
+- My son loves to color.
+
+## from
+- I am from a small town near Shanghai.我來自上海附近的小鎮
+- I am from America.我來自美國
+- I am from China.
+- Are you from America?
+- I am not from New York.我不是来自纽约。
 
 ## 其它疑惑
 I draw things that I think are interesting or beautiful.

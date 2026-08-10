@@ -9,21 +9,21 @@ work是抽象名詞，不可數名詞，前面不加a 或the
   - Eddy is at work.
   - I can't talk right now, I'm at work.（我現在不能講話，我在上班。）
 
+## go to work(動詞) 去上班
+- Lin went to work by bus yesterday morning.
+- I'm going to work. 上班
+- I am not going to work on my birthday. 
+
 ## work(動詞) + 地點 在那裡工作？
 ```
 work（動詞：工作）+ 地點
 ```
 - Do you work downtown? downtown（副詞：在市中心）
-- I worked in Oxford for two years.我在牛津工作了
-两年。
+- I worked in Oxford for two years.我在牛津工作了两年。
+- He worked in Scotland for a year. 他在苏格兰工作了一年。
 
 ## work(動詞) + on 日期 在某個日期工作或不工作
 - I don't work on Sundays.
-
-## go to work 去上班
-- Lin went to work by bus yesterday morning.
-- I'm going to work. 上班
-- I am not going to work on my birthday.  
 
 ## work for 人/公司 (為誰工作)
 - Is Anna working for two different companies ?
@@ -53,6 +53,7 @@ work hard (hard是副詞)
 - they work hard during the week.(hard作為副詞)
 - this is a hard work. (hard作為形容詞)
 - The test was hard yesterday.(hard形容詞)
+- This is hard, and I'm hungry.
 
 ## in a meeting 會議
 - in a meeting 會議可以「一場一場」的數，所以要加a
@@ -70,6 +71,10 @@ work hard (hard是副詞)
   - Is the boss in the office?（老闆人在辦公室裡嗎？）
 - at the office (據點)
   - She is at the office.人在辦公室這個地點。
+
+## work as a 職業
+- I finished school in 1980 and then I worked as a doctor.我在1980年毕业的，然后我当过医生。
+- Did your mom work as an English teacher?你的妈妈当过英语老师吗？
 
 ## 其它
 - I don’t work on this project.這個專案我不參與 
