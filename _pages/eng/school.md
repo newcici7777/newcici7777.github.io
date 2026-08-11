@@ -70,6 +70,22 @@ school變抽象名詞，不可數，前面不能加a跟the。
 - go to school(去上學)
 - go to university（上大學）
 
+## in college
+colleage變成抽象名詞，不可數名詞，前面不加a
+- I met him when I was in college.
+
+## at university
+- She is majoring in biology at university.
+
+## at a 形容詞 university
+若university前面有形容詞，要加a
+- Ben studied at a famous university last spring. 本去年春天在一个有名的大学学习。
+
+## at 專屬名詞
+專屬名詞前面不加a the
+- I studied at Oxford University last spring.我去年春天在
+牛津大学学习。
+
 ## in school 在學中
 In (社會制度)正在學校的體制裡面。她還在讀書、還沒畢業。（交代身份）  
 

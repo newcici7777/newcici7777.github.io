@@ -1,5 +1,5 @@
 ---
-title: 最近 現在進行式 
+title: 最近 現在進行式 未來
 date: 2026-08-09
 keywords: be going to
 ---
@@ -16,6 +16,13 @@ keywords: be going to
 - Zari is babysitting her neighbor,
 - Who are you writing to?
 - I'm waiting for my friend.
+
+## is asking
+表達「此時此刻正在做」或「最近這陣子正在進行」。
+用is asking代表持續進行。
+
+- She is asking about the job.（她最近在打聽這份工作的事。）
+- he's asking those questions to everyone in our class(代表這陣子、這幾天，他「正在對大家問這些問題」。)
 
 ## is visiting 短暫拜訪
 現在分詞 visiting：當作形容詞時，專門用來形容「暫時停留、作客、交流」的人或事
@@ -47,3 +54,19 @@ visiting from 這個結構中，介系詞 from 的意思是「來自於……（
 （我們有一位從美國來訪問的教授。）
 - My visiting professor is from Japan.（我的客座教授來自日本——不是長期任教的。）
 - She is just a visiting student here.（她這裡只是一個交換生／短期參訪的學生。）
+
+## 未來
+- They'll move to Japan next winter. 他们明年冬天会搬到日本。 
+- Will you buy a new car next month?  
+  - No, I won't. I'll move to a new city!不，我不会。我要搬到一个新城市！  
+- Anna won't get married next weekend. 安娜下周末不会结婚。 
+- Where will the dance party **be** this weekend(这个周末舞会会在哪里？)
+- Will you be my boyfriend?(你愿意做我的男朋友吗？)
+- OK, I won't be late for lunch!
+- Where will you be?
+- I'll be too busy **the day after tomorrow.**
+- Yes, I'll be your girlfriend!(是的，我要做你的女朋友)
+- We will be in Paris next month.
+- Where will Anna be tomorrow evening?
+- Where will the dance party be this weekend?
+- I won't be at school tomorrow.(我明天不会在学校。)

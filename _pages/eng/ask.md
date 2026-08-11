@@ -43,12 +43,7 @@ keywords: ask
 ask about + 主題/某人：意思是「打聽、詢問關於……的事」。
 - He asked about my day.（他問了我今天過得怎麼樣。）
 
-### is asking
-表達「此時此刻正在做」或「最近這陣子正在進行」。
-用is asking代表持續進行。
 
-- She is asking about the job.（她最近在打聽這份工作的事。）
-- he's asking those questions to everyone in our class(代表這陣子、這幾天，他「正在對大家問這些問題」。)
 
 ## ask 要別人 做事
 ### ask + 人 + to + do (要求某人做某事)

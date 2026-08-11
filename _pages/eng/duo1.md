@@ -127,6 +127,8 @@ be動詞後面放even
 - Even a child can do this.（連小孩子都會做這個。）
 - He knows everyone, even me.（他每個人都認識，連我都認識。）
 
+
+
 ## 同位詞
 - Eddy and his friend [Oscar] are at an art museum.  
   - friend = Oscar 二者相同。刪除his friend或刪除Oscar都不影嚮句意。
@@ -149,8 +151,6 @@ Ving 為形容詞
 - I found the book interesting.
   - 形容詞interesting放在名詞the book後面，修飾前面的名詞
 
-
-
 ## live in 住
 - Ben lives in an apartment.  
 - When did you live in Seattle, Grandma?
@@ -162,22 +162,6 @@ Ving 為形容詞
 - Emma usually stays in the library at night.
 - We stayed in a small town in California last summer.
 
-
-## 未來
-- They'll move to Japan next winter. 他们明年冬天会搬到日本。 
-- Will you buy a new car next month?  
-  - No, I won't. I'll move to a new city!不，我不会。我要搬到一个新城市！  
-- Anna won't get married next weekend. 安娜下周末不会结婚。 
-- Where will the dance party **be** this weekend(这个周末舞会会在哪里？)
-- Will you be my boyfriend?(你愿意做我的男朋友吗？)
-- OK, I won't be late for lunch!
-- Where will you be?
-- I'll be too busy **the day after tomorrow.**
-- Yes, I'll be your girlfriend!(是的，我要做你的女朋友)
-- We will be in Paris next month.
-- Where will Anna be tomorrow evening?
-- Where will the dance party be this weekend?
-- I won't be at school tomorrow.(我明天不会在学校。)
 
 ## born 出生 (用被動式)
 - Were you born on November fifth or on November eighth? 
@@ -218,6 +202,8 @@ Ving 為形容詞
 
 ## 其它疑惑
 I draw things that I think are interesting or beautiful.
+
+
 
 
 

@@ -20,11 +20,19 @@ keywords: English
 - Are both of your parents bus drivers?你的父母都是公車司機嗎？
 
 ## each
-each + 單數動詞
+each 後面只能接「單數可數名詞」，each 的意思是「每一個」，它的大腦邏輯是把群體裡的成員「一個一個分開來看」。既然要一個一個數，它後面的名詞就必須是可以數的。
+
+正確（可數單數）： each person（每個人）、each day（每一天）、each time（每一次）。
+
 - each room has a TV!
 - Each room has its key
 - Each house has a bedroom.
 - Is there a television in each bedroom?(在每个卧室里都有一台电视吗？)
+
+遇到不可數名詞，又想表達「每一份」該怎麼辦？ 你必須加上一個「可數的單位」給它。例如：
+- each glass of water（每一杯水）
+- each piece of information（每一則資訊）
+
 
 ## all 代名詞
 - I know all the roads in this citv.

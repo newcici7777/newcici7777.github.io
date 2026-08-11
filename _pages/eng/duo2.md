@@ -292,31 +292,7 @@ in + 一段時間 = 「在這段期間之內（一直都沒有）」。
 - Emma has traveled in Europe by train, and I have traveled in Africa by car!
 - She has traveled in Asia with her girlfriend.她跟她的女朋友一起
 在亚洲旅行过。
-
-## 過去式
-- what did you say?你说了什么？
-- Mom and Dad moved to New York in 1990.妈妈和爸爸在1990年搬到了纽约。
-- My parents lived in Scotland for twenty years.我的父母在苏格兰住了二十年。
-- My aunt lived in England for five years.我的阿姨在英格兰住了五年。
-- Did you live in an apartment last year?你去年住在公寓里吗？
-- It snowed for about two hours yesterday.(about是大約)
-- It rained for six hours yesterday!
-- They stayed in Germany for six years.
-- I studied English in London for four years.我在伦敦学习英语
-学习了四年。
-- I waited at the airport in Miami for two hours
-
-## then
-- Look at this old photo!The kids were very young then.看这张旧照片！孩子们那时候非常年纪
-非當小。
-- Were they small children then?他们当时是小孩子吗？
-- He was only seven years old then.他当时只有七岁。
-
-
-## at the age of ...
-- She learned to drive at the age of twenty.她在二十发的时候学会了开车。
-- She learned to swim at the age of five.
-- I finished school at the age of seventeen.(school前面沒有the)我是在十七岁的时候毕业的。
+he age of seventeen.(school前面沒有the)我是在十七岁的时候毕业的。
 
 ## That's 人
 - That's not her!用That 表示人

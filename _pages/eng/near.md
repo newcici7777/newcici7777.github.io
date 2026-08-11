@@ -37,11 +37,10 @@ in Taiwan.
 ## at小地點
 - Oscar is at an art museum.
 - We can meet at a cafe.
-- I studied at Oxford University last spring.我去年春天在
-牛津大学学习。
-- I met my friend at Big Ben yesterday morning.我昨天早上在大笨鐘见了我的朋友。
-- Ben studied at a famous university last spring. 本去年春天在一个有名的大学学习。
 
+## at 專屬名詞
+at 專屬名詞，前面不加a、the
+- I met my friend at Big Ben yesterday morning.我昨天早上在大笨鐘见了我的朋友。
 
 ## at the end of 
 - Is there a bookstore at the end of that
@@ -70,11 +69,6 @@ outside.
 - Let's walk from the museum to the restaurant(咱们从博物馆走去餐厅吧。)
 - I walked from my hotel to the concert last night.
 
-## 地方修飾前面的名詞
-- The breakfast **here** is very good!
-- People **in this city** speak French
-- The English class **yesterday** was not bad!
-- The people in this village are poor.在这个村子里的人很穷。
 
 ## close to
 - Our new house is closer to our grandparents' village
