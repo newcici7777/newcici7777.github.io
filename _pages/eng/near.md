@@ -3,6 +3,17 @@ title: 地方副詞 close to, next to, near, beside
 date: 2026-07-28
 keywords: close to, next to, near, beside
 ---
+為什麼它叫介系詞？
+
+因為它「介」在 A 和 B的中間（也就是擺在名詞前面），用來交代 A 和 B 的空間相對位置。
+```
+A is 介系詞 B
+He is in the park.
+```
+be動詞它是用來形容「他的狀態」，他「在」公園裡。
+
+in 介在 A(He) 和 B(the park) 之間，描述位置。
+
 ## in 大地方(大範圍)/國家 
 in the Park.  
 in Taiwan.  
@@ -92,13 +103,29 @@ the garden.
 
 
 ## behind
-- The garden behind the house has many flowers and trees.
-- A lot of people are waiting behind you!
+```
+A is behind B
+```
+A 在 B 的後面，be動詞表達狀態
 
+- A 和 B 都是人（排隊/站位）
+  - He is behind me.他在我後面。
+- A 是建築物，B 也是建築物（找路）
+  - The coffee shop is behind the station.咖啡廳在車站後面。
+- A 是車子，B 是建築物（找車位）
+  - My car is behind the building.我的車在那棟建築物後面
+
+```
+一般動詞 + behind
+```
+這個動作是什麼東西的後面發生的。
+- He is hiding behind the door.他躲在門後面。 躲 hide 這個動作發生在門後面
+- She walked behind me.她走在我後面。 走路 walk 這個動作發生在我身後
+- A lot of people are waiting behind you!很多人在我後面等。 等wait這個動作發生在我後面
+- Someone is standing behind you."（有人站在你後面。）站stand這個動作發生在我後面。
  
 ## pass past
-我需要开车经过动物园吗？  
-Do I need to drive past the zoo? 
+- Do I need to drive past the zoo? 我需要开车经过动物园吗？  
 
 ## 動詞 + home
 - Thanks for driving me home.

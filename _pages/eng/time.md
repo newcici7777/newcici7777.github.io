@@ -175,18 +175,6 @@ What形容詞 + 不可數名詞time
 - they work hard during the week.
 - We will eat lunch during meetings.
 
-## before after
-- Can you come home before six o'clock?你可以六点钟之前回家吗？  
-
-### after
-- Let's go to a museum now. Sure,after I go to the restroom.
-- We played many games after the show last night.
-
-### 前天 大後天 幾天前 幾天後
-
-- I'll be too busy **the day after tomorrow.**
-- where will Duo be the day after tomorrow?
-- I called Bob the day before yesterday.
 
 ## start
 start 後面可以用to或ing
