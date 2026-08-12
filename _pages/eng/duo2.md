@@ -258,41 +258,23 @@ haven't, hasn't, didn't 時，in + 一段時間，代表這段期間之內（一
 ```
 in + 一段時間 = 「在這段期間之內（一直都沒有）」。
 ```
-- I haven't talked to her in five years.
-  - 以前到現在「一直沒有」聯絡
-- I haven't seen him in a long time.（我有很長一段時間沒見到他了。）
-- I haven't seen her in two years.這二年內沒有見過她
-- I haven't eaten meat in three years.(我三年沒吃肉了。)
+
 
 否定句也可以用for
-- I haven't eaten for two days.我已經兩天沒吃東西了
+
 
 「狀態」從以前持續到現在
-- I have never been rich.我从来没有富有过。
+
   - 從以前到「現在」都沒富有過。
 
-從以前到「現在」，一直喜歡
-- I have always loved this guitar.
-- My children have always loved chocolate.我的孩子们一直都爱
-巧克力。
-- Anna has always wanted a dog.
-  - 從以前到「現在」都想要一隻狗。
 
-### 經驗:做過某職業
-- I have been a server for two years.我当服务员已经两年了。
-- She has worked as a server for five years.她当服务员五年了。
-- My sister has never worked.我的妹妹从来没有工作过。
 
-### 從以前到「現在」持續「多久時間」
-問待了多久，持續到現在，以下句子現在仍在韓國
-- My friend has stayed in Korea for a long time.我的朋友在韩国待了很长时间了。
+
+
 
 ### 有沒有去過
-- Duo has been to Korea.多儿去过韩国。
-- Emma has traveled in Europe by train, and I have traveled in Africa by car!
-- She has traveled in Asia with her girlfriend.她跟她的女朋友一起
-在亚洲旅行过。
-he age of seventeen.(school前面沒有the)我是在十七岁的时候毕业的。
+
+
 
 ## That's 人
 - That's not her!用That 表示人
