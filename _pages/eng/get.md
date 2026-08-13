@@ -8,7 +8,9 @@ keywords: get
 - Can we get tickets?(買機票)
 
 ## 抵達
-- When will we get there?
+- When will we get there?我們什麼時候會到那裡？
+- Call me when you get home.你到家時打給我。
+- What time did you get here?你幾點到這的？過去式
 - He'll get there at seven o'clock tonight.
 - I want to go home, but when will I get there? (我想回家，但我什么时候会到家呢？)
 - When she gets home, Priti reads a book in the garden.
@@ -79,3 +81,6 @@ on的相反動作是off，為什麼用on？因為火車飛機巴士可以站，�
   - in line. line是隊伍(名詞)，in介系統就是在...裡面，介系詞片語，意思是「在隊伍裡面」
 
 ## get in bed（上床睡覺 / 進到被窩裡）
+
+## 下班
+- I get off work at 6:00. 下班 

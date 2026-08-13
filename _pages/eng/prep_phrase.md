@@ -38,9 +38,7 @@ yesterday 在這裡它是當作形容詞性的名詞（Noun adjunct），放在c
 
 ## 其它介系詞
 - The girl **in red** is watching me. (名詞 + 介系詞片語)
-- The guy **with long hair** is cool.那個長頭髮的傢伙很酷。
-- The girl with long hair is my best friend. （那個留著長髮的女孩是我最好的朋友。）
-  - 解析：with long hair 是介系詞片語，用來修飾前面的 girl。
+
 - The man **on the bike** is fast.騎腳踏車的那個男人很快。
 
 ### 用 with 來描述人的「身體特徵」或「配件」
@@ -52,11 +50,18 @@ yesterday 在這裡它是當作形容詞性的名詞（Noun adjunct），放在c
 - The guy with a Rolex.（戴勞力士的傢伙）
 - The girl with a tattoo.（有紋身的女孩）
 
+頭髮
+- The guy **with long hair** is cool.那個長頭髮的傢伙很酷。
+- The girl with long hair is my best friend. （那個留著長髮的女孩是我最好的朋友。）
+  - 解析：with long hair 是介系詞片語，用來修飾前面的 girl。
+- That boy with short hair is fourteen years old.那个有短头发的男孩十四岁。
+
 ### in 代表「身處在...裡面」
 穿在身上的衣物（大面積包裹身體）：一律用 in。
 - The girl **in red** （那個身處在「紅色世界/紅色衣服」裡面的女孩）
 - The man in a suit.（穿西裝的男人）
 - The boy in black.（穿黑衣的男孩）
+- The woman in the red shirt?
 
 ### next to
 - The seat next to me is empty. （我旁邊的位子是空著的。）

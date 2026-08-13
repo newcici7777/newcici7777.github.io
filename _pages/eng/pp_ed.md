@@ -77,6 +77,7 @@ keywords: English,
 |吃|eat|ate|eaten|
 |做|do|did|done|
 |給|give|gave|given|
+|開始|begin|began|begun|
 
 ## 不規則
 

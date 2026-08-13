@@ -134,7 +134,7 @@ take 帶有比較多「主動去做、執行一個任務、或需要付出精神
 take a tour（進行參觀）
 參觀需要走動、花體力，所以用 take。
 
-## 洗澡 take a bath
+## 洗澡 take a bath /take a shower 
 - She needs a bath.她需要洗一個澡
 "a bath" 的原因是因為 bath 澡、盆浴 在這裡是一個普通的具體名詞（名詞），而不是動詞。
 
@@ -146,6 +146,7 @@ take a tour（進行參觀）
 
 當你想用「動作」來表達「洗澡」時，通常會搭配一個動詞（如 take 或 have），把 bath 當作受詞：
 - take a bath / have a bath
+- take a shower 
 - She wants to take a bath.（她想要洗澡。）
 - He is having a bath right now.（他現在正在洗澡。）
 

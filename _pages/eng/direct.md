@@ -3,9 +3,23 @@ title: Directions
 date: 2026-08-01
 keywords: 
 ---
+Directions， 為什麼要加 s？指引絕對不會只有「一個動作」，而是由一連串「一條一條、一步一步的步驟」組合起來的。
+
+加 s 的原因： 代表那一連串、好幾個步驟的「指引清單」。
+
+導覽
+```
+give 人 directions to
+```
+- Can you give me directions to the library?（你能告訴我[去圖書館的一連串步驟]怎麼走嗎？）
+
+Instructions（說明書/操作指南）： 買家具回來組裝，裡面有很多個「步驟一、步驟二」，所以永遠是複數。
+
+
+## Street vs Avenue
 美國的馬路命名，東西向的叫 Street，南北向的叫 Avenue。
 
-常用地標
+## 常用地標
 - 公車站：the bus stop
 - 藥局： the pharmacy / the drugstore
 - 銀行： the bank

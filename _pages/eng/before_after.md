@@ -82,6 +82,8 @@ after 就是「先後順序」
 - I'll be too busy the day after tomorrow.
 - where will Duo be the day after tomorrow?
 - I called Bob the day before yesterday.
+- I have an exam the day after tomorrow. （我後天有考試。）
+- We met the day before yesterday. （我們前天見過面。）
 
 ## 過去完成式
 當 after 當作連接詞，引導兩個發生在過去的動作時，英文有一個很重要的時態觀念：「先發生、比較早完成的動作，要用過去完成式 (had + V3)；後發生的動作，用簡單過去式」。

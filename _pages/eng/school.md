@@ -14,6 +14,9 @@ take 的語感更偏向「修讀、參與課程」的過程。
 - Which classes are you taking this semester?你這學期選了哪些課？(classes為複數)
 - I am taking a math lesson now.我現在正在上一堂數學課。(有now，代表現在正在上課)
 
+## Take a lesson 上課(課是一節課、一節課)
+- I don’t want to take **the** lesson.
+
 ## Have a class 上課 課表的課
 這門課已經在你的行程表裡（有課），have 的語感更偏向「行程表上的時間到了」。  
 行程、有這個時間安排，翻開行事曆或課表，看到上面寫著「週三早上：數學」。
@@ -118,6 +121,9 @@ school 當抽象名詞，抽象名詞不可數，前面沒有a 跟 the。
 school 當抽象名詞，抽象名詞不可數，前面沒有a 跟 the。
 - Anna and her boyfriend will be at the library after school.
 
+### start 開學
+- When do you start school?
+
 ## on campus（在校園裡）
 campus 指的是學校那塊「土地、地面範圍」，所以用 on。
 - Students are allowed to live on campus.（學生被允許住在校園裡。）
@@ -126,5 +132,21 @@ campus 指的是學校那塊「土地、地面範圍」，所以用 on。
 - I need a course book.
 - I need a textbook.
 
-## take a test 考試 
+## do well / on the test 考試
+```
+Did you do well...?
+```
+- do well : 某個面試、考試、演講表現得如何？
+- 只要遇到「測驗、面試、特定專案項目」，介系詞都是 on
+
+### 考試 on the test / on the exam
+- Did you **do well** yesterday **on** the reading test?
+- I hope you do well on the test tomorrow.希望你明天的考試考得很好
+
+### 面試 on the interview / on the project
+- Did you do well on the interview?你昨天面試表現得好嗎？
+- She did a great job on the presentation.她昨天的簡報表現得超級好
+- Are you still working on that Laravel project?你還在忙那個 Laravel 的專案嗎
+- I do well on the interview.指的是你在面試的「答題、互動表現」上很好
+
 

@@ -9,6 +9,15 @@ work是抽象名詞，不可數名詞，前面不加a 或the
   - Eddy is at work.
   - I can't talk right now, I'm at work.（我現在不能講話，我在上班。）
 
+## I'm going to work(名詞). 我要去上班了。
+這裡的 work 不是動詞，它是名詞（工作地點/上班這件事）。
+
+我現在正朝著「工作（work）」的這個方向 to 出發 ➔ 。
+
+這裡的 work 前面不加 the，因為是抽象不可數名詞，不加a、the。
+
+這裡的work是上班的「狀態」。
+
 ## go to work(動詞) 去上班
 - Lin went to work by bus yesterday morning.
 - I'm going to work. 上班
@@ -27,7 +36,7 @@ work（動詞：工作）+ 地點
 
 ## work for 人/公司 (為誰工作)
 - Is Anna working for two different companies ?
-- Ben works [for] a good company.(本为一家很好的公司工作。)  
+- Ben works for a good company.(本为一家很好的公司工作。)  
 
 ## in the ... business
 ```
@@ -57,6 +66,10 @@ in the 行業名 business / industry
 - Is she in the food business. 她是在餐飲業工作嗎？
 - She has been in the fashion business for over ten years.（她在時尚界工作超過十年了。）
 
+## work at
+- work at **a** bank（在銀行上班）
+- work at the same company（在同一家公司上班）
+
 ## work from home 在家工作
 - Who will work from home next week?谁下周会在家工作？   
 
@@ -74,6 +87,7 @@ in the 行業名 business / industry
 a hard work (hard是形容詞)
 work hard (hard是副詞)
 ```
+- He works hard.（他工作很努力。 ➜ 修飾「工作」這個動作）
 - they work hard during the week.(hard作為副詞)
 - this is a hard work. (hard作為形容詞)
 - The test was hard yesterday.(hard形容詞)

@@ -85,3 +85,15 @@ pictures of 人事物
 - He [takes] [a photo of his cat] every day.
 - That is a photo of Beijing.
 - Lily painted a nice picture of New York last year.
+
+## in the photo
+只要是照片、圖片、畫作、鏡子、電視或螢幕，它們都有一個明確的「邊界（框框）」。老外會覺得，照片裡的人事物是被包在這個框框「裡面」的，所以習慣搭配介系詞 in（在...裡面）。
+
+- Do you want a single duck or more ducks in the photo? 你希望這張照片裡面，是只有一隻鴨子，還是有更多隻鴨子呢？
+
+只要有「框」通通都用 in！
+- 照片/圖片： Who is the girl in the picture? （圖片裡的女孩是誰？）
+- 鏡子： She looked at herself in the mirror. （她看著鏡子裡的自己。)
+- 報紙/書本： I read about the story in the newspaper. （我在報紙上讀到這個故事。 ➜ 英文覺得字是被印在報紙「裡面」）
+- 螢幕/電視： He is in the movie. （他有演那部電影。 / 他出現在電視裡。）
+

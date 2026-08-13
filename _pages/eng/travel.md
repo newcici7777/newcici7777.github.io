@@ -91,6 +91,14 @@ travel是動詞
 - Here you are. (給你)
 - Here you go. (給你)
 
+## I am off.（我今天放假)
+- off work.離開工作的狀態
+- I get off work at 6:00. 下班 
+- I am off.
+- I am off today.（我今天放假 / 休假)
+- I'm not working today.（我今天沒在工作 / 沒上班)
+- I am on vacation. （我在度假中)
+
 ## take a day off 請假／休假
 take 主動去爭取、安排或決定 放假一天（通常是指請特休、病假或事假)  
 day是可以數的，一天、二天、三天假，所以前面要有a 或數字。  

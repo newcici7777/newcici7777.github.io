@@ -13,9 +13,10 @@ have medison.
 
 ## 喝
 - Do you want to have coffee with us?
-- have drinks. 
+- have drinks. (去喝一杯 / 喝酒)單數複數意思一樣
+- have a drink （喝一杯 / 喝酒）
+- have tea （喝茶）
 - have a coffee（喝咖啡）
-
 ## 比賽
 - They have competitions every year.
 （他們每年舉辦比賽。）

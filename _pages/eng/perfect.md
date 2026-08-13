@@ -19,6 +19,9 @@ keywords: English,
 - I have been a server for two years.我當二年服務生。(現在還在做服務生)
   - 有 for 代表從2年前「持續」到「現在」仍是服務生的「身份」。
 
+## been 形容詞
+- I've been busy for weeks.（我已經忙了好幾個星期了。)忙到「現在」還在忙
+
 ## been + to 去過（現在已經回來了）
 ```
 Have + 主詞 + been to + 地點 

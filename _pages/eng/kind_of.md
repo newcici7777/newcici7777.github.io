@@ -6,9 +6,9 @@ keywords: English,
 - Where does the apple come from?
   - 這個蘋果(單數)是那來的？也可以回答是某個產地，但也可能是超市買來？便利商店？你媽給的？
 - Where does this kind of apple come from?
-  - 這種蘋果(單數)是來自那個產地
+  - 這個「種類」的蘋果(單數)是來自那個產地
 - Where does this kind of apple**s** come from?
-  - 這種蘋果(複數)是來自那個產地
+  - 這個「種類」的蘋果(複數)是來自那個產地
 - Where does this kind of rice come from?
   - 這個「種類」的米(不可數名詞，不加s)是來自那個產地
 
@@ -30,9 +30,9 @@ keywords: English,
 - Where are these kinds of apples from?(種類複數)
 - Where are these two kinds of apples from?(種類複數)
 
-- 單數問： Where DOES this kind come from?
+- 單數問： Where DOES this kind of rice come from?(這個種類的米從那來？)
   - 答： It **COMES** from Thailand.（It 搭配動詞加 s）
-- 複數問： Where DO these kinds come from?（例如：桌上有泰國香米、日本越光米、台灣池上米好幾堆)
+- 複數問： Where DO these kinds of rice come from?（例如：桌上有泰國香米、日本越光米、台灣池上米好幾堆)
   - 答： They **COME** from Thailand and Japan.（They 搭配原形動詞）
 
 ## all/different kinds of 各種各樣
@@ -51,6 +51,18 @@ all所有種類、different(各種)都是複數，所以kind後面要加上s。
 - He has all kinds of money. （他有各種各樣的錢)
 - She likes to take photos of different kinds of flowers.她喜歡拍攝各種不同種類的花
 - I’ve met different kinds of people on dating apps.我在交友軟體上遇過各式各樣、不同類型的人
+
+## come from vs is from 問產地
+因為coffee已經是產出的產品了，所以不加kind of種類。
+
+問句:
+- Does this coffee come from Africa?
+回答:
+- This coffee comes from Africa.
+
+問句:
+- Is this coffee from Africa?
+
 
 ## What kind of 問什麼種類的
 - What kind of party do you want.你想要「那一種」舞會？

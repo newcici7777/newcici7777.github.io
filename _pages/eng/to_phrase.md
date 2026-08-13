@@ -3,27 +3,40 @@ title: to 不定詞片語
 date: 2026-08-09
 keywords: to
 ---
-## 名詞 + to + 動詞
 「未來動作」、義務，或修飾受序數、最高級等限制的名詞
+to + V 的底層屬性:未來、尚未發生、目標、方向
 
-想用一句話來修飾一個名詞，告訴別人這個東西是用來幹嘛的、或是我們該對它做什麼時，英文很喜歡用 名詞 + to + 動詞 的結構。
-
-當「主詞跟前面名詞有關」且「語氣是『該不該、能不能』」時，我們常常會把一個長子句縮寫成短短的 to + V。
+## 要做什麼/該不該/能不能 名詞 + to + 動詞
+語氣是『該不該、能不能』時，常常會把子句縮寫成 to + V。
 
 - How many bags to bring?
   - 原本的完整子句：How many bags should we bring?（我們該帶幾個包包？）
-  - 縮寫過程：拿掉主詞（we）和助動詞（should），把動詞變成不定詞 → How many bags to bring?（要帶的包包有幾個？）
+  - 縮寫過程：拿掉主詞（we）和助動詞（should），把動詞變成不定詞 to bring
 
 - How much money to spend?
   - 原本的完整子句：How much money should I spend?（我該花多少錢？）
-  - 縮寫過程：拿掉主詞（I）和助動詞（should），把動詞變成不定詞 → How much money to spend?（要花的錢有多少？）
+  - 縮寫過程：拿掉主詞（I）和助動詞（should），把動詞變成不定詞 to spend
 
-形容詞片語比較長（包含動詞和受詞），它就必須放在名詞後面（這叫做後置修飾）。
+## 後置修飾
 ```
 名詞 + [ to + 動詞 ]
 ```
 - Bags to bring（＝要帶的包包）
 - Money to spend（＝要花的錢）
+
+## 方向、目的地
+- Can I have a ticket **to London**? 
+
+## 目的 名詞 + to + 動詞
+此處的to為目的，聚會的目的(早餐 午餐 晚餐)
+- Will you go out with me to dinner?
+- We won't be late to lunch
+- I have time **to make** breakfast for you today!
+
+## 未來動作 名詞 + to + 動詞
+
+
+
 
 - I need something to eat.(我需要一些可以吃的東西。)
 - Do you have anything to drink?(你有什麼可以喝的東西嗎？)

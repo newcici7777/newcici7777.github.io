@@ -7,10 +7,28 @@ keywords: 其它
 She's a teenager.
 
 ## really
+
+
+### 修飾動詞
+really 可以修飾動詞，但very不能修飾動詞。它可以表示「真的很...、確實很...」
+-  I really like this coffee.（我真的很喜歡這杯咖啡。）
+-  He really wants to go home.（他真的很想回家。）
+
+### 修飾形容詞
+- It's really hot today!
+
+### 遇到「最高級 / 頂點形容詞」
+有些形容詞本身就已經是「最極端」的意思了（例如：delicious 已經是極度好吃、exhausted 已經是精疲力竭）。
+
 excited用really,so修飾，不能使用very
-- I'm really excited to meet
-him. 
+
+用 really 修飾最高級形容詞。
+
+- I'm really excited to meet him. 
 - It's so exciting!
+- This cake is really delicious!（這蛋糕真的太美味了！）
+- I am really exhausted.（我真的精疲力竭了。）
+
 
 ## invite 人 to 目的地
 - They are not going to invite us to the party(他们不打算邀请我们参加舞会。)
@@ -52,10 +70,6 @@ him.
 - She likes to wear expensive shoes.她喜欢穿贵的鞋。
 
 
-## 使用in/with 形容前面的名詞
-- The woman in the red shirt?
-- That boy with short hair is fourteen years old.那个有短头发的男孩十四岁。
-
 ## remember 
 ### remember + to V（記得去做...）
 當你想表達「記得（要去執行某個任務或動作）」時，就要用 remember + to V。這個動作通常在當下或說話時還沒做。
@@ -78,10 +92,16 @@ him.
 吗？
 
 
-## water
-- I watered your plants three times every day!我每天幫你的植物澆三次水！
+## the water 水邊
+water 指的就是「水邊」、「水面」或「水域」（像是湖泊、河流、池塘或海邊）。
+
+near the water 時，大腦的畫面通常是指「在水跟陸地交界的地方」。
+
+- I want a duck near **the water**. 我想要一隻在（那片）水邊的鴨子。
 - We eat by the water.我们在水边吃。
 
+## water 澆水(動詞)
+- I watered your plants three times every day!我每天幫你的植物澆三次水！
 
 ## its
 - That sheep is eating its food right now

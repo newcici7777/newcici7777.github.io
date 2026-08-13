@@ -3,8 +3,16 @@ title: 最近 現在進行式 未來
 date: 2026-08-09
 keywords: be going to
 ---
-## be going to + 地點
-- we are going to a nice cafe.
+## be going to + 地點 (現在進行式)
+這裡的be going是現在進行式，意思是「正在出發去」
+
+這裡的 "to" 是介係詞（後面接地方）， to 純粹是介係詞「朝向、去到」的意思。
+
+當一個計畫是「已經安排好、等一下馬上就要出發」的時候，老外非常習慣直接用現在進行式來表達未來。
+
+- we are going to a nice cafe.我們要去一家很棒的咖啡廳
+- I am going to the restroom.（我要去上洗手間。 ➜ 雖然還沒到，但正要去）
+- We are going to Japan next week.我們下週要去日本。 ➜ 已經訂好機票、確定要去了
 - I'm not going to the dance party tonight.
 - I'm going to a museum with my granddaughter now.
 

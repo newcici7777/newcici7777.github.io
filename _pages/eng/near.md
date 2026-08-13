@@ -82,25 +82,97 @@ outside.
 - Let's walk from the museum to the restaurant(咱们从博物馆走去餐厅吧。)
 - I walked from my hotel to the concert last night.
 
-## close to
-- Our new house is closer to our grandparents' village
+## close to 離...很近、在「附近」
+close to 的核心意思是「離...很近」。它強調的是距離短，但不代表兩個東西要緊緊貼在一起，中間隔著一條街、一排樹都沒關係。
+- My house is close to the store.離超商很近。走路 3 分鐘會到，可能隔了一條街。
+- My office is close to the station.（我的辦公室離車站很近。）
+- Is it close to here?（離這裡近嗎？）
+- Our new house is closer to our grandparents' village.
 - Our house is close to the river, but it's closer to
-the garden.
+the garden.我們家離河流很近，但離花園更近。
+  - 想像你家在中間。走路去河流要 5 分鐘（很近了），但走路去花園只要 2 分鐘。因為 close to 是一個可以拉長縮短的距離，所以你才可以把 close 變成比較級 closer（更近）。
 - This building is close to that park.(这座楼靠近那个公园 )
+- He needs to sit close to the blackboard.他需要坐得離黑板近一點
+- He sat close to the window.他坐得離窗戶很近。
 
-## next to
+## close to (時間上的接近)
+- It is close to 7.快七點了
+
+## Far 遠的
+Far（遠的）➔ 常用在「否定句」與「疑問句」
+- 疑問句： Is it far?（很遠嗎？）
+- 否定句： It's not far from here.（離這裡不遠。➜ far 習慣搭配 from 喔！）
+
+肯定句
+- It's far away.（在很遠的地方。）
+- It's really far.（真的很遠。）
+- It's a long way.（那是一段很長的路 ➔ 口語超常用！）
+
+## close to / far from
+
+|距離|常用講法|大腦的空間畫面|
+|:-----|:--------|:-----------|
+|近 (Close)|It is close to my house.|離我家很近（往我家的方向一下就到 →）。|
+|遠 (Far)|It is far from my house.|離我家很遠（從我家出發要拉好遠的距離 ←）。|
+
+
+## next to 緊鄰著
+兩棟房子緊緊相連，或是兩個人並排坐著。
+- My house is next to the store.在超商隔壁。
 - That flower garden is next to my house.
-- He is sitting next to you!
+- He is sitting next to you!他坐在我隔壁。
 - There is a refrigerator next to the swimming pool.
 - Let's put this plant next to the window.(咱们把这个植物放在窗户旁边吧。)
 - The kitchen is next to the dining room.
 
+## beside 在旁邊
+一個人站在另一個人的身側，或是某個風景在另一個物體的旁邊  
+beside 的核心意思是「在...旁邊（側邊）
+- She stood beside the window, looking out.她站在窗戶旁，看著外面
+- My house is beside the store.在超商旁邊。就在超商的側邊，你家跟超商都在同一條路上。
 
-## near
+## by 在...旁邊
+當 by 後面接一個地方或物體時，意思是「緊鄰在它的旁邊」。它幾乎等於 beside 或 next to。
+
+- He is standing by the window. （他站在窗戶旁。）
+- Let's meet by the entrance. （我們在門口旁邊碰頭吧。）
+- I want a duck by the water. （我想要一隻在水邊的鴨子。 ➔ 比 near 更靠近水面）
+
+|講法|距離感|大腦畫面|
+|:----------|:-------|:--------------------|
+|near the water|附近|鴨子在離水面走路 1-2 分鐘的草地上。|
+|by the water|旁邊|鴨子就在水岸邊，腳快碰水了。|
+
+
+## by 時間 (在...之前 / 最晚到...為止)
+當 by後面接時間時，大腦會畫出一條「死線（Deadline）」。意思是「不能超過這個時間點，在這個時間之前就要完成」。
+
+- Please finish the report by Friday. （請在週五前完成報告。）
+- I will be home by 10 PM. （我最晚 10 點前會到家。）
+
+## by 交通/工具的畫面：透過...方式 / 搭乘
+當你要表達你「使用什麼工具」或「搭乘什麼交通工具」時，直接用 by。
+
+注意！後面的交通工具不能加 a 或 the 喔！
+- I go to work by MRT / by bus. （我搭捷運/搭公車上班。）
+- We communicate by email. （我們透過電子郵件聯絡。）
+
+## 被動
+由...所做（被動）
+
+在看電影、聽歌或讀書時，作者名字前面一定會加 by，意思是「出自某人之手」。
+
+- A song by Taylor Swift （泰勒絲唱的歌）
+- The photo was taken by me. （這張照片是我拍的。）
+
+
+## near 附近
+跟next to 差不多
 - Do you want the duck near the water or on the grass?
 - near the zoo(在动物园附近)
 - I am from a small town near Shanghai.(我来自上海附近的一个小镇。)
 - In 1990, there were many restaurants near my school, but there was only one cafe.
+
 
 
 ## behind
