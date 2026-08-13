@@ -36,9 +36,11 @@ before:以前
 - Duo has been to Korea.多儿去过韩国。
 
 ## gone to 去過(現在人還在那裡)
-
 Have you gone to... 的意思是「你已經去了（而且現在人還在那裡、還沒回來）」
 
+- Tom is not here. He has gone to the supermarket. （湯姆不在這裡。他去超級市場了——還沒回來。）
+- Where have you gone? I've been looking everywhere for you. （你跑去哪裡了？我到處找你找不到。）
+- My parents have gone to Japan for a vacation. (我爸媽去日本度假了——目前還在日本。)
 
 ## 經驗 沒有for
 - I have lived in Taipei.我住過台北(現在有沒有住，不知道)
@@ -57,7 +59,6 @@ Have you ever + V-ed?
   - No, I have never eaten there.沒有，我從來沒在那吃過。
 
 ## 沒有經驗 never 
-- My sister has never worked.我的妹妹从来没有工作过。
 - I never drink coffee.我從不喝咖啡。
   - 我過去不喝、現在不喝、以後也不會喝，這是一個習慣，是「不變的事實」
 - I have never drunk coffee.我（這輩子到目前為止）從沒喝過咖啡
@@ -66,6 +67,7 @@ Have you ever + V-ed?
 - I have never been to Japan.
   - 我從來沒去過日本，不代表一輩子不去日本。
 - I have never been rich.我从来没有富有过。
+- My sister has never worked.我的妹妹从来没有工作过。
 
 ## 最高級 + ever
 - This is the best movie I have ever seen!這是我這輩子看過最好看的電影！

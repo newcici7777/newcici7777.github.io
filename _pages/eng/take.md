@@ -134,6 +134,28 @@ take 帶有比較多「主動去做、執行一個任務、或需要付出精神
 take a tour（進行參觀）
 參觀需要走動、花體力，所以用 take。
 
+## 洗澡 take a bath
+- She needs a bath.她需要洗一個澡
+"a bath" 的原因是因為 bath 澡、盆浴 在這裡是一個普通的具體名詞（名詞），而不是動詞。
+
+名詞直接當作需求對象
+- The dog needs a bath.（這隻狗需要洗澡了。）
+- My car needs a wash.（我的車需要洗車了——wash 在這裡也是名詞。）
+- I need a break.（我需要休息一下——break 在這裡也是名詞。）
+  
+
+當你想用「動作」來表達「洗澡」時，通常會搭配一個動詞（如 take 或 have），把 bath 當作受詞：
+- take a bath / have a bath
+- She wants to take a bath.（她想要洗澡。）
+- He is having a bath right now.（他現在正在洗澡。）
+
+## about 大約
+- Lisa usually gets up at about twenty past six. 莉莎大約6點左右起床
+  - at介系詞 + about 大約(副詞) + six (時間)
+- I will be ready in about ten minutes.（我大約十分鐘後準備好)
+The price is around(about) one hundred dollars.（價格大約在一百美元左右
+- There are about fifty people here.（這裡有大約五十人)
+
 ## 其它
 - Take your place（各就各位 / 站到你的位置上）
 

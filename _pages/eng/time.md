@@ -3,23 +3,25 @@ title: 時間,星期,年/月/日,四季,
 date: 2026-07-28
 keywords: time, date, day
 ---
-## 問日期 
-因為 date（日期）具有「唯一性」。
+## 問日期
+日期date 這個字的本意是「日曆上特定的那一天（特定日期）」，因為獨一無二的一天，所以用the date。
 
-月曆上的那一天（例如：7月20日），在一年、甚至人類歷史中就只有那麼一個特定、具體的數字。因為它像一個長得很有特色、獨一無二的「特定物品」，所以我們可以很自然地用 the date
-
-問日期What為受詞，後面要為動詞，不是名詞。  
+問日期要用What，後面是be動詞，表達「現在是...?」  
 - What's the date?(今天是幾月幾號)
 - what's the date today?(今天是幾月幾號)
+  - 為什麼主詞不是 today 而是用 the date？因為語言習慣上，我們會把 "today" 當作時間副詞放在句尾
+- 回覆用 It 當主詞，代表問句的「the date」，不重覆說同樣的主詞。
   - it's September sixth.(今天是九月六号。)
   - Today is December eighth.
 - What's the date tomorrow?  
 - **What** is the date of his birthday?
-  - [March first] is his birthday.
+  - **March first** is his birthday.
 - What is the date of our next meeting?
 
-(例外)只有問生日才可以用What形容詞 + 名詞date
+(例外)問生日、節日、某個事件的日期、出發日才可以用What形容詞 + 名詞date
+- ❌ 今天不能用what date is today?
 - **What date** is your birthday?
+- What date is the party? 派對是幾號？
 
 Be動詞問句
 - Is September tenth a holiday?(九月十号是一个假日吗？)
@@ -37,14 +39,13 @@ Be動詞問句
 - No, my birthday isn't on December tenth.(不，我的生日不是在十二月十号。)
 
 我不打算在我的生日去工作。  
-I am not going to work [on my birthday].  
+I am not going to work **on my birthday**.  
 
-## 問今天
-it 代表今天
+## 問今天日期/今天星期幾
 - Is today August eleventh?
 - What's the date today?(今天是幾月幾號)
 - What day is today?(今天星期幾)
-- What day is it?(今天星期幾)
+- What day is it?(今天星期幾)it 代表今天
 
 ## 問星期 on 星期
 day 在問星期的語境下，指的是 Monday 到 Sunday 這 7 個名字在不斷循環。
@@ -58,14 +59,14 @@ day 在問星期的語境下，指的是 Monday 到 Sunday 這 7 個名字在不
 - 問名字：“What name did you choose?”（你選了什麼名字？）
 
 問星期的時候，What變成形容詞，後面要為名詞，不是動詞    
-- what [day] is it? Is [it] Saturday or Sunday?  
+- what **day** is it? Is **it** Saturday or Sunday?  
 
 問明天是禮拜幾
 - What day is it tomorrow?明天屬於星期幾（哪種日子）呀？
 - I wash my clothes on Monday, but grandma washes her clothes on Tuesday.  
 - We're going to watch a baseball game on Thursday.
-- Is the game [on] Thursday? 比赛是在周四吗？ 
-- We clean our house on Sunday[s]. 每一個禮拜天後面加s，代表「每一個」禮拜天。 
+- Is the game **on** Thursday? 比赛是在周四吗？ 
+- We clean our house on Sunday**s**. 每一個禮拜天後面加s，代表「每一個」禮拜天。 
 
 複合詞
 - on Friday morning.在周五早上  
@@ -187,11 +188,11 @@ start + Ving 把動作變成「做...的事情」，變名詞
 
 問時間
 - when will the next meeting start?(下个会议什么时候开始？)  
-- When will [the next class] start? 下一节课什么时候会开始？ 
+- When will **the next class** start? 下一节课什么时候会开始？ 
 - Does the English exam start at six
 - The game starts at five.
 - What time does the meeting start?
-- You will [start] your new job next week.你下周会开始你的新工作。  
+- You will **start** your new job next week.你下周会开始你的新工作。  
 
 
 ### start 開學

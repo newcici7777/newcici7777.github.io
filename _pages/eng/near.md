@@ -72,14 +72,15 @@ outside.
 - It's too hot outside. It's the hottest day in August. I want to go home.
 - The swimming pool is outside.
 
-## between A地 and B地
+## be動詞 + between A地 and B地 之間
 - between the coffee shop and the zoo (在咖啡店和动物园之间 )
 - between the museum and the restaurant 在博物馆和餐厅之间
+- My house is between the park and the bank.我家在公園和銀行之間。
+- The new bridge is between the city center and the airport.那座新橋位於市中心和機場之間。
 
-## 動詞 from A地 to B地
+## 移動動詞 from A地 to B地
 - Let's walk from the museum to the restaurant(咱们从博物馆走去餐厅吧。)
 - I walked from my hotel to the concert last night.
-
 
 ## close to
 - Our new house is closer to our grandparents' village

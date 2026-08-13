@@ -174,7 +174,7 @@ straight 和 to 在這裡的分工完全不同，它們一個負責「怎麼走�
 - Drive straight to the parking lot.直開車去停車場
 - Drive straight to the airport.
 
-## straight + pass 直走並經過
+## straight + past 直走並經過
 - Go straight past the traffic light.（直走經過紅綠燈）
 
 ## ahead
@@ -244,9 +244,7 @@ home 本身就有方向，是副詞
 ## 移動動詞 + out
 - They moved out of the city.(他們搬出城市)
 
-## next
-next 是當作時間副詞（或稱地方/順序副詞）使用，意思是「接下來、下一步」。
-- Where can we go next?
+
 
 ## with + 人 和誰一起
 動詞後面用with  

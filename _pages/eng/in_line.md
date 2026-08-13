@@ -57,8 +57,6 @@ be + in line = 排隊的「狀態中」
 - Where should we wait in line? 去那排隊，動詞可替換stand
 - We are waiting in line for chick-in.排隊辦登機，動詞可替換stand
 
-## next(輪到誰) vs after(順序) vs behind(位置)
-- Who is next? I am next in line.誰是下一個？我是下一個。結帳、點餐 (輪到誰)
+## after(順序)
 - Who is after me? 誰在我後面 (排隊順序)
-- He is behind me in line. 他排在我後面(位置)
-- Three people are behind me. 有三個人排在我的後面(位置)
+

@@ -78,9 +78,8 @@ him.
 吗？
 
 
-
 ## water
-- I watered your plants three times every day!(澆水)
+- I watered your plants three times every day!我每天幫你的植物澆三次水！
 - We eat by the water.我们在水边吃。
 
 
@@ -149,11 +148,7 @@ Check（檢查/查看）：不只是看，還包含「為了獲得某個資訊�
   - Let me check the route on my phone.（我看一下手機上的路線。）
   - Wait, let me check the directions on my phone.等一下，我看個手機上的導航路線。
 
-## next
-next 是當作時間副詞（或稱地方/順序副詞）使用，意思是「接下來、下一步」。
-- What should we do next?（我們接下來該做什麼？）
-- Next time, send an email! 形容詞
-- Who is next?（下一個是誰？）代名詞？
+
 
 ## Country（國家）vs The Country（鄉下、農村地區）
 Country > City > Town > the country > village 
@@ -284,52 +279,14 @@ fall off + 掉落的地方
 
 
 
-## different
-- She moved to a different city.
-"a" 的原因是因為 "city"（城市）是可數名詞，而且在這裡指的是「某個不特定的新城市」。
 
-在英文中，單數的可數名詞（例如 city, car, house）絕對不能光禿禿地單獨出現，前面一定要加上冠詞（如 a, an, the）或所有格（如 my, her）。
-
-為什麼用 "a"（不定冠詞），而不是 "the"？
-
-"a"（一個）：用在提到某個名詞，但聽話的人不知道具體是哪一個的時候。
-在這句話中，說話者只知道她搬去了一個「不同的城市」，但沒有指明是哪一座城市（例如：沒有說搬去台北或紐約），所以用 a。
-
-如果今天雙方都知道是哪一座城市，就會用 "the"（定冠詞）：
-
-She moved to the city where her parents live.（她搬去了她父母住的那座城市。）
-
-### Different + 複數名詞 = 許多「種」不同的
-當你想表達「許多種不同的……」或「不同的（多個）……」時，後面就要接複數名詞。
-- She wears different shoes every day.（她每天穿不同的鞋子——多雙鞋。）
-- We have different opinions.（我們有不同的意見——多個意見。）
-
-### Different + 單數可數名詞 = 另外一個
-當你想表達「另外一個（不同於原來的）單一事物」時，後面就要接單數可數名詞，而且前面一定要加 a。
-- a different flavor 另外一種（不同的）口味
-- She moved to a different city.（她搬去了一個不同的城市——指搬去「某個新城市」，單數一個。）
-- Let's try a different restaurant.（我們去試試別家餐廳吧——單數一家。）
-- Can we meet on a different day?（我們可以改在另一天見面嗎——單數一天。）
-- I need a different approach to solve this problem.（我需要另一種方法來解決這個問題——單數一個方法。）
-- Can I try a different flavor?（我可以試試另一種不同的口味嗎？——單數一種口味。）
-- I bought a different book.（我買了另一本書——不同於原本那本的一本書。）
-- Wait, the job is in a different office?
-
-💡 簡單的判斷口訣
-- a different + 單數名詞 ＝ 換了「另一個」單一物品。
-- different + 複數名詞 ＝ 存在「多種不同的」物品。
-
-### different 單數 vs 複數
-- a different flavor（單數）
-  - 意思：另一種不同的口味（單一選擇）。
-
-- different flavors（複數）
-  - 各種不同的口味（很多種選擇）。
 
 
 ## 無法分類
 - Ben is angry at us
-- She needs a bath
+
+
+
 - France has beautiful mountains
 - You know she always saves the day in the end!你知道她最后总能挽救局面！
 - In the end, the hero saved the day. 最后，英雄挽救了局面。

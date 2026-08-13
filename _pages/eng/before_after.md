@@ -98,3 +98,16 @@ after 就是「先後順序」
   - Don't be too hard on him; he's a child after all.（別對他太嚴格，他畢竟是個孩子。）
 - Day after day（日復一日）
   - She practices speaking English day after day.（她日復一日地練習說英文。）
+
+## next
+next 當作「順序副詞」使用，意思是「接下來、下一步」。
+- Where can we go next?
+- What should we do next?（我們接下來該做什麼？）
+- Next time, send an email! 形容詞
+- Who is next?（下一個是誰？）代名詞？
+
+## next(輪到誰) vs after(順序) vs behind(位置)
+- Who is next? I am next in line.誰是下一個？我是下一個。結帳、點餐 (輪到誰)
+- Who is after me? 誰在我後面 (排隊順序)
+- He is behind me in line. 他排在我後面(位置)
+- Three people are behind me. 有三個人排在我的後面(位置)

@@ -225,6 +225,21 @@ Thanks for + 名詞 / V-ing（謝謝你做……）
 - Thanks for driving me home.（謝謝你開車載我回家。）
 - Thanks for the tickets.(謝謝你的門票)
 
+## gone
+gone 是形容詞用來形容一種「不在、離去、離開了」的狀態。
+- I was only gone for a week.我才離開了一個禮拜
+- I was just gone for a week.我才離開了一個禮拜
+- John is gone for the weekend, so the office is very quiet. （約翰週末不在／出門了，所以辦公室非常安靜。）
+- She has been gone for hours. When will she be back? （她已經離開好幾個小時了。她什麼時候會回來？）
+- Don't worry, I won't be gone for long. （別擔心，我不會離開太久的。）
+
+除了表示「人不在、離開了」之外，gone 也可以用來形容食物被吃光、東西不見或花光：
+- My wallet is gone!（我的錢包不見了！）
+- My phone is gone! Did someone steal it? （我的手機不見了！是有人偷走嗎？）
+- All the pizza is gone.（披薩全被吃光了。）
+- All the cookies are gone. Who ate them all? （餅乾全被吃光了。到底是誰全部吃完的？）
+
+
 ## 其它疑惑
 I draw things that I think are interesting or beautiful.
 

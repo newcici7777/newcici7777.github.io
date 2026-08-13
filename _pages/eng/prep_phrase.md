@@ -8,13 +8,7 @@ keywords: English, Post-modification
 
 ## 時間 修飾前面的名詞
 - The English class yesterday.
-「名詞 + 後位修飾語」的結構，形成了一個完整的名詞片語 (Noun Phrase)。
-
-The English（冠詞 + 名詞）放在前面，修飾 class
-
-yesterday 雖然通常當副詞，但在這裡它是當作名詞或形容詞性的名詞（Noun adjunct），放在名詞後面來補充說明時間。
-
-"The English class yesterday" 整串合起來就是一個大型的名詞片語，意思等同於「昨天的英文課」，因此可以直接放在句首當作主詞。
+yesterday 在這裡它是當作形容詞性的名詞（Noun adjunct），放在class名詞後面來補充說明時間。
 
 - the meeting yesterday（昨天的會議）
 - the weather today（今天的天氣）
