@@ -56,20 +56,27 @@ him.
 - The woman in the red shirt?
 - That boy with short hair is fourteen years old.那个有短头发的男孩十四岁。
 
-## kind of 種類
-- This kind of cheese is nice!
-
 ## remember 
-remember + to 
-- I remembered to water your plants.
+### remember + to V（記得去做...）
+當你想表達「記得（要去執行某個任務或動作）」時，就要用 remember + to V。這個動作通常在當下或說話時還沒做。
 
-remember + ving
+- Please remember to lock the door.（請記得去鎖門。）
+- I remembered to water your plants.我記得去幫你澆花。
+
+### remember + V-ing（記得曾經做過...）
+相對地，如果後面接動名詞（V-ing），指的是「記憶中還留著」過去曾經做過某個動作的經驗。
+- I remember watering the plants yesterday.（我記得昨天有澆過花。 → 這件事已經在過去發生了，你腦海中有這個記憶。）
 - I remember hearing this song the night we met.
 
-remember + 名詞
+💡 快速記憶對比
+- remember to V ＝ 提醒自己未來／等一下要去做。
+- remember V-ing ＝ 回憶起過去曾經做過的事。
+
+### remember + 名詞
 - She probably doesn't remember me.
 - Do you remember your favorite class?你记得你最喜欢的课
 吗？
+
 
 
 ## water
@@ -241,40 +248,11 @@ fall off + 掉落的地方
 - The old tree fell down in the storm.（那棵老樹在暴風雨中倒了。）
 - He fell down with his bicycle.（他連人帶車摔倒了。）
 
-## different
-- Wait, the job is in a different office?
-- She moved to a different city
-
-
 ## perfect for
 - Carl is perfect for the job!
 
 ## be poor
 - Is her family poor?
-
-## 現在完成式 以前到現在
-### 現在完成式否定句 一直沒有
-haven't, hasn't, didn't 時，in + 一段時間，代表這段期間之內（一直都沒有）
-```
-in + 一段時間 = 「在這段期間之內（一直都沒有）」。
-```
-
-
-否定句也可以用for
-
-
-「狀態」從以前持續到現在
-
-  - 從以前到「現在」都沒富有過。
-
-
-
-
-
-
-### 有沒有去過
-
-
 
 ## That's 人
 - That's not her!用That 表示人
@@ -303,6 +281,50 @@ in + 一段時間 = 「在這段期間之內（一直都沒有）」。
 ## fun vs funny
 - fun adj.有趣的
 - funny adj. 好笑的
+
+
+
+## different
+- She moved to a different city.
+"a" 的原因是因為 "city"（城市）是可數名詞，而且在這裡指的是「某個不特定的新城市」。
+
+在英文中，單數的可數名詞（例如 city, car, house）絕對不能光禿禿地單獨出現，前面一定要加上冠詞（如 a, an, the）或所有格（如 my, her）。
+
+為什麼用 "a"（不定冠詞），而不是 "the"？
+
+"a"（一個）：用在提到某個名詞，但聽話的人不知道具體是哪一個的時候。
+在這句話中，說話者只知道她搬去了一個「不同的城市」，但沒有指明是哪一座城市（例如：沒有說搬去台北或紐約），所以用 a。
+
+如果今天雙方都知道是哪一座城市，就會用 "the"（定冠詞）：
+
+She moved to the city where her parents live.（她搬去了她父母住的那座城市。）
+
+### Different + 複數名詞 = 許多「種」不同的
+當你想表達「許多種不同的……」或「不同的（多個）……」時，後面就要接複數名詞。
+- She wears different shoes every day.（她每天穿不同的鞋子——多雙鞋。）
+- We have different opinions.（我們有不同的意見——多個意見。）
+
+### Different + 單數可數名詞 = 另外一個
+當你想表達「另外一個（不同於原來的）單一事物」時，後面就要接單數可數名詞，而且前面一定要加 a。
+- a different flavor 另外一種（不同的）口味
+- She moved to a different city.（她搬去了一個不同的城市——指搬去「某個新城市」，單數一個。）
+- Let's try a different restaurant.（我們去試試別家餐廳吧——單數一家。）
+- Can we meet on a different day?（我們可以改在另一天見面嗎——單數一天。）
+- I need a different approach to solve this problem.（我需要另一種方法來解決這個問題——單數一個方法。）
+- Can I try a different flavor?（我可以試試另一種不同的口味嗎？——單數一種口味。）
+- I bought a different book.（我買了另一本書——不同於原本那本的一本書。）
+- Wait, the job is in a different office?
+
+💡 簡單的判斷口訣
+- a different + 單數名詞 ＝ 換了「另一個」單一物品。
+- different + 複數名詞 ＝ 存在「多種不同的」物品。
+
+### different 單數 vs 複數
+- a different flavor（單數）
+  - 意思：另一種不同的口味（單一選擇）。
+
+- different flavors（複數）
+  - 各種不同的口味（很多種選擇）。
 
 
 ## 無法分類

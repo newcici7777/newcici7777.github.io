@@ -1,8 +1,11 @@
 ---
-title: to 不定詞
+title: to 不定詞片語
 date: 2026-08-09
 keywords: to
 ---
+## 名詞 + to + 動詞
+「未來動作」、義務，或修飾受序數、最高級等限制的名詞
+
 想用一句話來修飾一個名詞，告訴別人這個東西是用來幹嘛的、或是我們該對它做什麼時，英文很喜歡用 名詞 + to + 動詞 的結構。
 
 當「主詞跟前面名詞有關」且「語氣是『該不該、能不能』」時，我們常常會把一個長子句縮寫成短短的 to + V。
@@ -28,10 +31,12 @@ keywords: to
 - There is nothing to worry about.(沒有什麼好擔心的事情。)
 - I'm looking for a place to live.(我在找一個可以住的地方。)
 - Do you have a pen to write with？(你有筆可以寫字嗎？——注意這裡因為是以筆來寫，後面要加介系詞 with)
+- I have a lot of work to finish tonight. （我有好多工作今晚要完成。）
 
 想表達 「有／需要／該……的（某物）」 時，腦中浮現名詞後，直接加上 to + 動詞原形 就可以囉！
 - Time to go（該走的時間）
 - A book to read（要讀的書）
+
 
 
 ## 形容詞 不定詞片語

@@ -123,13 +123,6 @@ A 在 B 的後面，be動詞表達狀態
 - She walked behind me.她走在我後面。 走路 walk 這個動作發生在我身後
 - A lot of people are waiting behind you!很多人在我後面等。 等wait這個動作發生在我後面
 - Someone is standing behind you."（有人站在你後面。）站stand這個動作發生在我後面。
- 
-## pass past
-- Do I need to drive past the zoo? 我需要开车经过动物园吗？  
-
-## 動詞 + home
-- Thanks for driving me home.
-
 
 ## stop 地點
 - Because the road stops here. At the river.

@@ -9,17 +9,42 @@ keywords: English,
 - 內心一直想要...做什麼
 - 剛剛做完
 
+## been 曾經的「狀態」
+現在式 be 動詞代表「現在的」狀態、身份、地點、情緒。  
+過去式 be 動詞代表「過去的」狀態、身份、地點、情緒。  
+現在完成式 been 代表「曾經的」狀態、身份、地點、情緒。  
+
+- I have been a server. 我當過服務生。(有沒有繼續當，不知道)
+  - been 代表「身份」
+- I have been a server for two years.我當二年服務生。(現在還在做服務生)
+  - 有 for 代表從2年前「持續」到「現在」仍是服務生的「身份」。
+
+## been + to 去過（現在已經回來了）
+```
+Have + 主詞 + been to + 地點 
+```
+- Have you been to this library before?（你以前來過這間圖書館嗎？）
+
+to 代表「去」
+
+Been to：待過、去過的經驗，現在已經回來了。
+
+before:以前
+
+例句:
+- I have been to Japan.(我去過日本，現在已經回來，問有沒有去過的經驗。)
+- Duo has been to Korea.多儿去过韩国。
+
+## gone to 去過(現在人還在那裡)
+
+Have you gone to... 的意思是「你已經去了（而且現在人還在那裡、還沒回來）」
+
+
 ## 經驗 沒有for
 - I have lived in Taipei.我住過台北(現在有沒有住，不知道)
 - I have watched Titanic.（我看過鐵達尼號。➔ 這是我的經驗，我現在沒有在看。)
-- I have been to Japan.(我去過日本，現在已經回來，問有沒有去過的經驗。)
-- Duo has been to Korea.多儿去过韩国。
 - Emma has traveled in Europe by train, and I have traveled in Africa by car!
 - She has traveled in Asia with her girlfriend.她跟她的女朋友一起在亚洲旅行过。
-
-## 經驗 + for
-- I have been a server for two years.我当服务员已经两年了。(現在還在做服務生)
-- She has worked as a server for five years.她当服务员五年了。(現在還在做)
 
 ## 經驗 ever
 ever 就是問你的人生履歷表上「有沒有過...?」
@@ -85,6 +110,7 @@ ever不能配過去式:
 - I've just bought a new iPhone!我剛買了一支新 iPhone！
 
 ## 現在完成式 already 早就已經...
+already可放在一般動詞前面，be動詞後面，句尾。
 - I have already eaten.(我早就已經吃過) 
 - I've already cleaned my room.我早就把房間打掃好了。
 - I've seen that movie already.那部電影我已經看過了。
@@ -108,7 +134,8 @@ ever不能配過去式:
 - I have eaten. 我剛吃過了，「現在」仍飽。
 - It snowed today.交代一個今天已經結束的事件（例如早上點過下雪的事實）
 - It is snowing now.正在下雪
-- It has snowed today. 今天到目前為止已經下過雪了
+- It has snowed today. 今天已經下過雪了。(有沒有繼續下，不知道)
+- It has snowed for two hours.已經下了2個小時的雪了，現在還在下雪中。
 
 - 過去式:以前做過的歷史記錄，但「現在沒有」。
 - 現在完成式: 
@@ -175,26 +202,14 @@ for + 一段時間，代表某個動作或狀態持續多久。
 - I have been to Japan before.我以前去過日本(經驗)
 - I have never seen this before.我以前從沒見過這個。(經驗)
 
----------------------------------
-
-## 經驗 次數
-```
-Have + 主詞 + been to + 地點 
-```
+## 來過的次數(time 可數名詞)
 - Have you been to this library before?（你以前來過這間圖書館嗎？）
-
-Been to：代表「去過某地（現在已經回來了）」。
-
-Been: 有「待過、存在、造訪」的意思， you have been 就是「你待過、你來過」的經驗。
-
-Have you gone to... 的意思是「你已經去了（而且現在人還在那裡、還沒回來）」
-
-### 來過的次數(time 可數名詞)
-簡答:Yes, I have.(是的，我來過)
+- 簡答:Yes, I have.(是的，我來過)
 
 英文的「一次」和「二次」有自己專屬的字，後面不需要加 time：
 - Yes, I've been here once.（有啊，我來過這裡1次了。）（不說 one times）
 - Yes, I've been here twice.（有啊，我來過這裡2次了。）（不說 two times）
+
 從三次開始，就直接用「數字 + times」
 - Yes, I've been here three times.（有啊，我來過這裡3次了。）
 - Yes, I've been here a few times. （有啊，我來過這裡幾次了。）

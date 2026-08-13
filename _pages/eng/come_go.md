@@ -68,6 +68,7 @@ to 的意思是「朝向、往……方向」，在這裡當作目的地的大�
 - Walk past the bank.走過銀行
 - Drive past the bank 開車經過銀行
 - Bea's boss walks past Bea's desk.
+- Do I need to drive past the zoo? 我需要开车经过动物园吗？
 
 ## home
 home 本身是副詞
@@ -289,6 +290,7 @@ Over = 跨過那段距離。
 - Kids,Mom will not [come home] [from] the hospital tonight. 
 - work from home 在家工作
 - I'll be at home between six o'clock and seven o'clock.(我在六点到七点之间会在家。)
+- Thanks for driving me home.
 
 ### go to + 地點
 「去公園」，因為公園是名詞（park），才需要加 to 變成 go to the park。

@@ -24,6 +24,11 @@ keywords: English
 - I waited at the airport in Miami for two hours.(過去等，但「現在」沒有等)
 - what did you say?你说了什么？
 
+## just 剛剛
+- what did you just eat? 剛才吃什麼
+- I just ate.（我剛吃飽。）
+- He just left.（他剛離開。）
+
 ## then
 - Look at this old photo!The kids were very young then.看这张旧照片！孩子们那时候非常年纪
 非當小。

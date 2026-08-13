@@ -58,3 +58,24 @@ get 在這裡有「變成、陷入」的意思（狀態的轉變)，「迷路」
 get + 形容詞 (lost)
 ```
 - I was fine at first, but then I got lost."（我本來很好，但後來（不小心）迷路了。）
+
+## get 進到交通工具
+get 來表示「進到那裡...」或「進到...某個位置」
+
+### 上車下車
+in的相反動作是out，為什麼用in？因為車很小不能站，所以是進到車子「裡面」in，從車子裡面出來，用out of。
+- get in the car.
+- get out of the car.
+
+### 火車/巴士/飛機 
+on的相反動作是off，為什麼用on？因為火車飛機巴士可以站，所以用on。
+- get on the bus.(上車)
+- get off the bus.(下車)
+- get on the train.(上火車)
+- get off the train.(下火車)
+
+## get 進到排隊的隊伍裡面
+- get in line. 進到「隊伍裡面」 
+  - in line. line是隊伍(名詞)，in介系統就是在...裡面，介系詞片語，意思是「在隊伍裡面」
+
+## get in bed（上床睡覺 / 進到被窩裡）

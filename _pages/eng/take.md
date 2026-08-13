@@ -24,7 +24,7 @@ Take 東西 to 人/地點
 - He took the book to his friend.（他把書拿給他的朋友。）
 - Take your umbrella.（把你的傘帶走。）
 
-## 載人去某地
+## Take 人 to 某地 載人去某地
 ```
 Take 人 to 某地
 ```
@@ -35,6 +35,11 @@ Take 人 to 某地
 - Can you take the boys to the park?你可以带男孩们去公园吗？
 - My mom took me to a birthday party last weekend.我的妈妈上周末带我去了一个生日聚会。
 - My grandma took me to school every morning.我的奶奶每天早上送我去学校。
+
+## drive 人 to 某地 載人去某地
+- Thanks for driving me home.(謝謝載我回家)home副詞本身自帶方向to，所以不用再加to
+- Can you drive me to the station?（你可以開車載我去車站嗎？）
+- He drove her to work this morning.（他今天早上開車載她去上班。）
 
 ## take + 電梯 = 搭電梯
 - You can't take this elevator now.你現在不能搭這部電梯。

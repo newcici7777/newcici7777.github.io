@@ -36,30 +36,40 @@ before 放句子最後面
 - I have been to Japan before.我以前去過日本(經驗)
 - I have never seen this before.我以前從沒見過這個。(經驗)
 
-## after 連接詞
+## after 連接詞 在...之後
 ```
 [ 後做的事 ] + after + [ 先做的事 ]
 ```
 after 這個字永遠要貼著「先做的事(比較早發生的那件事)」。
 
+"after"（在...之後）這個字是貼在「哪一個動作」的前面
+
 - I ate dinner after I washed my hands.我洗完手之後吃了晚餐。
   - 翻譯先從after開始先翻
+- I checked my emails after I arrived at the office. 在我抵達辦公室之後，我才檢查了 email。
 
 如果很不好記，把After移到最前面，但後面要加上逗號。(比較符合中文的先後順序)
 - After I washed my hands, I ate dinner.在我洗完手之後，我吃了晚餐。
-- Let's go to a museum now. Sure,after I go to the restroom.我們去博物館吧！等我去完廁所之後。
+- Let's go to a museum now. Sure,after I go to the restroom.我們去博物館吧！在我去完廁所之後。
 
 ## after(介系詞) + 名詞
 ```
 [ 後做的事 ] + after + 先做的事(某個活動、時間點）
 ```
+當 after 是介系詞時，後面必須接一個名詞、代名詞或動名詞（V-ing），表示「在某個事物或動作之後」。
+
 翻譯先從after開始先翻
 - We played many games after the show last night.昨天表演結束後(1)，我們玩了很多遊戲(2)
 - I brush my teeth after breakfast.吃完早餐後(1)，我刷牙(2)。
+- I wash my hands after eating.（我吃完飯後會洗手。——接動名詞 V-ing）
+- Please call me after work.（下班後請打給我。）
 
 
 ## after 後來(副詞)
+有時候 after 不接任何東西，直接當作副詞使用，通常放在句尾，意思是「後來、以後」。
+
 after放在句子最後面
+- They left and never came back after.（他們離開了，後來就再也沒有回來。）
 - She left, and I went to sleep after.她離開了，我後來去睡覺。
 
 ## 一般動詞 + after + 事情
@@ -68,10 +78,23 @@ after 就是「先後順序」
 - Let's talk after class. talk這個動作，發生在下課之後after class。
 - I will call you after work.我下班後打給你。 打電話call這個動作，發生在after work下班之後。
 
-
 ## 前天 後天
 - I'll be too busy the day after tomorrow.
 - where will Duo be the day after tomorrow?
 - I called Bob the day before yesterday.
 
+## 過去完成式
+當 after 當作連接詞，引導兩個發生在過去的動作時，英文有一個很重要的時態觀念：「先發生、比較早完成的動作，要用過去完成式 (had + V3)；後發生的動作，用簡單過去式」。
 
+標準文法句型：
+- After the rain had stopped, we went out for a walk. （雨停了之後，我們出去散步。）
+  - 💡 解析：因為「雨停」發生在「出去散步」之前，所以雨停用過去完成式 had stopped，後面出去用簡單過去式 went。
+
+現代口語簡化： 在日常對話中，如果時間先後順序已經很明確（有 after 這個字清楚指引），兩邊直接都用簡單過去式也很常見：
+- After I finished dinner, I watched TV.（吃完晚餐後我看電視。）
+
+## 其它
+- After all（畢竟、終究 / 歸根究底）
+  - Don't be too hard on him; he's a child after all.（別對他太嚴格，他畢竟是個孩子。）
+- Day after day（日復一日）
+  - She practices speaking English day after day.（她日復一日地練習說英文。）

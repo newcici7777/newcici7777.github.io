@@ -29,9 +29,33 @@ work（動詞：工作）+ 地點
 - Is Anna working for two different companies ?
 - Ben works [for] a good company.(本为一家很好的公司工作。)  
 
+## in the ... business
+```
+in the 行業名 business / industry
+```
+當我們要表達一個人「在某個行業、領域或事業中工作」時，固定會使用介系詞 "in"。
+
+餐飲與零售業 (Food & Retail)
+- in the food business（在餐飲／食品業）
+- in the restaurant business（在餐廳業）
+- in the retail business（在零售業）
+
+娛樂與時尚業
+- in the movie / film business（在電影界）
+- in the music business（在音樂界）
+- in the fashion business（在時尚圈）
+
+科技與金融業 (Tech & Finance)
+- in the tech industry（在科技業）
+- in the financial business（在金融業）
+
 ## work in 產業
-- Is she in the food business ?她从事食品行业吗？
-- She wants to work in the travel business.。她想要从事旅游业。
+- She wants to work in the travel business.她想要從事旅遊業
+- He works in the tech industry as a developer.（他在科技業擔任開發人員。）
+
+## be + in 產業
+- Is she in the food business. 她是在餐飲業工作嗎？
+- She has been in the fashion business for over ten years.（她在時尚界工作超過十年了。）
 
 ## work from home 在家工作
 - Who will work from home next week?谁下周会在家工作？   

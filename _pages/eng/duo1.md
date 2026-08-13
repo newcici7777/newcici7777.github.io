@@ -110,10 +110,27 @@ as well 放在最後，意思是「也」
 - I was only gone for a week!
 - He was only seven years old then.他当时只有七岁。
 
-## just 剛剛/僅僅/只是
+## just
+### just 剛剛
 放在 be 動詞後面、 動詞前面
-- what did you just eat?
+- what did you just eat?你剛剛吃什麼
+
+### just 只是
+- It’s just a game.（這只是個遊戲嘛)
 - He's just practicing his English.(他只是在練習他的英文啦。)
+- I have just ten dollars.（我身上剛好／只有十塊錢。）
+- I just want to look around.（我只是想看看。）
+
+### just 正是/確實
+- That's just what I need.（這正是我需要的。）
+
+### just vs only
+修飾數字／數量（此時兩者最常替換）：
+- I have only one question. = I have just one question.（我只有一個問題。）
+
+修飾動詞或請求：
+- I just want to look around.（我只是想看看。）
+- I only want to look around.（我只想看看。）
 
 ## even 甚至
 even 副詞，even放在一般動詞前
@@ -199,6 +216,14 @@ Ving 為形容詞
 - I am from China.
 - Are you from America?
 - I am not from New York.我不是来自纽约。
+
+## thanks for
+```
+Thanks for + 名詞 / V-ing（謝謝你做……）
+```
+- Thanks for helping me.（謝謝你幫我。）
+- Thanks for driving me home.（謝謝你開車載我回家。）
+- Thanks for the tickets.(謝謝你的門票)
 
 ## 其它疑惑
 I draw things that I think are interesting or beautiful.

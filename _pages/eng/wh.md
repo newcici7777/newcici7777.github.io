@@ -64,8 +64,6 @@ What color is it? (範圍：色譜)
 What size do you need? (範圍：尺寸表)
 
 
-### What kind of 什麼種類的...
-- What kind of party do you want
 
 ## 疑問
 ```
