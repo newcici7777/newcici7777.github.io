@@ -103,5 +103,3 @@ by（極度貼近的距離），常用於表達情感上的陪伴。
 - by your side（在你的身邊）
   - Don't worry, I'll always be by your side.（別擔心，我會一直陪在你的身邊。）
 
-## 方式 + 地點 + 時間
-- Lin went by bus（方式） to work（地點） yesterday morning（時間）

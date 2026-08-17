@@ -148,8 +148,8 @@ already可放在一般動詞前面，be動詞後面，句尾。
   - 從以前到「現在還有」。
 
 ## since自從 vs in
-- I lived in Tapei **in** 2023.我在2023年住台北，但我現在沒住，in是固定某個時間點。
-- I have lived in Tapei **since** 2023.我從2023年、2024、2025、2026...直到「現在」，住在台北。
+- 過去式: I lived in Tapei **in** 2023.我在2023年住台北，但我現在沒住，in是固定某個時間點。
+- 現在完成式: I have lived in Tapei **since** 2023.我從2023年、2024、2025、2026...直到「現在」，住在台北。
 
 現在完成式（have lived）不能直接搭配一個「過去明確的時間點」（in 2023）。
 - ❌ 錯誤文法：I have lived in Tapei in 2023.
@@ -239,7 +239,7 @@ for + 一段時間，代表某個動作或狀態持續多久。
 
 ## 現在式問經驗
 - Is this your first time here? 
-用 Is this... 來詢問「目前的狀態」，this 是在指向「此時、此地、這個當下」的情況。
+用 Is this... 來詢問「目前的狀態」，「this」代表「這次的體驗」。
 
 重點在於此時此刻這個當下，是不是你的「第一次」（所以用現在簡單式）。
 
@@ -265,15 +265,4 @@ it代替「this」。
 - No, I've been here many times.
 - No, I've been here a few times.
 
-## How many times...現在完成式 詢問「總共去過幾次」（問經驗）
-- How many times have you been to Japan? （你總共去過日本幾次？）
-- How many times have you watched this movie? （這部電影你看了幾次？）
-- How many times have you been to this café? (你來過這家咖啡廳幾次？)
 
-### 回答
-- Once. 一次（不說 one time）
-- Twice. 兩次（不說 two times）
-- Three times.(記得time加s)
-- Many times.
-- A few times.(只有幾次)
-- Never.(從來沒有)
