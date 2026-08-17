@@ -34,6 +34,15 @@ keywords: give send show
   - read a story to the child
   - read the child a story
 
+|動詞|意思|範例 (Verb + 物 + to + 人)|
+|:---------|:---------|:---------------------|
+|hand|親手交給|She handed the letter to the cashier.（她把信親手交給收銀員。）|
+|tell|告訴|Don't tell the secret to anyone.（別把秘密告訴任何人。）|
+|teach|教導|He teaches English to kids.（他教小朋友英文。）|
+|write|寫信給|I wrote a letter to my teacher.（我寫了一封信給老師。）|
+|lend|借出|I lent my car to John.（我把車借給了約翰。）|
+|offer|主動提供|They offered a job to her.（他們提供了一份工作給她。）|
+
   
 ## give
 ### 人 + give + 人 + 物

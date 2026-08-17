@@ -25,7 +25,6 @@ keywords: English
 * I took a flight to London last week.(我上週搭飛機去了倫敦。)
 - I'm taking a flight to Japan.
 
-
 ### take a plane 搭飛機
 - I decided to take a plane instead of the train.我決定搭飛機而不是坐火車
 
@@ -48,6 +47,9 @@ by plane它通常作為副詞，補充說明你選擇了什麼樣的交通方式
 - 強調行程安排： I’m going to take a flight. (我會安排搭飛機。)
 - 強調目的地： I’m flying to the US. (我要飛去美國。)
 
+- Can we fly to the UK next week?
+- Can we take a flight to the UK?
+- Can we take a plane to the UK?
 
 ## by 交通/工具的畫面：透過...方式 / 搭乘
 當你要表達你「使用什麼工具」或「搭乘什麼交通工具」時，直接用 by。
@@ -87,3 +89,35 @@ by plane它通常作為副詞，補充說明你選擇了什麼樣的交通方式
 - I always take the train.我總是搭那班火車 
 - I travel on the train.
 - I go to school on foot.我走路上學
+
+## get on/ get off
+上車 / 下車的兩大邏輯（關鍵在於：能不能在裡面站立走動？）
+A. 大型的交通工具 → 用 get on / get off
+* 老外的大腦畫面： 這種車/船/飛機空間很大，你必須「踏上去（on）」，而且可以在裡面站立或走動。
+* 上車： get on
+* 下車： get off
+* 常見對象：
+* get on the bus（上公車）
+* get on the train（上火車）
+* get on the plane（上飛機）
+* get on the MRT（上捷運）
+* get on the boat（上船）
+
+## get in/ get out of
+B. 小型的交通工具 → 用 get in / get out of
+* 老外的大腦畫面： 這種車空間狹小，你無法在裡面站直，必須彎腰「塞進去（in）」這個封閉空間裡。
+* 上車： get in
+* 下車： get out of
+* 常見對象：
+* get in the car（上私家車 / 轎車）
+* get in the taxi（上計程車）
+* get in the Uber（上 Uber）
+
+
+- 能在裡面站著走動的大車 → get on the bus（上車）
+- 需要彎腰塞進去的小車 → get in the car（上車）
+
+|交通工具類型|上車 (Get ...)|下車 (Get ...)|老外的大腦視覺|
+|:-----------|:-----------|:-----------|:------------|
+|公車 / 火車 / 捷運 / 飛機|get on|get off|腳踩在平台上（on），可以在裡面走動。|
+|私家車 / 計程車 / Uber|get in|get out of|把身體彎曲塞進車廂空間（in）裡。|

@@ -3,16 +3,29 @@ title: Take
 date: 2026-08-03
 keywords: Take
 ---
+## 外帶
+問句
+- Do you want to eat dinner here or take it home?
+- Eat here or take out?
+- For here or to go?
+- Is that take out?
+
+回答
+- take out（外帶）外帶服務 / 外帶餐點
+- take it home（拿回家 / 帶回家） it：這份晚餐（dinner）
+  - 把這份食物（it）帶回家（home）
+- To go, please. 外帶
+
 ## 拿
 - She takes some pizza.她拿了一些披薩（去吃）。
 
+## get vs take
 Get ＝ 「去把東西帶回來」（從外往內拿）
 - Go get some pizza.（走，我們去把披薩買回來/拿過來享用。）
 - I need to get a coffee.”（我去買/弄一杯咖啡來喝。 👉 東西從外面進來）
 
 Take ＝ 「把東西帶走 / 拿走」（從內往外帶）
 - I’ll take the coffee to the office.（我把咖啡帶去辦公室。 👉 東西被你帶離開）
-- To go, please. 外帶
 
 ## Take 帶走
 ```

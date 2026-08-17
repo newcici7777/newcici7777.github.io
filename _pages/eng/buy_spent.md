@@ -29,19 +29,43 @@ ex:buy 買、make 做、cook 煮、get 拿
 Can I buy it for one hundred dollars.
  
 ## pay
+### Pay + TO + 店家(老闆)
+To錢「傳給」誰
+
+當你後面接的是「收錢的對象（人、公司、店家）」時，錢是從你的口袋「指向」對方的口袋，這是一個方向傳遞，所以用 to：
+* I paid 100 dollars to the driver.（我付了 100 塊給司機。）
+* You need to pay the rent to the landlord.（你必須把租金付給房東。）
+* I paid the bill to the company.（我把帳單費用付給那間公司。）
+
+### 人 pay 錢 for 人 (為了誰付錢)
+- He paid the bill for me.（他替我付了帳單）
+
+### Pay + FOR + 物品/服務（錢「換取」什麼）
+當你後面接的是「你買的東西、服務或費用」時，這是一種代價交換（為了這個東西而付錢），所以用 for：
+* I paid 100 dollars for the coffee.（我花了 100 塊買這杯咖啡。）
+* Who is going to pay for dinner?（今晚誰要付晚餐錢？）
+* I paid for the flight tickets.（我付了機票的錢。）
+
 ### 人 pay 錢 for 物
 - I paid 100 dollars for this book.（我為了這本書付了一百塊。）
-- You can pay for your drink[s] here.(你可以在這裡為你的飲料付錢，注意！此時飲料為可數名詞加s。)  
+- You can pay for your drink**s** here.(你可以在這裡為你的飲料付錢，注意！此時飲料為可數名詞加s。)  
 - I'm paying for the ride
 - I paid money for it.（我為這個付了錢。）
 
-### 人 pay 錢 for 人
-- He paid the bill for me.（他替我付了帳單）
+### 以上二者合併
+如果一句話裡面，你同時要把「付給誰」和「買了什麼」都講出來呢？
+老外會直接把這兩條規則組合在一起：
+Pay + 錢 + TO + 人 + FOR + 物
+實戰例句：
+* I paid $500 to the mechanic for fixing my car.（我付了 500 塊給技師（to），當作修車的費用（for）。）
+* She paid $10 to the clerk for the mug.（她付了 10 塊給店員（to），買了那個馬克杯（for）。）
+📝 終極一秒記憶卡
+* 付錢給誰（人 / 店家） → pay TO ...（方向遞過去）
+* 付錢買啥（物品 / 服務） → pay FOR ...（用錢去換）
 
 ## get 買
 - Do you want to get a tall bookcase or a short bookcase ?(你想要买一个高的书柜还是一个矮的书柜？)
 - Can we get tickets?(買機票)
-
 
 ## spend
 ### 人 + spend + 時間 + with 人
@@ -79,27 +103,45 @@ Can I buy it for one hundred dollars.
 - I spent money on a cake for you.
 - I spent 500 dollars on a cake for you.
 
-## take
-### 物 take 時間
+## take 「事情」花費多少「時間」
+主詞是「事情」，目的是達成這件事需要花多少「時間」。
+```
+[事情] take [時間]
+```
 - making breakfast [takes a long time].
 
 ### It + take + 人 + 時間 + to V  
 ```
-（主詞是 It，後面接 to V）
+It + take + 人 + 時間 + to V  
 ```
 - It takes me two hours to cook dinner.煮晚餐花了我兩個小時。
 - It took us three hours to drive there yesterday.我們昨天開車花了一個小時才到那裡
 - It takes me two hours to cook.
+- It takes 30 minutes to cook a meal.（煮一餐要花 30 分鐘。）
+- It takes two hours to finish the work.（這工作要花兩小時。）
 
-## cost
+3. Take（）
+* 主詞是「事情」，目的是達成這件事需要花多少「時間」。
+* 公式： 
+* 情境： 這件事像個黑洞，把我的時間「吞噬」了。
+* 例句：
+* It takes 30 minutes to cook a meal.（煮一餐要花 30 分鐘。）
+* It takes two hours to finish the work.（這工作要花兩小時。）
+
+
+## cost 「錢」花在「東西」身上
 ```
-某物 / 某事 + costs + 某人 + 金錢
+東西 + costs + (某人) + 金錢
 ```
 - This blouse costs fifty dollars
 - This cake costs 500 dollars.
 （這個蛋糕花了我 500 元
 - The new iPhone cost me a lot of money last year.
 （這支新 iPhone 去年花了我一大筆錢
+- A meal costs 20 dollars.（一餐花費 20 美元。）
+- ❌ 不能說：I cost 20 dollars for the meal.
+
+
 
 付出勞力、金錢、體力，都用for
 - buy（買）
@@ -117,3 +159,31 @@ Can I buy it for one hundred dollars.
 - find（尋找/幫忙找） 
   - Find a good job for him.  
   - Find him a good job.
+
+|動詞|意思|範例 (Verb + 物 + for + 人)|
+|:-------|:--------|:-------------------------|
+|cook|煮|I cooked a meal for my family.（我為家人煮了一頓飯。）|
+|cook/bake|烘焙/烤|She baked a cake for his birthday.（她為他的生日烤了蛋糕。）|
+|choose / pick|挑選|Pick a nice dress for yourself.（為你自己挑一件漂亮衣服。）|
+|find|尋找/幫忙找|Can you find a solution for us?（你能幫我們找到解決方案嗎？）|
+|order|點餐/訂購|I ordered pizza for everyone.（我幫大家點了披薩。）|
+|prepare|準備|He prepared lunch for the guests.（他為客人準備了午餐。）|
+|keep / save|留下/保留|Save a piece of pie for me!（留一塊派給我！）|
+
+
+2. Spend（人主動「花錢」或「花時間」）
+* 主詞是「人」，後面可以接「錢」或「時間」。
+* 公式： [人] spend [錢/時間] on [東西/事情]
+* 情境： 我主動把錢掏出來，或是把時間投資在上面。
+* 例句：
+* I spend 20 dollars on a meal.（我花 20 美元吃這一餐。）
+* I spend two hours on my English practice.（我花兩小時練英文。）
+
+
+4. Buy（購買這個動作）
+* 主詞是「人」，目的是獲得某樣東西。
+* 公式： [人] buy [東西] (for + 錢)
+* 情境： 我付錢，東西歸我。
+* 例句：
+* I buy a meal for 20 dollars.（我花 20 美元買了一餐。）
+🎯 總結對比表（記住「誰」是主詞！）

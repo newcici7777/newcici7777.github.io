@@ -99,6 +99,13 @@ little(原級) -> less(比較級) -> least(最高級)
 ### less 作為副詞修飾形容詞
 - This book is less interesting than that one.(這本書沒有那一本那麼有趣)
 
+## Bad Good 比較級/最高級
+
+|原形|比較級 (比兩者)|最高級 (全部裡最...)|
+|:-----|:---------|:------------|
+|Bad (壞)|Worse (更壞)|Worst (最壞)|
+|Good (好)|Better (更好)|Best (最好)|
+
 
 ## 比較級
 - The living room is bigger than the kitchen.
