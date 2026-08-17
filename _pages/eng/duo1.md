@@ -239,6 +239,22 @@ gone 是形容詞用來形容一種「不在、離去、離開了」的狀態。
 - All the pizza is gone.（披薩全被吃光了。）
 - All the cookies are gone. Who ate them all? （餅乾全被吃光了。到底是誰全部吃完的？）
 
+## with
+with 當成是一個「連結的橋樑」。
+
+你可以把 with 在這裡想像成 「指向」，當你遇到麻煩時，你用 with 指向那個讓你頭痛的根源。
+```
+I have a problem with + [讓你頭痛的人/事/物]
+```
+* Have a problem with my computer:這裡的 with 是為了連接「問題」和「電腦」，問題出在電腦上。
+
+當問題發生時，你用 "with" 來指明「對象」：
+* I have a problem with my boss.(我跟主管有問題/不合。)
+* She has a problem with her phone.(她的手機出問題了。)
+* They have a problem with the new software.(他們對這款新軟體有意見/覺得它不好用。)
+* I have a problem withmy internet connection.(我的網路連線出問題了。)
+
+
 
 ## 其它疑惑
 I draw things that I think are interesting or beautiful.

@@ -63,12 +63,53 @@ to 的意思是「朝向、往……方向」，在這裡當作目的地的大�
 ## get to 抵達
 - What time will you get to the office?（你幾點會到辦公室？）
 
-## Past（經過 / 走過去 — 擦身而過）
-移動動詞 + past
+## pass 傳遞
+* 例：Please pass the salt.（請遞給我鹽巴。——這是個動作。）
+
+## pass 經過(動詞)
+從旁邊經過(從旁邊繞過去，或是沿著路前進)
+```
+主詞 pass 人/地點/建築物
+```
+* 例：I pass the hospital every day.（我每天經過醫院。）
+
+❌ 錯誤範例：You need to walk pass
+walk跟pass都是動詞。
+
+
+## Past 介系詞 經過 / 走過去 — 擦身而過）
+```
+移動動詞 + past(介系詞) + 地點
+```
+* Past 在這裡是一個「介系詞」(Preposition)，用來告訴別人你「走」的動作是「經過」哪裡。
+
+* 想強調「走路」這個動作，後面就要接 past。
+* 想直接說「經過某處」，就單獨使用 pass。
+
 - Walk past the bank.走過銀行
 - Drive past the bank 開車經過銀行
 - Bea's boss walks past Bea's desk.
 - Do I need to drive past the zoo? 我需要开车经过动物园吗？
+
+```
+[動詞] + past + [地點] (描述經過某處)
+```
+這是導航時最常用的結構，強調「從旁邊經過」。
+1. Walk past the bank and turn left.(經過銀行然後左轉。)
+2. Drive past the hospital to get to the main road.(開車經過醫院就能到大馬路。)
+3. I run past the park every morning.(我每天早上都會跑過公園。)
+4. The bus goes past my apartment building.(公車會經過我家公寓大樓。)
+5. Please walk past the gate to find the reception.(請走過大門去尋找櫃台。)
+6. He walked past me without saying a word.(他從我身邊走過，一句話也沒說。)
+
+* Drive past...(開車經過...)
+* Drive past the supermarket.(開車經過那間超市。)
+* Run past...(跑步經過...)
+* I ran past him without saying hello.(我跑著經過他身邊，沒打招呼。)
+* Fly past...(飛過...)
+* The bird flew past my window.(那隻鳥飛過了我的窗戶。)
+* Walk past...(走路經過...)
+* You walk past the hospital.(走過那間醫院。)
 
 ## home
 home 本身是副詞

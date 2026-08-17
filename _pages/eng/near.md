@@ -150,13 +150,6 @@ beside 的核心意思是「在...旁邊（側邊）
 - Please finish the report by Friday. （請在週五前完成報告。）
 - I will be home by 10 PM. （我最晚 10 點前會到家。）
 
-## by 交通/工具的畫面：透過...方式 / 搭乘
-當你要表達你「使用什麼工具」或「搭乘什麼交通工具」時，直接用 by。
-
-注意！後面的交通工具不能加 a 或 the 喔！
-- I go to work by MRT / by bus. （我搭捷運/搭公車上班。）
-- We communicate by email. （我們透過電子郵件聯絡。）
-
 ## 被動
 由...所做（被動）
 
@@ -196,6 +189,37 @@ A 在 B 的後面，be動詞表達狀態
 - She walked behind me.她走在我後面。 走路 walk 這個動作發生在我身後
 - A lot of people are waiting behind you!很多人在我後面等。 等wait這個動作發生在我後面
 - Someone is standing behind you."（有人站在你後面。）站stand這個動作發生在我後面。
+
+```
+主詞 + be動詞 + behind + 地點
+```
+主角靜止在那裡。 (The bike isbehind the library.)
+
+```
+主詞 + 動作動詞 + behind + 地點
+```
+主角因為動作而停在那個位置。 (He leftthe bike behind the library.)
+
+這些句子裡有「動作動詞」（Left, Hiding），所以不需要 is 或 are！
+* 當你在「描述位置」（靜態）：The bike ISbehind the library. (腳踏車在圖書館後面。) → 這是我們前面學的模板。
+* 當你在「描述動作」（動態）：He LEFTthe bike behind the library. (他把腳踏車放在圖書館後面。) → 這裡 left 已經是動詞了，所以不需要加 is。
+
+He left his bike behind the library."
+* 主角：His bike (他的腳踏車)
+* 動作：Left (留下來/放著)
+* 在哪裡：Behind the library(在圖書館的「後方區域」)
+
+The children are hiding behind the big tree."
+* 主角：The children (孩子們)
+* 動作：Are hiding (正在躲藏)
+* 在哪裡：Behind the big tree(在大樹的「背後遮蔽區」)
+
+I left my keys behind the flower pot."
+* 主角：My keys (我的鑰匙)
+* 動作：Left (放著/忘了帶)
+* 在哪裡：Behind the flower pot(在花盆的「後方區域」)
+
+- She stood behind me in the queue.（她站在我後面的排隊隊伍中。）
 
 ## stop 地點
 - Because the road stops here. At the river.

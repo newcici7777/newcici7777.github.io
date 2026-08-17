@@ -47,9 +47,16 @@ a lot放最後
 - I don't like it very much.
 - I loved her very much.
 
-
 ## too much + 不可數名詞
 - Does he sleep too much?
+
+## How much + 不可數
+- How much ice creamdo you want? (你想要多少冰淇淋？)
+- How much food do we need to buy?
+food (食物) 在英文中是一個「不可數名詞」。就像水、空氣、金錢一樣，我們不會說 "one food", "two foods"（除非是在談論特殊的料理種類），所以我們用 much 來詢問總量。
+
+* How many scoops of ice cream?(你要幾球冰淇淋？)
+* How many ice cream cones?(你要幾個冰淇淋甜筒？)
 
 ## some
 some + 不可數  
@@ -102,3 +109,25 @@ some + 可數
 - I like pizza. pizza不可數，後面不加s
 - That's a lot of pizza.(沒加s)
 - She takes some pizza.她拿了一些披薩（去吃）。
+
+## 容器單位
+```
+[數字] + [容器單位] + of + [內容物]的結構。
+```
+* Twelve bags of chips(12 包洋芋片)
+* Twelve bottles of water(12 瓶水)
+* Twelve cups of coffee(12 杯咖啡)
+
+There are twelve bottles of waterin the fridge.(冰箱裡有 12 瓶水。)
+
+* Bags of crackers(袋裝餅乾) → 數袋子。
+* Boxes of cookies(盒裝餅乾) → 數盒子。
+* Cups of coffee(杯裝咖啡) → 數杯子。
+
+```
+[數字] + [容器單位(複數)] + of + [內容物]
+```
+* There are three bags of chipson the sofa.(沙發上有三包洋芋片。)
+* I bought four bags of riceat the store.(我在店裡買了四袋米。)
+
+

@@ -46,21 +46,6 @@ Take 人 to 某地
 - You shouldn't take the elevator during a fire.（火災時你不應該搭電梯。）
 
 
-## Take + 交通工具、大眾運輸
-### take the ...
-- Take the bus.公車有時間表的用the
-- Take the train. 火車有時間表的用the
- - I usually take the train to work.（我通常搭火車去上班。）
-- take the subway.搭地鐵有時間表用the
-
-### take a ...
-- take a plane 搭飛機
-  - I decided to take a plane instead of the train.我決定搭飛機而不是坐火車
-- Take a flight.搭飛機 更常用flight航班
-  - I'm taking a flight to Japan.
-- Take a taxi / an Uber（坐計程車 / 叫Uber）
-
-
 ## 拍照
 - Take a picture / photo（拍照）
 - They took lots of photos in Cambridge.他们在剑桥拍了许多照片。

@@ -40,6 +40,15 @@ pay a visit to 拜訪
 - to pay a visit to the dentist/museum 看牙醫／參觀博物館
 - The doctor paid a home visit to the elderly patient. （醫生對這位年邁的病人進行了出診拜訪。）
 
+## visit 去玩
+為什麼 "visit" 在這裡代表「去玩」？
+
+在英文中，visit除了單純的「拜訪（某人）」之外，更常用來表示「前往（某個地點/城市/國家）進行旅遊或觀光」。
+
+* We want to visit New York in January.這句話表達的就是你們想去紐約旅遊，而且是計畫在明年的一月份。
+* 語感："Visit" 比 "go to" 聽起來更有一種「去當地觀光、體驗」的意味，而不僅僅是「到達」那個點。
+
+
 ## journey(名詞) to...（去……的漫長旅程 / 歷程）
 - The long journey to the summit was exhausting but worth. （那趟通往山頂的漫長旅程雖然令人精疲力竭，但非常值得。）
 - The train journey to the countryside offered breathtaking scenery. （那趟開往鄉村的火車之旅沿途風景美不勝收。）

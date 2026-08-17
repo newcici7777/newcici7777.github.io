@@ -3,54 +3,14 @@ title: 時間,星期,年/月/日,四季,
 date: 2026-07-28
 keywords: time, date, day
 ---
-## 問日期
-日期date 這個字的本意是「日曆上特定的那一天（特定日期）」，因為獨一無二的一天，所以用the date。
-
-問日期要用What，後面是be動詞，表達「現在是...?」  
-- What's the date?(今天是幾月幾號)
-- what's the date today?(今天是幾月幾號)
-  - 為什麼主詞不是 today 而是用 the date？因為語言習慣上，我們會把 "today" 當作時間副詞放在句尾
-- 回覆用 It 當主詞，代表問句的「the date」，不重覆說同樣的主詞。
-  - it's September sixth.(今天是九月六号。)
-  - Today is December eighth.
-- What's the date tomorrow?  
-- **What** is the date of his birthday?
-  - **March first** is his birthday.
-- What is the date of our next meeting?
-
-(例外)問生日、節日、某個事件的日期、出發日才可以用What形容詞 + 名詞date
-- ❌ 今天不能用what date is today?
-- **What date** is your birthday?
-- What date is the party? 派對是幾號？
-
-Be動詞問句
-- Is September tenth a holiday?(九月十号是一个假日吗？)
-- Is today feberary tenth?(今天是二月十号吗？)
-
-其它問日期方式
-- Do you know the date of our next meeting?
-
-日期回答: be + 日期
-- Tomorrow is october second.
-- March first is my son's birthday. 
-- it isn't May first, it's May second.
-
-## on + 日期
-- No, my birthday isn't on December tenth.(不，我的生日不是在十二月十号。)
-
-我不打算在我的生日去工作。  
-I am not going to work **on my birthday**.  
-
-## 問今天日期/今天星期幾
-- Is today August eleventh?
-- What's the date today?(今天是幾月幾號)
+## 今天星期幾
 - What day is today?(今天星期幾)
 - What day is it?(今天星期幾)it 代表今天
 
 ## 問星期 on 星期
 day 在問星期的語境下，指的是 Monday 到 Sunday 這 7 個名字在不斷循環。
 
-英文在詢問「種類、屬性」時，習慣把那個種類的單字（day）直接砸在 What 的後面，變成 What day...。
+英文在詢問「種類、屬性」時，習慣把那個種類的單字（day）直接放在 What 的後面，變成 What day...。
 
 當我們要問時間、顏色、星期這種「屬於哪一個範疇」的問題時，母語者的大腦制約就是 What + 種類 + is it...。
 
@@ -58,35 +18,50 @@ day 在問星期的語境下，指的是 Monday 到 Sunday 這 7 個名字在不
 - 問顏色：“What color is your car?”
 - 問名字：“What name did you choose?”（你選了什麼名字？）
 
+### 問禮拜幾
+```
+What day is it?
+What day is it 時間副詞today/tomorrow?
+```
 問星期的時候，What變成形容詞，後面要為名詞，不是動詞    
-- what **day** is it? Is **it** Saturday or Sunday?  
+- what **day** is it?  
+- What day is it tomorrow?明天屬於星期幾（哪種日子）呀？把 "tomorrow" 當作時間副詞放在句尾
 
-問明天是禮拜幾
-- What day is it tomorrow?明天屬於星期幾（哪種日子）呀？
+### be動詞問星期
+```
+Is it 星期?
+```
+- Is **it** Saturday or Sunday? 
+
+### on 星期(時間副詞)
 - I wash my clothes on Monday, but grandma washes her clothes on Tuesday.  
 - We're going to watch a baseball game on Thursday.
 - Is the game **on** Thursday? 比赛是在周四吗？ 
 - We clean our house on Sunday**s**. 每一個禮拜天後面加s，代表「每一個」禮拜天。 
 
-複合詞
+### 複合詞
 - on Friday morning.在周五早上  
 - on Monday morning.  
 - on Tuesday afternoon.
 - on Sunday afternoon.
 
-He will come home early on Sunday afternoon.他在周日下午会提早回家。  
+例句
+- He will come home early on Sunday afternoon.他在周日下午会提早回家。  
 
-## week周/weekday平日/weekend週末
+## week周/weekday平日/the weekend週末
 - A week 一周 (禮拜一至禮拜日)
 - Weekday 平日 (禮拜一至禮拜五)
-- Weekend 周末 (禮拜五晚上至禮拜日)
+- The weekend 周末 (禮拜五晚上至禮拜日)
 - this week：這週
 - during the week：在這段期間內（這週之內）
 
-week 通常指的是「一週」或「這星期／這週」。
+the week 通常指的是「一週」或「這星期／這週」。
 - We have many classes during the week?我們這週有很多堂課。
 
 ## 問一星期中的那一天
+```
+Which day of the week is ...?
+```
 - Which day of the week is usually the busiest at your restaurant?們餐廳通常星期幾最忙？
 
 ### week
@@ -124,7 +99,7 @@ weekday+s 代表每一個平日
 - Did your family play games on the weekend? Yes, we loved it!
 
 ## in 年/月/四季 上午下午晚上
-- The weather is nice here in the summer.季節前面要加上the
+- The weather is nice here in **the** summer.季節前面要加上the
 
 月份:
 - I am not going to study in August.  
@@ -135,7 +110,7 @@ weekday+s 代表每一個平日
 - in the evening 在晚上
 
 - We can meet at a cafe in the morning.   
-- In 1990,
+- In 1990. 年
 
 ## in 在多久時間...之後
 - In two hours.
@@ -144,7 +119,7 @@ weekday+s 代表每一個平日
 ## 問時間 at 時間
 What形容詞 + 不可數名詞time
 - What time will you finish work tonight?
-  - lusually finish work at 6 p.m.
+  - I usually finish work at 6 p.m.
 
 - it's one o'clock!(one 前面不加at)
 - Can we meet at 11 a.m.? 我们可以上午十一点见吗? 
@@ -209,3 +184,20 @@ past six.(丽莎平时在六点过二十分左右起床。)
   - She was in meetings all morning.她整個上午都在開會。
 - all day
   - Why were you at school all day yesterday? 地點（Place） ＋ 時間（Time）
+
+## At the age of 年紀(時間副詞)
+at的核心概念是「在某個精準的點」。
+
+當你把人的一生看作一條時間軸時，「5歲」就是這條軸上的其中一個精準時間點，所以要用 at the age of...。
+
+* At the age of ten(在十歲時)
+* At the age of twenty(在二十歲時
+
+* She learned to swim at the age of five.（她在五歲時學會游泳。）
+* (也可以簡寫成更口語的：She learned to swim at five.)
+
+## then
+過去或未來的某個特定時間點
+
+* Let's meet at 5 p.m.
+* Okay, see you then!(在那時候見。)

@@ -37,6 +37,15 @@ keywords: get
 ## 收到信
 - I never got your letters.
 
+* 正式說法：He received an email.（他收到了一封電子郵件。）
+* 口語說法：He gotan email.（他拿到/收到了一封信。）
+
+get 也常被用在各種「取得訊息或物品」的場合：
+* I gota message from my boss.(我收到老闆的訊息。)
+* Did you get my package?(你有收到我的包裹嗎？)
+* I got an error message on the screen.(我畫面上出現/收到了錯誤訊息。)
+
+
 ## on 考試
 - get an A on the test（在考試上拿 A）
 - do well on the exam（在考試中表現好）
