@@ -39,7 +39,7 @@ keywords: english, less
 - I'm sorry my English is the worst 我很抱歉，我的英文
 最糟糕。
 
-
+## 比較級單字
 - the youngest 最年輕
 - the fastest player
 - good, better, the best
@@ -52,3 +52,19 @@ keywords: english, less
 以下是規律，短的英文字母
 - nice, nicer, the nicist
 - safe, safer, the safest
+
+
+## than 主詞 動詞
+than 的身分其實是一個「連接詞」
+```
+than 主詞 動詞
+```
+- I am taller than you.
+  - 還原:I am taller than you are tall. （我比你高。）
+  - 英文覺得一直重複 tall 很囉嗦，所以把後面重複的 tall 省略掉了，就變成：
+  - I am taller than you are.（更口語一點，甚至連 are 都常被省略，只剩 than you。）
+
+- English is far easier than I thought.
+- It's harder than I expected.（比我預期的還要難）
+- She runs faster than he does.（她跑得比他快）
+

@@ -63,7 +63,4 @@ yesterday 在這裡它是當作形容詞性的名詞（Noun adjunct），放在c
 - The boy in black.（穿黑衣的男孩）
 - The woman in the red shirt?
 
-### next to
-- The seat next to me is empty. （我旁邊的位子是空著的。）
-- The restaurant next to the library is famous. （圖書館旁邊的那家餐廳很有名。）
 

@@ -148,12 +148,7 @@ take a tour（進行參觀）
 - She wants to take a bath.（她想要洗澡。）
 - He is having a bath right now.（他現在正在洗澡。）
 
-## about 大約
-- Lisa usually gets up at about twenty past six. 莉莎大約6點左右起床
-  - at介系詞 + about 大約(副詞) + six (時間)
-- I will be ready in about ten minutes.（我大約十分鐘後準備好)
-The price is around(about) one hundred dollars.（價格大約在一百美元左右
-- There are about fifty people here.（這裡有大約五十人)
+
 
 ## 其它
 - Take your place（各就各位 / 站到你的位置上）

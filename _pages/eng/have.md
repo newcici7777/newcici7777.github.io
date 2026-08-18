@@ -6,10 +6,11 @@ keywords: have
 have 的核心語感：「體驗、享受、容納」
 
 ## 吃
-We can have dinner.    
+- We can have dinner.    
+- Are you having dinner? 你在吃晚餐嗎？
 
 ## 吃藥
-have medison.  
+- have medison.  
 
 ## 喝
 - Do you want to have coffee with us?
@@ -24,8 +25,8 @@ have medison.
 - have a race（舉辦賽跑）
 
 ## 烤肉
-
-## 露營
+have 吃和活動或聚會搭配時，它代表的是「進行、享受、舉辦」的意思
+-  Are they having a barbecue? 他們正在烤肉嗎？／他們正在辦烤肉趴嗎？
 
 ## have 活動
 在英文中，have 是一個功能非常強大的「萬用動詞」。當它後面接某些名詞（特別是活動、對話、會議等）時，它代表的是「進行（某個動作或互動）」，而不是「擁有」。
@@ -43,6 +44,7 @@ have medison.
 
 - We won't have a meeting tomorrow morning.(我們明天早上不會開會 )  
 - What time do you want to have your party?
+
 
 ## 擁有
 - I [never have time] to make breakfast for you.我沒有時間。 

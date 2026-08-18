@@ -3,7 +3,13 @@ title: 最近 現在進行式 未來
 date: 2026-08-09
 keywords: be going to
 ---
-## be going to + 地點 (現在進行式)
+## 進行式
+- Bea is sitting on a bench in the park.
+- Zari is babysitting her neighbor,
+- Who are you writing to?
+- I'm waiting for my friend.
+
+## be going to + 地點 (馬上就要出發)
 這裡的be going是現在進行式，意思是「正在出發去」
 
 這裡的 "to" 是介係詞（後面接地方）， to 純粹是介係詞「朝向、去到」的意思。
@@ -16,20 +22,29 @@ keywords: be going to
 - I'm not going to the dance party tonight.
 - I'm going to a museum with my granddaughter now.
 
-## going next
-- Where are we going next?（我們接下來要去哪裡？）
+## 確定的近期未來計畫
+soon（不久、快要）： 這個字明確指出這件事是將來才會發生
 
-## 進行式
-- Bea is sitting on a bench in the park.
-- Zari is babysitting her neighbor,
-- Who are you writing to?
-- I'm waiting for my friend.
+只要看到 soon（不久）、tomorrow（明天）、tonight（今晚）、in two hours（兩小時後），它就等於幫你按了免責聲明：這件事還沒發生，是接下來要做的。
+
+- Ben is driving to Miami soon. 本（Ben）不久後就要開車去邁阿密了。
+- Ben is driving to Miami **tomorrow**.（明天要開車去 → 計劃）
+- Our flight is arriving in two hours.班機在2小時後抵達
+- We're getting on this train soon. 我們很快就要上這班火車了。
+- I am leaving tomorrow.（我明天要離開 → 行程已定。）
+- We are meeting them tonight.（我們今晚要跟他們見面 → 約好了。）
 
 ## 最近這段期間
 - What classes are you taking now?(你最近上什麼課)
 - He is working at the same college now! 他目前這段期間、最近這陣子在同一所大學工作！
 - She is asking about the job.（她最近在打聽這份工作的事。）
 - he's asking those questions to everyone in our class(代表這陣子、這幾天，他「正在對大家問這些問題」。)
+- Bea is visiting her dad.Bea「最近」去拜訪她。
+
+## 現在進行式表達「近期暫時的狀態」
+- I am staying with my friend this week.（我這星期暫時跟我朋友住在一起 → 不是永久的。）
+- He is working from home today.（他今天在家上班 → 今天的暫時安排。）
+
 
 ## is visiting 短暫拜訪
 現在分詞 visiting：當作形容詞時，專門用來形容「暫時停留、作客、交流」的人或事

@@ -3,14 +3,6 @@ title: talk, tell, say, speak
 date: 2026-07-29
 keywords: talk, tell, say, speak
 ---
-## about 關於、有關、涉及……的範圍或主題
-about有分類的意思，把限定範圍。
-
-- talk about weather（談論關於天氣的事）
-  - 把範圍縮小，談論天氣
-- a book about space（一本關於太空的書）
-  - 把書的範圍縮小，天空的書
-
 ## tell(及物)
 ### tell 及物動詞 + 事
 - Don't tell lies.

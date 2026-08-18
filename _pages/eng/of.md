@@ -50,12 +50,6 @@ to 後面接的是名詞/地方，它是介系詞，代表「通往……的 / �
 - The door to success（通往成功的大門——比喻成功之門）
 - The answer to the question（問題的答案）
 
-## 跟路相關的 to
-to 是一個介系詞，表示「通往……的方向 / 目標」  
-此處的to翻譯成通往...那裡「的」
-- That road to our village is long and busy.(到我们村子的那条路又长又繁忙。)
-- Do you know the way to the bus stop? 你知道去公車站的路嗎？
-- The way [to the bus stop]那條路（way）的終點或目的地是「公車站（the bus stop）」。
 
 ## 畫畫
 paint 是水彩畫 draw 是用鉛筆描寫  

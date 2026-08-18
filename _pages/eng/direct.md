@@ -202,11 +202,28 @@ from 從哪個基準點開始算起
 - Is the museum far away from here?（博物館離這裡很遠嗎？）
 
 ## the way 路徑 / 方式
-The road 是一個「具體的地理地標」（實體馬路、有車子會開）。
-
-The way 是一個「抽象的移動過程 / 路線」（你怎麼走過來的那個軌跡）。
+way 除了指「路」之外，更偏向抽象的「方向、路線、怎麼去的方式」。
 
 - Walk back the way you came.（沿著你原本來的那條路/方式走回去
+- I don't know the way to the beach .我不知道去海灘的『路線（怎麼走）』
+
+### 跟路相關的 to
+to 是一個介系詞，表示「通往……的方向 / 目標」  
+此處的to翻譯成通往...那裡「的」
+- Do you know the way to the bus stop? 你知道去公車站的路嗎？
+- The way to the bus stop那條路（way）的終點或目的地是「公車站（the bus stop）」。
+- That road to our village is long and busy.(到我们村子的那条路又长又繁忙。)
+
+road 指的是那條鋪好的實體馬路、柏油路。
+如果你用 road，通常是指具體的某條大道，例如：
+- This is the road to the beach.（這就是通往海灘的那條路／那條馬路。）
+- There are many cars on the road.（路上有很多車。）
+
+問路時（找方向）：
+- Can you show me the way to the station?（你可以告訴我去車站的路／怎麼走嗎？）
+講具體那條馬路時：
+- Is this the road to the station?（這條是去車站的那條馬路嗎？）
+
 
 ## 對面
 ### On the other side（在另一邊 / 對面）

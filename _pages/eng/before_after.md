@@ -17,6 +17,15 @@ before 這個字永遠要貼著「後做的事(比較晚發生的那件事)」
 如果很不好記，把Before移到最前面，但後面要加上逗號。(比較符合中文的先後順序)
 - Before I ate dinner, I wash my hands.吃飯之前，要洗手。
 
+## before 連接詞 後位修飾名詞
+- His life before he moved to the United States was very different.（他在搬去美國之前的生活非常不一樣。）
+  - 核心名詞： His life（他的人生／他的生活）
+  - 連接詞／引導詞： before（在……之前）
+  - 子句（補充說明）： he moved to the United States（他搬到美國）
+
+- I want to know about his life before he moved to the United States.（我想了解他在搬到美國之前的生活。）
+
+
 ## before(介系詞) + 名詞
 ```
 [ 先做的事 ] + before + 後做的事(某個活動、時間點）
@@ -101,15 +110,3 @@ after 就是「先後順序」
 - Day after day（日復一日）
   - She practices speaking English day after day.（她日復一日地練習說英文。）
 
-## next
-next 當作「順序副詞」使用，意思是「接下來、下一步」。
-- Where can we go next?
-- What should we do next?（我們接下來該做什麼？）
-- Next time, send an email! 形容詞
-- Who is next?（下一個是誰？）代名詞？
-
-## next(輪到誰) vs after(順序) vs behind(位置)
-- Who is next? I am next in line.誰是下一個？我是下一個。結帳、點餐 (輪到誰)
-- Who is after me? 誰在我後面 (排隊順序)
-- He is behind me in line. 他排在我後面(位置)
-- Three people are behind me. 有三個人排在我的後面(位置)

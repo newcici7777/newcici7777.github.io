@@ -112,9 +112,15 @@ weekday+s 代表每一個平日
 - We can meet at a cafe in the morning.   
 - In 1990. 年
 
-## in 在多久時間...之後
-- In two hours.
+## in + 時間長度 (在多久時間...之後)
+- In two hours. 2小時後
 
+## within + 時間長度 (在多久時間之內)
+- The flight will arrive within two hours. （班機將在兩小時之內抵達 → 可能是1小時、1.5小時，但確定不會超過2小時。）
+- Please finish the work within two hours. （請在兩小時內完成這份工作。）
+
+# in less than 時間長度 (不到x時間)
+- We will be there in less than two hours. （我們不到兩小時就會到那裡了。）
 
 ## 問時間 at 時間
 What形容詞 + 不可數名詞time
@@ -161,10 +167,6 @@ What形容詞 + 不可數名詞time
 - Let's meet at the restaurant at about half past eight.
 - It's a quarter to one.
 
-## about 大約
-- Do you usually eat dinner at about half past five?(你平时在五点半左右吃晚饭吗？)
-- Lisa usually gets up at about twenty
-past six.(丽莎平时在六点过二十分左右起床。)
 
 ## until
 - my French course won't begin until February eleventh!
@@ -174,8 +176,6 @@ past six.(丽莎平时在六点过二十分左右起床。)
 
 ## at the end of
 - Our kids will start school at the end of August.(我们的孩子们会在八月底开学。)
-
-
 
 ## At the age of 年紀(時間副詞)
 at的核心概念是「在某個精準的點」。

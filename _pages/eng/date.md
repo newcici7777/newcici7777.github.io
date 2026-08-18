@@ -1,5 +1,5 @@
 ---
-title: date
+title: the date
 date: 2026-08-17
 keywords: english, date
 ---

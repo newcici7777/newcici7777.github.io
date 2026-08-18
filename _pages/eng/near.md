@@ -116,15 +116,6 @@ Far（遠的）➔ 常用在「否定句」與「疑問句」
 |遠 (Far)|It is far from my house.|離我家很遠（從我家出發要拉好遠的距離 ←）。|
 
 
-## next to 緊鄰著
-兩棟房子緊緊相連，或是兩個人並排坐著。
-- My house is next to the store.在超商隔壁。
-- That flower garden is next to my house.
-- He is sitting next to you!他坐在我隔壁。
-- There is a refrigerator next to the swimming pool.
-- Let's put this plant next to the window.(咱们把这个植物放在窗户旁边吧。)
-- The kitchen is next to the dining room.
-
 ## beside 在旁邊
 一個人站在另一個人的身側，或是某個風景在另一個物體的旁邊  
 beside 的核心意思是「在...旁邊（側邊）

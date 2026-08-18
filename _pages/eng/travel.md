@@ -90,7 +90,7 @@ travel是動詞
 
 ## 機票
 - I want to get a ticket.
-- Can I have a ticket to London.
+- Can I have a ticket **to** London.
 - Do you want a one-way ticket or a round-trip ticket?
 - Do you want a one-way ticket or a return ticket?
 - Are you looking for where the ticket is?

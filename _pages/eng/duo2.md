@@ -117,6 +117,13 @@ eyes are very small.
 - Why do you think that he wants...(為什麼你覺得他想要……？)
 - Why do you think he wants...(為什麼你覺得他想要……？)
 
+## thought 認為
+用 thought（過去式） 而不是 think（現在式），是因為「覺得很難」的那個時刻已經過去了。
+
+因為「想像」這件事發生在過去，所以要用過去式 thought。
+- English is far easier than I thought. 
+- It's cheaper than I thought.（比我想像的還要便宜 → 以為很貴，結果結帳時發現很便宜。）
+- He is nicer than I thought.（他比我想像的還要好人 → 以為他很兇，接觸後發現人很好。）
 
 
 ## pair of + 單數動詞
@@ -187,25 +194,14 @@ Country > City > Town > the country > village
   - Taipei is a big and busy city.（台北是一個大而繁忙的城市。）
 
 
-## win
+## win(動詞)
 - You won the competition!
 - Mia won with a vanilla cake.米亞憑著一個香草蛋糕贏了比賽
   - 某人 + won + with + [武器 / 食譜 / 策略 / 方法]
+- I want to win! 
+- I want a win!（我想要一場勝利！）win變成一個名詞
 
-## ride
-- I paid for the ride.我付了車資 / 我付了這趟車的錢
-  - pay for + 名詞（為……付錢）。呼應我們前面討論過的 pay ... for ...，這裡的 ride 就是那個被購買的「搭乘服務」。
-- get a ride home 搭別人的便車回家
-- Have a ride（去搭車、兜風、搭乘一次）
-  - Do you want to have a ride with us?（你想跟我們一起去兜風/搭便車嗎？）
-  - He offered to have a ride on his new motorcycle.（他主動說要讓我試乘他的新機車。）
 
-Ride 則強調「騎乘」或是「坐在上面隨之移動」的動作
-- ride a bike
-- ride a motorcycle
-- ride a horse
-- ride the roller coaster 坐雲霄飛車
-  - do you want to ride the roller coaster or not?
 
 
 ## hall 走廊

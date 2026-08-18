@@ -101,11 +101,15 @@ How long + be 動詞 + [實體名詞] ...?
 - 問： How long is the movie? (這部電影有多長？)
 - 答： Two hours. (兩小時。)
 
-## How long does it takes to 花多久時間
+## How long does it takes to 原形動詞 (花多久時間)
+詢問一件事情「花了多少時間」，或是從 A 點到 B 點「耗時多久」。
 如果是問「做某個動作需要花費多少時間」，可以用 It takes 來回答：
 ```
 How long does it take to ....?
 ```
 - 問： How long does it take to get there? (去那裡要花多久時間？)
 - 答： It takes about 30 minutes. (大約花 30 分鐘。)
+
+- How long does it take to get to the hotel?（去飯店要花多久時間？）
+  - It takes about 10 minutes.（大話要花大約 10 分鐘。）
 
