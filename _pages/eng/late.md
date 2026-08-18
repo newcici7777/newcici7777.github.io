@@ -103,3 +103,30 @@ later（形容詞）＝ 後續的、更晚的
 
 - late class ＝ 遲開的課（或很晚的課）
 - later class ＝ 後續的下一堂課
+
+--------------------------------
+
+## late 副詞
+副詞放在句尾  
+- Adults go to bed late.  
+- This bus is always late.
+- The bus was late. 公車遲到了。
+
+## 數字 + 單位 + late
+```
+數字 + 單位 + late
+```
+- The bus was ten minutes late yesterday morning.公車遲到了**十分鐘**。
+
+## 數字單位 ＋ 形容詞
+
+「具體的多寡（數字＋單位）」永遠是拿來修飾形容詞的，所以要乖乖排在形容詞的前面。
+
+- 20 years old 多老？20歲那麼老。
+- ten minutes late  多晚？10分鐘那麼晚（遲到）。
+
+- I am **20 years** old. 我20歲.數字單位放在形容詞 old 前面
+- He is **6 feet** tall.數字單位放在形容詞 tall 前面
+- The river is **3 meters** deep.這條河有3公尺深。數字單位放在形容詞 deep 前面
+- The road is **2 miles** long. 這條路有2英哩長,數字單位放在形容詞 long 前面
+- The bus was ten minutes early yesterday morning.昨天早上公車早到了十分鐘。

@@ -175,15 +175,7 @@ past six.(丽莎平时在六点过二十分左右起床。)
 ## at the end of
 - Our kids will start school at the end of August.(我们的孩子们会在八月底开学。)
 
-## all + 時間名詞
-- All afternoon：整個下午
-  - I studied all afternoon yesterday.
-- All night一整晚 / 徹夜
-  - He stayed up all night playing games.他通宵一整晚打遊戲。
-- All morning：整個上午
-  - She was in meetings all morning.她整個上午都在開會。
-- all day
-  - Why were you at school all day yesterday? 地點（Place） ＋ 時間（Time）
+
 
 ## At the age of 年紀(時間副詞)
 at的核心概念是「在某個精準的點」。

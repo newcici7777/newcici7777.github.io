@@ -3,11 +3,15 @@ title: 上班下班 相關
 date: 2026-08-09
 keywords: English
 ---
-## at work(名詞)
+## at work(名詞) 在工作時
 work是抽象名詞，不可數名詞，前面不加a 或the
 - at work(在工作 / 在上班）
   - Eddy is at work.
   - I can't talk right now, I'm at work.（我現在不能講話，我在上班。）
+
+- Do you use **the internet** at work?你们在工作时用网络吗？
+- They speak Chinese at work.
+- Do you use your new computer at work?你在工作时用你的新电脑吗？
 
 ## I'm going to work(名詞). 我要去上班了。
 這裡的 work 不是動詞，它是名詞（工作地點/上班這件事）。
@@ -23,16 +27,28 @@ work是抽象名詞，不可數名詞，前面不加a 或the
 - I'm going to work. 上班
 - I am not going to work on my birthday. 
 
+## for work(名詞)
+- My parents often fly to London for work. 我的父母经常飞去伦敦工作。
+
+### work(動詞) + on 日期 在某個日期工作或不工作
+- I don't work on Sundays.
+
 ## work(動詞) + 地點 在那裡工作？
-```
-work（動詞：工作）+ 地點
-```
+### work(動詞) at a 工作建築
+- I work at **a** restaurant!我在一家餐廳工作 不能用the
+- I work at **a** hospital.
+- Do you teach English at **a** university.你在一个大学教英语吗？
+- They work together at **a** bank.他们一起在一家银行工作。
+
+### work downtown
 - Do you work downtown? downtown（副詞：在市中心）
+
+
+## work in 大地方
+- Do you work in New York?
 - I worked in Oxford for two years.我在牛津工作了两年。
 - He worked in Scotland for a year. 他在苏格兰工作了一年。
 
-## work(動詞) + on 日期 在某個日期工作或不工作
-- I don't work on Sundays.
 
 ## work for 人/公司 (為誰工作)
 - Is Anna working for two different companies ?
@@ -75,6 +91,8 @@ in the 行業名 business / industry
 
 ## work with 一起工作
 - Do you like working with him?
+- I work with Ben.我跟本一起工作。
+- Do you work with Anna?你跟Anna一起工作嗎
 
 ## finish work 下班
 - Emma usually finishes work at half past eight.

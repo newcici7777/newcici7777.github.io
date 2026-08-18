@@ -33,14 +33,6 @@ each 後面只能接「單數可數名詞」，each 的意思是「每一個」�
 - each glass of water（每一杯水）
 - each piece of information（每一則資訊）
 
-
-## all 代名詞
-- I know all the roads in this citv.
-- This phone knows all the roads in every city.
-- And I want all my friends to come!
-- We need to invite them all now!
-
-
 ## 不定代名詞
 以 -thing、-body 或 -one 結尾的字（例如 anything, nothing, somebody, everyone）
 
@@ -60,3 +52,4 @@ something 就是指「某樣東西」，當作名詞使用（當作動詞的受�
   - There is nothing wrong.（沒有什麼不對勁 / 沒事。）
 - Everything（每件事物）
   - I want everything ready by tomorrow.（我希望明天前每樣東西都準備好。）
+

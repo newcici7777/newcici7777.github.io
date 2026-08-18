@@ -25,10 +25,9 @@ keywords: be going to
 - Who are you writing to?
 - I'm waiting for my friend.
 
-## is asking
-表達「此時此刻正在做」或「最近這陣子正在進行」。
-用is asking代表持續進行。
-
+## 最近這段期間
+- What classes are you taking now?(你最近上什麼課)
+- He is working at the same college now! 他目前這段期間、最近這陣子在同一所大學工作！
 - She is asking about the job.（她最近在打聽這份工作的事。）
 - he's asking those questions to everyone in our class(代表這陣子、這幾天，他「正在對大家問這些問題」。)
 

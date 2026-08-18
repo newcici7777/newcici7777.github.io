@@ -108,3 +108,4 @@ How long does it take to ....?
 ```
 - 問： How long does it take to get there? (去那裡要花多久時間？)
 - 答： It takes about 30 minutes. (大約花 30 分鐘。)
+

@@ -16,11 +16,18 @@ a little + 比較級（older / taller / cheaper...）
 - Can you speak a little slower? → 你可以講得慢一點點嗎？
 
 ## 修飾「形容詞 / 副詞 / 比較級」（相當於中文的「一點點……」）
-- 文法： 後面直接接形容詞，用來表示程度輕微。
-例子：
+後面直接接形容詞，用來表示程度輕微，程度副詞
+
 - a little hot（有一點熱）
 - a little late（有一點遲到）
 - a little older（有一點點大 / 年長一點點）
+- I speak a little English.我说一点点英语。
+- I speak Chinese and a little English.我说中文和一点点英语。
+- Phil is a little shy. （菲爾有一點害羞。）
+- I am a little hungry.（我有一點餓)
+
+## not a little 一點也不
+- Phil is not a little shy. （菲爾一點也不害羞。）
 
 ## 修飾動詞 只能放最後面
 - Move forward a little.往前挪一點點 
@@ -44,8 +51,8 @@ a little + 比較級（older / taller / cheaper...）
 - a little of this water（這些水裡的一點點）
 - a little of the money （那筆錢裡的一點點）
 
-## a few of + the / this / my
-### a few + 可數名詞
+
+## a few + 可數名詞
 - 🍎  a few apples（幾顆蘋果）
 抽象、泛指概念上的「幾顆蘋果」。眼前沒有劃定哪一籃或哪一樹。
 
@@ -57,14 +64,28 @@ a little + 比較級（older / taller / cheaper...）
 - There are a few seats left.（還剩下幾個座位。
 - I have a few friends. → 我有幾個朋友。（單純描述事實，不需 of）
 
-
-### a few + the/this/my + 可數名詞
+## a few + the/this/my + 可數名詞
 後面必須有 my / the / these / us / them 等指定詞，代表「從這群特定的人事物之中」。
 - 👥 a few of my friends（我朋友中的幾個）
 - a few of my books （我的書裡的幾本）
 - A few of my friends like pop music. → 我的朋友裡面有幾個人喜歡流行樂。（從特定範圍裡挑，一定要 of）
 - A few of my friends are teachers.（我朋友中有幾位是老師。）
 - A few of them failed the test.（他們之中有幾個人考試沒過。）
+
+
+## fewer 比較級
+
+|級別|級別|翻譯|
+|:----|:----|:----|
+|原級|few|少許、幾乎沒有|
+|比較級|fewer|更少的|
+|最高級|the fewest|最少的|
+
+- There are fewer cars on the road today.（今天路上的車子比較少。）
+
+### fewer than + 可數名詞 不到
+- There are less than ten people in the room.（房間裡有不到十個人。）
+
 
 ## a little vs. a few
 
@@ -74,7 +95,7 @@ a little + 比較級（older / taller / cheaper...）
 |a few|可數名詞複數（能數的）|- a few seats（幾個座位）<br> - a few friends（幾個朋友）|
 
 
-## kind of
+## kind of + 可數/不可數名詞
 它的意思是「算是有點吧／好像是那樣／大概／某種程度上」，是用來軟化語氣，或是當你不想把話說得太死的時候用。老外口語常縮讀成 kinda。
 - kind of tired → 「算是有點累吧／好像有點累」
 

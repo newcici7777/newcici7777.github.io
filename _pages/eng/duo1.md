@@ -9,17 +9,17 @@ clothes/kloʊðz/ 衣服 不可數名詞
 
 ## on 球隊
 谁是在这个队里最快的运动员？  
-Who is the fastest player [on this team]?  
+Who is the fastest player **on this team**?  
 
 多儿在你的篮球队里吗？  
-Is Duo [on your basketball team]?  
+Is Duo **on your basketball team**?  
 
-She's not [on] this baseball team.
+She's not **on** this baseball team.
 
 ## play 玩 運動
 ### 玩  
 - Can we play your video game?  玩電動
-- Do you want to play tennis together [this Sunday]? 注意，有this，就不加on  
+- Do you want to play tennis together **this Sunday**? 注意，有this，就不加on  
 - The cat is playing with a tennis ball.猫在玩网球  
 
 ### 音樂家
@@ -47,32 +47,6 @@ Go + 以 -ing 結尾的戶外運動（通常是去某個地方進行的活動）
   - We went dancing last night.（我們昨晚去跳舞了。）
 - go camping去露營
 
-
-## late 副詞
-副詞放在句尾  
-- Adults go to bed late.  
-- This bus is always late.
-- The bus was late. 公車遲到了。
-
-## 數字 + 單位 + late
-```
-數字 + 單位 + late
-```
-- The bus was ten minutes late yesterday morning.公車遲到了[十分鐘]。
-
-## 數字單位 ＋ 形容詞
-
-「具體的多寡（數字＋單位）」永遠是拿來修飾形容詞的，所以要乖乖排在形容詞的前面。
-
-- 20 years old 多老？20歲那麼老。
-- ten minutes late  多晚？10分鐘那麼晚（遲到）。
-
-- I am [20 years] old. 我20歲.數字單位放在形容詞 old 前面
-- He is [6 feet] tall.數字單位放在形容詞 tall 前面
-- The river is [3 meters] deep.這條河有3公尺深。數字單位放在形容詞 deep 前面
-- The road is [2 miles] long. 這條路有2英哩長,數字單位放在形容詞 long 前面
-
-- The bus was ten minutes early yesterday morning.昨天早上公車早到了十分鐘。
 
 ## too
 too放在句子的最後面，前面(可加或不加)逗號
@@ -106,9 +80,87 @@ as well 放在最後，意思是「也」
 ## then 然後
 - It rained then snowed.(下雨然後下雪)
 
-## only 只是
-- I was only gone for a week!
+## only只有(限定詞) + 名詞
+量詞限定詞:交代數量，用來修飾名詞的多少
+- Only Anna joined the French club.只有安娜加入了法文社（沒有別人）。
+  - only 放在主詞 Anna 的前面，是用來修飾整個主詞，表示「除了安娜（Anna）之外，沒有其他人」加入了法文社。
+- Only adults are allowed here.（只有成年人才被允許進入。）
+- Only children can understand.（只有小孩懂。）
+
+## only(副詞) + 動詞 只是
+only 修飾動詞時：它放在動詞前面，是用來限定這個動作的範圍或程度
+- I was only gone for a week!我只是離開一個禮拜
+- Anna only joined the French club.安娜只是加入了法文社
+  - 僅僅是加入，沒做別的
+- She only wants to help.（她只是想幫忙。）
+
+## only(副詞) + 形容詞 只是
+only 是個副詞（Adverb），用來限定範圍，意思是「只有、僅僅」。
 - He was only seven years old then.他当时只有七岁。
+- The test was only a little difficult.（這個考試「僅僅」有一點難。）
+
+## the only 唯一
+放在名詞前面，意思是「僅有的、唯一的」，前面通常會加定冠詞 the。
+- You are the only person who understands me.（你是唯一懂我的人。）
+
+## only當「連接詞」只是
+跟but很像。
+- I would love to go, **only** I don't have enough time.（我很想去，**只是**我沒有足夠的時間。）
+
+## only + 冠詞(a/ an / the) + 名詞 (只是)
+表示「只有、僅僅」的副詞 only，絕對不能放在冠詞（a / an / the）的後面。
+- Don't worry, it's only a quiz. 這只是一個測驗
+
+像 such、quite、rather 這類具有修飾限定功能的詞，也都是必須站在冠詞 a 或 an 的前面：
+
+such：
+- 正確： It is such a nice day.（今天真是個好天氣。）
+- 錯誤： It is a such nice day. (X)
+quite：
+- 正確： She is quite a good player.（她是一個相當優秀的選手。）
+- 錯誤： She is a quite good player. (X)
+only（回到你的例子）：
+- 正確： It's only a quiz.（這只是一個小考。）
+- 錯誤： It's a only quiz. (X)
+
+## such
+such 是一個很好用但常常讓人混淆的字。它的核心意思是「這樣的」、「如此的」、「像這類的」。
+
+根據它在句子裡放的位置，主要有以下三種最常見的用法：
+## such + 冠詞(a/ an / the) + 名詞（「如此……的」）
+- It is such a beautiful day.（今天天氣真是如此美好。）
+- She is such a smart student.（她是一個如此聰明的學生。）
+
+## 用來指代前面提過的事物（「像這樣的……」）
+它可以當作代名詞或形容詞，意思是「這種人、這種事、這樣的情形」。
+- I have never seen such a big car.（我從沒見過這麼大的車。）
+- I hate such behavior.（我討厭這種行為。）
+
+## such ... that ... 句型（「如此……以至於……」）
+這是一個非常實用的高級句型，用來表達「某個狀況太誇張了，導致了後面的結果」。
+```
+such + 名詞片語 + that + 句子
+```
+- It was such a good movie that I watched it twice.（這實在是部好電影，以至於我看了一次又一次。）
+
+## soon
+- 詞性： 時間副詞（Adverb）
+- 核心意義： 「不久、很快、快要」。
+- 常見擺放位置：
+  - 副詞通常放在句子的最後面，作為時間的補充說明。
+    - Dinner will be ready soon.
+  - 動詞片語之間：有時也會放在助動詞與動詞之間
+    - He will soon arrive.
+- 意思是「不久的將來」，所以它經常跟未來式（will）或現在進行式搭檔出現。
+
+## Do you want to + 動詞 ... + soon?
+- Do you want to have dinner again soon?改天（不久後）一起吃晚餐
+  - 現在式
+  - want 為當下的意願／計畫 : 你現在心裡有沒有這個意願／想不想……？
+  - soon 不久之後，限定發生的時間點
+- Do you want to meet up soon?（你這陣子想找個時間碰面嗎？）
+- Do you want to watch a movie soon?（你最近想去看電影嗎？）
+
 
 ## just
 ### just 剛剛
@@ -147,7 +199,7 @@ be動詞後面放even
 
 
 ## 同位詞
-- Eddy and his friend [Oscar] are at an art museum.  
+- Eddy and his friend **Oscar** are at an art museum.  
   - friend = Oscar 二者相同。刪除his friend或刪除Oscar都不影嚮句意。
 - My friend, Lily, is coming with me!
   - friend = Lily 二者相同。刪除his friend或刪除Oscar都不影嚮句意。Lily前後有逗號
@@ -162,7 +214,7 @@ be動詞後面放even
 ## 感到
 Ving 為形容詞
 
-- That painting is boring.[東西]令人無聊 Ving
+- That painting is boring.**東西**令人無聊 Ving
 - This song is boring.
 - Is Japanese more interesting than French?日语比法语更有意思吗？
 - I found the book interesting.
@@ -198,14 +250,13 @@ Ving 為形容詞
 - I'm going to wave at her.
 - I saw you waving at me.
 
-## put
-- Now we can put it all together.
-- They put the flour, water, and salt together.
 
-## ready
+## be ready(形容詞) 準備好
+ready 是形容詞：它不能單獨當動詞用，前面一定要搭配 be 動詞（如 am, is, are, was, were，或是加上助動詞變成 will be）來形成完整的述語。
+
 - I want everything ready by tomorrow.（我希望明天前每樣東西都準備好。）
 - When will it be ready?
-
+- Dinner will be ready soon be ready.晚餐快要準備好了
 
 ## color 畫畫 動詞
 - My son loves to color.
@@ -245,7 +296,7 @@ with 當成是一個「連結的橋樑」。
 
 你可以把 with 在這裡想像成 「指向」，當你遇到麻煩時，你用 with 指向那個讓你頭痛的根源。
 ```
-I have a problem with + [讓你頭痛的人/事/物]
+I have a problem with + **讓你頭痛的人/事/物**
 ```
 * Have a problem with my computer:這裡的 with 是為了連接「問題」和「電腦」，問題出在電腦上。
 
@@ -254,6 +305,15 @@ I have a problem with + [讓你頭痛的人/事/物]
 * She has a problem with her phone.(她的手機出問題了。)
 * They have a problem with the new software.(他們對這款新軟體有意見/覺得它不好用。)
 * I have a problem withmy internet connection.(我的網路連線出問題了。)
+
+### 咖啡加牛奶
+```
+主要的飲料 with(加) milk/sugar
+```
+- How much is a cup of coffee with milk?一杯加牛奶的咖啡多少钱？
+- Coffee with sugar.
+- I would like a pizza with cheese, please.我想要一个加芝士的比萨，谢谢。
+- With milk?加牛奶？
 
 
 ## help me
@@ -280,9 +340,13 @@ help me + to + 原形動詞
 * Can you help me to fix this?（你能幫我修這個嗎？）
 
 
-## already
-- I already have a menu for you.
+## already 已經
+already 是個副詞（Adverb），用來表示某個動作或事情「早就」發生了、完成，或是比預期中還要早發生。
+
+- 現在式: I already have a menu for you.
   - 意思是：「我已經為你們準備好一份菜單了。」（或者「我這就拿一份菜單給你們。」）
+- 過去式: You already started the car.（你車子早就發動了
+  - 單純描述過去發生的一個動作，並強調「動作已經完成」這個事實或速度。
 
 
 ## 其它疑惑

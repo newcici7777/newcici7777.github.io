@@ -7,8 +7,6 @@ keywords: 其它
 She's a teenager.
 
 ## really
-
-
 ### 修飾動詞
 really 可以修飾動詞，但very不能修飾動詞。它可以表示「真的很...、確實很...」
 -  I really like this coffee.（我真的很喜歡這杯咖啡。）
@@ -58,11 +56,6 @@ excited用really,so修飾，不能使用very
 ### open 形容詞 closed 形容詞
 - the book store is open.
 - The museum [is open] [from] ten o'clock [to] five o'clock [on] Saturday, but it [is closed] [on] Sunday.
-
-
-## put
-- I'm going to put these boxes in the living room. After lunch, can you help me put the refrigerator in the kitchen?
-- Can you put this plant on the table?
 
 
 ## be + wearing 穿什麼衣服/穿什麼鞋子/戴什麼帽子
@@ -137,7 +130,7 @@ eyes are very small.
 如果拿掉pair of，就要用複數動詞
 - Are these glasses thirty dollars?
 
-## There are
+## There was
 - Was there an accident?這裡有發生意外嗎？
 
 ## crowded
@@ -154,6 +147,8 @@ crowded形容詞 + 名詞
 帳單
 - Can I have the check, please?
 - Ask for the check.（索取帳單）
+- This is not her check.This is my check.这不是她的账单。这是我的账单。
+
 
 支票
 - Pay by check.（用支票付款）
@@ -212,21 +207,6 @@ Ride 則強調「騎乘」或是「坐在上面隨之移動」的動作
 - ride the roller coaster 坐雲霄飛車
   - do you want to ride the roller coaster or not?
 
-## 量詞
-- Pizza（披薩）
-- Cake（蛋糕）
-- Bread（吐司 / 切片麵包）
-- Watermelon（切片西瓜）
-
-slices
-- How many slices of pizza did you take?你拿了幾片披薩？
-  - Just some slices.就幾片啦。
-- Did you finish the whole pizza?你把整大個披薩都吃完喔？
-  - No, I only ate a few slices.沒有啦，我只吃了幾片。
-
-Pieces（塊 / 片）
-- Do you want some cake?要吃蛋糕嗎？
-  - Yeah, give me two pieces.好啊，給我兩塊。
 
 ## hall 走廊
 - Is there a restroom at the end of the hall ? 走廊盡頭有洗手間嗎？
@@ -269,19 +249,9 @@ fall off + 掉落的地方
 ## be poor
 - Is her family poor?
 
-## That's 人
-- That's not her!用That 表示人
-
-## It's 人
-- It's you!
-- It's me, Marco!
 
 ## call
 - we can call and order a pizza!
-
-## for week
-- My parents often fly to London for work. 我的父母经常飞去伦敦工作。
-
 
 ## return from
 - Lucy returns from the bathroom.
@@ -322,4 +292,4 @@ fall off + 掉落的地方
 - One day, he decides to talk to her.
 
 
-1196
+1250

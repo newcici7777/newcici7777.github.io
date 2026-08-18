@@ -28,6 +28,15 @@ have medison.
 ## 露營
 
 ## have 活動
+在英文中，have 是一個功能非常強大的「萬用動詞」。當它後面接某些名詞（特別是活動、對話、會議等）時，它代表的是「進行（某個動作或互動）」，而不是「擁有」。
+
+英文習慣把許多動作包裝成名詞（如 conversation），然後用 have 來帶動這個動作。
+
+常見的固定搭配（Collocations）：
+- have a conversation = 進行對話 / 聊天
+- have a meeting = 開會
+- have a discussion = 進行討論
+- have a chat = 聊個天
 - Let's have a party
 - have a party.  
 - have a picnic.野餐  

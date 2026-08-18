@@ -75,6 +75,10 @@ Have you ever + V-ed?
 - I have never been rich.我从来没有富有过。
 - My sister has never worked.我的妹妹从来没有工作过。
 
+## (心理狀態)從來沒有 never
+- I have never loved you.我从来没有爱过你。
+
+
 ## 最高級 + ever
 - This is the best movie I have ever seen!這是我這輩子看過最好看的電影！
 - He is the nicest guy I have ever met.他是我遇到過最好的人了。
@@ -82,7 +86,9 @@ Have you ever + V-ed?
 ever不能配過去式:
 - ❌ Did you ever see that movie? 
 
-## 過去「動作」持續到「現在」 for 一段時間
+
+## 現在完成式 + for
+過去「動作」持續到「現在」 for 一段時間
 ```
 現在完成式 + for
 ```
@@ -97,6 +103,8 @@ ever不能配過去式:
 - I have watched TV for 3 hours. （我已經看電視看 3 個小時了。)
   - ➔ for 3 hours，動作從3小時前一直持續到現在，「現在」眼睛還盯著電視螢幕！
 - My friend has stayed in Korea for a long time.我的朋友在韩国待了很长时间了。(現在仍在韓國)
+- They have been together for twenty years.他们在一起二十年了。
+
 
 ## 一直想要做什麼,一直喜歡 alwas(一直)
 從過去持續到現在的『心理狀態』或『情感』
@@ -196,7 +204,7 @@ for + 一段時間，代表某個動作或狀態持續多久。
 - I haven't seen her in two years.這二年內沒有見過她
 - I haven't eaten meat in three years.(我三年沒吃肉了。)
 
-## 現在完成式 + 肯定句 只能用for
+### 現在完成式 + 肯定句 只能用for
 - ❌ 錯誤文法：I have talked to her in five years.
 - 正確: I have talked to her for five years.
 

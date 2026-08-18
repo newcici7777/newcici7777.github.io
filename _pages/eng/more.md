@@ -1,7 +1,7 @@
 ---
-title: more 比較 最高級
+title: more 
 date: 2026-07-29
-keywords: more , most
+keywords: english,more
 ---
 ## more 代名詞 更多
 - Can you tell me more? 跟我多講一點
@@ -58,6 +58,8 @@ more + 複數可數名詞
 ```
 more + 不可數名詞
 ```
+- More water?再来一些水嗎
+- More tea?再来一些茶吗
 - Give me more time, please.請給我更多時間。
 - I need more money.我需要更多錢。
 - You need to drink more water.你需要多喝點水。
@@ -80,73 +82,4 @@ more為更多
 - He is more careful.（他更小心了。）
 - She speaks English more fluently.(（她說英文說得更流利。)
 
-## less更少 + 不可數名詞
-little(原級) -> less(比較級) -> least(最高級)
-
-|級別|級別|翻譯|
-|:----|:----|:----|
-|原級|little|少許、幾乎沒有|
-|比較級|less|更少的|
-|最高級|the least|最少的|
-
-- I need less time to finish this.我需要較少的時間來完成這個。
-- John wants less noise.約翰想要少一點噪音。
-- It's usually less crowded if you go on a weekday.
-- You drink less tea.你喝更少茶。
-- I drink less juice.我喝更少的果汁
-- More or less. 更多还是更少？
-
-### less 作為副詞修飾形容詞
-- This book is less interesting than that one.(這本書沒有那一本那麼有趣)
-
-## Bad Good 比較級/最高級
-
-|原形|比較級 (比兩者)|最高級 (全部裡最...)|
-|:-----|:---------|:------------|
-|Bad (壞)|Worse (更壞)|Worst (最壞)|
-|Good (好)|Better (更好)|Best (最好)|
-
-
-## 比較級
-- The living room is bigger than the kitchen.
-- Are big cities better than small cities? 大城市比小城市更好吗？city要加複數
-
-
-## 最高級
-```
-主詞 be the 最高級形容詞 名詞 in 範圍
-```
-
-- It's the hottest day in August
-- Is March the hottest month?
-
-- Ben is the tallest boy in his family.
-- She's the tallest girl in my school.
-- This is the tallest and oldest roller coaster in the country.
-
-- Ben is the most important player. 
-- Which trip is the most exciting?
-- the most exciting part of that game. 那场比赛最令人兴奋的部分    
-- Which is the most expensive city in the US?在美国最贵的城市是哪个？ 
-- Is basketball the most difficult sport? 篮球是最难的运动吗？  
-
-- Which museum is the best in the city?哪个是在城市里最好的博物馆？  
-- Who is the worst player on the team? 谁是在队里最糟糕的运运动员？
-- This is the worst coffee shop in town!这是在镇上最糟糕的咖啡店！   
-- I'm sorry my English is the worst 我很抱歉，我的英文
-最糟糕。
-
-
-- the youngest 最年輕
-- the fastest player
-- good, better, the best
-- bad, worse, the worst
-
-字尾是子音+母音，後面的字母要重覆
-- thin, thinner, the thinnest
-- fat, fatter, the fattest
-
-以下是規律，短的英文字母
-- nice, nicer, the nicist
-- safe, safer, the safest
 

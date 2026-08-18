@@ -104,7 +104,16 @@ for 把「工具」和「食物」在一起，意思就完全包含「拿這個�
 
 ## for 預約時間 日期
 預約、安排時間（例如約時間開會、看醫生、訂位）時， for 理解成 「把……保留給」 或 「預定在……時刻」 
+
+### 訂位
 - I booked a table for two.（我訂了一個給兩個人坐的桌子。）
+- Welcome to our restaurant! A table for one?欢迎来到我们的餐厅。一张单人桌吗？
+- A table for two.一张两人桌
+- My wife and I need a table for two, please.我的妻子和我需要一张双人桌，谢谢。
+- We need a table for one.我们需要一张单人桌。
+
+
+### 預約時間
 - Can I make an appointment for nine? (我可以預約在九點嗎？)
 - Book a room for tonight.（預訂今晚的房間。）
 - Schedule a meeting for Monday.（把會議排在星期一。）

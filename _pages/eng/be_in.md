@@ -6,6 +6,8 @@ keywords: English
 ## 醫院
 hospital在這邊是抽象名詞，不可數，不可以加a跟the。
 
+當人們是去「參與它原本的功能、過那種生活」時，習慣不加定冠詞 the。
+
 - go to hospital
 - in hospital 住院中
   - My grandfather is in hospital with pneumonia.（我爺爺因肺炎住院中。）
