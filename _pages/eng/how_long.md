@@ -3,6 +3,9 @@ title: How long 多久
 date: 2026-08-17
 keywords: English, how long
 ---
+## long(形容詞) 久
+- Summer is long.
+
 ## 問每一次...多久？ How long ... each time?
 each time（每一次，副詞，修飾動詞)
 ```

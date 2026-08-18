@@ -3,16 +3,25 @@ title: Take by搭乘交通工具
 date: 2026-08-17
 keywords: English
 ---
-## Take + 交通工具、大眾運輸
+跟移動、前往有關的名詞，後面會加上 to 地點
+
+## Take + 交通工具、大眾運輸 to 地點
 - take a train / take a bus（搭火車／搭公車）
   - Let's take a bus.（我們去搭公車吧。）
 - Take the train. 火車有時間表的用the
  - I usually take the train to work.（我通常搭火車去上班。）
 - take the subway.搭地鐵有時間表用the
 
+- Ben took a taxi to this store this morning.
+- I took the subway to the bookstore last weekend.I never take a bus there.
+- Our dog always takes the bus **to the park**.我们的狗总是坐公交车去公园。
+
+
 ### take a 小車car
 - Take a car.
 - Take a taxi / an Uber（坐計程車 / 叫Uber）
+
+- How often do you take a taxi?你多久坐一次出租车？
 
 ## have a 交通工具
 如果你想表達「我們等一下有車要搭／我們有班次要趕」
@@ -20,6 +29,18 @@ keywords: English
 - We have a train to catch.（我們有火車要趕 → 雖然動詞用 catch，但意思是「我們有班火車得搭」。）
 - We have a train in ten minutes.（我們十分鐘後有一班火車要搭。）
 - We have a bus to catch.（我們有公車要趕。）
+
+## 機票
+跟移動、前往有關的名詞，後面會加上 to 地點  
+```
+ticket to 地點
+```
+- A ticket to Europe?
+- Can I have a ticket **to** London.
+- I want to get a ticket.
+- Do you want a one-way ticket or a round-trip ticket?
+- Do you want a one-way ticket or a return ticket?
+- Are you looking for where the ticket is?
 
 ## flight 航班、飛行行程、班次
 airplane（或 plane）指的是「實體機器
@@ -76,6 +97,16 @@ fly + to + 地點。
 ```
 - We want to fly to Japan next month. (我們下個月想飛去日本。)
 - I’m flying to Taipei for a meeting. (我要飛去台北開會。)
+- Do you want to fly to New York or Los Angeles?
+- I want to fly to Japan.
+- Now he's going to fly from London to Paris. He's travling a lot.现在他要从伦敦飞往巴黎。他经常旅行。
+- Dad flies to London every week.爸爸每周都飞去伦敦。
+- Ben often flies to Germany.本经常坐飞机去德国。
+- He often flies to the UK.他经常飞去英国。
+- Tom flew from New York to London. Tom从纽约飞到了伦敦
+- I flew from London to Oxford yesterday.我昨天从伦敦飞去了
+牛津。
+- I flew to London last Saturday.我上周六飞去了伦敦。
 
 
 ## By plane (強調「方式」：搭乘的工具)

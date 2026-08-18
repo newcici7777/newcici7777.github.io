@@ -13,8 +13,10 @@ keywords: english, much,many
 - How many slice**s** of pizza did you take?你拿了幾片披薩？
 
 ## much 當副詞
+much當副詞放在最後面。
 - I don't like it very much.
 - I loved her very much.
+- we don't talk much.
 
 ## too much + 不可數名詞
 - Does he sleep too much?
@@ -28,10 +30,10 @@ keywords: english, much,many
 - How much food do we need to buy?
 food (食物) 在英文中是一個「不可數名詞」。就像水、空氣、金錢一樣，我們不會說 "one food", "two foods"（除非是在談論特殊的料理種類），所以我們用 much 來詢問總量。
 
-* How many scoops of ice cream?(你要幾球冰淇淋？)
-* How many ice cream cones?(你要幾個冰淇淋甜筒？)
 
 ## How many + 可數容器名詞(加s)
+* How many scoops of ice cream?(你要幾球冰淇淋？)
+* How many ice cream cones?(你要幾個冰淇淋甜筒？)
 - How many bottles of milk do we have? 我們有幾瓶牛奶？
 因為瓶子是可數名詞，所以前面一定要搭配 How many，而且 bottles 要加 s（複數）。
 
@@ -44,6 +46,9 @@ food (食物) 在英文中是一個「不可數名詞」。就像水、空氣、
   - 👉 How many **bottles** of milk...?（有幾「瓶」牛奶？）
 - 只問總份量/總量（不可數）：
   - 👉 How much milk...?（有多少牛奶？）
+
+## 飲料/啤酒當可數 加s
+- Ben drank too **many** beer**s** last.本昨晚喝了大多啤酒。
 
 ## How many / How much + 有(hava/there is)
 

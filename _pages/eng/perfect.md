@@ -24,6 +24,7 @@ keywords: English,
 
 ## always + have been + 形容詞 (一直)
 - They have always been happy.他们一直都很开心。
+- Mom has always been so beautiful.妈妈一直都这么漂亮。
 
 ## been + to 去過（現在已經回來了）
 ```
@@ -74,10 +75,13 @@ Have you ever + V-ed?
   - 我從來沒去過日本，不代表一輩子不去日本。
 - I have never been rich.我从来没有富有过。
 - My sister has never worked.我的妹妹从来没有工作过。
+- I have never traveled in America.我從來沒去過美國
 
 ## (心理狀態)從來沒有 never
+- We have never been so happy.我們從來沒有這麼開心過(代表很開心)
 - I have never loved you.我从来没有爱过你。
-
+- They have never loved me.他们从来没有爱过我。
+- I have never been so tired.我從來沒那麼累過
 
 ## 最高級 + ever
 - This is the best movie I have ever seen!這是我這輩子看過最好看的電影！
@@ -89,9 +93,6 @@ ever不能配過去式:
 
 ## 現在完成式 + for
 過去「動作」持續到「現在」 for 一段時間
-```
-現在完成式 + for
-```
 - I have lived in Taipei for 3 years.我住在台北三年，我現在還住在台北。
   - 動作從過去，一直持續到「現在」
 
@@ -104,13 +105,22 @@ ever不能配過去式:
   - ➔ for 3 hours，動作從3小時前一直持續到現在，「現在」眼睛還盯著電視螢幕！
 - My friend has stayed in Korea for a long time.我的朋友在韩国待了很长时间了。(現在仍在韓國)
 - They have been together for twenty years.他们在一起二十年了。
-
+- We have worked here for ten years.我在這裡工作十年了
+- Ben has been a doctor for five week**s**.  Ben当医生已经五周了。
+- He has stayed in this hotel for three weeks.他在这家酒店住了三个星期了。
+- We have worked here for ten years.我们在这里工作了十年了。
+- Our Chinese teacher has worked at our school for three years.我们的中文老师在我们学校工作了三年了。
+- They have been together for twenty years.他们在一起二十年了。
+- She has traveled in Asia with her girlfriend.她跟她的女朋友一起在亚洲旅行过。
+- Emma has traveled to many cities in the UK.Emma去过英国的许多城市旅行。
+- I have worked at the same company for ten years.我在同样的公司工作了十年了。
 
 ## 一直想要做什麼,一直喜歡 alwas(一直)
 從過去持續到現在的『心理狀態』或『情感』
 
 「我一直想要做某事」時，代表「這個想法」在你的大腦裡從過去某個時間點開始，一直不間斷地持續進行到現在。
 
+- I have loved you for a long time. 我愛你很長時間了
 - I have always loved you.(我一直很愛你) 從以前到「現在」都很愛你。
 - I have always thought you.(我一直很想你) 從以前到「現在」都很想你。
 - I have always liked k-pop. (我一直很喜歡韓國流行音樂)
@@ -118,6 +128,10 @@ ever不能配過去式:
 - I have always loved this guitar.從以前到「現在」，一直喜歡這個吉它
 - My children have always loved chocolate.我的孩子们一直都爱巧克力。
 - Anna has always wanted a dog.從以前到「現在」都想要一隻狗。
+- I have always wanted a younger brother.弟弟
+- I have always wanted to live in Africa.我一直都想要住在非洲
+
+
 
 ## 現在完成式 just 剛剛
 - I have just eaten.(我剛剛吃過)

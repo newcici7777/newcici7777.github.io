@@ -98,9 +98,9 @@ for 把「工具」和「食物」在一起，意思就完全包含「拿這個�
 微細差別： 糖可能不一定會全部攪拌進去，而是作為旁邊配套的方糖或糖包搭著用（就像 coffee with milk 咖啡加牛奶）。
 
 
-
 ## for 目的
 - I need to buy lots of fruit for a party.
+
 
 ## for 預約時間 日期
 預約、安排時間（例如約時間開會、看醫生、訂位）時， for 理解成 「把……保留給」 或 「預定在……時刻」 
@@ -127,23 +127,7 @@ for 把「工具」和「食物」在一起，意思就完全包含「拿這個�
 - My video game is not for kids. (for 提供的對象)
 - Fun for you?Fun for us!
 
-## wait for
-```
-wait for + 人/物
-```
-- I can't wait!
-- wait for the bus.
-- I can't wait for my birthday party!
-- Can't wait for the trip!
-- I'm waiting for my friend.
-- Are you waiting for me at the gate?
 
-## 動詞 + for 一段時間
-- I waited for two hours.我等了兩個小時。
-- Wait for a second / minute.（等一下下。)
-- Priti sits for a minute.Priti 坐了一分鐘。
-- Can we talk for a moment?（我們可以聊一會兒嗎？）
-- I've been busy for weeks.（我已經忙了好幾個星期了。）
 
 ## for 一段時間
 - Is it raining today? It rained for six hours in Chicago yesterday!

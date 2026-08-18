@@ -3,6 +3,10 @@ title: buy, get, pay, spend, take, cost
 date: 2026-07-28
 keywords: buy, get, pay, spend, take, cost
 ---
+## be 錢
+- This hat is ten dollars and fifty cents.这顶帽子是十美元
+五十美分。
+
 ## buy
 ### 人 + buy + 物
 - She will buy a new car next week. 她下周会买一辆新车。 
@@ -68,19 +72,41 @@ Pay + 錢 + TO + 人 + FOR + 物
 - Do you want to get a tall bookcase or a short bookcase ?(你想要买一个高的书柜还是一个矮的书柜？)
 - Can we get tickets?(買機票)
 
-## spend
+## 人 spend
 主詞是「人」，後面可以接「錢」或「時間」。
 ```
 人 spend 時間 with 人 
 人 spend 時間 Ving
 人 spend [錢/時間] on [東西/事情] (for 人)
 ```
+
+### How much did you spend? 花多少錢
+- How much did you spend at the supermarket?你在超市花了
+多少钱？
+- How much did you spend at the bookstore?
+
+### 人 + spend + 錢 + on + 物
+- He never spends money on ice cream.他从不在冰淇淋上花钱。
+- I spent too much money on my cat!我在我的猫身上花了大多钱了！
+- I spent 100 dollars on this book.（我花了一百塊買這本書。）
+- I spent money on it.（我把錢花在這上面。）
+- I spent 500 dollars on a cake for you.
+- I spent money on a cake for you.
+- Why did you spend one hundred dollars on a picture of a cat?你为什么在一幅猫的画上花了一百美元？
+- Mom spent forty dollars at the supermarket.妈妈在超市花了四士
+美元。
+- I never spend money on games.我从来不在游戏上花钱。
+- Duo never spends money on language classes.不會花錢在語言課上
+- We spent a lot of money on dinner.我们在晚餐上花了许多钱。
+
+### 人 + spend + 錢 + on + 物 + for + 人
+- I spent a lot of money on clothes.我在衣服上花了很多錢。
+
 ### 人 + spend + 時間 + with 人
 - Ben spent the weekend with his family 
 - Ben spend time with his cat 
 - She spends a lot of time studying English.
 （她花很多時間讀英文。）
-
 
 ### 人 + spend + 時間 + 動作ing
 - I spent three hours **cleaning** my room.
@@ -91,26 +117,13 @@ Pay + 錢 + TO + 人 + FOR + 物
 - I spent two hours cooking dinner.
 （我花了兩個小時煮晚餐。）
 
-### 人 + spend + 錢 + 動作ing + for 人
-- I spent 500 dollars buying a cake for you.
-- I spent money buying a cake for you.
-（我花錢買了個蛋糕給你。）
-- He spent 100 dollars buying a book.
-
-### 人 + spend + 錢 + on + 物
-- I spent 100 dollars on this book.（我花了一百塊買這本書。）
-- I spent money on it.（我把錢花在這上面。）
-
 
 ### 人 + spend + 時間 + on + 物
 - I **spent** two hours **on** my homework.
 - He spent the whole weekend on his homework.
 （他整個週末都花在寫功課上。）
-### 人 + spend + 錢 + on + 物 + for + 人
-- I spent a lot of money on clothes.我在衣服上花了很多錢。
 
-- I spent money on a cake for you.
-- I spent 500 dollars on a cake for you.
+
 
 
 ## take 「事情」花費多少「時間」

@@ -45,6 +45,12 @@ in Taiwan.
 - There's a coffee shop on this street. 在这条街上有一个咖啡店。
 - Ary you on the third floor or the first floor?你在三层还是一层？
 
+## on the credit card 信用卡上
+- There are too many numbers on this credit card.在这张信用卡上有太多号码！
+
+## on TV
+- There are many interesting ads on TV.电视上有很多有意思的广告。
+
 ## at小地點
 - Oscar is at an art museum.
 - We can meet at a cafe.
@@ -63,6 +69,10 @@ street?
 ## leaves the table 離開桌子(離開位子)
 - Lucy leaves the table.
 
+## be + here/there 這裡/那裡
+- I'm here but I don't see him. Is he here? Can we call him?
+- she's not here now.
+
 ## inside
 咖啡店在楼的里面，不在外面。  
 The coffee shop is inside the building, not
@@ -71,6 +81,7 @@ outside.
 ## outside
 - It's too hot outside. It's the hottest day in August. I want to go home.
 - The swimming pool is outside.
+- It's hot outside.
 
 ## be動詞 + between A地 and B地 之間
 - between the coffee shop and the zoo (在咖啡店和动物园之间 )

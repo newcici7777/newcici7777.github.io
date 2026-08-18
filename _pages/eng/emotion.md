@@ -29,3 +29,12 @@ excited（興奮的、期待的） 這個字，習慣搭配的固定介系詞就
 
 ## afraid to 原形動詞 (害怕)
 - She is afraid to ask questions.（她害怕問問題。）
+
+## 令人 ... 感到
+- That painting is boring.**東西**令人無聊 Ving
+- This song is boring.
+- Is Japanese more interesting than French?日语比法语更有意思吗？
+- I found the book interesting.
+  - 形容詞interesting放在名詞the book後面，修飾前面的名詞
+- That is an interesting ad.那是一个有意思的广告。
+- Because I think fishing is boring too!

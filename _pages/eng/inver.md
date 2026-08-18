@@ -3,6 +3,11 @@ title: 倒裝句
 date: 2026-08-17
 keywords: English, inversion
 ---
+## Here is 在...這裡 (倒裝句)
+- Here's your ticket.(原句:Your ticket is here) 你的機票在這裡
+- Here you are. (給你)
+- Here you go. (給你)
+
 當主詞是「一般名詞」（例如：the bus, your coffee, the teacher）
 👉 強制倒裝！（動詞搬到主詞前面）
 * Here comes the bus. 🚌

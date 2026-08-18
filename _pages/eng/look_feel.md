@@ -37,6 +37,7 @@ keywords: look, see, watch, seem, feel, hear, listen to,
 動詞變成過去式，接 「原形動詞」 時，強調的是「目睹整個動作的發生過程或結果」
 
 - See（看到）
+  - Did you see my wife?I saw her in the morning.
   - I saw him cross the street.（我看到他過馬路。)
   - He sees Lin.
   - Lin sees her grandmother, Lucy, at the table.

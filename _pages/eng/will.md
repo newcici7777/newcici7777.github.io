@@ -11,6 +11,9 @@ keywords: english, will be
 ## 在那裡
 - 現在式: Where are you? 你在那裡?
 - 未來式: Where will you be? 你等一下會在那裡？
+- When will we get there? 我们什么时候会到
+那里？
+- will you be here tomorrow?你明天会在这里吗？
 
 ## 狀態
 - 現在式: I am at school.我在學校
@@ -39,3 +42,19 @@ keywords: english, will be
 
 ## will be 地點
 - The party will be at my house. （派對將會在我家辦。 ➜ be = 舉辦）
+
+例句:
+- They'll move to Japan next winter. 他们明年冬天会搬到日本。 
+- Will you buy a new car next month?  
+  - No, I won't. I'll move to a new city!不，我不会。我要搬到一个新城市！  
+- Anna won't get married next weekend. 安娜下周末不会结婚。 
+- Where will the dance party **be** this weekend(这个周末舞会会在哪里？)
+- Will you be my boyfriend?(你愿意做我的男朋友吗？)
+- OK, I won't be late for lunch!
+- Where will you be?
+- I'll be too busy **the day after tomorrow.**
+- Yes, I'll be your girlfriend!(是的，我要做你的女朋友)
+- We will be in Paris next month.
+- Where will Anna be tomorrow evening?
+- Where will the dance party be this weekend?
+- I won't be at school tomorrow.(我明天不会在学校。)

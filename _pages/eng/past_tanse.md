@@ -24,6 +24,10 @@ keywords: English
 - I waited at the airport in Miami for two hours.(過去等，但「現在」沒有等)
 - what did you say?你说了什么？
 
+## were/was 過去的狀態
+- Their family was rich, but they were not happy.他们的家庭以前很富有，但是以前他们不开心。
+- They were the best workers at this company.他们以前是在这家公司最好的员工。
+
 ## just 剛剛
 - what did you just eat? 剛才吃什麼
 - I just ate.（我剛吃飽。）

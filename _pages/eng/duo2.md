@@ -33,6 +33,7 @@ excited用really,so修飾，不能使用very
 - Do we need to invite him to the party?
 - I'm going to invite them to our house for dinner tonight.(我打算激请他们今晚来我家里吃晚饭。)
 - I want to invite one hundred people to my party.
+- did you invite me to go fishing because you want to talk more?
 
 ## meet 碰面
 - they want to meet us at the theater.
@@ -44,19 +45,29 @@ excited用really,so修飾，不能使用very
 见面了。
 - I met Anna in London last month.When did you meet her?
 
-## never
-- We never work on Friday**s**
-- First painting**s** are never good.
-- we nerver finish the school early
+
 
 ## open close closed(形容詞)
 ### open 動詞
+- The museum opened at five last weekend.博物馆上周末在五点开门的。
 - That new restaurant opens tonight!(那家新餐厅今晚开业！)
+- What time does the store open every day?
+- The shoe store opens at 10 a.m. every day.
+- What time does the bookstore open every morning?
+
+### close 動詞
+- Does the shoe store close at seven every day?鞋店每天都在七点关门吗？
+- What time does this restaurant close every weekend?这个餐厅每个周末都几点关门？
+- That famous restaurant closes at 8 p.m.那家有名的餐厅晚上八点关门。
+- That store closed early yesterday.那个商店昨天提早关门了。
+- The bookstore closed at half past five.书店在五点半关门的。
+
+
 
 ### open 形容詞 closed 形容詞
 - the book store is open.
-- The museum [is open] [from] ten o'clock [to] five o'clock [on] Saturday, but it [is closed] [on] Sunday.
-
+- The museum **is open** **from** ten o'clock **to** five o'clock **on** Saturday, but it **is closed** **on** Sunday.
+- Is the restaurant open?那家餐斤开门了吗？
 
 ## be + wearing 穿什麼衣服/穿什麼鞋子/戴什麼帽子
 - Is she wearing a red hat ?
@@ -141,13 +152,13 @@ eyes are very small.
 - Was there an accident?這裡有發生意外嗎？
 
 ## crowded
-[地方] + be動詞 + crowded
+**地方** + be動詞 + crowded
 - The MRT is crowded today.（捷運今天好擁擠。）
 
 crowded形容詞 + 名詞
 - Is New York a crowded city?
 
-擠滿crowded with + [人/事物]
+擠滿crowded with + **人/事物**
 - The street is crowded with people.（這條街擠滿了人。）
 
 ## check
@@ -177,6 +188,7 @@ Country > City > Town > the country > village
 
 - Country（國家）
   - How many countries have you visited?（你去過多少個國家？））
+  - Is France a country in Europe?法国是欧洲的一个国家吗？
 
 - The Country （鄉下、農村地區）
   - 鄉下涵蓋了無數個小村莊（villages）和農田
@@ -197,7 +209,7 @@ Country > City > Town > the country > village
 ## win(動詞)
 - You won the competition!
 - Mia won with a vanilla cake.米亞憑著一個香草蛋糕贏了比賽
-  - 某人 + won + with + [武器 / 食譜 / 策略 / 方法]
+  - 某人 + won + with + **武器 / 食譜 / 策略 / 方法**
 - I want to win! 
 - I want a win!（我想要一場勝利！）win變成一個名詞
 
@@ -263,29 +275,53 @@ fall off + 掉落的地方
 - fun adj.有趣的
 - funny adj. 好笑的
 
+## would like + 名詞 (想要)
+- I'd like a book, please.
+- I'd like a cup of tea!
+- Would you like a beer?你想要一瓶啤酒吗？
+  - 把不可數beer當成可數名詞，beer 前面有a
+
+## would like to 原形動詞 (想要做某事)
+- She would like to buy these clothes.她想要买这些衣服。
+- I would like to pay with cash.我想付现金。
+- Would you like to buy this dress?你想要买这条连衣裙吗？
+
+## together(副詞)
+- They have been together for twenty years.他们在一起二十年了。
+- Are you two still together?（你們兩個還在交往嗎？）
+
+### together修飾動詞（放在動詞後面，表示「一起做某事」）
+- We worked together on the project.（我們一起合作這個專案。）
+- Let's sing together.（我們一起唱歌吧。）
 
 
+## an add for 
+- We saw an ad for this clothes store.我们看到了一个这个服装店的广告。
+- Is this an ad for a restaurant?这是一个餐厅的广告吗？
+- I saw this ad yesterday.我昨天看到了这个
+广告。
+- an ad for this clothes store. 这个服装店的广告
+
+## catch 抓
+- And I can't catch any fish!
 
 
+## if
+- But I want to know if the painting is good.
 
 ## 無法分類
-- Ben is angry at us
-
-
-
+- Ben is angry at us.
 - France has beautiful mountains
 - You know she always saves the day in the end!你知道她最后总能挽救局面！
 - In the end, the hero saved the day. 最后，英雄挽救了局面。
 - I wonder which hero will save the day in the next movie!我想知道下一部电影里哪位英雄会力挽狂澜！
 - Why would anyone want to make a sequel?为什么会有人想要制作续集？
-  - sequel [ˈsiːkwəl] 續集
-- Summer is long.
+  - sequel **ˈsiːkwəl** 續集
+
 - We can finally be together!
 - Actually, I'm going to a museum with my granddaughter now.
 
 
-- Every day, he sees Lily drawing in the park.  
-- One day, he decides to talk to her.
 
 
-1250
+2254

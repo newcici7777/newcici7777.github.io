@@ -1,5 +1,5 @@
 ---
-title: 最近 現在進行式 未來
+title: 最近 現在進行式 近期未來計畫
 date: 2026-08-09
 keywords: be going to
 ---
@@ -8,6 +8,26 @@ keywords: be going to
 - Zari is babysitting her neighbor,
 - Who are you writing to?
 - I'm waiting for my friend.
+- Our company is having a meeting right now.我们的公司现在正在开会。
+
+## soon
+- 詞性： 時間副詞（Adverb）
+- 核心意義： 「不久、很快、快要」。
+- 常見擺放位置：
+  - 副詞通常放在句子的最後面，作為時間的補充說明。
+    - Dinner will be ready soon.
+  - 動詞片語之間：有時也會放在助動詞與動詞之間
+    - He will soon arrive.
+- 意思是「不久的將來」，所以它經常跟未來式（will）或現在進行式搭檔出現。
+
+## Do you want to + 動詞 ... + soon?
+- Do you want to have dinner again soon?改天（不久後）一起吃晚餐
+  - 現在式
+  - want 為當下的意願／計畫 : 你現在心裡有沒有這個意願／想不想……？
+  - soon 不久之後，限定發生的時間點
+- Do you want to meet up soon?（你這陣子想找個時間碰面嗎？）
+- Do you want to watch a movie soon?（你最近想去看電影嗎？）
+
 
 ## be going to + 地點 (馬上就要出發)
 這裡的be going是現在進行式，意思是「正在出發去」
@@ -77,18 +97,3 @@ visiting from 這個結構中，介系詞 from 的意思是「來自於……（
 - My visiting professor is from Japan.（我的客座教授來自日本——不是長期任教的。）
 - She is just a visiting student here.（她這裡只是一個交換生／短期參訪的學生。）
 
-## 未來
-- They'll move to Japan next winter. 他们明年冬天会搬到日本。 
-- Will you buy a new car next month?  
-  - No, I won't. I'll move to a new city!不，我不会。我要搬到一个新城市！  
-- Anna won't get married next weekend. 安娜下周末不会结婚。 
-- Where will the dance party **be** this weekend(这个周末舞会会在哪里？)
-- Will you be my boyfriend?(你愿意做我的男朋友吗？)
-- OK, I won't be late for lunch!
-- Where will you be?
-- I'll be too busy **the day after tomorrow.**
-- Yes, I'll be your girlfriend!(是的，我要做你的女朋友)
-- We will be in Paris next month.
-- Where will Anna be tomorrow evening?
-- Where will the dance party be this weekend?
-- I won't be at school tomorrow.(我明天不会在学校。)

@@ -71,6 +71,7 @@ that 幾乎可以用來替代 who 和 which。
 * The person who I saw→ The person that I saw(沒人會覺得你錯，反而聽起來很自然)
 * The book which I read→ The book that I read
 
+- Did you know that he was a doctor in France?
 
 ### 強調動作 Who/That。
 * The person who works here.(在這裡工作的那個人。)

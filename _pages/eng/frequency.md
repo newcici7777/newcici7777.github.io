@@ -12,6 +12,7 @@ How often（多常...）的問句，我們會把次數跟時間結合
   - I come here three times a week. (我一週來三次。)
 - How often do you go to the library? （你多常去圖書館？）
 - How often do you work out? （你多常運動？）
+- How often does she go shopping?她多久去购物一次？
 
 公式是：
 ```
@@ -34,6 +35,14 @@ How often（多常...）的問句，我們會把次數跟時間結合
 - Three times every day?!
 - I told you to water the plants three times every week!
 - She practices guitar every Tuesday.(注意，guitar前面沒有the)  
+- This restaurant always opens at 6 a.m.
+
+## never
+- We never work on Friday**s**
+- First painting**s** are never good.
+- we nerver finish the school early
+- He never spends money on ice cream.他从不在冰淇淋上花钱。
+- I never take the subway to work.我从来不坐地铁去工作。
 
 ## 現在式(習慣) 頻率副詞
 頻率副詞放在be動詞後，一般動詞前面。 
@@ -53,6 +62,8 @@ How often（多常...）的問句，我們會把次數跟時間結合
 - Sometimes（有時候，40%）
 - Seldom / Rarely（很少/罕見，10%）
 - Never（從不，0%）
+
+- But he was usually quiet!
 
 ## never 當作否定
 - You never responded to my letters...

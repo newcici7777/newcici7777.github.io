@@ -44,7 +44,7 @@ talk 是一個不及物動詞（不能直接加受詞）
 - Can I talk to you?
 - he decides to talk to her.
 - We need to talk.(不及物)
-
+- One day, he decides to talk to her.
 
 ### talk + with + 人
 - He is talking with his friend.（他在跟他的朋友聊天。）
@@ -53,6 +53,8 @@ talk 是一個不及物動詞（不能直接加受詞）
 ### talk + about + 主題
 - What are they talking about?（他們在談論什麼？）
 - Hi, Bea. Can we talk about Carl?
+- What did he talk about?
+- We don't need to go fishing to talk about things.
 
 ### talk + to + 人 + about + 主題
 - Talk to you about something

@@ -14,6 +14,9 @@ keywords: get
 - He'll get there at seven o'clock tonight.
 - I want to go home, but when will I get there? (我想回家，但我什么时候会到家呢？)
 - When she gets home, Priti reads a book in the garden.
+- They got to the coffee shop at half past nine this morning.他们是在今天早上九点半到的咖啡店。
+- We got here at 11 a.m yesterday.我们是昨天上午十一点到这里的。
+- How did they get to the concert?他们是怎么到音乐会的？
 
 ## 拿東西
 - Can I get you a cup of tea.我可幫你拿一杯茶

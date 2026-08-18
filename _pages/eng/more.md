@@ -82,4 +82,5 @@ more為更多
 - He is more careful.（他更小心了。）
 - She speaks English more fluently.(（她說英文說得更流利。)
 
-
+## 動詞 + more(副詞)
+- you want to talk more .

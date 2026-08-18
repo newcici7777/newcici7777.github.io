@@ -53,6 +53,8 @@ work是抽象名詞，不可數名詞，前面不加a 或the
 ## work for 人/公司 (為誰工作)
 - Is Anna working for two different companies ?
 - Ben works for a good company.(本为一家很好的公司工作。)  
+- I am going to work for a different company.我打算为一家不同的公司工作。
+
 
 ## in the ... business
 ```
@@ -81,6 +83,7 @@ in the 行業名 business / industry
 ## be + in 產業
 - Is she in the food business. 她是在餐飲業工作嗎？
 - She has been in the fashion business for over ten years.（她在時尚界工作超過十年了。）
+- We are in the music business.我们从事音乐行业。
 
 ## work at
 - work at **a** bank（在銀行上班）

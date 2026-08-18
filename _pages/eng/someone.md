@@ -12,12 +12,14 @@ keywords: English
 - Both skirt[s] are green.
 - He is good at both cooking and baking
 
+
 ## both of one's
 遇到所有格, the, this 指示代名詞，都要用of
 - Both of my parents were taxi drivers.我的父母以前都是出租车司机。
 - Both of his sisters were Japanese teachers. 他的两个妹妹以前都是日语老师。
 - Were both of your sisters servers? 你的二個姐姐以前是服務生嗎
 - Are both of your parents bus drivers?你的父母都是公車司機嗎？
+- Both of her parents were Spanish teachers.她的父母以前都是西班牙语老师。
 
 ## each
 each 後面只能接「單數可數名詞」，each 的意思是「每一個」，它的大腦邏輯是把群體裡的成員「一個一個分開來看」。既然要一個一個數，它後面的名詞就必須是可以數的。

@@ -20,6 +20,7 @@ a lot 表示知道的「程度」或「數量」很多
 - I like her a lot.
 - She likes him a lot.
 - He's travling a lot.
+- He talked a lot.
 
 ## lots of + 可數s/不可數 名詞
 - I see lots of cows.

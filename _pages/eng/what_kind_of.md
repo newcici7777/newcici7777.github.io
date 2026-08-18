@@ -87,16 +87,18 @@ She moved to the city where her parents live.（她搬去了她父母住的那�
 - She wears different shoes every day.（她每天穿不同的鞋子——多雙鞋。）
 - We have different opinions.（我們有不同的意見——多個意見。）
 
-### Different + 單數可數名詞 = 另外一個
+### Different + 單數可數名詞 = 不同的
 當你想表達「另外一個（不同於原來的）單一事物」時，後面就要接單數可數名詞，而且前面一定要加 a。
-- a different flavor 另外一種（不同的）口味
+- a different flavor 另外一種不同的口味
 - She moved to a different city.（她搬去了一個不同的城市——指搬去「某個新城市」，單數一個。）
-- Let's try a different restaurant.（我們去試試別家餐廳吧——單數一家。）
-- Can we meet on a different day?（我們可以改在另一天見面嗎——單數一天。）
-- I need a different approach to solve this problem.（我需要另一種方法來解決這個問題——單數一個方法。）
-- Can I try a different flavor?（我可以試試另一種不同的口味嗎？——單數一種口味。）
-- I bought a different book.（我買了另一本書——不同於原本那本的一本書。）
+- Let's try a different restaurant.（我們去試試不同的餐廳吧——單數一家。）
+- Can we meet on a different day?（我們可以改在另一天(不同天)見面嗎——單數一天。）
+- I need a different approach to solve this problem.（我需要不同的方法來解決這個問題——單數一個方法。）
+- Can I try a different flavor?（我可以試試不同的口味嗎？——單數一種口味。）
+- I bought a different book.（我買了另一(不同)本書——不同於原本那本的一本書。）
 - Wait, the job is in a different office?
+- He was a very different person when he was fishing.不一樣的人
+
 
 💡 簡單的判斷口訣
 - a different + 單數名詞 ＝ 換了「另一個」單一物品。
@@ -130,3 +132,4 @@ Different（不同的）+ kinds（種類們）+ of（……的）+ 名詞
 
 - The zoo has different kinds of animals. （這座動物園有不同種類的動物。）
 - She likes listening to different kinds of music. （她喜歡聽不同種類的音樂。）
+- There are different kinds of clothes in that store.在那个商店里有不同种类的衣服。

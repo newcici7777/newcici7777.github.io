@@ -44,7 +44,7 @@ have 吃和活動或聚會搭配時，它代表的是「進行、享受、舉辦
 
 - We won't have a meeting tomorrow morning.(我們明天早上不會開會 )  
 - What time do you want to have your party?
-
+- Our company is having a meeting right now.我们的公司现在正在开会。
 
 ## 擁有
 - I [never have time] to make breakfast for you.我沒有時間。 

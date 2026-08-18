@@ -3,6 +3,9 @@ title: 字根字尾字首8
 date: 2026-08-05
 keywords: English, 字根字尾字首
 ---
+## ther
+只要看到結尾是 -ther 且用來描述「兩者或多者結合、聚集、共同進行」時，它通常就是副詞 together！
+
 ## ag / ig / am 做、衡量
 ag / ig / am (字根) = to drive / to weigh（做、推動、秤重、衡量）  
 ag,ig,am 是「天平的指針」，是用來「精準稱重、把好的壞的分清楚」  

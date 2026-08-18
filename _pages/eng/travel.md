@@ -76,30 +76,6 @@ travel是動詞
 ## travel(動詞) abroad(副詞)
 - We like to travel abroad.我們喜歡出國旅行。
 
-## fly(動詞) to 坐飛機
-- Do you want to fly to New York or Los Angeles?
-- I want to fly to Japan.
-- Now he's going to fly from London to Paris. He's travling a lot.现在他要从伦敦飞往巴黎。他经常旅行。
-- Dad flies to London every week.爸爸每周都飞去伦敦。
-- Ben often flies to Germany.本经常坐飞机去德国。
-- He often flies to the UK.他经常飞去英国。
-- Tom flew from New York to London. Tom从纽约飞到了伦敦
-- I flew from London to Oxford yesterday.我昨天从伦敦飞去了
-牛津。
-- I flew to London last Saturday.我上周六飞去了伦敦。
-
-## 機票
-- I want to get a ticket.
-- Can I have a ticket **to** London.
-- Do you want a one-way ticket or a round-trip ticket?
-- Do you want a one-way ticket or a return ticket?
-- Are you looking for where the ticket is?
-
-## Here is 在...這裡 (倒裝句)
-- Here's your ticket.(原句:Your ticket is here) 你的機票在這裡
-- Here you are. (給你)
-- Here you go. (給你)
-
 ## I am off.（我今天放假)
 - off work.離開工作的狀態
 - I get off work at 6:00. 下班 

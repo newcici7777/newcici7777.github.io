@@ -9,6 +9,7 @@ keywords: english,only
   - only 放在主詞 Anna 的前面，是用來修飾整個主詞，表示「除了安娜（Anna）之外，沒有其他人」加入了法文社。
 - Only adults are allowed here.（只有成年人才被允許進入。）
 - Only children can understand.（只有小孩懂。）
+- It's only five o'clock. Is the cafe closed?才五点。咖啡厅关门了吗？
 
 ## only(副詞) + 動詞 只是
 only 修飾動詞時：它放在動詞前面，是用來限定這個動作的範圍或程度
