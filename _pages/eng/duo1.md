@@ -240,6 +240,7 @@ gone 是形容詞用來形容一種「不在、離去、離開了」的狀態。
 - All the cookies are gone. Who ate them all? （餅乾全被吃光了。到底是誰全部吃完的？）
 
 ## with
+### with 人/物
 with 當成是一個「連結的橋樑」。
 
 你可以把 with 在這裡想像成 「指向」，當你遇到麻煩時，你用 with 指向那個讓你頭痛的根源。
@@ -254,30 +255,30 @@ I have a problem with + [讓你頭痛的人/事/物]
 * They have a problem with the new software.(他們對這款新軟體有意見/覺得它不好用。)
 * I have a problem withmy internet connection.(我的網路連線出問題了。)
 
-介系詞 with 的核心邏輯：針對這件事
-在英文中：
-* help me → 幫「我」（對象是我）
-* with something → 在「某件事」上（範圍/內容是這件事）
-如果只講 "Can you help me?"，代表「你能幫我嗎？」，意思很完整，但比較籠統。
-加上 with + 事情，就能精準點出「幫我處理/搞定這件事」。
-🎯 2. 萬用公式：help + 人 + with + ［名詞/事情］
-只要想表達「在某方面/某件事上給予協助」，固定搭配 with + 名詞：
-🍽️ 生活日常
-* Can you help me ［with my homework］? （你能幫我看一下作業嗎？）
-* Can you help me ［with the dishes］? （你能幫我洗個碗嗎？）
-* Can you help me ［with these bags］? （你能幫我拿這些袋子嗎？）
-💻 工作與學習
-* Can you help me ［with this code / package］? （你能幫我看看這段程式碼/這個套件嗎？）
-* I need help ［with my English pronunciation］. （我需要有人幫我糾正英文發音。）
-💡 補充：如果後面接「動作（動詞）」呢？
+
+## help me
+### with 事情
+```
+help + 人 + with + **名詞/事情**
+```
+* Can you help me **with my homework**? （你能幫我看一下作業嗎？）
+* Can you help me **with the dishes**? （你能幫我洗個碗嗎？）
+* Can you help me **with these bags**? （你能幫我拿這些袋子嗎？）
+* I need help **with my English pronunciation**. （我需要有人幫我糾正英文發音。）
+
+
+### 動詞
 如果後面接的是一個動作，你可以選擇以下兩種講法（就不會用 with 了）：
-1. help me + 原形動詞（最常見）：
+```
+help me + 原形動詞
+```
 * Can you help me clean the room?（你能幫我打掃房間嗎？）
-2. help me + to + 原形動詞：
+
+```
+help me + to + 原形動詞
+```
 * Can you help me to fix this?（你能幫我修這個嗎？）
-📝 終極一秒對比
-* 後面接【事情 / 名詞】 → 用 with 👉 help me with my homework
-* 後面接【動作 / 動詞】 → 用 原形動詞 或 to V 👉 help me do my homework
+
 
 ## already
 - I already have a menu for you.
@@ -287,7 +288,38 @@ I have a problem with + [讓你頭痛的人/事/物]
 ## 其它疑惑
 I draw things that I think are interesting or beautiful.
 
+## ready
+### ready to + 動詞 (V) (即將啟動：準備好要做...)
+後面接動作（動詞原型）。代表你已經蓄勢待發，隨時可以開始執行那個動作。  
+例句解析：
+- We are all ready to go! （我們都準備好要出發了！ → go 是動作，隨時能走）
+- Are you ready to order? （您準備好要點餐了嗎？ → 餐廳服務生最常講的標準句）
+- I'm ready to learn Japanese. （我準備好要開始學日文了。）
 
+### ready for + 名詞 (N) (心理/物質上：對某件事物做好準備)
+後面接名詞（或 V-ing）。代表你對於即將到來的「某個事件、東西、挑戰」已經整備完畢，心態或物品都 OK 了。  
+打開背包檢查，去考試、去上班、去面試的東西都裝齊了。  
+
+- Are you ready for the exam tomorrow? （你對明天的考試準備好了嗎？ → the exam 是名詞）
+- I’m ready for dinner! （我準備好要吃晚餐了！/ 我肚子餓了！）
+- She is ready for a new job. （她已經做好迎接新工作的準備了。）
+
+### Get ready (正在「去準備」的途中)
+get，意思會從「已經好了（狀態）」變成「正在做準備的這個『動作過程』」（例如洗臉、換衣服、打包）。  
+人還在房間裡忙著梳妝打扮、收拾行李。  
+
+- Give me 10 minutes. I’m getting ready. （給我 10 分鐘，我正在準備/梳洗打扮中。）
+- Get ready! We need to leave soon. （快準備一下！我們差不多該出發了。）
+
+### 比較
+假設你等一下有一場重要的面試：
+- I am ready for the interview.（我對這場面試做好準備了。 → 強調心態/資料都準備好了）
+- I am ready to start the interview.（我準備好要「開始」面試了。 → 強調隨時可以開始講話/答題）
+- I am getting ready for the interview.（我正忙著準備面試。 → 強調正在穿正裝、看履歷的過程）
+
+- ready to + 動詞 → 準備好要「做」某事（We are ready to go）
+- ready for + 名詞 → 對某個「事物」做好準備（Ready for the trip）
+- get ready → 正在「進行準備」的動作（I'm getting ready）
 
 
 
