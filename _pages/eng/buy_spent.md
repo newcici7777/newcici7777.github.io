@@ -80,10 +80,11 @@ Pay + 錢 + TO + 人 + FOR + 物
 人 spend [錢/時間] on [東西/事情] (for 人)
 ```
 
-### How much did you spend? 花多少錢
-- How much did you spend at the supermarket?你在超市花了
+### How much did you spend? 花多少錢 
+- How much did you spend **at** the supermarket?你在超市花了
 多少钱？
-- How much did you spend at the bookstore?
+- How much did you spend **at** the bookstore?
+- We spent a week **in** Tokyo. （我們在東京待了一週。）
 
 ### 人 + spend + 錢 + on + 物
 - He never spends money on ice cream.他从不在冰淇淋上花钱。

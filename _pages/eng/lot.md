@@ -9,14 +9,15 @@ keywords: english, a lot of, lots of
 - A lot of thing**s**!
 - Do you hav a lot of meetings today?你们今天有许多会议吗？
 
-## a lot 作為副詞
+## a lot 作為副詞，沒有of
 a lot 放動詞後面。    
 a lot 表示知道的「程度」或「數量」很多  
 - It snows **a lot** in the winter.(在冬天經常下雪  )  
 - It rains **a lot** in the summer.(在夏天经常下雨。)
+- I know a lot about cars.
 
-## a lot 作為副詞放最後
-- I know a lot about cars
+## a lot 作為副詞(沒有of)放最後
+- She eats a lot.她吃很多。
 - I like her a lot.
 - She likes him a lot.
 - He's travling a lot.
@@ -26,6 +27,17 @@ a lot 表示知道的「程度」或「數量」很多
 - I see lots of cows.
 - I need to buy lots of fruit for a party.
 - We can see lots of animals on this farm!
+
+## lots 作為副詞(沒有of)
+- I need lots more time.
+（我需要多很多的時間。）
+- I know lots about cars
+- I like her lots.
+- I love it lots.（我超喜歡這個的。）
+- I feel lots happier today.我今天開心多了。
+- This book is lots better than that one.
+（這本書比那本好得多。）
+- Thanks lots!
 
 ## any + 不可數/可數名詞
 - Are there any cows on your farm?

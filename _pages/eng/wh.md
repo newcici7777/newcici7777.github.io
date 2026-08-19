@@ -45,6 +45,12 @@ What day is today? (這天屬於 7 個選項裡的哪一個？)
 
 What color is the sky? (天空屬於顏色表裡的哪一個？)
 
+當我們要問時間、顏色、星期這種「屬於哪一個範疇」的問題時，母語者的大腦制約就是 What + 種類 + is it...。
+
+- 問時間：“What time is it?”（現在幾點？
+- 問顏色：“What color is your car?”
+- 問名字：“What name did you choose?”（你選了什麼名字？）
+
 關於 What time：
 它的邏輯完全跟 What day 一模一樣！它是問「時間這個清單裡的哪一個點」。
 

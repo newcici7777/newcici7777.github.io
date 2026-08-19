@@ -49,15 +49,21 @@ to + V，強調那個「跨入新狀態」的瞬間切換
 ## start 開始時間
 - when will the next meeting start?(下个会议什么时候开始？)  
 - When will **the next class** start? 下一节课什么时候会开始？ 
-- Does the English exam start at six
+- Does the English exam start at six.
 - The game starts at five.
 - What time does the meeting start?
 - You will **start** your new job next week.你下周会开始你的新工作。  
 
+## begin 開始做某事
+表達「開始做某事」時，begin 後面可以接 動名詞（-ing） 或者是 不定詞（to V），兩者意思幾乎沒有差別，都可以通用。
 
+- It began raining / to rain. （開始下雨了。）
+- She began crying / to cry. （她開始哭了。）
 
-
-
-## begin 開始
+## begin 事件「開始」
+- What time does the race begin? （這場賽跑是什麼時候開始的？）
+- The movie begins at 8 PM. （電影在晚上8點開始。）
+- When does the meeting begin？ （會議幾點開始？）
 - Fall begins in September.
 - The next class will begin at 12 o'clock.
+

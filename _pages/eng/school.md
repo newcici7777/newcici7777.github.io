@@ -20,7 +20,7 @@ take 的語感更偏向「修讀、參與課程」的過程。
 ## Have a class 上課 課表的課
 這門課已經在你的行程表裡（有課），have 的語感更偏向「行程表上的時間到了」。  
 行程、有這個時間安排，翻開行事曆或課表，看到上面寫著「週三早上：數學」。
-
+- I have an art class today.
 - I have my first class next Monday.（我下週一上第一堂課）
 - I have a math lesson every Wednesday.你的課表上有這堂課
 - The children have reading lessons every Thursday.「行程表上『有』這堂課」。

@@ -3,6 +3,16 @@ title: Cross Across 橫跨 / 到對面去
 date: 2026-08-17
 keywords: English, cross, across
 ---
+## 對面
+### On the other side（在另一邊 / 對面）
+The convenience store is on the other side of the street.（便利商店在馬路的另一邊/對面。）
+### over 跨過(有高度的)
+Walk over the bridge.（走過橋。）
+### across 副詞(過馬路)
+Walk across the street.
+### cross 動詞 (過馬路)
+Cross the street, and you'll see it.（過馬路，你就會看到了。）
+
 ## Cross (動詞：跨越、橫穿)
 ```
 Cross + 地點

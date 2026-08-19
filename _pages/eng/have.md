@@ -33,7 +33,10 @@ have 吃和活動或聚會搭配時，它代表的是「進行、享受、舉辦
 
 英文習慣把許多動作包裝成名詞（如 conversation），然後用 have 來帶動這個動作。
 
-常見的固定搭配（Collocations）：
+參加、進行某項活動或課程:
+```
+[主語] ＋ have / has ＋ [活動／課程]
+```
 - have a conversation = 進行對話 / 聊天
 - have a meeting = 開會
 - have a discussion = 進行討論

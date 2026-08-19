@@ -1,10 +1,63 @@
 ---
-title: How far (多遠)
+title: far遠, away遠, Distance距離
 date: 2026-08-18
 keywords: english, how far
 ---
 常用 far 來問距離（例如 How far is it?）
 
+## away(遠 副詞)
+Away 是用來形容「有多遠」（副詞），
+放在「距離數字」後面，用來表示「距離某個起點有多遠的空間跨度」。
+
+距離數字 + away
+```
+Two miles（兩英里）+ away（遠）兩英里遠
+```
+
+- two miles away
+- one kilometer away
+
+- My home is ten minutes away.（我家在十分鐘車程外。）
+- The store is five blocks away.（那家店在五個街區外。）
+
+### away from 基準點
+[地點 A] is + [距離數字] + miles/meters/minutes + away from + [地點 B]
+
+- The airport is one kilometer away from here.
+（機場離這裡一公里遠。）
+- It's two miles away from the station.（離車站有兩英里遠。）
+- The park is a mile away from my office.（公園離我辦公室有一英里遠。）
+
+### Distance 是「距離」
+Distance 是「距離」（名詞)，Away 是用來形容「有多遠」（副詞）。
+
+- The distance (from here to the airport) is one kilometer.
+（從這裡到機場的距離是一公里。）
+
+## away 離開
+單獨看 away 時，它有「離開、在遠處」的意思。
+- Go away!（走開！ / 離我遠一點！）
+- He is away on business.（他出差不在家 / 人在遠處。）
+
+## far away 很遠
+far(遠) + away（離開、距離）
+
+- The star is far away.（那顆星星好遠。）
+- My home is far away.我家很遠。
+
+## is far away from 離(什麼地方)很遠嗎？
+
+be動詞 + far away + from + [基準地點]
+
+from 從哪個基準點開始算起
+
+- Do you live far away from the sea?
+（你住的地方距離海邊很遠嗎？）
+- Excuse me, is the museum far away trom here?
+- The station is far away from the hotel.（車站離飯店很遠。）
+- Is the museum far away from here?（博物館離這裡很遠嗎？）
+
+## How far
 How far 專門問「實體距離（多遠）」，詢問空間上的「兩地之間的實際距離」（幾公里、幾英里、走幾步路）
 
 - How far is the hotel?（飯店有多遠？）

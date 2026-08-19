@@ -84,3 +84,28 @@ more為更多
 
 ## 動詞 + more(副詞)
 - you want to talk more .
+
+## 量詞片語(副詞) + more
+- a little more + 不可數 (再多一點)
+  - I need a little more water.（我需要再多一點水。）
+- a little bit more + 不可數 (再多一點點)
+  - I need a little bit more time.（我需要再多一點點時間。）
+- a few more + 可數 (再多一些)
+  - Give me a few more minutes.再多給我幾分鐘
+- a lot more + 可數/不可數 (再多更多) **沒有of**
+  - I need a lot more time.（多很多時間）
+- lots more + 可數/不可數 (再多更多) **沒有of**
+  - I need lots more time.
+- much more + 不可數 (再多更多)
+  - Give me much more time.（給我多很多時間。）
+- many more + 可數 (再多更多)
+  - Give me many more minutes.給我更多好幾分鐘
+
+### 修飾「名詞」
+- I need much more money.（我需要更多錢。）
+- I need many more books.（我需要更多本書。）
+
+### 修飾「形容詞、副詞或動詞」
+當 more 當作副詞時，a little 可以用來修飾它，表示「程度稍微多一點」：
+- I am a little more tired today than yesterday.（我今天比昨天稍微累了一點點。）
+- Could you speak a little more slowly?（你能說得稍微慢一點嗎？）

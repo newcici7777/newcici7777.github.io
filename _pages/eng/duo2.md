@@ -6,26 +6,6 @@ keywords: 其它
 ## 身份
 She's a teenager.
 
-## really
-### 修飾動詞
-really 可以修飾動詞，但very不能修飾動詞。它可以表示「真的很...、確實很...」
--  I really like this coffee.（我真的很喜歡這杯咖啡。）
--  He really wants to go home.（他真的很想回家。）
-
-### 修飾形容詞
-- It's really hot today!
-
-### 遇到「最高級 / 頂點形容詞」
-有些形容詞本身就已經是「最極端」的意思了（例如：delicious 已經是極度好吃、exhausted 已經是精疲力竭）。
-
-excited用really,so修飾，不能使用very
-
-用 really 修飾最高級形容詞。
-
-- I'm really excited to meet him. 
-- It's so exciting!
-- This cake is really delicious!（這蛋糕真的太美味了！）
-- I am really exhausted.（我真的精疲力竭了。）
 
 
 ## invite 人 to 目的地
@@ -95,14 +75,20 @@ excited用really,so修飾，不能使用very
 - Do you remember your favorite class?你记得你最喜欢的课
 吗？
 
+## water 水
+- There is water on the table.桌上有水。(強調的是水，不是容器，不可數名詞，動詞用單數。)
+- There are two cups of water on the table.桌上有二杯水。(強調的是容器。容器是複數，動詞也是複數)
+
+## water 變形容詞
+- There are three water bottles.有3個水瓶。(water變成形容詞，形容用途是裝水的瓶子)
 
 ## the water 水邊
-water 指的就是「水邊」、「水面」或「水域」（像是湖泊、河流、池塘或海邊）。
+**the** water 指的就是「水邊」、「水面」或「水域」（像是湖泊、河流、池塘或海邊）。
 
-near the water 時，大腦的畫面通常是指「在水跟陸地交界的地方」。
+near **the** water 時，大腦的畫面通常是指「在水跟陸地交界的地方」。
 
 - I want a duck near **the water**. 我想要一隻在（那片）水邊的鴨子。
-- We eat by the water.我们在水边吃。
+- We eat by **the** water.我们在水边吃。
 
 ## water 澆水(動詞)
 - I watered your plants three times every day!我每天幫你的植物澆三次水！
@@ -128,14 +114,15 @@ eyes are very small.
 - Why do you think that he wants...(為什麼你覺得他想要……？)
 - Why do you think he wants...(為什麼你覺得他想要……？)
 
-## thought 認為
-用 thought（過去式） 而不是 think（現在式），是因為「覺得很難」的那個時刻已經過去了。
+## thought 以為
+用 thought（過去式）代表「過去認為」，但實際上並不是這樣。
 
-因為「想像」這件事發生在過去，所以要用過去式 thought。
-- English is far easier than I thought. 
+- I thought he **loved** me.我以為他愛我，但其實沒有。(注意，loved也是過去式)
 - It's cheaper than I thought.（比我想像的還要便宜 → 以為很貴，結果結帳時發現很便宜。）
 - He is nicer than I thought.（他比我想像的還要好人 → 以為他很兇，接觸後發現人很好。）
-
+- English is far easier than I thought. 英文比我想像中的容易。
+  - 用 thought（過去式） 而不是 think（現在式），是因為「覺得很難」的那個時刻已經過去了。
+  - 因為「想像」這件事發生在過去，所以要用過去式 thought。
 
 ## pair of + 單數動詞
 句子的真正主詞是計量單位 pair（一雙）。
@@ -181,6 +168,7 @@ Check（檢查/查看）：不只是看，還包含「為了獲得某個資訊�
   - Let me check the route on my phone.（我看一下手機上的路線。）
   - Wait, let me check the directions on my phone.等一下，我看個手機上的導航路線。
 
+## put a check 打勾勾
 
 
 ## Country（國家）vs The Country（鄉下、農村地區）
@@ -206,13 +194,14 @@ Country > City > Town > the country > village
   - Taipei is a big and busy city.（台北是一個大而繁忙的城市。）
 
 
-## win(動詞)
+## win
+win 是動詞。
 - You won the competition!
+- She's going to win the cooking competition.她會贏得這場烹飪比賽
 - Mia won with a vanilla cake.米亞憑著一個香草蛋糕贏了比賽
   - 某人 + won + with + **武器 / 食譜 / 策略 / 方法**
 - I want to win! 
 - I want a win!（我想要一場勝利！）win變成一個名詞
-
 
 
 

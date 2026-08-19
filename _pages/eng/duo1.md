@@ -7,6 +7,9 @@ keywords: English, duolingo
 cloth/kloθ/ 布料     
 clothes/kloʊðz/ 衣服 不可數名詞  
 
+- I wash my clothes on Monday, but grandma washes her clothes on Tuesday.  
+- We saw an ad for this clothes store.我们看到了一个这个服装店的广告。
+
 ## on 球隊
 谁是在这个队里最快的运动员？  
 Who is the fastest player **on this team**?  
@@ -15,61 +18,6 @@ Who is the fastest player **on this team**?
 Is Duo **on your basketball team**?  
 
 She's not **on** this baseball team.
-
-## play 玩 運動
-### 玩  
-- Can we play your video game?  玩電動
-- Do you want to play tennis together **this Sunday**? 注意，有this，就不加on  
-- The cat is playing with a tennis ball.猫在玩网球  
-
-### 音樂家
-- She was in a band, she was a guitar player.她以前在一个乐队里，她以前是一个吉他手。
-- Were they piano players?他们是钢琴家吗？
-
-### 運動
-- He shouldn't play sports today.(sports後面加s)
-  - play sports 字面上的意思就是「從事／參與運動競技」
-
-Play + 球類 / 競技運動（需要規則或對抗的）：
-- play sports（做運動）
-- play basketball（打籃球）
-- play tennis（打網球）
-Do + 個人健身、武術或體操（比較偏向個人的鍛鍊、沒有直接對抗）：
-- do yoga（做瑜伽）
-- do exercise（做運動／鍛鍊）
-
-
-## go + 活動
-去從事某項戶外活動或休閒娛樂
-
-Go + 以 -ing 結尾的戶外運動（通常是去某個地方進行的活動）：
-- go jogging（去慢跑）
-- go swimming（去游泳）
-- go dancing(去跳舞)
-  - We went dancing last night.（我們昨晚去跳舞了。）
-- go camping去露營
-
-- I went fishing with your grandfather every summer.
-
-## going 活動/ 現在進行式
-- They are fishing. → 重點在「釣魚的動作進行中」（人已經在水邊甩竿了）。
-- Go fishing → 重點在「去進行這項活動」（這是一趟休閒行程，可以搭配各種時態）。
-
-- 原形／現在式：We go fishing every weekend.（我們每個週末都去釣魚 → 長期習慣。）
-- 未來式：We will go fishing tomorrow.（我們明天要去釣魚。）
-- 進行式（正在出發去）：They are going fishing.（他們正準備去釣魚／出發去釣魚了。）
-
-## too
-too放在句子的最後面，前面(可加或不加)逗號
-- Adults clean the table, too.(too 前加逗號 )  
-- I think you're beautiful too!(too 前不加逗號)  
-- there's sausage too!  
-
-too 放在be 動詞後面(太...)，作為副詞 
-- This is too dangerous!
-
-## too + 形容詞
-- My new apartment is too small.  
 
 ## also
 also放在動詞前面，意思是「也」
@@ -91,6 +39,15 @@ as well 放在最後，意思是「也」
 ## then 然後
 - It rained then snowed.(下雨然後下雪)
 
+## then 未來的某個特定時間點
+* Let's meet at 5 p.m.
+* Okay, see you then!(在那時候見。)
+
+## then 過去的某個特定時間點
+- Look at this old photo!The kids were very young then.看这张旧照片！孩子们那时候非常年纪
+非當小。
+- Were they small children then?他们当时是小孩子吗？
+- He was only seven years old then.他当时只有七岁。
 
 
 ## just
@@ -205,6 +162,14 @@ gone 是形容詞用來形容一種「不在、離去、離開了」的狀態。
 - All the cookies are gone. Who ate them all? （餅乾全被吃光了。到底是誰全部吃完的？）
 
 
+## 大自然
+為什麼 mountain 要加 s 變成 mountains？  
+大自然的山通常不是孤立的一座山，而是連綿起伏的山脈系統。因此，英文習慣用複數的 the mountains 來統稱「山區」、「群山」。  
+
+常見的類似自然景觀複數：
+- in the mountains（在山區裡）
+- in the woods（在森林裡）
+- in the fields（在田野裡）
 
 
 

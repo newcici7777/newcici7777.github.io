@@ -13,13 +13,19 @@ keywords: english, much,many
 - How many slice**s** of pizza did you take?你拿了幾片披薩？
 
 ## much 當副詞
-much當副詞放在最後面。
+- It is much bigger.（大很多）
+- It is much better.
 - I don't like it very much.
 - I loved her very much.
 - we don't talk much.
 
-## too much + 不可數名詞
+
+## too much (副詞) 修飾動詞、形容詞
 - Does he sleep too much?
+- She ate too much.（她吃太多了)
+
+## too much(形容詞) + 不可數名詞
+- She ate too much food.（她吃了太多食物)
 
 ## 多少錢How much + be動詞
 - How much is a cup of coffee with milk?一杯加奶咖啡多少錢？

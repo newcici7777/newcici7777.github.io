@@ -33,11 +33,7 @@ keywords: English
 - I just ate.（我剛吃飽。）
 - He just left.（他剛離開。）
 
-## then
-- Look at this old photo!The kids were very young then.看这张旧照片！孩子们那时候非常年纪
-非當小。
-- Were they small children then?他们当时是小孩子吗？
-- He was only seven years old then.他当时只有七岁。
+
 
 ## at the age of ...
 - She learned to drive at the age of twenty.她在二十发的时候学会了开车。
