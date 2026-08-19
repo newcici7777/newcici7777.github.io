@@ -74,6 +74,17 @@ There are twelve bottles of waterin the fridge.(冰箱裡有 12 瓶水。)
 * I bought four bags of riceat the store.(我在店裡買了四袋米。)
 
 ## 多個名詞組合
+當一個名詞用來修飾另一個名詞時，通常會直接把修飾詞放在前面（形成「名詞 ＋ 名詞」的複合結構）。
+
+- rock climbing
+  - rock（岩石，名詞）在這裡扮演形容詞的角色，用來修飾後面的 climbing（攀爬），意思是「在岩石上的攀爬」（即攀岩）。
+
+類似的常見組合：
+- rock music（搖滾樂 —— 關於 rock 的音樂）
+- ice hockey（冰球 —— 在冰上打的曲棍球）
+- football（美式足球 —— 用腳踢的球）
+
+
 ```
 【修飾語（功能／種類）】+【核心名詞】 
 ```

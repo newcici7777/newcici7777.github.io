@@ -34,10 +34,6 @@ to + V 的底層屬性:未來、尚未發生、目標、方向
 - I have time **to make** breakfast for you today!
 
 ## 未來動作 名詞 + to + 動詞
-
-
-
-
 - I need something to eat.(我需要一些可以吃的東西。)
 - Do you have anything to drink?(你有什麼可以喝的東西嗎？)
 - I have a lot of work to do today.(我今天有很多工作要做。)
@@ -99,3 +95,29 @@ to + V 的底層屬性:未來、尚未發生、目標、方向
 否定詞 not 須置於 to 前方
 - He decided not to go.
 
+-----------------------------
+## 不定詞各種詞性
+### 1. 當作「名詞」（Noun）
+* **純不定詞 `to V` 當名詞（主詞或受詞）**：
+* *To learn English is important.*（學英文很重要。——當主詞）
+* *I want **to eat ice cream**.*（我想吃冰淇淋。——當受詞）
+
+
+### 2. 當作「副詞」（Adverb）——專門用來表示「目的」或「條件」
+**純不定詞 (`to V`)** 非常常拿來當作副詞使用，最經典的就是用來修飾動詞，表達「為了要……（目的）」：
+
+* *She studied hard **to pass the exam**.*
+（她努力讀書**為了要通過考試**。➔ 這裡的 `to pass the exam` 整組是副詞片語，用來修飾動詞 *studied*，回答「為什麼努力讀書？」）
+* *I woke up early **to catch the train**.*
+（我早起**是為了趕火車**。）
+
+
+### 3. 當作「形容詞」（Adjective）——用來修飾前面的名詞
+這也是一個超級實用的用法！當你想表達「有什麼東西可以去……」**或**「有什麼任務要去……」時，不定詞或疑問詞片語可以像形容詞一樣，放在名詞後面修飾它：
+
+* **純不定詞當形容詞**：
+* *I have a lot of work **to do**.*
+（我有很多工作**要做**。➔ 這裡的 `to do` 修飾前面的名詞 *work*。）
+* *Do you have anything **to say**?*
+（你有什麼話**想說**嗎？➔ 修飾 *anything*。）
+* *I need something **to eat**.*（我需要吃點東西。）

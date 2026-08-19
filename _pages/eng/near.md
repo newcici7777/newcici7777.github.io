@@ -109,23 +109,6 @@ the garden.我們家離河流很近，但離花園更近。
 ## close to (時間上的接近)
 - It is close to 7.快七點了
 
-## Far 遠的
-Far（遠的）➔ 常用在「否定句」與「疑問句」
-- 疑問句： Is it far?（很遠嗎？）
-- 否定句： It's not far from here.（離這裡不遠。➜ far 習慣搭配 from 喔！）
-
-肯定句
-- It's far away.（在很遠的地方。）
-- It's really far.（真的很遠。）
-- It's a long way.（那是一段很長的路 ➔ 口語超常用！）
-
-## close to / far from
-
-|距離|常用講法|大腦的空間畫面|
-|:-----|:--------|:-----------|
-|近 (Close)|It is close to my house.|離我家很近（往我家的方向一下就到 →）。|
-|遠 (Far)|It is far from my house.|離我家很遠（從我家出發要拉好遠的距離 ←）。|
-
 
 ## beside 在旁邊
 一個人站在另一個人的身側，或是某個風景在另一個物體的旁邊  
@@ -241,3 +224,18 @@ I left my keys behind the flower pot."
 
 - 當它前面接像 go, drive, head 這種動詞 → 表方向的副詞（去市中心）。
 - 當它前面接像 work, live, stay 這種動詞 → 表地點的副詞（在市中心）。
+
+## on 關於
+這裡的 **`on`** 扮演著非常關鍵的角色，意思是「關於……」**或**「有關……的指南」。
+
+你可以把這個 `on` 替換成更常見的 **`about`**，意思會更好理解：
+
+* *She gave me a guide **on** how to do it.*
+* ＝ *She gave me a guide **about** how to do it.*
+（她給了我一份**關於**該怎麼做這件事的指南。）
+
+名詞本身具有「主題、探討內容、指導方針」的含意時（例如 *guide* 指南、*book* 書、*report* 報告、*lecture* 講座、*article* 文章），習慣上會用介系詞 **`on`** 來帶出它的內容主題。
+
+* a book **on** history（一本**關於**歷史的書）
+* a report **on** climate change（一份**關於**氣候變遷的報告）
+* a guide **on** how to use the app（一份**關於**如何使用這款 App 的指南）

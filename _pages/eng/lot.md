@@ -11,7 +11,11 @@ keywords: english, a lot of, lots of
 
 ## a lot 作為副詞，沒有of
 a lot 放動詞後面。    
-a lot 表示知道的「程度」或「數量」很多  
+a lot 表示知道的「程度」或「數量」很多 
+
+- 後面有「人、事、物」（名詞） ➔ 要有 of（因為名詞跟名詞不能直接黏在一起）。
+- 後面是「形容詞」或「動詞」 ➔ 不用加 of（因為此時它已經轉化為副詞，是用來修飾程度的）。
+
 - It snows **a lot** in the winter.(在冬天經常下雪  )  
 - It rains **a lot** in the summer.(在夏天经常下雨。)
 - I know a lot about cars.

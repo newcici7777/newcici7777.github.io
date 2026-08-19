@@ -48,7 +48,15 @@ Go + 以 -ing 結尾的戶外運動（通常是去某個地方進行的活動）
 - 進行式（正在出發去）：They are going fishing.（他們正準備去釣魚／出發去釣魚了。）
 
 ## have fun + Ving 做某事時玩得開心
+fun 在這裡是不可數名詞，前面不能加 a。  
+接在 fun 後面的動作，必須改成 動名詞（-ing） 形態。
 - Have fun shopping! （逛街逛得開心點！）
 - Have fun traveling in Japan! （在日本旅行玩得愉快！）
 - Have fun drawing pictures!畫畫玩得開心點！／盡情享受畫畫的樂趣吧！
+- We had fun hiking last week.我們上週去健行玩得很開心。
 
+## 露營
+- I don't want to camp in the mountains! （我才不要去山裡露營！）
+- camp in the mountains（雖然偶爾會聽見，但語意比較偏向「待在山區裡進行露營活動」）
+- camp out in the mountains（最道地的說法，強調在戶外搭帳篷露營）
+- go camping in the mountains（去山裡露營）

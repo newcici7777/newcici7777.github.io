@@ -135,4 +135,54 @@ for 把「工具」和「食物」在一起，意思就完全包含「拿這個�
 ## 其它
 - for the last time 最後一次
 
+## 評價類形容詞固定搭配「for」
+easy, hard, difficult, important, possible, impossible
+
+- Fishing is not easy for me.（釣魚對我來說不容易。）
+- Math is hard for him.（數學對他來說很難。）
+- English is important for us.（英語對我們很重要。）
+
+客觀的難易度、重要性與影響（對我而言……）
+- Fishing is not easy for me. （釣魚對我來說不容易。）
+- Math is too difficult for me. （數學對我來說太難了。）
+- Regular exercise is good for me. （規律運動對我有好處。）
+- Getting enough sleep is important for me. （有充足的睡眠對我很重要。）
+- Spicy food is too hot for me. （辣食對我來說太辣了。）
+
+表達「為了我」的目的或利益
+- She bought a nice gift for me. （她幫我買了一份好禮物。）
+- I made a cup of coffee for me. （我為自己泡了一杯咖啡。）
+- Is there any message for me? （有我的留言嗎？／有為了我的訊息嗎？）
+- This job is a great opportunity for me. （這份工作對我來說是一個絕佳的機會。）
+- Can you save a seat for me? （你可以幫我留一個位子嗎？）
+
+表達「替我／代勞」的含意
+- Could you open the door for me? （你可以幫我開一下門嗎？）
+- Please check this document for me. （請幫我檢查一下這份文件。）
+- He carried the heavy bag for me. (＝ He helped me carry the heavy bag.) （他幫我提這個重包包。）
+- Will you do me a favor? Order lunch for me. （你能幫我個忙嗎？幫我點午餐。）
+- Thanks for me? No, thanks to you! （這句日常趣味對比：謝謝我？不，是謝謝你！）
+
+
+## 個人的觀點、意見、感覺，動詞是傳遞搭配「to」
+- To me, fishing is boring.（在我看來，釣魚很無聊——這純粹是我的主觀意見。）
+- That sounds like a good idea to me.（這聽起來是個好主意——依我的感覺。）
+
+動詞是傳遞
+- Please explain it to me.（請把它解釋給我聽——說話的對象是我。）
+- She said to me, "Hello."（她對我說：「你好。」）
+
+表示「對我而言／聽起來對我怎樣」（感受、觀感）
+- That sounds like a great plan to me. （聽起來這對我來說是個很棒的計畫。）
+- The color red looks good to me. （紅色在我看起來挺好看的。）
+- This coffee tastes a bit bitter to me. （這杯咖啡對我來說喝起來有點苦。）
+- Her explanation seemed clear to me. （她的解釋對我而言似乎很清楚。）
+- It doesn't make any sense to me. （這對我來說完全講不通／我完全聽不懂。）
+
+作為動作傳遞的對象（說、給、解釋……給我）:
+- Please explain the rules to me. （請把規則解釋給我聽。）
+- He whispered a secret to me. （他向我耳語了一個秘密。）
+- Read the letter to me, please. （請把信讀給我聽。）
+- She threw the ball to me. （她把球丟給我。）
+- Tell the truth to me. （把真相告訴我。）
 

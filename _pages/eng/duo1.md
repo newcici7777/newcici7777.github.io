@@ -163,14 +163,62 @@ gone 是形容詞用來形容一種「不在、離去、離開了」的狀態。
 
 
 ## 大自然
+### mountains
 為什麼 mountain 要加 s 變成 mountains？  
 大自然的山通常不是孤立的一座山，而是連綿起伏的山脈系統。因此，英文習慣用複數的 the mountains 來統稱「山區」、「群山」。  
 
-常見的類似自然景觀複數：
 - in the mountains（在山區裡）
+  - We camped in the mountains.（我們在群山「之中／山區」露營。）
+- on the mountain(沒加s)
+  - The chickens live on the mountain.雞住在這座山上
+  - 指的是那座特定的「山（表面／山坡上）」。
+  - There is a small house on the mountain.（山上有棟小房子。）
+
+### rivers
+river（河流） 加 s 變成 rivers，通常是最直觀的「複數名詞」用法，用來指「多條河流」，或者泛指大自然中的河川。
+- There are many rivers in Taiwan. （台灣有許多河流。）
+- We love exploring nature, including forests, lakes, and rivers. （我們喜歡探索大自然，包括森林、湖泊和河流。）
+
+講其中某一條特定的河，前面通常會加上定冠詞 the，而且用單數形：
+- We went swimming in the river. （我們去那條河游泳了。）
+
+### 自然景觀複數：
 - in the woods（在森林裡）
 - in the fields（在田野裡）
+- rivers（河流們）
+- lakes（湖泊們）
 
+## good(形容詞) at / bad at 擅長/不擅長
+```
+[主語] ＋ [be 動詞] ＋ good at  ＋ [名詞 或 動名詞(-ing)]
+```
+- Is she good at Spanish? 她擅長西班牙語
+- He is bad at math.（他數學不好—— math 是名詞）
+- I am good at cooking.（我很擅長料理—— cooking 是動名詞）
+-  I'm really bad at baking.我烘焙真的很差
+
+表示「在某個領域、某項技能上表現得如何」時，習慣使用介系詞 at 來定位方向或範圍。  
+類似的「形容詞 ＋ at」用法還有：
+- clever at...（聰明於……）
+- poor at...（不擅長於……）
+- skilled at...（熟練於……）
+
+
+## good(形容詞) for 對……有益／有好處
+- Is playing soccer every day good for you?每天踢足球對你有好處嗎？
+- Eating vegetables is good for you.（吃蔬菜對你有好處。）
+- Reading is good for children.（閱讀對孩子們有好處。）
+- Sunlight is good for plants.（陽光對植物有好處。）
+- Regular exercise is good for your heart.（規律運動對你的心臟有好處。）
+- Rest is good for dogs.（休息對狗狗有好處。）
+
+
+
+## 泛指習慣或經常性活動
+- Do you often have barbecue**s**?你們經常舉辦烤肉活動嗎？
+  - 句尾的 barbecues 變成了複數形，泛指習慣或經常性活動
+- Do you play video games?（你常打電動嗎？——泛指遊戲）
+- Do you have parties?（你們常辦派對嗎？——泛指派對）
 
 
 

@@ -57,6 +57,24 @@ from 從哪個基準點開始算起
 - The station is far away from the hotel.（車站離飯店很遠。）
 - Is the museum far away from here?（博物館離這裡很遠嗎？）
 
+## Far 遠的
+Far（遠的）➔ 常用在「否定句」與「疑問句」
+- 疑問句： Is it far?（很遠嗎？）
+- 否定句： It's not far from here.（離這裡不遠。➜ far 習慣搭配 from 喔！）
+
+肯定句
+- It's far away.（在很遠的地方。）
+- It's really far.（真的很遠。）
+- It's a long way.（那是一段很長的路 ➔ 口語超常用！）
+
+## close to / far from
+
+|距離|常用講法|大腦的空間畫面|
+|:-----|:--------|:-----------|
+|近 (Close)|It is close to my house.|離我家很近（往我家的方向一下就到 →）。|
+|遠 (Far)|It is far from my house.|離我家很遠（從我家出發要拉好遠的距離 ←）。|
+
+
 ## How far
 How far 專門問「實體距離（多遠）」，詢問空間上的「兩地之間的實際距離」（幾公里、幾英里、走幾步路）
 

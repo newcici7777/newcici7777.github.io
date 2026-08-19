@@ -108,6 +108,8 @@ Pay + 錢 + TO + 人 + FOR + 物
 - Ben spend time with his cat 
 - She spends a lot of time studying English.
 （她花很多時間讀英文。）
+- He spends an hour running every day.（他每天花一小時跑步。）
+
 
 ### 人 + spend + 時間 + 動作ing
 - I spent three hours **cleaning** my room.

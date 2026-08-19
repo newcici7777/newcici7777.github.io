@@ -21,8 +21,17 @@ too放在句子的最後面，前面(可加或不加)逗號
 
 ## too 副詞 太 ... (負面)
 too 放在be 動詞後面(太...)，作為副詞 
+
+修飾形容詞:
 - This is too dangerous!
+- It is too hot today.（今天太熱了。）
+- This shoes are too big.（這雙鞋子太大了。）
 - My new apartment is too small.  
+
+
+修飾副詞：
+- He drives too fast.（他開車開得太快了。—— fast 是副詞）
+- She ate too much.（她吃得太多了。—— much 在這裡當副詞）
 
 
 ## so 副詞 非常
@@ -43,8 +52,6 @@ so 是一個程度副詞，意思是「如此、非常、這麼」。
 ```
 - She was so tired that she fell asleep immediately. （她累得以至於馬上就睡著了。）
 
-## very much,super,so very,quite（相當）
-- She was super excited when she won the prize. （她得獎時超級無敵興奮。）
 
 ## 頂級形容詞
 有些形容詞本身就已經是「最極端」的意思了，不能使用very，要用really,so,super修飾
@@ -52,10 +59,16 @@ so 是一個程度副詞，意思是「如此、非常、這麼」。
 - exhausted 已經是精疲力竭）。
 - surprised（驚訝的）
 - excited（興奮的）
- 
+
+
 - I'm really excited to meet him. 
 - It's so exciting!
 - This cake is really delicious!（這蛋糕真的太美味了！）
 - I am really exhausted.（我真的精疲力竭了。）
   - really可改為 completely（完全地）、totally（完全地）或 absolutely（絕對地、簡直）
-  
+- She was super excited when she won the prize. （她得獎時超級無敵興奮。）
+
+## 其它副詞
+- pretty（相當、還算）
+- quite（相當）
+- very much

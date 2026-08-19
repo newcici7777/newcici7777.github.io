@@ -27,6 +27,9 @@ have 的核心語感：「體驗、享受、容納」
 ## 烤肉
 have 吃和活動或聚會搭配時，它代表的是「進行、享受、舉辦」的意思
 -  Are they having a barbecue? 他們正在烤肉嗎？／他們正在辦烤肉趴嗎？
+- Do you often have barbecue**s**?你們經常舉辦烤肉活動嗎？
+  - 句尾的 barbecues 變成了複數形，泛指習慣或經常性活動
+- I had a barbecue with Ben yesterday. 我們上週末辦了一場很棒的烤肉。
 
 ## have 活動
 在英文中，have 是一個功能非常強大的「萬用動詞」。當它後面接某些名詞（特別是活動、對話、會議等）時，它代表的是「進行（某個動作或互動）」，而不是「擁有」。

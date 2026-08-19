@@ -6,8 +6,6 @@ keywords: 其它
 ## 身份
 She's a teenager.
 
-
-
 ## invite 人 to 目的地
 - They are not going to invite us to the party(他们不打算邀请我们参加舞会。)
 - Do we need to invite him to the party?
@@ -282,6 +280,24 @@ fall off + 掉落的地方
 ### together修飾動詞（放在動詞後面，表示「一起做某事」）
 - We worked together on the project.（我們一起合作這個專案。）
 - Let's sing together.（我們一起唱歌吧。）
+
+### 與with在一起，together放在句尾
+```
+[動作] ＋ [某人/某事] ＋ together
+```
+- I like baking together with my son. 
+- We cooked dinner together. （我們一起煮晚餐。）
+- She went to the park with her friends together. 
+  - 「together」在有 with 的時候經常被省略
+- We baked with each other together.（強調彼此陪伴且一同完成）
+
+### 在主詞後面
+ together 直接放在主語後面，用來強調「兩個人（或多個人）一同採取了某個行動」。
+```
+[主語] ＋ together ＋ [動詞]
+```
+- We together built this house. （我們共同建造了這棟房子。）
+- They together decided to move. （他們一同決定搬家。）
 
 
 ## an add for 

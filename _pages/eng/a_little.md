@@ -5,7 +5,7 @@ keywords: English
 ---
 - I'm only a little older than you!
 
-## 修飾比較級(副詞) 一點點
+## a little(副詞) 修飾比較級(副詞) 一點點
 如果只說 "I'm older than you."（我比你大），聽起來很平淡。但如果你想強調「程度只有一點點」，就可以在比較級前面放上 a little 來當修飾語（副詞）：
 ```
 a little + 比較級（older / taller / cheaper...）
@@ -15,23 +15,61 @@ a little + 比較級（older / taller / cheaper...）
 - This bag is a little cheaper than that one. → 這款包包比那個便宜一點點。
 - Can you speak a little slower? → 你可以講得慢一點點嗎？
 
-## 修飾「形容詞 / 副詞 / 比較級」（相當於中文的「一點點……」）
-後面直接接形容詞，用來表示程度輕微，程度副詞
+## a little(副詞) 修飾 形容詞 / 副詞 / 比較級 (一點點)
+a little用來表示程度輕微，程度副詞
 
+修飾形容詞:
 - a little hot（有一點熱）
 - a little late（有一點遲到）
 - a little older（有一點點大 / 年長一點點）
-- I speak a little English.我说一点点英语。
-- I speak Chinese and a little English.我说中文和一点点英语。
 - Phil is a little shy. （菲爾有一點害羞。）
 - I am a little hungry.（我有一點餓)
+
+修飾動詞
+- I speak a little English.我说一点点英语。
+- I speak Chinese and a little English.我说中文和一点点英语。
 
 ## not a little 一點也不
 - Phil is not a little shy. （菲爾一點也不害羞。）
 
-## 修飾動詞 只能放最後面
+## a little(副詞)修飾動詞 只能放最後面
 - Move forward a little.往前挪一點點 
 - I like it a little.（我有一點點喜歡它。）
+
+## a bit of(形容詞) + 名詞
+後面有接名詞時：一定要加 of
+
+當 a bit 後面直接接東西（名詞）時，它扮演的是「數量單位」的角色，of 就是那個橋樑。
+
+- A bit of sugar.（一點點糖。）
+- A bit of time.（一點點時間。）
+- A bit of English.（一點點英文。）
+
+## a bit(副詞)
+後面沒有接名詞時：絕對不能加 of  
+當它獨立出現，單純當作「副詞片語」來修飾形容詞或動詞時，它就不需要 of。
+- I'm a bit tired.（我有一點累。—— a bit 修飾形容詞 tired）
+- Can you move a bit?（你可以稍微移動一下嗎？—— a bit 修飾動詞 move）
+- It's a bit cold.（有一點冷。）
+
+## 副詞片語
+好幾個副詞組合在一起。
+```
+a little(副詞) + bit(副詞) = 一點點
+```
+修飾動詞
+- Can you slow down a little bit?（你可以稍微放慢一點速度嗎？）
+- It hurts a little bit.（會稍微痛一下。）
+
+修飾形容詞
+- I am a little bit tired today.（我今天有點累。）
+- This box is a little bit heavy.（這箱子有點重。）
+
+修飾名詞(因為a bit of修飾名詞會保留of)  
+只要後面想直接接具體的人事物名詞，就把 of 補回來：  
+- I know a little bit **of** Spanish.（我懂一點點西班牙文。）
+- Give me a little bit **of** water.（給我一點點水。）
+
 
 ## 修飾「不可數名詞」（相當於中文的「一點點［量］」）
 - 文法： 當量詞使用時，後面一定要接「不可數名詞」（例如水、時間、錢、睡覺等）。

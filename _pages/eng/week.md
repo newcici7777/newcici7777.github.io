@@ -68,8 +68,9 @@ Is it 星期?
 - during the weekend 在週末期間
   - I like to relax during the weekend.（我喜歡在週末放鬆。）
   - The weather was nice during the weekend.（週末那幾天的天氣很好。）
-- the weekend 週末的時候
+- the weekend 單指週末這個「時間」
   - He spent the weekend with his family. （他和家人一起度過週末。）
+  - 人 + spent + 時間 + with 人
 - on the weekend.在週末 (要根據時態判斷是本週還是上週)
   - What are you doing on the weekend?（你這週末要做什麼？）
   - I went to the beach on the weekend.（我上週末去海邊了。——如果動詞是過去式 went，上下文就會讓對方知道是指剛過完的那個週末）
