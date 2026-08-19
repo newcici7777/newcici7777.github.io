@@ -100,7 +100,8 @@ for 把「工具」和「食物」在一起，意思就完全包含「拿這個�
 
 ## for 目的
 - I need to buy lots of fruit for a party.
-
+- Junior is helping Zari with an art project for school. （Junior 正在和 Zari 一起處理一項美勞專案)
+  - an art project for school（為了學校而做的美勞專案)
 
 ## for 預約時間 日期
 預約、安排時間（例如約時間開會、看醫生、訂位）時， for 理解成 「把……保留給」 或 「預定在……時刻」 

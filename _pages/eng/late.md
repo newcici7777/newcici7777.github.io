@@ -3,6 +3,25 @@ title: late遲到 later之後
 date: 2026-08-17
 keywords: English, late, later
 ---
+
+## 時間先後
+
+|單字|詞性|中文|例句|
+|:-------|:------|:-------|:---------------|
+|late|形容詞|遲到|He was late.（他遲到了)|
+|late|副詞|很晚|He likes to work late at night.他喜歡在深夜工作。|
+|later|形容詞|後續/之後|We can talk about this in a later class.我們可以在後續的課程中討論這個。|
+|later|副詞|之後|Ten minutes later.(10分鐘之後)|
+|the latest|形容詞|最新的|This is the latest news.（這是最新消息。）|
+
+## 排列順序
+
+|單字|詞性|中文|例句|
+|:-------|:------|:-------|:---------------|
+|the last|形容詞(最高級)|最後的|This is the last bottle.（這是最後一個瓶子了。）|
+|last|形容詞(最高級)|上一個|I saw him **last week**.(我**上星期**看到他)|
+|last|副詞|上一次|When did you **last** see him?（你**上次**是什麼時候看到他的？）|
+
 ## late 遲到(形容詞)
 ```
 He (主詞) + was (動詞) + late (形容詞)
@@ -10,11 +29,9 @@ He (主詞) + was (動詞) + late (形容詞)
 Late 是指一個「狀態」（例如：人遲到了、時間已經很晚了）。
 
 ### late 形容詞放在前面
-單純為了「限定」這個東西是什麼（例如：the late train 指的是那班誤點的火車）。
-- A red apple (一顆紅色的蘋果)
-- A busy day (一個忙碌的日子)
+- the late train 指的是那班誤點的火車
 
-### late 形容詞放在後面
+### late 形容詞放在be動詞後面
 為了「宣告、描述」這個人或東西現在的狀態（例如：He was late 描述他當時處於遲到的狀態）。
 
 be 動詞（is, am, are, was, were）或連綴動詞（look, feel, become）來描述主詞的「狀態」時，形容詞late就會跑到動詞後面。
@@ -25,12 +42,12 @@ be 動詞（is, am, are, was, were）或連綴動詞（look, feel, become）來�
 - He is busy.（他很忙。→ busy 在 is 後面）
 - He was late.（他遲到了。→ late 在 was 後面，也就是我們剛剛討論的那句！）
 
-### Late（形容詞 / 副詞）— 指「遲到、晚的」
+### late（形容詞 / 副詞）— 指「遲到、晚的」
 當形容詞（修飾人或時間）：
 - I am late.（我遲到了。）
 - This is a late train.（這是一班誤點／開很晚的火車。）
 
-### Late當副詞
+### late當副詞
 #### 在很晚的時候
 - Don't work too late.（不要工作到太晚。）
 - He likes to work late at night.他喜歡在深夜工作。
@@ -72,10 +89,11 @@ ten minutes（名詞）是被抓來當作「副詞」用的，用來補充說明
 - ten minutes later
 ten minutes（十分鐘）是副詞（表達時間的長度）去修飾later(副詞)，用來說明 副詞later 到底幾分鐘或幾小時「之後」。
 
+- See you later.（待會見。）
 - I will call you later.（我稍後打給你。）
 - Ten minutes later, he left.（十分鐘後，他離開了。）
 
-### later(形容詞) 接下來、比較後面
+### later(形容詞) 接下來、之後的
 - In later versions of the software...（在該軟體的後續版本中……）
 
 - We can talk about this in a later class.我們可以在後續的課程中討論這個。
@@ -103,6 +121,37 @@ later（形容詞）＝ 後續的、更晚的
 
 - late class ＝ 遲開的課（或很晚的課）
 - later class ＝ 後續的下一堂課
+
+## latest（形容詞的最高級）
+意思：「最晚的」，但在現代英文中，最常用的意思是「最新的、最近的」（指資訊、科技產品或流行趨勢）。
+- 例句：Have you heard her latest song?（你聽過她最新的歌嗎？）
+- 例句：This is the latest news.（這是最新消息。）
+
+--------------------------
+
+## the last(形容詞最高級) 最後
+the last 當作形容詞，表示「最後一個」時，因為是獨一無二的，所以一定要加 the。
+- This is the last bottle of water.（這是最後一瓶水。）
+- He was the last person to arrive.（他是最後一個到達的人。）
+- He is the last person to know.（他是最後一個知道的人。）
+
+## my last 我的最後 ...
+當名詞前面已經有所有格（my, your, his 等）或指示代名詞（this, that 等)  
+一個名詞前面不能同時放兩個限定詞（例如不能同時有 the 和 my）。
+- This is my last chance.（這是我的最後機會。——因為有 my，所以不加 the）
+- Is this your last decision?（這是你最後的決定嗎？）
+
+## last 上一個（時間副詞/形容詞）
+當你想表達「上星期」、「上個月」、「去年」時，last 前面絕對不能加 the。
+- I saw him last week.（我上星期看到他。——❌ 不能說 the last week）
+- We met last month.（我們上個月見過面。）
+- She graduated last year.（她去年畢業。）
+
+## last 副詞（表示「上次」）
+當它用來修飾動詞，表示動作發生的時間點時，不需要加 the。
+- When did you last see him?（你上次是什麼時候看到他的？）
+
+## at last 終於
 
 --------------------------------
 

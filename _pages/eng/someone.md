@@ -3,6 +3,15 @@ title: someone
 date: 2026-08-09
 keywords: English
 ---
+## Someone（不定代名詞）
+someone、anyone、everyone、nobody 
+
+這一類字，雖然語意上可能指很多人，但在文法上一律視為「第三人稱單數」。
+
+它後面的動詞必須用單數形。
+- Someone is knocking on the door.（有人在敲門——用 is 而不是 are）
+- Someone drank all the other bottles! Someone drank all the other bottles! 
+
 ## both A and B
 - both Anna and I love our new house!
 - Both Times Square and Wall street are in New York.
