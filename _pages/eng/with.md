@@ -26,13 +26,34 @@ I have a problem with + **讓你頭痛的人/事/物**
 - Coffee with sugar.
 - I would like a pizza with cheese, please.我想要一个加芝士的比萨，谢谢。
 - With milk?加牛奶？
+- My daughter likes to have cereal with milk.她喜歡吃加牛奶的麥片。
 
-## pay with a credit card/cash
+## with 配料
+用什麼材料來做某件事」或「某個東西裡含有/配有什麼」時，英文就會使用 with。
+
+- Cooking with carrots（用紅蘿蔔做菜 / 以紅蘿蔔作為食材）
+- Cooking with garlic（用大蒜烹調）
+- A cake with chocolate（加了巧克力/含有巧克力的蛋糕）
+
+## with 的核心意思是「搭配、伴隨」
+- You can eat it with meat and vegetables.（你可以把它跟肉和蔬菜一起吃。）
+  - 肉和蔬菜是陪襯、伴隨在一起下肚的佐料或配菜。
+- We can eat hot pot with tofu tonight!（我們今晚可以吃加了豆腐的火鍋)
+
+## with 使用
+用在工具：
+- Write with a pen（用原子筆寫字）
+- Cut it with a knife（用刀子切它）
+
+
+
+## pay with a credit card/cash/Linepay
 - Would you like to pay with a credit card?你想要用信用卡付钱吗？
 - I usually pay with a credit card.我平时用信用卡付钱。
 - Can I pay with cash?
 - I would like to pay with cash.我想付现金。
-
+- pay with Linepay.用Linepay 付款
+- You can use Linepay.你可以用Linepay
 
 ## help me with 事情
 ```

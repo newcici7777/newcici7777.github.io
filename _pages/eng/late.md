@@ -85,13 +85,25 @@ ten minutes（名詞）是被抓來當作「副詞」用的，用來補充說明
   - ten minutes（十分鐘）是名詞片語(副詞)，放在 形容詞 late 前面，用來補充說明「到底遲到了多久」。
 
 ## later(副詞) 稍後、過了一陣子「之後」
-### later 當副詞（表示「過了一陣子之後」）：
-- ten minutes later
-ten minutes（十分鐘）是副詞（表達時間的長度）去修飾later(副詞)，用來說明 副詞later 到底幾分鐘或幾小時「之後」。
+### 數字 + 時間單位 + later 「多久時間之後」
+```
+[數字] + [時間單位 (minutes/hours/days...)] + later
+```
+- 10 minutes later = 10分鐘後
+  - 10 minutes（十分鐘）是副詞（表達時間的長度）去修飾later(副詞)，用來說明 副詞later 到底幾分鐘或幾小時「之後」。
+- 2 hours later = 2小時後
+- 3 days later = 3天後
 
+例句:
+- Ten minutes later, he left.（十分鐘後，他離開了。）
+- He left the house, and ten minutes later, it started to rain.（他離開了房子，10分鐘後就開始下雨了。）
+
+- `in ten minutes` 10分鐘之後 (與10 minutes later相同意思)
+  - I will be ready in 10 minutes.（我 10分鐘後 就準備好。）
+
+### later 當副詞（表示「過了一陣子之後」）
 - See you later.（待會見。）
 - I will call you later.（我稍後打給你。）
-- Ten minutes later, he left.（十分鐘後，他離開了。）
 
 ### later(形容詞) 接下來、之後的
 - In later versions of the software...（在該軟體的後續版本中……）
@@ -100,6 +112,18 @@ ten minutes（十分鐘）是副詞（表達時間的長度）去修飾later(副
   - 這堂課時間不夠了，老師說把問題留到「接下來、比較後面」的那堂課再說。
 - Let's discuss this project at a later date.我們改天（在稍後的日期）再討論這個專案吧。
   - 這裡的 later 也是形容詞，用來修飾名詞 date（日期），指「未來的某個更晚的日期」。
+
+## later 過去式 「更晚」
+- We got back late last night.我們昨晚很晚才回來。
+- We got back later last night.我們昨晚回來得比預期（或比平常）還要『更晚』。)
+  - later 當成比較級
+  - later在未來式是「之後」
+  - later在過去式是「更晚」
+  - 動作發生在昨晚（過去），所以它不可能變成「未來式的之後」。
+  - 它隱含了一個比較的語氣（可能原本預計十點到，結果後來十一點才到）。
+
+- 單獨用（通常跟未來有關） → later = 「等一下、稍後」（例如：I'll do it later.）
+- 放在動作後面（用來比較） → later = 「更晚、比平常晚」（例如：We arrived later than usual.）
 
 ## 副詞 late(遲) vs later(之後)
 
@@ -134,6 +158,9 @@ the last 當作形容詞，表示「最後一個」時，因為是獨一無二�
 - This is the last bottle of water.（這是最後一瓶水。）
 - He was the last person to arrive.（他是最後一個到達的人。）
 - He is the last person to know.（他是最後一個知道的人。）
+- This is the last bus tonight.（這是今晚最後一班公車。）
+- Who was the last person to leave?（誰是最後一個離開的人？）
+
 
 ## my last 我的最後 ...
 當名詞前面已經有所有格（my, your, his 等）或指示代名詞（this, that 等)  
@@ -152,6 +179,21 @@ the last 當作形容詞，表示「最後一個」時，因為是獨一無二�
 - When did you last see him?（你上次是什麼時候看到他的？）
 
 ## at last 終於
+- At last, the rain stopped.（雨終於停了。）
+- He found his keys at last.（他終於找到鑰匙了。）
+- At last, we finished the project.（我們終於完成這個專案了。）
+
+## last(動詞) 持續/持久
+表示時間能持續多久：
+- The meeting will last for an hour.（這場會議將會持續一個小時。）
+- How long will this food last?（這些食物可以耐放/持續多久？）
+- The bad weather will last for another two days. (持續) 壞天氣還會再持續兩天。
+
+表示東西耐用、不易壞：
+- This jacket is high quality; it will last for years.（這件外套品質很好，可以穿好幾年（很持久）。）
+- The battery doesn't last long.（這電池不持久／一下子就沒電了。）
+- These shoes are so well-made; they will last for years. (耐用／持久) 這雙鞋做工真好，可以穿好幾年。
+
 
 --------------------------------
 

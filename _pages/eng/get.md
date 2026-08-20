@@ -6,6 +6,7 @@ keywords: get
 ## 買
 - Do you want to get a tall bookcase or a short bookcase ?(你想要买一个高的书柜还是一个矮的书柜？)
 - Can we get tickets?(買機票)
+- Can you get a few tomatoes ?你可以買幾顆番茄嗎？
 
 ## 抵達
 - When will we get there?我們什麼時候會到那裡？

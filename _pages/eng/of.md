@@ -19,13 +19,10 @@ My son's birthday.
 所有格也可表示誰的  
 My birthday.   
 
-你知道那场比赛的时间吗？  
-Do you know the time of that game?  
-
-He is an important part of our team.
-
-那场比赛最令人兴奋的部分  
-the most exciting part of that game 
+- Do you know the time of that game?  你知道那场比赛的时间吗？ 
+- He is an important part of our team.
+- the most exciting part of that game.那场比赛最令人兴奋的部分   
+- Do you know the price of these carrots?你知道這些紅蘿蔔的價格嗎？ 
 
 ## to 的
 to用來表示「目標、對應關係或終點」

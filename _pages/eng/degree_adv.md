@@ -13,12 +13,6 @@ really 可以修飾動詞，但very不能修飾動詞。它可以表示「真的
 ### 修飾形容詞
 - It's really hot today!
 
-## too
-too放在句子的最後面，前面(可加或不加)逗號
-- Adults clean the table, too.(too 前加逗號 )  
-- I think you're beautiful too!(too 前不加逗號)  
-- there's sausage too!  
-
 ## too 副詞 太 ... (負面)
 too 放在be 動詞後面(太...)，作為副詞 
 

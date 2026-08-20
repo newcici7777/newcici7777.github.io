@@ -110,6 +110,9 @@ a little(副詞) + bit(副詞) = 一點點
 - A few of my friends are teachers.（我朋友中有幾位是老師。）
 - A few of them failed the test.（他們之中有幾個人考試沒過。）
 
+## few 幾乎沒有
+- We only have few eggs.（幾乎沒有，帶有負面感）
+如果把 a拿掉（只剩 few），意思會變成「幾乎沒有、少到不行」。再加上 only，會強調「慘了，只剩下可憐的寥寥幾顆」。
 
 ## fewer 比較級
 
@@ -122,7 +125,8 @@ a little(副詞) + bit(副詞) = 一點點
 - There are fewer cars on the road today.（今天路上的車子比較少。）
 
 ### fewer than + 可數名詞 不到
-- There are less than ten people in the room.（房間裡有不到十個人。）
+- There are fewer than ten people in the room.（房間裡有不到十個人。）
+
 
 
 ## a little vs. a few
@@ -163,15 +167,5 @@ a little(副詞) + bit(副詞) = 一點點
 想表達「語氣委婉、含糊、算是有點吧」 → 用 kind of（口語可說 kinda）
 
 
-## A kind of + 可數/不可數名詞  一種
-```
-a kind of + 可數/不可數名詞
-```
-kind 在這裡當名詞，意思是「種類」。前面的 a 是修飾 kind（一種）。
-
-- a kind of dog（一種狗）可數
-- a kind of music（一種音樂）不可數
-- a kind of fruit（一種水果）不可數
-- a kind of feeling（一種感覺）不可數
 
 

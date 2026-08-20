@@ -51,6 +51,11 @@ keywords: English,
 
 
 ## 關係代名詞
+關係代名詞 that 引導的子句，絕大多數情況下是「形容詞子句」（用來修飾前面的先行詞），而不是名詞子句。
+
+- It's the sweater we saw yesterday at the store! 
+  - 原句:The sweater which/that we saw yesterday at the store（我們昨天在店裡看到的那件毛衣）。
+
 關係代名詞是把二個句子「連接」在一起，
 
 * 原始兩句話：

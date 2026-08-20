@@ -29,3 +29,6 @@ be about to 是一個專門用來表達「事情即將在極短的未來發生�
 - The plane is about to land.（飛機馬上就要降落了 → 輪子可能已經準備放下來、快要觸地了。）
 - I am about to sleep.（我快要睡著了／我正準備要睡了 → 人已經躺在床上或準備關燈。）
 - Hurry up! The movie is about to start.（快一點！電影快要開始播了 → 燈光馬上就要暗下來了。）
+
+
+

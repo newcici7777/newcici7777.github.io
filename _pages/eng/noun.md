@@ -4,24 +4,32 @@ date: 2026-07-28
 keywords: countable , uncountable
 ---
 ## 不可數名詞
-- buy lots of fruit
+- **Is** there any water?（有水嗎？）
+- There **is** no tofu. 沒有豆腐。
+- buy lots of fruit.
 - Can you buy us some milk?
 - Ben spend time with his cat 
 - She spends a lot of time **reading** books.
 - Do we have milk in the refrigerator?
 - A lot of ice cream!
 - But can we still have ice cream today
+- We don’t have much milk.我們沒有很多牛奶。
 
 ## 可數名詞
-- Let's cook some beans.
-- She'll buy her parents some beans.
-- Duo will give me some potatoes tomorrow.
+- These grape**s** look good! 這些葡萄看起來很好吃耶！
+- Let's cook some bean**s**.
+- She'll buy her parents some bean**s**.
+- Duo will give me some potato**es** tomorrow.
 - I love these flower**s**
-- We watched cartoons yesterday morning.(卡通加s)我们昨天早上看了卡通片。
+- We watched cartoon**s** yesterday morning.(卡通加s)我们昨天早上看了卡通片。
 
 
 ## Cake Pizza可為可數/不可數
-- It's a very small cake.(a有數量，代表可數)
+- No, this **isn't** cake.這不是蛋糕嗎？
+- How **much** cake **is** there?（有多少蛋糕？）
+- There **is** no pizza in the kitchen.廚房裡沒有披薩了
+- **Is** there any pizza in the kitchen?
+- It's a very small cake.(a有數量，代表可數，這邊沒有a)
 - I like to make cakes.(cake可數，後面加s)
 - I love cake. cake不可數，後面不加s
 - I like pizza. pizza不可數，後面不加s
@@ -33,8 +41,22 @@ keywords: countable , uncountable
 - five pizzas.五个比萨
 
 ## 不可數名詞 + 容器單位
+前面的數字超過 1，這個單位名詞就一定要變成複數形，也就是在後面加上 -s。
+- A gram of sugar.一公克糖
+- Two gram**s** of peper
 - A cup of tea.一杯茶，
 - Two cup**s** of tea.
+- Can I have a piece of fruit.我可以吃一塊水果嗎？
+- There is only one gram of sugar in this drink. （這杯飲料裡只有一公克的糖。）
+- How many grams of sugar are in this snack? （這個零食裡有多少公克的糖？）
+
+## 容器單位 影嚮動詞「單複數」
+- This bag of potatoes is very heavy. 這袋馬鈴薯很重
+  - Be 動詞單複數的主角，不是後面的 potatoes，而是前面的 This bag（這袋）
+  - 袋子「裡面裝的」是好幾顆馬鈴薯（potatoes），但你真正的主詞是「袋子（bag）」本身。
+一個袋子 → 它是單數。
+- This box of cookies **is** on the table.這箱餅乾在桌上
+
 
 ## 一片一片 slices Pieces
 - Pizza（披薩）
@@ -83,6 +105,8 @@ There are twelve bottles of waterin the fridge.(冰箱裡有 12 瓶水。)
 - rock music（搖滾樂 —— 關於 rock 的音樂）
 - ice hockey（冰球 —— 在冰上打的曲棍球）
 - football（美式足球 —— 用腳踢的球）
+- a shopping cart（購物車）
+- a shopping bag（購物袋
 
 
 ```
@@ -96,3 +120,4 @@ There are twelve bottles of waterin the fridge.(冰箱裡有 12 瓶水。)
 用「of」倒回來想：
 - 一杯裝咖啡的杯子 → a cup of coffee → 倒過來就是 coffee cup。
 - 一所高中的老師 → a teacher at a high school → high school teacher。
+

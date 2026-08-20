@@ -11,6 +11,13 @@ keywords: english,only
 - Only children can understand.（只有小孩懂。）
 - It's only five o'clock. Is the cafe closed?才五点。咖啡厅关门了吗？
 
+## Only 修飾「受詞 / 名詞短語」（強調「僅僅是這個東西，沒有別的」）
+- I bought only one ticket for the concert. （我只買了一張音樂會的票。 → 沒有買多張）
+- She ordered only a cup of water at the expensive restaurant. （她在這家昂貴的餐廳只點了一杯水。 → 沒點其他餐點）
+- He has only five dollars in his wallet. （他的皮夾裡只剩五塊錢。 → 窮得只剩五塊）
+- We need only three more volunteers for the event. （我們這場活動只需要再三個志工。 → 不需要太多）
+- I read only the first chapter of the book. （我只看了這本書的第一章。 → 後面沒看
+
 ## only(副詞) + 動詞 只是
 only 修飾動詞時：它放在動詞前面，是用來限定這個動作的範圍或程度
 - I was only gone for a week!我只是離開一個禮拜
@@ -21,7 +28,17 @@ only 修飾動詞時：它放在動詞前面，是用來限定這個動作的範
 ## only(副詞) + 形容詞 只是
 only 是個副詞（Adverb），用來限定範圍，意思是「只有、僅僅」。
 - He was only seven years old then.他当时只有七岁。
+- She arrived only five minutes late. （她只遲到了五分鐘。 ）
 - The test was only a little difficult.（這個考試「僅僅」有一點難。）
+
+## Only 修飾「副詞 / 介系詞片語」（強調「剛好」）
+- I finished the report only yesterday. （我直到昨天才完成這份報告。 → 昨天才剛好做完）
+
+## Only 修飾「副詞 / 介系詞片語」（強調「僅在某個時間或條件下」）
+- You will pass the exam only if you study hard. （你唯有認真讀書，才會通過考試。 → 別無他法）
+- We can solve this problem only by working together. （我們唯有透過合作才能解決這個問題。 → 沒有其他方法）
+- He can speak French only when he is in Paris. （他只有在巴黎的時候才會說法文。 → 離開巴黎就不說
+
 
 ## the only 唯一
 放在名詞前面，意思是「僅有的、唯一的」，前面通常會加定冠詞 the。

@@ -6,22 +6,30 @@ keywords: English
 跟移動、前往有關的名詞，後面會加上 to 地點
 
 ## Take + 交通工具、大眾運輸 to 地點
-- take a train / take a bus（搭火車／搭公車）
-  - Let's take a bus.（我們去搭公車吧。）
+當人們問要不要坐公車時，通常是指當地的那條特定公車路線、固定班次，所以常用the
+
+- take the bus（搭火車／搭公車）
 - Take the train. 火車有時間表的用the
- - I usually take the train to work.（我通常搭火車去上班。）
 - take the subway.搭地鐵有時間表用the
 
-- Ben took a taxi to this store this morning.
-- I took the subway to the bookstore last weekend.I never take a bus there.
-- Our dog always takes the bus **to the park**.我们的狗总是坐公交车去公园。
+- I usually take **the** train to work.（我通常搭火車去上班。）
+- I took **the** subway to the bookstore last weekend.I never take a bus there.
+- Our dog always takes **the** bus to the park.我们的狗总是坐公交车去公园。
+- Do you want a taxi or **the** bus?
+  - 可以「任意」一輛計程車，所以用a
+  - 公車有固定班表，所以用the
 
+- Let's take a bus.（我們去搭公車吧。）隨意一輛公車
 
 ### take a 小車car
 - Take a car.
 - Take a taxi / an Uber（坐計程車 / 叫Uber）
 
+- Ben took a taxi to this store this morning.
 - How often do you take a taxi?你多久坐一次出租车？
+- Do you want the taxi now or later?你要現在叫車，還是等一下再叫？
+  - a taxi 是泛指「隨便叫一台計程車」，但如果用 the taxi 眼前已經停了一台你們正在討論的特定計程車。
+
 
 ## have a 交通工具
 如果你想表達「我們等一下有車要搭／我們有班次要趕」
@@ -31,6 +39,13 @@ keywords: English
 - We have a bus to catch.（我們有公車要趕。）
 
 ## 機票
+
+|票種|美式英文 (US)|英式英文 (UK)|
+|:-------|:-----------|:--------------|
+|單程票|One-way ticket|Single ticket|
+|來回票|Round-trip ticket|Return ticket|
+
+
 跟移動、前往有關的名詞，後面會加上 to 地點  
 ```
 ticket to 地點
@@ -41,6 +56,17 @@ ticket to 地點
 - Do you want a one-way ticket or a round-trip ticket?
 - Do you want a one-way ticket or a return ticket?
 - Are you looking for where the ticket is?
+
+買機票
+- I'd like to buy a round-trip ticket to New York.（我想要買一張去紐約的來回票。）
+- Can I have a return ticket to London, please?（請給我一張去倫敦的來回票？）
+- Can I have a single ticket to London?(單程機票去倫敦)
+- Can I get a single ticket to London?(單程機票去倫敦) get跟have代表買
+
+買一個人的機票
+- One ticket, please.（請給我一張票。）
+- A ticket for one, please.（我要一個人的票。）
+
 
 ## flight 航班、飛行行程、班次
 airplane（或 plane）指的是「實體機器

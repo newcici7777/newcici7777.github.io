@@ -31,6 +31,7 @@ How often（多常...）的問句，我們會把次數跟時間結合
 - five days a week. 一周五天
 
 例句:
+- Eddy and Mary run six times a week! Eddy 和 Mary 一週跑步六次！
 - I watered your plants three times every day!
 - Three times every day?!
 - I told you to water the plants three times every week!

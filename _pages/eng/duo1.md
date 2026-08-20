@@ -19,22 +19,6 @@ Is Duo **on your basketball team**?
 
 She's not **on** this baseball team.
 
-## also
-also放在動詞前面，意思是「也」
-- Adults also clean the table.  
-- Can we also have a big cake?
-- He also asked if I like cats.
-- I can also help you.（我也可以幫你。）
-- But it's also a very important song.
-
-放在be動詞後面 + also 
-- He is also a student.（他也是個學生。）
-
-## as well 也
-as well 放在最後，意思是「也」
-- Yes, I like the lunch as well.
-- Is Anna going to the party with us as well?
-- My friend will come with me as well.
 
 ## then 然後
 - It rained then snowed.(下雨然後下雪)
@@ -73,17 +57,38 @@ as well 放在最後，意思是「也」
 - I only want to look around.（我只想看看。）
 
 ## even 甚至
+### 放在一般動詞前面（強調連……都……）
+```
+主詞 + even + 動詞
+```
 even 副詞，even放在一般動詞前
 - He even asked about my family!(他甚至還問了我的家庭！)
+- He even forgot his own name. （他甚至連自己的名字都忘記了。 ）
+- She even knows how to fix a car. （她甚至知道怎麼修車。）
 
-be動詞後面放even
+### be動詞後面放even
 - He is even taller than his brother.（他甚至比他哥哥還要高。）
 - She can even speak French.（她甚至會說法文。）
 
+### 放在比較級前面（表示「更……」）
+even 可以加在比較級（er 或 more）的前面，這時的 even 等於中文的「甚至更……」或「還要更……」。
+```
+even + 比較級（er / more）
+```
+- Today is cold, but tomorrow will be even colder. （今天很冷，但明天會甚至更冷。）
+- This test is even more difficult than the last one. （這次考試甚至比上一次還要困難。）
+
+### 放在名詞前面（強調「連……都……」）
 放在名詞前面，強調名詞
 - Even a child can do this.（連小孩子都會做這個。）
+- Even a child knows that. （連小孩子都懂這個道理。）
+- Even my mom liked the movie. （連我媽都喜歡這部電影。）
 - He knows everyone, even me.（他每個人都認識，連我都認識。）
 
+### even 位置
+- 放動詞前 → 強調連這個動作都做出來了。
+- 放比較級前 → 強調程度加倍。
+- 放主詞前 → 強調連這個人/物都意想不到。
 
 
 ## 同位詞
@@ -105,10 +110,17 @@ be動詞後面放even
 - Where will you live next year?  你明年会住在哪里？(注意！這邊沒有in)  
 
 
-## stay in  
+## stay in  停留、待（在某個地方）
+指你在某個地方（例如：英國、飯店、朋友家）住了幾天、待了多久，而不是指永久定居。
 - They'll stay in Canada next year.他们明年会留在加拿大。 
 - Emma usually stays in the library at night.
 - We stayed in a small town in California last summer.
+- How many days did you stay in the UK?你在英國待了多少天？
+- stayed（過去式）
+  - I stayed in the UK for five days.（我在英國待了五天。）
+- stay at + 飯店/地方：指「投宿、寄宿在某處」
+  - I stayed at a nice hotel.（我住在一家不錯的飯店。）
+
 
 
 ## born 出生 (用被動式)
@@ -214,6 +226,38 @@ river（河流） 加 s 變成 rivers，通常是最直觀的「複數名詞」�
 - Do you play video games?（你常打電動嗎？——泛指遊戲）
 - Do you have parties?（你們常辦派對嗎？——泛指派對）
 
+
+## `go out` vs `go outside` vs `come with me` vs `went out停電`
+- Go outside（物理上的出去）：
+  - 重點：強調從「室內（inside）」走到「室外（outside）」這個實體的空間移動。
+  - It's sunny today. Let's go outside.（今天天氣很好，我們去外面吧。）
+  - The kids are going outside to play basketball.（孩子們正要到外面去打籃球。）
+- Go out（出去／社交／約會）：
+  - 重點：約會。
+  - Are they going out?（他們在交往嗎？）
+  - Do you want to go out for dinner tonight?（你今晚想出去吃晚餐嗎？）
+  - We rarely go out on weekdays.（我們平日很少出門（社交/吃飯）。
+- come with me（跟我來 / 跟我一起去）
+  - 重點：這只是指「方向和動作的陪伴」，沒有任何浪漫或曖昧的含意。
+- went out 停電
+  - The lights went out.（燈**熄滅（停電）**了。）
+  - The power went out last night.（昨晚停電了。）
+
+
+## accessories 配件
+- Do you want any laptop accessories or not?
+
+## in her free time
+- I like to read books in my free time.（我喜歡在我的空閒時間看書。）
+- What do you usually do in your free time?（你通常都在空閒時間做什麼？）
+
+## on 電子設備
+電子設備、螢幕、或是平面媒介（像是手機、電腦、網頁、紙張）時，習慣用介系詞 on，表示「在……的介面/畫面上」。
+
+- on my phone（在我的手機上）
+- on the computer（在電腦上）
+- on TV（在電視上）
+- on paper（在紙上）
 
 
 ## 其它疑惑

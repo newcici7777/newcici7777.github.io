@@ -3,6 +3,18 @@ title: someone
 date: 2026-08-09
 keywords: English
 ---
+
+| 家族成員 | 肯定句 / 問句 (期望肯定) | 否定句 / 疑問句 | 否定句專用 | 所有地方 |
+| :--- | :--- | :--- | :--- | :--- |
+| **地方** | **somewhere** (某處) | anywhere (任何地方) | nowhere (哪裡都沒有) | **everywhere** (各地/處) |
+| **東西** | something (某事/物) | anything (任何事/物) | nothing (沒東西) | everything (每件事情/物) |
+| **人** | someone (某人) | anyone (任何人) | no one (沒人) | everyone (每個人) |
+| **人** | somebody (某人) | anybody (任何人) | no body (沒人) | everybody (每個人) |
+
+## something
+- Do you want something to drink?（你要喝點東西嗎？）
+  - 雖然這是個問句，但因為主人期待你說「好啊」，所以用 something，而不是 anything。
+
 ## Someone（不定代名詞）
 someone、anyone、everyone、nobody 
 
@@ -11,6 +23,32 @@ someone、anyone、everyone、nobody
 它後面的動詞必須用單數形。
 - Someone is knocking on the door.（有人在敲門——用 is 而不是 are）
 - Someone drank all the other bottles! Someone drank all the other bottles! 
+
+## Anything / something / nothing more(形容詞) 後位修飾
+不定代名詞(Anything / something / nothing)，**形容詞必須放在它們的「後面」**
+
+more 是形容詞，所以放在不定詞後面。
+- There is nothing more to say.（已經沒有更多的話可以說了。）
+
+* **`more`** 不是副詞，它是形容詞，跟 `nothing` 綁在一起（表示「更多」的否定）。
+
+* 這裡的 **`to say`**（不定詞）是擔任**形容詞**的角色，用來往後修飾前面的 *nothing more*，意思是「（可以用來）說的（話）」。
+
+## 
+### somewhere(副詞) 「在某處」、「某個地方」
+- Is my wallet somewhere in the bedroom? 我的錢包在臥室裡的某個地方嗎？
+
+- 尋找物品時：
+  - I left my keys somewhere in the car.（我把鑰匙忘在車裡的某個地方了。）
+- 想去哪裡時：
+  - I want to go somewhere warm this weekend.（我這週末想去溫暖的某個地方玩。）
+- 問句應用：
+  - Is my phone somewhere on the desk?（我的手機在桌上的某個地方嗎？）
+
+### Anywhere副詞（任何地方 / 任何某一處）—— 用在「否定句與疑問句」
+- I can't find our car anywhere!（我到處都找不到我們的車！ → 否定句 can't 搭配 anywhere。）
+- Is there a restroom anywhere around here?（這附近任何地方有洗手間嗎？ → 一般疑問句。）
+
 
 ## both A and B
 - both Anna and I love our new house!

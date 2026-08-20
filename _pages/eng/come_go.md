@@ -231,12 +231,6 @@ Ahead 負責：「朝著前方、目標在前面」
 - Walk straight ahead for one block.
 （筆直往前走一個路口。）
 
-## 移動動詞 + right + to 直接
-- Walk right to the finish line.
-（直接走到終點線。）
-
-- Right here 就在這裡（right 強調精準，here 指這裡）
-- Right now 就是現在（right 強調立刻，now 指現在）
 
 ## 移動動詞 + directly to 直接(不停留)
 - Head directly to the meeting room.直接前往會議室。
@@ -285,8 +279,6 @@ home 本身就有方向，是副詞
 ## 移動動詞 + out
 - They moved out of the city.(他們搬出城市)
 
-
-
 ## with + 人 和誰一起
 動詞後面用with  
 - Who is going to the party with you?(誰和你一起去party )  
@@ -295,6 +287,8 @@ home 本身就有方向，是副詞
 
 ## come 回來 來
 - Lily is coming with me!(Lily 跟我一起來)
+  - come with me（跟我來 / 跟我一起去）
+  - 單純的「結伴同行、去某個地方」。這只是指「方向和動作的陪伴」，沒有任何浪漫或曖昧的含意。
 - My friend will come with me as well.
 - She's coming here with her boyfriend.
 - She's coming here now!

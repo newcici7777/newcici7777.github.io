@@ -52,7 +52,6 @@ Stop at [地點].（在……停下來）
 - Stop at the traffic light. 在紅燈處停下來
 
 ## directions 實體路標或導航指示
-- Are these the right directions?這些是正確的方向/指示嗎？
 - Follow the directions.（照著導航/指示走）
   - Just follow the directions on Google Maps.
 - Check the directions on my phone.(看我手機上的導航路線。）
@@ -115,14 +114,48 @@ east、west、south、north 當作移動方向時，直接放在動詞後面（d
 - This road does not go south.
 - Does this road go east?（這條路是向東開的嗎？）
 
-## on the left/right on地點方位
+## on the left/right 左邊右邊 
+```
+[主詞] + be動詞 + [方位]
+```
 - The bank is on the left.（銀行在左邊。）
 - The bank is on the left of the convenience store.
 - The pharmacy is on the left.（藥局在左邊。）
+- The restroom is on the left.（洗手間在左邊。）
+
+## `in 容器` + on the left/right 先容器，再左邊右邊 
+- My key is in the drawer on the left.我的鑰匙在左邊數過來的那一個抽屜
+  - 先說「容器in the drawer」，再說位置 
+- My phone is in the bag on the chair.（我的手機在椅子上的那個包包裡。）
+  - 先說「容器in the bag」，再說位置
+
+## on the left/right of 地方 (在某個建築的左側或右側)
+```
+on the left / right + of [基準物]
+```
+- Did we park on the right or on the left of the movie theater?
+- The store is on the left of the park.（店在公園的左邊 → 必須加上 of + 參考物）
+
+## on the left/right 用法比較
+- 純方位（沒基準物）：on the left 直接放句尾（The drawer is on the left.）
+- 雙層地點（物體在某個東西裡）：[in 容器] + [on the left]
+- 相對位置（在某個地標的左邊）：[on the left] + [of 基準物]
+
+## 上下左右
+- 在左邊 (on the left)
+  - The restroom is on the left.（洗手間在左邊。）
+- 在右邊 (on the right)
+- 在上面 (on the top)
+  - Your name is at the top of the list.（你的名字在名單的最上方。）
+- 在下面 (**at** the bottom)
+  - Click the button **at** the bottom.（點擊最底部的按鈕。）
+
 
 ## Trun轉 left/right 動作
+turn 在這裡當動詞，right 當副詞（或方向），用來指引方向
+```
 Trun left/right + at the ...
-
+```
 - Turn left at the next corner.（在下一個轉角向左轉。）
 - The driver turns left and stops the car.
 - Turn left at the end of the street
@@ -130,15 +163,23 @@ Trun left/right + at the ...
 - Turn right at the traffic light.（在紅綠燈右轉）
 - Turn left when you see the sign.（看到標誌時開車左轉。）
 
+
+
 ### trun for 距離 在多少距離後轉彎
 - I don't need to turn for three more miles.(三英里後轉彎)
 
 ## Go left/right
 - Go right at the traffic light.（在紅綠燈處往右轉/往右邊開。）
 
-## Keep left / Keep right（交通標誌常見）
-
-
+## Keep left / Keep right 靠右行駛 靠左行駛
+- Keep right on the stairs.
+（在樓梯上靠右走。）
+- Please Keep right when driving.
+（開車時請靠右。）
+- Keep left at the corner.
+（在轉角處靠左。）
+- You need to keep left here.
+（你在這裡需要靠左。）
 
 ## take a left/right 左轉右轉
 take 進行...某個動作，把動作變名詞

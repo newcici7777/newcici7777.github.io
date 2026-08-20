@@ -216,6 +216,9 @@ take a trip = 「去一趟旅行」，trip為可數名詞。
 be 代表「現在狀態」，on代表「進行中」 = 正在 ...
 - They are on a trip to Europe right now.他們目前正在歐洲旅行。
 
+### be on a business trip 出差
+- I'm on a business trip.
+
 ### go on a trip to 地方
 - She went on a trip to the campus yesterday.她昨天去校園了一趟。
 - We went on a trip to Paris. （我們去巴黎旅行 → 著重於「去了一趟」）
@@ -237,11 +240,6 @@ on this trip 介系詞片語作為副詞，修飾前面的動詞 bring，用來�
 
 ## vacation 放假、度假(名詞)
 ```
-go on vacation
-```
-vacation放假沒有 a，「on vacation」on是進行，vacation是放假，合在一起是介系詞片語，表達「在放假狀態」是抽象名詞，不加a、the（就像 on duty 值勤中、on sale 特價中一樣），所以前面不需要加 a。
-
-```
 take a vacation + to
 ```
 這邊的a vacation是可數名詞，一次、二次放假。
@@ -258,6 +256,7 @@ go 去/出發，注意！這邊沒有 a。
 
 「on vacation」是介系詞片語，on是進行中，表達「狀態」是「放假中」。  
 - We are planning to go on vacation to Europe this summer.我們計劃今年夏天去歐洲度假。
+- He went on a long vacation this summer.（他今年夏天去了一趟長假。）
 
 ### be on vacation in
 ```
@@ -271,6 +270,19 @@ be 動詞本身就代表「狀態」，on 是進行中，這邊的vacation是抽
 - They are currently on vacation in Japan.（他們目前在日本度假。）
 
 
+## be + on 狀態
+- I'm on a break.（我在休息/放風中。）
+- I'm on business.（這句更簡短，意思是「我因公出差中」。）
 
 
+## go on 原因
+go 本身是「去」，但加上 on 之後（go on），常常用來表示「進入某種狀態或活動」。
+除了度假外，這個組合在生活中非常百搭：
+- go on a trip（去旅行）
+- go on a date（去約會）
+- go on a business trip（去出差）
+- go on a diet（去節食／開始減肥）
 
+## on 進行中
+- on duty 值勤中
+- on sale 特價

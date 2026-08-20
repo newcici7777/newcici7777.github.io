@@ -22,6 +22,10 @@ keywords: make
 - But let's make dinner now!
 - We can make a pizza!
 
+## 列清單
+- Let's make a list. 我們來列個清單吧！
+- I can make a shopping list on my phone.我可以在手機上製作購物清單。
+
 ## 預約
 「預約、約定」這類抽象的行程或安排時，最常搭配的動詞就是 make，Make 的其中一個核心意思是「製造、安排、促成」。
 - make an appointment 是一個固定的黃金組合。
@@ -35,3 +39,4 @@ keywords: make
 ## call a doctor 預約
 - You look terrible. You should call a doctor.（你看起來氣色很差，你應該打個電話給醫生。）
 - She called a doctor yesterday.（她昨天打電話給醫生了）
+

@@ -14,3 +14,16 @@ keywords: english, put
 ## put gas in 加油
 put 是「放、注入」，gas 是「汽油」，in 是「進去、裡面」。
 - But I put gas in the car ten minutes ago. 
+
+## put on 塗抹
+```
+put + [物品] + on + [表面/地方]
+```
+- Don't put too much butter on my bread.不要在我的麵包上放太多奶油。
+
+## put on 放上去
+- Please put some cheese on the pizza.（請在披薩上放一些起司。）
+
+## put on 穿上、戴上
+在衣物配件的語境中（額外補充，意思不同）：當後面接衣服時，put on 就會變成「穿上、戴上」。
+- Put on your jacket.（把你的外套穿上。）

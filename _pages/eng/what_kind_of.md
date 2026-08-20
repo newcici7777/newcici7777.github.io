@@ -26,9 +26,9 @@ keywords: English,
 - Where are this apple from?(單數)
 - Where are these apples from?(複數)
 - Where are this kind of apple from?(種類單數)
-- Where are this kind of apples from?(種類單數)
-- Where are these kinds of apples from?(種類複數)
-- Where are these two kinds of apples from?(種類複數)
+- Where are this kind of apple**s** from?(種類單數)
+- Where are these kind**s** of apple**s** from?(種類複數)
+- Where are these two kind**s** of apple**s** from?(種類複數)
 
 - 單數問： Where DOES this kind of rice come from?(這個種類的米從那來？)
   - 答： It **COMES** from Thailand.（It 搭配動詞加 s）
@@ -45,14 +45,14 @@ all所有種類、different(各種)都是複數，所以kind後面要加上s。
 例句:
 - This kind of cheese is nice!這個種類的起士很好！
   - 起士是不可數，不能加s
-- The cafe serves all kinds of cheese.那家咖啡廳供應各式各樣的起司
-- all kinds of beer
+- The cafe serves all kind**s** of cheese.那家咖啡廳供應各式各樣的起司
+- all kind**s** of beer
   - 飲料、酒 beer是不可數，不能加s
-- He has all kinds of money. （他有各種各樣的錢)
-- She likes to take photos of different kinds of flowers.她喜歡拍攝各種不同種類的花
-- I’ve met different kinds of people on dating apps.我在交友軟體上遇過各式各樣、不同類型的人
+- He has all kind**s** of money. （他有各種各樣的錢)
+- She likes to take photos of different kind**s** of flower**s**.她喜歡拍攝各種不同種類的花
+- I’ve met different kind**s** of **people** on dating apps.我在交友軟體上遇過各式各樣、不同類型的人
 
-## come from vs is from 問產地
+## `come from` vs. `is from` 問產地
 因為coffee已經是產出的產品了，所以不加kind of種類。
 
 問句:
@@ -63,9 +63,56 @@ all所有種類、different(各種)都是複數，所以kind後面要加上s。
 問句:
 - Is this coffee from Africa?
 
-
 ## What kind of 問什麼種類的
 - What kind of party do you want.你想要「那一種」舞會？
+  - 預計回答只有一種，因為kind沒加s
+
+## A kind of + 可數/不可數名詞  一種
+```
+a kind of + 可數/不可數名詞
+```
+kind 在這裡當名詞，意思是「種類」。前面的 a 是修飾 kind（一種）。
+
+- a kind of dog（一種狗）可數
+- a kind of music（一種音樂）不可數
+- a kind of fruit（一種水果）不可數
+- a kind of feeling（一種感覺）不可數
+
+## 形容詞 + kind of + 名詞 
+kind 前面可以加形容詞！
+- What is your favorite kind of candy?最喜歡哪一種糖果
+
+- 加指示代名詞（這／那一種）：
+  - I like this kind of chocolate.（我喜歡這種巧克力。）
+- 加形容詞（不同／各種）：
+  - They have different kind**s** of ice cream.（他們有不同種類的冰淇淋。）
+- 加疑問詞（哪一種）：
+  - What kind of music do you like?（你喜歡哪一種音樂？）
+
+## kind 單數/複數
+- 只有「一種」時，kind不加S：
+  - This is one kind of fruit.（這是一種水果 → 單數）
+- 有多種、不同的、或者是許多種時，它就必須變成複數形 kind**s**：
+  - Different kind**s** of fruit.（不同種類的水果 → 複數）
+  - Many kind**s** of candy.（多種糖果）
+  -  Several kind**s** of fruit. 幾種
+
+- One kind of...（一種…… → 單數）
+- A few kind**s** of...（幾種…… → 複數）
+- Several kind**s** of...（好幾種…… → 複數）
+- Many kind**s** of / Different kind**s** of...（許多種／不同種類的…… → 複數）
+
+- 單數(kind)
+  - What kind of music do you like?（你喜歡哪一種音樂？ → 預設問單一種類）
+  - This kind of phone is expensive.（這種手機很貴。）
+- 複數（Kinds）：
+  - There are many kind**s** of animals in the zoo.（動物園裡有許多種動物。）
+  - She likes different kind**s** of books.（她喜歡不同種的書。）
+
+
+- The supermarket sells several kind**s** of fresh fruit. （這家超級市場賣好幾種新鮮水果。）
+- I need several kind**s** of tool**s** to fix this table. （我需要好幾種工具來修這張桌子。）
+
 
 ## different
 - She moved to a different city.

@@ -54,6 +54,7 @@ fun 在這裡是不可數名詞，前面不能加 a。
 - Have fun traveling in Japan! （在日本旅行玩得愉快！）
 - Have fun drawing pictures!畫畫玩得開心點！／盡情享受畫畫的樂趣吧！
 - We had fun hiking last week.我們上週去健行玩得很開心。
+- We had so much fun!（我們玩得超開心！） fun（不可數名詞：樂趣）
 
 ## 露營
 - I don't want to camp in the mountains! （我才不要去山裡露營！）

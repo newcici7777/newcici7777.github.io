@@ -77,6 +77,8 @@ She's a teenager.
 ## There is 有
 - There is water on the table.桌上有水。
 - There is juice in the fridge.冰箱有果汁。
+- There isn't any water in the fridge.（冰箱裡沒有水。）
+- Is there any water in the fridge?（冰箱裡有水嗎？）
 - There is juice.（現在有果汁。）
 - There was juice.（過去有果汁——例如：本來桌上有，但現在被喝完了或收走了。）
 - Was there juice in all of those bottles?那些瓶子裡全部都是果汁嗎？
@@ -252,8 +254,10 @@ fall off + 掉落的地方
 - The old tree fell down in the storm.（那棵老樹在暴風雨中倒了。）
 - He fell down with his bicycle.（他連人帶車摔倒了。）
 
-## perfect for
-- Carl is perfect for the job!
+## be perfect for 非常適合
+- Carl is perfect for the job!卡爾非常適合這份工作！
+- This weather is perfect for a walk.（這天氣非常適合散步。）
+- You are perfect for each other.（你們兩個天生絕配。）
 
 ## be poor
 - Is her family poor?

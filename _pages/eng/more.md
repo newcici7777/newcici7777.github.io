@@ -151,15 +151,7 @@ much 不只能修飾不可數名詞，它也可以用來修飾「比較級 (Comp
 - I am a little more tired today than yesterday.（我今天比昨天稍微累了一點點。）
 - Could you speak a little more slowly?（你能說得稍微慢一點嗎？）
 
-## Anything / something / nothing more(形容詞) 後位修飾
-不定代名詞(Anything / something / nothing)，**形容詞必須放在它們的「後面」**
 
-more 是形容詞，所以放在不定詞後面。
-- There is nothing more to say.（已經沒有更多的話可以說了。）
-
-* **`more`** 不是副詞，它是形容詞，跟 `nothing` 綁在一起（表示「更多」的否定）。
-
-* 這裡的 **`to say`**（不定詞）是擔任**形容詞**的角色，用來往後修飾前面的 *nothing more*，意思是「（可以用來）說的（話）」。
 
 
 

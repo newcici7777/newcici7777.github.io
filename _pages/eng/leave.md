@@ -62,6 +62,19 @@ left通常會放在名詞後面
 - There is no time left.（沒有時間剩下了。）
 - Is there any food left? 還有剩下食物嗎？
 
+## 數字 + 名詞 + left
+- ten minutes left ＝ 剩下的十分鐘
+- two dollars left ＝ 剩下的兩塊錢
+- one hour left ＝ 剩下的一個小時
+- We only have ten minutes left.我們只剩下十分鐘了。
+
+- I have only five dollars left in my wallet. （我的皮夾裡只剩下五塊錢了。）
+- We have ten minutes left before the meeting starts. （會議開始前，我們只剩下十分鐘。）
+- There is only one slice of pizza left. （比薩只剩下最後一片了。）
+- She has three days left to finish the report. （她只剩下三天可以完成這份報告。）
+- There are no tickets left for the concert. （這場音樂會的票一張也不剩了。 → no ... left 也是超高頻用法！）
+
+
 ## 左邊(可為名詞/形容詞)
 通常會搭配 on the... 或 turn...。
 - Turn left at the corner.（在轉角向左轉。）

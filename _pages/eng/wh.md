@@ -4,16 +4,57 @@ date: 2026-07-29
 keywords: 
 ---
 ## 疑問句是受詞
+
+平常我們最常問的「Who」，通常是指動作的接收者（受詞）。這時候，因為句子有另外的主詞，所以必須借助助動詞（如 did）來幫忙問問題：
+- Who did you see yesterday?（你昨天看到了誰？）
+  - 受詞是 Who（你看到的對象）。
+  - 因為 Who 只是受詞，所以需要助動詞 did，句型是：Who + did + 主詞 + 動詞原形...。
+- Who did you invite to the party?（你邀請了誰來派對？ → 主詞是你，被邀請的是 Who）
 - Who are you writing **to**?
+- Who did you live with then?（你當時是和誰住在一起？）
+  - then 的意思：當時、在那時，通常是指過去某個特定的時間點或時期
 
 ## 疑問句是主詞
-動詞搭配主詞
+因為在這個句子裡，疑問詞 Who 同時就是這句話的「主詞」，所以它根本不需要也不應該加助動詞（如 did）。
+
+當疑問詞（如 Who、What、Which）本身就是句子的主詞時，絕對不能加助動詞（如 do/does/did），而是要直接接動詞！
+```
+Who (主詞) + 動詞 
+```
+
+- Who invited you to the party?（是誰邀請你來派對的？ → 進行邀請動作的主人就是 Who）
 - Who will come with us?
 - Who was your server yesterday?昨天谁是你的服务员？
 - Who had afternoon tea?谁喝了下午茶？
 - Who took the children to school yesterday?谁昨天带孩子们去的
 学校？
 - Who showed you this place?谁给你看了这个地方？
+- Who lived in this apartment building twenty years ago?二十年前誰住在這棟公寓大樓裡？ 
+
+
+Who 當主詞（詢問「誰」做了某事）
+- Who knows the answer to this question? 誰知道這題的答案？
+- Who broke the window? 是誰打破窗戶的？
+- Who wants to join the project? 誰想要加入這個專案？
+- Who left their umbrella here? 誰把雨傘忘在這裡了？
+- Who speaks French in our team? 我們團隊裡有誰會講法文？
+
+What 當主詞（詢問「什麼事／什麼東西」發生了或造成了影響）
+- What happened here last night? 昨晚這裡發生了什麼事？
+- What caused the delay? 是什麼原因造成延誤的？
+- What sounds so loud upstairs? 樓上是什麼聲音那麼大？
+- What interests you the most about this job? 這份工作最吸引你的是什麼？
+- What makes you say that? 是什麼讓你這麼說的？
+
+Which 當主詞（在有限的選項中，詢問「哪一個」是主體）
+- Which book belongs to you? 哪一本書是你的？
+- Which train goes to the city center? 哪一班火車是開往市中心的？
+- Which team won the championship? 哪一支隊伍贏得了冠軍？
+- Which flavor tastes better? 哪一種口味吃起來比較好？
+- Which applicant got the job? 哪一位應徵者錄取了這份工作？
+
+
+
 
 ## 疑問「形容詞」
 疑問詞作為形容詞，修飾後面的名詞。  

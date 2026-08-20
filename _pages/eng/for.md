@@ -70,6 +70,8 @@ for 把「工具」和「食物」在一起，意思就完全包含「拿這個�
 這種「需要某工具/物品 for 某場合/食物」的結構，在餐廳或日常生活中極度常用，可以直接複製套用：
 
 ### 餐廳:
+- I need a tomato for the soup.我需要一個番茄用來煮湯
+  - for 在這裡表達目的或用途（為了煮湯）。
 - We need some napkins for the pizza.（我們吃披薩需要一些紙巾。）
 - I need a spoon for the soup.（我需要一支湯匙來喝湯。）
 - Do you have a knife for the steak?（你有切牛排用的刀子嗎？）
@@ -106,13 +108,26 @@ for 把「工具」和「食物」在一起，意思就完全包含「拿這個�
 ## for 預約時間 日期
 預約、安排時間（例如約時間開會、看醫生、訂位）時， for 理解成 「把……保留給」 或 「預定在……時刻」 
 
-### 訂位
+### 位子
+for 扮演了「配置、對應」的角色，用來告訴對方這項服務（票、桌子、房間等）是準備給多少人使用的。
+
+```
+[名詞] + for + [數量／對象]
+```
+- A ticket for one, please.（我要一個人的票。）
+  - A ticket（一張票） for（為了…… / 適用於……）one（一個人）
+- A table for two.一張適用於兩個人的桌子（雙人桌）
+  - A table（一張桌子）for（為了…… / 適用於……）two（兩個人
+- A room for three（一間三人房）
+- A table for four（一張四人桌）
+- A ticket for two（兩人的票／雙人套票）
 - I booked a table for two.（我訂了一個給兩個人坐的桌子。）
 - Welcome to our restaurant! A table for one?欢迎来到我们的餐厅。一张单人桌吗？
 - A table for two.一张两人桌
 - My wife and I need a table for two, please.我的妻子和我需要一张双人桌，谢谢。
 - We need a table for one.我们需要一张单人桌。
-
+- I'd like to make a reservation for two at 7 PM. 嗨，我想預約今晚 7 點兩位。
+- Hi, a table for two, please. Do you have a window seat?（嗨，我們要雙人桌。請問有靠窗的位子嗎？）
 
 ### 預約時間
 - Can I make an appointment for nine? (我可以預約在九點嗎？)

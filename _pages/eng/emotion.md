@@ -17,18 +17,21 @@ excited（興奮的、期待的） 這個字，習慣搭配的固定介系詞就
 ## excited about sth（對……感到興奮）
 - Are you excited about college?
 
-## excited to 原形動詞 (興奮地去「做某個動作」)
+## excited/worried/interested/afraid + to 原形動詞(做某事)
+
+### excited to 原形動詞 (興奮地去「做某個動作」)
 - Tom is excited to learn English. 很高興能學習英文
 - excited to see you（很高興能見到你）。
 
-## worried 擔心……
+### worried 擔心……
 - I was worried to hear the bad news.（聽到這個壞訊息，我感到很擔心。）
 
-## interested in + 名詞/V-ing
+### interested in + 名詞/V-ing
 - I am interested in learning English.（我對學英文感興趣。）
 
-## afraid to 原形動詞 (害怕)
+### afraid to 原形動詞 (害怕)
 - She is afraid to ask questions.（她害怕問問題。）
+
 
 ## 令人 ... 感到
 - That painting is boring.**東西**令人無聊 Ving
