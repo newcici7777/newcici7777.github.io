@@ -25,46 +25,102 @@ keywords: look, see, watch, seem, feel, hear, listen to,
   - She seems happy.（她看起來/似乎很開心。）
   - He seemed tired.（他似乎很累)
 
-## 捕捉現場畫面的感官動詞
-動態捕捉的感官動詞: See, Watch, Notice, Hear, Listen to, Feel
+## 一般動詞 vs. 感官動詞
 
-當你親眼目睹、親耳聽到別人「正在做一個動作」時，主詞後面加了受詞，就要用原形動詞或 V-ing。
+|比較項目|一般動詞 (see)|感官動詞 (see)|
+|核心意義|表達看到|表達透過感官「目睹／聽到」過程|
+|文法結構|動詞 + 名詞 |動詞 + 受詞 + 原形動詞 或 V-ing（沒有 to）|
+|正確例句|Lin sees her grandmother.（Lin看到她阿媽）|I saw him clean (or cleaning) the room.|
 
-### 原形動詞
+### see代表看見(隨意看)  
+- Lin sees her grandmother, Lucy, at the table.
+- Did you see my wife?I saw her in the morning.
+- Lin sees her grandmother, Lucy, at the table.
+
+### look at「專注」看  
+- Eddy looks at a painting of a dog.
+- Look! 後面沒有受詞就不用加at
+
+### look at 看手機
+- She is looking at the map on her phone.
+- Eddy looks at his phone.
+
+## look in 看看冰箱
+- She looks in the fridge.
+
+### watch
+watch 看別人在做的「一連串動作」。  
+- Zari is watching Junior.
+- We're going to watch a baseball game on Thursday.  
+
+### hear + 名詞
+- Can you hear the music? 你能听到音乐吗？
+- I'm sorry to hear that.
+
+### look動詞片語
+look for 尋找
+- Which street are you looking for?你在找哪一条街？  
+- She is looking for the key to her apartment.
+
+## （視覺、聽覺、觸覺、嗅覺、味覺）來感受「動作」
+透過我們的五官（視覺、聽覺、觸覺、嗅覺、味覺）來感受動作。常見的有：see（看）、watch（看）、hear（聽）、listen to（聽）、feel（感覺）。
+
+當你想表達「看到／聽到某人正在做某事」時，它的句型是：
 ```
-主詞 + 捕捉現場畫面的感官動詞 + 受詞 + 原形動詞(動作/行為)
+感官動詞 + 受詞 + 原形動詞 / V-ing （中間絕對不能加 to！）
 ```
-動詞變成過去式，接 「原形動詞」 時，強調的是「目睹整個動作的發生過程或結果」
+
+當你親眼目睹、親耳聽到別人「正在做一個動作」時，就要用原形動詞或 V-ing。
+
+See（看到）
+- Junior sees his father, Eddy, crying. (Junior）看到他的父親艾迪（Eddy）正在哭。
+  - 轉頭看過去的那個瞬間，爸爸的眼淚正在流、哭泣這個動作正在發生。
+- Junior hears his father crying.（Junior聽到爸爸正在哭。）
+- I saw him crossing the street. 我看到他正在過馬路。
+- I saw you waving at me.
+- he sees Lily drawing in the park.
+- I see you drawing every day. 
+
+Watch（注視、觀看）
+- She watched the kids playing in the park. （她看著孩子們在公園裡玩耍。——強調動作正在進行）
+- He watched the chef preparing dinner. （他看著主廚準備晚餐。——強調動作正在進行）
+
+Hear(聽見)
+- I heard someone knocking on the door. （我聽到有人在敲門。——強調敲門聲正在發生）
+- Can you hear the birds singing outside? （你聽得到外面的鳥兒在唱歌嗎？）
+
+Feel（感覺）
+- He felt his heart beating fast before the presentation. （上台報告前，他感覺到自己的心跳得好快。）
+- She felt a cool breeze blowing across her face. （她感覺到一陣涼風吹拂過她的臉龐。）
+- I felt him touching me.我感受到他「正在碰你、那個動作持續進行中」的畫面。
+
+smell(聞到)
+- I could smell something burning in the kitchen. （我聞到廚房裡有東西在燒焦。）
+- She noticed the cat sleeping on the sofa. （她注意到那隻貓正在沙發上睡覺。）
+
+### 原形動詞 「看到整個過程」
+用原形動詞  → 強調「看到整個過程」（從頭到尾發生）。  
+Junior sees his father cry. 感覺會比較像「Junior 目睹了爸爸哭泣的這個事實或全貌」。
 
 - See（看到）
-  - Did you see my wife?I saw her in the morning.
-  - I saw him cross the street.（我看到他過馬路。)
-  - He sees Lin.
-  - Lin sees her grandmother, Lucy, at the table.
-  - She saw you!
+  - I saw him cross the street safely. （我看到他安全地過馬路。——強調看完整個過程）
+  - We saw a shooting star fall across the night sky. （我們看到一顆流星劃過夜空墜落。——強調看完整個過程）
 - Watch（注視、觀看）
   - She watched the kids play in the park.（她看著孩子們在公園玩耍。）
 - Notice（注意到）
   - I noticed someone enter the room.（我注意到有人進了房間。）
+  - Did you notice anyone leave the building? （你有注意到任何人離開這棟大樓嗎？）  
 - Hear(聽見)
-  - I heard her sing a song.（我聽到她唱歌。)
-  - I'm sorry to hear that.
+  - I heard her sing a song.（我聽到她唱歌。——強調聽完整個過程)
+  - We heard the thunder rumble in the distance. （我們聽到雷聲在遠處隆隆作響。）
 - Listen to（聆聽——注意聽）
+  - She listened to her favorite singer sing live. 她聽她最愛的歌手現場演唱。——強調聽到整首歌的演唱過程）
   - We listened to the band play music.（我們聽樂團演奏音樂。）
+  - He listened to the rain hitting the window. （他聽著雨打在窗戶上的聲音。）
   - Listen to the piano!
-- Feel（感受到肢體接觸）
-  - I felt him touch me.
-
-### Ving
-```
-主詞 + 捕捉現場畫面的感官動詞 + 受詞 + Ving(當下正在進行的畫面)
-```
-- See
-  - I saw him crossing the street. 我看到他正在過馬路。
-  - I saw you waving at me.
-  - he sees Lily drawing in the park.
-- Feel
-  - I felt him touching me.我感受到他「正在碰你、那個動作持續進行中」的畫面。
+- Feel（感覺）
+  - I felt the ground shake during the earthquake. （地震時我感覺到地面在搖晃。）
+  - I felt him touch me.(我感覺到他一直在碰我)
 
 
 ## seem + to + 原形動詞
@@ -94,36 +150,6 @@ look like（像什麼人事物） + 名詞/子句
   - It feels like we've met before.感覺我們好像在哪見過
   - I feel like we should go.（我覺得我們應該走。）
 
-## 感官 + 名詞
-- Can you hear the music? 你能听到音乐吗？
-
-## watch
-watch 看別人在做的「一連串動作」。  
-Zari is watching Junior.
-
-看球賽「一連串動作」。  
-We're going to watch a baseball game on Thursday.  
-
-## look at「專注」看  
-Eddy looks at a painting of a dog.
-
-後面沒加at  
-Look!  
-
-## see代表看見(隨意看)  
-- I see you drawing every day.(Ving當下正在進行的畫面)  
-- Lin sees her grandmother, Lucy, at the table.
-
-## look for 尋找
-- Which street are you looking for?你在找哪一条街？  
-- She is looking for the key to her apartment.
-
-## look at 看手機
-- She is looking at the map on her phone.
-- Eddy looks at his phone.
-
-## look in 冰箱
-- She looks in the fridge.
 
 
 

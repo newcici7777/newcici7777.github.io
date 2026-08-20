@@ -132,12 +132,6 @@ be動詞後面放even
 ## color 畫畫 動詞
 - My son loves to color.
 
-## from
-- I am from a small town near Shanghai.我來自上海附近的小鎮
-- I am from America.我來自美國
-- I am from China.
-- Are you from America?
-- I am not from New York.我不是来自纽约。
 
 ## thanks for
 ```

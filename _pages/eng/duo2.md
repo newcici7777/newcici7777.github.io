@@ -73,6 +73,21 @@ She's a teenager.
 - Do you remember your favorite class?你记得你最喜欢的课
 吗？
 
+
+## There is 有
+- There is water on the table.桌上有水。
+- There is juice in the fridge.冰箱有果汁。
+- There is juice.（現在有果汁。）
+- There was juice.（過去有果汁——例如：本來桌上有，但現在被喝完了或收走了。）
+- Was there juice in all of those bottles?那些瓶子裡全部都是果汁嗎？
+  - was過去式，代表瓶子之前是有果汁在裡面，但現在沒有。
+  - 用in代表果汁在瓶子裡面 = 內容物是果汁
+  - all of those bottles 因為有those那些(特定範圍)，所以all後面要加of
+- Was there an accident?這裡有發生意外嗎？
+
+- 想強調液體 → There was juice.（有果汁）
+- 想強調瓶數 → There was a bottle of juice.（有一瓶果汁）
+
 ## water 水
 - There is water on the table.桌上有水。(強調的是水，不是容器，不可數名詞，動詞用單數。)
 - There are two cups of water on the table.桌上有二杯水。(強調的是容器。容器是複數，動詞也是複數)
@@ -133,8 +148,7 @@ eyes are very small.
 如果拿掉pair of，就要用複數動詞
 - Are these glasses thirty dollars?
 
-## There was
-- Was there an accident?這裡有發生意外嗎？
+
 
 ## crowded
 **地方** + be動詞 + crowded

@@ -3,6 +3,13 @@ title: from
 date: 2026-08-17
 keywords: english, from
 ---
+## from
+- I am from a small town near Shanghai.我來自上海附近的小鎮
+- I am from America.我來自美國
+- I am from China.
+- Are you from America?
+- I am not from New York.我不是来自纽约。
+
 ## from 的三大核心功能
 ### 來源與出處 (Source / Origin)
 這就是你那個例句的邏輯，指東西是「從哪裡產生的」。

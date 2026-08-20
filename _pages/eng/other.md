@@ -3,57 +3,28 @@ title: other, the other, others
 date: 2026-08-19
 keywords: English,other, the other, others
 ---
-這三個字（**other**、**the other**、**others**）是英文中讓人最容易搞混的「代名詞與形容詞家族」。
+## the other(形容詞) 剩下
+前面加上 the 代表「在一個特定範圍內，扣除掉已知的部分之後，『剩下的全部』」
+```
+the other + 名詞
+```
+- Someone drank all the other bottles! 有人把其他所有的瓶子都喝光了
 
-要搞懂它們，其實只要記住兩個關鍵問題：
+## the other(代名詞) 剩下(其餘的)
+- I have two pens. One is red, and the other is blue.（我有兩支筆。一支是紅的，另一支是藍的。——總共只有兩支，扣掉一支，剩下一支用 the other）
+- Where are the other students?（其他那些學生在哪裡？——指某個班級裡特定的、剩下的學生）
 
-1. **是有範圍的「剩下全部」，還是泛指「另外的」？**
-2. **後面有沒有接名詞？**
+## other(形容詞) 其它的
+它本身是形容詞，後面一定要接名詞
+- I have other plans today.（我今天有其他計畫。)
+- Do you have any other questions?（你有任何其他問題嗎？）
+❌ 錯誤用法：I want other.（other 不能單獨站出來當代名詞）
 
-以下用最清晰的方式為您拆解：
+## other**`s`**(代名詞) 其它人
+它是 other + 名詞複數 結合後的代名詞，所以它後面絕對不能再加名詞（因為它自己就是名詞了）。
+- Some like sports, others prefer reading.（有些人喜歡運動，而其他人比較喜歡閱讀。）
+- Don't always rely on others.（不要總是依賴別人。）
 
----
-
-### 1. other（其他的——當形容詞用）
-
-* **特性**：它本身是**形容詞**，後面**一定要接名詞**（通常是複數名詞或不可數名詞），不能單獨當代名詞使用。
-* **意思**：泛指「另外的、其他的」。
-* **例句**：
-* I have **other** plans today.（我今天有**其他**計畫。——*other 後面接複數名詞 plans*）
-* Do you have any **other** questions?（你有任何**其他**問題嗎？）
-
-
-* ❌ **錯誤用法**：*I want other.*（other 不能單獨站出來當代名詞）
-
----
-
-### 2. others（其他人／物——當代名詞用）
-
-* **特性**：它是 `other + 名詞複數` 結合後的**代名詞**，所以它**後面絕對不能再加名詞**（因為它自己就是名詞了）。
-* **意思**：泛指「其他人、其他事物」（沒有特定範圍，就是隨便的其他多數）。
-* **例句**：
-* Some like sports, while **others** prefer reading.（有些人喜歡運動，而**其他人**比較喜歡閱讀。）
-* Don't always rely on **others**.（不要總是依賴**別人**。）
-
-
-
----
-
-### 3. the other（另一個／其餘的全部——有特定範圍）
-
-* **特性**：前面加了 **`the`**，代表有「特定的範圍」或「總數是有限的」。它可以當形容詞（接名詞）或代名詞。
-* **意思**：
-* **兩者之中**的「另一個」（The other）。
-* **總數固定**的情況下，扣掉前面的，剩下的「全部」。
-
-
-* **例句**：
-* I have two pens. One is red, and **the other** is blue.（我有兩支筆。一支是紅的，**另一支**是藍的。——*總共只有兩支，扣掉一支，剩下一支用 the other*）
-* Where are **the other** students?（**其他那些**學生在哪裡？——*指某個班級裡特定的、剩下的學生*）
-
-
-
----
 
 ### 💡 終極對照表（秒懂記憶法）
 
