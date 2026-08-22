@@ -81,6 +81,7 @@ keywords: give send show
 - Emma wants to show us her new house.
 - Can you show me your vegetable garden (你可以给我看看你的蔬菜园吗？)
 - Who showed you this place?谁给你看了这个地方？
+- Zari's mother shows her three more blue sweaters.(Zari媽媽拿給她另外三件藍色毛衣／又給她看了三件藍色毛衣）
 
 ## lend to
 ```

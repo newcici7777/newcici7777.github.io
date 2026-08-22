@@ -60,8 +60,7 @@ get 有「去取得、獲得、讓自己得到」的意思，去爭取一些休�
 - Get some rest（去弄點休息、好好休息)
   - 注意！沒有get a rest 這個說法
 
-## get 變成
-### be lost / get lost
+## be lost / get lost
 描述現在的狀況
 ```
 be 動詞 + 形容詞 (lost)
@@ -95,5 +94,24 @@ on的相反動作是off，為什麼用on？因為火車飛機巴士可以站，�
 
 ## get in bed（上床睡覺 / 進到被窩裡）
 
-## 下班
+## get off 下班
 - I get off work at 6:00. 下班 
+
+## get mad/ get angry 變得生氣
+```
+get 形容詞
+```
+當 get 後面接形容詞時，意思是「變得……」，用來描述一種狀態的轉變（比 be動詞 多了「過程」的感覺）。
+* 變累：I am starting to get tired.（我開始變累了。）
+* 變晚：It’s getting dark.（天色正在變暗。）
+* 生氣：Don’t get angry.（別生氣／別變得生氣。）
+* 生氣：Don’t get mad.（別生氣／別變得生氣。）
+
+## get 聽懂、理解（＝ Understand）
+在日常對話中，當別人跟你解釋完一件事情，你說這句話，對方就會秒懂：
+* 我懂了／了解：I get it.（我懂了。）
+* 你懂我的意思嗎？：Do you get my point?（你抓到我的重點了嗎？）
+
+## get 接電話、去叫人（＝ Answer / Fetch）
+* 接電話：Can you get the phone?（你可以去接個電話嗎？）
+* 去拿／去叫：Can you get a doctor?（你可以去找個醫生來嗎？）

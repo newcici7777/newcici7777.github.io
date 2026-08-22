@@ -70,7 +70,10 @@ How often（多常...）的問句，我們會把次數跟時間結合
 - You never responded to my letters...
 
 ## 頻率副詞放最後面
+ 當 often 放在句尾時，通常帶有一種「請求、提醒、或是特別強調頻率」的語氣。
 - Please play it often.
+* Please use it often.（請常使用它。）
+* Call me often.（常打給我喔。）
 
 ## Some time, Sometimes, sometime
 

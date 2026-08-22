@@ -55,12 +55,19 @@ work是抽象名詞，不可數名詞，前面不加a 或the
 - Ben works for a good company.(本为一家很好的公司工作。)  
 - I am going to work for a different company.我打算为一家不同的公司工作。
 
-
-## in the ... business
+## be in the ... business
 ```
-in the 行業名 business / industry
+be in the 行業名 business / industry
 ```
 當我們要表達一個人「在某個行業、領域或事業中工作」時，固定會使用介系詞 "in"。
+
+* We are in the music business.（我們在音樂界／我們從事音樂產業）
+* He is in the movie business.（他在電影圈工作／拍電影的。）
+* She works in the fashion business.（她在時尚界工作。）
+* Are you in the tech business?（你是做科技業的嗎？）
+- Is she in the food business. 她是在餐飲業工作嗎？
+- She has been in the fashion business for over ten years.（她在時尚界工作超過十年了。）
+- We are in the music business.我们从事音乐行业。
 
 餐飲與零售業 (Food & Retail)
 - in the food business（在餐飲／食品業）
@@ -80,10 +87,16 @@ in the 行業名 business / industry
 - She wants to work in the travel business.她想要從事旅遊業
 - He works in the tech industry as a developer.（他在科技業擔任開發人員。）
 
-## be + in 產業
-- Is she in the food business. 她是在餐飲業工作嗎？
-- She has been in the fashion business for over ten years.（她在時尚界工作超過十年了。）
-- We are in the music business.我们从事音乐行业。
+## We do business in the 「產業、領域」
+意思：「我們從事……行業／我們做……領域的生意。」
+```
+do business(做生意) in the 產業、領域
+```
+
+* We do business in the tech industry.（我們做的是科技業的生意／我們涉足科技產業。）
+* We do business in real estate.（我們從事房地產業。）
+* We do business in music.（我們做音樂相關的生意。）
+  - music 前面沒有the
 
 ## work at
 - work at **a** bank（在銀行上班）
@@ -96,6 +109,18 @@ in the 行業名 business / industry
 - Do you like working with him?
 - I work with Ben.我跟本一起工作。
 - Do you work with Anna?你跟Anna一起工作嗎
+* They work with a great team.（他們和一個很棒的團隊一起工作。）
+
+## work as 「擔任……職務」或「以……的身分工作」
+```
+work as + [職稱/身分] 
+```
+- I finished school in 1980 and then I worked as a doctor.我在1980年毕业的，然后我当过医生。
+- Did your mom work as an English teacher?你的妈妈当过英语老师吗？
+* He works as a software engineer.（他擔任軟體工程師。）
+* She works as a teacher.（她是一名老師／她從事教職。）
+* I worked as a freelancer for three years.（我曾以自由工作者的身分工作了三年。）
+* I work as a designer.（我是一名設計師。)
 
 ## finish work 下班
 - Emma usually finishes work at half past eight.
@@ -125,15 +150,13 @@ work hard (hard是副詞)
 - have a meeting 開會
 - We won't have a meeting tomorrow morning.我们明天早上不会开会。
 
-## in the office 在辦公室
+## at/in the office 在辦公室
 - in the office（在辦公室室內）人在辦公室的四面牆壁之內。
   - Is the boss in the office?（老闆人在辦公室裡嗎？）
 - at the office (據點)
   - She is at the office.人在辦公室這個地點。
 
-## work as a 職業
-- I finished school in 1980 and then I worked as a doctor.我在1980年毕业的，然后我当过医生。
-- Did your mom work as an English teacher?你的妈妈当过英语老师吗？
+
 
 ## 其它
 - I don’t work on this project.這個專案我不參與 

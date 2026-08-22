@@ -97,14 +97,21 @@ outside.
 - wait outside the office（在辦公室外面等）
 
 ## be動詞 + between A地 and B地 之間
+Between（在……之間）—— 它是「介系詞」  
+核心意思：表示空間、時間或選擇上的「在兩者之間」。  
+文法特點：因為它是介系詞，所以後面必須接受詞（通常是兩個用 and 連接的人、事、物，或是複數名詞）。  
+
+* The bank is between the park and the school.（銀行在公園和學校之間 → 空間位置）
+* Let's meet between 3 PM and 4 PM.（我們在下午三點到四點之間碰面吧 → 時間）
+* I can't choose between this one and that one.（我沒辦法在這一個跟那一個之間做選擇）
+
 - between the coffee shop and the zoo (在咖啡店和动物园之间 )
 - between the museum and the restaurant 在博物馆和餐厅之间
 - My house is between the park and the bank.我家在公園和銀行之間。
 - The new bridge is between the city center and the airport.那座新橋位於市中心和機場之間。
 
-## 移動動詞 from A地 to B地
-- Let's walk from the museum to the restaurant(咱们从博物馆走去餐厅吧。)
-- I walked from my hotel to the concert last night.
+
+
 
 ## close to 離...很近、在「附近」
 close to 的核心意思是「離...很近」。它強調的是距離短，但不代表兩個東西要緊緊貼在一起，中間隔著一條街、一排樹都沒關係。

@@ -28,6 +28,11 @@ I have a problem with + **讓你頭痛的人/事/物**
 - With milk?加牛奶？
 - My daughter likes to have cereal with milk.她喜歡吃加牛奶的麥片。
 
+* With milk 
+* With oat milk.（加燕麥奶）
+* With almond milk.（加杏仁奶）
+* With soy milk.（加豆漿）
+
 ## with 配料
 用什麼材料來做某件事」或「某個東西裡含有/配有什麼」時，英文就會使用 with。
 

@@ -53,9 +53,41 @@ Which 當主詞（在有限的選項中，詢問「哪一個」是主體）
 - Which flavor tastes better? 哪一種口味吃起來比較好？
 - Which applicant got the job? 哪一位應徵者錄取了這份工作？
 
+----------------------
+## which 當主詞
+- Which hero will save the day?（哪位英雄會拯救危機？）
+  - Which hero 是主詞（執行動作的人）。
 
 
+## which 當受詞
+接受動作的受詞。
+- Which hero do you like best?（你最喜歡哪位英雄？）
+  - Which hero 是受詞（接收「喜歡」這個動作的對象）
 
+
+## Which + [種類/名詞] 就像是一個「精準定位器」，專門用來在有限的選項或範圍內，把特定種類的人、事、物點出來。
+
+只要把你想問的「種類（名詞）」放在 Which 後面，就可以無限延伸：
+1. Which + 職業/人物
+* Which hero...（哪位英雄……）
+* Which teacher...（哪位老師……）
+
+2. Which + 東西/物品
+* Which car...（哪輛車……）
+* Which book...（哪本書……）
+
+3. Which + 時間/抽象概念
+* Which day...（哪一天……）
+* Which way...（哪一條路 / 哪個方法……）
+
+⚡ 搭配動詞（主詞 vs. 受詞）的完整運作
+不管後面接的是哪一種名詞，它組合起來之後，依然遵循我們剛才討論的規則：
+* 當主詞（後面直接接動詞）：
+* Which movie is playing tonight?（哪部電影今晚上映？ → 電影是主詞）
+* 當受詞（後面接「人 + 動詞」）：
+* Which movie did you watch?（你看了哪部電影？ → 電影是受詞）
+
+----------------------
 ## 疑問「形容詞」
 疑問詞作為形容詞，修飾後面的名詞。  
 有作為分類的意思，那一個/什麼樣的.../ 那一個種類...  

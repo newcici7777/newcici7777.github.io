@@ -7,6 +7,9 @@ keywords: buy, get, pay, spend, take, cost
 - This hat is ten dollars and fifty cents.这顶帽子是十美元
 五十美分。
 
+## take credit cards 收信用卡
+4. Do you take credit cards, or is it cash only? （你們收信用卡嗎，還是只能付現？）
+
 ## buy
 ### 人 + buy + 物
 - She will buy a new car next week. 她下周会买一辆新车。 
@@ -34,6 +37,10 @@ Can I buy it for one hundred dollars.
  
 
 ## pay
+### pay 付的方式
+- Can we pay separately? （我們能分開付錢嗎？／各付各的。）
+- Can I pay by Apple Pay? （我可以用 Apple Pay 付款嗎？）
+
 ### Pay + TO + 店家(老闆)
 To錢「傳給」誰
 

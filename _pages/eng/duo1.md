@@ -134,9 +134,10 @@ even + 比較級（er / more）
 - I'm going to wave at her.
 - I saw you waving at me.
 
-## color 畫畫 動詞
-- My son loves to color.
-
+## color 著色 動詞
+* My son loves to color.（我兒子喜歡著色。）
+* Can I color in this book?（我可以在這本書上著色嗎？）
+* Go get your crayons and color.（去拿你的蠟筆來著色。）
 
 ## thanks for
 ```
@@ -212,12 +213,12 @@ river（河流） 加 s 變成 rivers，通常是最直觀的「複數名詞」�
 - Rest is good for dogs.（休息對狗狗有好處。）
 
 
-
-## 泛指習慣或經常性活動
+## 名詞s 泛指習慣或經常性活動
 - Do you often have barbecue**s**?你們經常舉辦烤肉活動嗎？
   - 句尾的 barbecues 變成了複數形，泛指習慣或經常性活動
 - Do you play video games?（你常打電動嗎？——泛指遊戲）
 - Do you have parties?（你們常辦派對嗎？——泛指派對）
+
 
 
 ## `go out` vs `go outside` vs `come with me` vs `went out停電`
@@ -257,6 +258,29 @@ river（河流） 加 s 變成 rivers，通常是最直觀的「複數名詞」�
 - We agreed to meet at 8 PM.（我們約好晚上八點見面。）
 - She agreed to help me.（她答應幫我。）
 - They agreed to sign the contract.（他們同意簽署合約。）
+
+## anymore(副詞)再也不
+```
+否定句（don't / can't / isn't...）... + anymore
+```
+- I don't think I like this sweater anymore.（我不再喜歡這件毛衣了／我現在不喜歡這件毛衣了）
+* I don't live there anymore.（我不再住在那裡了。 → 以前住，現在搬走了）
+* He doesn't work here anymore.（他不再這裡上班了。 → 以前在這裡，現在離職了）
+* This computer doesn't work anymore.（這台電腦壞了不能用了。 → 以前還能運作，現在不行了）
+
+## A menu
+A menu（菜單）完全可以直接這樣單獨使用！
+- A menu, please.
+- Can I have a menu, please?（可以給我一份菜單嗎？）
+- Could we get a menu?（我們能拿一份菜單嗎？）
+- I already have a menu for you.我已經為你們準備好一份菜單了。（或者，我這就拿一份菜單給你們。）
+* I want to ask for a menu.（我想索取一份菜單。）
+
+## Use 使用
+- Use the internet 會使用網路嗎
+* use the computer（使用電腦）
+* use your phone（使用你的手機）
+* use this app（使用這個應用程式）
 
 
 ## 其它疑惑

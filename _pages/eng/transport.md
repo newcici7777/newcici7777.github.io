@@ -5,7 +5,7 @@ keywords: English
 ---
 跟移動、前往有關的名詞，後面會加上 to 地點
 
-## Take + 交通工具、大眾運輸 to 地點
+## Take + 交通工具、大眾運輸
 當人們問要不要坐公車時，通常是指當地的那條特定公車路線、固定班次，所以常用the
 
 - take the bus（搭火車／搭公車）
@@ -29,6 +29,22 @@ keywords: English
 - How often do you take a taxi?你多久坐一次出租车？
 - Do you want the taxi now or later?你要現在叫車，還是等一下再叫？
   - a taxi 是泛指「隨便叫一台計程車」，但如果用 the taxi 眼前已經停了一台你們正在討論的特定計程車。
+
+## take + 交通工具 + to + 目的地
+- I took the subway to the bookstore last weekend.
+* Ben took a taxi to this store this morning. （本今天早上搭計程車去這家店。）
+
+## take + 交通工具 + from A to B
+* 搭車從 A 到 B：Take a bus from Taipei to Taichung.（從台北搭公車到台中）
+
+## take + 交通工具 + to work 去上班
+- take the bus / subway to work 搭車去上班
+- She takes the subway to work.（她搭地鐵去上班。）
+
+## take + 交通工具 + there/here
+- I never take the bus there.
+* 或者：I never go there by bus.
+* 說明：當我們在講日常生活中固定的交通工具時，通常習慣加 the（take the bus、take the subway），表示「我平常是不搭公車通勤的」。
 
 
 ## have a 交通工具

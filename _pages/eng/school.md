@@ -105,17 +105,26 @@ At (據點)地圖上的座標定位在學校。
 - Where is Josh? He is at school.（Josh 人在哪？他在學校。）
 - I won't be at school tomorrow.(我明天不会在学校。)
 
-## finish school 放學/畢業
+## finish school 放學
+* 現在式 / 現在進行式 / 未來式 → 通常指「今天的放學」 這是指今天或日常規律的作息時間。
+* What time do you finish school today?（你今天幾點放學？）
+* I finish school at 4 PM.（我下午四點放學。）
 - My kids will finish school at ten past seven.(我的孩子们会在七点过十分放学。)
 - When does your son finish school?
 
 
 ## finish school 畢業(過去式)
-school 當抽象名詞，抽象名詞不可數，前面沒有a 跟 the。
+看「時態」（Tense）—— 最準確的分辨方法
+* 過去式 (Did / Finished) → 通常指「畢業」 因為畢業是一個「在過去已經完成的人生里程碑」，所以會用過去式。
+
 - when did you finish school?你是什么时候毕业的？
 - I finished school in 1980 and then I worked as a doctor.我在1980年毕业的，然后我当过医生。
 - She finished school and then moved to Beijing.她毕业了，然后搬到了北京。
-
+* When did you finish school?（你什麼時候畢業的？）
+* He started working right after he finished school.（他一畢業就開始工作了。）
+* When did you finish school?（你什麼時候畢業的？）
+* I finished school in 2024.（我在 2024 年畢業。）
+* What did you do after you finished school?（你畢業後做了什麼？）
 
 ## after school 放學
 school 當抽象名詞，抽象名詞不可數，前面沒有a 跟 the。

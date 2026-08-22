@@ -47,10 +47,6 @@ She's a teenager.
 - The museum **is open** **from** ten o'clock **to** five o'clock **on** Saturday, but it **is closed** **on** Sunday.
 - Is the restaurant open?那家餐斤开门了吗？
 
-## be + wearing 穿什麼衣服/穿什麼鞋子/戴什麼帽子
-- Is she wearing a red hat ?
-- She likes to wear expensive shoes.她喜欢穿贵的鞋。
-
 
 ## remember 
 ### remember + to V（記得去做...）
@@ -74,39 +70,7 @@ She's a teenager.
 吗？
 
 
-## There is 有
-- There is water on the table.桌上有水。
-- There is juice in the fridge.冰箱有果汁。
-- There isn't any water in the fridge.（冰箱裡沒有水。）
-- Is there any water in the fridge?（冰箱裡有水嗎？）
-- There is juice.（現在有果汁。）
-- There was juice.（過去有果汁——例如：本來桌上有，但現在被喝完了或收走了。）
-- Was there juice in all of those bottles?那些瓶子裡全部都是果汁嗎？
-  - was過去式，代表瓶子之前是有果汁在裡面，但現在沒有。
-  - 用in代表果汁在瓶子裡面 = 內容物是果汁
-  - all of those bottles 因為有those那些(特定範圍)，所以all後面要加of
-- Was there an accident?這裡有發生意外嗎？
 
-- 想強調液體 → There was juice.（有果汁）
-- 想強調瓶數 → There was a bottle of juice.（有一瓶果汁）
-
-## water 水
-- There is water on the table.桌上有水。(強調的是水，不是容器，不可數名詞，動詞用單數。)
-- There are two cups of water on the table.桌上有二杯水。(強調的是容器。容器是複數，動詞也是複數)
-
-## water 變形容詞
-- There are three water bottles.有3個水瓶。(water變成形容詞，形容用途是裝水的瓶子)
-
-## the water 水邊
-**the** water 指的就是「水邊」、「水面」或「水域」（像是湖泊、河流、池塘或海邊）。
-
-near **the** water 時，大腦的畫面通常是指「在水跟陸地交界的地方」。
-
-- I want a duck near **the water**. 我想要一隻在（那片）水邊的鴨子。
-- We eat by **the** water.我们在水边吃。
-
-## water 澆水(動詞)
-- I watered your plants three times every day!我每天幫你的植物澆三次水！
 
 ## its
 - That sheep is eating its food right now
@@ -161,28 +125,6 @@ crowded形容詞 + 名詞
 
 擠滿crowded with + **人/事物**
 - The street is crowded with people.（這條街擠滿了人。）
-
-## check
-帳單
-- Can I have the check, please?
-- Ask for the check.（索取帳單）
-- This is not her check.This is my check.这不是她的账单。这是我的账单。
-
-
-支票
-- Pay by check.（用支票付款）
-
-Check（檢查/查看）：不只是看，還包含「為了獲得某個資訊、或確認某件事是否正確」的動作。
-
-- Check the map.（查看地圖）
-- Check the directions.（查看導航）
-- Check the time.看一下時間(確認現在幾點了)
-- Check your email.看一下信箱 (確認有沒有新信)
-- Check the route.（查路線 / 看路徑)
-  - Let me check the route on my phone.（我看一下手機上的路線。）
-  - Wait, let me check the directions on my phone.等一下，我看個手機上的導航路線。
-
-## put a check 打勾勾
 
 
 ## Country（國家）vs The Country（鄉下、農村地區）
@@ -317,6 +259,11 @@ fall off + 掉落的地方
 - We together built this house. （我們共同建造了這棟房子。）
 - They together decided to move. （他們一同決定搬家。）
 
+### be + together 交往、在一起（指情侶或伴侶關係）
+- They have been together for 3 years.
+- Are they still together?（他們還在一起／還在交往嗎？）
+- We can finally be together!
+
 
 ## an add for 
 - We saw an ad for this clothes store.我们看到了一个这个服装店的广告。
@@ -329,8 +276,6 @@ fall off + 掉落的地方
 - And I can't catch any fish!
 
 
-## if
-- But I want to know if the painting is good.
 
 ## 無法分類
 - Ben is angry at us.
@@ -341,7 +286,7 @@ fall off + 掉落的地方
 - Why would anyone want to make a sequel?为什么会有人想要制作续集？
   - sequel **ˈsiːkwəl** 續集
 
-- We can finally be together!
+
 - Actually, I'm going to a museum with my granddaughter now.
 
 

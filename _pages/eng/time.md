@@ -49,10 +49,6 @@ What形容詞 + 不可數名詞time
 - Who will come to the party with me in New York on Saturday evening?
 - tomorrow morning.
 
-## from 時間 to 時間
-- The museum is open from ten o'clock to five o'clock on Saturday, but it is closed on Sunday.
-- Is the shoe store closed from January first to January fourth?
-- The bank is open from one o'clock to five o'clock.
 
 ## between 時間 and 時間
 - I'll be at home between six o'clock and seven o'clock.(我在六点到七点之间会在家。)

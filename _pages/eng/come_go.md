@@ -13,11 +13,17 @@ to 的意思是「朝向、往……方向」
   - The child ran to his mother.
 - fly to 人：飛奔向某人
   - I flew to her when I heard the news.
-
 - Zari runs to Lily in the hall at school. Zari在學校的走廊上跑向莉莉。）
+
 
 ## 移動動詞 to + 目的地
 to 的意思是「朝向、往……方向」，在這裡當作目的地的大門。
+
+* 開車去：drive to + 目的地（不用用 take）
+* He drove to the store this morning.（他今天早上開車去店裡。）
+* 走路去：walk to + 目的地
+* He walked to the store this morning.（他今天早上走路去店裡。）
+
 
 移動動詞: go, come, get, walk, drive, fly, move
 - go to
@@ -59,6 +65,14 @@ to 的意思是「朝向、往……方向」，在這裡當作目的地的大�
   - The ship sailed to the island.（那艘船航行去那個島。）
 - Jog to ...（慢跑去……）
   - She jogs to the park every morning.（她每天早上慢跑去公園。）
+
+## 移動動詞 + to work 透過什麼方式去上班
+
+- walk to work 走路去上班
+  * I usually walk to work.（我通常走路去上班。） 
+- drive to work 開車去上班
+  * He drove to work this morning.（他今天早上開車去上班。）
+
 
 ## get to 抵達
 - What time will you get to the office?（你幾點會到辦公室？）
@@ -243,31 +257,7 @@ Ahead 負責：「朝著前方、目標在前面」
 ## 移動動詞 + Forward 向前
 - Move forward a little bit.（往前挪一點點——例如排隊或移車時）。
 
-## 移動動詞 + back
-「回頭、返回」或「走回原本的地方」
-- Go back.（走回頭路 / 你走過頭了）
-- Step back. 往後站
-- Turn back 回頭
-- You missed the turn. You need to go back.
-（你錯過轉彎了。你必須走回去。）
-- Walk back the way you came.
-（沿著你剛剛來的那條路走回去。）
 
-## go back + to 朝向/方向
-to 是朝向
-- I need to go back to work. 回去工作(work是抽象名詞，前面不加a 或 the)
-
-go back to 抽象名詞，回到某個狀態。
-- The kids need to go back to school.(孩子們該回學校上課了。 👉 指恢復學生的生活狀態)
-- He had to go back to prison.（他必須回監獄服刑了。）
-
-go back to the 地點
-- go back to the office.
-
-
-## go back home
-home 本身就有方向，是副詞
-- I need to go back home.
 
 ## 移動動詞 + backward 向後地
 - He took a step backward.（他向後退了一步。）

@@ -31,9 +31,21 @@ All 量詞限定詞（Quantifiers）—— 交代數量，用來修飾名詞的�
 
 
 ## All 副詞 全部、通通都...
+副詞的 all：放在 be 動詞後面、一般動詞前面，用來強調「全都/全部/大家」。
+
+- We are all happy. 
+- They all know it.
 - We are all ready to go!我們全都準備好要出發了！
-  - all 在這裡用來加強語氣，強調「我們每一個人、無一例外」都準備好了。因為它放在 be 動詞後面、形容詞前面，用來修飾主詞的狀態
 - He was all wet.他全身都濕透了
+- We can all wear our new sweaters tomorrow!
+
+all（全部 / 大家）
+- 1. They all love eating spicy food.（他們全都很愛吃辣。）
+- 2. The students have all finished their homework.（學生們已經全部寫完作業了。）
+- 3. We can all learn something from this mistake.（我們大家都可以從這個錯誤中學到東西。）
+- 4. My friends were all waiting for me at the station.（我的朋友們當時全部在車站等我。）
+- 5. The lights are all turned off.（燈全部都關掉了。）
+
 
 ## All放在代名詞後面
 當受詞是代名詞（像是 it、them）時，像是 all、both 這種表示「全部／兩者」的詞，絕對不能放在代名詞前面，要放在代名詞後面。
@@ -84,13 +96,27 @@ all除了接名詞，最常跟受格代名詞結合。
 - All the water **is** gone.（所有的水都沒了。）
 
 ## All 作為代名詞
+當 all 指的是抽象概念的「一切、所有事情（everything）」時，它會被視為單數，所以後面要接 is。
 - All is ready.一切都準備好了。
   - 這裡的 all(一切、所有事情) 當作單數主詞，後面接單數動詞 is。
 - All agreed.大家都同意。
   - 這裡的 all 代表「所有人（all of us / everyone）」，直接當作動詞的主詞。
 - I know all about it.我對這件事全部都知道。
   - 這裡的 all 放在介系詞後面，作為代名詞受詞，指「關於這件事的所有細節」。
+- I ate all. all是代名詞
+- All is well
+  - All（所有事情）+ is（是）+ well（安好的／沒問題的）。
 
+
+## All 詞性比較
+1. 當形容詞（後面直接接名詞）：
+* I ate all the apples.（我吃了所有的蘋果。 → 修飾 apples）
+
+2. 當副詞 全部（be動詞後，一般動詞前）：
+* They all ate apples.（他們全都吃了蘋果。 ）
+
+3. 當代名詞（自己獨立當受詞或主詞）：
+* I ate all.（我全部都吃了。 → 代替食物）
 
 
 ----------------------------------------------------------

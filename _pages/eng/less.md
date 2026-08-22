@@ -19,6 +19,9 @@ little(原級) -> less(比較級) -> least(最高級)
 - I drink less juice.我喝更少的果汁
 - More or less. 更多还是更少？
 - Drink less coffee if you want to sleep.（如果你想睡覺，少喝一點咖啡。）
+* I drink less tea.（我少喝一點茶。 → tea 不可數）
+* He eats less junk food.（他少吃一點垃圾食物。 → junk food 在這裡當作不可數的統稱）
+* We need less time.（我们需要少一點時間。 → time 不可數）
 
 ## less 作為副詞修飾形容詞
 - This book is less interesting than that one.(這本書沒有那一本那麼有趣)

@@ -17,7 +17,7 @@ keywords: English,
 這個「名詞 + V-ing」的結構在生活中超級常用，你可以直接套用：
 * I saw a dog chasinga cat.（我看到一隻正在追貓的狗。）
 * Who is the woman standingover there?（站在那裡的那位女士是誰？）
-* Do you know the man wearinga black jacket?（你認識那個穿著黑色夾克的男人嗎？）
+* Do you know the man wearing a black jacket?（你認識那個穿著黑色夾克的男人嗎？）
 * The man (who is) wearing a hat.
 * The boy running in the park.(正在公園跑步的男孩。)
 * The girl talking to your boss.(正在跟妳主管談話的女孩。)

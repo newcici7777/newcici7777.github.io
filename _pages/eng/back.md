@@ -79,3 +79,28 @@ be back from + [地點/活動]
 - I am back!（我回來了！ → 強調我現在人已經在這裡了，人安然到家了。）
 - When will he be back?（他什麼時候會回來？ → 問他恢復「在這邊」狀態是什麼時候。）
 
+## 移動動詞 + back
+「回頭、返回」或「走回原本的地方」
+- Go back.（走回頭路 / 你走過頭了）
+- Step back. 往後站
+- Turn back 回頭
+- You missed the turn. You need to go back.
+（你錯過轉彎了。你必須走回去。）
+- Walk back the way you came.
+（沿著你剛剛來的那條路走回去。）
+
+## go back + to 朝向/方向
+to 是朝向
+- I need to go back to work. 回去工作(work是抽象名詞，前面不加a 或 the)
+
+go back to 抽象名詞，回到某個狀態。
+- The kids need to go back to school.(孩子們該回學校上課了。 👉 指恢復學生的生活狀態)
+- He had to go back to prison.（他必須回監獄服刑了。）
+
+go back to the 地點
+- go back to the office.
+
+
+## go back home
+home 本身就有方向，是副詞
+- I need to go back home.
