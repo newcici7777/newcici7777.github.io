@@ -40,3 +40,8 @@ keywords: make
 - You look terrible. You should call a doctor.（你看起來氣色很差，你應該打個電話給醫生。）
 - She called a doctor yesterday.（她昨天打電話給醫生了）
 
+## make a call 打電話
+- Priti makes a call.Priti打了一通電話。
+* Wait a second, I need to make a call.（等我一下，我需要打個電話。）
+* She made a callto her friend.（她給她朋友打了一通電話。 → 過去式）
+

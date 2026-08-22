@@ -59,7 +59,7 @@ What形容詞 + 不可數名詞time
 - We will eat lunch between meetings
 
 ## during(介) 在...時候
-during 是一個介系詞（Preposition），最基本的中文意思就是「在...時候」。
+during 是一個介系詞（Preposition），最基本的中文意思就是「在...時候」，表示一段時間或一個事件，絕對不能直接接句子（主詞 + 動詞），特定的時間或活動「進行到一半」都可以用during。
 
 「during + 期間」副詞片語，它是用來修飾動詞的，告訴別人某個動作是「在什麼時後」發生的。
 
@@ -69,18 +69,30 @@ during + 名詞（片語）
 ```
 ❌ during 後面不能直接接子句（不能接「主詞 + 動詞」）。
 
-during + 既有的時間名詞（季節、月份、假期、特定活動期間）
-- during the summer（在夏天期間）
-- during the meeting（在會議進行期間）
-- during the holidays（在假期期間）
-- during the week（在平日／週間期間）
-
-- I fell asleep during the movie.（我在電影播放的時候睡著了)
-- they work hard during the week.他們平日工作很努力。
+### 1.活動進行的時候，發生了什麼
+* I fell asleep during the movie.（我在電影播放期間睡著了。）
+* Please don't talk during the exam.（請在考試期間不要交談。）
+* We met a lot of interesting people during our stay in Japan.（我們在日本停留期間遇到了很多有趣的人。
 - We will eat lunch during meetings.「每次開會」，我們都在開會期間吃午餐。
   - meetings 使用複數形，是因為這句話表達的是一個「通則、習慣或常態」
   - 指大大小小、各種不同的會議），而不是指某一個特定的會議。
   - 每當有會議時／在開會的期間（們），泛指每一次開會的狀況。
+
+ 
+### 2.during + 假期
+- during the trip
+- during the summer
+- during the holidays（在假期期間）
+
+during + 既有的時間名詞（季節、月份、假期、特定活動期間）
+- during the summer（在夏天期間）
+- during the week（在平日／週間期間）
+- during the meeting（在會議進行期間）
+
+
+- We traveled forthree days duringthe summer vacation.（我們在暑假期間旅行了三天。）
+- they work hard during the week.他們平日工作很努力。
+
 
 ## to pass 時間 a quarter/ half
 - It's a quarter to eleven!(现在是十点四十五！)

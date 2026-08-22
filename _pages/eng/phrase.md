@@ -4,13 +4,24 @@ date: 2026-08-13
 keywords: English, 
 ---
 ## 現在分詞 (V-ing)
-表示主動或正在進行的動作。
+分詞（V-ing）當作「形容詞」來修飾前面的名詞，表示主動或正在進行的動作。
+
+- It's a guy delivering a pizza?
+  - 原句:a guy who is delivering a pizza
+  - 這裡的 delivering 就像一個小型的形容詞子句（的簡化版），專門用來形容這個男生正在做什麼事。
+
 * 原句：The man who is wearing a hat.
 * 簡化：The man wearing a hat.
 * 語感：把 who is 刪掉。這是在描述「正在做某動作的人」。
+
+這個「名詞 + V-ing」的結構在生活中超級常用，你可以直接套用：
+* I saw a dog chasinga cat.（我看到一隻正在追貓的狗。）
+* Who is the woman standingover there?（站在那裡的那位女士是誰？）
+* Do you know the man wearinga black jacket?（你認識那個穿著黑色夾克的男人嗎？）
 * The man (who is) wearing a hat.
 * The boy running in the park.(正在公園跑步的男孩。)
 * The girl talking to your boss.(正在跟妳主管談話的女孩。)
+
 
 例句:
 - The man repairing your car is a professional mechanic. （那個正在修你車的男人是一個專業技師。）

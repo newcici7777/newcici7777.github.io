@@ -61,28 +61,39 @@ keywords: for
 工具 / 物品 + for + 用途 / 對象
 ```
 for 把「工具」和「食物」在一起，意思就完全包含「拿這個工具來處理這道食物」了！
+
 - I need a fork for the chicken.（我需要一支叉子來吃雞肉。）
-  - 這裡的 for 代表的是「專門為了這個目的/用途」：
-  - a fork（工具：一支叉子）
-  - for（用途/對象：為了……用途、拿來搭配……）
-  - the chicken（目的：這盤雞肉）
+  - 工具(a fork) for 用途(chicken)
+
 
 這種「需要某工具/物品 for 某場合/食物」的結構，在餐廳或日常生活中極度常用，可以直接複製套用：
 
 ### 餐廳:
+- I need a plastic cup for my juice.（我需要一個裝果汁的塑膠杯）
+  - 工具(a plastic cup) for 用途(my juice)
 - I need a tomato for the soup.我需要一個番茄用來煮湯
-  - for 在這裡表達目的或用途（為了煮湯）。
+  - 物品(a tomato) for 用途(soup)。
 - We need some napkins for the pizza.（我們吃披薩需要一些紙巾。）
+  - 工具(napkins) for 用途(the pizza)
 - I need a spoon for the soup.（我需要一支湯匙來喝湯。）
+  - 工具(a spoon) for 用途(the soup)
 - Do you have a knife for the steak?（你有切牛排用的刀子嗎？）
+  - 工具(a knife) for 用途(the steak)
 - I need some sugar for my coffee.（我的咖啡需要加一些糖。）
+  - 工具(sugar) for 用途(coffee)
 - Do you have milk for the tea?（你有加在茶裡的牛奶嗎？）
+  - 物品(milk) for 用途(tea)
 - I need ice for the water.（我的水需要加冰塊。）
+  - 物品(ice) for 用途(water)
+
 
 ### 衣物:
 - I need a jacket for the cold weather.（我需要一件應付冷天氣的外套。）
+  - 物品(jacket) for 用途(the cold weather)
 - She needs sunglasses for the beach.（去海邊她需要戴太陽眼鏡。）
+  - 工具(sunglasses) for 用途(the beach)
 - I need comfortable shoes for walking.（走路我需要穿舒適的鞋子。）
+  - 工具(shoes) for 用途(walking)
 - Do you have an umbrella for the rain?（你有擋雨用的雨傘嗎？）
 
 ### 工作:

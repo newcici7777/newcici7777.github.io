@@ -78,10 +78,23 @@ street?
 The coffee shop is inside the building, not
 outside. 
 
-## outside
+## outside 外面
 - It's too hot outside. It's the hottest day in August. I want to go home.
 - The swimming pool is outside.
 - It's hot outside.
+
+## outside + 建築 (什麼建築的外面)
+- outside the house（房子外面）
+- outside the office（辦公室外面）
+- outside the store（店鋪外面）
+- outside the restaurant（餐廳外面）
+- outside the school（學校外面）
+
+## 動詞 + outside
+- look outside（看外面）
+  - It's raining. Let's look outside.（外面在下雨。我們看外面吧。）
+- look outside the tent（看著帳篷外面）
+- wait outside the office（在辦公室外面等）
 
 ## be動詞 + between A地 and B地 之間
 - between the coffee shop and the zoo (在咖啡店和动物园之间 )

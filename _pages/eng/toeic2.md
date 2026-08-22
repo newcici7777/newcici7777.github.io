@@ -3,105 +3,105 @@ title: Toeic2
 date: 2026-07-02
 keywords: English, toeic
 ---
-## tain / ten / tent（保持、抓住）
+## tain / ten / tent（握住、抓住）
 
 | 單字 | 字源拆解 | 詞性 | 意義演變 |
 |------|----------|------|----------|
-| contain [kənˈten] | con（一起）+ tain（保持） | v. | 把東西保持在一起 → 包含、容納 |
-| maintain [menˈten] | main（手）+ tain（保持） | v. | 用手牢牢保持住 → 維持、保養、主張 |
-| obtain [əbˈten] | ob（向前）+ tain（保持） | v. | 向前伸手去保持住 → 獲得、取得 |
-| sustain [səˈsten] | sus（下方）+ tain（保持） | v. | 從下方保持住不墜 → 支撐、維持、承受 |
-| retain [rɪˈten] | re（回）+ tain（保持） | v. | 保持回自己手中 → 保留、記住 |
-| detain [dɪˈten] | de（分離）+ tain（保持） | v. | 把人分開留下來 → 拘留、耽誤 |
-| content [ˈkɑn.tɛnt] | con（一起）+ tent（保持的結果） | n. | 被保持在一起的東西 → 內容、目錄 |
-| abstain [əbˈsten] | abs（遠離）+ tain（保持） | v. | 保持遠離 → 戒除、棄權 |
-| pertain [pɚˈten] | per（穿透）+ tain（保持） | v. | 保持貫穿其中 → 與…相關、適用於 |
-| continue [kənˈtɪn.ju] | con（一起）+ tin（保持）+ ue | v. | 一直保持在一起不中斷 → 繼續 |
-| continuous [kənˈtɪn.ju.əs] | con（一起）+ tinu（保持）+ ous | adj. | 一直保持不斷的 → 連續不斷的 |
-| tentative [ˈtɛn.tə.tɪv] | tent（保持）+ ative（形容詞） | adj. | 保持不確定的試探狀態 → 暫時的、試探性的 |
+| contain [kənˈten] | con（一起）+ tain（握住） | v. | 把東西握住在一起 → 包含、容納 |
+| maintain [menˈten] | main（手）+ tain（握住） | v. | 用手牢牢握住住 → 維持、保養、主張 |
+| obtain [əbˈten] | ob（向前）+ tain（握住） | v. | 向前伸手去握住住 → 獲得、取得 |
+| sustain [səˈsten] | sus（下方）+ tain（握住） | v. | 從下方握住住不墜 → 支撐、維持、承受 |
+| retain [rɪˈten] | re（回）+ tain（握住） | v. | 握住回自己手中 → 保留、記住 |
+| detain [dɪˈten] | de（分離）+ tain（握住） | v. | 把人分開留下來 → 拘留、耽誤 |
+| content [ˈkɑn.tɛnt] | con（一起）+ tent（握住的結果） | n. | 被握住在一起的東西 → 內容、目錄 |
+| abstain [əbˈsten] | abs（遠離）+ tain（握住） | v. | 握住遠離 → 戒除、棄權 |
+| pertain [pɚˈten] | per（穿透）+ tain（握住） | v. | 握住貫穿其中 → 與…相關、適用於 |
+| continue [kənˈtɪn.ju] | con（一起）+ tin（握住）+ ue | v. | 一直握住在一起不中斷 → 繼續 |
+| continuous [kənˈtɪn.ju.əs] | con（一起）+ tinu（握住）+ ous | adj. | 一直握住不斷的 → 連續不斷的 |
+| tentative [ˈtɛn.tə.tɪv] | tent（握住）+ ative（形容詞） | adj. | 握住不確定的試探狀態 → 暫時的、試探性的 |
 | retention [rɪˈtɛn.ʃən] | re（回）+ tent（抓住）+ ion | n. | 抓回來的狀態 → 保留、記憶力 |
-| sustenance [ˈsʌs.tə.nəns] | sus（下）+ ten（保持）+ ance | n. | 從下方撐住所需的東西 → 營養品、維持生計 |
+| sustenance [ˈsʌs.tə.nəns] | sus（下）+ ten（握住）+ ance | n. | 從下方撐住所需的東西 → 營養品、維持生計 |
 
 - **con**tain [kənˈten] v. 包含；容納 [🔊 聽發音](https://www.merriam-webster.com/dictionary/contain)
 
-  con 一起 tain~~e~~ 保持（一起保持住 → 包含）  
+  con 一起 tain~~e~~ 握住（一起握住住 → 包含）  
   例句1: This box contains old photographs. 這個盒子裝著老照片。  
   例句2: The email contains the attachment you need. 這封郵件包含你需要的附件。  
   例句3: How much liquid does this bottle contain? 這個瓶子能容納多少液體？  
 
 - **main**tain [menˈten] v. 維持；保養；主張 [🔊 聽發音](https://www.merriam-webster.com/dictionary/maintain)
 
-  main 手 tain~~e~~ 保持（用手保持住 → 維持、保養）  
+  main 手 tain~~e~~ 握住（用手握住住 → 維持、保養）  
   例句1: She maintains a healthy lifestyle. 她維持健康的生活方式。  
   例句2: We need to maintain our equipment regularly. 我們需要定期保養設備。  
   例句3: He maintains that he is innocent. 他主張自己是無辜的。  
 
 - **ob**tain [əbˈten] v. 獲得；取得 [🔊 聽發音](https://www.merriam-webster.com/dictionary/obtain)
 
-  ob 向前 tain~~e~~ 保持（向前伸手保持住 → 獲得）  
+  ob 向前 tain~~e~~ 握住（向前伸手握住住 → 獲得）  
   例句1: I obtained a copy of the report. 我獲得了那份報告的副本。  
   例句2: You need to obtain a permit before starting. 你需要在開始前取得許可證。  
   例句3: She obtained her degree last year. 她去年獲得了學位。  
 
 - **sus**tain [səˈsten] v. 支撐；維持；遭受 [🔊 聽發音](https://www.merriam-webster.com/dictionary/sustain)
 
-  sus 下方 tain~~e~~ 保持（從下方保持住 → 支撐、維持）  
+  sus 下方 tain~~e~~ 握住（從下方握住住 → 支撐、維持）  
   例句1: The pillars sustain the weight of the roof. 這些柱子支撐屋頂的重量。  
   例句2: We need enough food to sustain life. 我們需要足夠的食物維持生命。  
   例句3: He sustained a serious injury in the accident. 他在意外中遭受重傷。  
 
 - **re**tain [rɪˈten] v. 保留；記住 [🔊 聽發音](https://www.merriam-webster.com/dictionary/retain)
 
-  re 回 tain~~e~~ 保持（保持回自己手中 → 保留、記住）  
-  例句1: She retained her composure during the crisis. 她在危機中保持鎮定。  
+  re 回 tain~~e~~ 握住（握住回自己手中 → 保留、記住）  
+  例句1: She retained her composure during the crisis. 她在危機中握住鎮定。  
   例句2: This soil retains water well. 這種土壤保水性很好。  
   例句3: I retain vivid memories of my childhood. 我對童年保有鮮明的記憶。  
 
 - **de**tain [dɪˈten] v. 拘留；耽誤 [🔊 聽發音](https://www.merriam-webster.com/dictionary/detain)
 
-  de 分離 tain~~e~~ 保持（把人分開留下來 → 拘留、耽誤）  
+  de 分離 tain~~e~~ 握住（把人分開留下來 → 拘留、耽誤）  
   例句1: The police detained the suspect for questioning. 警方拘留嫌疑人進行訊問。  
   例句2: I was detained by a traffic jam. 我被塞車耽誤了。  
   例句3: They detained him at the border for hours. 他們在邊境扣留了他好幾個小時。  
 
 - **con**tent [ˈkɑn.tɛnt] n. 內容；目錄 [🔊 聽發音](https://www.merriam-webster.com/dictionary/content)
 
-  con 一起 tent~~e~~ 保持（一起保持住的東西 → 內容）  
+  con 一起 tent~~e~~ 握住（一起握住住的東西 → 內容）  
   例句1: The table of contents is on page one. 目錄在第一頁。  
   例句2: The content of the report is very detailed. 報告的內容非常詳細。  
   例句3: She uploads video content to the website daily. 她每天上傳影片內容到網站。  
 
 - **ab**stain [əbˈsten] v. 戒除；棄權 [🔊 聽發音](https://www.merriam-webster.com/dictionary/abstain)
 
-  abs 遠離 tain~~e~~ 保持（保持遠離 → 戒除、棄權）  
+  abs 遠離 tain~~e~~ 握住（握住遠離 → 戒除、棄權）  
   例句1: The doctor advised him to abstain from alcohol. 醫生建議他戒酒。  
   例句2: Three members voted for the motion, and two abstained. 三位成員贊成該動議，兩人棄權。  
   例句3: She abstained from eating meat for health reasons. 她因健康原因不吃肉。  
 
 - **per**tain [pɚˈten] v. 關於；適用於 [🔊 聽發音](https://www.merriam-webster.com/dictionary/pertain)
 
-  per 穿透 tain~~e~~ 保持（保持貫穿其中 → 相關、適用）  
+  per 穿透 tain~~e~~ 握住（握住貫穿其中 → 相關、適用）  
   例句1: These rules pertain to all staff members. 這些規定適用於所有員工。  
   例句2: Documents pertaining to the project are confidential. 與該專案相關的文件是機密的。  
   例句3: This information pertains directly to your case. 這項資訊與你的案件直接相關。  
 
 - **con**tinue [kənˈtɪn.ju] v. 繼續 [🔊 聽發音](https://www.merriam-webster.com/dictionary/continue)
 
-  con 一起 tin~~u~~e 保持（一直保持在一起 → 繼續）  
+  con 一起 tin~~u~~e 握住（一直握住在一起 → 繼續）  
   例句1: Please continue with your work. 請繼續你的工作。  
   例句2: The meeting will continue after lunch. 會議將在午餐後繼續。  
   例句3: She decided to continue her education abroad. 她決定繼續在國外進修。  
 
 - **con**tinuous [kənˈtɪn.ju.əs] adj. 連續不斷的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/continuous)
 
-  con 一起 tinu 保持 ous 形容詞（一直保持不斷的 → 連續的）  
+  con 一起 tinu 握住 ous 形容詞（一直握住不斷的 → 連續的）  
   例句1: The brain needs a continuous supply of oxygen. 大腦需要持續不斷的氧氣供應。  
   例句2: We heard a continuous noise from the construction site. 我們聽到工地傳來連續不斷的噪音。  
   例句3: She has worked there for ten continuous years. 她已在那裡連續工作了十年。  
 
 - **ten**tative [ˈtɛn.tə.tɪv] adj. 暫時的；試探性的 [🔊 聽發音](https://www.merriam-webster.com/dictionary/tentative)
 
-  tent 保持 ative 形容詞（保持不確定的試探狀態 → 暫時的）  
+  tent 握住 ative 形容詞（握住不確定的試探狀態 → 暫時的）  
   例句1: We made a tentative agreement for next week. 我們下週達成了一項暫時性的協議。  
   例句2: The schedule is still tentative and may change. 行程表仍是暫定的，可能會變動。  
   例句3: She gave a tentative smile. 她露出試探性的微笑。  
@@ -115,12 +115,12 @@ keywords: English, toeic
 
 - **sus**tenance [ˈsʌs.tə.nəns] n. 營養品；維持生計之物 [🔊 聽發音](https://www.merriam-webster.com/dictionary/sustenance)
 
-  sus 下方 ten 保持 ance 名詞（從下方撐住所需的東西 → 營養、維持）  
+  sus 下方 ten 握住 ance 名詞（從下方撐住所需的東西 → 營養、維持）  
   例句1: The villagers rely on farming for sustenance. 村民依靠農耕維持生計。  
   例句2: Water is essential for sustenance of life. 水是維持生命所必需的。  
   例句3: They had no sustenance for days. 他們好幾天沒有食物了。 
 
-## pel 驅趕
+## pel 推
 
 peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向外移動」。
 
@@ -136,61 +136,61 @@ peal 與 pet/peat 屬於「同源遠親」，核心概念都是「向前／向�
 
 | 單字 | 字源拆解 | 詞性 | 意義演變 |
 |------|----------|------|----------|
-| repel [rɪˈpɛl] | re（回）+ pel（驅趕） | v. | 驅趕回去 → 擊退、排斥 |
-| compel [kəmˈpɛl] | com（一起）+ pel（驅趕） | v. | 驅趕到一起 → 強迫、迫使 |
-| impel [ɪmˈpɛl] | im（入內）+ pel（驅趕） | v. | 驅趕向前進入 → 推動、驅使 |
-| dispel [dɪˈspɛl] | dis（散開）+ pel（驅趕） | v. | 驅趕使散開 → 驅散、消除 |
-| propel [prəˈpɛl] | pro（向前）+ pel（驅趕） | v. | 驅趕向前 → 推進、驅動 |
-| expel [ɪkˈspɛl] | ex（向外）+ pel（驅趕） | v. | 驅趕出去 → 開除、驅逐 |
+| repel [rɪˈpɛl] | re（回）+ pel（推） | v. | 推回去 → 擊退、排斥 |
+| compel [kəmˈpɛl] | com（一起）+ pel（推） | v. | 推到一起 → 強迫、迫使 |
+| impel [ɪmˈpɛl] | im（入內）+ pel（推） | v. | 推向前進入 → 推動、驅使 |
+| dispel [dɪˈspɛl] | dis（散開）+ pel（推） | v. | 推使散開 → 驅散、消除 |
+| propel [prəˈpɛl] | pro（向前）+ pel（推） | v. | 推向前 → 推進、驅動 |
+| expel [ɪkˈspɛl] | ex（向外）+ pel（推） | v. | 推出去 → 開除、驅逐 |
 | appeal [əˈpil] | ap（朝向）+ peal（pel 變體） | n./v. | 驅使別人朝向自己 → 吸引力、呼籲、上訴 |
 
-pel 這個字根就像「驅趕羊群的牧羊人」：
-- repel：把敵人「驅趕回去」（擊退）
-- compel：把羊「驅趕到一起」（強迫）
-- impel：把羊「驅趕向前進入」（推動）
-- dispel：把羊群「驅趕散開」（驅散）
-- propel：把羊「驅趕向前走」（推進）
-- expel：把羊「驅趕出去」（開除）
+pel 這個字根就像「推羊群的牧羊人」：
+- repel：把敵人「推回去」（擊退）
+- compel：把羊「推到一起」（強迫）
+- impel：把羊「推向前進入」（推動）
+- dispel：把羊群「推散開」（驅散）
+- propel：把羊「推向前走」（推進）
+- expel：把羊「推出去」（開除）
 - appeal：吸引別人「朝向」你（呼籲、吸引力）
 
 - **re**pel [rɪˈpɛl] v. 擊退；排斥 [🔊 聽發音](https://www.merriam-webster.com/dictionary/repel)
 
-  re 回 pel 驅趕（驅趕回去 → 擊退、排斥）  
+  re 回 pel 推（推回去 → 擊退、排斥）  
   例句1: The material repels water and stains. 這種材質防水且防污。  
   例句2: The company's brand image repels some customers. 該公司的品牌形象排斥某些客戶。  
   例句3: The soldiers successfully repelled the attack. 士兵們成功擊退了攻擊。  
 
 - **com**pel [kəmˈpɛl] v. 強迫；迫使 [🔊 聽發音](https://www.merriam-webster.com/dictionary/compel)
 
-  com 一起 pel 驅趕（驅趕到一起 → 強迫、迫使）  
+  com 一起 pel 推（推到一起 → 強迫、迫使）  
   例句1: The new regulations compel companies to reduce emissions. 新法規強迫公司減少排放。  
   例句2: I feel compelled to apologize for the delay. 我覺得有必要為延誤道歉。  
   例句3: Market competition compels us to innovate. 市場競爭迫使我們創新。  
 
 - **im**pel [ɪmˈpɛl] v. 推動；驅使 [🔊 聽發音](https://www.merriam-webster.com/dictionary/impel)
 
-  im 入內 pel 驅趕（驅趕向前進入 → 推動、驅使）  
+  im 入內 pel 推（向內推 → 推動）  
   例句1: The need for growth impels the company to expand overseas. 成長需求推動公司向海外擴張。  
   例句2: Profit motives impel business decisions. 利潤動機驅使商業決策。  
   例句3: Innovation impels us to improve our products. 創新驅使我們改善產品。  
 
 - **dis**pel [dɪˈspɛl] v. 驅散；消除 [🔊 聽發音](https://www.merriam-webster.com/dictionary/dispel)
 
-  dis 散開 pel 驅趕（驅趕使散開 → 驅散、消除）  
+  dis 散開 pel 推（推使散開 → 驅散、消除）  
   例句1: The CEO's speech dispelled rumors about the merger. 執行長的演說消除了關於合併的謠言。  
   例句2: Good communication can dispel misunderstandings. 良好的溝通可以消除誤解。  
   例句3: The new data dispelled all doubts about the project. 新數據消除了對該專案的所有疑慮。  
 
 - **pro**pel [prəˈpɛl] v. 推進；驅動 [🔊 聽發音](https://www.merriam-webster.com/dictionary/propel)
 
-  pro 向前 pel 驅趕（驅趕向前 → 推進）  
+  pro 向前 pel 推（推向前 → 推進）  
   例句1: The company was propelled to success by strong leadership. 該公司因強有力的領導而被推向成功。  
   例句2: Technology propels economic growth. 科技推動經濟成長。  
   例句3: The new product propelled sales to record highs. 新產品將銷售額推向了歷史新高。  
 
 - **ex**pel [ɪkˈspɛl] v. 開除；驅逐 [🔊 聽發音](https://www.merriam-webster.com/dictionary/expel)
 
-  ex 向外 pel 驅趕（驅趕出去 → 開除、驅逐）  
+  ex 向外 pel 推（推出去 → 開除、驅逐）  
   例句1: The employee was expelled from the company for fraud. 該員工因詐欺被公司開除。  
   例句2: The country expelled foreign journalists. 該國驅逐了外國記者。  
   例句3: He was expelled from the trade association. 他被開除出該行業協會。  

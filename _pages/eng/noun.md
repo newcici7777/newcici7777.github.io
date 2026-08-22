@@ -24,7 +24,7 @@ keywords: countable , uncountable
 - We watched cartoon**s** yesterday morning.(卡通加s)我们昨天早上看了卡通片。
 
 
-## Cake Pizza可為可數/不可數
+## Cake Pizza candy 可為可數/不可數
 - No, this **isn't** cake.這不是蛋糕嗎？
 - How **much** cake **is** there?（有多少蛋糕？）
 - There **is** no pizza in the kitchen.廚房裡沒有披薩了
@@ -35,6 +35,11 @@ keywords: countable , uncountable
 - I like pizza. pizza不可數，後面不加s
 - That's a lot of pizza.(沒加s)
 - She takes some pizza.她拿了一些披薩（去吃）。
+- **Is** there any candy in that box?盒子裡有沒有糖果這種東西（零食）
+  - 糖果當作零食的總稱，它就是不可數的
+- **Are** there any cand**ies**?「有幾顆糖果」 → 當作可數複數
+- There **are** three cand**ies** on the table.桌上有三顆糖果
+  - 一顆一顆獨立包裝的糖果時，它就是可數的
 
 ## 不可數當作可數
 - I would like three beers.我想要三瓶啤酒。

@@ -19,6 +19,19 @@ keywords: Take
 ## 拿
 - She takes some pizza.她拿了一些披薩（去吃）。
 
+## take out 拿出來
+- 把手機從口袋裡 拿出去 → take out her phone
+- 把錢包從包包裡 拿出去 → take out a wallet
+
+- Priti takes out her phone.（普莉緹拿出她的手機。）
+- He took out his wallet to pay.（他拿出他的錢包來付錢。）
+- Please take out your trash.（請把你的垃圾拿出去倒。）
+- She took out a tissue.（她抽出一張面紙。）
+
+## takeout 外帶
+- Let's get takeout tonight.（我們今晚吃外帶吧！）
+
+
 ## get vs take
 Get ＝ 「去把東西帶回來」（從外往內拿）
 - Go get some pizza.（走，我們去把披薩買回來/拿過來享用。）

@@ -110,16 +110,9 @@ even + 比較級（er / more）
 - Where will you live next year?  你明年会住在哪里？(注意！這邊沒有in)  
 
 
-## stay in  停留、待（在某個地方）
-指你在某個地方（例如：英國、飯店、朋友家）住了幾天、待了多久，而不是指永久定居。
-- They'll stay in Canada next year.他们明年会留在加拿大。 
-- Emma usually stays in the library at night.
-- We stayed in a small town in California last summer.
-- How many days did you stay in the UK?你在英國待了多少天？
-- stayed（過去式）
-  - I stayed in the UK for five days.（我在英國待了五天。）
-- stay at + 飯店/地方：指「投宿、寄宿在某處」
-  - I stayed at a nice hotel.（我住在一家不錯的飯店。）
+
+
+
 
 
 
@@ -258,6 +251,12 @@ river（河流） 加 s 變成 rivers，通常是最直觀的「複數名詞」�
 - on the computer（在電腦上）
 - on TV（在電視上）
 - on paper（在紙上）
+
+## agree to V 同意去做某件事
+- We agreed not to use our phones. 我們同意不要使用我們的手機
+- We agreed to meet at 8 PM.（我們約好晚上八點見面。）
+- She agreed to help me.（她答應幫我。）
+- They agreed to sign the contract.（他們同意簽署合約。）
 
 
 ## 其它疑惑

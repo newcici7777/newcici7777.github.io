@@ -198,6 +198,7 @@ I am look for my keys. Have you seen them? （我在找我的鑰匙。你有看�
 
 ### look out 小心/注意
 - Look out! A car is coming! （小心！有車子開過來了！）
+* Look out!A car is coming!（小心！有車子開過來！）
 
 ### look after 照顧
 She will look after the kids while I am away. （我不在的時候，她會照顧小孩。—）
@@ -207,6 +208,22 @@ We should look into this problem. （我們應該好好調查/研究這個問題
 
 ### look over 瀏覽/檢查
 Please look over this report before the meeting. （請在開會前快速瀏覽/審閱一下這份報告。）
+
+### look out of the [某個地方]（從……裡面向外看）
+用 out of（強調從內部穿透出去）：
+* look out ofthe tent（從帳篷裡面向外看）
+* look out ofthe window（從窗戶向外看）
+* She looked out of the window.（她從窗戶往外看。）
+* I'll look out of the tent.（我會從帳篷裡向外看。
+
+### look outside（看外面）
+* It's raining. Let's look outside.（外面在下雨。我們看外面吧。）
+look out（小心！／注意！）
+
+用 outside（直接接名詞）：
+* look outsidethe tent（看著帳篷外面）
+* wait outsidethe office（在辦公室外面等）
+
 
 
 ## Listen to 不及物動詞
