@@ -46,6 +46,116 @@ keywords: English
 * 或者：I never go there by bus.
 * 說明：當我們在講日常生活中固定的交通工具時，通常習慣加 the（take the bus、take the subway），表示「我平常是不搭公車通勤的」。
 
+## in 交通工具
+小車計程車(空間狹小，你只能「坐著被包覆在裡面」，無法站立行走。)
+- in a taxi/ in a car
+  - I'm in a taxi right now, I'll be there in 10 mins.（我現在在計程車上，10分鐘內到。）
+  - Bea is in a taxi.
+
+## on 交通工具
+「你可以站起來走動的大型大眾運輸工具」，一律用 on
+- on the bus 在公車
+- on the train 火車
+- on a plane 飛機上
+- On horseback（騎馬）
+
+- We are on the train now.（我們現在在火車上。）
+
+### on / in (the/my) 交通工具
+```
+in/on + 限制詞 + 交通工具 (講你在車子/船裡面)
+```
+如果交通工具前面有「代名詞（my, his, that）」或是「形容詞」，用on。
+
+- my： I go to work in my car. (我坐在我的車裡去上班。)
+- that那輛： I go home on that bus. (我搭那輛公車回家。)
+
+
+## go on 交通工具
+- I'm not going on this roller coaster! 
+
+## by 工具
+- We communicate by email. （我們透過電子郵件聯絡。）
+
+## by 交通/工具的畫面：透過...方式 / 搭乘
+當你要表達你「使用什麼工具」或「搭乘什麼交通工具」時，直接用 by。
+
+注意！後面的交通工具不能加 a 或 the 喔！
+- I go to work by MRT / by bus. （我搭捷運/搭公車上班。）
+- Anna sometimes goes to work by car.
+- We traveled in the US by car last year.
+- by cable car 搭纜車
+
+
+前面絕對不會加 "a", "an", "the" 或任何複數 "s"。
+- by plane (搭飛機)
+- by car (開車/搭車)
+- by train (搭火車)
+- by bus (搭公車)
+- by ship / by boat (搭船)
+- by MRT / by subway (搭捷運/地鐵)
+
+❌ 錯誤範例： by a plane (這是錯的，千萬不要加冠詞)；by the bus (也是錯的)
+
+
+## on foot
+走路： 一定要用 on foot。
+- I go to school on foot. (我不搭車，我走路去學校。)
+
+## by vs take vs on vs on foot
+- I like to travel by train.我喜歡搭火車旅遊
+- I always take the train.我總是搭那班火車 
+- I travel on the train.
+- I go to school on foot.我走路上學
+
+## get on/ get off
+get on（片語動詞：上車、上船、上飛機）專門用來指「踏入」大型交通工具（火車、公車、飛機、船）。
+
+上車 / 下車的兩大邏輯（關鍵在於：能不能在裡面站立走動？）
+A. 大型的交通工具 → 用 get on / get off
+* 老外的大腦畫面： 這種車/船/飛機空間很大，你必須「踏上去（on）」，而且可以在裡面站立或走動。
+* 上車： get on
+* 下車： get off
+* 常見對象：
+* get on the bus（上公車）
+* get on the train（上火車）
+* get on the plane（上飛機）
+* get on the MRT（上捷運）
+* get on the boat（上船）
+
+- We're getting on this train soon. 我們很快就要上這班火車了。
+- We got on the train.（我們上火車了／剛才上車了。）
+
+
+## get in/ get out of
+B. 小型的交通工具 → 用 get in / get out of
+* 老外的大腦畫面： 這種車空間狹小，你無法在裡面站直，必須彎腰「塞進去（in）」這個封閉空間裡。
+* 上車： get in
+* 下車： get out of
+* 常見對象：
+* get in the car（上私家車 / 轎車）
+* get in the taxi（上計程車）
+* get in the Uber（上 Uber）
+
+
+- 能在裡面站著走動的大車 → get on the bus（上車）
+- 需要彎腰塞進去的小車 → get in the car（上車）
+
+
+|交通工具類型|上車 (Get ...)|下車 (Get ...)|老外的大腦視覺|
+|:-----------|:-----------|:-----------|:------------|
+|公車 / 火車 / 捷運 / 飛機|get on|get off|腳踩在平台上（on），可以在裡面走動。|
+|私家車 / 計程車 / Uber|get in|get out of|把身體彎曲塞進車廂空間（in）裡。|
+
+
+## catch a 交通工具 (趕火車／趕公車)
+- catch a train / catch a bus（趕火車／趕公車）
+- We need to catch a train.（我們得去趕火車。）
+- catch a flight（趕飛機／搭飛機）
+- catch a bus（趕公車）
+
+- We need to run to catch the train.（我們得用跑的去趕火車。）
+- Hurry up, or we'll miss the flight!（快一點，不然我們會錯過班機！） → 也可以說 or we won't catch our flight.
 
 ## have a 交通工具
 如果你想表達「我們等一下有車要搭／我們有班次要趕」
@@ -53,6 +163,13 @@ keywords: English
 - We have a train to catch.（我們有火車要趕 → 雖然動詞用 catch，但意思是「我們有班火車得搭」。）
 - We have a train in ten minutes.（我們十分鐘後有一班火車要搭。）
 - We have a bus to catch.（我們有公車要趕。）
+
+---------------------------------
+
+## have a flight 搭飛機
+ have 意思是 「有（一個安排好的行程、機會或事件）」
+- We have a flight in two hours.我們在兩小時後有一班飛機要搭。
+- We have a flight → 我們有（安排了）一個航班（行程／事件）。
 
 ## 機票
 
@@ -100,24 +217,11 @@ flight 不只是機器，它包含了時間、編號、路線和行程（也就�
 - 想講「你要搭乘的那個航班／班次」 → 用 flight。
 
 
-
-## have a flight 搭飛機
- have 意思是 「有（一個安排好的行程、機會或事件）」
-- We have a flight in two hours.我們在兩小時後有一班飛機要搭。
-- We have a flight → 我們有（安排了）一個航班（行程／事件）。
-
 跟there is比較
 - There is a flight in two hours.（時間表上）兩小時後有一班飛機。
 - We have a flight in two hours.我們（自己的行程）在兩小時後有一班飛機要趕。
 
-## catch a 交通工具 (趕火車／趕公車)
-- catch a train / catch a bus（趕火車／趕公車）
-- We need to catch a train.（我們得去趕火車。）
-- catch a flight（趕飛機／搭飛機）
-- catch a bus（趕公車）
 
-- We need to run to catch the train.（我們得用跑的去趕火車。）
-- Hurry up, or we'll miss the flight!（快一點，不然我們會錯過班機！） → 也可以說 or we won't catch our flight.
 
 ## Take a flight
 強調「動作」：執行搭飛機這件事   
@@ -178,92 +282,15 @@ by plane它通常作為副詞，補充說明你選擇了什麼樣的交通方式
 - We are landing right now.（我們現在正在降落。）
 - The plane is about to land.（飛機快要降落了。）
 
-## by 交通/工具的畫面：透過...方式 / 搭乘
-當你要表達你「使用什麼工具」或「搭乘什麼交通工具」時，直接用 by。
-
-注意！後面的交通工具不能加 a 或 the 喔！
-- I go to work by MRT / by bus. （我搭捷運/搭公車上班。）
-- We communicate by email. （我們透過電子郵件聯絡。）
-
-前面絕對不會加 "a", "an", "the" 或任何複數 "s"。
-- by plane (搭飛機)
-- by car (開車/搭車)
-- by train (搭火車)
-- by bus (搭公車)
-- by ship / by boat (搭船)
-- by MRT / by subway (搭捷運/地鐵)
-
-❌ 錯誤範例： by a plane (這是錯的，千萬不要加冠詞)；by the bus (也是錯的)
-
-
-
-### 什麼時候不能用 "by"？on/in 交通工具 
-如果交通工具前面有「代名詞（my, his, that）」或是「形容詞」，我們就必須把 "by" 換掉。
-- by： I go to work by car. (我開車去上班。)
-- 如果加上了「我的」 (my)： I go to work in my car. (我坐在我的車裡去上班。)
-- 如果加上了「那輛」 (that)： I go home on that bus. (我搭那輛公車回家。)
-
-- by + 交通工具 (講方式，是一個整體概念)
-- in/on + 限制詞 + 交通工具 (講你在車子/船裡面)
-
-
-## on foot
-走路： 一定要用 on foot。
-- I go to school on foot. (我不搭車，我走路去學校。)
-
-## by vs take vs on vs on foot
-- I like to travel by train.我喜歡搭火車旅遊
-- I always take the train.我總是搭那班火車 
-- I travel on the train.
-- I go to school on foot.我走路上學
-
-## get on/ get off
-get on（片語動詞：上車、上船、上飛機）專門用來指「踏入」大型交通工具（火車、公車、飛機、船）。
-
-上車 / 下車的兩大邏輯（關鍵在於：能不能在裡面站立走動？）
-A. 大型的交通工具 → 用 get on / get off
-* 老外的大腦畫面： 這種車/船/飛機空間很大，你必須「踏上去（on）」，而且可以在裡面站立或走動。
-* 上車： get on
-* 下車： get off
-* 常見對象：
-* get on the bus（上公車）
-* get on the train（上火車）
-* get on the plane（上飛機）
-* get on the MRT（上捷運）
-* get on the boat（上船）
-
-- We're getting on this train soon. 我們很快就要上這班火車了。
-- We got on the train.（我們上火車了／剛才上車了。）
-- We are on the train now.（我們現在在火車上。）
-
-## get in/ get out of
-B. 小型的交通工具 → 用 get in / get out of
-* 老外的大腦畫面： 這種車空間狹小，你無法在裡面站直，必須彎腰「塞進去（in）」這個封閉空間裡。
-* 上車： get in
-* 下車： get out of
-* 常見對象：
-* get in the car（上私家車 / 轎車）
-* get in the taxi（上計程車）
-* get in the Uber（上 Uber）
-
-
-- 能在裡面站著走動的大車 → get on the bus（上車）
-- 需要彎腰塞進去的小車 → get in the car（上車）
-
-
-|交通工具類型|上車 (Get ...)|下車 (Get ...)|老外的大腦視覺|
-|:-----------|:-----------|:-----------|:------------|
-|公車 / 火車 / 捷運 / 飛機|get on|get off|腳踩在平台上（on），可以在裡面走動。|
-|私家車 / 計程車 / Uber|get in|get out of|把身體彎曲塞進車廂空間（in）裡。|
-
 
 ## ride
 - I paid for the ride.我付了車資 / 我付了這趟車的錢
   - pay for + 名詞（為……付錢）。呼應我們前面討論過的 pay ... for ...，這裡的 ride 就是那個被購買的「搭乘服務」。
 - get a ride home 搭別人的便車回家
-- Have a ride（去搭車、兜風、搭乘一次）（我們有車可以坐／有人會載我們。）
-  - Do you want to have a ride with us?（你想跟我們一起去兜風/搭便車嗎？）
+- Have a ride（我們有車可以坐／有人會載我們。）
+  - Can I have a ride to the station?你可以載我去車站嗎？
   - He offered to have a ride on his new motorcycle.（他主動說要讓我試乘他的新機車。）
+
 
 Ride 則強調「騎乘」或是「坐在上面隨之移動」的動作
 - ride a bike

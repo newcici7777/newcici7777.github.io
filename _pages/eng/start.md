@@ -67,3 +67,13 @@ to + V，強調那個「跨入新狀態」的瞬間切換
 - Fall begins in September.
 - The next class will begin at 12 o'clock.
 
+
+## begin to 原因
+### 避開「連環 -ing」（發音與視覺的考量）
+- She began to get angry.她開始生氣
+後面的動詞剛好也是 -ing 開頭（例如 begin 本身、或是像 begin beginning），聽起來就會很奇怪。  
+She began getting angry 裡，雖然沒有連續兩個 -ing，但用 began to get 聽起來會更有節奏感、更俐落一點。  
+
+### 前面剛好是進行式，通常會用 to V
+當 begin 本身已經是進行式（is/was beginning）時，為了避免後面又接一個 -ing 造成混淆，通常會強烈建議後面接 to V。
+- 正確：It was beginning to rain.（開始下雨了）

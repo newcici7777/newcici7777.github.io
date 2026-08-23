@@ -41,9 +41,12 @@ in Taiwan.
 - Do we have milk in the refrigerator?
 - The food is in the refrigerator.
 
-## on
+## on the street/ on the first floor
 - There's a coffee shop on this street. 在这条街上有一个咖啡店。
 - Ary you on the third floor or the first floor?你在三层还是一层？
+
+## on the beach（在沙灘上）
+- We spent the whole day relaxing on the beach.（我們一整天都在沙灘上放鬆。）
 
 ## on the credit card 信用卡上
 - There are too many numbers on this credit card.在这张信用卡上有太多号码！
@@ -147,6 +150,16 @@ beside 的核心意思是「在...旁邊（側邊）
 |:----------|:-------|:--------------------|
 |near the water|附近|鴨子在離水面走路 1-2 分鐘的草地上。|
 |by the water|旁邊|鴨子就在水岸邊，腳快碰水了。|
+
+
+## by 地點
+by 代表「在...旁邊」
+- We eat by the water.我們在水邊吃飯
+
+by（極度貼近的距離），常用於表達情感上的陪伴。
+- by your side（在你的身邊）
+  - Don't worry, I'll always be by your side.（別擔心，我會一直陪在你的身邊。）
+
 
 
 ## by 時間 (在...之前 / 最晚到...為止)

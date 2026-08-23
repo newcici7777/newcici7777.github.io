@@ -213,3 +213,23 @@ easy, hard, difficult, important, possible, impossible
 - She threw the ball to me. （她把球丟給我。）
 - Tell the truth to me. （把真相告訴我。）
 
+## for 狀態
+for free(名詞) free在這裡會變成名詞？
+我們平常最常看到 free 當作形容詞（例如：free time「空閒時間」或 I am free「我有空」）。
+
+但在英文中，某些特定的介系詞後面可以接名詞來表示「狀態」或「代價」，例如：
+- for sale（待售中） → 這裡的 sale 是名詞。
+- for rent（出租中） → 這裡的 rent 是名詞。
+- for free（免費） → 這裡的 free 也被當作名詞使用。
+
+## for free(副詞) 免費
+for free放在句尾，負責補充說明「這件事不用花錢」
+
+- She gave this to me **for free**, so I didn't have to pay for it. 
+- They installed the new software for free. （他們免費安裝了這個新軟體。）
+  - 核心動作是「安裝軟體」（installed the new software），for free 放在最後面，說明這項服務不用付錢。
+- The restaurant offered a free dessert, and I got a cup of coffee for free too. （那家餐廳提供免費甜點，我也免費拿到了一杯咖啡。）
+  - 位置解析： 「拿到了一杯咖啡」是主幹，for free 放在受詞咖啡的後面。
+- You can download the app for free from the App Store. （你可以從 App Store 免費下載這個應用程式。）
+- The delivery is available for free if you spend over 1000 dollars. （如果你消費滿一千元，運費就是免費的。）
+  - 位置解析： 放在狀態形容詞後面，說明這個外送服務的條件。

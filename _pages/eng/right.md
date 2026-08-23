@@ -62,5 +62,11 @@ go是方向。
 - Take a right at the traffic light.
 
 
+## all right(形容詞) 沒事
+當它用來關心別人的身體狀況或情緒時，意思是「安然無恙、良好」。
+
+- Are you all right?（你還好嗎？）
+- Everything is all right.（一切都很好／沒事。）
+- I'm right.（我很好／我沒事。）
 
 

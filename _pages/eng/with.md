@@ -81,3 +81,14 @@ help me + 原形動詞
 help me + to + 原形動詞
 ```
 * Can you help me to fix this?（你能幫我修這個嗎？）
+
+## with 附加設備
+表達某個東西（房間）「內部包含、附帶」了某種配備
+- a room with a double bed ＝ 一間附帶（有）雙人床的房間
+- a coffee shop with a view ＝ 一間帶有景觀的咖啡廳
+- a house with a big garden ＝ 一間擁有大花園的房子
+
+- Do you have a room with a double bed? 
+- Do you have a room with an ocean view? （你們有海景房嗎？ → 帶有海景的房間）
+- I'd like a room with a private bathroom. （我想要一間有獨立衛浴的房間。）
+- Is there a room with a balcony available? （有帶陽台的房間可以訂嗎？）

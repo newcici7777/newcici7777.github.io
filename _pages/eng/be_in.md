@@ -1,5 +1,5 @@
 ---
-title: be in (狀態)
+title: be in (狀態) 
 date: 2026-08-09
 keywords: English
 ---
@@ -69,39 +69,4 @@ prison 這邊是抽象名詞，不可加a 跟 the
 - in love
   - He is in love. 戀愛中
   - Enzo is in love with me.(Enzo愛上我了)
-
-## in 交通工具
-小車計程車(空間狹小，你只能「坐著被包覆在裡面」，無法站立行走。)
-- in a taxi/ in a car
-  - I'm in a taxi right now, I'll be there in 10 mins.（我現在在計程車上，10分鐘內到。）
-  - Bea is in a taxi.
-
-## on 交通工具
-「你可以站起來走動的大型大眾運輸工具」，一律用 on
-- on the bus 在公車
-- on the train 火車
-- on a plane 飛機上
-
-以前的雲宵飛車是用站的   
-- I'm not going on this roller coaster! 
-
-- On foot（步行、靠雙腳）
-- On horseback（騎馬）
-
-## by 交通工具
-- Anna sometimes goes to work by car.
-- We traveled in the US by car last year.
-- By car / By cable car 坐車 / 搭纜車
-
-## on 地點
-- on the beach（在沙灘上）
-  - We spent the whole day relaxing on the beach.（我們一整天都在沙灘上放鬆。）
-
-## by 地點
-by 代表「在...旁邊」
-- We eat by the water.我們在水邊吃飯
-
-by（極度貼近的距離），常用於表達情感上的陪伴。
-- by your side（在你的身邊）
-  - Don't worry, I'll always be by your side.（別擔心，我會一直陪在你的身邊。）
 

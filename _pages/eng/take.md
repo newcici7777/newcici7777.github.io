@@ -71,16 +71,41 @@ Take 人 to 某地
 - You can't take this elevator now.你現在不能搭這部電梯。
 - You shouldn't take the elevator during a fire.（火災時你不應該搭電梯。）
 
+## take + 電梯 + up to + 第幾樓 (搭電梯到幾樓)
+- Take the elevator up to [樓層]
+  - Take the elevator up to the fourth floor.  （搭電梯到四樓。）
+
+## go up to 目的地 往上走
+- If you go up to the fourth floor, you'll see the pool. 
+  - go up to ＋ 目的地：意思是「走到……去 / 上樓到……」。
+  - 在這裡，to 是一個介系詞，用來連接你的動作和具體的終點目標（也就是第四樓）。
+
+## go up + 往上走的方式(the elevator/the stairs)
+- You have to go up the elevator, not down.你必須搭電梯往上，不是往下
+- If you go up the stairs, you'll see the restaurant.如果你走上樓梯，就會看到餐廳。
+- Go down the stairs（走下樓梯）
+  - Be careful when you go down the stairs.（你走下樓梯時要小心。）
+- Take the stairs（搭乘 / 選擇走樓梯 → 相對搭電梯而言）
+  - Let's take the stairs instead of the elevator.（我們走樓梯，不要搭電梯吧。）
+
+
 
 ## 拍照
 - Take a picture / photo（拍照）
 - They took lots of photos in Cambridge.他们在剑桥拍了许多照片。
 
 
-## 佔位
-- The seat was taken.這個座位有人了。
-- Take a seat.請坐(Take是主動，自己找位子坐下來)
+## Take佔位
+- The seat is taken.這個座位有人了。
+- Is this seat taken? （這個位子有人坐嗎？／這座位被佔了嗎？）
+- Sorry, that table is taken. （抱歉，那張桌子已經有人了。）
+- Take a seat.請坐(Take是佔位，自己找位子坐下來)
 - Come in and have a seat.(禮貌說法，主人跟客人說「你可以擁有一個位子」)
+- All the good time slots are taken. （所有好的時段都被約滿／被選走了。）
+
+- Free ＝ 空的、沒人用的
+- Taken ＝ 有人的、被佔用的
+
 
 ## 吃藥
 - Did you take your medicine?（你吃藥了嗎？）

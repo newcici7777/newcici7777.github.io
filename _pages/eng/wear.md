@@ -1,5 +1,5 @@
 ---
-title: in/wear/with/available in 衣服/帽子/鞋子/手錶/耳環
+title: in/wear/with 化妝/香水/衣服/帽子/鞋子/手錶/耳環
 date: 2026-08-20
 keywords: English, wear, in
 ---
@@ -29,6 +29,9 @@ keywords: English, wear, in
 - Do you know the man wearing a black jacket?（你認識那個穿著黑色夾克的男人嗎？）
 - Students are required to wear uniforms. 學生被要求穿制服。  
 
+## wear makeup 化妝
+
+## wear perfume 香水
 
 ## wear 穿什麼
 wear本身是動詞，什麼穿什麼，不是「穿」put on這個動作。
@@ -49,18 +52,6 @@ wear本身是動詞，什麼穿什麼，不是「穿」put on這個動作。
   - 解析：with long hair 是介系詞片語，用來修飾前面的 girl。
 - That boy with short hair is fourteen years old.那个有短头发的男孩十四岁。
 
-## is available in 尺寸 / 顏色 / 材質 (有貨嗎?)
-```
-Is [商品名稱] available in [尺寸 / 顏色 / 材質]?
-```
-* Is this shirt available?這個襯衫有貨嗎
-* Is this shirt available in a medium size? 中號襯衫有貨嗎？
 
-* **接尺寸**：
-* *Is this available **in a large size**?*（這有大號的嗎？）
-* **接顏色**：
-* *Is this jacket available **in black**?*（這件夾克有黑色的嗎？）
-* **接材質**：
-* *Is this sweater available **in wool**?*（這件毛衣有羊毛材質的嗎？）
 
 
