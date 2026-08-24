@@ -92,6 +92,7 @@ outside.
 - outside the store（店鋪外面）
 - outside the restaurant（餐廳外面）
 - outside the school（學校外面）
+- outside the interview room.(面試室外面)
 
 ## 動詞 + outside
 - look outside（看外面）

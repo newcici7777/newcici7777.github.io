@@ -46,33 +46,76 @@ keywords: English
 * 或者：I never go there by bus.
 * 說明：當我們在講日常生活中固定的交通工具時，通常習慣加 the（take the bus、take the subway），表示「我平常是不搭公車通勤的」。
 
-## in 交通工具
-小車計程車(空間狹小，你只能「坐著被包覆在裡面」，無法站立行走。)
-- in a taxi/ in a car
-  - I'm in a taxi right now, I'll be there in 10 mins.（我現在在計程車上，10分鐘內到。）
-  - Bea is in a taxi.
+## be + on 交通工具
+Be on (something)：是一個靜態的狀態——指你已經在上面了。
 
-## on 交通工具
 「你可以站起來走動的大型大眾運輸工具」，一律用 on
 - on the bus 在公車
 - on the train 火車
 - on a plane 飛機上
-- On horseback（騎馬）
 
 - We are on the train now.（我們現在在火車上。）
+- I am on the bus. （我在公車上。）
+- 限制詞變化：I am on a crowded bus.（我在一輛擁擠的公車上。）
+- We are on the train to Taipei. （我們在去台北的火車上。）
+- 限制詞變化：We are on the last train.（我們在末班車上。）
+- They are on the plane now. （他們現在在飛機上。）
+- 限制詞變化：He is on a long-haul flight.（他在一個長途航班上。）
+- She is on her bicycle. （她在她的腳踏車上。／她在騎腳踏車。）
+- 限制詞變化：The kids are on their bikes.（孩子們在騎腳踏車。）
+- We are on a ferry. （我們在渡輪上。）
 
-### on / in (the/my) 交通工具
+## be + in 交通工具
+Be in (something)：是一個靜態的狀態——指你已經在上面了。  
+小車/計程車(空間狹小，你只能「坐著被包覆在裡面」，無法站立行走。)
+
+- in a taxi/ in a car
+  - I'm in a taxi right now, I'll be there in 10 mins.（我現在在計程車上，10分鐘內到。）
+  - Bea is in a taxi.
+
+- I am in a car. （我在車子裡。）
+- 限制詞變化：I am in my friend's car.（我在我朋友的車上。）
+- He is in a taxi. （他在計程車裡。）
+- 限制詞變化：We are in a yellow cab.（我們在一輛黃色計程車裡。）
+- She is in a helicopter. （她在直升機裡。）
+- 限制詞變化：They are in a rescue helicopter.（他們在一架救援直升機上。）
+
+## go to + 目的地 + in/on 交通工具
 ```
-in/on + 限制詞 + 交通工具 (講你在車子/船裡面)
+[主詞] + [移動動詞 (go / come / travel)] + [in/on 交通工具]
 ```
-如果交通工具前面有「代名詞（my, his, that）」或是「形容詞」，用on。
 
-- my： I go to work in my car. (我坐在我的車裡去上班。)
-- that那輛： I go home on that bus. (我搭那輛公車回家。)
+如果交通工具前面有（my, his, the, that）或是「形容詞」，用on或in，不能用by。
+
+- I go to work in my car. (我坐在我的車裡去上班。)
+  - go to work 是「去上班」。in my car 是「待在我的車子裡」的狀態。
+  - 合起來就是：我是待在我的車子裡（開車）去上班的。
+- I go home on that bus. (我搭那輛公車回家。)
+  - on that bus 是「藉由那班公車（作為移動工具）」的意思。
+- I go to school on the subway.（我都坐地鐵去學校。）
+- He goes to the office in a taxi.（他坐計程車去辦公室。）
+
+## go on 交通工具 = 搭上
+Go on (something)：是一個動態的過程——指你跨出腳步、走上車、登機的那個動作。
+
+因為大眾運輸（公車、火車、飛機、船）需要你「走上去」或「踏進去」（step or walk on），所以非常適合用 go on。
+
+- Hurry up! We need to go on the bus right now.（快一點！我們現在需要上公車。）
+- go on a train（上火車）
+  - We went on the train just before the doors closed.（我們在車門關閉前一刻上了火車。）
+- go on a plane（登機）
+  - Passengers are ready to go on the plane.（旅客們準備要登機了。）
+
+## go on 遊樂設施 
+參與 / 踏上某個活動或設施
+- I'm not going on this roller coaster!（我不坐這座雲霄飛車！）
+- Can we go on the Ferris wheel?（我們可以去坐摩天輪嗎？）
+- I don't want to go on that ride.（我不想去坐那個遊樂設施。）
 
 
-## go on 交通工具
-- I'm not going on this roller coaster! 
+
+
+
 
 ## by 工具
 - We communicate by email. （我們透過電子郵件聯絡。）
@@ -137,6 +180,8 @@ B. 小型的交通工具 → 用 get in / get out of
 * get in the taxi（上計程車）
 * get in the Uber（上 Uber）
 
+- 例句： Hurry up! Get in the car. （快一點！上車。）
+- 例句： She got in a taxi and left. （她坐進計程車然後離開了。）
 
 - 能在裡面站著走動的大車 → get on the bus（上車）
 - 需要彎腰塞進去的小車 → get in the car（上車）
@@ -165,11 +210,6 @@ B. 小型的交通工具 → 用 get in / get out of
 - We have a bus to catch.（我們有公車要趕。）
 
 ---------------------------------
-
-## have a flight 搭飛機
- have 意思是 「有（一個安排好的行程、機會或事件）」
-- We have a flight in two hours.我們在兩小時後有一班飛機要搭。
-- We have a flight → 我們有（安排了）一個航班（行程／事件）。
 
 ## 機票
 
@@ -222,6 +262,28 @@ flight 不只是機器，它包含了時間、編號、路線和行程（也就�
 - We have a flight in two hours.我們（自己的行程）在兩小時後有一班飛機要趕。
 
 
+## Step on the plane / Step on board（踏上飛機）
+常見情境：通常用在登機的那一刻，或者形容終於踏上旅程的興奮感。
+
+- The moment I stepped on the plane, I knew my vacation had started. （就在我踏上飛機的那一刻，我知道我的假期開始了。）
+- Please watch your step as you step on the plane. （登機時請注意腳步。）
+
+## Walk on the plane（走上飛機）
+語氣特色：單純描述「用走的上去」這個過程。
+
+- We walked on the plane and found our seats. （我們走上飛機，然後找到了座位。）
+
+## Board(動詞) + 交通工具 (登機、上車、上船)
+它本身就已經包含了「上去」的意思，所以後面直接接交通工具的名字即可，不需要再加 on 或 in！
+- Passengers are ready to board the plane.（旅客準備登機了。）
+- Passengers are boarding the plane now. （旅客現在正在登機。）
+- Flight BR198 is now boarding at Gate 5. （BR198 航班現在正在 5 號登機口登機。）
+- We boarded the train just in time. （我們剛好趕上並上了火車。）
+
+## have a flight 搭飛機
+ have 意思是 「有（一個安排好的行程、機會或事件）」
+- We have a flight in two hours.我們在兩小時後有一班飛機要搭。
+- We have a flight → 我們有（安排了）一個航班（行程／事件）。
 
 ## Take a flight
 強調「動作」：執行搭飛機這件事   
@@ -282,6 +344,7 @@ by plane它通常作為副詞，補充說明你選擇了什麼樣的交通方式
 - We are landing right now.（我們現在正在降落。）
 - The plane is about to land.（飛機快要降落了。）
 
+----------------------------------------
 
 ## ride
 - I paid for the ride.我付了車資 / 我付了這趟車的錢

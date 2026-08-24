@@ -38,10 +38,10 @@ other 後面沒有 s，代表是單數名詞（剩下的那一個），所以動
 
 
 ## other**`s`**(代名詞) 其它人
-泛指「其他人／其他事物」 
-它前面沒有 the，所以不指名道姓，也沒有限定是誰。通常用來表達「除了某些人事物之外，還有其他人事物（但不是全部）」。
+泛指「其他人／其他事物」，它前面沒有 the，所以不指名道姓，也沒有限定是誰。通常用來表達「除了某些人事物之外，還有其他人事物（但不是全部）」。
 
 它是 other + **S名詞複數** 結合後的代名詞，所以它後面絕對不能再加名詞（因為它自己就是名詞了）。
+
 - Some like sports, others prefer reading.（有些人喜歡運動，而其他人比較喜歡閱讀。）
 - Some people like spicy food, and others prefer sweet food.（有些人喜歡辣的食物，其他人（泛指社會上形形色色的人）比較喜歡甜的。）
 - Don't always rely on others.（不要總是依賴別人。）
@@ -60,16 +60,16 @@ othere + 可數名詞S/ 不可數名詞
 ### 可數名詞S
 - I have other plan**s** today.（我今天有其他計畫。)
 - Do you have any other question**s**?（你有任何其他問題嗎？）
-❌ 錯誤用法：I have an other sweater.(other後面不能單數可數名詞，前面也不可以放an)
-❌ 錯誤用法：I want other.（other 不能單獨站出來當代名詞）
+- ❌ 錯誤用法：I have an other sweater.(other後面不能單數可數名詞，前面也不可以放an)
+- ❌ 錯誤用法：I want other.（other 不能單獨站出來當代名詞）
 
 --------------------------------------
 ## anotehr(形容詞) + 單數名詞(不可以加s)
 an(一個) + other(另一個) = 有**an**代表是**可數名詞**，**an代表一個**，所以只能接**單數**可數名詞。
 
 - I want another cup of coffee.（我想要另一杯咖啡。）
-❌ another後面不可+可數名詞S(錯誤)：I want another book**s**.
-❌ another後面不可+不可數名詞(錯誤)：I need another time.
+- ❌ another後面不可+可數名詞S(錯誤)：I want another book**s**.
+- ❌ another後面不可+不可數名詞(錯誤)：I need another time.
 
 ## anotehr(代名詞)：直接代替前面提過的東西。
 - This coffee is good. I'll have another.（這咖啡不錯，我再來一杯。）
@@ -91,8 +91,8 @@ an(一個) + other(另一個) = 有**an**代表是**可數名詞**，**an代表�
 
 |單字|詞性|動詞單複數|中文意思|
 |:-----|:------|:------|
-|Another|名詞|is|另一個、再一個|
-|Other**S**|名詞|are|其他人|
-|The other|名詞|is(單數) |剩下一個|
-|The other**S**|名詞|are(複數)|剩下的多數人|
+|Another|代名詞|is|另一個、再一個|
+|Other**S**|代名詞|are|其他人|
+|The other|代名詞|is(單數) |剩下一個|
+|The other**S**|代名詞|are(複數)|剩下的多數人|
 

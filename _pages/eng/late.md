@@ -156,11 +156,11 @@ later（形容詞）＝ 後續的、更晚的
 ## the last(形容詞最高級) 最後
 the last 當作形容詞，表示「最後一個」時，因為是獨一無二的，所以一定要加 the。
 - This is the last bottle of water.（這是最後一瓶水。）
-- He was the last person to arrive.（他是最後一個到達的人。）
-- He is the last person to know.（他是最後一個知道的人。）
 - This is the last bus tonight.（這是今晚最後一班公車。）
-- Who was the last person to leave?（誰是最後一個離開的人？）
-
+- The last step is to click the submit button. （最後一個步驟是點擊送出按鈕。）
+- The last chapter of the book has a surprising ending. （這本書的最後一章有一個令人驚喜的結局。）
+- The last piece of cake is mine. （最後一塊蛋糕是我的。）
+- The last day to sign up for the course is Friday. （報名這門課程的最後一天是星期五。）
 
 ## my last 我的最後 ...
 當名詞前面已經有所有格（my, your, his 等）或指示代名詞（this, that 等)  
@@ -168,20 +168,47 @@ the last 當作形容詞，表示「最後一個」時，因為是獨一無二�
 - This is my last chance.（這是我的最後機會。——因為有 my，所以不加 the）
 - Is this your last decision?（這是你最後的決定嗎？）
 
+
+## the last person 最後一個人
+- The last person to leave the office should turn off the lights. （最後一個離開辦公室的人應該要把燈關掉。）
+- He was the last person to arrive.（他是最後一個到達的人。）
+- He is the last person to know.（他是最後一個知道的人。）
+- Who was the last person to leave?（誰是最後一個離開的人？）
+
+## the last person 上一個人
+在口語中，大家更常直接用 last（最後的、剛剛那一個）來指「剛剛排在我前面那個人」。
+- Excuse me, the last person dropped this wallet. （不好意思，剛剛排在我前面那個人掉了這個皮夾。）
+
+
 ## last 上一個（時間副詞/形容詞）
 當你想表達「上星期」、「上個月」、「去年」時，last 前面絕對不能加 the。
 - I saw him last week.（我上星期看到他。——❌ 不能說 the last week）
 - We met last month.（我們上個月見過面。）
 - She graduated last year.（她去年畢業。）
 
-## last 副詞（表示「上次」）
+## the last 時間 (上一個)
+- The last week has been extremely busy for me. （過去這一個禮拜對我來說超級忙碌。）
+- The last time I saw him was three years ago. （我上次看到他是三年前。）
+
+## last(副詞) 表示「上次」
 當它用來修飾動詞，表示動作發生的時間點時，不需要加 the。
 - When did you last see him?（你上次是什麼時候看到他的？）
+- When did you last eat?（你上一次吃東西是什麼時候？）
+- Where did you last see your keys?（你最後一次看到鑰匙是在哪裡？）
+- I last saw him a week ago.（我上次看到他是一週前。）
+
+💡 順便複習：同一顆字的不同面貌
+當副詞：When did you last see her?（上一次）
+當形容詞（放在名詞前）：This is my last chance.（最後一個機會）
+當動詞（維持、持續）：This food will last for a week.（食物可以維持一週）
+
 
 ## at last 終於
 - At last, the rain stopped.（雨終於停了。）
 - He found his keys at last.（他終於找到鑰匙了。）
 - At last, we finished the project.（我們終於完成這個專案了。）
+
+----------------------------------
 
 ## last(動詞) 持續/持久
 表示時間能持續多久：

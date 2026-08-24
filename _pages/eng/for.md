@@ -28,7 +28,7 @@ keywords: for
 ```
 - Are we going to have Chinese food **for** dinner?（我們晚餐「要不要 / 是不是」要吃中式料理？）
 * Chinese food（食物：中式餐點/中餐）
-* for（場合 / 目的：作為……場合的用途）
+* for（場合 / 目的：作為...場合的用途）
 * dinner（場合：晚餐這頓飯）
 
 ### 表示「三餐要吃什麼」
@@ -117,7 +117,7 @@ for 把「工具」和「食物」在一起，意思就完全包含「拿這個�
   - an art project for school（為了學校而做的美勞專案)
 
 ## for 預約時間 日期
-預約、安排時間（例如約時間開會、看醫生、訂位）時， for 理解成 「把……保留給」 或 「預定在……時刻」 
+預約、安排時間（例如約時間開會、看醫生、訂位）時， for 理解成 「把...保留給」 或 「預定在...時刻」 
 
 ### 位子
 for 扮演了「配置、對應」的角色，用來告訴對方這項服務（票、桌子、房間等）是準備給多少人使用的。
@@ -126,9 +126,9 @@ for 扮演了「配置、對應」的角色，用來告訴對方這項服務（�
 [名詞] + for + [數量／對象]
 ```
 - A ticket for one, please.（我要一個人的票。）
-  - A ticket（一張票） for（為了…… / 適用於……）one（一個人）
+  - A ticket（一張票） for（適用於...）one（一個人）
 - A table for two.一張適用於兩個人的桌子（雙人桌）
-  - A table（一張桌子）for（為了…… / 適用於……）two（兩個人
+  - A table（一張桌子）for（適用於...）two（兩個人
 - A room for three（一間三人房）
 - A table for four（一張四人桌）
 - A ticket for two（兩人的票／雙人套票）
@@ -169,7 +169,7 @@ easy, hard, difficult, important, possible, impossible
 - Math is hard for him.（數學對他來說很難。）
 - English is important for us.（英語對我們很重要。）
 
-客觀的難易度、重要性與影響（對我而言……）
+客觀的難易度、重要性與影響（對我而言...）
 - Fishing is not easy for me. （釣魚對我來說不容易。）
 - Math is too difficult for me. （數學對我來說太難了。）
 - Regular exercise is good for me. （規律運動對我有好處。）
@@ -206,7 +206,7 @@ easy, hard, difficult, important, possible, impossible
 - Her explanation seemed clear to me. （她的解釋對我而言似乎很清楚。）
 - It doesn't make any sense to me. （這對我來說完全講不通／我完全聽不懂。）
 
-作為動作傳遞的對象（說、給、解釋……給我）:
+作為動作傳遞的對象（說、給、解釋...給我）:
 - Please explain the rules to me. （請把規則解釋給我聽。）
 - He whispered a secret to me. （他向我耳語了一個秘密。）
 - Read the letter to me, please. （請把信讀給我聽。）

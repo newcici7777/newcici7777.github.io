@@ -81,3 +81,36 @@ Both of + the/所有格 + 名詞
 ## neither（兩個選項都不行）
 * The two options are neither good for us.（這兩個選項對我們來說沒有一個是好的。）
 
+-------------------------------------------
+## both A and B
+- both Anna and I love our new house!
+- Both Times Square and Wall street are in New York.
+- Are both China and Japan in Asia? 日本和中國都在亞洲嗎
+
+## both 二者
+- Both skirt**s** are green.
+- He is good at both cooking and baking
+
+
+## both of one's
+遇到所有格, the, this 指示代名詞，都要用of
+- Both of my parents were taxi drivers.我的父母以前都是出租车司机。
+- Both of his sisters were Japanese teachers. 他的两个妹妹以前都是日语老师。
+- Were both of your sisters servers? 你的二個姐姐以前是服務生嗎
+- Are both of your parents bus drivers?你的父母都是公車司機嗎？
+- Both of her parents were Spanish teachers.她的父母以前都是西班牙语老师。
+
+## each
+each 後面只能接「單數可數名詞」，each 的意思是「每一個」，它的大腦邏輯是把群體裡的成員「一個一個分開來看」。既然要一個一個數，它後面的名詞就必須是可以數的。
+
+正確（可數單數）： each person（每個人）、each day（每一天）、each time（每一次）。
+
+- each room has a TV!
+- Each room has its key
+- Each house has a bedroom.
+- Is there a television in each bedroom?(在每个卧室里都有一台电视吗？)
+
+遇到不可數名詞，又想表達「每一份」該怎麼辦？ 你必須加上一個「可數的單位」給它。例如：
+- each glass of water（每一杯水）
+- each piece of information（每一則資訊）
+
