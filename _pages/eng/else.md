@@ -1,12 +1,12 @@
 ---
-title: else
+title: else 其它
 date: 2026-08-23
 keywords: English,else
 ---
 else 總是乖乖地黏在 what/who/where 或是 something/anything 的後面！
 
 ## 類別一：搭配「疑問詞」（What, Who, Where, When...）
-用來追問「除了這個之外，還有...嗎？」
+其它
 - What else did you buy at the supermarket? （你在超級市場裡還買了其他什麼東西？）
 - Who else is coming to the party tonight? （今晚的派對除了我們，還有誰要來？）
 - Where else can we look for the lost keys? （除了這裡，我們還能去哪裡找那把遺失的鑰匙？）

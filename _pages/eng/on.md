@@ -32,7 +32,7 @@ Hold(握住) on(持續握住，不要中斷) 裡面的 on，其實跟電話的 o
 - 例：Please go on, I'm listening.（請繼續說，我在聽。）
 - 例：What's going on here?（這裡在發生什麼事？）
 
-### Keep on（一直…… / 持續做某事）
+### Keep on（一直... / 持續做某事）
 - 例：Keep on trying, you can do it!（繼續試下去，你可以的！）
 
 ### Carry on（堅持下去 / 如常進行）
@@ -78,3 +78,4 @@ Hold(握住) on(持續握住，不要中斷) 裡面的 on，其實跟電話的 o
 當你聽到荒謬的事情、藉口，或是覺得對方在騙你時。
 - 例句： Come on, you didn't even study, how did you get an A? （少來了，你根本沒讀書，怎麼可能拿 A？）
 - 例句： Come on, rain? We just planned this picnic! （不會吧/拜託，下雨？我們才剛計畫好要野餐耶！）
+

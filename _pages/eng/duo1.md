@@ -57,7 +57,7 @@ She's not **on** this baseball team.
 - I only want to look around.（我只想看看。）
 
 ## even 甚至
-### 放在一般動詞前面（強調連……都……）
+### 放在一般動詞前面（強調連...都...）
 ```
 主詞 + even + 動詞
 ```
@@ -70,15 +70,15 @@ even 副詞，even放在一般動詞前
 - He is even taller than his brother.（他甚至比他哥哥還要高。）
 - She can even speak French.（她甚至會說法文。）
 
-### 放在比較級前面（表示「更……」）
-even 可以加在比較級（er 或 more）的前面，這時的 even 等於中文的「甚至更……」或「還要更……」。
+### 放在比較級前面（表示「更...」）
+even 可以加在比較級（er 或 more）的前面，這時的 even 等於中文的「甚至更...」或「還要更...」。
 ```
 even + 比較級（er / more）
 ```
 - Today is cold, but tomorrow will be even colder. （今天很冷，但明天會甚至更冷。）
 - This test is even more difficult than the last one. （這次考試甚至比上一次還要困難。）
 
-### 放在名詞前面（強調「連……都……」）
+### 放在名詞前面（強調「連...都...」）
 放在名詞前面，強調名詞
 - Even a child can do this.（連小孩子都會做這個。）
 - Even a child knows that. （連小孩子都懂這個道理。）
@@ -141,7 +141,7 @@ even + 比較級（er / more）
 
 ## thanks for
 ```
-Thanks for + 名詞 / V-ing（謝謝你做……）
+Thanks for + 名詞 / V-ing（謝謝你做...）
 ```
 - Thanks for helping me.（謝謝你幫我。）
 - Thanks for driving me home.（謝謝你開車載我回家。）
@@ -199,12 +199,12 @@ river（河流） 加 s 變成 rivers，通常是最直觀的「複數名詞」�
 
 表示「在某個領域、某項技能上表現得如何」時，習慣使用介系詞 at 來定位方向或範圍。  
 類似的「形容詞 ＋ at」用法還有：
-- clever at...（聰明於……）
-- poor at...（不擅長於……）
-- skilled at...（熟練於……）
+- clever at...（聰明於...）
+- poor at...（不擅長於...）
+- skilled at...（熟練於...）
 
 
-## good(形容詞) for 對……有益／有好處
+## good(形容詞) for 對...有益／有好處
 - Is playing soccer every day good for you?每天踢足球對你有好處嗎？
 - Eating vegetables is good for you.（吃蔬菜對你有好處。）
 - Reading is good for children.（閱讀對孩子們有好處。）
@@ -245,13 +245,7 @@ river（河流） 加 s 變成 rivers，通常是最直觀的「複數名詞」�
 - I like to read books in my free time.（我喜歡在我的空閒時間看書。）
 - What do you usually do in your free time?（你通常都在空閒時間做什麼？）
 
-## on 電子設備
-電子設備、螢幕、或是平面媒介（像是手機、電腦、網頁、紙張）時，習慣用介系詞 on，表示「在……的介面/畫面上」。
 
-- on my phone（在我的手機上）
-- on the computer（在電腦上）
-- on TV（在電視上）
-- on paper（在紙上）
 
 ## agree to V 同意去做某件事
 - We agreed not to use our phones. 我們同意不要使用我們的手機
@@ -281,6 +275,72 @@ A menu（菜單）完全可以直接這樣單獨使用！
 * use the computer（使用電腦）
 * use your phone（使用你的手機）
 * use this app（使用這個應用程式）
+
+
+## 描述「時間的長度」時，主詞習慣用 It
+只要是描述「某件事花了多久時間、或距離有多遠」，主詞通通都是用 It，絕對不用 There is。
+```
+It is 數字 + 時間單位 
+```
+形容旅程/飛行時間：
+- How was your trip? It was 5 hours.（你的旅行怎麼樣？它花了 5 個小時。）
+- I had a long flight. It was 15 hours! 
+
+形容開車或通勤時間：
+- It takes two hours to drive there.（開車到那裡需要花兩個小時。）
+
+形容距離遠近：
+- It is 10 kilometers away.（這裡距離那裡有 10 公里遠。）
+
+## wash my hair(洗頭) dry my hair(吹頭)
+- ❌ 錯誤用法：wash my head, dry my head
+- I washed my hair, so l need to dry it. 
+- I need to dry my hair.（我需要把頭髮弄乾／吹乾。）
+- Give me a minute, I'm drying my hair.（等我一下，我正在弄頭髮／吹頭髮。）
+
+## fast 與 quickly
+- fast（形容詞 / 副詞同形，強調「速度快」）
+  - 詞性： 它既是形容詞（快的），也是副詞（快速地）。
+  - 語感： 強調的是移動的速度本身很快、很猛烈。
+  - 常見搭配： 常與 drive（開車）、run（跑步）、ride（騎車）等表「速度與移動」的動詞連用。
+  - We were driving really fast.（我們車開得超快的。——這裡的 fast 修飾 driving）
+  - He is a fast runner.（他是一個跑得快的人。——這裡的 fast 當形容詞）
+- quickly（純副詞，強調「動作敏捷、反應快」）
+  - 常與思考、回答、動作反應有關的詞連用。
+  - She answered the question quickly.（她很迅速地回答了問題。——強調反應快、不遲疑）
+  - Please finish your homework quickly.
+
+## paint + 東西 + 顏色 (塗漆)
+- Ben's kids want to paint the walls of their rooms yellow.
+- They painted the door red.（他們把門漆成紅色）。
+
+
+## in pairs, in groups of 副詞片語
+in pairs, in groups of 前面加上了介系詞 in 之後，整個片語是用來修飾前面的動詞或整個動作的狀態，回答「是用什麼形式在進行？」這個問題。
+```
+主詞 + 動詞 (+ 受詞) + in pairs / in groups of [數字].
+```
+in 包裹在一個團體裡（Container Concept）：  
+In 原本的核心意思是「在...裡面」。當你說 in pairs（成雙成對）或 in groups of five（五人一組）時，意思是你們每個人都被包在、劃分在這樣的小組單位「裡面」。  
+
+- We're having a discussion in pairs now. （我們現在正在進行討論。以什麼形式？ → 成雙成對地 / 兩人一組地。） 這裡的 in pairs 就像副詞一樣，補充說明討論進行的方式。
+- We are working in pairs.（我們正以兩人一組的方式工作。——放在動詞後面）
+- Students discussed the topic in groups of five.（學生們以五人一組的方式討論這個主題。——放在受詞後面）
+- The class worked in groups of five to finish the project.（全班以五人一組的方式合作完成這個專案。）
+
+## laugh(動詞) 笑
+laughs 的詞性是不及物動詞（Intransitive Verb）
+- When my son watches funny movies, he always laughs. 
+
+## cost(名詞) 費用、成本
+- The total cost is a hundred and sixty euros.總費用是一百六十歐元
+  - total 是形容詞，修飾名詞 cos
+
+### cost當名詞（費用、成本）：
+- What is the cost of this ticket?（這張票的費用是多少？）
+
+### cost 當動詞（花費、使付出代價）：
+This jacket costs a hundred euros.（這件外套花費了一百歐元——這裡就是動詞，因為主詞是外套，所以第三人稱單數加了 s）。
 
 
 ## 其它疑惑

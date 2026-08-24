@@ -88,7 +88,7 @@ be in the 行業名 business / industry
 - He works in the tech industry as a developer.（他在科技業擔任開發人員。）
 
 ## We do business in the 「產業、領域」
-意思：「我們從事……行業／我們做……領域的生意。」
+意思：「我們從事...行業／我們做...領域的生意。」
 ```
 do business(做生意) in the 產業、領域
 ```
@@ -111,7 +111,7 @@ do business(做生意) in the 產業、領域
 - Do you work with Anna?你跟Anna一起工作嗎
 * They work with a great team.（他們和一個很棒的團隊一起工作。）
 
-## work as 「擔任……職務」或「以……的身分工作」
+## work as 「擔任...職務」或「以...的身分工作」
 ```
 work as + [職稱/身分] 
 ```

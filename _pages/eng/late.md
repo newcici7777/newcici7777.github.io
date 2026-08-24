@@ -106,7 +106,7 @@ ten minutes（名詞）是被抓來當作「副詞」用的，用來補充說明
 - I will call you later.（我稍後打給你。）
 
 ### later(形容詞) 接下來、之後的
-- In later versions of the software...（在該軟體的後續版本中……）
+- In later versions of the software...（在該軟體的後續版本中...）
 
 - We can talk about this in a later class.我們可以在後續的課程中討論這個。
   - 這堂課時間不夠了，老師說把問題留到「接下來、比較後面」的那堂課再說。

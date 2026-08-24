@@ -8,7 +8,6 @@ keywords: ask
 ```
 主詞 + ask + [直接受詞: 人] + [間接受詞: 事物]
 ```
-- Can I ask you a quick favor? （我可以請你幫個小忙嗎？）
 - He asked me a question.（他問了我一個問題。）
 - She asked me my name. （她問了我的名字。）
 - Can I ask you a question?
@@ -23,32 +22,20 @@ keywords: ask
 ### ask + 問題 + to + 人 
 - he's asking those questions to everyone in our class(代表這陣子、這幾天，他「正在對大家問這些問題」。)
 
-## ask間接問句
-要「轉述」別人問過的話時（例如把原本的 “Do you like Rome?” 變成「他問我……」），就會用到間接問句。
-
-直接問句公式: 某人問我是否....
-```
-主詞 + ask + 人(可省略) + (if / whether)是否 + (S+V)
-```
-
-- 直接問句（當面問）：
-  - He asked me: “Do you like Rome?”
-（他問我：「你喜歡羅馬嗎？」）
-- 間接問句（事後轉述）：
-  - He asked me if I like Rome.
-（他問我是否喜歡羅馬。）
-
-原本的 “Do you like Rome?” 變成「他問我……」
-- He asked me if I like Rome.他問我是否喜歡羅馬。
-
-例句:
-- He asked me if I like Rome.
-- He also asked if I like cats.(省略人)他還問了（我）是否喜歡貓。
-- He even asked about my family!(他甚至還問了我的家庭！)
-
 ### ask about
-ask about + 主題/某人：意思是「打聽、詢問關於……的事」。
+ask about + 主題/某人：意思是「打聽、詢問關於...的事」。
 - He asked about my day.（他問了我今天過得怎麼樣。）
+
+----------------------------------
+
+## ask 人 for + 事物（要求、索取某物）
+向某人請求、索取某個東西或協助
+- Can I ask you a favor? （我可以請你幫個忙嗎？）
+  - a favor 請（某人）幫個忙
+- He asked his boss for a day off.（他向老闆請假一天／要一天假。）
+- Can I ask you for a favor?（我可以請你幫個忙嗎？）
+- She asked her parents for some money.（她向父母要一些錢。）
+
 
 ## ask for + 事物（要求、索取某物）
 當你想得到某樣東西、資訊或協助時，會搭配介系詞 for 使用。
@@ -76,6 +63,37 @@ ask about + 主題/某人：意思是「打聽、詢問關於……的事」。
 - Ask him to go.(有to，代表「要求他去」)
 
 ## want 要別人 做事
-### want + 人 + to + do (要求某人做某事)
-- He wants you to go to Rome.(他想要你去羅門)
+```
+want + 人 + to + V原形動詞 (要求某人做某事)
+```
+- He wants you to go to Rome.(他想要你去羅馬)
+- We didn't want them to take the documents! 我們不希望他們拿走那些文件！
+- 肯定句： I want you to help me.（我想要你幫我。）
+- 否定句： She doesn't want him to go there.（她不希望他去那裡。）
+- 過去式： We didn't want them to take it.（我們不希望他們拿走它。）
 
+
+------------------
+
+## ask間接問句
+要「轉述」別人問過的話時（例如把原本的 “Do you like Rome?” 變成「他問我...」），就會用到間接問句。
+
+直接問句公式: 某人問我是否....
+```
+主詞 + ask + 人(可省略) + (if / whether)是否 + (S+V)
+```
+
+- 直接問句（當面問）：
+  - He asked me: “Do you like Rome?”
+（他問我：「你喜歡羅馬嗎？」）
+- 間接問句（事後轉述）：
+  - He asked me if I like Rome.
+（他問我是否喜歡羅馬。）
+
+原本的 “Do you like Rome?” 變成「他問我...」
+- He asked me if I like Rome.他問我是否喜歡羅馬。
+
+例句:
+- He asked me if I like Rome.
+- He also asked if I like cats.(省略人)他還問了（我）是否喜歡貓。
+- He even asked about my family!(他甚至還問了我的家庭！)

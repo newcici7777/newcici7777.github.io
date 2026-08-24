@@ -3,7 +3,17 @@ title: 過去進行式
 date: 2026-08-23
 keywords: English
 ---
+## at that time 在那時候 / 在當時
+at that time 指的是過去某一個特定的時刻。
+- She was not watching videos at that time.她在那時候沒有在看影片。
+- What were you doing at that time?（你當時在做什麼？）
+- He was sleeping at that time.（他當時正在睡覺。）
 
+## then 那時候
+- She was not watching videos then.
+
+
+## while區分
 - 長動作 + 短動作（被打破） ＝ 過去進行式 + 過去簡單式
   - 例：我在洗澡時電話響了（洗澡洗到一半，電話鈴聲突然響起）。
 - 長動作 + 長動作（同時進行） ＝ 過去進行式 + 過去進行式
@@ -24,3 +34,4 @@ keywords: English
   - 核心事件 A：Were you eating cake? （你在吃蛋糕嗎？）
   - 時間長度：all morning （持續了整個早上）
   - 對比事件 B (while 子句)：while I was shopping （當我在逛街的時候）
+

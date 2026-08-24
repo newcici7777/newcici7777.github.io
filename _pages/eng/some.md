@@ -14,7 +14,7 @@ some + 可數/不可數名詞
 * Can I have some water?（我可以喝一些水嗎？ → 不可數）
 * I like some music.（我喜歡某些音樂。）
 
-## 2.some(名詞) of（……當中的一些）
+## 2.some(名詞) of（...當中的一些）
 後面一定要接 the、this、these、those 或所有格（如 my、your），再加上名詞。
 
 指的名詞是「某個特定範圍、已經被大家知道的一群東西裡面的其中一些」。

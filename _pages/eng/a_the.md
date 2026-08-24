@@ -6,7 +6,7 @@ keywords: English, a The This These That Those
 
 - They work together at a bank.
 用 a 的原因是：
-1. 第一次提到、泛指某一家銀行： 當你只是想表達他們工作的性質或場所，而這家銀行在上下文裡是第一次出現、聽者不需要知道是哪一家特定的分行時，就會用不定冠詞 a（一家……）。
+1. 第一次提到、泛指某一家銀行： 當你只是想表達他們工作的性質或場所，而這家銀行在上下文裡是第一次出現、聽者不需要知道是哪一家特定的分行時，就會用不定冠詞 a（一家...）。
 2. 對比說法：
 * 如果說 at a bank → 指「在某家銀行」（沒特別指名哪一間）。
 
@@ -60,7 +60,7 @@ keywords: English, a The This These That Those
 ⑤ 數詞（Numerals）—— 精準的數字
 確切的數字或順序也是限定詞的一種。
 
-清單：one, two, three...（一、二、三……）或 first, second...（第一、第二……）
+清單：one, two, three...（一、二、三...）或 first, second...（第一、第二...）
 
 例句：I have two dogs.（我有兩隻狗。）
 

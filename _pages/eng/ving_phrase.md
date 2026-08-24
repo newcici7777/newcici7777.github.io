@@ -12,16 +12,16 @@ keywords: english, Gerund Phrase
 ## 「思考／討論」類動詞 + 介系詞
 這些動詞和 talk / speak 一樣，後面必須加介系詞，所以後面接動作時也一定要用 V-ing：
 
-### think about ...（考慮……）
+### think about ...（考慮...）
 - I am thinking about changing my job.（我在考慮換工作。）
 - I am thinking about the company paying salary.我在考慮公司發薪水這件事（或：我在想公司到底有沒有發薪水)
 
-### dream of ...（夢想著……）
+### dream of ...（夢想著...）
 - She dreams of traveling around the world.（她夢想著環遊世界。）
 - She is dreaming of her boss giving her a raise. （她正夢想著老闆幫她加薪。 → 主詞是 her boss）
 
 
-### worry(動詞) about ...（擔心……）
+### worry(動詞) about ...（擔心...）
 - He worries about failing the exam.（他擔心考試不及格。）
 - I am worried about him quitting his job. （我很擔心他離職這件事。 → 主詞是 him）
 - I am worried about my son being laid off. （我很擔心我兒子被裁員。）
@@ -34,12 +34,12 @@ keywords: english, Gerund Phrase
 
 
 ## 「感謝／道歉」類動詞 + 介系詞
-### thank... for ...（因為……而感謝……）
+### thank... for ...（因為...而感謝...）
 - Thank you for helping me.（謝謝你幫我。）
 
-### apologize for ...（為……道歉）
+### apologize for ...（為...道歉）
 - He apologized for being late.（他為遲到道歉。）
 
 ##「阻止／避免」類動詞 + 介系詞
-### stop... from ...（阻止……去做……）
+### stop... from ...（阻止...去做...）
 - Nothing can stop him from learning.（沒有什麼能阻止他學習。）

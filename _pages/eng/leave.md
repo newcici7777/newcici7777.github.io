@@ -35,6 +35,14 @@ keywords: leave, left
 Leave 不及物動詞（後面不需要直接接受詞）。
 - When do you want to leave?你什麼時候離開?  
 
+## be + leaving 準備要出發
+現在進行式，行李收好了、人正要出門了
+- He is leaving for her date.他準備要出發去跟她約會了
+- I am leaving now.（我現在要走了／我準備出發了。——人可能還站在玄關，但馬上就要離開）
+
+## leaves the table 離開桌子(離開位子)
+- Lucy leaves the table.
+
 ## Leave for 動身前往 + 目的地
 ```
 Leave + for + [目的地]。
@@ -43,8 +51,13 @@ Leave + for + [目的地]。
 - I'm leaving for New York tomorrow.（我明天要動身前往紐約了。）
 - The train leaves for Tokyo at 7 p.m.（這班開往東京的火車在晚上 7 點發車。）
 
-## leaves the table 離開桌子(離開位子)
-- Lucy leaves the table.
+## leave 把某人或某物「留在」某個地方
+```
+主詞 + leave + 物品/人（受詞） + 地方（介系詞片語）
+```
+- Don't leave your dirty dishes on the table.不要把你的髒碗盤留在桌上！ 
+- I left my keys on the desk.（我把鑰匙留在桌上了。）
+- Don't leave your child in the car.（不要把小孩留在車上。）
 
 ## 忘記帶東西
 物品是「不小心被留在某個空間或物體上，而人自己走了」，它才會變成中文常說的「遺留、落掉、忘記帶走」。
@@ -54,6 +67,7 @@ Leave + for + [目的地]。
 - I left my phone on the desk.（我把手機忘在/留在桌上了。）
 - She left her keys at home.（她把鑰匙忘在家裡了。）
 - Oops! I left my bag in the car.（哎呀！我把包包遺留在車上了。）
+- I left my umbrella on the bus.（我把雨傘忘在公車上了)
 
 ## 剩下(形容詞)
 當你吃完東西，盤子裡「剩下的」食物（leftovers），就是指「被你吃完、離開後，遺留在盤子裡的那些東西」。

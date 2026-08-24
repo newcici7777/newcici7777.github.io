@@ -6,7 +6,7 @@ keywords: english, date
 ## the date of ...
 日期date 這個字的本意是「日曆上特定的那一天（特定日期）」，因為獨一無二的一天，所以用the date。
 
-the date of [某個活動/事件] 的意思是「……的日期」，把你想查的事直接塞在 of 後面就對了！
+the date of [某個活動/事件] 的意思是「...的日期」，把你想查的事直接塞在 of 後面就對了！
 
 ```
 the date of [某個活動/事件]

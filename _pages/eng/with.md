@@ -52,13 +52,7 @@ I have a problem with + **讓你頭痛的人/事/物**
 
 
 
-## pay with a credit card/cash/Linepay
-- Would you like to pay with a credit card?你想要用信用卡付钱吗？
-- I usually pay with a credit card.我平时用信用卡付钱。
-- Can I pay with cash?
-- I would like to pay with cash.我想付现金。
-- pay with Linepay.用Linepay 付款
-- You can use Linepay.你可以用Linepay
+
 
 ## help me with 事情
 ```

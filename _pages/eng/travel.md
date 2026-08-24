@@ -12,7 +12,7 @@ keywords: English, travel, ticket, fly, tour, trip
 - visit(名詞) to 去...參觀
 - journey to 去...漫長旅行
 - flight to（飛往...的航班）
-- travel(名詞) to（前往……的旅行）
+- travel(名詞) to（前往...的旅行）
 
 ## trip(名詞) to... 去旅行
 ```
@@ -49,7 +49,7 @@ pay a visit to 拜訪
 * 語感："Visit" 比 "go to" 聽起來更有一種「去當地觀光、體驗」的意味，而不僅僅是「到達」那個點。
 
 
-## journey(名詞) to...（去……的漫長旅程 / 歷程）
+## journey(名詞) to...（去...的漫長旅程 / 歷程）
 - The long journey to the summit was exhausting but worth. （那趟通往山頂的漫長旅程雖然令人精疲力竭，但非常值得。）
 - The train journey to the countryside offered breathtaking scenery. （那趟開往鄉村的火車之旅沿途風景美不勝收。）
 - Her career journey to becoming a senior software engineer was full of challenges. （她成為資深軟體工程師的職業生涯歷程充滿了挑戰。）

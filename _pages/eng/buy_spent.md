@@ -7,8 +7,17 @@ keywords: buy, get, pay, spend, take, cost
 - This hat is ten dollars and fifty cents.这顶帽子是十美元
 五十美分。
 
-## take credit cards 收信用卡
-4. Do you take credit cards, or is it cash only? （你們收信用卡嗎，還是只能付現？）
+## 付款方式
+- Can I use linepay. 
+- You can use Linepay.你可以用Linepay
+- Can I pay with linepay.
+- Can I use a credit card. 
+- Can I pay with a credit card.
+
+- Can I pay with cash?我可以用現金付款嗎？
+- I would like to pay with cash.我想付现金。
+- Would you like to pay with a credit card?你想要用信用卡付钱吗？
+- I usually pay with a credit card.我平时用信用卡付钱。
 
 ## buy
 ### 人 + buy + 物

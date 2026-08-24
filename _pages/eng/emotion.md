@@ -9,12 +9,12 @@ excited（興奮的、期待的） 這個字，習慣搭配的固定介系詞就
 句型結構： 主詞 + be動詞 + excited + about + [引起興奮的事物]。
 完整對應： 對於（about）大學生活感到興奮（excited）。
 
-- excited about sth（對……感到興奮）
-- worried about sth（對……感到擔心）
-- interested in sth（對……感到興趣）
-- afraid of sth（對……感到害怕）
+- excited about sth（對...感到興奮）
+- worried about sth（對...感到擔心）
+- interested in sth（對...感到興趣）
+- afraid of sth（對...感到害怕）
 
-## excited about sth（對……感到興奮）
+## excited about sth（對...感到興奮）
 - Are you excited about college?
 
 ## excited/worried/interested/afraid + to 原形動詞(做某事)
@@ -23,7 +23,7 @@ excited（興奮的、期待的） 這個字，習慣搭配的固定介系詞就
 - Tom is excited to learn English. 很高興能學習英文
 - excited to see you（很高興能見到你）。
 
-### worried 擔心……
+### worried 擔心...
 - I was worried to hear the bad news.（聽到這個壞訊息，我感到很擔心。）
 
 ### interested in + 名詞/V-ing

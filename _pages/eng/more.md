@@ -119,7 +119,7 @@ much 不只能修飾不可數名詞，它也可以用來修飾「比較級 (Comp
 - 可數名詞：much more plastic bottles（更多塑膠瓶）
 - 不可數名詞: We need much more information before making a decision.（在做決定之前，我們需要更多得多的資訊。）
 
-## much more(副詞) 修飾「形容詞、副詞或動詞」表示「……得多」
+## much more(副詞) 修飾「形容詞、副詞或動詞」表示「...得多」
 - This coffee is much more expensive than that one.（這杯咖啡比那一杯貴得多。）
 - Learning a new language is much more challenging than I thought.（學一門新語言比我想像的具有挑戰性得多。）
 - She is much more confident when speaking in public.（她在公眾發言時有自信多了。）

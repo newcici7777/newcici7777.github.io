@@ -34,7 +34,6 @@ keywords: English
 - He just left.（他剛離開。）
 
 
-
 ## at the age of ...
 - She learned to drive at the age of twenty.她在二十发的时候学会了开车。
 - She learned to swim at the age of five.

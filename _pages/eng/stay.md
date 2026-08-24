@@ -27,9 +27,11 @@ Stay + 形容詞
 - Stay safe（保持安全）
 - Stay healthy（保持健康）
 
-## Stay away 「離……遠一點」、「別靠近」
+## Stay away 「離...遠一點」、「別靠近」
 Stay(保持) + away在遠處
 - Stay away from there!待在遠處不要過來！
+- Stay away from our village! 離我們的村莊遠一點
+
 
 其它常用:
 - Stay behind：留下來（在別人走之後，你「保持」在「後面」）。

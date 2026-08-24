@@ -842,7 +842,7 @@ p**o**int -> o拆成上下二半 -> p**un**int -> pun~~i~~nt -> pun**n**t -> 把
   例句2: The machine prints very quickly. 這台機器列印得很快。  
   例句3: I printed the report yesterday. 我昨天列印了報告。  
 
-- **im**press [ɪmˈprɛs] v. 給……留下深刻印象；使欽佩 [🔊 聽發音](https://www.merriam-webster.com/dictionary/impress)
+- **im**press [ɪmˈprɛs] v. 給...留下深刻印象；使欽佩 [🔊 聽發音](https://www.merriam-webster.com/dictionary/impress)
 
   im 進入 press 壓（把印象壓進心裡 → 留下深刻印象）  
   例句1: Her speech impressed everyone. 她的演講讓大家印象深刻。  

@@ -4,7 +4,7 @@ date: 2026-07-31
 keywords: come, go, home, with
 ---
 ## 移動動詞 to + 人
-to 的意思是「朝向、往……方向」
+to 的意思是「朝向、往...方向」
 移動動詞: go, come, get, walk, drive, fly, move
 
 - walk to 人：走路走向某人
@@ -17,7 +17,7 @@ to 的意思是「朝向、往……方向」
 
 
 ## 移動動詞 to + 目的地
-to 的意思是「朝向、往……方向」，在這裡當作目的地的大門。
+to 的意思是「朝向、往...方向」，在這裡當作目的地的大門。
 
 * 開車去：drive to + 目的地（不用用 take）
 * He drove to the store this morning.（他今天早上開車去店裡。）
@@ -50,7 +50,7 @@ to 的意思是「朝向、往……方向」，在這裡當作目的地的大�
   - They moved to Taipei.
   - They move to the country（搬到鄉下，鄉下country前面要有the，沒有the是國家）
   - They move to a new house（搬到新房子）
-- Run to + 目的地 （跑向……）
+- Run to + 目的地 （跑向...）
   - Run fast to the trees.快跑去樹林那裡
   - He ran to the bus stop.（他跑向公車站。）
   - She ran to the door.她跑向門口。
@@ -61,9 +61,9 @@ to 的意思是「朝向、往……方向」，在這裡當作目的地的大�
 - Head to + 目的地 前往
   - Head quickly to the exit.快速前往出口。
   - We are heading to a restaurant.（我們正要前往一家餐廳。）
-- Sail to ...（航行去……）
+- Sail to ...（航行去...）
   - The ship sailed to the island.（那艘船航行去那個島。）
-- Jog to ...（慢跑去……）
+- Jog to ...（慢跑去...）
   - She jogs to the park every morning.（她每天早上慢跑去公園。）
 
 ## 移動動詞 + to work 透過什麼方式去上班
@@ -171,6 +171,12 @@ home前面加上「誰的」房子，就要用to
 - The cat ran into the kitchen.
 - An old man walks into the cafe.
 
+## 移動動詞 + inside 強調在「建築物」裡面走
+- They walked inside the castle.人在城堡裡面走(強調「地點與狀態」)
+- She was walking inside the house. （她在房子裡面走來走去——人本來就在屋內。）
+- She walked into the house. （她走進了房子——她剛從外面開門進來。）
+
+
 ## run into 人 = 遇見
 - I ran into my ex-boyfriend yesterday.我昨天巧遇了我前男友。
 - Guess who I ran into at the mall?猜猜看我昨天在購物中心巧遇了誰？
@@ -189,7 +195,7 @@ home前面加上「誰的」房子，就要用to
 
 - When did you get here？（你什麼時候到這裡的？）
 
-## along 沿著……走
+## along 沿著...走
 ```
  怎麼移動：Walk / Drive / Run / Go  + 朝哪裡走：straight / along / down 
 ```
@@ -257,11 +263,15 @@ Ahead 負責：「朝著前方、目標在前面」
 ## 移動動詞 + Forward 向前
 - Move forward a little bit.（往前挪一點點——例如排隊或移車時）。
 
-
-
 ## 移動動詞 + backward 向後地
 - He took a step backward.（他向後退了一步。）
 - Drive backwards into the parking space.（倒車停進停車格裡。）
+
+## 移動動詞 + back + to + 目的地
+- He got a suitcase and ran back to the car. 他拿了一個行李箱，然後跑回車子那裡。
+- I forgot my phone, so I ran back to the house. （我忘記帶手機，所以我跑回屋子裡。）
+- She grabbed her umbrella and ran back to the office. （她抓起雨傘，又跑回辦公室。）
+
 
 ## 移動動詞 + up
 - Go up the mountain on foot.（走路爬山 / 步行上山）
@@ -340,3 +350,16 @@ go後面省略to，因為next就是副詞
 - Go check the door.去看看門［有沒有鎖／是誰在敲門］
 - Go tell him the news.去告訴他這個消息
 - Go wash your hands.去洗手。
+
+## drive off 偏離/開車離開
+off：介系詞，意思是「脫離、離開（某個表面或範圍）」
+### 偏離、衝出
+- We drove off the road.我們把車開出了道路（偏離了路面／衝出路外）
+- Because of the heavy snow, the car drove off the road.（因為大雪，那輛車衝出了道路。）
+
+### 開車離開、駛離現場
+- He got into the car and drove off.（他上車後就把車開走了。）
+- The thief stole the bag and drove off quickly.（小偷搶了包包，迅速駕車逃逸。）
+
+## driving through 開車穿過（某個地方）
+- Well, I remember we were driving through the city.

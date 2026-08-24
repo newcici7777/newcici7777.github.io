@@ -21,8 +21,8 @@ learn 後面也可以接 what, how, where, when 等疑問詞，這時可以用�
 - Can you teach me how to use this?（你能教我怎麼使用這個嗎？）
 - She learned what happened yesterday.（她知道了昨天發生什麼事。）
 
-## 4. learn from 名詞/Ving 從……中學習/學到
-如果想表達「從……中學習/學到」，learn 後面會接介系詞 from，而 from 是介系詞，因此它後面的動詞必須用 V-ing。
+## 4. learn from 名詞/Ving 從...中學習/學到
+如果想表達「從...中學習/學到」，learn 後面會接介系詞 from，而 from 是介系詞，因此它後面的動詞必須用 V-ing。
 ```
 learn + from + 名詞/V-ing 
 ```

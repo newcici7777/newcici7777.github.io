@@ -43,7 +43,7 @@ for [數字] block(s)
 ## stop at 停下來
 先講動作 (Stop)，再把地點 (at the...) 丟到後面去！
 ```
-Stop at [地點].（在……停下來）
+Stop at [地點].（在...停下來）
 ```
 - Stop at the bus stop.（在公車站停下。）
 - Go straight and stop at the first traffic light.
@@ -83,14 +83,14 @@ directions + to + [目的地]
 - The mountains are in the south of this town.
 - Kaohsiung is in the south of Taiwan.高雄在台灣的南部
 
-## on the north/east/south/west(on在……邊界上)
+## on the north/east/south/west(on在...邊界上)
 - The city is on the east coast.（這座城市在東海岸線上。）
 
 ## 移動動詞
 第一步（先講你要做什麼）：
-- Turn left...（先左轉！）
-- Turn right...（先右轉！）
-- Go straight...（先直走！）
+- Turn left.（先左轉！）
+- Turn right.（先右轉！）
+- Go straight.（先直走！）
 
 第二步（再講在哪裡執行）：
 - ...at the traffic light.（——就在紅綠燈那裡。）
@@ -163,8 +163,6 @@ Trun left/right + at the ...
 - Turn right at the traffic light.（在紅綠燈右轉）
 - Turn left when you see the sign.（看到標誌時開車左轉。）
 
-
-
 ### trun for 距離 在多少距離後轉彎
 - I don't need to turn for three more miles.(三英里後轉彎)
 
@@ -189,36 +187,6 @@ take a left
 take a right
 ```
 - Take a right at the traffic light.
-
-
-
-
-
-## the way 路徑 / 方式
-way 除了指「路」之外，更偏向抽象的「方向、路線、怎麼去的方式」。
-
-- Walk back the way you came.（沿著你原本來的那條路/方式走回去
-- I don't know the way to the beach .我不知道去海灘的『路線（怎麼走）』
-
-### 跟路相關的 to
-to 是一個介系詞，表示「通往……的方向 / 目標」  
-此處的to翻譯成通往...那裡「的」
-- Do you know the way to the bus stop? 你知道去公車站的路嗎？
-- The way to the bus stop那條路（way）的終點或目的地是「公車站（the bus stop）」。
-- That road to our village is long and busy.(到我们村子的那条路又长又繁忙。)
-
-road 指的是那條鋪好的實體馬路、柏油路。
-如果你用 road，通常是指具體的某條大道，例如：
-- This is the road to the beach.（這就是通往海灘的那條路／那條馬路。）
-- There are many cars on the road.（路上有很多車。）
-
-問路時（找方向）：
-- Can you show me the way to the station?（你可以告訴我去車站的路／怎麼走嗎？）
-講具體那條馬路時：
-- Is this the road to the station?（這條是去車站的那條馬路嗎？）
-
-
-
 
 ## at the corner 在轉角
 - Turn left at the corner.（在轉角左轉。）

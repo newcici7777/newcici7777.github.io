@@ -20,7 +20,7 @@ before 這個字永遠要貼著「後做的事(比較晚發生的那件事)」
 ## before 連接詞 後位修飾名詞
 - His life before he moved to the United States was very different.（他在搬去美國之前的生活非常不一樣。）
   - 核心名詞： His life（他的人生／他的生活）
-  - 連接詞／引導詞： before（在……之前）
+  - 連接詞／引導詞： before（在...之前）
   - 子句（補充說明）： he moved to the United States（他搬到美國）
 
 - I want to know about his life before he moved to the United States.（我想了解他在搬到美國之前的生活。）

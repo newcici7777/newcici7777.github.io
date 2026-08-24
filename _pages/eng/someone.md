@@ -10,7 +10,7 @@ Someone 和 Somebody 是「第三人稱單數」： 如果它們當主詞，後�
 - Somebody knows the answer.（有人知道答案。）
 - Someone is at the door.（有人在門口。）
 
-雖然它們的語意是「每個人、任何人、沒有人」（複數的概念），但在文法上全部都是單數（Third-person singular）。當它們當主詞時，後面的動詞一定要加 s（現在式）或用 is / has：
+Everyone,No one雖然它們的語意是「每個人、任何人、沒有人」（複數的概念），但在文法上全部都是單數（Third-person singular）。當它們當主詞時，後面的動詞一定要加 s（現在式）或用 is / has：
 - ❌ Everyone are here.
 - ✔️ Everyone is here.（每個人都到齊了。）
 - ✔️ Nobody knows the answer.（沒有人知道答案。）
@@ -100,6 +100,13 @@ No one 也有人寫成 no-one（英式英文較常見），但現在最標準、
 - I have something to tell you.（我有事情要告訴你。）
 - Do you have anything to eat?（你有東西可以吃嗎？）
 - There is nothing to worry about.（有什麼好擔心的 / 沒什麼好擔心的。）
+
+## -thing + 形容詞子句
+- Here is everything you bought.
+- Anything you can do, I can do better. （你能做的任何事，我都能做得更好——you can do 修飾 anything）
+- I have something I want to tell you. （我有話想對你說——I want to tell you 修飾 something）
+- Is there anything I can do to help? （有什么我可以幫忙的嗎？——I can do to help 修飾 anything）
+
 
 
 ----------------------------------

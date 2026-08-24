@@ -30,6 +30,14 @@ be動詞 表達「正在...什麼狀態」，介系詞片語(地方副詞)，可
 ## be 動詞 問別人是不是在排隊
 - Are you in line?" （你在排隊嗎？）
 
+## a line to + 原形動詞 (動作)
+- This isn't a line to return things! 這不是排隊退貨的隊列！
+- a line to pay money（付錢的隊伍）
+
+## a line for + 名詞 (人事物或場所，例如：廁所、售票口、經理)
+- It's a line for the bathroom! 這是排廁所的隊伍！
+- a line for tickets（買票的隊伍）
+
 ## the line
 但如果要問在那裡排隊，line前面就要加the
 - where is the line?在那裡排隊

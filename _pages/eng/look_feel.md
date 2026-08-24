@@ -142,7 +142,7 @@ like 當連接詞來使用（直接連接一個子句），中間用來連接的
 - It looks like it's going to rain.（看起來好像要下雨了。）
 - It looks like we are lost.（我們看起來好像迷路了。）
 
-### Sound like（聽起來像……）
+### Sound like（聽起來像...）
 用於聽覺。
 - That music sounds like an old jazz song. （那段音樂聽起來像老爵士樂。）
 - It sounds like someone is crying.（聽起來像有人在哭。）
@@ -150,7 +150,7 @@ like 當連接詞來使用（直接連接一個子句），中間用來連接的
 - Your plan sounds like a wonderful opportunity. （你的計畫聽起來像是個絕佳的機會。）
 - That sounds like a great idea!（那聽起來是個好主意！）
 
-### Smell like（聞起來像……）
+### Smell like（聞起來像...）
 用於嗅覺。
 - This perfume smells like roses.（這款香水聞起來像玫瑰。）
 - This cleaning spray smells like lemons. （這款清潔噴霧聞起來像檸檬。）
@@ -158,7 +158,7 @@ like 當連接詞來使用（直接連接一個子句），中間用來連接的
 - It smells like something is burning in the kitchen.（聞起來像廚房有東西在燒焦。）
 - It smells like rain is coming. （空氣中聞起來像要下雨了。）
 
-### Taste like（吃起來/嚐起來像……）
+### Taste like（吃起來/嚐起來像...）
 用於味覺。
 - This fruit taste like a mango, but it's sweet.（這水果嚐起來像芒果，但很甜。）
 - This herbal tea tastes like mint. （這款草本茶喝起來像薄荷。）
@@ -166,12 +166,12 @@ like 當連接詞來使用（直接連接一個子句），中間用來連接的
 - What does this strange fruit taste like? （這個奇怪的水果吃起來是什麼味道？）
 - What does this soup taste like?（這湯喝起來是什麼味道？）
 
-### Feel like（摸起來像…… )
+### Feel like（摸起來像... )
 用於觸覺或抽象感覺。
 - This blanket feels like silk.（這條毯子摸起來像絲綢一樣。）
 - This soft jacket feels like real fur. （這件柔軟的外套摸起來像真皮草。）
 
-### Feel like (感覺像……)
+### Feel like (感覺像...)
 ```
 Feel like(感覺) + 名詞/子句
 ```
@@ -209,7 +209,7 @@ We should look into this problem. （我們應該好好調查/研究這個問題
 ### look over 瀏覽/檢查
 Please look over this report before the meeting. （請在開會前快速瀏覽/審閱一下這份報告。）
 
-### look out of the [某個地方]（從……裡面向外看）
+### look out of the [某個地方]（從...裡面向外看）
 用 out of（強調從內部穿透出去）：
 * look out ofthe tent（從帳篷裡面向外看）
 * look out ofthe window（從窗戶向外看）

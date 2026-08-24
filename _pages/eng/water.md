@@ -76,7 +76,7 @@ water 的雙重身分：不只是「飲料」，更是「大自然的水體」
 * 就像人類生活在空氣中（in the air），鳥兒飛在天空中（in the sky），魚兒就是生活在水中（in the water）。
 
 ## 1. by the water（在水邊 / 靠近水的地方）
-* 意思：緊鄰著水體（河、湖、海）旁邊。by 在這裡有「在……旁邊、緊鄰」的意思。
+* 意思：緊鄰著水體（河、湖、海）旁邊。by 在這裡有「在...旁邊、緊鄰」的意思。
 * 例句：
 * We love to walk by the water at sunset.（我們很喜歡在日落時分在水邊散步。）
 * They built a small cabin by the water.（他們在水邊蓋了一間小木屋。）

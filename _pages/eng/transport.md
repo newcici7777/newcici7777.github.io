@@ -192,6 +192,17 @@ B. 小型的交通工具 → 用 get in / get out of
 |公車 / 火車 / 捷運 / 飛機|get on|get off|腳踩在平台上（on），可以在裡面走動。|
 |私家車 / 計程車 / Uber|get in|get out of|把身體彎曲塞進車廂空間（in）裡。|
 
+## get in 後面可以不用交通工具
+- The car door opened, and he got in.（車門開了，他就上車了。——這裡不需要說進哪台車，直接結尾）
+- Hurry up and get in!（快點上車！——對著準備開車的人喊，不用贅述車子）
+
+## get into + 交通工具 (進去裡面)
+- He got into the car.（他坐進車裡。）
+- She got into the taxi.（她坐進計程車。）
+- Get into the house right now!（馬上給我進屋子裡去！）
+
+## jump in + 交通工具 (趕快上車)
+- The rain is starting! Jump in the car! （開始下雨了！快上車！）
 
 ## catch a 交通工具 (趕火車／趕公車)
 - catch a train / catch a bus（趕火車／趕公車）
@@ -331,7 +342,11 @@ by plane它通常作為副詞，補充說明你選擇了什麼樣的交通方式
 - Can we take a flight to the UK?
 - Can we take a plane to the UK?
 
-## is arriving 預定行程
+## It is 數字 + 時間單位 (搭多久飛機)
+描述「時間的長度」時，主詞習慣用 It。
+- I had a long flight. It was 15 hours! 
+
+## is arriving 即將抵達
 - My flight to London is arriving tonight.「今晚抵達倫敦的」飛機，而不是「正在抵達」，抵達時間在今晚
   - 超長的大形容詞，整個黏在主詞後面，專門用來修飾那架飛機：「（今晚要抵達倫敦的）那個航班」。
 而「抵達」這個動作的發生時間，被鎖定在 tonight（今晚）
@@ -348,7 +363,7 @@ by plane它通常作為副詞，補充說明你選擇了什麼樣的交通方式
 
 ## ride
 - I paid for the ride.我付了車資 / 我付了這趟車的錢
-  - pay for + 名詞（為……付錢）。呼應我們前面討論過的 pay ... for ...，這裡的 ride 就是那個被購買的「搭乘服務」。
+  - pay for + 名詞（為...付錢）。呼應我們前面討論過的 pay ... for ...，這裡的 ride 就是那個被購買的「搭乘服務」。
 - get a ride home 搭別人的便車回家
 - Have a ride（我們有車可以坐／有人會載我們。）
   - Can I have a ride to the station?你可以載我去車站嗎？

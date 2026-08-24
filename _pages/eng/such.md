@@ -17,16 +17,16 @@ quite：
 - 正確： She is quite a good player.（她是一個相當優秀的選手。）
 - 錯誤： She is a quite good player. (X)
 
-## such + 冠詞(a/ an / the) + 名詞（「如此……的」）
+## such + 冠詞(a/ an / the) + 名詞（「如此...的」）
 - It is such a beautiful day.（今天天氣真是如此美好。）
 - She is such a smart student.（她是一個如此聰明的學生。）
 
-## 用來指代前面提過的事物（「像這樣的……」）
+## 用來指代前面提過的事物（「像這樣的...」）
 它可以當作代名詞或形容詞，意思是「這種人、這種事、這樣的情形」。
 - I have never seen such a big car.（我從沒見過這麼大的車。）
 - I hate such behavior.（我討厭這種行為。）
 
-## such ... that ... 句型（「如此……以至於……」）
+## such ... that ... 句型（「如此...以至於...」）
 這是一個非常實用的高級句型，用來表達「某個狀況太誇張了，導致了後面的結果」。
 ```
 such + 名詞片語 + that + 句子

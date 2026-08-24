@@ -77,7 +77,7 @@ Take 人 to 某地
 
 ## go up to 目的地 往上走
 - If you go up to the fourth floor, you'll see the pool. 
-  - go up to ＋ 目的地：意思是「走到……去 / 上樓到……」。
+  - go up to ＋ 目的地：意思是「走到...去 / 上樓到...」。
   - 在這裡，to 是一個介系詞，用來連接你的動作和具體的終點目標（也就是第四樓）。
 
 ## go up + 往上走的方式(the elevator/the stairs)
@@ -138,6 +138,10 @@ take 後面接單數可數名詞時，習慣上需要加上不定冠詞 a。
 
 ## 散步
 - take a walk（散步）
+  - I need to take a walk to clear my head.（我需要去散個步來清醒一下。）
+- go for a walk（去散步）
+  - Let's go for a walk in the park.（我們去公園散步吧！）
+
 
 ## 看一下
 take 轉變成了一個輔助性質的動詞，中文通常會翻譯成：「進行、做、採取、執行」某個動作。

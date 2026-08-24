@@ -23,7 +23,7 @@ keywords: be going to
 ## Do you want to + 動詞 ... + soon?
 - Do you want to have dinner again soon?改天（不久後）一起吃晚餐
   - 現在式
-  - want 為當下的意願／計畫 : 你現在心裡有沒有這個意願／想不想……？
+  - want 為當下的意願／計畫 : 你現在心裡有沒有這個意願／想不想...？
   - soon 不久之後，限定發生的時間點
 - Do you want to meet up soon?（你這陣子想找個時間碰面嗎？）
 - Do you want to watch a movie soon?（你最近想去看電影嗎？）
@@ -77,7 +77,7 @@ soon（不久、快要）： 這個字明確指出這件事是將來才會發生
 - He is visiting Italy this week.
   - （他這星期正在造訪義大利／人目前在義大利。——這是一個暫時的行程，過幾天就結束了，所以用進行式。）
 
-visiting from 這個結構中，介系詞 from 的意思是「來自於……（某個地方）」。
+visiting from 這個結構中，介系詞 from 的意思是「來自於...（某個地方）」。
 
 它用來交代這個「暫時來訪的人」原本是從哪裡出發、屬於哪個國家或機構。
 

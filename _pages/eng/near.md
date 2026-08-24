@@ -51,8 +51,31 @@ in Taiwan.
 ## on the credit card 信用卡上
 - There are too many numbers on this credit card.在这张信用卡上有太多号码！
 
-## on TV
-- There are many interesting ads on TV.电视上有很多有意思的广告。
+## on 電子設備
+- He was playing music on his laptop.
+
+- on TV
+  - There are many interesting ads on TV.电视上有很多有意思的广告。
+- on his laptop（在筆電上）
+- on his tablet (在平板上)
+  - He is watching a movie on his tablet.（他正在平板上看電影。）
+- on her phone（在手機上）
+- on YouTube / Spotify（在 YouTube / Spotify 上）
+- on the screen（在螢幕上）
+- on the speaker(在喇叭上)
+  - Are you playing music on the speaker?（你是在喇叭／音響上放音樂嗎？
+- on the computer（在電腦上）
+- on paper（在紙上）
+
+## in 書/雜誌/照片
+in 是強調「在……的內部、範圍中」嗎？雜誌是一本有頁數、有內頁印刷的紙本刊物，商品或圖片是印在雜誌裡面的，所以要用 in。
+in this magazine
+- in this book（在這本書裡）
+- in this picture / photo（在這張照片裡）
+- in the newspaper（在報紙上／裡）
+
+- Do you sell the swimsuit that is in this magazine?你們有賣這本雜誌裡面的那件泳衣嗎？
+
 
 ## at小地點
 - Oscar is at an art museum.
@@ -101,7 +124,7 @@ outside.
 - wait outside the office（在辦公室外面等）
 
 ## be動詞 + between A地 and B地 之間
-Between（在……之間）—— 它是「介系詞」  
+Between（在...之間）—— 它是「介系詞」  
 核心意思：表示空間、時間或選擇上的「在兩者之間」。  
 文法特點：因為它是介系詞，所以後面必須接受詞（通常是兩個用 and 連接的人、事、物，或是複數名詞）。  
 
@@ -243,6 +266,16 @@ I left my keys behind the flower pot."
 ## stop 地點
 - Because the road stops here. At the river.
 
+## stop at 地點 (停留)
+在某個特定的地點（如商店、車站、別人家）停下來或短暫停留
+```
+主詞 + stop + at + 具體地點（名詞）
+```
+- I stopped at the bookstore on my way home.我在回家的路上，順便去了（在...停留）書店。
+- We stopped at a small cafe for coffee.（我們在一家小咖啡館停留喝咖啡。）
+- The bus stopped at the station.（公車在車站停了下來。）
+
+
 ## downtown
 ### downtown 名詞 市中心
 - go to downtown(to 是介系詞，後面接名詞)
@@ -260,7 +293,7 @@ I left my keys behind the flower pot."
 - 當它前面接像 work, live, stay 這種動詞 → 表地點的副詞（在市中心）。
 
 ## on 關於
-這裡的 **`on`** 扮演著非常關鍵的角色，意思是「關於……」**或**「有關……的指南」。
+這裡的 **`on`** 扮演著非常關鍵的角色，意思是「關於...」**或**「有關...的指南」。
 
 你可以把這個 `on` 替換成更常見的 **`about`**，意思會更好理解：
 
@@ -273,3 +306,20 @@ I left my keys behind the flower pot."
 * a book **on** history（一本**關於**歷史的書）
 * a report **on** climate change（一份**關於**氣候變遷的報告）
 * a guide **on** how to use the app（一份**關於**如何使用這款 App 的指南）
+
+
+## on 衣物、帽子、飾品戴在人或動物的身體上
+on，是因為它表達的是「接觸並覆蓋在表面」的物理位置！
+衣物、帽子、飾品戴在人或動物的身體上時，標準的介系詞就是 on
+
+- I love this hat on my cat! 我喜歡戴在我貓身上的帽子
+- I love the cute bow on my cat. （我好喜歡我貓咪身上那個可愛的蝴蝶結！）
+- The winter coat on that dog looks so warm. （那隻狗身上穿的冬衣看起來好保暖。）
+- Do you like the new glasses on me? （你喜歡我臉上戴的新眼鏡嗎？）
+- That red scarf on you is gorgeous. （你脖子圍的那條紅圍巾真好看。）
+- Look at the tiny hat on the hamster! （快看那隻倉鼠頭上戴的小帽子！）
+- The silver ring on her finger sparkles in the light. （她手指上戴的銀戒在光線下閃閃發光。）
+- I left my favorite cap on the dog's head as a joke. （我開玩笑把最愛的棒球帽戴在狗頭上。）
+- The little sweater on the puppy is adorable. （那隻小狗身上穿的小毛衣超級可愛。）
+- The gold necklace on her neck matches her dress perfectly. （她脖子上戴的金項鍊跟洋裝超級搭。）
+- Whose sunglasses are those on the cat? （貓咪臉上戴的那副太陽眼鏡是誰的？）

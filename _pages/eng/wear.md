@@ -52,6 +52,9 @@ wear本身是動詞，什麼穿什麼，不是「穿」put on這個動作。
   - 解析：with long hair 是介系詞片語，用來修飾前面的 girl。
 - That boy with short hair is fourteen years old.那个有短头发的男孩十四岁。
 
-
-
+## be wearing 進行式 「正在穿在身上的」
+- I like the earrings that you're wearing! 
+  - 因為這個「戴著」的動作從剛剛開始、一直持續到現在這個說話的當下，所以必須用現在進行式
+- I love the jacket that you're wearing!（我好喜歡你身上穿的那件外套！）
+- Nice shoes! Are you wearing them for the first time?（好看的鞋子！你今天第一次穿嗎？）
 

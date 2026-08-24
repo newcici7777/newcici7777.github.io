@@ -90,8 +90,8 @@ eyes are very small.
 
 ## think 認為
 主詞 + think + that可省略 + (完整子句)
-- Why do you think that he wants...(為什麼你覺得他想要……？)
-- Why do you think he wants...(為什麼你覺得他想要……？)
+- Why do you think that he wants...(為什麼你覺得他想要...？)
+- Why do you think he wants...(為什麼你覺得他想要...？)
 
 ## thought 以為
 用 thought（過去式）代表「過去認為」，但實際上並不是這樣。
@@ -180,7 +180,7 @@ hall 要表示「禮堂、大廳、展覽館」這種比較大型的室內空間
 - town hall（市政廳）
 - hotel hall（飯店大廳，通常也常說 lobby）
 
-## fall off （從……掉落、從...摔下）
+## fall off （從...掉落、從...摔下）
 人或物體從某個表面「脫離並掉落」
 ```
 fall off + 掉落的地方
@@ -210,6 +210,17 @@ fall off + 掉落的地方
 
 ## return from
 - Lucy returns from the bathroom.
+
+## return 退貨
+return 的詞性是及物動詞（Transitive Verb）。
+
+### 動詞（退貨、歸還、返回）：
+- I'd like to return this watch.（我想退這隻手錶。）
+- Please return the book tomorrow.（請明天把書還回來。）
+
+### 名詞（退貨、回程、收益）：
+- Accepting returns within 7 days.（7天內接受退貨。）
+- A return ticket, please.（請給我一張來回票 —— 英國英文常用法）
 
 
 ## 環遊世界

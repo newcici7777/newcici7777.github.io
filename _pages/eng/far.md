@@ -28,6 +28,14 @@ Two miles（兩英里）+ away（遠）兩英里遠
 - It's two miles away from the station.（離車站有兩英里遠。）
 - The park is a mile away from my office.（公園離我辦公室有一英里遠。）
 
+## away from片語
+- Stay away from 保持遠離 
+  - Stay away from our village! 離我們的村莊遠一點
+- far away from...（離...很遠）
+  - My house is far from the station.（我家離車站很遠。）
+- keep away from...（離...遠一點，意思是「不要靠近！」）
+
+
 ### Distance 是「距離」
 Distance 是「距離」（名詞)，Away 是用來形容「有多遠」（副詞）。
 

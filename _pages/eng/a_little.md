@@ -99,7 +99,7 @@ a little(副詞) + bit(副詞) = 一點點
 - I'm a little tired.
 - 👉 客觀事實： 「我有點累。」（明確表達狀態，可能昨晚少睡了一小時。）
 - I'm kind of tired.（口語常講 I'm kinda tired.）
-- 👉 含糊社交： 「嗯……算是有點累吧。」
+- 👉 含糊社交： 「嗯...算是有點累吧。」
 - kind of expensive（算是有點貴）
 
 |能修飾的對象|a little|kind of|範例與說明|

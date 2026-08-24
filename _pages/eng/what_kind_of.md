@@ -97,10 +97,10 @@ kind 前面可以加形容詞！
   - Many kind**s** of candy.（多種糖果）
   -  Several kind**s** of fruit. 幾種
 
-- One kind of...（一種…… → 單數）
-- A few kind**s** of...（幾種…… → 複數）
-- Several kind**s** of...（好幾種…… → 複數）
-- Many kind**s** of / Different kind**s** of...（許多種／不同種類的…… → 複數）
+- One kind of...（一種... → 單數）
+- A few kind**s** of...（幾種... → 複數）
+- Several kind**s** of...（好幾種... → 複數）
+- Many kind**s** of / Different kind**s** of...（許多種／不同種類的... → 複數）
 
 - 單數(kind)
   - What kind of music do you like?（你喜歡哪一種音樂？ → 預設問單一種類）
@@ -130,7 +130,7 @@ kind 前面可以加形容詞！
 She moved to the city where her parents live.（她搬去了她父母住的那座城市。）
 
 ### Different + 複數名詞 = 許多「種」不同的
-當你想表達「許多種不同的……」或「不同的（多個）……」時，後面就要接複數名詞。
+當你想表達「許多種不同的...」或「不同的（多個）...」時，後面就要接複數名詞。
 - She wears different shoes every day.（她每天穿不同的鞋子——多雙鞋。）
 - We have different opinions.（我們有不同的意見——多個意見。）
 
@@ -159,9 +159,9 @@ She moved to the city where her parents live.（她搬去了她父母住的那�
   - 各種不同的口味（很多種選擇）。
 
 ## Different kinds of 各種不同類型的物品
-意思是「不同種類的……」
+意思是「不同種類的...」
 ```
-Different（不同的）+ kinds（種類們）+ of（……的）+ 名詞
+Different（不同的）+ kinds（種類們）+ of（...的）+ 名詞
 ```
 - 為什麼 "kind" 後面要加 "s"？
   - 因為 "kind"（種類）是一個可數名詞。當我們想表達「好幾種不同的東西」時，"kind" 就必須變成複數形 kinds。
