@@ -49,6 +49,8 @@ have 吃和活動或聚會搭配時，它代表的是「進行、享受、舉辦
 - Let's have a party
 - have a party.  
 - have a picnic.野餐  
+- have a discussion（進行討論）
+- have a chat（聊聊天、輕鬆談話)
 
 - We won't have a meeting tomorrow morning.(我們明天早上不會開會 )  
 - What time do you want to have your party?

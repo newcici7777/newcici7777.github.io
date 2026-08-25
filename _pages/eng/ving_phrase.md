@@ -3,11 +3,10 @@ title: 動名詞片語
 date: 2026-08-20
 keywords: english, Gerund Phrase
 ---
-所有介系詞（像是 about, on, in, at, with, without, before, after）本質上都是「位高權重的老大」，它們的後面只能接「名詞」或「代名詞」（例如：talk about money、good at English）。
+- 所有介系詞（像是 about, on, in, at, with, without, before, after,包含 of）後面只能接「名詞」。
+- 介系詞（例如 in, on, at, with, about,包含 of），後面如果放代名詞，就絕對不能用主格（如 I, he, she, they），而必須用受格（如 me, him, her, them）。
+- 只要遇到「介系詞（如 about, of, in, for, on...）」後面的動詞，全部都必須強制變成 V-ing（動名詞）。
 
-當你想把一個「動作」（比如：跑步、吃飯、分手、遲到）塞到介系詞後面當受詞時，那個動作就必須先去「辦理名詞化手續」——而把動詞變成 V-ing，就是最直接、最合法的手續！
-
-只要遇到「介系詞（如 about, of, in, for, on...）」後面的動詞，全部都必須強制變成 V-ing（動名詞）。
 
 ## 「思考／討論」類動詞 + 介系詞
 這些動詞和 talk / speak 一樣，後面必須加介系詞，所以後面接動作時也一定要用 V-ing：

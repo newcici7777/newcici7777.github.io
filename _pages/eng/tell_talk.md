@@ -136,7 +136,7 @@ speak + 語言
 - Mary talked about breaking up with Eddy. （瑪麗談到了她跟艾迪分手這件事。）
 - Mary spoke about breaking up with Eddy. （瑪麗談論了關於她跟艾迪分手的事)
 
-### 主詞不同，不能省略內容主詞
+### 主詞不同，不能省略內容主詞，主詞要變受格(him,her,them)
 - She talked about Mary breaking up with Eddy.
 - They talked about the train being late.（他們談論火車誤點。）
 - She talked about him being late.（她談到他遲到這件事。）

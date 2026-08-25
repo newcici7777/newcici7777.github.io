@@ -89,6 +89,17 @@ a little(副詞) + bit(副詞) = 一點點
 - a little of this water（這些水裡的一點點）
 - a little of the money （那筆錢裡的一點點）
 
+## a little bit of + 不可數名詞 (一點點)
+沒有 a little of + 不可數名詞，只有a little bit of + 不可數名詞
+- I need a little bit of help.（我真的只需要一點點幫忙。）
+- Can I have a little bit of the cake?（我能吃那塊蛋糕的一點點嗎？—— cake 視為不可數的一部分）
+- I need a little bit of your time.（我需要你一點點的時間。）
+
+## a bit of + 不可數名詞 (一點點)
+- I need a bit of help.（我需要一點幫忙。）
+- He added a bit of salt to the soup.（他在湯裡加了一點點鹽。）
+
+
 ## kind of + 可數/不可數名詞
 它的意思是「算是有點吧／好像是那樣／大概／某種程度上」，是用來軟化語氣，或是當你不想把話說得太死的時候用。老外口語常縮讀成 kinda。
 - kind of tired → 「算是有點累吧／好像有點累」

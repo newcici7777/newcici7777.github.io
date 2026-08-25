@@ -19,14 +19,14 @@ ready 是形容詞：它不能單獨當動詞用，前面一定要搭配 be 動�
 - Dinner will be ready soon be ready.晚餐快要準備好了
 
 ## ready to + 動詞 (V) (即將啟動：準備好要做...)
-後面接動作（動詞原型）。代表你已經蓄勢待發，隨時可以開始執行那個動作。  
+ready to後面接動作（動詞原型）。代表你已經蓄勢待發，隨時可以開始執行那個動作。  
 例句解析：
 - We are all ready to go! （我們都準備好要出發了！ → go 是動作，隨時能走）
 - Are you ready to order? （您準備好要點餐了嗎？ → 餐廳服務生最常講的標準句）
 - I'm ready to learn Japanese. （我準備好要開始學日文了。）
 
 ## ready for + 名詞 (N) (心理/物質上：對某件事物做好準備)
-後面接名詞（或 V-ing）。代表你對於即將到來的「某個事件、東西、挑戰」已經整備完畢，心態或物品都 OK 了。  
+ready for 後面接名詞。代表你對於即將到來的「某個事件、東西、挑戰」已經整備完畢，心態或物品都 OK 了。  
 打開背包檢查，去考試、去上班、去面試的東西都裝齊了。  
 
 - Are you ready for the exam tomorrow? （你對明天的考試準備好了嗎？ → the exam 是名詞）

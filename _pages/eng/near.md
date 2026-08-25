@@ -68,7 +68,7 @@ in Taiwan.
 - on paper（在紙上）
 
 ## in 書/雜誌/照片
-in 是強調「在……的內部、範圍中」嗎？雜誌是一本有頁數、有內頁印刷的紙本刊物，商品或圖片是印在雜誌裡面的，所以要用 in。
+in 是強調「在...的內部、範圍中」嗎？雜誌是一本有頁數、有內頁印刷的紙本刊物，商品或圖片是印在雜誌裡面的，所以要用 in。
 in this magazine
 - in this book（在這本書裡）
 - in this picture / photo（在這張照片裡）
@@ -122,21 +122,6 @@ outside.
   - It's raining. Let's look outside.（外面在下雨。我們看外面吧。）
 - look outside the tent（看著帳篷外面）
 - wait outside the office（在辦公室外面等）
-
-## be動詞 + between A地 and B地 之間
-Between（在...之間）—— 它是「介系詞」  
-核心意思：表示空間、時間或選擇上的「在兩者之間」。  
-文法特點：因為它是介系詞，所以後面必須接受詞（通常是兩個用 and 連接的人、事、物，或是複數名詞）。  
-
-* The bank is between the park and the school.（銀行在公園和學校之間 → 空間位置）
-* Let's meet between 3 PM and 4 PM.（我們在下午三點到四點之間碰面吧 → 時間）
-* I can't choose between this one and that one.（我沒辦法在這一個跟那一個之間做選擇）
-
-- between the coffee shop and the zoo (在咖啡店和动物园之间 )
-- between the museum and the restaurant 在博物馆和餐厅之间
-- My house is between the park and the bank.我家在公園和銀行之間。
-- The new bridge is between the city center and the airport.那座新橋位於市中心和機場之間。
-
 
 
 

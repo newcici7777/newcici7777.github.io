@@ -113,6 +113,15 @@ weekday泛指平日裡的其中某一天。
   - I don't go out on weekdays.我平日不出門。
 
 
+## weekly 形容詞 副詞
+它的意思是「每週的」、「週刊的」或「每週一次的」。
+### weekly形容詞「每週的」、「週刊的」或「每週一次的」
+- Do you have weekly meetings?（你們有每週的會議嗎？／你們每週開會嗎？）
+- This is a weekly report.（這是一份每週報告。）
+### weekly副詞 「每週一次地」或「按週計算地」
+- We meet weekly.（我們每週聚會一次／每週開會一次。）
+- The magazine is published weekly.（這本雜誌每週發行一次。）
+
 
 
 

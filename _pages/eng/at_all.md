@@ -22,7 +22,7 @@ keywords: English, at all
 - Did you understand what the teacher said at all? （老師剛才講的話，你到底有沒有聽懂哪怕是一點點？）
 - Is there at all any chance we can change the schedule? （我們到底有沒有任何機會可以改時間？）
 
-## 用在「條件句 / If 句中」（強調「只要有一點點……」）
+## 用在「條件句 / If 句中」（強調「只要有一點點...」）
 當你想表達「如果發生哪怕是一丁點的問題或情況時」，可以用它來加強語氣。
 -If you have at all any questions, please let me know. （如果你有任何哪怕是一點點的疑問，請讓我知道。）
 - If it rains at all tomorrow, we will cancel the trip. （明天只要有下雨（哪怕只是毛毛雨），我們就會取消行程。）
@@ -30,6 +30,6 @@ keywords: English, at all
 - Do not hesitate to call me if you need help at all. （如果你有需要幫忙的地方（完全不拘大小），隨時打給我。）
 
 💡 核心記憶心法
-- 否定句＋at all ＝ 「完全不……」
-- 疑問句/條件句＋at all ＝ 「到底…… / 哪怕是一點點……」
+- 否定句＋at all ＝ 「完全不...」
+- 疑問句/條件句＋at all ＝ 「到底... / 哪怕是一點點...」
 

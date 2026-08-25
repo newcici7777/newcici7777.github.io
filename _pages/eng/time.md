@@ -49,47 +49,6 @@ What形容詞 + 不可數名詞time
 - Who will come to the party with me in New York on Saturday evening?
 - tomorrow morning.
 
-
-## between 時間 and 時間
-- I'll be at home between six o'clock and seven o'clock.(我在六点到七点之间会在家。)
-- We will eat lunch between meetings
-
-## during(介) 在...時候
-during 是一個介系詞（Preposition），最基本的中文意思就是「在...時候」，表示一段時間或一個事件，絕對不能直接接句子（主詞 + 動詞），特定的時間或活動「進行到一半」都可以用during。
-
-「during + 期間」副詞片語，它是用來修飾動詞的，告訴別人某個動作是「在什麼時後」發生的。
-
-它的核心功能是用來回答 「什麼時候發生的？」 或 「某個動作持續了多久的時間範圍？」。
-```
-during + 名詞（片語）
-```
-❌ during 後面不能直接接子句（不能接「主詞 + 動詞」）。
-
-### 1.活動進行的時候，發生了什麼
-* I fell asleep during the movie.（我在電影播放期間睡著了。）
-* Please don't talk during the exam.（請在考試期間不要交談。）
-* We met a lot of interesting people during our stay in Japan.（我們在日本停留期間遇到了很多有趣的人。
-- We will eat lunch during meetings.「每次開會」，我們都在開會期間吃午餐。
-  - meetings 使用複數形，是因為這句話表達的是一個「通則、習慣或常態」
-  - 指大大小小、各種不同的會議），而不是指某一個特定的會議。
-  - 每當有會議時／在開會的期間（們），泛指每一次開會的狀況。
-
- 
-### 2.during + 假期
-- during the trip
-- during the summer
-- during the holidays（在假期期間）
-
-during + 既有的時間名詞（季節、月份、假期、特定活動期間）
-- during the summer（在夏天期間）
-- during the week（在平日／週間期間）
-- during the meeting（在會議進行期間）
-
-
-- We traveled forthree days duringthe summer vacation.（我們在暑假期間旅行了三天。）
-- they work hard during the week.他們平日工作很努力。
-
-
 ## to pass 時間 a quarter/ half
 - It's a quarter to eleven!(现在是十点四十五！)
 - It's ten to eleven.
@@ -101,8 +60,18 @@ during + 既有的時間名詞（季節、月份、假期、特定活動期間�
 - It's a quarter to one.
 
 
-## until
-- my French course won't begin until February eleventh!
+## Not until 直到...才...
+```
+直到 [until後面的條件]，主詞 + [前面的動作]才發生(忽略掉not)
+```
+- Dad won't **come home** until **February sixth**.直到二月6號，爸爸才回來。
+  - 後面的條件 February sixth
+  - 前面的動作 come home
+  - 代入公式: 直到**February sixth**，爸爸**come home**
+- My French course won't **begin** until **February eleventh**! 直到二月11號，我的法文課才開始
+  - 後面的條件 February sixth
+  - 前面的動作 come home
+  - 代入公式: 直到**February eleventh**，我的法文課**begin**
 
 ## at the same time 同一時間
 - Does Tom eat dinner at the same time every day?

@@ -343,6 +343,99 @@ laughs 的詞性是不及物動詞（Intransitive Verb）
 This jacket costs a hundred euros.（這件外套花費了一百歐元——這裡就是動詞，因為主詞是外套，所以第三人稱單數加了 s）。
 
 
+## meal
+- Set meal（套餐）
+  - Today's set meal includes soup, a main course, and coffee.（今天的套餐包含湯、主餐和咖啡。）
+- Special（特餐）
+  - Today's special（今日特餐）
+  - I'll have the lunch special, please.（我要一份午餐特餐。）
+
+
+## meet 開會
+- Do you have daily meetings, or do you meet every week?你們是每天開會還是每週開會？
+- Do you meet every week?（你們每週開會嗎？）
+- Let's meet tomorrow.（我們明天開個會／碰個面吧。）
+- We meet on Mondays.（我們固定在星期一開會。）
+
+### 其它開會片語
+- Have a meeting（最標準、正式的說法）
+  - Do you have daily meetings?（你們每天都有會議嗎？）
+- Hold a meeting（舉辦／召開會議，通常偏向正式或由主辦方發起）
+  - The manager will hold a meeting this afternoon.（經理今天下午會召開會議。）
+
+## start a new business 創業
+- She wants to start a new business。她想創業。
+
+### 其它創業
+- Start a company（開公司）
+  - She wants to start her own company.（她想開自己的公司。）
+- Launch a startup（創立新創公司）
+  - He is planning to launch a startup.（他正計畫創立一家新創公司。）
+- Go into business（合夥）
+  - They decided to go into business together.（他們決定一起合夥創業。）
+- Set up a business（設立事業，偏向英式英文或較正式的說法）
+  - It's not easy to set up a business.（要建立一項事業並不容易。）
+
+## Email(動詞) + 人 「寄信」
+- Email me after the meeting.
+- I will email you the details tomorrow.（我明天會把詳細資訊寄信給你。）
+- Can you email him about the update?（你可以發信跟他說一下最新進度嗎？）
+
+## complete 完成、填寫表格
+complete明確目標、任務要完成，表單需要填寫。
+- We should complete our work tonight.我們今晚應該要把工作／任務完成。
+  - work 在這裡當作名詞，意思是「工作、作業、手頭上的任務」
+- Please complete the application form.（請填妥／完成這份申請表格。）
+
+## discuss 事 with 人
+discuss 後面直接接名詞，中間千萬不能加任何介系詞
+```
+discuss + [某事] + with + [某人]
+```
+- ❌ 錯誤用法：discuss with someone
+- 正確用法: discuss this with someone
+- ❌ 錯誤用法：discuss about the plan
+- 正確用法: discuss the plan
+
+例句:
+- Let's discuss **this information** with our boss.我們跟老闆討論一下這項資訊吧。
+- I need to discuss **this project** with my team.（我需要和我的團隊討論這個專案。）
+- Can we discuss **this** with him tomorrow?（我們明天可以跟他討論這件事嗎？）
+- She is discussing **the details** with the client.（她正在跟客戶討論細節。）
+
+### have a discussion
+- Excuse me, sir, are you having a discussion?不好意思，請問你們在討論嗎？
+  - have 是動詞（進行)
+
+## answer 回覆
+- Somebody should answer the phone.有人要接電話
+- answer an email 回覆電子郵件
+- Answer a message 回覆訊息
+
+例句:
+- I need to answer an email from my boss.（我需要回覆老闆的一封信。）
+- Did you answer his email yet?（你回覆他的信了嗎？）
+
+### 回覆相關片語
+- Reply to an email（回覆電子郵件，注意這裡的 reply 要加介系詞 to）
+- Respond to an email（對電子郵件做出回應／回覆）
+
+
+## broken working work
+### is broken（壞了、斷了、碎了）
+是形容詞，東西有明顯的破洞、螢幕碎裂、零件斷掉、或是徹底癱瘓不能用。
+
+- My phone screen is broken.（我手機螢幕碎了／壞了。）
+- The chair is broken.（這張椅子斷了／壞了。）
+
+### isn't working / doesn't work（運作不正常、秀逗、不能用）
+強調「功能失效」： 這兩個詞不一定代表東西「碎掉」或「斷掉」，它通常是指功能無法正常運作（可能外觀完好，但內部秀逗、當機、或是按了沒反應）。
+- The elevator isn't working.（電梯故障不能動了——外觀可能好好的，但按了沒反應。）
+- My computer doesn't work.（我的電腦開不了機／當機了。）
+
+
+
+
 ## 其它疑惑
 I draw things that I think are interesting or beautiful.
 

@@ -64,3 +64,13 @@ some + 可數
 ## some當副詞（表示「大約、左右」）
 這大概是很多人覺得 some 最神奇的地方——當它放在數字前面時，竟然不是「一些」，而是變成「大約」！
 - There were some 50 people at the party.（派對上有大約 50 個人。）
+
+## several + 可數名詞S
+several 是形容詞，意思是「幾個」、「數個」、「一些」。
+- several things（好幾件事情）
+- several people（好幾個人）
+- several days（好幾天）
+- ❌ 錯誤： several cake
+- ✔️ 正確： several cakes（好幾塊蛋糕／好幾個蛋糕）
+- ❌ several water
+- ✔️ several bottles of water（幾瓶水——把水裝進可數的「瓶子」裡）

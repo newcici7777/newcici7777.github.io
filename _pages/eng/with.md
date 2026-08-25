@@ -50,11 +50,34 @@ I have a problem with + **讓你頭痛的人/事/物**
 - Write with a pen（用原子筆寫字）
 - Cut it with a knife（用刀子切它）
 
+## come with 附贈/配件/附有
+- Does this Happy Meal come with a toy?（這份快樂兒童餐有附玩具嗎？）
+- 餐點附贈： This kid meal comes with a toy.（這份兒童餐附帶一個玩具／有送玩具。）
+- 產品配件： The phone comes with a charger.（這支手機有附充電器。）
+- 套裝組合： The computer comes with software.（這台電腦附有軟體。）
+
+例句
+- 點餐情境（附餐）：Does this combo meal come with a drink? （這份套餐有附飲料嗎？）
+- 購買商品（附帶配件／保固）：The laptop comes with a three-year warranty. （這台筆記型電腦附有三年保固。）
+- 租屋買房（附設設備）：The apartment comes with a fully equipped kitchen. （這間公寓附有設備齊全的廚房。）
+- 車輛或產品（標準配備）：The new car comes with leather seats and a sunroof. （這輛新車配有皮質座椅和天窗。）
+- 抽象概念（伴隨而來的事物）：Being a manager comes with a lot of responsibilities. （擔任主管職位伴隨著許多責任。）
 
 
 
+## some help(名詞) with 事情
+help 不是動詞，而是不可數名詞，意思是「幫助」或「援助」。
+```
+need + some help（需要一些幫助）
+```
+- She needs help with this project.（她在這個專案上需要幫忙。）
+- I need help with my homework.（我需要人幫忙寫功課。）
+- I need some help.（我需要一些幫忙。）
+- Can you give me some help?（你可以給我一些幫助嗎？）
+- She offered help.（她提供了幫助。）
 
-## help me with 事情
+
+## help(動詞) me with 事情
 ```
 help + 人 + with + **名詞/事情**
 ```

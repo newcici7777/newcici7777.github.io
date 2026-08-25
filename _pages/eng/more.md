@@ -100,7 +100,23 @@ more + 不可數名詞(不加s)
 - She speaks English more fluently.(（她說英文說得更流利。)
 
 ## 動詞 + more(副詞)
-- you want to talk more .
+```
+動詞 + 數量比較級 + (受詞/名詞)
+```
+不及物動詞，沒有受詞
+- Earn more or spend less that is a question. 
+  - 比較級（如 more 或 less）不是形容詞修飾名詞，而是當作副詞（Adverb），用來修飾前面的動詞，回答「賺（或花）得比以前／比別人多寡」的程度。
+  - earn (動詞) + more (副詞比較級) = 賺得更多
+  - spend (動詞) + less (副詞比較級) = 花得更少
+- you want to talk more.
+- We need to work more and talk less. （我们需要多做事、少說話。)
+
+及物動詞，有受詞
+- You should earn more money.（你應該賺更多錢。)
+- He spends less time on video games.（他花更少的時間在電動上。）
+- Eat more vegetables, and eat less junk food. （吃更多蔬菜，吃少一點垃圾食物。）
+- Try to sleep more and worry less. （試著多睡一點、少擔憂一點。）
+
 
 ## 量詞片語(副詞) + more(形容詞) + 可數/不可數名詞
 量詞片語a little/ a lot/ a few，這些是副詞，修飾的是「比較級形容詞more」，而不是「名詞」，所以名詞可以是可數或不可數。
