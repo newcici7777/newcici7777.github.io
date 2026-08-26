@@ -1,8 +1,13 @@
 ---
-title: available
+title: available, in her free time
 date: 2026-08-23
-keywords: english, available
+keywords: english, available, in her free time
 ---
+## in her free time
+- I like to read books in my free time.（我喜歡在我的空閒時間看書。）
+- What do you usually do in your free time?（你通常都在空閒時間做什麼？）
+
+## available 介紹
 某個東西或服務是 available 的時候，代表：
 - 東西：現在買得到、有現貨。
 - 服務：現在可以使用、辦得到。

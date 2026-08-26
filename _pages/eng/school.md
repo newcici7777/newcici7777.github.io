@@ -159,3 +159,15 @@ Did you do well...?
 - I do well on the interview.指的是你在面試的「答題、互動表現」上很好
 
 
+## in pairs, in groups of 副詞片語
+in pairs, in groups of 前面加上了介系詞 in 之後，整個片語是用來修飾前面的動詞或整個動作的狀態，回答「是用什麼形式在進行？」這個問題。
+```
+主詞 + 動詞 (+ 受詞) + in pairs / in groups of [數字].
+```
+in 包裹在一個團體裡（Container Concept）：  
+In 原本的核心意思是「在...裡面」。當你說 in pairs（成雙成對）或 in groups of five（五人一組）時，意思是你們每個人都被包在、劃分在這樣的小組單位「裡面」。  
+
+- We're having a discussion in pairs now. （我們現在正在進行討論。以什麼形式？ → 成雙成對地 / 兩人一組地。） 這裡的 in pairs 就像副詞一樣，補充說明討論進行的方式。
+- We are working in pairs.（我們正以兩人一組的方式工作。——放在動詞後面）
+- Students discussed the topic in groups of five.（學生們以五人一組的方式討論這個主題。——放在受詞後面）
+- The class worked in groups of five to finish the project.（全班以五人一組的方式合作完成這個專案。）

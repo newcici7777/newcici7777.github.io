@@ -13,15 +13,6 @@ She's a teenager.
 - I want to invite one hundred people to my party.
 - did you invite me to go fishing because you want to talk more?
 
-## meet 碰面
-- they want to meet us at the theater.
-- Do you want to meet at the big doors?
-- Duo will meet them at the library
-- Eddy meets his neighbor Vikram at the airport.
-- tomorrow you will meet your new baby brother! 
-- We met in Cambridge last weekend.我们上周末在剑桥
-见面了。
-- I met Anna in London last month.When did you meet her?
 
 
 
@@ -223,15 +214,6 @@ return 的詞性是及物動詞（Transitive Verb）。
 - A return ticket, please.（請給我一張來回票 —— 英國英文常用法）
 
 
-## 環遊世界
-- I was sailing around the world.我當時正在環遊世界（乘船／航海）。
-  - 我當時正在航行（過去進行式，強調過去某個時刻正在進行的動作）
-- Fly around the world：搭飛機環遊世界。
-- Travel around the world.不限交通工具
-
-## fun vs funny
-- fun adj.有趣的
-- funny adj. 好笑的
 
 ## would like + 名詞 (想要)
 - I'd like a book, please.
@@ -244,39 +226,9 @@ return 的詞性是及物動詞（Transitive Verb）。
 - I would like to pay with cash.我想付现金。
 - Would you like to buy this dress?你想要买这条连衣裙吗？
 
-## together(副詞)
-- They have been together for twenty years.他们在一起二十年了。
-- Are you two still together?（你們兩個還在交往嗎？）
-
-### together修飾動詞（放在動詞後面，表示「一起做某事」）
-- We worked together on the project.（我們一起合作這個專案。）
-- Let's sing together.（我們一起唱歌吧。）
-
-### 與with在一起，together放在句尾
-```
-[動作] ＋ [某人/某事] ＋ together
-```
-- I like baking together with my son. 
-- We cooked dinner together. （我們一起煮晚餐。）
-- She went to the park with her friends together. 
-  - 「together」在有 with 的時候經常被省略
-- We baked with each other together.（強調彼此陪伴且一同完成）
-
-### 在主詞後面
- together 直接放在主語後面，用來強調「兩個人（或多個人）一同採取了某個行動」。
-```
-[主語] ＋ together ＋ [動詞]
-```
-- We together built this house. （我們共同建造了這棟房子。）
-- They together decided to move. （他們一同決定搬家。）
-
-### be + together 交往、在一起（指情侶或伴侶關係）
-- They have been together for 3 years.
-- Are they still together?（他們還在一起／還在交往嗎？）
-- We can finally be together!
 
 
-## an add for 
+## an ad for 
 - We saw an ad for this clothes store.我们看到了一个这个服装店的广告。
 - Is this an ad for a restaurant?这是一个餐厅的广告吗？
 - I saw this ad yesterday.我昨天看到了这个

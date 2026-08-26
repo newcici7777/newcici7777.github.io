@@ -61,6 +61,15 @@ paint 是水彩畫 draw 是用鉛筆描寫
 - I'm not drawing you.
 - I'm drawing your dog.
 
+## paint + 東西 + 顏色 (塗漆)
+- Ben's kids want to paint the walls of their rooms yellow.
+- They painted the door red.（他們把門漆成紅色）。
+
+## color 著色 動詞
+* My son loves to color.（我兒子喜歡著色。）
+* Can I color in this book?（我可以在這本書上著色嗎？）
+* Go get your crayons and color.（去拿你的蠟筆來著色。）
+
 ## picture painting photo
 圖片picture 後面加上of，代表是什麼東西/人的圖片
 ```

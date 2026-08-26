@@ -51,6 +51,11 @@ How long + be 動詞 + 主詞 ...?
 - How long is the movie? (這部電影有多長／多久？)
 - How long were you there? (你在那裡待了多久？)
 
+## How long + 過去式
+時間在過去就結束，沒有延續到「現在」。
+- How long did you go camping at the park?（你們去公園露營去了多久？）
+- How long did you work for that company?(你為那家公司做了多久)
+
 ## How long + 現在完成式（詢問持續到現在的動作）
 如果你想問某個狀態從過去一直延續到現在多久了，句型是：
 ```

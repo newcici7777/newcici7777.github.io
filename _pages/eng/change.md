@@ -43,12 +43,18 @@ this change is for 找的錢
 ```
 - I gave you 100, but this change is **for 20**.我給你100，但你卻找我20(be + for 找的錢)
 
+## 錢 + **short** 少找多少錢
+short是形容詞，中文是「不足的」，後位修飾前面的名詞「20 dollars」
+- You gave me 20 dollars short.（你少找了 20 美元。）
+
+「動詞 + 受詞 + 形容詞（補充狀態）」，形容詞會放在受詞的後面：
+- Cut the paper short.（把紙剪短一點。)
 
 ## shortchange(動詞) 「少」找的錢
 ```
 shortchanged + 人 + 錢 
 ```
-- You shortchanged me. I gave you 100. （你少找我錢了。我給了你一百。）
+- You shortchanged me.  （你少找我錢了。）
 - You shortchanged me five dollars. （你少找了我五塊錢。）
 
 ## change(動詞) + 名詞 (改變/更換)

@@ -113,10 +113,6 @@ Go on (something)：是一個動態的過程——指你跨出腳步、走上車
 - I don't want to go on that ride.（我不想去坐那個遊樂設施。）
 
 
-
-
-
-
 ## by 工具
 - We communicate by email. （我們透過電子郵件聯絡。）
 
@@ -376,3 +372,19 @@ Ride 則強調「騎乘」或是「坐在上面隨之移動」的動作
 - ride a horse
 - ride the roller coaster 坐雲霄飛車
   - do you want to ride the roller coaster or not?
+
+-----------------------------------
+## 描述「時間的長度」時，主詞習慣用 It
+只要是描述「某件事花了多久時間、或距離有多遠」，主詞通通都是用 It，絕對不用 There is。
+```
+It is 數字 + 時間單位 
+```
+形容旅程/飛行時間：
+- How was your trip? It was 5 hours.（你的旅行怎麼樣？它花了 5 個小時。）
+- I had a long flight. It was 15 hours! 
+
+形容開車或通勤時間：
+- It takes two hours to drive there.（開車到那裡需要花兩個小時。）
+
+形容距離遠近：
+- It is 10 kilometers away.（這裡距離那裡有 10 公里遠。）

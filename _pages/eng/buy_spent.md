@@ -44,6 +44,7 @@ ex:buy 買、make 做、cook 煮、get 拿
 ### 人 + buy + 物 + for + 錢
 Can I buy it for one hundred dollars.
  
+------------------------
 
 ## pay
 ### pay 付的方式
@@ -84,9 +85,13 @@ Pay + 錢 + TO + 人 + FOR + 物
 * 付錢給誰（人 / 店家） → pay TO ...（方向遞過去）
 * 付錢買啥（物品 / 服務） → pay FOR ...（用錢去換）
 
+-----------------------
+
 ## get 買
 - Do you want to get a tall bookcase or a short bookcase ?(你想要买一个高的书柜还是一个矮的书柜？)
 - Can we get tickets?(買機票)
+
+---------------------------------
 
 ## 人 spend
 主詞是「人」，後面可以接「錢」或「時間」。
@@ -143,7 +148,7 @@ Pay + 錢 + TO + 人 + FOR + 物
 （他整個週末都花在寫功課上。）
 
 
-
+-------------------------------------
 
 ## take 「事情」花費多少「時間」
 主詞是「事情」，目的是達成這件事需要花多少「時間」。
@@ -172,6 +177,16 @@ It + takes + (人) + 時間 + to V
 * It takes 30 minutes to cook a meal.（煮一餐要花 30 分鐘。）
 * It takes two hours to finish the work.（這工作要花兩小時。）
 
+----------------------------
+## cost(名詞) 費用、成本
+- The total cost is a hundred and sixty euros.總費用是一百六十歐元
+  - total 是形容詞，修飾名詞 cos
+
+### cost當名詞（費用、成本）：
+- What is the cost of this ticket?（這張票的費用是多少？）
+
+### cost 當動詞（花費、使付出代價）：
+This jacket costs a hundred euros.（這件外套花費了一百歐元——這裡就是動詞，因為主詞是外套，所以第三人稱單數加了 s）。
 
 ## cost 「錢」花在「東西」身上
 主詞是「東西」，受詞是「錢」
@@ -199,10 +214,7 @@ It + takes + (人) + 時間 + to V
 |Take|事情|這件事「耗掉」多少時間。|
 |Buy|人|我「支付」金錢獲得物品。|
 
-
-
-
-
+-----------------------------
 
 付出勞力、金錢、體力，都用for
 - buy（買）

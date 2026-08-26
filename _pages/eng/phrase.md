@@ -110,7 +110,7 @@ that 幾乎可以用來替代 who 和 which。
 為了簡潔，通常會大量使用介系詞片語
 - 介系詞片語: The error in the file.
 
-## 表格
+## 比較表格
 
 當你覺得「介系詞片語」資訊不夠用（例如你想形容一個人的動作、狀態、或擁有的東西），你就必須請出 who, whom, that, whose 來幫忙：
 
@@ -121,3 +121,19 @@ that 幾乎可以用來替代 who 和 which。
 |That|可修飾人或物，通常很通用|The book that is on the table. (桌上的那本書。)|
 |Whose|修飾**「所有格」** (誰的...)|The man whose car is parked outside. (車子停在外面那個男人。)|
 
+-------------------------
+## 疑問子句
+- Are you looking for where the ticket is?
+- I don't know where she is now...
+
+## 疑問子句 + to
+- but do you know where to buy glasses?
+
+## 子句
+- You look like someone I knew many years ago!
+
+
+## It's OK（沒關係）+ if（如果）+ 子句
+「如果...也沒關係／是可以的」。
+- it's OK if you don't get a perfect grade!(拿不到滿分／完美成績也沒關係的！)
+- It's OK to eat one slice. 吃一片披薩沒關係。

@@ -56,6 +56,12 @@ have 吃和活動或聚會搭配時，它代表的是「進行、享受、舉辦
 - What time do you want to have your party?
 - Our company is having a meeting right now.我们的公司现在正在开会。
 
+## have + 名詞S (泛指習慣或經常性活動)
+- Do you often have barbecue**s**?你們經常舉辦烤肉活動嗎？
+  - 句尾的 barbecues 變成了複數形，泛指習慣或經常性活動
+- Do you play video games?（你常打電動嗎？——泛指遊戲）
+- Do you have parties?（你們常辦派對嗎？——泛指派對）
+
 ## 擁有
 - I [never have time] to make breakfast for you.我沒有時間。 
 - [Do] chicken[s] have hands? 鸡有手吗？

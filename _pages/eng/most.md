@@ -1,5 +1,5 @@
 ---
-title: Most, Most of, Many of
+title: Most, Most of, Many of, Few of, a little of
 date: 2026-08-25
 keywords: english, most of, most, the most
 ---

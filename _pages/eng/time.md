@@ -90,3 +90,16 @@ at的核心概念是「在某個精準的點」。
 * She learned to swim at the age of five.（她在五歲時學會游泳。）
 * (也可以簡寫成更口語的：She learned to swim at five.)
 
+## then 然後
+- It rained then snowed.(下雨然後下雪)
+
+## then 未來的某個特定時間點
+* Let's meet at 5 p.m.
+* Okay, see you then!(在那時候見。)
+
+## then 過去的某個特定時間點
+- Look at this old photo!The kids were very young then.看这张旧照片！孩子们那时候非常年纪
+非當小。
+- Were they small children then?他们当时是小孩子吗？
+- He was only seven years old then.他当时只有七岁。
+

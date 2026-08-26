@@ -1,10 +1,10 @@
 ---
-title: at all 一點也不
+title: at all, anymore
 date: 2026-08-24
 keywords: English, at all
 ---
-## at all通常放在「句尾」
-否定句的句尾：
+## at all(一點也不)
+通常放在「句尾」，否定句的句尾：
 - I don't like it at all.（我一點也不喜歡。） → 放在受詞 it 後面、句尾。
 疑問句的句尾：
 - Do you understand at all?（你到底懂不懂？） → 放在動詞或句尾。
@@ -33,3 +33,11 @@ keywords: English, at all
 - 否定句＋at all ＝ 「完全不...」
 - 疑問句/條件句＋at all ＝ 「到底... / 哪怕是一點點...」
 
+## anymore(副詞)再也不
+```
+否定句（don't / can't / isn't...）... + anymore
+```
+- I don't think I like this sweater anymore.（我不再喜歡這件毛衣了／我現在不喜歡這件毛衣了）
+* I don't live there anymore.（我不再住在那裡了。 → 以前住，現在搬走了）
+* He doesn't work here anymore.（他不再這裡上班了。 → 以前在這裡，現在離職了）
+* This computer doesn't work anymore.（這台電腦壞了不能用了。 → 以前還能運作，現在不行了）

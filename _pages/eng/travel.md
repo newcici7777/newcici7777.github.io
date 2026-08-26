@@ -286,3 +286,10 @@ go 本身是「去」，但加上 on 之後（go on），常常用來表示「�
 ## on 進行中
 - on duty 值勤中
 - on sale 特價
+
+---------------------------
+## 環遊世界
+- I was sailing around the world.我當時正在環遊世界（乘船／航海）。
+  - 我當時正在航行（過去進行式，強調過去某個時刻正在進行的動作）
+- Fly around the world：搭飛機環遊世界。
+- Travel around the world.不限交通工具

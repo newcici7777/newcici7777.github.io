@@ -47,6 +47,40 @@ be 動詞（is, am, are, was, were）或連綴動詞（look, feel, become）來�
 - I am late.（我遲到了。）
 - This is a late train.（這是一班誤點／開很晚的火車。）
 
+### be late by + [時間長度]（遲到了多久）
+- The train is late by ten minutes.（火車誤點／遲到了十分鐘。）
+- I was late by half an hour.（我遲到了半小時。）
+
+## be late for 
+for 是一個非常關鍵的介系詞，用來連接「遲到」這個狀態與「場合」。  
+be late for 後面主要接的是「活動、會議、上學、上班、航班」等名詞。
+
+```
+be late for + [活動/事件/場合/地點]。
+```
+- I am late for school.（我上學遲到了。）
+- Don't be late for work.（上班不要遲到。）
+- He was late for the flight.（他趕不上班機／搭機遲到了。）
+
+工作與學業情境（最常見）
+
+- I am late for work because of the heavy traffic. （因為塞車，我上班遲到了。）
+- Don't be late for school tomorrow. （明天上學不要遲到。）
+- He was late for the important interview this morning. （他今天早上重要面試遲到了。）
+
+用來形容開會、約會或是看診等時間性行程遲到。
+- She is late for the meeting. （她開會遲到了。）
+- We were late for our appointment with the dentist. （我們跟牙醫的約診遲到了。）
+- If you are late for the flight, you won't be able to board. （如果你班機遲到，就無法登機了。）
+- He always gets late for dinner reservations. （他預約吃晚餐常常遲到。） (註：此處用 get 代替 be，指變得遲到)
+
+用來形容聚會、看電影、上課或運動等比較輕鬆的行程遲到。
+- I don't want to be late for the movie. （我不想看電影遲到。）
+- Are you going to be late for the party tonight? （你今晚派對會遲到嗎？）
+- She apologized for being late for the yoga class. （她為瑜珈課遲到而道歉。）
+
+
+
 ### late當副詞
 #### 在很晚的時候
 - Don't work too late.（不要工作到太晚。）

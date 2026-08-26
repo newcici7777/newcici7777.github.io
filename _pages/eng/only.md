@@ -1,7 +1,7 @@
 ---
-title: only
+title: only, just
 date: 2026-08-18
-keywords: english,only
+keywords: english,only, just
 ---
 ## only只有(限定詞) + 名詞
 量詞限定詞:交代數量，用來修飾名詞的多少
@@ -52,3 +52,26 @@ only 是個副詞（Adverb），用來限定範圍，意思是「只有、僅僅
 表示「只有、僅僅」的副詞 only，絕對不能放在冠詞（a / an / the）的後面。
 - Don't worry, it's only a quiz. 這只是一個測驗
 
+-------------------------------------------
+
+## just
+### just 剛剛
+放在 be 動詞後面、 動詞前面
+- what did you just eat?你剛剛吃什麼
+
+### just 只是
+- It’s just a game.（這只是個遊戲嘛)
+- He's just practicing his English.(他只是在練習他的英文啦。)
+- I have just ten dollars.（我身上剛好／只有十塊錢。）
+- I just want to look around.（我只是想看看。）
+
+### just 正是/確實
+- That's just what I need.（這正是我需要的。）
+
+### just vs only
+修飾數字／數量（此時兩者最常替換）：
+- I have only one question. = I have just one question.（我只有一個問題。）
+
+修飾動詞或請求：
+- I just want to look around.（我只是想看看。）
+- I only want to look around.（我只想看看。）

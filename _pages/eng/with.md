@@ -1,5 +1,5 @@
 ---
-title: with
+title: with, together, come with, accessories
 date: 2026-08-18
 keywords: English, with
 ---
@@ -63,7 +63,8 @@ I have a problem with + **讓你頭痛的人/事/物**
 - 車輛或產品（標準配備）：The new car comes with leather seats and a sunroof. （這輛新車配有皮質座椅和天窗。）
 - 抽象概念（伴隨而來的事物）：Being a manager comes with a lot of responsibilities. （擔任主管職位伴隨著許多責任。）
 
-
+## accessories 配件
+- Do you want any laptop accessories or not?
 
 ## some help(名詞) with 事情
 help 不是動詞，而是不可數名詞，意思是「幫助」或「援助」。
@@ -109,3 +110,35 @@ help me + to + 原形動詞
 - Do you have a room with an ocean view? （你們有海景房嗎？ → 帶有海景的房間）
 - I'd like a room with a private bathroom. （我想要一間有獨立衛浴的房間。）
 - Is there a room with a balcony available? （有帶陽台的房間可以訂嗎？）
+
+-----------------------
+## together(副詞)
+- They have been together for twenty years.他们在一起二十年了。
+- Are you two still together?（你們兩個還在交往嗎？）
+
+### together修飾動詞（放在動詞後面，表示「一起做某事」）
+- We worked together on the project.（我們一起合作這個專案。）
+- Let's sing together.（我們一起唱歌吧。）
+
+### 與with在一起，together放在句尾
+```
+[動作] ＋ [某人/某事] ＋ together
+```
+- I like baking together with my son. 
+- We cooked dinner together. （我們一起煮晚餐。）
+- She went to the park with her friends together. 
+  - 「together」在有 with 的時候經常被省略
+- We baked with each other together.（強調彼此陪伴且一同完成）
+
+### 在主詞後面
+ together 直接放在主語後面，用來強調「兩個人（或多個人）一同採取了某個行動」。
+```
+[主語] ＋ together ＋ [動詞]
+```
+- We together built this house. （我們共同建造了這棟房子。）
+- They together decided to move. （他們一同決定搬家。）
+
+### be + together 交往、在一起（指情侶或伴侶關係）
+- They have been together for 3 years.
+- Are they still together?（他們還在一起／還在交往嗎？）
+- We can finally be together!
