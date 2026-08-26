@@ -327,3 +327,87 @@ on，是因為它表達的是「接觸並覆蓋在表面」的物理位置！
 - The little sweater on the puppy is adorable. （那隻小狗身上穿的小毛衣超級可愛。）
 - The gold necklace on her neck matches her dress perfectly. （她脖子上戴的金項鍊跟洋裝超級搭。）
 - Whose sunglasses are those on the cat? （貓咪臉上戴的那副太陽眼鏡是誰的？）
+
+--------------------------------------------------------------
+
+這是一個觀察力非常敏銳的英文文法問題！
+
+簡單來說：**有沒有加 `side` 的差別，在於你是在講「相對位置（在哪個方位）」還是「具體的表面範圍（在哪一側／哪邊）」。**
+
+我們來詳細拆解這兩句的微妙差別：
+
+---
+
+### 1. `on the left of the park`（沒有 side）
+
+> **句意：** 「那間店在公園的**左邊**。」
+
+* **語感與用法：**
+這裡的 `left` 是當作**方位詞**使用（就像 north 北邊、east 東邊一樣）。
+* **畫面：** 以「公園」為基準點，商店位在它的左側方位。這種用法通常是用來描述**相對位置**或地圖上的方位。
+
+
+
+---
+
+### 2. `on the left side of the road`（有 side）
+
+> **句意：** 「道路的**左側**有一個警察。」
+
+* **語感與用法：**
+這裡的 `side`（邊、側）把「左邊」具象化成了一個「區塊、表面或車道範圍」。
+* **畫面：** 一條馬路切成左半邊跟右半邊，警察站在左半邊的這個「側邊／這一側」。
+* 當我們在講實體的道路、街道、建築物的牆面、或是物體的兩側時，加上 `side` 會讓空間感更明確、更有具體的「這一邊」的感覺。
+
+
+
+---
+
+### 💡 簡單的判斷口訣
+
+* **講大方向、相對位置（誰在誰的左邊）：** 通常直接用 **`on the left of...`** 就好。
+* **講實體道路、車道、或身體部位的兩側（在這一側／那一邊）：** 習慣加上 **`side`**（例如 *on the left side of the road*, *on the right side*）。
+
+不過在日常口語中，有時候邊界沒有分得那麼死，但加上 **`side`** 確實能讓「在哪一個側邊（Surface/Area）」的畫面感更強烈喔！
+
+
+為你整理 **10 個**包含 **`on the left side of`**（在……的左側）的實用例句。
+
+如同我們剛才討論的，加上 **`side`** 可以讓「實體表面、區塊、或具體範圍」的空間感更強烈。我們把它們分成「道路與交通」**、**「室內空間與物品擺設」**、以及**「身體部位」這 3 個最常見的情境：
+
+---
+
+### 類別一：道路與交通（街道、車道、建築物側邊）
+
+1. **Please drive on the left side of the road when visiting the UK.**
+（去英國玩時，請開在道路的左側。）
+2. **There is a cozy café on the left side of the street.**
+（在那條街的左側有一家溫馨的咖啡廳。）
+3. **Park your car on the left side of the driveway.**
+（把你的車停在車道的左側。）
+4. **The emergency exit is located on the left side of the building.**
+（緊急出口位於建築物的左側。）
+
+---
+
+### 類別二：室內空間與物品擺設（房間、桌子、畫面）
+
+5. **You will find the printer on the left side of the desk.**
+（你會在桌子的左側找到印表機。）
+6. **She placed a vase of flowers on the left side of the fireplace.**
+（她在壁爐的左側擺了一盆花。）
+7. **The icon you are looking for is on the left side of the screen.**
+（你正在找的圖示在螢幕的左側。）
+8. **Please keep your luggage on the left side of the room.**
+（請把你的行李放在房間的左側。）
+
+---
+
+### 類別三：身體部位（人體的左側）
+
+9. **He wears his watch on the left side of his body (his left wrist).**
+（他把錶戴在身體的左側／左手手腕上。）
+10. **I felt a sharp pain on the left side of my chest.**
+（我感覺到胸部左側有一陣刺痛。）
+
+---
