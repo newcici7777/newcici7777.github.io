@@ -12,9 +12,7 @@ keywords: for
 - Don't be late for school!（上學別遲到！ ➜ 學校是那個活動/目的地）
 - He is always late for meetings.（他開會總是遲到。）
 - I was late for my flight.（我搭飛機遲到了 / 我沒趕上飛機。）
-- Let's go out **for a walk**.（我們出去散個步吧。➜ 為了散步而出門）
-- Let's go out **for a drink**. （我們出去喝一杯吧。➜ 為了喝酒而出門 🍻）
-- Let's go out **for air**.（我們出去透透氣吧。）
+
 
 ## eat 早餐 午餐 晚餐
 - What do you want to eat launch? 

@@ -3,9 +3,6 @@ title: Take
 date: 2026-08-03
 keywords: Take
 ---
-
-
-
 ## 外帶
 問句
 - Do you want to eat dinner here or take it home?
@@ -175,20 +172,13 @@ take 轉變成了一個輔助性質的動詞，中文通常會翻譯成：「進
 - take a hard test（考一個很難的試）
 
 ## 考試
+take 的核心語感：「主動採取、執行、花力氣」
 - take a test
 - take an exam（參加考試）
+  - 花費腦力去「應付／應考」，所以用 take
+- take a tour（進行參觀）
+  - 參觀需要走動、花體力，所以用 take。
 
-take 的核心語感：「主動採取、執行、花力氣」
-
-考試需要正襟危坐、花費腦力去「應付／應考」，所以用 take（主動去接受這個挑戰）比用 have 來得更正式、更常見。
-
-take 帶有比較多「主動去做、執行一個任務、或需要付出精神/時間」的感覺。
-
-
-考試需要正襟危坐、花費腦力去「應付／應考」，所以用 take（主動去接受這個挑戰）比用 have 來得更正式、更常見。
-註：英式英文有時候會說 have an exam，但在美式英文或一般標準用法中，考試幾乎都用 take a test / take an exam。
-take a tour（進行參觀）
-參觀需要走動、花體力，所以用 take。
 
 ## 洗澡 take a bath /take a shower 
 - She needs a bath.她需要洗一個澡

@@ -96,3 +96,19 @@ an(一個) + other(另一個) = 有**an**代表是**可數名詞**，**an代表�
 |The other|代名詞|is(單數) |剩下一個|
 |The other**S**|代名詞|are(複數)|剩下的多數人|
 
+## another + 量詞 + of + 不可數名詞
+```
+another + 量詞 + of + 不可數名詞
+```
+**量詞**（計量單位），用來計算像巧克力這種沒有固定形狀、或是整塊分開的食物。
+
+**`another piece of chocolate`** 就是「另一塊巧克力 / 再一塊巧克力」。
+
+巧克力（chocolate）、水（water）、紙張（paper）這類名詞，在英文中被歸類為「不可數名詞」（Uncountable Nouns）。
+
+* 你不能直接說 *another chocolate*（文法上不對）。
+* 必須透過**量詞**（比如 *piece* 片/塊、*cup* 杯、*bottle* 瓶、*slice* 切片）來幫忙計算數量。
+
+* *Can I have **another cup of** coffee?*（我可以再喝**一杯**咖啡嗎？）
+* *Could I get **another slice of** pizza?*（我可以再拿**一片**披薩嗎？）
+* *He wants **another glass of** water.*（他想要再喝**一杯**水。）

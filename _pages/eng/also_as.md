@@ -31,6 +31,7 @@ too放在句子的最後面，前面(可加或不加)逗號
 [A] + [動詞] + as + [形容詞或副詞原級] + as + [B]
 ```
 - You walk as slow as my grandma.你走路跟我的阿嬤一樣慢。
+- Can you get up as early as your mom?
 - She speaks English as fluently as a native speaker.（她說英文跟母語者一樣流利 → fluently 是副詞）
 - He is as tall as his father.（他和他父親一樣高 → tall 是形容詞）
 - She is as pretty as her aunt. 她跟她阿姨一樣漂亮

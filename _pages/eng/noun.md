@@ -103,8 +103,18 @@ There are twelve bottles of waterin the fridge.(冰箱裡有 12 瓶水。)
 ## 多個名詞組合
 當一個名詞用來修飾另一個名詞時，通常會直接把修飾詞放在前面（形成「名詞 ＋ 名詞」的複合結構）。
 
+- table reservation 桌子的預訂 = 訂位
+  - table 放在前面當形容詞
+
+一個名詞拿來當作「形容詞」修飾另一個名詞時，前面的那個名詞**通常要用單數形**（即使我們可能有好幾張桌子要訂），所以要說 *table reservation*，而不是 table*s* reservation。
+
+* **hotel** room ➔ 飯店房間（*hotel* 是名詞修飾 *room*）
+* **coffee** cup ➔ 咖啡杯（*coffee* 是名詞修飾 *cup*）
+* **ticket** counter ➔ 售票櫃台（*ticket* 是名詞修飾 *counter*）
+
 - rock climbing
   - rock（岩石，名詞）在這裡扮演形容詞的角色，用來修飾後面的 climbing（攀爬），意思是「在岩石上的攀爬」（即攀岩）。
+
 
 類似的常見組合：
 - rock music（搖滾樂 —— 關於 rock 的音樂）

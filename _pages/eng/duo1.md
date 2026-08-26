@@ -224,40 +224,18 @@ build ，強調那個「堆疊、建造」的過程。
 - I like to read books in my free time.（我喜歡在我的空閒時間看書。）
 - What do you usually do in your free time?（你通常都在空閒時間做什麼？）
 
-## 其它疑惑
-I draw things that I think are interesting or beautiful.
+## end(動詞) 結束
+- Did the concert end late yesterday?昨天的演唱會很晚才結束嗎？
+- My love for you will never end.我對你的愛永無止境。
+  - will never end 永遠不會結束
+  
+## end(名詞) 盡頭、結尾
+* *at the **end** of the street*（在街道的**盡頭**）
+* *at the **end** of the movie*（在電影的**結局/結尾**）
 
-
--------------------------
-
-
-這是一個非常棒的句型觀察！你抓到的 **`follow + 人 + to + 目的地`** 是一個標準且非常實用的英文結構。
-
-我們來拆解這個文法的組合邏輯，以及它在生活中的實際應用：
-
----
-
-### 1. 核心文法結構拆解
-
-這個句型的公式其實非常單純：
-
-> **`主詞 + follow(s) + 某人 + to + 目的地`**
-
-* **`follow`（跟隨、跟著）：** 在這裡當作及物動詞，後面直接接受詞（也就是被跟的人或動物）。
-* **`to`（到……）：** 是一個介系詞，用來連接動態的方向，指明「一路跟著對方移動到了哪個終點」。
-
-所以回到你的句子：
-
-* *A cat followed me to my house.*
-（一隻貓跟著我，一直到我的房子／家門口。）
-* 畫面感非常強烈：貓咪一路尾隨著你，直到你們一起抵達目的地。
-
----
-
-### 2. 類似的實用句型
-
-這種「某人一路跟著某人到某個地方」的結構，在日常對話、故事或新聞中很常出現：
-
+## follow(動詞) + 人 + to + 目的地
+to : 一路跟著對方移動到了哪個終點
+- A cat followed me to my house.貓咪一路尾隨著你，直到你們一起抵達目的地。
 * *The stray dog **followed him to school**.*
 （那隻流浪狗一路跟著他到學校。）
 * *A suspicious man **followed her to her apartment**.*
@@ -265,8 +243,8 @@ I draw things that I think are interesting or beautiful.
 * *My little brother **followed me to the kitchen**.*
 （我弟弟一路跟著我進到廚房。）
 
----
 
-### 💡 溫馨小補充
+## 其它疑惑
+I draw things that I think are interesting or beautiful.
 
-從這句話也可以想像當時的畫面——一定是那隻貓咪太可愛了，才會一路跟著你回家！
+
