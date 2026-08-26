@@ -5,6 +5,65 @@ keywords: english, how far
 ---
 常用 far 來問距離（例如 How far is it?）
 
+## be far(形) from 地點
+far 在這裡是形容詞，意思是「遠的」
+```
+主詞 + be動詞 + (not) + far from + 地點
+```
+形容詞不能自己當動詞用，所以一定要搭配 be動詞（is / are / was / were） 一起出現。
+- ❌ It not far from the hotel.（錯誤，少了自己的動詞）
+- ✅ It is not far from the hotel.（正確）
+
+
+far from 是一個「形容詞片語」，專門用來表達「距離 遠」
+- It is not far from the hotel.（離飯店不遠。）
+- It is far from the station.（離車站有一段距離／挺遠的。）
+- It isn't far from here. It's very close. 這裡離那裡不遠 → 形容空間距離。
+
+表達離這裡很近（不用 far，改用 close to）：
+- It is close to the station.（離車站很近。）
+
+表達離這裡很遠：
+- The airport is far from here.（機場離這裡很遠。）
+
+問別人距離（結合疑問詞）：
+- How far is it from here to the beach?（從這裡到海灘有多遠？）
+
+## be far away from 
+```
+be far away from [某地]
+```
+away 的意思是「離開、距離某個地方一段空間」。
+
+當 far 和 away 結合成 far away 時，它把「距離感」拉得更長
+
+- The beach is far away from here.（海灘離這裡超級遠的）
+
+
+## far away 很遠的地方
+far away 單獨使用也非常常見，用來形容「很遠的地方」或「心不在焉」：
+形容遙遠的地方：
+I want to travel far away.（我想去很遠的地方旅行。）
+
+## away(離開，形容詞) 不在這裡、離去了、外出
+away 負責交代「人不在」的狀態，而 on business 負責說明原因（因為公事）
+
+- He is away from the hotel.（他從飯店離開了)
+- He is away. 他不在這裡 或 他出門了
+- He is away right now.（抱歉，他現在不在／出去囉。）
+- He is away on business. 他出差去了
+- He is away for the weekend.（沒有，他週末不在家／外出了。）
+- He is away on vacation.（他度假去了／他不在，因為去度假了。）
+- She is away on a business trip.（她出差去了。）
+
+## a little away from
+- It is **a little away** from the hotel.（它離飯店有一點距離／稍微有點遠。）
+
+## a bit far from
+- It is **a bit far** from the hotel.（它離飯店有點遠) 
+- ❌ It is a little far from hotel
+- It is a little **far away** from the hotel.（加上 away 會順暢很多！）
+
 ## away(遠 副詞)
 Away 是用來形容「有多遠」（副詞），
 放在「距離數字」後面，用來表示「距離某個起點有多遠的空間跨度」。
@@ -19,6 +78,7 @@ Two miles（兩英里）+ away（遠）兩英里遠
 
 - My home is ten minutes away.（我家在十分鐘車程外。）
 - The store is five blocks away.（那家店在五個街區外。）
+- It is **miles** away from the hotel.（它離飯店有幾哩遠／超級遠！）
 
 ### away from 基準點
 [地點 A] is + [距離數字] + miles/meters/minutes + away from + [地點 B]
@@ -41,6 +101,7 @@ Distance 是「距離」（名詞)，Away 是用來形容「有多遠」（副�
 
 - The distance (from here to the airport) is one kilometer.
 （從這裡到機場的距離是一公里。）
+- It is a short distance from the hotel.（它離飯店有一小段距離 —— 用名詞來表達。）
 
 ## away 離開
 單獨看 away 時，它有「離開、在遠處」的意思。
@@ -106,8 +167,7 @@ from 是一個「基準點」，跟cross from(基準點)的意思是一樣，不
 - How long does it take to get to the airport? （去機場要花多久時間？）
 
 
-## far from 距離
-- It isn't far from here. It's very close. 這裡離那裡不遠 → 形容空間距離。
+
 
 ## far from 時間
 far 也可以用來形容時間很遠（通常用在疑問句或否定句）。

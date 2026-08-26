@@ -46,6 +46,13 @@ all（全部 / 大家）
 - 4. My friends were all waiting for me at the station.（我的朋友們當時全部在車站等我。）
 - 5. The lights are all turned off.（燈全部都關掉了。）
 
+## All + 數字 + 名詞
+「某個具體數字的全部」時，all 通常會放在數字或冠詞的前面。  
+all 的意思是「全部、都」，收到的報告不是其中一兩份，而是每一份都收到了。  
+- I got all three reports.我收到了全部的三份報告
+- all three reports（全部這三份報告）
+- all five fingers（全部五隻手指頭）
+- all the books（全部這些書）
 
 ## All放在代名詞後面
 當受詞是代名詞（像是 it、them）時，像是 all、both 這種表示「全部／兩者」的詞，絕對不能放在代名詞前面，要放在代名詞後面。

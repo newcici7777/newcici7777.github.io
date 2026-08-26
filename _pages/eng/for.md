@@ -140,6 +140,11 @@ for 扮演了「配置、對應」的角色，用來告訴對方這項服務（�
 - I'd like to make a reservation for two at 7 PM. 嗨，我想預約今晚 7 點兩位。
 - Hi, a table for two, please. Do you have a window seat?（嗨，我們要雙人桌。請問有靠窗的位子嗎？）
 
+### 訂房
+預計要佔用、租用或停留多久的時間
+- I need a room for two night**s**.（我需要一間房，住兩個晚上。）
+- I want to rent this car for a week.（我想租這輛車一個禮拜。
+
 ### 預約時間
 - Can I make an appointment for nine? (我可以預約在九點嗎？)
 - Book a room for tonight.（預訂今晚的房間。）

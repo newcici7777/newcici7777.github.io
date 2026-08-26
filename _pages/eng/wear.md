@@ -3,6 +3,7 @@ title: in/wear/with 化妝/香水/衣服/帽子/鞋子/手錶/耳環
 date: 2026-08-20
 keywords: English, wear, in
 ---
+wear 不僅僅是「穿（衣服）」的動作，它同時也用來指「身上穿戴著（狀態）」
 
 ## in + 顏色/襯衫/西裝/T-shirt 「身處在...裡面」
 當我們要表達「某人穿著某種顏色或某件衣服」時，英文很喜歡用介系詞 in。
@@ -28,6 +29,15 @@ keywords: English, wear, in
 - She was wearing a fake watch. 她戴了一支假錶。
 - Do you know the man wearing a black jacket?（你認識那個穿著黑色夾克的男人嗎？）
 - Students are required to wear uniforms. 學生被要求穿制服。  
+
+## wear + 顏色 (穿什麼顏色的衣服)
+- wear red = 穿紅色（衣服）
+- wear black = 穿黑色（衣服）
+- wear a suit = 穿西裝
+
+例句:
+- Do you wear red on Chinese New Year.
+- What color are you going to wear tomorrow?（你明天打算穿什麼顏色？）
 
 ## wear makeup 化妝
 

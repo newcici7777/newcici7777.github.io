@@ -199,8 +199,20 @@ fall off + 掉落的地方
 ## call
 - we can call and order a pizza!
 
-## return from
-- Lucy returns from the bathroom.
+## return to 回去某地
+return = 返回、回來  
+
+to + 目的地
+
+- We'll return to Chicago. 我們將會回到芝加哥
+  - to Chicago = 到芝加哥
+
+
+## return from 從某地回來
+- Lucy returns from the bathroom.露西從洗手間回來了。
+  - from the bathroom = 從洗手間
+- I am back from Tokyo. 
+  - return from與 be fack from 意思一樣。
 
 ## return 退貨
 return 的詞性是及物動詞（Transitive Verb）。

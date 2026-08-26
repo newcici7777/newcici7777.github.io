@@ -5,6 +5,20 @@ keywords: have
 ---
 have 的核心語感：「體驗、享受、容納」
 
+## 訂房
+have 的意思是「取得、擁有、入住」
+- Could I have a room on the top floor?我可以訂（或安排）一間頂樓的房間嗎？
+- Could I have a room on a higher floor?（我能住高一點樓層的房間嗎？）
+
+要求安靜的房間：
+- Could I have a quiet room?（我能要一間安靜的房間嗎？）
+
+要求雙人床：
+- Could I have a room with a double bed?（我能要一間有雙人床的房間嗎？）
+
+## 訂機票
+- Can I have a ticket to London.我可以買一張去倫敦的機票嗎？
+
 ## 吃
 - We can have dinner.    
 - Are you having dinner? 你在吃晚餐嗎？
@@ -83,7 +97,9 @@ she'll have a baby next May.
 - Would you have some tea?（你要不要喝杯茶/來杯茶？——帶有「拿杯茶給你」的意思）
 
 ## 付帳單
-have the check
+- have the check
+- have the bill
+
 - Can I have the check, please?
 
 ## 拿/給某人某物 have... for... 

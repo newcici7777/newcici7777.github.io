@@ -97,3 +97,9 @@ borrow + 東西 + from + 某人
 ```
 - Can I borrow your pen?（我能向你借你的筆嗎
 - She borrowed a book from the library.（她從圖書館借了一本書。）
+
+
+## offer + 人（受詞1） + 東西（受詞2）
+- We can offer you a different room.
+- We can offer a different room to you. 
+

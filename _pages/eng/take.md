@@ -3,6 +3,9 @@ title: Take
 date: 2026-08-03
 keywords: Take
 ---
+
+
+
 ## 外帶
 問句
 - Do you want to eat dinner here or take it home?
@@ -71,6 +74,10 @@ Take 人 to 某地
 - You can't take this elevator now.你現在不能搭這部電梯。
 - You shouldn't take the elevator during a fire.（火災時你不應該搭電梯。）
 
+## take + 電梯 + to + 第幾樓 (搭電梯到幾樓)
+- Take the elevator to [樓層]
+  - Take the elevator to the fourth floor.  （搭電梯到四樓。）
+
 ## take + 電梯 + up to + 第幾樓 (搭電梯到幾樓)
 - Take the elevator up to [樓層]
   - Take the elevator up to the fourth floor.  （搭電梯到四樓。）
@@ -91,8 +98,16 @@ Take 人 to 某地
 
 
 ## 拍照
+用相機或手機捕捉畫面時，你是在「把影像從現實世界中『取』下來、捕捉下來」
+
 - Take a picture / photo（拍照）
 - They took lots of photos in Cambridge.他们在剑桥拍了许多照片。
+
+## 錄影
+- Dad likes to take videos. 
+
+## 截圖
+- take a screenshot（截圖）
 
 
 ## Take佔位
@@ -141,6 +156,7 @@ take 後面接單數可數名詞時，習慣上需要加上不定冠詞 a。
   - I need to take a walk to clear my head.（我需要去散個步來清醒一下。）
 - go for a walk（去散步）
   - Let's go for a walk in the park.（我們去公園散步吧！）
+- Let’s go **out** for a walk.我們出去散步吧。
 
 
 ## 看一下

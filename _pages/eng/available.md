@@ -3,9 +3,42 @@ title: available, in her free time
 date: 2026-08-23
 keywords: english, available, in her free time
 ---
-## in her free time
-- I like to read books in my free time.（我喜歡在我的空閒時間看書。）
-- What do you usually do in your free time?（你通常都在空閒時間做什麼？）
+
+## 有空房的、可用的(沒被佔用)、買得到的
+房間都被訂光了，它們就是 not available（沒有空房 / 已滿）。
+
+如果還有剩、隨時可以給客人住，它們就是 available（有空房 / 可預訂）。
+
+## available + 名詞
+- We need to check the available rooms.（我們需要檢查可用的房間。）
+- Do you have any available dates?（你們有任何可以預約的日期嗎？）
+- This is the only available ticket.（這是唯一買得到的票了。）
+
+
+## 名詞 + available
+- rooms available
+飯店、餐廳、客服等服務業，喜歡把 available 放到名詞後面。
+
+想問某個東西「現在還有沒有、能不能用／買到」
+
+能不能使用
+- Is there a table available?（有桌子是空的嗎？）
+
+有空房嗎？
+- Do you still have rooms available? 你們現在還有空房嗎？
+- Do you have any rooms available?（你們有任何房間是空的／可訂的嗎？）
+
+座位有沒有滿：
+- Are there any seats available?（還有座位嗎？）
+
+票有沒有賣完：
+- Are tickets still available?（還有票嗎？）
+- Are there any tickets available?（還有任何票是買得到的嗎？）
+
+人現在有沒有空：
+- Are you available tomorrow afternoon?（你明天下午有空嗎？）
+
+
 
 ## available 介紹
 某個東西或服務是 available 的時候，代表：
@@ -64,3 +97,55 @@ Is this bag available in brown leather? （這款包包有棕色皮革的嗎？�
 - Is the new iPhone available in 256GB? （新款 iPhone 有 256GB 的容量嗎？）
 - Are these headphones available in wireless? （這款耳機有無線版本的嗎？）
 
+--------------------------------------
+**`slot`** 是一個在英文日常和職場中**超級無敵常用**的好用單字！
+
+如果用最直覺的畫面來解釋，`slot` 原本的意思是「狹長的孔洞（例如投幣孔、郵筒口）」**。但在現代英文中，它被高度引申為：**「一個固定排好的時間空檔、名額、或時段」。
+
+---
+
+### 1. 什麼是 `slot`？
+
+當我們在講時間、行程或預約時，`slot` 指的就是「行程表上空出來的那一個小格子／時段」。
+
+* **比喻：** 想像有一張行事曆，上面每一小時畫一個格子。其中一個格子是空的，可以讓你預約，那個格子就叫做 **`time slot`**（時間空檔）。
+
+---
+
+### 2. 拆解你提到的句子：`某一個 slot available`
+
+這通常會組成完整的句子（最常出現在預約系統、客服對話或跟健身房、醫生約時間的時候）：
+
+> **`Is any time slot available?`**
+> （還有任何可預約的時間空檔嗎？）
+> **`We have a slot available at 3 PM.`**
+> （我們在下午三點有一個空檔／名額。）
+
+* **`available`** 的意思是「有空的、可使用的」。
+* 所以 **`a slot available`** 就是指「一個可以被預約的空檔」。
+
+---
+
+### 3. 生活中常見的 `slot` 實用情境
+
+除了時間空檔，它也常出現在以下幾種地方：
+
+1. **預約時段（Time slot）：**
+* *Please select a delivery **slot**.*（請選擇一個送貨時段。）
+* *There are no available **slots** left for today.*（今天已經沒有可以預約的空檔了。）
+
+
+2. **遊戲或電腦的名額、欄位（Slot）：**
+* *Do you have any inventory **slots** left?*（你背包還有道具欄位嗎？）
+* *Put the coin in the **slot**.*（把硬幣投進投幣孔裡。）
+
+
+
+---
+
+### 💡 總結 `slot` 與我們剛才學的 `session` 的差別：
+
+* **`Session`** 是指「整個活動、服務進行的過程／那堂課本身」（例如：一堂 60 分鐘的健身訓練）。
+* **`Slot`** 是指行事曆上「那個可以被安排的空檔時間」（例如：下午 3:00 到 4:00 這個空位）。
+
+所以你可以這樣組合：「教練今天有一個空的 **slot**（時段），可以幫你上一個 **session**（課程）」！

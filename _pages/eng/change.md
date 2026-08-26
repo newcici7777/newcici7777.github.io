@@ -4,7 +4,15 @@ date: 2026-08-17
 keywords: English, change
 ---
 ## change(動) plane**s** in 地點 (轉機)
+change planes 幾乎總是習慣用複數形 planes！  
+因為在搭飛機轉機的過程中，你通常會搭到至少兩架不同的飛機
+
 - Did Tom change plane**s** in Boston? ?湯姆是在波士頓轉機嗎？
+- We had to change planes in Boston. 
+
+### change a plane（單數）
+通常是指你原本坐在某一架飛機上，但因為這架飛機故障、漏油或臨時調度，全機的人被要求「換到另外那一架特定的飛機上」。
+
 
 ### Transfer（動詞：轉乘、轉機）
 - Did Tom transfer in Boston?（湯姆是在波士頓轉機嗎？）

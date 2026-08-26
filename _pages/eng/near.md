@@ -41,6 +41,25 @@ in Taiwan.
 - Do we have milk in the refrigerator?
 - The food is in the refrigerator.
 
+## 動詞 + into
+into 強烈帶有「方向性」和「動態過程」。
+
+into = 從外面往裡面移動（動態）。
+- Put the money into the red envelope.
+  - 錢原本在外面（手上或桌上），然後你移動它，把它「放進」紅包袋的這個動作過程裡。
+
+- Put the money in the red envelope.
+  - in 比較像是描述結果（讓錢處於「在紅包裡」的狀態）
+
+用 into（強調動態、放進去）：
+- Put the letter into the envelope.（把信放進信封裡。）
+- Jump into the pool.（跳進游泳池裡——人從外面跳進去。）
+
+用 in（強調靜止、已經在裡面）：
+- The money is in the red envelope.（錢在紅包袋裡——已經在裡面了，是狀態。
+
+
+
 ## on the street/ on the first floor
 - There's a coffee shop on this street. 在这条街上有一个咖啡店。
 - Ary you on the third floor or the first floor?你在三层还是一层？
@@ -101,7 +120,7 @@ street?
 
 ## inside
 咖啡店在楼的里面，不在外面。  
-The coffee shop is inside the building, not
+- The coffee shop is inside the building, not
 outside. 
 
 ## outside 外面

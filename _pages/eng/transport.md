@@ -338,9 +338,14 @@ by plane它通常作為副詞，補充說明你選擇了什麼樣的交通方式
 - Can we take a flight to the UK?
 - Can we take a plane to the UK?
 
+## a long flight 漫長的飛行
+- That was a long flight! 那真是一趟漫長的飛行（班機）啊！
+  - a long 的出現是因為 flight（飛行／航程） 是一個可數名詞！
+
 ## It is 數字 + 時間單位 (搭多久飛機)
 描述「時間的長度」時，主詞習慣用 It。
 - I had a long flight. It was 15 hours! 
+
 
 ## is arriving 即將抵達
 - My flight to London is arriving tonight.「今晚抵達倫敦的」飛機，而不是「正在抵達」，抵達時間在今晚

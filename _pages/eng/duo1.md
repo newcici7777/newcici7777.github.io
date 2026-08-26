@@ -220,6 +220,9 @@ build ，強調那個「堆疊、建造」的過程。
 - build a campfire（生營火／疊木材起營火）
 - build a sandcastle（堆沙堡——同樣是一層層疊起來的）
 
+## in her free time
+- I like to read books in my free time.（我喜歡在我的空閒時間看書。）
+- What do you usually do in your free time?（你通常都在空閒時間做什麼？）
 
 ## 其它疑惑
 I draw things that I think are interesting or beautiful.

@@ -3,6 +3,18 @@ title: travel tour trip ticket fly
 date: 2026-07-31
 keywords: English, travel, ticket, fly, tour, trip
 ---
+## 冠詞
+單數的可數名詞（像是 flight、day、trip、movie），前面就一定要加上冠詞（如 a 或 the）。
+因為這是一次性的、單數的飛行，所以前面必須用 a 來帶出這個名詞。
+
+形容過程很漫長：
+- That was a long flight! 那真是一趟漫長的飛行（班機）啊！
+  - a long 的出現是因為 flight（飛行／航程） 是一個可數名詞！
+
+形容旅程很棒：
+- That was a great trip!（那真是一趟棒極了的旅行！）
+
+
 ## 有移動特性的「名詞」+ to 地點
 跟移動、前往有關的名詞，後面會加上 to 地點
 ```
