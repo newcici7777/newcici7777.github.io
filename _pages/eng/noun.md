@@ -44,6 +44,8 @@ keywords: countable , uncountable
 ## 不可數當作可數
 - I would like three beers.我想要三瓶啤酒。
 - five pizzas.五个比萨
+- These fruit**s** aren't fresh!They're very old! 這些水果放很久了（過期了)
+
 
 ## 不可數名詞 + 容器單位
 前面的數字超過 1，這個單位名詞就一定要變成複數形，也就是在後面加上 -s。

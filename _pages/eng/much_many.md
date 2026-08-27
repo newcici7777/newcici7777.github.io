@@ -32,8 +32,20 @@ keywords: english, much,many
 - Don't put too much butter on my bread.不要在我的麵包上放太多奶油。
 
 ## 多少錢How much + be動詞
+```
+How much be 東西 ?
+```
 - How much is a cup of coffee with milk?一杯加奶咖啡多少錢？
 - How much are these cups of coffee?（這些杯咖啡多少錢？ ➔ 主詞是 these cups 複數）
+
+
+## (多少錢) How much does 東西 cost
+```
+How much does 東西 cost ?
+```
+- How much does **a cup of coffee** here cost?（這裡［一杯咖啡］要多少錢？）
+- How much does **the buffet** cost?（這家［自助餐］一個人要多少錢？）
+- How much does a meal at this restaurant cost?（這家餐廳［吃一頓飯］大概要花多少錢？）
 - How much did it cost?（它花了多少錢？）
 
 ## How much 主詞 + 動詞 「表達程度、有多...」

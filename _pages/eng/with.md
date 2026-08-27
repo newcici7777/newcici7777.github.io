@@ -63,8 +63,7 @@ I have a problem with + **讓你頭痛的人/事/物**
 - 車輛或產品（標準配備）：The new car comes with leather seats and a sunroof. （這輛新車配有皮質座椅和天窗。）
 - 抽象概念（伴隨而來的事物）：Being a manager comes with a lot of responsibilities. （擔任主管職位伴隨著許多責任。）
 
-## accessories 配件
-- Do you want any laptop accessories or not?
+
 
 ## some help(名詞) with 事情
 help 不是動詞，而是不可數名詞，意思是「幫助」或「援助」。
@@ -143,134 +142,41 @@ help me + to + 原形動詞
 - Are they still together?（他們還在一起／還在交往嗎？）
 - We can finally be together!
 
+
+## accessories 配件
+- Do you want any laptop accessories or not?
+
 --------------------------------
-
-- That kick is terrible
-
-在這句話中，**`with`** 是一個非常關鍵的介系詞，意思是「用……（某個工具、身體部位或方式）」。
-
-我們來拆解這個用法：
-
----
-
-### 1. `with` 的這個用法是什麼？
-
-當我們要表達「使用某個具體的身體部位或工具來做一個動作」時，英文固定會使用 **`with`** 這個介系詞。
+## 動作 + with + 身體部位
+「用身體的某個部位去完成一個動作」，會使用 **`with`** 這個介系詞。
 
 * *I kick the ball **with my right foot**.*（我**用**我的右腳踢球。）
-* *I write **with a pen**.*（我**用**筆寫字。）
 * *She hears **with her ears**.*（她**用**耳朵聽。）
-
-### 2. 為什麼不用其他字？
-
-你可能會好奇，為什麼不是用 *by* 或 *use* 呢？
-
-* 如果用中文直譯「用……」，很容易混淆。但在英文文法中：
-* **`with`** 專門用來接「具體的工具、身體器官或部位」。
-* 如果你想用動詞 *use*，句子結構就要改一下，例如：*I **use** my right foot to kick the ball.*（我使用我的右腳來踢球）。但直接用 `with my right foot` 簡潔又道地！
-
-
-
-所以，這裡的 **`with`** 就是在交代那個動作（kick）是**靠哪一個身體部位**完成的喔！
----------------------
-
-
-用 **`with`** 來搭配身體部位做動作，在英文裡超級常見！只要你想表達「用身體的某個部位去完成一個動作」，基本上都是用 **`with`**。
-
-為你整理幾個日常生活中最常聽到、畫面感最強的實用範例：
-
----
-
-### 🌟 「用身體部位做動作」的常見實用句型
-
-| 身體部位與搭配動詞 | 英文例句 | 中文意思 |
-| --- | --- | --- |
-| **Eyes**（眼睛）<br>
-
-<br>👀 *see / look* | *I see **with my eyes**.* | 我**用眼睛**看。 |
-| **Ears**（耳朵）<br>
-
-<br>👂 *hear / listen* | *Listen **with your ears**, not just your mouth.* | **用耳朵**聽，別只用嘴巴講。 |
-| **Hands**（手）<br>
-
-<br>✋ *hold / touch / write* | *She touched it **with her hands**.* | 她**用手**摸了它。 |
-| **Mouth**（嘴巴）<br>
-
-<br>👄 *speak / eat* | *We eat **with our mouths**.* | 我們**用嘴巴**吃東西。 |
-| **Nose**（鼻子）<br>
-
-<br>👃 *smell* | *I can smell cookies **with my nose**.* | 我**用鼻子**聞到餅乾的味道。 |
-| **Teeth**（牙齒）<br>
-
-<br>🦷 *bite / chew* | *The dog bit the toy **with its teeth**.* | 那隻狗**用牙齒**咬那個玩具。 |
-
----
-
-### 💡 小口訣
-
-只要抓住這個核心邏輯：
-
-> **動作（Action） + `with` + 你的身體部位（Body part）**
-
-例如：
-
 * *Point **with your finger***（**用手指**指）
 * *Wave **with your hand***（**用手**揮揮）
 
-下次講到用身體哪裡去做事時，直接把 **`with`** 請出來就對啦！
+* 使用use: *I **use** my right foot to kick the ball.*（我使用我的右腳來踢球）
 
 
-
-------------------------------
-哈哈，你的直覺很敏銳！如果從「什麼東西附贈在什麼東西旁邊」的直觀邏輯來看，好像確實是「點午餐，附贈免費熱可可」比較直覺。
-
-不過，英文原句 **`offers free hot chocolate with lunch`** 其實**完全沒有寫反，而且是非常標準、道地的商用英文寫法！**
-
-我們來看看為什麼英文會這樣寫：
-
----
-
-### 1. 英文的焦點邏輯：把「好康（贈品）」放在前面
-
-在英文的宣傳或菜單設計中，句子的核心通常是「店家現在大放送、送你什麼好康」。
-
-* **主詞**：這家餐廳（This restaurant）
-* **動詞**：提供（offers）
-* **核心亮點（主角）**：免費熱可可（free hot chocolate）
-* **附帶條件**：搭配午餐（with lunch）
-
-所以，整句話的語感其實是：**「這家餐廳推出『免費熱可可』，（只要你點）午餐就附贈喔！」**
-這種寫法能第一眼就抓住客人的目光（看到 "free hot chocolate" 就被吸引了）。
+| 身體部位與搭配動詞 | 英文例句 | 中文意思 |
+| --- | --- | --- |
+| **Eyes**（眼睛）<br><br>👀 *see / look* | *I see **with my eyes**.* | 我**用眼睛**看。 |
+| **Ears**（耳朵）<br><br>👂 *hear / listen* | *Listen **with your ears**, not just your mouth.* | **用耳朵**聽，別只用嘴巴講。 |
+| **Hands**（手）<br><br>✋ *hold / touch / write* | *She touched it **with her hands**.* | 她**用手**摸了它。 |
+| **Mouth**（嘴巴）<br><br>👄 *speak / eat* | *We eat **with our mouths**.* | 我們**用嘴巴**吃東西。 |
+| **Nose**（鼻子）<br><br>👃 *smell* | *I can smell cookies **with my nose**.* | 我**用鼻子**聞到餅乾的味道。 |
+| **Teeth**（牙齒）<br><br>🦷 *bite / chew* | *The dog bit the toy **with its teeth**.* | 那隻狗**用牙齒**咬那個玩具。 |
 
 ---
 
-### 2. 如果改成 `lunch with free chocolate` 呢？
+## offers [贈品] with [主要的]
 
-如果你把順序倒過來，寫成：
+贈品寫前面，強調「免費贈品」的行銷手法
+- This restaurant offers free hot chocolate with lunch.（這家餐廳提供點午餐送免費熱可可。）
+  - free hot chocolate ，吸引客人目光
 
-* *"Lunch with free hot chocolate"*
-
-這在文法上完全正確，但它**不是一個完整的句子（缺少動詞）**。它比較常出現在：
-
-* **菜單上的標題**：像是套餐組合名稱（例如：「午餐附免費熱可可特餐」）。
-* **廣告傳單的標語**：精簡的短標語。
-
-但如果你今天要寫成一個完整的句子（包含主詞和動詞），就必須用 **`offers [贈品] with [主餐]`** 的結構。
-
----
-
-### 💡 簡單的小對比
-
-* 完整句子（動詞開展）：
-* 🟢 *This restaurant **offers free hot chocolate with lunch**.*（這家餐廳提供點午餐送免費熱可可。）
-
-
-* 短標語 / 菜單項目（名詞短語）：
-* 🟢 *Lunch **with free hot chocolate***（附帶免費熱可可的午餐）
-
-
-
-所以原句的寫法是為了強調「免費贈品」的行銷手法，文法非常道地喔！
+順序倒過來，寫成：
+* *Lunch **with free hot chocolate***（附帶免費熱可可的午餐）
 
 -----------------
 

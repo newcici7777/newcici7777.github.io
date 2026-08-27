@@ -125,12 +125,7 @@ A menu（菜單）完全可以直接這樣單獨使用！
 - I already have a menu for you.我已經為你們準備好一份菜單了。（或者，我這就拿一份菜單給你們。）
 * I want to ask for a menu.（我想索取一份菜單。）
 
-## meal
-- Set meal（套餐）
-  - Today's set meal includes soup, a main course, and coffee.（今天的套餐包含湯、主餐和咖啡。）
-- Special（特餐）
-  - Today's special（今日特餐）
-  - I'll have the lunch special, please.（我要一份午餐特餐。）
+
 
 
 ## wash my hair(洗頭) dry my hair(吹頭)

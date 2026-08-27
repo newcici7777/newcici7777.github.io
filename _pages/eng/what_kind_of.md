@@ -97,10 +97,10 @@ kind 前面可以加形容詞！
   - Many kind**s** of candy.（多種糖果）
   -  Several kind**s** of fruit. 幾種
 
-- One kind of...（一種... → 單數）
-- A few kind**s** of...（幾種... → 複數）
-- Several kind**s** of...（好幾種... → 複數）
-- Many kind**s** of / Different kind**s** of...（許多種／不同種類的... → 複數）
+- One kind of（一種 → 單數）
+- A few kind**s** of（幾種 → 複數）
+- Several kind**s** of（好幾種 → 複數）
+- Many kind**s** of / Different kind**s** of（許多種／不同種類的... → 複數）
 
 - 單數(kind)
   - What kind of music do you like?（你喜歡哪一種音樂？ → 預設問單一種類）
