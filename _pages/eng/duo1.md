@@ -3,12 +3,6 @@ title: duolingo
 date: 2026-06-22
 keywords: English, duolingo
 ---
-## 衣服
-cloth/kloθ/ 布料     
-clothes/kloʊðz/ 衣服 不可數名詞  
-
-- I wash my clothes on Monday, but grandma washes her clothes on Tuesday.  
-- We saw an ad for this clothes store.我们看到了一个这个服装店的广告。
 
 ## on 球隊
 谁是在这个队里最快的运动员？  
@@ -103,29 +97,7 @@ river（河流） 加 s 變成 rivers，通常是最直觀的「複數名詞」�
 - rivers（河流們）
 - lakes（湖泊們）
 
-## good(形容詞) at / bad at 擅長/不擅長
-```
-[主語] ＋ [be 動詞] ＋ good at  ＋ [名詞 或 動名詞(-ing)]
-```
-- Is she good at Spanish? 她擅長西班牙語
-- He is bad at math.（他數學不好—— math 是名詞）
-- I am good at cooking.（我很擅長料理—— cooking 是動名詞）
--  I'm really bad at baking.我烘焙真的很差
 
-表示「在某個領域、某項技能上表現得如何」時，習慣使用介系詞 at 來定位方向或範圍。  
-類似的「形容詞 ＋ at」用法還有：
-- clever at...（聰明於...）
-- poor at...（不擅長於...）
-- skilled at...（熟練於...）
-
-
-## good(形容詞) for 對...有益／有好處
-- Is playing soccer every day good for you?每天踢足球對你有好處嗎？
-- Eating vegetables is good for you.（吃蔬菜對你有好處。）
-- Reading is good for children.（閱讀對孩子們有好處。）
-- Sunlight is good for plants.（陽光對植物有好處。）
-- Regular exercise is good for your heart.（規律運動對你的心臟有好處。）
-- Rest is good for dogs.（休息對狗狗有好處。）
 
 
 ## `go out` vs `go outside` vs `come with me` vs `went out停電`

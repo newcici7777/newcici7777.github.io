@@ -196,6 +196,8 @@ discuss + [某事] + with + [某人]
 - Can we discuss **this** with him tomorrow?（我們明天可以跟他討論這件事嗎？）
 - She is discussing **the details** with the client.（她正在跟客戶討論細節。）
 
+-------------------------------
+
 
 
 ## start a new business 創業

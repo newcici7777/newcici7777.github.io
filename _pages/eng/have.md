@@ -18,6 +18,7 @@ have 的意思是「取得、擁有、入住」
 
 ## 訂機票
 - Can I have a ticket to London.我可以買一張去倫敦的機票嗎？
+- Can I have a ticket? 買機票
 
 ## 吃
 - We can have dinner.    
@@ -28,8 +29,7 @@ have 的意思是「取得、擁有、入住」
 
 ## 喝
 - Do you want to have coffee with us?
-- have drinks. (去喝一杯 / 喝酒)單數複數意思一樣
-- have a drink （喝一杯 / 喝酒）
+
 - have tea （喝茶）
 - have a coffee（喝咖啡）
 ## 比賽
@@ -45,27 +45,31 @@ have 吃和活動或聚會搭配時，它代表的是「進行、享受、舉辦
   - 句尾的 barbecues 變成了複數形，泛指習慣或經常性活動
 - I had a barbecue with Ben yesterday. 我們上週末辦了一場很棒的烤肉。
 
+## have 行為名詞（進行一個動作)
+have 是一個功能非常強大的「萬用動詞」。當它後面接某些名詞（特別是活動、對話、會議等）時，它代表的是「進行（某個動作或互動）」，而不是「擁有」。
 
+英文習慣把許多「動作」包裝成「名詞」（如 a chat, a look），然後用 have 來「進行」這個動作。
 
-## have 活動
-在英文中，have 是一個功能非常強大的「萬用動詞」。當它後面接某些名詞（特別是活動、對話、會議等）時，它代表的是「進行（某個動作或互動）」，而不是「擁有」。
+- have a discussion（進行討論）
+- have a chat（聊聊天、輕鬆談話)
+- have a look（看一下）
+- have a conversation = 進行對話 / 聊天
+- have a discussion = 進行討論
+- Have a try.（試試看 擁有一次嘗試的機會）
+- have a rest 
+- have a break（休息一下）
 
-英文習慣把許多動作包裝成名詞（如 conversation），然後用 have 來帶動這個動作。
-
+## have 舉辦
 參加、進行某項活動或課程:
 ```
 [主語] ＋ have / has ＋ [活動／課程]
 ```
-- have a conversation = 進行對話 / 聊天
 - have a meeting = 開會
-- have a discussion = 進行討論
-- have a chat = 聊個天
 - Let's have a party
 - have a party.  
 - have a picnic.野餐  
-- have a discussion（進行討論）
-- have a chat（聊聊天、輕鬆談話)
 
+例句
 - We won't have a meeting tomorrow morning.(我們明天早上不會開會 )  
 - What time do you want to have your party?
 - Our company is having a meeting right now.我们的公司现在正在开会。
@@ -87,8 +91,6 @@ have 吃和活動或聚會搭配時，它代表的是「進行、享受、舉辦
 她明年五月会生一个宝宝。  
 she'll have a baby next May.  
 
-## 買東西
-- Can I have a ticket? 買機票
 
 ## have 點餐/拿某樣東西
 - I'll have a cup of coffee, please.（我要一杯咖啡。——字面意思是「我會『拿/點』一杯咖啡」）
@@ -97,9 +99,14 @@ she'll have a baby next May.
 - Would you have some tea?（你要不要喝杯茶/來杯茶？——帶有「拿杯茶給你」的意思）
 
 ## 付帳單
+後面的名詞是雙方都知道的特定事物、或是生活中唯一的設備／媒介時，就會使用定冠詞 the。
+```
+have + 東西（取得/拿/點某物）
+```
+- have the bill（拿帳單/結帳）
 - have the check
-- have the bill
 
+例句:
 - Can I have the check, please?
 
 ## 拿/給某人某物 have... for... 
@@ -110,13 +117,8 @@ she'll have a baby next May.
 ## have a ...
 當用 have 來搭配動作名詞時，通常帶有「去經歷、去體驗、或從中得到某種感受」的味道。
 
-- have a look（看一看）
-  - 這裡的 have 就像是「讓我擁有／經歷一下這個看的手勢」。它跟 take a look 的意思幾乎一模一樣，都可以互換。
-- have a rest / have a break（休息一下）
-  - 這裡用 have 特別自然，因為「休息」是一種享受、把時間留給自己的體驗。
 - have a good time（玩得開心）體驗歡樂時光。
 - Have a seat.（請坐 擁有一個座位的狀態）
-- Have a try.（試試看 擁有一次嘗試的機會）
 
 ## have 拿到錯的東西、錯過某物
 - They have the wrong bags.他們（手上／身邊）拿錯了行李（呈現一個「持有錯誤物品」的狀態）。

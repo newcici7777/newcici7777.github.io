@@ -73,8 +73,7 @@ What形容詞 + 不可數名詞time
   - 前面的動作 come home
   - 代入公式: 直到**February eleventh**，我的法文課**begin**
 
-## at the same time 同一時間
-- Does Tom eat dinner at the same time every day?
+
 
 ## at the end of
 - Our kids will start school at the end of August.(我们的孩子们会在八月底开学。)

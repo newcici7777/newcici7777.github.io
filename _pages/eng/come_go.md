@@ -309,8 +309,6 @@ Over = 跨過那段距離。
 
 “Come over for dinner.”（來我家吃晚餐。）
 
-“Come over for a drink.”（來我家喝杯東西。）
-
 “Come over for a chat.”（來我家聊聊天。）
 
 ## home

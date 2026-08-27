@@ -95,6 +95,11 @@ Be in (something)：是一個靜態的狀態——指你已經在上面了。
 - I go to school on the subway.（我都坐地鐵去學校。）
 - He goes to the office in a taxi.（他坐計程車去辦公室。）
 
+
+## be + in/on + 交通工具 + for 一段時間 (搭交通工具多久)
+- We were on the train for eleven hours yesterday!我們昨天在火車上待了整整十一個小時！
+
+
 ## go on 交通工具 = 搭上
 Go on (something)：是一個動態的過程——指你跨出腳步、走上車、登機的那個動作。
 

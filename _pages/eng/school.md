@@ -49,9 +49,6 @@ be + in a 科目 class
 ```
 - I am in a math class.我身處在數學課的狀態/空間裡。身處的『空間/狀態』
 
-## in the same class 同一班
-class 前面有形容詞，就會有the、a。
-- We are in the same class. 我们在同一个班。
 
 ## subject, course, lesson
 - lesson: 學鋼琴、學吉他、學開車、學外語（偏向練技能）

@@ -96,6 +96,8 @@ across + 空間/線條
 
 * Walk acrossthe street.
 
-
-
+---------------------------
+## across the street(形容詞片語) 對面的
+- He works at the restaurant across the street.他在對面的餐廳工作
+  - 把 across the street 當作形容詞放在 the restaurant 後面
 

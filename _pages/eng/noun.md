@@ -52,7 +52,7 @@ keywords: countable , uncountable
 - A cup of tea.一杯茶，
 - Two cup**s** of tea.
 - Can I have a piece of fruit.我可以吃一塊水果嗎？
-- There is only one gram of sugar in this drink. （這杯飲料裡只有一公克的糖。）
+
 - How many grams of sugar are in this snack? （這個零食裡有多少公克的糖？）
 
 ## 容器單位 影嚮動詞「單複數」
@@ -81,9 +81,9 @@ Pieces（塊 / 片）
 
 
 ## 容器單位
-```
+
 **數字** + **容器單位** + of + **內容物**的結構。
-```
+
 * Twelve bags of chips(12 包洋芋片)
 * Twelve bottles of water(12 瓶水)
 * Twelve cups of coffee(12 杯咖啡)
@@ -94,9 +94,9 @@ There are twelve bottles of waterin the fridge.(冰箱裡有 12 瓶水。)
 * Boxes of cookies(盒裝餅乾) → 數盒子。
 * Cups of coffee(杯裝咖啡) → 數杯子。
 
-```
+
 **數字** + **容器單位(複數)** + of + **內容物**
-```
+
 * There are three bags of chipson the sofa.(沙發上有三包洋芋片。)
 * I bought four bags of riceat the store.(我在店裡買了四袋米。)
 
@@ -135,4 +135,70 @@ There are twelve bottles of waterin the fridge.(冰箱裡有 12 瓶水。)
 用「of」倒回來想：
 - 一杯裝咖啡的杯子 → a cup of coffee → 倒過來就是 coffee cup。
 - 一所高中的老師 → a teacher at a high school → high school teacher。
+
+
+## 複合名詞是不可數名詞
+只要是符合兩個特徵的食物名詞，在英文裡幾乎都是**不可數名詞**：
+
+**複合名詞的特性**：它是由 `fried`（形容詞：炒過的）+ `rice`（名詞：米飯）組合而成的複合名詞。
+
+**`fried rice`（炒飯）在英文中是「不可數名詞」**。
+
+你**不能**說 *a fried rice* 或 *two fried rices*。
+
+* **一盤炒飯**：
+* **`A plate of fried rice`**
+* 或者直接說 **`some fried rice`** / **`fried rice`**
+
+* **兩盤炒飯**：
+* **`Two plates of fried rice`**
+* ❌ *Two fried rices* （這絕對是錯誤的！）
+
+* **`fried noodles`**（炒麵）：雖然麵條看起來是一條一條的，但在英文概念中也是視為不可數或集合名詞，通常說 *a plate of fried noodles*。
+
+如果要算數量，全部都要靠**計量單位**（例如：*a plate of, a bowl of, a cup of*）來幫忙！
+
+1. **`Fried rice`**（炒飯）
+* ❌ *two fried rices*
+* ⭕ **`two plates of fried rice`**（兩盤炒飯）
+
+
+2. **`Fried noodles`**（炒麵）
+* ❌ *three fried noodles*
+* ⭕ **`three plates of fried noodles`**（三盤炒麵）
+
+
+3. **`Ice cream`**（冰淇淋）
+* 💡 *說明：當作整體的物質時是不可數的。*
+* ❌ *two ice creams*（嚴格來說）
+* ⭕ **`two scoops of ice cream`**（兩球冰淇淋）或 **`two ice cream cones`**（兩個甜筒）
+
+
+4. **`Fast food`**（速食）
+* 💡 *說明：這是一個超級經典的不可數複合名詞（fast + food），代表一類食物的總稱。*
+* ❌ *many fast foods*
+* ⭕ **`a lot of fast food`**（很多速食）
+
+
+5. **`Junk food`**（垃圾食物）
+* ⭕ **`eating too much junk food`**（吃太多垃圾食物 ➔ 不可數，不用加 s）
+
+
+6. **`Seafood`**（海鮮）
+* ⭕ **`I love seafood.`**（我愛海鮮 ➔ 海鮮總稱，不可數）
+
+
+* **可數的東西**（漢堡、三明治、蘋果）➔ *a burger, two burgers*
+* **不可數 / 複合名詞**（炒飯、炒麵、冰淇淋、湯）➔ 加上容器或單位，例如：***a plate of...*** 或 ***a bowl of...***，點餐就萬無一失囉！
+
+---
+
+### 在餐廳怎麼點餐？
+
+* *“Can I get **two bowls of beef noodle soup**, please?”*（可以給我兩碗牛肉麵嗎？）
+* *“Can I have **some fried noodles**, please?”*（可以給我一些炒麵嗎？）
+
+* *“Yes, I’ll have **a plate of fried rice** and **a cup of tea**.”*（好，我要一份炒飯和一杯茶。）
+
+
 

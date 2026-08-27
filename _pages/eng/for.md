@@ -17,7 +17,7 @@ keywords: for
 ## eat 早餐 午餐 晚餐
 - What do you want to eat launch? 
 - Do you usually eat dinner at about half past five?
-- Does Tom eat dinner at the same time every day?
+
 
 ## for 把「什麼東西」當作 早餐/午餐/晚餐
 必須用 for 來表達「將這道食物」作為某一餐的「用途」。

@@ -70,7 +70,6 @@ To錢「傳給」誰
 
 ### 人 pay 錢 for 物
 - I paid 100 dollars for this book.（我為了這本書付了一百塊。）
-- You can pay for your drink**s** here.(你可以在這裡為你的飲料付錢，注意！此時飲料為可數名詞加s。)  
 - I'm paying for the ride
 - I paid money for it.（我為這個付了錢。）
 
