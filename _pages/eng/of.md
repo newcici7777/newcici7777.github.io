@@ -46,7 +46,7 @@ to 後面接的是名詞/地方，它是介系詞，代表「通往...的 / 關�
 - The key to success（成功的關鍵）
 - The door to success（通往成功的大門——比喻成功之門）
 - The answer to the question（問題的答案）
-
+- the answer to this question
 
 ## 畫畫
 paint 是水彩畫 draw 是用鉛筆描寫  
@@ -76,15 +76,16 @@ paint 是水彩畫 draw 是用鉛筆描寫
 a picture of 人事物
 pictures of 人事物
 ```
-
-- Are you [painting] [a picture of your mom] [on this paper]?
-  - 紙上用 [on] the paper
-- Eddy looks at [a painting of a dog].
+- Ben has a lot of photos of London.本有很多伦敦的照片。
+- Are you **painting** **a picture of your mom** **on this paper**?
+  - 紙上用 **on** the paper
+- Eddy looks at **a painting of a dog**.
 - A man stops and looks at the painting.  
 - Are you drawing a picture of me?
-- He [takes] [a photo of his cat] every day.
+- He **takes** **a photo of his cat** every day.
 - That is a photo of Beijing.
 - Lily painted a nice picture of New York last year.
+- That is a photo of my dog.那是一张我的狗的照片。
 
 ## in the photo
 只要是照片、圖片、畫作、鏡子、電視或螢幕，它們都有一個明確的「邊界（框框）」。老外會覺得，照片裡的人事物是被包在這個框框「裡面」的，所以習慣搭配介系詞 in（在...裡面）。

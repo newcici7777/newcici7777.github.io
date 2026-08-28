@@ -1,8 +1,34 @@
 ---
-title: go well 進行
+title: go well 進行, do well 表現得如何
 date: 2026-08-27
 keywords: English, go
 ---
+
+## do well / on the test 考試
+```
+Did you do well...?
+```
+- do well : 某個面試、考試、演講表現得如何？
+- 只要遇到「測驗、面試、特定專案項目」，介系詞都是 on
+
+### 考試 on the test / on the exam
+- Did you **do well** yesterday **on** the reading test?
+- I hope you do well on the test tomorrow.希望你明天的考試考得很好
+- How did you do on the test?你测试考得怎么样？
+- Don't worry, you will do well on the English test.别担心，你英语测试会考得很好。
+- John, did you do well on the English test yesterday?
+- how did you do on the test?你测试考得怎么样？
+- Ben did not do very well on the test.本测试考得不太好。
+- Did Anna do well on the art test?安娜艺术测试考得好吗？
+- Did you do well on the reading test yesterday?你昨天的阅读测试考得好吗？
+
+### 面試 on the interview / on the project
+- Did you do well on the interview?你昨天面試表現得好嗎？
+- She did a great job on the presentation.她昨天的簡報表現得超級好
+- Are you still working on that Laravel project?你還在忙那個 Laravel 的專案嗎
+- I do well on the interview.指的是你在面試的「答題、互動表現」上很好
+
+
 在這句話中，**`go`** 的意思是「進行、進展」。
 
 當你想知道某個活動、聚會、考試或比賽「結果怎麼樣」、「過程順不順利」時，最道地的英文就是用 **`How did... go?`** 這個句型。

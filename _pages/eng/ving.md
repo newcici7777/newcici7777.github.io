@@ -1,5 +1,5 @@
 ---
-title: finish,enjoy, start, begin,quit,stop,mind
+title: finish, start, begin,quit,stop,mind
 date: 2026-08-13
 keywords: English,finish,start,begin
 ---
@@ -15,16 +15,16 @@ keywords: English,finish,start,begin
 - He quit using that dating app.（他放棄用那款交友軟體了。）
 - we stopped talking.
 
-## enjoy（享受）+ Ving
-你必須正在做、或做過某件事，才能享受它
-
-- I enjoy coding in Sublime Text.（我享受用 Sublime 寫扣。）
 
 
 ## mind(介意) + Ving
 對方已經做了、或正在做某個動作，你才會去介意
 - Do you mind turning down the music?（你介意把音樂關小聲點嗎？）
 
+## practice + Ving
+- We need to practice listening and speaking.
+
+----------------------------
 ## start begin
 用to + V 跟 Ving都可以，都一樣意思。
 
@@ -35,6 +35,11 @@ keywords: English,finish,start,begin
 to + V，強調那個「跨入新狀態」的瞬間切換
 - It started to rain. (突然開始下雨了)
 - The baby started to cry. (寶寶突然開始哭了。 ➔ 突然爆哭的瞬間)
+
+### start + ving 突然開始
+- It starts raining.天空開始下雨
+  - 下雨是突然開始
+
 
 ### Ving 開始進行中(持續一陣子)
 - I started learning English recently. (我最近開始學英文了)要持續一陣子
@@ -66,7 +71,7 @@ to + V，強調那個「跨入新狀態」的瞬間切換
 - When does the meeting begin？ （會議幾點開始？）
 - Fall begins in September.
 - The next class will begin at 12 o'clock.
-
+- Our summer holidays will begin on July tenth.我們的暑假會在7月10號開始
 
 ## begin to 原因
 ### 避開「連環 -ing」（發音與視覺的考量）

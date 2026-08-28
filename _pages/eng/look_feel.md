@@ -34,6 +34,7 @@ keywords: look, see, watch, seem, feel, hear, listen to,
 |正確例句|Lin sees her grandmother.（Lin看到她阿媽）|I saw him clean the room.(我看到他清理房間的整個過程)|
 
 ### see代表看見(隨意看)  
+- she sees some pizza boxes on a table.
 - Lin sees her grandmother, Lucy, at the table.
 - Did you see my wife?I saw her in the morning.
 - Lin sees her grandmother, Lucy, at the table.
@@ -45,6 +46,7 @@ keywords: look, see, watch, seem, feel, hear, listen to,
 ### look at 看手機
 - She is looking at the map on her phone.
 - Eddy looks at his phone.
+- Please look at the first example.请看第一个例子。
 
 ## look in 看看冰箱
 - She looks in the fridge.

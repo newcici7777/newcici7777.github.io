@@ -198,6 +198,9 @@ easy, hard, difficult, important, possible, impossible
 - To me, fishing is boring.（在我看來，釣魚很無聊——這純粹是我的主觀意見。）
 - That sounds like a good idea to me.（這聽起來是個好主意——依我的感覺。）
 
+## 困難容易 + to 人
+- Don't worry the test will be easy to you.
+
 動詞是傳遞
 - Please explain it to me.（請把它解釋給我聽——說話的對象是我。）
 - She said to me, "Hello."（她對我說：「你好。」）

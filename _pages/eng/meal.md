@@ -1,7 +1,7 @@
 ---
-title: Meal
+title: Meal, menu
 date: 2026-08-27
-keywords: english, meal
+keywords: english, meal,menu
 ---
 - 指「食物本身」（不可數） → 用 food
 - 指「一頓飯 / 某一餐」（可數，有次數） → 用 meal / meals
@@ -30,3 +30,12 @@ meal 是可數名詞，代表的是「包含時間、場合、甚至多樣食物
 - Special（特餐）
   - Today's special（今日特餐）
   - I'll have the lunch special, please.（我要一份午餐特餐。）
+
+-------------------------
+## A menu
+A menu（菜單）完全可以直接這樣單獨使用！
+- A menu, please.
+- Can I have a menu, please?（可以給我一份菜單嗎？）
+- Could we get a menu?（我們能拿一份菜單嗎？）
+- I already have a menu for you.我已經為你們準備好一份菜單了。（或者，我這就拿一份菜單給你們。）
+* I want to ask for a menu.（我想索取一份菜單。）

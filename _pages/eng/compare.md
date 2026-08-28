@@ -67,4 +67,4 @@ than 主詞 動詞
 - English is far easier than I thought.
 - It's harder than I expected.（比我預期的還要難）
 - She runs faster than he does.（她跑得比他快）
-
+- Listening is harder than speaking.听力比口语更难。

@@ -1,8 +1,40 @@
 ---
-title: with, together, come with, accessories
+title: use, with, together, come with, accessories
 date: 2026-08-18
 keywords: English, with
 ---
+## Use 使用
+- Use the internet 會使用網路嗎
+* use the computer（使用電腦）
+* use your phone（使用你的手機）
+* use this app（使用這個應用程式）
+
+## with 使用
+用在工具：
+- Write with a pen（用原子筆寫字）
+- Cut it with a knife（用刀子切它）
+
+## 動作 + with + 身體部位
+「用身體的某個部位去完成一個動作」，會使用 **`with`** 這個介系詞。
+
+* *I kick the ball **with my right foot**.*（我**用**我的右腳踢球。）
+* *She hears **with her ears**.*（她**用**耳朵聽。）
+* *Point **with your finger***（**用手指**指）
+* *Wave **with your hand***（**用手**揮揮）
+
+* 使用use: *I **use** my right foot to kick the ball.*（我使用我的右腳來踢球）
+
+
+| 身體部位與搭配動詞 | 英文例句 | 中文意思 |
+| --- | --- | --- |
+| **Eyes**（眼睛）<br><br>👀 *see / look* | *I see **with my eyes**.* | 我**用眼睛**看。 |
+| **Ears**（耳朵）<br><br>👂 *hear / listen* | *Listen **with your ears**, not just your mouth.* | **用耳朵**聽，別只用嘴巴講。 |
+| **Hands**（手）<br><br>✋ *hold / touch / write* | *She touched it **with her hands**.* | 她**用手**摸了它。 |
+| **Mouth**（嘴巴）<br><br>👄 *speak / eat* | *We eat **with our mouths**.* | 我們**用嘴巴**吃東西。 |
+| **Nose**（鼻子）<br><br>👃 *smell* | *I can smell cookies **with my nose**.* | 我**用鼻子**聞到餅乾的味道。 |
+| **Teeth**（牙齒）<br><br>🦷 *bite / chew* | *The dog bit the toy **with its teeth**.* | 那隻狗**用牙齒**咬那個玩具。 |
+
+
 ## with 人/物 (讓你頭痛的人/事/物)
 with 當成是一個「連結的橋樑」。
 
@@ -17,52 +49,6 @@ I have a problem with + **讓你頭痛的人/事/物**
 * She has a problem with her phone.(她的手機出問題了。)
 * They have a problem with the new software.(他們對這款新軟體有意見/覺得它不好用。)
 * I have a problem withmy internet connection.(我的網路連線出問題了。)
-
-## with 加 (咖啡加牛奶)
-```
-主要的飲料 with(加) milk/sugar
-```
-- How much is a cup of coffee with milk?一杯加牛奶的咖啡多少钱？
-- Coffee with sugar.
-- I would like a pizza with cheese, please.我想要一个加芝士的比萨，谢谢。
-- With milk?加牛奶？
-- My daughter likes to have cereal with milk.她喜歡吃加牛奶的麥片。
-
-* With milk 
-* With oat milk.（加燕麥奶）
-* With almond milk.（加杏仁奶）
-* With soy milk.（加豆漿）
-
-## with 配料
-用什麼材料來做某件事」或「某個東西裡含有/配有什麼」時，英文就會使用 with。
-
-- Cooking with carrots（用紅蘿蔔做菜 / 以紅蘿蔔作為食材）
-- Cooking with garlic（用大蒜烹調）
-- A cake with chocolate（加了巧克力/含有巧克力的蛋糕）
-
-## with 的核心意思是「搭配、伴隨」
-- You can eat it with meat and vegetables.（你可以把它跟肉和蔬菜一起吃。）
-  - 肉和蔬菜是陪襯、伴隨在一起下肚的佐料或配菜。
-- We can eat hot pot with tofu tonight!（我們今晚可以吃加了豆腐的火鍋)
-
-## with 使用
-用在工具：
-- Write with a pen（用原子筆寫字）
-- Cut it with a knife（用刀子切它）
-
-## come with 附贈/配件/附有
-- Does this Happy Meal come with a toy?（這份快樂兒童餐有附玩具嗎？）
-- 餐點附贈： This kid meal comes with a toy.（這份兒童餐附帶一個玩具／有送玩具。）
-- 產品配件： The phone comes with a charger.（這支手機有附充電器。）
-- 套裝組合： The computer comes with software.（這台電腦附有軟體。）
-
-例句
-- 點餐情境（附餐）：Does this combo meal come with a drink? （這份套餐有附飲料嗎？）
-- 購買商品（附帶配件／保固）：The laptop comes with a three-year warranty. （這台筆記型電腦附有三年保固。）
-- 租屋買房（附設設備）：The apartment comes with a fully equipped kitchen. （這間公寓附有設備齊全的廚房。）
-- 車輛或產品（標準配備）：The new car comes with leather seats and a sunroof. （這輛新車配有皮質座椅和天窗。）
-- 抽象概念（伴隨而來的事物）：Being a manager comes with a lot of responsibilities. （擔任主管職位伴隨著許多責任。）
-
 
 
 ## some help(名詞) with 事情
@@ -99,6 +85,37 @@ help me + to + 原形動詞
 ```
 * Can you help me to fix this?（你能幫我修這個嗎？）
 
+
+---------------------------------------------
+
+## with 加 (咖啡加牛奶)
+```
+主要的飲料 with(加) milk/sugar
+```
+- How much is a cup of coffee with milk?一杯加牛奶的咖啡多少钱？
+- Coffee with sugar.
+- I would like a pizza with cheese, please.我想要一个加芝士的比萨，谢谢。
+- With milk?加牛奶？
+- My daughter likes to have cereal with milk.她喜歡吃加牛奶的麥片。
+
+* With milk 
+* With oat milk.（加燕麥奶）
+* With almond milk.（加杏仁奶）
+* With soy milk.（加豆漿）
+
+## with 配料
+用什麼材料來做某件事」或「某個東西裡含有/配有什麼」時，英文就會使用 with。
+
+- Cooking with carrots（用紅蘿蔔做菜 / 以紅蘿蔔作為食材）
+- Cooking with garlic（用大蒜烹調）
+- A cake with chocolate（加了巧克力/含有巧克力的蛋糕）
+
+## with 的核心意思是「搭配、伴隨」
+- You can eat it with meat and vegetables.（你可以把它跟肉和蔬菜一起吃。）
+  - 肉和蔬菜是陪襯、伴隨在一起下肚的佐料或配菜。
+- We can eat hot pot with tofu tonight!（我們今晚可以吃加了豆腐的火鍋)
+
+
 ## with 附加設備
 表達某個東西（房間）「內部包含、附帶」了某種配備
 - a room with a double bed ＝ 一間附帶（有）雙人床的房間
@@ -109,6 +126,42 @@ help me + to + 原形動詞
 - Do you have a room with an ocean view? （你們有海景房嗎？ → 帶有海景的房間）
 - I'd like a room with a private bathroom. （我想要一間有獨立衛浴的房間。）
 - Is there a room with a balcony available? （有帶陽台的房間可以訂嗎？）
+
+## come with 附贈/配件/附有
+專門用來形容「某個東西本來就是另一個東西的『固定標配』或『內含物』」。
+
+come with 固定搭配、標配、本來就包含在裡面（就像買手機「內附」充電線一樣）
+- Does this Happy Meal come with a toy?（這份快樂兒童餐有附玩具嗎？）
+- 餐點附贈： This kid meal comes with a toy.（這份兒童餐附帶一個玩具／有送玩具。）
+- 產品配件： The phone comes with a charger.（這支手機有附充電器。）
+- 套裝組合： The computer comes with software.（這台電腦附有軟體。）
+* *The phone **comes with** a charger and a case.*（這支手機**內附**充電器和保護殼 $\rightarrow$ 買手機就送這些，不用另外買。）
+* *Does this toy **come with** batteries?*（這款玩具**有附**電池嗎？）
+
+* *Every sandwich **comes with** a snack and a drink.*
+
+例句
+- 點餐情境（附餐）：Does this combo meal come with a drink? （這份套餐有附飲料嗎？）
+- 購買商品（附帶配件／保固）：The laptop comes with a three-year warranty. （這台筆記型電腦附有三年保固。）
+- 租屋買房（附設設備）：The apartment comes with a fully equipped kitchen. （這間公寓附有設備齊全的廚房。）
+- 車輛或產品（標準配備）：The new car comes with leather seats and a sunroof. （這輛新車配有皮質座椅和天窗。）
+- 抽象概念（伴隨而來的事物）：Being a manager comes with a lot of responsibilities. （擔任主管職位伴隨著許多責任。）
+
+
+
+## offers [贈品] with [主要的]
+`with` 是一個**介系詞**，用來連接「主商品」和「附贈品/搭配項目」，主動提供、加購或附帶（就像買主餐「配」一杯飲料）。
+
+贈品寫前面，強調「免費贈品」的行銷手法
+- This restaurant offers free hot chocolate with lunch.（這家餐廳提供點午餐送免費熱可可。）
+  - free hot chocolate ，吸引客人目光
+
+順序倒過來，寫成：
+* *Lunch **with free hot chocolate***（附帶免費熱可可的午餐）
+
+
+## accessories 配件
+- Do you want any laptop accessories or not?
 
 -----------------------
 ## together(副詞)
@@ -143,79 +196,10 @@ help me + to + 原形動詞
 - We can finally be together!
 
 
-## accessories 配件
-- Do you want any laptop accessories or not?
-
---------------------------------
-## 動作 + with + 身體部位
-「用身體的某個部位去完成一個動作」，會使用 **`with`** 這個介系詞。
-
-* *I kick the ball **with my right foot**.*（我**用**我的右腳踢球。）
-* *She hears **with her ears**.*（她**用**耳朵聽。）
-* *Point **with your finger***（**用手指**指）
-* *Wave **with your hand***（**用手**揮揮）
-
-* 使用use: *I **use** my right foot to kick the ball.*（我使用我的右腳來踢球）
-
-
-| 身體部位與搭配動詞 | 英文例句 | 中文意思 |
-| --- | --- | --- |
-| **Eyes**（眼睛）<br><br>👀 *see / look* | *I see **with my eyes**.* | 我**用眼睛**看。 |
-| **Ears**（耳朵）<br><br>👂 *hear / listen* | *Listen **with your ears**, not just your mouth.* | **用耳朵**聽，別只用嘴巴講。 |
-| **Hands**（手）<br><br>✋ *hold / touch / write* | *She touched it **with her hands**.* | 她**用手**摸了它。 |
-| **Mouth**（嘴巴）<br><br>👄 *speak / eat* | *We eat **with our mouths**.* | 我們**用嘴巴**吃東西。 |
-| **Nose**（鼻子）<br><br>👃 *smell* | *I can smell cookies **with my nose**.* | 我**用鼻子**聞到餅乾的味道。 |
-| **Teeth**（牙齒）<br><br>🦷 *bite / chew* | *The dog bit the toy **with its teeth**.* | 那隻狗**用牙齒**咬那個玩具。 |
-
----
-
-## offers [贈品] with [主要的]
-
-贈品寫前面，強調「免費贈品」的行銷手法
-- This restaurant offers free hot chocolate with lunch.（這家餐廳提供點午餐送免費熱可可。）
-  - free hot chocolate ，吸引客人目光
-
-順序倒過來，寫成：
-* *Lunch **with free hot chocolate***（附帶免費熱可可的午餐）
-
------------------
-
-這邊的come with跟前面的with有什麼差別
-
-這兩個 **`with`** 雖然長得一樣，而且核心概念都跟「伴隨、一起」有關，但在句子的角色和產生的畫面感上有一點點微妙的差別！
-
-我們來比對一下：
-
----
-
-### 1. 句型大比對
-
-* **句型 A（前面提過的餐廳促銷）**：
-* *This restaurant offers free hot chocolate **with** lunch.*
-* **角色**：`with` 是一個**介系詞**，用來連接「主商品」和「附贈品/搭配項目」。
-* **語感**：主動提供、加購或附帶（就像買主餐「配」一杯飲料）。
-
-
-* **句型 B（現在這句）**：
-* *Every sandwich **comes with** a snack and a drink.*
-* **角色**：`come with` 是一個**動詞片語**（由動詞 *come* + 介系詞 *with* 組成）。
-* **語感**：固定搭配、標配、本來就包含在裡面（就像買手機「內附」充電線一樣）。
 
 
 
----
 
-### 2. 深入看 `come with` 的獨特魅力
-
-**`Come with`** 在英文中非常常用，專門用來形容「某個東西本來就是另一個東西的『固定標配』或『內含物』」。
-
-* **比喻想像**：
-* 當你點了一個三明治，這個三明治「走（come）」到你手上時，它的手上「帶著（with）」點心和飲料一起來。
-
-
-* **常見生活情境**：
-* *The phone **comes with** a charger and a case.*（這支手機**內附**充電器和保護殼 $\rightarrow$ 買手機就送這些，不用另外買。）
-* *Does this toy **come with** batteries?*（這款玩具**有附**電池嗎？）
 
 
 
@@ -270,7 +254,7 @@ help me + to + 原形動詞
 | 比較項目 | `comes with` | `accessories` |
 | --- | --- | --- |
 | **詞性** | 動詞片語（Action / State） | 名詞（Things / Objects） |
-| **中文意思** | 附帶、內含、隨附……一起來 | 配件、裝飾品、周邊配備 |
-| **舉例** | The box **comes with**...（盒子裡**附有**……） | Inside the box are some **accessories**（盒子裡有一些**配件**） |
+| **中文意思** | 附帶、內含、隨附...一起來 | 配件、裝飾品、周邊配備 |
+| **舉例** | The box **comes with**...（盒子裡**附有**...） | Inside the box are some **accessories**（盒子裡有一些**配件**） |
 
 所以，`come with` 是在描述「有沒有附」，而 `accessories` 則是那些「被附上的配件本身」喔！

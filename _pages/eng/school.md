@@ -3,33 +3,60 @@ title: 上學上課 相關
 date: 2026-08-09
 keywords: English
 ---
-## Take a class 上課
-take 的語感更偏向「修讀、參與課程」的過程。
+## Take 課程 (想去參加什麼課)
+這學期大學，你想選修什麼課程？
 
+- I want to take Japanese lessons.我想要上日语课。
+- I don’t want to take the english lesson.我不想上英文課
+- Which classes are you taking this semester?你這學期選了哪些課？(classes為複數)
+- My friend takes writing lessons in that building.我的朋友在那座楼上写作课。
+  - takes 現在式，描述現在事實。
+
+## taking a class 最近上什麼課
+用進行式代表「最近在進行的」。
 - I’m taking driving lessons these days.我最近在上駕訓班。(現在式代表最近) 
 - I am taking a yoga class this month.我這個月在上一堂瑜珈課。 
 - I signed up for cooking lessons!我報名了烹飪課！(signed up是報名)
   - When do you start taking them?真的假的？那你什麼時候開始去上課？(taking是上課)
-- I don’t want to take the english lesson.我不想上課
-- Which classes are you taking this semester?你這學期選了哪些課？(classes為複數)
+
+## taking a class/lesson 正在上課
+根據上下文、時態判斷是「正在上課」
 - I am taking a math lesson now.我現在正在上一堂數學課。(有now，代表現在正在上課)
 
+
 ## Take a lesson 上課(課是一節課、一節課)
-- I don’t want to take **the** lesson.
+- I don’t want to take **the** lesson.我不想上這堂課
 
 ## Have a class 上課 課表的課
 這門課已經在你的行程表裡（有課），have 的語感更偏向「行程表上的時間到了」。  
 行程、有這個時間安排，翻開行事曆或課表，看到上面寫著「週三早上：數學」。
 - I have an art class today.
 - I have my first class next Monday.（我下週一上第一堂課）
+- Do you have classes today? 你今天有课吗？(注意！classes用複數)
+
+## has a lesson
+課表有課。
+- She has a speaking lesson at three.她在三点有一节口语课。
 - I have a math lesson every Wednesday.你的課表上有這堂課
 - The children have reading lessons every Thursday.「行程表上『有』這堂課」。
-- Do you have classes today? 你今天有课吗？(注意！classes用複數)
+- She has a math lesson every Wednesday.她每周三都有一节数学课。
+- The children have reading lessons every Thursday.孩子们每周四都有阅读课。
+
 
 ## Take vs Have
 二者都是上課。
 - When do you start taking the lessons?
 - When do you have the lessons?
+
+## Take 考試
+take 是：「花時間、花力氣」
+- take a test
+- take an exam（參加考試）
+  - 花費腦力去「應付／應考」，所以用 take
+- We took a Chinese listening test yesterday.我们昨天参加了一个中文听力测试。
+- He took the test and then went home.他参加了测试，然后回家了。
+- We took a Chinese listening test yesterday.我们昨天参加了一个中文听力测试。
+- How many students took the math test last week?有多少个学生参加上周的数学测试？
 
 ## In class
 已經坐在教室裡聽講了（正在上課中)，注意！class是抽象概念(不可數名詞)，不需要加 a，跟the
@@ -64,6 +91,8 @@ be + in a 科目 class
 
 lesson課表上的那『一節課』的時間（通常是40~50分鐘）
 - She has a math lesson every Wednesday.
+- I don't like English writing lessons.
+
 
 ## go to school
 school變抽象名詞，不可數，前面不能加a跟the。
@@ -138,22 +167,6 @@ campus 指的是學校那塊「土地、地面範圍」，所以用 on。
 - I need a course book.
 - I need a textbook.
 
-## do well / on the test 考試
-```
-Did you do well...?
-```
-- do well : 某個面試、考試、演講表現得如何？
-- 只要遇到「測驗、面試、特定專案項目」，介系詞都是 on
-
-### 考試 on the test / on the exam
-- Did you **do well** yesterday **on** the reading test?
-- I hope you do well on the test tomorrow.希望你明天的考試考得很好
-
-### 面試 on the interview / on the project
-- Did you do well on the interview?你昨天面試表現得好嗎？
-- She did a great job on the presentation.她昨天的簡報表現得超級好
-- Are you still working on that Laravel project?你還在忙那個 Laravel 的專案嗎
-- I do well on the interview.指的是你在面試的「答題、互動表現」上很好
 
 
 ## in pairs, in groups of 副詞片語

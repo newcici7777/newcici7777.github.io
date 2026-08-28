@@ -12,6 +12,7 @@ keywords: leave, left
 - The train is leaving at 7 PM.(火車預計7點發車，現在式代替未來式)
 - That train leaves at 7 p.m.(火車在晚上 7 點開出 / 發車)
 - Duo's flight is leaving in fifteen minutes.多哥（Duo）的班機在十五分鐘後就要起飛了。這裡的 leaving 是 「起飛」 的意思。
+- That train won't leave until 7 p.m.那个火车直到晚上七点钟才会离开。
 
 ## arrive
 - They arrive at Vikram's apartment.
@@ -127,8 +128,8 @@ left通常會放在名詞後面
 * **文法與放置位置：**
 * 作為句子的**主要動詞**時，放在主詞後面（通常搭配現在式表未來、或是進行式）。
 * **常見搭配句型：**
-* `depart from [地點]`（從……出發）
-* `depart for [地點]`（動身前往……）
+* `depart from [地點]`（從...出發）
+* `depart for [地點]`（動身前往...）
 
 
 * **例句：** *The train **departs from** Platform 2.*（火車從第二月台發車。）
@@ -145,7 +146,7 @@ left通常會放在名詞後面
 * **常見搭配句型：**
 * `time of departure` / `departure time`（出發時間）
 * `departure lounge`（候機室）
-* `depart for` 的名詞搭配是 **`departure for [地點]`**（前往……的班機／出發）。
+* `depart for` 的名詞搭配是 **`departure for [地點]`**（前往...的班機／出發）。
 
 
 * **例句：**
@@ -190,7 +191,7 @@ left通常會放在名詞後面
 ### 💡 核心對照總結
 
 * **動詞選擇：** `leave` 比較口語萬用；`depart` 比較正式專業。
-* **共同亮點：** 兩者在接目的地時，都會使用 **`for`**（`leave for` / `depart for`），意思是「動身前往……」。
+* **共同亮點：** 兩者在接目的地時，都會使用 **`for`**（`leave for` / `depart for`），意思是「動身前往...」。
 
 所以在日常生活中，你想用哪一個都完全沒問題，意思百分之百相通！
 
@@ -244,7 +245,7 @@ left通常會放在名詞後面
 
 ### 2. `for` 的核心語感：動身、朝著某個目標前進（Direction / Heading toward）
 
-* **`for`** 的基本意思是「為了」或「朝向……」。當它用在移動動詞後面時，強調的是「啟程、動身，目標是朝那個方向去」。
+* **`for`** 的基本意思是「為了」或「朝向...」。當它用在移動動詞後面時，強調的是「啟程、動身，目標是朝那個方向去」。
 * 像 **`leave`**（離開）和 **`depart`**（出發）這類動詞，它們的動作本質是「離開起點」，而不是「抵達」。所以當你要接「你要去哪裡」時，不能用代表抵達的 `to`，而是要用代表「朝著那個方向前進」的 **`for`**。
 * **例句：**
 * *He left **for** London.*（他動身前往倫敦了——他離開了原本的地方，方向是倫敦。）

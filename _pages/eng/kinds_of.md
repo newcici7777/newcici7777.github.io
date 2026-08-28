@@ -43,6 +43,7 @@ all所有種類、different(各種)都是複數，所以kind後面要加上s。
   - There are many different kinds of people in the world.世界上有許多不同種類的人
 
 例句:
+- That coffee shop has fifty kinds of coffee!
 - This kind of cheese is nice!這個種類的起士很好！
   - 起士是不可數，不能加s
 - The cafe serves all kind**s** of cheese.那家咖啡廳供應各式各樣的起司

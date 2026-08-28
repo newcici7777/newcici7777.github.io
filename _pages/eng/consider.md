@@ -14,7 +14,7 @@ keywords: english, consider
 ### 1. 核心文法結構
 
 > **`consider` + [受詞 (A)] + `to be` + [名詞 / 形容詞 (B)]**
-> * 意思：把……視為……
+> * 意思：把...視為...
 > 
 > 
 

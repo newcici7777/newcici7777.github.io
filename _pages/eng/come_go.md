@@ -133,6 +133,7 @@ home 本身是副詞
 - come home（回來家裡）說話的人此時「人已經在家裡」，等待另一半或家人回來
   - What time will you come home tonight? I'm making dinner.
 （你今晚幾點回來（家裡）？我正在做晚餐。）
+  - Will Mom come home on December fourth?妈妈会在十二月四号回家吗？
 - get home（到家）
   - Text me when you get home.
 （你到家的時候發個訊息給我。）
@@ -140,8 +141,8 @@ home 本身是副詞
   - The travelers arrived home safe and sound.
 （旅客們安全無恙地抵達家園。）
 - walk home（走路回家 / 散步回家）
-  - It was a nice evening, so I decided to walk home.
-（那是個美好的夜晚，所以我決定走路回家。）
+  - Lin is walking home one day.
+  - It was a nice evening, so I decided to walk home.（那是個美好的夜晚，所以我決定走路回家。）
 - drive home（開車回家）
   - Be careful when you drive home in the rain.
 （下雨天開車回家要小心喔。）
@@ -268,6 +269,7 @@ Ahead 負責：「朝著前方、目標在前面」
 - Drive backwards into the parking space.（倒車停進停車格裡。）
 
 ## 移動動詞 + back + to + 目的地
+- I need to go back to work.
 - He got a suitcase and ran back to the car. 他拿了一個行李箱，然後跑回車子那裡。
 - I forgot my phone, so I ran back to the house. （我忘記帶手機，所以我跑回屋子裡。）
 - She grabbed her umbrella and ran back to the office. （她抓起雨傘，又跑回辦公室。）

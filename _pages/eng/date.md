@@ -28,7 +28,7 @@ The date of(屬於...) + the next meeting(下次會議)
 - 回覆用 It 當主詞，代表問句的「the date」，不重覆說同樣的主詞。
   - it's September sixth.(今天是九月六号。)
   - Today is December eighth.
-- What's the date tomorrow?  
+- What's the date tomorrow?明天是几月几号？
 
 ## What date is 事件? (❌ 今天幾號不能用What date)
 ```

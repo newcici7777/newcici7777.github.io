@@ -62,6 +62,7 @@ A + broad(寬廣的) = 地方副詞，在國外
 
 ---------------------------------
 ## Board(名詞) 黑板
+- Write this word on the board.把这个单词写在黑板上。
 - Please write your answer on the whiteboard. （請把你的答案寫在白板上。）
 - The teacher wrote the new vocabulary on the blackboard. （老師把新單字寫在黑板上。）
 

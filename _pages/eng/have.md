@@ -29,9 +29,15 @@ have 的意思是「取得、擁有、入住」
 
 ## 喝
 - Do you want to have coffee with us?
-
 - have tea （喝茶）
 - have a coffee（喝咖啡）
+
+## 有 vs 喝
+- I have some tea, but I don't have any juice.
+  -  我有一些茶，但是我没有果汁。
+- I want to have some tea. 我想要喝一些茶
+
+
 ## 比賽
 - They have competitions every year.
 （他們每年舉辦比賽。）

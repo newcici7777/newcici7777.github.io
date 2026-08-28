@@ -48,6 +48,14 @@ keywords: English,
 |睡覺|sleep|slept|slept|
 |感覺|feel|felt|felt|
 
+## 中間有2個e，變一個e
+
+|中文|現在式|過去式|過去分詞|
+|:------|:--------|:---------|:-------|
+|見面|meet|met|met|
+
+
+
 ## ought
 
 |中文|現在式|過去式|過去分詞|

@@ -48,13 +48,7 @@ She's not **on** this baseball team.
 
 
 
-## thanks for
-```
-Thanks for + 名詞 / V-ing（謝謝你做...）
-```
-- Thanks for helping me.（謝謝你幫我。）
-- Thanks for driving me home.（謝謝你開車載我回家。）
-- Thanks for the tickets.(謝謝你的門票)
+
 
 ## gone
 gone 是形容詞用來形容一種「不在、離去、離開了」的狀態。
@@ -117,22 +111,8 @@ river（河流） 加 s 變成 rivers，通常是最直觀的「複數名詞」�
   - The power went out last night.（昨晚停電了。）
 
 
-## A menu
-A menu（菜單）完全可以直接這樣單獨使用！
-- A menu, please.
-- Can I have a menu, please?（可以給我一份菜單嗎？）
-- Could we get a menu?（我們能拿一份菜單嗎？）
-- I already have a menu for you.我已經為你們準備好一份菜單了。（或者，我這就拿一份菜單給你們。）
-* I want to ask for a menu.（我想索取一份菜單。）
 
 
-
-
-## wash my hair(洗頭) dry my hair(吹頭)
-- ❌ 錯誤用法：wash my head, dry my head
-- I washed my hair, so l need to dry it. 
-- I need to dry my hair.（我需要把頭髮弄乾／吹乾。）
-- Give me a minute, I'm drying my hair.（等我一下，我正在弄頭髮／吹頭髮。）
 
 ## fast 與 quickly
 - fast（形容詞 / 副詞同形，強調「速度快」）
@@ -147,14 +127,7 @@ A menu（菜單）完全可以直接這樣單獨使用！
   - Please finish your homework quickly.
 
 
-## laugh(動詞) 笑
-laughs 的詞性是不及物動詞（Intransitive Verb）
-- When my son watches funny movies, he always laughs. 
 
-
-## fun vs funny
-- fun adj.有趣的
-- funny adj. 好笑的
 
 ## broken working work
 ### is broken（壞了、斷了、碎了）
@@ -168,11 +141,7 @@ laughs 的詞性是不及物動詞（Intransitive Verb）
 - The elevator isn't working.（電梯故障不能動了——外觀可能好好的，但按了沒反應。）
 - My computer doesn't work.（我的電腦開不了機／當機了。）
 
-## Use 使用
-- Use the internet 會使用網路嗎
-* use the computer（使用電腦）
-* use your phone（使用你的手機）
-* use this app（使用這個應用程式）
+
 
 ## hurry(動) 快一點
 - She needs to hurry.（她需要趕快／她得動作快一點。）

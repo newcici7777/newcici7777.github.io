@@ -12,6 +12,7 @@ keywords: English
 - Take the train. 火車有時間表的用the
 - take the subway.搭地鐵有時間表用the
 
+- I need to take the subway to work.我需要坐地铁去上班。
 - I usually take **the** train to work.（我通常搭火車去上班。）
 - I took **the** subway to the bookstore last weekend.I never take a bus there.
 - Our dog always takes **the** bus to the park.我们的狗总是坐公交车去公园。

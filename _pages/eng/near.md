@@ -146,6 +146,7 @@ outside.
 
 ## close to 離...很近、在「附近」
 close to 的核心意思是「離...很近」。它強調的是距離短，但不代表兩個東西要緊緊貼在一起，中間隔著一條街、一排樹都沒關係。
+- He needs to sit closer to the blackboard.他需要坐得离黑板更近。
 - My house is close to the store.離超商很近。走路 3 分鐘會到，可能隔了一條街。
 - My office is close to the station.（我的辦公室離車站很近。）
 - Is it close to here?（離這裡近嗎？）
@@ -296,37 +297,12 @@ I left my keys behind the flower pot."
 - 當它前面接像 go, drive, head 這種動詞 → 表方向的副詞（去市中心）。
 - 當它前面接像 work, live, stay 這種動詞 → 表地點的副詞（在市中心）。
 
-## on 關於
-這裡的 **`on`** 扮演著非常關鍵的角色，意思是「關於...」**或**「有關...的指南」。
 
-你可以把這個 `on` 替換成更常見的 **`about`**，意思會更好理解：
-
-* *She gave me a guide **on** how to do it.*
-* ＝ *She gave me a guide **about** how to do it.*
-（她給了我一份**關於**該怎麼做這件事的指南。）
-
-名詞本身具有「主題、探討內容、指導方針」的含意時（例如 *guide* 指南、*book* 書、*report* 報告、*lecture* 講座、*article* 文章），習慣上會用介系詞 **`on`** 來帶出它的內容主題。
-
-* a book **on** history（一本**關於**歷史的書）
-* a report **on** climate change（一份**關於**氣候變遷的報告）
-* a guide **on** how to use the app（一份**關於**如何使用這款 App 的指南）
+## 移動名詞 + to 目的地
+有位置、方向性的名詞，後面可用to 目的地
+- Where is the entrance to the library?
 
 
-## on 衣物、帽子、飾品戴在人或動物的身體上
-on，是因為它表達的是「接觸並覆蓋在表面」的物理位置！
-衣物、帽子、飾品戴在人或動物的身體上時，標準的介系詞就是 on
-
-- I love this hat on my cat! 我喜歡戴在我貓身上的帽子
-- I love the cute bow on my cat. （我好喜歡我貓咪身上那個可愛的蝴蝶結！）
-- The winter coat on that dog looks so warm. （那隻狗身上穿的冬衣看起來好保暖。）
-- Do you like the new glasses on me? （你喜歡我臉上戴的新眼鏡嗎？）
-- That red scarf on you is gorgeous. （你脖子圍的那條紅圍巾真好看。）
-- Look at the tiny hat on the hamster! （快看那隻倉鼠頭上戴的小帽子！）
-- The silver ring on her finger sparkles in the light. （她手指上戴的銀戒在光線下閃閃發光。）
-- I left my favorite cap on the dog's head as a joke. （我開玩笑把最愛的棒球帽戴在狗頭上。）
-- The little sweater on the puppy is adorable. （那隻小狗身上穿的小毛衣超級可愛。）
-- The gold necklace on her neck matches her dress perfectly. （她脖子上戴的金項鍊跟洋裝超級搭。）
-- Whose sunglasses are those on the cat? （貓咪臉上戴的那副太陽眼鏡是誰的？）
 
 --------------------------------------------------------------
 
@@ -371,7 +347,7 @@ on，是因為它表達的是「接觸並覆蓋在表面」的物理位置！
 不過在日常口語中，有時候邊界沒有分得那麼死，但加上 **`side`** 確實能讓「在哪一個側邊（Surface/Area）」的畫面感更強烈喔！
 
 
-為你整理 **10 個**包含 **`on the left side of`**（在……的左側）的實用例句。
+為你整理 **10 個**包含 **`on the left side of`**（在...的左側）的實用例句。
 
 如同我們剛才討論的，加上 **`side`** 可以讓「實體表面、區塊、或具體範圍」的空間感更強烈。我們把它們分成「道路與交通」**、**「室內空間與物品擺設」**、以及**「身體部位」這 3 個最常見的情境：
 

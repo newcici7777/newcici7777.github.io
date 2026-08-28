@@ -99,6 +99,8 @@ Take 人 to 某地
 
 - Take a picture / photo（拍照）
 - They took lots of photos in Cambridge.他们在剑桥拍了许多照片。
+- He takes a photo of his cat every day.他每天都给他的猫拍一张照片。
+
 
 ## 錄影
 - Dad likes to take videos. 
@@ -171,30 +173,12 @@ take 轉變成了一個輔助性質的動詞，中文通常會翻譯成：「進
 - take a long break（休個長假）
 - take a hard test（考一個很難的試）
 
-## 考試
-take 的核心語感：「主動採取、執行、花力氣」
-- take a test
-- take an exam（參加考試）
-  - 花費腦力去「應付／應考」，所以用 take
+
+## 導覽
 - take a tour（進行參觀）
   - 參觀需要走動、花體力，所以用 take。
 
 
-## 洗澡 take a bath /take a shower 
-- She needs a bath.她需要洗一個澡
-"a bath" 的原因是因為 bath 澡、盆浴 在這裡是一個普通的具體名詞（名詞），而不是動詞。
-
-名詞直接當作需求對象
-- The dog needs a bath.（這隻狗需要洗澡了。）
-- My car needs a wash.（我的車需要洗車了——wash 在這裡也是名詞。）
-- I need a break.（我需要休息一下——break 在這裡也是名詞。）
-  
-
-當你想用「動作」來表達「洗澡」時，通常會搭配一個動詞（如 take 或 have），把 bath 當作受詞：
-- take a bath / have a bath
-- take a shower 
-- She wants to take a bath.（她想要洗澡。）
-- He is having a bath right now.（他現在正在洗澡。）
 
 
 

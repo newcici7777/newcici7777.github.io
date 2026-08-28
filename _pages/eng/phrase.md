@@ -136,4 +136,6 @@ that 幾乎可以用來替代 who 和 which。
 ## It's OK（沒關係）+ if（如果）+ 子句
 「如果...也沒關係／是可以的」。
 - it's OK if you don't get a perfect grade!(拿不到滿分／完美成績也沒關係的！)
+
+## It's OK（沒關係）+ to do 「做某事也沒關係」
 - It's OK to eat one slice. 吃一片披薩沒關係。

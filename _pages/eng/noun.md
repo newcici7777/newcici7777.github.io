@@ -64,6 +64,17 @@ keywords: countable , uncountable
 一個袋子 → 它是單數。
 - This box of cookies **is** on the table.這箱餅乾在桌上
 
+## pair of + 單數動詞
+句子的真正主詞是計量單位 pair（一雙）。
+- Is this pair of glasses thirty dollars?
+- Is that pair of shoes thirty dollars?
+（那一雙鞋是三十美元嗎？）
+- How much is that pair of shoes?（那一雙鞋多少錢？）
+- My friend needs a pair!
+
+如果拿掉pair of，就要用複數動詞
+- Are these glasses thirty dollars?
+
 
 ## 一片一片 slices Pieces
 - Pizza（披薩）

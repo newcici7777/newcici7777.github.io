@@ -4,6 +4,7 @@ date: 2026-07-28
 keywords: english, a lot of, lots of
 ---
 ## a lot of + 可數s/不可數 名詞
+- That's a lot of pizza.
 - A lot of people do this every day.
 - A lot of people are waiting behind you!
 - A lot of thing**s**!

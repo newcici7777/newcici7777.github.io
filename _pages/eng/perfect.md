@@ -49,11 +49,15 @@ Have you gone to... 的意思是「你已經去了（而且現在人還在那裡
 - Where have you gone? I've been looking everywhere for you. （你跑去哪裡了？我到處找你找不到。）
 - My parents have gone to Japan for a vacation. (我爸媽去日本度假了——目前還在日本。)
 
-## 經驗 沒有for
+## 經驗 (後面沒有for 一段時間)
 - I have lived in Taipei.我住過台北(現在有沒有住，不知道)
 - I have watched Titanic.（我看過鐵達尼號。➔ 這是我的經驗，我現在沒有在看。)
 - Emma has traveled in Europe by train, and I have traveled in Africa by car!
 - She has traveled in Asia with her girlfriend.她跟她的女朋友一起在亚洲旅行过。
+
+## have 主詞 v-ed？
+- Have we met? 我們之前見過嗎？
+
 
 ## 經驗 ever
 ever 就是問你的人生履歷表上「有沒有過...?」

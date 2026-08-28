@@ -39,26 +39,7 @@ She's a teenager.
 - Is the restaurant open?那家餐斤开门了吗？
 
 
-## remember 
-### remember + to V（記得去做...）
-當你想表達「記得（要去執行某個任務或動作）」時，就要用 remember + to V。這個動作通常在當下或說話時還沒做。
 
-- Please remember to lock the door.（請記得去鎖門。）
-- I remembered to water your plants.我記得去幫你澆花。
-
-### remember + V-ing（記得曾經做過...）
-相對地，如果後面接動名詞（V-ing），指的是「記憶中還留著」過去曾經做過某個動作的經驗。
-- I remember watering the plants yesterday.（我記得昨天有澆過花。 → 這件事已經在過去發生了，你腦海中有這個記憶。）
-- I remember hearing this song the night we met.
-
-💡 快速記憶對比
-- remember to V ＝ 提醒自己未來／等一下要去做。
-- remember V-ing ＝ 回憶起過去曾經做過的事。
-
-### remember + 名詞
-- She probably doesn't remember me.
-- Do you remember your favorite class?你记得你最喜欢的课
-吗？
 
 
 
@@ -75,36 +56,6 @@ eyes are very small.
 - Blue skies and sunshine!（藍天與陽光！）
 - We had clear skies all week.（我們整個禮拜都遇到晴朗的好天氣。）
 - Stormy skies（暴風雨的天空 / 陰暗的天空）
-
-
-
-
-## think 認為
-主詞 + think + that可省略 + (完整子句)
-- Why do you think that he wants...(為什麼你覺得他想要...？)
-- Why do you think he wants...(為什麼你覺得他想要...？)
-
-## thought 以為
-用 thought（過去式）代表「過去認為」，但實際上並不是這樣。
-
-- I thought he **loved** me.我以為他愛我，但其實沒有。(注意，loved也是過去式)
-- It's cheaper than I thought.（比我想像的還要便宜 → 以為很貴，結果結帳時發現很便宜。）
-- He is nicer than I thought.（他比我想像的還要好人 → 以為他很兇，接觸後發現人很好。）
-- English is far easier than I thought. 英文比我想像中的容易。
-  - 用 thought（過去式） 而不是 think（現在式），是因為「覺得很難」的那個時刻已經過去了。
-  - 因為「想像」這件事發生在過去，所以要用過去式 thought。
-
-## pair of + 單數動詞
-句子的真正主詞是計量單位 pair（一雙）。
-- Is this pair of glasses thirty dollars?
-- Is that pair of shoes thirty dollars?
-（那一雙鞋是三十美元嗎？）
-- How much is that pair of shoes?（那一雙鞋多少錢？）
-- My friend needs a pair!
-
-如果拿掉pair of，就要用複數動詞
-- Are these glasses thirty dollars?
-
 
 
 ## crowded
@@ -267,4 +218,4 @@ return 的詞性是及物動詞（Transitive Verb）。
 
 
 
-2254
+2316

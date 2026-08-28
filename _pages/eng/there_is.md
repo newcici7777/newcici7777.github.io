@@ -90,3 +90,7 @@ water 的雙重身分：不只是「飲料」，更是「大自然的水體」
 1. in the water ＝ 泡在水裡、在水面之下（例如：魚、游泳的人）。
 2. by the water ＝ 站在水岸邊、緊鄰著水。
 3. near the water ＝ 離水不遠的附近區域。
+
+-------------------------------
+## There is + 抽象名詞
+- There were many difficult questions.有很多很难的问题。

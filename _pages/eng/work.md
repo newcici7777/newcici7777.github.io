@@ -33,12 +33,17 @@ work是抽象名詞，不可數名詞，前面不加a 或the
 ### work(動詞) + on 日期 在某個日期工作或不工作
 - I don't work on Sundays.
 
-## work(動詞) + 地點 在那裡工作？
-### work(動詞) at a 工作建築
+
+## work(動詞) at a 場所
 - I work at **a** restaurant!我在一家餐廳工作 不能用the
 - I work at **a** hospital.
 - Do you teach English at **a** university.你在一个大学教英语吗？
 - They work together at **a** bank.他们一起在一家银行工作。
+- He works at an American restaurant.他在一个美国餐厅
+工作。
+- work at **a** bank（在銀行上班）
+- work at the same company（在同一家公司上班）
+
 
 ### work downtown
 - Do you work downtown? downtown（副詞：在市中心）
@@ -98,9 +103,7 @@ do business(做生意) in the 產業、領域
 * We do business in music.（我們做音樂相關的生意。）
   - music 前面沒有the
 
-## work at
-- work at **a** bank（在銀行上班）
-- work at the same company（在同一家公司上班）
+
 
 ## work from home 在家工作
 - Who will work from home next week?谁下周会在家工作？   

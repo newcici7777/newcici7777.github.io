@@ -27,6 +27,8 @@ keywords: english, right
 ## right(形容詞) 正確的
 - Are these the right directions?這些是正確的方向/指示嗎？
 - I think he's right. 我認為他是對的。
+- Is this the right answer?
+- Is this page right?这页正确吗？
 
 ## right(形容詞) 合適的
 - Career counseling can help you find the right job. 職涯輔導可以幫助你找到合適的工作。

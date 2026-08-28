@@ -14,9 +14,14 @@ already 是個副詞（Adverb），用來表示某個動作或事情「早就」
 ## be ready(形容詞) 準備好
 ready 是形容詞：它不能單獨當動詞用，前面一定要搭配 be 動詞（如 am, is, are, was, were，或是加上助動詞變成 will be）來形成完整的述語。
 
+- Dinner is ready.晚餐已經準備好了
+  - 不需要在 dinner 前面加「the」。
 - I want everything ready by tomorrow.（我希望明天前每樣東西都準備好。）
 - When will it be ready?
 - Dinner will be ready soon be ready.晚餐快要準備好了
+
+
+
 
 ## ready to + 動詞 (V) (即將啟動：準備好要做...)
 ready to後面接動作（動詞原型）。代表你已經蓄勢待發，隨時可以開始執行那個動作。  

@@ -68,3 +68,18 @@ wear本身是動詞，什麼穿什麼，不是「穿」put on這個動作。
 - I love the jacket that you're wearing!（我好喜歡你身上穿的那件外套！）
 - Nice shoes! Are you wearing them for the first time?（好看的鞋子！你今天第一次穿嗎？）
 
+## on 衣物、帽子、飾品戴在人或動物的身體上
+on，是因為它表達的是「接觸並覆蓋在表面」的物理位置！
+衣物、帽子、飾品戴在人或動物的身體上時，標準的介系詞就是 on
+
+- I love this hat on my cat! 我喜歡戴在我貓身上的帽子
+- I love the cute bow on my cat. （我好喜歡我貓咪身上那個可愛的蝴蝶結！）
+- The winter coat on that dog looks so warm. （那隻狗身上穿的冬衣看起來好保暖。）
+- Do you like the new glasses on me? （你喜歡我臉上戴的新眼鏡嗎？）
+- That red scarf on you is gorgeous. （你脖子圍的那條紅圍巾真好看。）
+- Look at the tiny hat on the hamster! （快看那隻倉鼠頭上戴的小帽子！）
+- The silver ring on her finger sparkles in the light. （她手指上戴的銀戒在光線下閃閃發光。）
+- I left my favorite cap on the dog's head as a joke. （我開玩笑把最愛的棒球帽戴在狗頭上。）
+- The little sweater on the puppy is adorable. （那隻小狗身上穿的小毛衣超級可愛。）
+- The gold necklace on her neck matches her dress perfectly. （她脖子上戴的金項鍊跟洋裝超級搭。）
+- Whose sunglasses are those on the cat? （貓咪臉上戴的那副太陽眼鏡是誰的？）

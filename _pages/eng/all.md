@@ -77,6 +77,11 @@ all 的意思是「全部、都」，收到的報告不是其中一兩份，而�
 - all day
   - Why were you at school all day yesterday? 地點（Place） ＋ 時間（Time）
 
+- Why were you at school all day yesterday?你昨天为什么一整天都在学校？
+
+## the whole day 一整天
+
+
 ## All of + the / these / those/ 所有格(my,your)
 「這群/那群東西的全部」時，習慣用 `all of + the / these / those/ 所有格(my,your) + 可數名詞(加s)/不可數名詞` 的結構。
 

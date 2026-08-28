@@ -306,7 +306,7 @@ This jacket costs a hundred euros.（這件外套花費了一百歐元——這�
 
 除了 *Do you use...?*，在旅遊或購物時，你還會常聽到這幾句意思相近、同樣好用的句型：
 
-1. **Do you take...?**（你們收……嗎？）
+1. **Do you take...?**（你們收...嗎？）
 * *Do you take US dollars?*（你們收美金嗎？）
 
 

@@ -7,13 +7,37 @@ keywords: English, Frequency
 去某個地方的「頻率」（例如一週幾次、一個月幾次），要用 How often... 搭配 現在簡單式。
 
 How often（多常...）的問句，我們會把次數跟時間結合
-
+- How often does she go shopping?
 - How often do you come here? (你多常來這裡？) 
   - I come here three times a week. (我一週來三次。)
 - How often do you go to the library? （你多常去圖書館？）
 - How often do you work out? （你多常運動？）
 - How often does she go shopping?她多久去购物一次？
+- Duo often goes shopping with Anna.
 
+## 頻率副詞
+- Always（總是，100%）
+- Usually（通常，80%）
+- Often（常常，60%）
+- Sometimes（有時候，40%）
+- Seldom / Rarely（很少/罕見，10%）
+- Never（從不，0%）
+
+
+## 現在式(習慣) 頻率副詞
+頻率副詞放在be動詞後，一般動詞前面。 
+
+- Tom alwavs visits his grandma on her birthday. It's in May.Tom总是在他奶奶生日的时候去看望她。是在五月。
+- Anna sometimes goes to work by car.
+- Where does she usually play basketball?
+- He often walks to school
+- What do you usually draw?  
+- Do you usually cook dinner?  
+- But he was usually quiet!
+- Does she usually sleep in that bedroom?她平常在那個房間睡覺嗎
+
+
+## 多久一次
 公式是：
 ```
 次數 + a + 時間單位」
@@ -38,35 +62,12 @@ How often（多常...）的問句，我們會把次數跟時間結合
 - She practices guitar every Tuesday.(注意，guitar前面沒有the)  
 - This restaurant always opens at 6 a.m.
 
-## never
+## never 從不
 - We never work on Friday**s**
 - First painting**s** are never good.
 - we nerver finish the school early
 - He never spends money on ice cream.他从不在冰淇淋上花钱。
 - I never take the subway to work.我从来不坐地铁去工作。
-
-## 現在式(習慣) 頻率副詞
-頻率副詞放在be動詞後，一般動詞前面。 
-
-- Tom alwavs visits his grandma on her birthday. It's in May.Tom总是在他奶奶生日的时候去看望她。是在五月。
-- Anna sometimes goes to work by car.
-- Where does she usually play basketball?
-- He often walks to school
-- What do you usually draw?  
-- Do you usually cook dinner?  
-- I usually don't enjoy American food,but last night I really enjoyed it!
-
-## 頻率副詞
-- Always（總是，100%）
-- Usually（通常，80%）
-- Often（常常，60%）
-- Sometimes（有時候，40%）
-- Seldom / Rarely（很少/罕見，10%）
-- Never（從不，0%）
-
-- But he was usually quiet!
-
-## never 當作否定
 - You never responded to my letters...
 
 ## 頻率副詞放最後面
