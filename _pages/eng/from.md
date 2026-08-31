@@ -3,7 +3,7 @@ title: from
 date: 2026-08-17
 keywords: english, from
 ---
-## from
+## from 來自那個國家
 - I am from a small town near Shanghai.我來自上海附近的小鎮
 - I am from America.我來自美國
 - I am from China.
@@ -11,8 +11,9 @@ keywords: english, from
 - I am not from New York.我不是来自纽约。
 
 
-## 來源與出處 (Source / Origin)
+## 物品的來源/供應者
 這就是你那個例句的邏輯，指東西是「從哪裡產生的」。
+- it's from Germany.是来自德国的。
 * This book is from the library.(這本書是從圖書館借來的。)
 - I need to buy some vegetables from the grocery store.
   - from 強調 物品的來源/供應者

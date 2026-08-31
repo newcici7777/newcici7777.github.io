@@ -21,7 +21,7 @@ keywords: english, who, what
 ```
 Who (主詞) + 動詞 
 ```
-
+- Look at this clean plate! Who washed the dishes?看这个千净的盘子！是谁洗的碗？
 - Who invited you to the party?（是誰邀請你來派對的？ → 進行邀請動作的主人就是 Who）
 - Who will come with us?
 - Who was your server yesterday?昨天谁是你的服务员？

@@ -56,6 +56,7 @@ keywords: countable , uncountable
 - Can I have a piece of fruit.我可以吃一塊水果嗎？
 
 - How many grams of sugar are in this snack? （這個零食裡有多少公克的糖？）
+- we have a bag of rice and a bottle of wine. We don't have any butter. 
 
 ## 容器單位 影嚮動詞「單複數」
 - This bag of potatoes is very heavy. 這袋馬鈴薯很重
@@ -74,6 +75,11 @@ keywords: countable , uncountable
 
 如果拿掉pair of，就要用複數動詞
 - Are these glasses thirty dollars?
+
+## How many + 可數量詞
+- How **many** bottle**s** of **milk** do we have? I need a bottle of milk.
+  - 量詞bottle加s，many是跟著「可數」量詞
+- Where **are those** cup**s**? 那些杯子在那裡？ cup是可數量詞，在這是多個杯子，要加s
 
 
 ## 一片一片 slices Pieces

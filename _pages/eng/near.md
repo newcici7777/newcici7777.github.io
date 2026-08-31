@@ -160,7 +160,7 @@ the garden.我們家離河流很近，但離花園更近。
 
 ## close to (時間上的接近)
 - It is close to 7.快七點了
-
+- It's close to five now.
 
 ## beside 在旁邊
 一個人站在另一個人的身側，或是某個風景在另一個物體的旁邊  

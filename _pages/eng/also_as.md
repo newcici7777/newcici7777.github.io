@@ -14,6 +14,10 @@ also放在動詞前面，意思是「也」
 放在be動詞後面 + also 
 - He is also a student.（他也是個學生。）
 
+- He bought coffee, and also tea.他买了咖啡，还有茶。
+  - 原句:He bought coffee, and he also bought tea.
+  - 因為前面已經提過動詞 bought 和主詞 he 了，為了避免重複，英文口語會把重複的動詞省略，只留下連接詞 and、副詞 also，以及被補充的名詞 tea。所以 also 實際上是在修飾被省略的動詞概念（亦即：他「也」買了茶），而不是直接當作 tea 的形容詞。
+  
 ## as well 也
 as well 放在最後，意思是「也」
 - Yes, I like the lunch as well.

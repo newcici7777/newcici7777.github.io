@@ -63,7 +63,7 @@ be famous for + 原因（成就、作品、特點）
   - 使用一個禮拜
 
 ## for +「具體的時間點」(指定)
-- An appointment for nine
+- An appointment for nine.
   - 指定給某個時間
 
 ## for 「對象、適用族群」

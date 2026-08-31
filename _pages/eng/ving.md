@@ -9,6 +9,7 @@ keywords: English,finish,start,begin
 ## finish + Ving
 這件事要正在進行中，才能「完成」它
 - Mom finished cooking at 5 p.m. 
+- I finished cooking and then ate dinner.我做完了饭，然后吃了晚饭。
 
 ## stop / quit + Ving 停止
 事情正在做，才能喊停

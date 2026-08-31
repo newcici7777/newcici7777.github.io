@@ -3,13 +3,14 @@ title: kind of 種類 / different
 date: 2026-08-11
 keywords: English, 
 ---
+## come from
 - Where does the apple come from?
   - 這個蘋果(單數)是那來的？也可以回答是某個產地，但也可能是超市買來？便利商店？你媽給的？
-- Where does this kind of apple come from?
+- Where **does this kind** of apple come from?
   - 這個「種類」的蘋果(單數)是來自那個產地
-- Where does this kind of apple**s** come from?
+- Where **does this kind** of apple**s** come from?
   - 這個「種類」的蘋果(複數)是來自那個產地
-- Where does this kind of rice come from?
+- Where **does this kind** of **rice** come from?
   - 這個「種類」的米(不可數名詞，不加s)是來自那個產地
 
 助動詞does是跟著kind，助動詞不是跟著蘋果或米。
@@ -22,23 +23,33 @@ keywords: English,
 若有很多種類的蘋果，把數字two去掉。
 - Where **DO** **these** kind**s** of apple**s** come from?
 
-若想用be動詞 + from = come from，都是問產地，以下都是同樣意思，只有單複數之分。
-- Where are this apple from?(單數)
-- Where are these apples from?(複數)
-- Where are this kind of apple from?(種類單數)
-- Where are this kind of apple**s** from?(種類單數)
-- Where are these kind**s** of apple**s** from?(種類複數)
-- Where are these two kind**s** of apple**s** from?(種類複數)
-
-- 單數問： Where DOES this kind of rice come from?(這個種類的米從那來？)
+- 單數問： Where **DOES this kind** of **rice** come from?(這個種類的米從那來？)
   - 答： It **COMES** from Thailand.（It 搭配動詞加 s）
-- 複數問： Where DO these kinds of rice come from?（例如：桌上有泰國香米、日本越光米、台灣池上米好幾堆)
+- 複數問： Where **DO these kinds** of **rice** come from?（例如：桌上有泰國香米、日本越光米、台灣池上米好幾堆)
   - 答： They **COME** from Thailand and Japan.（They 搭配原形動詞）
+
+例句:
+- This coffee comes from Africa.这个咖啡来自非洲。
+
+## be + from
+若想用be動詞 + from = come from，都是問產地，以下都是同樣意思，只有單複數之分。
+- Where **is this apple** from?(蘋果單數)
+  - 這**一棵**蘋果來自那裡？(通常be from是問產地)
+- Where **are these apples** from?(蘋果複數)
+  - **這堆**蘋果來自那裡？(通常be from是問產地)
+- Where **is this kind** of apple from?(種類單數，蘋果單數)
+  - 「這一棵」蘋果的種類來自那裡？
+- Where **is this kind** of apple**s** from?(種類單數，蘋果複數)
+  - **這堆蘋果**，只有一個種類，這「一個種類」是來自那裡？
+- Where **are these** kind**s** of apple**s** from?(種類複數，蘋果複數)
+  - **這堆**蘋果有「很多」的種類，這些種類分別是來自那裡？
+- Where **are these two** kind**s** of apple**s** from?(種類複數，蘋果複數)
+  - 「這堆」蘋果有「二個」種類，這二個種類分別是來自那裡？
 
 ## all/different kinds of 各種各樣
 all所有種類、different(各種)都是複數，所以kind後面要加上s。
 - all kind**s** of...（各種各樣的）
-  - I like all kinds of music. （我喜歡各種各樣的音樂)
+  - I like all kinds of music. （我喜歡各種各樣的音樂) 音樂不可數
 - different kind**s** of...（不同種類的）
   - There are many different kinds of people in the world.世界上有許多不同種類的人
 

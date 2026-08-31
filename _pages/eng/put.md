@@ -27,6 +27,7 @@ put + [物品] + on + [表面/地方]
 
 ## put on 放上去
 - Please put some cheese on the pizza.（請在披薩上放一些起司。）
+- He always puts cheese on his crackers.他总是在他的饼干上放奶酪。
 
 ## put on 穿上、戴上
 在衣物配件的語境中（額外補充，意思不同）：當後面接衣服時，put on 就會變成「穿上、戴上」。
