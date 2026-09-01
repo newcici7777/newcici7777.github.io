@@ -9,6 +9,8 @@ keywords: be going to
 - Who are you writing to?
 - I'm waiting for my friend.
 - Our company is having a meeting right now.我们的公司现在正在开会。
+- Are you speaking to Anna right now?你玑在正在跟安娜说话吗？
+
 
 ## soon
 - 詞性： 時間副詞（Adverb）

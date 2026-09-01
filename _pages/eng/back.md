@@ -25,9 +25,11 @@ back 是一個副詞 (Adverb)，用來描述「be動詞狀態」，意思是「�
 
 * Emma (主詞)+ is (be動詞)+ back (狀態：回來了)+ from (介系詞：從...)+ the business trip (地點/事件)。
 
-這就像是一個座標系統：
+- Is Emma back from the business trip?
 * I am back from Tokyo.(我是從東京回來的。)
 * He is back from his lunch break.(他從午休回來了。)
+- When will you be back from the office?你什么时候会从办公室回来？
+
 
 ## 省略 from
 如果大家已經知道你去哪裡了，你可以直接說：

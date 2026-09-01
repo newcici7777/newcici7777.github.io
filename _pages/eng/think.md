@@ -3,12 +3,18 @@ title: think, thought
 date: 2026-08-28
 keywords: English,think,thought
 ---
-## think 認為
+## think + 子句 (認為)
 主詞 + think + that可省略 + (完整子句)
 - Why do you think that he wants...(為什麼你覺得他想要...？)
 - Why do you think he wants...(為什麼你覺得他想要...？)
-
+- I think he won't be angry.
 - I think it's OK to eat one slice.
+
+## think about + 名詞
+- Are you thinking about the problem at work?你在想那个工作上的问题吗？
+- Are you thinking about that problem?你在想那个问题吗？
+- I need to think about the date of the next meeting.我需要想想下一次
+会议的日期。
 
 ## thought 以為
 用 thought（過去式）代表「過去認為」，但實際上並不是這樣。

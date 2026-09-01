@@ -14,6 +14,8 @@ keywords: english, less
 - The living room is bigger than the kitchen.
 - Are big cities better than small cities? 大城市比小城市更好吗？city要加複數
 
+- This restaurant is worse than that restaurant.这个餐厅比那个餐厅
+更糟糕。
 
 ## 最高級
 ```
@@ -22,11 +24,12 @@ keywords: english, less
 
 - It's the hottest day in August
 - Is March the hottest month?
-
 - Ben is the tallest boy in his family.
 - She's the tallest girl in my school.
 - This is the tallest and oldest roller coaster in the country.
 
+- Let's go to the most interesting place in town.咱们去镇上最有意思的地方吧！
+- Is Paris the most famous city in France?
 - Ben is the most important player. 
 - Which trip is the most exciting?
 - the most exciting part of that game. 那场比赛最令人兴奋的部分    

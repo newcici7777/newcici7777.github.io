@@ -7,8 +7,8 @@ keywords: english, put
 - I'm going to put these boxes in the living room. After lunch, can you help me put the refrigerator in the kitchen?
 - Can you put this plant on the table?
 - Put these dishes on the table.把这些盘子放在桌子上。
-- You can put chicken on the dish.你可以把鸡肉放在
-这个盘子上。
+- You can put chicken on the dish.你可以把鸡肉放在这个盘子上。
+- Put four spoons on the table.把四个勺子放在桌子上。
 
 ## put... together ＝ 把...湊在一起、組合起來
 - Now we can put it all together.現在我們可以把這一切整合在一起了。

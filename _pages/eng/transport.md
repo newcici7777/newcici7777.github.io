@@ -316,14 +316,18 @@ flight 不只是機器，它包含了時間、編號、路線和行程（也就�
 ```
 fly + to + 地點。
 ```
+- Can we fly to the UK next week?
 - We want to fly to Japan next month. (我們下個月想飛去日本。)
-- I’m flying to Taipei for a meeting. (我要飛去台北開會。)
 - Do you want to fly to New York or Los Angeles?
 - I want to fly to Japan.
 - Now he's going to fly from London to Paris. He's travling a lot.现在他要从伦敦飞往巴黎。他经常旅行。
+
+- I’m flying to Taipei for a meeting. (我要飛去台北開會。)
+
 - Dad flies to London every week.爸爸每周都飞去伦敦。
 - Ben often flies to Germany.本经常坐飞机去德国。
 - He often flies to the UK.他经常飞去英国。
+
 - Tom flew from New York to London. Tom从纽约飞到了伦敦
 - I flew from London to Oxford yesterday.我昨天从伦敦飞去了
 牛津。

@@ -22,6 +22,7 @@ keywords: english, from
 
 ## from 人
 - Zari opens a gift from her mother.Zari打開一份來自她媽媽的禮物。
+- This is an email from him.这是一封来自他的电子邮件。
 
 ## 距離與位置 (Distance / Location)
 指從一點「離開」到另一點。
@@ -53,6 +54,7 @@ keywords: english, from
 
 走路（Walk）
 * I walked from my house to the convenience store. （我從我家走路到便利商店。）
+- We are walking from the park to the store.我们在从公园走去商店。
 
 🚗 2. 開車（Drive）
 * She drove from Taipei to Taichung yesterday. （她昨天從台北開車到台中。）

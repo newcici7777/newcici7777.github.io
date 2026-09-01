@@ -33,6 +33,12 @@ to用來表示「目標、對應關係或終點」
 - This is the key to your new house.(这是你的新房子的钥匙。)
 - She is looking for the key to her apartment.
 - I can't find the key to my office!(我找不到我辦公室的鑰匙)
+- Duo doesn't remember the answer to that question. Duo不記得那個問題的答案
+
+- The key to success（成功的關鍵）
+- The door to success（通往成功的大門——比喻成功之門）
+- The answer to the question（問題的答案）
+- the answer to this question
 
 ## 介系詞片語（To 是方向/連接）
 to 後面接的是名詞/地方，它是介系詞，代表「通往...的 / 關於...的（事物）」。
@@ -42,11 +48,6 @@ to 後面接的是名詞/地方，它是介系詞，代表「通往...的 / 關�
 - The ticket to Taipei（去台北的車票——通往台北的票）
 - Kevin enjoyed his trip to New York last year.Kevin很享受他去年去纽约的旅行。
 
-
-- The key to success（成功的關鍵）
-- The door to success（通往成功的大門——比喻成功之門）
-- The answer to the question（問題的答案）
-- the answer to this question
 
 ## 畫畫
 paint 是水彩畫 draw 是用鉛筆描寫  

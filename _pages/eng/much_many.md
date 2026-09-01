@@ -9,8 +9,8 @@ keywords: english, much,many
 - There are many old books on the bookcase.
 - She has many photoes of her daughter.
 - There are many shows in Las Vegas.
-- How many babies are at the party?
-- How many slice**s** of pizza did you take?你拿了幾片披薩？
+
+- There are many restaurants in front of the museum.在博物馆前面有很多餐厅。
 
 ## much 當副詞
 - It is much bigger.（大很多）
@@ -30,6 +30,7 @@ keywords: english, much,many
   - too much 不可數名詞honey
   - too many 可數名詞potatoes
 - Don't put too much butter on my bread.不要在我的麵包上放太多奶油。
+- Too much salt is bad for you.太多盐对你不好。
 
 ## 多少錢How much + be動詞
 ```
@@ -61,8 +62,11 @@ How much does 東西 cost ?
 
 ## How much + 不可數名詞(不可以加s)
 - How much ice creamdo you want? (你想要多少冰淇淋？)
-- How much food do we need to buy?
+- How much food do we need to buy?  
+
 food (食物) 在英文中是一個「不可數名詞」。就像水、空氣、金錢一樣，我們不會說 "one food", "two foods"（除非是在談論特殊的料理種類），所以我們用 much 來詢問總量。
+
+
 
 
 ## How many + 可數容器名詞(加s)
@@ -76,6 +80,7 @@ food (食物) 在英文中是一個「不可數名詞」。就像水、空氣、
 - How many **cups of coffee** do you drink a day?（你一天喝幾杯咖啡？）
 - How many **bags of rice** do we need?（我們需要幾包米？）
 - How many **cans of beer** are in the fridge?（冰箱裡有幾罐啤酒？）
+- How many slice**s** of pizza did you take?你拿了幾片披薩？
 
 - 問具體容器/包裝（可數）：
   - 👉 How many **bottles** of milk...?（有幾「瓶」牛奶？）
@@ -93,6 +98,9 @@ food (食物) 在英文中是一個「不可數名詞」。就像水、空氣、
 - **開關 2**是「地方存在」還是「某人擁有」？
   - 「某個地方存在/有...」 → 用 is there / are there
   - 「某人/某物擁有...」 → 用 have / has
+
+### How many 複數名詞 are ?
+- How many bab**ies** **are** at the party?
 
 ### How many 複數名詞 are there...?
 眼睛看著一個區域/空間（如：桌上、房間裡），清點有幾個「可數」的東西。

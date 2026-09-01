@@ -99,31 +99,40 @@ Pieces（塊 / 片）
   - Yeah, give me two pieces.好啊，給我兩塊。
 
 
-## 容器單位
+## 容器單位 + 不可數名詞
 
 **數字** + **容器單位** + of + **內容物**的結構。
-
-* Twelve bags of chips(12 包洋芋片)
 * Twelve bottles of water(12 瓶水)
 * Twelve cups of coffee(12 杯咖啡)
 
-There are twelve bottles of waterin the fridge.(冰箱裡有 12 瓶水。)
+- There are twelve bottle**s** of water in the fridge.(冰箱裡有 12 瓶水。)
+* I bought four bag**s** of rice at the store.(我在店裡買了四袋米。)
 
-* Bags of crackers(袋裝餅乾) → 數袋子。
-* Boxes of cookies(盒裝餅乾) → 數盒子。
-* Cups of coffee(杯裝咖啡) → 數杯子。
+### 容器單位前面沒有數字，代表「多個」
+* Cup**s** of coffee(杯裝咖啡) → 多個杯子。
+* Bag**s** of cracker**s**(袋裝餅乾) → 多個袋子。
+* Box**es** of cookie**s**(盒裝餅乾) → 多個盒子。
 
 
-**數字** + **容器單位(複數)** + of + **內容物**
+## 容器單位 + 可數名詞**S**
+不是只有不可數名詞可以用量詞，可數名詞也可以
 
-* There are three bags of chipson the sofa.(沙發上有三包洋芋片。)
-* I bought four bags of riceat the store.(我在店裡買了四袋米。)
+**數字** + **容器單位(複數)** + of + 可數名詞加S
+* Twelve ba**s** of chip**s**(12 包洋芋片)
+
+- A **bag** of cracker**s** and a bag of rice.
+- We need two bag**s** of tomatoe**s**. 我们需要两袋番茄。
+* There are three bag**s** of chip**s** on the sofa.(沙發上有三包洋芋片。)
+- There are two bags of cracker**s** on the table.在桌子上有两袋饼千。
+
 
 ## 多個名詞組合
 當一個名詞用來修飾另一個名詞時，通常會直接把修飾詞放在前面（形成「名詞 ＋ 名詞」的複合結構）。
 
 - table reservation 桌子的預訂 = 訂位
   - table 放在前面當形容詞
+- twelve water bottle**s** 12個水瓶，water當形容詞，修飾後面的名詞bottles
+  - Your water bottle is dirty.你的水瓶很脏。
 
 一個名詞拿來當作「形容詞」修飾另一個名詞時，前面的那個名詞**通常要用單數形**（即使我們可能有好幾張桌子要訂），所以要說 *table reservation*，而不是 table*s* reservation。
 

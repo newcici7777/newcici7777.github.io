@@ -23,6 +23,8 @@ get幫 + 人 + 拿東西
 get幫 + 間接受詞(人) + 直接受詞(東西)
 ```
 - Can I get you a cup of tea.我可以幫「你」拿「一杯茶」
+- Can you get us a cup, please? 你可以幫我們拿一個杯子嗎
+- Can we get a menu, please? 我們可以拿一個菜單嗎？
 
 ## get some cash 提款 
 ```
@@ -70,6 +72,7 @@ get 是一個超級萬用的動詞。當它搭配房間、座位、車子等空�
 
 ## 收到信
 - I never got your letters.
+- He got an e-mail last night.他昨晚收到了一封电子邮件。
 
 * 正式說法：He received an email.（他收到了一封電子郵件。）
 * 口語說法：He gotan email.（他拿到/收到了一封信。）

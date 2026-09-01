@@ -104,6 +104,7 @@ walk跟pass都是動詞。
 - Drive past the bank 開車經過銀行
 - Bea's boss walks past Bea's desk.
 - Do I need to drive past the zoo? 我需要开车经过动物园吗？
+- You need to walk past the hospital.你需要走过医院。
 
 ```
 **動詞** + past + **地點** (描述經過某處)

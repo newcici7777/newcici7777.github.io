@@ -8,18 +8,19 @@ both 的意思是「兩者都」，專門用在數量剛好是兩個人或物的
 ## both(形容詞) + 名詞s 「籠統、泛指、廣泛的名詞」
 both後面是「籠統、廣泛的名詞」（沒有the/所有格）
 ```
-both(形容詞) + 名詞
+both(形容詞) + 可數名詞S
 ```
-* They are both students.（他們兩個人都是學生。
-* Both parents were teachers.（父母雙親都是老師 → 這裡的 parents 是泛指，所以不用加 of）
-* Both cars are expensive.（這兩台車都很貴）
-* I want both books. （這兩本書我都想要。）
-* Both options look great to me. （這兩個選擇對我來說看起來都很棒。）
-* Both cats are sleeping on the sofa. （兩隻貓都在沙發上睡覺。）
-* You can take both umbrellas just in case. （以防萬一，這兩把雨傘你都可以帶著。）
-* Both cars need to be washed. （這兩輛車都需要洗了。）
-* Both answers are correct. （這兩個答案都是對的。）
-* Both cars are fast.（這兩輛車都很快 → 當形容詞修飾 cars）
+- I like both countr**ies**.
+* They are both student**s**.（他們兩個人都是學生。
+* Both parents were teacher**s**.（父母雙親都是老師 → 這裡的 parents 是泛指，所以不用加 of）
+* Both car**s** are expensive.（這兩台車都很貴）
+* I want both book**s**. （這兩本書我都想要。）
+* Both option**s** look great to me. （這兩個選擇對我來說看起來都很棒。）
+* Both cat**s** are sleeping on the sofa. （兩隻貓都在沙發上睡覺。）
+* You can take both umbrella**s** just in case. （以防萬一，這兩把雨傘你都可以帶著。）
+* Both car**s** need to be washed. （這兩輛車都需要洗了。）
+* Both answer**s** are correct. （這兩個答案都是對的。）
+* Both car**s** are fast.（這兩輛車都很快 → 當形容詞修飾 cars）
 
 ## both(副詞) 兩者都
 both放在「be動詞後」，「一般動詞前」面。

@@ -3,7 +3,7 @@ title: ready
 date: 2026-08-18
 keywords: English, ready
 ---
-## already 已經
+## already(adv.) 已經
 already 是個副詞（Adverb），用來表示某個動作或事情「早就」發生了、完成，或是比預期中還要早發生。
 
 - 現在式: I already have a menu for you.
@@ -14,24 +14,30 @@ already 是個副詞（Adverb），用來表示某個動作或事情「早就」
 ## be ready(形容詞) 準備好
 ready 是形容詞：它不能單獨當動詞用，前面一定要搭配 be 動詞（如 am, is, are, was, were，或是加上助動詞變成 will be）來形成完整的述語。
 
-- Dinner is ready.晚餐已經準備好了
+
+- Are you ready?（你準備好了嗎？）
+- I am ready.（我準備好了。）
+- Dinner is ready.（晚餐準備好／上桌了。）
   - 不需要在 dinner 前面加「the」。
 - I want everything ready by tomorrow.（我希望明天前每樣東西都準備好。）
 - When will it be ready?
 - Dinner will be ready soon be ready.晚餐快要準備好了
+- Lunch will be ready close to twelve.午饭会在快到十二点时准备好。
+- Are you ready to go now?你现在准备好走了吗？
 
+## be ready(形容詞) to + 動詞 (V) (準備好去做某事)
+be ready(形) to後面接動作（動詞原型）。
 
-
-
-## ready to + 動詞 (V) (即將啟動：準備好要做...)
-ready to後面接動作（動詞原型）。代表你已經蓄勢待發，隨時可以開始執行那個動作。  
-例句解析：
+- Are they ready to leave?他们准备好离开了吗？
+- Is she ready to start the meeting?她准备好开始会议吗
 - We are all ready to go! （我們都準備好要出發了！ → go 是動作，隨時能走）
 - Are you ready to order? （您準備好要點餐了嗎？ → 餐廳服務生最常講的標準句）
+- Yes, I'm ready to order.
 - I'm ready to learn Japanese. （我準備好要開始學日文了。）
 
-## ready for + 名詞 (N) (心理/物質上：對某件事物做好準備)
-ready for 後面接名詞。代表你對於即將到來的「某個事件、東西、挑戰」已經整備完畢，心態或物品都 OK 了。  
+
+## be ready(形) for + 名詞 (N) (心理/物質上：對某件事物做好準備)
+be ready for 後面接名詞。代表你對於即將到來的「某個事件、東西、挑戰」已經整備完畢，心態或物品都 OK 了。  
 打開背包檢查，去考試、去上班、去面試的東西都裝齊了。  
 
 - Are you ready for the exam tomorrow? （你對明天的考試準備好了嗎？ → the exam 是名詞）

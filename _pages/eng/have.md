@@ -24,6 +24,7 @@ have 的意思是「取得、擁有、入住」
 - We can have dinner.    
 - Are you having dinner? 你在吃晚餐嗎？
 - Ben is not having fish and chips.本没有在吃炸鱼和薯条。
+- My cat had fish for dinner.我的猫晚饭吃了鱼。
 
 ## 吃藥
 - have medison.  

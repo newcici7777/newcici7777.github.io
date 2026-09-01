@@ -11,6 +11,7 @@ keywords: English
 - Which classes are you taking this semester?你這學期選了哪些課？(classes為複數)
 - My friend takes writing lessons in that building.我的朋友在那座楼上写作课。
   - takes 現在式，描述現在事實。
+- Does Emma take piano lessons?艾玛上钢琴课吗？
 
 ## taking a class 最近上什麼課
 用進行式代表「最近在進行的」。
@@ -57,6 +58,7 @@ take 是：「花時間、花力氣」
 - He took the test and then went home.他参加了测试，然后回家了。
 - We took a Chinese listening test yesterday.我们昨天参加了一个中文听力测试。
 - How many students took the math test last week?有多少个学生参加上周的数学测试？
+- She will take a French listening test tomorrow.她明天会参加一个法语听力测试。
 
 ## In class
 已經坐在教室裡聽講了（正在上課中)，注意！class是抽象概念(不可數名詞)，不需要加 a，跟the
@@ -169,6 +171,7 @@ campus 指的是學校那塊「土地、地面範圍」，所以用 on。
 
 
 
+
 ## in pairs, in groups of 副詞片語
 in pairs, in groups of 前面加上了介系詞 in 之後，整個片語是用來修飾前面的動詞或整個動作的狀態，回答「是用什麼形式在進行？」這個問題。
 ```
@@ -182,9 +185,13 @@ In 原本的核心意思是「在...裡面」。當你說 in pairs（成雙成�
 - Students discussed the topic in groups of five.（學生們以五人一組的方式討論這個主題。——放在受詞後面）
 - The class worked in groups of five to finish the project.（全班以五人一組的方式合作完成這個專案。）
 
+## do homework 做作業
+- My teacher's angry because I did the wrong homework!我的老师很生气，因为我做错作业了！
+
+
+----------------------
 ## sessions
 - For how many sessions do you need a personal trainer?
-這是一個非常棒且細緻的文法與語感問題！
 
 簡單來說：**`lesson`** 和 **`session`** 都能翻譯成「課程」，但它們適用的**場景和包裝方式**很不一樣。
 

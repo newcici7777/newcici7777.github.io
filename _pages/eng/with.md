@@ -9,7 +9,12 @@ keywords: English, with
 * use your phone（使用你的手機）
 * use this app（使用這個應用程式）
 
+- Do you want to use a spoon or a fork?你想要用勺子还是叉子？
+
 ## with 使用
+```
+動作 + with 工具 
+```
 用在工具：
 - Write with a pen（用原子筆寫字）
 - Cut it with a knife（用刀子切它）
@@ -84,6 +89,14 @@ help me + 原形動詞
 help me + to + 原形動詞
 ```
 * Can you help me to fix this?（你能幫我修這個嗎？）
+
+
+## a problem with 發生問題的東西 (東西有問題)
+- Emma has a big problem with her computer.Emma的电脑出了大问题。
+- Is there a problem with this website?这个网站出问题了吗？
+- There is a problem with our website.
+- Is there a problem with your laptop?你的笔记本电脑出了
+问题吗？
 
 
 ---------------------------------------------

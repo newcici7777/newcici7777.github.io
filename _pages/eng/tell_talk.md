@@ -116,6 +116,7 @@ speak「演講、發表談話」，跟上司說話、報告用speak
 ### speak + to/with + 人
 - May I speak to the manager?
 - Speak to me.
+- You can speak to your boss tomorrow. I
 
 ### speak about + 主題
 - He spoke about science.

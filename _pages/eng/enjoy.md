@@ -6,6 +6,7 @@ keywords: english
 ## 享用 + 食物名詞
 - Enjoy the pizza!
 - Enjoy your coffee!
+- Enjoy your meal.
 
 ## enjoy 享受 + 名詞
 * We enjoyed our stay at the hotel.（我們很享受在飯店停留的這段時間。 → 名詞）

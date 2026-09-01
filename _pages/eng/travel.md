@@ -43,7 +43,6 @@ Trip 則是一般廣義的「旅行、出遊」，不一定有導覽性質，單
 visit to 地點
 ```
 - a visit to the museum（參觀博物館）
-- a visit to a website/home page 訪問網站／主頁
 - Our visit to the local art gallery inspired many new ideas. （我們對當地美術館的參觀激發了許多新點子。）
 
 ```
@@ -60,6 +59,22 @@ pay a visit to 拜訪
 * We want to visit New York in January.這句話表達的就是你們想去紐約旅遊，而且是計畫在明年的一月份。
 * 語感："Visit" 比 "go to" 聽起來更有一種「去當地觀光、體驗」的意味，而不僅僅是「到達」那個點。
 
+## visit(名/動) 造訪網站
+
+### a visit 名詞
+- a visit to a website/home page 訪問網站／主頁
+
+- A successful visit to the website should be fast and user-friendly.
+（一次成功的網站造訪應該要快速且對使用者友好。）
+- Our online store received thousands of visits to the website yesterday.（我們的網路商店昨天收到了數千次對該網站的造訪。）
+  - (解析：這裡用複數形 visits，常跟流量、點閱次數有關。
+
+- Most users decide whether to stay within seconds of their first visit to the home page.（大多數的使用者在首次造訪首頁的幾秒鐘內，就會決定要不要留下來。）
+- Make sure your latest announcement is the first thing people see upon their visit to the home page.
+（確保當人們造訪首頁時，第一眼就能看到你們的最新公告。）
+
+### visit 動詞
+- I always visit that website.我总是访问那个网站。
 
 ## journey(名詞) to...（去...的漫長旅程 / 歷程）
 - The long journey to the summit was exhausting but worth. （那趟通往山頂的漫長旅程雖然令人精疲力竭，但非常值得。）
@@ -126,6 +141,7 @@ museum 是可數的，當museum是第一次提到、或是泛指任何一間博�
 - visit a gallery（參觀美術館）
 - visit a city（造訪某城市）
 - We visited many exciting places in New York.(places複數)我们在纽约去了很多令人兴奋的地方。
+- We want to visit New York in January.我们想要在一月去纽约游览。
 
 ## take
 take 除了「拿、帶」之外，有一個很大的功能是用來表示「進行、從事、經歷一個需要花時間或體力的活動／行程」。
@@ -269,6 +285,7 @@ go 去/出發，注意！這邊沒有 a。
 「on vacation」是介系詞片語，on是進行中，表達「狀態」是「放假中」。  
 - We are planning to go on vacation to Europe this summer.我們計劃今年夏天去歐洲度假。
 - He went on a long vacation this summer.（他今年夏天去了一趟長假。）
+- You need to go on vacation!你需要去度假
 
 ### be on vacation in
 ```
@@ -278,6 +295,7 @@ be 動詞本身就代表「狀態」，on 是進行中，這邊的vacation是抽
 
 「on vacation」放假中，be動詞代表狀態，所以人「已經在某地放假中」，是靜態的，沒有動，所以用in這個介系詞。
 
+- Is Anna on vacation? 安娜在度假吗？
 - He was on vacation in Miami.(他在迈阿密度假。)
 - They are currently on vacation in Japan.（他們目前在日本度假。）
 

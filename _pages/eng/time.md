@@ -95,6 +95,7 @@ at的核心概念是「在某個精準的點」。
 ## then 未來的某個特定時間點
 * Let's meet at 5 p.m.
 * Okay, see you then!(在那時候見。)
+- I will see you then.我到时候会见你。
 
 ## then 過去的某個特定時間點
 - Look at this old photo!The kids were very young then.看这张旧照片！孩子们那时候非常年纪

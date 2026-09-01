@@ -21,6 +21,8 @@ Did you do well...?
 - Ben did not do very well on the test.本测试考得不太好。
 - Did Anna do well on the art test?安娜艺术测试考得好吗？
 - Did you do well on the reading test yesterday?你昨天的阅读测试考得好吗？
+- Did Anna do well on the art test?安娜艺术测试考得好嗎？
+
 
 ### 面試 on the interview / on the project
 - Did you do well on the interview?你昨天面試表現得好嗎？

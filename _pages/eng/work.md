@@ -102,7 +102,7 @@ do business(做生意) in the 產業、領域
 * We do business in real estate.（我們從事房地產業。）
 * We do business in music.（我們做音樂相關的生意。）
   - music 前面沒有the
-
+- We do business in China.我们在中国做生意。
 
 
 ## work from home 在家工作

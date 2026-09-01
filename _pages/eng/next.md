@@ -1,5 +1,5 @@
 ---
-title: next
+title: next, next to
 date: 2026-08-18
 keywords: english, next
 ---
@@ -26,6 +26,8 @@ next 當作「順序副詞」使用，意思是「接下來、下一步」。
 - There is a refrigerator next to the swimming pool.
 - Let's put this plant next to the window.(咱们把这个植物放在窗户旁边吧。)
 - The kitchen is next to the dining room.
+- The hospital is next to the university.医院在大学旁边。
+- Her house is next to the subway station.她的房子在地铁站旁边。
 
 ## next to 修飾前面名詞
 - The seat next to me is empty. （我旁邊的位子是空著的。）

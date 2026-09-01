@@ -69,6 +69,8 @@ keywords: give send show
 - I want to send them some bananas from my farm.
 - Grandpa will send us some new books.
 - Can you send him an email?
+- Could you send me an email?您能给我发送一封电子邮件吗？
+
 
 ### send + 人 + to 地方
 - send him to a different office.

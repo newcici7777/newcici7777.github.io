@@ -37,6 +37,8 @@ for 是一個非常關鍵的介系詞，用來連接「遲到」這個狀態與�
   - pizza 可當作不可數/可數名詞，在這邊加s當作可數名詞。
 - I want a hamberger for lunch.  (漢堡當作午餐)
 - I want this cheese for lunch. (起士當作午餐)
+- Can we have ice cream for dinner? 我们晚饭可以吃冰淇淋吗？
+- I usually drink a bottle of juice for breakfast.我平时早饭喝一瓶果汁。
 
 ## for 把「什麼東西」當作 點心
 * We can have cake for dessert. （我們可以吃蛋糕［當作］甜點。）
@@ -249,6 +251,7 @@ easy, hard, difficult, important + for
 - Eating too much sugar is bad for your teeth.（吃太多糖對你的牙齒不好。）
 - Greek yogurt is very good for digestion.（希臘優格對消化非常好。）
 - Regular exercise is good for me. （規律運動對我有好處。）
+- Too much salt is bad for you.太多盐对你不好。
 
 ### 可不可能 用 for
 因為像「可能」或「不可能」這種形容詞，在評估一件事情能否達成時，看的都是客觀條件、時間、能力或資源（例如：有沒有時間、有沒有體力、有沒有車位）。這符合我們前面提到的規則——當我們在講「外在條件」對一個人的實質影響或限制時，就是要用 for！

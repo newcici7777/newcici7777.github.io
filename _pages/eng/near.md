@@ -94,7 +94,7 @@ in this magazine
 - in the newspaper（在報紙上／裡）
 
 - Do you sell the swimsuit that is in this magazine?你們有賣這本雜誌裡面的那件泳衣嗎？
-
+- I don't understand any words in this book!这本书里的单词我一个也不懂！
 
 ## at小地點
 - Oscar is at an art museum.
@@ -142,7 +142,13 @@ outside.
 - look outside the tent（看著帳篷外面）
 - wait outside the office（在辦公室外面等）
 
-
+## near 附近
+跟next to 差不多
+- Do you want the duck near the water or on the grass?
+- near the zoo(在动物园附近)
+- I am from a small town near Shanghai.(我来自上海附近的一个小镇。)
+- In 1990, there were many restaurants near my school, but there was only one cafe.
+- Is there a hotel near the airport?在机场附近有一个酒店吗？
 
 ## close to 離...很近、在「附近」
 close to 的核心意思是「離...很近」。它強調的是距離短，但不代表兩個東西要緊緊貼在一起，中間隔著一條街、一排樹都沒關係。
@@ -161,6 +167,8 @@ the garden.我們家離河流很近，但離花園更近。
 ## close to (時間上的接近)
 - It is close to 7.快七點了
 - It's close to five now.
+- It's close to eleven o'clock now.
+- We'll eat dinner close to five.我們快五點時吃飯
 
 ## beside 在旁邊
 一個人站在另一個人的身側，或是某個風景在另一個物體的旁邊  
@@ -206,12 +214,6 @@ by（極度貼近的距離），常用於表達情感上的陪伴。
 - The photo was taken by me. （這張照片是我拍的。）
 
 
-## near 附近
-跟next to 差不多
-- Do you want the duck near the water or on the grass?
-- near the zoo(在动物园附近)
-- I am from a small town near Shanghai.(我来自上海附近的一个小镇。)
-- In 1990, there were many restaurants near my school, but there was only one cafe.
 
 
 
@@ -225,6 +227,7 @@ A 在 B 的後面，be動詞表達狀態
   - He is behind me.他在我後面。
 - A 是建築物，B 也是建築物（找路）
   - The coffee shop is behind the station.咖啡廳在車站後面。
+  - Is there a bus stop behind the house?有一個公車站牌在房子的後面嗎？
 - A 是車子，B 是建築物（找車位）
   - My car is behind the building.我的車在那棟建築物後面
 

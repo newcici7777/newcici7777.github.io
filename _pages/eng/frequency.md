@@ -85,6 +85,7 @@ How often（多常...）的問句，我們會把次數跟時間結合
 |some time|形容詞+名詞|一段時間|動詞後面|
 
 ### sometimes 有時候(頻率副詞)
+- Sometimes I take a shower in the afternoon.有时我在下午冲澡。
 - Sometimes I work from home.
 - I sometimes work from home.
 - I work from home sometimes.

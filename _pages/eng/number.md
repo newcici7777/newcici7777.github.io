@@ -16,6 +16,10 @@ eight - eighth
 nine - ninth  
 ten - tenth  
 
+## ieth 20、30、40...後面都是ieth(2死)
+- Will the office be closed on the twentieth of April?
+
+## thousand
 另外，英语没有表示万的单词，你可以就说ten thousand
 
 1,000 - one thousand  

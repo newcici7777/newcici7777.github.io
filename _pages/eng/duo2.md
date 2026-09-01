@@ -35,9 +35,10 @@ She's a teenager.
 
 ### open 形容詞 closed 形容詞
 - the book store is open.
+- Which restaurant is open?哪个餐厅开门？
 - The museum **is open** **from** ten o'clock **to** five o'clock **on** Saturday, but it **is closed** **on** Sunday.
 - Is the restaurant open?那家餐斤开门了吗？
-
+- The office will be closed on the fifteenth of January.办公室会在一月十五号关门。
 
 
 
@@ -82,6 +83,7 @@ Country > City > Town > the country > village
   - I want to live in the country when I retire.（我退休後想住在鄉下。）
 
 - Village（村莊）— 最小、最原始
+  - We live in a village in Brazil.
   - He lives in a quiet fishing village.
 
 - town 鎮
@@ -201,7 +203,9 @@ return 的詞性是及物動詞（Transitive Verb）。
 ## catch 抓
 - And I can't catch any fish!
 
-
+## wash the dish**es** 洗碗 cook煮
+- Every Saturday, he cooks dinner and I wash the dishes.每周六，他煮晚饭我洗碗。
+- He cooked rice last night, and I am cooking pork now.他昨晚煮了米饭，我现在在煮猪肉
 
 ## 無法分類
 - Ben is angry at us.
@@ -218,4 +222,4 @@ return 的詞性是及物動詞（Transitive Verb）。
 
 
 
-2351
+2475

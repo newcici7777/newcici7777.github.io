@@ -12,12 +12,14 @@ keywords: english,
 - My car needs a wash.（我的車需要洗車了——wash 在這裡也是名詞。）
 - I need a break.（我需要休息一下——break 在這裡也是名詞。）
 - I want to take a bath.我想要泡個澡  
+- He took two shower**s** yesterday.
 
 當你想用「動作」來表達「洗澡」時，通常會搭配一個動詞（如 take 或 have），把 bath 當作受詞：
 - take a bath / have a bath
 - take a shower 
 - She wants to take a bath.（她想要洗澡。）
 - He is having a bath right now.（他現在正在洗澡。）
+- He took a shower after work.他下班后冲了个澡。
 
 
 ## wash my hair(洗頭) dry my hair(吹頭)

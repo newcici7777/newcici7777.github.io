@@ -156,6 +156,7 @@ turn 在這裡當動詞，right 當副詞（或方向），用來指引方向
 ```
 Trun left/right + at the ...
 ```
+- Do I neet to turn left or right? 我需要左转还是右转？
 - Turn left at the next corner.（在下一個轉角向左轉。）
 - The driver turns left and stops the car.
 - Turn left at the end of the street

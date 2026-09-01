@@ -16,6 +16,7 @@ meal 是可數名詞，代表的是「包含時間、場合、甚至多樣食物
 （她每天吃**兩頓飯/兩餐**。 → 強調吃飯的次數/單位）
 - ❌ She eats two foods every day.
 - How much does a meal at this restaurant cost?（這家餐廳**吃一頓飯**大概要花多少錢？）
+- My dog eats six meals every day.我的狗每天吃六餐。
 - She only eats two meal**s** every day.她每天都只吃两顿饭。
 - breakfast, lunch, and dinner are three **meals**.（早、午、晚餐是三頓飯。）
 - I skip **a meal** when I'm busy.（我忙的時候會跳過**一餐**不吃。）
