@@ -4,11 +4,15 @@ date: 2026-07-31
 keywords: look, see, watch, seem, feel, hear, listen to,   
 ---
 ## 感官動詞 + 形容詞
-感官動詞 + 形容詞，描述「狀態」與「外觀」
+描述「狀態」與「外觀」
+```
+感官動詞 + 形容詞
+```
 
 - Look（看起來，眼睛看到的外觀)
   - This house looks modern.（這房子看起來很現代。）
   - She looks nice.
+  - You don't look sick.
 - Sound（聽起來）
   - That idea sounds great.（那個主意聽起來很棒。
 - Smell（聞起來）

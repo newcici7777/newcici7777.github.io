@@ -71,7 +71,7 @@ help + 人 + with + **名詞/事情**
 * Can you help me **with the dishes**? （你能幫我洗個碗嗎？）
 * Can you help me **with these bags**? （你能幫我拿這些袋子嗎？）
 * I need help **with my English pronunciation**. （我需要有人幫我糾正英文發音。）
-
+- Can you help me with something?
 
 ## help me to 原形動詞
 如果後面接的是一個動作，你可以選擇以下兩種講法（就不會用 with 了）：

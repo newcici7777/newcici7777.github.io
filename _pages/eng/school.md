@@ -14,7 +14,7 @@ keywords: English
 
 ## taking a class 最近上什麼課
 用進行式代表「最近在進行的」。
-- I’m taking driving lessons these days.我最近在上駕訓班。(現在式代表最近) 
+- I’m taking driving lessons these days.我最近在上駕訓班。(現在式代表最近)
 - I am taking a yoga class this month.我這個月在上一堂瑜珈課。 
 - I signed up for cooking lessons!我報名了烹飪課！(signed up是報名)
   - When do you start taking them?真的假的？那你什麼時候開始去上課？(taking是上課)
@@ -64,7 +64,7 @@ take 是：「花時間、花力氣」
 be + in class
 ```
 be 動詞代表「狀態」，代表此時的狀態在上課。
-
+- Lily and Zari are in class.
 - She is in class.（她在上課。）
 - I can't talk right now, I am in class.我現在不能講話，我在上課。
 - Please don't call me when I'm in class.（我上課時請不要打給我。）

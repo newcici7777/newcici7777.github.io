@@ -22,7 +22,7 @@ keywords: countable , uncountable
 - Duo will give me some potato**es** tomorrow.
 - I love these flower**s**
 - We watched cartoon**s** yesterday morning.(卡通加s)我们昨天早上看了卡通片。
-
+- We need three **knives* and two spoon**s**.
 
 ## Cake Pizza candy 可為可數/不可數
 - No, this **isn't** cake.這不是蛋糕嗎？
@@ -54,7 +54,7 @@ keywords: countable , uncountable
 - A cup of tea.一杯茶，
 - Two cup**s** of tea.
 - Can I have a piece of fruit.我可以吃一塊水果嗎？
-
+- a bottle of water and **two** bottle**s** of juice.一瓶水和两瓶果汁
 - How many grams of sugar are in this snack? （這個零食裡有多少公克的糖？）
 - we have a bag of rice and a bottle of wine. We don't have any butter. 
 
@@ -219,5 +219,16 @@ There are twelve bottles of waterin the fridge.(冰箱裡有 12 瓶水。)
 
 * *“Yes, I’ll have **a plate of fried rice** and **a cup of tea**.”*（好，我要一份炒飯和一杯茶。）
 
+------------------------------------------
+## 字尾是無聲子音f
+要把單數名詞 knife（小刀）變成複數名詞 knives（小刀們），經歷了兩個步驟：
 
+1. 步驟一：把字尾的 f 或 fe 改成 v
+2. 步驟二：加上複數字尾 -es改成 v 之後，不能只加 -s，而是要加上 -es
+- knife $\rightarrow$ knives
+- life $\rightarrow$ lives（生命）
+- thief $\rightarrow$ thieves（小偷）
+- wife $\rightarrow$ wives（妻子）
+
+為什麼要這樣變？（語音的小秘密）其實這跟「發音的順暢度」有關：如果把 knife 直接加 -s 變成 knifes，你會發現 f（無聲子音）和 s（無聲子音）連在一起唸，舌頭和氣息會很不順、很卡。把 f 改成帶有聲響的 v，再接 es（唸作 /vz/），整個發音就會變得非常順口（/naɪvz/）。英文文法很多時候都是為了「說起來更順口」而演變出這些規則的！
 

@@ -13,6 +13,7 @@ tell是及物動詞，後面「一定要加人」。
 ```
 tell + 人 + 內容
 ```
+- Can you tell the coach I'm sick?
 - She told me I was handsome.
 - Can you tell him that I will call him back? （你可以告訴他我會回電嗎？）
 - He told his parents that he passed the exam. （他告訴父母他考試及格了——這裡省去了 that。）

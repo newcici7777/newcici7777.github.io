@@ -32,6 +32,7 @@ keywords: English,
 |唱|sing|sang|sang|
 |游泳|swim|swam|swam|
 |開始|begin|began|began|
+|坐|sit|sat|sat|
 
 ## o、a 變成 e
 
@@ -96,3 +97,12 @@ keywords: English,
 |坐|sit|sat|sat|
 |走失|lose|lost|lost|
 |離開|leave|left|left|
+
+## 現在進行式不一樣
+
+
+|中文|現在式|過去式|過去分詞|現在進行式|
+|:------|:--------|:---------|:-------|:---------|
+|說謊/躺|lie|lied|lied|lying|
+|綁/打結|tie|tied|tied|tying|
+|死|die|died|沒人用|dying|

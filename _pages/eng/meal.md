@@ -4,7 +4,7 @@ date: 2026-08-27
 keywords: english, meal,menu
 ---
 - 指「食物本身」（不可數） → 用 food
-- 指「一頓飯 / 某一餐」（可數，有次數） → 用 meal / meals
+- 指「一頓飯 / 某一餐」（**可數**，有次數） → 用 meal / meals
 
 food 是不可數名詞，泛指「食物」這項物質（例如：蘋果、雞肉、米飯）。
 
@@ -16,6 +16,7 @@ meal 是可數名詞，代表的是「包含時間、場合、甚至多樣食物
 （她每天吃**兩頓飯/兩餐**。 → 強調吃飯的次數/單位）
 - ❌ She eats two foods every day.
 - How much does a meal at this restaurant cost?（這家餐廳**吃一頓飯**大概要花多少錢？）
+- She only eats two meal**s** every day.她每天都只吃两顿饭。
 - breakfast, lunch, and dinner are three **meals**.（早、午、晚餐是三頓飯。）
 - I skip **a meal** when I'm busy.（我忙的時候會跳過**一餐**不吃。）
 - Thank you for the delicious **meal**!（謝謝你準備這頓美味的**餐點/一桌菜**！）

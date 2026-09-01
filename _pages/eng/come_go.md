@@ -34,10 +34,10 @@ to 的意思是「朝向、往...方向」，在這裡當作目的地的大門�
   - She rode to the store.（她騎車去商店。）
   - Ride your bike safely to school.平安騎腳踏車去學校。
   - He rides his bike to school.（他騎腳踏車去學校。）
-- Drive to + [目的地] 開車去
+- Drive to + **目的地** 開車去
   - I drove to work this morning.（我今天早上開車去上班。）
   - Let's drive to the beach.
-- Walk to + [目的地]
+- Walk to + **目的地**
   - We walked to the station.（我們走路去車站。）
   - Walk to the end of the street.（走到這條街的盡頭。）
   - I walk to the convenience store.（我走路去便利商店。）
@@ -106,7 +106,7 @@ walk跟pass都是動詞。
 - Do I need to drive past the zoo? 我需要开车经过动物园吗？
 
 ```
-[動詞] + past + [地點] (描述經過某處)
+**動詞** + past + **地點** (描述經過某處)
 ```
 這是導航時最常用的結構，強調「從旁邊經過」。
 1. Walk past the bank and turn left.(經過銀行然後左轉。)
@@ -201,7 +201,7 @@ home前面加上「誰的」房子，就要用to
  怎麼移動：Walk / Drive / Run / Go  + 朝哪裡走：straight / along / down 
 ```
 
-walk + along + [長條狀場所]
+walk + along + **長條狀場所**
 - Walk along the street.（沿著這條街走。）後面絕對不加 to
 - Drive along Main Street（沿著大街開車）
 
@@ -287,18 +287,29 @@ Ahead 負責：「朝著前方、目標在前面」
 - I'm here with you.
 - Lily is coming with me!
 
-## come 回來 來
+## come 來
+come 跟 go的不同在於聽話的人的位置。  
+come 是離聽話的人愈來愈近。  
+go是離聽話的人愈來愈遠。  
+- I can't come to swimming practice today. 
+  - 這句話是打電話跟「在游泳池」的教練說，我不能來游泳池。
+  - come是離聽話的人愈來愈近。我要前往游泳池，與教練(聽話)會合。
+- She's coming here now!
+  - 她要過來我這邊。(我是聽話的人位置)
+- I have to go now.
+  - 我要離開了。(離聽話的人愈來愈遠)
+
+
 - Lily is coming with me!(Lily 跟我一起來)
   - come with me（跟我來 / 跟我一起去）
-  - 單純的「結伴同行、去某個地方」。這只是指「方向和動作的陪伴」，沒有任何浪漫或曖昧的含意。
+  - 單純的「結伴同行、去某個地方」，指「方向和動作的陪伴」。
 - My friend will come with me as well.
 - She's coming here with her boyfriend.
-- She's coming here now!
-- Lucas goes to [the] park with his dog every day.
+- Can my dog come with me to the party?
 - you come to the park every day.
 - Who will come to the party with me tonight?(谁今晚会跟我一起来聚会？ )  
 - Sorry, I can't come to the party.
-- Can my dog come with me to the party?
+
 
 ## Come over 過來一下
 Over = 跨過那段距離。
@@ -319,8 +330,8 @@ Over = 跨過那段距離。
 - When she gets home
 - I want to go home
 - come home 回家
-- I have to finish cleaning before your dad [comes home].  
-- Kids,Mom will not [come home] [from] the hospital tonight. 
+- I have to finish cleaning before your dad **comes home**.  
+- Kids,Mom will not **come home** **from** the hospital tonight. 
 - work from home 在家工作
 - I'll be at home between six o'clock and seven o'clock.(我在六点到七点之间会在家。)
 - Thanks for driving me home.

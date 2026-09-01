@@ -6,6 +6,9 @@ keywords: english, put
 ## put 放置
 - I'm going to put these boxes in the living room. After lunch, can you help me put the refrigerator in the kitchen?
 - Can you put this plant on the table?
+- Put these dishes on the table.把这些盘子放在桌子上。
+- You can put chicken on the dish.你可以把鸡肉放在
+这个盘子上。
 
 ## put... together ＝ 把...湊在一起、組合起來
 - Now we can put it all together.現在我們可以把這一切整合在一起了。
@@ -24,6 +27,8 @@ put 是「放、注入」，gas 是「汽油」，in 是「進去、裡面」。
 put + [物品] + on + [表面/地方]
 ```
 - Don't put too much butter on my bread.不要在我的麵包上放太多奶油。
+- I always put butter and salt on my potatoes.我总是在我的士豆上放黄油和盐。
+- He always puts cheese on his crackers.他总是在他的饼干上放奶酪。
 
 ## put on 放上去
 - Please put some cheese on the pizza.（請在披薩上放一些起司。）

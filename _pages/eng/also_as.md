@@ -30,6 +30,26 @@ too放在句子的最後面，前面(可加或不加)逗號
 - I think you're beautiful too!(too 前不加逗號)  
 - there's sausage too!  
 
+## either 我也不
+前面一定要有否定詞（如 *don't, isn't, can't, not* 等），用在否定句，放句尾，前方可有逗號，也可沒逗號。
+
+- I'm not going to sit down either!我也才不要坐下來！
+- A 說：I'm not going to eat vegetables.（我才不要吃蔬菜。）
+- B 回：I'm not going to eat them, either.（我也不要吃。）
+- Me either!（我也不要！）
+
+
+## 💡 「也」的用法總整理表
+
+| 意思 | 用法 / 位置 | 適用句型 | 經典例句 |
+| --- | --- | --- | --- |
+| **也** | **`too`**<br><br>(通常放句尾) | **肯定句** | I love coffee, **too**.<br><br>(我也愛咖啡。) |
+| **也** | **`as well`**<br><br>(通常放句尾，比較正式) | **肯定句** | She speaks French **as well**.<br><br>(她也會說法文。) |
+| **也** | **`also`**<br><br>(放句中，動詞前/be動詞後) | **肯定句** | I **also** like reading.<br><br>(我也喜歡閱讀。) |
+| **也不** | **`either`**<br><br>(一定要放**句尾**) | **否定句** *(帶有 not)* | I'm not going **either**.<br><br>(我也不去。) |
+
+
+
 ## as ... as 「跟...一樣...」
 ```
 [A] + [動詞] + as + [形容詞或副詞原級] + as + [B]
