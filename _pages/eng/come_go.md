@@ -356,12 +356,7 @@ go後面省略to，因為next就是副詞
 - Let's go out for dinner.
 - she wants to go out on Friday night!
 
-## Go get
-- Go get some pizza
-  - 原本Go and get some pizza.（去，然後拿些披薩。）
-- Go check the door.去看看門［有沒有鎖／是誰在敲門］
-- Go tell him the news.去告訴他這個消息
-- Go wash your hands.去洗手。
+
 
 ## drive off 偏離/開車離開
 off：介系詞，意思是「脫離、離開（某個表面或範圍）」
