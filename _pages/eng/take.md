@@ -18,6 +18,9 @@ keywords: Take
 
 ## 拿
 - She takes some pizza.她拿了一些披薩（去吃）。
+- We didn't want them to take the documents!我們不希望他們拿走那些文件！
+- Will you take a backpack on your trip?你旅行時會帶背包嗎？
+  - 對方接下來要離開目前所在地去旅行。背包是跟著他從這裡帶出去、離開現場的，所以要用 take，不能用bring，bring是從外地帶到說話的人位置。
 
 ## take out 拿出來
 - 把手機從口袋裡 拿出去 → take out her phone
@@ -78,6 +81,9 @@ Take 人 to 某地
 ## take + 電梯 + up to + 第幾樓 (搭電梯到幾樓)
 - Take the elevator up to [樓層]
   - Take the elevator up to the fourth floor.  （搭電梯到四樓。）
+
+## take + 電梯 + down to + 第幾樓 (搭電梯到幾樓)
+I'll take the elevator down to the fourth floor.（強調「往下」去四樓）
 
 ## go up to 目的地 往上走
 - If you go up to the fourth floor, you'll see the pool. 

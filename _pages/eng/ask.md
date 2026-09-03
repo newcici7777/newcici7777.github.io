@@ -62,16 +62,6 @@ ask about + 主題/某人：意思是「打聽、詢問關於...的事」。
 - Ask me.(問我)
 - Ask him to go.(有to，代表「要求他去」)
 
-## want 要別人 做事
-```
-want + 人 + to + V原形動詞 (要求某人做某事)
-```
-- He wants you to go to Rome.(他想要你去羅馬)
-- We didn't want them to take the documents! 我們不希望他們拿走那些文件！
-- 肯定句： I want you to help me.（我想要你幫我。）
-- 否定句： She doesn't want him to go there.（她不希望他去那裡。）
-- 過去式： We didn't want them to take it.（我們不希望他們拿走它。）
-
 
 ------------------
 

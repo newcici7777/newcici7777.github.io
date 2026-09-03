@@ -108,6 +108,21 @@ at 專屬名詞，前面不加a、the
 - Is there a bookstore at the end of that
 street?
 
+## at the front 在前面／在最前面
+- Which room is at the front?哪一個房間在前面？
+
+什麼時候一定要加 of？當你想明確交代「是在『什麼東西』的前面」時，就必須加上 of，後面再接那個名詞。
+```
+at the front of + 名詞（基準點）
+```
+- Which room is at the front of the house?（哪一個房間在這棟房子的前面？）
+- My seat is at the front of the bus.（我的座位在公車的前面。）
+
+💡 簡單的記憶心法：
+如果範圍很明確、不需要特別強調是哪裡的「前面」，直接講 at the front 即可。  
+如果怕對方聽不懂是「哪裡」的前面，就要補上 of + 某個場所（例如 of the house, of the building）。
+
+
 ## at the table 在桌邊
 - Lin sees her grandmother, Lucy, at the table.
 

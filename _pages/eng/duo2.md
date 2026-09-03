@@ -4,7 +4,16 @@ date: 2026-07-28
 keywords: 其它
 ---
 ## 身份
-She's a teenager.
+- She's a teenager.
+- What were the kids doing while the adults were cleaning? 
+  - while the adults were cleaning（當大人們在打掃時——複數，指現場的所有大人）
+句子的前半句已經用了複數形的 kids（孩子們），為了保持主詞數量的一致性（小孩對應到大人），後半句指的當然是「所有的成年人、大人們」，所以必須使用複數的 adults。
+
+- 單數： adult（一個成年人）
+  - He is an adult now.（他現在是個成年人了。）
+- 複數： adults（多個成年人／大人们）
+  - Tickets are cheaper for children than for adults.（小孩的票比大人的便宜。）
+
 
 ## invite 人 to 目的地
 - They are not going to invite us to the party(他们不打算邀请我们参加舞会。)

@@ -5,6 +5,15 @@ keywords: English
 ---
 連接詞: before/after後面一定要接一個事件，用來比較「兩個動作的先後順序」。
 
+## before / after + 名詞
+- before bed(睡前)
+- before work（上班前）
+  - He checks his email before work.（他在上班前收信。）
+- after school（放學後）
+  - The kids play soccer after school.（孩子們放學後踢足球。）
+- after lunch（午餐後）
+
+
 ## before 連接詞
 ```
 [ 先做的事 ] + before + [ 後做的事 ]

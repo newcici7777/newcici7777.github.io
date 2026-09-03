@@ -89,6 +89,18 @@ at的核心概念是「在某個精準的點」。
 * She learned to swim at the age of five.（她在五歲時學會游泳。）
 * (也可以簡寫成更口語的：She learned to swim at five.)
 
+
+## at that time 那時候(過去進行式)
+- She was not watching videos at that time at that time.她在那時候沒有在看影片。
+  - at that time：時間副詞，點出這個動作發生的特定時間點。
+
+at that time 指的是過去某一個特定的時刻。
+因為它強調的是「過去某個時間點正在進行或持續的狀態」，所以它最常和「過去進行式」（was/were + V-ing）搭配使用。
+
+- What were you doing at that time?（你當時在做什麼？）
+- He was sleeping at that time.（他當時正在睡覺。）
+
+
 ## then 然後
 - It rained then snowed.(下雨然後下雪)
 
@@ -98,10 +110,15 @@ at的核心概念是「在某個精準的點」。
 - I will see you then.我到时候会见你。
 
 ## then 過去的某個特定時間點
+- I was living in New York then.（我當時住在紐約。）
 - Look at this old photo!The kids were very young then.看这张旧照片！孩子们那时候非常年纪
 非當小。
 - Were they small children then?他们当时是小孩子吗？
 - He was only seven years old then.他当时只有七岁。
+
+## back then 那時候
+- Back then, we didn't have smartphones.（在那時候／當年，我們沒有智慧型手機。）
+
 
 -----------------------------------
 **完全可以！這是一個非常道地、母語人士每天都在用的英文文法！**

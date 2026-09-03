@@ -25,6 +25,9 @@ on one's way to 目的地
 - Changes are on the way for the company. （公司的改革正在進行中／即將到來。）
 - Recovery is a long process, but she is on her way. （康復是一個漫長的過程，但她正在康復的路上了。）
 
+## on the way 進行中
+- Your payout is on the way.（你的理賠金已經正在進入你的戶頭）
+
 ## the way + 子句 (方法/方式)
 - I love the way you smile. （我喜歡你笑的樣子。）
 - I like the way you speak.（我喜歡你說話的方式。）

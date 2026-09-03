@@ -3,10 +3,14 @@ title: Stop at 去某個地方
 date: 2026-08-20
 keywords: English, stop at
 ---
+當你想表達「在某個特定的地點（如商店、車站、別人家）停下來或短暫停留」時
+```
+主詞 + stop + at + 具體地點（名詞）
+```
+- I stopped at the bookstore on my way home.我在回家的路上，順便去了書店。
+- We stopped at a small cafe for coffee.（我們在一家小咖啡館停留喝咖啡。）
+- The bus stopped at the station.（公車在車站停了下來。）
 
-沒問題！為你整理 **10 個**用 **`stop at`** 表達「順道造訪、短暫停留」的實用例句。
-
-為了方便你理解和套用，我把它們分成「通勤與日常生活」**、**「開車出遊與旅行」**、以及**「拜訪親友」這 3 個最常見的情境：
 
 ---
 

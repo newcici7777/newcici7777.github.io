@@ -205,6 +205,7 @@ B. 小型的交通工具 → 用 get in / get out of
 
 ## jump in + 交通工具 (趕快上車)
 - The rain is starting! Jump in the car! （開始下雨了！快上車！）
+- He jumped in the car.他跳進車裡
 
 ## catch a 交通工具 (趕火車／趕公車)
 - catch a train / catch a bus（趕火車／趕公車）

@@ -1,8 +1,64 @@
 ---
-title: juice, water, in the water 在水裡
+title: there is sun 天氣或環境, in the water 在水裡
 date: 2026-08-22
 keywords: english, the water
 ---
+## there is + 天氣
+因為這裡的 there is 不是指「那裡有一個東西」，而是英文用來表達「自然環境、天候狀況、或某種現象存在」的【虛主詞句型】（There be 句型）。這是英文表達天候狀況（陽光、雨水、風）非常道地的固定句型！
+
+- 如果你想表達「太陽本人（這顆恆星）有」，才會用 the sun has。
+- 如果你想單純形容太陽這個東西本身，會說 The sun is shining（太陽正在發光）。
+- 但在這一句裡，我們想表達的是「有（存在）太多的陽光/日照」，在英文中，描述「環境中存在著某種天氣狀況、光線、雨水」時，習慣用 There is / There are 這個開頭。
+
+- There is too much sun.（有太多的太陽/陽光。）
+  - sun（陽光/日照）在這裡是不可數名詞。
+  - 在 There be 句型中，如果後面接的是不可數名詞或單數名詞，動詞就要用單數的 is。
+
+- If there's too much sun, we won't go surfing. （有太多的太陽/陽光，就不去沖浪）
+
+你一定聽過或學過用 There is 來描述天氣或環境的說法，概念完全一樣：
+- rain（雨）：There is rain in the forecast.（氣象預報說有雨。）
+- sunshine（陽光）：There is sunshine today.（今天有陽光。）
+- wind（風）：There is a lot of wind outside.（外面風很大。）
+- There is too much rain.（雨太多了 / 雨下得太多了。）
+- There is a lot of rain today.（今天有很多雨 / 今天雨很大。）
+- There is too much wind for surfing.（風太大了，不適合衝浪。）
+- There is water everywhere.到處都是水(馬路上到處都在積水，因為雨太大)
+
+### It's + 描述天氣
+- It's too windy.（風太大了。）
+- It’s raining really hard.（雨真的下得很大。
+
+### don't like the 天氣
+
+- I don’t like the wind.(我不喜歡風很大)
+- I hate this wind.我討厭這陣風
+- I don't like the rain.（我不喜歡雨天。）
+- I don't like the heat.（我不喜歡這種熱氣/大熱天。）
+- I don't like the cold.（我不喜歡這種冷天氣。）
+
+### There is 環境
+- smoke（煙）：There is smoke in the kitchen.（廚房裡有煙)
+- There is heavy traffic.（有很重的交通 / 車很多。）traffic是不可數「抽象」名詞，沒有a跟the。
+
+## There is **a** light 有燈
+a light 是可數名詞，前面要加a
+- There is **a** light on in the bedroom.（臥室裡有一盞燈亮著。）
+
+## There is **a** fire! 有火災！
+### a fire 是可數名詞，前面要加a
+- There was **a** fire in the kitchen.（廚房發生了一場火災。）
+- We need to build a fire for camping.（我們露營需要起個營火 / 生個火。）
+
+### fire 不可數，前面不加a或the
+不可數（指物質本身的「火」或「熱能」）：
+- Fire is hot.（火是燙的。）
+- Stay away from fire.（離火遠一點。）
+
+## There is **an** accident 有意外/事故
+an accident 是可數名詞，前面要加an
+- Was there **an** accident?這裡有發生意外嗎？
+
 ## 液體在in 容器
 - There is some juice in the cup.有一些果汁在杯子裡。
 
@@ -34,7 +90,7 @@ keywords: english, the water
   - was過去式，代表瓶子之前是有果汁在裡面，但現在沒有。
   - 用in代表果汁在瓶子裡面 = 內容物是果汁
   - all of those bottles 因為有those那些(特定範圍)，所以all後面要加of
-- Was there an accident?這裡有發生意外嗎？
+
 
 - 想強調液體 → There was juice.（有果汁）
 - 想強調瓶數 → There was a bottle of juice.（有一瓶果汁）

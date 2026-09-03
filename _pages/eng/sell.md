@@ -18,6 +18,11 @@ keywords: English, sell, for sale
 - Do you sell coffee here?（你們這裡有賣咖啡嗎？）咖啡不可數
 - Do they sell ticket**s** online?（他們網路上有賣票嗎？）
 
+## does the store sell / do you sell
+1. Do you sell swimsuits?你們有賣泳衣嗎？（直接對著店員或老闆說）
+2. Does the store sell swimsuits.那家店有賣泳衣嗎？（把店當作第三人稱來討論）
+
+
 ## be + sold(分詞) 東西被賣了
 ```
 現在式（is）＋ 過去分詞（sold）。
@@ -31,10 +36,18 @@ keywords: English, sell, for sale
 
 ## be + on sale(名詞) 正在特價中
 - the ring is on sale.這個戒指正在特價中
+- These shoes are on sale this week.（這些鞋子這週大特價。）
+- I bought this jacket on sale.（我買這件打折的夾克——這裡當作副詞片語修飾動作買。）
+
 
 ## be + for sale 正在出售中
+- This house isn't for sale.（這棟房子沒有在賣)
 - The earrings are for sale.（這副耳環正在出售中／有在賣喔。）
 - Is this house for sale?（這棟房子要出售嗎？）
+- Is your car for sale?（你的車有在賣嗎？）
+ for sale（待售中、供人購買）
+
+
 
 
 💡 總結小口訣

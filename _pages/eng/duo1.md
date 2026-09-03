@@ -180,6 +180,73 @@ to : 一路跟著對方移動到了哪個終點
 （我弟弟一路跟著我進到廚房。）
 
 
+## belong to 屬於
+- That ring belonged to someone else.那枚戒指是別人的（屬於某個「其他的人」）
+
+
+## One day(時間副詞) 有一天／某一天
+- One day, there was a monster in the woods! 
+
+### 1.放在句首（最常見，故事感強）
+放句首只是為了營造那種「很久很久以前」
+- One day, there was a monster in the woods!
+
+### 2.放在句尾（自然、當作補充說明）
+- There was a monster in the woods one day.
+one day放句尾，比較常指「過去某一天」或是未來未知的某一天，視時態而定。
+
+- I will visit Paris one day.（我總有一天要去巴黎玩——放句尾）
+- One day, you'll understand.（總有一天你會懂的——放句首）
+
+## Once upon a time 很久很久以前
+- Once：曾經、一度
+- upon：在……之上（比較文學感、正式的 on）
+- a time：一段時間
+合起來字面上的意思是「曾經在某個時間裡」
+
+- Once upon a time, there was a brave knight...（很久很久以前，有一個勇敢的騎士)
+
+## 副詞
+在文法中，只要一個詞或一組詞是用來表達時間、地點、方式、頻率，並且可以隨意移到句首或句尾而不影響主句結構時，它就是副詞（或副詞片語）。
+
+## want 要別人 做事
+```
+want + 人 + to + V原形動詞 (要求某人做某事)
+```
+- 肯定句： I want you to help me.（我想要你幫我。）
+- 否定句： She doesn't want him to go there.（她不希望他去那裡。）
+- 過去式： We didn't want them to take it.（我們不希望他們拿走它。）
+
+受詞如果是代名詞，必須用「受格」
+當你想說「我希望『他』去做……」時，代名詞要用 him，不能用 he。
+- ✔️ I want him to come.（O）
+- ❌ I want he to come.（X）
+
+中間一定要加人（受詞）
+- ❌ 錯誤：We didn't want to take the documents.（這變成「我們自己不想拿文件」）
+- ✔️ 正確：We didn't want them to take the documents.（我們不希望他們拿文件
+
+
+- We didn't want them to take the documents.（我們不希望他們拿文件)
+- He wants you to go to Rome.(他想要你去羅馬)
+- We didn't want them to take the documents! 我們不希望他們拿走那些文件！
+- 肯定句： I want you to help me.（我想要你幫我。）
+- 否定句： She doesn't want him to go there.（她不希望他去那裡。）
+- 過去式： We didn't want them to take it.（我們不希望他們拿走它。）
+
+## one's own time
+在英文的表達習慣中，當我們說「某人有自己的時間/空間/房間」時，習慣加上 own 來強調那是屬於他個人自主支配的，不能直接說 her time。
+
+own擁有屬於自己、能自由支配的東西（如時間、空間、車子）
+
+- She has a lot of money, but she doesn't have her own time. 
+- have your own room（擁有自己的房間）
+  - ❌ I don't have my room.（聽起來像：我沒有我的房間，可能指找不到房間在哪。）
+  - ⭕ I don't have my own room.（我有自己的房間——強調擁有權與獨立性。）
+- on your own（靠你自己 / 獨自一人）
+- cook your own food（自己煮飯）
+
+
 ## 其它疑惑
 I draw things that I think are interesting or beautiful.
 

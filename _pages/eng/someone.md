@@ -15,6 +15,11 @@ Everyone,No one雖然它們的語意是「每個人、任何人、沒有人」�
 - ✔️ Everyone is here.（每個人都到齊了。）
 - ✔️ Nobody knows the answer.（沒有人知道答案。）
 
+- Someone probably found the king.或許有人找到國王了。
+- Did someone find the queen's cat? 
+  - 當你「心裡預期或希望對方給予肯定答案」，或者你在「詢問某個特定事件」時，就會使用 someone。
+
+
 
 ## -one -body 代名詞要用「複數」 (they / their / them)
 我們不知道「someone / somebody」是男生還是女生時，習慣用 they / their / them 來代替，避免性別偏見。
@@ -96,10 +101,18 @@ No one 也有人寫成 no-one（英式英文較常見），但現在最標準、
 
 
 ## Something / Anything to + 動詞
-在日常對話中，我們超常把 -thing 結合「to + 動詞」來表達「有/沒有...的事情可以做」：
+在日常對話中，我們超常把 -thing 結合「to + 動詞」來表達「有/沒有...的事情可以做」
+
+當 to do 放在像 anything、something、nothing 這類的不定代名詞後面時，它扮演「形容詞」的角色，用來修飾前面的代名詞，意思是「可以做的任何事情」。
+
+- Do they have anything to do this weekend?他們這週末有任何可以做的事情嗎？
 - I have something to tell you.（我有事情要告訴你。）
 - Do you have anything to eat?（你有東西可以吃嗎？）
 - There is nothing to worry about.（有什麼好擔心的 / 沒什麼好擔心的。）
+- Do you have anything to do tonight?（你今晚有事要忙嗎？）
+- I don't have anything to do tomorrow.（我明天沒事做／我很閒。）
+
+
 
 ## -thing + 形容詞子句
 - Here is everything you bought.

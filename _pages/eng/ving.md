@@ -34,6 +34,7 @@ keywords: English,finish,start,begin
 
 - He starts eating the sandwich.  
 - Junior starts to wash the dishes.  
+- She started studying about an hour ago.她大約一個小時前開始讀書。
 
 ### to + V 因為還沒做，準備要去做
 to + V，強調那個「跨入新狀態」的瞬間切換

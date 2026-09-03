@@ -5,6 +5,7 @@ keywords: English,else
 ---
 else 總是乖乖地黏在 what/who/where 或是 something/anything 的後面！
 
+
 ## 類別一：搭配「疑問詞」（What, Who, Where, When...）
 其它
 - What else did you buy at the supermarket? （你在超級市場裡還買了其他什麼東西？）
@@ -13,6 +14,13 @@ else 總是乖乖地黏在 what/who/where 或是 something/anything 的後面！
 - How else can we solve this problem? （我們還能用什麼其他的方法來解決這個問題？）
 
 ## 類別二：搭配「不定代詞」（Something, Anything, Nothing, Someone...）
+英文中只要遇到像 somebody / someone（某人）、anybody / anyone（任何人）、nobody（沒有人）、something（某事）這類的不代名詞，如果想表達「其他人／其他事」，else 一定要放在它們的後面，不能放前面：
+
+- someone else（其他人）
+- anybody else（其他任何人）
+- something else（其他事情）
+
+
 用來指「其他的事物、別人、或別的地方」
 - I want to try something else on the menu. （我想試試看菜單上別的東西。）
 - Is there anything else you need me to do? （還有任何其他的事需要我幫忙嗎？——這句職場或服務業超常用！）

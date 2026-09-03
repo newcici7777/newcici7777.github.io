@@ -40,6 +40,7 @@ at + 可以數「一場一場」的用a
 - We are in a game.（我們正在進行一場比賽。）
 
 ## 睡覺
+### go to bed
 go to bed「去睡覺」這件事情，bed前面沒加the  
 - You need to go to bed!  
 - go to the bed 去床邊  
@@ -51,11 +52,16 @@ bed 此時是抽象名詞，不可數名詞，不能用a 跟 the。
   - She is in bed.她在睡覺/賴床
   - She was still in bed at 11 AM.（她早上11點了居然還在床上躺著。）
 
+### go to sleep
 Go to sleep 與 go to bed 的核心差別在於：一個強調「入睡的這個動作／狀態」，另一個強調「上床躺著的行為」。
 - It's 10 PM. It's time to go to bed.（現在晚上十點了。該上床睡覺（就寢）了。）
 - The baby finally went to sleep.（那個嬰兒終於睡著了。）
 - I tried to go to sleep, but the noise was too loud.（我試著入睡，但噪音太大了。）
 - You should not go to sleep late.(你不應該太晚睡（入睡）)
+
+### before bed 睡前
+
+- He read a book before bed.
 
 ## 坐牢
 prison 這邊是抽象名詞，不可加a 跟 the
