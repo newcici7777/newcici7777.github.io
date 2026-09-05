@@ -56,11 +56,23 @@ be back from + [地點/活動]
 * When will you be back from the meeting?（你什麼時候開完會回來？）
 * When will you be back from your trip?（你什麼時候旅行回來？）
 * I will be back from the convenience storein five minutes.（我五分鐘後從超商回來。）
+- Is he back from the business trip?他出差回來了嗎
+  - the business trip 出差
 
 ## get back 回來、返回
 - We got back late last night.我們昨晚很晚才回來。
 - What time did you get back?（你幾點回來的？）
 - I just got back from the store.（我剛從店裡回來。
+
+
+## 移動動詞 + back + to + 目的地
+- I need to go back to work.
+- He got a suitcase and ran back to the car. 他拿了一個行李箱，然後跑回車子那裡。
+- I forgot my phone, so I ran back to the house. （我忘記帶手機，所以我跑回屋子裡。）
+- She grabbed her umbrella and ran back to the office. （她抓起雨傘，又跑回辦公室。）
+
+## 移動動詞 + back
+- He comes back with a very large bag of bottles.
 
 
 ## 比較
@@ -70,9 +82,9 @@ be back from + [地點/活動]
 - We got back late last night.（我們昨晚很晚才回到家。）
 
 ### 2. come back（方向性：朝著說話者或原點回來）
-核心概念：強調「方向」（朝著這裡過來）。  強調「方向性」（朝著說話者所在的位置、或是回到原點）。
-語感：come 是「來」。通常是說話者站在某個地方，看著別人「回來」；或者是指「回到這個當下的所在地」。  
+強調「方向性」（朝著說話者所在的位置、或是回到原點）。  
 - He came back home yesterday. 他昨天回家了。
+- He comes back with a very large bag of bottles.
 
 ### 3. be back（狀態：人已經在／回來了）
 核心概念：這不是在講「移動的過程」，而是在講「人已經處於『回來了』的狀態」。  
@@ -80,6 +92,7 @@ be back from + [地點/活動]
 - I was back by 10 PM. 我十點前就已經回來了。
 - I am back!（我回來了！ → 強調我現在人已經在這裡了，人安然到家了。）
 - When will he be back?（他什麼時候會回來？ → 問他恢復「在這邊」狀態是什麼時候。）
+- He's back from the office.他從辦公室回來了
 
 ## 移動動詞 + back
 「回頭、返回」或「走回原本的地方」

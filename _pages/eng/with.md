@@ -47,13 +47,13 @@ with 當成是一個「連結的橋樑」。
 ```
 I have a problem with + **讓你頭痛的人/事/物**
 ```
-* Have a problem with my computer:這裡的 with 是為了連接「問題」和「電腦」，問題出在電腦上。
+* Have a problem with my computer
+  - 這裡的 with 是為了連接「問題」和「電腦」，問題出在電腦上。
 
 當問題發生時，你用 "with" 來指明「對象」：
 * I have a problem with my boss.(我跟主管有問題/不合。)
 * She has a problem with her phone.(她的手機出問題了。)
 * They have a problem with the new software.(他們對這款新軟體有意見/覺得它不好用。)
-* I have a problem withmy internet connection.(我的網路連線出問題了。)
 
 
 ## some help(名詞) with 事情
@@ -77,6 +77,7 @@ help + 人 + with + **名詞/事情**
 * Can you help me **with these bags**? （你能幫我拿這些袋子嗎？）
 * I need help **with my English pronunciation**. （我需要有人幫我糾正英文發音。）
 - Can you help me with something?
+- Junior is helping Zari with an art project for school.
 
 ## help me to 原形動詞
 如果後面接的是一個動作，你可以選擇以下兩種講法（就不會用 with 了）：
@@ -97,7 +98,9 @@ help me + to + 原形動詞
 - There is a problem with our website.
 - Is there a problem with your laptop?你的笔记本电脑出了
 问题吗？
-
+- There is a problem with the camera.
+- I have a problem with my internet connection.(我的網路連線出問題了。)
+- Is there a problem with your laptop?你的笔记本电脑出了问题吗？
 
 ---------------------------------------------
 

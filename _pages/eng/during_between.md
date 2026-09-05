@@ -23,6 +23,9 @@ Between（在...之間）—— 它是「介系詞」
 - We will eat lunch between meetings.我們在會議之間的休息時間吃午餐。
   - meeting**S** 複數S代表很多個會議的「間隔」時間
 
+## between 東西 and 東西
+- the difference between paper and plastic.纸和塑料之间的不同
+
 ## during(介) 在...時候
 during 是一個介系詞，最基本的中文意思就是「在...時候」，表示一段時間或一個事件，絕對不能直接接句子（主詞 + 動詞），特定的時間或活動「進行到一半」都可以用during。
 

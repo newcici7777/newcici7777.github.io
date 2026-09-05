@@ -17,11 +17,13 @@ keywords: english, less
 - This restaurant is worse than that restaurant.这个餐厅比那个餐厅
 更糟糕。
 
+
 ## 最高級
 ```
 主詞 be the 最高級形容詞 名詞 in 範圍
 ```
-
+- Is the largest house hers?最大的房子是她的吗？
+- Is the largest bedroom hers?最大的卧室是她的吗？
 - It's the hottest day in August
 - Is March the hottest month?
 - Ben is the tallest boy in his family.

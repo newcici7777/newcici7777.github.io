@@ -9,6 +9,7 @@ keywords: English,think,thought
 - Why do you think he wants...(為什麼你覺得他想要...？)
 - I think he won't be angry.
 - I think it's OK to eat one slice.
+- I think I know why she broke up with you.
 
 ## think about + 名詞
 - Are you thinking about the problem at work?你在想那个工作上的问题吗？

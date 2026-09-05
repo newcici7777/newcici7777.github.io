@@ -39,7 +39,18 @@ keywords: english, the water
 
 ### There is 環境
 - smoke（煙）：There is smoke in the kitchen.（廚房裡有煙)
-- There is heavy traffic.（有很重的交通 / 車很多。）traffic是不可數「抽象」名詞，沒有a跟the。
+- Is there smoke in the kitchen?（廚房有煙嗎？）
+- Why is there smoke in the kitchen?（為什麼廚房裡會有煙？）
+  - 最前面加上疑問詞 Why（為什麼）
+- Why is there water on the floor?（為什麼地板上有水？）
+- There is heavy traffic.（有很重的交通 / 車很多。）traffic是不可數「抽象」名詞，沒有**a跟the，不能加複數的 -s**。
+- There is too much traffic today.（今天車流量太多了／塞車很嚴重。）
+- There is too a lot of traffic today.（今天車流量太多了／塞車很嚴重。）
+- Why is there so much traffic today?（為什麼今天車流量這麼多／塞車這麼嚴重？）
+
+### There is 抽象
+- help（幫忙）：Is there any help needed?（需要任何幫忙嗎？）
+- information（資訊）：There is useful information online.（網路上有實用的資訊。）
 
 ## There is **a** light 有燈
 a light 是可數名詞，前面要加a
@@ -47,7 +58,7 @@ a light 是可數名詞，前面要加a
 
 ## There is **a** fire! 有火災！
 ### a fire 是可數名詞，前面要加a
-- There was **a** fire in the kitchen.（廚房發生了一場火災。）
+- There's **a** fire in the building!（這棟大樓起火了！）
 - We need to build a fire for camping.（我們露營需要起個營火 / 生個火。）
 
 ### fire 不可數，前面不加a或the
@@ -58,6 +69,10 @@ a light 是可數名詞，前面要加a
 ## There is **an** accident 有意外/事故
 an accident 是可數名詞，前面要加an
 - Was there **an** accident?這裡有發生意外嗎？
+
+## There is a problem 有問題
+- Is there a problem with your laptop?你的笔记本电脑出了
+问题吗？
 
 ## 液體在in 容器
 - There is some juice in the cup.有一些果汁在杯子裡。
@@ -150,3 +165,9 @@ water 的雙重身分：不只是「飲料」，更是「大自然的水體」
 -------------------------------
 ## There is + 抽象名詞
 - There were many difficult questions.有很多很难的问题。
+- Is there a big difference between your closet and mine?你的壁橱和我的有很大的不同吗？
+
+
+---------------------------
+## There is + 一般名詞 (有東西)
+- There are two wallets in my pocket.

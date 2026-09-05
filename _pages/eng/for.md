@@ -199,6 +199,15 @@ for 扮演了「配置、對應」的角色，用來告訴對方這項服務（�
 ## for 持續一段時間
 - Is it raining today? It rained for six hours in Chicago yesterday!
 
+## for too long 太久
+為什麼一定要加 for？for 的核心功能是「表達一段持續的時間」。  
+當你想告訴別人某個動作或狀態持續了多久（例如：三分鐘、兩個小時、太久的時間），英文需要用 for + 時間長度 來當作時間副詞。  
+
+- The cake was in the oven for too long
+- I waited for too long.（我等了太久。）
+- Don't stay in the sun for too long.（不要在太陽底下待太久。）
+- The meat has been cooking for too long.（這塊肉煮太久了。）
+
 ## for 狀態
 for free(名詞) free在這裡會變成名詞？
 我們平常最常看到 free 當作形容詞（例如：free time「空閒時間」或 I am free「我有空」）。

@@ -45,6 +45,8 @@ Thanks for + 名詞 / V-ing（謝謝你做...）
 - Thanks for helping me.（謝謝你幫我。）
 - Thanks for driving me home.（謝謝你開車載我回家。）
 - Thanks for the tickets.(謝謝你的門票)
+- Thank you for the picture!
+- Thank you for the taxi!
 
 ### be famous for 原因
 ```

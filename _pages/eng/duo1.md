@@ -65,7 +65,7 @@ gone 是形容詞用來形容一種「不在、離去、離開了」的狀態。
 - All the cookies are gone. Who ate them all? （餅乾全被吃光了。到底是誰全部吃完的？）
 
 
-## 大自然
+## 大自然 + the
 ### mountains
 為什麼 mountain 要加 s 變成 mountains？  
 大自然的山通常不是孤立的一座山，而是連綿起伏的山脈系統。因此，英文習慣用複數的 the mountains 來統稱「山區」、「群山」。  
@@ -94,21 +94,7 @@ river（河流） 加 s 變成 rivers，通常是最直觀的「複數名詞」�
 
 
 
-## `go out` vs `go outside` vs `come with me` vs `went out停電`
-- Go outside（物理上的出去）：
-  - 重點：強調從「室內（inside）」走到「室外（outside）」這個實體的空間移動。
-  - It's sunny today. Let's go outside.（今天天氣很好，我們去外面吧。）
-  - The kids are going outside to play basketball.（孩子們正要到外面去打籃球。）
-- Go out（出去／社交／約會）：
-  - 重點：約會。
-  - Are they going out?（他們在交往嗎？）
-  - Do you want to go out for dinner tonight?（你今晚想出去吃晚餐嗎？）
-  - We rarely go out on weekdays.（我們平日很少出門（社交/吃飯）。
-- come with me（跟我來 / 跟我一起去）
-  - 重點：這只是指「方向和動作的陪伴」，沒有任何浪漫或曖昧的含意。
-- went out 停電
-  - The lights went out.（燈**熄滅（停電）**了。）
-  - The power went out last night.（昨晚停電了。）
+
 
 
 
@@ -246,8 +232,18 @@ own擁有屬於自己、能自由支配的東西（如時間、空間、車子�
 - on your own（靠你自己 / 獨自一人）
 - cook your own food（自己煮飯）
 
+## well(副)
+- I do not speak French very well.我说法语说得不太好。
+
+## pour 倒
+- Junior pours Eddy's juice on the ground.
+
+## break up 分手
+- Chloe broke up with me.
+- why did she break up with you?
 
 ## 其它疑惑
 I draw things that I think are interesting or beautiful.
+
 
 

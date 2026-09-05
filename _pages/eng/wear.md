@@ -31,6 +31,7 @@ wear 不僅僅是「穿（衣服）」的動作，它同時也用來指「身上
 1. 身上穿什麼衣服、鞋子，都要用`現在進行式`，代表「正在穿」。對方現在身上正穿著、戴著的東西，鎖定現在進行式就對了！
 2. 現在正在流行的服飾
 
+- He is wearing blue socks.他穿着蓝色的袜子。
 - I like the earrings that you're wearing!（我好喜歡你現在戴的耳環）
 - I love the jacket that you're wearing!（我好喜歡你身上穿的那件外套！）
 - Nice shoes! Are you wearing them for the first time?（好看的鞋子！你今天第一次穿嗎？）

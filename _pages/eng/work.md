@@ -145,8 +145,11 @@ work hard (hard是副詞)
 ## at/in the office 在辦公室
 - in the office（在辦公室室內）人在辦公室的四面牆壁之內。
   - Is the boss in the office?（老闆人在辦公室裡嗎？）
+  - Our boss is not in the office.我们的老板今天不在办公室。
+today.
 - at the office (據點)
   - She is at the office.人在辦公室這個地點。
+
 
 ## in a meeting 會議
 - in a meeting 會議可以「一場一場」的數，所以要加a

@@ -5,13 +5,13 @@ keywords: English, of, to, picture, photo,paint, draw
 ---
 ## of 屬於 東西的
 「通常」沒有生命的東西，表示屬於誰的，用 
-前面的東西「屬於of」後面的東西，也可用先翻譯「後面東西」的of「前面東西」
+前面的「屬於of」後面的，也可用先翻譯「後面」的of「前面」
 ```
-前面的東西 of 後面的東西
+前面 of 後面
 a picture of 人事物
 ```
-- 照片(前面的東西)屬於人事物(後面的東西)
-- 人事物(後面的東西)的照片(前面的東西)
+- 照片(前面的)屬於人事物(後面的)
+- 人事物(後面的)的照片(前面的)
 
 人的用's  
 My son's birthday. 
@@ -23,6 +23,7 @@ My birthday.
 - He is an important part of our team.
 - the most exciting part of that game.那场比赛最令人兴奋的部分   
 - Do you know the price of these carrots?你知道這些紅蘿蔔的價格嗎？ 
+- Mr. Wang is the boss of this company.王先生是这家公司的老板。
 
 ## to 的
 to用來表示「目標、對應關係或終點」
@@ -34,6 +35,8 @@ to用來表示「目標、對應關係或終點」
 - She is looking for the key to her apartment.
 - I can't find the key to my office!(我找不到我辦公室的鑰匙)
 - Duo doesn't remember the answer to that question. Duo不記得那個問題的答案
+- Ben can't find the answer to the question.本找不到问题的答案。
+
 
 - The key to success（成功的關鍵）
 - The door to success（通往成功的大門——比喻成功之門）

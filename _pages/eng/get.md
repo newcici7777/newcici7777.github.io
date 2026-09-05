@@ -17,6 +17,9 @@ get買 + 間接受詞(人) + 直接受詞(東西)
 - Who got you this scarf? 這條圍巾是誰買給你的？
   - 疑問代名詞當主詞
 
+## get 取得(拿)
+- Can I get a menu, please?
+
 ## get幫 + 人 + 拿東西 (幫人拿東西)
 ```
 get幫 + 人 + 拿東西
@@ -70,12 +73,15 @@ get 是一個超級萬用的動詞。當它搭配房間、座位、車子等空�
 - I got 95 points.
 - My score was 95.
 
-## 收到信
+## 收到信/訊息
 - I never got your letters.
 - He got an e-mail last night.他昨晚收到了一封电子邮件。
+- Did you get an email from him?你收到了一封来自他的电子邮件吗？
 
 * 正式說法：He received an email.（他收到了一封電子郵件。）
 * 口語說法：He gotan email.（他拿到/收到了一封信。）
+
+- We got the message about the meeting.我们收到了关干会议的消息。
 
 get 也常被用在各種「取得訊息或物品」的場合：
 * I gota message from my boss.(我收到老闆的訊息。)
@@ -126,6 +132,10 @@ on的相反動作是off，為什麼用on？因為火車飛機巴士可以站，�
   - in line. line是隊伍(名詞)，in介系統就是在...裡面，介系詞片語，意思是「在隊伍裡面」
 
 ## get in bed（上床睡覺 / 進到被窩裡）
+
+## get up起床
+- The children got up and then went to school.孩子们起了床，然后去了学校。
+- He gets up at eight o'clock every day.他每天在八点钟起床。
 
 ## get off 下班
 - I get off work at 6:00. 下班 

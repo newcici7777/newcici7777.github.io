@@ -30,6 +30,7 @@ one more + 可數名詞(不加s)
 - Here's one more **bottle**.（這裡還有**一瓶**。／這裡多了一瓶。）
   - 原句: One more bottle is here.
 - I need one more **day**.（我需要**再一天**。）
+- Here's one more bottle.
 
 ```
 大於1 + more + 容器單位(加s) + of + 不可數名詞(不用加s)
@@ -147,6 +148,7 @@ much 不只能修飾不可數名詞，它也可以用來修飾「比較級 (Comp
 - Traveling by train is much more comfortable.（坐火車旅行舒適得多。）
 
 ## a lot more(形容詞) + 可數/不可數名詞 表示「多很多」
+- But I need a lot more plastic bottles.
 - I need **a lot more** water after running.（跑步後我需要**更多很多**的水。）
 - She has **a lot more** experience than I do.（她比我有**豐富得多**的經驗。）
 - We need **a lot more** time to fix this bug.（我們需要**多得多的**時間來修復這個臭蟲。）

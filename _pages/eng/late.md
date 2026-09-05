@@ -111,7 +111,7 @@ be late for + [活動/事件/場合/地點]。
 數字 + 時間單位 + late
 ```
 - He was ten minutes late for the test.
-ten minutes（名詞）是被抓來當作「副詞」用的，用來補充說明 形容詞late「到底遲到了多久」。
+  - ten minutes（名詞）是被抓來當作「副詞」用的，用來補充說明 形容詞late「到底遲到了多久」。
 
 - He is 3 years old.
   - old（老／歲）是形容詞。
@@ -119,6 +119,10 @@ ten minutes（名詞）是被抓來當作「副詞」用的，用來補充說明
 - He was ten minutes late.
   - late（遲到）是形容詞。
   - ten minutes（十分鐘）是名詞片語(副詞)，放在 形容詞 late 前面，用來補充說明「到底遲到了多久」。
+
+## late ... because 因為什麼原因遲到
+- Emma was late because she forgot the time of the test.艾玛迟到了，因为她忘了测试的时间。
+
 
 ## later(副詞) 稍後、過了一陣子「之後」
 ### 數字 + 時間單位 + later 「多久時間之後」
@@ -140,6 +144,7 @@ ten minutes（名詞）是被抓來當作「副詞」用的，用來補充說明
 ### later 當副詞（表示「過了一陣子之後」）
 - See you later.（待會見。）
 - I will call you later.（我稍後打給你。）
+- Do you want to have dinner here now or later?
 
 ### later(形容詞) 接下來、之後的
 - In later versions of the software...（在該軟體的後續版本中...）

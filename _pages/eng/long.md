@@ -12,6 +12,8 @@ each time（每一次，副詞，修飾動詞)
 How long 助動詞 + 主詞 + 動作 + each time?
 ```
 - How long do you study each time?（你每次都讀多久？）
+- How long did you study yesterday?你昨天学习了多久？
+- How long did Tom live in Oxford?汤姆在牛津住了多久？
 
 ### for + 時間（表達持續多久
 ```

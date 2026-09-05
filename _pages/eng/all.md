@@ -85,6 +85,8 @@ all 的意思是「全部、都」，收到的報告不是其中一兩份，而�
 ## All of + the / these / those/ 所有格(my,your)
 「這群/那群東西的全部」時，習慣用 `all of + the / these / those/ 所有格(my,your) + 可數名詞(加s)/不可數名詞` 的結構。
 
+- I poured all of the juice in the kitchen sink.
+- was there juice in all of those bottles?
 - All of the pizza **is** gone.（所有的披薩都吃光了。）pizza不可數不加s，不可數是單數be動詞。
 - all of these book**s**（這些書的全部）
 - all of those **people**（那些人的全部）

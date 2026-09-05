@@ -25,7 +25,8 @@ home在此時是抽象名詞，不可數，前面不可以加a跟the。
 - go home
 - at home（在家 / 在家休息）
   - I just want to stay at home tonight.（我今晚只想待在家。）
-
+  - Did you forget your eraser at home?
+  
 ## at a 活動
 
 at + 可以數「一場一場」的用a

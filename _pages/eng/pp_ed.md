@@ -87,6 +87,7 @@ keywords: English,
 |做|do|did|done|
 |給|give|gave|given|
 |開始|begin|began|begun|
+|破|break|broke|broken|
 
 ## 不規則
 
@@ -97,6 +98,7 @@ keywords: English,
 |坐|sit|sat|sat|
 |走失|lose|lost|lost|
 |離開|leave|left|left|
+|告訴|tell|told|told|
 
 ## 現在進行式不一樣
 

@@ -28,6 +28,8 @@ to 的意思是「朝向、往...方向」，在這裡當作目的地的大門�
 移動動詞: go, come, get, walk, drive, fly, move
 - go to
   - I go to work.我去上班。
+- come to
+  - Sorry, I can't come to the party.我不能過來party
 - ride to + 目的地 騎車去
   - I rode my new bike to the museum yesterday.
 （我昨天騎我的新腳踏車去了博物館。）
@@ -269,12 +271,6 @@ Ahead 負責：「朝著前方、目標在前面」
 - He took a step backward.（他向後退了一步。）
 - Drive backwards into the parking space.（倒車停進停車格裡。）
 
-## 移動動詞 + back + to + 目的地
-- I need to go back to work.
-- He got a suitcase and ran back to the car. 他拿了一個行李箱，然後跑回車子那裡。
-- I forgot my phone, so I ran back to the house. （我忘記帶手機，所以我跑回屋子裡。）
-- She grabbed her umbrella and ran back to the office. （她抓起雨傘，又跑回辦公室。）
-
 
 ## 移動動詞 + up
 - Go up the mountain on foot.（走路爬山 / 步行上山）
@@ -288,6 +284,7 @@ Ahead 負責：「朝著前方、目標在前面」
 - I'm here with you.
 - Lily is coming with me!
 
+
 ## come 來
 come 跟 go的不同在於聽話的人的位置。  
 come 是離聽話的人愈來愈近。  
@@ -300,7 +297,8 @@ go是離聽話的人愈來愈遠。
 - I have to go now.
   - 我要離開了。(離聽話的人愈來愈遠)
 
-
+## come with 人 (方向和動作的陪伴某人)
+- come with me（跟我來 / 跟我一起去）
 - Lily is coming with me!(Lily 跟我一起來)
   - come with me（跟我來 / 跟我一起去）
   - 單純的「結伴同行、去某個地方」，指「方向和動作的陪伴」。
@@ -309,7 +307,6 @@ go是離聽話的人愈來愈遠。
 - Can my dog come with me to the party?
 - you come to the park every day.
 - Who will come to the party with me tonight?(谁今晚会跟我一起来聚会？ )  
-- Sorry, I can't come to the party.
 
 
 ## Come over 過來一下
@@ -356,7 +353,21 @@ go後面省略to，因為next就是副詞
 - Let's go out for dinner.
 - she wants to go out on Friday night!
 
+## go outside 出去外面
+重點：強調從「室內（inside）」走到「室外（outside）」這個實體的空間移動。
+- It's sunny today. Let's go outside.（今天天氣很好，我們去外面吧。）
+- The kids are going outside to play basketball.（孩子們正要到外面去打籃球。）
+- do you want to go outside?你想要出去吗？
 
+## `go out` vs `went out停電`
+- Go out（出去／社交／約會）：
+  - 重點：約會。
+  - Are they going out?（他們在交往嗎？）
+  - Do you want to go out for dinner tonight?（你今晚想出去吃晚餐嗎？）
+  - We rarely go out on weekdays.（我們平日很少出門（社交/吃飯）。
+- went out 停電
+  - The lights went out.（燈**熄滅（停電）**了。）
+  - The power went out last night.（昨晚停電了。）
 
 ## drive off 偏離/開車離開
 off：介系詞，意思是「脫離、離開（某個表面或範圍）」

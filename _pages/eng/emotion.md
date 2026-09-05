@@ -10,7 +10,6 @@ excited（興奮的、期待的） 這個字，習慣搭配的固定介系詞就
 完整對應： 對於（about）大學生活感到興奮（excited）。
 
 - excited about sth（對...感到興奮）
-- worried about sth（對...感到擔心）
 - interested in sth（對...感到興趣）
 - afraid of sth（對...感到害怕）
 
@@ -23,8 +22,6 @@ excited（興奮的、期待的） 這個字，習慣搭配的固定介系詞就
 - Tom is excited to learn English. 很高興能學習英文
 - excited to see you（很高興能見到你）。
 
-### worried 擔心...
-- I was worried to hear the bad news.（聽到這個壞訊息，我感到很擔心。）
 
 ### interested in + 名詞/V-ing
 - I am interested in learning English.（我對學英文感興趣。）
@@ -34,6 +31,7 @@ excited（興奮的、期待的） 這個字，習慣搭配的固定介系詞就
 
 
 ## 令人 ... 感到
+- that's surprising.
 - That painting is boring.**東西**令人無聊 Ving
 - This song is boring.
 - Is Japanese more interesting than French?日语比法语更有意思吗？

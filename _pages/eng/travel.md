@@ -249,7 +249,10 @@ be 代表「現在狀態」，on代表「進行中」 = 正在 ...
 - They are on a trip to Europe right now.他們目前正在歐洲旅行。
 
 ### be on a business trip 出差
-- I'm on a business trip.
+- I'm on a business trip.我在出差
+- Is he back from the business trip?他出差回來了嗎
+  - the business trip 出差
+- When is your business trip?
 
 ### go on a trip to 地方
 - She went on a trip to the campus yesterday.她昨天去校園了一趟。

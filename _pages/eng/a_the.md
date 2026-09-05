@@ -71,6 +71,8 @@ keywords: English, a The This These That Those
 - **These pants are** old, and **they are** too short.I really need new pant**s**.这些裤子很旧，而且它们大短了。我真的需要新裤子。
 - **Are these** mу sho**es**? 这些是我的鞋子吗？
 - **Are these shoes** ten dollar**s**?这此鞋子是十美元吗？
+- These gloves are mine.这此手套是我的。
+
 
 ## 第一次提到的地點 用 a
 這世界上好幾家餐廳、醫院，用 a 是指任意一家餐廳、醫院。

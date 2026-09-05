@@ -21,6 +21,7 @@ keywords: Take
 - We didn't want them to take the documents!我們不希望他們拿走那些文件！
 - Will you take a backpack on your trip?你旅行時會帶背包嗎？
   - 對方接下來要離開目前所在地去旅行。背包是跟著他從這裡帶出去、離開現場的，所以要用 take，不能用bring，bring是從外地帶到說話的人位置。
+- Junior takes Eddy's juice.
 
 ## take out 拿出來
 - 把手機從口袋裡 拿出去 → take out her phone
@@ -106,7 +107,7 @@ I'll take the elevator down to the fourth floor.（強調「往下」去四樓�
 - Take a picture / photo（拍照）
 - They took lots of photos in Cambridge.他们在剑桥拍了许多照片。
 - He takes a photo of his cat every day.他每天都给他的猫拍一张照片。
-
+- Do you want to take a picture of the painting?
 
 ## 錄影
 - Dad likes to take videos. 

@@ -53,6 +53,7 @@ keywords: give send show
 - Duo will give me some potatoes tomorrow.
 - Anna will give them some bananas.
 - Give me the book. 
+- He gives Zari the empty bottle.
 
 ### give + 物 + to 人
 - I gave a gift to you.

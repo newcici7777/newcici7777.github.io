@@ -20,11 +20,16 @@ have 的意思是「取得、擁有、入住」
 - Can I have a ticket to London.我可以買一張去倫敦的機票嗎？
 - Can I have a ticket? 買機票
 
+## 買東西
+- Can I have a laptop? 我要買一台筆電
+
 ## 吃
 - We can have dinner.    
 - Are you having dinner? 你在吃晚餐嗎？
 - Ben is not having fish and chips.本没有在吃炸鱼和薯条。
 - My cat had fish for dinner.我的猫晚饭吃了鱼。
+- Do you want to have dinner here now or later?
+
 
 ## 吃藥
 - have medison.  
@@ -67,20 +72,22 @@ have 是一個功能非常強大的「萬用動詞」。當它後面接某些名
 - have a rest 
 - have a break（休息一下）
 
+## have a meeting 開會
+跟行程表相關用have
+- We won't have a meeting tomorrow morning.(我們明天早上不會開會 )
+- We'll have a meeting tomorrow, see you then! 
+- Our company is having a meeting right now.我们的公司现在正在开会。 
+
 ## have 舉辦
 參加、進行某項活動或課程:
 ```
 [主語] ＋ have / has ＋ [活動／課程]
 ```
-- have a meeting = 開會
 - Let's have a party
 - have a party.  
 - have a picnic.野餐  
 
-例句
-- We won't have a meeting tomorrow morning.(我們明天早上不會開會 )  
 - What time do you want to have your party?
-- Our company is having a meeting right now.我们的公司现在正在开会。
 
 ## have + 名詞S (泛指習慣或經常性活動)
 - Do you often have barbecue**s**?你們經常舉辦烤肉活動嗎？
@@ -168,4 +175,5 @@ have + 東西（取得/拿/點某物）
 - I don't have any cash on me.（我身上沒有帶現金。）
 - Do you have your ID with you?（你身上有帶身分證嗎？）
 
-
+## 約會
+- We had a great date last night.

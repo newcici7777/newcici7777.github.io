@@ -233,13 +233,14 @@ look out（小心！／注意！）
 
 
 ## Listen to 不及物動詞
-「不及物動詞」後面沒有受詞，介系詞就會被省略
+當你想說「聽某人說話」或「聽某個聲音」時，一定要加 to
+- listen to me
+- listen to music
 
+後面沒有受詞，就沒有to
 - Did you listen when she talked? 
   - when ... 是一個「當...什麼時候」時間副詞，不是受詞。
+  - listen後面沒有受詞，不用to。
   
-為什麼 listen 後面沒有 to？
-當你想說「聽某人說話」或「聽某個聲音」時，一定要加 to（例如：listen to me, listen to music）。
-但在這裡，listen 是當作不及物動詞純粹表達「你有沒有在聽/豎起耳朵聽」這個動作，後面並沒有直接承受這個動作的受詞。整句的意思是：「當她在說話時，你有沒有在聽？」所以根本不需要 to。
 
 

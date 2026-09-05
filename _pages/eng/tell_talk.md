@@ -117,6 +117,9 @@ speak「演講、發表談話」，跟上司說話、報告用speak
 - May I speak to the manager?
 - Speak to me.
 - You can speak to your boss tomorrow. I
+- Can speak to you for fifteen minutes?我可以跟你说
+十五分钟的话吗？
+
 
 ### speak about + 主題
 - He spoke about science.

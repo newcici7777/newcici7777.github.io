@@ -5,6 +5,9 @@ keywords: English, inversion
 ---
 ## Here is 在...這裡 (倒裝句)
 - Here's your ticket.(原句:Your ticket is here) 你的機票在這裡
+- Here is the menu.
+- here's a menu
+
 - Here you are. (給你)
 - Here you go. (給你)
 

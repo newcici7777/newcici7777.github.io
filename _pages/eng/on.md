@@ -104,6 +104,7 @@ on 很常拿來接一個活動或目的的名詞，用來解釋「某人為什�
 當名詞是一個可數名詞，且代表「一次具體的事件、旅程或活動」時，就會加上不定冠詞 a（代表「一次、一個」）。
 
 - on a trip（在旅行中）➔ 一趟旅行。
+- on a business trip (在出差中)
 - on a mission（執行一項任務）➔ 一個特定的任務。
 - on a call（在通話中）➔ 一通電話。
 - on a break（在休息中）➔ 一次休息時間。
@@ -164,6 +165,7 @@ on a call 是你正在講一通電話。所以需要用 a 來帶出個體的概�
 
 你可以把這個 `on` 替換成更常見的 **`about`**，意思會更好理解：
 
+- What did you do on your date?
 * *She gave me a guide **on** how to do it.*
 * ＝ *She gave me a guide **about** how to do it.*
 （她給了我一份**關於**該怎麼做這件事的指南。）

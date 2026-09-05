@@ -3,19 +3,22 @@ title: learn
 date: 2026-08-19
 keywords: english, learn
 ---
-## 1. 後接不定詞 to + V（最常見）
+## 1. learn to + V（最常見）
 當 learn 後面直接接另一個動作（動詞）時，通常用 learn to + 動詞原形，表示「學習（做）某事」。  
 意思：學習一項新的技能或能力。  
 - I want to learn to swim.（我想學游泳。）
 - She learned to play the piano when she was young.（她年輕時學會了彈鋼琴。）
+- She learned to swim at the age of five.她在五岁的时候学会了游泳。
+- Are you learning to swim? 你在学游泳吗？ 
+- let's learn to swim!
 
-## 2. 後接名詞或代名詞 (Noun)
+## 2. learn + 名詞
 當 learn 的受詞是「事物」或「知識」本身（名詞），則不需要加 to，直接接名詞即可。  
 意思：學習、得知、了解某個學科、語言或資訊。
 - Children learn English at school.（孩子們在學校學英語。）
 - I learned the news this morning.（我今天早上得知這個消息。）
 
-## 3. 後接疑問詞引導的名詞子句 (wh- + to V 或子句)
+## 3. learn + wh to
 learn 後面也可以接 what, how, where, when 等疑問詞，這時可以用「疑問詞 + to V」或完整的子句。  
 - He learned how to drive last year.（他去年學會了怎麼開車。）
 - Can you teach me how to use this?（你能教我怎麼使用這個嗎？）

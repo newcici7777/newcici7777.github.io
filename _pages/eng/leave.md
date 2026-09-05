@@ -28,7 +28,8 @@ keywords: leave, left
 - leave the city（離開城市）
 - leave home（離家）
 - leave the room（離開房間）。
-  
+
+- Junior leaves.
 - I left my house at 8 AM.（我早上八點離開家。）
 - He left the office early.（他很早就離開辦公室了。）
 - Anna wants to leave the city and move to the country.

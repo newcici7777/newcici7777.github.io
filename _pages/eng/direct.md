@@ -141,6 +141,57 @@ on the left / right + of [基準物]
 - 雙層地點（物體在某個東西裡）：[in 容器] + [on the left]
 - 相對位置（在某個地標的左邊）：[on the left] + [of 基準物]
 
+- the drawer on the left 在左边的抽屉
+
+## on the left side/ right side
+
+- on the left of the park. 在公園的**左邊**
+- on the left side of the road. 道路的**左側**有一個警察。
+
+這裡的 `side`（邊、側）把「左邊」具象化成了一個「區塊、表面或車道範圍」。
+* **畫面：** 一條馬路切成左半邊跟右半邊，警察站在左半邊的這個「側邊／這一側」。
+* 當我們在講實體的道路、街道、建築物的牆面、或是物體的兩側時，加上 `side` 會讓空間感更明確、更有具體的「這一邊」的感覺。
+
+
+* **講大方向（誰在誰的左邊）：on the left of 
+* **講實體道路、車道、或身體部位的兩側（在這一側／那一邊）：** 習慣加上 **`side`**（例如 *on the left side of the road*, *on the right side*）。
+
+### 類別一：道路與交通（街道、車道、建築物側邊）
+
+1. **Please drive on the left side of the road when visiting the UK.**
+（去英國玩時，請開在道路的左側。）
+2. **There is a cozy café on the left side of the street.**
+（在那條街的左側有一家溫馨的咖啡廳。）
+3. **Park your car on the left side of the driveway.**
+（把你的車停在車道的左側。）
+4. **The emergency exit is located on the left side of the building.**
+（緊急出口位於建築物的左側。）
+
+---
+
+### 類別二：室內空間與物品擺設（房間、桌子、畫面）
+
+5. **You will find the printer on the left side of the desk.**
+（你會在桌子的左側找到印表機。）
+6. **She placed a vase of flowers on the left side of the fireplace.**
+（她在壁爐的左側擺了一盆花。）
+7. **The icon you are looking for is on the left side of the screen.**
+（你正在找的圖示在螢幕的左側。）
+8. **Please keep your luggage on the left side of the room.**
+（請把你的行李放在房間的左側。）
+
+---
+
+### 類別三：身體部位（人體的左側）
+
+9. **He wears his watch on the left side of his body (his left wrist).**
+（他把錶戴在身體的左側／左手手腕上。）
+10. **I felt a sharp pain on the left side of my chest.**
+（我感覺到胸部左側有一陣刺痛。）
+
+---
+
+
 ## 上下左右
 - 在左邊 (on the left)
   - The restroom is on the left.（洗手間在左邊。）

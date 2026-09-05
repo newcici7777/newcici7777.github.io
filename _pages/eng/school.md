@@ -12,6 +12,7 @@ keywords: English
 - My friend takes writing lessons in that building.我的朋友在那座楼上写作课。
   - takes 現在式，描述現在事實。
 - Does Emma take piano lessons?艾玛上钢琴课吗？
+- My friend takes writing lessons in that building.我的朋友在那座楼上写作课。
 
 ## taking a class 最近上什麼課
 用進行式代表「最近在進行的」。
@@ -34,6 +35,7 @@ keywords: English
 - I have an art class today.
 - I have my first class next Monday.（我下週一上第一堂課）
 - Do you have classes today? 你今天有课吗？(注意！classes用複數)
+- I have speaking lessons every afternoon.我每天下午都有口语课。
 
 ## has a lesson
 課表有課。

@@ -23,11 +23,13 @@ ready 是形容詞：它不能單獨當動詞用，前面一定要搭配 be 動�
 - When will it be ready?
 - Dinner will be ready soon be ready.晚餐快要準備好了
 - Lunch will be ready close to twelve.午饭会在快到十二点时准备好。
-- Are you ready to go now?你现在准备好走了吗？
+
 
 ## be ready(形容詞) to + 動詞 (V) (準備好去做某事)
 be ready(形) to後面接動作（動詞原型）。
-
+- Are you ready to order now?
+- Are you ready to go now?你现在准备好走了吗？
+- She is not ready to leave.她没有准备好离开。
 - Are they ready to leave?他们准备好离开了吗？
 - Is she ready to start the meeting?她准备好开始会议吗
 - We are all ready to go! （我們都準備好要出發了！ → go 是動作，隨時能走）

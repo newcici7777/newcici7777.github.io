@@ -22,7 +22,8 @@ Did you do well...?
 - Did Anna do well on the art test?安娜艺术测试考得好吗？
 - Did you do well on the reading test yesterday?你昨天的阅读测试考得好吗？
 - Did Anna do well on the art test?安娜艺术测试考得好嗎？
-
+- Did you do well on the test?你考得好吗
+- Don't worry, you will do well on the English test.
 
 ### 面試 on the interview / on the project
 - Did you do well on the interview?你昨天面試表現得好嗎？

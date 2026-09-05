@@ -53,7 +53,7 @@ Which 當主詞（在有限的選項中，詢問「哪一個」是主體）
 - Which team won the championship? 哪一支隊伍贏得了冠軍？
 - Which flavor tastes better? 哪一種口味吃起來比較好？
 - Which applicant got the job? 哪一位應徵者錄取了這份工作？
-
+- which wallet is yours?哪个钱包是你的？
 
 ### What(形容)
 What作為形容詞，修飾後面的名詞，有作為分類的意思。 
@@ -91,4 +91,5 @@ how did you 來問一件已經發生的意外或狀況時，通常是在追問�
   - 不是問「你怎麼辦到的（用什麼工具把腿弄斷的）」，而是問：「你怎麼把腿摔斷的？／發生什麼事了？」
 - How did you lose your keys?你怎麼會把鑰匙弄丟的？
 
-
+## Where 問地方
+- where did we park? 

@@ -108,6 +108,7 @@ at that time 指的是過去某一個特定的時刻。
 * Let's meet at 5 p.m.
 * Okay, see you then!(在那時候見。)
 - I will see you then.我到时候会见你。
+- See you then.
 
 ## then 過去的某個特定時間點
 - I was living in New York then.（我當時住在紐約。）

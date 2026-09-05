@@ -93,6 +93,8 @@ Pay + 錢 + TO + 人 + FOR + 物
 ---------------------------------
 
 ## 人 spend
+- 三態: spend spent spent
+
 主詞是「人」，後面可以接「錢」或「時間」。
 ```
 人 spend 時間 with 人 
@@ -107,6 +109,7 @@ Pay + 錢 + TO + 人 + FOR + 物
 - We spent a week **in** Tokyo. （我們在東京待了一週。）
 
 ### 人 + spend + 錢 + on + 物
+- We spent a lot of money on dinner.我們花許多錢在晚餐上
 - He never spends money on ice cream.他从不在冰淇淋上花钱。
 - I spent too much money on my cat!我在我的猫身上花了大多钱了！
 - I spent 100 dollars on this book.（我花了一百塊買這本書。）
@@ -225,6 +228,7 @@ This jacket costs a hundred euros.（這件外套花費了一百歐元——這�
 - cook（煮） 
   - Cook dinner for us. 
   - Cook us dinner.
+  - I cooked dinner for her.
 - get（幫忙拿/買）
   - Get a cup of coffee for her. 
   - Get her a cup of coffee.

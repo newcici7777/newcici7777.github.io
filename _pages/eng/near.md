@@ -37,6 +37,9 @@ in Taiwan.
 
 - Don't leave your shoes in the hallway.（別把鞋子留在走廊上。）
 
+## in 在裡面
+- Duo's gloves are in that drawer.多儿的手套在那个抽屉里。
+
 ## in在冰箱裡
 - Do we have milk in the refrigerator?
 - The food is in the refrigerator.
@@ -70,31 +73,6 @@ into = 從外面往裡面移動（動態）。
 ## on the credit card 信用卡上
 - There are too many numbers on this credit card.在这张信用卡上有太多号码！
 
-## on 電子設備
-- He was playing music on his laptop.
-
-- on TV
-  - There are many interesting ads on TV.电视上有很多有意思的广告。
-- on his laptop（在筆電上）
-- on his tablet (在平板上)
-  - He is watching a movie on his tablet.（他正在平板上看電影。）
-- on her phone（在手機上）
-- on YouTube / Spotify（在 YouTube / Spotify 上）
-- on the screen（在螢幕上）
-- on the speaker(在喇叭上)
-  - Are you playing music on the speaker?（你是在喇叭／音響上放音樂嗎？
-- on the computer（在電腦上）
-- on paper（在紙上）
-
-## in 書/雜誌/照片
-in 是強調「在...的內部、範圍中」嗎？雜誌是一本有頁數、有內頁印刷的紙本刊物，商品或圖片是印在雜誌裡面的，所以要用 in。
-in this magazine
-- in this book（在這本書裡）
-- in this picture / photo（在這張照片裡）
-- in the newspaper（在報紙上／裡）
-
-- Do you sell the swimsuit that is in this magazine?你們有賣這本雜誌裡面的那件泳衣嗎？
-- I don't understand any words in this book!这本书里的单词我一个也不懂！
 
 ## at小地點
 - Oscar is at an art museum.
@@ -132,6 +110,7 @@ at the front of + 名詞（基準點）
 ## be + here/there 這裡/那裡
 - I'm here but I don't see him. Is he here? Can we call him?
 - she's not here now.
+- we were not there last night.我们昨晚不在那里。
 
 ## inside
 咖啡店在楼的里面，不在外面。  
@@ -164,6 +143,7 @@ outside.
 - I am from a small town near Shanghai.(我来自上海附近的一个小镇。)
 - In 1990, there were many restaurants near my school, but there was only one cafe.
 - Is there a hotel near the airport?在机场附近有一个酒店吗？
+- There is a park near the hotel.在酒店附近有一个公园。
 
 ## close to 離...很近、在「附近」
 close to 的核心意思是「離...很近」。它強調的是距離短，但不代表兩個東西要緊緊貼在一起，中間隔著一條街、一排樹都沒關係。
@@ -220,7 +200,7 @@ by（極度貼近的距離），常用於表達情感上的陪伴。
 - Please finish the report by Friday. （請在週五前完成報告。）
 - I will be home by 10 PM. （我最晚 10 點前會到家。）
 
-## 被動
+## by 被動
 由...所做（被動）
 
 在看電影、聽歌或讀書時，作者名字前面一定會加 by，意思是「出自某人之手」。
@@ -245,6 +225,8 @@ A 在 B 的後面，be動詞表達狀態
   - Is there a bus stop behind the house?有一個公車站牌在房子的後面嗎？
 - A 是車子，B 是建築物（找車位）
   - My car is behind the building.我的車在那棟建築物後面
+
+- Is there a bus stop behind the hotel?在酒店后面有一个公交车站吗？
 
 ```
 一般動詞 + behind
@@ -321,87 +303,3 @@ I left my keys behind the flower pot."
 - Where is the entrance to the library?
 
 
-
---------------------------------------------------------------
-
-這是一個觀察力非常敏銳的英文文法問題！
-
-簡單來說：**有沒有加 `side` 的差別，在於你是在講「相對位置（在哪個方位）」還是「具體的表面範圍（在哪一側／哪邊）」。**
-
-我們來詳細拆解這兩句的微妙差別：
-
----
-
-### 1. `on the left of the park`（沒有 side）
-
-> **句意：** 「那間店在公園的**左邊**。」
-
-* **語感與用法：**
-這裡的 `left` 是當作**方位詞**使用（就像 north 北邊、east 東邊一樣）。
-* **畫面：** 以「公園」為基準點，商店位在它的左側方位。這種用法通常是用來描述**相對位置**或地圖上的方位。
-
-
-
----
-
-### 2. `on the left side of the road`（有 side）
-
-> **句意：** 「道路的**左側**有一個警察。」
-
-* **語感與用法：**
-這裡的 `side`（邊、側）把「左邊」具象化成了一個「區塊、表面或車道範圍」。
-* **畫面：** 一條馬路切成左半邊跟右半邊，警察站在左半邊的這個「側邊／這一側」。
-* 當我們在講實體的道路、街道、建築物的牆面、或是物體的兩側時，加上 `side` 會讓空間感更明確、更有具體的「這一邊」的感覺。
-
-
-
----
-
-### 💡 簡單的判斷口訣
-
-* **講大方向、相對位置（誰在誰的左邊）：** 通常直接用 **`on the left of...`** 就好。
-* **講實體道路、車道、或身體部位的兩側（在這一側／那一邊）：** 習慣加上 **`side`**（例如 *on the left side of the road*, *on the right side*）。
-
-不過在日常口語中，有時候邊界沒有分得那麼死，但加上 **`side`** 確實能讓「在哪一個側邊（Surface/Area）」的畫面感更強烈喔！
-
-
-為你整理 **10 個**包含 **`on the left side of`**（在...的左側）的實用例句。
-
-如同我們剛才討論的，加上 **`side`** 可以讓「實體表面、區塊、或具體範圍」的空間感更強烈。我們把它們分成「道路與交通」**、**「室內空間與物品擺設」**、以及**「身體部位」這 3 個最常見的情境：
-
----
-
-### 類別一：道路與交通（街道、車道、建築物側邊）
-
-1. **Please drive on the left side of the road when visiting the UK.**
-（去英國玩時，請開在道路的左側。）
-2. **There is a cozy café on the left side of the street.**
-（在那條街的左側有一家溫馨的咖啡廳。）
-3. **Park your car on the left side of the driveway.**
-（把你的車停在車道的左側。）
-4. **The emergency exit is located on the left side of the building.**
-（緊急出口位於建築物的左側。）
-
----
-
-### 類別二：室內空間與物品擺設（房間、桌子、畫面）
-
-5. **You will find the printer on the left side of the desk.**
-（你會在桌子的左側找到印表機。）
-6. **She placed a vase of flowers on the left side of the fireplace.**
-（她在壁爐的左側擺了一盆花。）
-7. **The icon you are looking for is on the left side of the screen.**
-（你正在找的圖示在螢幕的左側。）
-8. **Please keep your luggage on the left side of the room.**
-（請把你的行李放在房間的左側。）
-
----
-
-### 類別三：身體部位（人體的左側）
-
-9. **He wears his watch on the left side of his body (his left wrist).**
-（他把錶戴在身體的左側／左手手腕上。）
-10. **I felt a sharp pain on the left side of my chest.**
-（我感覺到胸部左側有一陣刺痛。）
-
----

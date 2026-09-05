@@ -21,6 +21,8 @@ about有分類的意思，把限定範圍。
 - a book about space（一本關於太空的書）
   - 把書的範圍縮小，天空的書
 
+- My art project is about recycling.
+
 ## be about to 快要、正要
 be about to 是一個專門用來表達「事情即將在極短的未來發生（快要、正要）」的固定片語。
 

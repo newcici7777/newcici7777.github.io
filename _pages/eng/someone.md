@@ -67,6 +67,8 @@ No one 也有人寫成 no-one（英式英文較常見），但現在最標準、
 常出現在疑問句和否定句中。
 - Did you go anywhere interesting over the weekend?（你週末有去任何有趣的地方嗎？）
 - I didn't go anywhere.（我哪裡也沒去。）
+- I can't find our car anywhere! 
+- I can't find my wallet anywhere.我在任何地方都找不到我的钱包。
 
 ### Nowhere（哪裡都沒有 / 毫無去處）：
 它本身已經帶有否定意味，所以動詞要用肯定型態（千萬不要跟 not 一起用，會變成雙重否定）。
