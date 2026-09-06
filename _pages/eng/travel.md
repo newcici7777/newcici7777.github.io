@@ -107,6 +107,9 @@ travel是動詞
 ## travel(動詞) abroad(副詞)
 - We like to travel abroad.我們喜歡出國旅行。
 
+## travel(動) with 一起旅行
+- who did you travel with in London twenty years ago?妈妈，二十年前你是跟谁去的伦敦？
+
 ## I am off.（我今天放假)
 - off work.離開工作的狀態
 - I get off work at 6:00. 下班 

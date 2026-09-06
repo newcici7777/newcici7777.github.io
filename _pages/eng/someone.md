@@ -34,6 +34,8 @@ Everyone,No one雖然它們的語意是「每個人、任何人、沒有人」�
 形容詞要放在「後面」（後位修飾）
 
 當你想加形容詞去修飾 everyone / something / anything 這類 -one / -body / -thing 的字時，形容詞必須乖乖排在它們後面：
+
+- You look like someone I knew many years ago!
 - I want to eat something delicious.
 - I have something new to tell you.（我有新鮮的事要告訴你。 → delicious / new 要放後面）
 
@@ -53,6 +55,8 @@ No one 也有人寫成 no-one（英式英文較常見），但現在最標準、
 - ❌ He lives in nowhere.（錯！）
 - ✔️ He lives nowhere.（對！）
 
+- Is my wallet somewhere in the bedroom?我的钱包在卧室某個地方嗎
+- I saw your keys somewhere in the kitchen.我在厨房的某个地方看到了你的钥匙。
 
 ## 形容詞後置
 當你想用形容詞來修飾它們（例如：安靜的地方、熱鬧的地方），形容詞一樣要乖乖放在它們後面：
@@ -78,6 +82,14 @@ No one 也有人寫成 no-one（英式英文較常見），但現在最標準、
 - ❌ I want to eat delicious something.（錯）
 - ✔️ I want to eat something delicious.（對！我想吃好吃的東西。）
 - ✔️ There is nothing new today.（今天沒有新鮮事。）
+
+
+- I'd like something sweet.我想要甜的东西
+- Would you like something to eat?你想要吃点东西吗？
+- I would like something sweet, how about you?我想要甜的东西，你呢？
+- I see something near that other tent!
+- I'd like something sweet.我想要甜的东西。
+- The children don't need anything sweet to eat.孩子们不需要吃任何甜的东西。
 
 ## -thing 代名詞（用 it 來代替）
 還記得我們剛才說 -body / -one（someone, everyone）習慣用複數的 they / their 來代指嗎？ 

@@ -22,15 +22,17 @@ wear 不僅僅是「穿（衣服）」的動作，它同時也用來指「身上
 
 ## wear 穿戴什麼在身上
 一般現在式通常用來表達「習慣、常態或事實」
+- I will wear it every day.
 - All personnel must wear ID badges. 所有員工都必須佩戴識別證。
 - She likes to wear expensive shoes.她喜欢穿贵的鞋。
 - Students are required to wear uniforms. 學生被要求穿制服。  
-
+- We can all wear our new sweaters tomorrow!
 
 ## be + wearing 識別證/手錶/帽子/鞋子/衣服
 1. 身上穿什麼衣服、鞋子，都要用`現在進行式`，代表「正在穿」。對方現在身上正穿著、戴著的東西，鎖定現在進行式就對了！
 2. 現在正在流行的服飾
 
+- She is wearing a yellow dress.她穿着一条黄色的连衣裙。
 - He is wearing blue socks.他穿着蓝色的袜子。
 - I like the earrings that you're wearing!（我好喜歡你現在戴的耳環）
 - I love the jacket that you're wearing!（我好喜歡你身上穿的那件外套！）

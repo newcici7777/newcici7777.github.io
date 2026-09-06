@@ -6,6 +6,8 @@ keywords: English,check
 
 ## check
 帳單
+- Excuse me can we have the bill.打扰了，我们可以要
+账单吗？
 - Can I have the check, please?
 - Ask for the check.（索取帳單）
 - This is not her check.This is my check.这不是她的账单。这是我的账单。
@@ -32,5 +34,8 @@ Check（檢查/查看）：不只是看，還包含「為了獲得某個資訊�
 - Check the route.（查路線 / 看路徑)
   - Let me check the route on my phone.（我看一下手機上的路線。）
   - Wait, let me check the directions on my phone.等一下，我看個手機上的導航路線。
+
+- I want to check my email.
+- Did you check your calendar?你杳看你的日历了吗？
 
 ## put a check 打勾勾

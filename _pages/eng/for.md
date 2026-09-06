@@ -9,6 +9,7 @@ for 是一個非常關鍵的介系詞，用來連接二個名詞的關係。
 - It is for you. (給你)
 - it's for a girl (給一個女孩)
 - Is it for a girl in your class? (給一個女孩)
+- Only the best for my daughter!
 
 ## for 連接「遲到」與「場合」
 for 是一個非常關鍵的介系詞，用來連接「遲到」這個狀態與「場合」。
@@ -39,6 +40,7 @@ for 是一個非常關鍵的介系詞，用來連接「遲到」這個狀態與�
 - I want this cheese for lunch. (起士當作午餐)
 - Can we have ice cream for dinner? 我们晚饭可以吃冰淇淋吗？
 - I usually drink a bottle of juice for breakfast.我平时早饭喝一瓶果汁。
+- We can have cake for dessert.我们甜点可以吃蛋糕。
 
 ## for 把「什麼東西」當作 點心
 * We can have cake for dessert. （我們可以吃蛋糕［當作］甜點。）
@@ -237,6 +239,7 @@ for free放在句尾，負責補充說明「這件事不用花錢」
 - Can you save a seat for me? （你可以幫我留一個位子嗎？）
 
 ## 表達「替我／代勞」的含意
+- I will pay for your bill.我会为你的账单付钱。
 - Could you open the door for me? （你可以幫我開一下門嗎？）
 - Please check this document for me. （請幫我檢查一下這份文件。）
 - He carried the heavy bag for me. (＝ He helped me carry the heavy bag.) （他幫我提這個重包包。）

@@ -1,5 +1,5 @@
 ---
-title: 頻率副詞 How many times 多少次
+title: 頻率副詞 次數
 date: 2026-07-29
 keywords: English, Frequency
 ---
@@ -37,6 +37,7 @@ How often（多常...）的問句，我們會把次數跟時間結合
 - Does she usually sleep in that bedroom?她平常在那個房間睡覺嗎
 
 
+
 ## 多久一次
 公式是：
 ```
@@ -58,9 +59,16 @@ How often（多常...）的問句，我們會把次數跟時間結合
 - Eddy and Mary run six times a week! Eddy 和 Mary 一週跑步六次！
 - I watered your plants three times every day!
 - Three times every day?!
+- I want to eat steak every day.
 - I told you to water the plants three times every week!
 - She practices guitar every Tuesday.(注意，guitar前面沒有the)  
 - This restaurant always opens at 6 a.m.
+- Eddy and Duo run six times a week! They are strong runners.Eddv跟Duo每周跑六次步！他们是很强壮的赛跑者。
+- The children play video games three times a week.孩子们一周玩三次
+电子游戏。
+- I play soccer with my cousin four times a month.我和我的表弟一个月
+踢四次足球。
+
 
 ## never 從不
 - We never work on Friday**s**

@@ -28,6 +28,7 @@ to 的意思是「朝向、往...方向」，在這裡當作目的地的大門�
 移動動詞: go, come, get, walk, drive, fly, move
 - go to
   - I go to work.我去上班。
+  - My grandmother went to Cambridge with us last fall.我的祖母去年秋天跟我们一起去了剑桥
 - come to
   - Sorry, I can't come to the party.我不能過來party
 - ride to + 目的地 騎車去
@@ -106,6 +107,10 @@ walk跟pass都是動詞。
 - Drive past the bank 開車經過銀行
 - Bea's boss walks past Bea's desk.
 - Do I need to drive past the zoo? 我需要开车经过动物园吗？
+- You need to walk past the hospital.你需要走过医院。
+- Bea's boss walks past Bea's desk.
+- You need to walk past the train station and turn left.你需要走过火车站
+然后左转。
 - You need to walk past the hospital.你需要走过医院。
 
 ```
@@ -307,7 +312,7 @@ go是離聽話的人愈來愈遠。
 - Can my dog come with me to the party?
 - you come to the park every day.
 - Who will come to the party with me tonight?(谁今晚会跟我一起来聚会？ )  
-
+- will you come with me tomorrow.你们明天愿意跟我一起来吗？
 
 ## Come over 過來一下
 Over = 跨過那段距離。
@@ -352,6 +357,7 @@ go後面省略to，因為next就是副詞
 - Let's go out for dinner with them
 - Let's go out for dinner.
 - she wants to go out on Friday night!
+- Will you go out with me?你願意跟我一起出去嗎
 
 ## go outside 出去外面
 重點：強調從「室內（inside）」走到「室外（outside）」這個實體的空間移動。

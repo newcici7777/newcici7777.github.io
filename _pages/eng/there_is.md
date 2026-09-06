@@ -24,6 +24,11 @@ keywords: english, the water
 - There is a lot of rain today.（今天有很多雨 / 今天雨很大。）
 - There is too much wind for surfing.（風太大了，不適合衝浪。）
 - There is water everywhere.到處都是水(馬路上到處都在積水，因為雨太大)
+- I can't see the plane, there are too many cloud**s**.我看不到飞机，有太多云了。
+- There are a lot of clouds today.今天有许多云。
+- Oh no, there is **a** thunderstorm!噢不，有一场雷雨！
+
+- There aren't any birds here.
 
 ### It's + 描述天氣
 - It's too windy.（風太大了。）
@@ -60,6 +65,8 @@ a light 是可數名詞，前面要加a
 ### a fire 是可數名詞，前面要加a
 - There's **a** fire in the building!（這棟大樓起火了！）
 - We need to build a fire for camping.（我們露營需要起個營火 / 生個火。）
+- Oh no, there is a fire!噢不，有一场火灾！
+
 
 ### fire 不可數，前面不加a或the
 不可數（指物質本身的「火」或「熱能」）：
@@ -69,6 +76,8 @@ a light 是可數名詞，前面要加a
 ## There is **an** accident 有意外/事故
 an accident 是可數名詞，前面要加an
 - Was there **an** accident?這裡有發生意外嗎？
+- There are accidents here every day.这里每天都有事故。
+- The police are here. Was there an accident?警察在这里。有事故吗？
 
 ## There is a problem 有問題
 - Is there a problem with your laptop?你的笔记本电脑出了

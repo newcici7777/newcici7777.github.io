@@ -24,6 +24,12 @@ keywords: english, much,many
 - Does he sleep too much?
 - She ate too much.（她吃太多了)
 
+- He had too many grapes.他吃了大多葡萄。
+- we have too much coffee.我们喝大多咖啡了。
+- Don't put too much butter on my bread.不要在我的面包上放太多黄油。
+- There is too much sugar in my coffee.在我的咖啡里有太多糖。
+- We don't have much milk.我们没有很多牛奶。
+
 ## too much(形容詞) + 不可數名詞
 - She ate too much food.（她吃了太多食物)
 - I had too much honey and too many potatoes.

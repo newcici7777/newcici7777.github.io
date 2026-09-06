@@ -13,12 +13,17 @@ the date of [某個活動/事件]
 The date of(屬於...) + the next meeting(下次會議)
 ```
 
+- What is the date of our next holiday?我们下一次假日是几月几号？
 * What is the date of your birthday?(你生日的日期是幾號？)
 * Please confirm the date of the release.(請確認這次發布上線的日期。)
 * I need to check the date of our flight.(我需要確認我們班機的日期。)
+- Don't forget the date of our meeting!不要忘记我们会议的日期！
 - **What** is the date of his birthday?
   - **March first** is his birthday.
 - What is the date of our next meeting?
+
+- Is July fourth a holiday?七月四号是一个假日吗？
+
 
 ## What is the date? 今天幾號
 問日期要用What，後面是be動詞，表達「現在是...?」  

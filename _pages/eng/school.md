@@ -37,6 +37,7 @@ keywords: English
 - Do you have classes today? 你今天有课吗？(注意！classes用複數)
 - I have speaking lessons every afternoon.我每天下午都有口语课。
 
+
 ## has a lesson
 課表有課。
 - She has a speaking lesson at three.她在三点有一节口语课。

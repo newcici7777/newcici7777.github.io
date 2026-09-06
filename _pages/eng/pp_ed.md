@@ -90,6 +90,7 @@ keywords: English,
 |給|give|gave|given|
 |開始|begin|began|begun|
 |破|break|broke|broken|
+|騎車|ride|rode|ridden|
 
 ## 不規則
 

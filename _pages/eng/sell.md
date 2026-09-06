@@ -38,14 +38,14 @@ keywords: English, sell, for sale
 - the ring is on sale.這個戒指正在特價中
 - These shoes are on sale this week.（這些鞋子這週大特價。）
 - I bought this jacket on sale.（我買這件打折的夾克——這裡當作副詞片語修飾動作買。）
-
+- It was on sale.
 
 ## be + for sale 正在出售中
 - This house isn't for sale.（這棟房子沒有在賣)
 - The earrings are for sale.（這副耳環正在出售中／有在賣喔。）
 - Is this house for sale?（這棟房子要出售嗎？）
 - Is your car for sale?（你的車有在賣嗎？）
- for sale（待售中、供人購買）
+- for sale（待售中、供人購買）
 
 
 

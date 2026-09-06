@@ -34,6 +34,12 @@ keywords: leave, left
 - He left the office early.（他很早就離開辦公室了。）
 - Anna wants to leave the city and move to the country.
 
+- Lucy leaves the table. An old man walks into the cafe. He sees Lin.
+- Anna wants to leave the city and move to the country.安娜想要离开城市搬到乡下。
+- I will leave at about 5 o'clock.我会在五点钟左右离开。
+- That train won't leave until 7 p.m.
+
+
 Leave 不及物動詞（後面不需要直接接受詞）。
 - When do you want to leave?你什麼時候離開?  
 

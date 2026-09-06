@@ -26,6 +26,10 @@ Do + 個人健身、武術或體操（比較偏向個人的鍛鍊、沒有直接
 - do yoga（做瑜伽）
 - do exercise（做運動／鍛鍊）
 
+## 游泳
+- The children swam every day last week.孩子们上周每天都游泳。
+- We swam in the pool last weekend.我们上周末在游泳池里游了泳。
+- He swims as quickly as a fish.他游得像鱼一样快。
 
 ## go + 活動
 去從事某項戶外活動或休閒娛樂
@@ -47,17 +51,31 @@ Go + 以 -ing 結尾的戶外運動（通常是去某個地方進行的活動）
 - 未來式：We will go fishing tomorrow.（我們明天要去釣魚。）
 - 進行式（正在出發去）：They are going fishing.（他們正準備去釣魚／出發去釣魚了。）
 
-## have fun + Ving 做某事時玩得開心
-fun 在這裡是不可數名詞，前面不能加 a。  
-接在 fun 後面的動作，必須改成 動名詞（-ing） 形態。
-- Have fun shopping! （逛街逛得開心點！）
-- Have fun traveling in Japan! （在日本旅行玩得愉快！）
-- Have fun drawing pictures!畫畫玩得開心點！／盡情享受畫畫的樂趣吧！
-- We had fun hiking last week.我們上週去健行玩得很開心。
-- We had so much fun!（我們玩得超開心！） fun（不可數名詞：樂趣）
+## go hiking 健行/ go dancing
+- How often do you go hiking?你多久去一次
+徒步旅行？
+- I went hiking there last week and saw a lot of angry chickens.
+- We went swimming last night.我们昨晚去游泳了。
+- They went dancing last night together.他们昨晚一起去跳舞了。
+
+
+
 
 ## 露營
 - I don't want to camp in the mountains! （我才不要去山裡露營！）
 - camp in the mountains（雖然偶爾會聽見，但語意比較偏向「待在山區裡進行露營活動」）
 - camp out in the mountains（最道地的說法，強調在戶外搭帳篷露營）
 - go camping in the mountains（去山裡露營）
+
+- No, I don't want to camp in the mountains! 
+- Maybe camping was a bad idea...
+- Yeah, those other campers ordered a pizza!
+- Vikram and his wife, Priti, are camping.
+- They're sitting in their tent.
+- The chickens want to camp outside
+- camping at the beach is wonderful.在海滩野营很棒。
+- They camped next to the beach yesterday. 他们昨天在海滩旁边野营了。
+- How long did you camp at the park?你在公园野营了多久？
+- We camp here every summer.我们每年夏天都在这里野营。
+- Michael's children like camping.
+- Camping Meals

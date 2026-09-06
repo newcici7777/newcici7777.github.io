@@ -10,6 +10,9 @@ keywords: english, a lot of, lots of
 - A lot of thing**s**!
 - Do you hav a lot of meetings today?你们今天有许多会议吗？
 
+- She doesn't have a lot of time.她没有很多时间！
+- Does Tom have a lot of time?Tom有很多时间吗？
+
 ## a lot 作為副詞，沒有of
 a lot 放動詞後面。    
 a lot 表示知道的「程度」或「數量」很多 

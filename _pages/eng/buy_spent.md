@@ -132,16 +132,17 @@ Pay + 錢 + TO + 人 + FOR + 物
 - She spends a lot of time studying English.
 （她花很多時間讀英文。）
 - He spends an hour running every day.（他每天花一小時跑步。）
-
+- Ben spent the weekend with his family.本跟他的家人一起度过了周末。
+- I like spending time with my cat.我喜欢花时问跟我的猫在一起。
+- She often spends time with her grandparents.她经常花时间跟她的祖父母在一起。
 
 ### 人 + spend + 時間 + 動作ing
-- I spent three hours **cleaning** my room.
-（我花了三個小時打掃房間。）
-- She spends a lot of time **reading** books.
-（她花很多時間閱讀書籍。）
+- I spent three hours **cleaning** my room.（我花了三個小時打掃房間。）
+- She spends a lot of time **reading** books.（她花很多時間閱讀書籍。）
 - I spent two hours cooking.
-- I spent two hours cooking dinner.
-（我花了兩個小時煮晚餐。）
+- I spent two hours cooking dinner.（我花了兩個小時煮晚餐。）
+- Ben spends an hour running every day.本每天花一个小时跑步。
+- Every Monday morning, I spend two hours baking.每周一早上，我花两个小时烘焙。
 
 
 ### 人 + spend + 時間 + on + 物
@@ -188,7 +189,9 @@ It + takes + (人) + 時間 + to V
 - What is the cost of this ticket?（這張票的費用是多少？）
 
 ### cost 當動詞（花費、使付出代價）：
-This jacket costs a hundred euros.（這件外套花費了一百歐元——這裡就是動詞，因為主詞是外套，所以第三人稱單數加了 s）。
+- This jacket costs a hundred euros.（這件外套花費了一百歐元——這裡就是動詞，因為主詞是外套，所以第三人稱單數加了 s）。
+- Her blouse costs one hundred dollars.她的女士衬衫要价一百美元。
+- Those movie tickets cost five dollars.那此电影票要价五美元。
 
 ## cost 「錢」花在「東西」身上
 主詞是「東西」，受詞是「錢」

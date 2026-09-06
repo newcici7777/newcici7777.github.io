@@ -1,5 +1,5 @@
 ---
-title: 地方副詞 close to, next to, near, beside
+title: 地方副詞 close to, near, beside
 date: 2026-07-28
 keywords: close to, next to, near, beside
 ---
@@ -37,8 +37,10 @@ in Taiwan.
 
 - Don't leave your shoes in the hallway.（別把鞋子留在走廊上。）
 
-## in 在裡面
+## in 在容器裡
 - Duo's gloves are in that drawer.多儿的手套在那个抽屉里。
+- Are my socks in the drawer?我的袜子在抽屉里吗？
+- Her sweaters are not in her closet.她的毛衣不在她的衣柜里。
 
 ## in在冰箱裡
 - Do we have milk in the refrigerator?
@@ -121,6 +123,10 @@ outside.
 - It's too hot outside. It's the hottest day in August. I want to go home.
 - The swimming pool is outside.
 - It's hot outside.
+- Do you want to sleep outside instead?
+- You don't even sleep outside!
+- I'll look outside the tent.
+- A fire was inside his house.
 
 ## outside + 建築 (什麼建築的外面)
 - outside the house（房子外面）

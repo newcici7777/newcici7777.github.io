@@ -17,6 +17,9 @@ How many times + 助動詞 + 主詞 + a month/week?
 - How many times a week do you work out? (你一個禮拜運動幾次？)
 - How many times a day do you drink coffee? (你一天喝幾杯/幾次咖啡？)
 - How many times a year do you go abroad? (你一年出國幾次？)
+- How many times a month do you play golf? I play every month with my cousin.
+- How many times a month does he play golf?
+- How many times a week does she go to the gym? 她每周去健身房几次？
 
 時間單位放後面:
 - How many times do you go to the gym a week? (你一個禮拜去幾次健身房？)

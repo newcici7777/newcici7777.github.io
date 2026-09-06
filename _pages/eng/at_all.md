@@ -38,6 +38,7 @@ keywords: English, at all
 否定句（don't / can't / isn't...）... + anymore
 ```
 - I don't think I like this sweater anymore.（我不再喜歡這件毛衣了／我現在不喜歡這件毛衣了）
+- I don't want dog food anymore.
 * I don't live there anymore.（我不再住在那裡了。 → 以前住，現在搬走了）
 * He doesn't work here anymore.（他不再這裡上班了。 → 以前在這裡，現在離職了）
 * This computer doesn't work anymore.（這台電腦壞了不能用了。 → 以前還能運作，現在不行了）

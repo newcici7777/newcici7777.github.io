@@ -40,6 +40,7 @@ Some of +  名詞s + 複數動詞
   - the是從「這堆特定的書」裡面挑出「一些」放在書架上，因此必須用 some of the
 - Some books are on the bookshelf.書架上有一些書(泛指一般書)
 
+
 從一個「特定的團體、特定的範圍」裡面挑出一部份 → 用 some of the / some of my
 - Some of my friends are coming.（我朋友當中的一些人要來 → 從「我的朋友」這個特定範圍裡挑出來。）
 

@@ -107,6 +107,8 @@ Distance 是「距離」（名詞)，Away 是用來形容「有多遠」（副�
 單獨看 away 時，它有「離開、在遠處」的意思。
 - Go away!（走開！ / 離我遠一點！）
 - He is away on business.（他出差不在家 / 人在遠處。）
+- That bear went away finally.那只熊终于走开了。
+- That dog doesn't want to go away.那只狗不想走开。
 
 ## far away 很遠
 far(遠) + away（離開、距離）

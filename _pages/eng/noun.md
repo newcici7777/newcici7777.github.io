@@ -104,15 +104,29 @@ Pieces（塊 / 片）
 **數字** + **容器單位** + of + **內容物**的結構。
 * Twelve bottles of water(12 瓶水)
 * Twelve cups of coffee(12 杯咖啡)
+- a kilogram of salt.一公斤盐
+- a gram of sugar.一克糖
+- ten pieces of pizza.十片比萨
+- Two grams of pepper.两克胡椒粉
 
 - There are twelve bottle**s** of water in the fridge.(冰箱裡有 12 瓶水。)
 * I bought four bag**s** of rice at the store.(我在店裡買了四袋米。)
+- Dad had three pieces of fish.
+- Can have a piece of fruit?我可以要一片水果吗？
+- Can I get another piece of chocolate? I love it!我可以再要一块巧克力吗？我爱巧克力！
+- We need two kilograms of sugar.我們需要二公斤糖
+- Why did you buy fifty kilograms of potatoes?你为什么买了五十公斤土豆？
+- That boy is having a piece of cake right now.那个男孩现在正在吃
+一块蛋糕。
 
 ### 容器單位前面沒有數字，代表「多個」
 * Cup**s** of coffee(杯裝咖啡) → 多個杯子。
 * Bag**s** of cracker**s**(袋裝餅乾) → 多個袋子。
 * Box**es** of cookie**s**(盒裝餅乾) → 多個盒子。
 
+- There is some coffee in that bag.在那个袋子里有一些咖啡。
+- This bag of potatoes is very heavy.这袋土豆非常重。
+- Could you get a bag of grapes at the grocery store?你能在杂货店买一袋葡萄吗？
 
 ## 容器單位 + 可數名詞**S**
 不是只有不可數名詞可以用量詞，可數名詞也可以

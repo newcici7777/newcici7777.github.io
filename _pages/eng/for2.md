@@ -3,6 +3,11 @@ title: for 原因、活動、用途、人數、時間點、適用對象、個人
 date: 2026-08-26
 keywords: for
 ---
+## for 目的
+- Who studied for the test?谁为测试学习了？
+
+## for 針對某個部分
+- I don't know any exercises for your brain.
 
 ## for 活動/節日 
 - I don't have plans for New Year’s day .
@@ -47,6 +52,9 @@ Thanks for + 名詞 / V-ing（謝謝你做...）
 - Thanks for the tickets.(謝謝你的門票)
 - Thank you for the picture!
 - Thank you for the taxi!
+- Thank you for the flowers, they are so beautiful!谢谢你们的花
+- thank you for coming.谢谢你来。
+- Thank you for calling me, but I am busy now.谢谢你给我打电话，但是我现在在忙。
 
 ### be famous for 原因
 ```
@@ -123,6 +131,7 @@ for 代表的是「交換（Exchange）」或「價值相當於...」
 ## 名詞 + for + 對象 「對某人／某事物的某種情感、態度或需求」
 「名詞」通常都是抽象名詞（像是愛、熱情、天賦、尊敬等），搭配 **`for`** 之後，就能精準指出這份情緒或特質是「給誰的」或是「針對什麼事物的」！
 
+- My love for you will never end.我给你的爱从来不会结束。
 - My **love for you** will never end.我對你的愛永無止境。
 * *My respect **for** you*（我对你的尊敬）
 * *Her love **for** music*（她對音樂的熱愛）
@@ -407,6 +416,7 @@ for 代表的是「交換（Exchange）」或「價值相當於...」
 
 在這個句子裡：
 
+
 * **`It's time`** ➔ 時間到了 / 是時候了。
 * **`for`** ➔ 介系詞，用來連接「這個時間是**為了**什麼事情而準備的」。
 * **`the new episode of the dating show`** ➔ 約會節目的新一集。
@@ -419,6 +429,7 @@ for 代表的是「交換（Exchange）」或「價值相當於...」
 
 只要把後面的名詞換掉，就能用在各種生活情境中：
 
+- It's time for some changes.
 * *It's time **for lunch**.*（該**吃午餐**囉／午餐時間到了。）
 * *It's time **for bed**.*（該**上床睡覺**囉／就寢時間到了。）
 * *It's time **for a break**.*（該**休息一下**囉。）

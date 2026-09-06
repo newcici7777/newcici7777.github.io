@@ -108,6 +108,7 @@ all除了接名詞，最常跟受格代名詞結合。
 - I know all the road**s** in this city.
 - This phone knows all the road**s** in every city.  
 - All the water **is** gone.（所有的水都沒了。）
+- And all the stores are closed.
 
 ## All 作為代名詞
 當 all 指的是抽象概念的「一切、所有事情（everything）」時，它會被視為單數，所以後面要接 is。

@@ -3,6 +3,9 @@ title: What happened 發生什麼事
 date: 2026-08-27
 keywords: English, What happened
 ---
+## happening 現在進行式
+- What is happening? 怎麼了
+
 ## what(主詞) + happened(過去式) 怎麼了
 - So what happened?
 
@@ -13,6 +16,8 @@ keywords: English, What happened
 * *What **happened to** him? I haven't seen him for days.*（他**怎麼了**？我好幾天沒看到他了。）
 - I haven't seen Mark all week. Do you know what **happened to** him?我整週都沒看到馬克。你知道他**怎麼了嗎**？
 
+- What happened to your head?你的头发生了什么？
+- What happened to his leg?他的腿发生了什么？
 
 ## what happened to 東西 (發生在東西身上)
 * *What **happened to** your car?*（你的車**怎麼了**？／發生什麼事了？）
@@ -26,6 +31,7 @@ keywords: English, What happened
 - Don't worry, nothing bad will **happen to** you.別擔心，不會有什麼壞事**降臨在我/你身上**的。
 
 ## happen with 人/情況 (某件事進展/狀況如何)
+
 * *What's happening **with** the project?*（那個專案目前**進展得怎麼樣**了？）
 - What's **happening with** the marketing project? Is it finished?行銷專案目前**進展得怎麼樣**了？完成了嗎？
 - I want to know what **happened with** your job interview yesterday. Did you get the offer?我想知道你昨天的工作面試**情況如何**？拿到錄取通知了嗎？
@@ -46,3 +52,7 @@ keywords: English, What happened
 * *I **happen to** know the answer.*（我**剛好**知道答案。）
 
 
+
+## 其它問「怎麼了」的問句
+- What's the matter?
+- What's wrong?

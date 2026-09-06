@@ -7,7 +7,8 @@ keywords: english, next
 next 當作「順序副詞」使用，意思是「接下來、下一步」。
 - Where can we go next?
 - What should we do next?（我們接下來該做什麼？）
-
+- What do you want to do next?你接下来想要做什么？
+- Where can we go next?我们接下来可以去哪里？
 
 ## going next(副詞)
 - Where are we going next?（我們接下來要去哪裡？）

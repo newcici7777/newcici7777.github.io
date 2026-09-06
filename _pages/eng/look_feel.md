@@ -13,6 +13,13 @@ keywords: look, see, watch, seem, feel, hear, listen to,
   - This house looks modern.（這房子看起來很現代。）
   - She looks nice.
   - You don't look sick.
+  - And you look so nice in blue.
+  - These carrots look fresh.这些胡萝卜看起来很新鲜。
+  - Do those onions look fresh?那些洋葱看起来新鲜吗？
+  - These grapes look good!这此葡萄看起来很好！
+  - This house looks very modern.这个房子看起来非常现代。
+  - the sky looks very different. 
+  - the sky looks gray.  
 - Sound（聽起來）
   - That idea sounds great.（那個主意聽起來很棒。
 - Smell（聞起來）
@@ -63,7 +70,10 @@ watch 看別人在做的「一連串動作」。
 ### hear + 名詞
 - Can you hear the music? 你能听到音乐吗？
 - I'm sorry to hear that.
-
+- Suddenly, Vikram hears a noise outside.
+- did you hear that?
+- I'm sorry to hear that.
+- Can you hear the plane?你能听到飞机吗？
 
 ## 「感官動詞 + 受詞 + 動作」是用來描述「看到別人做某事」
 透過我們的五官（視覺、聽覺、觸覺、嗅覺、味覺）來感受動作。常見的有：see（看）、watch（看）、hear（聽）、listen to（聽）、feel（感覺）。

@@ -93,6 +93,7 @@ kind 在這裡當名詞，意思是「種類」。前面的 a 是修飾 kind（�
 ## 形容詞 + kind of + 名詞 
 kind 前面可以加形容詞！
 - What is your favorite kind of candy?最喜歡哪一種糖果
+- What is your favorite kind of candy?你最喜欢的是哪种糖果？
 
 - 加指示代名詞（這／那一種）：
   - I like this kind of chocolate.（我喜歡這種巧克力。）

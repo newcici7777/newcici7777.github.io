@@ -11,6 +11,7 @@ keywords: english,die, dead, dying, death
 
 ## died(動) 去世、過世
 通常用在一般過去式（Simple Past），說明某人或某物在過去「過世了、死去了」。
+- The plants died because there was a big fire.植物们死了，因为有一场很大的火灾。
 * *He died last year.*（他去年過世了。）
 * My grandfather **died** ten years ago.
 （我爺爺在十年前**過世了**。）

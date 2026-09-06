@@ -12,6 +12,8 @@ keywords: english
 * We enjoyed our stay at the hotel.（我們很享受在飯店停留的這段時間。 → 名詞）
 - We stopped at a nice café along the coast to enjoy the ocean view.（我們沿著海岸順道去了一家不錯的咖啡廳，欣賞海景。）
 - We enjoyed the party very much. 我們非常享受這場派對
+- You're right. We should enjoy nature.
+- I always enjoy life in the country.我总是很享受在乡下的生活。
 
 ## enjoy（享受）+ Ving
 你必須正在做、或做過某件事，才能享受它

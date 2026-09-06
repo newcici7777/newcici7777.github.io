@@ -3,6 +3,9 @@ title: use, with, together, come with, accessories
 date: 2026-08-18
 keywords: English, with
 ---
+## be + with 狀態是在一起
+- Bea is at the gym with her friend, Eddy.
+
 ## Use 使用
 - Use the internet 會使用網路嗎
 * use the computer（使用電腦）
@@ -18,6 +21,7 @@ keywords: English, with
 用在工具：
 - Write with a pen（用原子筆寫字）
 - Cut it with a knife（用刀子切它）
+- Cooking with Carrots
 
 ## 動作 + with + 身體部位
 「用身體的某個部位去完成一個動作」，會使用 **`with`** 這個介系詞。
@@ -113,6 +117,9 @@ help me + to + 原形動詞
 - I would like a pizza with cheese, please.我想要一个加芝士的比萨，谢谢。
 - With milk?加牛奶？
 - My daughter likes to have cereal with milk.她喜歡吃加牛奶的麥片。
+- My daughter likes to have cereal with milk every morning.我的女儿喜欢每天早上吃麦片加牛奶。
+
+
 
 * With milk 
 * With oat milk.（加燕麥奶）

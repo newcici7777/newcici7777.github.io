@@ -59,6 +59,8 @@ work是抽象名詞，不可數名詞，前面不加a 或the
 - Is Anna working for two different companies ?
 - Ben works for a good company.(本为一家很好的公司工作。)  
 - I am going to work for a different company.我打算为一家不同的公司工作。
+- I worked in oxford for 2 years.
+- How long did you work for that company?你为那家公司工作了多久？
 
 ## be in the ... business
 ```

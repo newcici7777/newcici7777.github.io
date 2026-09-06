@@ -46,10 +46,10 @@ have 的意思是「取得、擁有、入住」
 
 
 ## 比賽
-- They have competitions every year.
-（他們每年舉辦比賽。）
+- They have competitions every year.（他們每年舉辦比賽。）
 - Let's have a climbing competition
 - have a race（舉辦賽跑）
+- He has a singing competition tomorrow.
 
 ## 烤肉
 have 吃和活動或聚會搭配時，它代表的是「進行、享受、舉辦」的意思

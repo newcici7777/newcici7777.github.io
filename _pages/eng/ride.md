@@ -4,6 +4,9 @@ date: 2026-09-05
 keywords: english, ride
 ---
 
+- Does Emma usually ride a bike to the store? She rode a bike there yesterday.Emma平时骑自行车去商店吗？她昨天是骑自行车去的。
+- I rode my new bike to the museum yesterday.我昨天骑了我的新自行车去博物馆。
+
 
 ## ride
 - I paid for the ride.我付了車資 / 我付了這趟車的錢
