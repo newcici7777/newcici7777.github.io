@@ -67,6 +67,8 @@ keywords: English,
 |想|think|thought|thought|
 |打架|fight|fought|fought|
 |抓|catch|caught|caught|
+|教|teach|taught|taught|
+
 
 ## 只有過去式不一樣
 
@@ -99,6 +101,7 @@ keywords: English,
 |走失|lose|lost|lost|
 |離開|leave|left|left|
 |告訴|tell|told|told|
+
 
 ## 現在進行式不一樣
 
