@@ -49,6 +49,10 @@ What形容詞 + 名詞date is [某個活動/事件]?
 - Is September tenth a holiday?(九月十号是一个假日吗？)
 - Is today feberary tenth?(今天是二月十号吗？)
 
+## 月份上的比較
+- Is february colder than October? 二月比十月更冷吗？
+
+
 ## Do you know the date of 活動?
 - Do you know the date of our next meeting?
 

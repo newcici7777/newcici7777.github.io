@@ -30,9 +30,16 @@ She's not **on** this baseball team.
 - Ben lives in an apartment.  
 - When did you live in Seattle, Grandma?
 - Where will you live next year?  你明年会住在哪里？(注意！這邊沒有in)  
+- I live on this street.我住在这条街上。
+- Who did you live with then?你当时跟谁一起住？
+- Who lived in this apartment building twenty years ago?谁二十年前住在这座公寓楼里？
+- He lived alone for fifty years.他一个人住了五十年。
+- Are you living a good life?你生活过得好吗？
+- When did you live in Seattle, Grandma?
+- The chickens live on the mountain
 
-
-
+## life 生活
+- She often cries because her life is hard!她经常哭，因为她的生活很难！
 
 ## born 出生 (用被動式)
 - Were you born on November fifth or on November eighth? 
@@ -65,41 +72,6 @@ gone 是形容詞用來形容一種「不在、離去、離開了」的狀態。
 - All the cookies are gone. Who ate them all? （餅乾全被吃光了。到底是誰全部吃完的？）
 
 
-## 大自然 + the
-### mountains
-為什麼 mountain 要加 s 變成 mountains？  
-大自然的山通常不是孤立的一座山，而是連綿起伏的山脈系統。因此，英文習慣用複數的 the mountains 來統稱「山區」、「群山」。  
-
-- in the mountains（在山區裡）
-  - We camped in the mountains.（我們在群山「之中／山區」露營。）
-- on the mountain(沒加s)
-  - The chickens live on the mountain.雞住在這座山上
-  - 指的是那座特定的「山（表面／山坡上）」。
-  - There is a small house on the mountain.（山上有棟小房子。）
-
-### rivers
-river（河流） 加 s 變成 rivers，通常是最直觀的「複數名詞」用法，用來指「多條河流」，或者泛指大自然中的河川。
-- There are many rivers in Taiwan. （台灣有許多河流。）
-- We love exploring nature, including forests, lakes, and rivers. （我們喜歡探索大自然，包括森林、湖泊和河流。）
-
-講其中某一條特定的河，前面通常會加上定冠詞 the，而且用單數形：
-- We went swimming in the river. （我們去那條河游泳了。）
-
-### 自然景觀複數：
-- in the woods（在森林裡）
-- in the fields（在田野裡）
-- rivers（河流們）
-- lakes（湖泊們）
-
-
-
-
-
-
-
-
-
-
 ## fast 與 quickly
 - fast（形容詞 / 副詞同形，強調「速度快」）
   - 詞性： 它既是形容詞（快的），也是副詞（快速地）。
@@ -115,17 +87,6 @@ river（河流） 加 s 變成 rivers，通常是最直觀的「複數名詞」�
 
 
 
-## broken working work
-### is broken（壞了、斷了、碎了）
-是形容詞，東西有明顯的破洞、螢幕碎裂、零件斷掉、或是徹底癱瘓不能用。
-
-- My phone screen is broken.（我手機螢幕碎了／壞了。）
-- The chair is broken.（這張椅子斷了／壞了。）
-
-### isn't working / doesn't work（運作不正常、秀逗、不能用）
-強調「功能失效」： 這兩個詞不一定代表東西「碎掉」或「斷掉」，它通常是指功能無法正常運作（可能外觀完好，但內部秀逗、當機、或是按了沒反應）。
-- The elevator isn't working.（電梯故障不能動了——外觀可能好好的，但按了沒反應。）
-- My computer doesn't work.（我的電腦開不了機／當機了。）
 
 
 
@@ -145,6 +106,8 @@ build ，強調那個「堆疊、建造」的過程。
 ## in her free time
 - I like to read books in my free time.（我喜歡在我的空閒時間看書。）
 - What do you usually do in your free time?（你通常都在空閒時間做什麼？）
+- My mom often bakes cookies in her free time.
+- She is a singer in her free time.她在她的空闲时间是一个歌手。
 
 ## end(動詞) 結束
 - Did the concert end late yesterday?昨天的演唱會很晚才結束嗎？
@@ -168,6 +131,7 @@ to : 一路跟著對方移動到了哪個終點
 
 ## belong to 屬於
 - That ring belonged to someone else.那枚戒指是別人的（屬於某個「其他的人」）
+- This ring belongs to her.
 
 
 ## One day(時間副詞) 有一天／某一天
@@ -234,6 +198,9 @@ own擁有屬於自己、能自由支配的東西（如時間、空間、車子�
 
 ## well(副)
 - I do not speak French very well.我说法语说得不太好。
+- I didn't sleep well last night. 我昨晚没有睡好
+- Anna doesn't bake very well.
+
 
 ## pour 倒
 - Junior pours Eddy's juice on the ground.
@@ -241,6 +208,71 @@ own擁有屬於自己、能自由支配的東西（如時間、空間、車子�
 ## break up 分手
 - Chloe broke up with me.
 - why did she break up with you?
+
+## brake 弄破
+- I broke the dishes last night.我昨晚打破了盎子。
+
+## broken working work
+### is broken（壞了、斷了、碎了）
+是形容詞，東西有明顯的破洞、螢幕碎裂、零件斷掉、或是徹底癱瘓不能用。
+
+- My phone screen is broken.（我手機螢幕碎了／壞了。）
+- The chair is broken.（這張椅子斷了／壞了。）
+
+### isn't working / doesn't work（運作不正常、秀逗、不能用）
+強調「功能失效」： 這兩個詞不一定代表東西「碎掉」或「斷掉」，它通常是指功能無法正常運作（可能外觀完好，但內部秀逗、當機、或是按了沒反應）。
+- The elevator isn't working.（電梯故障不能動了——外觀可能好好的，但按了沒反應。）
+- My computer doesn't work.（我的電腦開不了機／當機了。）
+
+
+## hit 撞車
+- A car hit that tree yesterday.一辆车昨天撞了那棵树。
+
+## keep
+- You can keep this ring. 你可以保留这戒指
+- You can keep that black suit.你可以保留那套黑色的西装。
+- Grandpa kept that old suit for thirty
+years.爷爷保留那套旧西装二十年了。
+
+### keep + 東西 + 形容詞 (保持...狀態) 
+* Regular exercise **keeps your body healthy**.（規律運動能**保持身體健康**。）
+
+## let 人(受詞) + 原形動詞V (讓某人做某事)
+- Let's play this board game.咱们玩这个桌游吧！
+- Let's go to **the** movie**s**!咱们去看电影吧！
+- Can we see a movie tonight?
+- Let's go to a museum now.
+
+## share
+- Emma shares an office with her colleague.艾玛跟她的同事一起
+共用一个办公室。
+- I only have half of a sandwich, but we can share.我只有半个三明治，但是我们可以分享。
+- Let's share this dessert
+
+## bake 烤
+- I like baking with my grandma.我喜欢和我的奶奶一起烘焙。
+- can you bake a cake?你可以烤一个蛋糕吗？
+
+## perfect for 適合
+- A sunny day is perfect for a walk.（晴天非常適合散步）
+- Carl is perfect for the job!
+
+## That's all right 沒關係
+- That's all right, how about next week?没关系，下周呢？
+- that's all right. 没关系。
+
+## 受詞所有格
+- Is this plastic toy hers?这个塑料的玩具是她的吗？
+- This one is mine, this one is for your brother, and this one is for your dad!
+- This phone is large but hers is larger.这个手机很大，但是她的更大。
+- That bright pink car is mine.那辆亮粉色的车是我的。
+
+## the price of
+- Do you know the price of these carrots?你知道这些胡萝卜的价格吗？
+- It was a great price, so I got four!
+
+## end(動詞) 結束
+- Did the concert end late yesterday?昨天的音乐会结束得很晚吗？
 
 ## 其它疑惑
 I draw things that I think are interesting or beautiful.

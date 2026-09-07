@@ -36,6 +36,7 @@ keywords: english, right
 （這是去的最合適時間。）
 - That sounds right for the job.
 （聽起來這對這份工作很合適。）
+- We need to find the right person.
 
 ## right(名詞) 版權
 - They have exclusive rights to the product. 他們擁有這個產品的獨家權利。

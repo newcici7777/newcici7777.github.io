@@ -9,6 +9,7 @@ keywords: get
 - Can you get a few tomatoes ?你可以買幾顆番茄嗎？
 - Can you get the flour, water, and salt?你可以去買麵粉 水 鹽
 
+
 ## get買 + 人 + 東西 (買東西給人)
 ```
 get買 + 人 + 東西
@@ -28,6 +29,7 @@ get幫 + 間接受詞(人) + 直接受詞(東西)
 - Can I get you a cup of tea.我可以幫「你」拿「一杯茶」
 - Can you get us a cup, please? 你可以幫我們拿一個杯子嗎
 - Can we get a menu, please? 我們可以拿一個菜單嗎？
+- can i get you some black tea?我可以帮你拿一些红茶吗？
 
 ## get some cash 提款 
 ```
@@ -56,6 +58,9 @@ get 是一個超級萬用的動詞。當它搭配房間、座位、車子等空�
 - They got to the coffee shop at half past nine this morning.他们是在今天早上九点半到的咖啡店。
 - We got here at 11 a.m yesterday.我们是昨天上午十一点到这里的。
 - How did they get to the concert?他们是怎么到音乐会的？
+- Lily just got home from her job at the clothing store.
+- He'll get there at seven o'clock tonight.他在今晚七点钟会到那里。
+- Mr. Wang will get here at three o'clock.王先生会在三点钟到这里。
 
 
 ## 找工作(取得工作)
@@ -64,6 +69,8 @@ get 是一個超級萬用的動詞。當它搭配房間、座位、車子等空�
 ## 結婚
 - when will Anna and Kevin get married?  
 - My friend is getting married.
+- They got married at this beach five years ago, and I want to get married here, too!他们是五年前在这个海滩结婚的，我也想在这里结婚！
+- They'll get married on August second.他们会在八月二号结婚。
 
 ## 得到分數
 - I got an A on the test.(考試用on)
@@ -158,3 +165,7 @@ get 形容詞
 ## get 接電話、去叫人（＝ Answer / Fetch）
 * 接電話：Can you get the phone?（你可以去接個電話嗎？）
 * 去拿／去叫：Can you get a doctor?（你可以去找個醫生來嗎？）
+
+## get + 形容詞 (變的)
+- That's because you're getting older.
+- That's also because you're getting older.

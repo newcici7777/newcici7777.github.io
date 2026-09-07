@@ -10,6 +10,22 @@ keywords: English, a The This These That Those
 2. 對比說法：
 * 如果說 at a bank → 指「在某家銀行」（沒特別指名哪一間）。
 
+- She moved to a different city.
+"a" 的原因是因為 "city"（城市）是可數名詞，而且在這裡指的是「某個不特定的新城市」。
+
+在英文中，單數的可數名詞（例如 city, car, house）絕對不能光禿禿地單獨出現，前面一定要加上冠詞（如 a, an, the）或所有格（如 my, her）。
+
+為什麼用 "a"（不定冠詞），而不是 "the"？
+
+"a"（一個）：用在提到某個名詞，但聽話的人不知道具體是哪一個的時候。
+在這句話中，說話者只知道她搬去了一個「不同的城市」，但沒有指明是哪一座城市（例如：沒有說搬去台北或紐約），所以用 a。
+
+如果今天雙方都知道是哪一座城市，就會用 "the"（定冠詞）：
+
+- She moved to the city where her parents live.（她搬去了她父母住的那座城市。）
+
+
+
 
 限定詞（Determiners）是英文文法中非常重要的一類小幫手。簡單來說，它們就像是名詞的「守門員」或「定位標籤」。
 
@@ -72,7 +88,8 @@ keywords: English, a The This These That Those
 - **Are these** mу sho**es**? 这些是我的鞋子吗？
 - **Are these shoes** ten dollar**s**?这此鞋子是十美元吗？
 - These gloves are mine.这此手套是我的。
-
+- Emma, I love those shoes! **They're** golf shoes, right? 
+- Look at these photos!
 
 ## 第一次提到的地點 用 a
 這世界上好幾家餐廳、醫院，用 a 是指任意一家餐廳、醫院。

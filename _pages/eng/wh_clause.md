@@ -10,6 +10,7 @@ keywords: English, wh clause
 ## wh- + to V
 當「主句的主詞」和「疑問詞後面主詞」是同一個人時，就可以把子句簡化成 `to V`
 
+- but do you know where to buy glasses?
 * I don't know **what to do**. （我不知道該做**什麼**。）
   * 這裡的主詞是 I，而「去做」這個動作的也是 I
 * She knows **how to drive**. （她知道**如何開車**。）
@@ -22,6 +23,7 @@ keywords: English, wh clause
 
 ## 疑問詞 (wh-) + 主詞 + 動詞
 當「動作的執行者（主詞）」跟主句的主詞不同
+- I don't know where she is now...
 - I know how much you wanted it.
   - how much you wanted it.
   - 不能再加助動詞 do/does/did

@@ -64,6 +64,8 @@ keywords: give send show
 - Will you give that plant to your mom?(你会把那个植物给你的妈妈吗？)
 - She wants to give movie tickets to her friend.
 - do you want my guitar? I can give it to you.
+- send an email!
+- can you send an email to duo
 
 ## send
 ### 人 + send + 人 + 物
@@ -77,7 +79,8 @@ keywords: give send show
 - send him to a different office.
 
 ### 人 + send + 物 + to + 人
-
+- can you send an email to duo
+- send an email!
 
 ## show
 ### 人 show + 人 + 物
@@ -86,6 +89,10 @@ keywords: give send show
 - Who showed you this place?谁给你看了这个地方？
 - Zari's mother shows her three more blue sweaters.(Zari媽媽拿給她另外三件藍色毛衣／又給她看了三件藍色毛衣）
 - But I have a note from my doctor. Look.Zari shows Lily the note.
+- Eddy shows Bea a leg exercise.
+- Eddy shows Bea another exercise for her back.
+- Can you show me that leg exercise again?
+- You don't remember? I iust showed it to you.
 
 ## lend to
 ```
@@ -107,3 +114,5 @@ borrow + 東西 + from + 某人
 - We can offer you a different room.
 - We can offer a different room to you. 
 
+## teach 人 事
+- They taught me some English!

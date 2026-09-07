@@ -287,7 +287,6 @@ It is possible / impossible + for + 對象 + to do something
 - The weather is too hot for me.
 - This rainy weather is depressing for me.（這種下雨天讓我覺得很憂鬱。）
 - The cold wind is too harsh for my face.（這冷風對我的臉來說太刺骨了。）
-- A sunny day is perfect for a walk.（晴天非常適合散步。——這裡則是「對...而言是個好時機」）
 - This humid weather is tough for my skin.（這種潮濕的天氣對我的皮膚來說很難受。）
 - Dry winter air is not good for people with asthma.（乾燥的冬天空氣對氣喘患者不太好。）
 - A tropical climate is too hot for me.（熱帶氣候對我來說太熱了 / 我很不適應熱帶氣候。）

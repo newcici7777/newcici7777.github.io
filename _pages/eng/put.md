@@ -18,6 +18,10 @@ keywords: english, put
 put 是「放、注入」，gas 是「汽油」，in 是「進去、裡面」。
 - But I put gas in the car ten minutes ago. 
 
+## put in 放進去
+- Put the cookie in your pocket quickly!
+
+
 ## put on makeup 把化妝品塗上去(正在進行的動作)
 - wear makeup = 靜態，化妝品已戴在臉上的狀態。
 - put on makeup = 動態，正在塗抹，正在化妝。

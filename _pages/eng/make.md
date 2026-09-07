@@ -6,6 +6,8 @@ keywords: make
 ## 製造出聲音
 - Are kids making that noise(是孩子们在发出那个响声吗？)
 - Why is your sheep making that noise?
+- When she starts exercising, her knee makes a noise.
+- My knee just made a weird noise!
 
 ## make 做菜 泡茶 做蛋糕 煎蛋
 透過「努力」做出東西給別人，都用for + 人
@@ -21,10 +23,16 @@ keywords: make
 - Vikram is making tea in the kitchen.
 - But let's make dinner now!
 - We can make a pizza!
+- What are you going to make for dessert?你甜点打算做什么？
+- Let's make dinner now. I'm hungry!
 
 ## 列清單
 - Let's make a list. 我們來列個清單吧！
 - I can make a shopping list on my phone.我可以在手機上製作購物清單。
+- Can we add a few potatoes to the shopping list?我们可以把几个土豆加到购物清单里吗？
+- There is no milk. Let's add milk to the list.没有牛奶了。咱们把牛奶加到清单上吧。
+- I can make a shopping list on my phone.我可以在我的手机列一个购物清单。
+- let's make a list.咱们列一个清单吧。
 
 ## 預約
 「預約、約定」這類抽象的行程或安排時，最常搭配的動詞就是 make，Make 的其中一個核心意思是「製造、安排、促成」。
@@ -44,61 +52,24 @@ keywords: make
 - Priti makes a call.Priti打了一通電話。
 * Wait a second, I need to make a call.（等我一下，我需要打個電話。）
 * She made a callto her friend.（她給她朋友打了一通電話。 → 過去式）
+- Priti makes a call.
 
----------------------------------
-這是一個非常經典且實用的英文使役結構！我們來拆解這個句型：
+## make + 人/東西 + 形容詞 (使變得怎樣)
+「形容詞」是用來修飾受詞的「狀態」。
 
-## 1. 核心公式
-
-> **Make + 受詞 (人或東西) + 形容詞 (當受詞補語)**
-> * **意思**：「使...變得...」或「讓...保持...」
-> * **說明**：在這個句型中，**形容詞**用來描述前面「東西」的狀態或產生的變化。
-> 
-> 
-
----
-
-## 2. 你的例句解析
-
-> * **原句**：`Exercises to make your knees stronger.`
-> * **拆解**：
-> * `make` (動詞)
-> * `your knees` (受詞／東西)
-> * `stronger` (形容詞比較級)
-> 
-> 
-> * **中文翻譯**：「讓你的膝蓋變得更強壯的運動。」
-> 
-> 
-
----
-
-## 3. 更多生活實用範例
-
-你可以透過以下常見的例子來熟悉這個用法：
-
+- I can show you some exercises to make your knees stronger.讓你的膝蓋變得更強壯的運動。
+- Exercises to make your knees stronger.
+- I can show you an exercise to make your back stronaer. too.
 * This medicine will **make you better**.
 （這藥會讓你**更好**／康復。）
 * Don't **make me angry**.
 （不要**惹我生氣**。 ➔ *angry 是形容詞*）
 * Cleaning the house **makes me tired**.
 （打掃房子**讓我好累**。 ➔ *tired 是形容詞*）
-* Regular exercise **keeps your body healthy**. *(註：用 keep 也可以表達類似的持續狀態)*
-（規律運動能**保持身體健康**。）
 
----
+---------------------------------
 
-## 💡 溫馨小提醒（常見混淆點）
-
-* **只能加形容詞**：這個位置是用來「修飾受詞的狀態」，所以通常放**形容詞**（例如：*strong, happy, sad, clean*）。
-* **如果要加動詞**：如果「使某人做某件事」是動詞原形（例如：*make him laugh* 讓他笑），那又是另一個使役動詞的文法規則囉！
-
-請問這樣說明有幫助你釐清這個文法嗎？如果要練習造句，我也很樂意幫你看看喔！
-
---------------
-沒問題！這就為你整理 10 個使用 **「Make + 東西 (受詞) + 形容詞」** 的生活實用例句：
-
----
+**「Make + 東西 (受詞) + 形容詞」** 的生活實用例句：
 
 ### 10 個實用例句
 

@@ -128,7 +128,8 @@ work as + [職稱/身分]
 * I work as a designer.（我是一名設計師。)
 
 ## finish work 下班
-- Emma usually finishes work at half past eight.
+- Emma usually finishes work at half past eight.艾玛平时在八点半
+下班。
 
 ## after work 下班
 - What is Duo going to play after work?(多儿下班后打算玩什么？  )  
@@ -232,7 +233,9 @@ complete明確目標、任務要完成，表單需要填寫。
   - work 在這裡當作名詞，意思是「工作、作業、手頭上的任務」
 - Please complete the application form.（請填妥／完成這份申請表格。）
 
-
+## answer 接電話
+- Who answered the phone?谁接的电话？
+- Did she answer your phone?她接你的电话了吗？
 
 ## answer 回覆
 - Somebody should answer the phone.有人要接電話
@@ -242,6 +245,7 @@ complete明確目標、任務要完成，表單需要填寫。
 例句:
 - I need to answer an email from my boss.（我需要回覆老闆的一封信。）
 - Did you answer his email yet?（你回覆他的信了嗎？）
+
 
 ### 回覆相關片語
 - Reply to an email（回覆電子郵件，注意這裡的 reply 要加介系詞 to）
@@ -253,7 +257,8 @@ complete明確目標、任務要完成，表單需要填寫。
 - We agreed to meet at 8 PM.（我們約好晚上八點見面。）
 - She agreed to help me.（她答應幫我。）
 - They agreed to sign the contract.（他們同意簽署合約。）
-
+- We agreed not to use our phones during this trip, remember?
+- What are you doing? We agreed not to use our phones.
 
 ## server 服務生
 - Do you want to be a server?你想要做一个服务员吗？

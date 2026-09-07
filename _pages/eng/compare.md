@@ -17,6 +17,8 @@ keywords: english, less
 - This restaurant is worse than that restaurant.这个餐厅比那个餐厅
 更糟糕。
 
+- That clothes store is more famous.那个服装店更有名。
+- Anna's white coat is more beautiful.安娜的白色外套更好看。
 
 ## 最高級
 ```

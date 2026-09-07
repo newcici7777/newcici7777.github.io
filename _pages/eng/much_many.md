@@ -107,6 +107,9 @@ food (食物) 在英文中是一個「不可數名詞」。就像水、空氣、
 
 ### How many 複數名詞 are ?
 - How many bab**ies** **are** at the party?
+- how many apples are there?有多少个苹果？
+- How many oranges are there?有多少个橙子？
+
 
 ### How many 複數名詞 are there...?
 眼睛看著一個區域/空間（如：桌上、房間裡），清點有幾個「可數」的東西。
@@ -118,10 +121,15 @@ food (食物) 在英文中是一個「不可數名詞」。就像水、空氣、
 - How many apples **do you have**?（你有幾顆蘋果？）
 - How many brothers **does she have**?（她有幾個兄弟？）
 
+### How many 複數名詞 + do/does 主詞 + 動詞?
+- How many days did you stay in the UK?你在英国待了几天？
+
+
 ### How much 不可數名詞 is there...?
 老外畫面： 眼睛看著一個區域/空間，估算某種「不可數」物質（液體、錢、時間）的總量。
 - How much water **is there** in the bottle?（瓶子裡有多少水？）
 - How much money **is there** in the drawer?（抽屜裡有多少錢？）
+- How much cake is there?有多少蛋糕？
 
 ### How much 不可數名詞 + does 主詞 + have...? / has...?
 (註：問句是用 does... have，答句或關係子句才比較常看到 has)

@@ -61,7 +61,7 @@ too放在句子的最後面，前面(可加或不加)逗號
 - She is as pretty as her aunt. 她跟她阿姨一樣漂亮
 - Your phone is as expensive as mine.（你的手機跟我的跟一樣貴。）
 - This box is as heavy as a rock.（這個箱子跟石頭一樣重。）
-
+- Can you get up as early as your mom?
 
 ## not as ... as 「沒有跟...一樣...」
 - I am not as tall as you.（我沒有跟你一樣高 → 我比你矮）

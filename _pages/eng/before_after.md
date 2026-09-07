@@ -69,6 +69,7 @@ after 這個字永遠要貼著「先做的事(比較早發生的那件事)」。
 如果很不好記，把After移到最前面，但後面要加上逗號。(比較符合中文的先後順序)
 - After I washed my hands, I ate dinner.在我洗完手之後，我吃了晚餐。
 - Let's go to a museum now. Sure,after I go to the restroom.我們去博物館吧！在我去完廁所之後。
+- Sure, after I go to the restroom.
 
 ## after(介系詞) + 名詞
 ```

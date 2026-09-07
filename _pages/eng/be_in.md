@@ -52,6 +52,10 @@ bed 此時是抽象名詞，不可數名詞，不能用a 跟 the。
 - in bed（在床上睡覺 / 賴床）
   - She is in bed.她在睡覺/賴床
   - She was still in bed at 11 AM.（她早上11點了居然還在床上躺著。）
+  - And I want to sleep in your bed.
+
+其它睡的介系詞
+- You can sleep on my pillow.
 
 ### go to sleep
 Go to sleep 與 go to bed 的核心差別在於：一個強調「入睡的這個動作／狀態」，另一個強調「上床躺著的行為」。

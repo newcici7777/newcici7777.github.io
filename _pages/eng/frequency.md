@@ -77,6 +77,7 @@ How often（多常...）的問句，我們會把次數跟時間結合
 - He never spends money on ice cream.他从不在冰淇淋上花钱。
 - I never take the subway to work.我从来不坐地铁去工作。
 - You never responded to my letters...
+- I never got your letters. I was sailing around the world.
 
 ## 頻率副詞放最後面
  當 often 放在句尾時，通常帶有一種「請求、提醒、或是特別強調頻率」的語氣。

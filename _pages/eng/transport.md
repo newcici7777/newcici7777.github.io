@@ -321,6 +321,8 @@ fly + to + 地點。
 - We want to fly to Japan next month. (我們下個月想飛去日本。)
 - Do you want to fly to New York or Los Angeles?
 - I want to fly to Japan.
+- Did you fly or drive to Los Angeles? We flew.你们是飞去还是开车去的洛杉矶？我们飞去的。
+
 - Now he's going to fly from London to Paris. He's travling a lot.现在他要从伦敦飞往巴黎。他经常旅行。
 
 - I’m flying to Taipei for a meeting. (我要飛去台北開會。)

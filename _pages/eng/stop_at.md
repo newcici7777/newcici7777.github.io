@@ -3,6 +3,21 @@ title: Stop at 去某個地方
 date: 2026-08-20
 keywords: English, stop at
 ---
+## stop 停下來 地點
+- Because the road stops here. At the river.
+- Stop at the convenience store.在便利商店前面停下來
+
+## stop at 地點 (停留)
+在某個特定的地點（如商店、車站、別人家）停下來或短暫停留
+```
+主詞 + stop + at + 具體地點（名詞）
+```
+- I stopped at the bookstore on my way home.我在回家的路上，順便去了（在...停留）書店。
+- We stopped at a small cafe for coffee.（我們在一家小咖啡館停留喝咖啡。）
+- The bus stopped at the station.（公車在車站停了下來。）
+
+
+
 當你想表達「在某個特定的地點（如商店、車站、別人家）停下來或短暫停留」時
 ```
 主詞 + stop + at + 具體地點（名詞）

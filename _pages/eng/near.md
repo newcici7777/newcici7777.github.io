@@ -113,6 +113,9 @@ at the front of + 名詞（基準點）
 - I'm here but I don't see him. Is he here? Can we call him?
 - she's not here now.
 - we were not there last night.我们昨晚不在那里。
+- It's nice to be here again.
+- Now you're here! We can finally be together!
+
 
 ## inside
 咖啡店在楼的里面，不在外面。  
@@ -150,6 +153,9 @@ outside.
 - In 1990, there were many restaurants near my school, but there was only one cafe.
 - Is there a hotel near the airport?在机场附近有一个酒店吗？
 - There is a park near the hotel.在酒店附近有一个公园。
+- Our village is near the sea. 我们的村子在海的附近。
+- There are a few grocery stores near my apartment.在我的公寓附近有几个杂货店。
+- Our village is near the sea. 我们的村子在海的附近。
 
 ## close to 離...很近、在「附近」
 close to 的核心意思是「離...很近」。它強調的是距離短，但不代表兩個東西要緊緊貼在一起，中間隔著一條街、一排樹都沒關係。
@@ -164,6 +170,9 @@ the garden.我們家離河流很近，但離花園更近。
 - This building is close to that park.(这座楼靠近那个公园 )
 - He needs to sit close to the blackboard.他需要坐得離黑板近一點
 - He sat close to the window.他坐得離窗戶很近。
+- Is there a restaurant close to Duo's house?靠近多儿的房子有
+一个餐斤吗？
+- Cambridge Is closer to London or Oxford?剑桥离伦敦还是离牛津近？
 
 ## close to (時間上的接近)
 - It is close to 7.快七點了
@@ -274,17 +283,6 @@ I left my keys behind the flower pot."
 
 - She stood behind me in the queue.（她站在我後面的排隊隊伍中。）
 
-## stop 地點
-- Because the road stops here. At the river.
-
-## stop at 地點 (停留)
-在某個特定的地點（如商店、車站、別人家）停下來或短暫停留
-```
-主詞 + stop + at + 具體地點（名詞）
-```
-- I stopped at the bookstore on my way home.我在回家的路上，順便去了（在...停留）書店。
-- We stopped at a small cafe for coffee.（我們在一家小咖啡館停留喝咖啡。）
-- The bus stopped at the station.（公車在車站停了下來。）
 
 
 ## downtown

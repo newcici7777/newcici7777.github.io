@@ -18,7 +18,10 @@ keywords: English,finish,start,begin
 事情正在做，才能喊停
 - He quit using that dating app.（他放棄用那款交友軟體了。）
 - we stopped talking.
-
+- Can you stop eating that cake and help me?
+- I cannot stop missing you.我无法停止想念你。
+- He misses his grandparents so mush.他那么想念他的
+祖父母。
 
 
 ## mind(介意) + Ving
@@ -29,7 +32,7 @@ keywords: English,finish,start,begin
 - We need to practice listening and speaking.
 
 ----------------------------
-## start begin
+## start 開始
 用to + V 跟 Ving都可以，都一樣意思。
 
 - He starts eating the sandwich.  
@@ -45,16 +48,16 @@ to + V，強調那個「跨入新狀態」的瞬間切換
 - It starts raining.天空開始下雨
   - 下雨是突然開始
 
-
-### Ving 開始進行中(持續一陣子)
+### start + ving 開始進行中(持續一陣子)
 - I started learning English recently. (我最近開始學英文了)要持續一陣子
 - She started using that dating app. (她開始用那款交友軟體了)要持續一陣子
 
-## 啟動機器/開關（只能用 start，不能用 begin）
+### start啟動機器/開關（只能用 start，不能用 begin）
 - How do I start the engine?（我要怎麼發動引擎？ ）
 - ❌ How do I begin the engine?（機械不能用 begin）
 
-## start 出發
+## start again 重新開始
+- Start again and chant with me.跟我重新唱一遍。
 
 ## start 開始時間
 - when will the next meeting start?(下个会议什么时候开始？)  
@@ -74,9 +77,12 @@ to + V，強調那個「跨入新狀態」的瞬間切換
 - What time does the race begin? （這場賽跑是什麼時候開始的？）
 - The movie begins at 8 PM. （電影在晚上8點開始。）
 - When does the meeting begin？ （會議幾點開始？）
-- Fall begins in September.
 - The next class will begin at 12 o'clock.
 - Our summer holidays will begin on July tenth.我們的暑假會在7月10號開始
+- Fall begins in September.秋天在九月开始。
+- What time does your class begin?你的课几点开始？
+- What time does the race begin? 赛跑几点开始？
+
 
 ## begin to 原因
 ### 避開「連環 -ing」（發音與視覺的考量）

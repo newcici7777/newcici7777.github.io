@@ -24,24 +24,7 @@ keywords: English,
 |花費|spend|spent|spent|
 |建造|build|built|built|
 
-
-## i 變 a (母音互換原則)
-
-|中文|現在式|過去式|過去分詞|
-|:------|:--------|:---------|:-------|
-|唱|sing|sang|sang|
-|游泳|swim|swam|swam|
-|開始|begin|began|began|
-|坐|sit|sat|sat|
-
-## o、a 變成 e
-
-|中文|現在式|過去式|過去分詞|
-|:------|:--------|:---------|:-------|
-|知道|know|knew|knew|
-|畫|draw|drew|drew|
-
-## 中間有2個e，後面的e 變 t
+## 中間有2個e，刪掉1個e，字尾加t
 
 |中文|現在式|過去式|過去分詞|
 |:------|:--------|:---------|:-------|
@@ -49,13 +32,31 @@ keywords: English,
 |睡覺|sleep|slept|slept|
 |感覺|feel|felt|felt|
 
-## 中間有2個e，變一個e
+## 中間有2個e，刪掉1個e
 
 |中文|現在式|過去式|過去分詞|
 |:------|:--------|:---------|:-------|
 |見面|meet|met|met|
 
+## i 變 a (母音互換原則)
 
+|中文|現在式|過去式|過去分詞|
+|:------|:--------|:---------|:-------|
+|坐|sit|sat|sat|
+
+
+## i 變 o
+
+|中文|現在式|過去式|過去分詞|
+|:------|:--------|:---------|:-------|
+|贏|win|won|won|
+
+## o、a 變成 e
+
+|中文|現在式|過去式|過去分詞|
+|:------|:--------|:---------|:-------|
+|知道|know|knew|knew|
+|畫|draw|drew|drew|
 
 ## ought
 
@@ -92,20 +93,28 @@ keywords: English,
 |破|break|broke|broken|
 |騎車|ride|rode|ridden|
 
+## 過去式i變a，分詞i變u
+
+|中文|現在式|過去式|過去分詞|
+|:------|:--------|:---------|:-------|
+|唱|sing|sang|sung|
+|游泳|swim|swam|swum|
+|開始|begin|began|begun|
+|喝|drink|drank|drunk|
+
+
+注意:歌是song，不要跟sung 過去分詞，搞混
+
 ## 不規則
 
 |中文|現在式|過去式|過去分詞|
 |:------|:--------|:---------|:-------|
-|喝|drink|drank|drunk|
 |飛|fly flies|flew|flew|
-|坐|sit|sat|sat|
 |走失|lose|lost|lost|
 |離開|leave|left|left|
 |告訴|tell|told|told|
 
-
 ## 現在進行式不一樣
-
 
 |中文|現在式|過去式|過去分詞|現在進行式|
 |:------|:--------|:---------|:-------|:---------|

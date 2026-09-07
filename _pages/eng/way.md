@@ -1,5 +1,5 @@
 ---
-title: the way, on my way
+title: the way, the road, on my way
 date: 2026-08-17
 keywords: English, way
 ---
@@ -47,18 +47,8 @@ way 除了指「路」之外，更偏向抽象的「方向、路線、怎麼去�
 to 是一個介系詞，表示「通往...的方向 / 目標」  
 此處的to翻譯成通往...那裡「的」
 - Do you know the way to the bus stop? 你知道去公車站的路嗎？
-- The way to the bus stop那條路（way）的終點或目的地是「公車站（the bus stop）」。
+- The way to the bus stop.那條路（way）的終點或目的地是「公車站（the bus stop）」。
 - That road to our village is long and busy.(到我们村子的那条路又长又繁忙。)
-
-road 指的是那條鋪好的實體馬路、柏油路。
-如果你用 road，通常是指具體的某條大道，例如：
-- This is the road to the beach.（這就是通往海灘的那條路／那條馬路。）
-- There are many cars on the road.（路上有很多車。）
-
-問路時（找方向）：
-- Can you show me the way to the station?（你可以告訴我去車站的路／怎麼走嗎？）
-講具體那條馬路時：
-- Is this the road to the station?（這條是去車站的那條馬路嗎？）
 
 ## the way 片語
 - By the way, what are you doing this weekend? （順便一提，你這週末要幹嘛？——超高頻轉折詞）
@@ -66,3 +56,19 @@ road 指的是那條鋪好的實體馬路、柏油路。
 - Move aside, please. You're in the way. （請讓開，你擋到路了。）
 - He always has to have things his own way. （他總是凡事都要依自己的意思。）
 - By the way, did you finish the report? （話說回來，你把報告寫完了嗎？）
+
+--------------------------------
+
+## road
+road 指的是那條鋪好的實體馬路、柏油路。
+如果你用 road，通常是指具體的某條大道，例如：
+- This is the road to the beach.（這就是通往海灘的那條路／那條馬路。）
+- There are many cars on the road.（路上有很多車。）
+- The roads in this city are not very wide.在这个城市里的马路不是非常宽阔。
+- There are wide roads in the country.在乡下有很宽阔的马路。
+
+## road vs way
+問路時（找方向）：
+- Can you show me the way to the station?（你可以告訴我去車站的路／怎麼走嗎？）
+講具體那條馬路時：
+- Is this the road to the station?（這條是去車站的那條馬路嗎？）

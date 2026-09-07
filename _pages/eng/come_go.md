@@ -23,7 +23,7 @@ to 的意思是「朝向、往...方向」，在這裡當作目的地的大門�
 * He drove to the store this morning.（他今天早上開車去店裡。）
 * 走路去：walk to + 目的地
 * He walked to the store this morning.（他今天早上走路去店裡。）
-
+- They are walking to a restaurant.
 
 移動動詞: go, come, get, walk, drive, fly, move
 - go to
@@ -31,6 +31,7 @@ to 的意思是「朝向、往...方向」，在這裡當作目的地的大門�
   - My grandmother went to Cambridge with us last fall.我的祖母去年秋天跟我们一起去了剑桥
 - come to
   - Sorry, I can't come to the party.我不能過來party
+  - They came to England in 1980.他们在1980年来的英格兰。
 - ride to + 目的地 騎車去
   - I rode my new bike to the museum yesterday.
 （我昨天騎我的新腳踏車去了博物館。）
@@ -198,7 +199,8 @@ home前面加上「誰的」房子，就要用to
 - The hill is there
 - It's nice to be here again.
 - The police are here. 
-
+- She's coming here now!
+- I came here ten years ago. 
 - Let’s go there.（我們去那裡。）
 - Can we go there again.我们可以再去那里一次吗？
 

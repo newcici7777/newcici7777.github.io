@@ -20,10 +20,15 @@ tell + 人 + 內容
 - He told me (that) he passed the exam.（他告訴我他考試及格了。）
 - She told me that she broke up with Eddy. （她告訴我她跟艾迪分手了 )
 
+
+### tell + 人 + about
+- Can you tell me more about that story?你可以再多给我讲讲那个故事吗？
+
 ### Tell + 某人 + to V（叫某人去做某事）
 - I told you to water the plants three times every week!
 - My boss told me to finish the report by Friday. （我老闆叫我在星期五前完成報告。）
 - She told the kids to wash their hands before dinner. （她叫孩子們晚餐前去洗手。）
+
 
 ### Tell + 某人 + Wh- 疑問子句
 - Don't tell me what to do! （不要告訴我該怎麼做！／別對我指手畫腳！）
@@ -43,6 +48,7 @@ tell + 人 + 內容
 - Can you tell a story?
 - He told the truth.（他講了實話。）
 
+
 ------------------------
 ## say
 轉述別人說過的話。
@@ -52,6 +58,8 @@ tell + 人 + 內容
 - You said he is always late.
 - She said (that) she was tired.（她說她很累。）
 - She said she broke up with Eddy. （她說她跟艾迪分手了。）
+- But you said he's terrible!
+- You said he is always late.
 
 ### say 名詞 to 人(不可省略)
 - He said very romantic things to me.
@@ -92,6 +100,10 @@ talk 強調的是跟「誰」說話，而不是像tell/say著重在「內容」�
 - he decides to talk to her.
 - We need to talk.(不及物)
 - One day, he decides to talk to her.
+- Hi, Bea. Can we talk about Carl?
+- I haven't talked to her in five years.
+- Are you going to talk to her now?
+- Talk to her!
 
 ### talk + with + 人
 - He is talking with his friend.（他在跟他的朋友聊天。）

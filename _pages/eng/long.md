@@ -3,6 +3,9 @@ title: How long 多久
 date: 2026-08-17
 keywords: English, how long
 ---
+## It 代表時間主詞
+
+
 ## long(形容詞) 久
 - Summer is long.
 
@@ -123,3 +126,5 @@ How long does it take to ....?
 - How long does it take to get to the hotel?（去飯店要花多久時間？）
   - It takes about 10 minutes.（大話要花大約 10 分鐘。）
 
+## 詢問花費多久「時間」用take
+- How long does **it take** to get to the airport? （去機場要花多久時間？）

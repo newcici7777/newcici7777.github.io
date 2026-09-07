@@ -70,6 +70,8 @@ Take 人 to 某地
 - Thanks for driving me home.(謝謝載我回家)home副詞本身自帶方向to，所以不用再加to
 - Can you drive me to the station?（你可以開車載我去車站嗎？）
 - He drove her to work this morning.（他今天早上開車載她去上班。）
+- I drove him to the hotel first, and then we had lunch.我先开车带他去
+酒店，然后我们吃了午饭。
 
 ## take + 電梯 = 搭電梯
 - You can't take this elevator now.你現在不能搭這部電梯。

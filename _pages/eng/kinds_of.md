@@ -127,20 +127,6 @@ kind 前面可以加形容詞！
 - I need several kind**s** of tool**s** to fix this table. （我需要好幾種工具來修這張桌子。）
 
 
-## different
-- She moved to a different city.
-"a" 的原因是因為 "city"（城市）是可數名詞，而且在這裡指的是「某個不特定的新城市」。
-
-在英文中，單數的可數名詞（例如 city, car, house）絕對不能光禿禿地單獨出現，前面一定要加上冠詞（如 a, an, the）或所有格（如 my, her）。
-
-為什麼用 "a"（不定冠詞），而不是 "the"？
-
-"a"（一個）：用在提到某個名詞，但聽話的人不知道具體是哪一個的時候。
-在這句話中，說話者只知道她搬去了一個「不同的城市」，但沒有指明是哪一座城市（例如：沒有說搬去台北或紐約），所以用 a。
-
-如果今天雙方都知道是哪一座城市，就會用 "the"（定冠詞）：
-
-She moved to the city where her parents live.（她搬去了她父母住的那座城市。）
 
 ### Different + 複數名詞 = 許多「種」不同的
 當你想表達「許多種不同的...」或「不同的（多個）...」時，後面就要接複數名詞。
@@ -149,6 +135,8 @@ She moved to the city where her parents live.（她搬去了她父母住的那�
 
 ### Different + 單數可數名詞 = 不同的
 當你想表達「另外一個（不同於原來的）單一事物」時，後面就要接單數可數名詞，而且前面一定要加 a。
+- Please promote him and send him to a different office!
+- She moved to a different city, and we stopped talking.
 - a different flavor 另外一種不同的口味
 - She moved to a different city.（她搬去了一個不同的城市——指搬去「某個新城市」，單數一個。）
 - Let's try a different restaurant.（我們去試試不同的餐廳吧——單數一家。）
@@ -158,7 +146,7 @@ She moved to the city where her parents live.（她搬去了她父母住的那�
 - I bought a different book.（我買了另一(不同)本書——不同於原本那本的一本書。）
 - Wait, the job is in a different office?
 - He was a very different person when he was fishing.不一樣的人
-
+- Wait, the job is in a different office?
 
 💡 簡單的判斷口訣
 - a different + 單數名詞 ＝ 換了「另一個」單一物品。

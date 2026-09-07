@@ -40,11 +40,11 @@ next 當作「順序副詞」使用，意思是「接下來、下一步」。
 當這些詞彙（next, last, this, every）直接前面帶領時間名詞時，它們本身就已經具備了「限定」的功能，所以不需要再加 the。  
 
 這些都是直接說 next week、last month，前面絕對不會加 the。
+- Next time.下一次
 - see you next week（下週見）
 - Next time, send an email! 形容詞
 - I was busy last month（我上個月很忙）
 - We will meet this Friday（我們這個星期五見）
-
 
 
 ## the next(形容詞) week

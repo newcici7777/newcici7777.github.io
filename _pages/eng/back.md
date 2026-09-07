@@ -63,7 +63,8 @@ be back from + [地點/活動]
 - We got back late last night.我們昨晚很晚才回來。
 - What time did you get back?（你幾點回來的？）
 - I just got back from the store.（我剛從店裡回來。
-
+- her friend gets back from France tomorrow.
+- We got back late last night.我们昨晚很晚回来的。
 
 ## 移動動詞 + back + to + 目的地
 - I need to go back to work.

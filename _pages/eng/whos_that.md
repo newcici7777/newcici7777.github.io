@@ -39,7 +39,7 @@ It 指的是你接下來要說的那件事 / 你的問題。
 - 接起電話不確定是誰："Hello, who is it?"（喂，請問是哪一位？）
 - It's you!
 - It's me, Marco!
-
+- Lucy! It's you! Do I know you? It's me, Marco!
 
 ## 介紹與確認身份的道地習慣
 英文在介紹或確認「還沒對上號的人」時，有一套固定的 this / that 搭配：

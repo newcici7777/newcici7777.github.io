@@ -49,6 +49,8 @@ keywords: look, see, watch, seem, feel, hear, listen to,
 - Lin sees her grandmother, Lucy, at the table.
 - Did you see my wife?I saw her in the morning.
 - Lin sees her grandmother, Lucy, at the table.
+- What do you see?
+- I don't see anything.
 
 ### look at「專注」看  
 - Eddy looks at a painting of a dog.
@@ -84,6 +86,9 @@ watch 看別人在做的「一連串動作」。
 ```
 
 ### V-ing「正在做一個動作/正在發生」
+
+Look at
+- She looks at her dog sleeping on the floor and laughs.
 
 See（看到）
 - Junior sees his father, Eddy, crying. (Junior）看到他的父親艾迪（Eddy）正在哭。

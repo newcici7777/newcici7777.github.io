@@ -71,12 +71,16 @@ eyes are very small.
 ## crowded
 **地方** + be動詞 + crowded
 - The MRT is crowded today.（捷運今天好擁擠。）
+- Is your town quiet on Saturday?No, it's too crowded.不，大拥挤了。
 
 crowded形容詞 + 名詞
-- Is New York a crowded city?
+- Is New York a crowded city?纽约是一个拥挤的城市吗？
+
 
 擠滿crowded with + **人/事物**
 - The street is crowded with people.（這條街擠滿了人。）
+
+
 
 
 ## Country（國家）vs The Country（鄉下、農村地區）
@@ -103,14 +107,6 @@ Country > City > Town > the country > village
   - Taipei is a big and busy city.（台北是一個大而繁忙的城市。）
 
 
-## win
-win 是動詞。
-- You won the competition!
-- She's going to win the cooking competition.她會贏得這場烹飪比賽
-- Mia won with a vanilla cake.米亞憑著一個香草蛋糕贏了比賽
-  - 某人 + won + with + **武器 / 食譜 / 策略 / 方法**
-- I want to win! 
-- I want a win!（我想要一場勝利！）win變成一個名詞
 
 
 
@@ -199,8 +195,11 @@ return 的詞性是及物動詞（Transitive Verb）。
 - She would like to buy these clothes.她想要买这些衣服。
 - I would like to pay with cash.我想付现金。
 - Would you like to buy this dress?你想要买这条连衣裙吗？
+- Hi, I'd like to order one pizza!
 
-
+## I'd love to 我願意
+- I'd love to, but I can't.我愿意但是我不行
+- Sure, I'd love to.当然，我很愿意。
 
 ## an ad for 
 - We saw an ad for this clothes store.我们看到了一个这个服装店的广告。
@@ -227,7 +226,7 @@ return 的詞性是及物動詞（Transitive Verb）。
 
 
 - Actually, I'm going to a museum with my granddaughter now.
-
+Instructions（說明書/操作指南）： 買家具回來組裝，裡面有很多個「步驟一、步驟二」，所以永遠是複數。
 
 
 3281
@@ -243,32 +242,10 @@ Onion overload
 
 
 
-
-
-
-
-- Emma shares an office with her colleague.艾玛跟她的同事一起
-共用一个办公室。
-- I only have half of a sandwich, but we can share.我只有半个三明治，但是我们可以分享。
-- Let's share this dessert
-
-
-
-
-
-
 - Are you sure about this?
 
 
-
 - I think my job is giving me bad dreams!
-
-
-
-
-
-
-
 
 
 - Is this plastic toy hers?这个塑料的玩具是她的吗？
@@ -278,193 +255,23 @@ Onion overload
 
 --------------
 
-
-------
-
-
 - The baby cried so much.。宝宝哭得很厉害。
 - Why does Tom cry so much?Tom为什么哭得那么惨？
 - I cried a lot because I didn't know
 English then.我当时经常哭，因为我不会英语。
 
-
 ------------------
-
-- Fall begins in September.秋天在九月开始。
-- What time does your class begin?你的课几点开始？
-- What time does the race begin? 赛跑几点开始？
-
-------------------
-- Can you stop eating that cake and help me?
-- I cannot stop missing you.我无法停止想念你。
-- He misses his grandparents so mush.他那么想念他的
-祖父母。
-
-- There is some milk in the fridge.冰箱裡有一些牛奶
-- Is there any milk in the fridge?冰箱里有牛奶吗？
-- Is there any candy in that box?在那个盒子里有糖果
-吗？
-- There is some water in the fridge.
-- There is no pizza in the kitchen.厨房里没有比萨。
-- There is no tofu in this grocery.在这个杂货店里没有
-豆腐。
-- Is there any pizza at this party?在这个聚会上有比萨吗？
-
-------------------
-
-- There are a few grocery stores near my apartment.在我的公寓附近有几个杂货店。
-- Our village is near the sea. 我们的村子在海的附近。
-- Is there a restaurant close to Duo's house?靠近多儿的房子有
-一个餐斤吗？
-
------------------------
-
-
-- I only knew a little English. 
-- He only knew a little French then.他当时只会一点点
-法语。
-- I only knew Japanese then, now I also know Chinese.我当时只会日语，现在我还会中文。
-
-- We only have a few eggs.我们只有几个鸡蛋
-- we only have two apples. We ate too much at lunch.
-- We only have one potato at home.我们家里只有一个土豆。
-
-- Can we add a few potatoes to the shopping list?我们可以把几个土豆加到购物清单里吗？
-
-- There is no milk. Let's add milk to the list.没有牛奶了。咱们把牛奶加到清单上吧。
-
-- I can make a shopping list on my phone.我可以在我的手机列一个购物清单。
-- let's make a list.咱们列一个清单吧。
-- Let's make dinner now. I'm hungry!
-- Priti makes a call.
-- What are you going to make for dessert?你甜点打算做什么？
-
-- When she starts exercising, her knee makes a noise.
-- My knee just made a weird noise!
-- I can show you some exercises to make your knees stronger.
-- I can show you an exercise to make your back stronaer. too.
-
-- Eddy shows Bea a leg exercise.
-- Eddy shows Bea another exercise for her back.
-- Can you show me that leg exercise again?
-- You don't remember? I iust showed it to you.
-
------------------------------------------------
-
-- Can you show me the directions to the airport?你可以给我看看去机场的方向吗？
-- Are these the right directions?这些是正确的方向吗？
-- Here is a map of this city.这是一张这个城市的地图。
-- Do you have a map of Shanghai?你有一张上海的地图吗？
-- Let's look at the map.咱们看地图吧。
-- The airport is two miles away from here.机场离这里两英里
-- Don't go there it's too far.不要去那里，太远了！
-- The sea far away from the desert.海离沙漠很远。
-- Do you live far away from the sea?你住得离海远吗？
-- Excuse me, is the museum far away from here?打扰了，博物馆离这里远吗？
-- Oh, is this the desert? We are only two miles from the sea
-
-- The air in the desert is very dry.在沙漠里的空气菲常千燥。
-- The air is colder at the top of a hill.在山丘顶上的空气更冷。
-- Is february colder than October? 二月比十月更冷吗？
-
-- Both Boston and New York are the east.波士顿和纽约都在东部。
-- Is that city in the east or in the west?那个城市在东部还是在西部？
--  I visited the west of Japan last month. This mountain is about three hundred miles away from Tokyo.
-
-- The mountains are in the south of this town.山在这个镇的南部。
-- Those mountains are in the south of Europe.那些山在欧洲的南部。
-
-- The hill is there you need to drive east.山丘在那里，你需要
-往东开。
-- Drive south for three miles, and then you will see the desert.往南开三英里，然后你会看到沙漠。
-- Go east or go west?往东走还是往西走？
-
-- Is your house at the corner?
-
-- Go straight, and then take a left at the corner.直行，然后在拐角处左转。
-- Take a right at the corner.在拐角处右转。
-- You don't need to take a right here, go straight.你不需要在这里右转，直行。
-
-- Go straight to the end of this street.直行到这条街的尽头。
-- Go straight, and turn left at the end of this street.直行，然后在这条街的尽头左转。
-
-- Don't worry, we're not lost. We need to walk to the top of that hill.别担心，我们没有迷路。我们需要走到那个山丘顶上。
-- There are many hills in the UK.在英国有很多山丘。
-- Excuse me, I think l'm lost. Do you know the directions to the park?打扰了，我好像迷路了。你知道去公园的路线吗？
-- Are we lost?No, we need to go west.不，我们需要往西走。
-
-- This road does not go south.马路不往南走
-- The roads in this city are not very wide.在这个城市里的马路不是非常宽阔。
-- There are wide roads in the country.在乡下有很宽阔的
-马路。
-
-- They are walking to a restaurant.
-------------------------------------
-
-
-
-
-
-
-------------------
-
-
-- Can you get a few tomatoes?你可以买几个番茄吗
-- her friend gets back from France tomorrow.
-- Lily just got home from her job at the clothing store.
-
-- We got back late last night.我们昨晚很晚回来的。
-- They got married at this beach five years ago, and I want to get married here, too!他们是五年前在这个海滩结婚的，我也想在这里结婚！
-- They'll get married on August second.他们会在八月二号结婚。
-- can i get you some black tea?我可以帮你拿一些红茶吗？
-
-
-- He'll get there at seven o'clock tonight.他在今晚七点钟会到那里。
-- Mr. Wang will get here at three o'clock.王先生会在三点钟到这里。
-
---------------------
 
 - Do you know the price of these carrots?你知道这些胡萝卜的价格吗？
 - It was a great price, so I got four!
-
-
-
-
-- I live on this street.我住在这条街上。
-- Who did you live with then?你当时跟谁一起住？
-- Who lived in this apartment building twenty years ago?谁二十年前住在这座公寓楼里？
-- He lived alone for fifty years.他一个人住了
-五十年。
-- Are you living a good life?你生活过得好吗？
-- When did you live in Seattle, Grandma?
 
 - I'm so tired of customers complaining all day.
 
 - She sits down. Her dog jumps up on the sofa.
 
 
-
-
-
-
-
-
-
-
 - You can sleep on my pillow.
 - And I want to sleep in your bed.
-
-
-
-
-
-
-- She looks at her dog sleeping on the floor and laughs.
-
-- What do you see?
-- I don't see anything.
-
-
 
 
 
@@ -474,34 +281,7 @@ English then.我当时经常哭，因为我不会英语。
 
 
 
-- How many days did you stay in the UK?你在英国待了几天？
-
-
-- Emma, I love those shoes! They're golf shoes, right? 
-
-
-- She is a singer in her free time.她在她的空闲时间是一个歌手。
-
-- Let's play this board game.咱们玩这个桌游吧！
-- Let's go to **the** movie**s**!咱们去看电影吧！
-- Let's go to a museum now.
-- Can we see a movie tonight?
-
-
-
-
-
-
-
-
-- We agreed not to use our phones during this trip, remember?
-- What are you doing? We agreed not to use our phones.
-
-
-
 - Maybe it's a bear...
-
-
 
 - Be careful!
 - Be careful! This is a dangerous street.小心！这是一条很危险的街道。
@@ -511,210 +291,50 @@ English then.我当时经常哭，因为我不会英语。
 
 -----------
 
-- Hi, I'd like to order one pizza!
 
-
-
-
-------------
-
-- I'd love to, but I can't.我愿意但是我不行
-- Sure, I'd love to.当然，我很愿意。
-
-- Priti takes out her phone.
-
-- We need to find the right person.
-
-- Wait, the job is in a different office?
-
-- Carl is perfect for the job!
 
 -----------------------
 
-- But you said he's terrible!
-- You said he is always late.
-- He tells me how to do my job.
-- Hi, Bea. Can we talk about Carl?
-- I haven't talked to her in five years.
-- Are you going to talk to her now?
-- Talk to her!
-- Can you tell me more about that story?你可以再多给我讲讲那个故事吗？
-
--------------------------
-
-
 - I wanted to promote him.
-- Please promote him and send him to a different office!
-- She moved to a different city, and we stopped talking.
 
-- This ring belongs to her.
-- You can keep this ring. 你可以保留这戒指
-- You can keep that black suit.你可以保留那套黑色的西装。
-- Grandpa kept that old suit for thirty
-years.爷爷保留那套旧西装二十年了。
-
-
-
-- I didn't sleep well last night. 我昨晚没有睡好
-
-
-
-
-
-
-- They taught me some English!
-
-
-- He went on a long vacation this summer.
-
-
-- She often cries because her life is hard!她经常哭，因为她的生活很难！
-
-
-- There were many apartment buildings in this town in 1995.在1995年在这个镇上
-有很多公寓楼。
-
-- She's coming here now!
-- I came here ten years ago. 
-- They came to England in 1980.他们在1980年来的英格兰。
 
 - emotions on special days
 
 
-- but do you know where to buy glasses?
 
-
-- Who answered the phone?谁接的电话？
-- Did she answer your phone?她接你的电话了吗？
-
--------------------
-
-- I can't have a chat now.我现在不能聊天。
-- Do you often have barbecues? I had a barbecue with Ben yesterday.你经常烧烤吗？我昨天跟Ben一起烧烤了。
-
-- Do you want to have lunch together at noon?你中午想要一起吃午饭吗？
-
-- They are having a meeting at a cafe now.他们现在在咖啡厅开会。
-- Do they have a meeting at the same time every Thursday?他们每周四都在
-同一时间开会吗？
 
 ---------------------
 
-- Did you fly or drive to Los Angeles? We flew.你们是飞去还是开车去的洛杉矶？我们飞去的。
 
-- That's all right, how about next week?没关系，下周呢？
-- that's all right. 没关系。
 
-- The food at the restaurant was terrible!
-- The food was excellent! Could we have another drink?食物很棒！我们可以再要一杯饮料吗？
 
 
 - Did the concert end late yesterday?昨天的音乐会结束得很晚吗？
 
-- The ice bar is built yearly.
-
-- Can you get up as early as your mom?
 
 
-- Who bought you that necklace ?谁给你买的那条
-项链？
-- Who had fish and chips for lunch?谁午饭吃了炸鱼和薯条？
+- The dessert here is always excellent.
+- The dessert here is always excellent.这里的甜点总是很棒。
 
+- The food at the restaurant was terrible!
+- The food was excellent! Could we have another drink?食物很棒！我们可以再要一杯饮料吗？
+- food on the mountain
 
-
-
-
-
-
-
--------
-
-
-
----------
-
-- A car hit that tree yesterday.一辆车昨天撞了那棵树。
-
-- I drove him to the hotel first, and then we had lunch.我先开车带他去
-酒店，然后我们吃了午饭。
-
-- I broke the dishes last night.我昨晚打破了盎子。
-
-
-- Emma usually finishes work at half past eight.艾玛平时在八点半
-下班。
-
-- That's because you're getting older.
-- That's also because you're getting older.
-
-- Eddy, I'm not even thirty!
-
-- But now my back hurts...
-
-- Lin and her grandmother, Lucy, are visiting Seattle.
 
 - They are in a coffee shop.
-- The dessert here is always excellent.
 
-- It's nice to be here again.
 
 - Sure, after I go to the restroom.
 
 -------------------
 
 
----------------------
 
-- I don't know where she is now...
-
-- Lucy returns from the bathroom.
-
-- Lucy! It's you! Do I know you? It's me, Marco!
-
-- You never responded to my letters...
-- I never got your letters. I was sailing around the world.
-
-- Now you're here! We can finally be together!
 
 - Actually, I'm going to a museum with my granddaughter now.
 
-- Next time. send an email!
-- can you send an email to duo
-
-
-------------------
-
-
-
-
-
-
-- Ben is afraid of rock climbing.本害怕攀岩。
-- Do you like rock climbing?No, I'm bad at it.不，我不擅长攀岩。
-- Do you want to go climbing with me?你想要跟我一起去攀岩吗？
-- Let's have a climbing competition.咱们来一场攀岩比赛
-吧。
-
-
-
-- The children hate cleaning the house.孩子们讨厌打扫房子。
-
-
-- Emma, don't eat that cookie! Anna is good at cooking, but she's bad at baking. 
-
-- Anna doesn't bake very well.
-- I like baking with my grandma.我喜欢和我的奶奶一起烘焙。
-- can you bake a cake?你可以烤一个蛋糕吗？
-- My mom often bakes cookies in her free time.
-
-- Put the cookie in your pocket quickly!
-
-- The chickens live on the mountain
 
 - Congratulation**s**, Duo!
-
-
-- Cambridge Is closer to London or Oxford?剑桥离伦敦还是离牛津近？
 
 
 - I arrived at three o'clock.我是在三点钟到的。
@@ -724,19 +344,6 @@ years.爷爷保留那套旧西装二十年了。
 - Paul likes to eat chocolate.保剪喜欢吃巧克方
 
 --------------------------
-- The dessert here is always excellent.这里的甜点总是很棒。
-
-- Is your town quiet on Saturday?No, it's too crowded.不，大拥挤了。
-- Is New York a crowded city?纽约是一个拥挤的城市吗？
-
-
-
-- Look at these photos!
-
-- food on the mountain
-
-- That clothes store is more famous.那个服装店更有名。
-- Anna's white coat is more beautiful.安娜的白色外套更好看。
 
 
 - Is this pair of glasses thirty dollars? 这副眼镜是三十美元吗？

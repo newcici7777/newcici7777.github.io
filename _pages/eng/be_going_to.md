@@ -38,6 +38,7 @@ keywords: be going to
 
 當一個計畫是「已經安排好、等一下馬上就要出發」的時候，老外非常習慣直接用現在進行式來表達未來。
 
+- Actually, I'm going to a museum with my granddaughter now.
 - we are going to a nice cafe.我們要去一家很棒的咖啡廳
 - I am going to the restroom.（我要去上洗手間。 ➜ 雖然還沒到，但正要去）
 - We are going to Japan next week.我們下週要去日本。 ➜ 已經訂好機票、確定要去了

@@ -21,6 +21,10 @@ keywords: english, who, what
 ```
 Who (主詞) + 動詞 
 ```
+- Who bought you that necklace ?谁给你买的那条
+项链？
+- Who had fish and chips for lunch?谁午饭吃了炸鱼和薯条？
+
 - Who washed the dishes last night? 谁昨晚洗了碗？
 - Look at this clean plate! Who washed the dishes?看这个千净的盘子！是谁洗的碗？
 - Who invited you to the party?（是誰邀請你來派對的？ → 進行邀請動作的主人就是 Who）

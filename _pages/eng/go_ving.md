@@ -58,7 +58,16 @@ Go + 以 -ing 結尾的戶外運動（通常是去某個地方進行的活動）
 - We went swimming last night.我们昨晚去游泳了。
 - They went dancing last night together.他们昨晚一起去跳舞了。
 
+## climbing
+- Ben is afraid of rock climbing.本害怕攀岩。
+- Let's have a climbing competition
+- rock climbing
+  - rock（岩石，名詞）在這裡扮演形容詞的角色，用來修飾後面的 climbing（攀爬），意思是「在岩石上的攀爬」（即攀岩）。
 
+- Do you like rock climbing?No, I'm bad at it.不，我不擅长攀岩。
+- Do you want to go climbing with me?你想要跟我一起去攀岩吗？
+- Let's have a climbing competition.咱们来一场攀岩比赛
+吧。
 
 
 ## 露營
