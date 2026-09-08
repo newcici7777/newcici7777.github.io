@@ -4,7 +4,7 @@ date: 2026-08-17
 keywords: English, a The This These That Those
 ---
 ## a 泛指
-- A path 是可數名詞，意思是人們在森林、山林或公園裡踩出來的小路、步道。
+- A path 是可數名詞，因為它是可數的，所以在單數時前面要加冠詞（例如 *a path*），複數時則要加上 `-s`。
   - 用 a 是因為這是一個泛稱（只要是一條小徑都可以），還沒有特別指明是哪一條。
 - They work together at a bank.
   - 用 a 的原因是：第一次提到、泛指某一家銀行
@@ -12,6 +12,13 @@ keywords: English, a The This These That Those
 - at a bank → 指「在某家銀行」（沒特別指名哪一間）。
 - She moved to a different city.
   - "a" 的原因是因為 "city"（城市）是可數名詞，而且在這裡指的是「某個不特定的新城市」。
+
+## 第一次提到的地點 用 a
+這世界上好幾家餐廳、醫院，用 a 是指任意一家餐廳、醫院。
+- I work at **a** restaurant!我在一家餐廳工作 不能用the
+- I work at **a** hospital.
+- Do you teach English at **a** university.你在一个大学教英语吗？
+- They work together at **a** bank.他们一起在一家银行工作。
 
 ----------------------------
 ## a + 單數的可數名詞
@@ -23,30 +30,77 @@ keywords: English, a The This These That Those
 "a"（一個）：用在提到某個名詞，但聽話的人不知道具體是哪一個的時候。
 在這句話中，說話者只知道她搬去了一個「不同的城市」，但沒有指明是哪一座城市（例如：沒有說搬去台北或紐約），所以用 a。
 
+------------------------------------------
+
+## the 第二次提到/雙方都知道
+
+第一次提到用**A path**，第二次再說到，就會用**The** path。
+
+- 第一次提到: If you walk along **a** path, you will find your way. 
+- 第二次提到: If you see a snake on **the** path, stay away from it.
+
 如果今天雙方都知道是哪一座城市，就會用 "the"（定冠詞）：
 
 - She moved to the city where her parents live.（她搬去了她父母住的那座城市。）
 
+## the 特別指定
+the是特別指定，不是任何一個。
+
+- Welcome aboard **the** flight! （歡迎來到**這個**航班上！）
+  - 不是隨便一台航班，特別指定就是這個航班
+
+## the 全世界只有一個
+網路前面固定用the，這世界上「只有一個」網路，所以用the
+- Do you use **the internet** at work?你们在工作时用网络吗？ 
+
+## the 本身包含(a一個,this,that,these,those)
+the 可以是單數、也可以是複數，the 可放在不可數名詞前。
+
+- 複數可數名詞: Are all **the** passenger**s** aboard?（所有乘客都上船／上機了嗎？）
+  - the = these 
+- 複數可數名詞: **The** kid**s** are on their bikes.（**孩子們**在騎腳踏車。）
+  - the = those/these 
+
+- 不可數名詞: **The fish** is still alive.（這條魚還活著。）
+  - the = this 
+- 不可數名詞: All **the** pizza is gone.(所有的pizza被吃光)
+  - the = those/these ，如果只有 All pizza 代表泛指**世界上所有**的pizza被吃光
+  - All the pizza 代表是這些(那些)所有的pizza被吃光，有**特別指定**是那些pizza被吃光
+  - pizza 是不可數名詞，動詞用單數is
+
+- 單數可數名詞: I am on **the** bus. （我在公車上。）
+  - the = This + a 我在**這一台**公車上面
+
+
 ------------------------------
-## 前面有形容詞，零冠詞要加a/原本是the變a
+## 前面有形容詞，原本是the變a
 
 - I grew up in town(副詞).（我在小鎮長大。)
-- I grew up in **a small town(名詞)**.（我在一個小鎮長大。)
+  - I grew up in **a small town(名詞)**.（我在一個小鎮長大。)
   - town **前面有形容詞，就要加 a**
-
 - He lives in the city.(他住在城市裡)
-- He lives in a big and busy city.(他住在城市裡)
+  - He lives in a big and busy city.(他住在城市裡)
   - 前面有big、busy形容詞，把the改成a  
-
 - I am on **the** bus. （我在公車上。）
   - I am on **a crowded** bus.（我在一輛擁擠的公車上。）
 - They are on **the** plane now. （他們現在在飛機上。）
   - He is on **a long-haul** flight.（他在一個長途航班上。）
 
-- 加所有格：The kids are on their bikes.（孩子們在騎腳踏車。）
-  - 加所有格就沒有the、a
+## 前面有所有格就沒有the、a
+
+- The kids are on the bikes.
+  - 加所有格：The kids are on their bikes.（孩子們在騎腳踏車。）
 
 --------------------------------------
+
+## this,that 單數可數名詞「這個」「那個」
+- We are doctors, and we work at that hospital.我们是医生，我们在那家医院工作。
+- Thave a new job at this restaurant.我在这个餐厅有一份新工作。
+
+---------------------------------------
+
+## these, those 複數可數名詞「這些」「那些」
+
 
 ## 複數名詞 褲子 鞋子
 - **Are** my pant**s** too long?我的裤子大长吗？
@@ -58,16 +112,7 @@ keywords: English, a The This These That Those
 - Emma, I love those shoes! **They're** golf shoes, right? 
 - Look at these photos!
 
-## 第一次提到的地點 用 a
-這世界上好幾家餐廳、醫院，用 a 是指任意一家餐廳、醫院。
-- I work at **a** restaurant!我在一家餐廳工作 不能用the
-- I work at **a** hospital.
-- Do you teach English at **a** university.你在一个大学教英语吗？
-- They work together at **a** bank.他们一起在一家银行工作。
 
-## this,that 明確指出「這個」「那個」
-- We are doctors, and we work at that hospital.我们是医生，我们在那家医院工作。
-- Thave a new job at this restaurant.我在这个餐厅有一份新工作。
 
 -------------------------------
 限定詞（Determiners）是英文文法中非常重要的一類小幫手。簡單來說，它們就像是名詞的「守門員」或「定位標籤」。

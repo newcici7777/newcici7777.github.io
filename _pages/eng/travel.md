@@ -59,23 +59,14 @@ pay a visit to 拜訪
 * We want to visit New York in January.這句話表達的就是你們想去紐約旅遊，而且是計畫在明年的一月份。
 * 語感："Visit" 比 "go to" 聽起來更有一種「去當地觀光、體驗」的意味，而不僅僅是「到達」那個點。
 
-## visit(名/動) 造訪網站
+## visit(名/動) 拜訪
 
-### a visit 名詞
+### visit 名詞 (拜訪)
 ```
-a visit to + 地方（去...的造訪／拜訪）
+a visit to + 地方
 ```
-
-- a visit to a website.造訪網站
-- a visit to the home page. 造訪首頁
-
-- Thanks for your visit to our website.
-（謝謝你造訪我們的網站。）
-- A successful visit to the website should be fast and user-friendly.
-（一次成功的網站造訪應該要快速且對使用者友好。）
-- Our online store received thousands of visits to the website yesterday.（我們的網路商店昨天收到了數千次對該網站的造訪。）
-  - (解析：這裡用複數形 visits，常跟流量、點閱次數有關。
-
+- What is the purpose of your visit?
+- Thanks for your visit to our website.（謝謝你造訪我們的網站。）
 
 ### visit 動詞
 - I always visit that website.我总是访问那个网站。

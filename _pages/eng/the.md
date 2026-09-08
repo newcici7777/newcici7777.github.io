@@ -3,11 +3,12 @@ title: 有the、沒the
 date: 2026-09-08
 keywords: english, the
 ---
-## the
-- Do you use **the internet** at work?你们在工作时用网络吗？ 網路前面固定用the，這世界上「只有一個」網路，所以用the
+
 
 --------------
-## a Country（國家）vs The Country（鄉下、農村地區）
+
+### a Country（國家）vs The Country（鄉下、農村地區）
+
 a Country > the City > Town > the country > a village 
 
 - **a** Country（國家）

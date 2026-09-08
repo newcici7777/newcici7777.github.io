@@ -84,13 +84,23 @@ road 指的是那條鋪好的實體馬路、柏油路。
 
 ----------------------------------
 ## A path 小路、步道
-A path 是可數名詞，意思是人們在森林、山林或公園裡踩出來的小路、步道。
+A path 是可數名詞，因為它是可數的，所以在單數時前面要加冠詞（例如 *a path*），複數時則要加上 `-s`。
+
+意思是人們在森林、山林或公園裡踩出來的小路、步道。
 
 前面用 a 是因為這是一個泛稱（只要是一條小徑都可以），還沒有特別指明是哪一條。
 
 
+* **單數形**：**path**（一條小徑）
+* *例句*：*We followed **a narrow path** through the trees.*（我們順著樹林裡的一條小徑走。）
+
+* **複數形**：**paths**（多條小徑）
+* *例句*：*There are many hiking **paths** in this national park.*（這個國家公園裡有許多健行步道。）
+
+
 - If you walk along a path, you will find your way.如果你沿著小徑走，你就會找到路。
 - always stay on the paths.隨時走在小徑上。
+  - Stay on the paths.
 - we're going to talk about wild snakes and hiking paths in Australia.今天我們要來談談澳洲的野生蛇類與健行步道。
 - It's known for its wild animals and special hiking paths.它以野生動物和特殊的健行步道聞名。
 - If you see a snake on the path, stay away from it.如果你在步道上看到蛇，請遠離它。
