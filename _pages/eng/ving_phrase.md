@@ -20,17 +20,6 @@ keywords: english, Gerund Phrase
 - She is dreaming of her boss giving her a raise. （她正夢想著老闆幫她加薪。 → 主詞是 her boss）
 
 
-### worry(動詞) about ...（擔心...）
-- He worries about failing the exam.（他擔心考試不及格。）
-- I am worried about him quitting his job. （我很擔心他離職這件事。 → 主詞是 him）
-- I am worried about my son being laid off. （我很擔心我兒子被裁員。）
-  - 「被裁員」的英文是 be laid off。
-- He is worried about being caught.（他擔心被抓到。）
-- She is anxious about her proposal being rejected.（她很擔心她的提案被拒絕。）
-
-#### be worried(形容詞) to + 原形動詞
-- I was worried to hear the bad news.（聽到這個壞訊息，我感到很擔心。）
-
 
 ## 「感謝／道歉」類動詞 + 介系詞
 ### thank... for ...（因為...而感謝...）

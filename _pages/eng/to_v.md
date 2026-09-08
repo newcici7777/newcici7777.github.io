@@ -5,6 +5,7 @@ keywords: English,finish,start,begin
 ---
 ## forget to V
 - Don't forget to study tonight!今晚不要忘了学习！
+- Don't forget to drink water during the hike and have a good time.別忘了在健行時喝水，並玩得開心。
 
 ## remember 
 ### remember + to V（記得去做...）

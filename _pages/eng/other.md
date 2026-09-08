@@ -71,6 +71,8 @@ an(一個) + other(另一個) = 有**an**代表是**可數名詞**，**an代表�
 - ❌ another後面不可+可數名詞S(錯誤)：I want another book**s**.
 - ❌ another後面不可+不可數名詞(錯誤)：I need another time.
 
+- Could we have another drink?我们可以再要一杯饮料吗？
+
 ## anotehr(代名詞)：直接代替前面提過的東西。
 - This coffee is good. I'll have another.（這咖啡不錯，我再來一杯。）
 

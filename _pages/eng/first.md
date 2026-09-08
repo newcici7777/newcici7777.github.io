@@ -3,7 +3,12 @@ title: first(副詞)
 date: 2026-08-26
 keywords: english, first
 ---
+
+## first(副) 先
+
 - If you want, you can see it first.
+- But first, here are some words you need to know.但在開始之前，這裡有一些你需要知道的單字。
+
 
 在這句話中，**`first`** 的詞性是**副詞（Adverb）**！
 

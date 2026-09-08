@@ -27,8 +27,18 @@ worry about + 名詞/代名詞/wh-子句
 ## be worried(形) about sth（對...感到擔心）
 - She was worried about her final exam results.她當時很擔心期末考試的成績。
 
+- He worries about failing the exam.（他擔心考試不及格。）
+- I am worried about him quitting his job. （我很擔心他離職這件事。 → 主詞是 him）
+- I am worried about my son being laid off. （我很擔心我兒子被裁員。）
+  - 「被裁員」的英文是 be laid off。
+- He is worried about being caught.（他擔心被抓到。）
+- She is anxious about her proposal being rejected.（她很擔心她的提案被拒絕。）
+
 ## be worried(形) to V
 - I was worried to hear the bad news.（聽到這個壞訊息，我感到很擔心。）
 
 ## worry(名)
 - expression of worry  (擔憂的神情）
+
+
+

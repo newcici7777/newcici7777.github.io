@@ -4,56 +4,43 @@ date: 2026-08-27
 keywords: english, rather than
 ---
 
-**`rather than`** 是英文中一個非常好用、能讓你的句子瞬間變得精煉又有層次的超級片語！
-
-它的核心意思是：**「而不是...」**、**「與其...不如...」**。它的主要功能是「排除其中一個，選擇另一個」（表對比或取代）。
-
-我們來把它的文法結構、詞性對稱原則以及常見用法一次拆解清楚：
-
----
-
-### 1. 核心文法大原則：詞性必須「完全對稱」！
-
 `rather than` 最大的文法考點就是「對稱性」**。也就是說，**`rather than` 的前面放什麼詞性，後面就要接同等地位的詞性。
 
-它可以連接三種主要的形態：
 
-#### ① 連接兩個「原形動詞」或「動詞（V-ing）」
+## ① 連接兩個「原形動詞」
 
-當你想表達「寧願做 A，也不要（去做）B」時，後面通常直接接**原形動詞**（如果前面省略了 to）或 **V-ing**：
-
-* *I prefer to walk **rather than take** the bus.*
+* *I prefer to walk rather than take the bus.*
 （我寧願走路，**也不要**坐公車。）
-*(說明：`rather than` 後面的 `take` 是原形動詞，對應前面的 `walk`)*
+
+## ② 連接兩個（V-ing）
+
 * *She enjoys reading **rather than watching** TV.*
 （她喜歡閱讀，**而不是**看電視。）
 
-#### ② 連接兩個「名詞」
+## ③ 連接兩個「名詞」
 
 用來排除某個東西，選擇另一個：
 
 * *We need a solution, **rather than** an excuse.*
 （我們需要的是解決辦法，**而不是**藉口。）
-*(說明：`a solution` 對應 `an excuse`，兩邊都是名詞)*
 
-#### ③ 連接兩個「形容詞」或「副詞」
+## ③ 連接兩個「形容詞」或「副詞」
 
 * *The color is pink **rather than** red.*
 （這顏色是粉紅色，**而不是**紅色。）
 
 ---
 
-### 2. 句首的進階用法：「與其...不如...」
+## Rather than + 原形動詞 「與其...不如...」
+Rather than放句首
 
-除了放在句中做對比之外，`rather than` 也可以拉到**句首**來使用，這時候它的語氣會變成「與其浪費時間，不如...」，非常有說服力：
-
-* **`Rather than`** complain, we should take action.
+* **Rather than** complain, we should take action.
 （**與其**抱怨，我們不如採取行動。）
 *(注意：放在句首時，後面直接接原形動詞，後面再接主要子句)*
 
 ---
 
-### 3. 和類似片語的比較：`instead of`
+## 和類似片語的比較：`instead of`
 
 很多人會分不清 `rather than` 和 `instead of`，簡單幫你區分：
 
@@ -61,10 +48,6 @@ keywords: english, rather than
 * *I drank tea **instead of** coffee.*（我喝茶**而不是**咖啡。）
 
 ------------------------------
-
-這就把 **`rather than`**（而不是 / 與其...不如...）的經典用法整理成 **10 個實用例句**，並且依照我們剛剛學過的**詞性對稱結構**幫你分成三大類，方便你對照學習！
-
----
 
 ### 第一類：連接兩個「動詞」（表達寧願做 A，也不要做 B）
 

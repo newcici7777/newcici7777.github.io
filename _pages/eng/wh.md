@@ -59,24 +59,60 @@ Which 當主詞（在有限的選項中，詢問「哪一個」是主體）
 - Which applicant got the job? 哪一位應徵者錄取了這份工作？
 - which wallet is yours?哪个钱包是你的？
 
-### What(形容)
-What作為形容詞，修飾後面的名詞，有作為分類的意思。 
+-------------------
+## whose/which/what + 名詞 「受格」
 
-星期只有 7 種選項清單（Monday~Sunday）。
+確實！當 **`whose` / `which` / `what` + 名詞** 一起出現在句首，而且**它們在句子中扮演受詞**時，腦袋真的很容易打結。
 
-顏色有一堆選項清單（Red, Blue, Green...）。
 
-只要把你想問的「分類（名詞）」放在 What 後面，就可以無限延伸
-```
-What + [分類] + is + [主詞]
-```
-- What day is today? (這天屬於 7 個選項裡的哪一天？)
-- What color is the sky? (天空屬於顏色表裡的哪一個顏色？)
-- What color is your car ? (你的車屬於顏色表裡的哪一個顏色？)
-- what day is it? Is it Saturday or Sunday?(那一天)
-- What time is it?（現在幾點？)
-- What size do you need? (範圍：尺寸表)
+### 核心觀念：如何看出它是受詞？
 
+1.助動詞/be動詞，後面有沒有主詞，若有主詞，就可判斷是受詞。
+
+2.判斷是不是受詞最快的方法，就是**把問句還原成直述句（答案句）**。
+
+* 如果這個名詞片語在直述句裡是放在**動詞後面**（承受動作），或放在**介系詞後面**，那它就是**受詞**！
+
+---
+
+### 1. Whose + 名詞（問歸屬的受詞）
+
+* **疑問句：** **Whose car** did you drive? （你開了誰的車？）
+* **還原直述句：** You drove **my car**.
+*(我的車是動 `drove` 的受詞)*
+* **燒腦點：** 中文會說「你開**誰的車**」（受詞在後面），但英文卻把「**Whose car**」整組拉到最前面。
+
+---
+
+### 2. Which + 名詞（有限範圍選擇的受詞）
+
+* **疑問句：** **Which laptop** did you buy? （你買了哪一台筆電？）
+* **還原直述句：** You bought **that Mac**.
+*(那台 Mac 是動詞 `bought` 的受詞)*
+* **燒腦點：** `Which` 表示「從有限的選項中挑一個」。當它當受詞時，你要先想像眼前有幾台電腦，然後問對方選了哪一台的受詞。
+
+---
+
+### 3. What + 名詞（無限範圍開放式詢問的受詞）
+
+* **疑問句：** **What book** are you reading? （你在讀哪本書？）
+* **還原直述句：** You are reading **a Laravel note**.
+*(筆記是動詞 `reading` 的受詞)*
+* **燒腦點：** `What` 的範圍比 `Which` 大很多（沒有範圍限制）。一樣是把受詞「書」提到句首，後面跟著主詞和動詞。
+
+---
+
+### 💡 終極對照整理表
+
+| 疑問詞 + 名詞 | 英文疑問句（受詞在句首） | 還原成直述句（受詞在後面） |
+| --- | --- | --- |
+| **Whose** | **Whose car** did you drive? | You drove **John's** car. |
+| **Which** | **Which color** do you prefer? | You prefer **blue**. |
+| **What** | **What movie** did you watch? | You watched **an action movie**. |
+
+看過這三者的對照，有沒有覺得它們的邏輯其實都是「**把原本在後面的受詞搬到前面，再加上助動詞**」呢？
+
+-----------------------
 
 ## How + 形容詞
 - How old are you?

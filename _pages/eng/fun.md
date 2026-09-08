@@ -46,6 +46,9 @@ fun 在這裡是不可數名詞，前面不能加 a。
 - We had fun swimming yesterday
 - have fun drawing pictures!好的，画画愉快！
 
+## have a good time 玩得開心。
+- - Don't forget to drink water during the hike and have a good time.別忘了在健行時喝水，並玩得開心。
+
 ## laugh(動詞) 笑
 laughs 的詞性是不及物動詞（Intransitive Verb）
 - When my son watches funny movies, he always laughs. 

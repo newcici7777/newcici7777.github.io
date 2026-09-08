@@ -54,19 +54,28 @@ Be on (something)：是一個靜態的狀態——指你已經在上面了。
 - on the bus 在公車
 - on the train 火車
 - on a plane 飛機上
+- on the subway
+- on the MRT
 
 - We are on the train now.（我們現在在火車上。）
 - I am on the bus. （我在公車上。）
-- 限制詞變化：I am on a crowded bus.（我在一輛擁擠的公車上。）
+- 加形容詞,the 變 a：I am on a crowded bus.（我在一輛擁擠的公車上。）
 - We are on the train to Taipei. （我們在去台北的火車上。）
-- 限制詞變化：We are on the last train.（我們在末班車上。）
+- 加形容詞：We are on the last train.（我們在末班車上。）
 - They are on the plane now. （他們現在在飛機上。）
-- 限制詞變化：He is on a long-haul flight.（他在一個長途航班上。）
+- 加形容詞, the 變a：He is on a long-haul flight.（他在一個長途航班上。）
 - She is on her bicycle. （她在她的腳踏車上。／她在騎腳踏車。）
-- 限制詞變化：The kids are on their bikes.（孩子們在騎腳踏車。）
+- 加所有格：The kids are on their bikes.（孩子們在騎腳踏車。）
 - We are on a ferry. （我們在渡輪上。）
 
-## be + in 交通工具
+## be + on 跨坐交通工具
+需要「跨（straddle）在它上面」、身體跟它呈現接觸狀態的交通工具，一律用 on。
+
+- on a bike
+- on a motorcycle / on a scooter（騎機車 / 偉士牌）
+- on a horse
+
+## be + in a car/taxi
 Be in (something)：是一個靜態的狀態——指你已經在上面了。  
 小車/計程車(空間狹小，你只能「坐著被包覆在裡面」，無法站立行走。)
 

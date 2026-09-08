@@ -16,3 +16,4 @@ hurt 在這裡是不及物動詞，用來描述「會痛、作痛」的狀態
 - If I move my neck, it hurts.如果我轉動脖子，它就會痛。
 - My finger hurts. 我的手指頭好痛。(可能沒受傷，但有痛覺)
 - It hurts so much!好痛
+- But now my back hurts

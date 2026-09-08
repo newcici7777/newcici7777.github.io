@@ -72,6 +72,7 @@ keywords: countable , uncountable
 （那一雙鞋是三十美元嗎？）
 - How much is that pair of shoes?（那一雙鞋多少錢？）
 - My friend needs a pair!
+- Is this pair of glasses thirty dollars? 这副眼镜是三十美元吗？
 
 如果拿掉pair of，就要用複數動詞
 - Are these glasses thirty dollars?
@@ -139,6 +140,7 @@ Pieces（塊 / 片）
 * There are three bag**s** of chip**s** on the sofa.(沙發上有三包洋芋片。)
 - There are two bags of cracker**s** on the table.在桌子上有两袋饼千。
 
+-------------------------
 
 ## 多個名詞組合
 當一個名詞用來修飾另一個名詞時，通常會直接把修飾詞放在前面（形成「名詞 ＋ 名詞」的複合結構）。
@@ -154,8 +156,7 @@ Pieces（塊 / 片）
 * **coffee** cup ➔ 咖啡杯（*coffee* 是名詞修飾 *cup*）
 * **ticket** counter ➔ 售票櫃台（*ticket* 是名詞修飾 *counter*）
 
-- rock climbing
-  - rock（岩石，名詞）在這裡扮演形容詞的角色，用來修飾後面的 climbing（攀爬），意思是「在岩石上的攀爬」（即攀岩）。
+
 
 
 類似的常見組合：
@@ -178,6 +179,7 @@ Pieces（塊 / 片）
 - 一杯裝咖啡的杯子 → a cup of coffee → 倒過來就是 coffee cup。
 - 一所高中的老師 → a teacher at a high school → high school teacher。
 
+------------------------
 
 ## 複合名詞是不可數名詞
 只要是符合兩個特徵的食物名詞，在英文裡幾乎都是**不可數名詞**：
@@ -233,7 +235,6 @@ Pieces（塊 / 片）
 * **可數的東西**（漢堡、三明治、蘋果）➔ *a burger, two burgers*
 * **不可數 / 複合名詞**（炒飯、炒麵、冰淇淋、湯）➔ 加上容器或單位，例如：***a plate of...*** 或 ***a bowl of...***，點餐就萬無一失囉！
 
----
 
 ### 在餐廳怎麼點餐？
 
@@ -242,16 +243,30 @@ Pieces（塊 / 片）
 
 * *“Yes, I’ll have **a plate of fried rice** and **a cup of tea**.”*（好，我要一份炒飯和一杯茶。）
 
-------------------------------------------
-## 字尾是無聲子音f
-要把單數名詞 knife（小刀）變成複數名詞 knives（小刀們），經歷了兩個步驟：
+-------------------
 
-1. 步驟一：把字尾的 f 或 fe 改成 v
-2. 步驟二：加上複數字尾 -es改成 v 之後，不能只加 -s，而是要加上 -es
-- knife $\rightarrow$ knives
-- life $\rightarrow$ lives（生命）
-- thief $\rightarrow$ thieves（小偷）
-- wife $\rightarrow$ wives（妻子）
+## furniture 不可數
+`furniture`（家具）是一個總稱（統稱）
 
-為什麼要這樣變？（語音的小秘密）其實這跟「發音的順暢度」有關：如果把 knife 直接加 -s 變成 knifes，你會發現 f（無聲子音）和 s（無聲子音）連在一起唸，舌頭和氣息會很不順、很卡。把 f 改成帶有聲響的 v，再接 es（唸作 /vz/），整個發音就會變得非常順口（/naɪvz/）。英文文法很多時候都是為了「說起來更順口」而演變出這些規則的！
+1. **不能加 `-s**`
+* 不能說 furnitures。如果要表達複數或多件家具，絕對不能直接加 s。
 
+
+2. **不能直接加不定冠詞 `a` / `an**`
+* 不能說 a furniture。
+
+- **This is such nice wooden **furniture**.**
+
+### 💡 如果想表達「一件」或「多件」家具怎麼辦？
+
+因為它本身不可數，我們必須藉助「單位量詞」來幫忙計數：
+
+* **一件家具：** a **piece of** furniture
+* **兩件家具：** two **pieces of** furniture
+* **許多家具：** a lot of / much furniture
+
+### 實用例句對照
+
+* **錯誤示範：** I bought three furnitures yesterday. ❌ (不可加 s)
+* **正確說法：** I bought three **pieces of furniture** yesterday. ✔️ (我昨天買了三件家具。)
+* **回到你的句子：** This is such nice wooden **furniture**. ✔️ (`such nice` 後面直接接不可數名詞 `furniture`，非常道地！)

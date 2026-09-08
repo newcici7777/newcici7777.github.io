@@ -144,6 +144,7 @@ on的相反動作是off，為什麼用on？因為火車飛機巴士可以站，�
 - The children got up and then went to school.孩子们起了床，然后去了学校。
 - He gets up at eight o'clock every day.他每天在八点钟起床。
 
+
 ## get off 下班
 - I get off work at 6:00. 下班 
 

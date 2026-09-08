@@ -165,3 +165,5 @@ near **the** water 時，大腦的畫面通常是指「在水跟陸地交界的�
 ## There is a 建築
 - There are a few grocery stores near my apartment.在我的公寓附近有几个杂货店。
 - Is there a restaurant close to Duo's house?靠近多儿的房子有一个餐斤吗？
+- There were many apartment buildings in this town in 1995.在1995年在这个镇上
+有很多公寓楼。

@@ -6,6 +6,11 @@ keywords: english, wather
 ## the 大自然
 大自然固定前面加the。
 
+## 特例 a 與 the
+
+- in a forest = 某處的「一座」森林（第一次提及、或泛指某座森林）。第二次提到用 in the forest.
+- in the woods = 把大自然或樹林當作一個整體的環境、場所（不需要指明哪一座，是固定加the）。
+
 ## There be 大自然
 大自然固定用There be
 - There are many rivers in Taiwan. （台灣有許多河流。）
@@ -46,7 +51,20 @@ river（河流） 加 s 變成 rivers，通常是最直觀的「複數名詞」�
 - rivers（河流們）
 - lakes（湖泊們）
 
-## in the wood**s**/in **a** forest 在森林裡
+## in **a** forest 在森林裡
+森林是可數名詞，前面加a，大部分大自然都是用the，但這邊不一樣，第一次提到可以用a，第二次再提到可以用the。
+
+如果用 in（在...裡面），通常是指你陷在某個有邊界、被包覆的三維立體空間裡（例如：in the forest 在森林「裡面」
+
+- **a** forest adventure
+- Once I got lost in **a** forest in Brazil.有一次我在巴西的森林裡迷路了
+- I took a walk in **a** beautiful forest in Australia.我在澳洲一個美麗的森林裡散步。
+
+## in **the** wood**s** 在樹林裡
+大自然通常前面加冠詞the。
+woods（森林、樹林）這個詞經常用**複數**形式來表示一片樹林。在英文口語中，「in the woods」是一個非常道地的固定片語，意思就是「在樹林裡 」。
+
+
 
 
 ## in the water/air/sky

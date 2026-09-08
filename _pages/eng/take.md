@@ -162,6 +162,7 @@ take 後面接單數可數名詞時，習慣上需要加上不定冠詞 a。
 ## 散步
 - take a walk（散步）
   - I need to take a walk to clear my head.（我需要去散個步來清醒一下。）
+  - I took a walk in a beautiful forest in Australia.我在澳洲一個美麗的森林裡散步。
 - go for a walk（去散步）
   - Let's go for a walk in the park.（我們去公園散步吧！）
 - Let’s go **out** for a walk.我們出去散步吧。

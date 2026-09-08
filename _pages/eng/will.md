@@ -3,6 +3,8 @@ title: will ... be
 date: 2026-08-13
 keywords: english, will be
 ---
+## 我會的
+- Thank you, Lucy, I will.謝謝你，露西，我會的。
 
 ## 告白
 - Will you be my boyfriend?你願意（現在/未來）當我的男朋友嗎？

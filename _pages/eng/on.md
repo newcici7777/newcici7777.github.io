@@ -165,6 +165,7 @@ on a call 是你正在講一通電話。所以需要用 a 來帶出個體的概�
 
 你可以把這個 `on` 替換成更常見的 **`about`**，意思會更好理解：
 
+- advice on hiking alone（關於獨自健行的建議）
 - What did you do on your date?
 * *She gave me a guide **on** how to do it.*
 * ＝ *She gave me a guide **about** how to do it.*

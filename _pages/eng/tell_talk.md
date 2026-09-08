@@ -125,13 +125,15 @@ speak不及物（不能直接加受詞)
 
 speak「演講、發表談話」，跟上司說話、報告用speak  
 
-### speak + to/with + 人
+### speak + to + 人
 - May I speak to the manager?
 - Speak to me.
 - You can speak to your boss tomorrow. I
 - Can speak to you for fifteen minutes?我可以跟你说
 十五分钟的话吗？
 
+### speak with 人
+- I spoke with Anna, who gave me some tips for hiking safely.我和安娜談過，她給了我一些安全健行的建議。
 
 ### speak about + 主題
 - He spoke about science.

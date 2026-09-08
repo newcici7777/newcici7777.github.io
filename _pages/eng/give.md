@@ -54,6 +54,7 @@ keywords: give send show
 - Anna will give them some bananas.
 - Give me the book. 
 - He gives Zari the empty bottle.
+- She gave me some tips for hiking safely.她給了我一些安全健行的建議。
 
 ### give + 物 + to 人
 - I gave a gift to you.

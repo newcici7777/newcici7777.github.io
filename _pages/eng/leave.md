@@ -51,6 +51,9 @@ Leave 不及物動詞（後面不需要直接接受詞）。
 ## leaves the table 離開桌子(離開位子)
 - Lucy leaves the table.
 
+## Leave 人/動物 alone (不要打擾，離某人某物很遠) 
+- They usually don't bother you if you leave them alone.但如果你不打擾牠們，牠們通常不會找你麻煩。
+
 ## Leave for 動身前往 + 目的地
 ```
 Leave + for + [目的地]。

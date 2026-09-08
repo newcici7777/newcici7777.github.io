@@ -1,44 +1,39 @@
 ---
-title: Instead of
+title: Instead of 代替
 date: 2026-08-27
 keywords: english, instead of
 ---
+## instead 放句尾
+後面沒東西，不用加of
+- Do you want to sleep outside instead?
 
-
-### 1. 詞性與核心概念
-
-* **詞性**：**複合介系詞片語**（Prepositional phrase）。
-* **核心意思**：**「代替...」、「而不是...」**。
-* **基本特性**：因為它帶有介系詞 `of`，所以它後面**絕對不能**直接接「主詞 + 動詞」的完整子句。
-
----
-
-### 2. 後面「一定只能」接什麼？（文法關鍵）
+## instead of 代替
+* **`instead of`**（代替、而不是）：通常只單純接「名詞」或「V-ing」。
 
 `instead of` 後面只能接三種東西：
 
-#### ① 名詞或代名詞（Noun / Pronoun）
+### ① 名詞或代名詞（Noun / Pronoun）
 
 * *I will go **instead of** him.*
 （我會**代替**他去。）
 * *We used paper cups **instead of** plastic.*
 （我們用紙杯，**而不是**塑膠杯。）
 
-#### ② 動名詞（V-ing）
+### ② 動名詞（V-ing）
 
 如果後面要接「動作」，那個動詞一定要變成 **`-ing`** 型態。
 
 * *She watched a movie **instead of** studying.*
 （她看電影，**而不是**讀書。）
 
-#### ③ 疑問詞引導的名詞子句（少見，但文法上可行）
+### ③ 疑問詞引導的名詞子句（少見，但文法上可行）
 
 * *You should focus on what to do **instead of** how to complain.*
 （你應該專注於該做什麼，**而不是**怎麼抱怨。）
 
 ---
 
-### 3. 句子位置與用法
+### 句子位置與用法
 
 `instead of` 在句子中有兩種主要的位置：
 

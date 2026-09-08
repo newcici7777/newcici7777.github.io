@@ -51,12 +51,23 @@ Go + 以 -ing 結尾的戶外運動（通常是去某個地方進行的活動）
 - 未來式：We will go fishing tomorrow.（我們明天要去釣魚。）
 - 進行式（正在出發去）：They are going fishing.（他們正準備去釣魚／出發去釣魚了。）
 
-## go hiking 健行/ go dancing
+## hike / hiking / go hiking 健行、徒步旅行 
+- hiking paths 健行步道
+- we're going to talk about wild snakes and hiking paths in Australia.今天我們要來談談澳洲的野生蛇類與健行步道
+- I am afraid to hike alone in the forest.
+  - hike當「動詞」:健行、徒步旅行。
+- Let's go for a hike.（我們去健行吧）。
+  - hike把動作變成名詞，前面要加a
+- Don't forget to drink water during the hike and have a good time.別忘了在健行時喝水，並玩得開心。
 - How often do you go hiking?你多久去一次
 徒步旅行？
 - I went hiking there last week and saw a lot of angry chickens.
-- We went swimming last night.我们昨晚去游泳了。
+
+
+
+## go dancing 跳舞/ go swimming
 - They went dancing last night together.他们昨晚一起去跳舞了。
+- We went swimming last night.我们昨晚去游泳了。
 
 ## climbing
 - Ben is afraid of rock climbing.本害怕攀岩。

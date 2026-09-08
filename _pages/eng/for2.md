@@ -56,16 +56,6 @@ Thanks for + 名詞 / V-ing（謝謝你做...）
 - thank you for coming.谢谢你来。
 - Thank you for calling me, but I am busy now.谢谢你给我打电话，但是我现在在忙。
 
-### be famous for 原因
-```
-be famous for + 原因（成就、作品、特點）
-```
-* *He is famous **for** his pop songs.*（他因為流行歌曲而有名 👉 原因是歌曲。）
-
-### be famous as 身份(職業、角色)
-* *He is famous **as** a singer.*（他以歌手的身分而有名 👉 身分是歌手。）
-
-
 ## 訂房/租借物品 for 使用多久時間
 - I need a room for two night**s**.（我需要一間房，住兩個晚上。）
   - 使用2個晚上

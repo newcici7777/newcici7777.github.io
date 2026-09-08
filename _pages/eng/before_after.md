@@ -115,8 +115,7 @@ after 就是「先後順序」
 - After I finished dinner, I watched TV.（吃完晚餐後我看電視。）
 
 ## 其它
-- After all（畢竟、終究 / 歸根究底）
-  - Don't be too hard on him; he's a child after all.（別對他太嚴格，他畢竟是個孩子。）
+
 - Day after day（日復一日）
   - She practices speaking English day after day.（她日復一日地練習說英文。）
 

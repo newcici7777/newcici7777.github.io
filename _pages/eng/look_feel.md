@@ -21,7 +21,9 @@ keywords: look, see, watch, seem, feel, hear, listen to,
   - the sky looks very different. 
   - the sky looks gray.  
 - Sound（聽起來）
-  - That idea sounds great.（那個主意聽起來很棒。
+  - That idea sounds great.（那個主意聽起來很棒。)
+  - A monkey sounds fun. 猴子聽起來很有趣
+中文： 猴子聽起來很有趣，但我怕迷路。
 - Smell（聞起來）
   - The food smells delicious.（食物聞起來很美味。）
 - Taste（嚐起來）
@@ -51,6 +53,7 @@ keywords: look, see, watch, seem, feel, hear, listen to,
 - Lin sees her grandmother, Lucy, at the table.
 - What do you see?
 - I don't see anything.
+- If you see a snake on the path, stay away from it.如果你在步道上看到蛇，請遠離它。
 
 ### look at「專注」看  
 - Eddy looks at a painting of a dog.
@@ -76,6 +79,9 @@ watch 看別人在做的「一連串動作」。
 - did you hear that?
 - I'm sorry to hear that.
 - Can you hear the plane?你能听到飞机吗？
+- I heard a sound, and it was a monkey.聽到一個聲音，那是隻猴子。
+  - sound 是可數名詞，表示「某個具體的聲音、聲響」（例如聽到的一聲鳥鳴、一聲吼叫）時，它是可數的，所以前面可以用 a（如 a sound）。
+
 
 ## 「感官動詞 + 受詞 + 動作」是用來描述「看到別人做某事」
 透過我們的五官（視覺、聽覺、觸覺、嗅覺、味覺）來感受動作。常見的有：see（看）、watch（看）、hear（聽）、listen to（聽）、feel（感覺）。

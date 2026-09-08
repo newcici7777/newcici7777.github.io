@@ -34,6 +34,10 @@ on one's way to 目的地
 - That's not the way we do things here. （那不是我們這裡做事的方法。）
 - Can you show me the way to solve this problem? （你可以教我解決這個問題的方法嗎？）
 
+## find your way 找到路
+find your way 找到你的路。「找到出路」、「辨明方向」、「順利抵達目的地 / 不迷路」。
+- If you walk along a path, you will find your way.如果你沿著小徑走，你就會找到路。
+
 ## the way 路 方向
 way 除了指「路」之外，更偏向抽象的「方向、路線、怎麼去的方式」。
 - Do you know the way to the station? （你知道去車站的路嗎？）
@@ -57,6 +61,11 @@ to 是一個介系詞，表示「通往...的方向 / 目標」
 - He always has to have things his own way. （他總是凡事都要依自己的意思。）
 - By the way, did you finish the report? （話說回來，你把報告寫完了嗎？）
 
+## 其它way片語:
+- lose one's way：迷路（也就是前面對話裡出現過的 get lost）。
+- make one's way：前往、艱難地前進
+  - He made his way through the forest. (他在森林中艱難前行）
+
 --------------------------------
 
 ## road
@@ -72,3 +81,37 @@ road 指的是那條鋪好的實體馬路、柏油路。
 - Can you show me the way to the station?（你可以告訴我去車站的路／怎麼走嗎？）
 講具體那條馬路時：
 - Is this the road to the station?（這條是去車站的那條馬路嗎？）
+
+----------------------------------
+## A path 小路、步道
+A path 是可數名詞，意思是人們在森林、山林或公園裡踩出來的小路、步道。
+
+前面用 a 是因為這是一個泛稱（只要是一條小徑都可以），還沒有特別指明是哪一條。
+
+
+- If you walk along a path, you will find your way.如果你沿著小徑走，你就會找到路。
+- always stay on the paths.隨時走在小徑上。
+- we're going to talk about wild snakes and hiking paths in Australia.今天我們要來談談澳洲的野生蛇類與健行步道。
+- It's known for its wild animals and special hiking paths.它以野生動物和特殊的健行步道聞名。
+- If you see a snake on the path, stay away from it.如果你在步道上看到蛇，請遠離它。
+
+## 比較path, trail, road, street,lane
+
+- trail: 通常指山林間更天然、更長、專門給健行者走的「步道 / 徑」。
+- road: 通常指給車子開的馬路，
+- street: 或是城鎮裡的街道
+- lane/ˈlen/: 小路；小巷；車道；跑道; 泳道
+  - Stay in the lane.(開車時維持在車道內)
+  - a three-lane road 三車道公路
+  - 跑道泳道: in lane four 在第四道
+
+----------------------------------
+## 跟路相關的，都用on
+path（小徑）、road（馬路）、street（街道）、track（軌道/小路）視為一條長型的平面表面。
+
+當你走在上面、腳踩在那個平面上時，介系詞就是用 on（在...上面）。
+
+- on the road（在路上）
+- on the street（在街上）
+- on the floor（在地板上）
+- on the grass（在草地上）

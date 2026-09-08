@@ -1,19 +1,50 @@
 ---
-title: as A as B
+title: as
 date: 2026-08-27
-keywords: english,as A as B
+keywords: english, as
 ---
-`as` 的獨家特色：「背景音樂」般的同時發生，「一邊...一邊...」或「正當...時」
+
+## as ... as 「跟...一樣...」
+```
+[A] + [動詞] + as + [形容詞或副詞原級] + as + [B]
+```
+- You walk as slow as my grandma.你走路跟我的阿嬤一樣慢。
+- Can you get up as early as your mom?
+- She speaks English as fluently as a native speaker.（她說英文跟母語者一樣流利 → fluently 是副詞）
+- He is as tall as his father.（他和他父親一樣高 → tall 是形容詞）
+- She is as pretty as her aunt. 她跟她阿姨一樣漂亮
+- Your phone is as expensive as mine.（你的手機跟我的跟一樣貴。）
+- This box is as heavy as a rock.（這個箱子跟石頭一樣重。）
+- Can you get up as early as your mom?
+
+## not as ... as 「沒有跟...一樣...」
+- I am not as tall as you.（我沒有跟你一樣高 → 我比你矮）
+- He doesn't run as fast as me.（他跑得沒有我快）
+
+-----------------------
 
 ## AS 當...的時候
-```
-As 主詞 + 動詞, 另一件事情發生
-另一件事情發生 as 主詞 + 動詞 
-```
-* **As** Bea ate the pasta, she looked around the restaurant.
-（當 Bea 在吃義大利麵時，她環顧了餐廳四周。）
+ `as` 表達兩個動作同時發生時，「背景音樂」般的同時發生，「一邊...一邊...」或「正當...時」
+
+* **規則 A：過去式配過去式（最常見的說故事時態）**
+* 當你在講過去發生的故事時，主句和 `as` 子句通常都用過去式。
+* *Example*: **As** I **walked** down the street, I **saw** an old friend.
+（當我走在街上時，我看到了一位老朋友。）
 * The phone rang **as** I was leaving the house.
 （當我正要出門時，電話響了。）
+
+
+* **規則 B：過去進行式搭配過去簡單式（強調動態與打斷/同時）**
+* 這也是超級經典的組合！用進行式（*was/were V-ing*）來營造「背景正在進行的動作」，用簡單式來表示「同時發生的另一個動作」。
+* **As** Bea **was eating** the pasta, she **looked** around the restaurant.
+（當 Bea 正在吃義大利麵時，她環顧了餐廳四周。）
+
+
+* **規則 C：現在式配現在式（描述日常習慣或真理）**
+* 如果在講平常經常發生的事，兩邊都用現在式。
+* **As** the sun **sets**, the temperature **drops**.
+（當太陽落下時，溫度就會下降。）
+
 
 ## As 同時進行
 * **`as` 強調「兩個動作同時進行」**（就像背景正發生著 A 事件，同時 B 事件發生了）。
@@ -22,27 +53,29 @@ As 主詞 + 動詞, 另一件事情發生
 
 - As I walked home, it started to rain.
 
-當兩個動作**在同一個時間段內長度差不多、平行發生**時，英文常常會直接用兩個**簡單式**（在這裡是過去簡單式 *sang* 和 *walked*）來表達。
-
 ## as 大比較
 以下都是一樣的意思，一邊走一邊唱。進行式代表持續進行中。
 
-- 二邊簡單式: He sang as he walked down the street.
-- 一邊進行式: He was singing as he walked down the street.
-- 一邊進行式: He sang as he was walking down the street.
-- 二邊進行式: He was singing as he was walking down the street.
+- 二邊過去式: He sang as he walked down the street.
+- 一邊過去進行式: He was singing as he walked down the street.
+- 一邊過去進行式: He sang as he was walking down the street.
+- 二邊過去進行式: He was singing as he was walking down the street.
 
 ### 💡 總結
 
 * **不用進行式**：完全正確！用簡單式來描述「同時發生的平行動作」非常常見，語氣簡潔自然。
 * **用進行式**：也可以！如果你想特別強調「當下正在進行的狀態」就能派上用場。
 
+**「時態要一致或邏輯合理」**。
+* 講過去的故事 ➔ 兩邊都用過去式（或一邊進行式、一邊簡單式）。
+* 講現在的狀況 ➔ 兩邊都用現在式。
+
 ## `as` vs `while` vs `when`
 
 | 連接詞 | 核心語感 | 最常搭配的時態 | 想像的畫面 |
 | --- | --- | --- | --- |
 | **`As`** | **兩個動作同時發生**（同步進行） | 常接進行式（*was doing*） | **一邊...一邊...**（動態進行中） |
-| **`While`** | **強調一段「持續的時間」** | 一定接進行式（*was doing*） | **在...期間**（時間較長） |
+| **`While`** | **強調一段「持續的時間」** | 接進行式（*was doing*） | **在...期間**（時間較長） |
 | **`When`** | **一個點、一個狀況發生時** | 簡單式居多（*did / does*） | **當（那個時間點）一到**（點狀發生） |
 
 * **簡單對比感受一下**：
@@ -52,6 +85,18 @@ As 主詞 + 動詞, 另一件事情發生
 ----------------------
 
 ## as 因為
+表達原因時，時態通常取決於「這個原因跟結果發生在什麼時間點」，前後可以一致，也可以彈性搭配
+
+* **過去式的因果關係**：
+* *Example*: **As** it **was** raining heavily, we **canceled** the trip.
+（因為當時雨下得很大，我們取消了旅行。）
+*(說明：過去的狀態 *was* 導致過去的動作 *canceled*)*
+
+
+* **現在式的因果關係**：
+* *Example*: **As** you **are** busy, I **will leave** you alone.
+（既然你現在很忙，我就不打擾你了。）
+*(說明：現在的狀態 *are* 對應現在/未來的決定 *will leave*)*
 
 * **As** it was raining heavily, we decided to stay home.
 （**因為**雨下得很大，我們決定待在家裡。）
@@ -70,174 +115,55 @@ As 主詞 + 動詞, 另一件事情發生
 * **As** you know, English is important.
 （**正如**你所知，英文很重要。）
 
+-----
 
-
----
-
-## as + 名詞 (作為, 身份)
+## as + 名詞 (身份)
+as 通常放在動詞後面
 * He works **as** a waiter.
 （他**以...的身分**工作 ➔ 他是一名服務生。）
-- Work **as** a team. 作為團隊的一份子
+
+------------
+
+## 名詞A as 名詞B (把 A 當作 B)
+* *He uses his phone **as** a camera.*（他把手機**當作**相機使用。）
+
+## 名詞A as 形容詞B (把A當作B)
+- Treat this information as confidential. (把這個資訊視為機密)
+  - Treat（動詞：對待）
+- Treat this as a secret.(把這個當作秘密)
+
+## regard/see/think A as B (把A當作B)
+
+1. **`Regard A as B`**（把 A 視為 B）
+* *I **regard** him **as** a close friend.*（我**把**他**視為**摯友。）
+
+
+2. **`See A as B`**（把 A 看作 B）
+* *We **see** this challenge **as** an opportunity.*（我們**把**這個挑戰**看作**是一個機會。）
+
+
+3. **`Think of A as B`**（把 A 想作 / 看作 B）
+* *Don't **think of** it **as** a failure; think of it as a lesson.*（不要把它**看作**是失敗，把它當成一堂課。）
 
 ----------------------
 
 ## as always 一如往常地
+當作「副詞片語」（放在句尾或句首）
 
 * Thank you **as** always.（謝謝你，**一如既往地**。）
-  - `always`**：總是、一直。
+  - always：總是、一直。
   - as「正如一直以來那樣」➔ 也就是「跟平常一樣、一如往常」。
-
+* *He is working hard, **as always**.*（他**一如往常地**很努力工作。）
+- It's good as always.
 * ***As always.***（**老樣子 / 一如往常**。）
+* *He arrived on time, **as always**.*
+（他**一如往常地**準時抵達。）
 
 * A: *You're late again.*（你又遲到了。）
 * B: ***As always.***（**老樣子（我就是這樣）**。）
 
 
-* **情境 C（接在句子後面）**：
-* *He arrived on time, **as always**.*
-（他**一如往常地**準時抵達。）
-
-### 1. 當作「副詞片語」（放在句尾或句首）
-
-當它黏在一個完整句子的後面時
-
-* *He is working hard, **as always**.*（他**一如往常地**很努力工作。）
-
-- It's good as always.
-
-
----
-
-### 1. 當作「當...時候」（時間連接詞）
-
-* **詞性**：從屬連接詞（Conjunction）。
-* **句子位置**：通常放在句首引導副詞子句，或放在句中連接兩個子句。
-* *`As` I walked home, it rained.*（放在句首）
-* *It rained `as` I walked home.*（放在句中）
-
-
-* **後面放什麼**：必須接「完整的子句」（主詞 + 動詞）。
-* **注意事項**：
-* 強調兩個動作**同時發生**，常搭配進行式（*was/were + V-ing*）。
-* 雖然常用過去簡單式來表現平行動作，但若要強調「當下正在進行的畫面」，用進行式會更有臨場感。
-
-
-
----
-
-### 2. 當作「因為」（原因連接詞）
-
-* **詞性**：從屬連接詞（Conjunction）。
-* **句子位置**：通常放在句首說明原因，後面加逗號接主句。
-* *`As` it was raining, we stayed home.*
-
-
-* **後面放什麼**：必須接「完整的子句」（主詞 + 動詞）。
-* **注意事項**：
-* 用來表達「既然、因為」，語氣比 *because* 自然、順理成章，通常是雙方都知道的理由。
-
-
-
----
-
-### 3. 當作「如同、正如」（方式/比較）
-
-* **詞性**：從屬連接詞（Conjunction）。
-* **句子位置**：常放在句中或固定片語中。
-* *Do `as` I say.* / *`As` you know...*
-
-
-* **後面放什麼**：接「完整的子句」（主詞 + 動詞）。
-
----
-
-### 4. 當作「作為、身分」（介系詞）
-
-* **詞性**：介系詞（Preposition）。
-* **句子位置**：通常放在動詞後面，用來補充主詞或受詞的身分。
-* *He works `as` a waiter.*
-
-
-* **後面放什麼**：後面只能接「單純的名詞」或名詞片語（**絕對不能**加主詞和動詞）。
-
----
-
-### 💡 終極判斷心法（怎麼知道後面要接什麼？）
-
-看到 `as` 時，只要問自己一個問題：
-
-* **後面有「主詞 + 動詞」嗎？**
-* 有 ➔ 它是**連接詞**（表示「當...時」、「因為」或「如同」）。
-* 沒有，後面只有一個單純的名詞 ➔ 它是**介系詞**（表示「作為、身分」）。
-
-
-
-這樣整理是不是一目了然、隨時都能輕鬆複習了呢？
-----------------
-`as` 在處理「時間（當...時候）」**和**「原因（因為）」**這兩種子句時，它的時態搭配有一個非常核心、絕對不能踩雷的大原則：**「主句與 as 子句的時態要合理對應（通常是過去式配過去式、現在式配現在式）」。
-
-我們來看看具體有哪些時態規則與注意事項：
-
----
-
-### 1. 時間用法（As = 當...時候）的時態規則
-
-當你用 `as` 表達兩個動作同時發生時，時態通常會呈現「平行對稱」：
-
-* **規則 A：過去式配過去式（最常見的說故事時態）**
-* 當你在講過去發生的故事時，主句和 `as` 子句通常都用過去式。
-* *Example*: **As** I **walked** down the street, I **saw** an old friend.
-（當我走在街上時，我看到了一位老朋友。）
-*(說明：*walked* 和 *saw* 都是過去式)*
-
-
-* **規則 B：過去進行式搭配過去簡單式（強調動態與打斷/同時）**
-* 這也是超級經典的組合！用進行式（*was/were V-ing*）來營造「背景正在進行的動作」，用簡單式來表示「同時發生的另一個動作」。
-* *Example*: **As** Bea **was eating** the pasta, she **looked** around the restaurant.
-（當 Bea 正在吃義大利麵時，她環顧了餐廳四周。）
-
-
-* **規則 C：現在式配現在式（描述日常習慣或真理）**
-* 如果在講平常經常發生的事，兩邊都用現在式。
-* *Example*: **As** the sun **sets**, the temperature **drops**.
-（當太陽落下時，溫度就會下降。）
-
-
-
----
-
-### 2. 原因用法（As = 因為）的時態規則
-
-表達原因時，時態通常取決於「這個原因跟結果發生在什麼時間點」，前後可以一致，也可以彈性搭配：
-
-* **過去式的因果關係**：
-* *Example*: **As** it **was** raining heavily, we **canceled** the trip.
-（因為當時雨下得很大，我們取消了旅行。）
-*(說明：過去的狀態 *was* 導致過去的動作 *canceled*)*
-
-
-* **現在式的因果關係**：
-* *Example*: **As** you **are** busy, I **will leave** you alone.
-（既然你現在很忙，我就不打擾你了。）
-*(說明：現在的狀態 *are* 對應現在/未來的決定 *will leave*)*
-
-
-
----
-
-### 💡 簡單的時態總結心法
-
-`as` 子句的時態沒有獨立的怪異規定，它的核心精神就是：**「時態要一致或邏輯合理」**。
-
-* 講過去的故事 ➔ 兩邊都用過去式（或一邊進行式、一邊簡單式）。
-* 講現在的狀況 ➔ 兩邊都用現在式。
-
-這樣把時態串起來之後，對於 `as` 的掌握是不是更全面了呢？
-
 -----------------------
-這就把 **`as`** 的各種用法整理成 **20 個實用例句**，並按照我們剛剛學過的分類（時間、原因、如同/方式、作為/身分）幫你分好類，讓你一次看懂所有面貌：
-
----
 
 ### 第一類：表示「時間」（當...時候）
 
@@ -307,77 +233,8 @@ As 主詞 + 動詞, 另一件事情發生
 
 ----------------------------
 
-這句 **`Treat this information as confidential.`** 中的 **`as`**，文法上屬於**介系詞（Preposition）**，用來表示「被視為...」、「當作...」**或**「以...身分」。
 
-這個句型在職場、商業合約或正式溝通中**超級無敵常用**！我們來把它的文法結構、核心公式以及常見的親戚句型一次拆解清楚：
-
----
-
-### 1. 核心文法公式：「把 A 當作 B」
-
-這個句型最常搭配特定的動詞（例如 treat, use, see, regard 等），形成這樣的結構：
-
-> **`動詞` + [受詞 (A)] + `as` + [名詞/形容詞 (B)]**
-> * 意思：把 A 當作 B 來對待 / 使用 / 看待。
-> 
-> 
-
-以你的句子為例：
-
-* **`Treat`**（動詞：對待、處理）
-* **`this information`**（受詞 A：這項資訊）
-* **`as`**（介系詞：當作、作為）
-* **`confidential`**（形容詞 B：機密的）
-* **整句意思**：請將這項資訊**視為**機密（妥善保管）。
-
----
-
-### 2. 為什麼這裡的 `as` 後面可以接形容詞（`confidential`）？
-
-你可能會有點好奇：前面不是說介系詞後面通常接「名詞」嗎？為什麼這裡的 `as` 後面接了形容詞 `confidential`？
-
-* 這是因為在某些特定的「視為 / 轉變」動詞後面（如 *treat, regard, see*），`as` 後面可以省略隱含的名詞，直接接**形容詞**或**名詞**來補充說明受詞的狀態。
-* 它可以視為省略了 *as confidential information*（當作機密資訊）。
-* 不過，最常見的還是接**名詞**，例如：
-* *He uses his phone **as** a camera.*（他把手機**當作**相機使用。）
-* *Please accept this gift **as** a token of my appreciation.*（請接受這份禮物，**作為**我的一點謝意。）
-
-
-
----
-
-### 3. 職場超實用「親戚句型」（強烈推薦背起來！）
-
-除了 `Treat... as...` 之外，英文裡有幾個意思非常接近、在生活和職場中同樣高頻率出現的黃金句型：
-
-1. **`Regard A as B`**（把 A 視為 B）
-* *I **regard** him **as** a close friend.*（我**把**他**視為**摯友。）
-
-
-2. **`See A as B`**（把 A 看作 B）
-* *We **see** this challenge **as** an opportunity.*（我們**把**這個挑戰**看作**是一個機會。）
-
-
-3. **`Think of A as B`**（把 A 想作 / 看作 B）
-* *Don't **think of** it **as** a failure; think of it as a lesson.*（不要把它**看作**是失敗，把它當成一堂課。）
-
-
-
-學會這個用法後，下次看到合約上的 **`Confidential`**（機密）或者想告訴別人「把我說的話當作祕密喔」時（*Treat this as a secret.*），就能非常帥氣又道地表達囉！
-
-
---------------------
-這個句型在英文中叫做「受詞補語」**或**「雙賓語/受詞身分」的變形，也就是你剛剛發現的黃金公式：
-
-> **`動詞` + `名詞(受詞)` + `as` + `名詞(身分/角色)**`
-
-它的核心概念是：**前面的動詞對後面的名詞做了某個動作，使其「變成了」後面 `as` 所接的那個身分或角色。**
-
-除了前面提過的 *Treat*（對待/視為）之外，英文裡還有好幾個超級常聽到的動詞，也喜歡這樣搭配！
-
----
-
-### 一、 常用動詞大集合（四大天王）
+### 把A當作B
 
 #### 1. `Choose / Select`（選擇...擔任...）
 

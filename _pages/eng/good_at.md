@@ -19,6 +19,7 @@ keywords: english, good at, get better at
 - My husband is bad at cooking.我的丈夫不擅长烹饪。
 - are you bad at english? 你不擅长英语吗？
  - She's so good at cooking.
+- Anna is good at cooking, but she's bad at baking. 
 
 表示「在某個領域、某項技能上表現得如何」時，習慣使用介系詞 at 來定位方向或範圍。  
 類似的「形容詞 ＋ at」用法還有：

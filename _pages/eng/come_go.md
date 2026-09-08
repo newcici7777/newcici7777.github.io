@@ -214,6 +214,7 @@ home前面加上「誰的」房子，就要用to
 walk + along + **長條狀場所**
 - Walk along the street.（沿著這條街走。）後面絕對不加 to
 - Drive along Main Street（沿著大街開車）
+- If you walk along a path, you will find your way.如果你沿著小徑走，你就會找到路。
 
 ## down 沿著/順著開
 Down 在這裡不是「向下（往下爬）」的意思，而是指「順著街道的延伸方向往下走 / 往前走」。在英文直覺裡，走進一條街道、順著它走下去，就是用 down。

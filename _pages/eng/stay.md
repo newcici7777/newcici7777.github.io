@@ -7,7 +7,14 @@ Stay 的核心意思就是「保持（某個狀態）」或「停留、待在（
 
 stay 後面接形容詞時，意思是「維持在某個狀態不變」，相當於 keep。
 
-Stay 就像是一個按了「暫停」的按鈕，讓某個地方或狀態停格、維持下去。
+## stay 停留
+stay 中，它的核心概念是「維持在某個範圍、狀態或軌道中不離開」，而不是絕對的靜止不動。
+
+stay 在這裡管的是「範圍 / 邊界」，而不是限制你的動作不能移動！
+
+- Always stay on the paths.隨時走在小徑上。
+  - 它不是叫你：「站在小徑上不準動！」而是叫你：「在移動（健行）的過程中，要一直待在小徑的範圍內，不要走到旁邊去。」
+- Stay in the lane.(開車時維持在車道內)
 
 ## stay together
 當它跟 together（在一起）結合變成 stay together 時，意思就是「保持在一起」或「繼續在一起」。
@@ -17,10 +24,7 @@ Stay 就像是一個按了「暫停」的按鈕，讓某個地方或狀態停格
 - Can we stay together?（我們能一直在一起嗎？）
 - They decided to stay together.（他們決定繼續在一起。）
 
-## Stay 保持狀態
-```
-Stay + 形容詞
-```
+## Stay + 形容詞 (保持狀態)
 * Please stay calm.（請保持冷靜。 → calm是形容詞）
 * Stay safe!（保重／注意安全！）
 - Stay calm（保持冷靜）
@@ -31,6 +35,7 @@ Stay + 形容詞
 Stay(保持) + away在遠處
 - Stay away from there!待在遠處不要過來！
 - Stay away from our village! 離我們的村莊遠一點
+- If you see a snake on the path, stay away from it.如果你在步道上看到蛇，請遠離它。
 
 
 其它常用:

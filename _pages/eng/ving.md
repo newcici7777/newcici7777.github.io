@@ -56,8 +56,14 @@ to + V，強調那個「跨入新狀態」的瞬間切換
 - How do I start the engine?（我要怎麼發動引擎？ ）
 - ❌ How do I begin the engine?（機械不能用 begin）
 
-## start again 重新開始
+## start again 重新開始,從頭再來
 - Start again and chant with me.跟我重新唱一遍。
+  - Chant with me：跟著我一起吟唱 / 唸誦 / 複誦。
+- **Let's make a mistake and start again.**我們犯了一個錯誤，所以重來一次吧。
+- **The file didn't save properly, so I had to start again.**
+中文：檔案沒有存好，所以我被迫得從頭來過。
+- **If you don't like the drawing, you can always start again with a blank sheet of paper.**中文：如果你不喜欢這張畫，隨時可以用一張白紙重新開始。
+- **Don't get discouraged; just take a deep breath and start again.**中文：別氣餒；深呼吸一口氣，重新來過就好了。
 
 ## start 開始時間
 - when will the next meeting start?(下个会议什么时候开始？)  

@@ -83,28 +83,7 @@ crowded形容詞 + 名詞
 
 
 
-## Country（國家）vs The Country（鄉下、農村地區）
-Country > City > Town > the country > village 
 
-- Country（國家）
-  - How many countries have you visited?（你去過多少個國家？））
-  - Is France a country in Europe?法国是欧洲的一个国家吗？
-
-- The Country （鄉下、農村地區）
-  - 鄉下涵蓋了無數個小村莊（villages）和農田
-  - They moved out of the city and bought a house in the country.（他們搬出城市，在鄉下買了一棟房子。）
-  - I want to live in the country when I retire.（我退休後想住在鄉下。）
-
-- Village（村莊）— 最小、最原始
-  - We live in a village in Brazil.
-  - He lives in a quiet fishing village.
-
-- town 鎮
-  - There is a nice bookstore in town.（鎮上有一家不錯的書店。）
-  - I grew up in a small town in the mountains.（我在山裡的一個小鎮長大。
-
-- City（城市 / 市）
-  - Taipei is a big and busy city.（台北是一個大而繁忙的城市。）
 
 
 
@@ -248,10 +227,7 @@ Onion overload
 - I think my job is giving me bad dreams!
 
 
-- Is this plastic toy hers?这个塑料的玩具是她的吗？
-- This one is mine, this one is for your brother, and this one is for your dad!
-- This phone is large but hers is larger.这个手机很大，但是她的更大。
-- That bright pink car is mine.那辆亮粉色的车是我的。
+
 
 --------------
 
@@ -262,23 +238,13 @@ English then.我当时经常哭，因为我不会英语。
 
 ------------------
 
-- Do you know the price of these carrots?你知道这些胡萝卜的价格吗？
-- It was a great price, so I got four!
+
 
 - I'm so tired of customers complaining all day.
 
 - She sits down. Her dog jumps up on the sofa.
 
-
-- You can sleep on my pillow.
-- And I want to sleep in your bed.
-
-
-
-
 - These fruits aren't fresh!They're very old!这些水果不新鲜！它们放很长时间了！
-
-
 
 
 - Maybe it's a bear...
@@ -289,49 +255,19 @@ English then.我当时经常哭，因为我不会英语。
 - It's so dark.
 
 
------------
-
-
-
------------------------
-
 - I wanted to promote him.
 
 
 - emotions on special days
 
-
-
-
----------------------
-
-
-
-
-
-- Did the concert end late yesterday?昨天的音乐会结束得很晚吗？
-
-
-
 - The dessert here is always excellent.
 - The dessert here is always excellent.这里的甜点总是很棒。
 
 - The food at the restaurant was terrible!
-- The food was excellent! Could we have another drink?食物很棒！我们可以再要一杯饮料吗？
+- The food was excellent!食物很棒！
 - food on the mountain
 
 
-- They are in a coffee shop.
-
-
-- Sure, after I go to the restroom.
-
--------------------
-
-
-
-
-- Actually, I'm going to a museum with my granddaughter now.
 
 
 - Congratulation**s**, Duo!
@@ -343,7 +279,4 @@ English then.我当时经常哭，因为我不会英语。
 - John needs to work.约翰必须工作。
 - Paul likes to eat chocolate.保剪喜欢吃巧克方
 
---------------------------
 
-
-- Is this pair of glasses thirty dollars? 这副眼镜是三十美元吗？

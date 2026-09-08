@@ -3,53 +3,53 @@ title: prefer
 date: 2026-08-27
 keywords: english, prefer
 ---
+以下都是最喜歡前面。
 
-#### 1. 如果比較兩個「名詞」：要用 `to`（表示「比起 A，我更喜歡 B」）
+翻譯先翻後面，再翻前面，但最喜歡前面。
 
-當你要比較兩個具體的事物時，`prefer` 後面要接 **`to`**（此時的 `to` 是介系詞，意思是「比起...」）。
-
-* **公式**：`prefer` + 名詞 A **`to`** 名詞 B
-* *Example*: I prefer tea **to** coffee.
-（比起咖啡，我**更喜歡**茶。）
-
-#### 2. 如果比較兩個「動詞（V-ing）」：也可以用 `to`
-
-當你想表達「比起做 A 事，我更喜歡做 B 事」時，兩邊用 V-ing 搭配 `to` 最道地：
-
-* **公式**：`prefer` + V-ing A **`to`** V-ing B
-* *Example*: I prefer swimming **to** running.
-（比起跑步，我**更喜歡**游泳。）
-
-#### 3. 如果後面直接接「不定詞（to V）」：就**不用**再寫另一個 `to` 了
-
-有時候 `prefer` 後面直接接你想做的事情（用 *to + 原形動詞*），這時候句尾就不用再加 `to`，反而常常會搭配我們剛剛學過的 **`rather than`**！
-
-* **公式**：`prefer` + `to V` + **`rather than`** + 原形動詞
-* *Example*: I prefer **to stay** home **rather than go** out tonight.
-（我今晚**寧願**待在家裡，**也不要**出去。）
-
-### 💡 總結
-* `prefer` 後面**不一定**要有 `to`，如果是比大小（A 和 B），會用到 `prefer A to B`；但如果是接具體想做的事，就會變成 `prefer to do A rather than do B`！
+- 跟**後面比**，更喜歡**前面**
 
 
-----------------------------------------
+## prefer 名詞
+- Do you prefer silver jewelry or gold？
+  - 原本:Do you prefer silver jewelry or gold one? 省略one
+- I prefer silver jewelry.（我比較喜歡銀飾 $\rightarrow$ 直接接名詞）
 
-`prefer` 的意思是「更喜歡...」，它會根據後面接的東西（名詞、V-ing、或 to V）變化出不同的搭配方式。
+## prefer 名詞A to 名詞B (比較喜歡A)
+- I prefer tea **to** coffee.（比起咖啡B，我更喜歡茶A。）
+- Do you prefer cats **to** dogs?
+（比起狗B，你更喜歡貓A嗎？）
+- She prefers summer to winter.比起冬天 (B)，她更喜歡夏天 (A)
 
-### 第一類：比較兩個「名詞」或「V-ing」（使用 `to` 當作「比起」）
+## prefer VingA to VingB (比較喜歡A) 
+- I prefer swimming **to** running.（比起跑步B，我更喜歡游泳A。）
+- Many people prefer driving **to** taking public transportation.
+（許多人比起搭大眾運輸B，更喜歡開車A。）
+- She prefers working independently **to** working in a team.
+（比起團隊合作B，她更喜歡獨立作業A。）
 
-1. I prefer tea **to** coffee in the morning.
-（早上比起咖啡，我**更喜歡**茶。）
-2. She prefers working independently **to** working in a team.
-（比起團隊合作，她**更喜歡**獨立作業。）
-3. Do you prefer cats **to** dogs?
-（比起狗，你**更喜歡**貓嗎？）
-4. He prefers reading physical books **to** reading on a screen.
-（比起看螢幕，他**更喜歡**讀實體書。）
-5. Many people prefer driving **to** taking public transportation.
-（許多人**比起**搭大眾運輸，更喜歡開車。）
+## perfer to 原形動詞V
+- She prefers **to work** in a quiet environment.
+（她比較喜歡在安靜的環境中工作。）
+- I prefer to stay home.（我比較喜歡待在家裡)
+- I prefer to wear silver.（我比較喜歡穿戴銀飾）
 
-### 第二類：連接具體想做的事（`prefer to do A rather than do B`）
+## perfer to 原形動詞A rather than 原形動詞B (比較喜歡A)
+rather than是**不要**，前面是「原形動詞」，後面也是原形動詞。
+- I prefer to stay home **rather than go** out tonight.
+（比起出門B，更喜歡待在家裡A）
+
+
+- 喜歡某個東西（名詞）：
+  - prefer + 名詞 (e.g., prefer silver)
+- 喜歡做某個動作（動詞）：
+  - prefer to + 動詞 (e.g., prefer to buy)
+- 比起 B 更喜歡 A（比較用法）：
+  - prefer **名詞A** to **名詞B** (e.g., prefer silver to gold)
+
+-------------------------------------------
+
+### prefer to 原形動詞A rather than 原形動詞B
 
 6. I prefer **to stay** home **rather than go** to the party.
 （我**寧願**待在家裡，**也不要**去派對。）
@@ -62,13 +62,11 @@ keywords: english, prefer
 10. They prefer **to travel** light **rather than** carry heavy bags.
 （他們**寧願**輕裝旅行，**也不要**扛著大包小包。）
 
-### 第三類：直接接「不定詞」（`prefer to do` 表達單一偏好）
+### prefer to 原形動詞
 
 如果後面沒有要對比 B，單純表達「我比較喜歡去做某事」，可以直接接 `to V`。
 11. I prefer **to check** the details before signing the contract.
 （我比較喜歡在簽合約前先檢查細節。）
-12. She prefers **to work** in a quiet environment.
-（她比較喜歡在安靜的環境中工作。）
 13. Would you prefer **to reschedule** our meeting?
 （你比較希望把我們的會議改期嗎？）
 14. He prefers **to wear** casual clothes on Fridays.

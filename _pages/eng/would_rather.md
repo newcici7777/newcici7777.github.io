@@ -3,7 +3,7 @@ title: would rather 寧願
 date: 2026-08-27
 keywords: english, would rather
 ---
-### 第一題：為什麼 `rather than` 常被翻譯成「寧願」？
+### would rather + 原形動詞 + than + 原形動詞
 
 其實，**`rather than` 本身的字面意思是「而不是...」**（沒有「寧願」兩個字）。
 
@@ -20,9 +20,9 @@ keywords: english, would rather
 * *I **would rather** walk **rather than** take the bus.*
 （我**寧願**走路，**也不要**搭公車。）
 
-`would rather` 的意思是「寧願...」**，最常見的基礎句型是：**`would rather + 原形動詞 + rather than + 原形動詞`（後面的 *rather than* 常可簡寫為 *than*）。
+後面的 *rather than* 常可簡寫為 *than*
 
-### 第一類：表達「寧願做 A，也不要做 B」（標準對比句型）
+### 第一類：表達「寧願做 (原形動詞A)，也不要做 (原形動詞B)」
 
 1. I **would rather** stay at home **than** go out in this heavy rain.
 （我**寧願**待在家裡，**也不要在**這場大雨中出門。）
