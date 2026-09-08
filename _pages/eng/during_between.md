@@ -42,7 +42,10 @@ during + 名詞（片語）
 * Please don't talk during the exam.（請在考試期間不要交談。）
 * We met a lot of interesting people during our stay in Japan.（我們在日本停留期間遇到了很多有趣的人。
 - Don't forget to drink water during the hike and have a good time.別忘了在健行時喝水，並玩得開心。
+  - the hike 這裡變成了名詞（指「那趟健行 / 那次爬山」）。
+  - during the hike：「在健行期間」、「健行的時候」。
 
+  
 ### 2.during + 假期
 - during the trip
 - during the summer

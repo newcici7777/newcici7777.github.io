@@ -51,8 +51,47 @@ Leave 不及物動詞（後面不需要直接接受詞）。
 ## leaves the table 離開桌子(離開位子)
 - Lucy leaves the table.
 
-## Leave 人/動物 alone (不要打擾，離某人某物很遠) 
+## Leave 人/動物 alone (不要打擾，離某人某物很遠)
+leave讓...保持某種狀態 + alone是形容詞（孤單的、不被打擾的）=  讓牠們維持不受打擾的狀態
+```
+leave + 受詞 + 形容詞
+```
+
 - They usually don't bother you if you leave them alone.但如果你不打擾牠們，牠們通常不會找你麻煩。
+* *Leave me alone!*（別理我！/ 讓我靜一靜！）
+* *Leave the door open.*（把門開著不用關。）
+
+## Leave 讓某人或某物保持某種狀態
+```
+leave + 受詞 + 形容詞
+```
+Leave(讓)+受詞(誰)+形容詞(怎麼樣)
+
+1. **Leave the door open.**把門開著（不要關）。
+* 解析：*the door* 是受詞，*open* 是形容詞，意思是讓門維持開著的狀態。
+
+2. **Please leave me alone.**請讓我一個人靜一靜 / 別理我。(讓我孤單)
+
+3. **Leave the window locked.**
+* 中文：**把窗戶鎖好（保持上鎖的狀態）。**
+* 解析：*the window* 是受詞，*locked* 雖然是過去分詞，但在這裡當作形容詞用，表示「鎖上的狀態」。
+* *Leave the door locked.*（把門鎖好保持不動。）
+
+4. **Keep your room clean, or leave the desk tidy.**
+* 換一個動詞搭配感受一下（雖然主動用 keep，但如果要用 leave 強調維持現狀也可以說：**Leave your desk tidy.**）
+* 中文：**把你的書桌整理乾淨（保持整潔的狀態）。**
+* 解析：*your desk* 是受詞，*tidy*（整潔的）是形容詞。
+
+
+5. **Don't leave the food uncovered.**
+* 中文：**不要把食物露在外面（不要不蓋蓋子）。**
+* 解析：*the food* 是受詞，*uncovered*（未覆蓋的、沒蓋好的）是形容詞。這在露營或戶外健行時提醒大家防範野生動物非常實用！
+
+## leave 留下
+- leave a tip on the table(留下小費)
+- leave a message（留話 / 留言）把話「留在」語音信箱或紙條上。
+- leave your keys on the table（把鑰匙留在桌上）
+
 
 ## Leave for 動身前往 + 目的地
 ```

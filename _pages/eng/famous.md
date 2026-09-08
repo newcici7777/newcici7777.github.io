@@ -15,7 +15,11 @@ be famous for + 原因（成就、作品、特點）
 
 
 ## be known for 原因
+其中的 `known` 是動詞 *know*（知道）的過去分詞，這裡跟 `be` 動詞結合變成**被動語態**（被大家所知道）。
 
 - It's known for its wild animals and special hiking paths.它以野生動物和特殊的健行步道聞名。
+- *This forest is **known for** its tall trees.*（這座森林以高大的樹木而聞名。）
 
-## be known as
+## be known as 職稱
+
+- *He is known as a great writer.* 他以偉大作家身分聞名

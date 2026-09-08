@@ -86,6 +86,10 @@ a visit to + 地方
 - Travel to outer space is no longer just a science fiction dream. （外太空旅行不再只是科幻小說的夢想。）
 - International travel to remote islands has become much easier nowadays. （如今，前往偏遠島嶼的國際旅行變得容易多了。）
 
+## visit訪問 與 visiting觀光
+- visiting: 四處造訪、觀光這個動態過程。
+- visit: 通常是指去拜訪某個特定的地方或親友，而不是泛指觀光。
+
 ## travel(動詞) to + 目的地
 travel是動詞
 - She'll travel to France next month.(下个月她将前往法国。)  

@@ -263,3 +263,37 @@ take a right
 ## the end of
 - Go straight **to** the end of this street.直行到这条街的尽头。
 - Go straight, and turn left **at** the end of this street.直行，然后在这条街的尽头左转。
+
+---------------------------------
+
+### 1. `Route`（路線）
+偏向「具體的交通規劃」**或**「從 A 地到 B 地的導航路徑」。
+
+* *What is **the best route** to the airport?*（去機場最好的路線是什麼？）
+* *Let's check Google Maps to find **the best route**.*（我們查一下 Google 地圖來找出最佳路線。）
+- Scenic route（風景路線 / 觀光路線）
+  - Let's take the scenic route home.（我們回家時走風景優美的路線吧。）
+- Alternative route（替代路線 / 備用路線）
+  - The main road is closed, so we need to find an alternative route.（主幹道封閉了，我們得找一條替代路線。）
+
+
+Route當動詞
+- Route traffic（導流 / 引導交通）。
+- Route a package（規劃包裹的寄送路徑）。
+  - All calls are routed to the main office.（所有電話都被轉接到總公司去了。）
+
+
+### 2. `the way`（路 / 路線 / 方式）
+
+* **核心概念**：含義非常廣泛，除了實體的「路途/方向」之外，還可以指「方法」**或**「抽象的路」。
+* **特性**：
+* **當作實體路徑時**：它通常比較籠統，指「前往某處的過程或方向」（例如：*Show me the way.* 帶我走這條路）。
+* **當作抽象用法時**：意思是「方法、方式」（例如：*This is the way to do it.* 這是做這件事的方法）。
+
+
+* **例句**：
+* *Do you know **the way** to the station?*（你知道去車站的**路**嗎？ —— 比較不強調是不是「最好」的，單純指那條路。）
+* *I lost **my way** in the dark.*我在黑暗中**迷路**了。
+
+
+

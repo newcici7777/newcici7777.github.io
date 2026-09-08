@@ -91,6 +91,19 @@ the 可以是單數、也可以是複數，the 可放在不可數名詞前。
 - The kids are on the bikes.
   - 加所有格：The kids are on their bikes.（孩子們在騎腳踏車。）
 
+-----------------------------
+## 比較級 前面用a
+當我們用形容詞比較級（better, bigger, nicer）來修飾名詞時，前面通常會搭配 a，表示「一個更...」。
+
+只要用到 better + 名詞，多半都是搭配 a 來開啟一個新的、更好的狀態！
+
+- Step onto the top for a better view.走到頂端去欣賞更好的風景。
+  - 用a的原因: 還沒確定的具體事物： 這個「更好的視野」在此之前並沒有出現過，它不是某個全天下都知道的特定景點，而是一個「只要你走到上面，就能獲得的其中一種全新體驗」。
+  - （一個未特定、但比現在更好的視野）。
+- I want a better phone.（我想要一支更好的手機。 $\rightarrow$ 不指定哪一支，只要比現在好就行。）
+- Let's find a better place.（我們找個更好的地方吧。）
+
+
 --------------------------------------
 
 ## this,that 單數可數名詞「這個」「那個」
@@ -101,17 +114,21 @@ the 可以是單數、也可以是複數，the 可放在不可數名詞前。
 
 ## these, those 複數可數名詞「這些」「那些」
 
-
-## 複數名詞 褲子 鞋子
 - **Are** my pant**s** too long?我的裤子大长吗？
 - **These** pant**s** are one hundred dollars.這些褲子是一百美元
 - **These pants are** old, and **they are** too short.I really need new pant**s**.这些裤子很旧，而且它们大短了。我真的需要新裤子。
 - **Are these** mу sho**es**? 这些是我的鞋子吗？
 - **Are these shoes** ten dollar**s**?这此鞋子是十美元吗？
 - These gloves are mine.这此手套是我的。
-- Emma, I love those shoes! **They're** golf shoes, right? 
 - Look at these photos!
 
+-----------------------------
+
+## 東西複數主詞用They，單數用It
+
+- Emma, I love those shoes! **They're** golf shoes, right? 
+  - 無生命也可以用They，They不限制於人、動物，東西也可以用。
+  - **複數**可數東西用**They當主詞**，**單數**可數東西用**It當主詞**。
 
 
 -------------------------------

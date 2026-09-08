@@ -110,10 +110,7 @@ A path 是可數名詞，因為它是可數的，所以在單數時前面要加�
 - trail: 通常指山林間更天然、更長、專門給健行者走的「步道 / 徑」。
 - road: 通常指給車子開的馬路，
 - street: 或是城鎮裡的街道
-- lane/ˈlen/: 小路；小巷；車道；跑道; 泳道
-  - Stay in the lane.(開車時維持在車道內)
-  - a three-lane road 三車道公路
-  - 跑道泳道: in lane four 在第四道
+
 
 ----------------------------------
 ## 跟路相關的，都用on
@@ -125,3 +122,74 @@ path（小徑）、road（馬路）、street（街道）、track（軌道/小路
 - on the street（在街上）
 - on the floor（在地板上）
 - on the grass（在草地上）
+
+-------------------------------
+
+
+### 1. 戶外自然類（山林、郊外、健行）
+
+* **Path**（小徑 / 步道）
+* **特徵**：通常是人們或動物踩出來的、比較窄的小路，常見於公園、森林或花園。
+* **例句**：*Stay on the **path** and don't walk on the grass.*（待在小徑上，不要踩草地。）
+
+
+* **Trail** [/trel/]（林間步道 / 健行小徑）
+* **特徵**：專門給健行者、登山客走的自然小徑，通常比 path 更長、更野外、更貼近大自然。
+* *This mountain **trail** is quite steep and challenging.*（這條山區步道蠻陡峭且具挑戰性的。）
+- We followed the trail through the forest. 我們沿著森林中的小徑前進。
+
+* **Track**（泥土小徑 / 賽道 / 軌道）
+* **特徵**：通常是指車輪壓出來的土路、農田小徑，或是運動場的跑道、火車軌道。在澳洲或紐西蘭的英文中，也常把「健行步道」直接稱為 *track*。
+* *We followed the dirt **track** through the valley.*（我們沿著山谷中的泥土小徑走。）
+- The train runs on the track every morning. 火車每天早上都在軌道上行駛。
+- The athlete ran around the track twice. 運動員繞著跑道跑了兩圈。
+
+
+---
+
+### 2. 人行與日常類（城市、鄉村）
+
+* **Road**（公路 / 馬路）
+* **特徵**：給汽車、卡車等交通工具行駛的寬敞道路，連接不同的城鎮或地區。
+* **例句**：*Be careful when crossing the **road**.*（過馬路時要小心。）
+
+
+* **Street**（街道）
+* **特徵**：位於城鎮或都市裡、兩旁通常有房子或商店的道路。
+* **例句**：*He lives on the next **street**.*（他住在隔壁條街。）
+
+
+* **Sidewalk**（人行道）
+* **特徵**：馬路旁專門給行人走路的高起鋪面區域。
+* **例句**：*Please walk on the **sidewalk**, not in the middle of the road.*（請走在人行道上，不要走在馬路中間。）
+
+
+
+---
+
+### 3. 特殊形狀或用途類
+
+* **Lane** /ˈlen/（小巷 / 車道）
+* **特徵**：狹窄的小巷子（例如城市裡的後巷），或是高速公路上的「車道」。
+* **例句**：*Our office is hidden down a quiet **lane**.*（我們的辦公室藏在一個安靜的小巷裡。）
+
+- lane/ˈlen/: 小路；小巷；車道；跑道; 泳道
+  - Stay in the lane.(開車時維持在車道內)
+  - a three-lane road 三車道公路
+  - 跑道泳道: in lane four 在第四道
+
+
+* **Route**（路線 / 航線）
+* **特徵**：指從 A 地到 B 地所經過的「整條交通路線」，不一定是指實體的小路。
+* **例句**：*What is the best **route** to the airport?*（去機場最好的路線是什麼？）
+
+
+
+---
+
+### 💡 快速對照小整理：
+
+* 想去爬山健行 ➡️ **Trail** 或 **Path**
+* 開車或騎車走的大馬路 ➡️ **Road**
+* 市區逛街的街道 ➡️ **Street**
+* 行人走路的專用道 ➡️ **Sidewalk / Pavement**

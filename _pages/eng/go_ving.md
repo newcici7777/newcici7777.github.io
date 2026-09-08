@@ -3,6 +3,7 @@ title: Play, go Ving, have fun Ving, do運動
 date: 2026-08-17
 keywords: English, cross, across
 ---
+表達一種活動、行程或過程（例如：shopping、sightseeing、traveling、visiting觀光）時，習慣使用 V-ing（動名詞），它比單純的名詞更能展現「正在進行的活動」那種活生生的感覺！
 
 ## play 玩 運動
 ### 玩  
@@ -63,6 +64,17 @@ Go + 以 -ing 結尾的戶外運動（通常是去某個地方進行的活動）
 徒步旅行？
 - I went hiking there last week and saw a lot of angry chickens.
 
+#### 💡 `the hike`（名詞） vs. `hiking`（動名詞/名詞）有什麼差別？
+
+* **`the hike`**：
+* 指的是「一次具體的、單一的健行活動」（所以前面常加 *a* 或 *the*）。
+* *例句*：*How was **the hike** yesterday?*（你昨天那趟健行怎麼樣？）
+
+
+* **`hiking`**：
+* 泛指「健行這項運動或休閒活動」本身，是一個概念。
+* *例句*：*I love **hiking**.*（我喜歡健行。）
+* *例句*：*Hiking is good for health.*（健行對健康有益。）
 
 
 ## go dancing 跳舞/ go swimming

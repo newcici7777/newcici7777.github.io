@@ -22,11 +22,19 @@ wear 不僅僅是「穿（衣服）」的動作，它同時也用來指「身上
 
 ## wear 穿戴什麼在身上
 一般現在式通常用來表達「習慣、常態或事實」
-- I will wear it every day.
+
+- But shouldn't he wear work clothes? My teacher wears a tie in online classes.但他不該穿工作服嗎？我的老師在線上課程時會打領帶耶。
+
 - All personnel must wear ID badges. 所有員工都必須佩戴識別證。
 - She likes to wear expensive shoes.她喜欢穿贵的鞋。
 - Students are required to wear uniforms. 學生被要求穿制服。  
 - We can all wear our new sweaters tomorrow!
+
+## put on 穿
+- Well, we don't need to put on work clothes at home. Pajamas are fine for some people.嗯，我們在家裡不需要穿工作服。對有些人來說，穿睡衣就可以了。
+  - put on work clothes：穿上工作服（put on 是穿上、戴上的動態動作）。
+  - pajamas are fine：睡衣就可以了（fine 在這裡表示「可以、沒問題」）。
+  
 
 ## be + wearing 識別證/手錶/帽子/鞋子/衣服
 1. 身上穿什麼衣服、鞋子，都要用`現在進行式`，代表「正在穿」。對方現在身上正穿著、戴著的東西，鎖定現在進行式就對了！

@@ -240,6 +240,30 @@ years.爷爷保留那套旧西装二十年了。
 ## end(動詞) 結束
 - Did the concert end late yesterday?昨天的音乐会结束得很晚吗？
 
+
+## tips for/on(關於) 訣竅,建議
+* **`tips`**（小建議、訣竅、實用祕訣，常用複數形 *tips*）。
+* **`for`** 是介系詞，用來連接「這些建議是**為了**什麼目的或情境」。
+
+- **Do you have any tips on how to save money?** 中文：你有沒有關於怎麼存錢的訣竅？
+* *tips for learning English*（學英文的訣竅）
+* *tips for saving money*（存錢的方法）
+- **Here are some useful tips for learning English.**中文：這裡有一些學英文的實用小建議。
+- **The article gives great tips for planning a trip.**中文：這篇文章提供了很好的旅遊規劃建議。
+- **She shared some makeup tips with her friends.**中文：她和朋友分享了一些化妝小技巧。
+
+### a tip「小費」
+tip單數可數名詞，前面要加a，tip沒有s，搭配動詞leave，留下小費
+```
+leave a tip
+```
+- leave a tip on the table（把小費留在桌上）
+- **Does the bill include the tip?**中文：帳單裡有包含小費嗎?
+- **We left a generous tip for the waiter.**中文：我們給了服務生很大方的小費（服務很好給很多的意思）。
+
+
+
+
 ## 其它疑惑
 I draw things that I think are interesting or beautiful.
 

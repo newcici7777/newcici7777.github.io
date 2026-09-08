@@ -30,6 +30,21 @@ too放在句子的最後面，前面(可加或不加)逗號
 - I think you're beautiful too!(too 前不加逗號)  
 - there's sausage too!  
 
+## too ... to (太...不能)
+too，通常就帶有「超過正常標準（過頭）」的否定意味。
+```
+too + 形容詞/副詞 + to + 動詞原形
+```
+- It's too cold to swim.（天氣太冷，不能游泳。 $\rightarrow$ 負面/否定）
+- He is too young to drive.（他年紀太小，不能開車。）
+
+## too ... for (對某人來說，太...)
+```
+too + 形容詞/副詞 + for + 名詞
+```
+- This box is too heavy for me.（這個箱子對我來說太重了。 $\rightarrow$ 我搬不動，隱含否定）
+- There is too much wind for surfing.（風太大了，不適合衝浪。 $\rightarrow$ 風量過頭了，對衝浪來說是負面的）
+
 ## either 我也不
 前面一定要有否定詞（如 *don't, isn't, can't, not* 等），用在否定句，放句尾，前方可有逗號，也可沒逗號。
 
