@@ -11,7 +11,7 @@ keywords: english,once
 
 ## Once upon a time 很久很久以前
 - Once：曾經、一度
-- upon：在……之上（比較文學感、正式的 on）
+- upon：在...之上（比較文學感、正式的 on）
 - a time：一段時間
 合起來字面上的意思是「曾經在某個時間裡」
 

@@ -73,31 +73,31 @@ keywords: english, Possessive pronouns
 
 ### 例句清單
 
-* **1. mine（我的……）**
+* **1. mine（我的...）**
 * **例句：** That coffee is not **mine**. Mine is iced tea.
 * **中文翻譯：** 那杯咖啡不是**我的**。我的是冰紅茶。
 * **還原對照：** 後面的 `Mine` = *My coffee*（我的咖啡）。
 
 
-* **2. yours（你的…… / 你們的……）**
+* **2. yours（你的... / 你們的...）**
 * **例句：** Your room is clean, but **yours** is a bit messy. *(假設在跟室友對話)*
 * **中文翻譯：** 我的房間很乾淨，但**你的**有點亂。
 * **還原對照：** `yours` = *your room*（你的房間）。
 
 
-* **3. his（他的……）**
+* **3. his（他的...）**
 * **例句：** My laptop runs fast, but **his** crashes sometimes.
 * **中文翻譯：** 我的筆電運作很快，但**他的**有時候會當機。
 * **還原對照：** `his` = *his laptop*（他的筆電）。*（註：his 當所有格形容詞和所有格代名詞拼法剛好一樣）*
 
 
-* **4. hers（她的……）**
+* **4. hers（她的...）**
 * **例句：** My photos are on local storage, but **hers** are synced to the cloud.
 * **中文翻譯：** 我的照片放在本機儲存空間，但**她的**同步到了雲端。
 * **還原對照：** `hers` = *her photos*（她的照片）。
 
 
-* **5. ours（我們的……）**
+* **5. ours（我們的...）**
 * **例句：** Their team won the game, but **ours** played well too.
 * **中文翻譯：** 他們隊贏了比賽，但**我們的**也表現得很好。
 * **還原對照：** `ours` = *our team*（我們的隊伍）。

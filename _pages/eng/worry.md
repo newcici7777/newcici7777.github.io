@@ -12,7 +12,7 @@ worry about + 名詞/代名詞/wh-子句
 * She **worries** too much about her future.（她對自己的未來操心太多了。）
 
 ## worry當作不及物動詞 (Vi.)：擔憂、發愁
-當作不及物動詞時，通常會搭配介係詞 **about** 來接受詞（表示「對……感到擔心」）。
+當作不及物動詞時，通常會搭配介係詞 **about** 來接受詞（表示「對...感到擔心」）。
 - Don't worry.
 
 ## worry(及物動詞)

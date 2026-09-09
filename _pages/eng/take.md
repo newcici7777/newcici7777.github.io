@@ -73,36 +73,6 @@ Take 人 to 某地
 - I drove him to the hotel first, and then we had lunch.我先开车带他去
 酒店，然后我们吃了午饭。
 
-## take + 電梯 = 搭電梯
-- You can't take this elevator now.你現在不能搭這部電梯。
-- You shouldn't take the elevator during a fire.（火災時你不應該搭電梯。）
-
-## take + 電梯 + to + 第幾樓 (搭電梯到幾樓)
-- Take the elevator to [樓層]
-  - Take the elevator to the fourth floor.  （搭電梯到四樓。）
-
-## take + 電梯 + up to + 第幾樓 (搭電梯到幾樓)
-- Take the elevator up to [樓層]
-  - Take the elevator up to the fourth floor.  （搭電梯到四樓。）
-
-## take + 電梯 + down to + 第幾樓 (搭電梯到幾樓)
-I'll take the elevator down to the fourth floor.（強調「往下」去四樓）
-
-## go up to 目的地 往上走
-- If you go up to the fourth floor, you'll see the pool. 
-  - go up to ＋ 目的地：意思是「走到...去 / 上樓到...」。
-  - 在這裡，to 是一個介系詞，用來連接你的動作和具體的終點目標（也就是第四樓）。
-
-## go up + 往上走的方式(the elevator/the stairs)
-- You have to go up the elevator, not down.你必須搭電梯往上，不是往下
-- If you go up the stairs, you'll see the restaurant.如果你走上樓梯，就會看到餐廳。
-- Go down the stairs（走下樓梯）
-  - Be careful when you go down the stairs.（你走下樓梯時要小心。）
-- Take the stairs（搭乘 / 選擇走樓梯 → 相對搭電梯而言）
-  - Let's take the stairs instead of the elevator.（我們走樓梯，不要搭電梯吧。）
-
-
-
 ## 拍照
 用相機或手機捕捉畫面時，你是在「把影像從現實世界中『取』下來、捕捉下來」
 
@@ -182,7 +152,7 @@ take 轉變成了一個輔助性質的動詞，中文通常會翻譯成：「進
 - take a quick look（快速看一眼）
 - take a long break（休個長假）
 - take a hard test（考一個很難的試）
-
+- He took a step backward.（他向後退了一步。）
 
 ## 導覽
 - take a tour（進行參觀）

@@ -144,7 +144,7 @@ want + 人 + to + V原形動詞 (要求某人做某事)
 - 過去式： We didn't want them to take it.（我們不希望他們拿走它。）
 
 受詞如果是代名詞，必須用「受格」
-當你想說「我希望『他』去做……」時，代名詞要用 him，不能用 he。
+當你想說「我希望『他』去做...」時，代名詞要用 him，不能用 he。
 - ✔️ I want him to come.（O）
 - ❌ I want he to come.（X）
 

@@ -13,6 +13,7 @@ keywords: English,finish,start,begin
 - I finished cooking and then ate dinner.我做完了饭，然后吃了晚饭。
 - Dad finished cooking breakfast at half past nine.爸爸在九点半做完了早饭。
 - When will you finish cooking?你什么时候会做完饭？
+- I have to finish cleaning before your dad **comes home**.  
 
 ## stop / quit + Ving 停止
 事情正在做，才能喊停

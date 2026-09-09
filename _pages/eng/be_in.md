@@ -3,6 +3,8 @@ title: be in (狀態)
 date: 2026-08-09
 keywords: English
 ---
+抽象名詞 = 某個狀態
+
 ## 醫院
 hospital在這邊是抽象名詞，不可數，不可以加a跟the。
 

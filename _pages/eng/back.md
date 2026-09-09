@@ -1,5 +1,5 @@
 ---
-title: back
+title: back 返回/回來
 date: 2026-08-20
 keywords: english, back
 ---
@@ -37,7 +37,7 @@ back 是一個副詞 (Adverb)，用來描述「be動詞狀態」，意思是「�
 * Emma is back from her trip.(Emma 從旅行回來了。) → 如果你想強調「哪裡」，才需要加 from。
 
 
-When will you be back from the office?"（你什麼時候從辦公室回來？) 
+When will you be back from the office?（你什麼時候從辦公室回來？) 
 * Be back (狀態)：代表「回來、返回」的狀態。
 * From (起點)：代表「從哪裡離開」的來源。
 * The office (地點)：辦公室。
@@ -46,9 +46,9 @@ When will you be back from the office?"（你什麼時候從辦公室回來？)
 * 你想表達「從 A 地點回來」，A 地點必須由 from來帶出。
 
 例句:
-* Back fromthe office（從辦公室回來）
-* Back fromlunch（從午餐回來）
-* Back fromJapan（從日本回來）
+* Back from the office（從辦公室回來）
+* Back from lunch（從午餐回來）
+* Back from Japan（從日本回來）
 
 ```
 be back from + [地點/活動]
@@ -66,14 +66,29 @@ be back from + [地點/活動]
 - her friend gets back from France tomorrow.
 - We got back late last night.我们昨晚很晚回来的。
 
-## 移動動詞 + back + to + 目的地
-- I need to go back to work.
+
+## 移動動詞 + back (返回)
+back，「回頭、返回」或「走回原本的地方」
+- Go back.（返回 / 你走過頭了）
+- Step back. 往後站
+- Turn back 回頭
+- You missed the turn. You need to go back.
+（你錯過轉彎了。你必須走回去。）
+- Walk back the way you came.
+（沿著你剛剛來的那條路走回去。）
+- He comes back with a very large bag of bottles.
+
+
+## 移動動詞 + back + to + 地點 (返回某個地點)
+- We should head back **to** the hotel before it rains.（在下雨前，我們該回飯店了。）
+- I need to go back to work. 回去工作(work是抽象名詞，前面不加a 或 the)
+- The kids need to go back to school.(孩子們該回學校上課了) school抽象名詞
+- He had to go back to prison.（他必須回監獄服刑了。）
 - He got a suitcase and ran back to the car. 他拿了一個行李箱，然後跑回車子那裡。
 - I forgot my phone, so I ran back to the house. （我忘記帶手機，所以我跑回屋子裡。）
 - She grabbed her umbrella and ran back to the office. （她抓起雨傘，又跑回辦公室。）
+- I need to go back home.(home是副詞，本身包含to前往，不能再加to)
 
-## 移動動詞 + back
-- He comes back with a very large bag of bottles.
 
 
 ## 比較
@@ -95,28 +110,7 @@ be back from + [地點/活動]
 - When will he be back?（他什麼時候會回來？ → 問他恢復「在這邊」狀態是什麼時候。）
 - He's back from the office.他從辦公室回來了
 
-## 移動動詞 + back
-「回頭、返回」或「走回原本的地方」
-- Go back.（走回頭路 / 你走過頭了）
-- Step back. 往後站
-- Turn back 回頭
-- You missed the turn. You need to go back.
-（你錯過轉彎了。你必須走回去。）
-- Walk back the way you came.
-（沿著你剛剛來的那條路走回去。）
-
-## go back + to 朝向/方向
-to 是朝向
-- I need to go back to work. 回去工作(work是抽象名詞，前面不加a 或 the)
-
-go back to 抽象名詞，回到某個狀態。
-- The kids need to go back to school.(孩子們該回學校上課了。 👉 指恢復學生的生活狀態)
-- He had to go back to prison.（他必須回監獄服刑了。）
-
-go back to the 地點
-- go back to the office.
 
 
-## go back home
-home 本身就有方向，是副詞
-- I need to go back home.
+
+

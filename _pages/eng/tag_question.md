@@ -58,7 +58,7 @@ keywords: english, tag question
 
 2. **語調往上揚（上升調 $\uparrow$）：**
 * 當你**真的不確定**、心裡有點懷疑、想跟對方確認時，語調要往上。
-* *These mugs aren't broken, **are they** $\uparrow$* （「這些杯子……沒破吧？（我不太確定）」）
+* *These mugs aren't broken, **are they** $\uparrow$* （「這些杯子...沒破吧？（我不太確定）」）
 
 
 

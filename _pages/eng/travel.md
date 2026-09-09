@@ -328,3 +328,15 @@ go 本身是「去」，但加上 on 之後（go on），常常用來表示「�
   - 我當時正在航行（過去進行式，強調過去某個時刻正在進行的動作）
 - Fly around the world：搭飛機環遊世界。
 - Travel around the world.不限交通工具
+
+-------------------------------
+## on a trip/ride/journey
+- On my ride.(在我搭車的過程中)
+- on a long journey.(長途旅行中)
+
+
+------------------------------
+旅遊相關單字
+- Pack your bags.打包你的行李
+- Pick up your luggage. 拿你的行李
+- Picu up your suitcase. 拿你的行李箱

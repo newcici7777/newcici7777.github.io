@@ -31,6 +31,10 @@ by myself，意思是「獨自地」、「靠自己」、「單獨一人」，�
 ## for myself 為自己
 - Pick a nice dress for yourself.（為你自己挑一件漂亮衣服。）
 
+## alone 自己一個人
+- I am afraid of hiking alone.（我害怕一個人健行——動名詞）
+- I am afraid to hike alone in the forest.
+
 ## one's own 名詞 (我自己的)
 在英文的表達習慣中，當我們說「某人有自己的時間/空間/房間」時，習慣加上 own 來強調那是屬於他個人自主支配的，不能直接說 her time。
 
@@ -44,52 +48,12 @@ own擁有屬於自己、能自由支配的東西（如時間、空間、車子�
 - on your own（靠你自己 / 獨自一人）
 - cook your own food（自己煮飯）
 
-## alone 自己一個人
-- I am afraid of hiking alone.（我害怕一個人健行——動名詞）
-- I am afraid to hike alone in the forest.
+## It’s good you have your own
+own 在這裡當作代名詞或形容詞，暗示「你自己的（東西/空間/風格/主張）」
+- It’s good you have your own.
+  - 原句: It’s good that you have your own 
+  **something**.（「你擁有你自己的...」這件事很好。）
 
---------
-
-這兩個都是英文中非常實用且道地的表達，我們來一一拆解它們的文法和意思：
-
----
-
-### 1. `be + by oneself` 的文法
-
-* **核心意思**：`by oneself` 
-* **文法結構**：
-* 
-
-
-
-回到你句子中的 **「I was not by myself」**，字面意思是「我不是自己一個人（我有伴 / 有別人陪）」。
-
----
-
-### 2. `after all` 是什麼意思？
-
-* **核心意思**：**「畢竟」、「終究」、「還是...了」**。
-* **常見用法**：
-1. **用於轉折或揭曉結果（符合對話情境）**：當事情的發展跟原本預期的或想像的不一樣，最後「居然」、「終究」是這樣時，常用來做結語。
-* *例句*：*I thought it would rain, but it was sunny **after all**.*（我本以為會下雨，結果**畢竟**還是出太陽了 / 原來還是晴天。）
-* *例句*：*He decided to come **after all**.*（他**終究**還是決定來了。）
-
-
-2. **用於提出合理解釋或「別忘了」的理由（畢竟）**：
-* *例句*：*Don't be too hard on him; he is a child, **after all**.*（別對他太嚴格，他**畢竟**是個孩子。）
-
-
-
-
-
----
-
-### 結合起來的整體意思
-
-在對話中：
-
-> *「I was not by myself **after all**。」*
-
-整句的意思是：「**原來**我**終究**不是一個人（我有聽到猴子的聲音，所以其實有伴 / 有活的東西陪我）。」
-
-這種用法在口語中非常道地，用來表達「原本以為如何，但結果其實...」的驚喜或轉折！
+- 房間/空間： It’s good you have your own (room).（你有自己的房間真好。）
+- 想法/意見： It’s good you have your own (opinion).（你有自己的主見真好。）
+- 步調/生活方式： It’s good you have your own (pace).（你有自己的步調真好。）

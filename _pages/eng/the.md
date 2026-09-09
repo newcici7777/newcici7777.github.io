@@ -138,7 +138,7 @@ a Country > the City > Town > the country > a village
 
 ### 6. 交通工具與通訊（當作「方式」時）
 
-當我們用 `by + 交通工具` 或 `by + 通訊方式` 表達「藉由……方式」時，中間不加冠詞。
+當我們用 `by + 交通工具` 或 `by + 通訊方式` 表達「藉由...方式」時，中間不加冠詞。
 
 * **by car**（坐車）：*I go to work **by car**.*（我開車去上班。）
 * **by bus**（坐公車）、**by plane**（坐飛機）
