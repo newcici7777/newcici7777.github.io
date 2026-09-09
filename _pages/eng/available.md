@@ -1,7 +1,7 @@
 ---
-title: available, in her free time
+title: available
 date: 2026-08-23
-keywords: english, available, in her free time
+keywords: english, available
 ---
 
 ## 有空房的、可用的(沒被佔用)、買得到的

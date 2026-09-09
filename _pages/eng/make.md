@@ -66,6 +66,10 @@ keywords: make
 （不要**惹我生氣**。 ➔ *angry 是形容詞*）
 * Cleaning the house **makes me tired**.
 （打掃房子**讓我好累**。 ➔ *tired 是形容詞*）
+- The news made her happy.（這則消息使她開心。）
+- Too much coffee makes me nervous.（喝太多咖啡會讓我緊張/神經緊繃。）
+- Please make your bed clean.（請把你的床整理乾淨。）
+  - clean 是形容詞
 
 ## Make + 人/東西 + 形容詞 (使... 怎樣)
 
@@ -76,16 +80,50 @@ keywords: make
 - Practice makes perfect.（熟能生巧 / 練習使人完美。 $\rightarrow$ perfect 形容練習的結果）
 - Learning English makes life interesting $\rightarrow$ 學習英文讓生活有趣）
 
-## make + 人 + 原形動詞 (要求某人做某事)
+## make + 人 + 原形動詞 + 受詞 (要求某人做某事)
 - My mom made me clean my room.（我媽逼我打掃房間。）
+  - 比較: Please make your bed clean(形容詞).請把你的床整理乾淨。
 - The funny video made everyone laugh.（這部搞笑影片讓每個人都笑了。）
+
+
+## make + 受詞 + 名詞 (Noun) 擔任
+用來指「選定、任命或使某人/某物成為某個身分或頭銜」。
+- The company made her manager.（公司升她擔任經理。）
+- Practice makes a master.（熟能生巧 / 練習造就大師。）
+
+
+## make + 受詞 + 被動V-ed 「讓東西被...」
+用來表達受詞「被...（呈現某種被動狀態）」。
+- I need to make my passport renewed.（我需要去把我的護照辦理換發/更新。）
+
+## make + 反身代名詞 + 被動V-ed 「讓自己被...」
+- make oneself understood (讓自己被了解 = 讓別人了解自己)
+  - He spoke in slow English to make himself understood.
+（他用緩慢的英文說話，好讓別人聽懂他的意思 / 讓自己被理解。）
+  - She used simple English to make herself understood **by the tourists**.她用簡單的英文，好讓自己被觀光客理解。
+    - by the tourists，清楚交代了「被誰理解」
+- make oneself known (讓自己被知道 = 讓別人知道自己)
+  - The new manager introduced himself to make himself known.
+（新經理自我介紹，好讓大家認識他。）
+- make oneself heard (讓自己被聽見 = 讓別人聽見自己的聲音)
+  - He spoke loudly to make himself heard.（他大聲說話以讓別人聽到他的聲音。）聲音被聽到
+- make one's voice heard（讓自己的聲音/意見被聽取)  
+  - She couldn't make her voice heard over the noise.（在噪音中，她無法讓自己的聲音被聽見。）
+- make oneself felt（讓別人感受到自己的存在/影響力）
+  - The cold wind made itself felt late at night. （深夜時，寒風讓人強烈感受到它的威力 → 形容天氣變得很冷。）
+- make oneself respected（讓自己受到尊重）
+  - You need to work hard to make yourself respected in this company. （你需要在這家公司努力工作，才能贏得別人的尊重。）
+- make oneself clear（把話講清楚、表明立場）
+  - I want to make myself clear: I will never accept this deal. （我想把話講清楚：我絕不接受這筆交易。）
+- make oneself comfortable（讓自己覺得舒適、放輕鬆）
+  - Take off your coat and make yourself comfortable. （脫掉外套，讓自己坐得舒服一點。）
+- make oneself at home（把自己當作自己家 → 隨便坐、不用客氣）
+  - Please make yourself at home while I make some coffee. （在我煮咖啡的時候，請把這裡當自己家一樣不用客氣。）
 
 
 ---------------------------------
 
 **「Make + 東西 (受詞) + 形容詞」** 的生活實用例句：
-
-### 10 個實用例句
 
 1. **Stretching before bed makes my body relaxed.**
 （睡前伸展能讓我的身體放鬆。）
@@ -108,10 +146,11 @@ keywords: make
 10. **Regular exercise makes your immune system strong.**
 （規律運動能讓你的免疫系統強健。）
 
----
+------------------------------
 
-### 💡 學習小撇步
+## make(建立/推出) + 受詞 + with 片語(形容詞)
+with片語，當作形容詞，後位修飾受詞。
 
-你可以發現，句中的**形容詞**（粗體字後方的單字，如 *relaxed, thirsty, active* 等）都是用來形容前面那個「東西／人（受詞）」的**狀態**喔！
-
-這 10 個句子有沒有哪一句特別吸引你或你想嘗試替換造句的呢？
+- I think they should **make hotels with toothpaste included**.我覺得他們應該要推出**有附牙膏的飯店**。
+  - make 「開創、推出、讓某種產品或服務出現」（等同 make a rule 訂定規則）。
+  - with toothpaste included 扮演的角色是受詞補語，用來補充說明前面的名詞（hotels）變成什麼狀態。

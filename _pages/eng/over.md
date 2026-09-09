@@ -31,5 +31,26 @@ keywords: english, over
   - *I need to **run over to** the convenience store quickly.*（我需要快速**跑去**便利商店一下。）
 
 ## 移動動詞 + over + for 目的 (過來做...什麼事)
-- Come over for dinner.（來我家吃晚餐。）
-- Come over for a chat.（來我家聊聊天。）
+- Come over for dinner.（過來我家吃晚餐。）
+- Come over for a chat.（過來我家聊聊天。）
+- Come over for a drink.（過來我家喝杯東西。）
+
+## over 超過
+- There are **over** three hundred people aboard this train. （這班火車上有三百多人。）
+- The city has over one million inhabitants. 這座城市有超過一百萬居民。  
+- There are over 50 competitors in the market. 市場上有超過五十個競爭者。
+- The meeting lasted over two hours. 會議持續了兩個多小時。 
+- Onion **overload**. 馬玲薯多到過量。
+- Is it possible for you to work **overtime** tonight?（你今天晚上有可能加班嗎？）overtime超出時間
+- The delivery is available for free if you spend **over** 1000 dollars. （如果你消費超過一千元，運費就是免費的。）
+
+## over 「在...的上方、跨過越過」
+- Walk over the bridge.（走過橋。）橋有高度
+
+## over 克服/壓過
+- over the noise 壓過噪音
+  - 現場的噪音（noise）就像一道障礙或音牆，而你的聲音必須「越過（over）」這道障礙
+  - He spoke in a loud voice to make himself heard over the noise.他用很大的聲音，才壓過噪音，讓自己被聽見。
+
+## Over time 隨著時間過去
+- Over time, significant savings can accrue from this plan. 隨著時間推移，這個計劃可以累積可觀的節省。  

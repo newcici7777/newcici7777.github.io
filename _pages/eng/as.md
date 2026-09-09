@@ -236,6 +236,9 @@ as 通常放在動詞後面
 
 ### 把A當作B
 
+#### elected 沒有as
+They elected him president.（他們選他當總統。）
+
 #### 1. `Choose / Select`（選擇...擔任...）
 
 * **例句**：They **chose** him **as** their leader.

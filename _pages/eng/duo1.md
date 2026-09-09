@@ -194,20 +194,7 @@ want + 人 + to + V原形動詞 (要求某人做某事)
 ## hit 撞車
 - A car hit that tree yesterday.一辆车昨天撞了那棵树。
 
-## keep
-- You can keep this ring. 你可以保留这戒指
-- You can keep that black suit.你可以保留那套黑色的西装。
-- Grandpa kept that old suit for thirty
-years.爷爷保留那套旧西装二十年了。
 
-### keep + 東西 + 形容詞 (保持...狀態) 
-* Regular exercise **keeps your body healthy**.（規律運動能**保持身體健康**。）
-
-## let 人(受詞) + 原形動詞V (讓某人做某事)
-- Let's play this board game.咱们玩这个桌游吧！
-- Let's go to **the** movie**s**!咱们去看电影吧！
-- Can we see a movie tonight?
-- Let's go to a museum now.
 
 ## share
 - Emma shares an office with her colleague.艾玛跟她的同事一起
@@ -237,8 +224,6 @@ years.爷爷保留那套旧西装二十年了。
 - Do you know the price of these carrots?你知道这些胡萝卜的价格吗？
 - It was a great price, so I got four!
 
-## end(動詞) 結束
-- Did the concert end late yesterday?昨天的音乐会结束得很晚吗？
 
 
 ## tips for/on(關於) 訣竅,建議
@@ -262,6 +247,12 @@ leave a tip
 - **We left a generous tip for the waiter.**中文：我們給了服務生很大方的小費（服務很好給很多的意思）。
 
 
+## clean(形容詞/動詞)
+### clean(形容詞)
+- Are your teeth clean? 你的牙齒是乾淨嗎？
+
+### clean(動詞)
+- Please clean your room.把房間整理乾淨。
 
 
 ## 其它疑惑

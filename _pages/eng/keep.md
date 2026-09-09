@@ -3,6 +3,20 @@ title: keep
 date: 2026-09-08
 keywords: English, keep
 ---
+## keep
+- You can keep this ring. 你可以保留这戒指
+- You can keep that black suit.你可以保留那套黑色的西装。
+- Grandpa kept that old suit for thirty
+years.爷爷保留那套旧西装二十年了。
+
+### keep + 東西 + 形容詞 (保持...狀態) 
+* Regular exercise **keeps your body healthy**.（規律運動能**保持身體健康**。）
+
+## let 人(受詞) + 原形動詞V (讓某人做某事)
+- Let's play this board game.咱们玩这个桌游吧！
+- Let's go to **the** movie**s**!咱们去看电影吧！
+- Can we see a movie tonight?
+- Let's go to a museum now.
 
 這是一個非常實用的文法與語感問題！雖然 `stay` 和 `keep` 中文常被翻譯成「保持」或「待在」，但它們在使用時有很明確的區分。
 

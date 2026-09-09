@@ -16,6 +16,7 @@ keywords: English,
 |讓|let|let|let|
 |讀|read|read|read|
 |切|cut|cut|cut|
+|受傷|hurt|hurt|hurt|
 
 ## 字尾d,e 變t 
 
@@ -123,6 +124,8 @@ keywords: English,
 |告訴|tell|told|told|
 |吃|eat|ate|eaten|
 |做|do|did|done|
+|聽見|hear|heard|heard|
+|了解|understand|understood|understood|
 
 ## 現在進行式不一樣
 

@@ -50,6 +50,10 @@ head out 更精確的定義是：離開你「目前暫時停留、待著」的�
 - Let’s head out of the house before it gets dark.（我們在天黑前離開房子出發吧。）
 - He just headed out of the building.（他剛才正從那棟大樓走出來/離開。）
 
+## head back to + 地點 (返回)
+- We should head back to the hotel before it rains.（在下雨前，我們該回飯店了。）
+
+
 --------------------------
 其它出發
 
