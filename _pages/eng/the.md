@@ -5,8 +5,6 @@ keywords: english, the
 ---
 
 
---------------
-
 ### a Country（國家）vs The Country（鄉下、農村地區）
 
 a Country > the City > Town > the country > a village 
