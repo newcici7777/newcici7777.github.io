@@ -202,6 +202,16 @@ return 的詞性是及物動詞（Transitive Verb）。
 - He cooked rice last night, and I am cooking pork now.他昨晚煮了米饭，我现在在煮猪肉
 
 
+## Serve + 形容詞
+ serve 是動詞（意指「上菜、供應」），但它後面直接接形容詞時（這道菜被端上桌時）它的狀態是...的」。
+
+- Serve hot. 趁熱吃 / 熱熱地上桌。
+  - 例句：Stir-fry the vegetables and serve hot.（把蔬菜快炒一下，趁熱上桌。）
+- Serve cold. 冰涼著吃 / 冷冷地上桌。
+  - Keep the salad in the fridge before you serve cold.（把沙拉放在冰箱裡，然後再冰冰涼涼地端出來吃。）
+- Serve warm.溫溫地吃。
+  - The pie is best serve warm with a little custard.（這款派最好是溫溫地吃，配一點蛋奶醬。）
+
 
 
 
