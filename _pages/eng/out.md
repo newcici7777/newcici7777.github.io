@@ -69,4 +69,9 @@ keywords: english, out
 * *Please **step in to** the conference room.*（請走進會議室裡。）
 
 
+---------------------------------
 
+## out 熄滅
+- Please blow out the candles on the cake.（請把蛋糕上的蠟燭吹熄。── out是熄滅）
+- The lights went out.（燈熄滅（停電）了。）
+- The power went out last night.（昨晚停電了。）

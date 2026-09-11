@@ -26,33 +26,44 @@ keywords: English,
 |建造|build|built|built|
 |走失|lose|lost|lost|
 
-## 字尾本身是t，中間有2個e，刪掉1個e
+## 中間有2個e，刪掉1個e
 
 |中文|現在式|過去式|過去分詞|
 |:------|:--------|:---------|:-------|
 |見面|meet|met|met|
+|快速前行|speed|sped|sped|
 
 ## 中間有2個e，刪掉1個e，字尾加t
 
 |中文|現在式|過去式|過去分詞|
 |:------|:--------|:---------|:-------|
 |保持|keep|kept|kept|
-|睡覺|sleep|slept|slept|
 |感覺|feel|felt|felt|
+|睡覺|sleep|slept|slept|
 
 
-## i 變 a (母音互換原則)
+## 母音互換原則
+
+i變a
 
 |中文|現在式|過去式|過去分詞|
 |:------|:--------|:---------|:-------|
 |坐|sit|sat|sat|
 
 
-## i 變 o
+i 變 o
 
 |中文|現在式|過去式|過去分詞|
 |:------|:--------|:---------|:-------|
 |贏|win|won|won|
+|發亮|shine|shone [ʃɒn]|shone [ʃɒn]|
+
+a變o
+
+|中文|現在式|過去式|過去分詞|
+|:------|:--------|:---------|:-------|
+|醒來|wake|woke|waken|
+
 
 ## o、a 變成 e，字尾是ew
 
@@ -61,7 +72,8 @@ keywords: English,
 |知道|know|knew|knew|
 |畫|draw|drew|drew|
 |飛|fly |flew|flown|
-
+|吹|blow|blew|blown|
+|成長|grow|grew|grown|
 
 - fly現在式第三人稱:flies
 - fly現在進行式:flying (y要保留)
@@ -71,8 +83,6 @@ keywords: English,
 |中文|現在式|過去式|過去分詞|
 |:------|:--------|:---------|:-------|
 |尋找|seek|sought|sought|
-|買|buy|bought|bought|
-|帶|bring|brought|brouth|
 |想|think|thought|thought|
 |打架|fight|fought|fought|
 |抓|catch|caught|caught|
@@ -126,6 +136,16 @@ keywords: English,
 |做|do|did|done|
 |聽見|hear|heard|heard|
 |了解|understand|understood|understood|
+|隱藏|hide|hid|hidden|
+
+## 過去式/過去分詞相像
+
+|中文|現在式|過去式|過去分詞|
+|:------|:--------|:---------|:-------|
+|卡住/黏住|stick |stuck [stʌk]|stuck [stʌk]|
+|擊打/罷工|strike [straɪk]|struck [strʌk]| struck [strʌk]|
+|買|buy|bought|bought|
+|帶|bring|brought|brouth|
 
 ## 現在進行式不一樣
 

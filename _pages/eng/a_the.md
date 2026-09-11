@@ -20,6 +20,10 @@ keywords: English, a The This These That Those
 - Do you teach English at **a** university.你在一个大学教英语吗？
 - They work together at **a** bank.他们一起在一家银行工作。
 
+## a 泛指通則、任何一個
+- Always unplug electronics during a thunderstorm.
+  - 意思：在任何一場雷雨期間（泛指通則、給建議時），都要把電器拔掉。
+
 ----------------------------
 ## a + 單數的可數名詞
 
@@ -45,11 +49,17 @@ keywords: English, a The This These That Those
 
 - She moved to the city where her parents live.（她搬去了她父母住的那座城市。）
 
-## the 特別指定
-the是特別指定，不是任何一個。
+## the 這個/那個
+the是指這個 或 那個，不是任何一個。
 
 - Welcome aboard **the** flight! （歡迎來到**這個**航班上！）
-  - 不是隨便一台航班，特別指定就是這個航班
+  - 不是任何一台航班，就是「這個」航班
+
+- through the tunnel（穿過隧道 ── tunnel 是可數名詞）
+  - 有the是「這個」的隧道
+  - 沒有the，代表是全世界的任何一個隧道
+- through hard work（透過努力）
+  - 沒有the: work 是不可數名詞，努力不能數，抽象名詞
 
 ## the 全世界只有一個
 網路前面固定用the，這世界上「只有一個」網路，所以用the
@@ -57,50 +67,78 @@ the是特別指定，不是任何一個。
 
 ----------------------------
 ## 單數/複數可數名詞: 加the/不加the
-- 不加the + 單數可數: 泛指任意一個/任何一個，沒特別指定
-- 不加the + 複數可數s: **整體/所有的**
-- 加the: 特別指定
+- 單數可數，不加the  : 泛指任意一個/任何一個，沒特別指定是那一個
+- 複數可數s，不加the : 泛指世界上**所有的**，沒特別指定是那一群
+- 加the: 「這個」或「那個」，「這群」或「那群」，特別指定那一個/一群。
 
 ### crowd(單數可數名詞) **一群**人 [/kraʊd/] 
 - 用 a（一大群人）：
   - a + 單數可數名詞(**泛指任意**,任何一群) 
   - A crowd was waiting outside.（**有一群人**正在外面等候。泛指**任何一群**）
   - I hate visiting **a** crowded market.（我討厭逛那種擁擠的市場——泛指**任何一個擁擠的市場**。）
-- 用 the（特別指定那一群人）：
-  - **The** crowd started to cheer.（**那一群人**開始歡呼。）
+- 用 the（這一群人）：
+  - **The** crowd started to cheer.（**這一群人**開始歡呼。）
 
-### crowd**s**(複數可數名詞) 人群**們**、**人潮** 通常不加冠詞
+### crowd**S**(複數可數名詞) 人群**們**、**人潮** 通常不加冠詞
 - 複數可數名詞 + **S**
-- **不加the** (**泛指整體/所有的**)
-  - I don't like big crowd**s**.（我討厭超多**人潮**。—— 泛指**所有**擁擠的群體）
+- **不加the** (**泛指世界上所有的**)
+  - I don't like big crowd**s**.（我討厭超多**人潮**。—— 泛指**所有的**擁擠的群體）
   - There were huge crowd**s** at the concert.（演唱會現場有巨大的**人潮**。）
-  - Crowd**s** gathered in the square.廣場上聚集了許多**人潮**。—— 這裡的 crowds 是複數）
-- 加了 the（特定）：
-  - **The** crowd**s** were loud.（**那群特定**的人潮很吵。）
+  - Crowd**s** gathered in the square.廣場上聚集了**人潮**。）
+- 加了 the（這群 或 那群）：
+  - **The** crowd**s** were loud.（**這群/那群**的人潮很吵。）
 
 ------------------------------------------
+## 抽象名詞作為「狀態、環境」，**不加**the,a，**後面不加S**
+抽象名詞表達抽象的「狀態、環境」時，會變成零冠詞（Zero article），不加 a 也不加 the，表示進入某種狀態
 
-### 抽象名詞作為「概念/過程」，**不加**冠詞，**後面不加S**
+- in nature (nature 抽象概念不加 the。）)
+  - He likes to spend his weekends in nature.（他喜歡週末在大自然中度過)
+- in traffic(抽象名詞前面沒有the)
+  - traffic 不是指「眼前那條特定馬路上的車流」，而是指一種普遍的「身處交通擁擠的狀態中」。
+  - I am stuck in traffic.（我被困在車陣中了）
+  - I am stuck in heavy traffic.(我被困在嚴重車陣中)
+  - I got stuck in heavy traffic for over an hour. （我遇到大塞車，卡了一個多小時。）
+- in silence（不加 the，也不加 a）在安靜中、默默地、不發一語地
+  - They walked home in silence.（他們默默無語地走回家。）
+  - The whole town was in silence after the storm. （暴風雨過後，整個小鎮陷入一片寂靜。）
+  - in dead silence（在一片死寂中）
+  - in total silence（在完全寂靜中）
+  - in complete silence（在完全寂靜中）
+    - We listened to the speech in complete silence.（我們在一片死寂中聽演講——這裡即使加了形容詞 complete，一樣不加冠詞。）
+
+
+其它表達狀態的抽象名詞，不加the跟a
+- in traffic（在車陣中／塞車中）
+- in bed（在床上／就寢中——不是指那張特定的木頭床）
+- in prison（在獄中／服刑中）
+- in school（在學校／求學中）
+- on duty（值勤中）
+
+-------------------------
+
+## 抽象名詞作為「概念/過程」，**不加**the,a，**後面不加S**
 抽象名詞是不可數：像 experience、work、information、advice 等，沒有具體形體，所以**沒辦法數**，自然也**不會加 a**，也**不能加S**。
 
 - 不加the + 抽象名詞: **整體概念**、**所有的**、**過程**
 
-抽象概念或廣義通稱：當你不是在指「特定的某一項工作或某一個經驗」，而是在講「努力」或「經驗」這件事本身時。
+抽象概念或廣義通稱：當你不是在指「特定某一個經驗」，而是在講「經驗」這件事本身時。
 
-- 加了 the（特指某個特定的經驗或努力）：
-  - The experience I gained was useful.（我獲得的**那段特定**經驗很有用。）
+
+- 加了 the（特指某個特定的經驗）：
+  - The experience I gained was useful.（我獲得的**那段**經驗很有用。）
 - 不加 the（泛指抽象的經驗、努力等）：
   - Success comes through hard work.（成功來自於努力。—— hard work 不可數，前面不加 the）
-  - She learned a lot through experience.（她透過經驗學到了很多。—— experience 在這裡當抽象不可數名詞，不加 the）
+  - She learned a lot through experience.（她透過經驗學到了很多。—— experience 在這裡當抽象名詞，不加 the）
 
-- experience (經驗，不可數名詞) 指的是整體經驗
+- experience (經驗，抽象名詞) 指的是整體經驗
   - experience 指的是「經歷的總和、經驗（抽象概念）」時，它是不可數的，所以前面不加 a，也不加s。
   - She gained valuable knowledge through experience. （她透過**所有的**經驗獲得了寶貴的知識。）
 - trial and error (反覆試錯，不可數名詞) 
   - trial(名詞) 試驗
   - He learned the skill through trial and error. （他透過反覆試錯**過程**學會了這項技能。）
-- hard work (努力，不可數名詞)
-  - Work 當作「工作、勞動」時是不可數名詞，前面加上形容詞 hard 變成 hard work，一樣是抽象概念。
+- hard work (努力，抽象名詞)
+  - Work 當作「工作、勞動」時是抽象名詞，前面加上形容詞 hard 變成 hard work，一樣是抽象概念。
   - Success comes through hard work. （成功來自於努力。）
 
 ### 抽象名詞 有冠詞**a** = 具體的**某一次**
@@ -109,14 +147,14 @@ the是特別指定，不是任何一個。
 - 無冠詞（抽象概念）：
   - through experience（透過**所有的/整體**經驗）
 - 有冠詞（具體的一次經歷）：
-  - through an unforgettable experience（透過**一次**難忘的經歷）
+  - through **an** unforgettable experience（透過**一次**難忘的經歷）
 
 ### 抽象名詞加the，指「**特定的**一次」
 - 加了 the（特指某個特定的經驗或努力）：
   - **The** experience I gained was useful.（我獲得的**那段**經驗很有用。這裡不是所有經驗，而是**那段特定**經驗）
 - 不加 the（泛指抽象的經驗、努力、空氣等）：
-  - Success comes through hard work.（成功來自於努力。—— hard work 不可數，前面不加 the）
-  - She learned a lot through experience.（她透過**她的所有經驗**學到了很多。—— experience 在這裡當抽象不可數名詞，不加 the）
+  - Success comes through hard work.（成功來自於努力。—— hard work 抽象名詞，前面不加 the）
+  - She learned a lot through experience.（她透過**她的整體經驗**學到了很多。—— experience 在這裡當抽象名詞，不加 the）
 
 ### 總結
 
@@ -124,7 +162,7 @@ the是特別指定，不是任何一個。
 - 只是在講「整體、泛指、通稱」：
   - 如果是單數可數 → 要加 a / an（例如：a market）。
   - 如果是複數或不可數 → 什麼都不加（例如：crowds、hard work、experience）。
-
+- 抽象名詞，不加the、a，也不加S。
 
 ------------------------------
 
@@ -160,10 +198,10 @@ the 可以是單數、也可以是複數，the 可放在不可數名詞前。
 - They are on **the** plane now. （他們現在在飛機上。）
   - He is on **a long-haul** flight.（他在一個長途航班上。）
 
-## 前面有所有格就沒有the、a
+------------------------
+## 所有格就沒有the、a
 
-- The kids are on the bikes.
-  - 加所有格：The kids are on their bikes.（孩子們在騎腳踏車。）
+- The kids are on their bikes.（孩子們在騎腳踏車。）
 
 -----------------------------
 ## 比較級 前面用a

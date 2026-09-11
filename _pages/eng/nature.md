@@ -1,17 +1,38 @@
 ---
-title: The wather, The moutains, The air
+title: in the 大自然, the 空氣
 date: 2026-09-07
-keywords: english, wather
+keywords: english, nature
 ---
-## the 大自然
+
+## in nature (抽象概念不加 the)
+- He likes to spend his weekends in nature. （他喜歡週末在大自然中度過——註：nature 抽象概念不加 the。）
+
+## in the 大自然
 大自然固定前面加the。
 
-## 特例 a 與 the
+- In the sea / In the ocean（在大海中）
+  - Fish live in the sea.（魚住在海裡。）
+- In the water（在水中）
+  - The kids are splashing in the water.（孩子們在水中濺水玩耍。）
+- In the sky（在天空中）
+  - Look at the birds in the sky.（看天空中的鳥。）
+- In the air（在空氣中 / 氣氛中）
+  - You can feel the excitement in the air.（你可以感受到那股興奮的氣氛／空氣瀰漫在四周。）
+4. 森林與大自然
+- In the woods / In the forest（在森林裡）
+  - We took a walk in the woods.（我們在森林裡散步。）
+- In nature（在大自然中——這裡不用加 the，是抽象概念）
+  - It's good to spend time in nature.（花時間待在大自然中很好。）
+- in the dark 在黑暗中
+  - I can't see anything in the dark.（我在黑暗中什麼也看不見。）
+  * *I lost **my way** in the dark.*我在黑暗中**迷路**了。
+  - The train sped through the tunnel in the dark. （火車在黑暗中高速穿過隧道。）
+  - We lost our way in the dark forest. （我們在黑暗的森林裡迷失了方向。）
+  - 隱申: keep someone in the dark（把某人蒙在鼓裡、不讓人知道真相）。
+- in the desert 沙漠
+  - Oh, is this the desert? 
 
-- in a forest = 某處的「一座」森林（第一次提及、或泛指某座森林）。第二次提到用 in the forest.
-- in the woods = 把大自然或樹林當作一個整體的環境、場所（不需要指明哪一座，是固定加the）。
-
-## There be 大自然
+## There is/are 大自然
 大自然固定用There be
 - There are many rivers in Taiwan. （台灣有許多河流。）
 
@@ -19,11 +40,7 @@ keywords: english, wather
 - The air **in** the desert is very dry.在沙漠里的空气菲常千燥。
 - The air is colder at the top of a hill.在山丘顶上的空气更冷。
 
-## the desert 沙漠
-- Oh, is this the desert? 
-
-
-## the mountain**s**
+## in the mountain**s**
 為什麼 mountain 要加 s 變成 mountains？  
 大自然的山通常不是孤立的一座山，而是連綿起伏的山脈系統。因此，英文習慣用複數的 the mountains 來統稱「山區」、「群山」。  
 
@@ -43,13 +60,13 @@ river（河流） 加 s 變成 rivers，通常是最直觀的「複數名詞」�
 - There are many rivers in Taiwan. （台灣有許多河流。）
 - We love exploring nature, including forests, lakes, and rivers. （我們喜歡探索大自然，包括森林、湖泊和河流。）
 
-講其中某一條特定的河，前面通常會加上定冠詞 the，而且用單數形：
-- We went swimming in the river. （我們去那條河游泳了。）
+講其中某一條特定的河，前面通常會加上**定冠詞 the**，而且用**單數形**：
+- We went swimming **in the river**. （我們去那條河游泳了。）
 
 ### 自然景觀複數：
-- in the fields（在田野裡）
-- rivers（河流們）
-- lakes（湖泊們）
+- in the field**s**（在田野裡）
+- river**s**（河流們）
+- lake**s**（湖泊們）
 
 ## in **a** forest 在森林裡
 森林是可數名詞，前面加a，大部分大自然都是用the，但這邊不一樣，第一次提到可以用a，第二次再提到可以用the。
@@ -60,9 +77,21 @@ river（河流） 加 s 變成 rivers，通常是最直觀的「複數名詞」�
 - Once I got lost in **a** forest in Brazil.有一次我在巴西的森林裡迷路了
 - I took a walk in **a** beautiful forest in Australia.我在澳洲一個美麗的森林裡散步。
 
+### 特例 a 與 the
+
+- in a forest = 某處的「一座」森林（第一次提及、或泛指某座森林）。第二次提到用 in the forest.
+- in the woods = 把大自然或樹林當作一個整體的環境、場所（不需要指明哪一座，是固定加the）。
+
+
 ## in **the** wood**s** 在樹林裡
 大自然通常前面加冠詞the。
 woods（森林、樹林）這個詞經常用**複數**形式來表示一片樹林。在英文口語中，「in the woods」是一個非常道地的固定片語，意思就是「在樹林裡 」。
+
+## 相關例句
+- We could hear the river flowing in the valley. （我們可以聽到河流在山谷中流淌的聲音。）
+- Wild animals live freely in the jungle. （野生動物在叢林中自由自在地生活。）
+- The camp was set up deep in the mountains. （營地搭在群山深處。）
+- Fish were swimming around in the clear water. (魚兒在清澈的水中四處游動。)
 
 
 

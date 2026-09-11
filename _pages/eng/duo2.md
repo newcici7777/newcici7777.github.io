@@ -190,9 +190,20 @@ return 的詞性是及物動詞（Transitive Verb）。
 ## catch 抓
 - And I can't catch any fish!
 
+
+## crawl [krɔːl] 爬進爬出
+- The cat crawled through a small hole in the fence. （貓咪穿過了柵欄上的一個小洞——不是特定的某個洞，就是其中一個洞。）
+- to crawl in/out 爬進／爬出
+- to crawl out from under sth. 從某物下面爬出來
+
+
 ## wash the dish**es** 洗碗 cook煮
 - Every Saturday, he cooks dinner and I wash the dishes.每周六，他煮晚饭我洗碗。
 - He cooked rice last night, and I am cooking pork now.他昨晚煮了米饭，我现在在煮猪肉
+
+
+
+
 
 ## 無法分類
 - Ben is angry at us.
