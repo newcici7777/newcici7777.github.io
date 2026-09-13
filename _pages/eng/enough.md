@@ -15,3 +15,8 @@ enough 是形容詞（用來修飾名詞），它的位置就會回到名詞的�
 
 - I don't have enough money.（我沒有足夠的錢——money 是名詞，enough 放前面）
 - Do you have enough time?（你有足夠的時間嗎？）
+
+## soon enough
+- soon：不久、快要。
+- enough：在這裡是用來加強語氣，表示「時間已經足夠近了」或「這一天很快就會到來」。
+  - You will be a man soon enough. 不久之後，你就會成為一個男人了

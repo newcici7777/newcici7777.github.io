@@ -50,13 +50,13 @@ along為介系詞，後面一定要接名詞，表示「沿著...（一條線狀
 - Read the book, and I will explain as we go along. （讀這本書吧，我們一邊看我會一邊為你講解。）
 
 
-
-
 ## along(介) 途中、過程、進展
 - along the way 在旅途中、沿途
   - We stopped along the way.我們沿途停了下來
 - along the journey 旅途中
   - She kept smiling along the journey despite the rain. （儘管下著雨，她在整趟旅程中依然保持微笑。）
+  - I can offer you three times along your journey.我可以在你這趟旅程中，提供你三次機會
+    - along your journey 在你的旅程之中
 
 ## along(介) 過程、進展
 - along the way 過程  

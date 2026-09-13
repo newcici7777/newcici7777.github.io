@@ -34,6 +34,7 @@ Serve immediately.（請立刻端上桌享用。）
 ```
 serve as + 角色／功能
 ```
+- Serve only as a guideline.作為指引
 - A low test score should serve as a guideline.
 （低分應該發揮...的功能，作為一個參考指引。）
 - This sofa can serve as a bed for guests.

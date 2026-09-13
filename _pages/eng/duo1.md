@@ -206,9 +206,22 @@ want + 人 + to + V原形動詞 (要求某人做某事)
 - I like baking with my grandma.我喜欢和我的奶奶一起烘焙。
 - can you bake a cake?你可以烤一个蛋糕吗？
 
-## perfect for 適合
+-------------------------
+## perfect(形容詞) for + 人/名詞/Ving (適合)
 - A sunny day is perfect for a walk.（晴天非常適合散步）
 - Carl is perfect for the job!
+- Double-decker buses are perfect for sightseeing in London.雙層巴士非常適合在倫敦觀光。
+- This sunny and cool weather is perfect for a picnic at the park.這種晴朗又涼爽的天氣非常適合去公園野餐。
+
+## Perfect to + 原形動詞
+適合（去做某件事）。
+- The weather today is perfect to go out for a walk.今天的氣候非常適合出去散步。
+
+## Perfect for someone to + 原形動詞 (適合給某人做某事)
+- This quiet café is perfect for me to focus on work.
+中文： 這間安靜的咖啡廳對我來說非常適合用來專心工作。
+
+--------------------
 
 ## That's all right 沒關係
 - That's all right, how about next week?没关系，下周呢？
@@ -253,6 +266,16 @@ leave a tip
 
 ### clean(動詞)
 - Please clean your room.把房間整理乾淨。
+
+
+## Decker 層
+Deck 當名詞時，意思是「甲板」（船的甲板）或是「層、樓層」（巴士或房屋的層數），加上 -er 變成 Decker。
+
+當我們把數字（或表達數量詞）加上 -decker時，它就變成了一個複合形容詞或名詞，用來形容「有幾層樓的載具或物品」。
+- Single-decker：單層巴士
+- Double-decker：雙層巴士
+  - In London, we have double-decker buses.在我們倫敦，我們有雙層巴士喔！
+- Triple-decker sandwich：三層總匯三明治（夾了三片吐司、兩層餡料的三明治）。
 
 
 ## 其它疑惑

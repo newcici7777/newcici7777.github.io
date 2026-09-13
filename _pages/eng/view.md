@@ -1,14 +1,29 @@
 ---
-title: Sight 古蹟, scenery風景 
+title: sightseeing, Sight 古蹟, scenery風景 
 date: 2026-09-05
 keywords: english, ride
 ---
+## sightseeing(名詞) /go sightseeing (動詞片語)
+sightseeing（名詞）和 go sightseeing（動詞片語）雖然都跟「觀光」有關，但它們在詞性、用法以及在句子裡扮演的角色上有很大的不同。
 
-這真的是一題大魔王級的字彙辨析！這五個詞在中文裡常常通通被翻譯成「景點」或「風景」，但在英文中，它們的**範圍大小、是由大自然還是人造的、以及看的人站在什麼角度**，有著非常精細的區分。
+### Sightseeing（單獨的「觀光」名詞）
+詞性： 不可數名詞（Noun）。
 
-我們用最直覺的「畫面與範圍」來把它們一次釐清：
+- Double-decker buses are perfect for sightseeing in London.雙層巴士非常適合在倫敦觀光。
 
----
+- **do** sightseeing 進行觀光
+  - We did some sightseeing in London.（我們在倫敦觀光了一下。）
+- enjoy sightseeing 享受觀光
+- sightseeing bus（觀光巴士）
+- sightseeing spot（觀光景點）
+
+### Go sightseeing 去觀光的動詞片語
+詞性： 動詞片語（Go + V-ing 結構）。  
+表示「去從事某項休閒或戶外活動」
+
+- If you want to go sightseeing, you should take a bus.（如果你想去觀光，你應該搭公車。）
+
+-----------------------------------
 
 ### 1. Attraction (大景點、知名地標、吸引人的去處)
 
@@ -27,12 +42,17 @@ keywords: english, ride
 
 ---
 
-### 3. Sight**s** (風景、名勝古蹟、看的到的景象)
+### 3. Sight**s** (名勝古蹟)
+- sight單數 (視力、眼前的景象)
+- sight**s** 名勝古蹟
 
-* **核心意象：** 當它用複數 *sights* 時，通常指一個城市裡「值得一看的名勝古蹟」。
-* **範圍：** 中等偏大。
-* **例句：** *We spent the afternoon taking in the **sights** of Rome.*（我們花了一個下午欣賞羅馬的名勝古蹟。）
-* *(回顧一下之前學過的：我們常說 "go **sightseeing**"（去觀光），就是從這個字衍生來的！)*
+- see the sight**s**（參觀名勝古蹟)
+- We spent the afternoon **taking in** the sight**s** of Rome.（我們花了一個下午欣賞羅馬的名勝古蹟。）
+  - take in 吸收/盡收眼底
+
+
+
+- Sight（景象／風景） + Seeing（看見） → 組合起來變成 sightseeing（看風景的活動 → 觀光）。
 
 ---
 
@@ -44,11 +64,20 @@ keywords: english, ride
 
 ---
 
-### 5. Scenery(名詞) (大自然的風光、大片風景)
+### 5. Scenery(不可數) (大自然的風光、大片風景)
+**不可數名詞**！專門指大自然、鄉村、山水等廣闊的戶外自然景致（例如高山、森林、海岸線）。
+* I love the beautiful **scenery** along the mountain road.（我喜歡沿著山路那美麗的自然風光——就是我們一開始討論的句子！）
 
-* **核心意象：** 不可數名詞！專門指**大自然、鄉村、山水等廣闊的戶外自然景致**（例如高山、森林、海岸線）。
-* **範圍：** 範圍最大、最宏觀。
-* **例句：** *I love the beautiful **scenery** along the mountain road.*（我喜歡沿著山路那美麗的自然風光——就是我們一開始討論的句子！）
+### 6. Scene（場景、畫面、事故現場）
+可數名詞（複數是 scenes），它的範圍比 scenery 小得多，通常指「眼睛看到的一個特定畫面」、「電影或戲劇裡的一幕」，或是「事件發生的現場」（帶有動態或故事性）。
+
+- 電影／戲劇的一幕： 
+  - This is my favorite scene in the movie.（這是我在這部電影中最喜歡的一幕。）
+- 事件或事故現場： 
+  - Police arrived at the scene of the accident quickly.（警察迅速趕到事故現場。）
+- 眼前的某個畫面／景象： 
+  - The sunset created a romantic scene.（夕陽營造出了一個浪漫的畫面。）
+
 
 ---
 

@@ -30,12 +30,24 @@ keywords: english, over
   - *The dog **ran over to** its owner.*（那隻狗**跑過去**它主人那裡。）
   - *I need to **run over to** the convenience store quickly.*（我需要快速**跑去**便利商店一下。）
 
-## 移動動詞 + over + for 目的 (過來做...什麼事)
+## pass 東西 over to 從一端到另一端、傳過去
+- Can you pass the salt over to me?（你可以把鹽巴遞過來給我嗎？——從你那端傳到我這端）
+- Can you pass the menu over to her? （你可以把菜單遞給她嗎？）
+交棒、把責任或控制權轉移給別人
+- Let me pass the phone over to John. （我把電話轉給約翰聽。）
+
+## over 跨過越過
+- He jumped over the fence.（他跳過了柵欄。）
+- We walked over the bridge.（我們走過了橋——橫跨橋的表面到對岸。）
+
+## come over + for 目的 (過來做...什麼事)
 - Come over for dinner.（過來我家吃晚餐。）
 - Come over for a chat.（過來我家聊聊天。）
 - Come over for a drink.（過來我家喝杯東西。）
 - Do you want to come over to my house for dinner tonight? （你今晚想要來我家吃晚餐嗎？）
 - Why don't you come over and sit here? （你怎麼不過來這裡坐？）
+
+------------------
 
 ## over 超過 (= more than)
 - I've known him for over ten years.（我認識他超過十年了。）
@@ -52,9 +64,7 @@ keywords: english, over
 - The cost is over one hundred dollars.（這費用超過一百元。）
 - The delivery is available for free if you spend **over** 1000 dollars. （如果你消費超過一千元，運費就是免費的。）
 
-## over 跨過越過
-- He jumped over the fence.（他跳過了柵欄。）
-- We walked over the bridge.（我們走過了橋——橫跨橋的表面到對岸。）
+----------------
 
 ## over 在...的上方
 空間上的「在...正上方」（不接觸），某個物體在另一個物體的上方，通常沒有接觸到（如果是「有接觸的表面」則用 on）。
@@ -67,39 +77,55 @@ keywords: english, over
 - Put a blanket over the baby.（幫寶寶蓋上被子。）
 - Clouds are gathering over the mountains.（雲層正在群山上空聚集／籠罩著。）
 
+
 ## over 遍佈
+- 1.We searched over the whole town for the missing cat.
+（我們在整座城鎮的各個地方找那隻失蹤的貓——像是在地圖上到處搜查。）
+- 2.Rumors spread quickly over the company.
+（謠言在公司裡各處迅速傳開——像波浪一樣散布到各個部門。）
+- 3.Fallen leaves were scattered over the lawn.
+（落葉散落在草皮的各個表面上。）
+- 4.She has fans over the world.
+（她在全世界各地都有粉絲——常用 all over 強調範圍廣闊。）
+
 - All over 到處、遍及
   - travel all over the world. 環遊全世界。
 
+-----------------------------
+
 ## over 結束
+- Over.對講機通話結束
 - It's over.（結束了)
 - The meeting is over.（會議結束了。）
 - Winter is finally over.（冬天終於結束了。）
 - The exam is finally over.（考試終於結束了。）
 - Our relationship is over.（我們的關係結束了／分手了。）
 
-## over 完成
-
-
 # Over and over 一遍又一遍
 Over and over (again)：一次又一次、不斷地
 - practice over and over.練習了一遍又一遍
 
-## over （在喧鬧聲中、壓過噪音）
-- over the noise 壓過噪音
-  - 現場的噪音（noise）就像一道障礙或音牆，而你的聲音必須「越過（over）」這道障礙
-  - He spoke in a loud voice to make himself heard over the noise.他用很大的聲音，才壓過噪音，讓自己被聽見。
-- I had to shout over the noise of the traffic. （我必須大喊，才能蓋過車陣的噪音被聽到。）
-- We could hear music playing over the noise of the party. （我們在派對的喧鬧聲中，隱約聽見了音樂聲。）
+-----------------------------
 
-## Overcome（克服、戰勝）
-- 拆解：over（跨越、超越）+ come（來）。
-- 意思：原本你前面有一座大山或一個難關擋著，你一路往前走，最終「跨越並戰勝」了它。
+## over + 時間/活動 (整個xx期間)
+- Over the weekend（**整個**週末期間）
+  - 在週末這段假期中持續發生。
+  - 例句： I plan to finish reading my new book over the weekend.
+（我打算利用整個週末把新書看完。）
 
-- You need to overcome your fear of speaking English. （你需要克服你說英語的恐懼。）
-- She overcame many difficulties to achieve her dream. （她克服了許多困難來實現她的夢想。）
+- Over the summer / Over the winter（**整個**夏天／**整個**冬天期間）
+ - 意思： 在整個季節的長假或期間內。
+ - 例句： He learned how to code over the summer.
+（他利用整個夏天學會了寫程式。）
 
-## Over time（隨著時間推移、日積月累）
+- Over lunch / Over dinner（在吃午餐／晚餐的期間）
+ - 意思： 延伸到社交情境，指「一邊吃著飯，一邊進行某事」。
+ - 例句： We discussed the new project over lunch.
+（我們在吃午餐的同時討論了新專案。）
+  - We discussed our future plans over dinner.
+（我們在吃晚餐的期間討論了未來的計畫。）
+
+## Over time（經過一段時間）
 拆解：over（跨越、橫跨）+ time（時間）。  
 意思：隨著時間一分一秒、一天一天地「跨越過去」，事情慢慢產生了變化。  
 常用情境：習慣的養成、技術的進步、或是傷口的癒合。  
@@ -109,21 +135,43 @@ Over and over (again)：一次又一次、不斷地
 - Over time, significant savings can accrue from this plan. 隨著時間推移，這個計劃可以累積可觀的節省。 
 
 
-## over to 從一端到另一端、傳過去
-- Can you pass the salt over to me?（你可以把鹽巴遞過來給我嗎？——從你那端傳到我這端）
-- Can you pass the menu over to her? （你可以把菜單遞給她嗎？）
-交棒、把責任或控制權轉移給別人
-- Let me pass the phone over to John. （我把電話轉給約翰聽。）
+## Over + 時間長度 (經過**某一段時間**）
+- The empire expanded rapidly over a century.
+（這個帝國在一個世紀的跨度內迅速擴張。）
+- My English has improved a lot over the past year.
+（我的英文在過去這一年間跨越這段時間慢慢進步了。）
+- They became close friends over **a series of** meeting**s**.
+（他們在一連串的會議過程中漸漸成為了好朋友。）
+- Prices of goods have risen steadily over the month**s**.
+（商品價格在這幾個月的期間裡持續穩步上揚。）
+
+---------------------------------------
 
 ## over 翻過去
 - Turn the page over.（把這一頁翻過去。）
 
-## 透過、經由（電話、無線電、網路等媒介）
+------------------------
+
+## over 透過、經由（電話、無線電、網路等媒介）
 當聲音或訊息是「透過某個無形的管道」傳遞過來時，也會用 over。
 
 - I heard the news over the radio.（我是透過收音機聽到這個消息的。）
 - We talked over the phone for an hour.（我們用電話聊了一個小時。）
 
+-------------------
 
+## Overcome（克服、戰勝）
+- 拆解：over（跨越、超越）+ come（來）。
+- 意思：原本你前面有一座大山或一個難關擋著，你一路往前走，最終「跨越並戰勝」了它。
 
+- You need to overcome your fear of speaking English. （你需要克服你說英語的恐懼。）
+- She overcame many difficulties to achieve her dream. （她克服了許多困難來實現她的夢想。）
+- Overcoming a setback.克服挫折
+  - Setback（名詞）：挫折、障礙
 
+## over the noise （在喧鬧聲中、壓過噪音）
+- over the noise 壓過噪音
+  - 現場的噪音（noise）就像一道障礙或音牆，而你的聲音必須「越過（over）」這道障礙
+  - He spoke in a loud voice to make himself heard over the noise.他用很大的聲音，才壓過噪音，讓自己被聽見。
+- I had to shout over the noise of the traffic. （我必須大喊，才能蓋過車陣的噪音被聽到。）
+- We could hear music playing over the noise of the party. （我們在派對的喧鬧聲中，隱約聽見了音樂聲。）

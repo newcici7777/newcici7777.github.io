@@ -37,39 +37,7 @@ enjoy 是享受。
 
 Trip 則是一般廣義的「旅行、出遊」，不一定有導覽性質，單純指「去某地旅行」。
 - Which trip is the most exciting?
-
-## visit(名詞) to 去...參觀
-```
-visit to 地點
-```
-- a visit to the museum（參觀博物館）
-- Our visit to the local art gallery inspired many new ideas. （我們對當地美術館的參觀激發了許多新點子。）
-
-```
-pay a visit to 拜訪
-```
-- to pay a visit to the dentist/museum 看牙醫／參觀博物館
-- The doctor paid a home visit to the elderly patient. （醫生對這位年邁的病人進行了出診拜訪。）
-
-## visit 去玩
-為什麼 "visit" 在這裡代表「去玩」？
-
-在英文中，visit除了單純的「拜訪（某人）」之外，更常用來表示「前往（某個地點/城市/國家）進行旅遊或觀光」。
-
-* We want to visit New York in January.這句話表達的就是你們想去紐約旅遊，而且是計畫在明年的一月份。
-* 語感："Visit" 比 "go to" 聽起來更有一種「去當地觀光、體驗」的意味，而不僅僅是「到達」那個點。
-
-## visit(名/動) 拜訪
-
-### visit 名詞 (拜訪)
-```
-a visit to + 地方
-```
-- What is the purpose of your visit?
-- Thanks for your visit to our website.（謝謝你造訪我們的網站。）
-
-### visit 動詞
-- I always visit that website.我总是访问那个网站。
+- on my trip to London（在去倫敦的這趟旅行中）
 
 ## journey(名詞) to...（去...的漫長旅程 / 歷程）
 - The long journey to the summit was exhausting but worth. （那趟通往山頂的漫長旅程雖然令人精疲力竭，但非常值得。）
@@ -85,10 +53,6 @@ a visit to + 地方
 ## travel(名詞) to 去 ... 旅行
 - Travel to outer space is no longer just a science fiction dream. （外太空旅行不再只是科幻小說的夢想。）
 - International travel to remote islands has become much easier nowadays. （如今，前往偏遠島嶼的國際旅行變得容易多了。）
-
-## visit訪問 與 visiting觀光
-- visiting: 四處造訪、觀光這個動態過程。
-- visit: 通常是指去拜訪某個特定的地方或親友，而不是泛指觀光。
 
 ## travel(動詞) to + 目的地
 travel是動詞
@@ -132,18 +96,6 @@ be動詞是狀態，on是進行中。
 - Please don't call him, today is his day off.請不要打給他，他今天休假。
 - He is on his day off today.他今天休假
 
-## visit(動詞) 參觀
-```
-visit a 地點
-```
-museum 是可數的，當museum是第一次提到、或是泛指任何一間博物館時，一定要加上單數冠詞 a（一間博物館）。
-
-- visit a museum（參觀博物館）
-  - I want to visit the National Palace Museum.
-- visit a gallery（參觀美術館）
-- visit a city（造訪某城市）
-- We visited many exciting places in New York.(places複數)我们在纽约去了很多令人兴奋的地方。
-- We want to visit New York in January.我们想要在一月去纽约游览。
 
 ## take
 take 除了「拿、帶」之外，有一個很大的功能是用來表示「進行、從事、經歷一個需要花時間或體力的活動／行程」。
