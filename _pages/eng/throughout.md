@@ -3,6 +3,10 @@ title: Throughout 內部完全遍佈/自始至終
 date: 2026-09-09
 keywords: english, Throughout
 ---
+強調空間的「內部各處」或時間的「整個期間」。它給人的畫面是：沒有任何一個地方或時間漏掉，全部都被填滿了。
+
+無所不在、每一個角落、從頭到尾（完全滲透）
+
 ## Throughout 內部滲透、每一個角落無一遺漏
 - Free Wi-Fi is available throughout the hotel.
 （這間飯店的**每一個角落（裡裡外外）**都有提供免費無線網路。）
@@ -17,6 +21,8 @@ keywords: english, Throughout
 
 
 ## Throughout「自始至終、全程不間斷」
+- He remained calm throughout the meeting.（他在開會的整段過程中一直保持鎮定——從開頭到結束都沒有改變。
+-  Someone was crying throughout the movie. （有人在看電影的整段過程中一直哭——從頭哭到尾，中途沒有停過。）
 - The audience remained silent throughout the performance.
 （觀眾在表演的**整段過程中（從頭到尾）**都保持安靜。）
 - She stayed optimistic throughout her illness.

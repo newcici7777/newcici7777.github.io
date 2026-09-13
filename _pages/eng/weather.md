@@ -92,17 +92,21 @@ rain,snow，不可數氣象名詞，不能一個一個數，所以不能用a。
 
 ### 加形容詞（去掉 the）：
 前面加上形容詞修飾特定種類的暴風雨時，通常也會去掉 the,換成a：
-- in a sudden storm（突如其來的暴風雨中）
+- 原本: in the storm
+- 加上sudden(形): in **a** sudden storm（突如其來的暴風雨中）
 
 
 ## during 在...期間
 - during + a（泛指「一場/一次」期間）
   - Always unplug electronics during a thunderstorm.
-  - 意思：在任何一場雷雨期間（泛指通則、給建議時），都要把電器拔掉。
+  - 意思：在任何一場暴風雨期間（泛指通則、給建議時），都要把電器拔掉。
 
-- We stayed home during the thunderstorm.（我們在雷雨中待在家裡。）
-* *We stayed inside **during the hurricane**.*（我們待在室內，躲過了的颶風。）
-* *We stayed inside **during a massive hurricane**.*（我們待在室內，躲過了一場巨大的颶風。）
+- We stay**ed** home during **the** thunderstorm.（我們在暴風雨中待在家裡。）
+  - 搭配過去式，代表已經經歷特定的一場，所以用the
+* We stay**ed** inside during **the** hurricane.（我們待在室內，躲過了的颶風。）
+  - 搭配過去式，代表已經經歷特定的一場，所以用the
+* We stay**ed** inside during **a massive** hurricane.（我們待在室內，躲過了一場巨大的颶風。）
+  - 有massive形容詞，去掉the變成a massive(形)
 
 ---------------
 

@@ -39,6 +39,20 @@ was / were + V3
 will be + V3
 ```
 - The work will be finished tomorrow.（工作明天會被完成。）
+--------------------
+## 被動式例句:
+- The area is flooded.（這個地區被水淹了／泡在水裡了）
+
+## 名詞 + 過去分詞
+英文中有很多這種「名詞 + 過去分詞」的慣用語，用來形容名詞。  
+簡化過程： 省略 that/which 和 be 動詞
+
+- I have a lot of **work finished**.（我有很多工作已經完成了。）
+- Do you have any **questions left**?（你有任何問題留下來／剩下的嗎？）
+  - 被動式原句: Do you have any questions that are left?
+  - 省略 that are
+  - 原動詞 leave 的意思是「留下、剩下」。被動語態 are left（被剩下、被留存）
+
 
 -------------------------
 

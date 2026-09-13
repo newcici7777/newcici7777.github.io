@@ -13,6 +13,8 @@ keywords: English
   - The kids play soccer after school.（孩子們放學後踢足球。）
 - after lunch（午餐後）
 
+## after(順序)
+- Who is after me? 誰在我後面 (排隊順序)
 
 ## before 連接詞
 ```

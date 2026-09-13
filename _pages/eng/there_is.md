@@ -3,11 +3,13 @@ title: there is sun 天氣或環境
 date: 2026-08-22
 keywords: english, the water
 ---
-## There is sun
+## There is sun 出太陽/有太陽
 因為這裡的 there is 不是指「那裡有一個東西」，而是英文用來表達「自然環境、天候狀況、或某種現象存在」。
 
 表達的是「有（存在）太多的陽光/日照」，在英文中，描述「環境中存在著某種天氣狀況、光線、雨水」時，習慣用 There is / There are 這個開頭。
 
+- Is there sun at the beach today? （今天海灘那裡有陽光嗎？）
+- I hope there is some sun tomorrow. （我希望明天能有一點陽光。）
 - There is too much sun.（有太多的太陽/陽光。）
   - sun（陽光/日照）在這裡是不可數名詞。
   - 在 There be 句型中，如果後面接的是不可數名詞或單數名詞，動詞就要用單數的 is。
@@ -26,6 +28,11 @@ keywords: english, the water
 - I can't see the plane, there are too many cloud**s**. 我看不到飞机，有太多云了。
 - There are a lot of clouds today.今天有许多云。
 - Oh no, there is **a** thunderstorm!噢不，有一场雷雨！
+
+## There is a flood（有水災／淹水了）
+
+淹水其它說法:
+- After **the** typhoon, many cars were completely under water.
 
 ## There is smoke 有煙
 - smoke（煙）：There is smoke in the kitchen.（廚房裡有煙)
@@ -49,12 +56,7 @@ keywords: english, the water
 - I don't like the heat.（我不喜歡這種熱氣/大熱天。）
 - I don't like the cold.（我不喜歡這種冷天氣。）
 
-## There is traffic 塞車
-traffic是不可數「抽象」名詞，沒有**a跟the，不能加複數的 -s**。
-- There is heavy traffic.（有很重的交通 /車很多。）
-- There is too much traffic today.（今天車流量太多了／塞車很嚴重。）
-- There is too a lot of traffic today.（今天車流量太多了／塞車很嚴重。）
-- Why is there so much traffic today?（為什麼今天車流量這麼多／塞車這麼嚴重？）
+
 
 ### There is 抽象
 - help（幫忙）：Is there any help needed?（需要任何幫忙嗎？）

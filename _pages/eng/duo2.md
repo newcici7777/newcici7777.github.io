@@ -191,10 +191,6 @@ return 的詞性是及物動詞（Transitive Verb）。
 - And I can't catch any fish!
 
 
-## crawl [krɔːl] 爬進爬出
-- The cat crawled through a small hole in the fence. （貓咪穿過了柵欄上的一個小洞——不是特定的某個洞，就是其中一個洞。）
-- to crawl in/out 爬進／爬出
-- to crawl out from under sth. 從某物下面爬出來
 
 
 ## wash the dish**es** 洗碗 cook煮

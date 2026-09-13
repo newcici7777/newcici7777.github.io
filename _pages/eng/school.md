@@ -52,7 +52,11 @@ keywords: English
 - When do you start taking the lessons?
 - When do you have the lessons?
 
-## Take 考試
+## Give 考試 (老師給學生考試)
+- The teacher gave the students a diagnostic reading test to find out their weaknesses. （老師給學生們做了一份閱讀診斷測驗，以找出他們的弱點所在。）
+
+
+## Take 考試 (學生「拿」老師給的考試)
 take 是：「花時間、花力氣」
 - take a test
 - take an exam（參加考試）

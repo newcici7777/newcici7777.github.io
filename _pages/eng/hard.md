@@ -1,8 +1,13 @@
 ---
-title: hard heavy 大自然
+title: hard heavy Severe 嚴重
 date: 2026-09-11
 keywords: english, hard, heavy
 ---
+## Severe [səˈvɪr] 嚴重
+- Severe flooding（嚴重的淹水狀況）
+  - Severe flooding blocked the highway.（嚴重的淹水封鎖了高速公路。）
+
+--------------------
 在描述大自然（特別是**風、雨、雪、浪**等天氣現象）時，**`hard`** 和 **`heavy`** 是兩個超級常用、但用法截然不同的好幫手！
 
 簡單來說：

@@ -60,13 +60,6 @@ be動詞 表達「正在...什麼狀態」，介系詞片語(地方副詞)，可
   - Someone cut in line.有人插隊
   - Don't cut in line!（不要插隊！）
 
-## line up變成動詞，排隊
-不及物動詞，後面要加up。
-- line up 排隊
-- Everyone is lining up for the tickets.（大家正在排隊買票。）
-- Please line up here.（請在這裡排隊。）
-- Let's line up!我們去排隊吧
-
 ## get in line
 get是進去 
 
@@ -80,6 +73,51 @@ get是進去
 - Where should we wait in line? 去那排隊，動詞可替換stand
 - We are waiting in line for chick-in.排隊辦登機，動詞可替換stand
 
-## after(順序)
-- Who is after me? 誰在我後面 (排隊順序)
+----------------------------------------
+## line up(動詞) 排隊、站成一排
+不及物動詞，後面要加up。
+- line up 排隊
+- Everyone is lining up for the tickets.（大家正在排隊買票。）
+- Please line up here.（請在這裡排隊。）
+- Let's line up!我們去排隊吧
+- The students lined up outside the classroom. （學生們在教室外排好隊。）
+- Cars were lined up at the traffic light. （車子在紅綠燈前排成一長排。）
+
+### 名詞 + lined up 安排好
+安排好計畫、行程等
+這是很道地的商業或日常用法，指事情已經「喬好」、「安排就緒」了。
+- I have a busy day tomorrow. I have three **meetings lined up**. (我明天很忙，已經排好了三個會議。)
+  - 被動式原句： I have three meetings **which are lined up**.
+  - 省略 which are，變成形容詞片語，用來修飾前面的 meetings
+- Do you have **anything lined up** for the weekend? (你這週末有安排什麼活動嗎？)
+  - 被動式原句: Do you have anything **which is lined up** for the weekend?
+  - 省略 which are，變成形容詞片語，用來修飾前面的 anything
+
+--------------------------
+## 名詞 + line
+英文中有非常多這種把兩個名詞組合成一個新單字的結構，其中結尾是 line 的常見詞彙涵蓋了地理、生活與科技等不同領域：
+
+1. 地理與交通類（與線條、路徑有關）
+- Coastline 海岸線
+- Baseline（基準線、底線）
+- Deadline（最後期限）
+  - Can you meet the project deadline next Friday?（你趕得上週五的專案死線嗎？）
+- Airline（航空公司）
+  - Which airline are you flying with to Japan?你這次去日本搭哪家航空公司？
+- Pipeline（管線、輸油管；也可指計畫中的「籌備管道」）
+
+2. 生活與科技類（與網脈、通訊有關）
+以下都是可數名詞，複數要加S。(guideline**s**, headline**s**)
+
+- Online / Offline（線上 / 離線）—— 雖然通常當副詞或形容詞，但源自 line。
+- Timeline（時間軸、時間線）
+  - Please create a timeline for this marketing campaign.（請為這個行銷活動製作一份時間軸。）
+- Headline 新聞標題、頭條。
+  - His controversial remark made the front-page headline**s**.（他具爭議性的發言登上了頭版頭條。）
+- Guideline（指導方針、指導手冊）
+  - Always follow safety guideline**s** when using the equipment.（使用設備時，請務必遵循安全準則。）
+- Hotline（熱線、申訴專線）
+  - The company set up a customer service hotline.（公司設立了一支客服專線。）
+
+
 

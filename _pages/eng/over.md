@@ -69,6 +69,7 @@ keywords: english, over
 ## over 在...的上方
 空間上的「在...正上方」（不接觸），某個物體在另一個物體的上方，通常沒有接觸到（如果是「有接觸的表面」則用 on）。
 
+- We watched the breathtaking sunset **over** the ocean. （我們觀賞了海面上美得令人屏息的夕陽。）
 - A plane flew over the city.（一架飛機從城市上空飛過。）
 - Hang the picture over the fireplace.（把畫掛在壁爐上方。）
 
@@ -79,6 +80,9 @@ keywords: english, over
 
 
 ## over 遍佈
+over 本身有「跨越、覆蓋、在...之上」的意思。
+當它用來形容地理範圍時，代表「涵蓋了某個地方的每一個角落」。
+
 - 1.We searched over the whole town for the missing cat.
 （我們在整座城鎮的各個地方找那隻失蹤的貓——像是在地圖上到處搜查。）
 - 2.Rumors spread quickly over the company.
@@ -88,8 +92,17 @@ keywords: english, over
 - 4.She has fans over the world.
 （她在全世界各地都有粉絲——常用 all over 強調範圍廣闊。）
 
-- All over 到處、遍及
-  - travel all over the world. 環遊全世界。
+## All over 到處、遍及
+All(副詞)，形容over(副詞)，變成**全部**覆蓋
+
+all over + 地方 = 到處、遍及全
+- all over the world（全世界各地）
+- all over the city（全城各地）
+
+- travel all over the world. 環遊全世界。
+- all over Europe 整個歐洲各地/遍及全歐洲
+  - all over在歐洲前面，**不加 the**
+  - She has traveled all over Europe. （她去過全歐洲各地旅行)
 
 -----------------------------
 
@@ -107,7 +120,14 @@ Over and over (again)：一次又一次、不斷地
 
 -----------------------------
 
-## over + 時間/活動 (整個xx期間)
+用 over 來表達「跨越一段時間、在...期間持續發生」
+
+強調這段期間，**從頭到尾持續做**了某些事
+
+當我們用 over 接時間時，通常帶有一個「從這段時間的開始，延伸到結束／持續進行」的動態感
+
+
+## over + 一段時間 (在一段時間內)
 - Over the weekend（**整個**週末期間）
   - 在週末這段假期中持續發生。
   - 例句： I plan to finish reading my new book over the weekend.
@@ -125,17 +145,36 @@ Over and over (again)：一次又一次、不斷地
   - We discussed our future plans over dinner.
 （我們在吃晚餐的期間討論了未來的計畫。）
 
-## Over time（經過一段時間）
+- Over the break（在整個假期期間）
+ 強調利用這段長假，**從頭到尾持續做**了某些事
+ - I read five books over the break. 我整個假期讀了五本書。
+
+## over 與 during 差別
+在某個期間／活動發生以內（發生了某事）
+
+某個單一事件發生在這個假期的某個時間點
+
+- During the break（在假期當中）
+  - I met an old friend during the break. 我在假期中巧遇了一位老朋友）。
+
+## Over time（跨越了...時間）
 拆解：over（跨越、橫跨）+ time（時間）。  
 意思：隨著時間一分一秒、一天一天地「跨越過去」，事情慢慢產生了變化。  
-常用情境：習慣的養成、技術的進步、或是傷口的癒合。  
 
 - Your English will improve over time with practice. （透過練習，你的英文隨著時間會慢慢進步。）
 - Things will get better over time. （情況隨著時間會變好的。）
 - Over time, significant savings can accrue from this plan. 隨著時間推移，這個計劃可以累積可觀的節省。 
 
+## Over the years（多年來）
+想像時間是一條河流或是一座橋，當你說 over the years 時，那個 over 代表著「跨越了...這段時間」。
 
-## Over + 時間長度 (經過**某一段時間**）
+從好幾年前開始，一直到現在這段期間內，事情持續在發生或產生變化。
+
+- Over the years, she has collected hundreds of vintage books. （多年來，她收藏了數百本古董書——從過去到現在持續累積。）
+- My hometown has changed a lot over the years. （我的家鄉這些年來已經變了很多。）
+
+## Over + 時間長度 (跨越了...這段時間，經過**某一段時間**）
+- My English has improved over the past year.（我的英文在過去這一年間進步了——強調過程的累積。）
 - The empire expanded rapidly over a century.
 （這個帝國在一個世紀的跨度內迅速擴張。）
 - My English has improved a lot over the past year.

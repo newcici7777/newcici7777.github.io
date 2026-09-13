@@ -56,6 +56,7 @@ Be on (something)：是一個靜態的狀態——指你已經在上面了。
 - on a plane 飛機上
 - on the subway
 - on the MRT
+- We are on a ferry. （我們在渡輪上。）
 
 - We are on the train now.（我們現在在火車上。）
 - I am on the bus. （我在公車上。）
@@ -63,10 +64,10 @@ Be on (something)：是一個靜態的狀態——指你已經在上面了。
 - We are on the train to Taipei. （我們在去台北的火車上。）
 - 加形容詞：We are on the last train.（我們在末班車上。）
 - They are on the plane now. （他們現在在飛機上。）
-- 加形容詞, the 變a：He is on a long-haul flight.（他在一個長途航班上。）
+- 加形容詞, the 變a：He is on a long flight.（他在一個長途航班上。）
 - She is on her bicycle. （她在她的腳踏車上。／她在騎腳踏車。）
 - 加所有格：The kids are on their bikes.（孩子們在騎腳踏車。）
-- We are on a ferry. （我們在渡輪上。）
+
 
 ## be + on 跨坐交通工具
 需要「跨（straddle）在它上面」、身體跟它呈現接觸狀態的交通工具，一律用 on。
@@ -156,7 +157,7 @@ Go on (something)：是一個動態的過程——指你跨出腳步、走上車
 走路： 一定要用 on foot。
 - I go to school on foot. (我不搭車，我走路去學校。)
 
-## by vs take vs on vs on foot
+## by/ take / on / on foot
 - I like to travel by train.我喜歡搭火車旅遊
 - I always take the train.我總是搭那班火車 
 - I travel on the train.
@@ -166,8 +167,10 @@ Go on (something)：是一個動態的過程——指你跨出腳步、走上車
 get on（片語動詞：上車、上船、上飛機）專門用來指「踏入」大型交通工具（火車、公車、飛機、船）。
 
 上車 / 下車的兩大邏輯（關鍵在於：能不能在裡面站立走動？）
-A. 大型的交通工具 → 用 get on / get off
-* 老外的大腦畫面： 這種車/船/飛機空間很大，你必須「踏上去（on）」，而且可以在裡面站立或走動。
+
+大型的交通工具 → 用 get on / get off
+
+老外的大腦畫面： 這種車/船/飛機空間很大，你必須「踏上去（on）」，而且可以在裡面站立或走動。
 * 上車： get on
 * 下車： get off
 * 常見對象：
@@ -344,6 +347,14 @@ fly + to + 地點。
 - I flew from London to Oxford yesterday.我昨天从伦敦飞去了
 牛津。
 - I flew to London last Saturday.我上周六飞去了伦敦。
+
+## fly with 搭乘某家航空公司
+- I usually fly with EVA Air. （我通常搭乘長榮航空。）
+- Which airline are you flying with to Japan?你這次去日本搭哪家航空公司？
+- Which airline are you planning to fly with? （你打算搭乘哪家航空公司的班機？）
+
+## fly with 與某人一起搭飛機
+- It was great to fly with you on this trip. （這次旅行能和你一起搭飛機真是太棒了。）
 
 
 ## By plane (強調「方式」：搭乘的工具)

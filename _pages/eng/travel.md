@@ -14,6 +14,7 @@ keywords: English, travel, ticket, fly, tour, trip
 形容旅程很棒：
 - That was a great trip!（那真是一趟棒極了的旅行！）
 
+----------
 
 ## 有移動特性的「名詞」+ to 地點
 跟移動、前往有關的名詞，後面會加上 to 地點
@@ -50,6 +51,8 @@ Trip 則是一般廣義的「旅行、出遊」，不一定有導覽性質，單
 - The emergency flight to the capital saved the patient's life. （那班飛往首都的緊急專機拯救了病人的性命。）
 - The night flight to London gave us a great view of the city lights. （夜間飛往倫敦的航班讓我們俯瞰了美麗的城市燈火。）
 
+-----------
+
 ## travel(名詞) to 去 ... 旅行
 - Travel to outer space is no longer just a science fiction dream. （外太空旅行不再只是科幻小說的夢想。）
 - International travel to remote islands has become much easier nowadays. （如今，前往偏遠島嶼的國際旅行變得容易多了。）
@@ -58,7 +61,7 @@ Trip 則是一般廣義的「旅行、出遊」，不一定有導覽性質，單
 travel是動詞
 - She'll travel to France next month.(下个月她将前往法国。)  
 - Duo will travel to Canada next summer.(多儿明年夏天会去加拿大旅游。)
-- They'll travel to [the] UK next month.(他们下个月会去英国旅游。)  
+- They'll travel to **the** UK next month.(他们下个月会去英国旅游。)  
 
 ## travel(動詞) in 國家
 - We traveled in the US by car last year.
@@ -69,7 +72,10 @@ travel是動詞
 ## travel(動) with 一起旅行
 - who did you travel with in London twenty years ago?妈妈，二十年前你是跟谁去的伦敦？
 
-## I am off.（我今天放假)
+-----------
+
+## be off.（我今天放假)
+off是離開，表達目前是離開的**狀態**用be動詞。
 - off work.離開工作的狀態
 - I get off work at 6:00. 下班 
 - I am off.
@@ -96,6 +102,7 @@ be動詞是狀態，on是進行中。
 - Please don't call him, today is his day off.請不要打給他，他今天休假。
 - He is on his day off today.他今天休假
 
+-------
 
 ## take
 take 除了「拿、帶」之外，有一個很大的功能是用來表示「進行、從事、經歷一個需要花時間或體力的活動／行程」。
@@ -114,6 +121,7 @@ go on 非常適合用在旅遊、導覽、出差這種有計畫性的活動。
 - go on a business trip（去出差）
 - go on a picnic（去野餐）
 
+------
 
 ## tour(n.參加導覽) / trip(n.旅行) / vacation(n.放假)
 tour,trip,vacation名詞，前面需要搭配動詞（如 take, go on, be on）與 a(一次、二次的旅行)
@@ -138,7 +146,8 @@ take 代表花費時間/體力 去經歷。
 be 動詞表達狀態，代表已經在那個狀態。
 - They are on a tour of Europe right now.他們目前正在歐洲進行參觀
 - I was on a tour of London a few hours ago, but I got lost. 
-- 
+
+
 ### go on a tour of 地方 (出發去參觀)
 - She went on a tour of the campus yesterday.她昨天去參觀了校園。
 - We are going to go on a tour of London tomorrow.我們明天要去參加倫敦導覽行程。——強調「準備去展開」這個動作
@@ -159,27 +168,10 @@ join 強調跟著團體一起
 ## a walking tour（步行導覽／徒步導覽）
 - We took a walking tour of the old town. （我們參加了舊城區的徒步導覽。）
 
-## sightsee 觀光、遊覽(動詞)
-sightsee → sightsaw → sightsawn  
-
-sightsee去觀光這個「動作」，專指「去名勝古蹟看風景、逛景點」這個行為。
-
-### sightsee 動詞
-- When I visit a new city, I like to sightsee. （當我拜訪一個新城市時，我喜歡到處觀光。）
-
-### go sightseeing（去觀光）
-- We are going to go sightseeing in Paris tomorrow.我們明天要在巴黎去觀光。
-- They went sightseeing all day yesterday.
-
-### spent 時間 sightseeing
-```
-spent 時間 sightseeing
-```
-- spend time sightseeing 花時間觀光
-- We spent the afternoon sightseeing in Paris. （我們整個下午都在巴黎觀光。）
-
+--------------
 
 ## trip(名詞) to 去旅行
+
 ### take trips(複數) 常常去旅行
 當trip變成複數，代表旅行這件事已經變成「常常去旅行」，變成習慣。
 
@@ -222,6 +214,7 @@ on this trip 介系詞片語作為副詞，修飾前面的動詞 bring，用來�
 
 因為它在補充說明動詞的時間或情境，所以就具備了副詞的功能（表時間／情境的副詞片語）。
 
+-----------------
 
 ## vacation 放假、度假(名詞)
 ```
