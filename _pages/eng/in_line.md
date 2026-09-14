@@ -1,5 +1,5 @@
 ---
-title: in line 排隊
+title: in line 排隊(隊伍) 
 date: 2026-08-12
 keywords: English
 ---
@@ -112,12 +112,12 @@ get是進去
 - Online / Offline（線上 / 離線）—— 雖然通常當副詞或形容詞，但源自 line。
 - Timeline（時間軸、時間線）
   - Please create a timeline for this marketing campaign.（請為這個行銷活動製作一份時間軸。）
-- Headline 新聞標題、頭條。
+- Headline**s** 新聞標題、頭條。
   - His controversial remark made the front-page headline**s**.（他具爭議性的發言登上了頭版頭條。）
-- Guideline（指導方針、指導手冊）
+- Guideline**s**（指導方針、指導手冊）
   - Always follow safety guideline**s** when using the equipment.（使用設備時，請務必遵循安全準則。）
 - Hotline（熱線、申訴專線）
   - The company set up a customer service hotline.（公司設立了一支客服專線。）
 
-
+-----------------------------------
 

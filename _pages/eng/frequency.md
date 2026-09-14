@@ -71,6 +71,8 @@ How often（多常...）的問句，我們會把次數跟時間結合
 
 
 ## never 從不
+- I never drink coffee.我從不喝咖啡。
+  - 我過去不喝、現在不喝、以後也不會喝，這是一個習慣，是「不變的事實」
 - We never work on Friday**s**
 - First painting**s** are never good.
 - we nerver finish the school early

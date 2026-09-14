@@ -189,6 +189,7 @@ take a trip = 「去一趟旅行」，trip為可數名詞。
 ### be on a trip to 地方
 be 代表「現在狀態」，on代表「進行中」 = 正在 ...
 - They are on a trip to Europe right now.他們目前正在歐洲旅行。
+- Who was on **the** trip with you? 谁跟你一起旅行？
 
 ### be on a business trip 出差
 - I'm on a business trip.我在出差

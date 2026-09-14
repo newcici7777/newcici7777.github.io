@@ -115,7 +115,7 @@ talk 強調的是跟「誰」說話，而不是像tell/say著重在「內容」�
 - What did he talk about?
 - We don't need to go fishing to talk about things.
 
-### talk + to + 人 + 名詞
+### talk + to + 人 + about + 名詞
 - Talk to you about something.
 
 -----------------------------------

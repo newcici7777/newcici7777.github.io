@@ -52,17 +52,22 @@ Go + 以 -ing 結尾的戶外運動（通常是去某個地方進行的活動）
 - 未來式：We will go fishing tomorrow.（我們明天要去釣魚。）
 - 進行式（正在出發去）：They are going fishing.（他們正準備去釣魚／出發去釣魚了。）
 
-## hike / hiking / go hiking 健行、徒步旅行 
+-------------------------
+
+## the hike(名) / hike(動) / hiking / go hiking 健行 
+- during **the** hike(名詞) 健行期間
+  - Be careful of dangerous animals during **the** hike.在健行期间要小心危险动物。
+  - Don't forget to drink water during the hike and have a good time.別忘了在健行時喝水，並玩得開心。
+- go for **a** hike(名詞) 一場健行
+  - Let's go for **a** hike.（我們去健行吧）。  
+- hike(動詞) 健行、徒步旅行。 
+  - I am afraid to hike alone in the forest.
+- go hiking 健行
+  - How often do you go hiking?你多久健行一次
+  - I went hiking there last week and saw a lot of angry chickens.
 - hiking paths 健行步道
-- we're going to talk about wild snakes and hiking paths in Australia.今天我們要來談談澳洲的野生蛇類與健行步道
-- I am afraid to hike alone in the forest.
-  - hike當「動詞」:健行、徒步旅行。
-- Let's go for a hike.（我們去健行吧）。
-  - hike把動作變成名詞，前面要加a
-- Don't forget to drink water during the hike and have a good time.別忘了在健行時喝水，並玩得開心。
-- How often do you go hiking?你多久去一次
-徒步旅行？
-- I went hiking there last week and saw a lot of angry chickens.
+  - we're going to talk about wild snakes and hiking paths in Australia.今天我們要來談談澳洲的野生蛇類與健行步道
+
 
 #### 💡 `the hike`（名詞） vs. `hiking`（動名詞/名詞）有什麼差別？
 
@@ -76,10 +81,13 @@ Go + 以 -ing 結尾的戶外運動（通常是去某個地方進行的活動）
 * *例句*：*I love **hiking**.*（我喜歡健行。）
 * *例句*：*Hiking is good for health.*（健行對健康有益。）
 
+--------------------
 
 ## go dancing 跳舞/ go swimming
 - They went dancing last night together.他们昨晚一起去跳舞了。
 - We went swimming last night.我们昨晚去游泳了。
+
+----------------
 
 ## climbing
 - Ben is afraid of rock climbing.本害怕攀岩。
@@ -92,6 +100,7 @@ Go + 以 -ing 結尾的戶外運動（通常是去某個地方進行的活動）
 - Let's have a climbing competition.咱们来一场攀岩比赛
 吧。
 
+-----------------------
 
 ## 露營
 - I don't want to camp in the mountains! （我才不要去山裡露營！）

@@ -3,10 +3,12 @@ title: types of
 date: 2026-09-08
 keywords: English, types of
 ---
+## this type of 單數名詞 (這種，種類)
+- Lisa doesn't know how to use this type of mouse.丽莎不知道如何用这种鼠标。
 
+## types of 複數名詞S (各式各樣)
 - I saw many type**s** of bus**es**. 看到了好幾種**不同款式**的公車
   - 前面用了 many（許多），代表不只一種款式，所以後面的 type 必須變成複數的 types
-
 
 
 ----------------------------------

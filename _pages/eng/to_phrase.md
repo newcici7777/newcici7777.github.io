@@ -6,16 +6,21 @@ keywords: to
 「未來動作」、義務，或修飾受序數、最高級等限制的名詞
 to + V 的底層屬性:未來、尚未發生、目標、方向
 
-## 要做什麼/該不該/能不能 名詞 + to + 動詞
+## 名詞 + to + 動詞 (目的)
 語氣是『該不該、能不能』時，常常會把子句縮寫成 to + V。
 
-- How many bags to bring?
-  - 原本的完整子句：How many bags should we bring?（我們該帶幾個包包？）
-  - 縮寫過程：拿掉主詞（we）和助動詞（should），把動詞變成不定詞 to bring
+to + 原形動詞 = 不定詞，用來形容前面的名詞，形容這個東西的「目的」，是要做什麼。
 
-- How much money to spend?
-  - 原本的完整子句：How much money should I spend?（我該花多少錢？）
-  - 縮寫過程：拿掉主詞（I）和助動詞（should），把動詞變成不定詞 to spend
+- How much money to spend？
+  - to spend 是不定詞片語，用來修飾前面的名詞 money（意思是「要花的錢」）
+  - 原本: How much money should I spend on this trip?這次旅行要花多少錢？
+  - 省略主詞、助動詞(should I)，換成to
+  - 把動詞變成不定詞 to spend ，是用來修飾前面的名詞（money）
+
+- How many bags to bring?
+  - 原本: How many bags should we bring?（我們該帶幾個行李箱？）
+  - 省略主詞、助動詞(should we)，換成to
+  - 把動詞變成不定詞to bring，是用來修飾前面的名詞（bags)，意思是「要帶的包包」
 
 ## 後置修飾
 ```
@@ -27,41 +32,28 @@ to + V 的底層屬性:未來、尚未發生、目標、方向
 ## 方向、目的地
 - Can I have a ticket **to London**? 
 
-## 目的 名詞 + to + 動詞
-此處的to為目的，聚會的目的(早餐 午餐 晚餐)
-- Will you go out with me to dinner?
+## 不定詞(to + 一般動詞) 「目的」
+- Will you go out with me to dinner?聚會的目的(早餐 午餐 晚餐)
 - We won't be late to lunch
 - I have time **to make** breakfast for you today!
+- She woke up early to catch the train. （她早起為了趕火車。）
+  - 這邊的to是目的
 
-## 未來動作 名詞 + to + 動詞
+
+## 不定代名詞 + to + 一般動詞 「未來動作」
 - I need something to eat.(我需要一些可以吃的東西。)
 - Do you have anything to drink?(你有什麼可以喝的東西嗎？)
-- I have a lot of work to do today.(我今天有很多工作要做。)
 - There is nothing to worry about.(沒有什麼好擔心的事情。)
+
+## 名詞 + to + 動詞(未來動作)
+- I have a lot of work to do today.(我今天有很多工作要做。)
 - I'm looking for a place to live.(我在找一個可以住的地方。)
-- Do you have a pen to write with？(你有筆可以寫字嗎？——注意這裡因為是以筆來寫，後面要加介系詞 with)
+- Do you have a pen to write with？(with 是 工具，用什麼東西來寫)
 - I have a lot of work to finish tonight. （我有好多工作今晚要完成。）
 
 想表達 「有／需要／該...的（某物）」 時，腦中浮現名詞後，直接加上 to + 動詞原形 就可以囉！
 - Time to go（該走的時間）
 - A book to read（要讀的書）
-
-
-
-## 形容詞 不定詞片語
-這其實是「疑問詞 + to + 動詞原形」的縮寫結構，等於子句裡面的「應該要做什麼」。  
-如果 to 後面接的是原形動詞（to bring, to spend），它是不定詞，代表「要做...的（東西/錢）」。  
-
-- How much money to spend？
-  - to spend 是不定詞片語，用來修飾前面的名詞 money（意思是「要花的錢」）
-
-- 原本:How much money [that] I should spend on this trip?這次旅行要花多少錢？／該花多少錢？
-  - ➡️ 簡化後變成：How much money to spend on this trip?
-
-- How many bags to bring?
-  - 原本: How many bags should we bring?（我們該帶幾個行李箱？）
-  - 整個 to bring / to spend 形容詞片語，是用來修飾前面的名詞（bags / money）
-
 
 
 ## 當名詞用（作主詞、受詞、補語）

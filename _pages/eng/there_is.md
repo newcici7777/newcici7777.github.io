@@ -25,14 +25,22 @@ keywords: english, the water
 - There is too much wind for surfing.（風太大了，不適合衝浪。）
 
 ## There are clouds 有雲
-- I can't see the plane, there are too many cloud**s**. 我看不到飞机，有太多云了。
-- There are a lot of clouds today.今天有许多云。
-- Oh no, there is **a** thunderstorm!噢不，有一场雷雨！
+- I can't see the plane, there **are** too many cloud**s**. 我看不到飞机，有太多云了。
+- There **are** a lot of cloud**s** today.今天有许多云。
+
+## There is a thunderstorm
+- Oh no, there **is** **a** thunderstorm!噢不，有一场雷雨！
+  - storm暴風雨, thunderstorm暴風雨加雷，都是可數，要用A，一場暴風雨，動詞用單數is
 
 ## There is a flood（有水災／淹水了）
+A flood 可數名詞，有**一場**大洪水。
 
 淹水其它說法:
 - After **the** typhoon, many cars were completely under water.
+
+## There are low tempertureS 有低溫
+- Sometimes there **are** low temperature**s** in the morning.有的时候在早上温度很低。
+  - temperature**S**是複數，要加S，動詞用are
 
 ## There is smoke 有煙
 - smoke（煙）：There is smoke in the kitchen.（廚房裡有煙)

@@ -128,18 +128,18 @@ kind 前面可以加形容詞！
 
 
 
-### Different + 複數名詞 = 許多「種」不同的
+### Different + 複數名詞S = 許多「種」不同的
 當你想表達「許多種不同的...」或「不同的（多個）...」時，後面就要接複數名詞。
-- She wears different shoes every day.（她每天穿不同的鞋子——多雙鞋。）
-- We have different opinions.（我們有不同的意見——多個意見。）
+- She wears different shoe**s** every day.（她每天穿不同的鞋子——多雙鞋。）
+- We have different opinion**s**.（我們有不同的意見——多個意見。）
 
-### Different + 單數可數名詞 = 不同的
+### A different + 單數可數名詞 = 不同的,另一個
 當你想表達「另外一個（不同於原來的）單一事物」時，後面就要接單數可數名詞，而且前面一定要加 a。
-- Please promote him and send him to a different office!
-- She moved to a different city, and we stopped talking.
+- Please promote him and send him to **a** different office!
+- She moved to **a** different city, and we stopped talking.
 - a different flavor 另外一種不同的口味
-- She moved to a different city.（她搬去了一個不同的城市——指搬去「某個新城市」，單數一個。）
-- Let's try a different restaurant.（我們去試試不同的餐廳吧——單數一家。）
+- She moved to **a** different city.（她搬去了一個不同的城市——指搬去「某個新城市」，單數一個。）
+- Let's try **a** different restaurant.（我們去試試不同的餐廳吧——單數一家。）
 - Can we meet on a different day?（我們可以改在另一天(不同天)見面嗎——單數一天。）
 - I need a different approach to solve this problem.（我需要不同的方法來解決這個問題——單數一個方法。）
 - Can I try a different flavor?（我可以試試不同的口味嗎？——單數一種口味。）
@@ -147,9 +147,12 @@ kind 前面可以加形容詞！
 - Wait, the job is in a different office?
 - He was a very different person when he was fishing.不一樣的人
 - Wait, the job is in a different office?
+- You need **a** different **type** of mouse.，你需要一个
+不同种类的鼠标。
+- The manager **gave** everyone **a** different job.经理给大家不同的任务。
 
 💡 簡單的判斷口訣
-- a different + 單數名詞 ＝ 換了「另一個」單一物品。
+- A different + 單數名詞 ＝ 換了「另一個」單一物品。
 - different + 複數名詞 ＝ 存在「多種不同的」物品。
 
 ### different 單數 vs 複數

@@ -47,7 +47,10 @@ keywords: English, sell, for sale
 - Is your car for sale?（你的車有在賣嗎？）
 - for sale（待售中、供人購買）
 
-
+## sale**S** (形容詞加S)
+- The sale**s** department has an important job.销售部门有一个很
+重要的任务。
+- The manager wanted a sale**s**person to help him.经理想让一个销售员帮他。
 
 
 💡 總結小口訣

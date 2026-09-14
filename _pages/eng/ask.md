@@ -1,5 +1,5 @@
 ---
-title: ask 使役
+title: ask 問/要求/索取
 date: 2026-07-29
 keywords: ask
 ---
@@ -8,6 +8,7 @@ keywords: ask
 ```
 主詞 + ask + [直接受詞: 人] + [間接受詞: 事物]
 ```
+- Ask me.(問我)
 - He asked me a question.（他問了我一個問題。）
 - She asked me my name. （她問了我的名字。）
 - Can I ask you a question?
@@ -46,24 +47,8 @@ ask about + 主題/某人：意思是「打聽、詢問關於...的事」。
 - Don't be afraid to ask for help when you need it. （當你需要幫助時，不要害怕開口請求協助。）
 
 
-## ask 要別人 做事
-### ask + 人 + to + do (要求某人做某事)
-- She asked him to help.（她請他幫忙。）
-- The teacher asked me to do the homework. （老師要求我寫作業。）
-- She asked him to open the window. （她請他把窗戶打開。）
-- My boss asked me to finish the report by tomorrow. （我老闆要求我在明天以前完成這份報告。）
-- Can I ask you to help me with this? （我可以請你幫我處理這個嗎？）
-- He asked his son to clean his room. （他叫他兒子去打掃房間。）
+----------------------------------------
 
-### ask + 人 + to + V (邀請某人)
-- She is going to ask him to marry her...
-
-### 比較
-- Ask me.(問我)
-- Ask him to go.(有to，代表「要求他去」)
-
-
-------------------
 
 ## ask間接問句
 要「轉述」別人問過的話時（例如把原本的 “Do you like Rome?” 變成「他問我...」），就會用到間接問句。

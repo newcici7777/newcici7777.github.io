@@ -46,11 +46,15 @@ keywords: english, less
 - I'm sorry my English is the worst 我很抱歉，我的英文
 最糟糕。
 
-## 比較級單字
+## 比較級 最高級
 - the youngest 最年輕
 - the fastest player
 - good, better, the best
 - bad, worse, the worst
+
+字尾y去掉，加ier
+- funny, funnier the funniest
+
 
 字尾是子音+母音，後面的字母要重覆
 - thin, thinner, the thinnest

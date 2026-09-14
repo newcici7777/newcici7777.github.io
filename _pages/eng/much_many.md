@@ -50,9 +50,9 @@ How much be 東西 ?
 ```
 How much does 東西 cost ?
 ```
-- How much does **a cup of coffee** here cost?（這裡［一杯咖啡］要多少錢？）
-- How much does **the buffet** cost?（這家［自助餐］一個人要多少錢？）
-- How much does a meal at this restaurant cost?（這家餐廳［吃一頓飯］大概要花多少錢？）
+- How much does **a cup of coffee** here cost?（這裡**一杯咖啡**要多少錢？）
+- How much does **the buffet** cost?（這家**自助餐**一個人要多少錢？）
+- How much does a meal at this restaurant cost?（這家餐廳**吃一頓飯**大概要花多少錢？）
 - How much did it cost?（它花了多少錢？）
 
 ## How much 主詞 + 動詞 「表達程度、有多...」

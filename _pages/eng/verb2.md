@@ -11,6 +11,6 @@ keywords: English,
 - Go get some pizza 去拿一些pizza
   - 原本Go and get some pizza.（去，然後拿些披薩。）
 - Come see me.（來找我／來看我。）
-- Go check the door.去看看門［有沒有鎖／是誰在敲門］
+- Go check the door.去看看門**有沒有鎖／是誰在敲門**
 - Go tell him the news.去告訴他這個消息
 - Go wash your hands.去洗手

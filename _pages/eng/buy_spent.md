@@ -167,10 +167,18 @@ It + takes + (人) + 時間 + to V
 - It takes me two hours to cook dinner.煮晚餐花了我兩個小時。
 - It took us three hours to drive there yesterday.我們昨天開車花了一個小時才到那裡
 - It takes me two hours to cook.
+
+
+## it take 時間 to 原形動詞 (做什麼動作花多久時間)
 - It takes 30 minutes to cook a meal.（煮一餐要花 30 分鐘。）
 - It takes two hours to finish the work.（這工作要花兩小時。）
 - It takes 20 minutes to get to the station.（去車站要花 20 分鐘。）
 - It takes time to learn a new language.（學一門新語言需要花時間。）
+- How long will it take to email each customer?给每个顾客发电子邮件会花多长时间？
+- It only took a few minutes to download the file.下载文件只花了几分钟。
+- It took her two hours to download the new software.下载新软件花了她两个小时。
+- How long does it usually take to make a new ad?做一个新广告通常要花多长时间？
+- It will take siX hours to read all these file**s**.读所有的这些文件会花六个小时！
 
 3. Take（）
 * 主詞是「事情」，目的是達成這件事需要花多少「時間」。

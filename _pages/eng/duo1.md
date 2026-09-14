@@ -135,30 +135,6 @@ to : 一路跟著對方移動到了哪個終點
 
 
 
-## want 要別人 做事
-```
-want + 人 + to + V原形動詞 (要求某人做某事)
-```
-- 肯定句： I want you to help me.（我想要你幫我。）
-- 否定句： She doesn't want him to go there.（她不希望他去那裡。）
-- 過去式： We didn't want them to take it.（我們不希望他們拿走它。）
-
-受詞如果是代名詞，必須用「受格」
-當你想說「我希望『他』去做...」時，代名詞要用 him，不能用 he。
-- ✔️ I want him to come.（O）
-- ❌ I want he to come.（X）
-
-中間一定要加人（受詞）
-- ❌ 錯誤：We didn't want to take the documents.（這變成「我們自己不想拿文件」）
-- ✔️ 正確：We didn't want them to take the documents.（我們不希望他們拿文件
-
-
-- We didn't want them to take the documents.（我們不希望他們拿文件)
-- He wants you to go to Rome.(他想要你去羅馬)
-- We didn't want them to take the documents! 我們不希望他們拿走那些文件！
-- 肯定句： I want you to help me.（我想要你幫我。）
-- 否定句： She doesn't want him to go there.（她不希望他去那裡。）
-- 過去式： We didn't want them to take it.（我們不希望他們拿走它。）
 
 
 

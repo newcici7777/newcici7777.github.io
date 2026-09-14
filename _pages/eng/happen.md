@@ -20,6 +20,7 @@ keywords: English, What happened
 - What happened to his leg?他的腿发生了什么？
 
 ## what happened to 東西 (發生在東西身上)
+- What happened to your alarm clock?你的闹钟怎么了？
 * *What **happened to** your car?*（你的車**怎麼了**？／發生什麼事了？）
 * *What happened **to** your phone?*（你的手機**怎麼了**？）
 * What **happened to** your new phone? It has a big crack on the screen.你的新手機**怎麼了**？螢幕上有一道大裂痕。

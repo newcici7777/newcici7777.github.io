@@ -21,7 +21,7 @@ for 是一個非常關鍵的介系詞，用來連接「遲到」這個狀態與�
 ## for 把「什麼東西」當作 早餐/午餐/晚餐
 必須用 for 來表達「將這道食物」當作 早餐/午餐/晚餐。
 ```
-［食物 / 飲料］ + for + ［三餐］
+**食物 / 飲料** + for + **三餐**
 ```
 - Are we going to have Chinese food **for** dinner?（我們晚餐「要不要 / 是不是」要吃中式料理？）
   - 把Chinese food 當作 晚餐
@@ -43,7 +43,7 @@ for 是一個非常關鍵的介系詞，用來連接「遲到」這個狀態與�
 - We can have cake for dessert.我们甜点可以吃蛋糕。
 
 ## for 把「什麼東西」當作 點心
-* We can have cake for dessert. （我們可以吃蛋糕［當作］甜點。）
+* We can have cake for dessert. （我們可以吃蛋糕**當作**甜點。）
 - I'll just have an apple for a snack.（我吃顆蘋果當點心就好。）
 
 ## eat 早餐 午餐 晚餐
@@ -54,7 +54,7 @@ for 是一個非常關鍵的介系詞，用來連接「遲到」這個狀態與�
 
 ## for 把「什麼東西」連接「場合」
 把「什麼東西」作為「什麼場合」使用。
-* What should we prepare for the party? （我們派對要準備什麼［吃的/用的］？）
+* What should we prepare for the party? （我們派對要準備什麼**吃的/用的**？）
 - I need to buy lots of fruit for a party.
   - 東西(fruit) 作為 場合(party) 使用
 
@@ -114,10 +114,10 @@ for 把「物品」和「液體」綁在一起，意思包含「把這個**物�
   - 物品(ice) for 液體(water)
 
 ## for(物品 / 液體) vs. with(搭配 / 組合)
-1. I need some sugar **for** my coffee.我需要一些糖，［拿來加在］我的咖啡裡。
+1. I need some sugar **for** my coffee.我需要一些糖，**拿來加在**我的咖啡裡。
 解析： 這裡的 for 著重於「用途」。咖啡放在那裡，而糖是專門「為了這杯咖啡」而需要的配件。這是在餐廳向服務生要糖包時最標準、最道地的講法！
 
-2. I need some sugar **with** my coffee.我喝咖啡時，需要［搭配 / 附上］一些糖。
+2. I need some sugar **with** my coffee.我喝咖啡時，需要**搭配 / 附上**一些糖。
 解析： with 代表「在一起、伴隨」。這個畫面是「咖啡」跟「糖」要一起上桌/一起享用。  
 微細差別： 糖可能不一定會全部攪拌進去，而是作為旁邊配套的方糖或糖包搭著用（就像 coffee with milk 咖啡加牛奶）。
 
@@ -221,7 +221,7 @@ for free(名詞) free在這裡會變成名詞？
 
 ## for free(副詞) 免費
 for free放在句尾，負責補充說明「這件事不用花錢」
-
+- The pass is for free tea.
 - She gave this to me **for free**, so I didn't have to pay for it. 
 - They installed the new software for free. （他們免費安裝了這個新軟體。）
   - 核心動作是「安裝軟體」（installed the new software），for free 放在最後面，說明這項服務不用付錢。

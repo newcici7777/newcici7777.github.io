@@ -33,6 +33,8 @@ keywords: english, prefer
 （她比較喜歡在安靜的環境中工作。）
 - I prefer to stay home.（我比較喜歡待在家裡)
 - I prefer to wear silver.（我比較喜歡穿戴銀飾）
+- I prefer to take the subway because it's always on time.我更喜歡坐地鐵，因為它總是準時
+- Iprefer to stay here by myself.我更喜欢自己待在这里。
 
 ## perfer to 原形動詞A rather than 原形動詞B (比較喜歡A)
 rather than是**不要**，前面是「原形動詞」，後面也是原形動詞。

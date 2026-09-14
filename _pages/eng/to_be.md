@@ -18,9 +18,8 @@ keywords: english, to be
 - The duck must cook for a long time to be perfect.鴨肉必須煮很長時間，以達到完美的狀態。
   - perfect（形容詞），形容人或事物達到「完美」的狀態
 
------------------------------
-## to + 一般動詞 「目的」
-表達目的、願望或狀態！
+## not to be 形容詞
+- Ву the way, the manager told us **not to be** late.顺便提一下，经理叫我们不要迟到。
 
-- She woke up early to catch the train. （她早起為了趕火車。）
-  - 這邊的to是目的
+-----------------------------
+

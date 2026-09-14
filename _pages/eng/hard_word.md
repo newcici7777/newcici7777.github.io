@@ -75,17 +75,5 @@ Crawl（爬行） [ˈkrɔl]
 
 --------------
 
-## series of 文法
-字面意思： 「一連串的」、「一系列的」。
-
-Series（系列、連續）這個字很有趣，它的單數和複數長得一模一樣（前面通常會加冠詞 a）。
-
-固定的文法公式是：a series of + 複數名詞。
-
-所以句子里是 each series of stories（每一個系列的故事）。
-
-雖然 series 是單數，但因為是「一系列」，後面的名詞一定要用複數形（stories）。
-
-- The police are investigating a series of thefts in the neighborhood. （警方正在調查該社區的一連串竊盜案。）
 
 

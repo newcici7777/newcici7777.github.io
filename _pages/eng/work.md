@@ -267,7 +267,7 @@ complete明確目標、任務要完成，表單需要填寫。
 ## worker 員工
 - Our grandparents were't hotel workers.我们的祖父母以前不是酒店员工。
 - was your younger sister a hotel worker?你的妹妹以前是一个酒店员工吗？
-
+- They were **the best** worker**s** **at** this company.他们以前是在这家公司最好的员工。
 
 ## 其它
 - I don’t work on this project.這個專案我不參與 

@@ -150,6 +150,12 @@ as 通常放在動詞後面
 ## as always 一如往常地
 當作「副詞片語」（放在句尾或句首）
 
+- As usual, Lisa was late.像平时一样，丽莎迟到了。
+- As usual **there was** too **much traffic** this morning.像平时一样，今天
+早上交通非常繁忙。
+  - traffic 不可數名詞，不能加a，也不能加S，不可數名詞要用much.
+  - traffic 不可數名詞，單數，用there **was**
+
 * Thank you **as** always.（謝謝你，**一如既往地**。）
   - always：總是、一直。
   - as「正如一直以來那樣」➔ 也就是「跟平常一樣、一如往常」。
