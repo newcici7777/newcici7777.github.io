@@ -66,6 +66,7 @@ help 不是動詞，而是不可數名詞，意思是「幫助」或「援助」
 need + some help（需要一些幫助）
 ```
 - She needs help with this project.（她在這個專案上需要幫忙。）
+- Mike needs help with his postcard.
 - I need help with my homework.（我需要人幫忙寫功課。）
 - I need some help.（我需要一些幫忙。）
 - Can you give me some help?（你可以給我一些幫助嗎？）

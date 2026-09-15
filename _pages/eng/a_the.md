@@ -52,23 +52,31 @@ keywords: English, a The This These That Those
 ## the 這個/那個
 the是指這個 或 那個，不是任何一個。
 
+The rain / The wind / The storm / The flood（雨、風、暴風雨、洪水）：
+
+地球上有無數場雨或風，但當你說出這些詞，通常是指「我們正在經歷的**這場**雨／**這陣**風／**這場**暴風雨」，或者是指大自然中這種特定的天候系統。
+
+- 泛指所有雨：I hate rain.（不用 the）
+- 特定指外面的**這場**雨：Look at the rain.（加 the）
+
 - Welcome aboard **the** flight! （歡迎來到**這個**航班上！）
   - 不是任何一台航班，就是「這個」航班
 
-- through the tunnel（穿過隧道 ── tunnel 是可數名詞）
-  - 有the是「這個」的隧道
-  - 沒有the，代表是全世界的任何一個隧道
-- through hard work（透過努力）
-  - 沒有the: work 是不可數名詞，努力不能數，抽象名詞
 
 ## the 全世界只有一個
 網路前面固定用the，這世界上「只有一個」網路，所以用the
-- Do you use **the internet** at work?你们在工作时用网络吗？ 
+- Do you use **the internet** at work?你们在工作时用网络吗？
+
+世界上（我們這個太陽系）就只有一顆太陽。在英文中，宇宙中獨一無二的名詞前面一定會加 **the**。
+- The sun（太陽）
+- the moon 月亮
+- the earth 地球
+- the sky 天空
 
 ----------------------------
 ## 單數/複數可數名詞: 加the/不加the
 - 單數可數，不加the  : 泛指任意一個/任何一個，沒特別指定是那一個
-- 複數可數s，不加the : 泛指世界上**所有的**，沒特別指定是那一群
+- 複數可數s，不加the : 泛指世界上**所有的/任何**，沒特別指定是那一群
 - 加the: 「這個」或「那個」，「這群」或「那群」，特別指定那一個/一群。
 
 ### crowd(單數可數名詞) **一群**人 [/kraʊd/] 
@@ -82,7 +90,7 @@ the是指這個 或 那個，不是任何一個。
 ### crowd**S**(複數可數名詞) 人群**們**、**人潮** 通常不加冠詞
 - 複數可數名詞 + **S**
 - **不加the** (**泛指世界上所有的**)
-  - I don't like big crowd**s**.（我討厭超多**人潮**。—— 泛指**所有的**擁擠的群體）
+  - I don't like big crowd**s**.（我討厭超多**人潮**。—— 泛指**所有的**擁擠的群體都討厭）
   - There were huge crowd**s** at the concert.（演唱會現場有巨大的**人潮**。）
   - Crowd**s** gathered in the square.廣場上聚集了**人潮**。）
 - 加了 the（這群 或 那群）：
@@ -92,7 +100,7 @@ the是指這個 或 那個，不是任何一個。
 ## 抽象名詞作為「狀態、環境」，**不加**the,a，**後面不加S**
 抽象名詞表達抽象的「狀態、環境」時，會變成零冠詞（Zero article），不加 a 也不加 the，表示進入某種狀態
 
-- in nature (nature 抽象概念不加 the。）)
+- in nature (nature 抽象概念不加 the。）
   - He likes to spend his weekends in nature.（他喜歡週末在大自然中度過)
 - in traffic(抽象名詞前面沒有the)
   - traffic 不是指「眼前那條特定馬路上的車流」，而是指一種普遍的「身處交通擁擠的狀態中」。
@@ -106,7 +114,6 @@ the是指這個 或 那個，不是任何一個。
   - in total silence（在完全寂靜中）
   - in complete silence（在完全寂靜中）
     - We listened to the speech in complete silence.（我們在一片死寂中聽演講——這裡即使加了形容詞 complete，一樣不加冠詞。）
-
 
 其它表達狀態的抽象名詞，不加the跟a
 - in traffic（在車陣中／塞車中）

@@ -225,8 +225,7 @@ return 的詞性是及物動詞（Transitive Verb）。
 Instructions（說明書/操作指南）： 買家具回來組裝，裡面有很多個「步驟一、步驟二」，所以永遠是複數。
 
 
-3281
-
+5603
 -----------------------------------------
 
 adorable 可爱
@@ -234,17 +233,9 @@ cereal
 
 Onion overload
 
-
-
-
-
 - Are you sure about this?
 
-
 - I think my job is giving me bad dreams!
-
-
-
 
 --------------
 
@@ -255,14 +246,11 @@ English then.我当时经常哭，因为我不会英语。
 
 ------------------
 
-
-
 - I'm so tired of customers complaining all day.
 
 - She sits down. Her dog jumps up on the sofa.
 
 - These fruits aren't fresh!They're very old!这些水果不新鲜！它们放很长时间了！
-
 
 - Maybe it's a bear...
 
@@ -271,9 +259,7 @@ English then.我当时经常哭，因为我不会英语。
 
 - It's so dark.
 
-
 - I wanted to promote him.
-
 
 - emotions on special days
 
@@ -284,16 +270,86 @@ English then.我当时经常哭，因为我不会英语。
 - The food was excellent!食物很棒！
 - food on the mountain
 
-
-
-
 - Congratulation**s**, Duo!
 
-
 - I arrived at three o'clock.我是在三点钟到的。
-
 - They want to practice soccer every day.他们想要每天练习踢足球。
 - John needs to work.约翰必须工作。
 - Paul likes to eat chocolate.保剪喜欢吃巧克方
 
+-------------------------------------
+## at half-price 半價
+- The jacket was bought **at** half-price.
 
+## deals 划算的東西
+可數名詞，後面要加S
+- finding deal**s** **at** market**s**.
+
+
+## hear + 名詞 (聽到名詞的聲音)
+- I can hear the sound of the wind.我能聽到風聲
+- Can you hear that sound?你能聽見那個聲音嗎
+- Can you hear the bear?你能听到熊的声音吗？
+
+## make sounds
+- Those birds make beautiful sound**s**.那些鸟发出美丽的声音。
+
+## prefer to
+- She prefers to go hiking.她更喜欢去徒步旅行。
+- I prefer to take the subway because it's always on time.我更喜欢坐地铁，因为它总是很准时。
+
+- It's a black rabbit,isn't? 是一只黑色的免子，不是吗？
+- Those are very big snakes, aren't **they**?那些是非常大的蛇，不是吗？
+
+## It's 氣象
+- It's too foggy, I can't see the starts.雾太大了，我看不到星星。
+
+## variety
+- There **are** a variety of path**s** that we can walk **on**.有各种各样我们可以走的小路。
+- You'll see a variety of plant**s** in the park.你在公园里会看到各种各样的植物。
+- You will see a variety of fish in this
+river.你在这条河里会看到各种各样的鱼。
+
+## varieties
+- Many variet**ies** of monkey**s** live in this forest.很多不同种类的猴子住在这个森林里。
+
+## go for a 
+- why don't you go for a walk?你为什么不去散步？
+
+## along
+- Can we walk along this path?我们可以沿着这条小路走吗？
+- Let's walk along the path on the left.咱们沿着在左边的小路走吧。
+
+
+## how long
+- How long is the hike? 健行要多久時間
+
+## by self
+- Don't go into the forest by yourself. 不要自己一個人走進森林
+- Don't go camping in the forest by yourself.不要自己一个人去森林里野营。
+
+- The lake near the mountain is ver deep.在山附近的湖非常深。
+
+
+## behind
+- **The** sun is behind **the** cloud**s**.太阳在云的后面。
+- Look! There's a monkey standing behind the rabbit!看！有一只猴子站在兔子后面！
+- There's a parking lot behind the hotel.酒店后面有一个停车场。
+
+## be careful of
+- Ве careful of wild animal**s**.小心野生动物。
+- During the hike, be careful of wild animals.
+
+## or not 要不要
+- Are they going to join us, or not? 他们到底要不要跟我们一起去？
+
+
+## give
+- Don't give those bananas to those monkeys.不要把那些香蕉给那些猴子。
+
+
+- Fans gather to enjoy games.
+
+
+## offer ... for free 免費提供
+- The hotel might not offer breakfast for free.飯店可能不提供早餐

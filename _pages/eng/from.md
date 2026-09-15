@@ -20,6 +20,18 @@ keywords: english, from
 - I bought this laptop from Apple.（我這台筆電是從蘋果買的 → 強調是跟 Apple 買的）
 - She bought fresh honey from a local farmer.（她向當地農夫買了新鮮蜂蜜）
 
+## from 從某人那裡得到某物／協助(來源)
+from 依然是維持它核心的 「來源」 概念！友人的協助與載送就是這個好處的來源（Source）。
+- I missed the bus, so I had to get a ride from a friend.我錯過公車了，所以我只好搭朋友的便車。
+  - get a ride（搭便車、讓人載一程）的這個「乘車服務或協助」，是從朋友那裡得到的。友人的協助與載送就是這個好處的來源（Source）。
+- get help from a teacher（從老師那裡得到幫助）
+- get a present from mom（從媽媽那裡收到禮物）
+
+## from 來源
+- We have a few extras left over from the meeting.我們有些從會議中剩下來的東西。
+   - from the meeting 來自這次會議
+   - left over 剩下來的
+
 ## from 人
 - Zari opens a gift from her mother.Zari打開一份來自她媽媽的禮物。
 - This is an email from him.这是一封来自他的电子邮件。

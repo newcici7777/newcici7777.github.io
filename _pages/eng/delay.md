@@ -40,7 +40,7 @@ keywords: English,a delay
 - We should change to line six, shouldn't we?我们应该换六号线，不是吗？
 - We'll change to the blue line **at** Times Square station.我们会在时代广场站换蓝线。
 - Should I change to line four **at** the next station?我应该在下一站換四号线吗？
-
+- I should change to line three here, shouldn't I?我应该在这里换三号线，不是吗？
 
 ## change trains 換車
 注意！change後面沒有to！
@@ -81,6 +81,8 @@ keywords: English,a delay
 ## weekly pass 月票(通行證)
 - You can get a weekly pass **at** the ticket machine.可以在售票機買月票
 - Here is your weekly pass. 这是您的月票！
+- Excuse me, I need a monthly pass.打扰了，我需要一张月票。
+- Do you want a weekly pass or a monthly pass?你想要一张周票还是一张月票？
 
 ## the left-hand side 左側
 - The door on the left-hand side is **the** exit.在左手边的门是出口。
@@ -88,11 +90,17 @@ keywords: English,a delay
 ## use the exit 使用出口
 - We can use this exit, can't we? 我們可以走出口，不是嗎？
 - The door on the left-hand side is **the** exit.在左手边的门是出口。
-
+- which door is the exit?哪扇门是出口？
+- May I use the exit?我能走这个出口吗？
 
 ## on the subway
 - **There's** always someone **sleeping** **on the** subway.在地铁上总是有人在睡觉。
   - sleeping 後位修飾someone, there is someone有人
+- There was a strange noise on the subway.在地铁上有奇怪的响声。
+- There are too many passengers on the subway.在地铁上有大多乘客。
+- The floor was wet on the subway.在地铁上地板很混。
+- That's strange, isn't it?
+
 
 ## 大眾交通工具單字
 - Attention 注意
@@ -100,7 +108,7 @@ keywords: English,a delay
 
 ## on time 及時
 - The subway in Beijing is always on time.北京的地铁总是很准时。
-
+- The bus isn't on time all the time.
 
 ## leave 出發
 - Attention, passengers, line one will leave in one minute.乘客们，注意，一号线会在一分钟后离开。
@@ -117,14 +125,18 @@ keywords: English,a delay
 - Is this one way ticket less than two dollar**s**.这张单程票不到两美元吗？
 - Are round-trip tickets cheaper?往返票更便宜吗
 - Would you like a one-way ticket or **a** round-trip ticket?你想要一张单程票还是一张往返票？
+- **Are** round trip ticket**s** cheaper?往返票更便宜吗？
+
 
 ## on the right-hand side 右手邊
 - right-hand右手邊
 
 - Is the ticket machine on the right-hand side?售票机在右手边吗
+- The ticket machine is on your right-hand side.售票机在你的
+右手边。
 
 - The machine sell**s** tickets.售票機賣票
-
+- Where's the ticket machine.售票机在哪里？
 
 
 ## works 
@@ -132,8 +144,12 @@ keywords: English,a delay
 
 - Each passenger must have a ticket.每个乘客必须有一张票
 
-
+## This is one's first time
 - Is this your first time taking the subway?这是你第一次坐地铁吗？
+- This is Emma's first time taking the subway in Chicago.这是艾玛第一次在艺加哥坐地铁。
+- How was your first time taking the subway in New York?你第一次在纽约
+坐地铁怎么样？
+
 
 
 - You can easily get to Times Square by subway.坐地铁到时代广场很容易。
@@ -142,7 +158,7 @@ keywords: English,a delay
 
 
 ## especially here 特別是在這裡
-You shouldn't eat fried chicken especially here.你不应该吃炸鸡，特别是在这里。
+- You shouldn't eat fried chicken especially here.你不应该吃炸鸡，特别是在这里。
 
 
 
@@ -202,3 +218,19 @@ You shouldn't eat fried chicken especially here.你不应该吃炸鸡，特别�
 
 ## 介系詞後位修飾
 - The view **at the top of the mountain** is fantastic.在山顶上的景色很棒。
+
+----------------------
+
+- He's jumping around because he hit his toe on the door.
+- That happens a lot. He should be more careful.
+
+- He lost his phone while he was getting a book.他去拿一本书时弄丢了他的手机。
+
+- how many classes do we have?我们有几节课？
+
+- My husband carried my purse to the car.我的丈夫把我的手提包拿到了车上。
+- We were talking a few hours on the phone.我们打电话打了
+好几个小时。
+
+- Are you drying your hair?你在吹头发吗？
+- Anna was taking a shower while Lisa was drying her hair.丽莎在吹头发时，安娜在冲澡。

@@ -307,6 +307,9 @@ for + 一段時間，代表某個動作或狀態持續多久。
 - No, I've never been here.（沒有，我從來沒來過。）
 - No, I haven't.（沒有，我沒有)
 
+### 例句
+- I've already taken the chemistry exam once.我已經參加過化學考試一次
+
 -----------------------------------
 
 ## 現在式問經驗

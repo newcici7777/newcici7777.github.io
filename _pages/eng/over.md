@@ -106,7 +106,7 @@ all over + 地方 = 到處、遍及全
 
 -----------------------------
 
-## over 結束
+## over(形) 結束
 - Over.對講機通話結束
 - It's over.（結束了)
 - The meeting is over.（會議結束了。）
@@ -214,3 +214,61 @@ Over and over (again)：一次又一次、不斷地
   - He spoke in a loud voice to make himself heard over the noise.他用很大的聲音，才壓過噪音，讓自己被聽見。
 - I had to shout over the noise of the traffic. （我必須大喊，才能蓋過車陣的噪音被聽到。）
 - We could hear music playing over the noise of the party. （我們在派對的喧鬧聲中，隱約聽見了音樂聲。）
+
+------------------------------
+
+## over(副) 剩下
+
+- We have a few extras left over from the meeting.我們有些從會議中剩下來的東西。
+   - from the meeting 來自這次會議
+   - left over 剩下來的
+
+幫你把這四個例句中的 **over** 詞性、中文意思以及它在句子中的**放置位置**整理成表格，方便你快速對照理解：
+
+| 例句 | 詞性 | 中文意思 | 放置位置 |
+| --- | --- | --- | --- |
+| **1. You can keep the change. Keep the rest over.**<br><br>（零錢不用找了，剩下的你留著。） | 副詞 (Adverb) | 留下、剩餘 | **句尾：** 放在受詞（the rest）之後，用來修飾動詞 keep，強調把剩下的「留下來」。 |
+| **2. If there is any cake left over, we can eat it tomorrow.**<br><br>（如果蛋糕還有剩的話，我們明天可以吃。） | 副詞 (Adverb) | 剩下、殘留 | **片語中間（夾在中間）：** 放在過去分詞 left 的後面，共同形成分詞片語修飾前面的名詞（cake）。 |
+| **3. I cooked too much rice; we have some over for tomorrow's lunch.**<br><br>（我飯煮太多了，我們還剩下一些可以留作明天的午餐。） | 副詞 (Adverb) | 剩餘、有多 | **句中（動詞後面）：** 放在代名詞受詞（some）之後，表示「有些（飯）留了下來」。 |
+| **4. After paying all the bills, I didn't have much money over.**<br><br>（付完所有的帳單後，我沒剩下多少錢。） | 副詞 (Adverb) | 剩餘 | **句尾：** 放在受詞（much money）之後，表示消費後「沒有剩多少錢在手上」。 |
+
+
+---
+
+### 💡 核心觀察小結
+
+從上面可以發現，當 `over` 表示「剩餘、留下」時，它的位置通常都在：
+
+1. **動詞或受詞的後面**（如例 1、3、4）
+2. **緊跟在分詞 `left` 的後面**形成固定結構 `left over`（如例 2）
+
+------------------
+
+在 **`left over`**（或寫成名詞形時的 *leftover*）這個片語中，**`over` 的詞性是副詞（Adverb）**。
+
+以下為你詳細說明它的角色與含意：
+
+---
+
+### 1. 為什麼它是副詞？
+
+在英文中，有些動詞可以和副詞結合，形成「片語動詞」（Phrasal Verb）或分詞片語。
+
+* 這裡的 **`leave`**（過去分詞為 *left*）是動詞。
+* 後面的 **`over`** 不是介系詞（後面沒有直接受詞），而是一個**副詞**，用來修飾前面的動詞，表示動作完成後的「殘留」或「多出」。
+
+### 2. `over` 當副詞的常見含意
+
+當 `over` 當作副詞時，常常帶有「剩餘、留下」**或**「結束、過去」的意思：
+
+* **留下、剩餘：** 像 *left over* 或 *carry over*（延期、轉移）。
+* **結束、完畢：** 例如 *Is the meeting **over**?*（會議結束了嗎？這裡的 over 是形容詞/表語，意指「結束的」）。
+
+### 3. 補充：當它變成名詞或形容詞
+
+* **當作形容詞（通常連寫成一個字 *leftover*）：**
+* *leftover food*（剩菜剩飯）
+
+
+* **當作名詞（通常用複數 *leftovers*）：**
+* *We are eating **leftovers** for dinner.*（我們晚餐要吃剩菜/昨天的飯菜。）

@@ -24,10 +24,13 @@ keywords: english, up to , down to
 - Go down to the first floor.（走到一樓去。）
 - Be careful when you go down the stairs.（你走下樓梯時要小心。）
 
-## go up/down + 往上走的方式(the elevator/the stairs)
+## go up + 往上走的方式(the elevator/the stairs)
 - You have to go up the elevator, not down.你必須搭電梯往上，不是往下
-- If you go up the stairs, you'll see the restaurant.如果你走上樓梯，就會看到餐廳。
-- Go down the stairs（走下樓梯）
+- If you go up **the** stair**s**, you'll see the restaurant.如果你走上樓梯，就會看到餐廳。
+
+## go downstairs 走下樓
+- Go down **the** stair**s**（走下樓梯）
+- Go **downstairs**.
 
 ## Take the stairs（走樓梯）
 - Let's take the stairs instead of the elevator.（我們走樓梯，不要搭電梯吧。）

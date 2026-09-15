@@ -1,14 +1,16 @@
 ---
-title: 分詞修飾名詞
+title: 動詞過去式修飾名詞
 date: 2026-08-24
 keywords: english
 ---
-- The hat you made is amazing!
-  - 原本:The hat (that/which) was made by you is amazing!
-  - 省略 關係代名詞(that/which) + be動詞 (was)
-  - 簡化: The hat made by you is amazing.
-  - 把by 刪掉，被動變主動(you變主詞)，是「你做的」，把you移到分詞前面，變成you made 
+## 動詞過去式後位修飾
+動詞過去式放在名詞後面，用來形容前面的名詞，以下為主動語態，並非被動語態。
 
+```
+名詞 + 人 + 動詞過去式
+```
+
+- The hat you made is amazing!
 - The dress you bought is amazing! 「買衣服」這個動作已經在過去發生了！所以用過去式
 - The book I read was sad.（我讀的那本書很悲傷。）
 - The cake you baked is so delicious! （你烤的蛋糕超好吃！）

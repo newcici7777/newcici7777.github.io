@@ -39,9 +39,13 @@ was / were + V3
 will be + V3
 ```
 - The work will be finished tomorrow.（工作明天會被完成。）
+
+
 --------------------
+
 ## 被動式例句:
 - The area is flooded.（這個地區被水淹了／泡在水裡了）
+- The jacket was bought **at** half-price.
 
 ## 名詞 + 過去分詞
 英文中有很多這種「名詞 + 過去分詞」的慣用語，用來形容名詞。  

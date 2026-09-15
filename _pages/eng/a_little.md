@@ -112,6 +112,9 @@ a little(副詞) + bit(副詞) = 一點點
 - I'm kind of tired.（口語常講 I'm kinda tired.）
 - 👉 含糊社交： 「嗯...算是有點累吧。」
 - kind of expensive（算是有點貴）
+- her hair is kind of like yours.她的頭髮有點像你的
+  - kind of（有點、稍微）
+  - be like（像）
 
 |能修飾的對象|a little|kind of|範例與說明|
 |:------|:-------|:--------|:---------------------|
