@@ -39,3 +39,18 @@ ten - tenth
 只有在「前面沒有確切數字」，且用來泛指「成百上千、數以百計」時，才會加上 s 並搭配 of：
 - Hundreds of people came to the party.（數以百計的人來參加派對。）
 - There are thousands of stars in the sky.（天上有成千上萬顆星星。）
+
+## 複合序數詞
+- Do you want to go to Twenty-First Street?
+
+### 十位數與個位數之間一定要加
+被視為一個整體的複合形容詞／序數
+- twenty（二十）+ first（第一）= 連字號連起來 Twenty-First 第二十一
+  - Twenty-second（第二十二）
+  - Thirty-third（第三十三）
+  - Forty-fourth（第四十四）
+
+走在美國或英國的街頭，看路名、地址或招牌（例如 21st Street），你會發現：
+數字形式：通常會直接寫 21st Street（完全沒有橫線的問題）。
+
+

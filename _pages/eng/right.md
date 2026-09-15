@@ -45,8 +45,13 @@ keywords: english, right
 - She advocates for equal rights. 她提倡平等權利。 
 
 ## on the right 右邊(名詞)
+上下左右介系詞習慣放後面。
 - The bank is on the right.（銀行在右邊。）
 - It's on the right = 它在右邊（位置）
+- Our apartment is in the last building on the right.我們的公寓在右邊最後一棟。 
+- The coffee shop is the second store on the left.（咖啡廳是左邊數來第二家店。）
+- My desk is the last one on the right.（我的座位是右邊數來最後一個。）
+
 
 ## Turn right(副詞) 右轉
 - Turn right...（先右轉！）

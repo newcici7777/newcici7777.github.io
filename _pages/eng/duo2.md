@@ -208,8 +208,15 @@ return 的詞性是及物動詞（Transitive Verb）。
 - Serve warm.溫溫地吃。
   - The pie is best serve warm with a little custard.（這款派最好是溫溫地吃，配一點蛋奶醬。）
 
+---------------------------
 
+## try some 吃一些看看
+- Try some mapo tofu! 嚐一些麻婆豆腐 
+- Try some cake! It’s delicious.（嚐嚐看這個蛋糕！很好吃喔。）
+- Do you want to try some?（你想不想吃吃看 / 嚐一點？）
+- Try some bubble tea.（喝喝看珍奶。）
 
+----------------------------
 
 ## 無法分類
 - Ben is angry at us.
@@ -263,12 +270,7 @@ English then.我当时经常哭，因为我不会英语。
 
 - emotions on special days
 
-- The dessert here is always excellent.
-- The dessert here is always excellent.这里的甜点总是很棒。
 
-- The food at the restaurant was terrible!
-- The food was excellent!食物很棒！
-- food on the mountain
 
 - Congratulation**s**, Duo!
 

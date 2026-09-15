@@ -97,6 +97,20 @@ The rain / The wind / The storm / The flood（雨、風、暴風雨、洪水）�
   - **The** crowd**s** were loud.（**這群/那群**的人潮很吵。）
 
 ------------------------------------------
+
+## 複數可數名詞S （通稱、泛指）
+習慣用複數名詞來表示這是一個「通稱」或「經常發生的事」。
+
+- I love going to jazz concert**s**!
+  - 表達你喜歡的是「各場、各式的爵士音樂會（通稱、泛指）」，而不是單單指某一個特定的音樂會。
+- I love going to **the** jazz concert.（我喜歡去聽那場爵士音樂會。——這裡加了 the 且用單數，通常是指你們剛剛好在討論某個特定日期、特定的一場音樂會。）
+
+- I love watching movie**s**.（我喜歡看電影——指的是電影這種娛樂，不是某一部特定的電影。）
+- She enjoys listening to podcast**s**.（她喜歡聽 Podcast。）
+- Do you like attending part**ies**？（你喜歡參加派對嗎？）
+
+
+------------------------------
 ## 抽象名詞作為「狀態、環境」，**不加**the,a，**後面不加S**
 抽象名詞表達抽象的「狀態、環境」時，會變成零冠詞（Zero article），不加 a 也不加 the，表示進入某種狀態
 

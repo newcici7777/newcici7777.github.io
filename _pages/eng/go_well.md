@@ -93,3 +93,31 @@ Did you do well...?
 * **`Things go well`** ＝ 事情正在往好的方向「進行」。
 
 所以下次如果想祝別人事情順利，除了說 *Good luck* 之外，也可以試著說 *"Hope it goes well!"* 聽起來會非常自然喔！
+
+------------------------
+
+## as we go along 邊做邊看
+- Go along: 進行、過程中
+- As : 同時，一邊...一邊...
+- as we go along: 進行動作的過程中，會 ....
+
+as we go along放在句尾。
+
+- Read the book, and I will explain as we go along.讀這本書，我會邊讀邊幫你解釋。
+  - as we go: 讀的過程中，會做...什麼事
+- Don't worry if you don't understand everything right now; you'll figure it out as you go along. （現在不用每件事都懂沒關係，你邊做邊學就會懂了。）
+- We don't have a strict plan for the project yet, so we'll just make decisions as we go along. （我們對這個專案還沒有嚴格的計畫，所以我們就走一步算一步、邊做邊調整。）
+- Learning a new language is like a journey; you pick up new words as you go along. （學新語言就像一趟旅程；你在推進的過程中會不斷學到新單字。）
+- The rules of the game are quite simple, and I'll explain them to you as we go along. （遊戲規則很簡單，我們邊玩邊跟你解釋。）
+- She was nervous at first, but her confidence grew as she went along. （她一開始很緊張，但隨著過程推進，她的自信心就越來越強了。） (註：go 的過去式是 went)
+
+## As you go 當下
+- go: 進行
+- AS: 同時
+- As you go: 進行動作的過程中，會 ....
+
+- Please fill out the form, and you can correct any mistakes as you go. （請填寫這份表格，你可以在填寫的當下順便修正任何錯誤。）
+- You will learn the tricks of the trade as you go. （你在做的過程中，自然就會學到這個行業的訣竅。）
+- Keep your workspace clean as you go so you don't have a huge mess at the end. （你在動手做的同時順便保持工作區乾淨，這樣最後才不會一團亂。）
+- Read the instructions carefully, and check off each item as you go. （請仔細閱讀說明，並在完成的當下把每個項目打勾。）
+- It’s a trial-and-error process; you'll make adjustments as you go. （這是一個試錯的過程；你會在過程中隨時做出調整。）

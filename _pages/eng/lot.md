@@ -7,7 +7,6 @@ keywords: english, a lot of, lots of
 - That's a lot of pizza.
 - A lot of people do this every day.
 - A lot of people are waiting behind you!
-- A lot of thing**s**!
 - Do you hav a lot of meetings today?你们今天有许多会议吗？
 
 - She doesn't have a lot of time.她没有很多时间！

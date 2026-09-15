@@ -13,6 +13,12 @@ work是抽象名詞，不可數名詞，前面不加a 或the
 - They speak Chinese at work.
 - Do you use your new computer at work?你在工作时用你的新电脑吗？
 
+## at your last job 在你的上一份工作
+at 在這裡就像是一個定位針，精準指出你是在「前一份工作的那個位置／環境中」擔任這個職務喔！
+- Were you a secretary at your last job? 你上一份工作是秘書嗎？
+- What did you do at your previous job?（你在前一份工作做什麼？）
+
+
 ## I'm going to work(名詞). 我要去上班了。
 這裡的 work 不是動詞，它是名詞（工作地點/上班這件事）。
 
@@ -204,6 +210,8 @@ discuss + [某事] + with + [某人]
 - I need to discuss **this project** with my team.（我需要和我的團隊討論這個專案。）
 - Can we discuss **this** with him tomorrow?（我們明天可以跟他討論這件事嗎？）
 - She is discussing **the details** with the client.（她正在跟客戶討論細節。）
+
+
 
 -------------------------------
 

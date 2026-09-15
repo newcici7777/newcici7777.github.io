@@ -24,14 +24,22 @@ variety 會變成可數名詞（varieties）？
 - She likes variety in her work.她喜歡工作中有變化
   - 「變化」是一種抽象的生活態度或工作氛圍，不是指具體的一項一項東西，所以不用複數。
 
-## Various（形容詞）+ 複數名詞 「各種各樣的」
+## Various（形容詞）+ 複數名詞 「各式各樣，種類繁多」
+Various琳琅滿目、種類繁多（各式各樣），強調數量多、種類很豐富  
+
 它是形容詞，通常放在名詞的前面來修飾名詞。
 ```
 various + 名詞複數。
 ```
+- There are various shops on Fifth avenue.第五大道上有各式各樣（各種不同類型）的店。
 - We received various suggestion**s** for the project.（我們收到了關於這個專案的各種建議。）
 - The reasons for his resignation are various.（他辭職的原因有很多種。)
   - 形容詞當放在be動詞後當補語，補充說明。
+
+### various 與 different
+- 如果你想表達的是「種類很多、五花八門」 👉 用 various。
+- 如果你想表達的是「這跟那不一樣、有區別」 👉 用 different。
+
 
 ----------------------------
 

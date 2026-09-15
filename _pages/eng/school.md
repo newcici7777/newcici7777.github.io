@@ -165,8 +165,20 @@ At (據點)地圖上的座標定位在學校。
 school 當抽象名詞，抽象名詞不可數，前面沒有a 跟 the。
 - Anna and her boyfriend will be at the library after school.
 
-### start 開學
+## start 開學
+### 主詞是學生
 - When do you start school?
+- Will the students start school in the fall? 學生在秋天開學。
+  - 主詞是學生
+- The students start school in September.（學生們在九月開學／開始上課。）
+- Students start school in the fall.
+
+### 主詞是學校
+- School starts in the fall.
+- School begins in September.（學校在九月開學。）——這裡的 School 指的是「學校的課程運作」，這時它就可以當主詞。
+- The school opens in the fall.（這所學校在秋天開學。）
+- The new semester starts in the fall.（新學期在秋天開始。）——主詞是「學期」。
+
 
 ## on campus（在校園裡）
 campus 指的是學校那塊「土地、地面範圍」，所以用 on。

@@ -48,6 +48,11 @@ get 是一個超級萬用的動詞。當它搭配房間、座位、車子等空�
 - We can get a bigger room if you want.如果你想的話，我們可以換到（或弄到）一間更大的房間。
 
 
+## get dark/late 天色變暗或時間很晚
+- It's getting late.天色變很晚
+
+
+
 ## 抵達
 - When will we get there?我們什麼時候會到那裡？
 - Call me when you get home.你到家時打給我。

@@ -75,5 +75,28 @@ Crawl（爬行） [ˈkrɔl]
 
 --------------
 
+## Premiere（結尾多了一個 e）
+- prae-（字首）：意思是 before（在...之前、領先、第一）。
+- emere（動詞字根）：意思是 to take（拿取、購買）。
+當這兩個組合在一起（拉丁文 praemiere／法文 premiere），原本的概念是「被拿在最前面的、第一的」。
+
+詞性：名詞 / 動詞
+意思：首映、初次登場（電影、舞台劇、音樂會的第一場公開演出）。
+記憶小撇步：
+想像字尾多出來的那個 e 是 Event（活動） 或 Entertainment（娛樂）。
+只要看到這個字，腦袋就要聯想到「紅毯、電影首映會、明星登場」的畫面。
+例句：
+The movie had its world premiere last night.（這部電影昨晚舉行了世界首映。）
+
+##Premier（沒有結尾的 e）
+詞性：形容詞 / 名詞
+意思：
+形容詞：第一的、首要的、最高級的（Primary 的高級親戚）。
+名詞：總理、首相（國家或地方政府的行政首長，例如加拿大省長或澳洲州長也常被稱為 Premier）。
+記憶小撇步：
+想像它比 Premiere 短了一截，但它代表的是「第一把交椅（總理/首相）」或是「首要的（Premier league 頂級聯賽）」。
+例句：
+He is the premier of the province.（他是該省的省長／總理。）
+The English Premier League (EPL)（英格蘭超級足球聯賽）
 
 

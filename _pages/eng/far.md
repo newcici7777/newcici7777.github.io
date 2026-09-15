@@ -7,12 +7,27 @@ keywords: english, how far
 - It's about 2 kilometers.（大約兩公里。）
 - It's about 2 kilometers away.（大約兩公里遠。）
 
+----------------------------
+
+## be + [數字/距離單位] + from + [地點] 距離某個地點有多遠
+
+- A mile from the theater（距離劇院一英里）
+- Two kilometers from here（距離這裡兩公里）
+- Ten minutes away from my office（距離我的辦公室十分鐘車程）
+- We are only two miles from the sea.
+
+放在句尾（補充說明）：
+- The restaurant is a mile from the theater. （那家餐廳距離劇院一英里。）
+- My house is five minutes from the station. （我家距離車站五分鐘路程。）
+
+放在句首（修飾整個句子，常加逗號）：
+- A mile from the theater, we found a cozy little cafe. （在距離劇院一英里的地方，我們找到了一家溫馨的小咖啡廳。）
+
+---------------------------
+
 常用 far 來問距離，例如:
 - How far is it?
 - It is a short distance from here.
-
-## be + 數字 距離單位 + from 基準點
-- We are only two miles from the sea.
 
 ## The distance (距離)
 Distance 是「距離」（名詞)，Away 是用來形容「有多遠」（副詞）。

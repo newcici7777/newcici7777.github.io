@@ -39,4 +39,5 @@ when是中斷的動作。過去進行式是持續的動作。
   - 核心事件 A：Were you eating cake? （你在吃蛋糕嗎？）
   - 時間長度：all morning （持續了整個早上）
   - 對比事件 B (while 子句)：while I was shopping （當我在逛街的時候）
+- Dad was reading whileI was drying my hair. 爸爸在看書，同時我在吹頭髮。
 

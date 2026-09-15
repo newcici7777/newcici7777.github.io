@@ -103,11 +103,22 @@ build ，強調那個「堆疊、建造」的過程。
 - build a campfire（生營火／疊木材起營火）
 - build a sandcastle（堆沙堡——同樣是一層層疊起來的）
 
+-------------------
+
 ## in her free time
 - I like to read books in my free time.（我喜歡在我的空閒時間看書。）
 - What do you usually do in your free time?（你通常都在空閒時間做什麼？）
 - My mom often bakes cookies in her free time.
 - She is a singer in her free time.她在她的空闲时间是一个歌手。
+
+## our time 我們在這裡度過的時間
+our time 的意思是「我們在這裡度過的時間」，形容一段經歷，不可數名詞
+
+- We enjoyed our time here.我們很享受在這邊的時光
+- Thank you for your time.（謝謝你撥冗／謝謝你的時間——這裡就是指謝謝對方花時間陪你或幫忙。）
+
+
+---------------------
 
 ## end(動詞) 結束
 - Did the concert end late yesterday?昨天的演唱會很晚才結束嗎？
@@ -203,6 +214,8 @@ to : 一路跟著對方移動到了哪個終點
 - That's all right, how about next week?没关系，下周呢？
 - that's all right. 没关系。
 
+------------------
+
 ## 受詞所有格
 - Is this plastic toy hers?这个塑料的玩具是她的吗？
 - This one is mine, this one is for your brother, and this one is for your dad!
@@ -213,7 +226,7 @@ to : 一路跟著對方移動到了哪個終點
 - Do you know the price of these carrots?你知道这些胡萝卜的价格吗？
 - It was a great price, so I got four!
 
-
+------------------------
 
 ## tips for/on(關於) 訣竅,建議
 * **`tips`**（小建議、訣竅、實用祕訣，常用複數形 *tips*）。
@@ -235,6 +248,7 @@ leave a tip
 - **Does the bill include the tip?**中文：帳單裡有包含小費嗎?
 - **We left a generous tip for the waiter.**中文：我們給了服務生很大方的小費（服務很好給很多的意思）。
 
+------------------
 
 ## clean(形容詞/動詞)
 ### clean(形容詞)
@@ -243,6 +257,7 @@ leave a tip
 ### clean(動詞)
 - Please clean your room.把房間整理乾淨。
 
+---------------------
 
 ## Decker 層
 Deck 當名詞時，意思是「甲板」（船的甲板）或是「層、樓層」（巴士或房屋的層數），加上 -er 變成 Decker。
@@ -252,6 +267,38 @@ Deck 當名詞時，意思是「甲板」（船的甲板）或是「層、樓層
 - Double-decker：雙層巴士
   - In London, we have double-decker buses.在我們倫敦，我們有雙層巴士喔！
 - Triple-decker sandwich：三層總匯三明治（夾了三片吐司、兩層餡料的三明治）。
+
+---------------------
+## Good luck 祝好運
+
+### Good luck with + 名詞（最常見，用在面對某個任務、考試或新環境）：
+- Good luck with your exam!（祝你考試順利！）
+- Good luck with your presentation!（祝你簡報順利！）
+- Good luck with the move!（祝你搬家順利！）
+
+### Good luck on + 名詞（也經常聽到，通常用在具體的「事件、測驗、比賽」上）：
+- Good luck on your test!（祝你測驗順利！）
+- Good luck on your first day!（祝你第一天上班順利！）
+
+### Good luck to + 對象（專門用來「對某個人」獻上祝福，後面不接事情）：
+- Good luck to you!（祝你一切順利！）
+- Good luck to the team!（祝團隊好運！）
+
+------------------------
+## fill out 填寫
+- fill（動詞）：充滿、填滿。
+- out（副詞）：在這裡有「完整填好、寫到盡頭」的意思。
+
+- Please fill out this application form.（請填寫這份申請書。）
+- You need to fill out your personal information here.（你需要在這裡填寫你的個人資料。）
+- Can you help me fill out this questionnaire?（你可以幫我填寫這份問卷嗎？）
+
+## fill in 填寫空白處
+- Please fill in the blanks.（請在空白處填空）
+
+---------------------
+
+
 
 
 ## 其它疑惑

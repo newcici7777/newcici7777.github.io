@@ -55,6 +55,8 @@ Thanks for + 名詞 / V-ing（謝謝你做...）
 - Thank you for the flowers, they are so beautiful!谢谢你们的花
 - thank you for coming.谢谢你来。
 - Thank you for calling me, but I am busy now.谢谢你给我打电话，但是我现在在忙。
+- Thank you for waiting.（謝謝你等我。）
+- Thank you for picking me up. 來接我
 
 ## 訂房/租借物品 for 使用多久時間
 - I need a room for two night**s**.（我需要一間房，住兩個晚上。）

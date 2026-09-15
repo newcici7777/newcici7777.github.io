@@ -6,6 +6,12 @@ keywords: English, with
 ## be + with 狀態是在一起
 - Bea is at the gym with her friend, Eddy.
 
+## will be with you in a minutes.櫃台/餐廳/診所 接待
+with you 在這裡不是指在一起，而是指「把時間和注意力留給妳，為你提供服務」的意思！
+
+- She will be with you in a minutes.她馬上就來為您服務
+- The doctor will be with you in a moment. （醫生馬上就會來為您看診。）
+
 ## Use 使用
 - Use the internet 會使用網路嗎
 * use the computer（使用電腦）
@@ -183,9 +189,10 @@ come with 固定搭配、標配、本來就包含在裡面（就像買手機「�
 順序倒過來，寫成：
 * *Lunch **with free hot chocolate***（附帶免費熱可可的午餐）
 
-
-## accessories 配件
-- Do you want any laptop accessories or not?
+------------------------
+## with 伴隨
+- Good luck with your new job! 祝你在你的新工作（這件事情上）有好運！
+  - 好運伴隨在你的新工作
 
 -----------------------
 ## together(副詞)
@@ -220,13 +227,6 @@ come with 固定搭配、標配、本來就包含在裡面（就像買手機「�
 - We can finally be together!
 
 
-
-
-
-
-
-
-
 ---
 
 ### 3. 兩者的差異總結
@@ -241,6 +241,9 @@ come with 固定搭配、標配、本來就包含在裡面（就像買手機「�
 
 
 --------------------
+## accessories 配件
+- Do you want any laptop accessories or not?
+
 你提到的 **`accessories`**（配件、飾品）跟前面的 **`comes with`** 或 **`with`** 其實完全是不同層級的概念！
 
 簡單來說：

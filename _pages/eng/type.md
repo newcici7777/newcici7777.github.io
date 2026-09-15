@@ -3,19 +3,24 @@ title: types of
 date: 2026-09-08
 keywords: English, types of
 ---
-## this type of 單數名詞 (這種，種類)
+Type強調**規格**、**型別**。
+
+## type of 單數名詞 
 - Lisa doesn't know how to use this type of mouse.丽莎不知道如何用这种鼠标。
+- That type of room isn't available till Saturday. 那種房型直到星期六才提供
 
 ## types of 複數名詞S (各式各樣)
 - I saw many type**s** of bus**es**. 看到了好幾種**不同款式**的公車
   - 前面用了 many（許多），代表不只一種款式，所以後面的 type 必須變成複數的 types
+- There are a few different types of rooms available.有幾種不同房型可供選擇。 
 
 
 ----------------------------------
-## Type：強調「規格、科學分類、客觀特徵」
-它帶有一點「標準、規格、系統化」的味道。當你想區分的是功能、結構、型號、技術或科學上的不同種類時，用 type 最精準。    
-常出現的情境： 科技產品、車輛型號、醫學分類、檔案格式、問卷選項。  
+## Type：強調「規格、科學分類、型別」
+當你想區分的是規格、功能、結構、型號、技術或科學上的不同時，用 type 最精準。    
 
+常出現的情境： 科技產品、車輛型號、醫學分類、檔案格式、問卷選項。  
+- That type of room： 房型
 - What type of blood do you have?（你是什麼血型？ → 醫學分類，用 type）
 - There are several types of electric cars on the market.（市場上有好幾種「型號/款式」的電動車。）
 - What type of file is this?（這是什麼檔案格式？）

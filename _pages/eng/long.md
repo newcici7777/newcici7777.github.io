@@ -1,22 +1,35 @@
 ---
-title: How long 多久
+title: take long, for too long, How long 多久
 date: 2026-08-17
 keywords: English, how long
 ---
-## It 代表時間主詞
+## take long to 原形動詞 (花很久時間，做某事)
+- I won't take long to get some snack**s**.買一些零食不會花很長時間
+
+## for too long 太久的時間
+for 的核心功能是「表達一段持續的時間」。  
+當你想告訴別人某個動作或狀態**持續了多久**（例如：三分鐘、兩個小時、太久的時間），英文需要用 for + 時間長度 來當作**時間副詞**。
+
+- The cake was in the oven for too long.蛋糕烤太久
+- I waited for too long.（我等了太久。）
+- Don't stay in the sun for too long.（不要在太陽底下待太久。）
+- The meat has been cooking for too long.（這塊肉煮太久了。）
 
 
 ## long(形容詞) 久
 - Summer is long.
 
-## 問每一次...多久？ How long ... each time?
+## How long (多久的時間)
+- How long did you study yesterday?你昨天学习了多久？
+- How long did Tom live in Oxford?汤姆在牛津住了多久？
+
+## How long ... each time? 問每一次...做多久？
 each time（每一次，副詞，修飾動詞)
 ```
 How long 助動詞 + 主詞 + 動作 + each time?
 ```
 - How long do you study each time?（你每次都讀多久？）
-- How long did you study yesterday?你昨天学习了多久？
-- How long did Tom live in Oxford?汤姆在牛津住了多久？
+
 
 ### for + 時間（表達持續多久
 ```

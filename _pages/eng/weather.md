@@ -54,20 +54,11 @@ Be動詞用單數**IS**。
 ## There is a flood（有水災／淹水了）
 A flood 可數名詞，有**一場**大洪水。
 
-## There are low tempertureS 有低溫
+## There are low tempertureS 有低溫(環境)
 temperture是可數名詞，通常用複數S，be動詞用are
 - Sometimes there **are** low temperature**s** in the morning.有的时候在早上温度很低。
   - temperature**S**是複數，要加S，動詞用are
 
-## There is smoke 有煙
-- smoke（煙）：There is smoke in the kitchen.（廚房裡有煙)
-- Is there smoke in the kitchen?（廚房有煙嗎？）
-- Why is there smoke in the kitchen?（為什麼廚房裡會有煙？）
-  - 最前面加上疑問詞 Why（為什麼）
-
-## There is water 有水
-- Why is there water on the floor?（為什麼地板上有水？）
-- There is water everywhere.到處都是水(馬路上到處都在積水，因為雨太大)
 
 -------------------------------
 

@@ -41,7 +41,17 @@ which作為形容詞，修飾後面的名詞。
 * Which day（哪一天）
 * Which way（哪一條路 / 哪個方法）
 
+------------------
+
+## which 單複數
+### 單數 Which meeting room
+- Which meeting room are you in?他目前正待在那一間會議室。這時用單數是最直覺
+
+### 複數 Which meeting rooms（針對多個房間或組合）
+- Which meeting room**s** are you using today? （你們今天會用到哪幾間會議室？）
+
 ----------------------------
+
 ## Which 介系詞結尾
 ```
  Which + 名詞 ... [介系詞]

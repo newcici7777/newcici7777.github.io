@@ -3,42 +3,38 @@ title: available
 date: 2026-08-23
 keywords: english, available
 ---
-
 ## 有空房的、可用的(沒被佔用)、買得到的
 房間都被訂光了，它們就是 not available（沒有空房 / 已滿）。
 
 如果還有剩、隨時可以給客人住，它們就是 available（有空房 / 可預訂）。
 
-## available + 名詞
+### available + 名詞
 - We need to check the available rooms.（我們需要檢查可用的房間。）
 - Do you have any available dates?（你們有任何可以預約的日期嗎？）
 - This is the only available ticket.（這是唯一買得到的票了。）
 
-
-## 名詞 + available
+### 名詞 + available
 - rooms available
 飯店、餐廳、客服等服務業，喜歡把 available 放到名詞後面。
 
-想問某個東西「現在還有沒有、能不能用／買到」
+------------------
 
-能不能使用
-- Is there a table available?（有桌子是空的嗎？）
+## there is 東西 available 「現在還有沒有、能不能用／買到」
+- There are a few different types of rooms available.有幾種不同房型可供選擇。 
+- Is there a table available?（有桌子是空的嗎？）能不能使用
+- Are there any seats available?（還有座位嗎？）座位有沒有滿
+- Are there any tickets available?（還有任何票是買得到的嗎？）
 
-有空房嗎？
+## be + available 「狀態」是可以買嗎/有提供嗎/空的嗎/人現在有沒有空？
+- That type of room isn't available till Saturday. 那種房型直到星期六才提供 
+- Are tickets still available?（還有票嗎？）票有沒有賣完
+- Are you available tomorrow afternoon?（你明天下午有空嗎？）人現在有沒有空
+
+## Do you have 東西 + available 
 - Do you still have rooms available? 你們現在還有空房嗎？
 - Do you have any rooms available?（你們有任何房間是空的／可訂的嗎？）
 
-座位有沒有滿：
-- Are there any seats available?（還有座位嗎？）
-
-票有沒有賣完：
-- Are tickets still available?（還有票嗎？）
-- Are there any tickets available?（還有任何票是買得到的嗎？）
-
-人現在有沒有空：
-- Are you available tomorrow afternoon?（你明天下午有空嗎？）
-
-
+-----------------------------------
 
 ## available 介紹
 某個東西或服務是 available 的時候，代表：

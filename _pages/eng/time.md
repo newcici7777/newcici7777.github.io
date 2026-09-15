@@ -73,8 +73,21 @@ What形容詞 + 不可數名詞time
   - 後面的條件 February sixth
   - 前面的動作 come home
   - 代入公式: 直到**February eleventh**，我的法文課**begin**
+- That type of room isn't available till Saturday. 那種房型直到星期六才提供 
+- I can't leave until Friday.（我直到星期五才能離開)
+- The store isn't open till 10 AM.（這家店直到早上 10 點才開門)
+
+### till/until 後面
+- 接具體的時間點／日期（像你的例句）
+  - till Saturday（直到星期六）
+  - till 5 PM（直到下午 5 點）
+- 接一個句子（子句），表示「直到某件事發生為止」：
+  - Wait here till I come back.（在這裡等我，直到我回來為止。）
+- 搭配 from 形成固定的時間區段：
+  - from Monday till Friday（從星期一到星期五）
 
 
+------------------------
 
 ## at the end of
 - Our kids will start school at the end of August.(我们的孩子们会在八月底开学。)
@@ -91,35 +104,48 @@ at的核心概念是「在某個精準的點」。
 * (也可以簡寫成更口語的：She learned to swim at five.)
 
 
-## at that time 那時候(過去進行式)
-- She was not watching videos at that time at that time.她在那時候沒有在看影片。
-  - at that time：時間副詞，點出這個動作發生的特定時間點。
-
+## at that time 在那時候(過去進行式)
 at that time 指的是過去某一個特定的時刻。
 因為它強調的是「過去某個時間點正在進行或持續的狀態」，所以它最常和「過去進行式」（was/were + V-ing）搭配使用。
 
+- She was not watching videos at that time at that time.她在那時候沒有在看影片。
+  - at that time：時間副詞，點出這個動作發生的特定時間點。
 - What were you doing at that time?（你當時在做什麼？）
 - He was sleeping at that time.（他當時正在睡覺。）
-
+- Anna was getting a book at that time. （安娜在那時候正在拿書。）
 
 ## then 然後
 - It rained then snowed.(下雨然後下雪)
 
-## then 未來的某個特定時間點
+### then 未來的某個特定時間點
 * Let's meet at 5 p.m.
 * Okay, see you then!(在那時候見。)
 - I will see you then.我到时候会见你。
 - See you then.
 
-## then 過去的某個特定時間點
+### then 過去的某個特定時間點
 - I was living in New York then.（我當時住在紐約。）
 - Look at this old photo!The kids were very young then.看这张旧照片！孩子们那时候非常年纪
 非當小。
 - Were they small children then?他们当时是小孩子吗？
 - He was only seven years old then.他当时只有七岁。
 
-## back then 那時候
-- Back then, we didn't have smartphones.（在那時候／當年，我們沒有智慧型手機。）
+
+## 其它過去時間
+- at that moment（在那一刻／那一個瞬間）
+  - At that moment, the lights went out.（在那一刻，燈突然熄滅了。）
+- at the time（當時／在那段期間）
+  - I didn't know anything about it at the time.（我當時對這件事完全不知情。）
+- back then（當年／那時候——口語常用）
+  - Back then, life was much simpler.（那時候，生活單純多了。）
+  - Back then, we didn't have smartphones. 在那時候／當年，我們沒有智慧型手機
+
+----------------------
+
+
+## 馬上
+- in a minutes 馬上
+- in a moment
 
 
 -----------------------------------
