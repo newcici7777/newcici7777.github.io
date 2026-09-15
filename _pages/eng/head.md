@@ -1,16 +1,40 @@
 ---
-title: head out, head for 前往
+title: head out, head for 朝著...前進，前往
 date: 2026-09-08
 keywords: english, head
 ---
+- 名詞的 head = 頭、領袖。
+- 動詞的 head = 「把頭轉向、身體動起來去某個地方」。
+
 ## head 前往
 原意是「頭（Head）」，引申為「把頭轉向、朝著某個方向前進（Heading toward）」，強調「方向」與「出發」。
 
+**go** 是客觀地說「去哪裡」，而 **head** 有朝那個「方向前進」並「出發」。
+
 - *Let’s **head** home.*（我們回家吧。）
 - *Where are you **heading**?*（你正要往哪裡去？ $\rightarrow$ 問對方目前的行進方向。）
-- Head north.（往北走。）
 
-**go** 是客觀地說「去哪裡」，而 **head** 有朝那個「方向前進」並「出發」。
+----------
+
+## head 左/右/南/北
+當 head 後面接方向副詞時，不需要任何介系詞。
+- Head north / south / left / right（往北／往南／往左／往右走）
+- At the corner, head left.（到了轉角處，往左轉。）
+
+------------
+
+## head to/toward + 地點 (前往某地)
+
+- We are heading to the theater.（我們正前往劇院。）
+- He headed toward the door.（他朝著門的方向走去。）
+- I'm heading to work 我要去上班了
+
+---------
+
+## head home 回家
+- It's getting late. I should head home.很晚了。我該回家了
+
+--------
 
 ## head out (出發)
 **out** 的核心本質是「出去、離去」。
@@ -24,6 +48,7 @@ head out如果後面要接目的地，通常會搭配 **for** 或 **to**。
 * *What time are you planning to **head out** tomorrow?*（你明天打算幾點**出發**？）
 - He headed out early this morning.（他今天一大早就出門/出發了。）
 - Are you ready to head out?（妳準備好要出發了嗎？）
+
 
 ## head out (離開原地，前往下一個目的地)
 head out 更精確的定義是：離開你「目前暫時停留、待著」的那個地方，動身前往下一個目的地。
@@ -41,18 +66,37 @@ head out 更精確的定義是：離開你「目前暫時停留、待著」的�
 - 目的: Let’s head out for lunch.（我們出發去吃午餐吧。）
 - 目的地: head out for the airport.
 
-## head for + 目的地 (前往目的地)
+## head for + 目的地 (朝著...前進）
+head除了前往之外，for 朝著某個方向、直奔某個**目標**而去
+
+- head for the exit（朝出口走去）
+- head for the airport（前往機場）
+- After work, I **headed for** home.（下班後，我直接奔回家。)
 * *After the meeting, she is **heading for** the airport.*(開完會後，她就要**直奔**機場了。）
 - Let's **head for** the beach.（我們直奔海邊吧！）
+- We are heading for the airport now.（我們現在正前往機場。）
+- After the meeting, she headed for home.（會議結束後，她就出發回家了。）
 
 ## head out of 建築物 (從建築物離開)
 - I’m heading out of the meeting room now.（我現在正要離開會議室。）
 - Let’s head out of the house before it gets dark.（我們在天黑前離開房子出發吧。）
 - He just headed out of the building.（他剛才正從那棟大樓走出來/離開。）
 
+------------------
+
 ## head back to + 地點 (返回)
+- Let's head back.（我們回去吧。）
 - We should head back to the hotel before it rains.（在下雨前，我們該回飯店了。）
 
+---------------------
+
+## Head straight（直走）
+- Just head straight for two blocks.（直走兩個街區就到了。）
+
+--------------------
+
+## Head up（抬頭、注意）
+最常聽到的名詞合體 Heads up!（注意！小心！），當作動詞則是叫人把頭抬起來。
 
 --------------------------
 其它出發

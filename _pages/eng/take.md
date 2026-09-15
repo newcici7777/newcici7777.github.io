@@ -92,9 +92,14 @@ Take 人 to 某地
 - The seat is taken.這個座位有人了。
 - Is this seat taken? （這個位子有人坐嗎？／這座位被佔了嗎？）
 - Sorry, that table is taken. （抱歉，那張桌子已經有人了。）
+- You can sit here, these seats are’t taken.你可以坐這裡，這些座位沒人坐。
 - Take a seat.請坐(Take是佔位，自己找位子坐下來)
 - Come in and have a seat.(禮貌說法，主人跟客人說「你可以擁有一個位子」)
 - All the good time slots are taken. （所有好的時段都被約滿／被選走了。）
+
+- Excuse me, is this seat taken?（不好意思，這個位子有人坐嗎？——超高頻必背句型！）
+  - No, it's not taken. Please go ahead.（沒有，沒人坐。請坐。)
+- Is this parking space taken?（這個車位有人停了嗎？）
 
 - Free ＝ 空的、沒人用的
 - Taken ＝ 有人的、被佔用的

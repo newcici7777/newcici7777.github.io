@@ -25,6 +25,30 @@ about有分類的意思，把限定範圍。
 - What was this episode about?（這集節目是在討論什麼？）
 - we're going to talk about wild snakes and hiking paths in Australia
 
+---------------------------------
+
+## like about 針對某個東西，具體喜歡它的哪一個特色或細節
+```
+What do you like about + 名詞
+```
+- What do you like about the stores ? 你喜歡這些店的什麼地方？
+  - What do you like...：你喜歡什麼？
+  - about [某個事物]：關於這個事物（的哪一點）？
+  
+- What do you like about this movie?（你喜歡這部電影的哪一點？）
+- What do you like about your job?（你喜歡你工作的哪一個部分？）
+- What do you like about living here?（你喜歡這裡生活的什麼地方？）
+
+## like about 人
+- 問法 A（大範圍）： Do you like Emma?
+- 意思：「你喜歡Emma嗎？」
+- 回答：通常只能回答 Yes 或 No（是的，我喜歡 / 不，我不喜歡）。
+
+- 問法 B（問細節）： What do you like about Emma?
+- 意思：「你喜歡Emma的什麼地方？」
+
+-------------------------------
+
 ## be about to 快要、正要
 be about to 是一個專門用來表達「事情即將在極短的未來發生（快要、正要）」的固定片語。
 
@@ -34,10 +58,8 @@ be about to 是一個專門用來表達「事情即將在極短的未來發生�
 - I am about to sleep.（我快要睡著了／我正準備要睡了 → 人已經躺在床上或準備關燈。）
 - Hurry up! The movie is about to start.（快一點！電影快要開始播了 → 燈光馬上就要暗下來了。）
 
+----------------------------------
 
-```
- What about + V-ing / 名詞
-```
 ## 提出建議、約時間地點（相當於「要不要...？」、「去...如何？」）
 當你跟朋友、約會對象在討論接下來要幹嘛、去哪裡時，用 What about...? 來提議非常放鬆又自然。
 ```

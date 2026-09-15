@@ -113,6 +113,7 @@ at that time 指的是過去某一個特定的時刻。
 - What were you doing at that time?（你當時在做什麼？）
 - He was sleeping at that time.（他當時正在睡覺。）
 - Anna was getting a book at that time. （安娜在那時候正在拿書。）
+- At that time, we were having a lot of fun.（在那時候，我們正玩得不亦樂乎。）
 
 ## then 然後
 - It rained then snowed.(下雨然後下雪)

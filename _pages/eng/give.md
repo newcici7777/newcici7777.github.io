@@ -95,6 +95,14 @@ keywords: give send show
 - Can you show me that leg exercise again?
 - You don't remember? I iust showed it to you.
 
+### show 人 around 帶某人四處逛逛
+around 的詞性是副詞（Adverb）  
+around：修飾前面「帶領」的動作方向，表示「在周圍、四處、環繞地」移動  
+
+- I want to show her around.我想帶她四處逛逛
+- She offered to show us around the campus. （她主動提出要帶我們參觀校園。）
+- Let me show you around. （讓我帶你四處逛逛。）
+
 ## lend to
 ```
 lend + 某人 + 東西

@@ -12,6 +12,13 @@ keywords: be going to
 - Are you speaking to Anna right now?你玑在正在跟安娜说话吗？
 
 
+## 此時此刻、眼前正在展現的狀態
+強調「此時此刻、眼前正在展現的狀態與努力」
+- You're trying very hard! （你現在真的很努力！）我能感覺到你正在非常努力
+- You're doing great!（你現在表現得很棒！）
+- You're working so hard!（你現在工作好努力喔！）
+
+
 ## soon
 - 詞性： 時間副詞（Adverb）
 - 核心意義： 「不久、很快、快要」。

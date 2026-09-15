@@ -12,6 +12,8 @@ keywords: english
 
 - The hat you made is amazing!
 - The dress you bought is amazing! 「買衣服」這個動作已經在過去發生了！所以用過去式
+  - 原句: The dress (that/which) you bought is amazing.
+  - 關代 that 被省略了
 - The book I read was sad.（我讀的那本書很悲傷。）
 - The cake you baked is so delicious! （你烤的蛋糕超好吃！）
 - The gift you gave me made my day. （你送我的禮物讓我一整天心情都很好。）

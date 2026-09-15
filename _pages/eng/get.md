@@ -18,6 +18,8 @@ get買 + 間接受詞(人) + 直接受詞(東西)
 - Who got you this scarf? 這條圍巾是誰買給你的？
   - 疑問代名詞當主詞
 
+------------
+
 ## get 取得(拿)
 - Can I get a menu, please?
 
@@ -31,6 +33,8 @@ get幫 + 間接受詞(人) + 直接受詞(東西)
 - Can we get a menu, please? 我們可以拿一個菜單嗎？
 - can i get you some black tea?我可以帮你拿一些红茶吗？
 
+------------
+
 ## get some cash 提款 
 ```
 get some cash from the ATM
@@ -41,17 +45,23 @@ get some cash from the ATM
 ### Withdraw cash 提款
 - I need to withdraw some money from the ATM.  （我需要去 ATM 提領一些錢。）
 
+--------------
 
 ## get 換到
 get 是一個超級萬用的動詞。當它搭配房間、座位、車子等空間時，通常是表示「取得使用權」或「換到某個地方」。
 
 - We can get a bigger room if you want.如果你想的話，我們可以換到（或弄到）一間更大的房間。
 
+----------------
 
 ## get dark/late 天色變暗或時間很晚
 - It's getting late.天色變很晚
 
+## get + 形容詞 (變的)
+- That's because you're getting older.
+- That's also because you're getting older.
 
+-----------------
 
 ## 抵達
 - When will we get there?我們什麼時候會到那裡？
@@ -67,15 +77,20 @@ get 是一個超級萬用的動詞。當它搭配房間、座位、車子等空�
 - He'll get there at seven o'clock tonight.他在今晚七点钟会到那里。
 - Mr. Wang will get here at three o'clock.王先生会在三点钟到这里。
 
+-------------
 
 ## 找工作(取得工作)
 - You need to get a job.你需要找一份工作  
+
+-------------
 
 ## 結婚
 - when will Anna and Kevin get married?  
 - My friend is getting married.
 - They got married at this beach five years ago, and I want to get married here, too!他们是五年前在这个海滩结婚的，我也想在这里结婚！
 - They'll get married on August second.他们会在八月二号结婚。
+
+------------------
 
 ## 得到分數
 - I got an A on the test.(考試用on)
@@ -84,6 +99,13 @@ get 是一個超級萬用的動詞。當它搭配房間、座位、車子等空�
   - grade是A,B,C,D分數 perfect滿分
 - I got 95 points.
 - My score was 95.
+
+## on 考試
+- get an A on the test（在考試上拿 A）
+- do well on the exam（在考試中表現好）
+- make a mistake on the quiz（在小考中出錯）
+
+---------------
 
 ## 收到信/訊息
 - I never got your letters.
@@ -100,16 +122,14 @@ get 也常被用在各種「取得訊息或物品」的場合：
 * Did you get my package?(你有收到我的包裹嗎？)
 * I got an error message on the screen.(我畫面上出現/收到了錯誤訊息。)
 
-
-## on 考試
-- get an A on the test（在考試上拿 A）
-- do well on the exam（在考試中表現好）
-- make a mistake on the quiz（在小考中出錯）
+----------
 
 ## get 休息
 get 有「去取得、獲得、讓自己得到」的意思，去爭取一些休息時間來恢復體力
 - Get some rest（去弄點休息、好好休息)
   - 注意！沒有get a rest 這個說法
+
+-------
 
 ## be lost / get lost
 描述現在的狀況
@@ -123,6 +143,8 @@ get 在這裡有「變成、陷入」的意思（狀態的轉變)，「迷路」
 get + 形容詞 (lost)
 ```
 - I was fine at first, but then I got lost."（我本來很好，但後來（不小心）迷路了。）
+
+------------
 
 ## get 進到交通工具
 get 來表示「進到那裡...」或「進到...某個位置」
@@ -139,9 +161,13 @@ on的相反動作是off，為什麼用on？因為火車飛機巴士可以站，�
 - get on the train.(上火車)
 - get off the train.(下火車)
 
+------------
+
 ## get 進到排隊的隊伍裡面
 - get in line. 進到「隊伍裡面」 
   - in line. line是隊伍(名詞)，in介系統就是在...裡面，介系詞片語，意思是「在隊伍裡面」
+
+-------------
 
 ## get in bed（上床睡覺 / 進到被窩裡）
 
@@ -149,9 +175,12 @@ on的相反動作是off，為什麼用on？因為火車飛機巴士可以站，�
 - The children got up and then went to school.孩子们起了床，然后去了学校。
 - He gets up at eight o'clock every day.他每天在八点钟起床。
 
+--------------
 
 ## get off 下班
 - I get off work at 6:00. 下班 
+
+-------------
 
 ## get mad/ get angry 變得生氣
 ```
@@ -163,23 +192,24 @@ get 形容詞
 * 生氣：Don’t get angry.（別生氣／別變得生氣。）
 * 生氣：Don’t get mad.（別生氣／別變得生氣。）
 
+---------------
+
 ## get 聽懂、理解（＝ Understand）
 在日常對話中，當別人跟你解釋完一件事情，你說這句話，對方就會秒懂：
 * 我懂了／了解：I get it.（我懂了。）
 * 你懂我的意思嗎？：Do you get my point?（你抓到我的重點了嗎？）
 
+---------
+
 ## get 接電話、去叫人（＝ Answer / Fetch）
 * 接電話：Can you get the phone?（你可以去接個電話嗎？）
 * 去拿／去叫：Can you get a doctor?（你可以去找個醫生來嗎？）
 
-## get + 形容詞 (變的)
-- That's because you're getting older.
-- That's also because you're getting older.
+-----------------
 
 ## get it just right 恰到好處
 - get it：把它（某個東西、狀態、做法或時間）弄好 / 達到某個狀態。
 - just right：剛好、完美、不多也不少
-
 
 - It takes many hours to get it just right.（這需要花好幾個小時，才能把味道/火候拿捏得恰到好處。）
 - Add a little more salt to get the soup just right.（再加一點鹽，把湯的味道調整到剛剛好。）

@@ -285,5 +285,6 @@ go 本身是「去」，但加上 on 之後（go on），常常用來表示「�
 旅遊相關單字
 - Pack your bags.打包你的行李
 - Pick up your luggage. 拿你的行李
+  - I'm picking up my luggage now, and then I'll come outside. 我現在正在拿行李,然後我就會走出去
 - Picu up your suitcase. 拿你的行李箱
 - Thank you for picking me up. 來接我

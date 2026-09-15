@@ -53,9 +53,7 @@ She's not **on** this baseball team.
 - I'm going to wave at her.
 - I saw you waving at me.
 
-
-
-
+-------------------------
 
 ## gone
 gone 是形容詞用來形容一種「不在、離去、離開了」的狀態。
@@ -84,11 +82,7 @@ gone 是形容詞用來形容一種「不在、離去、離開了」的狀態。
   - She answered the question quickly.（她很迅速地回答了問題。——強調反應快、不遲疑）
   - Please finish your homework quickly.
 
-
-
-
-
-
+------------------------
 
 ## hurry(動) 快一點
 - She needs to hurry.（她需要趕快／她得動作快一點。）
@@ -96,6 +90,8 @@ gone 是形容詞用來形容一種「不在、離去、離開了」的狀態。
 
 加上 up 變成片語動詞 hurry up
 - Hurry up! We are going to be late.（快一點！我們要遲到了。）
+
+--------------
 
 ## build
 build ，強調那個「堆疊、建造」的過程。
@@ -129,6 +125,8 @@ our time 的意思是「我們在這裡度過的時間」，形容一段經歷�
 * *at the **end** of the street*（在街道的**盡頭**）
 * *at the **end** of the movie*（在電影的**結局/結尾**）
 
+----------
+
 ## follow(動詞) + 人 + to + 目的地
 to : 一路跟著對方移動到了哪個終點
 - A cat followed me to my house.貓咪一路尾隨著你，直到你們一起抵達目的地。
@@ -139,24 +137,25 @@ to : 一路跟著對方移動到了哪個終點
 * *My little brother **followed me to the kitchen**.*
 （我弟弟一路跟著我進到廚房。）
 
+----------
 
 ## belong to 屬於
 - That ring belonged to someone else.那枚戒指是別人的（屬於某個「其他的人」）
 - This ring belongs to her.
 
-
-
-
-
+---------
 
 ## well(副)
 - I do not speak French very well.我说法语说得不太好。
 - I didn't sleep well last night. 我昨晚没有睡好
 - Anna doesn't bake very well.
 
+------------
 
 ## pour 倒
 - Junior pours Eddy's juice on the ground.
+
+--------------
 
 ## break up 分手
 - Chloe broke up with me.
@@ -177,17 +176,20 @@ to : 一路跟著對方移動到了哪個終點
 - The elevator isn't working.（電梯故障不能動了——外觀可能好好的，但按了沒反應。）
 - My computer doesn't work.（我的電腦開不了機／當機了。）
 
+------------
 
 ## hit 撞車
 - A car hit that tree yesterday.一辆车昨天撞了那棵树。
 
-
+------------
 
 ## share
 - Emma shares an office with her colleague.艾玛跟她的同事一起
 共用一个办公室。
 - I only have half of a sandwich, but we can share.我只有半个三明治，但是我们可以分享。
 - Let's share this dessert
+
+-----------
 
 ## bake 烤
 - I like baking with my grandma.我喜欢和我的奶奶一起烘焙。
@@ -298,7 +300,66 @@ Deck 當名詞時，意思是「甲板」（船的甲板）或是「層、樓層
 
 ---------------------
 
+## covered in 覆蓋著東西
+- covered in mud（全身沾滿泥巴）
+- covered in sweat（滿頭大汗 / 汗流浹背）
+  - After running the marathon, she was covered in sweat. （跑完馬拉松後，她滿頭大汗 / 全身是汗。）
+- covered in chocolate（沾滿巧克力醬）
+  - The little boy's face was covered in chocolate. （小男孩的臉上沾滿了巧克力。）
+- covered in dust. 
+  - The stray dog came back covered in dust. （那隻流浪狗回來時，全身佈滿了灰塵。
+- covered in blood. （現場沾滿了血跡。）
+  - The crime scene was covered in blood. （現場沾滿了血跡。）
 
+
+### covered with （用...覆蓋）
+比較像是「外在加上了一層覆蓋物」，強調的是一個「狀態」或「工具」。
+- The car is covered with snow
+- covered with a blanket（蓋著毯子）
+- covered with dust（表面覆蓋了一層灰塵）。
+- The mountains are covered with snow in winter. （冬天的山脈覆蓋著白雪。）
+- Please keep the food covered with plastic wrap. （請把食物用保鮮膜蓋好。）
+- The old book was covered with a thick layer of dust. （那本舊書覆蓋著厚厚的一層灰塵。）
+- The table was covered with delicious dishes for the party. （派對的桌上擺滿／覆蓋了各種美味佳餚。）
+- The night sky was covered with bright stars. （夜空中佈滿了閃亮的星星。）
+
+
+### covered in（浸在／佈滿）：
+比較強調「整個表面、甚至細節縫隙全都被佔據了」那種無所不在的沾黏感。所以像泥巴這種黏糊糊的東西， 
+- covered in mud （全身沾滿泥巴）
+- When they arrive, they're wet and covered in mud.
+
+------------------------
+
+## characters 角色
+- Wow, you look like you were in a war! Just like character**s** in the movie!哇，你看起來像剛打完仗一樣！就像電影裡的角色一樣！ 
+  - 複數 characters，是因為說話者在做一個「通稱、廣泛的類比」，而不是指「某一部特定電影裡的某一個特定角色」。
+- Just like **a** character in the movie!
+就像這部電影裡的某個**特定**角色一樣！
+
+- You guys are brave, just like soldier**s** in a movie.（你們很勇敢，就像電影裡的士兵一樣——不會特別指某個士兵。）
+- She sings like pop star**s** on TV.（她唱歌像電視上的流行巨星一樣——泛指這類人。）
+
+----------------------------
+
+## make a mess 弄得一團亂/搞砸
+- The kids are making a mess in the living room. （小孩們正在客廳製造髒亂／把客廳玩得亂七八糟。）
+- Who made this mess? （是誰把這裡弄得這麼亂的？）
+- He always makes a mess of things. （他總是把事情搞得一團糟。）
+- What a mess! 這簡直是一團糟／太亂了吧！
+
+## make a mess of [某事]
+- make a mess of the kitchen 把廚房搞得一團糟。
+
+-----------------------
+## Are there any good places to 原形動詞 + 地點 (有沒有好地方可以做...)
+- Are there any good places to read in Central Park? 中央公園裡有沒有什麼適合閱讀的好地方？
+
+- Are there any good places to eat near here?（這附近有沒有什麼吃東西的好地方？）
+- Are there any good places to take photos in Taipei?（台北有沒有什麼適合拍照的好地方？）
+- Are there any good places to work around here?（這附近有沒有適合辦公／用電腦的好地方？）
+
+---------------------
 
 
 ## 其它疑惑
