@@ -45,6 +45,7 @@ No one 也有人寫成 no-one（英式英文較常見），但現在最標準、
 
 另外，跟 someone/somebody 一樣，no one 等於 nobody，但 no one 不能寫成 nobody 以外的單字
 
+------------------------------
 
 ## -where 副詞
 它們本身就是「副詞」，因為它們的中文翻譯看起來像名詞（某個地方、任何地方），很多人會誤加介系詞 at 或 in。
@@ -57,6 +58,7 @@ No one 也有人寫成 no-one（英式英文較常見），但現在最標準、
 
 - Is my wallet somewhere in the bedroom?我的钱包在卧室某個地方嗎
 - I saw your keys somewhere in the kitchen.我在厨房的某个地方看到了你的钥匙。
+
 
 ## 形容詞後置
 當你想用形容詞來修飾它們（例如：安靜的地方、熱鬧的地方），形容詞一樣要乖乖放在它們後面：
@@ -77,6 +79,8 @@ No one 也有人寫成 no-one（英式英文較常見），但現在最標準、
 ### Nowhere（哪裡都沒有 / 毫無去處）：
 它本身已經帶有否定意味，所以動詞要用肯定型態（千萬不要跟 not 一起用，會變成雙重否定）。
 - I have nowhere to go.（我無處可去。 → 已經有 nowhere 了，前面不用寫 don't）
+
+-----------------------------
 
 ## -thing 形容詞後置
 - ❌ I want to eat delicious something.（錯）
@@ -99,6 +103,7 @@ No one 也有人寫成 no-one（英式英文較常見），但現在最標準、
 - I bought something online. It will arrive tomorrow.（我網購了某樣東西。它明天會到。）
 - Is everything ready? Yes, it is.（一切都準備好了嗎？對，它是。 → 雖然中文講「它們」，但英文文法用單數 it）
 
+
 ## Anything 與 Nothing 的「否定陷阱」
 這兩個字最常在考試或寫作中讓人踩雷：
 
@@ -107,12 +112,14 @@ No one 也有人寫成 no-one（英式英文較常見），但現在最標準、
 - Did you see anything unusual?（你有看到任何不尋常的事嗎？）
 - I didn't say anything.（我什麼也沒說。 → didn't 加上 anything）
 
+
 ### Nothing（什麼都沒有）
 它本身已經是否定的（等於 not anything）。
 千萬不能跟否定詞 not 連用，否則會變成雙重否定。
 - ❌ I didn't see nothing.（錯！這會變成「我沒有什麼都沒有看到」＝我看到了）
 - ✔️ I saw nothing.（對！我什麼也沒看到。）
 
+-----------------------------------
 
 ## Something / Anything to + 動詞
 在日常對話中，我們超常把 -thing 結合「to + 動詞」來表達「有/沒有...的事情可以做」
@@ -122,19 +129,21 @@ No one 也有人寫成 no-one（英式英文較常見），但現在最標準、
 - Do they have anything to do this weekend?他們這週末有任何可以做的事情嗎？
 - I have something to tell you.（我有事情要告訴你。）
 - Do you have anything to eat?（你有東西可以吃嗎？）
-- There is nothing to worry about.（有什麼好擔心的 / 沒什麼好擔心的。）
 - Do you have anything to do tonight?（你今晚有事要忙嗎？）
 - I don't have anything to do tomorrow.（我明天沒事做／我很閒。）
+- There is nothing to worry about.（有什麼好擔心的 / 沒什麼好擔心的。）
 
-
+---------------------------------------
 
 ## -thing + 形容詞子句
 - Here is everything you bought.
 - Anything you can do, I can do better. （你能做的任何事，我都能做得更好——you can do 修飾 anything）
 - I have something I want to tell you. （我有話想對你說——I want to tell you 修飾 something）
+
+
+## There is anything/something/nothing 有什麼事
 - Is there anything I can do to help? （有什么我可以幫忙的嗎？——I can do to help 修飾 anything）
-
-
+- Is there anything that we can do about the cake? 我們能對那個蛋糕做些什麼嗎？
 
 ----------------------------------
 

@@ -3,7 +3,6 @@ title: come go 移動動詞 + 副詞/介系詞
 date: 2026-07-31
 keywords: come, go
 ---
-
 ## 移動動詞 to + 人
 to 的意思是「朝向、往...方向」
 移動動詞: go, come, get, walk, drive, fly, move
@@ -152,6 +151,8 @@ to 的意思是「朝向、往...方向」，在這裡當作目的地的大門�
 * Walk past (走路經過)
   - You walk past the hospital.(走過那間醫院。)
 
+-------------------------
+
 ## be + home
 be動詞表達狀態，也就是人在家裡。
 - why are you home?(為什麼你在家)
@@ -199,8 +200,7 @@ home前面加上「誰的」房子，就要用to
 - We drove to her home.（我們開車去她家。）
 - Welcome to my home!
 
-
-
+------------------------------
 
 ## 移動動詞 + into 動作感的進入
 - Eddy walks into Oscar's apartment.
@@ -210,16 +210,91 @@ home前面加上「誰的」房子，就要用to
 - The cat ran into the kitchen.
 - An old man walks into the cafe.
 
+## run into 人 = 遇見
+- I ran into my ex-boyfriend yesterday.我昨天巧遇了我前男友。
+- Guess who I ran into at the mall?猜猜看我昨天在購物中心巧遇了誰？
+
+------------------------------------
+
 ## 移動動詞 + inside 強調在「建築物」裡面走
 - They walked inside the castle.人在城堡裡面走(強調「地點與狀態」)
 - She was walking inside the house. （她在房子裡面走來走去——人本來就在屋內。）
 - She walked into the house. （她走進了房子——她剛從外面開門進來。）
 
+## go outside 出去外面
+重點：強調從「室內（inside）」走到「室外（outside）」這個實體的空間移動。
+- It's sunny today. Let's go outside.（今天天氣很好，我們去外面吧。）
+- The kids are going outside to play basketball.（孩子們正要到外面去打籃球。）
+- do you want to go outside?你想要出去吗？
 
-## run into 人 = 遇見
-- I ran into my ex-boyfriend yesterday.我昨天巧遇了我前男友。
-- Guess who I ran into at the mall?猜猜看我昨天在購物中心巧遇了誰？
+## come outside 出去外面，並朝向對方碰面
+> come：來、來到對方(電話中另一頭的人)面前。  
+> outside：外面（當副詞用）。  
+> 合起來 come outside 就是指從室內（或是車內、建築物裡）移動到外面的空間，並跟對方(電話中另一頭的人)碰面。  
 
+- I'm picking up my luggage now, and then I'll come outside.我拿完行李就會馬上到外面跟你會合，請等我一下！
+
+如果你想叫別人「出來」，請對方從室內走出來跟你會合，也可以用這個動詞，例如：
+- Come outside, the weather is great!（出來外面吧，天氣超好！）
+- Can you come outside for a second?（你可以出來一下下嗎？）
+
+### come vs go
+- come outside：偏向「走向外面（通常是為了跟某人會合、靠近）」。
+- go outside：偏向「去外面（單純移動到室外空間）」。
+
+
+## come 來,朝對方(電話中另一頭的人)會合。
+> come 是朝對方(電話中另一頭的人)的位置前進，並跟對方會合。
+> come 的核心邏輯是「朝向說話者（或聽話者）的所在地移動」。
+
+- I can't come to swimming practice today.
+  - come = 對方(教練)所在的位置，不能去教練所在位置
+- She's coming here now!
+  - 她要過來我這邊。 come = 說話的人位置
+
+## come with 人 (方向和動作的陪伴某人)
+> come 是朝向對方(電話另一頭的人)的位置會合。
+
+- come with me（跟我來 / 跟我一起去）
+- Lily is coming with me!(Lily 跟我一起來)
+  - come with me（跟我來 / 跟我一起去）
+  - 「結伴同行、去某個地方」，指「方向和動作的陪伴」。
+- My friend will come with me as well.
+- She's coming here with her boyfriend.
+- Can my dog come with me to the party?
+- you come to the park every day.
+- Who will come to the party with me tonight?(谁今晚会跟我一起来聚会？ )  
+- will you come with me tomorrow.你们明天愿意跟我一起来吗？
+
+## 移動動詞/be動詞 + with + 人 (和誰一起) 
+- Who is going to the party with you?(誰和你一起去party )  
+- I'm here with you.
+- Lily is coming with me!
+
+-----------------------------------------
+
+## go out (出去)
+- Emma doesn't want to go out with me.
+- Will you go out with me?你願意跟我一起出去嗎
+- We rarely go out on weekdays.（我們平日很少出門（社交/吃飯）。
+- she wants to go out on Friday night!
+
+## go out 約會
+- Are they going out?（他們在交往嗎？）
+
+## go out for + 目的 (為了某個目的出去)
+- Let's go out for dinner with them.
+- Let's go out for dinner.
+- Do you want to go out for dinner tonight?（你今晚想出去吃晚餐嗎？）
+
+## 移動動詞 + out of + 地點/建築物
+- They moved out of the city.(他們搬出城市)
+
+## went out 停電
+- The lights went out.（燈熄滅（停電）了。）
+- The power went out last night.（昨晚停電了。）
+
+----------------------------------------
 
 ## 移動動詞/be動詞 + here/there
 「去那裡」或「來這裡」時，副詞 here 和 there 前面直接接，不用加 to。
@@ -233,13 +308,17 @@ home前面加上「誰的」房子，就要用to
 - Can we go there again.我们可以再去那里一次吗？
 - When did you get here？（你什麼時候到這裡的？）
 
-## along 沿著 + 路/街道（沿著路走）
+--------------------
+
+## along 沿著 + 路/街道（沿著路，往前走）
 ```
 移動動詞 + along + stree/road/path
 ```
 - Walk along the street.（沿著這條街走。）後面絕對不加 to
 - Drive along Main Street（沿著大街開車）
 - If you walk along a path, you will find your way.如果你沿著「健行步道」走，你就會找到路。
+
+--------------------------
 
 ## down + 路/街道 (沿著馬路往前走)
 Down 在這裡不是「向下」的意思，而是指順著街道的延伸方向「往前走」。在英文直覺裡，走進一條街道、順著它走下去，就是用 down。
@@ -250,6 +329,8 @@ Down 在這裡不是「向下」的意思，而是指順著街道的延伸方向
 - Drive down this highway, and you'll see the exit.（順著這條高速公路往前開，你就會看到出口。）
 - Walk down Maple Street（順著楓樹街往前走）
 - Walk down this street, and you'll find it.（順著這條街往前走，你就會找到它。）
+
+------------------------------
 
 ## straight 筆直的/直的(形容詞)
 - This is a straight line.（這是一條直線。）
@@ -288,10 +369,13 @@ Ahead 負責：「朝著前方、目標在前面」
 - Walk straight ahead for one block.
 （筆直往前走一個路口。）
 
+-------------------------
 
 ## 移動動詞 + directly to + 目的地 (直接前往，不停留)
 - Head directly to the meeting room.直接前往會議室。
 - Fly directly to New York. 直飛去紐約(沒有轉機)
+
+----------------------
 
 ## 移動動詞 + 快/慢 + to + 目的地
 - Run quickly to the front door.快跑去前門。
@@ -304,71 +388,17 @@ Ahead 負責：「朝著前方、目標在前面」
 - Drive backwards into the parking space.（倒車停進停車格裡。）
 
 
-## 移動動詞 + up + 目的地
+## 移動動詞 + up(往上) + 目的地
 - Go up the mountain on foot.（走路爬山 / 步行上山）
 
-## 移動動詞 + out of + 地點
-- They moved out of the city.(他們搬出城市)
 
-## with + 人 和誰一起
-動詞後面用with  
-- Who is going to the party with you?(誰和你一起去party )  
-- I'm here with you.
-- Lily is coming with me!
-
-
-## come 過來
-come 自帶目的地(位置)。
-- I can't come to swimming practice today.
-  - come = 教練所在的位置 
-  - 不能去教練所在位置
-- She's coming here now!
-  - 她要過來我這邊。 come = 說話的人位置
-
-## come with 人 (方向和動作的陪伴某人)
-- come with me（跟我來 / 跟我一起去）
-- Lily is coming with me!(Lily 跟我一起來)
-  - come with me（跟我來 / 跟我一起去）
-  - 「結伴同行、去某個地方」，指「方向和動作的陪伴」。
-- My friend will come with me as well.
-- She's coming here with her boyfriend.
-- Can my dog come with me to the party?
-- you come to the park every day.
-- Who will come to the party with me tonight?(谁今晚会跟我一起来聚会？ )  
-- will you come with me tomorrow.你们明天愿意跟我一起来吗？
-
-
-### go next
+### go next 接下來去那裡？
 go後面省略to，因為next就是副詞
 - Where will you go next summer ?(你明年夏天会去哪里？)   
 - Where can we go next?
 - Where are we going next?（我們接下來要去哪裡？）
 
-## go out (出去)
-- Emma doesn't want to go out with me.
-- Will you go out with me?你願意跟我一起出去嗎
-- We rarely go out on weekdays.（我們平日很少出門（社交/吃飯）。
-- she wants to go out on Friday night!
-
-## go out for + 目的 (為了某個目的出去)
-- Let's go out for dinner with them.
-- Let's go out for dinner.
-- Do you want to go out for dinner tonight?（你今晚想出去吃晚餐嗎？）
-
-## go out 約會
-- Are they going out?（他們在交往嗎？）
-
-## went out 停電
-- The lights went out.（燈熄滅（停電）了。）
-- The power went out last night.（昨晚停電了。）
-
-
-## go outside 出去外面
-重點：強調從「室內（inside）」走到「室外（outside）」這個實體的空間移動。
-- It's sunny today. Let's go outside.（今天天氣很好，我們去外面吧。）
-- The kids are going outside to play basketball.（孩子們正要到外面去打籃球。）
-- do you want to go outside?你想要出去吗？
-
+----------------------------
 
 ## drive off 偏離/開車離開
 off：介系詞，意思是「脫離、離開（某個表面或範圍）」
@@ -379,6 +409,8 @@ off：介系詞，意思是「脫離、離開（某個表面或範圍）」
 ### 開車離開、駛離現場
 - He got into the car and drove off.（他上車後就把車開走了。）
 - The thief stole the bag and drove off quickly.（小偷搶了包包，迅速駕車逃逸。）
+
+-------------------------------
 
 ## driving through 開車穿過（某個地方）
 - Well, I remember we were driving through the city.

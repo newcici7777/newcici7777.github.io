@@ -3,7 +3,6 @@ title: in the 大自然, the 空氣
 date: 2026-09-07
 keywords: english, nature
 ---
-
 ## in nature (抽象概念不加 the)
 - He likes to spend his weekends in nature. （他喜歡週末在大自然中度過——註：nature 抽象概念不加 the。）
 

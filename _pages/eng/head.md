@@ -31,8 +31,13 @@ keywords: english, head
 
 ---------
 
-## head home 回家
-- It's getting late. I should head home.很晚了。我該回家了
+## head + 其它地方副詞
+以下的副詞，前面不用to，本身自帶to的功能。
+
+- home
+  - It's getting late. I should head **home**.很晚了。我該回家了
+- downtown
+  - If you're heading **downtown**, can I catch a ride? （如果你們要往市中心開，我可以搭便車嗎？）
 
 --------
 

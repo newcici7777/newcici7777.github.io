@@ -296,24 +296,6 @@ I left my keys behind the flower pot."
 - She stood behind me in the queue.（她站在我後面的排隊隊伍中。）
 
 
-
-## downtown
-### downtown 名詞 市中心
-- go to downtown(to 是介系詞，後面接名詞)
-- Downtown is very busy today.
-
-### downtown 副詞 去市中心
-- Does this bus go downtown? (不需要 to，downtown 直接修飾動詞 go 往哪裡去)
-- They live downtown.他們住在市中心
-- Do you work downtown?你在市中心上班嗎？
-- She works downtown.（她在市中心工作。）
-- Let's go downtown.（我們去市中心吧。）
-- We are going downtown.（我們正要進市中心去。）（直接把 downtown 當副詞用）
-
-- 當它前面接像 go, drive, head 這種動詞 → 表方向的副詞（去市中心）。
-- 當它前面接像 work, live, stay 這種動詞 → 表地點的副詞（在市中心）。
-
-
 ## 移動名詞 + to 目的地
 有位置、方向性的名詞，後面可用to 目的地
 - Where is the entrance to the library?

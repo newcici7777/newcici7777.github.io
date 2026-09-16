@@ -3,7 +3,7 @@ title: kind of 種類 / different
 date: 2026-08-11
 keywords: English, 
 ---
-## come from
+## kind(名) of + come from (種類來自那裡)
 - Where does the apple come from?
   - **這一顆**蘋果(單數)是那來的？問**來源**，也可以回答是某個產地，但也可能是超市買來？便利商店？你媽給的？
 - Where **does this kind** of apple come from?
@@ -30,10 +30,6 @@ keywords: English,
 
 ----------------------------------------------
 
-## 咖啡 + from
-- This coffee comes from Africa.这个咖啡来自非洲。
-  - 咖啡已經是最底層的製作產品，不會再問種類What kind of coffee，直接問源頭from是來自那裡。
-
 ## be + from
 若想用be動詞 + from = come from，都是問產地，以下都是同樣意思，只有單複數之分。
 - Where **is this apple** from?(蘋果單數)
@@ -51,20 +47,20 @@ keywords: English,
 
 -------------------------------
 
-## 形容詞 + kinds of 各種各樣
+## 形容詞 + kinds(名) of 各種各樣
 all(形)所有種類、different各種(形)、many許多(形)都是複數，所以kind後面要加上s。
 
 - all kind**s** of...（各種各樣的）
   - I like all kinds of music. （我喜歡各種各樣的音樂) 音樂不可數
 - different kind**s** of...（不同種類的）
-  - There are many different kinds of people in the world.世界上有許多不同種類的人
+  - There are many different kinds of **people** in the world.世界上有許多不同種類的人
 - many kind**s** of...（許多種類的）
-  - There are many kind**s** of animals in the zoo.（動物園裡有許多種動物。）
+  - There are many kind**s** of animal**s** in the zoo.（動物園裡有許多種動物。）
+- various（各種各樣的）
+  - She bought various kind**s** of winter cloth**es**.她買了各式各樣的冬裝。 
 
 例句:
-- That coffee shop has fifty kinds of coffee!
-- This kind of cheese is nice!這個種類的起士很好！
-  - 起士是不可數，不能加s
+- That coffee shop has fifty kinds of coffee!那家咖啡廳有五十種咖啡。
 - The cafe serves all kind**s** of cheese.那家咖啡廳供應各式各樣的起司
 - all kind**s** of beer
   - 飲料、酒 beer是不可數，不能加s
@@ -72,8 +68,12 @@ all(形)所有種類、different各種(形)、many許多(形)都是複數，所�
 - She likes to take photos of different kind**s** of flower**s**.她喜歡拍攝各種不同種類的花
 - I’ve met different kind**s** of **people** on dating apps.我在交友軟體上遇過各式各樣、不同類型的人
 
+------------------------------------------
+
 ## `come from` vs. `is from` 問產地
-因為coffee已經是產出的產品了，所以不加kind of種類。
+咖啡已經是最底層的製作產品，不會再問種類What kind of coffee，直接問源頭from是來自那裡。
+
+- This coffee comes from Africa.这个咖啡来自非洲。
 
 問句:
 - Does this coffee come from Africa?
@@ -83,7 +83,9 @@ all(形)所有種類、different各種(形)、many許多(形)都是複數，所�
 問句:
 - Is this coffee from Africa?
 
-## What kind of 問什麼種類的
+----------------------------------
+
+## What kind(名) of 問什麼種類的
 - What kind of party do you want.你想要「那一種」舞會？
   - 預計回答只有一種，因為kind沒加s
 
@@ -98,6 +100,8 @@ kind 在這裡當名詞，意思是「種類」。前面的 a 是修飾 kind（�
 - a kind of fruit（一種水果）不可數
 - a kind of feeling（一種感覺）不可數
 
+-----------------------------
+
 ## 形容詞 + kind of + 名詞 
 kind 前面可以加形容詞！
 - What is your favorite kind of candy?最喜歡哪一種糖果
@@ -105,10 +109,14 @@ kind 前面可以加形容詞！
 
 - 加指示代名詞（這／那一種）：
   - I like this kind of chocolate.（我喜歡這種巧克力。）
+  - This kind of cheese is nice!這個種類的起士很好！
+    - 起士是不可數，不能加s
 - 加形容詞（不同／各種）：
   - They have different kind**s** of ice cream.（他們有不同種類的冰淇淋。）
 - 加疑問詞（哪一種）：
   - What kind of music do you like?（你喜歡哪一種音樂？）
+
+--------------------------------
 
 ## kind 單數/複數
 - 只有「一種」時，kind不加S：

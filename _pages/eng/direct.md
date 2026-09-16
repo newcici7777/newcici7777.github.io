@@ -53,6 +53,7 @@ directions + to + [目的地]
 
 ## Street vs Avenue
 美國的馬路命名，東西向的叫 Street，南北向的叫 Avenue。
+- Emma spent a lot of money on Fifth Avenue today! Emma 今天在第五大道花了很多錢！
 
 ## 常用地標
 - 公車站：the bus stop
