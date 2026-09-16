@@ -216,7 +216,27 @@ return 的詞性是及物動詞（Transitive Verb）。
 - Do you want to try some?（你想不想吃吃看 / 嚐一點？）
 - Try some bubble tea.（喝喝看珍奶。）
 
+## try 試試看
+- Riding these buses makes visiting London so easy and fun. I think everyone should try it.搭乘這些公車讓造訪倫敦變得如此輕鬆又有趣。我覺得每個人都應該試試看。
+
+## try 片語
+- I will try my best.我會盡力試試看的。
+
 ----------------------------
+## a use (名詞)
+- The use of mobile phones is prohibited. 手機的使用是被禁止的
+
+- for use（供...使用）：
+  - The manual is for use by teachers.（這本手冊供老師們使用。）
+  - This room is for office use only.（這間辦公室僅供辦公使用。）
+  - The software is designed for professional use.（這款軟體是為專業用途而設計的。）
+- in use（在使用中）：
+  - The computer is in use right now.（這台電腦目前正在使用中。）
+- make use of...（利用）：
+  - We should make good use of our time.（我們應該好好利用時間。）
+
+
+
 
 ## 無法分類
 - Ben is angry at us.

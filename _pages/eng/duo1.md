@@ -360,6 +360,9 @@ Deck 當名詞時，意思是「甲板」（船的甲板）或是「層、樓層
 - Are there any good places to work around here?（這附近有沒有適合辦公／用電腦的好地方？）
 
 ---------------------
+## Mistake 錯誤
+- Mistakes are the key **to** learning. Soon, you'll know geography like you know the back of your hand.錯誤是學習的關鍵。不久之後，你對地理的熟悉程度就會像了解自己的手背一樣（瞭如指掌）。
+  - know something like the back of one's hand：這是一個非常道地的英文習慣用語，字面意思是「像了解自己手背一樣清楚」，引申為「對...瞭如指掌、極為熟悉」。
 
 
 ## 其它疑惑

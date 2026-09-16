@@ -226,6 +226,8 @@ the last 當作形容詞，表示「最後一個」時，因為是獨一無二�
 - I saw him last week.（我上星期看到他。——❌ 不能說 the last week）
 - We met last month.（我們上個月見過面。）
 - She graduated last year.（她去年畢業。）
+- last semester 上學期
+  - I was worried because I failed a test last semester.我當時很擔心，因為我上學期考試不及格。
 
 ## the last 時間 (上一個)
 - The last week has been extremely busy for me. （過去這一個禮拜對我來說超級忙碌。）

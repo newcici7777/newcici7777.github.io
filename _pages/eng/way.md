@@ -182,7 +182,7 @@ path（小徑）、road（馬路）、street（街道）、track（軌道/小路
 * **Route**（路線 / 航線）
 * **特徵**：指從 A 地到 B 地所經過的「整條交通路線」，不一定是指實體的小路。
 * **例句**：*What is the best **route** to the airport?*（去機場最好的路線是什麼？）
-
+- Tom told me that **each type of bus** has **a** different route. Tom 告訴我，每種公車都有不同的路線。
 
 
 ---

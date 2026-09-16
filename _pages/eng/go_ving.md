@@ -27,10 +27,14 @@ Do + 個人健身、武術或體操（比較偏向個人的鍛鍊、沒有直接
 - do yoga（做瑜伽）
 - do exercise（做運動／鍛鍊）
 
+---------------
+
 ## 游泳
 - The children swam every day last week.孩子们上周每天都游泳。
 - We swam in the pool last weekend.我们上周末在游泳池里游了泳。
 - He swims as quickly as a fish.他游得像鱼一样快。
+
+-----------------------------
 
 ## go + 活動
 去從事某項戶外活動或休閒娛樂
@@ -120,3 +124,13 @@ Go + 以 -ing 結尾的戶外運動（通常是去某個地方進行的活動）
 - We camp here every summer.我们每年夏天都在这里野营。
 - Michael's children like camping.
 - Camping Meals
+
+-----------------------------
+
+## go skating（溜冰） 和 go skiing（滑雪） 
+- 1. go skating（溜冰）
+工具：穿著溜冰鞋（Skates）。  
+如果是裝有輪子的鞋子，則稱為直排輪或輪鞋溜冰（Roller skating）。
+
+- 2. go skiing（滑雪）
+工具：雙腳各踩著一片長長的滑雪板（Skis），手裡還要拿兩根滑雪杖（Ski poles）。

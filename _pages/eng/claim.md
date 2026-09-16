@@ -56,3 +56,12 @@ pay 付錢 + out 出來:錢從保險公司拿出來。
 - It is easy to make a claim online if your flight is delayed.（如果航班延誤，線上提出理賠很簡單。）
 - I filed an insurance claim yesterday.（我昨天提出了保險理賠。
 - You need to file a claim with your insurance company after the accident.（事故發生後，你需要向保險公司提出理賠申請。）
+
+
+## claim something as one's own（宣稱某物為自己的）
+> claim：宣稱、認領、奪取。
+> as one's own：視為自己的、據為己有。
+> 只要看到 claim [某物] as [某人] own，就是指「把...宣稱是自己的東西」！
+
+- Another can claim the kingdom as his own.
+  - him own → his own：him 是受格，這裡需要的是所有格代名詞 his，

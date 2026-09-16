@@ -33,9 +33,18 @@ spent 時間 sightseeing
 詞性： 動詞片語（Go + V-ing 結構）。  
 表示「去從事某項休閒或戶外活動」
 
-- If you want to go sightseeing, you should take a bus.（如果你想去觀光，你應該搭公車。）
+- If you want to **go sightseeing**, you should take a ride on one of these buses.（如果你想去觀光，應該搭乘其中一班公車）
 - We are going to go sightseeing in Paris tomorrow.我們明天要在巴黎去觀光。
 - They went sightseeing all day yesterday.
+
+## `sightseeing(名)` vs `go sightseeing(動)`
+如果你想表達的是「去做觀光這件事（動作）」，要用 go sightseeing：
+- I love to go sightseeing.（我喜歡去觀光。）
+
+如果你想表達的是「觀光（活動本身）很棒／很累」，或是把它當作受詞，則直接用名詞 sightseeing：
+- Sightseeing can be tiring.（觀光可能會讓人很累。）
+- We spent the whole day on sightseeing.（我們把整天花在觀光上。）
+
 
 -----------------------------------
 
@@ -45,6 +54,7 @@ spent 時間 sightseeing
 * **範圍：** 通常是一個**具體的、獨立的旅遊目的地**。
 * **例句：** *The Eiffel Tower is a popular **attraction** in Paris.*（艾菲爾鐵塔是巴黎熱門的觀光景點。）
 * *(對應妳的句子：公車會停在所有「大景點」附近，指的就是這種觀光客必訪的地標。)*
+- They stop close to all the big attractions.它們會停在所有大景點的附近。
 
 ---
 

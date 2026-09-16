@@ -33,6 +33,9 @@ keywords: english, would rather
 4. They **would rather** walk **rather than** wait an hour for the next bus.
 （他們**寧願**走路，**也不要**等一個小時後的下一班公車。）
 
+- Your father would rather die than let that happen.父親寧願選擇去死，也絕對不允許、不放任那個情況發生 
+  - let that happen：讓那件事發生。
+  
 ### 第二類：表達「否定選擇」（寧願不做某事）
 
 如果只想表達「寧願不要做...」，直接在 `rather` 後面加 `not` 即可。

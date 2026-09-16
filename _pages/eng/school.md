@@ -52,8 +52,22 @@ keywords: English
 - When do you start taking the lessons?
 - When do you have the lessons?
 
-## Give 考試 (老師給學生考試)
-- The teacher gave the students a diagnostic reading test to find out their weaknesses. （老師給學生們做了一份閱讀診斷測驗，以找出他們的弱點所在。）
+## Give a test 考試 (老師給學生考試)
+老師或學校扮演的是「提供、發放、實施」測驗的角色，所以用 give：
+
+老師的動作（出題、舉辦）：
+- The teacher will give a test tomorrow. （老師明天要舉行考試。）
+- Who is going to give the test? （這場考試要由誰來主辦／施測？ ）
+- give 人 考試(名詞a test)
+  - The teacher **gave the students a** diagnostic reading **test** to find out their weakness**es**. （老師給學生們做了一份「閱讀診斷」測驗，以找出他們的弱點所在。）
+
+
+學生的動作（接受、應考）： 學生不是「give」考試，學生是「take」考試：
+- We have to take a test tomorrow. （我們明天必須參加考試。）
+
+💡 學習小總結
+- 老師：give a test（舉辦考試、施測）
+- 學生：take a test（參加考試、應考）
 
 
 ## Take 考試 (學生「拿」老師給的考試)

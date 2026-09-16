@@ -49,7 +49,7 @@ Ride 的核心意涵：坐在上面讓人載，「乘車體驗」的感覺
 ------------------
 
 ## 1. Take a ride on 交通工具 (大眾交通工具)
-- You should **take a ride** on one of these bus**es**.（你應該去搭一下這種公車體驗看看。）
+- If you want to go sightseeing, You should **take a ride** on one of these bus**es**.（你應該去搭一下這種公車體驗看看。）
 
 ## 2. Have a ride (親朋好友來載)
 - Can I have a ride to the station? (可以載我去車站嗎) 
@@ -103,7 +103,8 @@ give someone a ride
 - He forgot his wallet and couldn't pay for the ride, so I helped him out. （他忘記帶錢包，付不出車資，所以我幫了他一把。）
 
 ### on my ride 搭車的過程
-- On my ride around the city.當我搭車在城裡四處繞
+- On my ride around the city, I saw many types of buses. 當我搭車在城裡四處繞時，我看到了各種不同類型的公車。
+
 
 ### these rides 不同類型的搭車路線
 - A driver who knows a lot about **these rides** 一個對這些公車路線與乘車狀況瞭若指掌的駕駛（司機）

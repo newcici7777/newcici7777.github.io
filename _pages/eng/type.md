@@ -8,12 +8,13 @@ Type強調**規格**、**型別**。
 ## type of 單數名詞 
 - Lisa doesn't know how to use this type of mouse.丽莎不知道如何用这种鼠标。
 - That type of room isn't available till Saturday. 那種房型直到星期六才提供
+- Tom told me that **each type of bus** has **a** different route. Tom 告訴我，每種公車都有不同的路線。
 
 ## types of 複數名詞S (各式各樣)
 - I saw many type**s** of bus**es**. 看到了好幾種**不同款式**的公車
   - 前面用了 many（許多），代表不只一種款式，所以後面的 type 必須變成複數的 types
 - There are a few different types of rooms available.有幾種不同房型可供選擇。 
-
+- On my ride around the city, I saw many type**s** of bus**es**. 當我搭車在城裡四處繞時，我看到了各種不同類型的公車。
 
 ----------------------------------
 ## Type：強調「規格、科學分類、型別」

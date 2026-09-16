@@ -241,23 +241,7 @@ complete明確目標、任務要完成，表單需要填寫。
   - work 在這裡當作名詞，意思是「工作、作業、手頭上的任務」
 - Please complete the application form.（請填妥／完成這份申請表格。）
 
-## answer 接電話
-- Who answered the phone?谁接的电话？
-- Did she answer your phone?她接你的电话了吗？
 
-## answer 回覆
-- Somebody should answer the phone.有人要接電話
-- answer an email 回覆電子郵件
-- Answer a message 回覆訊息
-
-例句:
-- I need to answer an email from my boss.（我需要回覆老闆的一封信。）
-- Did you answer his email yet?（你回覆他的信了嗎？）
-
-
-### 回覆相關片語
-- Reply to an email（回覆電子郵件，注意這裡的 reply 要加介系詞 to）
-- Respond to an email（對電子郵件做出回應／回覆）
 
 
 ## agree to V 同意去做某件事

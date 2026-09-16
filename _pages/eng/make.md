@@ -73,7 +73,7 @@ keywords: make
 
 ## Make + 人/東西 + 形容詞 (使... 怎樣)
 
-- Riding these buses make visiting easy and fun.坐在巴士裡享受一段車程，讓觀光變的輕鬆又愉快
+- Riding these buses makes visiting London so easy and fun.坐在巴士裡享受一段車程，讓觀光變的輕鬆又愉快
   - visiting: 去觀光/四處造訪
 - This music makes me happy.（這音樂讓我開心。 $\rightarrow$ happy 形容我）
 - The news made her sad.（這消息使她難過。 $\rightarrow$ sad 形容她）

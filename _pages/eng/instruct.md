@@ -24,7 +24,7 @@ instructor 就是教練、講師。
 
 1. Instruction（指示、說明、教學）
 - Read the instruction**s** carefully before you start assembling the furniture. （在開始組裝這套傢俱前，請先仔細閱讀說明書。）
-- The teacher gave clear instruction**s** on how to complete the homework. （老師針對如何完成這項作業，給了清晰的指導與指示。）
+- The teacher gave clear instruction**s** **on** how to complete the homework. （老師針對如何完成這項作業，給了清晰的指導與指示。）
 - Following the safety instruction**s** in the laboratory is mandatory. （嚴格遵守實驗室的安全操作規範是強制規定的。）
 
 instruction 是名詞（指示、說明、教導），而 instructor 是指人的名詞（教練、講師、指導員）。
@@ -49,8 +49,8 @@ instruction 是名詞（指示、說明、教導），而 instructor 是指人�
 
 最常出現在考卷作答、測驗施測、藥品使用說明或組裝步驟中。
 
-- Follow the direction**s** on the back of the medicine box. （請依照藥盒背面的服用指示。）
-- Check the direction**s** for administering the test. （請查看該測驗的施測說明/步驟。）
+- Follow the direction**s** **on** the back of the medicine box. （請依照藥盒背面的服用指示。）
+- Check the direction**s** **for** administering the test. （請查看該測驗的施測說明/步驟。）
 
 ---------------------
 
