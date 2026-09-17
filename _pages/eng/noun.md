@@ -159,6 +159,10 @@ Pieces（塊 / 片）
 * **ticket** counter ➔ 售票櫃台（*ticket* 是名詞修飾 *counter*）
 
 
+當名詞前面加上另一個名詞（當作形容詞用，如 office use）或純形容詞（如 professional use）時，它們的作用是「限定這個『使用』的對象、範圍或性質」：
+- office use = 「辦公室用途」（限定是給辦公用的，不能拿來當臥室或倉庫）。
+- professional use = 「專業用途」（限定是給專業人士用的，不是業餘玩具）。
+
 
 
 類似的常見組合：

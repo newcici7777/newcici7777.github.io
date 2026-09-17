@@ -189,6 +189,11 @@ come with 固定搭配、標配、本來就包含在裡面（就像買手機「�
 順序倒過來，寫成：
 * *Lunch **with free hot chocolate***（附帶免費熱可可的午餐）
 
+
+## `with` vs `come with`
+- with lunch : 附有
+- comes with : 本來就附贈
+
 ------------------------
 ## with 伴隨
 - Good luck with your new job! 祝你在你的新工作（這件事情上）有好運！
@@ -226,62 +231,82 @@ come with 固定搭配、標配、本來就包含在裡面（就像買手機「�
 - Are they still together?（他們還在一起／還在交往嗎？）
 - We can finally be together!
 
+----------------------------------
 
----
-
-### 3. 兩者的差異總結
-
-| 比較項目 | 前面的 `... with lunch` | 這裡的 `comes with ...` |
-| --- | --- | --- |
-| **詞性與結構** | 單純的介系詞（`with`） | 動詞片語（`come with`） |
-| **核心意思** | 搭配、附帶、作為伴隨 | **內含、標配、本來就附贈** |
-| **強調整體性** | 主要是描述「點餐時的組合」 | 強調「這項商品本來就包山包海包含了這些」 |
-
-所以，`comes with` 聽起來更有「買到賺到、整套包辦」的感覺，是用來形容產品固定內容的超級實用片語喔！
-
-
---------------------
-## accessories 配件
+## accessories (配件) 與 come with 
 - Do you want any laptop accessories or not?
 
-你提到的 **`accessories`**（配件、飾品）跟前面的 **`comes with`** 或 **`with`** 其實完全是不同層級的概念！
+- come with(動詞) 是動作，本來就會附贈
+- Accessories(名詞): 配件，例如:手機殼、充電線、藍牙耳機
 
-簡單來說：
+* Does the phone **come with** any **accessories**?（這支手機**有附**任何**配件**嗎？）
+* The camera **comes with** several useful **accessories**.（這台相機**內附**了好幾個實用的**配件**。）
 
-* **`come with`** 是一個**動作/狀態（動詞片語）**，意思是「內附、標配」。
-* **`Accessories`** 是一個**名詞（實體東西）**，意思是「配件、飾品」。
 
-我們把它們放在一起看，就會發現它們在英文裡是怎麼「合作」的：
+------------------
+## with 因為
 
----
+### 環境
+當周遭的環境狀態（如風、噪音、霧）直接導致某個結果發生
+- She couldn't sleep with the noise outside.她睡不著，因為外面很吵。
+- With the wind blowing so hard, we couldn't light the campfire.因為風吹得太大，我們無法點燃營火。
+- With so much work to do, she had to stay late.因為有這麼多工作要做，她不得不留下来加班。
+- With the sun shining brightly, we decided to go to the beach.因為陽光明媚，我們決定去海灘。
+- His hands were shaking with cold.他的雙手因為寒冷而發抖。
 
-### 1. 什麼是 accessories？
+### 因為動作
+- Her eyes were red with crying.她的眼睛因為哭過而紅紅的。
 
-**`Accessories`**（單數是 *accessory*）是指主體以外的「附加配件、裝飾品或周邊配備」。
+### 情緒
+當你想表達某人因為內心的某種強烈感受而做出反應時，也是用 with。
+- She couldn't speak with anger.她氣得說不出話來。（因為生氣而說不出話）
 
-* **例如（手機的 accessories）**：手機殼、充電線、藍牙耳機。
-* **例如（服裝的 accessories）**：皮帶、帽子、項鍊、圍巾（穿搭的配件）。
-* **例如（汽車的 accessories）**：車用支架、腳踏墊。
+------------------------
+## with 姿勢/臉部狀態
+```
+動作 with 姿勢/臉部狀態
+```
+- He stood there with his hands in his pockets.他手插在口袋裡，站在那邊。
+- He sat on the bench with his legs crossed.他翹著二郎腿坐在長椅上。
+- He walked out of the room with his eyes closed.他閉著眼睛走出了房間。
+- He came back with a red face.他回來了，帶著一張紅通通的臉。
 
----
+_________________________
 
-### 2. 當 `accessories` 碰上 `come with`（完美的組合技）
+## with 環境狀態
+形容詞/分詞，用後位修飾來形容前面的名詞。
+```
+with + 名詞 + 形容詞/過去式分詞/Ving現在分詞
+```
+with是，在什麼...狀況下(周圍環境在什麼狀況下)
 
-在日常購物或買東西時，這兩個詞經常會綁在一起出現，用來告訴消費者「買主商品時，裡面會附贈什麼配件」：
+- He likes to sleep with the window open. 他喜歡開著窗戶睡覺。
+  - open 形容
+- I couldn't sleep with the city noise.因為城市的噪音吵得我睡不著，我沒辦法入睡。
+- She reads a book with the music playing.她一邊看書，一邊播著音樂（音樂正在放）。
+- They had a quiet dinner with all the candles burning.他們吃了一頓安靜的晚餐，當時所有的蠟燭都點燃著。
+- Please don't leave the office with the lights on.離開辦公室時，請不要開著燈（不要讓燈處於亮著的狀態）。
+- It's hard to close the door with the wind blowing so hard. 風吹得這麼強，很難把門關上。
 
-* *Does the phone **come with** any **accessories**?*
-（這支手機**有附**任何**配件**嗎？）
-* *The camera **comes with** several useful **accessories**.*
-（這台相機**內附**了好幾個實用的**配件**。）
+---------------------------
+## with + 心理狀態 (副詞)
+with + 心理狀態，修飾前面的動詞，帶著什麼樣的心理狀態，做什麼動作。
 
----
+- With confidence（自信地 / 帶著自信）抽象名詞
+  - She answered the interviewer's questions with confidence.她自信地回答了面試官的問題。
+- With ease（輕鬆地 / 輕而易舉地）
+  - He passed the difficult exam with ease.他輕輕鬆鬆地通過了那場困難的考試。
+- With patience（有耐心地 / 帶著耐心）
+  - The teacher explained the grammar rules with patience.老師有耐心地解釋了文法規則。
+- With interest（帶著興趣 / 津津有味地）
+  - The children listened to the story with interest.孩子們津津有味地聽著這個故事。
 
-### 💡 總結兩者的差別
+----------------------------
+## with + 衣服/配件 (穿什麼衣服,戴什麼配飾)
 
-| 比較項目 | `comes with` | `accessories` |
-| --- | --- | --- |
-| **詞性** | 動詞片語（Action / State） | 名詞（Things / Objects） |
-| **中文意思** | 附帶、內含、隨附...一起來 | 配件、裝飾品、周邊配備 |
-| **舉例** | The box **comes with**...（盒子裡**附有**...） | Inside the box are some **accessories**（盒子裡有一些**配件**） |
+- He went out into the cold rain with no coat on.他沒穿外套就走進了寒冷的雨中。
+  - no coat（名詞：沒有外套）
+  - on（副詞：穿在身上）
 
-所以，`come with` 是在描述「有沒有附」，而 `accessories` 則是那些「被附上的配件本身」喔！
+
+

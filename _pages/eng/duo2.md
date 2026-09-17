@@ -223,18 +223,6 @@ return 的詞性是及物動詞（Transitive Verb）。
 - I will try my best.我會盡力試試看的。
 
 ----------------------------
-## a use (名詞)
-- The use of mobile phones is prohibited. 手機的使用是被禁止的
-
-- for use（供...使用）：
-  - The manual is for use by teachers.（這本手冊供老師們使用。）
-  - This room is for office use only.（這間辦公室僅供辦公使用。）
-  - The software is designed for professional use.（這款軟體是為專業用途而設計的。）
-- in use（在使用中）：
-  - The computer is in use right now.（這台電腦目前正在使用中。）
-- make use of...（利用）：
-  - We should make good use of our time.（我們應該好好利用時間。）
-
 
 
 
@@ -362,8 +350,6 @@ river.你在这条河里会看到各种各样的鱼。
 - Ве careful of wild animal**s**.小心野生动物。
 - During the hike, be careful of wild animals.
 
-## or not 要不要
-- Are they going to join us, or not? 他们到底要不要跟我们一起去？
 
 
 ## give

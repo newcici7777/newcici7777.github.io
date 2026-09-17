@@ -17,6 +17,8 @@ keywords: english, up to , down to
 * *Let’s **walk down to** the lobby.*（我們走樓梯下大廳吧。）
 - Head down to the basement.（往下走到地下室。）
 
+--------------------------------
+
 ## go up to 樓層 (上樓梯)
 - If you go up to the fourth floor, you'll see the pool. 
 
@@ -24,14 +26,37 @@ keywords: english, up to , down to
 - Go down to the first floor.（走到一樓去。）
 - Be careful when you go down the stairs.（你走下樓梯時要小心。）
 
-## go up + 往上走的方式(the elevator/the stairs)
+----------------------------
+
+## go up + 往上走的方式(the elevator/the stairS)
 - You have to go up the elevator, not down.你必須搭電梯往上，不是往下
 - If you go up **the** stair**s**, you'll see the restaurant.如果你走上樓梯，就會看到餐廳。
 
-## go downstairs 走下樓
+## go down + 往下走的方式(the elevator/the stairs)
 - Go down **the** stair**s**（走下樓梯）
-- Go **downstairs**.
 
+------------------------------
+## upstairS(樓上) downstairS(樓下) 副詞 形容詞
+注意後面有**S**，這兩個字比較特別，它們既可以當**形容詞**，也可以當**副詞**。
+
+### 副詞
+- Go upstairs.（去樓上 → 副詞）
+- Go **downstairs**. 走下樓(副)
+- ❌ 絕對不能再加任何介系詞（不能說 go to downstairs）。
+
+### 形容詞 (樓上的,樓下的)
+- upstairs 當形容詞（樓上的）
+  - The upstairs room（樓上的房間 → 形容詞）
+  - Please put the boxes in the upstairs bedroom. (請把箱子放在樓上的臥室。)
+  - I left my phone in the upstairs bathroom. (我的手機忘在樓上的浴室了。)
+- The upstairs neighbors are a bit noisy tonight. (樓上的鄰居今晚有點吵。)
+  - downstairs 當形容詞（樓下的）
+  - We heard a strange noise from the downstairs living room. (我們聽到樓下的客廳傳來奇怪的聲音。)
+  - Can you check if the downstairs lights are still on? (你可以檢查一下樓下的燈是不是還開著嗎？)
+  - She set up her home office in the downstairs study. (她在樓下的書房設置了她的居家辦公室。)
+    - 前面加上冠詞（a study）或形容詞（如 the downstairs study）時，它就是一個名詞，專指家裡用來讀書、辦公、寫字的「書房」。
+
+----------------------------
 ## Take the stairs（走樓梯）
 - Let's take the stairs instead of the elevator.（我們走樓梯，不要搭電梯吧。）
 

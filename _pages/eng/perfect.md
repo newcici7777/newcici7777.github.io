@@ -86,12 +86,16 @@ Have you ever + 過去分詞
 - Have you ever tried this restaurant?（你以前吃過這家餐廳嗎？）
   - No, I have never eaten there.沒有，我從來沒在那吃過。
 
-## ever不能配過去式
-- ❌ Did you ever see that movie? 
-
 ## 最高級 + ever
 - This is the best movie I have ever seen!這是我這輩子看過最好看的電影！
 - He is the nicest guy I have ever met.他是我遇到過最好的人了。
+
+## 為什麼需要 ever ？
+因為單純的完成式太常被用來表達「最近、剛剛、目前為止（跟現在有關）」的狀態了。
+
+如果你想問的是「你這輩子、從出生到現在，有沒有過這種經驗」（而不管是不是最近），單純用完成式有時候會讓聽的人覺得模糊——對方可能會想：「你是問我今天、這禮拜，還是指一輩子？」
+
+這時候加上 ever（在任何時間點／有史以來），就像是在句子裡放了一個大大的箭頭，強制把時間軸拉長到你的一生，消除任何模糊空間。
 
 ----------------------------------
 

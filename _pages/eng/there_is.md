@@ -147,3 +147,15 @@ an accident 是可數名詞，前面要加an
 - Is there a restaurant close to Duo's house?靠近多儿的房子有一个餐斤吗？
 - There were many apartment buildings in this town in 1995.在1995年在这个镇上
 有很多公寓楼。
+
+
+## Is there 尋找／確認有無
+Is there [某物] [在哪裡] 的句型，意思是「某個地方**有沒有**某樣東西」
+
+用來問一個地方有沒有某樣東西。
+- Is there a station near our hotel?（飯店附近有沒有車站？ → 我們想找車站）
+
+- Is / Are...（一般 Be 動詞）
+  - 著重在「描述狀態／位置」
+用來描述某個已知的人或物在哪裡、是什麼狀態。
+  - Is our hotel near a station?（我們的飯店在不在車站附近？ → 我們在確認飯店的位置）

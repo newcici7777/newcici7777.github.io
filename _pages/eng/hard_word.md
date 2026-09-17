@@ -82,40 +82,20 @@ Dimension [dɪˋmɛnʃən]
 ## intend(動) to 原形動詞 (打算)
 - He intends to study abroad next year.他打算明年出国留学。
 
-## intend for 名詞/動名詞 (目的)
-- This textbook is intended for advanced English learners. （這本教科書是為高級英語學習者所設計的。）
+## be intended for 名詞/Ving 是要給...用的
+就是「是為了...而準備的」、「本意是要給...用的」「這東西是為了...而做的」，它指的就是目的或用途！
 
+- This book is intended for children.這本書是為了小孩設計的
+- The money is intended for emergency use.這筆資金旨在用於緊急用途
+- This textbook is intended for advanced English learners. （這本教科書是為高級英語學習者所設計的。）
 - This gift is intended for you.這份禮物是送給你的。
 
 ## In order to 原形動詞 (為了..做某事)
-
 - Students must pass the test in order to begin the next series. （學生必須通過考試，以便於／為了開始下一個單元。）
   - the next series 指的是「教材中下一個系列的故事或單元」。
   - 只用to也是相同: Students must pass the test **to** begin the next series.
 - She woke up early in order to catch the first train. （她早起是為了趕上第一班火車。）
 
-be intended for」就是「是為了……而準備的」、「本意是要給……用的」，它指的就是目的或用途！
-
-「旨在」這個詞聽起來太生硬、像公文。如果換成日常生活聽得懂的說法，意思就是：
-
-「這東西是為了……而做的」
-
-「這個是要給……用的」
-
-用生活化的例子來看：
-課本上的說法： This book is intended for children.
-
-太文言的翻譯： 這本書旨在供兒童使用。
-
-白話的說法： 這本書是寫給小孩子看的。（或：這本書是為了小孩設計的。）
-
-課本上的說法： The money is intended for emergency use.
-
-太文言的翻譯： 這筆資金旨在用於緊急用途。
-
-白話的說法： 這筆錢是要留著急用時花的。
-
-所以，只要看到 be intended for，腦中直接想成 「就是為了……（這個目的／對象）」 就完全通囉！
 
 ---------------
 

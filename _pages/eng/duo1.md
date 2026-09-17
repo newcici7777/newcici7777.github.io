@@ -364,6 +364,66 @@ Deck 當名詞時，意思是「甲板」（船的甲板）或是「層、樓層
 - Mistakes are the key **to** learning. Soon, you'll know geography like you know the back of your hand.錯誤是學習的關鍵。不久之後，你對地理的熟悉程度就會像了解自己的手背一樣（瞭如指掌）。
   - know something like the back of one's hand：這是一個非常道地的英文習慣用語，字面意思是「像了解自己手背一樣清楚」，引申為「對...瞭如指掌、極為熟悉」。
 
+----------------------
+## absence(動) from 缺席、不在
+from 是一個介系詞，表示「從...地方（或狀態）離開、脫離」
+- Her absence from work.（她缺席工作／她請假沒上班）
+- absence from school（缺席學校／曠課、請假）
+- absence from work（缺席工作／請假沒上班）
+- absence from the meeting（缺席會議）
+
+把動詞變名詞：
+- Her absence from work （她沒上班這件事 / 她缺席工作）
+
+## be absent(形) from 缺席、不在
+- She is absent from work today. （她今天沒上班。）
+
+---------------------
+## outdoorS(副) outdoor(形)
+
+### outdoors（有 s）是副詞 (在戶外)
+為什麼 outdoors 加了 s？
+outdoors（有 s）是副詞： 意思是「在戶外地」、「往戶外」。  
+當你要修飾動詞，必須使用帶有 s 的 outdoors，用來修飾前面的這個動作發生的地點在戶外。
+- play outdoor**s** 在戶外玩
+- use outdoor**s** 在戶外使用
+- go outdoors（去戶外）
+- It's too cold to play outdoor**s** today.（今天太冷了，不能在戶外玩。）
+- He loves spending time working outdoor**s**.（他喜歡花時間在戶外工作。）
+
+
+### outdoor（沒有 s）是形容詞 (戶外的、露天的)
+意思是「戶外的」。在英文中，形容詞不能直接加 s。它在這裡是用來修飾後面的名詞 。
+
+- an outdoor activity（戶外活動）
+- We are planning **an outdoor barbecue** this weekend.（我們這週末計畫要辦一場戶外烤肉。）
+- The hotel has **a** great **outdoor swimming pool**.（這家飯店有一個很棒的戶外游泳池。）
+
+## indoor（形容詞） vs. indoorS（副詞）
+- indoor games（室內遊戲） → 形容詞修飾遊戲
+- play indoor**s**（在室內玩） → 副詞修飾玩耍的動作
+
+---------------------------
+
+## a study(n.書房), studies(n.學習狀況), study(v.讀書)
+- a study(單數) : 前面加上冠詞（a study）或形容詞時，它就是一個名詞，專指家裡用來讀書、辦公、寫字的「書房」。
+  -  the downstairs study（樓下的書房）
+- studies(複數) : 學業, 課業, 研究
+  - How about your studies?你的學業／課業怎麼樣啊？
+  - He is busy with his studies.（他忙於他的學業。）
+
+------------------------
+## is busy with 名詞 (忙於某事)
+with 的中文意思是「忙於」
+
+- She is busy with her work.（她忙於她的工作。）
+- I am busy with dinner.（我正忙著弄晚餐。）
+
+如果後面要接「動詞」，則**不能用 with**，要改用 -ing
+- He is busy studying.
+- ❌ He is busy ~~with~~ studying.
+
+
 
 ## 其它疑惑
 I draw things that I think are interesting or beautiful.

@@ -12,6 +12,10 @@ past six.(丽莎平时在六点过二十分左右起床。)
 - I will be ready in about ten minutes.（我大約十分鐘後準備好)
 The price is around(about) one hundred dollars.（價格大約在一百美元左右
 - There are about fifty people here.（這裡有大約五十人)
+- It costs about 100 dollars.（這大約花費 100 元。）
+
+## about 四周
+- He looked about the room.（他環顧了一下房間四周。）
 
 ## about 關於、有關、涉及...的範圍或主題
 about有分類的意思，把限定範圍。
@@ -46,6 +50,24 @@ What do you like about + 名詞
 
 - 問法 B（問細節）： What do you like about Emma?
 - 意思：「你喜歡Emma的什麼地方？」
+
+-------------------
+
+## all about 「全部的內容」是關於...
+all 是代名詞，意思是「全部」=「所有內容」。
+
+- Tell me all about your trip in Europe!跟我講講你歐洲旅行的全部事情
+  -  about your trip in Europe 後位修飾，「全部的內容」是什麼，「全部的內容」是關於歐洲旅行的。
+- Tell me all about the movie.
+  - about the movie 說明all「全部的內容」是關於電影的。
+
+
+## is all(副) about 完全在於
+all =  completely（完全地）
+
+- The movie was all about survival. （這部電影的主題全都在講生存。）
+- Learning a language is all about practicing. （學語言的關鍵完全在於練習。）
+- Success is all about timing and hard work. （成功的關鍵完全在於時機與努力。）
 
 -------------------------------
 
