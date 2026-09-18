@@ -45,12 +45,6 @@ Trip 則是一般廣義的「旅行、出遊」，不一定有導覽性質，單
 - The train journey to the countryside offered breathtaking scenery. （那趟開往鄉村的火車之旅沿途風景美不勝收。）
 - Her career journey to becoming a senior software engineer was full of challenges. （她成為資深軟體工程師的職業生涯歷程充滿了挑戰。）
 
-## flight(名詞) to  飛往...的航班
-- a flight to London（飛往倫敦的航班）
-- The direct flight to Paris was delayed due to bad weather. （由於惡劣天氣，直飛巴黎的航班延誤了。）
-- The emergency flight to the capital saved the patient's life. （那班飛往首都的緊急專機拯救了病人的性命。）
-- The night flight to London gave us a great view of the city lights. （夜間飛往倫敦的航班讓我們俯瞰了美麗的城市燈火。）
-
 -----------
 
 ## travel(名詞) to 去 ... 旅行
@@ -217,6 +211,26 @@ on this trip 介系詞片語作為副詞，修飾前面的動詞 bring，用來�
 
 -----------------
 
+## `trip` vs `tour` vs `journey`
+### Trip（旅行）：
+
+範圍比較廣，泛指任何從A點到B點的「行程」，不管是出差、去玩、或是短程外出都可以叫 trip。
+
+最日常、最普遍的詞。不管是出差、短程旅遊、兩天一夜，通通都可以叫 trip（例如：business trip ）。
+
+### Tour（導覽／巡迴）
+通常帶有「參觀多個景點」、「有導覽（guided tour）」或「巡迴演出／行程」的性質。例如去博物館參觀（museum tour）、跟旅行社的觀光團（package tour），就會用 tour。
+
+強調有計畫地參觀多個景點、有導覽員，或是藝人的巡迴演出。
+
+### Journey（旅程／歷程）：
+
+強調的是「從 A 點到 B 點漫長的過程」，或者帶有一種精神上、人生上的探索意味。
+
+它不一定指觀光旅遊，也可以指一段艱辛的過程（例如：a journey to success 邁向成功的歷程）。
+
+--------------------
+
 ## vacation 放假、度假(名詞)
 ```
 take a vacation + to
@@ -251,22 +265,7 @@ be 動詞本身就代表「狀態」，on 是進行中，這邊的vacation是抽
 - They are currently on vacation in Japan.（他們目前在日本度假。）
 
 
-## be + on 狀態
-- I'm on a break.（我在休息/放風中。）
-- I'm on business.（這句更簡短，意思是「我因公出差中」。）
 
-
-## go on 原因
-go 本身是「去」，但加上 on 之後（go on），常常用來表示「進入某種狀態或活動」。
-除了度假外，這個組合在生活中非常百搭：
-- go on a trip（去旅行）
-- go on a date（去約會）
-- go on a business trip（去出差）
-- go on a diet（去節食／開始減肥）
-
-## on 進行中
-- on duty 值勤中
-- on sale 特價
 
 ---------------------------
 ## 環遊世界
@@ -274,12 +273,6 @@ go 本身是「去」，但加上 on 之後（go on），常常用來表示「�
   - 我當時正在航行（過去進行式，強調過去某個時刻正在進行的動作）
 - Fly around the world：搭飛機環遊世界。
 - Travel around the world.不限交通工具
-
--------------------------------
-## on a trip/ride/journey
-- On my ride.(在我搭車的過程中)
-- on a long journey.(長途旅行中)
-
 
 ------------------------------
 旅遊相關單字

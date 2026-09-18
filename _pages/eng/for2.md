@@ -20,27 +20,6 @@ for 的核心概念： 代表「對象、匹配、容量」
 - a room for two（雙人房——可以住兩個人的房間）
 - a ticket for three（三張連號的票／三人份的票）
 
-## for 動詞名詞化
-在英文裡，有很多原本是動詞的字，可以變身成名詞來用（這叫做名詞化）。當你說 a walk 時，意思是「一次散步」或「一段散步的活動」，把散步(動作)變名詞。
-
-類似這樣「動詞變名詞」並搭配 for 的日常常用片語非常多：
-- for a walk ➔ 為了（進行）某個活動。
-
-當名詞是一個可數名詞，且代表「一次具體的事件、旅程或活動」時，就會加上不定冠詞 a（代表「一次、一個」）。
-
-後面的名詞是雙方都知道的特定事物、或是生活中唯一的設備／媒介時，就會使用定冠詞 the。
-
-名詞是抽象概念，或狀態，不加the。
-
-- go for a walk（去散步）
-- go for a run（去跑步）
-- go for a drive（去兜風／開車出去晃晃）
-- go for a swim（去游泳）
-- Let's go for a coffee.（我們去喝杯咖啡吧！）
-- Let's go out **for a walk**.（我們出去散個步吧。➜ 為了散步而出門）
-- Let's go out **for air**.（我們出去透透氣吧。）
-- Come over for dinner.（來我家吃晚餐。）
-- Come over for a chat.（來我家聊聊天。）
 
 ## for 原因
 ### thanks for 原因

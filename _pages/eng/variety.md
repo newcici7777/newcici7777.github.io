@@ -40,6 +40,16 @@ various + 名詞複數。
 - 如果你想表達的是「種類很多、五花八門」 👉 用 various。
 - 如果你想表達的是「這跟那不一樣、有區別」 👉 用 different。
 
+-----------
+
+## variety
+- There **are** a variety of path**s** that we can walk **on**.有各种各样我们可以走的小路。
+- You'll see a variety of plant**s** in the park.你在公园里会看到各种各样的植物。
+- You will see a variety of fish in this
+river.你在这条河里会看到各种各样的鱼。
+
+## varieties
+- Many variet**ies** of monkey**s** live in this forest.很多不同种类的猴子住在这个森林里。
 
 ----------------------------
 
@@ -65,5 +75,5 @@ Series（系列、連續）這個字很有趣，它的單數和複數長得一�
 - The TV series is very popular.這電視劇非常受歡迎。
 - Are you watching the new series on Netflix? （你在看 Netflix 上的那個新電視劇嗎？）
 
-
+-------
 

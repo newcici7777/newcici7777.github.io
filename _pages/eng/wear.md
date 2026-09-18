@@ -20,6 +20,8 @@ wear 不僅僅是「穿（衣服）」的動作，它同時也用來指「身上
 - The man in a suit.（穿西裝的男人）
 - The woman in the red shirt?
 
+--------------------------
+
 ## wear 穿戴什麼在身上
 一般現在式通常用來表達「習慣、常態或事實」
 
@@ -30,11 +32,14 @@ wear 不僅僅是「穿（衣服）」的動作，它同時也用來指「身上
 - Students are required to wear uniforms. 學生被要求穿制服。  
 - We can all wear our new sweaters tomorrow!
 
+-----------------------
+
 ## put on 穿
 - Well, we don't need to put on work clothes at home. Pajamas are fine for some people.嗯，我們在家裡不需要穿工作服。對有些人來說，穿睡衣就可以了。
   - put on work clothes：穿上工作服（put on 是穿上、戴上的動態動作）。
   - pajamas are fine：睡衣就可以了（fine 在這裡表示「可以、沒問題」）。
-  
+
+------------------
 
 ## be + wearing 識別證/手錶/帽子/鞋子/衣服
 1. 身上穿什麼衣服、鞋子，都要用`現在進行式`，代表「正在穿」。對方現在身上正穿著、戴著的東西，鎖定現在進行式就對了！
@@ -75,17 +80,23 @@ wear本身是動詞，什麼穿什麼，不是「穿」put on這個動作。
 - The guy with a Rolex.（戴勞力士的傢伙）
 - The girl with a tattoo.（有紋身的女孩）
 
+---------------------
+
 ## with 頭髮
 - The guy **with long hair** is cool.那個長頭髮的傢伙很酷。
 - The girl with long hair is my best friend. （那個留著長髮的女孩是我最好的朋友。）
   - 解析：with long hair 是介系詞片語，用來修飾前面的 girl。
 - That boy with short hair is fourteen years old.那个有短头发的男孩十四岁。
 
+--------------------
+
 ## be wearing 進行式 「正在穿在身上的」
 - I like the earrings that you're wearing! 
   - 因為這個「戴著」的動作從剛剛開始、一直持續到現在這個說話的當下，所以必須用現在進行式
 - I love the jacket that you're wearing!（我好喜歡你身上穿的那件外套！）
 - Nice shoes! Are you wearing them for the first time?（好看的鞋子！你今天第一次穿嗎？）
+
+---------------------------
 
 ## on 衣物、帽子、飾品戴在人或動物的身體上
 on，是因為它表達的是「接觸並覆蓋在表面」的物理位置！
@@ -102,3 +113,19 @@ on，是因為它表達的是「接觸並覆蓋在表面」的物理位置！
 - The little sweater on the puppy is adorable. （那隻小狗身上穿的小毛衣超級可愛。）
 - The gold necklace on her neck matches her dress perfectly. （她脖子上戴的金項鍊跟洋裝超級搭。）
 - Whose sunglasses are those on the cat? （貓咪臉上戴的那副太陽眼鏡是誰的？）
+
+---------------------------------------
+
+## get dressed 穿好衣服/打扮好
+> get：在此處是「狀態的轉變」
+> dressed：是動詞 dress 的過去分詞，但在這裡被當作形容詞使用，用來形容主詞的狀態（「穿好衣服的」）。
+
+- get dressed 強調的是「把衣服穿上的這個動作/過程」（例如：起床後開始穿衣服）。
+- be dressed（例如：She is dressed.），則強調的是「已經穿好衣服的狀態」。
+
+
+例句:
+- I've got to get dressed before I do anything else.在我做其他任何事情之前，我必須先穿好衣服。
+
+常見類似用法（Get + 過去分詞當形容詞）：
+- get changed（換衣服）

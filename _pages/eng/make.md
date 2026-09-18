@@ -5,6 +5,7 @@ keywords: make
 ---
 ## 製造出聲音
 - Are kids making that noise(是孩子们在发出那个响声吗？)
+- Those birds make beautiful sound**s**.那些鸟发出美丽的声音。
 - Why is your sheep making that noise?
 - When she starts exercising, her knee makes a noise.
 - My knee just made a weird noise!

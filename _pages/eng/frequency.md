@@ -69,6 +69,13 @@ How often（多常...）的問句，我們會把次數跟時間結合
 - I play soccer with my cousin four times a month.我和我的表弟一个月
 踢四次足球。
 
+------------------------
+- Click the file twice. 點擊二次文件
+- Check the email twice.（檢查這封郵件兩次。）
+- Press the button once.（按這個按鈕一次。）
+- Read the sentence again.（再讀一次這個句子。）
+
+----------------
 
 ## never 從不
 - I never drink coffee.我從不喝咖啡。

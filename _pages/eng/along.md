@@ -20,6 +20,8 @@ along為介系詞，後面一定要接名詞，表示「沿著...（一條線狀
 - They love riding bikes along the bicycle path. （他們喜歡沿著單車道騎腳踏車。）
 - A lot of small shops are lined up along the narrow street. （許多小店鋪沿著狹窄的街道排開。）
 - The ship sailed safely along the rocky coastline. （船隻安全地沿著多岩石的海岸線航行。）
+- Can we walk along this path?我们可以沿着这条小路走吗？
+- Let's walk along the path on the left.咱们沿着在左边的小路走吧。
 
 
 ## along + 名詞 (後位形容詞)

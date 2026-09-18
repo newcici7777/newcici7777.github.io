@@ -157,6 +157,10 @@ so much 本身只是用來強調「程度很深、數量很多」它本身沒有
 - Why does Tom cry so much?他怎麼哭得這麼誇張
 - I love it so much!（我非常喜歡它！）
 - Thank you so much!（非常謝謝你！）
+- The baby cried so much.。宝宝哭得很厉害。
+- Why does Tom cry so much?Tom为什么哭得那么惨？
+- I cried a lot because I didn't know
+English then.我当时经常哭，因为我不会英语。
 
 接在負面的事情後面（cry so much、work too much） → 就會變成負面或讓人擔心的狀況
 

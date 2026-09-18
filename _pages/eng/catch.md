@@ -21,6 +21,7 @@ caught 是英文中非常高頻的一個單字，它的原形是 catch（抓住�
   - I ran fast and caught the last bus.（我跑得很快，趕上了末班車。）
 - 抓到犯人、動物、或現行犯
   - The police caught the thief yesterday.（警方昨天抓到了小偷。）
+  - And I can't catch any fish!
 
 ## Catch a cold（感冒了）
 染上感冒

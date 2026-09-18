@@ -1,5 +1,5 @@
 ---
-title: back 返回/回來
+title: back (返回/回來),return(退貨) 
 date: 2026-08-20
 keywords: english, back
 ---
@@ -109,6 +109,34 @@ back，「回頭、返回」或「走回原本的地方」
 - I am back!（我回來了！ → 強調我現在人已經在這裡了，人安然到家了。）
 - When will he be back?（他什麼時候會回來？ → 問他恢復「在這邊」狀態是什麼時候。）
 - He's back from the office.他從辦公室回來了
+
+-------------------
+
+## return to 回去某地
+return = 返回、回來  
+
+to + 目的地
+
+- We'll return to Chicago. 我們將會回到芝加哥
+  - to Chicago = 到芝加哥
+
+
+## return from 從某地回來
+- Lucy returns from the bathroom.露西從洗手間回來了。
+  - from the bathroom = 從洗手間
+- I am back from Tokyo. 
+  - return from與 be fack from 意思一樣。
+
+## return 退貨
+return 的詞性是及物動詞（Transitive Verb）。
+
+### 動詞（退貨、歸還、返回）：
+- I'd like to return this watch.（我想退這隻手錶。）
+- Please return the book tomorrow.（請明天把書還回來。）
+
+### 名詞（退貨、回程、收益）：
+- Accepting returns within 7 days.（7天內接受退貨。）
+- A return ticket, please.（請給我一張來回票 —— 英國英文常用法）
 
 
 

@@ -168,6 +168,8 @@ outside.
 - Our village is near the sea. 我们的村子在海的附近。
 - There are a few grocery stores near my apartment.在我的公寓附近有几个杂货店。
 - Our village is near the sea. 我们的村子在海的附近。
+- The lake near the mountain is ver deep.在山附近的湖非常深。
+
 
 ## close to 離...很近、在「附近」
 close to 的核心意思是「離...很近」。它強調的是距離短，但不代表兩個東西要緊緊貼在一起，中間隔著一條街、一排樹都沒關係。
@@ -254,6 +256,10 @@ A 在 B 的後面，be動詞表達狀態
   - My car is behind the building.我的車在那棟建築物後面
 
 - Is there a bus stop behind the hotel?在酒店后面有一个公交车站吗？
+- **The** sun is behind **the** cloud**s**.太阳在云的后面。
+- Look! There's a monkey standing behind the rabbit!看！有一只猴子站在兔子后面！
+- There's a parking lot behind the hotel.酒店后面有一个停车场。
+
 
 ```
 一般動詞 + behind

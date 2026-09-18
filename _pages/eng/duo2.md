@@ -23,8 +23,6 @@ keywords: 其它
 - did you invite me to go fishing because you want to talk more?
 
 
-
-
 ## open close closed(形容詞)
 ### open 動詞
 - The museum opened at five last weekend.博物馆上周末在五点开门的。
@@ -49,11 +47,6 @@ keywords: 其它
 - Is the restaurant open?那家餐斤开门了吗？
 - The office will be closed on the fifteenth of January.办公室会在一月十五号关门。
 
-
-
-
-
-
 ## its
 - That sheep is eating its food right now
 - That cow is eating its grass.
@@ -66,28 +59,6 @@ eyes are very small.
 - Blue skies and sunshine!（藍天與陽光！）
 - We had clear skies all week.（我們整個禮拜都遇到晴朗的好天氣。）
 - Stormy skies（暴風雨的天空 / 陰暗的天空）
-
-
-## crowded
-**地方** + be動詞 + crowded
-- The MRT is crowded today.（捷運今天好擁擠。）
-- Is your town quiet on Saturday?No, it's too crowded.不，大拥挤了。
-
-crowded形容詞 + 名詞
-- Is New York a crowded city?纽约是一个拥挤的城市吗？
-
-
-擠滿crowded with + **人/事物**
-- The street is crowded with people.（這條街擠滿了人。）
-
-
-
-
-
-
-
-
-
 
 ## hall 走廊
 - Is there a restroom at the end of the hall ? 走廊盡頭有洗手間嗎？
@@ -136,34 +107,6 @@ fall off + 掉落的地方
 ## call
 - we can call and order a pizza!
 
-## return to 回去某地
-return = 返回、回來  
-
-to + 目的地
-
-- We'll return to Chicago. 我們將會回到芝加哥
-  - to Chicago = 到芝加哥
-
-
-## return from 從某地回來
-- Lucy returns from the bathroom.露西從洗手間回來了。
-  - from the bathroom = 從洗手間
-- I am back from Tokyo. 
-  - return from與 be fack from 意思一樣。
-
-## return 退貨
-return 的詞性是及物動詞（Transitive Verb）。
-
-### 動詞（退貨、歸還、返回）：
-- I'd like to return this watch.（我想退這隻手錶。）
-- Please return the book tomorrow.（請明天把書還回來。）
-
-### 名詞（退貨、回程、收益）：
-- Accepting returns within 7 days.（7天內接受退貨。）
-- A return ticket, please.（請給我一張來回票 —— 英國英文常用法）
-
-
-
 ## would like + 名詞 (想要)
 - I'd like a book, please.
 - I'd like a cup of tea!
@@ -186,11 +129,6 @@ return 的詞性是及物動詞（Transitive Verb）。
 - I saw this ad yesterday.我昨天看到了这个
 广告。
 - an ad for this clothes store. 这个服装店的广告
-
-## catch 抓
-- And I can't catch any fish!
-
-
 
 
 ## wash the dish**es** 洗碗 cook煮
@@ -227,6 +165,14 @@ return 的詞性是及物動詞（Transitive Verb）。
 - This is called a lift in the UK.這個在英國叫電梯。
 - Cookies are called Biscuits in British English.餅乾在英國英文裡叫做 biscuits。
 
+-----------------
+
+## be careful of
+- Ве careful of wild animal**s**.小心野生动物。
+- During the hike, be careful of wild animals.
+- Be careful!
+- Be careful! This is a dangerous street.小心！这是一条很危险的街道。
+
 
 
 ## 無法分類
@@ -255,13 +201,6 @@ Onion overload
 
 - I think my job is giving me bad dreams!
 
---------------
-
-- The baby cried so much.。宝宝哭得很厉害。
-- Why does Tom cry so much?Tom为什么哭得那么惨？
-- I cried a lot because I didn't know
-English then.我当时经常哭，因为我不会英语。
-
 ------------------
 
 - I'm so tired of customers complaining all day.
@@ -272,16 +211,11 @@ English then.我当时经常哭，因为我不会英语。
 
 - Maybe it's a bear...
 
-- Be careful!
-- Be careful! This is a dangerous street.小心！这是一条很危险的街道。
-
 - It's so dark.
 
 - I wanted to promote him.
 
 - emotions on special days
-
-
 
 - Congratulation**s**, Duo!
 
@@ -299,68 +233,7 @@ English then.我当时经常哭，因为我不会英语。
 - finding deal**s** **at** market**s**.
 
 
-## hear + 名詞 (聽到名詞的聲音)
-- I can hear the sound of the wind.我能聽到風聲
-- Can you hear that sound?你能聽見那個聲音嗎
-- Can you hear the bear?你能听到熊的声音吗？
-
-## make sounds
-- Those birds make beautiful sound**s**.那些鸟发出美丽的声音。
-
-## prefer to
-- She prefers to go hiking.她更喜欢去徒步旅行。
-- I prefer to take the subway because it's always on time.我更喜欢坐地铁，因为它总是很准时。
-
-- It's a black rabbit,isn't? 是一只黑色的免子，不是吗？
-- Those are very big snakes, aren't **they**?那些是非常大的蛇，不是吗？
-
-## It's 氣象
-- It's too foggy, I can't see the starts.雾太大了，我看不到星星。
-
-## variety
-- There **are** a variety of path**s** that we can walk **on**.有各种各样我们可以走的小路。
-- You'll see a variety of plant**s** in the park.你在公园里会看到各种各样的植物。
-- You will see a variety of fish in this
-river.你在这条河里会看到各种各样的鱼。
-
-## varieties
-- Many variet**ies** of monkey**s** live in this forest.很多不同种类的猴子住在这个森林里。
-
-## go for a 
-- why don't you go for a walk?你为什么不去散步？
-
-## along
-- Can we walk along this path?我们可以沿着这条小路走吗？
-- Let's walk along the path on the left.咱们沿着在左边的小路走吧。
-
-
-## how long
-- How long is the hike? 健行要多久時間
-
-## by self
-- Don't go into the forest by yourself. 不要自己一個人走進森林
-- Don't go camping in the forest by yourself.不要自己一个人去森林里野营。
-
-- The lake near the mountain is ver deep.在山附近的湖非常深。
-
-
-## behind
-- **The** sun is behind **the** cloud**s**.太阳在云的后面。
-- Look! There's a monkey standing behind the rabbit!看！有一只猴子站在兔子后面！
-- There's a parking lot behind the hotel.酒店后面有一个停车场。
-
-## be careful of
-- Ве careful of wild animal**s**.小心野生动物。
-- During the hike, be careful of wild animals.
-
-
-
-## give
-- Don't give those bananas to those monkeys.不要把那些香蕉给那些猴子。
-
-
 - Fans gather to enjoy games.
-
 
 ## offer ... for free 免費提供
 - The hotel might not offer breakfast for free.飯店可能不提供早餐

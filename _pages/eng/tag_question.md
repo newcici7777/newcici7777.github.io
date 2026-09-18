@@ -6,6 +6,8 @@ keywords: english, tag question
 ## 附加問句（Tag Questions）的運作邏輯
 
 **These mugs aren't broken, **are they**?**
+- It's a black rabbit,isn't? 是一只黑色的免子，不是吗？
+- Those are very big snakes, aren't **they**?那些是非常大的蛇，不是吗？
 
 **完全正確！你的直覺非常敏銳。**
 

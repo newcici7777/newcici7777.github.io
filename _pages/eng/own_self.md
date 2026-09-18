@@ -20,6 +20,8 @@ by myself，意思是「獨自地」、「靠自己」、「單獨一人」，�
 * He was **by himself**（他獨自一人）
 * She was **by herself**（她獨自一人）
 * We were **by ourselves**（我們獨自一人）
+- Don't go into the forest by yourself. 不要自己一個人走進森林
+- Don't go camping in the forest by yourself.不要自己一个人去森林里野营。
 
 * **例句對比**：
 * *I went to the movie **by myself**.*（我獨自一人去看電影。）

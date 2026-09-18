@@ -67,6 +67,7 @@ keywords: give send show
 - do you want my guitar? I can give it to you.
 - send an email!
 - can you send an email to duo
+- Don't give those bananas to those monkeys.不要把那些香蕉给那些猴子。
 
 ## send
 ### 人 + send + 人 + 物

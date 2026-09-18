@@ -118,6 +118,11 @@ temperture是可數名詞，通常用複數S，be動詞用are
 | **霧 (Fog)** | foggy | It's **foggy**. | ❌ It fogs. |
 | **悶熱 (Humid/Hot)** | humid / hot | It's **humid / hot**. | ❌ It humids. |
 
+例句:
+- It's too foggy, I can't see the starts.雾太大了，我看不到星星。
+
+
+
 --------------------------------------
 
 ## don't like the + 天氣 (我不喜歡這個天氣)

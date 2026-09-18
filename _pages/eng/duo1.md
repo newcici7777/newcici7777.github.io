@@ -205,6 +205,8 @@ to : 一路跟著對方移動到了哪個終點
 ## Perfect to + 原形動詞
 適合（去做某件事）。
 - The weather today is perfect to go out for a walk.今天的氣候非常適合出去散步。
+- She prefers to go hiking.她更喜欢去徒步旅行。
+- I prefer to take the subway because it's always on time.我更喜欢坐地铁，因为它总是很准时。
 
 ## Perfect for someone to + 原形動詞 (適合給某人做某事)
 - This quiet café is perfect for me to focus on work.
@@ -446,6 +448,33 @@ with 的中文意思是「忙於」
 
 -----------------------
 
+## click
+
+修飾動作的詞（像是方位、方式）通常會放在動詞的前面作為限定：
+
+- right-click（按右鍵）動詞
+  - Right-click the mouse.（按右鍵）
+- double-click（雙擊）動詞
+  - Double-click the icon.（雙擊圖示）
+- left-click（按左鍵）動詞
+
+滑鼠
+- Scroll down the page.（向下滾動頁面
+- Click the file twice
+
+### 可以搭配 open 的對象（軟體、檔案、視窗）：
+
+- Open an app（打開應用程式）
+- Open a file（打開檔案）
+- Open a window / browser（打開視窗 / 瀏覽器）
+
+硬體設備要用其他動詞：
+
+- 電腦主機：Turn on the computer / Turn off the computer.（關閉電源）
+- 螢幕：Turn on the monitor / screen
+
+
+------------------
 
 ## 其它疑惑
 I draw things that I think are interesting or beautiful.

@@ -72,7 +72,7 @@ watch 看別人在做的「一連串動作」。
 - Zari is watching Junior.
 - We're going to watch a baseball game on Thursday.  
 
-### hear + 名詞
+### hear + 名詞 (聽到名詞的聲音)
 - Can you hear the music? 你能听到音乐吗？
 - I'm sorry to hear that.
 - Suddenly, Vikram hears a noise outside.
@@ -81,6 +81,9 @@ watch 看別人在做的「一連串動作」。
 - Can you hear the plane?你能听到飞机吗？
 - I heard a sound, and it was a monkey.聽到一個聲音，那是隻猴子。
   - sound 是可數名詞，表示「某個具體的聲音、聲響」（例如聽到的一聲鳥鳴、一聲吼叫）時，它是可數的，所以前面可以用 a（如 a sound）。
+- I can hear the sound of the wind.我能聽到風聲
+- Can you hear that sound?你能聽見那個聲音嗎
+- Can you hear the bear?你能听到熊的声音吗？
 
 
 ## 「感官動詞 + 受詞 + 動作」是用來描述「看到別人做某事」

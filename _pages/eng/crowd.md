@@ -63,3 +63,16 @@ keywords: English,
 - exciting（令人興奮的）vs. excited（感到興奮的——被激發的）
 - crowd（擠）vs. crowded（被擠滿的＝擁擠的）
 
+--------------------------
+
+## crowded
+**地方** + be動詞 + crowded
+- The MRT is crowded today.（捷運今天好擁擠。）
+- Is your town quiet on Saturday?No, it's too crowded.不，大拥挤了。
+
+crowded形容詞 + 名詞
+- Is New York a crowded city?纽约是一个拥挤的城市吗？
+
+
+擠滿crowded with + **人/事物**
+- The street is crowded with people.（這條街擠滿了人。）

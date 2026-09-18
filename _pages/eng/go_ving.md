@@ -71,6 +71,8 @@ Go + 以 -ing 結尾的戶外運動（通常是去某個地方進行的活動）
   - I went hiking there last week and saw a lot of angry chickens.
 - hiking paths 健行步道
   - we're going to talk about wild snakes and hiking paths in Australia.今天我們要來談談澳洲的野生蛇類與健行步道
+- how long
+  - How long is the hike? 健行要多久時間
 
 
 #### 💡 `the hike`（名詞） vs. `hiking`（動名詞/名詞）有什麼差別？

@@ -122,6 +122,11 @@ fly + to + 地點。
 牛津。
 - I flew to London last Saturday.我上周六飞去了伦敦。
 
+- a flight to London（飛往倫敦的航班）
+- The direct flight to Paris was delayed due to bad weather. （由於惡劣天氣，直飛巴黎的航班延誤了。）
+- The emergency flight to the capital saved the patient's life. （那班飛往首都的緊急專機拯救了病人的性命。）
+- The night flight to London gave us a great view of the city lights. （夜間飛往倫敦的航班讓我們俯瞰了美麗的城市燈火。）
+
 ------------------
 
 ## fly with 搭乘某家航空公司
