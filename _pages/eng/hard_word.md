@@ -293,7 +293,6 @@ interpret /ɪnˈtɜːrprɛt/
 
 --------------
 
-
 ## A minimum of 最低要...多少
 > 意思： 「最低限度、最少...」。  
 > Minimum 是名詞（或形容詞），意思是「最小值、最低限度」。
@@ -308,4 +307,45 @@ interpret /ɪnˈtɜːrprɛt/
   - 受詞 (Object)： a minimum of 60%（至少 60% 的題目／分數）
   - 副詞片語 (Adverbial)： on the Diagnostic Pretest（在診斷前測中）
 
+------------------
 
+## Proceed 繼續/接著繼續/進行下一步/前往
+意思是「繼續進行」、「著手」、「前進」或「繼續做某事」。
+
+> pro-（字首：向前、往前）+ -ceed / -cess（字根：走、行進）= 「往前走」。
+
+- 繼續進行(Proceed with ＋ 名詞 「會議/專案」)
+  - Please proceed with your presentation. （請繼續你的簡報。）
+  - After a short break, we will proceed with the meeting. （短暫休息後，我們將繼續進行會議。）
+  - The company decided to proceed with the new project.（公司決定著手進行這項新專案。）
+- 接著進行(Proceed to ＋ 下一階段/下一個步驟)
+  - 這裡的 to 是介系詞，後面接名詞。
+  - After taking the pretest, students can proceed to **the next** chapter. （做完前測後，學生可以接著進行下一章。）
+  - Students can proceed to **the next** chapter once they pass the quiz. （學生一旦通過小測驗，就可以接著進行下一章。）
+- 進行下一步(proceed)
+  - Before you proceed, please read the instructions carefully. （在您繼續下一步動作（或往下做）之前，請仔細閱讀說明。  
+- 接著(Proceed to + 動詞)
+  - She hesitated for a moment before proceeding to answer the question. （她猶豫了一下，然後才接著回答這個問題。）
+  - You may proceed to read the next story.（你可以接著閱讀下一個故事。）
+  - After reviewing the test scores, the teacher will proceed to explain the grammar rules. （檢視完測驗分數後，老師將接著解釋文法規則。）
+  - Let's proceed to discuss the next agenda item. （我們接著討論下一個議程項目吧。）  
+- 前往(Proceed to + 地點)
+  - 這裡的 to 是介系詞，後面接名詞。
+  - Please proceed to counter 3. （請前往 3 號櫃檯。）
+  - Please proceed to the classroom.（請前往教室。）
+
+-------------------------
+
+## In addition to + 實體名詞（東西），除了什麼東西之外，我還想要...
+前面已經有了 A（東西），「再加上」B（東西）。這是一個做加法（+）的概念，東西會越來越多！
+
+### 日常生活用品
+- In addition to a cup of coffee, I ordered a piece of chocolate cake. （除了一杯咖啡之外，我還點了一塊巧克力蛋糕。）
+- In addition to my phone, I need to bring a portable charger when traveling. （除了我的手機之外，我旅行時還得帶行動電源。）
+- In addition to a new jacket, she bought two pairs of shoes online. （除了一件新外套之外，她還在網路上買了兩雙鞋子。）
+- In addition to a map, the tour guide gave us a small notebook. （除了地圖之外，導遊還給了我們一本小筆記本。）
+- In addition to milk, we are running out of eggs and bread. （除了牛奶之外，我們連雞蛋和麵包也快用完了。）
+
+#### 學習/工作相關
+- In addition to learning English, he is studying Japanese in his free time. （除了學英文之外，他利用空閒時間學日文。）
+- In addition to finishing the report, you need to prepare the presentation slides. （除了完成這份報告之外，你還需要準備簡報投影片。）

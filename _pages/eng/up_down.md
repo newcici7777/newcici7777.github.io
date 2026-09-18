@@ -76,5 +76,15 @@ keywords: english, up to , down to
 ## take + 電梯 + down to + 第幾樓 (搭電梯到幾樓)
 I'll take the elevator down to the fourth floor.（強調「往下」去四樓）
 
+--------------------
+## Ground Floor
+在歐洲，你在地面層搭電梯，想去真正的二樓，你必須按 1，因為 1 是 First Floor，也就是比 Ground Floor 高一層的樓層。
+
+- 英式英文（UK）：
+  - 地面那一層叫 Ground Floor (簡稱 G)。
+  - 上一層才叫 First Floor（我們的二樓）。
+- 美式英文（US）：
+  - 地面那一層直接叫 First Floor（一樓）。
+  - 上一層叫 Second Floor（二樓）。
 
   

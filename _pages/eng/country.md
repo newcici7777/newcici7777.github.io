@@ -38,7 +38,14 @@ a Country > the City > Town > the country > a village
     - Do you work downtown?你在市中心上班嗎？
     - She works downtown.（她在市中心工作。）
     - They live downtown.他們住在市中心
-
+- hometown
+  - 當名詞（前面需要**所有格**或**介系詞**）：
+    - I love my hometown.（我愛我的家鄉。 → 受詞，名詞）
+    - She lives in her hometown.（她住在她的家鄉。 → 介系詞 in 後面的名詞）
+  - 當副詞（直接接在動詞後面，不加介系詞）：
+    - She moved hometown.（她搬回老家了。 → 修飾動詞，副詞）
+    - I plan to move hometown next year. （我計畫明年搬回老家。）這裡的 hometown 修飾動詞 move，告訴大家搬去哪裡
+    - He decided to work hometown after graduation. （他決定畢業後在家鄉工作。）
 - in the City（城市 / 市）
   - He lives in the city.(他住在城市裡)
   - Taipei is a big and busy city.（台北是一個大而繁忙的城市。）

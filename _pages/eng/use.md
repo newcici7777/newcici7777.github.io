@@ -79,3 +79,11 @@ use 是不可數的抽象名詞，意思是「使用、用途」。
 
 💡 小提示： 只要把握住「當它代表具體的用途、功能、用法時，它就是可數的（通常加 -s）」，這樣就很好辨認了！
 
+--------------------
+## Use(動) 使用
+- Use the internet 會使用網路嗎
+* use the computer（使用電腦）
+* use your phone（使用你的手機）
+* use this app（使用這個應用程式）
+
+- Do you want to use a spoon or a fork?你想要用勺子还是叉子？

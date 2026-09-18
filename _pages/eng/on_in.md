@@ -3,6 +3,12 @@ title: on,in 書本電視
 date: 2026-09-06
 keywords: english,on ,in
 ---
+### 地點／語言的介系詞：in
+in 用來表示「在一個範圍或區域（空間、國家、語言系統）之內」。
+
+當你要表達「在某個國家、某種語言、或某個區域的慣用語中」時，英文習慣使用介系詞 in（例如：in British English、in the UK、in the US）。
+
+
 ## on 電子設備
 - He was playing music on his laptop.
 
@@ -57,3 +63,18 @@ report（報導、節目），因為帶有「平台、畫面」的概念，有�
   - Look at that giant rain cloud on the forecast.（看預報畫面上的那個巨大雨雲。）
 - on the weather channel（在氣象頻道上）
 - on the radio（在廣播中）
+
+---------------------------
+## on 接在機器或設備的名詞 (在...上面執行／運作)
+電腦、手機、平板的螢幕或硬體，對軟體來說就像是一個運作的平台或表面。軟體是「在這個作業系統／這台電腦的環境中」跑起來的
+
+- on my computer
+- on my phone
+- on this website（在這個網站上）
+
+例句:
+- This software isn't working on my computer.
+- This app runs on iOS.（這款 App 在 iOS 上執行。）
+- The file is on my computer.（這個檔案在我的電腦裡／上面。）
+
+

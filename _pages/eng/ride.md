@@ -132,6 +132,13 @@ ride 的核心本質就是「一趟乘車／搭乘的體驗」。
 - ride the 設施(沒有on)
   - Can we ride that?
 
+## go on 遊樂設施 
+參與 / 踏上某個活動或設施
+- I'm not going on this roller coaster!（我不坐這座雲霄飛車！）
+- Can we go on the Ferris wheel?（我們可以去坐摩天輪嗎？）
+- I don't want to go on that ride.（我不想去坐那個遊樂設施。）
+
+
 ### 遊樂設施名詞
 - the Ferris wheel 摩天輪
   - The kids are excited to have a ride on the Ferris wheel. （孩子們很興奮想去坐摩天輪。）

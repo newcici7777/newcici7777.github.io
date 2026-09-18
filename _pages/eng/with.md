@@ -1,5 +1,5 @@
 ---
-title: with, come with, accessories
+title: with 包含/加/一起/工具/藉由
 date: 2026-08-18
 keywords: English, with
 ---
@@ -12,13 +12,8 @@ with you 在這裡不是指在一起，而是指「把時間和注意力留給�
 - She will be with you in a minutes.她馬上就來為您服務
 - The doctor will be with you in a moment. （醫生馬上就會來為您看診。）
 
-## Use 使用
-- Use the internet 會使用網路嗎
-* use the computer（使用電腦）
-* use your phone（使用你的手機）
-* use this app（使用這個應用程式）
-
-- Do you want to use a spoon or a fork?你想要用勺子还是叉子？
+## with 人或物身上帶有的特質、外貌或配件。
+- The girl with long black hair is my sister.那個留著長黑髮的女孩是我妹妹。
 
 ## with 使用
 ```
@@ -27,7 +22,9 @@ with you 在這裡不是指在一起，而是指「把時間和注意力留給�
 用在工具：
 - Write with a pen（用原子筆寫字）
 - Cut it with a knife（用刀子切它）
-- Cooking with Carrots
+- She cut the paper with a pair of scissors.她用剪刀剪紙。
+- He wrote the letter with a red pen.他用紅筆寫這封信。
+- The chef cut the vegetables with a sharp knife.主廚用一把鋒利的刀子切蔬菜。
 
 ## 動作 + with + 身體部位
 「用身體的某個部位去完成一個動作」，會使用 **`with`** 這個介系詞。
@@ -119,6 +116,7 @@ help me + to + 原形動詞
 ```
 主要的飲料 with(加) milk/sugar
 ```
+- She drinks coffee with milk every morning.她每天早上都喝加牛奶的咖啡。
 - How much is a cup of coffee with milk?一杯加牛奶的咖啡多少钱？
 - Coffee with sugar.
 - I would like a pizza with cheese, please.我想要一个加芝士的比萨，谢谢。
@@ -126,12 +124,12 @@ help me + to + 原形動詞
 - My daughter likes to have cereal with milk.她喜歡吃加牛奶的麥片。
 - My daughter likes to have cereal with milk every morning.我的女儿喜欢每天早上吃麦片加牛奶。
 
-
-
 * With milk 
 * With oat milk.（加燕麥奶）
 * With almond milk.（加杏仁奶）
 * With soy milk.（加豆漿）
+
+-----------------------
 
 ## with 配料
 用什麼材料來做某件事」或「某個東西裡含有/配有什麼」時，英文就會使用 with。
@@ -140,13 +138,43 @@ help me + to + 原形動詞
 - Cooking with garlic（用大蒜烹調）
 - A cake with chocolate（加了巧克力/含有巧克力的蛋糕）
 
+------------------
+
 ## with 的核心意思是「搭配、伴隨」
 - You can eat it with meat and vegetables.（你可以把它跟肉和蔬菜一起吃。）
   - 肉和蔬菜是陪襯、伴隨在一起下肚的佐料或配菜。
 - We can eat hot pot with tofu tonight!（我們今晚可以吃加了豆腐的火鍋)
 
+---------------------
 
-## with 附加設備
+## with 包含
+`with` 是一個**介系詞**，用來連接「主商品」和「附贈品/搭配項目」，主動提供、加購或附帶（就像買主餐「配」一杯飲料）。
+
+- I want to buy a house with a big garden.我想買一棟有大花園的房子。
+  - with a big garden 包含花園
+
+1. **The price includes the hotel room with breakfast.**翻譯：這個價格包含附帶早餐的飯店房間。
+
+2. **I ordered a set meal with a bowl of soup and a drink.**翻譯：我點了一份包含一碗湯和一杯飲料的套餐。
+
+3. **The software package comes with a user manual.**翻譯：這個軟體包內含一本使用者手冊。
+
+
+4. **Her new book comes with a free poster.**翻譯：她的新書隨書附贈（包含）一張免費海報。
+
+
+5. **We offer a full service with maintenance and repair included.**翻譯：我們提供包含維護與修理在內的完整服務。
+
+7. **He bought a brand new computer with a three-year warranty.**
+* 翻譯：他買了一台包含三年保固的全新電腦。
+
+---
+
+請問您是不是想用 **with** 來表達某個特定句子的「包含」，如果是的話，也可以把您的句子寫出來，我來幫您看看喔！
+
+------------------------
+
+## with 附加設備/包含設備
 表達某個東西（房間）「內部包含、附帶」了某種配備
 - a room with a double bed ＝ 一間附帶（有）雙人床的房間
 - a coffee shop with a view ＝ 一間帶有景觀的咖啡廳
@@ -157,8 +185,42 @@ help me + to + 原形動詞
 - I'd like a room with a private bathroom. （我想要一間有獨立衛浴的房間。）
 - Is there a room with a balcony available? （有帶陽台的房間可以訂嗎？）
 
-## come with 附贈/配件/附有
+-------------------------
+## come + 形容詞 (包含某種狀態)
+形容詞用來描述產品或物品「以某種**狀態**提供、出廠時具備某種特色」  
+come 後面可以直接接形容詞，用來描述主體「以什麼狀態出場／提供」
+
+- The software comes pre-installed.
+  - pre-installed（預先安裝好的） 是一個形容詞（或分詞當形容詞用）。
+- The apartment comes fully furnished. 這間公寓提供全套家具。
+  - fully furnished（家具齊全的）是形容詞片語
+* *This jacket **comes waterproof**.*
+（這件夾克**具備防水功能**。）
+* *The toy **comes assembled**.*
+（這個玩具是**組裝好的**／不需自己組裝。）
+* *This smartphone **comes waterproof**, so you can use it safely near the pool.*
+（這款智慧型手機**具備防水功能**，所以你可以在泳池附近安心使用它。）
+
+## come + 形容詞 (提供)
+* The phone **comes black or white.*這款手機提供黑色或白色（可選）。
+* The meal **comes spicy**.這道餐點在出餐或提供時，本身就是做成辣的（或是店家預設的口味就帶有辣味）
+* *The software **comes free**.*
+（這款軟體是**免費提供的**。）
+
+---------------
+
+## come + 形容詞, with + 名詞 (包含狀態，補充說明)
+- The apartment for rent comes fully furnished, with a TV and a washing machine.
+  - The apartment comes fully furnished (主體：公寓本身以**家具齊全的**狀態提供)
+  - ,with a TV and a washing machine (用逗號補充說明細節：並且附帶了電視與洗衣機)。
+
+----------
+
+## come with + 名詞 (包含/附贈/附帶)
 專門用來形容「某個東西本來就是另一個東西的『固定標配』或『內含物』」。
+
+- The software comes with a user manual.（這套軟體附帶一本使用手冊。）
+- The software comes with a free trial period.（這套軟體附帶免費試用期。）
 
 come with 固定搭配、標配、本來就包含在裡面（就像買手機「內附」充電線一樣）
 - Does this Happy Meal come with a toy?（這份快樂兒童餐有附玩具嗎？）
@@ -177,12 +239,11 @@ come with 固定搭配、標配、本來就包含在裡面（就像買手機「�
 - 車輛或產品（標準配備）：The new car comes with leather seats and a sunroof. （這輛新車配有皮質座椅和天窗。）
 - 抽象概念（伴隨而來的事物）：Being a manager comes with a lot of responsibilities. （擔任主管職位伴隨著許多責任。）
 
-
+-------------------------------------------
 
 ## offers [贈品] with [主要的]
-`with` 是一個**介系詞**，用來連接「主商品」和「附贈品/搭配項目」，主動提供、加購或附帶（就像買主餐「配」一杯飲料）。
+贈品寫前面，強調**「免費贈品」**的行銷手法
 
-贈品寫前面，強調「免費贈品」的行銷手法
 - This restaurant offers free hot chocolate with lunch.（這家餐廳提供點午餐送免費熱可可。）
   - free hot chocolate ，吸引客人目光
 
@@ -191,8 +252,8 @@ come with 固定搭配、標配、本來就包含在裡面（就像買手機「�
 
 
 ## `with` vs `come with`
-- with lunch : 附有
-- comes with : 本來就附贈
+- with lunch : 附有/包含
+- comes with : 本來就附贈/包含
 
 ------------------------
 ## with 伴隨
@@ -233,7 +294,7 @@ come with 固定搭配、標配、本來就包含在裡面（就像買手機「�
 
 ----------------------------------
 
-## accessories (配件) 與 come with 
+## accessories (配件) 與 come with(包含) 
 - Do you want any laptop accessories or not?
 
 - come with(動詞) 是動作，本來就會附贈
@@ -243,70 +304,69 @@ come with 固定搭配、標配、本來就包含在裡面（就像買手機「�
 * The camera **comes with** several useful **accessories**.（這台相機**內附**了好幾個實用的**配件**。）
 
 
-------------------
-## with 因為
-
-### 環境
-當周遭的環境狀態（如風、噪音、霧）直接導致某個結果發生
-- She couldn't sleep with the noise outside.她睡不著，因為外面很吵。
-- With the wind blowing so hard, we couldn't light the campfire.因為風吹得太大，我們無法點燃營火。
-- With so much work to do, she had to stay late.因為有這麼多工作要做，她不得不留下来加班。
-- With the sun shining brightly, we decided to go to the beach.因為陽光明媚，我們決定去海灘。
-- His hands were shaking with cold.他的雙手因為寒冷而發抖。
-
-### 因為動作
-- Her eyes were red with crying.她的眼睛因為哭過而紅紅的。
-
-### 情緒
-當你想表達某人因為內心的某種強烈感受而做出反應時，也是用 with。
-- She couldn't speak with anger.她氣得說不出話來。（因為生氣而說不出話）
-
-------------------------
-## with 姿勢/臉部狀態
-```
-動作 with 姿勢/臉部狀態
-```
-- He stood there with his hands in his pockets.他手插在口袋裡，站在那邊。
-- He sat on the bench with his legs crossed.他翹著二郎腿坐在長椅上。
-- He walked out of the room with his eyes closed.他閉著眼睛走出了房間。
-- He came back with a red face.他回來了，帶著一張紅通通的臉。
-
-_________________________
-
-## with 環境狀態
-形容詞/分詞，用後位修飾來形容前面的名詞。
-```
-with + 名詞 + 形容詞/過去式分詞/Ving現在分詞
-```
-with是，在什麼...狀況下(周圍環境在什麼狀況下)
-
-- He likes to sleep with the window open. 他喜歡開著窗戶睡覺。
-  - open 形容
-- I couldn't sleep with the city noise.因為城市的噪音吵得我睡不著，我沒辦法入睡。
-- She reads a book with the music playing.她一邊看書，一邊播著音樂（音樂正在放）。
-- They had a quiet dinner with all the candles burning.他們吃了一頓安靜的晚餐，當時所有的蠟燭都點燃著。
-- Please don't leave the office with the lights on.離開辦公室時，請不要開著燈（不要讓燈處於亮著的狀態）。
-- It's hard to close the door with the wind blowing so hard. 風吹得這麼強，很難把門關上。
-
----------------------------
-## with + 心理狀態 (副詞)
-with + 心理狀態，修飾前面的動詞，帶著什麼樣的心理狀態，做什麼動作。
-
-- With confidence（自信地 / 帶著自信）抽象名詞
-  - She answered the interviewer's questions with confidence.她自信地回答了面試官的問題。
-- With ease（輕鬆地 / 輕而易舉地）
-  - He passed the difficult exam with ease.他輕輕鬆鬆地通過了那場困難的考試。
-- With patience（有耐心地 / 帶著耐心）
-  - The teacher explained the grammar rules with patience.老師有耐心地解釋了文法規則。
-- With interest（帶著興趣 / 津津有味地）
-  - The children listened to the story with interest.孩子們津津有味地聽著這個故事。
-
 ----------------------------
-## with + 衣服/配件 (穿什麼衣服,戴什麼配飾)
+## with 藉由(透過什麼方式)
+- You can improve your skills with regular practice.藉由規律的練習，你可以提升你的技巧。
 
-- He went out into the cold rain with no coat on.他沒穿外套就走進了寒冷的雨中。
-  - no coat（名詞：沒有外套）
-  - on（副詞：穿在身上）
+- You can open the file with this software.你可以藉由這款軟體打開這個檔案。
+
+- She solved the problem with a clever trick.她藉由一個巧妙的訣竅解決了這個問題。
+
+- He expressed his feelings with a piece of music.他透過一段音樂表達了自己的情感。
+
+- You can improve your English with daily practice.藉由每天的練習，你可以提升你的英文能力。
 
 
+-----------------------------
 
+## (start,end) + with 以...為起點,以...結束
+with 扮演介系詞（Preposition）的角色，後面接一個名詞（代表作為起點的事物）。整個 with + 名詞 片語是用來修飾前面的動詞，說明這項行動是「用什麼作為開始或結束的手段／方式」。
+```
+start, begin, open, end + with + 名詞
+```
+- The meeting starts (動詞) with (介系詞) a short presentation (名詞片語：短篇簡報作為起點).
+- The meeting starts with a short speech.會議以一場簡短的演講開始。
+
+- The meeting starts with a short presentation by the manager.會議以經理的簡短報告開始。
+
+- The concert opened with their most famous song.翻譯：音樂會以他們最著名的歌曲作為開場。
+
+- His speech ended with a powerful quote.他的演講以一句充滿力量的名言作結。
+
+- We will begin the course with a quick review of the basics.我們將以快速複習基礎知識來展開這門課程。
+
+- The celebration starts with a brilliant fireworks display.慶祝活動以精彩的煙火秀揭開序幕。
+
+
+--------------------------------
+## 動詞 + with
+### Provide（提供）
+```
+Provide + 人 + with + 物： 供應某人某樣東西。
+```
+- The hotel provides guests with free breakfast.（這家飯店提供房客免費早餐。）
+
+### Fill（填滿）
+```
+Fill(動) + 物 + with + 東西： 用某物把容器「填滿」。
+```
+- Fill the glass with water.（把杯子裝滿水。）
+
+- be filled with 充滿了...
+  - The room was filled with laughter.
+
+### do with(做)
+```
+Do with + 人/物： 跟...有關、需要、或處置。
+```
+- What should we do with these old boxes?（我們該怎麼處置這些舊箱子？）
+- have to do with...（與..有關）
+  - This has nothing to do with you.（這跟你一點關係也沒有。）
+
+###  Deal（處理／對付）
+> Deal with + 問題、狀況、人： 處理、應付、打交道。
+
+- We have to deal with this difficult problem.（我們必須處理這個棘手的問題。）
+- She is hard to deal with.（她很難相處。）
+
+------------------------------------

@@ -32,7 +32,7 @@ keywords: English, fun
 * ⭕ *He is a **funny** guy.*（他是一個很好笑/幽默的人。）
 
 
-## have fun + Ving 做某事時玩得開心
+## have fun + Ving 做什麼事情很開心
 fun 在這裡是不可數名詞，前面不能加 a。  
 接在 fun 後面的動作，必須改成 動名詞（-ing） 形態。
 - Have fun shopping! （逛街逛得開心點！）
@@ -43,6 +43,8 @@ fun 在這裡是不可數名詞，前面不能加 a。
 - We had fun hiking last week.我们上周徒步旅行很开心
 - We had fun swimming yesterday
 - have fun drawing pictures!好的，画画愉快！
+- We had fun traveling **by air**. 我們搭機旅行得很開心。
+
 
 ## had a lot of fun 弄得很開心
 - We **had** a lot of fun.（過去簡單式）：總結整場活動，意思就是「我們玩得很開心。」

@@ -223,6 +223,9 @@ return 的詞性是及物動詞（Transitive Verb）。
 - I will try my best.我會盡力試試看的。
 
 ----------------------------
+## is called 被叫作
+- This is called a lift in the UK.這個在英國叫電梯。
+- Cookies are called Biscuits in British English.餅乾在英國英文裡叫做 biscuits。
 
 
 

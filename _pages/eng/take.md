@@ -186,4 +186,29 @@ take（拿、帶）+ in（進入）:「把...收進眼底」或「吸收進去�
 - take in 收留、容納：
   - They take in stray cats. （他們會收留流浪貓。）
 
+----------------------------
 ## take down 拿下來/影片下架
+網路與社群情境：把貼文、影片「下架、刪除」
+
+### 1. 網路與社群情境：把貼文、影片「下架、刪除」
+- The company had to take down the offensive post. （公司被迫把那篇有爭議的貼文撤下／刪除。）
+- The YouTube video was taken down due to copyright issues. （那部 YouTube 影片因為版權問題被下架了 —— 這裡用了被動語態 be taken down。）
+
+### 2. 實體動作成：把東西「拆下來、搬下來」
+畫面： 伸手把高處或掛著的東西「取下來」。
+
+- Can you help me take down the Christmas decorations? （你可以幫我把聖誕裝飾拆下來嗎？）
+- He took down the heavy painting from the wall. （他把牆上那幅重畫取了下來。）
+
+
+### 3. 工作與對話情境：把重點「記下來、寫下來」
+畫面： 當別人講話或開會時，把重點從空中「抓下來」寫在紙或筆記上（類似 write down）。
+
+- Let me take down your phone number. （讓我把你的電話號碼記下來。）
+- Make sure you take down the important notes during the meeting. （開會時，記得把重要筆記寫下來。）
+
+💡 實用總結
+下次聽到或用到 take down，腦中直接抓這個核心畫面：
+網路上： 下架、刪除。
+實體上： 拆下來、拿下來。
+腦袋或筆記： 記下來。
