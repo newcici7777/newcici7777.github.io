@@ -335,7 +335,7 @@ Deck 當名詞時，意思是「甲板」（船的甲板）或是「層、樓層
 
 ## characters 角色
 - Wow, you look like you were in a war! Just like character**s** in the movie!哇，你看起來像剛打完仗一樣！就像電影裡的角色一樣！ 
-  - 複數 characters，是因為說話者在做一個「通稱、廣泛的類比」，而不是指「某一部特定電影裡的某一個特定角色」。
+  - 複數 characters，是因為說話者在做一個「總稱、廣泛的類比」，而不是指「某一部特定電影裡的某一個特定角色」。
 - Just like **a** character in the movie!
 就像這部電影裡的某個**特定**角色一樣！
 

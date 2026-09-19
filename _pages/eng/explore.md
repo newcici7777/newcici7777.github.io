@@ -18,7 +18,7 @@ explore 更常被用來指實地走訪、逛逛
 
 ----------------------
 
-## 網路瀏覽搜尋
+## 網路瀏覽
 
 * *You can **explore** our website to find more information.*（你可以**瀏覽**我們的網站以尋找更多資訊。）
 

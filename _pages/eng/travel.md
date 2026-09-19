@@ -169,7 +169,7 @@ join 強調跟著團體一起
 ### take trips(複數) 常常去旅行
 當trip變成複數，代表旅行這件事已經變成「常常去旅行」，變成習慣。
 
-trips複數，泛指「喜歡旅行」時，通常會用複數形 take trips。
+trips複數，任意一個「旅行」時，通常會用複數形 take trips。
 
 - Emma likes to take trips. She wants to work in the travel business.
 - I love to take trips on the weekends.（我喜歡在週末去旅行。）

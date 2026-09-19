@@ -1,15 +1,20 @@
 ---
-title: Directions 指引方向
+title: The Directions 指引方向
 date: 2026-08-01
 keywords: 
 ---
-## give 人 directions 指引方向
-Directions， 為什麼要加 s？指引絕對不會只有「一個動作」，而是由一連串「一條一條、一步一步的步驟」組合起來的。
+## 其它無生命 + give(給) 例子
+- the boat tour **gave me** a great view of them.這趟旅程**帶給我**絕佳的視野」
+- The book gave me a lot of information.（這本書給了我很多資訊／這本書讓我了解了很多。）
+- The map will **give you the directions**.（這張地圖會給你方向指引。）
+
+## give 人 the directions 指引方向
+the directions， 為什麼要加 s？指引絕對不會只有「一個動作」，而是由一連串「一條一條、一步一步的步驟」組合起來的。
 
 ```
-give/show 人 directions to
+give/show + 人 + the directions +  to
 ```
-- Can you give me directions to the library?（你能告訴我[去圖書館的一連串步驟]怎麼走嗎？）
+- Can you give me the directions to the library?（你能告訴我[去圖書館的一連串步驟]怎麼走嗎？）
 - Can you show me the directions to the airport?你可以给我看看去机场的方向吗？
 - Are these the right directions?这些是正确的方向吗？
 - Do you know the directions to the park? 你知道去公园的路线吗？
@@ -40,6 +45,8 @@ directions + to + [目的地]
 - Excuse me, I think I'm lost. 打扰了，我好像迷路了。
 - Don't worry, we're not lost. 别担心，我们没有迷路。
 - Are we lost?
+- getting lost isn't always bad?迷路並不總是壞事囉？
+
 
 ## a map of 
 - Here is a map of this city.这是一张这个城市的地图。
@@ -226,6 +233,15 @@ Trun left/right + at the ...
 - Turn left at the traffic light.（在紅綠燈左轉）
 - Turn right at the traffic light.（在紅綠燈右轉）
 - Turn left when you see the sign.（看到標誌時開車左轉。）
+
+## Take a wrong turn 走錯路/開錯方向
+- We took a wrong turn because I couldn't read the sign in the dark.因為我當時在黑暗中看不清指示牌，所以我們走錯路。
+
+## a wrong turn 走錯路
+- We parked and had a picnic under the stars. Sometimes a wrong turn is just a new adventure.我們把車停好，在星空下野餐。有時候，走錯路其實只是一場全新的冒險。
+
+## make a wrong turn （轉錯彎）
+
 
 
 ### trun for 距離 在多少距離後轉彎

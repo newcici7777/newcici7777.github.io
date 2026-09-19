@@ -195,6 +195,10 @@ fall off + 掉落的地方
   - The thick fog prevented the planes from taking off on time.
 （濃霧阻礙了飛機準時起飛。）
 
+------------------
+## reminds me of 使我想起
+- that reminds me of a trip in the Grand Canyon.  這讓我想起在大峽谷的一次旅行。
+
 
 ------------------
 

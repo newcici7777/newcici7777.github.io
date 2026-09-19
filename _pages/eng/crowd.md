@@ -1,5 +1,5 @@
 ---
-title: Crowd人群/Crowded擁擠
+title: A Crowd人群/Crowded擁擠
 date: 2026-09-10
 keywords: English,
 ---
@@ -12,26 +12,35 @@ A crowd 意思是「一群人」或「擠滿的人潮」。
 
 - Why **is** there a crowd in front of Big Ben?為什麼 Big Ben 前面有一群人（那麼多人在排隊/聚集）？
 
+-------------------------------
+
+## 單數/複數可數名詞: 加the/不加the
+- 單數可數，不加the  : 泛指任意一個/任何一個，沒特別指定是那一個
+- 複數可數s，不加the : 泛指世界上**所有的/任何**，沒特別指定是那一群
+- 加the: 「這個」或「那個」，「這群」或「那群」，特別指定那一個/一群。
+
 
 ### A crowd(單數可數名詞) **一群**人 [/kraʊd/] 
 - 用 a（一大群人）：
   - a + 單數可數名詞(**泛指任意**,任何一群) 
-  - A crowd **was** waiting outside.（**有一群人**正在外面等候。泛指**任何一群**）
-  - I hate visiting **a** crowded market.（我討厭逛那種擁擠的市場——泛指**任何一個擁擠的市場**。）
+  - A crowd **was** waiting outside.（**有一群人**正在外面等候。任意一個**任何一群**）
+  - I hate visiting **a** crowded market.（我討厭逛那種擁擠的市場——任意一個**任何一個擁擠的市場**。）
 - 用 the（這一群人）：
   - **The** crowd started to cheer.（**這一群人**開始歡呼。）
 
 ### crowd**S**(複數可數名詞) 人群**們**、**人潮** 通常不加冠詞
 - 複數可數名詞 + **S**
 - **不加the** (**泛指世界上所有的**)
-  - I don't like big crowd**s**.（我討厭超多**人潮**。—— 泛指**所有的**擁擠的群體）
+  - I don't like big crowd**s**.（我討厭超多**人潮**。—— 任意一個**所有的**擁擠的群體）
   - There were huge crowd**s** at the concert.（演唱會現場有巨大的**人潮**。）
   - Crowd**s** gathered in the square.廣場上聚集了**人潮**。）
 - 加了 the（這群 或 那群）：
   - **The** crowd**s** were loud.（**這群/那群**的人潮很吵。）
--------------------
 
-## crowd（名詞：人群、群眾）
+
+---------------------
+
+## A crowd（名詞：人群、群眾）
 - 詞性：這是純粹的名詞，指的是「聚集在一起的一群人」。
 - 單複數特性：它是個集合名詞（Collective Noun）。
 - 如果把它當作「一個群體」來看，動詞用單數（is / has）。

@@ -110,6 +110,21 @@ to 的意思是「朝向、往...方向」，在這裡當作目的地的大門�
 - ❌ 錯誤範例：You need to walk pass
   - walk跟pass都是動詞。
 
+## pass by 從旁邊經過
+pass by 是片語，意思是「經過」、「從旁邊走過／開過」。
+
+> pass：通過、經過。
+> by：從旁。
+> pass + by = 從旁邊經過（而不停留）
+
+- Lee explained how the tour offers details about each bridge as you pass by.李解釋了當你經過時，導覽如何提供每座橋樑的詳細資訊。（也就是：當遊船開過每一座橋時，導覽就會剛好講述該座橋的細節。）
+
+## by(副詞) 經過
+by 當副詞
+
+- time goes by（時間流逝／時間一天天過去）
+- walk by（從旁邊走過去）
+
 
 ## Past(介系詞) + 地點 「經過」
 ```

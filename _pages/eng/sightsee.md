@@ -45,6 +45,27 @@ spent 時間 sightseeing
 - Sightseeing can be tiring.（觀光可能會讓人很累。）
 - We spent the whole day on sightseeing.（我們把整天花在觀光上。）
 
+--------------------------
+
+## A sightseeing tour 觀光旅遊/導覽行程
+當你去一個新的城市或景點時，參加這種由專人帶領、或是搭乘專車（例如常見的雙層觀光巴士 `bus tour`）繞著城市著名地標參觀的行程，就叫做 **A sightseeing tour**。
+
+* **常見動詞搭配：**
+* **go on a sightseeing tour**（去參加觀光行程）
+* **take a sightseeing tour**（進行觀光導覽）
+* **join a sightseeing tour**（加入觀光團）
+
+
+* **例句：**
+* *We decided to **take a sightseeing tour** of London on our first day.*（我們決定在第一天參加倫敦的市區觀光行程。）
+* *The **sightseeing tour** includes visits to all the major museums.*（這個觀光行程包含參觀所有主要的博物館。）
+  - visits 轉化成了名詞，意思是「造訪、參觀（的行程/活動）」
+
+-------------------------
+
+## see 風景 (看風景/古蹟用see)
+- When you're on the Tower Bridge, you can **see** the river.（當你在倫敦塔橋上時，你可以看到河流。）
+- see the sight**s**（看古蹟)
 
 -----------------------------------
 

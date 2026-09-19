@@ -93,6 +93,7 @@ from 依然是維持它核心的 「來源」 概念！友人的協助與載送�
 
 - We can easily see Big Ben from this area.我們從這個區域可以很輕易地看到大笨鐘。
   - from this area 這個**視覺畫面**是從哪裡發出的
+- We have 35 bridges in London, and you can see many of them **from the River Thames**.倫敦有 35 座橋樑，你從泰晤士河上就能看到其中許多座。(坐船遊覽，所以才會說**從泰晤士河上**)
 
 ---------------------
 

@@ -5,6 +5,7 @@ keywords: English, with
 ---
 ## be + with 狀態是在一起
 - Bea is at the gym with her friend, Eddy.
+- I was with some friends.我當時與一些朋友在一起
 
 ## will be with you in a minutes.櫃台/餐廳/診所 接待
 with you 在這裡不是指在一起，而是指「把時間和注意力留給妳，為你提供服務」的意思！
@@ -206,6 +207,7 @@ come 後面可以直接接形容詞，用來描述主體「以什麼狀態出場
 * The meal **comes spicy**.這道餐點在出餐或提供時，本身就是做成辣的（或是店家預設的口味就帶有辣味）
 * *The software **comes free**.*
 （這款軟體是**免費提供的**。）
+  - free 是形容詞。
 
 ---------------
 
@@ -221,6 +223,9 @@ come 後面可以直接接形容詞，用來描述主體「以什麼狀態出場
 
 - The software comes with a user manual.（這套軟體附帶一本使用手冊。）
 - The software comes with a free trial period.（這套軟體附帶免費試用期。）
+- The laptop comes with 16GB of RAM.這台筆電提供／配備 16GB 的記憶體。
+
+
 
 come with 固定搭配、標配、本來就包含在裡面（就像買手機「內附」充電線一樣）
 - Does this Happy Meal come with a toy?（這份快樂兒童餐有附玩具嗎？）

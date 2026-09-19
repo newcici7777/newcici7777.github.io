@@ -3,6 +3,17 @@ title: the 與 抽象名詞
 date: 2026-09-17
 keywords: English, abstract noun
 ---
+## 抽象名詞
+
+抽象名詞的英文是 Abstract Noun。
+
+抽象名詞是用來指稱無法透過五官（視覺、聽覺、嗅覺、味覺、觸覺）直接感知的事物，通常包含情感、概念、品質、狀態或想法等。
+
+常見的抽象名詞範例：
+- 情感與感受：love（愛）、happiness（快樂）、fear（恐懼）、sadness（悲傷）
+- 品質與特徵：honesty（誠實）、beauty（美麗）、bravery（勇敢）、wisdom（智慧）
+- 概念與狀態：freedom（自由）、peace（和平）、success（成功）、time（時間）
+
 
 ## 抽象名詞作為「狀態、環境」，**不加**the,a，**後面不加S**
 抽象名詞表達抽象的「狀態、環境」時，會變成零冠詞（Zero article），不加 a 也不加 the，表示進入某種狀態
@@ -73,7 +84,7 @@ keywords: English, abstract noun
 ### 總結
 
 - 想指定「特定某個」（你知道、我也知道） → 用 the（不管單複數）。
-- 只是在講「整體、泛指、通稱」：
+- 只是在講「整體、任意一個、總稱」：
   - 如果是單數可數 → 要加 a / an（例如：a market）。
   - 如果是複數或不可數 → 什麼都不加（例如：crowds、hard work、experience）。
 - 抽象名詞，不加the、a，也不加S。

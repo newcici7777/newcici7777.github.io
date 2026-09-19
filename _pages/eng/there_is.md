@@ -7,7 +7,7 @@ keywords: english,
 
 ## There is light 有光
 - There is light in the house.房子裡有光 / 屋子裡亮著燈
-  - light 當作不可數名詞，泛指「光線、亮度」
+  - light 當作不可數名詞，「光線、亮度」
 - There is **a** light **on** in the bedroom.（臥室裡有一盞燈亮著。）
   - light是可數時（指發光的「燈泡」）： 當你在講一顆燈泡，它就是一個具體的「物體」
   - light 後面要**加上 on**，後置形容詞，形容燈是打開的。

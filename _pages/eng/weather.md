@@ -228,8 +228,8 @@ rain,snow，不可數氣象名詞，不能一個一個數，所以不能用a。
 ------------------------------------
 
 ## in a storm/ a thunderstorm
-### in a storm : 泛指、任一場
-- in a storm：在一場暴風雨中（泛指、任一場，或某個未特定指明的暴風雨情境）。
+### in a storm : 任意一個、任一場
+- in a storm：在一場暴風雨中（任意一個、任一場，或某個未特定指明的暴風雨情境）。
   - It's dangerous to be caught in a storm at sea.（在海上遇到暴風雨是很危險的。）
 - in a thunderstorm
   - We got caught in a thunderstorm.（我們遇到雷雨暴風了。）
@@ -251,7 +251,7 @@ rain,snow，不可數氣象名詞，不能一個一個數，所以不能用a。
 
 
 ## during 在...期間
-- during + a（泛指「一場/一次」期間）
+- during + a（任意一個「一場/一次」期間）
   - Always unplug electronics during a thunderstorm.
   - 意思：在任何一場暴風雨期間（泛指通則、給建議時），都要把電器拔掉。
 

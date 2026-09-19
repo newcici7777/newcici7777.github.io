@@ -1,8 +1,12 @@
 ---
-title: tours 旅遊行程, A tour 一次性的導覽
+title: tours 旅遊行程, A tour 一次的導覽行程/遊覽活動
 date: 2026-09-19
 keywords: english,
 ---
+## We have ... in 國家 (我們國家有什麼)
+- We have 35 bridges in London, and you can see many of them from the River Thames.倫敦有 35 座橋樑，你從泰晤士河上就能看到其中許多座。
+  - 用We have ... in 國家 = 這邊的We指的是「我們國家」，不會說Our country，而是用We
+
 ## tour**S** 導覽總稱
 這裡的 tours 並不是指「單單某一次」的導覽，而是指這種「觀光導覽服務/行程方案」的**總稱**。
 
@@ -15,17 +19,23 @@ keywords: english,
 - Walking Tour**S** 活動總稱
 
 
-## A tour 一次的導覽
+## A tour 一次的導覽行程/遊覽活動
 只想指「某一次」特定的泰晤士河遊船，你就可以把 s 去掉，冠詞給成a或the。
 
 - We booked **a** River Thames boat **tour** for tomorrow.（我們預訂了明天的一場泰晤士河遊船之旅。）
 
 
 ## `A tour` vs `tours`
-- 單數（a tour): We are going on a tour tomorrow.	
+- 單數（a tour): 
   - 指的是**「某一場特定、單次」**的導覽。
-- 複數（tours 總稱）The company specializes in boat tours.	
-  - 指的是這家公司專門經營**「遊船這種業務/類型的行程」**（泛指通稱）。
+  - We are **going on** a tour tomorrow.  我們明天要去參加旅遊。
+    - go on a tour 意思是:去參觀，去旅遊，參加旅行。
+- 複數（tours 總稱）
+  - The company specializes in boat tours.這家公司專門經營遊船導覽。  
+    - specializes in，形容一家公司、一個店家或是一個人最擅長、最主打的業務或技能。專門從事什麼。
+
+## A tour guide 真人導遊
+- We will meet our tour guide at 3 o'clock. 我們會在3點跟導遊碰面
 
 -----------------------------------------
 
@@ -36,6 +46,10 @@ keywords: english,
 
 - on a trip（在旅行途中）
   - Charlie got lost on a trip.(查理在旅行中迷路了。)
+  - I was on a trip.（我當時正在旅行。）
+  - We are going on a trip tomorrow.（我們明天要去看旅行。）
+    - go on **出發去**旅行搭配動詞片語
+  - But next time, make sure to learn the GPS. It's like **having a new friend** on your trip.但下次一定要學會使用 GPS。這就像是在旅途中多了一個新朋友一樣。
 - on a ride (在搭車的過程中)
   - Charlie lost his wallet on a ride. 搭車途中弄丟了他的錢包。
 - on a ride (在搭遊樂設施的過程中)
@@ -50,6 +64,7 @@ keywords: english,
 （查理在旅途中弄丟了他的錢包。）
   - Life is a journey, not a destination.
 （人生是一場旅程，而不是終點）
+- ❌ 錯誤: on a travel，travel不可數名詞，前面不能有a，travel不適用on，只能用while traveling (在旅行途中,動詞Ving)
 
 -----------------------------
 
@@ -65,11 +80,6 @@ keywords: english,
 -------------------------
 
 ## on a 名詞 + 名詞 = 複合名詞
-名詞前面有形容詞，原本有the，就換成a。
-- 原本: on **the** tour (在這場導覽中)
-- 名詞前加形容詞: on **a walking** tour(在這場健行團中)
-  - 換成a，刪掉the
-
 - on a boat（在船上 / 搭船）單純描述你人此時此刻在哪裡、或是用什麼方式移動。
   - I am on a boat right now.（我現在人在船上。）
   - We traveled on a boat.（我們是坐船旅行的。）
@@ -78,6 +88,28 @@ keywords: english,
 - on a walking tour（在徒步導覽行程中）
 - on a bus tour（在觀光巴士行程中）
 
+- on a Road trip：在公路旅行中
+  -  I was on a road trip, but I didn't know how to use the GPS. I got lost.我去了公路旅行，但我不知道怎麼使用 GPS。我迷路了。   
+- on a Business trip：在出差中
+- on a Long trip：在長途旅行中
+- on a Fun trip：在有趣的旅行中   
+- on a Family trip：在家庭旅行中
+- on my ride: 在我搭乘大眾交通工具中/在我搭遊樂設施的時候
+  - On my ride around the city, I saw many types of buses. 當我搭車在城裡四處繞時，我看到了各種不同類型的公車。
+  - On my ride.(在我搭車的過程中)
+- on a long journey.(長途旅行中)
+
+-------------------------------
+
+## the + 名詞 + 名詞 (專指這趟/第二次提到，要用The)
+要專指**這趟**巴士導覽(不是任意一次巴士導覽)，要用The，不能用a。
+- **The bus tour** is fifty pounds, including a two-day pass.Tourism Translation
+這趟巴士導覽五十英鎊，包含兩日通行證。
+
+- I recently went on **a boat tour** on the River Thames and **the boat tour** gave me a great view of them.我最近去泰晤士河搭了遊船，那次遊船之旅讓我有了很棒的視野欣賞它們。
+  - 第一次提到用 **a boat tour**，第二次提到用 **the boat tour**
+
+----------------------------------
 
 ## we can 做某事 on 導覽行程過程中
 - on a boat tour（搭乘遊船導覽）
@@ -87,19 +119,24 @@ keywords: english,
 - on a bus tour（搭乘觀光巴士導覽）
   - We can see the major landmarks on a bus tour.（我們可以在觀光巴士導覽中看到主要地標。）
 
+---------------------
+
+## the tour gave me 這趟行程**帶給我** 
+**導覽行程**不是人，但卻可以給give(擬人化)
+- the boat tour **gave me** a great view of them.這趟旅程**帶給我**絕佳的視野」
+
+### 其它無生命 + give(給) 例子:
+- The book gave me a lot of information.（這本書給了我很多資訊／這本書讓我了解了很多。）
+- The map will give you the direction.（這張地圖會給你方向指引。）
+
 ---------
 
-## sightseeing tour 觀光旅遊/導覽行程
-當你去一個新的城市或景點時，參加這種由專人帶領、或是搭乘專車（例如常見的雙層觀光巴士 `bus tour`）繞著城市著名地標參觀的行程，就叫做 **sightseeing tour**。
+## The tour offers 導覽行程提供...
+The tour不是人，是導覽，但可以用offer(擬人化)
+- Lee explained how the tour offers details about each bridge as you pass by.李解釋了當你經過時，導覽如何提供每座橋樑的詳細資訊。（也就是：當遊船開過每一座橋時，導覽就會剛好講述該座橋的細節。）
+  - as you pass by：當你經過時（as 在這裡當作「當什麼時候」）。
 
-* **常見動詞搭配：**
-* **go on a sightseeing tour**（去參加觀光行程）
-* **take a sightseeing tour**（進行觀光導覽）
-* **join a sightseeing tour**（加入觀光團）
+-------------
 
-
-* **例句：**
-* *We decided to **take a sightseeing tour** of London on our first day.*（我們決定在第一天參加倫敦的市區觀光行程。）
-* *The **sightseeing tour** includes visits to all the major museums.*（這個觀光行程包含參觀所有主要的博物館。）
-
-
+## The tour tells 
+- The tour also tells stories about famous landmarks like the Tower Bridge.這個導覽行程也會講述一些關於倫敦塔橋等著名地標的故事。
