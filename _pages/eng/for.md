@@ -179,6 +179,8 @@ for 扮演了「配置、對應」的角色，用來告訴對方這項服務（�
 - I want to rent this car for a week.（我想租這輛車一個禮拜。
   - 車子，使用1個禮拜
 
+-----------------------
+
 ## for 預約時間 日期
 預約、安排時間（例如約時間開會、看醫生、訂位）時， for 理解成 「把...保留給」 或 「預定在...時刻」 
 
@@ -189,6 +191,13 @@ for 扮演了「配置、對應」的角色，用來告訴對方這項服務（�
 
 可用at
 - Can I make an appointment at nine?
+
+
+## for 時間 (預訂明天時間)
+- for tomorrow
+  - We booked **a** River Thames boat **tour** for tomorrow.（我們預訂了明天的一場泰晤士河遊船之旅。）
+
+-------------------------
 
 ## for 對於某人來說
 - Sorry, but you're too young for me. (for 對於某人來說)

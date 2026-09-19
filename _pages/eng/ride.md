@@ -156,3 +156,7 @@ ride 的核心本質就是「一趟乘車／搭乘的體驗」。
   - We rode the log flume and got completely soaked! （我們去玩了急流泛舟（獨木舟衝水），全身都濕透了！）
 - the Viking ship 海盜船
   - I don't like to go on fast rides like the Viking ship. （我不是很喜歡去玩像海盜船這種速度很快的設施。）
+
+### 景點
+- Are we going to ride on the London Eye? 我們等一下要去坐倫敦眼嗎？
+  - 倫敦眼是一座巨大的摩天輪（Ferris wheel），屬於觀光遊樂設施，因此用 ride 來形容「去搭乘、去體驗」是非常生動且道地的動詞。

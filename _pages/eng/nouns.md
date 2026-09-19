@@ -1,8 +1,47 @@
 ---
-title: 不可數名詞 + s
+title: 名詞 + s(總稱), 不可數名詞 + s(各式各樣)
 date: 2026-08-27
 keywords: english,
 ---
+
+## 總稱
+
+### 學科、領域與研究（知識的總稱）+ IS(單數動詞)
+許多學科名稱本來就是複數，因為它們代表該領域所有相關知識的總和：
+
+- Mathematics / Math（數學）
+- Economics（經濟學）
+- Physics（物理學）
+
+Economics is a fascinating subject.（經濟學是一門迷人的學科——注意：雖然字尾有 s，但視為**單數**主詞。）
+
+### 日常活動、節慶與遊戲
+有些日常習慣或娛樂活動，本身就會加上 s 來當作一個項目的總稱：
+
+- Video games（電動玩具 / 電玩總稱）
+- I love playing video games.（我喜歡打電動——這裡的 video games 泛指所有電玩，而非只打某一款。）
+- Sports（體育運動總稱）
+- Holidays（假期總稱）
+- Cooking Classe**S** 活動總稱
+
+-------------------------
+
+## 地點 + s
+知名橋樑與建築（Bridge / Building Names with 's'）
+很多著名的橋樑或大型建築物，名字本身就帶有 s（通常是因為地名本身所有格、複數形式，或是歷史命名），前面一定要加 the：
+
+- the Tower Bridge（倫敦塔橋）
+  - When you're on the Tower Bridge, you can see the river.
+- the Houses of Parliament（英國國會大廈 / 西敏宮）
+  - 這裡的 Houses 就是複數 s，指國會的參眾兩院建築群，但整體當作一個觀光地標總稱。
+  - You can take photos of the Houses of Parliament from across the river.
+- the Alps（阿爾卑斯山脈）
+  - 是一座山脈的總稱（因為有很多山峰），前面一定要加 the，動詞用複數。
+  - The Alps are famous for skiing.（阿爾卑斯山以滑雪聞名。）
+
+----------------------------
+
+## 不可數名詞 + s (各式各樣)
 Fruit 為什麼可以變成 Fruits？  
 當作「抽象總稱」時（不可數）：水果的總稱，它是不可數的。
 

@@ -86,4 +86,40 @@ from 依然是維持它核心的 「來源」 概念！友人的協助與載送�
 🚆 7. 搭高鐵／火車（Take the high-speed rail / train）
 * She took the train from Kaohsiung to Taipei. （她從高雄搭火車到台北。）
 
+-------------------
 
+## see ... from (觀看視角/視覺畫面的來源)
+它決定了see(看)這個動作的位置基準點(from)。如果換到別的地方，可能就看不到了。
+
+- We can easily see Big Ben from this area.我們從這個區域可以很輕易地看到大笨鐘。
+  - from this area 這個**視覺畫面**是從哪裡發出的
+
+---------------------
+
+## from + 原因(名詞)
+from 有「因...而起」、「由於...」（表示原因、動機或根源）的用法！
+
+- from the cold（因為寒冷）：
+  - He is shaking from the cold.（他冷得直發抖。）
+- from hunger（因為飢餓）：
+  - The stray dog was weak from hunger.（這隻流浪狗因為飢餓而虛弱。）
+- from exhaustion（因為精疲力竭）：
+  - She collapsed from exhaustion after working for 14 hours.（她工作 14 小時後，因為精疲力竭而倒下。）
+- from fear（因為害怕）：
+  - His voice trembled from fear.（他的聲音因為害怕而顫抖。）
+
+疾病或傷亡造成的結果
+- He died from a rare disease last year.（他去年因一種罕見疾病而去世。）   
+- She suffers from severe headaches after working long hours.（她因為長時間工作而經常頭痛。）
+- Many old trees fell from the heavy snow.（許多老樹因為大雪而倒塌了。）
+
+生理或心理反應（如飢餓、疲勞、恐懼）
+- The baby is crying from hunger.（那個嬰兒因為肚子餓而哭鬧。）
+- He was trembling from cold as he waited outside.（他在外面等候時，因為寒冷而直發抖。）   
+- She couldn't speak clearly from fright.（她因為害怕而說不清楚話。）
+- My legs were aching from exhaustion.（我的雙腿因為精疲力竭而隱隱作痛。）
+
+
+行為動機或物質來源的因果
+- He made his fortune from real estate investments.（他因為投資房地產而發了財。）   
+- The success came from years of hard work.（這次的成功是由於多年的努力不懈。）   

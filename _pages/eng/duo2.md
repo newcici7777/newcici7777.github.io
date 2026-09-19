@@ -173,7 +173,30 @@ fall off + 掉落的地方
 - Be careful!
 - Be careful! This is a dangerous street.小心！这是一条很危险的街道。
 
+--------------------
 
+## prevents + Ving 預防
+- Following signs prevents getting lost.遵循指標防止迷路
+
+## prevent + 受詞 + from + V-ing （防止/阻止某人做某事）
+- Following signs prevents us from getting lost.（跟著指標可以防止我們迷路。）
+
+### 例句
+- 阻止某人進行某個動作
+  - The heavy rain prevented us from going out for a picnic.（大雨阻止了我們出門野餐。）
+- 保護或防止某人遭遇危險/意外
+  - Wearing a seatbelt can prevent drivers from getting seriously injured in a crash.（繫安全帶可以防止駕駛在車禍中受到重傷。）
+- 法律、規則或阻礙限制某人
+  - The locked door prevented the thief from entering the room.（鎖上的門阻止了小偷進入房間。）
+- 勸阻或阻止某人做某事（常帶有干預意味）
+  - His friends prevented him from making a big mistake.
+（他的朋友阻止了他犯下大錯。）
+- 環境或客觀條件造成阻礙
+  - The thick fog prevented the planes from taking off on time.
+（濃霧阻礙了飛機準時起飛。）
+
+
+------------------
 
 ## 無法分類
 - Ben is angry at us.

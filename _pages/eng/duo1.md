@@ -473,6 +473,14 @@ with 的中文意思是「忙於」
 - 電腦主機：Turn on the computer / Turn off the computer.（關閉電源）
 - 螢幕：Turn on the monitor / screen
 
+-------------------------
+
+## The reason that + 我們在做的事/我們在哪裡 + is to + 目的
+- The reason that we're in London is to eat fish and chips!
+
+### 其它說法:
+- We're here to eat fish and chips!（我們來這就是為了吃炸魚薯條！）
+- Our main reason for being in London is to...（我們在倫敦的主要原因...)
 
 ------------------
 

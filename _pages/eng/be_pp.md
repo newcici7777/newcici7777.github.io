@@ -195,7 +195,14 @@ can be + V3 或 should be + V3
   - serve 在餐飲的意思就是「端上桌」、「上菜」或「供應（餐點）」。
 
 --------------------------------------
-
-
+## be + 過去分詞 = 被動式狀態
+- Be stuck（被卡住／受困）
+  - I am stuck in traffic.（我塞車了／我被困在車陣中。）
+- Be lost（迷路）
+  - We are lost.（我們迷路了／我們被迷失了方向。）
+- Be broken（壞掉）
+  - The printer is broken.（印表機壞掉了／印表機處於被損壞的狀態。）
+- be logged in 已登入(**被**系統**記錄**到資料庫)
+  - Make sure you are logged in before the meeting.（開會前確保你已經登入了。）
 
 

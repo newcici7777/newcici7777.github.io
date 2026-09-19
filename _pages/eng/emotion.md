@@ -40,7 +40,7 @@ excited（興奮的、期待的） 這個字，習慣搭配的固定介系詞就
 ## hate Ving
 - She hates hiking.她讨厌徒步旅行。
 - The children hate cleaning the house.孩子们讨厌打扫房子。
-
+- I hate traveling by air.我討厭搭飛機旅行
 
 ## 令人 ... 感到
 - that's surprising.

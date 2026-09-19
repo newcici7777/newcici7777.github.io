@@ -8,22 +8,6 @@ keywords: English
 
 要加 a 的（強調這是**一趟**旅程/行程），只要加上 a，名詞通常會變成一個「具體的事件、任務、或一段小歷程」（例如：a date 是一場約會、a diet 是一個節食計畫）。
 
-- on a trip（在旅行途中）
-  - Charlie got lost on a trip.(查理在旅行中迷路了。)
-- on a ride (在搭車的過程中)
-  - Charlie lost his wallet on a ride. 搭車途中弄丟了他的錢包。
-- on a ride (在搭遊樂設施的過程中)
-  - Charlie lost his wallet on a ride. Charlie 在玩遊樂設施時把錢包弄丟了
-- on a tour
-  - Charlie lost his wallet on a tour.
-（查理在跟團導覽/參觀途中弄丟了他的錢包。）
-  - We met a lot of interesting people on the tour.
-（我們在這次的導覽/行程中遇到了很多有趣的人。）
-- on a journey（在旅途中／在歷程中）
-  - Charlie lost his wallet on a journey.
-（查理在旅途中弄丟了他的錢包。）
-  - Life is a journey, not a destination.
-（人生是一場旅程，而不是終點）
 - on a flight (在航班中,在飛機上)
   - Charlie lost his wallet on a flight to Tokyo.
 （查理在飛往東京的班機上弄丟了他的錢包。）
@@ -47,6 +31,9 @@ keywords: English
 - on a mission（身負重任、帶著特定目的要去完成）
   - He walked into the kitchen on a mission to find snacks.（他帶著一定要找到零食的使命走進廚房。）
 - on a daily routine（依照日常作息）
+
+-------------------------------
+
 
 ## on 名詞 (狀態)
 不用加 a 的（強調這是一種狀態）

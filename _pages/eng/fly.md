@@ -54,6 +54,12 @@ flight 不只是機器，它包含了時間、編號、路線和行程（也就�
 - There is a flight in two hours.（時間表上）兩小時後有一班飛機。
 - We have a flight in two hours.我們（自己的行程）在兩小時後有一班飛機要趕。
 
+### A flight to + 目的地
+- a flight to London（飛往倫敦的航班）
+- The direct flight to Paris was delayed due to bad weather. （由於惡劣天氣，直飛巴黎的航班延誤了。）
+- The emergency flight to the capital saved the patient's life. （那班飛往首都的緊急專機拯救了病人的性命。）
+- The night flight to London gave us a great view of the city lights. （夜間飛往倫敦的航班讓我們俯瞰了美麗的城市燈火。）
+
 ----------------------
 
 ## Step on the plane / Step on board（踏上飛機）
@@ -98,34 +104,43 @@ flight 不只是機器，它包含了時間、編號、路線和行程（也就�
 
 -----------------------
 
-## Fly to + 國家/城市 (強調「目的地」：直接移動)
+## Fly to + 目的地
 這是最道地、最簡潔的講法。直接把「飛」當成動詞，語氣最流暢，重點直接帶到「要去的地方」。
 ```
-fly + to + 地點。
+fly + to + 目的地
 ```
+
+### fly 現在式
 - Can we fly to the UK next week?
 - We want to fly to Japan next month. (我們下個月想飛去日本。)
 - Do you want to fly to New York or Los Angeles?
 - I want to fly to Japan.
-- Did you fly or drive to Los Angeles? We flew.你们是飞去还是开车去的洛杉矶？我们飞去的。
-
 - Now he's going to fly from London to Paris. He's travling a lot.现在他要从伦敦飞往巴黎。他经常旅行。
 
+### flying 現在進行式代表**即將未來式**
+
 - I’m flying to Taipei for a meeting. (我要飛去台北開會。)
+
+### flies 第三人稱現在式
 
 - Dad flies to London every week.爸爸每周都飞去伦敦。
 - Ben often flies to Germany.本经常坐飞机去德国。
 - He often flies to the UK.他经常飞去英国。
 
+### flew 過去式
+
 - Tom flew from New York to London. Tom从纽约飞到了伦敦
 - I flew from London to Oxford yesterday.我昨天从伦敦飞去了
 牛津。
 - I flew to London last Saturday.我上周六飞去了伦敦。
+- Did you fly or drive to Los Angeles? We flew.你们是飞去还是开车去的洛杉矶？我们飞去的。
 
-- a flight to London（飛往倫敦的航班）
-- The direct flight to Paris was delayed due to bad weather. （由於惡劣天氣，直飛巴黎的航班延誤了。）
-- The emergency flight to the capital saved the patient's life. （那班飛往首都的緊急專機拯救了病人的性命。）
-- The night flight to London gave us a great view of the city lights. （夜間飛往倫敦的航班讓我們俯瞰了美麗的城市燈火。）
+### flown 現在完成式(問經驗)
+- I have flown. (我曾有過搭飛機的經驗。)
+- I have never flown. (我從過去到現在，從來沒有搭過飛機的經驗。)
+- I have flown business class.我搭過商務艙
+- I've never flown business class before.我之前都沒搭過商務艙
+  - business class 是副詞
 
 ------------------
 
@@ -159,16 +174,16 @@ fly 在這裡是不完全不及物動詞（Intransitive verb）： 在這類句�
 - The boy is fly**ing** **a** kite.（那男孩在放風箏。）
 
 -------------------
+## by air (透過空運/搭乘航空)
+Air是空中運輸的總稱
+- We had fun traveling **by air**. 我們搭機旅行得很開心。
+  - have fun + Ving 做什麼事情很開心
+- send goods by air.運送物品透過空運
 
 ## By plane (強調「方式」：搭乘的工具)
 by plane它通常作為副詞，補充說明你選擇了什麼樣的交通方式。
 - My parents like to travel by plane. (我父母喜歡搭飛機旅遊。)
 - It is faster to go there by plane. (搭飛機去那裡比較快。)
-
-
-## have fun **by air** 搭飛機很開心
-- We had fun traveling **by air**. 我們搭機旅行得很開心。
-  - have fun + Ving 做什麼事情很開心
 
 ---------------
 

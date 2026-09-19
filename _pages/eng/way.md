@@ -3,6 +3,10 @@ title: the way, the road, on my way
 date: 2026-08-17
 keywords: English, way
 ---
+## one-way + 名詞 = 單 ...
+- This is **a** one-way street.(這是一個**單**行道)
+- A one-way ticket 一張**單程**機票
+
 ## on my way 正要過去
 - Don't worry, I'm on my way! （別擔心，我正在過去了！）
 - He said he was on his way, but he's still not here. （他說他已經在路上了，但他還是沒到。）

@@ -136,3 +136,20 @@ Go + 以 -ing 結尾的戶外運動（通常是去某個地方進行的活動）
 
 - 2. go skiing（滑雪）
 工具：雙腳各踩著一片長長的滑雪板（Skis），手裡還要拿兩根滑雪杖（Ski poles）。
+
+
+--------------------
+## Cycling 騎單車運動／騎腳踏車這件事
+- Cycling on the Tower Bridge sounds exciting.在倫敦塔橋上騎單車聽起來令人興奮。
+- Going cycling on the Tower Bridge sounds exciting.在倫敦塔橋上騎單車聽起來很令人興奮。
+  - 強調「去」那個動作
+- Riding a bike on the Tower Bridge sounds exciting.在倫敦塔橋上騎單車聽起來令人興奮。
+- Go cycling (去騎單車)
+  - Let's go cycling.
+  - I'm going to go cycling tomorrow.
+
+### cycle 循環
+在生活中，cycle 更常出現在跟「循環」有關的詞彙裡：
+- Water cycle（水循環）
+- Life cycle（生命週期）
+- Recycle（回收 $\rightarrow$ 從 re- + cycle「再次循環」而來）

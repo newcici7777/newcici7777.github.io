@@ -67,6 +67,9 @@ Cross + 空間/通道名詞
 * Cross the bridge.(過橋。)
 * Cross the street.(過馬路。)
 - Cross the street, and you'll see it.（過馬路，你就會看到了。）
+- Visitors can cross this bridge here.訪客可以**在這裡**通過這座橋。
+  - here 的意思是「在這裡」，橋在這裡，說明橋的位置
+- Visitors can cross this bridge **from here**.訪客可以**從這裡**出發去過這座橋。
 
 - ❌ 錯誤範例：Walk cross the hospital，因為建築物名詞前面要加From，建築物不是線性。
 

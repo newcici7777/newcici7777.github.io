@@ -179,14 +179,18 @@ It + takes + (人) + 時間 + to V
 - It took her two hours to download the new software.下载新软件花了她两个小时。
 - How long does it usually take to make a new ad?做一个新广告通常要花多长时间？
 - It will take siX hours to read all these file**s**.读所有的这些文件会花六个小时！
+- It will take half an hour.花費半小時
 
 3. Take（）
 * 主詞是「事情」，目的是達成這件事需要花多少「時間」。
-* 公式： 
-* 情境： 這件事像個黑洞，把我的時間「吞噬」了。
-* 例句：
 * It takes 30 minutes to cook a meal.（煮一餐要花 30 分鐘。）
 * It takes two hours to finish the work.（這工作要花兩小時。）
+
+## How long will it take to 原形動詞
+> 原本句子主詞是It: It will take 時間 to 原形動詞
+> 改成問句主詞也是It: How will It take to 原形動詞 
+
+- How long will it take to copy fifty pages?
 
 ----------------------------
 ## cost(名詞) 費用、成本

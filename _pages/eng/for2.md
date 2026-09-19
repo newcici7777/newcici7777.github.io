@@ -12,6 +12,7 @@ keywords: for
 ## for 活動/節日 
 - I don't have plans for New Year’s day .
 
+
 ## 對象、匹配、容量
 for 的核心概念： 代表「對象、匹配、容量」
 - A table for two（兩人桌／兩人座） 
@@ -57,10 +58,11 @@ for 「適合誰的」「給誰用的」
 - This movie is for adults only.（這部電影只限成人觀賞。）
 - English for beginners.（給初學者看的英文。）
 
-## 給誰使用
+## for 給誰使用
 - This parking spot is for staff.（這個停車位是給員工停的。）
 - That's for people who work here.
 
+-----------------------------
 
 ## for + 人 對...而言,針對誰的感受、觀點或經驗
 - easy for me = 對我而言很簡單

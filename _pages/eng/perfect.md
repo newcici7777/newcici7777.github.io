@@ -112,6 +112,9 @@ Have you ever + 過去分詞
 - My sister has never worked.我的妹妹从来没有工作过。
 - I have never traveled in America.我從來沒去過美國
 
+
+------------------------
+
 ## (心理狀態)從來沒有 never
 - We have never been so happy.我們從來沒有這麼開心過(代表很開心)
 - I have never loved you.我从来没有爱过你。
@@ -119,7 +122,22 @@ Have you ever + 過去分詞
 - I have never been so tired.我從來沒那麼累過
 
 -------------------------------
+## yet 還沒
+```
+have/has + not + PP ... yet
+```
+yet 是這個句型的靈魂關鍵字，意思是「還（沒）」。它通常放在句子的最尾端，用來強調「從過去到現在這個時間點為止，這件事尚未實現，但未來可能會發生」。
 
+- You have not finished the lesson yet.你還沒上完課。
+- You have not finished the lesson yet.
+（你這堂課還沒上完／講完。）
+- I haven't eaten lunch yet.
+（我還沒吃午餐。）
+- She hasn't arrived yet.
+（她還沒抵達。）
+
+
+-----------------------------
 ## 現在完成式 + for (動作從過去持續到現在)
 過去「動作」持續到「現在」 for 一段時間
 - I have lived in Taipei for 3 years.我住在台北三年，我現在還住在台北。

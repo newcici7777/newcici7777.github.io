@@ -307,3 +307,5 @@ I left my keys behind the flower pot."
 - Where is the entrance to the library?
 
 
+## be on the ground floor 在一樓
+- Are we on the ground floor now? 你在一樓嗎？

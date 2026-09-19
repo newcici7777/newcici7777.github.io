@@ -3,10 +3,20 @@ title: Crowd人群/Crowded擁擠
 date: 2026-09-10
 keywords: English,
 ---
-### crowd(單數可數名詞) **一群**人 [/kraʊd/] 
+## A crowd IS (動詞單數)
+A crowd 意思是「一群人」或「擠滿的人潮」。
+
+在文法上，crowd 是一個集合名詞，它雖然是一個單數形態的名詞（前面加了不定冠詞 a），但代表的是「由許多個體組成的一個群體」。
+
+因為它代表一個群體，在美式英語中通常當作單數看待（用 is）
+
+- Why **is** there a crowd in front of Big Ben?為什麼 Big Ben 前面有一群人（那麼多人在排隊/聚集）？
+
+
+### A crowd(單數可數名詞) **一群**人 [/kraʊd/] 
 - 用 a（一大群人）：
   - a + 單數可數名詞(**泛指任意**,任何一群) 
-  - A crowd was waiting outside.（**有一群人**正在外面等候。泛指**任何一群**）
+  - A crowd **was** waiting outside.（**有一群人**正在外面等候。泛指**任何一群**）
   - I hate visiting **a** crowded market.（我討厭逛那種擁擠的市場——泛指**任何一個擁擠的市場**。）
 - 用 the（這一群人）：
   - **The** crowd started to cheer.（**這一群人**開始歡呼。）
