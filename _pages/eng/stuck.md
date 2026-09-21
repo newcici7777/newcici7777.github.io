@@ -3,6 +3,9 @@ title: stuck(形),trapped 困住
 date: 2026-09-11
 keywords: english, stuck
 ---
+
+- they get stuck in the streets like cars? 所以他們會像汽車一樣塞在街道上嗎？
+
 **`stuck`** 是一個超級實用、日常生活中天天都會用到的形容詞！
 
 它的意思是「卡住的」、「動彈不得的」、「被困住的」。

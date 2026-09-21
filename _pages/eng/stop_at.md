@@ -15,8 +15,7 @@ keywords: English, stop at
 - I stopped at the bookstore on my way home.我在回家的路上，順便去了（在...停留）書店。
 - We stopped at a small cafe for coffee.（我們在一家小咖啡館停留喝咖啡。）
 - The bus stopped at the station.（公車在車站停了下來。）
-
-
+- Should we stop at a gas station?我們應該在加油站停下來嗎？
 
 當你想表達「在某個特定的地點（如商店、車站、別人家）停下來或短暫停留」時
 ```

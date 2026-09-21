@@ -125,6 +125,13 @@ by 當副詞
 - time goes by（時間流逝／時間一天天過去）
 - walk by（從旁邊走過去）
 
+--------------------------------
+
+## be + past(介) + the 地點/東西 (再過去...一點)
+- The parking lot **is past** the traffic light. 停车场在红绿灯再过去一点。
+- The Grand Canyon **is past** the sign for the national park. 大峡谷在国家公园的标志再过去一点。
+
+--------------------------
 
 ## Past(介系詞) + 地點 「經過」
 ```

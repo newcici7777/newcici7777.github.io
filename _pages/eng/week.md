@@ -53,12 +53,13 @@ Is it 星期?
 - See you next week.（下週見。）
 - We had clear skies all week.我們整個禮拜都遇到晴朗的好天氣。
 
-## week
+## week 一週/平日/特定的週
 - A week 一週
   - We spent a week in Tokyo. （我們在東京待了一週。）
 - during the week 平日，一週「上班日」期間
   - We have many classes during the week.我們平日（週一到週五）有許多課程。
   - they work hard during the week.他們平日工作很努力。
+  - We have many classes during the week.
 - the week 特定的一週
   - The week before Christmas is always crazy.（聖誕節前的那個星期總是瘋狂忙碌。）
 - this week.在這週

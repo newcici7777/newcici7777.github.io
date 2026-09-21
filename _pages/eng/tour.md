@@ -37,6 +37,10 @@ keywords: english,
 ## A tour guide 真人導遊
 - We will meet our tour guide at 3 o'clock. 我們會在3點跟導遊碰面
 
+
+##  plan a trip 計劃一次旅行
+- we should plan a trip soon!我們應該趕快計劃一次旅行
+
 -----------------------------------------
 
 ## on a 名詞 (在...過程中) 副詞
@@ -88,8 +92,10 @@ keywords: english,
 - on a walking tour（在徒步導覽行程中）
 - on a bus tour（在觀光巴士行程中）
 
-- on a Road trip：在公路旅行中
-  -  I was on a road trip, but I didn't know how to use the GPS. I got lost.我去了公路旅行，但我不知道怎麼使用 GPS。我迷路了。   
+- on a Road trip 自駕遊
+  -  I was on a road trip, but I didn't know how to use the GPS. I got lost.我之前有自駕遊，但我不知道怎麼使用 GPS。我迷路了。
+  - today we're going to talk about planning a road trip to the Grand Canyon.今天我們要來談談如何計劃一趟大峽谷的自駕遊
+  - we should take a road trip this summer. 我们今年夏天应该去自驾遊。   
 - on a Business trip：在出差中
 - on a Long trip：在長途旅行中
 - on a Fun trip：在有趣的旅行中   

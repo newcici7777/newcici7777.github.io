@@ -18,7 +18,7 @@ let讓 + 某人 + 原形動詞
 - Let's go to **the** movie**s**!咱们去看电影吧！
 - Can we see a movie tonight?
 - Let's go to a museum now.
-
+- It's famous and lets boats go under it too.它很有名，而且也能讓船隻從它下方通行。
 
 * **`leave`** 讓某人在「某個狀態」(形容詞)
 

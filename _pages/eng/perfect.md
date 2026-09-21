@@ -136,6 +136,9 @@ yet 是這個句型的靈魂關鍵字，意思是「還（沒）」。它通常�
 - She hasn't arrived yet.
 （她還沒抵達。）
 
+## 現在式 yet
+
+- I don't have my driver's license yet.我還沒有駕照。
 
 -----------------------------
 ## 現在完成式 + for (動作從過去持續到現在)

@@ -242,6 +242,7 @@ to : 一路跟著對方移動到了哪個終點
 - **Here are some useful tips for learning English.**中文：這裡有一些學英文的實用小建議。
 - **The article gives great tips for planning a trip.**中文：這篇文章提供了很好的旅遊規劃建議。
 - **She shared some makeup tips with her friends.**中文：她和朋友分享了一些化妝小技巧。
+- Lucas, who shared road trip tips with me.路卡斯，他跟我分享了公路旅行的祕訣
 
 ### a tip「小費」
 tip單數可數名詞，前面要加a，tip沒有s，搭配動詞leave，留下小費

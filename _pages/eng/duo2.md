@@ -254,13 +254,47 @@ Onion overload
 -------------------------------------
 ## at half-price 半價
 - The jacket was bought **at** half-price.
+- The leather is coming off. I got them at a flea market. They were half price.皮革正在剝落。我是在跳蚤市場買的。它們是半價買的。
+- There are also caps and sunglasses half price.這裡也有半價的帽子和太陽眼鏡。
+
+- They are second-hand
+
+- You might even find a rare piece you'll love.你甚至可能會找到一件你心愛的稀有單件商品
 
 ## deals 划算的東西
-可數名詞，後面要加S
-- finding deal**s** **at** market**s**.
+可數名詞，後面要加S，deal 當作「交易、便宜貨、協議」時是可數名詞，它的複數形就是 deals。
+數名詞可以直接加上 -s 來表示複數（例如：a deal 變成 deals）
 
+- finding deal**s** **at** market**s**.
+- Such a deal! 真划算！
+- find good deals（找到好康的、找到便宜的交易）
+- make a deal（達成一筆交易/協議）
 
 - Fans gather to enjoy games.
 
 ## offer ... for free 免費提供
-- The hotel might not offer breakfast for free.飯店可能不提供早餐
+
+
+
+
+
+is this a parking space? 这是一个停车位吗？
+It says we can park here, can't we? 它说我们可以停在这里，不是吗？
+
+
+
+
+
+
+
+
+
+Do you think that I can bring my
+dog? 你觉得我可以带我的狗吗？
+
+Is there a problem with the tire on
+the left? 左边的轮胎出了问题吗？
+
+
+
+

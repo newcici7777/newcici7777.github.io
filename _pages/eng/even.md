@@ -13,7 +13,7 @@ even 副詞，even放在一般動詞前
 - He even forgot his own name. （他甚至連自己的名字都忘記了。 ）
 - She even knows how to fix a car. （她甚至知道怎麼修車。）
 - I even know her last name!
-
+- You might even find a rare piece you'll love.你甚至可能會找到一件你心愛的稀有單件商品
 
 ## be動詞後面放even
 - He is even taller than his brother.（他甚至比他哥哥還要高。）

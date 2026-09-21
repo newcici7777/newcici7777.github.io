@@ -36,6 +36,7 @@ to用來表示「目標、對應關係或終點」
 - I can't find the key to my office!(我找不到我辦公室的鑰匙)
 - Duo doesn't remember the answer to that question. Duo不記得那個問題的答案
 - Ben can't find the answer to the question.本找不到问题的答案。
+- A good plan is the key to a fun trip. 好的計劃是玩得開心的關鍵。  
 
 
 - The key to success（成功的關鍵）

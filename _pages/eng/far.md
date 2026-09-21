@@ -7,6 +7,14 @@ keywords: english, how far
 - It's about 2 kilometers.（大約兩公里。）
 - It's about 2 kilometers away.（大約兩公里遠。）
 
+------------------
+## for 距離
+for + 距離 時，用來表示某個**動作持續多遠**。
+
+- You should follow this way for **twenty miles.** 你应该沿着这条路走二十英里。
+- We walked for five kilometers.（我們走了五公里遠的路程。）
+
+
 ----------------------------
 
 ## be + [數字/距離單位] + from + [地點] 距離某個地點有多遠
@@ -15,6 +23,10 @@ keywords: english, how far
 - Two kilometers from here（距離這裡兩公里）
 - Ten minutes away from my office（距離我的辦公室十分鐘車程）
 - We are only two miles from the sea.
+
+- The sign says that we're twenty miles from Las Vegas.
+标志上说我们离拉斯维加斯有二十英里。
+- It says that we're ten miles from the rest stop. 它说我们离服务区十英里。
 
 放在句尾（補充說明）：
 - The restaurant is a mile from the theater. （那家餐廳距離劇院一英里。）

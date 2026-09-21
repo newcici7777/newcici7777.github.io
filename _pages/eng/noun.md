@@ -75,6 +75,7 @@ keywords: countable , uncountable
 - How much is that pair of shoes?（那一雙鞋多少錢？）
 - My friend needs a pair!
 - Is this pair of glasses thirty dollars? 这副眼镜是三十美元吗？
+- I have a pair of leather sneakers.我有一雙皮革運動鞋
 
 如果拿掉pair of，就要用複數動詞
 - Are these glasses thirty dollars?

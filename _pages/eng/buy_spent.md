@@ -181,8 +181,7 @@ It + takes + (人) + 時間 + to V
 - It will take siX hours to read all these file**s**.读所有的这些文件会花六个小时！
 - It will take half an hour.花費半小時
 
-3. Take（）
-* 主詞是「事情」，目的是達成這件事需要花多少「時間」。
+主詞是「事情」，目的是達成這件事需要花多少「時間」。
 * It takes 30 minutes to cook a meal.（煮一餐要花 30 分鐘。）
 * It takes two hours to finish the work.（這工作要花兩小時。）
 
@@ -191,6 +190,13 @@ It + takes + (人) + 時間 + to V
 > 改成問句主詞也是It: How will It take to 原形動詞 
 
 - How long will it take to copy fifty pages?
+
+## take long to 花長時間去做...
+- It won't take long to check the tires.
+检查轮胎不会花很长时间。
+
+- It won't take long to get to Las Vegas from here. 从这里到拉斯维加斯不会花很长时间。
+
 
 ----------------------------
 ## cost(名詞) 費用、成本

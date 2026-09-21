@@ -5,11 +5,14 @@ keywords: English,think,thought
 ---
 ## think + 子句 (認為)
 主詞 + think + that可省略 + (完整子句)
+- why do you think that?為什麼你這麼覺得？
 - Why do you think that he wants...(為什麼你覺得他想要...？)
 - Why do you think he wants...(為什麼你覺得他想要...？)
+- Do you think I need to change my tire?你覺得我需要換輪胎嗎？
 - I think he won't be angry.
 - I think it's OK to eat one slice.
 - I think I know why she broke up with you.
+
 
 ## think about + 名詞
 - Are you thinking about the problem at work?你在想那个工作上的问题吗？

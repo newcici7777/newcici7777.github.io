@@ -57,6 +57,21 @@ directions + to + [目的地]
 - Let's look at the map.咱们看地图吧。
 - Check the map.查一下地圖
 
+## at the rest stop 休息站
+- You can pick up a map at the rest stop.你可以在休息站拿一份地圖。
+
+## using a GPS
+- Using a GPS is key for long drives.
+  - 長途駕駛使用 GPS 是關鍵。
+- Having GPS and snacks is smart.   同時有 GPS 和零食是個聰明的做法。
+- But next time, make sure to learn the GPS. It's like **having a new friend** on your trip.但下次一定要學會使用 GPS。這就像是在旅途中多了一個新朋友一樣。
+- The GPS told us to take the next exit. GPS告訴我們走下一个出口。
+
+
+## GPS fails (GPS失靈) 
+- It's useful if GPS **fails**. 如果 GPS 失靈的話，地圖會很有用。
+- The GPS says this iS a one-way street. GPS说这是一条单行道。
+- It says this is a one-way street. 它说这是一条单行道。
 
 ## Street vs Avenue
 美國的馬路命名，東西向的叫 Street，南北向的叫 Avenue。
@@ -93,7 +108,6 @@ Stop at [地點].（在...停下來）
 - Stop at the corner.在轉角停下來
 - Stop at the traffic light. 在紅燈處停下來
 
-
 ## in the north/east/south/west
 - Is that city in the east or in the west?
 - The mountains are in the south of this town.
@@ -107,7 +121,7 @@ Stop at [地點].（在...停下來）
 ## on the north/east/south/west(on在...邊界上)
 - The city is on the east coast.（這座城市在東海岸線上。）
 
-## 移動動詞
+## turn left/right + at/after/pass + the 地點 (在那邊要轉彎)
 第一步（先講你要做什麼）：
 - Turn left.（先左轉！）
 - Turn right.（先右轉！）
@@ -115,6 +129,10 @@ Stop at [地點].（在...停下來）
 
 第二步（再講在哪裡執行）：
 - ...at the traffic light.（——就在紅綠燈那裡。）
+
+- Turn left after the library. 过图书馆后左转。
+
+
 
 ## go + north/east/south/west
 用 go 可以表達「這條路通往哪裡、往哪個方向延伸」。  
@@ -234,7 +252,12 @@ Trun left/right + at the ...
 - Turn right at the traffic light.（在紅綠燈右轉）
 - Turn left when you see the sign.（看到標誌時開車左轉。）
 
-## Take a wrong turn 走錯路/開錯方向
+## Take 選擇路徑
+
+- Do we need to take the highway to get to the Grand Canyon?
+
+### Take a wrong turn 走錯路/開錯方向
+
 - We took a wrong turn because I couldn't read the sign in the dark.因為我當時在黑暗中看不清指示牌，所以我們走錯路。
 
 ## a wrong turn 走錯路
@@ -300,17 +323,7 @@ Route當動詞
   - All calls are routed to the main office.（所有電話都被轉接到總公司去了。）
 
 
-### 2. `the way`（路 / 路線 / 方式）
 
-* **核心概念**：含義非常廣泛，除了實體的「路途/方向」之外，還可以指「方法」**或**「抽象的路」。
-* **特性**：
-* **當作實體路徑時**：它通常比較籠統，指「前往某處的過程或方向」（例如：*Show me the way.* 帶我走這條路）。
-* **當作抽象用法時**：意思是「方法、方式」（例如：*This is the way to do it.* 這是做這件事的方法）。
-
-
-* **例句**：
-* *Do you know **the way** to the station?*（你知道去車站的**路**嗎？ —— 比較不強調是不是「最好」的，單純指那條路。）
-* *I lost **my way** in the dark.*我在黑暗中**迷路**了。
 
 
 

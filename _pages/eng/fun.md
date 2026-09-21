@@ -16,6 +16,7 @@ keywords: English, fun
 * *This game is **fun**.*（這個遊戲很**好玩**。）
 * *Our trip was so **fun**.*（我們的旅行超**好玩**的。）
 - They are fun and perfect for sightseeing.它們很有趣，非常適合觀光
+- That's a fun idea.這真是個有趣的想法
 
 ## fun(adj) 東西 vs funny(adj) 人
 - fun adj.有趣的

@@ -38,13 +38,20 @@ be ready(形) to後面接動作（動詞原型）。
 - I'm ready to learn Japanese. （我準備好要開始學日文了。）
 
 
-## be ready(形) for + 名詞 (N) (心理/物質上：對某件事物做好準備)
+## be ready(形) for + 活動(名)
+> be ready 準備好
+> for「迎接」即將到來的事件
+
 be ready for 後面接名詞。代表你對於即將到來的「某個事件、東西、挑戰」已經整備完畢，心態或物品都 OK 了。  
-打開背包檢查，去考試、去上班、去面試的東西都裝齊了。  
 
 - Are you ready for the exam tomorrow? （你對明天的考試準備好了嗎？ → the exam 是名詞）
 - I’m ready for dinner! （我準備好要吃晚餐了！/ 我肚子餓了！）
 - She is ready for a new job. （她已經做好迎接新工作的準備了。）
+
+* *I'm ready **for dinner**.*（我準備好**吃晚餐**了／晚餐好了嗎？）
+* *Are you ready **for the test**?*（你準備好**應付考試**了嗎？）
+* *We are ready **for the weekend**!*（我們準備好**迎接週末**啦！）
+- We're ready for the game! 我們準備好迎接這場比賽了！
 
 ## Get ready (正在「去準備」的途中)
 get，意思會從「已經好了（狀態）」變成「正在做準備的這個『動作過程』」（例如洗臉、換衣服、打包）。  
@@ -62,3 +69,8 @@ get，意思會從「已經好了（狀態）」變成「正在做準備的這�
 - ready to + 動詞 → 準備好要「做」某事（We are ready to go）
 - ready for + 名詞 → 對某個「事物」做好準備（Ready for the trip）
 - get ready → 正在「進行準備」的動作（I'm getting ready）
+
+----------------------
+
+## ready 後置形容詞
+-  It's good to have them ready. 準備好這些東西是很不錯的。  

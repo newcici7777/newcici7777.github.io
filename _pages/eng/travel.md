@@ -277,6 +277,7 @@ be 動詞本身就代表「狀態」，on 是進行中，這邊的vacation是抽
 ------------------------------
 旅遊相關單字
 - Pack your bags.打包你的行李
+- You can **pick up** a map at the rest stop.你可以在休息站拿一份地圖。
 - Pick up your luggage. 拿你的行李
   - I'm picking up my luggage now, and then I'll come outside. 我現在正在拿行李,然後我就會走出去
 - Picu up your suitcase. 拿你的行李箱

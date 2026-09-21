@@ -1,8 +1,30 @@
 ---
-title: 動詞名詞化 get a/ have a/ give a/ go for a/
+title: 動詞轉名詞 get/have/take/for a 動詞
 date: 2026-09-15
 keywords: english, 
 ---
+
+英文中有很多日常單字都是長這樣，既可以當動詞，也可以直接當名詞，意思通常會跟原本的動作有關：
+
+- Walk（走路 / 散步）
+  - 動詞：Let's walk to the store.（我們走去商店吧。）
+  - 名詞：It's a short walk from here.（從這裡走過去很近/是一段很短的路程。）
+- Run（跑步 / 一趟跑步）
+  - 動詞：I usually run in the morning.（我通常在早上跑步。）
+  - 名詞：I'm going for a run.（我要去跑步/跑個步。）
+- Look（看 / 看一眼）
+  - 動詞：Look at this!（看這個！）
+  - 名詞：Can I take a look?（我可以看一眼嗎？）
+- Sleep（睡覺 / 睡眠）
+  - 動詞：I need to sleep.（我需要睡覺。）
+  - 名詞：I need a good night's sleep.（我需要好好睡一覺。）
+- drive(開車) 當名詞時，變開車車程、兜風
+  - 開車期間: Bring snacks for **the drive**.帶零食**在開車期間**吃
+  - 開車車程: It's **a two-hour drive**.（開車車程要兩小時）
+  - 驅動力: He has **a strong drive** to succeed"（他有強烈的成功企圖心/驅動力）。
+
+
+-----------------------------
 把動作變成名詞，動作前面加上**A**。
 
 ## Have a 動作

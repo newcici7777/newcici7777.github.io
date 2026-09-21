@@ -32,7 +32,7 @@ keywords: English,a delay
 - There's always a delay for the green line!綠線總是延遲
 - Why was there a delay for line three? 三号线为什么延迟了？
 - Delay**s** are due to bad planning.
-
+- Maybe we can have snacks and games when there are delays.也許當有延誤時，我們可以吃點心、玩遊戲。
 
 
 ## change to line 編號/the 顏色 line (換線)
@@ -109,6 +109,7 @@ keywords: English,a delay
 ## on time 及時
 - The subway in Beijing is always on time.北京的地铁总是很准时。
 - The bus isn't on time all the time.
+- They might not leave on time, so they arrive late.他們可能沒有準時出發，所以才會遲到。
 
 ## leave 出發
 - Attention, passengers, line one will leave in one minute.乘客们，注意，一号线会在一分钟后离开。

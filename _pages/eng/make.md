@@ -71,6 +71,7 @@ keywords: make
 - Too much coffee makes me nervous.（喝太多咖啡會讓我緊張/神經緊繃。）
 - Please make your bed clean.（請把你的床整理乾淨。）
   - clean 是形容詞
+- Snacks make everything better.有零食，一切都會變得更好。
 
 ## Make + 人/東西 + 形容詞 (使... 怎樣)
 

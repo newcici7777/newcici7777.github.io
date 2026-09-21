@@ -1,8 +1,11 @@
 ---
-title: gas 加油
+title: gas 加油 / Tire 輪胎
 date: 2026-09-18
 keywords: english, gas
 ---
+## no gas
+- We have no gas 我们没有汽油了！
+
 ## get gas 去加油
 get是取得汽油。
 - We can get gas at the next gas station.我們可以在下一家加油站加油。
@@ -27,3 +30,16 @@ up 在這裡有「達到頂點、滿出來」的感覺。水桶裝滿是 fill up
 ## fill up 加滿油
 - I need to fill up.（我需要加滿油。）
 - Fill it up, please.（把它加滿，謝謝）
+
+
+
+------------------------
+## Tire 輪胎
+- Do you think I need to change my tire? I'm afraid something is wrong with it. 你覺得我需要換輪胎嗎？我擔心它出了一些問題。   
+
+- It won't take long to check the tires.
+检查轮胎不会花很长时间。
+
+- Maybe the tire needs air. Can you ask your brother to check the air levels? 也許輪胎需要打氣。你可以請你弟弟檢查一下胎壓嗎？
+
+- Get some air for the tire. While you get air, maybe enjoy some lemonade.
