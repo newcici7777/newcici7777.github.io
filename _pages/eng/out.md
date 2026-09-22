@@ -3,9 +3,11 @@ title: out 離開/出去/拿出來
 date: 2026-09-08
 keywords: english, out
 ---
-## out(副詞) 出去、離開
-* **out** 的核心本質是「出去、離去」。
+## be動詞 + out(副詞) 出去
+- She is out for lunch right now.（她現在出去吃午餐了。） 
 
+## 一般動詞 + out(副詞) 出去、離開
+* **out** 的核心本質是「出去、離去」。
 * **Hang out**（鬼混、閒晃 $\rightarrow$ out 在這裡也是指離開家裡去外面晃）。
 - Check out（退房、結帳離開 $\rightarrow$ out 也是離開的意思）。
   - We need to check out of the hotel by 11 AM.（我們必須在早上 11 點前從飯店退房。）

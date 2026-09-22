@@ -129,3 +129,41 @@ on，是因為它表達的是「接觸並覆蓋在表面」的物理位置！
 
 常見類似用法（Get + 過去分詞當形容詞）：
 - get changed（換衣服）
+
+-------------------------------------
+
+## 人 is dressed in 名詞 (人被穿，被動式)
+- 主動：She dresses her child in red.（她幫小孩穿上紅衣服。）
+- 被動：The child is dressed in red.（小孩「被穿上」紅衣服 $\rightarrow$ 也就是「小孩穿著紅衣服」的狀態。）
+
+- People are always dressed in the latest fashions.人們總是打扮得非常時髦 / 總是穿著最新的時裝。
+- 主動式wear: People always wear the latest fashions.（人們總是穿著最新時裝。）
+
+## 人 + dressed in 東西 (後置形容詞)
+- The model dressed in the gold suit is good-looking.（穿著金色西裝的模特兒很好看。）
+  - 原本: The model who is dressed in the gold suit is good-looking.
+  - 省略關代與be動詞(who is)
+
+-------------------------
+## in fashion 流行
+in 常被用來表示「處於某種狀態、潮流或風氣之中」。
+
+當作抽象概念（如時尚產業、流行風氣）時是不可數的，例如 in fashion。
+- Pink is in fashion.粉紅色很流行
+- That hat is in fashion, but I don't like it.（那頂帽子很時尚，但是我討厭它。）
+
+### in style 流行
+- Short hair is in style right now.（短髮現在很流行/很有型。）
+
+## out of fashion（過時的、不流行的）
+- Wide-leg pants are in fashion this year, but low-rise jeans are out of fashion.（寬褲今年很流行，但低腰牛仔褲已經退流行了。）
+
+## fashionS 最新流行的時裝
+為什麼 fashion 要加 s ？
+
+指具體的「服飾款式、時裝系列」：
+服裝設計師每季都會推出不同的設計，這些一件件、一季季不同的「時裝款式」在英文裡就會用複數形來表達。
+
+- the latest fashions 片語，專門用來指「最新流行的時裝/款式」。
+  - In Milan, people always wear the latest fashions.（在米蘭，人們總是穿著最新時裝。）
+

@@ -45,12 +45,26 @@ a little用來表示程度輕微，程度副詞
 - A bit of time.（一點點時間。）
 - A bit of English.（一點點英文。）
 
-## a bit(副詞)
+## a bit(副詞) + 形容詞/副詞 (有點)
+a bit(副詞) 放在 形容詞/副詞 前面，表達程度副詞。
+
 後面沒有接名詞時：絕對不能加 of  
 當它獨立出現，單純當作「副詞片語」來修飾形容詞或動詞時，它就不需要 of。
+
 - I'm a bit tired.（我有一點累。—— a bit 修飾形容詞 tired）
-- Can you move a bit?（你可以稍微移動一下嗎？—— a bit 修飾動詞 move）
 - It's a bit cold.（有一點冷。）
+- This bucket is a bit dirty.（這個水桶有點髒。）
+- I'm a bit tired.（我有點累。）
+
+### 動詞 + a bit(副詞) 放句尾 (有點)
+a bit 來修飾動詞或表達「程度」時，必須把它放在句尾，用來修飾前面的整個動作（like it）。
+- I like it a bit.(我有點喜歡它)
+- ❌錯誤: I a bit like it. (A bit 要放句尾，不能放動詞前面)
+- Can you move a bit?（你可以稍微移動一下嗎？—— a bit 修飾動詞 move）
+- I understand a bit.（我懂一點點。）
+- She speaks English a bit.（她講英文講得稍微好一點／會講一點英文。）
+
+
 
 ## 副詞片語
 好幾個副詞組合在一起。
@@ -99,18 +113,31 @@ a little(副詞) + bit(副詞) = 一點點
 - I need a bit of help.（我需要一點幫忙。）
 - He added a bit of salt to the soup.（他在湯裡加了一點點鹽。）
 
+------------------------------------------
 
-## kind of + 可數/不可數名詞
-它的意思是「算是有點吧／好像是那樣／大概／某種程度上」，是用來軟化語氣，或是當你不想把話說得太死的時候用。老外口語常縮讀成 kinda。
-- kind of tired → 「算是有點累吧／好像有點累」
+## kind of + 可數/不可數名詞 （有點、稍微、算是...）
+程度副詞，但有時也帶有「某種程度上、算是」的意思。老外口語常縮讀成 kinda。
 
+修飾形容詞、動詞，或放在名詞**前面**
+
+### kind of + 形容詞
+- This bucket is kind of dirty.（這個水桶有點髒。）
+  - 修飾形容詞dirty
+
+### kind of + 動詞 (放在動詞的前面)
+- I kind of like it.（我有點喜歡它／我算是滿喜歡它的。）
+  - kind of 放動詞前面
+- I like it a bit. (我有點喜歡它)
+  - a bit 程度副詞放句尾
+
+### kind of 注意事項
+- kind of tired. (算是有點累吧／好像有點累) 修飾形容詞tired
 - ❌錯誤: a kind of tired 
   - kind前面不能有a
+- ❌錯誤: kind**S** of tired. 
+  - kind後面不能有S
 
-- I'm a little tired.
-- 👉 客觀事實： 「我有點累。」（明確表達狀態，可能昨晚少睡了一小時。）
-- I'm kind of tired.（口語常講 I'm kinda tired.）
-- 👉 含糊社交： 「嗯...算是有點累吧。」
+### 例句
 - kind of expensive（算是有點貴）
 - her hair is kind of like yours.她的頭髮有點像你的
   - kind of（有點、稍微）

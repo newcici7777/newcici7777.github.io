@@ -196,23 +196,7 @@ to : 一路跟著對方移動到了哪個終點
 - can you bake a cake?你可以烤一个蛋糕吗？
 
 -------------------------
-## perfect(形容詞) for + 人/名詞/Ving (適合)
-- A sunny day is perfect for a walk.（晴天非常適合散步）
-- Carl is perfect for the job!
-- Double-decker buses are perfect for sightseeing in London.雙層巴士非常適合在倫敦觀光。
-- This sunny and cool weather is perfect for a picnic at the park.這種晴朗又涼爽的天氣非常適合去公園野餐。
 
-## Perfect to + 原形動詞
-適合（去做某件事）。
-- The weather today is perfect to go out for a walk.今天的氣候非常適合出去散步。
-- She prefers to go hiking.她更喜欢去徒步旅行。
-- I prefer to take the subway because it's always on time.我更喜欢坐地铁，因为它总是很准时。
-
-## Perfect for someone to + 原形動詞 (適合給某人做某事)
-- This quiet café is perfect for me to focus on work.
-中文： 這間安靜的咖啡廳對我來說非常適合用來專心工作。
-
---------------------
 
 ## That's all right 沒關係
 - That's all right, how about next week?没关系，下周呢？
@@ -236,7 +220,7 @@ to : 一路跟著對方移動到了哪個終點
 * **`tips`**（小建議、訣竅、實用祕訣，常用複數形 *tips*）。
 * **`for`** 是介系詞，用來連接「這些建議是**為了**什麼目的或情境」。
 
-- **Do you have any tips on how to save money?** 中文：你有沒有關於怎麼存錢的訣竅？
+- Do you have any tips on how to save money?你有沒有關於怎麼存錢的訣竅？
 * *tips for learning English*（學英文的訣竅）
 * *tips for saving money*（存錢的方法）
 - **Here are some useful tips for learning English.**中文：這裡有一些學英文的實用小建議。
@@ -345,14 +329,6 @@ Deck 當名詞時，意思是「甲板」（船的甲板）或是「層、樓層
 
 ----------------------------
 
-## make a mess 弄得一團亂/搞砸
-- The kids are making a mess in the living room. （小孩們正在客廳製造髒亂／把客廳玩得亂七八糟。）
-- Who made this mess? （是誰把這裡弄得這麼亂的？）
-- He always makes a mess of things. （他總是把事情搞得一團糟。）
-- What a mess! 這簡直是一團糟／太亂了吧！
-
-## make a mess of [某事]
-- make a mess of the kitchen 把廚房搞得一團糟。
 
 -----------------------
 ## Are there any good places to 原形動詞 + 地點 (有沒有好地方可以做...)
@@ -485,8 +461,6 @@ with 的中文意思是「忙於」
 
 ------------------
 
-## 其它疑惑
-I draw things that I think are interesting or beautiful.
 
 
 

@@ -19,6 +19,8 @@ bring 強調「方向」（朝向說話者或目的地），而 carry 強調「�
 
 核心概念：把某物帶到「說話者的位置」，或是雙方約定的「目的地」。
 
+- Do you think that I can bring my
+dog? 你觉得我可以带我的狗吗？
 - How many bags to bring?
 - Don't forget to bring your ID tomorrow.（明天別忘了帶你的身分證來)
 - How many bags are you going to bring on this trip? 這次旅行你打算帶幾件行李去目的地？

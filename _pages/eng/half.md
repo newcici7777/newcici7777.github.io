@@ -81,3 +81,8 @@ A third of + 名詞
 $\rightarrow$ **`a third of an hour`**（二十分鐘）
 
 ------------------------
+## at half-price 半價
+- The jacket was bought **at** half-price.
+- They were half price.它們是半價買的。
+- There are also caps and sunglasses half price.這裡也有半價的帽子和太陽眼鏡。
+

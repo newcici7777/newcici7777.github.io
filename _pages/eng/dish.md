@@ -3,90 +3,38 @@ title: dish
 date: 2026-08-27
 keywords: english,dish
 ---
+## the dishes 盤子
+- I broke the dishes last night.我昨晚打破了盎子。
+- The dishes need to be washed. （這些碗盤需要被洗乾淨。）
 
-在英文裡，加 **`dish`** 的原因非常有趣！它是為了把 **`pasta`（這個食材/食物種類）** 變成一個「具體的餐點/菜餚」。
+## wash the dishes
+「自己家裡那堆特定的碗盤」，所以習慣上都會加上 the。
 
-我們來拆解為什麼這裡一定要加 `dish`：
+dishes，要為複數加es，因為不可能只洗一個盤子。
 
----
+- I need to wash the dish**es**.（我要去洗[剛才我們吃完飯留下的那些]碗盤。） 
 
-### 1. `Pasta` 是抽象的「食材/食物」，不是具體的「一份餐」
 
-* **`Pasta`** 這個字通常當作**不可數名詞**，指的是「義大利麵」這種食物本身（就像 *beef* 牛肉、*rice* 米飯一樣）。
-* 如果你直接說 *Bea is eating the same pasta*，聽起來會像是：「Bea 正在吃同樣的義大利麵（這種物質）」或「她正在吃一樣的麵條」。
-* 但英文母語人士想表達的是：**「她正在吃同一盤/同一道做好的義大利麵料理」**。
+## wash the dish**es** 洗碗 cook煮
+- Every Saturday, he cooks dinner and I wash the dishes.每周六，他煮晚饭我洗碗。
+- He cooked rice last night, and I am cooking pork now.他昨晚煮了米饭，我现在在煮猪肉
 
----
+## hate washing dish**es**(沒有the)
+這裡的 dishes 沒有加 the，代表它是在講抽象的「碗盤（這個物品類別）」，而不是指眼前特定的一堆碗盤。
 
-### 2. 什麼時候用 `dish`？
+- I hate washing dish**es**.（我討厭洗碗這件事）
+
+--------------------------------
+## a + 食材 + dish 一道菜
 
 在這裡，**`dish`** 當作可數名詞，意思是「一道菜」、「一盤料理」。
 
-* 當你想指餐廳菜單上端上來的一道特定料理時，就會用 `dish`。
-* 常用搭配：
-* *a pasta dish*（一道義大利麵料理）
-* *a main dish*（主菜）
-* *a signature dish*（招牌菜）
+- a chicken dish 一道雞肉料理，chicken 是雞肉（食材)
+* a main dish（主菜）
+* a signature dish（招牌菜）
 
+--------------------------
+## dishes 各式各樣的菜
+dish + es = 各式各樣的菜
 
-
----
-
-### 💡 簡單的類比
-
-就像我們說：
-
-* *chicken* 是雞肉（食材），但 *a chicken dish* 是一道雞肉料理。
-* *pasta* 是義大利麵（麵條本身），但 *a pasta dish* 是一道完整的義大利麵料理。
-
-所以加上 **`dish`**，就能精準描繪出「桌上那盤香噴噴、端上桌的義大利麵」這個畫面啦！
---------------------
-答案是：**不用！**
-
-「一定要加 `dish`」是一個大大的誤會，這完全取決於你**想表達什麼意思**。
-
-我們來釐清 **`eat pasta`** 跟 **`eat a pasta dish`** 的差別，以及為什麼會用單數的 `dish`：
-
----
-
-### 1. 什麼時候「不用」加 dish？（直接說 `eat pasta`）
-
-當你只想表達「吃義大利麵這個食物 / 這種東西」時，直接講 **`eat pasta`** 就好，完全不需要加 dish！
-
-* **例句**：
-* *I love to **eat pasta** on weekends.*（我喜歡在週末吃義大利麵。）
-* *Do you want to **eat pasta** tonight?*（你今晚想吃義大利麵嗎？）
-
-
-
-在這些情況下，*pasta* 是不可數名詞，代表一整類食物，你不需要去強調「幾盤」，所以不用加 dish。
-
----
-
-### 2. 那為什麼前面那句要特別加 `dish`？
-
-回到你剛剛的句子：*Bea is eating **the same pasta dish**...*
-這裡加 `dish` 是因為前面有 **`the same`（相同的）**：
-
-* 如果直接說 *the same pasta*，會變成「吃相同的麵條（物質）」。
-* 但加上 **`dish`（一道菜/一份料理）**，意思就變成「點了同一道菜、同一款口味的料理」（例如兩人都點了白醬培根義大利麵）。
-
----
-
-### 3. 為什麼是單數的 `dish`？
-
-因為前面有 **`the same`**（同一個）或者不定冠詞 **`a`**（一個）：
-
-* **`a pasta dish`** = 一道義大利麵料理（單數）
-* **`the same pasta dish`** = 同一道義大利麵料理（單數）
-
-除非你想表達複數的「好幾道不同的義大利麵料理」，才會加 s 變成 **`dishes`**（例如：*The menu has many delicious pasta dishes.* 菜單上有許多美味的義大利麵料理）。
-
----
-
-### 💡 總結
-
-* 想講「吃義大利麵（這個食物）」➔ 直接用 **`eat pasta`**。
-* 想講「點了某一道特定的義大利麵料理」➔ 搭配 **`a pasta dish`** 或 **`the pasta dish`**。
-
-這樣是不是就很清楚了呢？
+- The table was covered with delicious dishes for the party. （派對的桌上擺滿／覆蓋了各種美味佳餚。）

@@ -164,7 +164,7 @@ the 代表**這場**或**這個**天氣。
 
 ---------------------------------------
 
-## in the rain/snow/fog/wind
+## in the rain/snow/fog/wind/storm
 前面加 the：指「眼前這場」或「特定的狀態」  
 
 the 代表**這場**或**這個**天氣。
@@ -215,6 +215,9 @@ rain,snow，不可數氣象名詞，不能一個一個數，所以不能用a。
 
 ### in the sun(在陽光中)
 - She loves reading a book quietly in the sun. （她喜歡在陽光下安靜地看書。）
+
+### in the storm
+- The old tree fell down in the storm.（那棵老樹在暴風雨中倒了。）
 
 
 其它例句:

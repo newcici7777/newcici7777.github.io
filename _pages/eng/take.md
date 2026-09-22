@@ -32,6 +32,11 @@ keywords: Take
 - Please take out your trash.（請把你的垃圾拿出去倒。）
 - She took out a tissue.（她抽出一張面紙。）
 
+## take out the trash 倒垃圾
+大家預設都是在處理「自己家裡那堆特定的垃圾、特定的碗盤」，所以習慣上都會加上 the
+
+- take out the trash（倒垃圾）
+
 ## takeout 外帶
 - Let's get takeout tonight.（我們今晚吃外帶吧！）
 

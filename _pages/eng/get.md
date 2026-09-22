@@ -8,6 +8,7 @@ keywords: get
 - Can we get tickets?(買機票)
 - Can you get a few tomatoes ?你可以買幾顆番茄嗎？
 - Can you get the flour, water, and salt?你可以去買麵粉 水 鹽
+- I got them at a flea market.我是在跳蚤市場買的。
 
 
 ## get買 + 人 + 東西 (買東西給人)

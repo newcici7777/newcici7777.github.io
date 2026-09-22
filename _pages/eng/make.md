@@ -10,24 +10,49 @@ keywords: make
 - When she starts exercising, her knee makes a noise.
 - My knee just made a weird noise!
 
-## make 做菜 泡茶 做蛋糕 煎蛋
-透過「努力」做出東西給別人，都用for + 人
+--------------------------
 
-- I'm making egg[s].(我在煎蛋) 
+## make 做菜 泡茶 做蛋糕 煎蛋
+- I'm making egg**s**.(我在煎蛋) 
 - Making Breakfast  
-- Eddy is making breakfast for Junior.  
-  - for 代表給，breakfast 這邊是不可數名詞，不能加s。
-- I'm making a big breakfast for you!  
 - we can make lunch!  
-- I like to make cakes.
-  - cake可作為不可數名詞，也可作為可數名詞
+- I like to make cake**s**.
+  - cake可作為不可數名詞，也可作為可數名詞，此處作為可數名詞加**S**
 - Vikram is making tea in the kitchen.
 - But let's make dinner now!
 - We can make a pizza!
-- What are you going to make for dessert?你甜点打算做什么？
 - Let's make dinner now. I'm hungry!
 
-## 列清單
+## cook煮
+- Every Saturday, he cooks dinner and I wash the dishes.每周六，他煮晚饭我洗碗。
+- He cooked rice last night, and I am cooking pork now.他昨晚煮了米饭，我现在在煮猪肉
+
+### make something for 人 (做給人)
+這邊的for是給，make跟cook花費時間去做給別人，介系詞用for
+- Eddy is making breakfast **for Junior**.  
+  - for 代表給，breakfast 這邊是不可數名詞，不能加s。
+- I'm making a big breakfast **for you**!  
+
+### make something for 早/午/晚/餐 點心 (當作)
+這邊的for是作為，要做什麼東西**當作**三餐 或 點心。
+- What are you going to make for dessert?你甜点打算做什么？
+
+-----------------------
+
+## made of 材質
+- This light summer dress is made of cotton.（這條輕薄的夏日連衣裙是棉質的。）
+  - 指裙子的**材質**是棉
+- Are those shoes made of glass? 那些鞋是用玻璃做的嗎？）
+  - 指鞋子的**材質**是玻璃。
+
+## made in 產地
+- This shirt is made in Milan.*（這件襯衫是在米蘭製造的。） 
+  - 指衣服的**產地**是米蘭。
+* Those shoes are made in Italy.（那些鞋子是在義大利做的。） 
+
+------------------------
+
+## make a list (列清單)
 - Let's make a list. 我們來列個清單吧！
 - I can make a shopping list on my phone.我可以在手機上製作購物清單。
 - Can we add a few potatoes to the shopping list?我们可以把几个土豆加到购物清单里吗？
@@ -35,25 +60,46 @@ keywords: make
 - I can make a shopping list on my phone.我可以在我的手机列一个购物清单。
 - let's make a list.咱们列一个清单吧。
 
-## 預約
+---------------------------
+
+## make 預約 + (with a 醫生)
 「預約、約定」這類抽象的行程或安排時，最常搭配的動詞就是 make，Make 的其中一個核心意思是「製造、安排、促成」。
 - make an appointment 是一個固定的黃金組合。
 - make a reservation（訂位／預訂房間、餐廳）
 - make a plan（做計畫）
 - make a phone call（打電話）
 - make a decision（做決定）
+- She made an appointment **with the dentist** yesterday.
+- make an appointment **with a doctor**.
 
-- She made an appointment with the dentist yesterday.
+-------------------------
 
-## call a doctor 預約
-- You look terrible. You should call a doctor.（你看起來氣色很差，你應該打個電話給醫生。）
-- She called a doctor yesterday.（她昨天打電話給醫生了）
+## call + a + 名詞 (打電話尋求幫忙)
+call 是「打電話」的意思，後面的名詞通常是一個專業人士、服務單位或機構的職稱／名稱。你打電話的目的是「請他們來提供服務」或「向他們求助」。
+- call an ambulance 叫救護車（求救）
+- call a doctor (叫醫生／打電話給醫生預約看診）
+  - Quick, call a doctor!（快點叫醫生！）
+  - You look terrible. You should call a doctor.（你看起來氣色很差，你應該打個電話給醫生預約看診。）
+  - She called a doctor yesterday.（她昨天打電話給醫生預約看診了）
+  - call the doctor's office for an appointment
+- call a plumber（叫水電工）
+- call a taxi / an Uber（叫計程車）
+- call the police（叫警察）
+
+## call + a + 食物 (打電話訂購)
+- call a pizza（叫披薩／打電話訂披薩外送）
+  - we can call and order a pizza!
+  - I'm too tired to cook. Let's call a pizza.（我累得不想煮飯了。我們叫個披薩吧。）
+- call a Chinese takeout（叫中式外賣）
+
 
 ## make a call 打電話
 - Priti makes a call.Priti打了一通電話。
 * Wait a second, I need to make a call.（等我一下，我需要打個電話。）
 * She made a callto her friend.（她給她朋友打了一通電話。 → 過去式）
 - Priti makes a call.
+
+--------------------------
 
 ## make + 人/東西 + 形容詞 (使變得怎樣)
 「形容詞」是用來修飾受詞的「狀態」。
@@ -72,15 +118,14 @@ keywords: make
 - Please make your bed clean.（請把你的床整理乾淨。）
   - clean 是形容詞
 - Snacks make everything better.有零食，一切都會變得更好。
-
-## Make + 人/東西 + 形容詞 (使... 怎樣)
-
 - Riding these buses makes visiting London so easy and fun.坐在巴士裡享受一段車程，讓觀光變的輕鬆又愉快
   - visiting: 去觀光/四處造訪
 - This music makes me happy.（這音樂讓我開心。 $\rightarrow$ happy 形容我）
 - The news made her sad.（這消息使她難過。 $\rightarrow$ sad 形容她）
 - Practice makes perfect.（熟能生巧 / 練習使人完美。 $\rightarrow$ perfect 形容練習的結果）
 - Learning English makes life interesting $\rightarrow$ 學習英文讓生活有趣）
+
+----------------------------------
 
 ## make + 人 + 原形動詞 + 受詞 (要求某人做某事)
 - My mom made me clean my room.（我媽逼我打掃房間。）
@@ -156,3 +201,15 @@ with片語，當作形容詞，後位修飾受詞。
 - I think they should **make hotels with toothpaste included**.我覺得他們應該要推出**有附牙膏的飯店**。
   - make 「開創、推出、讓某種產品或服務出現」（等同 make a rule 訂定規則）。
   - with toothpaste included 扮演的角色是受詞補語，用來補充說明前面的名詞（hotels）變成什麼狀態。
+
+--------------------------------
+
+
+## make a mess 弄得一團亂/搞砸
+- The kids are making a mess in the living room. （小孩們正在客廳製造髒亂／把客廳玩得亂七八糟。）
+- Who made this mess? （是誰把這裡弄得這麼亂的？）
+- He always makes a mess of things. （他總是把事情搞得一團糟。）
+- What a mess! 這簡直是一團糟／太亂了吧！
+
+## make a mess of [某事]
+- make a mess of the kitchen 把廚房搞得一團糟。

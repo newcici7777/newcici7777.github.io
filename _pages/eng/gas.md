@@ -40,6 +40,9 @@ up 在這裡有「達到頂點、滿出來」的感覺。水桶裝滿是 fill up
 - It won't take long to check the tires.
 检查轮胎不会花很长时间。
 
+- Is there a problem with the tire on
+the left? 左边的轮胎出了问题吗？
+
 - Maybe the tire needs air. Can you ask your brother to check the air levels? 也許輪胎需要打氣。你可以請你弟弟檢查一下胎壓嗎？
 
 - Get some air for the tire. While you get air, maybe enjoy some lemonade.

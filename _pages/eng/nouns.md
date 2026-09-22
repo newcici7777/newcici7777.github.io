@@ -106,11 +106,6 @@ fruit加上s變成了fruits，變成可數名詞「各式各樣的水果」（�
 
 在商業、銀行或會計用語中，很多原本抽象的概念為了紀錄與分類，也會變成複數：
 
-* **saving（通常當儲蓄，但 save 當動詞）** 👉 **savings**
-* *意思是*：積蓄、存款。
-* *例句*：*I used my **savings** to buy a laptop.*（我用我的**積蓄**買了一台筆電。）
-
-
 * **finance（財務、金融 - 不可數）** 👉 **finances**
 * *意思是*：個人的財務狀況、資金狀況。
 * *例句*：*I need to manage my **finances** better.*（我需要好好管理我的**財務狀況**了。）

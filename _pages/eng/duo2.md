@@ -79,6 +79,11 @@ hall 要表示「禮堂、大廳、展覽館」這種比較大型的室內空間
 - town hall（市政廳）
 - hotel hall（飯店大廳，通常也常說 lobby）
 
+## fall down 跌倒、往下倒塌
+- The boy ran too fast and fell down.（那男孩跑太快而跌倒了。）
+- The old tree fell down in the storm.（那棵老樹在暴風雨中倒了。）
+- He fell down with his bicycle.（他連人帶車摔倒了。）
+
 ## fall off （從...掉落、從...摔下）
 人或物體從某個表面「脫離並掉落」
 ```
@@ -89,23 +94,17 @@ fall off + 掉落的地方
 - fall off a chair（從椅子上摔下來 —— 椅子也不高，但你是從椅子「上面」掉到地上）
 - fall off the bed（從床上滾下來）
 
+## come off 剝落
+- The leather is coming off.皮革正在剝落
 
-## fall down 跌倒、往下倒塌
-- The boy ran too fast and fell down.（那男孩跑太快而跌倒了。）
-- The old tree fell down in the storm.（那棵老樹在暴風雨中倒了。）
-- He fell down with his bicycle.（他連人帶車摔倒了。）
 
-## be perfect for 非常適合
-- Carl is perfect for the job!卡爾非常適合這份工作！
-- This weather is perfect for a walk.（這天氣非常適合散步。）
-- You are perfect for each other.（你們兩個天生絕配。）
+
 
 ## be poor
 - Is her family poor?
 
 
-## call
-- we can call and order a pizza!
+
 
 ## would like + 名詞 (想要)
 - I'd like a book, please.
@@ -131,20 +130,7 @@ fall off + 掉落的地方
 - an ad for this clothes store. 这个服装店的广告
 
 
-## wash the dish**es** 洗碗 cook煮
-- Every Saturday, he cooks dinner and I wash the dishes.每周六，他煮晚饭我洗碗。
-- He cooked rice last night, and I am cooking pork now.他昨晚煮了米饭，我现在在煮猪肉
 
-
-## Serve + 形容詞
- serve 是動詞（意指「上菜、供應」），但它後面直接接形容詞時（這道菜被端上桌時）它的狀態是...的」。
-
-- Serve hot. 趁熱吃 / 熱熱地上桌。
-  - 例句：Stir-fry the vegetables and serve hot.（把蔬菜快炒一下，趁熱上桌。）
-- Serve cold. 冰涼著吃 / 冷冷地上桌。
-  - Keep the salad in the fridge before you serve cold.（把沙拉放在冰箱裡，然後再冰冰涼涼地端出來吃。）
-- Serve warm.溫溫地吃。
-  - The pie is best serve warm with a little custard.（這款派最好是溫溫地吃，配一點蛋奶醬。）
 
 ---------------------------
 
@@ -200,14 +186,29 @@ fall off + 掉落的地方
 - that reminds me of a trip in the Grand Canyon.  這讓我想起在大峽谷的一次旅行。
 
 
+-------------------
+## park(v) 停車, a parking space(停車位)
+- is this a parking space? 这是一个停车位吗？
+- It says we can park here, can't we? 它说我们可以停在这里，不是吗？
+
+--------------------
+## deals 划算的東西
+可數名詞，後面要加S，deal 當作「交易、便宜貨、協議」時是可數名詞，它的複數形就是 deals。
+數名詞可以直接加上 -s 來表示複數（例如：a deal 變成 deals）
+
+- finding deal**s** **at** market**s**.
+- Such a deal! 真划算！
+- find good deals（找到好康的、找到便宜的交易）
+- make a deal（達成一筆交易/協議）
+
+
+
 ------------------
 
 ## 無法分類
 - Ben is angry at us.
 - France has beautiful mountains
-- You know she always saves the day in the end!你知道她最后总能挽救局面！
-- In the end, the hero saved the day. 最后，英雄挽救了局面。
-- I wonder which hero will save the day in the next movie!我想知道下一部电影里哪位英雄会力挽狂澜！
+
 - Why would anyone want to make a sequel?为什么会有人想要制作续集？
   - sequel **ˈsiːkwəl** 續集
 
@@ -252,49 +253,14 @@ Onion overload
 - Paul likes to eat chocolate.保剪喜欢吃巧克方
 
 -------------------------------------
-## at half-price 半價
-- The jacket was bought **at** half-price.
-- The leather is coming off. I got them at a flea market. They were half price.皮革正在剝落。我是在跳蚤市場買的。它們是半價買的。
-- There are also caps and sunglasses half price.這裡也有半價的帽子和太陽眼鏡。
 
 - They are second-hand
 
 - You might even find a rare piece you'll love.你甚至可能會找到一件你心愛的稀有單件商品
 
-## deals 划算的東西
-可數名詞，後面要加S，deal 當作「交易、便宜貨、協議」時是可數名詞，它的複數形就是 deals。
-數名詞可以直接加上 -s 來表示複數（例如：a deal 變成 deals）
 
-- finding deal**s** **at** market**s**.
-- Such a deal! 真划算！
-- find good deals（找到好康的、找到便宜的交易）
-- make a deal（達成一筆交易/協議）
 
 - Fans gather to enjoy games.
-
-## offer ... for free 免費提供
-
-
-
-
-
-is this a parking space? 这是一个停车位吗？
-It says we can park here, can't we? 它说我们可以停在这里，不是吗？
-
-
-
-
-
-
-
-
-
-Do you think that I can bring my
-dog? 你觉得我可以带我的狗吗？
-
-Is there a problem with the tire on
-the left? 左边的轮胎出了问题吗？
-
 
 
 

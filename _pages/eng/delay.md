@@ -118,16 +118,7 @@ keywords: English,a delay
 - Delay**s** are due to bad planning.
 
 -----------------
-## thing
-- I saw so **many** strange thing**s** on the subway!我在地铁上看到了这么多奇怪的事！
-- A lot of thing**s**!
 
-### the best thing about 最棒的就是
-about 用來「限定範圍」或「指明主題」。
-- The best thing about New York is Central Park. 紐約最棒的地方就是中央公園。
-- The best thing about this job is the flexible hours. （這份工作最棒的地方在於工時很彈性。）
-- What’s the best thing about living here? （住在這裡最棒的事是什麼？）
-- The worst thing about summer is the mosquitoes. （夏天最糟糕的事就是蚊子。）
 
 
 ## a one-way ticket or **a** round-trip ticket
