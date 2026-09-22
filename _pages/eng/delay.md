@@ -34,6 +34,15 @@ keywords: English,a delay
 - Delay**s** are due to bad planning.
 - Maybe we can have snacks and games when there are delays.也許當有延誤時，我們可以吃點心、玩遊戲。
 
+## be delayed 被延誤
+* Oh no, all flights are delayed!噢不，所有的航班都延誤了！
+* Oh no, all of the flights are delayed!噢不，所有的航班都延誤了！
+* If the fashion show is canceled, I'll cancel my flight.
+如果時裝秀取消了，我會取消我的航班。
+* Our flight is delayed.我們的航班延誤了。
+* Oh no, all of the flights are delayed.
+噢不，所有的航班都延誤了！
+
 
 ## change to line 編號/the 顏色 line (換線)
 - She almost forgot to change to line seven!她差點忘了換七號線

@@ -48,14 +48,6 @@ on **黏貼或懸掛**在上面，或在建築物上面
 ## There is a sign that say**s** ...（有一個標誌上面寫著……）
 - Look, there's a sign that says "No Parking".（看，那裡有個標誌寫著「禁止停車」。）
 
---------------------------
-
-## follow the sign**s** 跟著標誌/號誌走
-- You should follow the highway signs. They help you not get lost.   你應該要跟著高速公路的標誌。它們能幫你避免迷路。
-
-## follow this way 沿著這條路
-- You should follow this way for twenty miles.你应该沿着这条路走二十英里。
-
 ---------------------------------
 
 ## pass the sign 過了標誌，再過去一點

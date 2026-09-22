@@ -145,6 +145,15 @@ as 通常放在動詞後面
 3. **`Think of A as B`**（把 A 想作 / 看作 B）
 * *Don't **think of** it **as** a failure; think of it as a lesson.*（不要把它**看作**是失敗，把它當成一堂課。）
 
+---------------------
+## As someone who + 形容詞子句 (作為一個...的人)
+- As someone who loves things to be fast and smooth, I think your fashion show idea sounds perfect.身為一個喜歡一切快速又順暢的人，我覺得你的時裝秀點子聽起來完美極了。
+
+- As someone who loves animals, I always want to adopt stray cats and dogs.（身為一個愛動物的人，我總是想認養流浪貓狗。）
+
+- As someone who works in tech, I find this new software very useful.（身為一個在科技業工作的人，我覺得這款新軟體非常有用。）
+
+
 ----------------------
 
 ## as always 一如往常地

@@ -44,11 +44,20 @@ keywords: make
   - 指裙子的**材質**是棉
 - Are those shoes made of glass? 那些鞋是用玻璃做的嗎？）
   - 指鞋子的**材質**是玻璃。
+* Is this pair of glasses made of glass?這副眼鏡是用玻璃做的嗎？
+* This light summer dress is soft and comfortable.
+這條輕薄的夏日連衣裙又柔軟又舒服。
+* This light summer dress is made of cotton.這條輕薄的夏日連衣裙是棉質的。
+* What is that scarf made of?那条围巾是用什么做的？
 
 ## made in 產地
 - This shirt is made in Milan.*（這件襯衫是在米蘭製造的。） 
   - 指衣服的**產地**是米蘭。
 * Those shoes are made in Italy.（那些鞋子是在義大利做的。） 
+- Is that dress made in France?那條連衣裙是在法國製造的嗎？
+* Those shoes are made in Italy.那些鞋子是在義大利做的。
+* Is that dress made in France?那條連衣裙是在法國製造的嗎？
+
 
 ------------------------
 

@@ -127,18 +127,6 @@ our time 的意思是「我們在這裡度過的時間」，形容一段經歷�
 
 ----------
 
-## follow(動詞) + 人 + to + 目的地
-to : 一路跟著對方移動到了哪個終點
-- A cat followed me to my house.貓咪一路尾隨著你，直到你們一起抵達目的地。
-* *The stray dog **followed him to school**.*
-（那隻流浪狗一路跟著他到學校。）
-* *A suspicious man **followed her to her apartment**.*
-（一個可疑男子一路跟蹤她到她的公寓。）
-* *My little brother **followed me to the kitchen**.*
-（我弟弟一路跟著我進到廚房。）
-
-----------
-
 ## belong to 屬於
 - That ring belonged to someone else.那枚戒指是別人的（屬於某個「其他的人」）
 - This ring belongs to her.

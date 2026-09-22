@@ -70,6 +70,8 @@ wear 不僅僅是「穿（衣服）」的動作，它同時也用來指「身上
 ## wear 穿什麼
 wear本身是動詞，什麼穿什麼，不是「穿」put on這個動作。
 - I don't know what to wear.（我不知道該穿什麼）
+* The models wear high heels all day.模特們一整天都穿高跟鞋。
+* All of the models are wearing high heels.所有的模特都穿着高跟鞋。
 
 ## 用 with 來描述人的「身體特徵」或「配件」
 戴在身上的配件（小面積、拿著或裝飾）：一律用 with 或 on。
@@ -144,6 +146,18 @@ on，是因為它表達的是「接觸並覆蓋在表面」的物理位置！
   - 原本: The model who is dressed in the gold suit is good-looking.
   - 省略關代與be動詞(who is)
 
+* She's dressed in a beautiful bathing suit.她穿著漂亮的泳衣。
+* The gold shirt he's dressed in is made of cotton.他穿着的金色衬衫是棉质的。
+
+--------------------
+## change clothes 換衣服
+* Can the models change clothes in two minutes?
+模特們能在兩分鐘內換好衣服嗎？
+* The models changed jewelry a few times.模特換了幾次首飾。
+* He changed pants in less than twenty seconds.他不到二十秒就换好裤子了。
+* She changed shoes in less than ten seconds.她不到十秒就換好鞋了。
+* The models need to change shoes twice.
+
 -------------------------
 ## in fashion 流行
 in 常被用來表示「處於某種狀態、潮流或風氣之中」。
@@ -151,6 +165,8 @@ in 常被用來表示「處於某種狀態、潮流或風氣之中」。
 當作抽象概念（如時尚產業、流行風氣）時是不可數的，例如 in fashion。
 - Pink is in fashion.粉紅色很流行
 - That hat is in fashion, but I don't like it.（那頂帽子很時尚，但是我討厭它。）
+* Long hair is in fashion for men.
+長髮對男人來說很時尚。
 
 ### in style 流行
 - Short hair is in style right now.（短髮現在很流行/很有型。）
@@ -164,6 +180,33 @@ in 常被用來表示「處於某種狀態、潮流或風氣之中」。
 指具體的「服飾款式、時裝系列」：
 服裝設計師每季都會推出不同的設計，這些一件件、一季季不同的「時裝款式」在英文裡就會用複數形來表達。
 
-- the latest fashions 片語，專門用來指「最新流行的時裝/款式」。
-  - In Milan, people always wear the latest fashions.（在米蘭，人們總是穿著最新時裝。）
+## the latest fashions 片語，專門用來指「最新流行的時裝/款式」。
+- In Milan, people always wear the latest fashions.（在米蘭，人們總是穿著最新時裝。）
+* These are the latest fashions.這些是最新時裝。
+* I can't wait to see the latest fashions!我等不及要看最新的時裝！
 
+## fashion show is held (時裝秀被舉辦)
+* Fashion Week is always held in New York.時裝周總是舉行在紐約。
+* When is the next milan Fashion Week?下次米兰时装周是什么时候？
+* Our fashion show is held in Milan every year.我們的時裝秀每年都在米蘭舉行。
+* Where will they hold the fashion show this year?他們今年會在哪里舉行時裝秀？
+* Let's hold a fashion show!咱們舉行一場時裝秀吧！
+
+
+--------------------------
+## design 設計
+
+* There are many famous designers at this fashion show.這場時裝秀上有很多有名的設計師！
+
+### design 主動
+* He's a model, but he's also good at designing hats!他是一个模特，但是他也很擅长设计帽子！
+* She designs all kinds of bathing suits.她设计各种泳衣。
+* Did he design this bathing suit?這件泳衣是他設計的嗎？
+* This designer designs all kinds of hats.這個設計師設計各種帽子。
+
+### is designed 被動
+* Actually, this suit is designed by that model!實際上，這套西裝是那個模特设计的！
+* The gold scarf she designed is beautiful.她設計的金色圍巾很漂亮！
+* This bracelet is designed by a singer.这条手链是一个的歌手设计的。
+* That scarf is designed by a model.那条围巾是一个模特设计的。
+* This purse is designed by a famous designer.這個手提包是一個有名的设计师设计的。

@@ -34,6 +34,7 @@ for + 提供的對象
 - A guide for beginners（給初學者的指南）
 - Here is a guide for new employees.
 （這裡有一份給新員工的指南/手冊。）
+* This milk is for the baby.這牛奶是給寶寶的。
 
 -----------------------
 

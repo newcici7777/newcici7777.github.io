@@ -187,6 +187,7 @@ the garden.我們家離河流很近，但離花園更近。
 - Is there a restaurant close to Duo's house?靠近多儿的房子有
 一个餐斤吗？
 - Cambridge Is closer to London or Oxford?剑桥离伦敦还是离牛津近？
+* Are there any seats close to the stage?有任何靠近舞台的座位嗎？
 
 ## close to (時間上的接近)
 - It is close to 7.快七點了

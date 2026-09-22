@@ -46,6 +46,7 @@ will be + V3
 ## 被動式例句:
 - The area is flooded.（這個地區被水淹了／泡在水裡了）
 - The jacket was bought **at** half-price.
+* French is spoken in parts of Africa.法語在非洲部分地區被說。(非洲部分地區說法語)
 
 ## 名詞 + 過去分詞
 英文中有很多這種「名詞 + 過去分詞」的慣用語，用來形容名詞。  

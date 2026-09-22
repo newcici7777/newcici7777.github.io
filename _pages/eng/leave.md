@@ -97,6 +97,9 @@ Leave(讓)+受詞(誰)+形容詞(怎麼樣)
 ```
 Leave + for + [目的地]。
 ```
+* When will she leave for Milan?她什麼時候會動身去米蘭？
+* Emma and Duo will leave for Milan soon.艾瑪和多兒馬上會動身去米蘭。
+* We'll leave for the fashion show in a few hours.我們幾個小時後會動身去時裝秀。
 - I am leaving for Paris.我即將動身前往巴黎
 - I'm leaving for New York tomorrow.（我明天要動身前往紐約了。）
 - The train leaves for Tokyo at 7 p.m.（這班開往東京的火車在晚上 7 點發車。）

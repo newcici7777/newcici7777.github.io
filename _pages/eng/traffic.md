@@ -9,6 +9,8 @@ traffic是不可數「抽象」名詞，沒有**a跟the，不能加複數的 -s*
 1. **前面絕對不能加 `a**`（不能說 *a traffic*）。
 2. **它沒有複數形**（不能加 *-s* 變成 *traffics*）。
 
+* There was traffic so I was late.交通非常繁忙，所以我遲到了。
+
 ----------------------------------
 ## traffic 不可數，只能用much
 不可數用 *much*，不用 *many*

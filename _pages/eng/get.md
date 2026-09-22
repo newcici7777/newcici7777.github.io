@@ -18,6 +18,8 @@ get買 + 間接受詞(人) + 直接受詞(東西)
 ```
 - Who got you this scarf? 這條圍巾是誰買給你的？
   - 疑問代名詞當主詞
+* Can I get you some ice cream?我可以幫你拿一些冰淇淋嗎？
+
 
 ------------
 

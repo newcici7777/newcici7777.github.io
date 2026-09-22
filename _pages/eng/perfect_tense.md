@@ -88,6 +88,7 @@ Have you ever + 過去分詞
 
 ## 最高級 + ever
 - This is the best movie I have ever seen!這是我這輩子看過最好看的電影！
+* She's the best salesperson that I've ever met!她是我見过的最棒的销售员！
 - He is the nicest guy I have ever met.他是我遇到過最好的人了。
 
 ## 為什麼需要 ever ？
