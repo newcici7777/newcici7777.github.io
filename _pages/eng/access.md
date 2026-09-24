@@ -38,22 +38,45 @@ grant [物] to [人] -> 被動時把「物」變主詞：[物] be granted to [�
 
 
 ---------------------------------
+## 動詞 + access to 地點/網路設備
 
-## have access(名) to （擁有使用權）
-- The system has access to the internet.（該系統擁有連接網際網路的權限。）
+- have access(名) to 地點/網路設備: （擁有使用權/權限）
+  - The system has access to the internet.（該系統擁有連接網際網路的權限。）
+  - Employees have access to the company gym.（員工擁有公司健身房的使用權。）
+- gain / get access to 地點/網路設備： 獲得使用權（強調「取得」的過程）。
+  - The reporter managed to gain access to the restricted area.（這位記者想辦法獲得了禁區的進入許可。）
+- provide access to 地點/網路設備：提供通往...的通道或使用權。
+  - The new bridge provides access to the island.（這座新橋提供了通往該島的通道。）
+- give access to：給予...進入或使用的權限  
+- make access to 地點/網路設備 + 形容詞 : (使...形容詞)
+  - Technology makes access to information much easier.（科技讓取得資訊變得更容易。）
+    - make something easy  (使...更容易)
+    - something = access to information (存取資訊)
+- grant access to：准許使用/進入
+  - New students are granted access to the library system.（新學生被授予圖書館系統的使用權。）
+- Deny access to: 拒絕給予...進入、接觸或使用的權利（拒絕存取）。
+  - Security guards denied access to unauthorized visitors.（警衛拒絕未授權的訪客進入。）
+- be denied access to（被拒絕進入／使用）。
+  - He was denied access to the building because of his behavior.（他因為自己的行為而被拒絕進入該大樓。）
+
 
 -------------------------------
+
 ## Access(名詞) to + 地點 (進入)
 - Gaining access to the restricted area is difficult.（獲得進入管制區的權限很困難)
+- Only authorized personnel are granted access to the secure laboratory.只有獲得授權的人員才被允許進入這間高度安全的實驗室。
 
 ## Access(名詞) to + 地點 (通道)
 - The new bridge provides access to the island.（這座新橋提供了通往該島的通道。)
+- The back door provides direct access to the private garden.後門提供了通往私人花園的直接通道。
 
 ## Access(名詞) to + 數位資源／系統／服務／機會 (使用權/權利)
 數位資源比如網路、電腦檔案、圖書館資源、醫療服務、教育等，它 100% 就是「使用權」。
 
 - Students have access to the library system.（學生擁有圖書館系統的使用權。）
 - Everyone should have access to good healthcare.（每個人都應該享有（獲得）良好醫療服務的權利／使用權。）
+- All enrolled students have free access to the online library database.所有註冊的學生都可以免費使用線上圖書館資料庫。
+- The manager granted access to the confidential files.（經理批准了機密檔案的查閱權。）
 
 ----------------------------------
 ## Access(動) 
@@ -79,6 +102,7 @@ grant [物] to [人] -> 被動時把「物」變主詞：[物] be granted to [�
 - Click here to access your account.（點擊這裡來進入/存取你的帳戶。）
 - You need a password to access your account.你需要密碼才能存取你的帳戶。
 - She couldn't access the important file on the server.她無法存取伺服器上的重要檔案。
+- You need a password to access the system.（你需要密碼才能進入系統。）
 
 -------------------------------
 ## be accessed(動) (被存取)
