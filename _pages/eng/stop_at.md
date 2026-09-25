@@ -58,8 +58,7 @@ keywords: English, stop at
 （我想我們可以順道去我爸媽家拜訪一下。）
 9. **He stopped at his friend's office to drop off the documents.**
 （他順道去朋友的辦公室放了那些文件。）
-10. **We can stop at Sarah’s place on our way to the party.**
-（我們去派對的路上可以順道去莎拉家接她／看看她。）
+
 
 ---
 

@@ -4,9 +4,64 @@ date: 2026-09-01
 keywords: livekit, avatar
 ---
 
+#### 1. 進入livekit: <https://livekit.com/>
+
+#### 2. 根據以下的圖片步驟，建立自己的專案，因為我有建立過，所以會直接登入，畫面跟第一次建立的人不一樣
+
+![img]({{site.imgurl}}/livekit/livekit_cloud1.png)<br>
+
+![img]({{site.imgurl}}/livekit/livekit_cloud2.png)<br>
+
+![img]({{site.imgurl}}/livekit/livekit_cloud3.png)<br>
+
+![img]({{site.imgurl}}/livekit/livekit_cloud4.png)<br>
+
+#### 3. 建立一個目錄，用VSCode
+
+#### 4. 在VSCode終端機輸入
+```
+% lk cloud auth
+```
+
+#### 5. 輸入剛才自己建的Project名`avatar_flutter`，如果只有一個Project，就直接Enter  
+
+#### 6. 跳出視窗
+![img]({{site.imgurl}}/livekit/livekit_cloud5.png)<br>
+
+![img]({{site.imgurl}}/livekit/livekit_cloud6.png)<br>
+
+![img]({{site.imgurl}}/livekit/livekit_cloud7.png)<br>
+
+#### 7. VSCode終端機輸入
+```
+% lk app create
+```
+預設是Python
+![img]({{site.imgurl}}/livekit/livekit_cloud8.png)<br>
+
+我自己選Flutter
+![img]({{site.imgurl}}/livekit/livekit_cloud9.png)<br>
+
+
+#### 8. 輸入api key
+
+Open AI :<https://platform.openai.com/login?next=%2Fapi-keys>
+
 ```
 cd Test-app
 uv sync
+```
+
+----------------------
+
+```
+lk app create
+cd avatar-flutter-backen
+uv sync
+lk agent create
+Yes  
+us-east   
+Yes 
 ```
 
 simli: <https://docs.livekit.io/agents/models/avatar/plugins/simli/>
@@ -63,6 +118,8 @@ simli.com : <https://www.simli.com/>
 uv run src/agent.py download-files
 uv run src/agent.py dev
 ```
+
+
 
 到livekit console來測試
 

@@ -77,4 +77,14 @@ report（報導、節目），因為帶有「平台、畫面」的概念，有�
 - This app runs on iOS.（這款 App 在 iOS 上執行。）
 - The file is on my computer.（這個檔案在我的電腦裡／上面。）
 
+----------------------------------
 
+## on 球隊
+- Who is the fastest player **on this team**?  谁是在这个队里最快的运动员？  
+- Is Duo **on your basketball team**?多儿在你的篮球队里吗？  
+- She's not **on** this baseball team.
+
+## on 組織成員
+- on the committee（在委員會裡）
+- on the board（在董事會裡）
+- on the club (在俱樂部)

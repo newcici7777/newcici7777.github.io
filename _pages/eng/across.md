@@ -49,8 +49,6 @@ across不是動作，它是一個方向**副詞**，它必須要搭配**移動�
 -----------------------------
 
 ## 移動動詞 + across 副詞 + 空間 (在...另一側)
-- across the table（桌子的另一側）
-  - He sat across the table from me.（他坐在我桌子對面。）
 - across the room（房間的另一側）
   - I saw her sitting across the room.（我看到她坐在房間的另一端。）
 
@@ -86,8 +84,10 @@ Cross + 空間/通道名詞
 ```
 例句:
 - The hotel is across from the station.（飯店在車站對面。）
-- He lives across from the hotel. （他住在飯店對面。）
 - The bank is across from the park.（銀行在公園的對面）
+- The convenience store is across from the station.（便利商店在車站的馬路對面）。
+
+- He lives across from the hotel. （他住在飯店對面。）
 
 ---------------------------
 
@@ -97,6 +97,11 @@ Cross + 空間/通道名詞
 
 
 --------------------------
+## 其它對面的單字
+
+### is opposite（正對面）
+- The dorm is opposite the dining hall.（宿舍在餐廳的正對面——兩棟建築物相對）。
+- He is sitting opposite me.（他坐在我對面）。
 
 ### On the other side of the 馬路/建築（在另一邊 / 對面）
 - The convenience store is on the other side of the street.（便利商店在馬路的另一邊/對面。）

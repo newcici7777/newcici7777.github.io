@@ -3,6 +3,26 @@ title: 飯店 餐廳相關
 date: 2026-08-26
 keywords: english, 
 ---
+## Counter vs Front desk
+### 1. Counter（一般櫃檯、收銀檯）
+交易、點餐的功能。
+* 餐廳或速食店點餐、取餐的檯子（如：*order at the counter*）。
+* 商店結帳的收銀檯（checkout counter）。
+* 吧台、藥局拿藥的櫃檯（pharmacy counter）。
+
+例句:
+*  Please place your order at the **counter**.（請在**櫃檯**點餐。）
+
+### 2. Front desk（接待櫃檯、前台）
+公司、飯店、大樓或學校正門口一進去的「主要接待、登記、問訊處」，負責迎賓、接電話、發放訪客證或處理入住。
+* 飯店的櫃檯（辦理入住/退房）。
+* 辦公大樓或企業大廳的警衛/接待處（訪客必須先在這裡登記）。
+* 學校行政大樓或健身房的服務台。
+
+例句:
+* If you have any questions, please ask the staff at the **front desk**.（如果你有任何問題，請詢問**接待櫃檯**的工作人員。）
+
+--------------------------
 ## menu
 - on the menu（在菜單上——食物被印在菜單的紙面或頁面上）
 

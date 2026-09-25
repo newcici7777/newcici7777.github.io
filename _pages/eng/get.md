@@ -95,21 +95,6 @@ get 是一個超級萬用的動詞。當它搭配房間、座位、車子等空�
 
 ------------------
 
-## 得到分數
-- I got an A on the test.(考試用on)
-- get a grade 就是「拿到成績」。
-- you don't get a perfect grade!
-  - grade是A,B,C,D分數 perfect滿分
-- I got 95 points.
-- My score was 95.
-
-## on 考試
-- get an A on the test（在考試上拿 A）
-- do well on the exam（在考試中表現好）
-- make a mistake on the quiz（在小考中出錯）
-
----------------
-
 ## 收到信/訊息
 - I never got your letters.
 - He got an e-mail last night.他昨晚收到了一封电子邮件。
@@ -244,4 +229,14 @@ get 形容詞
 - Get + caught（從沒事 ➡️ 變成「被抓到／被困住」）
   - We got caught in the rain.(我們被雨困住)
 
-
+------------------------------------
+## get to 原形動詞 (有機會)
+- I get to see my friends at work.我在工作時得以見到我的朋友。
+- Do you get to eat the food there, too?你在那裡也可以吃到食物嗎？
+- We get to leave work early today! 我們今天可以（有機會）提早下班！
+- Guess what? I get to meet my favorite singer tomorrow! 你猜怎樣？我明天有機會見到我最愛的歌手！
+- As a student, I get to use the library for free.身為學生，我得以免費使用圖書館。
+- Members get to enter the lounge before everyone else.會員享有權利比其他人更早進入貴賓室。
+- We get to travel to Japan for our company trip this year.
+我們今年公司旅遊有機會去日本玩。
+- She gets to work with some of the best designers in the industry.她有機會與業界頂尖的設計師們一起工作。

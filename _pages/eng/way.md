@@ -31,6 +31,11 @@ keywords: English, way
 - That's not the way we do things here. （那不是我們這裡做事的方法。）
 - Can you show me the way to solve this problem? （你可以教我解決這個問題的方法嗎？）
 
+## a great way 好方法
+- I think lockers are a great way to stay organized.我覺得置物櫃是保持井然有序的好方法。
+- Walking is a great way to stay healthy.（走路是保持健康的好方法。）
+- Reading books is a great way to learn new things.（讀書是學習新事物的好方法。）
+
 
 ## one-way + 名詞 = 單 ...
 - This is **a** one-way street.(這是一個**單**行道)

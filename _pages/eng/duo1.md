@@ -3,16 +3,6 @@ title: duolingo
 date: 2026-06-22
 keywords: English, duolingo
 ---
-
-## on 球隊
-谁是在这个队里最快的运动员？  
-Who is the fastest player **on this team**?  
-
-多儿在你的篮球队里吗？  
-Is Duo **on your basketball team**?  
-
-She's not **on** this baseball team.
-
 ## 同位詞
 - Eddy and his friend **Oscar** are at an art museum.  
   - friend = Oscar 二者相同。刪除his friend或刪除Oscar都不影嚮句意。
@@ -315,36 +305,6 @@ Deck 當名詞時，意思是「甲板」（船的甲板）或是「層、樓層
 - You guys are brave, just like soldier**s** in a movie.（你們很勇敢，就像電影裡的士兵一樣——不會特別指某個士兵。）
 - She sings like pop star**s** on TV.（她唱歌像電視上的流行巨星一樣——泛指這類人。）
 
-----------------------------
-
-
------------------------
-## Are there any good places to 原形動詞 + 地點 (有沒有好地方可以做...)
-- Are there any good places to read in Central Park? 中央公園裡有沒有什麼適合閱讀的好地方？
-
-- Are there any good places to eat near here?（這附近有沒有什麼吃東西的好地方？）
-- Are there any good places to take photos in Taipei?（台北有沒有什麼適合拍照的好地方？）
-- Are there any good places to work around here?（這附近有沒有適合辦公／用電腦的好地方？）
-
----------------------
-## Mistake 錯誤
-- Mistakes are the key **to** learning. Soon, you'll know geography like you know the back of your hand.錯誤是學習的關鍵。不久之後，你對地理的熟悉程度就會像了解自己的手背一樣（瞭如指掌）。
-  - know something like the back of one's hand：這是一個非常道地的英文習慣用語，字面意思是「像了解自己手背一樣清楚」，引申為「對...瞭如指掌、極為熟悉」。
-
-----------------------
-## absence(動) from 缺席、不在
-from 是一個介系詞，表示「從...地方（或狀態）離開、脫離」
-- Her absence from work.（她缺席工作／她請假沒上班）
-- absence from school（缺席學校／曠課、請假）
-- absence from work（缺席工作／請假沒上班）
-- absence from the meeting（缺席會議）
-
-把動詞變名詞：
-- Her absence from work （她沒上班這件事 / 她缺席工作）
-
-## be absent(形) from 缺席、不在
-- She is absent from work today. （她今天沒上班。）
-
 ---------------------
 ## outdoorS(副) outdoor(形)
 
@@ -370,14 +330,6 @@ outdoors（有 s）是副詞： 意思是「在戶外地」、「往戶外」。
 - indoor games（室內遊戲） → 形容詞修飾遊戲
 - play indoor**s**（在室內玩） → 副詞修飾玩耍的動作
 
----------------------------
-
-## a study(n.書房), studies(n.學習狀況), study(v.讀書)
-- a study(單數) : 前面加上冠詞（a study）或形容詞時，它就是一個名詞，專指家裡用來讀書、辦公、寫字的「書房」。
-  -  the downstairs study（樓下的書房）
-- studies(複數) : 學業, 課業, 研究
-  - How about your studies?你的學業／課業怎麼樣啊？
-  - He is busy with his studies.（他忙於他的學業。）
 
 ------------------------
 ## is busy with 名詞 (忙於某事)
@@ -449,6 +401,27 @@ with 的中文意思是「忙於」
 
 ------------------
 
+## find out 了解/找出/查清/發現
+- 查清楚: I need to find out what time the train leaves.我需要查清楚火車幾點開。
+- 了解: You'll find out about Harvard.你會了解關於哈佛大學的事情。
+- 找出: The teacher **gave the students a** diagnostic reading **test** to find out their weakness**es**. （老師給學生們做了一份「閱讀診斷」測驗，以找出他們的弱點所在。）
+- 發現: She finally found out the truth.她終於發現了真相。
 
+## `find` vs `find out`
+- find：通常是指「找到某個實體東西」
+  - I found my keys.我找到我的鑰匙了。
+- find out：通常是指「找出資訊、答案、真相」（抽象的概念或事情）。
 
+-------------------
+
+## give/take advice
+advice（建議）、help（幫助）、information（資訊） 這種**不可數**抽象名詞，前面沒有冠詞a，當你想表達「提供」給某人時，最常搭配的動詞就是 give。
+
+advice 是一個不可數名詞，所以不能說 an advice 或 advices，要用`a piece of advice`
+
+- She gave me **a piece of*** advice.（指給我一個建議）
+- She gave me some advice.她給了我一些建議
+
+- Will he take her advice? 他會接收她的建議嗎？(採納)
+- take **a** suggestion
 

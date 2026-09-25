@@ -47,7 +47,6 @@ to + 原形動詞 = 不定詞，用來形容前面的名詞，形容這個東西
 
 ## 名詞 + to + 動詞(未來動作)
 - I have a lot of work to do today.(我今天有很多工作要做。)
-- I'm looking for a place to live.(我在找一個可以住的地方。)
 - Do you have a pen to write with？(with 是 工具，用什麼東西來寫)
 - I have a lot of work to finish tonight. （我有好多工作今晚要完成。）
 

@@ -92,7 +92,7 @@ next 已經不是形容詞（去修飾後面的名詞），而是直接被當作
 ## 例句
 - The next person in line, please step forward. （排隊的下一個人，請向前一步。）
 - The next candidate is waiting outside the interview room. （下一位求職者正在面試室外面等待。）
-- The next meeting will take place on Friday afternoon. （下一場會議將在週五下午舉行。）
+
 - The next page contains the most important information. （下一頁包含最重要的資訊。）
 - The next stop is Taipei Main Station. （下一站是台北車站。）
 - The next bus arrives in five minutes. （下一班公車五分鐘後到。）

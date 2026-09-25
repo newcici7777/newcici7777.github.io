@@ -52,6 +52,8 @@ keywords: English
 - When do you start taking the lessons?
 - When do you have the lessons?
 
+----------------------------
+
 ## Give a test 考試 (老師給學生考試)
 老師或學校扮演的是「提供、發放、實施」測驗的角色，所以用 give：
 
@@ -80,6 +82,8 @@ take 是：「花時間、花力氣」
 - We took a Chinese listening test yesterday.我们昨天参加了一个中文听力测试。
 - How many students took the math test last week?有多少个学生参加上周的数学测试？
 - She will take a French listening test tomorrow.她明天会参加一个法语听力测试。
+
+---------------------------------------
 
 ## In class
 已經坐在教室裡聽講了（正在上課中)，注意！class是抽象概念(不可數名詞)，不需要加 a，跟the
@@ -116,6 +120,7 @@ lesson課表上的那『一節課』的時間（通常是40~50分鐘）
 - She has a math lesson every Wednesday.
 - I don't like English writing lessons.
 
+----------------------
 
 ## go to school
 school變抽象名詞，不可數，前面不能加a跟the。
@@ -125,6 +130,13 @@ school變抽象名詞，不可數，前面不能加a跟the。
 ## in college
 colleage變成抽象名詞，不可數名詞，前面不加a
 - I met him when I was in college.
+
+
+## on campus（在校園裡）
+campus 指的是學校那塊「土地、地面範圍」，所以用 on。
+- Students are allowed to live on campus.（學生被允許住在校園裡。）
+
+------------------------------
 
 ## at university
 - She is majoring in biology at university.
@@ -154,13 +166,14 @@ At (據點)地圖上的座標定位在學校。
 - Where is Josh? He is at school.（Josh 人在哪？他在學校。）
 - I won't be at school tomorrow.(我明天不会在学校。)
 
+----------------------
+
 ## finish school 放學
 * 現在式 / 現在進行式 / 未來式 → 通常指「今天的放學」 這是指今天或日常規律的作息時間。
 * What time do you finish school today?（你今天幾點放學？）
 * I finish school at 4 PM.（我下午四點放學。）
 - My kids will finish school at ten past seven.(我的孩子们会在七点过十分放学。)
 - When does your son finish school?
-
 
 ## finish school 畢業(過去式)
 看「時態」（Tense）—— 最準確的分辨方法
@@ -179,6 +192,8 @@ At (據點)地圖上的座標定位在學校。
 school 當抽象名詞，抽象名詞不可數，前面沒有a 跟 the。
 - Anna and her boyfriend will be at the library after school.
 
+----------------------------
+
 ## start 開學
 ### 主詞是學生
 - When do you start school?
@@ -194,16 +209,17 @@ school 當抽象名詞，抽象名詞不可數，前面沒有a 跟 the。
 - The new semester starts in the fall.（新學期在秋天開始。）——主詞是「學期」。
 
 
-## on campus（在校園裡）
-campus 指的是學校那塊「土地、地面範圍」，所以用 on。
-- Students are allowed to live on campus.（學生被允許住在校園裡。）
+--------------------------------
 
-## 課本
-- I need a course book.
-- I need a textbook.
+## 課本/練習簿/作業
+- I need a textbook.課本
+- I need a workbook.練習簿
+- My teacher's angry because I did the wrong homework!我的老师很生气，因为我做错作业了！
 
+例句:
+- Please open your textbook to page 45 and read the first paragraph.請將課本翻到第 45 頁，並閱讀第一段。
 
-
+----------------------------
 
 ## in pairs, in groups of 副詞片語
 in pairs, in groups of 前面加上了介系詞 in 之後，整個片語是用來修飾前面的動詞或整個動作的狀態，回答「是用什麼形式在進行？」這個問題。
@@ -218,84 +234,101 @@ In 原本的核心意思是「在...裡面」。當你說 in pairs（成雙成�
 - Students discussed the topic in groups of five.（學生們以五人一組的方式討論這個主題。——放在受詞後面）
 - The class worked in groups of five to finish the project.（全班以五人一組的方式合作完成這個專案。）
 
-## do homework 做作業
-- My teacher's angry because I did the wrong homework!我的老师很生气，因为我做错作业了！
+-----------------------------------
+
+## 得到分數
+- I got **an** A on the test.(考試用on)
+- 單數: I got **a** 95.我拿了 95 分
+- 複數: I got 95 point**s**.（我得到了 95 分。points 是「點數／分數」的意思）
+- I got a 95 on my test.（我在考試中拿了 95 分）
+
+-------------------------------
+## My grade 我的成績
+- My grade **is** 95. 我的成績是95分
+
+## get a perfect grade 拿到滿分
+- you don't get a perfect grade!你不需要拿滿分
+  - grade是A,B,C,D分數 perfect滿分
+
+## grades 成績(要加s) 「多個」學科的成績
+- His grade**s** **are** better than mine.
+- She has great grade**s** this semester.
+（她這學期的成績非常棒。）
+- I need to work harder to get good grade**s**.
+（我需要更努力才能拿到好成績。）
+
+## What grade ... in? 年級
+- **What grade** are you **in**? I'm **in the** 7th grade.
+（你讀幾年級？我讀國一／七年級。）
+- Is your son in eighth grade? 你的兒子讀八年級嗎
+
+---------------------
+
+## a mistake 錯誤  
+- make a mistake on the quiz（在小考中出錯）
+- Let's make a mistake and start again.我們犯了一個錯誤，所以重來一次吧。
+- Mistakes are the key **to** learning. Soon, you'll know geography like you know the back of your hand.錯誤是學習的關鍵。不久之後，你對地理的熟悉程度就會像了解自己的手背一樣（瞭如指掌）。
+  - know something like the back of one's hand：瞭如指掌。
+
+----------------------
+
+## an average student 一般學生
+- She's not an average student.她不是一個普通的學生。暗示她非常優秀
+
+-----------------------
+## go to health 上健康課
+
+- Before I go to health.
+  - 原本: Before I go to health class.（在我去上健康課之前）
+- go to math = 去上數學課（math class）
+- go to history = 去上歷史課（history class）
+- go to PE = 去上體育課（Physical Education）
+
+------------------------------
+
+## absence(動) from 缺席、不在
+from 是一個介系詞，表示「從...地方（或狀態）離開、脫離」
+- Her absence from work.（她缺席工作／她請假沒上班）
+- absence from school（缺席學校／曠課、請假）
+- absence from work（缺席工作／請假沒上班）
+- absence from the meeting（缺席會議）
+
+把動詞變名詞：
+- Her absence from work （她沒上班這件事 / 她缺席工作）
+
+## be absent(形) from 缺席、不在
+- She is absent from work today. （她今天沒上班。）
+
+--------------------
+## a study(n.書房), studies(n.學習狀況), study(v.讀書)
+- a study(單數) : 前面加上冠詞（a study）或形容詞時，它就是一個名詞，專指家裡用來讀書、辦公、寫字的「書房」。
+  -  the downstairs study（樓下的書房）
+- studies(複數) : 學業, 課業, 研究
+  - How about your studies?你的學業／課業怎麼樣啊？
+  - He is busy with his studies.（他忙於他的學業。）
+
+---------------------
+
+## review 複習
+- 複習（學業／考試）
+  - Review questions 複習題
+    - You can find the answers to these review questions at the back of the textbook.你可以在這本課本的後面找到這些複習題的答案。
+  - Let's do a quick review before the exam.我們在考試前快速複習一下吧。
+- 評論、評價（電影、餐廳、產品等）
+  - The new restaurant has received great reviews online.這家新餐廳在網路上獲得了極高的評價。
+- 審查、檢討（工作、計畫、政策等）
+  - The manager needs to review the financial report.經理需要審查這份財務報告。
 
 
 ----------------------
-## sessions
-- For how many sessions do you need a personal trainer?
-
-簡單來說：**`lesson`** 和 **`session`** 都能翻譯成「課程」，但它們適用的**場景和包裝方式**很不一樣。
-
----
-
-### 1. 什麼是 `session`？
-
-**`Session`** 的核心核心概念是：**「一段被安排好、有明確起訖時間的『聚會、集會或服務過程』」**。
-
-它不只用在教學，還廣泛用在各種專業服務的「時段」上：
-
-* **健身房：** 一堂教練課（教練跟你約好這 60 分鐘的時間）。
-* **心理諮商：** 一次諮商晤談（*a counseling session*）。
-* **線上會議：** 一場視訊會議（*a Zoom session*）。
-
-所以，`session` 強調的是「一段完整的服務時段」。
-
----
-
-### 2. 為什麼教練課要用 `sessions` 而不是 `lesson`？
-
-我們來對比這兩個詞的語感差異：
-
-* **`Lesson`（課程／教訓）：**
-* 比較偏向「學知識、技能」的學校教室情境。
-* 例如：*piano lessons*（鋼琴課）、*English lessons*（英文課）。它強調的是你學到了什麼內容。
-
-
-* **`Session`（時段／場次）：**
-* 比較偏向「教練、諮商師提供專業服務的計費單位」。
-* 在健身房買教練課時，你買的不是「一堂課的知識」，而是買教練 **「陪你訓練的這一個時段（session）」**。所以健身房、瑜珈教室、教練約課，幾乎全都用 `sessions` 來計算。
-
-
-
----
-
-### 3. 用生活化的比喻來看
-
-* 如果你去補習班學英文，老師在上台講課，這叫 **`lesson`**。
-* 如果你請一個私人教練一對一帶你運動，或者去預約心理諮商，這種算準時間、一對一的服務，通常就叫 **`session`**。
-
-下次去健身房或預約專業服務時，用 **`sessions`** 絕對會比用 `lessons` 聽起來更專業、更道地喔！
-
-----------------------------
-這就為你整理 **5 個**關於 **`session`** 的實用例句！
-
-如同我們剛才討論的，`session` 強調的是「一段被安排好、有起訖時間的專業服務、會議或課程時段」。我們把它們分成不同情境來看看怎麼用：
-
----
-
-### 1. 健身與運動情境（最常跟教練買的計費單位）
-
-* **I have a personal training session with my coach this afternoon.**
+## sessions 時段
+- 健身房課程
+  - I have a personal training session with my coach this afternoon.
 （我今天下午跟教練有一堂私人健身課。）
-
-### 2. 醫療與心理諮商情境（專業的晤談時段）
-
-* **The therapist recommended weekly counseling sessions.**
+- 心理諮商
+  - The therapist recommended weekly counseling sessions.
 （治療師建議進行每週一次的心理諮商。）
-
-### 3. 教育與培訓情境（線上的學習或教學時段）
-
-* **There will be a Q&A session at the end of the workshop.**
-（研討會的尾聲將會有一場問答時間。）
-
-### 4. 職場與會議情境（專案討論或工作坊）
-
-* **We spent two hours in a brainstorming session this morning.**
-（我們今天早上花了一個小時進行腦力激盪會議。）
-
-### 5. 娛樂或遊戲情境（遊玩時段／登入狀態）
-
-* **Please save your progress before ending the gaming session.**
-（在結束遊戲時段之前，請先儲存你的進度。）
+- 時段
+  - There will be a Q&A session at the end of the workshop.
+（研討會的尾聲將會有一場問答時段。）
+- 視訊會議: a Zoom session

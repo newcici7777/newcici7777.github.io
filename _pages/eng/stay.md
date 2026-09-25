@@ -31,6 +31,11 @@ stay 在這裡管的是「範圍 / 邊界」，而不是限制你的動作不能
 - Stay safe（保持安全）
 - Stay healthy（保持健康）
 
+例句:
+- I think lockers are a great way to stay organized.我覺得置物櫃是保持井然有序的好方法。
+- Walking is a great way to stay healthy.（走路是保持健康的好方法。） 
+
+
 ## Stay away 「離...遠一點」、「別靠近」
 Stay(保持) + away在遠處
 - Stay away from there!待在遠處不要過來！

@@ -1,11 +1,36 @@
 ---
-title: in the 大自然, the 空氣
+title: in the 大自然, the air, 四季
 date: 2026-09-07
 keywords: english, nature
 ---
 ## in nature (抽象概念不加 the)
 - He likes to spend his weekends in nature. （他喜歡週末在大自然中度過——註：nature 抽象概念不加 the。）
 
+---------------------
+
+## the air 空氣
+空氣前面要加the
+- The air **in** the desert is very dry.在沙漠里的空气菲常千燥。
+- The air is colder at the top of a hill.在山丘顶上的空气更冷。
+
+----------------------
+
+## 四季
+### Summer is over.
+當我們在講一個大自然的時間循環、或者是抽象的概念時（例如夏天這個季節的流逝），季節名詞本身可以像專有名詞或抽象名詞一樣，直接裸考使用（不加 the）。
+
+- when summer is over.當夏天結束時(沒有the)
+- Winter is coming.（冬天來臨了）沒有the
+- Summer is my favorite season.（夏天是我最喜歡的季節）
+
+### in the summer（加 the）
+加上 in 變成介系詞片語時，通常是指「在某個特定的期間內」（也就是指這一年當中的「夏季」這段時間）。
+
+在夏天（這個季節裡）做某事時，習慣會加上 the：
+- We usually go to the beach in the summer.（我們通常在夏天去海邊。）
+
+
+-----------------
 ## in the 大自然
 大自然固定前面加the。
 
@@ -35,9 +60,6 @@ keywords: english, nature
 大自然固定用There be
 - There are many rivers in Taiwan. （台灣有許多河流。）
 
-## the air 空氣
-- The air **in** the desert is very dry.在沙漠里的空气菲常千燥。
-- The air is colder at the top of a hill.在山丘顶上的空气更冷。
 
 ## in the mountain**s**
 為什麼 mountain 要加 s 變成 mountains？  

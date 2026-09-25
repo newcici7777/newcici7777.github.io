@@ -39,6 +39,7 @@ keywords: english,
 - Give it a try.（試試看。）it代表前面提到的
   - Should I buy this new game?（我該買這款新遊戲嗎？）
     - Give it a try!（試試看吧！買這款遊戲來玩玩看)
+  - Your Flutter voice assistant is ready to go! To give it a try!
 - Give it a shot（試一試、搏一把）
   - I've never played tennis, but I'll give it a shot.（我從沒打過網球，但我願意試試看。）
 - Give me a shout（喊我一聲 / 跟我說一聲）

@@ -12,6 +12,7 @@ keywords: be going to
 - Are you speaking to Anna right now?你玑在正在跟安娜说话吗？
 
 ## 過去進行式(原本打算要做...什麼)
+過去原本打算（要）做某事，但後來可能沒做、或是計畫被打斷了」。
 ```
 was/were + going to + 原形動詞
 ```

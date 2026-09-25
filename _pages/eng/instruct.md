@@ -18,6 +18,13 @@ instructor 就是教練、講師。
 
 常見情境： 考試作答說明、組裝傢俱的說明書、軟體安裝步驟、安全操作規範。
 
+動詞搭配:
+- read the instructions（閱讀說明書）
+- follow instructions（遵守指示）。
+
+例句:
+- Please read the safety instructions carefully before using the machine.（在使用這台機器前，請先仔細閱讀安全說明。）
+- The exam instructions say no calculators are allowed.（考試指示說不准使用計算機。）
 - Please read the instruction**s** carefully before taking the exam. （請在考試前仔細閱讀作答說明——這是強制要遵守的規則。）
 - Follow the manufacturer's instruction**s** to install the software. （請按照製造商的操作指示來安裝軟體。）
 
@@ -26,6 +33,8 @@ instructor 就是教練、講師。
 - Read the instruction**s** carefully before you start assembling the furniture. （在開始組裝這套傢俱前，請先仔細閱讀說明書。）
 - The teacher gave clear instruction**s** **on** how to complete the homework. （老師針對如何完成這項作業，給了清晰的指導與指示。）
 - Following the safety instruction**s** in the laboratory is mandatory. （嚴格遵守實驗室的安全操作規範是強制規定的。）
+- Before you choose a partner, I'll repeat the instructions.在我讓你們選擇搭檔之前，我會把指令／說明再重複講一次。
+- Could you please repeat the instruction?（請您再重複一次指令好嗎？）
 
 instruction 是名詞（指示、說明、教導），而 instructor 是指人的名詞（教練、講師、指導員）。
 
@@ -36,6 +45,16 @@ instruction 是名詞（指示、說明、教導），而 instructor 是指人�
 - Instruct（動詞：指導、教導）＝ 幫你把觀念或步驟建立起來。
 - Instruct**ion**（名詞：說明、指示）＝ 建立起來的規則或步驟。
 - Instruct**or**（名詞：教練、講師）＝ 負責「建造、教導你」的那個人！
+
+-----------------
+
+## Steps（步驟）
+核心意圖： 著重於「動作的先後順序」與「怎麼做（How-to）」例如：Step 1, Step 2）。
+
+常見情境： 食譜、組裝家具、軟體安裝教學。
+
+- Follow these steps to bake a cake.（照著這些步驟烤蛋糕。）
+- The first step is to turn on the computer.（第一個步驟是打開電腦。）
 
 
 -----------------
@@ -54,7 +73,7 @@ instruction 是名詞（指示、說明、教導），而 instructor 是指人�
 
 ---------------------
 
-## Guidelines（參考原則）
+## Guidelines 建議
 可數名詞，要加**S**  
 
 建議方向、**參考**
@@ -63,5 +82,27 @@ instruction 是名詞（指示、說明、教導），而 instructor 是指人�
 
 常見情境： 公司政策方針、健康飲食建議、社群媒體發文規範、設計排版原則。
 
-- The company provided new guideline**s** for working from home. （公司提供了居家辦公的新指導方針——給大家當作做事的大原則參考。）
-- These are just general guideline**s**, not strict rules. （這些只是大方向的參考原則，並不是嚴格的規定。）
+- Here are some guidelines for writing a good resume.（這裡有一些撰寫好履歷的建議。）
+- The company provided new guideline**s** for working from home. （公司提供了居家辦公的新建議——給大家當作做事的大原則參考。）
+- These are just general guideline**s**, not strict rules. （這些只是大方向的建議，並不是嚴格的規定。）
+
+---------------------
+
+- Handbook: 員工手冊、學生手冊、旅遊指南
+- Setup（設置,動詞）: 它不完全是說明書，而是指「把東西裝好、調整好」的這個過程或整體架構（例如：手機開機的初始設定、軟體安裝）
+- Manual / Instruction book（說明書 / 操作手冊）
+  -  Manual 最常用來指機器、軟體的完整操作手冊。
+  - Instruction book 則比較白話，字面就是「指令書」。
+
+## 區別
+- 你想表達一本厚厚給員工看的規定 $\rightarrow$ 用 Handbook。
+- 你想表達買相機附的操作手冊 $\rightarrow$ 用 Manual。
+- 你想表達考試卷上的作答規定 $\rightarrow$ 用 Directions。
+- 你想表達食譜上的先後步驟 $\rightarrow$ 用 Steps。
+
+
+Instructions / Directions / Steps / Guidelines
+- Steps = 一步步的動作（Step 1, Step 2）。
+- Directions = 帶有強烈指示性、不能做錯的方向或操作規定（例如藥袋上的用藥指示）。
+- Instructions = 廣泛的說明或操作指南（說明書裡面的內容就叫 instructions）。
+- Guidelines = 柔性的「指導方針／建議原則」（供你參考，不一定要百分之百死板遵守）。

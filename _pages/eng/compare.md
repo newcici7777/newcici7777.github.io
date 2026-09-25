@@ -32,7 +32,7 @@ keywords: english, less
 - She's the tallest girl in my school.
 - This is the tallest and oldest roller coaster in the country.
 
-- Let's go to the most interesting place in town.咱们去镇上最有意思的地方吧！
+
 - Is Paris the most famous city in France?
 - Ben is the most important player. 
 - Which trip is the most exciting?

@@ -12,7 +12,7 @@ keywords: english, thins
 ### Things（可數名詞）
 它是 thing 的複數形，可以用具體的數字來計算（例如：two things, three things）。
 - There are three thing**s** I need to tell you.（我有三件事需要告訴你。）
-- **A** strange **thing** took place last night. （昨晚發生了一件奇怪的事。）  
+ 
 - You can't do two difficult things at once.（你無法同時做好兩件困難的事。）
 
 ### Stuff（不可數名詞）
