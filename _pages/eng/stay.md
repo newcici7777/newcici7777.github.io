@@ -3,9 +3,12 @@ title: Stay
 date: 2026-08-22
 keywords: english, stay
 ---
-Stay 的核心意思就是「保持（某個狀態）」或「停留、待在（某個地方）」。  
+Stay 就是不動、不離開、維持現狀。  
 
 stay 後面接形容詞時，意思是「維持在某個狀態不變」，相當於 keep。
+
+* stay + 地方（待在某地）：*Stay home.*（待在家裡）
+* stay + 形容詞（保持某種狀態）：*Stay safe.*（保持安全）
 
 ## stay 停留
 stay 中，它的核心概念是「維持在某個範圍、狀態或軌道中不離開」，而不是絕對的靜止不動。
@@ -14,6 +17,7 @@ stay 在這裡管的是「範圍 / 邊界」，而不是限制你的動作不能
 
 - Always stay on the paths.隨時走在小徑上。
   - 它不是叫你：「站在小徑上不準動！」而是叫你：「在移動（健行）的過程中，要一直待在小徑的範圍內，不要走到旁邊去。」
+- Stay on the paths.「待在」小徑範圍內不要走出去（強調不離開那個界線）。  
 - Stay in the lane.(開車時維持在車道內)
 
 ## stay together
@@ -24,17 +28,19 @@ stay 在這裡管的是「範圍 / 邊界」，而不是限制你的動作不能
 - Can we stay together?（我們能一直在一起嗎？）
 - They decided to stay together.（他們決定繼續在一起。）
 
-## Stay + 形容詞 (保持狀態)
-* Please stay calm.（請保持冷靜。 → calm是形容詞）
+## Stay + 形容詞 (維持狀態不變)
+**自己**維持現狀、不改變，指人或事物**自己**維持在某個狀態。
+
+* Please stay calm.（請保持冷靜 —— 指的是「維持」當下這個不慌亂的狀態不要變。）
 * Stay safe!（保重／注意安全！）
 - Stay calm（保持冷靜）
 - Stay safe（保持安全）
 - Stay healthy（保持健康）
+- stay organized（保持井然有序）
 
 例句:
 - I think lockers are a great way to stay organized.我覺得置物櫃是保持井然有序的好方法。
 - Walking is a great way to stay healthy.（走路是保持健康的好方法。） 
-
 
 ## Stay away 「離...遠一點」、「別靠近」
 Stay(保持) + away在遠處

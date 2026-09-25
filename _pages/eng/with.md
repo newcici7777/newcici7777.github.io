@@ -26,6 +26,7 @@ with you 在這裡不是指在一起，而是指「把時間和注意力留給�
 - She cut the paper with a pair of scissors.她用剪刀剪紙。
 - He wrote the letter with a red pen.他用紅筆寫這封信。
 - The chef cut the vegetables with a sharp knife.主廚用一把鋒利的刀子切蔬菜。
+- Each locker opens with a student ID.（每一個置物櫃都用學生證來開啟。）
 
 ## 動作 + with + 身體部位
 「用身體的某個部位去完成一個動作」，會使用 **`with`** 這個介系詞。

@@ -79,8 +79,16 @@ all 的意思是「全部、都」，收到的報告不是其中一兩份，而�
 
 - Why were you at school all day yesterday?你昨天为什么一整天都在学校？
 
-## the whole day 一整天
-
+## 一整天 `the whole day` vs `throughout the day` 
+- throughout the day（一整天當中／貫穿全天）
+  - 語感： 強調在整個時間的過程中、從早到晚的每一個時段都有發生或持續著。
+  - 例句： Students are busy throughout the day.（學生們一整天都很忙碌。）
+- all day（整天）
+  - 語感： 口語中最常用、最直接的說法，強調「從早到晚」這段時間長度。
+  - 例句： It rained all day.（下了一整天的雨。）
+- the whole day（完整的一整天）
+  - 語感： 通常帶有一點「完整、毫無間斷」的強調意味，常常前面會加代名詞（如 the whole day 或 my whole day）。
+  - 例句： I spent the whole day cleaning the house.（我花了一整天打掃房子。）
 
 ## All of + the / these / those/ 所有格(my,your)
 「這群/那群東西的全部」時，習慣用 `all of + the / these / those/ 所有格(my,your) + 可數名詞(加s)/不可數名詞` 的結構。

@@ -194,17 +194,20 @@ in 常被用來表示「處於某種狀態、潮流或風氣之中」。
 
 
 --------------------------
-## design 設計
+## design 設計 (名詞/動詞)
 
 * There are many famous designers at this fashion show.這場時裝秀上有很多有名的設計師！
 
-### design 主動
+### design(名詞)
+- Our school design keeps everything close. 我們學校的設計是使所有東西都保持在很近的距離
+
+### design(動詞)
 * He's a model, but he's also good at designing hats!他是一个模特，但是他也很擅长设计帽子！
 * She designs all kinds of bathing suits.她设计各种泳衣。
 * Did he design this bathing suit?這件泳衣是他設計的嗎？
 * This designer designs all kinds of hats.這個設計師設計各種帽子。
 
-### is designed 被動
+### is designed(被動)
 * Actually, this suit is designed by that model!實際上，這套西裝是那個模特设计的！
 * The gold scarf she designed is beautiful.她設計的金色圍巾很漂亮！
 * This bracelet is designed by a singer.这条手链是一个的歌手设计的。

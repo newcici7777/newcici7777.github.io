@@ -1,6 +1,6 @@
 ---
 title: place 放置, 地方, 下訂單
-date: 2026-09-26
+date: 2026-09-25
 keywords: english, place
 ---
 ## place(動) 放置

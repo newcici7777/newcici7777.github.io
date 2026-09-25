@@ -1,5 +1,5 @@
 ---
-title: on 進行中 持續 持續前進 關於
+title: be + 名詞(狀態), on 進行中 持續 持續前進 關於
 date: 2026-08-09
 keywords: English
 ---

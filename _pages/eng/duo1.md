@@ -91,20 +91,6 @@ build ，強調那個「堆疊、建造」的過程。
 
 -------------------
 
-## in her free time
-- I like to read books in my free time.（我喜歡在我的空閒時間看書。）
-- What do you usually do in your free time?（你通常都在空閒時間做什麼？）
-- My mom often bakes cookies in her free time.
-- She is a singer in her free time.她在她的空闲时间是一个歌手。
-
-## our time 我們在這裡度過的時間
-our time 的意思是「我們在這裡度過的時間」，形容一段經歷，不可數名詞
-
-- We enjoyed our time here.我們很享受在這邊的時光
-- Thank you for your time.（謝謝你撥冗／謝謝你的時間——這裡就是指謝謝對方花時間陪你或幫忙。）
-
-
----------------------
 
 ## end(動詞) 結束
 - Did the concert end late yesterday?昨天的演唱會很晚才結束嗎？
@@ -342,26 +328,7 @@ with 的中文意思是「忙於」
 - He is busy studying.
 - ❌ He is busy ~~with~~ studying.
 
---------------------------
-## free(形容詞)
-是的，**free** 在英文中是一個非常常見的**形容詞（Adjective）**。
 
-它根據不同的上下文，主要有以下幾種常見意思：
-
-1. **免費的**（不需付費）
-* 例句：*The software comes **free**.*（這款軟體是**免費的**。）
-
-
-2. **自由的**、**不受束縛的**
-* 例句：*Birds fly **free** in the sky.*（鳥兒在空中**自由**飛翔。）
-
-
-3. **空閒的**、**有時間的**
-* 例句：*Are you **free** this afternoon?*（你今天下午**有空**嗎？）
-
-
-4. **免於...的**（常與介系詞 from 搭配）
-* 例句：*Keep the area **free** from dust.*（保持這個區域**免於**灰塵沾染。）
 
 -----------------------
 

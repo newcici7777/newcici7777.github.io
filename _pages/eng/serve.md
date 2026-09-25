@@ -44,16 +44,16 @@ serve + 食物 / 餐點
 - May I help you? / How can I serve you?（我能怎麼服務你？）
 
 
-## serve(動) as 充當、作為
-當 serve 後面接 as 時，它就不跟食物有關了，而是指「某個東西發揮了某種功用、擔任了某個角色」。
+## serve(動) as 當作
+當 serve 後面接 as 時，它就不跟食物有關了。
 ```
 serve as + 角色／功能
 ```
-- Serve only as a guideline.只作為參考指引
+- Serve only as a guideline.只能當作參考
 - A low test score should serve as a guideline.
-（低分應該發揮...的功能，作為一個參考指引。）
+（低分只能當作一個參考。）
 - This sofa can serve as a bed for guests.
-（這張沙發可以充當客床來用。）
+（這張沙發可以當作客床來用。）
 
 ## serve(動) 服兵役(為國家服務)
 - He served in the army for three years.（他在軍中服役了三年。）

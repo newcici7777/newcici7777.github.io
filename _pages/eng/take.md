@@ -106,9 +106,6 @@ Take 人 to 某地
   - No, it's not taken. Please go ahead.（沒有，沒人坐。請坐。)
 - Is this parking space taken?（這個車位有人停了嗎？）
 
-- Free ＝ 空的、沒人用的
-- Taken ＝ 有人的、被佔用的
-
 
 ## 吃藥
 - Did you take your medicine?（你吃藥了嗎？）
