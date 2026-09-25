@@ -3,14 +3,17 @@ title: 後位修飾 副詞,介系詞片語 修飾前面名詞
 date: 2026-08-11
 keywords: English, Post-modification
 ---
-後位修飾:  
-在英文中，時間或地點名詞有時候可以直接放在另一個名詞後面，當作後位修飾語，用來限定前面的名詞
+## 後位修飾
+在英文中，時間或地點名詞可以直接放在另一個名詞後面，當作後位修飾語，用來**形容**前面的名詞。
+
+## 倒回來想：
+- 一所高中**的**老師 → a teacher at a high school → 倒回來就是 → high school teacher → 翻譯: high school(高中**的**) teacher。
 
 ## 時間 後位修飾
 
 ### 文法說明
 - The English class yesterday.
-  - yesterday 在這裡它是當作形容詞性的名詞（Noun adjunct），放在class名詞後面來補充說明時間。
+  - yesterday 在這裡它是當作形容詞，**昨天的**。
 
 - Which day **next week** are you free, Tuesday or Thursday?
   - 介系詞子句(原本): Which day **of next week** are you free?
@@ -80,6 +83,7 @@ keywords: English, Post-modification
 - tomorrow's weather（明天的天氣）
 - yesterday's news（昨天的新聞）
 - tonight's dinner（今晚的晚餐）
+- Tonight's special comes with soup and a salad.今晚的特餐附贈（包含）湯和沙拉。
 
 ### 時間所有格前面不能有the
 所有格跟冠詞，都是指定某個東西，也稱**限定詞**，不是任何一個東西。

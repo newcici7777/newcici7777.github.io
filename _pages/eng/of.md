@@ -3,22 +3,19 @@ title: of, to, paint, draw,picture, photo,
 date: 2026-07-31
 keywords: English, of, to, picture, photo,paint, draw
 ---
-## of 屬於 東西的
-「通常」沒有生命的東西，表示屬於誰的，用 
-前面的「屬於of」後面的，也可用先翻譯「後面」的of「前面」
-```
-前面 of 後面
-a picture of 人事物
-```
-- 照片(前面的)屬於人事物(後面的)
-- 人事物(後面的)的照片(前面的)
+## of 倒回來想：
+- 一杯裝咖啡的杯子 → a cup of coffee → 倒過來就是 coffee cup。
+- a picture of cat → 倒過來就是 cat picture。
 
-人的用's  
-My son's birthday. 
+## 各種「的」
+- 人的用's  
+  - My son**'s** birthday. 
+- 所有格也可表示誰的  
+  - **My** birthday.  
+- 無生命的用of
+  - a picture of cat (由後面往前翻譯，貓的圖)
 
-所有格也可表示誰的  
-My birthday.   
-
+## of 例句
 - Do you know the time of that game?  你知道那场比赛的时间吗？ 
 - He is an important part of our team.
 - the most exciting part of that game.那场比赛最令人兴奋的部分   
@@ -26,7 +23,8 @@ My birthday.
 - Mr. Wang is the boss of this company.王先生是这家公司的老板。
 
 ## to 的
-to用來表示「目標、對應關係或終點」
+一隻鑰匙可以打開的門，一個問題的解答，用to，代表某種**方法、方式**可以解鎖這個門、一條路前往這個地點、一個解答可以解開這個問題。
+
 ```
 名詞 + to + 另一個名詞
 ```

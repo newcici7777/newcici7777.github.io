@@ -29,15 +29,22 @@ serve + 食物 / 餐點
 - Serve warm.溫溫地吃。
   - The pie is best serve warm with a little custard.（這款派最好是溫溫地吃，配一點蛋奶醬。）
 
+## serves(動) 供應/上菜
+- Emily serves food at her job.艾蜜莉（Emily）在她的工作崗位上供應食物。
 
-## Serve + 副詞
-Serve immediately.（請立刻端上桌享用。）
 
-## Serve 服務
+## Serve(動) + 副詞
+- Serve immediately.（請立刻端上桌享用。）
+
+## server(名) 服務生
+- Do you want to be a server?你想要做一个服务员吗？
+- was your friend a server too?你的朋友以前也是一个服务员吗？
+
+## Serve(動) 服務
 - May I help you? / How can I serve you?（我能怎麼服務你？）
 
 
-## serve as 充當、作為
+## serve(動) as 充當、作為
 當 serve 後面接 as 時，它就不跟食物有關了，而是指「某個東西發揮了某種功用、擔任了某個角色」。
 ```
 serve as + 角色／功能
@@ -48,5 +55,5 @@ serve as + 角色／功能
 - This sofa can serve as a bed for guests.
 （這張沙發可以充當客床來用。）
 
-## 服兵役(為國家服務)
+## serve(動) 服兵役(為國家服務)
 - He served in the army for three years.（他在軍中服役了三年。）

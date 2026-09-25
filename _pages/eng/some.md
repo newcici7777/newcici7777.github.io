@@ -15,6 +15,7 @@ some + 可數/不可數名詞
 - some strawberries
 - Does your farm have any bananas?
 - Would you like some cookies ?你想要一些饼干吗？
+- There is some coffee in that bag.在那个袋子里有一些咖啡。
 
 ## Some當代名詞（自己當主角）
 它也可以不用接名詞，直接代表「一部分的人或東西」：

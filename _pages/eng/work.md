@@ -18,6 +18,12 @@ at 在這裡就像是一個定位針，精準指出你是在「前一份工作�
 - Were you a secretary at your last job? 你上一份工作是秘書嗎？
 - What did you do at your previous job?（你在前一份工作做什麼？）
 
+## at her job
+在英文中，當我們要表達**以某個工作身分**來從事活動時，介系詞 at 非常常用。
+- at her job：強調她是在這個工作崗位／環境中執行任務。
+  - Emily serves food at her job.艾蜜莉（Emily）在她的工作崗位上供應食物。
+
+-----------------------------
 
 ## I'm going to work(名詞). 我要去上班了。
 這裡的 work 不是動詞，它是名詞（工作地點/上班這件事）。
@@ -33,12 +39,18 @@ at 在這裡就像是一個定位針，精準指出你是在「前一份工作�
 - I'm going to work. 上班
 - I am not going to work on my birthday. 
 
-## for work(名詞)
+-----------------
+
+## for work(名詞) 為了工作
+這邊的for代表**目的**。
 - My parents often fly to London for work. 我的父母经常飞去伦敦工作。
 
-### work(動詞) + on 日期 在某個日期工作或不工作
+-------------------
+
+## work(動詞) + on 日期 在某個日期工作或不工作
 - I don't work on Sundays.
 
+-----------------------
 
 ## work(動詞) at a 場所
 - I work at **a** restaurant!我在一家餐廳工作 不能用the
@@ -50,16 +62,19 @@ at 在這裡就像是一個定位針，精準指出你是在「前一份工作�
 - work at **a** bank（在銀行上班）
 - work at the same company（在同一家公司上班）
 
+---------------------------
 
 ### work downtown
 - Do you work downtown? downtown（副詞：在市中心）
 
+----------------------------
 
 ## work in 大地方
 - Do you work in New York?
 - I worked in Oxford for two years.我在牛津工作了两年。
 - He worked in Scotland for a year. 他在苏格兰工作了一年。
 
+-----------------------
 
 ## work for 人/公司 (為誰工作)
 - Is Anna working for two different companies ?
@@ -67,6 +82,8 @@ at 在這裡就像是一個定位針，精準指出你是在「前一份工作�
 - I am going to work for a different company.我打算为一家不同的公司工作。
 - I worked in oxford for 2 years.
 - How long did you work for that company?你为那家公司工作了多久？
+
+------------------------
 
 ## be in the ... business
 ```
@@ -112,15 +129,20 @@ do business(做生意) in the 產業、領域
   - music 前面沒有the
 - We do business in China.我们在中国做生意。
 
+------------------------
 
 ## work from home 在家工作
 - Who will work from home next week?谁下周会在家工作？   
+
+-----------------------
 
 ## work with 一起工作
 - Do you like working with him?
 - I work with Ben.我跟本一起工作。
 - Do you work with Anna?你跟Anna一起工作嗎
 * They work with a great team.（他們和一個很棒的團隊一起工作。）
+
+---------------------
 
 ## work as 「擔任...職務」或「以...的身分工作」
 ```
@@ -133,12 +155,16 @@ work as + [職稱/身分]
 * I worked as a freelancer for three years.（我曾以自由工作者的身分工作了三年。）
 * I work as a designer.（我是一名設計師。)
 
+-----------------------
+
 ## finish work 下班
 - Emma usually finishes work at half past eight.艾玛平时在八点半
 下班。
 
 ## after work 下班
 - What is Duo going to play after work?(多儿下班后打算玩什么？  )  
+
+------------------------
 
 ## hard
 ```
@@ -151,6 +177,8 @@ work hard (hard是副詞)
 - The test was hard yesterday.(hard形容詞)
 - This is hard, and I'm hungry.
 
+-----------------------
+
 ## at/in the office 在辦公室
 - in the office（在辦公室室內）人在辦公室的四面牆壁之內。
   - Is the boss in the office?（老闆人在辦公室裡嗎？）
@@ -159,12 +187,15 @@ today.
 - at the office (據點)
   - She is at the office.人在辦公室這個地點。
 
+--------------------------
 
 ## in a meeting 會議
 - in a meeting 會議可以「一場一場」的數，所以要加a
   - She was in a meeting.(她當時在開一場會)
 - in meetings(mettings前面沒有the，用複數形容很忙)
   - She was in meetings all morning.她整個上午都在開會
+
+-------------------
 
 ## meet 碰面
 - they want to meet us at the theater.
@@ -191,6 +222,8 @@ today.
 ## Hold a meeting(名) 開會
 - The manager will hold a meeting this afternoon.（經理今天下午會召開會議。）
 
+----------------------
+
 ## have a discussion 討論
 - Excuse me, sir, are you having a discussion?不好意思，請問你們在討論嗎？
   - have 是動詞（進行)
@@ -211,11 +244,7 @@ discuss + [某事] + with + [某人]
 - Can we discuss **this** with him tomorrow?（我們明天可以跟他討論這件事嗎？）
 - She is discussing **the details** with the client.（她正在跟客戶討論細節。）
 
-
-
 -------------------------------
-
-
 
 ## start a new business 創業
 - She wants to start a new business。她想創業。
@@ -230,10 +259,14 @@ discuss + [某事] + with + [某人]
 - Set up a business（設立事業，偏向英式英文或較正式的說法）
   - It's not easy to set up a business.（要建立一項事業並不容易。）
 
+-----------------------
+
 ## Email(動詞) + 人 「寄信」
 - Email me after the meeting.
 - I will email you the details tomorrow.（我明天會把詳細資訊寄信給你。）
 - Can you email him about the update?（你可以發信跟他說一下最新進度嗎？）
+
+------------------------
 
 ## complete 完成、填寫表格
 complete明確目標、任務要完成，表單需要填寫。
@@ -241,10 +274,9 @@ complete明確目標、任務要完成，表單需要填寫。
   - work 在這裡當作名詞，意思是「工作、作業、手頭上的任務」
 - Please complete the application form.（請填妥／完成這份申請表格。）
 
+-------------------
 
-
-
-## agree to V 同意去做某件事
+## agree to V (同意去做某件事)
 - We agreed not to use our phones. 我們同意不要使用我們的手機
 - We agreed to meet at 8 PM.（我們約好晚上八點見面。）
 - She agreed to help me.（她答應幫我。）
@@ -252,10 +284,10 @@ complete明確目標、任務要完成，表單需要填寫。
 - We agreed not to use our phones during this trip, remember?
 - What are you doing? We agreed not to use our phones.
 
-## server 服務生
-- Do you want to be a server?你想要做一个服务员吗？
-- was your friend a server too?你的朋友以前也是一个服务员吗？
+## agree with 人 (同意某人)
 
+
+----------------------------
 ## worker 員工
 - Our grandparents were't hotel workers.我们的祖父母以前不是酒店员工。
 - was your younger sister a hotel worker?你的妹妹以前是一个酒店员工吗？

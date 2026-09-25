@@ -29,7 +29,7 @@ dishes，要為複數加es，因為不可能只洗一個盤子。
 
 在這裡，**`dish`** 當作可數名詞，意思是「一道菜」、「一盤料理」。
 
-- a chicken dish 一道雞肉料理，chicken 是雞肉（食材)
+- a chicken dish 一道雞肉料理
 * a main dish（主菜）
 * a signature dish（招牌菜）
 

@@ -221,6 +221,10 @@ come 後面可以直接接形容詞，用來描述主體「以什麼狀態出場
 ## come with + 名詞 (包含/附贈/附帶)
 專門用來形容「某個東西本來就是另一個東西的『固定標配』或『內含物』」。
 
+- Tonight's special comes with soup and a salad.今晚的特餐包含湯和沙拉。
+- Does this steak come with fries?這客牛排包含薯條嗎？
+- Brunch comes with toast and a cup of yogurt.早午餐包含吐司和一杯酸奶。
+
 - The software comes with a user manual.（這套軟體附帶一本使用手冊。）
 - The software comes with a free trial period.（這套軟體附帶免費試用期。）
 - The laptop comes with 16GB of RAM.這台筆電提供／配備 16GB 的記憶體。

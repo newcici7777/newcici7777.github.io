@@ -3,8 +3,6 @@ title: 可數與不可數名詞
 date: 2026-07-28
 keywords: countable , uncountable
 ---
-
-
 ## 不可數名詞
 - **Is** there any water?（有水嗎？）
 - There **is** no tofu. 沒有豆腐。
@@ -26,6 +24,8 @@ keywords: countable , uncountable
 - We watched cartoon**s** yesterday morning.(卡通加s)我们昨天早上看了卡通片。
 - We need three **knives* and two spoon**s**.
 
+--------------------
+
 ## Cake Pizza candy 可為可數/不可數
 - No, this **isn't** cake.這不是蛋糕嗎？
 - How **much** cake **is** there?（有多少蛋糕？）
@@ -43,14 +43,17 @@ keywords: countable , uncountable
 - There **are** three cand**ies** on the table.桌上有三顆糖果
   - 一顆一顆獨立包裝的糖果時，它就是可數的
 
+-------------------
+
 ## 不可數當作可數
-- I would like three beers.我想要三瓶啤酒。
-- five pizzas.五个比萨
+- I would like three beer**s**.我想要三瓶啤酒。
+- five pizza**s**.五个比萨
 - These fruit**s** aren't fresh!They're very old! 這些水果放很久了（過期了)
 
+-----------------------
 
 ## 不可數名詞 + 容器單位
-前面的數字超過 1，這個單位名詞就一定要變成複數形，也就是在後面加上 -s。
+> 前面的數字超過 1，這個單位名詞就一定要變成複數形，也就是在後面加上**S**。
 - A gram of sugar.一公克糖
 - Two gram**s** of peper
 - A cup of tea.一杯茶，
@@ -60,31 +63,65 @@ keywords: countable , uncountable
 - How many grams of sugar are in this snack? （這個零食裡有多少公克的糖？）
 - we have a bag of rice and a bottle of wine. We don't have any butter. 
 
+--------------------
+
 ## 容器單位 影嚮動詞「單複數」
-- This bag of potatoes is very heavy. 這袋馬鈴薯很重
+- This **bag** of potato**es** **is** very heavy. 這袋馬鈴薯很重
   - Be 動詞單複數的主角，不是後面的 potatoes，而是前面的 This bag（這袋）
   - 袋子「裡面裝的」是好幾顆馬鈴薯（potatoes），但你真正的主詞是「袋子（bag）」本身。
 一個袋子 → 它是單數。
-- This box of cookies **is** on the table.這箱餅乾在桌上
+- This **box** of cookie**s** **is** on the table.這箱餅乾在桌上
 
-## pair of + 單數動詞
-句子的真正主詞是計量單位 pair（一雙）。
-- Is this pair of glasses thirty dollars?
+-----------------------
+
+## a pair of + 名詞S (一對)
+> 句子的真正主詞是計量單位 a pair of（一雙），of後面的名詞要加上S。
+- **Is** this pair of glass**es** thirty dollars?
 - Is that pair of shoes thirty dollars?
 （那一雙鞋是三十美元嗎？）
-- How much is that pair of shoes?（那一雙鞋多少錢？）
-- My friend needs a pair!
-- Is this pair of glasses thirty dollars? 这副眼镜是三十美元吗？
-- I have a pair of leather sneakers.我有一雙皮革運動鞋
+- How much **is** that pair of shoe**s**?（那一雙鞋多少錢？）
+- My friend needs **a pair**!
+  - a pair 當代名詞代替前面提過的，後面不用加of。
+- **Is** this pair of glass**es** thirty dollars? 这副眼镜是三十美元吗？
+- I have a pair of leather sneaker**s**.我有一雙皮革運動鞋
+- This pair of shoe**s** **is** dirty.（這雙鞋子很髒。）
+- Put this pair of short**s**. 穿上短褲
 
-如果拿掉pair of，就要用複數動詞
-- Are these glasses thirty dollars?
+## 拿掉pair of，就要用複數動詞
+- **Are** these glass**es** thirty dollar**s**?
+- These short**s** **are** too small.（這件短褲太小了。）
 
-## How many + 可數量詞
+## a pair of 褲子S
+像是褲子（pants）、短褲（shorts）、牛仔褲（jeans）、剪刀（scissors）這類「左右兩邊對稱、有兩個管狀結構」的衣物或工具，在英文文法中天生就是複數形，後面一定要加 -s。
+
+所以當你要說「一件短褲」時，英文習慣說 
+- a pair of shorts（一件短褲）
+- a pair of pants（一條褲子）
+
+
+## a set of (一串、一套)
+set 當名詞時，意思是「一套、一組」。  
+英文常常會用「計量單位名詞 + of」來表達一整組的東西，就像中文會說「一組沙發」。
+
+a set of（一串／一套），是因為鑰匙（keys）通常不是單獨存在的一支，而是好幾支串在一起的。
+
+- There is a set of key**s** on the table. 桌子上有串鑰匙
+
+## 其它量詞
+- A deck of card**s**（一副撲克牌）
+- A bunch of flower**s**（一束花）
+
+
+---------------------------
+
+## How many + 量詞S
+遇到many，容器單位(量詞)都要加S，因為容器單位是可以數的，是可數名詞。
 - How **many** bottle**s** of **milk** do we have? I need a bottle of milk.
   - 量詞bottle加s，many是跟著「可數」量詞
-- Where **are those** cup**s**? 那些杯子在那裡？ cup是可數量詞，在這是多個杯子，要加s
+- Where **are those** cup**s**? 那些杯子在那裡？ 
+  - cup是可數量詞，在這是多個杯子，要加s
 
+--------------------------
 
 ## 一片一片 slices Pieces
 - Pizza（披薩）
@@ -92,165 +129,74 @@ keywords: countable , uncountable
 - Bread（吐司 / 切片麵包）
 - Watermelon（切片西瓜）
 
-slices
-- How many slices of pizza did you take?你拿了幾片披薩？
-  - Just some slices.就幾片啦。
+### slice**s** 量詞與代名詞
+> 當a slice of當量詞，後面會有名詞。<br>
+- a slice of cake.一片蛋糕
+- tow slice**s** of cake. 二片蛋糕，cake是不可數，cake後面不加s。
+
+> 當a slice當代名詞，後面沒有of，代表前面提過的蛋糕
+- I need a slice.我要一片
+
+例句:
+- How many slice**s** of pizza did you take?你拿了幾片披薩？(量詞)
+  - Just some slice**s**.就幾片啦。(代名詞)
 - Did you finish the whole pizza?你把整大個披薩都吃完喔？
-  - No, I only ate a few slices.沒有啦，我只吃了幾片。
+  - No, I only ate a few slice**s**.沒有啦，我只吃了幾片。(代名詞)
 
-Pieces（塊 / 片）
+### Pieces（塊 / 片）
 - Do you want some cake?要吃蛋糕嗎？
-  - Yeah, give me two pieces.好啊，給我兩塊。
+  - Yeah, give me two piece**s**.好啊，給我兩塊。(代名詞)
+- That boy is having a piece of cake right now.那个男孩现在正在吃
+一块蛋糕。(量詞)
+- ten piece**s** of pizza.十片比萨(量詞)
 
+------------------------
 
 ## 容器單位 + 不可數名詞
-
-**數字** + **容器單位** + of + **內容物**的結構。
-* Twelve bottles of water(12 瓶水)
-* Twelve cups of coffee(12 杯咖啡)
+> 只有1公克、1公斤，量詞(容器單位:公克、公斤)就不用加S。
 - a kilogram of salt.一公斤盐
 - a gram of sugar.一克糖
-- ten pieces of pizza.十片比萨
-- Two grams of pepper.两克胡椒粉
+- Can have a piece of fruit?我可以要一片水果吗？
 
+
+> 數字 + 容器單位**S** + of + 內容物(不可數名詞)
+* Twelve bottle**s** of water(12 瓶水)
+* Twelve cup**s** of coffee(12 杯咖啡)
+- Two gram**s** of pepper.两克胡椒粉
+
+例句:
 - There are twelve bottle**s** of water in the fridge.(冰箱裡有 12 瓶水。)
 * I bought four bag**s** of rice at the store.(我在店裡買了四袋米。)
-- Dad had three pieces of fish.
-- Can have a piece of fruit?我可以要一片水果吗？
+- Dad had three piece**s** of fish.
 - Can I get another piece of chocolate? I love it!我可以再要一块巧克力吗？我爱巧克力！
-- We need two kilograms of sugar.我們需要二公斤糖
-- Why did you buy fifty kilograms of potatoes?你为什么买了五十公斤土豆？
-- That boy is having a piece of cake right now.那个男孩现在正在吃
-一块蛋糕。
+- We need two kilogram**s** of sugar.我們需要二公斤糖
+- Why did you buy fifty kilogram**s** of potatoes?你为什么买了五十公斤土豆？
 
-### 容器單位前面沒有數字，代表「多個」
+----------------------------
+
+## 容器單位前面沒有數字，代表「多個」
 * Cup**s** of coffee(杯裝咖啡) → 多個杯子。
 * Bag**s** of cracker**s**(袋裝餅乾) → 多個袋子。
 * Box**es** of cookie**s**(盒裝餅乾) → 多個盒子。
 
-- There is some coffee in that bag.在那个袋子里有一些咖啡。
-- This bag of potatoes is very heavy.这袋土豆非常重。
-- Could you get a bag of grapes at the grocery store?你能在杂货店买一袋葡萄吗？
+例句:
+- This bag of potato**es** is very heavy.这袋土豆非常重。
+- Could you get a bag of grape**s** at the grocery store?你能在杂货店买一袋葡萄吗？
+
+-------------------------------
 
 ## 容器單位 + 可數名詞**S**
 不是只有不可數名詞可以用量詞，可數名詞也可以
 
-**數字** + **容器單位(複數)** + of + 可數名詞加S
-* Twelve ba**s** of chip**s**(12 包洋芋片)
+> 數字 + 容器單位**S** + of + 內容物(可數名詞**S**)
 
+* Twelve ba**s** of chip**s**(12 包洋芋片)
 - A **bag** of cracker**s** and a bag of rice.
 - We need two bag**s** of tomatoe**s**. 我们需要两袋番茄。
 * There are three bag**s** of chip**s** on the sofa.(沙發上有三包洋芋片。)
 - There are two bags of cracker**s** on the table.在桌子上有两袋饼千。
 
 -------------------------
-
-## 多個名詞組合
-當一個名詞用來修飾另一個名詞時，通常會直接把修飾詞放在前面（形成「名詞 ＋ 名詞」的複合結構）。
-
-- table reservation 桌子的預訂 = 訂位
-  - table 放在前面當形容詞
-- twelve water bottle**s** 12個水瓶，water當形容詞，修飾後面的名詞bottles
-  - Your water bottle is dirty.你的水瓶很脏。
-
-一個名詞拿來當作「形容詞」修飾另一個名詞時，前面的那個名詞**通常要用單數形**（即使我們可能有好幾張桌子要訂），所以要說 *table reservation*，而不是 table*s* reservation。
-
-* **hotel** room ➔ 飯店房間（*hotel* 是名詞修飾 *room*）
-* **coffee** cup ➔ 咖啡杯（*coffee* 是名詞修飾 *cup*）
-* **ticket** counter ➔ 售票櫃台（*ticket* 是名詞修飾 *counter*）
-
-
-當名詞前面加上另一個名詞（當作形容詞用，如 office use）或純形容詞（如 professional use）時，它們的作用是「限定這個『使用』的對象、範圍或性質」：
-- office use = 「辦公室用途」（限定是給辦公用的，不能拿來當臥室或倉庫）。
-- professional use = 「專業用途」（限定是給專業人士用的，不是業餘玩具）。
-
-
-
-類似的常見組合：
-- rock music（搖滾樂 —— 關於 rock 的音樂）
-- ice hockey（冰球 —— 在冰上打的曲棍球）
-- football（美式足球 —— 用腳踢的球）
-- a shopping cart（購物車）
-- a shopping bag（購物袋
-
-
-```
-【修飾語（功能／種類）】+【核心名詞】 
-```
-核心原則：「核心名詞（被修飾的東西）擺在最後面，越靠近後面的詞越核心；前面的詞是用來『縮小範圍』的（從大到小／從廣到精確）。」
-
-- beginner level history class
-- high school computer science teacher
-
-用「of」倒回來想：
-- 一杯裝咖啡的杯子 → a cup of coffee → 倒過來就是 coffee cup。
-- 一所高中的老師 → a teacher at a high school → high school teacher。
-
-------------------------
-
-## 複合名詞是不可數名詞
-只要是符合兩個特徵的食物名詞，在英文裡幾乎都是**不可數名詞**：
-
-**複合名詞的特性**：它是由 `fried`（形容詞：炒過的）+ `rice`（名詞：米飯）組合而成的複合名詞。
-
-**`fried rice`（炒飯）在英文中是「不可數名詞」**。
-
-你**不能**說 *a fried rice* 或 *two fried rices*。
-
-* **一盤炒飯**：
-* **`A plate of fried rice`**
-* 或者直接說 **`some fried rice`** / **`fried rice`**
-
-* **兩盤炒飯**：
-* **`Two plates of fried rice`**
-* ❌ *Two fried rices* （這絕對是錯誤的！）
-
-* **`fried noodles`**（炒麵）：雖然麵條看起來是一條一條的，但在英文概念中也是視為不可數或集合名詞，通常說 *a plate of fried noodles*。
-
-如果要算數量，全部都要靠**計量單位**（例如：*a plate of, a bowl of, a cup of*）來幫忙！
-
-1. **`Fried rice`**（炒飯）
-* ❌ *two fried rices*
-* ⭕ **`two plates of fried rice`**（兩盤炒飯）
-
-
-2. **`Fried noodles`**（炒麵）
-* ❌ *three fried noodles*
-* ⭕ **`three plates of fried noodles`**（三盤炒麵）
-
-
-3. **`Ice cream`**（冰淇淋）
-* 💡 *說明：當作整體的物質時是不可數的。*
-* ❌ *two ice creams*（嚴格來說）
-* ⭕ **`two scoops of ice cream`**（兩球冰淇淋）或 **`two ice cream cones`**（兩個甜筒）
-
-
-4. **`Fast food`**（速食）
-* 💡 *說明：這是一個超級經典的不可數複合名詞（fast + food），代表一類食物的總稱。*
-* ❌ *many fast foods*
-* ⭕ **`a lot of fast food`**（很多速食）
-
-
-5. **`Junk food`**（垃圾食物）
-* ⭕ **`eating too much junk food`**（吃太多垃圾食物 ➔ 不可數，不用加 s）
-
-
-6. **`Seafood`**（海鮮）
-* ⭕ **`I love seafood.`**（我愛海鮮 ➔ 海鮮總稱，不可數）
-
-
-* **可數的東西**（漢堡、三明治、蘋果）➔ *a burger, two burgers*
-* **不可數 / 複合名詞**（炒飯、炒麵、冰淇淋、湯）➔ 加上容器或單位，例如：***a plate of...*** 或 ***a bowl of...***，點餐就萬無一失囉！
-
-
-### 在餐廳怎麼點餐？
-
-* *“Can I get **two bowls of beef noodle soup**, please?”*（可以給我兩碗牛肉麵嗎？）
-* *“Can I have **some fried noodles**, please?”*（可以給我一些炒麵嗎？）
-
-* *“Yes, I’ll have **a plate of fried rice** and **a cup of tea**.”*（好，我要一份炒飯和一杯茶。）
-
--------------------
 
 ## furniture 不可數
 `furniture`（家具）是一個總稱（統稱）

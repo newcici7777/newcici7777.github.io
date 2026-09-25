@@ -3,7 +3,7 @@ title: 最近 現在進行式 近期未來計畫
 date: 2026-08-09
 keywords: be going to
 ---
-## 進行式
+## 現在進行式(正在做什麼)
 - Bea is sitting on a bench in the park.
 - Zari is babysitting her neighbor,
 - Who are you writing to?
@@ -11,6 +11,16 @@ keywords: be going to
 - Our company is having a meeting right now.我们的公司现在正在开会。
 - Are you speaking to Anna right now?你玑在正在跟安娜说话吗？
 
+## 過去進行式(原本打算要做...什麼)
+```
+was/were + going to + 原形動詞
+```
+- He was going to have toast, but there's no jam .他原本打算吃吐司，但沒有果醬了。
+- I was going to call you, but my phone ran out of battery.我原本打算打給你，但我手機沒電了。
+- We were going to go to the beach, but it started raining.我們原本打算去海灘的，但開始下雨了。
+- She was going to buy the dress, but it was too expensive.她原本打算買那件洋裝的，但太貴了。
+
+--------------------
 
 ## 此時此刻、眼前正在展現的狀態
 強調「此時此刻、眼前正在展現的狀態與努力」
@@ -18,6 +28,7 @@ keywords: be going to
 - You're doing great!（你現在表現得很棒！）
 - You're working so hard!（你現在工作好努力喔！）
 
+---------------------
 
 ## soon
 - 詞性： 時間副詞（Adverb）
@@ -30,6 +41,7 @@ keywords: be going to
 - 意思是「不久的將來」，所以它經常跟未來式（will）或現在進行式搭檔出現。
 
 ## Do you want to + 動詞 ... + soon?
+現在式 + soon = 未來式
 - Do you want to have dinner again soon?改天（不久後）一起吃晚餐
   - 現在式
   - want 為當下的意願／計畫 : 你現在心裡有沒有這個意願／想不想...？
@@ -37,6 +49,22 @@ keywords: be going to
 - Do you want to meet up soon?（你這陣子想找個時間碰面嗎？）
 - Do you want to watch a movie soon?（你最近想去看電影嗎？）
 
+
+--------------------------
+
+## 確定的近期未來計畫
+soon（不久、快要）： 這個字明確指出這件事是將來才會發生
+
+只要看到 soon（不久）、tomorrow（明天）、tonight（今晚）、in two hours（兩小時後），它就等於幫你按了免責聲明：這件事還沒發生，是接下來要做的。
+
+- Ben is driving to Miami soon. 本（Ben）不久後就要開車去邁阿密了。
+- Ben is driving to Miami **tomorrow**.（明天要開車去 → 計劃）
+- Our flight is arriving in two hours.班機在2小時後抵達
+- We're getting on this train soon. 我們很快就要上這班火車了。
+- I am leaving tomorrow.（我明天要離開 → 行程已定。）
+- We are meeting them tonight.（我們今晚要跟他們見面 → 約好了。）
+
+----------------------
 
 ## be going to + 地點 (馬上就要出發)
 這裡的be going是現在進行式，意思是「正在出發去」
@@ -52,17 +80,7 @@ keywords: be going to
 - I'm not going to the dance party tonight.
 - I'm going to a museum with my granddaughter now.
 
-## 確定的近期未來計畫
-soon（不久、快要）： 這個字明確指出這件事是將來才會發生
-
-只要看到 soon（不久）、tomorrow（明天）、tonight（今晚）、in two hours（兩小時後），它就等於幫你按了免責聲明：這件事還沒發生，是接下來要做的。
-
-- Ben is driving to Miami soon. 本（Ben）不久後就要開車去邁阿密了。
-- Ben is driving to Miami **tomorrow**.（明天要開車去 → 計劃）
-- Our flight is arriving in two hours.班機在2小時後抵達
-- We're getting on this train soon. 我們很快就要上這班火車了。
-- I am leaving tomorrow.（我明天要離開 → 行程已定。）
-- We are meeting them tonight.（我們今晚要跟他們見面 → 約好了。）
+------------------------------
 
 ## 最近這段期間
 - What classes are you taking now?(你最近上什麼課)
