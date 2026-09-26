@@ -20,8 +20,11 @@ Between（在...之間）—— 它是「介系詞」
 
 ## between 時間 and 時間
 - I'll be at home between six o'clock and seven o'clock.(我在六点到七点之间会在家。)
+
+## between meetingS, classes
 - We will eat lunch between meetings.我們在會議之間的休息時間吃午餐。
   - meeting**S** 複數S代表很多個會議的「間隔」時間
+- Our school design keeps everything close, so students don't spend too much time **between classes**.我們學校的設計讓所有東西都很近，所以學生在各個班級之間不會花太多時間。
 
 ## between 東西 and 東西
 - the difference between paper and plastic.纸和塑料之间的不同

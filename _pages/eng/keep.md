@@ -3,22 +3,59 @@ title: keep
 date: 2026-09-08
 keywords: English, keep
 ---
-## keep + 名詞
+## keep + 名詞 (保留，留下)
 - You can keep this ring. 你可以保留这戒指
 - You can keep that black suit.你可以保留那套黑色的西装。
 - Grandpa kept that old suit for thirty
 years.爷爷保留那套旧西装二十年了。
 
+## keep + 名詞 (繼續)
+- Do you think you'll keep the job after school starts again? 中文： 你覺得開學後你會繼續保留這份工作嗎？
+
+## keep + 名詞 (保住)
+- She worked hard to keep her job during the difficult time.她在困難時期努力保住她的工作。
+
+## keep + 名詞 (保守)
+- Can you keep a secret? I have something to tell you.你能保守祕密嗎？我有事要告訴你。
+
+## keep + 名詞 (保持/維持)
+- Let's keep in touch after graduation.畢業後我們要保持聯絡。
+- I'm trying to keep my focus during the long meeting.我正試圖在冗長的會議中保持專注。
+- keep a diary / keep a journal（持續寫日記）
+  - She likes to keep a diary to record her daily life.她喜歡持續寫日記來記錄她的日常生活。
+
+
+## keep + 名詞 + 地方副詞 (放置在某處)
+- She always keeps a notebook in her bag.她總是隨身在包包裡放一本筆記本（保持擁有一本筆記本）。
+- Always keep your passport in a safe place.
+隨時把你的護照放在安全的地方。
+
+
 ## keep + 東西 + 形容詞 （讓某事/某物保持某狀態）
-- Keep the room clean.（保持房間乾淨 —— 需要主動去打掃、維護它）
-* Regular exercise **keeps your body healthy**.（規律運動能**保持身體健康**。）
-- Our school design keeps everything close. 我們學校的設計是使所有東西都保持在很近的距離
+- Keep the room clean.（保持房間乾淨 ）
+- Our school design keeps everything close, so students don't spend too much time between classes.我們學校的設計讓所有東西都很近，所以學生在各個班級之間不會花太多時間。
+- Please keep your voice down in the library.請在圖書館裡保持小聲（降低你的音量）。
+
+## keep + 東西 + 形容詞 （維持身體或心靈）
+- Drinking enough water helps keep your skin healthy.多喝水有助於保持你的皮膚健康。
+- Regular exercise helps keep your body fit.（規律運動有助於保持身材健美。）
+- He tries to keep a positive attitude despite the challenges.（儘管面臨挑戰，他仍試圖保持積極的心態。）
+
+## keep 人/物 (讓某人某物在某種狀態)
+- Can you keep the dog outside for a few minutes?你可以把狗留在外面幾分鐘嗎？(讓狗在外面**的狀態**)
+
 
 ## keep + Ving (持續做動作)
 不斷地做、一直持續、或者主動去維持。
 - Keep walking.
 * Please keep trying.（請繼續嘗試 —— 指的是「持續不斷地」去做這個動作。）
+  - It's a difficult puzzle, but let's keep trying. 這是一個困難的拼圖，但我們繼續試試看吧。
 - Keep walking on the paths.「一直走」在小徑上（強調動作要持續進行，不要停下來）。
+- Don't give up now; you need to keep going.現在別放棄，你需要繼續堅持下去。
+- If you want to speak English fluently, you must keep practicing.
+如果你想把英語說流利，你必須持續練習。
+
+
 
 --------------------------
 

@@ -13,6 +13,13 @@ keywords: english, nature
 - The air **in** the desert is very dry.在沙漠里的空气菲常千燥。
 - The air is colder at the top of a hill.在山丘顶上的空气更冷。
 
+-----------------
+
+## skies 複數
+- Blue skies and sunshine!（藍天與陽光！）
+- We had clear skies all week.（我們整個禮拜都遇到晴朗的好天氣。）
+- Stormy skies（暴風雨的天空 / 陰暗的天空）
+
 ----------------------
 
 ## 四季

@@ -233,6 +233,8 @@ get 形容詞
 ## get to 原形動詞 (有機會)
 - I get to see my friends at work.我在工作時得以見到我的朋友。
 - Do you get to eat the food there, too?你在那裡也可以吃到食物嗎？
+- You get to eat in the dining hall and have many activities.你們（有機會）在餐廳吃飯，還有很多活動可以享受。
+
 - We get to leave work early today! 我們今天可以（有機會）提早下班！
 - Guess what? I get to meet my favorite singer tomorrow! 你猜怎樣？我明天有機會見到我最愛的歌手！
 - As a student, I get to use the library for free.身為學生，我得以免費使用圖書館。

@@ -1,5 +1,5 @@
 ---
-title: the same
+title: the same(形容詞)
 date: 2026-08-27
 keywords: english,the same
 ---
@@ -10,6 +10,11 @@ class 前面有形容詞，就會有the、a。
 
 ## at the same time 同一時間
 - Does Tom eat dinner at the same time every day?
+- Do they have a meeting at the same time every Thursday?他们每周四都在同一时间开会吗？
+- Cool! Working and saving money at the same time? That's smart.
+酷！一邊工作一邊存錢？這真聰明。
+
+
 
 --------------------------
 

@@ -31,8 +31,10 @@ serve + 食物 / 餐點
 
 ## serves(動) 供應/上菜
 - Emily serves food at her job.艾蜜莉（Emily）在她的工作崗位上供應食物。
-
-
+- I get to see my friends, and I love serving drinks like lemonade.我得以見到我的朋友，而且我很喜歡供應像檸檬汁這樣的飲料。
+  - serve 在這裡的意思就是「端上、服務、供應」（餐點或飲料）
+- I check the students' ID cards and help serve food.我檢查學生的身分證件並幫忙端菜/供應食物。
+  
 ## Serve(動) + 副詞
 - Serve immediately.（請立刻端上桌享用。）
 

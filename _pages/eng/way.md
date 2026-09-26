@@ -32,6 +32,7 @@ keywords: English, way
 - Can you show me the way to solve this problem? （你可以教我解決這個問題的方法嗎？）
 
 ## a great way 好方法
+- because it's a great way to save money for college.因為這是一個為大學存錢的好方法。
 - I think lockers are a great way to stay organized.我覺得置物櫃是保持井然有序的好方法。
 - Walking is a great way to stay healthy.（走路是保持健康的好方法。）
 - Reading books is a great way to learn new things.（讀書是學習新事物的好方法。）

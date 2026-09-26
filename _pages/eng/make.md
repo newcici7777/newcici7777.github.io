@@ -212,8 +212,6 @@ with片語，當作形容詞，後位修飾受詞。
   - with toothpaste included 扮演的角色是受詞補語，用來補充說明前面的名詞（hotels）變成什麼狀態。
 
 --------------------------------
-
-
 ## make a mess 弄得一團亂/搞砸
 - The kids are making a mess in the living room. （小孩們正在客廳製造髒亂／把客廳玩得亂七八糟。）
 - Who made this mess? （是誰把這裡弄得這麼亂的？）
@@ -222,3 +220,7 @@ with片語，當作形容詞，後位修飾受詞。
 
 ## make a mess of [某事]
 - make a mess of the kitchen 把廚房搞得一團糟。
+
+-----------------------------
+## make new friends 交新朋友
+- I'm learning a lot and making new friends.

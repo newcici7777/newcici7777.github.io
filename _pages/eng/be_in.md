@@ -1,5 +1,5 @@
 ---
-title: be in (狀態) 
+title: be (狀態) 
 date: 2026-08-09
 keywords: English
 ---
@@ -83,3 +83,74 @@ prison 這邊是抽象名詞，不可加a 跟 the
   - He is in love. 戀愛中
   - Enzo is in love with me.(Enzo愛上我了)
 
+----------------------
+## busy 忙
+
+### be busy(形容詞) 忙
+
+- **As** you are busy, I won't bother you anymore.
+（**既然/因為**你很忙，我就不打擾你了。）
+- I'll be too busy the day after tomorrow.
+- I'm sorry. Dr. Wang is busy today, but she's available tomorrow.
+- He is busy.
+- The last week has been extremely busy for me. （過去這一個禮拜對我來說超級忙碌。）
+
+### is busy with 名詞 (忙於某事) 
+> with 的中文意思是「忙於」
+
+- She is busy with her work.（她忙於她的工作。）
+- I am busy with dinner.（我正忙著弄晚餐。）
+
+### is busy Ving (忙於某事) 
+> 如果後面要接「動詞」，則**不能用 with**，要改用 -ing
+  
+- He is busy studying.
+- ❌ He is busy ~~with~~ studying.
+
+---------------------
+## be 狀態
+
+### 1. 科技與網路
+- be online 上線
+  - Be online at two thirty.兩點半要在線上喔
+- be offline 不要上網
+  - Be offline for a while.（離線一陣子吧／暫時不要上網。）
+  - I will be offline this weekend.我這週末會不上網。
+- be offline (未來或約定時間離線)
+  - I need to be offline at two thirty.（我兩點半需要離線／下線。）
+- be offline 狀態是離線
+  - She is offline right now.她現在不在線上，離線。表達狀態
+- be off 下線
+  - I have to be off at two thirty.我兩點半得下線/離開了。
+- be off 下班/離開
+  - I'm off work at five.（我五點下班。）
+  - I must be off now."（我現在得走/離開了。)
+- be logged in / be logged out：已登入 / 已登出(被動式)
+  - Make sure you are logged in before the meeting.（開會前確保你已經登入了。）
+- be connected / be disconnected：連線中 / 斷線、未連線(被動式)
+  - My internet is disconnected.（我的網路斷線了。）
+- be muted / be unmuted：已靜音 / 解除靜音(被動式)
+  - Wait, your mic is muted.（等一下，你的麥克風靜音了。）
+
+### 2. 日常忙碌與空閒狀態 (Availability)
+
+- be available / be unavailable：有空（可聯繫的） / 不方便、不在
+  - He is unavailable right now; please leave a message.（他現在不方便接聽，請留言。）
+- be ready：準備好了
+  - Are you ready to go?（你準備好出門了嗎？）
+
+### 3. 身體與心理狀態 (Physical & Mental States)
+- be tired / be exhausted：很累 / 精疲力竭
+  - I am exhausted after a long day.（漫長的一天過後我累垮了。）
+- be awake / be asleep：清醒的 / 睡著的
+  - Is the baby asleep yet?（寶寶睡著了嗎？）
+- be sick / be well：生病 / 身體健康、康復
+  - She is sick today, so she won't come.（她今天生病，所以不來了。）
+- be poor
+  - Is her family poor?
+  
+### 4. 位置與動向狀態 (Location)
+- be home / be back：在家 / 回到家了
+  - I am home now.（我現在到家了。）
+- be away：不在（座位上/辦公室/家裡）
+  - He is away from his desk at the moment.（他現在不在座位上。）

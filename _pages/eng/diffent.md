@@ -19,7 +19,6 @@ different:這跟那不一樣、有區別。
 - a different flavor 另外一種不同的口味
 - She moved to **a** different city.（她搬去了一個不同的城市——指搬去「某個新城市」，單數一個。）
 - Let's try **a** different restaurant.（我們去試試另一個的餐廳吧——單數一家。）
-- Can we meet on a different day?（我們可以改在另一天見面嗎——單數一天。）
 - I need a different approach to solve this problem.（我需要另一個的方法來解決這個問題——單數一個方法。）
 - Can I try a different flavor?（我可以試試另一個的口味嗎？——單數一種口味。）
 - I bought a different book.（我買了另一本書——不同於原本那本的一本書。）

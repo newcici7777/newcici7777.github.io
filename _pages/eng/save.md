@@ -32,6 +32,30 @@ save 常與 for 搭配，意思是「為誰保留」、「為了什麼東西而�
 * *tips for saving money*（存錢的方法）
 - He is **saving for** a new laptop.（他正在為買一台新筆電存錢。）
 
+## save for（為...存錢／保留）
+* He is **saving for** a new laptop.
+（他正在為買一台新筆電**存錢**。）
+  - 為了**筆電**而**存錢**
+
+## save on 某物 (省下某物的費用)
+on有針對、關於，針對某事節省（金錢）
+
+`on` 用來標明你把「省錢」這個動作，落實在哪個項目**上**。
+
+* **Save on energy**（節省能源／省電費）
+* **Save on groceries**（節省雜貨／買菜開銷）
+* **Save on gas**（省油錢）
+
+例句:
+- It's delicious and I save money on lunch, which is awesome.
+東西很好吃，而且我在午餐費上省了一筆，這真的超讚的！
+
+
+### 如果不加 `on`，變成「拯救」
+
+直接說 *save lunch*，意思會完全變成「拯救午餐」，一定要加上介系詞 **`on`**，才能精準表達「在午餐花費上省到錢」。
+
+
 ### saving**S**(名詞) 存款積蓄
 savings,作為名詞要加S
 

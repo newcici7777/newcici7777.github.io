@@ -98,7 +98,47 @@ buffet 在英文中確實有這兩種主要的含意，而且它們息息相關�
 - Chef's special（主廚特餐，不限定特定時間）。
 
 ----------------
+## The dining hall 大學的學校食堂
+所有的 dining hall（學校裡的）基本上都具備 cafeteria 的自助形式，但 dining hall 聽起來更有「整個校園群體共同用餐的大型食堂」的專屬感。
 
+- Freshmen are required to sign up for a meal plan at the main dining hall.
+大一新生必須在主要的大學食堂登記購買餐費方案。
+- The university dining hall was decorated festively for the holiday season.
+為了假期季節，大學食堂被裝飾得充滿節慶氣氛。
+- Students gathered in the dining hall to listen to the dean's announcement.
+學生們聚集在學生食堂裡，聆聽院長的佈告宣導。
+- Working part-time at the dining hall is a great way to meet people on campus.
+在學生食堂打工是結識校園裡新朋友的好方法。
+- The dining hall closes at eight o'clock every evening after dinner service.
+晚餐供應結束後，學生館的食堂會在每天晚上八點關閉。
+
+-----------------------------
+
+## Cafeteria（自助餐廳／咖啡廳）
+不只學校有，醫院、大型辦公大樓、博物館甚至百貨公司裡那種「自己拿餐盤挑選食物、排隊結帳」的自助餐廳都可以叫 cafeteria。
+
+cafeteria 則是一個更通用的詞，只要是走自助取餐風格的平價餐廳，都可以這樣叫。
+
+重點在於「自助式（self-service）」。大家拿著托盤（tray）沿著餐檯選菜，最後到收銀台付錢。
+
+- Let's meet at the cafeteria for lunch at noon.
+我們中午在員工餐廳吃午餐碰面吧。
+- The line in the school cafeteria is always long during the lunch break.
+學校餐廳的隊伍在午休時間總是排得很長。
+- We grabbed a sandwich and found a table in the cafeteria.
+我們拿了一個三明治，然後在自助餐廳裡找到了一張桌子。
+- The office building has a great cafeteria on the ground floor.
+這棟辦公大樓的一樓有一個很棒的員工餐廳。
+- The hospital cafeteria serves fresh salads and hot coffee twenty-four hours a day.
+這間醫院的自助餐廳提供新鮮沙拉和熱咖啡，二十四小時營業。
+- Students can choose from a variety of healthy meals at the campus cafeteria.
+學生們可以在校園自助餐廳裡挑選各種健康的餐點。
+- I usually grab a quick snack at the office cafeteria when I work late.
+當我加班到很晚時，我通常會在辦公室的員工餐廳簡單吃個點心。
+- The museum cafeteria offers a wonderful view of the outdoor garden.
+博物館的自助餐廳擁有戶外花園的絕佳視野。
+- Please remember to return your tray to the counter after eating in the cafeteria.
+在自助餐廳用餐後，請記得把你的餐盤拿到櫃檯歸還。
 
 
 

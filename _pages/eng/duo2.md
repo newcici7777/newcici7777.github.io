@@ -14,6 +14,7 @@ keywords: 其它
 - 複數： adults（多個成年人／大人们）
   - Tickets are cheaper for children than for adults.（小孩的票比大人的便宜。）
 
+----------------------
 
 ## invite 人 to 目的地
 - They are not going to invite us to the party(他们不打算邀请我们参加舞会。)
@@ -22,43 +23,7 @@ keywords: 其它
 - I want to invite one hundred people to my party.
 - did you invite me to go fishing because you want to talk more?
 
-
-## open close closed(形容詞)
-### open 動詞
-- The museum opened at five last weekend.博物馆上周末在五点开门的。
-- That new restaurant opens tonight!(那家新餐厅今晚开业！)
-- What time does the store open every day?
-- The shoe store opens at 10 a.m. every day.
-- What time does the bookstore open every morning?
-
-### close 動詞
-- Does the shoe store close at seven every day?鞋店每天都在七点关门吗？
-- What time does this restaurant close every weekend?这个餐厅每个周末都几点关门？
-- That famous restaurant closes at 8 p.m.那家有名的餐厅晚上八点关门。
-- That store closed early yesterday.那个商店昨天提早关门了。
-- The bookstore closed at half past five.书店在五点半关门的。
-
-
-
-### open 形容詞 closed 形容詞
-- the book store is open.
-- Which restaurant is open?哪个餐厅开门？
-- The museum **is open** **from** ten o'clock **to** five o'clock **on** Saturday, but it **is closed** **on** Sunday.
-- Is the restaurant open?那家餐斤开门了吗？
-- The office will be closed on the fifteenth of January.办公室会在一月十五号关门。
-
-## its
-- That sheep is eating its food right now
-- That cow is eating its grass.
-- This sheep has a big head, but its
-eyes are very small.
-- Is your watch in its box ?(你的手表在它的盒子里吗？)
-
-
-## skies
-- Blue skies and sunshine!（藍天與陽光！）
-- We had clear skies all week.（我們整個禮拜都遇到晴朗的好天氣。）
-- Stormy skies（暴風雨的天空 / 陰暗的天空）
+----------------------------
 
 ## hall 走廊
 - Is there a restroom at the end of the hall ? 走廊盡頭有洗手間嗎？
@@ -79,6 +44,8 @@ hall 要表示「禮堂、大廳、展覽館」這種比較大型的室內空間
 - town hall（市政廳）
 - hotel hall（飯店大廳，通常也常說 lobby）
 
+---------------------------
+
 ## fall down 跌倒、往下倒塌
 - The boy ran too fast and fell down.（那男孩跑太快而跌倒了。）
 - The old tree fell down in the storm.（那棵老樹在暴風雨中倒了。）
@@ -97,30 +64,7 @@ fall off + 掉落的地方
 ## come off 剝落
 - The leather is coming off.皮革正在剝落
 
-
-
-
-## be poor
-- Is her family poor?
-
-
-
-
-## would like + 名詞 (想要)
-- I'd like a book, please.
-- I'd like a cup of tea!
-- Would you like a beer?你想要一瓶啤酒吗？
-  - 把不可數beer當成可數名詞，beer 前面有a
-
-## would like to 原形動詞 (想要做某事)
-- She would like to buy these clothes.她想要买这些衣服。
-- I would like to pay with cash.我想付现金。
-- Would you like to buy this dress?你想要买这条连衣裙吗？
-- Hi, I'd like to order one pizza!
-
-## I'd love to 我願意
-- I'd love to, but I can't.我愿意但是我不行
-- Sure, I'd love to.当然，我很愿意。
+----------------------
 
 ## an ad for 
 - We saw an ad for this clothes store.我们看到了一个这个服装店的广告。
@@ -128,9 +72,6 @@ fall off + 掉落的地方
 - I saw this ad yesterday.我昨天看到了这个
 广告。
 - an ad for this clothes store. 这个服装店的广告
-
-
-
 
 ---------------------------
 

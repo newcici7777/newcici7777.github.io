@@ -27,6 +27,8 @@ before 這個字永遠要貼著「後做的事(比較晚發生的那件事)」
 
 如果很不好記，把Before移到最前面，但後面要加上逗號。(比較符合中文的先後順序)
 - Before I ate dinner, I wash my hands.吃飯之前，要洗手。
+- Before we start, here are some cool words you'll want to know.
+在我们开始之前，这里有一些你可能会想知道的酷炫单字。
 
 ## before 連接詞 後位修飾名詞
 - His life before he moved to the United States was very different.（他在搬去美國之前的生活非常不一樣。）

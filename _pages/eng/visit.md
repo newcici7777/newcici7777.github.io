@@ -34,7 +34,7 @@ visit(名) to 地點/人
 
 -------------------------
 
-## pay a visit to 拜訪
+## pay a visit(名) to 拜訪
 ```
 pay a visit to + 人/地點
 ```
@@ -51,7 +51,7 @@ pay a visit to + 人/地點
 ## visit(動) 瀏覽網頁
 - I always visit that website.我总是访问那个网站。
 
-## visit(動) 去玩/參觀
+## visit(動) 去玩
 visit動詞後面**沒有to**地點
 ```
 visit + 地點
@@ -61,6 +61,10 @@ visit + 地點
 在英文中，visit除了單純的「拜訪（某人）」之外，更常用來表示「前往（某個地點/城市/國家）進行旅遊或觀光」。
 
 * We want to visit New York in January.我想要一月份去紐約玩。
+- Please drive on the left side of the road when visiting the UK.（去英國玩時，請開在道路的左側。）
+- We visited many exciting places in New York.(places複數)我们在纽约去了很多令人兴奋的地方。
+- We want to visit New York in January.我们想要在一月去纽约游览。
+
 
 - 正確（動詞）： We visited the museum.（我們參觀了博物館——沒有 to）
 - ❌錯誤（動詞）： We visited ~~to~~ the museum. visit動詞後面**沒有to**地點
@@ -68,7 +72,6 @@ visit + 地點
 ## visit訪問 與 visiting觀光
 - visiting + 地點: 四處造訪、觀光這個動態過程。
   - I hate visiting **a** crowded market.（我討厭逛那種擁擠的市場——任意一個**任何一個擁擠的市場**。）
-  - Please drive on the left side of the road when visiting the UK.（去英國玩時，請開在道路的左側。）
   - Riding these buses make visiting easy and fun.坐在巴士裡享受一段車程，讓觀光變的輕鬆又愉快
 - visit + 地點: 玩
   - They have both visited Japan before.（他們兩個人以前都去過日本。）
@@ -82,7 +85,7 @@ visit + 地點
 
 --------------------
 
-## visit(動詞) 參觀
+## visit(動詞) a 地點 (參觀)
 ```
 visit a 地點
 ```
@@ -92,8 +95,8 @@ museum 是可數的，當museum是第一次提到、或是泛指任何一間博�
   - I want to visit the National Palace Museum.
 - visit a gallery（參觀美術館）
 - visit a city（造訪某城市）
-- We visited many exciting places in New York.(places複數)我们在纽约去了很多令人兴奋的地方。
-- We want to visit New York in January.我们想要在一月去纽约游览。
+- I visited a junior high school and learned about how students use lockers.我參觀了一所國中，並了解學生們是如何使用置物櫃的。
+
 
 ------------------------
 

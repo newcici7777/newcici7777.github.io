@@ -23,6 +23,7 @@ at 在這裡就像是一個定位針，精準指出你是在「前一份工作�
 - at her job：強調她是在這個工作崗位／環境中執行任務。
   - Emily serves food at her job.艾蜜莉（Emily）在她的工作崗位上供應食物。
 
+
 -----------------------------
 
 ## I'm going to work(名詞). 我要去上班了。
@@ -60,7 +61,11 @@ at 在這裡就像是一個定位針，精準指出你是在「前一份工作�
 - He works at an American restaurant.他在一个美国餐厅
 工作。
 - work at **a** bank（在銀行上班）
+
+## work at the 
+
 - work at the same company（在同一家公司上班）
+- My part-time job at the dining hall.我在餐廳的兼職工作。
 
 ---------------------------
 
@@ -188,61 +193,6 @@ today.
   - She is at the office.人在辦公室這個地點。
 
 --------------------------
-
-## in a meeting 會議
-- in a meeting 會議可以「一場一場」的數，所以要加a
-  - She was in a meeting.(她當時在開一場會)
-- in meetings(mettings前面沒有the，用複數形容很忙)
-  - She was in meetings all morning.她整個上午都在開會
-
--------------------
-
-## meet 碰面
-- they want to meet us at the theater.
-- Do you want to meet at the big doors?
-- Duo will meet them at the library
-- Eddy meets his neighbor Vikram at the airport.
-- tomorrow you will meet your new baby brother! 
-- We met in Cambridge last weekend.我们上周末在剑桥
-见面了。
-- I met Anna in London last month.When did you meet her?
-
-## meet(動詞) 開會
-- Do you have daily meetings, or do you **meet** every week?你們是每天開會還是每週開會？
-- Do you **meet** every week?（你們每週開會嗎？）
-- Let's meet tomorrow.（我們明天開個會／碰個面吧。）
-- We meet on Mondays.（我們固定在星期一開會。）
-
-## have a meeting(名詞) 開會
-行程表裡（有會議），跟「行程表」相關的都用have。
-- Do you have daily meetings?（你們每天都有會議嗎？）
-- We won't have a meeting tomorrow morning.我们明天早上不会开会。
-
-
-## Hold a meeting(名) 開會
-- The manager will hold a meeting this afternoon.（經理今天下午會召開會議。）
-
-----------------------
-
-## have a discussion 討論
-- Excuse me, sir, are you having a discussion?不好意思，請問你們在討論嗎？
-  - have 是動詞（進行)
-
-## discuss 事 with 人
-discuss 後面直接接名詞，中間千萬不能加任何介系詞
-```
-discuss + [某事] + with + [某人]
-```
-- ❌ 錯誤用法：discuss with someone
-- 正確用法: discuss this with someone
-- ❌ 錯誤用法：discuss about the plan
-- 正確用法: discuss the plan
-
-例句:
-- Let's discuss **this information** with our boss.我們跟老闆討論一下這項資訊吧。
-- I need to discuss **this project** with my team.（我需要和我的團隊討論這個專案。）
-- Can we discuss **this** with him tomorrow?（我們明天可以跟他討論這件事嗎？）
-- She is discussing **the details** with the client.（她正在跟客戶討論細節。）
 
 -------------------------------
 

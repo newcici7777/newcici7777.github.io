@@ -31,27 +31,6 @@ about有分類的意思，把限定範圍。
 
 ---------------------------------
 
-## like about 針對某個東西，具體喜歡它的哪一個特色或細節
-```
-What do you like about + 名詞
-```
-- What do you like about the stores ? 你喜歡這些店的什麼地方？
-  - What do you like...：你喜歡什麼？
-  - about [某個事物]：關於這個事物（的哪一點）？
-  
-- What do you like about this movie?（你喜歡這部電影的哪一點？）
-- What do you like about your job?（你喜歡你工作的哪一個部分？）
-- What do you like about living here?（你喜歡這裡生活的什麼地方？）
-
-## like about 人
-- 問法 A（大範圍）： Do you like Emma?
-- 意思：「你喜歡Emma嗎？」
-- 回答：通常只能回答 Yes 或 No（是的，我喜歡 / 不，我不喜歡）。
-
-- 問法 B（問細節）： What do you like about Emma?
-- 意思：「你喜歡Emma的什麼地方？」
-
--------------------
 
 ## all about 「全部的內容」是關於...
 all 是代名詞，意思是「全部」=「所有內容」。

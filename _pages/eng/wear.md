@@ -19,6 +19,7 @@ wear 不僅僅是「穿（衣服）」的動作，它同時也用來指「身上
 - The man in a suit is my boss.（穿西裝的那個人是我老闆。）
 - The man in a suit.（穿西裝的男人）
 - The woman in the red shirt?
+- the girl in the red dress.（穿紅洋裝的那個女孩）
 
 --------------------------
 

@@ -47,7 +47,6 @@ was/were + going to + 原形動詞
   - 現在式
   - want 為當下的意願／計畫 : 你現在心裡有沒有這個意願／想不想...？
   - soon 不久之後，限定發生的時間點
-- Do you want to meet up soon?（你這陣子想找個時間碰面嗎？）
 - Do you want to watch a movie soon?（你最近想去看電影嗎？）
 
 

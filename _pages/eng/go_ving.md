@@ -11,6 +11,10 @@ keywords: English, cross, across
 - Do you want to play tennis together **this Sunday**? 注意，有this，就不加on  
 - The cat is playing with a tennis ball.猫在玩网球  
 
+
+- If you eat pizza and play video game**s**, going to school sounds like a party.如果你吃披薩又打電動，上學聽起來就像在開派對。
+- They must have a lot of pizzas if it's fun. Do they have video game**s**?如果很好玩的話，那裡一定有很多披薩。他們有電動玩具嗎？
+
 ### 音樂家
 - She was in a band, she was a guitar player.她以前在一个乐队里，她以前是一个吉他手。
 - Were they piano players?他们是钢琴家吗？

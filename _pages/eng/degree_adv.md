@@ -54,8 +54,6 @@ so 是一個程度副詞，意思是「如此、非常、這麼」。
 - surprised（驚訝的）
 - excited（興奮的）
 
-
-- I'm really excited to meet him. 
 - It's so exciting!
 - This cake is really delicious!（這蛋糕真的太美味了！）
 - I am really exhausted.（我真的精疲力竭了。）

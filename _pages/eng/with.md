@@ -152,6 +152,7 @@ help me + to + 原形動詞
 ## with 包含
 `with` 是一個**介系詞**，用來連接「主商品」和「附贈品/搭配項目」，主動提供、加購或附帶（就像買主餐「配」一杯飲料）。
 
+- It's like a party, but with learning.這就像個派對，但包含了學習。
 - I want to buy a house with a big garden.我想買一棟有大花園的房子。
   - with a big garden 包含花園
 

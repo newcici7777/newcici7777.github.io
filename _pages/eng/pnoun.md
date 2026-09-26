@@ -3,6 +3,26 @@ title: 所有格代名詞
 date: 2026-09-08
 keywords: english, Possessive pronouns
 ---
+## its
+- That sheep is eating its food right now
+- That cow is eating its grass.
+- This sheep has a big head, but its
+eyes are very small.
+- Is your watch in its box ?(你的手表在它的盒子里吗？)
+
+
+## 受詞所有格
+- Is this plastic toy hers?这个塑料的玩具是她的吗？
+- This one is mine, this one is for your brother, and this one is for your dad!
+- This phone is large but hers is larger.这个手机很大，但是她的更大。
+- That bright pink car is mine.那辆亮粉色的车是我的。
+
+## the price of
+- Do you know the price of these carrots?你知道这些胡萝卜的价格吗？
+- It was a great price, so I got four!
+
+---------------------------
+
 ## 所有格代名詞（Possessive Pronouns）用法解析
 
 **This phone is large, but **hers** is larger.**

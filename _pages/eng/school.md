@@ -332,3 +332,18 @@ from 是一個介系詞，表示「從...地方（或狀態）離開、脫離」
   - There will be a Q&A session at the end of the workshop.
 （研討會的尾聲將會有一場問答時段。）
 - 視訊會議: a Zoom session
+
+------------------------
+
+## dorm 宿舍
+> 單數： dorm（一棟宿舍）
+> 複數： dorms（多棟宿舍，或宿舍的各個房間）
+
+dorm 就是大學或學院裡的學生宿舍（dormitory）的口語簡寫。
+
+- The dorm**s** aren't too crowded.這些宿舍不會太擁擠。
+- dorm room（宿舍房間）
+- I'm talking to Lisa, who lived in a dorm.我正在跟住過宿舍的莉莎（Lisa）對話。
+- Sometimes they do, and many dorms have clubs, such as basketball.有時候會，而且很多宿舍都有社團，像是籃球社。
+
+

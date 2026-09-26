@@ -1,5 +1,5 @@
 ---
-title: 動詞 + to + 動詞
+title: remember, forget
 date: 2026-08-13
 keywords: English,finish,start,begin
 ---
@@ -13,11 +13,16 @@ keywords: English,finish,start,begin
 
 - Please remember to lock the door.（請記得去鎖門。）
 - I remembered to water your plants.我記得去幫你澆花。
+- And I have to remember to use my student ID to get them.而且我得記得使用我的學生證來領取。
+- Please remember to return your tray to the counter after eating in the cafeteria.在自助餐廳用餐後，請記得把你的餐盤拿到櫃檯歸還。
+- Remember to log out when you leave the computer.  
+（離開電腦時記得登出。）
 
 ### remember + V-ing（記得曾經做過...）
 相對地，如果後面接動名詞（V-ing），指的是「記憶中還留著」過去曾經做過某個動作的經驗。
 - I remember watering the plants yesterday.（我記得昨天有澆過花。 → 這件事已經在過去發生了，你腦海中有這個記憶。）
 - I remember hearing this song the night we met.
+Well, I remember we were driving through the city.
 
 💡 快速記憶對比
 - remember to V ＝ 提醒自己未來／等一下要去做。

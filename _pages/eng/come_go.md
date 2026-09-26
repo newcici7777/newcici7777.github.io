@@ -74,11 +74,16 @@ to 的意思是「朝向、往...方向」，在這裡當作目的地的大門�
   - She jogs to the park every morning.（她每天早上慢跑去公園。）
 
 ## 移動動詞 + to work 透過什麼方式去上班
-
 - walk to work 走路去上班
   * I usually walk to work.（我通常走路去上班。） 
 - drive to work 開車去上班
   * He drove to work this morning.（他今天早上開車去上班。）
+
+## 移動名詞 + to 目的地
+有位置、方向性的名詞，後面可用to 目的地
+- Where is the entrance to the library?
+
+----------------------------
 
 ## get to 抵達
 - What time will you get to the office?（你幾點會到辦公室？）

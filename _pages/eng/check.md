@@ -4,8 +4,7 @@ date: 2026-08-23
 keywords: English,check
 ---
 
-## check
-帳單
+## check 帳單
 - Excuse me can we have the bill.打扰了，我们可以要
 账单吗？
 - Can I have the check, please?
@@ -20,12 +19,12 @@ keywords: English,check
 Is service charge included in the bill? （帳單裡有包含服務費嗎？）
 Keep the change, please. （不用找零了。）
 
-
-
-支票
+## check 支票
 - Pay by check.（用支票付款）
 
-Check（檢查/查看）：不只是看，還包含「為了獲得某個資訊、或確認某件事是否正確」的動作。
+## Check（檢查/查看）
+
+不只是看，還包含「為了獲得某個資訊、或確認某件事是否正確」的動作。
 
 - Check the map.（查看地圖）
 - Check the directions.（查看導航）
@@ -37,5 +36,6 @@ Check（檢查/查看）：不只是看，還包含「為了獲得某個資訊�
 
 - I want to check my email.
 - Did you check your calendar?你杳看你的日历了吗？
+- I check the students' ID cards and help serve food.我檢查學生的身分證件並幫忙端菜/供應食物。
 
 ## put a check 打勾勾

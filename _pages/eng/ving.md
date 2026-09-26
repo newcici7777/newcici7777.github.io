@@ -33,14 +33,14 @@ keywords: English,finish,start,begin
 - We need to practice listening and speaking.
 
 ----------------------------
-## start 開始
+## start(動) 開始
 用to + V 跟 Ving都可以，都一樣意思。
 
 - He starts eating the sandwich.  
 - Junior starts to wash the dishes.  
 - She started studying about an hour ago.她大約一個小時前開始讀書。
 
-### to + V 因為還沒做，準備要去做
+### start to + V 因為還沒做，準備要去做
 to + V，強調那個「跨入新狀態」的瞬間切換
 - It started to rain. (突然開始下雨了)
 - The baby started to cry. (寶寶突然開始哭了。 ➔ 突然爆哭的瞬間)
@@ -73,6 +73,11 @@ to + V，強調那個「跨入新狀態」的瞬間切換
 - The game starts at five.
 - What time does the meeting start?
 - You will **start** your new job next week.你下周会开始你的新工作。  
+
+## start(名) 開始
+- it's a good start for me.這對我來說是個好的開始。
+
+--------------------------------
 
 ## begin 開始做某事
 表達「開始做某事」時，begin 後面可以接 動名詞（-ing） 或者是 不定詞（to V），兩者意思幾乎沒有差別，都可以通用。

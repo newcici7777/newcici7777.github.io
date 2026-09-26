@@ -50,24 +50,6 @@ in Taiwan.
 - Do we have milk in the refrigerator?
 - The food is in the refrigerator.
 
-## 動詞 + into
-into 強烈帶有「方向性」和「動態過程」。
-
-into = 從外面往裡面移動（動態）。
-- Put the money into the red envelope.
-  - 錢原本在外面（手上或桌上），然後你移動它，把它「放進」紅包袋的這個動作過程裡。
-
-- Put the money in the red envelope.
-  - in 比較像是描述結果（讓錢處於「在紅包裡」的狀態）
-
-用 into（強調動態、放進去）：
-- Put the letter into the envelope.（把信放進信封裡。）
-- Jump into the pool.（跳進游泳池裡——人從外面跳進去。）
-
-用 in（強調靜止、已經在裡面）：
-- The money is in the red envelope.（錢在紅包袋裡——已經在裡面了，是狀態。
-
-
 
 ## on the street/ on the first floor
 - There's a coffee shop on this street. 在这条街上有一个咖啡店。
@@ -128,6 +110,26 @@ at the front of + 名詞（基準點）
 - It's nice to be here again.
 - Now you're here! We can finally be together!
 
+--------------------------------
+
+## 動詞 + into
+into 強烈帶有「方向性」和「動態過程」。
+
+into = 從外面往裡面移動（動態）。
+- Put the money into the red envelope.
+  - 錢原本在外面（手上或桌上），然後你移動它，把它「放進」紅包袋的這個動作過程裡。
+
+- Put the money in the red envelope.
+  - in 比較像是描述結果（讓錢處於「在紅包裡」的狀態）
+
+用 into（強調動態、放進去）：
+- Put the letter into the envelope.（把信放進信封裡。）
+- Jump into the pool.（跳進游泳池裡——人從外面跳進去。）
+
+用 in（強調靜止、已經在裡面）：
+- The money is in the red envelope.（錢在紅包袋裡——已經在裡面了，是狀態。
+
+------------------------
 
 ## inside
 咖啡店在楼的里面，不在外面。  
@@ -157,6 +159,34 @@ outside.
 - look outside the tent（看著帳篷外面）
 - wait outside the office（在辦公室外面等）
 
+----------------------------------
+
+## outdoorS(副) outdoor(形)
+
+### outdoors（有 s）是副詞 (在戶外)
+為什麼 outdoors 加了 s？
+outdoors（有 s）是副詞： 意思是「在戶外地」、「往戶外」。  
+當你要修飾動詞，必須使用帶有 s 的 outdoors，用來修飾前面的這個動作發生的地點在戶外。
+- play outdoor**s** 在戶外玩
+- use outdoor**s** 在戶外使用
+- go outdoors（去戶外）
+- It's too cold to play outdoor**s** today.（今天太冷了，不能在戶外玩。）
+- He loves spending time working outdoor**s**.（他喜歡花時間在戶外工作。）
+
+
+### outdoor（沒有 s）是形容詞 (戶外的、露天的)
+意思是「戶外的」。在英文中，形容詞不能直接加 s。它在這裡是用來修飾後面的名詞 。
+
+- an outdoor activity（戶外活動）
+- We are planning **an outdoor barbecue** this weekend.（我們這週末計畫要辦一場戶外烤肉。）
+- The hotel has **a** great **outdoor swimming pool**.（這家飯店有一個很棒的戶外游泳池。）
+
+## indoor（形容詞） vs. indoorS（副詞）
+- indoor games（室內遊戲） → 形容詞修飾遊戲
+- play indoor**s**（在室內玩） → 副詞修飾玩耍的動作
+
+-------------------------------------
+
 ## near 附近
 跟next to 差不多
 - Do you want the duck near the water or on the grass?
@@ -170,6 +200,7 @@ outside.
 - Our village is near the sea. 我们的村子在海的附近。
 - The lake near the mountain is ver deep.在山附近的湖非常深。
 
+----------------------
 
 ## close to 離...很近、在「附近」
 close to 的核心意思是「離...很近」。它強調的是距離短，但不代表兩個東西要緊緊貼在一起，中間隔著一條街、一排樹都沒關係。
@@ -195,11 +226,15 @@ the garden.我們家離河流很近，但離花園更近。
 - It's close to eleven o'clock now.
 - We'll eat dinner close to five.我們快五點時吃飯
 
+------------------------
+
 ## beside 在旁邊
 一個人站在另一個人的身側，或是某個風景在另一個物體的旁邊  
 beside 的核心意思是「在...旁邊（側邊）
 - She stood beside the window, looking out.她站在窗戶旁，看著外面
 - My house is beside the store.在超商旁邊。就在超商的側邊，你家跟超商都在同一條路上。
+
+------------------------
 
 ## by 在...旁邊
 當 by 後面接一個地方或物體時，意思是「緊鄰在它的旁邊」。它幾乎等於 beside 或 next to。
@@ -207,6 +242,7 @@ beside 的核心意思是「在...旁邊（側邊）
 - He is standing by the window. （他站在窗戶旁。）
 - Let's meet by the entrance. （我們在門口旁邊碰頭吧。）
 - I want a duck by the water. （我想要一隻在水邊的鴨子。 ➔ 比 near 更靠近水面）
+- We eat by the water.我們在水邊吃飯
 
 |講法|距離感|大腦畫面|
 |:----------|:-------|:--------------------|
@@ -214,14 +250,10 @@ beside 的核心意思是「在...旁邊（側邊）
 |by the water|旁邊|鴨子就在水岸邊，腳快碰水了。|
 
 
-## by 地點
-by 代表「在...旁邊」
-- We eat by the water.我們在水邊吃飯
-
+## by 陪伴
 by（極度貼近的距離），常用於表達情感上的陪伴。
 - by your side（在你的身邊）
   - Don't worry, I'll always be by your side.（別擔心，我會一直陪在你的身邊。）
-
 
 
 ## by 時間 (在...之前 / 最晚到...為止)
@@ -238,10 +270,7 @@ by（極度貼近的距離），常用於表達情感上的陪伴。
 - A song by Taylor Swift （泰勒絲唱的歌）
 - The photo was taken by me. （這張照片是我拍的。）
 
-
-
-
-
+-----------------------
 ## behind
 ```
 A is behind B
@@ -302,10 +331,9 @@ I left my keys behind the flower pot."
 
 - She stood behind me in the queue.（她站在我後面的排隊隊伍中。）
 
+----------------------------
 
-## 移動名詞 + to 目的地
-有位置、方向性的名詞，後面可用to 目的地
-- Where is the entrance to the library?
+
 
 
 ## be on the ground floor 在一樓

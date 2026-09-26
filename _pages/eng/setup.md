@@ -1,6 +1,6 @@
 ---
 title: setup 擺設
-date: 2026-09-28
+date: 2026-09-26
 keywords: English, setup
 ---
 ## setup（名詞）擺設

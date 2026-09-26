@@ -10,11 +10,14 @@ keywords: English, duolingo
   - friend = Lily 二者相同。刪除his friend或刪除Oscar都不影嚮句意。Lily前後有逗號
 - My friend, Anny, lives in New York.
 - We visited Taipei, the capital of Taiwan.
+- I spoke with Patricia, a teacher who explained how students use their lockers.我跟帕翠西亞（Patricia）聊過，她是一位解釋學生如何使用置物櫃的老師。
 
 當你前面講了一個總數或大範圍，後面用逗號直接把具體的東西列出來
 - The English test has two parts,listening and speaking.
 - I love two sports, basketball and swimming.
 - The house has two colors, red and white.
+
+---------------
 
 ## live in 住
 - Ben lives in an apartment.  
@@ -31,13 +34,15 @@ keywords: English, duolingo
 ## life 生活
 - She often cries because her life is hard!她经常哭，因为她的生活很难！
 
+---------------------
+
 ## born 出生 (用被動式)
 - Were you born on November fifth or on November eighth? 
 - When was he born?他是什么时候出生的？
 - Emma's grandpa was born on January eighth.艾玛的爷爷是在一月八号出生的。
 - I was born in November,not in April.
 
-
+--------------------------
 
 ## wave at
 - I'm going to wave at her.
@@ -59,6 +64,7 @@ gone 是形容詞用來形容一種「不在、離去、離開了」的狀態。
 - All the pizza is gone.（披薩全被吃光了。）
 - All the cookies are gone. Who ate them all? （餅乾全被吃光了。到底是誰全部吃完的？）
 
+--------------------
 
 ## fast 與 quickly
 - fast（形容詞 / 副詞同形，強調「速度快」）
@@ -167,18 +173,6 @@ build ，強調那個「堆疊、建造」的過程。
 - that's all right. 没关系。
 
 ------------------
-
-## 受詞所有格
-- Is this plastic toy hers?这个塑料的玩具是她的吗？
-- This one is mine, this one is for your brother, and this one is for your dad!
-- This phone is large but hers is larger.这个手机很大，但是她的更大。
-- That bright pink car is mine.那辆亮粉色的车是我的。
-
-## the price of
-- Do you know the price of these carrots?你知道这些胡萝卜的价格吗？
-- It was a great price, so I got four!
-
-------------------------
 
 ## tips for/on(關於) 訣竅,建議
 * **`tips`**（小建議、訣竅、實用祕訣，常用複數形 *tips*）。
@@ -291,45 +285,6 @@ Deck 當名詞時，意思是「甲板」（船的甲板）或是「層、樓層
 - You guys are brave, just like soldier**s** in a movie.（你們很勇敢，就像電影裡的士兵一樣——不會特別指某個士兵。）
 - She sings like pop star**s** on TV.（她唱歌像電視上的流行巨星一樣——泛指這類人。）
 
----------------------
-## outdoorS(副) outdoor(形)
-
-### outdoors（有 s）是副詞 (在戶外)
-為什麼 outdoors 加了 s？
-outdoors（有 s）是副詞： 意思是「在戶外地」、「往戶外」。  
-當你要修飾動詞，必須使用帶有 s 的 outdoors，用來修飾前面的這個動作發生的地點在戶外。
-- play outdoor**s** 在戶外玩
-- use outdoor**s** 在戶外使用
-- go outdoors（去戶外）
-- It's too cold to play outdoor**s** today.（今天太冷了，不能在戶外玩。）
-- He loves spending time working outdoor**s**.（他喜歡花時間在戶外工作。）
-
-
-### outdoor（沒有 s）是形容詞 (戶外的、露天的)
-意思是「戶外的」。在英文中，形容詞不能直接加 s。它在這裡是用來修飾後面的名詞 。
-
-- an outdoor activity（戶外活動）
-- We are planning **an outdoor barbecue** this weekend.（我們這週末計畫要辦一場戶外烤肉。）
-- The hotel has **a** great **outdoor swimming pool**.（這家飯店有一個很棒的戶外游泳池。）
-
-## indoor（形容詞） vs. indoorS（副詞）
-- indoor games（室內遊戲） → 形容詞修飾遊戲
-- play indoor**s**（在室內玩） → 副詞修飾玩耍的動作
-
-
-------------------------
-## is busy with 名詞 (忙於某事)
-with 的中文意思是「忙於」
-
-- She is busy with her work.（她忙於她的工作。）
-- I am busy with dinner.（我正忙著弄晚餐。）
-
-如果後面要接「動詞」，則**不能用 with**，要改用 -ing
-- He is busy studying.
-- ❌ He is busy ~~with~~ studying.
-
-
-
 -----------------------
 
 ## click
@@ -368,11 +323,17 @@ with 的中文意思是「忙於」
 
 ------------------
 
-## find out 了解/找出/查清/發現
-- 查清楚: I need to find out what time the train leaves.我需要查清楚火車幾點開。
-- 了解: You'll find out about Harvard.你會了解關於哈佛大學的事情。
-- 找出: The teacher **gave the students a** diagnostic reading **test** to find out their weakness**es**. （老師給學生們做了一份「閱讀診斷」測驗，以找出他們的弱點所在。）
-- 發現: She finally found out the truth.她終於發現了真相。
+## find out 知道/找出/查清/發現
+- 知道: 
+  - You'll find out when you grow up. 等你長大了就會知道了
+  - You'll find out about Harvard.你會了解關於哈佛大學的事情。
+- 查清楚
+  - I need to find out what time the train leaves.我需要查清楚火車幾點開。
+- 找出: 
+  - The teacher **gave the students a** diagnostic reading **test** to find out their weakness**es**. （老師給學生們做了一份「閱讀診斷」測驗，以找出他們的弱點所在。）
+- 發現: 
+  - She finally found out the truth.她終於發現了真相。
+
 
 ## `find` vs `find out`
 - find：通常是指「找到某個實體東西」
@@ -381,14 +342,4 @@ with 的中文意思是「忙於」
 
 -------------------
 
-## give/take advice
-advice（建議）、help（幫助）、information（資訊） 這種**不可數**抽象名詞，前面沒有冠詞a，當你想表達「提供」給某人時，最常搭配的動詞就是 give。
-
-advice 是一個不可數名詞，所以不能說 an advice 或 advices，要用`a piece of advice`
-
-- She gave me **a piece of*** advice.（指給我一個建議）
-- She gave me some advice.她給了我一些建議
-
-- Will he take her advice? 他會接收她的建議嗎？(採納)
-- take **a** suggestion
 

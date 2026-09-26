@@ -4,13 +4,13 @@ date: 2026-08-27
 keywords: english, cloth, cloths, clothes
 ---
 ## 衣服
-cloth/kloθ/ 布料     
-clothes/kloʊðz/ 衣服 不可數名詞  
+> cloth/kloθ/ 布料  
+> clothes/kloʊðz/ 衣服 不可數名詞  
 
 - I wash my clothes on Monday, but grandma washes her clothes on Tuesday.  
 - We saw an ad for this clothes store.我们看到了一个这个服装店的广告。
-
-
+- Students use lockers to store books, jackets, and even gym clothes.
+學生們用置物櫃來存放書籍、夾克，甚至是體育服裝。
 
 ---
 
