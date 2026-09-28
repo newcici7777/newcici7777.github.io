@@ -13,6 +13,10 @@ keywords: English
   - takes 現在式，描述現在事實。
 - Does Emma take piano lessons?艾玛上钢琴课吗？
 - My friend takes writing lessons in that building.我的朋友在那座楼上写作课。
+- when you take this class You'll learn new vocabulary
+當你上這門課時，你會學到新的詞彙。
+
+
 
 ## taking a class 最近上什麼課
 用進行式代表「最近在進行的」。
@@ -36,7 +40,7 @@ keywords: English
 - I have my first class next Monday.（我下週一上第一堂課）
 - Do you have classes today? 你今天有课吗？(注意！classes用複數)
 - I have speaking lessons every afternoon.我每天下午都有口语课。
-
+- He has five classes and a lot of homework.他有五門課和很多家庭作業。
 
 ## has a lesson
 課表有課。
@@ -82,6 +86,19 @@ take 是：「花時間、花力氣」
 - We took a Chinese listening test yesterday.我们昨天参加了一个中文听力测试。
 - How many students took the math test last week?有多少个学生参加上周的数学测试？
 - She will take a French listening test tomorrow.她明天会参加一个法语听力测试。
+
+
+-----------------------
+## go to health 上健康課
+
+- Before I go to health.
+  - 原本: Before I go to health class.（在我去上健康課之前）
+- I'll talk to Dr. White before I go to health.
+在我去健康教育課之前，我會跟懷特博士談談。
+- go to math = 去上數學課（math class）
+- go to history = 去上歷史課（history class）
+- go to PE = 去上體育課（Physical Education）
+
 
 ---------------------------------------
 
@@ -211,10 +228,19 @@ school 當抽象名詞，抽象名詞不可數，前面沒有a 跟 the。
 
 --------------------------------
 
-## 課本/練習簿/作業
+## Textbook課本/ Workbook練習簿/ Homework作業
 - I need a textbook.課本
 - I need a workbook.練習簿
 - My teacher's angry because I did the wrong homework!我的老师很生气，因为我做错作业了！
+- He'll get the textbook before the first health class
+他會在第一節健康教育課前買課本。
+- When I take this class, I'll get a workbook.
+當我上這門課時，我會拿到一本練習冊。
+
+- I don't want to do my homework.
+我不想做我的作業。
+- Please don't eat. Do your homework!
+請別吃了。做你的作業！
 
 例句:
 - Please open your textbook to page 45 and read the first paragraph.請將課本翻到第 45 頁，並閱讀第一段。
@@ -271,20 +297,6 @@ In 原本的核心意思是「在...裡面」。當你說 in pairs（成雙成�
   - know something like the back of one's hand：瞭如指掌。
 
 ----------------------
-
-## an average student 一般學生
-- She's not an average student.她不是一個普通的學生。暗示她非常優秀
-
------------------------
-## go to health 上健康課
-
-- Before I go to health.
-  - 原本: Before I go to health class.（在我去上健康課之前）
-- go to math = 去上數學課（math class）
-- go to history = 去上歷史課（history class）
-- go to PE = 去上體育課（Physical Education）
-
-------------------------------
 
 ## absence(動) from 缺席、不在
 from 是一個介系詞，表示「從...地方（或狀態）離開、脫離」
@@ -345,5 +357,17 @@ dorm 就是大學或學院裡的學生宿舍（dormitory）的口語簡寫。
 - dorm room（宿舍房間）
 - I'm talking to Lisa, who lived in a dorm.我正在跟住過宿舍的莉莎（Lisa）對話。
 - Sometimes they do, and many dorms have clubs, such as basketball.有時候會，而且很多宿舍都有社團，像是籃球社。
+- Lisa, why do some people live in dorms?為什麼有些人要住在宿舍裡？
+- People live in dorms when they go to college.人們上大學時會住在宿舍裡。
 
+------------------------------
 
+## an average student 一般學生
+- You're not an average student, you're awesome!
+你不是一個普通的學生，你非常棒！
+- She's not an average student, she's very smart!
+她不是個普通學生，她非常聰明！
+
+## advanced 高級
+- I'll take advanced English next semester.
+我下學期會上高級英語。

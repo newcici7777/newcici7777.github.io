@@ -20,6 +20,16 @@ was/were + going to + 原形動詞
 - I was going to call you, but my phone ran out of battery.我原本打算打給你，但我手機沒電了。
 - We were going to go to the beach, but it started raining.我們原本打算去海灘的，但開始下雨了。
 - She was going to buy the dress, but it was too expensive.她原本打算買那件洋裝的，但太貴了。
+- She was going to try the seafood, but he said it was spicy.
+她原本打算嚐嚐海鮮，但是他說很辣。
+- We were going to take you out to your favorite restaurant!
+我們原本打算帶你去你最喜歡的餐廳的！
+- He was going to have toast, but there's no jam.
+他原本打算吃吐司，但是沒有果醬。
+- We were going to have champagne, but I felt sick.
+我們原本打算喝香檳，但是我感覺不舒服！
+- What is she going to have for brunch?
+她早午餐打算吃什麼？
 
 --------------------
 

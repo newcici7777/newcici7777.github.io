@@ -5,6 +5,8 @@ keywords: 其它
 ---
 ## 身份
 - She's a teenager.
+- He's a teenager, and he's in junior high school.
+他是一個青少年，他在上初中。
 - What were the kids doing while the adults were cleaning? 
   - while the adults were cleaning（當大人們在打掃時——複數，指現場的所有大人）
 句子的前半句已經用了複數形的 kids（孩子們），為了保持主詞數量的一致性（小孩對應到大人），後半句指的當然是「所有的成年人、大人們」，所以必須使用複數的 adults。
@@ -130,7 +132,15 @@ fall off + 掉落的地方
 -------------------
 ## park(v) 停車, a parking space(停車位)
 - is this a parking space? 这是一个停车位吗？
-- It says we can park here, can't we? 它说我们可以停在这里，不是吗？
+- There's a parking space over there.
+那裡有一個停車位。
+- It says we can park here, can't we?
+它說我們可以停在這裡，不是嗎？
+- Um, is this a parking space?
+呃，這是一個停車位嗎？
+- Did we park on the right or on the left of the movie theater?我們是把車停在電影院的右邊，還是左邊？
+- Park your car on the left side of the driveway.
+（把你的車停在車道的左側。）
 
 --------------------
 ## deals 划算的東西

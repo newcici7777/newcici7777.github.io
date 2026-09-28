@@ -214,3 +214,21 @@ path（小徑）、road（馬路）、street（街道）、track（軌道/小路
 * 開車或騎車走的大馬路 ➡️ **Road**
 * 市區逛街的街道 ➡️ **Street**
 * 行人走路的專用道 ➡️ **Sidewalk / Pavement**
+
+-----------------------
+### 1. `Route`（路線）
+偏向「具體的交通規劃」**或**「從 A 地到 B 地的導航路徑」。
+
+* *What is **the best route** to the airport?*（去機場最好的路線是什麼？）
+* *Let's check Google Maps to find **the best route**.*（我們查一下 Google 地圖來找出最佳路線。）
+- Scenic route（風景路線 / 觀光路線）
+  - Let's take the scenic route home.（我們回家時走風景優美的路線吧。）
+- Alternative route（替代路線 / 備用路線）
+  - The main road is closed, so we need to find an alternative route.（主幹道封閉了，我們得找一條替代路線。）
+
+
+Route當動詞
+- Route traffic（導流 / 引導交通）。
+- Route a package（規劃包裹的寄送路徑）。
+  - All calls are routed to the main office.（所有電話都被轉接到總公司去了。）
+

@@ -243,6 +243,14 @@ Deck 當名詞時，意思是「甲板」（船的甲板）或是「層、樓層
 ## fill in 填寫空白處
 - Please fill in the blanks.（請在空白處填空）
 
+
+## fill + 容器 +  with 水 (裝水)
+- Fill the bucket with water.
+把水桶装满水。
+- You've got to fill the bucket with water
+你必须把水桶装满水。
+
+
 ---------------------
 
 ## covered in 覆蓋著東西
@@ -327,6 +335,13 @@ Deck 當名詞時，意思是「甲板」（船的甲板）或是「層、樓層
 - 知道: 
   - You'll find out when you grow up. 等你長大了就會知道了
   - You'll find out about Harvard.你會了解關於哈佛大學的事情。
+  - He found out a lot about the new dorms last week.他上周了解了很多新宿舍的情況。
+  - You'll find out more about Harvard when you check the website.
+當你查看了網站，你就會更了解哈佛。
+  - when you read this, You'll find out about Harvard
+當你讀了這個，你就會更了解哈佛。
+  - We found out a lot about the classes at NYU.
+我們了解了很多紐約大學課程的情況。
 - 查清楚
   - I need to find out what time the train leaves.我需要查清楚火車幾點開。
 - 找出: 

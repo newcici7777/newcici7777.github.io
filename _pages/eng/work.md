@@ -235,7 +235,9 @@ complete明確目標、任務要完成，表單需要填寫。
 - What are you doing? We agreed not to use our phones.
 
 ## agree with 人 (同意某人)
-
+- Do your parents agree with you
+你的父母同意你的看法嗎？
+- I agree with your idea; let's do it.（我同意你的想法，我們就這麼辦吧。）
 
 ----------------------------
 ## worker 員工

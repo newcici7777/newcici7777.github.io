@@ -77,6 +77,14 @@ The rain / The wind / The storm / The flood（雨、風、暴風雨、洪水）�
 ------------------------------------------
 
 ## 複數可數名詞S （總稱、任意一個）
+
+當你在買東西詢問對方有沒有提供某一類商品時，通常會用**複數形**來做廣泛的詢問，而不是指單一個。
+
+* Do you sell book**s**?（你們有賣書嗎？ 👉 指各類的書，而不是特定某一本）
+- Do you offer any sweet drink**s**?(你們有提供任何甜的飲料嗎？」
+- Do they have video game**s**?他們有提供電動玩具嗎？(have為提供)
+* Do you have dessert**s**?（你們有甜點嗎？）have為提供
+
 習慣用複數名詞來表示這是一個「總稱」或「經常發生的事」。
 
 - I love going to jazz concert**s**!

@@ -59,3 +59,8 @@ serve as + 角色／功能
 
 ## serve(動) 服兵役(為國家服務)
 - He served in the army for three years.（他在軍中服役了三年。）
+
+## service(名) 服務
+- The service was not bad. 服務還不錯。
+- The service was horrible last night.
+昨晚的服務很糟糕。

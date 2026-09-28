@@ -26,8 +26,6 @@ keywords: English,a delay
 
 ------------------------
 
-
-
 ## There is a delay for line 3/the green line
 - There's always a delay for the green line!綠線總是延遲
 - Why was there a delay for line three? 三号线为什么延迟了？
@@ -37,11 +35,16 @@ keywords: English,a delay
 ## be delayed 被延誤
 * Oh no, all flights are delayed!噢不，所有的航班都延誤了！
 * Oh no, all of the flights are delayed!噢不，所有的航班都延誤了！
-* If the fashion show is canceled, I'll cancel my flight.
-如果時裝秀取消了，我會取消我的航班。
+。
 * Our flight is delayed.我們的航班延誤了。
 * Oh no, all of the flights are delayed.
 噢不，所有的航班都延誤了！
+
+## be canceled 被取消
+* Both the flight and the fashion show are canceled.航班和时装秀都取消了。
+* If the fashion show is canceled, I'll cancel my flight.
+如果時裝秀取消了，我會取消我的航班
+* We're glad they didn't cancel the fashion show.我們很高興他們沒有取消時裝秀！
 
 
 ## change to line 編號/the 顏色 line (換線)

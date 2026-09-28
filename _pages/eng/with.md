@@ -226,6 +226,12 @@ come 後面可以直接接形容詞，用來描述主體「以什麼狀態出場
 - Tonight's special comes with soup and a salad.今晚的特餐包含湯和沙拉。
 - Does this steak come with fries?這客牛排包含薯條嗎？
 - Brunch comes with toast and a cup of yogurt.早午餐包含吐司和一杯酸奶。
+- brunch comes with toast and a cup of yogurt.
+早午餐帶吐司和一杯酸奶。
+- Does this brunch come with fruit yogurt
+這個早午餐帶水果酸奶嗎？
+- Tonight's special comes with steak or salmon.
+今晚的特餐帶牛排或者三文魚。
 
 - The software comes with a user manual.（這套軟體附帶一本使用手冊。）
 - The software comes with a free trial period.（這套軟體附帶免費試用期。）

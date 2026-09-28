@@ -27,7 +27,16 @@ instructor 就是教練、講師。
 - The exam instructions say no calculators are allowed.（考試指示說不准使用計算機。）
 - Please read the instruction**s** carefully before taking the exam. （請在考試前仔細閱讀作答說明——這是強制要遵守的規則。）
 - Follow the manufacturer's instruction**s** to install the software. （請按照製造商的操作指示來安裝軟體。）
+- Do you understand the instructions
+你理解清楚指令了嗎？
+- Before you choose a partner, I'll repeat the instructions.
+在你選擇搭檔之前，我會重複指令。
+- I'll repeat the instructions again.
+我會再重複一遍指令。
+- If you want me to repeat the instructions, let me know.
+如果你想讓我重複指令，就告訴我。
 
+--------------------------
 
 1. Instruction（指示、說明、教學）
 - Read the instruction**s** carefully before you start assembling the furniture. （在開始組裝這套傢俱前，請先仔細閱讀說明書。）

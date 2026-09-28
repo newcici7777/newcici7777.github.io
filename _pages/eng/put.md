@@ -9,6 +9,18 @@ keywords: english, put
 - Put these dishes on the table.把这些盘子放在桌子上。
 - You can put chicken on the dish.你可以把鸡肉放在这个盘子上。
 - Put four spoons on the table.把四个勺子放在桌子上。
+- Mom told him to put his things here
+媽媽叫他把他的東西放在這裡。
+- Put this pair of shorts in the washing machine.
+把這條短褲放在洗衣機裡。
+- Emma has got to put the toys in the cabinet
+艾瑪必須把玩具放在柜子里。
+
+## put something away (把東西收起來)
+- could you put these books away
+你可以把這些書收起來嗎？
+
+
 
 ## put... together ＝ 把...湊在一起、組合起來
 - Now we can put it all together.現在我們可以把這一切整合在一起了。
@@ -33,6 +45,8 @@ put + [物品] + on + [表面/地方]
 - Don't put too much butter on my bread.不要在我的麵包上放太多奶油。
 - I always put butter and salt on my potatoes.我总是在我的士豆上放黄油和盐。
 - He always puts cheese on his crackers.他总是在他的饼干上放奶酪。
+- Do you put jam and butter on your toast?
+你在你的吐司上放果醬和黃油嗎？
 
 ## put on 放上去
 - Please put some cheese on the pizza.（請在披薩上放一些起司。）

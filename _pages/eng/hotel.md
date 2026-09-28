@@ -46,10 +46,20 @@ buffet 在英文中確實有這兩種主要的含意，而且它們息息相關�
 ### A buffet自助餐（指用餐形式或餐點本身）
 - We had a great buffet at the hotel.（我們在飯店吃了一頓很棒的自助餐。）
 - Let's go to a buffet.（我們去吃自助餐吧。）
+- This place has a great buffet!
+這個地方有一個很棒的自助餐！
 
 ### on the buffet 自助餐檯（指放置食物的那個檯子或傢俱）
 
 - There isn't any garlic bread on the buffet.（自助餐檯上沒有大蒜麵包。）
+- Are there any lemon cookies on the buffet ?
+自助餐上有檸檬餅干嗎？
+- There isn't any garlic bread on the buffet.
+自助餐上沒有蒜蓉麵包。
+- There's fresh mango juice on the buffet .
+在自助餐上有新鮮的芒果汁。
+- The workers are going to put more pork curry on the buffet.
+員工們打算把更多咖喱豬肉放在自助餐上。
 
 另外，它原本的法文字源其實是指一種「長餐具櫃」，所以在家具店裡，那種長型的餐邊櫃有時候也會被叫做 buffet。
 
@@ -68,10 +78,19 @@ buffet 在英文中確實有這兩種主要的含意，而且它們息息相關�
 
 ## grilled 烤
 - Would you like **grilled mushrooms** or a salad?您想要烤蘑菇還是一份沙拉？
+- Was the grilled salmon better than the steak ?
+烤三文魚比牛排更好嗎？
+- I'd like grilled seafood for my main course , thanks.
+我的主菜想要烤海鮮，謝謝。
+- Would you like grilled mushrooms or a salad?
+您想要烤蘑菇還是一份沙拉？
 
 ------------------------
 ## the main course 主菜
 - I'd like grilled seafood for my main course , thanks.我的主菜想要烤海鮮，謝謝。
+- The main course is grilled chicken with lemon sauce.
+主菜是烤雞加檸檬醬。
+
 
 
 ## the second course 第幾道菜
@@ -96,6 +115,8 @@ buffet 在英文中確實有這兩種主要的含意，而且它們息息相關�
 - Today's lunch special 或 Lunch special.午餐特餐
 - This week's special. 這個星期的特餐
 - Chef's special（主廚特餐，不限定特定時間）。
+- Tonight's special is the grilled salmon.
+今晚的特餐是烤三文魚。
 
 ----------------
 ## The dining hall 大學的學校食堂

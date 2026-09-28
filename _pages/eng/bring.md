@@ -36,8 +36,10 @@ dog? 你觉得我可以带我的狗吗？
 - Please bring some snacks to the party. 
 - Can you bring that document to my desk? 
 
+
 ### bring 物 to 人
 - Can you take this document to the boss? (bring 物 to 人)
+
 
 ## Carry（攜帶、搬運、扛）
 強調用手、身體或體力支撐並載運物品的動作，它不特別強調方向或目的地，只管「拿著/扛著」的這個狀態。

@@ -14,6 +14,12 @@ advice 是一個不可數名詞，所以不能說 an advice 或 advices，要用
 
 - Will he take her advice? 他會接收她的建議嗎？(採納)
 - take **a** suggestion
+- She gave me some advice on life.
+她給我了一些關於人生的建議。
+- I agree with you, and I'll take your advice !
+我同意你的看法，我會採取你的建議！
+- He won't take Miss Wang's advice.
+他不會採取王小姐的建議。
 
 ## advice on 名詞/Ving（關於的建議）
 - If I need advice on getting a job, I'll ask you.如果我需要找工作的建議，我會問你。

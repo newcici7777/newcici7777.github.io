@@ -34,6 +34,34 @@ keywords: english,
 - Can I have a turn? 輪到我了/可以換我玩
   - 當大家在排隊玩遊戲、玩電動，或者是輪流使用某樣東西（例如相機、VR眼鏡、桌遊）
 
+## have 行為名詞（進行一個動作)
+have 是一個功能非常強大的「萬用動詞」。當它後面接某些名詞（特別是活動、對話、會議等）時，它代表的是「進行（某個動作或互動）」，而不是「擁有」。
+
+英文習慣把許多「動作」包裝成「名詞」（如 a chat, a look），然後用 have 來「進行」這個動作。
+
+- have a discussion（進行討論）
+- have a chat（聊聊天、輕鬆談話)
+  - I can't have a chat now.我现在不能聊天。
+- have a look（看一下）
+- have a conversation = 進行對話 / 聊天
+- have a discussion = 進行討論
+- Have a try.（試試看 擁有一次嘗試的機會）
+- have a rest 
+- have a break（休息一下）
+
+## have a meeting 開會
+跟行程表相關用have
+- We won't have a meeting tomorrow morning.(我們明天早上不會開會 )
+- We'll have a meeting tomorrow, see you then! 
+- Our company is having a meeting right now.我们的公司现在正在开会。 
+- They are having a meeting at a cafe now.他们现在在咖啡厅开会。
+- Do they have a meeting at the same time every Thursday?他们每周四都在
+同一时间开会吗？
+
+
+
+-------------------------
+
 ## Give me a 動作 (提供幫助)
 - Give me a wake up call.給我一個叫醒電話
 - Give it a try.（試試看。）it代表前面提到的
@@ -85,4 +113,60 @@ keywords: english,
 - Let's go out **for air**.（我們出去透透氣吧。）
 - Come over for dinner.（來我家吃晚餐。）
 - Come over for a chat.（來我家聊聊天。）
+
+-----------------------
+## take 旅行
+take 進行、從事一個需要花時間或體力的活動／行程
+
+take 後面接單數可數名詞時，習慣上需要加上不定冠詞 a。  
+
+- take a tour 
+- take a trip 
+- take a vacation
+
+## take 休息
+這些都是把名詞當成一個「動作」來做，而 take 是最順手的動詞。    
+「進行」一個「休息」的動作
+
+- take a break（休息一下）
+- have a break (休息一下)
+- take a rest
+- Take some rest（休息一下）
+- Get some rest（去弄點休息、好好休息）
+- Have a rest(休息一下)
+
+
+- we can take a quick break can't We
+我們可以稍微休息一下，不是嗎？
+- Let's take a quick break.
+咱們稍微休息一下。
+
+## 散步
+- take a walk（散步）
+  - I need to take a walk to clear my head.（我需要去散個步來清醒一下。）
+  - I took a walk in a beautiful forest in Australia.我在澳洲一個美麗的森林裡散步。
+- go for a walk（去散步）
+  - Let's go for a walk in the park.（我們去公園散步吧！）
+- Let’s go **out** for a walk.我們出去散步吧。
+
+
+## 看一下
+take 轉變成了一個輔助性質的動詞，中文通常會翻譯成：「進行、做、採取、執行」某個動作。
+
+- take a look（看一看）
+
+也就是說，英語習慣把一個原本可以當動詞的詞（例如：look 可以當動詞「看」），包裝成名詞（a look「一眼、看一看」），然後前面借用 take 來把它變成一個完整的動詞片語。
+
+- Take a look at this.（看一看這個)
+- Look at this.（看這個 → 比較像命令句、直白）
+
+把動作變成名詞（加了 a）之後，你就可以在中間塞入形容詞來豐富語意，這是單純用動詞做不到的：
+- take a quick look（快速看一眼）
+- take a long break（休個長假）
+- take a hard test（考一個很難的試）
+- He took a step backward.（他向後退了一步。）
+
+## 導覽
+- take a tour（進行參觀）
+  - 參觀需要走動、花體力，所以用 take。
 

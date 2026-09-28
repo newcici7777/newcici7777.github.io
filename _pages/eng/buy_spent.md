@@ -28,8 +28,9 @@ keywords: buy, get, pay, spend, take, cost
 ### 人 + buy + 人 + 物
 - She'll buy her parents some beans.
 - Can you buy us some milk?
-- I bought you a gift
 
+- Can you buy me a lemonade?
+你可以給我買一瓶檸檬水嗎？
 
 ### 人 + buy + 物 + for + 目的(人/活動)
 通過努力(力氣)幫某人做某事 都要用for 人
@@ -38,12 +39,16 @@ ex:buy 買、make 做、cook 煮、get 拿
 
 - I need to buy lots of fruit for a party.
 - He wants to buy some plants for his flower garden(他想要给他的花园买一些植物。)
-- I bought a cake for you.（我為了你買了一個蛋糕
-
 
 ### 人 + buy + 物 + for + 錢
 Can I buy it for one hundred dollars.
  
+### bought
+- He bought some lemonade and a bag of potato chips.
+他買了一些檸檬水和一袋薯片。
+- I bought a cake for you.（我為了你買了一個蛋糕)
+- I bought you a gift
+
 ------------------------
 
 ## pay
@@ -181,6 +186,12 @@ It + takes + (人) + 時間 + to V
 - It will take siX hours to read all these file**s**.读所有的这些文件会花六个小时！
 - It will take half an hour.花費半小時
 
+- It'll take at least an hour to finish this.
+完成這個至少會花一個小時。
+- It will take at least half an hour to clean the floor
+打掃地板至少會花半個小時。
+
+
 主詞是「事情」，目的是達成這件事需要花多少「時間」。
 * It takes 30 minutes to cook a meal.（煮一餐要花 30 分鐘。）
 * It takes two hours to finish the work.（這工作要花兩小時。）
@@ -196,6 +207,11 @@ It + takes + (人) + 時間 + to V
 检查轮胎不会花很长时间。
 
 - It won't take long to get to Las Vegas from here. 从这里到拉斯维加斯不会花很长时间。
+- It won't take long to check the tires.
+檢查輪胎不會花很長時間。
+- Wait for me, I won't take long!
+等我一下，我不會花很長時間！
+
 
 
 ----------------------------

@@ -91,7 +91,7 @@ like + Ving/ to V
 -------------------
 ## It's like ... 它像
 - It's like a party, but with learning.這就像個派對，但包含了學習。
-- going to school sounds like a party.上學聽起來就像在開派對。
+- It's like living with many new friends.這就像是和許多新朋友住在一起一樣。
 
 ----------------------------
 ## What is / was + S + like? 是什麼樣子？

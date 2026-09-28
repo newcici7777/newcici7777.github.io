@@ -113,6 +113,15 @@ all over + 地方 = 到處、遍及全
 - Winter is finally over.（冬天終於結束了。）
 - The exam is finally over.（考試終於結束了。）
 - Our relationship is over.（我們的關係結束了／分手了。）
+- What will you do when this semester is over
+這個學期結束時你會做什么？
+- Where will you be when summer is over
+夏天結束時你會在哪裡？
+- Where will Ben work when the semester is over
+學期結束時本會在哪裡工作？
+
+
+----------------------
 
 # Over and over 一遍又一遍
 Over and over (again)：一次又一次、不斷地

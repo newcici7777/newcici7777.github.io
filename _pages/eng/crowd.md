@@ -62,10 +62,10 @@ A crowd 意思是「一群人」或「擠滿的人潮」。
   - She walked through the crowded market.（她走過那個擁擠的市場。the 特別指定是「那一個」，不是任意一個）
 - a crowded bus（擁擠的公車）
 - a crowded room（擠滿人的房間）
-- The buses were crowded today.（公車今天很擁擠）
+- Is New York a crowded city?纽约是一个拥挤的城市吗？
 
-
-
+----------------------------
+## Crowd(人群) vs Crowded(擁擠)
 - Crowd 是「人」本身（名詞）：
   - The crowd was loud.（那一群人很吵鬧。）
 - Crowded 是用來形容地方的「狀態」（形容詞）：
@@ -82,16 +82,16 @@ A crowd 意思是「一群人」或「擠滿的人潮」。
 - exciting（令人興奮的）vs. excited（感到興奮的——被激發的）
 - crowd（擠）vs. crowded（被擠滿的＝擁擠的）
 
---------------------------
-
-## crowded
-**地方** + be動詞 + crowded
+---------------------
+## be crowed(擁擠)
+- The buses were crowded today.（公車今天很擁擠）
+- Usually the dining hall is not too crowded.
+平時，食堂不太擁擠。
+- The dorms aren't too crowded.宿舍不太擁擠。
 - The MRT is crowded today.（捷運今天好擁擠。）
 - Is your town quiet on Saturday?No, it's too crowded.不，大拥挤了。
 
-crowded形容詞 + 名詞
-- Is New York a crowded city?纽约是一个拥挤的城市吗？
 
 
-擠滿crowded with + **人/事物**
+## be crowed with 人/事物 (擠滿)
 - The street is crowded with people.（這條街擠滿了人。）

@@ -45,6 +45,15 @@ have 的意思是「取得、擁有、入住」
   -  我有一些茶，但是我没有果汁。
 - I want to have some tea. 我想要喝一些茶
 
+## 提供
+- Do they have video game**s**?他們有提供電動玩具嗎？
+* Do you have dessert**s**?（你們有甜點嗎？）have為提供
+
+
+### 建築物、房子裡面有提供設備
+- Does the hotel have a swimming pool?（這家飯店有游泳池嗎？）
+- Does the library have computers?（圖書館有電腦嗎？ $\rightarrow$ 圖書館擁有的設備）
+- Does this restaurant have Wi-Fi?（這家餐廳有 Wi-Fi 嗎？ $\rightarrow$ 餐廳提供的服務）
 
 ## 比賽
 - They have competitions every year.（他們每年舉辦比賽。）
@@ -59,29 +68,6 @@ have 吃和活動或聚會搭配時，它代表的是「進行、享受、舉辦
 - I had a barbecue with Ben yesterday. 我們上週末辦了一場很棒的烤肉。
 - Do you often have barbecues? I had a barbecue with Ben yesterday.你经常烧烤吗？我昨天跟Ben一起烧烤了。
 
-## have 行為名詞（進行一個動作)
-have 是一個功能非常強大的「萬用動詞」。當它後面接某些名詞（特別是活動、對話、會議等）時，它代表的是「進行（某個動作或互動）」，而不是「擁有」。
-
-英文習慣把許多「動作」包裝成「名詞」（如 a chat, a look），然後用 have 來「進行」這個動作。
-
-- have a discussion（進行討論）
-- have a chat（聊聊天、輕鬆談話)
-  - I can't have a chat now.我现在不能聊天。
-- have a look（看一下）
-- have a conversation = 進行對話 / 聊天
-- have a discussion = 進行討論
-- Have a try.（試試看 擁有一次嘗試的機會）
-- have a rest 
-- have a break（休息一下）
-
-## have a meeting 開會
-跟行程表相關用have
-- We won't have a meeting tomorrow morning.(我們明天早上不會開會 )
-- We'll have a meeting tomorrow, see you then! 
-- Our company is having a meeting right now.我们的公司现在正在开会。 
-- They are having a meeting at a cafe now.他们现在在咖啡厅开会。
-- Do they have a meeting at the same time every Thursday?他们每周四都在
-同一时间开会吗？
 
 ## have 舉辦
 參加、進行某項活動或課程:

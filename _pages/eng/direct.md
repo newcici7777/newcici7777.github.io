@@ -59,6 +59,10 @@ directions + to + [目的地]
 
 ## at the rest stop 休息站
 - You can pick up a map at the rest stop.你可以在休息站拿一份地圖。
+- There are restrooms at the rest stop.
+在服務區有洗手間。
+- It says that we're ten miles from the rest stop.
+它說我們離服務區十英里。
 
 ## using a GPS
 - Using a GPS is key for long drives.
@@ -97,6 +101,8 @@ for [數字] block(s)
 [數字] traffic light(s)
 ```
 - Walk past three traffic lights.（走過三個紅綠燈。）
+- You can turn right at the traffic light.
+你可以在紅綠燈右轉。
 
 ## stop at 停下來
 先講動作 (Stop)，再把地點 (at the...) 丟到後面去！
@@ -121,7 +127,7 @@ Stop at [地點].（在...停下來）
 ## on the north/east/south/west(on在...邊界上)
 - The city is on the east coast.（這座城市在東海岸線上。）
 
-## turn left/right + at/after/pass + the 地點 (在那邊要轉彎)
+## turn left/right + at the 地點 (在那邊要轉彎)
 第一步（先講你要做什麼）：
 - Turn left.（先左轉！）
 - Turn right.（先右轉！）
@@ -130,9 +136,12 @@ Stop at [地點].（在...停下來）
 第二步（再講在哪裡執行）：
 - ...at the traffic light.（——就在紅綠燈那裡。）
 
-- Turn left after the library. 过图书馆后左转。
+- You can turn right at the traffic light.
+你可以在紅綠燈右轉。
 
-
+## turn left/right + after 地點
+- Turn left after the library.
+過圖書館後左轉。
 
 ## go + north/east/south/west
 用 go 可以表達「這條路通往哪裡、往哪個方向延伸」。  
@@ -171,7 +180,7 @@ Stop at [地點].（在...停下來）
 ```
 on the left / right + of [基準物]
 ```
-- Did we park on the right or on the left of the movie theater?
+- Did we park on the right or on the left of the movie theater?我們是把車停在電影院的右邊，還是左邊？
 - The store is on the left of the park.（店在公園的左邊 → 必須加上 of + 參考物）
 
 ## on the left/right 用法比較
@@ -306,21 +315,6 @@ take a right
 
 ---------------------------------
 
-### 1. `Route`（路線）
-偏向「具體的交通規劃」**或**「從 A 地到 B 地的導航路徑」。
-
-* *What is **the best route** to the airport?*（去機場最好的路線是什麼？）
-* *Let's check Google Maps to find **the best route**.*（我們查一下 Google 地圖來找出最佳路線。）
-- Scenic route（風景路線 / 觀光路線）
-  - Let's take the scenic route home.（我們回家時走風景優美的路線吧。）
-- Alternative route（替代路線 / 備用路線）
-  - The main road is closed, so we need to find an alternative route.（主幹道封閉了，我們得找一條替代路線。）
-
-
-Route當動詞
-- Route traffic（導流 / 引導交通）。
-- Route a package（規劃包裹的寄送路徑）。
-  - All calls are routed to the main office.（所有電話都被轉接到總公司去了。）
 
 
 

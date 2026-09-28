@@ -172,12 +172,6 @@ crowded（擁擠的）也是形容詞。當你要交代「這個地方擠滿了�
 * *文法與用法：* 強調雙向的對話與互動（與 *talk to* 單向說話略有不同）。
 * *例：* I need to **talk with** my boss about the schedule.（我需要跟老闆談談行程的事。）
 
-
-2. **agree with ...**（同意……／合得來）
-* *文法與用法：* 用於人、意見或說法。表示你的想法和對方「站在同一陣線」。
-* *例：* I **agree with** your idea; let's do it.（我同意你的想法，我們就這麼辦吧。）
-
-
 3. **argue with ...**（與...爭吵／辯論）
 * *文法與用法：* 表示雙方意見不合而發生口角。
 * *例：* It's no use **arguing with** him.（跟他爭論是沒有用的。）

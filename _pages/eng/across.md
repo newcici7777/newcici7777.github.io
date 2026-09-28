@@ -103,5 +103,6 @@ Cross + 空間/通道名詞
 - The dorm is opposite the dining hall.（宿舍在餐廳的正對面——兩棟建築物相對）。
 - He is sitting opposite me.（他坐在我對面）。
 
+
 ### On the other side of the 馬路/建築（在另一邊 / 對面）
 - The convenience store is on the other side of the street.（便利商店在馬路的另一邊/對面。）

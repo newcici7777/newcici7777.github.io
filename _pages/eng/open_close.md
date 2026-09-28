@@ -6,6 +6,11 @@ keywords: English, open, close, closed
 
 ## open(動) 打開
 - Each locker opens with a student ID.每一個置物櫃都用學生證來開啟。
+- Do not open your computer now.
+現在不要打開電腦。
+- Close your computer.把你的電腦關上。
+- Turn off your computer.把你的電腦關上。
+
 
 ### open 動詞(營業)
 - The museum opened at five last weekend.博物馆上周末在五点开门的。

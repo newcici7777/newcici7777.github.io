@@ -173,12 +173,15 @@ like 當連接詞來使用（直接連接一個子句），中間用來連接的
 - It looks like we are lost.（我們看起來好像迷路了。）
 
 ### Sound like（聽起來像...）
-用於聽覺。
+#### 用於聽覺。
 - That music sounds like an old jazz song. （那段音樂聽起來像老爵士樂。）
 - It sounds like someone is crying.（聽起來像有人在哭。）
 - It sounds like someone is knocking on the front door. （聽起來像有人在敲大門。）
+
+#### 感覺起來
 - Your plan sounds like a wonderful opportunity. （你的計畫聽起來像是個絕佳的機會。）
 - That sounds like a great idea!（那聽起來是個好主意！）
+- If you eat pizza and play video game**s**, going to school sounds like a party.如果你吃披薩又打電動，上學聽起來就像在開派對。
 
 ### Smell like（聞起來像...）
 用於嗅覺。

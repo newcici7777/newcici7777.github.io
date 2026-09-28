@@ -11,7 +11,10 @@ get是取得汽油。
 - We can get gas at the next gas station.我們可以在下一家加油站加油。
 - We need to get gas before the trip.（我們出發前得去加個油。）
 - Where can I get gas around here?（這附近哪裡可以加油？）
-
+- Ben told me that we could get gas here.
+本告訴我我們可以在這裡加油。
+- We should get gas, shouldn't we?
+我們應該加油，不是嗎？
 
 ## get gas in the car 把油加進車子裡
 - But I got gas in the car ten minutes ago.你十分鐘前已經幫車子加過油了
@@ -46,3 +49,10 @@ the left? 左边的轮胎出了问题吗？
 - Maybe the tire needs air. Can you ask your brother to check the air levels? 也許輪胎需要打氣。你可以請你弟弟檢查一下胎壓嗎？
 
 - Get some air for the tire. While you get air, maybe enjoy some lemonade.
+
+- Is there a problem with the tire on the left?
+左边的轮胎出了问题吗？
+- Is there a problem with the tires ?
+輪胎出了問題嗎？
+- Is there a problem with the engine?
+發動機出了問題嗎？

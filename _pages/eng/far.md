@@ -18,7 +18,8 @@ for + 距離 時，用來表示某個**動作持續多遠**。
 ----------------------------
 
 ## be + [數字/距離單位] + from + [地點] 距離某個地點有多遠
-
+- It says that we're ten miles from the rest stop.
+它說我們離服務區十英里。
 - A mile from the theater（距離劇院一英里）
 - Two kilometers from here（距離這裡兩公里）
 - Ten minutes away from my office（距離我的辦公室十分鐘車程）

@@ -102,6 +102,8 @@ all 的意思是「全部、都」，收到的報告不是其中一兩份，而�
 - All of my friend**s** are here.（我所有的朋友都在這裡。）
 - All of the dog**s**.
   - 特指「我們眼前或討論中的那些」特定的狗（一定要加 of）
+- All of the models are wearing high heels.
+所有的模特都穿着高跟鞋。
 
 ## All of them(受格)
 all除了接名詞，最常跟受格代名詞結合。

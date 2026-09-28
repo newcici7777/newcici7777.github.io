@@ -18,6 +18,8 @@ for 在這裡是用途，用來指向**地點的方向**
 for 是用途，用來指向地點的方向。
 - That's a sign for a gas station.
   - 那是指向加油站方向的標誌。
+- That's a sign for a gas station, isn't it?
+那是一個加油站的標誌，不是嗎？
 
 ### A sign of 
 - That's a sign of a gas station.

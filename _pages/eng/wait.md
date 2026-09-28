@@ -10,6 +10,12 @@ keywords: english, wait
 - I can't wait!
 
 ## wait for 人/物
+- Duo, don't leave! Wait for me!
+多兒，不要離開！等我一下！
+- Wait for me, I'm leaving now.
+等我一下，我現在要離開了。
+- Wait for me, I won't take long!
+等我一下，我不會花很長時間！
 - Wait for me at the station.（在車站等我。）
 - wait for the bus.
 - I can't wait for my birthday party!
