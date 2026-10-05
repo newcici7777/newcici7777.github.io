@@ -121,7 +121,23 @@ temperture是可數名詞，通常用複數S，be動詞用are
 例句:
 - It's too foggy, I can't see the starts.雾太大了，我看不到星星。
 
+------------------
+## 溫度
 
+- It is cold here in the spring.
+在春天這裡很冷。
+
+---------------------
+
+## the weather
+- how is the weather in australia
+澳大利亞的天氣怎麼樣？
+
+- Is the weather hot? - No, it is cold.
+天氣熱嗎？— 不，很冷。
+
+- how is the weather in April
+四月的天氣怎麼樣？
 
 --------------------------------------
 

@@ -10,6 +10,7 @@ keywords: english, follow
 * You can follow the direction**s** on this paper.你可以按照這張紙上的說明操作。
 - Follow the direction**s** **on** the back of the medicine box. （請依照藥盒背面的服用指示。）
 
+
 ### follow + the guidelineS (按照指示)
 - Always follow safety guideline**s** when using the equipment.（使用設備時，請務必遵循安全準則。）
 
@@ -29,6 +30,10 @@ keywords: english, follow
 ## directions 照著導航/指示走
 - Follow the directions.（照著導航/指示走）
   - Just follow the directions on Google Maps.
+
+## follow the highway 走高速公路
+- You should follow the highway.
+你應該走高速公路。
 
 ## follow a map 跟著地圖走
  - We found the hidden cafe through following a map. （我們根據地圖找到那間隱藏版咖啡廳。）

@@ -8,7 +8,7 @@ work是抽象名詞，不可數名詞，前面不加a 或the
 - at work(在工作 / 在上班）
   - Eddy is at work.
   - I can't talk right now, I'm at work.（我現在不能講話，我在上班。）
-
+- Are you at home or at work?你在家还是在工作？
 - Do you use **the internet** at work?你们在工作时用网络吗？
 - They speak Chinese at work.
 - Do you use your new computer at work?你在工作时用你的新电脑吗？
@@ -23,6 +23,19 @@ at 在這裡就像是一個定位針，精準指出你是在「前一份工作�
 - at her job：強調她是在這個工作崗位／環境中執行任務。
   - Emily serves food at her job.艾蜜莉（Emily）在她的工作崗位上供應食物。
 
+## job,task 任務
+
+- Which task did you get from the boss?
+你從老板那拿到什麽任務？
+- Which job did you get from the boss?你从老板那拿到了什么任务？
+- The manager gave everyone a different job.
+經理給大家不同的任務。
+- The sales department has an important job .
+銷售部門有一個很重要的任務。
+- different job**s** 不同任務
+- The sale**s** department has an important job.销售部门有一个很
+重要的任务。
+  - sale**S** 要記得加S
 
 -----------------------------
 
@@ -62,10 +75,7 @@ at 在這裡就像是一個定位針，精準指出你是在「前一份工作�
 工作。
 - work at **a** bank（在銀行上班）
 
-## work at the 
-
 - work at the same company（在同一家公司上班）
-- My part-time job at the dining hall.我在餐廳的兼職工作。
 
 ---------------------------
 
@@ -192,8 +202,6 @@ today.
 - at the office (據點)
   - She is at the office.人在辦公室這個地點。
 
---------------------------
-
 -------------------------------
 
 ## start a new business 創業
@@ -245,8 +253,16 @@ complete明確目標、任務要完成，表單需要填寫。
 - was your younger sister a hotel worker?你的妹妹以前是一个酒店员工吗？
 - They were **the best** worker**s** **at** this company.他们以前是在这家公司最好的员工。
 
-## 其它
+## work on (參與)
 - I don’t work on this project.這個專案我不參與 
+
+## a part-time job
+- He has a part-time job in the summer
+他在夏天只有一份兼職工作。
+- Can teenagers have part-time jobs
+青少年可以有兼職工作嗎？
+- My part-time job at the dining hall.我在餐廳的兼職工作。
+- Working part-time at the dining hall is a great way to meet people on campus.在學生食堂打工是結識校園裡新朋友的好方法。
 
 
 -------------------

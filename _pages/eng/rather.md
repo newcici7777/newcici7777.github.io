@@ -85,5 +85,3 @@ Rather than放句首
 （**與其**為這件事爭吵，我們不如一起找解決方法。）
 9. **Rather than** wait for things to happen, we should take the initiative.
 （**與其**被動等待事情發生，我們不如主動出擊。）
-10. **Rather than** give up halfway, she decided to push through to the end.
-（**與其**半途而廢，她決定堅持到底。）

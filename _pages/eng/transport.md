@@ -180,14 +180,18 @@ Go on (something)：是一個動態的過程——指你跨出腳步、走上車
 ## on foot
 走路： 一定要用 on foot。
 - I go to school on foot. (我不搭車，我走路去學校。)
+- We'll visit the Grand Canyon on foot.
+我們會步行遊覽大峽谷。
+- We can get to market on foot.
+我們可以步行去市場。
+- I go to school on foot.我走路上學
 
 --------------------
 
-## by/ take / on / on foot 比較
+## by/ take / on 比較
 - I like to travel by train.我喜歡搭火車旅遊
 - I always take the train.我總是搭那班火車 
 - I travel on the train.
-- I go to school on foot.我走路上學
 
 ----------------------
 

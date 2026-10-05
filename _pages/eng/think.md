@@ -3,6 +3,11 @@ title: think, thought
 date: 2026-08-28
 keywords: English,think,thought
 ---
+## think + Ving子句
+- do you think spelling is hard
+你覺得拼寫很难嗎？
+
+
 ## think + 子句 (認為)
 主詞 + think + that可省略 + (完整子句)
 - why do you think that?為什麼你這麼覺得？

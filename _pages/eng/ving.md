@@ -41,7 +41,13 @@ keywords: English,finish,start,begin
 - She started studying about an hour ago.她大約一個小時前開始讀書。
 
 ### start to + V 因為還沒做，準備要去做
+- Maybe I should start to learn Japanese.
+也許我應該開始學習日語。
+
+
+### start to + V (狀態切換) 開始
 to + V，強調那個「跨入新狀態」的瞬間切換
+
 - It started to rain. (突然開始下雨了)
 - The baby started to cry. (寶寶突然開始哭了。 ➔ 突然爆哭的瞬間)
 

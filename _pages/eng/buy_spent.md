@@ -13,7 +13,8 @@ keywords: buy, get, pay, spend, take, cost
 - Can I pay with linepay.
 - Can I use a credit card. 
 - Can I pay with a credit card.
-
+- Can I pay with a credit card in that store? - No, it's cash only.
+我可以在那家店用信用卡付款嗎？— 不行，只收現金。
 - Can I pay with cash?我可以用現金付款嗎？
 - I would like to pay with cash.我想付现金。
 - Would you like to pay with a credit card?你想要用信用卡付钱吗？

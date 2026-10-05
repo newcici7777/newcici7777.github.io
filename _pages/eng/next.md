@@ -70,7 +70,7 @@ next 當作「順序副詞」使用，意思是「接下來、下一步」。
 - The next day / The next morning（隔天 / 翌晨）
   - We arrived late at night, and the next morning we went to the beach. （我們深夜才抵達，隔天早上我們就去海邊了。）
   - I will finish this report by the next morning. （我會在隔天早上之前完成這份報告。）
-
+* Let's welcome the next model to the stage!讓我們歡迎下一位模特到台上吧！
 
 ## next(代名詞)
 next 已經不是形容詞（去修飾後面的名詞），而是直接被當作「代名詞」來用了。

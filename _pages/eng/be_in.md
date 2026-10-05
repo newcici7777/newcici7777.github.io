@@ -28,7 +28,8 @@ home在此時是抽象名詞，不可數，前面不可以加a跟the。
 - at home（在家 / 在家休息）
   - I just want to stay at home tonight.（我今晚只想待在家。）
   - Did you forget your eraser at home?
-  
+  - Are you at home or at work?你在家还是在工作？
+
 ## at a 活動
 
 at + 可以數「一場一場」的用a
@@ -48,13 +49,23 @@ go to bed「去睡覺」這件事情，bed前面沒加the
 - You need to go to bed!  
 - go to the bed 去床邊  
 
+### in bed（在床上睡覺 / 賴床）
 當我們用 in bed時，大腦畫面是「被四周的牆壁、邊界包覆在裡面」。    
 bed 此時是抽象名詞，不可數名詞，不能用a 跟 the。  
 
-- in bed（在床上睡覺 / 賴床）
-  - She is in bed.她在睡覺/賴床
-  - She was still in bed at 11 AM.（她早上11點了居然還在床上躺著。）
-  - And I want to sleep in your bed.
+- I was lying in bed and watching TV all day
+我一整天都在床上躺着看电视。
+- She is in bed.她在睡覺/賴床
+- She was still in bed at 11 AM.（她早上11點了居然還在床上躺著。）
+- And I want to sleep in your bed.
+- Why are you lying in bed
+你為什麼在床上躺着？
+- Were you lying in bed all day
+你一整天都在床上躺着嗎？
+- Do you want to lie down
+你想要躺下嗎？
+- I was lying in bed and watching TV all day.
+我一整天都在床上躺着看電視。
 
 其它睡的介系詞
 - You can sleep on my pillow.

@@ -525,6 +525,8 @@ seem, sound, look, appear + to
 ```
 表示「對我而言／聽起來對我怎樣」（感受、觀感）
 
+- Great, it sounds good to me!
+很棒，我覺得聽起來不錯！
 - That **sounds like** a good idea to me.（這聽起來是個好主意——依我的感覺。）
 - That **sounds like** a great plan to me. （聽起來這對我來說是個很棒的計畫。）
 * English **sounds** difficult **to me**.（英文對我來說聽起來很難。——強調「依我的感受」它是難的。）

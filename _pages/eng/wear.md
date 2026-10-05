@@ -26,6 +26,8 @@ wear 不僅僅是「穿（衣服）」的動作，它同時也用來指「身上
 ## wear 穿戴什麼在身上
 一般現在式通常用來表達「習慣、常態或事實」
 
+- She likes to wear expensive shoes.
+她喜欢穿贵的鞋。
 - But shouldn't he wear work clothes? My teacher wears a tie in online classes.但他不該穿工作服嗎？我的老師在線上課程時會打領帶耶。
 
 - All personnel must wear ID badges. 所有員工都必須佩戴識別證。
@@ -149,6 +151,10 @@ on，是因為它表達的是「接觸並覆蓋在表面」的物理位置！
 
 * She's dressed in a beautiful bathing suit.她穿著漂亮的泳衣。
 * The gold shirt he's dressed in is made of cotton.他穿着的金色衬衫是棉质的。
+- I like the gold dress the model is dressed in.
+我喜歡模特穿著的金色連衣裙。
+- He's dressed in a suit and tie.
+他穿著西裝打着領帶。
 
 --------------------
 ## change clothes 換衣服

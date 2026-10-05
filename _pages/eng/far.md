@@ -18,6 +18,7 @@ for + 距離 時，用來表示某個**動作持續多遠**。
 ----------------------------
 
 ## be + [數字/距離單位] + from + [地點] 距離某個地點有多遠
+
 - It says that we're ten miles from the rest stop.
 它說我們離服務區十英里。
 - A mile from the theater（距離劇院一英里）
@@ -205,6 +206,10 @@ ten minutes(2分鐘) away(遠)
 ```
 [地點 A] is + [距離數字] + miles/meters/minutes + away from + [地點 B]
 ```
+- There's a playground about a mile away from the house.
+離房子大約一英里遠有一個遊樂場。
+- This house is only a mile away from my company.
+這個房子離我的公司只有一英里遠。
 - The airport is one kilometer away from here.
 （機場離這裡一公里遠。）
 - It's two miles away from the station.（離車站有兩英里遠。）

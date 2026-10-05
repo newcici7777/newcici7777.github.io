@@ -71,6 +71,7 @@ carry + [物品/人] + to + [目的地]
 
 ### 背包包
 - She was carrying a small designer purse.（她當時拿著一個名牌小包包。）
+- My husband carried my purse to the car.我的丈夫把我的手提包拿到了车上。
 
 ### 抽象事物
 - Carry a secret（保守秘密）

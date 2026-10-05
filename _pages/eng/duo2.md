@@ -68,12 +68,7 @@ fall off + 掉落的地方
 
 ----------------------
 
-## an ad for 
-- We saw an ad for this clothes store.我们看到了一个这个服装店的广告。
-- Is this an ad for a restaurant?这是一个餐厅的广告吗？
-- I saw this ad yesterday.我昨天看到了这个
-广告。
-- an ad for this clothes store. 这个服装店的广告
+
 
 ---------------------------
 

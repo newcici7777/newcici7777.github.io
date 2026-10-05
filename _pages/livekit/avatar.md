@@ -132,3 +132,23 @@ uv run src/agent.py dev
 ```
 lk agent deploy
 ```
+
+--------------------------------
+
+
+![img]({{site.imgurl}}/livekit/apikey1.png)<br>
+
+![img]({{site.imgurl}}/livekit/apikey2.png)<br>
+
+![img]({{site.imgurl}}/livekit/apikey3.png)<br>
+
+![img]({{site.imgurl}}/livekit/apikey4.png)<br>
+
+![img]({{site.imgurl}}/livekit/apikey5.png)<br>
+
+![img]({{site.imgurl}}/livekit/apikey6.png)<br>
+
+0905111322
+8/18
+
+![img]({{site.imgurl}}/livekit/apikey7.png)<br>

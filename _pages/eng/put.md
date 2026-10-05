@@ -90,6 +90,8 @@ Put + 東西 + 地方 ＝ 把東西「放」在某處
 - Can you put on the movie we talked about yesterday? 你可以播放我們昨天聊的那部電影？
 - Let's put on some cartoons for the kids to watch. 我們放一些卡通給小朋友看吧。
 - He loves to put on late-night talk shows before going to sleep. 他喜歡在睡前看個深夜脫口秀。
+- Are you going to put a movie on?
+你打算放一场电影吗？
 
 ### put on the news 播放新聞
 - She put on the news to check the weather forecast. 她打開新聞來查看氣象預報。
@@ -99,7 +101,14 @@ Put + 東西 + 地方 ＝ 把東西「放」在某處
 - Please put on some relaxing music while we work. 我們工作時，請放一些輕鬆的音樂。
 - Can you put on that song we heard in the car? 你可以放我們在車上聽的那首歌嗎？
 - I like to put on jazz when I cook dinner. 我喜歡在煮晚餐時放爵士樂。
+- should we put on some music
+我們應該放一些音樂嗎？
+- Let's put on some classical music.
+咱們放一些古典音樂吧。
 
+### put the radio on
+- Could I put the radio on?
+我能放收音機嗎？
 
 ## put on the lights 燈打開
 - It's getting dark, let's put on the lights.（天黑了，我們把燈打開吧。）

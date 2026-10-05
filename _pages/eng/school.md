@@ -41,6 +41,7 @@ keywords: English
 - Do you have classes today? 你今天有课吗？(注意！classes用複數)
 - I have speaking lessons every afternoon.我每天下午都有口语课。
 - He has five classes and a lot of homework.他有五門課和很多家庭作業。
+- how many classes do we have?我们有几节课？
 
 ## has a lesson
 課表有課。
@@ -89,8 +90,10 @@ take 是：「花時間、花力氣」
 
 
 -----------------------
-## go to health 上健康課
+## health 上健康課
 
+- you need to take health before you graduate
+在你畢業之前需要上健康教育課。
 - Before I go to health.
   - 原本: Before I go to health class.（在我去上健康課之前）
 - I'll talk to Dr. White before I go to health.
@@ -371,3 +374,12 @@ dorm 就是大學或學院裡的學生宿舍（dormitory）的口語簡寫。
 ## advanced 高級
 - I'll take advanced English next semester.
 我下學期會上高級英語。
+
+--------------------------------
+## 學校相關單字
+
+
+- Do college students use **lockers**?
+大學生用**儲物櫃**嗎？
+- Each student will get **a student ID** before school starts.
+每個學生會在開學之前拿到**一張學生證**。

@@ -15,9 +15,7 @@ keywords: english,
 
 ### 2. Front desk（接待櫃檯、前台）
 公司、飯店、大樓或學校正門口一進去的「主要接待、登記、問訊處」，負責迎賓、接電話、發放訪客證或處理入住。
-* 飯店的櫃檯（辦理入住/退房）。
-* 辦公大樓或企業大廳的警衛/接待處（訪客必須先在這裡登記）。
-* 學校行政大樓或健身房的服務台。
+
 
 例句:
 * If you have any questions, please ask the staff at the **front desk**.（如果你有任何問題，請詢問**接待櫃檯**的工作人員。）
@@ -25,6 +23,12 @@ keywords: english,
 --------------------------
 ## menu
 - on the menu（在菜單上——食物被印在菜單的紙面或頁面上）
+- I don't like buffets so I'll order something on the menu
+我不喜歡自助餐，所以我會點菜單上的東西。
+
+## order 點餐
+- They aren't going to order the pork curry
+他們不打算點咖哩豬肉。
 
 ## 餐具介系詞
 - on the plate（在盤子裡——食物放在盤子的表面上）
@@ -37,6 +41,8 @@ keywords: english,
 - The food at the restaurant was terrible!
 - The food was excellent!食物很棒！
 - food on the mountain
+
+
 
 ----------------------
 
@@ -92,10 +98,12 @@ buffet 在英文中確實有這兩種主要的含意，而且它們息息相關�
 主菜是烤雞加檸檬醬。
 
 
-
 ## the second course 第幾道菜
+- The first course is a bowl of mushroom soup.
+第一道菜是一碗蘑菇湯。
 - The second course is a salmon salad.第二道菜是一份三文魚沙拉。
-
+- The third course is the main course
+第三道菜是主菜。
 
 -----------------
 西餐通常分為：

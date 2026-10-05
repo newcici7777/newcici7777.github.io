@@ -309,12 +309,6 @@ take a right
 - Is your house at the corner?
 
 
-## the end of
-- Go straight **to** the end of this street.直行到这条街的尽头。
-- Go straight, and turn left **at** the end of this street.直行，然后在这条街的尽头左转。
-
----------------------------------
-
 
 
 

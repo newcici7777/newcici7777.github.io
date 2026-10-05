@@ -17,7 +17,7 @@ keywords: flutter, dart, variable
 {% endhighlight %}
 
 ## 類型 變數名
-Python 的類型有以下幾種:
+類型有以下幾種:
 {% highlight dart linenos %}
   int n1 = 10;
   String str = "Hello";

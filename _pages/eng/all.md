@@ -21,6 +21,7 @@ All 量詞限定詞（Quantifiers）—— 交代數量，用來修飾名詞的�
   - 泛指世界上所有的狗（不用加 of）
 - 不可數名詞: All water is precious.（所有的水都是珍貴的。）
 - All water is essential.（所有的水都很重要——泛指全世界的水）
+- Not all models are thin.不是所有的模特都很瘦。
 
 
 - in all bottles（瓶子） 指「世界上所有瓶子」或「所有種類的瓶子」。

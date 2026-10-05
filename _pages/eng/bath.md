@@ -14,6 +14,7 @@ keywords: english,
 - I want to take a bath.我想要泡個澡  
 - He took two shower**s** yesterday.
 
+- Anna was taking a shower while Lisa was drying her hair.丽莎在吹头发时，安娜在冲澡。
 當你想用「動作」來表達「洗澡」時，通常會搭配一個動詞（如 take 或 have），把 bath 當作受詞：
 - take a bath / have a bath
 - take a shower 
@@ -27,3 +28,4 @@ keywords: english,
 - I washed my hair, so l need to dry it. 
 - I need to dry my hair.（我需要把頭髮弄乾／吹乾。）
 - Give me a minute, I'm drying my hair.（等我一下，我正在弄頭髮／吹頭髮。）
+- Are you drying your hair?你在吹头发吗？

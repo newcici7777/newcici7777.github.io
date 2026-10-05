@@ -89,8 +89,6 @@ What形容詞 + 不可數名詞time
 
 ------------------------
 
-## at the end of
-- Our kids will start school at the end of August.(我们的孩子们会在八月底开学。)
 
 ## At the age of 年紀(時間副詞)
 at的核心概念是「在某個精準的點」。

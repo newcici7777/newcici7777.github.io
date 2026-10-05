@@ -33,6 +33,8 @@ keywords: English, sell, for sale
 - The earrings you like are sold.(你喜歡的耳環已經賣掉了)
 - The earrings are sold.（這副耳環已經賣掉囉／被買走了。）
 - Sorry, this item is sold out.（抱歉，這個商品賣光了。）
+- This house was sold to us by a stranger.
+這個房子是一個陌生人賣給我們的。
 
 ## be + on sale(名詞) 正在特價中
 - the ring is on sale.這個戒指正在特價中

@@ -31,13 +31,13 @@ dart test.dart
 
 ## Trae編輯器使用方式
 安裝Dart<br>
-![img]({{site.imgurl}}/dart/install_dart2.png)<br>
+![img]({{site.imgurl}}/flutter/install_dart2.png)<br>
 
 新建檔案<br>
-![img]({{site.imgurl}}/dart/install_dart1.png)<br>
+![img]({{site.imgurl}}/flutter/install_dart1.png)<br>
 
 執行程式碼，並輸出。<br>
-![img]({{site.imgurl}}/dart/install_dart3.png)<br>
+![img]({{site.imgurl}}/flutter/install_dart3.png)<br>
 
 ## `Run | Debug` 出不來
 
@@ -60,4 +60,4 @@ environment:
 ```
 
 重啟或重新載入 IDE．會有`Run | Debug`<br>
-![img]({{site.imgurl}}/dart/install_dart4.png)<br>
+![img]({{site.imgurl}}/flutter/install_dart4.png)<br>

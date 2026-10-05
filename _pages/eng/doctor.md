@@ -9,11 +9,24 @@ keywords: English
 go to the [職業]，
 ```
 - Go to the doctor：去看醫生（內科／一般門診）  
-- Go to the dentist：去看牙醫  
-- Go to the vet：去獸醫那裡（看寵物）  
+- Go to the dentist：去看牙醫   
+  - I have a toothache, so I need to go to the dentist.（我牙痛，所以我需要去看牙醫。）
 
-- I have a toothache, so I need to go to the dentist.（我牙痛，所以我需要去看牙醫。）
+## go to the vet 去獸醫那裡（看寵物） 
+- I need to take the dog to the vet.
+我需要帶狗去看獸醫。
+- I love animals, so I want to be a vet when I grow up.
+我愛動物，所以當我長大時，想要當一個獸醫。
+
+## be at the dentist
 - She is at the dentist now.（她現在在牙醫診所。）
+
+## take 人 to the doctor (帶某人看醫生)
+- Someone will take you to the doctor.
+有人會帶你去看醫生。
+- I'll take you to the doctor so you can get an X-ray.
+我會帶你去看醫生，這樣你可以拍一個X光片。
+
 
 ## doctor's office
 - go to the doctor's office 看醫生  

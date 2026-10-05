@@ -78,9 +78,6 @@ in Taiwan.
 at 專屬名詞，前面不加a、the
 - I met my friend at Big Ben yesterday morning.我昨天早上在大笨鐘见了我的朋友。
 
-## at the end of 
-- Is there a bookstore at the end of that
-street?
 
 ## at the front 在前面／在最前面
 - Which room is at the front?哪一個房間在前面？

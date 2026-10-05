@@ -34,3 +34,7 @@ keywords: English, open, close, closed
 - The museum **is open** **from** ten o'clock **to** five o'clock **on** Saturday, but it **is closed** **on** Sunday.
 - Is the restaurant open?那家餐斤开门了吗？
 - The office will be closed on the fifteenth of January.办公室会在一月十五号关门。
+
+### shut 關
+The window is broken so it won't shut
+窗戶壞了，所以它關不上。
