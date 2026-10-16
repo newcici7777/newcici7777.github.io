@@ -333,6 +333,8 @@ for 把「物品」和「用途」綁在一起，是用來做什麼的！
 - Reasons for the delay（延誤的原因）
 - She is famous for her singing.
 （她以唱歌聞名 / 因為會唱歌而知名。）
+- receive an award for（因為...而獲獎）
+  - He **received an award for** his bravery.（他因為勇敢而**獲得了**獎項。）
 
 -------------------------------------
 
@@ -545,3 +547,89 @@ seem, sound, look, appear + to
 - **Read** the letter **to** me, please. （請把信讀給我聽。）
 - She **threw** the ball **to** me. （她把球丟給我。）
 
+-------
+
+## for 取得
+- You can check the board for all the information.
+你可以查看（公告/資訊）板**取得**所有的資訊。
+* 原句: You can check the board **to get** all the information.（你可以查看看板**去拿到**所有資訊。）
+
+## go for 去拿
+* go for（去拿 / 去取得）：
+  * I'll **go for** the mail.（我去**拿**信件。）
+
+
+### check for 取得
+* *Please **check your email for** the confirmation.*
+（請查看你的電子郵件**以獲取**確認信。）
+
+### check for 查看
+* *You should **check the map for** the right direction.*
+（你應該看地圖**查看**正確的方向。）
+
+### check for 尋找
+* ***Check the fridge for** something to drink.*
+（查看冰箱**找找看**有沒有想喝的東西。）
+
+### search for 尋找
+* search for / look for（搜尋 / 尋找）
+* I am **looking for** my keys.（我在找我的鑰匙)
+
+### ask for 取得
+* He **asked for** a glass of water.（他要了一杯水 $\rightarrow$ 為了**取得**水）
+
+### apply for（申請以取得）：
+* She **applied for** a new job / scholarship.*（她申請了新工作/獎學金 $\rightarrow$ 為了**取得**職位/獎學金）。
+
+
+## 2. 「去接、去載」（ Send / Call for）
+
+* **`send for`**（派人去請）：
+* *Please **send for** a doctor.*（請派人去**請**醫生來。）
+
+
+* **`call for`**（接送 / 去拿）：
+* *I'll **call for** you at 8 PM.*（我晚上8點去**接**你。）
+
+
+---
+
+## 3. 「交易、付出代價」以換取某物（Exchange / Pay）
+
+在買賣或金錢交易時，`for` 代表「用...來換取/取得...」。
+
+* **`buy / pay ... for ...`**（花錢取得）：
+* *I **bought** this book **for** 20 dollars.*（我花20美元**買到了/換取了**這本書。）
+* *What can I **get for** $10?*（我花10美元可以**買到**什麼？）
+
+
+* **`exchange ... for ...`**（以...交換取得...）：
+* *You can **exchange** this item **for** a bigger size.*（你可以把這件衣服拿來**換取得**更大尺寸。）
+
+---
+
+## 4. 「獲得獎勵、懲罰、評價」（Reward / Credit）
+
+當因為某個表現或原因而**獲得**認可、獎賞或懲罰時。
+
+* **`get credit for`**（因為...而獲得讚賞）：
+* *She **got credit for** the success of the project.*（她因為這專案的成功而**得到了/取得了**功勞。）
+
+---
+
+## 5. 口語表達：`What is this for?`（這能用來換/取得什麼？）
+
+* **`What is ... for?`**
+* *What is this button **for**?*（這個按鈕是**用來達到/取得**什麼效果的？）
+
+
+* **`for free`**（免費取得）：
+* *You can get this sample **for free**.*（你可以免費**取得**這個樣品。）
+
+
+
+---
+
+## 💡 總結小撇步
+
+只要看到 **`[動作動詞] + for + [目標物]`** 的結構，`for` 幾乎都可以理解為 **「為了（獲得/取得/拿取/換取）該目標物」**！

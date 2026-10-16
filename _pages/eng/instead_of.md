@@ -1,14 +1,24 @@
 ---
-title: Instead of 代替
+title: Instead/ Instead of 代替
 date: 2026-08-27
-keywords: english, instead of
+keywords: english, instead, instead of
 ---
-## instead 放句尾
+## instead(句尾副詞) 替代/改為
 後面沒東西，不用加of
 - Do you want to sleep outside instead?
+- Is there anything else you want to do instead?（如果不做原本那件事的話），你改想做些什麼？
+- What were they going to eat instead?（既然不吃原本那個），他們後來改吃什麼？
+- We couldn't go to the beach, so we went to the pool instead.（我們去不成海灘，所以我們改去游泳池。）
+- I didn't buy the phone. I bought a laptop instead.
+（我沒買手機，我改為買了一台筆電。）
 
-## instead of 代替
-* **`instead of`**（代替、而不是）：通常只單純接「名詞」或「V-ing」。
+## instead of(介系詞片語) 代替
+主要是要做A事。
+```
+做A事 + instead of 代替 + 做B事
+```
+> instead of（代替）+ 名詞/V-ing
+
 
 `instead of` 後面只能接三種東西：
 
@@ -17,7 +27,11 @@ keywords: english, instead of
 * *I will go **instead of** him.*
 （我會**代替**他去。）
 * *We used paper cups **instead of** plastic.*
-（我們用紙杯，**而不是**塑膠杯。）
+（我們用紙杯，代替塑膠杯。）
+- He ate an apple instead of a donut.（他吃了一顆蘋果，代替甜甜圈。）
+- What were they going to eat instead of pizza?
+（如果不吃披薩，他們打算改吃什麼？）
+- I'll have tea instead of coffee.（我要喝茶，不是咖啡。）
 
 ### ② 動名詞（V-ing）
 

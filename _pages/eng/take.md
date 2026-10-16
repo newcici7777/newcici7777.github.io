@@ -100,7 +100,7 @@ Take 人 to 某地
 - You can sit here, these seats are’t taken.你可以坐這裡，這些座位沒人坐。
 - Take a seat.請坐(Take是佔位，自己找位子坐下來)
 - Come in and have a seat.(禮貌說法，主人跟客人說「你可以擁有一個位子」)
-- All the good time slots are taken. （所有好的時段都被約滿／被選走了。）
+
 
 - Excuse me, is this seat taken?（不好意思，這個位子有人坐嗎？——超高頻必背句型！）
   - No, it's not taken. Please go ahead.（沒有，沒人坐。請坐。)
@@ -156,6 +156,57 @@ take（拿、帶）+ in（進入）:「把...收進眼底」或「吸收進去�
 - Let me take down your phone number. （讓我把你的電話號碼記下來。）
 - Make sure you take down the important notes during the meeting. （開會時，記得把重要筆記寫下來。）
 
+---------
+
 ## write down 寫下來
 - Please write down your name here.
 請把你的名字寫在這裡。
+
+
+這是一個非常好的問題！這兩個片語在英文中的核心焦點（Focus）完全不同。
+
+這句話選擇用 **`write about`** 而不是 `write down`，主要原因如下：
+
+---
+
+## 1. 核心語意與焦點的差異
+
+### ① `write about`（寫**關於……的內容 / 創作主題**）
+
+* **焦點：** 放在「主題、內容或故事」。
+* **意思：** 指把某個話題、主題或經歷作為寫作的素材（創作、寫故事、寫文章）。
+* **為什麼這句用 `write about`：**
+*"She always writes **about** her bad dreams."*
+這句話的意思是「她總是**寫關於她噩夢的內容**（例如：把噩夢寫成小說、詩歌、日記故事）」。`bad dreams` 是她寫作的**主題**。
+
+---
+
+### ② `write down`（**寫下 / 記錄下來**）
+
+* **焦點：** 放在「動作本身（把字記在紙上/電腦裡）」**，通常帶有「為了怕忘記而**記錄、抄寫」的意味。
+* **意思：** 記下特定的資訊、電話號碼、清單或當下的想法。
+* **如果這句改用 `write down`：**
+*"She always writes **down** her bad dreams."*
+這句話會變成「她總是**把她的噩夢記錄下來**（例如：一醒來就趕快拿筆在紙上把噩夢的細節寫下來，以免忘記）」。
+
+---
+
+## 2. 比較表與例句對比
+
+| 片語 | 核心含義 | 中文翻譯 | 實用例句 |
+| --- | --- | --- | --- |
+| **`write about`** | 以……為**主題**進行創作或討論 | 寫**關於……** | *J.K. Rowling **writes about** magic.*<br><br>（J.K. 羅琳寫**關於**魔法的故事。） |
+| **`write down`** | 把資訊**記錄/抄寫**在紙上 | **寫下 / 記下** | *Please **write down** your phone number.*<br><br>（請**寫下**您的電話號碼。） |
+
+---
+
+## 3. 結合起來看
+
+如果想把兩個片語放在同一個情境，可以這樣理解：
+
+> *When she wakes up, she **writes down** the details so that she can **write about** her bad dreams in her new book.*
+> （當她醒來時，她會**寫下（記錄）**細節，這樣她才能在她的新書裡**寫關於（創作）**她噩夢的內容。）
+
+---
+
+所以原句用 **`writes about`**，是強調「噩夢」是她寫作或表達的**主題內容**喔！

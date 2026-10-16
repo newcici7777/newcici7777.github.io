@@ -3,6 +3,25 @@ title: on 狀態, on a 狀態
 date: 2026-09-18
 keywords: English
 ---
+## be + on 狀態
+- I'm on a break.（我在休息/放風中。）
+- I'm on business.（這句更簡短，意思是「我因公出差中」。）
+
+## go on 狀態
+go 本身是「去」，但加上 on 之後（go on），常常用來表示「進入某種狀態或活動」。
+除了度假外，這個組合在生活中非常百搭：
+- go on a trip（去旅行）
+- go on a date（去約會）
+- go on a business trip（去出差）
+- go on a diet（去節食／開始減肥）
+
+## be + on 進行中
+- be on duty 值勤中
+- be on sale 特價
+
+----------------
+
+
 ## on a 名詞 (在...過程中) 副詞
 副詞的主要工作之一，就是回答動詞發生的「時間、地方、狀況、原因」等背景資訊，在什麼情況下，發生了什麼事
 
@@ -126,27 +145,6 @@ on a call 是你正在講一通電話。所以需要用 a 來帶出個體的概�
   - Don't disturb her; she is on the phone.（別打擾她，她正在講電話。）
 - on a call ➔ 正在通話中（特別指語音會議或手機通話）
   - I'll call you back later; I'm on a call.（我等一下回你電話，我正在通話中。）
-
-為什麼同樣是 on 後面接名詞，有時候加 a、有時候加 the，有時候又什麼都不加（零冠詞）呢？
-其實，這並不是亂選的，而是取決於這個名詞在英文文法中的「特性」以及說話者想表達的邏輯。我們把前面學過的例子拿來對照，拆解成三個大原則：
-
-
-## be + on 狀態
-- I'm on a break.（我在休息/放風中。）
-- I'm on business.（這句更簡短，意思是「我因公出差中」。）
-
-
-## go on 狀態
-go 本身是「去」，但加上 on 之後（go on），常常用來表示「進入某種狀態或活動」。
-除了度假外，這個組合在生活中非常百搭：
-- go on a trip（去旅行）
-- go on a date（去約會）
-- go on a business trip（去出差）
-- go on a diet（去節食／開始減肥）
-
-## on 進行中
-- on duty 值勤中
-- on sale 特價
 
 
 ----------------------------

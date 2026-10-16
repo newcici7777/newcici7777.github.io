@@ -25,27 +25,6 @@ keywords: 其它
 - I want to invite one hundred people to my party.
 - did you invite me to go fishing because you want to talk more?
 
-----------------------------
-
-## hall 走廊
-- Is there a restroom at the end of the hall ? 走廊盡頭有洗手間嗎？
-- Down the hall（順著走廊走）
-- At the end of the hall（在走廊的盡頭）
-
-hall 要表示「禮堂、大廳、展覽館」這種比較大型的室內空間時，前面幾乎都會加上形容詞或名詞修飾語，用來明確指出這是哪一種用途的「廳」。
-
-功能或場所
-- dining hall（餐廳、飯廳）
-- concert hall（音樂廳）
-- lecture hall（演講廳、大講堂）
-- exhibition hall（展覽館）
-- assembly hall（禮堂、集會廳）
-
-特定機構或地名
-- School hall（學校禮堂）
-- town hall（市政廳）
-- hotel hall（飯店大廳，通常也常說 lobby）
-
 ---------------------------
 
 ## fall down 跌倒、往下倒塌

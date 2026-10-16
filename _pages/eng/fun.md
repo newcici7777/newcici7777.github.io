@@ -50,8 +50,7 @@ fun 在這裡是不可數名詞，前面不能加 a。
 ## had a lot of fun 弄得很開心
 - We **had** a lot of fun.（過去簡單式）：總結整場活動，意思就是「我們玩得很開心。」
 
-## have a good time 玩得開心。
-- - Don't forget to drink water during the hike and have a good time.別忘了在健行時喝水，並玩得開心。
+
 
 ## Are you having fun?
 -  Are you having fun?（你玩得開心嗎？／你現在過得愉快嗎？）

@@ -8,22 +8,61 @@ keywords: English, stop at
 - Stop at the convenience store.在便利商店前面停下來
 
 ## stop at 地點 (停留)
-在某個特定的地點（如商店、車站、別人家）停下來或短暫停留
+> 不管是不是順路，而是強調「在這個點停住」。  
+> 停留時間： 可長可短，視情境而定（例如公車站牌停靠、紅燈停下，或是在某景點停留）。  
+> 在某個特定的地點（如商店、車站、別人家）停下來或短暫停留
+> 當你想表達「在某個特定的地點（如商店、車站、別人家）停下來或短暫停留」時
+
 ```
 主詞 + stop + at + 具體地點（名詞）
 ```
-- I stopped at the bookstore on my way home.我在回家的路上，順便去了（在...停留）書店。
-- We stopped at a small cafe for coffee.（我們在一家小咖啡館停留喝咖啡。）
+
+### 停下來
+- The bus doesn't stop at this station.
+（這班公車不停靠這個站牌。）
+- We stopped at a red light.
+（我們停在紅燈前。）
 - The bus stopped at the station.（公車在車站停了下來。）
 - Should we stop at a gas station?我們應該在加油站停下來嗎？
-
-當你想表達「在某個特定的地點（如商店、車站、別人家）停下來或短暫停留」時
-```
-主詞 + stop + at + 具體地點（名詞）
-```
-- I stopped at the bookstore on my way home.我在回家的路上，順便去了書店。
-- We stopped at a small cafe for coffee.（我們在一家小咖啡館停留喝咖啡。）
 - The bus stopped at the station.（公車在車站停了下來。）
+
+### 短暫停留
+- I stopped at the bookstore on my way home.我在回家的路上，順便去了（在...停留）書店。
+- We stopped at a small cafe for coffee.（我們在一家小咖啡館停留喝咖啡。）
+
+
+## stop by + 地點 (順道繞過去 / 短暫拜訪)
+> 介系詞 by 的空間邏輯： 表示「在...旁邊、經過、順路經過」。  
+> 停留時間： 通常很短（幾分鐘到十幾分鐘）。  
+> 主要移動路線（例如下班回家），你在途中「順便偏離一下路線，開到某人身邊/某店旁邊停留一下」，隨後又繼續你的行程。
+
+- I stopped by your house at 3 PM. Were you out?（我下午三點有去你家，你當時人不在嗎？）
+- I'll stop by the grocery store on my way home.
+（我會在回家路上順道去一下雜貨店。）
+  - 主線是回家，中間「順路繞進去」買個東西。
+Can you stop by my office for a second?
+（你能順便過來一下我的辦公室嗎？）
+
+
+## stop at `vs` stop by
+- stop by 強調的是：「順路、順便、短暫拜訪/停留」（軌跡偏離主線再繞回來）。
+- stop at 強調的是：「精準停靠在某個特定地點/點位」（重點在於位置標示）。
+
+### 情境 A：去朋友家（強調順路拜訪 vs. 強調地點）
+- stop by
+  - I stopped by John's house yesterday.
+  我昨天順道去了一下 John 家（短暫坐坐、拿個東西就走了）。
+- stop at
+  - I stopped at John's house yesterday.
+  我昨天停在 / 去到了 John 家（強調地點是 John 家，不一定帶有「順路」的意思）。
+
+### 情境 B：開車途中的休息站 / 加油站
+- stop by
+  - Let's stop by the gas station to get some coffee.
+我們順便繞去加油站買杯咖啡吧！（把加油站當作途中順道一訪的地方）
+- stop at
+  - We stopped at the gas station.
+我們停在加油站。（強調車子停靠的位置）
 
 
 ---

@@ -45,6 +45,12 @@ Trip 則是一般廣義的「旅行、出遊」，不一定有導覽性質，單
 - The train journey to the countryside offered breathtaking scenery. （那趟開往鄉村的火車之旅沿途風景美不勝收。）
 - Her career journey to becoming a senior software engineer was full of challenges. （她成為資深軟體工程師的職業生涯歷程充滿了挑戰。）
 
+## How was your trip/journey?
+> `How was your 旅行相關名詞?` 來關心對方在某段時間內的經歷
+
+- How was your trip?  你剛結束的那趟旅程
+
+
 -----------
 
 ## travel(名詞) to 去 ... 旅行

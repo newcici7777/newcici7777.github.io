@@ -3,9 +3,32 @@ title: 有the、沒the
 date: 2026-09-08
 keywords: english, the
 ---
+## the 獨一無二職位
+在英文中，只要一個組織或範疇內「同一時間只有一個人能擔任」的最高職位，當指稱這個職位本身時，都習慣加 the：
+
+- the President（總統/國家元首）
+- the Prime Minister（首相/閣揆）
+- the CEO of Google（Google 的執行長）
+- the captain of the ship（這艘船的船長）
+
+## be/become + 獨一無二的職位(不用加~~the~~)
+當某個職位或頭銜在一個團體或情境中「只有一個」時，接在 *be* 動詞後面或當作補語，不加the。
+```
+be/become + 獨一無二的職位
+```
+- president（總統／董事長）
+  - He was elected President in 2020.
+（他在 2020 年當選為總統。)
+  - He was elected **president** of the company.（他當選為公司總裁。）
+* captain（隊長）: She became **captain** of the basketball team.（她成為了籃球隊隊長。）
+
+## 獨一無二職位 + 名字(不用加~~the~~)
+- President Biden announced a new policy.（拜登總統宣布了一項新政策）
+- Captain Jack saved the crew.（傑克船長拯救了船員）
+
+-------------------------
 
 ## 固定加the
-
 在英文中，有些名詞雖然前面沒有特別指明是哪一個，但因為它們代表的是**大家都有共識的環境、日常空間、社會機構或自然界**，所以習慣上會加上 `the` 形成固定片語。
 
 以下為你將這些常見的用法分類整理出來：
@@ -54,10 +77,7 @@ keywords: english, the
 這些片語很多都是「語感」的一部分，多看幾次、多用幾次就會自然習慣它們不需特別去想「哪一個」了！
 
 
-
 ---------------------------------
-
-
 ## 沒有the跟a的名詞
 談論「抽象類別」或「整體事物」時用零冠詞
 
@@ -120,16 +140,6 @@ keywords: english, the
 
 如果加上 the，會變成你們剛剛好在討論某一部特定的歌劇。  
 但如果你只是隨口問對方「平常喜不支持、欣不欣賞歌劇這種藝術」，就一定要用無冠詞的 **opera**。
-
-
-### 8. 獨一無二的職稱、頭銜（當作補語時）
-
-當某個職位或頭銜在一個團體或情境中「只有一個」時，接在 *be* 動詞後面或當作補語，通常不加冠詞。
-
-* **president**（總統／董事長）：*He was elected **president** of the company.*（他當選為公司總裁。）
-* **captain**（隊長）：*She became **captain** of the basketball team.*（她成為了籃球隊隊長。）
-* *例句*：**President Biden** announced a new policy.（拜登總統宣布了一項新政策 $\rightarrow$ President 前面不加 the）
-* *例句*：**Captain Jack** saved the crew.（傑克船長拯救了船員）
 
 
 ### 9. 城市、國家、洲名（專有名詞）

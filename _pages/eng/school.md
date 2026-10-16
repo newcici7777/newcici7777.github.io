@@ -314,14 +314,6 @@ from 是一個介系詞，表示「從...地方（或狀態）離開、脫離」
 ## be absent(形) from 缺席、不在
 - She is absent from work today. （她今天沒上班。）
 
---------------------
-## a study(n.書房), studies(n.學習狀況), study(v.讀書)
-- a study(單數) : 前面加上冠詞（a study）或形容詞時，它就是一個名詞，專指家裡用來讀書、辦公、寫字的「書房」。
-  -  the downstairs study（樓下的書房）
-- studies(複數) : 學業, 課業, 研究
-  - How about your studies?你的學業／課業怎麼樣啊？
-  - He is busy with his studies.（他忙於他的學業。）
-
 ---------------------
 
 ## review 複習
@@ -377,9 +369,260 @@ dorm 就是大學或學院裡的學生宿舍（dormitory）的口語簡寫。
 
 --------------------------------
 ## 學校相關單字
-
-
 - Do college students use **lockers**?
 大學生用**儲物櫃**嗎？
 - Each student will get **a student ID** before school starts.
 每個學生會在開學之前拿到**一張學生證**。
+
+
+------
+
+在 **"What exactly is a diploma?"** 這句話中，**`exactly`**（副詞，意思是「究竟、到底、確切地」）放在疑問詞 **`What`** 後面，是英文非常標準且道地的用法！
+
+以下為您拆解 **`diploma` 的定義** 以及 **`exactly` 放在疑問詞後面的文法結構**：
+
+---
+
+## 1. 文法解析：`exactly` 放在疑問詞後面
+
+在英文中，當我們想要**加強疑問語氣**，表達「到底、究竟、確切來說」時，最常見的做法就是**把副詞 `exactly` 直接放在疑問詞（What, Where, Who, Why, How）的後面**。
+
+### 句型結構：
+
+$$\text{疑問詞 (What/Where/Who...)} + \text{\textbf{exactly}} + \text{be動詞 / 助動詞} + \text{主詞}\dots?$$
+
+*  What（疑問詞：什麼）
+*  exactly（副詞：究竟/到底/確切地）
+*  is（be動詞）
+*  a diploma（主詞：畢業證書/文憑）
+
+### 💡 語感重點：
+
+* **一般問句：** *What is a diploma?*（文憑是什麼？）$\rightarrow$ 平鋪直敘地詢問定義。
+* **加強語氣（加上 `exactly`）：** *What **exactly** is a diploma?*（文憑**究竟/確切**是什麼？）$\rightarrow$ 代表你想知道更具體、更精準的細節，或者釐清容易混淆的概念。
+
+### 其他疑問詞的同款用法：
+
+* **Where exactly** do you live?（你**到底**住在哪裡？）
+* **Who exactly** said that?（那**究竟**是誰說的？）
+* **How exactly** does this machine work?（這台機器**確切來說**是怎麼運作的？）
+
+---
+
+## 2. 核心解答：What exactly is a diploma?（什麼是 diploma？）
+
+**`diploma`**（名詞）最標準的中文翻譯是「畢業證書」**或**「文憑 / 專修文憑」。
+
+它指的是：**由學校或教育機構頒發的官方文件，證明你已經順利完成了某個特定的學程或學位。**
+
+但根據國家制度與教育階段的不同，`diploma` 主要有以下兩種常見意思：
+
+### ① 泛指「畢業證書」（通用於中學與大學卒業）
+
+在許多英語國家（尤其是美國），當你高中或大學畢業時，拿到那張紙本的證書，就叫做 `diploma`。
+
+* *High school diploma*（高中畢業證書）
+* *He proudly showed his university diploma to his parents.*（他自豪地向父母展示他的大學畢業證書。）
+
+### ② 專指「修業文憑 / 大專文憑」（特指非學位的技職、副學士或高階專修課程）
+
+在英式教育體系（如英國、澳洲、新加坡）或高等教育中，`Diploma` 往往指一種「不需要讀到完整四年學士（Bachelor's Degree），但針對特定專業技能進行 1~2 年培訓」的文憑課程。
+
+---
+
+## 3. 補充： diploma vs. degree vs. certificate（一秒分清）
+
+這三個字常讓人搞混，它們的包含範圍與等級如下：
+
+| 單字 | 中文翻譯 | 核心含義 | 代表範例 |
+| --- | --- | --- | --- |
+| **Degree** | **學士/碩士/博士學位** | **最高層級的高等教育學力證明**（通常需讀 3~4 年以上） | Bachelor's Degree（學士學位）<br><br>Master's Degree（碩士學位） |
+| **Diploma** | **畢業證書 / 修業文憑** | **完成特定中高等教育或專業學程的官方證明**（通常 1~2 年） | High School Diploma（高中畢業證書）<br><br>Diploma in Graphic Design（平面設計文憑） |
+| **Certificate** | **結業證書 / 專業證照** | **短期課程（幾週到幾個月）或考取特定技能檢定的證明** | Certificate of Completion（結業證書）<br><br>Language Certificate（語言能力證書） |
+
+---
+
+在英文中，**`subject`**、**`course`** 與 **`class`** 雖然都可以翻譯成「科目」或「課」，但在學校教育情境下，它們的**涵蓋範圍**與**使用視角**有非常清晰的分工：
+
+---
+
+## 1. 核心定義與涵蓋層級（由大到小）
+
+$$\text{Subject（學科/知識領域）} \longrightarrow \text{Course（系統性課程）} \longrightarrow \text{Class（具體的某一節課/班級）}$$
+
+| 單字 | 核心意思 | 側重點 | 英文定義簡述 |
+| --- | --- | --- | --- |
+| **Subject** | **學科 / 知識領域** | 抽象的「知識分類 / 研究領域」 | What you study (the area of knowledge) |
+| **Course** | **完整課程 / 系列研習** | 包含完整學分、特定期程的一整門課 | A series of lessons leading to credit/qualification |
+| **Class** | **具體的一節課 / 班級** | 時間點上的「某一堂課」或「上課的班級成員」 | A single meeting/period OR the group of students |
+
+---
+
+## 2. 深入解析與範例對比
+
+### ① `Subject`（學科 / 科目）
+
+* **重點：** 指的是**知識的範疇（Broad area of study）**，不特指某個特定的學期、老師或上課時間。
+* **常用於：** 描述你喜歡/討厭什麼樣的知識領域。
+* **例句：**
+* *Math and Physics are my favorite **subjects**.*
+（數學與物理是我最喜歡的**學科**。）
+* *What **subject** do you teach?*
+（你教哪一個**科目**？）
+
+
+
+---
+
+### ② `Course`（課程 / 一整門課）
+
+* **重點：** 指的是**有系統規劃、有學分、有特定名稱的一整門課程**（通常持續一個學期或一整年）。
+* **常用於：** 選課（enroll in / take a course）、課程名稱（Course code/title）。
+* **例句：**
+* *I'm taking an online **course** in European History this semester.*
+（我這學期正選修一門歐洲歷史的線上**課程**。）
+* *This **course** consists of 12 lectures.*
+（這門**課程**包含 12 講。）
+
+
+
+---
+
+### ③ `Class`（一節課 / 班級）
+
+* **重點：**
+1. **具體的時間段（Lesson/Period）：** 指「特定時間點正在進行或要去的某一堂課」。
+2. **群體（Group of students）：** 指同班同學或一個班級。
+
+
+* **常用於：** 日常口語（去上課、下課、班級）。
+* **例句：**
+* *I have an English **class** at 10 AM tomorrow.*（我明天上午 10 點有一節英文**課**。）
+* *Silence in the **class**, please!*（**班上**請保持安靜！）
+* *She and I are in the same **class**.*（我和她同一個**班級**。）
+
+
+
+---
+
+## 3. 情境對比（一秒看懂差別）
+
+假設你想表達與「英文」相關的事物：
+
+* **Subject:** *"English is an important **subject**."*
+（英文是一個重要的**學科/科目**。 $\rightarrow$ 指英文這個語言與知識體系）
+* **Course:** *"I registered for an English Literature **course**."*
+（我報名了一門英美文學**課程**。 $\rightarrow$ 指這學期要修完、能拿學分的這門課）
+* **Class:** *"Sorry, I can't talk right now. I'm in English **class**."*
+（抱歉我現在不能講話，我正在上英文**課**。 $\rightarrow$ 指此刻人正坐在教室裡上某一節課）
+
+---
+
+## 4. 搭配動詞差異
+
+| 單字 | 常見搭配動詞 |
+| --- | --- |
+| **Subject** | *like / hate / study / teach / specialize in* a subject |
+| **Course** | *take / enroll in / sign up for / complete / pass / fail* a course |
+| **Class** | *go to / attend / skip / miss / have* a class |
+
+
+-----
+
+
+
+在這句話中，使用 **`lectures`** 而不是 `lessons` 或 `classes`，主要是因為「教育階段（大學 vs. 中小學）」**以及**「上課形式與氛圍」的不同：
+
+---
+
+## 1. 核心原因：場合與性質的差異
+
+### ① `Lectures`（大堂講座 / 授課）—— **大學與高等教育的專用詞**
+
+* **場合：** 主要用於**大學、研究所、公開演講或學術研討會**。
+* **性質：** 側重於教授在講台上單向講授（Lecture），學生在底下聽講、做筆記。
+* **為什麼這句用 `lectures`：**
+這句話提到 *"This **course** consists of..."*（這門**課程**包含……），在大學的課程綱要（Syllabus）或簡介中，算是一整門課分成的「幾堂大講堂/專題講授」，因此用 `lectures` 最為精準且具學術正式感。
+
+---
+
+### ② `Lessons`（單元課 / 教訓）—— **基礎教育（中小學）與技能訓練**
+
+* **場合：** 多用於**中小學（K-12）、語言學習、音樂/體育等技能特訓**（如 piano lessons, driving lessons）。
+* **性質：** 側重於「跟著老師一步步練習、吸收特定知識單元」。
+* **為什麼不用 `lessons`：**
+如果說 *"This university course has 12 lessons"*，聽起來會像在指國小或國中的「第 1 課、第 2 課」，對大學課程來說語感太過幼化或像基礎補習班。
+
+---
+
+### ③ `Classes`（具體的課時 / 上課）—— **通用口語，側重「時間點」**
+
+* **場合：** 日常通用，不分年齡層。
+* **性質：** 指「坐在教室裡上課的這個時間段」或「互動討論的場合」。
+* **為什麼不用 `classes`：**
+雖然在口語中說 *"This course has 12 classes"*（這門課要上 12 次課）聽得懂，但在寫課程大綱或介紹時，`classes` 顯得比較隨意，無法精準傳達出「每節課都是一個完整的學術主題講座」的含義。
+
+---
+
+## 2. 比較表：一秒搞懂三者差異
+
+| 單字 | 最常出現的場合 | 核心語感 | 範例 |
+| --- | --- | --- | --- |
+| **Lecture** | 大學、學術界、專家講座 | **單向講授、學術專題** | *The professor gave a **lecture** on poetry.*<br><br>（教授做了一場關於詩歌的**講座/授課**。） |
+| **Lesson** | 中小學、技能學習（音樂/語言） | **課本單元、技能練習** | *I have a piano **lesson** today.*<br><br>（我今天有鋼琴**課**。） |
+| **Class** | 日常生活、任何上課場合 | **時間段、實體教室課** | *I have an 8 AM **class** tomorrow.*（我明天早上 8 點有**課**。） |
+
+---
+
+## 3. 總結
+
+在句型 **"This course consists of 12 ______."** 中：
+
+* 用 **`lectures`** $\rightarrow$ 代表這是一門**正式的大學或學術課程**，包含 12 次專題授課。
+* 用 **`classes`** $\rightarrow$ 偏口語，代表上了 12 次課。
+* 用 **`lessons`** $\rightarrow$ 偏向基礎教材或技能課（如英語發音課、游泳課）。
+
+
+---------
+
+
+**是的，`campus` 的確是指「校園」！**
+
+而這裡的 **`campuses`** 就是 **`campus` 的複數形**（意思是「多個校園」或「多個校區」）。
+
+整句話的中文翻譯是：
+**「這所大學實際上擁有兩個校區。」**
+
+以下為您詳細說明字形變化與為什麼這裡要用複數：
+
+---
+
+## 1. 為什麼是 `campuses` 而不是 `campuse`？
+
+* **原形（單數）：** **`campus`**（結尾是字母 **-s**）
+* **規則：** 英文中，結尾是 **-us** 的單數名詞，變成複數時通常要**去掉 -us，改加上 -es**（或者 -i）。
+* 因此：`campus` $\rightarrow$ **`campuses`**（發音為 /ˈkæmpəz/）。
+* 類似的規則字：*bus*（公車）$\rightarrow$ *buses*；*class*（課程/班級）$\rightarrow$ *classes*。
+
+
+
+---
+
+## 2. 為什麼句子里要用複數 `campuses`？
+
+關鍵在於句首的數字 **`two`（兩個）**：
+
+* 如果只有一個校園 $\rightarrow$ *The university has **a campus**.*（單數）
+* 如果有兩個或多個校園 $\rightarrow$ *The university has **two campuses**.*（複數）
+
+因為數字是 `two`，後面的名詞就必須配合改成複數的 `campuses`。
+
+---
+
+## 3. 常見延伸用法
+
+在大學的英文情境中，常會聽到分校或多校區的說法：
+
+* **Main campus**（主校區）
+* **Branch campus**（分校區）
+* **Multi-campus**（多校區的）

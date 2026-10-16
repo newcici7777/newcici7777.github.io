@@ -143,4 +143,10 @@ weekday泛指平日裡的其中某一天。
 * *This is our **yearly** report.*（這是我們的**年度**報告。）
 * *They are planning their **yearly** vacation.*（他們正在規劃他們的**年度**假期。）
 
+-----------------------------
 
+## How was your + 時間 ?
+How was your + [時間名詞]? 來關心對方在某段時間內的經歷：
+
+- How was your day?你今天過得如何？
+- How was your weekend?你週末過得怎麼樣？

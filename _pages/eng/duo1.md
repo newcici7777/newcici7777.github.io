@@ -359,5 +359,53 @@ Deck 當名詞時，意思是「甲板」（船的甲板）或是「層、樓層
 - find out：通常是指「找出資訊、答案、真相」（抽象的概念或事情）。
 
 -------------------
+## be A not B
+先肯定（強調真相），再否定（排除錯誤的猜想）
+```
+主詞 + be + A(事實) + not + B(否定的情況)
+```
 
+- The thief was a bear not a person.（那個小偷是一隻熊，而不是一個人。）
+- 加上 but強調： The thief was a bear, but not a person.
+- not A but B
+  - 倒過來: The thief was not a person, but a bear.
 
+### 名詞
+- He is a teacher, not a student.（他是老師，不是學生。）
+- It's a feature, not a bug!（這是產品功能，不是程式漏洞！)
+
+### 形容詞
+- I am tired, not lazy.（我是累了，不是懶惰。）
+- She was angry, not sad.（她是生氣，不是難過。）
+
+------------------
+## witness 動詞/名詞
+### witness 動詞(親眼目睹 / 見證)
+- Paul witnessed a robbery.（保羅親眼目睹了一場搶案。）
+- Many people witnessed the accident.（許多人親眼目睹了那場車禍。）
+- We witnessed a miracle today.（我們今天見證了一個奇蹟。）
+
+#### 抽象時間/地點：見證了（歷史、變革、繁榮）
+英文非常喜歡把「年代」或「城市」當作主詞，擬人化地表達這個時代或地點「見證了...的發生」：
+
+- The 20th century witnessed rapid technological advances.（20 世紀見證了科技的飛速進步。）
+- This city has witnessed great changes over the past decade.（這座城市在過去十年中見證了巨大的變化。）
+
+### witness 名詞(證人)
+- Police are looking for a witness to the crime.
+（警方正在尋找這起犯罪的目擊者。）
+
+-----------------
+## break into
+### break into 闖入
+- That man wants to break into our house!
+（那個男人想要強行闖入 / 破門而入我們的房子！)
+
+### break into 打入某個市場或行業（突破門檻）
+- The company is trying to break into the Asian market.
+（這家公司正試圖打入/擠進亞洲市場。）
+
+### break into 突然
+突然開始（某種情緒或動作突然爆發，像突破了閥門）
+- She broke into tears.（她突然大哭起來。 ）
+- He broke into a run.（他突然邁開步伐跑了起來。）

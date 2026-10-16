@@ -85,26 +85,6 @@ keywords: give send show
 - can you send an email to duo
 - send an email!
 
-## show
-### 人 show + 人 + 物
-- Emma wants to show us her new house.
-- Can you show me your vegetable garden (你可以给我看看你的蔬菜园吗？)
-- Who showed you this place?谁给你看了这个地方？
-- Zari's mother shows her three more blue sweaters.(Zari媽媽拿給她另外三件藍色毛衣／又給她看了三件藍色毛衣）
-- But I have a note from my doctor. Look.Zari shows Lily the note.
-- Eddy shows Bea a leg exercise.
-- Eddy shows Bea another exercise for her back.
-- Can you show me that leg exercise again?
-- You don't remember? I iust showed it to you.
-
-### show 人 around 帶某人四處逛逛
-around 的詞性是副詞（Adverb）  
-around：修飾前面「帶領」的動作方向，表示「在周圍、四處、環繞地」移動  
-
-- I want to show her around.我想帶她四處逛逛
-- She offered to show us around the campus. （她主動提出要帶我們參觀校園。）
-- Let me show you around. （讓我帶你四處逛逛。）
-
 ## lend to
 ```
 lend + 某人 + 東西
@@ -127,3 +107,66 @@ borrow + 東西 + from + 某人
 
 ## teach 人 事
 - They taught me some English!
+
+------
+
+## show
+### 人 show + 人 + 物
+- Emma wants to show us her new house.
+- Can you show me your vegetable garden (你可以给我看看你的蔬菜园吗？)
+- Who showed you this place?谁给你看了这个地方？
+- Zari's mother shows her three more blue sweaters.(Zari媽媽拿給她另外三件藍色毛衣／又給她看了三件藍色毛衣）
+- But I have a note from my doctor. Look.Zari shows Lily the note.
+- Eddy shows Bea a leg exercise.
+- Eddy shows Bea another exercise for her back.
+- Can you show me that leg exercise again?
+- You don't remember? I iust showed it to you.
+
+### show 人 around 帶某人四處逛逛
+around 的詞性是副詞（Adverb）  
+around：修飾前面「帶領」的動作方向，表示「在周圍、四處、環繞地」移動  
+
+- I want to show her around.我想帶她四處逛逛
+- She offered to show us around the campus. （她主動提出要帶我們參觀校園。）
+- Let me show you around. （讓我帶你四處逛逛。）
+
+
+-----------
+
+在這句話 **"A diploma shows school completion."** 中，**`shows`** 的意思是「證明、表明、顯示」。
+
+整句話的中文翻譯為：
+**「畢業證書證明了（持有人）已完成學業。」**
+
+---
+
+## 1. 核心文法與語意解析
+
+1. **語意特點：**
+這裡的 `shows` 不是指用手「拿給別人看」的動作，而是指作為**正式文件或證據「證明 / 展現」了某個事實**（相當於 *proves*、*indicates* 或 *serves as proof of*）。
+2. **句型拆解：**
+* **A diploma**（畢業證書 / 學位證書，主詞）
+* **shows**（證明 / 顯示，單數動詞）
+* **school completion**（完成學業 / 畢業，受詞）
+
+
+
+---
+
+## 2. 同義字與替換說法
+
+在這種「文件/證書證明某事」的情境下，`shows` 可以替換為以下更有正式感或學術感的單字：
+
+* **proves**（證明）：*A diploma **proves** school completion.*
+* **indicates**（表明 / 顯示）：*A diploma **indicates** school completion.*
+* **certifies**（認證 / 證明）：*A diploma **certifies** that you have completed school.*
+
+---
+
+## 3. `show` 的常見引申意思對比
+
+| 意思 | 說明 | 範例 |
+| --- | --- | --- |
+| **證明 / 顯示**（本句） | 作為文件、數據或事實的證明 | *The study **shows** that sleep is important.*<br><br>（研究**顯示**睡眠很重要。） |
+| **展示 / 出示** | 實體拿出來給別人看 | *Please **show** me your ID.*<br><br>（請**出示**您的身分證。） |
+| **引導 / 帶領** | 帶某人去某個地方 | *Let me **show** you to your room.*<br><br>（讓我**帶**你去你的房間。） |

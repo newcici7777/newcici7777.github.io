@@ -109,3 +109,66 @@ Cross + 空間/通道名詞
 
 ### On the other side of the 馬路/建築（在另一邊 / 對面）
 - The convenience store is on the other side of the street.（便利商店在馬路的另一邊/對面。）
+
+-------
+
+在 **"The bookstore is opposite a coffee shop."** 與 **"It's opposite the park."** 這兩句話中，**`is opposite`** 表示「在……的對面」。
+
+這裡最關鍵也最容易讓人困惑的文法重點是：**`opposite` 在這兩句話中是作為「介系詞（Preposition）」使用**。
+
+以下為您詳細拆解 **`is opposite`** 的文法結構與常用用法：
+
+---
+
+## 1. 句型結構拆解
+
+在英文中，當我們用 **`be動詞 + opposite + 名詞`** 時，結構如下：
+
+$$\text{主詞} + \text{be動詞 (is/are)} + \text{opposite (介系詞)} + \text{地點/目標物 (名詞)}$$
+
+* **The bookstore**（主詞，書店）
+* **is**（be動詞，在）
+* **opposite**（**介系詞**，在……對面）
+* **a coffee shop / the park**（名詞，咖啡廳 / 公園）
+
+> 💡 **文法特點（重要！）：**
+> 介系詞 `opposite` 後面**直接接地點名詞**，**不需要**再加 `to` 或 `of`（在英式英語中偶爾會聽到 *opposite to*，但現代標準英語最常用的是**直接加名詞**）。
+> * ✅ *It's **opposite the park**.* （最自然、標準）
+> * ❌ *It's **opposite of the park**.* （不需加 of）
+> 
+> 
+
+---
+
+## 2. 同義片語替換（更容易理解的說法）
+
+`opposite` 作為介系詞時，完全可以替換為大家非常熟悉的片語 **`across from`**（在……對面）：
+
+* *The bookstore **is opposite** a coffee shop.*
+$= \text{The bookstore is across from a coffee shop.}$
+* *It **is opposite** the park.*
+$= \text{It is across from the park.}$
+
+---
+
+## 3. 補充：`opposite` 的其他常見詞性與用法
+
+`opposite` 這個字非常靈活，除了做**介系詞**外，還常見於以下詞性：
+
+### ① 作為「形容詞」（Adjective）：相反的、對面的
+
+* **放在名詞前：** *They live on the **opposite side** of the street.*（他們住在這條街的**對面**。）
+* **表示相反概念：** *They have **opposite opinions**.*（他們持**相反的**意見。）
+
+### ② 作為「名詞」（Noun）：對立面、相反的事物
+
+* *Hot is the **opposite** of cold.*（熱是冷的**反義詞/對立面**。）
+
+---
+
+## 4. 總結
+
+當您在指路或說明位置時：
+
+* 把 **`is opposite`** 直接當作 **「位在……對面」** 即可。
+* 記得後面直接接地點名詞：**`is opposite + 地點`**！

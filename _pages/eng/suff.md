@@ -1150,7 +1150,7 @@ Managerial (管理的 ← manager), Memorial (紀念的)
 - Complus-（強迫） + ory 
   - Compulsory（義務的、強制性的 → 法律規定非做不可的）。
 
-動詞 + ory = 名詞
+### 動詞 + ory = 名詞
 - Dorm-（拉丁文：睡覺，像 Dormant 休眠的）+ -ory = Dormitory（睡覺的地方 ➡️ 宿舍，簡稱 Dorm）。
   
 例外:
@@ -1211,21 +1211,37 @@ Managerial (管理的 ← manager), Memorial (紀念的)
 - Revolute（旋轉/變革） → Revolution（革命，名詞） → Revolutionary（革命性的，形容詞）。
 
 ## ery 名詞
-### ery 該職業工作的【場所】
-- Bak-（Baker 麵包師） + -ery → Bakery（麵包店 → 🌟 麵包師工作的地方）。
-- Nur-（Nurse 護士/看護） + -ery → Nursery（育兒室 / 苗圃 → 進行照料和培育的空間）。
-- Fish-（魚） + -ery → Fishery（漁場 → 捕魚、養魚的場所）。
+### 行為與事件過程
+* rob（動詞）： 單純的動作——「搶劫 / 強奪」。
+- robber（-er 人）：**搶匪**（執行動作的人）
+* **A** robbery 「一」整起搶案事件（包含搶匪衝進去、亮槍、掏錢、逃跑的整段歷程）。
 
-### ery 總稱 / 集合名詞
-- Machin-（機器） + -ery → Machinery（機械/機器總稱 → 🌟 不可數名詞，指工廠裡一整套的機械系統）。
-- Jewel-（珠寶） + -ery → Jewelry（珠寶首飾總稱 → 🌟 不可數名詞，代表桌上那一堆亮晶晶的首飾）。
-- Scen-（鏡頭/景色） + -ery → Scenery（風景/景色總稱 → 眼睛看過去一整片的大自然畫面）。
+
+| 基礎動詞 (Verb) | 加上 `-ery` / `-ry` | 轉換後的名詞（事件/行為） |
+| --- | --- | --- |
+| **`rob`**（搶劫） | **`robbery`** | **搶案 / 搶劫事件** |
+| **`burgle`**（闖入） | **`burglary`** | **入室盜竊案 / 闖空門事件** |
+| **`brave`**（勇敢的） | **`bravery`** | **英勇行為 / 勇氣** |
+| **`trick`**（捉弄/輕視） | **`trickery`** | **欺騙 / 惡作劇行為** |
+| **`forge`**（偽造） | **`forgery`** | **偽造罪 / 偽造事件** |
 
 ### 動詞 + ery = 名詞 某種技術、行為或狀態
 - Arch-（Archer 射手） + -ery → Archery（射箭術/射箭運動 → 🌟 射箭這門技術）。
 - Rob（搶劫，動詞） + -ery → Robbery（搶劫案/搶劫行為 → 🌟 搶劫這個動作的具體事件）。
 - Brib-（賄賂，動詞） + -ery → Bribery（行賄/受賄行為）。
 - Discov-（發現，動詞） + -ery → Discovery（發現 → 🌟 我們前面聊過，它是 discover + -y 融合成的，長相與 -ery 殊途同歸）。
+
+### ery 做這件事的地點、場所
+- Bak-（Baker 麵包師） + -ery → Bakery麵包店(烘焙的地方)
+- Nur-（Nurse 護士/看護） + -ery → Nursery育幼院/托兒所（照顧小孩的地方)。
+- Fish-（魚） + -ery → Fishery（漁場 → 捕魚、養魚的場所）。
+- brew（釀酒）+ -ery → brewery（啤酒廠） 釀酒的地方。
+
+### ery 總稱 / 集合名詞 (不可數名詞)
+- Machin-（機器） + -ery → Machinery機械設備（所有機器的總稱。不可數名詞）。
+- Jewel-（寶石） + -ery → Jewelry（珠寶首飾總稱 → 🌟 不可數名詞）。
+- Scen-（鏡頭/景色） + -ery → Scenery（風景/景色總稱 → 眼睛看過去一整片的大自然畫面）。
+
 
 ### ury 名詞
  -ury 結尾的字雖然不算特別多，但它們的意思通通符合「一個集體」或「一個抽象的狀態 / 地方」的規律：

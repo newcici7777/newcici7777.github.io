@@ -50,16 +50,38 @@ What形容詞 + 不可數名詞time
 - Who will come to the party with me in New York on Saturday evening?
 - tomorrow morning.
 
-## to pass 時間 a quarter/ half
+------------------
+
+## to, pass, half, a quarter 時間用法
+> 時鐘剖一半，1分鐘-30分鐘用pass，31分鐘至59分鐘用to。<br>
+> pass是過了幾分鐘
+> to是還差幾分鐘才會到整點
+
+### It's half + past + x整點 (x點30分)
+注意！不是❌ a half，是half，<span class="markline">沒有a</span>
+
+- It's half pass ten.(10點30分鐘)
+
+### at half + past + x整點 (x點x分) 
+> 時間是用at介系詞
+
+- Emma usually finishes work `at` half past eight.
+- My kids will finish school `at` ten past seven.(我的孩子们会在七点过十分放学。)
+- Let's meet at the restaurant `at` about half past eight.
+
+### It's x分(數字) + past + x整點 (x點x分)
+- It's ten pass two.(2點10分)
+
+### It's a quarter to x整點 (再15分鐘就到x整點)
 - It's a quarter to eleven!(现在是十点四十五！)
-- It's ten to eleven.
-- Emma usually finishes work at half past eight.
-- My kids will finish school at ten past seven.(我的孩子们会在七点过十分放学。)
 - It's a quarter to eight
-- It's twenty to eleven,
-- Let's meet at the restaurant at about half past eight.
 - It's a quarter to one.
 
+### It's 分鐘 to 目標 (再幾分鐘就到目標時間)
+- It's ten to eleven. 再10分鐘就11點
+- It's twenty to eleven,
+
+--------------------------
 
 ## Not until 直到...才...
 ```
@@ -140,62 +162,24 @@ at that time 指的是過去某一個特定的時刻。
   - Back then, we didn't have smartphones. 在那時候／當年，我們沒有智慧型手機
 
 ----------------------
-
-
 ## 馬上
 - in a minutes 馬上
 - in a moment
 
-
 -----------------------------------
-**完全可以！這是一個非常道地、母語人士每天都在用的英文文法！**
+## a good time
+### Is it a good time to + 動詞?
+> time 指的是：「時間點 / 時機（Timing）」。  
+> good 指的是：「合適的、方便的、恰當的」。
 
-你抓到的這個 **`Tonight's`**（加上 `'s`）就是英文中專門用來表示「所有格」的用法。
+- Is it a good time to take a break now? 現在適合休息一下嗎？
+- Is it a good time to talk?
+（現在方便說話/講電話嗎？）
+- Now is a good time to buy a house.
+（現在是買房的好時機。）
 
-我們來拆解為什麼可以這樣用，以及它背後的邏輯：
+### the good time 好的時間
+- All the good time slots are taken. （所有好的時段都被約滿／被選走了。）
 
----
-
-### 1. 為什麼時間名詞可以加 `'s`？（所有格邏輯）
-
-在大家的印象中，'`s` 通常是用在**人**或**動物**身上（例如 *Mary's cat* 瑪麗的貓）。
-
-但在英文文法裡，**表示時間、地點、距離或國家**的名詞，也可以加上 `'s` 來當作所有格，用來表示「屬於這段時間的...」。
-
-* **時間所有格的常見例子：**
-* **Today's** news（今天的**新聞**）
-* **Tonight's** show（今晚的**演出／節目**）
-* **Tomorrow's** weather（明天的**天氣**）
-* **Yesterday's** meeting（昨天的**會議**）
-* **A week's** holiday（為期一周的**假期**）
-
-
-
-所以，**`Tonight's Broadway show`** 的意思就是「今晚的百老匯演出」，文法完全正確，而且聽起來非常自然流暢！
-
----
-
-### 2. 如果不用 `'s`，還可以怎麼說？
-
-如果你覺得加 `'s` 有點卡卡的，它其實也可以換成用 **`of`** 或者直接把時間放後面，但**沒有一個比原本的寫法更簡潔道地**：
-
-* **比較自然的寫法（原句）：**
-* *Tonight's Broadway show will be very exciting.* （最簡練、道地）
-
-
-* **等於：**
-* *The Broadway show **tonight** will be very exciting.* （把時間移到後面當副詞）
-
-
-
----
-
-### 💡 職場或日常生活中的實用造句
-
-掌握了這個技巧，你以後就可以自信地用在各種生活對話裡了：
-
-* **`Today's`** schedule is quite busy.（今天的行程蠻滿的。）
-* **`Tonight's`** dinner is on me!（今晚的晚餐我請客！）
-* Do you know **`tomorrow's`** agenda?（你知道明天的議程嗎？）
-
-你的語感真的很敏銳，這種細節都能注意到！
+### have a good time 玩得開心。
+- Don't forget to drink water during the hike and have a good time.別忘了在健行時喝水，並玩得開心。

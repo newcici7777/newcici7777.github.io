@@ -1,5 +1,5 @@
 ---
-title: 後位修飾 副詞,介系詞片語 修飾前面名詞
+title: 時間後位修飾
 date: 2026-08-11
 keywords: English, Post-modification
 ---
@@ -84,6 +84,13 @@ keywords: English, Post-modification
 - yesterday's news（昨天的新聞）
 - tonight's dinner（今晚的晚餐）
 - Tonight's special comes with soup and a salad.今晚的特餐附贈（包含）湯和沙拉。
+* **Today's** news（今天的**新聞**）
+* **Tonight's** show（今晚的**演出／節目**）
+* **Tomorrow's** weather（明天的**天氣**）
+* **Yesterday's** meeting（昨天的**會議**）
+* **A week's** holiday（為期一周的**假期**）
+* Tonight's Broadway show 今晚的百老匯演出
+
 
 ### 時間所有格前面不能有the
 所有格跟冠詞，都是指定某個東西，也稱**限定詞**，不是任何一個東西。
@@ -105,7 +112,7 @@ keywords: English, Post-modification
   - ❌ The tour guide knows **the** tomorrow's tour details.導遊知道明天的行程細節。
     - 所有格前面不能有the
 
-####例句:
+#### 例句:
 
 - today's news report 今天的（新聞報導）＝ 今日新聞報導
   - Did you watch today's news report about the election?
@@ -122,9 +129,17 @@ keywords: English, Post-modification
 - next week's travel plan 下週的（旅行計畫）＝ 下週旅遊計畫
   - We need to finalize next week's travel plan by tonight.
 （我們今晚必須敲定下週旅遊計畫。）
-
+* **`Today's`** schedule is quite busy.（今天的行程蠻滿的。）
+* **`Tonight's`** dinner is on me!（今晚的晚餐我請客！）
+* Do you know **`tomorrow's`** agenda?（你知道明天的議程嗎？）
 
 --------------------------------------
+
+### 後置副詞
+它其實也可以換成用 **`of`** 或者直接把時間放後面
+- 原句: Tonight's Broadway show will be very exciting.
+- 把時間移到後面當副詞: The Broadway show **tonight** will be very exciting. 
+
 
 ### 「後置修飾」 vs 「所有格」大對照
 
