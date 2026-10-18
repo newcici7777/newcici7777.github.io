@@ -1,9 +1,8 @@
 ---
-title: on 進行中 持續 持續前進 關於
+title: on 進行中 持續 持續前進 關於 運作中
 date: 2026-08-09
 keywords: English
 ---
-
 ## 移動動詞 + on (動作持續/繼續)
 動作 + on「繼續、不中斷」，請保持現狀繼續下去。
 
@@ -51,24 +50,30 @@ Hold(握住) on(持續握住，不要中斷) 裡面的 on，其實跟電話的 o
 
 -----------------------------------
 
-## Come on 三種意思
 
-### 1.表示催促（快一點、加油）
-當你嫌別人動作太慢，或是想給對方打氣時，用這個意思。
-- 例句： Come on, we are going to be late for the movie! （快一點，我們看電影要遲到了！）
-- 例句： Come on, you can do it! Just a little bit more! （加油，你可以的！再堅持一下下！）
+## 3. On（副詞 Adv.）：持續/不停頓地向前
 
-### 2.表示「拜託啦 / 別這樣」（討價還價或希望對方答應）
-當你想拜託別人，或是覺得對方太嚴格、想說服對方時。
-- 例句： Come on, let me borrow your car for just one night. （拜託啦，把車借我開一個晚上就好。）
-- 例句： Come on, mom, can I stay up a little longer? （拜託嘛，媽媽，我可以再晚一點睡嗎？）
+`on` 作為副詞時，核心概念是「持續進行」，因此搭配移動動詞時就是「保持直線、繼續往前」。
 
-### 3.表示「少來了 / 拜託別鬧了」（不相信、無奈或吐槽）
-當你聽到荒謬的事情、藉口，或是覺得對方在騙你時。
-- 例句： Come on, you didn't even study, how did you get an A? （少來了，你根本沒讀書，怎麼可能拿 A？）
-- 例句： Come on, rain? We just planned this picnic! （不會吧/拜託，下雨？我們才剛計畫好要野餐耶！）
+* **`move on`**
+* **詞性：** `on` 為 **副詞（Adv.）**
+* **例句：** *Keep **moving on** until you reach the main entrance.*
+* **翻譯：** 保持**往前移動**，直到你到達主入口。
 
---------------------------------
+
+* **`push on`**
+* **詞性：** `on` 為 **副詞（Adv.）**
+* **例句：** *It was getting dark, but we decided to **push on**.*
+* **翻譯：** 天色漸漸暗了，但我們決定**繼續奮力往前推進**。
+
+
+* **`walk straight on`**
+* **詞性：** `on` 為 **副詞（Adv.）**
+* **例句：** ***Walk straight on*** *until you see the traffic light.*
+* **翻譯：** 一直**直直往前走**，直到你看到紅綠燈。
+
+-------------------
+
 ## on 關於
 這裡的 **`on`** 扮演著非常關鍵的角色，意思是「關於...」**或**「有關...的指南」。
 
@@ -110,26 +115,10 @@ And so on（等等..，表示話還沒講完、清單在繼續）
 
 | 空間概念 | **`on`（接觸 / 在……上面 / 穿戴上）** | **`off`（脫離 / 離開…… / 脫下）** |
 | --- | --- | --- |
-| **表面接觸** | *The cup is **on** the table.*<br>
-
-<br>（杯子在桌子**上**。） | *Keep your feet **off** the sofa.*<br>
-
-<br>（腳**離開/不要踩在**沙發上。） |
-| **穿戴/脫下** | *Put **on** your jacket.*<br>
-
-<br>（穿**上**你的外套。） | *Take **off** your shoes.*<br>
-
-<br>（脫**下**你的鞋子。） |
-| **載具上下** | *Get **on** the bus / train / plane.*<br>
-
-<br>（上公車/火車/飛機。） | *Get **off** the bus / train / plane.*<br>
-
-<br>（下公車/火車/飛機。） |
-| **位移/偏離** | *Drive straight **on**.*<br>
-
-<br>（繼續往前開。） | *The car drove **off** the road.*<br>
-
-<br>（車子開**偏離/駛離**了道路。） |
+| **表面接觸** | *The cup is **on** the table.*<br><br>（杯子在桌子**上**。） | *Keep your feet **off** the sofa.*<br><br>（腳**離開/不要踩在**沙發上。） |
+| **穿戴/脫下** | *Put **on** your jacket.*<br><br>（穿**上**你的外套。） | *Take **off** your shoes.*<br><br>（脫**下**你的鞋子。） |
+| **載具上下** | *Get **on** the bus / train / plane.*<br><br>（上公車/火車/飛機。） | *Get **off** the bus / train / plane.*<br><br>（下公車/火車/飛機。） |
+| **位移/偏離** | *Drive straight **on**.*<br><br>（繼續往前開。） | *The car drove **off** the road.*<br><br>（車子開**偏離/駛離**了道路。） |
 
 ---
 
@@ -140,61 +129,9 @@ And so on（等等..，表示話還沒講完、清單在繼續）
 | 設備狀態 | **`on`（開啟 / 運作中）** | **`off`（關閉 / 中斷）** |
 | --- | --- | --- |
 | **開關控制** | *Turn **on** the lights / TV.*<br>
-
-<br>（打工/開電視。） | *Turn **off** the lights / TV.*<br>
-
-<br>（關燈/關電視。） |
-| **機器狀態** | *The air conditioner is **on**.*<br>
-
-<br>（冷氣正**開著/運作中**。） | *The power is **off**.*<br>
-
-<br>（電源**切斷了/停電中**。） |
-| **訊號/通話** | *She is **on** the phone right now.*<br>
-
-<br>（她現在正在通電話中。） | *We got cut **off**.*<br>
-
-<br>（我們的電話**中斷/被切斷**了。） |
-
----
-
-## 3. 「生活與工作狀態」的對比（值班/進行中 vs. 休假/取消/偏離）
-
-在日常口語中，`on` 與 `off` 經常用來形容個人的工作、日程或專注狀態。
-
-### ① 工作與休假（On duty vs. Off duty）
-
-* **`be on duty`（值班 / 上班中）：**
-* *Dr. Smith is **on duty** tonight.*（史密斯醫師今晚**值班**。）
-
-
-* **`be off` / `have a day off`（休假 / 下班）：**
-* *I'm **off** tomorrow.* / *I have tomorrow **off**.*（我明天**休假/不上班**。）
-
-
-
-### ② 事情與活動（On vs. Off）
-
-* **`be on`（照常舉行 / 上映中）：**
-* *Is the meeting still **on**?*（會議還是**照常舉行**嗎？）
-* *What movie is **on** tonight?*（今晚**上映/播放**什麼電影？）
-
-
-* **`be off` / `call off`（取消 / 中止）：**
-* *The match was called **off** due to rain.*（比賽因為下雨而**取消**了。）
-
-
-
-### ③ 身心與表現狀態（On point vs. Off）
-
-* **`be on` / `on point`（狀態極佳 / 精準到位）：**
-* *Her performance was totally **on point**.*（她的演出非常**精準到位/狀態超棒**。）
-
-
-* **`be off`（狀態不好 / 味覺/食物變質）：**
-* *I feel a bit **off** today.*（我今天感覺**身體/狀態不太對勁**。）
-* *This milk smells **off**.*（這牛奶聞起來**變質/酸掉了**。）
-
-
+<br>（打工/開電視。） | *Turn **off** the lights / TV.*<br><br>（關燈/關電視。） |
+| **機器狀態** | *The air conditioner is **on**.*<br><br>（冷氣正**開著/運作中**。） | *The power is **off**.*<br><br>（電源**切斷了/停電中**。） |
+| **訊號/通話** | *She is **on** the phone right now.*<br><br>（她現在正在通電話中。） | *We got cut **off**.*<br><br>（我們的電話**中斷/被切斷**了。） |
 
 ---
 

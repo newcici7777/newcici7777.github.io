@@ -277,37 +277,6 @@ come with 固定搭配、標配、本來就包含在裡面（就像買手機「�
 - Good luck with your new job! 祝你在你的新工作（這件事情上）有好運！
   - 好運伴隨在你的新工作
 
------------------------
-## together(副詞)
-- They have been together for twenty years.他们在一起二十年了。
-- Are you two still together?（你們兩個還在交往嗎？）
-
-### together修飾動詞（放在動詞後面，表示「一起做某事」）
-- We worked together on the project.（我們一起合作這個專案。）
-- Let's sing together.（我們一起唱歌吧。）
-
-### 與with在一起，together放在句尾
-```
-[動作] ＋ [某人/某事] ＋ together
-```
-- I like baking together with my son. 
-- We cooked dinner together. （我們一起煮晚餐。）
-- She went to the park with her friends together. 
-  - 「together」在有 with 的時候經常被省略
-- We baked with each other together.（強調彼此陪伴且一同完成）
-
-### 在主詞後面
- together 直接放在主語後面，用來強調「兩個人（或多個人）一同採取了某個行動」。
-```
-[主語] ＋ together ＋ [動詞]
-```
-- We together built this house. （我們共同建造了這棟房子。）
-- They together decided to move. （他們一同決定搬家。）
-
-### be + together 交往、在一起（指情侶或伴侶關係）
-- They have been together for 3 years.
-- Are they still together?（他們還在一起／還在交往嗎？）
-- We can finally be together!
 
 ----------------------------------
 
@@ -363,27 +332,5 @@ Provide + 人 + with + 物： 供應某人某樣東西。
 ```
 - The hotel provides guests with free breakfast.（這家飯店提供房客免費早餐。）
 
-### Fill（填滿）
-```
-Fill(動) + 物 + with + 東西： 用某物把容器「填滿」。
-```
-- Fill the glass with water.（把杯子裝滿水。）
-
-- be filled with 充滿了...
-  - The room was filled with laughter.
-
-### do with(做)
-```
-Do with + 人/物： 跟...有關、需要、或處置。
-```
-- What should we do with these old boxes?（我們該怎麼處置這些舊箱子？）
-- have to do with...（與..有關）
-  - This has nothing to do with you.（這跟你一點關係也沒有。）
-
-###  Deal（處理／對付）
-> Deal with + 問題、狀況、人： 處理、應付、打交道。
-
-- We have to deal with this difficult problem.（我們必須處理這個棘手的問題。）
-- She is hard to deal with.（她很難相處。）
 
 ------------------------------------

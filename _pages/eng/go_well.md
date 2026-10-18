@@ -31,6 +31,23 @@ Did you do well...?
 - Are you still working on that Laravel project?你還在忙那個 Laravel 的專案嗎
 - I do well on the interview.指的是你在面試的「答題、互動表現」上很好
 
+### do with(做)
+```
+Do with + 人/物： 跟...有關、需要、或處置。
+```
+- What should we do with these old boxes?（我們該怎麼處置這些舊箱子？）
+- have to do with...（與..有關）
+  - This has nothing to do with you.（這跟你一點關係也沒有。）
+
+###  Deal（處理／對付）
+> Deal with + 問題、狀況、人： 處理、應付、打交道。
+
+- We have to deal with this difficult problem.（我們必須處理這個棘手的問題。）
+- She is hard to deal with.（她很難相處。）
+
+
+-------------------
+
 
 在這句話中，**`go`** 的意思是「進行、進展」。
 

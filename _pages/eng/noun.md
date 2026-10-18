@@ -261,18 +261,8 @@ $$\mathbf{\text{piece(s) (名詞 N.)}} + \mathbf{\text{of (介系詞 Prep.)}} + 
 
 | 結構形式 | `piece(s)` 的文法角色 | 語感與適用時機 | 範例例句 |
 | --- | --- | --- | --- |
-| **`pieces`**<br>
-
-<br>(不加 `of`) | **獨立可數名詞 (Noun)** | 泛指「碎片、積木塊、拼圖片、零件」。上下文明確時直接使用。 | *Pick up the **pieces**.*<br>
-
-<br>（把這些**碎片/零件**撿起來。） |
-| **`pieces of ...`**<br>
-
-<br>(加 `of`) | **量詞片語 (Quantifier)**<br>
-
-<br>`pieces` (N.) + `of` (Prep.) | 後面必須接要說明的**具體物品或不可數名詞**。 | *Pick up the **pieces of** glass.*<br>
-
-<br>（把這些**玻璃碎片**撿起來。） |
+| **`pieces`**<br><br>(不加 `of`) | **獨立可數名詞 (Noun)** | 泛指「碎片、積木塊、拼圖片、零件」。上下文明確時直接使用。 | *Pick up the **pieces**.*<br><br>（把這些**碎片/零件**撿起來。） |
+| **`pieces of ...`**<br><br>(加 `of`) | **量詞片語 (Quantifier)**<br><br>`pieces` (N.) + `of` (Prep.) | 後面必須接要說明的**具體物品或不可數名詞**。 | *Pick up the **pieces of** glass.*<br><br>（把這些**玻璃碎片**撿起來。） |
 
 ---
 

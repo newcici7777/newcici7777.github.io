@@ -281,3 +281,33 @@ Over and over (again)：一次又一次、不斷地
 
 * **當作名詞（通常用複數 *leftovers*）：**
 * *We are eating **leftovers** for dinner.*（我們晚餐要吃剩菜/昨天的飯菜。）
+
+------------
+
+## 5. Over / Over there（副詞 Adv. / 介系詞 Prep.）：越過空間「過來/過去/往前」
+
+`over` 的核心語感是「跨越一段空間距離」。當你指著前面的某個地點或叫人過來時，`over` 就帶有強烈的「往前移動到該處」的意味。
+
+* **`come over`**
+* **詞性：** `over` 為 **副詞（Adv.）**
+* **例句：** *Hey, **come over** here! Look at this!*
+* **翻譯：** 嘿，**往前過來**這裡！你看這個！
+
+
+* **`go over to...`**
+* **詞性：** `over` 為 **副詞（Adv.）**，`to` 為介系詞
+* **例句：** *He **went over to** the window to open it.*
+* **翻譯：** 他走上前去（往前走向）窗戶那邊把它打開。
+
+
+* **`over there`**
+* **詞性：** `over` 為 **副詞（Adv.）**，修飾副詞 `there`
+* **例句：** *The bakery is **over there**, just across the street.*
+* **翻譯：** 麵包店就在**前方那邊**，就在馬路正對面。
+
+
+* **`walk over to the counter`**
+* **詞性：** `over` 為 **副詞（Adv.）**
+* **例句：** *She **walked over to** the counter and ordered a glass of water.*
+* **翻譯：** 她**往前走到**櫃檯前，點了一杯水。
+

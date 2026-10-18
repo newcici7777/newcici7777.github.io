@@ -1,5 +1,5 @@
 ---
-title: with相關片語 (狀態/關聯/充滿)
+title: with相關片語 (狀態/關聯)
 date: 2026-09-18
 keywords: english, with
 ---
@@ -44,23 +44,6 @@ crowded（擁擠的）也是形容詞。當你要交代「這個地方擠滿了�
 1. **be popular with ...**（受...歡迎）
 * *用法：* 用來指某個事物在特定族群中很受喜愛。
 * *例：* This app **is popular with** teenagers.（這款 App 在青少年中很受歡迎。）
-
-
-2. **be crowded with ...**（擠滿了……）
-* *用法：* 形容一個地方充滿了人潮或車潮。
-* *例：* The beach **is crowded with** swimmers in summer.（夏天時海灘上擠滿了游泳的人。）
-
-
-3. **be filled with ... / be full of ...**（充滿了……）
-* *用法：* 兩者意思相近，但 *filled with* 強調「被裝滿」的過程或狀態。
-* *例：* Her eyes **were filled with** tears.（她的眼裡充滿了淚水。）
-
-
-4. **be crowded with ...**（擁擠）上面提過，可延伸看下一個。
-5. **be packed with ...**（擠滿了……／塞滿了……）
-* *用法：* 比 crowded 更強烈，常形容空間、行李或行程非常紮實、塞爆。
-* *例：* The train **is packed with** commuters.（火車上擠滿了通勤族。）
-
 
 
 ---

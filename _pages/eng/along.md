@@ -72,3 +72,53 @@ along為介系詞，後面一定要接名詞，表示「沿著...（一條線狀
 ## along 抽象的時間過程
 - We made a few good friends along our career path. （我們的職涯發展過程中，結交了几位好朋友。）
 
+-----------
+
+
+## 4. Along（介系詞 Prep. / 副詞 Adv.）：順著長條狀物（路/河/牆）向前
+
+`along` 的核心概念是「沿著一條線前進」，非常適合用於河邊、走廊、街道。
+
+* **`walk along the river`**
+* **詞性：** `along` 為 **介系詞（Prep.）**
+* **例句：** *They enjoyed **walking along** the riverbank.*
+* **翻譯：** 他們很享受**沿著河岸往前散步**。
+
+
+* **`go along this corridor`**
+* **詞性：** `along` 為 **介系詞（Prep.）**
+* **例句：** ***Go along*** *this corridor and turn left at the end.*
+* **翻譯：** **順著這條走廊往前走**，在盡頭左轉。
+
+
+## 2. Along 的空間與抽象延伸（非通道）
+
+`along` 的核心語感是「平行於長條狀物的邊緣或軸線移動」。只要能畫出一條邊界或線條，不論是不是通道都可以用！
+
+### ① 牆面、欄杆、海岸線邊緣
+
+* **`along the wall / along the coast`**（沿著牆邊 / 沿著海岸線）
+* **詞性：** `along` 為 **介系詞 (Preposition)**，後接受詞 `the wall` 或 `the coast`。
+* **解說：** 牆壁不是走路的通道，但你可以「貼著牆邊」移動。
+* **例句：** *The ivy grows **along** the wall.*
+（常春藤**沿著牆面**生長。）
+* **例句：** *We drove **along** the coast.*
+（我們順著海岸線（沿著海岸）開車。）
+
+
+
+### ② 時間、進程與伴隨
+
+* **`as time goes along`**（隨著時間的推移）
+* **詞性：** `along` 為 **副詞 (Adverb)**，修飾動詞 `goes`。
+* **解說：** 時間不是實體通道，但時間像一條河流往前延伸。
+* **例句：** *You will learn more as time goes **along**.*
+（隨著時間**推移（往前推進）**，你會學到更多。）
+
+
+
+| 介系詞/副詞 | 適用條件 | 非通道範例 |
+| --- | --- | --- |
+| **`along`** | 只要有**「長條狀邊緣/軸線」**（牆邊、邊界、河岸、海岸線） | *sit **along** the fence*（沿著籬笆坐）<br><br>*walk **along** the edge*（沿著邊緣走） |
+
+所以，**完全不需要侷限在「道路、巷子、走廊」這種封閉通道**喔！只要有「線性延伸」的感覺，外國人都會非常自然地使用 `down` 和 `along`。

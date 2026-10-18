@@ -3,6 +3,29 @@ title: in 隊伍/群組
 date: 2026-10-16
 keywords: countable , in
 ---
+
+## in pairs, in groups of 副詞片語
+in pairs, in groups of 前面加上了介系詞 in 之後，整個片語是用來修飾前面的動詞或整個動作的狀態，回答「是用什麼形式在進行？」這個問題。
+```
+主詞 + 動詞 (+ 受詞) + in pairs / in groups of [數字].
+```
+in 包裹在一個團體裡（Container Concept）：  
+In 原本的核心意思是「在...裡面」。當你說 in pairs（成雙成對）或 in groups of five（五人一組）時，意思是你們每個人都被包在、劃分在這樣的小組單位「裡面」。  
+
+- We're having a discussion in pairs now. （我們現在正在進行討論。以什麼形式？ → 成雙成對地 / 兩人一組地。） 這裡的 in pairs 就像副詞一樣，補充說明討論進行的方式。
+- We are working in pairs.（我們正以兩人一組的方式工作。——放在動詞後面）
+- Students discussed the topic in groups of five.（學生們以五人一組的方式討論這個主題。——放在受詞後面）
+- The class worked in groups of five to finish the project.（全班以五人一組的方式合作完成這個專案。）
+
+-------------------
+
+## What grade ... in? 年級
+- **What grade** are you **in**? I'm **in the** 7th grade.
+（你讀幾年級？我讀國一／七年級。）
+- Is your son in eighth grade? 你的兒子讀八年級嗎
+
+--------------
+
 **是的，`groups of` 在這裡發揮的就是「量詞（Quantifier / Unit Phrase）」的功能！**
 
 在 **`groups of 10`**（十個一組 / 每組十個）這個結構中，**`groups of`** 扮演著量詞片語（Quantifier Phrase）的角色，用來將散落的個體進行「單位化/群組化」的計量。
@@ -162,65 +185,7 @@ $$\text{數量/形狀名詞 (N.)} + \mathbf{of \text{ (介系詞 Prep.)}} + \tex
 $$\text{動作 (V.)} + \mathbf{in \text{ (介系詞 Prep.)}} + \text{隊形 / 分組 / 包裝規格 (受詞 N.)}$$
 
 ----
-您的觀察非常敏銳！這三個問題都切中了英文日常口語與文法轉化的核心精髓。
 
-以下為您逐一詳細拆解，並**明確標示關鍵組成的詞性**與結構：
-
----
-
-## 1. 為什麼 `come`（來）會變成「上市 / 供應 / 販售」？
-
-**`come`** 的基本意思確實是「來」（移動動詞 V.），但當它用於商品、產品或服務時，會產生一個非常自然且道地的比喻延伸：
-
-> **「商品從工廠/商家（來源），『來到』消費者面前/市場上的樣子。」**
-
-因此，外國人講商品「以某種形式/包裝 **`come`**」，指的就是「這項商品在市場上是以這種規格『供應/呈現/賣』的」。
-
-### 🔍 詞性與結構拆解：
-
-* **`comes in ...`**
-* **`comes`**：**不及物動詞 (Intransitive Verb)**，指商品以某種形式呈現。
-* **`in`**：**介系詞 (Preposition)**，引導後面的包裝、顏色或尺寸規格。
-
-
-
-### 💡 道地例句：
-
-* *This shirt **comes in** three colors.*
-（這件襯衫有（供應）三種顏色。）
-* **文法解析：** `comes`（動詞 V.）+ `in`（介系詞 Prep.）+ `three colors`（受詞 N.）。
-
-
-* *The phone **comes with** a charger.*
-（這支手機附有（隨機隨附）充電器。）
-* **文法解析：** `comes`（動詞 V.）+ `with`（介系詞 Prep.）+ `a charger`（受詞 N.）。
-
-
-
----
-
-## 2. `total` 的文法：`total` vs. `in total`
-
-在 **`That means there are 30 crayons total.`** 中，`total` 的文法與 `in total` 解析如下：
-
-### ① `30 crayons total`（這句裡的 `total` 是什麼詞性？）
-
-在這裡，**`total`** 作為 **副詞 (Adverb)** 或 **後置形容詞 (Post-positive Adjective)**，直接放在名詞組 `30 crayons` 的後面，作為**修飾語**，意思是「總共地 / 總計的」。
-
-* **詞性：** **副詞 (Adv.)** 或 **形容詞 (Adj.)**。
-* **語感：** 美式口語中非常偏好這種簡潔說法，直接把 `total` 甩在數量名詞後面。
-* **同義替換：** *"...there are 30 crayons **total**."* $\approx$ *"...there are 30 crayons **in total**."*
-
-### ② `total` 的四種常見詞性與用法整理：
-
-| 詞性 | 句中文法位置 | 範例例句 | 翻譯 |
-| --- | --- | --- | --- |
-| **副詞 (Adv.)** | 放在數量名詞或句尾 | *We spent $100 **total**.* | 我們**總共**花了 100 美元。 |
-| 介系詞片語<br><br>(Prep. Phrase) | `in` (Prep.) + `total` (N.) | *There were 50 people **in total**.* | **總計**有 50 個人。 |
-| **形容詞 (Adj.)** | 放在名詞前面修飾 | *The **total** cost was $50.* | **總**費用是 50 美元。 |
-| **名詞 (Noun)** | 作主詞或受詞 | *The **total** of these numbers is 30.* | 這些數字的**總和**是 30。 |
-
----
 
 ## 3. `in line` vs. `in a line` 的差別
 
@@ -256,7 +221,5 @@ $$\text{動作 (V.)} + \mathbf{in \text{ (介系詞 Prep.)}} + \text{隊形 / �
 
 | 疑難點 | 關鍵詞性/結構 | 核心語感精髓 |
 | --- | --- | --- |
-| **`comes in`** | `comes` (**動詞 V.**) + `in` (**介系詞 Prep.**) | 商品「以某種規格『進入』市場供應/販售」。 |
-| **`30 crayons total`** | `total` (**副詞 Adv.** 或 **後置形容詞 Adj.**) | 美式口語簡潔用法，直接放置於數量後修飾「總共」。 |
 | **`in line`** | `line` (**抽象狀態名詞 N.**) | 強調**「排隊」**這個動作與狀態。 |
 | **`in a line`** | `a line` (**具體可數名詞 N.**) | 強調排成**「一條」**直線隊形。 |

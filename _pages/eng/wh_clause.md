@@ -23,6 +23,7 @@ keywords: English, wh clause
 
 ## 疑問詞 (wh-) + 主詞 + 動詞
 當「動作的執行者（主詞）」跟主句的主詞不同
+- Are you looking for where the ticket is?
 - I don't know where she is now...
 - I know how much you wanted it.
   - how much you wanted it.
@@ -56,6 +57,9 @@ keywords: English, wh clause
 
 ### 2. 當作「形容詞」（Adjective）——用來修飾前面的名詞
 * *She gave me a guide on **how to do it**.*（她給了我一份關於「如何做這件事」的指南。➔ 修飾 *guide*。）
+
+
+
 
 ------------------------------
 

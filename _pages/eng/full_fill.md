@@ -4,43 +4,8 @@ date: 2026-10-16
 keywords: full, fill
 ---
 
-這兩個問題都很經典！以下為您詳細說明 **`dream`** 的詞性變化，以及 **`full of`** 與 **`full with`** 的用法差異：
 
----
-
-## 1. `dream` 可以當名詞，也可以當動詞嗎？
-
-**是的，完全正確！`dream` 既是名詞，也是動詞。**
-
-而且在您提供的這兩句話中，恰好展現了兩種詞性與不同時態的用法：
-
-### ① 作為「名詞」（Noun）：夢、夢境、夢想
-
-* **句 1：** *"In her **dream**, she couldn't eat candy anymore."*
-* 這裡前面有介系詞 `In` 與代名詞 `her`，所以 **`dream` 是名詞**（在她的**夢境**裡）。
-
-
-* **例句：** *Sweet **dreams**!*（祝做個好夢！）
-
----
-
-### ② 作為「動詞」（Verb）：做夢、夢見、夢想
-
-* **句 2：** *"He **dreamed** that his bedroom was full of monsters!"*
-* 這裡放在主詞 `He` 後面，並且加上了過去式字尾 **-ed**，所以 **`dreamed` 是動詞**（他**夢見**了……）。
-
-
-
-> 💡 **小知識（動詞過去式有兩種寫法）：**
-> `dream` 作為動詞時，過去式與過去分詞有兩種拼法，意思完全一樣：
-> * **美式英語常用：** **`dreamed`**（例句採用的拼法）
-> * **英式英語常用：** **`dreamt`**（發音為 /drɛmt/）
-> 
-> 
-
----
-
-## 2. `full of` 與 `full with` 的差別
+## 2. `full of` 
 
 答案很直接：在英文中，**100% 的標準用法是 `full of**`。
 
@@ -54,15 +19,11 @@ keywords: full, fill
 * *The glass is **full of** water.*（玻璃杯裡**裝滿了**水。）
 * *Her eyes were **full of** tears.*（她的眼裡**充滿了**眼淚。）
 
+- He **dreamed** that his bedroom was full of monsters!
 
 
----
+### be filled with 充滿
 
-### ② `full with`（通常被視為錯誤用法 / 非標準搭配）
-
-在標準英文文法中，**`full with` 是不正確的**。外國人不會說 *"The bedroom is full with monsters"*。
-
-如果你想用介系詞 **`with`** 來表達「充滿」，你需要改用另一個形容詞或動詞：
 
 | 句型結構 | 使用的單字 | 範例 |
 | --- | --- | --- |
@@ -75,3 +36,53 @@ keywords: full, fill
 > 兩者的意思完全相同（都是「充滿了……」），但介系詞不能互換！
 > 
 >
+
+### Fill（填滿）
+```
+Fill(動) + 物 + with + 東西： 用某物把容器「填滿」。
+```
+- Fill the glass with water.（把杯子裝滿水。）
+
+- be filled with 充滿了...
+  - The room was filled with laughter.
+
+3. **be filled with ... / be full of ...**（充滿了……）
+* *用法：* 兩者意思相近，但 *filled with* 強調「被裝滿」的過程或狀態。
+* *例：* Her eyes **were filled with** tears.（她的眼裡充滿了淚水。）
+
+
+-------------
+
+### fill up
+
+#### fill up **the car**（加滿油）沒有in
+up 在這裡有「達到頂點、滿出來」的感覺。水桶裝滿是 fill up the bucket，肚子吃飽（甚至撐滿）是 I'm filled up。所以把油箱「加滿」，自然就是用 fill up。
+
+- I filled up the car ten minutes ago.我十分鐘前才剛把車子加滿油。
+
+#### fill up 加滿油
+- I need to fill up.（我需要加滿油。）
+- Fill it up, please.（把它加滿，謝謝）
+
+
+------------------------
+## fill out 填寫
+- fill（動詞）：充滿、填滿。
+- out（副詞）：在這裡有「完整填好、寫到盡頭」的意思。
+
+- Please fill out this application form.（請填寫這份申請書。）
+- You need to fill out your personal information here.（你需要在這裡填寫你的個人資料。）
+- Can you help me fill out this questionnaire?（你可以幫我填寫這份問卷嗎？）
+
+- He filled out the application form. 他填寫了申請表。  
+
+
+## fill in 填寫空白處
+- Please fill in the blanks.（請在空白處填空）
+
+
+## fill + 容器 +  with 水 (裝水)
+- Fill the bucket with water.
+把水桶装满水。
+- You've got to fill the bucket with water
+你必须把水桶装满水。

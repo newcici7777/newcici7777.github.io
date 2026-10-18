@@ -231,24 +231,6 @@ Deck 當名詞時，意思是「甲板」（船的甲板）或是「層、樓層
 - Good luck to you!（祝你一切順利！）
 - Good luck to the team!（祝團隊好運！）
 
-------------------------
-## fill out 填寫
-- fill（動詞）：充滿、填滿。
-- out（副詞）：在這裡有「完整填好、寫到盡頭」的意思。
-
-- Please fill out this application form.（請填寫這份申請書。）
-- You need to fill out your personal information here.（你需要在這裡填寫你的個人資料。）
-- Can you help me fill out this questionnaire?（你可以幫我填寫這份問卷嗎？）
-
-## fill in 填寫空白處
-- Please fill in the blanks.（請在空白處填空）
-
-
-## fill + 容器 +  with 水 (裝水)
-- Fill the bucket with water.
-把水桶装满水。
-- You've got to fill the bucket with water
-你必须把水桶装满水。
 
 
 ---------------------

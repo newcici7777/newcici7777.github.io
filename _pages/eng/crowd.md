@@ -95,3 +95,13 @@ A crowd 意思是「一群人」或「擠滿的人潮」。
 
 ## be crowed with 人/事物 (擠滿)
 - The street is crowded with people.（這條街擠滿了人。）
+
+2. **be crowded with ...**（擠滿了……）
+* *用法：* 形容一個地方充滿了人潮或車潮。
+* *例：* The beach **is crowded with** swimmers in summer.（夏天時海灘上擠滿了游泳的人。）
+
+
+4. **be crowded with ...**（擁擠）上面提過，可延伸看下一個。
+5. **be packed with ...**（擠滿了……／塞滿了……）
+* *用法：* 比 crowded 更強烈，常形容空間、行李或行程非常紮實、塞爆。
+* *例：* The train **is packed with** commuters.（火車上擠滿了通勤族。）

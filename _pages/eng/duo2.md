@@ -27,20 +27,6 @@ keywords: 其它
 
 ---------------------------
 
-## fall down 跌倒、往下倒塌
-- The boy ran too fast and fell down.（那男孩跑太快而跌倒了。）
-- The old tree fell down in the storm.（那棵老樹在暴風雨中倒了。）
-- He fell down with his bicycle.（他連人帶車摔倒了。）
-
-## fall off （從...掉落、從...摔下）
-人或物體從某個表面「脫離並掉落」
-```
-fall off + 掉落的地方
-```
-- He fell off his bicycle.（他從腳踏車上摔下來。）
-- The apple fell off the tree.（那顆蘋果從樹上掉落下來。）
-- fall off a chair（從椅子上摔下來 —— 椅子也不高，但你是從椅子「上面」掉到地上）
-- fall off the bed（從床上滾下來）
 
 ## come off 剝落
 - The leather is coming off.皮革正在剝落

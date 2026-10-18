@@ -1,8 +1,49 @@
 ---
-title: on 狀態, on a 狀態
+title: be on, be off, be on a 狀態
 date: 2026-09-18
 keywords: English
 ---
+
+## 3. 「生活與工作狀態」的對比（值班/進行中 vs. 休假/取消/偏離）
+
+在日常口語中，`on` 與 `off` 經常用來形容個人的工作、日程或專注狀態。
+
+### ① 工作與休假（On duty vs. Off duty）
+
+* **`be on duty`（值班 / 上班中）：**
+* *Dr. Smith is **on duty** tonight.*（史密斯醫師今晚**值班**。）
+
+
+* **`be off` / `have a day off`（休假 / 下班）：**
+* *I'm **off** tomorrow.* / *I have tomorrow **off**.*（我明天**休假/不上班**。）
+
+
+
+### ② 事情與活動（On vs. Off）
+
+* **`be on`（照常舉行 / 上映中）：**
+* *Is the meeting still **on**?*（會議還是**照常舉行**嗎？）
+* *What movie is **on** tonight?*（今晚**上映/播放**什麼電影？）
+
+
+* **`be off` / `call off`（取消 / 中止）：**
+* *The match was called **off** due to rain.*（比賽因為下雨而**取消**了。）
+
+
+
+### ③ 身心與表現狀態（On point vs. Off）
+
+* **`be on` / `on point`（狀態極佳 / 精準到位）：**
+* *Her performance was totally **on point**.*（她的演出非常**精準到位/狀態超棒**。）
+
+
+* **`be off`（狀態不好 / 味覺/食物變質）：**
+* *I feel a bit **off** today.*（我今天感覺**身體/狀態不太對勁**。）
+* *This milk smells **off**.*（這牛奶聞起來**變質/酸掉了**。）
+
+------------------------
+
+
 ## be + on 狀態
 - I'm on a break.（我在休息/放風中。）
 - I'm on business.（這句更簡短，意思是「我因公出差中」。）
