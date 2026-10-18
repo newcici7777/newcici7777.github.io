@@ -106,18 +106,7 @@ get是進去
   - Which airline are you flying with to Japan?你這次去日本搭哪家航空公司？
 - Pipeline（管線、輸油管；也可指計畫中的「籌備管道」）
 
-2. 生活與科技類（與網脈、通訊有關）
-以下都是可數名詞，複數要加S。(guideline**s**, headline**s**)
 
-- Online / Offline（線上 / 離線）—— 雖然通常當副詞或形容詞，但源自 line。
-- Timeline（時間軸、時間線）
-  - Please create a timeline for this marketing campaign.（請為這個行銷活動製作一份時間軸。）
-- Headline**s** 新聞標題、頭條。
-  - His controversial remark made the front-page headline**s**.（他具爭議性的發言登上了頭版頭條。）
-- Guideline**s**（指導方針、指導手冊）
-  - Always follow safety guideline**s** when using the equipment.（使用設備時，請務必遵循安全準則。）
-- Hotline（熱線、申訴專線）
-  - The company set up a customer service hotline.（公司設立了一支客服專線。）
 
 -----------------------------------
 
@@ -193,24 +182,8 @@ get是進去
 
 | 片語結構 | 文法與空間邏輯 | 核心語感 | 範例與翻譯 |
 | --- | --- | --- | --- |
-| **`in the front`**<br>
-
-<br>(不加 `of`) | **獨立地點片語**<br>
-
-<br>指某個特定隊形或空間內部的「最前頭/前端區域」。 | **絕對位置：**<br>
-
-<br>「在最前面（排頭）」 | *This friend **in the front** is first.*<br>
-
-<br>（排在**最前面區域**的這個朋友是第一位。） |
-| **`in front of ...`**<br>
-
-<br>(加 `of`) | **複合介系詞 (Compound Prep.)**<br>
-
-<br>後面**必須接另一個物體**作為參考點。 | **相對位置：**<br>
-
-<br>「在……（某物）的前方」 | *He is standing **in front of the store**.*<br>
-
-<br>（他站在**店家前面**。） |
+| **`in the front`**<br><br>(不加 `of`) | **獨立地點片語**<br><br>指某個特定隊形或空間內部的「最前頭/前端區域」。 | **絕對位置：**<br><br>「在最前面（排頭）」 | *This friend **in the front** is first.*<br><br>（排在**最前面區域**的這個朋友是第一位。） |
+| **`in front of ...`**<br><br>(加 `of`) | **複合介系詞 (Compound Prep.)**<br><br>後面**必須接另一個物體**作為參考點。 | **相對位置：**<br><br>「在……（某物）的前方」 | *He is standing **in front of the store**.*<br><br>（他站在**店家前面**。） |
 
 ---
 

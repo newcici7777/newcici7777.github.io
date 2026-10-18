@@ -12,6 +12,12 @@ keywords: English
 - in pain  處於痛苦中
 - in love 處於熱戀中
 - in debt 負債中
+- in detail 詳細地
+  - Please explain the plan **in detail**.
+- in a hurry 匆忙地
+  - Why are you **in a hurry**?
+- in time  及時 / 趕上
+  - We made it **in time**.
 
 ## be + out of + 抽象名詞 (從某種狀況中出來)
 - out of danger（跨出危險外 $\rightarrow$ 脫離危險）：
@@ -170,3 +176,61 @@ $$\text{介系詞 (in)} + \text{名詞 (danger)} = \text{介系詞片語（處�
 
 
 看出來差別了嗎？說 *He is in danger* 是指他**遇到了危險**；但如果說 *He is dangerous*，意思會變成他**會對別人造成危險**喔！
+
+--------------
+
+這個觀察超級到位！這完全延續了我們剛才討論的 **`in` 的核心畫面感**。
+
+在這句話裡：
+
+> **"This rabbit is `in` good health."**
+> （這隻兔子**身體狀況很好 / 處於健康狀態**。）
+
+---
+
+### 一、 這裡的 `in` 是什麼意思？
+
+這裡的 **`in`** 用的是它最核心的抽象世界——**「處於……的狀態或環境之中」**。
+
+想像一下這個畫面：
+
+* **`health`**（健康狀態）就像是一個**隱形的「狀態空間 / 環境」**。
+* 當我們說這隻兔子 **`in`** good health，意思是牠「置身、包裹在一個良好的健康狀態裡面」。
+
+---
+
+### 二、 類似的「`in` + 身體/心理狀態」道地句型
+
+只要是表達人或動物**處於某種身體狀況、情緒或生命狀態中**，英文一律習慣用 **`in`**：
+
+#### 1. 身體狀況（Health & Condition）
+
+* **in good shape** $\rightarrow$ 身體狀態/體態很好（*He is in good shape.*）
+* **in bad condition** $\rightarrow$ 狀況很差（*The car is in bad condition.*）
+* **in pain** $\rightarrow$ 處於疼痛中（*She is in pain.*）
+
+#### 2. 情緒與心態（Feelings & Mood）
+
+* **in a good mood** $\rightarrow$ 心情很好（*The boss is in a good mood today.*）
+* **in trouble** $\rightarrow$ 處於麻煩/困境中（*We are in trouble.*）
+* **in shock** $\rightarrow$ 處於震驚狀態（*He was in shock.*）
+
+---
+
+### 💡 一張表對比：`in` 的三大抽象層面
+
+把我們今天學到的 `in` 串起來，你會發現它的底層思維完全是一貫的：
+
+| `in` 的抽象世界 | 核心畫面（包裹在其中） | 實用例句 |
+| --- | --- | --- |
+| **1. 領域 / 產業** | 身處於某個大產業/學科內 | *He works **in** tech.*（他在科技業。） |
+| **2. 狀態 / 情況** *(你這句！)* | 處於某種健康/情緒狀態中 | *The rabbit is **in** good health.*（兔子狀況良好。） |
+| **3. 時間區間** | 處於某個時間段範圍內 | *I was born **in** June.*（我在六月出生。） |
+
+---
+
+### 🎬 總結
+
+所以，看到 **`in good health`** 時，只要在腦海中浮現「被良好健康包裹著的狀態」，就能瞬間理解為什麼要用 **`in`** 了！
+
+這樣的畫面感是不是讓介系詞變得非常好記呢？

@@ -69,27 +69,7 @@ keywords: English
 
 ## be 狀態
 
-### 1. 科技與網路
-- be online 上線
-  - Be online at two thirty.兩點半要在線上喔
-- be offline 不要上網
-  - Be offline for a while.（離線一陣子吧／暫時不要上網。）
-  - I will be offline this weekend.我這週末會不上網。
-- be offline (未來或約定時間離線)
-  - I need to be offline at two thirty.（我兩點半需要離線／下線。）
-- be offline 狀態是離線
-  - She is offline right now.她現在不在線上，離線。表達狀態
-- be off 下線
-  - I have to be off at two thirty.我兩點半得下線/離開了。
-- be off 下班/離開
-  - I'm off work at five.（我五點下班。）
-  - I must be off now."（我現在得走/離開了。)
-- be logged in / be logged out：已登入 / 已登出(被動式)
-  - Make sure you are logged in before the meeting.（開會前確保你已經登入了。）
-- be connected / be disconnected：連線中 / 斷線、未連線(被動式)
-  - My internet is disconnected.（我的網路斷線了。）
-- be muted / be unmuted：已靜音 / 解除靜音(被動式)
-  - Wait, your mic is muted.（等一下，你的麥克風靜音了。）
+
 
 ### 2. 日常忙碌與空閒狀態 (Availability)
 

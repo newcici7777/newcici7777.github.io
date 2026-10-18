@@ -133,3 +133,38 @@ how did you 來問一件已經發生的意外或狀況時，通常是在追問�
 
 ## Where 問地方
 - where did we park? 
+
+
+-------------------------
+
+在 **"What exactly is a diploma?"** 這句話中，**`exactly`**（副詞，意思是「究竟、到底、確切地」）放在疑問詞 **`What`** 後面，是英文非常標準且道地的用法！
+
+以下為您拆解 **`diploma` 的定義** 以及 **`exactly` 放在疑問詞後面的文法結構**：
+
+---
+
+## 1. 文法解析：`exactly` 放在疑問詞後面
+
+在英文中，當我們想要**加強疑問語氣**，表達「到底、究竟、確切來說」時，最常見的做法就是**把副詞 `exactly` 直接放在疑問詞（What, Where, Who, Why, How）的後面**。
+
+### 句型結構：
+
+$$\text{疑問詞 (What/Where/Who...)} + \text{\textbf{exactly}} + \text{be動詞 / 助動詞} + \text{主詞}\dots?$$
+
+*  What（疑問詞：什麼）
+*  exactly（副詞：究竟/到底/確切地）
+*  is（be動詞）
+*  a diploma（主詞：畢業證書/文憑）
+
+### 💡 語感重點：
+
+* **一般問句：** *What is a diploma?*（文憑是什麼？）$\rightarrow$ 平鋪直敘地詢問定義。
+* **加強語氣（加上 `exactly`）：** *What **exactly** is a diploma?*（文憑**究竟/確切**是什麼？）$\rightarrow$ 代表你想知道更具體、更精準的細節，或者釐清容易混淆的概念。
+
+### 其他疑問詞的同款用法：
+
+* **Where exactly** do you live?（你**到底**住在哪裡？）
+* **Who exactly** said that?（那**究竟**是誰說的？）
+* **How exactly** does this machine work?（這台機器**確切來說**是怎麼運作的？）
+
+---

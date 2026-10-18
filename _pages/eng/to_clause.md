@@ -112,3 +112,6 @@ to + 原形動詞 = 不定詞，用來形容前面的名詞，形容這個東西
 * *Do you have anything **to say**?*
 （你有什麼話**想說**嗎？➔ 修飾 *anything*。）
 * *I need something **to eat**.*（我需要吃點東西。）
+
+---------
+

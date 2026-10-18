@@ -127,6 +127,45 @@ campus 指的是學校那塊「土地、地面範圍」，所以用 on。
 - Students are allowed to live on campus.（學生被允許住在校園裡。）
 
 
+**是的，`campus` 的確是指「校園」！**
+
+而這裡的 **`campuses`** 就是 **`campus` 的複數形**（意思是「多個校園」或「多個校區」）。
+
+整句話的中文翻譯是：
+**「這所大學實際上擁有兩個校區。」**
+
+以下為您詳細說明字形變化與為什麼這裡要用複數：
+
+---
+
+## 1. 為什麼是 `campuses` 而不是 `campuse`？
+
+* **原形（單數）：** **`campus`**（結尾是字母 **-s**）
+* **規則：** 英文中，結尾是 **-us** 的單數名詞，變成複數時通常要**去掉 -us，改加上 -es**（或者 -i）。
+* 因此：`campus` $\rightarrow$ **`campuses`**（發音為 /ˈkæmpəz/）。
+* 類似的規則字：*bus*（公車）$\rightarrow$ *buses*；*class*（課程/班級）$\rightarrow$ *classes*。
+
+
+## 2. 為什麼句子里要用複數 `campuses`？
+
+關鍵在於句首的數字 **`two`（兩個）**：
+
+* 如果只有一個校園 $\rightarrow$ *The university has **a campus**.*（單數）
+* 如果有兩個或多個校園 $\rightarrow$ *The university has **two campuses**.*（複數）
+
+因為數字是 `two`，後面的名詞就必須配合改成複數的 `campuses`。
+
+---
+
+## 3. 常見延伸用法
+
+在大學的英文情境中，常會聽到分校或多校區的說法：
+
+* **Main campus**（主校區）
+* **Branch campus**（分校區）
+* **Multi-campus**（多校區的）
+
+
 ------------------------------
 
 ## go to school
@@ -219,9 +258,11 @@ school 當抽象名詞，抽象名詞不可數，前面沒有a 跟 the。
 
 ## 得到分數
 - I got **an** A on the test.(考試用on)
+- Come on, you didn't even study, how did you get an A? （少來了，你根本沒讀書，怎麼可能拿 A？）
+- I got a 95 on my test.（我在考試中拿了 95 分）
 - 單數: I got **a** 95.我拿了 95 分
 - 複數: I got 95 point**s**.（我得到了 95 分。points 是「點數／分數」的意思）
-- I got a 95 on my test.（我在考試中拿了 95 分）
+
 
 ## My grade 我的成績
 - My grade **is** 95. 我的成績是95分
@@ -273,18 +314,7 @@ from 是一個介系詞，表示「從...地方（或狀態）離開、脫離」
   - The manager needs to review the financial report.經理需要審查這份財務報告。
 
 
-----------------------
-## sessions 時段
-- 健身房課程
-  - I have a personal training session with my coach this afternoon.
-（我今天下午跟教練有一堂私人健身課。）
-- 心理諮商
-  - The therapist recommended weekly counseling sessions.
-（治療師建議進行每週一次的心理諮商。）
-- 時段
-  - There will be a Q&A session at the end of the workshop.
-（研討會的尾聲將會有一場問答時段。）
-- 視訊會議: a Zoom session
+
 
 ------------------------
 
@@ -323,37 +353,6 @@ dorm 就是大學或學院裡的學生宿舍（dormitory）的口語簡寫。
 
 ------
 
-在 **"What exactly is a diploma?"** 這句話中，**`exactly`**（副詞，意思是「究竟、到底、確切地」）放在疑問詞 **`What`** 後面，是英文非常標準且道地的用法！
-
-以下為您拆解 **`diploma` 的定義** 以及 **`exactly` 放在疑問詞後面的文法結構**：
-
----
-
-## 1. 文法解析：`exactly` 放在疑問詞後面
-
-在英文中，當我們想要**加強疑問語氣**，表達「到底、究竟、確切來說」時，最常見的做法就是**把副詞 `exactly` 直接放在疑問詞（What, Where, Who, Why, How）的後面**。
-
-### 句型結構：
-
-$$\text{疑問詞 (What/Where/Who...)} + \text{\textbf{exactly}} + \text{be動詞 / 助動詞} + \text{主詞}\dots?$$
-
-*  What（疑問詞：什麼）
-*  exactly（副詞：究竟/到底/確切地）
-*  is（be動詞）
-*  a diploma（主詞：畢業證書/文憑）
-
-### 💡 語感重點：
-
-* **一般問句：** *What is a diploma?*（文憑是什麼？）$\rightarrow$ 平鋪直敘地詢問定義。
-* **加強語氣（加上 `exactly`）：** *What **exactly** is a diploma?*（文憑**究竟/確切**是什麼？）$\rightarrow$ 代表你想知道更具體、更精準的細節，或者釐清容易混淆的概念。
-
-### 其他疑問詞的同款用法：
-
-* **Where exactly** do you live?（你**到底**住在哪裡？）
-* **Who exactly** said that?（那**究竟**是誰說的？）
-* **How exactly** does this machine work?（這台機器**確切來說**是怎麼運作的？）
-
----
 
 ## 2. 核心解答：What exactly is a diploma?（什麼是 diploma？）
 
@@ -530,45 +529,3 @@ $$\text{Subject（學科/知識領域）} \longrightarrow \text{Course（系統�
 
 
 ---------
-
-
-**是的，`campus` 的確是指「校園」！**
-
-而這裡的 **`campuses`** 就是 **`campus` 的複數形**（意思是「多個校園」或「多個校區」）。
-
-整句話的中文翻譯是：
-**「這所大學實際上擁有兩個校區。」**
-
-以下為您詳細說明字形變化與為什麼這裡要用複數：
-
----
-
-## 1. 為什麼是 `campuses` 而不是 `campuse`？
-
-* **原形（單數）：** **`campus`**（結尾是字母 **-s**）
-* **規則：** 英文中，結尾是 **-us** 的單數名詞，變成複數時通常要**去掉 -us，改加上 -es**（或者 -i）。
-* 因此：`campus` $\rightarrow$ **`campuses`**（發音為 /ˈkæmpəz/）。
-* 類似的規則字：*bus*（公車）$\rightarrow$ *buses*；*class*（課程/班級）$\rightarrow$ *classes*。
-
-
-
----
-
-## 2. 為什麼句子里要用複數 `campuses`？
-
-關鍵在於句首的數字 **`two`（兩個）**：
-
-* 如果只有一個校園 $\rightarrow$ *The university has **a campus**.*（單數）
-* 如果有兩個或多個校園 $\rightarrow$ *The university has **two campuses**.*（複數）
-
-因為數字是 `two`，後面的名詞就必須配合改成複數的 `campuses`。
-
----
-
-## 3. 常見延伸用法
-
-在大學的英文情境中，常會聽到分校或多校區的說法：
-
-* **Main campus**（主校區）
-* **Branch campus**（分校區）
-* **Multi-campus**（多校區的）

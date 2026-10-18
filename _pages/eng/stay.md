@@ -29,6 +29,8 @@ stay 在這裡管的是「範圍 / 邊界」，而不是限制你的動作不能
 - They decided to stay together.（他們決定繼續在一起。）
 
 ## Stay + 形容詞 (維持狀態不變)
+`stay`（連繫動詞）**：後面直接接形容詞，表示「保持某種狀態」。
+
 **自己**維持現狀、不改變，指人或事物**自己**維持在某個狀態。
 
 * Please stay calm.（請保持冷靜 —— 指的是「維持」當下這個不慌亂的狀態不要變。）
@@ -37,10 +39,15 @@ stay 在這裡管的是「範圍 / 邊界」，而不是限制你的動作不能
 - Stay safe（保持安全）
 - Stay healthy（保持健康）
 - stay organized（保持井然有序）
+- stay fit 保持健康/體態良好
 
 例句:
 - I think lockers are a great way to stay organized.我覺得置物櫃是保持井然有序的好方法。
 - Walking is a great way to stay healthy.（走路是保持健康的好方法。） 
+
+- Staying fit is good for your heart.
+（保持健康/體態良好對你的心臟有益。）
+  - fit（形容詞）：指「健康的、體態良好的、肌肉結實的」。
 
 ## Stay away 「離...遠一點」、「別靠近」
 Stay(保持) + away在遠處
@@ -100,4 +107,6 @@ our stay：「我們的停留／我們待在那裡的期間」
 * How was your stay?（你這趟住宿／停留得還愉快嗎？ → 名詞）
 * We enjoyed our stay at the hotel.（我們很享受在飯店停留的這段時間。 → 名詞） 
 * We met a lot of interesting people during our stay in Japan. 在我們於日本停留的期間。
+
+-------
 

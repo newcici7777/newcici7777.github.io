@@ -285,3 +285,101 @@ $\rightarrow$ 強調整體是由什麼**材質或基本成分**構成。
 $\rightarrow$ 強調一個個零件/成員（up 湊齊）組合成一個完整整體。
 3. **`gather` / `group**`
 $\rightarrow$ 是「去把東西湊在一起」的動作（動詞 V.），而 `be made up of` 是湊好之後「組成的狀態」。
+
+---------
+
+你問到了英文搭配詞（Collocations）中最精髓的部分！
+
+許多人學英文時常會困惑：為什麼是 **`make`** a choice, **`make`** an appointment, **`make`** a call，而不是用 *do* 或 *take*？
+
+在英文中，**`make`** 作為搭配詞時，背後有一個非常核心且明確的**視覺與心態畫面**：
+
+---
+
+### 💡 `make` 的核心邏輯：從「無」到「有」的創造、產出或建立
+
+當一個動詞搭配 **`make`** 時，它通常表示：
+
+1. **憑藉你的決定或行為，創造出一個原本不存在的新狀態、承諾或結果**（從 0 到 1）。
+2. **需要主動發起（Initiate）或承諾（Commit）某件事**。
+
+我們用這個邏輯來拆解你提到的三個例子：
+
+---
+
+### 1. 拆解你的三個例子
+
+* **make a choice（做出選擇）：**
+* 原本有多個可能性處於未定狀態，你透過主動思考，**創造出了一個明確的「決定/選擇」**。
+
+
+* **make an appointment（預約 / 約定時間）：**
+* *(註：appointment 是母音開頭，前面要用 **`an`** 喔！)*
+* 原本雙方的行程表上沒有這項安排，你主動聯繫並**建立了一個「時間上的承諾/約定」**。
+
+
+* **make a call（打電話）：**
+* 原本沒有通話，你主動按下撥號鍵，**建立了一條「電話連線」**。
+
+
+
+---
+
+### 2. 什麼時候知道該用 `make`？（四大高頻情境）
+
+只要符合以下四個情境，英文幾乎 90% 都會選用 **`make`**：
+
+#### ① **製造出聲音或語言溝通（Communication & Sound）**
+
+* **make a call**（打電話）
+* **make a noise**（發出噪音）
+* **make a speech**（發表演講）
+* **make a suggestion / recommendation**（提出建議 / 推薦）
+
+#### ② **做出決定、計畫或評估（Decisions & Plans）**
+
+* **make a choice**（做出選擇）
+* **make a decision**（做決定）
+* **make a plan**（做計畫）
+* **make a mistake**（犯錯 $\rightarrow$ 產生了一個錯誤的結果）
+
+#### ③ **建立承諾、約定或安排（Arrangements & Commitments）**
+
+* **make an appointment**（預約時間，如看醫生、剪髮）
+* **make a reservation**（預訂位子/房間，如餐廳、飯店）
+* **make a promise**（許下承諾）
+
+#### ④ **創造出收益或改變（Money & Change）**
+
+* **make money / a profit**（賺錢 / 獲利）
+* **make a difference**（產生改變 / 帶來影響）
+
+---
+
+### 💡 終極對比：`make` vs. `do`（最常搞混的兩大天王）
+
+大家最常拿 `make` 和 `do` 來比較，記憶口訣非常簡單：
+
+| 動詞 | 核心視覺 | 經典範例 | 比較說明 |
+| --- | --- | --- | --- |
+| **make** | **從無到有，創造/產出一個結果** | **make a plan**（制定計畫）<br><br>**make tea**（泡茶） | 重視**「產生的成果/決定」** |
+| **do** | **執行既有的任務、工作或例行公事** | **do homework**（做作業）<br><br>**do the dishes**（洗碗） | 重視**「執行的過程/動作」** |
+
+* **Do your best!** $\rightarrow$ 盡力去**執行/做**（過程）。
+* **Make a decision!** $\rightarrow$ **產出**一個決定（結果）。
+
+---
+
+### 🎬 總結小筆記
+
+想知道什麼時候用 **`make`**：
+
+* 只要這件事是**你主動發起**，並且會**產生一個新的決定、約定、成果或溝通**，用 **`make`** 準沒錯！
+
+例如：
+
+* 預約看醫生 $\rightarrow$ **make an appointment**
+* 訂餐廳座位 $\rightarrow$ **make a reservation**
+* 在會議中提出建議 $\rightarrow$ **make a suggestion**
+
+這樣從「創造與建立」的角度去理解 `make`，是不是就非常直覺了呢？

@@ -4,7 +4,7 @@ date: 2026-08-13
 keywords: English, 
 ---
 
-## wh子句 變 現在分詞 (V-ing)
+## 由關係代名詞 變 現在分詞 (V-ing)
 分詞（V-ing）當作「形容詞」來修飾前面的名詞，表示主動或正在進行的動作。
 
 - It's a guy delivering a pizza?
@@ -30,7 +30,7 @@ keywords: English,
 - The laptop running on the latest operating system is extremely fast. （那台運行最新作業系統的筆電非常快。）
 - Children playing in the park are laughing loudly. （在公園裡玩耍的孩子們在大聲笑著。）
 
-## wh子句 變 過去分詞 (V-ed/V3)
+## 由關係代名詞 變 過去分詞 (V-ed/V3)
 過去分詞（V-ed，表示被動／完成)
 * 原句：The man who was hit by a car.
 * 簡化：The man hit by a car.

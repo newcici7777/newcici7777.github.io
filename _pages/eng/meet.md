@@ -3,8 +3,6 @@ title: meet
 date: 2026-09-26
 keywords: English, meet
 ---
-
-
 ## in a meeting 會議
 - in a meeting 會議可以「一場一場」的數，所以要加a
   - She was in a meeting.(她當時在開一場會)

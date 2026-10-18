@@ -46,7 +46,6 @@ next 當作「順序副詞」使用，意思是「接下來、下一步」。
 - I was busy last month（我上個月很忙）
 - We will meet this Friday（我們這個星期五見）
 
-
 ## the next(形容詞) week
 當 next 不是直接黏在時間名詞前面當副詞，而是作為普通的形容詞，用來指「接下來的（連續一段）七天／那一個星期」時，就會需要加上 the。
 
@@ -100,4 +99,65 @@ next 已經不是形容詞（去修飾後面的名詞），而是直接被當作
 - The next goal for our team is to double the sales. （我們團隊的下一個目標是讓銷售額翻倍。）
 - The next morning, we woke up to heavy rain. （隔天早上，我們醒來時外面下著大雨。）
 
+-------------
+
+在 **"Next time you're in Berlin, you must try the sausage there."** 這句話中，**`Next time`** 的用法非常實用且特殊！
+
+以下為你詳細拆解它的**文法功能**、**時態規則**與**常見用法**：
+
+---
+
+### 1. 文法功能：充當「從屬連接詞」
+
+在文法上，`Next time` 在這裡直接扮演了**從屬連接詞**的角色（相當於 `When ... next time`），用來引導一個**時間副詞子句**，意思是「下一次當……的時候」。
+
+* **結構：** `Next time` + **時間子句 (S + V)**, **主句 (S + V)**
+* **句型拆解：**
+* `Next time you're in Berlin`（時間子句：下一次你在柏林的時候）
+* `, you must try the sausage there.`（主要子句：你一定要嚐嚐那裡的香腸。）
+
+
+
+💡 **小細節：** 這裡的 `Next time` 前面**不需要**加介系詞（如 ❌ *At next time* 或 ❌ *In next time* 是錯誤的），直接放在句首即可。
+
+---
+
+### 2. 時態關鍵：用「現在式」代替「未來式」
+
+這是許多人在造句時最容易犯錯的地方！
+
+雖然「下一次」發生在**未來**，但英文文法規定：**在時間與條件子句中，要用「現在簡單式」來代替「未來式」。**
+
+* ❌ **錯誤：** Next time you **will be** in Berlin...
+* ⭕ **正確：** Next time you **are** in Berlin... （句中的 `you're` 就是 `you are`）
+
+**更多對比範例：**
+
+* Next time he **comes** (❌ will come), I'll talk to him.
+（下次他來的時候，我會跟他談談。）
+* Next time it **rains** (❌ will rain), stay inside.
+（下次下雨時，待在室內。）
+
+---
+
+### 3. 同系列相關用法
+
+學會了 `Next time`，以下幾個表達「時間」的詞組文法結構完全一樣：
+
+| 詞組 | 中文意思 | 例句 |
+| --- | --- | --- |
+| **Next time** | 下一次……的時候 | **Next time** you call, I'll answer.（下次你打來時，我會接。） |
+| **Last time** | 上一次……的時候 | **Last time** I saw him, he was fine.（上次我看到他時，他很好。） |
+| **Every time / Each time** | 每當……的時候 | **Every time** I hear this song, I think of you.（每次聽到這首歌，我都會想到你。） |
+| **The first time** | 第一次……的時候 | **The first time** we met, it was raining.（我們第一次見面時，正在下雨。） |
+
+---
+
+### 💡 總結小筆記
+
+1. **不用加介系詞：** 直接用 `Next time ...` 引導句子。
+2. **時間子句用現在式：** `Next time + 主詞 + 現在式動詞`（表示未來的事件）。
+3. **主要子句可加情態動詞/未來式：** 後半句可自由搭配 `must`, `should`, `will`, `can` 等。
+
+請問對於 `Next time` 的時態或句型還有其他想深入了解的地方嗎？
 

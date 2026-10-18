@@ -28,3 +28,59 @@ keywords: english, glad to, please to
 
 ## I'm glad to 原形動詞
 - I'm glad to hear that.（聽到這個我很高興。）
+
+-----
+
+**是的，一定要用 to！**
+
+因為 **`I'm glad to...`** 後面要接的是一個**動作（動詞原型）**，這裡的 `to` 是不定詞（Infinitive）的標記。
+
+結構是：
+
+> **I'm glad to + 動詞原型**
+> （意思：很高興/很開心能夠去**做某事**）
+
+---
+
+### 🎬 常見例句與用法
+
+1. **很高興認識你：**
+* I'm glad **to meet** you.
+* I'm glad **to see** you.
+
+
+2. **很高興能幫上忙：**
+* I'm glad **to help**.
+
+
+3. **很高興收到你的消息：**
+* I'm glad **to hear** from you.
+
+
+4. **很高興能有這個機會：**
+* I'm glad **to have** this opportunity.
+
+
+
+---
+
+### 💡 補充：如果後面想接「完整的句子」，可以用 `that`
+
+如果你後面不是要接「動作（動詞）」，而是想接「一件事（包含主詞+動詞的完整句子）」，這時候會改用 **`that`**（而且 `that` 經常可以省略）：
+
+* **I'm glad to...（接動詞）**
+* I'm glad **to hear** that.（很高興**聽到**那件事。）
+
+
+* **I'm glad (that)...（接句子）**
+* I'm glad **(that) you are here**.（很高興**你在這裡**。）
+* I'm glad **(that) you like it**.（很高興**你喜歡它**。）
+
+
+
+---
+
+### 💡 記憶小撇步
+
+* 想表達「很高興**去做…（動作）**」 $\rightarrow$ 用 **`to`**
+* 想表達「很高興**某件事發生了（完整句子）**」 $\rightarrow$ 用 **`that`**（可省略）

@@ -5,6 +5,9 @@ keywords: english, good at, get better at
 ---
 
 ## good(形容詞) at / bad at 擅長/不擅長
+
+* **be good `at`...** $\rightarrow$ 在……（領域/技能）很擅長。（例：*She is good **at** math.*）
+
 ```
 [主語] ＋ [be 動詞] ＋ good at  ＋ [名詞 或 動名詞(-ing)]
 ```
@@ -27,8 +30,11 @@ keywords: english, good at, get better at
 - poor at...（不擅長於...）
 - skilled at...（熟練於...）
 
-
 ## good(形容詞) for 對...有益／有好處
+* **`be good for + 對象/對象器官`** 代表「對...有好處 / 對...有益」。
+* **be good `for`...** $\rightarrow$ 對……（對象/健康）有益。（例：*Water is good **for** you.*）
+
+例句:
 - Is playing soccer every day good for you?每天踢足球對你有好處嗎？
 - Eating vegetables is good for you.（吃蔬菜對你有好處。）
 - Reading is good for children.（閱讀對孩子們有好處。）
@@ -39,6 +45,8 @@ keywords: english, good at, get better at
 - Is playing soccer every day good for you?每天都踢足球对你好吗？
 - Going to the farm is not good for me.。去农场对我不好。
 - Eating too much ice cream is bad for her.吃大多冰淇淋对她不好。
+
+
 
 ## get better at 更擅長
 ```

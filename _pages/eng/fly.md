@@ -222,3 +222,101 @@ by plane它通常作為副詞，補充說明你選擇了什麼樣的交通方式
 ## is landing（正在降落 / 著陸中）
 - We are landing right now.（我們現在正在降落。）
 - The plane is about to land.（飛機快要降落了。）
+
+--------------------
+
+**是的，開飛機在英文裡就是用 `fly`！**
+
+在英文中，**fly** 是一個雙向的動詞：它既可以表示「飛（鳥在飛、飛機在飛）」，也可以表示「開（飛機）、駕駛（航空器）」。
+
+---
+
+### 💡 核心用法：`fly` + 交通工具
+
+當 **fly** 後面接飛機或飛行器時，意思就是「駕駛 / 操控 / 開」：
+
+* **fly an airplane / a plane**（開飛機）
+* **fly a helicopter**（開直升機）
+* **fly a drone**（操作無人機）
+
+> **你的例句：**
+> *I'm a pilot, so I fly airplanes.*
+> （我是個飛行員，所以我開飛機。）
+
+---
+
+### 🔍 為什麼不用 `drive` 或 `operate`？
+
+在英文中，控制不同交通工具所用的動詞是有區分的：
+
+| 交通工具 | 專用動詞 | 例句 |
+| --- | --- | --- |
+| **陸上車輛** (車子、公車、卡車) | **drive** | **drive** a car（開車） |
+| **空中飛行器** (飛機、直升機) | **fly** | **fly** a plane（開飛機） |
+| **海上船隻** (船、艇) | **sail** / **steer** | **sail** a boat / **steer** a ship（開船/駕船） |
+| **兩輪/騎乘類** (腳踏車、機車、馬) | **ride** | **ride** a bike / motorcycle（騎車） |
+
+* 💡 **小補充：** 如果說 *drive a plane*，老外雖然聽得懂，但會覺得很怪（聽起來像是飛機在跑道上「滑行/陸行」）。
+
+---
+
+### 🎬 常見實用例句
+
+1. **How long have you been flying planes?**
+（你開飛機開多久了？）
+2. **He learned to fly a helicopter in the army.**
+（他在軍中學會了開直升機。）
+3. **She flies commercial jets for an airline.**
+（她在航空公司開民航客機。）
+
+所以 **"I fly airplanes"** 是非常道地且標準的說法喔！
+
+-----
+
+這裡使用 **flown**，是因為整句話使用的是英文的「現在完成式」（Present Perfect Tense）！
+
+---
+
+### 💡 核心文法： have / has + 過去分詞 (V3)
+
+`flown` 是動詞 **fly** 的**過去分詞（Past Participle，簡稱 V3）**。
+
+動詞 **fly** 的三態變化是：
+
+* **原形 (V1)：** fly
+* **過去式 (V2)：** flew
+* **過去分詞 (V3)：** **flown**
+
+---
+
+### 🔍 句型拆解與縮寫
+
+這句話裡的 **He's** 是 **`He has`** 的縮寫（注意：這裡不是 *He is*）：
+
+> **原句：**
+> He**'s** **flown** in a helicopter from France to Spain!
+> = He **has flown** in a helicopter from France to Spain!
+
+* **文法結構：** 主詞 (`He`) + `has` + 過去分詞 (`flown`)
+* **句子意思：** 他曾經搭乘/駕駛直升機從法國飛到西班牙！
+
+---
+
+### 🎬 為什麼要用「現在完成式」？
+
+在英文中，當我們表達「過去到現在為止的個人經歷/經驗」**（特別是講到「曾經做過某事」）時，習慣用**現在完成式 (`has / have + V3`)：
+
+* **He flew to Spain.** （用過去式：單純描述過去發生過這件事）
+* **He has flown to Spain.** （用現在完成式：強調他**有過這個經驗/經歷**）
+
+---
+
+### 💡 記憶小貼士：fly 的三態變化
+
+| 式 | 動詞型態 | 例句 |
+| --- | --- | --- |
+| **原形 (V1)** | **fly** | I **fly** planes.（我是開飛機的。） |
+| **過去式 (V2)** | **flew** | He **flew** to Paris last week.（他上週飛去了巴黎。） |
+| **過去分詞 (V3)** | **flown** | He has **flown** a drone before.（他以前操作過無人機。） |
+
+所以看到 **`has flown`** 或 **`have flown`**，就知道是在表達「曾經飛過 / 開過 / 搭乘過飛機」的經驗喔！
