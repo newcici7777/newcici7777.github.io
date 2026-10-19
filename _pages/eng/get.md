@@ -30,13 +30,27 @@ keywords: get
 * ***It is getting cold.***（天氣**變**冷了。）
 * 畫面：從「不冷」$\rightarrow$ 動態轉變成「冷 (`cold`)」。
 
+* *"It's **getting** dark. We should go home."*（天快**黑**了，我們該回家了。）
 
 * ***Don't get angry!***（別**生氣**！）
 * 畫面：從「平靜」$\rightarrow$ 動態轉變成「生氣 (`angry`)」。
 
+* *"Don't **get** mad at me!"*（不要對我**發火**啦！）
+
 
 * ***I am getting tired.***（我**漸漸累**了。）
 * 畫面：精神好 $\rightarrow$ 動態轉變成「疲倦 (`tired`)」。
+
+------------------
+
+### 3. 轉變的時間軸與畫面感：瞬間/日常 (`get`) vs. 演變/累積 (`become`)
+
+* **`get` 的畫面（錄影帶快轉 / 日常微小變化）：**
+強調的是**當下迅速發生**的生理或心理狀態變化。
+* *I'm **getting** hungry.*（我肚子**漸漸餓**起來了。）
+* *She **got** sick yesterday.*（她昨天**病**倒了。）
+
+1. **講日常生活、天氣、情緒、身體狀態** $\rightarrow$ 大膽用 **`get`**（如 *get cold*, *get tired*, *get ready*, *get angry*）。
 
 -------------
 

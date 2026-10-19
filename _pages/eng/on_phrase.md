@@ -68,7 +68,7 @@ keywords: English
 
 ## 一、 `on` 的常見動詞搭配（聚焦在「具體目標/項目」）
 
-### 1. `work on`（著手處理 / 投入……的研發或改進）
+### 1. `work on`（著手處理 / 投入...的研發或改進）
 
 * **例句：** I’m **working on** a new project this week.
 （我這週正在**處理**一個新專案。）
@@ -78,17 +78,17 @@ keywords: English
 * **例句：** Please **focus on** the main issue during the meeting.
 （開會時請**專注在**主要議題上。）
 
-### 3. `spend (time/money) on`（花費時間/金錢在……上）
+### 3. `spend (time/money) on`（花費時間/金錢在...上）
 
 * **例句：** She **spent** three hours **on** her homework.
 （她**在**作業上**花了**三個小時。）
 
-### 4. `do well on` / `do poorly on`（在……表現好 / 表現差）
+### 4. `do well on` / `do poorly on`（在...表現好 / 表現差）
 
 * **例句：** He **did well on** his interview yesterday.
 （他昨天**在**面試中**表現得很好**。）
 
-### 5. `comment on` / `feedback on`（針對……做出評論 / 給予回饋）
+### 5. `comment on` / `feedback on`（針對...做出評論 / 給予回饋）
 
 * **例句：** The manager gave me helpful **feedback on** my proposal.
 （經理**針對**我的企劃案給了很有用的**回饋**。）

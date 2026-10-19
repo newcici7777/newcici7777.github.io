@@ -22,24 +22,6 @@ $$\text{主詞} + \begin{cases} \mathbf{get} \\ \mathbf{become} \end{cases} + \t
 | **轉變過程/速度** | **偏向「快速、瞬間或日常的轉變」**<br><br>（如：變冷、生氣、累了、變濕） | **偏向「漸進、長期、累積的轉變」**<br><br>（如：變成科學家、漸漸成熟、病情惡化） |
 | **可接的詞性** | 1. **形容詞**（`get cold`）<br><br>2. **副詞/介系詞**（`get down`, `get in`）<br><br>3. **名詞**（作為及物動詞表示「拿到」`get a car`） | 1. **形容詞**（`become popular`）<br><br>2. **名詞**（作為連繫動詞表示「成為某身分/職業」`become a doctor`） |
 
----
-
-## 🔍 詳細拆解三大核心差異
-
-### 1. 語氣與場合差異：日常口語 (`get`) vs. 正式書面 (`become`)
-
-這兩者在口語和正式英文中有著非常鮮明的風格劃分：
-
-* **口語對話（用 `get`）：**
-* *"It's **getting** dark. We should go home."*（天快**黑**了，我們該回家了。）
-* *"Don't **get** mad at me!"*（不要對我**發火**啦！）
-
-
-* **正式書面 / 報導（用 `become`）：**
-* *"The weather condition has **become** hazardous."*（天氣狀況已**變得**危險。）
-* *"The relationship between the two countries **became** strained."*（兩國關係**變得**緊張。）
-
-
 
 ---
 
@@ -57,25 +39,7 @@ $$\text{主詞} + \begin{cases} \mathbf{get} \\ \mathbf{become} \end{cases} + \t
 * *I need to **get a new phone**.*（我需要**買/拿到**一支新手機。）
 
 
-
-> ⚠️ **文法陷阱警示：**
-> * 想表達「我想**成為**一名工程師」：
-> * ✅ *I want to **become** an engineer.*
-> * ❌ *I want to **get** an engineer.*（這會變成「我想去抓一個工程師回來」！）
-> 
-> 
-> 
-> 
-
----
-
-### 3. 轉變的時間軸與畫面感：瞬間/日常 (`get`) vs. 演變/累積 (`become`)
-
-* **`get` 的畫面（錄影帶快轉 / 日常微小變化）：**
-強調的是**當下迅速發生**的生理或心理狀態變化。
-* *I'm **getting** hungry.*（我肚子**漸漸餓**起來了。）
-* *She **got** sick yesterday.*（她昨天**病**倒了。）
-
+---------------------
 
 * **`become` 的畫面（時間軸拉長 / 質變與演化）：**
 強調經過**一段時間的積累、發展或演變**，達到某種新的狀態。
@@ -85,13 +49,7 @@ $$\text{主詞} + \begin{cases} \mathbf{get} \\ \mathbf{become} \end{cases} + \t
 （贏得比賽後，她**變得**享譽盛名。）
 
 
-
----
-
-## 💡 一秒總結與道地口訣
-
-1. **講日常生活、天氣、情緒、身體狀態** $\rightarrow$ 大膽用 **`get`**（如 *get cold*, *get tired*, *get ready*, *get angry*）。
-2. **講身分職業（成為……）、寫作文章、長期發展變化** $\rightarrow$ 用 **`become`**（如 *become a teacher*, *become famous*, *become clear*）。
+2. **講身分職業（成為...）、寫作文章、長期發展變化** $\rightarrow$ 用 **`become`**（如 *become a teacher*, *become famous*, *become clear*）。
 
 這樣比較之後，您對 `get`（靈活口語的變化）與 `become`（正式穩重的成為）的界線是不是就非常清晰了呢？
 
@@ -144,7 +102,7 @@ $$\text{主詞} + \begin{cases} \mathbf{get} \\ \mathbf{become} \end{cases} + \t
 
 這兩者在日常英文中經常可以互換，但根據句型與情境的不同，各有最道地的慣用法：
 
-### 情境 A：當表達「我的夢想是……」（兩者皆可，語感有些微差異）
+### 情境 A：當表達「我的夢想是...」（兩者皆可，語感有些微差異）
 
 * *My goal is **to be an engineer**.*
 （我的目標是**當**一名工程師。 $\rightarrow$ 最常見，強調理想中的**職業狀態**）
@@ -167,8 +125,8 @@ $$\text{主詞} + \begin{cases} \mathbf{get} \\ \mathbf{become} \end{cases} + \t
 
 ## 💡 一秒總結口訣
 
-1. 想表達「我想當…… / 理想身分是……」 $\rightarrow$ 用 **`to be`**（最自然口語，強調「當」那個身分）。
-2. 想表達「經歷學習與蛻變，成為……」 $\rightarrow$ 用 **`become`**（強調「從無到有」的轉變過程）。
+1. 想表達「我想當... / 理想身分是...」 $\rightarrow$ 用 **`to be`**（最自然口語，強調「當」那個身分）。
+2. 想表達「經歷學習與蛻變，成為...」 $\rightarrow$ 用 **`become`**（強調「從無到有」的轉變過程）。
 
 這樣比較之後，您對於 `be`（當/處於狀態）與 `become`（變成/過程蛻變）在職業描述上的差異，是不是覺得非常清晰直覺了呢？
 
@@ -200,19 +158,6 @@ $$\text{主詞} + \begin{cases} \mathbf{get} \\ \mathbf{become} \end{cases} + \t
 
 ---
 
-### 2. 🌀 `go` + 形容詞（偏向「惡化 / 失去控制」的轉變）
-
-* **核心視覺：** 像偏離了軌道「走掉了 (go away)」，在英文中，`go` 搭配形容詞時，**高達八成以上都是指「朝向不好、壞掉或失控」的狀態轉變**！
-* **常用搭配：**
-* **食物壞掉：** *The meat **went** bad.*（肉**變**質/壞掉了。）
-* **生理失能：** *He **went** blind / deaf.*（他**變**瞎了 / **變**聾了。）
-* **頭髮禿/白：** *He is **going** bald.*（他快**變**禿頭了。）
-* **發瘋/失控：** *The crowd **went** crazy.*（人群**變**得很瘋狂。）
-
-
-
----
-
 ### 3. 📈 `grow` + 形容詞（漸進、長期、緩慢的轉變）
 
 * **核心視覺：** 像植物「生長 (grow)」一樣，強調**時間軸很長、慢慢累積**的自然變化。
@@ -225,17 +170,6 @@ $$\text{主詞} + \begin{cases} \mathbf{get} \\ \mathbf{become} \end{cases} + \t
 
 ---
 
-### 4. 🎯 `run` + 形容詞（資源/狀態「耗盡、變枯竭」）
-
-* **核心視覺：** 像水「流走了 (run away)」，指某種資源或狀態漸漸**流失、見底**。
-* **常用搭配：**
-* **資源枯竭：** *We are **running** low on gas.*（我們的汽油快**用光/變少**了。）
-* **乾涸：** *The river **ran** dry.*（這條河**變**乾涸了。）
-* **時間耗盡：** *Time is **running** short.*（時間快**不夠/變短**了。）
-
-
-
----
 
 ### 5. ⚓ `come` + 形容詞（朝向「理想、正常、實現」的正面轉變）
 
@@ -262,3 +196,16 @@ $$\text{主詞} + \begin{cases} \mathbf{get} \\ \mathbf{become} \end{cases} + \t
 | **`come`** | **結果朝目標走來，順利「實現/成真」** | *come true / come loose*（成真 / 變鬆） |
 
 掌握了這些動詞的**空間視覺與方向感**之後，您會發現英文的「狀態轉變」其實非常立體，每一個字都有它獨特的畫面！
+
+
+-----
+
+## 食物壞掉的連綴動詞 + 形容詞
+- The meat **went** bad.（肉**變**質/壞掉了。）  
+- This milk smells off.這牛奶聞起來變質了(off是形容詞)
+- This tastes off.吃起來怪怪的
+- The milk turned sour.
+- The milk went sour.
+
+
+

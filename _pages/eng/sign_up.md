@@ -68,15 +68,9 @@ keywords: english
 
 | 單字 | 核心概念 | 適用場合 | 道地搭配範例 |
 | --- | --- | --- | --- |
-| **enter** | **報名參賽 / 投稿** | 比賽 (contest/race)、獎項、展覽 | **enter** a contest with a painting<br>
-
-<br>（拿畫作**報名參賽**） |
-| **enroll** | **註冊學籍 / 報名課程** | 學校、課程 (course)、工作坊 | **enroll in** an English class<br>
-
-<br>（**報名/註冊**英文課） |
-| **join** | **加入團體 / 參與活動** | 團隊 (team)、社團 (club)、派對 | **join** a football team<br>
-
-<br>（**加入**足球隊） |
+| **enter** | **報名參賽 / 投稿** | 比賽 (contest/race)、獎項、展覽 | **enter** a contest with a painting<br><br>（拿畫作**報名參賽**） |
+| **enroll** | **註冊學籍 / 報名課程** | 學校、課程 (course)、工作坊 | **enroll in** an English class<br><br>（**報名/註冊**英文課） |
+| **join** | **加入團體 / 參與活動** | 團隊 (team)、社團 (club)、派對 | **join** a football team<br><br>（**加入**足球隊） |
 
 ---
 

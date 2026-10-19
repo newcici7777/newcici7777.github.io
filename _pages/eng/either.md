@@ -21,7 +21,7 @@ keywords: English,either
 * **字義：** 作為動詞時，意思是「有關係」、「要緊」或「重要」（相當於 *is important*）。
 * **文法說明：**
 * 因為主詞 `Neither class` 在文法上是**單數**，所以後面的動詞 `matter` 必須加上 **-s** 變成單數動詞 **`matters`**。
-* `matter for...` 表示「對……而言很重要/有影響」。
+* `matter for...` 表示「對...而言很重要/有影響」。
 
 
 

@@ -170,7 +170,7 @@ get是進去
 
 ### 💡 詞性與文法剖析：
 
-* **`in`**：介系詞 (Preposition)，表示「處於……位置」。
+* **`in`**：介系詞 (Preposition)，表示「處於...位置」。
 * **`the front`**：名詞組 (Noun Phrase)，作介系詞 `in` 的受詞，意思是「前段 / 前方區域」。
 * **`in the front`**：**介系詞片語 (Prepositional Phrase)**，充當形容詞修飾前面的名詞 `This friend`（「位在最前面的這位朋友」）。
 

@@ -25,7 +25,7 @@ win 是動詞。
 -------------------
 這是一個非常精彩的道地用法！
 
-在這裡，**`came`**（動詞 `come` 的過去式）並不是單純指實體「走過來」或「來到」，而是引申為「達到某種名次 / 得到某種結果 / 最終處於……的狀態」！
+在這裡，**`came`**（動詞 `come` 的過去式）並不是單純指實體「走過來」或「來到」，而是引申為「達到某種名次 / 得到某種結果 / 最終處於...的狀態」！
 
 以下為您詳細拆解它的**詞性、文法結構與空間視覺語感**：
 
@@ -286,23 +286,9 @@ $$\begin{aligned} \text{He } &\mathbf{\text{is}} \quad \mathbf{\text{first}} \qu
 
 | 功能 | 核心概念 | 例句與翻譯 |
 | --- | --- | --- |
-| **① 工具 / 憑藉 (本句用法)** | **憑藉、靠著、用** | Mia won **with** a vanilla cake.<br>
-
-<br>（Mia **靠著**香草蛋糕獲勝。）<br>
-
-<br>I wrote the note **with** a pen.<br>
-
-<br>（我**用**筆寫了便條紙。） |
-| **② 伴隨 / 人際關係** | **陪伴、和……在一起** | She went to the park **with** her son.<br>
-
-<br>（她**和**兒子一起去公園。） |
-| **③ 感受對象 (形容詞搭配)** | **面對這個對象時的感受** | I'm happy **with** my new car.<br>
-
-<br>（我**對**我的新車很滿意。）<br>
-
-<br>He was angry **with** me.<br>
-
-<br>（他**對**我很生氣。） |
+| **① 工具 / 憑藉 (本句用法)** | **憑藉、靠著、用** | Mia won **with** a vanilla cake.<br><br>（Mia **靠著**香草蛋糕獲勝。）<br><br>I wrote the note **with** a pen.<br><br>（我**用**筆寫了便條紙。） |
+| **② 伴隨 / 人際關係** | **陪伴、和...在一起** | She went to the park **with** her son.<br><br>（她**和**兒子一起去公園。） |
+| **③ 感受對象 (形容詞搭配)** | **面對這個對象時的感受** | I'm happy **with** my new car.<br><br>（我**對**我的新車很滿意。）<br><br>He was angry **with** me.<br><br>（他**對**我很生氣。） |
 
 ---
 
@@ -319,8 +305,8 @@ $$\begin{aligned} \text{He } &\mathbf{\text{is}} \quad \mathbf{\text{first}} \qu
 
 ### 💡 總結小筆記
 
-* **happy with ...** $\rightarrow$ 對……感到滿意（感情對象）
-* **won with ...** $\rightarrow$ 靠著/憑藉著……獲勝（工具/作品）
+* **happy with ...** $\rightarrow$ 對...感到滿意（感情對象）
+* **won with ...** $\rightarrow$ 靠著/憑藉著...獲勝（工具/作品）
 
 這樣拆解之後，是不是就能很清楚看出 `with` 在不同句子裡的精妙之處了呢？
 
@@ -375,16 +361,8 @@ $$\begin{aligned} \text{He } &\mathbf{\text{is}} \quad \mathbf{\text{first}} \qu
 
 | 類型 | 句型結構 | 例句 | 中文意思 |
 | --- | --- | --- | --- |
-| **不及物動詞**<br>
-
-<br>(後面無受詞) | **主詞 + won (+ 介系詞片語)** | Mia **won**. <br>
-
-<br>Mia **won with** a vanilla cake. | Mia **獲勝了**。<br>
-
-<br>Mia **靠著**香草蛋糕**獲勝**。 |
-| **及物動詞**<br>
-
-<br>(後面直接加受詞) | **主詞 + won + 賽事 / 獎項** | Mia **won the gold medal**. | Mia **贏得了**金牌。 |
+| **不及物動詞**<br><br>(後面無受詞) | **主詞 + won (+ 介系詞片語)** | Mia **won**. <br><br>Mia **won with** a vanilla cake. | Mia **獲勝了**。<br><br>Mia **靠著**香草蛋糕**獲勝**。 |
+| **及物動詞**<br><br>(後面直接加受詞) | **主詞 + won + 賽事 / 獎項** | Mia **won the gold medal**. | Mia **贏得了**金牌。 |
 
 ---
 

@@ -41,7 +41,7 @@ keywords: english, Band
 | **Rubber band** | **Rubber**（橡膠）+ **band**（帶子） | 橡皮筋 |
 | **Hairband** | **Hair**（頭髮）+ **band**（帶子） | 髮帶 / 發圈 |
 | **Headband** | **Head**（頭）+ **band**（帶子） | 頭帶 / 頭飾 |
-| **Bind** | 同源動詞（把……綁起來） | 綁定 / 捆綁 |
+| **Bind** | 同源動詞（把...綁起來） | 綁定 / 捆綁 |
 
 ---
 

@@ -114,8 +114,8 @@ excited（興奮的、期待的） 這個字，習慣搭配的固定介系詞就
 
 把 `be happy with` 直接當作一個**一整組的動詞片語**記下來：
 
-* **happy with = 對……滿意**
-* **not happy with = 對……不滿意/不高興**
+* **happy with = 對...滿意**
+* **not happy with = 對...不滿意/不高興**
 
 這樣下次看到就能直接反應過來囉！請問這樣解釋有解決你的疑問嗎？
 
@@ -267,19 +267,15 @@ excited（興奮的、期待的） 這個字，習慣搭配的固定介系詞就
 
 | 句型 | 強調重點 | 例句 |
 | --- | --- | --- |
-| **happy with ...** | 強調對**長期的整體狀況、物件、人**的「滿意度」 | *I'm not **happy with** my job.*<br>
-
-<br>（我不滿意我的工作 $\rightarrow$ 長期狀態） |
-| **happy about ...** | 強調對**某個特定事件/消息**的「高興情緒」 | *I'm **happy about** my promotion!*<br>
-
-<br>（我對升官這件事感到高興 $\rightarrow$ 特定事件） |
+| **happy with ...** | 強調對**長期的整體狀況、物件、人**的「滿意度」 | *I'm not **happy with** my job.*<br><br>（我不滿意我的工作 $\rightarrow$ 長期狀態） |
+| **happy about ...** | 強調對**某個特定事件/消息**的「高興情緒」 | *I'm **happy about** my promotion!*<br><br>（我對升官這件事感到高興 $\rightarrow$ 特定事件） |
 
 ---
 
 ### 🎬 總結小筆記
 
 1. **`with + 人`** 的模式完全正確（例如 *strict with me*, *happy with him*）。
-2. 但 **`happy with`** 也很常用於**事物/工作/結果**，表示「對……感到滿意」。
+2. 但 **`happy with`** 也很常用於**事物/工作/結果**，表示「對...感到滿意」。
 3. **"I am not happy with my job as a lawyer."** 代表「我對自己當律師這份工作不滿意 / 這份工作讓我過得不開心」。
 
 這樣的解釋有幫你把之前的文法脈絡連結起來嗎？如果有想嘗試造句，隨時可以寫出來讓我幫你看！

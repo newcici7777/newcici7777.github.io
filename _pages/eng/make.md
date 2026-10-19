@@ -234,7 +234,7 @@ with片語，當作形容詞，後位修飾受詞。
 
 ---
 
-## 1. `be made of` vs. `consist of`（「由……所組成」：材質/基本成分）
+## 1. `be made of` vs. `consist of`（「由...所組成」：材質/基本成分）
 
 這兩者在意思上確實非常非常接近，都是用來描述某物的**材質**或**基礎成分**。
 
@@ -271,7 +271,7 @@ with片語，當作形容詞，後位修飾受詞。
 | 英文表達 | 詞性與結構 | 核心語感與說明 | 範例例句 |
 | --- | --- | --- | --- |
 | **`be made up of`** | 被動片語<br><br>(`up` 為**副詞 Adv.**) | **個體/零件湊齊成整體**<br><br>（著重於多個元件組合起來） | *The team **is made up of** 5 members.*<br><br>（團隊由 5 位成員**湊齊組成**。） |
-| **`be composed of`** | 被動片語<br><br>(`composed` 為 V-ed) | **由……所構成分子**<br><br>（較正式，多用於文章/科學） | *Water **is composed of** hydrogen and oxygen.*<br><br>（水是由氫與氧**構成**的。） |
+| **`be composed of`** | 被動片語<br><br>(`composed` 為 V-ed) | **由...所構成分子**<br><br>（較正式，多用於文章/科學） | *Water **is composed of** hydrogen and oxygen.*<br><br>（水是由氫與氧**構成**的。） |
 | **`gather`** | **動詞 (Verb)** | **聚集 / 收集**（動作）<br><br>（把散落的人事物集結起來） | *He **gathered** the blocks together.*<br><br>（他把積木**聚集/收集**在一起。） |
 | **`group`** | **動詞 (Verb)** | **分組 / 歸類**（動作）<br><br>（將個體按特徵群組化） | *The teacher **grouped** the students by age.*<br><br>（老師將學生按年齡**分組**。） |
 

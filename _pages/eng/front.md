@@ -19,7 +19,7 @@ keywords: english, front
 
 > *"This friend **in the front** is first in line."*
 
-* **`in`**：**介系詞 (Preposition)**，表示「在……裡面/區域」。
+* **`in`**：**介系詞 (Preposition)**，表示「在...裡面/區域」。
 * **`the`**：**定冠詞 (Definite Article)**。
 * **`front`**：**名詞 (Noun)**，意思是「前部 / 前端 / 最前面的區域」。
 
@@ -32,7 +32,7 @@ keywords: english, front
 
 ---
 
-## 2. 🔍 *"in front of"*（在……的前方）
+## 2. 🔍 *"in front of"*（在...的前方）
 
 > *"He is standing **in front of** the bus."*（他站在公車的前方。）
 
@@ -40,7 +40,7 @@ keywords: english, front
 
 ### 💡 為什麼中間的 `the` 消失了？
 
-在語言演化的過程中，當人們非常頻繁地使用「在……相對位置的前面」時，`in + the + front + of` 中間代表特定區域的冠詞 `the` 就被**省略吞掉了**，三個字凝固在一起變成了**一個專門用來表示位置的「介系詞工具」**！
+在語言演化的過程中，當人們非常頻繁地使用「在...相對位置的前面」時，`in + the + front + of` 中間代表特定區域的冠詞 `the` 就被**省略吞掉了**，三個字凝固在一起變成了**一個專門用來表示位置的「介系詞工具」**！
 
 * 因為整個 `in front of` 已經變成了介系詞，後面的 `the bus` 才是受詞，所以 `front` 這裡不再獨立當作名詞看待，自然就不需要加 `the` 了。
 

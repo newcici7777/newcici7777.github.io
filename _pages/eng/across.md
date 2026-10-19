@@ -112,7 +112,7 @@ Cross + 空間/通道名詞
 
 -------
 
-在 **"The bookstore is opposite a coffee shop."** 與 **"It's opposite the park."** 這兩句話中，**`is opposite`** 表示「在……的對面」。
+在 **"The bookstore is opposite a coffee shop."** 與 **"It's opposite the park."** 這兩句話中，**`is opposite`** 表示「在...的對面」。
 
 這裡最關鍵也最容易讓人困惑的文法重點是：**`opposite` 在這兩句話中是作為「介系詞（Preposition）」使用**。
 
@@ -128,7 +128,7 @@ $$\text{主詞} + \text{be動詞 (is/are)} + \text{opposite (介系詞)} + \text
 
 * **The bookstore**（主詞，書店）
 * **is**（be動詞，在）
-* **opposite**（**介系詞**，在……對面）
+* **opposite**（**介系詞**，在...對面）
 * **a coffee shop / the park**（名詞，咖啡廳 / 公園）
 
 > 💡 **文法特點（重要！）：**
@@ -142,7 +142,7 @@ $$\text{主詞} + \text{be動詞 (is/are)} + \text{opposite (介系詞)} + \text
 
 ## 2. 同義片語替換（更容易理解的說法）
 
-`opposite` 作為介系詞時，完全可以替換為大家非常熟悉的片語 **`across from`**（在……對面）：
+`opposite` 作為介系詞時，完全可以替換為大家非常熟悉的片語 **`across from`**（在...對面）：
 
 * *The bookstore **is opposite** a coffee shop.*
 $= \text{The bookstore is across from a coffee shop.}$
@@ -170,5 +170,5 @@ $= \text{It is across from the park.}$
 
 當您在指路或說明位置時：
 
-* 把 **`is opposite`** 直接當作 **「位在……對面」** 即可。
+* 把 **`is opposite`** 直接當作 **「位在...對面」** 即可。
 * 記得後面直接接地點名詞：**`is opposite + 地點`**！

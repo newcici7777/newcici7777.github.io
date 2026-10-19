@@ -63,7 +63,7 @@ keywords: english, with
 
 * **`without`**：**介系詞 (Preposition)**
 * **`counting`**：**動名詞 (Gerund, V-ing)**，作介系詞 `without` 的受詞，意思是「計算 / 點算」。
-* **整體意思：** **「不算進……的話 / 扣除……不計 / 在不點算……的情況下」**。
+* **整體意思：** **「不算進...的話 / 扣除...不計 / 在不點算...的情況下」**。
 
 ---
 
@@ -93,7 +93,7 @@ keywords: english, with
 
 1. **`without` 詞性：** **介系詞（Preposition）**。
 2. **核心法則：** 後面接 **名詞 (N.)**、**代名詞 (Pron.)** 或 **動名詞 (V-ing)**。
-3. **`without counting ...`：** 表示「在不計算/不扣除……的情況下」，是口語和邏輯推論中非常高級且自然的反向思考表達！
+3. **`without counting ...`：** 表示「在不計算/不扣除...的情況下」，是口語和邏輯推論中非常高級且自然的反向思考表達！
 
 -----
 
@@ -117,7 +117,7 @@ keywords: english, with
 
 ### 🔍 詞性與文法剖析：
 
-* **`Without`**：**介系詞 (Preposition)**，表示「在沒有……的情況下」。
+* **`Without`**：**介系詞 (Preposition)**，表示「在沒有...的情況下」。
 * **`counting`**：**動名詞 (Gerund, V-ing)**，充當介系詞 `Without` 的 **受詞 (Object)**，代表「（一個個點數）這個動作」。
 * **`how many crayons`**：疑問詞名詞組 (Interrogative Noun Phrase)，作受詞/疑問主體。
 * **`are`**：動詞 (Verb)。
@@ -195,7 +195,7 @@ keywords: english, with
 | 說法 | 詞性與文法結構 | 語感與說明 |
 | --- | --- | --- |
 | **`without counting`** | **`without` (介系詞 Prep.) + `counting` (動名詞 V-ing)** | 強調「**在不進行計算的情況下**」。常用於句尾補充「還不算其他項目呢」。 |
-| **`not counting`** | **`not` (副詞 Adv.) + `counting` (分詞 Participle)** | 強調「**不把……算進去**」。也是極高頻的口語省略表達（如 *Not counting tax* = 不含稅）。 |
+| **`not counting`** | **`not` (副詞 Adv.) + `counting` (分詞 Participle)** | 強調「**不把...算進去**」。也是極高頻的口語省略表達（如 *Not counting tax* = 不含稅）。 |
 
 ---
 

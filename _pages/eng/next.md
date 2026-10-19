@@ -109,7 +109,7 @@ next 已經不是形容詞（去修飾後面的名詞），而是直接被當作
 
 ### 1. 文法功能：充當「從屬連接詞」
 
-在文法上，`Next time` 在這裡直接扮演了**從屬連接詞**的角色（相當於 `When ... next time`），用來引導一個**時間副詞子句**，意思是「下一次當……的時候」。
+在文法上，`Next time` 在這裡直接扮演了**從屬連接詞**的角色（相當於 `When ... next time`），用來引導一個**時間副詞子句**，意思是「下一次當...的時候」。
 
 * **結構：** `Next time` + **時間子句 (S + V)**, **主句 (S + V)**
 * **句型拆解：**
@@ -146,10 +146,10 @@ next 已經不是形容詞（去修飾後面的名詞），而是直接被當作
 
 | 詞組 | 中文意思 | 例句 |
 | --- | --- | --- |
-| **Next time** | 下一次……的時候 | **Next time** you call, I'll answer.（下次你打來時，我會接。） |
-| **Last time** | 上一次……的時候 | **Last time** I saw him, he was fine.（上次我看到他時，他很好。） |
-| **Every time / Each time** | 每當……的時候 | **Every time** I hear this song, I think of you.（每次聽到這首歌，我都會想到你。） |
-| **The first time** | 第一次……的時候 | **The first time** we met, it was raining.（我們第一次見面時，正在下雨。） |
+| **Next time** | 下一次...的時候 | **Next time** you call, I'll answer.（下次你打來時，我會接。） |
+| **Last time** | 上一次...的時候 | **Last time** I saw him, he was fine.（上次我看到他時，他很好。） |
+| **Every time / Each time** | 每當...的時候 | **Every time** I hear this song, I think of you.（每次聽到這首歌，我都會想到你。） |
+| **The first time** | 第一次...的時候 | **The first time** we met, it was raining.（我們第一次見面時，正在下雨。） |
 
 ---
 

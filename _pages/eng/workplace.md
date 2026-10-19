@@ -363,11 +363,7 @@ keywords: English
 
 | 領域 | 意思 | 道地例句 |
 | --- | --- | --- |
-| **人物** (會議/演講) | **演講者 / 主講人** | *The **speaker** gave a fascinating talk on AI.*<br>
-
-<br>（主講人給了一場關於 AI 的精彩演講。） |
-| **電器** (科技/日常) | **喇叭 / 音響** | *I bought a new portable **speaker**.*<br>
-
-<br>（我買了一個新的可攜式喇叭。） |
+| **人物** (會議/演講) | **演講者 / 主講人** | *The **speaker** gave a fascinating talk on AI.*<br><br>（主講人給了一場關於 AI 的精彩演講。） |
+| **電器** (科技/日常) | **喇叭 / 音響** | *I bought a new portable **speaker**.*<br><br>（我買了一個新的可攜式喇叭。） |
 
 所以在研討會（Conference）或場次（Session）的議程表上看到 **Speaker: John Doe**，意思就是 **「主講者：John Doe」** 喔！

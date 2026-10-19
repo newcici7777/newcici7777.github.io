@@ -132,7 +132,7 @@ bed 此時是抽象名詞，不可數名詞，不能用a 跟 the。
 | --- | --- | --- |
 | **be out of danger** | 脫離險境 | *The patient **is out of danger** now.*（病人現在已經**脫離險境**了。） |
 | **dangerous** (形容詞) | 危險的 | *This monster is very **dangerous**.*（這隻怪物非常**危險**。） |
-| **put... in danger** | 把……置於危險之中 | *Don't **put** yourself **in danger**.*（別把自己**置於危險之中**。） |
+| **put... in danger** | 把...置於危險之中 | *Don't **put** yourself **in danger**.*（別把自己**置於危險之中**。） |
 
 ----
 **是的，`danger` 100% 是名詞（Noun），意思是「危險」或「危險的事物」。**
@@ -190,7 +190,7 @@ $$\text{介系詞 (in)} + \text{名詞 (danger)} = \text{介系詞片語（處�
 
 ### 一、 這裡的 `in` 是什麼意思？
 
-這裡的 **`in`** 用的是它最核心的抽象世界——**「處於……的狀態或環境之中」**。
+這裡的 **`in`** 用的是它最核心的抽象世界——**「處於...的狀態或環境之中」**。
 
 想像一下這個畫面：
 

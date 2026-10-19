@@ -222,8 +222,7 @@ as 通常放在動詞後面
 （照著我說的做，不要照著我做。）
 12. **As** you know, English is important for our jobs.
 （正如你所知，英文對我們的職涯很重要。）
-13. Things didn't go **as** we planned.
-（事情不如我們計畫的那樣進行。）
+
 14. Please leave the room **as** you found it.
 （請把房間保持在你發現它時的樣子 / 原封不動。）
 15. **As** always, he arrived late.
