@@ -139,7 +139,6 @@ keywords: english, choose, chose, chosen, choice
 * What is your **choice**?（你的**選擇**是什麼？）
 
 
-
 ---
 
 ### 🎬 總結小筆記（完整單字家族）
@@ -150,3 +149,47 @@ keywords: english, choose, chose, chosen, choice
 * **choice** (**名詞**) $\rightarrow$ 選擇 / 選項
 
 這樣把它們擺在一起，整個 `choose` 家族的詞性變化就完全補齊了！還有哪一個搭配你想進一步了解的嗎？
+
+------
+
+
+### 一、 為什麼這裡用 `choose`？它跟前面的動詞有什麼不同？
+
+在這句話中：
+
+> **"Tom, you need to choose all your classes for your schedule..."**
+
+**`choose`（選擇 / 挑選）** 這裡側重的是「決策與篩選的過程」！
+
+我們把之前學過的動詞放在選課流程（Course Registration Flow）中，你就會發現每一個字對應的是**不同的步驟**：
+
+#### 🎬 大學選課的完整動作鏈（Flow）：
+
+1. **`choose`（挑選 / 決定）** $\rightarrow$ **「做決定/排課表」**
+* **動作：** 在眾多課程清單中，思考你要哪一堂、挑選符合時間與學分數的課。
+* **例句：** You need to **choose** your classes.（你需要**挑選/決定**你的課程。）
+
+
+2. **`take`（修課 / 上課）** $\rightarrow$ **「決定要修哪堂課（學生日常口語）」**
+* **動作：** 代表你最終決定要「修」這門課。
+* **例句：** Which classes are you going to **take**?（你這學期要**修**哪些課？）
+
+
+3. **`register (for)` / `enroll (in)**` $\rightarrow$ **「系統送出 / 官方登記」**
+* **動作：** 在選課系統按下 Submit（送出）、繳費或讓學校將你的名字正式排入名冊。
+* **例句：** Go online to **register for** the classes you chose.（上網為你剛剛**挑選**好的課程辦理**正式登記**。）
+
+
+
+> **簡單來說：**
+> `choose` 是你**腦袋裡在做決定、挑選**；`register` 是你**在系統上完成行政手續**！這句話強調的是「要在週五下午 5 點前把課表排好/選定」。
+
+
+---
+
+### 🎬 總結小筆記
+
+1. **choose classes** 側重於「**從眾多課程中篩選、做出決定**」；而 **register for classes** 才是「**在系統上完成報名/登記**」。
+2. 表示「在某個具體日期的某個時間點之前」，結構是 **`by [時間] on [星期/日期]`**！
+
+這樣對於 `choose` 的層次感以及 `by... on...` 的時間組合，是不是就非常清楚了呢？

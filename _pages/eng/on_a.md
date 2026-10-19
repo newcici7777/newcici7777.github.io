@@ -4,13 +4,115 @@ date: 2026-09-18
 keywords: English
 ---
 
-## be + on (在...狀態**中**)
-- I'm on a break.（我在休息/放風中。）
-- I'm on business.（這句更簡短，意思是「我因公出差中」。）
+## be + on (在某狀態中)
+on ，在這裡的意思是「處於...狀態中」或「進行中」。
 
-## be + on 進行中
-- be on duty 值勤中
-- be on sale 特價
+** on 當用於**時間、行程或狀態**時
+
+- I'm on a break.（我在休息中。）
+- I'm on business.（我在出差中」。）
+* I'm on my break（我在休息中）
+* I'm on vacation（在度假中）
+- on holiday：處於「度假」的狀態。
+- I'm on call（待命中）
+* I'm on a trip**（在旅途中）
+- be on sale 特價中
+  - These shoes are on sale for $50 this week.
+（這雙鞋這週特價 50 美元。）
+- on fire：處於「著火、失火」的狀態。
+- on strike：處於「罷工」的狀態。
+- on duty：處於「值班、上班」的狀態。
+* on call: 處於「待命」的狀態。
+
+👉 這裡的 **`on`** 帶有一種「我目前正處於某狀態中」。
+
+---------
+## on schedule/ on a schedule 
+
+### be on schedule 副詞（準時 / 按預定進度）
+跟時間/行程相關用on
+
+想表達「沒有遲到、按時完成／進度正常」 👉 用 on schedule
+
+- The train is on schedule.
+（火車按時進站／沒有誤點。）
+- We need to finish this project on schedule.
+（我們需要按預定進度完成這個專案。）
+
+
+### on a schedule（按照時間表 / 有固定日程的）
+
+詞性／結構： 帶有冠詞 a，強調「某個特定的時間表或規律」。
+
+這裡的 a schedule 指的是「一份時間表／行程表」，意思是「有規律地、按照時間表進行」或「行程很滿、被時間表綁住」。
+
+形容某人或某事有固定的作息、按表操課。
+
+形容行程很滿。
+
+- Babies need to be on a schedule for sleeping and eating.（嬰兒的睡眠和餵食需要有固定的作息時間表。）
+
+- I'm on a tight schedule today, so I can't talk long.
+（我今天的行程很緊湊，所以不能跟你聊太久。） (註：常搭配 tight 或 busy)
+
+- Our flights are on a strict schedule.
+（我們的航班是按照嚴格的時刻表運作的。）
+
+--------
+
+**on time** 與 **in time** 都翻譯成「及時」或「按時」，但它們的核心概念和使用時機有很大的不同：
+
+---
+
+### 1. On time（準時 / 按預定時間）
+
+* **核心概念：** 剛好在**預定的時間點**發生，沒有遲到，也沒有早到。
+* **強調焦點：** 遵守**時刻表、約定時間或日程**（Schedule）。
+* **中文常譯：** 準時、按時。
+
+#### 例句：
+
+* *The train arrived **on time**.*
+（火車**準時**到達。）
+* *Please make sure you submit your homework **on time**.*
+（請務必**按時**交作業。）
+* *The 9:00 AM meeting started right **on time**.*
+（早上 9 點的會議**準時**開始了。）
+
+---
+
+### 2. In time（及時 / 來得及）
+
+* **核心概念：** 在**最後期限或緊急狀況發生之前**趕上（有充裕時間或剛好趕上做某事）。
+* **強調焦點：** 趕上某個**事件、後果或目的**，通常後面會接 `for + 名詞` 或 `to + 動詞`。
+* **中文常譯：** 及時、來得及。
+
+#### 例句：
+
+* *We arrived at the airport **in time to catch** our flight.*
+（我們**及時**趕到機場搭上了航班。）
+* *I hope the ambulance gets here **in time**.*
+（希望救護車能**及時**趕到。）
+* *Just **in time** for dinner!*
+（趕得早不如趕得巧，**正好赶上**吃晚飯！）
+
+---
+
+### 💡 對比情境助記
+
+想像你要去搭早上 8:00 的公車：
+
+* 如果公車在 8:00 剛好開過來，這叫做 **The bus came on time.**（公車**準時**到了）。
+* 如果你跑向公車站，在公車門關上前的最後一秒跳上車，這叫做 **You got to the bus stop in time.**（你**及時**趕上了公車）。
+
+---
+
+### 💡 總結對比表
+
+| 片語 | 核心意思 | 對應的概念 | 常見搭配句型 |
+| --- | --- | --- | --- |
+| **on time** | 準時、按時 | 時間點（時刻表、約定） | *be / arrive / start + on time* |
+| **in time** | 及時、來得及 | 時間範圍（趕上某件事） | *in time for [名詞]*<br><br>*in time to [動詞]* |
 
 ----------------
 
@@ -46,8 +148,8 @@ keywords: English
 -------------------------------
 
 
-## on 名詞 (狀態)
-不用加 a 的（強調這是一種狀態）
+## on 名詞 (在某狀態中)
+不用加a，代表為抽象名詞，不可數。
 
 - on vacation (度假中)
 - on duty 值勤中
@@ -61,15 +163,17 @@ keywords: English
 
 -------------------------------
 
-## on + 名詞 「表達狀態」
+## on + 名詞 (表達原因)
 用 on 來表達「正在從事某種狀態、活動或目的」
 
-on 很常拿來接一個活動或目的的名詞，用來解釋「某人為什麼處於某種狀態或在做這件事」。
+on 有原因，表達**為什麼**處於某種狀態或在做這件事。
 
 - on business ➔ 為了公事（出差）
 - on vacation ➔ 為了度假（度假中）
 - on holiday ➔ 放假中
 - on a trip ➔ 在旅行中
+
+----------------------
 
 ## on 不加/a/the 名詞
 ### 什麼都不加（零冠詞）：表示「抽象概念或常態」
@@ -227,12 +331,12 @@ on 代表進行中
 
 ---
 
-#### ② 用 `call off`（描述動作）
+#### ② 用 `call off` 「有人」把某事給取消了
 
-常用句型為 **主詞 + call off + [事件]** 或 **被動語態 [事件] + be called off**。
+常用句型為 **人 + call off + [事件]** 或 **被動語態 [事件] + be called off**。
 
-* **主動語態：** They **called off** the meeting.（他們取消了會議。）
-* **被動語態：** The meeting **was called off**.（會議被取消了。）
+* **人 + 主動語態：** They **called off** the meeting.（他們取消了會議。）
+* **事情 + 被動語態：** The meeting **was called off**.（會議被取消了。）
 
 * *The match was called **off** due to rain.*（比賽因為下雨而**取消**了。）
 
@@ -272,3 +376,5 @@ on 代表進行中
 | **Is the meeting still on?** | 形容詞 / 表語副詞 | 計畫照常進行 |
 
 ---
+
+

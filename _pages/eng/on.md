@@ -20,8 +20,7 @@ keywords: English
 
 | 設備狀態 | **`on`（開啟 / 運作中）** | **`off`（關閉 / 中斷）** |
 | --- | --- | --- |
-| **開關控制** | *Turn **on** the lights / TV.*<br>
-<br>（打工/開電視。） | *Turn **off** the lights / TV.*<br><br>（關燈/關電視。） |
+| **開關控制** | *Turn **on** the lights / TV.*<br><br>（打工/開電視。） | *Turn **off** the lights / TV.*<br><br>（關燈/關電視。） |
 | **機器狀態** | *The air conditioner is **on**.*<br><br>（冷氣正**開著/運作中**。） | *The power is **off**.*<br><br>（電源**切斷了/停電中**。） |
 
 

@@ -4,21 +4,25 @@ date: 2026-08-27
 keywords: English, go
 ---
 
-## go on (go**進入**on...狀態**中**)
+## go on (進行某活動中/進入某狀態中)
 go 本身是「去」，但加上 on 之後（go on），常常用來表示「進入…狀態中 / 進行…活動」
+
+** on 當用於**時間、行程或狀態**時
 
 - go on a trip（去旅行）
 - go on a date（去約會）
 - go on a business trip（去出差）
 - go on a diet（去節食／開始減肥）
 - go on online (進入連線的狀態中)
+- go on schedule(按計畫進行)
+  - Everything is going on schedule.（一切都按計畫進行中。）
 
 -----------------
 
-## Go online
+## Go online (進入連線中)
 go 的意思： 意思是「進入（某種狀態）／進行（某種活動）」，在這裡表示「連線、上網」。
 
-這裡的 go 意思是「進入連線/上網的動作或狀態」。
+這裡的 go 意思是「進入連線中」的狀態。
 
 online 在這裡是副詞！
 
@@ -64,7 +68,8 @@ off 是副詞，與 go 組合成一個固定的片語動詞。
 
 ------------------
 
-13. Things didn't go **as** we planned.
+### go 進行
+- Things didn't go **as** we planned.
 （事情不如我們計畫的那樣進行。）
 
 
@@ -124,7 +129,8 @@ off 是副詞，與 go 組合成一個固定的片語動詞。
 
 ## as we go along 邊做邊看
 - Go along: 進行、過程中
-- As : 同時，一邊...一邊...
+- as : 同時，一邊...一邊...
+- along : 一起/伴隨
 - as we go along: 進行動作的過程中，會 ....
 
 as we go along放在句尾。

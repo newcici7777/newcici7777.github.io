@@ -379,3 +379,37 @@ $$\begin{aligned} \text{He } &\mathbf{\text{is}} \quad \mathbf{\text{first}} \qu
 所以，直接說 **"Mia won with a vanilla cake"** 是非常道地且完全符合文法的省略寫法（省略了大家心領神會的賽事或獎項，直接強調「她靠香草蛋糕贏了」）！
 
 這樣對於 `won` 後面有沒有受詞的用法，是不是就很清楚了呢？
+
+-------------
+
+### 1. 為什麼用 `enter`？（專指「報名參賽 / 投稿」）
+
+**`enter`** 最原本的意思是「進入」，但當它後面接**比賽（contest / competition）、展覽或考驗**時，它是一個非常道地且標準的用法，意思是「報名參賽」**或**「將作品送交評選（投稿）」。
+
+#### 💡 核心視角：
+
+* **「把自己的名字或作品『送進去』這場比賽裡面」**。
+* **文法搭配：** **`enter the contest`** 或 **`enter a competition`**（直接加賽事名詞，後面可用 `with + 作品` 表示參賽作品）。
+
+> **原句分析：**
+> *She **entered the contest** with her best painting.*
+> （她**拿著自己最好的畫作報名參賽/投稿**了這場比賽。）
+
+## enter + 賽事/獎項
+- She entered the contest with her best painting.她**拿著畫作正式投稿/參加了**這場比賽
+- **enter** a photography competition.正式參賽、提交作品投稿
+
+
+當你要表達「**拿作品去報名比賽**」時：
+
+* ⭕ **enter the contest with...** （最精準、最道地！）
+
+---
+
+#### ② **enter (a contest)**：強調「正式參賽 / 提交作品投稿」
+
+* **核心概念：** 「進入競賽領域/將作品送入評選」。
+* **文法搭配：** **不用加介系詞**，直接加賽事（`enter the contest`）。
+* **使用語感：** 帶有「提交作品（submission）」或「正式成為參賽者」的感覺。
+* **為什麼原句用 enter？**
+原句有 **`with her best painting`**（帶著她最好的畫作），這種「**攜帶/提交作品去參加評選**」的情境，英文習慣用 **`enter the contest with [作品]`**，聽起來非常專業且精準。
