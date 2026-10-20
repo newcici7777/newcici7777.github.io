@@ -1,5 +1,5 @@
 ---
-title: good at/with/for, get better at
+title: be good at/with/for, get better at
 date: 2026-08-27
 keywords: english, good at, get better at
 ---
@@ -23,6 +23,7 @@ keywords: english, good at, get better at
 - are you bad at english? 你不擅长英语吗？
  - She's so good at cooking.
 - Anna is good at cooking, but she's bad at baking. 
+- She is good **at** drawing.（能力聚焦在畫畫這個點）
 
 表示「在某個領域、某項技能上表現得如何」時，習慣使用介系詞 at 來定位方向或範圍。  
 類似的「形容詞 ＋ at」用法還有：

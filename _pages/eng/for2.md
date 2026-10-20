@@ -14,6 +14,11 @@ keywords: for
 ## work for 為了誰工作 
 - What do you do for the company?
 
+---------
+
+## ready for**（為…做好準備）
+- Are you ready **for** the test?*（為了考試做好準備）
+
 ----------------------------
 
 ## for 適合的身份使用

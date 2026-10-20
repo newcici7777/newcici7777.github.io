@@ -441,6 +441,16 @@ for + 時間，用來表示某個動作持續了多久。
 - He carried the heavy bag for me. (＝ He helped me carry the heavy bag.) （他幫我提這個重包包。）
 - Will you do me a favor? Order lunch for me. （你能幫我個忙嗎？幫我點午餐。）
 
+----------------------
+
+### for + 人 (**替某人**感到開心)
+- I am so happy for you!
+
+這裡的 **for + 人** 替某人感到。
+
+- I am happy **for you**. 我替你感到開心
+* I feel sorry **for him**.（我替他感到難過/同情他。）
+
 ----------------------------
 ## for + 人 對...而言,針對誰的感受、觀點或經驗
 - easy for me = 對我而言很簡單

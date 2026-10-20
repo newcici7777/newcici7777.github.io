@@ -1,9 +1,27 @@
 ---
-title: 心情
+title: be + 形容詞 + at/to/in
 date: 2026-08-09
 keywords: english, excite
 ---
 
+## at（瞄準標靶 / 瞬間刺激）
+
+* **核心意象：** **「一個點 🎯」**（針對特定焦點，或被某個突如其來的刺激點擊到）。
+* **適用時機：** 描述因為看到、聽到某個**具體的瞬間刺激**，而產生的**反射性情緒**；
+
+**針對某個目標/對象展開動作** $\rightarrow$ 多用 **`at`**
+
+- be mad with / at + 人（對某人生氣/發瘋）
+  - Don't be mad at him.（別對他發脾氣。）
+- angry at（對…發怒）
+  - My mom is **angry at** me.（我媽媽在對我發脾氣。）
+  - He is angry **at** the delay.*（怒火瞄準那個延誤）
+- yell at him 對他大吼
+- laugh at him 嘲笑他
+- surprised / shocked at（對…感到驚訝）
+  - I was surprised **at** the news.*（被那個新聞刺激到）
+
+-----------------
 
 ## 一、 形容詞 + to（方向 / 對象 / 傾向）
 
@@ -26,8 +44,6 @@ keywords: english, excite
 * **similar to**（與…相似）
 * *Your coat is very **similar to** mine.*
 （你的大衣跟我的非常相似。）
-
-
 
 
 * **clear to**（對…而言很清楚）
@@ -86,7 +102,7 @@ keywords: english, excite
 
 -------
 
-許多表示情緒、心理狀態的形容詞（例如 excited, worried, happy, sad），後面都需要搭配特定的介系詞，才能接上「引起這個情緒的事物」。
+許多表示情緒、心理狀態的形容詞（後面都需要搭配特定的介系詞，才能接上「引起這個情緒的事物」。
 
 
 ## hate Ving
@@ -99,90 +115,6 @@ keywords: english, excite
 
 ---------
 
-你觀察得非常敏銳！這裡牽涉到 **angry** 和 **good** 在搭配介系詞時的細微語感，我們分開來看會非常清晰：
-
-
----
-
-介系詞 **with** 的核心意象是「伴隨、連結、在一起」**或**「對應著某個事物/對象」。
-
-當形容詞搭配 **with** 時，通常表達以下四大類情感與狀態：
-
----
-
-## 一、 形容詞 + with（四大核心類別）
-
-### 1. 情感與情緒（對某人/事感到…）
-
-這類用法表達**當下的情緒**是「伴隨」著某個人或事件而產生的。
-
-* **happy / pleased / satisfied with**（對…感到滿意/開心）
-* *I am very **happy with** my new phone.*（我對我的新手機很滿意。）
-
-
-* **angry / upset / furious with**（對某人發怒/生氣）
-* *Are you **angry with** me?*（你在對我生氣嗎？）
-
-
-* **bored / disappointed with**（對…感到厭煩/失望）
-* *He got **bored with** playing the same game.*（他玩同一個遊戲玩到厭煩了。）
-
-
-
----
-
-### 2. 關係與協調（與…有關 / 一致 / 相符）
-
-這類用法強調兩個事物之間的**連結性或相符度**。
-
-* **familiar with**（對…熟悉）
-* *Are you **familiar with** this software?*（你熟悉這套軟體嗎？）
-
-
-* **consistent with**（與…一致/吻合）
-* *His actions are **consistent with** his words.*（他的言行一致。）
-
-
-* **compatible with**（與…相容/合得來）
-* *This app is not **compatible with** your device.*（這個應用程式與你的裝置不相容。）
-
-
-
----
-
-### 3. 狀態與充盈（充滿… / 忙於…）
-
-這類用法表達**被某事物佔據、填滿或圍繞**的狀態。
-
-* **busy / occupied with**（忙於…）
-* *She is **busy with** her homework.*（她正忙著做作業。）
-
-
-* **crowded / packed with**（擠滿… / 擠爆…）
-* *The street was **crowded with** tourists.*（街上擠滿了觀光客。）
-
-
-* **covered with**（被…覆蓋）
-* *The mountain top is **covered with** snow.*（山頂被積雪覆蓋。）
-
-
-
----
-
-### 4. 能力與處理（善於處理/應對…）
-
-這就是我們前面聊到的 `be good with` 延伸出來的用法，強調**與某個對象/工具相處或處理的能力**。
-
-* **good / great with**（善於處理/對付…）
-* *She is really **good with** children.*（她真的很善於照顧小孩/跟小孩相處。）
-
-
-* **patient with**（對…有耐心）
-* *Teachers need to be **patient with** students.*（老師需要對學生有耐心。）
-
-
-
----
 
 ### 💡 核心意象總覽表
 
@@ -212,25 +144,12 @@ keywords: english, excite
 * *We are **sorry about** the mess.*（我們對這個混亂感到抱歉。）
 
 
-
-#### ② at（瞄準標靶 / 瞬間刺激）
-
-* **核心意象：** **「一個點 🎯」**（針對特定焦點，或被某個突如其來的刺激點擊到）。
-* **適用時機：** 描述因為看到、聽到某個**具體的瞬間刺激**，而產生的**反射性情緒**；或是能力**聚焦**在某一點。
-* **例句：**
-* **surprised / shocked at**（對…感到驚訝）👉 *I was surprised **at** the news.*（被那個新聞點擊到/刺激到）
-* **good at**（擅長…）👉 *She is good **at** drawing.*（能力聚焦在畫畫這個點）
-* **angry at**（對…發怒）👉 *He is angry **at** the delay.*（怒火瞄準那個延誤）
-
-
-
 #### ③ for（目標 / 好處 / 原因）
 
 * **核心意象：** **「方向與目標 🎁」**（為了…、準備走向…、對…有好處）。
 * **適用時機：** 描述**目標對象**、**利害關係**，或因為某個**原因/價值**而產生的狀態。
 * **例句：**
 * **famous for**（以…聞名）👉 *Taiwan is famous **for** bubble tea.*（因為珍珠奶茶這項特色而有名）
-* **ready for**（為…做好準備）👉 *Are you ready **for** the test?*（目標指向考試）
 * **good for**（對…有好處）👉 *Apples are good **for** you.*（好處指向你）
 
 
@@ -271,17 +190,7 @@ keywords: english, excite
 | 態度或感受**指向**特定對象 | **to** | 箭頭 ➔ | *kind **to*** |
 | 與對象的**連結 / 伴隨 / 處理** | **with** | 連結 🤝 | *happy **with*** |
 
-掌握這套「意象思考法」，之後看到新的形容詞搭配時，就能快速判斷出最自然順手的介系詞囉！
 
------
-
-
-你觀察得太到位了！這兩個用法剛好可以幫我們把介系詞的意象圖拼得更完整：
-
----
-
-
-### 💡 補完版：介系詞意象速查表
 
 現在我們的「情緒與狀態介系詞地圖」就完全補齊了：
 
@@ -374,23 +283,6 @@ keywords: english, excite
 * 💡 **記憶口訣：** 態度像箭頭（to）指向對方。
 
 ---
-
-### 第三步：實戰測試法（用「這句話對誰說」來選）
-
-當你在造句猶豫不決時，用語感問自己：
-
-> **情境題：** 「我為你感到高興 / 我對這份禮物很滿意」要怎麼選？
-> 1. 「我替你高興」👉 是**送給對方**的祝福（禮物 🎁） ➔ **happy FOR you**
-> 2. 「我對禮物很滿意」👉 是**與禮物相處/連結**得很好（手牽手 🤝） ➔ **happy WITH the gift**
-> 
-> 
-
----
-
-### 💡 總結大補帖
-
-1. **先想「畫面」**（源頭 💧、圍繞 🔄、標靶 🎯、目標 🎁、箭頭 ➔、連結 🤝）。
-2. **不用死背單字表**，遇到新片語時，用這個畫面去「解釋它」，解釋通了就一輩子記住了！
 
 你可以試著用這個邏輯，想一下 **"I am proud ____ my son."**（我為我兒子感到自豪），覺得應該填哪一個介系詞呢？
 

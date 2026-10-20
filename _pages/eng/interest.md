@@ -1,5 +1,5 @@
 ---
-title: 東西/事物 + interest(動) + me(受詞)
+title: interest(動)/ be bored with
 date: 2026-10-19
 keywords: English, interest
 ---
@@ -116,3 +116,9 @@ $$\text{事物} + \mathbf{interest} + \text{人}$$
 - That painting is boring.**東西**令人無聊 Ving
 - This song is boring.
 - Because I think fishing is boring too!
+
+------
+## 人 + be bored with 東西/事情
+* **bored / disappointed with**（對…感到厭煩/失望）
+* *He got **bored with** playing the same game.*（他玩同一個遊戲玩到厭煩了。）
+

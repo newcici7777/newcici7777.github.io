@@ -11,6 +11,8 @@ already 是個副詞（Adverb），用來表示某個動作或事情「早就」
 - 過去式: You already started the car.（你車子早就發動了
   - 單純描述過去發生的一個動作，並強調「動作已經完成」這個事實或速度。
 
+--------
+
 ## be ready(形容詞) 準備好
 ready 是形容詞：它不能單獨當動詞用，前面一定要搭配 be 動詞（如 am, is, are, was, were，或是加上助動詞變成 will be）來形成完整的述語。
 
@@ -24,6 +26,7 @@ ready 是形容詞：它不能單獨當動詞用，前面一定要搭配 be 動�
 - Dinner will be ready soon be ready.晚餐快要準備好了
 - Lunch will be ready close to twelve.午饭会在快到十二点时准备好。
 
+-------
 
 ## be ready(形容詞) to + 動詞 (V) (準備好去做某事)
 be ready(形) to後面接動作（動詞原型）。
@@ -37,22 +40,28 @@ be ready(形) to後面接動作（動詞原型）。
 - Yes, I'm ready to order.
 - I'm ready to learn Japanese. （我準備好要開始學日文了。）
 
+--------
 
-## be ready(形) for + 活動(名)
+## ready for**（為**某事**做好準備）
+- Are you ready **for** the test?*（為了考試做好準備）
+- Are you ready for the exam tomorrow? （你對明天的考試準備好了嗎？ → the exam 是名詞）
+- She is ready for a new job. （她已經做好迎接新工作的準備了。）
+- Are you ready **for the test**?（你準備好**應付考試**了嗎？）
+
+-------
+
+## be ready(形) for + 活動(名) 「為了**某活動**做好準備」
 > be ready 準備好
 > for「迎接」即將到來的事件
 
 be ready for 後面接名詞。代表你對於即將到來的「某個事件、東西、挑戰」已經整備完畢，心態或物品都 OK 了。  
 
-- Are you ready for the exam tomorrow? （你對明天的考試準備好了嗎？ → the exam 是名詞）
 - I’m ready for dinner! （我準備好要吃晚餐了！/ 我肚子餓了！）
-- She is ready for a new job. （她已經做好迎接新工作的準備了。）
-
-* *I'm ready **for dinner**.*（我準備好**吃晚餐**了／晚餐好了嗎？）
-* *Are you ready **for the test**?*（你準備好**應付考試**了嗎？）
-* *We are ready **for the weekend**!*（我們準備好**迎接週末**啦！）
+- We are ready **for the weekend**!
+（我們準備好**迎接週末**啦！）
 - We're ready for the game! 我們準備好迎接這場比賽了！
 
+--------
 ## Get ready (正在「去準備」的途中)
 get，意思會從「已經好了（狀態）」變成「正在做準備的這個『動作過程』」（例如洗臉、換衣服、打包）。  
 人還在房間裡忙著梳妝打扮、收拾行李。  
@@ -60,11 +69,14 @@ get，意思會從「已經好了（狀態）」變成「正在做準備的這�
 - Give me 10 minutes. I’m getting ready. （給我 10 分鐘，我正在準備/梳洗打扮中。）
 - Get ready! We need to leave soon. （快準備一下！我們差不多該出發了。）
 
+------
 ## 比較
 假設你等一下有一場重要的面試：
 - I am ready for the interview.（我對這場面試做好準備了。 → 強調心態/資料都準備好了）
 - I am ready to start the interview.（我準備好要「開始」面試了。 → 強調隨時可以開始講話/答題）
 - I am getting ready for the interview.（我正忙著準備面試。 → 強調正在穿正裝、看履歷的過程）
+
+--------
 
 - ready to + 動詞 → 準備好要「做」某事（We are ready to go）
 - ready for + 名詞 → 對某個「事物」做好準備（Ready for the trip）
