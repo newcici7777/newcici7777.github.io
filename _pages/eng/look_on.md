@@ -45,6 +45,18 @@ keywords: english, look on, look in
 > （這件羊毛毛衣穿在我貓咪身上很好看。）
 
 
+### 2. `looks... on you` ── 側重「好看 / 適合你的風格或氣質（Style & Appearance）」
+
+* **核心意象：** 視覺上的美感、顏色搭配、整體好看與否。
+* **邏輯剖析：** `look` 是連綴動詞，搭配 **on you**（穿在你身上呈現出來的樣子）。重點不在於衣服多大件，而是**穿在你身上好不好看、顯不顯氣質**。
+* **例句：**
+* *That dress **looks great on you**!*
+（那件洋裝穿在你身上**看起來超好看 / 很適合你**！）
+* *Yellow doesn't **look good on me**.*
+（黃色穿在我身上**不好看 / 不顯白 / 不合我風格**。）
+
+---
+
 
 ---
 
@@ -178,5 +190,6 @@ keywords: english, look on, look in
 > （我的貓穿這件羊毛毛衣看起來超可愛。）
 
 
-
 ---
+
+

@@ -124,6 +124,15 @@ go 的意思： 這裡的 go 是連綴動詞（Linking Verb），意思是「變
 - go mad（發瘋）
 - go blind 變瞎
 
+例句:
+* **The milk went bad / went off.**
+（牛奶變質/壞掉了。）👉 離開新鮮狀態
+* **He went crazy / went mad.**
+（他發瘋了 / 氣炸了。）👉 離開理智狀態
+* **She went blind / went deaf.**
+（她失明了 / 聾了。）👉 身體功能偏離正常
+* **Everything went wrong.**
+（事情全變糟了 / 出差錯了。）👉 偏離順利的軌道
 
 ------------------
 

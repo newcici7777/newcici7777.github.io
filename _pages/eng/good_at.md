@@ -62,11 +62,35 @@ get(變得) + better(更好) + at(在那方面) + Ving/名詞
 
 
 ------------------------
-## be good with
+### 2. `good` 的用法：`good with` 是用在哪裡？
+
+`good` 的情況跟 `angry` 不太一樣。正如我們前面聊到的，**`good with` 後面主要用來接「事物、工具、資訊」或是「需要應對/照顧的對象」**，強調「善於處理、掌控或相處」的能力：
+
+#### ① good with + 人 / 動物（善於相處、照顧）
+
+* **例句：**
+* *She is **good with kids**.*（她很會帶小孩 / 善於跟小孩相處。）
+* *He is **good with dogs**.*（他很擅長應對狗。）
+
+
+
+#### ② good with + 工具 / 數字 / 抽象概念（善於使用、處理）
+
+* **例句：**
+* *I'm **good with directions**.*（我很會認路 / 善於處理方向指引。）
+* *He is **good with computers**.*（他很擅長用電腦 / 處理電腦問題。）
+* *She is **good with numbers**.*（她對數字很敏銳 / 善於算帳。）
+
+
+----------
+
+## be good with 人/工具
 
 - I'm very good with directions.
 
 簡單來說：**`be good at`** 後面接的是「動作／技能」**；而 **`be good with`** 後面接的是**「工具／人／對象／具體事務的應對與處理能力」。
+
+而 *good with* 則是表達**善於處理或應對**某些人或工具喔！
 
 ---
 
@@ -76,6 +100,12 @@ get(變得) + better(更好) + at(在那方面) + Ving/名詞
 | --- | --- | --- | --- |
 | **be good at** | 擅長做某個**動作**或**特定技能** | 動詞-ing / 特定學科、領域 | *be good at **navigating***（善於導航）<br><br>*be good at **math***（擅長數學） |
 | **be good with** | 善於**處理、應對、掌控**某事物/人 | 名詞（工具、對象、抽象事物） | *be good with **directions***（認路能力強）<br><br>*be good with **people***（善於交際） |
+
+
+| 片語 | 後面接什麼？ | 核心意思 / 語感 |
+| --- | --- | --- |
+| **good with [對象/工具]** | 人 / 事物 / 工具 | 善於**處理、應對、掌控**該對象或工具 |
+| **good at [動作/技能]** | 動名詞 V-ing / 學科 | 擅長做某個**動作或技能**（例：*good at math*） |
 
 ---
 
@@ -89,7 +119,6 @@ get(變得) + better(更好) + at(在那方面) + Ving/名詞
 * **be good with money**（善於理財／精打細算）
 * **be good with kids**（善於照顧／應對小孩）
 * **be good with hands**（手很巧、擅長手作或修東西）
-
 
 
 ---

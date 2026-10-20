@@ -1,5 +1,5 @@
 ---
-title: worry 動詞/形容詞
+title: worry about 動詞/形容詞
 date: 2026-09-06
 keywords: english, worry
 ---
