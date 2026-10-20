@@ -1,5 +1,5 @@
 ---
-title: good at, get better at
+title: good at/with/for, get better at
 date: 2026-08-27
 keywords: english, good at, get better at
 ---
@@ -61,5 +61,54 @@ get(變得) + better(更好) + at(在那方面) + Ving/名詞
 - She is best at eating. 她對吃超擅長。
 
 
+------------------------
+## be good with
 
+- I'm very good with directions.
+
+簡單來說：**`be good at`** 後面接的是「動作／技能」**；而 **`be good with`** 後面接的是**「工具／人／對象／具體事務的應對與處理能力」。
+
+---
+
+### 1. 核心觀念比較
+
+| 片語 | 核心概念 | 後面接什麼？ | 範例 |
+| --- | --- | --- | --- |
+| **be good at** | 擅長做某個**動作**或**特定技能** | 動詞-ing / 特定學科、領域 | *be good at **navigating***（善於導航）<br><br>*be good at **math***（擅長數學） |
+| **be good with** | 善於**處理、應對、掌控**某事物/人 | 名詞（工具、對象、抽象事物） | *be good with **directions***（認路能力強）<br><br>*be good with **people***（善於交際） |
+
+---
+
+### 2. 為什麼方向是搭配 with？
+
+在英文的思考邏輯中，`directions`（方向／指引）不是一個「動作」，而是一個「被你拿來處理或指引的資訊／對象」：
+
+* **`be good with directions`**：意思是「你對方向感有很好的掌握能力、善於處理方向指引這件事」（= 認路能力好、不容易迷路）。
+* 類似的「善於處理／應對（某對象、工具）」用法：
+* **be good with numbers**（對數字很敏銳、善於算帳／處理數據）
+* **be good with money**（善於理財／精打細算）
+* **be good with kids**（善於照顧／應對小孩）
+* **be good with hands**（手很巧、擅長手作或修東西）
+
+
+
+---
+
+### 3. 如果硬要用 `at`，要怎麼改？
+
+如果你想用 **`at`**，後面必須加上**表示「動作」的字**（動名詞）：
+
+* ❌ *I'm very good at directions.*（語感較不自然）
+* ⭕ *I'm very good **at finding my way**.*（我很擅長找路。）
+* ⭕ *I'm very good **at navigating**.*（我很擅長導航／認路。）
+* ⭕ *I'm very good **at remembering directions**.*（我很擅長記方向／路線。）
+
+---
+
+### 💡 記憶小撇步
+
+* **at + 動作 (-ing)** 👉 擅長**做**什麼事。
+* **with + 事物/對象 (Noun)** 👉 善於**處理/掌控**什麼東西。
+
+所以，誇獎自己「認路能力強、很有方向感」時，用 **`be good with directions`** 是最道地、最自然表達！
 

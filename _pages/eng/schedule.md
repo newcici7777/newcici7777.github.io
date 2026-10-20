@@ -4,6 +4,40 @@ date: 2026-10-18
 keywords: English, schedule
 ---
 
+## on schedule/ on a schedule 
+
+### be on schedule 副詞（準時 / 按預定進度）
+跟時間/行程相關用on
+
+想表達「沒有遲到、按時完成／進度正常」 👉 用 on schedule
+
+- The train is on schedule.
+（火車按時進站／沒有誤點。）
+- We need to finish this project on schedule.
+（我們需要按預定進度完成這個專案。）
+
+
+### on a schedule（按照時間表 / 有固定日程的）
+
+詞性／結構： 帶有冠詞 a，強調「某個特定的時間表或規律」。
+
+這裡的 a schedule 指的是「一份時間表／行程表」，意思是「有規律地、按照時間表進行」或「行程很滿、被時間表綁住」。
+
+形容某人或某事有固定的作息、按表操課。
+
+形容行程很滿。
+
+- Babies need to be on a schedule for sleeping and eating.（嬰兒的睡眠和餵食需要有固定的作息時間表。）
+
+- I'm on a tight schedule today, so I can't talk long.
+（我今天的行程很緊湊，所以不能跟你聊太久。） (註：常搭配 tight 或 busy)
+
+- Our flights are on a strict schedule.
+（我們的航班是按照嚴格的時刻表運作的。）
+
+--------
+
+
 你的直覺非常準確！**`schedule` 最核心、最常翻譯的中文確實是「行程、時間表」**。
 
 但在不同的情境下，它會對應到不同的中文翻譯。所以你說得沒錯，它不只是「課表」，它是一個範圍很廣的字！

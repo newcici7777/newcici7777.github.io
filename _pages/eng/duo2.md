@@ -27,16 +27,6 @@ keywords: 其它
 
 ---------------------------
 
-
-## come off 剝落
-- The leather is coming off.皮革正在剝落
-
-----------------------
-
-
-
----------------------------
-
 ## try some 吃一些看看
 - Try some mapo tofu! 嚐一些麻婆豆腐 
 - Try some cake! It’s delicious.（嚐嚐看這個蛋糕！很好吃喔。）
@@ -112,6 +102,13 @@ keywords: 其它
 - find good deals（找到好康的、找到便宜的交易）
 - make a deal（達成一筆交易/協議）
 
+------------
+
+## tank 坦克車/水缸
+
+* **water tank** 👉 水塔 / 水箱
+* **fish tank** 👉 魚缸
+* **gas tank** 👉 油箱 / 瓦斯桶
 
 
 ------------------

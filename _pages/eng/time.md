@@ -17,16 +17,7 @@ keywords: time, day
 - We can meet at a cafe in the morning.   
 - In 1990. 年
 
-
-## in + 時間長度 (在多久時間...之後)
-- In two hours. 2小時後
-
-## within + 時間長度 (在多久時間之內)
-- The flight will arrive within two hours. （班機將在兩小時之內抵達 → 可能是1小時、1.5小時，但確定不會超過2小時。）
-- Please finish the work within two hours. （請在兩小時內完成這份工作。）
-
-# in less than 時間長度 (不到x時間)
-- We will be there in less than two hours. （我們不到兩小時就會到那裡了。）
+---------
 
 ## 問時間 at 時間
 What形容詞 + 不可數名詞time
@@ -160,11 +151,6 @@ at that time 指的是過去某一個特定的時刻。
 - back then（當年／那時候——口語常用）
   - Back then, life was much simpler.（那時候，生活單純多了。）
   - Back then, we didn't have smartphones. 在那時候／當年，我們沒有智慧型手機
-
-----------------------
-## 馬上
-- in a minutes 馬上
-- in a moment
 
 -----------------------------------
 ## a good time
