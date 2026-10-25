@@ -6,9 +6,9 @@ keywords: English, how old
 
 ## [數字 + 單位] 程度副詞
 - I am **8 years** old.
-  - 8 years 是名詞片語，放在形容詞old前面，就變成一組**程度副詞**，只有**副詞**可以修飾(形容)old這個形容詞，是有多老(old)？是8歲(8 year)這麼老(old)。
+  - **8 years** 是名詞片語，放在形容詞old前面，**8 years**就變成一組**程度副詞**，只有**副詞**可以修飾(形容)old這個形容詞，是有多老(old)？是8歲(8 year)這麼老(old)。
 - The bus is **ten minutes** late.
-  - ten minutes 是名詞片語，放在副詞late(遲)，就變成一組**程度副詞**，只有**副詞**可以修飾(形容)late這個副詞，是有多遲？是10分鐘(ten minutes)這麼遲(late)。
+  - **ten minutes** 是名詞片語，放在副詞late(遲)前面，**ten minutes**就變成一組**程度副詞**，只有**副詞**可以修飾(形容)late這個副詞，是有多遲？是10分鐘(ten minutes)這麼遲(late)。
 
 ## 變成How問句
 How 本身是程度副詞，代表**多**老？**多**遲？用來修飾(形容)後面的**形容詞**或**副詞**。
@@ -18,16 +18,20 @@ How 本身是程度副詞，代表**多**老？**多**遲？用來修飾(形容)
     - I am **how** old.
   - **how + 後面的old**，變問句要移到最前面: 
     - **How old** I am.  
-  - be動詞變問句，主詞跟be動詞要顛倒: 
-    - How old **am I**?
+  - 變問句，主詞I要變You: 
+    - How old **you are**?
+  - be動詞變問句，主詞I要變You，主詞跟be動詞要顛倒:  
+    - How old **are you**?
 
 - I am **ten minutes** late.
   - How取代程度副詞: 
     - I am **how** late.
   - **how + 後面的late**，變問句要移到最前面: 
     - **How late** I am.  
-  - be動詞變問句，主詞跟be動詞要顛倒: 
-    - How late **am I**?
+  - 變問句，主詞I要變You: 
+    - How late **you are**?
+  - be動詞變問句，主詞I要變You，主詞跟be動詞要顛倒:  
+    - How late **are you**?
 
 -----------
 ## be動詞 + 程度副詞
@@ -47,10 +51,10 @@ How 本身是程度副詞，代表**多**老？**多**遲？用來修飾(形容)
 --------------
 ## 一般動詞與助動詞 + 程度副詞
 ### 程度副詞
-- He can run **very** fast.
-  - very 是程度副詞，用來修飾(形容)fast副詞，有**多**快(fast)?
 - She sings **very** well.
   - very 是程度副詞，用來修飾(形容)well副詞，有**多**好(well)?
+- He can run **very** fast.
+  - very 是程度副詞，用來修飾(形容)fast副詞，有**多**快(fast)?
 
 ### 程度副詞變How問句
 - He sings **very** well.
@@ -60,13 +64,14 @@ How 本身是程度副詞，代表**多**老？**多**遲？用來修飾(形容)
     - **Does** He **sing** how well?
   - **how + 後面的well**，變問句要移到最前面: 
     - **How well** does he sing?  
+    
 - He can run **very** fast.
   - how取代程度副詞:
     - He can run **how** fast.
   - **how + 後面的fast**，變問句要移到最前面: 
-    - **How fast** you can run.  
+    - **How fast** he can run.  
   - can助動詞變問句，主詞跟can助動詞要顛倒: 
-    - How fast **can you** run?
+    - How fast **can he** run?
 
 -----------
 
