@@ -47,11 +47,6 @@ be 動詞（is, am, are, was, were）或連綴動詞（look, feel, become）來�
 - I am late.（我遲到了。）
 - This is a late train.（這是一班誤點／開很晚的火車。）
 
-### be late by + [時間長度]（遲到了多久）
-- The bus was ten minutes late. 公交车昨天早上迟到了十分钟。
-- The train is late by ten minutes.（火車誤點／遲到了十分鐘。）
-- I was late by half an hour.（我遲到了半小時。）
-
 ## be late for 
 for 是一個非常關鍵的介系詞，用來連接「遲到」這個狀態與「場合」。  
 be late for 後面主要接的是「活動、會議、上學、上班、航班」等名詞。
@@ -80,8 +75,7 @@ be late for + [活動/事件/場合/地點]。
 - Are you going to be late for the party tonight? （你今晚派對會遲到嗎？）
 - She apologized for being late for the yoga class. （她為瑜珈課遲到而道歉。）
 
-## be late because 子句
-- Emma was late because she forgot the time of the test.艾玛迟到了，因为她忘了测试的时间。
+
 
 ### late當副詞
 #### 在很晚的時候
@@ -120,7 +114,12 @@ be late for + [活動/事件/場合/地點]。
   - late（遲到）是形容詞。
   - ten minutes（十分鐘）是名詞片語(副詞)，放在 形容詞 late 前面，用來補充說明「到底遲到了多久」。
 
-## late ... because 因為什麼原因遲到
+例句
+- The bus was ten minutes late. 公交车昨天早上迟到了十分钟。
+- The train is ten minutes late.（火車誤點／遲到了十分鐘。）
+- I was half an hour late.（我遲到了半小時。）
+
+## be late because 子句 因為什麼原因遲到
 - Emma was late because she forgot the time of the test.艾玛迟到了，因为她忘了测试的时间。
 
 

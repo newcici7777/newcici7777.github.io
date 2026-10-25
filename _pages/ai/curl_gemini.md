@@ -3,6 +3,18 @@ title: curl Gemini Api
 date: 2026-06-18
 keywords: curl, gemini Api
 ---
+
+## Google AI Studio
+Google AI Studio網址: <https://aistudio.google.com/>
+
+進入Google AI Studio，要選**中文**，下圖中，左側列表有API金鑰，點進去建立API金鑰
+
+在下圖中**速率限制**中，有每分鐘最大請求量、每日最大請求量的查看方式
+
+![img]({{site.imgurl}}/ai/google_ai.png)<br>
+
+## 其它參考網址
+
 參考網址:<https://ai.google.dev/api?hl=zh-tw>
 參考網址:<https://ai.google.dev/api/generate-content?hl=zh-tw>
 
